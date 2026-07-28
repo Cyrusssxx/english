@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "exam": "en2",
+  "years": [
+    {
+      "year": 2014,
+      "articles": [
+        { "id": "2014_text1", "type": "text1", "title": "Happy Money", "topic": "幸福消费：把钱花在体验上远比购物更值得", "sentence_count": 18, "question_count": 5 },
+        { "id": "2014_text2", "type": "text2", "title": "The Above Average Effect", "topic": "自我美化：我们眼中的自己比真实更漂亮", "sentence_count": 19, "question_count": 5 },
+        { "id": "2014_text3", "type": "text3", "title": "Man Versus Machine", "topic": "人机之争：与机器同跑而非赛跑", "sentence_count": 19, "question_count": 5 },
+        { "id": "2014_text4", "type": "text4", "title": "Comprehensive Spending Review and Housing", "topic": "综合开支审查与英国住房危机", "sentence_count": 22, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2013,
+      "articles": [
+        { "id": "2013_text1", "type": "text1", "title": "Average Is Over", "topic": "平庸时代的终结：全球化与技术革命重塑就业", "sentence_count": 14, "question_count": 5 },
+        { "id": "2013_text2", "type": "text2", "title": "Birds of Passage", "topic": "候鸟式移民：重新看待美国移民体制", "sentence_count": 22, "question_count": 5 },
+        { "id": "2013_text3", "type": "text3", "title": "Slow Down Your Snap Decisions", "topic": "快速决策与理性权衡：人类能扭转本能反应", "sentence_count": 18, "question_count": 5 },
+        { "id": "2013_text4", "type": "text4", "title": "Quotas for Women on Corporate Boards", "topic": "女性董事配额之争：通往平等的强制手段", "sentence_count": 18, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2012,
+      "articles": [
+        { "id": "2012_text1", "type": "text1", "title": "A Faulty Approach to Homework", "topic": "洛杉矶家庭作业新政的缺陷", "sentence_count": 18, "question_count": 5 },
+        { "id": "2012_text2", "type": "text2", "title": "Pretty in Pink: Marketing to Girls", "topic": "粉色如何被营销塑造为女孩的颜色", "sentence_count": 18, "question_count": 5 },
+        { "id": "2012_text3", "type": "text3", "title": "Gene Patents and the Courts", "topic": "基因专利与法院之争", "sentence_count": 24, "question_count": 5 },
+        { "id": "2012_text4", "type": "text4", "title": "An Era of High Joblessness", "topic": "高失业时代对社会的重塑", "sentence_count": 18, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2011,
+      "articles": [
+        { "id": "2011_text1", "type": "text1", "title": "Outside Directors' Departures", "topic": "外部董事的突然离职：信号与代价", "sentence_count": 19, "question_count": 5 },
+        { "id": "2011_text2", "type": "text2", "title": "American Newspapers: Struggling for Survival", "topic": "报纸之死？——美国报业的危机求生", "sentence_count": 28, "question_count": 5 },
+        { "id": "2011_text3", "type": "text3", "title": "Less Is More: Postwar Housing", "topic": "“少即是多”：战后美国的简约住宅风潮", "sentence_count": 17, "question_count": 5 },
+        { "id": "2011_text4", "type": "text4", "title": "Will the European Union Make It?", "topic": "欧盟向何处去：欧元危机与法德分歧", "sentence_count": 17, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2010,
+      "articles": [
+        { "id": "2010_text1", "type": "text1", "title": "Art Market in Decline", "topic": "艺术品市场的衰退：牛市终结之后", "sentence_count": 19, "question_count": 5 },
+        { "id": "2010_text2", "type": "text2", "title": "Failed Conversation in Marriage", "topic": "\"他不跟我说话\"：夫妻交流模式与婚姻危机", "sentence_count": 16, "question_count": 5 },
+        { "id": "2010_text3", "type": "text3", "title": "Manufactured Habits", "topic": "被制造的习惯：商家如何塑造消费行为", "sentence_count": 16, "question_count": 5 },
+        { "id": "2010_text4", "type": "text4", "title": "The US Jury System", "topic": "美国陪审团制度：传统与发展", "sentence_count": 14, "question_count": 5 }
+      ]
+    }
+  ]
+}

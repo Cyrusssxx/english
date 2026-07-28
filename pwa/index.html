@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语二真题精翻 - 首页</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">真题文章</a>
+                <a href="vocab.html" class="nav-link">生词本</a>
+                <a href="favorites.html" class="nav-link">句子收藏</a>
+            </div>
+            <div class="nav-tools">
+                <span class="nav-timer" id="navTimer" title="今日学习时长（切换到其他窗口时暂停）">⏱ 00:00:00</span>
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="hero">
+            <h1>考研英语二 · 历年真题精翻</h1>
+            <p class="subtitle">逐句精翻 · 词组注释 · 做题解析，完全离线可用</p>
+        </div>
+
+        <!-- 继续学习 -->
+        <div class="continue-bar" id="continueBar" style="display:none">
+            <div>
+                <div class="cb-title" id="cbTitle"></div>
+                <div class="cb-sub" id="cbSub"></div>
+            </div>
+            <a id="cbLink" href="#">继续学习 →</a>
+        </div>
+
+        <!-- 年份 Tab -->
+        <div class="year-tabs" id="yearTabs"></div>
+
+        <!-- 文章列表 -->
+        <div class="article-list" id="articleList">
+            <div class="loading">加载中...</div>
+        </div>
+
+        <!-- 数据备份 -->
+        <div class="backup-bar">
+            学习数据（生词/收藏/进度/答题）存于本机浏览器
+            <button onclick="backupExport()">导出备份</button>
+            <button onclick="document.getElementById('bakImport').click()">导入备份</button>
+            <input type="file" id="bakImport" accept="application/json" style="display:none" onchange="backupImport(this)">
+        </div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/storage.js"></script>
+    <script>
+        let idx = null;
+        let curYear = null;
+        let progressMap = {};   // {article_id: progress行}
+        let answerStats = {};   // {article_id: {answered, correct}}
+
+        async function init() {
+            try {
+                idx = await loadIndex();
+            } catch (e) {
+                document.getElementById('articleList').innerHTML =
+                    `<div class="error">加载失败: ${esc(e.message)}<br>请用 start.bat 启动后访问 http://localhost:8410</div>`;
+                return;
+            }
+            // 用户数据：进度与答题统计
+            for (const p of await dbAll('article_progress')) progressMap[p.article_id] = p;
+            for (const a of await dbAll('quiz_answers')) {
+                const st = answerStats[a.article_id] || (answerStats[a.article_id] = { answered: 0, correct: 0 });
+                st.answered++;
+                if (a.is_correct) st.correct++;
+            }
+            renderContinue();
+            const years = idx.years.map(y => y.year).sort((a, b) => b - a);
+            const saved = parseInt(localStorage.getItem('lastYear') || '0', 10);
+            curYear = years.includes(saved) ? saved : years[0];
+            renderTabs(years);
+            renderList();
+        }
+
+        function renderContinue() {
+            const last = localStorage.getItem('lastArticle');
+            if (!last) return;
+            let found = null, foundYear = null;
+            for (const y of idx.years) {
+                const a = y.articles.find(x => x.id === last);
+                if (a) { found = a; foundYear = y.year; break; }
+            }
+            if (!found) return;
+            document.getElementById('cbTitle').textContent = `${foundYear} ${TYPE_NAMES[found.type] || found.type}`;
+            document.getElementById('cbSub').textContent = found.topic || '';
+            document.getElementById('cbLink').href = `article.html?id=${found.id}`;
+            document.getElementById('continueBar').style.display = '';
+        }
+
+        function renderTabs(years) {
+            document.getElementById('yearTabs').innerHTML = years.map(y =>
+                `<button class="year-tab ${y === curYear ? 'active' : ''}" onclick="pickYear(${y})">${y}</button>`).join('');
+        }
+
+        function pickYear(y) {
+            curYear = y;
+            localStorage.setItem('lastYear', String(y));
+            renderTabs(idx.years.map(x => x.year).sort((a, b) => b - a));
+            renderList();
+        }
+
+        function renderList() {
+            const yearData = idx.years.find(y => y.year === curYear);
+            if (!yearData || !yearData.articles.length) {
+                document.getElementById('articleList').innerHTML = '<div class="empty">该年份暂无内容</div>';
+                return;
+            }
+            const order = ['text1', 'text2', 'text3', 'text4', 'newtype', 'cloze'];
+            const arts = [...yearData.articles].sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type));
+            document.getElementById('articleList').innerHTML = arts.map(a => {
+                const st = answerStats[a.id];
+                const done = st && a.question_count && st.answered >= a.question_count;
+                const isLast = localStorage.getItem('lastArticle') === a.id;
+                let right = '';
+                if (isLast) right += '<span class="ac-badge">● 上次学习</span>';
+                if (done) right += `<span class="ac-done">✔ ${st.correct}/${st.answered}</span>`;
+                else if (st && st.answered) right += `<span class="ac-badge">${st.answered}/${a.question_count}题</span>`;
+                return `
+                <a class="article-card" href="article.html?id=${a.id}">
+                    <div class="ac-main">
+                        <span class="ac-type">${TYPE_NAMES[a.type] || a.type}</span>
+                        <span class="ac-topic">${esc(a.topic || '')}</span>
+                    </div>
+                    <div class="ac-right">${right}<span class="ac-arrow">→</span></div>
+                </a>`;
+            }).join('');
+        }
+
+        init();
+    </script>
+</body>
+</html>

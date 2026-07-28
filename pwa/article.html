@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精读 - 英语二真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="mode-read">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand" title="返回列表">‹ <span id="navTitle">精读</span></a>
+            <div class="nav-tools">
+                <span class="nav-timer" id="navTimer" title="今日学习时长">⏱ 00:00:00</span>
+                <button class="nav-switch" id="cnAllSwitch" onclick="toggleCnAll()" title="展开/收起全部译文">
+                    全文翻译 <span class="switch-state" id="cnAllState">关</span>
+                </button>
+                <button class="nav-switch" id="modeSwitch" onclick="toggleMode()" title="精读：逐句看翻译；做题：显示题目面板">
+                    做题 <span class="switch-state" id="modeState">关</span>
+                </button>
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="article-layout">
+        <!-- 左：正文精读 -->
+        <main class="read-pane" id="readPane">
+            <div class="loading">加载中...</div>
+        </main>
+
+        <!-- 右：做题面板（精读模式下隐藏；可收缩；窄屏为底部抽屉） -->
+        <aside class="quiz-pane" id="quizPane">
+            <div class="quiz-head">
+                <span class="quiz-head-title">题目</span>
+                <button class="quiz-collapse-btn" onclick="toggleQuizPane()" title="收起题目面板">收起 »</button>
+            </div>
+            <div class="quiz-scroll" id="quizScroll"></div>
+            <div class="quiz-jumpbar" id="quizJumpbar"></div>
+        </aside>
+    </div>
+
+    <!-- 面板收起后右缘悬浮的展开按钮 -->
+    <button class="quiz-expand-tab" onclick="toggleQuizPane()" title="展开题目面板">题目</button>
+
+    <script src="js/common.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/article.js"></script>
+</body>
+</html>

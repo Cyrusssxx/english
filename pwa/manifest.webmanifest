@@ -1,0 +1,26 @@
+{
+    "name": "英语二真题精翻",
+    "short_name": "英二精翻",
+    "description": "考研英语二历年真题精翻：逐句翻译 · 词组注释 · 做题解析 · 生词本，完全离线可用",
+    "lang": "zh-CN",
+    "start_url": "index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#f0fdfa",
+    "theme_color": "#0d9488",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>句子收藏 - 英语二真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">真题文章</a>
+                <a href="vocab.html" class="nav-link">生词本</a>
+                <a href="favorites.html" class="nav-link active">句子收藏</a>
+            </div>
+            <div class="nav-tools">
+                <span class="nav-timer" id="navTimer">⏱ 00:00:00</span>
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="hero">
+            <h1>句子收藏夹</h1>
+            <p class="subtitle" id="favCount"></p>
+        </div>
+        <div class="item-list" id="favList">
+            <div class="loading">加载中...</div>
+        </div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/storage.js"></script>
+    <script>
+        async function render() {
+            const rows = (await dbAll('fav_sentences')).sort((a, b) => (b.added_at || '').localeCompare(a.added_at || ''));
+            document.getElementById('favCount').textContent = rows.length ? `共 ${rows.length} 句` : '';
+            if (!rows.length) {
+                document.getElementById('favList').innerHTML =
+                    '<div class="empty">还没有收藏。精读时点句子右侧 ☆ 收藏好句/长难句。</div>';
+                return;
+            }
+            document.getElementById('favList').innerHTML = rows.map(f => `
+                <div class="item-card">
+                    <div class="ic-en">${esc(f.en)}</div>
+                    <div class="ic-cn">${esc(f.cn || '')}</div>
+                    <div class="ic-foot">
+                        <span>${esc(f.added_at || '')}</span>
+                        <span class="ic-actions">
+                            <a href="article.html?id=${esc(f.article_id)}#${esc(f.sentence_id)}">查看原文 →</a>
+                            <button class="del" onclick="del('${esc(f.sentence_id)}')">删除</button>
+                        </span>
+                    </div>
+                </div>`).join('');
+        }
+
+        async function del(sid) {
+            await dbDelete('fav_sentences', sid);
+            render();
+        }
+
+        render();
+    </script>
+</body>
+</html>
