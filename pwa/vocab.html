@@ -16,6 +16,7 @@
             <a href="index.html" class="nav-brand">英二精翻</a>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
                 <a href="vocab.html" class="nav-link active">生词本</a>
                 <a href="favorites.html" class="nav-link">句子收藏</a>
             </div>
@@ -39,6 +40,11 @@
     <script src="js/common.js"></script>
     <script src="js/storage.js"></script>
     <script>
+        function dayStr(offset = 0) {
+            const d = new Date();
+            d.setDate(d.getDate() + offset);
+            return d.toISOString().slice(0, 10);
+        }
         async function render() {
             const rows = (await dbAll('vocab')).sort((a, b) => (b.added_at || '').localeCompare(a.added_at || ''));
             document.getElementById('vocabCount').textContent = rows.length ? `共 ${rows.length} 个词/词组` : '';
@@ -47,7 +53,13 @@
                     '<div class="empty">还没有生词。精读时点下划线词，在弹卡里加入生词本。</div>';
                 return;
             }
-            document.getElementById('vocabList').innerHTML = rows.map(v => `
+            const today = dayStr(0);
+            const due = rows.filter(v => !v.srs || (v.srs.due && v.srs.due <= today)).length;
+            const cta = due
+                ? `<div class="sc-main"><b>今日待背 ${due} 个词</b><div class="sc-sub">单词卡 · 间隔重复 · 可离线</div></div><span class="sc-go">开始背单词 →</span>`
+                : `<div class="sc-main"><b>今日待背已清空 🎉</b><div class="sc-sub">可点入提前背未到期的词</div></div><span class="sc-go">去背单词 →</span>`;
+            const ctaHtml = `<a class="study-cta" href="study.html">${cta}</a>`;
+            document.getElementById('vocabList').innerHTML = ctaHtml + rows.map(v => `
                 <div class="item-card">
                     <div class="ic-head">
                         <span><span class="ic-word">${esc(v.word)}</span>

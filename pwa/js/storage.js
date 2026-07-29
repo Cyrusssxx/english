@@ -114,9 +114,17 @@ function now() {
 
 // ==================== 业务操作 ====================
 
-/** 生词本：加词（word 已存在则覆盖） */
-async function addVocab(word, meaning, phonetic, sentenceId, articleId) {
-    await dbPut('vocab', { word, meaning, phonetic: phonetic || '', sentence_id: sentenceId, article_id: articleId, added_at: now() });
+/** 生词本：加词（word 已存在则覆盖；保留已有的复习状态 srs） */
+async function addVocab(word, meaning, phonetic, sentenceId, articleId, exampleEn, exampleCn) {
+    const old = await dbGet('vocab', word);
+    await dbPut('vocab', {
+        word, meaning, phonetic: phonetic || '',
+        sentence_id: sentenceId, article_id: articleId,
+        example_en: exampleEn || (old && old.example_en) || '',
+        example_cn: exampleCn || (old && old.example_cn) || '',
+        srs: old && old.srs ? old.srs : undefined,
+        added_at: (old && old.added_at) || now()
+    });
 }
 
 /** 句子收藏切换，返回收藏后状态 */

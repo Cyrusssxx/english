@@ -3,6 +3,33 @@
   "exam": "en2",
   "years": [
     {
+      "year": 2025,
+      "articles": [
+        {"id": "2025_text1", "type": "text1", "title": "Tipping Etiquette and Norms Are in Flux—Here's How You Can Avoid Feeling Flustered or Ripped Off", "topic": "美国小费文化的变迁：数字支付系统的普及催生“小费渐涨”与“小费通胀”，如今给小费更具强制性、与服务质量脱钩，正逐渐成为顾客的一种负担", "sentence_count": 20, "question_count": 5},
+        {"id": "2025_text2", "type": "text2", "title": "Rather Than 'Fixing' the NHS, We Need to Radically Rethink Our Approach to Health", "topic": "与其“修复”NHS，不如彻底反思英国的医疗方式：NHS 模式已过时、供不应求，作者主张关注社会因素、重构以医院为中心的医疗体系", "sentence_count": 18, "question_count": 5},
+        {"id": "2025_text3", "type": "text3", "title": "Heat-Proofing India: Cities in India Are Testing Measures That Could Help Urban Populations Worldwide Cope With Rising Temperatures", "topic": "印度城市试点应对高温行动计划（HAPs）：现有 HAPs 执行不均、预警阈值未本地化，应纳入湿度等多因素、绘制脆弱性地图，并追求让社区变凉爽的中长期目标", "sentence_count": 21, "question_count": 5},
+        {"id": "2025_text4", "type": "text4", "title": "Phenomena: What Desire Paths Reveal About Human Nature", "topic": "心选小路（desire paths）揭示的人性：它们是人们追求便利的集体选择，反映公共空间由使用者主导的自然演变与追求可控城市环境之间的张力，并体现人与动物共有的特性", "sentence_count": 15, "question_count": 5}
+      ]
+    },
+    {
+      "year": 2024,
+      "articles": [
+        {"id": "2024_text1", "type": "text1", "title": "How to Solve AI's Inequality Problem", "topic": "数字经济发展成果应更均衡分配；AI 技术与财富过度集中于少数城市会加剧不均，作者建议重新定义 AI 技术的作用", "sentence_count": 16, "question_count": 5},
+        {"id": "2024_text2", "type": "text2", "title": "Confor Warns of Future Crisis in Wood Supply", "topic": "英国因植树不足面临未来木材与建筑业危机，政府新激励不足、长期投资缺位，呼吁加大对生产性植树的支持", "sentence_count": 14, "question_count": 5},
+        {"id": "2024_text3", "type": "text3", "title": "When Should Older Adults Stop Driving? It Depends.", "topic": "如何解决老年司机的安全驾驶问题：让危险的老年司机停驾很难，各方零散应对、缺乏统一研究；亲自续期与视力测试有效；自动驾驶无法解决撞车，应开发老年人易于驾驶的汽车", "sentence_count": 17, "question_count": 5},
+        {"id": "2024_text4", "type": "text4", "title": "Protecting Consumer Health Data Privacy Beyond HIPAA", "topic": "健康类应用普及，但其收集的健康数据缺乏 HIPAA 等法律的同等保护；FTC 只能事后监管、面对海量新应用力不从心；联邦立法短期无望，加州等州已率先立法保护消费者健康数据", "sentence_count": 16, "question_count": 5}
+      ]
+    },
+    {
+      "year": 2023,
+      "articles": [
+        {"id": "2023_text1", "type": "text1", "title": "Banned at the Chelsea Flower Show, Plastic Grass Is Growing Out of Favour", "topic": "人造草坪因破坏环境和生物多样性而备受争议，皇家园艺协会与活动人士反对，政府暂不禁用但要求合规", "sentence_count": 16, "question_count": 5},
+        {"id": "2023_text2", "type": "text2", "title": "Our National Parks Are in Crisis. Trump's Solution Is Absurd", "topic": "美国国家公园深陷长期资金危机，私有化露营地并非良策，作者呼吁国会增加拨款", "sentence_count": 17, "question_count": 5},
+        {"id": "2023_text3", "type": "text3", "title": "The Digital-Era Brain", "topic": "互联网时代人脑记忆改变的只是内容而非能力；“认知卸载”减轻记忆负担并改变学习方式，但影响好坏尚无定论", "sentence_count": 18, "question_count": 5},
+        {"id": "2023_text4", "type": "text4", "title": "Teenage Rebels with a Cause", "topic": "青春期并非待解决的问题，而是机遇与风险并存的阶段；青少年的亲社会性与叛逆性相伴相生，根源在于对社交奖励的高回报敏感性", "sentence_count": 24, "question_count": 5}
+      ]
+    },
+    {
       "year": 2022,
       "articles": [
         { "id": "2022_text1", "type": "text1", "title": "Farmers See Sustainable Eggs as the Industry's Next Big Thing", "topic": "运用再生农业生产的气候友好型鸡蛋上市，蛋品行业看好其市场前景", "sentence_count": 19, "question_count": 5 },

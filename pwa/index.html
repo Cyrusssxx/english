@@ -16,6 +16,7 @@
             <a href="index.html" class="nav-brand">英二精翻</a>
             <div class="nav-links">
                 <a href="index.html" class="nav-link active">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
                 <a href="vocab.html" class="nav-link">生词本</a>
                 <a href="favorites.html" class="nav-link">句子收藏</a>
             </div>
@@ -99,7 +100,7 @@
             }
             if (!found) return;
             document.getElementById('cbTitle').textContent = `${foundYear} ${TYPE_NAMES[found.type] || found.type}`;
-            document.getElementById('cbSub').textContent = found.topic || '';
+            document.getElementById('cbSub').textContent = found.title || '';
             document.getElementById('cbLink').href = `article.html?id=${found.id}`;
             document.getElementById('continueBar').style.display = '';
         }
@@ -136,7 +137,7 @@
                 <a class="article-card" href="article.html?id=${a.id}">
                     <div class="ac-main">
                         <span class="ac-type">${TYPE_NAMES[a.type] || a.type}</span>
-                        <span class="ac-topic">${esc(a.topic || '')}</span>
+                        <span class="ac-title">${esc(a.title || '')}</span>
                     </div>
                     <div class="ac-right">${right}<span class="ac-arrow">→</span></div>
                 </a>`;

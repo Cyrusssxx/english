@@ -96,6 +96,9 @@ function renderArticle() {
     }
     let html = `<div class="read-title">${esc(article.title || '')}</div>`;
     html += `<div class="read-source">${esc(article.source || '')} · 点句下占位条显示译文，点下划线词查释义</div>`;
+    if (article.topic) {
+        html += `<div class="read-summary"><span class="rs-label">本文概要</span>${esc(article.topic)}</div>`;
+    }
     paras.forEach((sents, i) => {
         html += `<div class="para"><div class="para-tag">P${i + 1}</div>`;
         for (const s of sents) html += sentenceHtml(s);
@@ -229,7 +232,7 @@ async function onAddVocab(btn, sid, wi) {
         btn.textContent = '+ 加入生词本';
         btn.classList.remove('added');
     } else {
-        await addVocab(w.w, w.meaning, w.phonetic, sid, AID);
+        await addVocab(w.w, w.meaning, w.phonetic, sid, AID, sent.en, sent.cn);
         vocabSet.add(w.w);
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
