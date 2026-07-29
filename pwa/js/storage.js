@@ -262,6 +262,15 @@ async function removeVocabFromDeck(word, deckId) {
     else await dbDelete('vocab', word);
 }
 
+/** 收藏/取消收藏某词（★ 标记，跨词书全局，随备份导出），返回收藏后状态 */
+async function toggleFavWord(word) {
+    const v = await dbGet('vocab', word);
+    if (!v) return false;
+    v.fav = !v.fav;
+    await dbPut('vocab', v);
+    return !!v.fav;
+}
+
 /** 取某词书的生词（__all__ 返回全部；缺省 decks 视为 default） */
 async function vocabByDeck(deckId) {
     const all = await dbAll('vocab');
@@ -269,11 +278,12 @@ async function vocabByDeck(deckId) {
     return all.filter(v => (Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID]).includes(deckId));
 }
 
-/** 各词书生词计数：{__all__:n, deckId:n, ...} */
+/** 各词书生词计数：{__all__:n, __fav__:n, deckId:n, ...} */
 async function deckCounts() {
-    const counts = { [ALL_DECKS]: 0 };
+    const counts = { [ALL_DECKS]: 0, __fav__: 0 };
     for (const v of await dbAll('vocab')) {
         counts[ALL_DECKS]++;
+        if (v.fav) counts.__fav__++;
         const decks = Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID];
         for (const id of decks) counts[id] = (counts[id] || 0) + 1;
     }

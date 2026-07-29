@@ -1,5 +1,14 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v11] 2026-07-27
+
+### 背单词：回退（防误点） + 每日计划 + 单词收藏
+- **回退按钮**：`study.js` 新增判定历史栈，`judge` 前快照（光标/进度/该词原 `srs`/是否压回队尾）；`undo()` 撤销最近一次认识/不认识，恢复记忆状态与队列，防止误点（顶栏「↶ 回退」按钮 + `Backspace` 快捷键，无历史时置灰）。
+- **每日计划**：新增 `getDailyPlan/setDailyPlan`（存 `localStorage.en2_dailyPlan`，默认 20），`buildQueue` 的新词引入上限改为可设置；顶栏「📅 每日 N」按钮可改。
+- **单词收藏**：`storage.js` 新增 `toggleFavWord`（`vocab.fav` 标记，跨词书全局，随备份导出）；背词卡片右上角 ☆/★ 切换；单词本新增「★ 收藏」筛选页与每张词卡星标；`deckCounts` 同步统计收藏数。
+- **`pwa/css/style.css`**：新增 `.study-bar .sb-btn`（回退/计划胶囊按钮）、`.fc-fav`（卡片星标）、`.item-card .ic-fav`（词卡星标）。
+- **`pwa/sw.js`**：`CACHE_VER` `en2-v10` → `en2-v11`。
+
 ## [en2-v10] 2026-07-27
 
 ### 背单词页改版：消除翻卡跳动（墨墨 / 扇贝式固定结构）

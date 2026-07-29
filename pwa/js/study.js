@@ -3,12 +3,17 @@
  * 例句从对应年份题库解析（离线缓存），目标词加粗；释义按“核心义加粗”规则渲染。
  */
 
-const NEW_LIMIT = 20;          // 每轮最多引入的新词数
+const DEFAULT_DAILY = 20;      // 每日新词量默认值
 let queue = [];                // 本轮队列（元素为 vocab 记录）
 let cur = 0;                   // 当前卡索引
 let flipped = false;           // 是否已翻面
 let done = 0;                  // 本轮已判定数
+let history = [];              // 判定历史栈（供「回退」撤销误点）
 const _artCache = {};          // {article_id: article} 例句解析缓存
+
+// 每日计划：每轮最多引入的新词数（可在背词页设置，存 localStorage）
+function getDailyPlan() { return parseInt(localStorage.getItem('en2_dailyPlan') || '', 10) || DEFAULT_DAILY; }
+function setDailyPlan(n) { localStorage.setItem('en2_dailyPlan', String(n)); }
 
 // ============ 日期工具（ISO 字符串，字典序即时间序） ============
 function dayStr(offset = 0) {
@@ -111,9 +116,9 @@ async function buildQueue(includeAll) {
     if (includeAll) {
         // 提前学：到期复习 + 新词 + 未到期（未到期按 due 升序）
         future.sort((a, b) => (a.srs.due || '').localeCompare(b.srs.due || ''));
-        q = [...reviews, ...news.slice(0, NEW_LIMIT), ...future];
+        q = [...reviews, ...news.slice(0, getDailyPlan()), ...future];
     } else {
-        q = [...reviews, ...news.slice(0, NEW_LIMIT)];
+        q = [...reviews, ...news.slice(0, getDailyPlan())];
     }
     return { q, total: all.length, reviews: reviews.length, news: news.length };
 }
@@ -140,7 +145,7 @@ async function onStudyDeckChange(id) {
 // ============ 渲染 ============
 async function start(includeAll) {
     const info = await buildQueue(includeAll);
-    queue = info.q; cur = 0; done = 0; flipped = false;
+    queue = info.q; cur = 0; done = 0; flipped = false; history = [];
     const root = document.getElementById('studyRoot');
     if (!info.total) {
         root.innerHTML = `<div class="study-empty">
@@ -177,10 +182,13 @@ async function renderCard() {
             <div class="sb-stat"><b>${done}</b> 已背</div>
             <div class="sb-stat"><b>${remain}</b> 剩余</div>
             <div class="sb-prog"><span style="width:${queue.length ? (cur / queue.length * 100) : 0}%"></span></div>
+            <button class="sb-btn" onclick="undo()" ${history.length ? '' : 'disabled'} title="撤销上一次判定">↶ 回退</button>
+            <button class="sb-btn" onclick="editPlan()" title="设置每日新词量">📅 每日 ${getDailyPlan()}</button>
         </div>
         <div class="flashcard" id="flashcard" onclick="onFlip()">
             <div class="fc-front">
                 ${tag}
+                <button class="fc-fav ${v.fav ? 'on' : ''}" onclick="event.stopPropagation();toggleFav()" title="收藏该词">${v.fav ? '★' : '☆'}</button>
                 <div class="fc-word">${esc(v.word)}</div>
                 <div class="fc-phonetic">${esc(v.phonetic || '')}</div>
                 <button class="fc-play" onclick="event.stopPropagation();speak('${wsafe}')" title="朗读">🔊 朗读</button>
@@ -221,12 +229,56 @@ function onFlip() {
 
 async function judge(known) {
     if (cur >= queue.length) return;
+    const v0 = queue[cur];
+    // 判定前快照，供「回退」撤销误点：记录光标/进度/该词原 srs/是否被压回队尾
+    history.push({
+        cur, done, word: v0.word,
+        prevSrs: v0.srs ? JSON.parse(JSON.stringify(v0.srs)) : undefined,
+        pushedBack: !known
+    });
     const v = grade(queue[cur], known);
     await dbPut('vocab', v);
     done++;
     if (!known) queue.push({ ...v });   // 不认识：本轮末尾再来一次
     cur++;
     renderCard();
+}
+
+/** 回退：撤销最近一次判定，恢复该词记忆状态与本轮进度（防误点） */
+async function undo() {
+    if (!history.length) return;
+    const h = history.pop();
+    if (h.pushedBack && queue.length && queue[queue.length - 1].word === h.word) {
+        queue.pop();                    // 撤掉「不认识」压回队尾的副本
+    }
+    cur = h.cur; done = h.done;
+    const rec = (await dbGet('vocab', h.word)) || queue[cur];
+    if (rec) {
+        if (h.prevSrs === undefined) delete rec.srs; else rec.srs = h.prevSrs;
+        await dbPut('vocab', rec);
+        if (queue[cur] && queue[cur].word === h.word) queue[cur].srs = rec.srs;
+    }
+    renderCard();
+}
+
+/** 收藏/取消收藏当前词（★，单词本可按收藏筛选） */
+async function toggleFav() {
+    const v = queue[cur];
+    if (!v) return;
+    v.fav = !v.fav;
+    await dbPut('vocab', v);
+    const btn = document.querySelector('.fc-fav');
+    if (btn) { btn.classList.toggle('on', v.fav); btn.textContent = v.fav ? '★' : '☆'; }
+}
+
+/** 设置每日新词量（每轮最多引入的新词数） */
+function editPlan() {
+    const s = prompt('每日新词量（每轮最多引入多少个新词）：', getDailyPlan());
+    if (s === null) return;
+    const n = parseInt(s, 10);
+    if (!n || n < 1) { alert('请输入正整数'); return; }
+    setDailyPlan(n);
+    start(false);
 }
 
 function renderDone() {
@@ -242,6 +294,7 @@ function renderDone() {
 document.addEventListener('keydown', (e) => {
     if (!queue.length || cur >= queue.length) return;
     if (e.code === 'Space') { e.preventDefault(); onFlip(); }
+    else if (e.code === 'Backspace') { e.preventDefault(); undo(); }
     else if (flipped && e.code === 'ArrowLeft') { e.preventDefault(); judge(false); }
     else if (flipped && e.code === 'ArrowRight') { e.preventDefault(); judge(true); }
 });
