@@ -3,6 +3,78 @@
   "exam": "en2",
   "years": [
     {
+      "year": 2022,
+      "articles": [
+        { "id": "2022_text1", "type": "text1", "title": "Farmers See Sustainable Eggs as the Industry's Next Big Thing", "topic": "运用再生农业生产的气候友好型鸡蛋上市，蛋品行业看好其市场前景", "sentence_count": 19, "question_count": 5 },
+        { "id": "2022_text2", "type": "text2", "title": "Is Retirement Dying? The Old Work Model Is Disappearing", "topic": "越来越多美国人选择退休后继续工作，掀起\"不退休\"潮流", "sentence_count": 20, "question_count": 5 },
+        { "id": "2022_text3", "type": "text3", "title": "Understanding Dark Patterns: How to Stay Out of the Gray Areas", "topic": "在线消费中的\"黑暗模式\"操纵用户决策，企业应自律以远离灰色区域", "sentence_count": 17, "question_count": 5 },
+        { "id": "2022_text4", "type": "text4", "title": "Ethics Lesson May Hold Outside the Classroom", "topic": "一堂关于吃肉伦理的哲学课或能持久改变学生的实际饮食行为", "sentence_count": 18, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2021,
+      "articles": [
+        { "id": "2021_text1", "type": "text1", "title": "Is Now the Time for a Reskilling Revolution?", "topic": "技能再培训势在必行：从公司到国家层面缓解技能不匹配", "sentence_count": 19, "question_count": 5 },
+        { "id": "2021_text2", "type": "text2", "title": "Brexit Ideas of UK Food Self-Sufficiency Are Just Pipe Dreams", "topic": "英国靠脱欧实现粮食自给自足只是白日梦：受土地与自然条件所限并不可行", "sentence_count": 16, "question_count": 5 },
+        { "id": "2021_text3", "type": "text3", "title": "Big Tech's 'Buy and Kill' Tactics Come Under Scrutiny", "topic": "大型科技公司的\"买了即杀\"策略受审查：恶意收购扼杀潜在竞争对手", "sentence_count": 16, "question_count": 5 },
+        { "id": "2021_text4", "type": "text4", "title": "Sometimes the Heart Is Smarter Than the Head", "topic": "直觉有时比深思更准确：在处理社会信息等特定情境下深思反而干扰判断", "sentence_count": 21, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2020,
+      "articles": [
+        { "id": "2020_text1", "type": "text1", "title": "Rats Can Make Friends with Robot Rats", "topic": "老鼠会与机器鼠交朋友：其对社交信号的敏感度超出预期", "sentence_count": 18, "question_count": 5 },
+        { "id": "2020_text2", "type": "text2", "title": "Why CEOs Actually Deserve Their Salaries", "topic": "为何 CEO 理应获得高薪：多角度论证高薪的合理性", "sentence_count": 18, "question_count": 5 },
+        { "id": "2020_text3", "type": "text3", "title": "It Can't Be Left to Europe's Cities to Clean Up Noxious Air", "topic": "不可将治理有毒空气交由欧洲各城市：应由国家政府主导", "sentence_count": 20, "question_count": 5 },
+        { "id": "2020_text4", "type": "text4", "title": "Generation Z: Practical, Cautious and Risk-Averse", "topic": "职场新人 Z 世代：厌恶风险、追求稳定", "sentence_count": 18, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2019,
+      "articles": [
+        { "id": "2019_text1", "type": "text1", "title": "When Guilt Is Good", "topic": "内疚感可能是好事：一种社会粘合剂", "sentence_count": 24, "question_count": 5 },
+        { "id": "2019_text2", "type": "text2", "title": "Using Forests to Fight Climate Change", "topic": "利用森林应对气候变化：加州森林碳计划", "sentence_count": 21, "question_count": 5 },
+        { "id": "2019_text3", "type": "text3", "title": "U.S. Farms Can't Compete Without Foreign Workers", "topic": "离了外籍劳工，美国农场将不具竞争性：农工移民政策亟待改革", "sentence_count": 27, "question_count": 5 },
+        { "id": "2019_text4", "type": "text4", "title": "Let's Stop Pretending Quitting Straws Will Solve Plastic Pollution", "topic": "塑料之战需由政府领头：个人行动远远不够", "sentence_count": 20, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2018,
+      "articles": [
+        { "id": "2018_text1", "type": "text1", "title": "Learning by Doing", "topic": "职业教育与动手学习：Koziatek 高中的开创性尝试", "sentence_count": 24, "question_count": 5 },
+        { "id": "2018_text2", "type": "text2", "title": "Renewable Energy at a Tipping Point", "topic": "可再生能源已达临界点：全球大势与美国转变", "sentence_count": 19, "question_count": 5 },
+        { "id": "2018_text3", "type": "text3", "title": "Digital Giants Farming Our Data", "topic": "数字巨头收割用户数据：竞争法为何失灵", "sentence_count": 18, "question_count": 5 },
+        { "id": "2018_text4", "type": "text4", "title": "Manage Your Energy, Not Your Time", "topic": "管理精力而非时间：深度工作与适时偷懒", "sentence_count": 15, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2017,
+      "articles": [
+        { "id": "2017_text1", "type": "text1", "title": "Parkrun and the Olympic Legacy", "topic": "公园跑与奥运遗产：草根体育为何比奥运会更成功", "sentence_count": 25, "question_count": 5 },
+        { "id": "2017_text2", "type": "text2", "title": "Parents, Screens, and Attention", "topic": "父母的屏幕使用：数字设备如何冲击亲子互动", "sentence_count": 16, "question_count": 5 },
+        { "id": "2017_text3", "type": "text3", "title": "In Favor of the Gap Year", "topic": "为间隔年正名：休整一年为何有助于学业与省钱", "sentence_count": 16, "question_count": 5 },
+        { "id": "2017_text4", "type": "text4", "title": "Rethinking How Society Views Fire", "topic": "重新看待野火：从公共支出到人与火的共存", "sentence_count": 17, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2016,
+      "articles": [
+        { "id": "2016_text1", "type": "text1", "title": "Teaching Teens to Code", "topic": "教青少年编程：为何越早接触计算机越好", "sentence_count": 18, "question_count": 5 },
+        { "id": "2016_text2", "type": "text2", "title": "Saving the Lesser Prairie Chicken", "topic": "拯救小草原松鸡：受威胁标签背后的合作与争议", "sentence_count": 18, "question_count": 5 },
+        { "id": "2016_text3", "type": "text3", "title": "Finding Time to Read", "topic": "如何找时间阅读：效率思维为何是深度阅读之敌", "sentence_count": 19, "question_count": 5 },
+        { "id": "2016_text4", "type": "text4", "title": "A New Road Map to Success", "topic": "年轻美国人的成功路线图：同一终点，不同路径", "sentence_count": 12, "question_count": 5 }
+      ]
+    },
+    {
+      "year": 2015,
+      "articles": [
+        { "id": "2015_text1", "type": "text1", "title": "Stress at Home vs Work", "topic": "在家比上班更累：家务与角色模糊带来的压力", "sentence_count": 24, "question_count": 5 },
+        { "id": "2015_text2", "type": "text2", "title": "First-Generation College Students", "topic": "第一代大学生：用一小时干预缩小成就差距", "sentence_count": 13, "question_count": 5 },
+        { "id": "2015_text3", "type": "text3", "title": "The Origins of Office Speak", "topic": "办公室用语的由来：情感化、团队化与自我实现", "sentence_count": 17, "question_count": 5 },
+        { "id": "2015_text4", "type": "text4", "title": "Part-Time Jobs and Obamacare", "topic": "兼职就业与奥巴马医改：自愿兼职为何激增", "sentence_count": 23, "question_count": 5 }
+      ]
+    },
+    {
       "year": 2014,
       "articles": [
         { "id": "2014_text1", "type": "text1", "title": "Happy Money", "topic": "幸福消费：把钱花在体验上远比购物更值得", "sentence_count": 18, "question_count": 5 },
