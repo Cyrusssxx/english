@@ -21,12 +21,21 @@ import sys
 SIMPLE_FRQ_RANK = 3000          # 词频排名 <= 此值视为简单词（松紧开关）
 TRANS_MAX = 80                  # 中文释义截断长度
 SIZE_WARN_KB = 800              # dict.json 体积告警阈值
-VERSION = 'en2-v7'
+VERSION = 'en2-v9'
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, 'pwa', 'data')
 CSV_PATH = os.path.join(ROOT, 'tools', 'ecdict.csv')
 OUT_PATH = os.path.join(DATA_DIR, 'dict.json')
+
+# 考研词表（用于难度校准：重点词即便高频也保留为难词）
+EXAM_LIB_DIR = r"d:\ai code\英语词库"
+EXAM_LIB_FILES = [
+    '考研真题核心词汇书.txt',
+    '完全版考研考纲词汇（乱序）.txt',
+    '考研形近易混词汇.txt',
+]
+EXAM_WORDS = set()              # 在 main 中加载：首个空白前 token 的小写
 
 WORD_RE = re.compile(r"[A-Za-z][A-Za-z'\-]*")
 
@@ -41,6 +50,25 @@ this that these those as me my mine ours yours theirs who whom which what where 
 """.split())
 
 csv.field_size_limit(10 * 1024 * 1024)
+
+
+def load_exam_words():
+    """加载 3 个考研词表的首 token（小写）为集合；文件缺失则静默跳过。"""
+    words = set()
+    for name in EXAM_LIB_FILES:
+        path = os.path.join(EXAM_LIB_DIR, name)
+        if not os.path.exists(path):
+            print(f'⚠ 考研词表缺失，跳过：{path}')
+            continue
+        with open(path, encoding='utf-8') as fp:
+            for line in fp:
+                line = line.strip()
+                if not line:
+                    continue
+                tok = re.split(r'\s+', line, maxsplit=1)[0].strip().lower()
+                if tok:
+                    words.add(tok)
+    return words
 
 
 def build_corpus():
@@ -93,11 +121,14 @@ def is_simple(row, word):
     tag = row.get('tag') or ''
     if 'zk' in tag or 'gk' in tag:
         return True
-    if rank_of(row) <= SIMPLE_FRQ_RANK:
-        return True
     if len(word) <= 3:
         return True
     if word in STOPWORDS:
+        return True
+    # 考研重点词：过了基础闸门后，即便高频也保留为难词（置于词频闸门之前）
+    if word in EXAM_WORDS:
+        return False
+    if rank_of(row) <= SIMPLE_FRQ_RANK:
         return True
     return False
 
@@ -109,6 +140,10 @@ def main():
 
     corpus, files = build_corpus()
     print(f'语料：{len(files)} 个题库文件，去重后 {len(corpus)} 个词')
+
+    global EXAM_WORDS
+    EXAM_WORDS = load_exam_words()
+    print(f'考研词表：{len(EXAM_WORDS)} 个重点词（高频也保留为难词）')
 
     # Pass 1：抓取语料词的直接条目
     entries = {}

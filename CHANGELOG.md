@@ -1,5 +1,31 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v9] 2026-07-27
+
+### 文章词组自动识别高亮 + 可点翻译
+- **新增词组词典**：`tools/build_phrases.py` 从《英（二）2014-2024 真题词组-背诵版 PDF》（坐标分列重建，释义 100% 照抄）叠加 16 年题库人工词组，产出 `pwa/data/phrases.json`（扁平映射 + `maxWords`）。
+- **`pwa/js/dict.js`**：追加 `loadPhrases()` 一次加载并构建内存索引（首词 → 候选，按词数降序），新增 `phraseLookup`/`phraseCandidates`/`maxPhraseWords`；加载失败静默降级为无词组高亮。
+- **`pwa/js/article.js`**：新增 `annotatePhrases()`，对人工预标注切段后的纯文本做左→右、最长优先的词组匹配，命中区间包成可点 span（`onPhraseClick` 弹卡 + 加入生词本）；与人工标注、单词天然无重叠。
+
+### 内置词书：真题词组 + 3 本考研词表随应用发布
+- **新增** `tools/build_decks.py` 从 3 个考研词表（真题核心 2230 / 考纲乱序 5551 / 形近易混 1013）产出 `deck_core/syllabus/confusable.json`；真题词组词书 `deck_phrases.json` 由 `build_phrases.py` 一并产出（226 词条，含例句）。
+- **词组 PDF 解析**：按列（序号/短语/含义/例句）重建——短语/含义列先按行距聚块再以块中心就近归属序号（避免多行含义被切碎），例句列逐词归属到最近的已定位短语/含义块；例句若检出跨条残句/拆散数字等污染信号则丢弃例句（宁缺勿错），词条仍保留正确的 word+meaning。
+- **`pwa/js/storage.js`**：新增 `ensureDeck(id, name)`（固定 id、可删、重导幂等）。
+- **`pwa/vocab.html`**：词书区新增「内置词书」入口，4 本词书按需 `fetch` → `ensureDeck` + `addWordsBulk` 导入（已有词仅并入、不覆盖进度，已导入二次确认），不在启动时自动灌库。
+
+### 难度判定校准
+- **`tools/build_dict.py`**：加载 3 个考研词表为 `EXAM_WORDS`；`is_simple` 保留 zk/gk、长度≤3、停用词三道基础闸门在前，在词频闸门之前插入「考研重点词即便高频也保留为难词」；重建 `dict.json`（1731 难词，208.8KB）。
+
+### 词组释义去「词组：」前缀
+- **`tools/strip_phrase_prefix.py`** 窄替换去掉16 个年份 JSON 里释义的「词组：」前缀；`pwa/js/study.js` `renderMeaning` 静默剥离前缀（兼容已存旧记录）。
+
+### 发布
+- **`pwa/css/style.css`**：`.word.phrase` 叠加一条极轻波浪下划线（复用 `.word`/`.dict-hard` 高亮与点击态）。
+- **`pwa/sw.js`**：`PRECACHE` 追加 `phrases.json` 与 4 个 `deck_*.json`；`CACHE_VER` `en2-v8` → `en2-v9`。
+
+### 校验
+- `tools/validate.py` 16 个 JSON 均合法；`node --check` 全部 JS 通过。
+
 ## [en2-v8] 2026-07-27
 
 ### 多词书系统：一个词可归属多本词书

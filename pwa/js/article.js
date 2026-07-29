@@ -102,6 +102,8 @@ async function init() {
 
     // 离线词典：失败静默降级为仅预标注词可点
     await loadDict();
+    // 词组词典：失败静默降级为无词组高亮
+    await loadPhrases();
 
     renderModeSwitch();
     renderHardSwitch();
@@ -184,8 +186,8 @@ function annotate(s) {
             const inV = vocabSet.has(w.w);
             return `<span class="word ${inV ? 'in-vocab' : ''}" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
         }
-        // 纯文本段：难词包 span（可点+可高亮），完形空格 [n] 转 blank，其余转义
-        return annotatePlain(seg.text, s.id);
+        // 纯文本段：先试词组扫描，其余回落难词/空格/转义
+        return annotatePhrases(seg.text, s.id);
     }).join('');
     return { html, missed };
 }
@@ -210,6 +212,49 @@ function annotatePlain(text, sid) {
         last = m.index + m[0].length;
     }
     out += esc(text.slice(last));
+    return out;
+}
+
+/** 词组扫描：左→右逐 token，首词查 _phraseIndex 最长优先匹配连续词组；
+    命中区间包成可点 span，命中前/剩余文本回落 annotatePlain。与人工预标注、单词天然无重叠。 */
+function annotatePhrases(text, sid) {
+    if (maxPhraseWords() < 2) return annotatePlain(text, sid);   // 词典未加载/为空时直接回落
+    const TOK = /[A-Za-z][A-Za-z'\-]*/g;
+    const toks = [];
+    let m;
+    while ((m = TOK.exec(text)) !== null) {
+        toks.push({ s: m.index, e: m.index + m[0].length, low: m[0].toLowerCase() });
+    }
+    let out = '', last = 0, i = 0;
+    while (i < toks.length) {
+        const cands = phraseCandidates(toks[i].low);
+        let matched = null;
+        if (cands) {
+            for (const c of cands) {                 // 候选已按 token 数降序→最长优先
+                const n = c.tokens.length;
+                if (i + n > toks.length) continue;
+                let ok = true;
+                for (let k = 1; k < n; k++) {
+                    if (toks[i + k].low !== c.tokens[k]) { ok = false; break; }
+                    // 两 token 之间只允许空白/连字符，否则不是连续词组
+                    if (!/^[\s\-]*$/.test(text.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
+                }
+                if (ok) { matched = c; break; }
+            }
+        }
+        if (matched) {
+            const n = matched.tokens.length;
+            const segStart = toks[i].s, segEnd = toks[i + n - 1].e;
+            out += annotatePlain(text.slice(last, segStart), sid);
+            const inV = vocabSet.has(matched.key);
+            out += `<span class="word phrase dict-hard ${inV ? 'in-vocab' : ''}" data-w="${esc(matched.key)}" onclick="onPhraseClick(event,'${sid}')">${esc(text.slice(segStart, segEnd))}</span>`;
+            last = segEnd;
+            i += n;
+        } else {
+            i++;
+        }
+    }
+    out += annotatePlain(text.slice(last), sid);
     return out;
 }
 
@@ -328,6 +373,41 @@ async function onAddDictVocab(btn) {
     }
     document.querySelectorAll(`.word[data-w="${CSS.escape(word)}"]`)
         .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(word)));
+}
+
+/** 词组下划线点击：phraseLookup 取释义 → 弹卡（含加入生词本） */
+function onPhraseClick(e, sid) {
+    e.stopPropagation();
+    const el = e.currentTarget;
+    const key = el.getAttribute('data-w');
+    const meaning = phraseLookup(key);
+    if (!meaning) return;
+    const inV = vocabSet.has(key);
+    openPop(el, `
+        <span class="wp-word">${esc(key)}</span>
+        <div class="wp-meaning">${esc(meaning)}</div>
+        <button class="${inV ? 'added' : ''}" data-w="${esc(key)}" data-sid="${esc(sid)}" onclick="onAddPhraseVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
+}
+
+/** 词组加入/移出生词本（word=词组 key，meaning=phraseLookup） */
+async function onAddPhraseVocab(btn) {
+    const key = btn.getAttribute('data-w');
+    const sid = btn.getAttribute('data-sid');
+    const meaning = phraseLookup(key) || '';
+    const sent = article.sentences.find(x => x.id === sid) || {};
+    if (vocabSet.has(key)) {
+        await dbDelete('vocab', key);
+        vocabSet.delete(key);
+        btn.textContent = '+ 加入生词本';
+        btn.classList.remove('added');
+    } else {
+        await addVocab(key, meaning, '', sid, AID, sent.en || '', sent.cn || '');
+        vocabSet.add(key);
+        btn.textContent = '已加入 ✓';
+        btn.classList.add('added');
+    }
+    document.querySelectorAll(`.word[data-w="${CSS.escape(key)}"]`)
+        .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(key)));
 }
 
 /** 一键记录：本篇所有词典命中且尚未收录的难词 → 批量加入当前词书 */

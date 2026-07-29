@@ -64,9 +64,10 @@ function highlightExample(en, w) {
 function renderMeaning(raw) {
     raw = raw || '';
     let html = '';
-    const pm = raw.match(/^\s*(词组[：:]|[A-Za-z]+\.)\s*/);
-    let rest = raw;
-    if (pm) { html += `<span class="mp-pos">${esc(pm[1])}</span> `; rest = raw.slice(pm[0].length); }
+    // 兼容历史数据：静默剥离「词组：」前缀（不再作为标签显示）
+    let rest = raw.replace(/^\s*词组[：:]\s*/, '');
+    const pm = rest.match(/^([A-Za-z]+\.)\s*/);
+    if (pm) { html += `<span class="mp-pos">${esc(pm[1])}</span> `; rest = rest.slice(pm[0].length); }
     const m = rest.match(/^([^，,；;、（(]+)([\s\S]*)$/);
     if (m) {
         html += `<b class="mp-core">${esc(m[1].trim())}</b>`;

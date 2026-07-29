@@ -452,6 +452,17 @@ html.dark .word.in-vocab {
     text-underline-offset: 4px;
 }
 
+/* 词组：复用 .word/.dict-hard 行为，叠加一条极轻的波浪线作为可点提示 */
+.word.phrase {
+    text-decoration: underline wavy var(--secondary) 1px;
+    text-underline-offset: 4px;
+}
+
+.word.phrase:hover {
+    text-decoration: underline wavy var(--secondary) 1px;
+    text-underline-offset: 4px;
+}
+
 /* 「高亮难词」开关打开：正文难词/词组统一琥珀底色 */
 body.show-hard .word {
     background: rgba(245, 158, 11, 0.20);

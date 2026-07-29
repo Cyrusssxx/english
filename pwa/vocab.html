@@ -65,6 +65,7 @@
             }
             tabs += `<button class="deck-add" onclick="onCreateDeck()">＋ 新建词书</button>`;
             tabs += `<button class="deck-add" onclick="document.getElementById('deckImport').click()">导入词书</button>`;
+            tabs += `<button class="deck-add" onclick="onBuiltinDecks()">内置词书</button>`;
             document.getElementById('deckTabs').innerHTML = tabs;
 
             const tb = document.getElementById('deckToolbar');
@@ -176,6 +177,54 @@
         async function del(word) {
             await dbDelete('vocab', word);
             renderAll();
+        }
+
+        // 内置词书（固定 id，随应用发布，点击按需 fetch 导入，可删、重导幂等）
+        const BUILTIN_DECKS = [
+            { id: 'bd_phrases', name: '真题词组（英语二2014-2024）', file: 'data/deck_phrases.json' },
+            { id: 'bd_core', name: '考研真题核心词汇', file: 'data/deck_core.json' },
+            { id: 'bd_syllabus', name: '考研考纲词汇（乱序）', file: 'data/deck_syllabus.json' },
+            { id: 'bd_confusable', name: '考研形近易混词汇', file: 'data/deck_confusable.json' },
+        ];
+
+        /** 展开内置词书列表到工具栏，各自按需导入 */
+        async function onBuiltinDecks() {
+            const counts = await deckCounts();
+            const btns = BUILTIN_DECKS.map(b => {
+                const c = counts[b.id] || 0;
+                return `<button class="tb-btn" onclick="onImportBuiltin('${b.id}')">${esc(b.name)}${c ? ` · 已${c}` : ''}</button>`;
+            }).join('');
+            document.getElementById('deckToolbar').innerHTML =
+                `<span class="tb-info">内置词书（点击按需导入）：</span>${btns}<button class="tb-btn" onclick="renderAll()">返回</button>`;
+        }
+
+        /** fetch 内置词书 json → ensureDeck + addWordsBulk（已有词则二次确认） */
+        async function onImportBuiltin(id) {
+            const b = BUILTIN_DECKS.find(x => x.id === id);
+            if (!b) return;
+            if (getDeck(id)) {
+                const counts = await deckCounts();
+                if ((counts[id] || 0) > 0 &&
+                    !confirm(`「${b.name}」已导入（${counts[id]} 词），重新导入仅并入新词、不覆盖已有进度，继续？`)) return;
+            }
+            try {
+                const res = await fetch(b.file);
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                const body = await res.json();
+                const words = Array.isArray(body.words) ? body.words : [];
+                const items = words.filter(w => w && w.word).map(w => ({
+                    word: String(w.word).trim(), meaning: w.meaning || '', phonetic: w.phonetic || '',
+                    example_en: w.example_en || '', example_cn: w.example_cn || ''
+                }));
+                if (!items.length) throw new Error('词表为空');
+                ensureDeck(id, b.name);
+                const added = await addWordsBulk(items, id);
+                viewDeck = id;
+                await renderAll();
+                alert(`已导入内置词书「${b.name}」，新增 ${added} 个词`);
+            } catch (e) {
+                alert('导入失败: ' + e.message);
+            }
         }
 
         (async () => { await migrateVocabDecks(); await renderAll(); })();

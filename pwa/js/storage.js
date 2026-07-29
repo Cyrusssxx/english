@@ -163,6 +163,16 @@ function renameDeck(id, name) {
     const d = list.find(x => x.id === id);
     if (d) { d.name = name; saveDecks(list); }
 }
+
+/** 确保一个固定 id 的内置词书存在（已存则直接返回；可删、重导幂等），返回该 id。 */
+function ensureDeck(id, name) {
+    const list = getDecks();
+    if (!list.some(d => d.id === id)) {
+        list.push({ id, name, builtin: false, order: list.length, created_at: now() });
+        saveDecks(list);
+    }
+    return id;
+}
 /** 删除词书（内置禁删）：从所有 vocab.decks 移除该 id，空记录随之删除 */
 async function deleteDeck(id) {
     if (id === DEFAULT_DECK_ID) return;
