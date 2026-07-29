@@ -25,6 +25,26 @@ function toggleMode() {
     renderModeSwitch();
 }
 
+// ============ 高亮难词开关（存 localStorage） ============
+function isShowHard() {
+    return localStorage.getItem('showHard') === '1';
+}
+
+function renderHardSwitch() {
+    const on = isShowHard();
+    document.body.classList.toggle('show-hard', on);
+    const btn = document.getElementById('hardSwitch');
+    if (btn) {
+        btn.classList.toggle('on', on);
+        document.getElementById('hardState').textContent = on ? '开' : '关';
+    }
+}
+
+function toggleHard() {
+    localStorage.setItem('showHard', isShowHard() ? '0' : '1');
+    renderHardSwitch();
+}
+
 // ============ 题目面板收缩（存 localStorage） ============
 function isQuizCollapsed() {
     return localStorage.getItem('quizCollapsed') === '1';
@@ -79,7 +99,11 @@ async function init() {
     favSet = new Set((await dbAll('fav_sentences')).map(f => f.sentence_id));
     for (const a of await dbAll('quiz_answers')) if (a.article_id === AID) answerMap[a.question_id] = a;
 
+    // 离线词典：失败静默降级为仅预标注词可点
+    await loadDict();
+
     renderModeSwitch();
+    renderHardSwitch();
     renderQuizCollapse();
     renderArticle();
     renderQuiz();
@@ -159,11 +183,33 @@ function annotate(s) {
             const inV = vocabSet.has(w.w);
             return `<span class="word ${inV ? 'in-vocab' : ''}" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
         }
-        // 纯文本段：转义后替换完形空格 [n]
-        return esc(seg.text).replace(/\[(\d+)\]/g, (_, n) =>
-            `<span class="blank" id="blank-${n}" onclick="onBlankClick(event,${n})">[${n}]</span>`);
+        // 纯文本段：难词包 span（可点+可高亮），完形空格 [n] 转 blank，其余转义
+        return annotatePlain(seg.text, s.id);
     }).join('');
     return { html, missed };
+}
+
+/** 纯文本段渲染：词典命中的难词→可点 span；完形空格 [n]→blank；其余转义 */
+function annotatePlain(text, sid) {
+    const RE = /\[(\d+)\]|[A-Za-z][A-Za-z'\-]*/g;
+    let out = '', last = 0, m;
+    while ((m = RE.exec(text)) !== null) {
+        out += esc(text.slice(last, m.index));
+        if (m[1] !== undefined) {
+            out += `<span class="blank" id="blank-${m[1]}" onclick="onBlankClick(event,${m[1]})">[${m[1]}]</span>`;
+        } else {
+            const tok = m[0];
+            if (dictLookup(tok)) {
+                const inV = vocabSet.has(tok);
+                out += `<span class="word dict-hard ${inV ? 'in-vocab' : ''}" data-w="${esc(tok)}" onclick="onDictWordClick(event,'${sid}')">${esc(tok)}</span>`;
+            } else {
+                out += esc(tok);
+            }
+        }
+        last = m.index + m[0].length;
+    }
+    out += esc(text.slice(last));
+    return out;
 }
 
 /** 全词匹配（前后均非字母才算命中），返回位置或 -1 */
@@ -199,21 +245,14 @@ async function onFav(e, sid) {
 }
 
 // ============ 释义弹卡 ============
-function onWordClick(e, sid, wi) {
-    e.stopPropagation();
+/** 建卡 + 右缘防溢出定位（预标注词与词典词共用） */
+function openPop(targetEl, innerHtml) {
     closePop();
-    const sent = article.sentences.find(x => x.id === sid);
-    const w = sent && sent.words[wi];
-    if (!w) return;
-    const inV = vocabSet.has(w.w);
     popEl = document.createElement('div');
     popEl.className = 'word-pop';
-    popEl.innerHTML = `
-        <span class="wp-word">${esc(w.w)}</span><span class="wp-phonetic">${esc(w.phonetic || '')}</span>
-        <div class="wp-meaning">${esc(w.meaning || '')}</div>
-        <button class="${inV ? 'added' : ''}" onclick="onAddVocab(this,'${sid}',${wi})">${inV ? '移出生词本' : '+ 加入生词本'}</button>`;
+    popEl.innerHTML = innerHtml;
     document.body.appendChild(popEl);
-    const r = e.target.getBoundingClientRect();
+    const r = targetEl.getBoundingClientRect();
     const pw = popEl.offsetWidth;
     let left = r.left + window.scrollX;
     if (left + pw > window.scrollX + document.documentElement.clientWidth - 12) {
@@ -221,6 +260,33 @@ function onWordClick(e, sid, wi) {
     }
     popEl.style.left = left + 'px';
     popEl.style.top = (r.bottom + window.scrollY + 6) + 'px';
+}
+
+/** 预标注词：手写释义优先（wi>=0 原路径） */
+function onWordClick(e, sid, wi) {
+    e.stopPropagation();
+    const sent = article.sentences.find(x => x.id === sid);
+    const w = sent && sent.words[wi];
+    if (!w) return;
+    const inV = vocabSet.has(w.w);
+    openPop(e.target, `
+        <span class="wp-word">${esc(w.w)}</span><span class="wp-phonetic">${esc(w.phonetic || '')}</span>
+        <div class="wp-meaning">${esc(w.meaning || '')}</div>
+        <button class="${inV ? 'added' : ''}" onclick="onAddVocab(this,'${sid}',${wi})">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
+}
+
+/** 词典难词：未预标注词，词形取自 data-w，释义走 dictLookup */
+function onDictWordClick(e, sid) {
+    e.stopPropagation();
+    const el = e.currentTarget;
+    const word = el.getAttribute('data-w');
+    const entry = dictLookup(word);
+    if (!entry) return;
+    const inV = vocabSet.has(word);
+    openPop(el, `
+        <span class="wp-word">${esc(word)}</span><span class="wp-phonetic">${esc(entry.p || '')}</span>
+        <div class="wp-meaning">${esc(entry.t || '')}</div>
+        <button class="${inV ? 'added' : ''}" data-w="${esc(word)}" data-sid="${esc(sid)}" onclick="onAddDictVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
 }
 
 async function onAddVocab(btn, sid, wi) {
@@ -240,6 +306,27 @@ async function onAddVocab(btn, sid, wi) {
     // 同步正文中该词的下划线样式
     document.querySelectorAll(`.word[data-w="${CSS.escape(w.w)}"]`)
         .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(w.w)));
+}
+
+/** 词典难词加入/移出生词本（词形与释义来自 data-* + dictLookup） */
+async function onAddDictVocab(btn) {
+    const word = btn.getAttribute('data-w');
+    const sid = btn.getAttribute('data-sid');
+    const entry = dictLookup(word);
+    const sent = article.sentences.find(x => x.id === sid) || {};
+    if (vocabSet.has(word)) {
+        await dbDelete('vocab', word);
+        vocabSet.delete(word);
+        btn.textContent = '+ 加入生词本';
+        btn.classList.remove('added');
+    } else {
+        await addVocab(word, entry ? entry.t : '', entry ? entry.p : '', sid, AID, sent.en || '', sent.cn || '');
+        vocabSet.add(word);
+        btn.textContent = '已加入 ✓';
+        btn.classList.add('added');
+    }
+    document.querySelectorAll(`.word[data-w="${CSS.escape(word)}"]`)
+        .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(word)));
 }
 
 function closePop() {
@@ -273,6 +360,18 @@ function renderQuiz() {
     }).join('');
     // 恢复历史作答显示
     for (const q of qs) if (answerMap[q.id]) showResult(q, answerMap[q.id].user_answer, false);
+}
+
+/** 清除本篇全部作答记录并复位面板 */
+async function resetQuiz() {
+    const qs = article.questions || [];
+    if (!qs.length) return;
+    if (!confirm('清除本篇全部作答记录？')) return;
+    await clearAnswers(AID);
+    answerMap = {};
+    // 完形题：blank 文本已填入正文，需整篇重绘还原为 [n] 占位
+    if (article.type === 'cloze') { renderArticle(); }
+    renderQuiz();
 }
 
 function questionHtml(q) {

@@ -1,0 +1,12 @@
+# 词库源（体积大，约 66MB，不入库；dict.json 由 tools/build_dict.py 生成）
+tools/ecdict.csv
+
+# 临时探查 / 诊断脚本
+tools/_*.py
+
+# OCR / 提取中间产物
+tools/extracted/
+
+# 系统文件
+.DS_Store
+Thumbs.db

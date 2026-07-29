@@ -2,7 +2,7 @@
  * 预缓存全部页面/样式/脚本/题库/图标，安装后完全离线可用。
  * 升级题库或代码后：改 CACHE_VER 版本号即可让客户端自动换新缓存。
  */
-const CACHE_VER = 'en2-v6';
+const CACHE_VER = 'en2-v7';
 
 const PRECACHE = [
     'index.html',
@@ -16,6 +16,7 @@ const PRECACHE = [
     'js/storage.js',
     'js/article.js',
     'js/study.js',
+    'js/dict.js',
     'data/index.json',
     'data/2010.json',
     'data/2011.json',
@@ -33,6 +34,7 @@ const PRECACHE = [
 'data/2023.json',
 'data/2024.json',
 'data/2025.json',
+    'data/dict.json',
     'icons/icon-192.png',
     'icons/icon-512.png'
 ];

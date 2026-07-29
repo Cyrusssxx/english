@@ -19,6 +19,9 @@
                 <button class="nav-switch" id="cnAllSwitch" onclick="toggleCnAll()" title="展开/收起全部译文">
                     全文翻译 <span class="switch-state" id="cnAllState">关</span>
                 </button>
+                <button class="nav-switch" id="hardSwitch" onclick="toggleHard()" title="一键高亮正文较难词/词组">
+                    高亮难词 <span class="switch-state" id="hardState">关</span>
+                </button>
                 <button class="nav-switch" id="modeSwitch" onclick="toggleMode()" title="精读：逐句看翻译；做题：显示题目面板">
                     做题 <span class="switch-state" id="modeState">关</span>
                 </button>
@@ -39,6 +42,7 @@
         <aside class="quiz-pane" id="quizPane">
             <div class="quiz-head">
                 <span class="quiz-head-title">题目</span>
+                <button class="quiz-collapse-btn" onclick="resetQuiz()" title="清空本篇作答重新做">清除重做</button>
                 <button class="quiz-collapse-btn" onclick="toggleQuizPane()" title="收起题目面板">收起 »</button>
             </div>
             <div class="quiz-scroll" id="quizScroll"></div>
@@ -51,6 +55,7 @@
 
     <script src="js/common.js"></script>
     <script src="js/storage.js"></script>
+    <script src="js/dict.js"></script>
     <script src="js/article.js"></script>
 </body>
 </html>

@@ -161,7 +161,7 @@ async function renderCard() {
                 <div class="fc-word">${esc(v.word)}</div>
                 <div class="fc-phonetic">${esc(v.phonetic || '')}</div>
                 <button class="fc-play" onclick="event.stopPropagation();speak('${esc(v.word).replace(/'/g, "\\'")}')" title="朗读">🔊</button>
-                <div class="fc-hint">点击卡片 / 空格 翻面</div>
+                <div class="fc-hint">点击卡片 / 空格 展开释义</div>
             </div>
             <div class="fc-face fc-back" id="fcBack"><div class="loading">…</div></div>
         </div>

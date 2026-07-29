@@ -442,6 +442,26 @@ html.dark .word.in-vocab {
     background: rgba(245, 158, 11, 0.26);
 }
 
+/* 词典难词：默认清爽（不抢眼），hover 才显下划线 */
+.word.dict-hard {
+    text-decoration: none;
+}
+
+.word.dict-hard:hover {
+    text-decoration: underline dotted var(--primary) 2px;
+    text-underline-offset: 4px;
+}
+
+/* 「高亮难词」开关打开：正文难词/词组统一琥珀底色 */
+body.show-hard .word {
+    background: rgba(245, 158, 11, 0.20);
+    border-radius: 3px;
+}
+
+html.dark body.show-hard .word {
+    background: rgba(245, 158, 11, 0.30);
+}
+
 /* 匹配失败降级：句尾词汇列表 */
 .sent-words-fallback {
     font-size: 0.85rem;
@@ -855,24 +875,19 @@ body.mode-read .quiz-pane {
     transition: width 0.3s;
 }
 
-/* 翻面卡：3D 翻转 */
+/* 单词卡：点击展开释义 */
 .flashcard {
     position: relative;
-    perspective: 1400px;
-    min-height: 340px;
     cursor: pointer;
     margin-bottom: 18px;
-}
-
-.flashcard .fc-face {
-    position: relative;
-    backface-visibility: hidden;
     background: var(--card-bg);
     border-radius: 16px;
     box-shadow: var(--shadow);
-    padding: 34px 26px;
-    min-height: 340px;
-    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.flashcard .fc-face {
+    background: transparent;
 }
 
 .flashcard .fc-front {
@@ -881,21 +896,23 @@ body.mode-read .quiz-pane {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 34px 26px;
+    min-height: 200px;
 }
 
 .flashcard .fc-back {
-    position: absolute;
-    inset: 0;
-    transform: rotateY(180deg);
-    overflow-y: auto;
-}
-
-.flashcard.flipped .fc-front {
-    transform: rotateY(180deg);
+    max-height: 0;
+    opacity: 0;
+    padding: 0 26px;
+    overflow: hidden;
+    transition: max-height 0.45s ease, opacity 0.35s ease, padding 0.45s ease;
 }
 
 .flashcard.flipped .fc-back {
-    transform: rotateY(360deg);
+    max-height: 1200px;
+    opacity: 1;
+    padding: 24px 26px;
+    border-top: 1px solid var(--border);
 }
 
 .ct-tag {
@@ -1208,5 +1225,128 @@ html.dark .read-summary {
         border-radius: 14px 14px 0 0;
         box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
         z-index: 200;
+    }
+
+    /* 单词释义弹窗防止超出视口 */
+    .word-pop {
+        max-width: calc(100vw - 28px);
+    }
+}
+
+/* ==================== 手机端（≤600px） ==================== */
+@media (max-width: 600px) {
+    /* 导航：品牌+工具占第一行，链接整行可横向滚动，避免溢出与丢链接 */
+    .nav-container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 12px;
+        row-gap: 6px;
+        gap: 8px;
+    }
+
+    .nav-brand {
+        order: 1;
+        font-size: 1.1rem;
+    }
+
+    .nav-tools {
+        order: 2;
+        margin-left: auto;
+        gap: 6px;
+    }
+
+    .nav-links {
+        order: 3;
+        flex-basis: 100%;
+        gap: 16px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 4px 0;
+    }
+
+    .nav-switch {
+        padding: 4px 9px;
+        font-size: 0.78rem;
+    }
+
+    /* 首页留白收紧 */
+    .container {
+        padding: 16px 12px 48px;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .continue-bar {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .continue-bar a {
+        text-align: center;
+    }
+
+    .article-card {
+        padding: 13px 14px;
+    }
+
+    .ac-type {
+        font-size: 0.95rem;
+    }
+
+    /* 精读页阅读区 */
+    .read-pane {
+        padding: 14px 12px 44vh;
+    }
+
+    .sent-en {
+        font-size: 1.02rem;
+    }
+
+    .quiz-pane {
+        height: 52vh;
+    }
+
+    /* 背单词卡与评分按钮触屏适配 */
+    .flashcard .fc-front {
+        padding: 26px 18px;
+        min-height: 160px;
+    }
+
+    .fc-word {
+        font-size: 1.75rem;
+    }
+
+    .flashcard.flipped .fc-back {
+        padding: 18px 18px;
+    }
+
+    .study-bar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .study-actions {
+        gap: 8px;
+    }
+
+    .sa-btn {
+        padding: 13px 6px;
+        font-size: 0.98rem;
+    }
+
+    .sa-btn kbd {
+        display: none;
     }
 }

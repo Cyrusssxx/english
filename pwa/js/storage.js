@@ -148,6 +148,14 @@ async function saveAnswer(questionId, articleId, userAnswer, isCorrect) {
     await dbPut('quiz_answers', { question_id: questionId, article_id: articleId, user_answer: userAnswer, is_correct: isCorrect ? 1 : 0, answered_at: now() });
 }
 
+/** 清空某篇文章的全部作答记录 */
+async function clearAnswers(articleId) {
+    const all = await dbAll('quiz_answers');
+    for (const a of all) {
+        if (a.article_id === articleId) await dbDelete('quiz_answers', a.question_id);
+    }
+}
+
 // ==================== 数据备份：导出 / 导入 ====================
 async function backupExport() {
     const payload = {
