@@ -169,31 +169,35 @@ async function renderCard() {
     const remain = queue.length - cur;
     const tag = (v.srs && v.srs.reps) ? '<span class="ct-tag review">复习</span>'
         : '<span class="ct-tag new">新词</span>';
+    const wsafe = esc(v.word).replace(/'/g, "\\'");
+    // 结构固定：卡片头(单词)常驻顶部 + 释义区高度预留 + 底部操作条常驻，
+    // 翻面只是在预留区内淡入内容，卡片外高不变 → 判定/翻面均无页面跳动。
     root.innerHTML = `
         <div class="study-bar">
             <div class="sb-stat"><b>${done}</b> 已背</div>
-            <div class="sb-stat"><b>${remain}</b> 本轮剩余</div>
+            <div class="sb-stat"><b>${remain}</b> 剩余</div>
             <div class="sb-prog"><span style="width:${queue.length ? (cur / queue.length * 100) : 0}%"></span></div>
         </div>
         <div class="flashcard" id="flashcard" onclick="onFlip()">
-            <div class="fc-face fc-front">
+            <div class="fc-front">
                 ${tag}
                 <div class="fc-word">${esc(v.word)}</div>
                 <div class="fc-phonetic">${esc(v.phonetic || '')}</div>
-                <button class="fc-play" onclick="event.stopPropagation();speak('${esc(v.word).replace(/'/g, "\\'")}')" title="朗读">🔊</button>
-                <div class="fc-hint">点击卡片 / 空格 展开释义</div>
+                <button class="fc-play" onclick="event.stopPropagation();speak('${wsafe}')" title="朗读">🔊 朗读</button>
             </div>
-            <div class="fc-face fc-back" id="fcBack"><div class="loading">…</div></div>
+            <div class="fc-back" id="fcBack">
+                <div class="fc-reveal-hint">点击卡片或按 <kbd>空格</kbd> 显示释义</div>
+                <div class="fc-back-content" id="fcBackContent"><div class="loading">…</div></div>
+            </div>
         </div>
-        <div class="study-actions" id="studyActions"></div>`;
-    // 异步填充背面例句
+        <div class="study-actions" id="studyActions">
+            <button class="sa-btn reveal" onclick="event.stopPropagation();onFlip()">显示释义 <kbd>空格</kbd></button>
+        </div>`;
+    // 异步填充背面例句（在预留区内，不影响卡片外高）
     const ex = await resolveExample(v);
-    const back = document.getElementById('fcBack');
-    if (back) {
-        back.innerHTML = `
-            <div class="fc-word sm">${esc(v.word)}
-                <button class="fc-play" onclick="event.stopPropagation();speak('${esc(v.word).replace(/'/g, "\\'")}')" title="朗读">🔊</button>
-            </div>
+    const c = document.getElementById('fcBackContent');
+    if (c) {
+        c.innerHTML = `
             <div class="fc-meaning">${renderMeaning(v.meaning)}</div>
             ${ex ? `<div class="fc-example">
                 <div class="fe-en">${highlightExample(ex.en, v.word)}</div>
@@ -205,16 +209,14 @@ async function renderCard() {
 
 function onFlip() {
     const card = document.getElementById('flashcard');
-    if (!card) return;
-    flipped = !flipped;
-    card.classList.toggle('flipped', flipped);
-    // 翻到背面才出现判定按钮
+    if (!card || cur >= queue.length) return;
+    if (flipped) return;                 // 单向翻面：已显示释义后点击卡片不再收起，避免误触跳动
+    flipped = true;
+    card.classList.add('flipped');
     const act = document.getElementById('studyActions');
-    if (flipped && act && !act.innerHTML) {
-        act.innerHTML = `
-            <button class="sa-btn again" onclick="judge(false)">✕ 不认识 <kbd>←</kbd></button>
-            <button class="sa-btn good" onclick="judge(true)">✓ 认识 <kbd>→</kbd></button>`;
-    }
+    if (act) act.innerHTML = `
+        <button class="sa-btn again" onclick="judge(false)">✕ 不认识 <kbd>←</kbd></button>
+        <button class="sa-btn good" onclick="judge(true)">✓ 认识 <kbd>→</kbd></button>`;
 }
 
 async function judge(known) {
