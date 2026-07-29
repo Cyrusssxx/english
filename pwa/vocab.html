@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>生词本 - 英语二真题精翻</title>
+    <title>单词本 - 英语二真题精翻</title>
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#0d9488">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -17,7 +17,7 @@
             <div class="nav-links">
                 <a href="index.html" class="nav-link">真题文章</a>
                 <a href="study.html" class="nav-link">背单词</a>
-                <a href="vocab.html" class="nav-link active">生词本</a>
+                <a href="vocab.html" class="nav-link active">单词本</a>
                 <a href="favorites.html" class="nav-link">句子收藏</a>
             </div>
             <div class="nav-tools">
@@ -30,9 +30,12 @@
     </nav>
     <main class="container">
         <div class="hero">
-            <h1>真题生词本</h1>
+            <h1>单词本</h1>
             <p class="subtitle" id="vocabCount"></p>
         </div>
+        <div class="deck-tabs" id="deckTabs"></div>
+        <div class="deck-toolbar" id="deckToolbar"></div>
+        <input type="file" id="deckImport" accept="application/json,.json" style="display:none" onchange="onImportDeck(this)">
         <div class="item-list" id="vocabList">
             <div class="loading">加载中...</div>
         </div>
@@ -45,12 +48,50 @@
             d.setDate(d.getDate() + offset);
             return d.toISOString().slice(0, 10);
         }
-        async function render() {
-            const rows = (await dbAll('vocab')).sort((a, b) => (b.added_at || '').localeCompare(a.added_at || ''));
+        let viewDeck = '__all__';   // 当前查看的词书（__all__ = 全部）
+
+        async function renderAll() {
+            await renderDeckBar();
+            await renderList();
+        }
+
+        async function renderDeckBar() {
+            const counts = await deckCounts();
+            const active = getActiveDeck();
+            let tabs = `<button class="deck-tab ${viewDeck === '__all__' ? 'on' : ''}" onclick="selectView('__all__')">全部 <span class="dt-count">${counts['__all__'] || 0}</span></button>`;
+            for (const d of getDecks()) {
+                const star = d.id === active ? '<span class="dt-star" title="当前收藏目标">★</span>' : '';
+                tabs += `<button class="deck-tab ${viewDeck === d.id ? 'on' : ''}" onclick="selectView('${esc(d.id)}')">${esc(d.name)}${star} <span class="dt-count">${counts[d.id] || 0}</span></button>`;
+            }
+            tabs += `<button class="deck-add" onclick="onCreateDeck()">＋ 新建词书</button>`;
+            tabs += `<button class="deck-add" onclick="document.getElementById('deckImport').click()">导入词书</button>`;
+            document.getElementById('deckTabs').innerHTML = tabs;
+
+            const tb = document.getElementById('deckToolbar');
+            if (viewDeck === '__all__') {
+                tb.innerHTML = `<span class="tb-info">当前收藏目标：<b>${esc(deckName(active))}</b></span>
+                    <a class="tb-btn" href="study.html?deck=__all__">背全部 →</a>`;
+            } else {
+                const d = getDeck(viewDeck);
+                let btns = `<span class="tb-info">当前查看：<b>${esc(d ? d.name : '')}</b></span>`;
+                btns += viewDeck === active
+                    ? `<span class="tb-tag">收藏目标 ★</span>`
+                    : `<button class="tb-btn" onclick="onSetActive('${esc(viewDeck)}')">设为收藏目标</button>`;
+                btns += `<a class="tb-btn" href="study.html?deck=${esc(viewDeck)}">背这本 →</a>`;
+                if (!(d && d.builtin)) {
+                    btns += `<button class="tb-btn" onclick="onRenameDeck('${esc(viewDeck)}')">重命名</button>`;
+                    btns += `<button class="tb-btn danger" onclick="onDeleteDeck('${esc(viewDeck)}')">删除词书</button>`;
+                }
+                tb.innerHTML = btns;
+            }
+        }
+
+        async function renderList() {
+            const rows = (await vocabByDeck(viewDeck)).sort((a, b) => (b.added_at || '').localeCompare(a.added_at || ''));
             document.getElementById('vocabCount').textContent = rows.length ? `共 ${rows.length} 个词/词组` : '';
             if (!rows.length) {
                 document.getElementById('vocabList').innerHTML =
-                    '<div class="empty">还没有生词。精读时点下划线词，在弹卡里加入生词本。</div>';
+                    '<div class="empty">这本词书还没有词。精读时点下划线词加入，或用「记录生词」「导入词书」批量添加。</div>';
                 return;
             }
             const today = dayStr(0);
@@ -58,7 +99,7 @@
             const cta = due
                 ? `<div class="sc-main"><b>今日待背 ${due} 个词</b><div class="sc-sub">单词卡 · 间隔重复 · 可离线</div></div><span class="sc-go">开始背单词 →</span>`
                 : `<div class="sc-main"><b>今日待背已清空 🎉</b><div class="sc-sub">可点入提前背未到期的词</div></div><span class="sc-go">去背单词 →</span>`;
-            const ctaHtml = `<a class="study-cta" href="study.html">${cta}</a>`;
+            const ctaHtml = `<a class="study-cta" href="study.html?deck=${esc(viewDeck)}">${cta}</a>`;
             document.getElementById('vocabList').innerHTML = ctaHtml + rows.map(v => `
                 <div class="item-card">
                     <div class="ic-head">
@@ -69,19 +110,75 @@
                     <div class="ic-foot">
                         <span>${esc(v.added_at || '')}</span>
                         <span class="ic-actions">
-                            <a href="article.html?id=${esc(v.article_id)}#${esc(v.sentence_id)}">查看原句 →</a>
-                            <button class="del" onclick="del('${esc(v.word)}')">删除</button>
+                            ${v.article_id ? `<a href="article.html?id=${esc(v.article_id)}#${esc(v.sentence_id)}">查看原句 →</a>` : ''}
+                            <button class="del" onclick="del('${esc(v.word).replace(/'/g, "\\'")}')">删除</button>
                         </span>
                     </div>
                 </div>`).join('');
         }
 
-        async function del(word) {
-            await dbDelete('vocab', word);
-            render();
+        function selectView(id) { viewDeck = id; renderAll(); }
+
+        function onCreateDeck() {
+            const name = prompt('新建词书名称：');
+            if (!name || !name.trim()) return;
+            const id = createDeck(name.trim());
+            if (id) { viewDeck = id; renderAll(); }
         }
 
-        render();
+        function onSetActive(id) { setActiveDeck(id); renderAll(); }
+
+        function onRenameDeck(id) {
+            const d = getDeck(id);
+            const name = prompt('重命名词书：', d ? d.name : '');
+            if (!name || !name.trim()) return;
+            renameDeck(id, name.trim());
+            renderAll();
+        }
+
+        async function onDeleteDeck(id) {
+            const d = getDeck(id);
+            if (!d || d.builtin) return;
+            if (!confirm(`删除词书「${d.name}」？其中仅属于本词书的词也会一并移除。`)) return;
+            await deleteDeck(id);
+            viewDeck = '__all__';
+            renderAll();
+        }
+
+        async function onImportDeck(input) {
+            const f = input.files && input.files[0];
+            if (!f) return;
+            const rd = new FileReader();
+            rd.onload = async () => {
+                try {
+                    const body = JSON.parse(rd.result);
+                    const name = (body.name || '').trim();
+                    const words = Array.isArray(body.words) ? body.words : null;
+                    if (!name || !words) throw new Error('格式应为 { name, words:[{word,meaning,...}] }');
+                    const items = words.filter(w => w && w.word).map(w => ({
+                        word: String(w.word).trim(), meaning: w.meaning || '', phonetic: w.phonetic || '',
+                        example_en: w.example_en || '', example_cn: w.example_cn || ''
+                    }));
+                    if (!items.length) throw new Error('词表为空');
+                    const id = createDeck(name);
+                    const added = await addWordsBulk(items, id);
+                    viewDeck = id;
+                    await renderAll();
+                    alert(`已导入词书「${name}」，新增 ${added} 个词`);
+                } catch (e) {
+                    alert('导入失败: ' + e.message);
+                }
+                input.value = '';
+            };
+            rd.readAsText(f);
+        }
+
+        async function del(word) {
+            await dbDelete('vocab', word);
+            renderAll();
+        }
+
+        (async () => { await migrateVocabDecks(); await renderAll(); })();
     </script>
 </body>
 </html>

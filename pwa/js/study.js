@@ -101,7 +101,7 @@ function speak(word) {
 
 // ============ 队列构建 ============
 async function buildQueue(includeAll) {
-    const all = (await dbAll('vocab'));
+    const all = (await vocabByDeck(getStudyDeck()));
     const today = dayStr(0);
     const reviews = all.filter(v => v.srs && v.srs.due && v.srs.due <= today);
     const news = all.filter(v => !v.srs);
@@ -115,6 +115,25 @@ async function buildQueue(includeAll) {
         q = [...reviews, ...news.slice(0, NEW_LIMIT)];
     }
     return { q, total: all.length, reviews: reviews.length, news: news.length };
+}
+
+// ============ 词书选择条 ============
+async function renderDeckBar() {
+    const bar = document.getElementById('studyDeckBar');
+    if (!bar) return;
+    const counts = await deckCounts();
+    const sel = getStudyDeck();
+    const opts = [`<option value="__all__"${sel === '__all__' ? ' selected' : ''}>全部词书 (${counts['__all__'] || 0})</option>`];
+    for (const d of getDecks()) {
+        opts.push(`<option value="${esc(d.id)}"${sel === d.id ? ' selected' : ''}>${esc(d.name)} (${counts[d.id] || 0})</option>`);
+    }
+    bar.innerHTML = `<label class="deck-bar-label">背词范围</label>
+        <select class="deck-select" id="studyDeckSelect" onchange="onStudyDeckChange(this.value)">${opts.join('')}</select>`;
+}
+
+async function onStudyDeckChange(id) {
+    setStudyDeck(id);
+    await start(false);
 }
 
 // ============ 渲染 ============
@@ -224,4 +243,14 @@ document.addEventListener('keydown', (e) => {
     else if (flipped && e.code === 'ArrowRight') { e.preventDefault(); judge(true); }
 });
 
-start(false);
+// ============ 初始化 ============
+async function init() {
+    await migrateVocabDecks();
+    // 若来自单词本「背这本 →」，URL 带 deck 参数则切换背词范围
+    const qDeck = new URLSearchParams(location.search).get('deck');
+    if (qDeck && (qDeck === '__all__' || getDeck(qDeck))) setStudyDeck(qDeck);
+    await renderDeckBar();
+    await start(false);
+}
+
+init();

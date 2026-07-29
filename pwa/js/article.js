@@ -95,6 +95,7 @@ async function init() {
     localStorage.setItem('lastArticle', AID);
 
     // 用户数据
+    await migrateVocabDecks();
     vocabSet = new Set((await dbAll('vocab')).map(v => v.word));
     favSet = new Set((await dbAll('fav_sentences')).map(f => f.sentence_id));
     for (const a of await dbAll('quiz_answers')) if (a.article_id === AID) answerMap[a.question_id] = a;
@@ -327,6 +328,37 @@ async function onAddDictVocab(btn) {
     }
     document.querySelectorAll(`.word[data-w="${CSS.escape(word)}"]`)
         .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(word)));
+}
+
+/** 一键记录：本篇所有词典命中且尚未收录的难词 → 批量加入当前词书 */
+async function recordArticleWords() {
+    const seen = new Set();
+    const items = [];
+    for (const s of article.sentences) {
+        const RE = /[A-Za-z][A-Za-z'\-]*/g;
+        let m;
+        while ((m = RE.exec(s.en || '')) !== null) {
+            const tok = m[0];
+            const entry = dictLookup(tok);
+            if (!entry) continue;
+            const base = normWord(tok);
+            if (!base || seen.has(base)) continue;
+            seen.add(base);
+            if (vocabSet.has(tok) || vocabSet.has(base)) continue;
+            items.push({
+                word: tok, meaning: entry.t || '', phonetic: entry.p || '',
+                sentence_id: s.id, article_id: AID, example_en: s.en, example_cn: s.cn || ''
+            });
+        }
+    }
+    if (!items.length) { alert('本篇没有可新增的难词（可能都已在生词本）'); return; }
+    const dname = deckName(getActiveDeck());
+    if (!confirm(`将本篇 ${items.length} 个较难词加入「${dname}」？`)) return;
+    const added = await addWordsBulk(items, getActiveDeck());
+    vocabSet = new Set((await dbAll('vocab')).map(v => v.word));
+    document.querySelectorAll('.word[data-w]')
+        .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(el.getAttribute('data-w'))));
+    alert(`已加入「${dname}」${added} 个词`);
 }
 
 function closePop() {

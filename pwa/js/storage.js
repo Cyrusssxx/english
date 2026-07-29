@@ -112,19 +112,162 @@ function now() {
     return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
 }
 
+// ==================== 词书（多词书系统） ====================
+// 词书元数据存 localStorage；词-词书归属存 vocab 记录的 decks 数组（随备份导出）。
+const DEFAULT_DECK_ID = 'default';
+const ALL_DECKS = '__all__';
+
+/** 读取词书列表（始终保证内置「我的生词本」存在且置顶） */
+function getDecks() {
+    let list;
+    try { list = JSON.parse(localStorage.getItem('en2_decks') || 'null'); } catch (e) { list = null; }
+    if (!Array.isArray(list)) list = [];
+    if (!list.some(d => d.id === DEFAULT_DECK_ID)) {
+        list.unshift({ id: DEFAULT_DECK_ID, name: '我的生词本', builtin: true, order: 0, created_at: now() });
+    }
+    return list;
+}
+function saveDecks(list) { localStorage.setItem('en2_decks', JSON.stringify(list)); }
+function ensureDefaultDeck() { saveDecks(getDecks()); }
+function getDeck(id) { return getDecks().find(d => d.id === id) || null; }
+function deckName(id) { const d = getDeck(id); return d ? d.name : '未知词书'; }
+
+/** 当前收藏/记录目标词书 id（默认内置词书） */
+function getActiveDeck() {
+    const id = localStorage.getItem('en2_activeDeck') || DEFAULT_DECK_ID;
+    return getDeck(id) ? id : DEFAULT_DECK_ID;
+}
+function setActiveDeck(id) { localStorage.setItem('en2_activeDeck', id); }
+
+/** 背单词过滤的词书 id（默认全部） */
+function getStudyDeck() {
+    const id = localStorage.getItem('en2_studyDeck') || ALL_DECKS;
+    return (id === ALL_DECKS || getDeck(id)) ? id : ALL_DECKS;
+}
+function setStudyDeck(id) { localStorage.setItem('en2_studyDeck', id); }
+
+/** 新建词书，返回新 id */
+function createDeck(name) {
+    name = String(name || '').trim();
+    if (!name) return null;
+    const list = getDecks();
+    const id = 'd' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+    list.push({ id, name, builtin: false, order: list.length, created_at: now() });
+    saveDecks(list);
+    return id;
+}
+function renameDeck(id, name) {
+    name = String(name || '').trim();
+    if (!name) return;
+    const list = getDecks();
+    const d = list.find(x => x.id === id);
+    if (d) { d.name = name; saveDecks(list); }
+}
+/** 删除词书（内置禁删）：从所有 vocab.decks 移除该 id，空记录随之删除 */
+async function deleteDeck(id) {
+    if (id === DEFAULT_DECK_ID) return;
+    saveDecks(getDecks().filter(d => d.id !== id));
+    for (const v of await dbAll('vocab')) {
+        const decks = Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID];
+        if (!decks.includes(id)) continue;
+        const nd = decks.filter(x => x !== id);
+        if (nd.length) { v.decks = nd; await dbPut('vocab', v); }
+        else await dbDelete('vocab', v.word);
+    }
+    if (getActiveDeck() === id) setActiveDeck(DEFAULT_DECK_ID);
+    if (getStudyDeck() === id) setStudyDeck(ALL_DECKS);
+}
+
+/** 一次性迁移：给历史无 decks 字段的生词补 ['default']（带完成标记） */
+async function migrateVocabDecks() {
+    ensureDefaultDeck();
+    if (localStorage.getItem('en2_decksMigrated') === '1') return;
+    for (const v of await dbAll('vocab')) {
+        if (!Array.isArray(v.decks) || !v.decks.length) {
+            v.decks = [DEFAULT_DECK_ID];
+            await dbPut('vocab', v);
+        }
+    }
+    localStorage.setItem('en2_decksMigrated', '1');
+}
+
 // ==================== 业务操作 ====================
 
-/** 生词本：加词（word 已存在则覆盖；保留已有的复习状态 srs） */
-async function addVocab(word, meaning, phonetic, sentenceId, articleId, exampleEn, exampleCn) {
+/** 生词本：加词（word 已存在则更新释义并并入词书；保留已有复习状态 srs） */
+async function addVocab(word, meaning, phonetic, sentenceId, articleId, exampleEn, exampleCn, deckId) {
+    deckId = deckId || getActiveDeck();
     const old = await dbGet('vocab', word);
+    const decks = new Set(Array.isArray(old && old.decks) ? old.decks : (old ? [DEFAULT_DECK_ID] : []));
+    decks.add(deckId);
     await dbPut('vocab', {
         word, meaning, phonetic: phonetic || '',
         sentence_id: sentenceId, article_id: articleId,
         example_en: exampleEn || (old && old.example_en) || '',
         example_cn: exampleCn || (old && old.example_cn) || '',
         srs: old && old.srs ? old.srs : undefined,
+        decks: [...decks],
         added_at: (old && old.added_at) || now()
     });
+}
+
+/** 批量加词到某词书（单事务）：已存在只并入词书、不覆盖释义/srs。返回新增到该词书的数量 */
+async function addWordsBulk(items, deckId) {
+    deckId = deckId || getActiveDeck();
+    const db = await openDB();
+    const existing = {};
+    (await dbAll('vocab')).forEach(v => { existing[v.word] = v; });
+    const puts = [];
+    let added = 0;
+    for (const it of items) {
+        const word = it.word;
+        if (!word) continue;
+        const old = existing[word];
+        if (old) {
+            const decks = new Set(Array.isArray(old.decks) ? old.decks : [DEFAULT_DECK_ID]);
+            if (!decks.has(deckId)) { decks.add(deckId); old.decks = [...decks]; puts.push(old); added++; }
+        } else {
+            puts.push({
+                word, meaning: it.meaning || '', phonetic: it.phonetic || '',
+                sentence_id: it.sentence_id || '', article_id: it.article_id || '',
+                example_en: it.example_en || '', example_cn: it.example_cn || '',
+                srs: undefined, decks: [deckId], added_at: now()
+            });
+            added++;
+        }
+    }
+    await new Promise((res, rej) => {
+        const tx = db.transaction('vocab', 'readwrite');
+        for (const p of puts) tx.objectStore('vocab').put(p);
+        tx.oncomplete = res; tx.onerror = () => rej(tx.error);
+    });
+    return added;
+}
+
+/** 从某词书移出该词；decks 空则删除整条记录 */
+async function removeVocabFromDeck(word, deckId) {
+    const v = await dbGet('vocab', word);
+    if (!v) return;
+    const decks = (Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID]).filter(x => x !== deckId);
+    if (decks.length) { v.decks = decks; await dbPut('vocab', v); }
+    else await dbDelete('vocab', word);
+}
+
+/** 取某词书的生词（__all__ 返回全部；缺省 decks 视为 default） */
+async function vocabByDeck(deckId) {
+    const all = await dbAll('vocab');
+    if (!deckId || deckId === ALL_DECKS) return all;
+    return all.filter(v => (Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID]).includes(deckId));
+}
+
+/** 各词书生词计数：{__all__:n, deckId:n, ...} */
+async function deckCounts() {
+    const counts = { [ALL_DECKS]: 0 };
+    for (const v of await dbAll('vocab')) {
+        counts[ALL_DECKS]++;
+        const decks = Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID];
+        for (const id of decks) counts[id] = (counts[id] || 0) + 1;
+    }
+    return counts;
 }
 
 /** 句子收藏切换，返回收藏后状态 */
@@ -163,7 +306,9 @@ async function backupExport() {
         vocab: await dbAll('vocab'),
         fav_sentences: await dbAll('fav_sentences'),
         article_progress: await dbAll('article_progress'),
-        quiz_answers: await dbAll('quiz_answers')
+        quiz_answers: await dbAll('quiz_answers'),
+        decks: getDecks(),
+        active_deck: getActiveDeck()
     };
     const blob = new Blob([JSON.stringify(payload, null, 1)], { type: 'application/json' });
     const a = document.createElement('a');
@@ -191,6 +336,10 @@ async function backupImport(input) {
                     tx.oncomplete = res; tx.onerror = () => rej(tx.error);
                 });
             }
+            // 词书元数据（localStorage）一并还原；清除迁移标记以便下次加载补齐缺失的 decks
+            if (Array.isArray(body.decks)) localStorage.setItem('en2_decks', JSON.stringify(body.decks));
+            if (body.active_deck) localStorage.setItem('en2_activeDeck', body.active_deck);
+            localStorage.removeItem('en2_decksMigrated');
             alert('导入成功，页面即将刷新');
             location.reload();
         } catch (e) {

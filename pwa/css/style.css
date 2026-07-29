@@ -1192,6 +1192,170 @@ html.dark .read-summary {
     margin-right: 4px;
 }
 
+/* ==================== 词书选择条 / 标签（背单词页 + 单词本页） ==================== */
+/* 背单词页顶部：背词范围下拉 */
+.deck-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.deck-bar-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.deck-select {
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 0.92rem;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.deck-select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* 单词本页：词书标签行 */
+.deck-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.deck-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+.deck-tab:hover {
+    border-color: var(--primary);
+}
+
+.deck-tab.on {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.dt-count {
+    display: inline-block;
+    min-width: 18px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    border-radius: 9px;
+    background: var(--primary-soft);
+    color: var(--primary-dark);
+}
+
+.deck-tab.on .dt-count {
+    background: rgba(255, 255, 255, .28);
+    color: #fff;
+}
+
+.dt-star {
+    color: var(--warning);
+    font-size: 0.82rem;
+}
+
+.deck-add {
+    padding: 6px 12px;
+    border: 1px dashed var(--border);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--text-light);
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+.deck-add:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* 单词本页：所选词书操作条 */
+.deck-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+}
+
+.deck-toolbar:empty {
+    display: none;
+}
+
+.tb-info {
+    color: var(--text-light);
+}
+
+.tb-info b {
+    color: var(--text);
+}
+
+.tb-btn {
+    padding: 5px 12px;
+    border: 1px solid var(--primary);
+    border-radius: 7px;
+    background: transparent;
+    color: var(--primary);
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .15s;
+}
+
+.tb-btn:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+.tb-btn.danger {
+    border-color: var(--danger);
+    color: var(--danger);
+}
+
+.tb-btn.danger:hover {
+    background: var(--danger);
+    color: #fff;
+}
+
+.tb-tag {
+    padding: 4px 10px;
+    border-radius: 7px;
+    background: var(--primary-soft);
+    color: var(--primary-dark);
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
 /* ==================== 移动端 ==================== */
 @media (max-width: 900px) {
     .nav-timer {
@@ -1348,5 +1512,21 @@ html.dark .read-summary {
 
     .sa-btn kbd {
         display: none;
+    }
+
+    /* 词书标签/操作条窄屏收紧 */
+    .deck-tab,
+    .deck-add {
+        font-size: 0.82rem;
+        padding: 5px 10px;
+    }
+
+    .deck-toolbar {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .deck-toolbar .tb-info {
+        flex-basis: 100%;
     }
 }
