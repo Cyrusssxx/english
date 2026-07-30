@@ -1540,6 +1540,68 @@ html.dark .wp-freq {
     color: #fff;
 }
 
+/* 导入词书引导面板：格式模板 + 字段说明 + 示例代码 */
+.import-help {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.import-help .ih-title {
+    font-weight: 700;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.import-help .ih-desc,
+.import-help .ih-tips {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.85rem;
+}
+
+.import-help .ih-fields {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 0.85rem;
+}
+
+.import-help .ih-fields b {
+    color: var(--primary);
+}
+
+.import-help code {
+    background: var(--primary-soft);
+    color: var(--primary);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.82rem;
+}
+
+.import-help .ih-code {
+    margin: 0;
+    padding: 12px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    white-space: pre;
+    overflow-x: auto;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.import-help .ih-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2px;
+}
+
 .tb-tag {
     padding: 4px 10px;
     border-radius: 7px;

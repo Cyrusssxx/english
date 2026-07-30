@@ -68,7 +68,7 @@
                 tabs += `<button class="deck-tab ${viewDeck === d.id ? 'on' : ''}" onclick="selectView('${esc(d.id)}')">${esc(d.name)}${star} <span class="dt-count">${counts[d.id] || 0}</span></button>`;
             }
             tabs += `<button class="deck-add" onclick="onCreateDeck()">＋ 新建词书</button>`;
-            tabs += `<button class="deck-add" onclick="document.getElementById('deckImport').click()">导入词书</button>`;
+            tabs += `<button class="deck-add" onclick="onDeckImportHelp()">导入词书</button>`;
             tabs += `<button class="deck-add" onclick="onBuiltinDecks()">内置词书</button>`;
             document.getElementById('deckTabs').innerHTML = tabs;
 
@@ -216,6 +216,56 @@
                 input.value = '';
             };
             rd.readAsText(f);
+        }
+
+        /** 导入词书的示例模板（下载/预览共用） */
+        function deckTemplateObj() {
+            return {
+                name: '我的自定义词书',
+                words: [
+                    { word: 'ubiquitous', meaning: 'adj. 无处不在的；普遍存在的', phonetic: '/juːˈbɪkwɪtəs/', example_en: 'Mobile phones are now ubiquitous in daily life.', example_cn: '手机如今在日常生活中无处不在。' },
+                    { word: 'mitigate', meaning: 'v. 减轻，缓和；使缓和', phonetic: '/ˈmɪtɪɡeɪt/', example_en: 'The government took steps to mitigate the crisis.', example_cn: '政府采取措施缓解危机。' },
+                    { word: 'in light of', meaning: '鉴于；考虑到（词组同样支持，word 里直接写空格即可）' },
+                    { word: 'prudent', meaning: 'adj. 谨慎的，慎重的' }
+                ]
+            };
+        }
+
+        /** 导入词书引导：展示 JSON 格式模板 + 下载示例 + 选择文件 */
+        function onDeckImportHelp() {
+            const tpl = JSON.stringify(deckTemplateObj(), null, 2);
+            document.getElementById('deckToolbar').innerHTML = `
+                <div class="import-help">
+                    <div class="ih-title">导入词书 · JSON 格式模板</div>
+                    <div class="ih-desc">文件为一个 JSON 对象，含 <code>name</code>（词书名，必填）和 <code>words</code>（词条数组，必填）。每个词条字段：</div>
+                    <ul class="ih-fields">
+                        <li><code>word</code>　单词或词组　<b>必填</b></li>
+                        <li><code>meaning</code>　中文释义　建议填（背单词时看的就是它）</li>
+                        <li><code>phonetic</code>　音标　可选，如 <code>/ˈæpl/</code></li>
+                        <li><code>example_en</code>　例句英文　可选</li>
+                        <li><code>example_cn</code>　例句中文　可选</li>
+                    </ul>
+                    <pre class="ih-code">${esc(tpl)}</pre>
+                    <div class="ih-tips">提示：文件编码用 UTF-8；导入会新建一本同名词书，重复导入只并入新词、不覆盖已有进度；词组（含空格）也能作为一个词条。</div>
+                    <div class="ih-actions">
+                        <button class="tb-btn" onclick="downloadDeckTemplate()">⬇ 下载模板文件</button>
+                        <button class="tb-btn" onclick="document.getElementById('deckImport').click()">选择文件导入 →</button>
+                        <button class="tb-btn" onclick="renderAll()">返回</button>
+                    </div>
+                </div>`;
+        }
+
+        /** 把示例模板导出为 .json 供用户填写 */
+        function downloadDeckTemplate() {
+            const blob = new Blob([JSON.stringify(deckTemplateObj(), null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = '词书模板.json';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
         }
 
         async function del(word) {
