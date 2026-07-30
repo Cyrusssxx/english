@@ -14,6 +14,14 @@
     --border: #e0e0e0;
     --radius: 10px;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --mk-y: #ffe884;
+    --mk-g: #b6efb6;
+    --mk-b: #b7dcff;
+    --hl-y: #fdf6cf;
+    --hl-g: #e6f6e3;
+    --hl-b: #e3effc;
+    --ann-bg: #fffbe8;
+    --ann-border: #e0c968;
 }
 
 html.dark {
@@ -24,6 +32,14 @@ html.dark {
     --border: #2e4a46;
     --primary-soft: #123f3a;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --mk-y: #7a6a1f;
+    --mk-g: #2f5e33;
+    --mk-b: #2b4d75;
+    --hl-y: #35311c;
+    --hl-g: #24331f;
+    --hl-b: #1f2f45;
+    --ann-bg: #2e2b1d;
+    --ann-border: #8a7a3a;
 }
 
 * {
@@ -1785,3 +1801,98 @@ html.dark .wp-freq {
         flex-basis: 100%;
     }
 }
+
+/* ============ 用户标注：荧光 / 批注 / 浮动工具条 ============ */
+/* 选中文字荧光 */
+mark.mk { padding: 0 1px; border-radius: 3px; color: inherit; cursor: pointer; }
+mark.mk-y { background: var(--mk-y); }
+mark.mk-g { background: var(--mk-g); }
+mark.mk-b { background: var(--mk-b); }
+
+/* 整句块高亮（挂 .sent-en，避开题目定位黄色），可点击修改 */
+.sent-en.hl-y { background: var(--hl-y); border-radius: 6px; }
+.sent-en.hl-g { background: var(--hl-g); border-radius: 6px; }
+.sent-en.hl-b { background: var(--hl-b); border-radius: 6px; }
+
+/* 批注框：手写风小字条 */
+.ann-box {
+    margin: 6px 0;
+    padding: 6px 10px;
+    font-size: 13.5px;
+    background: var(--ann-bg);
+    border-left: 3px solid var(--ann-border);
+    border-radius: 0 8px 8px 0;
+    color: var(--text-light);
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.ann-icon { flex: none; }
+.ann-text { flex: 1; min-width: 120px; white-space: pre-wrap; }
+.ann-text img.ann-img {
+    display: block;
+    max-width: min(100%, 480px);
+    margin: 6px 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+.ann-edit {
+    flex: 1 1 100%;
+    min-height: 52px;
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card-bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 13.5px;
+    resize: vertical;
+}
+.ann-ops { display: flex; gap: 6px; margin-left: auto; }
+.ann-ops button {
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text-light);
+    border-radius: 6px;
+    padding: 1px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.ann-ops button:hover { background: var(--primary-soft); color: var(--text); }
+
+/* 浮动工具条 */
+#annBar {
+    position: fixed;
+    z-index: 400;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+#annBar[hidden] { display: none; }
+.ab-dot {
+    width: 19px; height: 19px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .18);
+    cursor: pointer;
+    padding: 0;
+}
+.ab-dot:hover { transform: scale(1.18); }
+.ab-y { background: #ffd54a; }
+.ab-g { background: #7ed87e; }
+.ab-b { background: #6fb7ff; }
+.ab-btn {
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 8px;
+    padding: 2px 9px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.ab-btn:hover { background: var(--primary-soft); }

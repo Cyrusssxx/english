@@ -111,6 +111,7 @@ async function init() {
     renderHardSwitch();
     renderQuizCollapse();
     renderArticle();
+    if (window.Annot) Annot.apply(AID);
     renderQuiz();
     await restoreScroll();
     watchScroll();
@@ -311,6 +312,7 @@ function openPop(targetEl, innerHtml) {
 /** 预标注词：手写释义优先（wi>=0 原路径） */
 function onWordClick(e, sid, wi) {
     e.stopPropagation();
+    const _sel = getSelection(); if (_sel && !_sel.isCollapsed) return;  // 划词标注时不弹词卡
     const sent = article.sentences.find(x => x.id === sid);
     const w = sent && sent.words[wi];
     if (!w) return;
@@ -325,6 +327,7 @@ function onWordClick(e, sid, wi) {
 /** 词典难词：未预标注词，词形取自 data-w，释义走 dictLookup（未命中显「无离线释义」，仍可加入生词本） */
 function onDictWordClick(e, sid) {
     e.stopPropagation();
+    const _sel = getSelection(); if (_sel && !_sel.isCollapsed) return;  // 划词标注时不弹词卡
     const el = e.currentTarget;
     const word = el.getAttribute('data-w');
     const entry = dictLookup(word);
@@ -374,6 +377,7 @@ async function onAddDictVocab(btn) {
 /** 词组下划线点击：phraseLookup 取释义 → 弹卡（含加入生词本） */
 function onPhraseClick(e, sid) {
     e.stopPropagation();
+    const _sel = getSelection(); if (_sel && !_sel.isCollapsed) return;  // 划词标注时不弹词卡
     const el = e.currentTarget;
     const key = el.getAttribute('data-w');
     const meaning = phraseLookup(key);
@@ -475,7 +479,7 @@ async function resetQuiz() {
     await clearAnswers(AID);
     answerMap = {};
     // 完形题：blank 文本已填入正文，需整篇重绘还原为 [n] 占位
-    if (article.type === 'cloze') { renderArticle(); }
+    if (article.type === 'cloze') { renderArticle(); if (window.Annot) Annot.apply(AID); }
     renderQuiz();
 }
 

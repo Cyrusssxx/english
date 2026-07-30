@@ -1,5 +1,15 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v19] 2026-07-27
+
+### 文章页：手动荧光高亮 + 文字批注（移植自数学笔记）
+
+- **`pwa/js/annotate.js`（新增）**：移植数学笔记的批注系统。选中正文英文即弹浮动条，可打 3 色荧光（黄/绿/蓝）、整句块高亮、写文字批注（批注框支持 Ctrl+V 直接贴图）。标注以每句 `data-sid` 为锚点、文章 `AID` 分桶，存 localStorage（`enReadAnnot`）+ IndexedDB（`enReadAnnotImg` 存贴图）。点已有荧光/整块高亮可改色或清除。
+- **`pwa/js/article.js`**：首次渲染与完形「清除重做」重绘后调用 `Annot.apply(AID)` 恢复标注；`onWordClick`/`onDictWordClick`/`onPhraseClick` 加选区守卫，划词标注时不误弹词卡。
+- **`pwa/article.html`**：引入 `js/annotate.js`；导航栏新增「导出标注 / 导入标注」（JSON 备份，含贴图 base64，导入为合并）。
+- **`pwa/css/style.css`**：新增 `--mk-*`/`--hl-*`/`--ann-*` 变量（亮/暗）及 `mark.mk`、`.sent-en.hl-*`、`.ann-box`、`#annBar` 等样式；整块高亮挂 `.sent-en` 避开题目定位黄色，`#annBar` z-index 400 高于词卡。
+- **`pwa/sw.js`**：CACHE_VER 升 `en2-v19`；PRECACHE 加入 `js/annotate.js`。
+
 ## [en2-v18] 2026-07-27
 
 ### 文章页：生词记录后不再自动高亮

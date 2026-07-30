@@ -30,6 +30,9 @@
                 <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式">
                     夜间 <span class="switch-state" id="darkState">关</span>
                 </button>
+                <button class="nav-switch" onclick="Annot.exportAnnot()" title="备份全部高亮/批注到JSON">导出标注</button>
+                <button class="nav-switch" onclick="document.getElementById('annImport').click()" title="从备份恢复（合并）">导入标注</button>
+                <input type="file" id="annImport" accept="application/json" style="display:none" onchange="Annot.importAnnot(this)">
             </div>
         </div>
     </nav>
@@ -58,6 +61,7 @@
     <script src="js/common.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/dict.js"></script>
+    <script src="js/annotate.js"></script>
     <script src="js/article.js"></script>
 </body>
 </html>
