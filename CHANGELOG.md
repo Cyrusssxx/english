@@ -1,5 +1,13 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v22] 2026-07-28
+
+### 新增内置词书「真题高频·较难词（历年批注）」
+
+- **`pwa/data/deck_realexam.json`**：聚合 2010–2025 全部真题逐句批注词（`sentences[].words`），按小写词形去重后共 2587 个词，保留首次出现的批注释义并附所在真题原句作为例句。
+- **`pwa/vocab.html`**：`BUILTIN_DECKS` 置顶新增 `bd_realexam`，点击「内置词书」即可按需导入。
+- **`pwa/sw.js`**：PRECACHE 加入 `data/deck_realexam.json`，离线可导入；CACHE_VER 升 `en2-v22`。
+
 ## [en2-v21] 2026-07-28
 
 ### 背单词页工具栏瘦身：选项全收进设置窗，删重开；单词本新增「重学本书」
