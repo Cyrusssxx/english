@@ -447,13 +447,13 @@ html.dark .word.in-vocab {
     text-underline-offset: 4px;
 }
 
-/* 「高亮难词」开关打开：仅预标注词/词典难词/词组统一琥珀底色（普通词 plain 不参与） */
-body.show-hard .word:not(.plain) {
+/* 「高亮难词」开关打开：仅预标注词/词典难词/词组统一琥珀底色（简单词已是纯文本，天然不参与） */
+body.show-hard .word {
     background: rgba(245, 158, 11, 0.20);
     border-radius: 3px;
 }
 
-html.dark body.show-hard .word:not(.plain) {
+html.dark body.show-hard .word {
     background: rgba(245, 158, 11, 0.30);
 }
 

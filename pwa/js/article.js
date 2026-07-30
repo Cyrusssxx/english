@@ -203,9 +203,12 @@ function annotatePlain(text, sid) {
             out += `<span class="blank" id="blank-${m[1]}" onclick="onBlankClick(event,${m[1]})">[${m[1]}]</span>`;
         } else {
             const tok = m[0];
-            // 全部单词可点：词典命中标 dict-hard（参与「高亮难词」），未命中标 plain（点开显「无离线释义」）
-            const cls = dictLookup(tok) ? 'word dict-hard' : 'word plain';
-            out += `<span class="${cls}" data-w="${esc(tok)}" onclick="onDictWordClick(event,'${sid}')">${esc(tok)}</span>`;
+            // 词典命中→可点难词（有离线释义）；未命中即简单词→纯文本、不可点
+            if (dictLookup(tok)) {
+                out += `<span class="word dict-hard" data-w="${esc(tok)}" onclick="onDictWordClick(event,'${sid}')">${esc(tok)}</span>`;
+            } else {
+                out += esc(tok);
+            }
         }
         last = m.index + m[0].length;
     }
