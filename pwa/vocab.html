@@ -52,6 +52,7 @@
         let viewDeck = '__all__';   // 当前查看的词书（__all__ = 全部）
         const PAGE = 60;            // 分页：每次渲染 60 张卡片，避免大词书全量塞 DOM 卡顿
         let curRows = [], shown = 0, curCta = '';
+        let curActive = 'default';   // 当前收藏目标词书（渲染列表时刷新，决定 per-card ★ 亮灭）
 
         async function renderAll() {
             await renderDeckBar();
@@ -62,7 +63,6 @@
             const counts = await deckCounts();
             const active = getActiveDeck();
             let tabs = `<button class="deck-tab ${viewDeck === '__all__' ? 'on' : ''}" onclick="selectView('__all__')">全部 <span class="dt-count">${counts['__all__'] || 0}</span></button>`;
-            tabs += `<button class="deck-tab ${viewDeck === '__fav__' ? 'on' : ''}" onclick="selectView('__fav__')">★ 收藏 <span class="dt-count">${counts['__fav__'] || 0}</span></button>`;
             for (const d of getDecks()) {
                 const star = d.id === active ? '<span class="dt-star" title="当前收藏目标">★</span>' : '';
                 tabs += `<button class="deck-tab ${viewDeck === d.id ? 'on' : ''}" onclick="selectView('${esc(d.id)}')">${esc(d.name)}${star} <span class="dt-count">${counts[d.id] || 0}</span></button>`;
@@ -76,8 +76,6 @@
             if (viewDeck === '__all__') {
                 tb.innerHTML = `<span class="tb-info">当前收藏目标：<b>${esc(deckName(active))}</b></span>
                     <a class="tb-btn" href="study.html?deck=__all__">背全部 →</a>`;
-            } else if (viewDeck === '__fav__') {
-                tb.innerHTML = `<span class="tb-info">★ 收藏的词（点词卡右上角 ☆/★ 切换）</span>`;
             } else {
                 const d = getDeck(viewDeck);
                 let btns = `<span class="tb-info">当前查看：<b>${esc(d ? d.name : '')}</b></span>`;
@@ -91,23 +89,18 @@
                 }
                 tb.innerHTML = btns;
             }
-            // 词书迷你进度（收藏视图无该概念，跳过）
-            if (viewDeck !== '__fav__') {
-                const st = await deckStats(viewDeck);
-                tb.innerHTML += `<div class="deck-mini-stat">新词 <b>${st.newCount}</b> · 学习中 <b>${st.learning}</b> · 已掌握 <b>${st.mastered}</b> · 今日待复习 <b>${st.dueToday}</b></div>`;
-            }
+            // 词书迷你进度
+            const st = await deckStats(viewDeck);
+            tb.innerHTML += `<div class="deck-mini-stat">新词 <b>${st.newCount}</b> · 学习中 <b>${st.learning}</b> · 已掌握 <b>${st.mastered}</b> · 今日待复习 <b>${st.dueToday}</b></div>`;
         }
 
         async function renderList() {
-            const src = viewDeck === '__fav__'
-                ? (await dbAll('vocab')).filter(v => v.fav)
-                : await vocabByDeck(viewDeck);
+            curActive = getActiveDeck();
+            const src = await vocabByDeck(viewDeck);
             curRows = src.sort((a, b) => (b.added_at || '').localeCompare(a.added_at || ''));
             document.getElementById('vocabCount').textContent = curRows.length ? `共 ${curRows.length} 个词/词组` : '';
             if (!curRows.length) {
-                document.getElementById('vocabList').innerHTML = viewDeck === '__fav__'
-                    ? '<div class="empty">还没有收藏的词。背单词时或在此点词卡右上角 ☆ 收藏。</div>'
-                    : '<div class="empty">这本词书还没有词。精读时点下划线词加入，或用「记录生词」「导入词书」批量添加。</div>';
+                document.getElementById('vocabList').innerHTML = '<div class="empty">这本词书还没有词。精读时点下划线词加入，或用「记录生词」「导入词书」批量添加。</div>';
                 return;
             }
             const today = dayStr(0);
@@ -115,19 +108,20 @@
             const cta = due
                 ? `<div class="sc-main"><b>今日待背 ${due} 个词</b><div class="sc-sub">单词卡 · 间隔重复 · 可离线</div></div><span class="sc-go">开始背单词 →</span>`
                 : `<div class="sc-main"><b>今日待背已清空 🎉</b><div class="sc-sub">可点入提前背未到期的词</div></div><span class="sc-go">去背单词 →</span>`;
-            curCta = viewDeck === '__fav__' ? '' : `<a class="study-cta" href="study.html?deck=${esc(viewDeck)}">${cta}</a>`;
+            curCta = `<a class="study-cta" href="study.html?deck=${esc(viewDeck)}">${cta}</a>`;
             shown = 0;
             renderPage();
         }
 
         /** 生成单张词卡 HTML */
         function cardHtml(v) {
+            const inT = (Array.isArray(v.decks) ? v.decks : ['default']).includes(curActive);
             return `
                 <div class="item-card">
                     <div class="ic-head">
                         <span><span class="ic-word">${esc(v.word)}</span>
                         <span class="ic-phonetic">${esc(v.phonetic || '')}</span></span>
-                        <button class="ic-fav ${v.fav ? 'on' : ''}" onclick="toggleFav('${esc(v.word).replace(/'/g, "\\'")}')" title="收藏">${v.fav ? '★' : '☆'}</button>
+                        <button class="ic-fav ${inT ? 'on' : ''}" onclick="toggleFav('${esc(v.word).replace(/'/g, "\\'")}')" title="收藏到「${esc(deckName(curActive))}」">${inT ? '★' : '☆'}</button>
                     </div>
                     <div class="ic-meaning">${esc(v.meaning || '')}</div>
                     ${typeof freqBadge === 'function' ? freqBadge(v.word) : ''}
@@ -274,7 +268,7 @@
         }
 
         async function toggleFav(word) {
-            await toggleFavWord(word);
+            await toggleWordInDeck(word, getActiveDeck());
             renderAll();
         }
 

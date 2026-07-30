@@ -1,5 +1,16 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v20] 2026-07-28
+
+### 背单词页：自定义快捷键悬浮设置窗 + 收藏统一归入收藏目标生词本
+
+- **`pwa/js/study.js`**：新增悬浮设置窗（⇢ 设置按钮）——可自定义「显示释义/认识/不认识/回退/收藏」5 个动作的键位（存 localStorage `en2_keymap`，默认 空格/→/←/⌫/F），可一键恢复默认；绑定时独占下一次按键，Esc 取消、重复键位拒绝。设置窗内可直接切换收藏目标词书。keydown 重写为读 keymap 派发，输入框内不拦截。
+- **收藏语义统一**：★ 不再是独立 `v.fav` 星标，而是「当前词是否在收藏目标生词本（`getActiveDeck`）」。`toggleFav` 改为切换归属（`toggleWordInDeck`），移空时回退内置词书、绝不删记录，避免背词途中单词消失。
+- **`pwa/js/storage.js`**：新增 `toggleWordInDeck(word, deckId)`；`migrateVocabDecks` 一次性把历史 `v.fav` 词并入当前收藏目标并清 fav 字段（`en2_favMigrated` 防重）；`deckCounts` 移除 `__fav__` 计数；删 `toggleFavWord`。
+- **`pwa/vocab.html`**：移除单词本「★ 收藏」独立标签页及 `__fav__` 分支；per-card ★ 改为“是否在收藏目标词书”开关，点击即归入/移出当前收藏目标。
+- **`pwa/css/style.css`**：新增 `#studySettings` 及 `.ss-title/.ss-row/.ss-key/.ss-key.binding/.ss-reset/.ss-target` 等设置窗样式（复用现有变量，z-index 400）。
+- **`pwa/sw.js`**：CACHE_VER 升 `en2-v20`。
+
 ## [en2-v19] 2026-07-27
 
 ### 文章页：手动荧光高亮 + 文字批注（移植自数学笔记）

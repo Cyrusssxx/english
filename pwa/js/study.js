@@ -29,6 +29,19 @@ function setAutoWord(v) { localStorage.setItem('en2_autoWord', v ? '1' : '0'); }
 function getAutoExample() { return localStorage.getItem('en2_autoExample') === '1'; }
 function setAutoExample(v) { localStorage.setItem('en2_autoExample', v ? '1' : '0'); }
 
+// 自定义快捷键：动作 -> KeyboardEvent.code，存 localStorage
+const DEFAULT_KEYS = { flip: 'Space', known: 'ArrowRight', unknown: 'ArrowLeft', undo: 'Backspace', fav: 'KeyF' };
+const KEY_ACTIONS = [['flip', '显示释义'], ['known', '认识'], ['unknown', '不认识'], ['undo', '回退'], ['fav', '收藏到目标词书']];
+function getKeyMap() { try { return { ...DEFAULT_KEYS, ...(JSON.parse(localStorage.getItem('en2_keymap') || '{}')) }; } catch (e) { return { ...DEFAULT_KEYS }; } }
+function setKeyMap(m) { localStorage.setItem('en2_keymap', JSON.stringify(m)); }
+function keyLabel(code) {
+    const M = { Space: '空格', ArrowLeft: '←', ArrowRight: '→', ArrowUp: '↑', ArrowDown: '↓', Backspace: '⌫', Enter: '↵', Escape: 'Esc' };
+    if (M[code]) return M[code];
+    if (code && code.startsWith('Key')) return code.slice(3);
+    if (code && code.startsWith('Digit')) return code.slice(5);
+    return code || '—';
+}
+
 // 会话续存：同一天/同词书/同模式的未完成本轮，跨页返回后可恢复，避免进度归零
 function getSession() {
     try { return JSON.parse(localStorage.getItem('en2_studySession') || 'null'); } catch (e) { return null; }
@@ -276,6 +289,8 @@ async function renderCard() {
     const tag = (v.srs && v.srs.reps) ? '<span class="ct-tag review">复习</span>'
         : '<span class="ct-tag new">新词</span>';
     const wsafe = esc(v.word).replace(/'/g, "\\'");
+    const favTarget = getActiveDeck();
+    const inTarget = (Array.isArray(v.decks) ? v.decks : ['default']).includes(favTarget);
     // 结构固定：卡片头(单词)常驻顶部 + 释义区高度预留 + 底部操作条常驻，
     // 翻面只是在预留区内淡入内容，卡片外高不变 → 判定/翻面均无页面跳动。
     const ds = deckStat ? `<div class="deck-stat-bar">
@@ -296,11 +311,12 @@ async function renderCard() {
             <button class="sb-btn" onclick="editPlan()" title="设置每日新词量">📅 每日 ${getDailyPlan()}</button>
             <button class="sb-btn${getAutoWord() ? ' on' : ''}" id="btnAutoWord" onclick="toggleAutoWord()" title="卡片出现时自动读单词">🔊 自动读词</button>
             <button class="sb-btn${getAutoExample() ? ' on' : ''}" id="btnAutoExample" onclick="toggleAutoExample()" title="显示释义时自动读例句">📖 自动读例句</button>
+            <button class="sb-btn" onclick="event.stopPropagation();toggleSettings()" title="设置快捷键与收藏目标">⚙ 设置</button>
         </div>
         <div class="flashcard" id="flashcard" onclick="onFlip()">
             <div class="fc-front">
                 ${tag}
-                <button class="fc-fav ${v.fav ? 'on' : ''}" onclick="event.stopPropagation();toggleFav()" title="收藏该词">${v.fav ? '★' : '☆'}</button>
+                <button class="fc-fav ${inTarget ? 'on' : ''}" onclick="event.stopPropagation();toggleFav()" title="收藏到「${esc(deckName(favTarget))}」">${inTarget ? '★' : '☆'}</button>
                 <div class="fc-word">${esc(v.word)}</div>
                 <div class="fc-phonetic">${esc(v.phonetic || '')}</div>
                 <button class="fc-play" onclick="event.stopPropagation();speak('${wsafe}')" title="朗读">🔊 朗读</button>
@@ -379,14 +395,29 @@ async function undo() {
     renderCard();
 }
 
-/** 收藏/取消收藏当前词（★，单词本可按收藏筛选） */
+/** 收藏当前词 = 切换其在「收藏目标词书」的归属（复用 getActiveDeck，全站一致） */
 async function toggleFav() {
     const v = queue[cur];
     if (!v) return;
-    v.fav = !v.fav;
-    await dbPut('vocab', v);
-    const btn = document.querySelector('.fc-fav');
-    if (btn) { btn.classList.toggle('on', v.fav); btn.textContent = v.fav ? '★' : '☆'; }
+    const target = getActiveDeck();
+    const on = await toggleWordInDeck(v.word, target);
+    const rec = await dbGet('vocab', v.word);
+    if (rec) v.decks = rec.decks;      // 同步内存，回退/续存状态一致
+    refreshFavBtn(on, target);
+}
+
+/** 就地刷新当前卡 ★ 按钮（on 省略时按当前词是否在目标词书重算） */
+function refreshFavBtn(on, target) {
+    const b = document.querySelector('.fc-fav');
+    if (!b) return;
+    target = target || getActiveDeck();
+    if (on === undefined) {
+        const v = queue[cur];
+        on = !!(v && (Array.isArray(v.decks) ? v.decks : ['default']).includes(target));
+    }
+    b.classList.toggle('on', on);
+    b.textContent = on ? '★' : '☆';
+    b.title = '收藏到「' + deckName(target) + '」';
 }
 
 /** 设置每日新词量（每轮最多引入的新词数） */
@@ -409,14 +440,88 @@ function renderDone() {
         <a class="se-btn ghost" href="vocab.html">回生词本</a></div>`;
 }
 
-// ============ 键盘快捷键 ============
+// ============ 悬浮设置窗（自定义快捷键 + 收藏目标词书） ============
+let bindingAction = null;   // 正在等待按键绑定的动作，null = 非绑定态
+
+function buildSettingsPanel() {
+    if (document.getElementById('studySettings')) return;
+    const p = document.createElement('div');
+    p.id = 'studySettings';
+    p.hidden = true;
+    p.addEventListener('click', e => e.stopPropagation());   // 面板内点击不冒泡触发外部关闭
+    document.body.appendChild(p);
+}
+
+function toggleSettings() {
+    buildSettingsPanel();
+    const p = document.getElementById('studySettings');
+    if (p.hidden) { renderSettings(); p.hidden = false; }
+    else hideSettings();
+}
+
+function hideSettings() {
+    const p = document.getElementById('studySettings');
+    if (p && !p.hidden) { p.hidden = true; bindingAction = null; }
+}
+
+function renderSettings() {
+    const p = document.getElementById('studySettings');
+    if (!p) return;
+    const km = getKeyMap();
+    const rows = KEY_ACTIONS.map(([act, label]) => {
+        const binding = bindingAction === act;
+        return `<div class="ss-row"><span class="ss-act">${label}</span>
+            <button class="ss-key${binding ? ' binding' : ''}" onclick="startBind('${act}')">${binding ? '按键…' : esc(keyLabel(km[act]))}</button></div>`;
+    }).join('');
+    const active = getActiveDeck();
+    const opts = getDecks().map(d => `<option value="${esc(d.id)}"${d.id === active ? ' selected' : ''}>${esc(d.name)}</option>`).join('');
+    p.innerHTML = `
+        <div class="ss-title">快捷键 <span class="ss-tip">点键位后按下新键</span></div>
+        ${rows}
+        <button class="ss-reset" onclick="resetKeys()">恢复默认</button>
+        <div class="ss-title">收藏目标词书</div>
+        <div class="ss-target"><select onchange="onSettingsTarget(this.value)">${opts}</select></div>`;
+}
+
+function startBind(act) { bindingAction = act; renderSettings(); }
+function resetKeys() { setKeyMap({ ...DEFAULT_KEYS }); bindingAction = null; renderSettings(); }
+function onSettingsTarget(id) { setActiveDeck(id); renderSettings(); refreshFavBtn(); }
+
+// ============ 键盘快捷键（可在设置窗自定义） ============
 document.addEventListener('keydown', (e) => {
-    if (!queue.length || cur >= queue.length) return;
-    if (e.code === 'Space') { e.preventDefault(); onFlip(); }
-    else if (e.code === 'Backspace') { e.preventDefault(); undo(); }
-    else if (flipped && e.code === 'ArrowLeft') { e.preventDefault(); judge(false); }
-    else if (flipped && e.code === 'ArrowRight') { e.preventDefault(); judge(true); }
+    // 绑定态：独占下一次按键写入 keymap（Esc 取消，重复键位拒绝）
+    if (bindingAction) {
+        e.preventDefault();
+        if (e.code === 'Escape') { bindingAction = null; renderSettings(); return; }
+        const km = getKeyMap();
+        const dup = KEY_ACTIONS.find(([a]) => a !== bindingAction && km[a] === e.code);
+        if (dup) { alert('「' + keyLabel(e.code) + '」已绑定给「' + dup[1] + '」，请换一个键'); return; }
+        km[bindingAction] = e.code;
+        setKeyMap(km);
+        bindingAction = null;
+        renderSettings();
+        return;
+    }
+    // 输入框/下拉框内不拦截
+    const t = e.target;
+    if (t && /^(INPUT|SELECT|TEXTAREA)$/.test(t.tagName)) return;
+    if (e.code === 'Escape') { hideSettings(); return; }   // Esc 关闭设置窗
+    const km = getKeyMap();
+    const active = queue.length && cur < queue.length;      // 做题动作需有队列
+    if (km.undo === e.code) { if (active) { e.preventDefault(); undo(); } return; }
+    if (km.fav === e.code) { if (active) { e.preventDefault(); toggleFav(); } return; }
+    if (!active) return;
+    if (!flipped) {
+        if (km.flip === e.code) { e.preventDefault(); onFlip(); }
+    } else {
+        if (km.unknown === e.code) { e.preventDefault(); judge(false); }
+        else if (km.known === e.code) { e.preventDefault(); judge(true); }
+    }
 });
+
+// 点击面板外或滚动时收起设置窗
+document.addEventListener('click', () => hideSettings());
+window.addEventListener('scroll', () => hideSettings(), { passive: true });
 
 // ============ 初始化 ============
 async function init() {

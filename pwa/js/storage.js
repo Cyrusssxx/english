@@ -191,14 +191,28 @@ async function deleteDeck(id) {
 /** 一次性迁移：给历史无 decks 字段的生词补 ['default']（带完成标记） */
 async function migrateVocabDecks() {
     ensureDefaultDeck();
-    if (localStorage.getItem('en2_decksMigrated') === '1') return;
-    for (const v of await dbAll('vocab')) {
-        if (!Array.isArray(v.decks) || !v.decks.length) {
-            v.decks = [DEFAULT_DECK_ID];
+    if (localStorage.getItem('en2_decksMigrated') !== '1') {
+        for (const v of await dbAll('vocab')) {
+            if (!Array.isArray(v.decks) || !v.decks.length) {
+                v.decks = [DEFAULT_DECK_ID];
+                await dbPut('vocab', v);
+            }
+        }
+        localStorage.setItem('en2_decksMigrated', '1');
+    }
+    // 收藏语义统一：把历史 v.fav 星标词并入当前收藏目标词书，再清掉 fav 字段
+    if (localStorage.getItem('en2_favMigrated') !== '1') {
+        const target = getActiveDeck();
+        for (const v of await dbAll('vocab')) {
+            if (!v.fav) continue;
+            const decks = new Set(Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID]);
+            decks.add(target);
+            v.decks = [...decks];
+            delete v.fav;
             await dbPut('vocab', v);
         }
+        localStorage.setItem('en2_favMigrated', '1');
     }
-    localStorage.setItem('en2_decksMigrated', '1');
 }
 
 // ==================== 业务操作 ====================
@@ -262,13 +276,18 @@ async function removeVocabFromDeck(word, deckId) {
     else await dbDelete('vocab', word);
 }
 
-/** 收藏/取消收藏某词（★ 标记，跨词书全局，随备份导出），返回收藏后状态 */
-async function toggleFavWord(word) {
+/** 切换某词在指定词书的归属，返回切换后是否在该书。
+ *  移除到空时回退到内置词书，绝不删除记录（避免背词途中单词凭空消失）。 */
+async function toggleWordInDeck(word, deckId) {
     const v = await dbGet('vocab', word);
     if (!v) return false;
-    v.fav = !v.fav;
-    await dbPut('vocab', v);
-    return !!v.fav;
+    const decks = new Set(Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID]);
+    if (decks.has(deckId)) {
+        decks.delete(deckId);
+        if (decks.size === 0) decks.add(DEFAULT_DECK_ID);
+        v.decks = [...decks]; await dbPut('vocab', v); return false;
+    }
+    decks.add(deckId); v.decks = [...decks]; await dbPut('vocab', v); return true;
 }
 
 /** 取某词书的生词（__all__ 返回全部；缺省 decks 视为 default） */
@@ -278,12 +297,11 @@ async function vocabByDeck(deckId) {
     return all.filter(v => (Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID]).includes(deckId));
 }
 
-/** 各词书生词计数：{__all__:n, __fav__:n, deckId:n, ...} */
+/** 各词书生词计数：{__all__:n, deckId:n, ...} */
 async function deckCounts() {
-    const counts = { [ALL_DECKS]: 0, __fav__: 0 };
+    const counts = { [ALL_DECKS]: 0 };
     for (const v of await dbAll('vocab')) {
         counts[ALL_DECKS]++;
-        if (v.fav) counts.__fav__++;
         const decks = Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID];
         for (const id of decks) counts[id] = (counts[id] || 0) + 1;
     }

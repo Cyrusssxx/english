@@ -1896,3 +1896,77 @@ mark.mk-b { background: var(--mk-b); }
     cursor: pointer;
 }
 .ab-btn:hover { background: var(--primary-soft); }
+
+/* ===== 背单词页悬浮设置窗（自定义快捷键 + 收藏目标） ===== */
+#studySettings {
+    position: fixed;
+    top: 72px;
+    right: 16px;
+    z-index: 400;
+    min-width: 260px;
+    max-width: calc(100vw - 32px);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 14px 16px;
+}
+#studySettings[hidden] { display: none; }
+.ss-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 4px 0 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.ss-title:not(:first-child) { margin-top: 14px; }
+.ss-tip { font-size: 11px; font-weight: 400; color: var(--text-light); }
+.ss-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.ss-act { font-size: 13px; color: var(--text); }
+.ss-key {
+    min-width: 56px;
+    padding: 3px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 1px 0 var(--border);
+}
+.ss-key:hover { border-color: var(--primary); }
+.ss-key.binding {
+    border-color: var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 0 2px var(--primary-soft);
+    font-weight: 700;
+}
+.ss-reset {
+    margin-top: 8px;
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-light);
+    font-size: 12px;
+    cursor: pointer;
+}
+.ss-reset:hover { background: var(--primary-soft); color: var(--primary); }
+.ss-target select {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 13px;
+    cursor: pointer;
+}
