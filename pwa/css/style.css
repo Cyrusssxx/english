@@ -906,6 +906,12 @@ body.mode-read .quiz-pane {
     border-color: var(--primary);
 }
 
+.study-bar .sb-btn.on {
+    color: #fff;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
 /* 单词卡：头部单词常驻 + 释义区固定预留高（翻面仅在区内淡入，卡片外高不变，无跳动） */
 .flashcard {
     position: relative;
@@ -1007,7 +1013,8 @@ html.dark .ct-tag.new {
 .fc-word {
     font-size: 2.1rem;
     font-weight: 700;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Microsoft YaHei', sans-serif;
+    letter-spacing: 0.01em;
     word-break: break-word;
 }
 

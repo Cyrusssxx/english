@@ -1,5 +1,31 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v15] 2026-07-27
+
+### 背单词：可选自动播放（读词 / 读例句）
+
+- **`pwa/js/study.js`**：新增两个开关——「🔊 自动读词」（卡片出现时自动朗读单词）与「📖 自动读例句」（点开释义时自动朗读例句），状态存 localStorage，默认关；复用现有发音通道（有道美音优先 + TTS 回退）。
+- **`pwa/css/style.css`**：新增 `.sb-btn.on` 开关激活态样式。
+- **`pwa/sw.js`**：`CACHE_VER` 升 `en2-v15`。
+
+## [en2-v14] 2026-07-27
+
+### 背单词卡片：字体现代化 + 自然美声发音
+
+- **`pwa/css/style.css`**：`.fc-word` 单词字体由 Georgia 衬线改为现代无衬线栈（Inter / 系统无衬线），更清晰。
+- **`pwa/js/study.js`**：重写 `speak()`——朗读优先用有道 dictvoice 在线自然美音（type=2 美式），断网或加载失败自动回退浏览器 TTS；复用单个 Audio 实例防连点叠音。
+- **`pwa/sw.js`**：`CACHE_VER` 升 `en2-v14`（在线音频为跨域 URL，不入缓存，PRECACHE 无变更）。
+
+## [en2-v13] 2026-07-27
+
+### 新增内置词书：唐迟·20年高分词组 / 熟词僻义（OCR 自动流水线）
+
+- **`tools/ocr_kb.py`**（新增）：对扫描版词库 PDF 逐页渲染 + RapidOCR 识别，按「绿色粗体词条 / 黑色正文 / 真题出处」版面结构解析成中间词条 `_kb_data/kb_entries.json`（另出 `kb_raw.txt` 供人工校对）。绿/黑靠框内笔画平均色判定；小节标题「重难点词组 / 熟词僻义」切换词条类型。
+- **`tools/build_tc_decks.py`**（新增）：读中间词条，按类型拆成两个内置词书 `pwa/data/deck_tc_phrases.json`（词组）/ `deck_tc_senses.json`（熟词僻义），出处并入例句中文译文，按 word 去重。
+- **`pwa/vocab.html`**：`BUILTIN_DECKS` 新增两本（`bd_tc_phrases` / `bd_tc_senses`），按需导入。
+- **`pwa/sw.js`**：`PRECACHE` 加两个 deck，`CACHE_VER` 升 `en2-v13`。
+- 数据由用户在本地对自有 PDF 运行流水线生成并人工核对，释义/例句 100% 照抄、无 AI 生成。
+
 ## [en2-v12] 2026-07-27
 
 ### 背单词系统与文章交互整体升级

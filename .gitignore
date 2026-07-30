@@ -7,6 +7,13 @@ tools/_*.py
 # OCR / 提取中间产物
 tools/extracted/
 
+# book OCR decks & extraction scripts (local only, not published)
+pwa/data/deck_tc_phrases.json
+pwa/data/deck_tc_senses.json
+tools/ocr_kb.py
+tools/build_tc_decks.py
+tools/__pycache__/
+
 # 系统文件
 .DS_Store
 Thumbs.db

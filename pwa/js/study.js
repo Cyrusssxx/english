@@ -23,6 +23,12 @@ function getStudyMode() {
 }
 function setStudyMode(m) { localStorage.setItem('en2_studyMode', m); }
 
+// 自动播放：卡片出现自动读单词 / 翻面显示释义时自动读例句（默认关）
+function getAutoWord() { return localStorage.getItem('en2_autoWord') === '1'; }
+function setAutoWord(v) { localStorage.setItem('en2_autoWord', v ? '1' : '0'); }
+function getAutoExample() { return localStorage.getItem('en2_autoExample') === '1'; }
+function setAutoExample(v) { localStorage.setItem('en2_autoExample', v ? '1' : '0'); }
+
 // 会话续存：同一天/同词书/同模式的未完成本轮，跨页返回后可恢复，避免进度归零
 function getSession() {
     try { return JSON.parse(localStorage.getItem('en2_studySession') || 'null'); } catch (e) { return null; }
@@ -117,14 +123,48 @@ async function resolveExample(v) {
     } catch (e) { return null; }
 }
 
-// ============ 发音（浏览器 TTS，离线可用） ============
-function speak(word) {
+// ============ 发音（有道在线美音优先，断网/失败回退浏览器 TTS） ============
+let _voiceAudio = null;             // 复用单个 Audio 实例，避免连点叠音
+let _curExampleEn = '';             // 当前卡片例句英文（供翻面自动朗读）
+
+function speakLocal(word) {         // 回退：浏览器语音合成，离线可用
     try {
         const u = new SpeechSynthesisUtterance(word);
         u.lang = 'en-US'; u.rate = 0.9;
         speechSynthesis.cancel();
         speechSynthesis.speak(u);
     } catch (e) { /* 不支持则静默 */ }
+}
+
+function speak(word) {
+    try {
+        // 先停掉上一次的播放与合成，避免叠音
+        if (_voiceAudio) { try { _voiceAudio.pause(); _voiceAudio.currentTime = 0; } catch (e) {} }
+        try { speechSynthesis.cancel(); } catch (e) {}
+        // 离线直接走本地 TTS，省一次必失败的请求
+        if (navigator.onLine === false) { speakLocal(word); return; }
+        // 在线：有道 dictvoice 自然美音（type=2=美音）
+        const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(word) + '&type=2';
+        if (!_voiceAudio) _voiceAudio = new Audio();
+        _voiceAudio.onerror = () => speakLocal(word);
+        _voiceAudio.src = url;
+        const p = _voiceAudio.play();
+        if (p && typeof p.catch === 'function') p.catch(() => speakLocal(word));
+    } catch (e) {
+        speakLocal(word);
+    }
+}
+
+// 自动播放开关：切换设置并就地更新按钮激活态（不重绘卡片，避免误触发朗读）
+function toggleAutoWord() {
+    setAutoWord(!getAutoWord());
+    const b = document.getElementById('btnAutoWord');
+    if (b) b.classList.toggle('on', getAutoWord());
+}
+function toggleAutoExample() {
+    setAutoExample(!getAutoExample());
+    const b = document.getElementById('btnAutoExample');
+    if (b) b.classList.toggle('on', getAutoExample());
 }
 
 // ============ 队列构建 ============
@@ -254,6 +294,8 @@ async function renderCard() {
             <button class="sb-btn" onclick="undo()" ${history.length ? '' : 'disabled'} title="撤销上一次判定">↶ 回退</button>
             <button class="sb-btn" onclick="start(false)" title="重新开始本轮">⟳ 重开</button>
             <button class="sb-btn" onclick="editPlan()" title="设置每日新词量">📅 每日 ${getDailyPlan()}</button>
+            <button class="sb-btn${getAutoWord() ? ' on' : ''}" id="btnAutoWord" onclick="toggleAutoWord()" title="卡片出现时自动读单词">🔊 自动读词</button>
+            <button class="sb-btn${getAutoExample() ? ' on' : ''}" id="btnAutoExample" onclick="toggleAutoExample()" title="显示释义时自动读例句">📖 自动读例句</button>
         </div>
         <div class="flashcard" id="flashcard" onclick="onFlip()">
             <div class="fc-front">
@@ -271,8 +313,10 @@ async function renderCard() {
         <div class="study-actions" id="studyActions">
             <button class="sa-btn reveal" onclick="event.stopPropagation();onFlip()">显示释义 <kbd>空格</kbd></button>
         </div>`;
+    if (getAutoWord()) speak(v.word);              // 开关开启：卡片出现自动读单词
     // 异步填充背面例句（在预留区内，不影响卡片外高）
     const ex = await resolveExample(v);
+    _curExampleEn = ex ? ex.en : '';               // 缓存供翻面自动读例句
     const c = document.getElementById('fcBackContent');
     if (c) {
         c.innerHTML = `
@@ -292,6 +336,7 @@ function onFlip() {
     if (flipped) return;                 // 单向翻面：已显示释义后点击卡片不再收起，避免误触跳动
     flipped = true;
     card.classList.add('flipped');
+    if (getAutoExample() && _curExampleEn) speak(_curExampleEn);   // 开关开启：显示释义时自动读例句
     const act = document.getElementById('studyActions');
     if (act) act.innerHTML = `
         <button class="sa-btn again" onclick="judge(false)">✕ 不认识 <kbd>←</kbd></button>
