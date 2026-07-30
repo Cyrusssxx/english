@@ -1970,3 +1970,31 @@ mark.mk-b { background: var(--mk-b); }
     font-size: 13px;
     cursor: pointer;
 }
+.ss-num {
+    width: 72px;
+    padding: 3px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 13px;
+    font-family: inherit;
+    text-align: right;
+}
+.ss-toggle {
+    min-width: 44px;
+    padding: 3px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text-light);
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+}
+.ss-toggle.on {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    font-weight: 700;
+}

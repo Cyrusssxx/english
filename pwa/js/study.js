@@ -168,17 +168,9 @@ function speak(word) {
     }
 }
 
-// 自动播放开关：切换设置并就地更新按钮激活态（不重绘卡片，避免误触发朗读）
-function toggleAutoWord() {
-    setAutoWord(!getAutoWord());
-    const b = document.getElementById('btnAutoWord');
-    if (b) b.classList.toggle('on', getAutoWord());
-}
-function toggleAutoExample() {
-    setAutoExample(!getAutoExample());
-    const b = document.getElementById('btnAutoExample');
-    if (b) b.classList.toggle('on', getAutoExample());
-}
+// 自动播放开关：切换设置并刷新设置窗（开关均位于设置窗内，不重绘卡片避免误触发朗读）
+function toggleAutoWord() { setAutoWord(!getAutoWord()); renderSettings(); }
+function toggleAutoExample() { setAutoExample(!getAutoExample()); renderSettings(); }
 
 // ============ 队列构建 ============
 // mode: mix=到期复习+当日新词 / review=仅到期复习 / new=仅新词；includeFuture=提前背未到期词
@@ -307,11 +299,7 @@ async function renderCard() {
             <div class="sb-stat"><b>${remain}</b> 剩余</div>
             <div class="sb-prog"><span style="width:${queue.length ? (cur / queue.length * 100) : 0}%"></span></div>
             <button class="sb-btn" onclick="undo()" ${history.length ? '' : 'disabled'} title="撤销上一次判定">↶ 回退</button>
-            <button class="sb-btn" onclick="start(false)" title="重新开始本轮">⟳ 重开</button>
-            <button class="sb-btn" onclick="editPlan()" title="设置每日新词量">📅 每日 ${getDailyPlan()}</button>
-            <button class="sb-btn${getAutoWord() ? ' on' : ''}" id="btnAutoWord" onclick="toggleAutoWord()" title="卡片出现时自动读单词">🔊 自动读词</button>
-            <button class="sb-btn${getAutoExample() ? ' on' : ''}" id="btnAutoExample" onclick="toggleAutoExample()" title="显示释义时自动读例句">📖 自动读例句</button>
-            <button class="sb-btn" onclick="event.stopPropagation();toggleSettings()" title="设置快捷键与收藏目标">⚙ 设置</button>
+            <button class="sb-btn" onclick="event.stopPropagation();toggleSettings()" title="设置快捷键、背词选项与收藏目标">⚙ 设置</button>
         </div>
         <div class="flashcard" id="flashcard" onclick="onFlip()">
             <div class="fc-front">
@@ -420,16 +408,6 @@ function refreshFavBtn(on, target) {
     b.title = '收藏到「' + deckName(target) + '」';
 }
 
-/** 设置每日新词量（每轮最多引入的新词数） */
-function editPlan() {
-    const s = prompt('每日新词量（每轮最多引入多少个新词）：', getDailyPlan());
-    if (s === null) return;
-    const n = parseInt(s, 10);
-    if (!n || n < 1) { alert('请输入正整数'); return; }
-    setDailyPlan(n);
-    start(false);
-}
-
 function renderDone() {
     clearSession();
     document.getElementById('studyRoot').innerHTML = `<div class="study-empty">
@@ -479,6 +457,13 @@ function renderSettings() {
         <div class="ss-title">快捷键 <span class="ss-tip">点键位后按下新键</span></div>
         ${rows}
         <button class="ss-reset" onclick="resetKeys()">恢复默认</button>
+        <div class="ss-title">背词选项</div>
+        <div class="ss-row"><span class="ss-act">每日新词量</span>
+            <input class="ss-num" type="number" min="1" value="${getDailyPlan()}" onchange="onSettingsDaily(this.value)"></div>
+        <div class="ss-row"><span class="ss-act">卡片出现自动读词</span>
+            <button class="ss-toggle${getAutoWord() ? ' on' : ''}" onclick="toggleAutoWord()">${getAutoWord() ? '开' : '关'}</button></div>
+        <div class="ss-row"><span class="ss-act">显示释义自动读例句</span>
+            <button class="ss-toggle${getAutoExample() ? ' on' : ''}" onclick="toggleAutoExample()">${getAutoExample() ? '开' : '关'}</button></div>
         <div class="ss-title">收藏目标词书</div>
         <div class="ss-target"><select onchange="onSettingsTarget(this.value)">${opts}</select></div>`;
 }
@@ -486,6 +471,7 @@ function renderSettings() {
 function startBind(act) { bindingAction = act; renderSettings(); }
 function resetKeys() { setKeyMap({ ...DEFAULT_KEYS }); bindingAction = null; renderSettings(); }
 function onSettingsTarget(id) { setActiveDeck(id); renderSettings(); refreshFavBtn(); }
+function onSettingsDaily(v) { const n = parseInt(v, 10); if (!n || n < 1) { renderSettings(); return; } setDailyPlan(n); start(false); }
 
 // ============ 键盘快捷键（可在设置窗自定义） ============
 document.addEventListener('keydown', (e) => {

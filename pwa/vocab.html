@@ -75,7 +75,8 @@
             const tb = document.getElementById('deckToolbar');
             if (viewDeck === '__all__') {
                 tb.innerHTML = `<span class="tb-info">当前收藏目标：<b>${esc(deckName(active))}</b></span>
-                    <a class="tb-btn" href="study.html?deck=__all__">背全部 →</a>`;
+                    <a class="tb-btn" href="study.html?deck=__all__">背全部 →</a>
+                    <button class="tb-btn" onclick="onRelearnDeck('__all__')">重学全部</button>`;
             } else {
                 const d = getDeck(viewDeck);
                 let btns = `<span class="tb-info">当前查看：<b>${esc(d ? d.name : '')}</b></span>`;
@@ -83,6 +84,7 @@
                     ? `<span class="tb-tag">收藏目标 ★</span>`
                     : `<button class="tb-btn" onclick="onSetActive('${esc(viewDeck)}')">设为收藏目标</button>`;
                 btns += `<a class="tb-btn" href="study.html?deck=${esc(viewDeck)}">背这本 →</a>`;
+                btns += `<button class="tb-btn" onclick="onRelearnDeck('${esc(viewDeck)}')">重学本书</button>`;
                 if (!(d && d.builtin)) {
                     btns += `<button class="tb-btn" onclick="onRenameDeck('${esc(viewDeck)}')">重命名</button>`;
                     btns += `<button class="tb-btn danger" onclick="onDeleteDeck('${esc(viewDeck)}')">删除词书</button>`;
@@ -166,6 +168,19 @@
         }
 
         function onSetActive(id) { setActiveDeck(id); renderAll(); }
+
+        /** 重学本书：清空该词书（或全部）内所有词的记忆进度 srs，变回新词从头背（可逆性弱，需确认） */
+        async function onRelearnDeck(id) {
+            const label = id === '__all__' ? '全部生词' : `词书「${deckName(id)}」`;
+            const rows = await vocabByDeck(id);
+            const learned = rows.filter(v => v.srs);
+            if (!learned.length) { alert(`${label}没有已开始学习的词，无需重学。`); return; }
+            if (!confirm(`重学${label}？将清空其中 ${learned.length} 个词的记忆进度（复习间隔归零，变回新词从头背），此操作不可撤销。`)) return;
+            for (const v of learned) { delete v.srs; await dbPut('vocab', v); }
+            localStorage.removeItem('en2_studySession');   // 清掉残留本轮会话，避免恢复到旧队列
+            renderAll();
+            alert(`已重置 ${learned.length} 个词，去背单词即可从头学。`);
+        }
 
         function onRenameDeck(id) {
             const d = getDeck(id);
