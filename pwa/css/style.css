@@ -420,20 +420,19 @@ html.dark .sent-cn .cn-text {
     color: #7edcd2;
 }
 
-/* 生词/词组下划线 */
+/* 正文单词/词组：默认清爽无常驻下划线，hover 才提示可点；仅生词本词常驻高亮 */
 .word {
-    text-decoration: underline dotted var(--primary) 2px;
-    text-underline-offset: 4px;
     cursor: pointer;
 }
 
 .word:hover {
+    text-decoration: underline dotted var(--primary) 2px;
+    text-underline-offset: 4px;
     background: var(--primary-soft);
     border-radius: 3px;
 }
 
 .word.in-vocab {
-    text-decoration-style: solid;
     background: rgba(245, 158, 11, 0.18);
     border-radius: 3px;
 }
@@ -442,34 +441,19 @@ html.dark .word.in-vocab {
     background: rgba(245, 158, 11, 0.26);
 }
 
-/* 词典难词：默认清爽（不抢眼），hover 才显下划线 */
-.word.dict-hard {
-    text-decoration: none;
-}
-
-.word.dict-hard:hover {
-    text-decoration: underline dotted var(--primary) 2px;
-    text-underline-offset: 4px;
-}
-
-/* 词组：复用 .word/.dict-hard 行为，叠加一条极轻的波浪线作为可点提示 */
-.word.phrase {
-    text-decoration: underline wavy var(--secondary) 1px;
-    text-underline-offset: 4px;
-}
-
+/* 词组：hover 时叠加一条波浪线作为区分提示 */
 .word.phrase:hover {
-    text-decoration: underline wavy var(--secondary) 1px;
+    text-decoration: underline wavy var(--secondary) 2px;
     text-underline-offset: 4px;
 }
 
-/* 「高亮难词」开关打开：正文难词/词组统一琥珀底色 */
-body.show-hard .word {
+/* 「高亮难词」开关打开：仅预标注词/词典难词/词组统一琥珀底色（普通词 plain 不参与） */
+body.show-hard .word:not(.plain) {
     background: rgba(245, 158, 11, 0.20);
     border-radius: 3px;
 }
 
-html.dark body.show-hard .word {
+html.dark body.show-hard .word:not(.plain) {
     background: rgba(245, 158, 11, 0.30);
 }
 
@@ -1251,6 +1235,24 @@ html.dark .fc-example .fe-en .tgt {
     white-space: nowrap;
 }
 
+/* 单词本分页「加载更多」 */
+.load-more {
+    display: block;
+    width: 100%;
+    margin: 14px 0 4px;
+    padding: 12px;
+    background: var(--card);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    color: var(--primary);
+    font-size: 0.92rem;
+    cursor: pointer;
+}
+
+.load-more:hover {
+    background: rgba(20, 184, 166, 0.08);
+}
+
 /* 首页卡片：英文标题（替代原中文概要，避免精读前剧透） */
 .ac-title {
     color: var(--text-light);
@@ -1315,6 +1317,97 @@ html.dark .read-summary {
 .deck-select:focus {
     outline: none;
     border-color: var(--primary);
+}
+
+/* 学习模式切换（复习优先 / 只复习 / 只学新词） */
+.mode-switch {
+    display: inline-flex;
+    gap: 4px;
+    background: var(--primary-soft);
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.mode-btn {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-light);
+    font-size: 0.86rem;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+.mode-btn.active {
+    background: var(--card-bg);
+    color: var(--primary);
+    font-weight: 700;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+}
+
+/* 背单词页统计条 */
+.deck-stat-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.82rem;
+    color: var(--text-light);
+}
+
+.deck-stat-bar b {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.deck-stat-bar .is-new b {
+    color: #2563eb;
+}
+
+.deck-stat-bar .is-learning b {
+    color: #d97706;
+}
+
+.deck-stat-bar .is-mastered b {
+    color: var(--primary);
+}
+
+.deck-stat-bar .is-due b {
+    color: #dc2626;
+}
+
+/* 单词本页词书迷你进度 */
+.deck-mini-stat {
+    flex-basis: 100%;
+    margin-top: 6px;
+    font-size: 0.82rem;
+    color: var(--text-light);
+}
+
+.deck-mini-stat b {
+    color: var(--text);
+    font-weight: 700;
+}
+
+/* 真题考频徽标（弹卡 / 背词卡 / 单词本卡通用） */
+.wp-freq {
+    display: inline-block;
+    margin: 4px 0;
+    padding: 2px 8px;
+    background: var(--primary-soft);
+    color: var(--primary-dark);
+    border-radius: 10px;
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+html.dark .wp-freq {
+    color: #7edcd2;
 }
 
 /* 单词本页：词书标签行 */

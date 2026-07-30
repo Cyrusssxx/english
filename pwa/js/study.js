@@ -9,11 +9,31 @@ let cur = 0;                   // 当前卡索引
 let flipped = false;           // 是否已翻面
 let done = 0;                  // 本轮已判定数
 let history = [];              // 判定历史栈（供「回退」撤销误点）
+let deckStat = null;           // 本轮词书统计快照（start/resume 时计算，供统计条展示）
 const _artCache = {};          // {article_id: article} 例句解析缓存
 
 // 每日计划：每轮最多引入的新词数（可在背词页设置，存 localStorage）
 function getDailyPlan() { return parseInt(localStorage.getItem('en2_dailyPlan') || '', 10) || DEFAULT_DAILY; }
 function setDailyPlan(n) { localStorage.setItem('en2_dailyPlan', String(n)); }
+
+// 学习模式：mix=复习优先(到期复习+当日新词) / review=只复习旧词 / new=只学新词
+function getStudyMode() {
+    const m = localStorage.getItem('en2_studyMode');
+    return (m === 'review' || m === 'new') ? m : 'mix';
+}
+function setStudyMode(m) { localStorage.setItem('en2_studyMode', m); }
+
+// 会话续存：同一天/同词书/同模式的未完成本轮，跨页返回后可恢复，避免进度归零
+function getSession() {
+    try { return JSON.parse(localStorage.getItem('en2_studySession') || 'null'); } catch (e) { return null; }
+}
+function saveSession() {
+    localStorage.setItem('en2_studySession', JSON.stringify({
+        date: dayStr(0), deck: getStudyDeck(), mode: getStudyMode(),
+        words: queue.map(v => v.word), cur, done
+    }));
+}
+function clearSession() { localStorage.removeItem('en2_studySession'); }
 
 // ============ 日期工具（ISO 字符串，字典序即时间序） ============
 function dayStr(offset = 0) {
@@ -22,20 +42,22 @@ function dayStr(offset = 0) {
     return d.toISOString().slice(0, 10);
 }
 
-// ============ 间隔重复评分 ============
+// ============ 间隔重复评分（简化 SM-2 + new→learning→review 状态） ============
 function grade(v, known) {
-    const s = v.srs || { interval: 0, reps: 0, ease: 2.5, lapses: 0 };
+    const s = v.srs || { interval: 0, reps: 0, ease: 2.5, lapses: 0, state: 'new' };
     if (known) {
         s.reps = (s.reps || 0) + 1;
-        if (s.reps === 1) s.interval = 1;
-        else if (s.reps === 2) s.interval = 3;
-        else s.interval = Math.max(1, Math.round((s.interval || 1) * (s.ease || 2.5)));
+        // 学习步：新词首次认识 1 天、二次 3 天，之后 ×ease，避免新词一次就被拉到长间隔
+        if (s.reps === 1) { s.interval = 1; s.state = 'learning'; }
+        else if (s.reps === 2) { s.interval = 3; s.state = 'learning'; }
+        else { s.interval = Math.max(1, Math.round((s.interval || 1) * (s.ease || 2.5))); s.state = 'review'; }
         s.ease = Math.min(3.0, (s.ease || 2.5) + 0.05);
     } else {
         s.reps = 0;
         s.lapses = (s.lapses || 0) + 1;
         s.ease = Math.max(1.3, (s.ease || 2.5) - 0.2);
         s.interval = 1;
+        s.state = 'learning';
     }
     s.due = dayStr(s.interval);
     s.last = dayStr(0);
@@ -106,21 +128,25 @@ function speak(word) {
 }
 
 // ============ 队列构建 ============
-async function buildQueue(includeAll) {
+// mode: mix=到期复习+当日新词 / review=仅到期复习 / new=仅新词；includeFuture=提前背未到期词
+async function buildQueue(mode, includeFuture) {
     const all = (await vocabByDeck(getStudyDeck()));
     const today = dayStr(0);
     const reviews = all.filter(v => v.srs && v.srs.due && v.srs.due <= today);
     const news = all.filter(v => !v.srs);
     const future = all.filter(v => v.srs && v.srs.due && v.srs.due > today);
+    future.sort((a, b) => (a.srs.due || '').localeCompare(b.srs.due || ''));
     let q;
-    if (includeAll) {
-        // 提前学：到期复习 + 新词 + 未到期（未到期按 due 升序）
-        future.sort((a, b) => (a.srs.due || '').localeCompare(b.srs.due || ''));
-        q = [...reviews, ...news.slice(0, getDailyPlan()), ...future];
-    } else {
-        q = [...reviews, ...news.slice(0, getDailyPlan())];
+    if (mode === 'review') {
+        q = includeFuture ? [...reviews, ...future] : [...reviews];
+    } else if (mode === 'new') {
+        q = news.slice(0, getDailyPlan());
+    } else {   // mix
+        q = includeFuture
+            ? [...reviews, ...news.slice(0, getDailyPlan()), ...future]
+            : [...reviews, ...news.slice(0, getDailyPlan())];
     }
-    return { q, total: all.length, reviews: reviews.length, news: news.length };
+    return { q, total: all.length, reviews: reviews.length, news: news.length, future: future.length };
 }
 
 // ============ 词书选择条 ============
@@ -133,19 +159,35 @@ async function renderDeckBar() {
     for (const d of getDecks()) {
         opts.push(`<option value="${esc(d.id)}"${sel === d.id ? ' selected' : ''}>${esc(d.name)} (${counts[d.id] || 0})</option>`);
     }
+    const mode = getStudyMode();
+    const mbtn = (m, label) => `<button class="mode-btn${mode === m ? ' active' : ''}" onclick="setMode('${m}')">${label}</button>`;
     bar.innerHTML = `<label class="deck-bar-label">背词范围</label>
-        <select class="deck-select" id="studyDeckSelect" onchange="onStudyDeckChange(this.value)">${opts.join('')}</select>`;
+        <select class="deck-select" id="studyDeckSelect" onchange="onStudyDeckChange(this.value)">${opts.join('')}</select>
+        <div class="mode-switch">${mbtn('mix', '复习优先')}${mbtn('review', '只复习')}${mbtn('new', '只学新词')}</div>`;
 }
 
 async function onStudyDeckChange(id) {
     setStudyDeck(id);
+    clearSession();
     await start(false);
 }
 
+/** 切换学习模式：清掉旧会话、重绘选择条、按新模式开新一轮 */
+function setMode(m) {
+    setStudyMode(m);
+    clearSession();
+    renderDeckBar();
+    start(false);
+}
+
 // ============ 渲染 ============
-async function start(includeAll) {
-    const info = await buildQueue(includeAll);
+// includeFuture: 待背为空时是否把未到期词也提前拉进本轮
+async function start(includeFuture) {
+    clearSession();
+    const mode = getStudyMode();
+    const info = await buildQueue(mode, includeFuture);
     queue = info.q; cur = 0; done = 0; flipped = false; history = [];
+    deckStat = await deckStats(getStudyDeck());
     const root = document.getElementById('studyRoot');
     if (!info.total) {
         root.innerHTML = `<div class="study-empty">
@@ -156,14 +198,33 @@ async function start(includeAll) {
         return;
     }
     if (!queue.length) {
+        const emptyMsg = mode === 'new' ? '这个范围没有可学的新词了！'
+            : mode === 'review' ? '当前没有到期待复习的词！' : '今日待背已清空！';
         root.innerHTML = `<div class="study-empty">
             <div class="se-emoji">🎉</div>
-            <p>今日待复习已清空！</p>
-            <p class="se-hint">共 ${info.total} 个词，均已安排到未来的复习日。</p>
-            <button class="se-btn" onclick="start(true)">提前背未到期的词 →</button></div>`;
+            <p>${emptyMsg}</p>
+            <p class="se-hint">共 ${info.total} 个词，其中 ${info.future} 个已安排到未来复习日。</p>
+            ${info.future ? `<button class="se-btn" onclick="start(true)">提前背未到期的词 →</button>` : ''}
+            <a class="se-btn ghost" href="vocab.html">回生词本</a></div>`;
         return;
     }
     renderCard();
+}
+
+/** 恢复未完成的本轮（同日/同词书/同模式），成功则直接渲染当前卡，返回是否恢复成功 */
+async function resumeSession() {
+    const s = getSession();
+    if (!s || s.date !== dayStr(0) || s.deck !== getStudyDeck() || s.mode !== getStudyMode()) return false;
+    if (!Array.isArray(s.words) || !s.words.length || (s.cur || 0) >= s.words.length) return false;
+    const byWord = {};
+    for (const v of await vocabByDeck(getStudyDeck())) byWord[v.word] = v;
+    const q = [];
+    for (const w of s.words) { if (byWord[w]) q.push(byWord[w]); }
+    if (!q.length || (s.cur || 0) >= q.length) return false;
+    queue = q; cur = Math.min(s.cur || 0, q.length); done = s.done || 0; flipped = false; history = [];
+    deckStat = await deckStats(getStudyDeck());
+    renderCard();
+    return true;
 }
 
 async function renderCard() {
@@ -177,12 +238,21 @@ async function renderCard() {
     const wsafe = esc(v.word).replace(/'/g, "\\'");
     // 结构固定：卡片头(单词)常驻顶部 + 释义区高度预留 + 底部操作条常驻，
     // 翻面只是在预留区内淡入内容，卡片外高不变 → 判定/翻面均无页面跳动。
+    const ds = deckStat ? `<div class="deck-stat-bar">
+            <span class="dsb-item">共 <b>${deckStat.total}</b></span>
+            <span class="dsb-item is-new">新词 <b>${deckStat.newCount}</b></span>
+            <span class="dsb-item is-learning">学习中 <b>${deckStat.learning}</b></span>
+            <span class="dsb-item is-mastered">已掌握 <b>${deckStat.mastered}</b></span>
+            <span class="dsb-item is-due">今日待复习 <b>${deckStat.dueToday}</b></span>
+        </div>` : '';
     root.innerHTML = `
+        ${ds}
         <div class="study-bar">
             <div class="sb-stat"><b>${done}</b> 已背</div>
             <div class="sb-stat"><b>${remain}</b> 剩余</div>
             <div class="sb-prog"><span style="width:${queue.length ? (cur / queue.length * 100) : 0}%"></span></div>
             <button class="sb-btn" onclick="undo()" ${history.length ? '' : 'disabled'} title="撤销上一次判定">↶ 回退</button>
+            <button class="sb-btn" onclick="start(false)" title="重新开始本轮">⟳ 重开</button>
             <button class="sb-btn" onclick="editPlan()" title="设置每日新词量">📅 每日 ${getDailyPlan()}</button>
         </div>
         <div class="flashcard" id="flashcard" onclick="onFlip()">
@@ -207,11 +277,12 @@ async function renderCard() {
     if (c) {
         c.innerHTML = `
             <div class="fc-meaning">${renderMeaning(v.meaning)}</div>
+            ${typeof freqBadge === 'function' ? freqBadge(v.word) : ''}
             ${ex ? `<div class="fc-example">
                 <div class="fe-en">${highlightExample(ex.en, v.word)}</div>
                 <div class="fe-cn">${esc(ex.cn)}</div>
             </div>` : ''}
-            <div class="fc-src"><a href="article.html?id=${esc(v.article_id || '')}#${esc(v.sentence_id || '')}" onclick="event.stopPropagation()">查看原文语境 →</a></div>`;
+            <div class="fc-src"><a href="article.html?id=${esc(v.article_id || '')}#${esc(v.sentence_id || '')}" target="_blank" onclick="event.stopPropagation()">查看原文语境 →</a></div>`;
     }
 }
 
@@ -241,6 +312,7 @@ async function judge(known) {
     done++;
     if (!known) queue.push({ ...v });   // 不认识：本轮末尾再来一次
     cur++;
+    saveSession();
     renderCard();
 }
 
@@ -258,6 +330,7 @@ async function undo() {
         await dbPut('vocab', rec);
         if (queue[cur] && queue[cur].word === h.word) queue[cur].srs = rec.srs;
     }
+    saveSession();
     renderCard();
 }
 
@@ -282,6 +355,7 @@ function editPlan() {
 }
 
 function renderDone() {
+    clearSession();
     document.getElementById('studyRoot').innerHTML = `<div class="study-empty">
         <div class="se-emoji">✅</div>
         <p>本轮完成，共判定 ${done} 次！</p>
@@ -302,10 +376,12 @@ document.addEventListener('keydown', (e) => {
 // ============ 初始化 ============
 async function init() {
     await migrateVocabDecks();
+    if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } }
     // 若来自单词本「背这本 →」，URL 带 deck 参数则切换背词范围
     const qDeck = new URLSearchParams(location.search).get('deck');
-    if (qDeck && (qDeck === '__all__' || getDeck(qDeck))) setStudyDeck(qDeck);
+    if (qDeck && (qDeck === '__all__' || getDeck(qDeck))) { setStudyDeck(qDeck); clearSession(); }
     await renderDeckBar();
+    if (await resumeSession()) return;   // 有未完成本轮先续存
     await start(false);
 }
 

@@ -104,6 +104,8 @@ async function init() {
     await loadDict();
     // 词组词典：失败静默降级为无词组高亮
     await loadPhrases();
+    // 真题考频：失败静默降级为不显示徽标
+    if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } }
 
     renderModeSwitch();
     renderHardSwitch();
@@ -183,8 +185,7 @@ function annotate(s) {
     const html = segs.map(seg => {
         if (seg.wi !== undefined) {
             const w = s.words[seg.wi];
-            const inV = vocabSet.has(w.w);
-            return `<span class="word ${inV ? 'in-vocab' : ''}" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
+            return `<span class="word" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
         }
         // 纯文本段：先试词组扫描，其余回落难词/空格/转义
         return annotatePhrases(seg.text, s.id);
@@ -202,12 +203,9 @@ function annotatePlain(text, sid) {
             out += `<span class="blank" id="blank-${m[1]}" onclick="onBlankClick(event,${m[1]})">[${m[1]}]</span>`;
         } else {
             const tok = m[0];
-            if (dictLookup(tok)) {
-                const inV = vocabSet.has(tok);
-                out += `<span class="word dict-hard ${inV ? 'in-vocab' : ''}" data-w="${esc(tok)}" onclick="onDictWordClick(event,'${sid}')">${esc(tok)}</span>`;
-            } else {
-                out += esc(tok);
-            }
+            // 全部单词可点：词典命中标 dict-hard（参与「高亮难词」），未命中标 plain（点开显「无离线释义」）
+            const cls = dictLookup(tok) ? 'word dict-hard' : 'word plain';
+            out += `<span class="${cls}" data-w="${esc(tok)}" onclick="onDictWordClick(event,'${sid}')">${esc(tok)}</span>`;
         }
         last = m.index + m[0].length;
     }
@@ -246,8 +244,7 @@ function annotatePhrases(text, sid) {
             const n = matched.tokens.length;
             const segStart = toks[i].s, segEnd = toks[i + n - 1].e;
             out += annotatePlain(text.slice(last, segStart), sid);
-            const inV = vocabSet.has(matched.key);
-            out += `<span class="word phrase dict-hard ${inV ? 'in-vocab' : ''}" data-w="${esc(matched.key)}" onclick="onPhraseClick(event,'${sid}')">${esc(text.slice(segStart, segEnd))}</span>`;
+            out += `<span class="word phrase dict-hard" data-w="${esc(matched.key)}" onclick="onPhraseClick(event,'${sid}')">${esc(text.slice(segStart, segEnd))}</span>`;
             last = segEnd;
             i += n;
         } else {
@@ -318,20 +315,21 @@ function onWordClick(e, sid, wi) {
     openPop(e.target, `
         <span class="wp-word">${esc(w.w)}</span><span class="wp-phonetic">${esc(w.phonetic || '')}</span>
         <div class="wp-meaning">${esc(w.meaning || '')}</div>
+        ${typeof freqBadge === 'function' ? freqBadge(w.w) : ''}
         <button class="${inV ? 'added' : ''}" onclick="onAddVocab(this,'${sid}',${wi})">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
 }
 
-/** 词典难词：未预标注词，词形取自 data-w，释义走 dictLookup */
+/** 词典难词：未预标注词，词形取自 data-w，释义走 dictLookup（未命中显「无离线释义」，仍可加入生词本） */
 function onDictWordClick(e, sid) {
     e.stopPropagation();
     const el = e.currentTarget;
     const word = el.getAttribute('data-w');
     const entry = dictLookup(word);
-    if (!entry) return;
     const inV = vocabSet.has(word);
     openPop(el, `
-        <span class="wp-word">${esc(word)}</span><span class="wp-phonetic">${esc(entry.p || '')}</span>
-        <div class="wp-meaning">${esc(entry.t || '')}</div>
+        <span class="wp-word">${esc(word)}</span><span class="wp-phonetic">${esc(entry ? entry.p || '' : '')}</span>
+        <div class="wp-meaning">${entry ? esc(entry.t || '') : '（无离线释义）'}</div>
+        ${typeof freqBadge === 'function' ? freqBadge(word) : ''}
         <button class="${inV ? 'added' : ''}" data-w="${esc(word)}" data-sid="${esc(sid)}" onclick="onAddDictVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
 }
 
@@ -386,6 +384,7 @@ function onPhraseClick(e, sid) {
     openPop(el, `
         <span class="wp-word">${esc(key)}</span>
         <div class="wp-meaning">${esc(meaning)}</div>
+        ${typeof freqBadge === 'function' ? freqBadge(key) : ''}
         <button class="${inV ? 'added' : ''}" data-w="${esc(key)}" data-sid="${esc(sid)}" onclick="onAddPhraseVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
 }
 

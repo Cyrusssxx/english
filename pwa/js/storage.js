@@ -290,6 +290,21 @@ async function deckCounts() {
     return counts;
 }
 
+/** 某词书学习统计（基于 vocab.srs）：
+ *  total 总数 / newCount 未学 / learning 学习中 / mastered 已掌握(interval≥21天) / dueToday 今日待复习 */
+async function deckStats(deckId) {
+    const all = await vocabByDeck(deckId);
+    const today = new Date().toISOString().slice(0, 10);
+    let newCount = 0, learning = 0, mastered = 0, dueToday = 0;
+    for (const v of all) {
+        const s = v.srs;
+        if (!s) { newCount++; continue; }
+        if ((s.interval || 0) >= 21) mastered++; else learning++;
+        if (s.due && s.due <= today) dueToday++;
+    }
+    return { total: all.length, newCount, learning, mastered, dueToday };
+}
+
 /** 句子收藏切换，返回收藏后状态 */
 async function toggleFavSentence(sent, articleId) {
     const existing = await dbGet('fav_sentences', sent.id);

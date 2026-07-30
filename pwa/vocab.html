@@ -42,6 +42,7 @@
     </main>
     <script src="js/common.js"></script>
     <script src="js/storage.js"></script>
+    <script src="js/dict.js"></script>
     <script>
         function dayStr(offset = 0) {
             const d = new Date();
@@ -49,6 +50,8 @@
             return d.toISOString().slice(0, 10);
         }
         let viewDeck = '__all__';   // 当前查看的词书（__all__ = 全部）
+        const PAGE = 60;            // 分页：每次渲染 60 张卡片，避免大词书全量塞 DOM 卡顿
+        let curRows = [], shown = 0, curCta = '';
 
         async function renderAll() {
             await renderDeckBar();
@@ -88,27 +91,38 @@
                 }
                 tb.innerHTML = btns;
             }
+            // 词书迷你进度（收藏视图无该概念，跳过）
+            if (viewDeck !== '__fav__') {
+                const st = await deckStats(viewDeck);
+                tb.innerHTML += `<div class="deck-mini-stat">新词 <b>${st.newCount}</b> · 学习中 <b>${st.learning}</b> · 已掌握 <b>${st.mastered}</b> · 今日待复习 <b>${st.dueToday}</b></div>`;
+            }
         }
 
         async function renderList() {
             const src = viewDeck === '__fav__'
                 ? (await dbAll('vocab')).filter(v => v.fav)
                 : await vocabByDeck(viewDeck);
-            const rows = src.sort((a, b) => (b.added_at || '').localeCompare(a.added_at || ''));
-            document.getElementById('vocabCount').textContent = rows.length ? `共 ${rows.length} 个词/词组` : '';
-            if (!rows.length) {
+            curRows = src.sort((a, b) => (b.added_at || '').localeCompare(a.added_at || ''));
+            document.getElementById('vocabCount').textContent = curRows.length ? `共 ${curRows.length} 个词/词组` : '';
+            if (!curRows.length) {
                 document.getElementById('vocabList').innerHTML = viewDeck === '__fav__'
                     ? '<div class="empty">还没有收藏的词。背单词时或在此点词卡右上角 ☆ 收藏。</div>'
                     : '<div class="empty">这本词书还没有词。精读时点下划线词加入，或用「记录生词」「导入词书」批量添加。</div>';
                 return;
             }
             const today = dayStr(0);
-            const due = rows.filter(v => !v.srs || (v.srs.due && v.srs.due <= today)).length;
+            const due = curRows.filter(v => !v.srs || (v.srs.due && v.srs.due <= today)).length;
             const cta = due
                 ? `<div class="sc-main"><b>今日待背 ${due} 个词</b><div class="sc-sub">单词卡 · 间隔重复 · 可离线</div></div><span class="sc-go">开始背单词 →</span>`
                 : `<div class="sc-main"><b>今日待背已清空 🎉</b><div class="sc-sub">可点入提前背未到期的词</div></div><span class="sc-go">去背单词 →</span>`;
-            const ctaHtml = viewDeck === '__fav__' ? '' : `<a class="study-cta" href="study.html?deck=${esc(viewDeck)}">${cta}</a>`;
-            document.getElementById('vocabList').innerHTML = ctaHtml + rows.map(v => `
+            curCta = viewDeck === '__fav__' ? '' : `<a class="study-cta" href="study.html?deck=${esc(viewDeck)}">${cta}</a>`;
+            shown = 0;
+            renderPage();
+        }
+
+        /** 生成单张词卡 HTML */
+        function cardHtml(v) {
+            return `
                 <div class="item-card">
                     <div class="ic-head">
                         <span><span class="ic-word">${esc(v.word)}</span>
@@ -116,6 +130,7 @@
                         <button class="ic-fav ${v.fav ? 'on' : ''}" onclick="toggleFav('${esc(v.word).replace(/'/g, "\\'")}')" title="收藏">${v.fav ? '★' : '☆'}</button>
                     </div>
                     <div class="ic-meaning">${esc(v.meaning || '')}</div>
+                    ${typeof freqBadge === 'function' ? freqBadge(v.word) : ''}
                     <div class="ic-foot">
                         <span>${esc(v.added_at || '')}</span>
                         <span class="ic-actions">
@@ -123,8 +138,29 @@
                             <button class="del" onclick="del('${esc(v.word).replace(/'/g, "\\'")}')">删除</button>
                         </span>
                     </div>
-                </div>`).join('');
+                </div>`;
         }
+
+        /** 分页渲染：首页整体写入，后续「加载更多」仅追加，不重绘已渲染项 */
+        function renderPage() {
+            const next = curRows.slice(shown, shown + PAGE);
+            const first = shown === 0;
+            shown += next.length;
+            const cardsHtml = next.map(cardHtml).join('');
+            const remain = curRows.length - shown;
+            const moreBtn = remain > 0
+                ? `<button class="load-more" onclick="loadMore()">加载更多（剩 ${remain}）</button>`
+                : '';
+            if (first) {
+                document.getElementById('vocabList').innerHTML =
+                    curCta + `<div id="vocabItems">${cardsHtml}</div><div id="loadMoreWrap">${moreBtn}</div>`;
+            } else {
+                document.getElementById('vocabItems').insertAdjacentHTML('beforeend', cardsHtml);
+                document.getElementById('loadMoreWrap').innerHTML = moreBtn;
+            }
+        }
+
+        function loadMore() { renderPage(); }
 
         function selectView(id) { viewDeck = id; renderAll(); }
 
@@ -240,7 +276,7 @@
             }
         }
 
-        (async () => { await migrateVocabDecks(); await renderAll(); })();
+        (async () => { await migrateVocabDecks(); if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } } await renderAll(); })();
     </script>
 </body>
 </html>

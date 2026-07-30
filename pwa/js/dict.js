@@ -88,3 +88,40 @@ function maxPhraseWords() {
     return _maxPhraseWords;
 }
 
+/* ── 真题考频：一次 fetch data/freq.json，供弹卡/背词卡/单词本显示「出现 N 次」。 ── */
+let _freq = null;   // { "词/词组key": {c:次数, a:文章数} }
+
+/** 加载考频（只发一次 fetch）。失败静默降级为空，不显示徽标。 */
+async function loadFreq() {
+    if (_freq) return _freq;
+    try {
+        const res = await fetch('data/freq.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        _freq = await res.json();
+    } catch (e) {
+        _freq = {};
+        console.warn('[dict] 考频加载失败，降级为不显示徽标：', e.message);
+    }
+    return _freq;
+}
+
+/** 查考频：单词按 normWord + forms 还原归一，词组按小写 key。命中返回 {c,a}，否则 null。 */
+function freqLookup(word) {
+    if (!_freq) return null;
+    const raw = String(word || '').toLowerCase().trim();
+    if (_freq[raw]) return _freq[raw];   // 词组 key（含空格）直接命中
+    const w = normWord(word);
+    if (!w) return null;
+    if (_freq[w]) return _freq[w];
+    const base = _dict && _dict.forms && _dict.forms[w];
+    if (base && _freq[base]) return _freq[base];
+    return null;
+}
+
+/** 生成考频徽标 HTML（供各弹卡/卡片复用）；无数据返回空串，绝不编造。 */
+function freqBadge(word) {
+    const f = freqLookup(word);
+    if (!f || !f.c) return '';
+    return `<span class="wp-freq">真题考频 · 出现 ${f.c} 次（${f.a} 篇）</span>`;
+}
+

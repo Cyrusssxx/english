@@ -1,5 +1,47 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v12] 2026-07-27
+
+### 背单词系统与文章交互整体升级
+
+**A. 单词本卡顿根治（分页渲染）**
+- **`pwa/vocab.html`**：`renderList` 重构为分页渲染——每次只渲染 `PAGE=60` 张词卡，底部「加载更多（剩 N）」按钮 `insertAdjacentHTML` 追加、不重绘已渲染项，避免大词书全量塞 DOM 卡顿。
+- **`pwa/css/style.css`**：新增 `.load-more` 虚线按钮样式。
+
+**B. 背单词新词/复习分离（三模式）**
+- **`pwa/js/study.js`**：新增 `getStudyMode/setStudyMode`（存 `localStorage.en2_studyMode`）与顶部 `.mode-switch` 切换——`mix` 复习优先（到期复习+当日新词，默认）/ `review` 只复习到期词 / `new` 只学新词；`buildQueue` 由 `(includeAll)` 改为 `(mode, includeFuture)`，按模式构建队列并返回 `future` 计数；空态文案按模式区分，仅有未到期词时才给「提前背」入口。
+- **`pwa/css/style.css`**：新增 `.mode-switch` / `.mode-btn` 样式。
+
+**C. 进度不重置（会话续存）**
+- **`pwa/js/study.js`**：新增 `getSession/saveSession/clearSession`（存 `localStorage.en2_studySession`：日期/词书/模式/词表/光标/已背）；`judge`、`undo` 后写入会话，`renderDone` 与切模式/切词书/重开时清空会话；`init` 新增 `resumeSession()`——同日/同词书/同模式且未完成则从当前词书重建队列续存，跨页返回不再进度归零。
+- **查看原文改新开页**：背词卡「查看原文语境 →」链接加 `target="_blank"`，不打断当前背词进度。
+
+**D. 学习统计**
+- **`pwa/js/storage.js`**：新增 `deckStats(deckId)`，返回 `{total, newCount, learning, mastered, dueToday}`（新=无 srs、已掌握=interval≥21、其余为学习中、到期=due≤今日；自包含今日计算不依赖 dayStr）。
+- **`pwa/js/study.js`**：`start`/`resumeSession` 计算 `deckStat`，背词卡顶部新增统计条（共/新词/学习中/已掌握/今日待复习）。
+- **`pwa/vocab.html`**：词书工具栏新增迷你进度行。
+- **`pwa/css/style.css`**：新增 `.deck-stat-bar` / `.deck-mini-stat` 样式。
+
+**E. 真题考频「出现 N 次」**
+- **`tools/build_freq.py`**（新增）：离线遍历 16 年题库 `sentences[].en`，单词经 `dict.json` `forms` 归一、词组复用 `phrases.json` key 最长优先非重叠匹配（与运行时 `annotatePhrases` 同口径），产出 `pwa/data/freq.json`（`{key:{c:次数, a:文章数}}`，6473 键 / 171KB）。
+- **`pwa/js/dict.js`**：新增 `loadFreq/freqLookup/freqBadge`——三级查找（原始小写→`normWord`→`forms` 变形还原），生成「真题考频 · 出现 N 次（M 篇）」徽标。
+- **接入各弹卡**：文章弹卡（预标注词/词典难词/词组）、背词卡背面、单词本词卡均显示考频徽标；`study.html` 补加载 `js/dict.js`，`vocab.html`/`article.js` 初始化调用 `loadFreq`（失败静默降级不显示徽标）。
+- **`pwa/css/style.css`**：新增 `.wp-freq` 徽标样式。
+
+**F. 文章全部可点 + 仅生词本高亮 + 上下文义**
+- **`pwa/js/article.js`**：`annotatePlain` 让每个单词 token 都可点——词典命中标 `dict-hard`，未命中标 `plain`（点开显「（无离线释义）」，仍可加入生词本）。
+- **`pwa/css/style.css`**：`.word` 去掉常驻虚线下划线改为 hover 才提示；`.in-vocab` 保留琥珀高亮；`show-hard` 高亮改为 `.word:not(.plain)`（普通词不参与）。
+
+**G. 记忆算法升级（学习步 + 状态机）**
+- **`pwa/js/study.js`**：`grade()` 新增 `state` 字段（`new`→`learning`→`review`）——新词首次认识 1 天、二次 3 天，之后 ×ease；不认识回 `learning`、1 天后重来，避免新词一次就被拉到长间隔。
+
+- **`pwa/sw.js`**：`PRECACHE` 新增 `data/freq.json`；`CACHE_VER` `en2-v11` → `en2-v12`。
+- **验证**：全部 JS `node --check` 通过；`tools/validate.py` 16 文件 0 警告 0 错误。
+
+### 文章页：取消生词本词的常驻高亮
+- **不再自动高亮**：`article.js` 三处标注（预标注词 `annotate`、词典难词 / 词组 `annotatePlain` / `annotatePhrases`）渲染时不再根据 `vocabSet` 加 `.in-vocab` 类，避免生词本里的词/词组在所有（含未学过的）文章里被琥珀底色高亮。单词仍可点查释义、加入/移出生词本的交互不变。
+- **`pwa/sw.js`**：`CACHE_VER` `en2-v11` → `en2-v12`。
+
 ## [en2-v11] 2026-07-27
 
 ### 背单词：回退（防误点） + 每日计划 + 单词收藏
