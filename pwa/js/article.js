@@ -350,9 +350,6 @@ async function onAddVocab(btn, sid, wi) {
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
     }
-    // 同步正文中该词的下划线样式
-    document.querySelectorAll(`.word[data-w="${CSS.escape(w.w)}"]`)
-        .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(w.w)));
 }
 
 /** 词典难词加入/移出生词本（词形与释义来自 data-* + dictLookup） */
@@ -372,8 +369,6 @@ async function onAddDictVocab(btn) {
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
     }
-    document.querySelectorAll(`.word[data-w="${CSS.escape(word)}"]`)
-        .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(word)));
 }
 
 /** 词组下划线点击：phraseLookup 取释义 → 弹卡（含加入生词本） */
@@ -408,8 +403,6 @@ async function onAddPhraseVocab(btn) {
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
     }
-    document.querySelectorAll(`.word[data-w="${CSS.escape(key)}"]`)
-        .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(key)));
 }
 
 /** 一键记录：本篇所有词典命中且尚未收录的难词 → 批量加入当前词书 */
@@ -438,8 +431,6 @@ async function recordArticleWords() {
     if (!confirm(`将本篇 ${items.length} 个较难词加入「${dname}」？`)) return;
     const added = await addWordsBulk(items, getActiveDeck());
     vocabSet = new Set((await dbAll('vocab')).map(v => v.word));
-    document.querySelectorAll('.word[data-w]')
-        .forEach(el => el.classList.toggle('in-vocab', vocabSet.has(el.getAttribute('data-w'))));
     alert(`已加入「${dname}」${added} 个词`);
 }
 

@@ -10,8 +10,11 @@ tools/extracted/
 # book OCR decks & extraction scripts (local only, not published)
 pwa/data/deck_tc_phrases.json
 pwa/data/deck_tc_senses.json
+pwa/data/deck_tc_phrases_clean.json
+pwa/data/deck_tc_senses_clean.json
 tools/ocr_kb.py
 tools/build_tc_decks.py
+tools/clean_tc_decks.py
 tools/__pycache__/
 
 # 系统文件
