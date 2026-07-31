@@ -1,5 +1,13 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v25] 2026-07-27
+
+### 新增浏览器标签页图标（favicon）
+
+- **`pwa/icons/favicon.svg`**：新建矢量 favicon，teal（`#14b8a6→#0f766e`）圆角底 + 白色“英”字 + 右上角金色上标“2”，与主题色一致，小尺寸也清晰。
+- **5 个页面（index/article/vocab/favorites/study.html）**：head 补上 `<link rel="icon">`（SVG 优先，PNG 降级），修复标签页无图标问题。
+- **`pwa/sw.js`**：PRECACHE 加入 `icons/favicon.svg`；CACHE_VER 升 `en2-v25`。
+
 ## [en2-v24] 2026-07-27
 
 ### 真题逐句译文改用官方解析译文（2019–2025 全量重跑，收尾）
