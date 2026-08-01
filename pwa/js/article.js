@@ -160,14 +160,14 @@ function sentenceHtml(s) {
 function annotate(s) {
     const words = (s.words || []).map((w, i) => ({ ...w, _i: i }));
     words.sort((a, b) => b.w.length - a.w.length);
-    // 分段结构：{text} 为纯文本段，{text, wi} 为已命中的词段
+    // 分段结构：{text} 为纯文本段，{text, wi} 为已命中的预标注词段，{text, dictFallback, word} 为词典兜底段
     let segs = [{ text: s.en }];
     const missed = [];
     for (const w of words) {
         let hit = false;
         for (let i = 0; i < segs.length; i++) {
             const seg = segs[i];
-            if (seg.wi !== undefined) continue;
+            if (seg.wi !== undefined || seg.dictFallback) continue;
             const pos = findWord(seg.text, w.w);
             if (pos < 0) continue;
             const before = seg.text.slice(0, pos);
@@ -183,10 +183,34 @@ function annotate(s) {
         }
         if (!hit) missed.push(w);
     }
+    // 🔑 兜底：missed 词中词典命中的，在纯文本段中标为可点（dictFallback），并从 missed 移除
+    for (const w of missed) {
+        if (!dictLookup(w.w)) continue;
+        for (let i = 0; i < segs.length; i++) {
+            const seg = segs[i];
+            if (seg.wi !== undefined || seg.dictFallback) continue;
+            const pos = findWord(seg.text, w.w);
+            if (pos < 0) continue;
+            const before = seg.text.slice(0, pos);
+            const after = seg.text.slice(pos + w.w.length);
+            const mid = { text: seg.text.slice(pos, pos + w.w.length), dictFallback: true, word: w };
+            const repl = [];
+            if (before) repl.push({ text: before });
+            repl.push(mid);
+            if (after) repl.push({ text: after });
+            segs.splice(i, 1, ...repl);
+            missed.splice(missed.indexOf(w), 1);
+            break;
+        }
+    }
     const html = segs.map(seg => {
         if (seg.wi !== undefined) {
             const w = s.words[seg.wi];
             return `<span class="word" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
+        }
+        if (seg.dictFallback) {
+            const w = seg.word;
+            return `<span class="word dict-hard" data-w="${esc(w.w)}" onclick="onDictWordClick(event,'${s.id}')">${esc(seg.text)}</span>`;
         }
         // 纯文本段：先试词组扫描，其余回落难词/空格/转义
         return annotatePhrases(seg.text, s.id);
@@ -259,11 +283,13 @@ function annotatePhrases(text, sid) {
     return out;
 }
 
-/** 全词匹配（前后均非字母才算命中），返回位置或 -1 */
+/** 全词匹配（大小写不敏感，前后均非字母才算命中），返回位置或 -1 */
 function findWord(text, w) {
+    const lowerText = text.toLowerCase();
+    const lowerW = w.toLowerCase();
     let from = 0;
     while (true) {
-        const pos = text.indexOf(w, from);
+        const pos = lowerText.indexOf(lowerW, from);
         if (pos < 0) return -1;
         const b = pos === 0 ? '' : text[pos - 1];
         const a = pos + w.length >= text.length ? '' : text[pos + w.length];
