@@ -463,13 +463,13 @@ html.dark .word.in-vocab {
     text-underline-offset: 4px;
 }
 
-/* 「高亮难词」开关打开：仅预标注词/词典难词/词组统一琥珀底色（简单词已是纯文本，天然不参与） */
-body.show-hard .word {
+/* 「高亮难词」开关打开：仅精选难词（命中 hardwords 集合）加琥珀底色，不再全量高亮词典命中词 */
+body.show-hard .word.hard {
     background: rgba(245, 158, 11, 0.20);
     border-radius: 3px;
 }
 
-html.dark body.show-hard .word {
+html.dark body.show-hard .word.hard {
     background: rgba(245, 158, 11, 0.30);
 }
 

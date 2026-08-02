@@ -37,6 +37,38 @@ function isHardWord(word) {
     return dictLookup(word) !== null;
 }
 
+/* ── 精选难词集合：一次 fetch data/hardwords.json（熟词僻义 + 真题较难词），
+    供精读页「高亮难词」只标真难词/易错词，而非所有词典命中词。 ── */
+let _hard = null;   // Set<小写词/词组>
+
+/** 加载精选难词集合（只发一次 fetch）。失败静默降级为空，不高亮任何词。 */
+async function loadHardwords() {
+    if (_hard) return _hard;
+    try {
+        const res = await fetch('data/hardwords.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        _hard = new Set((data.words || []).map(w => String(w).toLowerCase()));
+    } catch (e) {
+        _hard = new Set();
+        console.warn('[dict] 精选难词集合加载失败，降级为空：', e.message);
+    }
+    return _hard;
+}
+
+/** 是否精选难词（原始小写 → normWord → forms 原形三级命中）。 */
+function isHard(word) {
+    if (!_hard || !_hard.size) return false;
+    const raw = String(word || '').toLowerCase().trim();
+    if (_hard.has(raw)) return true;   // 词组 key / 原样命中
+    const w = normWord(word);
+    if (!w) return false;
+    if (_hard.has(w)) return true;
+    const base = _dict && _dict.forms && _dict.forms[w];
+    if (base && _hard.has(base)) return true;
+    return false;
+}
+
 /* ── 词组词典：一次 fetch data/phrases.json，供精读页「文章词组高亮/翻译」使用。 ── */
 let _phrases = null;        // 扁平映射 { "phrase(小写单空格)": "中文含义" }
 let _phraseIndex = null;    // Map(首词 → [{tokens:[...], key, meaning}]，按 token 数降序)

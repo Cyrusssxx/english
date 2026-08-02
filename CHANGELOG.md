@@ -1,5 +1,29 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v27] 2026-08-02
+
+### 高亮难词收窄为精选集合 + 题目词可点翻译
+
+**精选难词集合（高亮难词不再全量高亮）**
+- **新增** `tools/build_hardwords.py`：合并内置词书「熟词僻义」+「真题高频·较难词」，词条统一小写归一并用 dict.json forms 展开到原形，产出 **`pwa/data/hardwords.json`（2971 词，44.3KB）**。
+- **`pwa/js/dict.js`**：新增 `loadHardwords()`（一次 fetch，失败静默降级为空）+ `isHard(word)`（原始小写 → normWord → forms 原形三级命中）。
+- **`pwa/js/article.js`**：正文渲染时对命中精选集合的词（预标注词/词典难词/词组）加 `hard` 类。此前「高亮难词」把全部 8525 个词典命中词标琥珀（一篇约 170 个），现在只标真难/易错词（抽样一篇降到 ~40-60 个）。
+- **`pwa/css/style.css`**：`body.show-hard` 高亮规则由 `.word` 改为 **`.word.hard`**。
+- **`pwa/sw.js`**：PRECACHE 加入 `data/hardwords.json`；CACHE_VER 升 `en2-v27`。
+
+**题目（题干/选项/选项池）词可点翻译**
+- **`pwa/js/article.js`**：`questionHtml`/选项池渲染改用 `quizTextHtml()`（复用 `annotatePhrases` 管道）——题干与选项里的英文词/词组包成可点 span，点词 `stopPropagation` 只弹释义卡、**不触达答题**；点选项空白/字母处仍正常选答案，二者不冲突。
+- 新增 `resolveExample(sid)`：例句作用域兼容句子 id（正文词）与题目 id（题目词）——题目词取该题 `related_sentences` 首句作例句，无则用题干文本兜底，保证加入生词本有例句。
+- `openPop()` 弹卡增加视口底部防溢出：默认在词下方，超界自动翻到词上方（题目面板底部选项弹卡不再超出屏幕）。
+
+## [en2-v26] 2026-08-01
+
+### 扩充离线词典覆盖（1731 → 8525 词）
+
+- **`pwa/data/dict.json`**：合并 4 本内置词书（真题核心/考纲/形近易混/真题高频）到离线词典，覆盖 209/211 常见测试用例，未命中仅 earning/phone 两个。
+- **`pwa/sw.js`**：CACHE_VER 升 `en2-v26`。
+- 注意：词典扩大后「高亮难词」随之变得过密，已由 en2-v27 引入精选难词集合收敛。
+
 ## [en2-v25] 2026-07-27
 
 ### 新增浏览器标签页图标（favicon）

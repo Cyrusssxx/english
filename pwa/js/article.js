@@ -106,6 +106,8 @@ async function init() {
     await loadPhrases();
     // 真题考频：失败静默降级为不显示徽标
     if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } }
+    // 精选难词集合：失败静默降级为不额外高亮
+    if (typeof loadHardwords === 'function') { try { await loadHardwords(); } catch (e) { /* 精选降级 */ } }
 
     renderModeSwitch();
     renderHardSwitch();
@@ -206,11 +208,13 @@ function annotate(s) {
     const html = segs.map(seg => {
         if (seg.wi !== undefined) {
             const w = s.words[seg.wi];
-            return `<span class="word" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
+            const hard = isHard(w.w) ? ' hard' : '';
+            return `<span class="word${hard}" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
         }
         if (seg.dictFallback) {
             const w = seg.word;
-            return `<span class="word dict-hard" data-w="${esc(w.w)}" onclick="onDictWordClick(event,'${s.id}')">${esc(seg.text)}</span>`;
+            const hard = isHard(w.w) ? ' hard' : '';
+            return `<span class="word dict-hard${hard}" data-w="${esc(w.w)}" onclick="onDictWordClick(event,'${s.id}')">${esc(seg.text)}</span>`;
         }
         // 纯文本段：先试词组扫描，其余回落难词/空格/转义
         return annotatePhrases(seg.text, s.id);
@@ -230,7 +234,8 @@ function annotatePlain(text, sid) {
             const tok = m[0];
             // 词典命中→可点难词（有离线释义）；未命中即简单词→纯文本、不可点
             if (dictLookup(tok)) {
-                out += `<span class="word dict-hard" data-w="${esc(tok)}" onclick="onDictWordClick(event,'${sid}')">${esc(tok)}</span>`;
+                const hard = isHard(tok) ? ' hard' : '';
+                out += `<span class="word dict-hard${hard}" data-w="${esc(tok)}" onclick="onDictWordClick(event,'${sid}')">${esc(tok)}</span>`;
             } else {
                 out += esc(tok);
             }
@@ -272,7 +277,8 @@ function annotatePhrases(text, sid) {
             const n = matched.tokens.length;
             const segStart = toks[i].s, segEnd = toks[i + n - 1].e;
             out += annotatePlain(text.slice(last, segStart), sid);
-            out += `<span class="word phrase dict-hard" data-w="${esc(matched.key)}" onclick="onPhraseClick(event,'${sid}')">${esc(text.slice(segStart, segEnd))}</span>`;
+            const hard = isHard(matched.key) ? ' hard' : '';
+            out += `<span class="word phrase dict-hard${hard}" data-w="${esc(matched.key)}" onclick="onPhraseClick(event,'${sid}')">${esc(text.slice(segStart, segEnd))}</span>`;
             last = segEnd;
             i += n;
         } else {
@@ -318,7 +324,7 @@ async function onFav(e, sid) {
 }
 
 // ============ 释义弹卡 ============
-/** 建卡 + 右缘防溢出定位（预标注词与词典词共用） */
+/** 建卡 + 视口右/下缘防溢出定位（正文与题目词共用） */
 function openPop(targetEl, innerHtml) {
     closePop();
     popEl = document.createElement('div');
@@ -327,12 +333,18 @@ function openPop(targetEl, innerHtml) {
     document.body.appendChild(popEl);
     const r = targetEl.getBoundingClientRect();
     const pw = popEl.offsetWidth;
+    const ph = popEl.offsetHeight;
     let left = r.left + window.scrollX;
     if (left + pw > window.scrollX + document.documentElement.clientWidth - 12) {
         left = window.scrollX + document.documentElement.clientWidth - pw - 12;
     }
+    // 默认在词下方；若溢出视口底部则翻到词上方
+    let top = r.bottom + window.scrollY + 6;
+    if (top + ph > window.scrollY + document.documentElement.clientHeight - 12) {
+        top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
+    }
     popEl.style.left = left + 'px';
-    popEl.style.top = (r.bottom + window.scrollY + 6) + 'px';
+    popEl.style.top = top + 'px';
 }
 
 /** 预标注词：手写释义优先（wi>=0 原路径） */
@@ -381,19 +393,19 @@ async function onAddVocab(btn, sid, wi) {
     }
 }
 
-/** 词典难词加入/移出生词本（词形与释义来自 data-* + dictLookup） */
+/** 词典难词加入/移出生词本（词形与释义来自 data-* + dictLookup，例句按 sid 作用域解析） */
 async function onAddDictVocab(btn) {
     const word = btn.getAttribute('data-w');
     const sid = btn.getAttribute('data-sid');
     const entry = dictLookup(word);
-    const sent = article.sentences.find(x => x.id === sid) || {};
+    const ex = resolveExample(sid);
     if (vocabSet.has(word)) {
         await dbDelete('vocab', word);
         vocabSet.delete(word);
         btn.textContent = '+ 加入生词本';
         btn.classList.remove('added');
     } else {
-        await addVocab(word, entry ? entry.t : '', entry ? entry.p : '', sid, AID, sent.en || '', sent.cn || '');
+        await addVocab(word, entry ? entry.t : '', entry ? entry.p : '', sid, AID, ex.en, ex.cn);
         vocabSet.add(word);
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
@@ -416,19 +428,19 @@ function onPhraseClick(e, sid) {
         <button class="${inV ? 'added' : ''}" data-w="${esc(key)}" data-sid="${esc(sid)}" onclick="onAddPhraseVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
 }
 
-/** 词组加入/移出生词本（word=词组 key，meaning=phraseLookup） */
+/** 词组加入/移出生词本（word=词组 key，meaning=phraseLookup，例句按 sid 作用域解析） */
 async function onAddPhraseVocab(btn) {
     const key = btn.getAttribute('data-w');
     const sid = btn.getAttribute('data-sid');
     const meaning = phraseLookup(key) || '';
-    const sent = article.sentences.find(x => x.id === sid) || {};
+    const ex = resolveExample(sid);
     if (vocabSet.has(key)) {
         await dbDelete('vocab', key);
         vocabSet.delete(key);
         btn.textContent = '+ 加入生词本';
         btn.classList.remove('added');
     } else {
-        await addVocab(key, meaning, '', sid, AID, sent.en || '', sent.cn || '');
+        await addVocab(key, meaning, '', sid, AID, ex.en, ex.cn);
         vocabSet.add(key);
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
@@ -468,6 +480,22 @@ function closePop() {
     if (popEl) { popEl.remove(); popEl = null; }
 }
 
+/** 解析例句作用域：sid 可能是句子 id（正文词）或题目 id（题目词）。
+ *  句子直接取；题目取 related_sentences 首句，无则用题干/选项文本兜底。 */
+function resolveExample(sid) {
+    const sent = article.sentences.find(x => x.id === sid);
+    if (sent) return { en: sent.en || '', cn: sent.cn || '' };
+    const q = (article.questions || []).find(x => x.id === sid);
+    if (q) {
+        for (const rs of q.related_sentences || []) {
+            const rsSent = article.sentences.find(x => x.id === rs);
+            if (rsSent) return { en: rsSent.en || '', cn: rsSent.cn || '' };
+        }
+        return { en: q.stem || '', cn: q.stem_cn || '' };
+    }
+    return { en: '', cn: '' };
+}
+
 document.addEventListener('click', (e) => {
     if (popEl && !e.target.closest('.word-pop') && !e.target.closest('.word')) closePop();
 });
@@ -484,7 +512,7 @@ function renderQuiz() {
     // 新题型：共享选项池
     if (article.pool) {
         html += '<div class="pool-box"><b>选项池</b>' + Object.entries(article.pool).map(([k, v]) =>
-            `<div class="pool-item">[${k}] ${esc(v)}${article.pool_cn && article.pool_cn[k] ? `<br><small style="color:var(--text-light)">${esc(article.pool_cn[k])}</small>` : ''}</div>`).join('') + '</div>';
+            `<div class="pool-item">[${k}] ${quizTextHtml(v, '')}${article.pool_cn && article.pool_cn[k] ? `<br><small style="color:var(--text-light)">${esc(article.pool_cn[k])}</small>` : ''}</div>`).join('') + '</div>';
     }
     for (const q of qs) html += questionHtml(q);
     scroll.innerHTML = html;
@@ -514,15 +542,20 @@ function questionHtml(q) {
     const optsCn = q.options_cn || article.pool_cn || {};
     return `<div class="qblock" id="q-${q.id}">
         <div class="q-head"><span class="q-no">Q${q.number}</span>${q.qtype ? `<span class="q-type-badge">${esc(q.qtype)}</span>` : ''}</div>
-        <div class="q-stem">${esc(q.stem || '')}</div>
+        <div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
         ${q.stem_cn ? `<div class="q-stem-cn">${esc(q.stem_cn)}</div>` : ''}
         ${Object.keys(opts).map(k => `
         <div class="q-opt" id="opt-${q.id}-${k}" onclick="onPick('${q.id}','${k}')">
-            <div class="opt-en">${k}. ${esc(opts[k])}</div>
+            <div class="opt-en">${k}. ${quizTextHtml(opts[k], q.id)}</div>
             ${optsCn[k] ? `<div class="opt-cn">${esc(optsCn[k])}</div>` : ''}
         </div>`).join('')}
         <div id="expl-${q.id}"></div>
     </div>`;
+}
+
+/** 题目文本渲染：英文词/词组可点查释义（点词 stopPropagation 不触达答题，点空白/字母处仍选答案） */
+function quizTextHtml(text, sid) {
+    return annotatePhrases(text, sid);
 }
 
 async function onPick(qid, key) {
