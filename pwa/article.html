@@ -17,6 +17,8 @@
         <div class="nav-container">
             <a href="index.html" class="nav-brand" title="返回列表">‹ <span id="navTitle">精读</span></a>
             <div class="nav-tools">
+                <input class="nav-search" id="navSearch" type="search" placeholder="查词" title="输入单词/词组后回车查释义"
+                    onkeydown="if(event.key==='Enter')navLookup()">
                 <span class="nav-timer" id="navTimer" title="今日学习时长">⏱ 00:00:00</span>
                 <button class="nav-switch" id="cnAllSwitch" onclick="toggleCnAll()" title="展开/收起全部译文">
                     全文翻译 <span class="switch-state" id="cnAllState">关</span>
@@ -25,7 +27,7 @@
                     高亮难词 <span class="switch-state" id="hardState">关</span>
                 </button>
                 <button class="nav-switch" id="recordBtn" onclick="recordArticleWords()" title="把本篇较难词一键加入当前词书">记录生词</button>
-                <button class="nav-switch" id="studyBtn" onclick="location.href='study.html'" title="打开背单词卡片页">记单词</button>
+                <button class="nav-switch" id="studyBtn" onclick="window.open('study.html')" title="在新标签页打开背单词卡片页">记单词</button>
                 <button class="nav-switch" id="modeSwitch" onclick="toggleMode()" title="精读：逐句看翻译；做题：显示题目面板">
                     做题 <span class="switch-state" id="modeState">关</span>
                 </button>

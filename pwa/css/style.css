@@ -115,6 +115,32 @@ body {
     white-space: nowrap;
 }
 
+/* 导航栏查词输入框（精读页） */
+.nav-search {
+    width: 72px;
+    padding: 5px 12px;
+    border: 1px solid #c8cdd4;
+    border-radius: 999px;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    outline: none;
+    transition: width .18s, border-color .18s;
+}
+
+.nav-search:focus {
+    width: 130px;
+    border-color: var(--primary);
+}
+
+.nav-search::placeholder {
+    color: var(--text-light);
+}
+
+html.dark .nav-search {
+    border-color: #3a4d4a;
+}
+
 .nav-switch {
     background: none;
     border: 1px solid #c8cdd4;

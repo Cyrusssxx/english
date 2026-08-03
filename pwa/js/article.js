@@ -484,6 +484,32 @@ function closePop() {
     if (popEl) { popEl.remove(); popEl = null; }
 }
 
+/** 导航栏查词：单词走 dictLookup（含词形还原），词组走 phraseLookup；命中弹卡可加生词本 */
+function navLookup() {
+    const inp = document.getElementById('navSearch');
+    const q = (inp.value || '').trim();
+    if (!q) return;
+    const entry = dictLookup(q);
+    const phr = phraseLookup(q);
+    if (!entry && !phr) {
+        openPop(inp, `
+            <span class="wp-word">${esc(q)}</span>
+            <div class="wp-meaning">词典与词组库均未收录</div>`);
+        return;
+    }
+    const word = phr || q;   // 词组命中用词组 key，否则用原文
+    const inV = vocabSet.has(word);
+    const btn = phr
+        ? `<button class="${inV ? 'added' : ''}" data-w="${esc(word)}" data-sid="" onclick="onAddPhraseVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`
+        : `<button class="${inV ? 'added' : ''}" data-w="${esc(word)}" data-sid="" onclick="onAddDictVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`;
+    openPop(inp, `
+        <span class="wp-word">${esc(word)}</span><span class="wp-phonetic">${esc(entry ? entry.p || '' : '')}</span>
+        <div class="wp-meaning">${esc(entry ? entry.t || '' : phr)}</div>
+        ${typeof freqBadge === 'function' ? freqBadge(word) : ''}
+        ${btn}`);
+    inp.select();
+}
+
 /** 解析例句作用域：sid 可能是句子 id（正文词）或题目 id（题目词）。
  *  句子直接取；题目取 related_sentences 首句，无则用题干/选项文本兜底。 */
 function resolveExample(sid) {
