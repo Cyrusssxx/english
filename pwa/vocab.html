@@ -37,6 +37,7 @@
         </div>
         <div class="deck-tabs" id="deckTabs"></div>
         <div class="deck-toolbar" id="deckToolbar"></div>
+        <div class="batch-bar" id="batchBar" hidden></div>
         <input type="file" id="deckImport" accept="application/json,.json" style="display:none" onchange="onImportDeck(this)">
         <div class="item-list" id="vocabList">
             <div class="loading">加载中...</div>
@@ -51,10 +52,19 @@
             d.setDate(d.getDate() + offset);
             return d.toISOString().slice(0, 10);
         }
+        /** 本地日期（added_at 为本地时间，按 YYYY-MM-DD 前缀判断加入日） */
+        function localDayStr(offset = 0) {
+            const d = new Date();
+            d.setDate(d.getDate() + offset);
+            const p = n => String(n).padStart(2, '0');
+            return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+        }
         let viewDeck = '__all__';   // 当前查看的词书（__all__ = 全部）
         const PAGE = 60;            // 分页：每次渲染 60 张卡片，避免大词书全量塞 DOM 卡顿
         let curRows = [], shown = 0, curCta = '';
         let curActive = 'default';   // 当前收藏目标词书（渲染列表时刷新，决定 per-card ★ 亮灭）
+        let batchMode = false;       // 批量删除模式
+        let batchSel = new Set();    // 已勾选的 word
 
         async function renderAll() {
             await renderDeckBar();
@@ -93,6 +103,11 @@
                 }
                 tb.innerHTML = btns;
             }
+            // 批量删除入口：当前视图词数 > 0 时提供
+            if ((counts[viewDeck] || 0) > 0) {
+                tb.insertAdjacentHTML('beforeend',
+                    `<button class="tb-btn danger" onclick="enterBatch()">批量删除</button>`);
+            }
             // 词书迷你进度
             const st = await deckStats(viewDeck);
             tb.innerHTML += `<div class="deck-mini-stat">新词 <b>${st.newCount}</b> · 学习中 <b>${st.learning}</b> · 已掌握 <b>${st.mastered}</b> · 今日待复习 <b>${st.dueToday}</b></div>`;
@@ -112,14 +127,32 @@
             const cta = due
                 ? `<div class="sc-main"><b>今日待背 ${due} 个词</b><div class="sc-sub">单词卡 · 间隔重复 · 可离线</div></div><span class="sc-go">开始背单词 →</span>`
                 : `<div class="sc-main"><b>今日待背已清空 🎉</b><div class="sc-sub">可点入提前背未到期的词</div></div><span class="sc-go">去背单词 →</span>`;
-            curCta = `<a class="study-cta" href="study.html?deck=${esc(viewDeck)}">${cta}</a>`;
+            curCta = batchMode ? '' : `<a class="study-cta" href="study.html?deck=${esc(viewDeck)}">${cta}</a>`;
             shown = 0;
+            renderBatchBar();
             renderPage();
         }
 
         /** 生成单张词卡 HTML */
         function cardHtml(v) {
             const inT = (Array.isArray(v.decks) ? v.decks : ['default']).includes(curActive);
+            if (batchMode) {
+                const on = batchSel.has(v.word);
+                const jw = jsq(v.word);
+                return `
+                <div class="item-card batch ${on ? 'sel' : ''}" data-w="${esc(v.word)}" onclick="toggleBatch('${jw}')">
+                    <div class="ic-check ${on ? 'on' : ''}">${on ? '✓' : ''}</div>
+                    <div class="ic-body">
+                        <div class="ic-head">
+                            <span><span class="ic-word">${esc(v.word)}</span>
+                            <span class="ic-phonetic">${esc(v.phonetic || '')}</span></span>
+                        </div>
+                        <div class="ic-meaning">${esc(v.meaning || '')}</div>
+                        ${typeof freqBadge === 'function' ? freqBadge(v.word) : ''}
+                        <div class="ic-foot"><span>${esc(v.added_at || '')}</span></div>
+                    </div>
+                </div>`;
+            }
             return `
                 <div class="item-card">
                     <div class="ic-head">
@@ -282,6 +315,97 @@
         async function del(word) {
             await dbDelete('vocab', word);
             renderAll();
+        }
+
+        // ============ 批量删除（支持按 今日/昨日 加入 快捷全选） ============
+        /** 内联事件参数转义：单引号转 \'（词/词组里可能有 ' 如 don't） */
+        function jsq(s) { return String(s).replace(/'/g, "\\'"); }
+
+        /** 进入批量删除模式 */
+        function enterBatch() {
+            batchMode = true;
+            batchSel = new Set();
+            renderAll();
+        }
+
+        function exitBatch() {
+            batchMode = false;
+            batchSel = new Set();
+            renderAll();
+        }
+
+        /** 切换某词勾选状态 */
+        function toggleBatch(word) {
+            if (batchSel.has(word)) batchSel.delete(word); else batchSel.add(word);
+            const el = [...document.querySelectorAll('.item-card.batch')].find(c => c.dataset.w === word);
+            if (el) {
+                el.classList.toggle('sel', batchSel.has(word));
+                el.querySelector('.ic-check').textContent = batchSel.has(word) ? '✓' : '';
+                el.querySelector('.ic-check').classList.toggle('on', batchSel.has(word));
+            }
+            renderBatchBar();
+        }
+
+        /** 批量操作条：全选 / 今日加入 / 昨日加入 / 已选 N / 删除选中 / 退出 */
+        function renderBatchBar() {
+            const bar = document.getElementById('batchBar');
+            if (!batchMode) { bar.hidden = true; return; }
+            bar.hidden = false;
+            const today = localDayStr(0), yest = localDayStr(-1);
+            const nToday = curRows.filter(v => (v.added_at || '').slice(0, 10) === today).length;
+            const nYest = curRows.filter(v => (v.added_at || '').slice(0, 10) === yest).length;
+            bar.innerHTML = `
+                <div class="bb-info">已选 <b>${batchSel.size}</b> 个</div>
+                <button class="bb-btn" onclick="selectByDay(0)">今日加入 · ${nToday}</button>
+                <button class="bb-btn" onclick="selectByDay(-1)">昨日加入 · ${nYest}</button>
+                <button class="bb-btn" onclick="selectAllBatch()">全选</button>
+                <button class="bb-btn" onclick="clearBatchSel()">清除选择</button>
+                <button class="bb-btn danger" onclick="deleteSelected()">删除选中 (${batchSel.size})</button>
+                <button class="bb-btn" onclick="exitBatch()">退出</button>`;
+        }
+
+        /** 按加入日期选中（offset 0=今日, -1=昨日） */
+        function selectByDay(offset) {
+            const day = localDayStr(offset);
+            for (const v of curRows) {
+                if ((v.added_at || '').slice(0, 10) === day) batchSel.add(v.word);
+            }
+            refreshBatchChecks();
+        }
+
+        function selectAllBatch() {
+            for (const v of curRows) batchSel.add(v.word);
+            refreshBatchChecks();
+        }
+
+        function clearBatchSel() {
+            batchSel = new Set();
+            refreshBatchChecks();
+        }
+
+        /** 批量操作后整体刷新卡片勾选与操作条（保留分页已渲染部分） */
+        function refreshBatchChecks() {
+            document.querySelectorAll('.item-card.batch').forEach(card => {
+                const on = batchSel.has(card.dataset.w);
+                card.classList.toggle('sel', on);
+                const ck = card.querySelector('.ic-check');
+                ck.textContent = on ? '✓' : '';
+                ck.classList.toggle('on', on);
+            });
+            renderBatchBar();
+        }
+
+        /** 删除选中的词（二次确认） */
+        async function deleteSelected() {
+            const n = batchSel.size;
+            if (!n) { alert('请先勾选要删除的词'); return; }
+            const scope = viewDeck === '__all__' ? '全部生词' : `词书「${deckName(viewDeck)}」`;
+            if (!confirm(`确定从${scope}中删除选中的 ${n} 个词/词组？删除后不可恢复（同步清理背单词进度）。`)) return;
+            for (const w of batchSel) await dbDelete('vocab', w);
+            batchMode = false;
+            batchSel = new Set();
+            renderAll();
+            alert(`已删除 ${n} 个词/词组`);
         }
 
         async function toggleFav(word) {
