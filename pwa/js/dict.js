@@ -56,9 +56,14 @@ async function loadHardwords() {
     return _hard;
 }
 
+/** 精选集合是否加载成功（非空）。失败降级时返回 false，调用方可回退旧逻辑。 */
+function isHardLoaded() {
+    return !!_hard && _hard.size > 0;
+}
+
 /** 是否精选难词（原始小写 → normWord → forms 原形三级命中）。 */
 function isHard(word) {
-    if (!_hard || !_hard.size) return false;
+    if (!isHardLoaded()) return false;
     const raw = String(word || '').toLowerCase().trim();
     if (_hard.has(raw)) return true;   // 词组 key / 原样命中
     const w = normWord(word);

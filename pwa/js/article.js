@@ -447,10 +447,13 @@ async function onAddPhraseVocab(btn) {
     }
 }
 
-/** 一键记录：本篇所有词典命中且尚未收录的难词 → 批量加入当前词书 */
+/** 一键记录：本篇词典命中且尚未收录的「精选难词」→ 批量加入当前词书
+ *  （词典 v26 扩到 8525 词后含大量简单词，故按 hardwords 精选集合过滤；
+ *    精选集合未加载成功时回退为旧逻辑——词典命中即记录，避免降级为空）。 */
 async function recordArticleWords() {
     const seen = new Set();
     const items = [];
+    const useHard = typeof isHard === 'function' && typeof isHardLoaded === 'function' && isHardLoaded();
     for (const s of article.sentences) {
         const RE = /[A-Za-z][A-Za-z'\-]*/g;
         let m;
@@ -458,6 +461,7 @@ async function recordArticleWords() {
             const tok = m[0];
             const entry = dictLookup(tok);
             if (!entry) continue;
+            if (useHard && !isHard(tok)) continue;   // 只收精选难词
             const base = normWord(tok);
             if (!base || seen.has(base)) continue;
             seen.add(base);
