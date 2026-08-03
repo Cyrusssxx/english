@@ -141,6 +141,43 @@ html.dark .nav-search {
     border-color: #3a4d4a;
 }
 
+/* 计时器：暂停/继续 与 重置 按钮 */
+.nav-timer-btn {
+    background: none;
+    border: 1px solid #c8cdd4;
+    color: var(--text-light);
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.nav-timer-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.nav-timer-btn.on {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-soft);
+}
+
+html.dark .nav-timer-btn {
+    border-color: #3a4d4a;
+}
+
+.nav-timer.paused {
+    color: var(--primary);
+    font-weight: 600;
+}
+
 .nav-switch {
     background: none;
     border: 1px solid #c8cdd4;
@@ -1758,6 +1795,10 @@ html.dark .item-card .ic-check {
 /* ==================== 移动端 ==================== */
 @media (max-width: 900px) {
     .nav-timer {
+        display: none;
+    }
+
+    .nav-timer-btn {
         display: none;
     }
 

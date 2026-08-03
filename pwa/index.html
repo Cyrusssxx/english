@@ -23,7 +23,9 @@
                 <a href="favorites.html" class="nav-link">句子收藏</a>
             </div>
             <div class="nav-tools">
-                <span class="nav-timer" id="navTimer" title="今日学习时长（切换到其他窗口时暂停）">⏱ 00:00:00</span>
+                <span class="nav-timer" id="navTimer" title="今日学习时长（切走窗口或手动暂停时停止计时）">⏱ 00:00:00</span>
+                <button class="nav-timer-btn" id="timerPause" onclick="togglePauseTimer()" title="暂停/继续计时">⏸</button>
+                <button class="nav-timer-btn" onclick="resetTimer()" title="重置今日计时">↺</button>
                 <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
                     夜间 <span class="switch-state" id="darkState">关</span>
                 </button>

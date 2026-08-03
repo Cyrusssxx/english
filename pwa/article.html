@@ -20,6 +20,8 @@
                 <input class="nav-search" id="navSearch" type="search" placeholder="查词" title="输入单词/词组后回车查释义"
                     onkeydown="if(event.key==='Enter')navLookup()">
                 <span class="nav-timer" id="navTimer" title="今日学习时长">⏱ 00:00:00</span>
+                <button class="nav-timer-btn" id="timerPause" onclick="togglePauseTimer()" title="暂停/继续计时">⏸</button>
+                <button class="nav-timer-btn" onclick="resetTimer()" title="重置今日计时">↺</button>
                 <button class="nav-switch" id="cnAllSwitch" onclick="toggleCnAll()" title="展开/收起全部译文">
                     全文翻译 <span class="switch-state" id="cnAllState">关</span>
                 </button>

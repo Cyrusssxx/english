@@ -1,5 +1,14 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v31] 2026-08-03
+
+### 学习计时器：支持手动暂停/继续与重置
+
+- **`pwa/js/common.js`**：计时器新增手动控制——暂停状态存 `localStorage.studyTimerPaused`（跨页/刷新保持）；新增全局 `togglePauseTimer()`（暂停/继续切换）与 `resetTimer()`（二次确认后归零并解除暂停）；每秒累加跳过「切走窗口」与「手动暂停」两种暂停态。
+- **5 个页面（index/article/study/vocab/favorites）**：导航栏计时器旁新增两个圆形小按钮——「⏸/▶」暂停继续（暂停时按钮高亮、计时文字变主色加粗）与「↺」重置。
+- **`pwa/css/style.css`**：新增 `.nav-timer-btn`（圆形图标按钮、暂停态高亮、暗色适配）与 `.nav-timer.paused`；≤900px 窄屏随 `.nav-timer` 一并隐藏。
+- **`pwa/sw.js`**：CACHE_VER 升至 `en2-v31`（无新增资源，PRECACHE 不变）。
+
 ## [en2-v30] 2026-08-03
 
 ### 精翻导航栏：新增查词框 + 记单词改为新标签页
