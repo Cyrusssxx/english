@@ -61,6 +61,46 @@ function isHardLoaded() {
     return !!_hard && _hard.size > 0;
 }
 
+/** 制作考频徽标 HTML */
+
+/* ── 中文反查：按中文释义找英文单词/词组（词典 words + 词组 phrases 合建索引） ── */
+let _cnIndex = null;   // [{ en, meaning, isPhrase }]，懒构建
+
+/** 构建中文→英文反查索引（words 的 t 字段 + phrases 的中文含义）。未加载词典时返回空。 */
+function cnIndex() {
+    if (_cnIndex) return _cnIndex;
+    const arr = [];
+    if (_dict && _dict.words) {
+        for (const w of Object.keys(_dict.words)) {
+            const t = _dict.words[w].t;
+            if (t) arr.push({ en: w, meaning: t, isPhrase: false });
+        }
+    }
+    if (_phrases) {
+        for (const k of Object.keys(_phrases)) {
+            arr.push({ en: k, meaning: _phrases[k], isPhrase: true });
+        }
+    }
+    _cnIndex = arr;
+    return _cnIndex;
+}
+
+/** 中文查英语：遍历释义含 query 的词/词组，返回 {en, meaning, isPhrase}[]，最多 limit 条。 */
+function cnLookup(query, limit) {
+    if (!_dict && !_phrases) return [];
+    const q = String(query || '').trim().toLowerCase();
+    if (!q) return [];
+    const out = [];
+    for (const it of cnIndex()) {
+        if (!it.meaning) continue;
+        if (it.meaning.toLowerCase().indexOf(q) !== -1) {
+            out.push(it);
+            if (out.length >= (limit || 10)) break;
+        }
+    }
+    return out;
+}
+
 /** 是否精选难词（原始小写 → normWord → forms 原形三级命中）。 */
 function isHard(word) {
     if (!isHardLoaded()) return false;

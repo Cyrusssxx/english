@@ -484,11 +484,41 @@ function closePop() {
     if (popEl) { popEl.remove(); popEl = null; }
 }
 
-/** 导航栏查词：单词走 dictLookup（含词形还原），词组走 phraseLookup；命中弹卡可加生词本 */
-function navLookup() {
+/** 中文查询：遍历释义含该中文的英文词/词组并弹卡列表；点击某条 → 转去查对应英文词。 */
+let cnHits = [];   // 最近一次中文反查结果，供内联点击取词
+function navCnLookup(q) {
     const inp = document.getElementById('navSearch');
-    const q = (inp.value || '').trim();
-    if (!q) return;
+    cnHits = (typeof cnLookup === 'function') ? cnLookup(q, 10) : [];
+    if (!cnHits.length) {
+        openPop(inp, `<span class="wp-word">${esc(q)}</span>
+            <div class="wp-meaning">词典与词组库均未收录这个中文释义</div>`);
+        return;
+    }
+    const rows = cnHits.map((h, i) =>
+        `<div class="cn-row" onclick="cnPick(${i})"><b>${esc(h.isPhrase ? '<词组> ' : '')}${esc(h.en)}</b>
+            <span class="cn-mean">${esc(h.meaning)}</span></div>`).join('');
+    openPop(inp, `
+        <span class="wp-word">「${esc(q)}」相关</span>
+        <div class="cn-list">${rows}<div class="cn-tip">点击上方词条查看详情并可加入生词本</div></div>`);
+    inp.select();
+}
+
+/** 中文反查结果点击：跳转去查对应英文词/词组详情。 */
+function cnPick(i) {
+    const h = cnHits[i];
+    if (!h) return;
+    const inp = document.getElementById('navSearch');
+    closePop();
+    navLookupWith(h.en);
+}
+
+/** 实际执行查词（供回车 / 历史 / 中文结果点击共用），并把查询写入历史。 */
+function navLookupWith(q) {
+    const inp = document.getElementById('navSearch');
+    if (!inp) return;
+    inp.value = q;
+    if (q) pushSearchHist(q);
+    if (/[\u4e00-\u9fff]/.test(q)) { navCnLookup(q); return; }   // 含中文 → 反查
     const entry = dictLookup(q);
     const phr = phraseLookup(q);
     if (!entry && !phr) {
@@ -509,6 +539,38 @@ function navLookup() {
         ${btn}`);
     inp.select();
 }
+
+function navLookup() {
+    const q = (document.getElementById('navSearch').value || '').trim();
+    if (!q) return;
+    navLookupWith(q);
+}
+
+/* ---- 查询历史（localStorage 持久化，最近优先，去重，上限 12 条） ---- */
+function getSearchHist() {
+    try { return JSON.parse(localStorage.getItem('en2_hist') || '[]'); }
+    catch (e) { return []; }
+}
+function setSearchHist(h) { localStorage.setItem('en2_hist', JSON.stringify(h.slice(0, 12))); }
+function pushSearchHist(q) {
+    const h = getSearchHist().filter(x => x !== q);
+    h.unshift(q);
+    setSearchHist(h);
+}
+function showSearchHist() {
+    const box = document.getElementById('navSearchHist');
+    if (!box || !getSearchHist().length) return;
+    box.innerHTML = getSearchHist().map(q =>
+        `<div class="hist-item" data-q="${esc(q)}" onclick="histPick(this)">${esc(q)}</div>`).join('')
+        + `<div class="hist-clear" onclick="clearSearchHist()">清空历史</div>`;
+    box.hidden = false;
+}
+function hideSearchHist() {
+    const box = document.getElementById('navSearchHist');
+    if (box) box.hidden = true;
+}
+function histPick(el) { const q = el.getAttribute('data-q'); hideSearchHist(); navLookupWith(q); }
+function clearSearchHist() { setSearchHist([]); hideSearchHist(); }
 
 /** 解析例句作用域：sid 可能是句子 id（正文词）或题目 id（题目词）。
  *  句子直接取；题目取 related_sentences 首句，无则用题干/选项文本兜底。 */
@@ -711,5 +773,140 @@ function watchScroll() {
         }, 500);
     }, { passive: true });
 }
+
+// ============ 悬浮设置面板（自定义查词快捷键 + 夜间 + 标注备份入口） ============
+// 仿 study.js 的悬浮设置窗：localStorage 存自定义按键，绑定态独占一次按键输入。
+let artBindAction = null;   // 正在等待按键绑定的动作
+
+/** 查词快捷键动作（可自定义）。默认 Alt+C 聚焦查词框。 */
+const ART_KEYS_DEFAULT = { navSearch: 'Alt+KeyC' };
+const ART_KEY_ACTIONS = [['navSearch', '聚焦查词框']];
+
+function getArtKeyMap() {
+    try { return { ...ART_KEYS_DEFAULT, ...(JSON.parse(localStorage.getItem('en2_artkeys') || '{}')) }; }
+    catch (e) { return { ...ART_KEYS_DEFAULT }; }
+}
+function setArtKeyMap(m) { localStorage.setItem('en2_artkeys', JSON.stringify(m)); }
+
+/** 把 e.code 格式化为含修饰键的可读控件串：e.g. Alt+KeyC → 'Alt + C' */
+function artKeyLabel(code) {
+    const M = { Space: '空格', AltLeft: 'Alt', CtrlLeft: 'Ctrl', ShiftLeft: 'Shift', AltRight: 'Alt', CtrlRight: 'Ctrl', ShiftRight: 'Shift', Backspace: '⌫', Enter: '↵', Escape: 'Esc' };
+    if (M[code]) return M[code];
+    if (code && code.startsWith('Key')) return code.slice(3);
+    if (code && code.startsWith('Digit')) return code.slice(5);
+    if (code && code.startsWith('F') && /^F\d+$/.test(code)) return code;
+    return code || '—';
+}
+
+/** 将事件转为规范 key 串（含修饰符前缀），用于绑定与匹配：e.g. Alt+KeyC。 */
+function eventKeyStr(e) {
+    const mods = [];
+    if (e.altKey) mods.push('Alt');
+    if (e.ctrlKey) mods.push('Ctrl');
+    if (e.shiftKey) mods.push('Shift');
+    return (mods.length ? mods.join('+') + '+' : '') + e.code;
+}
+
+/** 匹配：事件命中某动作绑定的快捷键（e.code 相同且修饰键组合一致）。 */
+function artMatch(e, combo) {
+    if (!combo) return false;
+    return eventKeyStr(e) === combo;
+}
+
+function buildArtPanel() {
+    if (document.getElementById('artSettings')) return;
+    const p = document.createElement('div');
+    p.id = 'artSettings';
+    p.className = 'float-panel';
+    p.hidden = true;
+    p.addEventListener('click', e => e.stopPropagation());   // 面板内点击不冒泡触发外部关闭
+    document.body.appendChild(p);
+}
+
+function toggleArtSettings() {
+    buildArtPanel();
+    const p = document.getElementById('artSettings');
+    if (p.hidden) { renderArtSettings(); p.hidden = false; }
+    else hideArtSettings();
+}
+
+function hideArtSettings() {
+    const p = document.getElementById('artSettings');
+    if (p && !p.hidden) { p.hidden = true; artBindAction = null; }
+}
+
+function renderArtSettings() {
+    const p = document.getElementById('artSettings');
+    if (!p) return;
+    const km = getArtKeyMap();
+    const rows = ART_KEY_ACTIONS.map(([act, label]) => {
+        const binding = artBindAction === act;
+        return `<div class="ss-row"><span class="ss-act">${label}</span>
+            <button class="ss-key${binding ? ' binding' : ''}" onclick="startArtBind('${act}')">${binding ? '按键…' : esc(artKeyLabel(km[act]))}</button></div>`;
+    }).join('');
+    const darkOn = localStorage.getItem('darkMode') === '1';
+    p.innerHTML = `
+        <div class="ss-title">快捷键 <span class="ss-tip">点键位后按新键</span></div>
+        ${rows}
+        <button class="ss-reset" onclick="resetArtKeys()">恢复默认</button>
+        <div class="ss-title">夜间模式</div>
+        <div class="ss-row"><span class="ss-act">深色护眼</span>
+            <button class="ss-toggle${darkOn ? ' on' : ''}" onclick="toggleArtDark()">${darkOn ? '开' : '关'}</button></div>
+        <div class="ss-title">标注备份</div>
+        <div class="ss-row"><button class="ss-key" onclick="Annot.exportAnnot()">导出标注</button></div>
+        <div class="ss-row"><button class="ss-key" onclick="document.getElementById('annImport').click()">导入标注</button></div>
+        <div class="ss-title">查词历史</div>
+        <div class="ss-row"><button class="ss-key" onclick="clearSearchHist()">清空历史</button></div>`;
+}
+
+function startArtBind(act) { artBindAction = act; renderArtSettings(); }
+function resetArtKeys() { setArtKeyMap({ ...ART_KEYS_DEFAULT }); artBindAction = null; renderArtSettings(); }
+function toggleArtDark() {
+    const on = localStorage.getItem('darkMode') !== '1';
+    localStorage.setItem('darkMode', on ? '1' : '0');
+    applyDark();
+    renderDarkSwitch();
+    renderArtSettings();
+    hideArtSettings();
+}
+
+// 查词快捷键：聚焦 / 点击历史弹出时也聚焦
+function focusNavSearch() {
+    const inp = document.getElementById('navSearch');
+    if (inp) { inp.focus(); inp.select(); showSearchHist(); }
+}
+
+// 全局键盘：绑定态 → 写入快捷键；否则匹配查词快捷键聚焦
+document.addEventListener('keydown', (e) => {
+    if (artBindAction) {
+        e.preventDefault();
+        if (e.code === 'Escape') { artBindAction = null; renderArtSettings(); return; }
+        const combo = eventKeyStr(e);
+        // 忽略纯修饰键按下（如单独按 Alt/Ctrl/Shift），避免绑定失效
+        if (e.code === 'AltLeft' || e.code === 'AltRight' || e.code === 'ControlLeft' ||
+            e.code === 'ControlRight' || e.code === 'ShiftLeft' || e.code === 'ShiftRight' ||
+            e.code === 'MetaLeft' || e.code === 'MetaRight') return;
+        if (!combo) return;
+        const dup = ART_KEY_ACTIONS.find(([a]) => a !== artBindAction && getArtKeyMap()[a] === combo);
+        if (dup) { alert('「' + artKeyLabel(combo) + '」已绑定给「' + dup[1] + '」，请换一个键'); return; }
+        const km2 = getArtKeyMap();
+        km2[artBindAction] = combo;
+        setArtKeyMap(km2);
+        artBindAction = null;
+        renderArtSettings();
+        return;
+    }
+    // 输入框/下拉框内不拦截（查词框里 Alt+C 也要能触发，故单独豁免）
+    const t = e.target;
+    const inInput = t && /^(INPUT|SELECT|TEXTAREA)$/.test(t.tagName);
+    if (e.code === 'Escape') { hideArtSettings(); hideSearchHist(); return; }
+    const km = getArtKeyMap();
+    if (artMatch(e, km.navSearch)) { e.preventDefault(); focusNavSearch(); return; }
+    if (inInput && t) return;   // 其余输入框内不拦截快捷键
+});
+
+// 点击面板外或滚动时收起设置
+document.addEventListener('click', () => hideArtSettings());
+window.addEventListener('scroll', () => hideArtSettings(), { passive: true });
 
 init();

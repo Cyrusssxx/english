@@ -17,8 +17,13 @@
         <div class="nav-container">
             <a href="index.html" class="nav-brand" title="返回列表">‹ <span id="navTitle">精读</span></a>
             <div class="nav-tools">
-                <input class="nav-search" id="navSearch" type="search" placeholder="查词" title="输入单词/词组后回车查释义"
-                    onkeydown="if(event.key==='Enter')navLookup()">
+                <div class="nav-search-wrap">
+                    <input class="nav-search" id="navSearch" type="search" placeholder="查词" title="输入英文单词/词组或中文后回车查释义；Alt+C 快速聚焦"
+                        onfocus="showSearchHist()" oninput="hideSearchHist()"
+                        onkeydown="if(event.key==='Enter')navLookup();else if(event.key==='Escape')hideSearchHist()"
+                        onblur="setTimeout(hideSearchHist,150)">
+                    <div class="nav-search-hist" id="navSearchHist" hidden></div>
+                </div>
                 <span class="nav-timer" id="navTimer" title="今日学习时长">⏱ 00:00:00</span>
                 <button class="nav-timer-btn" id="timerPause" onclick="togglePauseTimer()" title="暂停/继续计时">⏸</button>
                 <button class="nav-timer-btn" onclick="resetTimer()" title="重置今日计时">↺</button>
@@ -33,11 +38,7 @@
                 <button class="nav-switch" id="modeSwitch" onclick="toggleMode()" title="精读：逐句看翻译；做题：显示题目面板">
                     做题 <span class="switch-state" id="modeState">关</span>
                 </button>
-                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式">
-                    夜间 <span class="switch-state" id="darkState">关</span>
-                </button>
-                <button class="nav-switch" onclick="Annot.exportAnnot()" title="备份全部高亮/批注到JSON">导出标注</button>
-                <button class="nav-switch" onclick="document.getElementById('annImport').click()" title="从备份恢复（合并）">导入标注</button>
+                <button class="nav-switch" id="artSettingsBtn" onclick="event.stopPropagation();toggleArtSettings()" title="设置：查词快捷键、夜间模式、标注备份">⚙ 设置</button>
                 <input type="file" id="annImport" accept="application/json" style="display:none" onchange="Annot.importAnnot(this)">
             </div>
         </div>

@@ -2066,6 +2066,86 @@ mark.mk-b { background: var(--mk-b); }
 }
 .ab-btn:hover { background: var(--primary-soft); }
 
+/* ===== 查词输入框：历史下拉 ===== */
+.nav-search-wrap {
+    position: relative;
+    display: inline-flex;
+}
+.nav-search-hist {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    z-index: 500;
+    min-width: 180px;
+    max-width: 320px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 6px 0;
+    font-size: 13px;
+}
+.nav-search-hist[hidden] { display: none; }
+.hist-item {
+    padding: 6px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text);
+}
+.hist-item:hover { background: var(--primary-soft); }
+.hist-clear {
+    padding: 6px 14px 2px;
+    color: var(--text-light);
+    font-size: 12px;
+    cursor: pointer;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+}
+.hist-clear:hover { color: var(--primary); }
+
+/* ===== 中文反查结果列表 ===== */
+.cn-list {
+    margin-top: 4px;
+    max-height: 260px;
+    overflow: auto;
+}
+.cn-row {
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.cn-row:hover { background: var(--primary-soft); }
+.cn-row b { color: var(--primary); }
+.cn-mean {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.82rem;
+    margin-top: 2px;
+}
+.cn-tip {
+    margin-top: 6px;
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+/* ===== 精读页悬浮设置窗（查词快捷键 + 夜间 + 标注备份） ===== */
+.float-panel {
+    position: fixed;
+    top: 72px;
+    right: 16px;
+    z-index: 400;
+    min-width: 260px;
+    max-width: calc(100vw - 32px);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 14px 16px;
+}
+.float-panel[hidden] { display: none; }
+
 /* ===== 背单词页悬浮设置窗（自定义快捷键 + 收藏目标） ===== */
 #studySettings {
     position: fixed;
@@ -2080,8 +2160,7 @@ mark.mk-b { background: var(--mk-b); }
     box-shadow: var(--shadow);
     padding: 14px 16px;
 }
-#studySettings[hidden] { display: none; }
-.ss-title {
+#studySettings[hidden] { display: none; }.ss-title {
     font-size: 13px;
     font-weight: 700;
     color: var(--text);
