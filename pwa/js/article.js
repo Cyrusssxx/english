@@ -6,19 +6,15 @@ let vocabSet = new Set();      // 已在生词本的词
 let favSet = new Set();        // 已收藏句子
 let answerMap = {};            // {question_id: {user_answer, is_correct}}
 let popEl = null;              // 当前释义弹卡
-let navTitleText = '';         // 文章标题（精翻导航栏默认隐藏，点击才显示）
-let navTitleOn = false;        // 导航栏标题是否已显示
 
-// ============ 精翻导航标题：默认隐藏，点击标题处才显示 ============
-function renderNavTitle() {
-    const el = document.getElementById('navTitle');
-    if (!el) return;
-    el.textContent = navTitleOn ? navTitleText : '…';
-}
-
-function toggleNavTitle() {
-    navTitleOn = !navTitleOn;
-    renderNavTitle();
+// ============ 正文文章标题：默认隐藏（防剧透），点击标题处才显示 ============
+function toggleReadTitle() {
+    const t = document.querySelector('.read-title');
+    const ph = document.querySelector('.read-title-placeholder');
+    if (!t) return;
+    const show = t.hidden;
+    t.hidden = !show;
+    if (ph) ph.style.display = show ? 'none' : '';
 }
 
 // ============ 模式开关：精读 / 做题（存 localStorage） ============
@@ -105,8 +101,7 @@ async function init() {
     }
     const year = AID.slice(0, 4);
     document.title = `${year} ${TYPE_NAMES[article.type] || article.type} - 英语二精翻`;
-    navTitleText = `${year} ${TYPE_NAMES[article.type] || article.type}`;
-    renderNavTitle();
+    document.getElementById('navTitle').textContent = `${year} ${TYPE_NAMES[article.type] || article.type}`;
     localStorage.setItem('lastArticle', AID);
 
     // 用户数据
@@ -141,7 +136,8 @@ function renderArticle() {
         const p = (s.para || 1) - 1;
         (paras[p] || (paras[p] = [])).push(s);
     }
-    let html = `<div class="read-title">${esc(article.title || '')}</div>`;
+    let html = `<div class="read-title" onclick="toggleReadTitle()" title="点击显示/隐藏文章标题" hidden>${esc(article.title || '')}</div>`;
+    html += `<div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>`;
     html += `<div class="read-source">${esc(article.source || '')} · 点句下占位条显示译文，点下划线词查释义</div>`;
     if (article.topic) {
         html += `<div class="read-summary"><span class="rs-label">本文概要</span>${esc(article.topic)}</div>`;

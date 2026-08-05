@@ -1,5 +1,13 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v34] 2026-08-05
+
+### 隐藏正文文章标题（如 Happy Money），点击才显示
+
+- 修正 v33 理解偏差：导航栏标题恢复常显，改为隐藏**正文文章标题**。
+- **`pwa/js/article.js`** + **`pwa/css/style.css`**：正文 `.read-title` 默认隐藏，显示 `…` 占位符，点击标题处才显示/再隐藏（`toggleReadTitle`）；新增 `.read-title-placeholder` 样式。
+- **`pwa/sw.js`**：CACHE_VER 升至 `en2-v34`。
+
 ## [en2-v33] 2026-08-05
 
 ### 隐藏文章标题，避免精读前剧透
