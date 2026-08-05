@@ -128,7 +128,7 @@
                 document.getElementById('articleList').innerHTML = '<div class="empty">该年份暂无内容</div>';
                 return;
             }
-            const order = ['text1', 'text2', 'text3', 'text4', 'newtype', 'cloze'];
+            const order = ['text1', 'text2', 'text3', 'text4', 'newtype', 'cloze', 'translation', 'writing_a', 'writing_b'];
             const arts = [...yearData.articles].sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type));
             document.getElementById('articleList').innerHTML = arts.map(a => {
                 const st = answerStats[a.id];

@@ -4,37 +4,1890 @@
   "year": 2014,
   "articles": [
     {
+      "id": "2014_cloze",
+      "type": "cloze",
+      "title": "Thinner Isn't Always Better",
+      "topic": "完形填空：研究表明肥胖并非总是有害，超重在诸多方面甚至具有保护作用。",
+      "source": "Section I Use of English",
+      "sentences": [
+        {
+          "id": "2014_cloze_s01",
+          "para": 1,
+          "en": "Thinner isn't always better.",
+          "cn": "瘦并不总是意味着更好。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s02",
+          "para": 1,
+          "en": "A number of studies have [1] that normal-weight people are in fact at higher risk of some diseases compared to those who are overweight.",
+          "cn": "一些研究得出结论，与超重人群相比，体重正常的人其实患某些疾病的风险更高。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s03",
+          "para": 1,
+          "en": "And there are health conditions for which being overweight is actually [2].",
+          "cn": "并且在一些健康状况方面，超重实际上是保护性的。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s04",
+          "para": 1,
+          "en": "For example, heavier women are less likely to develop calcium deficiency than thin women.",
+          "cn": "例如，与苗条的女性相比，较重的女性更不容易缺钙。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s05",
+          "para": 1,
+          "en": "[3] among the elderly, being somewhat overweight is often an [4] of good health.",
+          "cn": "该道理在老年人中同样适用，有几分超重往往是身体健康的标志。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s06",
+          "para": 1,
+          "en": "Of even greater [5] is the fact that obesity turns out to be very difficult to define.",
+          "cn": "更令人关注的是，肥胖被证明是很难界定的。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s07",
+          "para": 1,
+          "en": "It is often defined [6] body mass index, or BMI.",
+          "cn": "它通常依据身高体重指数（BMI）来定义。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s08",
+          "para": 1,
+          "en": "BMI [7] body mass divided by the square of height.",
+          "cn": "BMI 等于体重除以身高的平方。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s09",
+          "para": 1,
+          "en": "An adult with a BMI of 18 to 25 is often considered to be normal weight.",
+          "cn": "一个成年人的 BMI 介于 18 至 25 之间，往往被视作体重正常。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s10",
+          "para": 1,
+          "en": "Between 25 and 30 is overweight.",
+          "cn": "BMI 介于 25 至 30 之间被认为是超重。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s11",
+          "para": 1,
+          "en": "And over 30 is considered obese.",
+          "cn": "BMI 为 30 以上被看作是肥胖。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s12",
+          "para": 1,
+          "en": "Obesity, [8], can be divided into moderately obese, severely obese, and very severely obese.",
+          "cn": "而肥胖也相应地可再分为中度肥胖、重度肥胖和极重度肥胖。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s13",
+          "para": 1,
+          "en": "While such numerical standards seem [9], they are not.",
+          "cn": "虽然这样的数值标准看起来一目了然，但事实并非如此。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s14",
+          "para": 1,
+          "en": "Obesity is probably less a matter of weight than body fat.",
+          "cn": "肥胖也许更多地关乎体脂含量而非体重。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s15",
+          "para": 1,
+          "en": "Some people with a high BMI are in fact extremely fit, [10] others with a low BMI may be in poor [11].",
+          "cn": "一些 BMI 很高的人实际上体态极佳，而另一些 BMI 低的人可能外形欠佳。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s16",
+          "para": 1,
+          "en": "For example, many collegiate and professional football players [12] as obese, though their percentage body fat is low.",
+          "cn": "例如，许多大学和职业足球选手（按照 BMI 来衡量）可算作是肥胖者，可是他们的身体脂肪百分比却很低。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s17",
+          "para": 1,
+          "en": "Conversely, someone with a small frame may have high body fat but a [13] BMI.",
+          "cn": "反之，一些小身形的人可能身体脂肪含量很高但 BMI 却正常。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s18",
+          "para": 1,
+          "en": "Today we have a(n) [14] to label obesity as a disgrace.",
+          "cn": "如今，我们倾向于把肥胖看作一种耻辱。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s19",
+          "para": 1,
+          "en": "The overweight are sometimes [15] in the media with their faces covered.",
+          "cn": "超重者有时在媒体上露面时面部被打上马赛克。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s20",
+          "para": 1,
+          "en": "Stereotypes [16] with obesity include laziness, lack of will power, and lower prospects for success.",
+          "cn": "与肥胖相关的刻板印象包括懒惰、缺乏意志力以及成功希望渺茫。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s21",
+          "para": 1,
+          "en": "Teachers, employers, and health professionals have been shown to harbor biases against the obese.",
+          "cn": "教师、雇主和卫生专业人员都被证明对肥胖人群怀有偏见。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s22",
+          "para": 1,
+          "en": "[17] very young children tend to look down on the overweight, and teasing about body build has long been a problem in schools.",
+          "cn": "甚至幼儿也往往看不起超重者，针对体型的嘲弄长期来一直是校园里的一大问题。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s23",
+          "para": 1,
+          "en": "Negative attitudes toward obesity, [18] in health concerns, have stimulated a number of anti-obesity [19].",
+          "cn": "对肥胖的负面态度植根于健康关切，已经催生了一系列反肥胖政策。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s24",
+          "para": 1,
+          "en": "My own hospital system has banned sugary drinks from its facilities.",
+          "cn": "我所在的医院系统已经禁止在其设施内销售含糖饮料。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s25",
+          "para": 1,
+          "en": "Many employers have instituted weight loss and fitness initiatives.",
+          "cn": "许多雇主已经实施了减肥和健身计划。",
+          "words": []
+        },
+        {
+          "id": "2014_cloze_s26",
+          "para": 1,
+          "en": "Michelle Obama has launched a high-visibility campaign [20] childhood obesity, even claiming that it represents our greatest national security threat.",
+          "cn": "米歇尔·奥巴马发起了一项针对儿童肥胖的高关注度运动，甚至声称这代表了美国最大的国家安全威胁。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2014_cloze_q01",
+          "number": 1,
+          "qtype": "完形",
+          "stem": "第 1 空：选择最合适的词填入空白 [1]",
+          "stem_cn": "",
+          "options": {
+            "A": "denied",
+            "B": "concluded",
+            "C": "doubted",
+            "D": "ensured"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义。文章首句指出“更瘦并不总是意味着更好”，下文围绕这个观点 展开论述。空格所在句说明研究结论“与超重人群相比，体重正常的人其实患某些疾病的风险更高” 。 后文接着又指出，超重对某些健康状况实则有益无害。 由此可知，本句中的“研究”是证实超重自有其 益处，而非“否定、怀疑”；而研究只能“推定”而不能“确保有”某种结论，因此排除其他，［BJ 正确。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q02",
+          "number": 2,
+          "qtype": "完形",
+          "stem": "第 2 空：选择最合适的词填入空白 [2]",
+          "stem_cn": "",
+          "options": {
+            "A": "protective",
+            "B": "dangerous",
+            "C": "sufficient",
+            "D": "troublesome"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义。文章着重于论述超重的益处．因此超重对某些健康状况应是保 护性的，而非危险的，足够的，麻烦的。［A ］正确，ti!：除［BJ [ CJ [ DJ 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q03",
+          "number": 3,
+          "qtype": "完形",
+          "stem": "第 3 空：选择最合适的词填入空白 [3]",
+          "stem_cn": "",
+          "options": {
+            "A": "Instead",
+            "B": "However",
+            "C": "Likewise",
+            "D": "Therefore"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文逻辑关系。本题可在完成第4 小题之后作答。上文指出超重的一些 益处，患某些疾病的风险低，更不容易缺钙，空格所在句指出老年人中有几分超重往往是身体健康的指 示。两部分之间不存在转折与因果关系，而是同理关系。 ［CJ 正确，排除［A J [ BJ [ DJ 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q04",
+          "number": 4,
+          "qtype": "完形",
+          "stem": "第 4 空：选择最合适的词填入空白 [4]",
+          "stem_cn": "",
+          "options": {
+            "A": "indicator",
+            "B": "objective",
+            "C": "origin",
+            "D": "example"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义。空格所在句论述的是“有几分超重”与“身体健康”之间的关联，超重 不可能是身体健康的目标、起源或实例，t-11＇除［BJ [ CJ [ DJ 。［A］项代人，表示有几分超重往往是身体健康 的指示、标志，与上文论述的“超重有益气患某些疾病的风险低、更不容易缺钙）相利合，为正确选项。 Il O Of even grea ter 5 is the fact that obesity( turns out to be very difficult to define. @It is oft巳n defined 6 body mass( index, or BMI. @BMl 7 body mass dividedCD by the square® of height. OAn adult with a BMI of 18 to 25 is often considered to be normal weight. 0 Between 25 and 30 is o v erw e ight. 。 And ove r 30 is considered obese. 0 Obesity, 8 , can be divided into moderately® obese , severely obese, and very severely obese. ①更令人关洼的是，肥胖被证明是很难 界定的。②它通常依据身高体重指数ur BMI) 未定义。③BMl 等于体重除以身高的 平方。④一个成年人的BMI 介于18 至2 5 之 间，往往被视作体重正常。⑤BMI 介于25 至 30 之间被认为是超重。⑥BMI 为 30 以上被 看作是肥胖。⑦而肥胖也相应地可再分为中 度肥胖、重皮肥胖及极重反肥胖。 皿 0 While such numerical® standards seem ①虽然这样的数值标准看上去很直接明 9 , they are not. @ Obesity is probably less a 了，但那其实是假象。②肥胖与其说是体重 matter of weight than body fat. @Some people with a 的问题二，倒不如说是身体脂肪含量的问题。 high BMI a 「巳 in fa ct extremely fit( , 10 others ③有些BMI 高的人实际上体格非常好，而另 with a low BMT may be in poor 11 . 0 For 一些BMI 低的人反而可能外形不佳。 ④伽j exam pl 巴， m a ny collegiate® and professional football 如，许多大学和职业足球选手（按照BMT 来 players 12 as obese , though their percentage body 衡量〉可算作是肥胖者，可是他们的身体脂肪 fat is low. 0 Conversely® , someone with a small 百分比却很低。⑤反之，一些小身形的人可 frame® may have high body fat but a 13 BMI. 能身体脂肪含量很高但BMI 却正常。 ( obesity [ au1bi:s1t1] 11. 肥胖，过／3[ 肥胖 ( mass [ mres] \"· （物体的）质量 ( divide [d1 1va1d] v . I涂，除以 ( square [ skw eo ］儿（某数值的）平方 ；二词f（注释与难旬分析. ·：if \\\\ © numerical [ nju: 1 menka！］α 数字的，以数字表示的 > ( fit [ fit ］α 健康的．健壮的 : ( collegiate [ ka1 Ji叫α 学院的，学院学生的 ( moderately [ 'modarc>tl,] a d. 适度地，不过分地 < ( conversely ［’ konv3:sil ］αd 相反地，以相反的方法 : ( frame [fre,m] 11. （人或动物的）身体，体形 ·语篇分析 · i J 第二、三段指出“肥胖＂x1li 以界定，以BMI 标准划分“ j阵”或“ 不月半”未必准确。 第二段首句点明意群主题：肥胖很难界定。②句至段末先让步介绍目前的BMI 定义法：BMI 的计 2",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q05",
+          "number": 5,
+          "qtype": "完形",
+          "stem": "第 5 空：选择最合适的词填入空白 [5]",
+          "stem_cn": "",
+          "options": {
+            "A": "impact",
+            "B": "relevance",
+            "C": "assistance",
+            "D": "concern"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": ";;:t王题考查上下文语义。空格所在部分为倒装句，正常的话序应为 th e fact is of even greater . . . ; the -fa c t 后有 t h at 引导的同位i+i 从句．说明其内容：肥胖原来是很难界定的。 根据下文，可 去l口卡；段介绍当前对肥胖的界定方法，并未提及”肥胖是很难界定的”这一事实的影响、其与上文的相关 度或对t文的帮助性，排除［A J [ BJ [ CJ 。〔DJ 代人，可实现关注点转移（肥胖的益处→肥胖难以界定）， 故正确。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q06",
+          "number": 6,
+          "qtype": "完形",
+          "stem": "第 6 空：选择最合适的词填入空白 [6]",
+          "stem_cn": "",
+          "options": {
+            "A": "in terms of",
+            "B": "in case of",
+            "C": "in favor of",
+            "D": "in respects of"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义。 空格所在句描述的是身高体重指数C 臣p BMl) 与肥胖之间的关 系。根据下文.. BM I 值不同对应着不同的体质”可知，肥胖通常依据BMI 来界定，［A J 正确。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q07",
+          "number": 7,
+          "qtype": "完形",
+          "stem": "第 7 空：选择最合适的词填入空白 [7]",
+          "stem_cn": "",
+          "options": {
+            "A": "measures",
+            "B": "determines",
+            "C": "equals",
+            "D": "modifies"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查旬内语义。 很明！起空格后的部分为BM I 的具体计算方法，因此空格前后部 分数值相等，即BMI 等于体重｜徐以身高的平方，［CJ正确 －ti!' ！除［AJ [BJ [ DJ 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q08",
+          "number": 8,
+          "qtype": "完形",
+          "stem": "第 8 空：选择最合适的词填入空白 [8]",
+          "stem_cn": "",
+          "options": {
+            "A": "in essence",
+            "B": "in contrast",
+            "C": "in turn",
+            "D": "in part"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文逻辑语义。上文指出不同的 BMI 值范围对应着正常体重、超重且肥 胖三种体重级另lj. 而空格所在句进一步指ii ＼肥胖可以分为中j豆肥胖、重度肥胖及极重度肥胖三个级别。 上下文之间是！！阪承关系，［C J 正确。 文中丹非介绍肥胖的“水质”或“ 部分情况” ，也不存在与其他的对 比，排除［A J ［巳J [ D J 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q09",
+          "number": 9,
+          "qtype": "完形",
+          "stem": "第 9 空：选择最合适的词填入空白 [9]",
+          "stem_cn": "",
+          "options": {
+            "A": "complicated",
+            "B": "conservative",
+            "C": "variable",
+            "D": "straightforward"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文i吾义。 空格所在句的num e ri ca l s tand a rd s 即指BML BMI 数值对应不 同的体质，这种数值标准看上去是清晰简单的，而非复杂、保守或易变的，［DJ 正确，排除［A J [ B〕［CJ 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q10",
+          "number": 10,
+          "qtype": "完形",
+          "stem": "第 10 空：选择最合适的词填入空白 [10]",
+          "stem_cn": "",
+          "options": {
+            "A": "so",
+            "B": "while",
+            "C": "since",
+            "D": "unless"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "木题考查旬内逻辑关系。 本题可在完成第 11 小题之后作答。空格前的分句指出有些 BMJ ~的人实际上体态良好，空格所在的分句指出另一些B M ！低的人反而可能外形不佳，两部分之间 为对比关系．而非国果或条件关系，［B〕正确，排除［AJ [ CJ [ DJ 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q11",
+          "number": 11,
+          "qtype": "完形",
+          "stem": "第 11 空：选择最合适的词填入空白 [11]",
+          "stem_cn": "",
+          "options": {
+            "A": "shape",
+            "B": "spirit",
+            "C": "balance",
+            "D": "taste"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文i吾义。 联系上下文，可知l 文章一直罔绕着肥胖的问题在论述，讨论的 是人的体态、体重，即身材、外形，而非情绪、平衡性或品位。 ［BJ [CJ [ DJ 均与文意无关，［A J 正确。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q12",
+          "number": 12,
+          "qtype": "完形",
+          "stem": "第 12 空：选择最合适的词填入空白 [12]",
+          "stem_cn": "",
+          "options": {
+            "A": "start",
+            "B": "qualify",
+            "C": "retire",
+            "D": "stay"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文i吾义十动词用法。空格所在句是对上文内容的例证，指出许多大学和l 职业足球选手（按照BM J 来衡量）算是肥胖者，可是他们的体脂率却很低。 ［BJ 正｛角。［八］ 吕t a rt 与a日连 FIJI!τ｜表示“从．．．．．．做起”，[ CJ r e l 门 I E 与 as 搭配H才f旨“以（从）．．．．．．职位退休 3",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q13",
+          "number": 13,
+          "qtype": "完形",
+          "stem": "第 13 空：选择最合适的词填入空白 [13]",
+          "stem_cn": "",
+          "options": {
+            "A": "strange",
+            "B": "changeable",
+            "C": "normal",
+            "D": "constant"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义。上句指出许多大学和l 职业足球选手（按照BMl 来衡量）算是肥 胖者，目/I BMI 过高，但体脂率却很低。空格所在句以Conve rs e l y 引出相反情况，一些小身形的人身体脂 肪含量很高，但BM! tp …… 。空格所在形容同与“过高”相对，［CJ 符合。 IV OToday we have a(n) 14 to label obesity as a disgrace( . @The overweight are sometimes 15 in the media with their fa ces covered. @Stereotypesφ 16 with obesity include laziness, lack of wi ll power, and lower prospectsCD for s u ccess . 。T each e r s ，巴mploye r s, and health professionals have been shown to harborGJ biases against the obese. 0 17 very young children tend to look down on the ove rw e i g l廿，and teasing® abou t body build® has long been a problem in schools. V O Negative( attitudes toward obesity, 18 in health co nc巳rn s, have stimulated@ a numb巳r of anti-obesity 19 . @ My own hospital system has banned® sugary drinks r rom its facilities( . 8 Many employers have instituted( weight loss and fitness initiatives® . 。Michell e Obama has launched@ a high-visibili ty campaign® 20 childhood obesity, even claiming that it repr esents our greatest national security threat. [34-9 words] ①如今，人们倾向于将肥胖视作一件 丢脸的事。②超重的人有时在媒体拍摄 中出现时脸部都是被遮住的。③与肥胖 有关的刻板印象包括懒惰、缺乏意志力及 成功机会渺茫。④教师、雇主以及健康专 业人士已被证明对肥胖者怀有偏见。⑤ 即使非常年幼的孩子也往往看不起超重 的人，而且对体格的戏弄早已成为学校里 的问题之一。 ①基于健康考虑而对肥胖所持的负 面态度，已经引发了一些抗肥胖政策。② 我自己的医院系统已禁止下属医院售卖 合糖饮料。③许多雇主发起了减肥和健 身计划。④米歇尔·奥巴马推出了高度 引人注目的对抗儿童肥胖的运动，甚至声 称“儿童肥胖问题”代表了美国最大的国 家安全威胁。 ：·词汇注释与难句分析· ：d ( disgrace [ d1s'gre1s] n. ijJl: 辱．丢脸的事；：1：丑 ， ( stereotype [ 'steriauta1p] n. 陈词圳i i);'ij ，刻板印象 ( prospect [ 1 prospekt ］凡前景，可能性 ( harbor [ 1ba:ba] v . 心怀．怀有（某想法等） ( tease [ t i:z］队取笑，l嘲弄，j'i'] 惹 ( build [ b1ld] n. （人体的）体形，体将 ( negative [ 'negatrv ］α 否定的，消极的 ( stimulate [ 'strmjulert] v . 剌激，促ill ® ban [ bac!n] v . 明令禁止 ( facility [ fa's11Jt1 ] n. （供特定用途的）场所 itut 开始（某进程） © initiative [ r'rnJ1at1v] n. 新倡议、行动、方案 ( launch [ J;:i:ntJ］队撤出，使开始 ( campaign [ k~m 'pern] n. 运动（为某一社会的、商业 的或政治的目的而进行的一系列有计划的活动） Even very young children tend to look down on the overweight, and teasing about body build has long been a problem in schools. 旦旦 very young children tend to look down on the overweight （衔接词〉 主语 谓语 望生臼asing about body build has long been a problem in schools （并列连词〉 主语 系到J词 表语 功能注释：本句是and 连接的并列句。第一个分句中谓语使用 tend to do s th 的结构；第二个分句 4",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q14",
+          "number": 14,
+          "qtype": "完形",
+          "stem": "第 14 空：选择最合适的词填入空白 [14]",
+          "stem_cn": "",
+          "options": {
+            "A": "option",
+            "B": "reason",
+            "C": "opportunity",
+            "D": "tendency"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文i吾义。本段下文列举的现象反映了人们对肥胖者的严重偏见，因此应 是“ 如今，人们倾向于将肥胖视作一件丢脸的事”；而作者显然不赞同这种偏见，因此不能说人们“可以 选择、有理由、有机会”这样做。［DJ 正确，排除［A J [BJ [ CJ 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q15",
+          "number": 15,
+          "qtype": "完形",
+          "stem": "第 15 空：选择最合适的词填入空白 [15]",
+          "stem_cn": "",
+          "options": {
+            "A": "employed",
+            "B": "pictured",
+            "C": "imitated",
+            "D": "monitored"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": ";zjs:题考查上下文语义十熟词僻义。上文巳指出人们倾向于将肥胖视作一件丢脸的事。 因此超重的人有时在媒体拍摄中出现时脸部都是被遮住的。 ［BJ p i ct u re 作动词有“拍摄”之意。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q16",
+          "number": 16,
+          "qtype": "完形",
+          "stem": "第 16 空：选择最合适的词填入空白 [16]",
+          "stem_cn": "",
+          "options": {
+            "A": "compared",
+            "B": "combined",
+            "C": "settled",
+            "D": "associated"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查旬内语义。根据文意，不难判断出本句是酬，与肥胖有关的刻板印象有l哪些， 而不是与肥胖相比，或与肥胖相结合，更不是与肥胖清算。 ［DJ 正确，非｜｜：除［A ] [BJ [ CJ 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q17",
+          "number": 17,
+          "qtype": "完形",
+          "stem": "第 17 空：选择最合适的词填入空白 [17]",
+          "stem_cn": "",
+          "options": {
+            "A": "Even",
+            "B": "Still",
+            "C": "Yet",
+            "D": "Only"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文逻辑关系。空格前指出“教师、老板以及健康专业人士已被证明对肥 胖者怀有偏见”，空格后指出，“非常年幼的儿童往往也看不起超重的人”，前后两部分之间为递进关系， [ AJ 正确，［B ] [ C］表转折，可排除；［DJ 代入“只有儿童看不起超重的人”，显然有悖文意。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q18",
+          "number": 18,
+          "qtype": "完形",
+          "stem": "第 18 空：选择最合适的词填入空白 [18]",
+          "stem_cn": "",
+          "options": {
+            "A": "despised",
+            "B": "corrected",
+            "C": "ignored",
+            "D": "grounded"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查固定搭配。空格所在部分为动词过去分词作定语，修饰前面的 n ega ti ve att i tudes 。［DJ 代入原文指“基于对健康的担忧而产生的对肥胖的负面态度”，符合文意。而由上下文人 们对肥胖抱有偏见并提出各项“抗肥胖”政策可知，对肥胖的负面态度并没有被轻视、被忽视，更没有被 纠正，排除其他。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q19",
+          "number": 19,
+          "qtype": "完形",
+          "stem": "第 19 空：选择最合适的词填入空白 [19]",
+          "stem_cn": "",
+          "options": {
+            "A": "discussions",
+            "B": "businesses",
+            "C": "policies",
+            "D": "studies"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。下文给出“医院禁止含糖饮料、雇主推行减肥和健身活动”等例 子，这些均是各方抗肥胖的政策，而非抗肥胖讨论、业务或研究。［CJ 正确，排除［A ] [ BJ [ DJ 。",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        },
+        {
+          "id": "2014_cloze_q20",
+          "number": 20,
+          "qtype": "完形",
+          "stem": "第 20 空：选择最合适的词填入空白 [20]",
+          "stem_cn": "",
+          "options": {
+            "A": "for",
+            "B": "against",
+            "C": "with",
+            "D": "without"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义十介词用法。空格所在的介词短语修饰campaign . campaign 可 以与 for 或agains t 搭配表示支持或反对… …的运动，却并不能和l with / wit hout 搭配，排除［CJ [DJ. 空 格前论述的均是抗肥胖政策，米歇尔 · 奥巴马推出的运动是抗肥胖政策的另一例证，应为“ 反对儿童肥 胖”的，因此［BJ 正确。 5",
+          "related_sentences": [
+            "2014_cloze_s01",
+            "2014_cloze_s02",
+            "2014_cloze_s03",
+            "2014_cloze_s04",
+            "2014_cloze_s05",
+            "2014_cloze_s06",
+            "2014_cloze_s07",
+            "2014_cloze_s08",
+            "2014_cloze_s09",
+            "2014_cloze_s10",
+            "2014_cloze_s11",
+            "2014_cloze_s12",
+            "2014_cloze_s13",
+            "2014_cloze_s14",
+            "2014_cloze_s15",
+            "2014_cloze_s16",
+            "2014_cloze_s17",
+            "2014_cloze_s18",
+            "2014_cloze_s19",
+            "2014_cloze_s20",
+            "2014_cloze_s21",
+            "2014_cloze_s22",
+            "2014_cloze_s23",
+            "2014_cloze_s24",
+            "2014_cloze_s25",
+            "2014_cloze_s26"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2014_newtype",
+      "type": "newtype",
+      "title": "Land Art (New Type)",
+      "topic": "新题型（多项对应）：左栏作品与右栏表述匹配。",
+      "source": "Section II Part B",
+      "pool": {
+        "A": "originates from a long walk that the artist took.",
+        "B": "illustrates a kind of landscape-orientated light conceptual art.",
+        "C": "reminds people of the English landscape painting tradition.",
+        "D": "represents the elegance of the British land art.",
+        "E": "depicts the ordinary side of the British land art.",
+        "F": "embodies a romantic escape into the Scottish outdoors.",
+        "G": "contains images from different parts of the same photograph."
+      },
+      "pool_cn": {
+        "A": "源于艺术家的一次远足。",
+        "B": "阐明了一种以风景为导向的光概念艺术。",
+        "C": "使人们想起了英国风景绘画传统。",
+        "D": "代表了英国地景艺术高雅的一面。",
+        "E": "描绘了英国地景艺术日常生活的一面。",
+        "F": "体现了向苏格兰户外生活的一种浪漫逃离。",
+        "G": "包含同一张照片里不同的场景。"
+      },
+      "sentences": [
+        {
+          "id": "2014_newtype_s01",
+          "para": 1,
+          "en": "Emerging in the late Sixties and reaching a peak in the Seventies, Land Art was one of a range of new forms, including Body Art, Performance Art, Action Art and Installation Art, which pushed art beyond the traditional confines of the studio and gallery.",
+          "cn": "地景艺术出现于六十年代末期，在七十年代达到顶峰，是包括身体艺术、行为艺术、偶发艺术及装置艺术在内的一系列新艺术形式中的一种，这些艺术形式将艺术推向了工作室和画廊的传统界限之外。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s02",
+          "para": 1,
+          "en": "Rather than portraying landscape, land artists used the physical substance of the land itself as their medium.",
+          "cn": "地景艺术家不描绘风景，而是以土地本身的物质作为媒介。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s03",
+          "para": 1,
+          "en": "The British land art, typified by Richard Long's piece, was not only more domestically scaled, but a lot quirkier than its American counterpart.",
+          "cn": "英国的地景艺术，以理查德·朗的作品为代表，不仅在国内更具规模，而且比美国地景艺术更加古怪离奇。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s04",
+          "para": 1,
+          "en": "Indeed, while you might assume that an exhibition of Land Art would consist only of records of works rather than the works themselves, Long's photograph of his work is the work.",
+          "cn": "事实上，你或许认为一个地景艺术展览只包括作品的种种记录而非作品本身，但朗那些记录其工作的照片就是其作品。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s05",
+          "para": 1,
+          "en": "Since his \"action\" is in the past, the photograph is its sole embodiment.",
+          "cn": "他的\"行为\"发生在过去，因而照片是这种行为的唯一体现。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s06",
+          "para": 1,
+          "en": "That might seem rather an obscure point, but it sets the tone for an exhibition that contains a lot of black-and-white photographs and relatively few natural objects.",
+          "cn": "这一点可能显得相当晦涩，但它为这个包含大量黑白照片和相对较少自然物件的展览定下了基调。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s07",
+          "para": 1,
+          "en": "Long is Britain's best-known Land Artist and his Stone Circle, a perfect ring of purplish rocks from Portishead beach laid out on the gallery floor, represents the elegant, rarefied side of the form.",
+          "cn": "朗是英国最著名的地景艺术家，他的《石环》——一个用波蒂斯黑德海滩的紫色岩石完美铺就的圆环，铺展在画廊地板上——代表了这一艺术形式优雅而高深的一面。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s08",
+          "para": 1,
+          "en": "The Boyle Family, on the other hand, stand for its dirty, urban aspect.",
+          "cn": "另一方面，博伊尔家族则代表了它粗砺、都市化的一面。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s09",
+          "para": 1,
+          "en": "Comprising artists Mark Boyle and Joan Hills and their children, they recreated random sections of the British landscape on gallery walls.",
+          "cn": "由艺术家马克·博伊尔和琼·希尔斯及其子女组成的这个家族，在画廊墙壁上重现了英国风景的随机片段。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s10",
+          "para": 1,
+          "en": "Their Olaf Street Study, a square of brick-strewn waste ground, is one of the few works here to embrace the commonplaceness that characterises most of our experience of the landscape most of the time.",
+          "cn": "他们的《奥拉夫街研究》——一块铺满砖块的废地——是这里少数拥抱平庸的作品之一，而这种平庸正是我们大多数时候对景观体验的典型特征。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s11",
+          "para": 1,
+          "en": "Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across the Park, in which a long-haired stroller is variously smiled at by a pretty girl and unwittingly assaulted in a sequence of images that turn out to be different parts of the same photograph.",
+          "cn": "公园尤其出现在早期作品中，比如约翰·希利亚德那幅非常有趣的《漫步公园》，其中一位长发漫步者先后被一位漂亮女孩微笑、被无意间攻击，这一系列图像原来是同一张照片的不同部分。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s12",
+          "para": 1,
+          "en": "Generally however British land artists preferred to get away from towns, gravitating towards landscapes that are traditionally considered beautiful such as the Lake District or the Wiltshire Downs.",
+          "cn": "不过总的来说，英国地景艺术家更喜欢远离城镇，倾向于那些传统上被认为美丽的风景，如湖区或威尔特郡丘陵。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s13",
+          "para": 1,
+          "en": "While it probably wasn't apparent at the time, much of this work is permeated by a spirit of romantic escapism that the likes of Wordsworth would have readily understood.",
+          "cn": "虽然在当时可能并不明显，但这类作品大多弥漫着一种浪漫的逃避主义精神，华兹华斯之流会很容易理解。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s14",
+          "para": 1,
+          "en": "Derek Jarman's yellow-tinted film Towards Avebury, a collection of long, mostly still shots of the Wiltshire landscape, evokes a tradition of English landscape painting stretching from Samuel Palmer to Paul Nash.",
+          "cn": "德里克·贾曼泛黄的影片《朝向埃夫伯里》——一组威尔特郡风景的长镜头、多为静态镜头——唤起了从塞缪尔·帕尔默到保罗·纳什的英国风景绘画传统。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s15",
+          "para": 1,
+          "en": "In the case of Hamish Fulton, you can't help feeling that the Scottish artist has simply found a way of making his love of walking pay.",
+          "cn": "以哈米什·富尔顿为例，你忍不住会觉得这位苏格兰艺术家只是找到了一种让他的步行之爱有所回报的方式。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s16",
+          "para": 1,
+          "en": "A typical work, such as Seven Days, consists of a single beautiful black-and-white photograph taken on an epic walk, with the mileage and number of days taken listed beneath.",
+          "cn": "像《七天》这样的典型作品由一张美丽的黑白照片组成，拍摄于一次史诗般的步行途中，照片下方列有里程数和所用天数。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s17",
+          "para": 1,
+          "en": "British Land Art as shown in this well selected, but relatively modestly scaled exhibition wasn't about imposing on the landscape, more a kind of landscape-orientated light conceptual art created passing through.",
+          "cn": "正如这个精挑细选但规模相对适度的展览所展示的，英国地景艺术并非凌驾于风景之上，而更像是一种以风景为导向的光概念艺术，在穿行中创作。",
+          "words": []
+        },
+        {
+          "id": "2014_newtype_s18",
+          "para": 1,
+          "en": "It had its origins in the great outdoors, but the results were as gallery-bound as the paintings of Turner and Constable.",
+          "cn": "它起源于广阔的户外，但结果却与特纳和康斯特布尔的画作一样被局限在画廊之中。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2014_newtype_q41",
+          "number": 41,
+          "qtype": "匹配",
+          "stem": "Stone Circle（从右栏选择与之匹配的表述）",
+          "stem_cn": "Stone Circle",
+          "options": {},
+          "options_cn": {},
+          "answer": "D",
+          "explanation": "根据题干Sto n e C i rc l e 定位到第四段。该段首句 Sto n e Circle ... represents the elegant, rarefi ed side of the form 说明《石环》代表了地景艺术优雅而高深的一面，［D J 选项 represents the e l egance 是对原文的同义替换，故正确。",
+          "related_sentences": [
+            "2014_newtype_s01",
+            "2014_newtype_s02",
+            "2014_newtype_s03",
+            "2014_newtype_s04",
+            "2014_newtype_s05",
+            "2014_newtype_s06",
+            "2014_newtype_s07",
+            "2014_newtype_s08",
+            "2014_newtype_s09",
+            "2014_newtype_s10",
+            "2014_newtype_s11",
+            "2014_newtype_s12",
+            "2014_newtype_s13",
+            "2014_newtype_s14",
+            "2014_newtype_s15",
+            "2014_newtype_s16",
+            "2014_newtype_s17",
+            "2014_newtype_s18"
+          ]
+        },
+        {
+          "id": "2014_newtype_q42",
+          "number": 42,
+          "qtype": "匹配",
+          "stem": "Olaf Street Study（从右栏选择与之匹配的表述）",
+          "stem_cn": "Olaf Street Study",
+          "options": {},
+          "options_cn": {},
+          "answer": "E",
+          "explanation": "根据题干O l a f Street Study 定位到第四段。该段末句 Their Olaf Street Study ... is one of the few works here to embrace the commonplaceness that characterises most of our experience of the landscape most of the t i me 指出《奥拉夫街研究》是反映世俗的作品，描绘了大多数时 候我们对景观的体验。［E］选项depicts the ordinaτy s i de 与原文embrace the co mmonpl aceness 为近义 表达，故正确。",
+          "related_sentences": [
+            "2014_newtype_s01",
+            "2014_newtype_s02",
+            "2014_newtype_s03",
+            "2014_newtype_s04",
+            "2014_newtype_s05",
+            "2014_newtype_s06",
+            "2014_newtype_s07",
+            "2014_newtype_s08",
+            "2014_newtype_s09",
+            "2014_newtype_s10",
+            "2014_newtype_s11",
+            "2014_newtype_s12",
+            "2014_newtype_s13",
+            "2014_newtype_s14",
+            "2014_newtype_s15",
+            "2014_newtype_s16",
+            "2014_newtype_s17",
+            "2014_newtype_s18"
+          ]
+        },
+        {
+          "id": "2014_newtype_q43",
+          "number": 43,
+          "qtype": "匹配",
+          "stem": "Across the Park（从右栏选择与之匹配的表述）",
+          "stem_cn": "Across the Park",
+          "options": {},
+          "options_cn": {},
+          "answer": "G",
+          "explanation": "根据题干Across the Park 定位到第五段。该段独句成段，指出《漫步公园》描 绘了一个披头散发的流浪者不断被一个漂亮女孩报以微笑，而且还在一系列影像中被不知不觉地攻击， 结果这些影像竟是同一张照片的不同组成部分。［G］选项是原文images that turn out to be different parts of the same photograph 的同义表达，故正确。",
+          "related_sentences": [
+            "2014_newtype_s01",
+            "2014_newtype_s02",
+            "2014_newtype_s03",
+            "2014_newtype_s04",
+            "2014_newtype_s05",
+            "2014_newtype_s06",
+            "2014_newtype_s07",
+            "2014_newtype_s08",
+            "2014_newtype_s09",
+            "2014_newtype_s10",
+            "2014_newtype_s11",
+            "2014_newtype_s12",
+            "2014_newtype_s13",
+            "2014_newtype_s14",
+            "2014_newtype_s15",
+            "2014_newtype_s16",
+            "2014_newtype_s17",
+            "2014_newtype_s18"
+          ]
+        },
+        {
+          "id": "2014_newtype_q44",
+          "number": 44,
+          "qtype": "匹配",
+          "stem": "Towards Avebury（从右栏选择与之匹配的表述）",
+          "stem_cn": "Towards Avebury",
+          "options": {},
+          "options_cn": {},
+          "answer": "C",
+          "explanation": "根据题干Towards Avebury 定位到第六段。该段末句Towards Avebury. 巳vokes a tradition of English landscape painting ... 指出《朝向埃夫伯里》唤起了从塞缪尔·帕尔默到保 罗 · 纳什的英国风景绘画传统，［CJ选项是其同义表达，故正确。",
+          "related_sentences": [
+            "2014_newtype_s01",
+            "2014_newtype_s02",
+            "2014_newtype_s03",
+            "2014_newtype_s04",
+            "2014_newtype_s05",
+            "2014_newtype_s06",
+            "2014_newtype_s07",
+            "2014_newtype_s08",
+            "2014_newtype_s09",
+            "2014_newtype_s10",
+            "2014_newtype_s11",
+            "2014_newtype_s12",
+            "2014_newtype_s13",
+            "2014_newtype_s14",
+            "2014_newtype_s15",
+            "2014_newtype_s16",
+            "2014_newtype_s17",
+            "2014_newtype_s18"
+          ]
+        },
+        {
+          "id": "2014_newtype_q45",
+          "number": 45,
+          "qtype": "匹配",
+          "stem": "Seven Days（从右栏选择与之匹配的表述）",
+          "stem_cn": "Seven Days",
+          "options": {},
+          "options_cn": {},
+          "answer": "F",
+          "explanation": "根据题干 Seven Days 定位到第七段。该段第二句 Seven Days, consists of a single beautiful black-and-white photograph taken on an epic walk 表明《七天》是作者在一次跋涉中完成，[A] 选项 originates from a long walk 是原文 taken on an epic walk 的同义替换，故正确。",
+          "related_sentences": [
+            "2014_newtype_s01",
+            "2014_newtype_s02",
+            "2014_newtype_s03",
+            "2014_newtype_s04",
+            "2014_newtype_s05",
+            "2014_newtype_s06",
+            "2014_newtype_s07",
+            "2014_newtype_s08",
+            "2014_newtype_s09",
+            "2014_newtype_s10",
+            "2014_newtype_s11",
+            "2014_newtype_s12",
+            "2014_newtype_s13",
+            "2014_newtype_s14",
+            "2014_newtype_s15",
+            "2014_newtype_s16",
+            "2014_newtype_s17",
+            "2014_newtype_s18"
+          ]
+        }
+      ]
+    },
+    {
       "id": "2014_text1",
       "type": "text1",
       "title": "Happy Money",
       "topic": "幸福消费：把钱花在体验上远比购物更值得",
       "source": "2014 年考研英语（二）Text 1 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2014_text1_s01", "para": 1, "en": "What would you do with $590m?", "cn": "你会用 5.9 亿美元做什么？", "words": [] },
-        { "id": "2014_text1_s02", "para": 1, "en": "This is now a question for Gloria MacKenzie, an 84-year-old widow who recently emerged from her small, tin-roofed house in Florida to collect the biggest undivided lottery jackpot in history.", "cn": "这是如今摆在歌莉娅·麦肯齐面前的问题。她是一位 84 岁寡居老人，住在佛罗里达一间狭窄铁皮屋里，最近因独揽史上最高金额彩票头奖并现身领奖而为人所关注。", "words": [ { "w": "widow", "phonetic": "/ˈwɪdəʊ/", "meaning": "n. 寡妇" }, { "w": "lottery jackpot", "meaning": "彩票头奖" } ] },
-        { "id": "2014_text1_s03", "para": 1, "en": "If she hopes her new-found fortune will yield lasting feelings of fulfilment, she could do worse than read Happy Money by Elizabeth Dunn and Michael Norton.", "cn": "如果她希望这笔新到手的财富能够产生长久满足感，倒不妨读读伊丽莎白·邓恩与迈克·诺顿合著的《快乐金钱》。", "words": [ { "w": "new-found fortune", "meaning": "新得的财富" }, { "w": "lasting feelings of fulfilment", "meaning": "持久的满足感" } ] },
-        { "id": "2014_text1_s04", "para": 2, "en": "These two academics use an array of behavioral research to show that the most rewarding ways to spend money can be counterintuitive.", "cn": "这两位学者运用一系列行为研究表明，最有意义的花钱方式可能是与直觉相反的。", "words": [ { "w": "an array of", "meaning": "一系列，大量的" }, { "w": "counterintuitive", "meaning": "adj. 与直觉相悖的" } ] },
-        { "id": "2014_text1_s05", "para": 2, "en": "Fantasies of great wealth often involve visions of fancy cars and extravagant homes.", "cn": "对于巨额财富的幻想通常会伴随着对“炫车豪宅”的憧憬。", "words": [ { "w": "extravagant", "phonetic": "/ɪkˈstrævəɡənt/", "meaning": "adj. 奢华的，铺张的" } ] },
-        { "id": "2014_text1_s06", "para": 2, "en": "Yet satisfaction with these material purchases wears off fairly quickly.", "cn": "然而，这些物质购买所带来的满足感会消失得相当快。", "words": [ { "w": "wears off", "meaning": "逐渐消退" } ] },
-        { "id": "2014_text1_s07", "para": 2, "en": "What was once exciting and new becomes old-hat; regret creeps in.", "cn": "曾经令人兴奋又新奇的东西变得陈旧过时，懊悔悄然而至。", "words": [ { "w": "old-hat", "meaning": "过时的，陈旧的" }, { "w": "creeps in", "meaning": "悄然出现，渐渐产生" } ] },
-        { "id": "2014_text1_s08", "para": 2, "en": "It is far better to spend money on experiences, say Ms Dunn and Mr Norton, like interesting trips, unique meals or even going to the cinema.", "cn": "邓恩女士和诺顿先生说道，远不如把钱花在“体验”上，比如说有趣的旅行、独特的餐食、甚至是去看电影。", "words": [ { "w": "spend money on experiences", "meaning": "把钱花在体验上" } ] },
-        { "id": "2014_text1_s09", "para": 2, "en": "These purchases often become more valuable with time - as stories or memories - particularly if they involve feeling more connected to others.", "cn": "随着时间的流逝，这些体验往往会变得更加珍贵——以记忆或故事的形式——尤其是当它们让人感觉到自己与他人联系更紧密时。", "words": [ { "w": "connected to others", "meaning": "与他人联系" } ] },
-        { "id": "2014_text1_s10", "para": 3, "en": "This slim volume is packed with tips to help wage slaves as well as lottery winners get the most \"happiness bang for your buck.\"", "cn": "这本小书满载各种建议，帮助“工薪奴隶”和彩票中奖者们用每一分钱换来最多的快乐。", "words": [ { "w": "slim volume", "meaning": "薄薄的书册" }, { "w": "wage slaves", "meaning": "为薪水所困的上班族" }, { "w": "packed with", "meaning": "充满，塞满" } ] },
-        { "id": "2014_text1_s11", "para": 3, "en": "It seems most people would be better off if they could shorten their commutes to work, spend more time with friends and family and less of it watching television (something the average American spends a whopping two months a year doing, and is hardly jollier for it).", "cn": "似乎大部分人都能通过缩短通勤时间、多陪家人朋友、少看电视（美国人年均竟然有两个月的时间在看电视，却并没有因此更快乐）而过得更好。", "words": [ { "w": "better off", "meaning": "境况更好，更富裕" }, { "w": "commutes to work", "meaning": "上班通勤" }, { "w": "whopping", "meaning": "adj. 巨大的，惊人的" } ] },
-        { "id": "2014_text1_s12", "para": 3, "en": "Buying gifts or giving to charity is often more pleasurable than purchasing things for oneself, and luxuries are most enjoyable when they are consumed sparingly.", "cn": "给他人买礼物或捐款给慈善机构通常比给自己买东西更令人愉悦，有节制地消费奢侈品才能带来最大快乐。", "words": [ { "w": "giving to charity", "meaning": "做慈善捐赠" }, { "w": "consumed sparingly", "meaning": "偶尔、节制地享用" } ] },
-        { "id": "2014_text1_s13", "para": 3, "en": "This is apparently the reason McDonald's restricts the availability of its popular McRib - a marketing trick that has turned the pork sandwich into an object of obsession.", "cn": "显然这正是麦当劳限量供应大受欢迎的烤汁猪排堡的原因所在——这一营销手段已将这种猪肉三明治变成了令人痴迷之物。", "words": [ { "w": "restricts the availability of", "meaning": "限制……的供应" }, { "w": "marketing trick", "meaning": "营销手段" }, { "w": "object of obsession", "meaning": "让人痴迷的对象" } ] },
-        { "id": "2014_text1_s14", "para": 4, "en": "Readers of Happy Money are clearly a privileged lot, anxious about fulfilment, not hunger.", "cn": "《快乐金钱》的读者显然属于一个幸运的群体，渴望得到满足感，而不是担心挨饿。", "words": [ { "w": "a privileged lot", "meaning": "一群享有特权/优渥的人" } ] },
-        { "id": "2014_text1_s15", "para": 4, "en": "Money may not quite buy happiness, but people in wealthier countries are generally happier than those in poor ones.", "cn": "金钱或许不能真正买到幸福，但富裕国家的人们总体上比贫穷国家的人们更幸福。", "words": [ { "w": "buy happiness", "meaning": "买到幸福" } ] },
-        { "id": "2014_text1_s16", "para": 4, "en": "Yet the link between feeling good and spending money on others can be seen among rich and poor people around the world, and scarcity enhances the pleasure of most things for most people.", "cn": "然而，全世界范围内，无论穷人还是富人中，都可以看到“将钱用到别人身上”和“感觉愉悦”的联系，且对大部分人来讲，稀缺性提升了大部分事物的愉悦感。", "words": [ { "w": "spending money on others", "meaning": "把钱花在他人身上" }, { "w": "scarcity", "phonetic": "/ˈskeəsəti/", "meaning": "n. 稀缺，匮乏" } ] },
-        { "id": "2014_text1_s17", "para": 4, "en": "Not everyone will agree with the authors' policy ideas, which range from mandating more holiday time to reducing tax incentives for American homebuyers.", "cn": "并非所有人都会赞同作者从“增加假日时间”到“降低对美国购房者的税收刺激”等政策理念。", "words": [ { "w": "range from", "meaning": "从……到……不等" }, { "w": "tax incentives", "meaning": "税收优惠" } ] },
-        { "id": "2014_text1_s18", "para": 4, "en": "But most people will come away from this book believing it was money well spent.", "cn": "但大部分人读完此书后都会认为，它非常值得购买。", "words": [ { "w": "come away from", "meaning": "读完/离开后（有某种感受）" }, { "w": "money well spent", "meaning": "钱花得值" } ] }
+        {
+          "id": "2014_text1_s01",
+          "para": 1,
+          "en": "What would you do with $590m?",
+          "cn": "你会用 5.9 亿美元做什么？",
+          "words": []
+        },
+        {
+          "id": "2014_text1_s02",
+          "para": 1,
+          "en": "This is now a question for Gloria MacKenzie, an 84-year-old widow who recently emerged from her small, tin-roofed house in Florida to collect the biggest undivided lottery jackpot in history.",
+          "cn": "这是如今摆在歌莉娅·麦肯齐面前的问题。她是一位 84 岁寡居老人，住在佛罗里达一间狭窄铁皮屋里，最近因独揽史上最高金额彩票头奖并现身领奖而为人所关注。",
+          "words": [
+            {
+              "w": "widow",
+              "phonetic": "/ˈwɪdəʊ/",
+              "meaning": "n. 寡妇"
+            },
+            {
+              "w": "lottery jackpot",
+              "meaning": "彩票头奖"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s03",
+          "para": 1,
+          "en": "If she hopes her new-found fortune will yield lasting feelings of fulfilment, she could do worse than read Happy Money by Elizabeth Dunn and Michael Norton.",
+          "cn": "如果她希望这笔新到手的财富能够产生长久满足感，倒不妨读读伊丽莎白·邓恩与迈克·诺顿合著的《快乐金钱》。",
+          "words": [
+            {
+              "w": "new-found fortune",
+              "meaning": "新得的财富"
+            },
+            {
+              "w": "lasting feelings of fulfilment",
+              "meaning": "持久的满足感"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s04",
+          "para": 2,
+          "en": "These two academics use an array of behavioral research to show that the most rewarding ways to spend money can be counterintuitive.",
+          "cn": "这两位学者运用一系列行为研究表明，最有意义的花钱方式可能是与直觉相反的。",
+          "words": [
+            {
+              "w": "an array of",
+              "meaning": "一系列，大量的"
+            },
+            {
+              "w": "counterintuitive",
+              "meaning": "adj. 与直觉相悖的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s05",
+          "para": 2,
+          "en": "Fantasies of great wealth often involve visions of fancy cars and extravagant homes.",
+          "cn": "对于巨额财富的幻想通常会伴随着对“炫车豪宅”的憧憬。",
+          "words": [
+            {
+              "w": "extravagant",
+              "phonetic": "/ɪkˈstrævəɡənt/",
+              "meaning": "adj. 奢华的，铺张的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s06",
+          "para": 2,
+          "en": "Yet satisfaction with these material purchases wears off fairly quickly.",
+          "cn": "然而，这些物质购买所带来的满足感会消失得相当快。",
+          "words": [
+            {
+              "w": "wears off",
+              "meaning": "逐渐消退"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s07",
+          "para": 2,
+          "en": "What was once exciting and new becomes old-hat; regret creeps in.",
+          "cn": "曾经令人兴奋又新奇的东西变得陈旧过时，懊悔悄然而至。",
+          "words": [
+            {
+              "w": "old-hat",
+              "meaning": "过时的，陈旧的"
+            },
+            {
+              "w": "creeps in",
+              "meaning": "悄然出现，渐渐产生"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s08",
+          "para": 2,
+          "en": "It is far better to spend money on experiences, say Ms Dunn and Mr Norton, like interesting trips, unique meals or even going to the cinema.",
+          "cn": "邓恩女士和诺顿先生说道，远不如把钱花在“体验”上，比如说有趣的旅行、独特的餐食、甚至是去看电影。",
+          "words": [
+            {
+              "w": "spend money on experiences",
+              "meaning": "把钱花在体验上"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s09",
+          "para": 2,
+          "en": "These purchases often become more valuable with time - as stories or memories - particularly if they involve feeling more connected to others.",
+          "cn": "随着时间的流逝，这些体验往往会变得更加珍贵——以记忆或故事的形式——尤其是当它们让人感觉到自己与他人联系更紧密时。",
+          "words": [
+            {
+              "w": "connected to others",
+              "meaning": "与他人联系"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s10",
+          "para": 3,
+          "en": "This slim volume is packed with tips to help wage slaves as well as lottery winners get the most \"happiness bang for your buck.\"",
+          "cn": "这本小书满载各种建议，帮助“工薪奴隶”和彩票中奖者们用每一分钱换来最多的快乐。",
+          "words": [
+            {
+              "w": "slim volume",
+              "meaning": "薄薄的书册"
+            },
+            {
+              "w": "wage slaves",
+              "meaning": "为薪水所困的上班族"
+            },
+            {
+              "w": "packed with",
+              "meaning": "充满，塞满"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s11",
+          "para": 3,
+          "en": "It seems most people would be better off if they could shorten their commutes to work, spend more time with friends and family and less of it watching television (something the average American spends a whopping two months a year doing, and is hardly jollier for it).",
+          "cn": "似乎大部分人都能通过缩短通勤时间、多陪家人朋友、少看电视（美国人年均竟然有两个月的时间在看电视，却并没有因此更快乐）而过得更好。",
+          "words": [
+            {
+              "w": "better off",
+              "meaning": "境况更好，更富裕"
+            },
+            {
+              "w": "commutes to work",
+              "meaning": "上班通勤"
+            },
+            {
+              "w": "whopping",
+              "meaning": "adj. 巨大的，惊人的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s12",
+          "para": 3,
+          "en": "Buying gifts or giving to charity is often more pleasurable than purchasing things for oneself, and luxuries are most enjoyable when they are consumed sparingly.",
+          "cn": "给他人买礼物或捐款给慈善机构通常比给自己买东西更令人愉悦，有节制地消费奢侈品才能带来最大快乐。",
+          "words": [
+            {
+              "w": "giving to charity",
+              "meaning": "做慈善捐赠"
+            },
+            {
+              "w": "consumed sparingly",
+              "meaning": "偶尔、节制地享用"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s13",
+          "para": 3,
+          "en": "This is apparently the reason McDonald's restricts the availability of its popular McRib - a marketing trick that has turned the pork sandwich into an object of obsession.",
+          "cn": "显然这正是麦当劳限量供应大受欢迎的烤汁猪排堡的原因所在——这一营销手段已将这种猪肉三明治变成了令人痴迷之物。",
+          "words": [
+            {
+              "w": "restricts the availability of",
+              "meaning": "限制……的供应"
+            },
+            {
+              "w": "marketing trick",
+              "meaning": "营销手段"
+            },
+            {
+              "w": "object of obsession",
+              "meaning": "让人痴迷的对象"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s14",
+          "para": 4,
+          "en": "Readers of Happy Money are clearly a privileged lot, anxious about fulfilment, not hunger.",
+          "cn": "《快乐金钱》的读者显然属于一个幸运的群体，渴望得到满足感，而不是担心挨饿。",
+          "words": [
+            {
+              "w": "a privileged lot",
+              "meaning": "一群享有特权/优渥的人"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s15",
+          "para": 4,
+          "en": "Money may not quite buy happiness, but people in wealthier countries are generally happier than those in poor ones.",
+          "cn": "金钱或许不能真正买到幸福，但富裕国家的人们总体上比贫穷国家的人们更幸福。",
+          "words": [
+            {
+              "w": "buy happiness",
+              "meaning": "买到幸福"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s16",
+          "para": 4,
+          "en": "Yet the link between feeling good and spending money on others can be seen among rich and poor people around the world, and scarcity enhances the pleasure of most things for most people.",
+          "cn": "然而，全世界范围内，无论穷人还是富人中，都可以看到“将钱用到别人身上”和“感觉愉悦”的联系，且对大部分人来讲，稀缺性提升了大部分事物的愉悦感。",
+          "words": [
+            {
+              "w": "spending money on others",
+              "meaning": "把钱花在他人身上"
+            },
+            {
+              "w": "scarcity",
+              "phonetic": "/ˈskeəsəti/",
+              "meaning": "n. 稀缺，匮乏"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s17",
+          "para": 4,
+          "en": "Not everyone will agree with the authors' policy ideas, which range from mandating more holiday time to reducing tax incentives for American homebuyers.",
+          "cn": "并非所有人都会赞同作者从“增加假日时间”到“降低对美国购房者的税收刺激”等政策理念。",
+          "words": [
+            {
+              "w": "range from",
+              "meaning": "从……到……不等"
+            },
+            {
+              "w": "tax incentives",
+              "meaning": "税收优惠"
+            }
+          ]
+        },
+        {
+          "id": "2014_text1_s18",
+          "para": 4,
+          "en": "But most people will come away from this book believing it was money well spent.",
+          "cn": "但大部分人读完此书后都会认为，它非常值得购买。",
+          "words": [
+            {
+              "w": "come away from",
+              "meaning": "读完/离开后（有某种感受）"
+            },
+            {
+              "w": "money well spent",
+              "meaning": "钱花得值"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2014_text1_q1", "number": 21, "qtype": "detail", "stem": "According to Dunn and Norton, which of the following is the most rewarding purchase?", "stem_cn": "根据邓恩和诺顿的观点，下列哪一项是最令人满足的消费？", "options": { "A": "A big house.", "B": "A special tour.", "C": "A stylish car.", "D": "A rich meal." }, "options_cn": { "A": "一栋大房子。", "B": "一次特别的旅行。", "C": "一辆时髦的汽车。", "D": "一顿丰盛的大餐。" }, "answer": "B", "explanation": "第二段指出把钱花在“体验”上最令人满足，如有趣的旅行、独特的美食或看电影；[B] 的 special tour 正是“旅行”这类体验消费，故为答案。[A][C] 属被否定的物质购买，[D] 的 meal 虽被提及，但选项强调 rich（丰盛），偏离“独特体验”之意。", "related_sentences": [ "2014_text1_s04", "2014_text1_s08" ] },
-        { "id": "2014_text1_q2", "number": 22, "qtype": "attitude", "stem": "The author's attitude toward Americans' watching TV is ___.", "stem_cn": "作者对美国人看电视的态度是___。", "options": { "A": "critical", "B": "supportive", "C": "sympathetic", "D": "ambiguous" }, "options_cn": { "A": "批评的", "B": "支持的", "C": "同情的", "D": "含糊的" }, "answer": "A", "explanation": "第三段以括号补充说明普通美国人一年花两个月看电视，却“几乎并未因此更快乐”（hardly jollier for it），流露出对这一行为的批评态度，故选 [A]。", "related_sentences": [ "2014_text1_s11" ] },
-        { "id": "2014_text1_q3", "number": 23, "qtype": "example", "stem": "McRib is mentioned in Paragraph 3 to show that ___.", "stem_cn": "第三段提到“麦肋排堡”是为了说明___。", "options": { "A": "consumers are sometimes irrational", "B": "popularity usually comes after quality", "C": "marketing tricks are often effective", "D": "rarity generally increases pleasure" }, "options_cn": { "A": "消费者有时并不理性", "B": "受欢迎通常源于质量", "C": "营销手段往往奏效", "D": "稀缺通常会增加愉悦" }, "answer": "D", "explanation": "麦肋排堡的例子紧承“奢侈品在节制享用时最令人享受”之论断，说明限量供应制造了稀缺，从而提升了愉悦感，[D] 正确。[C] 虽提及 marketing trick，但该例证的落脚点是“稀缺提升愉悦”，而非营销本身。", "related_sentences": [ "2014_text1_s12", "2014_text1_s13" ] },
-        { "id": "2014_text1_q4", "number": 24, "qtype": "detail", "stem": "According to the last paragraph, Happy Money ___.", "stem_cn": "根据最后一段，《幸福的金钱》___。", "options": { "A": "has left much room for readers' criticism", "B": "may prove to be a worthwhile purchase", "C": "has predicted a wider income gap in the US", "D": "may give its readers a sense of achievement" }, "options_cn": { "A": "给读者留下了很多批评的空间", "B": "可能被证明是一次值得的购买", "C": "预言了美国收入差距会扩大", "D": "可能给读者带来成就感" }, "answer": "B", "explanation": "末段末句指出大多数人读完此书都会认为“这钱花得值”（money well spent），[B] 的 worthwhile purchase 与之同义，故为答案。", "related_sentences": [ "2014_text1_s18" ] },
-        { "id": "2014_text1_q5", "number": 25, "qtype": "main_idea", "stem": "This text mainly discusses how to ___.", "stem_cn": "本文主要讨论如何___。", "options": { "A": "balance feeling good and spending money", "B": "spend large sums of money won in lotteries", "C": "obtain lasting satisfaction from money spent", "D": "become more reasonable in spending on luxuries" }, "options_cn": { "A": "在愉悦感与花钱之间取得平衡", "B": "花掉彩票赢得的巨款", "C": "从花出去的钱中获得持久的满足", "D": "在奢侈品消费上更理性" }, "answer": "C", "explanation": "全文围绕“如何花钱才能带来持久满足”展开，反复出现 pleasure、feeling good 等主旨词，[C] 恰当概括，故为答案。", "related_sentences": [ "2014_text1_s03", "2014_text1_s16" ] }
+        {
+          "id": "2014_text1_q1",
+          "number": 21,
+          "qtype": "detail",
+          "stem": "According to Dunn and Norton, which of the following is the most rewarding purchase?",
+          "stem_cn": "根据邓恩和诺顿的观点，下列哪一项是最令人满足的消费？",
+          "options": {
+            "A": "A big house.",
+            "B": "A special tour.",
+            "C": "A stylish car.",
+            "D": "A rich meal."
+          },
+          "options_cn": {
+            "A": "一栋大房子。",
+            "B": "一次特别的旅行。",
+            "C": "一辆时髦的汽车。",
+            "D": "一顿丰盛的大餐。"
+          },
+          "answer": "B",
+          "explanation": "第二段指出把钱花在“体验”上最令人满足，如有趣的旅行、独特的美食或看电影；[B] 的 special tour 正是“旅行”这类体验消费，故为答案。[A][C] 属被否定的物质购买，[D] 的 meal 虽被提及，但选项强调 rich（丰盛），偏离“独特体验”之意。",
+          "related_sentences": [
+            "2014_text1_s04",
+            "2014_text1_s08"
+          ]
+        },
+        {
+          "id": "2014_text1_q2",
+          "number": 22,
+          "qtype": "attitude",
+          "stem": "The author's attitude toward Americans' watching TV is ___.",
+          "stem_cn": "作者对美国人看电视的态度是___。",
+          "options": {
+            "A": "critical",
+            "B": "supportive",
+            "C": "sympathetic",
+            "D": "ambiguous"
+          },
+          "options_cn": {
+            "A": "批评的",
+            "B": "支持的",
+            "C": "同情的",
+            "D": "含糊的"
+          },
+          "answer": "A",
+          "explanation": "第三段以括号补充说明普通美国人一年花两个月看电视，却“几乎并未因此更快乐”（hardly jollier for it），流露出对这一行为的批评态度，故选 [A]。",
+          "related_sentences": [
+            "2014_text1_s11"
+          ]
+        },
+        {
+          "id": "2014_text1_q3",
+          "number": 23,
+          "qtype": "example",
+          "stem": "McRib is mentioned in Paragraph 3 to show that ___.",
+          "stem_cn": "第三段提到“麦肋排堡”是为了说明___。",
+          "options": {
+            "A": "consumers are sometimes irrational",
+            "B": "popularity usually comes after quality",
+            "C": "marketing tricks are often effective",
+            "D": "rarity generally increases pleasure"
+          },
+          "options_cn": {
+            "A": "消费者有时并不理性",
+            "B": "受欢迎通常源于质量",
+            "C": "营销手段往往奏效",
+            "D": "稀缺通常会增加愉悦"
+          },
+          "answer": "D",
+          "explanation": "麦肋排堡的例子紧承“奢侈品在节制享用时最令人享受”之论断，说明限量供应制造了稀缺，从而提升了愉悦感，[D] 正确。[C] 虽提及 marketing trick，但该例证的落脚点是“稀缺提升愉悦”，而非营销本身。",
+          "related_sentences": [
+            "2014_text1_s12",
+            "2014_text1_s13"
+          ]
+        },
+        {
+          "id": "2014_text1_q4",
+          "number": 24,
+          "qtype": "detail",
+          "stem": "According to the last paragraph, Happy Money ___.",
+          "stem_cn": "根据最后一段，《幸福的金钱》___。",
+          "options": {
+            "A": "has left much room for readers' criticism",
+            "B": "may prove to be a worthwhile purchase",
+            "C": "has predicted a wider income gap in the US",
+            "D": "may give its readers a sense of achievement"
+          },
+          "options_cn": {
+            "A": "给读者留下了很多批评的空间",
+            "B": "可能被证明是一次值得的购买",
+            "C": "预言了美国收入差距会扩大",
+            "D": "可能给读者带来成就感"
+          },
+          "answer": "B",
+          "explanation": "末段末句指出大多数人读完此书都会认为“这钱花得值”（money well spent），[B] 的 worthwhile purchase 与之同义，故为答案。",
+          "related_sentences": [
+            "2014_text1_s18"
+          ]
+        },
+        {
+          "id": "2014_text1_q5",
+          "number": 25,
+          "qtype": "main_idea",
+          "stem": "This text mainly discusses how to ___.",
+          "stem_cn": "本文主要讨论如何___。",
+          "options": {
+            "A": "balance feeling good and spending money",
+            "B": "spend large sums of money won in lotteries",
+            "C": "obtain lasting satisfaction from money spent",
+            "D": "become more reasonable in spending on luxuries"
+          },
+          "options_cn": {
+            "A": "在愉悦感与花钱之间取得平衡",
+            "B": "花掉彩票赢得的巨款",
+            "C": "从花出去的钱中获得持久的满足",
+            "D": "在奢侈品消费上更理性"
+          },
+          "answer": "C",
+          "explanation": "全文围绕“如何花钱才能带来持久满足”展开，反复出现 pleasure、feeling good 等主旨词，[C] 恰当概括，故为答案。",
+          "related_sentences": [
+            "2014_text1_s03",
+            "2014_text1_s16"
+          ]
+        }
       ]
     },
     {
@@ -44,32 +1897,414 @@
       "topic": "自我美化：我们眼中的自己比真实更漂亮",
       "source": "2014 年考研英语（二）Text 2 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2014_text2_s01", "para": 1, "en": "An article in Scientific American has pointed out that empirical research says that, actually, you think you're more beautiful than you are.", "cn": "《科学美国人》上的一篇文章指出：实证研究表明，事实上你会把自己想得比实际上漂亮。", "words": [ { "w": "empirical research", "meaning": "实证研究" } ] },
-        { "id": "2014_text2_s02", "para": 1, "en": "We have a deep-seated need to feel good about ourselves and we naturally employ a number of self-enhancing strategies to achieve this.", "cn": "我们有一种根深蒂固的需求，让自我感觉良好，而且自然而然地运用许多自我拉抬策略去达成此目的。", "words": [ { "w": "deep-seated", "meaning": "adj. 根深蒂固的" }, { "w": "self-enhancing strategies", "meaning": "自我美化的策略" } ] },
-        { "id": "2014_text2_s03", "para": 1, "en": "Social psychologists have amassed oceans of research into what they call the \"above average effect\", or \"illusory superiority\", and shown that, for example, 70% of us rate ourselves as above average in leadership, 93% in driving and 85% at getting on well with others - all obviously statistical impossibilities.", "cn": "社会心理学家就其所称的“高于均数效应”或“虚幻的优越感”收集了大量的研究，并指出，我们当中有 70% 的人自认为领导力高于常人，93% 的人自认为驾驶能力高于常人，85% 的人自认为与人相处高于常人——而这些显然在统计学上都是不可能的。", "words": [ { "w": "above average effect", "meaning": "高于平均水平效应" }, { "w": "illusory superiority", "meaning": "虚幻的优越感" } ] },
-        { "id": "2014_text2_s04", "para": 2, "en": "We rose-tint our memories and put ourselves into self-affirming situations.", "cn": "我们美化记忆以使自己身处自我肯定状态。", "words": [ { "w": "rose-tint", "meaning": "美化，把……描绘得过于美好" }, { "w": "self-affirming", "meaning": "adj. 自我肯定的" } ] },
-        { "id": "2014_text2_s05", "para": 2, "en": "We become defensive when criticised, and apply negative stereotypes to others to boost our own esteem.", "cn": "被批评时我们变得心存戒备，并用消极成见对待他人以增强自己的自尊。", "words": [ { "w": "become defensive", "meaning": "变得防御" }, { "w": "negative stereotypes", "meaning": "负面的刻板印象" } ] },
-        { "id": "2014_text2_s06", "para": 2, "en": "We stalk around thinking we're hot stuff.", "cn": "我们趾高气昂，自认为很有魅力。", "words": [ { "w": "hot stuff", "meaning": "了不起的人物" } ] },
-        { "id": "2014_text2_s07", "para": 3, "en": "Psychologist and behavioural scientist Nicholas Epley oversaw a key study into self-enhancement and attractiveness.", "cn": "心理学家兼行为科学家尼古拉斯·艾普里对一项有关自我拉抬和吸引力的关键研究进行了监督。", "words": [ { "w": "oversaw", "meaning": "v. 主持，监管（oversee 的过去式）" }, { "w": "self-enhancement", "meaning": "n. 自我美化，自我提升" } ] },
-        { "id": "2014_text2_s08", "para": 3, "en": "Rather than have people simply rate their beauty compared with others, he asked them to identify an original photograph of themselves from a lineup including versions that had been altered to appear more and less attractive.", "cn": "艾普里没有让人们直接将自己的美貌与别人比对，而是让他们从一组被修改过的照片中识别出自己的原始照片，被修改的照片增加或减少了他们的吸引力。", "words": [ { "w": "Rather than", "meaning": "而不是" }, { "w": "lineup", "meaning": "n. （供辨认的）一组照片/人物" } ] },
-        { "id": "2014_text2_s09", "para": 3, "en": "Visual recognition, reads the study, is \"an automatic psychological process, occurring rapidly and intuitively with little or no apparent conscious deliberation\".", "cn": "该研究显示，视觉识别是“自动心理过程，这一过程依靠直觉快速发生，几乎没有或者没有明显的刻意考虑”。", "words": [ { "w": "Visual recognition", "meaning": "视觉识别" }, { "w": "conscious deliberation", "meaning": "有意识的思考/权衡" } ] },
-        { "id": "2014_text2_s10", "para": 3, "en": "If the subjects quickly chose a falsely flattering image - which most did - they genuinely believed it was really how they looked.", "cn": "受试者要是迅速选择了一张虚假的美图——大部分受试者都这么选——他们打心底真是觉着这张照片就是他们真实的样子。", "words": [ { "w": "falsely flattering", "meaning": "失真地美化的" }, { "w": "genuinely", "meaning": "adv. 真心地，真正地" } ] },
-        { "id": "2014_text2_s11", "para": 4, "en": "Epley found no significant gender difference in responses.", "cn": "艾普里发现，回答中并无明显的性别差异。", "words": [ { "w": "gender difference", "meaning": "性别差异" } ] },
-        { "id": "2014_text2_s12", "para": 4, "en": "Nor was there any evidence that those who self-enhanced the most (that is, the participants who thought the most positively doctored pictures were real) were doing so to make up for profound insecurities.", "cn": "也没有任何证据表明，那些自我拉抬程度最高的人（即那些认为被过度美化的照片是真实的参与者）这样做是为了弥补深层的不安全感。", "words": [ { "w": "doctored", "meaning": "v. 篡改，修改（图片）" }, { "w": "make up for", "meaning": "弥补" }, { "w": "profound insecurities", "meaning": "深刻的不安感" } ] },
-        { "id": "2014_text2_s13", "para": 4, "en": "In fact, those who thought that the images higher up the attractiveness scale were real directly corresponded with those who showed other markers for having higher self-esteem.", "cn": "事实上，那些认为吸引力评分更高的照片是真实的人，恰恰与那些表现出其他高自尊标志的人相吻合。", "words": [ { "w": "attractiveness scale", "meaning": "吸引力量表/等级" }, { "w": "self-esteem", "meaning": "n. 自尊" } ] },
-        { "id": "2014_text2_s14", "para": 4, "en": "\"I don't think the findings that we have are any evidence of personal delusion,\" says Epley.", "cn": "艾普里说：“我认为我们的发现根本不能证明个人存在妄想。”", "words": [ { "w": "personal delusion", "meaning": "个人妄想" } ] },
-        { "id": "2014_text2_s15", "para": 4, "en": "\"It's a reflection simply of people generally thinking well of themselves.\"", "cn": "“它仅仅反映了人们普遍自我感觉良好。”", "words": [ { "w": "thinking well of", "meaning": "对……评价高，看好" } ] },
-        { "id": "2014_text2_s16", "para": 4, "en": "If you are depressed, you won't be self-enhancing.", "cn": "如果你情绪低落，就不会进行自我拉抬。", "words": [ { "w": "depressed", "phonetic": "/dɪˈprest/", "meaning": "adj. 情绪低落的，抑郁的" } ] },
-        { "id": "2014_text2_s17", "para": 5, "en": "Knowing the results of Epley's study, it makes sense that many people hate photographs of themselves viscerally - on one level, they don't even recognise the person in the picture as themselves.", "cn": "了解了艾普里的研究结果，就明白许多人为什么打心眼里反感自己的真实照片——在某种程度上，他们甚至没有意识到照片上的人就是自己。", "words": [ { "w": "viscerally", "meaning": "adv. 本能地，发自内心地" }, { "w": "makes sense", "meaning": "说得通，有道理" } ] },
-        { "id": "2014_text2_s18", "para": 5, "en": "Facebook, therefore, is a self-enhancer's paradise, where people can share only the most flattering photos, the cream of their wit, style, beauty, intellect and lifestyles.", "cn": "因此，Facebook 就成为了自我拉抬者的乐园，用户们可以只在上面分享自己最美的照片以及他们的风趣、风格、美丽、才智和生活方式的精华部分。", "words": [ { "w": "self-enhancer's paradise", "meaning": "自我美化者的天堂" }, { "w": "the cream of", "meaning": "……中的精华" } ] },
-        { "id": "2014_text2_s19", "para": 5, "en": "It's not that people's profiles are dishonest, says Catalina Toma of Wisconsin-Madison University, \"but they portray an idealised version of themselves.\"", "cn": "威斯康星大学麦迪逊分校的凯特莉娜·托马说，“这并不是说人们在自身形象上不诚实，而是他们为自己绘制了一幅理想画像”。", "words": [ { "w": "profiles", "meaning": "n. （网络）个人资料" }, { "w": "idealised version", "meaning": "理想化的版本" } ] }
+        {
+          "id": "2014_text2_s01",
+          "para": 1,
+          "en": "An article in Scientific American has pointed out that empirical research says that, actually, you think you're more beautiful than you are.",
+          "cn": "《科学美国人》上的一篇文章指出：实证研究表明，事实上你会把自己想得比实际上漂亮。",
+          "words": [
+            {
+              "w": "empirical research",
+              "meaning": "实证研究"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s02",
+          "para": 1,
+          "en": "We have a deep-seated need to feel good about ourselves and we naturally employ a number of self-enhancing strategies to achieve this.",
+          "cn": "我们有一种根深蒂固的需求，让自我感觉良好，而且自然而然地运用许多自我拉抬策略去达成此目的。",
+          "words": [
+            {
+              "w": "deep-seated",
+              "meaning": "adj. 根深蒂固的"
+            },
+            {
+              "w": "self-enhancing strategies",
+              "meaning": "自我美化的策略"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s03",
+          "para": 1,
+          "en": "Social psychologists have amassed oceans of research into what they call the \"above average effect\", or \"illusory superiority\", and shown that, for example, 70% of us rate ourselves as above average in leadership, 93% in driving and 85% at getting on well with others - all obviously statistical impossibilities.",
+          "cn": "社会心理学家就其所称的“高于均数效应”或“虚幻的优越感”收集了大量的研究，并指出，我们当中有 70% 的人自认为领导力高于常人，93% 的人自认为驾驶能力高于常人，85% 的人自认为与人相处高于常人——而这些显然在统计学上都是不可能的。",
+          "words": [
+            {
+              "w": "above average effect",
+              "meaning": "高于平均水平效应"
+            },
+            {
+              "w": "illusory superiority",
+              "meaning": "虚幻的优越感"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s04",
+          "para": 2,
+          "en": "We rose-tint our memories and put ourselves into self-affirming situations.",
+          "cn": "我们美化记忆以使自己身处自我肯定状态。",
+          "words": [
+            {
+              "w": "rose-tint",
+              "meaning": "美化，把……描绘得过于美好"
+            },
+            {
+              "w": "self-affirming",
+              "meaning": "adj. 自我肯定的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s05",
+          "para": 2,
+          "en": "We become defensive when criticised, and apply negative stereotypes to others to boost our own esteem.",
+          "cn": "被批评时我们变得心存戒备，并用消极成见对待他人以增强自己的自尊。",
+          "words": [
+            {
+              "w": "become defensive",
+              "meaning": "变得防御"
+            },
+            {
+              "w": "negative stereotypes",
+              "meaning": "负面的刻板印象"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s06",
+          "para": 2,
+          "en": "We stalk around thinking we're hot stuff.",
+          "cn": "我们趾高气昂，自认为很有魅力。",
+          "words": [
+            {
+              "w": "hot stuff",
+              "meaning": "了不起的人物"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s07",
+          "para": 3,
+          "en": "Psychologist and behavioural scientist Nicholas Epley oversaw a key study into self-enhancement and attractiveness.",
+          "cn": "心理学家兼行为科学家尼古拉斯·艾普里对一项有关自我拉抬和吸引力的关键研究进行了监督。",
+          "words": [
+            {
+              "w": "oversaw",
+              "meaning": "v. 主持，监管（oversee 的过去式）"
+            },
+            {
+              "w": "self-enhancement",
+              "meaning": "n. 自我美化，自我提升"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s08",
+          "para": 3,
+          "en": "Rather than have people simply rate their beauty compared with others, he asked them to identify an original photograph of themselves from a lineup including versions that had been altered to appear more and less attractive.",
+          "cn": "艾普里没有让人们直接将自己的美貌与别人比对，而是让他们从一组被修改过的照片中识别出自己的原始照片，被修改的照片增加或减少了他们的吸引力。",
+          "words": [
+            {
+              "w": "Rather than",
+              "meaning": "而不是"
+            },
+            {
+              "w": "lineup",
+              "meaning": "n. （供辨认的）一组照片/人物"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s09",
+          "para": 3,
+          "en": "Visual recognition, reads the study, is \"an automatic psychological process, occurring rapidly and intuitively with little or no apparent conscious deliberation\".",
+          "cn": "该研究显示，视觉识别是“自动心理过程，这一过程依靠直觉快速发生，几乎没有或者没有明显的刻意考虑”。",
+          "words": [
+            {
+              "w": "Visual recognition",
+              "meaning": "视觉识别"
+            },
+            {
+              "w": "conscious deliberation",
+              "meaning": "有意识的思考/权衡"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s10",
+          "para": 3,
+          "en": "If the subjects quickly chose a falsely flattering image - which most did - they genuinely believed it was really how they looked.",
+          "cn": "受试者要是迅速选择了一张虚假的美图——大部分受试者都这么选——他们打心底真是觉着这张照片就是他们真实的样子。",
+          "words": [
+            {
+              "w": "falsely flattering",
+              "meaning": "失真地美化的"
+            },
+            {
+              "w": "genuinely",
+              "meaning": "adv. 真心地，真正地"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s11",
+          "para": 4,
+          "en": "Epley found no significant gender difference in responses.",
+          "cn": "艾普里发现，回答中并无明显的性别差异。",
+          "words": [
+            {
+              "w": "gender difference",
+              "meaning": "性别差异"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s12",
+          "para": 4,
+          "en": "Nor was there any evidence that those who self-enhanced the most (that is, the participants who thought the most positively doctored pictures were real) were doing so to make up for profound insecurities.",
+          "cn": "也没有任何证据表明，那些自我拉抬程度最高的人（即那些认为被过度美化的照片是真实的参与者）这样做是为了弥补深层的不安全感。",
+          "words": [
+            {
+              "w": "doctored",
+              "meaning": "v. 篡改，修改（图片）"
+            },
+            {
+              "w": "make up for",
+              "meaning": "弥补"
+            },
+            {
+              "w": "profound insecurities",
+              "meaning": "深刻的不安感"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s13",
+          "para": 4,
+          "en": "In fact, those who thought that the images higher up the attractiveness scale were real directly corresponded with those who showed other markers for having higher self-esteem.",
+          "cn": "事实上，那些认为吸引力评分更高的照片是真实的人，恰恰与那些表现出其他高自尊标志的人相吻合。",
+          "words": [
+            {
+              "w": "attractiveness scale",
+              "meaning": "吸引力量表/等级"
+            },
+            {
+              "w": "self-esteem",
+              "meaning": "n. 自尊"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s14",
+          "para": 4,
+          "en": "\"I don't think the findings that we have are any evidence of personal delusion,\" says Epley.",
+          "cn": "艾普里说：“我认为我们的发现根本不能证明个人存在妄想。”",
+          "words": [
+            {
+              "w": "personal delusion",
+              "meaning": "个人妄想"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s15",
+          "para": 4,
+          "en": "\"It's a reflection simply of people generally thinking well of themselves.\"",
+          "cn": "“它仅仅反映了人们普遍自我感觉良好。”",
+          "words": [
+            {
+              "w": "thinking well of",
+              "meaning": "对……评价高，看好"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s16",
+          "para": 4,
+          "en": "If you are depressed, you won't be self-enhancing.",
+          "cn": "如果你情绪低落，就不会进行自我拉抬。",
+          "words": [
+            {
+              "w": "depressed",
+              "phonetic": "/dɪˈprest/",
+              "meaning": "adj. 情绪低落的，抑郁的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s17",
+          "para": 5,
+          "en": "Knowing the results of Epley's study, it makes sense that many people hate photographs of themselves viscerally - on one level, they don't even recognise the person in the picture as themselves.",
+          "cn": "了解了艾普里的研究结果，就明白许多人为什么打心眼里反感自己的真实照片——在某种程度上，他们甚至没有意识到照片上的人就是自己。",
+          "words": [
+            {
+              "w": "viscerally",
+              "meaning": "adv. 本能地，发自内心地"
+            },
+            {
+              "w": "makes sense",
+              "meaning": "说得通，有道理"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s18",
+          "para": 5,
+          "en": "Facebook, therefore, is a self-enhancer's paradise, where people can share only the most flattering photos, the cream of their wit, style, beauty, intellect and lifestyles.",
+          "cn": "因此，Facebook 就成为了自我拉抬者的乐园，用户们可以只在上面分享自己最美的照片以及他们的风趣、风格、美丽、才智和生活方式的精华部分。",
+          "words": [
+            {
+              "w": "self-enhancer's paradise",
+              "meaning": "自我美化者的天堂"
+            },
+            {
+              "w": "the cream of",
+              "meaning": "……中的精华"
+            }
+          ]
+        },
+        {
+          "id": "2014_text2_s19",
+          "para": 5,
+          "en": "It's not that people's profiles are dishonest, says Catalina Toma of Wisconsin-Madison University, \"but they portray an idealised version of themselves.\"",
+          "cn": "威斯康星大学麦迪逊分校的凯特莉娜·托马说，“这并不是说人们在自身形象上不诚实，而是他们为自己绘制了一幅理想画像”。",
+          "words": [
+            {
+              "w": "profiles",
+              "meaning": "n. （网络）个人资料"
+            },
+            {
+              "w": "idealised version",
+              "meaning": "理想化的版本"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2014_text2_q1", "number": 26, "qtype": "detail", "stem": "According to the first paragraph, social psychologists have found that ___.", "stem_cn": "根据第一段，社会心理学家发现___。", "options": { "A": "our self-ratings are unrealistically high", "B": "illusory superiority is a baseless effect", "C": "our need for leadership is unnatural", "D": "self-enhancing strategies are ineffective" }, "options_cn": { "A": "我们的自我评分高得不切实际", "B": "虚幻的优越感是一种毫无根据的效应", "C": "我们对领导力的需求是不自然的", "D": "自我美化策略是无效的" }, "answer": "A", "explanation": "第一段举出 70%、93%、85% 等数据，说明人们普遍把自己评价为“高于平均”，而这些在统计上不可能同时成立，即自我评分过高不切实际，[A] 正确。", "related_sentences": [ "2014_text2_s03" ] },
-        { "id": "2014_text2_q2", "number": 27, "qtype": "detail", "stem": "Visual recognition is believed to be people's ___.", "stem_cn": "视觉识别被认为是人们的___。", "options": { "A": "rapid matching", "B": "conscious choice", "C": "intuitive response", "D": "automatic self-defence" }, "options_cn": { "A": "快速匹配", "B": "有意识的选择", "C": "直觉反应", "D": "自动自我防御" }, "answer": "C", "explanation": "第三段引用研究指出视觉识别是“快速、凭直觉发生、几乎不需有意识思考”的自动过程，intuitively 对应 [C] 的 intuitive response，故选 [C]。", "related_sentences": [ "2014_text2_s09" ] },
-        { "id": "2014_text2_q3", "number": 28, "qtype": "detail", "stem": "Epley found that people with higher self-esteem tended to ___.", "stem_cn": "埃普利发现，自尊更高的人倾向于___。", "options": { "A": "underestimate their insecurities", "B": "believe in their attractiveness", "C": "cover up their depressions", "D": "oversimplify their illusions" }, "options_cn": { "A": "低估自己的不安感", "B": "相信自己的吸引力", "C": "掩盖自己的抑郁", "D": "过度简化自己的妄想" }, "answer": "B", "explanation": "第四段指出，那些认为“吸引力更高的图片才是真”的人与“自尊更高”的人直接对应，即自尊高的人倾向于相信自身吸引力，[B] 正确。", "related_sentences": [ "2014_text2_s13" ] },
-        { "id": "2014_text2_q4", "number": 29, "qtype": "vocabulary", "stem": "The word \"viscerally\" (Line 2, Para.5) is closest in meaning to ___.", "stem_cn": "第五段第二行中的 \"viscerally\" 一词意思最接近于___。", "options": { "A": "instinctively", "B": "occasionally", "C": "particularly", "D": "aggressively" }, "options_cn": { "A": "本能地", "B": "偶尔地", "C": "特别地", "D": "咄咄逼人地" }, "answer": "A", "explanation": "viscerally 意为“发自内心地、本能地”，与上下文“人们本能地不喜欢自己的真实照片”逻辑一致，[A] instinctively（本能地）与之同义，故为答案。", "related_sentences": [ "2014_text2_s17" ] },
-        { "id": "2014_text2_q5", "number": 30, "qtype": "inference", "stem": "It can be inferred that Facebook is a self-enhancer's paradise because people can ___.", "stem_cn": "可以推断，Facebook 是自我美化者的天堂，因为人们可以___。", "options": { "A": "present their dishonest profiles", "B": "define their traditional lifestyles", "C": "share their intellectual pursuits", "D": "withhold their unflattering sides" }, "options_cn": { "A": "展示不诚实的个人资料", "B": "界定他们传统的生活方式", "C": "分享他们的智力追求", "D": "隐藏自己不讨人喜欢的一面" }, "answer": "D", "explanation": "第五段指出人们在 Facebook 上只分享最讨人喜欢、最精华的照片，即隐藏不讨人喜欢的一面，[D] 正确。[A] 与末句“并非个人资料不诚实”相反。", "related_sentences": [ "2014_text2_s18", "2014_text2_s19" ] }
+        {
+          "id": "2014_text2_q1",
+          "number": 26,
+          "qtype": "detail",
+          "stem": "According to the first paragraph, social psychologists have found that ___.",
+          "stem_cn": "根据第一段，社会心理学家发现___。",
+          "options": {
+            "A": "our self-ratings are unrealistically high",
+            "B": "illusory superiority is a baseless effect",
+            "C": "our need for leadership is unnatural",
+            "D": "self-enhancing strategies are ineffective"
+          },
+          "options_cn": {
+            "A": "我们的自我评分高得不切实际",
+            "B": "虚幻的优越感是一种毫无根据的效应",
+            "C": "我们对领导力的需求是不自然的",
+            "D": "自我美化策略是无效的"
+          },
+          "answer": "A",
+          "explanation": "第一段举出 70%、93%、85% 等数据，说明人们普遍把自己评价为“高于平均”，而这些在统计上不可能同时成立，即自我评分过高不切实际，[A] 正确。",
+          "related_sentences": [
+            "2014_text2_s03"
+          ]
+        },
+        {
+          "id": "2014_text2_q2",
+          "number": 27,
+          "qtype": "detail",
+          "stem": "Visual recognition is believed to be people's ___.",
+          "stem_cn": "视觉识别被认为是人们的___。",
+          "options": {
+            "A": "rapid matching",
+            "B": "conscious choice",
+            "C": "intuitive response",
+            "D": "automatic self-defence"
+          },
+          "options_cn": {
+            "A": "快速匹配",
+            "B": "有意识的选择",
+            "C": "直觉反应",
+            "D": "自动自我防御"
+          },
+          "answer": "C",
+          "explanation": "第三段引用研究指出视觉识别是“快速、凭直觉发生、几乎不需有意识思考”的自动过程，intuitively 对应 [C] 的 intuitive response，故选 [C]。",
+          "related_sentences": [
+            "2014_text2_s09"
+          ]
+        },
+        {
+          "id": "2014_text2_q3",
+          "number": 28,
+          "qtype": "detail",
+          "stem": "Epley found that people with higher self-esteem tended to ___.",
+          "stem_cn": "埃普利发现，自尊更高的人倾向于___。",
+          "options": {
+            "A": "underestimate their insecurities",
+            "B": "believe in their attractiveness",
+            "C": "cover up their depressions",
+            "D": "oversimplify their illusions"
+          },
+          "options_cn": {
+            "A": "低估自己的不安感",
+            "B": "相信自己的吸引力",
+            "C": "掩盖自己的抑郁",
+            "D": "过度简化自己的妄想"
+          },
+          "answer": "B",
+          "explanation": "第四段指出，那些认为“吸引力更高的图片才是真”的人与“自尊更高”的人直接对应，即自尊高的人倾向于相信自身吸引力，[B] 正确。",
+          "related_sentences": [
+            "2014_text2_s13"
+          ]
+        },
+        {
+          "id": "2014_text2_q4",
+          "number": 29,
+          "qtype": "vocabulary",
+          "stem": "The word \"viscerally\" (Line 2, Para.5) is closest in meaning to ___.",
+          "stem_cn": "第五段第二行中的 \"viscerally\" 一词意思最接近于___。",
+          "options": {
+            "A": "instinctively",
+            "B": "occasionally",
+            "C": "particularly",
+            "D": "aggressively"
+          },
+          "options_cn": {
+            "A": "本能地",
+            "B": "偶尔地",
+            "C": "特别地",
+            "D": "咄咄逼人地"
+          },
+          "answer": "A",
+          "explanation": "viscerally 意为“发自内心地、本能地”，与上下文“人们本能地不喜欢自己的真实照片”逻辑一致，[A] instinctively（本能地）与之同义，故为答案。",
+          "related_sentences": [
+            "2014_text2_s17"
+          ]
+        },
+        {
+          "id": "2014_text2_q5",
+          "number": 30,
+          "qtype": "inference",
+          "stem": "It can be inferred that Facebook is a self-enhancer's paradise because people can ___.",
+          "stem_cn": "可以推断，Facebook 是自我美化者的天堂，因为人们可以___。",
+          "options": {
+            "A": "present their dishonest profiles",
+            "B": "define their traditional lifestyles",
+            "C": "share their intellectual pursuits",
+            "D": "withhold their unflattering sides"
+          },
+          "options_cn": {
+            "A": "展示不诚实的个人资料",
+            "B": "界定他们传统的生活方式",
+            "C": "分享他们的智力追求",
+            "D": "隐藏自己不讨人喜欢的一面"
+          },
+          "answer": "D",
+          "explanation": "第五段指出人们在 Facebook 上只分享最讨人喜欢、最精华的照片，即隐藏不讨人喜欢的一面，[D] 正确。[A] 与末句“并非个人资料不诚实”相反。",
+          "related_sentences": [
+            "2014_text2_s18",
+            "2014_text2_s19"
+          ]
+        }
       ]
     },
     {
@@ -79,32 +2314,402 @@
       "topic": "人机之争：与机器同跑而非赛跑",
       "source": "2014 年考研英语（二）Text 3 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2014_text3_s01", "para": 1, "en": "The concept of man versus machine is at least as old as the industrial revolution, but this phenomenon tends to be most acutely felt during economic downturns and fragile recoveries.", "cn": "“人机矛盾”这一概念至少可以上溯到工业革命时期，但这一现象在经济下滑且复苏乏力的情形下给人的感受最为强烈。", "words": [ { "w": "man versus machine", "meaning": "人与机器的对立" }, { "w": "economic downturns", "meaning": "经济衰退" } ] },
-        { "id": "2014_text3_s02", "para": 1, "en": "And yet, it would be a mistake to think we are right now simply experiencing the painful side of a boom and bust cycle.", "cn": "然而，那种认为“我们现在仅仅是处于繁荣与萧条循环周期的令人痛苦的一面”的想法是个错误。", "words": [ { "w": "boom and bust cycle", "meaning": "繁荣与萧条周期" } ] },
-        { "id": "2014_text3_s03", "para": 1, "en": "Certain jobs have gone away for good, outmoded by machines.", "cn": "因使用机器而过时的某些工作已永远地消失了。", "words": [ { "w": "for good", "meaning": "永久地" }, { "w": "outmoded", "meaning": "v. 使过时，淘汰" } ] },
-        { "id": "2014_text3_s04", "para": 1, "en": "Since technology has such an insatiable appetite for eating up human jobs, this phenomenon will continue to restructure our economy in ways we cannot immediately foresee.", "cn": "由于技术在吞噬人类工作方面非常“贪得无厌”，所以这一现象将会继续以难以即时预料的方式重构我们的经济。", "words": [ { "w": "insatiable appetite", "meaning": "无法满足的胃口/欲望" }, { "w": "eating up", "meaning": "吞噬，耗尽" } ] },
-        { "id": "2014_text3_s05", "para": 2, "en": "When there is rapid improvement in the price and performance of technology, jobs that were once thought to be immune from automation suddenly become threatened.", "cn": "当技术在价格、性能方面大为改善时，那些曾经被认为对自动化免疫的工作也就会突然受到威胁。", "words": [ { "w": "immune from", "meaning": "不受……影响，免于" }, { "w": "automation", "phonetic": "/ˌɔːtəˈmeɪʃn/", "meaning": "n. 自动化" } ] },
-        { "id": "2014_text3_s06", "para": 2, "en": "This argument has attracted a lot of attention, via the success of the book Race Against the Machine, by Erik Brynjolfsson and Andrew McAfee, who both hail from MIT's Center for Digital Business.", "cn": "这一观点得益于《与机器赛跑》一书的热卖，已获得广泛关注。该书两位作者埃里克·布伦乔尔森与安德鲁·迈克菲均来自麻省理工学院数字化商业中心。", "words": [ { "w": "hail from", "meaning": "来自，原籍为" } ] },
-        { "id": "2014_text3_s07", "para": 3, "en": "This is a powerful argument, and a scary one.", "cn": "这是个很有说服力，但又让人恐慌的观点。", "words": [ { "w": "scary", "phonetic": "/ˈskeəri/", "meaning": "adj. 令人恐慌的" } ] },
-        { "id": "2014_text3_s08", "para": 3, "en": "And yet, John Hagel, author of The Power of Pull and other books, says Brynjolfsson and McAfee miss the reason why these jobs are so vulnerable to technology in the first place.", "cn": "然而，著有《拉动力》和其他书作的约翰·哈格尔认为，布伦乔尔森和迈克菲忽视了这些工作在技术面前不堪一击的根本原因。", "words": [ { "w": "vulnerable to", "meaning": "易受……伤害的，对……不堪一击" }, { "w": "in the first place", "meaning": "当初，首先" } ] },
-        { "id": "2014_text3_s09", "para": 4, "en": "Hagel says we have designed jobs in the U.S. that tend to be \"tightly scripted\" and \"highly standardized\" ones that leave no room for \"individual initiative or creativity\".", "cn": "哈格尔说，在美国，我们往往把工作设计成“高度模式化”、“高度标准化”，以至于没给人们留下“发挥个人主动性和创造力”的空间。", "words": [ { "w": "tightly scripted", "meaning": "高度模式化、按脚本行事的" }, { "w": "leave no room for", "meaning": "不给……留余地" } ] },
-        { "id": "2014_text3_s10", "para": 4, "en": "In short, these are the types of jobs that machines can perform much better at than human beings.", "cn": "简言之，这些工作属于“机器可以比人类做得好出许多”的类型。", "words": [ { "w": "In short", "meaning": "简而言之" } ] },
-        { "id": "2014_text3_s11", "para": 4, "en": "That is how we have put a giant target sign on the backs of American workers, Hagel says.", "cn": "哈格尔说，这就是我们在美国工人背上贴上巨大攻打标靶的方式。", "words": [ { "w": "target sign", "meaning": "靶子标志" } ] },
-        { "id": "2014_text3_s12", "para": 5, "en": "It's time to reinvent the formula for how work is conducted, since we are still relying on a very 20th century notion of work, Hagel says.", "cn": "哈格尔认为，是时候彻底改造我们的工作模式了，因为我们对工作的认知还停留在 20 世纪。", "words": [ { "w": "reinvent", "meaning": "v. 彻底改造" }, { "w": "notion of work", "meaning": "对工作的认识/观念" } ] },
-        { "id": "2014_text3_s13", "para": 5, "en": "In our rapidly changing economy, we more than ever need people in the workplace who can take initiative and exercise their imagination \"to respond to unexpected events\".", "cn": "在经济形势迅速转变的今天，我们比以往任何时候都更需要那些在工作中可以发挥主动性、运用想象力“以应付突发事件”的人才。", "words": [ { "w": "take initiative", "meaning": "发挥主动性，主动行动" }, { "w": "respond to unexpected events", "meaning": "应对突发事件" } ] },
-        { "id": "2014_text3_s14", "para": 5, "en": "That is not something machines are good at.", "cn": "那是机器所不擅长的事情。", "words": [ { "w": "good at", "meaning": "擅长" } ] },
-        { "id": "2014_text3_s15", "para": 5, "en": "They are designed to perform very predictable activities.", "cn": "它们被设计为执行非常容易预测的行为。", "words": [ { "w": "predictable", "phonetic": "/prɪˈdɪktəbl/", "meaning": "adj. 可预测的" } ] },
-        { "id": "2014_text3_s16", "para": 6, "en": "As Hagel notes, Brynjolfsson and McAfee indeed touched on this point in their book.", "cn": "正如哈格尔所指出的，布伦乔尔森和迈克菲确实在他们书中提到了这一点。", "words": [ { "w": "touched on", "meaning": "提及，谈及" } ] },
-        { "id": "2014_text3_s17", "para": 6, "en": "We need to reframe race against the machine as race with the machine.", "cn": "我们需要把“与机器赛跑”的概念转换成“与机器同跑”。", "words": [ { "w": "reframe", "meaning": "v. 重新界定，重新表述" } ] },
-        { "id": "2014_text3_s18", "para": 6, "en": "In other words, we need to look at the ways in which machines can augment human labor rather than replace it.", "cn": "换句话说，我们需要去关注机器“增强”人类劳动力的方式，而不是如何“取代”它。", "words": [ { "w": "augment", "meaning": "v. 增强，增加" }, { "w": "rather than", "meaning": "而不是" } ] },
-        { "id": "2014_text3_s19", "para": 6, "en": "So then the problem is not really about technology, but rather, \"how do we innovate our institutions and our work practices?\"", "cn": "所以这样看来，问题并非真的在于技术本身，而是在于“我们如何革新我们的体制和工作方式”。", "words": [ { "w": "innovate", "meaning": "v. 革新，创新" }, { "w": "work practices", "meaning": "工作方式/惯例" } ] }
+        {
+          "id": "2014_text3_s01",
+          "para": 1,
+          "en": "The concept of man versus machine is at least as old as the industrial revolution, but this phenomenon tends to be most acutely felt during economic downturns and fragile recoveries.",
+          "cn": "“人机矛盾”这一概念至少可以上溯到工业革命时期，但这一现象在经济下滑且复苏乏力的情形下给人的感受最为强烈。",
+          "words": [
+            {
+              "w": "man versus machine",
+              "meaning": "人与机器的对立"
+            },
+            {
+              "w": "economic downturns",
+              "meaning": "经济衰退"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s02",
+          "para": 1,
+          "en": "And yet, it would be a mistake to think we are right now simply experiencing the painful side of a boom and bust cycle.",
+          "cn": "然而，那种认为“我们现在仅仅是处于繁荣与萧条循环周期的令人痛苦的一面”的想法是个错误。",
+          "words": [
+            {
+              "w": "boom and bust cycle",
+              "meaning": "繁荣与萧条周期"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s03",
+          "para": 1,
+          "en": "Certain jobs have gone away for good, outmoded by machines.",
+          "cn": "因使用机器而过时的某些工作已永远地消失了。",
+          "words": [
+            {
+              "w": "for good",
+              "meaning": "永久地"
+            },
+            {
+              "w": "outmoded",
+              "meaning": "v. 使过时，淘汰"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s04",
+          "para": 1,
+          "en": "Since technology has such an insatiable appetite for eating up human jobs, this phenomenon will continue to restructure our economy in ways we cannot immediately foresee.",
+          "cn": "由于技术在吞噬人类工作方面非常“贪得无厌”，所以这一现象将会继续以难以即时预料的方式重构我们的经济。",
+          "words": [
+            {
+              "w": "insatiable appetite",
+              "meaning": "无法满足的胃口/欲望"
+            },
+            {
+              "w": "eating up",
+              "meaning": "吞噬，耗尽"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s05",
+          "para": 2,
+          "en": "When there is rapid improvement in the price and performance of technology, jobs that were once thought to be immune from automation suddenly become threatened.",
+          "cn": "当技术在价格、性能方面大为改善时，那些曾经被认为对自动化免疫的工作也就会突然受到威胁。",
+          "words": [
+            {
+              "w": "immune from",
+              "meaning": "不受……影响，免于"
+            },
+            {
+              "w": "automation",
+              "phonetic": "/ˌɔːtəˈmeɪʃn/",
+              "meaning": "n. 自动化"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s06",
+          "para": 2,
+          "en": "This argument has attracted a lot of attention, via the success of the book Race Against the Machine, by Erik Brynjolfsson and Andrew McAfee, who both hail from MIT's Center for Digital Business.",
+          "cn": "这一观点得益于《与机器赛跑》一书的热卖，已获得广泛关注。该书两位作者埃里克·布伦乔尔森与安德鲁·迈克菲均来自麻省理工学院数字化商业中心。",
+          "words": [
+            {
+              "w": "hail from",
+              "meaning": "来自，原籍为"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s07",
+          "para": 3,
+          "en": "This is a powerful argument, and a scary one.",
+          "cn": "这是个很有说服力，但又让人恐慌的观点。",
+          "words": [
+            {
+              "w": "scary",
+              "phonetic": "/ˈskeəri/",
+              "meaning": "adj. 令人恐慌的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s08",
+          "para": 3,
+          "en": "And yet, John Hagel, author of The Power of Pull and other books, says Brynjolfsson and McAfee miss the reason why these jobs are so vulnerable to technology in the first place.",
+          "cn": "然而，著有《拉动力》和其他书作的约翰·哈格尔认为，布伦乔尔森和迈克菲忽视了这些工作在技术面前不堪一击的根本原因。",
+          "words": [
+            {
+              "w": "vulnerable to",
+              "meaning": "易受……伤害的，对……不堪一击"
+            },
+            {
+              "w": "in the first place",
+              "meaning": "当初，首先"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s09",
+          "para": 4,
+          "en": "Hagel says we have designed jobs in the U.S. that tend to be \"tightly scripted\" and \"highly standardized\" ones that leave no room for \"individual initiative or creativity\".",
+          "cn": "哈格尔说，在美国，我们往往把工作设计成“高度模式化”、“高度标准化”，以至于没给人们留下“发挥个人主动性和创造力”的空间。",
+          "words": [
+            {
+              "w": "tightly scripted",
+              "meaning": "高度模式化、按脚本行事的"
+            },
+            {
+              "w": "leave no room for",
+              "meaning": "不给……留余地"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s10",
+          "para": 4,
+          "en": "In short, these are the types of jobs that machines can perform much better at than human beings.",
+          "cn": "简言之，这些工作属于“机器可以比人类做得好出许多”的类型。",
+          "words": [
+            {
+              "w": "In short",
+              "meaning": "简而言之"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s11",
+          "para": 4,
+          "en": "That is how we have put a giant target sign on the backs of American workers, Hagel says.",
+          "cn": "哈格尔说，这就是我们在美国工人背上贴上巨大攻打标靶的方式。",
+          "words": [
+            {
+              "w": "target sign",
+              "meaning": "靶子标志"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s12",
+          "para": 5,
+          "en": "It's time to reinvent the formula for how work is conducted, since we are still relying on a very 20th century notion of work, Hagel says.",
+          "cn": "哈格尔认为，是时候彻底改造我们的工作模式了，因为我们对工作的认知还停留在 20 世纪。",
+          "words": [
+            {
+              "w": "reinvent",
+              "meaning": "v. 彻底改造"
+            },
+            {
+              "w": "notion of work",
+              "meaning": "对工作的认识/观念"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s13",
+          "para": 5,
+          "en": "In our rapidly changing economy, we more than ever need people in the workplace who can take initiative and exercise their imagination \"to respond to unexpected events\".",
+          "cn": "在经济形势迅速转变的今天，我们比以往任何时候都更需要那些在工作中可以发挥主动性、运用想象力“以应付突发事件”的人才。",
+          "words": [
+            {
+              "w": "take initiative",
+              "meaning": "发挥主动性，主动行动"
+            },
+            {
+              "w": "respond to unexpected events",
+              "meaning": "应对突发事件"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s14",
+          "para": 5,
+          "en": "That is not something machines are good at.",
+          "cn": "那是机器所不擅长的事情。",
+          "words": [
+            {
+              "w": "good at",
+              "meaning": "擅长"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s15",
+          "para": 5,
+          "en": "They are designed to perform very predictable activities.",
+          "cn": "它们被设计为执行非常容易预测的行为。",
+          "words": [
+            {
+              "w": "predictable",
+              "phonetic": "/prɪˈdɪktəbl/",
+              "meaning": "adj. 可预测的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s16",
+          "para": 6,
+          "en": "As Hagel notes, Brynjolfsson and McAfee indeed touched on this point in their book.",
+          "cn": "正如哈格尔所指出的，布伦乔尔森和迈克菲确实在他们书中提到了这一点。",
+          "words": [
+            {
+              "w": "touched on",
+              "meaning": "提及，谈及"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s17",
+          "para": 6,
+          "en": "We need to reframe race against the machine as race with the machine.",
+          "cn": "我们需要把“与机器赛跑”的概念转换成“与机器同跑”。",
+          "words": [
+            {
+              "w": "reframe",
+              "meaning": "v. 重新界定，重新表述"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s18",
+          "para": 6,
+          "en": "In other words, we need to look at the ways in which machines can augment human labor rather than replace it.",
+          "cn": "换句话说，我们需要去关注机器“增强”人类劳动力的方式，而不是如何“取代”它。",
+          "words": [
+            {
+              "w": "augment",
+              "meaning": "v. 增强，增加"
+            },
+            {
+              "w": "rather than",
+              "meaning": "而不是"
+            }
+          ]
+        },
+        {
+          "id": "2014_text3_s19",
+          "para": 6,
+          "en": "So then the problem is not really about technology, but rather, \"how do we innovate our institutions and our work practices?\"",
+          "cn": "所以这样看来，问题并非真的在于技术本身，而是在于“我们如何革新我们的体制和工作方式”。",
+          "words": [
+            {
+              "w": "innovate",
+              "meaning": "v. 革新，创新"
+            },
+            {
+              "w": "work practices",
+              "meaning": "工作方式/惯例"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2014_text3_q1", "number": 31, "qtype": "detail", "stem": "According to the first paragraph, economic downturns would ___.", "stem_cn": "根据第一段，经济衰退会___。", "options": { "A": "ease the competition of man vs. machine", "B": "highlight machines' threat to human jobs", "C": "provoke a painful technological revolution", "D": "outmode our current economic structure" }, "options_cn": { "A": "缓解人与机器的竞争", "B": "凸显机器对人类工作的威胁", "C": "引发一场痛苦的技术革命", "D": "使我们当前的经济结构过时" }, "answer": "B", "explanation": "第一段首句指出“人机对立”这一现象在经济衰退时感受最为强烈，即经济衰退会凸显机器对人类工作的威胁，[B] 正确。", "related_sentences": [ "2014_text3_s01" ] },
-        { "id": "2014_text3_q2", "number": 32, "qtype": "detail", "stem": "The authors of Race Against the Machine argue that ___.", "stem_cn": "《与机器赛跑》一书的作者认为___。", "options": { "A": "technology is diminishing man's job opportunities", "B": "automation is accelerating technological development", "C": "certain jobs will remain intact after automation", "D": "man will finally win the race against machine" }, "options_cn": { "A": "技术正在减少人们的工作机会", "B": "自动化正在加速技术发展", "C": "某些工作在自动化后仍将完好无损", "D": "人最终会赢得与机器的竞赛" }, "answer": "A", "explanation": "第二段指出该书观点：技术在价格、性能大为改善时，那些曾被认为不会被自动化取代的工作也突然受到威胁，即技术正使越来越多工作被机器取代，[A] 正确。", "related_sentences": [ "2014_text3_s05", "2014_text3_s06" ] },
-        { "id": "2014_text3_q3", "number": 33, "qtype": "detail", "stem": "Hagel argues that jobs in the U.S. are often ___.", "stem_cn": "哈格尔认为，美国的工作通常___。", "options": { "A": "performed by innovative minds", "B": "scripted with an individual style", "C": "standardized without a clear target", "D": "designed against human creativity" }, "options_cn": { "A": "由具有创新思维的人完成", "B": "按个性风格设计", "C": "标准化但没有清晰目标", "D": "被设计成不利于人的创造力" }, "answer": "D", "explanation": "第四段首句指出哈格尔看法：美国的工作被设计得高度模式化、高度标准化，不给个人主动性和创造力留余地，[D] 与之同义，故为答案。", "related_sentences": [ "2014_text3_s09" ] },
-        { "id": "2014_text3_q4", "number": 34, "qtype": "detail", "stem": "According to the last paragraph, Brynjolfsson and McAfee discussed ___.", "stem_cn": "根据最后一段，布伦乔尔森和麦克菲讨论了___。", "options": { "A": "the predictability of machine behavior in practice", "B": "the formula for how work is conducted efficiently", "C": "the ways machines replace human labor in modern times", "D": "the necessity of human involvement in the workplace" }, "options_cn": { "A": "机器行为在实践中的可预测性", "B": "高效开展工作的方法", "C": "现代机器取代人力的方式", "D": "工作中人类参与的必要性" }, "answer": "D", "explanation": "末段指出哈格尔与两位作者都认同“与机器同跑”、机器应用于增强而非取代人类劳动，即肯定了人类参与工作的必要性，[D] 正确。", "related_sentences": [ "2014_text3_s16", "2014_text3_s18" ] },
-        { "id": "2014_text3_q5", "number": 35, "qtype": "main_idea", "stem": "Which of the following could be the most appropriate title for the text?", "stem_cn": "下列哪一项最适合做本文的标题？", "options": { "A": "How to Innovate Our Work Practices?", "B": "Machines Will Replace Human Labor", "C": "Can We Win the Race Against Machines?", "D": "Economic Downturns Stimulate Innovations" }, "options_cn": { "A": "如何革新我们的工作方式？", "B": "机器将会取代人力", "C": "我们能赢得与机器的竞赛吗？", "D": "经济衰退刺激创新" }, "answer": "C", "explanation": "全文围绕“人机关系”展开，从提出问题到剖析根源再到“与机器同跑”的解决之道，[C] 的 Race Against Machines 完整涵盖了反复出现的关键词，故为最佳标题。[A] 只能概括中间段落，[B] 与作者观点相反。", "related_sentences": [ "2014_text3_s01", "2014_text3_s17" ] }
+        {
+          "id": "2014_text3_q1",
+          "number": 31,
+          "qtype": "detail",
+          "stem": "According to the first paragraph, economic downturns would ___.",
+          "stem_cn": "根据第一段，经济衰退会___。",
+          "options": {
+            "A": "ease the competition of man vs. machine",
+            "B": "highlight machines' threat to human jobs",
+            "C": "provoke a painful technological revolution",
+            "D": "outmode our current economic structure"
+          },
+          "options_cn": {
+            "A": "缓解人与机器的竞争",
+            "B": "凸显机器对人类工作的威胁",
+            "C": "引发一场痛苦的技术革命",
+            "D": "使我们当前的经济结构过时"
+          },
+          "answer": "B",
+          "explanation": "第一段首句指出“人机对立”这一现象在经济衰退时感受最为强烈，即经济衰退会凸显机器对人类工作的威胁，[B] 正确。",
+          "related_sentences": [
+            "2014_text3_s01"
+          ]
+        },
+        {
+          "id": "2014_text3_q2",
+          "number": 32,
+          "qtype": "detail",
+          "stem": "The authors of Race Against the Machine argue that ___.",
+          "stem_cn": "《与机器赛跑》一书的作者认为___。",
+          "options": {
+            "A": "technology is diminishing man's job opportunities",
+            "B": "automation is accelerating technological development",
+            "C": "certain jobs will remain intact after automation",
+            "D": "man will finally win the race against machine"
+          },
+          "options_cn": {
+            "A": "技术正在减少人们的工作机会",
+            "B": "自动化正在加速技术发展",
+            "C": "某些工作在自动化后仍将完好无损",
+            "D": "人最终会赢得与机器的竞赛"
+          },
+          "answer": "A",
+          "explanation": "第二段指出该书观点：技术在价格、性能大为改善时，那些曾被认为不会被自动化取代的工作也突然受到威胁，即技术正使越来越多工作被机器取代，[A] 正确。",
+          "related_sentences": [
+            "2014_text3_s05",
+            "2014_text3_s06"
+          ]
+        },
+        {
+          "id": "2014_text3_q3",
+          "number": 33,
+          "qtype": "detail",
+          "stem": "Hagel argues that jobs in the U.S. are often ___.",
+          "stem_cn": "哈格尔认为，美国的工作通常___。",
+          "options": {
+            "A": "performed by innovative minds",
+            "B": "scripted with an individual style",
+            "C": "standardized without a clear target",
+            "D": "designed against human creativity"
+          },
+          "options_cn": {
+            "A": "由具有创新思维的人完成",
+            "B": "按个性风格设计",
+            "C": "标准化但没有清晰目标",
+            "D": "被设计成不利于人的创造力"
+          },
+          "answer": "D",
+          "explanation": "第四段首句指出哈格尔看法：美国的工作被设计得高度模式化、高度标准化，不给个人主动性和创造力留余地，[D] 与之同义，故为答案。",
+          "related_sentences": [
+            "2014_text3_s09"
+          ]
+        },
+        {
+          "id": "2014_text3_q4",
+          "number": 34,
+          "qtype": "detail",
+          "stem": "According to the last paragraph, Brynjolfsson and McAfee discussed ___.",
+          "stem_cn": "根据最后一段，布伦乔尔森和麦克菲讨论了___。",
+          "options": {
+            "A": "the predictability of machine behavior in practice",
+            "B": "the formula for how work is conducted efficiently",
+            "C": "the ways machines replace human labor in modern times",
+            "D": "the necessity of human involvement in the workplace"
+          },
+          "options_cn": {
+            "A": "机器行为在实践中的可预测性",
+            "B": "高效开展工作的方法",
+            "C": "现代机器取代人力的方式",
+            "D": "工作中人类参与的必要性"
+          },
+          "answer": "D",
+          "explanation": "末段指出哈格尔与两位作者都认同“与机器同跑”、机器应用于增强而非取代人类劳动，即肯定了人类参与工作的必要性，[D] 正确。",
+          "related_sentences": [
+            "2014_text3_s16",
+            "2014_text3_s18"
+          ]
+        },
+        {
+          "id": "2014_text3_q5",
+          "number": 35,
+          "qtype": "main_idea",
+          "stem": "Which of the following could be the most appropriate title for the text?",
+          "stem_cn": "下列哪一项最适合做本文的标题？",
+          "options": {
+            "A": "How to Innovate Our Work Practices?",
+            "B": "Machines Will Replace Human Labor",
+            "C": "Can We Win the Race Against Machines?",
+            "D": "Economic Downturns Stimulate Innovations"
+          },
+          "options_cn": {
+            "A": "如何革新我们的工作方式？",
+            "B": "机器将会取代人力",
+            "C": "我们能赢得与机器的竞赛吗？",
+            "D": "经济衰退刺激创新"
+          },
+          "answer": "C",
+          "explanation": "全文围绕“人机关系”展开，从提出问题到剖析根源再到“与机器同跑”的解决之道，[C] 的 Race Against Machines 完整涵盖了反复出现的关键词，故为最佳标题。[A] 只能概括中间段落，[B] 与作者观点相反。",
+          "related_sentences": [
+            "2014_text3_s01",
+            "2014_text3_s17"
+          ]
+        }
       ]
     },
     {
@@ -114,36 +2719,555 @@
       "topic": "综合开支审查与英国住房危机",
       "source": "2014 年考研英语（二）Text 4 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2014_text4_s01", "para": 1, "en": "When the government talks about infrastructure contributing to the economy the focus is usually on roads, railways, broadband and energy.", "cn": "当政府谈及有助于经济的基础设施时，通常着眼于公路、铁路、宽带和能源，", "words": [ { "w": "infrastructure", "phonetic": "/ˈɪnfrəstrʌktʃə/", "meaning": "n. 基础设施" }, { "w": "contributing to", "meaning": "有助于，促成" } ] },
-        { "id": "2014_text4_s02", "para": 1, "en": "Housing is seldom mentioned.", "cn": "却很少提及住房。", "words": [ { "w": "seldom", "meaning": "adv. 很少，不常" } ] },
-        { "id": "2014_text4_s03", "para": 2, "en": "Why is that?", "cn": "这是为什么呢？", "words": [] },
-        { "id": "2014_text4_s04", "para": 2, "en": "To some extent the housing sector must shoulder the blame.", "cn": "在某种程度上，房地产行业必须承担责任。", "words": [ { "w": "housing sector", "meaning": "房地产行业" }, { "w": "shoulder the blame", "meaning": "承担责任/过失" } ] },
-        { "id": "2014_text4_s05", "para": 2, "en": "We have not been good at communicating the real value that housing can contribute to economic growth.", "cn": "一直以来我们不是很擅长传达住房对经济发展所贡献的真实价值。", "words": [ { "w": "real value", "meaning": "真实价值" } ] },
-        { "id": "2014_text4_s06", "para": 2, "en": "Then there is the scale of the typical housing project.", "cn": "再有一个是典型住房项目的规模。", "words": [ { "w": "scale", "meaning": "n. 规模" } ] },
-        { "id": "2014_text4_s07", "para": 2, "en": "It is hard to shove for attention among multibillion-pound infrastructure projects, so it is inevitable that the attention is focused elsewhere.", "cn": "（它们）很难在数十亿英镑的基础设施项目中获取注意力，因此，注意力集中在他处也在所难免。", "words": [ { "w": "shove for attention", "meaning": "争夺关注" }, { "w": "inevitable", "phonetic": "/ɪnˈevɪtəbl/", "meaning": "adj. 不可避免的" } ] },
-        { "id": "2014_text4_s08", "para": 2, "en": "But perhaps the most significant reason is that the issue has always been so politically charged.", "cn": "但是也许最重要的原因是，这个问题一直受到严重政治制约。", "words": [ { "w": "politically charged", "meaning": "具有高度政治敏感性的" } ] },
-        { "id": "2014_text4_s09", "para": 3, "en": "Nevertheless, the affordable housing situation is desperate.", "cn": "然而，可支付住房形势却很严峻。", "words": [ { "w": "affordable housing", "meaning": "可支付住房，经济适用房" }, { "w": "desperate", "phonetic": "/ˈdespərət/", "meaning": "adj. 严峻的，危急的" } ] },
-        { "id": "2014_text4_s10", "para": 3, "en": "Waiting lists increase all the time and we are simply not building enough new homes.", "cn": "一方面，轮候名单一直在增加，另一方面，我们确实没有建造足够多的新房。", "words": [ { "w": "Waiting lists", "meaning": "轮候名单" }, { "w": "all the time", "meaning": "一直" } ] },
-        { "id": "2014_text4_s11", "para": 4, "en": "The comprehensive spending review offers an opportunity for the government to help rectify this.", "cn": "综合开支审查给政府提供了一个调整这一状况的机会。", "words": [ { "w": "comprehensive spending review", "meaning": "综合开支审查" }, { "w": "rectify", "meaning": "v. 纠正，调整" } ] },
-        { "id": "2014_text4_s12", "para": 4, "en": "It needs to put historical prejudices to one side and take some steps to address our urgent housing need.", "cn": "政府需要将历史偏见搁置一边，采取一些措施来解决我们迫切的住房需求。", "words": [ { "w": "historical prejudices", "meaning": "历史偏见" }, { "w": "to one side", "meaning": "搁置一旁" } ] },
-        { "id": "2014_text4_s13", "para": 5, "en": "There are some indications that it is preparing to do just that.", "cn": "有迹象表明，政府正准备这样做。", "words": [ { "w": "indications", "meaning": "n. 迹象，迹兵" } ] },
-        { "id": "2014_text4_s14", "para": 5, "en": "The communities minister, Don Foster, has hinted that George Osborne, Chancellor of the Exchequer, may introduce more flexibility to the current cap on the amount that local authorities can borrow against their housing stock debt.", "cn": "社区大臣唐·福斯特已经透露，财政大臣乔治·奥斯本可能对地方政府住房存量债务的借贷数额上限采取更大的灵活度。", "words": [ { "w": "Chancellor of the Exchequer", "meaning": "（英国）财政大臣" }, { "w": "housing stock debt", "meaning": "住房存量债务" }, { "w": "cap", "meaning": "n. （可用或可借资金的）上限" } ] },
-        { "id": "2014_text4_s15", "para": 5, "en": "Evidence shows that 60,000 extra new homes could be built over the next five years if the cap were lifted, increasing GDP by 0.6%.", "cn": "有证据表明，如果上限被提升，未来 5 年内将有另外 6 万套新房竣工，GDP 将提高 0.6%。", "words": [ { "w": "the cap were lifted", "meaning": "上限被提高（虚拟语气）" } ] },
-        { "id": "2014_text4_s16", "para": 6, "en": "Ministers should also look at creating greater certainty in the rental environment, which would have a significant impact on the ability of registered providers to fund new developments from revenues.", "cn": "部长大臣们还应该考虑提高房屋租赁市场的稳定性，这将对注册供应者凭借营业收入为新建住房提供资金的能力产生重大影响。", "words": [ { "w": "rental environment", "meaning": "租赁市场环境" }, { "w": "registered providers", "meaning": "注册（住房）供应商" } ] },
-        { "id": "2014_text4_s17", "para": 7, "en": "But it is not just down to the government.", "cn": "但这不仅仅是政府的责任。", "words": [ { "w": "down to", "meaning": "由……负责，取决于" } ] },
-        { "id": "2014_text4_s18", "para": 7, "en": "While these measures would be welcome in the short term, we must face up to the fact that the existing £4.5bn programme of grants to fund new affordable housing, set to expire in 2015, is unlikely to be extended beyond then.", "cn": "尽管这些措施在短期内将受到欢迎，但是我们必须面对现实：目前用于投资新的可支付住房的 45 亿英镑拨款项目将于 2015 年到期，并且不可能延期。", "words": [ { "w": "in the short term", "meaning": "短期内" }, { "w": "face up to", "meaning": "正视，勇于面对" }, { "w": "set to expire", "meaning": "将要到期" } ] },
-        { "id": "2014_text4_s19", "para": 7, "en": "The Labour party has recently announced that it will retain a large part of the coalition's spending plans if it returns to power.", "cn": "工党最近宣布，如果重掌大权，它将保留大部分联合政府支出计划。", "words": [ { "w": "The Labour party", "meaning": "（英国）工党" }, { "w": "returns to power", "meaning": "重新执政" } ] },
-        { "id": "2014_text4_s20", "para": 7, "en": "The housing sector needs to accept that we are very unlikely to ever return to the era of large-scale public grants.", "cn": "房地产行业需要接受的事实是：我们回到大规模公共拨款时代的可能性很低。", "words": [ { "w": "large-scale public grants", "meaning": "大规模公共拨款" } ] },
-        { "id": "2014_text4_s21", "para": 7, "en": "We need to adjust to this changing climate.", "cn": "我们需要适应这一变化的环境。", "words": [ { "w": "adjust to", "meaning": "适应，调整以适应" }, { "w": "changing climate", "meaning": "不断变化的大环境/形势" } ] },
-        { "id": "2014_text4_s22", "para": 8, "en": "While the government's commitment to long-term funding may have changed, the very pressing need for more affordable housing is real and is not going away.", "cn": "尽管政府对长期资助的承诺可能已经生变，但人们对更多可支付住房的迫切需求是真实存在的，且不会消失。", "words": [ { "w": "commitment to", "meaning": "对……的承诺/投入" }, { "w": "pressing need", "meaning": "迫切需求" } ] }
+        {
+          "id": "2014_text4_s01",
+          "para": 1,
+          "en": "When the government talks about infrastructure contributing to the economy the focus is usually on roads, railways, broadband and energy.",
+          "cn": "当政府谈及有助于经济的基础设施时，通常着眼于公路、铁路、宽带和能源，",
+          "words": [
+            {
+              "w": "infrastructure",
+              "phonetic": "/ˈɪnfrəstrʌktʃə/",
+              "meaning": "n. 基础设施"
+            },
+            {
+              "w": "contributing to",
+              "meaning": "有助于，促成"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s02",
+          "para": 1,
+          "en": "Housing is seldom mentioned.",
+          "cn": "却很少提及住房。",
+          "words": [
+            {
+              "w": "seldom",
+              "meaning": "adv. 很少，不常"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s03",
+          "para": 2,
+          "en": "Why is that?",
+          "cn": "这是为什么呢？",
+          "words": []
+        },
+        {
+          "id": "2014_text4_s04",
+          "para": 2,
+          "en": "To some extent the housing sector must shoulder the blame.",
+          "cn": "在某种程度上，房地产行业必须承担责任。",
+          "words": [
+            {
+              "w": "housing sector",
+              "meaning": "房地产行业"
+            },
+            {
+              "w": "shoulder the blame",
+              "meaning": "承担责任/过失"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s05",
+          "para": 2,
+          "en": "We have not been good at communicating the real value that housing can contribute to economic growth.",
+          "cn": "一直以来我们不是很擅长传达住房对经济发展所贡献的真实价值。",
+          "words": [
+            {
+              "w": "real value",
+              "meaning": "真实价值"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s06",
+          "para": 2,
+          "en": "Then there is the scale of the typical housing project.",
+          "cn": "再有一个是典型住房项目的规模。",
+          "words": [
+            {
+              "w": "scale",
+              "meaning": "n. 规模"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s07",
+          "para": 2,
+          "en": "It is hard to shove for attention among multibillion-pound infrastructure projects, so it is inevitable that the attention is focused elsewhere.",
+          "cn": "（它们）很难在数十亿英镑的基础设施项目中获取注意力，因此，注意力集中在他处也在所难免。",
+          "words": [
+            {
+              "w": "shove for attention",
+              "meaning": "争夺关注"
+            },
+            {
+              "w": "inevitable",
+              "phonetic": "/ɪnˈevɪtəbl/",
+              "meaning": "adj. 不可避免的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s08",
+          "para": 2,
+          "en": "But perhaps the most significant reason is that the issue has always been so politically charged.",
+          "cn": "但是也许最重要的原因是，这个问题一直受到严重政治制约。",
+          "words": [
+            {
+              "w": "politically charged",
+              "meaning": "具有高度政治敏感性的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s09",
+          "para": 3,
+          "en": "Nevertheless, the affordable housing situation is desperate.",
+          "cn": "然而，可支付住房形势却很严峻。",
+          "words": [
+            {
+              "w": "affordable housing",
+              "meaning": "可支付住房，经济适用房"
+            },
+            {
+              "w": "desperate",
+              "phonetic": "/ˈdespərət/",
+              "meaning": "adj. 严峻的，危急的"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s10",
+          "para": 3,
+          "en": "Waiting lists increase all the time and we are simply not building enough new homes.",
+          "cn": "一方面，轮候名单一直在增加，另一方面，我们确实没有建造足够多的新房。",
+          "words": [
+            {
+              "w": "Waiting lists",
+              "meaning": "轮候名单"
+            },
+            {
+              "w": "all the time",
+              "meaning": "一直"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s11",
+          "para": 4,
+          "en": "The comprehensive spending review offers an opportunity for the government to help rectify this.",
+          "cn": "综合开支审查给政府提供了一个调整这一状况的机会。",
+          "words": [
+            {
+              "w": "comprehensive spending review",
+              "meaning": "综合开支审查"
+            },
+            {
+              "w": "rectify",
+              "meaning": "v. 纠正，调整"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s12",
+          "para": 4,
+          "en": "It needs to put historical prejudices to one side and take some steps to address our urgent housing need.",
+          "cn": "政府需要将历史偏见搁置一边，采取一些措施来解决我们迫切的住房需求。",
+          "words": [
+            {
+              "w": "historical prejudices",
+              "meaning": "历史偏见"
+            },
+            {
+              "w": "to one side",
+              "meaning": "搁置一旁"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s13",
+          "para": 5,
+          "en": "There are some indications that it is preparing to do just that.",
+          "cn": "有迹象表明，政府正准备这样做。",
+          "words": [
+            {
+              "w": "indications",
+              "meaning": "n. 迹象，迹兵"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s14",
+          "para": 5,
+          "en": "The communities minister, Don Foster, has hinted that George Osborne, Chancellor of the Exchequer, may introduce more flexibility to the current cap on the amount that local authorities can borrow against their housing stock debt.",
+          "cn": "社区大臣唐·福斯特已经透露，财政大臣乔治·奥斯本可能对地方政府住房存量债务的借贷数额上限采取更大的灵活度。",
+          "words": [
+            {
+              "w": "Chancellor of the Exchequer",
+              "meaning": "（英国）财政大臣"
+            },
+            {
+              "w": "housing stock debt",
+              "meaning": "住房存量债务"
+            },
+            {
+              "w": "cap",
+              "meaning": "n. （可用或可借资金的）上限"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s15",
+          "para": 5,
+          "en": "Evidence shows that 60,000 extra new homes could be built over the next five years if the cap were lifted, increasing GDP by 0.6%.",
+          "cn": "有证据表明，如果上限被提升，未来 5 年内将有另外 6 万套新房竣工，GDP 将提高 0.6%。",
+          "words": [
+            {
+              "w": "the cap were lifted",
+              "meaning": "上限被提高（虚拟语气）"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s16",
+          "para": 6,
+          "en": "Ministers should also look at creating greater certainty in the rental environment, which would have a significant impact on the ability of registered providers to fund new developments from revenues.",
+          "cn": "部长大臣们还应该考虑提高房屋租赁市场的稳定性，这将对注册供应者凭借营业收入为新建住房提供资金的能力产生重大影响。",
+          "words": [
+            {
+              "w": "rental environment",
+              "meaning": "租赁市场环境"
+            },
+            {
+              "w": "registered providers",
+              "meaning": "注册（住房）供应商"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s17",
+          "para": 7,
+          "en": "But it is not just down to the government.",
+          "cn": "但这不仅仅是政府的责任。",
+          "words": [
+            {
+              "w": "down to",
+              "meaning": "由……负责，取决于"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s18",
+          "para": 7,
+          "en": "While these measures would be welcome in the short term, we must face up to the fact that the existing £4.5bn programme of grants to fund new affordable housing, set to expire in 2015, is unlikely to be extended beyond then.",
+          "cn": "尽管这些措施在短期内将受到欢迎，但是我们必须面对现实：目前用于投资新的可支付住房的 45 亿英镑拨款项目将于 2015 年到期，并且不可能延期。",
+          "words": [
+            {
+              "w": "in the short term",
+              "meaning": "短期内"
+            },
+            {
+              "w": "face up to",
+              "meaning": "正视，勇于面对"
+            },
+            {
+              "w": "set to expire",
+              "meaning": "将要到期"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s19",
+          "para": 7,
+          "en": "The Labour party has recently announced that it will retain a large part of the coalition's spending plans if it returns to power.",
+          "cn": "工党最近宣布，如果重掌大权，它将保留大部分联合政府支出计划。",
+          "words": [
+            {
+              "w": "The Labour party",
+              "meaning": "（英国）工党"
+            },
+            {
+              "w": "returns to power",
+              "meaning": "重新执政"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s20",
+          "para": 7,
+          "en": "The housing sector needs to accept that we are very unlikely to ever return to the era of large-scale public grants.",
+          "cn": "房地产行业需要接受的事实是：我们回到大规模公共拨款时代的可能性很低。",
+          "words": [
+            {
+              "w": "large-scale public grants",
+              "meaning": "大规模公共拨款"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s21",
+          "para": 7,
+          "en": "We need to adjust to this changing climate.",
+          "cn": "我们需要适应这一变化的环境。",
+          "words": [
+            {
+              "w": "adjust to",
+              "meaning": "适应，调整以适应"
+            },
+            {
+              "w": "changing climate",
+              "meaning": "不断变化的大环境/形势"
+            }
+          ]
+        },
+        {
+          "id": "2014_text4_s22",
+          "para": 8,
+          "en": "While the government's commitment to long-term funding may have changed, the very pressing need for more affordable housing is real and is not going away.",
+          "cn": "尽管政府对长期资助的承诺可能已经生变，但人们对更多可支付住房的迫切需求是真实存在的，且不会消失。",
+          "words": [
+            {
+              "w": "commitment to",
+              "meaning": "对……的承诺/投入"
+            },
+            {
+              "w": "pressing need",
+              "meaning": "迫切需求"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2014_text4_q1", "number": 36, "qtype": "detail", "stem": "The author believes that the housing sector ___.", "stem_cn": "作者认为房地产行业___。", "options": { "A": "has attracted much attention", "B": "involves certain political factors", "C": "shoulders too much responsibility", "D": "has lost its real value in economy" }, "options_cn": { "A": "已经引起了很多关注", "B": "涉及一些政治因素", "C": "承担了太多责任", "D": "已失去其在经济中的真实价值" }, "answer": "B", "explanation": "第二段末句明确指出“也许最重要的原因是这个问题一直受到政治因素的制约”，可推断房地产行业涉及一些政治因素，[B] 正确。so politically charged 与 [B] 同义。", "related_sentences": [ "2014_text4_s08" ] },
-        { "id": "2014_text4_q2", "number": 37, "qtype": "inference", "stem": "It can be learned that affordable housing has ___.", "stem_cn": "从文中可知，可支付住房___。", "options": { "A": "increased its home supply", "B": "offered spending opportunities", "C": "suffered government biases", "D": "disappointed the government" }, "options_cn": { "A": "增加了住房供给", "B": "提供了开支机会", "C": "受到政府偏见", "D": "令政府失望" }, "answer": "C", "explanation": "第四段指出政府应把历史偏见（prejudices）搁到一边以解决住房需求，由此侧面推知可支付住房曾遭受政府偏见，[C] 最贴近文意。biases 与 prejudices 同义。", "related_sentences": [ "2014_text4_s12" ] },
-        { "id": "2014_text4_q3", "number": 38, "qtype": "detail", "stem": "According to Paragraph 5, George Osborne may ___.", "stem_cn": "根据第五段，乔治·奥斯本可能会___。", "options": { "A": "allow greater government debt for housing", "B": "stop local authorities from building homes", "C": "prepare to reduce housing stock debt", "D": "release a lifted GDP growth forecast" }, "options_cn": { "A": "允许为住房增加政府债务", "B": "阻止地方政府建房", "C": "准备减少住房存量债务", "D": "发布提高的 GDP 增长预测" }, "answer": "A", "explanation": "第五段指出奥斯本可能放宽地方政府住房存量债务的借贷上限，让地方政府能借更多钱用于建房，即允许为住房增加政府债务，[A] 正确。[C] 反向干扰，实为“增加”而非“减少”。", "related_sentences": [ "2014_text4_s14" ] },
-        { "id": "2014_text4_q4", "number": 39, "qtype": "inference", "stem": "It can be inferred that a stable rental environment would ___.", "stem_cn": "可以推断，稳定的租赁市场环境将___。", "options": { "A": "lower the costs of registered providers", "B": "lessen the impact of government interference", "C": "contribute to funding new developments", "D": "relieve the ministers of responsibilities" }, "options_cn": { "A": "降低注册供应商的成本", "B": "减少政府干预的影响", "C": "有助于为新建项目提供资金", "D": "免除大臣们的责任" }, "answer": "C", "explanation": "第六段指出提高租赁市场稳定性会影响注册供应商“凭营业收入为新建项目提供资金”的能力，可合理推断稳定租赁环境有助于为新建项目提供资金，[C] 正确。", "related_sentences": [ "2014_text4_s16" ] },
-        { "id": "2014_text4_q5", "number": 40, "qtype": "inference", "stem": "The author believes that after 2015, the government may ___.", "stem_cn": "作者认为，2015 年后政府可能会___。", "options": { "A": "implement more policies to support housing", "B": "review the need for large-scale public grants", "C": "renew the affordable housing grants programme", "D": "stop generous funding to the housing sector" }, "options_cn": { "A": "实施更多政策以支持住房", "B": "审查大规模公共拨款的需求", "C": "延长可支付住房拨款项目期限", "D": "停止对房地产业的慷慨资助" }, "answer": "D", "explanation": "第七段指出现有 45 亿英镑大规模拨款计划于 2015 年到期后将不再延期，且极不可能重回大规模住房拨款的年代，可推知 2015 年后政府无意继续慷慨资助房地产，[D] 正确，同时排除 [C]。", "related_sentences": [ "2014_text4_s18", "2014_text4_s20" ] }
+        {
+          "id": "2014_text4_q1",
+          "number": 36,
+          "qtype": "detail",
+          "stem": "The author believes that the housing sector ___.",
+          "stem_cn": "作者认为房地产行业___。",
+          "options": {
+            "A": "has attracted much attention",
+            "B": "involves certain political factors",
+            "C": "shoulders too much responsibility",
+            "D": "has lost its real value in economy"
+          },
+          "options_cn": {
+            "A": "已经引起了很多关注",
+            "B": "涉及一些政治因素",
+            "C": "承担了太多责任",
+            "D": "已失去其在经济中的真实价值"
+          },
+          "answer": "B",
+          "explanation": "第二段末句明确指出“也许最重要的原因是这个问题一直受到政治因素的制约”，可推断房地产行业涉及一些政治因素，[B] 正确。so politically charged 与 [B] 同义。",
+          "related_sentences": [
+            "2014_text4_s08"
+          ]
+        },
+        {
+          "id": "2014_text4_q2",
+          "number": 37,
+          "qtype": "inference",
+          "stem": "It can be learned that affordable housing has ___.",
+          "stem_cn": "从文中可知，可支付住房___。",
+          "options": {
+            "A": "increased its home supply",
+            "B": "offered spending opportunities",
+            "C": "suffered government biases",
+            "D": "disappointed the government"
+          },
+          "options_cn": {
+            "A": "增加了住房供给",
+            "B": "提供了开支机会",
+            "C": "受到政府偏见",
+            "D": "令政府失望"
+          },
+          "answer": "C",
+          "explanation": "第四段指出政府应把历史偏见（prejudices）搁到一边以解决住房需求，由此侧面推知可支付住房曾遭受政府偏见，[C] 最贴近文意。biases 与 prejudices 同义。",
+          "related_sentences": [
+            "2014_text4_s12"
+          ]
+        },
+        {
+          "id": "2014_text4_q3",
+          "number": 38,
+          "qtype": "detail",
+          "stem": "According to Paragraph 5, George Osborne may ___.",
+          "stem_cn": "根据第五段，乔治·奥斯本可能会___。",
+          "options": {
+            "A": "allow greater government debt for housing",
+            "B": "stop local authorities from building homes",
+            "C": "prepare to reduce housing stock debt",
+            "D": "release a lifted GDP growth forecast"
+          },
+          "options_cn": {
+            "A": "允许为住房增加政府债务",
+            "B": "阻止地方政府建房",
+            "C": "准备减少住房存量债务",
+            "D": "发布提高的 GDP 增长预测"
+          },
+          "answer": "A",
+          "explanation": "第五段指出奥斯本可能放宽地方政府住房存量债务的借贷上限，让地方政府能借更多钱用于建房，即允许为住房增加政府债务，[A] 正确。[C] 反向干扰，实为“增加”而非“减少”。",
+          "related_sentences": [
+            "2014_text4_s14"
+          ]
+        },
+        {
+          "id": "2014_text4_q4",
+          "number": 39,
+          "qtype": "inference",
+          "stem": "It can be inferred that a stable rental environment would ___.",
+          "stem_cn": "可以推断，稳定的租赁市场环境将___。",
+          "options": {
+            "A": "lower the costs of registered providers",
+            "B": "lessen the impact of government interference",
+            "C": "contribute to funding new developments",
+            "D": "relieve the ministers of responsibilities"
+          },
+          "options_cn": {
+            "A": "降低注册供应商的成本",
+            "B": "减少政府干预的影响",
+            "C": "有助于为新建项目提供资金",
+            "D": "免除大臣们的责任"
+          },
+          "answer": "C",
+          "explanation": "第六段指出提高租赁市场稳定性会影响注册供应商“凭营业收入为新建项目提供资金”的能力，可合理推断稳定租赁环境有助于为新建项目提供资金，[C] 正确。",
+          "related_sentences": [
+            "2014_text4_s16"
+          ]
+        },
+        {
+          "id": "2014_text4_q5",
+          "number": 40,
+          "qtype": "inference",
+          "stem": "The author believes that after 2015, the government may ___.",
+          "stem_cn": "作者认为，2015 年后政府可能会___。",
+          "options": {
+            "A": "implement more policies to support housing",
+            "B": "review the need for large-scale public grants",
+            "C": "renew the affordable housing grants programme",
+            "D": "stop generous funding to the housing sector"
+          },
+          "options_cn": {
+            "A": "实施更多政策以支持住房",
+            "B": "审查大规模公共拨款的需求",
+            "C": "延长可支付住房拨款项目期限",
+            "D": "停止对房地产业的慷慨资助"
+          },
+          "answer": "D",
+          "explanation": "第七段指出现有 45 亿英镑大规模拨款计划于 2015 年到期后将不再延期，且极不可能重回大规模住房拨款的年代，可推知 2015 年后政府无意继续慷慨资助房地产，[D] 正确，同时排除 [C]。",
+          "related_sentences": [
+            "2014_text4_s18",
+            "2014_text4_s20"
+          ]
+        }
       ]
+    },
+    {
+      "id": "2014_translation",
+      "type": "translation",
+      "title": "Optimism",
+      "topic": "翻译：乐观的真正含义——保持乐观意味着与现实保持接触。",
+      "source": "Section III Translation",
+      "ref_cn": "大多数人都会把乐观定义为永远快乐，觉得杯子里总有半杯水。但这恰恰不是真正的快乐，积极心理学家们并不提倡。哈佛大学教授 Tal Ben-Shahar 说：\"健康的乐观意味着不脱离现实。\"按照 Ben-Shahar 的说法，现实的乐观主义者是那些不管发生什么事情都力求从中得到最大收获的人，而不是那些指望凡事都有最好结局的人。Ben-Shahar 运用三种方法保持乐观。当他情绪低落时——比如说一次课没讲好——他宽容自己，承认自己是凡人。他提醒自己，不是每堂课都有获诺贝尔奖的水准；总会有一些课的效果不如别的课。第二种方法是回顾。他分析讲得不好的课，为以后汲取有用的经验和失败的教训。最后，还有视角问题，要认识到在宏大的生命长卷里，一堂课真的不算什么。",
+      "sentences": [
+        {
+          "id": "2014_translation_s01",
+          "para": 1,
+          "en": "Most people would define optimism as being endlessly happy, with a glass that's perpetually half full.",
+          "cn": "大多数人都会把乐观定义为永远快乐，觉得杯子里总有半杯水。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s02",
+          "para": 1,
+          "en": "But that's exactly the kind of false cheerfulness that positive psychologists wouldn't recommend.",
+          "cn": "但这恰恰不是真正的快乐，积极心理学家们并不提倡。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s03",
+          "para": 1,
+          "en": "\"Healthy optimism means being in touch with reality,\" says Tal Ben-Shahar, a Harvard professor.",
+          "cn": "哈佛大学教授 Tal Ben-Shahar 说：\"健康的乐观意味着不脱离现实。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s04",
+          "para": 1,
+          "en": "According to Ben-Shahar, realistic optimists are those who make the best of things that happen, but not those who believe everything happens for the best.",
+          "cn": "\"按照 Ben-Shahar 的说法，现实的乐观主义者是那些不管发生什么事情都力求从中得到最大收获的人，而不是那些指望凡事都有最好结局的人。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s05",
+          "para": 1,
+          "en": "Ben-Shahar uses three optimistic exercises.",
+          "cn": "Ben-Shahar 运用三种方法保持乐观。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s06",
+          "para": 1,
+          "en": "When he feels down - say, after giving a bad lecture - he grants himself permission to be human.",
+          "cn": "当他情绪低落时——比如说一次课没讲好——他宽容自己，承认自己是凡人。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s07",
+          "para": 1,
+          "en": "He reminds himself that not every lecture can be a Nobel winner; some will be less effective than others.",
+          "cn": "他提醒自己，不是每堂课都有获诺贝尔奖的水准；总会有一些课的效果不如别的课。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s08",
+          "para": 1,
+          "en": "Next is reconstruction.",
+          "cn": "第二种方法是回顾。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s09",
+          "para": 1,
+          "en": "He analyzes the weak lecture, learning lessons for the future about what works and what doesn't.",
+          "cn": "他分析讲得不好的课，为以后汲取有用的经验和失败的教训。",
+          "words": []
+        },
+        {
+          "id": "2014_translation_s10",
+          "para": 1,
+          "en": "Finally, there is perspective, which involves acknowledging that in the grand scheme of life, one lecture really doesn't matter.",
+          "cn": "最后，还有视角问题，要认识到在宏大的生命长卷里，一堂课真的不算什么。",
+          "words": []
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "2014_writinga",
+      "type": "writing_a",
+      "title": "Part A 应用文：介绍自己",
+      "topic": "小作文：给未来室友写信，介绍生活习惯并征求建议。",
+      "source": "Section IV Writing Part A",
+      "directions": "Suppose you are going to study abroad and share an apartment with John, a local student. Write him an email to\n1) tell him about your living habits, and\n2) ask for advice about living there.\nYou should write about 100 words on the ANSWER SHEET.\nDo not use your own name. Use \"Li Ming\" instead.\nDo not write your address. (10 points)",
+      "sample_en": "Dear John,\nI am glad that it is you who will be my roommate during my overseas study and cannot wait to meet you. Before my moving in, I think it is necessary to arrive at a basic understanding about each other's living habits.\nAs a typical Chinese, I observe traditional living rules, sleeping and getting up early, having gorgeous breakfast, good lunch and humble supper and keeping room tidy and clean. In addition, I prefer cooking Chinese dishes at home and hope to get your tolerance for occasional spicy smell during dish preparation. There must also be some special living rules to be respected in your country. Can you explain them to me in advance? Hope to get your early reply.\nYours,\nLi Ming",
+      "sample_cn": "亲爱的约翰：\n很高兴你是我留学期间的室友，我迫不及待地想要见到你。在我搬进公寓前，我认为必须对各自的生活习惯有个基本了解。\n作为一名典型的中国人，我遵循典型的中国生活方式，我会早睡早起，早餐吃好、中餐吃饱、晚餐吃少，并保持房间整洁干净。另外，我喜欢在家做中国菜，希望你能忍受做菜时偶尔会有的辣椒呛人的味道。在你们国家应该也有些需要尊重的生活规范。你能提前向我介绍吗？希望早日收到你的回信。\n李明",
+      "questions": []
+    },
+    {
+      "id": "2014_writingb",
+      "type": "writing_b",
+      "title": "Part B 大作文：城市与乡村人口的变化",
+      "topic": "大作文：根据图表写一篇约150词的短文，解读数据并发表评论。",
+      "source": "Section IV Writing Part B",
+      "directions": "Write an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n[柱状图：1990/2000/2010 年城镇人口与乡村人口变化]",
+      "sample_en": "From 1990 to 2010 while moderate increase occurred in total population in China, population distribution experienced a dramatic shift. Urban population increased considerably from 300 million to 670 million; contrastingly rural population declined from 820 million to 680 million.\nThe population gap narrowed largely because of the joint effects of urbanization and unequal economic opportunities. The 20 years' urban sprawl caused millions of peasants to be passively transformed into city residents. Meanwhile, many more peasants initiatively chose to leave their hometown. In the 20 years, while urban living standards were largely improved, few economic opportunities fell on rural areas, making most peasants remain at the poverty line. Poverty prompted the call for change and healthy young peasants were driven to flock to cities to make a better living.\nThe increase in urban population is a sure indication of economic achievement. However, we should not ignore the inability of many urban newcomers to integrate into cities due to lack of education and civilized habits. They wandered around in the cities as urban paupers, isolated from cities' prosperity and convenience. In this sense, we cannot be superficially satisfied with the optimistic figure, but should endeavor to foster integration of newcomers.",
+      "sample_cn": "1990 年到 2010 年间，中国总人口温和上涨，但人口分布经历了巨大的变化。城市人口从 3 亿上涨到了 6.7 亿，上涨数量可观，与之相对的是农村人口从 8.2 亿下降到 6.8 亿。\n（城乡）人口差距缩小主要由于城市化和不公平经济机会的联合作用。20 年的城市扩张导致了数百万农民被动地变为城市居民。同时，更多的农民主动选择离开家乡。20 年里，城市生活水平得到了大幅提高，但农村几乎没有获得经济机会，使大多数农民依然处于贫困中。穷则思变，健康、年轻的农民涌入城市，试图谋得更好的生活。\n城市人口的增加无疑是经济成就的一个反映指标。但，我们不能忽视许多城市新居民由于缺乏教育和文明的生活习惯难以融入城市的现实。这些新来者作为城市贫民在城市中游荡，无法享用城市的繁荣和便利。鉴于此，我们不能肤浅地满足于乐观的数据，而应该努力促使新来者融入城市。",
+      "questions": []
     }
   ]
 }

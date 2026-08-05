@@ -19,7 +19,10 @@ from pathlib import Path
 TOOLS = Path(__file__).resolve().parent
 DATA_DIR = TOOLS.parent / 'pwa' / 'data'
 
-VALID_TYPES = {'text1', 'text2', 'text3', 'text4', 'cloze', 'newtype'}
+VALID_TYPES = {'text1', 'text2', 'text3', 'text4', 'cloze', 'newtype', 'translation', 'writing_a', 'writing_b'}
+
+# 非逐句模块（翻译/作文）：不校验逐句结构与题目，改用模块专属校验
+MODULE_TYPES = {'translation', 'writing_a', 'writing_b'}
 
 errors = []
 warnings = []
@@ -55,6 +58,23 @@ def check_article(year, art):
         err(f'{prefix} 文章 id 不符合 {year}_xxx 规则')
     if art.get('type') not in VALID_TYPES:
         err(f'{prefix} type 非法: {art.get("type")}')
+
+    # ---------- 翻译/作文等模块型文章：只校验展示字段 ----------
+    if art.get('type') in MODULE_TYPES:
+        if art.get('type') == 'translation':
+            if not art.get('ref_cn'):
+                err(f'{prefix} 翻译缺参考译文 ref_cn')
+        if art.get('type') in ('writing_a', 'writing_b'):
+            for field in ('directions', 'sample_en', 'sample_cn'):
+                if not art.get(field):
+                    err(f'{prefix} 作文缺字段 {field}')
+        return {
+            'id': aid, 'type': art.get('type'), 'title': art.get('title'),
+            'topic': art.get('topic'),
+            'sentence_count': len(art.get('sentences', [])),
+            'question_count': len(art.get('questions', [])),
+        }
+
     for field in ('title', 'topic', 'sentences', 'questions'):
         if field not in art:
             err(f'{prefix} 缺少字段 {field}')

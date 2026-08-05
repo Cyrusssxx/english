@@ -34,7 +34,8 @@ async function getArticle(aid) {
 // 文章类型显示名
 const TYPE_NAMES = {
     text1: '阅读 Text1', text2: '阅读 Text2', text3: '阅读 Text3', text4: '阅读 Text4',
-    cloze: '完形填空', newtype: '新题型'
+    cloze: '完形填空', newtype: '新题型',
+    translation: '翻译', writing_a: '写作 PartA', writing_b: '写作 PartB'
 };
 
 // ==================== IndexedDB ====================

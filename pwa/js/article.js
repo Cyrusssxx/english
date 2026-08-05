@@ -17,6 +17,15 @@ function toggleReadTitle() {
     if (ph) ph.style.display = show ? 'none' : '';
 }
 
+/** 作文范文中英切换 */
+function toggleWritingCn(btn) {
+    const box = btn.closest('.writing-sample');
+    const cn = box.querySelector('.writing-sample-cn');
+    const show = cn.hidden;
+    cn.hidden = !show;
+    btn.textContent = show ? '隐藏中文译文' : '显示中文译文';
+}
+
 // ============ 模式开关：精读 / 做题（存 localStorage） ============
 function isQuizMode() {
     return localStorage.getItem('readMode') === 'quiz';
@@ -131,6 +140,35 @@ async function init() {
 
 // ============ 正文渲染 ============
 function renderArticle() {
+    // 作文模块：无逐句正文，渲染题目要求 + 范文（中英对照可切换）
+    if (article.type === 'writing_a' || article.type === 'writing_b') {
+        document.getElementById('readPane').innerHTML = `
+            <div class="read-title" onclick="toggleReadTitle()" title="点击显示/隐藏文章标题" hidden>${esc(article.title || '')}</div>
+            <div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>
+            <div class="read-source">${esc(article.source || '')} · 写作练习：先自行构思，再对照官方范文</div>
+            <div class="writing-directions"><div class="rs-label">题目要求</div><div class="writing-dir-text">${esc(article.directions || '')}</div></div>
+            <div class="writing-sample">
+                <div class="rs-label">参考范文</div>
+                <button class="writing-toggle" onclick="toggleWritingCn(this)">显示中文译文</button>
+                <div class="writing-sample-en">${esc(article.sample_en || '')}</div>
+                <div class="writing-sample-cn" hidden>${esc(article.sample_cn || '')}</div>
+            </div>`;
+        return;
+    }
+    // 翻译模块：正文下方提供官方全文译文（可展开）
+    if (article.type === 'translation') {
+        document.getElementById('readPane').innerHTML = `
+            <div class="read-title" onclick="toggleReadTitle()" title="点击显示/隐藏文章标题" hidden>${esc(article.title || '')}</div>
+            <div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>
+            <div class="read-source">${esc(article.source || '')} · 点句下占位条显示译文，点下划线词查释义</div>
+            ${article.topic ? `<div class="read-summary"><span class="rs-label">本文概要</span>${esc(article.topic)}</div>` : ''}
+            <div class="para"><div class="para-tag">P1</div>${article.sentences.map(s => sentenceHtml(s)).join('')}</div>
+            ${article.ref_cn ? `<div class="translation-ref">
+                <button class="writing-toggle" onclick="toggleWritingCn(this)">显示全文参考译文</button>
+                <div class="translation-ref-cn" hidden>${esc(article.ref_cn)}</div>
+            </div>` : ''}`;
+        return;
+    }
     const paras = [];   // [[sent,...], ...] 按 para 分组（缺省视为一段）
     for (const s of article.sentences) {
         const p = (s.para || 1) - 1;
@@ -612,11 +650,6 @@ function renderQuiz() {
         return;
     }
     let html = '';
-    // 新题型：共享选项池
-    if (article.pool) {
-        html += '<div class="pool-box"><b>选项池</b>' + Object.entries(article.pool).map(([k, v]) =>
-            `<div class="pool-item">[${k}] ${quizTextHtml(v, '')}${article.pool_cn && article.pool_cn[k] ? `<br><small style="color:var(--text-light)">${esc(article.pool_cn[k])}</small>` : ''}</div>`).join('') + '</div>';
-    }
     for (const q of qs) html += questionHtml(q);
     scroll.innerHTML = html;
     document.getElementById('quizJumpbar').innerHTML = qs.map(q => {
@@ -641,8 +674,8 @@ async function resetQuiz() {
 }
 
 function questionHtml(q) {
-    const opts = q.options || article.pool || {};
-    const optsCn = q.options_cn || article.pool_cn || {};
+    const opts = (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});
+    const optsCn = (q.options_cn && Object.keys(q.options_cn).length) ? q.options_cn : (article.pool_cn || {});
     return `<div class="qblock" id="q-${q.id}">
         <div class="q-head"><span class="q-no">Q${q.number}</span>${q.qtype ? `<span class="q-type-badge">${esc(q.qtype)}</span>` : ''}</div>
         <div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
@@ -673,7 +706,7 @@ async function onPick(qid, key) {
 /** 显示某题的作答结果（restore=false 时也用于页面加载恢复） */
 function showResult(q, userKey, scrollToRelated) {
     const ok = userKey === q.answer;
-    const opts = q.options || article.pool || {};
+    const opts = (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});
     for (const k of Object.keys(opts)) {
         const el = document.getElementById(`opt-${q.id}-${k}`);
         if (!el) continue;

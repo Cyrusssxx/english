@@ -1,5 +1,24 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v35] 2026-08-05
+
+### 新增完形填空 / 新题型 / 翻译 / 作文四大模块（2014 试点）
+
+- **数据**：`pwa/data/2014.json` 新增 4 篇模块文章，从官方真题/解析 PDF 提取：
+  - `2014_cloze`（完形填空）：26 句正文（`[n]` 空格占位）+ 20 题选项/答案/官方精解 + 官方全文译文。
+  - `2014_newtype`（新题型·多项对应）：18 句正文 + 共享选项池 `pool`/`pool_cn`（A–G）+ 5 题（41–45）匹配答案与官方精解。
+  - `2014_translation`（翻译）：10 句正文 + 逐句译文 + `ref_cn` 官方全文参考译文。
+  - `2014_writinga` / `2014_writingb`（作文 Part A/B）：`directions` 题目要求 + `sample_en`/`sample_cn` 官方范文对照。
+- **`tools/build_2014_extra.py`**：新建构建脚本，从 `tools/extracted/2014_exam.txt` / `2014_notes.txt` 提取并生成上述文章，自动同步 `index.json`，可重复运行覆盖。
+- **`tools/validate.py`**：`VALID_TYPES` 加入 `translation/writing_a/writing_b`；模块型文章走专属校验（翻译查 `ref_cn`，作文查 `directions/sample_en/sample_cn`），不再强制逐句结构。
+- **`pwa/js/storage.js`**：`TYPE_NAMES` 新增 `translation: '翻译'`、`writing_a: '写作 PartA'`、`writing_b: '写作 PartB'`。
+- **`pwa/index.html`**：文章列表排序数组加入新模块类型。
+- **`pwa/js/article.js`**：
+  - `renderArticle` 分支：作文模块渲染题目要求 + 范文中英切换（`toggleWritingCn`）；翻译模块正文下方提供官方全文译文折叠。
+  - 修复新题型共享选项池 fallback：`q.options` 为空对象时正确回落 `article.pool`（`questionHtml` / `showResult`）。
+- **`pwa/css/style.css`**：新增 `.writing-directions` / `.writing-sample` / `.writing-toggle` / `.translation-ref` 等样式。
+- **`pwa/sw.js`**：CACHE_VER 升至 `en2-v35`。
+
 ## [en2-v34] 2026-08-05
 
 ### 隐藏正文文章标题（如 Happy Money），点击才显示
