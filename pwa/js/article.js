@@ -6,6 +6,20 @@ let vocabSet = new Set();      // 已在生词本的词
 let favSet = new Set();        // 已收藏句子
 let answerMap = {};            // {question_id: {user_answer, is_correct}}
 let popEl = null;              // 当前释义弹卡
+let navTitleText = '';         // 文章标题（精翻导航栏默认隐藏，点击才显示）
+let navTitleOn = false;        // 导航栏标题是否已显示
+
+// ============ 精翻导航标题：默认隐藏，点击标题处才显示 ============
+function renderNavTitle() {
+    const el = document.getElementById('navTitle');
+    if (!el) return;
+    el.textContent = navTitleOn ? navTitleText : '…';
+}
+
+function toggleNavTitle() {
+    navTitleOn = !navTitleOn;
+    renderNavTitle();
+}
 
 // ============ 模式开关：精读 / 做题（存 localStorage） ============
 function isQuizMode() {
@@ -91,7 +105,8 @@ async function init() {
     }
     const year = AID.slice(0, 4);
     document.title = `${year} ${TYPE_NAMES[article.type] || article.type} - 英语二精翻`;
-    document.getElementById('navTitle').textContent = `${year} ${TYPE_NAMES[article.type] || article.type}`;
+    navTitleText = `${year} ${TYPE_NAMES[article.type] || article.type}`;
+    renderNavTitle();
     localStorage.setItem('lastArticle', AID);
 
     // 用户数据

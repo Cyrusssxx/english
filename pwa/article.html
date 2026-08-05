@@ -15,7 +15,10 @@
 <body class="mode-read">
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-brand" title="返回列表">‹ <span id="navTitle">精读</span></a>
+            <div class="nav-left">
+                <a href="index.html" class="nav-brand" title="返回列表">‹</a>
+                <button class="nav-articletitle" id="navTitle" onclick="toggleNavTitle()" title="点击显示/隐藏文章标题">…</button>
+            </div>
             <div class="nav-tools">
                 <div class="nav-search-wrap">
                     <input class="nav-search" id="navSearch" type="search" placeholder="查词" title="输入英文单词/词组或中文后回车查释义；Alt+C 快速聚焦"

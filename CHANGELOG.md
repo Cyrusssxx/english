@@ -1,5 +1,14 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v33] 2026-08-05
+
+### 隐藏文章标题，避免精读前剧透
+
+- **`pwa/index.html`**：文章列表卡片只显示题型标签，隐藏英文标题（`ac-title` 不再渲染）；「继续学习」条也隐藏文章标题（`cbSub`），仅保留年份+题型。
+- **`pwa/js/article.js`** + **`pwa/article.html`**：精翻导航栏标题默认隐藏（显示 `…`），点击标题处才显示/再隐藏（`toggleNavTitle`）；标题从返回链接拆为独立按钮（`.nav-articletitle`）。
+- **`pwa/css/style.css`**：新增 `.nav-left` / `.nav-articletitle`（导航标题按钮，hover 高亮）。
+- **`pwa/sw.js`**：CACHE_VER 升至 `en2-v33`。
+
 ## [en2-v32] 2026-08-04
 
 ### 查词升级：中文反查 + 查询历史 + 悬浮设置 + 自定义快捷键

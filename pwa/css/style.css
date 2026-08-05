@@ -84,6 +84,34 @@ body {
     white-space: nowrap;
 }
 
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.nav-articletitle {
+    background: none;
+    border: none;
+    padding: 4px 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50vw;
+    border-radius: 6px;
+    transition: color .2s;
+}
+
+.nav-articletitle:hover {
+    color: var(--primary);
+    background: var(--primary-soft);
+}
+
 .nav-links {
     display: flex;
     gap: 18px;
