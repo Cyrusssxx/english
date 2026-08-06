@@ -859,9 +859,8 @@ async function restoreScroll() {
         if (prog && prog.last_sentence_id) target = document.getElementById('s-' + prog.last_sentence_id);
     }
     if (target) {
+        // 仅续读滚动到上次位置，不做短暂高亮，避免每次点入文章闪现黄色
         target.scrollIntoView({ block: 'center' });
-        target.classList.add('related');
-        setTimeout(() => target.classList.remove('related'), 2000);
     }
 }
 
