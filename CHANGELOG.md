@@ -1,5 +1,20 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v39] 2026-08-06
+
+### 词形还原：中等难度派生词可点击翻译
+
+- **背景**：`endlessly / perpetually / cheerfulness / optimist / portraying` 等带 `-ly / -ness / -ist / -ing / -ed` 等后缀的派生词，因词典未收录原文词形而无法点击查词。
+- **方案**：`pwa/js/dict.js` 新增规则词形还原 `stemCandidates()`：
+  - 复数 `-ies/-es/-s`；时态 `-ing/-ed/-ied/-ier/-est`（含去 e、双写还原）
+  - 副词 `-ly/-ably/-ibly/-ically/-ally`；名词性 `-ness/-ist/-tion/-sion/-ation/-ment/-ity/-ability/-ibility/-ive/-ful/-ous/-al/-ism/-ize`
+  - 反义前缀 `un-/im-/in-/dis-` 剥离
+  - **不规则形式表** `IRREGULAR`：常见动词过去式/分词（did/went/began/brought…）、不规则复数（children/men/feet…）、比较级（better/biggest/healthier…）
+  - 属格 `'s` 剥离（children's→child、people's→people）
+- **效果**：16 年真题 text1-4 + 完形正文的词条可点击率由较低提升至 **96.5%**（23921/24801），剩余未命中多为专有名词（london/john）、缩写（ceo/dna）及词典未收录词（endless/winner/runner 等）。
+- **保持不变**：词组词典命中、精选难词高亮（hardwords.json）不受影响，仍按原逻辑。
+- `pwa/sw.js` CACHE_VER 升至 `en2-v39`。
+
 ## [en2-v38] 2026-08-06
 
 ### 作文模块新增官方词汇储备板块（2010–2023）
