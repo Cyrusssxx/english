@@ -154,6 +154,7 @@ function renderArticle() {
             <div class="read-title" onclick="toggleReadTitle()" title="点击显示/隐藏文章标题" hidden>${esc(article.title || '')}</div>
             <div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>
             <div class="read-source">${esc(article.source || '')} · 写作练习：先自行构思，再对照官方范文</div>
+            ${article.directions ? `<div class="writing-directions"><span class="rs-label">题目要求</span><div class="writing-directions-text">${esc(article.directions)}</div></div>` : ''}
             ${article.chart_img ? `<div class="writing-chart"><img src="${esc(article.chart_img)}" alt="图表" loading="lazy"></div>` : ''}
             <div class="writing-sample">
                 <div class="rs-label">参考范文</div>

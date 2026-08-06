@@ -1,5 +1,14 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v37] 2026-08-06
+
+### 作文模块恢复题目要求 Directions
+
+- 数据：为 2010–2025 全部 16 年 writing_a/writing_b 补齐官方 **Directions**（写作指令原文，如小作文书信要求、大作文图表要求），提取自各年真题 exam.txt（2025 取自 notes_ocr.txt 人工整理）。
+- 前端：写作页在范文上方显示「题目要求」面板（`.writing-directions`），无图表不显示图表框；`pwa/js/article.js` 渲染 `article.directions`。
+- 样式：`pwa/css/style.css` 新增 `.writing-directions` / `.writing-directions-text`。
+- `pwa/sw.js` CACHE_VER 升至 `en2-v37`。
+
 ## [en2-v36] 2026-08-06
 
 ### 四大模块覆盖全部 16 年（2010–2025），新题型三种题型统一支持

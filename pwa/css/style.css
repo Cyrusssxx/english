@@ -446,6 +446,25 @@ html.dark .nav-timer-btn {
     margin-bottom: 18px;
 }
 
+.writing-directions {
+    border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    background: rgba(128, 128, 128, 0.06);
+}
+
+.writing-directions .rs-label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.writing-directions-text {
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
 .writing-chart {
     margin-bottom: 14px;
     text-align: center;
