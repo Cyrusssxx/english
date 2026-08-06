@@ -10,32 +10,501 @@
       "topic": "技能再培训势在必行：从公司到国家层面缓解技能不匹配",
       "source": "2021 年考研英语（二）Text 1 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2021_text1_s01", "para": 1, "en": "\"Reskilling\" is something that sounds like a buzzword but is actually a requirement if we plan to have a future where a lot of would-be workers do not get left behind.", "cn": "“再培训”虽然听上去像个时髦词，但实际上，如果我们希望未来的劳动力不被大量抛弃，那它就是一件必须要做的事情。", "words": [ { "w": "buzzword", "meaning": "n. 时髦用语，流行术语" }, { "w": "requirement", "meaning": "n. 要求，必要条件" }, { "w": "would-be", "meaning": "adj. 想要成为……的，未来的" }, { "w": "get left behind", "meaning": "落伍，被时代淘汰" } ] },
-        { "id": "2021_text1_s02", "para": 1, "en": "We know we are moving into a period where the jobs in demand will change rapidly, as will the requirements of the jobs that remain.", "cn": "众所周知，我们正步入这样一个时期：（社会）所需的工作岗位将迅速变化，而剩余工作岗位的要求也将迅速变化。", "words": [ { "w": "in demand", "meaning": "很需要的，需求量大的" }, { "w": "rapidly", "meaning": "ad. 迅速地" }, { "w": "the jobs that remain", "meaning": "留存下来的工作岗位" } ] },
-        { "id": "2021_text1_s03", "para": 1, "en": "Research by the World Economic Forum finds that on average 42 per cent of the \"core skills\" within job roles will change by 2022.", "cn": "世界经济论坛的研究发现，到2022年，各类职业中平均42%的“核心技能”将发生变化。", "words": [ { "w": "World Economic Forum", "meaning": "世界经济论坛" }, { "w": "on average", "meaning": "平均" }, { "w": "core skills", "meaning": "核心技能" } ] },
-        { "id": "2021_text1_s04", "para": 1, "en": "That is a very short timeline.", "cn": "这是非常短的时间。", "words": [ { "w": "timeline", "meaning": "n. 时间期限，时间线" } ] },
-        { "id": "2021_text1_s05", "para": 2, "en": "The question of who should pay for reskilling is a thorny one.", "cn": "“谁该为再培训付费”是一个棘手的问题。", "words": [ { "w": "pay for", "meaning": "为……付费" }, { "w": "thorny", "meaning": "adj. 棘手的" } ] },
-        { "id": "2021_text1_s06", "para": 2, "en": "For individual companies, the temptation is always to let go of workers whose skills are no longer in demand and replace them with those whose skills are.", "cn": "对各公司来说，解雇技能过时的员工，用掌握紧缺技能的人取而代之，这一直是个有吸引力的办法。", "words": [ { "w": "temptation", "meaning": "n. 诱惑，诱惑人的东西" }, { "w": "let go of", "meaning": "放弃，解雇" }, { "w": "replace", "meaning": "v. 取代，替换" } ] },
-        { "id": "2021_text1_s07", "para": 2, "en": "That does not always happen.", "cn": "当然，这也并非必然。", "words": [ { "w": "not always", "meaning": "并非总是（不完全否定）" } ] },
-        { "id": "2021_text1_s08", "para": 2, "en": "AT&T is often given as the gold standard of a company who decided to do a massive reskilling program rather than go with a fire-and-hire strategy.", "cn": "美国电话电报公司（AT&T）便常常被奉为（反其道而行之的）完美范例，该公司采用了大规模的技能再培训方案，而非“先裁后聘”的策略。", "words": [ { "w": "gold standard", "meaning": "作为标杆的典范，黄金标准" }, { "w": "massive", "meaning": "adj. 庞大的，大规模的" }, { "w": "go with", "meaning": "接受，采纳（看法或计划）" } ] },
-        { "id": "2021_text1_s09", "para": 2, "en": "Other companies including Amazon and Disney had also pledged to create their own plans.", "cn": "其他包括亚马逊和迪士尼在内的公司也已承诺会制定各自的方案。", "words": [ { "w": "pledged", "meaning": "v. 承诺，发誓（pledge 的过去分词）" }, { "w": "create their own plans", "meaning": "制定各自的方案" } ] },
-        { "id": "2021_text1_s10", "para": 2, "en": "When the skills mismatch is in the broader economy though, the focus usually turns to government to handle.", "cn": "不过，在更宏观的经济层面看待技能不匹配这一现象时，人们往往将焦点投向政府，希望由其来解决这一问题。", "words": [ { "w": "skills mismatch", "meaning": "技能不匹配" }, { "w": "broader economy", "meaning": "更宏观的经济层面" }, { "w": "turns to", "meaning": "转向，求助于" } ] },
-        { "id": "2021_text1_s11", "para": 2, "en": "Efforts in Canada and elsewhere have been arguably languid at best, and have given us a situation where we frequently hear of employers begging for workers, even at times and in regions where unemployment is high.", "cn": "当前，加拿大及其他地方所作的努力充其量只能说是迟缓无力的，结果造成了这样一个局面：即便是在高失业率时期和地区，我们也经常听到雇主急缺员工。", "words": [ { "w": "arguably", "meaning": "ad. 可以说，可论证地" }, { "w": "languid", "meaning": "adj. 迟缓无力的，慢悠悠的" }, { "w": "at best", "meaning": "充其量，至多" }, { "w": "begging for", "meaning": "急求，乞求" } ] },
-        { "id": "2021_text1_s12", "para": 3, "en": "With the pandemic, unemployment is very high indeed.", "cn": "由于疫情，失业率的确居高不下。", "words": [ { "w": "pandemic", "meaning": "n. （全国或全球性）流行病" }, { "w": "unemployment", "meaning": "n. 失业，失业率" }, { "w": "indeed", "meaning": "ad. 的确，确实" } ] },
-        { "id": "2021_text1_s13", "para": 3, "en": "In February, at 3.5 per cent and 5.5 per cent respectively, unemployment rates in Canada and the United States were at generational lows and worker shortages were everywhere.", "cn": "二月份，加拿大和美国的失业率分别为3.5%和5.5%，处于近二三十年低点，员工短缺问题遍布各地。", "words": [ { "w": "respectively", "meaning": "ad. 分别地，各自地" }, { "w": "generational lows", "meaning": "近一代人以来的低点" }, { "w": "worker shortages", "meaning": "员工短缺" } ] },
-        { "id": "2021_text1_s14", "para": 3, "en": "As of May, those rates had spiked up to 13.3 per cent and 13.7 per cent, and although many worker shortages had disappeared, not all had done so.", "cn": "到了五月，两国的失业率飙升至13.3%和13.7%。尽管许多员工短缺问题已不复存在，但并非都是如此。", "words": [ { "w": "As of", "meaning": "直至，在……时" }, { "w": "spiked up", "meaning": "猛增，急升" }, { "w": "disappeared", "meaning": "v. 消失（disappear 的过去分词）" } ] },
-        { "id": "2021_text1_s15", "para": 3, "en": "In the medical field, to take an obvious example, the pandemic meant that there were still clear shortages of doctors, nurses and other medical personnel.", "cn": "举个显而易见的例子，在医疗领域，疫情表明医生、护士以及其他医务人员仍然处于明显短缺状态。", "words": [ { "w": "medical field", "meaning": "医疗领域" }, { "w": "obvious", "meaning": "adj. 明显的，显而易见的" }, { "w": "medical personnel", "meaning": "医务人员" } ] },
-        { "id": "2021_text1_s16", "para": 4, "en": "Of course, it is not like you can take an unemployed waiter and train him to be a doctor in a few weeks, no matter who pays for it.", "cn": "当然，这并不是说我们可以找来一个失业的服务员，不管谁来为此付钱，在几周内把他培训成医生。", "words": [ { "w": "unemployed", "meaning": "adj. 失业的" }, { "w": "no matter who", "meaning": "不管是谁" }, { "w": "in a few weeks", "meaning": "在几周内" } ] },
-        { "id": "2021_text1_s17", "para": 4, "en": "But even if you cannot close that gap, maybe you can close others, and doing so would be to the benefit of all concerned.", "cn": "但是，即使不能弥合这个缺口，我们或许可以弥合其他缺口，这样做将对相关各方都有利。", "words": [ { "w": "close that gap", "meaning": "弥合那个缺口" }, { "w": "to the benefit of", "meaning": "对……有利" }, { "w": "all concerned", "meaning": "所有相关方" } ] },
-        { "id": "2021_text1_s18", "para": 4, "en": "That seems to be the case in Sweden: When forced to furlough 90 per cent of their cabin staff, Scandinavian Airlines decided to start up a short retraining program that reskilled the laid-off workers to support hospital staff.", "cn": "瑞典的情况似乎就是如此：北欧航空公司90%的空乘人员被迫休假后，该公司决定启动一项短期再培训方案，重新培训下岗员工来支援医护人员。", "words": [ { "w": "furlough", "meaning": "v. 使被迫休假，使暂时下岗" }, { "w": "cabin staff", "meaning": "空乘人员" }, { "w": "start up", "meaning": "（使）启动，开始" }, { "w": "laid-off", "meaning": "adj. 被解雇的，下岗的" } ] },
-        { "id": "2021_text1_s19", "para": 4, "en": "The effort was a collective one and involved other companies as well as a Swedish university.", "cn": "这是一项集体行动，其他公司以及一所瑞典大学也参与其中。", "words": [ { "w": "collective", "meaning": "adj. 集体的，共同的" }, { "w": "involved", "meaning": "v. 涉及，使参与（involve 的过去式）" }, { "w": "as well as", "meaning": "以及，还有" } ] }
+        {
+          "id": "2021_text1_s01",
+          "para": 1,
+          "en": "\"Reskilling\" is something that sounds like a buzzword but is actually a requirement if we plan to have a future where a lot of would-be workers do not get left behind.",
+          "cn": "“再培训”虽然听上去像个时髦词，但实际上，如果我们希望未来的劳动力不被大量抛弃，那它就是一件必须要做的事情。",
+          "words": [
+            {
+              "w": "buzzword",
+              "meaning": "n. 时髦用语，流行术语"
+            },
+            {
+              "w": "requirement",
+              "meaning": "n. 要求，必要条件"
+            },
+            {
+              "w": "would-be",
+              "meaning": "adj. 想要成为……的，未来的"
+            },
+            {
+              "w": "get left behind",
+              "meaning": "落伍，被时代淘汰"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s02",
+          "para": 1,
+          "en": "We know we are moving into a period where the jobs in demand will change rapidly, as will the requirements of the jobs that remain.",
+          "cn": "众所周知，我们正步入这样一个时期：（社会）所需的工作岗位将迅速变化，而剩余工作岗位的要求也将迅速变化。",
+          "words": [
+            {
+              "w": "in demand",
+              "meaning": "很需要的，需求量大的"
+            },
+            {
+              "w": "rapidly",
+              "meaning": "ad. 迅速地"
+            },
+            {
+              "w": "the jobs that remain",
+              "meaning": "留存下来的工作岗位"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s03",
+          "para": 1,
+          "en": "Research by the World Economic Forum finds that on average 42 per cent of the \"core skills\" within job roles will change by 2022.",
+          "cn": "世界经济论坛的研究发现，到2022年，各类职业中平均42%的“核心技能”将发生变化。",
+          "words": [
+            {
+              "w": "World Economic Forum",
+              "meaning": "世界经济论坛"
+            },
+            {
+              "w": "on average",
+              "meaning": "平均"
+            },
+            {
+              "w": "core skills",
+              "meaning": "核心技能"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s04",
+          "para": 1,
+          "en": "That is a very short timeline.",
+          "cn": "这是非常短的时间。",
+          "words": [
+            {
+              "w": "timeline",
+              "meaning": "n. 时间期限，时间线"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s05",
+          "para": 2,
+          "en": "The question of who should pay for reskilling is a thorny one.",
+          "cn": "“谁该为再培训付费”是一个棘手的问题。",
+          "words": [
+            {
+              "w": "pay for",
+              "meaning": "为……付费"
+            },
+            {
+              "w": "thorny",
+              "meaning": "adj. 棘手的"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s06",
+          "para": 2,
+          "en": "For individual companies, the temptation is always to let go of workers whose skills are no longer in demand and replace them with those whose skills are.",
+          "cn": "对各公司来说，解雇技能过时的员工，用掌握紧缺技能的人取而代之，这一直是个有吸引力的办法。",
+          "words": [
+            {
+              "w": "temptation",
+              "meaning": "n. 诱惑，诱惑人的东西"
+            },
+            {
+              "w": "let go of",
+              "meaning": "放弃，解雇"
+            },
+            {
+              "w": "replace",
+              "meaning": "v. 取代，替换"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s07",
+          "para": 2,
+          "en": "That does not always happen.",
+          "cn": "当然，这也并非必然。",
+          "words": [
+            {
+              "w": "not always",
+              "meaning": "并非总是（不完全否定）"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s08",
+          "para": 2,
+          "en": "AT&T is often given as the gold standard of a company who decided to do a massive reskilling program rather than go with a fire-and-hire strategy.",
+          "cn": "美国电话电报公司（AT&T）便常常被奉为（反其道而行之的）完美范例，该公司采用了大规模的技能再培训方案，而非“先裁后聘”的策略。",
+          "words": [
+            {
+              "w": "gold standard",
+              "meaning": "作为标杆的典范，黄金标准"
+            },
+            {
+              "w": "massive",
+              "meaning": "adj. 庞大的，大规模的"
+            },
+            {
+              "w": "go with",
+              "meaning": "接受，采纳（看法或计划）"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s09",
+          "para": 2,
+          "en": "Other companies including Amazon and Disney had also pledged to create their own plans.",
+          "cn": "其他包括亚马逊和迪士尼在内的公司也已承诺会制定各自的方案。",
+          "words": [
+            {
+              "w": "pledged",
+              "meaning": "v. 承诺，发誓（pledge 的过去分词）"
+            },
+            {
+              "w": "create their own plans",
+              "meaning": "制定各自的方案"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s10",
+          "para": 2,
+          "en": "When the skills mismatch is in the broader economy though, the focus usually turns to government to handle.",
+          "cn": "不过，在更宏观的经济层面看待技能不匹配这一现象时，人们往往将焦点投向政府，希望由其来解决这一问题。",
+          "words": [
+            {
+              "w": "skills mismatch",
+              "meaning": "技能不匹配"
+            },
+            {
+              "w": "broader economy",
+              "meaning": "更宏观的经济层面"
+            },
+            {
+              "w": "turns to",
+              "meaning": "转向，求助于"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s11",
+          "para": 2,
+          "en": "Efforts in Canada and elsewhere have been arguably languid at best, and have given us a situation where we frequently hear of employers begging for workers, even at times and in regions where unemployment is high.",
+          "cn": "当前，加拿大及其他地方所作的努力充其量只能说是迟缓无力的，结果造成了这样一个局面：即便是在高失业率时期和地区，我们也经常听到雇主急缺员工。",
+          "words": [
+            {
+              "w": "arguably",
+              "meaning": "ad. 可以说，可论证地"
+            },
+            {
+              "w": "languid",
+              "meaning": "adj. 迟缓无力的，慢悠悠的"
+            },
+            {
+              "w": "at best",
+              "meaning": "充其量，至多"
+            },
+            {
+              "w": "begging for",
+              "meaning": "急求，乞求"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s12",
+          "para": 3,
+          "en": "With the pandemic, unemployment is very high indeed.",
+          "cn": "由于疫情，失业率的确居高不下。",
+          "words": [
+            {
+              "w": "pandemic",
+              "meaning": "n. （全国或全球性）流行病"
+            },
+            {
+              "w": "unemployment",
+              "meaning": "n. 失业，失业率"
+            },
+            {
+              "w": "indeed",
+              "meaning": "ad. 的确，确实"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s13",
+          "para": 3,
+          "en": "In February, at 3.5 per cent and 5.5 per cent respectively, unemployment rates in Canada and the United States were at generational lows and worker shortages were everywhere.",
+          "cn": "二月份，加拿大和美国的失业率分别为3.5%和5.5%，处于近二三十年低点，员工短缺问题遍布各地。",
+          "words": [
+            {
+              "w": "respectively",
+              "meaning": "ad. 分别地，各自地"
+            },
+            {
+              "w": "generational lows",
+              "meaning": "近一代人以来的低点"
+            },
+            {
+              "w": "worker shortages",
+              "meaning": "员工短缺"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s14",
+          "para": 3,
+          "en": "As of May, those rates had spiked up to 13.3 per cent and 13.7 per cent, and although many worker shortages had disappeared, not all had done so.",
+          "cn": "到了五月，两国的失业率飙升至13.3%和13.7%。尽管许多员工短缺问题已不复存在，但并非都是如此。",
+          "words": [
+            {
+              "w": "As of",
+              "meaning": "直至，在……时"
+            },
+            {
+              "w": "spiked up",
+              "meaning": "猛增，急升"
+            },
+            {
+              "w": "disappeared",
+              "meaning": "v. 消失（disappear 的过去分词）"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s15",
+          "para": 3,
+          "en": "In the medical field, to take an obvious example, the pandemic meant that there were still clear shortages of doctors, nurses and other medical personnel.",
+          "cn": "举个显而易见的例子，在医疗领域，疫情表明医生、护士以及其他医务人员仍然处于明显短缺状态。",
+          "words": [
+            {
+              "w": "medical field",
+              "meaning": "医疗领域"
+            },
+            {
+              "w": "obvious",
+              "meaning": "adj. 明显的，显而易见的"
+            },
+            {
+              "w": "medical personnel",
+              "meaning": "医务人员"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s16",
+          "para": 4,
+          "en": "Of course, it is not like you can take an unemployed waiter and train him to be a doctor in a few weeks, no matter who pays for it.",
+          "cn": "当然，这并不是说我们可以找来一个失业的服务员，不管谁来为此付钱，在几周内把他培训成医生。",
+          "words": [
+            {
+              "w": "unemployed",
+              "meaning": "adj. 失业的"
+            },
+            {
+              "w": "no matter who",
+              "meaning": "不管是谁"
+            },
+            {
+              "w": "in a few weeks",
+              "meaning": "在几周内"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s17",
+          "para": 4,
+          "en": "But even if you cannot close that gap, maybe you can close others, and doing so would be to the benefit of all concerned.",
+          "cn": "但是，即使不能弥合这个缺口，我们或许可以弥合其他缺口，这样做将对相关各方都有利。",
+          "words": [
+            {
+              "w": "close that gap",
+              "meaning": "弥合那个缺口"
+            },
+            {
+              "w": "to the benefit of",
+              "meaning": "对……有利"
+            },
+            {
+              "w": "all concerned",
+              "meaning": "所有相关方"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s18",
+          "para": 4,
+          "en": "That seems to be the case in Sweden: When forced to furlough 90 per cent of their cabin staff, Scandinavian Airlines decided to start up a short retraining program that reskilled the laid-off workers to support hospital staff.",
+          "cn": "瑞典的情况似乎就是如此：北欧航空公司90%的空乘人员被迫休假后，该公司决定启动一项短期再培训方案，重新培训下岗员工来支援医护人员。",
+          "words": [
+            {
+              "w": "furlough",
+              "meaning": "v. 使被迫休假，使暂时下岗"
+            },
+            {
+              "w": "cabin staff",
+              "meaning": "空乘人员"
+            },
+            {
+              "w": "start up",
+              "meaning": "（使）启动，开始"
+            },
+            {
+              "w": "laid-off",
+              "meaning": "adj. 被解雇的，下岗的"
+            }
+          ]
+        },
+        {
+          "id": "2021_text1_s19",
+          "para": 4,
+          "en": "The effort was a collective one and involved other companies as well as a Swedish university.",
+          "cn": "这是一项集体行动，其他公司以及一所瑞典大学也参与其中。",
+          "words": [
+            {
+              "w": "collective",
+              "meaning": "adj. 集体的，共同的"
+            },
+            {
+              "w": "involved",
+              "meaning": "v. 涉及，使参与（involve 的过去式）"
+            },
+            {
+              "w": "as well as",
+              "meaning": "以及，还有"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2021_text1_q1", "number": 21, "qtype": "detail", "stem": "Research by the World Economic Forum suggests ___.", "stem_cn": "世界经济论坛的研究表明___。", "options": { "A": "an increase in full-time employment", "B": "an urgent demand for new job skills", "C": "a steady growth of job opportunities", "D": "a controversy about the \"core skills\"" }, "options_cn": { "A": "全职就业岗位增加", "B": "对新工作技能的需求迫切", "C": "就业机会稳步增长", "D": "\"核心技能\"存在争议" }, "answer": "B", "explanation": "定位首段③句：世界经济论坛研究称到 2022 年各职业平均 42% 核心技能将变，末句强调\"时间非常短\"，即对新技能需求迫切，B 正确（demand for new job skills 同义转述 core skills will change，urgent 对应 a very short timeline）。A 用首段①句 would-be workers 曲解为\"全职就业增多\"；C 把\"所需技能迅速变化\"曲解为\"就业机会稳步增长\"；D\"核心技能存在争议\"无中生有。", "related_sentences": [ "2021_text1_s02", "2021_text1_s03", "2021_text1_s04" ] },
-        { "id": "2021_text1_q2", "number": 22, "qtype": "viewpoint", "stem": "AT&T is cited to show ___.", "stem_cn": "文中引用美国电话电报公司是为了说明___。", "options": { "A": "an alternative to the fire-and-hire strategy", "B": "an immediate need for government support", "C": "the importance of staff appraisal standards", "D": "the characteristics of reskilling programs" }, "options_cn": { "A": "\"先裁后聘\"策略的替代方案", "B": "当前亟需政府支持", "C": "工作人员考核标准的重要性", "D": "再培训方案的特点" }, "answer": "A", "explanation": "第二段②句述多数公司\"先裁后聘\"惯常做法，③句转折，④句以 AT&T 为例（采取大规模再培训而非先裁后聘），故引用 AT&T 意在说明先裁后聘策略的替代方案，A 正确。B 属政府/宏观层面另一角度；C 由 gold standard 杂糅捏造\"考核标准\"；D 作者引 AT&T 意在替代常规策略，而非介绍再培训方案特点。", "related_sentences": [ "2021_text1_s06", "2021_text1_s07", "2021_text1_s08" ] },
-        { "id": "2021_text1_q3", "number": 23, "qtype": "detail", "stem": "Efforts to resolve the skills mismatch in Canada ___.", "stem_cn": "为解决技能不匹配问题，加拿大所作的努力___。", "options": { "A": "have driven up labour costs", "B": "have proved to be inconsistent", "C": "have met with fierce opposition", "D": "have appeared to be insufficient" }, "options_cn": { "A": "推高了劳动力成本", "B": "已证明是自相矛盾的", "C": "遭到了强烈反对", "D": "似乎仍然不够" }, "answer": "D", "explanation": "定位第二段末句：加拿大等地努力\"充其量迟缓无力\"，导致高失业率时期雇主仍急缺员工，即努力仍然不够，D 正确（同义改写 languid at best）。A 由结果臆断\"劳动力成本上升\"，文中未提；B 把\"矛盾局面\"偷换为\"努力本身自相矛盾\"；C 主观臆测\"遭强烈反对\"，无据。", "related_sentences": [ "2021_text1_s11" ] },
-        { "id": "2021_text1_q4", "number": 24, "qtype": "detail", "stem": "We can learn from Paragraph 3 that there was ___.", "stem_cn": "从第三段我们得知，___是存在的。", "options": { "A": "a call for policy adjustment", "B": "a change in hiring practices", "C": "a lack of medical workers", "D": "a sign of economic recovery" }, "options_cn": { "A": "调整政策的呼声", "B": "雇佣惯例的变化", "C": "医务人员的短缺", "D": "经济复苏的迹象" }, "answer": "C", "explanation": "定位第三段④句：医疗领域医生、护士及其他医务人员仍明显短缺，C 正确（同义改写）。A\"调整政策的呼声\"文中未提；B 把\"用工需求变化\"窜改为\"雇佣惯例变化\"；D 与失业率由低飙高、经济低迷的事实相悖。", "related_sentences": [ "2021_text1_s14", "2021_text1_s15" ] },
-        { "id": "2021_text1_q5", "number": 25, "qtype": "detail", "stem": "Scandinavian Airlines decided to ___.", "stem_cn": "北欧航空公司决定___。", "options": { "A": "create job vacancies for the unemployed", "B": "prepare their laid-off workers for other jobs", "C": "retrain their cabin staff for better services", "D": "finance their staff's college education" }, "options_cn": { "A": "为失业人员创造空缺职位", "B": "为其下岗员工从事其他工作提供培训", "C": "重新培训空乘人员以提升服务", "D": "为其员工的大学教育提供资金" }, "answer": "B", "explanation": "定位末段③句：北欧航空重新培训下岗员工以支援医护人员，B 正确（prepare...for other jobs 对应 reskilled...to support hospital staff）。A 曲解为公司内部造岗；C 扩大培训对象、窜改目的为\"提升服务\"；D 误读\"一所瑞典大学参与\"为资助员工上大学。", "related_sentences": [ "2021_text1_s18" ] }
+        {
+          "id": "2021_text1_q1",
+          "number": 21,
+          "qtype": "detail",
+          "stem": "Research by the World Economic Forum suggests ___.",
+          "stem_cn": "世界经济论坛的研究表明___。",
+          "options": {
+            "A": "an increase in full-time employment",
+            "B": "an urgent demand for new job skills",
+            "C": "a steady growth of job opportunities",
+            "D": "a controversy about the \"core skills\""
+          },
+          "options_cn": {
+            "A": "全职就业岗位增加",
+            "B": "对新工作技能的需求迫切",
+            "C": "就业机会稳步增长",
+            "D": "\"核心技能\"存在争议"
+          },
+          "answer": "B",
+          "explanation": "定位首段③句：世界经济论坛研究称到 2022 年各职业平均 42% 核心技能将变，末句强调\"时间非常短\"，即对新技能需求迫切，B 正确（demand for new job skills 同义转述 core skills will change，urgent 对应 a very short timeline）。A 用首段①句 would-be workers 曲解为\"全职就业增多\"；C 把\"所需技能迅速变化\"曲解为\"就业机会稳步增长\"；D\"核心技能存在争议\"无中生有。",
+          "related_sentences": [
+            "2021_text1_s02",
+            "2021_text1_s03",
+            "2021_text1_s04"
+          ]
+        },
+        {
+          "id": "2021_text1_q2",
+          "number": 22,
+          "qtype": "viewpoint",
+          "stem": "AT&T is cited to show ___.",
+          "stem_cn": "文中引用美国电话电报公司是为了说明___。",
+          "options": {
+            "A": "an alternative to the fire-and-hire strategy",
+            "B": "an immediate need for government support",
+            "C": "the importance of staff appraisal standards",
+            "D": "the characteristics of reskilling programs"
+          },
+          "options_cn": {
+            "A": "\"先裁后聘\"策略的替代方案",
+            "B": "当前亟需政府支持",
+            "C": "工作人员考核标准的重要性",
+            "D": "再培训方案的特点"
+          },
+          "answer": "A",
+          "explanation": "第二段②句述多数公司\"先裁后聘\"惯常做法，③句转折，④句以 AT&T 为例（采取大规模再培训而非先裁后聘），故引用 AT&T 意在说明先裁后聘策略的替代方案，A 正确。B 属政府/宏观层面另一角度；C 由 gold standard 杂糅捏造\"考核标准\"；D 作者引 AT&T 意在替代常规策略，而非介绍再培训方案特点。",
+          "related_sentences": [
+            "2021_text1_s06",
+            "2021_text1_s07",
+            "2021_text1_s08"
+          ]
+        },
+        {
+          "id": "2021_text1_q3",
+          "number": 23,
+          "qtype": "detail",
+          "stem": "Efforts to resolve the skills mismatch in Canada ___.",
+          "stem_cn": "为解决技能不匹配问题，加拿大所作的努力___。",
+          "options": {
+            "A": "have driven up labour costs",
+            "B": "have proved to be inconsistent",
+            "C": "have met with fierce opposition",
+            "D": "have appeared to be insufficient"
+          },
+          "options_cn": {
+            "A": "推高了劳动力成本",
+            "B": "已证明是自相矛盾的",
+            "C": "遭到了强烈反对",
+            "D": "似乎仍然不够"
+          },
+          "answer": "D",
+          "explanation": "定位第二段末句：加拿大等地努力\"充其量迟缓无力\"，导致高失业率时期雇主仍急缺员工，即努力仍然不够，D 正确（同义改写 languid at best）。A 由结果臆断\"劳动力成本上升\"，文中未提；B 把\"矛盾局面\"偷换为\"努力本身自相矛盾\"；C 主观臆测\"遭强烈反对\"，无据。",
+          "related_sentences": [
+            "2021_text1_s11"
+          ]
+        },
+        {
+          "id": "2021_text1_q4",
+          "number": 24,
+          "qtype": "detail",
+          "stem": "We can learn from Paragraph 3 that there was ___.",
+          "stem_cn": "从第三段我们得知，___是存在的。",
+          "options": {
+            "A": "a call for policy adjustment",
+            "B": "a change in hiring practices",
+            "C": "a lack of medical workers",
+            "D": "a sign of economic recovery"
+          },
+          "options_cn": {
+            "A": "调整政策的呼声",
+            "B": "雇佣惯例的变化",
+            "C": "医务人员的短缺",
+            "D": "经济复苏的迹象"
+          },
+          "answer": "C",
+          "explanation": "定位第三段④句：医疗领域医生、护士及其他医务人员仍明显短缺，C 正确（同义改写）。A\"调整政策的呼声\"文中未提；B 把\"用工需求变化\"窜改为\"雇佣惯例变化\"；D 与失业率由低飙高、经济低迷的事实相悖。",
+          "related_sentences": [
+            "2021_text1_s14",
+            "2021_text1_s15"
+          ]
+        },
+        {
+          "id": "2021_text1_q5",
+          "number": 25,
+          "qtype": "detail",
+          "stem": "Scandinavian Airlines decided to ___.",
+          "stem_cn": "北欧航空公司决定___。",
+          "options": {
+            "A": "create job vacancies for the unemployed",
+            "B": "prepare their laid-off workers for other jobs",
+            "C": "retrain their cabin staff for better services",
+            "D": "finance their staff's college education"
+          },
+          "options_cn": {
+            "A": "为失业人员创造空缺职位",
+            "B": "为其下岗员工从事其他工作提供培训",
+            "C": "重新培训空乘人员以提升服务",
+            "D": "为其员工的大学教育提供资金"
+          },
+          "answer": "B",
+          "explanation": "定位末段③句：北欧航空重新培训下岗员工以支援医护人员，B 正确（prepare...for other jobs 对应 reskilled...to support hospital staff）。A 曲解为公司内部造岗；C 扩大培训对象、窜改目的为\"提升服务\"；D 误读\"一所瑞典大学参与\"为资助员工上大学。",
+          "related_sentences": [
+            "2021_text1_s18"
+          ]
+        }
       ]
     },
     {
@@ -45,29 +514,461 @@
       "topic": "英国靠脱欧实现粮食自给自足只是白日梦：受土地与自然条件所限并不可行",
       "source": "2021 年考研英语（二）Text 2 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2021_text2_s01", "para": 1, "en": "With the global population predicted to hit close to 10 billion by 2050, and forecasts that agricultural production in some regions will need to nearly double to keep pace, food security is increasingly making headlines.", "cn": "预计到2050年，全球人口将多达近100亿，预测若要跟上步伐，某些地区的农业产量需接近翻倍，因此，粮食保障问题正越来越多地占据头条新闻。", "words": [ { "w": "predicted to hit", "meaning": "预计达到（某水平）" }, { "w": "keep pace", "meaning": "跟上步伐，并驾齐驱" }, { "w": "food security", "meaning": "粮食保障" }, { "w": "making headlines", "meaning": "成为新闻焦点" } ] },
-        { "id": "2021_text2_s02", "para": 1, "en": "In the UK, it has become a big talking point recently too, for a rather particular reason: Brexit.", "cn": "在英国，它最近也成了重大议题，原因相当独特：脱欧。", "words": [ { "w": "talking point", "meaning": "话题，论题" }, { "w": "particular", "meaning": "adj. 特有的，特别的" }, { "w": "Brexit", "meaning": "n. 英国脱欧" } ] },
-        { "id": "2021_text2_s03", "para": 2, "en": "Brexit is seen by some as an opportunity to reverse a recent trend towards the UK importing food.", "cn": "脱欧被一些人视为扭转“英国粮食进口”这一新近趋势的契机。", "words": [ { "w": "seen by some as", "meaning": "被一些人视为" }, { "w": "reverse", "meaning": "v. 逆转，扭转" }, { "w": "importing food", "meaning": "进口粮食" } ] },
-        { "id": "2021_text2_s04", "para": 2, "en": "The country produces only about 60 per cent of the food it eats, down from almost three-quarters in the late 1980s.", "cn": "上世纪80年代末，英国生产的粮食占其食用总量的近3/4，而现在则下滑到了仅60%。", "words": [ { "w": "produces", "meaning": "v. 生产（produce 的第三人称单数）" }, { "w": "three-quarters", "meaning": "四分之三" }, { "w": "down from", "meaning": "从……下降到" } ] },
-        { "id": "2021_text2_s05", "para": 2, "en": "A move back to self-sufficiency, the argument goes, would boost the farming industry, political sovereignty and even the nation's health.", "cn": "这些人的观点为，恢复自给自足将会促进农业发展、加强政治主权，甚至提升国民健康。", "words": [ { "w": "self-sufficiency", "meaning": "n. 自给自足" }, { "w": "the argument goes", "meaning": "这种观点认为" }, { "w": "boost", "meaning": "v. 促进，使增长" }, { "w": "sovereignty", "meaning": "n. 主权" } ] },
-        { "id": "2021_text2_s06", "para": 2, "en": "Sounds great - but how feasible is this vision?", "cn": "听起来很棒——但这一愿景的可行性如何？", "words": [ { "w": "feasible", "meaning": "adj. 可行的，行得通的" }, { "w": "vision", "meaning": "n. 想象，愿景，展望" } ] },
-        { "id": "2021_text2_s07", "para": 3, "en": "According to a report on UK food production from the University of Leeds, UK, 85 per cent of the country's total land area is associated with meat and dairy production.", "cn": "英国利兹大学关于“英国粮食生产”的报告中指出，英国土地总面积的85%与肉类及奶制品的生产相关联。", "words": [ { "w": "According to", "meaning": "根据，依据" }, { "w": "associated with", "meaning": "与……相关联" }, { "w": "meat and dairy production", "meaning": "肉类及奶制品生产" } ] },
-        { "id": "2021_text2_s08", "para": 3, "en": "That supplies 80 per cent of what is consumed, so even covering the whole country in livestock farms wouldn't allow us to cover all our meat and dairy needs.", "cn": "这供应了英国所消费食物的80%，所以即便让畜牧场覆盖全国，也无法满足我们全部的肉类及奶制品需求。", "words": [ { "w": "supplies", "meaning": "v. 供应（supply 的第三人称单数）" }, { "w": "consumed", "meaning": "v. 消费，消耗（consume 的过去分词）" }, { "w": "livestock farms", "meaning": "畜牧场" } ] },
-        { "id": "2021_text2_s09", "para": 4, "en": "There are many caveats to those figures, but they are still grave.", "cn": "虽然有许多就这些数据局限性的提醒，但它们所反映的形势仍旧严峻。", "words": [ { "w": "caveats", "meaning": "n. 提醒，警告（caveat 的复数）" }, { "w": "figures", "meaning": "n. 数据，数字（figure 的复数）" }, { "w": "grave", "meaning": "adj. 严峻的，严重的" } ] },
-        { "id": "2021_text2_s10", "para": 4, "en": "To become much more self-sufficient, the UK would need to drastically reduce its consumption of animal foods, and probably also farm more intensively - meaning fewer green fields and more factory-style production.", "cn": "英国若想大幅提高自给率，就要急剧减少食用动物性食品，并且或许还需要更集约地从事农业活动——这意味着绿色原野减少、工厂式生产增加。", "words": [ { "w": "drastically", "meaning": "ad. 大幅度地，激烈地" }, { "w": "consumption", "meaning": "n. 食用，消耗" }, { "w": "farm more intensively", "meaning": "更集约地从事农业" }, { "w": "factory-style production", "meaning": "工厂式生产" } ] },
-        { "id": "2021_text2_s11", "para": 5, "en": "But switching to a mainly plant-based diet wouldn't help.", "cn": "但转向以植物为主的饮食也不会有太大意义。", "words": [ { "w": "switching to", "meaning": "转向，改用" }, { "w": "plant-based diet", "meaning": "以植物为主的饮食" } ] },
-        { "id": "2021_text2_s12", "para": 5, "en": "There is a good reason why the UK is dominated by animal husbandry: most of its terrain doesn't have the right soil or climate to grow crops on a commercial basis.", "cn": "英国畜牧业占大头是有充分理由的：它的大部分地带都不具备适宜商业化种植的土壤和气候。", "words": [ { "w": "dominated by", "meaning": "由……占主导" }, { "w": "animal husbandry", "meaning": "畜牧业" }, { "w": "terrain", "meaning": "n. 地形，地势，地带" }, { "w": "on a commercial basis", "meaning": "商业性地" } ] },
-        { "id": "2021_text2_s13", "para": 5, "en": "Just 25 per cent of the country's land is suitable for crop-growing, most of which is already occupied by arable fields.", "cn": "全国只有25%的土地适合作物栽培，而且其中大部分都已经成为耕地了。", "words": [ { "w": "suitable for", "meaning": "适合于" }, { "w": "crop-growing", "meaning": "作物种植" }, { "w": "arable fields", "meaning": "耕地" } ] },
-        { "id": "2021_text2_s14", "para": 5, "en": "Even if we converted all the suitable land to fields of fruit and veg - which would involve taking out all the nature reserves and removing thousands of people from their homes - we would achieve only a 30 per cent boost in crop production.", "cn": "就算我们把所有条件适宜的土地都变成果蔬园地——这会牵扯到取消所有的自然保护区以及让成千上万的人们搬离家园——我们能实现的粮食产量增长也只有30%而已。", "words": [ { "w": "converted", "meaning": "v. 转变，改变（convert 的过去式）" }, { "w": "nature reserves", "meaning": "自然保护区" }, { "w": "crop production", "meaning": "作物产量" } ] },
-        { "id": "2021_text2_s15", "para": 6, "en": "Just 23 per cent of the fruit and vegetables consumed in the UK are currently home-grown, so even with the most extreme measures we could meet only 30 per cent of our fresh produce needs.", "cn": "如今英国人食用的果蔬中仅有23%产自本国，所以，哪怕采用最极端的手段，我们也只能满足鲜果蔬需求的30%。", "words": [ { "w": "home-grown", "meaning": "adj. 本国产的，本地种植的" }, { "w": "extreme measures", "meaning": "极端手段" }, { "w": "fresh produce", "meaning": "新鲜农产品" } ] },
-        { "id": "2021_text2_s16", "para": 6, "en": "That is before we look for the space to grow the grains, sugars, seeds and oils that provide us with the vast bulk of our current calorie intake.", "cn": "而在此之后，我们还得再找地方来种植谷物、糖类、籽类、油类等，它们提供了我们当前摄入的大部分卡路里。", "words": [ { "w": "grains", "meaning": "n. 谷物（grain 的复数）" }, { "w": "the vast bulk of", "meaning": "绝大部分" }, { "w": "calorie intake", "meaning": "卡路里摄入量" } ] }
+        {
+          "id": "2021_text2_s01",
+          "para": 1,
+          "en": "With the global population predicted to hit close to 10 billion by 2050, and forecasts that agricultural production in some regions will need to nearly double to keep pace, food security is increasingly making headlines.",
+          "cn": "预计到2050年，全球人口将多达近100亿，预测若要跟上步伐，某些地区的农业产量需接近翻倍，因此，粮食保障问题正越来越多地占据头条新闻。",
+          "words": [
+            {
+              "w": "predicted to hit",
+              "meaning": "预计达到（某水平）"
+            },
+            {
+              "w": "keep pace",
+              "meaning": "跟上步伐，并驾齐驱"
+            },
+            {
+              "w": "food security",
+              "meaning": "粮食保障"
+            },
+            {
+              "w": "making headlines",
+              "meaning": "成为新闻焦点"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s02",
+          "para": 1,
+          "en": "In the UK, it has become a big talking point recently too, for a rather particular reason: Brexit.",
+          "cn": "在英国，它最近也成了重大议题，原因相当独特：脱欧。",
+          "words": [
+            {
+              "w": "talking point",
+              "meaning": "话题，论题"
+            },
+            {
+              "w": "particular",
+              "meaning": "adj. 特有的，特别的"
+            },
+            {
+              "w": "Brexit",
+              "meaning": "n. 英国脱欧"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s03",
+          "para": 2,
+          "en": "Brexit is seen by some as an opportunity to reverse a recent trend towards the UK importing food.",
+          "cn": "脱欧被一些人视为扭转“英国粮食进口”这一新近趋势的契机。",
+          "words": [
+            {
+              "w": "seen by some as",
+              "meaning": "被一些人视为"
+            },
+            {
+              "w": "reverse",
+              "meaning": "v. 逆转，扭转"
+            },
+            {
+              "w": "importing food",
+              "meaning": "进口粮食"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s04",
+          "para": 2,
+          "en": "The country produces only about 60 per cent of the food it eats, down from almost three-quarters in the late 1980s.",
+          "cn": "上世纪80年代末，英国生产的粮食占其食用总量的近3/4，而现在则下滑到了仅60%。",
+          "words": [
+            {
+              "w": "produces",
+              "meaning": "v. 生产（produce 的第三人称单数）"
+            },
+            {
+              "w": "three-quarters",
+              "meaning": "四分之三"
+            },
+            {
+              "w": "down from",
+              "meaning": "从……下降到"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s05",
+          "para": 2,
+          "en": "A move back to self-sufficiency, the argument goes, would boost the farming industry, political sovereignty and even the nation's health.",
+          "cn": "这些人的观点为，恢复自给自足将会促进农业发展、加强政治主权，甚至提升国民健康。",
+          "words": [
+            {
+              "w": "self-sufficiency",
+              "meaning": "n. 自给自足"
+            },
+            {
+              "w": "the argument goes",
+              "meaning": "这种观点认为"
+            },
+            {
+              "w": "boost",
+              "meaning": "v. 促进，使增长"
+            },
+            {
+              "w": "sovereignty",
+              "meaning": "n. 主权"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s06",
+          "para": 2,
+          "en": "Sounds great - but how feasible is this vision?",
+          "cn": "听起来很棒——但这一愿景的可行性如何？",
+          "words": [
+            {
+              "w": "feasible",
+              "meaning": "adj. 可行的，行得通的"
+            },
+            {
+              "w": "vision",
+              "meaning": "n. 想象，愿景，展望"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s07",
+          "para": 3,
+          "en": "According to a report on UK food production from the University of Leeds, UK, 85 per cent of the country's total land area is associated with meat and dairy production.",
+          "cn": "英国利兹大学关于“英国粮食生产”的报告中指出，英国土地总面积的85%与肉类及奶制品的生产相关联。",
+          "words": [
+            {
+              "w": "According to",
+              "meaning": "根据，依据"
+            },
+            {
+              "w": "associated with",
+              "meaning": "与……相关联"
+            },
+            {
+              "w": "meat and dairy production",
+              "meaning": "肉类及奶制品生产"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s08",
+          "para": 3,
+          "en": "That supplies 80 per cent of what is consumed, so even covering the whole country in livestock farms wouldn't allow us to cover all our meat and dairy needs.",
+          "cn": "这供应了英国所消费食物的80%，所以即便让畜牧场覆盖全国，也无法满足我们全部的肉类及奶制品需求。",
+          "words": [
+            {
+              "w": "supplies",
+              "meaning": "v. 供应（supply 的第三人称单数）"
+            },
+            {
+              "w": "consumed",
+              "meaning": "v. 消费，消耗（consume 的过去分词）"
+            },
+            {
+              "w": "livestock farms",
+              "meaning": "畜牧场"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s09",
+          "para": 4,
+          "en": "There are many caveats to those figures, but they are still grave.",
+          "cn": "虽然有许多就这些数据局限性的提醒，但它们所反映的形势仍旧严峻。",
+          "words": [
+            {
+              "w": "caveats",
+              "meaning": "n. 提醒，警告（caveat 的复数）"
+            },
+            {
+              "w": "figures",
+              "meaning": "n. 数据，数字（figure 的复数）"
+            },
+            {
+              "w": "grave",
+              "meaning": "adj. 严峻的，严重的"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s10",
+          "para": 4,
+          "en": "To become much more self-sufficient, the UK would need to drastically reduce its consumption of animal foods, and probably also farm more intensively - meaning fewer green fields and more factory-style production.",
+          "cn": "英国若想大幅提高自给率，就要急剧减少食用动物性食品，并且或许还需要更集约地从事农业活动——这意味着绿色原野减少、工厂式生产增加。",
+          "words": [
+            {
+              "w": "drastically",
+              "meaning": "ad. 大幅度地，激烈地"
+            },
+            {
+              "w": "consumption",
+              "meaning": "n. 食用，消耗"
+            },
+            {
+              "w": "farm more intensively",
+              "meaning": "更集约地从事农业"
+            },
+            {
+              "w": "factory-style production",
+              "meaning": "工厂式生产"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s11",
+          "para": 5,
+          "en": "But switching to a mainly plant-based diet wouldn't help.",
+          "cn": "但转向以植物为主的饮食也不会有太大意义。",
+          "words": [
+            {
+              "w": "switching to",
+              "meaning": "转向，改用"
+            },
+            {
+              "w": "plant-based diet",
+              "meaning": "以植物为主的饮食"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s12",
+          "para": 5,
+          "en": "There is a good reason why the UK is dominated by animal husbandry: most of its terrain doesn't have the right soil or climate to grow crops on a commercial basis.",
+          "cn": "英国畜牧业占大头是有充分理由的：它的大部分地带都不具备适宜商业化种植的土壤和气候。",
+          "words": [
+            {
+              "w": "dominated by",
+              "meaning": "由……占主导"
+            },
+            {
+              "w": "animal husbandry",
+              "meaning": "畜牧业"
+            },
+            {
+              "w": "terrain",
+              "meaning": "n. 地形，地势，地带"
+            },
+            {
+              "w": "on a commercial basis",
+              "meaning": "商业性地"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s13",
+          "para": 5,
+          "en": "Just 25 per cent of the country's land is suitable for crop-growing, most of which is already occupied by arable fields.",
+          "cn": "全国只有25%的土地适合作物栽培，而且其中大部分都已经成为耕地了。",
+          "words": [
+            {
+              "w": "suitable for",
+              "meaning": "适合于"
+            },
+            {
+              "w": "crop-growing",
+              "meaning": "作物种植"
+            },
+            {
+              "w": "arable fields",
+              "meaning": "耕地"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s14",
+          "para": 5,
+          "en": "Even if we converted all the suitable land to fields of fruit and veg - which would involve taking out all the nature reserves and removing thousands of people from their homes - we would achieve only a 30 per cent boost in crop production.",
+          "cn": "就算我们把所有条件适宜的土地都变成果蔬园地——这会牵扯到取消所有的自然保护区以及让成千上万的人们搬离家园——我们能实现的粮食产量增长也只有30%而已。",
+          "words": [
+            {
+              "w": "converted",
+              "meaning": "v. 转变，改变（convert 的过去式）"
+            },
+            {
+              "w": "nature reserves",
+              "meaning": "自然保护区"
+            },
+            {
+              "w": "crop production",
+              "meaning": "作物产量"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s15",
+          "para": 6,
+          "en": "Just 23 per cent of the fruit and vegetables consumed in the UK are currently home-grown, so even with the most extreme measures we could meet only 30 per cent of our fresh produce needs.",
+          "cn": "如今英国人食用的果蔬中仅有23%产自本国，所以，哪怕采用最极端的手段，我们也只能满足鲜果蔬需求的30%。",
+          "words": [
+            {
+              "w": "home-grown",
+              "meaning": "adj. 本国产的，本地种植的"
+            },
+            {
+              "w": "extreme measures",
+              "meaning": "极端手段"
+            },
+            {
+              "w": "fresh produce",
+              "meaning": "新鲜农产品"
+            }
+          ]
+        },
+        {
+          "id": "2021_text2_s16",
+          "para": 6,
+          "en": "That is before we look for the space to grow the grains, sugars, seeds and oils that provide us with the vast bulk of our current calorie intake.",
+          "cn": "而在此之后，我们还得再找地方来种植谷物、糖类、籽类、油类等，它们提供了我们当前摄入的大部分卡路里。",
+          "words": [
+            {
+              "w": "grains",
+              "meaning": "n. 谷物（grain 的复数）"
+            },
+            {
+              "w": "the vast bulk of",
+              "meaning": "绝大部分"
+            },
+            {
+              "w": "calorie intake",
+              "meaning": "卡路里摄入量"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2021_text2_q1", "number": 26, "qtype": "viewpoint", "stem": "Some people argue that food self-sufficiency in the UK would ___.", "stem_cn": "有些人提出，英国粮食的自给自足将会___。", "options": { "A": "be hindered by its population growth", "B": "contribute to the nation's well-being", "C": "become a priority of the government", "D": "pose a challenge to its farming industry" }, "options_cn": { "A": "被人口增长阻碍", "B": "有助于国民的福祉", "C": "成为政府的优先事项", "D": "对其农业形成挑战" }, "answer": "B", "explanation": "定位第二段①③句：some 认为恢复自给自足将促进农业、加强政治主权、甚至提升国民健康，B 正确（contribute to well-being 对应 boost the nation's health）。A 用首段全球人口捏造关联；C 曲解\"政治主权\"为政府优先事项；D 把\"促进农业\"颠倒为\"挑战农业\"。", "related_sentences": [ "2021_text2_s03", "2021_text2_s05" ] },
-        { "id": "2021_text2_q2", "number": 27, "qtype": "detail", "stem": "The report by the University of Leeds shows that in the UK ___.", "stem_cn": "利兹大学的报告显示，在英国___。", "options": { "A": "farmland has been inefficiently utilized", "B": "factory-style production needs reforming", "C": "most land is used for meat and dairy production", "D": "more green fields will be converted for farming" }, "options_cn": { "A": "农田的利用效率低下", "B": "工厂式生产需要改革", "C": "大部分土地被用于肉类和奶制品生产", "D": "将有更多绿色原野被转为耕作用地" }, "answer": "C", "explanation": "定位第三段①句报告内容：英国 85% 土地与肉奶生产相关，即大部分土地用于肉奶生产，C 正确。A、B、D 均出自第四段作者\"基于报告的设想\"而非报告本身，且 A 属错误推导、B 属曲解。", "related_sentences": [ "2021_text2_s07" ] },
-        { "id": "2021_text2_q3", "number": 28, "qtype": "detail", "stem": "Crop-growing in the UK is restricted due to ___.", "stem_cn": "英国的作物种植因___而受限。", "options": { "A": "its farming technology", "B": "its dietary tradition", "C": "its natural conditions", "D": "its commercial interests" }, "options_cn": { "A": "其耕作技术", "B": "其饮食传统", "C": "其自然条件", "D": "其商业利益" }, "answer": "C", "explanation": "定位第五段②句：英国大部分地带不具备适宜商业化种植的土壤和气候，即受自然条件限制，C 正确（natural conditions 概括 the right soil or climate）。A 由\"工厂式生产\"臆断；B 颠倒因果（畜牧为主是结果非原因）；D 利用 commercial basis 曲解为\"商业利益限制种植\"。", "related_sentences": [ "2021_text2_s11", "2021_text2_s12" ] },
-        { "id": "2021_text2_q4", "number": 29, "qtype": "inference", "stem": "It can be learned from the last paragraph that British people ___.", "stem_cn": "从末段可知，英国人___。", "options": { "A": "rely largely on imports for fresh produce", "B": "enjoy a steady rise in fruit consumption", "C": "are seeking effective ways to cut calorie intake", "D": "are trying to grow new varieties of grains" }, "options_cn": { "A": "主要依靠进口新鲜农产品", "B": "水果食用量稳步上升", "C": "正寻求有效措施来减少卡路里摄入", "D": "正试图种植新的谷物类型" }, "answer": "A", "explanation": "定位末段①句：仅 23% 果蔬产自本国，可合理推算其余大部分依赖进口，A 正确。B 误解 23%/30% 两个数据含义；C、D 把②句假设性情形（另找地方种谷物）曲解为英国人的现实行动。", "related_sentences": [ "2021_text2_s15", "2021_text2_s16" ] },
-        { "id": "2021_text2_q5", "number": 30, "qtype": "attitude", "stem": "The author's attitude to food self-sufficiency in the UK is ___.", "stem_cn": "作者对英国粮食自给自足的态度是___。", "options": { "A": "defensive", "B": "doubtful", "C": "tolerant", "D": "optimistic" }, "options_cn": { "A": "为之辩护的", "B": "充满怀疑的", "C": "有所容忍的", "D": "积极乐观的" }, "answer": "B", "explanation": "全文脉络为层层让步否定（第二段末设问质疑、第三/五段极端假设仍不可行、第六段雪上加霜），作者对英国粮食自给自足持怀疑（doubtful）态度，B 正确。A、D 混淆他人观点与作者观点；C 误读让步表达为容忍，作者实为以极端假设强调不可行。", "related_sentences": [ "2021_text2_s06", "2021_text2_s14", "2021_text2_s16" ] }
+        {
+          "id": "2021_text2_q1",
+          "number": 26,
+          "qtype": "viewpoint",
+          "stem": "Some people argue that food self-sufficiency in the UK would ___.",
+          "stem_cn": "有些人提出，英国粮食的自给自足将会___。",
+          "options": {
+            "A": "be hindered by its population growth",
+            "B": "contribute to the nation's well-being",
+            "C": "become a priority of the government",
+            "D": "pose a challenge to its farming industry"
+          },
+          "options_cn": {
+            "A": "被人口增长阻碍",
+            "B": "有助于国民的福祉",
+            "C": "成为政府的优先事项",
+            "D": "对其农业形成挑战"
+          },
+          "answer": "B",
+          "explanation": "定位第二段①③句：some 认为恢复自给自足将促进农业、加强政治主权、甚至提升国民健康，B 正确（contribute to well-being 对应 boost the nation's health）。A 用首段全球人口捏造关联；C 曲解\"政治主权\"为政府优先事项；D 把\"促进农业\"颠倒为\"挑战农业\"。",
+          "related_sentences": [
+            "2021_text2_s03",
+            "2021_text2_s05"
+          ]
+        },
+        {
+          "id": "2021_text2_q2",
+          "number": 27,
+          "qtype": "detail",
+          "stem": "The report by the University of Leeds shows that in the UK ___.",
+          "stem_cn": "利兹大学的报告显示，在英国___。",
+          "options": {
+            "A": "farmland has been inefficiently utilized",
+            "B": "factory-style production needs reforming",
+            "C": "most land is used for meat and dairy production",
+            "D": "more green fields will be converted for farming"
+          },
+          "options_cn": {
+            "A": "农田的利用效率低下",
+            "B": "工厂式生产需要改革",
+            "C": "大部分土地被用于肉类和奶制品生产",
+            "D": "将有更多绿色原野被转为耕作用地"
+          },
+          "answer": "C",
+          "explanation": "定位第三段①句报告内容：英国 85% 土地与肉奶生产相关，即大部分土地用于肉奶生产，C 正确。A、B、D 均出自第四段作者\"基于报告的设想\"而非报告本身，且 A 属错误推导、B 属曲解。",
+          "related_sentences": [
+            "2021_text2_s07"
+          ]
+        },
+        {
+          "id": "2021_text2_q3",
+          "number": 28,
+          "qtype": "detail",
+          "stem": "Crop-growing in the UK is restricted due to ___.",
+          "stem_cn": "英国的作物种植因___而受限。",
+          "options": {
+            "A": "its farming technology",
+            "B": "its dietary tradition",
+            "C": "its natural conditions",
+            "D": "its commercial interests"
+          },
+          "options_cn": {
+            "A": "其耕作技术",
+            "B": "其饮食传统",
+            "C": "其自然条件",
+            "D": "其商业利益"
+          },
+          "answer": "C",
+          "explanation": "定位第五段②句：英国大部分地带不具备适宜商业化种植的土壤和气候，即受自然条件限制，C 正确（natural conditions 概括 the right soil or climate）。A 由\"工厂式生产\"臆断；B 颠倒因果（畜牧为主是结果非原因）；D 利用 commercial basis 曲解为\"商业利益限制种植\"。",
+          "related_sentences": [
+            "2021_text2_s11",
+            "2021_text2_s12"
+          ]
+        },
+        {
+          "id": "2021_text2_q4",
+          "number": 29,
+          "qtype": "inference",
+          "stem": "It can be learned from the last paragraph that British people ___.",
+          "stem_cn": "从末段可知，英国人___。",
+          "options": {
+            "A": "rely largely on imports for fresh produce",
+            "B": "enjoy a steady rise in fruit consumption",
+            "C": "are seeking effective ways to cut calorie intake",
+            "D": "are trying to grow new varieties of grains"
+          },
+          "options_cn": {
+            "A": "主要依靠进口新鲜农产品",
+            "B": "水果食用量稳步上升",
+            "C": "正寻求有效措施来减少卡路里摄入",
+            "D": "正试图种植新的谷物类型"
+          },
+          "answer": "A",
+          "explanation": "定位末段①句：仅 23% 果蔬产自本国，可合理推算其余大部分依赖进口，A 正确。B 误解 23%/30% 两个数据含义；C、D 把②句假设性情形（另找地方种谷物）曲解为英国人的现实行动。",
+          "related_sentences": [
+            "2021_text2_s15",
+            "2021_text2_s16"
+          ]
+        },
+        {
+          "id": "2021_text2_q5",
+          "number": 30,
+          "qtype": "attitude",
+          "stem": "The author's attitude to food self-sufficiency in the UK is ___.",
+          "stem_cn": "作者对英国粮食自给自足的态度是___。",
+          "options": {
+            "A": "defensive",
+            "B": "doubtful",
+            "C": "tolerant",
+            "D": "optimistic"
+          },
+          "options_cn": {
+            "A": "为之辩护的",
+            "B": "充满怀疑的",
+            "C": "有所容忍的",
+            "D": "积极乐观的"
+          },
+          "answer": "B",
+          "explanation": "全文脉络为层层让步否定（第二段末设问质疑、第三/五段极端假设仍不可行、第六段雪上加霜），作者对英国粮食自给自足持怀疑（doubtful）态度，B 正确。A、D 混淆他人观点与作者观点；C 误读让步表达为容忍，作者实为以极端假设强调不可行。",
+          "related_sentences": [
+            "2021_text2_s06",
+            "2021_text2_s14",
+            "2021_text2_s16"
+          ]
+        }
       ]
     },
     {
@@ -77,29 +978,449 @@
       "topic": "大型科技公司的\"买了即杀\"策略受审查：恶意收购扼杀潜在竞争对手",
       "source": "2021 年考研英语（二）Text 3 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2021_text3_s01", "para": 1, "en": "When Microsoft bought task management app Wunderlist and mobile calendar Sunrise in 2015, it picked two newcomers that were attracting considerable buzz in Silicon Valley.", "cn": "2015年，微软收购任务管理应用Wunderlist和移动日历Sunrise时，挑选的是当时在硅谷名声大噪的两家新科技公司。", "words": [ { "w": "task management", "meaning": "任务管理" }, { "w": "newcomers", "meaning": "n. 新来者，新手（newcomer 的复数）" }, { "w": "considerable buzz", "meaning": "相当大的关注热度" }, { "w": "Silicon Valley", "meaning": "硅谷" } ] },
-        { "id": "2021_text3_s02", "para": 1, "en": "Microsoft's own Office dominates the market for \"productivity\" software, but the start-ups represented a new wave of technology designed from the ground up for the smartphone world.", "cn": "微软自创的Office在“生产效率”软件市场独占鳌头，而这两家初创企业则代表了智能手机领域全新科技的一股新潮。", "words": [ { "w": "dominates", "meaning": "v. 占支配地位（dominate 的第三人称单数）" }, { "w": "start-ups", "meaning": "n. 初创企业（start-up 的复数）" }, { "w": "from the ground up", "meaning": "从头开始，彻底地" } ] },
-        { "id": "2021_text3_s03", "para": 2, "en": "Both apps, however, were later scrapped, after Microsoft said it had used their best features in its own products.", "cn": "然而，这两款应用后来都被下架了，微软表示已将其最佳性能融入到了自身产品中。", "words": [ { "w": "scrapped", "meaning": "v. 取消，报废（scrap 的过去分词）" }, { "w": "features", "meaning": "n. 特色，特点（feature 的复数）" } ] },
-        { "id": "2021_text3_s04", "para": 2, "en": "Their teams of engineers stayed on, making them two of the many \"acqui-hires\" that the biggest companies have used to feed their great hunger for tech talent.", "cn": "两款应用的工程师团队留了下来，使之成为大型科技公司为弥补科技人才紧缺而进行的众多“人才并购”的两例。", "words": [ { "w": "stayed on", "meaning": "继续留下，留任" }, { "w": "acqui-hires", "meaning": "人才收购，人才并购" }, { "w": "feed their great hunger for", "meaning": "满足其对……的强烈渴求" } ] },
-        { "id": "2021_text3_s05", "para": 3, "en": "To Microsoft's critics, the fates of Wunderlist and Sunrise are examples of a remorseless drive by Big Tech to chew up any innovative companies that lie in their path.", "cn": "在微软的批评者看来，Wunderlist和Sunrise的命运表明：科技巨头会无情地蚕食一切阻碍其发展的创新公司。", "words": [ { "w": "critics", "meaning": "n. 批评者（critic 的复数）" }, { "w": "remorseless", "meaning": "adj. 残酷的，无情的" }, { "w": "chew up", "meaning": "嚼碎，毁坏" }, { "w": "lie in their path", "meaning": "挡其道，妨碍其发展" } ] },
-        { "id": "2021_text3_s06", "para": 3, "en": "\"They bought the seedlings and closed them down,\" complained Paul Arnold, a partner at San Francisco-based Switch Ventures, putting an end to businesses that might one day turn into competitors.", "cn": "总部位于旧金山的Switch风险投资公司合伙人保罗·阿诺德抱怨道，“他们买下这些初创企业然后将其关闭”，将那些有朝一日可能会成长为竞争对手的企业扼杀于摇篮。", "words": [ { "w": "seedlings", "meaning": "n. 幼苗（seedling 的复数）" }, { "w": "complained", "meaning": "v. 抱怨，埋怨（complain 的过去式）" }, { "w": "putting an end to", "meaning": "终结，扼杀" } ] },
-        { "id": "2021_text3_s07", "para": 3, "en": "Microsoft declined to comment.", "cn": "微软拒绝对此置评。", "words": [ { "w": "declined", "meaning": "v. 谢绝，婉言拒绝（decline 的过去式）" }, { "w": "comment", "meaning": "v. 表达意见，评论" } ] },
-        { "id": "2021_text3_s08", "para": 4, "en": "Like other start-up investors, Mr. Arnold's own business often depends on selling start-ups to larger tech companies, though he admits to mixed feelings about the result: \"I think these things are good for me, if I put my selfish hat on.", "cn": "和其他初创企业投资者一样，阿诺德的公司也常常依赖于将初创企业出售给大型科技公司，不过对于收购结局他内心五味杂陈：“自私一点说，我认为这些收购对我有利。", "words": [ { "w": "depends on", "meaning": "依赖于，取决于" }, { "w": "admits to", "meaning": "承认" }, { "w": "mixed feelings", "meaning": "五味杂陈，喜忧参半" } ] },
-        { "id": "2021_text3_s09", "para": 4, "en": "But are they good for the American economy?", "cn": "但它们对美国经济有利吗？", "words": [ { "w": "the American economy", "meaning": "美国经济" } ] },
-        { "id": "2021_text3_s10", "para": 4, "en": "I don't know.\"", "cn": "我不知道。”", "words": [ { "w": "don't know", "meaning": "不知道" } ] },
-        { "id": "2021_text3_s11", "para": 5, "en": "The US Federal Trade Commission says it wants to find the answer to that question.", "cn": "美国联邦贸易委员会表示希望找到这个问题的答案。", "words": [ { "w": "Federal Trade Commission", "meaning": "（美国）联邦贸易委员会" }, { "w": "find the answer to", "meaning": "找到……的答案" } ] },
-        { "id": "2021_text3_s12", "para": 5, "en": "This week, it asked the five most valuable US tech companies for information about their many small acquisitions over the past decade.", "cn": "本周，委员会要求美国市值最高的五家科技公司提供过去十年内进行的诸多小型收购的相关信息。", "words": [ { "w": "most valuable", "meaning": "市值最高的，最有价值的" }, { "w": "small acquisitions", "meaning": "小额收购" }, { "w": "over the past decade", "meaning": "在过去十年间" } ] },
-        { "id": "2021_text3_s13", "para": 5, "en": "Although only a research project at this stage, the request has raised the prospect of regulators wading into early-stage tech markets that until now have been beyond their reach.", "cn": "尽管在现阶段这项要求只是一个研究项目，却让人们燃起了希望：监管机构开始介入此前不曾涉足的早期科技市场。", "words": [ { "w": "research project", "meaning": "研究项目" }, { "w": "raised the prospect of", "meaning": "让……的前景燃起希望" }, { "w": "wading into", "meaning": "介入，插手" }, { "w": "beyond their reach", "meaning": "力所不能及，鞭长莫及" } ] },
-        { "id": "2021_text3_s14", "para": 6, "en": "Given their combined market value of more than $5.5 trillion, rifling through such small deals - many of them much less prominent than Wunderlist and Sunrise - might seem beside the point.", "cn": "鉴于这五家科技公司的总市值超过5.5万亿美元，匆忙审查这些小额收购（其中许多远没有Wunderlist、Sunrise收购案引人注目）似乎有些避重就轻的味道。", "words": [ { "w": "combined market value", "meaning": "合计市值，总市值" }, { "w": "rifling through", "meaning": "快速翻查，匆忙翻找" }, { "w": "prominent", "meaning": "adj. 显眼的，突出的" }, { "w": "beside the point", "meaning": "不是重点，无关紧要" } ] },
-        { "id": "2021_text3_s15", "para": 6, "en": "Between them, the five biggest tech companies have spent an average of only $3.4 billion a year on sub-$1 billion acquisitions over the past five years - a drop in the ocean compared with their massive financial reserves, and the more than $130 billion of venture capital that was invested in the US last year.", "cn": "过去的五年中，这五大科技公司加起来平均每年只花34亿美元用于10亿美元以下的收购。这个数额同他们庞大的资金储备以及去年在美国完成的1300多亿美元的风险投资相比，无异于沧海一粟。", "words": [ { "w": "an average of", "meaning": "平均" }, { "w": "a drop in the ocean", "meaning": "沧海一粟，九牛一毛" }, { "w": "massive financial reserves", "meaning": "庞大的资金储备" }, { "w": "venture capital", "meaning": "风险资本" } ] },
-        { "id": "2021_text3_s16", "para": 7, "en": "However, critics say the big companies use such deals to buy their most threatening potential competitors before their businesses have a chance to gain momentum, in some cases as part of a \"buy and kill\" tactic to simply close them down.", "cn": "但批评人士认为，这些大公司利用这样的交易，在最具危险性的潜在竞争对手有机会形成势头之前将他们买下，有些时候就是“买了即杀”策略中的一步，就是要让他们关门。", "words": [ { "w": "most threatening", "meaning": "最具威胁性的" }, { "w": "potential competitors", "meaning": "潜在竞争对手" }, { "w": "gain momentum", "meaning": "形成势头，积聚动力" }, { "w": "tactic", "meaning": "n. 策略，手段" } ] }
+        {
+          "id": "2021_text3_s01",
+          "para": 1,
+          "en": "When Microsoft bought task management app Wunderlist and mobile calendar Sunrise in 2015, it picked two newcomers that were attracting considerable buzz in Silicon Valley.",
+          "cn": "2015年，微软收购任务管理应用Wunderlist和移动日历Sunrise时，挑选的是当时在硅谷名声大噪的两家新科技公司。",
+          "words": [
+            {
+              "w": "task management",
+              "meaning": "任务管理"
+            },
+            {
+              "w": "newcomers",
+              "meaning": "n. 新来者，新手（newcomer 的复数）"
+            },
+            {
+              "w": "considerable buzz",
+              "meaning": "相当大的关注热度"
+            },
+            {
+              "w": "Silicon Valley",
+              "meaning": "硅谷"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s02",
+          "para": 1,
+          "en": "Microsoft's own Office dominates the market for \"productivity\" software, but the start-ups represented a new wave of technology designed from the ground up for the smartphone world.",
+          "cn": "微软自创的Office在“生产效率”软件市场独占鳌头，而这两家初创企业则代表了智能手机领域全新科技的一股新潮。",
+          "words": [
+            {
+              "w": "dominates",
+              "meaning": "v. 占支配地位（dominate 的第三人称单数）"
+            },
+            {
+              "w": "start-ups",
+              "meaning": "n. 初创企业（start-up 的复数）"
+            },
+            {
+              "w": "from the ground up",
+              "meaning": "从头开始，彻底地"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s03",
+          "para": 2,
+          "en": "Both apps, however, were later scrapped, after Microsoft said it had used their best features in its own products.",
+          "cn": "然而，这两款应用后来都被下架了，微软表示已将其最佳性能融入到了自身产品中。",
+          "words": [
+            {
+              "w": "scrapped",
+              "meaning": "v. 取消，报废（scrap 的过去分词）"
+            },
+            {
+              "w": "features",
+              "meaning": "n. 特色，特点（feature 的复数）"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s04",
+          "para": 2,
+          "en": "Their teams of engineers stayed on, making them two of the many \"acqui-hires\" that the biggest companies have used to feed their great hunger for tech talent.",
+          "cn": "两款应用的工程师团队留了下来，使之成为大型科技公司为弥补科技人才紧缺而进行的众多“人才并购”的两例。",
+          "words": [
+            {
+              "w": "stayed on",
+              "meaning": "继续留下，留任"
+            },
+            {
+              "w": "acqui-hires",
+              "meaning": "人才收购，人才并购"
+            },
+            {
+              "w": "feed their great hunger for",
+              "meaning": "满足其对……的强烈渴求"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s05",
+          "para": 3,
+          "en": "To Microsoft's critics, the fates of Wunderlist and Sunrise are examples of a remorseless drive by Big Tech to chew up any innovative companies that lie in their path.",
+          "cn": "在微软的批评者看来，Wunderlist和Sunrise的命运表明：科技巨头会无情地蚕食一切阻碍其发展的创新公司。",
+          "words": [
+            {
+              "w": "critics",
+              "meaning": "n. 批评者（critic 的复数）"
+            },
+            {
+              "w": "remorseless",
+              "meaning": "adj. 残酷的，无情的"
+            },
+            {
+              "w": "chew up",
+              "meaning": "嚼碎，毁坏"
+            },
+            {
+              "w": "lie in their path",
+              "meaning": "挡其道，妨碍其发展"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s06",
+          "para": 3,
+          "en": "\"They bought the seedlings and closed them down,\" complained Paul Arnold, a partner at San Francisco-based Switch Ventures, putting an end to businesses that might one day turn into competitors.",
+          "cn": "总部位于旧金山的Switch风险投资公司合伙人保罗·阿诺德抱怨道，“他们买下这些初创企业然后将其关闭”，将那些有朝一日可能会成长为竞争对手的企业扼杀于摇篮。",
+          "words": [
+            {
+              "w": "seedlings",
+              "meaning": "n. 幼苗（seedling 的复数）"
+            },
+            {
+              "w": "complained",
+              "meaning": "v. 抱怨，埋怨（complain 的过去式）"
+            },
+            {
+              "w": "putting an end to",
+              "meaning": "终结，扼杀"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s07",
+          "para": 3,
+          "en": "Microsoft declined to comment.",
+          "cn": "微软拒绝对此置评。",
+          "words": [
+            {
+              "w": "declined",
+              "meaning": "v. 谢绝，婉言拒绝（decline 的过去式）"
+            },
+            {
+              "w": "comment",
+              "meaning": "v. 表达意见，评论"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s08",
+          "para": 4,
+          "en": "Like other start-up investors, Mr. Arnold's own business often depends on selling start-ups to larger tech companies, though he admits to mixed feelings about the result: \"I think these things are good for me, if I put my selfish hat on.",
+          "cn": "和其他初创企业投资者一样，阿诺德的公司也常常依赖于将初创企业出售给大型科技公司，不过对于收购结局他内心五味杂陈：“自私一点说，我认为这些收购对我有利。",
+          "words": [
+            {
+              "w": "depends on",
+              "meaning": "依赖于，取决于"
+            },
+            {
+              "w": "admits to",
+              "meaning": "承认"
+            },
+            {
+              "w": "mixed feelings",
+              "meaning": "五味杂陈，喜忧参半"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s09",
+          "para": 4,
+          "en": "But are they good for the American economy?",
+          "cn": "但它们对美国经济有利吗？",
+          "words": [
+            {
+              "w": "the American economy",
+              "meaning": "美国经济"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s10",
+          "para": 4,
+          "en": "I don't know.\"",
+          "cn": "我不知道。”",
+          "words": [
+            {
+              "w": "don't know",
+              "meaning": "不知道"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s11",
+          "para": 5,
+          "en": "The US Federal Trade Commission says it wants to find the answer to that question.",
+          "cn": "美国联邦贸易委员会表示希望找到这个问题的答案。",
+          "words": [
+            {
+              "w": "Federal Trade Commission",
+              "meaning": "（美国）联邦贸易委员会"
+            },
+            {
+              "w": "find the answer to",
+              "meaning": "找到……的答案"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s12",
+          "para": 5,
+          "en": "This week, it asked the five most valuable US tech companies for information about their many small acquisitions over the past decade.",
+          "cn": "本周，委员会要求美国市值最高的五家科技公司提供过去十年内进行的诸多小型收购的相关信息。",
+          "words": [
+            {
+              "w": "most valuable",
+              "meaning": "市值最高的，最有价值的"
+            },
+            {
+              "w": "small acquisitions",
+              "meaning": "小额收购"
+            },
+            {
+              "w": "over the past decade",
+              "meaning": "在过去十年间"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s13",
+          "para": 5,
+          "en": "Although only a research project at this stage, the request has raised the prospect of regulators wading into early-stage tech markets that until now have been beyond their reach.",
+          "cn": "尽管在现阶段这项要求只是一个研究项目，却让人们燃起了希望：监管机构开始介入此前不曾涉足的早期科技市场。",
+          "words": [
+            {
+              "w": "research project",
+              "meaning": "研究项目"
+            },
+            {
+              "w": "raised the prospect of",
+              "meaning": "让……的前景燃起希望"
+            },
+            {
+              "w": "wading into",
+              "meaning": "介入，插手"
+            },
+            {
+              "w": "beyond their reach",
+              "meaning": "力所不能及，鞭长莫及"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s14",
+          "para": 6,
+          "en": "Given their combined market value of more than $5.5 trillion, rifling through such small deals - many of them much less prominent than Wunderlist and Sunrise - might seem beside the point.",
+          "cn": "鉴于这五家科技公司的总市值超过5.5万亿美元，匆忙审查这些小额收购（其中许多远没有Wunderlist、Sunrise收购案引人注目）似乎有些避重就轻的味道。",
+          "words": [
+            {
+              "w": "combined market value",
+              "meaning": "合计市值，总市值"
+            },
+            {
+              "w": "rifling through",
+              "meaning": "快速翻查，匆忙翻找"
+            },
+            {
+              "w": "prominent",
+              "meaning": "adj. 显眼的，突出的"
+            },
+            {
+              "w": "beside the point",
+              "meaning": "不是重点，无关紧要"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s15",
+          "para": 6,
+          "en": "Between them, the five biggest tech companies have spent an average of only $3.4 billion a year on sub-$1 billion acquisitions over the past five years - a drop in the ocean compared with their massive financial reserves, and the more than $130 billion of venture capital that was invested in the US last year.",
+          "cn": "过去的五年中，这五大科技公司加起来平均每年只花34亿美元用于10亿美元以下的收购。这个数额同他们庞大的资金储备以及去年在美国完成的1300多亿美元的风险投资相比，无异于沧海一粟。",
+          "words": [
+            {
+              "w": "an average of",
+              "meaning": "平均"
+            },
+            {
+              "w": "a drop in the ocean",
+              "meaning": "沧海一粟，九牛一毛"
+            },
+            {
+              "w": "massive financial reserves",
+              "meaning": "庞大的资金储备"
+            },
+            {
+              "w": "venture capital",
+              "meaning": "风险资本"
+            }
+          ]
+        },
+        {
+          "id": "2021_text3_s16",
+          "para": 7,
+          "en": "However, critics say the big companies use such deals to buy their most threatening potential competitors before their businesses have a chance to gain momentum, in some cases as part of a \"buy and kill\" tactic to simply close them down.",
+          "cn": "但批评人士认为，这些大公司利用这样的交易，在最具危险性的潜在竞争对手有机会形成势头之前将他们买下，有些时候就是“买了即杀”策略中的一步，就是要让他们关门。",
+          "words": [
+            {
+              "w": "most threatening",
+              "meaning": "最具威胁性的"
+            },
+            {
+              "w": "potential competitors",
+              "meaning": "潜在竞争对手"
+            },
+            {
+              "w": "gain momentum",
+              "meaning": "形成势头，积聚动力"
+            },
+            {
+              "w": "tactic",
+              "meaning": "n. 策略，手段"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2021_text3_q1", "number": 31, "qtype": "detail", "stem": "What is true about Wunderlist and Sunrise after their acquisitions?", "stem_cn": "Wunderlist 和 Sunrise 被收购后的真实情况如何？", "options": { "A": "Their engineers were retained.", "B": "Their market values declined.", "C": "Their tech features improved.", "D": "Their products were re-priced." }, "options_cn": { "A": "他们的工程师被留用。", "B": "他们的市场价值下降。", "C": "他们的科技性能得到提升。", "D": "他们的产品被重新定价。" }, "answer": "A", "explanation": "定位第二段②句：软件被下架，但工程师团队留了下来（stayed on），即工程师被留用，A 正确。B 张冠李戴（市值巨大说的是五巨头）；C 性能提升的是微软自家产品；D\"重新定价\"与\"已下架\"矛盾。", "related_sentences": [ "2021_text3_s03", "2021_text3_s04" ] },
-        { "id": "2021_text3_q2", "number": 32, "qtype": "viewpoint", "stem": "Microsoft's critics believe that the big tech companies tend to ___.", "stem_cn": "微软的批评者认为，大型科技公司往往会___。", "options": { "A": "exaggerate their product quality", "B": "eliminate their potential competitors", "C": "treat new tech talent unfairly", "D": "ignore public opinions" }, "options_cn": { "A": "夸大他们的产品质量", "B": "消灭他们的潜在竞争对手", "C": "不公正地对待新技术人才", "D": "忽视公众的意见" }, "answer": "B", "explanation": "定位第三段①②句：批评者称科技巨头无情蚕食挡道的创新公司、抢在其成长为竞争对手前将其扼杀，即消灭潜在竞争对手，B 正确。A、C、D 或断章取义或反向窜改，且均非\"批评者观点\"。", "related_sentences": [ "2021_text3_s05", "2021_text3_s06" ] },
-        { "id": "2021_text3_q3", "number": 33, "qtype": "viewpoint", "stem": "Paul Arnold is concerned that small acquisitions might ___.", "stem_cn": "保罗·阿诺德担忧，小额收购可能会___。", "options": { "A": "weaken big tech companies", "B": "worsen market competition", "C": "harm the national economy", "D": "discourage start-up investors" }, "options_cn": { "A": "削弱大型科技公司", "B": "加剧市场竞争", "C": "损害国家经济", "D": "挫伤初创企业投资者的信心" }, "answer": "C", "explanation": "定位第四段③④句：阿诺德坦言收购对自己有利，但反问\"它们对美国经济有利吗？我不知道\"，透露对国家经济受损的担忧，C 正确。A、B 与其\"巩固垄断、阻碍新竞争\"的判断相悖；D 与\"对投资者有利\"相悖。", "related_sentences": [ "2021_text3_s08", "2021_text3_s09", "2021_text3_s10" ] },
-        { "id": "2021_text3_q4", "number": 34, "qtype": "detail", "stem": "The US Federal Trade Commission intends to ___.", "stem_cn": "美国联邦贸易委员会想要___。", "options": { "A": "limit Big Tech's expansion", "B": "encourage research collaboration", "C": "examine small acquisitions", "D": "supervise start-ups' operation" }, "options_cn": { "A": "限制科技巨头的扩张", "B": "鼓励研究合作", "C": "审查小额收购", "D": "监督初创企业的运营" }, "answer": "C", "explanation": "定位第五段①②句：FTC 为寻找\"是否有害经济\"的答案，要求五大科技公司提供过去十年小额收购的信息，即审查小额收购，C 正确。A 属过度推导；B 对 research project 断章取义；D 监管对象搞错（是收购行为而非初创企业运营）。", "related_sentences": [ "2021_text3_s11", "2021_text3_s12" ] },
-        { "id": "2021_text3_q5", "number": 35, "qtype": "inference", "stem": "For the five biggest tech companies, their small acquisitions have ___.", "stem_cn": "对五家最大的科技公司而言，他们的小额收购___。", "options": { "A": "brought little financial pressure", "B": "raised few management challenges", "C": "set an example for future deals", "D": "generated considerable profits" }, "options_cn": { "A": "没有带来多少财务压力", "B": "没有带来多少管理问题", "C": "为后来的交易树立了榜样", "D": "带来了丰厚的利润" }, "answer": "A", "explanation": "定位第六段②句：五巨头每年合计仅约 34 亿美元用于 10 亿美元以下收购，与庞大资金储备和逾 1300 亿美元风投相比是\"沧海一粟\"，即几乎未带来财务压力，A 正确。B 管理问题文中未提；C 由 examples 望文生义；D 利润与小额收购的因果系捏造。", "related_sentences": [ "2021_text3_s15" ] }
+        {
+          "id": "2021_text3_q1",
+          "number": 31,
+          "qtype": "detail",
+          "stem": "What is true about Wunderlist and Sunrise after their acquisitions?",
+          "stem_cn": "Wunderlist 和 Sunrise 被收购后的真实情况如何？",
+          "options": {
+            "A": "Their engineers were retained.",
+            "B": "Their market values declined.",
+            "C": "Their tech features improved.",
+            "D": "Their products were re-priced."
+          },
+          "options_cn": {
+            "A": "他们的工程师被留用。",
+            "B": "他们的市场价值下降。",
+            "C": "他们的科技性能得到提升。",
+            "D": "他们的产品被重新定价。"
+          },
+          "answer": "A",
+          "explanation": "定位第二段②句：软件被下架，但工程师团队留了下来（stayed on），即工程师被留用，A 正确。B 张冠李戴（市值巨大说的是五巨头）；C 性能提升的是微软自家产品；D\"重新定价\"与\"已下架\"矛盾。",
+          "related_sentences": [
+            "2021_text3_s03",
+            "2021_text3_s04"
+          ]
+        },
+        {
+          "id": "2021_text3_q2",
+          "number": 32,
+          "qtype": "viewpoint",
+          "stem": "Microsoft's critics believe that the big tech companies tend to ___.",
+          "stem_cn": "微软的批评者认为，大型科技公司往往会___。",
+          "options": {
+            "A": "exaggerate their product quality",
+            "B": "eliminate their potential competitors",
+            "C": "treat new tech talent unfairly",
+            "D": "ignore public opinions"
+          },
+          "options_cn": {
+            "A": "夸大他们的产品质量",
+            "B": "消灭他们的潜在竞争对手",
+            "C": "不公正地对待新技术人才",
+            "D": "忽视公众的意见"
+          },
+          "answer": "B",
+          "explanation": "定位第三段①②句：批评者称科技巨头无情蚕食挡道的创新公司、抢在其成长为竞争对手前将其扼杀，即消灭潜在竞争对手，B 正确。A、C、D 或断章取义或反向窜改，且均非\"批评者观点\"。",
+          "related_sentences": [
+            "2021_text3_s05",
+            "2021_text3_s06"
+          ]
+        },
+        {
+          "id": "2021_text3_q3",
+          "number": 33,
+          "qtype": "viewpoint",
+          "stem": "Paul Arnold is concerned that small acquisitions might ___.",
+          "stem_cn": "保罗·阿诺德担忧，小额收购可能会___。",
+          "options": {
+            "A": "weaken big tech companies",
+            "B": "worsen market competition",
+            "C": "harm the national economy",
+            "D": "discourage start-up investors"
+          },
+          "options_cn": {
+            "A": "削弱大型科技公司",
+            "B": "加剧市场竞争",
+            "C": "损害国家经济",
+            "D": "挫伤初创企业投资者的信心"
+          },
+          "answer": "C",
+          "explanation": "定位第四段③④句：阿诺德坦言收购对自己有利，但反问\"它们对美国经济有利吗？我不知道\"，透露对国家经济受损的担忧，C 正确。A、B 与其\"巩固垄断、阻碍新竞争\"的判断相悖；D 与\"对投资者有利\"相悖。",
+          "related_sentences": [
+            "2021_text3_s08",
+            "2021_text3_s09",
+            "2021_text3_s10"
+          ]
+        },
+        {
+          "id": "2021_text3_q4",
+          "number": 34,
+          "qtype": "detail",
+          "stem": "The US Federal Trade Commission intends to ___.",
+          "stem_cn": "美国联邦贸易委员会想要___。",
+          "options": {
+            "A": "limit Big Tech's expansion",
+            "B": "encourage research collaboration",
+            "C": "examine small acquisitions",
+            "D": "supervise start-ups' operation"
+          },
+          "options_cn": {
+            "A": "限制科技巨头的扩张",
+            "B": "鼓励研究合作",
+            "C": "审查小额收购",
+            "D": "监督初创企业的运营"
+          },
+          "answer": "C",
+          "explanation": "定位第五段①②句：FTC 为寻找\"是否有害经济\"的答案，要求五大科技公司提供过去十年小额收购的信息，即审查小额收购，C 正确。A 属过度推导；B 对 research project 断章取义；D 监管对象搞错（是收购行为而非初创企业运营）。",
+          "related_sentences": [
+            "2021_text3_s11",
+            "2021_text3_s12"
+          ]
+        },
+        {
+          "id": "2021_text3_q5",
+          "number": 35,
+          "qtype": "inference",
+          "stem": "For the five biggest tech companies, their small acquisitions have ___.",
+          "stem_cn": "对五家最大的科技公司而言，他们的小额收购___。",
+          "options": {
+            "A": "brought little financial pressure",
+            "B": "raised few management challenges",
+            "C": "set an example for future deals",
+            "D": "generated considerable profits"
+          },
+          "options_cn": {
+            "A": "没有带来多少财务压力",
+            "B": "没有带来多少管理问题",
+            "C": "为后来的交易树立了榜样",
+            "D": "带来了丰厚的利润"
+          },
+          "answer": "A",
+          "explanation": "定位第六段②句：五巨头每年合计仅约 34 亿美元用于 10 亿美元以下收购，与庞大资金储备和逾 1300 亿美元风投相比是\"沧海一粟\"，即几乎未带来财务压力，A 正确。B 管理问题文中未提；C 由 examples 望文生义；D 利润与小额收购的因果系捏造。",
+          "related_sentences": [
+            "2021_text3_s15"
+          ]
+        }
       ]
     },
     {
@@ -109,35 +1430,2706 @@
       "topic": "直觉有时比深思更准确：在处理社会信息等特定情境下深思反而干扰判断",
       "source": "2021 年考研英语（二）Text 4 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2021_text4_s01", "para": 1, "en": "We're fairly good at judging people based on first impressions, thin slices of experience ranging from a glimpse of a photo to five-minute interaction, and deliberation can be not only extraneous but intrusive.", "cn": "我们很擅长运用第一印象——“经验薄片”来评判他人（从对照片的一瞥，到长达五分钟的互动都可称为“经验薄片”），此时深思不仅没有必要，而且会造成干扰。", "words": [ { "w": "first impressions", "meaning": "第一印象" }, { "w": "thin slices", "meaning": "薄片，（经验的）片段" }, { "w": "deliberation", "meaning": "n. 细想，深思" }, { "w": "extraneous", "meaning": "adj. 非必要的，无关的" }, { "w": "intrusive", "meaning": "adj. 打搅的，侵扰的" } ] },
-        { "id": "2021_text4_s02", "para": 1, "en": "In one study of the ability she called \"thin slicing,\" the late psychologist Nalini Ambady asked participants to watch silent 10-second video clips of professors and to rate the instructor's overall effectiveness.", "cn": "在纳里尼·安巴迪称为“行为薄片撷取”能力的一项研究中，这位已故的心理学家要求参与者观看教授们（授课）的10秒无声视频片段，并对教师的整体效果进行评分。", "words": [ { "w": "thin slicing", "meaning": "行为薄片撷取（基于极少信息迅速判断）" }, { "w": "late", "meaning": "adj. 已故的" }, { "w": "video clips", "meaning": "视频片段" }, { "w": "rate", "meaning": "v. 评分，评价" } ] },
-        { "id": "2021_text4_s03", "para": 1, "en": "Their ratings correlated strongly with students' end-of-semester ratings.", "cn": "他们的评分与学生在学期末（对教师）的评分高度相关。", "words": [ { "w": "ratings", "meaning": "n. 评分（rating 的复数）" }, { "w": "correlated strongly with", "meaning": "与……高度相关" }, { "w": "end-of-semester", "meaning": "学期末的" } ] },
-        { "id": "2021_text4_s04", "para": 1, "en": "Another set of participants had to count backward from 1,000 by nines as they watched the clips, occupying their conscious working memory.", "cn": "另一组参与者在观看视频片段时需要从1000开始以9为单位倒数，这占用了他们的意识工作记忆。", "words": [ { "w": "count backward", "meaning": "倒数" }, { "w": "occupying", "meaning": "v. 占用（occupy 的现在分词）" }, { "w": "conscious working memory", "meaning": "意识工作记忆" } ] },
-        { "id": "2021_text4_s05", "para": 1, "en": "Their ratings were just as accurate, demonstrating the intuitive nature of the social processing.", "cn": "这组人的评分也同样准确，这显示出“社会信息处理”的直觉性。", "words": [ { "w": "just as accurate", "meaning": "同样准确" }, { "w": "intuitive", "meaning": "adj. 凭直觉的" }, { "w": "social processing", "meaning": "社会信息处理" } ] },
-        { "id": "2021_text4_s06", "para": 2, "en": "Critically, another group was asked to spend a minute writing down reasons for their judgment, before giving the rating.", "cn": "极为关键的是，另一组参与者被要求在评分之前花一分钟写下他们做出判断的原因。", "words": [ { "w": "Critically", "meaning": "ad. 极为关键地，很大程度上" }, { "w": "writing down reasons", "meaning": "写下原因" }, { "w": "judgment", "meaning": "n. 判断" } ] },
-        { "id": "2021_text4_s07", "para": 2, "en": "Accuracy dropped dramatically.", "cn": "此时，评分的准确性大幅下降。", "words": [ { "w": "Accuracy", "meaning": "n. 准确性" }, { "w": "dropped dramatically", "meaning": "大幅下降" } ] },
-        { "id": "2021_text4_s08", "para": 2, "en": "Ambady suspected that deliberation focused them on vivid but misleading cues, such as certain gestures or utterances, rather than letting the complex interplay of subtle signals form a holistic impression.", "cn": "安巴迪推测，深思使参与者将精力集中于那些生动但具有误导性的信号（比如特定的手势或说话方式），而未能让微妙信号间的复杂关系形成整体印象。", "words": [ { "w": "suspected", "meaning": "v. 推测，怀疑（suspect 的过去式）" }, { "w": "vivid but misleading cues", "meaning": "生动但有误导性的信号" }, { "w": "interplay", "meaning": "n. 相互影响，相互作用" }, { "w": "holistic impression", "meaning": "整体印象" } ] },
-        { "id": "2021_text4_s09", "para": 2, "en": "She found similar interference when participants watched 15-second clips of pairs of people and judged whether they were strangers, friends, or dating partners.", "cn": "她发现，参与者在观看15秒的双人视频片段，然后判断两者是陌生人、朋友还是约会对象时，也会受到类似的干扰。", "words": [ { "w": "similar interference", "meaning": "类似的干扰" }, { "w": "pairs of people", "meaning": "成对的人" }, { "w": "dating partners", "meaning": "约会对象" } ] },
-        { "id": "2021_text4_s10", "para": 3, "en": "Other research shows we're better at detecting deception from thin slices when we rely on intuition instead of reflection.", "cn": "其他研究表明，我们在依靠直觉而非深思时，更能从“行为薄片”中察觉出欺骗。", "words": [ { "w": "detecting deception", "meaning": "察觉欺骗" }, { "w": "rely on", "meaning": "依靠，依赖" }, { "w": "intuition", "meaning": "n. 直觉" }, { "w": "reflection", "meaning": "n. 深思，反省" } ] },
-        { "id": "2021_text4_s11", "para": 3, "en": "\"It's as if you're driving a stick shift,\" says Judith Hall, a psychologist at Northeastern University, \"and if you start thinking about it too much, you can't remember what you're doing.", "cn": "“这就像你在开手动挡汽车，”东北大学心理学家朱迪斯·霍尔说，“如果你开始反复思考如何挂挡，你就会忘记自己本来是要做什么。", "words": [ { "w": "as if", "meaning": "好像，仿佛" }, { "w": "stick shift", "meaning": "手动挡（换挡杆）" }, { "w": "thinking about it too much", "meaning": "想得太多，反复思考" } ] },
-        { "id": "2021_text4_s12", "para": 3, "en": "But if you go on automatic pilot, you're fine.", "cn": "但如果你不假思索地按照习惯操作，就不会遇到什么问题。", "words": [ { "w": "go on automatic pilot", "meaning": "习惯性地、机械地行事" }, { "w": "you're fine", "meaning": "你就没问题" } ] },
-        { "id": "2021_text4_s13", "para": 3, "en": "Much of our social life is like that.\"", "cn": "我们的社交生活也多半如此。”", "words": [ { "w": "Much of", "meaning": "……的大部分" }, { "w": "social life", "meaning": "社交生活" } ] },
-        { "id": "2021_text4_s14", "para": 4, "en": "Thinking too much can also harm our ability to form preferences.", "cn": "考虑得过多也会损害我们形成偏好的能力。", "words": [ { "w": "Thinking too much", "meaning": "考虑过多，想得太多" }, { "w": "harm", "meaning": "v. 损害，危害" }, { "w": "form preferences", "meaning": "形成偏好" } ] },
-        { "id": "2021_text4_s15", "para": 4, "en": "College students' ratings of strawberry jams and college courses aligned better with experts' opinions when the students weren't asked to analyze their rationale.", "cn": "在不要求大学生细察其依据的情况下，他们对草莓果酱和大学课程的评估与专家的意见更一致。", "words": [ { "w": "strawberry jams", "meaning": "草莓果酱" }, { "w": "aligned better with", "meaning": "与……更一致" }, { "w": "analyze their rationale", "meaning": "分析其（评判的）理由依据" } ] },
-        { "id": "2021_text4_s16", "para": 4, "en": "And people made car-buying decisions that were both objectively better and more personally satisfying when asked to focus on their feelings rather than on details, but only if the decision was complex - when they had a lot of information to process.", "cn": "而在人们被要求关注感受而非细节时，做出的购车决定会在客观上更合适，而且更令自己满意，但也只有在这一决定很复杂的情况下方才如此——（因为）此时人们有很多信息要处理。", "words": [ { "w": "car-buying decisions", "meaning": "购车决定" }, { "w": "objectively", "meaning": "ad. 客观地" }, { "w": "focus on their feelings", "meaning": "关注自己的感受" }, { "w": "information to process", "meaning": "需处理的信息" } ] },
-        { "id": "2021_text4_s17", "para": 5, "en": "Intuition's special powers are unleashed only in certain circumstances.", "cn": "直觉的特殊能力只有在特定的情境下才会发挥出来。", "words": [ { "w": "special powers", "meaning": "特殊能力" }, { "w": "unleashed", "meaning": "v. 突然释放，使爆发（unleash 的过去分词）" }, { "w": "certain circumstances", "meaning": "特定的情境" } ] },
-        { "id": "2021_text4_s18", "para": 5, "en": "In one study, participants completed a battery of eight tasks, including four that tapped reflective thinking (discerning rules, comprehending vocabulary) and four that tapped intuition and creativity (generating new products or figures of speech).", "cn": "在一项研究中，参与者完成了一组八项任务，其中四项运用了深度思索能力（辨识规则、理解词汇），另外四项运用了直觉与创造力（创造新产品或修辞格）。", "words": [ { "w": "a battery of", "meaning": "一组，一系列" }, { "w": "tapped", "meaning": "v. 利用（已有的资源、能力等）（tap 的过去式）" }, { "w": "reflective thinking", "meaning": "深度思索能力，反思性思维" }, { "w": "figures of speech", "meaning": "修辞格，修辞手段" } ] },
-        { "id": "2021_text4_s19", "para": 5, "en": "Then they rated the degree to which they had used intuition (\"gut feelings,\" \"hunches,\" \"my heart\").", "cn": "而后，他们对自己使用直觉（“本能”“预感”“内心”）的程度给出了评分。", "words": [ { "w": "the degree to which", "meaning": "……的程度" }, { "w": "gut feelings", "meaning": "本能，直觉" }, { "w": "hunches", "meaning": "n. 预感，直觉（hunch 的复数）" } ] },
-        { "id": "2021_text4_s20", "para": 5, "en": "Use of their gut hurt their performance on the first four tasks, as expected, and helped them on the rest.", "cn": "不出所料，使用直觉损害了他们在前四项任务中的表现，而对其余的任务则有所帮助。", "words": [ { "w": "gut", "meaning": "n. 内心，直觉" }, { "w": "performance", "meaning": "n. 表现，成绩" }, { "w": "as expected", "meaning": "不出所料，如预期" } ] },
-        { "id": "2021_text4_s21", "para": 5, "en": "Sometimes the heart is smarter than the head.", "cn": "有时候，心比脑更聪明。", "words": [ { "w": "the heart", "meaning": "内心（此处代指直觉）" }, { "w": "smarter than", "meaning": "比……更聪明" }, { "w": "the head", "meaning": "头脑（此处代指思维能力）" } ] }
+        {
+          "id": "2021_text4_s01",
+          "para": 1,
+          "en": "We're fairly good at judging people based on first impressions, thin slices of experience ranging from a glimpse of a photo to five-minute interaction, and deliberation can be not only extraneous but intrusive.",
+          "cn": "我们很擅长运用第一印象——“经验薄片”来评判他人（从对照片的一瞥，到长达五分钟的互动都可称为“经验薄片”），此时深思不仅没有必要，而且会造成干扰。",
+          "words": [
+            {
+              "w": "first impressions",
+              "meaning": "第一印象"
+            },
+            {
+              "w": "thin slices",
+              "meaning": "薄片，（经验的）片段"
+            },
+            {
+              "w": "deliberation",
+              "meaning": "n. 细想，深思"
+            },
+            {
+              "w": "extraneous",
+              "meaning": "adj. 非必要的，无关的"
+            },
+            {
+              "w": "intrusive",
+              "meaning": "adj. 打搅的，侵扰的"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s02",
+          "para": 1,
+          "en": "In one study of the ability she called \"thin slicing,\" the late psychologist Nalini Ambady asked participants to watch silent 10-second video clips of professors and to rate the instructor's overall effectiveness.",
+          "cn": "在纳里尼·安巴迪称为“行为薄片撷取”能力的一项研究中，这位已故的心理学家要求参与者观看教授们（授课）的10秒无声视频片段，并对教师的整体效果进行评分。",
+          "words": [
+            {
+              "w": "thin slicing",
+              "meaning": "行为薄片撷取（基于极少信息迅速判断）"
+            },
+            {
+              "w": "late",
+              "meaning": "adj. 已故的"
+            },
+            {
+              "w": "video clips",
+              "meaning": "视频片段"
+            },
+            {
+              "w": "rate",
+              "meaning": "v. 评分，评价"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s03",
+          "para": 1,
+          "en": "Their ratings correlated strongly with students' end-of-semester ratings.",
+          "cn": "他们的评分与学生在学期末（对教师）的评分高度相关。",
+          "words": [
+            {
+              "w": "ratings",
+              "meaning": "n. 评分（rating 的复数）"
+            },
+            {
+              "w": "correlated strongly with",
+              "meaning": "与……高度相关"
+            },
+            {
+              "w": "end-of-semester",
+              "meaning": "学期末的"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s04",
+          "para": 1,
+          "en": "Another set of participants had to count backward from 1,000 by nines as they watched the clips, occupying their conscious working memory.",
+          "cn": "另一组参与者在观看视频片段时需要从1000开始以9为单位倒数，这占用了他们的意识工作记忆。",
+          "words": [
+            {
+              "w": "count backward",
+              "meaning": "倒数"
+            },
+            {
+              "w": "occupying",
+              "meaning": "v. 占用（occupy 的现在分词）"
+            },
+            {
+              "w": "conscious working memory",
+              "meaning": "意识工作记忆"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s05",
+          "para": 1,
+          "en": "Their ratings were just as accurate, demonstrating the intuitive nature of the social processing.",
+          "cn": "这组人的评分也同样准确，这显示出“社会信息处理”的直觉性。",
+          "words": [
+            {
+              "w": "just as accurate",
+              "meaning": "同样准确"
+            },
+            {
+              "w": "intuitive",
+              "meaning": "adj. 凭直觉的"
+            },
+            {
+              "w": "social processing",
+              "meaning": "社会信息处理"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s06",
+          "para": 2,
+          "en": "Critically, another group was asked to spend a minute writing down reasons for their judgment, before giving the rating.",
+          "cn": "极为关键的是，另一组参与者被要求在评分之前花一分钟写下他们做出判断的原因。",
+          "words": [
+            {
+              "w": "Critically",
+              "meaning": "ad. 极为关键地，很大程度上"
+            },
+            {
+              "w": "writing down reasons",
+              "meaning": "写下原因"
+            },
+            {
+              "w": "judgment",
+              "meaning": "n. 判断"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s07",
+          "para": 2,
+          "en": "Accuracy dropped dramatically.",
+          "cn": "此时，评分的准确性大幅下降。",
+          "words": [
+            {
+              "w": "Accuracy",
+              "meaning": "n. 准确性"
+            },
+            {
+              "w": "dropped dramatically",
+              "meaning": "大幅下降"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s08",
+          "para": 2,
+          "en": "Ambady suspected that deliberation focused them on vivid but misleading cues, such as certain gestures or utterances, rather than letting the complex interplay of subtle signals form a holistic impression.",
+          "cn": "安巴迪推测，深思使参与者将精力集中于那些生动但具有误导性的信号（比如特定的手势或说话方式），而未能让微妙信号间的复杂关系形成整体印象。",
+          "words": [
+            {
+              "w": "suspected",
+              "meaning": "v. 推测，怀疑（suspect 的过去式）"
+            },
+            {
+              "w": "vivid but misleading cues",
+              "meaning": "生动但有误导性的信号"
+            },
+            {
+              "w": "interplay",
+              "meaning": "n. 相互影响，相互作用"
+            },
+            {
+              "w": "holistic impression",
+              "meaning": "整体印象"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s09",
+          "para": 2,
+          "en": "She found similar interference when participants watched 15-second clips of pairs of people and judged whether they were strangers, friends, or dating partners.",
+          "cn": "她发现，参与者在观看15秒的双人视频片段，然后判断两者是陌生人、朋友还是约会对象时，也会受到类似的干扰。",
+          "words": [
+            {
+              "w": "similar interference",
+              "meaning": "类似的干扰"
+            },
+            {
+              "w": "pairs of people",
+              "meaning": "成对的人"
+            },
+            {
+              "w": "dating partners",
+              "meaning": "约会对象"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s10",
+          "para": 3,
+          "en": "Other research shows we're better at detecting deception from thin slices when we rely on intuition instead of reflection.",
+          "cn": "其他研究表明，我们在依靠直觉而非深思时，更能从“行为薄片”中察觉出欺骗。",
+          "words": [
+            {
+              "w": "detecting deception",
+              "meaning": "察觉欺骗"
+            },
+            {
+              "w": "rely on",
+              "meaning": "依靠，依赖"
+            },
+            {
+              "w": "intuition",
+              "meaning": "n. 直觉"
+            },
+            {
+              "w": "reflection",
+              "meaning": "n. 深思，反省"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s11",
+          "para": 3,
+          "en": "\"It's as if you're driving a stick shift,\" says Judith Hall, a psychologist at Northeastern University, \"and if you start thinking about it too much, you can't remember what you're doing.",
+          "cn": "“这就像你在开手动挡汽车，”东北大学心理学家朱迪斯·霍尔说，“如果你开始反复思考如何挂挡，你就会忘记自己本来是要做什么。",
+          "words": [
+            {
+              "w": "as if",
+              "meaning": "好像，仿佛"
+            },
+            {
+              "w": "stick shift",
+              "meaning": "手动挡（换挡杆）"
+            },
+            {
+              "w": "thinking about it too much",
+              "meaning": "想得太多，反复思考"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s12",
+          "para": 3,
+          "en": "But if you go on automatic pilot, you're fine.",
+          "cn": "但如果你不假思索地按照习惯操作，就不会遇到什么问题。",
+          "words": [
+            {
+              "w": "go on automatic pilot",
+              "meaning": "习惯性地、机械地行事"
+            },
+            {
+              "w": "you're fine",
+              "meaning": "你就没问题"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s13",
+          "para": 3,
+          "en": "Much of our social life is like that.\"",
+          "cn": "我们的社交生活也多半如此。”",
+          "words": [
+            {
+              "w": "Much of",
+              "meaning": "……的大部分"
+            },
+            {
+              "w": "social life",
+              "meaning": "社交生活"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s14",
+          "para": 4,
+          "en": "Thinking too much can also harm our ability to form preferences.",
+          "cn": "考虑得过多也会损害我们形成偏好的能力。",
+          "words": [
+            {
+              "w": "Thinking too much",
+              "meaning": "考虑过多，想得太多"
+            },
+            {
+              "w": "harm",
+              "meaning": "v. 损害，危害"
+            },
+            {
+              "w": "form preferences",
+              "meaning": "形成偏好"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s15",
+          "para": 4,
+          "en": "College students' ratings of strawberry jams and college courses aligned better with experts' opinions when the students weren't asked to analyze their rationale.",
+          "cn": "在不要求大学生细察其依据的情况下，他们对草莓果酱和大学课程的评估与专家的意见更一致。",
+          "words": [
+            {
+              "w": "strawberry jams",
+              "meaning": "草莓果酱"
+            },
+            {
+              "w": "aligned better with",
+              "meaning": "与……更一致"
+            },
+            {
+              "w": "analyze their rationale",
+              "meaning": "分析其（评判的）理由依据"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s16",
+          "para": 4,
+          "en": "And people made car-buying decisions that were both objectively better and more personally satisfying when asked to focus on their feelings rather than on details, but only if the decision was complex - when they had a lot of information to process.",
+          "cn": "而在人们被要求关注感受而非细节时，做出的购车决定会在客观上更合适，而且更令自己满意，但也只有在这一决定很复杂的情况下方才如此——（因为）此时人们有很多信息要处理。",
+          "words": [
+            {
+              "w": "car-buying decisions",
+              "meaning": "购车决定"
+            },
+            {
+              "w": "objectively",
+              "meaning": "ad. 客观地"
+            },
+            {
+              "w": "focus on their feelings",
+              "meaning": "关注自己的感受"
+            },
+            {
+              "w": "information to process",
+              "meaning": "需处理的信息"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s17",
+          "para": 5,
+          "en": "Intuition's special powers are unleashed only in certain circumstances.",
+          "cn": "直觉的特殊能力只有在特定的情境下才会发挥出来。",
+          "words": [
+            {
+              "w": "special powers",
+              "meaning": "特殊能力"
+            },
+            {
+              "w": "unleashed",
+              "meaning": "v. 突然释放，使爆发（unleash 的过去分词）"
+            },
+            {
+              "w": "certain circumstances",
+              "meaning": "特定的情境"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s18",
+          "para": 5,
+          "en": "In one study, participants completed a battery of eight tasks, including four that tapped reflective thinking (discerning rules, comprehending vocabulary) and four that tapped intuition and creativity (generating new products or figures of speech).",
+          "cn": "在一项研究中，参与者完成了一组八项任务，其中四项运用了深度思索能力（辨识规则、理解词汇），另外四项运用了直觉与创造力（创造新产品或修辞格）。",
+          "words": [
+            {
+              "w": "a battery of",
+              "meaning": "一组，一系列"
+            },
+            {
+              "w": "tapped",
+              "meaning": "v. 利用（已有的资源、能力等）（tap 的过去式）"
+            },
+            {
+              "w": "reflective thinking",
+              "meaning": "深度思索能力，反思性思维"
+            },
+            {
+              "w": "figures of speech",
+              "meaning": "修辞格，修辞手段"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s19",
+          "para": 5,
+          "en": "Then they rated the degree to which they had used intuition (\"gut feelings,\" \"hunches,\" \"my heart\").",
+          "cn": "而后，他们对自己使用直觉（“本能”“预感”“内心”）的程度给出了评分。",
+          "words": [
+            {
+              "w": "the degree to which",
+              "meaning": "……的程度"
+            },
+            {
+              "w": "gut feelings",
+              "meaning": "本能，直觉"
+            },
+            {
+              "w": "hunches",
+              "meaning": "n. 预感，直觉（hunch 的复数）"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s20",
+          "para": 5,
+          "en": "Use of their gut hurt their performance on the first four tasks, as expected, and helped them on the rest.",
+          "cn": "不出所料，使用直觉损害了他们在前四项任务中的表现，而对其余的任务则有所帮助。",
+          "words": [
+            {
+              "w": "gut",
+              "meaning": "n. 内心，直觉"
+            },
+            {
+              "w": "performance",
+              "meaning": "n. 表现，成绩"
+            },
+            {
+              "w": "as expected",
+              "meaning": "不出所料，如预期"
+            }
+          ]
+        },
+        {
+          "id": "2021_text4_s21",
+          "para": 5,
+          "en": "Sometimes the heart is smarter than the head.",
+          "cn": "有时候，心比脑更聪明。",
+          "words": [
+            {
+              "w": "the heart",
+              "meaning": "内心（此处代指直觉）"
+            },
+            {
+              "w": "smarter than",
+              "meaning": "比……更聪明"
+            },
+            {
+              "w": "the head",
+              "meaning": "头脑（此处代指思维能力）"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2021_text4_q1", "number": 36, "qtype": "main_idea", "stem": "Nalini Ambady's study deals with ___.", "stem_cn": "纳里尼·安巴迪的研究涉及___。", "options": { "A": "the power of people's memory", "B": "the reliability of first impressions", "C": "instructor-student interaction", "D": "people's ability to influence others" }, "options_cn": { "A": "人们记忆的力量", "B": "第一印象的可靠性", "C": "教师与学生的互动", "D": "人们影响他人的能力" }, "answer": "B", "explanation": "定位第一、二段：安巴迪\"行为薄片撷取\"研究让参与者凭 10 秒无声视频（第一印象）为教师评分并与学生期末评分对比，考察的是第一印象的可靠性，B 正确。A 由\"工作记忆\"断章取义；C 对师生互动强加关联；D 误读实验干扰设置。", "related_sentences": [ "2021_text4_s01", "2021_text4_s02", "2021_text4_s03" ] },
-        { "id": "2021_text4_q2", "number": 37, "qtype": "detail", "stem": "In Ambady's study, rating accuracy dropped when participants ___.", "stem_cn": "在安巴迪的研究中，当参与者___时，评分的准确率下降。", "options": { "A": "focused on specific details", "B": "gave the rating in limited time", "C": "watched shorter video clips", "D": "discussed with one another" }, "options_cn": { "A": "关注具体细节", "B": "在限定时间内进行评分", "C": "观看更短的视频片段", "D": "相互讨论" }, "answer": "A", "explanation": "定位第二段①③句：被要求写下评分理由（先深思）的一组准确性大幅下降；安巴迪推测深思使人聚焦生动但有误导性的细节信号（手势、说话方式），A 正确（focused on specific details 对应 focused them on vivid but misleading cues）。B 误把\"花一分钟写理由\"当作限时评分；C 视频时长非变量重点；D\"相互讨论\"原文无据。", "related_sentences": [ "2021_text4_s06", "2021_text4_s07", "2021_text4_s08" ] },
-        { "id": "2021_text4_q3", "number": 38, "qtype": "viewpoint", "stem": "Judith Hall mentions driving to show that ___.", "stem_cn": "朱迪斯·霍尔提及驾驶是为了表明___。", "options": { "A": "reflection can be distracting", "B": "memory may be selective", "C": "social skills must be cultivated", "D": "deception is difficult to detect" }, "options_cn": { "A": "深思熟虑有时反会让人分心", "B": "记忆可能具有选择性", "C": "社交技能须经培养才能获得", "D": "欺骗行为难以察觉" }, "answer": "A", "explanation": "定位第三段②③句：霍尔以开手动挡汽车作类比——反复琢磨挂挡就会忘记本来要做什么，凭习惯操作反而顺利，说明深思会分散注意力、干扰判断，A 正确。B 对\"忘记在做什么\"断章取义；C 未论及社交技能培养；D 与首句\"直觉更能察觉欺骗\"方向相反。", "related_sentences": [ "2021_text4_s10", "2021_text4_s11", "2021_text4_s12" ] },
-        { "id": "2021_text4_q4", "number": 39, "qtype": "detail", "stem": "When you are making complex decisions, it is advisable to ___.", "stem_cn": "当你在做复杂的决定时，明智的做法是___。", "options": { "A": "collect enough data", "B": "list your preferences", "C": "seek expert advice", "D": "follow your feelings" }, "options_cn": { "A": "搜集足够的数据", "B": "列出你的偏好", "C": "寻求专家建议", "D": "遵从你的感觉" }, "answer": "D", "explanation": "定位第四段末句：当决定复杂（信息量大）时，关注感受而非细节做出的购车决定客观上更好、主观上更满意，故应遵从感觉，D 正确（follow your feelings 对应 focus on their feelings）。A 与原意恰相反；B 误解首句语义重心；C 由\"专家意见\"碎片信息捏造。", "related_sentences": [ "2021_text4_s16" ] },
-        { "id": "2021_text4_q5", "number": 40, "qtype": "inference", "stem": "What can we learn from the last paragraph?", "stem_cn": "从最后一段我们可以得知什么？", "options": { "A": "Generating new products takes time.", "B": "Intuition may affect reflective tasks.", "C": "Vocabulary comprehension needs creativity.", "D": "Objective thinking may boost intuitiveness." }, "options_cn": { "A": "创造新产品需要时间。", "B": "直觉可能会影响思考性工作。", "C": "理解词汇需要创造力。", "D": "客观思维可提升直觉力。" }, "answer": "B", "explanation": "定位末段④句：使用直觉损害了参与者在四项深思型任务（辨识规则、理解词汇）中的表现，即直觉可能影响思考性工作，B 正确。A 创造新产品的耗时未提；C 张冠李戴（理解词汇属深思任务而非创造力任务）；D 提升直觉力的方法文中未论及。", "related_sentences": [ "2021_text4_s18", "2021_text4_s20" ] }
+        {
+          "id": "2021_text4_q1",
+          "number": 36,
+          "qtype": "main_idea",
+          "stem": "Nalini Ambady's study deals with ___.",
+          "stem_cn": "纳里尼·安巴迪的研究涉及___。",
+          "options": {
+            "A": "the power of people's memory",
+            "B": "the reliability of first impressions",
+            "C": "instructor-student interaction",
+            "D": "people's ability to influence others"
+          },
+          "options_cn": {
+            "A": "人们记忆的力量",
+            "B": "第一印象的可靠性",
+            "C": "教师与学生的互动",
+            "D": "人们影响他人的能力"
+          },
+          "answer": "B",
+          "explanation": "定位第一、二段：安巴迪\"行为薄片撷取\"研究让参与者凭 10 秒无声视频（第一印象）为教师评分并与学生期末评分对比，考察的是第一印象的可靠性，B 正确。A 由\"工作记忆\"断章取义；C 对师生互动强加关联；D 误读实验干扰设置。",
+          "related_sentences": [
+            "2021_text4_s01",
+            "2021_text4_s02",
+            "2021_text4_s03"
+          ]
+        },
+        {
+          "id": "2021_text4_q2",
+          "number": 37,
+          "qtype": "detail",
+          "stem": "In Ambady's study, rating accuracy dropped when participants ___.",
+          "stem_cn": "在安巴迪的研究中，当参与者___时，评分的准确率下降。",
+          "options": {
+            "A": "focused on specific details",
+            "B": "gave the rating in limited time",
+            "C": "watched shorter video clips",
+            "D": "discussed with one another"
+          },
+          "options_cn": {
+            "A": "关注具体细节",
+            "B": "在限定时间内进行评分",
+            "C": "观看更短的视频片段",
+            "D": "相互讨论"
+          },
+          "answer": "A",
+          "explanation": "定位第二段①③句：被要求写下评分理由（先深思）的一组准确性大幅下降；安巴迪推测深思使人聚焦生动但有误导性的细节信号（手势、说话方式），A 正确（focused on specific details 对应 focused them on vivid but misleading cues）。B 误把\"花一分钟写理由\"当作限时评分；C 视频时长非变量重点；D\"相互讨论\"原文无据。",
+          "related_sentences": [
+            "2021_text4_s06",
+            "2021_text4_s07",
+            "2021_text4_s08"
+          ]
+        },
+        {
+          "id": "2021_text4_q3",
+          "number": 38,
+          "qtype": "viewpoint",
+          "stem": "Judith Hall mentions driving to show that ___.",
+          "stem_cn": "朱迪斯·霍尔提及驾驶是为了表明___。",
+          "options": {
+            "A": "reflection can be distracting",
+            "B": "memory may be selective",
+            "C": "social skills must be cultivated",
+            "D": "deception is difficult to detect"
+          },
+          "options_cn": {
+            "A": "深思熟虑有时反会让人分心",
+            "B": "记忆可能具有选择性",
+            "C": "社交技能须经培养才能获得",
+            "D": "欺骗行为难以察觉"
+          },
+          "answer": "A",
+          "explanation": "定位第三段②③句：霍尔以开手动挡汽车作类比——反复琢磨挂挡就会忘记本来要做什么，凭习惯操作反而顺利，说明深思会分散注意力、干扰判断，A 正确。B 对\"忘记在做什么\"断章取义；C 未论及社交技能培养；D 与首句\"直觉更能察觉欺骗\"方向相反。",
+          "related_sentences": [
+            "2021_text4_s10",
+            "2021_text4_s11",
+            "2021_text4_s12"
+          ]
+        },
+        {
+          "id": "2021_text4_q4",
+          "number": 39,
+          "qtype": "detail",
+          "stem": "When you are making complex decisions, it is advisable to ___.",
+          "stem_cn": "当你在做复杂的决定时，明智的做法是___。",
+          "options": {
+            "A": "collect enough data",
+            "B": "list your preferences",
+            "C": "seek expert advice",
+            "D": "follow your feelings"
+          },
+          "options_cn": {
+            "A": "搜集足够的数据",
+            "B": "列出你的偏好",
+            "C": "寻求专家建议",
+            "D": "遵从你的感觉"
+          },
+          "answer": "D",
+          "explanation": "定位第四段末句：当决定复杂（信息量大）时，关注感受而非细节做出的购车决定客观上更好、主观上更满意，故应遵从感觉，D 正确（follow your feelings 对应 focus on their feelings）。A 与原意恰相反；B 误解首句语义重心；C 由\"专家意见\"碎片信息捏造。",
+          "related_sentences": [
+            "2021_text4_s16"
+          ]
+        },
+        {
+          "id": "2021_text4_q5",
+          "number": 40,
+          "qtype": "inference",
+          "stem": "What can we learn from the last paragraph?",
+          "stem_cn": "从最后一段我们可以得知什么？",
+          "options": {
+            "A": "Generating new products takes time.",
+            "B": "Intuition may affect reflective tasks.",
+            "C": "Vocabulary comprehension needs creativity.",
+            "D": "Objective thinking may boost intuitiveness."
+          },
+          "options_cn": {
+            "A": "创造新产品需要时间。",
+            "B": "直觉可能会影响思考性工作。",
+            "C": "理解词汇需要创造力。",
+            "D": "客观思维可提升直觉力。"
+          },
+          "answer": "B",
+          "explanation": "定位末段④句：使用直觉损害了参与者在四项深思型任务（辨识规则、理解词汇）中的表现，即直觉可能影响思考性工作，B 正确。A 创造新产品的耗时未提；C 张冠李戴（理解词汇属深思任务而非创造力任务）；D 提升直觉力的方法文中未论及。",
+          "related_sentences": [
+            "2021_text4_s18",
+            "2021_text4_s20"
+          ]
+        }
       ]
+    },
+    {
+      "id": "2021_newtype",
+      "type": "newtype",
+      "title": "How to Disagree with Someone More Powerful Than You",
+      "topic": "新题型（小标题对应）：为文中各段落选出最合适的小标题，提供如何向比自己更有权势的人恰当表达不同意见的方法。",
+      "source": "Section II Part B",
+      "pool": {
+        "A": "Stay calm.",
+        "B": "Stay humble.",
+        "C": "Decide whether to wait.",
+        "D": "Be realistic about the risks.",
+        "E": "Don't make judgements.",
+        "F": "Identify a shared goal.",
+        "G": "Ask permission to disagree."
+      },
+      "pool_cn": {
+        "A": "保持冷静。",
+        "B": "保持谦逊。",
+        "C": "决定是否再等等。",
+        "D": "务实对待风险。",
+        "E": "不要下评判。",
+        "F": "确定共同目标。",
+        "G": "请求允许表达异议。"
+      },
+      "sentences": [
+        {
+          "id": "2021_newtype_s01",
+          "para": 1,
+          "en": "Your boss proposes a new initiative you think won't work.",
+          "cn": "你的老板提出了一项你觉得行不通的新方案。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s02",
+          "para": 1,
+          "en": "Your senior colleague outlines a project timeline you believe is unrealistic.",
+          "cn": "你的上司草拟了一份你认为不现实的项目进度表。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s03",
+          "para": 1,
+          "en": "What do you say when you disagree with someone who has more power than you do?",
+          "cn": "当你不赞同某位比你位高权重者的意见时，你会说些什么？",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s04",
+          "para": 1,
+          "en": "How do you decide whether it's worth speaking up?",
+          "cn": "你又如何判定是否值得明确表态？",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s05",
+          "para": 1,
+          "en": "And if you do, what exactly should you say?",
+          "cn": "如果你确定值得，那具体应该怎么说？",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s06",
+          "para": 1,
+          "en": "Here's how to disagree with someone more powerful than you.",
+          "cn": "以下方法可以用来向比你更有权势的人表达不同意见。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s07",
+          "para": 2,
+          "en": "You may decide it's best to hold off on voicing your opinion.",
+          "cn": "你可能决定最好暂缓表达自己的看法。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s08",
+          "para": 2,
+          "en": "Maybe you haven't finished thinking the problem through, or you want to get a clearer sense of what the group thinks.",
+          "cn": "你或许尚未把问题完全考虑清楚，或者你想更清楚地了解团队的想法。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s09",
+          "para": 2,
+          "en": "If you think other people are going to disagree, too, you might want to gather your army first.",
+          "cn": "倘若觉得其他人也会持反对意见，你也许想先召集自己的队伍。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s10",
+          "para": 2,
+          "en": "People can contribute experience or information to your thinking—all the things that would make the disagreement stronger or more valid.",
+          "cn": "大家可以贡献出自己的经验或讯息来帮你思考——所有这些经验或讯息都会让你的反对声音更有力或者更有效。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s11",
+          "para": 2,
+          "en": "It's also a good idea to delay the conversation if you are in a meeting or other public space.",
+          "cn": "如果你正在开会或在其他公共场合，那暂时搁置这场谈话也不失为一种好方法。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s12",
+          "para": 2,
+          "en": "Discussing the issue in private will make the powerful person feel less threatened.",
+          "cn": "私下讨论这一问题会让这位权势人物觉得不那么受到威胁。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s13",
+          "para": 3,
+          "en": "Before you share your thoughts, think about what the powerful person cares about—it may be the credibility of their team or getting a project done on time.",
+          "cn": "在你分享自己的想法之前，先想想这位权势人物关心的是什么——可能是团队的信誉，也可能是按期完成某一项目。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s14",
+          "para": 3,
+          "en": "You're more likely to be heard if you can connect your disagreement to a higher purpose.",
+          "cn": "如果你能将自己的反对意见与一个更高的目标结合起来，那么你的意见就更有可能被听进去。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s15",
+          "para": 3,
+          "en": "When you do speak up, don't assume the link will be clear.",
+          "cn": "当你真的坦言自己的想法时，不要想当然地认为这一关联不言而喻。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s16",
+          "para": 3,
+          "en": "You'll want to state it overtly, contextualizing your statements so that you're seen not as a disagreeable subordinate but as a colleague who's trying to advance a common objective.",
+          "cn": "你应当直白地将其挑明：将你的陈述情景化，这样你就不会被看成是一个话不投机的下属，而是会被视为一位努力推进共同目标的同事。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s17",
+          "para": 3,
+          "en": "The discussion will then become more like a chess game than a boxing match.",
+          "cn": "这时，讨论就会变得更像是一场棋类游戏，而不是一场拳击比赛。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s18",
+          "para": 4,
+          "en": "This step may sound overly deferential, but it's a smart way to give the powerful person psychological safety and control.",
+          "cn": "这一步看似过于顺从，但它是能让权势人物感到心理安全、拥有掌控权的明智之举。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s19",
+          "para": 4,
+          "en": "You can say something like, \"I know we seem to be moving toward a first-quarter commitment here. I have reasons to think that won't work. I'd like to lay out my reasoning. Would that be OK?\"",
+          "cn": "你可以这么说：“我知道我们似乎就要制定出第一季度的任务目标了，但我有理由认为这一目标行不通。我想阐述一下我的思路。可以吗？”",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s20",
+          "para": 4,
+          "en": "This gives the person a choice, allowing him to verbally opt in.",
+          "cn": "这就给了对方选择的余地，让他可以口头上做出回应。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s21",
+          "para": 4,
+          "en": "And, assuming he says yes, it will make you feel more confident about voicing your disagreement.",
+          "cn": "假如他说可以，这会让你更有底气去发表自己的异议。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s22",
+          "para": 5,
+          "en": "You might feel your heart racing or your face turning red, but do whatever you can to remain neutral in both your words and actions.",
+          "cn": "你可能感到心跳加速或者面红耳赤，但要尽你所能无论是在言语上还是在动作上都保持不动声色。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s23",
+          "para": 5,
+          "en": "When your body language communicates reluctance or anxiety, it undercuts the message.",
+          "cn": "若你的肢体语言传达出勉强或焦虑，则会让你传达的信息大打折扣。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s24",
+          "para": 5,
+          "en": "It sends a mixed message, and your counterpart gets to choose what signals to read.",
+          "cn": "它会传递出一条混杂的讯息，让对方有权选择解读哪些信号。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s25",
+          "para": 5,
+          "en": "Deep breaths can help, as can speaking more slowly and deliberately.",
+          "cn": "深呼吸会有所帮助，更缓慢更谨慎地讲话也会管用。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s26",
+          "para": 5,
+          "en": "When we feel panicky, we tend to talk louder and faster.",
+          "cn": "我们感到惊慌焦虑时往往会提高音量和语速。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s27",
+          "para": 5,
+          "en": "Simply slowing the pace and talking in an even tone helps the other person cool down and does the same for you.",
+          "cn": "仅仅放慢语速并保持平和的口吻便能帮助对方平静下来，这对你自己也会有同样的效果。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s28",
+          "para": 5,
+          "en": "It also makes you seem confident, even if you aren't.",
+          "cn": "这也会让你看起来很自信，即便实际上你并不自信。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s29",
+          "para": 6,
+          "en": "Emphasize that you're only offering your opinion, not gospel truth.",
+          "cn": "强调你仅仅是在提供自己的意见，而不是呈递绝对的真理。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s30",
+          "para": 6,
+          "en": "It may be a well-informed, well-researched opinion, but it's still an opinion, so talk tentatively and slightly understate your confidence.",
+          "cn": "你的意见也许是基于充足的依据、深入的研究，但它仍然只是意见，因此要采用试探性的表达，略微收敛你的自信。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s31",
+          "para": 6,
+          "en": "Instead of saying: \"If we set an end-of-quarter deadline, we will never make it,\" say, \"This is just my opinion, but I don't see how we will make that deadline.\"",
+          "cn": "不要说：“若将完成期限设定在季度末，那我们无论如何也实现不了”，而应说“这仅是我的个人意见，但我确实不明白我们如何能在这个期限之前完成”。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s32",
+          "para": 6,
+          "en": "Having asserted your opinion (as a position, not as a fact), demonstrate equal curiosity about other views.",
+          "cn": "在坚定地表达了自己的观点（作为一种立场，而非一种事实）之后，应当对他人的观点表现出同样的兴趣。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s33",
+          "para": 6,
+          "en": "Remind the person that this is your point of view, and then invite critique.",
+          "cn": "提醒对方这是你的看法，然后请他提出批评意见。",
+          "words": []
+        },
+        {
+          "id": "2021_newtype_s34",
+          "para": 6,
+          "en": "Be open to hearing other opinions.",
+          "cn": "要敞开心胸去聆听他人的观点。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2021_newtype_q41",
+          "number": 41,
+          "qtype": "小标题",
+          "stem": "第 41 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "C",
+          "explanation": "第二段指出，如果还未充分考虑与上司产生争议的这一问题，或想要先了解同事的看法，或正身处会议室等公共场合，那么最好暂缓提反对意见，即要等待提异议的合适时机或场合，C项“决定是否再等等”与该段主旨相符，其中Decide原词复现首句（You may）decide，wait近义复现首句hold off on和⑤句delay。",
+          "related_sentences": [
+            "2021_newtype_s01",
+            "2021_newtype_s02",
+            "2021_newtype_s03",
+            "2021_newtype_s04",
+            "2021_newtype_s05",
+            "2021_newtype_s06",
+            "2021_newtype_s07",
+            "2021_newtype_s08",
+            "2021_newtype_s09",
+            "2021_newtype_s10",
+            "2021_newtype_s11",
+            "2021_newtype_s12",
+            "2021_newtype_s13",
+            "2021_newtype_s14",
+            "2021_newtype_s15",
+            "2021_newtype_s16",
+            "2021_newtype_s17",
+            "2021_newtype_s18",
+            "2021_newtype_s19",
+            "2021_newtype_s20",
+            "2021_newtype_s21",
+            "2021_newtype_s22",
+            "2021_newtype_s23",
+            "2021_newtype_s24",
+            "2021_newtype_s25",
+            "2021_newtype_s26",
+            "2021_newtype_s27",
+            "2021_newtype_s28",
+            "2021_newtype_s29",
+            "2021_newtype_s30",
+            "2021_newtype_s31",
+            "2021_newtype_s32",
+            "2021_newtype_s33",
+            "2021_newtype_s34"
+          ]
+        },
+        {
+          "id": "2021_newtype_q42",
+          "number": 42,
+          "qtype": "小标题",
+          "stem": "第 42 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "F",
+          "explanation": "第三段针对进言之前的准备工作、进言之时的谈吐提建议，指出需要先了解上司关注的目标，后将这一目标与个人异议相结合，并在进言之时直白地挑明这两者的关联，以向上司证明你是一个努力推进共同目标的同事，F项“确定共同目标”契合本段主旨。",
+          "related_sentences": [
+            "2021_newtype_s01",
+            "2021_newtype_s02",
+            "2021_newtype_s03",
+            "2021_newtype_s04",
+            "2021_newtype_s05",
+            "2021_newtype_s06",
+            "2021_newtype_s07",
+            "2021_newtype_s08",
+            "2021_newtype_s09",
+            "2021_newtype_s10",
+            "2021_newtype_s11",
+            "2021_newtype_s12",
+            "2021_newtype_s13",
+            "2021_newtype_s14",
+            "2021_newtype_s15",
+            "2021_newtype_s16",
+            "2021_newtype_s17",
+            "2021_newtype_s18",
+            "2021_newtype_s19",
+            "2021_newtype_s20",
+            "2021_newtype_s21",
+            "2021_newtype_s22",
+            "2021_newtype_s23",
+            "2021_newtype_s24",
+            "2021_newtype_s25",
+            "2021_newtype_s26",
+            "2021_newtype_s27",
+            "2021_newtype_s28",
+            "2021_newtype_s29",
+            "2021_newtype_s30",
+            "2021_newtype_s31",
+            "2021_newtype_s32",
+            "2021_newtype_s33",
+            "2021_newtype_s34"
+          ]
+        },
+        {
+          "id": "2021_newtype_q43",
+          "number": 43,
+          "qtype": "小标题",
+          "stem": "第 43 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "G",
+          "explanation": "第四段先评价“这一做法（This step）”：看似过于顺从，实则是卸下上司心理防卫的明智之举。后举例说明“这一做法”：向上司请求表达异议的许可。最后指出该做法的作用：让上司更可能听取反对意见。综合可见，G项“请求允许表达异议”与该段主旨一致，其中Ask permission与⑤句Would that be OK的请求之意相符。",
+          "related_sentences": [
+            "2021_newtype_s01",
+            "2021_newtype_s02",
+            "2021_newtype_s03",
+            "2021_newtype_s04",
+            "2021_newtype_s05",
+            "2021_newtype_s06",
+            "2021_newtype_s07",
+            "2021_newtype_s08",
+            "2021_newtype_s09",
+            "2021_newtype_s10",
+            "2021_newtype_s11",
+            "2021_newtype_s12",
+            "2021_newtype_s13",
+            "2021_newtype_s14",
+            "2021_newtype_s15",
+            "2021_newtype_s16",
+            "2021_newtype_s17",
+            "2021_newtype_s18",
+            "2021_newtype_s19",
+            "2021_newtype_s20",
+            "2021_newtype_s21",
+            "2021_newtype_s22",
+            "2021_newtype_s23",
+            "2021_newtype_s24",
+            "2021_newtype_s25",
+            "2021_newtype_s26",
+            "2021_newtype_s27",
+            "2021_newtype_s28",
+            "2021_newtype_s29",
+            "2021_newtype_s30",
+            "2021_newtype_s31",
+            "2021_newtype_s32",
+            "2021_newtype_s33",
+            "2021_newtype_s34"
+          ]
+        },
+        {
+          "id": "2021_newtype_q44",
+          "number": 44,
+          "qtype": "小标题",
+          "stem": "第 44 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "A",
+          "explanation": "第五段先指出向上司提异议时要尽力保持不动声色，随后说明紧张等情绪对沟通效果的负面影响，并提出两条抚平情绪的建议：深呼吸、更缓慢更谨慎地讲话。可见本段主要建议读者保持镇静，避免负面情绪影响进言的成败，A项“保持冷静”契合本段主旨。",
+          "related_sentences": [
+            "2021_newtype_s01",
+            "2021_newtype_s02",
+            "2021_newtype_s03",
+            "2021_newtype_s04",
+            "2021_newtype_s05",
+            "2021_newtype_s06",
+            "2021_newtype_s07",
+            "2021_newtype_s08",
+            "2021_newtype_s09",
+            "2021_newtype_s10",
+            "2021_newtype_s11",
+            "2021_newtype_s12",
+            "2021_newtype_s13",
+            "2021_newtype_s14",
+            "2021_newtype_s15",
+            "2021_newtype_s16",
+            "2021_newtype_s17",
+            "2021_newtype_s18",
+            "2021_newtype_s19",
+            "2021_newtype_s20",
+            "2021_newtype_s21",
+            "2021_newtype_s22",
+            "2021_newtype_s23",
+            "2021_newtype_s24",
+            "2021_newtype_s25",
+            "2021_newtype_s26",
+            "2021_newtype_s27",
+            "2021_newtype_s28",
+            "2021_newtype_s29",
+            "2021_newtype_s30",
+            "2021_newtype_s31",
+            "2021_newtype_s32",
+            "2021_newtype_s33",
+            "2021_newtype_s34"
+          ]
+        },
+        {
+          "id": "2021_newtype_q45",
+          "number": 45,
+          "qtype": "小标题",
+          "stem": "第 45 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "B",
+          "explanation": "第六段先建议读者向上司强调自己仅是在提供“个人观点”而非“绝对真理”，后又提出要采用试探性的表达、收敛自信，最后指出要耐心倾听对方的意见甚至批评。B项“保持谦逊（不要自视甚高）”是对这些建议的准确概括，Stay humble近义复现②句understate your confidence。",
+          "related_sentences": [
+            "2021_newtype_s01",
+            "2021_newtype_s02",
+            "2021_newtype_s03",
+            "2021_newtype_s04",
+            "2021_newtype_s05",
+            "2021_newtype_s06",
+            "2021_newtype_s07",
+            "2021_newtype_s08",
+            "2021_newtype_s09",
+            "2021_newtype_s10",
+            "2021_newtype_s11",
+            "2021_newtype_s12",
+            "2021_newtype_s13",
+            "2021_newtype_s14",
+            "2021_newtype_s15",
+            "2021_newtype_s16",
+            "2021_newtype_s17",
+            "2021_newtype_s18",
+            "2021_newtype_s19",
+            "2021_newtype_s20",
+            "2021_newtype_s21",
+            "2021_newtype_s22",
+            "2021_newtype_s23",
+            "2021_newtype_s24",
+            "2021_newtype_s25",
+            "2021_newtype_s26",
+            "2021_newtype_s27",
+            "2021_newtype_s28",
+            "2021_newtype_s29",
+            "2021_newtype_s30",
+            "2021_newtype_s31",
+            "2021_newtype_s32",
+            "2021_newtype_s33",
+            "2021_newtype_s34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2021_cloze",
+      "type": "cloze",
+      "title": "Setting Targets Can Have Unforeseen Negative Consequences",
+      "topic": "完形填空：目标设定的负面效应——探讨设定目标会带来不可预见的负面影响，强调工作目标之外的其他要素会受到扭曲。",
+      "source": "Section I Use of English",
+      "sentences": [
+        {
+          "id": "2021_cloze_s01",
+          "para": 1,
+          "en": "It's not difficult to set targets for staff.",
+          "cn": "为员工设定目标并不难。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s02",
+          "para": 1,
+          "en": "It is much harder, [1], to understand their negative consequences.",
+          "cn": "然而，要认识到这些目标的负面影响就要难得多。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s03",
+          "para": 1,
+          "en": "Most work-related behaviors have multiple components.",
+          "cn": "大多数与工作相关的行为都含有多个要素。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s04",
+          "para": 1,
+          "en": "[2] one and the others become distorted.",
+          "cn": "强调其中一个，其他就会变得扭曲。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s05",
+          "para": 2,
+          "en": "Travel on a London bus and you'll [3] see how this works with drivers.",
+          "cn": "乘坐伦敦公交车出行，很快就能明白这是如何发生在司机身上的。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s06",
+          "para": 2,
+          "en": "Watch people get on and show their tickets.",
+          "cn": "看着人们上车并出示车票。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s07",
+          "para": 2,
+          "en": "Are they carefully inspected?",
+          "cn": "他们被仔细检查了吗？",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s08",
+          "para": 2,
+          "en": "Never.",
+          "cn": "从来没有。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s09",
+          "para": 2,
+          "en": "Do people get on without paying?",
+          "cn": "有人没付钱就上车了吗？",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s10",
+          "para": 2,
+          "en": "Of course!",
+          "cn": "当然！",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s11",
+          "para": 2,
+          "en": "Are there inspectors to [4] that people have paid?",
+          "cn": "有检票员核查人们是否购票吗？",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s12",
+          "para": 2,
+          "en": "Possibly, but very few.",
+          "cn": "可能有，但很少。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s13",
+          "para": 2,
+          "en": "And people who run for the bus?",
+          "cn": "那么那些跑着追赶公交的人呢？",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s14",
+          "para": 2,
+          "en": "They are [5].",
+          "cn": "他们被视而不见了。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s15",
+          "para": 2,
+          "en": "How about jumping lights?",
+          "cn": "闯红灯的情况呢？",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s16",
+          "para": 2,
+          "en": "Buses do so almost as frequently as cyclists.",
+          "cn": "公交车闯红灯几乎和骑自行车的人一样频繁。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s17",
+          "para": 3,
+          "en": "Why?",
+          "cn": "为什么呢？",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s18",
+          "para": 3,
+          "en": "Because the target is [6].",
+          "cn": "因为目标是准时。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s19",
+          "para": 3,
+          "en": "People complained that buses were late and infrequent.",
+          "cn": "人们曾经抱怨公交车晚点而且班次少。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s20",
+          "para": 3,
+          "en": "[7], the number of buses and bus lanes were increased, and drivers were [8] or punished according to the time they took.",
+          "cn": "所以，公交车和公交车专用道的数量增加了，司机们也根据其行程所用时间获得奖励或受到惩罚。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s21",
+          "para": 3,
+          "en": "And drivers hit these targets.",
+          "cn": "司机们实现了这些目标。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s22",
+          "para": 3,
+          "en": "But they [9] hit cyclists.",
+          "cn": "但他们也撞倒了骑自行车的人。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s23",
+          "para": 3,
+          "en": "If the target was changed to [10], you would have more inspectors and more sensitive pricing.",
+          "cn": "如果目标变成了收益，就会有更多的检票员，定价也会更加灵活。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s24",
+          "para": 3,
+          "en": "If the criterion changed to safety, you would get more [11] drivers who obeyed traffic laws.",
+          "cn": "如果标准变成了安全，就会有更多谨慎的司机，他们会遵守交通法规。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s25",
+          "para": 3,
+          "en": "But both these criteria would be at the expense of time.",
+          "cn": "但这两项标准都将以牺牲时间为代价。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s26",
+          "para": 4,
+          "en": "There is another [12]: people became immensely inventive in hitting targets.",
+          "cn": "还有另外一个问题：人们在达成目标方面变得极其有创意。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s27",
+          "para": 4,
+          "en": "Have you [13] that you can leave on a flight an hour late but still arrive on time?",
+          "cn": "你有没有注意到，你的航班延迟一小时起飞，却仍能准时到达？",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s28",
+          "para": 4,
+          "en": "Tailwinds?",
+          "cn": "顺风吗？",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s29",
+          "para": 4,
+          "en": "Of course not!",
+          "cn": "当然不是！",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s30",
+          "para": 4,
+          "en": "Airlines have simply changed the time a [14] is meant to take.",
+          "cn": "航空公司只是修改了一下旅程所需的时间。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s31",
+          "para": 4,
+          "en": "A one-hour flight is now billed as a two-hour flight.",
+          "cn": "一小时的航程现在被号称为两小时。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s32",
+          "para": 5,
+          "en": "The [15] of the story is simple.",
+          "cn": "这个故事的寓意很简单。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s33",
+          "para": 5,
+          "en": "Most jobs are multidimensional, with multiple criteria.",
+          "cn": "大部分工作都有多个维度、多个标准。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s34",
+          "para": 5,
+          "en": "Choose one criterion and you may well [16] others.",
+          "cn": "选择一个标准，那么就很可能要牺牲其他标准。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s35",
+          "para": 5,
+          "en": "Everything can be done faster and made cheaper, but there is a [17].",
+          "cn": "所有事都能以更快的速度、更低的价格完成，但是需要付出代价。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s36",
+          "para": 5,
+          "en": "Setting targets can and does have unforeseen negative consequences.",
+          "cn": "设定目标可能而且确实会带来不可预见的负面影响。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s37",
+          "para": 6,
+          "en": "This is not an argument against target-setting.",
+          "cn": "这并不是说要反对设立目标。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s38",
+          "para": 6,
+          "en": "But it is an argument for exploring consequences first.",
+          "cn": "而是说要先探讨后果。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s39",
+          "para": 6,
+          "en": "All good targets should have multiple criteria [18] critical factors such as time, money, quality and customer feedback.",
+          "cn": "所有好的目标都应该有多个与时间、金钱、质量、顾客反馈等关键因素有关的标准。",
+          "words": []
+        },
+        {
+          "id": "2021_cloze_s40",
+          "para": 6,
+          "en": "The trick is not only to [19] just one or even two dimensions of the objective, but also to understand how to help people better [20] the objective.",
+          "cn": "窍门在于，不仅要指定目标的一个、甚至两个维度，还要了解如何帮助人们更好地实现目标。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2021_cloze_q01",
+          "number": 1,
+          "qtype": "完形",
+          "stem": "第 1 空：选择最合适的词填入空白 [1]",
+          "stem_cn": "",
+          "options": {
+            "A": "therefore",
+            "B": "however",
+            "C": "again",
+            "D": "moreover"
+          },
+          "options_cn": {
+            "A": "因此；所以",
+            "B": "然而；不过",
+            "C": "再一次；返回原处",
+            "D": "此外；而且"
+          },
+          "answer": "B",
+          "explanation": "上下文语义逻辑。首句指出，设定目标并不难；空格句指出，______，认识到这些目标的负面影响要难得多。可见，两句存在语义反差（It's not difficult vs It is much harder），空格词作为插入语应体现两句间的转折对比逻辑，[B] however符合要求。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q02",
+          "number": 2,
+          "qtype": "完形",
+          "stem": "第 2 空：选择最合适的词填入空白 [2]",
+          "stem_cn": "",
+          "options": {
+            "A": "Emphasize",
+            "B": "Identify",
+            "C": "Assess",
+            "D": "Explain"
+          },
+          "options_cn": {
+            "A": "强调；重视",
+            "B": "确认；找到",
+            "C": "评定；估算",
+            "D": "解释；说明"
+          },
+          "answer": "A",
+          "explanation": "上下文语义+动词辨析。③④句指出，与工作相关的行为含有多个要素，______其中一个，其他就会变得扭曲。此两句与①②句“目标设定会带来不良影响”之间不存在任何显性关联词，表明两者间存在顺承关系，③④句“_____一个会扭曲其他”应意在解释说明①②句“目标设定的不良影响”，空格词应该与“目标设定（想要达到的标准）”相关，指向“关注，聚焦，以……为目标/重点”等意，[A] Emphasize表示to give special importance to sth“重视”，“重视一个要素”即“将之设立为目标”，故正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q03",
+          "number": 3,
+          "qtype": "完形",
+          "stem": "第 3 空：选择最合适的词填入空白 [3]",
+          "stem_cn": "",
+          "options": {
+            "A": "nearly",
+            "B": "curiously",
+            "C": "eagerly",
+            "D": "quickly"
+          },
+          "options_cn": {
+            "A": "几乎；将近",
+            "B": "好奇地",
+            "C": "热切地",
+            "D": "迅速地；很快地"
+          },
+          "answer": "D",
+          "explanation": "上下文语义+副词辨析。空格句指出，乘坐伦敦的公交车出行，你就会______明白这（this回指上段末句“目标设定的消极影响：扭曲目标以外的要素”）是如何发生在司机身上的；结合上文“要理解目标设定的负面影响很难”以及下文“公交司机频繁闯红灯”可知，空格句意在引出公交车司机频繁闯红灯的例子来形象展示“设定目标的危害”，空格词应重点传递这一示例作用的有效性，[D] quickly与see结合表示“快速明白/理解”，故正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q04",
+          "number": 4,
+          "qtype": "完形",
+          "stem": "第 4 空：选择最合适的词填入空白 [4]",
+          "stem_cn": "",
+          "options": {
+            "A": "claim",
+            "B": "prove",
+            "C": "check",
+            "D": "recall"
+          },
+          "options_cn": {
+            "A": "宣称；要求；索要",
+            "B": "证明；证实",
+            "C": "检查；查明；核实",
+            "D": "记起；使想起"
+          },
+          "answer": "C",
+          "explanation": "句内语义+动词辨析。空格句提出问题：有检票员______人们已经付钱了吗？空格词的逻辑主语为inspectors，宾语为具体的情况that people have paid，故空格词应表示公交车上检票员的动作行为，结合常识不难判断空格词应表示“检查，核实，核查”等，[C] check可表示to find out if sth/sb is correct or true“查明，核实”，“核实人们是否购票”与检票员的职责对应，故正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q05",
+          "number": 5,
+          "qtype": "完形",
+          "stem": "第 5 空：选择最合适的词填入空白 [5]",
+          "stem_cn": "",
+          "options": {
+            "A": "threatened",
+            "B": "ignored",
+            "C": "mocked",
+            "D": "blamed"
+          },
+          "options_cn": {
+            "A": "威胁；恐吓",
+            "B": "忽视；不予理睬",
+            "C": "嘲笑；不尊重",
+            "D": "责怪；指责"
+          },
+          "answer": "B",
+          "explanation": "上下文语义+动词辨析。空格句前句提出问题：那些跑着追赶公交的人怎么样了？空格句作出回答：他们被______。结合空格上下文“公交车上无人查票，司机频繁闯红灯”可知本句应在讲述公交（司机）对待“追赶着想要赶上车的人”的态度，[B] ignored有“佯装未见，不予理睬”之意，契合上下文语境“对乘客是否购票无视，对路上车辆行人/车上乘客安全无视”，故正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q06",
+          "number": 6,
+          "qtype": "完形",
+          "stem": "第 6 空：选择最合适的词填入空白 [6]",
+          "stem_cn": "",
+          "options": {
+            "A": "punctuality",
+            "B": "hospitality",
+            "C": "competition",
+            "D": "innovation"
+          },
+          "options_cn": {
+            "A": "准时；守时",
+            "B": "殷勤好客；款待",
+            "C": "竞争；比赛",
+            "D": "创新；新思想"
+          },
+          "answer": "A",
+          "explanation": "上下文语义+名词辨析。空格句指出原因：因为目标是______。结合空格上文所述伦敦公交的状况“不查车票、不顾追赶公交的人、频繁闯红灯”以及下文“人们抱怨公交车晚点”“司机们根据其行程所用时间……或受到惩罚”可知，此目标应与“时间”有关，[A] punctuality表示the fact or quality of being on time，符合上下文语义逻辑。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q07",
+          "number": 7,
+          "qtype": "完形",
+          "stem": "第 7 空：选择最合适的词填入空白 [7]",
+          "stem_cn": "",
+          "options": {
+            "A": "Yet",
+            "B": "So",
+            "C": "Besides",
+            "D": "Still"
+          },
+          "options_cn": {
+            "A": "然而；已经；还",
+            "B": "所以；因此",
+            "C": "此外；而且",
+            "D": "还；仍然；不过"
+          },
+          "answer": "B",
+          "explanation": "上下文语义逻辑。空格句前句介绍人们对公交车的抱怨“晚点、班次少”；空格句介绍与公交车有关的措施“增加公交车和公交车道的数量，依据司机的行程时间对其……或惩罚”，可见这些措施是为了解决公交车“晚点、班次少”的问题，人们的抱怨是“因”，相关措施是“果”，空格词应体现因果关系，[B] So正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q08",
+          "number": 8,
+          "qtype": "完形",
+          "stem": "第 8 空：选择最合适的词填入空白 [8]",
+          "stem_cn": "",
+          "options": {
+            "A": "hired",
+            "B": "trained",
+            "C": "rewarded",
+            "D": "grouped"
+          },
+          "options_cn": {
+            "A": "雇用；聘用",
+            "B": "训练；教育",
+            "C": "奖励；奖赏",
+            "D": "（使）成群，成组"
+          },
+          "answer": "C",
+          "explanation": "句内语义+动词辨析。空格句指出，司机们根据其行程所用时间______或受到惩罚（______or punished）。由上句分析可知，这一措施有助于解决“公交车晚点”的问题，即“根据其行程所用时间对司机进行______或惩罚”有利于提高准点率，空格词应与punished语义相对或类似，[C] rewarded表示“奖励，奖赏”，可有效激励司机提高准点率，故正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q09",
+          "number": 9,
+          "qtype": "完形",
+          "stem": "第 9 空：选择最合适的词填入空白 [9]",
+          "stem_cn": "",
+          "options": {
+            "A": "only",
+            "B": "rather",
+            "C": "once",
+            "D": "also"
+          },
+          "options_cn": {
+            "A": "只；仅；只不过",
+            "B": "有点儿，稍微；相反，反而",
+            "C": "仅一次；曾经",
+            "D": "而且；此外；也"
+          },
+          "answer": "D",
+          "explanation": "上下文语义逻辑。⑤⑥句指出设定“准时”目标后的结果（⑤句And表结果）：司机们“击中/实现（hit）”了这些目标，但是他们______“击中/碰撞（hit）”了骑自行车的人。可见，空格词应传递“实现准时目标”与“撞到骑自行车的人”两者都是“设定准时目标的结果”，[D] also“也，除此之外”符合语境，故正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q10",
+          "number": 10,
+          "qtype": "完形",
+          "stem": "第 10 空：选择最合适的词填入空白 [10]",
+          "stem_cn": "",
+          "options": {
+            "A": "comfort",
+            "B": "revenue",
+            "C": "efficiency",
+            "D": "security"
+          },
+          "options_cn": {
+            "A": "舒适；安慰",
+            "B": "收益；收入",
+            "C": "效率；功效",
+            "D": "安全工作；保护措施"
+          },
+          "answer": "B",
+          "explanation": "条件关系+句内语义。空格句指出，如果目标变成了______，就会有更多的检票员，定价也会更加灵活。“更多检票员”“更灵活的定价”均与公交收费有关，空格词应传递“票价、金钱、收益”等含义才可与之构成“条件—结果”关联，[B] revenue可表示“（公司、组织或政府的）收入”，正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q11",
+          "number": 11,
+          "qtype": "完形",
+          "stem": "第 11 空：选择最合适的词填入空白 [11]",
+          "stem_cn": "",
+          "options": {
+            "A": "friendly",
+            "B": "quiet",
+            "C": "cautious",
+            "D": "diligent"
+          },
+          "options_cn": {
+            "A": "友好的；亲切的",
+            "B": "文静的；稳重的",
+            "C": "小心的；谨慎的",
+            "D": "勤勉的；刻苦的"
+          },
+          "answer": "C",
+          "explanation": "条件关系+句内语义。空格句指出，如果标准变成了安全，就会有更多______司机，他们会遵守交通法规。______drivers一方面是条件从句“标准变成了安全”带来的结果，另一方面应该与drivers的定语从句who obeyed traffic laws的语义指向一致，[C] cautious表示being careful about what you say or do, especially to avoid danger“小心谨慎的”，符合上述两项条件。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q12",
+          "number": 12,
+          "qtype": "完形",
+          "stem": "第 12 空：选择最合适的词填入空白 [12]",
+          "stem_cn": "",
+          "options": {
+            "A": "purpose",
+            "B": "problem",
+            "C": "prejudice",
+            "D": "policy"
+          },
+          "options_cn": {
+            "A": "意图；目的；重要意义",
+            "B": "棘手的问题；困难",
+            "C": "偏见；成见",
+            "D": "政策；原则；为人之道"
+          },
+          "answer": "B",
+          "explanation": "段际逻辑+名词词义辨析。空格句指出，还存在另一个______：人们在达成目标方面变得极其有创意。而上文伦敦公交示例“为了实现准时，对收益、对安全、对意欲乘车的顾客熟视无睹；而如若将目标设置为安全或收益，又无法做到准时”意在说明首段所提出的“设定目标的负面影响：使得目标以外的要素受到扭曲”，此处应接续介绍目标设定的另一负面影响（another______），且由本段末句“一个小时的航程现在号称需要两小时”所传递出的贬义色彩也能感知此空格应表“问题，负面影响”等，[B] problem正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q13",
+          "number": 13,
+          "qtype": "完形",
+          "stem": "第 13 空：选择最合适的词填入空白 [13]",
+          "stem_cn": "",
+          "options": {
+            "A": "reported",
+            "B": "revealed",
+            "C": "admitted",
+            "D": "noticed"
+          },
+          "options_cn": {
+            "A": "报告；报道；据说",
+            "B": "揭示；透露；显示",
+            "C": "承认；准许……进入",
+            "D": "注意到；意识到"
+          },
+          "answer": "D",
+          "explanation": "句内语义+动词辨析。空格句提出问题：你有没有______“你的航班延误一小时起飞，却仍能准时到达”？空格词应传递出主语“以你/读者为代表的普通大众”与反常事件“乘坐的航班延误一个小时后还能按时到达”的关联，空格词应表“发现，注意，观察，体验，经历”等，[D] noticed表示“注意到，察觉到”，符合语义逻辑。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q14",
+          "number": 14,
+          "qtype": "完形",
+          "stem": "第 14 空：选择最合适的词填入空白 [14]",
+          "stem_cn": "",
+          "options": {
+            "A": "break",
+            "B": "trip",
+            "C": "departure",
+            "D": "transfer"
+          },
+          "options_cn": {
+            "A": "间歇；间断；暂停",
+            "B": "旅行；出行",
+            "C": "起程；班次；违反",
+            "D": "中转；搬迁；调动"
+          },
+          "answer": "B",
+          "explanation": "上下文语义+名词辨析。空格句指出，航空公司只是修改了一下______所需的时间。后一句具体介绍航空公司如何修改时间：一小时的航程被号称为两小时（one-hour flight→two-hour flight）。可见，航空公司修改的是“一趟航行/航程（flight）”所需的时间，空格词应与flight近义，[B] trip表示“出行，旅行”，正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q15",
+          "number": 15,
+          "qtype": "完形",
+          "stem": "第 15 空：选择最合适的词填入空白 [15]",
+          "stem_cn": "",
+          "options": {
+            "A": "moral",
+            "B": "background",
+            "C": "style",
+            "D": "form"
+          },
+          "options_cn": {
+            "A": "寓意；品行",
+            "B": "背景；幕后",
+            "C": "方式；风格；款式",
+            "D": "类型；形式"
+          },
+          "answer": "A",
+          "explanation": "上下文语义+名词辨析。空格句指出：这个故事的______很简单。空格句下文指出：大部分工作都有多个维度、多个标准，选择一个标准，很可能就要……其他标准。两者之间为顺承关联（没有任何显性关联词出现），可见，“工作有多个维度、多个标准，选择一个会令其他多个……”是上述事例“（航空、公交等系统）为达目标而不顾乘客安危、满意度、收益等，甚至采取延长实际所需用时的方式来达成准时的目的”所传递的深意，[A] moral可表示a practical lesson that a story, an event or an experience teaches you“寓意，教益”，正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q16",
+          "number": 16,
+          "qtype": "完形",
+          "stem": "第 16 空：选择最合适的词填入空白 [16]",
+          "stem_cn": "",
+          "options": {
+            "A": "interpret",
+            "B": "criticize",
+            "C": "sacrifice",
+            "D": "tolerate"
+          },
+          "options_cn": {
+            "A": "诠释；领会；口译",
+            "B": "批评；批判",
+            "C": "牺牲；舍弃",
+            "D": "容许；忍受"
+          },
+          "answer": "C",
+          "explanation": "句内语义+动词辨析。空格句指出：选择一个工作标准，那么就很可能______其他标准。就空格句内部而言，and you may well...传递的是Choose one criterion的结果，根据常识“选择一个意味着舍弃其他”可锁定[C]。就上文语境而言，首段指出“与工作相关的行为含有多个要素，重视一个，其他要素就会扭曲”，第二、三段列举公交车示例“当目标设定为准时时，收益、安全等就会被忽略；当目标设为安全或收益时，准时就无法保证”，整体语境表明空格词应表“损害，放弃，扭曲”等贬义词，[C] sacrifice正确。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q17",
+          "number": 17,
+          "qtype": "完形",
+          "stem": "第 17 空：选择最合适的词填入空白 [17]",
+          "stem_cn": "",
+          "options": {
+            "A": "task",
+            "B": "secret",
+            "C": "product",
+            "D": "cost"
+          },
+          "options_cn": {
+            "A": "任务；工作",
+            "B": "秘密；诀窍",
+            "C": "产品；产物",
+            "D": "代价；费用；成本"
+          },
+          "answer": "D",
+          "explanation": "上下文语义+句内语义+名词辨析。空格句指出，所有事都能以更快的速度、更低的价格完成，但是有______。空格句内部而言，but标示语义对比，空格词应指向与faster, cheaper相反的负面语义，锁定具有负面语义的[D]。上下文语境而言，上句指出“选择一个目标/标准（faster, cheaper），就会以其他标准为代价”，故空格词应与sacrifice、at the expense of语义相近，[D] cost表示the loss or damage that is involved in order to achieve sth，符合这一语义逻辑。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q18",
+          "number": 18,
+          "qtype": "完形",
+          "stem": "第 18 空：选择最合适的词填入空白 [18]",
+          "stem_cn": "",
+          "options": {
+            "A": "leading to",
+            "B": "calling for",
+            "C": "relating to",
+            "D": "accounting for"
+          },
+          "options_cn": {
+            "A": "导致；通往",
+            "B": "呼吁；需要；接（某人）",
+            "C": "涉及；有关",
+            "D": "（数量、比例上）占；解释；对……负责"
+          },
+          "answer": "C",
+          "explanation": "句内语义+动词词组辨析。空格句介绍好的目标的要求：应该要有多个标准______如时间、金钱、质量、顾客反馈等关键因素。根据上文公交车示例“以时间（标准）为目标时，金钱、顾客反馈、质量等（标准）会遭到忽视，以金钱、顾客反馈等（标准）为目标时，时间（标准）会受到忽略”可知空格词后“时间、金钱、质量、顾客反馈等关键因素”同空格词前“标准”语义指向一致，属上下义关联，[C] relating to符合文意。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q19",
+          "number": 19,
+          "qtype": "完形",
+          "stem": "第 19 空：选择最合适的词填入空白 [19]",
+          "stem_cn": "",
+          "options": {
+            "A": "specify",
+            "B": "predict",
+            "C": "restore",
+            "D": "create"
+          },
+          "options_cn": {
+            "A": "具体说明；明确要求",
+            "B": "预言；预告；预报",
+            "C": "恢复；使复原；归还",
+            "D": "创造；引起；造成"
+          },
+          "answer": "A",
+          "explanation": "上下文语义+动词辨析。空格句介绍设立好的目标的窍门：不仅要______目标的一两个维度，还要了解如何帮助人们更好地……目标。结合上文“好的目标需要有多个标准集成”可知设定一个好的目标首先必须符合“多个标准集成/选择多个标准”这一先决条件，空格词应表“设定，指定，规定，选择，选取”等，[A] specify表示to state sth explicitly or in detail，符合语义逻辑。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        },
+        {
+          "id": "2021_cloze_q20",
+          "number": 20,
+          "qtype": "完形",
+          "stem": "第 20 空：选择最合适的词填入空白 [20]",
+          "stem_cn": "",
+          "options": {
+            "A": "modify",
+            "B": "review",
+            "C": "present",
+            "D": "achieve"
+          },
+          "options_cn": {
+            "A": "调整；修改；缓和",
+            "B": "重新考虑；反思；评论；复习",
+            "C": "颁发；展现；提出",
+            "D": "达到；完成；实现"
+          },
+          "answer": "D",
+          "explanation": "句内语义+动词辨析。空格句以not only...but also呈现递进关系：不仅要指定目标的一两个维度，还要了解如何帮助人们更好地______目标。空格词应体现对“设立目标”的递进，[D] achieve表示“实现”，从“确立目标”到“实现目标”不仅体现了not only...but also...的递进关系，也充分表现了trick（a way of doing sth that works well）的内在含义。此外，结合本段首两句“探讨目标的后果”可知，本句应关注“目标的实现”。",
+          "related_sentences": [
+            "2021_cloze_s01",
+            "2021_cloze_s02",
+            "2021_cloze_s03",
+            "2021_cloze_s04",
+            "2021_cloze_s05",
+            "2021_cloze_s06",
+            "2021_cloze_s07",
+            "2021_cloze_s08",
+            "2021_cloze_s09",
+            "2021_cloze_s10",
+            "2021_cloze_s11",
+            "2021_cloze_s12",
+            "2021_cloze_s13",
+            "2021_cloze_s14",
+            "2021_cloze_s15",
+            "2021_cloze_s16",
+            "2021_cloze_s17",
+            "2021_cloze_s18",
+            "2021_cloze_s19",
+            "2021_cloze_s20",
+            "2021_cloze_s21",
+            "2021_cloze_s22",
+            "2021_cloze_s23",
+            "2021_cloze_s24",
+            "2021_cloze_s25",
+            "2021_cloze_s26",
+            "2021_cloze_s27",
+            "2021_cloze_s28",
+            "2021_cloze_s29",
+            "2021_cloze_s30",
+            "2021_cloze_s31",
+            "2021_cloze_s32",
+            "2021_cloze_s33",
+            "2021_cloze_s34",
+            "2021_cloze_s35",
+            "2021_cloze_s36",
+            "2021_cloze_s37",
+            "2021_cloze_s38",
+            "2021_cloze_s39",
+            "2021_cloze_s40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2021_translation",
+      "type": "translation",
+      "title": "Why You Should Talk to Strangers",
+      "topic": "翻译：为何要与陌生人交谈——介绍一项最新研究发现：与陌生人交流会带来意想不到的好心情和归属感，呼吁人们克服顾虑主动交谈。",
+      "source": "Section III Translation",
+      "ref_cn": "我们往往认为，朋友和家人是我们获得情感归属、欢乐和温暖的最主要来源。虽然这很有可能正确，但是，研究人员最近也发现，与陌生人交流实际上会给我们带来意想不到的好心情以及归属感。在一系列的研究中，研究人员让芝加哥地区乘坐公共交通的通勤者与身旁的人搭讪。平均而言，遵照这一指示的参与者比那些被要求安静地站着或坐着的参与者感觉更好。研究人员还认为，我们之所以避而不与陌生人闲聊，通常是由于不必要的忧虑，担心他们可能不想和我们说话。但是，在大多数时候，这种想法是错误的。正如研究结果所示，许多人其实非常愿意交谈——甚至可能会因为受到你的关注而格外高兴。",
+      "sentences": [
+        {
+          "id": "2021_translation_s01",
+          "para": 1,
+          "en": "We tend to think that friends and family members are our biggest sources of connection, laughter, and warmth.",
+          "cn": "我们往往认为，朋友和家人是我们获得情感归属、欢乐和温暖的最主要来源。",
+          "words": []
+        },
+        {
+          "id": "2021_translation_s02",
+          "para": 1,
+          "en": "While that may well be true, researchers have also recently found that interacting with strangers actually brings a boost in mood and feelings of belonging that we didn't expect.",
+          "cn": "虽然这很有可能正确，但是，研究人员最近也发现，与陌生人交流实际上会给我们带来意想不到的好心情以及归属感。",
+          "words": []
+        },
+        {
+          "id": "2021_translation_s03",
+          "para": 2,
+          "en": "In one series of studies, researchers instructed Chicago-area commuters using public transportation to strike up a conversation with someone near them.",
+          "cn": "在一系列的研究中，研究人员让芝加哥地区乘坐公共交通的通勤者与身旁的人搭讪。",
+          "words": []
+        },
+        {
+          "id": "2021_translation_s04",
+          "para": 2,
+          "en": "On average, participants who followed this instruction felt better than those who had been told to stand or sit in silence.",
+          "cn": "平均而言，遵照这一指示的参与者比那些被要求安静地站着或坐着的参与者感觉更好。",
+          "words": []
+        },
+        {
+          "id": "2021_translation_s05",
+          "para": 2,
+          "en": "The researchers also argued that when we shy away from casual interactions with strangers, it is often due to a misplaced anxiety that they might not want to talk to us.",
+          "cn": "研究人员还认为，我们之所以避而不与陌生人闲聊，通常是由于不必要的忧虑，担心他们可能不想和我们说话。",
+          "words": []
+        },
+        {
+          "id": "2021_translation_s06",
+          "para": 2,
+          "en": "Much of the time, however, this belief is false.",
+          "cn": "但是，在大多数时候，这种想法是错误的。",
+          "words": []
+        },
+        {
+          "id": "2021_translation_s07",
+          "para": 2,
+          "en": "As it turns out, many people are actually perfectly willing to talk—and may even be flattered to receive your attention.",
+          "cn": "正如研究结果所示，许多人其实非常愿意交谈——甚至可能会因为受到你的关注而格外高兴。",
+          "words": []
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "2021_writinga",
+      "type": "writing_a",
+      "title": "Part A 应用文：邀请留学生参加线上会议",
+      "topic": "小作文：假设你正在组织一场线上会议，给国际学生杰克（Jack）写一封电子邮件，邀请他参加并告知会议的具体细节。",
+      "source": "Section IV Writing Part A",
+      "sample_en": "Dear Jack,\n\nAs an organizer of our monthly reading session, I am writing to invite you to our online meeting scheduled for next Friday from 2 p.m. to 4 p.m. via Zoom.\n\nWith the theme of A Famous Writer from Your Country, this meeting aims to expose our participants to writers and works from a wide variety of cultures. Attendees from diverse cultural backgrounds will gather to engage in cross-cultural exchanges and enhance their understanding of literature. As a literary enthusiast, you are very welcome to share your insights into the differences between English and Chinese literature.\n\nOur meeting arrangements are attached for your reference. We will be very pleased if you could accept our invitation.\n\nYours sincerely,\nLi Ming",
+      "sample_cn": "亲爱的杰克：\n\n作为月度读书会的组织者，我写这封信是为了邀请你参加我们的在线会议，会议定于下周五下午2点至4点通过Zoom召开。\n\n本次读书会以“介绍本国一位著名作家”为主题，旨在让参会者接触到不同文化的作家和作品。来自不同文化背景的参会者将齐聚一堂进行跨文化交流，增进对文学的了解。我们非常欢迎作为文学爱好者的你向大家分享你对英汉文学差异的见解。\n\n随信附上我们的会议安排以供参考。如果你能接受我们的邀请，我们将非常高兴。\n\n诚挚的，\n李明",
+      "questions": []
+    },
+    {
+      "id": "2021_writingb",
+      "type": "writing_b",
+      "title": "Part B 大作文：某市居民锻炼方式调查",
+      "topic": "大作文：根据柱状图写一篇约150词的短文，解读某市居民锻炼方式调查数据（独自锻炼超过半数，和朋友一起占47.7%，和家人一起占23.9%，参加团体活动不足16%）并发表评论。",
+      "source": "Section IV Writing Part B",
+      "chart_img": "img/2021_writingb_chart.png",
+      "sample_en": "According to the chart, over half of the respondents get physical exercise by themselves, while 47.7% do so with friends and 23.9% with family members. By comparison, no more than 16% of those questioned play team sports.\n\nPeople prefer to take exercise alone rather than with someone else primarily on account of flexibility and convenience. In this way, they can, for example, go jogging anytime they want, without the need to make a plan with friends in advance. Furthermore, a wide range of fitness videos, apps and games have boosted the popularity of doing workouts alone at home. Another conclusion from the data is that people are much more likely to work out with friends than with family members. That may be because exercise is not a part of the whole family's daily routine, or simply because they live apart from their family.\n\nTaking exercise alone will be a growing trend in today's busy society where most people's schedules do not match. But it is advisable, if possible, to find a workout partner to keep you motivated.",
+      "sample_cn": "由图表可知，过半数的受访者独自锻炼，47.7%和朋友一起，23.9%和家人一起。相较之下，只有不到16%的受访者参加团队运动。\n\n人们更喜欢独自锻炼而非和他人一起锻炼，主要是因为灵活方便。比如，这样一来，他们就可以随时去慢跑，不需要与朋友提前规划。此外，各种各样的健身视频、应用和游戏使得在家独自锻炼更加流行。从数据中还可以得出一个结论：人们和朋友一起锻炼的可能性比和家人一起的可能性要高得多。这可能是因为锻炼并非全家人日常生活的一部分，也可能只是因为他们不和家人住在一起。\n\n在如今这个大多数人日程安排不一致的忙碌社会中，独自锻炼将会日渐盛行，成为趋势。但若可能的话，建议找一位健身搭档以使自己保持动力。",
+      "questions": []
     }
   ]
 }

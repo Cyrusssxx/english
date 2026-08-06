@@ -10,37 +10,522 @@
       "topic": "职业教育与动手学习：Koziatek 高中的开创性尝试",
       "source": "2018 年考研英语（二）Text 1 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2018_text1_s01", "para": 1, "en": "It is curious that Stephen Koziatek feels almost as though he has to justify his efforts to give his students a better future.", "cn": "令人好奇的是，Stephen Koziatek 几乎感觉自己似乎必须为“努力给学生一个更好的未来”这件事辩护一番。", "words": [ { "w": "It is curious that", "meaning": "……有些奇怪" }, { "w": "justify his efforts", "meaning": "证明其努力的合理性" }, { "w": "a better future", "meaning": "更美好的未来" } ] },
-        { "id": "2018_text1_s02", "para": 2, "en": "Mr. Koziatek is part of something pioneering.", "cn": "Koziatek 先生是某一开创性行动的一部分。", "words": [ { "w": "pioneering", "meaning": "adj. 开创性的，探索性的" } ] },
-        { "id": "2018_text1_s03", "para": 2, "en": "He is a teacher at a New Hampshire high school where learning is not something of books and tests and mechanical memorization, but practical.", "cn": "他任教于新罕布什尔州一所高中，在这里，学习不是关乎书本、测试以及机械记忆，而是关乎实践。", "words": [ { "w": "mechanical memorization", "meaning": "机械记忆" }, { "w": "practical", "meaning": "adj. 实际的，动手的" } ] },
-        { "id": "2018_text1_s04", "para": 2, "en": "When did it become accepted wisdom that students should be able to name the 13th president of the United States but be utterly overwhelmed by a broken bike chain?", "cn": "究竟何时人们开始普遍认为，学生就该叫得出美国第 13 任总统的名字，却面对断裂的自行车链完全不知所措？", "words": [ { "w": "accepted wisdom", "meaning": "传统信念，普遍看法" }, { "w": "utterly overwhelmed", "meaning": "完全不知所措" }, { "w": "a broken bike chain", "meaning": "断裂的自行车链" } ] },
-        { "id": "2018_text1_s05", "para": 3, "en": "As Koziatek knows, there is learning in just about everything.", "cn": "正如 Koziatek 所知，几乎每件事中都有学问。", "words": [ { "w": "As Koziatek knows", "meaning": "正如 Koziatek 所知" }, { "w": "just about everything", "meaning": "几乎每一件事" } ] },
-        { "id": "2018_text1_s06", "para": 3, "en": "Nothing is necessarily gained by forcing students to learn geometry at a graffitied desk stuck with generations of discarded chewing gum.", "cn": "在胡乱涂鸦的、沾满一届又一届学生丢弃的口香糖的桌子前学习几何，不一定能有任何收获。", "words": [ { "w": "Nothing is necessarily gained", "meaning": "不一定能有任何收获" }, { "w": "forcing students", "meaning": "逼迫学生" }, { "w": "discarded chewing gum", "meaning": "丢弃的口香糖" } ] },
-        { "id": "2018_text1_s07", "para": 3, "en": "They can also learn geometry by assembling a bicycle.", "cn": "他们还可以通过安装自行车学习几何。", "words": [ { "w": "assembling a bicycle", "meaning": "组装自行车" } ] },
-        { "id": "2018_text1_s08", "para": 4, "en": "But he's also found a kind of insidious prejudice.", "cn": "但他也发现了一种暗中为害的偏见。", "words": [ { "w": "insidious", "meaning": "adj. 暗中危害的" }, { "w": "prejudice", "meaning": "n. 偏见" } ] },
-        { "id": "2018_text1_s09", "para": 4, "en": "Working with your hands is seen as almost a mark of inferiority.", "cn": "用你的双手工作几乎被视为一种低劣的标记。", "words": [ { "w": "Working with your hands", "meaning": "用双手劳作，动手做事" }, { "w": "a mark of inferiority", "meaning": "低劣的标记" } ] },
-        { "id": "2018_text1_s10", "para": 4, "en": "Schools in the family of vocational education \"have that stereotype ... that it's for kids who can't make it academically,\" he says.", "cn": "他说，职业教育家族的学校们“有这样一种模式化观念……它面向的是那些无法取得学业成功的孩子”。", "words": [ { "w": "vocational education", "meaning": "职业教育" }, { "w": "stereotype", "meaning": "n. 模式化的思想，老一套" }, { "w": "can't make it academically", "meaning": "无法取得学业成功" } ] },
-        { "id": "2018_text1_s11", "para": 5, "en": "On one hand, that viewpoint is a logical product of America's evolution.", "cn": "一方面，那种观点是美国发展的合理产物。", "words": [ { "w": "On one hand", "meaning": "一方面" }, { "w": "a logical product", "meaning": "合理产物" }, { "w": "evolution", "meaning": "n. 演变，发展" } ] },
-        { "id": "2018_text1_s12", "para": 5, "en": "Manufacturing is not the economic engine that it once was.", "cn": "制造业已不再是曾经的经济引擎。", "words": [ { "w": "Manufacturing", "meaning": "n. 制造业" }, { "w": "the economic engine", "meaning": "经济引擎" } ] },
-        { "id": "2018_text1_s13", "para": 5, "en": "The job security that the US economy once offered to high school graduates has largely evaporated.", "cn": "美国经济曾提供给高中毕业生的工作安稳很大程度上已逐渐消逝。", "words": [ { "w": "job security", "meaning": "工作稳定，就业保障" }, { "w": "high school graduates", "meaning": "高中毕业生" }, { "w": "evaporated", "meaning": "v. 逐渐消逝，蒸发" } ] },
-        { "id": "2018_text1_s14", "para": 5, "en": "More education is the new principle.", "cn": "“更多教育”是如今的新原则。", "words": [ { "w": "the new principle", "meaning": "新的原则" } ] },
-        { "id": "2018_text1_s15", "para": 5, "en": "We want more for our kids, and rightfully so.", "cn": "我们想要孩子接受更多的教育，且理应如此。", "words": [ { "w": "rightfully so", "meaning": "理应如此" } ] },
-        { "id": "2018_text1_s16", "para": 6, "en": "But the headlong push into bachelor's degrees for all - and the subtle devaluing of anything less - misses an important point: That's not the only thing the American economy needs.", "cn": "但慌不择路地将所有人椎进学士学位——并微妙地贬抑其他较低的一切——忽略了重要的一点：那并非美国经济唯一所需。", "words": [ { "w": "headlong push", "meaning": "仓促、轻率地推进" }, { "w": "bachelor's degrees", "meaning": "学士学位" }, { "w": "devaluing", "meaning": "v. 贬低，贬抑" } ] },
-        { "id": "2018_text1_s17", "para": 6, "en": "Yes, a bachelor's degree opens more doors.", "cn": "确实，学士学位会打开更多扇门。", "words": [ { "w": "opens more doors", "meaning": "打开更多机会之门" } ] },
-        { "id": "2018_text1_s18", "para": 6, "en": "But even now, 54 percent of the jobs in the country are middle-skill jobs, such as construction and high-skill manufacturing.", "cn": "但就算是现在，我们国家依然有 54% 的工作是中等技能工作，如建筑和高技能制造。", "words": [ { "w": "middle-skill jobs", "meaning": "中等技能工作" }, { "w": "construction", "meaning": "n. 建筑，建造" } ] },
-        { "id": "2018_text1_s19", "para": 6, "en": "But only 44 percent of workers are adequately trained.", "cn": "但仅有 44% 的工人接受过足够的培训。", "words": [ { "w": "adequately trained", "meaning": "接受过足够培训" } ] },
-        { "id": "2018_text1_s20", "para": 7, "en": "In other words, at a time when the working class has turned the country on its political head, frustrated that the opportunity that once defined America is vanishing, one obvious solution is staring us in the face.", "cn": "换言之，在一个“工人阶级已完全改变了这个国家的政治思路、因曾经定义美国的机会逐渐消逝而受挫”的时代，一个明显的解决办法一直就摆在我们的面前。", "words": [ { "w": "the working class", "meaning": "工人阶级" }, { "w": "turned the country on its political head", "meaning": "彻底改变国家的政治思路" }, { "w": "staring us in the face", "meaning": "明摆在眼前" } ] },
-        { "id": "2018_text1_s21", "para": 7, "en": "There is a gap in working-class jobs, but the workers who need those jobs most aren't equipped to do them.", "cn": "工人阶级职位有缺口，但最需要这些工作的工人们并不具备做它们的能力。", "words": [ { "w": "a gap", "meaning": "缺口，空缺" }, { "w": "aren't equipped to do them", "meaning": "不具备做它们的能力" } ] },
-        { "id": "2018_text1_s22", "para": 7, "en": "Koziatek's Manchester School of Technology High School is trying to fill that gap.", "cn": "Koziatek 的曼彻斯特技术高中正在试图填补那一缺口。", "words": [ { "w": "is trying to fill that gap", "meaning": "正试图填补那一缺口" } ] },
-        { "id": "2018_text1_s23", "para": 8, "en": "Koziatek's school is a wake-up call.", "cn": "Koziatek 的学校敲响了警钟。", "words": [ { "w": "a wake-up call", "meaning": "警钟，警示" } ] },
-        { "id": "2018_text1_s24", "para": 8, "en": "When education becomes one-size-fits-all, it risks overlooking a nation's diversity of gifts.", "cn": "当教育变得一刀切时，它是在拿一国的天赋多样性冒险。", "words": [ { "w": "one-size-fits-all", "meaning": "一刀切，一体适用" }, { "w": "risks overlooking", "meaning": "冒着忽视……的风险" }, { "w": "diversity of gifts", "meaning": "天赋的多样性" } ] }
+        {
+          "id": "2018_text1_s01",
+          "para": 1,
+          "en": "It is curious that Stephen Koziatek feels almost as though he has to justify his efforts to give his students a better future.",
+          "cn": "令人好奇的是，Stephen Koziatek 几乎感觉自己似乎必须为“努力给学生一个更好的未来”这件事辩护一番。",
+          "words": [
+            {
+              "w": "It is curious that",
+              "meaning": "……有些奇怪"
+            },
+            {
+              "w": "justify his efforts",
+              "meaning": "证明其努力的合理性"
+            },
+            {
+              "w": "a better future",
+              "meaning": "更美好的未来"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s02",
+          "para": 2,
+          "en": "Mr. Koziatek is part of something pioneering.",
+          "cn": "Koziatek 先生是某一开创性行动的一部分。",
+          "words": [
+            {
+              "w": "pioneering",
+              "meaning": "adj. 开创性的，探索性的"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s03",
+          "para": 2,
+          "en": "He is a teacher at a New Hampshire high school where learning is not something of books and tests and mechanical memorization, but practical.",
+          "cn": "他任教于新罕布什尔州一所高中，在这里，学习不是关乎书本、测试以及机械记忆，而是关乎实践。",
+          "words": [
+            {
+              "w": "mechanical memorization",
+              "meaning": "机械记忆"
+            },
+            {
+              "w": "practical",
+              "meaning": "adj. 实际的，动手的"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s04",
+          "para": 2,
+          "en": "When did it become accepted wisdom that students should be able to name the 13th president of the United States but be utterly overwhelmed by a broken bike chain?",
+          "cn": "究竟何时人们开始普遍认为，学生就该叫得出美国第 13 任总统的名字，却面对断裂的自行车链完全不知所措？",
+          "words": [
+            {
+              "w": "accepted wisdom",
+              "meaning": "传统信念，普遍看法"
+            },
+            {
+              "w": "utterly overwhelmed",
+              "meaning": "完全不知所措"
+            },
+            {
+              "w": "a broken bike chain",
+              "meaning": "断裂的自行车链"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s05",
+          "para": 3,
+          "en": "As Koziatek knows, there is learning in just about everything.",
+          "cn": "正如 Koziatek 所知，几乎每件事中都有学问。",
+          "words": [
+            {
+              "w": "As Koziatek knows",
+              "meaning": "正如 Koziatek 所知"
+            },
+            {
+              "w": "just about everything",
+              "meaning": "几乎每一件事"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s06",
+          "para": 3,
+          "en": "Nothing is necessarily gained by forcing students to learn geometry at a graffitied desk stuck with generations of discarded chewing gum.",
+          "cn": "在胡乱涂鸦的、沾满一届又一届学生丢弃的口香糖的桌子前学习几何，不一定能有任何收获。",
+          "words": [
+            {
+              "w": "Nothing is necessarily gained",
+              "meaning": "不一定能有任何收获"
+            },
+            {
+              "w": "forcing students",
+              "meaning": "逼迫学生"
+            },
+            {
+              "w": "discarded chewing gum",
+              "meaning": "丢弃的口香糖"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s07",
+          "para": 3,
+          "en": "They can also learn geometry by assembling a bicycle.",
+          "cn": "他们还可以通过安装自行车学习几何。",
+          "words": [
+            {
+              "w": "assembling a bicycle",
+              "meaning": "组装自行车"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s08",
+          "para": 4,
+          "en": "But he's also found a kind of insidious prejudice.",
+          "cn": "但他也发现了一种暗中为害的偏见。",
+          "words": [
+            {
+              "w": "insidious",
+              "meaning": "adj. 暗中危害的"
+            },
+            {
+              "w": "prejudice",
+              "meaning": "n. 偏见"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s09",
+          "para": 4,
+          "en": "Working with your hands is seen as almost a mark of inferiority.",
+          "cn": "用你的双手工作几乎被视为一种低劣的标记。",
+          "words": [
+            {
+              "w": "Working with your hands",
+              "meaning": "用双手劳作，动手做事"
+            },
+            {
+              "w": "a mark of inferiority",
+              "meaning": "低劣的标记"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s10",
+          "para": 4,
+          "en": "Schools in the family of vocational education \"have that stereotype ... that it's for kids who can't make it academically,\" he says.",
+          "cn": "他说，职业教育家族的学校们“有这样一种模式化观念……它面向的是那些无法取得学业成功的孩子”。",
+          "words": [
+            {
+              "w": "vocational education",
+              "meaning": "职业教育"
+            },
+            {
+              "w": "stereotype",
+              "meaning": "n. 模式化的思想，老一套"
+            },
+            {
+              "w": "can't make it academically",
+              "meaning": "无法取得学业成功"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s11",
+          "para": 5,
+          "en": "On one hand, that viewpoint is a logical product of America's evolution.",
+          "cn": "一方面，那种观点是美国发展的合理产物。",
+          "words": [
+            {
+              "w": "On one hand",
+              "meaning": "一方面"
+            },
+            {
+              "w": "a logical product",
+              "meaning": "合理产物"
+            },
+            {
+              "w": "evolution",
+              "meaning": "n. 演变，发展"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s12",
+          "para": 5,
+          "en": "Manufacturing is not the economic engine that it once was.",
+          "cn": "制造业已不再是曾经的经济引擎。",
+          "words": [
+            {
+              "w": "Manufacturing",
+              "meaning": "n. 制造业"
+            },
+            {
+              "w": "the economic engine",
+              "meaning": "经济引擎"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s13",
+          "para": 5,
+          "en": "The job security that the US economy once offered to high school graduates has largely evaporated.",
+          "cn": "美国经济曾提供给高中毕业生的工作安稳很大程度上已逐渐消逝。",
+          "words": [
+            {
+              "w": "job security",
+              "meaning": "工作稳定，就业保障"
+            },
+            {
+              "w": "high school graduates",
+              "meaning": "高中毕业生"
+            },
+            {
+              "w": "evaporated",
+              "meaning": "v. 逐渐消逝，蒸发"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s14",
+          "para": 5,
+          "en": "More education is the new principle.",
+          "cn": "“更多教育”是如今的新原则。",
+          "words": [
+            {
+              "w": "the new principle",
+              "meaning": "新的原则"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s15",
+          "para": 5,
+          "en": "We want more for our kids, and rightfully so.",
+          "cn": "我们想要孩子接受更多的教育，且理应如此。",
+          "words": [
+            {
+              "w": "rightfully so",
+              "meaning": "理应如此"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s16",
+          "para": 6,
+          "en": "But the headlong push into bachelor's degrees for all - and the subtle devaluing of anything less - misses an important point: That's not the only thing the American economy needs.",
+          "cn": "但慌不择路地将所有人椎进学士学位——并微妙地贬抑其他较低的一切——忽略了重要的一点：那并非美国经济唯一所需。",
+          "words": [
+            {
+              "w": "headlong push",
+              "meaning": "仓促、轻率地推进"
+            },
+            {
+              "w": "bachelor's degrees",
+              "meaning": "学士学位"
+            },
+            {
+              "w": "devaluing",
+              "meaning": "v. 贬低，贬抑"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s17",
+          "para": 6,
+          "en": "Yes, a bachelor's degree opens more doors.",
+          "cn": "确实，学士学位会打开更多扇门。",
+          "words": [
+            {
+              "w": "opens more doors",
+              "meaning": "打开更多机会之门"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s18",
+          "para": 6,
+          "en": "But even now, 54 percent of the jobs in the country are middle-skill jobs, such as construction and high-skill manufacturing.",
+          "cn": "但就算是现在，我们国家依然有 54% 的工作是中等技能工作，如建筑和高技能制造。",
+          "words": [
+            {
+              "w": "middle-skill jobs",
+              "meaning": "中等技能工作"
+            },
+            {
+              "w": "construction",
+              "meaning": "n. 建筑，建造"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s19",
+          "para": 6,
+          "en": "But only 44 percent of workers are adequately trained.",
+          "cn": "但仅有 44% 的工人接受过足够的培训。",
+          "words": [
+            {
+              "w": "adequately trained",
+              "meaning": "接受过足够培训"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s20",
+          "para": 7,
+          "en": "In other words, at a time when the working class has turned the country on its political head, frustrated that the opportunity that once defined America is vanishing, one obvious solution is staring us in the face.",
+          "cn": "换言之，在一个“工人阶级已完全改变了这个国家的政治思路、因曾经定义美国的机会逐渐消逝而受挫”的时代，一个明显的解决办法一直就摆在我们的面前。",
+          "words": [
+            {
+              "w": "the working class",
+              "meaning": "工人阶级"
+            },
+            {
+              "w": "turned the country on its political head",
+              "meaning": "彻底改变国家的政治思路"
+            },
+            {
+              "w": "staring us in the face",
+              "meaning": "明摆在眼前"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s21",
+          "para": 7,
+          "en": "There is a gap in working-class jobs, but the workers who need those jobs most aren't equipped to do them.",
+          "cn": "工人阶级职位有缺口，但最需要这些工作的工人们并不具备做它们的能力。",
+          "words": [
+            {
+              "w": "a gap",
+              "meaning": "缺口，空缺"
+            },
+            {
+              "w": "aren't equipped to do them",
+              "meaning": "不具备做它们的能力"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s22",
+          "para": 7,
+          "en": "Koziatek's Manchester School of Technology High School is trying to fill that gap.",
+          "cn": "Koziatek 的曼彻斯特技术高中正在试图填补那一缺口。",
+          "words": [
+            {
+              "w": "is trying to fill that gap",
+              "meaning": "正试图填补那一缺口"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s23",
+          "para": 8,
+          "en": "Koziatek's school is a wake-up call.",
+          "cn": "Koziatek 的学校敲响了警钟。",
+          "words": [
+            {
+              "w": "a wake-up call",
+              "meaning": "警钟，警示"
+            }
+          ]
+        },
+        {
+          "id": "2018_text1_s24",
+          "para": 8,
+          "en": "When education becomes one-size-fits-all, it risks overlooking a nation's diversity of gifts.",
+          "cn": "当教育变得一刀切时，它是在拿一国的天赋多样性冒险。",
+          "words": [
+            {
+              "w": "one-size-fits-all",
+              "meaning": "一刀切，一体适用"
+            },
+            {
+              "w": "risks overlooking",
+              "meaning": "冒着忽视……的风险"
+            },
+            {
+              "w": "diversity of gifts",
+              "meaning": "天赋的多样性"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2018_text1_q1", "number": 21, "qtype": "detail", "stem": "A broken bike chain is mentioned to show students' lack of ___.", "stem_cn": "文中提及断裂的自行车链是为了说明学生缺乏___。", "options": { "A": "practical ability", "B": "academic training", "C": "pioneering spirit", "D": "mechanical memorization" }, "options_cn": { "A": "实践能力", "B": "学术培训", "C": "开创精神", "D": "机械记忆" }, "answer": "A", "explanation": "第二段①②句指出该高中开创性地将学习视为“不是关乎书本，而是关乎实践”，③句反问“学生应该能说出第13任总统的名字、却面对断裂的自行车链不知所措”。可见提及“自行车链事例”是为了说明学生实际动手能力的欠缺，故 [A] 正确。[B]/[D] 是对当前教育强调内容的概括，并非“学生欠缺的能力”；[C] 把学校的开创精神偷换为学生的开创精神。", "related_sentences": [ "2018_text1_s03", "2018_text1_s04" ] },
-        { "id": "2018_text1_q2", "number": 22, "qtype": "detail", "stem": "There exists the prejudice that vocational education is for kids who ___.", "stem_cn": "当前存在一种偏见：职业教育面向的是那些___的孩子。", "options": { "A": "have a stereotyped mind", "B": "have no career motivation", "C": "are not academically successful", "D": "are financially disadvantaged" }, "options_cn": { "A": "思维模式化", "B": "没有职业动机", "C": "学业不成功", "D": "经济条件差" }, "answer": "C", "explanation": "第四段指出偏见——体力劳动被视为劣等，职业教育面向“无法取得学业成功的孩子”。正确项是对③句 can't make it academically 的改写，故 [C] 正确。[A] 把“学校有模式化认识”改成“学生思维模式化”；[B] 捏造“缺乏职业动机”；[D] 把 inferiority 曲解为经济条件差。", "related_sentences": [ "2018_text1_s09", "2018_text1_s10" ] },
-        { "id": "2018_text1_q3", "number": 23, "qtype": "inference", "stem": "We can infer from Paragraph 5 that high school graduates ___.", "stem_cn": "我们可以从第五段推知，高中毕业生___。", "options": { "A": "used to have big financial concerns", "B": "used to have more job opportunities", "C": "are reluctant to work in manufacturing", "D": "are entitled to more educational privileges" }, "options_cn": { "A": "曾经有巨大的经济困扰", "B": "曾经有更多的工作机会", "C": "不愿意进入制造业工作", "D": "被赋予了更多的教育特权" }, "answer": "B", "explanation": "第五段②③句指出：随着制造业不再是经济引擎，美国经济曾提供给高中毕业生的工作保障大部分已消失，即高中毕业生曾因制造业繁荣而享有比现在更多的工作机会，故 [B] 正确。[A] 推理方向相反；[C] 误读因果；[D] 曲解“想让孩子接受更多教育”。", "related_sentences": [ "2018_text1_s12", "2018_text1_s13" ] },
-        { "id": "2018_text1_q4", "number": 24, "qtype": "detail", "stem": "The headlong push into bachelor's degrees for all ___.", "stem_cn": "慌不择路地将所有人推进学士学位___。", "options": { "A": "helps create a lot of middle-skill jobs", "B": "may narrow the gap in working-class jobs", "C": "is expected to yield a better-trained workforce", "D": "indicates the overvaluing of higher education" }, "options_cn": { "A": "有助于创造出大量中等技能工作", "B": "可能会缩小工人阶级工作的缺口", "C": "有望生成更加训练有素的劳动力", "D": "表明对高等教育重要性的高估" }, "answer": "D", "explanation": "第六段①句指出“向所有人推行学士学位、并暗中贬低其他较低的一切”并非美国经济唯一所需；②③句进一步指出学士学位虽带来更多机会，但美国大部分工作依然是中等技能工作。可见“让所有人读大学”高估了高等教育的重要性，故 [D] 正确。[A]/[C] 由让步转折可知不成立；[B] 填补缺口的是 Koziatek 的学校模式。", "related_sentences": [ "2018_text1_s16", "2018_text1_s18" ] },
-        { "id": "2018_text1_q5", "number": 25, "qtype": "attitude", "stem": "The author's attitude toward Koziatek's school can be described as ___.", "stem_cn": "作者对 Koziatek 的学校的态度可描述为___。", "options": { "A": "supportive", "B": "tolerant", "C": "disappointed", "D": "cautious" }, "options_cn": { "A": "支持的", "B": "容忍的", "C": "失望的", "D": "谨慎的" }, "answer": "A", "explanation": "首段指出 Koziatek 在努力给学生更好的未来；第二、三段介绍其开创性教学并肯定其可行；第四至七段批驳偏见、指出其符合经济与就业所需；末段评价其“无异于叫醒电话”。可见作者非常支持，故 [A] 正确。[B]/[C] 把对传统教育的批评掺入；[D] 断章取义。", "related_sentences": [ "2018_text1_s01", "2018_text1_s22", "2018_text1_s23" ] }
+        {
+          "id": "2018_text1_q1",
+          "number": 21,
+          "qtype": "detail",
+          "stem": "A broken bike chain is mentioned to show students' lack of ___.",
+          "stem_cn": "文中提及断裂的自行车链是为了说明学生缺乏___。",
+          "options": {
+            "A": "practical ability",
+            "B": "academic training",
+            "C": "pioneering spirit",
+            "D": "mechanical memorization"
+          },
+          "options_cn": {
+            "A": "实践能力",
+            "B": "学术培训",
+            "C": "开创精神",
+            "D": "机械记忆"
+          },
+          "answer": "A",
+          "explanation": "第二段①②句指出该高中开创性地将学习视为“不是关乎书本，而是关乎实践”，③句反问“学生应该能说出第13任总统的名字、却面对断裂的自行车链不知所措”。可见提及“自行车链事例”是为了说明学生实际动手能力的欠缺，故 [A] 正确。[B]/[D] 是对当前教育强调内容的概括，并非“学生欠缺的能力”；[C] 把学校的开创精神偷换为学生的开创精神。",
+          "related_sentences": [
+            "2018_text1_s03",
+            "2018_text1_s04"
+          ]
+        },
+        {
+          "id": "2018_text1_q2",
+          "number": 22,
+          "qtype": "detail",
+          "stem": "There exists the prejudice that vocational education is for kids who ___.",
+          "stem_cn": "当前存在一种偏见：职业教育面向的是那些___的孩子。",
+          "options": {
+            "A": "have a stereotyped mind",
+            "B": "have no career motivation",
+            "C": "are not academically successful",
+            "D": "are financially disadvantaged"
+          },
+          "options_cn": {
+            "A": "思维模式化",
+            "B": "没有职业动机",
+            "C": "学业不成功",
+            "D": "经济条件差"
+          },
+          "answer": "C",
+          "explanation": "第四段指出偏见——体力劳动被视为劣等，职业教育面向“无法取得学业成功的孩子”。正确项是对③句 can't make it academically 的改写，故 [C] 正确。[A] 把“学校有模式化认识”改成“学生思维模式化”；[B] 捏造“缺乏职业动机”；[D] 把 inferiority 曲解为经济条件差。",
+          "related_sentences": [
+            "2018_text1_s09",
+            "2018_text1_s10"
+          ]
+        },
+        {
+          "id": "2018_text1_q3",
+          "number": 23,
+          "qtype": "inference",
+          "stem": "We can infer from Paragraph 5 that high school graduates ___.",
+          "stem_cn": "我们可以从第五段推知，高中毕业生___。",
+          "options": {
+            "A": "used to have big financial concerns",
+            "B": "used to have more job opportunities",
+            "C": "are reluctant to work in manufacturing",
+            "D": "are entitled to more educational privileges"
+          },
+          "options_cn": {
+            "A": "曾经有巨大的经济困扰",
+            "B": "曾经有更多的工作机会",
+            "C": "不愿意进入制造业工作",
+            "D": "被赋予了更多的教育特权"
+          },
+          "answer": "B",
+          "explanation": "第五段②③句指出：随着制造业不再是经济引擎，美国经济曾提供给高中毕业生的工作保障大部分已消失，即高中毕业生曾因制造业繁荣而享有比现在更多的工作机会，故 [B] 正确。[A] 推理方向相反；[C] 误读因果；[D] 曲解“想让孩子接受更多教育”。",
+          "related_sentences": [
+            "2018_text1_s12",
+            "2018_text1_s13"
+          ]
+        },
+        {
+          "id": "2018_text1_q4",
+          "number": 24,
+          "qtype": "detail",
+          "stem": "The headlong push into bachelor's degrees for all ___.",
+          "stem_cn": "慌不择路地将所有人推进学士学位___。",
+          "options": {
+            "A": "helps create a lot of middle-skill jobs",
+            "B": "may narrow the gap in working-class jobs",
+            "C": "is expected to yield a better-trained workforce",
+            "D": "indicates the overvaluing of higher education"
+          },
+          "options_cn": {
+            "A": "有助于创造出大量中等技能工作",
+            "B": "可能会缩小工人阶级工作的缺口",
+            "C": "有望生成更加训练有素的劳动力",
+            "D": "表明对高等教育重要性的高估"
+          },
+          "answer": "D",
+          "explanation": "第六段①句指出“向所有人推行学士学位、并暗中贬低其他较低的一切”并非美国经济唯一所需；②③句进一步指出学士学位虽带来更多机会，但美国大部分工作依然是中等技能工作。可见“让所有人读大学”高估了高等教育的重要性，故 [D] 正确。[A]/[C] 由让步转折可知不成立；[B] 填补缺口的是 Koziatek 的学校模式。",
+          "related_sentences": [
+            "2018_text1_s16",
+            "2018_text1_s18"
+          ]
+        },
+        {
+          "id": "2018_text1_q5",
+          "number": 25,
+          "qtype": "attitude",
+          "stem": "The author's attitude toward Koziatek's school can be described as ___.",
+          "stem_cn": "作者对 Koziatek 的学校的态度可描述为___。",
+          "options": {
+            "A": "supportive",
+            "B": "tolerant",
+            "C": "disappointed",
+            "D": "cautious"
+          },
+          "options_cn": {
+            "A": "支持的",
+            "B": "容忍的",
+            "C": "失望的",
+            "D": "谨慎的"
+          },
+          "answer": "A",
+          "explanation": "首段指出 Koziatek 在努力给学生更好的未来；第二、三段介绍其开创性教学并肯定其可行；第四至七段批驳偏见、指出其符合经济与就业所需；末段评价其“无异于叫醒电话”。可见作者非常支持，故 [A] 正确。[B]/[C] 把对传统教育的批评掺入；[D] 断章取义。",
+          "related_sentences": [
+            "2018_text1_s01",
+            "2018_text1_s22",
+            "2018_text1_s23"
+          ]
+        }
       ]
     },
     {
@@ -50,32 +535,479 @@
       "topic": "可再生能源已达临界点：全球大势与美国转变",
       "source": "2018 年考研英语（二）Text 2 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2018_text2_s01", "para": 1, "en": "While fossil fuels - coal, oil, gas - still generate roughly 85 percent of the world's energy supply, it's clearer than ever that the future belongs to renewable sources such as wind and solar.", "cn": "尽管化石燃料——煤炭、石油、天然气——仍约占世界能源总供应量的 85%，但未来属于风能、太阳能等可再生能源这一点要比以往任何时候都更明朗。", "words": [ { "w": "fossil fuels", "meaning": "化石燃料" }, { "w": "energy supply", "meaning": "能源供应" }, { "w": "renewable sources", "meaning": "可再生能源" } ] },
-        { "id": "2018_text2_s02", "para": 1, "en": "The move to renewables is picking up momentum around the world: They now account for more than half of new power sources going on line.", "cn": "向可再生能源转型正在全球范围内升温：目前，可再生能源占据正在使用的新能源的一半以上。", "words": [ { "w": "picking up momentum", "meaning": "势头渐起，升温" }, { "w": "account for", "meaning": "占（比例）" }, { "w": "going on line", "meaning": "投入运行，在使用" } ] },
-        { "id": "2018_text2_s03", "para": 2, "en": "Some growth stems from a commitment by governments and farsighted businesses to fund cleaner energy sources.", "cn": "部分增长源于政府以及有远见的企业对更清洁能源承诺的资金支持。", "words": [ { "w": "stems from", "meaning": "源于，来自" }, { "w": "farsighted", "meaning": "adj. 有远见的" }, { "w": "fund", "meaning": "v. 资助，投资" } ] },
-        { "id": "2018_text2_s04", "para": 2, "en": "But increasingly the story is about the plummeting prices of renewables, especially wind and solar.", "cn": "但越来越多的情况是，故事关乎可再生能源——尤其是风能和太阳能——价格的暴跌。", "words": [ { "w": "plummeting", "meaning": "adj. 直线下降的，暴跌的" }, { "w": "wind and solar", "meaning": "风能与太阳能" } ] },
-        { "id": "2018_text2_s05", "para": 2, "en": "The cost of solar panels has dropped by 80 percent and the cost of wind turbines by close to one-third in the past eight years.", "cn": "过去八年间，太阳能电池板的成本下降了 80%，风力涡轮机的成本下降了近三分之一。", "words": [ { "w": "solar panels", "meaning": "太阳能电池板" }, { "w": "wind turbines", "meaning": "风力涡轮机" }, { "w": "dropped by 80 percent", "meaning": "下降了80%" } ] },
-        { "id": "2018_text2_s06", "para": 3, "en": "In many parts of the world renewable energy is already a principal energy source.", "cn": "在世界很多地区，可再生能源已成为主要能源。", "words": [ { "w": "a principal energy source", "meaning": "主要能源" } ] },
-        { "id": "2018_text2_s07", "para": 3, "en": "In Scotland, for example, wind turbines provide enough electricity to power 95 percent of homes.", "cn": "比如，在苏格兰，风力涡轮机能为 95% 的家庭提供充足的电力。", "words": [ { "w": "provide enough electricity", "meaning": "提供充足的电力" }, { "w": "power", "meaning": "v. 为……供电" } ] },
-        { "id": "2018_text2_s08", "para": 3, "en": "While the rest of the world takes the lead, notably China and Europe, the United States is also seeing a remarkable shift.", "cn": "在其他国家领先之际，尤其是中国和欧洲，美国也迎来了显著的转变。", "words": [ { "w": "takes the lead", "meaning": "领先，处于领导地位" }, { "w": "notably", "meaning": "adv. 尤其是，特别地" }, { "w": "a remarkable shift", "meaning": "显著的转变" } ] },
-        { "id": "2018_text2_s09", "para": 3, "en": "In March, for the first time, wind and solar power accounted for more than 10 percent of the power generated in the US, reported the US Energy Information Administration.", "cn": "据美国能源情报署报道，3 月美国风能、太阳能发电比重首次超过 10%。", "words": [ { "w": "for the first time", "meaning": "首次" }, { "w": "power generated", "meaning": "发电量" } ] },
-        { "id": "2018_text2_s10", "para": 4, "en": "President Trump has underlined fossil fuels - especially coal - as the path to economic growth.", "cn": "特朗普总统强调化石燃料——尤其煤炭——作为经济发展的路径。", "words": [ { "w": "underlined", "meaning": "v. 强调" }, { "w": "the path to economic growth", "meaning": "通向经济增长的道路" } ] },
-        { "id": "2018_text2_s11", "para": 4, "en": "In a recent speech in Iowa, he dismissed wind power as an unreliable energy source.", "cn": "在爱荷华州的最近一次演讲中，他将风能摒弃为不可靠的能源。", "words": [ { "w": "dismissed", "meaning": "v. 否定，不予考虑" }, { "w": "unreliable", "meaning": "adj. 不可靠的" } ] },
-        { "id": "2018_text2_s12", "para": 4, "en": "But that message did not play well with many in Iowa, where wind turbines dot the fields and provide 36 percent of the state's electricity generation - and where tech giants like Microsoft are being attracted by the availability of clean energy to power their data centers.", "cn": "但这个说法在爱荷华州并不怎么被群众买账，该州的风力涡轮机遍布田野并且供应该州 36% 的发电量——微软等技术巨擘也被这里能为其数据中心供电的清洁能源的易获得性吸引。", "words": [ { "w": "did not play well with", "meaning": "不被……接受" }, { "w": "dot the fields", "meaning": "遍布田野" }, { "w": "the availability of clean energy", "meaning": "清洁能源的易获得性" } ] },
-        { "id": "2018_text2_s13", "para": 5, "en": "The question \"what happens when the wind doesn't blow or the sun doesn't shine?\" has provided a quick put-down for skeptics.", "cn": "“如果不刮风、不出太阳，会发生什么？”这一问话为怀疑论者提供了一句快速的贬斥之辞。", "words": [ { "w": "a quick put-down", "meaning": "机智的驳斥（贬损）之语" }, { "w": "skeptics", "meaning": "n. 怀疑论者" } ] },
-        { "id": "2018_text2_s14", "para": 5, "en": "But a boost in the storage capacity of batteries is making their ability to keep power flowing around the clock more likely.", "cn": "但是，电池存储容量的提升正使其昼夜不停地持续供电的能力更有可能实现。", "words": [ { "w": "storage capacity", "meaning": "存储容量" }, { "w": "keep power flowing", "meaning": "保持电力持续流动（供电）" }, { "w": "around the clock", "meaning": "昼夜不停地" } ] },
-        { "id": "2018_text2_s15", "para": 6, "en": "The advance is driven in part by vehicle manufacturers, who are placing big bets on battery-powered electric vehicles.", "cn": "这一进展一定程度上是由汽车制造商推动的，他们在电池驱动的电动汽车上押下重注。", "words": [ { "w": "driven in part by", "meaning": "部分由……推动" }, { "w": "placing big bets on", "meaning": "在……上下大赌注" }, { "w": "battery-powered electric vehicles", "meaning": "电池驱动的电动汽车" } ] },
-        { "id": "2018_text2_s16", "para": 6, "en": "Although electric cars are still a rarity on roads now, this massive investment could change the picture rapidly in coming years.", "cn": "尽管现在道路行驶中电动汽车依然鲜见，但是这笔巨额投资可能会在未来几年迅速改变这一局面。", "words": [ { "w": "a rarity", "meaning": "罕见之物" }, { "w": "massive investment", "meaning": "巨额投资" }, { "w": "change the picture", "meaning": "改变局面" } ] },
-        { "id": "2018_text2_s17", "para": 7, "en": "While there's a long way to go, the trend lines for renewables are spiking.", "cn": "尽管长路漫漫，但是可再生能源的趋势线在快速上扬。", "words": [ { "w": "a long way to go", "meaning": "还有很长的路要走" }, { "w": "trend lines", "meaning": "趋势线" }, { "w": "spiking", "meaning": "v. 激增，快速上扬" } ] },
-        { "id": "2018_text2_s18", "para": 7, "en": "The pace of change in energy sources appears to be speeding up - perhaps just in time to have a meaningful effect in slowing climate change.", "cn": "能源的变化速度似乎在加快——或许正好能够给减缓气候变化带来积极影响。", "words": [ { "w": "The pace of change", "meaning": "变化的速度" }, { "w": "speeding up", "meaning": "加速" }, { "w": "slowing climate change", "meaning": "减缓气候变化" } ] },
-        { "id": "2018_text2_s19", "para": 7, "en": "What Washington does - or doesn't do - to promote alternative energy may mean less and less at a time of a global shift in thought.", "cn": "在全球思想转型之际，无论华盛顿在推动可替代性能源中做什么或不做什么，其影响将愈来愈小。", "words": [ { "w": "promote alternative energy", "meaning": "推动可替代能源" }, { "w": "mean less and less", "meaning": "影响愈来愈小" }, { "w": "a global shift in thought", "meaning": "全球思想的转变" } ] }
+        {
+          "id": "2018_text2_s01",
+          "para": 1,
+          "en": "While fossil fuels - coal, oil, gas - still generate roughly 85 percent of the world's energy supply, it's clearer than ever that the future belongs to renewable sources such as wind and solar.",
+          "cn": "尽管化石燃料——煤炭、石油、天然气——仍约占世界能源总供应量的 85%，但未来属于风能、太阳能等可再生能源这一点要比以往任何时候都更明朗。",
+          "words": [
+            {
+              "w": "fossil fuels",
+              "meaning": "化石燃料"
+            },
+            {
+              "w": "energy supply",
+              "meaning": "能源供应"
+            },
+            {
+              "w": "renewable sources",
+              "meaning": "可再生能源"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s02",
+          "para": 1,
+          "en": "The move to renewables is picking up momentum around the world: They now account for more than half of new power sources going on line.",
+          "cn": "向可再生能源转型正在全球范围内升温：目前，可再生能源占据正在使用的新能源的一半以上。",
+          "words": [
+            {
+              "w": "picking up momentum",
+              "meaning": "势头渐起，升温"
+            },
+            {
+              "w": "account for",
+              "meaning": "占（比例）"
+            },
+            {
+              "w": "going on line",
+              "meaning": "投入运行，在使用"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s03",
+          "para": 2,
+          "en": "Some growth stems from a commitment by governments and farsighted businesses to fund cleaner energy sources.",
+          "cn": "部分增长源于政府以及有远见的企业对更清洁能源承诺的资金支持。",
+          "words": [
+            {
+              "w": "stems from",
+              "meaning": "源于，来自"
+            },
+            {
+              "w": "farsighted",
+              "meaning": "adj. 有远见的"
+            },
+            {
+              "w": "fund",
+              "meaning": "v. 资助，投资"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s04",
+          "para": 2,
+          "en": "But increasingly the story is about the plummeting prices of renewables, especially wind and solar.",
+          "cn": "但越来越多的情况是，故事关乎可再生能源——尤其是风能和太阳能——价格的暴跌。",
+          "words": [
+            {
+              "w": "plummeting",
+              "meaning": "adj. 直线下降的，暴跌的"
+            },
+            {
+              "w": "wind and solar",
+              "meaning": "风能与太阳能"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s05",
+          "para": 2,
+          "en": "The cost of solar panels has dropped by 80 percent and the cost of wind turbines by close to one-third in the past eight years.",
+          "cn": "过去八年间，太阳能电池板的成本下降了 80%，风力涡轮机的成本下降了近三分之一。",
+          "words": [
+            {
+              "w": "solar panels",
+              "meaning": "太阳能电池板"
+            },
+            {
+              "w": "wind turbines",
+              "meaning": "风力涡轮机"
+            },
+            {
+              "w": "dropped by 80 percent",
+              "meaning": "下降了80%"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s06",
+          "para": 3,
+          "en": "In many parts of the world renewable energy is already a principal energy source.",
+          "cn": "在世界很多地区，可再生能源已成为主要能源。",
+          "words": [
+            {
+              "w": "a principal energy source",
+              "meaning": "主要能源"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s07",
+          "para": 3,
+          "en": "In Scotland, for example, wind turbines provide enough electricity to power 95 percent of homes.",
+          "cn": "比如，在苏格兰，风力涡轮机能为 95% 的家庭提供充足的电力。",
+          "words": [
+            {
+              "w": "provide enough electricity",
+              "meaning": "提供充足的电力"
+            },
+            {
+              "w": "power",
+              "meaning": "v. 为……供电"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s08",
+          "para": 3,
+          "en": "While the rest of the world takes the lead, notably China and Europe, the United States is also seeing a remarkable shift.",
+          "cn": "在其他国家领先之际，尤其是中国和欧洲，美国也迎来了显著的转变。",
+          "words": [
+            {
+              "w": "takes the lead",
+              "meaning": "领先，处于领导地位"
+            },
+            {
+              "w": "notably",
+              "meaning": "adv. 尤其是，特别地"
+            },
+            {
+              "w": "a remarkable shift",
+              "meaning": "显著的转变"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s09",
+          "para": 3,
+          "en": "In March, for the first time, wind and solar power accounted for more than 10 percent of the power generated in the US, reported the US Energy Information Administration.",
+          "cn": "据美国能源情报署报道，3 月美国风能、太阳能发电比重首次超过 10%。",
+          "words": [
+            {
+              "w": "for the first time",
+              "meaning": "首次"
+            },
+            {
+              "w": "power generated",
+              "meaning": "发电量"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s10",
+          "para": 4,
+          "en": "President Trump has underlined fossil fuels - especially coal - as the path to economic growth.",
+          "cn": "特朗普总统强调化石燃料——尤其煤炭——作为经济发展的路径。",
+          "words": [
+            {
+              "w": "underlined",
+              "meaning": "v. 强调"
+            },
+            {
+              "w": "the path to economic growth",
+              "meaning": "通向经济增长的道路"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s11",
+          "para": 4,
+          "en": "In a recent speech in Iowa, he dismissed wind power as an unreliable energy source.",
+          "cn": "在爱荷华州的最近一次演讲中，他将风能摒弃为不可靠的能源。",
+          "words": [
+            {
+              "w": "dismissed",
+              "meaning": "v. 否定，不予考虑"
+            },
+            {
+              "w": "unreliable",
+              "meaning": "adj. 不可靠的"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s12",
+          "para": 4,
+          "en": "But that message did not play well with many in Iowa, where wind turbines dot the fields and provide 36 percent of the state's electricity generation - and where tech giants like Microsoft are being attracted by the availability of clean energy to power their data centers.",
+          "cn": "但这个说法在爱荷华州并不怎么被群众买账，该州的风力涡轮机遍布田野并且供应该州 36% 的发电量——微软等技术巨擘也被这里能为其数据中心供电的清洁能源的易获得性吸引。",
+          "words": [
+            {
+              "w": "did not play well with",
+              "meaning": "不被……接受"
+            },
+            {
+              "w": "dot the fields",
+              "meaning": "遍布田野"
+            },
+            {
+              "w": "the availability of clean energy",
+              "meaning": "清洁能源的易获得性"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s13",
+          "para": 5,
+          "en": "The question \"what happens when the wind doesn't blow or the sun doesn't shine?\" has provided a quick put-down for skeptics.",
+          "cn": "“如果不刮风、不出太阳，会发生什么？”这一问话为怀疑论者提供了一句快速的贬斥之辞。",
+          "words": [
+            {
+              "w": "a quick put-down",
+              "meaning": "机智的驳斥（贬损）之语"
+            },
+            {
+              "w": "skeptics",
+              "meaning": "n. 怀疑论者"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s14",
+          "para": 5,
+          "en": "But a boost in the storage capacity of batteries is making their ability to keep power flowing around the clock more likely.",
+          "cn": "但是，电池存储容量的提升正使其昼夜不停地持续供电的能力更有可能实现。",
+          "words": [
+            {
+              "w": "storage capacity",
+              "meaning": "存储容量"
+            },
+            {
+              "w": "keep power flowing",
+              "meaning": "保持电力持续流动（供电）"
+            },
+            {
+              "w": "around the clock",
+              "meaning": "昼夜不停地"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s15",
+          "para": 6,
+          "en": "The advance is driven in part by vehicle manufacturers, who are placing big bets on battery-powered electric vehicles.",
+          "cn": "这一进展一定程度上是由汽车制造商推动的，他们在电池驱动的电动汽车上押下重注。",
+          "words": [
+            {
+              "w": "driven in part by",
+              "meaning": "部分由……推动"
+            },
+            {
+              "w": "placing big bets on",
+              "meaning": "在……上下大赌注"
+            },
+            {
+              "w": "battery-powered electric vehicles",
+              "meaning": "电池驱动的电动汽车"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s16",
+          "para": 6,
+          "en": "Although electric cars are still a rarity on roads now, this massive investment could change the picture rapidly in coming years.",
+          "cn": "尽管现在道路行驶中电动汽车依然鲜见，但是这笔巨额投资可能会在未来几年迅速改变这一局面。",
+          "words": [
+            {
+              "w": "a rarity",
+              "meaning": "罕见之物"
+            },
+            {
+              "w": "massive investment",
+              "meaning": "巨额投资"
+            },
+            {
+              "w": "change the picture",
+              "meaning": "改变局面"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s17",
+          "para": 7,
+          "en": "While there's a long way to go, the trend lines for renewables are spiking.",
+          "cn": "尽管长路漫漫，但是可再生能源的趋势线在快速上扬。",
+          "words": [
+            {
+              "w": "a long way to go",
+              "meaning": "还有很长的路要走"
+            },
+            {
+              "w": "trend lines",
+              "meaning": "趋势线"
+            },
+            {
+              "w": "spiking",
+              "meaning": "v. 激增，快速上扬"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s18",
+          "para": 7,
+          "en": "The pace of change in energy sources appears to be speeding up - perhaps just in time to have a meaningful effect in slowing climate change.",
+          "cn": "能源的变化速度似乎在加快——或许正好能够给减缓气候变化带来积极影响。",
+          "words": [
+            {
+              "w": "The pace of change",
+              "meaning": "变化的速度"
+            },
+            {
+              "w": "speeding up",
+              "meaning": "加速"
+            },
+            {
+              "w": "slowing climate change",
+              "meaning": "减缓气候变化"
+            }
+          ]
+        },
+        {
+          "id": "2018_text2_s19",
+          "para": 7,
+          "en": "What Washington does - or doesn't do - to promote alternative energy may mean less and less at a time of a global shift in thought.",
+          "cn": "在全球思想转型之际，无论华盛顿在推动可替代性能源中做什么或不做什么，其影响将愈来愈小。",
+          "words": [
+            {
+              "w": "promote alternative energy",
+              "meaning": "推动可替代能源"
+            },
+            {
+              "w": "mean less and less",
+              "meaning": "影响愈来愈小"
+            },
+            {
+              "w": "a global shift in thought",
+              "meaning": "全球思想的转变"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2018_text2_q1", "number": 26, "qtype": "vocabulary", "stem": "The word \"plummeting\" (Line 3, Para. 2) is closest in meaning to ___.", "stem_cn": "plummeting 一词（第二段第三行）词义最接近___。", "options": { "A": "stabilizing", "B": "changing", "C": "falling", "D": "rising" }, "options_cn": { "A": "稳定的", "B": "变化的", "C": "下降的", "D": "上升的" }, "answer": "C", "explanation": "词义题。②句借 But 转承①句“资金支持只是部分原因”，指出更主要原因是可再生能源价格的 plummeting；③句以“太阳能电板、风机成本分别下降80%、近三分之一”例证，可知 plummeting 意为“下降的”，故 [C] 正确。[A] 由“获得资金支持”捏造；[B] 含“时升时降”与③句相悖；[D] 由 growth 望文生义。", "related_sentences": [ "2018_text2_s04", "2018_text2_s05" ] },
-        { "id": "2018_text2_q2", "number": 27, "qtype": "detail", "stem": "According to Paragraph 3, the use of renewable energy in America ___.", "stem_cn": "根据第三段，美国可再生能源的应用___。", "options": { "A": "is progressing notably", "B": "is as extensive as in Europe", "C": "faces many challenges", "D": "has proved to be impractical" }, "options_cn": { "A": "正在显著进步", "B": "与欧洲一样广泛", "C": "面临诸多挑战", "D": "已被证明不切实际" }, "answer": "A", "explanation": "第三段③句指出在其他国家（尤其中国、欧洲）领先之际，美国也迎来显著转变；④句解释3月美国风能、太阳能发电占比首次超过10%。可见美国可再生能源应用正显著进步，故 [A] 正确。[B] 由 also 捏造；[C]/[D] 由第四段特朗普态度捏造，并非本段所考。", "related_sentences": [ "2018_text2_s08", "2018_text2_s09" ] },
-        { "id": "2018_text2_q3", "number": 28, "qtype": "detail", "stem": "It can be learned that in Iowa, ___.", "stem_cn": "可以推断在爱荷华州，___。", "options": { "A": "wind is a widely used energy source", "B": "wind energy has replaced fossil fuels", "C": "tech giants are investing in clean energy", "D": "there is a shortage of clean energy supply" }, "options_cn": { "A": "风能是被广泛应用的能源", "B": "风能已取代化石燃料", "C": "科技巨头正在投资清洁能源", "D": "清洁能源存在供应短缺" }, "answer": "A", "explanation": "第四段③句指出特朗普的说法在爱荷华州不被买账，该州风力涡轮机遍布田野且供应该州36%的发电量。可见风能在该州被广泛应用，故 [A] 正确。[B] 把“遍布田野”夸大为“取代化石燃料”；[C] 把“被清洁能源吸引前来建数据中心”曲解为“投资清洁能源”；[D] 与文意相悖。", "related_sentences": [ "2018_text2_s12" ] },
-        { "id": "2018_text2_q4", "number": 29, "qtype": "detail", "stem": "Which of the following is true about clean energy according to Paragraphs 5&6?", "stem_cn": "根据第五、六段，以下关于清洁能源的说法哪项正确？", "options": { "A": "Its application has boosted battery storage.", "B": "It is commonly used in car manufacturing.", "C": "Its continuous supply is becoming a reality.", "D": "Its sustainable exploitation will remain difficult." }, "options_cn": { "A": "它的应用提高了电池的存储容量。", "B": "它通常用于汽车制造业中。", "C": "它的持续供应正在成为现实。", "D": "它的可持续开发仍然困难重重。" }, "answer": "C", "explanation": "第五段②句指出“电池存储容量的提升使得连续不断供电变得更为可能”，意即可再生能源有望实现持续供应，故 [C] 正确。[A] 因果颠倒；[B] 把“汽车制造商投资推动电池技术”曲解为“清洁能源用于汽车制造”；[D] 由怀疑论者论调捏造，与作者本意相反。", "related_sentences": [ "2018_text2_s14" ] },
-        { "id": "2018_text2_q5", "number": 30, "qtype": "inference", "stem": "It can be inferred from the last paragraph that renewable energy ___.", "stem_cn": "由末段可推断出，可再生能源___。", "options": { "A": "will bring the US closer to other countries", "B": "will accelerate global environmental change", "C": "is not really encouraged by the US government", "D": "is not competitive enough with regard to its cost" }, "options_cn": { "A": "将使美国更接近于其他国家", "B": "将加速全球环境变化", "C": "并未真正获得美国政府鼓励", "D": "在成本上没有足够的竞争力" }, "answer": "C", "explanation": "文末句“在全球思想转型之际，无论华盛顿做什么或不做什么，其影响将愈来愈小”暗藏之意为：不管美国政府鼓励与否，可再生能源全球势头都不可挡——言外之意即美国政府并未真正鼓励可再生能源，再结合第四段特朗普态度，故 [C] 正确。[A] 与“差距愈来愈大”相悖；[B] 与②句 slow 相悖；[D] 与“趋势上扬”相悖。", "related_sentences": [ "2018_text2_s10", "2018_text2_s19" ] }
+        {
+          "id": "2018_text2_q1",
+          "number": 26,
+          "qtype": "vocabulary",
+          "stem": "The word \"plummeting\" (Line 3, Para. 2) is closest in meaning to ___.",
+          "stem_cn": "plummeting 一词（第二段第三行）词义最接近___。",
+          "options": {
+            "A": "stabilizing",
+            "B": "changing",
+            "C": "falling",
+            "D": "rising"
+          },
+          "options_cn": {
+            "A": "稳定的",
+            "B": "变化的",
+            "C": "下降的",
+            "D": "上升的"
+          },
+          "answer": "C",
+          "explanation": "词义题。②句借 But 转承①句“资金支持只是部分原因”，指出更主要原因是可再生能源价格的 plummeting；③句以“太阳能电板、风机成本分别下降80%、近三分之一”例证，可知 plummeting 意为“下降的”，故 [C] 正确。[A] 由“获得资金支持”捏造；[B] 含“时升时降”与③句相悖；[D] 由 growth 望文生义。",
+          "related_sentences": [
+            "2018_text2_s04",
+            "2018_text2_s05"
+          ]
+        },
+        {
+          "id": "2018_text2_q2",
+          "number": 27,
+          "qtype": "detail",
+          "stem": "According to Paragraph 3, the use of renewable energy in America ___.",
+          "stem_cn": "根据第三段，美国可再生能源的应用___。",
+          "options": {
+            "A": "is progressing notably",
+            "B": "is as extensive as in Europe",
+            "C": "faces many challenges",
+            "D": "has proved to be impractical"
+          },
+          "options_cn": {
+            "A": "正在显著进步",
+            "B": "与欧洲一样广泛",
+            "C": "面临诸多挑战",
+            "D": "已被证明不切实际"
+          },
+          "answer": "A",
+          "explanation": "第三段③句指出在其他国家（尤其中国、欧洲）领先之际，美国也迎来显著转变；④句解释3月美国风能、太阳能发电占比首次超过10%。可见美国可再生能源应用正显著进步，故 [A] 正确。[B] 由 also 捏造；[C]/[D] 由第四段特朗普态度捏造，并非本段所考。",
+          "related_sentences": [
+            "2018_text2_s08",
+            "2018_text2_s09"
+          ]
+        },
+        {
+          "id": "2018_text2_q3",
+          "number": 28,
+          "qtype": "detail",
+          "stem": "It can be learned that in Iowa, ___.",
+          "stem_cn": "可以推断在爱荷华州，___。",
+          "options": {
+            "A": "wind is a widely used energy source",
+            "B": "wind energy has replaced fossil fuels",
+            "C": "tech giants are investing in clean energy",
+            "D": "there is a shortage of clean energy supply"
+          },
+          "options_cn": {
+            "A": "风能是被广泛应用的能源",
+            "B": "风能已取代化石燃料",
+            "C": "科技巨头正在投资清洁能源",
+            "D": "清洁能源存在供应短缺"
+          },
+          "answer": "A",
+          "explanation": "第四段③句指出特朗普的说法在爱荷华州不被买账，该州风力涡轮机遍布田野且供应该州36%的发电量。可见风能在该州被广泛应用，故 [A] 正确。[B] 把“遍布田野”夸大为“取代化石燃料”；[C] 把“被清洁能源吸引前来建数据中心”曲解为“投资清洁能源”；[D] 与文意相悖。",
+          "related_sentences": [
+            "2018_text2_s12"
+          ]
+        },
+        {
+          "id": "2018_text2_q4",
+          "number": 29,
+          "qtype": "detail",
+          "stem": "Which of the following is true about clean energy according to Paragraphs 5&6?",
+          "stem_cn": "根据第五、六段，以下关于清洁能源的说法哪项正确？",
+          "options": {
+            "A": "Its application has boosted battery storage.",
+            "B": "It is commonly used in car manufacturing.",
+            "C": "Its continuous supply is becoming a reality.",
+            "D": "Its sustainable exploitation will remain difficult."
+          },
+          "options_cn": {
+            "A": "它的应用提高了电池的存储容量。",
+            "B": "它通常用于汽车制造业中。",
+            "C": "它的持续供应正在成为现实。",
+            "D": "它的可持续开发仍然困难重重。"
+          },
+          "answer": "C",
+          "explanation": "第五段②句指出“电池存储容量的提升使得连续不断供电变得更为可能”，意即可再生能源有望实现持续供应，故 [C] 正确。[A] 因果颠倒；[B] 把“汽车制造商投资推动电池技术”曲解为“清洁能源用于汽车制造”；[D] 由怀疑论者论调捏造，与作者本意相反。",
+          "related_sentences": [
+            "2018_text2_s14"
+          ]
+        },
+        {
+          "id": "2018_text2_q5",
+          "number": 30,
+          "qtype": "inference",
+          "stem": "It can be inferred from the last paragraph that renewable energy ___.",
+          "stem_cn": "由末段可推断出，可再生能源___。",
+          "options": {
+            "A": "will bring the US closer to other countries",
+            "B": "will accelerate global environmental change",
+            "C": "is not really encouraged by the US government",
+            "D": "is not competitive enough with regard to its cost"
+          },
+          "options_cn": {
+            "A": "将使美国更接近于其他国家",
+            "B": "将加速全球环境变化",
+            "C": "并未真正获得美国政府鼓励",
+            "D": "在成本上没有足够的竞争力"
+          },
+          "answer": "C",
+          "explanation": "文末句“在全球思想转型之际，无论华盛顿做什么或不做什么，其影响将愈来愈小”暗藏之意为：不管美国政府鼓励与否，可再生能源全球势头都不可挡——言外之意即美国政府并未真正鼓励可再生能源，再结合第四段特朗普态度，故 [C] 正确。[A] 与“差距愈来愈大”相悖；[B] 与②句 slow 相悖；[D] 与“趋势上扬”相悖。",
+          "related_sentences": [
+            "2018_text2_s10",
+            "2018_text2_s19"
+          ]
+        }
       ]
     },
     {
@@ -85,31 +1017,453 @@
       "topic": "数字巨头收割用户数据：竞争法为何失灵",
       "source": "2018 年考研英语（二）Text 3 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2018_text3_s01", "para": 1, "en": "The power and ambition of the giants of the digital economy is astonishing - Amazon has just announced the purchase of the upmarket grocery chain Whole Foods for $13.5bn, but two years ago Facebook paid even more than that to acquire the WhatsApp messaging service, which doesn't have any physical product at all.", "cn": "数字经济巨头们的实力与野心令人震惊——亚马逊刚刚宣布以 135 亿美元收购高端连锁杂货店全食超市，但两年前 Facebook 收购 WhatsApp 即时通讯服务所支付的费用甚至比这还要高，而后者根本没有任何实体产品。", "words": [ { "w": "the giants of the digital economy", "meaning": "数字经济的巨头" }, { "w": "astonishing", "meaning": "adj. 惊人的，令人难以置信的" }, { "w": "acquire", "meaning": "v. 购得，收购" }, { "w": "physical product", "meaning": "实体产品" } ] },
-        { "id": "2018_text3_s02", "para": 1, "en": "What WhatsApp offered Facebook was an intricate and finely detailed web of its users' friendships and social lives.", "cn": "WhatsApp 提供给 Facebook 的，是一张错综复杂、细致入微的用户友谊与社交生活之网。", "words": [ { "w": "intricate", "meaning": "adj. 错综复杂的" }, { "w": "finely detailed", "meaning": "精细详尽的" }, { "w": "friendships and social lives", "meaning": "友谊与社交生活" } ] },
-        { "id": "2018_text3_s03", "para": 2, "en": "Facebook promised the European commission then that it would not link phone numbers to Facebook identities, but it broke the promise almost as soon as the deal went through.", "cn": "Facebook 当时向欧委会承诺不会把电话号码与 Facebook 身份关联，但协议刚获准通过，它就背弃了这一承诺。", "words": [ { "w": "the European commission", "meaning": "欧盟委员会" }, { "w": "link phone numbers to Facebook identities", "meaning": "把电话号码与 Facebook 身份关联" }, { "w": "the deal went through", "meaning": "交易获准通过" } ] },
-        { "id": "2018_text3_s04", "para": 2, "en": "Even without knowing what was in the messages, the knowledge of who sent them and to whom was enormously revealing and still could be.", "cn": "即使不了解信息的具体内容，但其发送者以及接收者的（身份）信息在极大程度上也会透露内情，且这种情况仍会继续。", "words": [ { "w": "enormously", "meaning": "adv. 极其，非常" }, { "w": "revealing", "meaning": "adj. 揭示内情的，泄密的" } ] },
-        { "id": "2018_text3_s05", "para": 2, "en": "What political journalist, what party whip, would not want to know the makeup of the WhatsApp groups in which Theresa May's enemies are currently plotting?", "cn": "特蕾莎·梅的政敌正在其中进行密谋的那些 WhatsApp（聊天）群，哪个政治记者、哪个党鞭会不想了解其构成呢？", "words": [ { "w": "party whip", "meaning": "党鞭，党组织秘书" }, { "w": "the makeup", "meaning": "（团队的）组成，构成" }, { "w": "plotting", "meaning": "v. 密谋，策划" } ] },
-        { "id": "2018_text3_s06", "para": 2, "en": "It may be that the value of Whole Foods to Amazon is not so much the 460 shops it owns, but the records of which customers have purchased what.", "cn": "亚马逊之所以看重全食超市，其价值与其说是在于它旗下的 460 间店铺，倒不如说在于其顾客的购买记录。", "words": [ { "w": "not so much", "meaning": "与其说……（倒不如说）" }, { "w": "the records of which customers have purchased what", "meaning": "哪些顾客购买了什么的记录" } ] },
-        { "id": "2018_text3_s07", "para": 3, "en": "Competition law appears to be the only way to address these imbalances of power.", "cn": "竞争法似乎是解决这些权力失衡问题的唯一办法。", "words": [ { "w": "Competition law", "meaning": "竞争法" }, { "w": "address", "meaning": "v. 解决，处理（问题）" }, { "w": "imbalances of power", "meaning": "权力的失衡" } ] },
-        { "id": "2018_text3_s08", "para": 3, "en": "But it is clumsy.", "cn": "但它却笨拙不堪。", "words": [ { "w": "clumsy", "meaning": "adj. 笨拙的，使用不便的" } ] },
-        { "id": "2018_text3_s09", "para": 3, "en": "For one thing, it is very slow compared to the pace of change within the digital economy.", "cn": "一方面，相较于数字经济中革新的步伐，它太慢了。", "words": [ { "w": "For one thing", "meaning": "一方面，首先" }, { "w": "the pace of change", "meaning": "变化的步伐" } ] },
-        { "id": "2018_text3_s10", "para": 3, "en": "By the time a problem has been addressed and remedied it may have vanished in the marketplace, to be replaced by new abuses of power.", "cn": "某个问题待其得到解决和补救时，这个问题可能已经在市场中蒸发不见了，取而代之的是新的权力滥用。", "words": [ { "w": "remedied", "meaning": "v. 纠正，补救" }, { "w": "vanished", "meaning": "v. 消失" }, { "w": "abuses of power", "meaning": "权力的滥用" } ] },
-        { "id": "2018_text3_s11", "para": 3, "en": "But there is a deeper conceptual problem, too.", "cn": "但是还存在一个更深层的概念性问题。", "words": [ { "w": "conceptual", "meaning": "adj. 观念上的，概念上的" } ] },
-        { "id": "2018_text3_s12", "para": 3, "en": "Competition law as presently interpreted deals with financial disadvantage to consumers and this is not obvious when the users of these services don't pay for them.", "cn": "当前所阐释的竞争法应对的是消费者的经济损失问题，而当这些服务的用户并不是它们的支付者时，法规就不明确了。", "words": [ { "w": "as presently interpreted", "meaning": "按当前所阐释的" }, { "w": "financial disadvantage", "meaning": "经济损失，经济不利" }, { "w": "don't pay for them", "meaning": "不为它们付费" } ] },
-        { "id": "2018_text3_s13", "para": 3, "en": "The users of their services are not their customers.", "cn": "其（数字巨头）服务的用户不是它们的顾客。", "words": [ { "w": "customers", "meaning": "n. 顾客，客户" } ] },
-        { "id": "2018_text3_s14", "para": 3, "en": "That would be the people who buy advertising from them - and Facebook and Google, the two virtual giants, dominate digital advertising to the disadvantage of all other media and entertainment companies.", "cn": "它们的顾客是那些花钱购买广告的人——而 Facebook 和谷歌这两大虚拟巨头掌控了数字广告，这不利于所有其他的媒体和娱乐公司。", "words": [ { "w": "buy advertising", "meaning": "购买广告" }, { "w": "the two virtual giants", "meaning": "两大实质上的巨头" }, { "w": "to the disadvantage of", "meaning": "不利于" } ] },
-        { "id": "2018_text3_s15", "para": 4, "en": "The product they're selling is data, and we, the users, convert our lives to data for the benefit of the digital giants.", "cn": "它们售卖的产品是数据，而我们这些用户，将我们的生活转化为数据，为数字巨头盈利之用。", "words": [ { "w": "convert our lives to data", "meaning": "把我们的生活转化为数据" }, { "w": "for the benefit of", "meaning": "为了……的利益" } ] },
-        { "id": "2018_text3_s16", "para": 4, "en": "Just as some ants farm the bugs called aphids for the honeydew they produce when they feed, so Google farms us for the data that our digital lives yield.", "cn": "就好像有些蚂蚁会养殖一种名为蚜虫的昆虫，以获取它们进食时分泌出的蜜露，同样地，Google 养殖我们是为了获取我们数字生活所产生的数据。", "words": [ { "w": "farm", "meaning": "v. 养殖，饲养" }, { "w": "aphids", "meaning": "n. 蚜虫" }, { "w": "yield", "meaning": "v. 产生，产出" } ] },
-        { "id": "2018_text3_s17", "para": 4, "en": "Ants keep predatory insects away from where their aphids feed; Gmail keeps the spammers out of our inboxes.", "cn": "蚂蚁防范食肉昆虫靠近其蚜虫进食之处；Gmail 防范垃圾邮件发送者入侵我们的收件箱。", "words": [ { "w": "predatory insects", "meaning": "食肉（捕食性）昆虫" }, { "w": "spammers", "meaning": "n. 垃圾邮件发送者" }, { "w": "inboxes", "meaning": "n. 收件箱" } ] },
-        { "id": "2018_text3_s18", "para": 4, "en": "It doesn't feel like a human or democratic relationship, even if both sides benefit.", "cn": "这可不像一种人类的、或者说民主的关系，尽管双方均能够获益。", "words": [ { "w": "a human or democratic relationship", "meaning": "人类的或民主的关系" }, { "w": "both sides benefit", "meaning": "双方均获益" } ] }
+        {
+          "id": "2018_text3_s01",
+          "para": 1,
+          "en": "The power and ambition of the giants of the digital economy is astonishing - Amazon has just announced the purchase of the upmarket grocery chain Whole Foods for $13.5bn, but two years ago Facebook paid even more than that to acquire the WhatsApp messaging service, which doesn't have any physical product at all.",
+          "cn": "数字经济巨头们的实力与野心令人震惊——亚马逊刚刚宣布以 135 亿美元收购高端连锁杂货店全食超市，但两年前 Facebook 收购 WhatsApp 即时通讯服务所支付的费用甚至比这还要高，而后者根本没有任何实体产品。",
+          "words": [
+            {
+              "w": "the giants of the digital economy",
+              "meaning": "数字经济的巨头"
+            },
+            {
+              "w": "astonishing",
+              "meaning": "adj. 惊人的，令人难以置信的"
+            },
+            {
+              "w": "acquire",
+              "meaning": "v. 购得，收购"
+            },
+            {
+              "w": "physical product",
+              "meaning": "实体产品"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s02",
+          "para": 1,
+          "en": "What WhatsApp offered Facebook was an intricate and finely detailed web of its users' friendships and social lives.",
+          "cn": "WhatsApp 提供给 Facebook 的，是一张错综复杂、细致入微的用户友谊与社交生活之网。",
+          "words": [
+            {
+              "w": "intricate",
+              "meaning": "adj. 错综复杂的"
+            },
+            {
+              "w": "finely detailed",
+              "meaning": "精细详尽的"
+            },
+            {
+              "w": "friendships and social lives",
+              "meaning": "友谊与社交生活"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s03",
+          "para": 2,
+          "en": "Facebook promised the European commission then that it would not link phone numbers to Facebook identities, but it broke the promise almost as soon as the deal went through.",
+          "cn": "Facebook 当时向欧委会承诺不会把电话号码与 Facebook 身份关联，但协议刚获准通过，它就背弃了这一承诺。",
+          "words": [
+            {
+              "w": "the European commission",
+              "meaning": "欧盟委员会"
+            },
+            {
+              "w": "link phone numbers to Facebook identities",
+              "meaning": "把电话号码与 Facebook 身份关联"
+            },
+            {
+              "w": "the deal went through",
+              "meaning": "交易获准通过"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s04",
+          "para": 2,
+          "en": "Even without knowing what was in the messages, the knowledge of who sent them and to whom was enormously revealing and still could be.",
+          "cn": "即使不了解信息的具体内容，但其发送者以及接收者的（身份）信息在极大程度上也会透露内情，且这种情况仍会继续。",
+          "words": [
+            {
+              "w": "enormously",
+              "meaning": "adv. 极其，非常"
+            },
+            {
+              "w": "revealing",
+              "meaning": "adj. 揭示内情的，泄密的"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s05",
+          "para": 2,
+          "en": "What political journalist, what party whip, would not want to know the makeup of the WhatsApp groups in which Theresa May's enemies are currently plotting?",
+          "cn": "特蕾莎·梅的政敌正在其中进行密谋的那些 WhatsApp（聊天）群，哪个政治记者、哪个党鞭会不想了解其构成呢？",
+          "words": [
+            {
+              "w": "party whip",
+              "meaning": "党鞭，党组织秘书"
+            },
+            {
+              "w": "the makeup",
+              "meaning": "（团队的）组成，构成"
+            },
+            {
+              "w": "plotting",
+              "meaning": "v. 密谋，策划"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s06",
+          "para": 2,
+          "en": "It may be that the value of Whole Foods to Amazon is not so much the 460 shops it owns, but the records of which customers have purchased what.",
+          "cn": "亚马逊之所以看重全食超市，其价值与其说是在于它旗下的 460 间店铺，倒不如说在于其顾客的购买记录。",
+          "words": [
+            {
+              "w": "not so much",
+              "meaning": "与其说……（倒不如说）"
+            },
+            {
+              "w": "the records of which customers have purchased what",
+              "meaning": "哪些顾客购买了什么的记录"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s07",
+          "para": 3,
+          "en": "Competition law appears to be the only way to address these imbalances of power.",
+          "cn": "竞争法似乎是解决这些权力失衡问题的唯一办法。",
+          "words": [
+            {
+              "w": "Competition law",
+              "meaning": "竞争法"
+            },
+            {
+              "w": "address",
+              "meaning": "v. 解决，处理（问题）"
+            },
+            {
+              "w": "imbalances of power",
+              "meaning": "权力的失衡"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s08",
+          "para": 3,
+          "en": "But it is clumsy.",
+          "cn": "但它却笨拙不堪。",
+          "words": [
+            {
+              "w": "clumsy",
+              "meaning": "adj. 笨拙的，使用不便的"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s09",
+          "para": 3,
+          "en": "For one thing, it is very slow compared to the pace of change within the digital economy.",
+          "cn": "一方面，相较于数字经济中革新的步伐，它太慢了。",
+          "words": [
+            {
+              "w": "For one thing",
+              "meaning": "一方面，首先"
+            },
+            {
+              "w": "the pace of change",
+              "meaning": "变化的步伐"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s10",
+          "para": 3,
+          "en": "By the time a problem has been addressed and remedied it may have vanished in the marketplace, to be replaced by new abuses of power.",
+          "cn": "某个问题待其得到解决和补救时，这个问题可能已经在市场中蒸发不见了，取而代之的是新的权力滥用。",
+          "words": [
+            {
+              "w": "remedied",
+              "meaning": "v. 纠正，补救"
+            },
+            {
+              "w": "vanished",
+              "meaning": "v. 消失"
+            },
+            {
+              "w": "abuses of power",
+              "meaning": "权力的滥用"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s11",
+          "para": 3,
+          "en": "But there is a deeper conceptual problem, too.",
+          "cn": "但是还存在一个更深层的概念性问题。",
+          "words": [
+            {
+              "w": "conceptual",
+              "meaning": "adj. 观念上的，概念上的"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s12",
+          "para": 3,
+          "en": "Competition law as presently interpreted deals with financial disadvantage to consumers and this is not obvious when the users of these services don't pay for them.",
+          "cn": "当前所阐释的竞争法应对的是消费者的经济损失问题，而当这些服务的用户并不是它们的支付者时，法规就不明确了。",
+          "words": [
+            {
+              "w": "as presently interpreted",
+              "meaning": "按当前所阐释的"
+            },
+            {
+              "w": "financial disadvantage",
+              "meaning": "经济损失，经济不利"
+            },
+            {
+              "w": "don't pay for them",
+              "meaning": "不为它们付费"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s13",
+          "para": 3,
+          "en": "The users of their services are not their customers.",
+          "cn": "其（数字巨头）服务的用户不是它们的顾客。",
+          "words": [
+            {
+              "w": "customers",
+              "meaning": "n. 顾客，客户"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s14",
+          "para": 3,
+          "en": "That would be the people who buy advertising from them - and Facebook and Google, the two virtual giants, dominate digital advertising to the disadvantage of all other media and entertainment companies.",
+          "cn": "它们的顾客是那些花钱购买广告的人——而 Facebook 和谷歌这两大虚拟巨头掌控了数字广告，这不利于所有其他的媒体和娱乐公司。",
+          "words": [
+            {
+              "w": "buy advertising",
+              "meaning": "购买广告"
+            },
+            {
+              "w": "the two virtual giants",
+              "meaning": "两大实质上的巨头"
+            },
+            {
+              "w": "to the disadvantage of",
+              "meaning": "不利于"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s15",
+          "para": 4,
+          "en": "The product they're selling is data, and we, the users, convert our lives to data for the benefit of the digital giants.",
+          "cn": "它们售卖的产品是数据，而我们这些用户，将我们的生活转化为数据，为数字巨头盈利之用。",
+          "words": [
+            {
+              "w": "convert our lives to data",
+              "meaning": "把我们的生活转化为数据"
+            },
+            {
+              "w": "for the benefit of",
+              "meaning": "为了……的利益"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s16",
+          "para": 4,
+          "en": "Just as some ants farm the bugs called aphids for the honeydew they produce when they feed, so Google farms us for the data that our digital lives yield.",
+          "cn": "就好像有些蚂蚁会养殖一种名为蚜虫的昆虫，以获取它们进食时分泌出的蜜露，同样地，Google 养殖我们是为了获取我们数字生活所产生的数据。",
+          "words": [
+            {
+              "w": "farm",
+              "meaning": "v. 养殖，饲养"
+            },
+            {
+              "w": "aphids",
+              "meaning": "n. 蚜虫"
+            },
+            {
+              "w": "yield",
+              "meaning": "v. 产生，产出"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s17",
+          "para": 4,
+          "en": "Ants keep predatory insects away from where their aphids feed; Gmail keeps the spammers out of our inboxes.",
+          "cn": "蚂蚁防范食肉昆虫靠近其蚜虫进食之处；Gmail 防范垃圾邮件发送者入侵我们的收件箱。",
+          "words": [
+            {
+              "w": "predatory insects",
+              "meaning": "食肉（捕食性）昆虫"
+            },
+            {
+              "w": "spammers",
+              "meaning": "n. 垃圾邮件发送者"
+            },
+            {
+              "w": "inboxes",
+              "meaning": "n. 收件箱"
+            }
+          ]
+        },
+        {
+          "id": "2018_text3_s18",
+          "para": 4,
+          "en": "It doesn't feel like a human or democratic relationship, even if both sides benefit.",
+          "cn": "这可不像一种人类的、或者说民主的关系，尽管双方均能够获益。",
+          "words": [
+            {
+              "w": "a human or democratic relationship",
+              "meaning": "人类的或民主的关系"
+            },
+            {
+              "w": "both sides benefit",
+              "meaning": "双方均获益"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2018_text3_q1", "number": 31, "qtype": "detail", "stem": "According to Paragraph 1, Facebook acquired WhatsApp for its ___.", "stem_cn": "根据第一段，Facebook 收购 WhatsApp 是为了后者的___。", "options": { "A": "digital products", "B": "user information", "C": "physical assets", "D": "quality service" }, "options_cn": { "A": "数字产品", "B": "用户信息", "C": "有形资产", "D": "优质服务" }, "answer": "B", "explanation": "首段①句破折号后指出 Facebook 高价收购没有任何实体产品的 WhatsApp，②句暗示原因：WhatsApp 能为其提供一张精细的用户朋友关系和社交生活网，即“用户信息”，故 [B] 正确。[A]/[C] 源于“没有实体产品”但曲解；[D] 把“复杂详尽”与“服务品质”强加关联。", "related_sentences": [ "2018_text3_s01", "2018_text3_s02" ] },
-        { "id": "2018_text3_q2", "number": 32, "qtype": "detail", "stem": "Linking phone numbers to Facebook identities may ___.", "stem_cn": "把电话号码与 Facebook 身份信息关联可能会___。", "options": { "A": "worsen political disputes", "B": "mess up customer records", "C": "pose a risk to Facebook users", "D": "mislead the European commission" }, "options_cn": { "A": "加剧政治争端", "B": "搞乱用户记录", "C": "给 Facebook 用户带来风险", "D": "误导欧盟委员会" }, "answer": "C", "explanation": "第二段②③句指出 Facebook 背弃承诺将电话号码与 Facebook ID 挂钩，其危害是即使不知信息内容，收发者身份信息也会极大程度上泄露内情，用户面临隐私威胁，故 [C] 正确。[A] 政治例子属过度推断；[B] 偷换为“搞乱”；[D] 误导欧委会的是承诺内容而非关联之举。", "related_sentences": [ "2018_text3_s03", "2018_text3_s04" ] },
-        { "id": "2018_text3_q3", "number": 33, "qtype": "detail", "stem": "According to the author, competition law ___.", "stem_cn": "作者认为，竞争法___。", "options": { "A": "should serve the new market powers", "B": "may worsen the economic imbalance", "C": "should not provide just one legal solution", "D": "cannot keep pace with the changing market" }, "options_cn": { "A": "应该服务于新的市场权力", "B": "可能会加剧经济不平衡", "C": "不该只提供一种法律对策", "D": "无法跟上变化的市场的步伐" }, "answer": "D", "explanation": "第三段②句直接指出竞争法笨拙不堪，③句引出原因之一：它相较数字经济变化的速度太慢，故 [D] 正确。[A] 新的市场权力恰是要约束的对象；[B] 用碎片信息干扰，作者未谈宏观经济影响；[C] 由“唯一办法、笨拙”过度推测。", "related_sentences": [ "2018_text3_s08", "2018_text3_s09" ] },
-        { "id": "2018_text3_q4", "number": 34, "qtype": "detail", "stem": "Competition law as presently interpreted can hardly protect Facebook users because ___.", "stem_cn": "当前所阐释的竞争法很难保护 Facebook 用户是因为___。", "options": { "A": "they are not defined as customers", "B": "they are not financially reliable", "C": "the services are generally digital", "D": "the services are paid for by advertisers" }, "options_cn": { "A": "他们没有被定义为消费者", "B": "他们的经济状况不可靠", "C": "Facebook 的服务总体上是数字的", "D": "Facebook 的服务是由广告主买单的" }, "answer": "A", "explanation": "⑤句引出竞争法的概念性问题，⑥⑦句解释：现行法律保护的是不受经济损失的“消费者”，但用户没有为服务付钱、不算消费者，因而难受法律保护——身份定位问题，故 [A] 正确。[B] 把“不付费”篡改为“经济无能力”；[C] 偏离文意；[D] 把“顾客是买广告的人”扭曲为“服务由广告主买单”。", "related_sentences": [ "2018_text3_s12", "2018_text3_s13" ] },
-        { "id": "2018_text3_q5", "number": 35, "qtype": "inference", "stem": "The ants analogy is used to illustrate ___.", "stem_cn": "作者使用蚂蚁的类比来阐明___。", "options": { "A": "a win-win business model between digital giants", "B": "a typical competition pattern among digital giants", "C": "the benefits provided for digital giants' customers", "D": "the relationship between digital giants and their users" }, "options_cn": { "A": "数字巨头间一种双赢的商业模式", "B": "数字巨头间一种典型的竞争模式", "C": "数字巨头的用户享受到的实惠", "D": "数字巨头及其用户之间的关系" }, "answer": "D", "explanation": "末段②③句以“蚂蚁养殖、保护蚜虫以获取蜜露”类比“Google 养殖/保护我们以获取数据”；末句加以讽刺——“这不像人类的或民主的关系，尽管双方均获益”。类比意在揭示科技巨头与用户间的不平等关系，故 [D] 正确。[A]/[B] 只聚焦巨头不涉及用户；[C] 背离全文态度。", "related_sentences": [ "2018_text3_s16", "2018_text3_s18" ] }
+        {
+          "id": "2018_text3_q1",
+          "number": 31,
+          "qtype": "detail",
+          "stem": "According to Paragraph 1, Facebook acquired WhatsApp for its ___.",
+          "stem_cn": "根据第一段，Facebook 收购 WhatsApp 是为了后者的___。",
+          "options": {
+            "A": "digital products",
+            "B": "user information",
+            "C": "physical assets",
+            "D": "quality service"
+          },
+          "options_cn": {
+            "A": "数字产品",
+            "B": "用户信息",
+            "C": "有形资产",
+            "D": "优质服务"
+          },
+          "answer": "B",
+          "explanation": "首段①句破折号后指出 Facebook 高价收购没有任何实体产品的 WhatsApp，②句暗示原因：WhatsApp 能为其提供一张精细的用户朋友关系和社交生活网，即“用户信息”，故 [B] 正确。[A]/[C] 源于“没有实体产品”但曲解；[D] 把“复杂详尽”与“服务品质”强加关联。",
+          "related_sentences": [
+            "2018_text3_s01",
+            "2018_text3_s02"
+          ]
+        },
+        {
+          "id": "2018_text3_q2",
+          "number": 32,
+          "qtype": "detail",
+          "stem": "Linking phone numbers to Facebook identities may ___.",
+          "stem_cn": "把电话号码与 Facebook 身份信息关联可能会___。",
+          "options": {
+            "A": "worsen political disputes",
+            "B": "mess up customer records",
+            "C": "pose a risk to Facebook users",
+            "D": "mislead the European commission"
+          },
+          "options_cn": {
+            "A": "加剧政治争端",
+            "B": "搞乱用户记录",
+            "C": "给 Facebook 用户带来风险",
+            "D": "误导欧盟委员会"
+          },
+          "answer": "C",
+          "explanation": "第二段②③句指出 Facebook 背弃承诺将电话号码与 Facebook ID 挂钩，其危害是即使不知信息内容，收发者身份信息也会极大程度上泄露内情，用户面临隐私威胁，故 [C] 正确。[A] 政治例子属过度推断；[B] 偷换为“搞乱”；[D] 误导欧委会的是承诺内容而非关联之举。",
+          "related_sentences": [
+            "2018_text3_s03",
+            "2018_text3_s04"
+          ]
+        },
+        {
+          "id": "2018_text3_q3",
+          "number": 33,
+          "qtype": "detail",
+          "stem": "According to the author, competition law ___.",
+          "stem_cn": "作者认为，竞争法___。",
+          "options": {
+            "A": "should serve the new market powers",
+            "B": "may worsen the economic imbalance",
+            "C": "should not provide just one legal solution",
+            "D": "cannot keep pace with the changing market"
+          },
+          "options_cn": {
+            "A": "应该服务于新的市场权力",
+            "B": "可能会加剧经济不平衡",
+            "C": "不该只提供一种法律对策",
+            "D": "无法跟上变化的市场的步伐"
+          },
+          "answer": "D",
+          "explanation": "第三段②句直接指出竞争法笨拙不堪，③句引出原因之一：它相较数字经济变化的速度太慢，故 [D] 正确。[A] 新的市场权力恰是要约束的对象；[B] 用碎片信息干扰，作者未谈宏观经济影响；[C] 由“唯一办法、笨拙”过度推测。",
+          "related_sentences": [
+            "2018_text3_s08",
+            "2018_text3_s09"
+          ]
+        },
+        {
+          "id": "2018_text3_q4",
+          "number": 34,
+          "qtype": "detail",
+          "stem": "Competition law as presently interpreted can hardly protect Facebook users because ___.",
+          "stem_cn": "当前所阐释的竞争法很难保护 Facebook 用户是因为___。",
+          "options": {
+            "A": "they are not defined as customers",
+            "B": "they are not financially reliable",
+            "C": "the services are generally digital",
+            "D": "the services are paid for by advertisers"
+          },
+          "options_cn": {
+            "A": "他们没有被定义为消费者",
+            "B": "他们的经济状况不可靠",
+            "C": "Facebook 的服务总体上是数字的",
+            "D": "Facebook 的服务是由广告主买单的"
+          },
+          "answer": "A",
+          "explanation": "⑤句引出竞争法的概念性问题，⑥⑦句解释：现行法律保护的是不受经济损失的“消费者”，但用户没有为服务付钱、不算消费者，因而难受法律保护——身份定位问题，故 [A] 正确。[B] 把“不付费”篡改为“经济无能力”；[C] 偏离文意；[D] 把“顾客是买广告的人”扭曲为“服务由广告主买单”。",
+          "related_sentences": [
+            "2018_text3_s12",
+            "2018_text3_s13"
+          ]
+        },
+        {
+          "id": "2018_text3_q5",
+          "number": 35,
+          "qtype": "inference",
+          "stem": "The ants analogy is used to illustrate ___.",
+          "stem_cn": "作者使用蚂蚁的类比来阐明___。",
+          "options": {
+            "A": "a win-win business model between digital giants",
+            "B": "a typical competition pattern among digital giants",
+            "C": "the benefits provided for digital giants' customers",
+            "D": "the relationship between digital giants and their users"
+          },
+          "options_cn": {
+            "A": "数字巨头间一种双赢的商业模式",
+            "B": "数字巨头间一种典型的竞争模式",
+            "C": "数字巨头的用户享受到的实惠",
+            "D": "数字巨头及其用户之间的关系"
+          },
+          "answer": "D",
+          "explanation": "末段②③句以“蚂蚁养殖、保护蚜虫以获取蜜露”类比“Google 养殖/保护我们以获取数据”；末句加以讽刺——“这不像人类的或民主的关系，尽管双方均获益”。类比意在揭示科技巨头与用户间的不平等关系，故 [D] 正确。[A]/[B] 只聚焦巨头不涉及用户；[C] 背离全文态度。",
+          "related_sentences": [
+            "2018_text3_s16",
+            "2018_text3_s18"
+          ]
+        }
       ]
     },
     {
@@ -119,29 +1473,1903 @@
       "topic": "管理精力而非时间：深度工作与适时偷懒",
       "source": "2018 年考研英语（二）Text 4 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2018_text4_s01", "para": 1, "en": "To combat the trap of putting a premium on being busy, Cal Newport, author of Deep Work: Rules for Focused Success in a Distracted World, recommends building a habit of \"deep work\" - the ability to focus without distraction.", "cn": "为避免陷入“高度重视忙碌”的陷阱，《深度工作：在一个让人分心的世界，集中精力取得成功的法则》一书作者卡尔·纽坡特，建议打造“深度工作”的习惯——即集中注意力、不分心的能力。", "words": [ { "w": "combat the trap", "meaning": "对抗（避免）陷阱" }, { "w": "putting a premium on being busy", "meaning": "高度重视忙碌" }, { "w": "focus without distraction", "meaning": "专注而不分心" } ] },
-        { "id": "2018_text4_s02", "para": 2, "en": "There are a number of approaches to mastering the art of deep work - be it lengthy retreats dedicated to a specific task; developing a daily ritual; or taking a \"journalistic\" approach to seizing moments of deep work when you can throughout the day.", "cn": "掌握深度工作艺术的方法有很多——或是长久隐退、专注于某一特定工作；或是形成一种日常惯例；或是采取“新闻工作者”的方法，抓住一天中能抓住的深度工作时刻。", "words": [ { "w": "mastering the art of deep work", "meaning": "掌握深度工作的艺术" }, { "w": "lengthy retreats", "meaning": "长久的隐退（静修）" }, { "w": "a daily ritual", "meaning": "日常惯例" }, { "w": "seizing moments of deep work", "meaning": "抓住深度工作的时刻" } ] },
-        { "id": "2018_text4_s03", "para": 2, "en": "Whichever approach, the key is to determine your length of focus time and stick to it.", "cn": "无论哪种方式，关键都是：确定你的专注时长并坚持下去。", "words": [ { "w": "the key is to", "meaning": "关键在于" }, { "w": "length of focus time", "meaning": "专注时长" }, { "w": "stick to it", "meaning": "坚持下去" } ] },
-        { "id": "2018_text4_s04", "para": 3, "en": "Newport also recommends \"deep scheduling\" to combat constant interruptions and get more done in less time.", "cn": "纽坡特还建议“深度规划”以对抗持续干扰并在更短的时间内完成更多的工作。", "words": [ { "w": "deep scheduling", "meaning": "深度规划" }, { "w": "constant interruptions", "meaning": "持续的干扰" }, { "w": "get more done in less time", "meaning": "在更短时间内完成更多工作" } ] },
-        { "id": "2018_text4_s05", "para": 3, "en": "\"At any given point, I should have deep work scheduled for roughly the next month.", "cn": "“在任何特定时刻，我都会为接下来的大约一个月制定深度工作计划。", "words": [ { "w": "At any given point", "meaning": "在任何特定时刻" }, { "w": "roughly the next month", "meaning": "大约接下来的一个月" } ] },
-        { "id": "2018_text4_s06", "para": 3, "en": "Once on the calendar, I protect this time like I would a doctor's appointment or important meeting\", he writes.", "cn": "一旦落于日程表，我就会一如守护就诊预约或重要会议安排一样守护这一时间安排”，他写道。", "words": [ { "w": "on the calendar", "meaning": "列入日程表" }, { "w": "protect this time", "meaning": "守护这段时间" }, { "w": "a doctor's appointment", "meaning": "就诊预约" } ] },
-        { "id": "2018_text4_s07", "para": 4, "en": "Another approach to getting more done in less time is to rethink how you prioritise your day - in particular how we craft our to-do lists.", "cn": "另一项实现事半功倍之策就是反思“你是怎样安排你的一天的”——特别是，我们是怎样精心制作任务清单的。", "words": [ { "w": "prioritise your day", "meaning": "安排一天的优先次序" }, { "w": "in particular", "meaning": "特别，尤其" }, { "w": "craft our to-do lists", "meaning": "精心制作任务清单" } ] },
-        { "id": "2018_text4_s08", "para": 4, "en": "Tim Harford, author of Messy: The Power of Disorder to Transform Our Lives, points to a study in the early 1980s that divided undergraduates into two groups: some were advised to set out monthly goals and study activities; others were told to plan activities and goals in much more detail, day by day.", "cn": "提姆·哈福德，《混乱：改变我们生活的无序力量》的作者，提到了 20 世纪 80 年代初的一项研究：该研究将本科生分为两组，一些被建议设定每月的目标及学习活动；另一些人被要求逐日地、更详细地计划活动及目标。", "words": [ { "w": "points to a study", "meaning": "提到一项研究" }, { "w": "divided undergraduates into two groups", "meaning": "把本科生分为两组" }, { "w": "set out monthly goals", "meaning": "设定每月目标" }, { "w": "day by day", "meaning": "逐日地" } ] },
-        { "id": "2018_text4_s09", "para": 5, "en": "While the researchers assumed that the well-structured daily plans would be most effective when it came to the execution of tasks, they were wrong: the detailed daily plans demotivated students.", "cn": "虽然研究者假设井井有条的每日计划对于任务执行会非常有效，但是他们错了：详尽的每日计划使学生受挫。", "words": [ { "w": "well-structured daily plans", "meaning": "井井有条的每日计划" }, { "w": "the execution of tasks", "meaning": "任务的执行" }, { "w": "demotivated", "meaning": "v. 使失去动力，使消极" } ] },
-        { "id": "2018_text4_s10", "para": 5, "en": "Harford argues that inevitable distractions often render the daily to-do list ineffective, while leaving room for improvisation in such a list can reap the best results.", "cn": "哈福德提出，无可避免的干扰通常会使每日任务清单失效，而在任务清单中留出临时应变的空间则能收获最佳结果。", "words": [ { "w": "inevitable distractions", "meaning": "无可避免的干扰" }, { "w": "render the daily to-do list ineffective", "meaning": "使每日任务清单失效" }, { "w": "leaving room for improvisation", "meaning": "留出临时应变的空间" }, { "w": "reap the best results", "meaning": "收获最佳结果" } ] },
-        { "id": "2018_text4_s11", "para": 6, "en": "In order to make the most of our focus and energy, we also need to embrace downtime, or as Newport suggests, \"be lazy\".", "cn": "若要充分利用自身专注力以及精力，我们还需要“拥抱闲暇时间”，或如纽坡特所建议的，“偷偷懒”。", "words": [ { "w": "make the most of", "meaning": "充分利用" }, { "w": "embrace downtime", "meaning": "拥抱闲暇（休息）时间" }, { "w": "be lazy", "meaning": "偷个懒" } ] },
-        { "id": "2018_text4_s12", "para": 7, "en": "\"Idleness is not just a vacation, an indulgence or a vice; it is as indispensable to the brain as vitamin D is to the body ... [idleness] is, paradoxically, necessary to getting any work done,\" he argues.", "cn": "“闲散不仅仅是一次假期、一种放纵或一个恶习；它之于大脑就像维他命 D 之于身体一样不可或缺……矛盾的是，它对于完成任何工作都不可或缺”，他提出。", "words": [ { "w": "Idleness", "meaning": "n. 闲散，无所事事" }, { "w": "an indulgence", "meaning": "一种放纵" }, { "w": "indispensable", "meaning": "adj. 不可或缺的" }, { "w": "necessary to getting any work done", "meaning": "对完成任何工作都必要" } ] },
-        { "id": "2018_text4_s13", "para": 8, "en": "Srini Pillay, an assistant professor of psychiatry at Harvard Medical School, believes this counterintuitive link between downtime and productivity may be due to the way our brains operate.", "cn": "斯利尼·皮莱，哈佛医学院的一位精神病学助理教授，认为“闲暇时光”与“生产效率”之间有违直觉的联系可能源于我们大脑的运作方式。", "words": [ { "w": "psychiatry", "meaning": "n. 精神病学" }, { "w": "counterintuitive link", "meaning": "有违直觉的联系" }, { "w": "the way our brains operate", "meaning": "我们大脑的运作方式" } ] },
-        { "id": "2018_text4_s14", "para": 8, "en": "When our brains switch between being focused and unfocused on a task, they tend to be more efficient.", "cn": "当我们的大脑就某项工作在“集中注意力”与“分散注意力”之间切换时，它们往往更高效。", "words": [ { "w": "switch between being focused and unfocused", "meaning": "在专注与非专注之间切换" }, { "w": "tend to be more efficient", "meaning": "往往更高效" } ] },
-        { "id": "2018_text4_s15", "para": 9, "en": "\"What people don't realise is that in order to complete these tasks they need to use both the focus and unfocus circuits in their brain,\" says Pillay.", "cn": "“人们没有意识到的是，要完成这些工作，他们需要使用‘专注’和‘分心’两种大脑回路”，皮莱说道。", "words": [ { "w": "What people don't realise", "meaning": "人们没有意识到的是" }, { "w": "the focus and unfocus circuits", "meaning": "专注与分心两种回路" } ] }
+        {
+          "id": "2018_text4_s01",
+          "para": 1,
+          "en": "To combat the trap of putting a premium on being busy, Cal Newport, author of Deep Work: Rules for Focused Success in a Distracted World, recommends building a habit of \"deep work\" - the ability to focus without distraction.",
+          "cn": "为避免陷入“高度重视忙碌”的陷阱，《深度工作：在一个让人分心的世界，集中精力取得成功的法则》一书作者卡尔·纽坡特，建议打造“深度工作”的习惯——即集中注意力、不分心的能力。",
+          "words": [
+            {
+              "w": "combat the trap",
+              "meaning": "对抗（避免）陷阱"
+            },
+            {
+              "w": "putting a premium on being busy",
+              "meaning": "高度重视忙碌"
+            },
+            {
+              "w": "focus without distraction",
+              "meaning": "专注而不分心"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s02",
+          "para": 2,
+          "en": "There are a number of approaches to mastering the art of deep work - be it lengthy retreats dedicated to a specific task; developing a daily ritual; or taking a \"journalistic\" approach to seizing moments of deep work when you can throughout the day.",
+          "cn": "掌握深度工作艺术的方法有很多——或是长久隐退、专注于某一特定工作；或是形成一种日常惯例；或是采取“新闻工作者”的方法，抓住一天中能抓住的深度工作时刻。",
+          "words": [
+            {
+              "w": "mastering the art of deep work",
+              "meaning": "掌握深度工作的艺术"
+            },
+            {
+              "w": "lengthy retreats",
+              "meaning": "长久的隐退（静修）"
+            },
+            {
+              "w": "a daily ritual",
+              "meaning": "日常惯例"
+            },
+            {
+              "w": "seizing moments of deep work",
+              "meaning": "抓住深度工作的时刻"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s03",
+          "para": 2,
+          "en": "Whichever approach, the key is to determine your length of focus time and stick to it.",
+          "cn": "无论哪种方式，关键都是：确定你的专注时长并坚持下去。",
+          "words": [
+            {
+              "w": "the key is to",
+              "meaning": "关键在于"
+            },
+            {
+              "w": "length of focus time",
+              "meaning": "专注时长"
+            },
+            {
+              "w": "stick to it",
+              "meaning": "坚持下去"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s04",
+          "para": 3,
+          "en": "Newport also recommends \"deep scheduling\" to combat constant interruptions and get more done in less time.",
+          "cn": "纽坡特还建议“深度规划”以对抗持续干扰并在更短的时间内完成更多的工作。",
+          "words": [
+            {
+              "w": "deep scheduling",
+              "meaning": "深度规划"
+            },
+            {
+              "w": "constant interruptions",
+              "meaning": "持续的干扰"
+            },
+            {
+              "w": "get more done in less time",
+              "meaning": "在更短时间内完成更多工作"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s05",
+          "para": 3,
+          "en": "\"At any given point, I should have deep work scheduled for roughly the next month.",
+          "cn": "“在任何特定时刻，我都会为接下来的大约一个月制定深度工作计划。",
+          "words": [
+            {
+              "w": "At any given point",
+              "meaning": "在任何特定时刻"
+            },
+            {
+              "w": "roughly the next month",
+              "meaning": "大约接下来的一个月"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s06",
+          "para": 3,
+          "en": "Once on the calendar, I protect this time like I would a doctor's appointment or important meeting\", he writes.",
+          "cn": "一旦落于日程表，我就会一如守护就诊预约或重要会议安排一样守护这一时间安排”，他写道。",
+          "words": [
+            {
+              "w": "on the calendar",
+              "meaning": "列入日程表"
+            },
+            {
+              "w": "protect this time",
+              "meaning": "守护这段时间"
+            },
+            {
+              "w": "a doctor's appointment",
+              "meaning": "就诊预约"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s07",
+          "para": 4,
+          "en": "Another approach to getting more done in less time is to rethink how you prioritise your day - in particular how we craft our to-do lists.",
+          "cn": "另一项实现事半功倍之策就是反思“你是怎样安排你的一天的”——特别是，我们是怎样精心制作任务清单的。",
+          "words": [
+            {
+              "w": "prioritise your day",
+              "meaning": "安排一天的优先次序"
+            },
+            {
+              "w": "in particular",
+              "meaning": "特别，尤其"
+            },
+            {
+              "w": "craft our to-do lists",
+              "meaning": "精心制作任务清单"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s08",
+          "para": 4,
+          "en": "Tim Harford, author of Messy: The Power of Disorder to Transform Our Lives, points to a study in the early 1980s that divided undergraduates into two groups: some were advised to set out monthly goals and study activities; others were told to plan activities and goals in much more detail, day by day.",
+          "cn": "提姆·哈福德，《混乱：改变我们生活的无序力量》的作者，提到了 20 世纪 80 年代初的一项研究：该研究将本科生分为两组，一些被建议设定每月的目标及学习活动；另一些人被要求逐日地、更详细地计划活动及目标。",
+          "words": [
+            {
+              "w": "points to a study",
+              "meaning": "提到一项研究"
+            },
+            {
+              "w": "divided undergraduates into two groups",
+              "meaning": "把本科生分为两组"
+            },
+            {
+              "w": "set out monthly goals",
+              "meaning": "设定每月目标"
+            },
+            {
+              "w": "day by day",
+              "meaning": "逐日地"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s09",
+          "para": 5,
+          "en": "While the researchers assumed that the well-structured daily plans would be most effective when it came to the execution of tasks, they were wrong: the detailed daily plans demotivated students.",
+          "cn": "虽然研究者假设井井有条的每日计划对于任务执行会非常有效，但是他们错了：详尽的每日计划使学生受挫。",
+          "words": [
+            {
+              "w": "well-structured daily plans",
+              "meaning": "井井有条的每日计划"
+            },
+            {
+              "w": "the execution of tasks",
+              "meaning": "任务的执行"
+            },
+            {
+              "w": "demotivated",
+              "meaning": "v. 使失去动力，使消极"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s10",
+          "para": 5,
+          "en": "Harford argues that inevitable distractions often render the daily to-do list ineffective, while leaving room for improvisation in such a list can reap the best results.",
+          "cn": "哈福德提出，无可避免的干扰通常会使每日任务清单失效，而在任务清单中留出临时应变的空间则能收获最佳结果。",
+          "words": [
+            {
+              "w": "inevitable distractions",
+              "meaning": "无可避免的干扰"
+            },
+            {
+              "w": "render the daily to-do list ineffective",
+              "meaning": "使每日任务清单失效"
+            },
+            {
+              "w": "leaving room for improvisation",
+              "meaning": "留出临时应变的空间"
+            },
+            {
+              "w": "reap the best results",
+              "meaning": "收获最佳结果"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s11",
+          "para": 6,
+          "en": "In order to make the most of our focus and energy, we also need to embrace downtime, or as Newport suggests, \"be lazy\".",
+          "cn": "若要充分利用自身专注力以及精力，我们还需要“拥抱闲暇时间”，或如纽坡特所建议的，“偷偷懒”。",
+          "words": [
+            {
+              "w": "make the most of",
+              "meaning": "充分利用"
+            },
+            {
+              "w": "embrace downtime",
+              "meaning": "拥抱闲暇（休息）时间"
+            },
+            {
+              "w": "be lazy",
+              "meaning": "偷个懒"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s12",
+          "para": 7,
+          "en": "\"Idleness is not just a vacation, an indulgence or a vice; it is as indispensable to the brain as vitamin D is to the body ... [idleness] is, paradoxically, necessary to getting any work done,\" he argues.",
+          "cn": "“闲散不仅仅是一次假期、一种放纵或一个恶习；它之于大脑就像维他命 D 之于身体一样不可或缺……矛盾的是，它对于完成任何工作都不可或缺”，他提出。",
+          "words": [
+            {
+              "w": "Idleness",
+              "meaning": "n. 闲散，无所事事"
+            },
+            {
+              "w": "an indulgence",
+              "meaning": "一种放纵"
+            },
+            {
+              "w": "indispensable",
+              "meaning": "adj. 不可或缺的"
+            },
+            {
+              "w": "necessary to getting any work done",
+              "meaning": "对完成任何工作都必要"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s13",
+          "para": 8,
+          "en": "Srini Pillay, an assistant professor of psychiatry at Harvard Medical School, believes this counterintuitive link between downtime and productivity may be due to the way our brains operate.",
+          "cn": "斯利尼·皮莱，哈佛医学院的一位精神病学助理教授，认为“闲暇时光”与“生产效率”之间有违直觉的联系可能源于我们大脑的运作方式。",
+          "words": [
+            {
+              "w": "psychiatry",
+              "meaning": "n. 精神病学"
+            },
+            {
+              "w": "counterintuitive link",
+              "meaning": "有违直觉的联系"
+            },
+            {
+              "w": "the way our brains operate",
+              "meaning": "我们大脑的运作方式"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s14",
+          "para": 8,
+          "en": "When our brains switch between being focused and unfocused on a task, they tend to be more efficient.",
+          "cn": "当我们的大脑就某项工作在“集中注意力”与“分散注意力”之间切换时，它们往往更高效。",
+          "words": [
+            {
+              "w": "switch between being focused and unfocused",
+              "meaning": "在专注与非专注之间切换"
+            },
+            {
+              "w": "tend to be more efficient",
+              "meaning": "往往更高效"
+            }
+          ]
+        },
+        {
+          "id": "2018_text4_s15",
+          "para": 9,
+          "en": "\"What people don't realise is that in order to complete these tasks they need to use both the focus and unfocus circuits in their brain,\" says Pillay.",
+          "cn": "“人们没有意识到的是，要完成这些工作，他们需要使用‘专注’和‘分心’两种大脑回路”，皮莱说道。",
+          "words": [
+            {
+              "w": "What people don't realise",
+              "meaning": "人们没有意识到的是"
+            },
+            {
+              "w": "the focus and unfocus circuits",
+              "meaning": "专注与分心两种回路"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2018_text4_q1", "number": 36, "qtype": "detail", "stem": "The key to mastering the art of deep work is to ___.", "stem_cn": "掌握深度工作艺术的关键是___。", "options": { "A": "keep to your focus time", "B": "list your immediate tasks", "C": "make specific daily plans", "D": "seize every minute to work" }, "options_cn": { "A": "坚守你的专注时间", "B": "列出你的紧迫任务", "C": "制定具体的日常计划", "D": "争分夺秒地工作" }, "answer": "A", "explanation": "第二段末句指出：无论采取哪种方法，关键是要确定你的专注时间并严格坚守。正确项是对 stick to it（it 就近指代 focus time）的同义改写，故 [A] 正确。[B] 把“精心制作待办清单”曲解且只是方法之一；[C] 把两种具体方法揉杂当作关键；[D] “争分夺秒”是本文反对的低效忙碌。", "related_sentences": [ "2018_text4_s02", "2018_text4_s03" ] },
-        { "id": "2018_text4_q2", "number": 37, "qtype": "detail", "stem": "The study in the early 1980s cited by Harford shows that ___.", "stem_cn": "哈福德所引用的20世纪80年代初研究表明___。", "options": { "A": "distractions may actually increase efficiency", "B": "daily schedules are indispensable to studying", "C": "students are hardly motivated by monthly goals", "D": "detailed plans may not be as fruitful as expected" }, "options_cn": { "A": "干扰实际上可能会提高效率", "B": "每日计划表对学习是不可或缺的", "C": "月度目标对学生几乎没有激励作用", "D": "详细的计划可能不像预期的那样富有成效" }, "answer": "D", "explanation": "第四、五段：研究将大学生分成两组（月度计划组与详细每日计划组）；结果出人意料——详细的每日计划反而使学生失去动力，留出临时应变空间才能实现最佳效果。正确项概括第五段①②句，故 [D] 正确。[A] 与文意相悖；[B] 把研究者预期当事实；[C] 偷换概念。", "related_sentences": [ "2018_text4_s09", "2018_text4_s10" ] },
-        { "id": "2018_text4_q3", "number": 38, "qtype": "detail", "stem": "According to Newport, idleness is ___.", "stem_cn": "根据纽波特的观点，闲散是___。", "options": { "A": "a desirable mental state for busy people", "B": "a major contributor to physical health", "C": "an effective way to save time and energy", "D": "an essential factor in accomplishing any work" }, "options_cn": { "A": "忙碌人群的理想心理状态", "B": "维持身体健康的主要因素", "C": "节约时间和精力的有效方式", "D": "完成任何工作的必要因素" }, "answer": "D", "explanation": "第七段纽波特观点：闲散是大脑所必需，对完成任何工作都非常必要。正确项是对 necessary to getting any work done 的同义改写，方向与程度均契合，故 [D] 正确。[A] 夸大其词；[B] 强加维生素D类比；[C] 把“充分利用精力”曲解为“节约”。", "related_sentences": [ "2018_text4_s12" ] },
-        { "id": "2018_text4_q4", "number": 39, "qtype": "detail", "stem": "Pillay believes that our brains' shift between being focused and unfocused ___.", "stem_cn": "皮莱认为我们的大脑在专注状态和非专注状态之间的切换___。", "options": { "A": "can result in psychological well-being", "B": "can bring about greater efficiency", "C": "is aimed at better balance in work", "D": "is driven by task urgency" }, "options_cn": { "A": "能促进心理健康", "B": "能带来更高效率", "C": "旨在更好地平衡工作", "D": "由任务的紧迫性所驱动" }, "answer": "B", "explanation": "第八段②句皮莱观点：当大脑在专注与非专注之间切换时，往往更有效率。shift 对应 switch，greater efficiency 对应 more efficient，故 [B] 正确。[A] 由 psychiatry 捏造；[C] 把“就某项任务切换”曲解为“平衡不同任务”；[D] task urgency 属捏造。", "related_sentences": [ "2018_text4_s14" ] },
-        { "id": "2018_text4_q5", "number": 40, "qtype": "main_idea", "stem": "This text is mainly about ___.", "stem_cn": "本文主要是关于___。", "options": { "A": "ways to relieve the tension of busy life", "B": "approaches to getting more done in less time", "C": "the key to eliminating distractions", "D": "the cause of the lack of focus time" }, "options_cn": { "A": "缓解忙碌生活的紧张的方法", "B": "在更短时间里完成更多工作的方法", "C": "消除干扰的要诀", "D": "造成专注时间不足的原因" }, "answer": "B", "explanation": "全文主旨题。第一段提出话题“拒绝低效忙碌、打造深度工作习惯”；第二段说明多种方法及唯一宗旨；第三至九段论述多种具体策略。[B] 是对全文反复出现的核心表述（深度工作、对抗干扰、在更少时间完成更多）的高度概括，故正确。[A] 偏差理解；[C] 相对全篇太窄；[D] 偏离主线。", "related_sentences": [ "2018_text4_s01", "2018_text4_s04" ] }
+        {
+          "id": "2018_text4_q1",
+          "number": 36,
+          "qtype": "detail",
+          "stem": "The key to mastering the art of deep work is to ___.",
+          "stem_cn": "掌握深度工作艺术的关键是___。",
+          "options": {
+            "A": "keep to your focus time",
+            "B": "list your immediate tasks",
+            "C": "make specific daily plans",
+            "D": "seize every minute to work"
+          },
+          "options_cn": {
+            "A": "坚守你的专注时间",
+            "B": "列出你的紧迫任务",
+            "C": "制定具体的日常计划",
+            "D": "争分夺秒地工作"
+          },
+          "answer": "A",
+          "explanation": "第二段末句指出：无论采取哪种方法，关键是要确定你的专注时间并严格坚守。正确项是对 stick to it（it 就近指代 focus time）的同义改写，故 [A] 正确。[B] 把“精心制作待办清单”曲解且只是方法之一；[C] 把两种具体方法揉杂当作关键；[D] “争分夺秒”是本文反对的低效忙碌。",
+          "related_sentences": [
+            "2018_text4_s02",
+            "2018_text4_s03"
+          ]
+        },
+        {
+          "id": "2018_text4_q2",
+          "number": 37,
+          "qtype": "detail",
+          "stem": "The study in the early 1980s cited by Harford shows that ___.",
+          "stem_cn": "哈福德所引用的20世纪80年代初研究表明___。",
+          "options": {
+            "A": "distractions may actually increase efficiency",
+            "B": "daily schedules are indispensable to studying",
+            "C": "students are hardly motivated by monthly goals",
+            "D": "detailed plans may not be as fruitful as expected"
+          },
+          "options_cn": {
+            "A": "干扰实际上可能会提高效率",
+            "B": "每日计划表对学习是不可或缺的",
+            "C": "月度目标对学生几乎没有激励作用",
+            "D": "详细的计划可能不像预期的那样富有成效"
+          },
+          "answer": "D",
+          "explanation": "第四、五段：研究将大学生分成两组（月度计划组与详细每日计划组）；结果出人意料——详细的每日计划反而使学生失去动力，留出临时应变空间才能实现最佳效果。正确项概括第五段①②句，故 [D] 正确。[A] 与文意相悖；[B] 把研究者预期当事实；[C] 偷换概念。",
+          "related_sentences": [
+            "2018_text4_s09",
+            "2018_text4_s10"
+          ]
+        },
+        {
+          "id": "2018_text4_q3",
+          "number": 38,
+          "qtype": "detail",
+          "stem": "According to Newport, idleness is ___.",
+          "stem_cn": "根据纽波特的观点，闲散是___。",
+          "options": {
+            "A": "a desirable mental state for busy people",
+            "B": "a major contributor to physical health",
+            "C": "an effective way to save time and energy",
+            "D": "an essential factor in accomplishing any work"
+          },
+          "options_cn": {
+            "A": "忙碌人群的理想心理状态",
+            "B": "维持身体健康的主要因素",
+            "C": "节约时间和精力的有效方式",
+            "D": "完成任何工作的必要因素"
+          },
+          "answer": "D",
+          "explanation": "第七段纽波特观点：闲散是大脑所必需，对完成任何工作都非常必要。正确项是对 necessary to getting any work done 的同义改写，方向与程度均契合，故 [D] 正确。[A] 夸大其词；[B] 强加维生素D类比；[C] 把“充分利用精力”曲解为“节约”。",
+          "related_sentences": [
+            "2018_text4_s12"
+          ]
+        },
+        {
+          "id": "2018_text4_q4",
+          "number": 39,
+          "qtype": "detail",
+          "stem": "Pillay believes that our brains' shift between being focused and unfocused ___.",
+          "stem_cn": "皮莱认为我们的大脑在专注状态和非专注状态之间的切换___。",
+          "options": {
+            "A": "can result in psychological well-being",
+            "B": "can bring about greater efficiency",
+            "C": "is aimed at better balance in work",
+            "D": "is driven by task urgency"
+          },
+          "options_cn": {
+            "A": "能促进心理健康",
+            "B": "能带来更高效率",
+            "C": "旨在更好地平衡工作",
+            "D": "由任务的紧迫性所驱动"
+          },
+          "answer": "B",
+          "explanation": "第八段②句皮莱观点：当大脑在专注与非专注之间切换时，往往更有效率。shift 对应 switch，greater efficiency 对应 more efficient，故 [B] 正确。[A] 由 psychiatry 捏造；[C] 把“就某项任务切换”曲解为“平衡不同任务”；[D] task urgency 属捏造。",
+          "related_sentences": [
+            "2018_text4_s14"
+          ]
+        },
+        {
+          "id": "2018_text4_q5",
+          "number": 40,
+          "qtype": "main_idea",
+          "stem": "This text is mainly about ___.",
+          "stem_cn": "本文主要是关于___。",
+          "options": {
+            "A": "ways to relieve the tension of busy life",
+            "B": "approaches to getting more done in less time",
+            "C": "the key to eliminating distractions",
+            "D": "the cause of the lack of focus time"
+          },
+          "options_cn": {
+            "A": "缓解忙碌生活的紧张的方法",
+            "B": "在更短时间里完成更多工作的方法",
+            "C": "消除干扰的要诀",
+            "D": "造成专注时间不足的原因"
+          },
+          "answer": "B",
+          "explanation": "全文主旨题。第一段提出话题“拒绝低效忙碌、打造深度工作习惯”；第二段说明多种方法及唯一宗旨；第三至九段论述多种具体策略。[B] 是对全文反复出现的核心表述（深度工作、对抗干扰、在更少时间完成更多）的高度概括，故正确。[A] 偏差理解；[C] 相对全篇太窄；[D] 偏离主线。",
+          "related_sentences": [
+            "2018_text4_s01",
+            "2018_text4_s04"
+          ]
+        }
       ]
+    },
+    {
+      "id": "2018_newtype",
+      "type": "newtype",
+      "title": "Five Ways to Make Conversation with Anyone",
+      "topic": "新题型（小标题）：五招教你与任何人交流——与陌生人开启交谈的5种方法与技巧。",
+      "source": "Section II Part B",
+      "pool": {
+        "A": "Just say it",
+        "B": "Be present",
+        "C": "Pay a unique compliment",
+        "D": "Name, places, things",
+        "E": "Find the \"me too\"s",
+        "F": "Skip the small talk",
+        "G": "Ask for an opinion"
+      },
+      "pool_cn": {
+        "A": "请说出来",
+        "B": "身/心处现场",
+        "C": "致以特别的赞美",
+        "D": "名字，地点，事物",
+        "E": "找到共同点",
+        "F": "略过闲谈",
+        "G": "寻求意见"
+      },
+      "sentences": [
+        {
+          "id": "2018_newtype_s01",
+          "para": 1,
+          "en": "Conversations are links, which means when you have a conversation with a new person a link gets formed and every conversation you have after that moment will strengthen the link.",
+          "cn": "交谈即是联系，也就是说，每当你和一个新的人交谈时，就会形成一条联系，此后你们的每一次交谈都会强化这条联系。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s02",
+          "para": 2,
+          "en": "You meet new people every day: the grocery worker, the cab driver, new people at work or the security guard at the door.",
+          "cn": "你每天都会遇到新的人：杂货店员、出租车司机、工作中接触到的新人或门口的保安。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s03",
+          "para": 2,
+          "en": "Simply starting a conversation with them will form a link.",
+          "cn": "只要和他们开启一次交谈，就能形成一条联系。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s04",
+          "para": 3,
+          "en": "Here are five simple ways that you can make the first move and start a conversation with strangers.",
+          "cn": "以下是五种简单的方法，借此你可以迈出第一步，和陌生人开启交谈。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s05",
+          "para": 41,
+          "en": "Suppose you are in a room with someone you don't know and something within you says \"I want to talk with this person\" - this is something that mostly happens with all of us.",
+          "cn": "假设你正和某个陌生人同处一室，你心里有个声音说“我想和这个人交谈”——这在我们所有人身上大概都会发生。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s06",
+          "para": 41,
+          "en": "You wanted to say something - the first word - but it just won't come out, it feels like it is stuck somewhere.",
+          "cn": "你想说点什么——第一句话——但总是说不出口，感觉就像卡在什么地方。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s07",
+          "para": 41,
+          "en": "I know the feeling and here is my advice: just get it out.",
+          "cn": "我明白这种感受，以下是我的建议：就说出口吧。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s08",
+          "para": 41,
+          "en": "Just think: what is the worst that could happen?",
+          "cn": "想想看：最坏的可能是什么？",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s09",
+          "para": 41,
+          "en": "They won't talk with you? Well, they are not talking with you now!",
+          "cn": "他们不和你交谈？唔，他们现在（也）没和你交谈啊！",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s10",
+          "para": 41,
+          "en": "I truly believe that once you get that first word out everything else will just flow.",
+          "cn": "我坚信，一旦你将第一句话说出口，其余的将会顺畅而行。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s11",
+          "para": 41,
+          "en": "So keep it simple: \"Hi\", \"Hey\" or \"Hello\" - do the best you can to gather all of the enthusiasm and energy you can, put on a big smile and say \"Hi\".",
+          "cn": "因此，要让第一句话简短：“嗨”，“嘿”或者“你好”——尽你所能汇集所有的热情和能量，露出大大的微笑，然后说“嗨”。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s12",
+          "para": 42,
+          "en": "It is a problem all of us face; you have limited time with the person that you want to talk with and you want to make this talk memorable.",
+          "cn": "这是一个我们所有人都会面临的困难：和你想要交谈的人的时间有限，而你想让这次谈话留下深刻印象。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s13",
+          "para": 42,
+          "en": "Honestly, if we got stuck in the rut of \"hi\", \"hello\", \"how are you?\" and \"what is going on?\", you will fail to give the initial jolt to the conversation that can make it so memorable.",
+          "cn": "说真的，如果我们一直陷在“嗨”，“你好”，“你好吗？”，“最近怎么样？”这种单调的对话里，你就无法为这次谈话带来最初始的震撼，从而让它留下非常深刻的印象。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s14",
+          "para": 42,
+          "en": "So don't be afraid to ask more personal questions.",
+          "cn": "所以，不要害怕打听一些更私人的问题。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s15",
+          "para": 42,
+          "en": "Trust me, you'll be surprised to see how much people are willing to share if you just ask.",
+          "cn": "相信我，只要你打听，就会惊讶地发现人们有多愿意分享。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s16",
+          "para": 43,
+          "en": "When you meet a person for the first time, make an effort to find the things which you and that person have in common so that you can build the conversation from that point.",
+          "cn": "初次遇见某人时，努力寻找你和这个人的共同之处，以便借此搭建起整场交谈。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s17",
+          "para": 43,
+          "en": "When you start conversation from there and then move outwards, you'll find all of a sudden that the conversation becomes a lot easier.",
+          "cn": "如果从那里开启，然后再向外延伸，你会突然发现交谈变得容易得多了。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s18",
+          "para": 44,
+          "en": "Imagine you are pouring your heart out to someone and they are just busy on their phone, and if you ask for their attention you get the response \"I can multitask\".",
+          "cn": "想象一下，你正对某人倾诉衷肠，而他们只是忙着摆弄手机，如果你要求他们耐心听你倾诉，你会得到“我可以一心多用”这样的回应。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s19",
+          "para": 44,
+          "en": "So when someone tries to communicate with you, just be in that communication wholeheartedly.",
+          "cn": "所以，当别人试图和你交流时，请全心全意投入。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s20",
+          "para": 44,
+          "en": "Make eye contact.",
+          "cn": "进行眼神交流。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s21",
+          "para": 44,
+          "en": "Trust me, eye contact is where all the magic happens.",
+          "cn": "相信我，眼神交流是所有奇迹发生的地方。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s22",
+          "para": 44,
+          "en": "When you make eye contact, you can feel the conversation.",
+          "cn": "当你进行眼神交流时，这次交流就能给你留下印象。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s23",
+          "para": 45,
+          "en": "You all came into a conversation where you first met the person, but after some time you may have met again and have forgotten their name.",
+          "cn": "你们都遇到过这样一种交谈吧：和某人初次见面，但过段时间后可能又见到他们，却又忘记了他们的名字。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s24",
+          "para": 45,
+          "en": "Isn't that awkward!",
+          "cn": "这得多尴尬！",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s25",
+          "para": 45,
+          "en": "So, remember the little details of the people you met or you talked with; perhaps the places they have been to, the places they want to go, the things they like, the things they hate - whatever you talk about.",
+          "cn": "所以，记住你遇见过或与之交谈过的人身上的小细节吧；或许是他们去过的地方，他们想去的地方，他们喜欢的事物，他们讨厌的事物——任何你们谈到的东西都可以。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s26",
+          "para": 45,
+          "en": "When you remember such things you can automatically become investor in their wellbeing.",
+          "cn": "当你记住这些事情的时候，你就自然而然成为他们幸福的投资者。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s27",
+          "para": 45,
+          "en": "So they feel a responsibility to you to keep that relationship going.",
+          "cn": "他们就会感觉对你负有维持这一关系的责任。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s28",
+          "para": 46,
+          "en": "That's it. Five amazing ways that you can make conversation with almost anyone.",
+          "cn": "好了。这就是能让你和几乎任何人交谈的5种绝妙方式。",
+          "words": []
+        },
+        {
+          "id": "2018_newtype_s29",
+          "para": 46,
+          "en": "Every person is a really good book to read, or to have a conversation with!",
+          "cn": "每个人都是一本真正的好书，值得阅读或与之交谈！",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2018_newtype_q41",
+          "number": 41,
+          "qtype": "小标题",
+          "stem": "选择最合适的小标题填入第41段",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "A",
+          "explanation": "第四至六段指出，想和陌生人交谈又怯于开口时，应勇敢地开口，一旦开口，自然而然就能与对方开始交谈，具体做法是用简短的话语主动打招呼。[A]“请说出来”与段群主旨相符，且题主题词say与段群关键词say/come out/get out复现或近义替换。干扰项[F]主题词the small talk虽包括第六段末句“Hi”、“Hey”、“Hello”等打招呼用语，但该段实为鼓励读者使用这些简短的词打招呼，与选项意思相悖。",
+          "related_sentences": [
+            "2018_newtype_s01",
+            "2018_newtype_s02",
+            "2018_newtype_s03",
+            "2018_newtype_s04",
+            "2018_newtype_s05",
+            "2018_newtype_s06",
+            "2018_newtype_s07",
+            "2018_newtype_s08",
+            "2018_newtype_s09",
+            "2018_newtype_s10",
+            "2018_newtype_s11",
+            "2018_newtype_s12",
+            "2018_newtype_s13",
+            "2018_newtype_s14",
+            "2018_newtype_s15",
+            "2018_newtype_s16",
+            "2018_newtype_s17",
+            "2018_newtype_s18",
+            "2018_newtype_s19",
+            "2018_newtype_s20",
+            "2018_newtype_s21",
+            "2018_newtype_s22",
+            "2018_newtype_s23",
+            "2018_newtype_s24",
+            "2018_newtype_s25",
+            "2018_newtype_s26",
+            "2018_newtype_s27",
+            "2018_newtype_s28",
+            "2018_newtype_s29"
+          ]
+        },
+        {
+          "id": "2018_newtype_q42",
+          "number": 42,
+          "qtype": "小标题",
+          "stem": "选择最合适的小标题填入第42段",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "F",
+          "explanation": "第七至九段指出，人们普遍会面临一个问题，即“在有限的交谈时间里一味客套寒暄，导致对话难以深入、从而无法留下深刻印象”，对此，人们应该询问更加私人的问题。[F]“略过闲谈”契合段群主旨。干扰项[G]Ask for an opinion似与第九段don't be afraid to ask/people are willing to share if you just ask近义，但该段所述询问对象实为交谈对象比较私人的信息（personal questions），而非其个人意见（an opinion），且该选项也无法表达第七、八段暗含的“客套寒暄太占时间，应做简略处理”。",
+          "related_sentences": [
+            "2018_newtype_s01",
+            "2018_newtype_s02",
+            "2018_newtype_s03",
+            "2018_newtype_s04",
+            "2018_newtype_s05",
+            "2018_newtype_s06",
+            "2018_newtype_s07",
+            "2018_newtype_s08",
+            "2018_newtype_s09",
+            "2018_newtype_s10",
+            "2018_newtype_s11",
+            "2018_newtype_s12",
+            "2018_newtype_s13",
+            "2018_newtype_s14",
+            "2018_newtype_s15",
+            "2018_newtype_s16",
+            "2018_newtype_s17",
+            "2018_newtype_s18",
+            "2018_newtype_s19",
+            "2018_newtype_s20",
+            "2018_newtype_s21",
+            "2018_newtype_s22",
+            "2018_newtype_s23",
+            "2018_newtype_s24",
+            "2018_newtype_s25",
+            "2018_newtype_s26",
+            "2018_newtype_s27",
+            "2018_newtype_s28",
+            "2018_newtype_s29"
+          ]
+        },
+        {
+          "id": "2018_newtype_q43",
+          "number": 43,
+          "qtype": "小标题",
+          "stem": "选择最合适的小标题填入第43段",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "E",
+          "explanation": "第十段指出，初次见面应努力找出两人的共同点，由此出发可顺利展开对话。[E]“找到共同点”与本段主旨一致，the “me too”s同义替换首句the things which you and that person have in common。",
+          "related_sentences": [
+            "2018_newtype_s01",
+            "2018_newtype_s02",
+            "2018_newtype_s03",
+            "2018_newtype_s04",
+            "2018_newtype_s05",
+            "2018_newtype_s06",
+            "2018_newtype_s07",
+            "2018_newtype_s08",
+            "2018_newtype_s09",
+            "2018_newtype_s10",
+            "2018_newtype_s11",
+            "2018_newtype_s12",
+            "2018_newtype_s13",
+            "2018_newtype_s14",
+            "2018_newtype_s15",
+            "2018_newtype_s16",
+            "2018_newtype_s17",
+            "2018_newtype_s18",
+            "2018_newtype_s19",
+            "2018_newtype_s20",
+            "2018_newtype_s21",
+            "2018_newtype_s22",
+            "2018_newtype_s23",
+            "2018_newtype_s24",
+            "2018_newtype_s25",
+            "2018_newtype_s26",
+            "2018_newtype_s27",
+            "2018_newtype_s28",
+            "2018_newtype_s29"
+          ]
+        },
+        {
+          "id": "2018_newtype_q44",
+          "number": 44,
+          "qtype": "小标题",
+          "stem": "选择最合适的小标题填入第44段",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "B",
+          "explanation": "第十一、十二段指出，“己所不欲勿施于人”，我们既然不愿被忽视，就应该避免忽视别人，全心全意投入对话，与对方进行眼神交流。[B]“身/心处现场”与段群主旨一致，Be present与第十二段①句be in that communication wholeheartedly近义。干扰项[G]中Ask for虽复现第十一段ask for，但第十一段ask for的对象为“关注（attention）”而非“意见（opinion）”，无法概括段群主旨。",
+          "related_sentences": [
+            "2018_newtype_s01",
+            "2018_newtype_s02",
+            "2018_newtype_s03",
+            "2018_newtype_s04",
+            "2018_newtype_s05",
+            "2018_newtype_s06",
+            "2018_newtype_s07",
+            "2018_newtype_s08",
+            "2018_newtype_s09",
+            "2018_newtype_s10",
+            "2018_newtype_s11",
+            "2018_newtype_s12",
+            "2018_newtype_s13",
+            "2018_newtype_s14",
+            "2018_newtype_s15",
+            "2018_newtype_s16",
+            "2018_newtype_s17",
+            "2018_newtype_s18",
+            "2018_newtype_s19",
+            "2018_newtype_s20",
+            "2018_newtype_s21",
+            "2018_newtype_s22",
+            "2018_newtype_s23",
+            "2018_newtype_s24",
+            "2018_newtype_s25",
+            "2018_newtype_s26",
+            "2018_newtype_s27",
+            "2018_newtype_s28",
+            "2018_newtype_s29"
+          ]
+        },
+        {
+          "id": "2018_newtype_q45",
+          "number": 45,
+          "qtype": "小标题",
+          "stem": "选择最合适的小标题填入第45段",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "D",
+          "explanation": "第十三、十四段指出，我们常会遇到“忘记对方名字”的尴尬情形，针对性地，我们应该记住对方的细节信息，包括姓名，他们去过或想去的地方，喜欢或讨厌的东西等。[D]“名字，地点，事物”概括了段群列举的三种具体细节，契合段群主旨。干扰项[C]Pay a unique compliment干扰源自本段群关键词remember the details，但本段群侧重于“记住交谈对象的细节信息”这一建议本身，完全没有涉及compliment相关内容，故[C]是主观臆测的干扰项。",
+          "related_sentences": [
+            "2018_newtype_s01",
+            "2018_newtype_s02",
+            "2018_newtype_s03",
+            "2018_newtype_s04",
+            "2018_newtype_s05",
+            "2018_newtype_s06",
+            "2018_newtype_s07",
+            "2018_newtype_s08",
+            "2018_newtype_s09",
+            "2018_newtype_s10",
+            "2018_newtype_s11",
+            "2018_newtype_s12",
+            "2018_newtype_s13",
+            "2018_newtype_s14",
+            "2018_newtype_s15",
+            "2018_newtype_s16",
+            "2018_newtype_s17",
+            "2018_newtype_s18",
+            "2018_newtype_s19",
+            "2018_newtype_s20",
+            "2018_newtype_s21",
+            "2018_newtype_s22",
+            "2018_newtype_s23",
+            "2018_newtype_s24",
+            "2018_newtype_s25",
+            "2018_newtype_s26",
+            "2018_newtype_s27",
+            "2018_newtype_s28",
+            "2018_newtype_s29"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2018_cloze",
+      "type": "cloze",
+      "title": "Curiosity Is Not Intrinsically Good",
+      "topic": "完形填空：好奇心未必有益——基于一项“好奇心”新研究，阐述满足好奇心的弊端及其控制之道。",
+      "source": "Section I Use of English",
+      "sentences": [
+        {
+          "id": "2018_cloze_s01",
+          "para": 1,
+          "en": "Why do people read negative Internet comments and do other things that will obviously be painful?",
+          "cn": "人们为何会阅读负面的网络评论并做其他显然会令自己不快的事？",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s02",
+          "para": 1,
+          "en": "Because humans have an inherent need to [1] uncertainty, according to a recent study in Psychological Science.",
+          "cn": "《心理科学》一项新近研究表明，（这是）因为人类生来就有消除不确定性的需求。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s03",
+          "para": 1,
+          "en": "The new research reveals that the need to know is so strong that people will [2] to satisfy their curiosity even when it is clear the answer will [3].",
+          "cn": "该项新研究显示，人们想要知道的需求是如此强烈，以至于就算答案明显会令人不快，也还是会设法满足自己的好奇心。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s04",
+          "para": 2,
+          "en": "In a series of four experiments, behavioral scientists at the University of Chicago and the Wisconsin School of Business tested students' willingness to [4] themselves to unpleasant stimuli in an effort to satisfy curiosity.",
+          "cn": "在一系列的四项实验中，芝加哥大学和威斯康星商学院的行为科学家们针对学生是否愿意为满足好奇心而让自己遭受令人不快的刺激进行了测试。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s05",
+          "para": 2,
+          "en": "For one [5], each participant was shown a pile of pens that the researcher claimed were from a previous experiment.",
+          "cn": "其中一项试验中，研究人员向每一位参与者展示了一堆笔，并声称这些笔来自先前的一项实验。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s06",
+          "para": 2,
+          "en": "The twist? Half of the pens would [6] an electric shock when clicked.",
+          "cn": "一记变招？当按动时，一半的笔会产生电击。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s07",
+          "para": 2,
+          "en": "Twenty-seven students were told which pens were electrified; another twenty-seven were told only that some were electrified.",
+          "cn": "有27名学生被告知哪些笔带电；另外27名学生仅被告知有一些笔带电。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s08",
+          "para": 3,
+          "en": "[7] left alone in the room, the students who did not know which ones would shock them clicked more pens and incurred more shocks than the students who knew what would [8].",
+          "cn": "当他们被单独留在房间时，那些不知道哪些笔会对自己产生电击的学生比那些知道将会发生什么的学生按动的笔更多，也受到更多的电击。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s09",
+          "para": 3,
+          "en": "Subsequent experiments reproduced this effect with other stimuli, [9] the sound of fingernails on a chalkboard and photographs of disgusting insects.",
+          "cn": "随后的实验利用其它刺激物再现了该结果，如指甲刮擦黑板的声音和令人作呕的昆虫照片。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s10",
+          "para": 4,
+          "en": "The drive to [10] is deeply rooted in humans, much the same as the basic drives for [11] or shelter, says Christopher Hsee of the University of Chicago.",
+          "cn": "探索的本能需求深深根植于人类体内，几乎无异于人类对食物或住所的基本需求，芝加哥大学的克里斯托弗·海希说道。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s11",
+          "para": 5,
+          "en": "Curiosity is often considered a good instinct - it can [12] new scientific advances, for instance - but sometimes such [13] can backfire.",
+          "cn": "好奇心通常被认为是一种有益的本能——比如它能带来新的科学进步——但有时这种探究可能会适得其反。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s12",
+          "para": 5,
+          "en": "The insight that curiosity can drive you to do [14] things is a profound one.",
+          "cn": "好奇心会驱使人们去做自我毁灭的事，这是一种意义深远的见解。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s13",
+          "para": 6,
+          "en": "Unhealthy curiosity is possible to [15], however.",
+          "cn": "不过，病态的好奇心是有可能抑制的。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s14",
+          "para": 6,
+          "en": "In a final experiment, participants who were encouraged to [16] how they would feel after viewing an unpleasant picture were less likely to [17] to see such an image.",
+          "cn": "在最后一项实验中，那些被鼓励对“看到令人不快的图片后自己会作何感受”进行预测的参与者选择去看这种图片的可能性更小。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s15",
+          "para": 6,
+          "en": "These results suggest that imagining the [18] of following through on one's curiosity ahead of time can help determine [19] it is worth the endeavor.",
+          "cn": "这些结果表明，提前想象坚持好奇心的结果有助于确定这一尝试是否值得。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s16",
+          "para": 7,
+          "en": "\"Thinking about long-term [20] is key to reducing the possible negative effects of curiosity,\" Hsee says.",
+          "cn": "“考虑长期后果是降低好奇心可能带来的负面影响的关键”，海希说道。",
+          "words": []
+        },
+        {
+          "id": "2018_cloze_s17",
+          "para": 7,
+          "en": "In other words, don't read online comments.",
+          "cn": "换言之，不要阅读网上评论。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2018_cloze_q01",
+          "number": 1,
+          "qtype": "完形",
+          "stem": "第 1 空：选择最合适的词填入空白 [1]",
+          "stem_cn": "",
+          "options": {
+            "A": "protect",
+            "B": "resolve",
+            "C": "discuss",
+            "D": "ignore"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义＋动词辨析。②句借一项新研究的结论回答首句设问；③句进一步阐释研究结论：这种想要知道的需求是如此强烈……可见③句the need to know复现②句an inherent need to uncertainty，而to know（去了解、弄清情况）意即“去除不确定性”，[B]符合文意。其余三项以uncertainty作宾语，均不能和to know形成“复现”关系。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q02",
+          "number": 2,
+          "qtype": "完形",
+          "stem": "第 2 空：选择最合适的词填入空白 [2]",
+          "stem_cn": "",
+          "options": {
+            "A": "refuse",
+            "B": "wait",
+            "C": "regret",
+            "D": "seek"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义＋动词辨析。③句研究结论为：人们想要知道的需求是如此强烈，以至于就算……也会满足他们的好奇心；so...that引导结果状语从句，故结果必定是想方设法去满足好奇心，seek to do sth（试图，设法做某事）符合文意，[D]正确。“拒绝满足好奇心”与主句“迫切想知道”的逻辑正相反，“等待去满足好奇心”实属“不作为”状态，均不符合。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q03",
+          "number": 3,
+          "qtype": "完形",
+          "stem": "第 3 空：选择最合适的词填入空白 [3]",
+          "stem_cn": "",
+          "options": {
+            "A": "hurt",
+            "B": "last",
+            "C": "mislead",
+            "D": "rise"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义＋动词辨析。空格句指出，即便答案明显会______，人们还是会满足他们的好奇心。由让步逻辑词even可知，空格部分应表示“答案会产生负面影响”，再辅以首句关键词negative、painful可进一步明确此处意为“就算结果令人不快”，[A]hurt正确。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q04",
+          "number": 4,
+          "qtype": "完形",
+          "stem": "第 4 空：选择最合适的词填入空白 [4]",
+          "stem_cn": "",
+          "options": {
+            "A": "alert",
+            "B": "tie",
+            "C": "treat",
+            "D": "expose"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义＋动词短语搭配。空格句承上引出实验测试内容：学生是否愿意为了满足好奇心而让自己______负面刺激；而测试内容一定与首段首句实验结论统一，因此只能表达“让自己受到、经历”的语义，expose sb/oneself to sth表示“使某人面临、遭受危险或不快”，[D]正确。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q05",
+          "number": 5,
+          "qtype": "完形",
+          "stem": "第 5 空：选择最合适的词填入空白 [5]",
+          "stem_cn": "",
+          "options": {
+            "A": "message",
+            "B": "review",
+            "C": "trial",
+            "D": "concept"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查名词辨析。由空格上文a series of four experiments、空格句主句中的participant和researcher以及下段末句Subsequent experiments可知，本句For one______是在介绍其中一项实验，[C]trial与experiments为近义复现，为正确项。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q06",
+          "number": 6,
+          "qtype": "完形",
+          "stem": "第 6 空：选择最合适的词填入空白 [6]",
+          "stem_cn": "",
+          "options": {
+            "A": "remove",
+            "B": "weaken",
+            "C": "interrupt",
+            "D": "deliver"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义＋动词辨析。由空格下段首两句“一些笔是带电的”、“按动更多笔并遭受更多电击”可知，这些笔被按动时应该会产生、发出电击，deliver有“发出；产出”的语义，与incurred形成复现关系，故[D]正确。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q07",
+          "number": 7,
+          "qtype": "完形",
+          "stem": "第 7 空：选择最合适的词填入空白 [7]",
+          "stem_cn": "",
+          "options": {
+            "A": "When",
+            "B": "If",
+            "C": "Though",
+            "D": "Unless"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义逻辑。主句内容“学生按笔并遭受电击”应是从句“单独留在房间”这一时间段之内或这一时间之后所发生的动作，二者存在时间上的包含关系或先后逻辑，[A]When符合文意。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q08",
+          "number": 8,
+          "qtype": "完形",
+          "stem": "第 8 空：选择最合适的词填入空白 [8]",
+          "stem_cn": "",
+          "options": {
+            "A": "continue",
+            "B": "happen",
+            "C": "disappear",
+            "D": "change"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义＋上下文语义。①句介绍实验背景，即两组人的设定，②句表明实验结论，即两组人的行为结果，故②句who knew what would______与who did not know分别对应①句“知道具体哪些笔带电的人（即知道会发生什么情况）VS仅知道有些笔带电的人”，[B]正确。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q09",
+          "number": 9,
+          "qtype": "完形",
+          "stem": "第 9 空：选择最合适的词填入空白 [9]",
+          "stem_cn": "",
+          "options": {
+            "A": "rather than",
+            "B": "regardless of",
+            "C": "such as",
+            "D": "owing to"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查句内语义逻辑。空格前other stimuli呼应上段①句unpleasant stimuli，空格后“指甲刮黑板的声音、恶心的昆虫图片”很明显为“其他令人不快的刺激（物）”的具体例子，[C]符合文意。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q10",
+          "number": 10,
+          "qtype": "完形",
+          "stem": "第 10 空：选择最合适的词填入空白 [10]",
+          "stem_cn": "",
+          "options": {
+            "A": "discover",
+            "B": "forgive",
+            "C": "forget",
+            "D": "disagree"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义＋动词辨析。文章开篇明确主题“人类想要知道的内在需求极其强烈”，第二、三段介绍与主题相关的实验，而本段首句以“______的欲求深深植根于我们体内”切入，很明显作者是“继论据（实验）之后又回归主题展开评述”，故The drive to______应该与inherent need to resolve uncertainty、need to know一致，故[A]正确。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q11",
+          "number": 11,
+          "qtype": "完形",
+          "stem": "第 11 空：选择最合适的词填入空白 [11]",
+          "stem_cn": "",
+          "options": {
+            "A": "pay",
+            "B": "marriage",
+            "C": "schooling",
+            "D": "food"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义＋名词辨析。the basic drives for引出“人类基本欲求的对象”，空格词与shelter（住所）并列，而选项中同属人类基本需求的只有[D]food。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q12",
+          "number": 12,
+          "qtype": "完形",
+          "stem": "第 12 空：选择最合适的词填入空白 [12]",
+          "stem_cn": "",
+          "options": {
+            "A": "lead to",
+            "B": "rest on",
+            "C": "learn from",
+            "D": "begin with"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义＋动词短语辨析。举例标记词for instance表明“它能______新的科学进步”是对“好奇心常被认为是有益的本能”的例证说明；既然“有益”，那一定是能对科学进步起到积极作用，只有[A]lead to符合该逻辑。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q13",
+          "number": 13,
+          "qtype": "完形",
+          "stem": "第 13 空：选择最合适的词填入空白 [13]",
+          "stem_cn": "",
+          "options": {
+            "A": "withdrawal",
+            "B": "persistence",
+            "C": "inquiry",
+            "D": "diligence"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义＋名词辨析。空格句指出，好奇心常被认为是有益的本能，但有时这种______会适得其反。由such的回指功能（近指Curiosity，远指The drive to discover、the need to know）可以判断，空格词应体现这两项内容，[C]inquiry表示“为获取信息而询问、打听的过程、举动”，符合要求。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q14",
+          "number": 14,
+          "qtype": "完形",
+          "stem": "第 14 空：选择最合适的词填入空白 [14]",
+          "stem_cn": "",
+          "options": {
+            "A": "self-reliant",
+            "B": "self-destructive",
+            "C": "self-evident",
+            "D": "self-deceptive"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义＋形容词辨析。空格句指出，好奇心会驱使人们去做______的事情，这样的见解很深刻。由上文②句“好奇心有时会适得其反”可知，空格句意在解释说明好奇心的不利之处，空格词应表明这一负面、不利之处，[B]self-destructive符合文意。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q15",
+          "number": 15,
+          "qtype": "完形",
+          "stem": "第 15 空：选择最合适的词填入空白 [15]",
+          "stem_cn": "",
+          "options": {
+            "A": "define",
+            "B": "resist",
+            "C": "replace",
+            "D": "trace"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义＋动词辨析。段际逻辑词however提示语义逻辑：上文论述“好奇心的负作用”，故本段应论述另一面；结合下文②句“……的可能性更小”以及④句“降低好奇心可能的负面影响”可判断：病态程度的好奇心是可以避免或可控的，只有[B]符合文意。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q16",
+          "number": 16,
+          "qtype": "完形",
+          "stem": "第 16 空：选择最合适的词填入空白 [16]",
+          "stem_cn": "",
+          "options": {
+            "A": "overlook",
+            "B": "predict",
+            "C": "design",
+            "D": "conceal"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义＋动词辨析。由过去将来时would feel以及下文③句关键词imagining可知，“看图之后会作何感受”只能是参与者对未来可能情况的想象、预测，[B]正确。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q17",
+          "number": 17,
+          "qtype": "完形",
+          "stem": "第 17 空：选择最合适的词填入空白 [17]",
+          "stem_cn": "",
+          "options": {
+            "A": "remember",
+            "B": "promise",
+            "C": "choose",
+            "D": "pretend"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义＋动词辨析。②句实验结果是对首句结论“病态的好奇心有可能得到抑制”的证明（论据），因此空格部分应该表达“最终做出决定不看这种图”的语义，[C]正确。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q18",
+          "number": 18,
+          "qtype": "完形",
+          "stem": "第 18 空：选择最合适的词填入空白 [18]",
+          "stem_cn": "",
+          "options": {
+            "A": "relief",
+            "B": "plan",
+            "C": "duty",
+            "D": "outcome"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。空格句是由上述实验结果得出的进一步结论，其中imagining the______of following through on one's curiosity ahead of time实际对应上文②句predict how they would feel after viewing...，因此空格词应该能够概括“（……之后）他们作何感受”，[D]outcome表示“结果”，符合文意。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q19",
+          "number": 19,
+          "qtype": "完形",
+          "stem": "第 19 空：选择最合适的词填入空白 [19]",
+          "stem_cn": "",
+          "options": {
+            "A": "why",
+            "B": "whether",
+            "C": "where",
+            "D": "how"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义逻辑。空格部分意为：提前想象坚持好奇心的……有助于判定______值得这一尝试；上文已知那些受邀对结果进行预想的人选择去看这些图的可能性更小，可见文意应该是：这样做有助于衡量自己如此“寻根穷究”是否值得，[B]正确。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        },
+        {
+          "id": "2018_cloze_q20",
+          "number": 20,
+          "qtype": "完形",
+          "stem": "第 20 空：选择最合适的词填入空白 [20]",
+          "stem_cn": "",
+          "options": {
+            "A": "consequences",
+            "B": "investments",
+            "C": "strategies",
+            "D": "limitations"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义＋名词辨析。空格句引证实验结果，故应该与上文③句结论一致，也即，“考虑长期______”和“降低可能的负作用”分别对应上句“提前想象坚持好奇心的结果”和“确定是否值得”，因此空格词应与outcome近义，[A]consequences符合文意。",
+          "related_sentences": [
+            "2018_cloze_s01",
+            "2018_cloze_s02",
+            "2018_cloze_s03",
+            "2018_cloze_s04",
+            "2018_cloze_s05",
+            "2018_cloze_s06",
+            "2018_cloze_s07",
+            "2018_cloze_s08",
+            "2018_cloze_s09",
+            "2018_cloze_s10",
+            "2018_cloze_s11",
+            "2018_cloze_s12",
+            "2018_cloze_s13",
+            "2018_cloze_s14",
+            "2018_cloze_s15",
+            "2018_cloze_s16",
+            "2018_cloze_s17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2018_translation",
+      "type": "translation",
+      "title": "Why Bill Gates Reads 50 Books a Year",
+      "topic": "翻译：热爱阅读的比尔·盖茨——从幼时家庭作业到功成名就后的阅读痴迷，揭示其阅读习惯的由来与坚持。",
+      "source": "Section III Translation",
+      "ref_cn": "一个五年级学生拿到一份家庭作业，要求从一份职业列表中选择将来的职业道路。他勾选了“宇航员”，但很快在表上添加了“科学家”，并将它也选上。这个男孩子相信，只要他读得够多，那么他想探索多少职业道路都可以。于是，他就这样读书——从百科全书到科幻小说，什么都看。他如饥似渴地读书，以至于他的父母不得不立下一条吃饭时“不许看书的规矩”。那个男孩就是比尔·盖茨，而且，他至今依然没有停止阅读——即使他已经成为这颗星球上最成功的人士之一。如今，他阅读的材料已经不再是科幻小说和参考书：最近，他透露说自己一年至少看50本非虚构作品。盖茨之所以选择非虚构作品，是因为它们解释世界是如何运行的。盖茨说：“每本书都开辟出新的知识途径。”",
+      "sentences": [
+        {
+          "id": "2018_translation_s01",
+          "para": 1,
+          "en": "A fifth grader gets a homework assignment to select his future career path from a list of occupations.",
+          "cn": "一个五年级学生拿到一份家庭作业，要求从一份职业列表中选择将来的职业道路。",
+          "words": []
+        },
+        {
+          "id": "2018_translation_s02",
+          "para": 1,
+          "en": "He ticks \"astronaut\" but quickly adds \"scientist\" to the list and selects it as well.",
+          "cn": "他勾选了“宇航员”，但很快在表上添加了“科学家”，并将它也选上。",
+          "words": []
+        },
+        {
+          "id": "2018_translation_s03",
+          "para": 1,
+          "en": "The boy is convinced that if he reads enough, he can explore as many career paths as he likes.",
+          "cn": "这个男孩子相信，只要他读得够多，那么他想探索多少职业道路都可以。",
+          "words": []
+        },
+        {
+          "id": "2018_translation_s04",
+          "para": 1,
+          "en": "And so he reads - everything from encyclopedias to science fiction novels.",
+          "cn": "于是，他就这样读书——从百科全书到科幻小说，什么都看。",
+          "words": []
+        },
+        {
+          "id": "2018_translation_s05",
+          "para": 1,
+          "en": "He reads so passionately that his parents have to institute a \"no reading policy\" at the dinner table.",
+          "cn": "他如饥似渴地读书，以至于他的父母不得不立下一条吃饭时“不许看书的规矩”。",
+          "words": []
+        },
+        {
+          "id": "2018_translation_s06",
+          "para": 2,
+          "en": "That boy was Bill Gates, and he hasn't stopped reading yet - not even after becoming one of the most successful people on the planet.",
+          "cn": "那个男孩就是比尔·盖茨，而且，他至今依然没有停止阅读——即使他已经成为这颗星球上最成功的人士之一。",
+          "words": []
+        },
+        {
+          "id": "2018_translation_s07",
+          "para": 2,
+          "en": "Nowadays, his reading material has changed from science fiction and reference books: recently, he revealed that he reads at least 50 nonfiction books a year.",
+          "cn": "如今，他阅读的材料已经不再是科幻小说和参考书：最近，他透露说自己一年至少看50本非虚构作品。",
+          "words": []
+        },
+        {
+          "id": "2018_translation_s08",
+          "para": 2,
+          "en": "Gates chooses nonfiction titles because they explain how the world works.",
+          "cn": "盖茨之所以选择非虚构作品，是因为它们解释世界是如何运行的。",
+          "words": []
+        },
+        {
+          "id": "2018_translation_s09",
+          "para": 2,
+          "en": "\"Each book opens up new avenues of knowledge to explore\", Gates says.",
+          "cn": "盖茨说：“每本书都开辟出新的知识途径。”",
+          "words": []
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "2018_writinga",
+      "type": "writing_a",
+      "title": "Part A 应用文：道歉信",
+      "topic": "小作文：因故取消旅行计划而无法拜访史密斯教授，写信致歉并解释情况，同时建议另约会面时间。",
+      "source": "Section IV Writing Part A",
+      "sample_en": "Dear Professor Smith,\nI am writing to apologize for not being able to visit you as planned, since I have to cancel my travel plan for some reason. I am terribly sorry for any inconvenience this causes you and any changes that it necessitates in your current plans.\nI have been looking forward to seeing you since we made the appointment. Unexpectedly, I was asked to substitute for a classmate who suddenly fell ill to attend an important meeting. If it is possible, I would like to reschedule our appointment to a time convenient for you.\nThank you for understanding in this matter. Looking forward to your reply.\nSincerely yours,\nLi Ming",
+      "sample_cn": "亲爱的史密斯教授：\n我因故不得不取消旅行计划，因此不能如约拜访您了，特写信向您致歉。给您带来的不便以及给您的计划带来的变动，我深表歉意。\n约定后我就一直很期待见到您。没想到，我临时被要求替代一名突然生病的同学参加一个重要会议。如果可能的话，我想重新约定一个您方便的时间与您见面。\n感谢您对此事的理解。期待您的回复。\n真诚的，\n李明",
+      "questions": []
+    },
+    {
+      "id": "2018_writingb",
+      "type": "writing_b",
+      "title": "Part B 大作文：2017年某市消费者选择餐厅时的关注因素饼状图",
+      "topic": "大作文：根据饼状图写一篇约150词的短文，解读2017年某市消费者选择餐厅时对各因素的关注度并发表评论。",
+      "source": "Section IV Writing Part B",
+      "chart_img": "img/2018_writingb_chart.png",
+      "sample_en": "The pie chart clearly illustrates the factors consumers take into account when selecting a restaurant in a certain city in 2017. Among all of them, distinguishing features of a restaurant account for the largest proportion (36.3%). Next come the service and environment, which constitute 26.8% and 23.8% respectively, much higher than the price (8.4%). Other factors make up 4.7%.\nWhat the statistics reflect is closely related to our economic development. For one thing, as per capita disposable income has risen, more and more people can afford to dine out, and it is natural that they care more about factors offering high-quality enjoyment rather than that of price, which used to be among their primary concerns. For another, an increasing number of restaurants with similar price levels are available to customers, so more attention would be paid to factors as features, service and environment.\nPredictably, the catering consumption upgrade will continue, and catering companies should identify what consumers really need and improve their overall competitive power.",
+      "sample_cn": "①饼状图清晰阐明了2017年某城市消费者选择餐厅时关注的因素。②在所有因素中，餐厅的特色占比最高，为36.3%。③接下来是服务和环境，占比分别是26.8%和23.8%，均远高于占比为8.4%的价格因素。④其他因素占比为4.7%。\n①图中数据所反映的现象与我们的经济发展情况紧密相关。②一方面，随着人均可支配收入的提高，越来越多的人有能力负担外出就餐的支出，他们自然会更看重价格（消费者曾经最看重的因素之一）以外能够提供高品质享受的因素。③另一方面，如今有越来越多同等价位的餐厅可供选择，因此消费者会更多关注产品特色、服务以及环境等因素。\n①可以预见的是，大众餐饮消费升级仍会持续，而餐饮企业应洞察消费者的需求，提升自身综合竞争力。",
+      "questions": []
     }
   ]
 }

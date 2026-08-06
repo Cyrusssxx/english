@@ -10,31 +10,439 @@
       "topic": "教青少年编程：为何越早接触计算机越好",
       "source": "2016 年考研英语（二）Text 1 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2016_text1_s01", "para": 1, "en": "It's true that high-school coding classes aren't essential for learning computer science in college.", "cn": "诚然，高中编码课程对于大学计算机科学的学习并非必不可少。", "words": [ { "w": "coding classes", "meaning": "编码课程" }, { "w": "essential", "meaning": "adj. 必不可少的" }, { "w": "computer science", "meaning": "计算机科学" } ] },
-        { "id": "2016_text1_s02", "para": 1, "en": "Students without experience can catch up after a few introductory courses, said Tom Cortina, the assistant dean at Carnegie Mellon's School of Computer Science.", "cn": "没有经验的学生在几节入门课程之后便可以赶上，卡内基梅隆大学计算机科学学院的副院长汤姆·科尔蒂纳说道。", "words": [ { "w": "catch up", "meaning": "赶上，追上" }, { "w": "introductory courses", "meaning": "入门课程" }, { "w": "assistant dean", "meaning": "副院长" } ] },
-        { "id": "2016_text1_s03", "para": 2, "en": "However, Cortina said, early exposure is beneficial.", "cn": "然而，科尔蒂纳说，早点接触（编码课程）是有益的。", "words": [ { "w": "early exposure", "meaning": "早期接触" }, { "w": "beneficial", "meaning": "adj. 有益的" } ] },
-        { "id": "2016_text1_s04", "para": 2, "en": "When younger kids learn computer science, they learn that it's not just a confusing, endless string of letters and numbers - but a tool to build apps, or create artwork, or test hypotheses.", "cn": "年龄较小的孩子学习计算机科学时，他们认识到它并非只是令人困惑的、无休止的字母与数字组成的字符串——也是构建应用程序、创造艺术作品、检验假设的工具。", "words": [ { "w": "a confusing, endless string", "meaning": "令人困惑的、无休止的字符串" }, { "w": "build apps", "meaning": "构建应用程序" }, { "w": "test hypotheses", "meaning": "检验假设" } ] },
-        { "id": "2016_text1_s05", "para": 2, "en": "It's not as hard for them to transform their thought processes as it is for older students.", "cn": "对于他们来说，转换思维过程不会像年龄较大的学生（转换思维过程）那样难。", "words": [ { "w": "transform their thought processes", "meaning": "转换他们的思维过程" } ] },
-        { "id": "2016_text1_s06", "para": 2, "en": "Breaking down problems into bite-sized chunks and using code to solve them becomes normal.", "cn": "把问题分解成小块然后使用编码解决问题变得稀松平常。", "words": [ { "w": "Breaking down problems", "meaning": "把问题分解" }, { "w": "bite-sized chunks", "meaning": "小块，易消化的小部分" } ] },
-        { "id": "2016_text1_s07", "para": 2, "en": "Giving more children this training could increase the number of people interested in the field and help fill the jobs gap, Cortina said.", "cn": "给予更多的孩子这样的培训会增加对这一领域感兴趣者的人数，从而有助于填补职位缺口，科尔蒂纳说道。", "words": [ { "w": "interested in the field", "meaning": "对该领域感兴趣" }, { "w": "fill the jobs gap", "meaning": "填补职位缺口" } ] },
-        { "id": "2016_text1_s08", "para": 3, "en": "Students also benefit from learning something about coding before they get to college, where introductory computer-science classes are packed to the brim, which can drive the less-experienced or -determined students away.", "cn": "学生在进入大学之前也会从学习一些有关编码的知识中获益，因为在大学里，计算机科学入门课程都排得满满当当，这可能会吓跑那些经验欠缺或意志力不足的学生。", "words": [ { "w": "benefit from", "meaning": "从……中获益" }, { "w": "packed to the brim", "meaning": "满满当当，挤得满满的" }, { "w": "drive the less-experienced or -determined students away", "meaning": "吓跑经验欠缺或意志力不足的学生" } ] },
-        { "id": "2016_text1_s09", "para": 4, "en": "The Flatiron School, where people pay to learn programming, started as one of the many coding bootcamps that's become popular for adults looking for a career change.", "cn": "熨斗学校，人们花钱来学习编程的地方，创办之初只是众多编码训练营之中的一家，现如今已在那些寻求职业转变的成人中大受欢迎。", "words": [ { "w": "coding bootcamps", "meaning": "编码训练营" }, { "w": "a career change", "meaning": "职业转变" } ] },
-        { "id": "2016_text1_s10", "para": 4, "en": "The high-schoolers get the same curriculum, but \"we try to gear lessons toward things they're interested in,\" said Victoria Friedman, an instructor.", "cn": "高中生上相同的课程，但是“我们在努力根据他们的兴趣来调整课程，”一位名叫维多利亚·弗里德曼的讲师说道。", "words": [ { "w": "curriculum", "meaning": "n. 课程（体系）" }, { "w": "gear lessons toward", "meaning": "使课程适应/围绕……" }, { "w": "instructor", "meaning": "n. 讲师，教员" } ] },
-        { "id": "2016_text1_s11", "para": 4, "en": "For instance, one of the apps the students are developing suggests movies based on your mood.", "cn": "例如，学生们正在开发的应用之一就是基于你的心情来推荐电影。", "words": [ { "w": "For instance", "meaning": "例如" }, { "w": "based on your mood", "meaning": "基于你的心情" } ] },
-        { "id": "2016_text1_s12", "para": 5, "en": "The students in the Flatiron class probably won't drop out of high school and build the next Facebook.", "cn": "熨斗课堂的学生很可能不会从高中辍学，去创建下一个 Facebook。", "words": [ { "w": "drop out of high school", "meaning": "从高中辍学" } ] },
-        { "id": "2016_text1_s13", "para": 5, "en": "Programming languages have a quick turnover, so the \"Ruby on Rails\" language they learned may not even be relevant by the time they enter the job market.", "cn": "编程语言更新换代很快，因此他们所学的“Ruby on Rails”语言在他们进入就业市场时可能就已经完全脱节了。", "words": [ { "w": "a quick turnover", "meaning": "快速更新换代" }, { "w": "relevant", "meaning": "adj. 相关的，切合当下的" }, { "w": "the job market", "meaning": "就业市场" } ] },
-        { "id": "2016_text1_s14", "para": 5, "en": "But the skills they learn - how to think logically through a problem and organize the results - apply to any coding language, said Deborah Seehorn, an education consultant for the state of North Carolina.", "cn": "但是他们学到的技能——如何有逻辑地充分思考某问题并整理结果——适用于任何一种编码语言，南卡罗来纳州的一名教育顾问黛博拉·希霍恩说道。", "words": [ { "w": "think logically", "meaning": "有逻辑地思考" }, { "w": "apply to any coding language", "meaning": "适用于任何一种编码语言" }, { "w": "education consultant", "meaning": "教育顾问" } ] },
-        { "id": "2016_text1_s15", "para": 6, "en": "Indeed, the Flatiron students might not go into IT at all.", "cn": "实际上，熨斗学校的学生可能根本不会从事 IT 行业。", "words": [ { "w": "go into IT", "meaning": "进入/从事 IT 行业" } ] },
-        { "id": "2016_text1_s16", "para": 6, "en": "But creating a future army of coders is not the sole purpose of the classes.", "cn": "但是创建一支未来程序员队伍并不是这些课程的唯一目的。", "words": [ { "w": "a future army of coders", "meaning": "一支未来程序员大军" }, { "w": "the sole purpose", "meaning": "唯一目的" } ] },
-        { "id": "2016_text1_s17", "para": 6, "en": "These kids are going to be surrounded by computers - in their pockets, in their offices, in their homes - for the rest of their lives.", "cn": "这些孩子未来的岁月将会被电脑包围——口袋中有电脑、办公室有电脑、家里有电脑。", "words": [ { "w": "surrounded by computers", "meaning": "被电脑包围" }, { "w": "for the rest of their lives", "meaning": "在他们余生中" } ] },
-        { "id": "2016_text1_s18", "para": 6, "en": "The younger they learn how computers think, how to coax the machine into producing what they want - the earlier they learn that they have the power to do that - the better.", "cn": "他们越早学习电脑如何思维，如何劝诱这一机器去制作自己需要的东西——他们越早了解到自己具备这种能力——对他们也越好。", "words": [ { "w": "how computers think", "meaning": "电脑如何思维" }, { "w": "coax the machine into producing", "meaning": "劝诱机器去制作出" }, { "w": "have the power to do that", "meaning": "具备做这件事的能力" } ] }
+        {
+          "id": "2016_text1_s01",
+          "para": 1,
+          "en": "It's true that high-school coding classes aren't essential for learning computer science in college.",
+          "cn": "诚然，高中编码课程对于大学计算机科学的学习并非必不可少。",
+          "words": [
+            {
+              "w": "coding classes",
+              "meaning": "编码课程"
+            },
+            {
+              "w": "essential",
+              "meaning": "adj. 必不可少的"
+            },
+            {
+              "w": "computer science",
+              "meaning": "计算机科学"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s02",
+          "para": 1,
+          "en": "Students without experience can catch up after a few introductory courses, said Tom Cortina, the assistant dean at Carnegie Mellon's School of Computer Science.",
+          "cn": "没有经验的学生在几节入门课程之后便可以赶上，卡内基梅隆大学计算机科学学院的副院长汤姆·科尔蒂纳说道。",
+          "words": [
+            {
+              "w": "catch up",
+              "meaning": "赶上，追上"
+            },
+            {
+              "w": "introductory courses",
+              "meaning": "入门课程"
+            },
+            {
+              "w": "assistant dean",
+              "meaning": "副院长"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s03",
+          "para": 2,
+          "en": "However, Cortina said, early exposure is beneficial.",
+          "cn": "然而，科尔蒂纳说，早点接触（编码课程）是有益的。",
+          "words": [
+            {
+              "w": "early exposure",
+              "meaning": "早期接触"
+            },
+            {
+              "w": "beneficial",
+              "meaning": "adj. 有益的"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s04",
+          "para": 2,
+          "en": "When younger kids learn computer science, they learn that it's not just a confusing, endless string of letters and numbers - but a tool to build apps, or create artwork, or test hypotheses.",
+          "cn": "年龄较小的孩子学习计算机科学时，他们认识到它并非只是令人困惑的、无休止的字母与数字组成的字符串——也是构建应用程序、创造艺术作品、检验假设的工具。",
+          "words": [
+            {
+              "w": "a confusing, endless string",
+              "meaning": "令人困惑的、无休止的字符串"
+            },
+            {
+              "w": "build apps",
+              "meaning": "构建应用程序"
+            },
+            {
+              "w": "test hypotheses",
+              "meaning": "检验假设"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s05",
+          "para": 2,
+          "en": "It's not as hard for them to transform their thought processes as it is for older students.",
+          "cn": "对于他们来说，转换思维过程不会像年龄较大的学生（转换思维过程）那样难。",
+          "words": [
+            {
+              "w": "transform their thought processes",
+              "meaning": "转换他们的思维过程"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s06",
+          "para": 2,
+          "en": "Breaking down problems into bite-sized chunks and using code to solve them becomes normal.",
+          "cn": "把问题分解成小块然后使用编码解决问题变得稀松平常。",
+          "words": [
+            {
+              "w": "Breaking down problems",
+              "meaning": "把问题分解"
+            },
+            {
+              "w": "bite-sized chunks",
+              "meaning": "小块，易消化的小部分"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s07",
+          "para": 2,
+          "en": "Giving more children this training could increase the number of people interested in the field and help fill the jobs gap, Cortina said.",
+          "cn": "给予更多的孩子这样的培训会增加对这一领域感兴趣者的人数，从而有助于填补职位缺口，科尔蒂纳说道。",
+          "words": [
+            {
+              "w": "interested in the field",
+              "meaning": "对该领域感兴趣"
+            },
+            {
+              "w": "fill the jobs gap",
+              "meaning": "填补职位缺口"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s08",
+          "para": 3,
+          "en": "Students also benefit from learning something about coding before they get to college, where introductory computer-science classes are packed to the brim, which can drive the less-experienced or -determined students away.",
+          "cn": "学生在进入大学之前也会从学习一些有关编码的知识中获益，因为在大学里，计算机科学入门课程都排得满满当当，这可能会吓跑那些经验欠缺或意志力不足的学生。",
+          "words": [
+            {
+              "w": "benefit from",
+              "meaning": "从……中获益"
+            },
+            {
+              "w": "packed to the brim",
+              "meaning": "满满当当，挤得满满的"
+            },
+            {
+              "w": "drive the less-experienced or -determined students away",
+              "meaning": "吓跑经验欠缺或意志力不足的学生"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s09",
+          "para": 4,
+          "en": "The Flatiron School, where people pay to learn programming, started as one of the many coding bootcamps that's become popular for adults looking for a career change.",
+          "cn": "熨斗学校，人们花钱来学习编程的地方，创办之初只是众多编码训练营之中的一家，现如今已在那些寻求职业转变的成人中大受欢迎。",
+          "words": [
+            {
+              "w": "coding bootcamps",
+              "meaning": "编码训练营"
+            },
+            {
+              "w": "a career change",
+              "meaning": "职业转变"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s10",
+          "para": 4,
+          "en": "The high-schoolers get the same curriculum, but \"we try to gear lessons toward things they're interested in,\" said Victoria Friedman, an instructor.",
+          "cn": "高中生上相同的课程，但是“我们在努力根据他们的兴趣来调整课程，”一位名叫维多利亚·弗里德曼的讲师说道。",
+          "words": [
+            {
+              "w": "curriculum",
+              "meaning": "n. 课程（体系）"
+            },
+            {
+              "w": "gear lessons toward",
+              "meaning": "使课程适应/围绕……"
+            },
+            {
+              "w": "instructor",
+              "meaning": "n. 讲师，教员"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s11",
+          "para": 4,
+          "en": "For instance, one of the apps the students are developing suggests movies based on your mood.",
+          "cn": "例如，学生们正在开发的应用之一就是基于你的心情来推荐电影。",
+          "words": [
+            {
+              "w": "For instance",
+              "meaning": "例如"
+            },
+            {
+              "w": "based on your mood",
+              "meaning": "基于你的心情"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s12",
+          "para": 5,
+          "en": "The students in the Flatiron class probably won't drop out of high school and build the next Facebook.",
+          "cn": "熨斗课堂的学生很可能不会从高中辍学，去创建下一个 Facebook。",
+          "words": [
+            {
+              "w": "drop out of high school",
+              "meaning": "从高中辍学"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s13",
+          "para": 5,
+          "en": "Programming languages have a quick turnover, so the \"Ruby on Rails\" language they learned may not even be relevant by the time they enter the job market.",
+          "cn": "编程语言更新换代很快，因此他们所学的“Ruby on Rails”语言在他们进入就业市场时可能就已经完全脱节了。",
+          "words": [
+            {
+              "w": "a quick turnover",
+              "meaning": "快速更新换代"
+            },
+            {
+              "w": "relevant",
+              "meaning": "adj. 相关的，切合当下的"
+            },
+            {
+              "w": "the job market",
+              "meaning": "就业市场"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s14",
+          "para": 5,
+          "en": "But the skills they learn - how to think logically through a problem and organize the results - apply to any coding language, said Deborah Seehorn, an education consultant for the state of North Carolina.",
+          "cn": "但是他们学到的技能——如何有逻辑地充分思考某问题并整理结果——适用于任何一种编码语言，南卡罗来纳州的一名教育顾问黛博拉·希霍恩说道。",
+          "words": [
+            {
+              "w": "think logically",
+              "meaning": "有逻辑地思考"
+            },
+            {
+              "w": "apply to any coding language",
+              "meaning": "适用于任何一种编码语言"
+            },
+            {
+              "w": "education consultant",
+              "meaning": "教育顾问"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s15",
+          "para": 6,
+          "en": "Indeed, the Flatiron students might not go into IT at all.",
+          "cn": "实际上，熨斗学校的学生可能根本不会从事 IT 行业。",
+          "words": [
+            {
+              "w": "go into IT",
+              "meaning": "进入/从事 IT 行业"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s16",
+          "para": 6,
+          "en": "But creating a future army of coders is not the sole purpose of the classes.",
+          "cn": "但是创建一支未来程序员队伍并不是这些课程的唯一目的。",
+          "words": [
+            {
+              "w": "a future army of coders",
+              "meaning": "一支未来程序员大军"
+            },
+            {
+              "w": "the sole purpose",
+              "meaning": "唯一目的"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s17",
+          "para": 6,
+          "en": "These kids are going to be surrounded by computers - in their pockets, in their offices, in their homes - for the rest of their lives.",
+          "cn": "这些孩子未来的岁月将会被电脑包围——口袋中有电脑、办公室有电脑、家里有电脑。",
+          "words": [
+            {
+              "w": "surrounded by computers",
+              "meaning": "被电脑包围"
+            },
+            {
+              "w": "for the rest of their lives",
+              "meaning": "在他们余生中"
+            }
+          ]
+        },
+        {
+          "id": "2016_text1_s18",
+          "para": 6,
+          "en": "The younger they learn how computers think, how to coax the machine into producing what they want - the earlier they learn that they have the power to do that - the better.",
+          "cn": "他们越早学习电脑如何思维，如何劝诱这一机器去制作自己需要的东西——他们越早了解到自己具备这种能力——对他们也越好。",
+          "words": [
+            {
+              "w": "how computers think",
+              "meaning": "电脑如何思维"
+            },
+            {
+              "w": "coax the machine into producing",
+              "meaning": "劝诱机器去制作出"
+            },
+            {
+              "w": "have the power to do that",
+              "meaning": "具备做这件事的能力"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2016_text1_q1", "number": 21, "qtype": "detail", "stem": "Cortina holds that early exposure to computer science makes it easier to ___.", "stem_cn": "科尔蒂纳认为早点接触计算机科学会使___变得更容易。", "options": { "A": "complete future job training", "B": "remodel the way of thinking", "C": "formulate logical hypotheses", "D": "perfect artwork production" }, "options_cn": { "A": "完成未来工作培训", "B": "重塑思维方式", "C": "构想逻辑假设", "D": "完善艺术制作" }, "answer": "B", "explanation": "第二段指出，年龄较小的孩子学计算机时“转换思维过程不会像大龄学生那样难”，即年少时接触计算机比成年后更易改变思维方式，[B] remodel the way of thinking 是对 transform their thought processes 的同义改写，正确。[A] 利用 training、jobs gap 夸大为“完成工作培训”；[C][D] 分别偷换 test hypotheses、create artwork，且不符合“越早越容易”这一信息。", "related_sentences": [ "2016_text1_s04", "2016_text1_s05" ] },
-        { "id": "2016_text1_q2", "number": 22, "qtype": "detail", "stem": "In delivering lessons for high-schoolers, Flatiron has considered their ___.", "stem_cn": "在为高中生上课时，Flatiron 学校考虑到了他们的___。", "options": { "A": "experience", "B": "interest", "C": "career prospects", "D": "academic backgrounds" }, "options_cn": { "A": "经历", "B": "兴趣", "C": "职业前景", "D": "学术背景" }, "answer": "B", "explanation": "第四段指出高中生上同样的课程，而 Flatiron 的不同之处在于“努力根据学生的兴趣来调整课程（gear lessons toward things they're interested in）”，可见“兴趣”是其考虑的因素，[B] 正确。[A][C] 利用“该校受寻求职业转变的成年人欢迎”臆测，与题干所问的“高中生”无关；[D] 为捕风捉影的捏造。", "related_sentences": [ "2016_text1_s10" ] },
-        { "id": "2016_text1_q3", "number": 23, "qtype": "detail", "stem": "Deborah Seehorn believes that the skills learned at Flatiron will ___.", "stem_cn": "黛博拉·希霍恩认为在 Flatiron 学校学到的技能会___。", "options": { "A": "help students learn other computer languages", "B": "have to be upgraded when new technologies come", "C": "need improving when students look for jobs", "D": "enable students to make big quick money" }, "options_cn": { "A": "有助于学生掌握其他计算机语言", "B": "在新科技到来时不得不进行改进", "C": "在学生找工作时需要提高", "D": "使学生能够快速地赚大钱" }, "answer": "A", "explanation": "第五段指出，虽然所学编程语言更新换代很快，但学到的技能（逻辑性、条理性）“适用于任何一种编码语言（apply to any coding language）”，即有助于学生掌握其他计算机语言，[A] 正确。[B][C] 利用“当前所学语言未必适用于未来”过度推断为“技能须改进/提高”；[D] 利用 turnover 曲解词义、凭空捏造。", "related_sentences": [ "2016_text1_s14" ] },
-        { "id": "2016_text1_q4", "number": 24, "qtype": "inference", "stem": "According to the last paragraph, Flatiron students are expected to ___.", "stem_cn": "根据最后一段可知，Flatiron 学校的学生预计会___。", "options": { "A": "bring forth innovative computer technologies", "B": "stay longer in the information technology industry", "C": "become better prepared for the digitalized world", "D": "compete with a future army of programmers" }, "options_cn": { "A": "带来创新的计算机技术", "B": "在 IT 行业从业较长时间", "C": "为数字化的世界做好更充分的准备", "D": "与未来的程序员大军竞争" }, "answer": "C", "explanation": "末段指出培养编码大军并非课程唯一目的，随后说明：计算机将持续包围人们的生活，越早了解计算机、让其为我所用就越好，即 Flatiron 还致力于“使人更好应对数字时代”，[C] 正确。[A] 过度推出“带来创新技术”；[B] 与“可能根本不从事 IT”反向矛盾；[D] 利用 a future army of coders 编造。", "related_sentences": [ "2016_text1_s16", "2016_text1_s17", "2016_text1_s18" ] },
-        { "id": "2016_text1_q5", "number": 25, "qtype": "vocabulary", "stem": "The word \"coax\" (Line 4, Para. 6) is closest in meaning to ___.", "stem_cn": "与“coax”（第六段第四行）含义最接近的是___。", "options": { "A": "persuade", "B": "frighten", "C": "misguide", "D": "challenge" }, "options_cn": { "A": "劝服", "B": "吓唬", "C": "误导", "D": "挑战" }, "answer": "A", "explanation": "由第六段末句语境可知，让青少年学计算机的目的是利用计算机处理实际问题，即用编码语言“与机器对话、向其发出命令”以开发应用满足生活需求，coax the machine into producing 即“劝诱机器制作出所需之物”，故 [A] persuade 符合，正确。[B] frighten...into 表“把……吓得做某事”，感情色彩相悖；[C][D] 从形式与内容上均不符。", "related_sentences": [ "2016_text1_s18" ] }
+        {
+          "id": "2016_text1_q1",
+          "number": 21,
+          "qtype": "detail",
+          "stem": "Cortina holds that early exposure to computer science makes it easier to ___.",
+          "stem_cn": "科尔蒂纳认为早点接触计算机科学会使___变得更容易。",
+          "options": {
+            "A": "complete future job training",
+            "B": "remodel the way of thinking",
+            "C": "formulate logical hypotheses",
+            "D": "perfect artwork production"
+          },
+          "options_cn": {
+            "A": "完成未来工作培训",
+            "B": "重塑思维方式",
+            "C": "构想逻辑假设",
+            "D": "完善艺术制作"
+          },
+          "answer": "B",
+          "explanation": "第二段指出，年龄较小的孩子学计算机时“转换思维过程不会像大龄学生那样难”，即年少时接触计算机比成年后更易改变思维方式，[B] remodel the way of thinking 是对 transform their thought processes 的同义改写，正确。[A] 利用 training、jobs gap 夸大为“完成工作培训”；[C][D] 分别偷换 test hypotheses、create artwork，且不符合“越早越容易”这一信息。",
+          "related_sentences": [
+            "2016_text1_s04",
+            "2016_text1_s05"
+          ]
+        },
+        {
+          "id": "2016_text1_q2",
+          "number": 22,
+          "qtype": "detail",
+          "stem": "In delivering lessons for high-schoolers, Flatiron has considered their ___.",
+          "stem_cn": "在为高中生上课时，Flatiron 学校考虑到了他们的___。",
+          "options": {
+            "A": "experience",
+            "B": "interest",
+            "C": "career prospects",
+            "D": "academic backgrounds"
+          },
+          "options_cn": {
+            "A": "经历",
+            "B": "兴趣",
+            "C": "职业前景",
+            "D": "学术背景"
+          },
+          "answer": "B",
+          "explanation": "第四段指出高中生上同样的课程，而 Flatiron 的不同之处在于“努力根据学生的兴趣来调整课程（gear lessons toward things they're interested in）”，可见“兴趣”是其考虑的因素，[B] 正确。[A][C] 利用“该校受寻求职业转变的成年人欢迎”臆测，与题干所问的“高中生”无关；[D] 为捕风捉影的捏造。",
+          "related_sentences": [
+            "2016_text1_s10"
+          ]
+        },
+        {
+          "id": "2016_text1_q3",
+          "number": 23,
+          "qtype": "detail",
+          "stem": "Deborah Seehorn believes that the skills learned at Flatiron will ___.",
+          "stem_cn": "黛博拉·希霍恩认为在 Flatiron 学校学到的技能会___。",
+          "options": {
+            "A": "help students learn other computer languages",
+            "B": "have to be upgraded when new technologies come",
+            "C": "need improving when students look for jobs",
+            "D": "enable students to make big quick money"
+          },
+          "options_cn": {
+            "A": "有助于学生掌握其他计算机语言",
+            "B": "在新科技到来时不得不进行改进",
+            "C": "在学生找工作时需要提高",
+            "D": "使学生能够快速地赚大钱"
+          },
+          "answer": "A",
+          "explanation": "第五段指出，虽然所学编程语言更新换代很快，但学到的技能（逻辑性、条理性）“适用于任何一种编码语言（apply to any coding language）”，即有助于学生掌握其他计算机语言，[A] 正确。[B][C] 利用“当前所学语言未必适用于未来”过度推断为“技能须改进/提高”；[D] 利用 turnover 曲解词义、凭空捏造。",
+          "related_sentences": [
+            "2016_text1_s14"
+          ]
+        },
+        {
+          "id": "2016_text1_q4",
+          "number": 24,
+          "qtype": "inference",
+          "stem": "According to the last paragraph, Flatiron students are expected to ___.",
+          "stem_cn": "根据最后一段可知，Flatiron 学校的学生预计会___。",
+          "options": {
+            "A": "bring forth innovative computer technologies",
+            "B": "stay longer in the information technology industry",
+            "C": "become better prepared for the digitalized world",
+            "D": "compete with a future army of programmers"
+          },
+          "options_cn": {
+            "A": "带来创新的计算机技术",
+            "B": "在 IT 行业从业较长时间",
+            "C": "为数字化的世界做好更充分的准备",
+            "D": "与未来的程序员大军竞争"
+          },
+          "answer": "C",
+          "explanation": "末段指出培养编码大军并非课程唯一目的，随后说明：计算机将持续包围人们的生活，越早了解计算机、让其为我所用就越好，即 Flatiron 还致力于“使人更好应对数字时代”，[C] 正确。[A] 过度推出“带来创新技术”；[B] 与“可能根本不从事 IT”反向矛盾；[D] 利用 a future army of coders 编造。",
+          "related_sentences": [
+            "2016_text1_s16",
+            "2016_text1_s17",
+            "2016_text1_s18"
+          ]
+        },
+        {
+          "id": "2016_text1_q5",
+          "number": 25,
+          "qtype": "vocabulary",
+          "stem": "The word \"coax\" (Line 4, Para. 6) is closest in meaning to ___.",
+          "stem_cn": "与“coax”（第六段第四行）含义最接近的是___。",
+          "options": {
+            "A": "persuade",
+            "B": "frighten",
+            "C": "misguide",
+            "D": "challenge"
+          },
+          "options_cn": {
+            "A": "劝服",
+            "B": "吓唬",
+            "C": "误导",
+            "D": "挑战"
+          },
+          "answer": "A",
+          "explanation": "由第六段末句语境可知，让青少年学计算机的目的是利用计算机处理实际问题，即用编码语言“与机器对话、向其发出命令”以开发应用满足生活需求，coax the machine into producing 即“劝诱机器制作出所需之物”，故 [A] persuade 符合，正确。[B] frighten...into 表“把……吓得做某事”，感情色彩相悖；[C][D] 从形式与内容上均不符。",
+          "related_sentences": [
+            "2016_text1_s18"
+          ]
+        }
       ]
     },
     {
@@ -44,31 +452,459 @@
       "topic": "拯救小草原松鸡：受威胁标签背后的合作与争议",
       "source": "2016 年考研英语（二）Text 2 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2016_text2_s01", "para": 1, "en": "Biologists estimate that as many as 2 million lesser prairie chickens - a kind of bird living on stretching grasslands - once lent red to the often grey landscape of the midwestern and southwestern United States.", "cn": "生物学家估计，多达 200 万只的小草原榛鸡——一种栖息于绵延草地的鸟类——曾为美国中西部和西南部常年灰暗的风景增添了一抹红色。", "words": [ { "w": "Biologists estimate", "meaning": "生物学家估计" }, { "w": "lesser prairie chickens", "meaning": "小草原松鸡" }, { "w": "stretching grasslands", "meaning": "绵延的草地" } ] },
-        { "id": "2016_text2_s02", "para": 1, "en": "But just some 22,000 birds remain today, occupying about 16% of the species' historic range.", "cn": "但如今仅剩下约 2.2 万只，栖息地约为该物种历史分布范围的 16%。", "words": [ { "w": "occupying", "meaning": "v. 占据，占用" }, { "w": "the species' historic range", "meaning": "该物种的历史分布范围" } ] },
-        { "id": "2016_text2_s03", "para": 2, "en": "The crash was a major reason the U.S. Fish and Wildlife Service (USFWS) decided to formally list the bird as threatened.", "cn": "这种急剧下降是美国鱼类及野生动物管理局（USFWS）决定正式将该鸟类列为受威胁物种的一个主要原因。", "words": [ { "w": "The crash", "meaning": "（数量的）骤降，崩塌" }, { "w": "a major reason", "meaning": "一个主要原因" }, { "w": "list the bird as threatened", "meaning": "将该鸟列为受威胁物种" } ] },
-        { "id": "2016_text2_s04", "para": 2, "en": "\"The lesser prairie chicken is in a desperate situation,\" said USFWS Director Daniel Ashe.", "cn": "“小草原榛鸡处于危急状态，”USFWS 局长丹尼尔·阿什说道。", "words": [ { "w": "a desperate situation", "meaning": "危急状态" }, { "w": "Director", "meaning": "n. 局长，主任" } ] },
-        { "id": "2016_text2_s05", "para": 2, "en": "Some environmentalists, however, were disappointed.", "cn": "然而一些环保主义者对此决定感到失望。", "words": [ { "w": "environmentalists", "meaning": "n. 环保主义者" }, { "w": "disappointed", "meaning": "adj. 失望的" } ] },
-        { "id": "2016_text2_s06", "para": 2, "en": "They had pushed the agency to designate the bird as \"endangered,\" a status that gives federal officials greater regulatory power to crack down on threats.", "cn": "他们曾敦促该机构将这一鸟类认定为“濒危物种”，这一定位会给予联邦官员更大的监管权力，以打击对该物种的威胁。", "words": [ { "w": "designate the bird as", "meaning": "将该鸟认定为" }, { "w": "greater regulatory power", "meaning": "更大的监管权力" }, { "w": "crack down on", "meaning": "打击，严厉整治" } ] },
-        { "id": "2016_text2_s07", "para": 2, "en": "But Ashe and others argued that the \"threatened\" tag gave the federal government flexibility to try out new, potentially less confrontational conservation approaches.", "cn": "但是阿什及其他人士坚称，“受威胁物种”标签给了联邦政府尝试“新的、潜在对抗性较低的保护方法”的灵活性。", "words": [ { "w": "flexibility", "meaning": "n. 灵活性" }, { "w": "less confrontational", "meaning": "对抗性较低的" }, { "w": "conservation approaches", "meaning": "保护方法" } ] },
-        { "id": "2016_text2_s08", "para": 2, "en": "In particular, they called for forging closer collaborations with western state governments, which are often uneasy with federal action, and with the private landowners who control an estimated 95% of the prairie chicken's habitat.", "cn": "特别是，他们呼吁与西部各州政府（通常不满联邦政府的行动）以及私人土地所有者（控制着约 95% 的草原榛鸡栖息地）缔造更紧密的合作关系。", "words": [ { "w": "called for", "meaning": "呼吁，要求" }, { "w": "forging closer collaborations", "meaning": "缔造更紧密的合作" }, { "w": "private landowners", "meaning": "私人土地所有者" } ] },
-        { "id": "2016_text2_s09", "para": 3, "en": "Under the plan, for example, the agency said it would not prosecute landowners or businesses that unintentionally kill, harm, or disturb the bird, as long as they had signed a range-wide management plan to restore prairie chicken habitat.", "cn": "例如，根据该计划，只要土地所有者或企业签署了一份旨在恢复草原榛鸡栖息地的全域管理计划，该机构就不会对那些无意中杀死、伤害或惊扰该鸟类的土地所有者或企业提起诉讼。", "words": [ { "w": "prosecute", "meaning": "v. 起诉，检控" }, { "w": "unintentionally", "meaning": "adv. 非故意地" }, { "w": "range-wide management plan", "meaning": "大范围管理计划" }, { "w": "restore", "meaning": "v. 恢复，复原" } ] },
-        { "id": "2016_text2_s10", "para": 3, "en": "Negotiated by USFWS and the states, the plan requires individuals and businesses that damage habitat as part of their operations to pay into a fund to replace every acre destroyed with 2 new acres of suitable habitat.", "cn": "该计划由 USFWS 与各州协商制定，要求那些在其经营活动中破坏栖息地的个人和企业向一项基金付款，以便每破坏一英亩栖息地就用两英亩新的适宜栖息地加以补偿。", "words": [ { "w": "Negotiated by", "meaning": "经……协商" }, { "w": "pay into a fund", "meaning": "向一项基金付款" }, { "w": "suitable habitat", "meaning": "适宜的栖息地" } ] },
-        { "id": "2016_text2_s11", "para": 3, "en": "The fund will also be used to compensate landowners who set aside habitat.", "cn": "该基金还将用于补偿那些留出栖息地的土地所有者。", "words": [ { "w": "compensate", "meaning": "v. 补偿，赔偿" }, { "w": "set aside habitat", "meaning": "留出/保留栖息地" } ] },
-        { "id": "2016_text2_s12", "para": 3, "en": "USFWS also set an interim goal of restoring prairie chicken populations to an annual average of 67,000 birds over the next 10 years.", "cn": "USFWS 还设定了一个阶段性目标，即在未来 10 年内将草原榛鸡的种群数量恢复到年均 6.7 万只。", "words": [ { "w": "an interim goal", "meaning": "一个阶段性/暂时性目标" }, { "w": "an annual average", "meaning": "年平均值" } ] },
-        { "id": "2016_text2_s13", "para": 3, "en": "And it gives the Western Association of Fish and Wildlife Agencies (WAFWA), a coalition of state agencies, the job of monitoring progress.", "cn": "它还把监测进展的工作交给了西部鱼类及野生动物机构协会（WAFWA）——一个由各州机构组成的联盟。", "words": [ { "w": "a coalition of state agencies", "meaning": "州级机构联盟" }, { "w": "monitoring progress", "meaning": "监督进程" } ] },
-        { "id": "2016_text2_s14", "para": 3, "en": "Overall, the idea is to let \"states remain in the driver's seat for managing the species,\" Ashe said.", "cn": "阿什说，总体而言，其理念是让“各州在管理该物种方面继续处于主导地位”。", "words": [ { "w": "Overall", "meaning": "adv. 总的说来，总体上" }, { "w": "remain in the driver's seat", "meaning": "处于主导/掌控地位" } ] },
-        { "id": "2016_text2_s15", "para": 4, "en": "Not everyone buys the win-win rhetoric.", "cn": "不是每个人都接受这种双赢说辞。", "words": [ { "w": "buys", "meaning": "v. 接受，相信（此处引申义）" }, { "w": "the win-win rhetoric", "meaning": "双赢说辞" } ] },
-        { "id": "2016_text2_s16", "para": 4, "en": "Some Congress members are trying to block the plan, and at least a dozen industry groups, four states, and three environmental groups are challenging it in federal court.", "cn": "一些国会议员正试图阻挠该计划的实施，且至少有十几个行业团体、四个州以及三个环境保护组织正在联邦法庭上对其发起质疑。", "words": [ { "w": "block the plan", "meaning": "阻挠该计划" }, { "w": "industry groups", "meaning": "行业团体" }, { "w": "challenging it in federal court", "meaning": "在联邦法庭上对其发起质疑" } ] },
-        { "id": "2016_text2_s17", "para": 4, "en": "Not surprisingly, industry groups and states generally argue it goes too far; environmentalists say it doesn't go far enough.", "cn": "行业团体和各州普遍认为它做得太过，而环保主义者表示它做得还不够，这并不令人意外。", "words": [ { "w": "Not surprisingly", "meaning": "不出所料，并不令人意外" }, { "w": "goes too far", "meaning": "做得太过分" }, { "w": "doesn't go far enough", "meaning": "做得还不够" } ] },
-        { "id": "2016_text2_s18", "para": 4, "en": "\"The federal government is giving responsibility for managing the bird to the same industries that are pushing it to extinction,\" says biologist Jay Lininger.", "cn": "“联邦政府正将对该鸟类的管理责任交给恰恰是正在将其推向灭绝的行业，”生物学家杰伊·林恩格说道。", "words": [ { "w": "giving responsibility for", "meaning": "把……的责任交给" }, { "w": "pushing it to extinction", "meaning": "将其推向灭绝" } ] }
+        {
+          "id": "2016_text2_s01",
+          "para": 1,
+          "en": "Biologists estimate that as many as 2 million lesser prairie chickens - a kind of bird living on stretching grasslands - once lent red to the often grey landscape of the midwestern and southwestern United States.",
+          "cn": "生物学家估计，多达 200 万只的小草原榛鸡——一种栖息于绵延草地的鸟类——曾为美国中西部和西南部常年灰暗的风景增添了一抹红色。",
+          "words": [
+            {
+              "w": "Biologists estimate",
+              "meaning": "生物学家估计"
+            },
+            {
+              "w": "lesser prairie chickens",
+              "meaning": "小草原松鸡"
+            },
+            {
+              "w": "stretching grasslands",
+              "meaning": "绵延的草地"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s02",
+          "para": 1,
+          "en": "But just some 22,000 birds remain today, occupying about 16% of the species' historic range.",
+          "cn": "但如今仅剩下约 2.2 万只，栖息地约为该物种历史分布范围的 16%。",
+          "words": [
+            {
+              "w": "occupying",
+              "meaning": "v. 占据，占用"
+            },
+            {
+              "w": "the species' historic range",
+              "meaning": "该物种的历史分布范围"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s03",
+          "para": 2,
+          "en": "The crash was a major reason the U.S. Fish and Wildlife Service (USFWS) decided to formally list the bird as threatened.",
+          "cn": "这种急剧下降是美国鱼类及野生动物管理局（USFWS）决定正式将该鸟类列为受威胁物种的一个主要原因。",
+          "words": [
+            {
+              "w": "The crash",
+              "meaning": "（数量的）骤降，崩塌"
+            },
+            {
+              "w": "a major reason",
+              "meaning": "一个主要原因"
+            },
+            {
+              "w": "list the bird as threatened",
+              "meaning": "将该鸟列为受威胁物种"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s04",
+          "para": 2,
+          "en": "\"The lesser prairie chicken is in a desperate situation,\" said USFWS Director Daniel Ashe.",
+          "cn": "“小草原榛鸡处于危急状态，”USFWS 局长丹尼尔·阿什说道。",
+          "words": [
+            {
+              "w": "a desperate situation",
+              "meaning": "危急状态"
+            },
+            {
+              "w": "Director",
+              "meaning": "n. 局长，主任"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s05",
+          "para": 2,
+          "en": "Some environmentalists, however, were disappointed.",
+          "cn": "然而一些环保主义者对此决定感到失望。",
+          "words": [
+            {
+              "w": "environmentalists",
+              "meaning": "n. 环保主义者"
+            },
+            {
+              "w": "disappointed",
+              "meaning": "adj. 失望的"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s06",
+          "para": 2,
+          "en": "They had pushed the agency to designate the bird as \"endangered,\" a status that gives federal officials greater regulatory power to crack down on threats.",
+          "cn": "他们曾敦促该机构将这一鸟类认定为“濒危物种”，这一定位会给予联邦官员更大的监管权力，以打击对该物种的威胁。",
+          "words": [
+            {
+              "w": "designate the bird as",
+              "meaning": "将该鸟认定为"
+            },
+            {
+              "w": "greater regulatory power",
+              "meaning": "更大的监管权力"
+            },
+            {
+              "w": "crack down on",
+              "meaning": "打击，严厉整治"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s07",
+          "para": 2,
+          "en": "But Ashe and others argued that the \"threatened\" tag gave the federal government flexibility to try out new, potentially less confrontational conservation approaches.",
+          "cn": "但是阿什及其他人士坚称，“受威胁物种”标签给了联邦政府尝试“新的、潜在对抗性较低的保护方法”的灵活性。",
+          "words": [
+            {
+              "w": "flexibility",
+              "meaning": "n. 灵活性"
+            },
+            {
+              "w": "less confrontational",
+              "meaning": "对抗性较低的"
+            },
+            {
+              "w": "conservation approaches",
+              "meaning": "保护方法"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s08",
+          "para": 2,
+          "en": "In particular, they called for forging closer collaborations with western state governments, which are often uneasy with federal action, and with the private landowners who control an estimated 95% of the prairie chicken's habitat.",
+          "cn": "特别是，他们呼吁与西部各州政府（通常不满联邦政府的行动）以及私人土地所有者（控制着约 95% 的草原榛鸡栖息地）缔造更紧密的合作关系。",
+          "words": [
+            {
+              "w": "called for",
+              "meaning": "呼吁，要求"
+            },
+            {
+              "w": "forging closer collaborations",
+              "meaning": "缔造更紧密的合作"
+            },
+            {
+              "w": "private landowners",
+              "meaning": "私人土地所有者"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s09",
+          "para": 3,
+          "en": "Under the plan, for example, the agency said it would not prosecute landowners or businesses that unintentionally kill, harm, or disturb the bird, as long as they had signed a range-wide management plan to restore prairie chicken habitat.",
+          "cn": "例如，根据该计划，只要土地所有者或企业签署了一份旨在恢复草原榛鸡栖息地的全域管理计划，该机构就不会对那些无意中杀死、伤害或惊扰该鸟类的土地所有者或企业提起诉讼。",
+          "words": [
+            {
+              "w": "prosecute",
+              "meaning": "v. 起诉，检控"
+            },
+            {
+              "w": "unintentionally",
+              "meaning": "adv. 非故意地"
+            },
+            {
+              "w": "range-wide management plan",
+              "meaning": "大范围管理计划"
+            },
+            {
+              "w": "restore",
+              "meaning": "v. 恢复，复原"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s10",
+          "para": 3,
+          "en": "Negotiated by USFWS and the states, the plan requires individuals and businesses that damage habitat as part of their operations to pay into a fund to replace every acre destroyed with 2 new acres of suitable habitat.",
+          "cn": "该计划由 USFWS 与各州协商制定，要求那些在其经营活动中破坏栖息地的个人和企业向一项基金付款，以便每破坏一英亩栖息地就用两英亩新的适宜栖息地加以补偿。",
+          "words": [
+            {
+              "w": "Negotiated by",
+              "meaning": "经……协商"
+            },
+            {
+              "w": "pay into a fund",
+              "meaning": "向一项基金付款"
+            },
+            {
+              "w": "suitable habitat",
+              "meaning": "适宜的栖息地"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s11",
+          "para": 3,
+          "en": "The fund will also be used to compensate landowners who set aside habitat.",
+          "cn": "该基金还将用于补偿那些留出栖息地的土地所有者。",
+          "words": [
+            {
+              "w": "compensate",
+              "meaning": "v. 补偿，赔偿"
+            },
+            {
+              "w": "set aside habitat",
+              "meaning": "留出/保留栖息地"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s12",
+          "para": 3,
+          "en": "USFWS also set an interim goal of restoring prairie chicken populations to an annual average of 67,000 birds over the next 10 years.",
+          "cn": "USFWS 还设定了一个阶段性目标，即在未来 10 年内将草原榛鸡的种群数量恢复到年均 6.7 万只。",
+          "words": [
+            {
+              "w": "an interim goal",
+              "meaning": "一个阶段性/暂时性目标"
+            },
+            {
+              "w": "an annual average",
+              "meaning": "年平均值"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s13",
+          "para": 3,
+          "en": "And it gives the Western Association of Fish and Wildlife Agencies (WAFWA), a coalition of state agencies, the job of monitoring progress.",
+          "cn": "它还把监测进展的工作交给了西部鱼类及野生动物机构协会（WAFWA）——一个由各州机构组成的联盟。",
+          "words": [
+            {
+              "w": "a coalition of state agencies",
+              "meaning": "州级机构联盟"
+            },
+            {
+              "w": "monitoring progress",
+              "meaning": "监督进程"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s14",
+          "para": 3,
+          "en": "Overall, the idea is to let \"states remain in the driver's seat for managing the species,\" Ashe said.",
+          "cn": "阿什说，总体而言，其理念是让“各州在管理该物种方面继续处于主导地位”。",
+          "words": [
+            {
+              "w": "Overall",
+              "meaning": "adv. 总的说来，总体上"
+            },
+            {
+              "w": "remain in the driver's seat",
+              "meaning": "处于主导/掌控地位"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s15",
+          "para": 4,
+          "en": "Not everyone buys the win-win rhetoric.",
+          "cn": "不是每个人都接受这种双赢说辞。",
+          "words": [
+            {
+              "w": "buys",
+              "meaning": "v. 接受，相信（此处引申义）"
+            },
+            {
+              "w": "the win-win rhetoric",
+              "meaning": "双赢说辞"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s16",
+          "para": 4,
+          "en": "Some Congress members are trying to block the plan, and at least a dozen industry groups, four states, and three environmental groups are challenging it in federal court.",
+          "cn": "一些国会议员正试图阻挠该计划的实施，且至少有十几个行业团体、四个州以及三个环境保护组织正在联邦法庭上对其发起质疑。",
+          "words": [
+            {
+              "w": "block the plan",
+              "meaning": "阻挠该计划"
+            },
+            {
+              "w": "industry groups",
+              "meaning": "行业团体"
+            },
+            {
+              "w": "challenging it in federal court",
+              "meaning": "在联邦法庭上对其发起质疑"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s17",
+          "para": 4,
+          "en": "Not surprisingly, industry groups and states generally argue it goes too far; environmentalists say it doesn't go far enough.",
+          "cn": "行业团体和各州普遍认为它做得太过，而环保主义者表示它做得还不够，这并不令人意外。",
+          "words": [
+            {
+              "w": "Not surprisingly",
+              "meaning": "不出所料，并不令人意外"
+            },
+            {
+              "w": "goes too far",
+              "meaning": "做得太过分"
+            },
+            {
+              "w": "doesn't go far enough",
+              "meaning": "做得还不够"
+            }
+          ]
+        },
+        {
+          "id": "2016_text2_s18",
+          "para": 4,
+          "en": "\"The federal government is giving responsibility for managing the bird to the same industries that are pushing it to extinction,\" says biologist Jay Lininger.",
+          "cn": "“联邦政府正将对该鸟类的管理责任交给恰恰是正在将其推向灭绝的行业，”生物学家杰伊·林恩格说道。",
+          "words": [
+            {
+              "w": "giving responsibility for",
+              "meaning": "把……的责任交给"
+            },
+            {
+              "w": "pushing it to extinction",
+              "meaning": "将其推向灭绝"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2016_text2_q1", "number": 26, "qtype": "detail", "stem": "The major reason for listing the lesser prairie chicken as threatened is ___.", "stem_cn": "将小草原松鸡列为受威胁物种的主要原因是___。", "options": { "A": "its drastically decreased population", "B": "the underestimate of the grassland acreage", "C": "a desperate appeal from some biologists", "D": "the insistence of private landowners" }, "options_cn": { "A": "其数量大幅下降", "B": "草原面积被低估", "C": "一些生物学家的迫切呼吁", "D": "私有土地所有者的坚持" }, "answer": "A", "explanation": "第二段①句指出“这种急剧下降（The crash）”是列为受威胁物种的主要原因，而 The crash 回指第一段“小草原松鸡数量及栖息地的锐减”，故 [A] its drastically decreased population 正确。[B] 将“栖息地面积缩减”篡改为“草原面积被低估”；[C] 把“环保人士呼吁列为濒危”偷换为“生物学家呼吁”；[D] 因果倒置。", "related_sentences": [ "2016_text2_s03", "2016_text2_s01" ] },
-        { "id": "2016_text2_q2", "number": 27, "qtype": "detail", "stem": "The \"threatened\" tag disappointed some environmentalists in that it ___.", "stem_cn": "“受威胁”标签令一些环保主义者感到失望，是因为它___。", "options": { "A": "was a give-in to governmental pressure", "B": "would involve fewer agencies in action", "C": "granted less federal regulatory power", "D": "went against conservation policies" }, "options_cn": { "A": "是对政府压力的一种屈服", "B": "会使参与行动的机构变少", "C": "赋予了较小的联邦监管权", "D": "与保护政策相违背" }, "answer": "C", "explanation": "第二段③④句指出：一些环保主义者失望，因为他们曾敦促将该鸟列为“濒危”——那一身份能给联邦官员更大的监管权力；反过来说“受威胁”标签意味着联邦监管权力较小，故 [C] 正确。[A] 误把 They 理解为“政府”；[B] 与原文推断完全相反；[D] 对 confrontational conservation approaches 断章取义。", "related_sentences": [ "2016_text2_s06", "2016_text2_s07" ] },
-        { "id": "2016_text2_q3", "number": 28, "qtype": "detail", "stem": "It can be learned from Paragraph 3 that unintentional harm-doers will not be prosecuted if they ___.", "stem_cn": "从第三段可知，非故意伤害者将不会被起诉，如果他们___。", "options": { "A": "agree to pay a sum for compensation", "B": "volunteer to set up an equally big habitat", "C": "offer to support the WAFWA monitoring job", "D": "promise to raise funds for USFWS operations" }, "options_cn": { "A": "同意支付一笔赔偿金", "B": "自愿建立一个同样大小的栖息地", "C": "愿意支持 WAFWA 的监督工作", "D": "承诺为 USFWS 的运作筹集资金" }, "answer": "A", "explanation": "第三段前两句指出：非故意伤害者不被起诉的条件是签署恢复栖息地的管理计划，而该计划要求破坏栖息地者向保护基金付款（用2倍土地替代被破坏栖息地）。综合可知条件是向基金支付补偿金，[A] 正确。[B] 中 equally big 属捏造；[C] 强加关联；[D] 将“个人企业的运作”“保护基金”杂糅捏造。", "related_sentences": [ "2016_text2_s09", "2016_text2_s10" ] },
-        { "id": "2016_text2_q4", "number": 29, "qtype": "detail", "stem": "According to Ashe, the leading role in managing the species is ___.", "stem_cn": "根据阿什所说，在管理该物种中扮演主导角色的是___。", "options": { "A": "the federal government", "B": "the wildlife agencies", "C": "the landowners", "D": "the states" }, "options_cn": { "A": "联邦政府", "B": "野生动物机构", "C": "土地所有者", "D": "各州" }, "answer": "D", "explanation": "第三段末句总结：其基本理念是让“各州处于管理该物种的主导地位（states remain in the driver's seat）”，故 [D] 正确。[A] 将“给联邦政府更多灵活性”曲解为“让其主导”；[B] 把“负责监督进程”错误等同于“主导管理”，且负责监督的是 WAFWA；[C] 由“控制大部分栖息地”过度推断。", "related_sentences": [ "2016_text2_s14" ] },
-        { "id": "2016_text2_q5", "number": 30, "qtype": "inference", "stem": "Jay Lininger would most likely support ___.", "stem_cn": "杰伊·林恩格最可能支持___。", "options": { "A": "industry groups", "B": "the win-win rhetoric", "C": "environmental groups", "D": "the plan under challenge" }, "options_cn": { "A": "行业团体", "B": "双赢说辞", "C": "环保团体", "D": "受到挑战的计划" }, "answer": "C", "explanation": "末段引 Jay Lininger 的话：联邦政府是在把管理责任推给正在将该物种推向灭绝的行业，可见他认为联邦政府应自己承担主要责任，而不应交给各州和各行业，这与环保主义者观点一致，故 [C] 正确。[A] 与其批评各行业的态度相悖；[B][D] 均与其质疑该方案的立场矛盾。", "related_sentences": [ "2016_text2_s18" ] }
+        {
+          "id": "2016_text2_q1",
+          "number": 26,
+          "qtype": "detail",
+          "stem": "The major reason for listing the lesser prairie chicken as threatened is ___.",
+          "stem_cn": "将小草原松鸡列为受威胁物种的主要原因是___。",
+          "options": {
+            "A": "its drastically decreased population",
+            "B": "the underestimate of the grassland acreage",
+            "C": "a desperate appeal from some biologists",
+            "D": "the insistence of private landowners"
+          },
+          "options_cn": {
+            "A": "其数量大幅下降",
+            "B": "草原面积被低估",
+            "C": "一些生物学家的迫切呼吁",
+            "D": "私有土地所有者的坚持"
+          },
+          "answer": "A",
+          "explanation": "第二段①句指出“这种急剧下降（The crash）”是列为受威胁物种的主要原因，而 The crash 回指第一段“小草原松鸡数量及栖息地的锐减”，故 [A] its drastically decreased population 正确。[B] 将“栖息地面积缩减”篡改为“草原面积被低估”；[C] 把“环保人士呼吁列为濒危”偷换为“生物学家呼吁”；[D] 因果倒置。",
+          "related_sentences": [
+            "2016_text2_s03",
+            "2016_text2_s01"
+          ]
+        },
+        {
+          "id": "2016_text2_q2",
+          "number": 27,
+          "qtype": "detail",
+          "stem": "The \"threatened\" tag disappointed some environmentalists in that it ___.",
+          "stem_cn": "“受威胁”标签令一些环保主义者感到失望，是因为它___。",
+          "options": {
+            "A": "was a give-in to governmental pressure",
+            "B": "would involve fewer agencies in action",
+            "C": "granted less federal regulatory power",
+            "D": "went against conservation policies"
+          },
+          "options_cn": {
+            "A": "是对政府压力的一种屈服",
+            "B": "会使参与行动的机构变少",
+            "C": "赋予了较小的联邦监管权",
+            "D": "与保护政策相违背"
+          },
+          "answer": "C",
+          "explanation": "第二段③④句指出：一些环保主义者失望，因为他们曾敦促将该鸟列为“濒危”——那一身份能给联邦官员更大的监管权力；反过来说“受威胁”标签意味着联邦监管权力较小，故 [C] 正确。[A] 误把 They 理解为“政府”；[B] 与原文推断完全相反；[D] 对 confrontational conservation approaches 断章取义。",
+          "related_sentences": [
+            "2016_text2_s06",
+            "2016_text2_s07"
+          ]
+        },
+        {
+          "id": "2016_text2_q3",
+          "number": 28,
+          "qtype": "detail",
+          "stem": "It can be learned from Paragraph 3 that unintentional harm-doers will not be prosecuted if they ___.",
+          "stem_cn": "从第三段可知，非故意伤害者将不会被起诉，如果他们___。",
+          "options": {
+            "A": "agree to pay a sum for compensation",
+            "B": "volunteer to set up an equally big habitat",
+            "C": "offer to support the WAFWA monitoring job",
+            "D": "promise to raise funds for USFWS operations"
+          },
+          "options_cn": {
+            "A": "同意支付一笔赔偿金",
+            "B": "自愿建立一个同样大小的栖息地",
+            "C": "愿意支持 WAFWA 的监督工作",
+            "D": "承诺为 USFWS 的运作筹集资金"
+          },
+          "answer": "A",
+          "explanation": "第三段前两句指出：非故意伤害者不被起诉的条件是签署恢复栖息地的管理计划，而该计划要求破坏栖息地者向保护基金付款（用2倍土地替代被破坏栖息地）。综合可知条件是向基金支付补偿金，[A] 正确。[B] 中 equally big 属捏造；[C] 强加关联；[D] 将“个人企业的运作”“保护基金”杂糅捏造。",
+          "related_sentences": [
+            "2016_text2_s09",
+            "2016_text2_s10"
+          ]
+        },
+        {
+          "id": "2016_text2_q4",
+          "number": 29,
+          "qtype": "detail",
+          "stem": "According to Ashe, the leading role in managing the species is ___.",
+          "stem_cn": "根据阿什所说，在管理该物种中扮演主导角色的是___。",
+          "options": {
+            "A": "the federal government",
+            "B": "the wildlife agencies",
+            "C": "the landowners",
+            "D": "the states"
+          },
+          "options_cn": {
+            "A": "联邦政府",
+            "B": "野生动物机构",
+            "C": "土地所有者",
+            "D": "各州"
+          },
+          "answer": "D",
+          "explanation": "第三段末句总结：其基本理念是让“各州处于管理该物种的主导地位（states remain in the driver's seat）”，故 [D] 正确。[A] 将“给联邦政府更多灵活性”曲解为“让其主导”；[B] 把“负责监督进程”错误等同于“主导管理”，且负责监督的是 WAFWA；[C] 由“控制大部分栖息地”过度推断。",
+          "related_sentences": [
+            "2016_text2_s14"
+          ]
+        },
+        {
+          "id": "2016_text2_q5",
+          "number": 30,
+          "qtype": "inference",
+          "stem": "Jay Lininger would most likely support ___.",
+          "stem_cn": "杰伊·林恩格最可能支持___。",
+          "options": {
+            "A": "industry groups",
+            "B": "the win-win rhetoric",
+            "C": "environmental groups",
+            "D": "the plan under challenge"
+          },
+          "options_cn": {
+            "A": "行业团体",
+            "B": "双赢说辞",
+            "C": "环保团体",
+            "D": "受到挑战的计划"
+          },
+          "answer": "C",
+          "explanation": "末段引 Jay Lininger 的话：联邦政府是在把管理责任推给正在将该物种推向灭绝的行业，可见他认为联邦政府应自己承担主要责任，而不应交给各州和各行业，这与环保主义者观点一致，故 [C] 正确。[A] 与其批评各行业的态度相悖；[B][D] 均与其质疑该方案的立场矛盾。",
+          "related_sentences": [
+            "2016_text2_s18"
+          ]
+        }
       ]
     },
     {
@@ -78,32 +914,470 @@
       "topic": "如何找时间阅读：效率思维为何是深度阅读之敌",
       "source": "2016 年考研英语（二）Text 3 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2016_text3_s01", "para": 1, "en": "That everyone's too busy these days is a cliche.", "cn": "现在人人都太忙，这是老生常谈。", "words": [ { "w": "a cliche", "meaning": "陈词滥调，老生常谈" } ] },
-        { "id": "2016_text3_s02", "para": 1, "en": "But one specific complaint is made especially mournfully: There's never any time to read.", "cn": "但是，一个具体而又极其悲哀的抱怨是：根本没时间阅读。", "words": [ { "w": "one specific complaint", "meaning": "一个具体的抱怨" }, { "w": "mournfully", "meaning": "adv. 悲哀地，哀伤地" } ] },
-        { "id": "2016_text3_s03", "para": 2, "en": "What makes the problem thornier is that the usual time-management techniques don't seem sufficient.", "cn": "使这一问题更加棘手的是，那些常规的时间管理技巧似乎并不奏效。", "words": [ { "w": "thornier", "meaning": "adj. 更棘手的（thorny 比较级）" }, { "w": "time-management techniques", "meaning": "时间管理技巧" }, { "w": "sufficient", "meaning": "adj. 足够的，充分的" } ] },
-        { "id": "2016_text3_s04", "para": 2, "en": "The web's full of articles offering tips on making time to read: \"Give up TV\" or \"Carry a book with you at all times.\"", "cn": "网上有很多介绍“腾出时间阅读”小窍门的文章，比如“不看电视”、“身边随时带一本书”。", "words": [ { "w": "offering tips on", "meaning": "提供关于……的窍门" }, { "w": "making time to read", "meaning": "腾出时间阅读" } ] },
-        { "id": "2016_text3_s05", "para": 2, "en": "But in my experience, using such methods to free up the odd 30 minutes doesn't work.", "cn": "但根据我的经验，采用这些窍门挤出个 30 来分钟并没什么用。", "words": [ { "w": "free up", "meaning": "腾出，释放（时间）" }, { "w": "the odd 30 minutes", "meaning": "零星的30来分钟" } ] },
-        { "id": "2016_text3_s06", "para": 2, "en": "Sit down to read and the flywheel of work-related thoughts keeps spinning - or else you're so exhausted that a challenging book's the last thing you need.", "cn": "坐下来认真阅读却发现与工作相关的思绪飞轮始终转个不停——要不就是极度疲惫，以至于阅读一本有挑战的书成为你最不想去做的事。", "words": [ { "w": "the flywheel of work-related thoughts", "meaning": "与工作相关的思绪飞轮" }, { "w": "keeps spinning", "meaning": "不停旋转" }, { "w": "exhausted", "meaning": "adj. 精疲力竭的" } ] },
-        { "id": "2016_text3_s07", "para": 2, "en": "The modern mind, Tim Parks, a novelist and critic, writes, \"is overwhelmingly inclined toward communication... It is not simply that one is interrupted; it is that one is actually inclined to interruption.\"", "cn": "小说家兼评论家蒂姆·帕克斯写道：现代人的大脑“非常愿意交流……不是被打断这么简单，而是人们真的愿意中断。”", "words": [ { "w": "The modern mind", "meaning": "现代人的头脑/心智" }, { "w": "inclined toward communication", "meaning": "倾向于交流" }, { "w": "interruption", "meaning": "n. 打断，中断" } ] },
-        { "id": "2016_text3_s08", "para": 2, "en": "Deep reading requires not just time, but a special kind of time which can't be obtained merely by becoming more efficient.", "cn": "深度阅读需要的不只是时间，而是一种特殊的时间，这种时间仅仅靠提高效率是无法得到的。", "words": [ { "w": "Deep reading", "meaning": "深度阅读" }, { "w": "a special kind of time", "meaning": "一种特殊的时间" }, { "w": "becoming more efficient", "meaning": "变得更高效" } ] },
-        { "id": "2016_text3_s09", "para": 3, "en": "In fact, \"becoming more efficient\" is part of the problem.", "cn": "事实上，“变得更加高效”是问题的一部分。", "words": [ { "w": "part of the problem", "meaning": "问题的一部分" } ] },
-        { "id": "2016_text3_s10", "para": 3, "en": "Thinking of time as a resource to be maximised means you approach it instrumentally, judging any given moment as well spent only in so far as it advances progress toward some goal.", "cn": "把时间看作一种要最大限度利用的资源意味着你功利性地对待时间：认为每一刻都应该充分利用起来以使其向着某一既定目标迈进。", "words": [ { "w": "a resource to be maximised", "meaning": "一种要最大化利用的资源" }, { "w": "approach it instrumentally", "meaning": "功利性地/工具性地对待它" }, { "w": "advances progress toward", "meaning": "推动朝……的进展" } ] },
-        { "id": "2016_text3_s11", "para": 3, "en": "Immersive reading, by contrast, depends on being willing to risk inefficiency, goallessness, even time-wasting.", "cn": "相形之下，沉浸式阅读需要人们愿意承担低效率、无目标、甚至浪费时间的风险。", "words": [ { "w": "Immersive reading", "meaning": "沉浸式阅读" }, { "w": "by contrast", "meaning": "相比之下" }, { "w": "risk inefficiency", "meaning": "冒低效率的风险" } ] },
-        { "id": "2016_text3_s12", "para": 3, "en": "Try to slot it in as a to-do list item and you'll manage only goal-focused reading - useful, sometimes, but not the most fulfilling kind.", "cn": "将之放在任务清单里只能进行目标集中式阅读——有时候有用，但是并非是最令人满足的阅读方式。", "words": [ { "w": "slot it in", "meaning": "把它塞入（安排进）" }, { "w": "a to-do list item", "meaning": "任务清单上的一项" }, { "w": "goal-focused reading", "meaning": "目标集中式阅读" } ] },
-        { "id": "2016_text3_s13", "para": 3, "en": "\"The future comes at us like empty bottles along an unstoppable and nearly infinite conveyor belt,\" writes Gary Eberle in his book Sacred Time, and \"we feel a pressure to fill these different-sized bottles (days, hours, minutes) as they pass, for if they get by without being filled, we will have wasted them.\"", "cn": "“未来就像永不停歇、永无止境传送带上的空瓶子一样向我们走来”，盖里·埃伯利在他《神圣的时间》一书中写道：“随着时间的流逝，我们要把这些不同大小的瓶子（天，小时，分钟）装满，对此我们倍感压力，因为如果它们没有被装满就过去了的话，我们就是浪费了时间。”", "words": [ { "w": "empty bottles", "meaning": "空瓶子" }, { "w": "conveyor belt", "meaning": "传送带" }, { "w": "feel a pressure to fill", "meaning": "感到有把……装满的压力" } ] },
-        { "id": "2016_text3_s14", "para": 3, "en": "No mind-set could be worse for losing yourself in a book.", "cn": "没有什么思维模式比这种思维模式更不利于沉浸在书本中了。", "words": [ { "w": "mind-set", "meaning": "n. 思维模式，心态" }, { "w": "losing yourself in a book", "meaning": "沉浸在书本中" } ] },
-        { "id": "2016_text3_s15", "para": 4, "en": "So what does work? Perhaps surprisingly, scheduling regular times for reading.", "cn": "那什么才起作用呢？安排固定时间阅读，这也许出人意料。", "words": [ { "w": "what does work", "meaning": "什么才管用" }, { "w": "scheduling regular times", "meaning": "安排固定的时间" } ] },
-        { "id": "2016_text3_s16", "para": 4, "en": "You'd think this might fuel the efficiency mind-set, but in fact, Eberle notes, such ritualistic behaviour helps us \"step outside time's flow\" into \"soul time.\"", "cn": "你或许认为这可能会加剧“效率至上”的思维倾向，但实际上，埃伯利指出，这种例行行为帮助我们“从时间的流逝中走出来”，进入“灵魂时间”。", "words": [ { "w": "fuel the efficiency mind-set", "meaning": "助长效率至上的思维" }, { "w": "ritualistic behaviour", "meaning": "例行/仪式化的行为" }, { "w": "step outside time's flow", "meaning": "从时间的流逝中走出来" } ] },
-        { "id": "2016_text3_s17", "para": 4, "en": "You could limit distractions by reading only physical books, or on single-purpose e-readers.", "cn": "你可以通过只阅读纸质书或在只有单一功能的电子阅读器上阅读来减少干扰。", "words": [ { "w": "limit distractions", "meaning": "减少干扰" }, { "w": "physical books", "meaning": "纸质书" }, { "w": "single-purpose e-readers", "meaning": "单一功能的电子阅读器" } ] },
-        { "id": "2016_text3_s18", "para": 4, "en": "\"Carry a book with you at all times\" can actually work, too - providing you dip in often enough, so that reading becomes the default state from which you temporarily surface to take care of business, before dropping back down.", "cn": "“随时随身携带一本书”其实也可行——如果你能够频繁地沉入其中，这样阅读就成了你的默认状态，从中你可以暂时脱离开来处理工作，然后再沉浸进去。", "words": [ { "w": "providing", "meaning": "conj. 假如，只要" }, { "w": "dip in", "meaning": "随时翻阅，短暂投入" }, { "w": "the default state", "meaning": "默认状态" } ] },
-        { "id": "2016_text3_s19", "para": 4, "en": "On a really good day, it no longer feels as if you're \"making time to read,\" but just reading, and making time for everything else.", "cn": "在一个着实美好的日子里，你不会再感觉像是在“挤时间阅读”，而是仅仅在阅读，并且是要挤时间去做其他事。", "words": [ { "w": "On a really good day", "meaning": "在真正美好的一天" }, { "w": "making time for everything else", "meaning": "为其他一切事情挤出时间" } ] }
+        {
+          "id": "2016_text3_s01",
+          "para": 1,
+          "en": "That everyone's too busy these days is a cliche.",
+          "cn": "现在人人都太忙，这是老生常谈。",
+          "words": [
+            {
+              "w": "a cliche",
+              "meaning": "陈词滥调，老生常谈"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s02",
+          "para": 1,
+          "en": "But one specific complaint is made especially mournfully: There's never any time to read.",
+          "cn": "但是，一个具体而又极其悲哀的抱怨是：根本没时间阅读。",
+          "words": [
+            {
+              "w": "one specific complaint",
+              "meaning": "一个具体的抱怨"
+            },
+            {
+              "w": "mournfully",
+              "meaning": "adv. 悲哀地，哀伤地"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s03",
+          "para": 2,
+          "en": "What makes the problem thornier is that the usual time-management techniques don't seem sufficient.",
+          "cn": "使这一问题更加棘手的是，那些常规的时间管理技巧似乎并不奏效。",
+          "words": [
+            {
+              "w": "thornier",
+              "meaning": "adj. 更棘手的（thorny 比较级）"
+            },
+            {
+              "w": "time-management techniques",
+              "meaning": "时间管理技巧"
+            },
+            {
+              "w": "sufficient",
+              "meaning": "adj. 足够的，充分的"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s04",
+          "para": 2,
+          "en": "The web's full of articles offering tips on making time to read: \"Give up TV\" or \"Carry a book with you at all times.\"",
+          "cn": "网上有很多介绍“腾出时间阅读”小窍门的文章，比如“不看电视”、“身边随时带一本书”。",
+          "words": [
+            {
+              "w": "offering tips on",
+              "meaning": "提供关于……的窍门"
+            },
+            {
+              "w": "making time to read",
+              "meaning": "腾出时间阅读"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s05",
+          "para": 2,
+          "en": "But in my experience, using such methods to free up the odd 30 minutes doesn't work.",
+          "cn": "但根据我的经验，采用这些窍门挤出个 30 来分钟并没什么用。",
+          "words": [
+            {
+              "w": "free up",
+              "meaning": "腾出，释放（时间）"
+            },
+            {
+              "w": "the odd 30 minutes",
+              "meaning": "零星的30来分钟"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s06",
+          "para": 2,
+          "en": "Sit down to read and the flywheel of work-related thoughts keeps spinning - or else you're so exhausted that a challenging book's the last thing you need.",
+          "cn": "坐下来认真阅读却发现与工作相关的思绪飞轮始终转个不停——要不就是极度疲惫，以至于阅读一本有挑战的书成为你最不想去做的事。",
+          "words": [
+            {
+              "w": "the flywheel of work-related thoughts",
+              "meaning": "与工作相关的思绪飞轮"
+            },
+            {
+              "w": "keeps spinning",
+              "meaning": "不停旋转"
+            },
+            {
+              "w": "exhausted",
+              "meaning": "adj. 精疲力竭的"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s07",
+          "para": 2,
+          "en": "The modern mind, Tim Parks, a novelist and critic, writes, \"is overwhelmingly inclined toward communication... It is not simply that one is interrupted; it is that one is actually inclined to interruption.\"",
+          "cn": "小说家兼评论家蒂姆·帕克斯写道：现代人的大脑“非常愿意交流……不是被打断这么简单，而是人们真的愿意中断。”",
+          "words": [
+            {
+              "w": "The modern mind",
+              "meaning": "现代人的头脑/心智"
+            },
+            {
+              "w": "inclined toward communication",
+              "meaning": "倾向于交流"
+            },
+            {
+              "w": "interruption",
+              "meaning": "n. 打断，中断"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s08",
+          "para": 2,
+          "en": "Deep reading requires not just time, but a special kind of time which can't be obtained merely by becoming more efficient.",
+          "cn": "深度阅读需要的不只是时间，而是一种特殊的时间，这种时间仅仅靠提高效率是无法得到的。",
+          "words": [
+            {
+              "w": "Deep reading",
+              "meaning": "深度阅读"
+            },
+            {
+              "w": "a special kind of time",
+              "meaning": "一种特殊的时间"
+            },
+            {
+              "w": "becoming more efficient",
+              "meaning": "变得更高效"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s09",
+          "para": 3,
+          "en": "In fact, \"becoming more efficient\" is part of the problem.",
+          "cn": "事实上，“变得更加高效”是问题的一部分。",
+          "words": [
+            {
+              "w": "part of the problem",
+              "meaning": "问题的一部分"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s10",
+          "para": 3,
+          "en": "Thinking of time as a resource to be maximised means you approach it instrumentally, judging any given moment as well spent only in so far as it advances progress toward some goal.",
+          "cn": "把时间看作一种要最大限度利用的资源意味着你功利性地对待时间：认为每一刻都应该充分利用起来以使其向着某一既定目标迈进。",
+          "words": [
+            {
+              "w": "a resource to be maximised",
+              "meaning": "一种要最大化利用的资源"
+            },
+            {
+              "w": "approach it instrumentally",
+              "meaning": "功利性地/工具性地对待它"
+            },
+            {
+              "w": "advances progress toward",
+              "meaning": "推动朝……的进展"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s11",
+          "para": 3,
+          "en": "Immersive reading, by contrast, depends on being willing to risk inefficiency, goallessness, even time-wasting.",
+          "cn": "相形之下，沉浸式阅读需要人们愿意承担低效率、无目标、甚至浪费时间的风险。",
+          "words": [
+            {
+              "w": "Immersive reading",
+              "meaning": "沉浸式阅读"
+            },
+            {
+              "w": "by contrast",
+              "meaning": "相比之下"
+            },
+            {
+              "w": "risk inefficiency",
+              "meaning": "冒低效率的风险"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s12",
+          "para": 3,
+          "en": "Try to slot it in as a to-do list item and you'll manage only goal-focused reading - useful, sometimes, but not the most fulfilling kind.",
+          "cn": "将之放在任务清单里只能进行目标集中式阅读——有时候有用，但是并非是最令人满足的阅读方式。",
+          "words": [
+            {
+              "w": "slot it in",
+              "meaning": "把它塞入（安排进）"
+            },
+            {
+              "w": "a to-do list item",
+              "meaning": "任务清单上的一项"
+            },
+            {
+              "w": "goal-focused reading",
+              "meaning": "目标集中式阅读"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s13",
+          "para": 3,
+          "en": "\"The future comes at us like empty bottles along an unstoppable and nearly infinite conveyor belt,\" writes Gary Eberle in his book Sacred Time, and \"we feel a pressure to fill these different-sized bottles (days, hours, minutes) as they pass, for if they get by without being filled, we will have wasted them.\"",
+          "cn": "“未来就像永不停歇、永无止境传送带上的空瓶子一样向我们走来”，盖里·埃伯利在他《神圣的时间》一书中写道：“随着时间的流逝，我们要把这些不同大小的瓶子（天，小时，分钟）装满，对此我们倍感压力，因为如果它们没有被装满就过去了的话，我们就是浪费了时间。”",
+          "words": [
+            {
+              "w": "empty bottles",
+              "meaning": "空瓶子"
+            },
+            {
+              "w": "conveyor belt",
+              "meaning": "传送带"
+            },
+            {
+              "w": "feel a pressure to fill",
+              "meaning": "感到有把……装满的压力"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s14",
+          "para": 3,
+          "en": "No mind-set could be worse for losing yourself in a book.",
+          "cn": "没有什么思维模式比这种思维模式更不利于沉浸在书本中了。",
+          "words": [
+            {
+              "w": "mind-set",
+              "meaning": "n. 思维模式，心态"
+            },
+            {
+              "w": "losing yourself in a book",
+              "meaning": "沉浸在书本中"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s15",
+          "para": 4,
+          "en": "So what does work? Perhaps surprisingly, scheduling regular times for reading.",
+          "cn": "那什么才起作用呢？安排固定时间阅读，这也许出人意料。",
+          "words": [
+            {
+              "w": "what does work",
+              "meaning": "什么才管用"
+            },
+            {
+              "w": "scheduling regular times",
+              "meaning": "安排固定的时间"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s16",
+          "para": 4,
+          "en": "You'd think this might fuel the efficiency mind-set, but in fact, Eberle notes, such ritualistic behaviour helps us \"step outside time's flow\" into \"soul time.\"",
+          "cn": "你或许认为这可能会加剧“效率至上”的思维倾向，但实际上，埃伯利指出，这种例行行为帮助我们“从时间的流逝中走出来”，进入“灵魂时间”。",
+          "words": [
+            {
+              "w": "fuel the efficiency mind-set",
+              "meaning": "助长效率至上的思维"
+            },
+            {
+              "w": "ritualistic behaviour",
+              "meaning": "例行/仪式化的行为"
+            },
+            {
+              "w": "step outside time's flow",
+              "meaning": "从时间的流逝中走出来"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s17",
+          "para": 4,
+          "en": "You could limit distractions by reading only physical books, or on single-purpose e-readers.",
+          "cn": "你可以通过只阅读纸质书或在只有单一功能的电子阅读器上阅读来减少干扰。",
+          "words": [
+            {
+              "w": "limit distractions",
+              "meaning": "减少干扰"
+            },
+            {
+              "w": "physical books",
+              "meaning": "纸质书"
+            },
+            {
+              "w": "single-purpose e-readers",
+              "meaning": "单一功能的电子阅读器"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s18",
+          "para": 4,
+          "en": "\"Carry a book with you at all times\" can actually work, too - providing you dip in often enough, so that reading becomes the default state from which you temporarily surface to take care of business, before dropping back down.",
+          "cn": "“随时随身携带一本书”其实也可行——如果你能够频繁地沉入其中，这样阅读就成了你的默认状态，从中你可以暂时脱离开来处理工作，然后再沉浸进去。",
+          "words": [
+            {
+              "w": "providing",
+              "meaning": "conj. 假如，只要"
+            },
+            {
+              "w": "dip in",
+              "meaning": "随时翻阅，短暂投入"
+            },
+            {
+              "w": "the default state",
+              "meaning": "默认状态"
+            }
+          ]
+        },
+        {
+          "id": "2016_text3_s19",
+          "para": 4,
+          "en": "On a really good day, it no longer feels as if you're \"making time to read,\" but just reading, and making time for everything else.",
+          "cn": "在一个着实美好的日子里，你不会再感觉像是在“挤时间阅读”，而是仅仅在阅读，并且是要挤时间去做其他事。",
+          "words": [
+            {
+              "w": "On a really good day",
+              "meaning": "在真正美好的一天"
+            },
+            {
+              "w": "making time for everything else",
+              "meaning": "为其他一切事情挤出时间"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2016_text3_q1", "number": 31, "qtype": "detail", "stem": "The usual time-management techniques don't work because ___.", "stem_cn": "常规的时间管理技巧不起作用的原因是___。", "options": { "A": "what they can offer does not ease the modern mind", "B": "what challenging books demand is repetitive reading", "C": "what people often forget is carrying a book with them", "D": "what deep reading requires cannot be guaranteed" }, "options_cn": { "A": "它们所提供的东西不能使现代人放松", "B": "具有挑战性的书需要的是反复阅读", "C": "人们经常忘记的是随身携带一本书", "D": "深度阅读所需要的无法得到保证" }, "answer": "D", "explanation": "第二段指出常规时间管理技巧不可行，末句总结根本原因：深度阅读需要的不只是普通时间，而是一种“仅凭提高效率无法获得的特殊时间”，故 [D] cannot be guaranteed 是对末句的合理概括，正确。[A] 在“技巧不能让人放松”与“技巧不管用”间强加因果；[B][C] 分别对 challenging book、Carry a book 断章取义。", "related_sentences": [ "2016_text3_s08" ] },
-        { "id": "2016_text3_q2", "number": 32, "qtype": "inference", "stem": "The \"empty bottles\" metaphor illustrates that people feel a pressure to ___.", "stem_cn": "“空瓶子”的隐喻表明人们感到有压力去___。", "options": { "A": "update their to-do lists", "B": "make passing time fulfilling", "C": "carry their plans through", "D": "pursue carefree reading" }, "options_cn": { "A": "更新他们的任务清单", "B": "让流逝的时间充实起来", "C": "完成他们的计划", "D": "追求无忧无虑的阅读" }, "answer": "B", "explanation": "第三段的“空瓶子”隐喻把“未来”比作沿传送带不断运来的空瓶子，说明人们迫切地想把这些象征“时间”的瓶子装满，否则就是虚度光阴，即人们因“想把流逝的时间安排得充实”而备受压力，故 [B] make passing time fulfilling 与原文 fill these different-sized bottles as they pass 相对应，正确。[A][C][D] 均为杂糅细节或无关捏造。", "related_sentences": [ "2016_text3_s13" ] },
-        { "id": "2016_text3_q3", "number": 33, "qtype": "detail", "stem": "Eberle would agree that scheduling regular times for reading helps ___.", "stem_cn": "埃伯利赞同安排固定时间段阅读有助于___。", "options": { "A": "encourage the efficiency mind-set", "B": "develop online reading habits", "C": "promote ritualistic reading", "D": "achieve immersive reading" }, "options_cn": { "A": "激励效率至上的思维模式", "B": "培养在线阅读的习惯", "C": "促进例行性阅读", "D": "实现沉浸式阅读" }, "answer": "D", "explanation": "第四段借 Eberle 观点说明“固定时间阅读”的作用：帮助人们挣脱“时间的流逝”，进入“灵魂时间”，联系上文即不再为浪费时间而惶恐、实现纯粹的沉浸式阅读，故 [D] achieve immersive reading 正确。[A] 出自“让步”逻辑的惯常看法；[B] 对“只读纸质书”断章取义；[C] 是常识推断，并非文中 Eberle 的观点。", "related_sentences": [ "2016_text3_s16" ] },
-        { "id": "2016_text3_q4", "number": 34, "qtype": "detail", "stem": "\"Carry a book with you at all times\" can work if ___.", "stem_cn": "“始终随身携带一本书”会起作用，如果___。", "options": { "A": "reading becomes your primary business of the day", "B": "all the daily business has been promptly dealt with", "C": "you are able to drop back to business after reading", "D": "time can be evenly split for reading and business" }, "options_cn": { "A": "阅读成为你一天当中的首要事务", "B": "所有的日常事务都已得到立即处理", "C": "你能够在阅读之后返回到工作中去", "D": "时间可以平均分配给阅读和工作" }, "answer": "A", "explanation": "第四段末尾指出“随身携带一本书”起作用的条件（providing 意为“如果”）：能经常沉浸书中、阅读成为默认状态，其他事务变为附带，即阅读成为高于其他事务的首要事务，故 [A] 正确。[B] 把“短暂浮出处理事务”偷换为“所有事务立即处理”；[C] 颠倒关系；[D] 与“阅读为主”矛盾。", "related_sentences": [ "2016_text3_s18" ] },
-        { "id": "2016_text3_q5", "number": 35, "qtype": "main_idea", "stem": "The best title for this text could be ___.", "stem_cn": "本文最佳标题可能是___。", "options": { "A": "How to Enjoy Easy Reading", "B": "How to Find Time to Read", "C": "How to Set Reading Goals", "D": "How to Read Extensively" }, "options_cn": { "A": "如何享受轻松阅读", "B": "如何找时间阅读", "C": "如何设定阅读目标", "D": "如何广泛阅读" }, "answer": "B", "explanation": "全文首段提出“人们总抱怨没时间阅读”，二三段分析常见时间管理技巧不可行的根本原因，末段提出建议：安排固定时间、把阅读当“主业”，可见全文围绕“如何找时间阅读”给出可行办法，故 [B] 正确。标题须涵盖“阅读、时间”两个关键信息，[A][C][D] 均遗漏“时间”，且 enjoy、reading goals、extensively 为捕风捉影。", "related_sentences": [ "2016_text3_s01", "2016_text3_s02", "2016_text3_s15" ] }
+        {
+          "id": "2016_text3_q1",
+          "number": 31,
+          "qtype": "detail",
+          "stem": "The usual time-management techniques don't work because ___.",
+          "stem_cn": "常规的时间管理技巧不起作用的原因是___。",
+          "options": {
+            "A": "what they can offer does not ease the modern mind",
+            "B": "what challenging books demand is repetitive reading",
+            "C": "what people often forget is carrying a book with them",
+            "D": "what deep reading requires cannot be guaranteed"
+          },
+          "options_cn": {
+            "A": "它们所提供的东西不能使现代人放松",
+            "B": "具有挑战性的书需要的是反复阅读",
+            "C": "人们经常忘记的是随身携带一本书",
+            "D": "深度阅读所需要的无法得到保证"
+          },
+          "answer": "D",
+          "explanation": "第二段指出常规时间管理技巧不可行，末句总结根本原因：深度阅读需要的不只是普通时间，而是一种“仅凭提高效率无法获得的特殊时间”，故 [D] cannot be guaranteed 是对末句的合理概括，正确。[A] 在“技巧不能让人放松”与“技巧不管用”间强加因果；[B][C] 分别对 challenging book、Carry a book 断章取义。",
+          "related_sentences": [
+            "2016_text3_s08"
+          ]
+        },
+        {
+          "id": "2016_text3_q2",
+          "number": 32,
+          "qtype": "inference",
+          "stem": "The \"empty bottles\" metaphor illustrates that people feel a pressure to ___.",
+          "stem_cn": "“空瓶子”的隐喻表明人们感到有压力去___。",
+          "options": {
+            "A": "update their to-do lists",
+            "B": "make passing time fulfilling",
+            "C": "carry their plans through",
+            "D": "pursue carefree reading"
+          },
+          "options_cn": {
+            "A": "更新他们的任务清单",
+            "B": "让流逝的时间充实起来",
+            "C": "完成他们的计划",
+            "D": "追求无忧无虑的阅读"
+          },
+          "answer": "B",
+          "explanation": "第三段的“空瓶子”隐喻把“未来”比作沿传送带不断运来的空瓶子，说明人们迫切地想把这些象征“时间”的瓶子装满，否则就是虚度光阴，即人们因“想把流逝的时间安排得充实”而备受压力，故 [B] make passing time fulfilling 与原文 fill these different-sized bottles as they pass 相对应，正确。[A][C][D] 均为杂糅细节或无关捏造。",
+          "related_sentences": [
+            "2016_text3_s13"
+          ]
+        },
+        {
+          "id": "2016_text3_q3",
+          "number": 33,
+          "qtype": "detail",
+          "stem": "Eberle would agree that scheduling regular times for reading helps ___.",
+          "stem_cn": "埃伯利赞同安排固定时间段阅读有助于___。",
+          "options": {
+            "A": "encourage the efficiency mind-set",
+            "B": "develop online reading habits",
+            "C": "promote ritualistic reading",
+            "D": "achieve immersive reading"
+          },
+          "options_cn": {
+            "A": "激励效率至上的思维模式",
+            "B": "培养在线阅读的习惯",
+            "C": "促进例行性阅读",
+            "D": "实现沉浸式阅读"
+          },
+          "answer": "D",
+          "explanation": "第四段借 Eberle 观点说明“固定时间阅读”的作用：帮助人们挣脱“时间的流逝”，进入“灵魂时间”，联系上文即不再为浪费时间而惶恐、实现纯粹的沉浸式阅读，故 [D] achieve immersive reading 正确。[A] 出自“让步”逻辑的惯常看法；[B] 对“只读纸质书”断章取义；[C] 是常识推断，并非文中 Eberle 的观点。",
+          "related_sentences": [
+            "2016_text3_s16"
+          ]
+        },
+        {
+          "id": "2016_text3_q4",
+          "number": 34,
+          "qtype": "detail",
+          "stem": "\"Carry a book with you at all times\" can work if ___.",
+          "stem_cn": "“始终随身携带一本书”会起作用，如果___。",
+          "options": {
+            "A": "reading becomes your primary business of the day",
+            "B": "all the daily business has been promptly dealt with",
+            "C": "you are able to drop back to business after reading",
+            "D": "time can be evenly split for reading and business"
+          },
+          "options_cn": {
+            "A": "阅读成为你一天当中的首要事务",
+            "B": "所有的日常事务都已得到立即处理",
+            "C": "你能够在阅读之后返回到工作中去",
+            "D": "时间可以平均分配给阅读和工作"
+          },
+          "answer": "A",
+          "explanation": "第四段末尾指出“随身携带一本书”起作用的条件（providing 意为“如果”）：能经常沉浸书中、阅读成为默认状态，其他事务变为附带，即阅读成为高于其他事务的首要事务，故 [A] 正确。[B] 把“短暂浮出处理事务”偷换为“所有事务立即处理”；[C] 颠倒关系；[D] 与“阅读为主”矛盾。",
+          "related_sentences": [
+            "2016_text3_s18"
+          ]
+        },
+        {
+          "id": "2016_text3_q5",
+          "number": 35,
+          "qtype": "main_idea",
+          "stem": "The best title for this text could be ___.",
+          "stem_cn": "本文最佳标题可能是___。",
+          "options": {
+            "A": "How to Enjoy Easy Reading",
+            "B": "How to Find Time to Read",
+            "C": "How to Set Reading Goals",
+            "D": "How to Read Extensively"
+          },
+          "options_cn": {
+            "A": "如何享受轻松阅读",
+            "B": "如何找时间阅读",
+            "C": "如何设定阅读目标",
+            "D": "如何广泛阅读"
+          },
+          "answer": "B",
+          "explanation": "全文首段提出“人们总抱怨没时间阅读”，二三段分析常见时间管理技巧不可行的根本原因，末段提出建议：安排固定时间、把阅读当“主业”，可见全文围绕“如何找时间阅读”给出可行办法，故 [B] 正确。标题须涵盖“阅读、时间”两个关键信息，[A][C][D] 均遗漏“时间”，且 enjoy、reading goals、extensively 为捕风捉影。",
+          "related_sentences": [
+            "2016_text3_s01",
+            "2016_text3_s02",
+            "2016_text3_s15"
+          ]
+        }
       ]
     },
     {
@@ -113,26 +1387,1799 @@
       "topic": "年轻美国人的成功路线图：同一终点，不同路径",
       "source": "2016 年考研英语（二）Text 4 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2016_text4_s01", "para": 1, "en": "Against a backdrop of drastic changes in economy and population structure, younger Americans are drawing a new 21st-century road map to success, a latest poll has found.", "cn": "最新民意调查发现：在经济、人口结构急剧改变的背景下，较为年轻的美国人正在绘制一幅新型的 21 世纪成功路线图。", "words": [ { "w": "Against a backdrop of", "meaning": "以……为背景" }, { "w": "drastic changes", "meaning": "急剧的变化" }, { "w": "road map to success", "meaning": "成功路线图" } ] },
-        { "id": "2016_text4_s02", "para": 2, "en": "Across generational lines, Americans continue to prize many of the same traditional milestones of a successful life, including getting married, having children, owning a home, and retiring in their sixties.", "cn": "跨越代际线，美国人依然高度重视许多相同的、传统的成功人生标志性事件，包括结婚、生子、购房及六十多岁退休。", "words": [ { "w": "Across generational lines", "meaning": "跨越代际（不分老少）" }, { "w": "prize", "meaning": "v. 珍视，高度重视" }, { "w": "traditional milestones", "meaning": "传统的里程碑" } ] },
-        { "id": "2016_text4_s03", "para": 2, "en": "But while young and old mostly agree on what constitutes the finish line of a fulfilling life, they offer strikingly different paths for reaching it.", "cn": "但是，尽管年轻一辈和老一辈在“什么构成成功人生的终点线”上大体达成共识，他们却提供了截然不同的到达终点线的路径。", "words": [ { "w": "what constitutes", "meaning": "构成……的是什么" }, { "w": "the finish line", "meaning": "终点线" }, { "w": "strikingly different paths", "meaning": "截然不同的路径" } ] },
-        { "id": "2016_text4_s04", "para": 3, "en": "Young people who are still getting started in life were more likely than older adults to prioritize personal fulfillment in their work, to believe they will advance their careers most by regularly changing jobs, to favor communities with more public services and a faster pace of life, to agree that couples should be financially secure before getting married or having children, and to maintain that children are best served by two parents working outside the home, the survey found.", "cn": "调查发现：相比稍微年长一些的成年人来讲，仍处于人生起步阶段的年轻人更可能在工作中优先考虑个人成就感，他们觉得频繁更换工作最能推动职业发展，他们更喜欢公共服务更多、生活节奏更快的社区，他们赞同伴侣在结婚生子前应该有经济保障，并认为孩子最好由均在外工作的双亲来抚育。", "words": [ { "w": "getting started in life", "meaning": "人生起步" }, { "w": "prioritize personal fulfillment", "meaning": "优先考虑个人成就感" }, { "w": "financially secure", "meaning": "经济上有保障" } ] },
-        { "id": "2016_text4_s05", "para": 4, "en": "From career to community and family, these contrasts suggest that in the aftermath of the searing Great Recession, those just starting out in life are defining priorities and expectations that will increasingly spread through virtually all aspects of American life, from consumer preferences to housing patterns to politics.", "cn": "从职业发展到社区、家庭，这些差异表明：在灼热的大衰退余波下，那些人生刚刚起步的人正在界定首要事项和期望，这些事项和期望将逐渐蔓延到美国人生活的几乎所有方面，从消费者偏好到居住模式，再到政治。", "words": [ { "w": "in the aftermath of", "meaning": "在……的余波中" }, { "w": "the searing Great Recession", "meaning": "惨烈的大衰退" }, { "w": "spread through virtually all aspects", "meaning": "蔓延至几乎所有方面" } ] },
-        { "id": "2016_text4_s06", "para": 5, "en": "Young and old converge on one key point: Overwhelming majorities of both groups said they believe it is harder for young people today to get started in life than it was for earlier generations.", "cn": "年轻一辈和老一辈在一个关键点上观点趋向一致：双方以压倒性多数认为当今年轻人比前几代人更难起步。", "words": [ { "w": "converge on", "meaning": "（在某点上）趋于一致" }, { "w": "Overwhelming majorities", "meaning": "压倒性多数" }, { "w": "earlier generations", "meaning": "前几代人" } ] },
-        { "id": "2016_text4_s07", "para": 5, "en": "While younger people are somewhat more optimistic than their elders about the prospects for those starting out today, big majorities in both groups believe those \"just getting started in life\" face a tougher climb than earlier generations in reaching such signpost achievements as securing a good-paying job, starting a family, managing debt, and finding affordable housing.", "cn": "尽管年轻人要比年长者对今天刚起步的年轻人的前景多少乐观一点，但是双方绝大多数认为，在实现诸如获取高薪的工作、组建家庭、债务管理、拥有买得起的住房这些标志性成就上，那些“刚起步”的人比前几代人面临更艰难的攀行。", "words": [ { "w": "more optimistic", "meaning": "更乐观" }, { "w": "face a tougher climb", "meaning": "面临更艰难的攀爬" }, { "w": "a good-paying job", "meaning": "一份高薪的工作" }, { "w": "affordable housing", "meaning": "买得起的住房" } ] },
-        { "id": "2016_text4_s08", "para": 6, "en": "Pete Schneider considers the climb tougher today.", "cn": "皮特·施耐德认为现如今的攀行更艰难。", "words": [ { "w": "considers the climb tougher", "meaning": "认为攀爬更艰难" } ] },
-        { "id": "2016_text4_s09", "para": 6, "en": "Schneider, a 27-year-old auto technician from the Chicago suburbs, says he struggled to find a job after graduating from college.", "cn": "施耐德，一位来自芝加哥郊区的 27 岁汽车技师，说大学毕业后很努力才找到一份工作。", "words": [ { "w": "auto technician", "meaning": "汽车技师" }, { "w": "struggled to find a job", "meaning": "艰难地找工作" }, { "w": "graduating from college", "meaning": "大学毕业" } ] },
-        { "id": "2016_text4_s10", "para": 6, "en": "Even now that he is working steadily, he said, \"I can't afford to pay my monthly mortgage payments on my own, so I have to rent rooms out to people to make that happen.\"", "cn": "尽管工作稳定，但是“凭一己之力无法负担月供，因此不得不把房间租给别人以负担月供，”他说。", "words": [ { "w": "working steadily", "meaning": "工作稳定" }, { "w": "monthly mortgage payments", "meaning": "每月的按揭还款" }, { "w": "rent rooms out", "meaning": "把房间租出去" } ] },
-        { "id": "2016_text4_s11", "para": 6, "en": "Looking back, he is struck that his parents could provide a comfortable life for their children even though neither had completed college when he was young.", "cn": "回首过往，他猛然发现，小时候父母尽管都没有读大学，却也能为孩子们提供一个舒适的生活。", "words": [ { "w": "Looking back", "meaning": "回首过往" }, { "w": "is struck that", "meaning": "（惊讶地）意识到" }, { "w": "a comfortable life", "meaning": "舒适的生活" } ] },
-        { "id": "2016_text4_s12", "para": 6, "en": "\"I still grew up in an upper middle-class home with parents who didn't have college degrees,\" Schneider said. \"I don't think people are capable of that anymore.\"", "cn": "“尽管爸妈没有大学文凭，但是我仍然在一个上层中产阶级家庭中长大，”施耐德说，“我想人们再也做不到那样了。”", "words": [ { "w": "an upper middle-class home", "meaning": "一个上层中产阶级家庭" }, { "w": "college degrees", "meaning": "大学文凭" }, { "w": "capable of that", "meaning": "能够做到那样" } ] }
+        {
+          "id": "2016_text4_s01",
+          "para": 1,
+          "en": "Against a backdrop of drastic changes in economy and population structure, younger Americans are drawing a new 21st-century road map to success, a latest poll has found.",
+          "cn": "最新民意调查发现：在经济、人口结构急剧改变的背景下，较为年轻的美国人正在绘制一幅新型的 21 世纪成功路线图。",
+          "words": [
+            {
+              "w": "Against a backdrop of",
+              "meaning": "以……为背景"
+            },
+            {
+              "w": "drastic changes",
+              "meaning": "急剧的变化"
+            },
+            {
+              "w": "road map to success",
+              "meaning": "成功路线图"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s02",
+          "para": 2,
+          "en": "Across generational lines, Americans continue to prize many of the same traditional milestones of a successful life, including getting married, having children, owning a home, and retiring in their sixties.",
+          "cn": "跨越代际线，美国人依然高度重视许多相同的、传统的成功人生标志性事件，包括结婚、生子、购房及六十多岁退休。",
+          "words": [
+            {
+              "w": "Across generational lines",
+              "meaning": "跨越代际（不分老少）"
+            },
+            {
+              "w": "prize",
+              "meaning": "v. 珍视，高度重视"
+            },
+            {
+              "w": "traditional milestones",
+              "meaning": "传统的里程碑"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s03",
+          "para": 2,
+          "en": "But while young and old mostly agree on what constitutes the finish line of a fulfilling life, they offer strikingly different paths for reaching it.",
+          "cn": "但是，尽管年轻一辈和老一辈在“什么构成成功人生的终点线”上大体达成共识，他们却提供了截然不同的到达终点线的路径。",
+          "words": [
+            {
+              "w": "what constitutes",
+              "meaning": "构成……的是什么"
+            },
+            {
+              "w": "the finish line",
+              "meaning": "终点线"
+            },
+            {
+              "w": "strikingly different paths",
+              "meaning": "截然不同的路径"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s04",
+          "para": 3,
+          "en": "Young people who are still getting started in life were more likely than older adults to prioritize personal fulfillment in their work, to believe they will advance their careers most by regularly changing jobs, to favor communities with more public services and a faster pace of life, to agree that couples should be financially secure before getting married or having children, and to maintain that children are best served by two parents working outside the home, the survey found.",
+          "cn": "调查发现：相比稍微年长一些的成年人来讲，仍处于人生起步阶段的年轻人更可能在工作中优先考虑个人成就感，他们觉得频繁更换工作最能推动职业发展，他们更喜欢公共服务更多、生活节奏更快的社区，他们赞同伴侣在结婚生子前应该有经济保障，并认为孩子最好由均在外工作的双亲来抚育。",
+          "words": [
+            {
+              "w": "getting started in life",
+              "meaning": "人生起步"
+            },
+            {
+              "w": "prioritize personal fulfillment",
+              "meaning": "优先考虑个人成就感"
+            },
+            {
+              "w": "financially secure",
+              "meaning": "经济上有保障"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s05",
+          "para": 4,
+          "en": "From career to community and family, these contrasts suggest that in the aftermath of the searing Great Recession, those just starting out in life are defining priorities and expectations that will increasingly spread through virtually all aspects of American life, from consumer preferences to housing patterns to politics.",
+          "cn": "从职业发展到社区、家庭，这些差异表明：在灼热的大衰退余波下，那些人生刚刚起步的人正在界定首要事项和期望，这些事项和期望将逐渐蔓延到美国人生活的几乎所有方面，从消费者偏好到居住模式，再到政治。",
+          "words": [
+            {
+              "w": "in the aftermath of",
+              "meaning": "在……的余波中"
+            },
+            {
+              "w": "the searing Great Recession",
+              "meaning": "惨烈的大衰退"
+            },
+            {
+              "w": "spread through virtually all aspects",
+              "meaning": "蔓延至几乎所有方面"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s06",
+          "para": 5,
+          "en": "Young and old converge on one key point: Overwhelming majorities of both groups said they believe it is harder for young people today to get started in life than it was for earlier generations.",
+          "cn": "年轻一辈和老一辈在一个关键点上观点趋向一致：双方以压倒性多数认为当今年轻人比前几代人更难起步。",
+          "words": [
+            {
+              "w": "converge on",
+              "meaning": "（在某点上）趋于一致"
+            },
+            {
+              "w": "Overwhelming majorities",
+              "meaning": "压倒性多数"
+            },
+            {
+              "w": "earlier generations",
+              "meaning": "前几代人"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s07",
+          "para": 5,
+          "en": "While younger people are somewhat more optimistic than their elders about the prospects for those starting out today, big majorities in both groups believe those \"just getting started in life\" face a tougher climb than earlier generations in reaching such signpost achievements as securing a good-paying job, starting a family, managing debt, and finding affordable housing.",
+          "cn": "尽管年轻人要比年长者对今天刚起步的年轻人的前景多少乐观一点，但是双方绝大多数认为，在实现诸如获取高薪的工作、组建家庭、债务管理、拥有买得起的住房这些标志性成就上，那些“刚起步”的人比前几代人面临更艰难的攀行。",
+          "words": [
+            {
+              "w": "more optimistic",
+              "meaning": "更乐观"
+            },
+            {
+              "w": "face a tougher climb",
+              "meaning": "面临更艰难的攀爬"
+            },
+            {
+              "w": "a good-paying job",
+              "meaning": "一份高薪的工作"
+            },
+            {
+              "w": "affordable housing",
+              "meaning": "买得起的住房"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s08",
+          "para": 6,
+          "en": "Pete Schneider considers the climb tougher today.",
+          "cn": "皮特·施耐德认为现如今的攀行更艰难。",
+          "words": [
+            {
+              "w": "considers the climb tougher",
+              "meaning": "认为攀爬更艰难"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s09",
+          "para": 6,
+          "en": "Schneider, a 27-year-old auto technician from the Chicago suburbs, says he struggled to find a job after graduating from college.",
+          "cn": "施耐德，一位来自芝加哥郊区的 27 岁汽车技师，说大学毕业后很努力才找到一份工作。",
+          "words": [
+            {
+              "w": "auto technician",
+              "meaning": "汽车技师"
+            },
+            {
+              "w": "struggled to find a job",
+              "meaning": "艰难地找工作"
+            },
+            {
+              "w": "graduating from college",
+              "meaning": "大学毕业"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s10",
+          "para": 6,
+          "en": "Even now that he is working steadily, he said, \"I can't afford to pay my monthly mortgage payments on my own, so I have to rent rooms out to people to make that happen.\"",
+          "cn": "尽管工作稳定，但是“凭一己之力无法负担月供，因此不得不把房间租给别人以负担月供，”他说。",
+          "words": [
+            {
+              "w": "working steadily",
+              "meaning": "工作稳定"
+            },
+            {
+              "w": "monthly mortgage payments",
+              "meaning": "每月的按揭还款"
+            },
+            {
+              "w": "rent rooms out",
+              "meaning": "把房间租出去"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s11",
+          "para": 6,
+          "en": "Looking back, he is struck that his parents could provide a comfortable life for their children even though neither had completed college when he was young.",
+          "cn": "回首过往，他猛然发现，小时候父母尽管都没有读大学，却也能为孩子们提供一个舒适的生活。",
+          "words": [
+            {
+              "w": "Looking back",
+              "meaning": "回首过往"
+            },
+            {
+              "w": "is struck that",
+              "meaning": "（惊讶地）意识到"
+            },
+            {
+              "w": "a comfortable life",
+              "meaning": "舒适的生活"
+            }
+          ]
+        },
+        {
+          "id": "2016_text4_s12",
+          "para": 6,
+          "en": "\"I still grew up in an upper middle-class home with parents who didn't have college degrees,\" Schneider said. \"I don't think people are capable of that anymore.\"",
+          "cn": "“尽管爸妈没有大学文凭，但是我仍然在一个上层中产阶级家庭中长大，”施耐德说，“我想人们再也做不到那样了。”",
+          "words": [
+            {
+              "w": "an upper middle-class home",
+              "meaning": "一个上层中产阶级家庭"
+            },
+            {
+              "w": "college degrees",
+              "meaning": "大学文凭"
+            },
+            {
+              "w": "capable of that",
+              "meaning": "能够做到那样"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2016_text4_q1", "number": 36, "qtype": "detail", "stem": "One cross-generation mark of a successful life is ___.", "stem_cn": "成功人生的一个跨世代标志是___。", "options": { "A": "trying out different lifestyles", "B": "having a family with children", "C": "working beyond retirement age", "D": "setting up a profitable business" }, "options_cn": { "A": "尝试不同生活方式", "B": "结婚生子", "C": "到退休年龄后仍旧工作", "D": "创建一家盈利企业" }, "answer": "B", "explanation": "第二段①句指出，跨越代际线，美国人依旧重视成功人生的传统里程碑，如结婚生子、拥有住房及六十来岁退休，[B] having a family with children 是对 getting married, having children 的同义改写，正确。[A] 曲解 strikingly different paths；[C] 把“六十几岁退休”反向曲解为“退休年龄后仍工作”；[D] 曲解 financially secure。", "related_sentences": [ "2016_text4_s02" ] },
-        { "id": "2016_text4_q2", "number": 37, "qtype": "detail", "stem": "It can be learned from Paragraph 3 that young people tend to ___.", "stem_cn": "从第三段可以得知年轻人往往___。", "options": { "A": "favor a slower life pace", "B": "hold an occupation longer", "C": "attach importance to pre-marital finance", "D": "give priority to childcare outside the home" }, "options_cn": { "A": "更喜欢较慢的生活节奏", "B": "在一个职位上待得更久", "C": "重视婚前财务状况", "D": "优先考虑在外面托管孩子" }, "answer": "C", "explanation": "第三段从职业、社区、家庭角度指出年轻人的取向，其中“赞同夫妻在结婚或生子前应有经济保障”表明年轻人重视婚前财务状况，故 [C] 正确。[A] 把 a faster pace of life 反向偷换为“更慢”；[B] 把 regularly changing jobs 反向曲解；[D] 把“孩子最好由均在外工作的双亲抚育”曲解为“在外托管孩子”。", "related_sentences": [ "2016_text4_s04" ] },
-        { "id": "2016_text4_q3", "number": 38, "qtype": "detail", "stem": "The priorities and expectations defined by the young will ___.", "stem_cn": "年轻人界定的首要事项和期望将___。", "options": { "A": "become increasingly clear", "B": "focus on materialistic issues", "C": "depend largely on political preferences", "D": "reach almost all aspects of American life" }, "options_cn": { "A": "变得日益清晰", "B": "聚焦物质问题", "C": "很大程度上取决于政治偏好", "D": "几乎触及美国人生活的所有方面" }, "answer": "D", "explanation": "第四段指出，处于人生起步阶段的年轻人正在界定首要事项及期望，它们将逐渐蔓延至美国人生活的方方面面，[D] 是对 spread through virtually all aspects of American life 的同义替换，正确。[A] 把 defining、increasingly 杂糅捏造出“日益清晰”；[B][C] 分别借 consumer preferences、politics 等例证词曲解为“聚焦物质”“取决于政治偏好”。", "related_sentences": [ "2016_text4_s05" ] },
-        { "id": "2016_text4_q4", "number": 39, "qtype": "detail", "stem": "Both young and old agree that ___.", "stem_cn": "年轻人和老一辈人都认为___。", "options": { "A": "good-paying jobs are less available", "B": "the old made more life achievements", "C": "housing loans today are easy to obtain", "D": "getting established is harder for the young" }, "options_cn": { "A": "高薪的工作变得更少", "B": "老一辈人的人生成就更多", "C": "今天的住房贷款容易获得", "D": "对年轻人来说立足更困难" }, "answer": "D", "explanation": "第五段指出两代人的共识：当今年轻人比前几代人更难起步，且在获取高薪工作、组建家庭、管理债务、拥有可支付住房等标志性成就上更为艰难，即年轻人立足更难，故 [D] getting established is harder for the young 正确。[A] 把“更难找到”曲解为“数量更少”；[B] 臆断两代人成就多少的比较；[C] 由 affordable housing 捏造“住房贷款更易获得”。", "related_sentences": [ "2016_text4_s06", "2016_text4_s07" ] },
-        { "id": "2016_text4_q5", "number": 40, "qtype": "detail", "stem": "Which of the following is true about Schneider?", "stem_cn": "下面哪一项关于施耐德的内容是正确的？", "options": { "A": "He found a dream job after graduating from college.", "B": "His parents believe working steadily is a must for success.", "C": "His parents' good life has little to do with a college degree.", "D": "He thinks his job as a technician quite challenging." }, "options_cn": { "A": "他在大学毕业后找到了一份理想的工作。", "B": "他父母认为稳定工作是成功必需。", "C": "他父母的上乘生活和大学文凭几乎没有关系。", "D": "他认为他的技师工作颇有挑战性。" }, "answer": "C", "explanation": "第六段指出，施耐德的父母虽然都没上过大学，却给孩子提供了舒适生活，他本人也在没有大学文凭的父母抚养下在上层中产阶级家庭长大，由此可推知“他父母的上乘生活与大学文凭几乎无关”，故 [C] 正确。[A] 与“毕业后艰难找工作”相反；[B][D] 均为文中未提及的捏造。", "related_sentences": [ "2016_text4_s11", "2016_text4_s12" ] }
+        {
+          "id": "2016_text4_q1",
+          "number": 36,
+          "qtype": "detail",
+          "stem": "One cross-generation mark of a successful life is ___.",
+          "stem_cn": "成功人生的一个跨世代标志是___。",
+          "options": {
+            "A": "trying out different lifestyles",
+            "B": "having a family with children",
+            "C": "working beyond retirement age",
+            "D": "setting up a profitable business"
+          },
+          "options_cn": {
+            "A": "尝试不同生活方式",
+            "B": "结婚生子",
+            "C": "到退休年龄后仍旧工作",
+            "D": "创建一家盈利企业"
+          },
+          "answer": "B",
+          "explanation": "第二段①句指出，跨越代际线，美国人依旧重视成功人生的传统里程碑，如结婚生子、拥有住房及六十来岁退休，[B] having a family with children 是对 getting married, having children 的同义改写，正确。[A] 曲解 strikingly different paths；[C] 把“六十几岁退休”反向曲解为“退休年龄后仍工作”；[D] 曲解 financially secure。",
+          "related_sentences": [
+            "2016_text4_s02"
+          ]
+        },
+        {
+          "id": "2016_text4_q2",
+          "number": 37,
+          "qtype": "detail",
+          "stem": "It can be learned from Paragraph 3 that young people tend to ___.",
+          "stem_cn": "从第三段可以得知年轻人往往___。",
+          "options": {
+            "A": "favor a slower life pace",
+            "B": "hold an occupation longer",
+            "C": "attach importance to pre-marital finance",
+            "D": "give priority to childcare outside the home"
+          },
+          "options_cn": {
+            "A": "更喜欢较慢的生活节奏",
+            "B": "在一个职位上待得更久",
+            "C": "重视婚前财务状况",
+            "D": "优先考虑在外面托管孩子"
+          },
+          "answer": "C",
+          "explanation": "第三段从职业、社区、家庭角度指出年轻人的取向，其中“赞同夫妻在结婚或生子前应有经济保障”表明年轻人重视婚前财务状况，故 [C] 正确。[A] 把 a faster pace of life 反向偷换为“更慢”；[B] 把 regularly changing jobs 反向曲解；[D] 把“孩子最好由均在外工作的双亲抚育”曲解为“在外托管孩子”。",
+          "related_sentences": [
+            "2016_text4_s04"
+          ]
+        },
+        {
+          "id": "2016_text4_q3",
+          "number": 38,
+          "qtype": "detail",
+          "stem": "The priorities and expectations defined by the young will ___.",
+          "stem_cn": "年轻人界定的首要事项和期望将___。",
+          "options": {
+            "A": "become increasingly clear",
+            "B": "focus on materialistic issues",
+            "C": "depend largely on political preferences",
+            "D": "reach almost all aspects of American life"
+          },
+          "options_cn": {
+            "A": "变得日益清晰",
+            "B": "聚焦物质问题",
+            "C": "很大程度上取决于政治偏好",
+            "D": "几乎触及美国人生活的所有方面"
+          },
+          "answer": "D",
+          "explanation": "第四段指出，处于人生起步阶段的年轻人正在界定首要事项及期望，它们将逐渐蔓延至美国人生活的方方面面，[D] 是对 spread through virtually all aspects of American life 的同义替换，正确。[A] 把 defining、increasingly 杂糅捏造出“日益清晰”；[B][C] 分别借 consumer preferences、politics 等例证词曲解为“聚焦物质”“取决于政治偏好”。",
+          "related_sentences": [
+            "2016_text4_s05"
+          ]
+        },
+        {
+          "id": "2016_text4_q4",
+          "number": 39,
+          "qtype": "detail",
+          "stem": "Both young and old agree that ___.",
+          "stem_cn": "年轻人和老一辈人都认为___。",
+          "options": {
+            "A": "good-paying jobs are less available",
+            "B": "the old made more life achievements",
+            "C": "housing loans today are easy to obtain",
+            "D": "getting established is harder for the young"
+          },
+          "options_cn": {
+            "A": "高薪的工作变得更少",
+            "B": "老一辈人的人生成就更多",
+            "C": "今天的住房贷款容易获得",
+            "D": "对年轻人来说立足更困难"
+          },
+          "answer": "D",
+          "explanation": "第五段指出两代人的共识：当今年轻人比前几代人更难起步，且在获取高薪工作、组建家庭、管理债务、拥有可支付住房等标志性成就上更为艰难，即年轻人立足更难，故 [D] getting established is harder for the young 正确。[A] 把“更难找到”曲解为“数量更少”；[B] 臆断两代人成就多少的比较；[C] 由 affordable housing 捏造“住房贷款更易获得”。",
+          "related_sentences": [
+            "2016_text4_s06",
+            "2016_text4_s07"
+          ]
+        },
+        {
+          "id": "2016_text4_q5",
+          "number": 40,
+          "qtype": "detail",
+          "stem": "Which of the following is true about Schneider?",
+          "stem_cn": "下面哪一项关于施耐德的内容是正确的？",
+          "options": {
+            "A": "He found a dream job after graduating from college.",
+            "B": "His parents believe working steadily is a must for success.",
+            "C": "His parents' good life has little to do with a college degree.",
+            "D": "He thinks his job as a technician quite challenging."
+          },
+          "options_cn": {
+            "A": "他在大学毕业后找到了一份理想的工作。",
+            "B": "他父母认为稳定工作是成功必需。",
+            "C": "他父母的上乘生活和大学文凭几乎没有关系。",
+            "D": "他认为他的技师工作颇有挑战性。"
+          },
+          "answer": "C",
+          "explanation": "第六段指出，施耐德的父母虽然都没上过大学，却给孩子提供了舒适生活，他本人也在没有大学文凭的父母抚养下在上层中产阶级家庭长大，由此可推知“他父母的上乘生活与大学文凭几乎无关”，故 [C] 正确。[A] 与“毕业后艰难找工作”相反；[B][D] 均为文中未提及的捏造。",
+          "related_sentences": [
+            "2016_text4_s11",
+            "2016_text4_s12"
+          ]
+        }
       ]
+    },
+    {
+      "id": "2016_newtype",
+      "type": "newtype",
+      "title": "Act Your Shoe Size, Not Your Age",
+      "topic": "新题型（小标题对应）：快乐秘诀——释放你的内在孩童，成年人应学习孩子获取幸福的方法。",
+      "source": "Section II Part B",
+      "pool": {
+        "A": "Be silly",
+        "B": "Have fun",
+        "C": "Ask for help",
+        "D": "Express your emotions",
+        "E": "Don't overthink it",
+        "F": "Be easily pleased",
+        "G": "Notice things"
+      },
+      "pool_cn": {
+        "A": "傻一点",
+        "B": "玩得开心",
+        "C": "寻求帮助",
+        "D": "表达情绪",
+        "E": "别想太多",
+        "F": "容易满足",
+        "G": "留意事物"
+      },
+      "sentences": [
+        {
+          "id": "2016_newtype_s01",
+          "para": 1,
+          "en": "As adults, it seems that we are constantly pursuing happiness, often with mixed results.",
+          "cn": "作为成年人，似乎我们在不断追寻幸福，结局却往往不一。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s02",
+          "para": 1,
+          "en": "Yet children appear to have it down to an art and for the most part they don't need self-help books or therapy.",
+          "cn": "而孩子们似乎对此驾轻就熟——并且在很大程度上，他们不需要自助书籍或治疗。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s03",
+          "para": 1,
+          "en": "Instead, they look after their wellbeing instinctively, and usually more effectively than we do as grownups.",
+          "cn": "相反，他们本能地守住自己的幸福，且通常比我们成年人做起来更有成效。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s04",
+          "para": 1,
+          "en": "Perhaps it's time to learn a few lessons from them.",
+          "cn": "也许是时候向他们学习一些经验了。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s05",
+          "para": 2,
+          "en": "What does a child do when he's sad? He cries.",
+          "cn": "当一个孩子伤心时他会做什么呢？他会大哭。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s06",
+          "para": 2,
+          "en": "When he's angry? He shouts.",
+          "cn": "当他生气时呢？他会大叫。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s07",
+          "para": 2,
+          "en": "Scared? Probably a bit of both.",
+          "cn": "害怕时呢？大概两者都有那么一点。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s08",
+          "para": 2,
+          "en": "As we grow up, we learn to control our emotions so they are manageable and don't dictate our behaviours, which is in many ways a good thing.",
+          "cn": "在成长过程中，我们会学着控制情绪，为的是使其易于控制而不会支配我们的行为，这在许多方面是好事情。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s09",
+          "para": 2,
+          "en": "But too often we take this process too far and end up suppressing emotions, especially negative ones.",
+          "cn": "但我们常常会将这一步做得太过，并最终压抑情绪，尤其是负面情绪。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s10",
+          "para": 2,
+          "en": "That's about as effective as brushing dirt under a carpet and can even make us ill.",
+          "cn": "这样做的影响大致等同于将灰尘扫到地毯下，甚至会让我们患病。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s11",
+          "para": 2,
+          "en": "What we need to do is find a way to acknowledge and express what we feel appropriately, and then again, like children, move on.",
+          "cn": "我们需要做的就是找到一种方式承认并适当地表达我们的感觉，然后——再次像孩子一样——继续前行。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s12",
+          "para": 3,
+          "en": "A couple of Christmases ago, my youngest stepdaughter, who was nine years old at the time, got a Superman T-shirt for Christmas.",
+          "cn": "几年前的圣诞节，我最小的继女，那时九岁，得到了一件超人T恤作为圣诞礼物。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s13",
+          "para": 3,
+          "en": "It cost less than a fiver but she was overjoyed and couldn't stop talking about it.",
+          "cn": "这件T恤只花了不到五镑，但却令她极为高兴，她简直不能停止谈论它。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s14",
+          "para": 3,
+          "en": "Too often we believe that a new job, bigger house or better car will be the magic silver bullet that will allow us to finally be content, but the reality is these things have very little lasting impact on our happiness levels.",
+          "cn": "我们常常认为一份新工作、一套更大的房子或一辆更好的车会是让我们最终得以满足的神奇良方，但真实情况是这些东西对我们的幸福水平产生的持久影响微乎其微。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s15",
+          "para": 3,
+          "en": "Instead, being grateful for small things every day is a much better way to improve wellbeing.",
+          "cn": "相反，每天因小事情充满感激是提升幸福的更优方式。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s16",
+          "para": 4,
+          "en": "Have you ever noticed how much children laugh?",
+          "cn": "你曾注意过孩子们是多么爱笑吗？",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s17",
+          "para": 4,
+          "en": "If we adults could indulge in a bit of silliness and giggling, we would reduce the stress hormones in our bodies, increase good hormones like endorphins, improve blood flow to our hearts and even have a greater chance of fighting off infection.",
+          "cn": "如果我们成年人能够纵情于一点傻气和傻笑，那么我们将会减少体内的压力激素，增加有益激素如内啡肽，提高心脏血流量，甚至提升防御传染病的可能。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s18",
+          "para": 4,
+          "en": "All of which would, of course, have a positive effect on our happiness levels.",
+          "cn": "所有这一切当然会对我们的幸福水平具有积极的影响。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s19",
+          "para": 5,
+          "en": "The problem with being a grownup is that there's an awful lot of serious stuff to deal with - work, mortgage payments, figuring out what to cook for dinner.",
+          "cn": "作为成年人面对的问题是有太多严肃的事情需要处理——工作、按揭付款、计划晚餐该做什么。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s20",
+          "para": 5,
+          "en": "But as adults we also have the luxury of being able to control our own diaries and it's important that we schedule in time to enjoy the things we love.",
+          "cn": "但作为成年人，我们也可以拥有“把控自己工作日程”这样的奢侈机会，而且“适时安排以享受我们喜欢的事情”是非常重要的。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s21",
+          "para": 5,
+          "en": "Those things might be social, sporting, creative or completely random (dancing around the living room, anyone?) - it doesn't matter, so long as they're enjoyable and not likely to have negative side effects, such as drinking too much alcohol or going on a wild spending spree if you're on a tight budget.",
+          "cn": "那些事情可以是有关社交的、运动的、创意的或完全随机的（在客厅翩翩起舞，有人做过吗？）——这没关系，只要它们令人愉快，且不大可能有负面影响，如饮酒过度或在预算紧张的情况下疯狂挥霍。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s22",
+          "para": 6,
+          "en": "Having said all of the above, it's important to add that we shouldn't try too hard to be happy.",
+          "cn": "上面说了这么多，有必要补充说明的是，我们不应该过分追逐幸福。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s23",
+          "para": 6,
+          "en": "Scientists tell us this can backfire and actually have a negative impact on our wellbeing.",
+          "cn": "科学家告诉我们这可能适得其反，并且实际上对我们的幸福有负面影响。",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s24",
+          "para": 6,
+          "en": "As the Chinese philosopher Chuang Tzu is reported to have said: \"Happiness is the absence of striving for happiness.\"",
+          "cn": "正如中国哲学家庄子曾言：“无为诚乐。”",
+          "words": []
+        },
+        {
+          "id": "2016_newtype_s25",
+          "para": 6,
+          "en": "And in that, once more, we need to look to the example of our children, to whom happiness is not a goal but a natural byproduct of the way they live.",
+          "cn": "在这一点上，我们需再次以孩子们为榜样，对他们来说，幸福不是目标而是其生活方式的自然额外收获。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2016_newtype_q41",
+          "number": 41,
+          "qtype": "小标题",
+          "stem": "第 2 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "D",
+          "explanation": "第二段首六句以三组设问清楚说明，孩子会非常直白地表露、宣泄情绪：sad→cries，angry→shouts，Scared→both（cries+shouts）。随后介绍成年人的情绪反应：控制、甚至是压抑情绪。最后引出作者建议：承认情绪并适当地表达出来。[D]紧扣段落中心emotions，故正确。",
+          "related_sentences": [
+            "2016_newtype_s01",
+            "2016_newtype_s02",
+            "2016_newtype_s03",
+            "2016_newtype_s04",
+            "2016_newtype_s05",
+            "2016_newtype_s06",
+            "2016_newtype_s07",
+            "2016_newtype_s08",
+            "2016_newtype_s09",
+            "2016_newtype_s10",
+            "2016_newtype_s11",
+            "2016_newtype_s12",
+            "2016_newtype_s13",
+            "2016_newtype_s14",
+            "2016_newtype_s15",
+            "2016_newtype_s16",
+            "2016_newtype_s17",
+            "2016_newtype_s18",
+            "2016_newtype_s19",
+            "2016_newtype_s20",
+            "2016_newtype_s21",
+            "2016_newtype_s22",
+            "2016_newtype_s23",
+            "2016_newtype_s24",
+            "2016_newtype_s25"
+          ]
+        },
+        {
+          "id": "2016_newtype_q42",
+          "number": 42,
+          "qtype": "小标题",
+          "stem": "第 3 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "F",
+          "explanation": "第三段前三句以作者九岁女儿收到一件不到五镑的T恤却极为高兴的事例，对比说明“孩子们容易对小事感到幸福，而成年人认为只有新工作、大房子、好车这样的大事才能带来幸福”，第四句作者给出对成年人的建议“每天对小事情充满感激是提升幸福的更优方式”。[F]正确。",
+          "related_sentences": [
+            "2016_newtype_s01",
+            "2016_newtype_s02",
+            "2016_newtype_s03",
+            "2016_newtype_s04",
+            "2016_newtype_s05",
+            "2016_newtype_s06",
+            "2016_newtype_s07",
+            "2016_newtype_s08",
+            "2016_newtype_s09",
+            "2016_newtype_s10",
+            "2016_newtype_s11",
+            "2016_newtype_s12",
+            "2016_newtype_s13",
+            "2016_newtype_s14",
+            "2016_newtype_s15",
+            "2016_newtype_s16",
+            "2016_newtype_s17",
+            "2016_newtype_s18",
+            "2016_newtype_s19",
+            "2016_newtype_s20",
+            "2016_newtype_s21",
+            "2016_newtype_s22",
+            "2016_newtype_s23",
+            "2016_newtype_s24",
+            "2016_newtype_s25"
+          ]
+        },
+        {
+          "id": "2016_newtype_q43",
+          "number": 43,
+          "qtype": "小标题",
+          "stem": "第 4 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "A",
+          "explanation": "第四段首两句作者由孩子们爱笑，以虚拟语气指出成年人应该也保留一些傻气和傻笑，并说明这样对健康有益：减少压力激素、增加有益激素、提高心脏血流量、提升防御传染病的能力。末句指出这会提升幸福水平。[A]正确。[G]容易因该段首句出现noticed how much...而误选，实际上该句不是作者建议的内容，句意重点也不在notice之上。",
+          "related_sentences": [
+            "2016_newtype_s01",
+            "2016_newtype_s02",
+            "2016_newtype_s03",
+            "2016_newtype_s04",
+            "2016_newtype_s05",
+            "2016_newtype_s06",
+            "2016_newtype_s07",
+            "2016_newtype_s08",
+            "2016_newtype_s09",
+            "2016_newtype_s10",
+            "2016_newtype_s11",
+            "2016_newtype_s12",
+            "2016_newtype_s13",
+            "2016_newtype_s14",
+            "2016_newtype_s15",
+            "2016_newtype_s16",
+            "2016_newtype_s17",
+            "2016_newtype_s18",
+            "2016_newtype_s19",
+            "2016_newtype_s20",
+            "2016_newtype_s21",
+            "2016_newtype_s22",
+            "2016_newtype_s23",
+            "2016_newtype_s24",
+            "2016_newtype_s25"
+          ]
+        },
+        {
+          "id": "2016_newtype_q44",
+          "number": 44,
+          "qtype": "小标题",
+          "stem": "第 5 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "B",
+          "explanation": "第五段先以“让步—转折”指出成年人虽要应付诸多严肃事情，但也可以控制好工作日程，安排时间享受、放松，然后说明成年人可以如何放松玩乐：那些事情可以是社交的、运动的、创意的或完全随机的，只要令人愉快且无负面影响即可。[B]正确。[C]可能因为该段首句所述“成年人要应付太多事情”而主观臆测出“成年人需要寻求帮助”，实际上该段后文强调要“适时玩乐”，并未提及要“寻求帮助”。",
+          "related_sentences": [
+            "2016_newtype_s01",
+            "2016_newtype_s02",
+            "2016_newtype_s03",
+            "2016_newtype_s04",
+            "2016_newtype_s05",
+            "2016_newtype_s06",
+            "2016_newtype_s07",
+            "2016_newtype_s08",
+            "2016_newtype_s09",
+            "2016_newtype_s10",
+            "2016_newtype_s11",
+            "2016_newtype_s12",
+            "2016_newtype_s13",
+            "2016_newtype_s14",
+            "2016_newtype_s15",
+            "2016_newtype_s16",
+            "2016_newtype_s17",
+            "2016_newtype_s18",
+            "2016_newtype_s19",
+            "2016_newtype_s20",
+            "2016_newtype_s21",
+            "2016_newtype_s22",
+            "2016_newtype_s23",
+            "2016_newtype_s24",
+            "2016_newtype_s25"
+          ]
+        },
+        {
+          "id": "2016_newtype_q45",
+          "number": 45,
+          "qtype": "小标题",
+          "stem": "第 6 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "E",
+          "explanation": "第六段首句即亮明建议：不应该过分追求/顾念幸福。随后引用科学发现和庄子名言解释原因：以幸福为念反而可能会适得其反；幸福不是目标，而是顺其自然的收获。[E]正确。",
+          "related_sentences": [
+            "2016_newtype_s01",
+            "2016_newtype_s02",
+            "2016_newtype_s03",
+            "2016_newtype_s04",
+            "2016_newtype_s05",
+            "2016_newtype_s06",
+            "2016_newtype_s07",
+            "2016_newtype_s08",
+            "2016_newtype_s09",
+            "2016_newtype_s10",
+            "2016_newtype_s11",
+            "2016_newtype_s12",
+            "2016_newtype_s13",
+            "2016_newtype_s14",
+            "2016_newtype_s15",
+            "2016_newtype_s16",
+            "2016_newtype_s17",
+            "2016_newtype_s18",
+            "2016_newtype_s19",
+            "2016_newtype_s20",
+            "2016_newtype_s21",
+            "2016_newtype_s22",
+            "2016_newtype_s23",
+            "2016_newtype_s24",
+            "2016_newtype_s25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2016_cloze",
+      "type": "cloze",
+      "title": "Companies in Happy Cities Invest More for the Long Term",
+      "topic": "完形填空：城市幸福指数影响公司长远投资——地方幸福感越高，公司越倾向于长远投资。",
+      "source": "Section I Use of English",
+      "sentences": [
+        {
+          "id": "2016_cloze_s01",
+          "para": 1,
+          "en": "Happy people work differently.",
+          "cn": "幸福的人工作方式有所不同。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s02",
+          "para": 1,
+          "en": "They're more productive, more creative, and willing to take greater risks.",
+          "cn": "他们更高效，更有创造力，且愿意去冒更大风险。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s03",
+          "para": 1,
+          "en": "And new research suggests that happiness might influence [1] firms work, too.",
+          "cn": "新的研究表明幸福感也可能影响公司如何运作。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s04",
+          "para": 2,
+          "en": "Companies located in places with happier people invest more, according to a recent research paper.",
+          "cn": "根据近期一篇研究论文，位于居民幸福感更强的地方的公司投资更多。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s05",
+          "para": 2,
+          "en": "In [2], firms in happy places spend more on R&D (research and development).",
+          "cn": "尤其是，位于幸福地方的公司在研发上投入更多。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s06",
+          "para": 2,
+          "en": "That's because happiness is linked to the kind of longer-term thinking [3] for making investments for the future.",
+          "cn": "那是因为幸福感与对未来投资所必需的那种长远思考相联系。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s07",
+          "para": 3,
+          "en": "The researchers wanted to know if the [4] and inclination for risk-taking that come with happiness would [5] the way companies invested.",
+          "cn": "研究者想要了解随幸福感而来的乐观和冒险倾向是否会改变公司的投资方式。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s08",
+          "para": 3,
+          "en": "So they compared U.S. cities' average happiness [6] by Gallup polling with the investment activity of publicly traded firms in those areas.",
+          "cn": "于是，他们将由盖洛普民意测验调查得出的美国城市平均幸福指数与那些地区上市公司的投资活动进行了比较。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s09",
+          "para": 4,
+          "en": "[7] enough, firms' investment and R&D intensity were correlated with the happiness of the area in which they were [8].",
+          "cn": "果然，公司的投资和研发力度与其总部所在地的幸福指数相关。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s10",
+          "para": 4,
+          "en": "But is it really happiness that's linked to investment, or could something else about happier cities [9] why firms there spend more on R&D?",
+          "cn": "但与投资相联系的真的是幸福指数吗？或者说，和幸福指数较高城市相关的其他方面能否解释为何那里的公司在研发上投入更多？",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s11",
+          "para": 4,
+          "en": "To find out, the researchers controlled for various [10] that might make firms more likely to invest - like size, industry, and sales - and for indicators that a place was [11] to live in, like growth in wages or population.",
+          "cn": "为了查明真相，研究者们控制了可能促使公司更愿意投资的多种因素——比如规模、产业和销售——以及一个地方适宜居住的指标，比如工资涨幅或人口增长。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s12",
+          "para": 4,
+          "en": "The link between happiness and investment generally [12] even after accounting for these things.",
+          "cn": "甚至在考虑了这些情况之后，幸福感和投资之间的关联依然普遍适用。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s13",
+          "para": 5,
+          "en": "The correlation between happiness and investment was particularly strong for younger firms, which the authors [13] to \"less codified decision making process\" and the possible presence of \"younger and less [14] managers who are more likely to be influenced by sentiment.\"",
+          "cn": "幸福感和投资之间的关联在较年轻公司尤其明显，作者将其归因于“不那么固守成规的决策过程”以及（企业）可能存在“较为年轻且经验较少的管理者，他们更容易受到情感的影响”。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s14",
+          "para": 5,
+          "en": "The relationship was [15] stronger in places where happiness was spread more [16].",
+          "cn": "这一关联在幸福感较为均等分布的地方也更加明显。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s15",
+          "para": 5,
+          "en": "Firms seem to invest more in places where most people are relatively happy, rather than in places with happiness inequality.",
+          "cn": "公司似乎在大多数人都比较幸福的地区投资更多，而不是在幸福感不均等的地区。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s16",
+          "para": 6,
+          "en": "[17] this doesn't prove that happiness causes firms to invest more or to take a longer-term view, the authors believe it at least [18] at that possibility.",
+          "cn": "尽管这并不能证明幸福感致使公司增加投资或更有远见，作者相信它至少隐含了那种可能性。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s17",
+          "para": 6,
+          "en": "It's not hard to imagine that local culture and sentiment would help [19] how executives think about the future.",
+          "cn": "不难想象，地方文化和思想情感将有助于塑造管理者思考未来的方式。",
+          "words": []
+        },
+        {
+          "id": "2016_cloze_s18",
+          "para": 6,
+          "en": "\"It surely seems plausible that happy people would be more forward-thinking and creative and [20] R&D more than the average,\" said one researcher.",
+          "cn": "“似乎可以确信的是，幸福的人更有远见，更加创新，并且比一般人更倾向于研发，”一位研究者说道。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2016_cloze_q01",
+          "number": 1,
+          "qtype": "完形",
+          "stem": "第 1 空：选择最合适的词填入空白 [1]",
+          "stem_cn": "",
+          "options": {
+            "A": "why",
+            "B": "how",
+            "C": "where",
+            "D": "when"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义＋宾语从句引导词。由表并列关系的副词too以及people work/firms work可知前两句与第三句并列，前两句指出幸福感对人工作方式产生影响（work differently指工作方式不同），使人更高效、创新，也更愿意冒险，因此可推知第三句说明幸福感也影响公司运作方式。四个备选项在语法上均能引导宾语从句，但上下文内容并未涉及公司运作的原因和时间，[A]和[D]可排除；[C]where易因下文Companies located in places...而误选，但该段意在说明“一个地方的幸福指数影响公司的投资”，与公司选址无关。选项中只有[B]表示方式，为正确答案。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q02",
+          "number": 2,
+          "qtype": "完形",
+          "stem": "第 2 空：选择最合适的词填入空白 [2]",
+          "stem_cn": "",
+          "options": {
+            "A": "In return",
+            "B": "In particular",
+            "C": "In contrast",
+            "D": "In conclusion"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义逻辑＋词义辨析。空格上文指出位于幸福指数高的地方的公司投资更多；空格所在句指出位于幸福地方的公司在研发上投入更多。由两组词汇companies/firms、in places with happier people/in happy places、invest more/spend more on R&D可知空格所在句具体说明上句，即公司在哪一方面投资更多，两句语义上为递进关系，[B]In particular（特别地、尤其地）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q03",
+          "number": 3,
+          "qtype": "完形",
+          "stem": "第 3 空：选择最合适的词填入空白 [3]",
+          "stem_cn": "",
+          "options": {
+            "A": "necessary",
+            "B": "famous",
+            "C": "perfect",
+            "D": "sufficient"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义。空格所在句对前两句内容“幸福指数高的地方的公司在研发上投资更多”进行解释，指出幸福与长远思考相联系，而“这种长远思考”和“对未来的投资”存在某种关系。联系常识可知，对未来投资需要长远思考，后者是前者的必要条件，[A]necessary（必需的、必要的）符合文义，同时也能与介词for搭配。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q04",
+          "number": 4,
+          "qtype": "完形",
+          "stem": "第 4 空：选择最合适的词填入空白 [4]",
+          "stem_cn": "",
+          "options": {
+            "A": "individualism",
+            "B": "realism",
+            "C": "optimism",
+            "D": "modernism"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查句内语义。选项均根据同根-sim设置，但根据定语从句that come with happiness可知（因为come为动词原形，可知该定语从句修饰and所连接的两个名词词组），幸福感所带来的应是某种心态，而并未上升至表示意识形态的“主义”，备选项中只有[C]optimism（乐观）含有“乐观心态”之意，为正确答案。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q05",
+          "number": 5,
+          "qtype": "完形",
+          "stem": "第 5 空：选择最合适的词填入空白 [5]",
+          "stem_cn": "",
+          "options": {
+            "A": "miss",
+            "B": "echo",
+            "C": "spoil",
+            "D": "change"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。本文首段提出全文论点“幸福感可能影响公司如何运作”，因此本句研究者的研究目的自然也是想要找出随幸福感而来的乐观和冒险倾向是否会改变公司的投资方式，[D]change（改变、使变化）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q06",
+          "number": 6,
+          "qtype": "完形",
+          "stem": "第 6 空：选择最合适的词填入空白 [6]",
+          "stem_cn": "",
+          "options": {
+            "A": "imagined",
+            "B": "measured",
+            "C": "assumed",
+            "D": "invented"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义＋词义辨析。备选项均为动词过去分词，与by搭配一般表被动，即U.S. cities' average happiness和Gallup polling为受事—施事关系。由常识可知，城市的平均幸福指数一般经由民意测验调查得出，[B]measured（调查、测量）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q07",
+          "number": 7,
+          "qtype": "完形",
+          "stem": "第 7 空：选择最合适的词填入空白 [7]",
+          "stem_cn": "",
+          "options": {
+            "A": "Sure",
+            "B": "Odd",
+            "C": "Unfortunate",
+            "D": "Often"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义＋逻辑衔接。空格后介绍研究发现，指出一个地区的幸福指数与公司投资正相关，是对第三段研究目的“想了解幸福感是否影响公司投资”的肯定验证，是意料之中的结果，备选项中[A]Sure与enough搭配，意为“果真、果然”，符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q08",
+          "number": 8,
+          "qtype": "完形",
+          "stem": "第 8 空：选择最合适的词填入空白 [8]",
+          "stem_cn": "",
+          "options": {
+            "A": "divided",
+            "B": "advertised",
+            "C": "overtaxed",
+            "D": "headquartered"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。空格所在句重申本文论点“果然，公司的投资与研发力度与公司所在地区的幸福指数相关”，句中they回指firms，in which they were [8]做后置定语修饰area，即公司在这些地区有某种行为。结合第二段“位于幸福指数高的地方的公司投资更多”可知本句中the area即是公司的所在地，[D]headquartered（总部设立于）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q09",
+          "number": 9,
+          "qtype": "完形",
+          "stem": "第 9 空：选择最合适的词填入空白 [9]",
+          "stem_cn": "",
+          "options": {
+            "A": "summarize",
+            "B": "overstate",
+            "C": "explain",
+            "D": "emphasize"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义。空格所在句could something else about happier cities [9] why...对研究方法中的干扰因素提出疑问，后文To find out给出回答，由此推知为增加研究发现的严密性和科学性，该句在研究发现的基础上进一步分析（除幸福指数外）其他因素对公司投资的影响，也即something else...与why firms there spend more on R&D为因果解释关系，[C]explain（解释）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q10",
+          "number": 10,
+          "qtype": "完形",
+          "stem": "第 10 空：选择最合适的词填入空白 [10]",
+          "stem_cn": "",
+          "options": {
+            "A": "factors",
+            "B": "stages",
+            "C": "levels",
+            "D": "methods"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义。空格所填词是various [10] that might make firms more likely to invest的中心词，破折号后like size, industry, and sales对其举例说明，可以推知这些都是促使公司更可能投资的影响因素，[A]factors（因素）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q11",
+          "number": 11,
+          "qtype": "完形",
+          "stem": "第 11 空：选择最合适的词填入空白 [11]",
+          "stem_cn": "",
+          "options": {
+            "A": "desirable",
+            "B": "sociable",
+            "C": "reliable",
+            "D": "reputable"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义＋词义辨析。空格词修饰a place，用以说明在某地居住的特点。再由like growth in wages or population可知，工资涨幅和人口增长指标是该地这一特点的例证说明。联系上下文“幸福指数”可知，该地特点和“幸福指数”息息相关，[A]desirable（理想的、值得拥有的）符合文义，a place was desirable to live in指“某地宜居”。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q12",
+          "number": 12,
+          "qtype": "完形",
+          "stem": "第 12 空：选择最合适的词填入空白 [12]",
+          "stem_cn": "",
+          "options": {
+            "A": "resumed",
+            "B": "emerged",
+            "C": "held",
+            "D": "broke"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查句内语义＋词义辨析。空格所在句总结研究结论指出，幸福指数和投资之间的关系普遍……，其他因素的影响不大。由even的让步转折语气可知，即使在考虑了幸福城市的其他因素后，幸福感和投资之间的关系依然普遍成立/适用/有效。[C]held符合文义。hold这里为熟词僻意，意为to continue to be true, good, available（继续适用或有效），generally hold为固定搭配，意为“普遍适用”。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q13",
+          "number": 13,
+          "qtype": "完形",
+          "stem": "第 13 空：选择最合适的词填入空白 [13]",
+          "stem_cn": "",
+          "options": {
+            "A": "assign",
+            "B": "attribute",
+            "C": "transfer",
+            "D": "compare"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内逻辑。空格所在句中，which之前重申研究结论“幸福感和投资的关系在较年轻公司里尤其明显”，which之后以and连接的两个名词短语“less codified decision making process”和the possible presence of “younger and less [14] managers...”说明年轻公司的特点，这一特点能够解释为何幸福感和投资的关系在年轻公司里尤其明显，即which前后为果因关系，[B]attribute与to搭配表原因，为正确答案。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q14",
+          "number": 14,
+          "qtype": "完形",
+          "stem": "第 14 空：选择最合适的词填入空白 [14]",
+          "stem_cn": "",
+          "options": {
+            "A": "serious",
+            "B": "civilized",
+            "C": "ambitious",
+            "D": "experienced"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义。空格词与younger及who...从句共同修饰managers，说明年轻公司管理者的特点“年轻、缺少某种特质、易受情感影响”。所填词之前有less限定，说明年轻管理者缺少某种特质，且这种特质影响公司投资，浏览选项发现，[D]experienced（有经验的、老练的）与公司投资有直接关系，且less experienced符合年轻管理者的特点，为正确答案。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q15",
+          "number": 15,
+          "qtype": "完形",
+          "stem": "第 15 空：选择最合适的词填入空白 [15]",
+          "stem_cn": "",
+          "options": {
+            "A": "instead",
+            "B": "thus",
+            "C": "also",
+            "D": "never"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文逻辑。空格所在的②句中，The relationship回指上句The correlation between happiness and investment，表地点的places where...对应上句younger firms，表明论述对象由“年轻公司”转换到“某一地区”，stronger与上句particularly strong近义，结合后文Firms seem to invest more in places where...可推知，②③句与①句语义同向并列，②句意在说明幸福感和投资的关系在某一地区也更加明显，[C]also（也、同样）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q16",
+          "number": 16,
+          "qtype": "完形",
+          "stem": "第 16 空：选择最合适的词填入空白 [16]",
+          "stem_cn": "",
+          "options": {
+            "A": "rapidly",
+            "B": "directly",
+            "C": "regularly",
+            "D": "equally"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。②句指出，幸福感和投资的关系在幸福感较为[16]分布的地方也很明显，③句进一步解释，公司在大多数人都比较幸福的地方投资更多，在幸福感不均等的地方投资不多。综合可知，places where happiness was spread more [16]与下句中where most people are relatively happy同义，与places with happiness inequality反义。[D]equally（均等地）与inequality同源反义，故正确。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q17",
+          "number": 17,
+          "qtype": "完形",
+          "stem": "第 17 空：选择最合适的词填入空白 [17]",
+          "stem_cn": "",
+          "options": {
+            "A": "While",
+            "B": "Until",
+            "C": "After",
+            "D": "Since"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内逻辑。空格所在句指出，这（this指代上述研究结论）不能证明幸福感致使公司增加投资或更有远见，作者相信它至少……，at least表明作者在承认前述研究局限性的情况下，对研究最基本的价值予以肯定，以体现论述的严密性和严谨性。也就是说，本句两个分句之间为让步转折关系，即“尽管……，但作者还是相信它至少……”，[A]While（虽然、尽管）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q18",
+          "number": 18,
+          "qtype": "完形",
+          "stem": "第 18 空：选择最合适的词填入空白 [18]",
+          "stem_cn": "",
+          "options": {
+            "A": "arrives",
+            "B": "jumps",
+            "C": "hints",
+            "D": "strikes"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查词语搭配＋词义辨析。空格所在句指出，尽管上述研究不能证明幸福感致使公司增加投资，但作者相信它至少——这种可能性。由cause的含义to make sth happen可知，作者意欲先让步指出上述研究不能证明幸福感和投资存在直接显性的因果关系，之后转折指出它至少隐含了这种可能性。[C]hints（at）意为“暗示、示意”，符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q19",
+          "number": 19,
+          "qtype": "完形",
+          "stem": "第 19 空：选择最合适的词填入空白 [19]",
+          "stem_cn": "",
+          "options": {
+            "A": "share",
+            "B": "rediscover",
+            "C": "simplify",
+            "D": "shape"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。空格所在句指出，地方文化和情感有助于[19]管理者对未来的思考。综合全文，通篇都在论述某地的幸福指数影响该地区公司的投资，具体来说即，地方文化和人文情怀等地域因素潜移默化地影响管理者对未来投资的思考，且这种影响可能已经内化成为管理者思维的一部分，[D]shape（塑造、使成形、对……产生影响）能体现这种由内而外的影响过程，为正确答案。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        },
+        {
+          "id": "2016_cloze_q20",
+          "number": 20,
+          "qtype": "完形",
+          "stem": "第 20 空：选择最合适的词填入空白 [20]",
+          "stem_cn": "",
+          "options": {
+            "A": "pray for",
+            "B": "lean towards",
+            "C": "send out",
+            "D": "give away"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义。空格词语说明幸福的人对研发的态度。综合第一段“幸福的人更创新、更愿意冒险”，第二段“位于幸福指数高的地区的公司在研发上投入更多”，第四段“公司投资和研发力度与公司总部所在地的幸福指数相关”，可以推知，幸福的人更愿意在研发上投入，即他们更倾向于/偏向于研发。[B]lean towards（倾向于、偏向于）符合文义。",
+          "related_sentences": [
+            "2016_cloze_s01",
+            "2016_cloze_s02",
+            "2016_cloze_s03",
+            "2016_cloze_s04",
+            "2016_cloze_s05",
+            "2016_cloze_s06",
+            "2016_cloze_s07",
+            "2016_cloze_s08",
+            "2016_cloze_s09",
+            "2016_cloze_s10",
+            "2016_cloze_s11",
+            "2016_cloze_s12",
+            "2016_cloze_s13",
+            "2016_cloze_s14",
+            "2016_cloze_s15",
+            "2016_cloze_s16",
+            "2016_cloze_s17",
+            "2016_cloze_s18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2016_translation",
+      "type": "translation",
+      "title": "Surviving the Sneaky Psychology of Supermarkets",
+      "topic": "翻译：战胜鬼祟的超市心理学——超市设计如何诱使顾客冲动购物。",
+      "source": "Section III Translation",
+      "ref_cn": "超市的设计就是要诱使顾客尽可能久地待在店内。其理由很简单：你在店里逗留越久，看到的东西就越多，看到的东西越多，买的就越多。而超市里的东西多得很。按食品营销研究院所说，普通超市售卖约44,000种各式货品，而且许多超市的货品还要多出成千上万种。单是可供选择的货品数量就足以让购物者陷入信息超负荷的状态。根据大脑扫描实验，如此之大的决策量带来的负担会很快令我们无法承受。购物约40分钟后，大多数人就不再费心去理性选购，而是开始冲动购物了——就是从这一刻起，我们把本来根本没打算买的那一半东西堆进了购物车。",
+      "sentences": [
+        {
+          "id": "2016_translation_s01",
+          "para": 1,
+          "en": "The supermarket is designed to lure customers into spending as much time as possible within its doors.",
+          "cn": "超市的设计就是要诱使顾客尽可能久地待在店内。",
+          "words": []
+        },
+        {
+          "id": "2016_translation_s02",
+          "para": 1,
+          "en": "The reason for this is simple: The longer you stay in the store, the more stuff you'll see, and the more stuff you see, the more you'll buy.",
+          "cn": "其理由很简单：你在店里逗留越久，看到的东西就越多，看到的东西越多，买的就越多。",
+          "words": []
+        },
+        {
+          "id": "2016_translation_s03",
+          "para": 1,
+          "en": "And supermarkets contain a lot of stuff.",
+          "cn": "而超市里的东西多得很。",
+          "words": []
+        },
+        {
+          "id": "2016_translation_s04",
+          "para": 1,
+          "en": "The average supermarket, according to the Food Marketing Institute, carries some 44,000 different items, and many carry tens of thousands more.",
+          "cn": "按食品营销研究院所说，普通超市售卖约44,000种各式货品，而且许多超市的货品还要多出成千上万种。",
+          "words": []
+        },
+        {
+          "id": "2016_translation_s05",
+          "para": 1,
+          "en": "The sheer volume of available choice is enough to send shoppers into a state of information overload.",
+          "cn": "单是可供选择的货品数量就足以让购物者陷入信息超负荷的状态。",
+          "words": []
+        },
+        {
+          "id": "2016_translation_s06",
+          "para": 1,
+          "en": "According to brain-scan experiments, the demands of so much decision making quickly become too much for us.",
+          "cn": "根据大脑扫描实验，如此之大的决策量带来的负担会很快令我们无法承受。",
+          "words": []
+        },
+        {
+          "id": "2016_translation_s07",
+          "para": 1,
+          "en": "After about 40 minutes of shopping, most people stop struggling to be rationally selective, and instead begin shopping emotionally - which is the point at which we accumulate the 50 percent of stuff in our cart that we never intended buying.",
+          "cn": "购物约40分钟后，大多数人就不再费心去理性选购，而是开始冲动购物了——就是从这一刻起，我们把本来根本没打算买的那一半东西堆进了购物车。",
+          "words": []
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "2016_writinga",
+      "type": "writing_a",
+      "title": "Part A 应用文：建议信",
+      "topic": "小作文：回复朋友Jack的来信，感谢其对作者在翻译比赛中获胜的祝贺，并为其提供提高翻译水平的建议。",
+      "source": "Section IV Writing Part A",
+      "sample_en": "Dear Jack,\nI'm writing to express my gratitude for your congratulation on my success in the translation contest. Since you asked for my advice, I'd like to share with you some of my thoughts on how to improve translation skills.\nTo begin with, it is vital that you appreciate the beauty of language and hone your reading skills. Besides, a good translator usually reads extensively and constantly exposes himself to quality reading materials. One should cultivate a broad knowledge base and keep abreast of current events and issues. Moreover, be persistent. Language learning is not a task that can be accomplished within a short time. Only with a lot of sustained efforts can we improve our translation skills.\nI wish you find these suggestions useful and I'm more than willing to discuss it with you about further details. I'm looking forward to your reply.\nYours sincerely,\nLi Ming",
+      "sample_cn": "杰克：\n我写这封信以表达对你此前恭贺我在翻译比赛中获胜的感谢。另外，因为你咨询我的建议，在此我想就如何提高翻译水平和你分享一些我的看法。\n首先，你要欣赏语言之美，并打磨自己的阅读技能，这一点很重要。其次，一位好的译者通常博览群书，而且不断地让自己接触高质量的阅读材料。应当打下广泛的知识基础，同时与时俱进，跟上时事的步伐。此外，还要做到持之以恒。语言学习不是在短时间内就能完成的一项任务。只有持续的、极大的努力才能让我们提高翻译水平。\n我希望你觉得这些建议有用。我非常乐意和你进一步探讨这个话题。期待你的回复。\n诚挚的，\n李明",
+      "questions": []
+    },
+    {
+      "id": "2016_writingb",
+      "type": "writing_b",
+      "title": "Part B 大作文：高校学生旅游目的调查饼图",
+      "topic": "大作文：根据饼图写一篇短文，解读某高校学生旅游目的占比（欣赏风景37%、缓解压力33%、广交朋友9%、培养独立能力6%、其他15%）并发表评论。",
+      "source": "Section IV Writing Part B",
+      "chart_img": "img/2016_writingb_chart.png",
+      "sample_en": "This pie chart, simple yet illuminating, illustrates the purposes of travel for students polled in a certain university. As is reflected by the chart, 37 percent of college students travel to appreciate the beauty of the scenery; next comes the aim of relieving pressure, accounting for 33 percent. Students' other objectives - making more friends, fostering greater independence, and other aims respectively account for 9%, 6% and 15%.\nThe survey reveals that most students go on a journey to enjoy the view as well as to unwind and recharge. On the one hand, with the prosperity of tourism, college students who have ample time, curiosity and energy to explore their individuality and see the outside world are lured to go out of campus and come into contact with grandeur and beauty. On the other hand, college students have their share of pressure coming from academic study, employment and interpersonal relationship, to which travelling is a wonderful antidote. One usually comes back from a trip feeling refreshed and revitalized.\nIn my opinion, though it's natural for college students to seek fun and enjoyment, they should attach deeper meaning to travelling. In the journey one can try to interact with local people and experience their culture in-depth, make friends with people from different cultural backgrounds and feel a sense of independence and self-reliance from the bottom of heart. Travelling truly could benefit a lot.",
+      "sample_cn": "这张简单却具启发性的饼状图图解了某大学被调查的学生旅行的目的。正如图表反映的，37%的大学生旅行是为了欣赏景色的美好；仅次于的是为了缓解压力，占了33%。学生的其他目的——结交更多朋友，培养独立能力以及其他分别占9%，6%和15%。\n该项调查显示，大多数学生去旅行的目的都是欣赏美景以及放松休息一下。一方面，随着旅游业的繁荣，有着足够时间、好奇心和精力去探索他们自身个性和看外面世界的大学生们很容易受到大千世界的诱惑，走出大学校园，去接触那些美好和壮阔。另一方面，大学生也有他们自己的压力，来自于学业、就业以及人际关系，而旅行是对抗压力的极妙良方。通常一个人旅行归来，都会感觉神清气爽，焕然一新。\n依我看来，尽管大学生寻求旅行的乐趣与享受很自然，但他们也应当赋予旅行更深层次的意义。在这个过程中，一个人可以尝试着去接触当地人并深度体验他们的文化，同来自不同文化背景的人成为朋友，并且从心底感受到一种自由、自立的感觉。旅行的确能让人收益颇丰。",
+      "questions": []
     }
   ]
 }

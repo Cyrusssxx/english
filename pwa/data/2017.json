@@ -10,38 +10,541 @@
       "topic": "公园跑与奥运遗产：草根体育为何比奥运会更成功",
       "source": "2017 年考研英语（二）Text 1 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2017_text1_s01", "para": 1, "en": "Every Saturday morning, at 9 am, more than 50,000 runners set off to run 5km around their local park.", "cn": "每周六上午 9 点，超过 5 万名跑步者开始绕当地公园跑 5 千米。", "words": [ { "w": "set off", "meaning": "出发，动身" }, { "w": "local park", "meaning": "当地公园" } ] },
-        { "id": "2017_text1_s02", "para": 1, "en": "The Parkrun phenomenon began with a dozen friends and has inspired 400 events in the UK and more abroad.", "cn": "“公园跑”现象始于十来个朋友，如今已在英国激起 400 场活动，国外更多。", "words": [ { "w": "a dozen friends", "meaning": "十来个朋友" }, { "w": "has inspired", "meaning": "激发，激励" } ] },
-        { "id": "2017_text1_s03", "para": 1, "en": "Events are free, staffed by thousands of volunteers.", "cn": "活动免费，工作人员由数千名志愿者担任。", "words": [ { "w": "staffed by", "meaning": "由……担任工作人员" }, { "w": "volunteers", "meaning": "n. 志愿者" } ] },
-        { "id": "2017_text1_s04", "para": 1, "en": "Runners range from four years old to grandparents; their times range from Andrew Baddeley's world record 13 minutes 48 seconds up to an hour.", "cn": "跑步者年龄下起 4 岁的幼童，上至祖父母之辈；他们的成绩最短的是安德鲁·巴德利 13 分 48 秒的世界纪录，最长的高达一小时之久。", "words": [ { "w": "range from", "meaning": "范围从……" }, { "w": "world record", "meaning": "世界纪录" } ] },
-        { "id": "2017_text1_s05", "para": 2, "en": "Parkrun is succeeding where London's Olympic \"legacy\" is failing.", "cn": "“公园跑”的成功之处正是伦敦奥运会“遗产”的失败之处。", "words": [ { "w": "is succeeding", "meaning": "正在成功" }, { "w": "legacy", "meaning": "n. 遗产，遗留" } ] },
-        { "id": "2017_text1_s06", "para": 2, "en": "Ten years ago on Monday, it was announced that the Games of the 30th Olympiad would be in London.", "cn": "十年前的那个星期一，（国际奥委会）宣布第 30 届奥林匹克运动会将在伦敦举行。", "words": [ { "w": "it was announced", "meaning": "宣布" }, { "w": "Olympiad", "meaning": "n. 奥林匹克运动会（届）" } ] },
-        { "id": "2017_text1_s07", "para": 2, "en": "Planning documents pledged that the great legacy of the Games would be to lever a nation of sport lovers away from their couches.", "cn": "规划文件承诺，奥运会的伟大遗产将会是把全国的体育爱好者撬离沙发。", "words": [ { "w": "pledged", "meaning": "v. 承诺，保证" }, { "w": "lever", "meaning": "v. 撬动，用杠杆撬" }, { "w": "couches", "meaning": "n. 沙发" } ] },
-        { "id": "2017_text1_s08", "para": 2, "en": "The population would be fitter, healthier and produce more winners.", "cn": "国民将会更强壮，更健康，产生更多获胜者。", "words": [ { "w": "fitter", "meaning": "adj. 更健康的（fit 比较级）" } ] },
-        { "id": "2017_text1_s09", "para": 2, "en": "It has not happened.", "cn": "但这并没有发生。", "words": [ { "w": "has not happened", "meaning": "没有发生" } ] },
-        { "id": "2017_text1_s10", "para": 2, "en": "The number of adults doing weekly sport did rise, by nearly 2 million in the run-up to 2012 - but the general population was growing faster.", "cn": "在 2012 年前的筹备阶段，每周参加体育运动的成年人数量确实上升了，增加了近 200 万——但总人口增长得更快。", "words": [ { "w": "the run-up to", "meaning": "……的前期、临近……的阶段" }, { "w": "general population", "meaning": "总人口" } ] },
-        { "id": "2017_text1_s11", "para": 2, "en": "Worse, the numbers are now falling at an accelerating rate.", "cn": "更糟糕的是，这一数字如今正以加速的势头下降。", "words": [ { "w": "at an accelerating rate", "meaning": "以加速的速率" } ] },
-        { "id": "2017_text1_s12", "para": 2, "en": "The opposition claims primary school pupils doing at least two hours of sport a week have nearly halved.", "cn": "反对党声称，每周至少参加两小时体育运动的小学生人数已近乎减半。", "words": [ { "w": "The opposition", "meaning": "反对派" }, { "w": "halved", "meaning": "v. 减半" } ] },
-        { "id": "2017_text1_s13", "para": 2, "en": "Obesity has risen among adults and children.", "cn": "成年人和儿童中的肥胖率均有所上升。", "words": [ { "w": "Obesity", "meaning": "n. 肥胖，肥胖症" } ] },
-        { "id": "2017_text1_s14", "para": 2, "en": "Official retrospections continue as to why London 2012 failed to \"inspire a generation.\"", "cn": "关于 2012 年伦敦奥运会为何未能“激励一代人”，官方的反思仍在继续。", "words": [ { "w": "retrospections", "meaning": "n. 回顾，反思" }, { "w": "inspire a generation", "meaning": "激励一代人" } ] },
-        { "id": "2017_text1_s15", "para": 2, "en": "The success of Parkrun offers answers.", "cn": "“公园跑”的成功给出了答案。", "words": [ { "w": "offers answers", "meaning": "给出答案" } ] },
-        { "id": "2017_text1_s16", "para": 3, "en": "Parkun is not a race but a time trial: Your only competitor is the clock.", "cn": "“公园跑”不是竞赛，而是计时赛：你唯一的竞争对手便是时间。", "words": [ { "w": "a time trial", "meaning": "计时赛" }, { "w": "competitor", "meaning": "n. 竞争对手" } ] },
-        { "id": "2017_text1_s17", "para": 3, "en": "The ethos welcomes anybody.", "cn": "其精神在于欢迎任何人。", "words": [ { "w": "ethos", "meaning": "n. 精神特质，气质" } ] },
-        { "id": "2017_text1_s18", "para": 3, "en": "There is as much joy over a puffed-out first-timer being clapped over the line as there is about top talent shining.", "cn": "气喘吁吁的初次参加者在掌声中跨过终点时，获得的快乐与光芒四射的顶尖天才一样多。", "words": [ { "w": "puffed-out", "meaning": "adj. 气喘吁吁的" }, { "w": "first-timer", "meaning": "n. 初次参加者" }, { "w": "top talent", "meaning": "顶尖天才" } ] },
-        { "id": "2017_text1_s19", "para": 3, "en": "The Olympic bidders, by contrast, wanted to get more people doing sport and to produce more elite athletes.", "cn": "相比之下，奥运会申办者则希望让更多人参与运动且产生更多的精英运动员。", "words": [ { "w": "bidders", "meaning": "n. 申办者，投标者" }, { "w": "by contrast", "meaning": "相比之下" }, { "w": "elite athletes", "meaning": "精英运动员" } ] },
-        { "id": "2017_text1_s20", "para": 3, "en": "The dual aim was mixed up: The stress on success over taking part was intimidating for newcomers.", "cn": "双重目的被混为一谈：强调“成功”胜过“参与”会吓退新手。", "words": [ { "w": "dual aim", "meaning": "双重目的" }, { "w": "mixed up", "meaning": "混淆，混为一谈" }, { "w": "intimidating", "meaning": "adj. 令人生畏的" } ] },
-        { "id": "2017_text1_s21", "para": 4, "en": "Indeed, there is something a little absurd in the state getting involved in the planning of such a fundamentally \"grassroots\" concept as community sports associations.", "cn": "的确，政府参与规划“社区体育协会”这样本质上“草根”的概念有点荒唐。", "words": [ { "w": "absurd", "meaning": "adj. 荒唐的，荒谬的" }, { "w": "getting involved in", "meaning": "参与，卷入" }, { "w": "grassroots", "meaning": "n./adj. 基层民众；草根的" } ] },
-        { "id": "2017_text1_s22", "para": 4, "en": "If there is a role for government, it should really be getting involved in providing common goods - making sure there is space for playing fields and the money to pave tennis and netball courts, and encouraging the provision of all these activities in schools.", "cn": "如果政府要起点作用，那其实应该是努力提供公共物品——确保有运动场地的空间，有铺筑网球、篮网球场的资金，并支持学校开展所有这些体育活动。", "words": [ { "w": "common goods", "meaning": "公共物品" }, { "w": "playing fields", "meaning": "运动场地" }, { "w": "pave", "meaning": "v. 铺筑，铺设" } ] },
-        { "id": "2017_text1_s23", "para": 4, "en": "But successive governments have presided over selling green spaces, squeezing money from local authorities and declining attention on sport in education.", "cn": "但是历届政府却一直掌管着售卖绿地，压缩地方政府资金，拒绝重视教育领域的体育运动。", "words": [ { "w": "successive governments", "meaning": "历届政府" }, { "w": "presided over", "meaning": "主持，掌管" }, { "w": "local authorities", "meaning": "地方政府" } ] },
-        { "id": "2017_text1_s24", "para": 4, "en": "Instead of wordy, worthy strategies, future governments need to do more to provide the conditions for sport to thrive.", "cn": "未来政府不是要制定冗长的、令人尊敬的策略，而是需要多干实事，为繁荣体育运动提供条件。", "words": [ { "w": "wordy", "meaning": "adj. 冗长的，啰嗦的" }, { "w": "worthy", "meaning": "adj. 有价值的，值得尊敬的" }, { "w": "thrive", "meaning": "v. 繁荣，兴盛" } ] },
-        { "id": "2017_text1_s25", "para": 4, "en": "Or at least not make them worse.", "cn": "或者至少不要让情况变得更糟。", "words": [ { "w": "at least", "meaning": "至少" } ] }
+        {
+          "id": "2017_text1_s01",
+          "para": 1,
+          "en": "Every Saturday morning, at 9 am, more than 50,000 runners set off to run 5km around their local park.",
+          "cn": "每周六上午 9 点，超过 5 万名跑步者开始绕当地公园跑 5 千米。",
+          "words": [
+            {
+              "w": "set off",
+              "meaning": "出发，动身"
+            },
+            {
+              "w": "local park",
+              "meaning": "当地公园"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s02",
+          "para": 1,
+          "en": "The Parkrun phenomenon began with a dozen friends and has inspired 400 events in the UK and more abroad.",
+          "cn": "“公园跑”现象始于十来个朋友，如今已在英国激起 400 场活动，国外更多。",
+          "words": [
+            {
+              "w": "a dozen friends",
+              "meaning": "十来个朋友"
+            },
+            {
+              "w": "has inspired",
+              "meaning": "激发，激励"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s03",
+          "para": 1,
+          "en": "Events are free, staffed by thousands of volunteers.",
+          "cn": "活动免费，工作人员由数千名志愿者担任。",
+          "words": [
+            {
+              "w": "staffed by",
+              "meaning": "由……担任工作人员"
+            },
+            {
+              "w": "volunteers",
+              "meaning": "n. 志愿者"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s04",
+          "para": 1,
+          "en": "Runners range from four years old to grandparents; their times range from Andrew Baddeley's world record 13 minutes 48 seconds up to an hour.",
+          "cn": "跑步者年龄下起 4 岁的幼童，上至祖父母之辈；他们的成绩最短的是安德鲁·巴德利 13 分 48 秒的世界纪录，最长的高达一小时之久。",
+          "words": [
+            {
+              "w": "range from",
+              "meaning": "范围从……"
+            },
+            {
+              "w": "world record",
+              "meaning": "世界纪录"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s05",
+          "para": 2,
+          "en": "Parkrun is succeeding where London's Olympic \"legacy\" is failing.",
+          "cn": "“公园跑”的成功之处正是伦敦奥运会“遗产”的失败之处。",
+          "words": [
+            {
+              "w": "is succeeding",
+              "meaning": "正在成功"
+            },
+            {
+              "w": "legacy",
+              "meaning": "n. 遗产，遗留"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s06",
+          "para": 2,
+          "en": "Ten years ago on Monday, it was announced that the Games of the 30th Olympiad would be in London.",
+          "cn": "十年前的那个星期一，（国际奥委会）宣布第 30 届奥林匹克运动会将在伦敦举行。",
+          "words": [
+            {
+              "w": "it was announced",
+              "meaning": "宣布"
+            },
+            {
+              "w": "Olympiad",
+              "meaning": "n. 奥林匹克运动会（届）"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s07",
+          "para": 2,
+          "en": "Planning documents pledged that the great legacy of the Games would be to lever a nation of sport lovers away from their couches.",
+          "cn": "规划文件承诺，奥运会的伟大遗产将会是把全国的体育爱好者撬离沙发。",
+          "words": [
+            {
+              "w": "pledged",
+              "meaning": "v. 承诺，保证"
+            },
+            {
+              "w": "lever",
+              "meaning": "v. 撬动，用杠杆撬"
+            },
+            {
+              "w": "couches",
+              "meaning": "n. 沙发"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s08",
+          "para": 2,
+          "en": "The population would be fitter, healthier and produce more winners.",
+          "cn": "国民将会更强壮，更健康，产生更多获胜者。",
+          "words": [
+            {
+              "w": "fitter",
+              "meaning": "adj. 更健康的（fit 比较级）"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s09",
+          "para": 2,
+          "en": "It has not happened.",
+          "cn": "但这并没有发生。",
+          "words": [
+            {
+              "w": "has not happened",
+              "meaning": "没有发生"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s10",
+          "para": 2,
+          "en": "The number of adults doing weekly sport did rise, by nearly 2 million in the run-up to 2012 - but the general population was growing faster.",
+          "cn": "在 2012 年前的筹备阶段，每周参加体育运动的成年人数量确实上升了，增加了近 200 万——但总人口增长得更快。",
+          "words": [
+            {
+              "w": "the run-up to",
+              "meaning": "……的前期、临近……的阶段"
+            },
+            {
+              "w": "general population",
+              "meaning": "总人口"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s11",
+          "para": 2,
+          "en": "Worse, the numbers are now falling at an accelerating rate.",
+          "cn": "更糟糕的是，这一数字如今正以加速的势头下降。",
+          "words": [
+            {
+              "w": "at an accelerating rate",
+              "meaning": "以加速的速率"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s12",
+          "para": 2,
+          "en": "The opposition claims primary school pupils doing at least two hours of sport a week have nearly halved.",
+          "cn": "反对党声称，每周至少参加两小时体育运动的小学生人数已近乎减半。",
+          "words": [
+            {
+              "w": "The opposition",
+              "meaning": "反对派"
+            },
+            {
+              "w": "halved",
+              "meaning": "v. 减半"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s13",
+          "para": 2,
+          "en": "Obesity has risen among adults and children.",
+          "cn": "成年人和儿童中的肥胖率均有所上升。",
+          "words": [
+            {
+              "w": "Obesity",
+              "meaning": "n. 肥胖，肥胖症"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s14",
+          "para": 2,
+          "en": "Official retrospections continue as to why London 2012 failed to \"inspire a generation.\"",
+          "cn": "关于 2012 年伦敦奥运会为何未能“激励一代人”，官方的反思仍在继续。",
+          "words": [
+            {
+              "w": "retrospections",
+              "meaning": "n. 回顾，反思"
+            },
+            {
+              "w": "inspire a generation",
+              "meaning": "激励一代人"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s15",
+          "para": 2,
+          "en": "The success of Parkrun offers answers.",
+          "cn": "“公园跑”的成功给出了答案。",
+          "words": [
+            {
+              "w": "offers answers",
+              "meaning": "给出答案"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s16",
+          "para": 3,
+          "en": "Parkun is not a race but a time trial: Your only competitor is the clock.",
+          "cn": "“公园跑”不是竞赛，而是计时赛：你唯一的竞争对手便是时间。",
+          "words": [
+            {
+              "w": "a time trial",
+              "meaning": "计时赛"
+            },
+            {
+              "w": "competitor",
+              "meaning": "n. 竞争对手"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s17",
+          "para": 3,
+          "en": "The ethos welcomes anybody.",
+          "cn": "其精神在于欢迎任何人。",
+          "words": [
+            {
+              "w": "ethos",
+              "meaning": "n. 精神特质，气质"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s18",
+          "para": 3,
+          "en": "There is as much joy over a puffed-out first-timer being clapped over the line as there is about top talent shining.",
+          "cn": "气喘吁吁的初次参加者在掌声中跨过终点时，获得的快乐与光芒四射的顶尖天才一样多。",
+          "words": [
+            {
+              "w": "puffed-out",
+              "meaning": "adj. 气喘吁吁的"
+            },
+            {
+              "w": "first-timer",
+              "meaning": "n. 初次参加者"
+            },
+            {
+              "w": "top talent",
+              "meaning": "顶尖天才"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s19",
+          "para": 3,
+          "en": "The Olympic bidders, by contrast, wanted to get more people doing sport and to produce more elite athletes.",
+          "cn": "相比之下，奥运会申办者则希望让更多人参与运动且产生更多的精英运动员。",
+          "words": [
+            {
+              "w": "bidders",
+              "meaning": "n. 申办者，投标者"
+            },
+            {
+              "w": "by contrast",
+              "meaning": "相比之下"
+            },
+            {
+              "w": "elite athletes",
+              "meaning": "精英运动员"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s20",
+          "para": 3,
+          "en": "The dual aim was mixed up: The stress on success over taking part was intimidating for newcomers.",
+          "cn": "双重目的被混为一谈：强调“成功”胜过“参与”会吓退新手。",
+          "words": [
+            {
+              "w": "dual aim",
+              "meaning": "双重目的"
+            },
+            {
+              "w": "mixed up",
+              "meaning": "混淆，混为一谈"
+            },
+            {
+              "w": "intimidating",
+              "meaning": "adj. 令人生畏的"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s21",
+          "para": 4,
+          "en": "Indeed, there is something a little absurd in the state getting involved in the planning of such a fundamentally \"grassroots\" concept as community sports associations.",
+          "cn": "的确，政府参与规划“社区体育协会”这样本质上“草根”的概念有点荒唐。",
+          "words": [
+            {
+              "w": "absurd",
+              "meaning": "adj. 荒唐的，荒谬的"
+            },
+            {
+              "w": "getting involved in",
+              "meaning": "参与，卷入"
+            },
+            {
+              "w": "grassroots",
+              "meaning": "n./adj. 基层民众；草根的"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s22",
+          "para": 4,
+          "en": "If there is a role for government, it should really be getting involved in providing common goods - making sure there is space for playing fields and the money to pave tennis and netball courts, and encouraging the provision of all these activities in schools.",
+          "cn": "如果政府要起点作用，那其实应该是努力提供公共物品——确保有运动场地的空间，有铺筑网球、篮网球场的资金，并支持学校开展所有这些体育活动。",
+          "words": [
+            {
+              "w": "common goods",
+              "meaning": "公共物品"
+            },
+            {
+              "w": "playing fields",
+              "meaning": "运动场地"
+            },
+            {
+              "w": "pave",
+              "meaning": "v. 铺筑，铺设"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s23",
+          "para": 4,
+          "en": "But successive governments have presided over selling green spaces, squeezing money from local authorities and declining attention on sport in education.",
+          "cn": "但是历届政府却一直掌管着售卖绿地，压缩地方政府资金，拒绝重视教育领域的体育运动。",
+          "words": [
+            {
+              "w": "successive governments",
+              "meaning": "历届政府"
+            },
+            {
+              "w": "presided over",
+              "meaning": "主持，掌管"
+            },
+            {
+              "w": "local authorities",
+              "meaning": "地方政府"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s24",
+          "para": 4,
+          "en": "Instead of wordy, worthy strategies, future governments need to do more to provide the conditions for sport to thrive.",
+          "cn": "未来政府不是要制定冗长的、令人尊敬的策略，而是需要多干实事，为繁荣体育运动提供条件。",
+          "words": [
+            {
+              "w": "wordy",
+              "meaning": "adj. 冗长的，啰嗦的"
+            },
+            {
+              "w": "worthy",
+              "meaning": "adj. 有价值的，值得尊敬的"
+            },
+            {
+              "w": "thrive",
+              "meaning": "v. 繁荣，兴盛"
+            }
+          ]
+        },
+        {
+          "id": "2017_text1_s25",
+          "para": 4,
+          "en": "Or at least not make them worse.",
+          "cn": "或者至少不要让情况变得更糟。",
+          "words": [
+            {
+              "w": "at least",
+              "meaning": "至少"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2017_text1_q1", "number": 21, "qtype": "detail", "stem": "According to Paragraph 1, Parkrun has ___.", "stem_cn": "根据第一段，“公园跑”已___。", "options": { "A": "gained great popularity", "B": "created many jobs", "C": "strengthened community ties", "D": "become an official festival" }, "options_cn": { "A": "赢得了巨大欢迎", "B": "创造了许多岗位", "C": "加强了社区联系", "D": "成为了官方节日" }, "answer": "A", "explanation": "第一段指出公园跑每周定时举行、人数超5万，始于十来个朋友如今激起400场活动、国外更多，且志愿者众多、参加者老少皆有；再由第二段首句 Parkrun is succeeding 印证，可知该活动已赢得巨大欢迎，故 [A] 正确。[B] 志愿者非“岗位”，[C] 断章取义，[D] 反向干扰。", "related_sentences": [ "2017_text1_s01", "2017_text1_s02", "2017_text1_s05" ] },
-        { "id": "2017_text1_q2", "number": 22, "qtype": "detail", "stem": "The author believes that London's Olympic \"legacy\" has failed to ___.", "stem_cn": "作者认为伦敦奥运会“遗产”未能___。", "options": { "A": "boost population growth", "B": "promote sport participation", "C": "improve the city's image", "D": "increase sport hours in schools" }, "options_cn": { "A": "促进人口增长", "B": "提升运动参与", "C": "改善城市形象", "D": "增加校内运动时间" }, "answer": "B", "explanation": "第二段指出奥运遗产本预期促进国民参与运动、更健康，结果却是运动人数下降、肥胖人数增加，可见其未能提升运动参与，故 [B] 正确。", "related_sentences": [ "2017_text1_s07", "2017_text1_s10", "2017_text1_s12" ] },
-        { "id": "2017_text1_q3", "number": 23, "qtype": "detail", "stem": "Parkrun is different from Olympic games in that it ___.", "stem_cn": "“公园跑”不同于“奥运会”之处在于它___。", "options": { "A": "aims at discovering talents", "B": "focuses on mass competition", "C": "does not emphasize elitism", "D": "does not attract first-timers" }, "options_cn": { "A": "意在发现天才", "B": "聚焦大众比赛", "C": "不强调精英主义", "D": "无法吸引新手" }, "answer": "C", "explanation": "第三段由 by contrast 指出：公园跑旨在让所有人参与并获得快乐，而奥运会既求大众参与又求发现精英，两者区别在于公园跑不强调“精英主义”，故 [C] 正确。", "related_sentences": [ "2017_text1_s17", "2017_text1_s19", "2017_text1_s20" ] },
-        { "id": "2017_text1_q4", "number": 24, "qtype": "detail", "stem": "With regard to mass sports, the author holds that governments should ___.", "stem_cn": "关于大众体育，作者认为政府应该___。", "options": { "A": "organize \"grassroots\" sports events", "B": "supervise local sports associations", "C": "increase funds for sports clubs", "D": "invest in public sports facilities" }, "options_cn": { "A": "组织“草根”体育活动", "B": "监管地方的运动协会", "C": "增加对体育俱乐部的投资", "D": "投资公共体育设施" }, "answer": "D", "explanation": "第四段指出政府就促进大众体育的正确做法应是提供公共物品：确保运动场地、提供铺场资金、支持学校开展活动，即投资公共体育设施，故 [D] 正确。", "related_sentences": [ "2017_text1_s22", "2017_text1_s24" ] },
-        { "id": "2017_text1_q5", "number": 25, "qtype": "attitude", "stem": "The author's attitude to what UK governments have done for sports is ___.", "stem_cn": "作者对英国政府在体育方面所作所为的态度是___。", "options": { "A": "tolerant", "B": "critical", "C": "uncertain", "D": "sympathetic" }, "options_cn": { "A": "宽容的", "B": "批评的", "C": "不确定的", "D": "赞同的" }, "answer": "B", "explanation": "第四段指出政府参与规划基层体育有些可笑，实际做法（卖绿地、压缩资金、忽视校内体育）与正确做法完全相反，末句敦促未来政府多干实事、至少别更糟，可见作者持明显批判态度，故 [B] 正确。", "related_sentences": [ "2017_text1_s21", "2017_text1_s23", "2017_text1_s24" ] }
+        {
+          "id": "2017_text1_q1",
+          "number": 21,
+          "qtype": "detail",
+          "stem": "According to Paragraph 1, Parkrun has ___.",
+          "stem_cn": "根据第一段，“公园跑”已___。",
+          "options": {
+            "A": "gained great popularity",
+            "B": "created many jobs",
+            "C": "strengthened community ties",
+            "D": "become an official festival"
+          },
+          "options_cn": {
+            "A": "赢得了巨大欢迎",
+            "B": "创造了许多岗位",
+            "C": "加强了社区联系",
+            "D": "成为了官方节日"
+          },
+          "answer": "A",
+          "explanation": "第一段指出公园跑每周定时举行、人数超5万，始于十来个朋友如今激起400场活动、国外更多，且志愿者众多、参加者老少皆有；再由第二段首句 Parkrun is succeeding 印证，可知该活动已赢得巨大欢迎，故 [A] 正确。[B] 志愿者非“岗位”，[C] 断章取义，[D] 反向干扰。",
+          "related_sentences": [
+            "2017_text1_s01",
+            "2017_text1_s02",
+            "2017_text1_s05"
+          ]
+        },
+        {
+          "id": "2017_text1_q2",
+          "number": 22,
+          "qtype": "detail",
+          "stem": "The author believes that London's Olympic \"legacy\" has failed to ___.",
+          "stem_cn": "作者认为伦敦奥运会“遗产”未能___。",
+          "options": {
+            "A": "boost population growth",
+            "B": "promote sport participation",
+            "C": "improve the city's image",
+            "D": "increase sport hours in schools"
+          },
+          "options_cn": {
+            "A": "促进人口增长",
+            "B": "提升运动参与",
+            "C": "改善城市形象",
+            "D": "增加校内运动时间"
+          },
+          "answer": "B",
+          "explanation": "第二段指出奥运遗产本预期促进国民参与运动、更健康，结果却是运动人数下降、肥胖人数增加，可见其未能提升运动参与，故 [B] 正确。",
+          "related_sentences": [
+            "2017_text1_s07",
+            "2017_text1_s10",
+            "2017_text1_s12"
+          ]
+        },
+        {
+          "id": "2017_text1_q3",
+          "number": 23,
+          "qtype": "detail",
+          "stem": "Parkrun is different from Olympic games in that it ___.",
+          "stem_cn": "“公园跑”不同于“奥运会”之处在于它___。",
+          "options": {
+            "A": "aims at discovering talents",
+            "B": "focuses on mass competition",
+            "C": "does not emphasize elitism",
+            "D": "does not attract first-timers"
+          },
+          "options_cn": {
+            "A": "意在发现天才",
+            "B": "聚焦大众比赛",
+            "C": "不强调精英主义",
+            "D": "无法吸引新手"
+          },
+          "answer": "C",
+          "explanation": "第三段由 by contrast 指出：公园跑旨在让所有人参与并获得快乐，而奥运会既求大众参与又求发现精英，两者区别在于公园跑不强调“精英主义”，故 [C] 正确。",
+          "related_sentences": [
+            "2017_text1_s17",
+            "2017_text1_s19",
+            "2017_text1_s20"
+          ]
+        },
+        {
+          "id": "2017_text1_q4",
+          "number": 24,
+          "qtype": "detail",
+          "stem": "With regard to mass sports, the author holds that governments should ___.",
+          "stem_cn": "关于大众体育，作者认为政府应该___。",
+          "options": {
+            "A": "organize \"grassroots\" sports events",
+            "B": "supervise local sports associations",
+            "C": "increase funds for sports clubs",
+            "D": "invest in public sports facilities"
+          },
+          "options_cn": {
+            "A": "组织“草根”体育活动",
+            "B": "监管地方的运动协会",
+            "C": "增加对体育俱乐部的投资",
+            "D": "投资公共体育设施"
+          },
+          "answer": "D",
+          "explanation": "第四段指出政府就促进大众体育的正确做法应是提供公共物品：确保运动场地、提供铺场资金、支持学校开展活动，即投资公共体育设施，故 [D] 正确。",
+          "related_sentences": [
+            "2017_text1_s22",
+            "2017_text1_s24"
+          ]
+        },
+        {
+          "id": "2017_text1_q5",
+          "number": 25,
+          "qtype": "attitude",
+          "stem": "The author's attitude to what UK governments have done for sports is ___.",
+          "stem_cn": "作者对英国政府在体育方面所作所为的态度是___。",
+          "options": {
+            "A": "tolerant",
+            "B": "critical",
+            "C": "uncertain",
+            "D": "sympathetic"
+          },
+          "options_cn": {
+            "A": "宽容的",
+            "B": "批评的",
+            "C": "不确定的",
+            "D": "赞同的"
+          },
+          "answer": "B",
+          "explanation": "第四段指出政府参与规划基层体育有些可笑，实际做法（卖绿地、压缩资金、忽视校内体育）与正确做法完全相反，末句敦促未来政府多干实事、至少别更糟，可见作者持明显批判态度，故 [B] 正确。",
+          "related_sentences": [
+            "2017_text1_s21",
+            "2017_text1_s23",
+            "2017_text1_s24"
+          ]
+        }
       ]
     },
     {
@@ -51,29 +554,418 @@
       "topic": "父母的屏幕使用：数字设备如何冲击亲子互动",
       "source": "2017 年考研英语（二）Text 2 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2017_text2_s01", "para": 1, "en": "With so much focus on children's use of screens, it's easy for parents to forget about their own screen use.", "cn": "随着儿童使用数字产品备受关注，父母很容易忽视他们自己对数字产品的使用。", "words": [ { "w": "so much focus on", "meaning": "对……如此关注" }, { "w": "screen use", "meaning": "屏幕/数字产品使用" } ] },
-        { "id": "2017_text2_s02", "para": 1, "en": "\"Tech is designed to really suck you in,\" says Jenny Radesky in her study of digital play, \"and digital products are there to promote maximal engagement.\"", "cn": "“科技旨在真正让你卷入其中，”珍妮·拉德斯基在她的数字消遣研究中说道，“而且数字产品是为了促进最大参与度。”", "words": [ { "w": "suck you in", "meaning": "把你卷入其中，吸引住你" }, { "w": "maximal engagement", "meaning": "最大参与度" } ] },
-        { "id": "2017_text2_s03", "para": 1, "en": "It makes it hard to disengage, and leads to a lot of bleed-over into the family routine.", "cn": "这种沉迷使人很难脱身，而且大量渗透到家庭日常生活中。", "words": [ { "w": "disengage", "meaning": "v. 脱离，抽身" }, { "w": "bleed-over", "meaning": "n. 渗透，蔓延" }, { "w": "family routine", "meaning": "家庭日常" } ] },
-        { "id": "2017_text2_s04", "para": 2, "en": "Radesky has studied the use of mobile phones and tablets at mealtimes by giving mother-child pairs a food-testing exercise.", "cn": "通过让多对母子参与食物测试任务，拉德斯基研究了进餐时段手机和平板电脑的使用情况。", "words": [ { "w": "at mealtimes", "meaning": "进餐时段" }, { "w": "mother-child pairs", "meaning": "母子搭档" }, { "w": "food-testing exercise", "meaning": "食物测试任务" } ] },
-        { "id": "2017_text2_s05", "para": 2, "en": "She found that mothers who used devices during the exercise started 20 per cent fewer verbal and 39 per cent fewer nonverbal interactions with their children.", "cn": "她发现，在任务期间使用数字设备的母亲与孩子进行语言交流的频率降低了 20%，进行非语言交流的频率降低了 39%。", "words": [ { "w": "verbal", "meaning": "adj. 语言的，口头的" }, { "w": "nonverbal interactions", "meaning": "非语言互动" } ] },
-        { "id": "2017_text2_s06", "para": 2, "en": "During a separate observation, she saw that phones became a source of tension in the family.", "cn": "在另外一次观察中，她发现手机成了家庭紧张关系的根源。", "words": [ { "w": "a source of tension", "meaning": "紧张关系的根源" } ] },
-        { "id": "2017_text2_s07", "para": 2, "en": "Parents would be looking at their emails while the children would be making excited bids for their attention.", "cn": "当孩子们紧张不安地企图获得父母的注意时，父母们却在查看电子邮件。", "words": [ { "w": "making excited bids for", "meaning": "急切地设法争取……" }, { "w": "attention", "meaning": "n. 注意，关注" } ] },
-        { "id": "2017_text2_s08", "para": 3, "en": "Infants are wired to look at parents' faces to try to understand their world, and if those faces are blank and unresponsive - as they often are when absorbed in a device - it can be extremely disconcerting for the children.", "cn": "婴幼儿生来就靠观察父母的面孔来理解世界，如果这些面孔毫无表情也无任何反应——就像他们沉浸在数字设备时经常就是如此——这会让孩子感到非常不安。", "words": [ { "w": "are wired to", "meaning": "天生倾向于，生来就要" }, { "w": "blank and unresponsive", "meaning": "毫无表情且无反应" }, { "w": "disconcerting", "meaning": "adj. 令人不安的" } ] },
-        { "id": "2017_text2_s09", "para": 3, "en": "Radesky cites the \"still face experiment\" devised by developmental psychologist Ed Tronick in the 1970s.", "cn": "拉德斯基引用了 20 世纪 70 年代发展心理学家爱德华·特罗尼克设计的“面无表情实验”。", "words": [ { "w": "cites", "meaning": "v. 引用，援引" }, { "w": "still face experiment", "meaning": "面无表情实验" }, { "w": "devised", "meaning": "v. 设计，想出" } ] },
-        { "id": "2017_text2_s10", "para": 3, "en": "In it, a mother is asked to interact with her child in a normal way before putting on a blank expression and not giving them any visual social feedback: The child becomes increasingly distressed as she tries to capture her mother's attention.", "cn": "在实验中，母亲被要求先以正常方式与孩子交流，之后摆出一副面无表情的神情并且不给孩子任何视觉上的社交反馈：孩子会因试图获得母亲的注意而变得越来越痛苦。", "words": [ { "w": "blank expression", "meaning": "面无表情" }, { "w": "visual social feedback", "meaning": "视觉上的社交反馈" }, { "w": "distressed", "meaning": "adj. 苦恼的，痛苦的" } ] },
-        { "id": "2017_text2_s11", "para": 3, "en": "\"Parents don't have to be exquisitely present at all times, but there needs to be a balance and parents need to be responsive and sensitive to a child's verbal or nonverbal expressions of an emotional need,\" says Radesky.", "cn": "“父母不必时刻都无微不至地陪伴，但需要有一种平衡，父母需要对孩子言语或非言语的情感需求作出回应并保持敏感，”拉德斯基说道。", "words": [ { "w": "exquisitely present", "meaning": "完美地在场/陪伴" }, { "w": "responsive and sensitive to", "meaning": "对……积极回应且敏感" }, { "w": "emotional need", "meaning": "情感需求" } ] },
-        { "id": "2017_text2_s12", "para": 4, "en": "On the other hand, Tronick himself is concerned that the worries about kids' use of screens are born out of an \"oppressive ideology that demands that parents should always be interacting\" with their children:", "cn": "另一方面，特罗尼克自己担心对于孩子们使用数字产品的各种担忧是出于一种“要求父母一直与孩子保持交流的压制性的意识形态”：", "words": [ { "w": "born out of", "meaning": "源于，出于" }, { "w": "oppressive ideology", "meaning": "压制性的意识形态" }, { "w": "always be interacting", "meaning": "一直保持互动" } ] },
-        { "id": "2017_text2_s13", "para": 4, "en": "\"It's based on a somewhat fantasised, very white, very upper-middle-class ideology that says if you're failing to expose your child to 30,000 words you are neglecting them.\"", "cn": "“它基于一种有点儿幻想成分、非常符合白人和中上阶层价值观念的意识形态，认为如果你与孩子的语言交流未达到 3 万词汇，你就是在忽视他们。”", "words": [ { "w": "fantasised", "meaning": "adj. 幻想的" }, { "w": "upper-middle-class", "meaning": "中上阶层的" }, { "w": "neglecting", "meaning": "v. 忽视，疏忽" } ] },
-        { "id": "2017_text2_s14", "para": 4, "en": "Tronick believes that just because a child isn't learning from the screen doesn't mean there's no value to it - particularly if it gives parents time to have a shower, do housework or simply have a break from their child.", "cn": "特罗尼克认为，仅仅因为孩子没有从数字产品上学到东西并不意味着它没有任何价值——特别是如果它能让父母有时间去洗澡、做家务或只是暂时离开孩子休息一下。", "words": [ { "w": "no value to it", "meaning": "对它没有价值" }, { "w": "have a break from", "meaning": "暂时离开……休息一下" } ] },
-        { "id": "2017_text2_s15", "para": 4, "en": "Parents, he says, can get a lot out of using their devices to speak to a friend or get some work out of the way.", "cn": "他说道，父母们可以从使用数字设备与朋友交谈或者处理完一些工作中获益良多。", "words": [ { "w": "get a lot out of", "meaning": "从……中获益良多" }, { "w": "get some work out of the way", "meaning": "把一些工作处理完" } ] },
-        { "id": "2017_text2_s16", "para": 4, "en": "This can make them feel happier, which lets them be more available to their child the rest of the time.", "cn": "这能使他们感到更加幸福，让他们在其余时间里更有闲暇陪伴孩子。", "words": [ { "w": "more available to", "meaning": "更有空陪伴……" }, { "w": "the rest of the time", "meaning": "其余时间" } ] }
+        {
+          "id": "2017_text2_s01",
+          "para": 1,
+          "en": "With so much focus on children's use of screens, it's easy for parents to forget about their own screen use.",
+          "cn": "随着儿童使用数字产品备受关注，父母很容易忽视他们自己对数字产品的使用。",
+          "words": [
+            {
+              "w": "so much focus on",
+              "meaning": "对……如此关注"
+            },
+            {
+              "w": "screen use",
+              "meaning": "屏幕/数字产品使用"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s02",
+          "para": 1,
+          "en": "\"Tech is designed to really suck you in,\" says Jenny Radesky in her study of digital play, \"and digital products are there to promote maximal engagement.\"",
+          "cn": "“科技旨在真正让你卷入其中，”珍妮·拉德斯基在她的数字消遣研究中说道，“而且数字产品是为了促进最大参与度。”",
+          "words": [
+            {
+              "w": "suck you in",
+              "meaning": "把你卷入其中，吸引住你"
+            },
+            {
+              "w": "maximal engagement",
+              "meaning": "最大参与度"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s03",
+          "para": 1,
+          "en": "It makes it hard to disengage, and leads to a lot of bleed-over into the family routine.",
+          "cn": "这种沉迷使人很难脱身，而且大量渗透到家庭日常生活中。",
+          "words": [
+            {
+              "w": "disengage",
+              "meaning": "v. 脱离，抽身"
+            },
+            {
+              "w": "bleed-over",
+              "meaning": "n. 渗透，蔓延"
+            },
+            {
+              "w": "family routine",
+              "meaning": "家庭日常"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s04",
+          "para": 2,
+          "en": "Radesky has studied the use of mobile phones and tablets at mealtimes by giving mother-child pairs a food-testing exercise.",
+          "cn": "通过让多对母子参与食物测试任务，拉德斯基研究了进餐时段手机和平板电脑的使用情况。",
+          "words": [
+            {
+              "w": "at mealtimes",
+              "meaning": "进餐时段"
+            },
+            {
+              "w": "mother-child pairs",
+              "meaning": "母子搭档"
+            },
+            {
+              "w": "food-testing exercise",
+              "meaning": "食物测试任务"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s05",
+          "para": 2,
+          "en": "She found that mothers who used devices during the exercise started 20 per cent fewer verbal and 39 per cent fewer nonverbal interactions with their children.",
+          "cn": "她发现，在任务期间使用数字设备的母亲与孩子进行语言交流的频率降低了 20%，进行非语言交流的频率降低了 39%。",
+          "words": [
+            {
+              "w": "verbal",
+              "meaning": "adj. 语言的，口头的"
+            },
+            {
+              "w": "nonverbal interactions",
+              "meaning": "非语言互动"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s06",
+          "para": 2,
+          "en": "During a separate observation, she saw that phones became a source of tension in the family.",
+          "cn": "在另外一次观察中，她发现手机成了家庭紧张关系的根源。",
+          "words": [
+            {
+              "w": "a source of tension",
+              "meaning": "紧张关系的根源"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s07",
+          "para": 2,
+          "en": "Parents would be looking at their emails while the children would be making excited bids for their attention.",
+          "cn": "当孩子们紧张不安地企图获得父母的注意时，父母们却在查看电子邮件。",
+          "words": [
+            {
+              "w": "making excited bids for",
+              "meaning": "急切地设法争取……"
+            },
+            {
+              "w": "attention",
+              "meaning": "n. 注意，关注"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s08",
+          "para": 3,
+          "en": "Infants are wired to look at parents' faces to try to understand their world, and if those faces are blank and unresponsive - as they often are when absorbed in a device - it can be extremely disconcerting for the children.",
+          "cn": "婴幼儿生来就靠观察父母的面孔来理解世界，如果这些面孔毫无表情也无任何反应——就像他们沉浸在数字设备时经常就是如此——这会让孩子感到非常不安。",
+          "words": [
+            {
+              "w": "are wired to",
+              "meaning": "天生倾向于，生来就要"
+            },
+            {
+              "w": "blank and unresponsive",
+              "meaning": "毫无表情且无反应"
+            },
+            {
+              "w": "disconcerting",
+              "meaning": "adj. 令人不安的"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s09",
+          "para": 3,
+          "en": "Radesky cites the \"still face experiment\" devised by developmental psychologist Ed Tronick in the 1970s.",
+          "cn": "拉德斯基引用了 20 世纪 70 年代发展心理学家爱德华·特罗尼克设计的“面无表情实验”。",
+          "words": [
+            {
+              "w": "cites",
+              "meaning": "v. 引用，援引"
+            },
+            {
+              "w": "still face experiment",
+              "meaning": "面无表情实验"
+            },
+            {
+              "w": "devised",
+              "meaning": "v. 设计，想出"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s10",
+          "para": 3,
+          "en": "In it, a mother is asked to interact with her child in a normal way before putting on a blank expression and not giving them any visual social feedback: The child becomes increasingly distressed as she tries to capture her mother's attention.",
+          "cn": "在实验中，母亲被要求先以正常方式与孩子交流，之后摆出一副面无表情的神情并且不给孩子任何视觉上的社交反馈：孩子会因试图获得母亲的注意而变得越来越痛苦。",
+          "words": [
+            {
+              "w": "blank expression",
+              "meaning": "面无表情"
+            },
+            {
+              "w": "visual social feedback",
+              "meaning": "视觉上的社交反馈"
+            },
+            {
+              "w": "distressed",
+              "meaning": "adj. 苦恼的，痛苦的"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s11",
+          "para": 3,
+          "en": "\"Parents don't have to be exquisitely present at all times, but there needs to be a balance and parents need to be responsive and sensitive to a child's verbal or nonverbal expressions of an emotional need,\" says Radesky.",
+          "cn": "“父母不必时刻都无微不至地陪伴，但需要有一种平衡，父母需要对孩子言语或非言语的情感需求作出回应并保持敏感，”拉德斯基说道。",
+          "words": [
+            {
+              "w": "exquisitely present",
+              "meaning": "完美地在场/陪伴"
+            },
+            {
+              "w": "responsive and sensitive to",
+              "meaning": "对……积极回应且敏感"
+            },
+            {
+              "w": "emotional need",
+              "meaning": "情感需求"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s12",
+          "para": 4,
+          "en": "On the other hand, Tronick himself is concerned that the worries about kids' use of screens are born out of an \"oppressive ideology that demands that parents should always be interacting\" with their children:",
+          "cn": "另一方面，特罗尼克自己担心对于孩子们使用数字产品的各种担忧是出于一种“要求父母一直与孩子保持交流的压制性的意识形态”：",
+          "words": [
+            {
+              "w": "born out of",
+              "meaning": "源于，出于"
+            },
+            {
+              "w": "oppressive ideology",
+              "meaning": "压制性的意识形态"
+            },
+            {
+              "w": "always be interacting",
+              "meaning": "一直保持互动"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s13",
+          "para": 4,
+          "en": "\"It's based on a somewhat fantasised, very white, very upper-middle-class ideology that says if you're failing to expose your child to 30,000 words you are neglecting them.\"",
+          "cn": "“它基于一种有点儿幻想成分、非常符合白人和中上阶层价值观念的意识形态，认为如果你与孩子的语言交流未达到 3 万词汇，你就是在忽视他们。”",
+          "words": [
+            {
+              "w": "fantasised",
+              "meaning": "adj. 幻想的"
+            },
+            {
+              "w": "upper-middle-class",
+              "meaning": "中上阶层的"
+            },
+            {
+              "w": "neglecting",
+              "meaning": "v. 忽视，疏忽"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s14",
+          "para": 4,
+          "en": "Tronick believes that just because a child isn't learning from the screen doesn't mean there's no value to it - particularly if it gives parents time to have a shower, do housework or simply have a break from their child.",
+          "cn": "特罗尼克认为，仅仅因为孩子没有从数字产品上学到东西并不意味着它没有任何价值——特别是如果它能让父母有时间去洗澡、做家务或只是暂时离开孩子休息一下。",
+          "words": [
+            {
+              "w": "no value to it",
+              "meaning": "对它没有价值"
+            },
+            {
+              "w": "have a break from",
+              "meaning": "暂时离开……休息一下"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s15",
+          "para": 4,
+          "en": "Parents, he says, can get a lot out of using their devices to speak to a friend or get some work out of the way.",
+          "cn": "他说道，父母们可以从使用数字设备与朋友交谈或者处理完一些工作中获益良多。",
+          "words": [
+            {
+              "w": "get a lot out of",
+              "meaning": "从……中获益良多"
+            },
+            {
+              "w": "get some work out of the way",
+              "meaning": "把一些工作处理完"
+            }
+          ]
+        },
+        {
+          "id": "2017_text2_s16",
+          "para": 4,
+          "en": "This can make them feel happier, which lets them be more available to their child the rest of the time.",
+          "cn": "这能使他们感到更加幸福，让他们在其余时间里更有闲暇陪伴孩子。",
+          "words": [
+            {
+              "w": "more available to",
+              "meaning": "更有空陪伴……"
+            },
+            {
+              "w": "the rest of the time",
+              "meaning": "其余时间"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2017_text2_q1", "number": 26, "qtype": "detail", "stem": "According to Jenny Radesky, digital products are designed to ___.", "stem_cn": "根据詹妮·拉德斯基的观点，数字产品的设计初衷在于___。", "options": { "A": "simplify routine matters", "B": "absorb user attention", "C": "better interpersonal relations", "D": "increase work efficiency" }, "options_cn": { "A": "简化日常事务", "B": "吸引用户注意力", "C": "改善人际关系", "D": "提高工作效率" }, "answer": "B", "explanation": "首段②③句指出拉德斯基观点：科技旨在把你真正卷入其中，数字产品是为促进最大参与度，使人难以自拔。可见其设计初衷在于吸引用户注意力，故 [B] 正确。", "related_sentences": [ "2017_text2_s02", "2017_text2_s03" ] },
-        { "id": "2017_text2_q2", "number": 27, "qtype": "detail", "stem": "Radesky's food-testing exercise shows that mothers' use of devices ___.", "stem_cn": "拉德斯基的食物测试任务表明，母亲使用（数字）设备会___。", "options": { "A": "takes away babies' appetite", "B": "distracts children's attention", "C": "slows down babies' verbal development", "D": "reduces mother-child communication" }, "options_cn": { "A": "降低幼儿食欲", "B": "分散孩子注意力", "C": "减缓幼儿语言发展", "D": "减少母子交流" }, "answer": "D", "explanation": "第二段②句指出食物测试发现：使用数字设备的母亲与孩子的语言交流减少20%、非语言交流减少39%，可见母亲使用设备会减少与孩子的交流，故 [D] 正确。", "related_sentences": [ "2017_text2_s04", "2017_text2_s05" ] },
-        { "id": "2017_text2_q3", "number": 28, "qtype": "inference", "stem": "Radesky cites the \"still face experiment\" to show that ___.", "stem_cn": "拉德斯基引用“面无表情实验”是为了表明___。", "options": { "A": "it is easy for children to get used to blank expressions", "B": "verbal expressions are unnecessary for emotional exchange", "C": "children are insensitive to changes in their parents' mood", "D": "parents need to respond to children's emotional needs" }, "options_cn": { "A": "孩子很容易对面无表情习以为常", "B": "语言表达对于情感交流并非必须", "C": "孩子对父母的情绪变化不敏感", "D": "父母需要回应孩子的情感需求" }, "answer": "D", "explanation": "第三段②③句借实验说明父母面无表情会令孩子越来越苦恼，④句提出拉德斯基观点：父母应积极回应孩子的情感诉求。可见其意在提醒父母回应孩子的情感需求，故 [D] 正确。", "related_sentences": [ "2017_text2_s09", "2017_text2_s10", "2017_text2_s11" ] },
-        { "id": "2017_text2_q4", "number": 29, "qtype": "detail", "stem": "The oppressive ideology mentioned by Tronick requires parents to ___.", "stem_cn": "特罗尼克所提及的“压制性意识形态”要求父母___。", "options": { "A": "protect kids from exposure to wild fantasies", "B": "teach their kids at least 30,000 words a year", "C": "ensure constant interaction with their children", "D": "remain concerned about kids' use of screens" }, "options_cn": { "A": "保护孩子免受狂乱幻想的影响", "B": "每年至少教给孩子3万个词汇", "C": "确保与孩子一直保持互动", "D": "一直关心孩子对数字产品的使用" }, "answer": "C", "explanation": "第四段①句指出，压制性意识形态要求父母必须一直与孩子保持互动（should always be interacting），故 [C] 正确。[B] 3万词汇是该意识形态的论调，非其“要求”本身。", "related_sentences": [ "2017_text2_s12", "2017_text2_s13" ] },
-        { "id": "2017_text2_q5", "number": 30, "qtype": "detail", "stem": "According to Tronick, kids' use of screens may ___.", "stem_cn": "根据特罗尼克的观点，孩子使用数字产品可以___。", "options": { "A": "give their parents some free time", "B": "make their parents more creative", "C": "help them with their homework", "D": "help them become more attentive" }, "options_cn": { "A": "给父母一些空闲时间", "B": "让他们的父母更富有创造力", "C": "帮助他们做作业", "D": "帮助他们变得更专心" }, "answer": "A", "explanation": "第四段指出，特罗尼克认为孩子使用数字产品并非全无好处：它能让父母有时间洗澡、做家务或稍作休息，即给父母一些自由时间，故 [A] 正确。", "related_sentences": [ "2017_text2_s14", "2017_text2_s16" ] }
+        {
+          "id": "2017_text2_q1",
+          "number": 26,
+          "qtype": "detail",
+          "stem": "According to Jenny Radesky, digital products are designed to ___.",
+          "stem_cn": "根据詹妮·拉德斯基的观点，数字产品的设计初衷在于___。",
+          "options": {
+            "A": "simplify routine matters",
+            "B": "absorb user attention",
+            "C": "better interpersonal relations",
+            "D": "increase work efficiency"
+          },
+          "options_cn": {
+            "A": "简化日常事务",
+            "B": "吸引用户注意力",
+            "C": "改善人际关系",
+            "D": "提高工作效率"
+          },
+          "answer": "B",
+          "explanation": "首段②③句指出拉德斯基观点：科技旨在把你真正卷入其中，数字产品是为促进最大参与度，使人难以自拔。可见其设计初衷在于吸引用户注意力，故 [B] 正确。",
+          "related_sentences": [
+            "2017_text2_s02",
+            "2017_text2_s03"
+          ]
+        },
+        {
+          "id": "2017_text2_q2",
+          "number": 27,
+          "qtype": "detail",
+          "stem": "Radesky's food-testing exercise shows that mothers' use of devices ___.",
+          "stem_cn": "拉德斯基的食物测试任务表明，母亲使用（数字）设备会___。",
+          "options": {
+            "A": "takes away babies' appetite",
+            "B": "distracts children's attention",
+            "C": "slows down babies' verbal development",
+            "D": "reduces mother-child communication"
+          },
+          "options_cn": {
+            "A": "降低幼儿食欲",
+            "B": "分散孩子注意力",
+            "C": "减缓幼儿语言发展",
+            "D": "减少母子交流"
+          },
+          "answer": "D",
+          "explanation": "第二段②句指出食物测试发现：使用数字设备的母亲与孩子的语言交流减少20%、非语言交流减少39%，可见母亲使用设备会减少与孩子的交流，故 [D] 正确。",
+          "related_sentences": [
+            "2017_text2_s04",
+            "2017_text2_s05"
+          ]
+        },
+        {
+          "id": "2017_text2_q3",
+          "number": 28,
+          "qtype": "inference",
+          "stem": "Radesky cites the \"still face experiment\" to show that ___.",
+          "stem_cn": "拉德斯基引用“面无表情实验”是为了表明___。",
+          "options": {
+            "A": "it is easy for children to get used to blank expressions",
+            "B": "verbal expressions are unnecessary for emotional exchange",
+            "C": "children are insensitive to changes in their parents' mood",
+            "D": "parents need to respond to children's emotional needs"
+          },
+          "options_cn": {
+            "A": "孩子很容易对面无表情习以为常",
+            "B": "语言表达对于情感交流并非必须",
+            "C": "孩子对父母的情绪变化不敏感",
+            "D": "父母需要回应孩子的情感需求"
+          },
+          "answer": "D",
+          "explanation": "第三段②③句借实验说明父母面无表情会令孩子越来越苦恼，④句提出拉德斯基观点：父母应积极回应孩子的情感诉求。可见其意在提醒父母回应孩子的情感需求，故 [D] 正确。",
+          "related_sentences": [
+            "2017_text2_s09",
+            "2017_text2_s10",
+            "2017_text2_s11"
+          ]
+        },
+        {
+          "id": "2017_text2_q4",
+          "number": 29,
+          "qtype": "detail",
+          "stem": "The oppressive ideology mentioned by Tronick requires parents to ___.",
+          "stem_cn": "特罗尼克所提及的“压制性意识形态”要求父母___。",
+          "options": {
+            "A": "protect kids from exposure to wild fantasies",
+            "B": "teach their kids at least 30,000 words a year",
+            "C": "ensure constant interaction with their children",
+            "D": "remain concerned about kids' use of screens"
+          },
+          "options_cn": {
+            "A": "保护孩子免受狂乱幻想的影响",
+            "B": "每年至少教给孩子3万个词汇",
+            "C": "确保与孩子一直保持互动",
+            "D": "一直关心孩子对数字产品的使用"
+          },
+          "answer": "C",
+          "explanation": "第四段①句指出，压制性意识形态要求父母必须一直与孩子保持互动（should always be interacting），故 [C] 正确。[B] 3万词汇是该意识形态的论调，非其“要求”本身。",
+          "related_sentences": [
+            "2017_text2_s12",
+            "2017_text2_s13"
+          ]
+        },
+        {
+          "id": "2017_text2_q5",
+          "number": 30,
+          "qtype": "detail",
+          "stem": "According to Tronick, kids' use of screens may ___.",
+          "stem_cn": "根据特罗尼克的观点，孩子使用数字产品可以___。",
+          "options": {
+            "A": "give their parents some free time",
+            "B": "make their parents more creative",
+            "C": "help them with their homework",
+            "D": "help them become more attentive"
+          },
+          "options_cn": {
+            "A": "给父母一些空闲时间",
+            "B": "让他们的父母更富有创造力",
+            "C": "帮助他们做作业",
+            "D": "帮助他们变得更专心"
+          },
+          "answer": "A",
+          "explanation": "第四段指出，特罗尼克认为孩子使用数字产品并非全无好处：它能让父母有时间洗澡、做家务或稍作休息，即给父母一些自由时间，故 [A] 正确。",
+          "related_sentences": [
+            "2017_text2_s14",
+            "2017_text2_s16"
+          ]
+        }
       ]
     },
     {
@@ -83,29 +975,421 @@
       "topic": "为间隔年正名：休整一年为何有助于学业与省钱",
       "source": "2017 年考研英语（二）Text 3 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2017_text3_s01", "para": 1, "en": "Today, widespread social pressure to immediately go to college in conjunction with increasingly high expectations in a fast-moving world often causes students to completely overlook the possibility of taking a gap year.", "cn": "如今，（高中毕业后）即刻升入大学这一普遍社会压力，加之快速发展的世界（对人们）越来越高的期望，往往导致学生们完全忽略了经历间隔年这一选择。", "words": [ { "w": "in conjunction with", "meaning": "连同，与……一起" }, { "w": "overlook", "meaning": "v. 忽略，忽视" }, { "w": "a gap year", "meaning": "间隔年（休整一年）" } ] },
-        { "id": "2017_text3_s02", "para": 1, "en": "After all, if everyone you know is going to college in the fall, it seems silly to stay back a year, doesn't it?", "cn": "毕竟，如果你认识的每个人都将在秋季步入大学，你一个人延迟一年入学似乎很傻，不是吗？", "words": [ { "w": "After all", "meaning": "毕竟" }, { "w": "stay back a year", "meaning": "延迟一年" } ] },
-        { "id": "2017_text3_s03", "para": 1, "en": "And after going to school for 12 years, it doesn't feel natural to spend a year doing something that isn't academic.", "cn": "而且在上了 12 年学之后，花一年时间做学习之外的事也感觉不大正常。", "words": [ { "w": "feel natural", "meaning": "感觉自然/正常" }, { "w": "academic", "meaning": "adj. 学术的，学业的" } ] },
-        { "id": "2017_text3_s04", "para": 2, "en": "But while this may be true, it's not a good enough reason to condemn gap years.", "cn": "但这即使是事实，也不足以成为谴责间隔年的理由。", "words": [ { "w": "condemn", "meaning": "v. 谴责，指责" } ] },
-        { "id": "2017_text3_s05", "para": 2, "en": "There's always a constant fear of falling behind everyone else on the socially perpetuated \"race to the finish line,\" whether that be toward graduate school, medical school or a lucrative career.", "cn": "在全社会一直延续着“向终点冲刺的比赛”，无论终点是研究生院、医学院还是赚钱的职业，人们永远有一种落于人后的担忧。", "words": [ { "w": "falling behind", "meaning": "落后，落于人后" }, { "w": "perpetuated", "meaning": "v. 使永久存在，延续" }, { "w": "lucrative career", "meaning": "赚钱的职业" } ] },
-        { "id": "2017_text3_s06", "para": 2, "en": "But despite common misconceptions, a gap year does not hinder the success of academic pursuits - in fact, it probably enhances it.", "cn": "然而，尽管存在许多误解，间隔年其实不会阻碍学术事业的成功——实际上，它很可能助人成功。", "words": [ { "w": "misconceptions", "meaning": "n. 误解，错误观念" }, { "w": "hinder", "meaning": "v. 阻碍，妨碍" }, { "w": "academic pursuits", "meaning": "学术事业/追求" } ] },
-        { "id": "2017_text3_s07", "para": 3, "en": "Studies from the United States and Australia show that students who take a gap year are generally better prepared for and perform better in college than those who do not.", "cn": "美国和澳大利亚的研究表明，经历过间隔年的学生普遍比没经历过间隔年的学生对大学有更充分的准备，表现也更好。", "words": [ { "w": "better prepared for", "meaning": "为……准备得更充分" }, { "w": "perform better", "meaning": "表现更好" } ] },
-        { "id": "2017_text3_s08", "para": 3, "en": "Rather than pulling students back, a gap year pushes them ahead by preparing them for independence, new responsibilities and environmental changes - all things that first-year students often struggle with the most.", "cn": "间隔年不仅不会使学生退步，反而能让学生在独立、新的责任和环境变化方面——这些都是一年级学生往往最为纠结的事情——做好更充分的准备，从而助其进步。", "words": [ { "w": "pulling students back", "meaning": "使学生退步/后退" }, { "w": "pushes them ahead", "meaning": "推动他们前进" }, { "w": "struggle with", "meaning": "为……而苦恼、纠结" } ] },
-        { "id": "2017_text3_s09", "para": 3, "en": "Gap year experiences can lessen the blow when it comes to adjusting to college and being thrown into a brand new environment, making it easier to focus on academics and activities rather than acclimation blunders.", "cn": "间隔年经历可以减轻适应大学生活和陷入全新环境所带来的冲击，使学生更容易专注于学业和活动，而不必为适应问题分心。", "words": [ { "w": "lessen the blow", "meaning": "减轻冲击/打击" }, { "w": "adjusting to", "meaning": "适应" }, { "w": "acclimation blunders", "meaning": "适应过程中的失误" } ] },
-        { "id": "2017_text3_s10", "para": 4, "en": "If you're not convinced of the inherent value in taking a year off to explore interests, then consider its financial impact on future academic choices.", "cn": "如果你不相信休学一年具有发掘兴趣的内在价值，那么就想想它对于未来学业选择的经济影响吧。", "words": [ { "w": "inherent value", "meaning": "内在价值" }, { "w": "taking a year off", "meaning": "休整/休学一年" }, { "w": "financial impact", "meaning": "经济影响" } ] },
-        { "id": "2017_text3_s11", "para": 4, "en": "According to the National Center for Education Statistics, nearly 80 percent of college students end up changing their majors at least once.", "cn": "根据（美国）国家教育统计中心的数据，约 80% 的大学生最后都至少转过一次专业。", "words": [ { "w": "end up changing their majors", "meaning": "最终转了专业" }, { "w": "at least once", "meaning": "至少一次" } ] },
-        { "id": "2017_text3_s12", "para": 4, "en": "This isn't surprising, considering the basic mandatory high school curriculum leaves students with a poor understanding of the vast academic possibilities that await them in college.", "cn": "鉴于高中强制性基础课程使学生对于大学里广阔的学术选择知之甚少，这并不奇怪。", "words": [ { "w": "mandatory", "meaning": "adj. 强制的，义务的" }, { "w": "curriculum", "meaning": "n. 课程" }, { "w": "await them", "meaning": "等待着他们" } ] },
-        { "id": "2017_text3_s13", "para": 4, "en": "Many students find themselves listing one major on their college applications, but switching to another after taking college classes.", "cn": "许多学生发现自己在大学申请书中填报了一个专业，上过大学课程之后却转到了另一个专业。", "words": [ { "w": "college applications", "meaning": "大学申请（书）" }, { "w": "switching to another", "meaning": "转到另一个（专业）" } ] },
-        { "id": "2017_text3_s14", "para": 4, "en": "It's not necessarily a bad thing, but depending on the school, it can be costly to make up credits after switching too late in the game.", "cn": "这并不一定是坏事，但是根据学校的不同，由于转专业太晚，补学分的费用可能会很高。", "words": [ { "w": "not necessarily", "meaning": "未必，不一定" }, { "w": "make up credits", "meaning": "补修学分" }, { "w": "too late in the game", "meaning": "为时太晚" } ] },
-        { "id": "2017_text3_s15", "para": 4, "en": "At Boston College, for example, you would have to complete an extra year were you to switch to the nursing school from another department.", "cn": "例如，在波士顿学院，如果你要从其他院系转到护理学院的话，就必须再多读一年。", "words": [ { "w": "an extra year", "meaning": "额外的一年" }, { "w": "nursing school", "meaning": "护理学院" } ] },
-        { "id": "2017_text3_s16", "para": 4, "en": "Taking a gap year to figure things out initially can help prevent stress and save money later on.", "cn": "选择间隔年一开始就把事情理顺有助于预防压力，之后还能省钱。", "words": [ { "w": "figure things out", "meaning": "弄清楚，想明白" }, { "w": "prevent stress", "meaning": "预防压力" }, { "w": "save money", "meaning": "省钱" } ] }
+        {
+          "id": "2017_text3_s01",
+          "para": 1,
+          "en": "Today, widespread social pressure to immediately go to college in conjunction with increasingly high expectations in a fast-moving world often causes students to completely overlook the possibility of taking a gap year.",
+          "cn": "如今，（高中毕业后）即刻升入大学这一普遍社会压力，加之快速发展的世界（对人们）越来越高的期望，往往导致学生们完全忽略了经历间隔年这一选择。",
+          "words": [
+            {
+              "w": "in conjunction with",
+              "meaning": "连同，与……一起"
+            },
+            {
+              "w": "overlook",
+              "meaning": "v. 忽略，忽视"
+            },
+            {
+              "w": "a gap year",
+              "meaning": "间隔年（休整一年）"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s02",
+          "para": 1,
+          "en": "After all, if everyone you know is going to college in the fall, it seems silly to stay back a year, doesn't it?",
+          "cn": "毕竟，如果你认识的每个人都将在秋季步入大学，你一个人延迟一年入学似乎很傻，不是吗？",
+          "words": [
+            {
+              "w": "After all",
+              "meaning": "毕竟"
+            },
+            {
+              "w": "stay back a year",
+              "meaning": "延迟一年"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s03",
+          "para": 1,
+          "en": "And after going to school for 12 years, it doesn't feel natural to spend a year doing something that isn't academic.",
+          "cn": "而且在上了 12 年学之后，花一年时间做学习之外的事也感觉不大正常。",
+          "words": [
+            {
+              "w": "feel natural",
+              "meaning": "感觉自然/正常"
+            },
+            {
+              "w": "academic",
+              "meaning": "adj. 学术的，学业的"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s04",
+          "para": 2,
+          "en": "But while this may be true, it's not a good enough reason to condemn gap years.",
+          "cn": "但这即使是事实，也不足以成为谴责间隔年的理由。",
+          "words": [
+            {
+              "w": "condemn",
+              "meaning": "v. 谴责，指责"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s05",
+          "para": 2,
+          "en": "There's always a constant fear of falling behind everyone else on the socially perpetuated \"race to the finish line,\" whether that be toward graduate school, medical school or a lucrative career.",
+          "cn": "在全社会一直延续着“向终点冲刺的比赛”，无论终点是研究生院、医学院还是赚钱的职业，人们永远有一种落于人后的担忧。",
+          "words": [
+            {
+              "w": "falling behind",
+              "meaning": "落后，落于人后"
+            },
+            {
+              "w": "perpetuated",
+              "meaning": "v. 使永久存在，延续"
+            },
+            {
+              "w": "lucrative career",
+              "meaning": "赚钱的职业"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s06",
+          "para": 2,
+          "en": "But despite common misconceptions, a gap year does not hinder the success of academic pursuits - in fact, it probably enhances it.",
+          "cn": "然而，尽管存在许多误解，间隔年其实不会阻碍学术事业的成功——实际上，它很可能助人成功。",
+          "words": [
+            {
+              "w": "misconceptions",
+              "meaning": "n. 误解，错误观念"
+            },
+            {
+              "w": "hinder",
+              "meaning": "v. 阻碍，妨碍"
+            },
+            {
+              "w": "academic pursuits",
+              "meaning": "学术事业/追求"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s07",
+          "para": 3,
+          "en": "Studies from the United States and Australia show that students who take a gap year are generally better prepared for and perform better in college than those who do not.",
+          "cn": "美国和澳大利亚的研究表明，经历过间隔年的学生普遍比没经历过间隔年的学生对大学有更充分的准备，表现也更好。",
+          "words": [
+            {
+              "w": "better prepared for",
+              "meaning": "为……准备得更充分"
+            },
+            {
+              "w": "perform better",
+              "meaning": "表现更好"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s08",
+          "para": 3,
+          "en": "Rather than pulling students back, a gap year pushes them ahead by preparing them for independence, new responsibilities and environmental changes - all things that first-year students often struggle with the most.",
+          "cn": "间隔年不仅不会使学生退步，反而能让学生在独立、新的责任和环境变化方面——这些都是一年级学生往往最为纠结的事情——做好更充分的准备，从而助其进步。",
+          "words": [
+            {
+              "w": "pulling students back",
+              "meaning": "使学生退步/后退"
+            },
+            {
+              "w": "pushes them ahead",
+              "meaning": "推动他们前进"
+            },
+            {
+              "w": "struggle with",
+              "meaning": "为……而苦恼、纠结"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s09",
+          "para": 3,
+          "en": "Gap year experiences can lessen the blow when it comes to adjusting to college and being thrown into a brand new environment, making it easier to focus on academics and activities rather than acclimation blunders.",
+          "cn": "间隔年经历可以减轻适应大学生活和陷入全新环境所带来的冲击，使学生更容易专注于学业和活动，而不必为适应问题分心。",
+          "words": [
+            {
+              "w": "lessen the blow",
+              "meaning": "减轻冲击/打击"
+            },
+            {
+              "w": "adjusting to",
+              "meaning": "适应"
+            },
+            {
+              "w": "acclimation blunders",
+              "meaning": "适应过程中的失误"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s10",
+          "para": 4,
+          "en": "If you're not convinced of the inherent value in taking a year off to explore interests, then consider its financial impact on future academic choices.",
+          "cn": "如果你不相信休学一年具有发掘兴趣的内在价值，那么就想想它对于未来学业选择的经济影响吧。",
+          "words": [
+            {
+              "w": "inherent value",
+              "meaning": "内在价值"
+            },
+            {
+              "w": "taking a year off",
+              "meaning": "休整/休学一年"
+            },
+            {
+              "w": "financial impact",
+              "meaning": "经济影响"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s11",
+          "para": 4,
+          "en": "According to the National Center for Education Statistics, nearly 80 percent of college students end up changing their majors at least once.",
+          "cn": "根据（美国）国家教育统计中心的数据，约 80% 的大学生最后都至少转过一次专业。",
+          "words": [
+            {
+              "w": "end up changing their majors",
+              "meaning": "最终转了专业"
+            },
+            {
+              "w": "at least once",
+              "meaning": "至少一次"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s12",
+          "para": 4,
+          "en": "This isn't surprising, considering the basic mandatory high school curriculum leaves students with a poor understanding of the vast academic possibilities that await them in college.",
+          "cn": "鉴于高中强制性基础课程使学生对于大学里广阔的学术选择知之甚少，这并不奇怪。",
+          "words": [
+            {
+              "w": "mandatory",
+              "meaning": "adj. 强制的，义务的"
+            },
+            {
+              "w": "curriculum",
+              "meaning": "n. 课程"
+            },
+            {
+              "w": "await them",
+              "meaning": "等待着他们"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s13",
+          "para": 4,
+          "en": "Many students find themselves listing one major on their college applications, but switching to another after taking college classes.",
+          "cn": "许多学生发现自己在大学申请书中填报了一个专业，上过大学课程之后却转到了另一个专业。",
+          "words": [
+            {
+              "w": "college applications",
+              "meaning": "大学申请（书）"
+            },
+            {
+              "w": "switching to another",
+              "meaning": "转到另一个（专业）"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s14",
+          "para": 4,
+          "en": "It's not necessarily a bad thing, but depending on the school, it can be costly to make up credits after switching too late in the game.",
+          "cn": "这并不一定是坏事，但是根据学校的不同，由于转专业太晚，补学分的费用可能会很高。",
+          "words": [
+            {
+              "w": "not necessarily",
+              "meaning": "未必，不一定"
+            },
+            {
+              "w": "make up credits",
+              "meaning": "补修学分"
+            },
+            {
+              "w": "too late in the game",
+              "meaning": "为时太晚"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s15",
+          "para": 4,
+          "en": "At Boston College, for example, you would have to complete an extra year were you to switch to the nursing school from another department.",
+          "cn": "例如，在波士顿学院，如果你要从其他院系转到护理学院的话，就必须再多读一年。",
+          "words": [
+            {
+              "w": "an extra year",
+              "meaning": "额外的一年"
+            },
+            {
+              "w": "nursing school",
+              "meaning": "护理学院"
+            }
+          ]
+        },
+        {
+          "id": "2017_text3_s16",
+          "para": 4,
+          "en": "Taking a gap year to figure things out initially can help prevent stress and save money later on.",
+          "cn": "选择间隔年一开始就把事情理顺有助于预防压力，之后还能省钱。",
+          "words": [
+            {
+              "w": "figure things out",
+              "meaning": "弄清楚，想明白"
+            },
+            {
+              "w": "prevent stress",
+              "meaning": "预防压力"
+            },
+            {
+              "w": "save money",
+              "meaning": "省钱"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2017_text3_q1", "number": 31, "qtype": "detail", "stem": "One of the reasons for high-school graduates not taking a gap year is that ___.", "stem_cn": "高中毕业生不选择间隔年的一个原因是___。", "options": { "A": "they think it academically misleading", "B": "they have a lot of fun to expect in college", "C": "it feels strange to do differently from others", "D": "it seems worthless to take off-campus courses" }, "options_cn": { "A": "他们认为它在学业上误人子弟", "B": "他们对大学许多乐趣有所期待", "C": "做法和其他人不一样令人不安", "D": "修读校外课程似乎没什么价值" }, "answer": "C", "explanation": "首段②③句补充主观原因：周围人都直入大学，独自延迟显得愚蠢；连读12年书突然休整一年感觉“有违常理”，[C] 正确概括了这种从众心理。", "related_sentences": [ "2017_text3_s02", "2017_text3_s03" ] },
-        { "id": "2017_text3_q2", "number": 32, "qtype": "detail", "stem": "Studies from the US and Australia imply that taking a gap year helps ___.", "stem_cn": "美国和澳大利亚的研究表明，选择间隔年有助于___。", "options": { "A": "keep students from being unrealistic", "B": "lower risks in choosing careers", "C": "ease freshmen's financial burdens", "D": "relieve freshmen of pressures" }, "options_cn": { "A": "避免学生不切实际", "B": "降低择业的风险", "C": "减轻新生经济负担", "D": "减轻新生的压力" }, "answer": "D", "explanation": "第三段借美、澳研究指出间隔年能帮学生更顺利地适应大学、应对多数新生最头疼的问题，相当于大学预演使其提前受磨炼，从而减轻适应新环境的压力，故 [D] 正确。", "related_sentences": [ "2017_text3_s08", "2017_text3_s09" ] },
-        { "id": "2017_text3_q3", "number": 33, "qtype": "vocabulary", "stem": "The word \"acclimation\" (Para. 3) is closest in meaning to ___.", "stem_cn": "第三段中的“acclimation”一词词义最接近___。", "options": { "A": "adaptation", "B": "application", "C": "motivation", "D": "competition" }, "options_cn": { "A": "适应", "B": "申请", "C": "激励", "D": "竞争" }, "answer": "A", "explanation": "所考词出现于第三段末句，与“专注学业”相对，指“牵绊于学业之外的问题”，结合上文“适应大学新环境”可知 acclimation 意为“（新生对环境的）适应”，故 [A] adaptation 正确。", "related_sentences": [ "2017_text3_s09" ] },
-        { "id": "2017_text3_q4", "number": 34, "qtype": "detail", "stem": "A gap year may save money for students by helping them ___.", "stem_cn": "通过帮助大学生___，间隔年能够为其节省开支。", "options": { "A": "avoid academic failures", "B": "establish long-term goals", "C": "switch to another college", "D": "decide on the right major" }, "options_cn": { "A": "避免学业失败", "B": "建立长期目标", "C": "转到其他大学", "D": "选定正确专业" }, "answer": "D", "explanation": "第四段用研究数据说明间隔年能帮学生更好地确定自身兴趣所在，减少转专业造成的金钱浪费（补学分费用高、甚至多读一年），故 [D] 正确。", "related_sentences": [ "2017_text3_s14", "2017_text3_s16" ] },
-        { "id": "2017_text3_q5", "number": 35, "qtype": "main_idea", "stem": "The most suitable title for this text would be ___.", "stem_cn": "本文最恰当的标题可能是___。", "options": { "A": "In Favor of the Gap Year", "B": "The ABCs of the Gap Year", "C": "The Gap Year Comes Back", "D": "The Gap Year: A Dilemma" }, "options_cn": { "A": "支持间隔年", "B": "间隔年基本知识", "C": "间隔年再度兴起", "D": "间隔年——一个两难抉择" }, "answer": "A", "explanation": "首段引出“毕业生完全忽视间隔年”的现象，第二段提出作者观点“间隔年有助于学业成功”，三、四段论证其作用，全文立意在于呼吁重视间隔年的意义，故 [A] 正确。", "related_sentences": [ "2017_text3_s06", "2017_text3_s07", "2017_text3_s16" ] }
+        {
+          "id": "2017_text3_q1",
+          "number": 31,
+          "qtype": "detail",
+          "stem": "One of the reasons for high-school graduates not taking a gap year is that ___.",
+          "stem_cn": "高中毕业生不选择间隔年的一个原因是___。",
+          "options": {
+            "A": "they think it academically misleading",
+            "B": "they have a lot of fun to expect in college",
+            "C": "it feels strange to do differently from others",
+            "D": "it seems worthless to take off-campus courses"
+          },
+          "options_cn": {
+            "A": "他们认为它在学业上误人子弟",
+            "B": "他们对大学许多乐趣有所期待",
+            "C": "做法和其他人不一样令人不安",
+            "D": "修读校外课程似乎没什么价值"
+          },
+          "answer": "C",
+          "explanation": "首段②③句补充主观原因：周围人都直入大学，独自延迟显得愚蠢；连读12年书突然休整一年感觉“有违常理”，[C] 正确概括了这种从众心理。",
+          "related_sentences": [
+            "2017_text3_s02",
+            "2017_text3_s03"
+          ]
+        },
+        {
+          "id": "2017_text3_q2",
+          "number": 32,
+          "qtype": "detail",
+          "stem": "Studies from the US and Australia imply that taking a gap year helps ___.",
+          "stem_cn": "美国和澳大利亚的研究表明，选择间隔年有助于___。",
+          "options": {
+            "A": "keep students from being unrealistic",
+            "B": "lower risks in choosing careers",
+            "C": "ease freshmen's financial burdens",
+            "D": "relieve freshmen of pressures"
+          },
+          "options_cn": {
+            "A": "避免学生不切实际",
+            "B": "降低择业的风险",
+            "C": "减轻新生经济负担",
+            "D": "减轻新生的压力"
+          },
+          "answer": "D",
+          "explanation": "第三段借美、澳研究指出间隔年能帮学生更顺利地适应大学、应对多数新生最头疼的问题，相当于大学预演使其提前受磨炼，从而减轻适应新环境的压力，故 [D] 正确。",
+          "related_sentences": [
+            "2017_text3_s08",
+            "2017_text3_s09"
+          ]
+        },
+        {
+          "id": "2017_text3_q3",
+          "number": 33,
+          "qtype": "vocabulary",
+          "stem": "The word \"acclimation\" (Para. 3) is closest in meaning to ___.",
+          "stem_cn": "第三段中的“acclimation”一词词义最接近___。",
+          "options": {
+            "A": "adaptation",
+            "B": "application",
+            "C": "motivation",
+            "D": "competition"
+          },
+          "options_cn": {
+            "A": "适应",
+            "B": "申请",
+            "C": "激励",
+            "D": "竞争"
+          },
+          "answer": "A",
+          "explanation": "所考词出现于第三段末句，与“专注学业”相对，指“牵绊于学业之外的问题”，结合上文“适应大学新环境”可知 acclimation 意为“（新生对环境的）适应”，故 [A] adaptation 正确。",
+          "related_sentences": [
+            "2017_text3_s09"
+          ]
+        },
+        {
+          "id": "2017_text3_q4",
+          "number": 34,
+          "qtype": "detail",
+          "stem": "A gap year may save money for students by helping them ___.",
+          "stem_cn": "通过帮助大学生___，间隔年能够为其节省开支。",
+          "options": {
+            "A": "avoid academic failures",
+            "B": "establish long-term goals",
+            "C": "switch to another college",
+            "D": "decide on the right major"
+          },
+          "options_cn": {
+            "A": "避免学业失败",
+            "B": "建立长期目标",
+            "C": "转到其他大学",
+            "D": "选定正确专业"
+          },
+          "answer": "D",
+          "explanation": "第四段用研究数据说明间隔年能帮学生更好地确定自身兴趣所在，减少转专业造成的金钱浪费（补学分费用高、甚至多读一年），故 [D] 正确。",
+          "related_sentences": [
+            "2017_text3_s14",
+            "2017_text3_s16"
+          ]
+        },
+        {
+          "id": "2017_text3_q5",
+          "number": 35,
+          "qtype": "main_idea",
+          "stem": "The most suitable title for this text would be ___.",
+          "stem_cn": "本文最恰当的标题可能是___。",
+          "options": {
+            "A": "In Favor of the Gap Year",
+            "B": "The ABCs of the Gap Year",
+            "C": "The Gap Year Comes Back",
+            "D": "The Gap Year: A Dilemma"
+          },
+          "options_cn": {
+            "A": "支持间隔年",
+            "B": "间隔年基本知识",
+            "C": "间隔年再度兴起",
+            "D": "间隔年——一个两难抉择"
+          },
+          "answer": "A",
+          "explanation": "首段引出“毕业生完全忽视间隔年”的现象，第二段提出作者观点“间隔年有助于学业成功”，三、四段论证其作用，全文立意在于呼吁重视间隔年的意义，故 [A] 正确。",
+          "related_sentences": [
+            "2017_text3_s06",
+            "2017_text3_s07",
+            "2017_text3_s16"
+          ]
+        }
       ]
     },
     {
@@ -115,31 +1399,1876 @@
       "topic": "重新看待野火：从公共支出到人与火的共存",
       "source": "2017 年考研英语（二）Text 4 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2017_text4_s01", "para": 1, "en": "Though often viewed as a problem for western states, the growing frequency of wildfires is a national concern because of its impact on federal tax dollars, says Professor Max Moritz, a specialist in fire ecology and management.", "cn": "日益频繁的森林大火尽管常常被视为西部州的棘手问题，但由于它对联邦税款的影响而成为一件举国关切之事，林火生态与管理专家马克斯·莫里茨教授说。", "words": [ { "w": "growing frequency", "meaning": "日益增长的频率" }, { "w": "wildfires", "meaning": "n. 野火，森林大火" }, { "w": "national concern", "meaning": "举国关切之事" }, { "w": "federal tax dollars", "meaning": "联邦税款" } ] },
-        { "id": "2017_text4_s02", "para": 2, "en": "In 2015, the US Forest Service for the first time spent more than half of its $5.5 billion annual budget fighting fires - nearly double the percentage it spent on such efforts 20 years ago.", "cn": "2015 年，美国林务局首次将其年度预算总额 55 亿美元中的过半用于抗击林火——几乎是 20 年前在这方面支出比例的两倍。", "words": [ { "w": "annual budget", "meaning": "年度预算" }, { "w": "fighting fires", "meaning": "抗击火灾" }, { "w": "nearly double", "meaning": "几乎两倍" } ] },
-        { "id": "2017_text4_s03", "para": 2, "en": "In effect, fewer federal funds today are going towards the agency's other work - such as forest conservation, watershed and cultural resources management, and infrastructure upkeep - that affect the lives of all Americans.", "cn": "事实上，现在更少的联邦基金被投放到该机构的其他工作，诸如森林保护、集水区及文化资源管理、以及基础设施养护等，这些工作影响到全美国人民的生活。", "words": [ { "w": "In effect", "meaning": "事实上，实际上" }, { "w": "federal funds", "meaning": "联邦资金" }, { "w": "infrastructure upkeep", "meaning": "基础设施养护" } ] },
-        { "id": "2017_text4_s04", "para": 3, "en": "Another nationwide concern is whether public funds from other agencies are going into construction in fire-prone districts.", "cn": "另一件举国关切之事是，来自其他机构的公共基金是否被用于火灾易发区建设。", "words": [ { "w": "nationwide concern", "meaning": "全国性的关切" }, { "w": "public funds", "meaning": "公共资金" }, { "w": "fire-prone districts", "meaning": "火灾易发区" } ] },
-        { "id": "2017_text4_s05", "para": 3, "en": "As Moritz puts it, how often are federal dollars building homes that are likely to be lost to a wildfire?", "cn": "以莫里茨的话来讲就是，联邦资金用于建设那些可能会被毁于林火的家园的频率如何。", "words": [ { "w": "As Moritz puts it", "meaning": "用莫里茨的话说" }, { "w": "lost to a wildfire", "meaning": "毁于野火" } ] },
-        { "id": "2017_text4_s06", "para": 4, "en": "\"It's already a huge problem from a public expenditure perspective for the whole country,\" he says.", "cn": "“从公共支出角度看，这对整个国家来说已然是一个巨大的难题，”他说。", "words": [ { "w": "public expenditure", "meaning": "公共支出" }, { "w": "perspective", "meaning": "n. 视角，角度" } ] },
-        { "id": "2017_text4_s07", "para": 4, "en": "\"We need to take a magnifying glass to that. Like, 'Wait a minute, is this OK?' Do we want instead to redirect those funds to concentrate on lower-hazard parts of the landscape?\"", "cn": "“对此，我们要用放大镜来看待。比如，‘等一下，这样做可行吗？’我们是否想反过来，将这些资金重新导向，集中用于地景中危险较低的部分呢？”", "words": [ { "w": "take a magnifying glass to", "meaning": "用放大镜审视" }, { "w": "redirect those funds", "meaning": "重新调配那些资金" }, { "w": "lower-hazard", "meaning": "较低风险的" } ] },
-        { "id": "2017_text4_s08", "para": 5, "en": "Such a view would require a corresponding shift in the way US society today views fire, researchers say.", "cn": "研究者说，这种观念需要当今美国社会在看待火灾的方式上做出相应改变。", "words": [ { "w": "corresponding shift", "meaning": "相应的转变" }, { "w": "views fire", "meaning": "看待火灾" } ] },
-        { "id": "2017_text4_s09", "para": 6, "en": "For one thing, conversations about wildfires need to be more inclusive.", "cn": "首先，关于森林大火的晤谈应该更具包容性。", "words": [ { "w": "For one thing", "meaning": "首先，一方面" }, { "w": "more inclusive", "meaning": "更具包容性" } ] },
-        { "id": "2017_text4_s10", "para": 6, "en": "Over the past decade, the focus has been on climate change - how the warming of the Earth from greenhouse gases is leading to conditions that worsen fires.", "cn": "在过去的十来年间，晤谈一直聚焦于气候变化——温室气体所致的地球变暖如何诱发使火灾恶化的环境。", "words": [ { "w": "climate change", "meaning": "气候变化" }, { "w": "greenhouse gases", "meaning": "温室气体" }, { "w": "worsen fires", "meaning": "使火灾恶化" } ] },
-        { "id": "2017_text4_s11", "para": 7, "en": "While climate is a key element, Moritz says, it shouldn't come at the expense of the rest of the equation.", "cn": "莫里茨说，尽管气候是一个关键要素，但它不应以牺牲其他影响因素作为代价。", "words": [ { "w": "key element", "meaning": "关键要素" }, { "w": "at the expense of", "meaning": "以……为代价" }, { "w": "the rest of the equation", "meaning": "其余的（影响）因素" } ] },
-        { "id": "2017_text4_s12", "para": 8, "en": "\"The human systems and the landscapes we live on are linked, and the interactions go both ways,\" he says.", "cn": "“人类系统与我们所赖以生存的地景相互关联，而且，两者间的相互影响是双向的，”他说。", "words": [ { "w": "human systems", "meaning": "人类系统" }, { "w": "are linked", "meaning": "相互关联" }, { "w": "go both ways", "meaning": "双向的，互相的" } ] },
-        { "id": "2017_text4_s13", "para": 8, "en": "Failing to recognize that, he notes, leads to \"an overly simplified view of what the solutions might be. Our perception of the problem and of what the solution is becomes very limited.\"", "cn": "他指出，不能认识到这一点会导致“对可能的解决措施的看法过于简化，对问题的认知以及对问题解决办法的认知变得极其有限”。", "words": [ { "w": "Failing to recognize", "meaning": "未能认识到" }, { "w": "overly simplified view", "meaning": "过于简化的看法" }, { "w": "perception", "meaning": "n. 认知，看法" } ] },
-        { "id": "2017_text4_s14", "para": 9, "en": "At the same time, people continue to treat fire as an event that needs to be wholly controlled and unleashed only out of necessity, says Professor Balch at the University of Colorado.", "cn": "然而，人们仍旧把火灾视为需要全面控制且唯有必要方可释放的事件，科罗拉多大学鲍尔奇教授说。", "words": [ { "w": "treat fire as", "meaning": "把火灾视为" }, { "w": "wholly controlled", "meaning": "全面控制" }, { "w": "out of necessity", "meaning": "出于必要" } ] },
-        { "id": "2017_text4_s15", "para": 9, "en": "But acknowledging fire's inevitable presence in human life is an attitude crucial to developing the laws, policies, and practices that make it as safe as possible, she says.", "cn": "但是，承认火灾在人类生活中的必然存在这一态度对于形成确保火灾尽可能安全的法律、政策、惯例至关重要，她说。", "words": [ { "w": "acknowledging", "meaning": "v. 承认，认可" }, { "w": "inevitable presence", "meaning": "必然存在" }, { "w": "crucial to", "meaning": "对……至关重要" } ] },
-        { "id": "2017_text4_s16", "para": 10, "en": "\"We've disconnected ourselves from living with fire,\" Balch says.", "cn": "“我们已将自身从与火灾共存中剥离开来，”鲍尔奇说。", "words": [ { "w": "disconnected ourselves from", "meaning": "使自己脱离……" }, { "w": "living with fire", "meaning": "与火灾共存" } ] },
-        { "id": "2017_text4_s17", "para": 10, "en": "\"It is really important to understand and try and tease out what is the human connection with fire today.\"", "cn": "“理解并尽力梳理出当今人类与火灾之间的关联非常重要。”", "words": [ { "w": "tease out", "meaning": "梳理出，弄清楚" }, { "w": "human connection with fire", "meaning": "人类与火灾的关联" } ] }
+        {
+          "id": "2017_text4_s01",
+          "para": 1,
+          "en": "Though often viewed as a problem for western states, the growing frequency of wildfires is a national concern because of its impact on federal tax dollars, says Professor Max Moritz, a specialist in fire ecology and management.",
+          "cn": "日益频繁的森林大火尽管常常被视为西部州的棘手问题，但由于它对联邦税款的影响而成为一件举国关切之事，林火生态与管理专家马克斯·莫里茨教授说。",
+          "words": [
+            {
+              "w": "growing frequency",
+              "meaning": "日益增长的频率"
+            },
+            {
+              "w": "wildfires",
+              "meaning": "n. 野火，森林大火"
+            },
+            {
+              "w": "national concern",
+              "meaning": "举国关切之事"
+            },
+            {
+              "w": "federal tax dollars",
+              "meaning": "联邦税款"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s02",
+          "para": 2,
+          "en": "In 2015, the US Forest Service for the first time spent more than half of its $5.5 billion annual budget fighting fires - nearly double the percentage it spent on such efforts 20 years ago.",
+          "cn": "2015 年，美国林务局首次将其年度预算总额 55 亿美元中的过半用于抗击林火——几乎是 20 年前在这方面支出比例的两倍。",
+          "words": [
+            {
+              "w": "annual budget",
+              "meaning": "年度预算"
+            },
+            {
+              "w": "fighting fires",
+              "meaning": "抗击火灾"
+            },
+            {
+              "w": "nearly double",
+              "meaning": "几乎两倍"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s03",
+          "para": 2,
+          "en": "In effect, fewer federal funds today are going towards the agency's other work - such as forest conservation, watershed and cultural resources management, and infrastructure upkeep - that affect the lives of all Americans.",
+          "cn": "事实上，现在更少的联邦基金被投放到该机构的其他工作，诸如森林保护、集水区及文化资源管理、以及基础设施养护等，这些工作影响到全美国人民的生活。",
+          "words": [
+            {
+              "w": "In effect",
+              "meaning": "事实上，实际上"
+            },
+            {
+              "w": "federal funds",
+              "meaning": "联邦资金"
+            },
+            {
+              "w": "infrastructure upkeep",
+              "meaning": "基础设施养护"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s04",
+          "para": 3,
+          "en": "Another nationwide concern is whether public funds from other agencies are going into construction in fire-prone districts.",
+          "cn": "另一件举国关切之事是，来自其他机构的公共基金是否被用于火灾易发区建设。",
+          "words": [
+            {
+              "w": "nationwide concern",
+              "meaning": "全国性的关切"
+            },
+            {
+              "w": "public funds",
+              "meaning": "公共资金"
+            },
+            {
+              "w": "fire-prone districts",
+              "meaning": "火灾易发区"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s05",
+          "para": 3,
+          "en": "As Moritz puts it, how often are federal dollars building homes that are likely to be lost to a wildfire?",
+          "cn": "以莫里茨的话来讲就是，联邦资金用于建设那些可能会被毁于林火的家园的频率如何。",
+          "words": [
+            {
+              "w": "As Moritz puts it",
+              "meaning": "用莫里茨的话说"
+            },
+            {
+              "w": "lost to a wildfire",
+              "meaning": "毁于野火"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s06",
+          "para": 4,
+          "en": "\"It's already a huge problem from a public expenditure perspective for the whole country,\" he says.",
+          "cn": "“从公共支出角度看，这对整个国家来说已然是一个巨大的难题，”他说。",
+          "words": [
+            {
+              "w": "public expenditure",
+              "meaning": "公共支出"
+            },
+            {
+              "w": "perspective",
+              "meaning": "n. 视角，角度"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s07",
+          "para": 4,
+          "en": "\"We need to take a magnifying glass to that. Like, 'Wait a minute, is this OK?' Do we want instead to redirect those funds to concentrate on lower-hazard parts of the landscape?\"",
+          "cn": "“对此，我们要用放大镜来看待。比如，‘等一下，这样做可行吗？’我们是否想反过来，将这些资金重新导向，集中用于地景中危险较低的部分呢？”",
+          "words": [
+            {
+              "w": "take a magnifying glass to",
+              "meaning": "用放大镜审视"
+            },
+            {
+              "w": "redirect those funds",
+              "meaning": "重新调配那些资金"
+            },
+            {
+              "w": "lower-hazard",
+              "meaning": "较低风险的"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s08",
+          "para": 5,
+          "en": "Such a view would require a corresponding shift in the way US society today views fire, researchers say.",
+          "cn": "研究者说，这种观念需要当今美国社会在看待火灾的方式上做出相应改变。",
+          "words": [
+            {
+              "w": "corresponding shift",
+              "meaning": "相应的转变"
+            },
+            {
+              "w": "views fire",
+              "meaning": "看待火灾"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s09",
+          "para": 6,
+          "en": "For one thing, conversations about wildfires need to be more inclusive.",
+          "cn": "首先，关于森林大火的晤谈应该更具包容性。",
+          "words": [
+            {
+              "w": "For one thing",
+              "meaning": "首先，一方面"
+            },
+            {
+              "w": "more inclusive",
+              "meaning": "更具包容性"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s10",
+          "para": 6,
+          "en": "Over the past decade, the focus has been on climate change - how the warming of the Earth from greenhouse gases is leading to conditions that worsen fires.",
+          "cn": "在过去的十来年间，晤谈一直聚焦于气候变化——温室气体所致的地球变暖如何诱发使火灾恶化的环境。",
+          "words": [
+            {
+              "w": "climate change",
+              "meaning": "气候变化"
+            },
+            {
+              "w": "greenhouse gases",
+              "meaning": "温室气体"
+            },
+            {
+              "w": "worsen fires",
+              "meaning": "使火灾恶化"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s11",
+          "para": 7,
+          "en": "While climate is a key element, Moritz says, it shouldn't come at the expense of the rest of the equation.",
+          "cn": "莫里茨说，尽管气候是一个关键要素，但它不应以牺牲其他影响因素作为代价。",
+          "words": [
+            {
+              "w": "key element",
+              "meaning": "关键要素"
+            },
+            {
+              "w": "at the expense of",
+              "meaning": "以……为代价"
+            },
+            {
+              "w": "the rest of the equation",
+              "meaning": "其余的（影响）因素"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s12",
+          "para": 8,
+          "en": "\"The human systems and the landscapes we live on are linked, and the interactions go both ways,\" he says.",
+          "cn": "“人类系统与我们所赖以生存的地景相互关联，而且，两者间的相互影响是双向的，”他说。",
+          "words": [
+            {
+              "w": "human systems",
+              "meaning": "人类系统"
+            },
+            {
+              "w": "are linked",
+              "meaning": "相互关联"
+            },
+            {
+              "w": "go both ways",
+              "meaning": "双向的，互相的"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s13",
+          "para": 8,
+          "en": "Failing to recognize that, he notes, leads to \"an overly simplified view of what the solutions might be. Our perception of the problem and of what the solution is becomes very limited.\"",
+          "cn": "他指出，不能认识到这一点会导致“对可能的解决措施的看法过于简化，对问题的认知以及对问题解决办法的认知变得极其有限”。",
+          "words": [
+            {
+              "w": "Failing to recognize",
+              "meaning": "未能认识到"
+            },
+            {
+              "w": "overly simplified view",
+              "meaning": "过于简化的看法"
+            },
+            {
+              "w": "perception",
+              "meaning": "n. 认知，看法"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s14",
+          "para": 9,
+          "en": "At the same time, people continue to treat fire as an event that needs to be wholly controlled and unleashed only out of necessity, says Professor Balch at the University of Colorado.",
+          "cn": "然而，人们仍旧把火灾视为需要全面控制且唯有必要方可释放的事件，科罗拉多大学鲍尔奇教授说。",
+          "words": [
+            {
+              "w": "treat fire as",
+              "meaning": "把火灾视为"
+            },
+            {
+              "w": "wholly controlled",
+              "meaning": "全面控制"
+            },
+            {
+              "w": "out of necessity",
+              "meaning": "出于必要"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s15",
+          "para": 9,
+          "en": "But acknowledging fire's inevitable presence in human life is an attitude crucial to developing the laws, policies, and practices that make it as safe as possible, she says.",
+          "cn": "但是，承认火灾在人类生活中的必然存在这一态度对于形成确保火灾尽可能安全的法律、政策、惯例至关重要，她说。",
+          "words": [
+            {
+              "w": "acknowledging",
+              "meaning": "v. 承认，认可"
+            },
+            {
+              "w": "inevitable presence",
+              "meaning": "必然存在"
+            },
+            {
+              "w": "crucial to",
+              "meaning": "对……至关重要"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s16",
+          "para": 10,
+          "en": "\"We've disconnected ourselves from living with fire,\" Balch says.",
+          "cn": "“我们已将自身从与火灾共存中剥离开来，”鲍尔奇说。",
+          "words": [
+            {
+              "w": "disconnected ourselves from",
+              "meaning": "使自己脱离……"
+            },
+            {
+              "w": "living with fire",
+              "meaning": "与火灾共存"
+            }
+          ]
+        },
+        {
+          "id": "2017_text4_s17",
+          "para": 10,
+          "en": "\"It is really important to understand and try and tease out what is the human connection with fire today.\"",
+          "cn": "“理解并尽力梳理出当今人类与火灾之间的关联非常重要。”",
+          "words": [
+            {
+              "w": "tease out",
+              "meaning": "梳理出，弄清楚"
+            },
+            {
+              "w": "human connection with fire",
+              "meaning": "人类与火灾的关联"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2017_text4_q1", "number": 36, "qtype": "detail", "stem": "More frequent wildfires have become a national concern because in 2015 they ___.", "stem_cn": "森林大火更频繁已成举国关切之事，是因为2015年森林大火___。", "options": { "A": "exhausted unprecedented management efforts", "B": "consumed a record-high percentage of budget", "C": "severely damaged the ecology of western states", "D": "caused a huge rise of infrastructure expenditure" }, "options_cn": { "A": "消耗史无前例的管理力度", "B": "花费破纪录的高比例预算", "C": "严重损害西部州的生态", "D": "造成基础设施支出大幅上升" }, "answer": "B", "explanation": "第一段指出野火因对联邦税款的不良影响而成为举国关切之事，第二段①句例证：2015年美国林务局首次将超过一半的预算用于抗击林火（近20年前的两倍），故 [B] 正确。", "related_sentences": [ "2017_text4_s01", "2017_text4_s02" ] },
-        { "id": "2017_text4_q2", "number": 37, "qtype": "detail", "stem": "Moritz calls for the use of \"a magnifying glass\" to ___.", "stem_cn": "莫里茨呼吁使用“放大镜”旨在___。", "options": { "A": "raise more funds for fire-prone areas", "B": "avoid the redirection of federal money", "C": "find wildfire-free parts of the landscape", "D": "guarantee safer spending of public funds" }, "options_cn": { "A": "为火灾易发区募集更多资金", "B": "避免改变联邦资金的用途", "C": "寻找该地景林火免疫区", "D": "确保公共资金的支出更可靠" }, "answer": "D", "explanation": "第四段②句指出莫里茨建议用放大镜审视“是否将联邦资金投入林火易发区建设”，③④句以设问方式说明其含义：多提问、多审思，把资金投向低风险区域，即确保联邦资产投向准确无误，故 [D] 正确。", "related_sentences": [ "2017_text4_s07" ] },
-        { "id": "2017_text4_q3", "number": 38, "qtype": "detail", "stem": "While admitting that climate is a key element, Moritz notes that ___.", "stem_cn": "承认气候是关键要素之余，莫里茨也指出___。", "options": { "A": "public debates have not settled yet", "B": "fire-fighting conditions are improving", "C": "other factors should not be overlooked", "D": "a shift in the view of fire has taken place" }, "options_cn": { "A": "公开讨论尚无定论", "B": "消防条件正在改善", "C": "不应忽略其他因素", "D": "火灾观念已经改变" }, "answer": "C", "explanation": "第七段明确指出莫里茨观点：气候尽管是关键要素，但不应以牺牲其他影响因素为代价，即不应忽略其他因素，故 [C] 正确。", "related_sentences": [ "2017_text4_s11" ] },
-        { "id": "2017_text4_q4", "number": 39, "qtype": "detail", "stem": "The overly simplified view Moritz mentions is a result of failing to ___.", "stem_cn": "莫里茨所言及的过度简化的看法是未能___所致。", "options": { "A": "discover the fundamental makeup of nature", "B": "explore the mechanism of the human systems", "C": "maximize the role of landscape in human life", "D": "understand the interrelations of man and nature" }, "options_cn": { "A": "挖掘自然的基本构成", "B": "探索人类系统的机制", "C": "充分发挥地景在人类生活中的作用", "D": "掌握人类和自然的相互关系" }, "answer": "D", "explanation": "第八段先指出人文系统与地景相互关联、相互影响（双向），随后指出不认识这一关系的后果：对解决措施的看法过于简化，故 [D] 掌握人与自然的相互关系正确。", "related_sentences": [ "2017_text4_s12", "2017_text4_s13" ] },
-        { "id": "2017_text4_q5", "number": 40, "qtype": "detail", "stem": "Professor Balch points out that fire is something man should ___.", "stem_cn": "鲍尔奇教授指出火灾是人类应该___的事物。", "options": { "A": "do away with", "B": "come to terms with", "C": "pay a price for", "D": "keep away from" }, "options_cn": { "A": "终结", "B": "与之妥协/接受", "C": "付出代价", "D": "远离" }, "answer": "B", "explanation": "第九、十段引用鲍尔奇之言：人们误以为火灾可被全面控制，事实上必须承认火灾不可避免；理解并梳理人与火的关联至关重要。可见其认为人类应与火灾和谐共存、接受其存在，故 [B] come to terms with 正确。", "related_sentences": [ "2017_text4_s14", "2017_text4_s15", "2017_text4_s16" ] }
+        {
+          "id": "2017_text4_q1",
+          "number": 36,
+          "qtype": "detail",
+          "stem": "More frequent wildfires have become a national concern because in 2015 they ___.",
+          "stem_cn": "森林大火更频繁已成举国关切之事，是因为2015年森林大火___。",
+          "options": {
+            "A": "exhausted unprecedented management efforts",
+            "B": "consumed a record-high percentage of budget",
+            "C": "severely damaged the ecology of western states",
+            "D": "caused a huge rise of infrastructure expenditure"
+          },
+          "options_cn": {
+            "A": "消耗史无前例的管理力度",
+            "B": "花费破纪录的高比例预算",
+            "C": "严重损害西部州的生态",
+            "D": "造成基础设施支出大幅上升"
+          },
+          "answer": "B",
+          "explanation": "第一段指出野火因对联邦税款的不良影响而成为举国关切之事，第二段①句例证：2015年美国林务局首次将超过一半的预算用于抗击林火（近20年前的两倍），故 [B] 正确。",
+          "related_sentences": [
+            "2017_text4_s01",
+            "2017_text4_s02"
+          ]
+        },
+        {
+          "id": "2017_text4_q2",
+          "number": 37,
+          "qtype": "detail",
+          "stem": "Moritz calls for the use of \"a magnifying glass\" to ___.",
+          "stem_cn": "莫里茨呼吁使用“放大镜”旨在___。",
+          "options": {
+            "A": "raise more funds for fire-prone areas",
+            "B": "avoid the redirection of federal money",
+            "C": "find wildfire-free parts of the landscape",
+            "D": "guarantee safer spending of public funds"
+          },
+          "options_cn": {
+            "A": "为火灾易发区募集更多资金",
+            "B": "避免改变联邦资金的用途",
+            "C": "寻找该地景林火免疫区",
+            "D": "确保公共资金的支出更可靠"
+          },
+          "answer": "D",
+          "explanation": "第四段②句指出莫里茨建议用放大镜审视“是否将联邦资金投入林火易发区建设”，③④句以设问方式说明其含义：多提问、多审思，把资金投向低风险区域，即确保联邦资产投向准确无误，故 [D] 正确。",
+          "related_sentences": [
+            "2017_text4_s07"
+          ]
+        },
+        {
+          "id": "2017_text4_q3",
+          "number": 38,
+          "qtype": "detail",
+          "stem": "While admitting that climate is a key element, Moritz notes that ___.",
+          "stem_cn": "承认气候是关键要素之余，莫里茨也指出___。",
+          "options": {
+            "A": "public debates have not settled yet",
+            "B": "fire-fighting conditions are improving",
+            "C": "other factors should not be overlooked",
+            "D": "a shift in the view of fire has taken place"
+          },
+          "options_cn": {
+            "A": "公开讨论尚无定论",
+            "B": "消防条件正在改善",
+            "C": "不应忽略其他因素",
+            "D": "火灾观念已经改变"
+          },
+          "answer": "C",
+          "explanation": "第七段明确指出莫里茨观点：气候尽管是关键要素，但不应以牺牲其他影响因素为代价，即不应忽略其他因素，故 [C] 正确。",
+          "related_sentences": [
+            "2017_text4_s11"
+          ]
+        },
+        {
+          "id": "2017_text4_q4",
+          "number": 39,
+          "qtype": "detail",
+          "stem": "The overly simplified view Moritz mentions is a result of failing to ___.",
+          "stem_cn": "莫里茨所言及的过度简化的看法是未能___所致。",
+          "options": {
+            "A": "discover the fundamental makeup of nature",
+            "B": "explore the mechanism of the human systems",
+            "C": "maximize the role of landscape in human life",
+            "D": "understand the interrelations of man and nature"
+          },
+          "options_cn": {
+            "A": "挖掘自然的基本构成",
+            "B": "探索人类系统的机制",
+            "C": "充分发挥地景在人类生活中的作用",
+            "D": "掌握人类和自然的相互关系"
+          },
+          "answer": "D",
+          "explanation": "第八段先指出人文系统与地景相互关联、相互影响（双向），随后指出不认识这一关系的后果：对解决措施的看法过于简化，故 [D] 掌握人与自然的相互关系正确。",
+          "related_sentences": [
+            "2017_text4_s12",
+            "2017_text4_s13"
+          ]
+        },
+        {
+          "id": "2017_text4_q5",
+          "number": 40,
+          "qtype": "detail",
+          "stem": "Professor Balch points out that fire is something man should ___.",
+          "stem_cn": "鲍尔奇教授指出火灾是人类应该___的事物。",
+          "options": {
+            "A": "do away with",
+            "B": "come to terms with",
+            "C": "pay a price for",
+            "D": "keep away from"
+          },
+          "options_cn": {
+            "A": "终结",
+            "B": "与之妥协/接受",
+            "C": "付出代价",
+            "D": "远离"
+          },
+          "answer": "B",
+          "explanation": "第九、十段引用鲍尔奇之言：人们误以为火灾可被全面控制，事实上必须承认火灾不可避免；理解并梳理人与火的关联至关重要。可见其认为人类应与火灾和谐共存、接受其存在，故 [B] come to terms with 正确。",
+          "related_sentences": [
+            "2017_text4_s14",
+            "2017_text4_s15",
+            "2017_text4_s16"
+          ]
+        }
       ]
+    },
+    {
+      "id": "2017_newtype",
+      "type": "newtype",
+      "title": "The Surprising Truth about American Manufacturing",
+      "topic": "新题型（多项对应）：美国制造业并未衰退——制造业劳动力短缺与吸引千禧一代的应对之策。",
+      "source": "Section II Part B",
+      "pool": {
+        "A": "says that he switched to electrical engineering because he loves working with tools.",
+        "B": "points out that there are enough people to fill the jobs that don't need much skill.",
+        "C": "points out that the US doesn't manufacture anything anymore.",
+        "D": "believes that it is important to keep a close eye on the age of his workers.",
+        "E": "says that for factory owners, workers are harder to find because of stiff competition.",
+        "F": "points out that a work/life balance can attract young people into manufacturing.",
+        "G": "says that the manufacturing recession is to blame for the lay-off of the young people's parents."
+      },
+      "pool_cn": {
+        "A": "说他改修电气工程是因为他喜欢与工具打交道。",
+        "B": "指出有足够多的人来填补那些无需太多技能的工作。",
+        "C": "指出美国不再制造任何东西了。",
+        "D": "认为密切关注其员工年龄很重要。",
+        "E": "称对于工厂老板而言，因竞争激烈工人愈加难寻。",
+        "F": "指出工作—生活平衡能吸引年轻人进入制造业。",
+        "G": "称年轻人父母遭解雇归咎于制造业衰退。"
+      },
+      "sentences": [
+        {
+          "id": "2017_newtype_s01",
+          "para": 1,
+          "en": "The decline in American manufacturing is a common refrain, particularly from Donald Trump.",
+          "cn": "美国制造业衰退已是老生常谈，更是唐纳德·特朗普的老调。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s02",
+          "para": 1,
+          "en": "\"We don't make anything anymore,\" he told Fox News, while defending his own made-in-Mexico clothing line.",
+          "cn": "他向福克斯新闻表示“我们不再制造任何东西了，”而与此同时又在为自己的墨西哥制造服装品牌辩护。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s03",
+          "para": 1,
+          "en": "Without question, manufacturing has taken a significant hit during recent decades, and further trade deals raise questions about whether new shocks could hit manufacturing.",
+          "cn": "毫无疑问，近几十年来，制造业遭受了重创，且更进一步的贸易协定又带来了“新冲击是否会打击制造业”的问题。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s04",
+          "para": 1,
+          "en": "But there is also a different way to look at the data.",
+          "cn": "但还有一种不同的方式来看待这些数据。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s05",
+          "para": 2,
+          "en": "Across the country, factory owners are now grappling with a new challenge: Instead of having too many workers, they may end up with too few.",
+          "cn": "全国上下，工厂老板们现如今都在努力应对一项新挑战：他们最终可能不是拥有过多员工，而是拥有过少员工。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s06",
+          "para": 2,
+          "en": "Despite trade competition and outsourcing, American manufacturing still needs to replace tens of thousands of retiring boomers every year.",
+          "cn": "美国制造业虽存在贸易竞争和业务外包，但每年仍需更替数万名即将退休的婴儿潮一代人。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s07",
+          "para": 2,
+          "en": "Millennials may not be that interested in taking their place.",
+          "cn": "千禧一代可能对填补他们的职位空缺不那么感兴趣。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s08",
+          "para": 2,
+          "en": "Other industries are recruiting them with similar or better pay.",
+          "cn": "其他行业正以相近或更高的薪金招聘他们。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s09",
+          "para": 3,
+          "en": "For factory owners, it all adds up to stiff competition for workers - and upward pressure on wages.",
+          "cn": "对工厂老板们而言，所有这一切共同引发了对工人的激烈争夺——以及工资上涨的压力。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s10",
+          "para": 3,
+          "en": "\"They're harder to find and they have job offers,\" says Jay Dunwell, president of Wolverine Coil Spring, a family-owned firm.",
+          "cn": "“工人更难找了，他们有多个工作机会，”一家名为“金刚狼螺旋弹簧”的家族企业的总裁杰伊·顿维尔说道。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s11",
+          "para": 3,
+          "en": "\"They may be coming [into the workforce], but they've been plucked by other industries that are also doing as well as manufacturing.\"",
+          "cn": "“他们可能会加入劳动力大军，但却已被那些与制造业表现不相上下的其他行业抢走了。”",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s12",
+          "para": 3,
+          "en": "Mr. Dunwell has begun bringing high school juniors to the factory so they can get exposed to its culture.",
+          "cn": "顿维尔现已着手让高中三年级学生走进工厂，接触企业文化。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s13",
+          "para": 4,
+          "en": "At RoMan Manufacturing, a maker of electrical transformers and welding equipment that his father cofounded in 1980, Robert Roth keeps a close eye on the age of his nearly 200 workers.",
+          "cn": "罗曼制造，一家罗伯特·劳斯的父亲于1980年与人合伙创建的电力变压器和焊接设备的生产商，罗伯特·劳斯密切关注着他近200名员工的年龄。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s14",
+          "para": 4,
+          "en": "Five are retiring this year.",
+          "cn": "今年将有5名员工退休。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s15",
+          "para": 4,
+          "en": "Mr. Roth has three community college students enrolled in a work-placement program, with a starting wage of $13 an hour that rises to $17 after two years.",
+          "cn": "劳斯先生现已招收3名社区学院学生参与实习项目，起薪13美元每小时，2年后涨至17美元每小时。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s16",
+          "para": 5,
+          "en": "At a worktable inside the transformer plant, young Jason Stenquist looks flustered by the copper coils he's trying to assemble and the arrival of two visitors.",
+          "cn": "在变压器厂房内的一个工作台旁，年轻的贾森·施坦奎斯面对着正要努力组装的铜线圈以及两位客人的到访显得紧张而慌乱。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s17",
+          "para": 5,
+          "en": "It's his first week on the job.",
+          "cn": "这是他工作的第一周。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s18",
+          "para": 5,
+          "en": "Asked about his choice of career, he says at high school he considered medical school before switching to electrical engineering.",
+          "cn": "问起他的职业选择时，他说高中时他曾考虑去医学院，后来改修电气工程。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s19",
+          "para": 5,
+          "en": "\"I love working with tools. I love creating,\" he says.",
+          "cn": "“我喜欢与工具打交道，我喜爱创造，”他说。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s20",
+          "para": 6,
+          "en": "But to win over these young workers, manufacturers have to clear another major hurdle: parents, who lived through the worst US economic downturn since the Great Depression, telling them to avoid the factory.",
+          "cn": "但是要争取到这些年轻人，制造商们不得不克服另一个重大困难：父母，他们经历了大萧条以来美国最严重的经济衰退，时时告诫他们（年轻人）远离工厂。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s21",
+          "para": 6,
+          "en": "Millennials \"remember their father and mother both were laid off.",
+          "cn": "千禧一代“记得他们的父母曾双双被解雇。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s22",
+          "para": 6,
+          "en": "They blame it on the manufacturing recession,\" says Birgit Klohs, chief executive of The Right Place, a business development agency for western Michigan.",
+          "cn": "他们把这归咎于制造业衰退，”西密西根州一家名为“理想之地”的商务发展代理公司的总裁波吉特·科尔士如是说。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s23",
+          "para": 7,
+          "en": "These concerns aren't misplaced: Employment in manufacturing has fallen from 17 million in 1970 to 12 million in 2015.",
+          "cn": "这些担忧并非空穴来风：制造业就业人数已从1970年的1700万下滑至2015年的1200万。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s24",
+          "para": 7,
+          "en": "When the recovery began, worker shortages first appeared in the high-skilled trades.",
+          "cn": "复苏初现时，高技术岗位首先出现用工短缺。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s25",
+          "para": 7,
+          "en": "Now shortages are appearing at the mid-skill levels.",
+          "cn": "现在，短缺现象正出现在中级技术岗位。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s26",
+          "para": 8,
+          "en": "\"The gap is between the jobs that take no skills and those that require a lot of skill,\" says Rob Spohr, a business professor at Montcalm Community College.",
+          "cn": "“（劳动力）缺口存在于无需技能的工作和需要很多技能的工作之间，”蒙特卡姆社区学院的商科教授罗布·施波尔说。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s27",
+          "para": 8,
+          "en": "\"There're enough people to fill the jobs at McDonald's and other places where you don't need to have much skill.",
+          "cn": "“有足够的人去充任麦当劳及其他不需要多少技能的地方的工作。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s28",
+          "para": 8,
+          "en": "It's that gap in between, and that's where the problem is.\"",
+          "cn": "那一用工缺口就介于中间，而那就是问题所在。”",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s29",
+          "para": 9,
+          "en": "Julie Parks of Grand Rapids Community College points to another key to luring Millennials into manufacturing: a work/life balance.",
+          "cn": "大急流城社区学院的朱莉·帕克斯指出了另一个吸引千禧一代进入制造业的关键：工作—生活平衡。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s30",
+          "para": 9,
+          "en": "While their parents were content to work long hours, young people value flexibility.",
+          "cn": "他们的父母甘愿长时间工作，而年轻人重视弹性。",
+          "words": []
+        },
+        {
+          "id": "2017_newtype_s31",
+          "para": 9,
+          "en": "\"Overtime is not attractive to this generation. They really want to live their lives,\" she says.",
+          "cn": "“加班对这一代人并无吸引力，他们真的想过自己的生活，”她说。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2017_newtype_q41",
+          "number": 41,
+          "qtype": "匹配",
+          "stem": "将左栏人物与其观点进行匹配",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "E",
+          "explanation": "根据题干Jay Dunwell定位至第五段。该段借助观点标记词/符（says＋双引号）将其观点呈现：工人更加难寻、工人手上有多个工作机会、工人已经被其他行业抢走了，而该观点实则顺承“行业间劳动力竞争激烈”而来；[E]选项“对于工厂老板而言，因（行业间）激烈争夺，工人愈加难寻”复现Dunwell观点关键词for factory owners、are harder to find、stiff competition，故正确。",
+          "related_sentences": [
+            "2017_newtype_s01",
+            "2017_newtype_s02",
+            "2017_newtype_s03",
+            "2017_newtype_s04",
+            "2017_newtype_s05",
+            "2017_newtype_s06",
+            "2017_newtype_s07",
+            "2017_newtype_s08",
+            "2017_newtype_s09",
+            "2017_newtype_s10",
+            "2017_newtype_s11",
+            "2017_newtype_s12",
+            "2017_newtype_s13",
+            "2017_newtype_s14",
+            "2017_newtype_s15",
+            "2017_newtype_s16",
+            "2017_newtype_s17",
+            "2017_newtype_s18",
+            "2017_newtype_s19",
+            "2017_newtype_s20",
+            "2017_newtype_s21",
+            "2017_newtype_s22",
+            "2017_newtype_s23",
+            "2017_newtype_s24",
+            "2017_newtype_s25",
+            "2017_newtype_s26",
+            "2017_newtype_s27",
+            "2017_newtype_s28",
+            "2017_newtype_s29",
+            "2017_newtype_s30",
+            "2017_newtype_s31"
+          ]
+        },
+        {
+          "id": "2017_newtype_q42",
+          "number": 42,
+          "qtype": "匹配",
+          "stem": "将左栏人物与其观点进行匹配",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "A",
+          "explanation": "根据题干Jason Stenquist定位至第七段。该段借助观点表达词/符（says＋双引号）说明Stenquist职业选择改变的原因：由医学转到电气工程，是因为喜欢与工具打交道、喜爱创造；[A]“他改修电气工程是因为他喜欢与工具打交道”复现该部分关键词switching to electrical engineering、love working with tools，与文中Jason Stenquist信息匹配。",
+          "related_sentences": [
+            "2017_newtype_s01",
+            "2017_newtype_s02",
+            "2017_newtype_s03",
+            "2017_newtype_s04",
+            "2017_newtype_s05",
+            "2017_newtype_s06",
+            "2017_newtype_s07",
+            "2017_newtype_s08",
+            "2017_newtype_s09",
+            "2017_newtype_s10",
+            "2017_newtype_s11",
+            "2017_newtype_s12",
+            "2017_newtype_s13",
+            "2017_newtype_s14",
+            "2017_newtype_s15",
+            "2017_newtype_s16",
+            "2017_newtype_s17",
+            "2017_newtype_s18",
+            "2017_newtype_s19",
+            "2017_newtype_s20",
+            "2017_newtype_s21",
+            "2017_newtype_s22",
+            "2017_newtype_s23",
+            "2017_newtype_s24",
+            "2017_newtype_s25",
+            "2017_newtype_s26",
+            "2017_newtype_s27",
+            "2017_newtype_s28",
+            "2017_newtype_s29",
+            "2017_newtype_s30",
+            "2017_newtype_s31"
+          ]
+        },
+        {
+          "id": "2017_newtype_q43",
+          "number": 43,
+          "qtype": "匹配",
+          "stem": "将左栏人物与其观点进行匹配",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "G",
+          "explanation": "根据题干Birgit Klohs定位至第八段。该段借助观点标记词/符（says＋双引号）指出其观点：千禧一代记得他们的父母曾双双被辞退，并将这归咎于制造业衰退；[G]中the lay-off of the young people's parents、the manufacturing recession is to blame分别同义替换their father and mother both were laid off、They blame it on the manufacturing recession，所述内容与Birgit Klohs观点一致。",
+          "related_sentences": [
+            "2017_newtype_s01",
+            "2017_newtype_s02",
+            "2017_newtype_s03",
+            "2017_newtype_s04",
+            "2017_newtype_s05",
+            "2017_newtype_s06",
+            "2017_newtype_s07",
+            "2017_newtype_s08",
+            "2017_newtype_s09",
+            "2017_newtype_s10",
+            "2017_newtype_s11",
+            "2017_newtype_s12",
+            "2017_newtype_s13",
+            "2017_newtype_s14",
+            "2017_newtype_s15",
+            "2017_newtype_s16",
+            "2017_newtype_s17",
+            "2017_newtype_s18",
+            "2017_newtype_s19",
+            "2017_newtype_s20",
+            "2017_newtype_s21",
+            "2017_newtype_s22",
+            "2017_newtype_s23",
+            "2017_newtype_s24",
+            "2017_newtype_s25",
+            "2017_newtype_s26",
+            "2017_newtype_s27",
+            "2017_newtype_s28",
+            "2017_newtype_s29",
+            "2017_newtype_s30",
+            "2017_newtype_s31"
+          ]
+        },
+        {
+          "id": "2017_newtype_q44",
+          "number": 44,
+          "qtype": "匹配",
+          "stem": "将左栏人物与其观点进行匹配",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "B",
+          "explanation": "根据题干Rob Spohr定位至第十段。该段借助观点表达词/符（says＋双引号）指出其观点：劳动力缺口存在于中级技术岗位，而无需技能的岗位则劳动力充足；[B]通过复现there are enough people to fill，并以the jobs that don't need much skill同义改写the jobs...where you don't need to have much skill，指出“有足够的人来填补那些无需太多技能的工作”，与Rob Spohr观点一致。",
+          "related_sentences": [
+            "2017_newtype_s01",
+            "2017_newtype_s02",
+            "2017_newtype_s03",
+            "2017_newtype_s04",
+            "2017_newtype_s05",
+            "2017_newtype_s06",
+            "2017_newtype_s07",
+            "2017_newtype_s08",
+            "2017_newtype_s09",
+            "2017_newtype_s10",
+            "2017_newtype_s11",
+            "2017_newtype_s12",
+            "2017_newtype_s13",
+            "2017_newtype_s14",
+            "2017_newtype_s15",
+            "2017_newtype_s16",
+            "2017_newtype_s17",
+            "2017_newtype_s18",
+            "2017_newtype_s19",
+            "2017_newtype_s20",
+            "2017_newtype_s21",
+            "2017_newtype_s22",
+            "2017_newtype_s23",
+            "2017_newtype_s24",
+            "2017_newtype_s25",
+            "2017_newtype_s26",
+            "2017_newtype_s27",
+            "2017_newtype_s28",
+            "2017_newtype_s29",
+            "2017_newtype_s30",
+            "2017_newtype_s31"
+          ]
+        },
+        {
+          "id": "2017_newtype_q45",
+          "number": 45,
+          "qtype": "匹配",
+          "stem": "将左栏人物与其观点进行匹配",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "F",
+          "explanation": "根据题干Julie Parks定位至第十一段。该段借助观点标记词（points to）指出其观点：另一个吸引千禧一代进入制造业的关键是“工作—生活平衡”；[F]复现关键词a work/life balance，指出“工作—生活平衡能吸引年轻人进入制造业”，与Julie Parks匹配。",
+          "related_sentences": [
+            "2017_newtype_s01",
+            "2017_newtype_s02",
+            "2017_newtype_s03",
+            "2017_newtype_s04",
+            "2017_newtype_s05",
+            "2017_newtype_s06",
+            "2017_newtype_s07",
+            "2017_newtype_s08",
+            "2017_newtype_s09",
+            "2017_newtype_s10",
+            "2017_newtype_s11",
+            "2017_newtype_s12",
+            "2017_newtype_s13",
+            "2017_newtype_s14",
+            "2017_newtype_s15",
+            "2017_newtype_s16",
+            "2017_newtype_s17",
+            "2017_newtype_s18",
+            "2017_newtype_s19",
+            "2017_newtype_s20",
+            "2017_newtype_s21",
+            "2017_newtype_s22",
+            "2017_newtype_s23",
+            "2017_newtype_s24",
+            "2017_newtype_s25",
+            "2017_newtype_s26",
+            "2017_newtype_s27",
+            "2017_newtype_s28",
+            "2017_newtype_s29",
+            "2017_newtype_s30",
+            "2017_newtype_s31"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2017_cloze",
+      "type": "cloze",
+      "title": "Would a Work-Free World Be So Bad?",
+      "topic": "完形填空：无工作的世界未必那么糟糕——驳斥对无工作未来的消极看法，论证无工作的积极意义。",
+      "source": "Section I Use of English",
+      "sentences": [
+        {
+          "id": "2017_cloze_s01",
+          "para": 1,
+          "en": "People have speculated for centuries about a future without work.",
+          "cn": "几个世纪以来人们一直推测未来将没有工作。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s02",
+          "para": 1,
+          "en": "Today is no different, with academics, writers, and activists once again [1] that technology is replacing human workers.",
+          "cn": "如今也不例外，学者、作家以及活动家们再一次警告说技术正取代人工。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s03",
+          "para": 1,
+          "en": "Some imagine that the coming work-free world will be defined by [2]: A few wealthy people will own all the capital, and the masses will struggle in an impoverished wasteland.",
+          "cn": "其中一些人猜测即将到来的无工作世界将会以不平等为特征：少数富人将会掌握所有的资本，而大众将会在贫困的荒芜之地苦苦挣扎。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s04",
+          "para": 2,
+          "en": "A different and not mutually exclusive [3] holds that the future will be a wasteland of a different sort, one [4] by purposelessness: Without jobs to give their lives [5], people will simply become lazy and depressed.",
+          "cn": "另外一种与其不同但并不矛盾的预言认为，未来会是另一种荒芜之地，一个以“漫无目的”为特征的荒芜之地：没有了工作赋予生活以意义，人们只会变得懒惰和消沉。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s05",
+          "para": 2,
+          "en": "[6], today's unemployed don't seem to be having a great time.",
+          "cn": "的确如此，如今的失业者似乎过得并不快乐。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s06",
+          "para": 2,
+          "en": "One Gallup poll found that 20 percent of Americans who have been unemployed for at least a year report having depression, double the rate for [7] Americans.",
+          "cn": "一项盖洛普民意调查发现，在失业至少一年的美国人当中，有20%表示患有抑郁症，其比例是有工作的美国人的两倍。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s07",
+          "para": 2,
+          "en": "Also, some research suggests that the [8] for rising rates of mortality, mental-health problems, and addiction [9] poorly-educated middle-aged people is a shortage of well-paid jobs.",
+          "cn": "某项研究也表明，在受教育程度低的中年人当中，死亡、心理健康问题以及染上毒瘾者的比例不断增长的原因是缺少高薪工作。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s08",
+          "para": 2,
+          "en": "Perhaps this is why many [10] the agonizing dullness of a jobless future.",
+          "cn": "或许这解释了为什么许多人担忧无工作的未来会满是痛苦沉闷。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s09",
+          "para": 3,
+          "en": "But it doesn't [11] follow from findings like these that a world without work would be filled with unease.",
+          "cn": "但是这些调查发现不一定能证明无工作的世界将满是不安。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s10",
+          "para": 3,
+          "en": "Such visions are based on the [12] of being unemployed in a society built on the concept of employment.",
+          "cn": "此类想象是基于“无业”的缺点，而其所在的社会是构建于“有业”概念之上的。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s11",
+          "para": 3,
+          "en": "In the [13] of work, a society designed with other ends in mind could [14] strikingly different circumstances for the future of labor and leisure.",
+          "cn": "在没有工作的情况下，一个怀揣着其他宗旨的社会可能会在未来的劳动与休闲方面产生截然不同的情形。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s12",
+          "para": 3,
+          "en": "Today, the [15] of work may be a bit overblown.",
+          "cn": "如今，工作的好处可能有点言过其实了。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s13",
+          "para": 3,
+          "en": "\"Many jobs are boring, degrading, unhealthy, and a waste of human potential,\" says John Danaher, a lecturer at the National University of Ireland in Galway.",
+          "cn": "戈尔韦爱尔兰国立大学的一位讲师约翰·丹纳赫说道：“许多工作枯燥乏味、有失体面、有害健康，且对人的潜能是一种浪费。”",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s14",
+          "para": 4,
+          "en": "These days, because leisure time is relatively [16] for most workers, people use their free time to counterbalance the intellectual and emotional [17] of their jobs.",
+          "cn": "现阶段，由于大多数工作者的闲暇时间相对不足，所以人们把空闲时间用作对工作上的智力以及情感方面烦心事的抵消力量。",
+          "words": []
+        },
+        {
+          "id": "2017_cloze_s15",
+          "para": 4,
+          "en": "\"When I come home from a hard day's work, I often feel [18],\" Danaher says, adding, \"In a world in which I don't have to work, I might feel rather different\" - perhaps different enough to throw himself [19] a hobby or a passion project with the intensity usually reserved for [20] matters.",
+          "cn": "丹纳赫说：“结束一天的辛苦工作回到家时，我经常会感觉疲惫不堪。”他还补充道：“在不必工作的世界里，我也许会有大不同的感受”——也许足够不同到让他以一种往往是用于专业问题的专注度全身心投入到某个兴趣或爱好当中。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2017_cloze_q01",
+          "number": 1,
+          "qtype": "完形",
+          "stem": "第 1 空：选择最合适的词填入空白 [1]",
+          "stem_cn": "",
+          "options": {
+            "A": "boasting",
+            "B": "denying",
+            "C": "warning",
+            "D": "ensuring"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义＋词义辨析。独立主格结构with...that...中，academics, writers...与technology is replacing human workers分别对应首句People与a future without work，因此空格词与speculated（对未来的猜测）应大致相关；而下文“其中一些猜测……：少数富人会掌握所有资本，大众则挣扎于贫困的荒芜之地”体现“担忧未来、不希望发生”的意味，warn意为“预警某不好的情况以期避免”，符合要求，因此[C]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q02",
+          "number": 2,
+          "qtype": "完形",
+          "stem": "第 2 空：选择最合适的词填入空白 [2]",
+          "stem_cn": "",
+          "options": {
+            "A": "inequality",
+            "B": "instability",
+            "C": "unreliability",
+            "D": "uncertainty"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义＋名词辨析。空格句指出，其中一些人猜测即将到来的无工作世界将会以[2]为特征。空格下文意为，少数富人会掌握所有资本，而大众将会挣扎于贫困的荒芜之地。A few wealthy people VS the masses以及own all the capital VS struggle in an impoverished wasteland两组对比呈现出“财富分配的强烈不均衡性”，只有inequality与该内容契合，[A]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q03",
+          "number": 3,
+          "qtype": "完形",
+          "stem": "第 3 空：选择最合适的词填入空白 [3]",
+          "stem_cn": "",
+          "options": {
+            "A": "policy",
+            "B": "guideline",
+            "C": "resolution",
+            "D": "prediction"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。A different、a wasteland of a different sort暗示本句与上文为“比较关系”，针对上文“其中一些人的猜想……”引出“另外的猜测”，空格词应与imagine、speculated同质，[D]prediction（预言）符合文意。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q04",
+          "number": 4,
+          "qtype": "完形",
+          "stem": "第 4 空：选择最合适的词填入空白 [4]",
+          "stem_cn": "",
+          "options": {
+            "A": "characterized",
+            "B": "divided",
+            "C": "balanced",
+            "D": "measured"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义。空格部分意为：……认为，未来会是一片（与上述情况）不同的荒地，一个被“漫无目的”所[4]的荒地。冒号后具体说明，展现“人无所事事、没有生活动力”的情境，可见purposelessness一词是对“另一种荒芜”的特点的概括，因此[A]characterized（以……为特点）正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q05",
+          "number": 5,
+          "qtype": "完形",
+          "stem": "第 5 空：选择最合适的词填入空白 [5]",
+          "stem_cn": "",
+          "options": {
+            "A": "wisdom",
+            "B": "meaning",
+            "C": "glory",
+            "D": "freedom"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义。空格部分位于冒号之后，对purposelessness进行解释说明：没有工作赋予生活[5]，人们只会变得懒惰和沮丧。Without jobs to give their lives与purposelessness的含义相呼应，而考虑到否定介词without的存在，空格词应与purposelessness的含义相反，meaning可表示“人生的意义，目标”，恰与之相对，[B]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q06",
+          "number": 6,
+          "qtype": "完形",
+          "stem": "第 6 空：选择最合适的词填入空白 [6]",
+          "stem_cn": "",
+          "options": {
+            "A": "Instead",
+            "B": "Indeed",
+            "C": "Thus",
+            "D": "Nevertheless"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文逻辑关系。从上文“未来人们（因为无业）会失去生活的热情，变得懒惰悲观”到本句“如今失业者过得不好”，后者显然是通过“现实人们的糟糕境遇”来肯定和证实前者推测，[B]Indeed（的确）正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q07",
+          "number": 7,
+          "qtype": "完形",
+          "stem": "第 7 空：选择最合适的词填入空白 [7]",
+          "stem_cn": "",
+          "options": {
+            "A": "rich",
+            "B": "urban",
+            "C": "working",
+            "D": "educated"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查句内语义。double the rate for...表明本句把“美国失业者患抑郁症的比例”和“美国[7]者患抑郁症的比例”相对比，强调前者患病概率之大，空格处只能表示“有业的，有工作的”，才能契合上下文语义，突显“工作对人的意义”，因此[C]working正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q08",
+          "number": 8,
+          "qtype": "完形",
+          "stem": "第 8 空：选择最合适的词填入空白 [8]",
+          "stem_cn": "",
+          "options": {
+            "A": "explanation",
+            "B": "requirement",
+            "C": "compensation",
+            "D": "substitute"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内逻辑关系。Also, some research suggests that...与上句One Gallup poll found对仗，表明两句间“并列补充”关系，而上句的发现为“失业者患抑郁症的概率较大”，即“无工作vs疾病”之间有因果关联；本句主语for...引出的内容对应“疾病”，表语对应“无工作”，explanation for sth指“某事的原因”，符合上下文逻辑，故[A]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q09",
+          "number": 9,
+          "qtype": "完形",
+          "stem": "第 9 空：选择最合适的词填入空白 [9]",
+          "stem_cn": "",
+          "options": {
+            "A": "under",
+            "B": "beyond",
+            "C": "alongside",
+            "D": "among"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义＋介词用法。空格前mortality, mental-health problems, and addiction为“疾病相关的问题”，空格后poorly-educated middle-aged people为“特定人群”，空格介词需体现两者之间的关系。上句为“失业者患抑郁症（的比例……）”，本句只能是“特定人群出现此类问题（的原因是……）”，即“在这群人当中所出现的问题”，[D]among符合要求。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q10",
+          "number": 10,
+          "qtype": "完形",
+          "stem": "第 10 空：选择最合适的词填入空白 [10]",
+          "stem_cn": "",
+          "options": {
+            "A": "leave behind",
+            "B": "make up",
+            "C": "worry about",
+            "D": "set aside"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义＋动词词组辨析。空格句指出：也许这就是许多人[10]无工作的未来会满是痛苦沉闷的原因。本段首句介绍另外一些人对未来的看法：人们感觉生活不再有意义，变得懒惰空虚。随后以调查发现说明“无工作”对人的负面影响，可见空格句是对全段的总结，说明这些人有此看法的原因；agonizing dullness呼应首句purposelessness、lazy and depressed，只有[C]worry about（担心）符合文意，表现人们对未来的担忧之情。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q11",
+          "number": 11,
+          "qtype": "完形",
+          "stem": "第 11 空：选择最合适的词填入空白 [11]",
+          "stem_cn": "",
+          "options": {
+            "A": "statistically",
+            "B": "occasionally",
+            "C": "necessarily",
+            "D": "economically"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查句内语义。空格句指出：但是从这些调查发现中不[11]证明无工作的世界将满是不安。But...doesn't follow from findings...表明本句为过渡句，转承上文“对未来消极看法”，开启积极视角评述。not necessarily表示“上述内容不一定正确”，语气委婉，使论证更显客观，因此[C]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q12",
+          "number": 12,
+          "qtype": "完形",
+          "stem": "第 12 空：选择最合适的词填入空白 [12]",
+          "stem_cn": "",
+          "options": {
+            "A": "chances",
+            "B": "downsides",
+            "C": "benefits",
+            "D": "principles"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查名词辨析。such visions指代上文“一些人对于无工作未来的推测”，空格词表明这些推测的出发点；而上文“人们会变得空虚无聊、抑郁症、吸毒等问题发生概率会持续增长”等内容都是不工作的负面影响，the downside of a situation意为“某情况（中较其他方面的）不利一面”，故[B]downsides（不利的一面，缺点）正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q13",
+          "number": 13,
+          "qtype": "完形",
+          "stem": "第 13 空：选择最合适的词填入空白 [13]",
+          "stem_cn": "",
+          "options": {
+            "A": "in the absence of",
+            "B": "in the height of",
+            "C": "in the face of",
+            "D": "in the course of"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义＋固定搭配。上文表明，人们对于未来的担忧源于当前社会对于“无业”的负面认知；本句中other ends（其他目的）是就上句(on the concept of) employment而言，即上句描述惯常社会认知：以工作为社会存在的唯一目的，本句描述另一种社会认知：不以工作为唯一目的，再结合for the future of labor and leisure以及空格后信息of work推断本句探讨的应该是“未来无工作（但存在劳动和休闲）”情况下的社会情形，in the absence of work可作句子状语，表示“在没有/缺乏工作的情况下”，[A]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q14",
+          "number": 14,
+          "qtype": "完形",
+          "stem": "第 14 空：选择最合适的词填入空白 [14]",
+          "stem_cn": "",
+          "options": {
+            "A": "disturb",
+            "B": "restore",
+            "C": "exclude",
+            "D": "yield"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义＋动词辨析。空格处动词需体现“主语（社会）”与“宾语（截然不同的情形）”之间的关系。上句介绍基于“无工作弊端多多”这一社会认知的有关未来之推测，即：未来充满焦虑、不安；本句介绍基于“社会存在的基础不仅仅是工作，还有休闲”这一认知的推测，即：未来会产生截然不同的情形；空格词应与“充满”相近，只有yield符合要求，表示“产生某种结果”之意，[D]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q15",
+          "number": 15,
+          "qtype": "完形",
+          "stem": "第 15 空：选择最合适的词填入空白 [15]",
+          "stem_cn": "",
+          "options": {
+            "A": "model",
+            "B": "practice",
+            "C": "virtue",
+            "D": "hardship"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义。空格句指出：如今，工作带来的[15]也许有点夸大了；下文进而以引语进行补充说明：工作枯燥乏味、不体面、不健康，浪费人类潜能。因此空格句意在强调“工作并不像人们认为的那样益处多多”，借以反衬“无工作的未来未必那么糟糕”这一段落主旨，故[C]virtue（优点）符合文意。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q16",
+          "number": 16,
+          "qtype": "完形",
+          "stem": "第 16 空：选择最合适的词填入空白 [16]",
+          "stem_cn": "",
+          "options": {
+            "A": "tricky",
+            "B": "lengthy",
+            "C": "mysterious",
+            "D": "scarce"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义＋形容词辨析。空格句中relatively（相对地）体现本句“现阶段人们的空闲时间”vs上文“未来人们的空闲时间”之间的比较意味，即无工作情况下时间必定很充裕，而当前人们不得不工作，其闲暇时间自然较少，因此[D]scarce（不足的，稀少的）符合文意。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q17",
+          "number": 17,
+          "qtype": "完形",
+          "stem": "第 17 空：选择最合适的词填入空白 [17]",
+          "stem_cn": "",
+          "options": {
+            "A": "demands",
+            "B": "standards",
+            "C": "qualities",
+            "D": "threats"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义。句中counterbalance指“使平衡，抵消”；文中互相平衡/抵消的双方为：闲暇时间vs工作上智力和情感的[17]；而闲暇时间明显是用来放松的，能与其产生相反影响的只能是“工作上智力和情绪的劳累”，能表现这一含义的只有demands, the demands of sth为常见用法，表示“困难的/烦人的/累人的事情”，[A]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q18",
+          "number": 18,
+          "qtype": "完形",
+          "stem": "第 18 空：选择最合适的词填入空白 [18]",
+          "stem_cn": "",
+          "options": {
+            "A": "ignored",
+            "B": "tired",
+            "C": "confused",
+            "D": "starved"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义。上文指出人们利用空闲时间来抵消工作对智力和情感的要求，这种要求实指“工作中需要应付的困难、累人之事”，因此本句只能是“工作一天后感觉疲惫”，[B]tired（疲倦的）符合文意。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q19",
+          "number": 19,
+          "qtype": "完形",
+          "stem": "第 19 空：选择最合适的词填入空白 [19]",
+          "stem_cn": "",
+          "options": {
+            "A": "(throw)...off",
+            "B": "(throw)...against",
+            "C": "(throw one's weight) behind",
+            "D": "(throw)...into"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查固定搭配。空格句对上句“工作一天后很疲惫”进行补充：“在一个不需要工作的世界，我也许会感觉大不相同”；破折号后作者对这一感觉作出解释：也许不同到[19]某个兴趣或爱好计划……。不同于“疲惫”，同时和“兴趣、爱好”挂钩、还要与“throw（投）”这一动词相关的动作只能是“投入”，throw oneself into...表示“积极投入到某事中去”，符合文意，[D]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        },
+        {
+          "id": "2017_cloze_q20",
+          "number": 20,
+          "qtype": "完形",
+          "stem": "第 20 空：选择最合适的词填入空白 [20]",
+          "stem_cn": "",
+          "options": {
+            "A": "technological",
+            "B": "professional",
+            "C": "educational",
+            "D": "interpersonal"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义。空格部分大意为：也许足够不同到让他以往往为[20]问题而留的热情投入到某个兴趣中去。professional一词强调“区别于业余爱好的专业、职业性”，紧贴全文焦点“工作”的同时，也契合句子体现的“人们在闲余情形下对兴趣的热情、专注度之高”，印证全文论点：无工作的未来未必不好，[B]正确。",
+          "related_sentences": [
+            "2017_cloze_s01",
+            "2017_cloze_s02",
+            "2017_cloze_s03",
+            "2017_cloze_s04",
+            "2017_cloze_s05",
+            "2017_cloze_s06",
+            "2017_cloze_s07",
+            "2017_cloze_s08",
+            "2017_cloze_s09",
+            "2017_cloze_s10",
+            "2017_cloze_s11",
+            "2017_cloze_s12",
+            "2017_cloze_s13",
+            "2017_cloze_s14",
+            "2017_cloze_s15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2017_translation",
+      "type": "translation",
+      "title": "My Dream",
+      "topic": "翻译：我的梦想——国际留学生在时尚与出版之间追求梦想的心路历程。",
+      "source": "Section III Translation",
+      "ref_cn": "我的梦想一直是在时尚和出版之间的领域工作。中学毕业前两年，我选了一门缝纫与设计课，心想以后会接着修一门时装设计课。然而，在学习那门课程期间，我意识到自己在这个领域不够出色，日后不足以与其他有创造力的人士竞争，因此我认定，这条路不适合我。申请上大学之前，我跟所有人说我要学新闻，因为写作曾经是——现在依然是一——我最喜欢的活动之一。可是，说实话，当时我那么说是因为我觉得时尚和我结缘仅仅是个梦——我知道，别人根本无法想象我能进入时尚行业！于是，我决定找些含有写作的与时尚相关的课程。就在这个时候，我注意到了“时尚传媒与推广”这门课。",
+      "sentences": [
+        {
+          "id": "2017_translation_s01",
+          "para": 1,
+          "en": "My dream has always been to work somewhere in an area between fashion and publishing.",
+          "cn": "我的梦想一直是在时尚和出版之间的领域工作。",
+          "words": []
+        },
+        {
+          "id": "2017_translation_s02",
+          "para": 1,
+          "en": "Two years before graduating from secondary school, I took a sewing and design course thinking that I would move on to a fashion design course.",
+          "cn": "中学毕业前两年，我选了一门缝纫与设计课，心想以后会接着修一门时装设计课。",
+          "words": []
+        },
+        {
+          "id": "2017_translation_s03",
+          "para": 1,
+          "en": "However, during that course I realized I was not good enough in this area to compete with other creative personalities in the future, so I decided that it was not the right path for me.",
+          "cn": "然而，在学习那门课程期间，我意识到自己在这个领域不够出色，日后不足以与其他有创造力的人士竞争，因此我认定，这条路不适合我。",
+          "words": []
+        },
+        {
+          "id": "2017_translation_s04",
+          "para": 1,
+          "en": "Before applying for university I told everyone that I would study journalism, because writing was, and still is, one of my favourite activities.",
+          "cn": "申请上大学之前，我跟所有人说我要学新闻，因为写作曾经是——现在依然是一一我最喜欢的活动之一。",
+          "words": []
+        },
+        {
+          "id": "2017_translation_s05",
+          "para": 1,
+          "en": "But, to be honest, I said it, because I thought that fashion and me together was just a dream - I knew that no one could imagine me in the fashion industry at all!",
+          "cn": "可是，说实话，当时我那么说是因为我觉得时尚和我结缘仅仅是个梦——我知道，别人根本无法想象我能进入时尚行业！",
+          "words": []
+        },
+        {
+          "id": "2017_translation_s06",
+          "para": 1,
+          "en": "So I decided to look for some fashion-related courses that included writing.",
+          "cn": "于是，我决定找些含有写作的与时尚相关的课程。",
+          "words": []
+        },
+        {
+          "id": "2017_translation_s07",
+          "para": 1,
+          "en": "This is when I noticed the course \"Fashion Media & Promotion.\"",
+          "cn": "就在这个时候，我注意到了“时尚传媒与推广”这门课。",
+          "words": []
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "2017_writinga",
+      "type": "writing_a",
+      "title": "Part A 应用文：接受邀请信",
+      "topic": "小作文：回复威廉姆斯教授的邀请，接受关于中国文化的讲座，并介绍讲座的要点。",
+      "source": "Section IV Writing Part A",
+      "sample_en": "Dear Professor Williams,\nI am honored to give a presentation about Chinese culture to international students at your invitation. I am pleased to take this opportunity to communicate with foreign friends about cultures.\nMy presentation will be focused on Chinese martial arts, which is an important component of Chinese culture. To begin with, I will briefly introduce it and its development over millennia. Then, I will focus on some common styles of Chinese martial arts, each of which has its own set of techniques and ideas. Furthermore, I will show some photos of relevant historical locations and figures. I believe graphic visual depiction will be more impressive than boring language.\nThank you for your invitation. I am looking forward to seeing you.\nSincerely yours,\nLi Ming",
+      "sample_cn": "亲爱的威廉姆斯教授：\n很荣幸能够受邀为留学生做有关中国文化的讲座。我非常愿意借此机会与外国朋友进行文化沟通和交流。\n讲座将以中国文化的一个重要组成部分——中国武术为主题。首先，我会对中国武术及其几千年来的发展历程进行简要介绍。然后，我将重点介绍一些常见的中国武术门派，其中每一派都有各自的技术和思想体系。此外，一些相关的历史遗迹和历史人物将用照片呈现给大家。我相信，相对于干瘪的文字，生动形象的视觉描绘可以给大家留下更深刻的印象。\n感谢您的邀请。期待与您见面。\n诚挚的，\n李明",
+      "questions": []
+    },
+    {
+      "id": "2017_writingb",
+      "type": "writing_b",
+      "title": "Part B 大作文：2013-2015年博物馆数量与参观人数折线图",
+      "topic": "大作文：根据折线图写一篇约150词的短文，解读2013年至2015年中国博物馆数量与参观人数连续攀升的情况并发表评论。",
+      "source": "Section IV Writing Part B",
+      "chart_img": "img/2017_writingb_chart.png",
+      "sample_en": "The given chart reveals China's consecutive growth of museums and museum visitors from 2013 to 2015. The growth of museum experienced a slowdown in 2014, while the growth of museum visitors maintained a dynamic momentum.\nThis phenomenon can be attributed to the following reasons. Firstly, thanks to national endeavor at cultural undertakings, numerous museums have been constructed and opened freely to the public. Moreover, China's rapid economic growth underpins the cultural progress. With living standard improving, the public demand increasingly varied spiritual nutrition, thus visiting museums and galleries has become a willing choice for more people.\nHowever, this encouraging sign also presents challenges, like how to address the supply deficiency posed by decelerated growth of museum and people's increasingly diverse need for exhibitions. Museums can improve efficiency by embracing mobile and digital technologies like e-museum. Meanwhile, through digital pictures and interactive videos, visitors can appreciate numerous exhibits from around the world and obtain fresh visiting experiences. It's believed that through joint efforts, China's museums will constitute a bigger driving force advancing cultural development and the important means to enhance people's well-being, thus further boosting economic and social development.",
+      "sample_cn": "上述图表反映了2013年至2015年三年间中国博物馆数量以及参观人数连续攀升的情况。其中，博物馆增长在2014年出现放缓，而参观人数则始终保持强劲增长势头。\n之所以出现这种现象，原因可能有以下几点。首先，得益于国家对文化事业的鼎力支持，大批博物馆得以建成并免费对公众开放。其次，中国经济快速发展为文化进步奠定了坚实的基础。随着生活水平的提高，人们需要的精神食粮也愈加多样，流连于博物馆、美术馆自然成为了越来越多人的自发选择。\n不过，这一可喜现象背后也存在诸多挑战，如怎样应对博物馆增长放缓带来的供不应求问题以及人们日益多样化的观展需求问题等。博物馆可以通过移动数字技术，如网上观展来提高效率。同时，通过数字图片和互动视频，参观者们也能欣赏到来自世界各地的展品，获得全新的观展体验。相信通过各方努力，中国博物馆会对文化发展起到更大的推动作用，成为改善民生的重要阵地，从而推动经济社会的更快发展。",
+      "questions": []
     }
   ]
 }

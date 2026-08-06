@@ -10,9 +10,15 @@ let popEl = null;              // 当前释义弹卡
 // ============ 正文文章标题：默认隐藏（防剧透），点击标题处才显示 ============
 function toggleReadTitle() {
     const t = document.querySelector('.read-title');
+    if (!t) return;
+    showReadTitle(t.hidden);
+}
+
+/** 显示/隐藏正文文章标题（force=true 展开，false 收起） */
+function showReadTitle(show) {
+    const t = document.querySelector('.read-title');
     const ph = document.querySelector('.read-title-placeholder');
     if (!t) return;
-    const show = t.hidden;
     t.hidden = !show;
     if (ph) ph.style.display = show ? 'none' : '';
 }
@@ -89,6 +95,8 @@ function toggleCnAll() {
     document.querySelectorAll('.sent-cn').forEach(el => el.classList.toggle('open', cnAll));
     // 同步控制题目区（题干/选项）译文显示
     document.body.classList.toggle('show-quiz-cn', cnAll);
+    // 展开全部译文时自动显示标题
+    if (cnAll) showReadTitle(true);
 }
 
 // ============ 初始化 ============
@@ -140,13 +148,13 @@ async function init() {
 
 // ============ 正文渲染 ============
 function renderArticle() {
-    // 作文模块：无逐句正文，渲染题目要求 + 范文（中英对照可切换）
+    // 作文模块：无逐句正文，渲染范文（中英对照可切换）
     if (article.type === 'writing_a' || article.type === 'writing_b') {
         document.getElementById('readPane').innerHTML = `
             <div class="read-title" onclick="toggleReadTitle()" title="点击显示/隐藏文章标题" hidden>${esc(article.title || '')}</div>
             <div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>
             <div class="read-source">${esc(article.source || '')} · 写作练习：先自行构思，再对照官方范文</div>
-            <div class="writing-directions"><div class="rs-label">题目要求</div><div class="writing-dir-text">${esc(article.directions || '')}</div></div>
+            ${article.chart_img ? `<div class="writing-chart"><img src="${esc(article.chart_img)}" alt="图表" loading="lazy"></div>` : ''}
             <div class="writing-sample">
                 <div class="rs-label">参考范文</div>
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示中文译文</button>
@@ -642,7 +650,17 @@ document.addEventListener('click', (e) => {
 });
 
 // ============ 做题面板 ============
+// 翻译/作文等无客观题模块：整块做题面板隐藏（题目区无意义）
+const NO_QUIZ_TYPES = ['translation', 'writing_a', 'writing_b'];
+
 function renderQuiz() {
+    if (NO_QUIZ_TYPES.includes(article.type)) {
+        const qp = document.getElementById('quizPane');
+        if (qp) qp.style.display = 'none';
+        document.querySelector('.quiz-expand-tab') && (document.querySelector('.quiz-expand-tab').style.display = 'none');
+        document.body.classList.remove('quiz-collapsed');
+        return;
+    }
     const qs = article.questions || [];
     const scroll = document.getElementById('quizScroll');
     if (!qs.length) {

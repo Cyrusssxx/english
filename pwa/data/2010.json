@@ -10,32 +10,434 @@
       "topic": "艺术品市场的衰退：牛市终结之后",
       "source": "2010 年考研英语（二）Text 1 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2010_text1_s01", "para": 1, "en": "The longest bull run in a century of art-market history ended on a dramatic note with a sale of 56 works by Damien Hirst, Beautiful Inside My Head Forever, at Sotheby's in London on September 15th 2008.", "cn": "2008 年 9 月 15 日伦敦苏富比拍卖行举办的“在我脑海，美丽永恒”主题拍卖会上，随着达米恩·赫斯特的 56 件作品被售出，一个世纪以来艺术品市场最长的牛市也戏剧性地落幕了。", "words": [ { "w": "bull run", "meaning": "牛市态势" }, { "w": "on a dramatic note", "meaning": "以戏剧性的方式" } ] },
-        { "id": "2010_text1_s02", "para": 1, "en": "All but two pieces sold, fetching more than £70m, a record for a sale by a single artist.", "cn": "除两件作品以外，其余作品全部售出，拍卖总额超过七千万英镑，创造了单个艺术家作品拍卖的最高记录。", "words": [ { "w": "All but", "meaning": "除……之外全部" }, { "w": "fetching", "phonetic": "/ˈfetʃɪŋ/", "meaning": "v. 售得，卖得（某价钱）" } ] },
-        { "id": "2010_text1_s03", "para": 1, "en": "It was a last victory.", "cn": "这是一场最后的胜利。", "words": [] },
-        { "id": "2010_text1_s04", "para": 1, "en": "As the auctioneer called out bids, in New York one of the oldest banks on Wall Street, Lehman Brothers, filed for bankruptcy.", "cn": "拍卖师喊出报价的同时，纽约华尔街上历史最悠久的银行之一雷曼兄弟也申请了破产。", "words": [ { "w": "called out bids", "meaning": "喊出报价" }, { "w": "filed for bankruptcy", "meaning": "申请破产" }, { "w": "auctioneer", "phonetic": "/ˌɔːkʃəˈnɪə/", "meaning": "n. 拍卖师" } ] },
-        { "id": "2010_text1_s05", "para": 2, "en": "The world art market had already been losing momentum for a while after rising bewilderingly since 2003.", "cn": "世界艺术品市场在经历了自 2003 年以来的急剧增长后，相当长一段时间以来都失去了其原有的发展势头。", "words": [ { "w": "losing momentum", "meaning": "失去发展势头" }, { "w": "bewilderingly", "phonetic": "/bɪˈwɪldərɪŋli/", "meaning": "adv. 令人费解地，令人瞠目地" } ] },
-        { "id": "2010_text1_s06", "para": 2, "en": "At its peak in 2007 it was worth some $65 billion, reckons Clare McAndrew, founder of Arts Economics, a research firm – double the figure five years earlier.", "cn": "据艺术经济学研究公司的创始人克莱尔·麦克安德鲁估算，在 2007 年的顶峰时期，艺术品市场价位约为 650 亿美元，是五年前的两倍。", "words": [ { "w": "At its peak", "meaning": "在其顶峰时期" }, { "w": "reckons", "phonetic": "/ˈrekənz/", "meaning": "v. 估算，认为" } ] },
-        { "id": "2010_text1_s07", "para": 2, "en": "Since then it may have come down to $50 billion.", "cn": "从那以后，该价值可能已降至 500 亿美元。", "words": [ { "w": "come down to", "meaning": "降至" } ] },
-        { "id": "2010_text1_s08", "para": 2, "en": "But the market generates interest far beyond its size because it brings together great wealth, enormous egos, greed, passion and controversy in a way matched by few other industries.", "cn": "但这一市场产生的利益远远超出它本身的规模，因为它将巨额财富、自负、贪婪、激情和争议以一种其他行业无法比拟的方式汇集在一起。", "words": [ { "w": "far beyond", "meaning": "远远超出" }, { "w": "brings together", "meaning": "汇集，聚拢" }, { "w": "controversy", "phonetic": "/ˈkɒntrəvɜːsi/", "meaning": "n. 争议" } ] },
-        { "id": "2010_text1_s09", "para": 3, "en": "In the weeks and months that followed Mr. Hirst's sale, spending of any sort became deeply unfashionable.", "cn": "赫斯特作品拍卖之后的数周乃至数月内，任何种类的消费都变得极其不合时宜。", "words": [ { "w": "of any sort", "meaning": "任何种类的" }, { "w": "unfashionable", "phonetic": "/ʌnˈfæʃnəbl/", "meaning": "adj. 不合时宜的，过时的" } ] },
-        { "id": "2010_text1_s10", "para": 3, "en": "In the art world that meant collectors stayed away from galleries and salerooms.", "cn": "在艺术品领域，这意味着收藏家远离了画廊和拍卖场。", "words": [ { "w": "stayed away from", "meaning": "远离，不参与" }, { "w": "salerooms", "phonetic": "/ˈseɪlruːmz/", "meaning": "n. 拍卖厅" } ] },
-        { "id": "2010_text1_s11", "para": 3, "en": "Sales of contemporary art fell by two-thirds, and in the most overheated sector, they were down by nearly 90% in the year to November 2008.", "cn": "2008 年当年截至 11 月，当代艺术品的销售额下降了 2/3，而在其最热门的领域则下降了近 90%。", "words": [ { "w": "contemporary", "phonetic": "/kənˈtemprəri/", "meaning": "adj. 当代的" }, { "w": "overheated", "phonetic": "/ˌəʊvəˈhiːtɪd/", "meaning": "adj. 过热的" } ] },
-        { "id": "2010_text1_s12", "para": 3, "en": "Within weeks the world's two biggest auction houses, Sotheby's and Christie's, had to pay out nearly $200m in guarantees to clients who had placed works for sale with them.", "cn": "几周之内，全球最大的两家拍卖行，苏富比和佳士得，不得不向那些将艺术品交由它们售卖的客户支付将近 2 亿美元的保证金。", "words": [ { "w": "pay out", "meaning": "支付（大笔款项）" }, { "w": "guarantees", "phonetic": "/ˌɡærənˈtiːz/", "meaning": "n. 保证金" } ] },
-        { "id": "2010_text1_s13", "para": 4, "en": "The current downturn in the art market is the worst since the Japanese stopped buying Impressionists at the end of 1989.", "cn": "当前艺术品市场的下滑是自 1989 年底日本停止购买印象派作品以来最糟糕的一次。", "words": [ { "w": "downturn", "phonetic": "/ˈdaʊntɜːn/", "meaning": "n. 衰退，低迷" }, { "w": "Impressionists", "phonetic": "/ɪmˈpreʃənɪsts/", "meaning": "n. 印象派画家（作品）" } ] },
-        { "id": "2010_text1_s14", "para": 4, "en": "This time experts reckon that prices are about 40% down on their peak on average, though some have been far more fluctuant.", "cn": "专家估计这次下滑使艺术品价值较之其峰值平均下跌了约 40%，不过有些艺术品价格的波动幅度更大。", "words": [ { "w": "on average", "meaning": "平均而言" }, { "w": "fluctuant", "phonetic": "/ˈflʌktʃuənt/", "meaning": "adj. 波动的" } ] },
-        { "id": "2010_text1_s15", "para": 4, "en": "But Edward Dolman, Christie's chief executive, says: \"I'm pretty confident we're at the bottom.\"", "cn": "但是佳士得的首席执行官爱德华·多尔曼说：“我十分确信我们已处于谷底。”", "words": [ { "w": "chief executive", "meaning": "首席执行官" }, { "w": "at the bottom", "meaning": "处于谷底" } ] },
-        { "id": "2010_text1_s16", "para": 5, "en": "What makes this slump different from the last, he says, is that there are still buyers in the market.", "cn": "他说，此次衰退不同于上次的地方在于现在市场上仍然有买家。", "words": [ { "w": "slump", "phonetic": "/slʌmp/", "meaning": "n. 萧条，暴跌" } ] },
-        { "id": "2010_text1_s17", "para": 5, "en": "Almost everyone who was interviewed for this special report said that the biggest problem at the moment is not a lack of demand but a lack of good work to sell.", "cn": "几乎所有接受此次特别报道的受访者都说，当前最大的问题不是缺少需求，而是缺少好的售卖作品。", "words": [ { "w": "at the moment", "meaning": "目前" }, { "w": "a lack of", "meaning": "缺乏" } ] },
-        { "id": "2010_text1_s18", "para": 5, "en": "The three Ds – death, debt and divorce – still deliver works of art to the market.", "cn": "3D——死亡、债务和离婚——依然是将艺术品推向市场的三大因素。", "words": [ { "w": "deliver", "phonetic": "/dɪˈlɪvə/", "meaning": "v. 输送，交付" } ] },
-        { "id": "2010_text1_s19", "para": 5, "en": "But anyone who does not have to sell is keeping away, waiting for confidence to return.", "cn": "但那些不是非卖不可的人都在远离市场，等待市场信心的回归。", "words": [ { "w": "keeping away", "meaning": "远离，回避" } ] }
+        {
+          "id": "2010_text1_s01",
+          "para": 1,
+          "en": "The longest bull run in a century of art-market history ended on a dramatic note with a sale of 56 works by Damien Hirst, Beautiful Inside My Head Forever, at Sotheby's in London on September 15th 2008.",
+          "cn": "2008 年 9 月 15 日伦敦苏富比拍卖行举办的“在我脑海，美丽永恒”主题拍卖会上，随着达米恩·赫斯特的 56 件作品被售出，一个世纪以来艺术品市场最长的牛市也戏剧性地落幕了。",
+          "words": [
+            {
+              "w": "bull run",
+              "meaning": "牛市态势"
+            },
+            {
+              "w": "on a dramatic note",
+              "meaning": "以戏剧性的方式"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s02",
+          "para": 1,
+          "en": "All but two pieces sold, fetching more than £70m, a record for a sale by a single artist.",
+          "cn": "除两件作品以外，其余作品全部售出，拍卖总额超过七千万英镑，创造了单个艺术家作品拍卖的最高记录。",
+          "words": [
+            {
+              "w": "All but",
+              "meaning": "除……之外全部"
+            },
+            {
+              "w": "fetching",
+              "phonetic": "/ˈfetʃɪŋ/",
+              "meaning": "v. 售得，卖得（某价钱）"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s03",
+          "para": 1,
+          "en": "It was a last victory.",
+          "cn": "这是一场最后的胜利。",
+          "words": []
+        },
+        {
+          "id": "2010_text1_s04",
+          "para": 1,
+          "en": "As the auctioneer called out bids, in New York one of the oldest banks on Wall Street, Lehman Brothers, filed for bankruptcy.",
+          "cn": "拍卖师喊出报价的同时，纽约华尔街上历史最悠久的银行之一雷曼兄弟也申请了破产。",
+          "words": [
+            {
+              "w": "called out bids",
+              "meaning": "喊出报价"
+            },
+            {
+              "w": "filed for bankruptcy",
+              "meaning": "申请破产"
+            },
+            {
+              "w": "auctioneer",
+              "phonetic": "/ˌɔːkʃəˈnɪə/",
+              "meaning": "n. 拍卖师"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s05",
+          "para": 2,
+          "en": "The world art market had already been losing momentum for a while after rising bewilderingly since 2003.",
+          "cn": "世界艺术品市场在经历了自 2003 年以来的急剧增长后，相当长一段时间以来都失去了其原有的发展势头。",
+          "words": [
+            {
+              "w": "losing momentum",
+              "meaning": "失去发展势头"
+            },
+            {
+              "w": "bewilderingly",
+              "phonetic": "/bɪˈwɪldərɪŋli/",
+              "meaning": "adv. 令人费解地，令人瞠目地"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s06",
+          "para": 2,
+          "en": "At its peak in 2007 it was worth some $65 billion, reckons Clare McAndrew, founder of Arts Economics, a research firm – double the figure five years earlier.",
+          "cn": "据艺术经济学研究公司的创始人克莱尔·麦克安德鲁估算，在 2007 年的顶峰时期，艺术品市场价位约为 650 亿美元，是五年前的两倍。",
+          "words": [
+            {
+              "w": "At its peak",
+              "meaning": "在其顶峰时期"
+            },
+            {
+              "w": "reckons",
+              "phonetic": "/ˈrekənz/",
+              "meaning": "v. 估算，认为"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s07",
+          "para": 2,
+          "en": "Since then it may have come down to $50 billion.",
+          "cn": "从那以后，该价值可能已降至 500 亿美元。",
+          "words": [
+            {
+              "w": "come down to",
+              "meaning": "降至"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s08",
+          "para": 2,
+          "en": "But the market generates interest far beyond its size because it brings together great wealth, enormous egos, greed, passion and controversy in a way matched by few other industries.",
+          "cn": "但这一市场产生的利益远远超出它本身的规模，因为它将巨额财富、自负、贪婪、激情和争议以一种其他行业无法比拟的方式汇集在一起。",
+          "words": [
+            {
+              "w": "far beyond",
+              "meaning": "远远超出"
+            },
+            {
+              "w": "brings together",
+              "meaning": "汇集，聚拢"
+            },
+            {
+              "w": "controversy",
+              "phonetic": "/ˈkɒntrəvɜːsi/",
+              "meaning": "n. 争议"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s09",
+          "para": 3,
+          "en": "In the weeks and months that followed Mr. Hirst's sale, spending of any sort became deeply unfashionable.",
+          "cn": "赫斯特作品拍卖之后的数周乃至数月内，任何种类的消费都变得极其不合时宜。",
+          "words": [
+            {
+              "w": "of any sort",
+              "meaning": "任何种类的"
+            },
+            {
+              "w": "unfashionable",
+              "phonetic": "/ʌnˈfæʃnəbl/",
+              "meaning": "adj. 不合时宜的，过时的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s10",
+          "para": 3,
+          "en": "In the art world that meant collectors stayed away from galleries and salerooms.",
+          "cn": "在艺术品领域，这意味着收藏家远离了画廊和拍卖场。",
+          "words": [
+            {
+              "w": "stayed away from",
+              "meaning": "远离，不参与"
+            },
+            {
+              "w": "salerooms",
+              "phonetic": "/ˈseɪlruːmz/",
+              "meaning": "n. 拍卖厅"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s11",
+          "para": 3,
+          "en": "Sales of contemporary art fell by two-thirds, and in the most overheated sector, they were down by nearly 90% in the year to November 2008.",
+          "cn": "2008 年当年截至 11 月，当代艺术品的销售额下降了 2/3，而在其最热门的领域则下降了近 90%。",
+          "words": [
+            {
+              "w": "contemporary",
+              "phonetic": "/kənˈtemprəri/",
+              "meaning": "adj. 当代的"
+            },
+            {
+              "w": "overheated",
+              "phonetic": "/ˌəʊvəˈhiːtɪd/",
+              "meaning": "adj. 过热的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s12",
+          "para": 3,
+          "en": "Within weeks the world's two biggest auction houses, Sotheby's and Christie's, had to pay out nearly $200m in guarantees to clients who had placed works for sale with them.",
+          "cn": "几周之内，全球最大的两家拍卖行，苏富比和佳士得，不得不向那些将艺术品交由它们售卖的客户支付将近 2 亿美元的保证金。",
+          "words": [
+            {
+              "w": "pay out",
+              "meaning": "支付（大笔款项）"
+            },
+            {
+              "w": "guarantees",
+              "phonetic": "/ˌɡærənˈtiːz/",
+              "meaning": "n. 保证金"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s13",
+          "para": 4,
+          "en": "The current downturn in the art market is the worst since the Japanese stopped buying Impressionists at the end of 1989.",
+          "cn": "当前艺术品市场的下滑是自 1989 年底日本停止购买印象派作品以来最糟糕的一次。",
+          "words": [
+            {
+              "w": "downturn",
+              "phonetic": "/ˈdaʊntɜːn/",
+              "meaning": "n. 衰退，低迷"
+            },
+            {
+              "w": "Impressionists",
+              "phonetic": "/ɪmˈpreʃənɪsts/",
+              "meaning": "n. 印象派画家（作品）"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s14",
+          "para": 4,
+          "en": "This time experts reckon that prices are about 40% down on their peak on average, though some have been far more fluctuant.",
+          "cn": "专家估计这次下滑使艺术品价值较之其峰值平均下跌了约 40%，不过有些艺术品价格的波动幅度更大。",
+          "words": [
+            {
+              "w": "on average",
+              "meaning": "平均而言"
+            },
+            {
+              "w": "fluctuant",
+              "phonetic": "/ˈflʌktʃuənt/",
+              "meaning": "adj. 波动的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s15",
+          "para": 4,
+          "en": "But Edward Dolman, Christie's chief executive, says: \"I'm pretty confident we're at the bottom.\"",
+          "cn": "但是佳士得的首席执行官爱德华·多尔曼说：“我十分确信我们已处于谷底。”",
+          "words": [
+            {
+              "w": "chief executive",
+              "meaning": "首席执行官"
+            },
+            {
+              "w": "at the bottom",
+              "meaning": "处于谷底"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s16",
+          "para": 5,
+          "en": "What makes this slump different from the last, he says, is that there are still buyers in the market.",
+          "cn": "他说，此次衰退不同于上次的地方在于现在市场上仍然有买家。",
+          "words": [
+            {
+              "w": "slump",
+              "phonetic": "/slʌmp/",
+              "meaning": "n. 萧条，暴跌"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s17",
+          "para": 5,
+          "en": "Almost everyone who was interviewed for this special report said that the biggest problem at the moment is not a lack of demand but a lack of good work to sell.",
+          "cn": "几乎所有接受此次特别报道的受访者都说，当前最大的问题不是缺少需求，而是缺少好的售卖作品。",
+          "words": [
+            {
+              "w": "at the moment",
+              "meaning": "目前"
+            },
+            {
+              "w": "a lack of",
+              "meaning": "缺乏"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s18",
+          "para": 5,
+          "en": "The three Ds – death, debt and divorce – still deliver works of art to the market.",
+          "cn": "3D——死亡、债务和离婚——依然是将艺术品推向市场的三大因素。",
+          "words": [
+            {
+              "w": "deliver",
+              "phonetic": "/dɪˈlɪvə/",
+              "meaning": "v. 输送，交付"
+            }
+          ]
+        },
+        {
+          "id": "2010_text1_s19",
+          "para": 5,
+          "en": "But anyone who does not have to sell is keeping away, waiting for confidence to return.",
+          "cn": "但那些不是非卖不可的人都在远离市场，等待市场信心的回归。",
+          "words": [
+            {
+              "w": "keeping away",
+              "meaning": "远离，回避"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2010_text1_q1", "number": 21, "qtype": "推理题", "stem": "In the first paragraph, Damien Hirst's sale was referred to as \"a last victory\" because ______.", "stem_cn": "第一段中，达米恩·赫斯特的作品拍卖被称作\"最后的胜利\"是因为______。", "options": { "A": "the art market had witnessed a succession of victories", "B": "the auctioneer finally got the two pieces at the highest bids", "C": "Beautiful Inside My Head Forever won over all masterpieces", "D": "it was successfully made just before the world financial crisis" }, "options_cn": { "A": "艺术品市场此前见证了一系列胜利", "B": "拍卖商最终以最高出价得到那两件作品", "C": "\"在我脑海，美丽永恒\"胜过了所有杰作", "D": "它恰好在世界金融危机爆发前成功举办" }, "answer": "D", "explanation": "定位第一段③④句：It was a last victory 后紧接\"拍卖师喊价的同时，雷曼兄弟申请破产\"。雷曼破产标志 2008 年金融危机开始，此后市场大幅走弱（第三段），故这场拍卖成为由盛转衰前的最后胜利，D 正确。A 无文中依据；B 扭曲 All but two pieces sold（两件未拍出，而非高价拍得）；C 曲解，该短语是拍卖会主题而非参与比较的作品。", "related_sentences": ["2010_text1_s03", "2010_text1_s04"] },
-        { "id": "2010_text1_q2", "number": 22, "qtype": "推理题", "stem": "By saying \"spending of any sort became deeply unfashionable\" (Line 1-2, Para. 3), the author suggests that ______.", "stem_cn": "作者说\"任何形式的消费都变得极不合时宜\"（第三段 1-2 行），旨在暗示______。", "options": { "A": "collectors were no longer actively involved in art-market auctions", "B": "people stopped every kind of spending and stayed away from galleries", "C": "art collection as a fashion had lost its appeal to a great extent", "D": "works of art in general had gone out of fashion so they were not worth buying" }, "options_cn": { "A": "收藏家不再积极参与艺术品市场的拍卖", "B": "人们停止了一切消费并远离画廊", "C": "艺术品收藏作为一种时尚已在很大程度上失去吸引力", "D": "艺术品总体上已经过时，因而不值得购买" }, "answer": "A", "explanation": "定位第三段：首句之后紧接\"在艺术界这意味着收藏家远离画廊和拍卖厅\"，并以销售额暴跌佐证，即收藏家消费趋于谨慎、不再积极买入，A 正确。B\"停止一切消费\"过于绝对；C、D 把\"消费低迷\"曲解为\"艺术品/收藏本身过时\"。", "related_sentences": ["2010_text1_s09", "2010_text1_s10"] },
-        { "id": "2010_text1_q3", "number": 23, "qtype": "细节题", "stem": "Which of the following statements is NOT true?", "stem_cn": "下列哪项陈述是不正确的？", "options": { "A": "Sales of contemporary art fell dramatically from 2007 to 2008.", "B": "The art market surpassed many other industries in momentum.", "C": "The art market generally went downward in various ways.", "D": "Some art dealers were awaiting better chances to come." }, "options_cn": { "A": "2007 至 2008 年当代艺术品销售额急剧下滑", "B": "艺术品市场在发展势头上超过了许多其他行业", "C": "艺术品市场以多种方式整体走低", "D": "一些艺术品商人在等待更好的时机到来" }, "answer": "B", "explanation": "逐项核对原文：第二段①句明确说市场\"已经失去发展势头\"，④句\"matched by few other industries\"说的是其汇集财富、自负与争议的方式无可比拟，并非发展势头超过其他行业，故 B 说法错误，符合题意。A 对应第二、三段的数据下滑；C 对应全文多处走低描述；D 对应末段\"等待信心回归\"。", "related_sentences": ["2010_text1_s05", "2010_text1_s08"] },
-        { "id": "2010_text1_q4", "number": 24, "qtype": "词义题", "stem": "The three Ds mentioned in the last paragraph are ______.", "stem_cn": "最后一段提到的\"三个 D\"是指______。", "options": { "A": "auction houses' favorites", "B": "contemporary trends", "C": "factors promoting artwork circulation", "D": "styles representing Impressionists" }, "options_cn": { "A": "拍卖行的最爱", "B": "当代潮流", "C": "促进艺术品流通的因素", "D": "代表印象派的风格" }, "answer": "C", "explanation": "定位末段：The three Ds – death, debt and divorce – still deliver works of art to the market，死亡、债务、离婚这三种因素（即使在市场低迷时）仍把艺术品\"输送\"到市场，即推动艺术品流通的因素，C 正确。其余选项均与文意无关。", "related_sentences": ["2010_text1_s18"] },
-        { "id": "2010_text1_q5", "number": 25, "qtype": "主旨题", "stem": "The most appropriate title for this text could be ______.", "stem_cn": "本文最合适的标题是______。", "options": { "A": "Fluctuation of Art Prices", "B": "Up-to-date Art Auctions", "C": "Art Market in Decline", "D": "Shifted Interest in Arts" }, "options_cn": { "A": "艺术品价格的波动", "B": "最新的艺术品拍卖", "C": "衰退中的艺术品市场", "D": "对艺术兴趣的转移" }, "answer": "C", "explanation": "主旨题。第一段以\"最后的胜利\"引出艺术品市场由盛转衰的话题，第二段回顾衰退前兆，第三、四段描述衰退表现，末两段给出业内评价。全文围绕艺术品市场的衰退展开，C 准确概括。A 只涉及价格波动这一局部；B、D 均偏离中心。", "related_sentences": ["2010_text1_s01", "2010_text1_s09"] }
+        {
+          "id": "2010_text1_q1",
+          "number": 21,
+          "qtype": "推理题",
+          "stem": "In the first paragraph, Damien Hirst's sale was referred to as \"a last victory\" because ______.",
+          "stem_cn": "第一段中，达米恩·赫斯特的作品拍卖被称作\"最后的胜利\"是因为______。",
+          "options": {
+            "A": "the art market had witnessed a succession of victories",
+            "B": "the auctioneer finally got the two pieces at the highest bids",
+            "C": "Beautiful Inside My Head Forever won over all masterpieces",
+            "D": "it was successfully made just before the world financial crisis"
+          },
+          "options_cn": {
+            "A": "艺术品市场此前见证了一系列胜利",
+            "B": "拍卖商最终以最高出价得到那两件作品",
+            "C": "\"在我脑海，美丽永恒\"胜过了所有杰作",
+            "D": "它恰好在世界金融危机爆发前成功举办"
+          },
+          "answer": "D",
+          "explanation": "定位第一段③④句：It was a last victory 后紧接\"拍卖师喊价的同时，雷曼兄弟申请破产\"。雷曼破产标志 2008 年金融危机开始，此后市场大幅走弱（第三段），故这场拍卖成为由盛转衰前的最后胜利，D 正确。A 无文中依据；B 扭曲 All but two pieces sold（两件未拍出，而非高价拍得）；C 曲解，该短语是拍卖会主题而非参与比较的作品。",
+          "related_sentences": [
+            "2010_text1_s03",
+            "2010_text1_s04"
+          ]
+        },
+        {
+          "id": "2010_text1_q2",
+          "number": 22,
+          "qtype": "推理题",
+          "stem": "By saying \"spending of any sort became deeply unfashionable\" (Line 1-2, Para. 3), the author suggests that ______.",
+          "stem_cn": "作者说\"任何形式的消费都变得极不合时宜\"（第三段 1-2 行），旨在暗示______。",
+          "options": {
+            "A": "collectors were no longer actively involved in art-market auctions",
+            "B": "people stopped every kind of spending and stayed away from galleries",
+            "C": "art collection as a fashion had lost its appeal to a great extent",
+            "D": "works of art in general had gone out of fashion so they were not worth buying"
+          },
+          "options_cn": {
+            "A": "收藏家不再积极参与艺术品市场的拍卖",
+            "B": "人们停止了一切消费并远离画廊",
+            "C": "艺术品收藏作为一种时尚已在很大程度上失去吸引力",
+            "D": "艺术品总体上已经过时，因而不值得购买"
+          },
+          "answer": "A",
+          "explanation": "定位第三段：首句之后紧接\"在艺术界这意味着收藏家远离画廊和拍卖厅\"，并以销售额暴跌佐证，即收藏家消费趋于谨慎、不再积极买入，A 正确。B\"停止一切消费\"过于绝对；C、D 把\"消费低迷\"曲解为\"艺术品/收藏本身过时\"。",
+          "related_sentences": [
+            "2010_text1_s09",
+            "2010_text1_s10"
+          ]
+        },
+        {
+          "id": "2010_text1_q3",
+          "number": 23,
+          "qtype": "细节题",
+          "stem": "Which of the following statements is NOT true?",
+          "stem_cn": "下列哪项陈述是不正确的？",
+          "options": {
+            "A": "Sales of contemporary art fell dramatically from 2007 to 2008.",
+            "B": "The art market surpassed many other industries in momentum.",
+            "C": "The art market generally went downward in various ways.",
+            "D": "Some art dealers were awaiting better chances to come."
+          },
+          "options_cn": {
+            "A": "2007 至 2008 年当代艺术品销售额急剧下滑",
+            "B": "艺术品市场在发展势头上超过了许多其他行业",
+            "C": "艺术品市场以多种方式整体走低",
+            "D": "一些艺术品商人在等待更好的时机到来"
+          },
+          "answer": "B",
+          "explanation": "逐项核对原文：第二段①句明确说市场\"已经失去发展势头\"，④句\"matched by few other industries\"说的是其汇集财富、自负与争议的方式无可比拟，并非发展势头超过其他行业，故 B 说法错误，符合题意。A 对应第二、三段的数据下滑；C 对应全文多处走低描述；D 对应末段\"等待信心回归\"。",
+          "related_sentences": [
+            "2010_text1_s05",
+            "2010_text1_s08"
+          ]
+        },
+        {
+          "id": "2010_text1_q4",
+          "number": 24,
+          "qtype": "词义题",
+          "stem": "The three Ds mentioned in the last paragraph are ______.",
+          "stem_cn": "最后一段提到的\"三个 D\"是指______。",
+          "options": {
+            "A": "auction houses' favorites",
+            "B": "contemporary trends",
+            "C": "factors promoting artwork circulation",
+            "D": "styles representing Impressionists"
+          },
+          "options_cn": {
+            "A": "拍卖行的最爱",
+            "B": "当代潮流",
+            "C": "促进艺术品流通的因素",
+            "D": "代表印象派的风格"
+          },
+          "answer": "C",
+          "explanation": "定位末段：The three Ds – death, debt and divorce – still deliver works of art to the market，死亡、债务、离婚这三种因素（即使在市场低迷时）仍把艺术品\"输送\"到市场，即推动艺术品流通的因素，C 正确。其余选项均与文意无关。",
+          "related_sentences": [
+            "2010_text1_s18"
+          ]
+        },
+        {
+          "id": "2010_text1_q5",
+          "number": 25,
+          "qtype": "主旨题",
+          "stem": "The most appropriate title for this text could be ______.",
+          "stem_cn": "本文最合适的标题是______。",
+          "options": {
+            "A": "Fluctuation of Art Prices",
+            "B": "Up-to-date Art Auctions",
+            "C": "Art Market in Decline",
+            "D": "Shifted Interest in Arts"
+          },
+          "options_cn": {
+            "A": "艺术品价格的波动",
+            "B": "最新的艺术品拍卖",
+            "C": "衰退中的艺术品市场",
+            "D": "对艺术兴趣的转移"
+          },
+          "answer": "C",
+          "explanation": "主旨题。第一段以\"最后的胜利\"引出艺术品市场由盛转衰的话题，第二段回顾衰退前兆，第三、四段描述衰退表现，末两段给出业内评价。全文围绕艺术品市场的衰退展开，C 准确概括。A 只涉及价格波动这一局部；B、D 均偏离中心。",
+          "related_sentences": [
+            "2010_text1_s01",
+            "2010_text1_s09"
+          ]
+        }
       ]
     },
     {
@@ -45,29 +447,390 @@
       "topic": "\"他不跟我说话\"：夫妻交流模式与婚姻危机",
       "source": "2010 年考研英语（二）Text 2 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2010_text2_s01", "para": 1, "en": "I was addressing a small gathering in a suburban Virginia living room – a women's group that had invited men to join them.", "cn": "在弗吉尼亚郊区一个住所的客厅里，我正在一次小型聚会上发言——那是一个女性团体，但也邀请了男性参加。", "words": [ { "w": "addressing", "phonetic": "/əˈdresɪŋ/", "meaning": "v. 向……发表讲话" }, { "w": "gathering", "phonetic": "/ˈɡæðərɪŋ/", "meaning": "n. 聚会" } ] },
-        { "id": "2010_text2_s02", "para": 1, "en": "Throughout the evening, one man had been particularly talkative, frequently offering ideas and anecdotes, while his wife sat silently beside him on the couch.", "cn": "整个晚上，有位男士表现得特别健谈，频繁地发表观点、讲述趣闻轶事，而他的妻子则静静地坐在他身旁的沙发上。", "words": [ { "w": "talkative", "phonetic": "/ˈtɔːkətɪv/", "meaning": "adj. 健谈的" }, { "w": "anecdotes", "phonetic": "/ˈænɪkdəʊts/", "meaning": "n. 轶事，趣闻" } ] },
-        { "id": "2010_text2_s03", "para": 1, "en": "Toward the end of the evening, I commented that women frequently complain that their husbands don't talk to them.", "cn": "聚会接近尾声时，我评论说，女人经常会抱怨丈夫不与自己交谈。", "words": [ { "w": "commented", "phonetic": "/ˈkɒmentɪd/", "meaning": "v. 评论" } ] },
-        { "id": "2010_text2_s04", "para": 1, "en": "This man quickly nodded in agreement.", "cn": "这位男士立即点头表示同意。", "words": [ { "w": "nodded in agreement", "meaning": "点头赞同" } ] },
-        { "id": "2010_text2_s05", "para": 1, "en": "He gestured toward his wife and said, \"She's the talker in our family.\"", "cn": "他指了指妻子说：“她是我们家的话匣子。”", "words": [ { "w": "gestured", "phonetic": "/ˈdʒestʃəd/", "meaning": "v. 打手势示意" } ] },
-        { "id": "2010_text2_s06", "para": 1, "en": "The room burst into laughter; the man looked puzzled and hurt.", "cn": "满屋哄堂大笑；这位男士一脸茫然和受伤。", "words": [ { "w": "burst into laughter", "meaning": "突然大笑" }, { "w": "puzzled", "phonetic": "/ˈpʌzld/", "meaning": "adj. 困惑的" } ] },
-        { "id": "2010_text2_s07", "para": 1, "en": "\"It's true,\" he explained. \"When I come home from work I have nothing to say. If she didn't keep the conversation going, we'd spend the whole evening in silence.\"", "cn": "“这是真的，”他解释说。“我下班回家后总是无话可说。如果她不一直和我说话，我们整晚都会在沉默中度过。”", "words": [ { "w": "keep the conversation going", "meaning": "让谈话继续下去" }, { "w": "in silence", "meaning": "沉默地" } ] },
-        { "id": "2010_text2_s08", "para": 2, "en": "This episode crystallizes the irony that although American men tend to talk more than women in public situations, they often talk less at home.", "cn": "这段情节证明了一种具有讽刺意味的现象确实存在：尽管美国男性在公共场合常常比女性更加健谈，在家里却比妻子话少。", "words": [ { "w": "crystallizes", "phonetic": "/ˈkrɪstəlaɪzɪz/", "meaning": "v. 使具体化，使清晰呈现" }, { "w": "irony", "phonetic": "/ˈaɪrəni/", "meaning": "n. 讽刺，反讽" } ] },
-        { "id": "2010_text2_s09", "para": 2, "en": "And this pattern is wreaking havoc with marriage.", "cn": "而正是这种模式正在严重破坏婚姻。", "words": [ { "w": "wreaking havoc with", "meaning": "严重破坏，造成巨大危害" } ] },
-        { "id": "2010_text2_s10", "para": 3, "en": "The pattern was observed by political scientist Andrew Hacker in the late 1970s.", "cn": "这种模式是政治学家安德鲁·哈克在 20 世纪 70 年代末观察到的。", "words": [ { "w": "observed", "phonetic": "/əbˈzɜːvd/", "meaning": "v. 观察到" } ] },
-        { "id": "2010_text2_s11", "para": 3, "en": "Sociologist Catherine Kohler Riessman reports in her new book Divorce Talk that most of the women she interviewed – but only a few of the men – gave lack of communication as the reason for their divorces.", "cn": "社会学家凯瑟琳·科勒·里斯曼在她的新书《离婚谈话》中提到，她所访问的绝大多数女性将其离婚归咎于“缺乏沟通”，但只有极少数男性如此认为。", "words": [ { "w": "lack of communication", "meaning": "缺乏沟通" }, { "w": "Sociologist", "phonetic": "/ˌsəʊsiˈɒlədʒɪst/", "meaning": "n. 社会学家" } ] },
-        { "id": "2010_text2_s12", "para": 3, "en": "Given the current divorce rate of nearly 50 percent, that amounts to millions of cases in the United States every year – a virtual epidemic of failed conversation.", "cn": "鉴于美国目前接近 50% 的离婚率，这（缺乏沟通）每年会导致美国几百万离婚案例的产生——可谓是沟通不良引发的传染病。", "words": [ { "w": "Given", "phonetic": "/ˈɡɪvn/", "meaning": "prep. 考虑到" }, { "w": "amounts to", "meaning": "相当于，总计达" }, { "w": "epidemic", "phonetic": "/ˌepɪˈdemɪk/", "meaning": "n. 流行病" } ] },
-        { "id": "2010_text2_s13", "para": 4, "en": "In my own research, complaints from women about their husbands most often focused not on tangible inequities such as having given up the chance for a career to accompany a husband to his, or doing far more than their share of daily life-support work like cleaning, cooking and social arrangements.", "cn": "据我的个人研究，女性对丈夫的抱怨大多不是集中在一些看得见摸得着的不平等现象，例如为陪伴丈夫追随他的事业而放弃了发展自己事业的机会，或者她们所承担的日常生活琐事远远超过她们份内的部分，如清洁、下厨和安排社交活动。", "words": [ { "w": "tangible", "phonetic": "/ˈtændʒəbl/", "meaning": "adj. 实实在在的，有形的" }, { "w": "inequities", "phonetic": "/ɪnˈekwətiz/", "meaning": "n. 不公平" }, { "w": "given up", "meaning": "放弃" } ] },
-        { "id": "2010_text2_s14", "para": 4, "en": "Instead, they focused on communication: \"He doesn't listen to me.\" \"He doesn't talk to me.\"", "cn": "相反，她们的抱怨总是集中在交流问题上，如“他不听我说话”、“他不和我交谈”。", "words": [ { "w": "focused on", "meaning": "集中于" } ] },
-        { "id": "2010_text2_s15", "para": 4, "en": "I found, as Hacker observed years before, that most wives want their husbands to be, first and foremost, conversational partners, but few husbands share this expectation of their wives.", "cn": "我发现，正如哈克多年前所观察到的一样，多数妻子都期望丈夫首先是自己的交谈伙伴，但是很少有丈夫对妻子抱有同样的期望。", "words": [ { "w": "first and foremost", "meaning": "首要地，首先" }, { "w": "conversational partners", "meaning": "谈话伴侣" } ] },
-        { "id": "2010_text2_s16", "para": 5, "en": "In short, the image that best represents the current crisis is the stereotypical cartoon scene of a man sitting at the breakfast table with a newspaper held up in front of his face, while a woman glares at the back of it, wanting to talk.", "cn": "简言之，最能形象表现目前这种危机的是这样一幅经典漫画场景：一个男人坐在早餐桌边，手中报纸挡着他的脸，一个女人怒视着报纸背面，很想交谈。", "words": [ { "w": "In short", "meaning": "简而言之" }, { "w": "stereotypical", "phonetic": "/ˌsteriəˈtɪpɪkl/", "meaning": "adj. 老套的，刻板印象的" }, { "w": "glares at", "meaning": "怒视，瞪着" } ] }
+        {
+          "id": "2010_text2_s01",
+          "para": 1,
+          "en": "I was addressing a small gathering in a suburban Virginia living room – a women's group that had invited men to join them.",
+          "cn": "在弗吉尼亚郊区一个住所的客厅里，我正在一次小型聚会上发言——那是一个女性团体，但也邀请了男性参加。",
+          "words": [
+            {
+              "w": "addressing",
+              "phonetic": "/əˈdresɪŋ/",
+              "meaning": "v. 向……发表讲话"
+            },
+            {
+              "w": "gathering",
+              "phonetic": "/ˈɡæðərɪŋ/",
+              "meaning": "n. 聚会"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s02",
+          "para": 1,
+          "en": "Throughout the evening, one man had been particularly talkative, frequently offering ideas and anecdotes, while his wife sat silently beside him on the couch.",
+          "cn": "整个晚上，有位男士表现得特别健谈，频繁地发表观点、讲述趣闻轶事，而他的妻子则静静地坐在他身旁的沙发上。",
+          "words": [
+            {
+              "w": "talkative",
+              "phonetic": "/ˈtɔːkətɪv/",
+              "meaning": "adj. 健谈的"
+            },
+            {
+              "w": "anecdotes",
+              "phonetic": "/ˈænɪkdəʊts/",
+              "meaning": "n. 轶事，趣闻"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s03",
+          "para": 1,
+          "en": "Toward the end of the evening, I commented that women frequently complain that their husbands don't talk to them.",
+          "cn": "聚会接近尾声时，我评论说，女人经常会抱怨丈夫不与自己交谈。",
+          "words": [
+            {
+              "w": "commented",
+              "phonetic": "/ˈkɒmentɪd/",
+              "meaning": "v. 评论"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s04",
+          "para": 1,
+          "en": "This man quickly nodded in agreement.",
+          "cn": "这位男士立即点头表示同意。",
+          "words": [
+            {
+              "w": "nodded in agreement",
+              "meaning": "点头赞同"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s05",
+          "para": 1,
+          "en": "He gestured toward his wife and said, \"She's the talker in our family.\"",
+          "cn": "他指了指妻子说：“她是我们家的话匣子。”",
+          "words": [
+            {
+              "w": "gestured",
+              "phonetic": "/ˈdʒestʃəd/",
+              "meaning": "v. 打手势示意"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s06",
+          "para": 1,
+          "en": "The room burst into laughter; the man looked puzzled and hurt.",
+          "cn": "满屋哄堂大笑；这位男士一脸茫然和受伤。",
+          "words": [
+            {
+              "w": "burst into laughter",
+              "meaning": "突然大笑"
+            },
+            {
+              "w": "puzzled",
+              "phonetic": "/ˈpʌzld/",
+              "meaning": "adj. 困惑的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s07",
+          "para": 1,
+          "en": "\"It's true,\" he explained. \"When I come home from work I have nothing to say. If she didn't keep the conversation going, we'd spend the whole evening in silence.\"",
+          "cn": "“这是真的，”他解释说。“我下班回家后总是无话可说。如果她不一直和我说话，我们整晚都会在沉默中度过。”",
+          "words": [
+            {
+              "w": "keep the conversation going",
+              "meaning": "让谈话继续下去"
+            },
+            {
+              "w": "in silence",
+              "meaning": "沉默地"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s08",
+          "para": 2,
+          "en": "This episode crystallizes the irony that although American men tend to talk more than women in public situations, they often talk less at home.",
+          "cn": "这段情节证明了一种具有讽刺意味的现象确实存在：尽管美国男性在公共场合常常比女性更加健谈，在家里却比妻子话少。",
+          "words": [
+            {
+              "w": "crystallizes",
+              "phonetic": "/ˈkrɪstəlaɪzɪz/",
+              "meaning": "v. 使具体化，使清晰呈现"
+            },
+            {
+              "w": "irony",
+              "phonetic": "/ˈaɪrəni/",
+              "meaning": "n. 讽刺，反讽"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s09",
+          "para": 2,
+          "en": "And this pattern is wreaking havoc with marriage.",
+          "cn": "而正是这种模式正在严重破坏婚姻。",
+          "words": [
+            {
+              "w": "wreaking havoc with",
+              "meaning": "严重破坏，造成巨大危害"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s10",
+          "para": 3,
+          "en": "The pattern was observed by political scientist Andrew Hacker in the late 1970s.",
+          "cn": "这种模式是政治学家安德鲁·哈克在 20 世纪 70 年代末观察到的。",
+          "words": [
+            {
+              "w": "observed",
+              "phonetic": "/əbˈzɜːvd/",
+              "meaning": "v. 观察到"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s11",
+          "para": 3,
+          "en": "Sociologist Catherine Kohler Riessman reports in her new book Divorce Talk that most of the women she interviewed – but only a few of the men – gave lack of communication as the reason for their divorces.",
+          "cn": "社会学家凯瑟琳·科勒·里斯曼在她的新书《离婚谈话》中提到，她所访问的绝大多数女性将其离婚归咎于“缺乏沟通”，但只有极少数男性如此认为。",
+          "words": [
+            {
+              "w": "lack of communication",
+              "meaning": "缺乏沟通"
+            },
+            {
+              "w": "Sociologist",
+              "phonetic": "/ˌsəʊsiˈɒlədʒɪst/",
+              "meaning": "n. 社会学家"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s12",
+          "para": 3,
+          "en": "Given the current divorce rate of nearly 50 percent, that amounts to millions of cases in the United States every year – a virtual epidemic of failed conversation.",
+          "cn": "鉴于美国目前接近 50% 的离婚率，这（缺乏沟通）每年会导致美国几百万离婚案例的产生——可谓是沟通不良引发的传染病。",
+          "words": [
+            {
+              "w": "Given",
+              "phonetic": "/ˈɡɪvn/",
+              "meaning": "prep. 考虑到"
+            },
+            {
+              "w": "amounts to",
+              "meaning": "相当于，总计达"
+            },
+            {
+              "w": "epidemic",
+              "phonetic": "/ˌepɪˈdemɪk/",
+              "meaning": "n. 流行病"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s13",
+          "para": 4,
+          "en": "In my own research, complaints from women about their husbands most often focused not on tangible inequities such as having given up the chance for a career to accompany a husband to his, or doing far more than their share of daily life-support work like cleaning, cooking and social arrangements.",
+          "cn": "据我的个人研究，女性对丈夫的抱怨大多不是集中在一些看得见摸得着的不平等现象，例如为陪伴丈夫追随他的事业而放弃了发展自己事业的机会，或者她们所承担的日常生活琐事远远超过她们份内的部分，如清洁、下厨和安排社交活动。",
+          "words": [
+            {
+              "w": "tangible",
+              "phonetic": "/ˈtændʒəbl/",
+              "meaning": "adj. 实实在在的，有形的"
+            },
+            {
+              "w": "inequities",
+              "phonetic": "/ɪnˈekwətiz/",
+              "meaning": "n. 不公平"
+            },
+            {
+              "w": "given up",
+              "meaning": "放弃"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s14",
+          "para": 4,
+          "en": "Instead, they focused on communication: \"He doesn't listen to me.\" \"He doesn't talk to me.\"",
+          "cn": "相反，她们的抱怨总是集中在交流问题上，如“他不听我说话”、“他不和我交谈”。",
+          "words": [
+            {
+              "w": "focused on",
+              "meaning": "集中于"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s15",
+          "para": 4,
+          "en": "I found, as Hacker observed years before, that most wives want their husbands to be, first and foremost, conversational partners, but few husbands share this expectation of their wives.",
+          "cn": "我发现，正如哈克多年前所观察到的一样，多数妻子都期望丈夫首先是自己的交谈伙伴，但是很少有丈夫对妻子抱有同样的期望。",
+          "words": [
+            {
+              "w": "first and foremost",
+              "meaning": "首要地，首先"
+            },
+            {
+              "w": "conversational partners",
+              "meaning": "谈话伴侣"
+            }
+          ]
+        },
+        {
+          "id": "2010_text2_s16",
+          "para": 5,
+          "en": "In short, the image that best represents the current crisis is the stereotypical cartoon scene of a man sitting at the breakfast table with a newspaper held up in front of his face, while a woman glares at the back of it, wanting to talk.",
+          "cn": "简言之，最能形象表现目前这种危机的是这样一幅经典漫画场景：一个男人坐在早餐桌边，手中报纸挡着他的脸，一个女人怒视着报纸背面，很想交谈。",
+          "words": [
+            {
+              "w": "In short",
+              "meaning": "简而言之"
+            },
+            {
+              "w": "stereotypical",
+              "phonetic": "/ˌsteriəˈtɪpɪkl/",
+              "meaning": "adj. 老套的，刻板印象的"
+            },
+            {
+              "w": "glares at",
+              "meaning": "怒视，瞪着"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2010_text2_q1", "number": 26, "qtype": "细节题", "stem": "What is most wives' main expectation of their husbands?", "stem_cn": "大多数妻子对丈夫的主要期待是什么？", "options": { "A": "Talking to them.", "B": "Trusting them.", "C": "Supporting their careers.", "D": "Sharing housework." }, "options_cn": { "A": "跟她们说话", "B": "信任她们", "C": "支持她们的事业", "D": "分担家务" }, "answer": "A", "explanation": "由题干 expectation 定位第四段末句：most wives want their husbands to be, first and foremost, conversational partners——大多数妻子希望丈夫首先成为谈话伴侣，即希望丈夫跟自己交流，A 正确。C、D 恰是第四段指出\"抱怨并不集中于\"的方面；B 无依据。", "related_sentences": ["2010_text2_s15"] },
-        { "id": "2010_text2_q2", "number": 27, "qtype": "词义题", "stem": "Judging from the context, the phrase \"wreaking havoc\" (Line 3, Para. 2) most probably means ______.", "stem_cn": "根据上下文判断，第二段第 3 行短语\"wreaking havoc\"的意思最可能是______。", "options": { "A": "generating motivation", "B": "exerting influence", "C": "causing damage", "D": "creating pressure" }, "options_cn": { "A": "产生动力", "B": "施加影响", "C": "造成破坏", "D": "制造压力" }, "answer": "C", "explanation": "短语所在句说\"这种模式正在______婚姻\"。上文指出该模式为\"男性在公共场合话多、在家话少\"，下文第三段则说明大多数女性把离婚归因于缺乏沟通、每年数百万婚姻因此解体。可见该模式正在\"危害/破坏\"婚姻，C 正确。B\"施加影响\"程度不足，未体现负面破坏性。", "related_sentences": ["2010_text2_s09", "2010_text2_s11"] },
-        { "id": "2010_text2_q3", "number": 28, "qtype": "细节题", "stem": "All of the following are true EXCEPT ______.", "stem_cn": "下列各项均正确，除了______。", "options": { "A": "men tend to talk more in public than women", "B": "nearly 50 percent of recent divorces are caused by failed conversation", "C": "women attach much importance to communication between couples", "D": "a female tends to be more talkative at home than her spouse" }, "options_cn": { "A": "男性在公共场合往往比女性话多", "B": "近来近 50% 的离婚是由谈话失败导致的", "C": "女性非常重视夫妻间的沟通", "D": "女性在家中往往比其配偶更健谈" }, "answer": "B", "explanation": "逐项对照：A、D 符合第二段首句\"男性公共场合更健谈、在家话少\"；C 符合第三段\"绝大多数女性把离婚归因于缺乏沟通\"。B 偷换概念：原文说离婚率接近 50%（即所有夫妻中近半离婚），其中很多源于沟通失败，但并未说\"50% 的离婚由谈话失败造成\"，故 B 与原文不符，为答案。", "related_sentences": ["2010_text2_s08", "2010_text2_s12"] },
-        { "id": "2010_text2_q4", "number": 29, "qtype": "主旨题", "stem": "Which of the following can best summarize the main idea of this text?", "stem_cn": "下列哪项最能概括本文的主旨？", "options": { "A": "The moral decaying deserves more research by sociologists.", "B": "Marriage break-up stems from sex inequalities.", "C": "Husband and wife have different expectations from their marriage.", "D": "Conversational patterns between man and wife are different." }, "options_cn": { "A": "道德败坏值得社会学家更多研究", "B": "婚姻破裂源于性别不平等", "C": "夫妻双方对婚姻的期待不同", "D": "夫妻双方的交谈模式不同" }, "answer": "D", "explanation": "全文脉络：由聚会场景引出普遍现象\"男性公共场合健谈、在家话少，且该交流模式正危害婚姻\"，随后三段分别以他人研究、作者自己的研究和经典漫画加以论证，归根结底围绕\"夫妻双方交谈模式不同\"展开，D 正确。A 文中未涉及道德问题；B 第四段明确说抱怨不集中于不公；C 只是第四段局部信息。", "related_sentences": ["2010_text2_s08"] },
-        { "id": "2010_text2_q5", "number": 30, "qtype": "推理题", "stem": "In the following part immediately after this text, the author will most probably focus on ______.", "stem_cn": "在本文之后紧接着的部分，作者最可能着重讨论______。", "options": { "A": "a vivid account of the new book Divorce Talk", "B": "a detailed description of the stereotypical cartoon", "C": "other possible reasons for a high divorce rate in the U.S.", "D": "a brief introduction to the political scientist Andrew Hacker" }, "options_cn": { "A": "对新书《离婚谈话》的生动介绍", "B": "对那幅老套漫画的详细描述", "C": "美国高离婚率的其他可能原因", "D": "对政治学家安德鲁·哈克的简要介绍" }, "answer": "B", "explanation": "文章末段刚提出\"最能代表当前危机的是那幅老套的漫画场景\"并做了简笔勾勒。根据篇章连贯性原则，作者接下来很可能围绕这幅漫画展开详细描述，B 正确。A、D 涉及的书和人物在第三段已交代完毕；C 偏离\"沟通模式\"这一中心。", "related_sentences": ["2010_text2_s16"] }
+        {
+          "id": "2010_text2_q1",
+          "number": 26,
+          "qtype": "细节题",
+          "stem": "What is most wives' main expectation of their husbands?",
+          "stem_cn": "大多数妻子对丈夫的主要期待是什么？",
+          "options": {
+            "A": "Talking to them.",
+            "B": "Trusting them.",
+            "C": "Supporting their careers.",
+            "D": "Sharing housework."
+          },
+          "options_cn": {
+            "A": "跟她们说话",
+            "B": "信任她们",
+            "C": "支持她们的事业",
+            "D": "分担家务"
+          },
+          "answer": "A",
+          "explanation": "由题干 expectation 定位第四段末句：most wives want their husbands to be, first and foremost, conversational partners——大多数妻子希望丈夫首先成为谈话伴侣，即希望丈夫跟自己交流，A 正确。C、D 恰是第四段指出\"抱怨并不集中于\"的方面；B 无依据。",
+          "related_sentences": [
+            "2010_text2_s15"
+          ]
+        },
+        {
+          "id": "2010_text2_q2",
+          "number": 27,
+          "qtype": "词义题",
+          "stem": "Judging from the context, the phrase \"wreaking havoc\" (Line 3, Para. 2) most probably means ______.",
+          "stem_cn": "根据上下文判断，第二段第 3 行短语\"wreaking havoc\"的意思最可能是______。",
+          "options": {
+            "A": "generating motivation",
+            "B": "exerting influence",
+            "C": "causing damage",
+            "D": "creating pressure"
+          },
+          "options_cn": {
+            "A": "产生动力",
+            "B": "施加影响",
+            "C": "造成破坏",
+            "D": "制造压力"
+          },
+          "answer": "C",
+          "explanation": "短语所在句说\"这种模式正在______婚姻\"。上文指出该模式为\"男性在公共场合话多、在家话少\"，下文第三段则说明大多数女性把离婚归因于缺乏沟通、每年数百万婚姻因此解体。可见该模式正在\"危害/破坏\"婚姻，C 正确。B\"施加影响\"程度不足，未体现负面破坏性。",
+          "related_sentences": [
+            "2010_text2_s09",
+            "2010_text2_s11"
+          ]
+        },
+        {
+          "id": "2010_text2_q3",
+          "number": 28,
+          "qtype": "细节题",
+          "stem": "All of the following are true EXCEPT ______.",
+          "stem_cn": "下列各项均正确，除了______。",
+          "options": {
+            "A": "men tend to talk more in public than women",
+            "B": "nearly 50 percent of recent divorces are caused by failed conversation",
+            "C": "women attach much importance to communication between couples",
+            "D": "a female tends to be more talkative at home than her spouse"
+          },
+          "options_cn": {
+            "A": "男性在公共场合往往比女性话多",
+            "B": "近来近 50% 的离婚是由谈话失败导致的",
+            "C": "女性非常重视夫妻间的沟通",
+            "D": "女性在家中往往比其配偶更健谈"
+          },
+          "answer": "B",
+          "explanation": "逐项对照：A、D 符合第二段首句\"男性公共场合更健谈、在家话少\"；C 符合第三段\"绝大多数女性把离婚归因于缺乏沟通\"。B 偷换概念：原文说离婚率接近 50%（即所有夫妻中近半离婚），其中很多源于沟通失败，但并未说\"50% 的离婚由谈话失败造成\"，故 B 与原文不符，为答案。",
+          "related_sentences": [
+            "2010_text2_s08",
+            "2010_text2_s12"
+          ]
+        },
+        {
+          "id": "2010_text2_q4",
+          "number": 29,
+          "qtype": "主旨题",
+          "stem": "Which of the following can best summarize the main idea of this text?",
+          "stem_cn": "下列哪项最能概括本文的主旨？",
+          "options": {
+            "A": "The moral decaying deserves more research by sociologists.",
+            "B": "Marriage break-up stems from sex inequalities.",
+            "C": "Husband and wife have different expectations from their marriage.",
+            "D": "Conversational patterns between man and wife are different."
+          },
+          "options_cn": {
+            "A": "道德败坏值得社会学家更多研究",
+            "B": "婚姻破裂源于性别不平等",
+            "C": "夫妻双方对婚姻的期待不同",
+            "D": "夫妻双方的交谈模式不同"
+          },
+          "answer": "D",
+          "explanation": "全文脉络：由聚会场景引出普遍现象\"男性公共场合健谈、在家话少，且该交流模式正危害婚姻\"，随后三段分别以他人研究、作者自己的研究和经典漫画加以论证，归根结底围绕\"夫妻双方交谈模式不同\"展开，D 正确。A 文中未涉及道德问题；B 第四段明确说抱怨不集中于不公；C 只是第四段局部信息。",
+          "related_sentences": [
+            "2010_text2_s08"
+          ]
+        },
+        {
+          "id": "2010_text2_q5",
+          "number": 30,
+          "qtype": "推理题",
+          "stem": "In the following part immediately after this text, the author will most probably focus on ______.",
+          "stem_cn": "在本文之后紧接着的部分，作者最可能着重讨论______。",
+          "options": {
+            "A": "a vivid account of the new book Divorce Talk",
+            "B": "a detailed description of the stereotypical cartoon",
+            "C": "other possible reasons for a high divorce rate in the U.S.",
+            "D": "a brief introduction to the political scientist Andrew Hacker"
+          },
+          "options_cn": {
+            "A": "对新书《离婚谈话》的生动介绍",
+            "B": "对那幅老套漫画的详细描述",
+            "C": "美国高离婚率的其他可能原因",
+            "D": "对政治学家安德鲁·哈克的简要介绍"
+          },
+          "answer": "B",
+          "explanation": "文章末段刚提出\"最能代表当前危机的是那幅老套的漫画场景\"并做了简笔勾勒。根据篇章连贯性原则，作者接下来很可能围绕这幅漫画展开详细描述，B 正确。A、D 涉及的书和人物在第三段已交代完毕；C 偏离\"沟通模式\"这一中心。",
+          "related_sentences": [
+            "2010_text2_s16"
+          ]
+        }
       ]
     },
     {
@@ -77,29 +840,421 @@
       "topic": "被制造的习惯：商家如何塑造消费行为",
       "source": "2010 年考研英语（二）Text 3 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2010_text3_s01", "para": 1, "en": "Over the past decade, many companies had perfected the art of creating automatic behaviors – habits – among consumers.", "cn": "过去十年来，许多公司已经把“在消费者中生成自动行为——习惯”这一艺术发展到了完美的地步。", "words": [ { "w": "perfected", "phonetic": "/pəˈfektɪd/", "meaning": "v. 使完善，使精通" }, { "w": "automatic behaviors", "meaning": "自动化行为" } ] },
-        { "id": "2010_text3_s02", "para": 1, "en": "These habits have helped companies earn billions of dollars when customers eat snacks or wipe counters almost without thinking, often in response to a carefully designed set of daily cues.", "cn": "当消费者响应一系列精心设计的日常暗示、几乎不假思索地吃零食或擦桌台之时，这些习惯已经帮助公司赚取了数十亿美元。", "words": [ { "w": "in response to", "meaning": "作为对……的反应" }, { "w": "cues", "phonetic": "/kjuːz/", "meaning": "n. 暗示，提示" } ] },
-        { "id": "2010_text3_s03", "para": 2, "en": "\"There are fundamental public health problems, like dirty hands instead of a soap habit, that remain killers only because we can't figure out how to change people's habits,\" said Dr. Curtis, the director of the Hygiene Center at the London School of Hygiene & Tropical Medicine.", "cn": "伦敦卫生和热带医药学院卫生中心主任柯提斯博士称：“一些基本的公共卫生问题，比如说，手脏了却没有养成用肥皂清洗的习惯，只因为我们无法弄清如何改变人们的习惯，这些问题才在继续夺取人们的生命。", "words": [ { "w": "figure out", "meaning": "想出，弄明白" }, { "w": "fundamental", "phonetic": "/ˌfʌndəˈmentl/", "meaning": "adj. 根本的" } ] },
-        { "id": "2010_text3_s04", "para": 2, "en": "\"We wanted to learn from private industry how to create new behaviors that happen automatically.\"", "cn": "我们想要向私营企业学习如何塑造新的自动行为。”", "words": [ { "w": "private industry", "meaning": "私营企业" } ] },
-        { "id": "2010_text3_s05", "para": 3, "en": "The companies that Dr. Curtis turned to – Procter & Gamble, Colgate-Palmolive and Unilever – had invested hundreds of millions of dollars finding the subtle cues in consumers' lives that corporations could use to introduce new routines.", "cn": "柯提斯博士求助的这些公司——宝洁、高露洁和联合利华——曾投资几亿美元用于发掘消费者生活中的微妙暗示，并利用它们引入新惯例。", "words": [ { "w": "turned to", "meaning": "求助于" }, { "w": "subtle", "phonetic": "/ˈsʌtl/", "meaning": "adj. 微妙的，不易察觉的" }, { "w": "routines", "phonetic": "/ruːˈtiːnz/", "meaning": "n. 惯例，例行之事" } ] },
-        { "id": "2010_text3_s06", "para": 4, "en": "If you look hard enough, you'll find that many of the products we use every day – chewing gums, skin moisturizers, disinfecting wipes, air fresheners, water purifiers, health snacks, teeth whiteners, fabric softeners, vitamins – are results of manufactured habits.", "cn": "如果你足够仔细地观察，你会发现我们每天使用的很多产品——口香糖、护肤霜、消毒湿巾、空气清新剂、净水器、健康零食、牙齿美白剂、织物柔顺剂、维生素——都是人为制造习惯的结果。", "words": [ { "w": "moisturizers", "phonetic": "/ˈmɔɪstʃəraɪzəz/", "meaning": "n. 润肤霜" }, { "w": "manufactured", "phonetic": "/ˌmænjuˈfæktʃəd/", "meaning": "adj. 人为制造的" } ] },
-        { "id": "2010_text3_s07", "para": 4, "en": "A century ago, few people regularly brushed their teeth multiple times a day.", "cn": "一个世纪以前，很少有人每天定期多次刷牙。", "words": [ { "w": "multiple times", "meaning": "多次" } ] },
-        { "id": "2010_text3_s08", "para": 4, "en": "Today, because of shrewd advertising and public health campaigns, many Americans habitually give their pearly whites a cavity-preventing scrub twice a day, often with Colgate, Crest or one of the other brands.", "cn": "如今，由于精明的广告和公共卫生运动的影响，许多美国人会习惯性地每天给他们那如珍珠般洁白的牙齿做两次龋齿预防刷洗，他们使用的，往往就是高露洁、佳洁士或其他品牌之一。", "words": [ { "w": "shrewd", "phonetic": "/ʃruːd/", "meaning": "adj. 精明的" }, { "w": "habitually", "phonetic": "/həˈbɪtʃuəli/", "meaning": "adv. 习惯性地" }, { "w": "cavity", "phonetic": "/ˈkævəti/", "meaning": "n. 蛀洞，龋洞" } ] },
-        { "id": "2010_text3_s09", "para": 5, "en": "A few decades ago, many people didn't drink water outside of a meal.", "cn": "几十年之前，许多人不会在非就餐时间喝水。", "words": [ { "w": "outside of", "meaning": "在……之外" } ] },
-        { "id": "2010_text3_s10", "para": 5, "en": "Then beverage companies started bottling the production of far-off springs, and now office workers unthinkingly sip bottled water all day long.", "cn": "后来，饮料公司开始将遥远地带的泉水装入瓶中，现在办公室职员整天都在不假思索地喝着瓶装水。", "words": [ { "w": "beverage", "phonetic": "/ˈbevərɪdʒ/", "meaning": "n. 饮料" }, { "w": "all day long", "meaning": "一整天" }, { "w": "sip", "phonetic": "/sɪp/", "meaning": "v. 小口喝，啜饮" } ] },
-        { "id": "2010_text3_s11", "para": 5, "en": "Chewing gum, once bought primarily by adolescent boys, is now featured in commercials as a breath freshener and teeth cleanser for use after a meal.", "cn": "口香糖从前主要是处于青春期的男孩儿购买，而现在的商业广告中，口香糖被定位为饭后使用的口气清新剂和牙齿清洁剂。", "words": [ { "w": "featured in", "meaning": "在……中被突出展示" }, { "w": "adolescent", "phonetic": "/ˌædəˈlesnt/", "meaning": "adj. 青春期的" }, { "w": "commercials", "phonetic": "/kəˈmɜːʃlz/", "meaning": "n. 商业广告" } ] },
-        { "id": "2010_text3_s12", "para": 5, "en": "Skin moisturizers are advertised as part of morning beauty rituals, slipped in between hair brushing and putting on makeup.", "cn": "润肤霜被广告宣传成早晨美容程序的一部分，不知不觉插入梳头和化妆之间。", "words": [ { "w": "slipped in", "meaning": "悄悄插入" }, { "w": "rituals", "phonetic": "/ˈrɪtʃuəlz/", "meaning": "n. 例行程序，仪式" } ] },
-        { "id": "2010_text3_s13", "para": 6, "en": "\"Our products succeed when they become part of daily or weekly patterns,\" said Carol Berning, a consumer psychologist who recently retired from Procter & Gamble, the company that sold $76 billion of Tide, Crest and other products last year.", "cn": "最近从宝洁退休的消费心理学家卡罗尔·伯宁说：“如果能成为每天或每周的惯例，那我们的产品就成功了。”宝洁公司去年卖出了 760 亿美元的汰渍、佳洁士和其他产品。", "words": [ { "w": "psychologist", "phonetic": "/saɪˈkɒlədʒɪst/", "meaning": "n. 心理学家" }, { "w": "retired from", "meaning": "从……退休" } ] },
-        { "id": "2010_text3_s14", "para": 6, "en": "\"Creating positive habits is a huge part of improving our consumers' lives, and it's essential to making new products commercially viable.\"", "cn": "“生成积极习惯是改善消费者生活的重要部分，它也对使新产品具有商业可行性至关重要。”", "words": [ { "w": "commercially viable", "meaning": "具有商业可行性的" }, { "w": "essential", "phonetic": "/ɪˈsenʃl/", "meaning": "adj. 必不可少的" } ] },
-        { "id": "2010_text3_s15", "para": 7, "en": "Through experiments and observation, social scientists like Dr. Berning have learned that there is power in tying certain behaviors to habitual cues through ruthless advertising.", "cn": "通过实验和观察，伯宁博士等社会科学家已了解到，通过大量无休止的广告将“某些行为”与“习惯暗示”联系起来的做法是有效的。", "words": [ { "w": "tying", "phonetic": "/ˈtaɪɪŋ/", "meaning": "v. 捆绑，联系（tie 的现在分词）" }, { "w": "ruthless", "phonetic": "/ˈruːθləs/", "meaning": "adj. 无情的，不遗余力的" } ] },
-        { "id": "2010_text3_s16", "para": 7, "en": "As this new science of habit has emerged, controversies have erupted when the tactics have been used to sell questionable beauty creams or unhealthy foods.", "cn": "随着这门新兴习惯科学的兴起，这些策略被用于销售价值尚属疑问的美容霜或者不健康的食品，从而引发了激烈辩论。", "words": [ { "w": "erupted", "phonetic": "/ɪˈrʌptɪd/", "meaning": "v. 爆发" }, { "w": "questionable", "phonetic": "/ˈkwestʃənəbl/", "meaning": "adj. 可疑的，靠不住的" }, { "w": "tactics", "phonetic": "/ˈtæktɪks/", "meaning": "n. 策略，手段" } ] }
+        {
+          "id": "2010_text3_s01",
+          "para": 1,
+          "en": "Over the past decade, many companies had perfected the art of creating automatic behaviors – habits – among consumers.",
+          "cn": "过去十年来，许多公司已经把“在消费者中生成自动行为——习惯”这一艺术发展到了完美的地步。",
+          "words": [
+            {
+              "w": "perfected",
+              "phonetic": "/pəˈfektɪd/",
+              "meaning": "v. 使完善，使精通"
+            },
+            {
+              "w": "automatic behaviors",
+              "meaning": "自动化行为"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s02",
+          "para": 1,
+          "en": "These habits have helped companies earn billions of dollars when customers eat snacks or wipe counters almost without thinking, often in response to a carefully designed set of daily cues.",
+          "cn": "当消费者响应一系列精心设计的日常暗示、几乎不假思索地吃零食或擦桌台之时，这些习惯已经帮助公司赚取了数十亿美元。",
+          "words": [
+            {
+              "w": "in response to",
+              "meaning": "作为对……的反应"
+            },
+            {
+              "w": "cues",
+              "phonetic": "/kjuːz/",
+              "meaning": "n. 暗示，提示"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s03",
+          "para": 2,
+          "en": "\"There are fundamental public health problems, like dirty hands instead of a soap habit, that remain killers only because we can't figure out how to change people's habits,\" said Dr. Curtis, the director of the Hygiene Center at the London School of Hygiene & Tropical Medicine.",
+          "cn": "伦敦卫生和热带医药学院卫生中心主任柯提斯博士称：“一些基本的公共卫生问题，比如说，手脏了却没有养成用肥皂清洗的习惯，只因为我们无法弄清如何改变人们的习惯，这些问题才在继续夺取人们的生命。",
+          "words": [
+            {
+              "w": "figure out",
+              "meaning": "想出，弄明白"
+            },
+            {
+              "w": "fundamental",
+              "phonetic": "/ˌfʌndəˈmentl/",
+              "meaning": "adj. 根本的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s04",
+          "para": 2,
+          "en": "\"We wanted to learn from private industry how to create new behaviors that happen automatically.\"",
+          "cn": "我们想要向私营企业学习如何塑造新的自动行为。”",
+          "words": [
+            {
+              "w": "private industry",
+              "meaning": "私营企业"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s05",
+          "para": 3,
+          "en": "The companies that Dr. Curtis turned to – Procter & Gamble, Colgate-Palmolive and Unilever – had invested hundreds of millions of dollars finding the subtle cues in consumers' lives that corporations could use to introduce new routines.",
+          "cn": "柯提斯博士求助的这些公司——宝洁、高露洁和联合利华——曾投资几亿美元用于发掘消费者生活中的微妙暗示，并利用它们引入新惯例。",
+          "words": [
+            {
+              "w": "turned to",
+              "meaning": "求助于"
+            },
+            {
+              "w": "subtle",
+              "phonetic": "/ˈsʌtl/",
+              "meaning": "adj. 微妙的，不易察觉的"
+            },
+            {
+              "w": "routines",
+              "phonetic": "/ruːˈtiːnz/",
+              "meaning": "n. 惯例，例行之事"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s06",
+          "para": 4,
+          "en": "If you look hard enough, you'll find that many of the products we use every day – chewing gums, skin moisturizers, disinfecting wipes, air fresheners, water purifiers, health snacks, teeth whiteners, fabric softeners, vitamins – are results of manufactured habits.",
+          "cn": "如果你足够仔细地观察，你会发现我们每天使用的很多产品——口香糖、护肤霜、消毒湿巾、空气清新剂、净水器、健康零食、牙齿美白剂、织物柔顺剂、维生素——都是人为制造习惯的结果。",
+          "words": [
+            {
+              "w": "moisturizers",
+              "phonetic": "/ˈmɔɪstʃəraɪzəz/",
+              "meaning": "n. 润肤霜"
+            },
+            {
+              "w": "manufactured",
+              "phonetic": "/ˌmænjuˈfæktʃəd/",
+              "meaning": "adj. 人为制造的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s07",
+          "para": 4,
+          "en": "A century ago, few people regularly brushed their teeth multiple times a day.",
+          "cn": "一个世纪以前，很少有人每天定期多次刷牙。",
+          "words": [
+            {
+              "w": "multiple times",
+              "meaning": "多次"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s08",
+          "para": 4,
+          "en": "Today, because of shrewd advertising and public health campaigns, many Americans habitually give their pearly whites a cavity-preventing scrub twice a day, often with Colgate, Crest or one of the other brands.",
+          "cn": "如今，由于精明的广告和公共卫生运动的影响，许多美国人会习惯性地每天给他们那如珍珠般洁白的牙齿做两次龋齿预防刷洗，他们使用的，往往就是高露洁、佳洁士或其他品牌之一。",
+          "words": [
+            {
+              "w": "shrewd",
+              "phonetic": "/ʃruːd/",
+              "meaning": "adj. 精明的"
+            },
+            {
+              "w": "habitually",
+              "phonetic": "/həˈbɪtʃuəli/",
+              "meaning": "adv. 习惯性地"
+            },
+            {
+              "w": "cavity",
+              "phonetic": "/ˈkævəti/",
+              "meaning": "n. 蛀洞，龋洞"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s09",
+          "para": 5,
+          "en": "A few decades ago, many people didn't drink water outside of a meal.",
+          "cn": "几十年之前，许多人不会在非就餐时间喝水。",
+          "words": [
+            {
+              "w": "outside of",
+              "meaning": "在……之外"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s10",
+          "para": 5,
+          "en": "Then beverage companies started bottling the production of far-off springs, and now office workers unthinkingly sip bottled water all day long.",
+          "cn": "后来，饮料公司开始将遥远地带的泉水装入瓶中，现在办公室职员整天都在不假思索地喝着瓶装水。",
+          "words": [
+            {
+              "w": "beverage",
+              "phonetic": "/ˈbevərɪdʒ/",
+              "meaning": "n. 饮料"
+            },
+            {
+              "w": "all day long",
+              "meaning": "一整天"
+            },
+            {
+              "w": "sip",
+              "phonetic": "/sɪp/",
+              "meaning": "v. 小口喝，啜饮"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s11",
+          "para": 5,
+          "en": "Chewing gum, once bought primarily by adolescent boys, is now featured in commercials as a breath freshener and teeth cleanser for use after a meal.",
+          "cn": "口香糖从前主要是处于青春期的男孩儿购买，而现在的商业广告中，口香糖被定位为饭后使用的口气清新剂和牙齿清洁剂。",
+          "words": [
+            {
+              "w": "featured in",
+              "meaning": "在……中被突出展示"
+            },
+            {
+              "w": "adolescent",
+              "phonetic": "/ˌædəˈlesnt/",
+              "meaning": "adj. 青春期的"
+            },
+            {
+              "w": "commercials",
+              "phonetic": "/kəˈmɜːʃlz/",
+              "meaning": "n. 商业广告"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s12",
+          "para": 5,
+          "en": "Skin moisturizers are advertised as part of morning beauty rituals, slipped in between hair brushing and putting on makeup.",
+          "cn": "润肤霜被广告宣传成早晨美容程序的一部分，不知不觉插入梳头和化妆之间。",
+          "words": [
+            {
+              "w": "slipped in",
+              "meaning": "悄悄插入"
+            },
+            {
+              "w": "rituals",
+              "phonetic": "/ˈrɪtʃuəlz/",
+              "meaning": "n. 例行程序，仪式"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s13",
+          "para": 6,
+          "en": "\"Our products succeed when they become part of daily or weekly patterns,\" said Carol Berning, a consumer psychologist who recently retired from Procter & Gamble, the company that sold $76 billion of Tide, Crest and other products last year.",
+          "cn": "最近从宝洁退休的消费心理学家卡罗尔·伯宁说：“如果能成为每天或每周的惯例，那我们的产品就成功了。”宝洁公司去年卖出了 760 亿美元的汰渍、佳洁士和其他产品。",
+          "words": [
+            {
+              "w": "psychologist",
+              "phonetic": "/saɪˈkɒlədʒɪst/",
+              "meaning": "n. 心理学家"
+            },
+            {
+              "w": "retired from",
+              "meaning": "从……退休"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s14",
+          "para": 6,
+          "en": "\"Creating positive habits is a huge part of improving our consumers' lives, and it's essential to making new products commercially viable.\"",
+          "cn": "“生成积极习惯是改善消费者生活的重要部分，它也对使新产品具有商业可行性至关重要。”",
+          "words": [
+            {
+              "w": "commercially viable",
+              "meaning": "具有商业可行性的"
+            },
+            {
+              "w": "essential",
+              "phonetic": "/ɪˈsenʃl/",
+              "meaning": "adj. 必不可少的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s15",
+          "para": 7,
+          "en": "Through experiments and observation, social scientists like Dr. Berning have learned that there is power in tying certain behaviors to habitual cues through ruthless advertising.",
+          "cn": "通过实验和观察，伯宁博士等社会科学家已了解到，通过大量无休止的广告将“某些行为”与“习惯暗示”联系起来的做法是有效的。",
+          "words": [
+            {
+              "w": "tying",
+              "phonetic": "/ˈtaɪɪŋ/",
+              "meaning": "v. 捆绑，联系（tie 的现在分词）"
+            },
+            {
+              "w": "ruthless",
+              "phonetic": "/ˈruːθləs/",
+              "meaning": "adj. 无情的，不遗余力的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text3_s16",
+          "para": 7,
+          "en": "As this new science of habit has emerged, controversies have erupted when the tactics have been used to sell questionable beauty creams or unhealthy foods.",
+          "cn": "随着这门新兴习惯科学的兴起，这些策略被用于销售价值尚属疑问的美容霜或者不健康的食品，从而引发了激烈辩论。",
+          "words": [
+            {
+              "w": "erupted",
+              "phonetic": "/ɪˈrʌptɪd/",
+              "meaning": "v. 爆发"
+            },
+            {
+              "w": "questionable",
+              "phonetic": "/ˈkwestʃənəbl/",
+              "meaning": "adj. 可疑的，靠不住的"
+            },
+            {
+              "w": "tactics",
+              "phonetic": "/ˈtæktɪks/",
+              "meaning": "n. 策略，手段"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2010_text3_q1", "number": 31, "qtype": "细节题", "stem": "According to Dr. Curtis, habits like hand washing with soap ______.", "stem_cn": "柯蒂斯博士认为，诸如用肥皂洗手一类的习惯______。", "options": { "A": "should be further cultivated", "B": "should be changed gradually", "C": "are deeply rooted in history", "D": "are basically private concerns" }, "options_cn": { "A": "应该进一步培养", "B": "应该逐步改变", "C": "深深植根于历史之中", "D": "基本上是私人问题" }, "answer": "A", "explanation": "由 Dr. Curtis、hand washing with soap 定位第二段：柯蒂斯博士指出\"不用肥皂洗手\"之类的问题仍在夺人性命，并希望向私营企业学习如何创造自动发生的新行为。可见其观点是应进一步培养用肥皂洗手等卫生习惯，A 正确。B 指向相反（要改变的是坏习惯）；C、D 无依据。", "related_sentences": ["2010_text3_s03", "2010_text3_s04"] },
-        { "id": "2010_text3_q2", "number": 32, "qtype": "推理题", "stem": "Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 so as to ______.", "stem_cn": "第五段提到瓶装水、口香糖和润肤霜是为了______。", "options": { "A": "reveal their impact on people's habits", "B": "show the urgent need of daily necessities", "C": "indicate their effect on people's buying power", "D": "manifest the significant role of good habits" }, "options_cn": { "A": "揭示它们对人们习惯的影响", "B": "表明对日用品的迫切需求", "C": "说明它们对人们购买力的作用", "D": "彰显好习惯的重要作用" }, "answer": "A", "explanation": "第五段三个事例都以今昔对比说明商家如何在消费者中生成使用某种产品的习惯，它们是对第四段首句\"许多日用品都是被制造出来的习惯的产物\"这一论点的举例论证，即揭示这些产品（背后的营销）对人们习惯的影响，A 正确。B、C 均未触及\"习惯的制造\"；D 与举例目的无关。", "related_sentences": ["2010_text3_s09", "2010_text3_s10", "2010_text3_s11"] },
-        { "id": "2010_text3_q3", "number": 33, "qtype": "细节题", "stem": "Which of the following does NOT belong to products that help create people's habits?", "stem_cn": "下列哪项不属于帮助人们形成习惯的产品？", "options": { "A": "Tide.", "B": "Crest.", "C": "Colgate.", "D": "Unilever." }, "options_cn": { "A": "汰渍", "B": "佳洁士", "C": "高露洁", "D": "联合利华" }, "answer": "D", "explanation": "综合文中细节：第四段提到刷牙常用高露洁（Colgate）、佳洁士（Crest），第六段提到宝洁销售的汰渍（Tide），三者均为\"产品\"；而联合利华（Unilever）在第三段中是柯蒂斯博士求助的\"公司\"而非产品，故 D 不属于，为答案。", "related_sentences": ["2010_text3_s05", "2010_text3_s08", "2010_text3_s13"] },
-        { "id": "2010_text3_q4", "number": 34, "qtype": "推理题", "stem": "From the text we know that some of consumers' habits are developed due to ______.", "stem_cn": "从文中可知，消费者的一些习惯之所以形成，是由于______。", "options": { "A": "perfected art of products", "B": "automatic behavior creation", "C": "commercial promotions", "D": "scientific experiments" }, "options_cn": { "A": "产品的完善工艺", "B": "自动行为的创造", "C": "商业推广", "D": "科学实验" }, "answer": "C", "explanation": "综合全文：第一段说公司靠制造习惯获利，第三段说企业投巨资寻找可利用的生活暗示，第四、五段的刷牙、瓶装水等事例均归因于\"精明的广告与宣传\"，第六段更明确\"生成新习惯对新产品销售至关重要\"。可见商业推广是消费者新习惯形成的主要推手，C 正确。A 曲解首句 the art of creating...（指技艺而非产品工艺）；B 是习惯本身而非原因；D 是研究手段。", "related_sentences": ["2010_text3_s08", "2010_text3_s15"] },
-        { "id": "2010_text3_q5", "number": 35, "qtype": "态度题", "stem": "The author's attitude toward the influence of advertisement on people's habits is ______.", "stem_cn": "作者对广告影响人们习惯这一现象的态度是______。", "options": { "A": "indifferent", "B": "negative", "C": "positive", "D": "biased" }, "options_cn": { "A": "漠不关心的", "B": "否定的", "C": "肯定的", "D": "有偏见的" }, "answer": "B", "explanation": "作者态度主要体现于末段：先承认强力广告确能把行为与习惯性暗示捆绑（威力巨大），随即指出这些手段常被用于推销\"效果可疑的美容霜或不健康食品\"并已引发争议。ruthless（无情的）、questionable（可疑的）等措辞透露出否定态度，B 正确。A 与作者大量笔墨讨论此现象矛盾；C 与末段批评相悖。", "related_sentences": ["2010_text3_s15", "2010_text3_s16"] }
+        {
+          "id": "2010_text3_q1",
+          "number": 31,
+          "qtype": "细节题",
+          "stem": "According to Dr. Curtis, habits like hand washing with soap ______.",
+          "stem_cn": "柯蒂斯博士认为，诸如用肥皂洗手一类的习惯______。",
+          "options": {
+            "A": "should be further cultivated",
+            "B": "should be changed gradually",
+            "C": "are deeply rooted in history",
+            "D": "are basically private concerns"
+          },
+          "options_cn": {
+            "A": "应该进一步培养",
+            "B": "应该逐步改变",
+            "C": "深深植根于历史之中",
+            "D": "基本上是私人问题"
+          },
+          "answer": "A",
+          "explanation": "由 Dr. Curtis、hand washing with soap 定位第二段：柯蒂斯博士指出\"不用肥皂洗手\"之类的问题仍在夺人性命，并希望向私营企业学习如何创造自动发生的新行为。可见其观点是应进一步培养用肥皂洗手等卫生习惯，A 正确。B 指向相反（要改变的是坏习惯）；C、D 无依据。",
+          "related_sentences": [
+            "2010_text3_s03",
+            "2010_text3_s04"
+          ]
+        },
+        {
+          "id": "2010_text3_q2",
+          "number": 32,
+          "qtype": "推理题",
+          "stem": "Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 so as to ______.",
+          "stem_cn": "第五段提到瓶装水、口香糖和润肤霜是为了______。",
+          "options": {
+            "A": "reveal their impact on people's habits",
+            "B": "show the urgent need of daily necessities",
+            "C": "indicate their effect on people's buying power",
+            "D": "manifest the significant role of good habits"
+          },
+          "options_cn": {
+            "A": "揭示它们对人们习惯的影响",
+            "B": "表明对日用品的迫切需求",
+            "C": "说明它们对人们购买力的作用",
+            "D": "彰显好习惯的重要作用"
+          },
+          "answer": "A",
+          "explanation": "第五段三个事例都以今昔对比说明商家如何在消费者中生成使用某种产品的习惯，它们是对第四段首句\"许多日用品都是被制造出来的习惯的产物\"这一论点的举例论证，即揭示这些产品（背后的营销）对人们习惯的影响，A 正确。B、C 均未触及\"习惯的制造\"；D 与举例目的无关。",
+          "related_sentences": [
+            "2010_text3_s09",
+            "2010_text3_s10",
+            "2010_text3_s11"
+          ]
+        },
+        {
+          "id": "2010_text3_q3",
+          "number": 33,
+          "qtype": "细节题",
+          "stem": "Which of the following does NOT belong to products that help create people's habits?",
+          "stem_cn": "下列哪项不属于帮助人们形成习惯的产品？",
+          "options": {
+            "A": "Tide.",
+            "B": "Crest.",
+            "C": "Colgate.",
+            "D": "Unilever."
+          },
+          "options_cn": {
+            "A": "汰渍",
+            "B": "佳洁士",
+            "C": "高露洁",
+            "D": "联合利华"
+          },
+          "answer": "D",
+          "explanation": "综合文中细节：第四段提到刷牙常用高露洁（Colgate）、佳洁士（Crest），第六段提到宝洁销售的汰渍（Tide），三者均为\"产品\"；而联合利华（Unilever）在第三段中是柯蒂斯博士求助的\"公司\"而非产品，故 D 不属于，为答案。",
+          "related_sentences": [
+            "2010_text3_s05",
+            "2010_text3_s08",
+            "2010_text3_s13"
+          ]
+        },
+        {
+          "id": "2010_text3_q4",
+          "number": 34,
+          "qtype": "推理题",
+          "stem": "From the text we know that some of consumers' habits are developed due to ______.",
+          "stem_cn": "从文中可知，消费者的一些习惯之所以形成，是由于______。",
+          "options": {
+            "A": "perfected art of products",
+            "B": "automatic behavior creation",
+            "C": "commercial promotions",
+            "D": "scientific experiments"
+          },
+          "options_cn": {
+            "A": "产品的完善工艺",
+            "B": "自动行为的创造",
+            "C": "商业推广",
+            "D": "科学实验"
+          },
+          "answer": "C",
+          "explanation": "综合全文：第一段说公司靠制造习惯获利，第三段说企业投巨资寻找可利用的生活暗示，第四、五段的刷牙、瓶装水等事例均归因于\"精明的广告与宣传\"，第六段更明确\"生成新习惯对新产品销售至关重要\"。可见商业推广是消费者新习惯形成的主要推手，C 正确。A 曲解首句 the art of creating...（指技艺而非产品工艺）；B 是习惯本身而非原因；D 是研究手段。",
+          "related_sentences": [
+            "2010_text3_s08",
+            "2010_text3_s15"
+          ]
+        },
+        {
+          "id": "2010_text3_q5",
+          "number": 35,
+          "qtype": "态度题",
+          "stem": "The author's attitude toward the influence of advertisement on people's habits is ______.",
+          "stem_cn": "作者对广告影响人们习惯这一现象的态度是______。",
+          "options": {
+            "A": "indifferent",
+            "B": "negative",
+            "C": "positive",
+            "D": "biased"
+          },
+          "options_cn": {
+            "A": "漠不关心的",
+            "B": "否定的",
+            "C": "肯定的",
+            "D": "有偏见的"
+          },
+          "answer": "B",
+          "explanation": "作者态度主要体现于末段：先承认强力广告确能把行为与习惯性暗示捆绑（威力巨大），随即指出这些手段常被用于推销\"效果可疑的美容霜或不健康食品\"并已引发争议。ruthless（无情的）、questionable（可疑的）等措辞透露出否定态度，B 正确。A 与作者大量笔墨讨论此现象矛盾；C 与末段批评相悖。",
+          "related_sentences": [
+            "2010_text3_s15",
+            "2010_text3_s16"
+          ]
+        }
       ]
     },
     {
@@ -109,28 +1264,1329 @@
       "topic": "美国陪审团制度：传统与发展",
       "source": "2010 年考研英语（二）Text 4 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2010_text4_s01", "para": 1, "en": "Many Americans regard the jury system as a concrete expression of crucial democratic values, including the principles that all citizens who meet minimal qualifications of age and literacy are equally competent to serve on juries; that jurors should be selected randomly from a representative cross section of the community; that no citizen should be denied the right to serve on a jury on account of race, religion, sex, or national origin; that defendants are entitled to trial by their peers; and that verdicts should represent the conscience of the community and not just the letter of the law.", "cn": "许多美国人把陪审团制度看作是关键民主价值观的具体表现，该制度包括以下原则：所有满足最低年龄和文化要求的公民都具备同等资格担任陪审员；陪审员应从社会各部门的典型代表中随机挑选；任何公民不得由于种族、宗教、性别和民族出身被剥夺担任陪审员的权利；被告人有权利接受由同等地位的人进行的审判；审判结果应该代表社会良知，而不仅仅是法律条文的字面意义。", "words": [ { "w": "cross section", "meaning": "（社会的）横断面，各阶层代表" }, { "w": "on account of", "meaning": "由于，因为" }, { "w": "entitled to", "meaning": "有权享有" }, { "w": "verdicts", "phonetic": "/ˈvɜːdɪkts/", "meaning": "n. 裁决，判决" } ] },
-        { "id": "2010_text4_s02", "para": 1, "en": "The jury is also said to be the best surviving example of direct rather than representative democracy.", "cn": "陪审团还被看作是体现直接民主而非代议制民主的最佳现存典范。", "words": [ { "w": "rather than", "meaning": "而非" }, { "w": "surviving", "phonetic": "/səˈvaɪvɪŋ/", "meaning": "adj. 现存的，留存下来的" } ] },
-        { "id": "2010_text4_s03", "para": 1, "en": "In a direct democracy, citizens take turns governing themselves, rather than electing representatives to govern for them.", "cn": "在直接民主政体中，公民轮流进行自治，而不是选举代表来替自己治理。", "words": [ { "w": "take turns", "meaning": "轮流" } ] },
-        { "id": "2010_text4_s04", "para": 2, "en": "But as recently as in 1968, jury selection procedures conflicted with these democratic ideals.", "cn": "但是近至 1968 年，陪审团遴选程序仍然是和这些民主理想相冲突的。", "words": [ { "w": "as recently as", "meaning": "就在……那么晚近" }, { "w": "conflicted with", "meaning": "与……冲突" } ] },
-        { "id": "2010_text4_s05", "para": 2, "en": "In some states, for example, jury duty was limited to persons of supposedly superior intelligence, education, and moral character.", "cn": "例如，在有些州，陪审团职责仅限于由那些一般看来智商、学历和道德品格高人一等的人来承担。", "words": [ { "w": "limited to", "meaning": "仅限于" }, { "w": "supposedly", "phonetic": "/səˈpəʊzɪdli/", "meaning": "adv. 据称，所谓" } ] },
-        { "id": "2010_text4_s06", "para": 2, "en": "Although the Supreme Court of the United States had prohibited intentional racial discrimination in jury selection as early as the 1880 case of Strauder v. West Virginia, the practice of selecting so-called elite or blue-ribbon juries provided a convenient way around this and other antidiscrimination laws.", "cn": "尽管美国最高法院早在 1880 年的斯特劳德诉西弗吉尼亚州一案中就已经禁止了陪审团遴选中的蓄意种族歧视，但挑选所谓的精英陪审员或者蓝带陪审员的做法，却为绕开这一反歧视及其它反歧视法案提供了一条捷径。", "words": [ { "w": "way around", "meaning": "规避……的途径" }, { "w": "racial discrimination", "meaning": "种族歧视" }, { "w": "prohibited", "phonetic": "/prəˈhɪbɪtɪd/", "meaning": "v. 禁止" } ] },
-        { "id": "2010_text4_s07", "para": 3, "en": "The system also failed to regularly include women on juries until the mid-20th century.", "cn": "同时，直到 20 世纪中叶，陪审团制度才开始常规地将女性纳入其中。", "words": [ { "w": "failed to", "meaning": "未能" } ] },
-        { "id": "2010_text4_s08", "para": 3, "en": "Although women first served on state juries in Utah in 1898, it was not until the 1940s that a majority of states made women eligible for jury duty.", "cn": "虽然早在 1898 年，女性就首次担任过犹他州的陪审员，但直到 20 世纪 40 年代，大多数州才赋予女性承担陪审员职责的资格。", "words": [ { "w": "it was not until", "meaning": "直到……才" }, { "w": "eligible for", "meaning": "有资格的" } ] },
-        { "id": "2010_text4_s09", "para": 3, "en": "Even then several states automatically exempted women from jury duty unless they personally asked to have their names included on the jury list.", "cn": "而且即使是那时，有些州仍然自动将女性排除在陪审员职责之外，除非她们自己要求将名字纳入陪审团名单。", "words": [ { "w": "exempted", "phonetic": "/ɪɡˈzemptɪd/", "meaning": "v. 免除" }, { "w": "included on", "meaning": "列入" } ] },
-        { "id": "2010_text4_s10", "para": 3, "en": "This practice was justified by the claim that women were needed at home, and it kept juries unrepresentative of women through the 1960s.", "cn": "这种做法以家里需要女性的论断为解释依据，致使整个 20 世纪 60 年代的陪审团中都鲜有女性。", "words": [ { "w": "justified by", "meaning": "以……为正当理由" }, { "w": "unrepresentative", "phonetic": "/ˌʌnreprɪˈzentətɪv/", "meaning": "adj. 不具代表性的" } ] },
-        { "id": "2010_text4_s11", "para": 4, "en": "In 1968, the Congress of the United States passed the Jury Selection and Service Act, ushering in a new era of democratic reforms for the jury.", "cn": "1968 年，美国国会通过了《陪审团遴选与服务法案》，从此开创了一个陪审团民主改革的新时代。", "words": [ { "w": "ushering in", "meaning": "开创，引领" } ] },
-        { "id": "2010_text4_s12", "para": 4, "en": "This law abolished special educational requirements for federal jurors and required them to be selected at random from a cross section of the entire community.", "cn": "这一法案废除了对联邦陪审员的特殊教育要求，并要求从社会各阶层民众中随机挑选陪审员。", "words": [ { "w": "at random", "meaning": "随机地" }, { "w": "abolished", "phonetic": "/əˈbɒlɪʃt/", "meaning": "v. 废除" } ] },
-        { "id": "2010_text4_s13", "para": 4, "en": "In the landmark 1975 decision Taylor v. Louisiana, the Supreme Court extended the requirement that juries be representative of all parts of the community to the state level.", "cn": "在 1975 年泰勒诉路易斯安那州一案里程碑式的裁定中，最高法院将陪审团成员需代表社会各阶层这一要求延伸至州级层面。", "words": [ { "w": "landmark", "phonetic": "/ˈlændmɑːk/", "meaning": "n. 里程碑" }, { "w": "representative of", "meaning": "代表……的" } ] },
-        { "id": "2010_text4_s14", "para": 4, "en": "The Taylor decision also declared sex discrimination in jury selection to be unconstitutional and ordered states to use the same procedures for selecting male and female jurors.", "cn": "泰勒案的裁决同时将陪审团遴选中的性别歧视宣布为违宪，并命令各州采取相同程序来遴选男女陪审员。", "words": [ { "w": "sex discrimination", "meaning": "性别歧视" }, { "w": "unconstitutional", "phonetic": "/ˌʌnkɒnstɪˈtjuːʃənl/", "meaning": "adj. 违宪的" } ] }
+        {
+          "id": "2010_text4_s01",
+          "para": 1,
+          "en": "Many Americans regard the jury system as a concrete expression of crucial democratic values, including the principles that all citizens who meet minimal qualifications of age and literacy are equally competent to serve on juries; that jurors should be selected randomly from a representative cross section of the community; that no citizen should be denied the right to serve on a jury on account of race, religion, sex, or national origin; that defendants are entitled to trial by their peers; and that verdicts should represent the conscience of the community and not just the letter of the law.",
+          "cn": "许多美国人把陪审团制度看作是关键民主价值观的具体表现，该制度包括以下原则：所有满足最低年龄和文化要求的公民都具备同等资格担任陪审员；陪审员应从社会各部门的典型代表中随机挑选；任何公民不得由于种族、宗教、性别和民族出身被剥夺担任陪审员的权利；被告人有权利接受由同等地位的人进行的审判；审判结果应该代表社会良知，而不仅仅是法律条文的字面意义。",
+          "words": [
+            {
+              "w": "cross section",
+              "meaning": "（社会的）横断面，各阶层代表"
+            },
+            {
+              "w": "on account of",
+              "meaning": "由于，因为"
+            },
+            {
+              "w": "entitled to",
+              "meaning": "有权享有"
+            },
+            {
+              "w": "verdicts",
+              "phonetic": "/ˈvɜːdɪkts/",
+              "meaning": "n. 裁决，判决"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s02",
+          "para": 1,
+          "en": "The jury is also said to be the best surviving example of direct rather than representative democracy.",
+          "cn": "陪审团还被看作是体现直接民主而非代议制民主的最佳现存典范。",
+          "words": [
+            {
+              "w": "rather than",
+              "meaning": "而非"
+            },
+            {
+              "w": "surviving",
+              "phonetic": "/səˈvaɪvɪŋ/",
+              "meaning": "adj. 现存的，留存下来的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s03",
+          "para": 1,
+          "en": "In a direct democracy, citizens take turns governing themselves, rather than electing representatives to govern for them.",
+          "cn": "在直接民主政体中，公民轮流进行自治，而不是选举代表来替自己治理。",
+          "words": [
+            {
+              "w": "take turns",
+              "meaning": "轮流"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s04",
+          "para": 2,
+          "en": "But as recently as in 1968, jury selection procedures conflicted with these democratic ideals.",
+          "cn": "但是近至 1968 年，陪审团遴选程序仍然是和这些民主理想相冲突的。",
+          "words": [
+            {
+              "w": "as recently as",
+              "meaning": "就在……那么晚近"
+            },
+            {
+              "w": "conflicted with",
+              "meaning": "与……冲突"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s05",
+          "para": 2,
+          "en": "In some states, for example, jury duty was limited to persons of supposedly superior intelligence, education, and moral character.",
+          "cn": "例如，在有些州，陪审团职责仅限于由那些一般看来智商、学历和道德品格高人一等的人来承担。",
+          "words": [
+            {
+              "w": "limited to",
+              "meaning": "仅限于"
+            },
+            {
+              "w": "supposedly",
+              "phonetic": "/səˈpəʊzɪdli/",
+              "meaning": "adv. 据称，所谓"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s06",
+          "para": 2,
+          "en": "Although the Supreme Court of the United States had prohibited intentional racial discrimination in jury selection as early as the 1880 case of Strauder v. West Virginia, the practice of selecting so-called elite or blue-ribbon juries provided a convenient way around this and other antidiscrimination laws.",
+          "cn": "尽管美国最高法院早在 1880 年的斯特劳德诉西弗吉尼亚州一案中就已经禁止了陪审团遴选中的蓄意种族歧视，但挑选所谓的精英陪审员或者蓝带陪审员的做法，却为绕开这一反歧视及其它反歧视法案提供了一条捷径。",
+          "words": [
+            {
+              "w": "way around",
+              "meaning": "规避……的途径"
+            },
+            {
+              "w": "racial discrimination",
+              "meaning": "种族歧视"
+            },
+            {
+              "w": "prohibited",
+              "phonetic": "/prəˈhɪbɪtɪd/",
+              "meaning": "v. 禁止"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s07",
+          "para": 3,
+          "en": "The system also failed to regularly include women on juries until the mid-20th century.",
+          "cn": "同时，直到 20 世纪中叶，陪审团制度才开始常规地将女性纳入其中。",
+          "words": [
+            {
+              "w": "failed to",
+              "meaning": "未能"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s08",
+          "para": 3,
+          "en": "Although women first served on state juries in Utah in 1898, it was not until the 1940s that a majority of states made women eligible for jury duty.",
+          "cn": "虽然早在 1898 年，女性就首次担任过犹他州的陪审员，但直到 20 世纪 40 年代，大多数州才赋予女性承担陪审员职责的资格。",
+          "words": [
+            {
+              "w": "it was not until",
+              "meaning": "直到……才"
+            },
+            {
+              "w": "eligible for",
+              "meaning": "有资格的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s09",
+          "para": 3,
+          "en": "Even then several states automatically exempted women from jury duty unless they personally asked to have their names included on the jury list.",
+          "cn": "而且即使是那时，有些州仍然自动将女性排除在陪审员职责之外，除非她们自己要求将名字纳入陪审团名单。",
+          "words": [
+            {
+              "w": "exempted",
+              "phonetic": "/ɪɡˈzemptɪd/",
+              "meaning": "v. 免除"
+            },
+            {
+              "w": "included on",
+              "meaning": "列入"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s10",
+          "para": 3,
+          "en": "This practice was justified by the claim that women were needed at home, and it kept juries unrepresentative of women through the 1960s.",
+          "cn": "这种做法以家里需要女性的论断为解释依据，致使整个 20 世纪 60 年代的陪审团中都鲜有女性。",
+          "words": [
+            {
+              "w": "justified by",
+              "meaning": "以……为正当理由"
+            },
+            {
+              "w": "unrepresentative",
+              "phonetic": "/ˌʌnreprɪˈzentətɪv/",
+              "meaning": "adj. 不具代表性的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s11",
+          "para": 4,
+          "en": "In 1968, the Congress of the United States passed the Jury Selection and Service Act, ushering in a new era of democratic reforms for the jury.",
+          "cn": "1968 年，美国国会通过了《陪审团遴选与服务法案》，从此开创了一个陪审团民主改革的新时代。",
+          "words": [
+            {
+              "w": "ushering in",
+              "meaning": "开创，引领"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s12",
+          "para": 4,
+          "en": "This law abolished special educational requirements for federal jurors and required them to be selected at random from a cross section of the entire community.",
+          "cn": "这一法案废除了对联邦陪审员的特殊教育要求，并要求从社会各阶层民众中随机挑选陪审员。",
+          "words": [
+            {
+              "w": "at random",
+              "meaning": "随机地"
+            },
+            {
+              "w": "abolished",
+              "phonetic": "/əˈbɒlɪʃt/",
+              "meaning": "v. 废除"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s13",
+          "para": 4,
+          "en": "In the landmark 1975 decision Taylor v. Louisiana, the Supreme Court extended the requirement that juries be representative of all parts of the community to the state level.",
+          "cn": "在 1975 年泰勒诉路易斯安那州一案里程碑式的裁定中，最高法院将陪审团成员需代表社会各阶层这一要求延伸至州级层面。",
+          "words": [
+            {
+              "w": "landmark",
+              "phonetic": "/ˈlændmɑːk/",
+              "meaning": "n. 里程碑"
+            },
+            {
+              "w": "representative of",
+              "meaning": "代表……的"
+            }
+          ]
+        },
+        {
+          "id": "2010_text4_s14",
+          "para": 4,
+          "en": "The Taylor decision also declared sex discrimination in jury selection to be unconstitutional and ordered states to use the same procedures for selecting male and female jurors.",
+          "cn": "泰勒案的裁决同时将陪审团遴选中的性别歧视宣布为违宪，并命令各州采取相同程序来遴选男女陪审员。",
+          "words": [
+            {
+              "w": "sex discrimination",
+              "meaning": "性别歧视"
+            },
+            {
+              "w": "unconstitutional",
+              "phonetic": "/ˌʌnkɒnstɪˈtjuːʃənl/",
+              "meaning": "adj. 违宪的"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2010_text4_q1", "number": 36, "qtype": "细节题", "stem": "From the principles of the US jury system, we learn that ______.", "stem_cn": "从美国陪审团制度的原则中我们可以得知______。", "options": { "A": "both literate and illiterate people can serve on juries", "B": "defendants are immune from trial by their peers", "C": "no age limit should be imposed for jury service", "D": "judgment should consider the opinion of the public" }, "options_cn": { "A": "识字和不识字的人都能担任陪审员", "B": "被告可免受同侪审判", "C": "陪审员服务不应设年龄限制", "D": "裁决应考虑公众的意见" }, "answer": "D", "explanation": "定位第一段五项原则的最后一条：verdicts should represent the conscience of the community and not just the letter of the law——判决应体现社会良知而不仅是法律条文，即裁决需考虑公众意见，D 正确。A、C 与\"须满足年龄和读写能力最低要求\"相悖；B 与\"被告有权接受同侪审判\"相反。", "related_sentences": ["2010_text4_s01"] },
-        { "id": "2010_text4_q2", "number": 37, "qtype": "推理题", "stem": "The practice of selecting so-called elite jurors prior to 1968 showed ______.", "stem_cn": "1968 年之前挑选所谓精英陪审员的做法表明了______。", "options": { "A": "the inadequacy of antidiscrimination laws", "B": "the prevalent discrimination against certain races", "C": "the conflicting ideals in jury selection procedures", "D": "the arrogance common among the Supreme Court judges" }, "options_cn": { "A": "反歧视法律的不完善", "B": "对某些种族的普遍歧视", "C": "陪审员遴选程序中相互冲突的理想", "D": "最高法院法官普遍的傲慢" }, "answer": "A", "explanation": "定位第二段末句：尽管最高法院早在 1880 年已禁止陪审员遴选中的蓄意种族歧视，但挑选精英陪审团的做法\"为规避这一规定及其他反歧视法律提供了便捷途径\"——即歧视可以绕开法律实现，侧面说明反歧视法律仍有漏洞、不够完善，A 正确。B 是该做法的结果而非其\"表明\"的问题实质；C 混淆\"程序与理想冲突\"；D 无依据。", "related_sentences": ["2010_text4_s06"] },
-        { "id": "2010_text4_q3", "number": 38, "qtype": "细节题", "stem": "Even in the 1960s, women were seldom on the jury list in some states because ______.", "stem_cn": "即使在 20 世纪 60 年代，一些州的陪审员名单上仍很少有女性，这是因为______。", "options": { "A": "they were automatically banned by state laws", "B": "they fell far short of the required qualifications", "C": "they were supposed to perform domestic duties", "D": "they tended to evade public engagement" }, "options_cn": { "A": "她们被州法律自动禁止", "B": "她们远不具备所要求的资格", "C": "她们被认为应承担家庭职责", "D": "她们往往逃避公共事务" }, "answer": "C", "explanation": "定位第三段③④句：几个州自动免除女性陪审义务（除非本人主动申请列名），而\"这种做法的依据是女性被家里需要的论调\"。即女性缺席陪审团名单是因为\"女性应留在家中\"的观念，C 正确。A 曲解：女性是被\"自动免除\"而非被法律禁止，主动申请仍可参加；B 与\"40 年代多数州已赋予女性资格\"不符；D 无中生有。", "related_sentences": ["2010_text4_s09", "2010_text4_s10"] },
-        { "id": "2010_text4_q4", "number": 39, "qtype": "细节题", "stem": "After the Jury Selection and Service Act was passed, ______.", "stem_cn": "《陪审团遴选与服务法案》通过之后，______。", "options": { "A": "sex discrimination in jury selection was unconstitutional and had to be abolished", "B": "educational requirements became less rigid in the selection of federal jurors", "C": "jurors at the state level ought to be representative of the entire community", "D": "states ought to conform to the federal court in reforming the jury system" }, "options_cn": { "A": "陪审员遴选中的性别歧视被判违宪，必须废除", "B": "联邦陪审员遴选中的教育要求不再像以往那样严格", "C": "州级陪审员应当代表整个社会", "D": "各州应遵从联邦法院来改革陪审团制度" }, "answer": "B", "explanation": "定位末段②句：该法案\"废除了对联邦陪审员的特殊教育要求\"，即教育要求较以往放宽，B 为其同义改写。A 是 1975 年泰勒案裁决的内容，与本法案无关；C 利用 the entire community 设障，原文说的是\"从全社会各阶层中随机挑选\"，且延伸到州级也是泰勒案所为；D 无中生有。", "related_sentences": ["2010_text4_s11", "2010_text4_s12"] },
-        { "id": "2010_text4_q5", "number": 40, "qtype": "主旨题", "stem": "In discussing the US jury system, the text centers on ______.", "stem_cn": "在讨论美国陪审团制度时，本文的中心是______。", "options": { "A": "its nature and problems", "B": "its characteristics and tradition", "C": "its problems and their solutions", "D": "its tradition and development" }, "options_cn": { "A": "其性质与问题", "B": "其特点与传统", "C": "其问题与解决办法", "D": "其传统与发展" }, "answer": "D", "explanation": "主旨题：第一段概述美国陪审团制度的原则与优点（传统），第二、三段从历史角度指出其曾与民主理想冲突之处，第四段介绍 1968 年法案与 1975 年泰勒案带来的改革完善。全文展示该制度由不完备走向完善的历程，即传统与发展，D 正确。A、B、C 均只覆盖局部：A 未看到改革，B 未看到发展，C 理解流于浅层。", "related_sentences": ["2010_text4_s01", "2010_text4_s11"] }
+        {
+          "id": "2010_text4_q1",
+          "number": 36,
+          "qtype": "细节题",
+          "stem": "From the principles of the US jury system, we learn that ______.",
+          "stem_cn": "从美国陪审团制度的原则中我们可以得知______。",
+          "options": {
+            "A": "both literate and illiterate people can serve on juries",
+            "B": "defendants are immune from trial by their peers",
+            "C": "no age limit should be imposed for jury service",
+            "D": "judgment should consider the opinion of the public"
+          },
+          "options_cn": {
+            "A": "识字和不识字的人都能担任陪审员",
+            "B": "被告可免受同侪审判",
+            "C": "陪审员服务不应设年龄限制",
+            "D": "裁决应考虑公众的意见"
+          },
+          "answer": "D",
+          "explanation": "定位第一段五项原则的最后一条：verdicts should represent the conscience of the community and not just the letter of the law——判决应体现社会良知而不仅是法律条文，即裁决需考虑公众意见，D 正确。A、C 与\"须满足年龄和读写能力最低要求\"相悖；B 与\"被告有权接受同侪审判\"相反。",
+          "related_sentences": [
+            "2010_text4_s01"
+          ]
+        },
+        {
+          "id": "2010_text4_q2",
+          "number": 37,
+          "qtype": "推理题",
+          "stem": "The practice of selecting so-called elite jurors prior to 1968 showed ______.",
+          "stem_cn": "1968 年之前挑选所谓精英陪审员的做法表明了______。",
+          "options": {
+            "A": "the inadequacy of antidiscrimination laws",
+            "B": "the prevalent discrimination against certain races",
+            "C": "the conflicting ideals in jury selection procedures",
+            "D": "the arrogance common among the Supreme Court judges"
+          },
+          "options_cn": {
+            "A": "反歧视法律的不完善",
+            "B": "对某些种族的普遍歧视",
+            "C": "陪审员遴选程序中相互冲突的理想",
+            "D": "最高法院法官普遍的傲慢"
+          },
+          "answer": "A",
+          "explanation": "定位第二段末句：尽管最高法院早在 1880 年已禁止陪审员遴选中的蓄意种族歧视，但挑选精英陪审团的做法\"为规避这一规定及其他反歧视法律提供了便捷途径\"——即歧视可以绕开法律实现，侧面说明反歧视法律仍有漏洞、不够完善，A 正确。B 是该做法的结果而非其\"表明\"的问题实质；C 混淆\"程序与理想冲突\"；D 无依据。",
+          "related_sentences": [
+            "2010_text4_s06"
+          ]
+        },
+        {
+          "id": "2010_text4_q3",
+          "number": 38,
+          "qtype": "细节题",
+          "stem": "Even in the 1960s, women were seldom on the jury list in some states because ______.",
+          "stem_cn": "即使在 20 世纪 60 年代，一些州的陪审员名单上仍很少有女性，这是因为______。",
+          "options": {
+            "A": "they were automatically banned by state laws",
+            "B": "they fell far short of the required qualifications",
+            "C": "they were supposed to perform domestic duties",
+            "D": "they tended to evade public engagement"
+          },
+          "options_cn": {
+            "A": "她们被州法律自动禁止",
+            "B": "她们远不具备所要求的资格",
+            "C": "她们被认为应承担家庭职责",
+            "D": "她们往往逃避公共事务"
+          },
+          "answer": "C",
+          "explanation": "定位第三段③④句：几个州自动免除女性陪审义务（除非本人主动申请列名），而\"这种做法的依据是女性被家里需要的论调\"。即女性缺席陪审团名单是因为\"女性应留在家中\"的观念，C 正确。A 曲解：女性是被\"自动免除\"而非被法律禁止，主动申请仍可参加；B 与\"40 年代多数州已赋予女性资格\"不符；D 无中生有。",
+          "related_sentences": [
+            "2010_text4_s09",
+            "2010_text4_s10"
+          ]
+        },
+        {
+          "id": "2010_text4_q4",
+          "number": 39,
+          "qtype": "细节题",
+          "stem": "After the Jury Selection and Service Act was passed, ______.",
+          "stem_cn": "《陪审团遴选与服务法案》通过之后，______。",
+          "options": {
+            "A": "sex discrimination in jury selection was unconstitutional and had to be abolished",
+            "B": "educational requirements became less rigid in the selection of federal jurors",
+            "C": "jurors at the state level ought to be representative of the entire community",
+            "D": "states ought to conform to the federal court in reforming the jury system"
+          },
+          "options_cn": {
+            "A": "陪审员遴选中的性别歧视被判违宪，必须废除",
+            "B": "联邦陪审员遴选中的教育要求不再像以往那样严格",
+            "C": "州级陪审员应当代表整个社会",
+            "D": "各州应遵从联邦法院来改革陪审团制度"
+          },
+          "answer": "B",
+          "explanation": "定位末段②句：该法案\"废除了对联邦陪审员的特殊教育要求\"，即教育要求较以往放宽，B 为其同义改写。A 是 1975 年泰勒案裁决的内容，与本法案无关；C 利用 the entire community 设障，原文说的是\"从全社会各阶层中随机挑选\"，且延伸到州级也是泰勒案所为；D 无中生有。",
+          "related_sentences": [
+            "2010_text4_s11",
+            "2010_text4_s12"
+          ]
+        },
+        {
+          "id": "2010_text4_q5",
+          "number": 40,
+          "qtype": "主旨题",
+          "stem": "In discussing the US jury system, the text centers on ______.",
+          "stem_cn": "在讨论美国陪审团制度时，本文的中心是______。",
+          "options": {
+            "A": "its nature and problems",
+            "B": "its characteristics and tradition",
+            "C": "its problems and their solutions",
+            "D": "its tradition and development"
+          },
+          "options_cn": {
+            "A": "其性质与问题",
+            "B": "其特点与传统",
+            "C": "其问题与解决办法",
+            "D": "其传统与发展"
+          },
+          "answer": "D",
+          "explanation": "主旨题：第一段概述美国陪审团制度的原则与优点（传统），第二、三段从历史角度指出其曾与民主理想冲突之处，第四段介绍 1968 年法案与 1975 年泰勒案带来的改革完善。全文展示该制度由不完备走向完善的历程，即传统与发展，D 正确。A、B、C 均只覆盖局部：A 未看到改革，B 未看到发展，C 理解流于浅层。",
+          "related_sentences": [
+            "2010_text4_s01",
+            "2010_text4_s11"
+          ]
+        }
       ]
+    },
+    {
+      "id": "2010_newtype",
+      "type": "newtype",
+      "title": "Copying Birds May Save Aircraft Fuel",
+      "topic": "效仿鸟类飞行或可节省燃油",
+      "source": "Section II Part B",
+      "pool": {
+        "T": "True",
+        "F": "False"
+      },
+      "pool_cn": {
+        "T": "正确",
+        "F": "错误"
+      },
+      "sentences": [
+        {
+          "id": "2010_newtype_s01",
+          "para": 1,
+          "en": "Both Boeing and Airbus have trumpeted the efficiency of their newest aircraft, the 787 and A350 respectively.",
+          "cn": "波音公司和空中客车公司对各自最新飞机波音787和空客A350的效率展开吹嘘。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s02",
+          "para": 1,
+          "en": "Their clever designs and lightweight composites certainly make a difference.",
+          "cn": "两者的巧妙设计和轻型复合材料的使用无疑（对飞行效率的提高）起到一定作用。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s03",
+          "para": 1,
+          "en": "But a group of researchers at Stanford University, led by Ilan Kroo, has suggested that airlines could take a more naturalistic approach to cutting jet-fuel use and it would not require them to buy new aircraft.",
+          "cn": "不过由伊兰·克鲁带领的斯坦福大学一个研究小组提出，航空公司可以采取更贴近自然的（仿生）方式降低航油的消耗，而且这种办法也使航空公司无需购买新型飞机。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s04",
+          "para": 2,
+          "en": "The answer, says Dr. Kroo, lies with birds.",
+          "cn": "克鲁博士说，问题的解决与飞鸟密切相关。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s05",
+          "para": 2,
+          "en": "Since 1914, scientists have known that birds flying in formation – a V-shape – expend less energy.",
+          "cn": "从1914年起，科学家已经了解到鸟类的V字型飞行阵型耗能相对较少。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s06",
+          "para": 2,
+          "en": "The air flowing over a bird's wings curls upwards behind the wingtips, a phenomenon known as upwash.",
+          "cn": "鸟翼上方的气流在翼尖后方向上盘旋，这种现象被称作气流上洗。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s07",
+          "para": 2,
+          "en": "Other birds flying in the upwash experience reduced drag, and spend less energy propelling themselves.",
+          "cn": "其他经历上洗流的飞鸟会受到更弱的阻力，这样在推动自身向前飞行的过程中能够消耗较少能量。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s08",
+          "para": 2,
+          "en": "Peter Lissaman, an aeronautics expert who was formerly at Caltech and the University of Southern California, has suggested that a formation of 25 birds might enjoy a range increase of 71%.",
+          "cn": "前加州理工学院以及南加州大学的航空专家皮特·李萨曼指出，一支由25只飞鸟组成的编队可能使其飞行距离增加71%。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s09",
+          "para": 3,
+          "en": "When applied to aircraft, the principles are not substantially different.",
+          "cn": "当应用于飞机时，其原理并没有本质区别。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s10",
+          "para": 3,
+          "en": "Dr. Kroo and his team modeled what would happen if three passenger jets departing from Los Angeles, San Francisco and Las Vegas were to assemble over Utah, assume an inverted V-formation, occasionally change places so all could have a turn in the most favourable positions, and proceed to London.",
+          "cn": "克鲁博士及其团队做了一项模拟试验——从洛杉矶、旧金山以及拉斯维加斯起飞的三架客机在犹他州上方集合，采取倒V型队列前进，偶尔改变位置以确保每架飞机轮流位于最佳位置，以此方式向伦敦飞行——从而了解会发生什么情况。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s11",
+          "para": 3,
+          "en": "They found that the aircraft consumed as much as 15% less fuel (coupled with a reduction in carbon-dioxide output).",
+          "cn": "他们发现飞机节省了高达15%的燃油（同时二氧化碳的排放量也有所减少）。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s12",
+          "para": 3,
+          "en": "Nitrogen-oxide emissions during the cruising portions of the flight fell by around a quarter.",
+          "cn": "巡航里程中一氧化氮的排放量减少了四分之一。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s13",
+          "para": 4,
+          "en": "There are, of course, knots to be worked out.",
+          "cn": "当然，这其中有些难点需要解决。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s14",
+          "para": 4,
+          "en": "One consideration is safety, or at least the perception of it.",
+          "cn": "其中考虑的问题之一便是安全性，或者说至少是安全感的问题。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s15",
+          "para": 4,
+          "en": "Would passengers feel comfortable travelling in companion?",
+          "cn": "乘客会对结伴飞行感到舒适吗？",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s16",
+          "para": 4,
+          "en": "Dr. Kroo points out that the aircraft could be separated by several nautical miles, and would not be in the intimate groupings favoured by display teams like the Red Arrows.",
+          "cn": "克鲁博士指出飞机间的距离相隔几海里，不会像类似\"红箭\"的表演飞行队一样常常间距紧密地飞行。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s17",
+          "para": 4,
+          "en": "A passenger peering out of the window might not even see the other planes.",
+          "cn": "望向窗外的乘客甚至不会看到其他的飞机。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s18",
+          "para": 4,
+          "en": "Whether the separation distances involved would satisfy air-traffic-control regulations is another matter, although a working group at the International Civil Aviation Organisation has included the possibility of formation flying in a blueprint for new operational guidelines.",
+          "cn": "至于飞机飞行间距是否符合空中交通管制条例则是另一个问题，尽管国际民航组织的一个工作小组已经将编队飞行的可能性纳入了新操作指导的蓝本之中。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s19",
+          "para": 5,
+          "en": "It remains to be seen how weather conditions affect the air flows that make formation flight more efficient.",
+          "cn": "天气状况如何影响使编队飞行更高效的气流，尚待观望。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s20",
+          "para": 5,
+          "en": "In zones of increased turbulence, the planes' wakes will decay more quickly and the effect will diminish.",
+          "cn": "在强紊流区域，飞机的尾迹减弱得更快，效果也将消失。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s21",
+          "para": 5,
+          "en": "Dr. Kroo says this is one of the areas his team will investigate further.",
+          "cn": "克鲁博士说，该问题是他们团队将深入研究的领域之一。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s22",
+          "para": 5,
+          "en": "It might also be hard for airlines to co-ordinate the departure times and destinations of passenger aircraft in a way that would allow them to gain from formation flight.",
+          "cn": "除此之外，各航空公司也很难协调其客机起飞和降落时间同时又能使他们从编队飞行中获益。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s23",
+          "para": 5,
+          "en": "Cargo aircraft, in contrast, might be easier to reschedule, as might routine military flights.",
+          "cn": "比较之下，货运飞机可能更容易重新计划协调，就像常规军队飞行一样。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s24",
+          "para": 6,
+          "en": "As it happens, America's armed forces are on the case already.",
+          "cn": "巧合的是，美国军队已经在研究这一问题了。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s25",
+          "para": 6,
+          "en": "Earlier this year the country's Defence Advanced Research Projects Agency announced plans to pay Boeing to investigate formation flight, though the programme has yet to begin.",
+          "cn": "今年早些时候国防高级研究计划局宣布了将调拨资金以供波音公司研究编队飞行的计划，尽管这一项目还未开始。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s26",
+          "para": 6,
+          "en": "There are reports that some military aircraft flew in formation when they were low on fuel during the Second World War, but Dr. Lissaman says they are unsubstantiated.",
+          "cn": "有报道指出二战时期某些军用飞机在燃油不足的情况下以编队模式飞行，但是李萨曼博士说这些报道并无事实依据。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s27",
+          "para": 6,
+          "en": "\"My father was an RAF pilot and my cousin the skipper of a Lancaster lost over Berlin,\" he adds.",
+          "cn": "\"我的父亲是英国皇家飞行员，我的堂兄是兰卡斯特机长，曾在柏林上空失联，\"他补充道。",
+          "words": []
+        },
+        {
+          "id": "2010_newtype_s28",
+          "para": 6,
+          "en": "So he should know.",
+          "cn": "因此他应该了解情况。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2010_newtype_q41",
+          "number": 41,
+          "qtype": "判断",
+          "stem": "Findings of the Stanford University researchers will promote the sales of new Boeing and Airbus aircraft.",
+          "stem_cn": "斯坦福大学研究者的发现将对波音和空客的新型客机起到促销作用。",
+          "options": {
+            "T": "True",
+            "F": "False"
+          },
+          "options_cn": {
+            "T": "正确",
+            "F": "错误"
+          },
+          "answer": "F",
+          "explanation": "根据陈述中的Stanford University researchers、Boeing and Airbus aircraft等关键信息定位至首段。该段第三句指出，研究者发现仿生方式有助节省燃油，且无需购买新机型(would not require them to buy new aircraft)。由此可知本段头两句实为引子，用以引出更有效节能而不必研制新机型的方式：利用仿生学原理。所以该陈述中will promote the sales of...（促销新机型）与原文相左。",
+          "related_sentences": [
+            "2010_newtype_s01"
+          ]
+        },
+        {
+          "id": "2010_newtype_q42",
+          "number": 42,
+          "qtype": "判断",
+          "stem": "The upwash experience may save propelling energy as well as reducing resistance.",
+          "stem_cn": "上洗流经历可能会在减少阻力的同时节省推进能量。",
+          "options": {
+            "T": "True",
+            "F": "False"
+          },
+          "options_cn": {
+            "T": "正确",
+            "F": "错误"
+          },
+          "answer": "T",
+          "explanation": "根据陈述中的upwash、save propelling energy、reducing resistance等关键信息定位至第二段第四句。该句连同第三句阐释了飞鸟编队飞行节省体力的原理：鸟翼周围的风曲折上行→上洗流形成→位于其中的其他飞鸟阻力会相应减少→飞行能耗降低；文中flying in the upwash与陈述中的The upward experience相对应，说明实现节能的条件：身处上洗流中飞行；陈述中的save propelling energy as well as reducing resistance是对文中experienced reduced drag, and spend less energy propelling themselves的复述，resistance意为\"阻力\"，drag为\"拖，拽\"，此处均指飞行中的阻力。因而该陈述正确。",
+          "related_sentences": [
+            "2010_newtype_s01"
+          ]
+        },
+        {
+          "id": "2010_newtype_q43",
+          "number": 43,
+          "qtype": "判断",
+          "stem": "Formation flight is more comfortable because passengers can not see the other planes.",
+          "stem_cn": "编队飞行更舒适，因为乘客看不到其他飞机。",
+          "options": {
+            "T": "True",
+            "F": "False"
+          },
+          "options_cn": {
+            "T": "正确",
+            "F": "错误"
+          },
+          "answer": "F",
+          "explanation": "根据陈述中的Formation flight、comfortable、passengers等关键词定位至第四段。该段第三至五句针对人们可能的担忧，以问答形式指出编队飞行中由于飞机可以将间距设置较远，乘客不会由于看得到编队飞行而感到紧张不适。但陈述句中more comfortable强调编队飞行在舒适度上优于普通飞行，曲解原文信息。其次，该陈述中的肯定语气也与原文不符。该段为克鲁博士的推定，would、could be、would not be、might not even see等情态动词的使用体现了论述的严谨。因此该陈述有误。",
+          "related_sentences": [
+            "2010_newtype_s01"
+          ]
+        },
+        {
+          "id": "2010_newtype_q44",
+          "number": 44,
+          "qtype": "判断",
+          "stem": "The role that weather plays in formation flight has not yet been clearly defined.",
+          "stem_cn": "天气对编队飞行的影响尚不明确。",
+          "options": {
+            "T": "True",
+            "F": "False"
+          },
+          "options_cn": {
+            "T": "正确",
+            "F": "错误"
+          },
+          "answer": "T",
+          "explanation": "根据陈述中关键信息weather定位至第五段。首句指出\"天气状况如何对使编队飞行更有效率的气流产生影响\"这一问题尚需进一步研究，即\"天气对编队飞行的影响还不能确定\"。陈述中has not yet been clearly defined、The role that weather plays in formation flight分别与原文It remains to be seen、how weather conditions affect...more efficient对应。因此该陈述正确。",
+          "related_sentences": [
+            "2010_newtype_s01"
+          ]
+        },
+        {
+          "id": "2010_newtype_q45",
+          "number": 45,
+          "qtype": "判断",
+          "stem": "It has been documented that during World War Ⅱ, America's armed forces once tried formation flight to save fuel.",
+          "stem_cn": "有记载表明二战期间，美军曾经尝试编队飞行以节省燃油。",
+          "options": {
+            "T": "True",
+            "F": "False"
+          },
+          "options_cn": {
+            "T": "正确",
+            "F": "错误"
+          },
+          "answer": "F",
+          "explanation": "根据陈述中的关键信息during World War Ⅱ、America's armed forces定位至末段。该段第三句指出，有报道称军机曾在二战时期由于燃油不足而采取编队飞行，随后转而（but）引出李萨曼博士意见：这些报道并无事实根据。第四、五句指出其判断依据。该陈述句中It has been documented（有史料记载表明，有文件证明，即有凭据）与原文There are reports that...they are unsubstantiated相悖，因此该表述有误。",
+          "related_sentences": [
+            "2010_newtype_s01"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2010_cloze",
+      "type": "cloze",
+      "title": "The Outbreak of Swine Flu",
+      "topic": "甲型H1N1流感的爆发和防控",
+      "source": "Section I Use of English",
+      "sentences": [
+        {
+          "id": "2010_cloze_s01",
+          "para": 1,
+          "en": "The outbreak of swine flu that was first detected in Mexico was declared a global epidemic on June 11, 2009.",
+          "cn": "2009年6月11日，最初发现于墨西哥的猪流感的爆发被宣布为全球性传染病。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s02",
+          "para": 1,
+          "en": "It is the first worldwide epidemic [1] by the World Health Organization in 41 years.",
+          "cn": "它是世界卫生组织41年来指定的首个全球性传染病。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s03",
+          "para": 2,
+          "en": "The heightened alert [2] an emergency meeting with flu experts in Geneva that assembled after a sharp rise in cases in Australia, and rising [3] in Britain, Japan, Chile and elsewhere.",
+          "cn": "随着澳大利亚病例的急剧增多，以及英国、日本、智利和其他地区感染人数的不断上升，流感专家们在日内瓦召开了紧急会议，随后警惕升级。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s04",
+          "para": 3,
+          "en": "But the epidemic is \"[4]\" in severity, according to Margaret Chan, the organization's director general, [5] the overwhelming majority of patients experiencing only mild symptoms and a full recovery, often in the [6] of any medical treatment.",
+          "cn": "但世界卫生组织总干事陈冯富珍称，此次传染病的严重程度为\"中等\"，因为绝大多数患者只有轻微症状，通常不用借助任何治疗便能够完全康复。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s05",
+          "para": 4,
+          "en": "The outbreak came to global [7] in late April 2009, when Mexican authorities noted an unusually large number of hospitalizations and deaths [8] healthy adults.",
+          "cn": "该疫情的爆发在2009年4月末引起了全球性的关注，当时墨西哥当局注意到健康的成年人中出现了异常多的住院治疗和死亡病例。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s06",
+          "para": 4,
+          "en": "As much of Mexico City shut down at the height of a panic, cases began to [9] in New York City, the southwestern United States and around the world.",
+          "cn": "在墨西哥城大部分地区在恐慌高峰期关闭的同时，病情突然在纽约、美国西南部以及世界其他地区出现。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s07",
+          "para": 5,
+          "en": "In the United States, new cases seemed to fade [10] warmer weather arrived.",
+          "cn": "在美国，新病例似乎随着天气的转暖而逐渐变少了。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s08",
+          "para": 5,
+          "en": "But in late September 2009, officials reported there was [11] flu activity in almost every state and that virtually all the [12] tested are the new swine flu, also known as (A) H1N1, not seasonal flu.",
+          "cn": "但在2009年9月末，官方报告几乎每个州都有显著的流感蔓延情况，并且几乎所有化验的样本都是新型猪流感，也就是甲型H1N1流感，而不是季节性流感。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s09",
+          "para": 5,
+          "en": "In the U.S., it has [13] more than one million people, and caused more than 600 deaths and more than 6,000 hospitalizations.",
+          "cn": "在美国，这种病毒已经感染了百万余人，造成600多人死亡，6000多人住院治疗。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s10",
+          "para": 6,
+          "en": "Federal health officials [14] Tamiflu for children from the national stockpile and began [15] orders from the states for the new swine flu vaccine.",
+          "cn": "联邦卫生部官员从国家库存中发放了一些达菲（抗病毒药物），供孩子们使用，并开始接受各州的新型甲流疫苗订单。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s11",
+          "para": 6,
+          "en": "The new vaccine, which is different from the annual flu vaccine, is [16] ahead of expectations.",
+          "cn": "新疫苗不同于按年发放的普通流感疫苗，比预期的提早问世。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s12",
+          "para": 6,
+          "en": "More than three million doses were to be made available in early October 2009, though most of those [17] doses were of the FluMist nasal spray type, which is not [18] for pregnant women, people over 50 or those with breathing difficulties, heart disease or several other [19].",
+          "cn": "2009年10月初，有三百多万剂投入使用，尽管这批初期药剂中的大部分为FluMist鼻用喷雾剂型疫苗，是不建议孕妇、50岁以上、有呼吸困难、心脏疾病或一些其他疾病的人群使用的。",
+          "words": []
+        },
+        {
+          "id": "2010_cloze_s13",
+          "para": 6,
+          "en": "But it was still possible to vaccinate people in other high-risk groups: health care workers, people [20] infants and healthy young people.",
+          "cn": "但其他高危人群还是可以注射此疫苗的，如医护人员、照料婴幼儿的人以及健康的年轻人。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2010_cloze_q01",
+          "number": 1,
+          "qtype": "完形",
+          "stem": "第 1 空：选择最合适的词填入空白 [1]",
+          "stem_cn": "",
+          "options": {
+            "A": "criticized",
+            "B": "appointed",
+            "C": "commented",
+            "D": "designated"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义+动词词义辨析。空格所填入动词由世界卫生组织发出，作用于全球性传染病，[A][C]明显不符合文意，首先排除。[B]appoint通常接sb., sb. as sth.。[D]有\"命名，指定\"之意，代入表示\"世界卫生组织41年来指定（认定）的首个全球性传染病\"，符合文意。",
+          "related_sentences": [
+            "2010_cloze_s02"
+          ]
+        },
+        {
+          "id": "2010_cloze_q02",
+          "number": 2,
+          "qtype": "完形",
+          "stem": "第 2 空：选择最合适的词填入空白 [2]",
+          "stem_cn": "",
+          "options": {
+            "A": "proceeded",
+            "B": "activated",
+            "C": "followed",
+            "D": "prompted"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义。根据文意，澳洲及其他国家的疫情恶化之后，流感专家们召开了紧急会议，空格处动词用于说明召开会议与警惕升级之间的关系：是警惕升级致使会议召开，还是会议召开之后警惕升级。[A][B]明显不符合文意，首先排除。由于文中已明确指出是澳洲等地疫情的恶化促使了紧急会议的召开，而不是由于警惕的升级，排除[D]。[C]项代入表示，会议召开之后警惕升级，为正确选项。",
+          "related_sentences": [
+            "2010_cloze_s03"
+          ]
+        },
+        {
+          "id": "2010_cloze_q03",
+          "number": 3,
+          "qtype": "完形",
+          "stem": "第 3 空：选择最合适的词填入空白 [3]",
+          "stem_cn": "",
+          "options": {
+            "A": "digits",
+            "B": "numbers",
+            "C": "amounts",
+            "D": "sums"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义+名词词义辨析。空格前的现在分词rising是前文a sharp rise in cases的复现，均用于表示病例数（即感染人数）的增多。选项能表达人数的只有[B]。[A]表示数位。[C]常与不可数名词连用。[D]表示总数，金额。",
+          "related_sentences": [
+            "2010_cloze_s03"
+          ]
+        },
+        {
+          "id": "2010_cloze_q04",
+          "number": 4,
+          "qtype": "完形",
+          "stem": "第 4 空：选择最合适的词填入空白 [4]",
+          "stem_cn": "",
+          "options": {
+            "A": "moderate",
+            "B": "normal",
+            "C": "unusual",
+            "D": "extreme"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义+形容词辨析。空格处词语用于形容传染病的严重程度，根据下文\"绝大多数患者只有轻微症状，且能够完全康复\"可推断，病情并非太严重，[A]符合文意。",
+          "related_sentences": [
+            "2010_cloze_s04"
+          ]
+        },
+        {
+          "id": "2010_cloze_q05",
+          "number": 5,
+          "qtype": "完形",
+          "stem": "第 5 空：选择最合适的词填入空白 [5]",
+          "stem_cn": "",
+          "options": {
+            "A": "with",
+            "B": "in",
+            "C": "from",
+            "D": "by"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查介词用法+独立主格结构。本题考查独立主格结构，with引导的独立主格结构做状语，解释主干部分的\"传染病严重程度'中等'\"的原因。其结构为\"with+名词(the overwhelming majority of patients)+动词的-ing形式(experiencing...)\"，其他项均无此用法。因此[A]正确。",
+          "related_sentences": [
+            "2010_cloze_s04"
+          ]
+        },
+        {
+          "id": "2010_cloze_q06",
+          "number": 6,
+          "qtype": "完形",
+          "stem": "第 6 空：选择最合适的词填入空白 [6]",
+          "stem_cn": "",
+          "options": {
+            "A": "progress",
+            "B": "absence",
+            "C": "presence",
+            "D": "favor"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义+固定搭配。空格所在的介词短语是with独立主格结构的方式状语，这部分含义是：患者症状轻微，无需借助任何治疗便能够康复。[B]符合文意，其他项代入无法说通。",
+          "related_sentences": [
+            "2010_cloze_s04"
+          ]
+        },
+        {
+          "id": "2010_cloze_q07",
+          "number": 7,
+          "qtype": "完形",
+          "stem": "第 7 空：选择最合适的词填入空白 [7]",
+          "stem_cn": "",
+          "options": {
+            "A": "reality",
+            "B": "phenomenon",
+            "C": "concept",
+            "D": "notice"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义+常用搭配。根据下文，墨西哥当局发现了异常多的住院及死亡病例，而在美国纽约等其他世界各地也都出现了病例。由此推断，空格所在句应是想表达，随着疫情的扩散和恶化，疫情的爆发引起了全球性的关注（注意）。come to...notice为常用搭配，表示\"引起了…的关注（注意）\"，因此选[D]，其他项均无此用法。",
+          "related_sentences": [
+            "2010_cloze_s05"
+          ]
+        },
+        {
+          "id": "2010_cloze_q08",
+          "number": 8,
+          "qtype": "完形",
+          "stem": "第 8 空：选择最合适的词填入空白 [8]",
+          "stem_cn": "",
+          "options": {
+            "A": "over",
+            "B": "for",
+            "C": "among",
+            "D": "to"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查介词用法。根据文章，是说健康的成年人中出现了异常多的住院治疗和死亡病例，[C]among表示\"在……群体中\"，符合文意。",
+          "related_sentences": [
+            "2010_cloze_s05"
+          ]
+        },
+        {
+          "id": "2010_cloze_q09",
+          "number": 9,
+          "qtype": "完形",
+          "stem": "第 9 空：选择最合适的词填入空白 [9]",
+          "stem_cn": "",
+          "options": {
+            "A": "stay up",
+            "B": "crop up",
+            "C": "fill up",
+            "D": "cover up"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义+动词短语。根据文意，空格所在部分含义为\"在纽约及世界其他地区也开始出现病例\"。选项中只有[B]crop up\"突然出现，突然发生\"符合文意。",
+          "related_sentences": [
+            "2010_cloze_s06"
+          ]
+        },
+        {
+          "id": "2010_cloze_q10",
+          "number": 10,
+          "qtype": "完形",
+          "stem": "第 10 空：选择最合适的词填入空白 [10]",
+          "stem_cn": "",
+          "options": {
+            "A": "as",
+            "B": "if",
+            "C": "unless",
+            "D": "until"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查连词用法。根据文意，\"新病例逐渐变少\"与\"天气的转暖\"应是伴随关系，即随着天气的转暖，新病例逐渐变少。[A]符合文意，其他项均不能准确表达文意。",
+          "related_sentences": [
+            "2010_cloze_s07"
+          ]
+        },
+        {
+          "id": "2010_cloze_q11",
+          "number": 11,
+          "qtype": "完形",
+          "stem": "第 11 空：选择最合适的词填入空白 [11]",
+          "stem_cn": "",
+          "options": {
+            "A": "excessive",
+            "B": "enormous",
+            "C": "significant",
+            "D": "magnificent"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义+形容词辨析。上文指出新病例似乎随着天气的转暖而逐渐变少，空格所在句以but转折，引出实际情况与之不符，即9月末几乎每个州都有流感蔓延(flu activity)，空格所在词语用来形容流感蔓延的情况，[C]项指large enough to be noticeable or have noticeable effects，突出了流感蔓延情况的严重性和影响力，应引起注意，符合文意，为正确选项。[A]excessive强调\"过度，过分\"；[B]enormous强调尺寸、数量的巨大；[D]magnificent强调气势的宏伟、外观的壮丽，均不符合原文语境。",
+          "related_sentences": [
+            "2010_cloze_s08"
+          ]
+        },
+        {
+          "id": "2010_cloze_q12",
+          "number": 12,
+          "qtype": "完形",
+          "stem": "第 12 空：选择最合适的词填入空白 [12]",
+          "stem_cn": "",
+          "options": {
+            "A": "categories",
+            "B": "examples",
+            "C": "patterns",
+            "D": "samples"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义+名词词义辨析。根据文意，空格所在句应指经化验的病毒样本都是新型猪流感，[D]可指化验的取样、样本，切合文意，正确。[A][B][C]均不符合文中\"在流感大规模爆发时，研究疫情\"的语境，予以排除。",
+          "related_sentences": [
+            "2010_cloze_s08"
+          ]
+        },
+        {
+          "id": "2010_cloze_q13",
+          "number": 13,
+          "qtype": "完形",
+          "stem": "第 13 空：选择最合适的词填入空白 [13]",
+          "stem_cn": "",
+          "options": {
+            "A": "imparted",
+            "B": "immersed",
+            "C": "injected",
+            "D": "infected"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义+形近词辨析。空格处词语用来形容病毒与人的关系，[A][B][C]明显不符合文意。[D]代入指病毒已感染百万余人，造成600多人死亡，6000多人住院治疗，符合文意。",
+          "related_sentences": [
+            "2010_cloze_s09"
+          ]
+        },
+        {
+          "id": "2010_cloze_q14",
+          "number": 14,
+          "qtype": "完形",
+          "stem": "第 14 空：选择最合适的词填入空白 [14]",
+          "stem_cn": "",
+          "options": {
+            "A": "released",
+            "B": "relayed",
+            "C": "relieved",
+            "D": "remained"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义+形近词辨析。根据文意，联邦卫生部官员从国家库存中……一些达菲，供孩子们使用。[B][C][D]明显与文意不符。[A]release与from搭配，表示\"从……释放，发放\"，符合文意。",
+          "related_sentences": [
+            "2010_cloze_s10"
+          ]
+        },
+        {
+          "id": "2010_cloze_q15",
+          "number": 15,
+          "qtype": "完形",
+          "stem": "第 15 空：选择最合适的词填入空白 [15]",
+          "stem_cn": "",
+          "options": {
+            "A": "placing",
+            "B": "delivering",
+            "C": "taking",
+            "D": "giving"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查句内语义+动宾搭配。空格所在处结构为Federal health officials began...orders from the states，空格处词语说明联邦卫生部官员与来自各州订单的关系，根据文意应是联邦卫生部官员从国家库存中发放抗病毒药物，并开始接受来自各州的疫苗订单，即各州向联邦卫生部订购新疫苗以控制疫情，而不是联邦卫生部向各州订购新疫苗，排除[A][D]；而新疫苗此时尚未研发出来，因此还不能\"向各州交付疫苗\"，[B]项也排除，因此选[C]。",
+          "related_sentences": [
+            "2010_cloze_s10"
+          ]
+        },
+        {
+          "id": "2010_cloze_q16",
+          "number": 16,
+          "qtype": "完形",
+          "stem": "第 16 空：选择最合适的词填入空白 [16]",
+          "stem_cn": "",
+          "options": {
+            "A": "feasible",
+            "B": "available",
+            "C": "reliable",
+            "D": "applicable"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义。本句承接上句\"各州都向联邦预定新疫苗\"，开始介绍新疫苗的研发情况。本句大意为：新疫苗比预期更早……，下文紧接着指出2009年10月初，有三百多万剂投入使用(available)，可知available应为空格处词语的复现，[B]正确。",
+          "related_sentences": [
+            "2010_cloze_s11"
+          ]
+        },
+        {
+          "id": "2010_cloze_q17",
+          "number": 17,
+          "qtype": "完形",
+          "stem": "第 17 空：选择最合适的词填入空白 [17]",
+          "stem_cn": "",
+          "options": {
+            "A": "prevalent",
+            "B": "principal",
+            "C": "innovative",
+            "D": "initial"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。空格部分所指的药剂即为上文提到的\"2009年10月初投入使用的药剂\"，即首期投入使用的新疫苗。[D]正确，代入指\"大部分初期药剂为FluMist鼻用喷雾剂型疫苗\"。",
+          "related_sentences": [
+            "2010_cloze_s12"
+          ]
+        },
+        {
+          "id": "2010_cloze_q18",
+          "number": 18,
+          "qtype": "完形",
+          "stem": "第 18 空：选择最合适的词填入空白 [18]",
+          "stem_cn": "",
+          "options": {
+            "A": "presented",
+            "B": "restricted",
+            "C": "recommended",
+            "D": "introduced"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义。空格所在部分指出大部分初期药剂\"not...for pregnant women,...\"，空格处填入词语与for连用，表明药剂与后文所述人群的关系，选项中只有[C]符合文意，代入指\"新药剂不建议孕妇、50岁以上或有呼吸困难等的人使用\"。",
+          "related_sentences": [
+            "2010_cloze_s12"
+          ]
+        },
+        {
+          "id": "2010_cloze_q19",
+          "number": 19,
+          "qtype": "完形",
+          "stem": "第 19 空：选择最合适的词填入空白 [19]",
+          "stem_cn": "",
+          "options": {
+            "A": "problems",
+            "B": "issues",
+            "C": "agonies",
+            "D": "sufferings"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义+熟词僻义。空格部分继续列举不宜使用首批新型疫苗的人：those with breathing difficulties, heart disease or several other...，由于several other...与前面的\"呼吸困难\"、\"心脏疾病\"这两种疾病是并列关系，因此空格处填入的词也需要表示\"疾病\"。problem可做\"疾病\"讲，如：Does she have any long term health problems?她有什么慢性病吗？因此[A]为正确项。",
+          "related_sentences": [
+            "2010_cloze_s12"
+          ]
+        },
+        {
+          "id": "2010_cloze_q20",
+          "number": 20,
+          "qtype": "完形",
+          "stem": "第 20 空：选择最合适的词填入空白 [20]",
+          "stem_cn": "",
+          "options": {
+            "A": "involved in",
+            "B": "caring for",
+            "C": "concerned with",
+            "D": "warding off"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查句内语义。空格处短语用于形容人员(people)与婴儿(infants)之间的关系，选项中只有[B]代入文意通顺，表示\"照料婴幼儿的人\"；而这类人自然是很有必要接受免疫接种的人群，文意也正确。因此选[B]。",
+          "related_sentences": [
+            "2010_cloze_s13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2010_translation",
+      "type": "translation",
+      "title": "Sustainability",
+      "topic": "泰德·宁对承受力的体会",
+      "source": "Section III Translation",
+      "ref_cn": "最近，\"承受力\"成了一个流行词，但对泰德·宁来说，他对其含义有自己亲身的体会。在经历了一段无法承受的痛苦生活后，他清楚地认识到，旨在提高承受力的价值观只有通过每日的行为和抉择才能得到体现。宁回忆起90年代后期销售保险时那困惑的一年。在经历了网络泡沫的膨胀和破灭后，他急需找到一份工作，因此就与博尔德公司签了约。但情况并不顺利。\"这的确是糟糕的一步，因为它激不起我的工作热情。\"宁说。不出所料，工作上的进退维谷造成他销售业绩不佳。\"我很痛苦，愁肠百结，常常在半夜惊醒，望着天花板发愣。我身无分文，需要这份工作。大家都说，'等等看，过一段时间情况会好转的。'\"",
+      "sentences": [
+        {
+          "id": "2010_translation_s01",
+          "para": 1,
+          "en": "\"Sustainability\" has become a popular word these days, but to Ted Ning, the concept will always have personal meaning.",
+          "cn": "最近，\"承受力\"成了一个流行词，但对泰德·宁来说，他对其含义有自己亲身的体会。",
+          "words": []
+        },
+        {
+          "id": "2010_translation_s02",
+          "para": 1,
+          "en": "Having endured a painful period of unsustainability in his own life made it clear to him that sustainability-oriented values must be expressed through everyday action and choice.",
+          "cn": "在经历了一段无法承受的痛苦生活后，他清楚地认识到，旨在提高承受力的价值观只有通过每日的行为和抉择才能得到体现。",
+          "words": []
+        },
+        {
+          "id": "2010_translation_s03",
+          "para": 2,
+          "en": "Ning recalls spending a confusing year in the late 1990s selling insurance. He'd been through the dot-com boom and burst and, desperate for a job, signed on with a Boulder agency.",
+          "cn": "宁回忆起90年代后期销售保险时那困惑的一年。在经历了网络泡沫的膨胀和破灭后，他急需找到一份工作，因此就与博尔德公司签了约。",
+          "words": []
+        },
+        {
+          "id": "2010_translation_s04",
+          "para": 3,
+          "en": "It didn't go well. \"It was a really bad move because that's not my passion,\" says Ning, whose dilemma about the job translated, predictably, into a lack of sales.",
+          "cn": "但情况并不顺利。\"这的确是糟糕的一步，因为它激不起我的工作热情。\"宁说。不出所料，工作上的进退维谷造成他销售业绩不佳。",
+          "words": []
+        },
+        {
+          "id": "2010_translation_s05",
+          "para": 3,
+          "en": "\"I was miserable. I had so much anxiety that I would wake up in the middle of the night and stare at the ceiling. I had no money and needed the job. Everyone said, 'Just wait, you'll turn the corner, give it some time.'\"",
+          "cn": "\"我很痛苦，愁肠百结，常常在半夜惊醒，望着天花板发愣。我身无分文，需要这份工作。大家都说，'等等看，过一段时间情况会好转的。'\"",
+          "words": []
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "2010_writinga",
+      "type": "writing_a",
+      "title": "Part A 应用文：感谢对方接待",
+      "topic": "感谢美国同事的热情接待并邀请其来华参观",
+      "source": "Section IV Writing Part A",
+      "sample_en": "My Dear Friend,\nThank you very much for receiving me, a delegate of Sino American cultural exchange program, during my visit to America. Your considerate and warm reception made me feel at home. You kindly provided detailed explanation of American custom, assisting me to get over culture shock soon and, more importantly, have deeper understanding of American culture. I had a great time there, and I really appreciate everything you have done for me.\nAdditionally, I highly welcome you to come to China in due course so that I can reciprocate your hospitality. I promise you a fantastic visit, through which you may gain a deep insight into Chinese culture. Look forward to your visit.\nYours sincerely,\nZhang Wei",
+      "sample_cn": "亲爱的朋友：\n非常感谢你在我作为中方代表去美国参加中美文化交流项目期间接待我。你体贴热情的款待让我感到在家般的轻松自在。你详尽地解说了美国的风俗，帮助我很快克服文化冲击。更重要的是，还帮我更加深入地了解了美国文化。我在那儿非常开心，我真的感激你为我做的一切。\n此外，我热烈欢迎你有空的时候来中国，这样我可以回报你的热情款待。我保证你会拥有一次极棒的旅行，通过这次参观你会深入了解中国文化。期待你的到来。\n诚挚的，\n张伟",
+      "questions": []
+    },
+    {
+      "id": "2010_writingb",
+      "type": "writing_b",
+      "title": "Part B 图表作文：手机用户量增长情况对比",
+      "topic": "发展中国家与发达国家2000-2008年手机用户量增长情况对比",
+      "source": "Section IV Writing Part B",
+      "sample_en": "As is demonstrated in the diagram, from 2000 to 2008, the mobile-phone subscription number grew sharply from 0.5 billion to 4 billion in developing countries. Contrastingly, during the same period, there was only a moderate increase (from 0.7 billion to 1 billion) in developed countries.\nDifferent performance was due to different market environment. In developing countries, the mobile phone market hadn't reached saturation. Considering the population size there, the number of potential customers would be enormous. Thanks to the economic boom, an increasing number of potential customers gradually joined the market, resulting in the take off of mobile phone subscriptions. However, in developed countries, there was a saturated market, leaving little room for growth.\nSince the mobile phone market remains vast and the economy is still growing steadily in developing countries, the number of mobile phone subscribers there will continue to grow at a fast rate; nevertheless, the growth will slow down as the market reaches saturation. In comparison, the market has reached saturation in developed countries, so the growth of mobile phone subscription number is expected to remain stagnant unless extra demand is stimulated.",
+      "sample_cn": "如图所示，在2000年至2008年，发展中国家的手机用户量从5亿猛增到了40亿。与此相对，在同一时段，发达国家的手机用户量只有缓慢的增长（从7亿到10亿）。\n不同的市场表现取决于不同的市场环境。在发展中国家，手机市场并没有达到饱和。考虑到其庞大的人口，潜在消费者的数量是巨大的。由于经济的腾飞，越来越多的潜在消费者进入手机市场，引起了手机用户量的猛增。然而，在发达国家，由于市场已经饱和，使得手机用户量的增长余地很少。\n在发展中国家，由于手机市场广阔，并且经济仍然在稳步地发展，手机用户量将会持续快速增长。然而，随着市场达到饱和，增速也会逐渐下降。相比之下，发达国家的市场已经达到饱和，因此，除非刺激额外的需求，手机用户量的增长将会停滞不前。",
+      "chart_img": "img/2010_writingb_chart.png",
+      "questions": []
     }
   ]
 }

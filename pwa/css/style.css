@@ -439,37 +439,25 @@ html.dark .nav-timer-btn {
     margin-bottom: 18px;
 }
 
-/* 作文模块：题目要求 + 参考范文 */
-.writing-directions {
-    background: var(--primary-soft);
-    border-radius: 8px;
-    padding: 12px 14px;
-    margin-bottom: 18px;
-    font-size: 0.9rem;
-    color: var(--primary-dark);
-}
-
-html.dark .writing-directions {
-    color: #7edcd2;
-}
-
-.writing-directions .rs-label {
-    font-weight: 700;
-    margin-bottom: 6px;
-    display: block;
-}
-
-.writing-dir-text {
-    white-space: pre-wrap;
-    line-height: 1.6;
-}
-
 .writing-sample {
     border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
     border-radius: 8px;
     padding: 12px 14px;
     margin-bottom: 18px;
 }
+
+.writing-chart {
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.writing-chart img {
+    max-width: 100%;
+    max-height: 420px;
+    border-radius: 8px;
+    border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
+}
+
 
 .writing-sample .rs-label {
     font-weight: 700;

@@ -1,5 +1,24 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [en2-v36] 2026-08-06
+
+### 四大模块覆盖全部 16 年（2010–2025），新题型三种题型统一支持
+
+- **数据**：为 2010–2025 全部 16 年补齐**完形填空 / 新题型 / 翻译 / 作文**四大模块（每年 5 篇新文章），全部官方原文/译文/精解/范文，来自各年真题与官方解析 PDF。
+  - 完形填空：每年 20 题（选项/答案/官方精解），正文 `[n]` 空格作答。
+  - 新题型三种题型统一支持：**多项对应**（匹配）、**小标题对应**（小标题）、**判断 T/F**（2010），共用 `pool` 选项池 + `answer` 指向池 key。
+  - 翻译：正文逐句 + `ref_cn` 官方全文参考译文。
+  - 作文：Part A/B 官方范文中英对照；Part B 大作文附**真题图表截图**（`pwa/img/{year}_writingb_chart.png`，从真题 PDF 渲染）。
+- **数据勘误**：修正 2014 完形答案（官方解析核对：`BACADACCDBABCDBDADCB`，此前误用 `BADDAABCBDACBDCDACDB`）；2014 新题型第 45 题修正为 A。
+- **`tools/extracted/modules/{year}_extra.json`**：每年 5 篇文章的独立数据片段，`tools/merge_modules.py` 合并进 `pwa/data/{year}.json` 并同步 `index.json`。
+- **`tools/validate.py`**：支持三种新题型、模块型文章校验（翻译查 ref_cn、作文查 sample_en/sample_cn）。
+- **前端**：
+  - `pwa/js/storage.js` `TYPE_NAMES`：完形/新题型/翻译/写作 PartA/PartB。
+  - `pwa/index.html` 排序数组含新模块。
+  - `pwa/js/article.js`：翻译/作文隐藏做题面板（`NO_QUIZ_TYPES`）；作文渲染官方范文 + 图表（`chart_img`）；点全文翻译时标题自动展开（`showReadTitle`）；新题型 pool 选项池空对象 fallback 修复。
+  - `pwa/css/style.css`：`.writing-chart`、`.translation-ref` 等样式；移除作文题目框样式。
+- **`pwa/sw.js`**：预缓存 16 年图表 PNG，CACHE_VER 升至 `en2-v36`。
+
 ## [en2-v35] 2026-08-05
 
 ### 新增完形填空 / 新题型 / 翻译 / 作文四大模块（2014 试点）

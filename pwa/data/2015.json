@@ -10,37 +10,497 @@
       "topic": "在家比上班更累：家务与角色模糊带来的压力",
       "source": "2015 年考研英语（二）Text 1 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2015_text1_s01", "para": 1, "en": "A new study suggests that contrary to most surveys, people are actually more stressed at home than at work.", "cn": "一项新研究表明，与大多数调查相反，人们实际上在家里比在工作时压力更大。", "words": [ { "w": "contrary to", "meaning": "与……相反" }, { "w": "more stressed at home than at work", "meaning": "在家比上班压力更大" } ] },
-        { "id": "2015_text1_s02", "para": 1, "en": "Researchers measured people's cortisol, which is a stress marker, while they were at work and while they were at home and found it higher at what is supposed to be a place of refuge.", "cn": "研究者对人们在工作和家里时的皮质醇（精神压力的一种标志）进行了检测，结果显示，在人们普遍认为是避风港的环境中，皮质醇的含量更高。", "words": [ { "w": "cortisol", "phonetic": "/ˈkɔːtɪsɒl/", "meaning": "n. 皮质醇" }, { "w": "stress marker", "meaning": "压力标志" }, { "w": "a place of refuge", "meaning": "避风港" } ] },
-        { "id": "2015_text1_s03", "para": 2, "en": "\"Further contradicting conventional wisdom, we found that women as well as men have lower levels of stress at work than at home,\" writes one of the researchers, Sarah Damaske.", "cn": "“与普遍看法更加矛盾的是，我们发现女性和男性一样，上班比在家中压力更小。”研究者之一萨拉·达玛斯克写道。", "words": [ { "w": "contradicting conventional wisdom", "meaning": "与传统观念相矛盾" }, { "w": "as well as", "meaning": "和，以及（重心在前者）" }, { "w": "lower levels of stress", "meaning": "更低的压力水平" } ] },
-        { "id": "2015_text1_s04", "para": 2, "en": "In fact women even say they feel better at work, she notes.", "cn": "她指出，事实上女性甚至说她们上班时感觉更好。", "words": [ { "w": "feel better at work", "meaning": "上班时感觉更好" } ] },
-        { "id": "2015_text1_s05", "para": 2, "en": "\"It is men, not women, who report being happier at home than at work.\"", "cn": "“声称在家中更有幸福感的是男性而非女性。”", "words": [ { "w": "report", "meaning": "v.（从自身感受出发）声称，叙述" }, { "w": "happier at home than at work", "meaning": "在家比上班更幸福" } ] },
-        { "id": "2015_text1_s06", "para": 2, "en": "Another surprise is that the findings hold true for both those with children and without, but more so for nonparents.", "cn": "另一项令人惊讶的结论是，该发现对有无子女者来说都适用，不过对于无子女者来说更甚。", "words": [ { "w": "hold true", "meaning": "成立，适用" }, { "w": "nonparents", "meaning": "n. 没有子女的人" } ] },
-        { "id": "2015_text1_s07", "para": 2, "en": "This is why people who work outside the home have better health.", "cn": "这就解释了为什么在外工作的人更加健康。", "words": [ { "w": "work outside the home", "meaning": "在外工作" } ] },
-        { "id": "2015_text1_s08", "para": 3, "en": "What the study doesn't measure is whether people are still doing work when they're at home, whether it is household work or work brought home from the office.", "cn": "这项研究对于“人们回家后是否继续工作，这种工作属于家务还是从办公室带回”并未作出考量。", "words": [ { "w": "household work", "meaning": "家务活" }, { "w": "brought home from the office", "meaning": "从办公室带回家" } ] },
-        { "id": "2015_text1_s09", "para": 3, "en": "For many men, the end of the workday is a time to kick back.", "cn": "对于许多男性来说，工作日结束之时便是放松的时刻。", "words": [ { "w": "kick back", "meaning": "放松，休息" } ] },
-        { "id": "2015_text1_s10", "para": 3, "en": "For women who stay home, they never get to leave the office.", "cn": "对家中的女性来说，她们却没有“离开办公室”的机会。", "words": [ { "w": "stay home", "meaning": "待在家里，全职在家" }, { "w": "never get to", "meaning": "从来没机会……" } ] },
-        { "id": "2015_text1_s11", "para": 3, "en": "And for women who work outside the home, they often are playing catch-up-with-household tasks.", "cn": "对在外工作的女性而言，她们常常回家后还要赶着完成家务活儿。", "words": [ { "w": "catch-up-with-household tasks", "meaning": "追赶（未完成的）家务活" } ] },
-        { "id": "2015_text1_s12", "para": 3, "en": "With the blurring of roles, and the fact that the home front lags well behind the workplace in making adjustments for working women, it's not surprising that women are more stressed at home.", "cn": "由于角色的模糊，以及职业女性在家庭大后方比在职场中更难作出自我调整这一事实，女性在家中压力更大也就不足为奇了。", "words": [ { "w": "the blurring of roles", "meaning": "角色的模糊" }, { "w": "lags well behind", "meaning": "远远落后于" }, { "w": "the home front", "meaning": "家庭大后方" } ] },
-        { "id": "2015_text1_s13", "para": 4, "en": "But it's not just a gender thing.", "cn": "但这不仅仅是性别的问题。", "words": [ { "w": "a gender thing", "meaning": "性别方面的问题" } ] },
-        { "id": "2015_text1_s14", "para": 4, "en": "At work, people pretty much know what they're supposed to be doing: working, making money, doing the tasks they have to do in order to draw an income.", "cn": "工作中，人们更清楚他们应该做什么：干活、赚钱、完成硬性任务从而获得收入。", "words": [ { "w": "pretty much", "meaning": "差不多，几乎" }, { "w": "draw an income", "meaning": "赚取收入" } ] },
-        { "id": "2015_text1_s15", "para": 4, "en": "The bargain is very pure: Employee puts in hours of physical or mental labor and employee draws out life-sustaining moola.", "cn": "这种协议很纯粹：员工投入数小时体力和脑力劳动，取得维持生计的钱。", "words": [ { "w": "bargain", "meaning": "n. 交易，协议" }, { "w": "physical or mental labor", "meaning": "体力或脑力劳动" }, { "w": "life-sustaining moola", "meaning": "维持生计的钱（moola 为“钱”的俚语）" } ] },
-        { "id": "2015_text1_s16", "para": 5, "en": "On the home front, however, people have no such clarity.", "cn": "然而，在家庭大后方，情况没有这么明确。", "words": [ { "w": "no such clarity", "meaning": "没有这种明确性" } ] },
-        { "id": "2015_text1_s17", "para": 5, "en": "Rare is the household in which the division of labor is so clinically and methodically laid out.", "cn": "很少有家庭能不偏不倚且有序地安排家务活儿。", "words": [ { "w": "division of labor", "meaning": "分工" }, { "w": "clinically and methodically", "meaning": "像临床般冷静而有条理地" }, { "w": "laid out", "meaning": "安排，规划" } ] },
-        { "id": "2015_text1_s18", "para": 5, "en": "There are a lot of tasks to be done, there are inadequate rewards for most of them.", "cn": "有许多家务事要做，大部分人却得不到足够的奖励。", "words": [ { "w": "inadequate rewards", "meaning": "不足的回报" } ] },
-        { "id": "2015_text1_s19", "para": 5, "en": "Your home colleagues - your family - have no clear rewards for their labor; they need to be talked into it, or if they're teenagers, threatened with complete removal of all electronic devices.", "cn": "你的家庭同事——你的家人——对家务劳动没有明确的奖励；他们需要被劝服去做家务，或者如果他们是青少年的话，需要以“切断一切电子设备”为威胁让他们完成家务。", "words": [ { "w": "talked into it", "meaning": "被劝说去做某事" }, { "w": "threatened with", "meaning": "以……相威胁" }, { "w": "electronic devices", "meaning": "电子设备" } ] },
-        { "id": "2015_text1_s20", "para": 5, "en": "Plus, they're your family.", "cn": "而且，他们是家人。", "words": [ { "w": "Plus", "meaning": "adv. 而且，再加上" } ] },
-        { "id": "2015_text1_s21", "para": 5, "en": "You cannot fire your family.", "cn": "你不可能解雇自己的家人。", "words": [ { "w": "fire", "meaning": "v. 解雇" } ] },
-        { "id": "2015_text1_s22", "para": 5, "en": "You never really get to go home from home.", "cn": "你永远不会真正地从家务劳动中解放出来。", "words": [ { "w": "go home from home", "meaning": "从家里“下班回家”（指在家也无法真正歇下来）" } ] },
-        { "id": "2015_text1_s23", "para": 6, "en": "So it's not surprising that people are more stressed at home.", "cn": "因此人们在家中压力更大不足为奇。", "words": [ { "w": "not surprising", "meaning": "不足为奇" } ] },
-        { "id": "2015_text1_s24", "para": 6, "en": "Not only are the tasks apparently infinite, the co-workers are much harder to motivate.", "cn": "这不仅仅是由于任务似乎没完没了，还由于激发“同事”的积极性要困难得多。", "words": [ { "w": "apparently infinite", "meaning": "看似无穷无尽" }, { "w": "harder to motivate", "meaning": "更难激励" } ] }
+        {
+          "id": "2015_text1_s01",
+          "para": 1,
+          "en": "A new study suggests that contrary to most surveys, people are actually more stressed at home than at work.",
+          "cn": "一项新研究表明，与大多数调查相反，人们实际上在家里比在工作时压力更大。",
+          "words": [
+            {
+              "w": "contrary to",
+              "meaning": "与……相反"
+            },
+            {
+              "w": "more stressed at home than at work",
+              "meaning": "在家比上班压力更大"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s02",
+          "para": 1,
+          "en": "Researchers measured people's cortisol, which is a stress marker, while they were at work and while they were at home and found it higher at what is supposed to be a place of refuge.",
+          "cn": "研究者对人们在工作和家里时的皮质醇（精神压力的一种标志）进行了检测，结果显示，在人们普遍认为是避风港的环境中，皮质醇的含量更高。",
+          "words": [
+            {
+              "w": "cortisol",
+              "phonetic": "/ˈkɔːtɪsɒl/",
+              "meaning": "n. 皮质醇"
+            },
+            {
+              "w": "stress marker",
+              "meaning": "压力标志"
+            },
+            {
+              "w": "a place of refuge",
+              "meaning": "避风港"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s03",
+          "para": 2,
+          "en": "\"Further contradicting conventional wisdom, we found that women as well as men have lower levels of stress at work than at home,\" writes one of the researchers, Sarah Damaske.",
+          "cn": "“与普遍看法更加矛盾的是，我们发现女性和男性一样，上班比在家中压力更小。”研究者之一萨拉·达玛斯克写道。",
+          "words": [
+            {
+              "w": "contradicting conventional wisdom",
+              "meaning": "与传统观念相矛盾"
+            },
+            {
+              "w": "as well as",
+              "meaning": "和，以及（重心在前者）"
+            },
+            {
+              "w": "lower levels of stress",
+              "meaning": "更低的压力水平"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s04",
+          "para": 2,
+          "en": "In fact women even say they feel better at work, she notes.",
+          "cn": "她指出，事实上女性甚至说她们上班时感觉更好。",
+          "words": [
+            {
+              "w": "feel better at work",
+              "meaning": "上班时感觉更好"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s05",
+          "para": 2,
+          "en": "\"It is men, not women, who report being happier at home than at work.\"",
+          "cn": "“声称在家中更有幸福感的是男性而非女性。”",
+          "words": [
+            {
+              "w": "report",
+              "meaning": "v.（从自身感受出发）声称，叙述"
+            },
+            {
+              "w": "happier at home than at work",
+              "meaning": "在家比上班更幸福"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s06",
+          "para": 2,
+          "en": "Another surprise is that the findings hold true for both those with children and without, but more so for nonparents.",
+          "cn": "另一项令人惊讶的结论是，该发现对有无子女者来说都适用，不过对于无子女者来说更甚。",
+          "words": [
+            {
+              "w": "hold true",
+              "meaning": "成立，适用"
+            },
+            {
+              "w": "nonparents",
+              "meaning": "n. 没有子女的人"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s07",
+          "para": 2,
+          "en": "This is why people who work outside the home have better health.",
+          "cn": "这就解释了为什么在外工作的人更加健康。",
+          "words": [
+            {
+              "w": "work outside the home",
+              "meaning": "在外工作"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s08",
+          "para": 3,
+          "en": "What the study doesn't measure is whether people are still doing work when they're at home, whether it is household work or work brought home from the office.",
+          "cn": "这项研究对于“人们回家后是否继续工作，这种工作属于家务还是从办公室带回”并未作出考量。",
+          "words": [
+            {
+              "w": "household work",
+              "meaning": "家务活"
+            },
+            {
+              "w": "brought home from the office",
+              "meaning": "从办公室带回家"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s09",
+          "para": 3,
+          "en": "For many men, the end of the workday is a time to kick back.",
+          "cn": "对于许多男性来说，工作日结束之时便是放松的时刻。",
+          "words": [
+            {
+              "w": "kick back",
+              "meaning": "放松，休息"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s10",
+          "para": 3,
+          "en": "For women who stay home, they never get to leave the office.",
+          "cn": "对家中的女性来说，她们却没有“离开办公室”的机会。",
+          "words": [
+            {
+              "w": "stay home",
+              "meaning": "待在家里，全职在家"
+            },
+            {
+              "w": "never get to",
+              "meaning": "从来没机会……"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s11",
+          "para": 3,
+          "en": "And for women who work outside the home, they often are playing catch-up-with-household tasks.",
+          "cn": "对在外工作的女性而言，她们常常回家后还要赶着完成家务活儿。",
+          "words": [
+            {
+              "w": "catch-up-with-household tasks",
+              "meaning": "追赶（未完成的）家务活"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s12",
+          "para": 3,
+          "en": "With the blurring of roles, and the fact that the home front lags well behind the workplace in making adjustments for working women, it's not surprising that women are more stressed at home.",
+          "cn": "由于角色的模糊，以及职业女性在家庭大后方比在职场中更难作出自我调整这一事实，女性在家中压力更大也就不足为奇了。",
+          "words": [
+            {
+              "w": "the blurring of roles",
+              "meaning": "角色的模糊"
+            },
+            {
+              "w": "lags well behind",
+              "meaning": "远远落后于"
+            },
+            {
+              "w": "the home front",
+              "meaning": "家庭大后方"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s13",
+          "para": 4,
+          "en": "But it's not just a gender thing.",
+          "cn": "但这不仅仅是性别的问题。",
+          "words": [
+            {
+              "w": "a gender thing",
+              "meaning": "性别方面的问题"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s14",
+          "para": 4,
+          "en": "At work, people pretty much know what they're supposed to be doing: working, making money, doing the tasks they have to do in order to draw an income.",
+          "cn": "工作中，人们更清楚他们应该做什么：干活、赚钱、完成硬性任务从而获得收入。",
+          "words": [
+            {
+              "w": "pretty much",
+              "meaning": "差不多，几乎"
+            },
+            {
+              "w": "draw an income",
+              "meaning": "赚取收入"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s15",
+          "para": 4,
+          "en": "The bargain is very pure: Employee puts in hours of physical or mental labor and employee draws out life-sustaining moola.",
+          "cn": "这种协议很纯粹：员工投入数小时体力和脑力劳动，取得维持生计的钱。",
+          "words": [
+            {
+              "w": "bargain",
+              "meaning": "n. 交易，协议"
+            },
+            {
+              "w": "physical or mental labor",
+              "meaning": "体力或脑力劳动"
+            },
+            {
+              "w": "life-sustaining moola",
+              "meaning": "维持生计的钱（moola 为“钱”的俚语）"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s16",
+          "para": 5,
+          "en": "On the home front, however, people have no such clarity.",
+          "cn": "然而，在家庭大后方，情况没有这么明确。",
+          "words": [
+            {
+              "w": "no such clarity",
+              "meaning": "没有这种明确性"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s17",
+          "para": 5,
+          "en": "Rare is the household in which the division of labor is so clinically and methodically laid out.",
+          "cn": "很少有家庭能不偏不倚且有序地安排家务活儿。",
+          "words": [
+            {
+              "w": "division of labor",
+              "meaning": "分工"
+            },
+            {
+              "w": "clinically and methodically",
+              "meaning": "像临床般冷静而有条理地"
+            },
+            {
+              "w": "laid out",
+              "meaning": "安排，规划"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s18",
+          "para": 5,
+          "en": "There are a lot of tasks to be done, there are inadequate rewards for most of them.",
+          "cn": "有许多家务事要做，大部分人却得不到足够的奖励。",
+          "words": [
+            {
+              "w": "inadequate rewards",
+              "meaning": "不足的回报"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s19",
+          "para": 5,
+          "en": "Your home colleagues - your family - have no clear rewards for their labor; they need to be talked into it, or if they're teenagers, threatened with complete removal of all electronic devices.",
+          "cn": "你的家庭同事——你的家人——对家务劳动没有明确的奖励；他们需要被劝服去做家务，或者如果他们是青少年的话，需要以“切断一切电子设备”为威胁让他们完成家务。",
+          "words": [
+            {
+              "w": "talked into it",
+              "meaning": "被劝说去做某事"
+            },
+            {
+              "w": "threatened with",
+              "meaning": "以……相威胁"
+            },
+            {
+              "w": "electronic devices",
+              "meaning": "电子设备"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s20",
+          "para": 5,
+          "en": "Plus, they're your family.",
+          "cn": "而且，他们是家人。",
+          "words": [
+            {
+              "w": "Plus",
+              "meaning": "adv. 而且，再加上"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s21",
+          "para": 5,
+          "en": "You cannot fire your family.",
+          "cn": "你不可能解雇自己的家人。",
+          "words": [
+            {
+              "w": "fire",
+              "meaning": "v. 解雇"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s22",
+          "para": 5,
+          "en": "You never really get to go home from home.",
+          "cn": "你永远不会真正地从家务劳动中解放出来。",
+          "words": [
+            {
+              "w": "go home from home",
+              "meaning": "从家里“下班回家”（指在家也无法真正歇下来）"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s23",
+          "para": 6,
+          "en": "So it's not surprising that people are more stressed at home.",
+          "cn": "因此人们在家中压力更大不足为奇。",
+          "words": [
+            {
+              "w": "not surprising",
+              "meaning": "不足为奇"
+            }
+          ]
+        },
+        {
+          "id": "2015_text1_s24",
+          "para": 6,
+          "en": "Not only are the tasks apparently infinite, the co-workers are much harder to motivate.",
+          "cn": "这不仅仅是由于任务似乎没完没了，还由于激发“同事”的积极性要困难得多。",
+          "words": [
+            {
+              "w": "apparently infinite",
+              "meaning": "看似无穷无尽"
+            },
+            {
+              "w": "harder to motivate",
+              "meaning": "更难激励"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2015_text1_q1", "number": 21, "qtype": "detail", "stem": "According to Paragraph 1, most previous surveys found that home ___.", "stem_cn": "根据第一段，以往大多数调查发现，家___。", "options": { "A": "offered greater relaxation than the workplace", "B": "was an ideal place for stress measurement", "C": "generated more stress than the workplace", "D": "was an unrealistic place for relaxation" }, "options_cn": { "A": "比工作场所更能让人放松", "B": "是测量压力的理想场所", "C": "产生的压力比工作场所更多", "D": "作为放松的场所并不现实" }, "answer": "A", "explanation": "首段①句提出新研究结论“人们在家比上班压力更大”，并以 contrary to most surveys（与大多数调查相反）反向暗示：以往大多数调查恰恰认为“在家比上班轻松”，故 [A] offered greater relaxation 正确。[C] 是本项新研究的结论而非以往调查的结论；[B][D] 分别曲解“压力测量”与“避风港”等细节。", "related_sentences": [ "2015_text1_s01" ] },
-        { "id": "2015_text1_q2", "number": 22, "qtype": "detail", "stem": "According to Damaske, who are likely to be the happiest at home?", "stem_cn": "在达玛斯克看来，在家最快乐的可能是哪类人？", "options": { "A": "Working mothers.", "B": "Childless husbands.", "C": "Working fathers.", "D": "Childless wives." }, "options_cn": { "A": "有工作的母亲。", "B": "无子女的丈夫。", "C": "有工作的父亲。", "D": "无子女的妻子。" }, "answer": "B", "explanation": "第二段指出“声称在家更幸福的是男性而非女性”，又指出该结论对无子女者更甚，综合可知“无子女的男性（丈夫）”在家最快乐，故 [B] 正确。[A][C] 涉及 working，但该段并未比较职业人士与全职在家者。", "related_sentences": [ "2015_text1_s05", "2015_text1_s06" ] },
-        { "id": "2015_text1_q3", "number": 23, "qtype": "detail", "stem": "The blurring of working women's roles refers to the fact that ___.", "stem_cn": "职业女性角色的模糊指的是这样一个事实：___。", "options": { "A": "their home is also a place for kicking back", "B": "they are both bread winners and housewives", "C": "there is often much housework left behind", "D": "it is difficult for them to leave their office" }, "options_cn": { "A": "她们的家也是放松的地方", "B": "她们既要赚钱养家也要操持家务", "C": "总有做不完的家务活", "D": "她们难有收工之时" }, "answer": "B", "explanation": "第三段“With the blurring of roles”前的内容总括④句：职业女性在外工作赚钱、回家还要赶家务，即兼具“养家者”与“家庭主妇”双重身份，故 [B] 正确。[A] 是男性体验；[C] 只体现单一角色；[D] 描述的是全职在家女性。", "related_sentences": [ "2015_text1_s11", "2015_text1_s12" ] },
-        { "id": "2015_text1_q4", "number": 24, "qtype": "vocabulary", "stem": "The word \"moola\" (Line 4, Para. 4) most probably means ___.", "stem_cn": "第四段第四行的单词“moola”最可能的意思是___。", "options": { "A": "skills", "B": "energy", "C": "earnings", "D": "nutrition" }, "options_cn": { "A": "技能", "B": "能量", "C": "收入", "D": "营养" }, "answer": "C", "explanation": "第四段②句讲“干活赚钱以获取收入（draw an income）”，③句冒号后进一步解释：员工付出体力或脑力劳动换取 life-sustaining moola，两处内容对应，可推知 moola ≈ income，故 [C] earnings 正确。[B][D] 受限定词 life-sustaining 干扰，脱离语境。", "related_sentences": [ "2015_text1_s14", "2015_text1_s15" ] },
-        { "id": "2015_text1_q5", "number": 25, "qtype": "detail", "stem": "The home front differs from the workplace in that ___.", "stem_cn": "家庭大后方与职场的不同之处在于___。", "options": { "A": "family labor is often adequately rewarded", "B": "home is hardly a cozier working environment", "C": "household tasks are generally more motivating", "D": "division of labor at home is seldom clear-cut" }, "options_cn": { "A": "家务劳动常能得到充分回报", "B": "家中并不是更舒适的工作环境", "C": "家务活通常更能调动积极性", "D": "家里的分工很少泾渭分明" }, "answer": "D", "explanation": "第五段以 however 与上段职场“协议纯粹、按劳获酬”相对：家中“情况没那么明确”，很少有家庭把分工像临床般有条不紊地安排好（Rare... clinically and methodically laid out），且回报不足，故 [D] seldom clear-cut 正确。[A] 与“回报不足”相反；[C] 与“家人需劝说威胁”矛盾。", "related_sentences": [ "2015_text1_s16", "2015_text1_s17" ] }
+        {
+          "id": "2015_text1_q1",
+          "number": 21,
+          "qtype": "detail",
+          "stem": "According to Paragraph 1, most previous surveys found that home ___.",
+          "stem_cn": "根据第一段，以往大多数调查发现，家___。",
+          "options": {
+            "A": "offered greater relaxation than the workplace",
+            "B": "was an ideal place for stress measurement",
+            "C": "generated more stress than the workplace",
+            "D": "was an unrealistic place for relaxation"
+          },
+          "options_cn": {
+            "A": "比工作场所更能让人放松",
+            "B": "是测量压力的理想场所",
+            "C": "产生的压力比工作场所更多",
+            "D": "作为放松的场所并不现实"
+          },
+          "answer": "A",
+          "explanation": "首段①句提出新研究结论“人们在家比上班压力更大”，并以 contrary to most surveys（与大多数调查相反）反向暗示：以往大多数调查恰恰认为“在家比上班轻松”，故 [A] offered greater relaxation 正确。[C] 是本项新研究的结论而非以往调查的结论；[B][D] 分别曲解“压力测量”与“避风港”等细节。",
+          "related_sentences": [
+            "2015_text1_s01"
+          ]
+        },
+        {
+          "id": "2015_text1_q2",
+          "number": 22,
+          "qtype": "detail",
+          "stem": "According to Damaske, who are likely to be the happiest at home?",
+          "stem_cn": "在达玛斯克看来，在家最快乐的可能是哪类人？",
+          "options": {
+            "A": "Working mothers.",
+            "B": "Childless husbands.",
+            "C": "Working fathers.",
+            "D": "Childless wives."
+          },
+          "options_cn": {
+            "A": "有工作的母亲。",
+            "B": "无子女的丈夫。",
+            "C": "有工作的父亲。",
+            "D": "无子女的妻子。"
+          },
+          "answer": "B",
+          "explanation": "第二段指出“声称在家更幸福的是男性而非女性”，又指出该结论对无子女者更甚，综合可知“无子女的男性（丈夫）”在家最快乐，故 [B] 正确。[A][C] 涉及 working，但该段并未比较职业人士与全职在家者。",
+          "related_sentences": [
+            "2015_text1_s05",
+            "2015_text1_s06"
+          ]
+        },
+        {
+          "id": "2015_text1_q3",
+          "number": 23,
+          "qtype": "detail",
+          "stem": "The blurring of working women's roles refers to the fact that ___.",
+          "stem_cn": "职业女性角色的模糊指的是这样一个事实：___。",
+          "options": {
+            "A": "their home is also a place for kicking back",
+            "B": "they are both bread winners and housewives",
+            "C": "there is often much housework left behind",
+            "D": "it is difficult for them to leave their office"
+          },
+          "options_cn": {
+            "A": "她们的家也是放松的地方",
+            "B": "她们既要赚钱养家也要操持家务",
+            "C": "总有做不完的家务活",
+            "D": "她们难有收工之时"
+          },
+          "answer": "B",
+          "explanation": "第三段“With the blurring of roles”前的内容总括④句：职业女性在外工作赚钱、回家还要赶家务，即兼具“养家者”与“家庭主妇”双重身份，故 [B] 正确。[A] 是男性体验；[C] 只体现单一角色；[D] 描述的是全职在家女性。",
+          "related_sentences": [
+            "2015_text1_s11",
+            "2015_text1_s12"
+          ]
+        },
+        {
+          "id": "2015_text1_q4",
+          "number": 24,
+          "qtype": "vocabulary",
+          "stem": "The word \"moola\" (Line 4, Para. 4) most probably means ___.",
+          "stem_cn": "第四段第四行的单词“moola”最可能的意思是___。",
+          "options": {
+            "A": "skills",
+            "B": "energy",
+            "C": "earnings",
+            "D": "nutrition"
+          },
+          "options_cn": {
+            "A": "技能",
+            "B": "能量",
+            "C": "收入",
+            "D": "营养"
+          },
+          "answer": "C",
+          "explanation": "第四段②句讲“干活赚钱以获取收入（draw an income）”，③句冒号后进一步解释：员工付出体力或脑力劳动换取 life-sustaining moola，两处内容对应，可推知 moola ≈ income，故 [C] earnings 正确。[B][D] 受限定词 life-sustaining 干扰，脱离语境。",
+          "related_sentences": [
+            "2015_text1_s14",
+            "2015_text1_s15"
+          ]
+        },
+        {
+          "id": "2015_text1_q5",
+          "number": 25,
+          "qtype": "detail",
+          "stem": "The home front differs from the workplace in that ___.",
+          "stem_cn": "家庭大后方与职场的不同之处在于___。",
+          "options": {
+            "A": "family labor is often adequately rewarded",
+            "B": "home is hardly a cozier working environment",
+            "C": "household tasks are generally more motivating",
+            "D": "division of labor at home is seldom clear-cut"
+          },
+          "options_cn": {
+            "A": "家务劳动常能得到充分回报",
+            "B": "家中并不是更舒适的工作环境",
+            "C": "家务活通常更能调动积极性",
+            "D": "家里的分工很少泾渭分明"
+          },
+          "answer": "D",
+          "explanation": "第五段以 however 与上段职场“协议纯粹、按劳获酬”相对：家中“情况没那么明确”，很少有家庭把分工像临床般有条不紊地安排好（Rare... clinically and methodically laid out），且回报不足，故 [D] seldom clear-cut 正确。[A] 与“回报不足”相反；[C] 与“家人需劝说威胁”矛盾。",
+          "related_sentences": [
+            "2015_text1_s16",
+            "2015_text1_s17"
+          ]
+        }
       ]
     },
     {
@@ -50,26 +510,367 @@
       "topic": "第一代大学生：用一小时干预缩小成就差距",
       "source": "2015 年考研英语（二）Text 2 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2015_text2_s01", "para": 1, "en": "For years, studies have found that first-generation college students - those who do not have a parent with a college degree - lag other students on a range of education achievement factors.", "cn": "多年来的研究已发现，第一代大学生——那些父母均没有大学学位的大学生——在一系列学业成就指标上均落后于其他学生。", "words": [ { "w": "first-generation college students", "meaning": "第一代大学生" }, { "w": "a range of", "meaning": "一系列" }, { "w": "education achievement factors", "meaning": "学业成就指标" } ] },
-        { "id": "2015_text2_s02", "para": 1, "en": "Their grades are lower and their dropout rates are higher.", "cn": "他们考试分数更低，辍学率更高。", "words": [ { "w": "dropout rates", "meaning": "辍学率" } ] },
-        { "id": "2015_text2_s03", "para": 1, "en": "But since such students are most likely to advance economically if they succeed in higher education, colleges and universities have pushed for decades to recruit more of them.", "cn": "但由于这类学生一旦成功完成高等教育，便会是最有可能在经济上取得发展的人群，所以各高校数十年来一直在努力招收更多这类学生。", "words": [ { "w": "advance economically", "meaning": "在经济上取得发展" }, { "w": "pushed for decades", "meaning": "数十年来一直努力推动" }, { "w": "recruit more of them", "meaning": "招收更多这类学生" } ] },
-        { "id": "2015_text2_s04", "para": 1, "en": "This has created \"a paradox\" in that recruiting first-generation students, but then watching many of them fail, means that higher education has \"continued to reproduce and widen, rather than close\" an achievement gap based on social class, according to the depressing beginning of a paper forthcoming in the journal Psychological Science.", "cn": "这就产生了“一种自相矛盾的情形”：高校把第一代大学生招进来，然后却任由他们中许多人走向失败，这意味着高等教育在“继续再生并扩大，而非弥合”基于社会阶层的成就差距，一篇即将发表在《心理科学》上的文章令人沮丧的开头部分如此写道。", "words": [ { "w": "a paradox", "meaning": "一种自相矛盾的情形" }, { "w": "achievement gap", "meaning": "成就差距" }, { "w": "reproduce and widen", "meaning": "再生并扩大" }, { "w": "forthcoming", "meaning": "adj. 即将发表的" } ] },
-        { "id": "2015_text2_s05", "para": 2, "en": "But the article is actually quite optimistic, as it outlines a potential solution to this problem, suggesting that an approach (which involves a one-hour, next-to-no-cost program) can close 63 percent of the achievement gap (measured by such factors as grades) between first-generation and other students.", "cn": "但这篇文章实际上相当乐观，因为它概述了解决这个问题的一种可能方案，指出有一种方式（一个一小时、几乎零成本的项目）能够将第一代大学生与其他学生之间的成就差距缩小 63%（以成绩等指标衡量）。", "words": [ { "w": "optimistic", "meaning": "adj. 乐观的" }, { "w": "outlines a potential solution", "meaning": "概述一种可能的解决方案" }, { "w": "next-to-no-cost", "meaning": "几乎零成本的" } ] },
-        { "id": "2015_text2_s06", "para": 3, "en": "The authors of the paper are from different universities, and their findings are based on a study involving 147 students (who completed the project) at an unnamed private university.", "cn": "这篇论文的作者们来自不同的大学，其发现是基于对一所匿名私立大学的 147 名学生的调查（这些学生均完成了该项目）。", "words": [ { "w": "based on a study", "meaning": "基于一项研究" }, { "w": "unnamed private university", "meaning": "匿名的私立大学" } ] },
-        { "id": "2015_text2_s07", "para": 3, "en": "First generation was defined as not having a parent with a four-year college degree.", "cn": "“第一代大学生”被定义为父母均无四年制大学学历的学生。", "words": [ { "w": "defined as", "meaning": "被定义为" }, { "w": "four-year college degree", "meaning": "四年制大学学历" } ] },
-        { "id": "2015_text2_s08", "para": 3, "en": "Most of the first-generation students (59.1 percent) were recipients of Pell Grants, a federal grant for undergraduates with financial need, while this was true only for 8.6 percent of the students with at least one parent with a four-year degree.", "cn": "大多数“第一代大学生”（59.1%）是佩尔助学金（一项为有经济需求的本科生设立的联邦奖学金）的受助对象，而那些父母至少一人有本科学历的学生中，这一比例仅为 8.6%。", "words": [ { "w": "recipients of Pell Grants", "meaning": "佩尔助学金的受助者" }, { "w": "federal grant", "meaning": "联邦助学金" }, { "w": "financial need", "meaning": "经济需求" } ] },
-        { "id": "2015_text2_s09", "para": 4, "en": "Their thesis - that a relatively modest intervention could have a big impact - was based on the view that first-generation students may be most lacking not in potential but in practical knowledge about how to deal with the issues that face most college students.", "cn": "他们的论题——较小的干预便能产生很大的影响——是基于这样一种观点：第一代大学生最欠缺的可能并不是潜力，而是关于“如何应对摆在大多数高校学生面前的各种问题”的实用知识。", "words": [ { "w": "thesis", "meaning": "n. 论题，论点" }, { "w": "modest intervention", "meaning": "不大的干预" }, { "w": "not in potential but in practical knowledge", "meaning": "不在于潜力，而在于实用知识" } ] },
-        { "id": "2015_text2_s10", "para": 4, "en": "They cite past research by several authors to show that this is the gap that must be narrowed to close the achievement gap.", "cn": "他们引用了数位作者的已有研究说明，这正是弥合成就差距所必须缩小的缺口。", "words": [ { "w": "cite past research", "meaning": "援引已有研究" }, { "w": "the gap that must be narrowed", "meaning": "必须缩小的缺口" } ] },
-        { "id": "2015_text2_s11", "para": 5, "en": "Many first-generation students \"struggle to navigate the middle-class culture of higher education, learn the 'rules of the game,' and take advantage of college resources,\" they write.", "cn": "许多第一代大学生“挣扎于应付高等教育中的中产阶级文化，学会‘游戏规则’并利用高校资源”，他们写道。", "words": [ { "w": "struggle to navigate", "meaning": "艰难地摸索应对" }, { "w": "the middle-class culture", "meaning": "中产阶级文化" }, { "w": "take advantage of", "meaning": "利用" } ] },
-        { "id": "2015_text2_s12", "para": 5, "en": "And this becomes more of a problem when colleges don't talk about the class advantages and disadvantages of different groups of students.", "cn": "当大学对于不同学生群体的阶层优势和劣势避而不谈时，这就会越发成为问题。", "words": [ { "w": "class advantages and disadvantages", "meaning": "阶层优势与劣势" } ] },
-        { "id": "2015_text2_s13", "para": 5, "en": "\"Because US colleges and universities seldom acknowledge how social class can affect students' educational experiences, many first-generation students lack insight about why they are struggling and do not understand how students 'like them' can improve.\"", "cn": "“由于美国高校很少承认社会阶层能够影响学生的教育体验，所以很多第一代大学生不明白他们为何挣扎，也不知道‘像他们一样的’学生如何才能进步。”", "words": [ { "w": "acknowledge", "meaning": "v. 承认" }, { "w": "lack insight", "meaning": "缺乏认识" }, { "w": "social class", "meaning": "社会阶层" } ] }
+        {
+          "id": "2015_text2_s01",
+          "para": 1,
+          "en": "For years, studies have found that first-generation college students - those who do not have a parent with a college degree - lag other students on a range of education achievement factors.",
+          "cn": "多年来的研究已发现，第一代大学生——那些父母均没有大学学位的大学生——在一系列学业成就指标上均落后于其他学生。",
+          "words": [
+            {
+              "w": "first-generation college students",
+              "meaning": "第一代大学生"
+            },
+            {
+              "w": "a range of",
+              "meaning": "一系列"
+            },
+            {
+              "w": "education achievement factors",
+              "meaning": "学业成就指标"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s02",
+          "para": 1,
+          "en": "Their grades are lower and their dropout rates are higher.",
+          "cn": "他们考试分数更低，辍学率更高。",
+          "words": [
+            {
+              "w": "dropout rates",
+              "meaning": "辍学率"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s03",
+          "para": 1,
+          "en": "But since such students are most likely to advance economically if they succeed in higher education, colleges and universities have pushed for decades to recruit more of them.",
+          "cn": "但由于这类学生一旦成功完成高等教育，便会是最有可能在经济上取得发展的人群，所以各高校数十年来一直在努力招收更多这类学生。",
+          "words": [
+            {
+              "w": "advance economically",
+              "meaning": "在经济上取得发展"
+            },
+            {
+              "w": "pushed for decades",
+              "meaning": "数十年来一直努力推动"
+            },
+            {
+              "w": "recruit more of them",
+              "meaning": "招收更多这类学生"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s04",
+          "para": 1,
+          "en": "This has created \"a paradox\" in that recruiting first-generation students, but then watching many of them fail, means that higher education has \"continued to reproduce and widen, rather than close\" an achievement gap based on social class, according to the depressing beginning of a paper forthcoming in the journal Psychological Science.",
+          "cn": "这就产生了“一种自相矛盾的情形”：高校把第一代大学生招进来，然后却任由他们中许多人走向失败，这意味着高等教育在“继续再生并扩大，而非弥合”基于社会阶层的成就差距，一篇即将发表在《心理科学》上的文章令人沮丧的开头部分如此写道。",
+          "words": [
+            {
+              "w": "a paradox",
+              "meaning": "一种自相矛盾的情形"
+            },
+            {
+              "w": "achievement gap",
+              "meaning": "成就差距"
+            },
+            {
+              "w": "reproduce and widen",
+              "meaning": "再生并扩大"
+            },
+            {
+              "w": "forthcoming",
+              "meaning": "adj. 即将发表的"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s05",
+          "para": 2,
+          "en": "But the article is actually quite optimistic, as it outlines a potential solution to this problem, suggesting that an approach (which involves a one-hour, next-to-no-cost program) can close 63 percent of the achievement gap (measured by such factors as grades) between first-generation and other students.",
+          "cn": "但这篇文章实际上相当乐观，因为它概述了解决这个问题的一种可能方案，指出有一种方式（一个一小时、几乎零成本的项目）能够将第一代大学生与其他学生之间的成就差距缩小 63%（以成绩等指标衡量）。",
+          "words": [
+            {
+              "w": "optimistic",
+              "meaning": "adj. 乐观的"
+            },
+            {
+              "w": "outlines a potential solution",
+              "meaning": "概述一种可能的解决方案"
+            },
+            {
+              "w": "next-to-no-cost",
+              "meaning": "几乎零成本的"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s06",
+          "para": 3,
+          "en": "The authors of the paper are from different universities, and their findings are based on a study involving 147 students (who completed the project) at an unnamed private university.",
+          "cn": "这篇论文的作者们来自不同的大学，其发现是基于对一所匿名私立大学的 147 名学生的调查（这些学生均完成了该项目）。",
+          "words": [
+            {
+              "w": "based on a study",
+              "meaning": "基于一项研究"
+            },
+            {
+              "w": "unnamed private university",
+              "meaning": "匿名的私立大学"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s07",
+          "para": 3,
+          "en": "First generation was defined as not having a parent with a four-year college degree.",
+          "cn": "“第一代大学生”被定义为父母均无四年制大学学历的学生。",
+          "words": [
+            {
+              "w": "defined as",
+              "meaning": "被定义为"
+            },
+            {
+              "w": "four-year college degree",
+              "meaning": "四年制大学学历"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s08",
+          "para": 3,
+          "en": "Most of the first-generation students (59.1 percent) were recipients of Pell Grants, a federal grant for undergraduates with financial need, while this was true only for 8.6 percent of the students with at least one parent with a four-year degree.",
+          "cn": "大多数“第一代大学生”（59.1%）是佩尔助学金（一项为有经济需求的本科生设立的联邦奖学金）的受助对象，而那些父母至少一人有本科学历的学生中，这一比例仅为 8.6%。",
+          "words": [
+            {
+              "w": "recipients of Pell Grants",
+              "meaning": "佩尔助学金的受助者"
+            },
+            {
+              "w": "federal grant",
+              "meaning": "联邦助学金"
+            },
+            {
+              "w": "financial need",
+              "meaning": "经济需求"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s09",
+          "para": 4,
+          "en": "Their thesis - that a relatively modest intervention could have a big impact - was based on the view that first-generation students may be most lacking not in potential but in practical knowledge about how to deal with the issues that face most college students.",
+          "cn": "他们的论题——较小的干预便能产生很大的影响——是基于这样一种观点：第一代大学生最欠缺的可能并不是潜力，而是关于“如何应对摆在大多数高校学生面前的各种问题”的实用知识。",
+          "words": [
+            {
+              "w": "thesis",
+              "meaning": "n. 论题，论点"
+            },
+            {
+              "w": "modest intervention",
+              "meaning": "不大的干预"
+            },
+            {
+              "w": "not in potential but in practical knowledge",
+              "meaning": "不在于潜力，而在于实用知识"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s10",
+          "para": 4,
+          "en": "They cite past research by several authors to show that this is the gap that must be narrowed to close the achievement gap.",
+          "cn": "他们引用了数位作者的已有研究说明，这正是弥合成就差距所必须缩小的缺口。",
+          "words": [
+            {
+              "w": "cite past research",
+              "meaning": "援引已有研究"
+            },
+            {
+              "w": "the gap that must be narrowed",
+              "meaning": "必须缩小的缺口"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s11",
+          "para": 5,
+          "en": "Many first-generation students \"struggle to navigate the middle-class culture of higher education, learn the 'rules of the game,' and take advantage of college resources,\" they write.",
+          "cn": "许多第一代大学生“挣扎于应付高等教育中的中产阶级文化，学会‘游戏规则’并利用高校资源”，他们写道。",
+          "words": [
+            {
+              "w": "struggle to navigate",
+              "meaning": "艰难地摸索应对"
+            },
+            {
+              "w": "the middle-class culture",
+              "meaning": "中产阶级文化"
+            },
+            {
+              "w": "take advantage of",
+              "meaning": "利用"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s12",
+          "para": 5,
+          "en": "And this becomes more of a problem when colleges don't talk about the class advantages and disadvantages of different groups of students.",
+          "cn": "当大学对于不同学生群体的阶层优势和劣势避而不谈时，这就会越发成为问题。",
+          "words": [
+            {
+              "w": "class advantages and disadvantages",
+              "meaning": "阶层优势与劣势"
+            }
+          ]
+        },
+        {
+          "id": "2015_text2_s13",
+          "para": 5,
+          "en": "\"Because US colleges and universities seldom acknowledge how social class can affect students' educational experiences, many first-generation students lack insight about why they are struggling and do not understand how students 'like them' can improve.\"",
+          "cn": "“由于美国高校很少承认社会阶层能够影响学生的教育体验，所以很多第一代大学生不明白他们为何挣扎，也不知道‘像他们一样的’学生如何才能进步。”",
+          "words": [
+            {
+              "w": "acknowledge",
+              "meaning": "v. 承认"
+            },
+            {
+              "w": "lack insight",
+              "meaning": "缺乏认识"
+            },
+            {
+              "w": "social class",
+              "meaning": "社会阶层"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2015_text2_q1", "number": 26, "qtype": "detail", "stem": "Recruiting more first-generation students has ___.", "stem_cn": "招收更多第一代大学生这一做法___。", "options": { "A": "reduced their dropout rates", "B": "narrowed the achievement gap", "C": "missed its original purpose", "D": "depressed college students" }, "options_cn": { "A": "降低了他们的辍学率", "B": "缩小了成就差距", "C": "未能实现其初衷", "D": "使高校学生感到沮丧" }, "answer": "C", "explanation": "首段③④句指出：高校因这类学生成才后最具经济发展潜力而争相招收，实际却眼看许多人失败、反而拉大了阶层成就差距。招生初衷与结果形成反差，故 [C] missed its original purpose 正确。[A][B] 与文中“辍学率更高、差距被扩大”相悖；[D] 中 depressing 指的是论文作者/本文作者的态度，与学生无关。", "related_sentences": [ "2015_text2_s03", "2015_text2_s04" ] },
-        { "id": "2015_text2_q2", "number": 27, "qtype": "detail", "stem": "The authors of the research article are optimistic because ___.", "stem_cn": "研究论文的作者持乐观态度，原因是___。", "options": { "A": "their findings appeal to students", "B": "the recruiting rate has increased", "C": "the problem is solvable", "D": "their approach is costless" }, "options_cn": { "A": "他们的发现对学生有吸引力", "B": "录取率有所提高", "C": "该问题是可以解决的", "D": "他们的方案毫无成本" }, "answer": "C", "explanation": "第二段主句说文章相当乐观，as 引出原因：它勾勒出解决该问题的可能方案，故 [C] the problem is solvable 正确。[D] 不准确，文中是“几乎零成本（next-to-no-cost）”而非“完全无成本”；[A][B] 属文中未提及的过度引申。", "related_sentences": [ "2015_text2_s05" ] },
-        { "id": "2015_text2_q3", "number": 28, "qtype": "detail", "stem": "The study suggests that most first-generation students ___.", "stem_cn": "研究表明，大多数第一代大学生___。", "options": { "A": "are from single-parent families", "B": "study at private universities", "C": "are in need of financial support", "D": "have failed their college" }, "options_cn": { "A": "来自单亲家庭", "B": "就读于私立大学", "C": "需要经济支持", "D": "没能读完大学" }, "answer": "C", "explanation": "第三段指出大多数第一代大学生（59.1%）是佩尔助学金——一项面向有经济需求本科生的联邦助学金——的受助者，可知他们大多需要经济帮助，故 [C] 正确。[A] 曲解“父母都没有本科学历”；[B] 过度引申研究样本来自某私立大学；[D] 夸大“辍学率更高”。", "related_sentences": [ "2015_text2_s07", "2015_text2_s08" ] },
-        { "id": "2015_text2_q4", "number": 29, "qtype": "opinion", "stem": "The authors of the paper believe that first-generation students ___.", "stem_cn": "论文作者认为第一代大学生___。", "options": { "A": "may lack opportunities to apply for research projects", "B": "are inexperienced in handling their issues at college", "C": "can have a potential influence on other students", "D": "are actually indifferent to the achievement gap" }, "options_cn": { "A": "可能缺少申请研究项目的机会", "B": "在处理在校问题时缺乏经验", "C": "对其他学生有潜在影响", "D": "实际上对成就差距漠不关心" }, "answer": "B", "explanation": "第四段指出作者认为第一代大学生缺的不是潜力，而是应对大学生常见问题的实用知识，即在处理在校问题上缺乏经验，故 [B] 正确。[A][C] 分别拼凑 past research、potential 等词设障；[D] 与结尾暗示的“他们渴望缩小差距”相反。", "related_sentences": [ "2015_text2_s09" ] },
-        { "id": "2015_text2_q5", "number": 30, "qtype": "inference", "stem": "We may infer from the last paragraph that ___.", "stem_cn": "我们可以从最后一段推知___。", "options": { "A": "universities often reject the culture of the middle-class", "B": "students are usually to blame for their lack of resources", "C": "social class greatly helps enrich educational experiences", "D": "colleges are partly responsible for the problem in question" }, "options_cn": { "A": "大学常常拒斥中产阶级文化", "B": "学生通常应为自己缺乏资源负责", "C": "社会阶层极大地帮助丰富了教育体验", "D": "高校对所述问题负有部分责任" }, "answer": "D", "explanation": "末段指出：高校对学生群体间的阶层优劣势避而不谈、很少承认社会阶层会影响教育体验，从而加剧了第一代大学生的困境，可推知高校对该问题负有部分责任，故 [D] 正确。[A] 将“高等教育本就是中产阶级文化”反说成“拒斥”；[B] 无批评学生之意；[C] 把中性/负面表述篡改为褒义。", "related_sentences": [ "2015_text2_s12", "2015_text2_s13" ] }
+        {
+          "id": "2015_text2_q1",
+          "number": 26,
+          "qtype": "detail",
+          "stem": "Recruiting more first-generation students has ___.",
+          "stem_cn": "招收更多第一代大学生这一做法___。",
+          "options": {
+            "A": "reduced their dropout rates",
+            "B": "narrowed the achievement gap",
+            "C": "missed its original purpose",
+            "D": "depressed college students"
+          },
+          "options_cn": {
+            "A": "降低了他们的辍学率",
+            "B": "缩小了成就差距",
+            "C": "未能实现其初衷",
+            "D": "使高校学生感到沮丧"
+          },
+          "answer": "C",
+          "explanation": "首段③④句指出：高校因这类学生成才后最具经济发展潜力而争相招收，实际却眼看许多人失败、反而拉大了阶层成就差距。招生初衷与结果形成反差，故 [C] missed its original purpose 正确。[A][B] 与文中“辍学率更高、差距被扩大”相悖；[D] 中 depressing 指的是论文作者/本文作者的态度，与学生无关。",
+          "related_sentences": [
+            "2015_text2_s03",
+            "2015_text2_s04"
+          ]
+        },
+        {
+          "id": "2015_text2_q2",
+          "number": 27,
+          "qtype": "detail",
+          "stem": "The authors of the research article are optimistic because ___.",
+          "stem_cn": "研究论文的作者持乐观态度，原因是___。",
+          "options": {
+            "A": "their findings appeal to students",
+            "B": "the recruiting rate has increased",
+            "C": "the problem is solvable",
+            "D": "their approach is costless"
+          },
+          "options_cn": {
+            "A": "他们的发现对学生有吸引力",
+            "B": "录取率有所提高",
+            "C": "该问题是可以解决的",
+            "D": "他们的方案毫无成本"
+          },
+          "answer": "C",
+          "explanation": "第二段主句说文章相当乐观，as 引出原因：它勾勒出解决该问题的可能方案，故 [C] the problem is solvable 正确。[D] 不准确，文中是“几乎零成本（next-to-no-cost）”而非“完全无成本”；[A][B] 属文中未提及的过度引申。",
+          "related_sentences": [
+            "2015_text2_s05"
+          ]
+        },
+        {
+          "id": "2015_text2_q3",
+          "number": 28,
+          "qtype": "detail",
+          "stem": "The study suggests that most first-generation students ___.",
+          "stem_cn": "研究表明，大多数第一代大学生___。",
+          "options": {
+            "A": "are from single-parent families",
+            "B": "study at private universities",
+            "C": "are in need of financial support",
+            "D": "have failed their college"
+          },
+          "options_cn": {
+            "A": "来自单亲家庭",
+            "B": "就读于私立大学",
+            "C": "需要经济支持",
+            "D": "没能读完大学"
+          },
+          "answer": "C",
+          "explanation": "第三段指出大多数第一代大学生（59.1%）是佩尔助学金——一项面向有经济需求本科生的联邦助学金——的受助者，可知他们大多需要经济帮助，故 [C] 正确。[A] 曲解“父母都没有本科学历”；[B] 过度引申研究样本来自某私立大学；[D] 夸大“辍学率更高”。",
+          "related_sentences": [
+            "2015_text2_s07",
+            "2015_text2_s08"
+          ]
+        },
+        {
+          "id": "2015_text2_q4",
+          "number": 29,
+          "qtype": "opinion",
+          "stem": "The authors of the paper believe that first-generation students ___.",
+          "stem_cn": "论文作者认为第一代大学生___。",
+          "options": {
+            "A": "may lack opportunities to apply for research projects",
+            "B": "are inexperienced in handling their issues at college",
+            "C": "can have a potential influence on other students",
+            "D": "are actually indifferent to the achievement gap"
+          },
+          "options_cn": {
+            "A": "可能缺少申请研究项目的机会",
+            "B": "在处理在校问题时缺乏经验",
+            "C": "对其他学生有潜在影响",
+            "D": "实际上对成就差距漠不关心"
+          },
+          "answer": "B",
+          "explanation": "第四段指出作者认为第一代大学生缺的不是潜力，而是应对大学生常见问题的实用知识，即在处理在校问题上缺乏经验，故 [B] 正确。[A][C] 分别拼凑 past research、potential 等词设障；[D] 与结尾暗示的“他们渴望缩小差距”相反。",
+          "related_sentences": [
+            "2015_text2_s09"
+          ]
+        },
+        {
+          "id": "2015_text2_q5",
+          "number": 30,
+          "qtype": "inference",
+          "stem": "We may infer from the last paragraph that ___.",
+          "stem_cn": "我们可以从最后一段推知___。",
+          "options": {
+            "A": "universities often reject the culture of the middle-class",
+            "B": "students are usually to blame for their lack of resources",
+            "C": "social class greatly helps enrich educational experiences",
+            "D": "colleges are partly responsible for the problem in question"
+          },
+          "options_cn": {
+            "A": "大学常常拒斥中产阶级文化",
+            "B": "学生通常应为自己缺乏资源负责",
+            "C": "社会阶层极大地帮助丰富了教育体验",
+            "D": "高校对所述问题负有部分责任"
+          },
+          "answer": "D",
+          "explanation": "末段指出：高校对学生群体间的阶层优劣势避而不谈、很少承认社会阶层会影响教育体验，从而加剧了第一代大学生的困境，可推知高校对该问题负有部分责任，故 [D] 正确。[A] 将“高等教育本就是中产阶级文化”反说成“拒斥”；[B] 无批评学生之意；[C] 把中性/负面表述篡改为褒义。",
+          "related_sentences": [
+            "2015_text2_s12",
+            "2015_text2_s13"
+          ]
+        }
       ]
     },
     {
@@ -79,30 +880,410 @@
       "topic": "办公室用语的由来：情感化、团队化与自我实现",
       "source": "2015 年考研英语（二）Text 3 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2015_text3_s01", "para": 1, "en": "Even in traditional offices, \"the lingua franca of corporate America has gotten much more emotional and much more right-brained than it was 20 years ago,\" said Harvard Business School professor Nancy Koehn.", "cn": "即使在传统办公室里，“美国企业的通用语也比二十年前更富情感，更多由右脑主导，”哈佛大学商学院教授南希·克恩如是说。", "words": [ { "w": "the lingua franca of corporate America", "meaning": "美国企业的通用语" }, { "w": "right-brained", "meaning": "adj. 右脑主导的，偏感性的" }, { "w": "emotional", "meaning": "adj. 情感化的" } ] },
-        { "id": "2015_text3_s02", "para": 1, "en": "She started spinning off examples.", "cn": "她随即列举一系列实例。", "words": [ { "w": "spinning off examples", "meaning": "接连举出例子" } ] },
-        { "id": "2015_text3_s03", "para": 1, "en": "\"If you and I parachuted back to Fortune 500 companies in 1990, we would see much less frequent use of terms like journey, mission, passion.", "cn": "“如果我们穿越回到 1990 年的世界五百强企业中，我们会发现像‘旅程’、‘使命’、‘激情’这样的词汇较少使用。", "words": [ { "w": "parachuted back to", "meaning": "穿越/空降回到" }, { "w": "Fortune 500 companies", "meaning": "《财富》500强企业" } ] },
-        { "id": "2015_text3_s04", "para": 1, "en": "There were goals, there were strategies, there were objectives, but we didn't talk about energy; we didn't talk about passion.\"", "cn": "我们会使用‘目标’、‘策略’、‘目的’这样的词汇，但却不会谈及‘干劲’；也不会谈及‘激情’。”", "words": [ { "w": "objectives", "meaning": "n. 目标，目的" } ] },
-        { "id": "2015_text3_s05", "para": 2, "en": "Koehn pointed out that this new era of corporate vocabulary is very \"team\"-oriented - and not by coincidence.", "cn": "克恩指出新时代的这种企业词汇具有明显的“团队”导向——而这并非偶然。", "words": [ { "w": "corporate vocabulary", "meaning": "企业词汇" }, { "w": "oriented", "meaning": "adj. 以……为导向的" }, { "w": "not by coincidence", "meaning": "并非偶然" } ] },
-        { "id": "2015_text3_s06", "para": 2, "en": "\"Let's not forget sports - in male-dominated corporate America, it's still a big deal.", "cn": "“别忘了体育运动——在男性主导的美国企业中，它依然非同小可。", "words": [ { "w": "male-dominated", "meaning": "adj. 男性主导的" }, { "w": "a big deal", "meaning": "了不起的事，举足轻重" } ] },
-        { "id": "2015_text3_s07", "para": 2, "en": "It's not explicitly conscious; it's the idea that I'm a coach, and you're my team, and we're in this together.", "cn": "它不是明明白白的有意行为；它是这样一种想法：我是教练，你们是我的队员，我们同舟共济。", "words": [ { "w": "explicitly conscious", "meaning": "明确而有意识地" }, { "w": "in this together", "meaning": "同舟共济" } ] },
-        { "id": "2015_text3_s08", "para": 2, "en": "There are lots and lots of CEOs in very different companies, but most think of themselves as coaches and this is their team and they want to win.\"", "cn": "企业各不相同，CEO 许许多多，但大部分都自认为是教练，企业是自己的团队，他们想赢。”", "words": [ { "w": "think of themselves as", "meaning": "把自己看作" } ] },
-        { "id": "2015_text3_s09", "para": 3, "en": "These terms are also intended to infuse work with meaning - and, as Rakesh Khurana, another professor, points out, increase allegiance to the firm.", "cn": "这些词汇的使用也旨在赋予工作意义——同时，如另一位教授拉凯什·库拉纳指出的那样，提高员工对企业的忠诚度。", "words": [ { "w": "infuse work with meaning", "meaning": "赋予工作以意义" }, { "w": "allegiance to the firm", "meaning": "对公司的忠诚" } ] },
-        { "id": "2015_text3_s10", "para": 3, "en": "\"You have the importation of terminology that historically used to be associated with non-profit organizations and religious organizations: terms like vision, values, passion, and purpose,\" said Khurana.", "cn": "库拉纳说，“我们引入了历史上和非营利性组织及宗教组织相关联的专门用语，如‘愿景’、‘价值观’、‘激情’和‘目标’。”", "words": [ { "w": "the importation of terminology", "meaning": "术语的引进" }, { "w": "associated with", "meaning": "与……相关联" }, { "w": "non-profit organizations", "meaning": "非营利组织" } ] },
-        { "id": "2015_text3_s11", "para": 4, "en": "This new focus on personal fulfillment can help keep employees motivated amid increasingly loud debates over work-life balance.", "cn": "在关于“如何平衡工作和生活”的越来越激烈的辩论中，这种新兴的对个人自我实现的关注有助于激励员工。", "words": [ { "w": "personal fulfillment", "meaning": "个人的自我实现" }, { "w": "work-life balance", "meaning": "工作与生活的平衡" } ] },
-        { "id": "2015_text3_s12", "para": 4, "en": "The \"mommy wars\" of the 1990s are still going on today, prompting arguments about why women still can't have it all and books like Sheryl Sandberg's Lean In, whose title has become a buzzword in its own right.", "cn": "二十世纪九十年代的“妈咪大战”如今仍在继续，激起了关于“为何女性仍然不能兼顾工作与家庭”的争论，还催生了如谢丽尔·桑德伯格的《向前一步》一类的书籍，这一书名本身也因此成为流行语。", "words": [ { "w": "mommy wars", "meaning": "妈咪大战（育儿与职业之争）" }, { "w": "have it all", "meaning": "兼顾一切" }, { "w": "buzzword", "meaning": "n. 流行语" } ] },
-        { "id": "2015_text3_s13", "para": 4, "en": "Terms like unplug, offline, life-hack, bandwidth, and capacity are all about setting boundaries between the office and the home.", "cn": "像“断电”、“离线”、“生活窍门”、“带宽”和“容量”这样的词汇都和划清工作和家庭的界限有关。", "words": [ { "w": "setting boundaries", "meaning": "划定界限" }, { "w": "bandwidth", "meaning": "n. 带宽；（比喻）精力" } ] },
-        { "id": "2015_text3_s14", "para": 4, "en": "But if your work is your \"passion,\" you'll be more likely to devote yourself to it, even if that means going home for dinner and then working long after the kids are in bed.", "cn": "但是如果你的工作就是你的“激情”（所在），即使这意味着你需要回家吃晚饭、然后等孩子入睡后还要继续工作很长时间，你也更愿意投入其中。", "words": [ { "w": "devote yourself to it", "meaning": "全身心投入" } ] },
-        { "id": "2015_text3_s15", "para": 5, "en": "But this seems to be the irony of office speak: Everyone makes fun of it, but managers love it, companies depend on it, and regular people willingly absorb it.", "cn": "但这似乎是关于办公室语言的一个讽刺：大家都拿它开玩笑，但是经理们却喜欢它，公司依赖于它，普通人欣然接受它。", "words": [ { "w": "the irony of office speak", "meaning": "办公室用语的讽刺之处" }, { "w": "makes fun of it", "meaning": "拿它开玩笑" }, { "w": "willingly absorb it", "meaning": "心甘情愿地接受" } ] },
-        { "id": "2015_text3_s16", "para": 5, "en": "As a linguist once said, \"You can get people to think it's nonsense at the same time that you buy into it.\"", "cn": "正如一位语言学家所说，“你可以让其他人认为它是无稽之谈，但与此同时你却买它的账。”", "words": [ { "w": "nonsense", "meaning": "n. 无稽之谈" }, { "w": "buy into it", "meaning": "接受/认同它" } ] },
-        { "id": "2015_text3_s17", "para": 5, "en": "In a workplace that's fundamentally indifferent to your life and its meaning, office speak can help you figure out how you relate to your work - and how your work defines who you are.", "cn": "在一个根本与你生活及生活的意义毫不相关的职场中，办公室语言能帮你认清你和工作的关系——以及你的工作如何定义你是谁。", "words": [ { "w": "fundamentally indifferent to", "meaning": "从根本上漠不关心" }, { "w": "figure out", "meaning": "弄清楚" }, { "w": "defines who you are", "meaning": "定义你是谁" } ] }
+        {
+          "id": "2015_text3_s01",
+          "para": 1,
+          "en": "Even in traditional offices, \"the lingua franca of corporate America has gotten much more emotional and much more right-brained than it was 20 years ago,\" said Harvard Business School professor Nancy Koehn.",
+          "cn": "即使在传统办公室里，“美国企业的通用语也比二十年前更富情感，更多由右脑主导，”哈佛大学商学院教授南希·克恩如是说。",
+          "words": [
+            {
+              "w": "the lingua franca of corporate America",
+              "meaning": "美国企业的通用语"
+            },
+            {
+              "w": "right-brained",
+              "meaning": "adj. 右脑主导的，偏感性的"
+            },
+            {
+              "w": "emotional",
+              "meaning": "adj. 情感化的"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s02",
+          "para": 1,
+          "en": "She started spinning off examples.",
+          "cn": "她随即列举一系列实例。",
+          "words": [
+            {
+              "w": "spinning off examples",
+              "meaning": "接连举出例子"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s03",
+          "para": 1,
+          "en": "\"If you and I parachuted back to Fortune 500 companies in 1990, we would see much less frequent use of terms like journey, mission, passion.",
+          "cn": "“如果我们穿越回到 1990 年的世界五百强企业中，我们会发现像‘旅程’、‘使命’、‘激情’这样的词汇较少使用。",
+          "words": [
+            {
+              "w": "parachuted back to",
+              "meaning": "穿越/空降回到"
+            },
+            {
+              "w": "Fortune 500 companies",
+              "meaning": "《财富》500强企业"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s04",
+          "para": 1,
+          "en": "There were goals, there were strategies, there were objectives, but we didn't talk about energy; we didn't talk about passion.\"",
+          "cn": "我们会使用‘目标’、‘策略’、‘目的’这样的词汇，但却不会谈及‘干劲’；也不会谈及‘激情’。”",
+          "words": [
+            {
+              "w": "objectives",
+              "meaning": "n. 目标，目的"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s05",
+          "para": 2,
+          "en": "Koehn pointed out that this new era of corporate vocabulary is very \"team\"-oriented - and not by coincidence.",
+          "cn": "克恩指出新时代的这种企业词汇具有明显的“团队”导向——而这并非偶然。",
+          "words": [
+            {
+              "w": "corporate vocabulary",
+              "meaning": "企业词汇"
+            },
+            {
+              "w": "oriented",
+              "meaning": "adj. 以……为导向的"
+            },
+            {
+              "w": "not by coincidence",
+              "meaning": "并非偶然"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s06",
+          "para": 2,
+          "en": "\"Let's not forget sports - in male-dominated corporate America, it's still a big deal.",
+          "cn": "“别忘了体育运动——在男性主导的美国企业中，它依然非同小可。",
+          "words": [
+            {
+              "w": "male-dominated",
+              "meaning": "adj. 男性主导的"
+            },
+            {
+              "w": "a big deal",
+              "meaning": "了不起的事，举足轻重"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s07",
+          "para": 2,
+          "en": "It's not explicitly conscious; it's the idea that I'm a coach, and you're my team, and we're in this together.",
+          "cn": "它不是明明白白的有意行为；它是这样一种想法：我是教练，你们是我的队员，我们同舟共济。",
+          "words": [
+            {
+              "w": "explicitly conscious",
+              "meaning": "明确而有意识地"
+            },
+            {
+              "w": "in this together",
+              "meaning": "同舟共济"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s08",
+          "para": 2,
+          "en": "There are lots and lots of CEOs in very different companies, but most think of themselves as coaches and this is their team and they want to win.\"",
+          "cn": "企业各不相同，CEO 许许多多，但大部分都自认为是教练，企业是自己的团队，他们想赢。”",
+          "words": [
+            {
+              "w": "think of themselves as",
+              "meaning": "把自己看作"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s09",
+          "para": 3,
+          "en": "These terms are also intended to infuse work with meaning - and, as Rakesh Khurana, another professor, points out, increase allegiance to the firm.",
+          "cn": "这些词汇的使用也旨在赋予工作意义——同时，如另一位教授拉凯什·库拉纳指出的那样，提高员工对企业的忠诚度。",
+          "words": [
+            {
+              "w": "infuse work with meaning",
+              "meaning": "赋予工作以意义"
+            },
+            {
+              "w": "allegiance to the firm",
+              "meaning": "对公司的忠诚"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s10",
+          "para": 3,
+          "en": "\"You have the importation of terminology that historically used to be associated with non-profit organizations and religious organizations: terms like vision, values, passion, and purpose,\" said Khurana.",
+          "cn": "库拉纳说，“我们引入了历史上和非营利性组织及宗教组织相关联的专门用语，如‘愿景’、‘价值观’、‘激情’和‘目标’。”",
+          "words": [
+            {
+              "w": "the importation of terminology",
+              "meaning": "术语的引进"
+            },
+            {
+              "w": "associated with",
+              "meaning": "与……相关联"
+            },
+            {
+              "w": "non-profit organizations",
+              "meaning": "非营利组织"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s11",
+          "para": 4,
+          "en": "This new focus on personal fulfillment can help keep employees motivated amid increasingly loud debates over work-life balance.",
+          "cn": "在关于“如何平衡工作和生活”的越来越激烈的辩论中，这种新兴的对个人自我实现的关注有助于激励员工。",
+          "words": [
+            {
+              "w": "personal fulfillment",
+              "meaning": "个人的自我实现"
+            },
+            {
+              "w": "work-life balance",
+              "meaning": "工作与生活的平衡"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s12",
+          "para": 4,
+          "en": "The \"mommy wars\" of the 1990s are still going on today, prompting arguments about why women still can't have it all and books like Sheryl Sandberg's Lean In, whose title has become a buzzword in its own right.",
+          "cn": "二十世纪九十年代的“妈咪大战”如今仍在继续，激起了关于“为何女性仍然不能兼顾工作与家庭”的争论，还催生了如谢丽尔·桑德伯格的《向前一步》一类的书籍，这一书名本身也因此成为流行语。",
+          "words": [
+            {
+              "w": "mommy wars",
+              "meaning": "妈咪大战（育儿与职业之争）"
+            },
+            {
+              "w": "have it all",
+              "meaning": "兼顾一切"
+            },
+            {
+              "w": "buzzword",
+              "meaning": "n. 流行语"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s13",
+          "para": 4,
+          "en": "Terms like unplug, offline, life-hack, bandwidth, and capacity are all about setting boundaries between the office and the home.",
+          "cn": "像“断电”、“离线”、“生活窍门”、“带宽”和“容量”这样的词汇都和划清工作和家庭的界限有关。",
+          "words": [
+            {
+              "w": "setting boundaries",
+              "meaning": "划定界限"
+            },
+            {
+              "w": "bandwidth",
+              "meaning": "n. 带宽；（比喻）精力"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s14",
+          "para": 4,
+          "en": "But if your work is your \"passion,\" you'll be more likely to devote yourself to it, even if that means going home for dinner and then working long after the kids are in bed.",
+          "cn": "但是如果你的工作就是你的“激情”（所在），即使这意味着你需要回家吃晚饭、然后等孩子入睡后还要继续工作很长时间，你也更愿意投入其中。",
+          "words": [
+            {
+              "w": "devote yourself to it",
+              "meaning": "全身心投入"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s15",
+          "para": 5,
+          "en": "But this seems to be the irony of office speak: Everyone makes fun of it, but managers love it, companies depend on it, and regular people willingly absorb it.",
+          "cn": "但这似乎是关于办公室语言的一个讽刺：大家都拿它开玩笑，但是经理们却喜欢它，公司依赖于它，普通人欣然接受它。",
+          "words": [
+            {
+              "w": "the irony of office speak",
+              "meaning": "办公室用语的讽刺之处"
+            },
+            {
+              "w": "makes fun of it",
+              "meaning": "拿它开玩笑"
+            },
+            {
+              "w": "willingly absorb it",
+              "meaning": "心甘情愿地接受"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s16",
+          "para": 5,
+          "en": "As a linguist once said, \"You can get people to think it's nonsense at the same time that you buy into it.\"",
+          "cn": "正如一位语言学家所说，“你可以让其他人认为它是无稽之谈，但与此同时你却买它的账。”",
+          "words": [
+            {
+              "w": "nonsense",
+              "meaning": "n. 无稽之谈"
+            },
+            {
+              "w": "buy into it",
+              "meaning": "接受/认同它"
+            }
+          ]
+        },
+        {
+          "id": "2015_text3_s17",
+          "para": 5,
+          "en": "In a workplace that's fundamentally indifferent to your life and its meaning, office speak can help you figure out how you relate to your work - and how your work defines who you are.",
+          "cn": "在一个根本与你生活及生活的意义毫不相关的职场中，办公室语言能帮你认清你和工作的关系——以及你的工作如何定义你是谁。",
+          "words": [
+            {
+              "w": "fundamentally indifferent to",
+              "meaning": "从根本上漠不关心"
+            },
+            {
+              "w": "figure out",
+              "meaning": "弄清楚"
+            },
+            {
+              "w": "defines who you are",
+              "meaning": "定义你是谁"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2015_text3_q1", "number": 31, "qtype": "detail", "stem": "According to Nancy Koehn, office language has become ___.", "stem_cn": "根据南希·克恩的说法，办公室语言变得___。", "options": { "A": "less strategic", "B": "less energetic", "C": "more objective", "D": "more emotional" }, "options_cn": { "A": "更缺乏战略性", "B": "更没活力", "C": "更加客观", "D": "更富情感" }, "answer": "D", "explanation": "第一段①句引克恩的话：相比二十年前，美国企业通用语变得更富情感（more emotional）、更多由右脑主导，故 [D] more emotional 复现原文、为答案。[A][B][C] 分别利用 strategies、energy、objectives 这些举例词设障，它们只是克恩举证的例子而非变化本身。", "related_sentences": [ "2015_text3_s01" ] },
-        { "id": "2015_text3_q2", "number": 32, "qtype": "inference", "stem": "\"Team\"-oriented corporate vocabulary is closely related to ___.", "stem_cn": "“团队”导向型的企业词汇与___密切相关。", "options": { "A": "sports culture", "B": "gender difference", "C": "historical incidents", "D": "athletic executives" }, "options_cn": { "A": "体育文化", "B": "性别差异", "C": "历史事件", "D": "运动型的公司经理" }, "answer": "A", "explanation": "第二段①句指出新的企业词汇具有“团队”导向且并非偶然，随后②③④句以“CEO 自视为教练、公司即球队”解释：在男性主导的美国企业中体育（团队）文化影响深远，故 [A] sports culture 正确。[B][C][D] 分别拼凑 male-dominated、historically、coaches 等词设障。", "related_sentences": [ "2015_text3_s05", "2015_text3_s06" ] },
-        { "id": "2015_text3_q3", "number": 33, "qtype": "detail", "stem": "Khurana believes that the importation of terminology aims to ___.", "stem_cn": "库拉纳认为专用语的引入旨在___。", "options": { "A": "revive historical terms", "B": "promote company image", "C": "foster corporate cooperation", "D": "strengthen employee loyalty" }, "options_cn": { "A": "复兴历史词汇", "B": "提升企业形象", "C": "培养企业合作", "D": "增强员工忠诚度" }, "answer": "D", "explanation": "第三段①句指出新型企业词汇旨在赋予工作意义、进而提高员工对公司的忠诚度（increase allegiance to the firm），故 [D] strengthen employee loyalty 为其同义改写，正确。[A] 将 historically 曲解为“复兴历史词汇”；[B][C] 均为文中未提及的捏造。", "related_sentences": [ "2015_text3_s09" ] },
-        { "id": "2015_text3_q4", "number": 34, "qtype": "inference", "stem": "It can be inferred that Lean In ___.", "stem_cn": "可以推断出，《向前一步》___。", "options": { "A": "voices for working women", "B": "appeals to passionate workaholics", "C": "triggers debates among mommies", "D": "praises motivated employees" }, "options_cn": { "A": "为职场女性发声", "B": "吸引有激情的工作狂", "C": "引发妈妈们之间的争论", "D": "赞扬有积极性的员工" }, "answer": "A", "explanation": "第四段指出，“妈咪大战”引发了关于“为何女性仍无法兼顾一切”的争论，并催生了《向前一步》这类书，可推知该书道出了职场女性兼顾工作与家庭的困扰、为其发声，故 [A] 正确。[B] 拼凑 passion 捏造“工作狂”；[C] 颠倒因果；[D] 主观臆断。", "related_sentences": [ "2015_text3_s11", "2015_text3_s12" ] },
-        { "id": "2015_text3_q5", "number": 35, "qtype": "detail", "stem": "Which of the following statements is true about office speak?", "stem_cn": "关于办公室用语，下列哪项说法正确？", "options": { "A": "Linguists believe it to be nonsense.", "B": "Regular people mock it but accept it.", "C": "Companies find it to be fundamental.", "D": "Managers admire it but avoid it." }, "options_cn": { "A": "语言学家认为它是无稽之谈。", "B": "普通人嘲笑它但又接受它。", "C": "企业认为它是必不可少的。", "D": "经理们称赞它但却避免使用它。" }, "answer": "B", "explanation": "末段①句指出“人人都取笑它，但经理们喜欢它、企业依赖它、普通人欣然接受它”，regular people 属于 Everyone 的一部分，对办公室用语既取笑又接受，故 [B] 正确。[A] 语言学家那句是评人们的矛盾态度，非其自身看法；[C] 把 depend on 过度抰高为 fundamental；[D] 额外添加了 avoid it 的无关信息。", "related_sentences": [ "2015_text3_s15" ] }
+        {
+          "id": "2015_text3_q1",
+          "number": 31,
+          "qtype": "detail",
+          "stem": "According to Nancy Koehn, office language has become ___.",
+          "stem_cn": "根据南希·克恩的说法，办公室语言变得___。",
+          "options": {
+            "A": "less strategic",
+            "B": "less energetic",
+            "C": "more objective",
+            "D": "more emotional"
+          },
+          "options_cn": {
+            "A": "更缺乏战略性",
+            "B": "更没活力",
+            "C": "更加客观",
+            "D": "更富情感"
+          },
+          "answer": "D",
+          "explanation": "第一段①句引克恩的话：相比二十年前，美国企业通用语变得更富情感（more emotional）、更多由右脑主导，故 [D] more emotional 复现原文、为答案。[A][B][C] 分别利用 strategies、energy、objectives 这些举例词设障，它们只是克恩举证的例子而非变化本身。",
+          "related_sentences": [
+            "2015_text3_s01"
+          ]
+        },
+        {
+          "id": "2015_text3_q2",
+          "number": 32,
+          "qtype": "inference",
+          "stem": "\"Team\"-oriented corporate vocabulary is closely related to ___.",
+          "stem_cn": "“团队”导向型的企业词汇与___密切相关。",
+          "options": {
+            "A": "sports culture",
+            "B": "gender difference",
+            "C": "historical incidents",
+            "D": "athletic executives"
+          },
+          "options_cn": {
+            "A": "体育文化",
+            "B": "性别差异",
+            "C": "历史事件",
+            "D": "运动型的公司经理"
+          },
+          "answer": "A",
+          "explanation": "第二段①句指出新的企业词汇具有“团队”导向且并非偶然，随后②③④句以“CEO 自视为教练、公司即球队”解释：在男性主导的美国企业中体育（团队）文化影响深远，故 [A] sports culture 正确。[B][C][D] 分别拼凑 male-dominated、historically、coaches 等词设障。",
+          "related_sentences": [
+            "2015_text3_s05",
+            "2015_text3_s06"
+          ]
+        },
+        {
+          "id": "2015_text3_q3",
+          "number": 33,
+          "qtype": "detail",
+          "stem": "Khurana believes that the importation of terminology aims to ___.",
+          "stem_cn": "库拉纳认为专用语的引入旨在___。",
+          "options": {
+            "A": "revive historical terms",
+            "B": "promote company image",
+            "C": "foster corporate cooperation",
+            "D": "strengthen employee loyalty"
+          },
+          "options_cn": {
+            "A": "复兴历史词汇",
+            "B": "提升企业形象",
+            "C": "培养企业合作",
+            "D": "增强员工忠诚度"
+          },
+          "answer": "D",
+          "explanation": "第三段①句指出新型企业词汇旨在赋予工作意义、进而提高员工对公司的忠诚度（increase allegiance to the firm），故 [D] strengthen employee loyalty 为其同义改写，正确。[A] 将 historically 曲解为“复兴历史词汇”；[B][C] 均为文中未提及的捏造。",
+          "related_sentences": [
+            "2015_text3_s09"
+          ]
+        },
+        {
+          "id": "2015_text3_q4",
+          "number": 34,
+          "qtype": "inference",
+          "stem": "It can be inferred that Lean In ___.",
+          "stem_cn": "可以推断出，《向前一步》___。",
+          "options": {
+            "A": "voices for working women",
+            "B": "appeals to passionate workaholics",
+            "C": "triggers debates among mommies",
+            "D": "praises motivated employees"
+          },
+          "options_cn": {
+            "A": "为职场女性发声",
+            "B": "吸引有激情的工作狂",
+            "C": "引发妈妈们之间的争论",
+            "D": "赞扬有积极性的员工"
+          },
+          "answer": "A",
+          "explanation": "第四段指出，“妈咪大战”引发了关于“为何女性仍无法兼顾一切”的争论，并催生了《向前一步》这类书，可推知该书道出了职场女性兼顾工作与家庭的困扰、为其发声，故 [A] 正确。[B] 拼凑 passion 捏造“工作狂”；[C] 颠倒因果；[D] 主观臆断。",
+          "related_sentences": [
+            "2015_text3_s11",
+            "2015_text3_s12"
+          ]
+        },
+        {
+          "id": "2015_text3_q5",
+          "number": 35,
+          "qtype": "detail",
+          "stem": "Which of the following statements is true about office speak?",
+          "stem_cn": "关于办公室用语，下列哪项说法正确？",
+          "options": {
+            "A": "Linguists believe it to be nonsense.",
+            "B": "Regular people mock it but accept it.",
+            "C": "Companies find it to be fundamental.",
+            "D": "Managers admire it but avoid it."
+          },
+          "options_cn": {
+            "A": "语言学家认为它是无稽之谈。",
+            "B": "普通人嘲笑它但又接受它。",
+            "C": "企业认为它是必不可少的。",
+            "D": "经理们称赞它但却避免使用它。"
+          },
+          "answer": "B",
+          "explanation": "末段①句指出“人人都取笑它，但经理们喜欢它、企业依赖它、普通人欣然接受它”，regular people 属于 Everyone 的一部分，对办公室用语既取笑又接受，故 [B] 正确。[A] 语言学家那句是评人们的矛盾态度，非其自身看法；[C] 把 depend on 过度抰高为 fundamental；[D] 额外添加了 avoid it 的无关信息。",
+          "related_sentences": [
+            "2015_text3_s15"
+          ]
+        }
       ]
     },
     {
@@ -112,37 +1293,2144 @@
       "topic": "兼职就业与奥巴马医改：自愿兼职为何激增",
       "source": "2015 年考研英语（二）Text 4 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2015_text4_s01", "para": 1, "en": "Many people talked of the 288,000 new jobs the Labor Department reported for June, along with the drop in the unemployment rate to 6.1 percent, as good news.", "cn": "许多人将劳工部六月所公布的 28.8 万个新增就业岗位以及失业率降至 6.1% 视为福音大加谈论。", "words": [ { "w": "the Labor Department", "meaning": "劳工部" }, { "w": "along with", "meaning": "连同，随同" }, { "w": "unemployment rate", "meaning": "失业率" } ] },
-        { "id": "2015_text4_s02", "para": 1, "en": "And they were right.", "cn": "而且他们是对的。", "words": [ { "w": "right", "meaning": "adj. 正确的" } ] },
-        { "id": "2015_text4_s03", "para": 1, "en": "For now it appears the economy is creating jobs at a decent pace.", "cn": "目前看来经济似乎正在以相当不错的速度创造着就业机会。", "words": [ { "w": "For now", "meaning": "目前，眼下" }, { "w": "at a decent pace", "meaning": "以相当不错的速度" } ] },
-        { "id": "2015_text4_s04", "para": 1, "en": "We still have a long way to go to get back to full employment, but at least we are now finally moving forward at a faster pace.", "cn": "虽然重回充分就业还有很长的路要走，但至少我们现在终于能以较快的速度前行了。", "words": [ { "w": "have a long way to go", "meaning": "还有很长的路要走" }, { "w": "full employment", "meaning": "充分就业" }, { "w": "moving forward", "meaning": "向前推进" } ] },
-        { "id": "2015_text4_s05", "para": 2, "en": "However, there is another important part of the jobs picture that was largely overlooked.", "cn": "然而，人们在很大程度上忽略了就业图景的另一重要部分。", "words": [ { "w": "jobs picture", "meaning": "就业图景" }, { "w": "largely overlooked", "meaning": "在很大程度上被忽略" } ] },
-        { "id": "2015_text4_s06", "para": 2, "en": "There was a big jump in the number of people who report voluntarily working part-time.", "cn": "申报自愿从事兼职工作的人数出现大幅激增。", "words": [ { "w": "a big jump", "meaning": "大幅激增" }, { "w": "voluntarily working part-time", "meaning": "自愿从事兼职工作" } ] },
-        { "id": "2015_text4_s07", "para": 2, "en": "This figure is now 830,000 (4.4 percent) above its year ago level.", "cn": "该数字目前比一年前的水平高出 83 万（4.4%）。", "words": [ { "w": "above its year ago level", "meaning": "高于一年前的水平" } ] },
-        { "id": "2015_text4_s08", "para": 3, "en": "Before explaining the connection to the Obamacare, it is worth making an important distinction.", "cn": "在解释与奥巴马医改的关联之前，值得做一个重要的区分。", "words": [ { "w": "the connection to", "meaning": "与……的关联" }, { "w": "making an important distinction", "meaning": "作出一个重要区分" } ] },
-        { "id": "2015_text4_s09", "para": 3, "en": "Many people who work part-time jobs actually want full-time jobs.", "cn": "许多从事兼职工作的人实际上想要全职工作。", "words": [ { "w": "part-time jobs", "meaning": "兼职工作" }, { "w": "full-time jobs", "meaning": "全职工作" } ] },
-        { "id": "2015_text4_s10", "para": 3, "en": "They take part-time work because this is all they can get.", "cn": "他们从事兼职工作是因为这是他们所能得到的全部。", "words": [ { "w": "take part-time work", "meaning": "接受兼职工作" }, { "w": "all they can get", "meaning": "他们所能得到的全部" } ] },
-        { "id": "2015_text4_s11", "para": 3, "en": "An increase in involuntary part-time work is evidence of weakness in the labor market and it means that many people will be having a very hard time making ends meet.", "cn": "非自愿兼职工作的增加是劳动力市场疲软的证据，这意味着许多人将很难维持收支平衡。", "words": [ { "w": "involuntary part-time work", "meaning": "非自愿兼职工作" }, { "w": "weakness in the labor market", "meaning": "劳动力市场的疲软" }, { "w": "making ends meet", "meaning": "勉强维持生计，收支相抵" } ] },
-        { "id": "2015_text4_s12", "para": 4, "en": "There was an increase in involuntary part-time in June, but the general direction has been down.", "cn": "六月份非自愿兼职有所增加，但总体呈下降趋势。", "words": [ { "w": "the general direction", "meaning": "总体趋势，大方向" } ] },
-        { "id": "2015_text4_s13", "para": 4, "en": "Involuntary part-time employment is still far higher than before the recession, but it is down by 640,000 (7.9 percent) from its year ago level.", "cn": "非自愿兼职者虽仍比经济衰退之前高出许多，但比一年前水平降低了 64 万（7.9%）。", "words": [ { "w": "Involuntary part-time employment", "meaning": "非自愿兼职就业" }, { "w": "before the recession", "meaning": "经济衰退之前" }, { "w": "down by", "meaning": "下降了（某数量）" } ] },
-        { "id": "2015_text4_s14", "para": 5, "en": "We know the difference between voluntary and involuntary part-time employment because people tell us.", "cn": "我们之所以能区分自愿与非自愿兼职，是因为人们告诉了我们。", "words": [ { "w": "the difference between", "meaning": "……之间的区别" }, { "w": "voluntary and involuntary", "meaning": "自愿与非自愿" } ] },
-        { "id": "2015_text4_s15", "para": 5, "en": "The survey used by the Labor Department asks people if they worked less than 35 hours in the reference week.", "cn": "劳工部采用的调查会询问人们，调查参考周内的工作时间是否少于 35 小时。", "words": [ { "w": "The survey", "meaning": "调查" }, { "w": "the reference week", "meaning": "（调查）参考周" } ] },
-        { "id": "2015_text4_s16", "para": 5, "en": "If the answer is \"yes,\" they are classified as working part-time.", "cn": "如果回答“是”，他们就会被归类为从事兼职工作。", "words": [ { "w": "classified as", "meaning": "被归类为" } ] },
-        { "id": "2015_text4_s17", "para": 5, "en": "The survey then asks whether they worked less than 35 hours in that week because they wanted to work less than full time or because they had no choice.", "cn": "该调查会进一步询问，他们那周的工作时间少于 35 小时是因为自己希望工作时间少于全职还是因为别无选择。", "words": [ { "w": "less than full time", "meaning": "少于全职" }, { "w": "had no choice", "meaning": "别无选择" } ] },
-        { "id": "2015_text4_s18", "para": 5, "en": "They are only classified as voluntary part-time workers if they tell the survey taker they chose to work less than 35 hours a week.", "cn": "只有在他们告诉调查者他们“选择”一周工作少于 35 小时的情况下，才会被归类为自愿兼职工作者。", "words": [ { "w": "voluntary part-time workers", "meaning": "自愿兼职工作者" }, { "w": "the survey taker", "meaning": "调查者，问卷发放者" } ] },
-        { "id": "2015_text4_s19", "para": 6, "en": "The issue of voluntary part-time relates to Obamacare because one of the main purposes was to allow people to get insurance outside of employment.", "cn": "自愿兼职工作问题的确和奥巴马医改相关，因为医改的主要目的之一便是使人们在非就业的情况下也能得到保险。", "words": [ { "w": "relates to", "meaning": "与……相关" }, { "w": "get insurance", "meaning": "获得保险" }, { "w": "outside of employment", "meaning": "在就业之外，非就业情形下" } ] },
-        { "id": "2015_text4_s20", "para": 6, "en": "For many people, especially those with serious health conditions or family members with serious health conditions, before Obamacare the only way to get insurance was through a job that provided health insurance.", "cn": "对于很多人，尤其是那些本人或家人有严重健康问题的人来说，在奥巴马医改之前，他们得到保险的唯一途径便是找到一份提供医疗保险的工作。", "words": [ { "w": "serious health conditions", "meaning": "严重的健康问题" }, { "w": "the only way to", "meaning": "……的唯一途径" }, { "w": "health insurance", "meaning": "医疗保险" } ] },
-        { "id": "2015_text4_s21", "para": 7, "en": "However, Obamacare has allowed more than 12 million people to either get insurance through Medicaid or the exchanges.", "cn": "然而，奥巴马医改使得 1200 多万人能够通过医疗补助计划或医保交易所获得保险。", "words": [ { "w": "Medicaid", "meaning": "n. 医疗补助计划（美国面向低收入者的医保）" }, { "w": "the exchanges", "meaning": "（医保）交易市场" } ] },
-        { "id": "2015_text4_s22", "para": 7, "en": "These are people who may previously have felt the need to get a full-time job that provided insurance in order to cover themselves and their families.", "cn": "这些人此前可能感到迫切需要找到一份提供保险的全职工作，以便为自己和家人提供保障。", "words": [ { "w": "previously", "meaning": "adv. 先前，以前" }, { "w": "in order to", "meaning": "为了" }, { "w": "cover", "meaning": "v. 为……投保，承保" } ] },
-        { "id": "2015_text4_s23", "para": 7, "en": "With Obamacare there is no longer a link between employment and insurance.", "cn": "有了奥巴马医改，就业和保险之间不再有关联。", "words": [ { "w": "no longer", "meaning": "不再" }, { "w": "a link between", "meaning": "……之间的关联" } ] }
+        {
+          "id": "2015_text4_s01",
+          "para": 1,
+          "en": "Many people talked of the 288,000 new jobs the Labor Department reported for June, along with the drop in the unemployment rate to 6.1 percent, as good news.",
+          "cn": "许多人将劳工部六月所公布的 28.8 万个新增就业岗位以及失业率降至 6.1% 视为福音大加谈论。",
+          "words": [
+            {
+              "w": "the Labor Department",
+              "meaning": "劳工部"
+            },
+            {
+              "w": "along with",
+              "meaning": "连同，随同"
+            },
+            {
+              "w": "unemployment rate",
+              "meaning": "失业率"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s02",
+          "para": 1,
+          "en": "And they were right.",
+          "cn": "而且他们是对的。",
+          "words": [
+            {
+              "w": "right",
+              "meaning": "adj. 正确的"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s03",
+          "para": 1,
+          "en": "For now it appears the economy is creating jobs at a decent pace.",
+          "cn": "目前看来经济似乎正在以相当不错的速度创造着就业机会。",
+          "words": [
+            {
+              "w": "For now",
+              "meaning": "目前，眼下"
+            },
+            {
+              "w": "at a decent pace",
+              "meaning": "以相当不错的速度"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s04",
+          "para": 1,
+          "en": "We still have a long way to go to get back to full employment, but at least we are now finally moving forward at a faster pace.",
+          "cn": "虽然重回充分就业还有很长的路要走，但至少我们现在终于能以较快的速度前行了。",
+          "words": [
+            {
+              "w": "have a long way to go",
+              "meaning": "还有很长的路要走"
+            },
+            {
+              "w": "full employment",
+              "meaning": "充分就业"
+            },
+            {
+              "w": "moving forward",
+              "meaning": "向前推进"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s05",
+          "para": 2,
+          "en": "However, there is another important part of the jobs picture that was largely overlooked.",
+          "cn": "然而，人们在很大程度上忽略了就业图景的另一重要部分。",
+          "words": [
+            {
+              "w": "jobs picture",
+              "meaning": "就业图景"
+            },
+            {
+              "w": "largely overlooked",
+              "meaning": "在很大程度上被忽略"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s06",
+          "para": 2,
+          "en": "There was a big jump in the number of people who report voluntarily working part-time.",
+          "cn": "申报自愿从事兼职工作的人数出现大幅激增。",
+          "words": [
+            {
+              "w": "a big jump",
+              "meaning": "大幅激增"
+            },
+            {
+              "w": "voluntarily working part-time",
+              "meaning": "自愿从事兼职工作"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s07",
+          "para": 2,
+          "en": "This figure is now 830,000 (4.4 percent) above its year ago level.",
+          "cn": "该数字目前比一年前的水平高出 83 万（4.4%）。",
+          "words": [
+            {
+              "w": "above its year ago level",
+              "meaning": "高于一年前的水平"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s08",
+          "para": 3,
+          "en": "Before explaining the connection to the Obamacare, it is worth making an important distinction.",
+          "cn": "在解释与奥巴马医改的关联之前，值得做一个重要的区分。",
+          "words": [
+            {
+              "w": "the connection to",
+              "meaning": "与……的关联"
+            },
+            {
+              "w": "making an important distinction",
+              "meaning": "作出一个重要区分"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s09",
+          "para": 3,
+          "en": "Many people who work part-time jobs actually want full-time jobs.",
+          "cn": "许多从事兼职工作的人实际上想要全职工作。",
+          "words": [
+            {
+              "w": "part-time jobs",
+              "meaning": "兼职工作"
+            },
+            {
+              "w": "full-time jobs",
+              "meaning": "全职工作"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s10",
+          "para": 3,
+          "en": "They take part-time work because this is all they can get.",
+          "cn": "他们从事兼职工作是因为这是他们所能得到的全部。",
+          "words": [
+            {
+              "w": "take part-time work",
+              "meaning": "接受兼职工作"
+            },
+            {
+              "w": "all they can get",
+              "meaning": "他们所能得到的全部"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s11",
+          "para": 3,
+          "en": "An increase in involuntary part-time work is evidence of weakness in the labor market and it means that many people will be having a very hard time making ends meet.",
+          "cn": "非自愿兼职工作的增加是劳动力市场疲软的证据，这意味着许多人将很难维持收支平衡。",
+          "words": [
+            {
+              "w": "involuntary part-time work",
+              "meaning": "非自愿兼职工作"
+            },
+            {
+              "w": "weakness in the labor market",
+              "meaning": "劳动力市场的疲软"
+            },
+            {
+              "w": "making ends meet",
+              "meaning": "勉强维持生计，收支相抵"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s12",
+          "para": 4,
+          "en": "There was an increase in involuntary part-time in June, but the general direction has been down.",
+          "cn": "六月份非自愿兼职有所增加，但总体呈下降趋势。",
+          "words": [
+            {
+              "w": "the general direction",
+              "meaning": "总体趋势，大方向"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s13",
+          "para": 4,
+          "en": "Involuntary part-time employment is still far higher than before the recession, but it is down by 640,000 (7.9 percent) from its year ago level.",
+          "cn": "非自愿兼职者虽仍比经济衰退之前高出许多，但比一年前水平降低了 64 万（7.9%）。",
+          "words": [
+            {
+              "w": "Involuntary part-time employment",
+              "meaning": "非自愿兼职就业"
+            },
+            {
+              "w": "before the recession",
+              "meaning": "经济衰退之前"
+            },
+            {
+              "w": "down by",
+              "meaning": "下降了（某数量）"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s14",
+          "para": 5,
+          "en": "We know the difference between voluntary and involuntary part-time employment because people tell us.",
+          "cn": "我们之所以能区分自愿与非自愿兼职，是因为人们告诉了我们。",
+          "words": [
+            {
+              "w": "the difference between",
+              "meaning": "……之间的区别"
+            },
+            {
+              "w": "voluntary and involuntary",
+              "meaning": "自愿与非自愿"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s15",
+          "para": 5,
+          "en": "The survey used by the Labor Department asks people if they worked less than 35 hours in the reference week.",
+          "cn": "劳工部采用的调查会询问人们，调查参考周内的工作时间是否少于 35 小时。",
+          "words": [
+            {
+              "w": "The survey",
+              "meaning": "调查"
+            },
+            {
+              "w": "the reference week",
+              "meaning": "（调查）参考周"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s16",
+          "para": 5,
+          "en": "If the answer is \"yes,\" they are classified as working part-time.",
+          "cn": "如果回答“是”，他们就会被归类为从事兼职工作。",
+          "words": [
+            {
+              "w": "classified as",
+              "meaning": "被归类为"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s17",
+          "para": 5,
+          "en": "The survey then asks whether they worked less than 35 hours in that week because they wanted to work less than full time or because they had no choice.",
+          "cn": "该调查会进一步询问，他们那周的工作时间少于 35 小时是因为自己希望工作时间少于全职还是因为别无选择。",
+          "words": [
+            {
+              "w": "less than full time",
+              "meaning": "少于全职"
+            },
+            {
+              "w": "had no choice",
+              "meaning": "别无选择"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s18",
+          "para": 5,
+          "en": "They are only classified as voluntary part-time workers if they tell the survey taker they chose to work less than 35 hours a week.",
+          "cn": "只有在他们告诉调查者他们“选择”一周工作少于 35 小时的情况下，才会被归类为自愿兼职工作者。",
+          "words": [
+            {
+              "w": "voluntary part-time workers",
+              "meaning": "自愿兼职工作者"
+            },
+            {
+              "w": "the survey taker",
+              "meaning": "调查者，问卷发放者"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s19",
+          "para": 6,
+          "en": "The issue of voluntary part-time relates to Obamacare because one of the main purposes was to allow people to get insurance outside of employment.",
+          "cn": "自愿兼职工作问题的确和奥巴马医改相关，因为医改的主要目的之一便是使人们在非就业的情况下也能得到保险。",
+          "words": [
+            {
+              "w": "relates to",
+              "meaning": "与……相关"
+            },
+            {
+              "w": "get insurance",
+              "meaning": "获得保险"
+            },
+            {
+              "w": "outside of employment",
+              "meaning": "在就业之外，非就业情形下"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s20",
+          "para": 6,
+          "en": "For many people, especially those with serious health conditions or family members with serious health conditions, before Obamacare the only way to get insurance was through a job that provided health insurance.",
+          "cn": "对于很多人，尤其是那些本人或家人有严重健康问题的人来说，在奥巴马医改之前，他们得到保险的唯一途径便是找到一份提供医疗保险的工作。",
+          "words": [
+            {
+              "w": "serious health conditions",
+              "meaning": "严重的健康问题"
+            },
+            {
+              "w": "the only way to",
+              "meaning": "……的唯一途径"
+            },
+            {
+              "w": "health insurance",
+              "meaning": "医疗保险"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s21",
+          "para": 7,
+          "en": "However, Obamacare has allowed more than 12 million people to either get insurance through Medicaid or the exchanges.",
+          "cn": "然而，奥巴马医改使得 1200 多万人能够通过医疗补助计划或医保交易所获得保险。",
+          "words": [
+            {
+              "w": "Medicaid",
+              "meaning": "n. 医疗补助计划（美国面向低收入者的医保）"
+            },
+            {
+              "w": "the exchanges",
+              "meaning": "（医保）交易市场"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s22",
+          "para": 7,
+          "en": "These are people who may previously have felt the need to get a full-time job that provided insurance in order to cover themselves and their families.",
+          "cn": "这些人此前可能感到迫切需要找到一份提供保险的全职工作，以便为自己和家人提供保障。",
+          "words": [
+            {
+              "w": "previously",
+              "meaning": "adv. 先前，以前"
+            },
+            {
+              "w": "in order to",
+              "meaning": "为了"
+            },
+            {
+              "w": "cover",
+              "meaning": "v. 为……投保，承保"
+            }
+          ]
+        },
+        {
+          "id": "2015_text4_s23",
+          "para": 7,
+          "en": "With Obamacare there is no longer a link between employment and insurance.",
+          "cn": "有了奥巴马医改，就业和保险之间不再有关联。",
+          "words": [
+            {
+              "w": "no longer",
+              "meaning": "不再"
+            },
+            {
+              "w": "a link between",
+              "meaning": "……之间的关联"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2015_text4_q1", "number": 36, "qtype": "detail", "stem": "Which part of the jobs picture was neglected?", "stem_cn": "就业图景中的哪一部分被忽略了？", "options": { "A": "The prospect of a thriving job market.", "B": "The increase of voluntary part-time jobs.", "C": "The possibility of full employment.", "D": "The acceleration of job creation." }, "options_cn": { "A": "就业市场繁荣的前景。", "B": "自愿兼职工作的增加。", "C": "充分就业的可能性。", "D": "就业岗位创造的加速。" }, "answer": "B", "explanation": "第二段①句指出就业图景中另一重要部分“在很大程度上被忽略（largely overlooked）”，②句紧接着揭示该部分正是“自愿从事兼职的人数大幅激增”，故 [B] 正确。[A][C][D] 分别取自第一段“被公众关注”的就业岗位增加、失业率下降、经济复苏等内容，与题干所问“被忽略部分”文不对题。", "related_sentences": [ "2015_text4_s05", "2015_text4_s06" ] },
-        { "id": "2015_text4_q2", "number": 37, "qtype": "detail", "stem": "Many people work part-time because they ___.", "stem_cn": "许多人从事兼职工作是因为他们___。", "options": { "A": "prefer part-time jobs to full-time jobs", "B": "feel that is enough to make ends meet", "C": "cannot get their hands on full-time jobs", "D": "haven't seen the weakness of the market" }, "options_cn": { "A": "相比全职更偏爱兼职工作", "B": "觉得那足以维持生计", "C": "无法找到全职工作", "D": "没有看到市场的疲软" }, "answer": "C", "explanation": "第三段②③句指出：许多做兼职的人其实想要全职，他们接受兼职是因为“这已是他们所能得到的全部（this is all they can get）”，即找不到全职工作，故 [C] cannot get their hands on full-time jobs 正确。[A] 与“其实想要全职”相反；[B] 与“极其艰难地维持生计”矛盾；[D] 曲解为“未见识市场疲软”，实为“正在经历市场疲软”。", "related_sentences": [ "2015_text4_s09", "2015_text4_s10" ] },
-        { "id": "2015_text4_q3", "number": 38, "qtype": "detail", "stem": "Involuntary part-time employment in the US ___.", "stem_cn": "美国的非自愿兼职就业___。", "options": { "A": "shows a general tendency of decline", "B": "is harder to acquire than one year ago", "C": "satisfies the real need of the jobless", "D": "is lower than before the recession" }, "options_cn": { "A": "呈现总体下降的趋势", "B": "比一年前更难获得", "C": "满足了失业者的真实需求", "D": "低于经济衰退之前的水平" }, "answer": "A", "explanation": "第四段①句指出六月非自愿兼职虽有所增加，但“总体方向一直在下降（the general direction has been down）”，②句进一步说其比一年前降低了64万（7.9%），故 [A] shows a general tendency of decline 正确。[D] 与原文“仍远高于衰退之前”相反；[B][C] 均为文中未提及的捏造。", "related_sentences": [ "2015_text4_s12", "2015_text4_s13" ] },
-        { "id": "2015_text4_q4", "number": 39, "qtype": "inference", "stem": "It can be learned that with Obamacare, ___.", "stem_cn": "由文可知，随着奥巴马医改的实施，___。", "options": { "A": "it is no longer easy for part-timers to get insurance", "B": "full-time employment is still essential for insurance", "C": "it is still challenging to get insurance for family members", "D": "employment is no longer a precondition to get insurance" }, "options_cn": { "A": "兼职者获得保险不再容易", "B": "全职就业对获得保险仍必不可少", "C": "为家庭成员获得保险仍然困难", "D": "就业不再是获得保险的前提" }, "answer": "D", "explanation": "第六、七段说明医改主要目的之一是让人们“在就业之外也能获得保险”，末句更明确指出“就业与保险之间不再存在关联（no longer a link between employment and insurance）”，故 [D] employment is no longer a precondition 正确。[B] 与末句直接相反；[A][C] 均与“医改让更多人更易获保险”的主旨相悖。", "related_sentences": [ "2015_text4_s19", "2015_text4_s23" ] },
-        { "id": "2015_text4_q5", "number": 40, "qtype": "main_idea", "stem": "The text mainly discusses ___.", "stem_cn": "本文主要讨论___。", "options": { "A": "employment in the US", "B": "part-timer classification", "C": "insurance through Medicaid", "D": "Obamacare's trouble" }, "options_cn": { "A": "美国的就业", "B": "兼职者的分类", "C": "通过医疗补助计划获得的保险", "D": "奥巴马医改的麻烦" }, "answer": "A", "explanation": "全文以劳工部就业数据切入，围绕“就业图景中被忽略的自愿兼职激增”展开，再借奥巴马医改解释其成因，落脚点始终是美国的就业状况，故 [A] employment in the US 概括最全面、正确。[B][C][D] 分别只是文中用于论证的局部细节（分类标准、Medicaid、医改），以偏概全。", "related_sentences": [ "2015_text4_s01", "2015_text4_s05" ] }
+        {
+          "id": "2015_text4_q1",
+          "number": 36,
+          "qtype": "detail",
+          "stem": "Which part of the jobs picture was neglected?",
+          "stem_cn": "就业图景中的哪一部分被忽略了？",
+          "options": {
+            "A": "The prospect of a thriving job market.",
+            "B": "The increase of voluntary part-time jobs.",
+            "C": "The possibility of full employment.",
+            "D": "The acceleration of job creation."
+          },
+          "options_cn": {
+            "A": "就业市场繁荣的前景。",
+            "B": "自愿兼职工作的增加。",
+            "C": "充分就业的可能性。",
+            "D": "就业岗位创造的加速。"
+          },
+          "answer": "B",
+          "explanation": "第二段①句指出就业图景中另一重要部分“在很大程度上被忽略（largely overlooked）”，②句紧接着揭示该部分正是“自愿从事兼职的人数大幅激增”，故 [B] 正确。[A][C][D] 分别取自第一段“被公众关注”的就业岗位增加、失业率下降、经济复苏等内容，与题干所问“被忽略部分”文不对题。",
+          "related_sentences": [
+            "2015_text4_s05",
+            "2015_text4_s06"
+          ]
+        },
+        {
+          "id": "2015_text4_q2",
+          "number": 37,
+          "qtype": "detail",
+          "stem": "Many people work part-time because they ___.",
+          "stem_cn": "许多人从事兼职工作是因为他们___。",
+          "options": {
+            "A": "prefer part-time jobs to full-time jobs",
+            "B": "feel that is enough to make ends meet",
+            "C": "cannot get their hands on full-time jobs",
+            "D": "haven't seen the weakness of the market"
+          },
+          "options_cn": {
+            "A": "相比全职更偏爱兼职工作",
+            "B": "觉得那足以维持生计",
+            "C": "无法找到全职工作",
+            "D": "没有看到市场的疲软"
+          },
+          "answer": "C",
+          "explanation": "第三段②③句指出：许多做兼职的人其实想要全职，他们接受兼职是因为“这已是他们所能得到的全部（this is all they can get）”，即找不到全职工作，故 [C] cannot get their hands on full-time jobs 正确。[A] 与“其实想要全职”相反；[B] 与“极其艰难地维持生计”矛盾；[D] 曲解为“未见识市场疲软”，实为“正在经历市场疲软”。",
+          "related_sentences": [
+            "2015_text4_s09",
+            "2015_text4_s10"
+          ]
+        },
+        {
+          "id": "2015_text4_q3",
+          "number": 38,
+          "qtype": "detail",
+          "stem": "Involuntary part-time employment in the US ___.",
+          "stem_cn": "美国的非自愿兼职就业___。",
+          "options": {
+            "A": "shows a general tendency of decline",
+            "B": "is harder to acquire than one year ago",
+            "C": "satisfies the real need of the jobless",
+            "D": "is lower than before the recession"
+          },
+          "options_cn": {
+            "A": "呈现总体下降的趋势",
+            "B": "比一年前更难获得",
+            "C": "满足了失业者的真实需求",
+            "D": "低于经济衰退之前的水平"
+          },
+          "answer": "A",
+          "explanation": "第四段①句指出六月非自愿兼职虽有所增加，但“总体方向一直在下降（the general direction has been down）”，②句进一步说其比一年前降低了64万（7.9%），故 [A] shows a general tendency of decline 正确。[D] 与原文“仍远高于衰退之前”相反；[B][C] 均为文中未提及的捏造。",
+          "related_sentences": [
+            "2015_text4_s12",
+            "2015_text4_s13"
+          ]
+        },
+        {
+          "id": "2015_text4_q4",
+          "number": 39,
+          "qtype": "inference",
+          "stem": "It can be learned that with Obamacare, ___.",
+          "stem_cn": "由文可知，随着奥巴马医改的实施，___。",
+          "options": {
+            "A": "it is no longer easy for part-timers to get insurance",
+            "B": "full-time employment is still essential for insurance",
+            "C": "it is still challenging to get insurance for family members",
+            "D": "employment is no longer a precondition to get insurance"
+          },
+          "options_cn": {
+            "A": "兼职者获得保险不再容易",
+            "B": "全职就业对获得保险仍必不可少",
+            "C": "为家庭成员获得保险仍然困难",
+            "D": "就业不再是获得保险的前提"
+          },
+          "answer": "D",
+          "explanation": "第六、七段说明医改主要目的之一是让人们“在就业之外也能获得保险”，末句更明确指出“就业与保险之间不再存在关联（no longer a link between employment and insurance）”，故 [D] employment is no longer a precondition 正确。[B] 与末句直接相反；[A][C] 均与“医改让更多人更易获保险”的主旨相悖。",
+          "related_sentences": [
+            "2015_text4_s19",
+            "2015_text4_s23"
+          ]
+        },
+        {
+          "id": "2015_text4_q5",
+          "number": 40,
+          "qtype": "main_idea",
+          "stem": "The text mainly discusses ___.",
+          "stem_cn": "本文主要讨论___。",
+          "options": {
+            "A": "employment in the US",
+            "B": "part-timer classification",
+            "C": "insurance through Medicaid",
+            "D": "Obamacare's trouble"
+          },
+          "options_cn": {
+            "A": "美国的就业",
+            "B": "兼职者的分类",
+            "C": "通过医疗补助计划获得的保险",
+            "D": "奥巴马医改的麻烦"
+          },
+          "answer": "A",
+          "explanation": "全文以劳工部就业数据切入，围绕“就业图景中被忽略的自愿兼职激增”展开，再借奥巴马医改解释其成因，落脚点始终是美国的就业状况，故 [A] employment in the US 概括最全面、正确。[B][C][D] 分别只是文中用于论证的局部细节（分类标准、Medicaid、医改），以偏概全。",
+          "related_sentences": [
+            "2015_text4_s01",
+            "2015_text4_s05"
+          ]
+        }
       ]
+    },
+    {
+      "id": "2015_newtype",
+      "type": "newtype",
+      "title": "Old Truths to Help You Overcome Tough Times",
+      "topic": "新题型（小标题对应）：帮助度过艰难时期的五个古老真理。",
+      "source": "Section II Part B",
+      "pool": {
+        "A": "You are not alone",
+        "B": "Experience helps you grow",
+        "C": "Pave your own unique path",
+        "D": "Most of your fears are unreal",
+        "E": "Think about the present moment",
+        "F": "Don't fear responsibility for your life",
+        "G": "There are many things to be grateful for"
+      },
+      "pool_cn": {
+        "A": "你并非孤立无援",
+        "B": "经历助你成长",
+        "C": "走出属于自己的独特道路",
+        "D": "大多数恐惧都是虚幻的",
+        "E": "关注当下时刻",
+        "F": "不要害怕对自己的人生负责",
+        "G": "值得感恩的事很多"
+      },
+      "sentences": [
+        {
+          "id": "2015_newtype_s01",
+          "para": 1,
+          "en": "Unfortunately, life is not a bed of roses.",
+          "cn": "很不幸，人生并非事事如意。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s02",
+          "para": 1,
+          "en": "We are going through life facing sad experiences.",
+          "cn": "我们在生活中都会遇到一些令人悲伤的经历。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s03",
+          "para": 1,
+          "en": "Moreover, we are grieving various kinds of loss: a friendship, a romantic relationship or a house.",
+          "cn": "此外，我们要为各种失去而伤心：失去一段友谊，失去一段爱情，或是失去一套房子。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s04",
+          "para": 1,
+          "en": "Hard times may hold you down at what usually seems like the most inopportune time, but you should remember that they won't last forever.",
+          "cn": "困难时刻似乎总在你最不顺心的时候令你倍感压抑，但你应该记住，它们不会永远持续。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s05",
+          "para": 1,
+          "en": "When our time of mourning is over, we press forward, stronger with a greater understanding and respect for life.",
+          "cn": "悲伤过后，我们努力前行，（此时因为）有了对生活更深刻的理解和更多的尊重而变得更加坚强。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s06",
+          "para": 1,
+          "en": "Furthermore, these losses make us mature and eventually move us toward future opportunities for growth and happiness.",
+          "cn": "此外，这些失去让我们变得成熟，最终让我们获得未来成长和幸福的机会。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s07",
+          "para": 1,
+          "en": "I want to share these old truths I've learned along the way.",
+          "cn": "在此，我想分享我一路走来所领悟到的一些古老真理。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s08",
+          "para": 1,
+          "en": "Fear is both useful and harmful.",
+          "cn": "恐惧既有用也有害。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s09",
+          "para": 1,
+          "en": "This normal human reaction is used to protect us by signaling danger and preparing us to deal with it.",
+          "cn": "这一正常的人体反应通过发出危险信号让我们做好应对准备的方式来保护我们。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s10",
+          "para": 1,
+          "en": "Unfortunately, people create inner barriers with a help of exaggerating fears.",
+          "cn": "遗憾的是，人们往往会夸大恐惧，从而制造内心障碍。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s11",
+          "para": 1,
+          "en": "My favorite actor Will Smith once said, \"Fear is not real.",
+          "cn": "我最喜爱的演员威尔·史密斯曾经说过，“恐惧并非真实存在。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s12",
+          "para": 1,
+          "en": "It is a product of thoughts you create.",
+          "cn": "它是你自己创造出来的一种思维产物。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s13",
+          "para": 1,
+          "en": "Do not misunderstand me.",
+          "cn": "不要误解我的意思。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s14",
+          "para": 1,
+          "en": "Danger is very real.",
+          "cn": "危险是真实的。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s15",
+          "para": 1,
+          "en": "But fear is a choice.\"",
+          "cn": "但是恐惧是可选的。”",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s16",
+          "para": 1,
+          "en": "I do completely agree that fears are just the product of our luxuriant imagination.",
+          "cn": "我的确完全同意“恐惧只是我们丰富想象力的产物”这一观点。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s17",
+          "para": 1,
+          "en": "If you are surrounded by problems and cannot stop thinking about the past, try to focus on the present moment.",
+          "cn": "如果你被一堆问题所困，并且无法停止回想过去，那就努力去关注当下。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s18",
+          "para": 1,
+          "en": "Many of us are weighed down by the past or anxious about the future.",
+          "cn": "我们中许多人会被过去所累，或是为未来焦虑。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s19",
+          "para": 1,
+          "en": "You may feel guilt over your past, but you are poisoning the present with the things and circumstances you cannot change.",
+          "cn": "你也许为你的过去感到内疚，但你这是在用你无法改变的事物和环境破坏着你的现在。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s20",
+          "para": 1,
+          "en": "Value the present moment and remember how fortunate you are to be alive.",
+          "cn": "珍惜当下时刻并记住自己能活着是多么幸运。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s21",
+          "para": 1,
+          "en": "Enjoy the beauty of the world around and keep the eyes open to see the possibilities before you.",
+          "cn": "享受周围世界的美好，并睁大眼睛留意面前的机会。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s22",
+          "para": 1,
+          "en": "Happiness is not a point of future and not a moment from the past, but a mindset that can be designed into the present.",
+          "cn": "快乐不是未来的某一点，也不是过去的某一刻，而是一种有意融入当下的心态。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s23",
+          "para": 1,
+          "en": "Sometimes it is easy to feel bad because you are going through tough times.",
+          "cn": "有时候你很容易会因为正在经历困难时期而感觉糟糕。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s24",
+          "para": 1,
+          "en": "You can be easily caught up by life problems that you forget to pause and appreciate the things you have.",
+          "cn": "你很容易被生活中的问题所困，以至于忘了停下来欣赏自己已有的东西。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s25",
+          "para": 1,
+          "en": "Only strong people prefer to smile and value their life instead of crying and complaining about something.",
+          "cn": "只有坚强的人才会选择微笑并珍视自己的生活，而不会选择哭泣和抱怨。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s26",
+          "para": 1,
+          "en": "No matter how isolated you might feel and how serious the situation is, you should always remember that you are not alone.",
+          "cn": "不管你感觉多么孤独无助，也不管情况多么严重，你要永远牢记，你并非孤立无援。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s27",
+          "para": 1,
+          "en": "Try to keep in mind that almost everyone respects and wants to help you if you are trying to make a good change in your life, especially your dearest and nearest people.",
+          "cn": "请记住，如果你努力在生活中作出积极的改变，那么几乎所有的人都会尊重你并且愿意帮助你，尤其是你至亲至近的人。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s28",
+          "para": 1,
+          "en": "You may have a circle of friends who provide constant good humor, help and companionship.",
+          "cn": "你身边可能有一个朋友圈子，给你持续提供好心情，帮助以及陪伴。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s29",
+          "para": 1,
+          "en": "If you have no friends or relatives, try to participate in several online communities, full of people who are always willing to share advice and encouragement.",
+          "cn": "假如你没有朋友或亲人，那么努力加入几个在线社区吧，那里有许多人总是乐意分享建议和鼓励。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s30",
+          "para": 1,
+          "en": "Today many people find it difficult to trust their own opinion and seek balance by gaining objectivity from external sources.",
+          "cn": "如今很多人觉得很难信任自己的观点，并通过从外部来源获得客观性来寻求平衡。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s31",
+          "para": 1,
+          "en": "This way you devalue your opinion and show that you are incapable of managing your own life.",
+          "cn": "这样做贬低了你自己的见解，显示你没有能力经营自己的人生。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s32",
+          "para": 1,
+          "en": "When you are struggling to achieve something important you should believe in yourself and be sure that your decision is the best.",
+          "cn": "当你奋力获取某一重要之物时，你应该相信自己，确信自己的决定是最好的。",
+          "words": []
+        },
+        {
+          "id": "2015_newtype_s33",
+          "para": 1,
+          "en": "You live in your skin, think your own thoughts, have your own values and make your own choices.",
+          "cn": "你栖息在自己的身体里，思考着你自己的想法，有你自己的价值观并做出你自己的选择。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2015_newtype_q41",
+          "number": 41,
+          "qtype": "小标题",
+          "stem": "第 41 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "D",
+          "explanation": "第三段首先指出，恐惧有用也有害；然后在此基础上进一步表明观点：恐惧并非真实，而只是我们丰富想象力的产物。可见，选项[D] Most of your fears are unreal为对本段内容的恰当概括，fears体现本段讨论对象，unreal则概括not real/...a product of thoughts you create...is a choice...just the product of our luxuriant imagination等内容。",
+          "related_sentences": [
+            "2015_newtype_s01",
+            "2015_newtype_s02",
+            "2015_newtype_s03",
+            "2015_newtype_s04",
+            "2015_newtype_s05",
+            "2015_newtype_s06",
+            "2015_newtype_s07",
+            "2015_newtype_s08",
+            "2015_newtype_s09",
+            "2015_newtype_s10",
+            "2015_newtype_s11",
+            "2015_newtype_s12",
+            "2015_newtype_s13",
+            "2015_newtype_s14",
+            "2015_newtype_s15",
+            "2015_newtype_s16",
+            "2015_newtype_s17",
+            "2015_newtype_s18",
+            "2015_newtype_s19",
+            "2015_newtype_s20",
+            "2015_newtype_s21",
+            "2015_newtype_s22",
+            "2015_newtype_s23",
+            "2015_newtype_s24",
+            "2015_newtype_s25",
+            "2015_newtype_s26",
+            "2015_newtype_s27",
+            "2015_newtype_s28",
+            "2015_newtype_s29",
+            "2015_newtype_s30",
+            "2015_newtype_s31",
+            "2015_newtype_s32",
+            "2015_newtype_s33"
+          ]
+        },
+        {
+          "id": "2015_newtype_q42",
+          "number": 42,
+          "qtype": "小标题",
+          "stem": "第 42 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "E",
+          "explanation": "第四段首句给出建议：若面临被各种问题困扰的情形，那就努力关注当下。随后指出，为过去难过等于是在用你无法改变的事物破坏着你的现在。最后指出正确做法：珍视当下，享受周围的美好并留意面前的机会；幸福便是有意融入当下的心态。通观全段，作者主要观点为\"关注当下\"，[E]选项Think about the present moment即是对该段主旨的概括。",
+          "related_sentences": [
+            "2015_newtype_s01",
+            "2015_newtype_s02",
+            "2015_newtype_s03",
+            "2015_newtype_s04",
+            "2015_newtype_s05",
+            "2015_newtype_s06",
+            "2015_newtype_s07",
+            "2015_newtype_s08",
+            "2015_newtype_s09",
+            "2015_newtype_s10",
+            "2015_newtype_s11",
+            "2015_newtype_s12",
+            "2015_newtype_s13",
+            "2015_newtype_s14",
+            "2015_newtype_s15",
+            "2015_newtype_s16",
+            "2015_newtype_s17",
+            "2015_newtype_s18",
+            "2015_newtype_s19",
+            "2015_newtype_s20",
+            "2015_newtype_s21",
+            "2015_newtype_s22",
+            "2015_newtype_s23",
+            "2015_newtype_s24",
+            "2015_newtype_s25",
+            "2015_newtype_s26",
+            "2015_newtype_s27",
+            "2015_newtype_s28",
+            "2015_newtype_s29",
+            "2015_newtype_s30",
+            "2015_newtype_s31",
+            "2015_newtype_s32",
+            "2015_newtype_s33"
+          ]
+        },
+        {
+          "id": "2015_newtype_q43",
+          "number": 43,
+          "qtype": "小标题",
+          "stem": "第 43 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "G",
+          "explanation": "第五段首先指出人们很容易会在困难时期感觉糟糕，忘记停下来欣赏自己已有的东西。随后提出正确的做法：选择微笑并珍视自己的生活。可见选项[G] There are many things to be grateful for应为该段小标题。",
+          "related_sentences": [
+            "2015_newtype_s01",
+            "2015_newtype_s02",
+            "2015_newtype_s03",
+            "2015_newtype_s04",
+            "2015_newtype_s05",
+            "2015_newtype_s06",
+            "2015_newtype_s07",
+            "2015_newtype_s08",
+            "2015_newtype_s09",
+            "2015_newtype_s10",
+            "2015_newtype_s11",
+            "2015_newtype_s12",
+            "2015_newtype_s13",
+            "2015_newtype_s14",
+            "2015_newtype_s15",
+            "2015_newtype_s16",
+            "2015_newtype_s17",
+            "2015_newtype_s18",
+            "2015_newtype_s19",
+            "2015_newtype_s20",
+            "2015_newtype_s21",
+            "2015_newtype_s22",
+            "2015_newtype_s23",
+            "2015_newtype_s24",
+            "2015_newtype_s25",
+            "2015_newtype_s26",
+            "2015_newtype_s27",
+            "2015_newtype_s28",
+            "2015_newtype_s29",
+            "2015_newtype_s30",
+            "2015_newtype_s31",
+            "2015_newtype_s32",
+            "2015_newtype_s33"
+          ]
+        },
+        {
+          "id": "2015_newtype_q44",
+          "number": 44,
+          "qtype": "小标题",
+          "stem": "第 44 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "A",
+          "explanation": "第六段首句提出建议：你要记住你不是孤立无援。随后进一步阐释：如果你要努力做出改变，几乎每个人都会尊重你、愿意帮你，尤其是你最亲最近的人。然后给出建议——多交朋友。可见，选项[A] You are not alone与全段内容统一，更是对主旨句核心部分的重现。",
+          "related_sentences": [
+            "2015_newtype_s01",
+            "2015_newtype_s02",
+            "2015_newtype_s03",
+            "2015_newtype_s04",
+            "2015_newtype_s05",
+            "2015_newtype_s06",
+            "2015_newtype_s07",
+            "2015_newtype_s08",
+            "2015_newtype_s09",
+            "2015_newtype_s10",
+            "2015_newtype_s11",
+            "2015_newtype_s12",
+            "2015_newtype_s13",
+            "2015_newtype_s14",
+            "2015_newtype_s15",
+            "2015_newtype_s16",
+            "2015_newtype_s17",
+            "2015_newtype_s18",
+            "2015_newtype_s19",
+            "2015_newtype_s20",
+            "2015_newtype_s21",
+            "2015_newtype_s22",
+            "2015_newtype_s23",
+            "2015_newtype_s24",
+            "2015_newtype_s25",
+            "2015_newtype_s26",
+            "2015_newtype_s27",
+            "2015_newtype_s28",
+            "2015_newtype_s29",
+            "2015_newtype_s30",
+            "2015_newtype_s31",
+            "2015_newtype_s32",
+            "2015_newtype_s33"
+          ]
+        },
+        {
+          "id": "2015_newtype_q45",
+          "number": 45,
+          "qtype": "小标题",
+          "stem": "第 45 段：选择最合适的小标题填入空白",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "C",
+          "explanation": "第七段首两句驳斥人们\"觉得很难相信自己观点，转而从外部寻求客观性\"这一做法：这是在贬低自己的见解，是在表明你没有能力经营自己的人生。随后正面提出建议：你应该相信自己的决定，把握自己的人生。由此可见，[C]选项Pave your own unique path为对本段主要观点的概括，与段落中managing your own life、believe in yourself、think your own thoughts, have your own values、make your own choices相契合。",
+          "related_sentences": [
+            "2015_newtype_s01",
+            "2015_newtype_s02",
+            "2015_newtype_s03",
+            "2015_newtype_s04",
+            "2015_newtype_s05",
+            "2015_newtype_s06",
+            "2015_newtype_s07",
+            "2015_newtype_s08",
+            "2015_newtype_s09",
+            "2015_newtype_s10",
+            "2015_newtype_s11",
+            "2015_newtype_s12",
+            "2015_newtype_s13",
+            "2015_newtype_s14",
+            "2015_newtype_s15",
+            "2015_newtype_s16",
+            "2015_newtype_s17",
+            "2015_newtype_s18",
+            "2015_newtype_s19",
+            "2015_newtype_s20",
+            "2015_newtype_s21",
+            "2015_newtype_s22",
+            "2015_newtype_s23",
+            "2015_newtype_s24",
+            "2015_newtype_s25",
+            "2015_newtype_s26",
+            "2015_newtype_s27",
+            "2015_newtype_s28",
+            "2015_newtype_s29",
+            "2015_newtype_s30",
+            "2015_newtype_s31",
+            "2015_newtype_s32",
+            "2015_newtype_s33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2015_cloze",
+      "type": "cloze",
+      "title": "Talking to Strangers",
+      "topic": "完形填空：放下手机，与陌生人交流——与陌生人交谈会获益良多。",
+      "source": "Section I Use of English",
+      "sentences": [
+        {
+          "id": "2015_cloze_s01",
+          "para": 1,
+          "en": "In our contemporary culture, the prospect of communicating with - or even looking at - a stranger is virtually unbearable.",
+          "cn": "在我们的当代文化中，与陌生人交流，或甚至是看一眼陌生人，这种情形几乎是难以忍受的。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s02",
+          "para": 1,
+          "en": "Everyone around us seems to agree by the way they cling to their phones, even without a [1] on a subway.",
+          "cn": "我们身边的每一个人似乎都颇有同感：人们抱着手机不放，哪怕地铁里没有一点儿信号。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s03",
+          "para": 1,
+          "en": "It's a sad reality - our desire to avoid interacting with other human beings - because there's [2] to be gained from talking to the stranger standing by you.",
+          "cn": "这是个可悲的现实——我们想要避免和其他人交流的愿望——因为与站在你身边的陌生人交谈会获益良多。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s04",
+          "para": 1,
+          "en": "But you wouldn't know it, [3] into your phone.",
+          "cn": "但你不懂得这一点，一心沉浸在你的手机中。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s05",
+          "para": 1,
+          "en": "This universal protection sends the [4]: \"Please don't approach me.\"",
+          "cn": "这个大家都在使用的护身装束传达出这样一条信息：“请不要靠近我。”",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s06",
+          "para": 1,
+          "en": "What is it that makes us feel we need to hide [5] our screens?",
+          "cn": "是什么让我们觉得自己需要躲在屏幕后面？",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s07",
+          "para": 1,
+          "en": "One answer is fear, according to Jon Wortmann, an executive mental coach.",
+          "cn": "高级心理培训师乔恩·沃特曼认为，答案之一是恐惧。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s08",
+          "para": 1,
+          "en": "We fear rejection, or that our innocent social advances will be [6] as \"weird.\"",
+          "cn": "我们害怕被拒绝，或者害怕我们单纯的主动社交行为会被误解为是“怪异的”。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s09",
+          "para": 1,
+          "en": "We fear we'll be [7].",
+          "cn": "我们害怕自己会被品头论足。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s10",
+          "para": 1,
+          "en": "We fear we'll be disruptive.",
+          "cn": "我们害怕会打扰到别人。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s11",
+          "para": 1,
+          "en": "Strangers are inherently [8] to us, so we are more likely to feel [9] when communicating with them compared with our friends and acquaintances.",
+          "cn": "我们本来就对陌生人不熟悉，因此与朋友或熟人相比，我们与陌生人交流时更有可能会感到焦虑。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s12",
+          "para": 1,
+          "en": "To avoid this uneasiness, we [10] to our phones.",
+          "cn": "为了避免这种局促感，我们转向我们的手机。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s13",
+          "para": 1,
+          "en": "\"Phones become our security blanket,\" Wortmann says.",
+          "cn": "“手机成了我们的安全毯，”沃特曼说道。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s14",
+          "para": 1,
+          "en": "\"They are our happy glasses that protect us from what we perceive is going to be more [11].\"",
+          "cn": "“它们是我们愉悦的眼镜，使我们免受我们认为可能会更危险的事物之害。”",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s15",
+          "para": 1,
+          "en": "But once we rip off the band-aid, tuck our smartphones in our pockets and look up, it doesn't [12] so bad.",
+          "cn": "但一旦我们撕掉这个绷带，把我们的智能手机塞入口袋，抬起头来，其实情况并没那么糟糕。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s16",
+          "para": 1,
+          "en": "In one 2011 experiment, behavioral scientists Nicholas Epley and Juliana Schroeder asked commuters to do the unthinkable: Start a [13].",
+          "cn": "在2011年的一项实验中，行为科学家尼古拉斯·埃普利和朱莉安娜·施罗德让通勤者做了一件不可思议的事：主动攀谈。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s17",
+          "para": 1,
+          "en": "They had Chicago train commuters talk to their fellow [14].",
+          "cn": "他们让芝加哥火车通勤乘客与同车的乘客聊天。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s18",
+          "para": 1,
+          "en": "\"When Dr. Epley and Ms. Schroeder asked other people in the same train station to [15] how they would feel after talking to a stranger, the commuters thought their [16] would be more pleasant if they sat on their own,\" The New York Times summarizes.",
+          "cn": "“当埃普利博士和施罗德女士让同一车站的其他人预测他们与陌生人交谈之后是什么感受时，那些通勤者认为，如果他们自己一个人坐着，旅途会更愉悦。”《纽约时报》总结道。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s19",
+          "para": 1,
+          "en": "Though the participants didn't expect a positive experience, after they [17] with the experiment, \"not a single person reported having been embarrassed.\"",
+          "cn": "尽管参与者并没有期待会有一次积极体验，但当他们完成实验后，“没有一个人声称自己感到尴尬”。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s20",
+          "para": 1,
+          "en": "[18], these commutes were reportedly more enjoyable compared with those without communication, which makes absolute sense, [19] human beings thrive off of social connections.",
+          "cn": "实际上，这些（参与交流的）通勤者的旅程据称比那些没有沟通的通勤者的旅程更加令人愉悦，这是完全合乎情理的，因为人类是在社会交往中发展起来的。",
+          "words": []
+        },
+        {
+          "id": "2015_cloze_s21",
+          "para": 1,
+          "en": "It's that [20]: Talking to strangers can make you feel connected.",
+          "cn": "道理很简单：与陌生人交谈可以让你感受到自己与他人是有联系的。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2015_cloze_q01",
+          "number": 1,
+          "qtype": "完形",
+          "stem": "第 1 空：选择最合适的词填入空白 [1]",
+          "stem_cn": "",
+          "options": {
+            "A": "signal",
+            "B": "permit",
+            "C": "ticket",
+            "D": "record"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义。空格所在句描述现代人\"不与陌生人交流\"这一倾向的突出表现形式cling to their phones（紧握手机不放），even without a [1] on a subway（甚至在地铁里面都没有……）作为状语，修饰cling to...这一动作。B、C项虽能与句中subway构成语义场，表示乘坐地铁的条件\"地铁票\"，但两者并非\"人们抱着手机不放\"的潜在条件，因此首先排除；[D]项record可表示\"手机记录\"，但without a record on a subway（地铁上没有记录）不知所云，故排除该项；只有[A] signal既与subway构成语义场（根据常识地铁里常常没有信号），又能作为\"玩手机（上网）\"的潜在条件，故[A]正确。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q02",
+          "number": 2,
+          "qtype": "完形",
+          "stem": "第 2 空：选择最合适的词填入空白 [2]",
+          "stem_cn": "",
+          "options": {
+            "A": "nothing",
+            "B": "little",
+            "C": "another",
+            "D": "much"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内语义。It’s a sad reality对上文\"人们沉溺于手机而不愿与陌生人交流\"这一事实作出评价，破折号间进一步重复该事实，随后以because...从句解释\"可悲\"的原因：there’s [2] to be gained from talking to the stranger...（\"与陌生人交流\"使我们收获……），要符合\"可悲\"这一逻辑，该部分只能表达\"与陌生人交流会产生正面作用\"，[A]与[B]传达的\"所获甚少\"与此相反，首先排除；[C] another（又一）通常用于引出并列的第二面，而前文未曾提到相应的第一面，故排除；只有[D] much（获益良多），符合上下文语义逻辑。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q03",
+          "number": 3,
+          "qtype": "完形",
+          "stem": "第 3 空：选择最合适的词填入空白 [3]",
+          "stem_cn": "",
+          "options": {
+            "A": "beaten",
+            "B": "plugged",
+            "C": "guided",
+            "D": "brought"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义。空格所在句But you wouldn’t know it, [3] into your phone（……在你的手机中）后半句作为伴随状语，其逻辑主语为you，描述\"人们对手机做出的某种动作\"。根据前半句\"人们未意识到与陌生人交流的益处\"，以及随后一句This universal protection的回指功能（指代phone），空格所在句意思应为：人们用手机把自己防护起来（免于打扰他人或被打扰），也即\"埋头玩手机，漠视一切外物\"，选项中只有[B] plugged（本指\"接插头，塞\"）与into搭配可以喻指\"沉溺其中\"，符合语义逻辑。beat sb into sth意为\"强迫某人做某事\"，但\"玩手机\"属自愿行为，因此排除该项；[C]与[D]后接into your phone（引导人手机、卷入手机），逻辑上均不能成立。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q04",
+          "number": 4,
+          "qtype": "完形",
+          "stem": "第 4 空：选择最合适的词填入空白 [4]",
+          "stem_cn": "",
+          "options": {
+            "A": "message",
+            "B": "code",
+            "C": "notice",
+            "D": "sign"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查上下文语义+词义辨析。上句指出\"人们忽略了与他人交流的意义，沉浸在手机中。\"本句随后指出\"大家都在使用的这个‘护身装束’发送出[4]：请不要靠近我。\"首先，从\"主谓搭配\"角度考虑，该句主语为\"物\"，物体不可能发出\"通知\"，因此可以首先排除[C]；其次，由于冒号后内容直接说明空格词，而\"不要靠近我\"显然是众所周知的内容，而非\"代码、密码\"或\"迹象、符号\"，排除[B]、[D]。只有[A] message与动词sends搭配，能与冒号后内容相统一，即\"传达‘不要靠近我’的信息\"。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q05",
+          "number": 5,
+          "qtype": "完形",
+          "stem": "第 5 空：选择最合适的词填入空白 [5]",
+          "stem_cn": "",
+          "options": {
+            "A": "under",
+            "B": "beyond",
+            "C": "behind",
+            "D": "from"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查句内语义+介词用法。空格处介词与our screens搭配作状语，说明动作hide（躲藏）的方式。句中screens指\"手机屏幕\"，根据上下文可知，本句就\"人们为何需要沉溺于手机当中\"发问，能表达\"沉溺于手机（plugged into your phone）、以手机为护身装束（protection）\"的只能是hide behind our screens（藏匿于手机之后）。[A] under与hide搭配意为\"躲在……下方\"，接宾语screens不符合逻辑，因此排除；[D]（hide sth/sb）from sb表示\"（隐藏……）以免被某人发现\"，与screens搭配同样不合逻辑。[B] beyond不能与hide搭配。正确项为[C]。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q06",
+          "number": 6,
+          "qtype": "完形",
+          "stem": "第 6 空：选择最合适的词填入空白 [6]",
+          "stem_cn": "",
+          "options": {
+            "A": "misapplied",
+            "B": "misinterpreted",
+            "C": "misadjusted",
+            "D": "mismatched"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查词义辨析。空格所在句指出，我们害怕遭到拒绝，或者害怕我们单纯的主动社交行为会被[6]为是\"怪异的\"（will be...as weird），空格词必须从语法上能够与as...搭配，同时在语义上必须与前半句rejection传递出的\"被排斥，被拒绝\"这一负面感受一致；misapplied、misadjusted和mismatched三词虽含有否定意义，但从语法上来看均不能与as...构成合理搭配；只有misinterpreted既可以与as搭配，意为\"被误解为是……的\"，同时符合句内逻辑，因此[B]正确。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q07",
+          "number": 7,
+          "qtype": "完形",
+          "stem": "第 7 空：选择最合适的词填入空白 [7]",
+          "stem_cn": "",
+          "options": {
+            "A": "judged",
+            "B": "fired",
+            "C": "replaced",
+            "D": "delayed"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查平行结构+上下文语义。空格所在句\"我们害怕自己会被[7]\"。其前后两句We fear rejection, or that...、We fear we’ll be disruptive排比列出人们害怕出现的情形。此三句间的平行关系暗示空格处动词应该与weird（古怪的）及disruptive（扰乱的）传递的负面感情保持一致，同时与上句动词misinterpreted相呼应，选项中只有[A] judged最符合，be judged可以表示\"受到他人评论（但可能与事实不符）\"，同时与上句\"害怕被误认为是古怪的\"相照应。[B] fired、[C] replaced与[D] delayed三项虽然带负面色彩，但原文并未涉及\"与陌生人交往会‘被攻击’、‘被取代’或‘被耽搁’令人害怕\"，因此排除。[A]正确。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q08",
+          "number": 8,
+          "qtype": "完形",
+          "stem": "第 8 空：选择最合适的词填入空白 [8]",
+          "stem_cn": "",
+          "options": {
+            "A": "unreasonable",
+            "B": "ungrateful",
+            "C": "unconventional",
+            "D": "unfamiliar"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查词义辨析。空格处形容词作为表语，其逻辑主语为Strangers（陌生人），说明\"陌生人对我们来说是怎样的\"。由副词inherently可知，空格词应当体现strangers内在的通性，因此首先排除[A] unreasonable和[B] ungrateful，两者将一切陌生人蒙上\"贬义\"色彩，不合常识；[C] unconventional通常表示\"（人、行为、态度、做法等）非常规的，非传统的\"，但文中并未涉及\"陌生人标新立异\"这一内容，故排除。只有[D] unfamiliar（to us）完美概括了\"陌生人\"的通性——\"不熟悉，不了解\"，与后半句compared with our friends and acquaintances相照应，为正确项。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q09",
+          "number": 9,
+          "qtype": "完形",
+          "stem": "第 9 空：选择最合适的词填入空白 [9]",
+          "stem_cn": "",
+          "options": {
+            "A": "comfortable",
+            "B": "confident",
+            "C": "anxious",
+            "D": "angry"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义。空格所在句指出，\"我们跟陌生人交谈比跟熟人和朋友交谈，更可能体会到[9]\"，后句紧接着指出：\"为了避免这种焦虑（this uneasiness），我们……手机。\"根据this的回指功能，可推知两句间呈现人们\"遭遇问题（某种负面感情）——应对问题（使用手机）\"的逻辑。故先排除正向的[A]、[B]项；[D]虽为负面含义，但\"愤怒\"之意在文中并未涉及，亦不符常理，故排除。只有[C] anxious（感到焦虑）与下句this uneasiness感情上色彩一致，含义上统一，符合题意。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q10",
+          "number": 10,
+          "qtype": "完形",
+          "stem": "第 10 空：选择最合适的词填入空白 [10]",
+          "stem_cn": "",
+          "options": {
+            "A": "attend",
+            "B": "turn",
+            "C": "take",
+            "D": "point"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查固定搭配。空格所在句指出\"为了避免这种焦虑，我们[10]我们的手机\"。目的状语To avoid...提示主句为\"应对措施\"，选项中只有[B] turn(to)暗含\"求助于\"之意，与上文\"人们埋头玩手机，不与陌生人沟通\"相呼应。[A] attend(to)作为\"专心于\"解时，描述一种\"努力、尽责的态度\"，后多接\"工作、责任\"等作宾语，如：to attend to one’s duties做好自己的工作，尽职；作\"听取\"和\"照顾\"讲时，从逻辑上均不能以our phones作为宾语，故排除该项；[C] take(to)取\"（尤指短时间内）喜欢上\"之意时，无法成为\"躲避焦虑的应对措施\"。[D] point(to)虽可与our phones搭配，但\"指向手机\"不合逻辑。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q11",
+          "number": 11,
+          "qtype": "完形",
+          "stem": "第 11 空：选择最合适的词填入空白 [11]",
+          "stem_cn": "",
+          "options": {
+            "A": "dangerous",
+            "B": "mysterious",
+            "C": "violent",
+            "D": "boring"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查句内语义。空格所在句指出：\"手机成了我们的安全毯……，保护我们免受我们认为可能更[11]的事物的伤害\"。显然，空格词只能表示\"危险的、有危害的\"，[B] mysterious为中性词，不含\"伤害、危险\"的意味，首先排除；[C] violent虽涉及\"危险\"，但人们不可能通过手机去规避暴力，故排除该项；[D] boring利用文中happy glasses（愉悦的眼镜）以及\"手机能够带给人极大的娱乐\"的常识设置干扰，但文中并未提及\"与陌生人交流很无趣\"这一内容，选项脱离语境，不合题意；[A] dangerous不仅能表示\"具体事物所带来的危险\"，还能够表示\"抽象事物对人的心理伤害\"，文中特指\"人们认为的‘比与陌生人交流带来的焦虑感更甚的心理伤害’\"。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q12",
+          "number": 12,
+          "qtype": "完形",
+          "stem": "第 12 空：选择最合适的词填入空白 [12]",
+          "stem_cn": "",
+          "options": {
+            "A": "bend",
+            "B": "resist",
+            "C": "hurt",
+            "D": "decay"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义。it doesn’t [12] so bad（情况并没有……得那么厉害）是对实验结果的概述，由段末\"（实验参与者）没有一个人声称自己感到尴尬（not a single...embarrassed）\"可知实验结果是正面的，即\"将手机弃之一旁未带来负面感受\"，只有[C] hurt符合这一逻辑，同时印证段首But一词，与上文\"手机被视作保护毯，防止外界伤害\"形成语义转折。[A] bend、[B] resist与[D] decay与doesn’t...so bad搭配，指\"屈服/抗拒/衰退得不那么厉害\"，与上下文均无法衔接。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q13",
+          "number": 13,
+          "qtype": "完形",
+          "stem": "第 13 空：选择最合适的词填入空白 [13]",
+          "stem_cn": "",
+          "options": {
+            "A": "lecture",
+            "B": "debate",
+            "C": "conversation",
+            "D": "negotiation"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义。空格所在句指出，\"行为科学家让这些往返乘客做一件难以想象的事情：Start a [13]\"。后一句指出\"他们让芝加哥火车通勤乘客与同车乘客交谈（talk to）\"，不难看出，后一句具体说明空格所在句，start a [13]与talk to同指，只有[C] conversation能够表达此意。其他三项分别表示\"演讲\"、\"辩论\"和\"谈判\"，不符合文中\"与陌生人进行随意交流\"这一语境，故排除，正确项为[C]。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q14",
+          "number": 14,
+          "qtype": "完形",
+          "stem": "第 14 空：选择最合适的词填入空白 [14]",
+          "stem_cn": "",
+          "options": {
+            "A": "trainees",
+            "B": "employees",
+            "C": "researchers",
+            "D": "passengers"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查上下文语义。空格所在句为\"他们让芝加哥火车通勤者与他们同车的[14]聊天（talk to their fellow...）\"。由fellow（同种情况的，同类的人）一词可知，空格词应该与commuters相对应，两者均为\"去芝加哥上班的人\"，而实验中的交通工具为\"火车\"，故只有[D] passengers符合语境。[A] trainees（实习生）用train制造干扰，但该词与\"乘坐火车的人\"相差甚远。[B] employees与fellow搭配，表示\"认识的同事\"，不符合\"实验中让通勤者与陌生同行者进行交谈\"这一语义，故排除。[C] researchers利用与段中behavioral scientists干扰，同样不符合语境。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q15",
+          "number": 15,
+          "qtype": "完形",
+          "stem": "第 15 空：选择最合适的词填入空白 [15]",
+          "stem_cn": "",
+          "options": {
+            "A": "reveal",
+            "B": "choose",
+            "C": "predict",
+            "D": "design"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "C",
+          "explanation": "本题考查上下文语义。空格所在句为\"当科学家让同一车站的其他人[15]他们与陌生人交谈之后是什么感受时，通勤者认为……\"。后一句说明实验结论：\"尽管参与者没有期待会有一场积极体验（didn’t expect a positive experience...），……。\"从④句thought...would（虚拟语气）和⑤句reported可知，两句应该是\"先表预测，后揭示实际结果\"的逻辑关系，因此空格词应该与expect意义相近，选项中只有[C] predict符合要求，表示对未来情况的\"预测、预计\"。[A] reveal和[B] choose两者的宾语只能为\"已经发生、存在的事实\"，与文中would...虚拟语气相矛盾，故排除；[D] design无法与宾语从句how they would feel搭配：\"感受不能设计\"，故排除。正确项为[C]。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q16",
+          "number": 16,
+          "qtype": "完形",
+          "stem": "第 16 空：选择最合适的词填入空白 [16]",
+          "stem_cn": "",
+          "options": {
+            "A": "voyage",
+            "B": "flight",
+            "C": "walk",
+            "D": "ride"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查词义辨析。空格所在句表达的是if假设情况下的结果推测：\"那些通勤者认为，如果他们各自坐在自己位置上，会觉得他们的[16]更令人愉悦\"。纵观四个选项，正确项应该符合（train）commuters、sat on their own所包含的语义，只有[D] ride（乘汽车/火车等出行）符合要求，[A]指\"乘船航行\"，[B]指\"乘坐飞机飞行\"，[C]指\"步行\"，均不适合此语境，故[D]为正确项。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q17",
+          "number": 17,
+          "qtype": "完形",
+          "stem": "第 17 空：选择最合适的词填入空白 [17]",
+          "stem_cn": "",
+          "options": {
+            "A": "went through",
+            "B": "did away",
+            "C": "caught up",
+            "D": "put up"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "A",
+          "explanation": "本题考查固定搭配。空格所在句内容为环环相扣的三部曲：最初，实验参与者没有预计到会有一场积极体验→随后，他们进行了实验→最后，在[17]实验后，没有一个人声称自己感到尴尬。从逻辑上来看，只有\"完成实验\"，才能串起三部曲，揭晓实验结论，故正确项应为[A] went through，与with搭配表示\"完成（实验）\"。[B] \"废除（实验）\"与[C] \"赶上（实验）\"均不合逻辑，排除；[D] put up(with)意为\"忍受（实验）\"，虽然实验参与者起初不太愿意与陌生人交流，但不能就此推知他们在\"（认为实验很糟糕而）容忍实验\"。正确项为[A]。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q18",
+          "number": 18,
+          "qtype": "完形",
+          "stem": "第 18 空：选择最合适的词填入空白 [18]",
+          "stem_cn": "",
+          "options": {
+            "A": "In turn",
+            "B": "In fact",
+            "C": "In particular",
+            "D": "In consequence"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文逻辑关系。上文末句指出\"与陌生乘客交谈的参与者中，所有人都未感到尴尬\"，空格后指出，据称这些通勤者比起那些没有与他人交流的人来说，旅途更令人愉快；显然后句是对前一句的补充和递进，选项中只有[B] in fact（用于补充说明，强调前面所说的话）符合这一语义逻辑。[A] in turn表示as a result of sth，即\"前文为后文的原因\"；[C] in particular用于引出\"特别的、需要强调的\"举例。[D] in consequence引出结果，上文为\"原因\"，三项均不合语境。正确项为[B]。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q19",
+          "number": 19,
+          "qtype": "完形",
+          "stem": "第 19 空：选择最合适的词填入空白 [19]",
+          "stem_cn": "",
+          "options": {
+            "A": "unless",
+            "B": "whereas",
+            "C": "if",
+            "D": "since"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "D",
+          "explanation": "本题考查句内逻辑关系。空格前指出，\"据称，这些（参与交流的）通勤者的旅程比那些没与人沟通的通勤者的旅程更加令人愉悦，这是完全合乎情理的\"，空格后指出，\"社会交往使人受益并获得发展（thrive off of social connections）。\"不难看出，后半句对前半句\"有沟通的旅程更令人愉悦\"作出了解释，即\"人类靠交往实现发展，交往使人愉悦便不足为奇\"，[D] since含因果逻辑，符合题意。[B] whereas虽然也可以表达\"原因\"，但多位于句首，用于正式公文当中，排除；[A] unless和[C] if均表示\"条件\"，但\"人类靠社会交往而发展\"并非\"有交流的旅途更令人愉悦\"的条件。正确项为[D]。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        },
+        {
+          "id": "2015_cloze_q20",
+          "number": 20,
+          "qtype": "完形",
+          "stem": "第 20 空：选择最合适的词填入空白 [20]",
+          "stem_cn": "",
+          "options": {
+            "A": "funny",
+            "B": "simple",
+            "C": "logical",
+            "D": "rare"
+          },
+          "options_cn": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "B",
+          "explanation": "本题考查上下文语义。空格处形容词作表语修饰it，冒号引出对it所指内容的说明：与陌生人交谈让你感受到与他人相联系。即，交谈就是一种建立联系的过程，这显而易见，只有[B] simple符合要求。而文中并未指出这一现象\"有趣\"或\"稀有\"，故排除[A]、[D]；[C] logical侧重\"逻辑推理\"，而文中偏重于强调显而易见的道理，不存在\"是否合乎逻辑\"之说。因此正确项为[B]。",
+          "related_sentences": [
+            "2015_cloze_s01",
+            "2015_cloze_s02",
+            "2015_cloze_s03",
+            "2015_cloze_s04",
+            "2015_cloze_s05",
+            "2015_cloze_s06",
+            "2015_cloze_s07",
+            "2015_cloze_s08",
+            "2015_cloze_s09",
+            "2015_cloze_s10",
+            "2015_cloze_s11",
+            "2015_cloze_s12",
+            "2015_cloze_s13",
+            "2015_cloze_s14",
+            "2015_cloze_s15",
+            "2015_cloze_s16",
+            "2015_cloze_s17",
+            "2015_cloze_s18",
+            "2015_cloze_s19",
+            "2015_cloze_s20",
+            "2015_cloze_s21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2015_translation",
+      "type": "translation",
+      "title": "The Well-travelled Road Effect",
+      "topic": "翻译：熟路效应——人们走熟路时往往会低估所需的时间，及其成因。",
+      "source": "Section III Translation",
+      "ref_cn": "试想开车走一条非常熟悉的路。可以是上下班、进城或是回家的路。不管是哪条路，你对每一处曲曲弯弯都了如指掌。在这种路上，很容易不专注于驾驶，很少注意沿途的景色。结果你就觉得旅途所花的时间比实际的要短。这就是熟路效应：人们走熟路时往往会低估所需的时间。这种效应是由我们分配自己注意力的方式造成的。我们走很熟的路时，由于不必非常专注，时间似乎就过得快些。之后，我们回想起这段旅程时，由于当时没怎么注意，所以记得不很清楚。这样，我们就觉得时间短了。",
+      "sentences": [
+        {
+          "id": "2015_translation_s01",
+          "para": 1,
+          "en": "Think about driving a route that's very familiar.",
+          "cn": "试想开车走一条非常熟悉的路。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s02",
+          "para": 1,
+          "en": "It could be your commute to work, a trip into town or the way home.",
+          "cn": "可以是上下班、进城或是回家的路。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s03",
+          "para": 1,
+          "en": "Whichever it is, you know every twist and turn like the back of your hand.",
+          "cn": "不管是哪条路，你对每一处曲曲弯弯都了如指掌。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s04",
+          "para": 1,
+          "en": "On these sorts of trips it's easy to lose concentration on the driving and pay little attention to the passing scenery.",
+          "cn": "在这种路上，很容易不专注于驾驶，很少注意沿途的景色。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s05",
+          "para": 1,
+          "en": "The consequence is that you perceive that the trip has taken less time than it actually has.",
+          "cn": "结果你就觉得旅途所花的时间比实际的要短。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s06",
+          "para": 1,
+          "en": "This is the well-travelled road effect: People tend to underestimate the time it takes to travel a familiar route.",
+          "cn": "这就是熟路效应：人们走熟路时往往会低估所需的时间。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s07",
+          "para": 1,
+          "en": "The effect is caused by the way we allocate our attention.",
+          "cn": "这种效应是由我们分配自己注意力的方式造成的。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s08",
+          "para": 1,
+          "en": "When we travel down a well-known route, because we don't have to concentrate much, time seems to flow more quickly.",
+          "cn": "我们走很熟的路时，由于不必非常专注，时间似乎就过得快些。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s09",
+          "para": 1,
+          "en": "And afterwards, when we come to think back on it, we can't remember the journey well because we didn't pay much attention to it.",
+          "cn": "之后，我们回想起这段旅程时，由于当时没怎么注意，所以记得不很清楚。",
+          "words": []
+        },
+        {
+          "id": "2015_translation_s10",
+          "para": 1,
+          "en": "So we assume it was shorter.",
+          "cn": "这样，我们就觉得时间短了。",
+          "words": []
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "2015_writinga",
+      "type": "writing_a",
+      "title": "Part A 应用文：招募夏令营的志愿者",
+      "topic": "小作文：写一份通知，简要介绍高中夏令营活动并号召大家报名担任志愿者。",
+      "source": "Section IV Writing Part A",
+      "sample_en": "Recruitment Announcement\nWe are looking for some volunteers for the summer camp for high school students. The summer camp is organized to facilitate high school students' academic learning and more importantly cultivate their cooperation ability and practical skills through activities including but not limited to reading salon and business-starting competition.\nVolunteers are required to help organize activities and cope with daily affairs during the summer camp. Ideal candidates should be patient, active, warm-hearted and responsible. Having relevant experience is preferred. Anyone interested please contact us by students' union@abcuniversity.edu.cn or reach us at 12345678.\nStudents' Union",
+      "sample_cn": "招募启事\n我们正在为高中夏令营招募几位志愿者。组织夏令营是为了通过活动促进高中生的学业学习，更重要的是培养他们的合作能力和实践技能。这些活动包括但不局限于读书沙龙和创业大赛。\n要求志愿者帮助组织活动，并处理夏令营中的日常事务。理想的人选应该有耐心、积极、热心并且负责。有相关经验更佳。感兴趣者请通过students' union@abcuniversity.edu.cn联系我们，或者拨打电话12345678联系我们。\n学生会",
+      "questions": []
+    },
+    {
+      "id": "2015_writingb",
+      "type": "writing_b",
+      "title": "Part B 大作文：春节假期花销比例饼图",
+      "topic": "大作文：根据饼图写一篇约150词的短文，解读春节假期各项花销比例并发表评论。",
+      "source": "Section IV Writing Part B",
+      "chart_img": "img/2015_writingb_chart.png",
+      "sample_en": "The chart reflects the Spring Festival spending types and their respective proportions. Chinese people's money is mainly used for three purposes during the Spring Festival: traveling, New Year's gift giving and having dinners with friends or relatives. They account for 80% of total spending.\nMost spending is used to maintain or facilitate interpersonal relationship. This finding is not strange, since the Spring Festival is a Chinese traditional festival for family reunion. Developing relationship is beneficial and necessary for a person's fulfillment and investing on people we love is sweet and happy.\nHowever, we should not go to extremes. In China, there are many people fond of appearing extraordinary and hating to be known as weaker and poorer. They use handsome money to blindly pursue pride. Such intention causes huge waste of money and imposes heavy economic burden on people involved. The pride gotten by squandering money is transient and can only be a topic for gossip soon forgotten by others. Therefore, we should think rationally before opening our purses. We should remember it is happiness that is the main concern.",
+      "sample_cn": "表格体现了春节开销的类型和各自的比例。在春节期间中国人的钱主要有三种用途：交通、送新年礼物和与朋友、亲人共进晚餐。它们占了花费总额的80%。\n绝大多数开支被用来维护和促进入际关系。鉴于春节是中国传统的家庭团圆的节日，这个发现不奇怪。发展人际关系对一个人的幸福是有益和必需的，在我们爱的人身上投资是甜蜜而幸福的。\n但是，我们不能走向极端。在中国，很多人喜欢显得不凡，讨厌被认为比别人弱或穷。他们花大量的钱去盲目追求面子。这样的意图造成了金钱的大量浪费，给相关人带来了沉重的经济压力。靠挥霍钱获得的面子是短暂的，只能作为一个八卦话题，很快被其他人遗忘。因此，我们在打开钱包前，应该理性思考。我们应该记住幸福才是我们关注的重点。",
+      "questions": []
     }
   ]
 }

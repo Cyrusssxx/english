@@ -10,31 +10,488 @@
       "topic": "老鼠会与机器鼠交朋友：其对社交信号的敏感度超出预期",
       "source": "2020 年考研英语（二）Text 1 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2020_text1_s01", "para": 1, "en": "Rats and other animals need to be highly attuned to social signals from others so they can identify friends to cooperate with and enemies to avoid.", "cn": "老鼠等动物必须要对同类发出的社交信号高度敏感，这样它们才能分辨哪些是可以合作的朋友，哪些是应该避开的敌人。", "words": [ { "w": "highly attuned", "meaning": "高度敏感的" }, { "w": "social signals", "meaning": "社交信号" }, { "w": "cooperate with", "meaning": "与……合作" } ] },
-        { "id": "2020_text1_s02", "para": 1, "en": "To find out if this extends to non-living beings, Laleh Quinn at the University of California, San Diego, and her colleagues tested whether rats can detect social signals from robotic rats.", "cn": "为弄清这一敏感性在面对非生命体时是否仍适用，加州大学圣地亚哥分校的拉蕾·奎因及其同事进行了一项试验，观察老鼠是否能够感知机器鼠发出的社交信号。", "words": [ { "w": "extends to", "meaning": "适用于，延伸到" }, { "w": "non-living beings", "meaning": "非生命体" }, { "w": "detect", "meaning": "v. 察觉，发现" } ] },
-        { "id": "2020_text1_s03", "para": 2, "en": "They housed eight adult rats with two types of robotic rat - one social and one asocial - for four days.", "cn": "研究人员让8只成年鼠与2只不同类型的机器鼠——一只爱社交，一只不合群——共处一室4天。", "words": [ { "w": "housed", "meaning": "v. 供……居住，安置" }, { "w": "asocial", "meaning": "adj. 不合群的，缺乏社交性的" }, { "w": "for four days", "meaning": "为期四天" } ] },
-        { "id": "2020_text1_s04", "para": 2, "en": "The robot rats were quite minimalist, resembling a chunkier version of a computer mouse with wheels to move around and colourful markings.", "cn": "这两只机器鼠外形相当简约抽象，就像矮胖版的电脑鼠标，靠轮子四处移动，带有鲜艳的标记。", "words": [ { "w": "minimalist", "meaning": "adj. 极简抽象的" }, { "w": "resembling", "meaning": "v. 像，类似（resemble 的现在分词）" }, { "w": "colourful markings", "meaning": "鲜艳的标记" } ] },
-        { "id": "2020_text1_s05", "para": 3, "en": "During the experiment, the social robot rat followed the living rats around, played with the same toys, and opened cage doors to let trapped rats escape.", "cn": "在试验过程中，社交机器鼠跟随生物鼠们四处走动，玩同样的玩具，还会打开笼门让被困老鼠逃脱。", "words": [ { "w": "followed the living rats around", "meaning": "跟随活老鼠四处走动" }, { "w": "cage doors", "meaning": "笼门" }, { "w": "trapped rats", "meaning": "被困的老鼠" } ] },
-        { "id": "2020_text1_s06", "para": 3, "en": "Meanwhile, the asocial robot simply moved forwards and backwards and side to side.", "cn": "在此期间，非社交机器鼠则只是前后、左右来回移动。", "words": [ { "w": "Meanwhile", "meaning": "ad. 与此同时" }, { "w": "forwards and backwards", "meaning": "前后地" }, { "w": "side to side", "meaning": "左右地" } ] },
-        { "id": "2020_text1_s07", "para": 4, "en": "Next, the researchers trapped the robots in cages and gave the rats the opportunity to release them by pressing a lever.", "cn": "接下来，研究人员将机器鼠关进笼子，并给老鼠一个按下控制杆解救机器鼠的机会。", "words": [ { "w": "trapped the robots in cages", "meaning": "将机器鼠关进笼子" }, { "w": "release", "meaning": "v. 释放，解救" }, { "w": "pressing a lever", "meaning": "按下控制杆" } ] },
-        { "id": "2020_text1_s08", "para": 4, "en": "Across 18 trials each, the living rats were 52 per cent more likely on average to set the social robot free than the asocial one.", "cn": "在对每只（生物鼠）各18次的试验中，生物鼠解救社交机器鼠的几率比解救非社交机器鼠的几率平均高出52%。", "words": [ { "w": "trials", "meaning": "n. 试验（trial 的复数）" }, { "w": "on average", "meaning": "平均" }, { "w": "set the social robot free", "meaning": "解救社交机器鼠" } ] },
-        { "id": "2020_text1_s09", "para": 4, "en": "This suggests that the rats perceived the social robot as a genuine social being.", "cn": "这表明老鼠将社交机器鼠看作了真正的社交生物。", "words": [ { "w": "perceived", "meaning": "v. 感知，认为（perceive 的过去式）" }, { "w": "genuine", "meaning": "adj. 真正的，名副其实的" }, { "w": "social being", "meaning": "社交生物" } ] },
-        { "id": "2020_text1_s10", "para": 4, "en": "They may have bonded more with the social robot because it displayed behaviors like communal exploring and playing.", "cn": "它们可能因先前社交机器鼠表现出集体探险及游戏等行为而与其建立了更强的情感纽带。", "words": [ { "w": "bonded", "meaning": "v. 建立紧密关系（bond 的过去分词）" }, { "w": "communal", "meaning": "adj. 公共的，团体的" }, { "w": "exploring", "meaning": "v. 探索（explore 的现在分词）" } ] },
-        { "id": "2020_text1_s11", "para": 4, "en": "This could lead to the rats better remembering having freed it earlier, and wanting the robot to return the favour when they get trapped, says Quinn.", "cn": "奎因称，这可能会使老鼠们更清楚记起自己之前曾经解救过机器鼠，并希望自己受困时能得到它相应的回报。", "words": [ { "w": "lead to", "meaning": "导致，引起" }, { "w": "return the favour", "meaning": "回报" }, { "w": "get trapped", "meaning": "受困，被困住" } ] },
-        { "id": "2020_text1_s12", "para": 5, "en": "\"Rats have been shown to engage in multiple forms of reciprocal help and cooperation, including what is referred to as direct reciprocity - where a rat will help another rat that has previously helped them,\" says Quinn.", "cn": "“已有研究表明，老鼠会进行多种形式的互助及合作，其中包括被称为‘直接互惠’的行为，即老鼠会帮助之前曾帮助过自己的另一只老鼠。”奎因说道。", "words": [ { "w": "engage in", "meaning": "从事，参与" }, { "w": "reciprocal", "meaning": "adj. 互惠的，相互的" }, { "w": "direct reciprocity", "meaning": "直接互惠" } ] },
-        { "id": "2020_text1_s13", "para": 6, "en": "The readiness of the rats to befriend the social robot was surprising given its minimal design.", "cn": "出人意料的是，这只社交机器鼠设计如此简陋，老鼠却仍愿意与它交朋友。", "words": [ { "w": "readiness", "meaning": "n. 乐意，愿意" }, { "w": "befriend", "meaning": "v. 与……交朋友" }, { "w": "minimal design", "meaning": "极简设计" } ] },
-        { "id": "2020_text1_s14", "para": 6, "en": "The robot was the same size as a regular rat but resembled a simple plastic box on wheels.", "cn": "机器鼠虽与普通老鼠大小相当，外形却像一个带轮子的简易塑料盒。", "words": [ { "w": "a regular rat", "meaning": "一只普通的老鼠" }, { "w": "resembled", "meaning": "v. 像，类似（resemble 的过去式）" }, { "w": "plastic box on wheels", "meaning": "带轮子的塑料盒" } ] },
-        { "id": "2020_text1_s15", "para": 6, "en": "\"We'd assumed we'd have to give it a moving head and tail, facial features, and put a scent on it to make it smell like a real rat, but that wasn't necessary,\" says Janet Wiles at the University of Queensland in Australia, who helped with the research.", "cn": "“我们原以为必须给它加上活动的头和尾巴，面部特征和以假乱真的老鼠气味才行，但结果证明没有必要，”澳大利亚昆士兰大学的珍妮特·怀尔斯说道，她协助了此项研究。", "words": [ { "w": "assumed", "meaning": "v. 假定，设想（assume 的过去分词）" }, { "w": "facial features", "meaning": "面部特征" }, { "w": "scent", "meaning": "n. 气味，香味" } ] },
-        { "id": "2020_text1_s16", "para": 7, "en": "The finding shows how sensitive rats are to social cues, even when they come from basic robots.", "cn": "该发现表明老鼠对于社交信号非常敏感，即便这些信号来自简单的机器鼠。", "words": [ { "w": "sensitive", "meaning": "adj. 敏感的" }, { "w": "social cues", "meaning": "社交信号，社交线索" }, { "w": "basic robots", "meaning": "简单的机器人" } ] },
-        { "id": "2020_text1_s17", "para": 7, "en": "Similarly, children tend to treat robots as if they are fellow beings, even when they display only simple social signals.", "cn": "与之相似，儿童也往往将机器人视为同类，即便这些机器人只能发出简单的社交信号。", "words": [ { "w": "Similarly", "meaning": "ad. 相似地，同样地" }, { "w": "tend to", "meaning": "往往，倾向于" }, { "w": "fellow beings", "meaning": "同类" } ] },
-        { "id": "2020_text1_s18", "para": 7, "en": "\"We humans seem to be fascinated by robots, and it turns out other animals are too,\" says Wiles.", "cn": "“我们人类似乎被机器人深深吸引，事实证明其他动物也一样，”怀尔斯说道。", "words": [ { "w": "fascinated by robots", "meaning": "被机器人吸引" }, { "w": "it turns out", "meaning": "结果证明，原来" } ] }
+        {
+          "id": "2020_text1_s01",
+          "para": 1,
+          "en": "Rats and other animals need to be highly attuned to social signals from others so they can identify friends to cooperate with and enemies to avoid.",
+          "cn": "老鼠等动物必须要对同类发出的社交信号高度敏感，这样它们才能分辨哪些是可以合作的朋友，哪些是应该避开的敌人。",
+          "words": [
+            {
+              "w": "highly attuned",
+              "meaning": "高度敏感的"
+            },
+            {
+              "w": "social signals",
+              "meaning": "社交信号"
+            },
+            {
+              "w": "cooperate with",
+              "meaning": "与……合作"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s02",
+          "para": 1,
+          "en": "To find out if this extends to non-living beings, Laleh Quinn at the University of California, San Diego, and her colleagues tested whether rats can detect social signals from robotic rats.",
+          "cn": "为弄清这一敏感性在面对非生命体时是否仍适用，加州大学圣地亚哥分校的拉蕾·奎因及其同事进行了一项试验，观察老鼠是否能够感知机器鼠发出的社交信号。",
+          "words": [
+            {
+              "w": "extends to",
+              "meaning": "适用于，延伸到"
+            },
+            {
+              "w": "non-living beings",
+              "meaning": "非生命体"
+            },
+            {
+              "w": "detect",
+              "meaning": "v. 察觉，发现"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s03",
+          "para": 2,
+          "en": "They housed eight adult rats with two types of robotic rat - one social and one asocial - for four days.",
+          "cn": "研究人员让8只成年鼠与2只不同类型的机器鼠——一只爱社交，一只不合群——共处一室4天。",
+          "words": [
+            {
+              "w": "housed",
+              "meaning": "v. 供……居住，安置"
+            },
+            {
+              "w": "asocial",
+              "meaning": "adj. 不合群的，缺乏社交性的"
+            },
+            {
+              "w": "for four days",
+              "meaning": "为期四天"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s04",
+          "para": 2,
+          "en": "The robot rats were quite minimalist, resembling a chunkier version of a computer mouse with wheels to move around and colourful markings.",
+          "cn": "这两只机器鼠外形相当简约抽象，就像矮胖版的电脑鼠标，靠轮子四处移动，带有鲜艳的标记。",
+          "words": [
+            {
+              "w": "minimalist",
+              "meaning": "adj. 极简抽象的"
+            },
+            {
+              "w": "resembling",
+              "meaning": "v. 像，类似（resemble 的现在分词）"
+            },
+            {
+              "w": "colourful markings",
+              "meaning": "鲜艳的标记"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s05",
+          "para": 3,
+          "en": "During the experiment, the social robot rat followed the living rats around, played with the same toys, and opened cage doors to let trapped rats escape.",
+          "cn": "在试验过程中，社交机器鼠跟随生物鼠们四处走动，玩同样的玩具，还会打开笼门让被困老鼠逃脱。",
+          "words": [
+            {
+              "w": "followed the living rats around",
+              "meaning": "跟随活老鼠四处走动"
+            },
+            {
+              "w": "cage doors",
+              "meaning": "笼门"
+            },
+            {
+              "w": "trapped rats",
+              "meaning": "被困的老鼠"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s06",
+          "para": 3,
+          "en": "Meanwhile, the asocial robot simply moved forwards and backwards and side to side.",
+          "cn": "在此期间，非社交机器鼠则只是前后、左右来回移动。",
+          "words": [
+            {
+              "w": "Meanwhile",
+              "meaning": "ad. 与此同时"
+            },
+            {
+              "w": "forwards and backwards",
+              "meaning": "前后地"
+            },
+            {
+              "w": "side to side",
+              "meaning": "左右地"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s07",
+          "para": 4,
+          "en": "Next, the researchers trapped the robots in cages and gave the rats the opportunity to release them by pressing a lever.",
+          "cn": "接下来，研究人员将机器鼠关进笼子，并给老鼠一个按下控制杆解救机器鼠的机会。",
+          "words": [
+            {
+              "w": "trapped the robots in cages",
+              "meaning": "将机器鼠关进笼子"
+            },
+            {
+              "w": "release",
+              "meaning": "v. 释放，解救"
+            },
+            {
+              "w": "pressing a lever",
+              "meaning": "按下控制杆"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s08",
+          "para": 4,
+          "en": "Across 18 trials each, the living rats were 52 per cent more likely on average to set the social robot free than the asocial one.",
+          "cn": "在对每只（生物鼠）各18次的试验中，生物鼠解救社交机器鼠的几率比解救非社交机器鼠的几率平均高出52%。",
+          "words": [
+            {
+              "w": "trials",
+              "meaning": "n. 试验（trial 的复数）"
+            },
+            {
+              "w": "on average",
+              "meaning": "平均"
+            },
+            {
+              "w": "set the social robot free",
+              "meaning": "解救社交机器鼠"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s09",
+          "para": 4,
+          "en": "This suggests that the rats perceived the social robot as a genuine social being.",
+          "cn": "这表明老鼠将社交机器鼠看作了真正的社交生物。",
+          "words": [
+            {
+              "w": "perceived",
+              "meaning": "v. 感知，认为（perceive 的过去式）"
+            },
+            {
+              "w": "genuine",
+              "meaning": "adj. 真正的，名副其实的"
+            },
+            {
+              "w": "social being",
+              "meaning": "社交生物"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s10",
+          "para": 4,
+          "en": "They may have bonded more with the social robot because it displayed behaviors like communal exploring and playing.",
+          "cn": "它们可能因先前社交机器鼠表现出集体探险及游戏等行为而与其建立了更强的情感纽带。",
+          "words": [
+            {
+              "w": "bonded",
+              "meaning": "v. 建立紧密关系（bond 的过去分词）"
+            },
+            {
+              "w": "communal",
+              "meaning": "adj. 公共的，团体的"
+            },
+            {
+              "w": "exploring",
+              "meaning": "v. 探索（explore 的现在分词）"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s11",
+          "para": 4,
+          "en": "This could lead to the rats better remembering having freed it earlier, and wanting the robot to return the favour when they get trapped, says Quinn.",
+          "cn": "奎因称，这可能会使老鼠们更清楚记起自己之前曾经解救过机器鼠，并希望自己受困时能得到它相应的回报。",
+          "words": [
+            {
+              "w": "lead to",
+              "meaning": "导致，引起"
+            },
+            {
+              "w": "return the favour",
+              "meaning": "回报"
+            },
+            {
+              "w": "get trapped",
+              "meaning": "受困，被困住"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s12",
+          "para": 5,
+          "en": "\"Rats have been shown to engage in multiple forms of reciprocal help and cooperation, including what is referred to as direct reciprocity - where a rat will help another rat that has previously helped them,\" says Quinn.",
+          "cn": "“已有研究表明，老鼠会进行多种形式的互助及合作，其中包括被称为‘直接互惠’的行为，即老鼠会帮助之前曾帮助过自己的另一只老鼠。”奎因说道。",
+          "words": [
+            {
+              "w": "engage in",
+              "meaning": "从事，参与"
+            },
+            {
+              "w": "reciprocal",
+              "meaning": "adj. 互惠的，相互的"
+            },
+            {
+              "w": "direct reciprocity",
+              "meaning": "直接互惠"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s13",
+          "para": 6,
+          "en": "The readiness of the rats to befriend the social robot was surprising given its minimal design.",
+          "cn": "出人意料的是，这只社交机器鼠设计如此简陋，老鼠却仍愿意与它交朋友。",
+          "words": [
+            {
+              "w": "readiness",
+              "meaning": "n. 乐意，愿意"
+            },
+            {
+              "w": "befriend",
+              "meaning": "v. 与……交朋友"
+            },
+            {
+              "w": "minimal design",
+              "meaning": "极简设计"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s14",
+          "para": 6,
+          "en": "The robot was the same size as a regular rat but resembled a simple plastic box on wheels.",
+          "cn": "机器鼠虽与普通老鼠大小相当，外形却像一个带轮子的简易塑料盒。",
+          "words": [
+            {
+              "w": "a regular rat",
+              "meaning": "一只普通的老鼠"
+            },
+            {
+              "w": "resembled",
+              "meaning": "v. 像，类似（resemble 的过去式）"
+            },
+            {
+              "w": "plastic box on wheels",
+              "meaning": "带轮子的塑料盒"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s15",
+          "para": 6,
+          "en": "\"We'd assumed we'd have to give it a moving head and tail, facial features, and put a scent on it to make it smell like a real rat, but that wasn't necessary,\" says Janet Wiles at the University of Queensland in Australia, who helped with the research.",
+          "cn": "“我们原以为必须给它加上活动的头和尾巴，面部特征和以假乱真的老鼠气味才行，但结果证明没有必要，”澳大利亚昆士兰大学的珍妮特·怀尔斯说道，她协助了此项研究。",
+          "words": [
+            {
+              "w": "assumed",
+              "meaning": "v. 假定，设想（assume 的过去分词）"
+            },
+            {
+              "w": "facial features",
+              "meaning": "面部特征"
+            },
+            {
+              "w": "scent",
+              "meaning": "n. 气味，香味"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s16",
+          "para": 7,
+          "en": "The finding shows how sensitive rats are to social cues, even when they come from basic robots.",
+          "cn": "该发现表明老鼠对于社交信号非常敏感，即便这些信号来自简单的机器鼠。",
+          "words": [
+            {
+              "w": "sensitive",
+              "meaning": "adj. 敏感的"
+            },
+            {
+              "w": "social cues",
+              "meaning": "社交信号，社交线索"
+            },
+            {
+              "w": "basic robots",
+              "meaning": "简单的机器人"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s17",
+          "para": 7,
+          "en": "Similarly, children tend to treat robots as if they are fellow beings, even when they display only simple social signals.",
+          "cn": "与之相似，儿童也往往将机器人视为同类，即便这些机器人只能发出简单的社交信号。",
+          "words": [
+            {
+              "w": "Similarly",
+              "meaning": "ad. 相似地，同样地"
+            },
+            {
+              "w": "tend to",
+              "meaning": "往往，倾向于"
+            },
+            {
+              "w": "fellow beings",
+              "meaning": "同类"
+            }
+          ]
+        },
+        {
+          "id": "2020_text1_s18",
+          "para": 7,
+          "en": "\"We humans seem to be fascinated by robots, and it turns out other animals are too,\" says Wiles.",
+          "cn": "“我们人类似乎被机器人深深吸引，事实证明其他动物也一样，”怀尔斯说道。",
+          "words": [
+            {
+              "w": "fascinated by robots",
+              "meaning": "被机器人吸引"
+            },
+            {
+              "w": "it turns out",
+              "meaning": "结果证明，原来"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2020_text1_q1", "number": 21, "qtype": "detail", "stem": "Quinn and her colleagues conducted a test to see if rats can ___.", "stem_cn": "奎因和同事进行了一项试验，观察老鼠是否能___。", "options": { "A": "pick up social signals from non-living rats", "B": "distinguish a friendly rat from a hostile one", "C": "attain sociable traits through special training", "D": "send out warning messages to their fellows" }, "options_cn": { "A": "接收非生命鼠发出的社交信号", "B": "分辨一只老鼠是敌是友", "C": "通过特殊训练掌握社交技能", "D": "向同伴们发出警告信息" }, "answer": "A", "explanation": "首段末句介绍奎因等的研究目标（tested whether）：测试老鼠是否能察觉机器鼠（non-living beings）发出的社交信号，A 正确，pick up...from non-living rats 同义改写 detect...from robotic rats。B、C 均利用①句已知信息干扰（分辨敌友、需否特训是已知/无关内容）；D 将研究目标反向窜改为老鼠是否会\"发出\"信息。", "related_sentences": [ "2020_text1_s01", "2020_text1_s02" ] },
-        { "id": "2020_text1_q2", "number": 22, "qtype": "detail", "stem": "What did the asocial robot do during the experiment?", "stem_cn": "在试验过程中，非社交机器鼠做了什么？", "options": { "A": "It followed the social robot.", "B": "It played with some toys.", "C": "It set the trapped rats free.", "D": "It moved around alone." }, "options_cn": { "A": "它跟着社交机器鼠。", "B": "它玩了一些玩具。", "C": "它释放了被困的老鼠。", "D": "它独自四处移动。" }, "answer": "D", "explanation": "由 the asocial robot、during the experiment 定位至第三段末句：非社交机器鼠只是前后、左右移动，D（moved around alone）正确，alone 点明 simply 暗含的对比。A、B、C 均张冠李戴，把社交机器鼠（the social robot）的行为强加于非社交机器鼠。", "related_sentences": [ "2020_text1_s06" ] },
-        { "id": "2020_text1_q3", "number": 23, "qtype": "detail", "stem": "According to Quinn, the rats released the social robot because they ___.", "stem_cn": "奎因指出，老鼠释放社交机器鼠是因为它们___。", "options": { "A": "tried to practice a means of escape", "B": "expected it to do the same in return", "C": "wanted to display their intelligence", "D": "considered that an interesting game" }, "options_cn": { "A": "想实践一种脱困的方法", "B": "希望机器鼠能报以同样的行为", "C": "想要展示自己的智力", "D": "认为这是个有趣的游戏" }, "answer": "B", "explanation": "第四段③④⑤句分析：老鼠可能与社交机器鼠建立了情感联结，希望将来自己被困时也能得到回报，故愿意施救，B 同义改写末句 wanting the robot to return the favour when they get trapped。A 曲解 pressing a lever 为\"实践逃跑方法\"；C、D 分别曲解 displayed behaviours、exploring and playing。", "related_sentences": [ "2020_text1_s10", "2020_text1_s11" ] },
-        { "id": "2020_text1_q4", "number": 24, "qtype": "viewpoint", "stem": "Janet Wiles notes that rats ___.", "stem_cn": "珍妮特·怀尔斯指出老鼠___。", "options": { "A": "can remember other rats' facial features", "B": "differentiate smells better than sizes", "C": "respond more to actions than to looks", "D": "can be scared by a plastic box on wheels" }, "options_cn": { "A": "可以记住其他老鼠的面部特征", "B": "更善于区分气味而不是体型大小", "C": "对行动比对样貌的反应更大", "D": "会被带轮子的塑料盒吓到" }, "answer": "C", "explanation": "第六段 Wiles 用虚拟语气指出：原以为要给机器鼠加上仿真外形老鼠才会亲近它，但\"没有必要\"，即样貌不重要，其行动足以引起交友意愿，C 正确。A、B、D 均利用 facial features/scent/size/塑料盒等外形词臆测，与\"这些特征缺失不妨碍交友\"相悖。", "related_sentences": [ "2020_text1_s15", "2020_text1_s16" ] },
-        { "id": "2020_text1_q5", "number": 25, "qtype": "inference", "stem": "It can be learned from the text that rats ___.", "stem_cn": "从本文中我们可以知道，老鼠___。", "options": { "A": "appear to be adaptable to new surroundings", "B": "are more socially active than other animals", "C": "behave differently from children in socializing", "D": "are more sensitive to social cues than expected" }, "options_cn": { "A": "似乎很容易适应新环境", "B": "比其他动物更积极社交", "C": "在社交方面与儿童表现不同", "D": "对社交信号的敏感度高于预期" }, "answer": "D", "explanation": "第六段 surprising、第七段 how sensitive...even when...共同传达研究者的\"惊讶\"：老鼠对社交信号的敏感超出预期，D 正确。A 夸大为\"适应新环境\"；B 捏造与其他动物的比较；C 与第七段②句\"老鼠与儿童表现相似\"相悖。", "related_sentences": [ "2020_text1_s13", "2020_text1_s16" ] }
+        {
+          "id": "2020_text1_q1",
+          "number": 21,
+          "qtype": "detail",
+          "stem": "Quinn and her colleagues conducted a test to see if rats can ___.",
+          "stem_cn": "奎因和同事进行了一项试验，观察老鼠是否能___。",
+          "options": {
+            "A": "pick up social signals from non-living rats",
+            "B": "distinguish a friendly rat from a hostile one",
+            "C": "attain sociable traits through special training",
+            "D": "send out warning messages to their fellows"
+          },
+          "options_cn": {
+            "A": "接收非生命鼠发出的社交信号",
+            "B": "分辨一只老鼠是敌是友",
+            "C": "通过特殊训练掌握社交技能",
+            "D": "向同伴们发出警告信息"
+          },
+          "answer": "A",
+          "explanation": "首段末句介绍奎因等的研究目标（tested whether）：测试老鼠是否能察觉机器鼠（non-living beings）发出的社交信号，A 正确，pick up...from non-living rats 同义改写 detect...from robotic rats。B、C 均利用①句已知信息干扰（分辨敌友、需否特训是已知/无关内容）；D 将研究目标反向窜改为老鼠是否会\"发出\"信息。",
+          "related_sentences": [
+            "2020_text1_s01",
+            "2020_text1_s02"
+          ]
+        },
+        {
+          "id": "2020_text1_q2",
+          "number": 22,
+          "qtype": "detail",
+          "stem": "What did the asocial robot do during the experiment?",
+          "stem_cn": "在试验过程中，非社交机器鼠做了什么？",
+          "options": {
+            "A": "It followed the social robot.",
+            "B": "It played with some toys.",
+            "C": "It set the trapped rats free.",
+            "D": "It moved around alone."
+          },
+          "options_cn": {
+            "A": "它跟着社交机器鼠。",
+            "B": "它玩了一些玩具。",
+            "C": "它释放了被困的老鼠。",
+            "D": "它独自四处移动。"
+          },
+          "answer": "D",
+          "explanation": "由 the asocial robot、during the experiment 定位至第三段末句：非社交机器鼠只是前后、左右移动，D（moved around alone）正确，alone 点明 simply 暗含的对比。A、B、C 均张冠李戴，把社交机器鼠（the social robot）的行为强加于非社交机器鼠。",
+          "related_sentences": [
+            "2020_text1_s06"
+          ]
+        },
+        {
+          "id": "2020_text1_q3",
+          "number": 23,
+          "qtype": "detail",
+          "stem": "According to Quinn, the rats released the social robot because they ___.",
+          "stem_cn": "奎因指出，老鼠释放社交机器鼠是因为它们___。",
+          "options": {
+            "A": "tried to practice a means of escape",
+            "B": "expected it to do the same in return",
+            "C": "wanted to display their intelligence",
+            "D": "considered that an interesting game"
+          },
+          "options_cn": {
+            "A": "想实践一种脱困的方法",
+            "B": "希望机器鼠能报以同样的行为",
+            "C": "想要展示自己的智力",
+            "D": "认为这是个有趣的游戏"
+          },
+          "answer": "B",
+          "explanation": "第四段③④⑤句分析：老鼠可能与社交机器鼠建立了情感联结，希望将来自己被困时也能得到回报，故愿意施救，B 同义改写末句 wanting the robot to return the favour when they get trapped。A 曲解 pressing a lever 为\"实践逃跑方法\"；C、D 分别曲解 displayed behaviours、exploring and playing。",
+          "related_sentences": [
+            "2020_text1_s10",
+            "2020_text1_s11"
+          ]
+        },
+        {
+          "id": "2020_text1_q4",
+          "number": 24,
+          "qtype": "viewpoint",
+          "stem": "Janet Wiles notes that rats ___.",
+          "stem_cn": "珍妮特·怀尔斯指出老鼠___。",
+          "options": {
+            "A": "can remember other rats' facial features",
+            "B": "differentiate smells better than sizes",
+            "C": "respond more to actions than to looks",
+            "D": "can be scared by a plastic box on wheels"
+          },
+          "options_cn": {
+            "A": "可以记住其他老鼠的面部特征",
+            "B": "更善于区分气味而不是体型大小",
+            "C": "对行动比对样貌的反应更大",
+            "D": "会被带轮子的塑料盒吓到"
+          },
+          "answer": "C",
+          "explanation": "第六段 Wiles 用虚拟语气指出：原以为要给机器鼠加上仿真外形老鼠才会亲近它，但\"没有必要\"，即样貌不重要，其行动足以引起交友意愿，C 正确。A、B、D 均利用 facial features/scent/size/塑料盒等外形词臆测，与\"这些特征缺失不妨碍交友\"相悖。",
+          "related_sentences": [
+            "2020_text1_s15",
+            "2020_text1_s16"
+          ]
+        },
+        {
+          "id": "2020_text1_q5",
+          "number": 25,
+          "qtype": "inference",
+          "stem": "It can be learned from the text that rats ___.",
+          "stem_cn": "从本文中我们可以知道，老鼠___。",
+          "options": {
+            "A": "appear to be adaptable to new surroundings",
+            "B": "are more socially active than other animals",
+            "C": "behave differently from children in socializing",
+            "D": "are more sensitive to social cues than expected"
+          },
+          "options_cn": {
+            "A": "似乎很容易适应新环境",
+            "B": "比其他动物更积极社交",
+            "C": "在社交方面与儿童表现不同",
+            "D": "对社交信号的敏感度高于预期"
+          },
+          "answer": "D",
+          "explanation": "第六段 surprising、第七段 how sensitive...even when...共同传达研究者的\"惊讶\"：老鼠对社交信号的敏感超出预期，D 正确。A 夸大为\"适应新环境\"；B 捏造与其他动物的比较；C 与第七段②句\"老鼠与儿童表现相似\"相悖。",
+          "related_sentences": [
+            "2020_text1_s13",
+            "2020_text1_s16"
+          ]
+        }
       ]
     },
     {
@@ -44,31 +501,481 @@
       "topic": "为何 CEO 理应获得高薪：多角度论证高薪的合理性",
       "source": "2020 年考研英语（二）Text 2 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2020_text2_s01", "para": 1, "en": "It is true that CEO pay has gone up - top ones may make 300 times the pay of typical workers on average, and since the mid-1970s, CEO pay for large publicly traded American corporations has, by varying estimates, gone up by about 500%.", "cn": "的确，首席执行官（CEO）的薪酬上涨了——平均来看，顶级CEO的薪酬可能是普通员工薪酬的300倍，而且根据各种不同的估计，自上世纪70年代中期以来，美国大型上市公司的CEO薪酬上涨了约500%。", "words": [ { "w": "gone up", "meaning": "上涨，增长" }, { "w": "on average", "meaning": "平均" }, { "w": "publicly traded", "meaning": "上市交易的" } ] },
-        { "id": "2020_text2_s02", "para": 1, "en": "The typical CEO of a top American corporation now makes about $18.9 million a year.", "cn": "美国顶级公司的典型CEO现在每年能挣到约1890万美元。", "words": [ { "w": "typical CEO", "meaning": "典型的 CEO" }, { "w": "a year", "meaning": "每年" } ] },
-        { "id": "2020_text2_s03", "para": 2, "en": "The best model for understanding the growth of CEO pay is that of limited CEO talent in a world where business opportunities for the top firms are growing rapidly.", "cn": "理解CEO薪酬上涨的最佳模型是，全球顶级公司的商业机会在迅速增长，而CEO人才紧缺。", "words": [ { "w": "The best model", "meaning": "最佳模型" }, { "w": "limited CEO talent", "meaning": "紧缺的 CEO 人才" }, { "w": "growing rapidly", "meaning": "迅速增长" } ] },
-        { "id": "2020_text2_s04", "para": 2, "en": "The efforts of America's highest-earning 1% have been one of the more dynamic elements of the global economy.", "cn": "美国收入最高的1%人群的努力付出一直是全球经济的较强推动力之一。", "words": [ { "w": "highest-earning", "meaning": "收入最高的" }, { "w": "dynamic", "meaning": "adj. 有干劲的，推动的" }, { "w": "global economy", "meaning": "全球经济" } ] },
-        { "id": "2020_text2_s05", "para": 2, "en": "It's not popular to say, but one reason their pay has gone up so much is that CEOs really have upped their game relative to many other workers in the U.S. economy.", "cn": "尽管这么说不太讨喜，但CEO薪酬涨幅如此之大的一个原因是，相对于美国经济中的许多其他工作者来说，CEO确实提升了工作表现。", "words": [ { "w": "upped their game", "meaning": "提升了表现，加大了努力" }, { "w": "relative to", "meaning": "相对于" }, { "w": "one reason", "meaning": "原因之一" } ] },
-        { "id": "2020_text2_s06", "para": 3, "en": "Today's CEO, at least for major American firms, must have many more skills than simply being able to \"run the company.\"", "cn": "如今的CEO，至少对于美国的大公司来说，必须拥有更多技能，而不仅仅是会“经营公司”而已。", "words": [ { "w": "many more skills", "meaning": "多得多的技能" }, { "w": "run the company", "meaning": "经营公司" }, { "w": "major American firms", "meaning": "美国大公司" } ] },
-        { "id": "2020_text2_s07", "para": 3, "en": "CEOs must have a good sense of financial markets and maybe even how the company should trade in them.", "cn": "CEO必须对金融市场有良好的判断力，甚至可能要熟知公司应该如何在这些市场中从事交易。", "words": [ { "w": "a good sense of", "meaning": "对……有良好的判断力" }, { "w": "financial markets", "meaning": "金融市场" }, { "w": "trade in them", "meaning": "在其中进行交易" } ] },
-        { "id": "2020_text2_s08", "para": 3, "en": "They also need better public relations skills than their predecessors, as the costs of even a minor slipup can be significant.", "cn": "相比前任们，他们还需要更厉害的公关能力，因为即使是一个小小的失误，也可能代价惨重。", "words": [ { "w": "public relations skills", "meaning": "公关能力" }, { "w": "predecessors", "meaning": "n. 前任，前辈（predecessor 的复数）" }, { "w": "slipup", "meaning": "n. 失误，疏忽" } ] },
-        { "id": "2020_text2_s09", "para": 3, "en": "Then there's the fact that large American companies are much more globalized than ever before, with supply chains spread across a larger number of countries.", "cn": "而且，美国大公司的全球化程度空前，供应链遍布更多的国家。", "words": [ { "w": "globalized", "meaning": "adj. 全球化的" }, { "w": "supply chains", "meaning": "供应链" }, { "w": "than ever before", "meaning": "比以往任何时候" } ] },
-        { "id": "2020_text2_s10", "para": 3, "en": "To lead in that system requires knowledge that is fairly mind-boggling.", "cn": "要在这样的体系中发挥领导作用，必须有相当惊人的知识才行。", "words": [ { "w": "To lead in that system", "meaning": "在这样的体系中发挥领导作用" }, { "w": "mind-boggling", "meaning": "adj. 难以置信的，十分惊人的" } ] },
-        { "id": "2020_text2_s11", "para": 3, "en": "Plus, virtually all major American companies are becoming tech companies, often with their own research and development.", "cn": "此外，几乎所有的美国大公司都在向科技公司转变，这些公司通常都要自主研发。", "words": [ { "w": "virtually", "meaning": "ad. 几乎，实际上" }, { "w": "tech companies", "meaning": "科技公司" }, { "w": "research and development", "meaning": "研发" } ] },
-        { "id": "2020_text2_s12", "para": 3, "en": "And beyond this, major CEOs still have to do all the day-to-day work they have always done.", "cn": "除此之外，大CEO仍然要做他们一直在做的所有日常工作。", "words": [ { "w": "beyond this", "meaning": "此外" }, { "w": "day-to-day work", "meaning": "日常工作" } ] },
-        { "id": "2020_text2_s13", "para": 4, "en": "The common idea that high CEO pay is mainly about ripping people off doesn't explain history very well.", "cn": "人们普遍认为CEO的高薪很大程度上是对员工的剥削，但这并不能很好地解释历史。", "words": [ { "w": "ripping people off", "meaning": "剥削他人，敲竹杠" }, { "w": "explain history", "meaning": "解释历史" }, { "w": "common idea", "meaning": "普遍看法" } ] },
-        { "id": "2020_text2_s14", "para": 4, "en": "By most measures, corporate governance has become a lot tighter and more rigorous since the 1970s.", "cn": "从大多数方面来看，公司治理自上世纪70年代以来大幅度收紧趋严。", "words": [ { "w": "By most measures", "meaning": "从大多数方面来看" }, { "w": "corporate governance", "meaning": "公司治理" }, { "w": "rigorous", "meaning": "adj. 严格的，严厉的" } ] },
-        { "id": "2020_text2_s15", "para": 4, "en": "Yet it is principally during this period of stronger governance that CEO pay has been high and rising.", "cn": "然而，CEO薪酬一直处于高位且持续上涨的趋势恰恰主要出现于强化治理的这段时期。", "words": [ { "w": "principally", "meaning": "ad. 主要地" }, { "w": "stronger governance", "meaning": "更严格的治理" }, { "w": "high and rising", "meaning": "处于高位且持续上涨" } ] },
-        { "id": "2020_text2_s16", "para": 4, "en": "That suggests it is in the broader corporate interest to recruit top candidates for increasingly tough jobs.", "cn": "这表明，招聘顶尖候选人从事日益艰难的工作符合公司的更广泛利益。", "words": [ { "w": "broader corporate interest", "meaning": "公司更广泛的利益" }, { "w": "recruit", "meaning": "v. 招募，聘用" }, { "w": "tough jobs", "meaning": "艰难的工作" } ] },
-        { "id": "2020_text2_s17", "para": 5, "en": "Furthermore, the highest CEO salaries are paid to outside candidates, not to the cozy insider picks, another sign that high CEO pay is not some kind of depredation at the expense of the rest of the company.", "cn": "此外，最高的CEO薪资是付给外部候选人的，而非付给那些安逸的内部人选，这也表明CEO高薪并不是某种以牺牲公司其他员工利益为代价的掠夺之举。", "words": [ { "w": "Furthermore", "meaning": "ad. 此外，而且" }, { "w": "cozy insider picks", "meaning": "安逸的内部人选" }, { "w": "at the expense of", "meaning": "以牺牲……为代价" } ] },
-        { "id": "2020_text2_s18", "para": 5, "en": "And the stock market reacts positively when companies tie CEO pay to, say, stock prices, a sign that those practices build up corporate value not just for the CEO.", "cn": "当公司将CEO薪酬与股价等因素挂钩时，股市会做出积极反应，这表明这些举措逐步增加公司价值，不仅仅是为了CEO。", "words": [ { "w": "reacts positively", "meaning": "做出积极反应" }, { "w": "tie CEO pay to", "meaning": "将 CEO 薪酬与……挂钩" }, { "w": "build up corporate value", "meaning": "增加公司价值" } ] }
+        {
+          "id": "2020_text2_s01",
+          "para": 1,
+          "en": "It is true that CEO pay has gone up - top ones may make 300 times the pay of typical workers on average, and since the mid-1970s, CEO pay for large publicly traded American corporations has, by varying estimates, gone up by about 500%.",
+          "cn": "的确，首席执行官（CEO）的薪酬上涨了——平均来看，顶级CEO的薪酬可能是普通员工薪酬的300倍，而且根据各种不同的估计，自上世纪70年代中期以来，美国大型上市公司的CEO薪酬上涨了约500%。",
+          "words": [
+            {
+              "w": "gone up",
+              "meaning": "上涨，增长"
+            },
+            {
+              "w": "on average",
+              "meaning": "平均"
+            },
+            {
+              "w": "publicly traded",
+              "meaning": "上市交易的"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s02",
+          "para": 1,
+          "en": "The typical CEO of a top American corporation now makes about $18.9 million a year.",
+          "cn": "美国顶级公司的典型CEO现在每年能挣到约1890万美元。",
+          "words": [
+            {
+              "w": "typical CEO",
+              "meaning": "典型的 CEO"
+            },
+            {
+              "w": "a year",
+              "meaning": "每年"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s03",
+          "para": 2,
+          "en": "The best model for understanding the growth of CEO pay is that of limited CEO talent in a world where business opportunities for the top firms are growing rapidly.",
+          "cn": "理解CEO薪酬上涨的最佳模型是，全球顶级公司的商业机会在迅速增长，而CEO人才紧缺。",
+          "words": [
+            {
+              "w": "The best model",
+              "meaning": "最佳模型"
+            },
+            {
+              "w": "limited CEO talent",
+              "meaning": "紧缺的 CEO 人才"
+            },
+            {
+              "w": "growing rapidly",
+              "meaning": "迅速增长"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s04",
+          "para": 2,
+          "en": "The efforts of America's highest-earning 1% have been one of the more dynamic elements of the global economy.",
+          "cn": "美国收入最高的1%人群的努力付出一直是全球经济的较强推动力之一。",
+          "words": [
+            {
+              "w": "highest-earning",
+              "meaning": "收入最高的"
+            },
+            {
+              "w": "dynamic",
+              "meaning": "adj. 有干劲的，推动的"
+            },
+            {
+              "w": "global economy",
+              "meaning": "全球经济"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s05",
+          "para": 2,
+          "en": "It's not popular to say, but one reason their pay has gone up so much is that CEOs really have upped their game relative to many other workers in the U.S. economy.",
+          "cn": "尽管这么说不太讨喜，但CEO薪酬涨幅如此之大的一个原因是，相对于美国经济中的许多其他工作者来说，CEO确实提升了工作表现。",
+          "words": [
+            {
+              "w": "upped their game",
+              "meaning": "提升了表现，加大了努力"
+            },
+            {
+              "w": "relative to",
+              "meaning": "相对于"
+            },
+            {
+              "w": "one reason",
+              "meaning": "原因之一"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s06",
+          "para": 3,
+          "en": "Today's CEO, at least for major American firms, must have many more skills than simply being able to \"run the company.\"",
+          "cn": "如今的CEO，至少对于美国的大公司来说，必须拥有更多技能，而不仅仅是会“经营公司”而已。",
+          "words": [
+            {
+              "w": "many more skills",
+              "meaning": "多得多的技能"
+            },
+            {
+              "w": "run the company",
+              "meaning": "经营公司"
+            },
+            {
+              "w": "major American firms",
+              "meaning": "美国大公司"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s07",
+          "para": 3,
+          "en": "CEOs must have a good sense of financial markets and maybe even how the company should trade in them.",
+          "cn": "CEO必须对金融市场有良好的判断力，甚至可能要熟知公司应该如何在这些市场中从事交易。",
+          "words": [
+            {
+              "w": "a good sense of",
+              "meaning": "对……有良好的判断力"
+            },
+            {
+              "w": "financial markets",
+              "meaning": "金融市场"
+            },
+            {
+              "w": "trade in them",
+              "meaning": "在其中进行交易"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s08",
+          "para": 3,
+          "en": "They also need better public relations skills than their predecessors, as the costs of even a minor slipup can be significant.",
+          "cn": "相比前任们，他们还需要更厉害的公关能力，因为即使是一个小小的失误，也可能代价惨重。",
+          "words": [
+            {
+              "w": "public relations skills",
+              "meaning": "公关能力"
+            },
+            {
+              "w": "predecessors",
+              "meaning": "n. 前任，前辈（predecessor 的复数）"
+            },
+            {
+              "w": "slipup",
+              "meaning": "n. 失误，疏忽"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s09",
+          "para": 3,
+          "en": "Then there's the fact that large American companies are much more globalized than ever before, with supply chains spread across a larger number of countries.",
+          "cn": "而且，美国大公司的全球化程度空前，供应链遍布更多的国家。",
+          "words": [
+            {
+              "w": "globalized",
+              "meaning": "adj. 全球化的"
+            },
+            {
+              "w": "supply chains",
+              "meaning": "供应链"
+            },
+            {
+              "w": "than ever before",
+              "meaning": "比以往任何时候"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s10",
+          "para": 3,
+          "en": "To lead in that system requires knowledge that is fairly mind-boggling.",
+          "cn": "要在这样的体系中发挥领导作用，必须有相当惊人的知识才行。",
+          "words": [
+            {
+              "w": "To lead in that system",
+              "meaning": "在这样的体系中发挥领导作用"
+            },
+            {
+              "w": "mind-boggling",
+              "meaning": "adj. 难以置信的，十分惊人的"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s11",
+          "para": 3,
+          "en": "Plus, virtually all major American companies are becoming tech companies, often with their own research and development.",
+          "cn": "此外，几乎所有的美国大公司都在向科技公司转变，这些公司通常都要自主研发。",
+          "words": [
+            {
+              "w": "virtually",
+              "meaning": "ad. 几乎，实际上"
+            },
+            {
+              "w": "tech companies",
+              "meaning": "科技公司"
+            },
+            {
+              "w": "research and development",
+              "meaning": "研发"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s12",
+          "para": 3,
+          "en": "And beyond this, major CEOs still have to do all the day-to-day work they have always done.",
+          "cn": "除此之外，大CEO仍然要做他们一直在做的所有日常工作。",
+          "words": [
+            {
+              "w": "beyond this",
+              "meaning": "此外"
+            },
+            {
+              "w": "day-to-day work",
+              "meaning": "日常工作"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s13",
+          "para": 4,
+          "en": "The common idea that high CEO pay is mainly about ripping people off doesn't explain history very well.",
+          "cn": "人们普遍认为CEO的高薪很大程度上是对员工的剥削，但这并不能很好地解释历史。",
+          "words": [
+            {
+              "w": "ripping people off",
+              "meaning": "剥削他人，敲竹杠"
+            },
+            {
+              "w": "explain history",
+              "meaning": "解释历史"
+            },
+            {
+              "w": "common idea",
+              "meaning": "普遍看法"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s14",
+          "para": 4,
+          "en": "By most measures, corporate governance has become a lot tighter and more rigorous since the 1970s.",
+          "cn": "从大多数方面来看，公司治理自上世纪70年代以来大幅度收紧趋严。",
+          "words": [
+            {
+              "w": "By most measures",
+              "meaning": "从大多数方面来看"
+            },
+            {
+              "w": "corporate governance",
+              "meaning": "公司治理"
+            },
+            {
+              "w": "rigorous",
+              "meaning": "adj. 严格的，严厉的"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s15",
+          "para": 4,
+          "en": "Yet it is principally during this period of stronger governance that CEO pay has been high and rising.",
+          "cn": "然而，CEO薪酬一直处于高位且持续上涨的趋势恰恰主要出现于强化治理的这段时期。",
+          "words": [
+            {
+              "w": "principally",
+              "meaning": "ad. 主要地"
+            },
+            {
+              "w": "stronger governance",
+              "meaning": "更严格的治理"
+            },
+            {
+              "w": "high and rising",
+              "meaning": "处于高位且持续上涨"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s16",
+          "para": 4,
+          "en": "That suggests it is in the broader corporate interest to recruit top candidates for increasingly tough jobs.",
+          "cn": "这表明，招聘顶尖候选人从事日益艰难的工作符合公司的更广泛利益。",
+          "words": [
+            {
+              "w": "broader corporate interest",
+              "meaning": "公司更广泛的利益"
+            },
+            {
+              "w": "recruit",
+              "meaning": "v. 招募，聘用"
+            },
+            {
+              "w": "tough jobs",
+              "meaning": "艰难的工作"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s17",
+          "para": 5,
+          "en": "Furthermore, the highest CEO salaries are paid to outside candidates, not to the cozy insider picks, another sign that high CEO pay is not some kind of depredation at the expense of the rest of the company.",
+          "cn": "此外，最高的CEO薪资是付给外部候选人的，而非付给那些安逸的内部人选，这也表明CEO高薪并不是某种以牺牲公司其他员工利益为代价的掠夺之举。",
+          "words": [
+            {
+              "w": "Furthermore",
+              "meaning": "ad. 此外，而且"
+            },
+            {
+              "w": "cozy insider picks",
+              "meaning": "安逸的内部人选"
+            },
+            {
+              "w": "at the expense of",
+              "meaning": "以牺牲……为代价"
+            }
+          ]
+        },
+        {
+          "id": "2020_text2_s18",
+          "para": 5,
+          "en": "And the stock market reacts positively when companies tie CEO pay to, say, stock prices, a sign that those practices build up corporate value not just for the CEO.",
+          "cn": "当公司将CEO薪酬与股价等因素挂钩时，股市会做出积极反应，这表明这些举措逐步增加公司价值，不仅仅是为了CEO。",
+          "words": [
+            {
+              "w": "reacts positively",
+              "meaning": "做出积极反应"
+            },
+            {
+              "w": "tie CEO pay to",
+              "meaning": "将 CEO 薪酬与……挂钩"
+            },
+            {
+              "w": "build up corporate value",
+              "meaning": "增加公司价值"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2020_text2_q1", "number": 26, "qtype": "detail", "stem": "Which of the following has contributed to CEO pay rise?", "stem_cn": "下列哪项是 CEO 薪酬上涨的原因之一？", "options": { "A": "The growth in the number of corporations.", "B": "The general pay rise with a better economy.", "C": "Increased business opportunities for top firms.", "D": "Close cooperation among leading economies." }, "options_cn": { "A": "公司数量的增长。", "B": "经济好转，工资普遍上涨。", "C": "顶级公司的商业机会增多。", "D": "主要经济体之间的密切合作。" }, "answer": "C", "explanation": "第二段①句 The best model 指出：全球顶级公司商机迅速增长而 CEO 人才紧缺，故薪酬上涨，C（Increased 对应 growing rapidly）正确。A 将\"商业机会增长\"偷换为\"公司数量增长\"；B、D 由 economy 等词捏造\"经济好转致普遍涨薪\"\"经济体密切合作\"。", "related_sentences": [ "2020_text2_s03" ] },
-        { "id": "2020_text2_q2", "number": 27, "qtype": "detail", "stem": "Compared with their predecessors, today's CEOs are required to ___.", "stem_cn": "相比前辈们，如今的 CEO 被要求___。", "options": { "A": "foster a stronger sense of teamwork", "B": "finance more research and development", "C": "establish closer ties with tech companies", "D": "operate more globalized companies" }, "options_cn": { "A": "培养更强的团队意识", "B": "资助更多的研发工作", "C": "与科技公司建立更紧密的联系", "D": "经营更加全球化的公司" }, "answer": "D", "explanation": "第三段④⑤句：美国大公司全球化程度空前，CEO 需在这样的体系中领导（To lead in that system），D 正确。A 把\"金融市场判断力\"曲解为\"团队意识\"；B 由 financial 捏造 finance 研发；C 把\"大公司在转变为科技公司\"曲解为\"与科技公司建立联系\"。", "related_sentences": [ "2020_text2_s09", "2020_text2_s10" ] },
-        { "id": "2020_text2_q3", "number": 28, "qtype": "detail", "stem": "CEO pay has been rising since the 1970s despite ___.", "stem_cn": "上世纪 70 年代以来 CEO 薪酬一直在上涨，尽管___。", "options": { "A": "continual internal opposition", "B": "strict corporate governance", "C": "conservative business strategies", "D": "repeated government warnings" }, "options_cn": { "A": "（公司）内部反对声音不断", "B": "公司治理严格", "C": "（公司）商业战略较为保守", "D": "（公司）一再收到政府警告" }, "answer": "B", "explanation": "第四段②③句为让步转折：70 年代以来公司治理趋严（让步），但 CEO 薪酬恰恰在该时期高企上涨（转折），B 概括让步信息。A 由①句普遍看法过度推断\"内部反对\"；C 属商业常识臆测；D 把\"公司自我治理趋严\"曲解为\"政府警告\"。", "related_sentences": [ "2020_text2_s14", "2020_text2_s15" ] },
-        { "id": "2020_text2_q4", "number": 29, "qtype": "detail", "stem": "High CEO pay can be justified by the fact that it helps ___.", "stem_cn": "CEO 的高薪有其合理性，因为它有助于___。", "options": { "A": "confirm the status of CEOs", "B": "motive inside candidates", "C": "boost the efficiency of CEOs", "D": "increase corporate value" }, "options_cn": { "A": "巩固 CEO 的地位", "B": "激励内部候选人", "C": "提高 CEO 的（工作）效率", "D": "增加公司价值" }, "answer": "D", "explanation": "第五段末句：将 CEO 薪酬与股价挂钩等举措 build up corporate value，故高薪合理，D 正确。A 原文未提\"巩固地位\"；B 与①句\"高薪给外部候选人而非内部人选\"相悖；C 将\"安逸的内部人选\"曲解为\"提高在任者效率\"。", "related_sentences": [ "2020_text2_s17", "2020_text2_s18" ] },
-        { "id": "2020_text2_q5", "number": 30, "qtype": "main_idea", "stem": "The most suitable title for this text would be ___.", "stem_cn": "本文最合适的标题是___。", "options": { "A": "CEOs Are Not Overpaid", "B": "CEO Pay: Past and Present", "C": "CEOs' Challenges of Today", "D": "CEO Traits: Not Easy to Define" }, "options_cn": { "A": "CEO 的薪酬并不过高", "B": "CEO 薪酬：过去和现在", "C": "CEO 今日面临的挑战", "D": "CEO 的特质：很难定义" }, "answer": "A", "explanation": "全文从\"人才稀缺、能力匹配、符合公司利益、提升公司价值\"多角度论证 CEO 高薪合理，A（并不过高）最贴合主旨。B 仅涉及薪酬今昔变化未表观点；C、D 由第三段\"更多技能\"臆断\"挑战/难界定\"，均偏离\"薪酬\"这一关注点。", "related_sentences": [ "2020_text2_s03", "2020_text2_s16", "2020_text2_s17" ] }
+        {
+          "id": "2020_text2_q1",
+          "number": 26,
+          "qtype": "detail",
+          "stem": "Which of the following has contributed to CEO pay rise?",
+          "stem_cn": "下列哪项是 CEO 薪酬上涨的原因之一？",
+          "options": {
+            "A": "The growth in the number of corporations.",
+            "B": "The general pay rise with a better economy.",
+            "C": "Increased business opportunities for top firms.",
+            "D": "Close cooperation among leading economies."
+          },
+          "options_cn": {
+            "A": "公司数量的增长。",
+            "B": "经济好转，工资普遍上涨。",
+            "C": "顶级公司的商业机会增多。",
+            "D": "主要经济体之间的密切合作。"
+          },
+          "answer": "C",
+          "explanation": "第二段①句 The best model 指出：全球顶级公司商机迅速增长而 CEO 人才紧缺，故薪酬上涨，C（Increased 对应 growing rapidly）正确。A 将\"商业机会增长\"偷换为\"公司数量增长\"；B、D 由 economy 等词捏造\"经济好转致普遍涨薪\"\"经济体密切合作\"。",
+          "related_sentences": [
+            "2020_text2_s03"
+          ]
+        },
+        {
+          "id": "2020_text2_q2",
+          "number": 27,
+          "qtype": "detail",
+          "stem": "Compared with their predecessors, today's CEOs are required to ___.",
+          "stem_cn": "相比前辈们，如今的 CEO 被要求___。",
+          "options": {
+            "A": "foster a stronger sense of teamwork",
+            "B": "finance more research and development",
+            "C": "establish closer ties with tech companies",
+            "D": "operate more globalized companies"
+          },
+          "options_cn": {
+            "A": "培养更强的团队意识",
+            "B": "资助更多的研发工作",
+            "C": "与科技公司建立更紧密的联系",
+            "D": "经营更加全球化的公司"
+          },
+          "answer": "D",
+          "explanation": "第三段④⑤句：美国大公司全球化程度空前，CEO 需在这样的体系中领导（To lead in that system），D 正确。A 把\"金融市场判断力\"曲解为\"团队意识\"；B 由 financial 捏造 finance 研发；C 把\"大公司在转变为科技公司\"曲解为\"与科技公司建立联系\"。",
+          "related_sentences": [
+            "2020_text2_s09",
+            "2020_text2_s10"
+          ]
+        },
+        {
+          "id": "2020_text2_q3",
+          "number": 28,
+          "qtype": "detail",
+          "stem": "CEO pay has been rising since the 1970s despite ___.",
+          "stem_cn": "上世纪 70 年代以来 CEO 薪酬一直在上涨，尽管___。",
+          "options": {
+            "A": "continual internal opposition",
+            "B": "strict corporate governance",
+            "C": "conservative business strategies",
+            "D": "repeated government warnings"
+          },
+          "options_cn": {
+            "A": "（公司）内部反对声音不断",
+            "B": "公司治理严格",
+            "C": "（公司）商业战略较为保守",
+            "D": "（公司）一再收到政府警告"
+          },
+          "answer": "B",
+          "explanation": "第四段②③句为让步转折：70 年代以来公司治理趋严（让步），但 CEO 薪酬恰恰在该时期高企上涨（转折），B 概括让步信息。A 由①句普遍看法过度推断\"内部反对\"；C 属商业常识臆测；D 把\"公司自我治理趋严\"曲解为\"政府警告\"。",
+          "related_sentences": [
+            "2020_text2_s14",
+            "2020_text2_s15"
+          ]
+        },
+        {
+          "id": "2020_text2_q4",
+          "number": 29,
+          "qtype": "detail",
+          "stem": "High CEO pay can be justified by the fact that it helps ___.",
+          "stem_cn": "CEO 的高薪有其合理性，因为它有助于___。",
+          "options": {
+            "A": "confirm the status of CEOs",
+            "B": "motive inside candidates",
+            "C": "boost the efficiency of CEOs",
+            "D": "increase corporate value"
+          },
+          "options_cn": {
+            "A": "巩固 CEO 的地位",
+            "B": "激励内部候选人",
+            "C": "提高 CEO 的（工作）效率",
+            "D": "增加公司价值"
+          },
+          "answer": "D",
+          "explanation": "第五段末句：将 CEO 薪酬与股价挂钩等举措 build up corporate value，故高薪合理，D 正确。A 原文未提\"巩固地位\"；B 与①句\"高薪给外部候选人而非内部人选\"相悖；C 将\"安逸的内部人选\"曲解为\"提高在任者效率\"。",
+          "related_sentences": [
+            "2020_text2_s17",
+            "2020_text2_s18"
+          ]
+        },
+        {
+          "id": "2020_text2_q5",
+          "number": 30,
+          "qtype": "main_idea",
+          "stem": "The most suitable title for this text would be ___.",
+          "stem_cn": "本文最合适的标题是___。",
+          "options": {
+            "A": "CEOs Are Not Overpaid",
+            "B": "CEO Pay: Past and Present",
+            "C": "CEOs' Challenges of Today",
+            "D": "CEO Traits: Not Easy to Define"
+          },
+          "options_cn": {
+            "A": "CEO 的薪酬并不过高",
+            "B": "CEO 薪酬：过去和现在",
+            "C": "CEO 今日面临的挑战",
+            "D": "CEO 的特质：很难定义"
+          },
+          "answer": "A",
+          "explanation": "全文从\"人才稀缺、能力匹配、符合公司利益、提升公司价值\"多角度论证 CEO 高薪合理，A（并不过高）最贴合主旨。B 仅涉及薪酬今昔变化未表观点；C、D 由第三段\"更多技能\"臆断\"挑战/难界定\"，均偏离\"薪酬\"这一关注点。",
+          "related_sentences": [
+            "2020_text2_s03",
+            "2020_text2_s16",
+            "2020_text2_s17"
+          ]
+        }
       ]
     },
     {
@@ -78,33 +985,515 @@
       "topic": "不可将治理有毒空气交由欧洲各城市：应由国家政府主导",
       "source": "2020 年考研英语（二）Text 3 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2020_text3_s01", "para": 1, "en": "Madrid was hailed as a public health guiding light last November when it rolled out ambitious restrictions on the most polluting cars.", "cn": "去年十一月，马德里针对污染最严重的汽车正式推出大规模管控措施时，被誉为公共卫生健康的楷模。", "words": [ { "w": "hailed as", "meaning": "被誉为，被称赞为" }, { "w": "guiding light", "meaning": "指路明灯，楷模" }, { "w": "most polluting cars", "meaning": "污染最严重的汽车" } ] },
-        { "id": "2020_text3_s02", "para": 1, "en": "Seven months and one election day later, a new conservative city council suspended enforcement of the clean air zone, a first step toward its possible termination.", "cn": "七个月后大选日一过，由保守派掌控的新一届市议会随即中止了“清洁空气区”的执行，迈出了可能导致它被废除的第一步。", "words": [ { "w": "conservative city council", "meaning": "保守派掌控的市议会" }, { "w": "suspended", "meaning": "v. 使暂停（suspend 的过去式）" }, { "w": "termination", "meaning": "n. 终止，废除" } ] },
-        { "id": "2020_text3_s03", "para": 1, "en": "Mayor Jose Luis Martinez-Almeida made opposition to the zone a centrepiece of his election campaign, despite its success in improving air quality.", "cn": "尽管“清洁空气区”在改善空气质量方面取得良好效果，但市长何塞·路易斯-马丁内斯-阿尔梅达却将反对它作为竞选运动的核心主张。", "words": [ { "w": "opposition to", "meaning": "对……的反对" }, { "w": "centrepiece", "meaning": "n. 最重要的部分，核心" }, { "w": "election campaign", "meaning": "竞选运动" } ] },
-        { "id": "2020_text3_s04", "para": 1, "en": "A judge has now overruled the city's decision to stop levying fines, ordering them restored.", "cn": "目前，一名法官推翻了市政府停止收取罚金的决议，责令恢复收取罚金。", "words": [ { "w": "overruled", "meaning": "v. 否决，推翻（overrule 的过去分词）" }, { "w": "levying fines", "meaning": "征收罚金" }, { "w": "restored", "meaning": "v. 恢复（restore 的过去分词）" } ] },
-        { "id": "2020_text3_s05", "para": 1, "en": "But with legal battles ahead, the zone's future looks uncertain at best.", "cn": "但是，司法拉锯战在前，“清洁空气区”的未来充其量只能说是前途难卜。", "words": [ { "w": "legal battles", "meaning": "司法拉锯战" }, { "w": "uncertain", "meaning": "adj. 不确定的，难料的" }, { "w": "at best", "meaning": "充其量，至多" } ] },
-        { "id": "2020_text3_s06", "para": 2, "en": "Madrid's back and forth on clean air is a pointed reminder of the limits to the patchwork, city-by-city approach that characterises efforts on air pollution across Europe, Britain very much included.", "cn": "马德里在清洁空气问题上的反反复复显而易见地提醒着我们，欧洲各国（当然也包括英国）这种零碎的市级空气污染治理举措的局限性。", "words": [ { "w": "back and forth", "meaning": "反反复复，来回" }, { "w": "patchwork", "meaning": "n. 拼凑之物，零碎的东西" }, { "w": "city-by-city", "meaning": "各城市各自为政的" } ] },
-        { "id": "2020_text3_s07", "para": 3, "en": "Among other weaknesses, the measures cities must employ when left to tackle dirty air on their own are politically controversial, and therefore vulnerable.", "cn": "各大城市独力承担污浊空气治理之责，其被迫不得已而采取的措施具有很多薄弱点，其中之一是：会引发政治争议，因而极易招致攻击。", "words": [ { "w": "Among other weaknesses", "meaning": "在其他薄弱点中" }, { "w": "politically controversial", "meaning": "引发政治争议的" }, { "w": "vulnerable", "meaning": "adj. 易受攻击的，脆弱的" } ] },
-        { "id": "2020_text3_s08", "para": 3, "en": "That's because they inevitably put the costs of cleaning the air on to individual drivers - who must pay fees or buy better vehicles - rather than on to the car manufacturers whose cheating is the real cause of our toxic pollution.", "cn": "这是因为，这些措施不可避免地将清洁空气的成本加诸司机个人——司机必须为污染付费或者买更好的车——而不是加诸汽车生产商，生产商的舞弊行为才是造成有毒污染的真正原因。", "words": [ { "w": "inevitably", "meaning": "ad. 不可避免地" }, { "w": "individual drivers", "meaning": "司机个人" }, { "w": "cheating", "meaning": "n. 舞弊，作弊" } ] },
-        { "id": "2020_text3_s09", "para": 3, "en": "It's not hard to imagine a similar reversal happening in London.", "cn": "不难想象，相似的逆转将在伦敦上演。", "words": [ { "w": "reversal", "meaning": "n. （政策、趋势的）逆转" }, { "w": "happening in London", "meaning": "在伦敦上演" } ] },
-        { "id": "2020_text3_s10", "para": 3, "en": "The new ultra-low emission zone (Ulez) is likely to be a big issue in next year's mayoral election.", "cn": "“超低排放新区（Ulez）”很可能是明年伦敦市长选举的重大议题。", "words": [ { "w": "ultra-low emission zone", "meaning": "超低排放区" }, { "w": "big issue", "meaning": "重大议题" }, { "w": "mayoral election", "meaning": "市长选举" } ] },
-        { "id": "2020_text3_s11", "para": 3, "en": "And if Sadiq Khan wins and extends it to the North and South Circular roads in 2021 as he intends, it is sure to spark intense opposition from the far larger number of motorists who will then be affected.", "cn": "如果萨迪克·汗获胜，而且一如他所计划的那样于2021年将“超低排放新区”扩展至南北环路，那么一定会激起“届时将受影响的、数量大得多的汽车车主”的强烈反对。", "words": [ { "w": "extends it to", "meaning": "将其扩展至" }, { "w": "spark intense opposition", "meaning": "引发强烈反对" }, { "w": "motorists", "meaning": "n. 汽车车主，开车的人" } ] },
-        { "id": "2020_text3_s12", "para": 4, "en": "It's not that measures such as London's Ulez are useless.", "cn": "并不是说伦敦Ulez这类措施无用。", "words": [ { "w": "It's not that", "meaning": "并不是说……" }, { "w": "useless", "meaning": "adj. 无用的" } ] },
-        { "id": "2020_text3_s13", "para": 4, "en": "Far from it.", "cn": "恰恰相反。", "words": [ { "w": "Far from it", "meaning": "恰恰相反，远非如此" } ] },
-        { "id": "2020_text3_s14", "para": 4, "en": "Local officials are using the levers that are available to them to safeguard residents' health in the face of a serious threat.", "cn": "严重威胁当前，地方官员正在运用他们所能使用的手段来保障居民健康。", "words": [ { "w": "levers", "meaning": "n. 手段，方法（lever 的复数）" }, { "w": "safeguard", "meaning": "v. 保护，捍卫" }, { "w": "serious threat", "meaning": "严重威胁" } ] },
-        { "id": "2020_text3_s15", "para": 4, "en": "The zones do deliver some improvements to air quality, and the science tells us that means real health benefits.", "cn": "这些区域确实大大改善了空气质量，而且科学表明，空气质量改善意味着切实的健康收益。", "words": [ { "w": "deliver", "meaning": "v. 带来，兑现" }, { "w": "improvements to air quality", "meaning": "空气质量的改善" }, { "w": "health benefits", "meaning": "健康收益" } ] },
-        { "id": "2020_text3_s16", "para": 5, "en": "But mayors and councilors can only do so much about a problem that is far bigger than any one city or town.", "cn": "但是，针对这么一个影响范围远超一城一镇的（空气污染）问题，市长们、议员们所能做的也就仅此而已。", "words": [ { "w": "mayors and councilors", "meaning": "市长和市议员" }, { "w": "can only do so much", "meaning": "所能做的仅此而已" }, { "w": "far bigger than", "meaning": "远大于" } ] },
-        { "id": "2020_text3_s17", "para": 5, "en": "They are acting because national governments - Britain's and others across Europe - have failed to do so.", "cn": "他们之所以在行动，是因为各国政府——英国以及所有其他欧洲国家的政府——未能做出行动。", "words": [ { "w": "national governments", "meaning": "国家政府" }, { "w": "have failed to", "meaning": "未能，没有做到" }, { "w": "do so", "meaning": "这样做" } ] },
-        { "id": "2020_text3_s18", "para": 6, "en": "Restrictions that keep highly polluting cars out of certain areas - city centres, \"school streets\", even individual roads - are a response to the absence of a larger effort to properly enforce existing regulations and require auto companies to bring their vehicles into compliance.", "cn": "此类“禁止高污染汽车进入特定区域（如市中心、学区街道、甚至个别特殊道路）”的限制措施的出台，是因为“缺乏更大规模的行动以严格执行现有法规并要求汽车公司生产合规机动车”。", "words": [ { "w": "Restrictions", "meaning": "n. 限制条例（restriction 的复数）" }, { "w": "properly enforce existing regulations", "meaning": "严格执行现有法规" }, { "w": "bring their vehicles into compliance", "meaning": "使其车辆合规" } ] },
-        { "id": "2020_text3_s19", "para": 6, "en": "Wales has introduced special low speed limits to minimise pollution.", "cn": "威尔士公国现已推行特定低速限制以最小化污染。", "words": [ { "w": "introduced", "meaning": "v. 采用，推行（introduce 的过去分词）" }, { "w": "low speed limits", "meaning": "低速限制" }, { "w": "minimise pollution", "meaning": "最小化污染" } ] },
-        { "id": "2020_text3_s20", "para": 6, "en": "We're doing everything but insist that manufacturers clean up their cars.", "cn": "我们正在竭尽一切所能，却唯独没有坚决要求制造商“清洁”其汽车。", "words": [ { "w": "doing everything but", "meaning": "做了一切，却唯独没有……" }, { "w": "insist that manufacturers", "meaning": "坚决要求制造商" }, { "w": "clean up their cars", "meaning": "清洁其汽车" } ] }
+        {
+          "id": "2020_text3_s01",
+          "para": 1,
+          "en": "Madrid was hailed as a public health guiding light last November when it rolled out ambitious restrictions on the most polluting cars.",
+          "cn": "去年十一月，马德里针对污染最严重的汽车正式推出大规模管控措施时，被誉为公共卫生健康的楷模。",
+          "words": [
+            {
+              "w": "hailed as",
+              "meaning": "被誉为，被称赞为"
+            },
+            {
+              "w": "guiding light",
+              "meaning": "指路明灯，楷模"
+            },
+            {
+              "w": "most polluting cars",
+              "meaning": "污染最严重的汽车"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s02",
+          "para": 1,
+          "en": "Seven months and one election day later, a new conservative city council suspended enforcement of the clean air zone, a first step toward its possible termination.",
+          "cn": "七个月后大选日一过，由保守派掌控的新一届市议会随即中止了“清洁空气区”的执行，迈出了可能导致它被废除的第一步。",
+          "words": [
+            {
+              "w": "conservative city council",
+              "meaning": "保守派掌控的市议会"
+            },
+            {
+              "w": "suspended",
+              "meaning": "v. 使暂停（suspend 的过去式）"
+            },
+            {
+              "w": "termination",
+              "meaning": "n. 终止，废除"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s03",
+          "para": 1,
+          "en": "Mayor Jose Luis Martinez-Almeida made opposition to the zone a centrepiece of his election campaign, despite its success in improving air quality.",
+          "cn": "尽管“清洁空气区”在改善空气质量方面取得良好效果，但市长何塞·路易斯-马丁内斯-阿尔梅达却将反对它作为竞选运动的核心主张。",
+          "words": [
+            {
+              "w": "opposition to",
+              "meaning": "对……的反对"
+            },
+            {
+              "w": "centrepiece",
+              "meaning": "n. 最重要的部分，核心"
+            },
+            {
+              "w": "election campaign",
+              "meaning": "竞选运动"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s04",
+          "para": 1,
+          "en": "A judge has now overruled the city's decision to stop levying fines, ordering them restored.",
+          "cn": "目前，一名法官推翻了市政府停止收取罚金的决议，责令恢复收取罚金。",
+          "words": [
+            {
+              "w": "overruled",
+              "meaning": "v. 否决，推翻（overrule 的过去分词）"
+            },
+            {
+              "w": "levying fines",
+              "meaning": "征收罚金"
+            },
+            {
+              "w": "restored",
+              "meaning": "v. 恢复（restore 的过去分词）"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s05",
+          "para": 1,
+          "en": "But with legal battles ahead, the zone's future looks uncertain at best.",
+          "cn": "但是，司法拉锯战在前，“清洁空气区”的未来充其量只能说是前途难卜。",
+          "words": [
+            {
+              "w": "legal battles",
+              "meaning": "司法拉锯战"
+            },
+            {
+              "w": "uncertain",
+              "meaning": "adj. 不确定的，难料的"
+            },
+            {
+              "w": "at best",
+              "meaning": "充其量，至多"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s06",
+          "para": 2,
+          "en": "Madrid's back and forth on clean air is a pointed reminder of the limits to the patchwork, city-by-city approach that characterises efforts on air pollution across Europe, Britain very much included.",
+          "cn": "马德里在清洁空气问题上的反反复复显而易见地提醒着我们，欧洲各国（当然也包括英国）这种零碎的市级空气污染治理举措的局限性。",
+          "words": [
+            {
+              "w": "back and forth",
+              "meaning": "反反复复，来回"
+            },
+            {
+              "w": "patchwork",
+              "meaning": "n. 拼凑之物，零碎的东西"
+            },
+            {
+              "w": "city-by-city",
+              "meaning": "各城市各自为政的"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s07",
+          "para": 3,
+          "en": "Among other weaknesses, the measures cities must employ when left to tackle dirty air on their own are politically controversial, and therefore vulnerable.",
+          "cn": "各大城市独力承担污浊空气治理之责，其被迫不得已而采取的措施具有很多薄弱点，其中之一是：会引发政治争议，因而极易招致攻击。",
+          "words": [
+            {
+              "w": "Among other weaknesses",
+              "meaning": "在其他薄弱点中"
+            },
+            {
+              "w": "politically controversial",
+              "meaning": "引发政治争议的"
+            },
+            {
+              "w": "vulnerable",
+              "meaning": "adj. 易受攻击的，脆弱的"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s08",
+          "para": 3,
+          "en": "That's because they inevitably put the costs of cleaning the air on to individual drivers - who must pay fees or buy better vehicles - rather than on to the car manufacturers whose cheating is the real cause of our toxic pollution.",
+          "cn": "这是因为，这些措施不可避免地将清洁空气的成本加诸司机个人——司机必须为污染付费或者买更好的车——而不是加诸汽车生产商，生产商的舞弊行为才是造成有毒污染的真正原因。",
+          "words": [
+            {
+              "w": "inevitably",
+              "meaning": "ad. 不可避免地"
+            },
+            {
+              "w": "individual drivers",
+              "meaning": "司机个人"
+            },
+            {
+              "w": "cheating",
+              "meaning": "n. 舞弊，作弊"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s09",
+          "para": 3,
+          "en": "It's not hard to imagine a similar reversal happening in London.",
+          "cn": "不难想象，相似的逆转将在伦敦上演。",
+          "words": [
+            {
+              "w": "reversal",
+              "meaning": "n. （政策、趋势的）逆转"
+            },
+            {
+              "w": "happening in London",
+              "meaning": "在伦敦上演"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s10",
+          "para": 3,
+          "en": "The new ultra-low emission zone (Ulez) is likely to be a big issue in next year's mayoral election.",
+          "cn": "“超低排放新区（Ulez）”很可能是明年伦敦市长选举的重大议题。",
+          "words": [
+            {
+              "w": "ultra-low emission zone",
+              "meaning": "超低排放区"
+            },
+            {
+              "w": "big issue",
+              "meaning": "重大议题"
+            },
+            {
+              "w": "mayoral election",
+              "meaning": "市长选举"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s11",
+          "para": 3,
+          "en": "And if Sadiq Khan wins and extends it to the North and South Circular roads in 2021 as he intends, it is sure to spark intense opposition from the far larger number of motorists who will then be affected.",
+          "cn": "如果萨迪克·汗获胜，而且一如他所计划的那样于2021年将“超低排放新区”扩展至南北环路，那么一定会激起“届时将受影响的、数量大得多的汽车车主”的强烈反对。",
+          "words": [
+            {
+              "w": "extends it to",
+              "meaning": "将其扩展至"
+            },
+            {
+              "w": "spark intense opposition",
+              "meaning": "引发强烈反对"
+            },
+            {
+              "w": "motorists",
+              "meaning": "n. 汽车车主，开车的人"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s12",
+          "para": 4,
+          "en": "It's not that measures such as London's Ulez are useless.",
+          "cn": "并不是说伦敦Ulez这类措施无用。",
+          "words": [
+            {
+              "w": "It's not that",
+              "meaning": "并不是说……"
+            },
+            {
+              "w": "useless",
+              "meaning": "adj. 无用的"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s13",
+          "para": 4,
+          "en": "Far from it.",
+          "cn": "恰恰相反。",
+          "words": [
+            {
+              "w": "Far from it",
+              "meaning": "恰恰相反，远非如此"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s14",
+          "para": 4,
+          "en": "Local officials are using the levers that are available to them to safeguard residents' health in the face of a serious threat.",
+          "cn": "严重威胁当前，地方官员正在运用他们所能使用的手段来保障居民健康。",
+          "words": [
+            {
+              "w": "levers",
+              "meaning": "n. 手段，方法（lever 的复数）"
+            },
+            {
+              "w": "safeguard",
+              "meaning": "v. 保护，捍卫"
+            },
+            {
+              "w": "serious threat",
+              "meaning": "严重威胁"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s15",
+          "para": 4,
+          "en": "The zones do deliver some improvements to air quality, and the science tells us that means real health benefits.",
+          "cn": "这些区域确实大大改善了空气质量，而且科学表明，空气质量改善意味着切实的健康收益。",
+          "words": [
+            {
+              "w": "deliver",
+              "meaning": "v. 带来，兑现"
+            },
+            {
+              "w": "improvements to air quality",
+              "meaning": "空气质量的改善"
+            },
+            {
+              "w": "health benefits",
+              "meaning": "健康收益"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s16",
+          "para": 5,
+          "en": "But mayors and councilors can only do so much about a problem that is far bigger than any one city or town.",
+          "cn": "但是，针对这么一个影响范围远超一城一镇的（空气污染）问题，市长们、议员们所能做的也就仅此而已。",
+          "words": [
+            {
+              "w": "mayors and councilors",
+              "meaning": "市长和市议员"
+            },
+            {
+              "w": "can only do so much",
+              "meaning": "所能做的仅此而已"
+            },
+            {
+              "w": "far bigger than",
+              "meaning": "远大于"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s17",
+          "para": 5,
+          "en": "They are acting because national governments - Britain's and others across Europe - have failed to do so.",
+          "cn": "他们之所以在行动，是因为各国政府——英国以及所有其他欧洲国家的政府——未能做出行动。",
+          "words": [
+            {
+              "w": "national governments",
+              "meaning": "国家政府"
+            },
+            {
+              "w": "have failed to",
+              "meaning": "未能，没有做到"
+            },
+            {
+              "w": "do so",
+              "meaning": "这样做"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s18",
+          "para": 6,
+          "en": "Restrictions that keep highly polluting cars out of certain areas - city centres, \"school streets\", even individual roads - are a response to the absence of a larger effort to properly enforce existing regulations and require auto companies to bring their vehicles into compliance.",
+          "cn": "此类“禁止高污染汽车进入特定区域（如市中心、学区街道、甚至个别特殊道路）”的限制措施的出台，是因为“缺乏更大规模的行动以严格执行现有法规并要求汽车公司生产合规机动车”。",
+          "words": [
+            {
+              "w": "Restrictions",
+              "meaning": "n. 限制条例（restriction 的复数）"
+            },
+            {
+              "w": "properly enforce existing regulations",
+              "meaning": "严格执行现有法规"
+            },
+            {
+              "w": "bring their vehicles into compliance",
+              "meaning": "使其车辆合规"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s19",
+          "para": 6,
+          "en": "Wales has introduced special low speed limits to minimise pollution.",
+          "cn": "威尔士公国现已推行特定低速限制以最小化污染。",
+          "words": [
+            {
+              "w": "introduced",
+              "meaning": "v. 采用，推行（introduce 的过去分词）"
+            },
+            {
+              "w": "low speed limits",
+              "meaning": "低速限制"
+            },
+            {
+              "w": "minimise pollution",
+              "meaning": "最小化污染"
+            }
+          ]
+        },
+        {
+          "id": "2020_text3_s20",
+          "para": 6,
+          "en": "We're doing everything but insist that manufacturers clean up their cars.",
+          "cn": "我们正在竭尽一切所能，却唯独没有坚决要求制造商“清洁”其汽车。",
+          "words": [
+            {
+              "w": "doing everything but",
+              "meaning": "做了一切，却唯独没有……"
+            },
+            {
+              "w": "insist that manufacturers",
+              "meaning": "坚决要求制造商"
+            },
+            {
+              "w": "clean up their cars",
+              "meaning": "清洁其汽车"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2020_text3_q1", "number": 31, "qtype": "detail", "stem": "Which of the following is true about Madrid's clean air zone?", "stem_cn": "关于马德里\"清洁空气区\"，以下哪种说法正确？", "options": { "A": "Its effects are questionable.", "B": "It has been opposed by a judge.", "C": "It needs tougher enforcement.", "D": "Its fate is yet to be decided." }, "options_cn": { "A": "它的效果值得怀疑。", "B": "它已遭到某位法官的反对。", "C": "它需要更严厉的执行。", "D": "它的命运尚未确定。" }, "answer": "D", "explanation": "首段末句 the zone's future looks uncertain at best，即命运尚未确定，D 正确。A 与③句 its success in improving air quality 相悖；B 把主体搞反（法官推翻市府决定、责令恢复罚金，是支持该区）；C 无中生有\"执行不力\"。", "related_sentences": [ "2020_text3_s05" ] },
-        { "id": "2020_text3_q2", "number": 32, "qtype": "detail", "stem": "Which is considered a weakness of the city-level measures to tackle dirty air?", "stem_cn": "以下哪项被认为是市级污浊空气治理措施的一个薄弱之处？", "options": { "A": "They are biased against car manufacturers.", "B": "They prove impractical for city councils.", "C": "They are deemed too mild by politicians.", "D": "They put the burden on individual motorists." }, "options_cn": { "A": "它们对汽车生产商有失公允。", "B": "对市议会而言，它们不切实际。", "C": "对政治家而言，它们治理力度过轻。", "D": "它们将责任加诸机动车车主个人。" }, "answer": "D", "explanation": "第三段①②句：市级措施把清洁空气成本加诸车主个人而非罪魁祸首汽车生产商，D 正确。A 将取舍对象对调（不公允对象是车主而非厂商）；B 把\"可能失败\"曲解为\"不切实际\"；C 把\"引发政治争议、脆弱\"曲解为\"力度过轻\"。", "related_sentences": [ "2020_text3_s07", "2020_text3_s08" ] },
-        { "id": "2020_text3_q3", "number": 33, "qtype": "viewpoint", "stem": "The author believes that the extension of London's Ulez will ___.", "stem_cn": "作者认为，扩展伦敦\"超低排放新区（Ulez）\"会___。", "options": { "A": "arouse strong resistance", "B": "ensure Khan's electoral success", "C": "improve the city's traffic", "D": "discourage car manufacturing" }, "options_cn": { "A": "招致强烈抵抗", "B": "确保萨迪克·汗选举成功", "C": "改善城市交通", "D": "阻碍汽车生产" }, "answer": "A", "explanation": "第三段⑤句：若 2021 年将 Ulez 扩展至南北环路，一定会激起众多受影响车主的强烈反对，A 同义改写 spark intense opposition。B 颠倒因果；C 把\"改善空气质量\"偷换为\"改善交通\"；D 把影响对象\"车主\"偷换为\"汽车生产商\"。", "related_sentences": [ "2020_text3_s11" ] },
-        { "id": "2020_text3_q4", "number": 34, "qtype": "viewpoint", "stem": "Who does the author think should have addressed the problem?", "stem_cn": "作者认为本应由谁来解决这个问题？", "options": { "A": "Local residents.", "B": "Mayors.", "C": "Councilors.", "D": "National governments." }, "options_cn": { "A": "当地居民。", "B": "市长。", "C": "议员。", "D": "国家政府。" }, "answer": "D", "explanation": "第五段②句：市长市议员之所以行动，是因为国家政府未能行动（have failed to do so），可知作者认为本应由国家政府解决，D 正确。A 把\"受益居民\"偷换为\"问题解决者\"；B、C 是当前正在补位的主体，非题干\"本应负责却缺位\"者。", "related_sentences": [ "2020_text3_s16", "2020_text3_s17" ] },
-        { "id": "2020_text3_q5", "number": 35, "qtype": "inference", "stem": "It can be learned from the last paragraph that auto companies ___.", "stem_cn": "由末段可知，汽车公司___。", "options": { "A": "will raise low-emission car production", "B": "should be forced to follow regulations", "C": "will upgrade the design of their vehicles", "D": "should be put under public supervision" }, "options_cn": { "A": "将增加低排放汽车的产量", "B": "应被强制要求遵守规章制度", "C": "将升级其机动车设计", "D": "应被置于公众监督之下" }, "answer": "B", "explanation": "末段首末句借\"缺乏更大规模行动\"\"竭尽一切却唯独没有要求制造商清洁汽车\"两处隐性否定，反向推知应强制汽车公司遵纪守法，B 正确。A、C 只见 require...compliance 却无视 absence，与\"厂商舞弊\"消极现实相悖；D 望文生义 We're doing everything，误推\"公众监督\"。", "related_sentences": [ "2020_text3_s18", "2020_text3_s20" ] }
+        {
+          "id": "2020_text3_q1",
+          "number": 31,
+          "qtype": "detail",
+          "stem": "Which of the following is true about Madrid's clean air zone?",
+          "stem_cn": "关于马德里\"清洁空气区\"，以下哪种说法正确？",
+          "options": {
+            "A": "Its effects are questionable.",
+            "B": "It has been opposed by a judge.",
+            "C": "It needs tougher enforcement.",
+            "D": "Its fate is yet to be decided."
+          },
+          "options_cn": {
+            "A": "它的效果值得怀疑。",
+            "B": "它已遭到某位法官的反对。",
+            "C": "它需要更严厉的执行。",
+            "D": "它的命运尚未确定。"
+          },
+          "answer": "D",
+          "explanation": "首段末句 the zone's future looks uncertain at best，即命运尚未确定，D 正确。A 与③句 its success in improving air quality 相悖；B 把主体搞反（法官推翻市府决定、责令恢复罚金，是支持该区）；C 无中生有\"执行不力\"。",
+          "related_sentences": [
+            "2020_text3_s05"
+          ]
+        },
+        {
+          "id": "2020_text3_q2",
+          "number": 32,
+          "qtype": "detail",
+          "stem": "Which is considered a weakness of the city-level measures to tackle dirty air?",
+          "stem_cn": "以下哪项被认为是市级污浊空气治理措施的一个薄弱之处？",
+          "options": {
+            "A": "They are biased against car manufacturers.",
+            "B": "They prove impractical for city councils.",
+            "C": "They are deemed too mild by politicians.",
+            "D": "They put the burden on individual motorists."
+          },
+          "options_cn": {
+            "A": "它们对汽车生产商有失公允。",
+            "B": "对市议会而言，它们不切实际。",
+            "C": "对政治家而言，它们治理力度过轻。",
+            "D": "它们将责任加诸机动车车主个人。"
+          },
+          "answer": "D",
+          "explanation": "第三段①②句：市级措施把清洁空气成本加诸车主个人而非罪魁祸首汽车生产商，D 正确。A 将取舍对象对调（不公允对象是车主而非厂商）；B 把\"可能失败\"曲解为\"不切实际\"；C 把\"引发政治争议、脆弱\"曲解为\"力度过轻\"。",
+          "related_sentences": [
+            "2020_text3_s07",
+            "2020_text3_s08"
+          ]
+        },
+        {
+          "id": "2020_text3_q3",
+          "number": 33,
+          "qtype": "viewpoint",
+          "stem": "The author believes that the extension of London's Ulez will ___.",
+          "stem_cn": "作者认为，扩展伦敦\"超低排放新区（Ulez）\"会___。",
+          "options": {
+            "A": "arouse strong resistance",
+            "B": "ensure Khan's electoral success",
+            "C": "improve the city's traffic",
+            "D": "discourage car manufacturing"
+          },
+          "options_cn": {
+            "A": "招致强烈抵抗",
+            "B": "确保萨迪克·汗选举成功",
+            "C": "改善城市交通",
+            "D": "阻碍汽车生产"
+          },
+          "answer": "A",
+          "explanation": "第三段⑤句：若 2021 年将 Ulez 扩展至南北环路，一定会激起众多受影响车主的强烈反对，A 同义改写 spark intense opposition。B 颠倒因果；C 把\"改善空气质量\"偷换为\"改善交通\"；D 把影响对象\"车主\"偷换为\"汽车生产商\"。",
+          "related_sentences": [
+            "2020_text3_s11"
+          ]
+        },
+        {
+          "id": "2020_text3_q4",
+          "number": 34,
+          "qtype": "viewpoint",
+          "stem": "Who does the author think should have addressed the problem?",
+          "stem_cn": "作者认为本应由谁来解决这个问题？",
+          "options": {
+            "A": "Local residents.",
+            "B": "Mayors.",
+            "C": "Councilors.",
+            "D": "National governments."
+          },
+          "options_cn": {
+            "A": "当地居民。",
+            "B": "市长。",
+            "C": "议员。",
+            "D": "国家政府。"
+          },
+          "answer": "D",
+          "explanation": "第五段②句：市长市议员之所以行动，是因为国家政府未能行动（have failed to do so），可知作者认为本应由国家政府解决，D 正确。A 把\"受益居民\"偷换为\"问题解决者\"；B、C 是当前正在补位的主体，非题干\"本应负责却缺位\"者。",
+          "related_sentences": [
+            "2020_text3_s16",
+            "2020_text3_s17"
+          ]
+        },
+        {
+          "id": "2020_text3_q5",
+          "number": 35,
+          "qtype": "inference",
+          "stem": "It can be learned from the last paragraph that auto companies ___.",
+          "stem_cn": "由末段可知，汽车公司___。",
+          "options": {
+            "A": "will raise low-emission car production",
+            "B": "should be forced to follow regulations",
+            "C": "will upgrade the design of their vehicles",
+            "D": "should be put under public supervision"
+          },
+          "options_cn": {
+            "A": "将增加低排放汽车的产量",
+            "B": "应被强制要求遵守规章制度",
+            "C": "将升级其机动车设计",
+            "D": "应被置于公众监督之下"
+          },
+          "answer": "B",
+          "explanation": "末段首末句借\"缺乏更大规模行动\"\"竭尽一切却唯独没有要求制造商清洁汽车\"两处隐性否定，反向推知应强制汽车公司遵纪守法，B 正确。A、C 只见 require...compliance 却无视 absence，与\"厂商舞弊\"消极现实相悖；D 望文生义 We're doing everything，误推\"公众监督\"。",
+          "related_sentences": [
+            "2020_text3_s18",
+            "2020_text3_s20"
+          ]
+        }
       ]
     },
     {
@@ -114,32 +1503,2038 @@
       "topic": "职场新人 Z 世代：厌恶风险、追求稳定",
       "source": "2020 年考研英语（二）Text 4 · 原文与答案依据真题及解析 PDF",
       "sentences": [
-        { "id": "2020_text4_s01", "para": 1, "en": "Now that members of Generation Z are graduating college this spring - the most commonly-accepted definition says this generation was born after 1995, give or take a year - the attention has been rising steadily in recent weeks.", "cn": "由于一些Z世代成员——对这代人最普遍接受的定义是出生于1995年之后（可有一年出入）——今春即将大学毕业，近几周对他们的关注也在不断增长。", "words": [ { "w": "commonly-accepted", "meaning": "普遍接受的" }, { "w": "give or take", "meaning": "出入至多，相差不到" }, { "w": "rising steadily", "meaning": "稳步上升" } ] },
-        { "id": "2020_text4_s02", "para": 1, "en": "Gen Zs are about to hit the streets looking for work in a labor market that's tighter than it's been in decades.", "cn": "Z世代即将涌入几十年来劳动力最为紧缺的职场，开启求职之旅。", "words": [ { "w": "hit the streets", "meaning": "大量涌入，大量上市" }, { "w": "labor market", "meaning": "劳动力市场" }, { "w": "tighter", "meaning": "adj. 更紧俏的（劳动力供不应求）" } ] },
-        { "id": "2020_text4_s03", "para": 1, "en": "And employers are planning on hiring about 17 percent more new graduates for jobs in the U.S. this year than last, according to a survey conducted by the National Association of Colleges and Employers.", "cn": "一项由美国大学和雇主协会开展的调查显示，在今年的美国，雇主计划比去年多雇佣约17%的应届毕业生。", "words": [ { "w": "hiring", "meaning": "v. 雇佣（hire 的现在分词）" }, { "w": "new graduates", "meaning": "应届毕业生" }, { "w": "according to a survey", "meaning": "根据一项调查" } ] },
-        { "id": "2020_text4_s04", "para": 1, "en": "Everybody wants to know how the people who will soon inhabit those empty office cubicles will differ from those who came before them.", "cn": "每个人都想知道，即将占据办公室空隔间的这些人与他们的前辈相比有何不同。", "words": [ { "w": "inhabit", "meaning": "v. 占据，居住于" }, { "w": "office cubicles", "meaning": "办公室隔间" }, { "w": "differ from", "meaning": "与……不同" } ] },
-        { "id": "2020_text4_s05", "para": 2, "en": "If \"entitled\" is the most common adjective, fairly or not, applied to millennials (those born between 1981 and 1995), the catchwords for Generation Z are practical and cautious.", "cn": "如果“有权享有”是最常用于形容千禧一代（出生于1981至1995年间）的词——无论恰当与否——那么描述Z世代的关键词就是“讲求实际”和“谨慎小心”。", "words": [ { "w": "entitled", "meaning": "adj. 有权享有的" }, { "w": "millennials", "meaning": "n. 千禧一代" }, { "w": "practical and cautious", "meaning": "讲求实际、谨慎小心" } ] },
-        { "id": "2020_text4_s06", "para": 2, "en": "According to the career counselors and experts who study them, Generation Zs are clear-eyed, economic pragmatists.", "cn": "据职业顾问和研究Z世代的专家称，Z世代是头脑清醒的经济实用主义者。", "words": [ { "w": "career counselors", "meaning": "职业顾问" }, { "w": "clear-eyed", "meaning": "adj. 头脑清醒的，有洞察力的" }, { "w": "pragmatists", "meaning": "n. 实用主义者（pragmatist 的复数）" } ] },
-        { "id": "2020_text4_s07", "para": 2, "en": "Despite graduating into the best economy in the past 50 years, Gen Zs know what an economic train wreck looks like.", "cn": "尽管毕业于五十年来最好的经济形势，但Z世代了解经济火车失事的惨状。", "words": [ { "w": "best economy", "meaning": "最好的经济形势" }, { "w": "train wreck", "meaning": "火车失事，惨败" }, { "w": "Despite", "meaning": "prep. 尽管" } ] },
-        { "id": "2020_text4_s08", "para": 2, "en": "They were impressionable kids during the crash of 2008, when many of their parents lost their jobs or their life savings or both.", "cn": "2008年经济崩盘时他们正是敏感的孩子，当时许多父母丢掉了工作或毕生积蓄，甚或二者一并丧失。", "words": [ { "w": "impressionable", "meaning": "adj. 易受影响的（尤指年轻）" }, { "w": "the crash of 2008", "meaning": "2008 年经济崩盘" }, { "w": "life savings", "meaning": "毕生积蓄" } ] },
-        { "id": "2020_text4_s09", "para": 2, "en": "They aren't interested in taking any chances.", "cn": "他们对冒险毫无兴趣。", "words": [ { "w": "taking any chances", "meaning": "冒任何风险" }, { "w": "aren't interested in", "meaning": "对……不感兴趣" } ] },
-        { "id": "2020_text4_s10", "para": 2, "en": "The booming economy seems to have done little to assuage this underlying generational sense of anxious urgency, especially for those who have college debt.", "cn": "蓬勃发展的经济似乎并未减轻这一代人深刻的忧患意识，对于那些背负大学债务的人尤其如此。", "words": [ { "w": "booming economy", "meaning": "蓬勃发展的经济" }, { "w": "assuage", "meaning": "v. 缓和，减轻（不快）" }, { "w": "college debt", "meaning": "大学债务" } ] },
-        { "id": "2020_text4_s11", "para": 2, "en": "College loan balances in the U.S. now stand at a record $1.5 trillion, according to the Federal Reserve.", "cn": "根据美联储的数据，美国大学贷款欠额已达创纪录的1.5万亿美元。", "words": [ { "w": "College loan balances", "meaning": "大学贷款欠额" }, { "w": "record", "meaning": "n. 创纪录的数字" }, { "w": "Federal Reserve", "meaning": "美联储" } ] },
-        { "id": "2020_text4_s12", "para": 3, "en": "One survey from Accenture found that 88 percent of graduating seniors this year chose their major with a job in mind.", "cn": "埃森哲咨询公司一项调查发现，今年毕业的大四学生中，88%在当初选择专业时已有心目中的工作。", "words": [ { "w": "graduating seniors", "meaning": "毕业班学生" }, { "w": "chose their major", "meaning": "选择专业" }, { "w": "with a job in mind", "meaning": "心中有明确的工作目标" } ] },
-        { "id": "2020_text4_s13", "para": 3, "en": "In a 2019 survey of University of Georgia students, meanwhile, the career office found the most desirable trait in a future employer was the ability to offer secure employment (followed by professional development and training, and then inspiring purpose).", "cn": "与此同时，佐治亚大学就业办公室在2019年一项针对该校学生的调查中发现，未来雇主最受欢迎的品质是提供稳定工作的能力（其后分别是职业发展及培训、激励人心的企业宗旨）。", "words": [ { "w": "desirable trait", "meaning": "受欢迎的品质" }, { "w": "secure employment", "meaning": "稳定的工作" }, { "w": "professional development", "meaning": "职业发展" } ] },
-        { "id": "2020_text4_s14", "para": 3, "en": "Job security or stability was the second most important career goal (work-life balance was number one), followed by a sense of being dedicated to a cause or to feel good about serving the greater good.", "cn": "工作保障或稳定是第二重要的职业目标（最重要的是“工作与生活平衡”），随后是事业奉献感或服务于宏大高尚事业的满足感。", "words": [ { "w": "Job security or stability", "meaning": "工作保障或稳定" }, { "w": "work-life balance", "meaning": "工作与生活的平衡" }, { "w": "the greater good", "meaning": "宏大高尚的事业，更大的公共利益" } ] },
-        { "id": "2020_text4_s15", "para": 4, "en": "That's a big change from the previous generation.", "cn": "这和前一代人比起来是一个巨大转变。", "words": [ { "w": "big change", "meaning": "巨大转变" }, { "w": "previous generation", "meaning": "前一代人" } ] },
-        { "id": "2020_text4_s16", "para": 4, "en": "\"Millennials wanted more flexibility in their lives,\" notes Tanya Michelsen, Associate Director of YouthSight, a UK-based brand manager that conducts regular 60-day surveys of British youth, in findings that might just as well apply to American youth.", "cn": "“千禧一代希望生活有更多的灵活性，”YouthSight副总监塔尼娅·米切尔森在可能同样适用于美国青年的调查发现中表示（YouthSight是英国一家品牌管理公司，每60天对英国青年展开定期调查）。", "words": [ { "w": "flexibility", "meaning": "n. 灵活性，弹性" }, { "w": "Associate Director", "meaning": "副总监" }, { "w": "apply to American youth", "meaning": "适用于美国青年" } ] },
-        { "id": "2020_text4_s17", "para": 4, "en": "\"Generation Zs are looking for more certainty and stability, because of the rise of the gig economy.", "cn": "“由于零工经济的崛起，Z世代寻求更多的确定性和稳定性。", "words": [ { "w": "certainty and stability", "meaning": "确定性和稳定性" }, { "w": "gig economy", "meaning": "零工经济" }, { "w": "the rise of", "meaning": "……的崛起" } ] },
-        { "id": "2020_text4_s18", "para": 4, "en": "They have trouble seeing a financial future and they are quite risk averse.\"", "cn": "他们难以看到经济前景，极力规避风险。”", "words": [ { "w": "financial future", "meaning": "经济前景" }, { "w": "risk averse", "meaning": "厌恶风险的，规避风险的" }, { "w": "have trouble", "meaning": "难以，有困难" } ] }
+        {
+          "id": "2020_text4_s01",
+          "para": 1,
+          "en": "Now that members of Generation Z are graduating college this spring - the most commonly-accepted definition says this generation was born after 1995, give or take a year - the attention has been rising steadily in recent weeks.",
+          "cn": "由于一些Z世代成员——对这代人最普遍接受的定义是出生于1995年之后（可有一年出入）——今春即将大学毕业，近几周对他们的关注也在不断增长。",
+          "words": [
+            {
+              "w": "commonly-accepted",
+              "meaning": "普遍接受的"
+            },
+            {
+              "w": "give or take",
+              "meaning": "出入至多，相差不到"
+            },
+            {
+              "w": "rising steadily",
+              "meaning": "稳步上升"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s02",
+          "para": 1,
+          "en": "Gen Zs are about to hit the streets looking for work in a labor market that's tighter than it's been in decades.",
+          "cn": "Z世代即将涌入几十年来劳动力最为紧缺的职场，开启求职之旅。",
+          "words": [
+            {
+              "w": "hit the streets",
+              "meaning": "大量涌入，大量上市"
+            },
+            {
+              "w": "labor market",
+              "meaning": "劳动力市场"
+            },
+            {
+              "w": "tighter",
+              "meaning": "adj. 更紧俏的（劳动力供不应求）"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s03",
+          "para": 1,
+          "en": "And employers are planning on hiring about 17 percent more new graduates for jobs in the U.S. this year than last, according to a survey conducted by the National Association of Colleges and Employers.",
+          "cn": "一项由美国大学和雇主协会开展的调查显示，在今年的美国，雇主计划比去年多雇佣约17%的应届毕业生。",
+          "words": [
+            {
+              "w": "hiring",
+              "meaning": "v. 雇佣（hire 的现在分词）"
+            },
+            {
+              "w": "new graduates",
+              "meaning": "应届毕业生"
+            },
+            {
+              "w": "according to a survey",
+              "meaning": "根据一项调查"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s04",
+          "para": 1,
+          "en": "Everybody wants to know how the people who will soon inhabit those empty office cubicles will differ from those who came before them.",
+          "cn": "每个人都想知道，即将占据办公室空隔间的这些人与他们的前辈相比有何不同。",
+          "words": [
+            {
+              "w": "inhabit",
+              "meaning": "v. 占据，居住于"
+            },
+            {
+              "w": "office cubicles",
+              "meaning": "办公室隔间"
+            },
+            {
+              "w": "differ from",
+              "meaning": "与……不同"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s05",
+          "para": 2,
+          "en": "If \"entitled\" is the most common adjective, fairly or not, applied to millennials (those born between 1981 and 1995), the catchwords for Generation Z are practical and cautious.",
+          "cn": "如果“有权享有”是最常用于形容千禧一代（出生于1981至1995年间）的词——无论恰当与否——那么描述Z世代的关键词就是“讲求实际”和“谨慎小心”。",
+          "words": [
+            {
+              "w": "entitled",
+              "meaning": "adj. 有权享有的"
+            },
+            {
+              "w": "millennials",
+              "meaning": "n. 千禧一代"
+            },
+            {
+              "w": "practical and cautious",
+              "meaning": "讲求实际、谨慎小心"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s06",
+          "para": 2,
+          "en": "According to the career counselors and experts who study them, Generation Zs are clear-eyed, economic pragmatists.",
+          "cn": "据职业顾问和研究Z世代的专家称，Z世代是头脑清醒的经济实用主义者。",
+          "words": [
+            {
+              "w": "career counselors",
+              "meaning": "职业顾问"
+            },
+            {
+              "w": "clear-eyed",
+              "meaning": "adj. 头脑清醒的，有洞察力的"
+            },
+            {
+              "w": "pragmatists",
+              "meaning": "n. 实用主义者（pragmatist 的复数）"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s07",
+          "para": 2,
+          "en": "Despite graduating into the best economy in the past 50 years, Gen Zs know what an economic train wreck looks like.",
+          "cn": "尽管毕业于五十年来最好的经济形势，但Z世代了解经济火车失事的惨状。",
+          "words": [
+            {
+              "w": "best economy",
+              "meaning": "最好的经济形势"
+            },
+            {
+              "w": "train wreck",
+              "meaning": "火车失事，惨败"
+            },
+            {
+              "w": "Despite",
+              "meaning": "prep. 尽管"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s08",
+          "para": 2,
+          "en": "They were impressionable kids during the crash of 2008, when many of their parents lost their jobs or their life savings or both.",
+          "cn": "2008年经济崩盘时他们正是敏感的孩子，当时许多父母丢掉了工作或毕生积蓄，甚或二者一并丧失。",
+          "words": [
+            {
+              "w": "impressionable",
+              "meaning": "adj. 易受影响的（尤指年轻）"
+            },
+            {
+              "w": "the crash of 2008",
+              "meaning": "2008 年经济崩盘"
+            },
+            {
+              "w": "life savings",
+              "meaning": "毕生积蓄"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s09",
+          "para": 2,
+          "en": "They aren't interested in taking any chances.",
+          "cn": "他们对冒险毫无兴趣。",
+          "words": [
+            {
+              "w": "taking any chances",
+              "meaning": "冒任何风险"
+            },
+            {
+              "w": "aren't interested in",
+              "meaning": "对……不感兴趣"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s10",
+          "para": 2,
+          "en": "The booming economy seems to have done little to assuage this underlying generational sense of anxious urgency, especially for those who have college debt.",
+          "cn": "蓬勃发展的经济似乎并未减轻这一代人深刻的忧患意识，对于那些背负大学债务的人尤其如此。",
+          "words": [
+            {
+              "w": "booming economy",
+              "meaning": "蓬勃发展的经济"
+            },
+            {
+              "w": "assuage",
+              "meaning": "v. 缓和，减轻（不快）"
+            },
+            {
+              "w": "college debt",
+              "meaning": "大学债务"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s11",
+          "para": 2,
+          "en": "College loan balances in the U.S. now stand at a record $1.5 trillion, according to the Federal Reserve.",
+          "cn": "根据美联储的数据，美国大学贷款欠额已达创纪录的1.5万亿美元。",
+          "words": [
+            {
+              "w": "College loan balances",
+              "meaning": "大学贷款欠额"
+            },
+            {
+              "w": "record",
+              "meaning": "n. 创纪录的数字"
+            },
+            {
+              "w": "Federal Reserve",
+              "meaning": "美联储"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s12",
+          "para": 3,
+          "en": "One survey from Accenture found that 88 percent of graduating seniors this year chose their major with a job in mind.",
+          "cn": "埃森哲咨询公司一项调查发现，今年毕业的大四学生中，88%在当初选择专业时已有心目中的工作。",
+          "words": [
+            {
+              "w": "graduating seniors",
+              "meaning": "毕业班学生"
+            },
+            {
+              "w": "chose their major",
+              "meaning": "选择专业"
+            },
+            {
+              "w": "with a job in mind",
+              "meaning": "心中有明确的工作目标"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s13",
+          "para": 3,
+          "en": "In a 2019 survey of University of Georgia students, meanwhile, the career office found the most desirable trait in a future employer was the ability to offer secure employment (followed by professional development and training, and then inspiring purpose).",
+          "cn": "与此同时，佐治亚大学就业办公室在2019年一项针对该校学生的调查中发现，未来雇主最受欢迎的品质是提供稳定工作的能力（其后分别是职业发展及培训、激励人心的企业宗旨）。",
+          "words": [
+            {
+              "w": "desirable trait",
+              "meaning": "受欢迎的品质"
+            },
+            {
+              "w": "secure employment",
+              "meaning": "稳定的工作"
+            },
+            {
+              "w": "professional development",
+              "meaning": "职业发展"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s14",
+          "para": 3,
+          "en": "Job security or stability was the second most important career goal (work-life balance was number one), followed by a sense of being dedicated to a cause or to feel good about serving the greater good.",
+          "cn": "工作保障或稳定是第二重要的职业目标（最重要的是“工作与生活平衡”），随后是事业奉献感或服务于宏大高尚事业的满足感。",
+          "words": [
+            {
+              "w": "Job security or stability",
+              "meaning": "工作保障或稳定"
+            },
+            {
+              "w": "work-life balance",
+              "meaning": "工作与生活的平衡"
+            },
+            {
+              "w": "the greater good",
+              "meaning": "宏大高尚的事业，更大的公共利益"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s15",
+          "para": 4,
+          "en": "That's a big change from the previous generation.",
+          "cn": "这和前一代人比起来是一个巨大转变。",
+          "words": [
+            {
+              "w": "big change",
+              "meaning": "巨大转变"
+            },
+            {
+              "w": "previous generation",
+              "meaning": "前一代人"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s16",
+          "para": 4,
+          "en": "\"Millennials wanted more flexibility in their lives,\" notes Tanya Michelsen, Associate Director of YouthSight, a UK-based brand manager that conducts regular 60-day surveys of British youth, in findings that might just as well apply to American youth.",
+          "cn": "“千禧一代希望生活有更多的灵活性，”YouthSight副总监塔尼娅·米切尔森在可能同样适用于美国青年的调查发现中表示（YouthSight是英国一家品牌管理公司，每60天对英国青年展开定期调查）。",
+          "words": [
+            {
+              "w": "flexibility",
+              "meaning": "n. 灵活性，弹性"
+            },
+            {
+              "w": "Associate Director",
+              "meaning": "副总监"
+            },
+            {
+              "w": "apply to American youth",
+              "meaning": "适用于美国青年"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s17",
+          "para": 4,
+          "en": "\"Generation Zs are looking for more certainty and stability, because of the rise of the gig economy.",
+          "cn": "“由于零工经济的崛起，Z世代寻求更多的确定性和稳定性。",
+          "words": [
+            {
+              "w": "certainty and stability",
+              "meaning": "确定性和稳定性"
+            },
+            {
+              "w": "gig economy",
+              "meaning": "零工经济"
+            },
+            {
+              "w": "the rise of",
+              "meaning": "……的崛起"
+            }
+          ]
+        },
+        {
+          "id": "2020_text4_s18",
+          "para": 4,
+          "en": "They have trouble seeing a financial future and they are quite risk averse.\"",
+          "cn": "他们难以看到经济前景，极力规避风险。”",
+          "words": [
+            {
+              "w": "financial future",
+              "meaning": "经济前景"
+            },
+            {
+              "w": "risk averse",
+              "meaning": "厌恶风险的，规避风险的"
+            },
+            {
+              "w": "have trouble",
+              "meaning": "难以，有困难"
+            }
+          ]
+        }
       ],
       "questions": [
-        { "id": "2020_text4_q1", "number": 36, "qtype": "detail", "stem": "Generation Zs graduating college this spring ___.", "stem_cn": "今春毕业的 Z 世代___。", "options": { "A": "are recognized for their abilities", "B": "are optimistic about the labor market", "C": "are in favor of office job offers", "D": "are drawing growing public attention" }, "options_cn": { "A": "能力受到认可", "B": "对劳动力市场感到乐观", "C": "青睐办公室工作的机会", "D": "得到公众越来越多的关注" }, "answer": "D", "explanation": "第一段首句：Z 世代今春毕业，近几周对他们的关注不断增长，D 复现 the attention has been rising steadily。A 由\"多招毕业生\"臆断\"能力受认可\"（实为大环境使然）；B、C 分别把\"劳动力市场紧缺\"\"将占据办公室\"等客观事实歪曲为 Z 世代的主观看法/喜好。", "related_sentences": [ "2020_text4_s01" ] },
-        { "id": "2020_text4_q2", "number": 37, "qtype": "detail", "stem": "Generation Zs are keenly aware ___.", "stem_cn": "Z 世代非常明白___。", "options": { "A": "what their parents expect of them", "B": "how valuable a counselor's advice is", "C": "what a tough economic situation is like", "D": "how they differ from past generations" }, "options_cn": { "A": "父母对他们的期待", "B": "顾问的建议有多宝贵", "C": "严酷的经济形势是什么样子", "D": "他们和前几代人的区别" }, "answer": "C", "explanation": "第二段③④句：Z 世代深知经济崩溃的惨状，2008 年危机时他们尚是敏感的孩子、父母失业失财，故 C（what a tough economic situation is like）正确，同义改写 what an economic train wreck looks like。A 强加\"父母期待\"；B 歪曲\"顾问建议\"；D 把\"与千禧一代不同\"曲解为\"知道自己与前辈的区别\"。", "related_sentences": [ "2020_text4_s07", "2020_text4_s08" ] },
-        { "id": "2020_text4_q3", "number": 38, "qtype": "vocabulary", "stem": "The word \"assuage\" (Line 9, Para. 2) is closest in meaning to ___.", "stem_cn": "assuage 一词（第 2 段第 9 行）的含义最接近___。", "options": { "A": "deepen", "B": "define", "C": "maintain", "D": "relieve" }, "options_cn": { "A": "加深", "B": "定义", "C": "保持", "D": "减轻" }, "answer": "D", "explanation": "所考词在⑥句，主语\"蓬勃经济\"与宾语\"忧患意识\"构成对立，have done little to assuage 应表\"难以缓解、对……无效\"，故 assuage 意为\"减轻\"，D 正确。A 方向相反；B、C 与上下文的对立关系不符。", "related_sentences": [ "2020_text4_s10" ] },
-        { "id": "2020_text4_q4", "number": 39, "qtype": "inference", "stem": "It can be learned from Paragraph 3 that Generation Zs ___.", "stem_cn": "由第 3 段可知，Z 世代___。", "options": { "A": "give top priority to professional training", "B": "have a clear idea about their future jobs", "C": "care little about their job performance", "D": "think it hard to achieve work-life balance" }, "options_cn": { "A": "最优先考虑职业培训", "B": "对自己未来工作有清晰的想法", "C": "对自己的工作表现不以为意", "D": "认为\"工作与生活平衡\"很难实现" }, "answer": "B", "explanation": "第三段①句：88% 的毕业生在选专业时已有心目中的工作，说明 Z 世代对未来工作有清晰想法，B 正确。A 把培训重要性由\"次于工作稳定\"窜改为\"最优先\"；C 过度推断\"不重视工作\"；D 把\"最重视工作生活平衡\"窜改为\"认为其难实现\"。", "related_sentences": [ "2020_text4_s12" ] },
-        { "id": "2020_text4_q5", "number": 40, "qtype": "viewpoint", "stem": "Michelsen thinks that compared with millennials, Generation Zs are ___.", "stem_cn": "米切尔森认为，比起千禧一代，Z 世代___。", "options": { "A": "less realistic", "B": "less adventurous", "C": "more diligent", "D": "more generous" }, "options_cn": { "A": "不那么现实", "B": "不那么爱冒险", "C": "更勤勉", "D": "更慷慨" }, "answer": "B", "explanation": "第四段③④句 Michelsen 指出：Z 世代寻求确定性与稳定性、极力规避风险（risk averse），B（less adventurous）正确。A 与其\"讲求现实\"相悖；C、D 把第三段\"崇高职业目标\"等词曲解为\"勤勉\"\"慷慨\"，且原文未就此比较两代人。", "related_sentences": [ "2020_text4_s17", "2020_text4_s18" ] }
+        {
+          "id": "2020_text4_q1",
+          "number": 36,
+          "qtype": "detail",
+          "stem": "Generation Zs graduating college this spring ___.",
+          "stem_cn": "今春毕业的 Z 世代___。",
+          "options": {
+            "A": "are recognized for their abilities",
+            "B": "are optimistic about the labor market",
+            "C": "are in favor of office job offers",
+            "D": "are drawing growing public attention"
+          },
+          "options_cn": {
+            "A": "能力受到认可",
+            "B": "对劳动力市场感到乐观",
+            "C": "青睐办公室工作的机会",
+            "D": "得到公众越来越多的关注"
+          },
+          "answer": "D",
+          "explanation": "第一段首句：Z 世代今春毕业，近几周对他们的关注不断增长，D 复现 the attention has been rising steadily。A 由\"多招毕业生\"臆断\"能力受认可\"（实为大环境使然）；B、C 分别把\"劳动力市场紧缺\"\"将占据办公室\"等客观事实歪曲为 Z 世代的主观看法/喜好。",
+          "related_sentences": [
+            "2020_text4_s01"
+          ]
+        },
+        {
+          "id": "2020_text4_q2",
+          "number": 37,
+          "qtype": "detail",
+          "stem": "Generation Zs are keenly aware ___.",
+          "stem_cn": "Z 世代非常明白___。",
+          "options": {
+            "A": "what their parents expect of them",
+            "B": "how valuable a counselor's advice is",
+            "C": "what a tough economic situation is like",
+            "D": "how they differ from past generations"
+          },
+          "options_cn": {
+            "A": "父母对他们的期待",
+            "B": "顾问的建议有多宝贵",
+            "C": "严酷的经济形势是什么样子",
+            "D": "他们和前几代人的区别"
+          },
+          "answer": "C",
+          "explanation": "第二段③④句：Z 世代深知经济崩溃的惨状，2008 年危机时他们尚是敏感的孩子、父母失业失财，故 C（what a tough economic situation is like）正确，同义改写 what an economic train wreck looks like。A 强加\"父母期待\"；B 歪曲\"顾问建议\"；D 把\"与千禧一代不同\"曲解为\"知道自己与前辈的区别\"。",
+          "related_sentences": [
+            "2020_text4_s07",
+            "2020_text4_s08"
+          ]
+        },
+        {
+          "id": "2020_text4_q3",
+          "number": 38,
+          "qtype": "vocabulary",
+          "stem": "The word \"assuage\" (Line 9, Para. 2) is closest in meaning to ___.",
+          "stem_cn": "assuage 一词（第 2 段第 9 行）的含义最接近___。",
+          "options": {
+            "A": "deepen",
+            "B": "define",
+            "C": "maintain",
+            "D": "relieve"
+          },
+          "options_cn": {
+            "A": "加深",
+            "B": "定义",
+            "C": "保持",
+            "D": "减轻"
+          },
+          "answer": "D",
+          "explanation": "所考词在⑥句，主语\"蓬勃经济\"与宾语\"忧患意识\"构成对立，have done little to assuage 应表\"难以缓解、对……无效\"，故 assuage 意为\"减轻\"，D 正确。A 方向相反；B、C 与上下文的对立关系不符。",
+          "related_sentences": [
+            "2020_text4_s10"
+          ]
+        },
+        {
+          "id": "2020_text4_q4",
+          "number": 39,
+          "qtype": "inference",
+          "stem": "It can be learned from Paragraph 3 that Generation Zs ___.",
+          "stem_cn": "由第 3 段可知，Z 世代___。",
+          "options": {
+            "A": "give top priority to professional training",
+            "B": "have a clear idea about their future jobs",
+            "C": "care little about their job performance",
+            "D": "think it hard to achieve work-life balance"
+          },
+          "options_cn": {
+            "A": "最优先考虑职业培训",
+            "B": "对自己未来工作有清晰的想法",
+            "C": "对自己的工作表现不以为意",
+            "D": "认为\"工作与生活平衡\"很难实现"
+          },
+          "answer": "B",
+          "explanation": "第三段①句：88% 的毕业生在选专业时已有心目中的工作，说明 Z 世代对未来工作有清晰想法，B 正确。A 把培训重要性由\"次于工作稳定\"窜改为\"最优先\"；C 过度推断\"不重视工作\"；D 把\"最重视工作生活平衡\"窜改为\"认为其难实现\"。",
+          "related_sentences": [
+            "2020_text4_s12"
+          ]
+        },
+        {
+          "id": "2020_text4_q5",
+          "number": 40,
+          "qtype": "viewpoint",
+          "stem": "Michelsen thinks that compared with millennials, Generation Zs are ___.",
+          "stem_cn": "米切尔森认为，比起千禧一代，Z 世代___。",
+          "options": {
+            "A": "less realistic",
+            "B": "less adventurous",
+            "C": "more diligent",
+            "D": "more generous"
+          },
+          "options_cn": {
+            "A": "不那么现实",
+            "B": "不那么爱冒险",
+            "C": "更勤勉",
+            "D": "更慷慨"
+          },
+          "answer": "B",
+          "explanation": "第四段③④句 Michelsen 指出：Z 世代寻求确定性与稳定性、极力规避风险（risk averse），B（less adventurous）正确。A 与其\"讲求现实\"相悖；C、D 把第三段\"崇高职业目标\"等词曲解为\"勤勉\"\"慷慨\"，且原文未就此比较两代人。",
+          "related_sentences": [
+            "2020_text4_s17",
+            "2020_text4_s18"
+          ]
+        }
       ]
+    },
+    {
+      "id": "2020_newtype",
+      "type": "newtype",
+      "title": "Five Ways to Win Over Everyone in the Office",
+      "topic": "新题型（小标题对应）：为文中各段落选出最合适的小标题，提供五种赢得所有同事好感的方法。",
+      "source": "Section II Part B",
+      "pool": {
+        "A": "Give compliments, just not too many",
+        "B": "Put on a good face, always",
+        "C": "Tailor your interactions",
+        "D": "Spend time with everyone",
+        "E": "Reveal, don't hide, information",
+        "F": "Slow down and listen",
+        "G": "Put yourselves in others' shoes"
+      },
+      "pool_cn": {
+        "A": "给予他人赞美，但莫过多",
+        "B": "保持面色友善，随时如此",
+        "C": "调整你的互动方式",
+        "D": "花时间与所有人相处",
+        "E": "透露信息，不要隐瞒",
+        "F": "慢下来倾听",
+        "G": "站在他人角度看问题"
+      },
+      "sentences": [
+        {
+          "id": "2020_newtype_s01",
+          "para": 1,
+          "en": "Is it possible to like everyone in your office?",
+          "cn": "你可能喜欢办公室的所有同事吗？",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s02",
+          "para": 1,
+          "en": "Think about how tough it is to get together 15 people, much less 50, who all get along perfectly.",
+          "cn": "想想集齐十五个彼此融洽相处的人有多难，更别说五十个。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s03",
+          "para": 1,
+          "en": "But unlike in friendships, you need coworkers.",
+          "cn": "可不像交朋友，工作需要同事。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s04",
+          "para": 1,
+          "en": "You work with them every day, and you depend on them just as they depend on you.",
+          "cn": "你每天和他们一起工作，你依赖他们，正如他们也依赖你。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s05",
+          "para": 1,
+          "en": "Here are some ways that you can get the office on your side.",
+          "cn": "以下这些方法能让你赢得整个办公室的好感。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s06",
+          "para": 2,
+          "en": "If you have a bone to pick with someone in your workplace, you may try to stay tight-lipped around them.",
+          "cn": "假如你对某位同事心存不满，你可能会尽量在其左右保持缄口不言。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s07",
+          "para": 2,
+          "en": "But you won't be helping either one of you.",
+          "cn": "但这样对双方都没好处。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s08",
+          "para": 2,
+          "en": "A Harvard Business School study found that observers consistently rated those who were frank about themselves more highly, while those who hid lost trustworthiness.",
+          "cn": "哈佛商学院的一项研究发现，观察者总是会对坦承自我的人评价更高，而隐瞒的人则会失去信任。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s09",
+          "para": 2,
+          "en": "The lesson is not that you should make your reasons known, but that, when given the option to offer up details about yourself or painstakingly hide them, you should just be honest.",
+          "cn": "其中道理并不是说你应该将生活袒露无遗，而是面对“坦承个人细节”还是“费力隐瞒”的选择之时，你应该做的恰恰是诚实。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s10",
+          "para": 3,
+          "en": "Just as important as being honest about yourself is being receptive to others.",
+          "cn": "和“坦承自己”同样重要的是“倾听他人”。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s11",
+          "para": 3,
+          "en": "We often feel the need to tell others how we feel, whether it's a concern about a project, a stray thought, or a compliment.",
+          "cn": "我们常会觉得有必要把自己的感觉——无论是对某个项目的担忧，是一闪而过的想法，还是一种赞美之情——告诉他人。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s12",
+          "para": 3,
+          "en": "Those are all valid, but you need to take time to hear out your coworkers, too.",
+          "cn": "这些都非常重要，但你也需要花时间来好好听取同事的想法。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s13",
+          "para": 3,
+          "en": "In fact, rushing to get your own ideas out there can cause colleagues to feel you don't value their opinions.",
+          "cn": "确切而言，急于一股脑说出自己的观点会让同事觉得你不够重视他们的意见。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s14",
+          "para": 3,
+          "en": "Do your best to really engage in an honest back-and-forth conversation, rather than prioritizing your own thoughts.",
+          "cn": "尽你所能进行一次真正的、你来我往的对话，而不是把自己的想法放在第一位。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s15",
+          "para": 4,
+          "en": "It's common to have a “cubicle mate” or special confidant in a work setting.",
+          "cn": "工作中，我们常会有一位“办公室邻居”或特别的知己。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s16",
+          "para": 4,
+          "en": "But in addition to those trusted coworkers, you should expand your horizons and all the other people around you.",
+          "cn": "但除了那些信赖的同事，你还应拓宽范围，去了解周围每一个人。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s17",
+          "para": 4,
+          "en": "Use your lunch and coffee breaks to meet up with colleagues you don't always see.",
+          "cn": "利用午餐或咖啡时间来结识那些不常碰面的同事吧。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s18",
+          "para": 4,
+          "en": "Find out about their lives and interests beyond the job.",
+          "cn": "了解他们工作以外的生活和兴趣。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s19",
+          "para": 4,
+          "en": "This will help to grow your personal network, in addition to being a nice break in the work day.",
+          "cn": "它有助你拓展内部人脉，同时也是工作日中很好的短暂休息。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s20",
+          "para": 5,
+          "en": "Positive feedback is important for anyone to hear.",
+          "cn": "听到积极反馈对任何人都很重要。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s21",
+          "para": 5,
+          "en": "And you don't have to be someone's boss to tell them they did exceptional work on a particular task.",
+          "cn": "你不必是某人的老板，才能告诉他某件工作完成得特别出色。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s22",
+          "para": 5,
+          "en": "This will help engender good will in others.",
+          "cn": "这将有助于引发他人的善意。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s23",
+          "para": 5,
+          "en": "But don't overdo it or be fake about it.",
+          "cn": "但不要做得过头，也不要虚情假意地夸赞。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s24",
+          "para": 5,
+          "en": "One study found people responded best to things that shifted from negative to positive, perhaps because it suggested they had won someone over.",
+          "cn": "一项研究发现，人们最喜欢那些起初为负面、而后转为正面的评价，因为让他们赢得认可。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s25",
+          "para": 6,
+          "en": "This may be trickier to achieve, but it can go a long way positively.",
+          "cn": "这或许更难做到，但收效很大。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s26",
+          "para": 6,
+          "en": "Remember in dealing with any coworker what they appreciate from an interaction.",
+          "cn": "与任何同事打交道时，都要记住他们所欣赏的交流方式。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s27",
+          "para": 6,
+          "en": "Some people like small talk in a meeting before important matters, and others like to be just direct.",
+          "cn": "有些人喜欢会面时先闲聊，再谈重要的事，有些人则喜欢单刀直入。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s28",
+          "para": 6,
+          "en": "Jokes that work on one person won't necessarily land with another.",
+          "cn": "对一个有效的笑话，对另一个人不一定管用。",
+          "words": []
+        },
+        {
+          "id": "2020_newtype_s29",
+          "para": 6,
+          "en": "So, adapt your style to the type of person you're dealing with.",
+          "cn": "所以，要根据你所面对的对象来调整自己的交流风格。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2020_newtype_q41",
+          "number": 41,
+          "qtype": "小标题",
+          "stem": "第 41 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "E",
+          "explanation": "第二段先指出真诚（坦诚自我）能赢得信任、隐瞒会失去信任，继而建议有关于自己的信息时选择坦然相告。故本段主旨为“透露信息，不要隐瞒”，选[E]Reveal, don't hide, information，段中frank、offer up details about yourself、be honest对应Reveal...information。",
+          "related_sentences": [
+            "2020_newtype_s01",
+            "2020_newtype_s02",
+            "2020_newtype_s03",
+            "2020_newtype_s04",
+            "2020_newtype_s05",
+            "2020_newtype_s06",
+            "2020_newtype_s07",
+            "2020_newtype_s08",
+            "2020_newtype_s09",
+            "2020_newtype_s10",
+            "2020_newtype_s11",
+            "2020_newtype_s12",
+            "2020_newtype_s13",
+            "2020_newtype_s14",
+            "2020_newtype_s15",
+            "2020_newtype_s16",
+            "2020_newtype_s17",
+            "2020_newtype_s18",
+            "2020_newtype_s19",
+            "2020_newtype_s20",
+            "2020_newtype_s21",
+            "2020_newtype_s22",
+            "2020_newtype_s23",
+            "2020_newtype_s24",
+            "2020_newtype_s25",
+            "2020_newtype_s26",
+            "2020_newtype_s27",
+            "2020_newtype_s28",
+            "2020_newtype_s29"
+          ]
+        },
+        {
+          "id": "2020_newtype_q42",
+          "number": 42,
+          "qtype": "小标题",
+          "stem": "第 42 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "F",
+          "explanation": "第三段指出除坦诚自我外，也要倾听他人，并强调“急于记录自己的想法”反而会让同事以为你不重视他们的意见。故为本段小标题为“慢下来倾听”，即[F]Slow down and listen，段中hear out your coworkers、take time对应listen与slow down。",
+          "related_sentences": [
+            "2020_newtype_s01",
+            "2020_newtype_s02",
+            "2020_newtype_s03",
+            "2020_newtype_s04",
+            "2020_newtype_s05",
+            "2020_newtype_s06",
+            "2020_newtype_s07",
+            "2020_newtype_s08",
+            "2020_newtype_s09",
+            "2020_newtype_s10",
+            "2020_newtype_s11",
+            "2020_newtype_s12",
+            "2020_newtype_s13",
+            "2020_newtype_s14",
+            "2020_newtype_s15",
+            "2020_newtype_s16",
+            "2020_newtype_s17",
+            "2020_newtype_s18",
+            "2020_newtype_s19",
+            "2020_newtype_s20",
+            "2020_newtype_s21",
+            "2020_newtype_s22",
+            "2020_newtype_s23",
+            "2020_newtype_s24",
+            "2020_newtype_s25",
+            "2020_newtype_s26",
+            "2020_newtype_s27",
+            "2020_newtype_s28",
+            "2020_newtype_s29"
+          ]
+        },
+        {
+          "id": "2020_newtype_q43",
+          "number": 43,
+          "qtype": "小标题",
+          "stem": "第 43 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "D",
+          "explanation": "第四段建议不只与一两位好朋友亲近，而应拓展范围、结识周围所有人，利用午休时间结识。答案D项“花时间与所有人相处”，与段中“find out about all the people around you”“Spend time with meeting time”“meet up with”对应。",
+          "related_sentences": [
+            "2020_newtype_s01",
+            "2020_newtype_s02",
+            "2020_newtype_s03",
+            "2020_newtype_s04",
+            "2020_newtype_s05",
+            "2020_newtype_s06",
+            "2020_newtype_s07",
+            "2020_newtype_s08",
+            "2020_newtype_s09",
+            "2020_newtype_s10",
+            "2020_newtype_s11",
+            "2020_newtype_s12",
+            "2020_newtype_s13",
+            "2020_newtype_s14",
+            "2020_newtype_s15",
+            "2020_newtype_s16",
+            "2020_newtype_s17",
+            "2020_newtype_s18",
+            "2020_newtype_s19",
+            "2020_newtype_s20",
+            "2020_newtype_s21",
+            "2020_newtype_s22",
+            "2020_newtype_s23",
+            "2020_newtype_s24",
+            "2020_newtype_s25",
+            "2020_newtype_s26",
+            "2020_newtype_s27",
+            "2020_newtype_s28",
+            "2020_newtype_s29"
+          ]
+        },
+        {
+          "id": "2020_newtype_q44",
+          "number": 44,
+          "qtype": "小标题",
+          "stem": "第 44 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "A",
+          "explanation": "第五段鼓励给予积极反馈、赞美他人，同时提醒赞美要恰当、别过头。故小标题[ A]“Give compliments, just not too much”符合主旨，段中positive feedback与compliments对应，don't overdo it与just not too much对应。",
+          "related_sentences": [
+            "2020_newtype_s01",
+            "2020_newtype_s02",
+            "2020_newtype_s03",
+            "2020_newtype_s04",
+            "2020_newtype_s05",
+            "2020_newtype_s06",
+            "2020_newtype_s07",
+            "2020_newtype_s08",
+            "2020_newtype_s09",
+            "2020_newtype_s10",
+            "2020_newtype_s11",
+            "2020_newtype_s12",
+            "2020_newtype_s13",
+            "2020_newtype_s14",
+            "2020_newtype_s15",
+            "2020_newtype_s16",
+            "2020_newtype_s17",
+            "2020_newtype_s18",
+            "2020_newtype_s19",
+            "2020_newtype_s20",
+            "2020_newtype_s21",
+            "2020_newtype_s22",
+            "2020_newtype_s23",
+            "2020_newtype_s24",
+            "2020_newtype_s25",
+            "2020_newtype_s26",
+            "2020_newtype_s27",
+            "2020_newtype_s28",
+            "2020_newtype_s29"
+          ]
+        },
+        {
+          "id": "2020_newtype_q45",
+          "number": 45,
+          "qtype": "小标题",
+          "stem": "第 45 题：选出最适合该段的小标题",
+          "stem_cn": "",
+          "options": {},
+          "options_cn": {},
+          "answer": "C",
+          "explanation": "第六段建议读者“记住同事喜欢的互动方式”并“根据自己的对象的类型调整自己的交流风格”。答案为[C]Tailor your interactions（调整你的互动方式），段中“what they appreciate from an interaction、adapt your style”与tailor your interactions对应。",
+          "related_sentences": [
+            "2020_newtype_s01",
+            "2020_newtype_s02",
+            "2020_newtype_s03",
+            "2020_newtype_s04",
+            "2020_newtype_s05",
+            "2020_newtype_s06",
+            "2020_newtype_s07",
+            "2020_newtype_s08",
+            "2020_newtype_s09",
+            "2020_newtype_s10",
+            "2020_newtype_s11",
+            "2020_newtype_s12",
+            "2020_newtype_s13",
+            "2020_newtype_s14",
+            "2020_newtype_s15",
+            "2020_newtype_s16",
+            "2020_newtype_s17",
+            "2020_newtype_s18",
+            "2020_newtype_s19",
+            "2020_newtype_s20",
+            "2020_newtype_s21",
+            "2020_newtype_s22",
+            "2020_newtype_s23",
+            "2020_newtype_s24",
+            "2020_newtype_s25",
+            "2020_newtype_s26",
+            "2020_newtype_s27",
+            "2020_newtype_s28",
+            "2020_newtype_s29"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2020_cloze",
+      "type": "cloze",
+      "title": "Being a Patient Parent Isn't Easy",
+      "topic": "完形填空：做有耐心的父母——探讨界定“好父母”之难，阐述耐心育儿的重要性及父母保持情绪控制的方法。",
+      "source": "Section I Use of English",
+      "sentences": [
+        {
+          "id": "2020_cloze_s01",
+          "para": 1,
+          "en": "Being a good parent is what every parent would like to be.",
+          "cn": "做个好父母是每一位父母都想要的。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s02",
+          "para": 1,
+          "en": "But defining what it means to be a good parent is undoubtedly very [1], particularly since children respond differently to the same style of parenting.",
+          "cn": "但界定“做好父母”的内涵其实很难，尤其是因为孩子们对于相同育儿方式的反应是不同的。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s03",
+          "para": 1,
+          "en": "A calm, rule-following child might respond better to a different sort of parenting than, [2], a younger one.",
+          "cn": "例如，一个不闹腾、守规矩的孩子对某种不同的育儿方式的反应可能会好过其弟弟妹妹。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s04",
+          "para": 2,
+          "en": "[3], there's another sort of parent that's easier to [4]: a patient parent.",
+          "cn": "幸好，还有一种容易描述些的父母：耐心的父母。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s05",
+          "para": 2,
+          "en": "Children of every age benefit from patient parenting.",
+          "cn": "每个年龄段的孩子都能从有耐心的育儿中受益。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s06",
+          "para": 2,
+          "en": "Still, [5] every parent would like to be patient, this is no easy [6].",
+          "cn": "虽然每个父母都想有耐心，但这才是一项困难的任务。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s07",
+          "para": 2,
+          "en": "Sometimes, parents get exhausted and are unable to maintain a [7] style with their kids.",
+          "cn": "有时父母会感到筋疲力尽，也就无法保持一种宽容的方式来对待孩子。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s08",
+          "para": 2,
+          "en": "I understand this.",
+          "cn": "这一点我理解。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s09",
+          "para": 3,
+          "en": "You're only human, and sometimes your kids can [8] you just a little too far.",
+          "cn": "你只是凡人，可有时你的孩子们可能会把你逼得有些过头。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s10",
+          "para": 3,
+          "en": "And then the [9] happens: you lose your patience and either scream at your kids or say something that was too [10] and does nobody any good.",
+          "cn": "然后不可避免的事就发生了：你会失去耐心，要么朝孩子们吼叫，要么说一些过于严厉、对谁都没有好处的话。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s11",
+          "para": 3,
+          "en": "You wish that you could [11] the clock and start over.",
+          "cn": "你希望可以让时光倒转、从头再来。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s12",
+          "para": 4,
+          "en": "[12], even though it's common, it's vital to keep in mind that in a single moment of fatigue, you can say something to your child that you may [13] for a long time.",
+          "cn": "然而，尽管这种情况很常见，但很有必要牢记：在感到疲惫的那一瞬间，你可能会对孩子说出一些让自己后悔良久的话。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s13",
+          "para": 4,
+          "en": "This may not only do damage to your relationship with your child but also [14] your child's self-esteem.",
+          "cn": "这不仅会损害你与孩子的关系，还会影响孩子的自尊心。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s14",
+          "para": 5,
+          "en": "If you consistently lose your [15] with your kids, then you are modeling a lack of emotional control for your kids.",
+          "cn": "如果你总是对孩子失去冷静，那么你就在为孩子树立一个缺乏情绪控制力的范例。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s15",
+          "para": 5,
+          "en": "We are all becoming increasingly aware of the [16] of modeling patience for the younger generation.",
+          "cn": "我们都越来越明白为年轻一代树立耐心典范的重要性。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s16",
+          "para": 5,
+          "en": "This is a skill that will help them all throughout life.",
+          "cn": "这是一项可以让他们受益终身的技能。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s17",
+          "para": 5,
+          "en": "In fact, the ability to maintain emotional control when [17] by stress is one of the most significant of all life's skills.",
+          "cn": "事实上，面对压力时能够保持情绪控制是最重要的生活技能。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s18",
+          "para": 6,
+          "en": "Certainly, it's [18] to maintain patience at all times with your kids.",
+          "cn": "当然，始终对孩子保持耐心是困难的。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s19",
+          "para": 6,
+          "en": "A more practical goal is to try to be as calm as you can when faced with [19] situations involving your children.",
+          "cn": "一个更可行的目标是在面临那些涉及到孩子的难熬情形时，尽可能地去保持冷静。",
+          "words": []
+        },
+        {
+          "id": "2020_cloze_s20",
+          "para": 6,
+          "en": "I can promise you this: as a result of working toward this goal, you and your children will benefit and [20] from stressful moments feeling better physically and emotionally.",
+          "cn": "我可以向你保证：朝着这个目标努力，你和你的孩子都将从倍感压力的时刻中获益并摆脱困境，获得更好的身心状态。",
+          "words": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "2020_cloze_q01",
+          "number": 1,
+          "qtype": "完形",
+          "stem": "第 1 空：选择最合适的词填入空白 [1]",
+          "stem_cn": "",
+          "options": {
+            "A": "tedious",
+            "B": "pleasant",
+            "C": "instructive",
+            "D": "tricky"
+          },
+          "options_cn": {
+            "A": "单调乏味的；冗长的；啰嗦的",
+            "B": "令人愉悦的；可喜的；友好的",
+            "C": "富有教益的；增长知识的",
+            "D": "困难的，难对付的；狡猾的"
+          },
+          "answer": "D",
+          "explanation": "上下文语义+形容词辨析。②句中路标词But提示两句间存在转折逻辑“（当好父母的）理想固然好，但现实存在障碍”，结合②句主句主语defining what it means to...（阐明“做好父母”的内涵）以及原因状语从句particularly since...（对同一种育儿方式，不同孩子的反应不同，意即育儿方式难有好坏之分）可知，“现实障碍”指的是“很难界定什么样的父母才是好父母，因此没有明确的效仿标准”，[D]tricky意为difficult to do or deal with“难办、棘手的”，符合文意。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q02",
+          "number": 2,
+          "qtype": "完形",
+          "stem": "第 2 空：选择最合适的词填入空白 [2]",
+          "stem_cn": "",
+          "options": {
+            "A": "in addition",
+            "B": "for example",
+            "C": "at once",
+            "D": "by accident"
+          },
+          "options_cn": {
+            "A": "此外，另外",
+            "B": "例如",
+            "C": "立刻，马上；同时",
+            "D": "偶然地，意外地"
+          },
+          "answer": "B",
+          "explanation": "句间语义逻辑+副词短语辨析。空格词在句中作插入语，可先看句子主干信息A calm, rule-following child...better...than...a younger one，可知该句是针对上句宽泛结论children respond differently...（不同孩子对同种育儿方式反应不同）给出的具体实例——年龄、性格不同，则反应不同（更大些、不闹、听话的孩子适应力更强），故空格词应表“举例说明”，[B]正确。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q03",
+          "number": 3,
+          "qtype": "完形",
+          "stem": "第 3 空：选择最合适的词填入空白 [3]",
+          "stem_cn": "",
+          "options": {
+            "A": "Fortunately",
+            "B": "Occasionally",
+            "C": "Accordingly",
+            "D": "Eventually"
+          },
+          "options_cn": {
+            "A": "幸运地，幸而，所幸",
+            "B": "偶然地；偶尔；有时候",
+            "C": "因此；相应地",
+            "D": "最后；终于"
+          },
+          "answer": "A",
+          "explanation": "上下文语义逻辑。上段提到“‘定义做好父母’很难（也即：人们即使想做好父母，也可能无所适从）”，本段①②句指出“还有一种容易……的父母：耐心的父母。所有年龄段的孩子都能从有耐心的养育方式受益”。很明显，本段退而求其次，向人们介绍一种确定性的好父母特质“耐心”。[A]Fortunately既体现tricky与easier间的对比逻辑，又契合论述的情感色彩：虽难界定，但幸好还有某种标准可依。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q04",
+          "number": 4,
+          "qtype": "完形",
+          "stem": "第 4 空：选择最合适的词填入空白 [4]",
+          "stem_cn": "",
+          "options": {
+            "A": "amuse",
+            "B": "assist",
+            "C": "describe",
+            "D": "train"
+          },
+          "options_cn": {
+            "A": "逗乐；提供消遣",
+            "B": "帮助，协助",
+            "C": "描述；形容",
+            "D": "训练，培训"
+          },
+          "answer": "C",
+          "explanation": "上下文语义。结合上题，本句与上段②句形成转折对比（defining...good parent...tricky与another sort of parent...easier to...），引出一种无争议的好父母特质（也即较容易定性的一种好父母），故空格词应与首段defining语义相近，[C]describe意为to say what sb/sth is like，符合文意。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q05",
+          "number": 5,
+          "qtype": "完形",
+          "stem": "第 5 空：选择最合适的词填入空白 [5]",
+          "stem_cn": "",
+          "options": {
+            "A": "while",
+            "B": "because",
+            "C": "unless",
+            "D": "once"
+          },
+          "options_cn": {
+            "A": "尽管；当……时",
+            "B": "因为",
+            "C": "除非，如果不",
+            "D": "一旦；曾经"
+          },
+          "answer": "A",
+          "explanation": "句内语义逻辑。空格词体现主句与从句间逻辑。Still位于句首提示转折，表明本句与上文传递的积极情感方向相反，可能引出该方法的局限性或实现的障碍。主句this is no easy...（this指to be patient）大意应为“耐心并不容易做到”，与从句“所有父母都想成为有耐心的父母”之间为转折关系，故[A]while符合文意。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q06",
+          "number": 6,
+          "qtype": "完形",
+          "stem": "第 6 空：选择最合适的词填入空白 [6]",
+          "stem_cn": "",
+          "options": {
+            "A": "answer",
+            "B": "task",
+            "C": "choice",
+            "D": "access"
+          },
+          "options_cn": {
+            "A": "答案，解决办法；回答",
+            "B": "任务；工作",
+            "C": "选择；被选中的东西",
+            "D": "通路；（使用或见到的）机会，权利"
+          },
+          "answer": "B",
+          "explanation": "句内语义+名词辨析。结合文意，this is no easy...大意为“耐心不易达成”，而空格词为表语，应与主语this（代指to be patient，表示“目标”）属于同类且互相呼应。[B]task尤指艰巨或令人厌烦的任务，与“目标”相吻合，同时符合上下文文意：变得耐心并非易事。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q07",
+          "number": 7,
+          "qtype": "完形",
+          "stem": "第 7 空：选择最合适的词填入空白 [7]",
+          "stem_cn": "",
+          "options": {
+            "A": "tolerant",
+            "B": "formal",
+            "C": "rigid",
+            "D": "critical"
+          },
+          "options_cn": {
+            "A": "容忍的，宽容的",
+            "B": "正式的；正规的，庄重的",
+            "C": "僵死的，过于严格的；刻板的",
+            "D": "批评的；有判断力的；关键的"
+          },
+          "answer": "A",
+          "explanation": "句内语义逻辑+形容词辨析。maintain a __ style框定了父母在疲惫而沮丧时无法做到的事情，而选项中属正面、与“耐心”相关的只有[A]tolerant。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q08",
+          "number": 8,
+          "qtype": "完形",
+          "stem": "第 8 空：选择最合适的词填入空白 [8]",
+          "stem_cn": "",
+          "options": {
+            "A": "move",
+            "B": "drag",
+            "C": "push",
+            "D": "send"
+          },
+          "options_cn": {
+            "A": "移动；改变；感动",
+            "B": "拉，拽；硬拉，强迫",
+            "C": "迫使；推动",
+            "D": "使（向某方向）移动；使作出（某反应）"
+          },
+          "answer": "C",
+          "explanation": "句内语义+固定搭配。空格句与前面半句“你只不过是个凡人”相呼应，意在解释“父母为何难以做到耐心”，故文意应为“孩子让父母不得已失去耐心”。push有“迫使、促使”之意，push too far为固定搭配，意为“逼人太甚、把某人逼得发脾气”，故[C]正确。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q09",
+          "number": 9,
+          "qtype": "完形",
+          "stem": "第 9 空：选择最合适的词填入空白 [9]",
+          "stem_cn": "",
+          "options": {
+            "A": "mysterious",
+            "B": "illogical",
+            "C": "suspicious",
+            "D": "inevitable"
+          },
+          "options_cn": {
+            "A": "神秘的，难以理解的",
+            "B": "不合逻辑的，没有道理的",
+            "C": "可疑的；怀疑的",
+            "D": "不可避免的"
+          },
+          "answer": "D",
+          "explanation": "上下文语义+形容词用法。“the + 形容词”表示“……的事情”，冒号提示它是随后“父母失去耐心的具体表现”的概括性评价，而上句“你只是凡人，孩子有时会逼得人发脾气”传达出：这些耐性差的表现是人在情急下的正常反应，在所难免，情有可原。故[D]inevitable符合文意。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q10",
+          "number": 10,
+          "qtype": "完形",
+          "stem": "第 10 空：选择最合适的词填入空白 [10]",
+          "stem_cn": "",
+          "options": {
+            "A": "boring",
+            "B": "naive",
+            "C": "harsh",
+            "D": "vague"
+          },
+          "options_cn": {
+            "A": "无聊的，令人厌倦的",
+            "B": "幼稚的；天真的",
+            "C": "严厉的；残酷的；艰苦的",
+            "D": "含糊的；粗略的"
+          },
+          "answer": "C",
+          "explanation": "句内语义+形容词辨析。句中either...or...与and分别呈现两组并列信息：scream at your kids与say something that...均为失去耐心后的表现，内容应相近；too___与does nobody any good并列修饰something（父母失去耐心后的言辞），应同为消极色彩。空格词应同时体现“朝孩子大喊、对谁都没有好处”之意，即“向孩子说狠话”，[C]harsh用于说明行为、言语“严酷无情”，符合文意。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q11",
+          "number": 11,
+          "qtype": "完形",
+          "stem": "第 11 空：选择最合适的词填入空白 [11]",
+          "stem_cn": "",
+          "options": {
+            "A": "turn back",
+            "B": "take apart",
+            "C": "set aside",
+            "D": "cover up"
+          },
+          "options_cn": {
+            "A": "往回走；阻挡；翻回到",
+            "B": "拆开；剖析；粗暴对待",
+            "C": "留出；驳回；不顾",
+            "D": "掩盖，盖住"
+          },
+          "answer": "A",
+          "explanation": "上下文语义+固定搭配。句中空格内容应与start（重新再来）语义同向，表示“回到过去、重新再来”。turn back the clock为固定搭配，表“使时光倒流”，故[A]正确。结合文意，父母希望可以让时光倒流、从头再来。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q12",
+          "number": 12,
+          "qtype": "完形",
+          "stem": "第 12 空：选择最合适的词填入空白 [12]",
+          "stem_cn": "",
+          "options": {
+            "A": "Overall",
+            "B": "Instead",
+            "C": "However",
+            "D": "Otherwise"
+          },
+          "options_cn": {
+            "A": "总的来说",
+            "B": "相反",
+            "C": "然而；可是",
+            "D": "否则；另外"
+          },
+          "answer": "C",
+          "explanation": "上下文语义+副词辨析。空格句先让步承认（even though）这种情境“很常见”，随后转折引出建议“父母应记住……”，下句阐述发怒行为的严重后果。可知本段主旨为“父母向孩子发怒可能带来伤害”，段首逻辑词应在上下段之间起转折过渡作用，传达“这一行为虽常见，但仍需警醒其危害”之意，故[C]正确。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q13",
+          "number": 13,
+          "qtype": "完形",
+          "stem": "第 13 空：选择最合适的词填入空白 [13]",
+          "stem_cn": "",
+          "options": {
+            "A": "like",
+            "B": "miss",
+            "C": "believe",
+            "D": "regret"
+          },
+          "options_cn": {
+            "A": "喜欢；愿意",
+            "B": "错过；想念",
+            "C": "相信；认为",
+            "D": "后悔；遗憾"
+          },
+          "answer": "D",
+          "explanation": "上下文语义。空格所在句具体阐述作者建议：父母应记住，在疲惫的瞬间你会对孩子说出一些可能会让你后悔良久的话。结合前文“父母筋疲力尽、情绪失控，说出过于严厉、对谁都不利的话，故希望时光倒流”可知，空格应表达“说出让自己后悔许久的话”之意，[D]regret符合文意。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q14",
+          "number": 14,
+          "qtype": "完形",
+          "stem": "第 14 空：选择最合适的词填入空白 [14]",
+          "stem_cn": "",
+          "options": {
+            "A": "raise",
+            "B": "affect",
+            "C": "justify",
+            "D": "reflect"
+          },
+          "options_cn": {
+            "A": "提高；筹集；养育",
+            "B": "影响；困扰；感染；感动",
+            "C": "证明……是正当的；替……辩护",
+            "D": "反映；反射；表达；反省"
+          },
+          "answer": "B",
+          "explanation": "句内语义。空格所在句以not only...but also结构呈现语义递进，affect child's self-esteem（影响孩子的自尊）应与“damage...your child”同样体现父母发怒行为的危害，故文意应为“伤害/打击孩子自尊心”。[B]affect表“影响”时多指负面影调侃，故正确。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q15",
+          "number": 15,
+          "qtype": "完形",
+          "stem": "第 15 空：选择最合适的词填入空白 [15]",
+          "stem_cn": "",
+          "options": {
+            "A": "time",
+            "B": "bond",
+            "C": "cool",
+            "D": "temper"
+          },
+          "options_cn": {
+            "A": "时间；时代；次数",
+            "B": "（情感）纽带；结合；约定；债券",
+            "C": "冷静，镇定；凉爽",
+            "D": "性情；脾气"
+          },
+          "answer": "C",
+          "explanation": "上下文语义+固定搭配。该句以if引导条件句，空格应指“对（孩子）失去冷静”，且“总是失去冷静”是对孩子“modeling a lack of emotional control”的结果。选项中与“情绪控制”相关的是[C]cool，lose your cool为固定搭配，意为（激动起来）失态、火冒三丈。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q16",
+          "number": 16,
+          "qtype": "完形",
+          "stem": "第 16 空：选择最合适的词填入空白 [16]",
+          "stem_cn": "",
+          "options": {
+            "A": "nature",
+            "B": "secret",
+            "C": "importance",
+            "D": "context"
+          },
+          "options_cn": {
+            "A": "本性；性质；自然种类",
+            "B": "秘密，机密；秘诀",
+            "C": "价值；重要；傲慢",
+            "D": "环境；上下文；来龙去脉"
+          },
+          "answer": "C",
+          "explanation": "上下文语义逻辑。空格句指出我们都愈发认识到为年轻一代树立耐心典范的重要性，并结合前文“父母失去冷静会给孩子树立缺乏情绪控制的范例”、后文“这是一项能让孩子受益终身的技能”可知，本段逻辑指向“情绪控制能力对孩子的培训、重要性”，故[C]importance正确。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q17",
+          "number": 17,
+          "qtype": "完形",
+          "stem": "第 17 空：选择最合适的词填入空白 [17]",
+          "stem_cn": "",
+          "options": {
+            "A": "cheated",
+            "B": "defeated",
+            "C": "confused",
+            "D": "confronted"
+          },
+          "options_cn": {
+            "A": "欺骗；骗取",
+            "B": "击败；挫败",
+            "C": "使混乱；使困惑",
+            "D": "面对；遭遇"
+          },
+          "answer": "D",
+          "explanation": "上下文语义。前文反复交代父母发怒，原因是“压力、疲劳”，空格后为stress（压力），说明空格句所述“在被压力围绕着时控制情绪的能力”能解决前文“父母在疲惫时易向孩子发怒”的问题，故空格应表“面对/遭遇”之意。be confronted by/for sth指面对（有威胁或难处理的事物），故选[D]。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q18",
+          "number": 18,
+          "qtype": "完形",
+          "stem": "第 18 空：选择最合适的词填入空白 [18]",
+          "stem_cn": "",
+          "options": {
+            "A": "terrible",
+            "B": "hard",
+            "C": "strange",
+            "D": "wrong"
+          },
+          "options_cn": {
+            "A": "可怕的；糟糕的；令人讨厌的",
+            "B": "困难的；努力的；硬的；严厉的",
+            "C": "奇怪的；陌生的；外行的",
+            "D": "错误的；失常的；不适当的；不道德的"
+          },
+          "answer": "B",
+          "explanation": "上下文语义。空格句指出“当然，始终对孩子保持耐心是____。”下句指出“一个更可行的做法是……”。可见空格句承上“保持耐心的重要性”退而承认保持耐心困难，并引出更实际可行的做法，故选B项hard，与第三、四段“成为耐心的父母并不容易”相符。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q19",
+          "number": 19,
+          "qtype": "完形",
+          "stem": "第 19 空：选择最合适的词填入空白 [19]",
+          "stem_cn": "",
+          "options": {
+            "A": "trying",
+            "B": "changing",
+            "C": "exciting",
+            "D": "surprising"
+          },
+          "options_cn": {
+            "A": "令人厌烦的；难对付的",
+            "B": "变化的，发展的",
+            "C": "令人兴奋的；使人激动的",
+            "D": "令人惊讶的；意外的"
+          },
+          "answer": "A",
+          "explanation": "上下文语义+熟词僻义。空格句说明更现实可行的目标是，父母在面临涉及孩子的____情况下时尽可能保持冷静。结合前文“成为耐心的父母并不容易，父母时常被孩子逼得失去耐心”可知，此处during...谓“令父母疲劳费神的、难对付的情况”。[A]trying用于说明“惹人烦、难对付”，故正确。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        },
+        {
+          "id": "2020_cloze_q20",
+          "number": 20,
+          "qtype": "完形",
+          "stem": "第 20 空：选择最合适的词填入空白 [20]",
+          "stem_cn": "",
+          "options": {
+            "A": "hide",
+            "B": "emerge",
+            "C": "withdraw",
+            "D": "escape"
+          },
+          "options_cn": {
+            "A": "隐藏；隐瞒；掩饰",
+            "B": "浮现；摆脱；暴露",
+            "C": "撤退；收回；撤消",
+            "D": "逃避，避开，避免；漏出"
+          },
+          "answer": "B",
+          "explanation": "上下文语义+动词辨析。空格句说明达成目标（a more practical goal）的结果；父母和孩子都将从紧张的时刻中获益并____，身心都更好。由and及上下文可知，emerge from stressful moments意为（从困境或苦难中）摆脱出来，与“获益”一样体现积极结果，故[B]emerge正确。",
+          "related_sentences": [
+            "2020_cloze_s01",
+            "2020_cloze_s02",
+            "2020_cloze_s03",
+            "2020_cloze_s04",
+            "2020_cloze_s05",
+            "2020_cloze_s06",
+            "2020_cloze_s07",
+            "2020_cloze_s08",
+            "2020_cloze_s09",
+            "2020_cloze_s10",
+            "2020_cloze_s11",
+            "2020_cloze_s12",
+            "2020_cloze_s13",
+            "2020_cloze_s14",
+            "2020_cloze_s15",
+            "2020_cloze_s16",
+            "2020_cloze_s17",
+            "2020_cloze_s18",
+            "2020_cloze_s19",
+            "2020_cloze_s20"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2020_translation",
+      "type": "translation",
+      "title": "The Benefits of Failure",
+      "topic": "翻译：失败之于失败者的助益——我们如何看待失败完全取决于自己，失败能让我们成长、认清自我。",
+      "source": "Section III Translation",
+      "ref_cn": "人的一生几乎不可能不经受某些失败。但是，失败的奇妙之处在于，它完全取决于我们如何看待它。我们可以把失败看作“世界末日”。我们也可以将它视为绝佳的学习经历，它常常就是如此。每一次失败时，我们都可以从中寻找应该吸取的教训。这些教训很重要：它们使我们重生，也使我们避免重复犯下同样的错误。只有任由失败阻挡我们，我们才会被它阻挡。失败还能教给我们一些有关我们自己的事情，没有失败，这些事情我们永远不会了解，而失败则让这一切成为可能。我们都可以从中学习如何看待自己的成长，我们自己又将如何面对失败。",
+      "sentences": [
+        {
+          "id": "2020_translation_s01",
+          "para": 1,
+          "en": "It's almost impossible to go through life without experiencing some kind of failure.",
+          "cn": "人的一生几乎不可能不经受某种失败。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s02",
+          "para": 1,
+          "en": "But, the wonderful thing about failure is that it's entirely up to us to decide how to look at it.",
+          "cn": "但是，失败的奇妙之处在于，它完全取决于我们如何看待它。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s03",
+          "para": 2,
+          "en": "We can choose to see failure as “the end of the world.\"",
+          "cn": "我们可以把失败看作“世界末日”。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s04",
+          "para": 2,
+          "en": "Or, we can look at failure as the incredible learning experience that it often is.",
+          "cn": "我们也可以将它视为极好的学习经历，它常常就是如此。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s05",
+          "para": 2,
+          "en": "Every time we fail at something, we can choose to look for the lesson we're meant to learn.",
+          "cn": "我们每次失败时，都可以选择去寻求自己本应吸取的教训。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s06",
+          "para": 2,
+          "en": "These lessons are very important; they're how we grow, and how we keep from making that same mistake again.",
+          "cn": "这些教训非常重要；它们让我们成长，也让我们避免再犯同样的错误。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s07",
+          "para": 2,
+          "en": "Failures stop us only if we let them.",
+          "cn": "只有任由失败阻止我们，我们才会被它阻止。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s08",
+          "para": 3,
+          "en": "Failure can also teach us things about ourselves that we would have never learned otherwise.",
+          "cn": "失败还能教给我们一些有关我们自己的事情，否则，没有失败，这些事情我们永远不会了解。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s09",
+          "para": 3,
+          "en": "For instance, failure can help you discover how strong a person you are.",
+          "cn": "比如，失败可以帮你发现自己有多么坚强。",
+          "words": []
+        },
+        {
+          "id": "2020_translation_s10",
+          "para": 3,
+          "en": "Failing at something can help you discover your truest friends, or help you find unexpected motivation to succeed.",
+          "cn": "失败可以帮你发现最真诚的朋友，或者帮你找到意想不到的成功动力。",
+          "words": []
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "2020_writinga",
+      "type": "writing_a",
+      "title": "Part A 应用文：向留学生介绍古迹并给出旅行建议",
+      "topic": "小作文：假设你正在为一群国际学生安排一次历史古迹之旅，写一封电子邮件介绍该古迹并给出一些旅行建议。",
+      "source": "Section IV Writing Part A",
+      "sample_en": "Dear Friends,\n\nI'm so delighted that you trust me to arrange your trip. I'm writing to inform you of the historical attraction to visit—the Terracotta Army, one of the greatest archaeological discoveries of all time—and share some travel tips.\n\nLocated to the east of downtown Xi'an, the Terracotta Army is a massive collection of life-size clay warriors and horses buried in the tomb of China's First Emperor. It offers a fascinating glimpse into the country's glorious past. To get a better view of these breathtaking sculptures, you may consider avoiding public holidays in China or setting out early if you have to visit the museum on those days. In addition, it's also advisable to rent a multilingual audio guide at the ticket office, which will certainly make your trip informative.\n\nHope this trip suits your taste and that you all enjoy it.\n\nYours sincerely,\nLi Ming",
+      "sample_cn": "亲爱的朋友们：\n很高兴你们信任我来安排旅行。我写信是想告诉你们将要参观的历史名胜——有史以来最伟大的考古发现之一，兵马俑——并分享一些旅行建议。\n兵马俑位于西安市区的东部，是中国首位皇帝陵墓中埋葬的一大批真人大小的陶制兵马。它使人们得以心醉神迷地领略中国的辉煌历史。想要获得更好的视角来欣赏这些令人叹为观止的雕像，你们可以考虑避开中国的公共假日，或者如果迫不得已要在公共假日去参观兵马俑博物馆，可以考虑提早出发。此外，最好在售票处租一个多语言的语音向导，这无疑会使你们在旅行中增长见闻。\n希望这次旅行符合你们的喜好，祝大家旅途愉快。\n\n诚挚的，\n李明",
+      "questions": []
+    },
+    {
+      "id": "2020_writingb",
+      "type": "writing_b",
+      "title": "Part B 大作文：某高校学生手机阅读目的调查",
+      "topic": "大作文：根据饼状图写一篇约150词的短文，解读某高校学生手机阅读目的并发表评论。",
+      "source": "Section IV Writing Part B",
+      "chart_img": "img/2020_writingb_chart.png",
+      "sample_en": "The pie chart above shows the purposes of mobile reading among students at a certain university. As is clearly shown, the vast majority of students read on their phones in order to gain knowledge, accounting for 59.5 percent. That is followed by killing time (21.3%) and obtaining information (17.0%). Only 2.2 percent read for other purposes.\n\nA few factors contribute to this trend. To begin with, as a nation with a booming digital economy, knowledge is increasingly available through mobile reading, which serves as a fast and convenient tool. Moreover, the awareness of self-improvement has spread widely among university students who wish to stay competitive in the job market. Therefore, students regard mobile reading as an efficient means to keep themselves informed and knowledgeable.\n\nIn conclusion, mobile reading has become an inseparable part of young people's life, and it is advisable for students to choose quality content and manage their screen time wisely.",
+      "sample_cn": "上面的饼状图展示了某高校学生的手机阅读目的。数据清晰显示，绝大多数学生利用手机阅读以获取知识，占比为59.5%。其后依次是消遣时间（21.4%）和获取信息（17.2%），仅有2.2%的人出于其他目的阅读。\n\n促成这一趋势的因素有几个。首先，在数字经济日益繁荣的国家里，知识在我们生活中日益重要，移动阅读因此成为最快捷便捷的学习方式。其次，自我提升的意识已经普及到大学生中，他们希望在竞争中保持优势。因此他们借助智能手机阅读来提升自己。\n\n总之，手机阅读已成为年轻人生活中不可或缺的一部分。建议同学们合理选择内容并合理安排屏幕使用时间。",
+      "questions": []
     }
   ]
 }

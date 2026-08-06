@@ -28,7 +28,7 @@ def split_paras(text):
 
 # ---------- 完形填空 ----------
 # 20 题标准答案（考研英语二 2014 Section I Use of English）
-CLOZE_ANSWERS = list('BADDAABCBDACBDCDACDB')
+CLOZE_ANSWERS = list('BACADACCDBABCDBDADCB')
 
 # 20 题选项（真题文本顺序）：每行 'n. [X]word'
 CLOZE_RAW = """1. denied, concluded, doubted, ensured
@@ -182,7 +182,7 @@ NEWTYPE_POOL_CN = {
 }
 # 匹配答案：41-45
 NEWTYPE_ANSWERS = {
-    41: 'D', 42: 'E', 43: 'G', 44: 'C', 45: 'F',
+    41: 'D', 42: 'E', 43: 'G', 44: 'C', 45: 'A',
 }
 NEWTYPE_STEMS = {
     41: 'Stone Circle', 42: 'Olaf Street Study', 43: 'Across the Park',
@@ -261,12 +261,6 @@ WRITING_A = {
     'title': 'Part A 应用文：介绍自己',
     'topic': '小作文：给未来室友写信，介绍生活习惯并征求建议。',
     'source': 'Section IV Writing Part A',
-    'directions': """Suppose you are going to study abroad and share an apartment with John, a local student. Write him an email to
-1) tell him about your living habits, and
-2) ask for advice about living there.
-You should write about 100 words on the ANSWER SHEET.
-Do not use your own name. Use "Li Ming" instead.
-Do not write your address. (10 points)""",
     'sample_en': """Dear John,
 I am glad that it is you who will be my roommate during my overseas study and cannot wait to meet you. Before my moving in, I think it is necessary to arrive at a basic understanding about each other's living habits.
 As a typical Chinese, I observe traditional living rules, sleeping and getting up early, having gorgeous breakfast, good lunch and humble supper and keeping room tidy and clean. In addition, I prefer cooking Chinese dishes at home and hope to get your tolerance for occasional spicy smell during dish preparation. There must also be some special living rules to be respected in your country. Can you explain them to me in advance? Hope to get your early reply.
@@ -284,11 +278,7 @@ WRITING_B = {
     'title': 'Part B 大作文：城市与乡村人口的变化',
     'topic': '大作文：根据图表写一篇约150词的短文，解读数据并发表评论。',
     'source': 'Section IV Writing Part B',
-    'directions': """Write an essay based on the following chart. In your writing, you should
-1) interpret the chart, and
-2) give your comments.
-You should write about 150 words on the ANSWER SHEET. (15 points)
-[柱状图：1990/2000/2010 年城镇人口与乡村人口变化]""",
+    'chart_img': 'img/2014_writingb_chart.png',
     'sample_en': """From 1990 to 2010 while moderate increase occurred in total population in China, population distribution experienced a dramatic shift. Urban population increased considerably from 300 million to 670 million; contrastingly rural population declined from 820 million to 680 million.
 The population gap narrowed largely because of the joint effects of urbanization and unequal economic opportunities. The 20 years' urban sprawl caused millions of peasants to be passively transformed into city residents. Meanwhile, many more peasants initiatively chose to leave their hometown. In the 20 years, while urban living standards were largely improved, few economic opportunities fell on rural areas, making most peasants remain at the poverty line. Poverty prompted the call for change and healthy young peasants were driven to flock to cities to make a better living.
 The increase in urban population is a sure indication of economic achievement. However, we should not ignore the inability of many urban newcomers to integrate into cities due to lack of education and civilized habits. They wandered around in the cities as urban paupers, isolated from cities' prosperity and convenience. In this sense, we cannot be superficially satisfied with the optimistic figure, but should endeavor to foster integration of newcomers.""",

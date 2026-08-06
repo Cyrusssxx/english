@@ -65,7 +65,7 @@ def check_article(year, art):
             if not art.get('ref_cn'):
                 err(f'{prefix} 翻译缺参考译文 ref_cn')
         if art.get('type') in ('writing_a', 'writing_b'):
-            for field in ('directions', 'sample_en', 'sample_cn'):
+            for field in ('sample_en', 'sample_cn'):
                 if not art.get(field):
                     err(f'{prefix} 作文缺字段 {field}')
         return {
