@@ -3295,6 +3295,11 @@
             "给人印象深刻的"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "接受邀请信。1）写信人身份：\"你\"，即大学生；2）写作对象：威廉姆斯教授；3）写作话题：关于中国文化的讲座；4）写信类型：书信；5）交际目的：回应邀请。归纳要点：1）格式：书信（接受邀请信）；2）语域：给教授的信件属于公务信函，应使用正式语体；3）内容要点：①接受邀请；②介绍讲座要点。",
+        "framework": "第一段：说明写信目的，接受邀请；第二段：介绍讲座要点；第三段：表达期待。篇章衔接：引言部分（2句）①句表示已收到邀请；②句表示接受邀请。主体部分（5句）①句明确讲座主题；②至⑤句介绍讲座的内容要点。结尾部分（2句）①句表达感谢；②句表达对见面的期待。",
+        "template": "本模板由【优秀范文】提炼、改编而来，适用于接受讲座邀请等的回信。\nI have received your letter inviting me to 具体邀请内容. Thank you for your invitation. I am pleased to accept it.\nMy presentation would be focused on 讲座主题. The key points of my presentation would be as follows. To begin with, 要点一. Then, I will focus on 要点二. Furthermore, 要点三.\nThank you once again for your kind invitation. I am looking forward to meeting you soon."
       }
     },
     {
@@ -3421,6 +3426,11 @@
             "使用"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表反映2013年至2015年博物馆数量与参观人数的变化情况：横坐标划定时间范围2013年至2015年，纵坐标显示博物馆和参观人数的数量变化。两条折线显示从2013年到2015年，博物馆参观人数和博物馆数量均连续攀升，其中参观人数保持稳定增长，而博物馆增速有所放缓。两折线的攀升趋势反映我国文化事业繁荣发展的景象：参观人数增长显示人民文化需求旺盛；而博物馆增速先快后慢则表明潜在挑战——若参观人数持续增加，未来博物馆可能供不应求。考生可根据图表阐发对变化的看法，或分析变化原因。",
+        "framework": "第一段：描述图表变化趋势；第二段：分析现象原因；第三段：揭示现象带来的挑战，提出应对建议。篇章衔接：第一段（2句）①句说明图片总体趋势；②句具体描绘两条折线变化情况。第二段（4句）①句过渡，开启下文原因分析；②句说明博物馆增加原因：国家支持文化发展；③④句说明参观人数持续增加的原因，其中③句以短句指出经济发展促进文化繁荣，④句具体分析该因素如何作用。第三段（4句）①句过渡，肯定现象积极意义后转而指出潜在矛盾：增长亦会带来挑战；②③句针对挑战提出建议：利用数字技术提高博物馆利用率、创造全新观展体验；④句总结收篇，提出期待。",
+        "template": "该思路适用于对正向变化趋势进行评价和分析，如\"发达国家手机订阅量发展\"、\"在线教育增长\"等。\nThe above chart illustrates that 描述图表变化.\nFrom my perspective, the above phenomenon will inevitably benefit both individuals and our society in the following aspects. To begin with, through 方式, people are entrusted with an opportunity to improve their 能力, thus living a more fulfilling life wherever they are. In addition, from a long-term vision, the change which is closely related to/caused by 原因, constitutes the engine of development, which indicates a promising future for 对象.\nHowever, while maintaining the development of 对象, we should also realize the risk of 风险, thus making joint efforts to 建议. Only by 总结性建议, can we yield a fruitful result of 成果.\n模板注释：第二段着眼变化带来的机遇，从\"个人\"与\"社会\"两个方面进行分析；第三段指出须规避风险，并给出具体建议。"
       }
     }
   ]

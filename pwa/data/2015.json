@@ -3453,6 +3453,11 @@
             "相关经验"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "写告示为高中生夏令营招募志愿者。指令解读：Write a notice——规定写一个告示；call for volunteers——透露告示的目的是招募志愿者；briefly introduce the camp activities——规定写作内容：要介绍夏令营的活动；host a summer camp for high school students——提供内容线索：夏令营是针对高中生的。要点归纳：1）应用文类型为告示，告示格式要正确和完整；2）告示需要号召读者成为志愿者，所写内容需有吸引力；3）告示内容应包括介绍适合高中生参与的夏令营活动，吸引读者为这个夏令营提供志愿者服务。关键词：organize 组织，cooperation ability 合作能力，practical skills 实践技能。",
+        "framework": "招募启事用来招募人员。首段指出招募对象以及招募方的介绍。第二段指出对招募对象的要求以及联系方式。",
+        "template": "该思路适用于招募职员或者志愿者之类的服务者。We are looking for ____ for ____. ____ is organized to facilitate ____ and more importantly ____ through activities including but not limited to ____. ____ are required to help ____ and cope with daily affairs during ____. Ideal candidates should be ____. Having relevant experience is preferred. Anyone interested please contact us by ____ or reach us at 12345678."
       }
     },
     {
@@ -3652,6 +3657,11 @@
             "出于其他目的"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表作文，主题为某市居民春节假期花销比例。图表标题说明其表示某市居民春节期间的开支情况，主要分为四项：聚会吃饭20%（聚会支出占春节开支的五分之一）、交通20%（交通路费占五分之一）、新年礼物40%（互相送礼的花费占了绝大部分，将近一半）、其他20%。现象解读：春节开支的主要方向有三个——聚会、交通和送礼，其他开支总共只有20%；绝大部分开支与人情交往相关，符合春节传统节日的性质。聚会和送礼都是人情往来的开支，交通费除可能的旅游开支外，更多是归家团圆的花费。关键词：chart 图表，have a dinner 聚餐，traveling 交通，New Year's gift 新年礼物；spring festival 春节，spending 花费、开支，interpersonal communication 人际交往。",
+        "framework": "图表描绘中国某城市居民春节期间的开支比例，分为四项，其中三项有名目，剩下一个标记为其他；主要信息是前三个，描写时应着重介绍。第一段：首句指出图表的性质；第二句描写三个主要数据；第三句对数据进行汇总。第二段：第一句承接上文指出三种花销的目的；第二句顺势指出该目的背后蕴藏的文化和传统；第三句指出开支背后的意义。第三段：第一句转折指出开支不能走向极端；第二、三句指出开支走向极端的情形；第四句指出走向极端的影响；第五至七句使用因果分析指出应该采取的态度和行为。",
+        "template": "该思路适用于分析人们的开支情况，论述开支的意义以及过度开支的后果。The chart reflects ____ spending types and their respective proportions. ____ money is mainly used for ____ purposes（用同位语解释说明purposes）: ____. They account for ____% of total spending. Most spending is used to ____. This finding is not strange, since ____. ____ is beneficial and necessary for a person's fulfillment and investing on ____ is sweet and happy. However, we should not go to extremes. In China, there are many people ____. They use handsome money to blindly pursue ____. Such intention causes huge waste of money and imposes heavy economic burden on people involved. The ____ gotten by squandering money is transient and can only be a topic for gossip soon forgotten by others. Therefore, we should think rationally before opening our purses. We should remember it is ____ that is the main concern."
       }
     }
   ]

@@ -3206,6 +3206,11 @@
             "长期不懈的努力"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "给朋友Jack写回复信，感谢祝贺并就翻译学习提出建议。指令解读：write a reply——应用文形式为回复函；your friend, Jack, wrote an email to congratulate you and ask for advice on translation——点明来函的是一位朋友，他对自己表示祝贺并寻求建议；thank him——规定回复函内容要对朋友的祝贺表示感谢；give your advice——要为朋友提供学习翻译的建议。要点归纳：1）题目要求写一封回复函，回复函的格式要完整；2）来函的是一位朋友，回信时的语气应热情、乐于分享；3）回函内容涵盖两点：表达对朋友祝贺的感谢、为朋友提供翻译学习的建议并以提建议为主体，可根据自身体悟提出两至三条建议，比如博览群书、多接触外国文化、重在坚持等，并表示期待切磋、期待回信。关键词：gratitude 谢意，share with 和……分享，suggestion 建议。",
+        "framework": "建议信的交际目的是让收信人采纳自己的观点建议。范文首段表达感谢，简述事由；第二段随即根据自身体悟提出\"广泛阅读\"、\"持之以恒\"等建议，具有合理性和说服性；第三段重申目的，并表示期待。",
+        "template": "该思路适用于撰写回复别人、给予别人建议的信件，如：建议如何提高英语口语水平。Dear ____, I am very glad to hear that you want to seek some suggestions about（说明提出建议相关事宜）in order to（说明对方诉求）. From my point of view,（提出建议一）. Also, to you, I highly recommend that（提出建议二）. On the one hand,（具体展开建议）. On the other hand, ____. Besides, it is unnecessary for you to（补充说明反向不必要举措）. Consequently, I believe that（进而提出建议三）. I hope that my opinions are of help to you, and please feel free to contact me for further discussions. Yours sincerely, Li Ming"
       }
     },
     {
@@ -3373,6 +3378,11 @@
             "沟通交际能力不足"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表作文，主题为某高校学生旅游目的调查。图表下方写着\"某高校学生旅游目的调查\"，说明针对对象为高校学生、调查内容为学生们旅游的目的；图表中各块分别代表\"欣赏风景\"\"缓解压力\"\"广交朋友\"\"培养独立能力\"，其中以\"欣赏风景\"和\"缓解压力\"所占比重最大（分别37%、33%）。现象解读：多数学生出行是为了欣赏风景、缓解压力，广交朋友、培养独立能力也占一定比重，高校学生出行目的不一而足；学生时代出行主要是为了探索美景、舒缓压力。考生可依自身体验对两点主要目的进行分析阐释，说明其体现的心理诉求及背后原因，也可对所占比重较小的两点进行简要分析，还可对大学生对旅游的认识进行评价。关键词：pie chart 饼状图，appreciate 欣赏，relieve pressure 减压，cultivate/foster independence 培养独立能力；see the world 见世面、见多识广，antidote to pressure 抗压良方，benefit 使人受益。",
+        "framework": "饼状图通过数字及图形分布体现了大学生旅游的主要心理诉求，以\"欣赏风景\"和\"缓解压力\"最为突出。范文对这两点进行了阐释，并对大学生当下对旅游的认识进行了点评。第一段描述饼状图：首句概括饼状图统计对象——大学生旅游目的；第二、三句具体说明大学生旅游的多种目的。第二段对\"欣赏美景\"和\"缓解压力\"两大目的进行分析说明：首句照应首段，重述饼状图中体现的两大心理诉求；第二句和第三、四句分别对两点进行剖析，说明诉求背后的原因。第三段对大学生旅游诉求进行点评：首句seek fun and enjoyment对应两大主要原因\"看风景、放松\"，attach deeper meaning to travelling引出旅行更深层次的意义；第二、三句说明大学生应当拓宽眼界、丰富自己，把广交好友、增长见闻、发现自我、实现人格独立等亦放在重要位置。",
+        "template": "当图表体现某现象并要求对其解读和评论时，可以参照该思路，如：解读手机使用功能图表。This pie chart, simple yet illuminating, illustrates（概括图表描绘的内容）. As is reflected by the chart,（具体说明图表数据体现的情况）. The survey reveals that（概括说明图表数据体现的情况、突出重点）. On the one hand,（对重点一进行阐释）. On the other hand,（对重点二进行阐释）. In my opinion, though it's natural... they should（对图表情况予以评论）.（对评论引出部分予以详细阐述、完善论证）."
       }
     }
   ]

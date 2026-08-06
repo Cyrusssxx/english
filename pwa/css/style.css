@@ -477,6 +477,16 @@ html.dark .nav-timer-btn {
     border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
 }
 
+.writing-analysis {
+    margin-top: 18px;
+}
+
+.writing-analysis > .rs-label {
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
 .writing-reserve {
     margin-top: 18px;
 }
@@ -552,6 +562,11 @@ html.dark .nav-timer-btn {
 .reserve-text {
     line-height: 1.8;
     white-space: pre-line;
+}
+
+.reserve-template {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.95em;
 }
 
 .reserve-material {

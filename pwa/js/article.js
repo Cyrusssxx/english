@@ -40,6 +40,22 @@ function toggleReserve(btn) {
 }
 
 /** 渲染作文储备板块（亮点词汇/必备表达/话题词汇等） */
+function analysisHtml(r) {
+    if (!r) return '';
+    let html = '<div class="writing-analysis"><div class="rs-label">官方解析 · 审题与模板</div>';
+    if (r.prompt) {
+        html += reserveSec('解读要点', `<div class="reserve-text">${esc(r.prompt)}</div>`);
+    }
+    if (r.framework) {
+        html += reserveSec('思路框架', `<div class="reserve-text">${esc(r.framework)}</div>`);
+    }
+    if (r.template) {
+        html += reserveSec('应用模板', `<div class="reserve-text reserve-template">${esc(r.template)}</div>`);
+    }
+    html += '</div>';
+    return html;
+}
+
 function reserveHtml(r) {
     if (!r || !Object.keys(r).length) return '';
     let html = '<div class="writing-reserve"><div class="rs-label">词汇储备</div>';
@@ -207,6 +223,7 @@ function renderArticle() {
                 <div class="writing-sample-en">${esc(article.sample_en || '')}</div>
                 <div class="writing-sample-cn" hidden>${esc(article.sample_cn || '')}</div>
             </div>
+            ${analysisHtml(article.writing_analysis)}
             ${reserveHtml(article.reserve)}`;
         return;
     }

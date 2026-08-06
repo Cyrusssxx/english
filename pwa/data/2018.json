@@ -3392,6 +3392,11 @@
             "出席"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "道歉信。1）写信人身份：\"你\"，即大学生；2）写作对象：史密斯教授；3）写作话题：因不能如约拜访而致歉；4）写作类型：书信；5）交际目的：致歉并做出弥补（提议下次会面）。归纳要点：1）格式：书信（道歉信）；2）语域：收信人身份为教授，用语应尊敬、礼貌；\"私人拜访\"并非公务，文字不必过于拘谨；3）内容要点：①致歉并解释原因；②约定下次会面。",
+        "framework": "第一段：说明写信的目的，表示歉意；第二段：解释原因，并询问下次见面时间；第三段：感谢谅解并期待回复。篇章衔接：引言部分（2句）①句说明道歉事由，并简要说明原因；②句表示歉意。主体部分（3句）①句让步表达对原本约定的期待；②句转而说明不能前往的原因；③句进行弥补：约定下次会面时间。结尾部分（2句）①句感谢谅解；②句表达对回复的期待。",
+        "template": "本模板由【优秀范文】提炼而来，适用于道歉信。\nI am writing to apologize for 道歉事由, since 简述原因. I am terribly sorry for any inconvenience this causes you and any changes that it necessitates in your current plans.\nI have been looking forward to seeing you since we made the appointment. Unexpectedly, I 说明不能前往的原因. If it is possible, I would like to reschedule our appointment at a time that is convenient for you.\nThank you for understanding in this matter. Looking forward to your reply."
       }
     },
     {
@@ -3478,6 +3483,11 @@
             "杂志"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表下方标题为\"2017年某市消费者选择餐厅时的关注因素\"。食客对不同因素的关注度从高到低排列为\"特色＞服务＞环境＞价格＞其他\"，各因素所占比例分别为：特色36.30%、服务26.80%、环境23.80%、价格8.40%、其他4.70%；其中特色、服务以及环境总占比高达80%以上，远超价格因素占比。经济飞速发展的当下，一方面消费者经历了从\"价格敏感型\"向\"价值敏感型\"的过渡，更加注重高品质的享受；另一方面餐饮行业整体发展势头良好，竞争愈发激烈，为消费者提供了更多选择的空间，而\"特色\"作为核心竞争力之一，自然成为占比最重的考虑因素。",
+        "framework": "第一段：描述图表；第二段：明确图表反映的现象，分析原因；第三段：提出建议。篇章衔接：第一段（4句）描述图表，①句概述图表内容，②③④句由大到小展示图表数据，以...account for the largest...、Next come...、much higher than...、Other factors...衔接。第二段（3句）分析现象成因，①句概述原因，②③句分别从消费者的角度和餐厅经营者的角度分析原因，以For one thing...For another...衔接。第三段（1句）提出建议，预估市场需求，对餐饮行业提出建议。",
+        "template": "该思路适用于关于\"选择/关注因素/原因等\"的占比分析，如：高校学生创业的原因调查、人们选择定居城市的考虑因素等。\nFrom the information given in the pie chart, we can see the survey on 图表主题. Those 对象1 account for 数据1, the biggest among all of the factors, while 对象2 makes up only 数据2.\nMultiple factors underlie the phenomenon reflected in the chart. The most important factor to be considered is the fact that 原因1, which has a significant effect on 对象. In the second place, 原因2.\nIn view of the discussion above, it is no surprise to see such phenomenon in the current context of 背景. And there is reason to believe that this trend will continue in the years to come.\n模板注释：第二段分析现象背后的两方面原因；第三段发表对于图中现象/趋势的总体看法，并对未来情形作出判断。"
       }
     }
   ]

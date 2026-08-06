@@ -2837,6 +2837,11 @@
             "与……联系"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "投诉信。1）应用文类型为书信（电子邮件），格式需完整；2）收信人为客服部门工作人员，虽然信件目的是投诉，但仍要表现出对其工作的尊重、语气不能太生硬；3）内容应包括：简要回顾购买过程、详细说明电子词典的质量问题、提出期望的解决措施（换货、维修或退款）以及适当的客套语。",
+        "framework": "投诉信用于反映出现的问题以期获得解决。第一段首句为背景介绍，引出下文问题的提出；第2、3句按照从概括到具体的顺序说明问题；第4、5句提出希望对方如何解决问题。第二段为书信的常规客套语。",
+        "template": "该思路适合对商品质量问题进行投诉。Dear Sir or Madam, （时间状语）I bought ____ in 购买地点. To my dismay, （时间状语）I found it couldn't work normally. 具体阐述问题. I expect you to provide a new one for replacement or, at least, to follow the warranty policy by repairing it. If no satisfaction can be gained by these means, I will have to demand a refund. Thank you for taking the time to read this letter. If detailed information is required, please reach me at 12345678. Yours faithfully, Zhang Wei"
       }
     },
     {
@@ -3073,6 +3078,11 @@
             "高收入消费者"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "表格按年龄将雇员分为三组，记录对工作感到满意、态度不清楚、不满意的比例，反映不同年龄人群的工作满意度差异。数据：50岁以上的组群满意比例最高（40%）；41-50岁组群满意比例为0，不满意比例最高（64%）；40岁以下的组群满意比例居中（16.7%）。这种差异与不同年龄人群的职场处境和预期相关，应结合各年龄层的职场特点分析原因；即便满意比例最高的组群也只有40%，有必要鼓励人们持有积极观念，提高工作满意度。",
+        "framework": "表格揭示三类人群的工作满意比例，描写时不必每个数据都提及，只需抓住最具代表性的极值（满意比例最高、最低）和中间值即可；分析时重在剖析不同人群满意比例具有差异的原因，并就总体提高满意度发表意见。第一段描写表格，重点提及关键数字：第1句介绍满意比例最高的群体并引用比例；第2、3句分别介绍满意比例居中和最低的两个群体，引用满意与不满意比例，体现满意比例的逐渐递减以及不满意比例的提高。第二段解释差异原因：第1句概述表格呈现的差异；第2句总述原因；第3、4句分析41-50岁人群满意比例最低的原因；第5句分析40岁以下人群满意比例居中的原因；第6、7句分析50岁以上人群满意比例最高的原因。第三段评论：第1句概述职场所有人面临的问题；第2句承接上句，针对所有人给出提高工作满意度的建议。",
+        "template": "该思路适用于分析体现满意度差异的表格。____ were most likely to report satisfaction, with ____% of them indicating they were content. ____ were less willing to declare satisfaction, only ____% of whom said they were satisfied; instead, ____% of whom expressed dissatisfaction. ____ were surely unhappiest: none of them felt satisfied and the percentage of respondents reporting dissatisfaction was as high as ____%. There is a significant difference in ____ satisfaction by ____. The difference relates to ____.（分析差异原因）The consequent sense of 负面情绪名词 is strong enough to reduce them to deep dissatisfaction. In contrast, ____ and understandably will feel happier. As for ____, ____. Not surprisingly, they are the happiest. It is clear that ____. For lasting happiness with ____, ____ is necessary."
       }
     }
   ]

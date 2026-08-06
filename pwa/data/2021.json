@@ -4160,6 +4160,11 @@
             "供...参考"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "情景与要求：Suppose you are organizing an online meeting. Write an email to Jack, an international student, to 1) invite him to participate and 2) tell him the details. ①写作人身份：“你”，即大学生；②写作话题：线上会议；③写作类型：电子邮件；④写作对象：留学生；⑤交际目的：邀请参加线上会议并告知相关事宜。格式为书信（邀请信）；语域上，给线上会议参与者、国际学生的信件属于公务信函，应使用正式语体，但因面向同辈，语言不必过于拘谨，应礼貌亲切；内容要点：①邀请收信人参加线上会议；②说明举办线上会议的相关事宜。关键词：meeting/gathering/conference/session 会议；participate in/join/attend a meeting 参加会议；participant/attendee 参会者；meeting agenda/schedule/arrangement 会议议程/安排。",
+        "framework": "第一段：表明写作目的，邀请收信人参加线上会议，并简要介绍活动；第二段：介绍活动的具体内容；第三段：表达期待。",
+        "template": "本模板由【优秀范文】提炼、改编而来，适用于会议、论坛、典礼等活动的邀请信。Dear ____, As 邀请人身份, I am writing to invite you to 活动名称 scheduled for 时间、地点、举办方式. With the theme of 活动主题, this 活动类型 aims to 活动目的. Attendees from 参会者身份 will gather to 活动内容. As a 指出受邀人与活动契合的身份, you are very welcome to 期待对方做的事. Our 活动类型 arrangements are attached for your reference. We will be very pleased if you could accept our invitation. Yours sincerely, Li Ming"
       }
     },
     {
@@ -4274,6 +4279,11 @@
             "跟团游"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表主题为“某市居民锻炼方式调查”（柱状图）。各锻炼方式所占比例分别为：独自锻炼54.3%、和朋友一起47.7%、和家人一起23.3%、团体活动15.8%。从高到低排列为“独自锻炼＞和朋友一起＞和家人一起＞团体活动”；“独自锻炼”与“和朋友一起锻炼”的受欢迎程度明显高于其他两项，其中“独自锻炼”更受欢迎。现象解读：人们更倾向于独自锻炼而非结伴锻炼，且较少参加团体活动，主要原因在于独自锻炼的便利性（不受时间和地点限制，如无需与他人事先约定时间，健身视频和便携健身器材等的普及使得一人在家锻炼成为可能）。人们结伴锻炼时主要和朋友而非家人一起，可能包含多种原因，如家人没有锻炼的习惯、不与家人同住、家人的年龄和体质存在差异等。",
+        "framework": "第一段：描述图表；第二段：明确图表反映的现象，分析原因；第三段：结合图表所示现象给出预测和建议。",
+        "template": "该模板适用于基于多项选择的调查数据制成的“多因素同时比较”的柱状图，涉及“某群体做某件事的多种选择”。模板注释：该模板第一段①句介绍图表主题，②句对比介绍占比最高和最低的数据，③句按占比从高到低的顺序罗列其他数据。第二段①句点明图表反映的趋势，②句过渡引出原因分析，③至⑥句具体阐述原因，其中③④句分析主观原因，⑤句提及客观必要条件，⑥句补充不可忽视的推动因素。第三段展望发展趋势并提及积极影响。I ① The bar chart clearly illustrates the multiple options ________ have of (doing) ________. ② The majority of them (________ %) ________, whereas ________ is the least popular choice, only accounting for ________ %. ③ Other ways to ________ include ________ and ________, at ________ % and ________ % respectively, followed by ________, at ________ %. II ① The data indicates people's inclination to ________. ② It may seem a matter of personal preference, but in fact several factors play a part. ③ For one thing, ________ gives them a sense of happiness and satisfaction. ④ To put it another way, they do so in pursuit of a higher quality of life. ⑤ For another, the advent/popularization of ________ is an essential precondition for this. ⑥ Moreover, those who ________ have set this trend to some extent. III ① In conclusion, given (that) ________, we can expect to see an increasing number of people ________. ② This will contribute to greater diversity in ________."
       }
     }
   ]

@@ -3289,6 +3289,11 @@
             "准备饭菜"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "向未来室友写邮件介绍自己。指令解读：write him an email——规定应用文类型为书信；tell him about your living habits——信件主要内容是告知对方你的生活习惯；ask for advice about living there——信中还需要求对方就你居住提出建议，也可以涉及对你的要求；信件背景为你将留学期间与当地学生John合住，宏观话题为对外文化交流。要点归纳：1）题目要求写一封信，书信格式需完整；2）收信人为未来合住的室友，语气应亲切、自然；3）信的内容包括介绍自己的生活习惯、询问对方对自己的建议或要求，最好能涉及与文化、地域差异相关的内容，以增加文章深度。",
+        "framework": "该封信的写作目的是让双方初步了解彼此，侧重于联络感情和自我介绍。首段在寒暄的基础上，提出初步了解的意义，引出第二段的自我介绍。第二段先对自己的习惯进行介绍，再表达对对方习惯的关注，并表示希望收到对方的回信。",
+        "template": "该思路适用于初次见面前的自我介绍。Dear ____, I am glad that it is you who will ____ and cannot wait to meet you. Before my ____, I think it is necessary to arrive at a basic understanding about each other's ____. As a typical ____, I observe ____ rules（用同位语解释说明rules）. In addition, I prefer ____ and hope to get your tolerance for ____. There must be some special ____ rules to be respected in your ____. Can you introduce them to me in advance? Hope to get your early reply. Yours, Li Ming"
       }
     },
     {
@@ -3541,6 +3546,11 @@
             "消费者搜索习惯的改变"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表作文，主题为城市与乡村人口的变化。图表横坐标以10年为刻度的时间，反映1990年到2010年的变化；纵坐标以百万为单位的人口数量。1990年至2010年人口总数有一定上涨，城镇人口一直比农村人口少，但城镇人口上升显著（从3亿增至6.7亿），乡村人口有所下降（从8.2亿降至6.8亿）。描写关键词：bar graph 柱状图，million 百万；话题关键词：urban population 城市人口，rural population 农村人口，demographic change 人口变化。",
+        "framework": "第一段描写图表。首句从两组数据体现的人口总量变化和数据各自体现的人口分布两个维度，对图表反映的趋势做总结性概述，其中重点信息为人口分布变化，用主句呈现；第2句具体讲解人口分布变化，用contrastingly体现城市人口和农村人口的变化对比。第二段首句主句部分承接上文，概括数据变化体现的趋势，状语部分概括背后原因，引出下文具体阐释；第2句具体说明原因1，阐释城市扩张对城乡人口差距减小的影响；第3至5句具体说明原因2，阐释不公平的经济发展机会对城乡人口差距减小的影响。第三段分析趋势体现的意义和潜在的问题：首句指出城市人口上升的积极意义；第2、3句转折指出变化可能隐藏的问题；第4句在提出问题的基础上指出我们应该怎么办。",
+        "template": "当数量关系呈此消彼长趋势，且具有积极意义又隐藏着问题时，可以采用该思路。From 时间 to 时间, while moderate increase occurred in total ____, ____ experienced a dramatic shift. ____ increased considerably from 数据 to 数据; contrastingly ____ declined from 数据 to 数据. ____ largely because of the joint effects of ____（过渡，引出原因）.（具体分析原因1）Meanwhile,（具体分析原因2）. ____ is a sure indication of ____ achievement. However, we should not ignore the inability of ____ to ____ due to ____（具体阐释问题）. In this sense, we cannot be superficially satisfied with the optimistic figure, but should endeavor to ____."
       }
     }
   ]

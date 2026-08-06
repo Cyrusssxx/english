@@ -3553,6 +3553,11 @@
             "符合某人的口味/爱好"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "情景与要求：Suppose you are planning a tour of a historical site for a group of international students. Write them an email to 1) tell them about the site, and 2) give them some tips for the tour. ①写作人身份：“你”，即大学生；②写作对象：留学生；③写作话题：某一历史古迹的游览计划；④写作类型：书信；⑤交际目的：介绍古迹并给出旅行建议。格式为书信（“介绍+建议”信）；语域上收信人为留学生，用语不必太正式，保持礼貌、亲切即可；内容要点：①简单介绍古迹信息；②给出一些旅行建议。关键词：tour/trip/travel 旅游；historical site/attraction/landmark 历史遗迹/名胜；archaeological discovery 考古发现；tip/advice/suggestion 建议。",
+        "framework": "第一段：表明写作目的，引出古迹名称；第二段：简介古迹信息，给出旅行建议；第三段：表达期待与祝愿。",
+        "template": "本模板由【优秀范文】提炼、改编而来，适用于撰写以介绍某事物（如景点、城市、活动等）为切入点的建议信（如游览建议、活动参与建议等）。Dear ____, I'm writing to inform you of 要介绍的事物 and share some (tips/suggestions). This (site/city/activity) is/involves 具体介绍. It offers a fascinating glimpse into ____. To 目的, you may consider 建议一 or 建议一的替代方案. In addition, it's also advisable to 建议二, which will certainly 建议带来的好处. Hope this (trip/activity) suits your taste and that you can enjoy it. Yours sincerely, Li Ming"
       }
     },
     {
@@ -3647,6 +3652,11 @@
             "对就业前景乐观/悲观"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表主题为“某高校学生手机阅读目的调查”（饼状图）。各目的所占比例分别为：学习知识59.5%、消磨时间21.3%、获取信息17.0%、其他2.2%。从高到低排列为“学习知识＞消磨时间＞获取信息＞其他”；其中学习知识与获取信息总占比超过75%，远高于消磨时间占比。现象解读：手机阅读正摆脱“消遣娱乐方式”的标签，成为当今大学生获取知识/信息的重要渠道。原因：一方面，智能手机日益普及，其便携性使人们能随时随地联网获取资讯，满足人们对各类信息的需求；另一方面，大学生面临愈发激烈的就业竞争，迫切需要强化专业知识、拓宽知识面、掌握多种技能并了解各类信息。",
+        "framework": "第一段：描述图表；第二段：明确图表反映的现象，分析原因；第三段：展望未来趋势。",
+        "template": "该模板适用于“多因素同时比较”的饼状图，涉及“某群体做某事的目的（以正面为主）”，用于反映某种积极趋势。模板注释：该模板第一段①句介绍调查主题，②至④句按照“占比降序”罗列数据。第二段①句点明图表反映的趋势并给出一大理由（与占比最大的因素关联），②句针对占比排在中上游的因素展开阐述，③句提及占比较少的因素。第三段积极评价这一趋势并简要说明理由。此外，该模板稍作调整还可适用于“列举做某事的原因”（如首段用why替换what for、on account of替换for the purpose of、because替换so that）或“反映负面现象的主题”（如末段用a shame that they替换a delight to see them、potential harm替换direct benefits、is detrimental to替换goes a long way to）。I ① The above chart provides answers as to what ________ for. ② Most striking of all, ________ % make this choice for the purpose of ________. ③ Another crucial factor is ________, according to ________ % of respondents. ④ There are also ________ % (and ________ % respectively) deciding to ________ so that they can ________ (or ________). II ① The survey indicates the trend of ________, which occurs as expected and will continue, considering that ________. ② It is noteworthy that some ________ have little intention of ________ but ________. ③ On top of that, ________ still matter(s) to a handful of them. III ① All in all, it is a delight to see them ________. ② Doing so not only results in direct benefits to themselves, but goes a long way to (doing) ________."
       }
     }
   ]

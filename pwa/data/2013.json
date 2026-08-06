@@ -3101,6 +3101,11 @@
             "打折"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "邀请信。1）应用文类型为书信（电子邮件），格式需完整；2）收信人为同学，用语不需太正式，亲切即可；3）信中要介绍清楚义卖的时间、内容以及目的（帮助需要帮助的孩子），并邀请同学参加，可补充义卖什么时候开始、有什么货品以及如何帮助孩子等细节。",
+        "framework": "邀请信是让别人对某一活动感兴趣而选择参加的信件。第一段介绍活动的举办时间、地点、目的；在阐明目的后指出对方的参与对达成目的具有关键作用，从感性层面唤起对方兴趣。第二段首句借势提出希望对方参与，末句暗示活动能给参与者带来的利益，以进一步增加对方的兴趣。",
+        "template": "该思路适用于邀请对方参加某项活动。Dear ____, It is a great honor to inform you that ____ is scheduled for 日期 from ____ a.m. to ____ p.m. ____ is going to be held in 地点 for the sake of ____.（具体介绍目的）Your participation is necessary to achieve this aim. Hopefully, you can come and ____. You will happily find ____（暗示活动能给参与者带来的利益）. Yours sincerely, Li Ming"
       }
     },
     {
@@ -3285,6 +3290,11 @@
             "随之而来的巨大利益"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "柱状图反映大学生在校期间兼职比率逐年上升的趋势，从大一67.77%升到大四88.24%，数据总体上涨，最大增幅出现在大四（比前一年高16%）。主要原因：大学生日益迫切地希望获得实际工作经验，为之后的职业做准备；随着年级升高，学习资料和社交的花费增多，兼职赚钱也是其诱因。趋势背后的隐忧是：日趋普遍的兼职可能会对学业造成影响，行文时可以就此发表简要的看法。",
+        "framework": "柱状图反映大学生兼职比率逐年上升的趋势，最明显的数据增长出现在大四，描绘图片时要体现整体趋势、提及变化明显的数据，为后文分析趋势做铺垫；分析时探讨趋势背后的原因及造成的影响，并针对可能的负面影响简要提出解决措施。第一段描绘图表：第1句描绘总体趋势，第2句指出重点数据。第二段分析趋势的两个主观原因：第1、2句阐述第一个原因——主干句概括图表趋势，用mainly because of引出原因，再借肯定原因的合理性暗示趋势的合理性；第3、4句阐释第二个原因——先用短句指明原因，再具体分析该因素如何促使趋势发生。第三段分析现象造成的影响：第1句概括指出现象有益；第2句用however转折引出消极影响；第3句针对消极影响提出建议。之所以弱化处理积极影响，是因为第二段已详述兼职的动机，动机得到满足即为兼职的积极影响，无需再重复论述。",
+        "template": "该思路适用于描写和分析反映百分比上升的图表。The rate of ____ rises annually from ____% in 年份 to ____% in 年份. The biggest increase occurs in 年份, with the rate ____% higher than a year ago. ____ will become increasingly willing to ____, mainly because of the growing wish to ____. It is reasonable and wise to ____, especially after ____. Another motive is obviously ____. As ____, there will be ____, undoubtedly pushing ____ to ____. It can indeed be beneficial for ____ to ____. However, the risk of ____ should be also considered. To benefit from ____ without ____, ____ should ____."
       }
     }
   ]

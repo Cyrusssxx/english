@@ -2855,6 +2855,11 @@
             "成长为成人"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "祝贺信。1）应用文类型为书信，格式需完整；2）收信人为堂弟/堂妹李明，是关系密切的亲属，用词需亲切、自然；3）内容必须包括：恭喜对方被大学录取，给对方为大学生活做准备提出建议，建议内容需与大学新生的学习、生活紧密相关。",
+        "framework": "祝贺信一般包括两部分：1. 回顾对方现有成绩、展望美好未来；2. 为更好的发展提出适当建议。第一段第1句概述对方的成绩，第2句表明成绩的现实意义及未来的意义。第二段第1句指出新生活与以往不同，第2句顺势提出为适应变化而改变的建议，第3句解释建议、说明实施建议的意义。",
+        "template": "该思路适用于以长辈或前辈的身份恭喜对方取得一定成绩从而人生进入新阶段。Dear ____, I must congratulate you for ____. This success means that you have acquired extraordinary capacity to ____ and, if this capacity can be further developed and purposefully used in ____, you will become competent to ____. However, I must also warn you that the approaching ____ is different to your previous ____. You should make important adjustment for it; that is, you should mentally and practically prepare to ____. I wish you could ____, and gradually grow into an adult/a person ____. Yours, Zhang Wei"
       }
     },
     {
@@ -3075,6 +3080,11 @@
             "苹果手机"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表反映2008-2009年中国轿车市场上国产、日系、美系品牌的份额变化。横坐标体现年份，纵坐标体现各品牌在中国轿车市场所占的份额。国产品牌市场份额上涨明显，日系品牌有所下降，美系品牌变化不大。原因：国产品牌研发创新与推广力度很大，与其份额上涨有关；日系品牌频频出现质量质疑，可推测其份额下降与质量问题相关；美系品牌市场表现中规中矩，所以份额没有太大变化。由此可得出结论：创新和推广很重要，但质量更是产品的关键。",
+        "framework": "图表反映不同汽车品牌市场占有率的数据有升有降，品牌市场排名发生变化，描写时除表现出各组数据的发展趋势外，还要体现相对名次的变化；分析图表需重点探讨变化发生的原因，并根据分析发表议论。第一段描写图片：第1句总述三组数据共同传达的意义；第2句简要提及变化不明显、名次未发生变化的美国品牌；第3、4句引用具体数据，阐述变化明显的中国品牌和日本品牌的市场占有率及名次变化情况。第二、三段分析、评论图表反映的现象。第二段分析趋势产生的原因：第1句简述美国品牌占有率变化不大的原因；第2至4句具体阐述中国品牌和日本品牌占有率变化大的原因（第2句引出下文，第3、4句阐释原因）。第三段基于日本品牌占有率下降的原因发表评论：第1句概述日本品牌面临的困境所具有的启示；第2句说明中国制造商如何具体落实启示。",
+        "template": "可选用该思路中的语句分析市场占有率排名有变化的图表；若图表反映三个品牌中前两名排名互换，则可全盘借用范文中的表达。____ market was still dominated by ____ brands. ____ remained the third most popular in the market with a slight increase/decline in market share. A noticeable change occurred in ____ brands. ____, whose share of market slipped by almost ____%, were displaced from their leading position by ____, which expanded their share by ____. The performance of ____ is to be expected, given their ____. The big change in the performance of ____ seems sudden but is not unexpected. （具体阐释后来者登上第一位置的主观原因）When ____ were growing, ____ were hit by reputation crisis caused by ____.（阐释昔日冠军失去第一位置的主观原因）The plight of ____ is the reminder that ____ is the soul of products. Hopefully, ____ will consistently guarantee ____, thereby protecting their own reputation to maintain market popularity."
       }
     }
   ]

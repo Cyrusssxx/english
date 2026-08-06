@@ -3321,6 +3321,11 @@
             "做出决定；下定决心"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "情景与要求：An art exhibition and a robot show are to be held on Sunday, and your friend David asks you which one he should go to. Write him an email to 1) make a suggestion, and 2) give your reason(s). ①写作话题：选择去艺术展还是机器人秀；②写作对象：你的朋友David；③写作人身份：“你”，即大学生；④写作类型：电子邮件；⑤交际目的：就“朋友应该参观哪个展览”给出建议，并说明理由。格式为书信（建议信）；语域上，给朋友的信件用语不必过于正式，亲切自然即可；内容要点：①针对“朋友应该选择参观艺术展还是机器人秀”给出明确的建议；②说明建议的理由（例如所选展览具备的亮点，或者参观这一展览能为朋友带来的好处等）。关键词：be more attractive/appealing 或 hold more appeal 更具吸引力；appreciate valuable/exquisite paintings 欣赏珍贵/精美的画作；offer immersive art experiences 提供沉浸式的艺术体验；draw/take/derive inspiration from artworks 从艺术作品中获取灵感；be exposed to art and culture 受到艺术和文化的熏陶；showcase the latest robotic technologies 展示最新的机器人技术；watch robots perform certain tasks 观看机器人完成特定任务；interact with robots 与机器人互动；explore the creative use of technology 探索富有创意的技术应用。",
+        "framework": "第一段：简单寒暄，并明确给出建议；第二段：说明建议选择某一展览的理由；第三段：表达期待与祝愿。",
+        "template": "本模板由【优秀范文】提炼、改编而来，适用于撰写“在两场活动中择一参加”的建议信。Dear ____, I am so glad to hear from you. You mentioned in your previous email/letter that you are torn between 选择对象1 and 选择对象2. It seems to me that the former/latter is a better choice. For one thing, it is said that this upcoming event features 所选对象的特色之处, among which 最值得期待的部分 is most anticipated. For ________ lovers like you, this is an opportunity not to be missed. For another, this event will bring together industry experts and 活动所涉类型 enthusiasts to share insights. Trying to establish contact with them is definitely conducive to your professional development in 与所选对象相关的领域. For all these reasons, I believe that 所选对象 will suit your tastes and needs better. Hope you can fully enjoy it! Yours sincerely, Li Ming"
       }
     },
     {
@@ -3463,6 +3468,11 @@
             "杂志"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表主题为“2012—2021年我国居民健康素养水平”（折线图）。我国居民健康素养水平由2012年的8.80%稳步上升至2016年的11.58%，再加速上升至2021年的25.40%。在2012至2021年之间，我国居民健康素养水平持续上升，且从2016年起，增速明显加快。现象解读：①随着经济发展，人民的生活水平和受教育程度大大提升，人们开始更加关注自己的健康状况；②医疗基础设施更加健全，医疗服务深入社区，医疗咨询电子化，人们有更多的渠道获取与“维护和促进自身健康”相关的信息；③健身热、公园跑等潮流的兴起，吸引越来越多的人参与到有益自身健康的活动中；④政府积极致力于提升居民的健康水平，宣传和提倡健康的生活方式。",
+        "framework": "第一段：描述图表；第二段：明确图表反映的现象，分析原因；第三段：阐述现象带来的积极影响。",
+        "template": "本模板适用于“呈持续增长趋势”的折线图，主题多反映居民健康、理财、环保等认知水平的积极发展态势。模板注释：该模板第一段①句概括图表的主题内容，②句说明从起始年份到截至年份的持续增长趋势，③句指出从某年份起，增长速度加快。第二段①句指出该图表反映了一个乐观的趋势，并说明该趋势的具体内容，②句概括指出该趋势背后有两个主要原因，③④句分别从经济和政府政策两个层面阐述趋势背后的原因。第三段①句概括指出该趋势对我们的社会有多方面的积极作用，②③句具体阐述两个积极作用。I ① The line/bar chart above shows the change in ________ over the past ________. ② As can be seen, ________ increased/rose/grew steadily/continuously/uninterruptedly from ________ in 起始年份 to ________ in 截止年份. ③ And it is notable that the growth rate of ________ has picked up considerably/significantly/substantially since ________. II ① This chart reflects an optimistic trend in our current society: an increasing number of people become aware of ________ and take action to ________. ② And there are two major reasons behind this trend. ③ For one thing, economic development and subsequent betterment of living standards have made it possible for residents to allocate more money and time for improving their understanding of ________. ④ For another, government efforts in enhancing public consciousness of ________, such as ________, have helped to shape a growing body of informed residents, who have a high sense of responsibility and are earnest in implementing ________ in their daily life. III ① This trend has several benefits to our society. ② To begin with, a higher ________ literacy rate ensures that our society have ________. ③ What's more, a larger body of residents who are knowledgeable about ________ means that smart policies aimed at addressing urgent issues facing society will face less opposition and get implemented much faster."
       }
     }
   ]

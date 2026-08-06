@@ -3631,6 +3631,11 @@
             "关于，涉及"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "建议信。1）写作对象：史密斯教授；2）写信人身份：大学生；3）写作话题：筹划以\"城市交通\"为主题的辩论赛；4）写作类型：书信；5）交际目的：就\"辩论赛选题\"向教授提出建议，并说明选题理由，告知教授辩论赛的安排。归纳要点：1）格式：书信（建议信）；2）语域：收信人的身份为老师，用语应比较正式、礼貌，不可过于随意；3）内容要点：①提出一个辩题；②说明理由；③告知比赛安排。",
+        "framework": "第一段：说明来信目的；第二段：给出一个\"城市交通\"相关的辩题，并说明选题理由；第三段：告知辩论赛日程安排并表达期待回复。篇章衔接：开头部分（2句）①句进行寒暄；②句说明活动准备情况并引出写作目的：提议辩论赛选题。主体部分（4句）①句提出一个辩题；②句说明选题理由一：辩题具有可辩论性；③句说明选题理由二：辩题涉及本学期课程，能加深同学们对课程内容的理解；④句说明选题理由三：辩题涵盖同学们关注的热点事件，适合讨论。结尾部分（2句）①句告知老师辩论赛安排；②句表达期待老师回复。",
+        "template": "本模板由【优秀范文】提炼而来，适用于撰写以\"建议某项活动\"为切入点的建议信。\nDear ____,\nThank you for trusting me to arrange 活动. Now the 活动 is ready except for 主题, so I'm writing to offer my advice regarding 主题.\nI suggest 建议内容. Given that 原因一, people/students will surely benefit from it in terms of 益处. Moreover, 原因二, which is a great way to 目的.\n活动 will be held from 时间1 to 时间2 at/in 地点. I am waiting for your response on this matter.\nYours sincerely,\nLi Ming"
       }
     },
     {
@@ -3749,6 +3754,11 @@
             "生活与工作平衡"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表下方标题为\"某高校2013年和2018年本科生毕业去向统计\"。图表显示：2013年本科毕业生就业、升学、创业的人数占比分别为68.1%、26.3%、1.3%；2018年这三个数据分别为60.7%、34.0%、2.6%。数据显示2013年和2018年本科毕业生大多选择就业，但2018年就业人数占比相比2013年出现大幅下降；升学人数占比次之，且2018年选择升学人数显著攀升；毕业后创业的学生最少，2018年创业人数比例比2013年略有增加。就业人数下降而升学、创业人数增长，折射出新一代大学毕业生就业观发生变化：更注重提升自我，或以其他方式实现自身价值而不急于就业。",
+        "framework": "第一段：描述图表；第二段：概括图表所揭示的现象，并分析原因；第三段：指出未来发展趋势，总结收篇。篇章衔接：第一段（3句）描述图表，①句概述图表内容；②句指出图表中的巨大变化：就业人数占比大幅下降而升学人数占比显著上升；③句补充说明创业人数比例的小幅变化。第二段（5句）概述图表所反映的现象并分析原因，①句揭示现象：毕业生就业观念发生变化；②至⑤句分析原因，其中②句说明\"为何就业占比最高\"，③④句说明\"升学占比增加\"的原因，⑤句说明\"创业占比增加\"的原因。第三段（2句）预测趋势、提出建议，①句说明未来发展趋势，②句提出应对建议。",
+        "template": "该模板适用于\"反映数据变化趋势\"的动态图（柱状图、线条图等），如\"博物馆及参观人数变化\"、\"汽车品牌市场份额的变化\"。\nIn the light of the chart above, it is evident that dramatic changes have taken place in terms of 主题词 these years. Specifically, the proportion/number of those who 类别1（下降） declined hugely/moderately from 数据1 in 起始年 to 数据2 in 终止年, while that of those 类别2（增加） ascended enormously/slightly from 数据3 to 数据4 during the same time span.\nThe data above illustrates a shift in people's view regarding 某领域. On the one hand, because 原因1, it's not surprising that the proportion/number of 类别1 remains pretty high. On the other hand, this trend/idea is also changing. With the advancement of/decline in 影响因素, 类别2 which allows/brings people 带来的益处 becomes increasingly popular, leaving the number of those who 选择类别1的群体 dropping accordingly.\nIt can be predicted that as 影响因素 improves/develops, 主题词 will be more 发展趋势. Therefore, only by 建议的做法, can we better embrace this new trend.\n模板注释：该模板第一段①句概述图表内容，②句说明数据变化。第二段着重分析原因：①句揭示变化本质，②句和③④句分别揭示\"不变\"和\"变化\"的原因。第三段说明未来发展趋势及相关主体应对之策。"
       }
     }
   ]

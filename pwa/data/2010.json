@@ -2617,6 +2617,11 @@
             "深刻理解……"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "感谢信+邀请信。1）应用文类型为书信，格式需完整；2）收信人为美国同事，用语不必太正式，保持礼貌、亲切即可；3）信中要写出对美国同事的感激，为使感谢自然，可回顾对方的热情款待，提及在对方帮助下的收获；最后邀请他或她来中国参观。",
+        "framework": "该应用文是感谢信和邀请信的结合。感谢信是向帮助、关心和支持过自己的人传达感激之情的书信；邀请信是邀请某人参加某项活动或来某地参观的书信。第一段描写收信人热情的接待，并对此表达感激之情。第二段，邀请收信人来中国参观，以此回报先前的热情款待。",
+        "template": "该思路适用于感谢对方接待自己并邀请对方回访以回馈对方的接待。Dear ____, Thank you very much for receiving me, a delegate of 活动名称, during my visit to 地点. Your considerate and warm reception made me feel at home. You kindly provided detailed explanation of ____, assisting me to ____ and, more importantly, ____. I had a great time there, and I really appreciate everything you have done for me. Additionally, I highly welcome you to come to ____ so that I can reciprocate your hospitality. I promise you a fantastic visit, through which you may 陈述对方到来的益处. Look forward to your visit. Yours sincerely, Zhang Wei"
       }
     },
     {
@@ -2767,6 +2772,11 @@
             "大规模扩大"
           ]
         ]
+      },
+      "writing_analysis": {
+        "prompt": "图表反映发展中国家与发达国家自2000年至2008年手机用户量增长情况的对比。发展中国家在此期间手机用户量迅猛增长（0.5亿→40亿）；发达国家同期增长缓慢，甚至趋于停滞（0.7亿→10亿）。原因：1）发展中国家市场广阔，未达到饱和状态；2）经济发展使越来越多的人用上手机。发达国家增长停滞主要因手机用户占人口比例已较大，缺乏上涨空间。",
+        "framework": "描写时重点体现发展中国家和发达国家手机用户量增长的对比，为后文分析不同现象产生的原因做铺垫。第一段：描述图表，第1句写发展中国家情况，第2句写发达国家情况。第二段：分析现实原因，第1句总体说明不同增长与不同市场环境有关，第2至4句分析发展中国家猛增的原因，第5句分析发达国家增长缓慢的原因。第三段：基于原因对两国未来增长情况做出预测。",
+        "template": "该思路适用于分析反映两个对象不同增量的图表。As is demonstrated in the diagram, from 年份 to 年份, ____ grew sharply from 数据 to 数据 in 地点. Contrastingly, during the same period, there was only a moderate increase (from 数据 to 数据) in 地点. Different performance was due to different ____. In ____, the number of ____ would be ____. Thanks to ____, an increasing number of ____ resulting in the take-off of ____. （分析对象1增长快速的原因）However, in ____, there was ____, leaving little room for growth.（分析对象2增长缓慢的原因）Since ____, the number ____ there will continue to grow at a fast rate; nevertheless, the growth will slow down as ____.（预测对象1的增长情况）In comparison, ____, so the growth of ____ is expected to remain stagnant unless ____.（预测对象2的增长情况）"
       }
     }
   ]
