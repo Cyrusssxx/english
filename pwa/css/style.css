@@ -477,6 +477,97 @@ html.dark .nav-timer-btn {
     border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
 }
 
+.writing-reserve {
+    margin-top: 18px;
+}
+
+.writing-reserve > .rs-label {
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.writing-reserve-sec {
+    border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.writing-reserve-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 9px 14px;
+    background: rgba(128, 128, 128, 0.08);
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    color: inherit;
+}
+
+.writing-reserve-toggle:hover {
+    background: rgba(128, 128, 128, 0.14);
+}
+
+.reserve-caret {
+    font-size: 12px;
+    color: var(--text-dim, #888);
+}
+
+.writing-reserve-body {
+    padding: 10px 14px;
+    display: block;
+}
+
+.writing-reserve-body.collapsed {
+    display: none;
+}
+
+.reserve-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+}
+
+.reserve-item {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+    align-items: baseline;
+    padding: 2px 0;
+}
+
+.reserve-en {
+    font-weight: 600;
+    color: var(--primary, #2b6cb0);
+}
+
+.reserve-cn {
+    color: var(--text-dim, #666);
+}
+
+.reserve-text {
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.reserve-material {
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--border, rgba(128, 128, 128, 0.2));
+}
+
+.reserve-material:last-child {
+    border-bottom: none;
+}
+
+.reserve-material .reserve-en {
+    display: block;
+    margin-bottom: 3px;
+}
+
 
 .writing-sample .rs-label {
     font-weight: 700;

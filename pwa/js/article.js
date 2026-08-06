@@ -32,6 +32,51 @@ function toggleWritingCn(btn) {
     btn.textContent = show ? '隐藏中文译文' : '显示中文译文';
 }
 
+/** 作文储备板块折叠切换 */
+function toggleReserve(btn) {
+    const body = btn.closest('.writing-reserve-sec').querySelector('.writing-reserve-body');
+    const collapsed = body.classList.toggle('collapsed');
+    btn.textContent = collapsed ? '展开' : '收起';
+}
+
+/** 渲染作文储备板块（亮点词汇/必备表达/话题词汇等） */
+function reserveHtml(r) {
+    if (!r || !Object.keys(r).length) return '';
+    let html = '<div class="writing-reserve"><div class="rs-label">词汇储备</div>';
+    if (r.highlights) {
+        if (r.highlights.words && r.highlights.words.length) {
+            html += reserveSec('亮点词汇', '<div class="reserve-grid">' + r.highlights.words.map(w =>
+                `<span class="reserve-item"><span class="reserve-en">${esc(w[0])}</span><span class="reserve-cn">${esc(w[1])}</span></span>`).join('') + '</div>');
+        }
+        if (r.highlights.collocations && r.highlights.collocations.length) {
+            html += reserveSec('必备搭配', '<div class="reserve-grid">' + r.highlights.collocations.map(w =>
+                `<span class="reserve-item"><span class="reserve-en">${esc(w[0])}</span><span class="reserve-cn">${esc(w[1])}</span></span>`).join('') + '</div>');
+        }
+    }
+    if (r.expressions && r.expressions.length) {
+        html += reserveSec('必备表达', '<div class="reserve-grid">' + r.expressions.map(w =>
+            `<span class="reserve-item"><span class="reserve-en">${esc(w[0])}</span><span class="reserve-cn">${esc(w[1])}</span></span>`).join('') + '</div>');
+    }
+    if (r.topic_notes) {
+        html += reserveSec('话题表述补充', `<div class="reserve-text">${esc(r.topic_notes)}</div>`);
+    }
+    if (r.topic_vocab && r.topic_vocab.length) {
+        html += reserveSec('话题词汇', '<div class="reserve-grid">' + r.topic_vocab.map(w =>
+            `<span class="reserve-item"><span class="reserve-en">${esc(w[0])}</span><span class="reserve-cn">${esc(w[1])}</span></span>`).join('') + '</div>');
+    }
+    if (r.materials && r.materials.length) {
+        html += reserveSec('写作素材积累', r.materials.map(m =>
+            `<div class="reserve-material"><div class="reserve-en">${esc(m[0])}</div><div class="reserve-cn">${esc(m[1])}</div></div>`).join(''));
+    }
+    html += '</div>';
+    return html;
+}
+
+/** 单个储备板块（带折叠标题栏） */
+function reserveSec(title, inner) {
+    return `<div class="writing-reserve-sec"><button class="writing-reserve-toggle" onclick="toggleReserve(this)">${title}<span class="reserve-caret">收起</span></button><div class="writing-reserve-body">${inner}</div></div>`;
+}
+
 // ============ 模式开关：精读 / 做题（存 localStorage） ============
 function isQuizMode() {
     return localStorage.getItem('readMode') === 'quiz';
@@ -161,7 +206,8 @@ function renderArticle() {
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示中文译文</button>
                 <div class="writing-sample-en">${esc(article.sample_en || '')}</div>
                 <div class="writing-sample-cn" hidden>${esc(article.sample_cn || '')}</div>
-            </div>`;
+            </div>
+            ${reserveHtml(article.reserve)}`;
         return;
     }
     // 翻译模块：正文下方提供官方全文译文（可展开）

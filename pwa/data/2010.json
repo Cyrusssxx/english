@@ -2576,7 +2576,48 @@
       "sample_en": "My Dear Friend,\nThank you very much for receiving me, a delegate of Sino American cultural exchange program, during my visit to America. Your considerate and warm reception made me feel at home. You kindly provided detailed explanation of American custom, assisting me to get over culture shock soon and, more importantly, have deeper understanding of American culture. I had a great time there, and I really appreciate everything you have done for me.\nAdditionally, I highly welcome you to come to China in due course so that I can reciprocate your hospitality. I promise you a fantastic visit, through which you may gain a deep insight into Chinese culture. Look forward to your visit.\nYours sincerely,\nZhang Wei",
       "sample_cn": "亲爱的朋友：\n非常感谢你在我作为中方代表去美国参加中美文化交流项目期间接待我。你体贴热情的款待让我感到在家般的轻松自在。你详尽地解说了美国的风俗，帮助我很快克服文化冲击。更重要的是，还帮我更加深入地了解了美国文化。我在那儿非常开心，我真的感激你为我做的一切。\n此外，我热烈欢迎你有空的时候来中国，这样我可以回报你的热情款待。我保证你会拥有一次极棒的旅行，通过这次参观你会深入了解中国文化。期待你的到来。\n诚挚的，\n张伟",
       "questions": [],
-      "directions": "You have just come back from the U.S. as a member of a Sino-American cultural exchange program. Write a letter to your American colleague to 1) express your thanks for his/her warm reception; 2) welcome him/her to visit China in due course. You should write about 100 words on ANSWER SHEET 2. Do not sign your own name at the end of the letter. Use “Zhang Wei” instead. Do not write your address. (10 points)"
+      "directions": "You have just come back from the U.S. as a member of a Sino-American cultural exchange program. Write a letter to your American colleague to 1) express your thanks for his/her warm reception; 2) welcome him/her to visit China in due course. You should write about 100 words on ANSWER SHEET 2. Do not sign your own name at the end of the letter. Use “Zhang Wei” instead. Do not write your address. (10 points)",
+      "directions_cn": "你作为中美文化交流项目的一员刚从美国回来。给你的美国同事写一封信，1) 对他的热情款待表示感谢；2) 欢迎他适时来中国访问。你应在答题卡2上写约100词。不要在信末签上自己的名字，用\"Zhang Wei\"代替。不要写你的地址。（10分）",
+      "reserve": {
+        "expressions": [
+          [
+            "delegate",
+            "代表"
+          ],
+          [
+            "considerate",
+            "体贴的"
+          ],
+          [
+            "feel at home",
+            "在家中般轻松自在"
+          ],
+          [
+            "detailed explanation",
+            "详尽的解说"
+          ],
+          [
+            "get over",
+            "克服"
+          ],
+          [
+            "culture shock",
+            "文化冲击"
+          ],
+          [
+            "additionally",
+            "此外"
+          ],
+          [
+            "fantastic",
+            "极好的，不可思议的"
+          ],
+          [
+            "gain a deep insight into ...",
+            "深刻理解……"
+          ]
+        ]
+      }
     },
     {
       "id": "2010_writingb",
@@ -2588,7 +2629,145 @@
       "sample_cn": "如图所示，在2000年至2008年，发展中国家的手机用户量从5亿猛增到了40亿。与此相对，在同一时段，发达国家的手机用户量只有缓慢的增长（从7亿到10亿）。\n不同的市场表现取决于不同的市场环境。在发展中国家，手机市场并没有达到饱和。考虑到其庞大的人口，潜在消费者的数量是巨大的。由于经济的腾飞，越来越多的潜在消费者进入手机市场，引起了手机用户量的猛增。然而，在发达国家，由于市场已经饱和，使得手机用户量的增长余地很少。\n在发展中国家，由于手机市场广阔，并且经济仍然在稳步地发展，手机用户量将会持续快速增长。然而，随着市场达到饱和，增速也会逐渐下降。相比之下，发达国家的市场已经达到饱和，因此，除非刺激额外的需求，手机用户量的增长将会停滞不前。",
       "chart_img": "img/2010_writingb_chart.png",
       "questions": [],
-      "directions": "In this section, you are asked to write an essay based on the following chart. In your writing, you should 1) interpret the chart and 2) give your comments. You should write at least 150 words. Write your essay on ANSWER SHEET 2. (15 points)"
+      "directions": "In this section, you are asked to write an essay based on the following chart. In your writing, you should 1) interpret the chart and 2) give your comments. You should write at least 150 words. Write your essay on ANSWER SHEET 2. (15 points)",
+      "directions_cn": "本部分要求你根据下面的图表写一篇短文。写作中你应该1) 解读图表，并2) 发表你的评论。你应至少写150词。在答题卡2上写出你的短文。（15分）",
+      "vocab_highlights": {
+        "words": [
+          [
+            "diagram",
+            "图表"
+          ],
+          [
+            "demonstrate",
+            "展示，演示"
+          ],
+          [
+            "contrastingly",
+            "形成鲜明对比的是"
+          ],
+          [
+            "potential",
+            "潜在的"
+          ],
+          [
+            "stimulate",
+            "刺激"
+          ]
+        ],
+        "collocations": [
+          [
+            "during the same period",
+            "在同一时期"
+          ],
+          [
+            "reach saturation",
+            "达到饱和"
+          ],
+          [
+            "population size",
+            "人口规模"
+          ],
+          [
+            "an increasing number of",
+            "越来越多的"
+          ],
+          [
+            "at a fast rate",
+            "以飞快的速度"
+          ],
+          [
+            "in comparison",
+            "相比之下"
+          ],
+          [
+            "be expected to",
+            "预期会"
+          ],
+          [
+            "extra demand",
+            "额外的需求"
+          ]
+        ]
+      },
+      "reserve": {
+        "highlights": {
+          "words": [
+            [
+              "diagram",
+              "图表"
+            ],
+            [
+              "demonstrate",
+              "展示，演示"
+            ],
+            [
+              "contrastingly",
+              "形成鲜明对比的是"
+            ],
+            [
+              "potential",
+              "潜在的"
+            ],
+            [
+              "stimulate",
+              "刺激"
+            ]
+          ],
+          "collocations": [
+            [
+              "during the same period",
+              "在同一时期"
+            ],
+            [
+              "reach saturation",
+              "达到饱和"
+            ],
+            [
+              "population size",
+              "人口规模"
+            ],
+            [
+              "an increasing number of",
+              "越来越多的"
+            ],
+            [
+              "at a fast rate",
+              "以飞快的速度"
+            ],
+            [
+              "in comparison",
+              "相比之下"
+            ],
+            [
+              "be expected to",
+              "预期会"
+            ],
+            [
+              "extra demand",
+              "额外的需求"
+            ]
+          ]
+        },
+        "topic_notes": "手机用户增长：The mobile phone subscription number increased considerably. 手机用户量大为增加。Growing 45 percent annually for the past four years, mobile phone subscriptions have hit 5.9 billion throughout the world. 过去四年手机用户每年增长45%，全球手机用户已经达到了59亿。5 billion mobile subscriptions added to the count. 手机用户又增长了50亿。\n市场的状况：market demand 市场需求，the expanded demand of customers 消费者需求的增加，a broad market 一个广阔的市场，purchasing power 购买力，Supply falls short of demand. 供不应求。Supply exceeds demand. 供过于求。",
+        "topic_vocab": [
+          [
+            "Internet video users",
+            "网络视频用户"
+          ],
+          [
+            "netizen",
+            "网民"
+          ],
+          [
+            "Internet industry",
+            "互联网行业"
+          ],
+          [
+            "expand in scale",
+            "大规模扩大"
+          ]
+        ]
+      }
     }
   ]
 }

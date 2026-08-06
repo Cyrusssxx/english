@@ -3420,7 +3420,40 @@
       "sample_en": "Recruitment Announcement\nWe are looking for some volunteers for the summer camp for high school students. The summer camp is organized to facilitate high school students' academic learning and more importantly cultivate their cooperation ability and practical skills through activities including but not limited to reading salon and business-starting competition.\nVolunteers are required to help organize activities and cope with daily affairs during the summer camp. Ideal candidates should be patient, active, warm-hearted and responsible. Having relevant experience is preferred. Anyone interested please contact us by students' union@abcuniversity.edu.cn or reach us at 12345678.\nStudents' Union",
       "sample_cn": "招募启事\n我们正在为高中夏令营招募几位志愿者。组织夏令营是为了通过活动促进高中生的学业学习，更重要的是培养他们的合作能力和实践技能。这些活动包括但不局限于读书沙龙和创业大赛。\n要求志愿者帮助组织活动，并处理夏令营中的日常事务。理想的人选应该有耐心、积极、热心并且负责。有相关经验更佳。感兴趣者请通过students' union@abcuniversity.edu.cn联系我们，或者拨打电话12345678联系我们。\n学生会",
       "questions": [],
-      "directions": "Suppose your university is going to host a summer camp for high school students. Write a notice to 1) briefly introduce the camp activities, and 2) call for volunteers. You should write about 100 words on the ANSWER SHEET. Do not use your name or the name of your university. Do not write your address. (10 points)"
+      "directions": "Suppose your university is going to host a summer camp for high school students. Write a notice to 1) briefly introduce the camp activities, and 2) call for volunteers. You should write about 100 words on the ANSWER SHEET. Do not use your name or the name of your university. Do not write your address. (10 points)",
+      "directions_cn": "假设你们大学将举办一个面向高中生的夏令营。写一份通知，1) 简要介绍夏令营活动，并2) 招募志愿者。你应在答题卡上写约100词。不要使用你的名字或你所在大学的名字。不要写你的地址。（10分）",
+      "reserve": {
+        "expressions": [
+          [
+            "facilitate academic learning",
+            "促进学业学习"
+          ],
+          [
+            "cultivate ability",
+            "培养能力"
+          ],
+          [
+            "including but not limited to",
+            "包括但不限于"
+          ],
+          [
+            "business starting competition",
+            "创业大赛"
+          ],
+          [
+            "daily affairs",
+            "日常事务"
+          ],
+          [
+            "ideal candidate",
+            "理想人选"
+          ],
+          [
+            "relevant experience",
+            "相关经验"
+          ]
+        ]
+      }
     },
     {
       "id": "2015_writingb",
@@ -3432,7 +3465,194 @@
       "sample_en": "The chart reflects the Spring Festival spending types and their respective proportions. Chinese people's money is mainly used for three purposes during the Spring Festival: traveling, New Year's gift giving and having dinners with friends or relatives. They account for 80% of total spending.\nMost spending is used to maintain or facilitate interpersonal relationship. This finding is not strange, since the Spring Festival is a Chinese traditional festival for family reunion. Developing relationship is beneficial and necessary for a person's fulfillment and investing on people we love is sweet and happy.\nHowever, we should not go to extremes. In China, there are many people fond of appearing extraordinary and hating to be known as weaker and poorer. They use handsome money to blindly pursue pride. Such intention causes huge waste of money and imposes heavy economic burden on people involved. The pride gotten by squandering money is transient and can only be a topic for gossip soon forgotten by others. Therefore, we should think rationally before opening our purses. We should remember it is happiness that is the main concern.",
       "sample_cn": "表格体现了春节开销的类型和各自的比例。在春节期间中国人的钱主要有三种用途：交通、送新年礼物和与朋友、亲人共进晚餐。它们占了花费总额的80%。\n绝大多数开支被用来维护和促进入际关系。鉴于春节是中国传统的家庭团圆的节日，这个发现不奇怪。发展人际关系对一个人的幸福是有益和必需的，在我们爱的人身上投资是甜蜜而幸福的。\n但是，我们不能走向极端。在中国，很多人喜欢显得不凡，讨厌被认为比别人弱或穷。他们花大量的钱去盲目追求面子。这样的意图造成了金钱的大量浪费，给相关人带来了沉重的经济压力。靠挥霍钱获得的面子是短暂的，只能作为一个八卦话题，很快被其他人遗忘。因此，我们在打开钱包前，应该理性思考。我们应该记住幸福才是我们关注的重点。",
       "questions": [],
-      "directions": "Write an essay based on the following chart. In your writing, you should 1) interpret the chart, and 2) give your comments. You should write about 150 words on the ANSWER SHEET. (15 points)"
+      "directions": "Write an essay based on the following chart. In your writing, you should 1) interpret the chart, and 2) give your comments. You should write about 150 words on the ANSWER SHEET. (15 points)",
+      "directions_cn": "根据下面的图表写一篇短文。写作中你应该1) 解读图表，并2) 发表你的评论。你应在答题卡上写约150词。（15分）",
+      "vocab_highlights": {
+        "words": [
+          [
+            "fulfillment",
+            "幸福感"
+          ],
+          [
+            "extraordinary",
+            "超凡"
+          ],
+          [
+            "handsome",
+            "大量的"
+          ],
+          [
+            "blindly",
+            "盲目地"
+          ],
+          [
+            "intention",
+            "意图"
+          ],
+          [
+            "squander",
+            "挥霍"
+          ],
+          [
+            "transient",
+            "短暂的"
+          ],
+          [
+            "rationally",
+            "理性地"
+          ],
+          [
+            "concern",
+            "重要的事"
+          ]
+        ],
+        "collocations": [
+          [
+            "respective proportions",
+            "各自的比例"
+          ],
+          [
+            "account for",
+            "占"
+          ],
+          [
+            "facilitate interpersonal relationship",
+            "发展人际关系"
+          ],
+          [
+            "family reunion",
+            "家庭团圆"
+          ],
+          [
+            "invest on",
+            "投资"
+          ],
+          [
+            "go to extremes",
+            "走向极端"
+          ],
+          [
+            "pursue pride",
+            "追求面子"
+          ],
+          [
+            "impose heavy economic burden on",
+            "给……造成沉重的经济负担"
+          ]
+        ]
+      },
+      "reserve": {
+        "highlights": {
+          "words": [
+            [
+              "fulfillment",
+              "幸福感"
+            ],
+            [
+              "extraordinary",
+              "超凡"
+            ],
+            [
+              "handsome",
+              "大量的"
+            ],
+            [
+              "blindly",
+              "盲目地"
+            ],
+            [
+              "intention",
+              "意图"
+            ],
+            [
+              "squander",
+              "挥霍"
+            ],
+            [
+              "transient",
+              "短暂的"
+            ],
+            [
+              "rationally",
+              "理性地"
+            ],
+            [
+              "concern",
+              "重要的事"
+            ]
+          ],
+          "collocations": [
+            [
+              "respective proportions",
+              "各自的比例"
+            ],
+            [
+              "account for",
+              "占"
+            ],
+            [
+              "facilitate interpersonal relationship",
+              "发展人际关系"
+            ],
+            [
+              "family reunion",
+              "家庭团圆"
+            ],
+            [
+              "invest on",
+              "投资"
+            ],
+            [
+              "go to extremes",
+              "走向极端"
+            ],
+            [
+              "pursue pride",
+              "追求面子"
+            ],
+            [
+              "impose heavy economic burden on",
+              "给……造成沉重的经济负担"
+            ]
+          ]
+        },
+        "materials": [
+          [
+            "The Spring Festival is the most important festival for the Chinese people and is when all family members get together, just like Christmas in the West. All people living away from home go back, making about half a month from the Spring Festival the busiest time for transportation systems. Airports, railway stations and long-distance bus stations are crowded with home returners.",
+            "春节就像西方的圣诞节，对中国人来说是最重要的节日，是所有家庭成员团聚的日子。所有离家远的人都回家，春节前后半月对交通系统来说是最忙的时候。机场、火车站、长途车站都挤满回家的人。"
+          ],
+          [
+            "People attach great importance to Spring Festival Eve. At that time, all family members eat dinner together. The meal is more luxurious than usual. Dishes such as chicken, fish and bean curd cannot be excluded, for in Chinese, their pronunciations, respectively \"ji\", \"yu\" and \"doufu\", mean auspiciousness, abundance and richness.",
+            "人们非常重视除夕。那天，所有的家人会一起聚餐。这顿饭比平常更丰富。诸如鸡、鱼和豆腐的菜是必不可少的，因为在中文里它们的发音分别是\"ji\"，\"yu\"和\"doufu\"，意思是吉利、富裕和富足。"
+          ]
+        ],
+        "topic_vocab": [
+          [
+            "education spending",
+            "教育开支"
+          ],
+          [
+            "remedial class",
+            "辅导班"
+          ],
+          [
+            "tuition",
+            "学费"
+          ],
+          [
+            "training class",
+            "培训班"
+          ],
+          [
+            "traveling/tour",
+            "旅游"
+          ],
+          [
+            "for other purposes",
+            "出于其他目的"
+          ]
+        ]
+      }
     }
   ]
 }

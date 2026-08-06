@@ -3258,7 +3258,44 @@
       "sample_en": "Dear Professor Williams,\nI am honored to give a presentation about Chinese culture to international students at your invitation. I am pleased to take this opportunity to communicate with foreign friends about cultures.\nMy presentation will be focused on Chinese martial arts, which is an important component of Chinese culture. To begin with, I will briefly introduce it and its development over millennia. Then, I will focus on some common styles of Chinese martial arts, each of which has its own set of techniques and ideas. Furthermore, I will show some photos of relevant historical locations and figures. I believe graphic visual depiction will be more impressive than boring language.\nThank you for your invitation. I am looking forward to seeing you.\nSincerely yours,\nLi Ming",
       "sample_cn": "亲爱的威廉姆斯教授：\n很荣幸能够受邀为留学生做有关中国文化的讲座。我非常愿意借此机会与外国朋友进行文化沟通和交流。\n讲座将以中国文化的一个重要组成部分——中国武术为主题。首先，我会对中国武术及其几千年来的发展历程进行简要介绍。然后，我将重点介绍一些常见的中国武术门派，其中每一派都有各自的技术和思想体系。此外，一些相关的历史遗迹和历史人物将用照片呈现给大家。我相信，相对于干瘪的文字，生动形象的视觉描绘可以给大家留下更深刻的印象。\n感谢您的邀请。期待与您见面。\n诚挚的，\n李明",
       "questions": [],
-      "directions": "Suppose you are invited by Professor Williams to give a presentation about Chinese culture to a group of international students. Write a reply to 1) accept the invitation, and 2) introduce the key points of your presentation."
+      "directions": "Suppose you are invited by Professor Williams to give a presentation about Chinese culture to a group of international students. Write a reply to 1) accept the invitation, and 2) introduce the key points of your presentation.",
+      "directions_cn": "假设威廉姆斯教授邀请你为一群国际学生做一场关于中国文化的报告。写一封回信，1) 接受邀请，并2) 介绍你报告的重点。（10分）",
+      "reserve": {
+        "expressions": [
+          [
+            "presentation",
+            "讲座"
+          ],
+          [
+            "Chinese martial arts",
+            "中国武术"
+          ],
+          [
+            "component",
+            "组成部分"
+          ],
+          [
+            "focus on ...",
+            "集中于……，以……为重点"
+          ],
+          [
+            "furthermore",
+            "此外"
+          ],
+          [
+            "graphic",
+            "图画的"
+          ],
+          [
+            "visual",
+            "视觉的"
+          ],
+          [
+            "impressive",
+            "给人印象深刻的"
+          ]
+        ]
+      }
     },
     {
       "id": "2017_writingb",
@@ -3270,7 +3307,121 @@
       "sample_en": "The given chart reveals China's consecutive growth of museums and museum visitors from 2013 to 2015. The growth of museum experienced a slowdown in 2014, while the growth of museum visitors maintained a dynamic momentum.\nThis phenomenon can be attributed to the following reasons. Firstly, thanks to national endeavor at cultural undertakings, numerous museums have been constructed and opened freely to the public. Moreover, China's rapid economic growth underpins the cultural progress. With living standard improving, the public demand increasingly varied spiritual nutrition, thus visiting museums and galleries has become a willing choice for more people.\nHowever, this encouraging sign also presents challenges, like how to address the supply deficiency posed by decelerated growth of museum and people's increasingly diverse need for exhibitions. Museums can improve efficiency by embracing mobile and digital technologies like e-museum. Meanwhile, through digital pictures and interactive videos, visitors can appreciate numerous exhibits from around the world and obtain fresh visiting experiences. It's believed that through joint efforts, China's museums will constitute a bigger driving force advancing cultural development and the important means to enhance people's well-being, thus further boosting economic and social development.",
       "sample_cn": "上述图表反映了2013年至2015年三年间中国博物馆数量以及参观人数连续攀升的情况。其中，博物馆增长在2014年出现放缓，而参观人数则始终保持强劲增长势头。\n之所以出现这种现象，原因可能有以下几点。首先，得益于国家对文化事业的鼎力支持，大批博物馆得以建成并免费对公众开放。其次，中国经济快速发展为文化进步奠定了坚实的基础。随着生活水平的提高，人们需要的精神食粮也愈加多样，流连于博物馆、美术馆自然成为了越来越多人的自发选择。\n不过，这一可喜现象背后也存在诸多挑战，如怎样应对博物馆增长放缓带来的供不应求问题以及人们日益多样化的观展需求问题等。博物馆可以通过移动数字技术，如网上观展来提高效率。同时，通过数字图片和互动视频，参观者们也能欣赏到来自世界各地的展品，获得全新的观展体验。相信通过各方努力，中国博物馆会对文化发展起到更大的推动作用，成为改善民生的重要阵地，从而推动经济社会的更快发展。",
       "questions": [],
-      "directions": "Write an essay based on the chart below. In your writing, you should 1) interpret the chart, and 2) give your comments. You should write about 150 words on the ANSWER SHEET. (15 points)"
+      "directions": "Write an essay based on the chart below. In your writing, you should 1) interpret the chart, and 2) give your comments. You should write about 150 words on the ANSWER SHEET. (15 points)",
+      "directions_cn": "根据下面的图表写一篇短文。写作中你应该1) 解读图表，并2) 发表你的评论。你应在答题卡上写约150词。（15分）",
+      "reserve": {
+        "expressions": [
+          [
+            "slowdown",
+            "减速"
+          ],
+          [
+            "dynamic momentum",
+            "强劲增长的势头"
+          ],
+          [
+            "be attributed to ...",
+            "归因于……"
+          ],
+          [
+            "endeavor",
+            "努力"
+          ],
+          [
+            "numerous",
+            "许多的，大量的"
+          ],
+          [
+            "underpin",
+            "构成……的基础"
+          ],
+          [
+            "spiritual nutrition",
+            "精神食粮，精神营养"
+          ],
+          [
+            "address",
+            "处理，设法解决"
+          ],
+          [
+            "supply deficiency",
+            "供应不足，供不应求"
+          ],
+          [
+            "decelerated growth",
+            "增长放缓"
+          ],
+          [
+            "increasingly diverse need",
+            "日益多样化的需求"
+          ],
+          [
+            "efficiency",
+            "效率，利用率"
+          ],
+          [
+            "mobile and digital technology",
+            "移动数字技术"
+          ],
+          [
+            "interactive",
+            "人机交互的，互动的"
+          ],
+          [
+            "constitute",
+            "构成"
+          ],
+          [
+            "people's well-being",
+            "人民福祉"
+          ]
+        ],
+        "topic_notes": "关于文化：civilization 文明，bright/promising 光明的，cultural exchange/contact 文化交流，community/grassroots culture 社区/草根文化，cultural troupe 文化团体\n关于发展：scale 规模，input 投入，rejuvenation/renaissance 复兴，reinforce/facilitate/empower 巩固、促进，steadily step up 稳定增长，scale up/down 大规模增加/减少，yield good results 取得良好的成效",
+        "materials": [
+          [
+            "The value of culture is its effect on character. It avails nothing unless it enables and strengthens that. Its aim is not beauty but goodness. (Somerset Maugham)",
+            "文化的价值在于它对人类品性的影响。除非文化能使品性更为高尚、有力，否则并无任何作用。它的目标不是美，而是善。（英国小说家、戏剧家，毛姆）"
+          ],
+          [
+            "Up to today, an integrated, open, competition-based and orderly cultural market system has been established in China.",
+            "时至今日，一个综合、开放、以竞争为基础且秩序良好的文化市场体系已然在中国形成。"
+          ],
+          [
+            "In line with the principle of \"letting a hundred flowers blossom and a hundred schools of thoughts contend\", great efforts have been made to inherit and promote the good traditional cultures of China and actively absorb the outstanding cultural achievements of the world, resulting in great prosperity and progress in both public cultural undertakings and cultural industries.",
+            "以“百花齐放百家争鸣”为原则，中国大力继承和弘扬优秀传统文化，积极吸取世界文化的杰出成就，使文化事业和文化产业发展实现了极大的繁荣、取得了巨大的进步。"
+          ],
+          [
+            "A composer cannot write enchanting melody with one note, and a painter cannot paint landscape with only one color. The world is a treasure house where the unique cultural achievements created by people of all countries are displayed.",
+            "作曲家无法用一个音符表达出优美的旋律，画家难以用一种颜色描绘多彩的画面。世界是一座丰富多彩的艺术殿堂，各国人民创造的独特历史文化都是其中的瑰宝。"
+          ]
+        ],
+        "topic_vocab": [
+          [
+            "e-learning",
+            "在线学习"
+          ],
+          [
+            "scale",
+            "规模"
+          ],
+          [
+            "model",
+            "模式"
+          ],
+          [
+            "the proportion of",
+            "所占比例"
+          ],
+          [
+            "customer",
+            "用户"
+          ],
+          [
+            "use/employ",
+            "使用"
+          ]
+        ]
+      }
     }
   ]
 }

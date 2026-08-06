@@ -2810,7 +2810,52 @@
       "sample_en": "Dear Li Ming,\nI must congratulate you for winning the fierce competition for admission to a prestigious university. This success means that you have acquired extraordinary learning capacity and, if this capacity can be further developed and purposefully used in university, you will become competent to build a glittering career.\nHowever, I must also warn you that the approaching university life is different to your previous school life. You should make important adjustment for it; that is, you should mentally and practically prepare to be independent and learn not for examination but for your life purpose. I wish you could learn to manage life and study by yourself in the following four years, and gradually grow into an adult wholly responsible for yourself.\nYours,\nZhang Wei",
       "sample_cn": "亲爱的李明：\n祝贺你在为获得名校录取的激烈竞争中获胜。这个胜利说明你已经拥有突出的学习能力，如果这个能力在大学阶段进一步发展并有目的地使用，你将有能力建立辉煌的事业。\n但是，我也得提醒你即将到来的大学生活与你以往的学校生活是不同的。你应该为大学生活做出重要的调整，即你应该在心理层面和实际层面准备好独立、准备好不为考试学习而是为你自己的人生目的学习。我希望你在接下来的四年中学习管理自己的生活和学习，慢慢地成长为对自己全面负责的成年人。\n张伟",
       "questions": [],
-      "directions": "Suppose your cousin Li Ming has just been admitted to a university. Write him/her a letter to 1) congratulate him/her, and 2) give him/her suggestions on how to get prepared for university life. You should write about 100 words on ANSWER SHEET 2. Do not sign your own name at the end of the letter. Use “Zhang Wei” instead. Do not write the address. (10 points)"
+      "directions": "Suppose your cousin Li Ming has just been admitted to a university. Write him/her a letter to 1) congratulate him/her, and 2) give him/her suggestions on how to get prepared for university life. You should write about 100 words on ANSWER SHEET 2. Do not sign your own name at the end of the letter. Use “Zhang Wei” instead. Do not write the address. (10 points)",
+      "directions_cn": "假设你的表弟/表妹李明刚被一所大学录取。给他/她写一封信，1) 祝贺他/她，并2) 就如何为大学生活做好准备给出建议。你应在答题卡2上写约100词。不要在信末签上自己的名字，用\"Zhang Wei\"代替。不要写地址。（10分）",
+      "reserve": {
+        "expressions": [
+          [
+            "win the fierce competition",
+            "赢得激烈竞争"
+          ],
+          [
+            "extraordinary learning capacity",
+            "杰出的学习能力"
+          ],
+          [
+            "purposefully",
+            "有目的地"
+          ],
+          [
+            "competent",
+            "有能力的"
+          ],
+          [
+            "build a glittering career",
+            "建立辉煌的事业"
+          ],
+          [
+            "approaching",
+            "即将到来的"
+          ],
+          [
+            "make important adjustment",
+            "做出重要调整"
+          ],
+          [
+            "mentally and practically prepare",
+            "心理层面和实际层面做准备"
+          ],
+          [
+            "manage your own life and study",
+            "管理自己的生活和学习"
+          ],
+          [
+            "grow into an adult",
+            "成长为成人"
+          ]
+        ]
+      }
     },
     {
       "id": "2011_writingb",
@@ -2822,7 +2867,215 @@
       "sample_cn": "中国汽车市场仍然由日本、中国和美国品牌占据。美国车份额有小幅增长，仍然是第三。日本、中国品牌变化明显。日本品牌的市场份额下降了约10%，其市场主导地位被中国品牌取代，后者市场份额增加了几乎相当幅度。\n鉴于美国品牌汽车的世界声誉和可信赖的质量，其表现是预料之中的。日本和中国品牌表现的巨大变化看起来很突然，但也是预料之中的。中国汽车制造商已经缩小了自己与外国竞争者之间的技术差距，并聪明地改变了其推广策略以满足中国消费者对便宜商品的喜好。在中国品牌发展的同时，日本品牌因频繁的质量投诉遭到信誉危机的打击。\n日本品牌的困境提醒一个事实：质量是产品的灵魂。希望中国汽车制造商能一贯保证好的质量，因此保护自己的声誉以保持市场受欢迎程度。",
       "chart_img": "img/2011_writingb_chart.png",
       "questions": [],
-      "directions": "Write an essay based on the following chart. In your writing, you should 1) interpret the chart and 2) give your comments. You should write at least 150 words. Write your essay on ANSWER SHEET 2. (15 points)"
+      "directions": "Write an essay based on the following chart. In your writing, you should 1) interpret the chart and 2) give your comments. You should write at least 150 words. Write your essay on ANSWER SHEET 2. (15 points)",
+      "directions_cn": "根据下面的图表写一篇短文。写作中你应该1) 解读图表，并2) 发表你的评论。你应至少写150词。在答题卡2上写出你的短文。（15分）",
+      "vocab_highlights": {
+        "words": [
+          [
+            "dominate",
+            "支配、控制"
+          ],
+          [
+            "noticeable",
+            "明显的"
+          ],
+          [
+            "slip",
+            "下降"
+          ],
+          [
+            "given",
+            "鉴于"
+          ],
+          [
+            "bargain",
+            "便宜商品"
+          ],
+          [
+            "plight",
+            "困境"
+          ],
+          [
+            "reminder",
+            "提醒认识的事物"
+          ],
+          [
+            "soul",
+            "灵魂"
+          ],
+          [
+            "consistently",
+            "一贯地"
+          ]
+        ],
+        "collocations": [
+          [
+            "a slight increase",
+            "小幅上涨"
+          ],
+          [
+            "be displaced from one’s leading position by",
+            "被……取代主导地位"
+          ],
+          [
+            "expand one’s share",
+            "增加市场份额"
+          ],
+          [
+            "by nearly the same margin",
+            "几乎相同幅度"
+          ],
+          [
+            "is to be expected",
+            "预料之中的"
+          ],
+          [
+            "worldwide fame",
+            "世界声誉"
+          ],
+          [
+            "reliable quality",
+            "可信赖的质量"
+          ],
+          [
+            "narrow the technology gap",
+            "缩小技术差距"
+          ],
+          [
+            "appetite for",
+            "对……的喜好"
+          ],
+          [
+            "quality complaint",
+            "质量投诉"
+          ],
+          [
+            "maintain market popularity",
+            "保持市场满意度"
+          ]
+        ]
+      },
+      "reserve": {
+        "highlights": {
+          "words": [
+            [
+              "dominate",
+              "支配、控制"
+            ],
+            [
+              "noticeable",
+              "明显的"
+            ],
+            [
+              "slip",
+              "下降"
+            ],
+            [
+              "given",
+              "鉴于"
+            ],
+            [
+              "bargain",
+              "便宜商品"
+            ],
+            [
+              "plight",
+              "困境"
+            ],
+            [
+              "reminder",
+              "提醒认识的事物"
+            ],
+            [
+              "soul",
+              "灵魂"
+            ],
+            [
+              "consistently",
+              "一贯地"
+            ]
+          ],
+          "collocations": [
+            [
+              "a slight increase",
+              "小幅上涨"
+            ],
+            [
+              "be displaced from one's leading position by",
+              "被……取代主导地位"
+            ],
+            [
+              "expand one's share",
+              "增加市场份额"
+            ],
+            [
+              "by nearly the same margin",
+              "几乎相同幅度"
+            ],
+            [
+              "is to be expected",
+              "预料之中的"
+            ],
+            [
+              "worldwide fame",
+              "世界声誉"
+            ],
+            [
+              "reliable quality",
+              "可信赖的质量"
+            ],
+            [
+              "narrow the technology gap",
+              "缩小技术差距"
+            ],
+            [
+              "appetite for",
+              "对……的喜好"
+            ],
+            [
+              "quality complaint",
+              "质量投诉"
+            ],
+            [
+              "maintain market popularity",
+              "保持市场满意度"
+            ]
+          ]
+        },
+        "topic_notes": "市场份额上涨的原因：technological improvement 技术进步，effective price strategy 有效的价格策略，price advantage 价格优势，top quality 质量上乘，competitive market analysis, promotion and marketing activities 有竞争力的市场分析、推广和市场活动\n市场份额下降的原因：poor quality 质量不好，unable to satisfy customers' taste 无法满足客户的喜好，fall behind in technological race 在技术竞赛中落后，the emergence of a strong competitor 出现强有力的竞争对手",
+        "materials": [
+          [
+            "Car sales have been increasing at a rocketing rate, making China the world's second-largest vehicle market by unit sales after the U.S.",
+            "汽车销量以火箭速度快速增加，使中国仅次于美国，成为单位销售量第二大的机动车市场。"
+          ],
+          [
+            "For years, China has promoted the auto business, viewing it as a critical driver of economic growth and industrialization.",
+            "多年来，中国推广汽车产业，将其视为经济增长和工业化的主要动力。"
+          ],
+          [
+            "Government officials are increasingly worried about the environmental and social costs of China's rapid shift to car driving, which has helped cover cities in air pollution, noisy traffic and contributed to a surge in roadway-accident deaths.",
+            "政府官员越来越担心中国快速变为汽车驾驶（的国度）的环境和社会代价，向汽车驾驶（国度）的转变已使城市饱受空气污染和喧闹交通的困扰，并导致车祸死亡人数的上升。"
+          ]
+        ],
+        "topic_vocab": [
+          [
+            "worldwide smart phone market",
+            "全球智能手机市场"
+          ],
+          [
+            "Nokia",
+            "诺基亚"
+          ],
+          [
+            "Samsung",
+            "三星"
+          ],
+          [
+            "iPhone",
+            "苹果手机"
+          ]
+        ]
+      }
     }
   ]
 }
