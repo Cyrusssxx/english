@@ -30,8 +30,8 @@ function getAutoExample() { return localStorage.getItem('en2_autoExample') === '
 function setAutoExample(v) { localStorage.setItem('en2_autoExample', v ? '1' : '0'); }
 
 // 自定义快捷键：动作 -> KeyboardEvent.code，存 localStorage
-const DEFAULT_KEYS = { flip: 'Space', known: 'ArrowRight', unknown: 'ArrowLeft', undo: 'Backspace', fav: 'KeyF' };
-const KEY_ACTIONS = [['flip', '显示释义'], ['known', '认识'], ['unknown', '不认识'], ['undo', '回退'], ['fav', '收藏到目标词书']];
+const DEFAULT_KEYS = { flip: 'Space', known: 'ArrowRight', unknown: 'ArrowLeft', master: 'KeyM', undo: 'Backspace', fav: 'KeyF' };
+const KEY_ACTIONS = [['flip', '显示释义'], ['known', '认识'], ['unknown', '不认识'], ['master', '标记已掌握(熟)'], ['undo', '回退'], ['fav', '收藏到目标词书']];
 function getKeyMap() { try { return { ...DEFAULT_KEYS, ...(JSON.parse(localStorage.getItem('en2_keymap') || '{}')) }; } catch (e) { return { ...DEFAULT_KEYS }; } }
 function setKeyMap(m) { localStorage.setItem('en2_keymap', JSON.stringify(m)); }
 function keyLabel(code) {
@@ -176,7 +176,7 @@ function toggleAutoExample() { setAutoExample(!getAutoExample()); renderSettings
 // mode: mix=到期复习+当日新词 / review=仅到期复习 / new=仅新词；includeFuture=提前背未到期词
 async function buildQueue(mode, includeFuture) {
     const all = (await vocabByDeck(getStudyDeck()));
-    const byAdd = (a, b) => (a.added_at || '').localeCompare(b.added_at || '');
+    const byAdd = (a, b) => (a.seq ? a.seq : 1e9) - (b.seq ? b.seq : 1e9) || (a.added_at || '').localeCompare(b.added_at || '');
     const today = dayStr(0);
     const reviews = all.filter(v => v.srs && v.srs.due && v.srs.due <= today).sort(byAdd);
     const news = all.filter(v => !v.srs).sort(byAdd);
@@ -303,7 +303,10 @@ async function renderCard() {
         </div>
         <div class="flashcard" id="flashcard" onclick="onFlip()">
             <div class="fc-front">
-                ${tag}
+                <div class="fc-top-left">
+                    ${tag}
+                    <button class="fc-master" onclick="event.stopPropagation();master()" title="标记已掌握，不再进入背词列表">熟</button>
+                </div>
                 <button class="fc-fav ${inTarget ? 'on' : ''}" onclick="event.stopPropagation();toggleFav()" title="收藏到「${esc(deckName(favTarget))}」">${inTarget ? '★' : '☆'}</button>
                 <div class="fc-word">${esc(v.word)}</div>
                 <div class="fc-phonetic">${esc(v.phonetic || '')}</div>
@@ -344,8 +347,7 @@ function onFlip() {
     const act = document.getElementById('studyActions');
     if (act) act.innerHTML = `
         <button class="sa-btn again" onclick="judge(false)">✕ 不认识 <kbd>←</kbd></button>
-        <button class="sa-btn good" onclick="judge(true)">✓ 认识 <kbd>→</kbd></button>
-        <button class="sa-btn master" onclick="master()">熟</button>`;
+        <button class="sa-btn good" onclick="judge(true)">✓ 认识 <kbd>→</kbd></button>`;
 }
 
 /** 熟：标记已掌握，不再进入背词队列（interval≥21 视为 mastered） */
@@ -521,6 +523,7 @@ document.addEventListener('keydown', (e) => {
     } else {
         if (km.unknown === e.code) { e.preventDefault(); judge(false); }
         else if (km.known === e.code) { e.preventDefault(); judge(true); }
+        else if (km.master === e.code) { e.preventDefault(); master(); }
     }
 });
 

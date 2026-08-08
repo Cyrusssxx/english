@@ -118,7 +118,7 @@
         async function renderList() {
             curActive = getActiveDeck();
             const src = await vocabByDeck(viewDeck);
-            curRows = src.sort((a, b) => (b.added_at || '').localeCompare(a.added_at || ''));
+            curRows = src.sort((a, b) => (b.seq ? b.seq : -1) - (a.seq ? a.seq : -1) || (b.added_at || '').localeCompare(a.added_at || ''));
             document.getElementById('vocabCount').textContent = curRows.length ? `共 ${curRows.length} 个词/词组` : '';
             if (!curRows.length) {
                 document.getElementById('vocabList').innerHTML = '<div class="empty">这本词书还没有词。精读时点下划线词加入，或用「记录生词」「导入词书」批量添加。</div>';

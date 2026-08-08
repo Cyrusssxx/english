@@ -113,6 +113,13 @@ function now() {
     return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
 }
 
+/** 全局自增序号：保证加入顺序稳定（added_at 秒级相同会乱序），存 localStorage */
+function nextSeq() {
+    const v = (parseInt(localStorage.getItem('en2_vocabSeq') || '0', 10) || 0) + 1;
+    localStorage.setItem('en2_vocabSeq', String(v));
+    return v;
+}
+
 // ==================== 词书（多词书系统） ====================
 // 词书元数据存 localStorage；词-词书归属存 vocab 记录的 decks 数组（随备份导出）。
 const DEFAULT_DECK_ID = 'default';
@@ -220,6 +227,19 @@ async function migrateVocabDecks() {
         }
         localStorage.setItem('en2_favMigrated', '1');
     }
+    // 补齐 seq：历史无 seq 记录按 added_at 升序分配，保证加入顺序稳定
+    if (localStorage.getItem('en2_seqMigrated') !== '1') {
+        const missing = (await dbAll('vocab')).filter(v => !v.seq)
+            .sort((a, b) => (a.added_at || '').localeCompare(b.added_at || ''));
+        if (missing.length) {
+            let lastSeq = 0;
+            for (const v of missing) {
+                v.seq = (lastSeq = nextSeq());
+                await dbPut('vocab', v);
+            }
+        }
+        localStorage.setItem('en2_seqMigrated', '1');
+    }
 }
 
 // ==================== 业务操作 ====================
@@ -237,6 +257,7 @@ async function addVocab(word, meaning, phonetic, sentenceId, articleId, exampleE
         example_cn: exampleCn || (old && old.example_cn) || '',
         srs: old && old.srs ? old.srs : undefined,
         decks: [...decks],
+        seq: (old && old.seq) || nextSeq(),
         added_at: (old && old.added_at) || now()
     });
 }
@@ -261,7 +282,7 @@ async function addWordsBulk(items, deckId) {
                 word, meaning: it.meaning || '', phonetic: it.phonetic || '',
                 sentence_id: it.sentence_id || '', article_id: it.article_id || '',
                 example_en: it.example_en || '', example_cn: it.example_cn || '',
-                srs: undefined, decks: [deckId], added_at: now()
+                srs: undefined, decks: [deckId], seq: nextSeq(), added_at: now()
             });
             added++;
         }

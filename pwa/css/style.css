@@ -1280,14 +1280,36 @@ body.mode-read .quiz-pane {
     color: var(--text-light);
 }
 
+.fc-master {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.fc-master:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
 .fc-fav.on {
     color: #f59e0b;
 }
 
-.ct-tag {
+.fc-top-left {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 12px;
+    left: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ct-tag {
     font-size: 0.72rem;
     padding: 2px 10px;
     border-radius: 999px;
@@ -1451,10 +1473,6 @@ html.dark .fc-example .fe-en .tgt {
 
 .sa-btn.good {
     background: var(--success);
-}
-
-.sa-btn.master {
-    background: var(--primary-dim, #64748b);
 }
 
 .sa-btn.reveal {
