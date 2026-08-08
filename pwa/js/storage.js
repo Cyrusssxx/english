@@ -147,6 +147,12 @@ function getStudyDeck() {
 }
 function setStudyDeck(id) { localStorage.setItem('en2_studyDeck', id); }
 
+/** 精翻点词「加入生词本」的目标词书：背词范围指定了具体词书就用它，否则用收藏目标词书 */
+function getVocabTarget() {
+    const study = getStudyDeck();
+    return study === ALL_DECKS ? getActiveDeck() : study;
+}
+
 /** 新建词书，返回新 id */
 function createDeck(name) {
     name = String(name || '').trim();

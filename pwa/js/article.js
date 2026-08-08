@@ -184,7 +184,7 @@ async function init() {
 
     // 用户数据
     await migrateVocabDecks();
-    vocabSet = new Set((await dbAll('vocab')).map(v => v.word));
+    vocabSet = new Set((await vocabByDeck(getVocabTarget())).map(v => v.word));
     favSet = new Set((await dbAll('fav_sentences')).map(f => f.sentence_id));
     for (const a of await dbAll('quiz_answers')) if (a.article_id === AID) answerMap[a.question_id] = a;
 
@@ -507,7 +507,7 @@ async function onAddVocab(btn, sid, wi) {
         btn.textContent = '+ 加入生词本';
         btn.classList.remove('added');
     } else {
-        await addVocab(w.w, w.meaning, w.phonetic, sid, AID, sent.en, sent.cn);
+        await addVocab(w.w, w.meaning, w.phonetic, sid, AID, sent.en, sent.cn, getVocabTarget());
         vocabSet.add(w.w);
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
@@ -526,7 +526,7 @@ async function onAddDictVocab(btn) {
         btn.textContent = '+ 加入生词本';
         btn.classList.remove('added');
     } else {
-        await addVocab(word, entry ? entry.t : '', entry ? entry.p : '', sid, AID, ex.en, ex.cn);
+        await addVocab(word, entry ? entry.t : '', entry ? entry.p : '', sid, AID, ex.en, ex.cn, getVocabTarget());
         vocabSet.add(word);
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
@@ -561,7 +561,7 @@ async function onAddPhraseVocab(btn) {
         btn.textContent = '+ 加入生词本';
         btn.classList.remove('added');
     } else {
-        await addVocab(key, meaning, '', sid, AID, ex.en, ex.cn);
+        await addVocab(key, meaning, '', sid, AID, ex.en, ex.cn, getVocabTarget());
         vocabSet.add(key);
         btn.textContent = '已加入 ✓';
         btn.classList.add('added');
@@ -594,10 +594,10 @@ async function recordArticleWords() {
         }
     }
     if (!items.length) { alert('本篇没有可新增的难词（可能都已在生词本）'); return; }
-    const dname = deckName(getActiveDeck());
+    const dname = deckName(getVocabTarget());
     if (!confirm(`将本篇 ${items.length} 个较难词加入「${dname}」？`)) return;
-    const added = await addWordsBulk(items, getActiveDeck());
-    vocabSet = new Set((await dbAll('vocab')).map(v => v.word));
+    const added = await addWordsBulk(items, getVocabTarget());
+    vocabSet = new Set((await vocabByDeck(getVocabTarget())).map(v => v.word));
     alert(`已加入「${dname}」${added} 个词`);
 }
 
