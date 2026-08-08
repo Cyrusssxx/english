@@ -1453,6 +1453,10 @@ html.dark .fc-example .fe-en .tgt {
     background: var(--success);
 }
 
+.sa-btn.master {
+    background: var(--primary-dim, #64748b);
+}
+
 .sa-btn.reveal {
     background: var(--primary);
 }

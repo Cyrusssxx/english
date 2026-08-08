@@ -176,11 +176,11 @@ function toggleAutoExample() { setAutoExample(!getAutoExample()); renderSettings
 // mode: mix=到期复习+当日新词 / review=仅到期复习 / new=仅新词；includeFuture=提前背未到期词
 async function buildQueue(mode, includeFuture) {
     const all = (await vocabByDeck(getStudyDeck()));
+    const byAdd = (a, b) => (a.added_at || '').localeCompare(b.added_at || '');
     const today = dayStr(0);
-    const reviews = all.filter(v => v.srs && v.srs.due && v.srs.due <= today);
-    const news = all.filter(v => !v.srs);
-    const future = all.filter(v => v.srs && v.srs.due && v.srs.due > today);
-    future.sort((a, b) => (a.srs.due || '').localeCompare(b.srs.due || ''));
+    const reviews = all.filter(v => v.srs && v.srs.due && v.srs.due <= today).sort(byAdd);
+    const news = all.filter(v => !v.srs).sort(byAdd);
+    const future = all.filter(v => v.srs && v.srs.due && v.srs.due > today).sort(byAdd);
     let q;
     if (mode === 'review') {
         q = includeFuture ? [...reviews, ...future] : [...reviews];
@@ -344,7 +344,26 @@ function onFlip() {
     const act = document.getElementById('studyActions');
     if (act) act.innerHTML = `
         <button class="sa-btn again" onclick="judge(false)">✕ 不认识 <kbd>←</kbd></button>
-        <button class="sa-btn good" onclick="judge(true)">✓ 认识 <kbd>→</kbd></button>`;
+        <button class="sa-btn good" onclick="judge(true)">✓ 认识 <kbd>→</kbd></button>
+        <button class="sa-btn master" onclick="master()">熟</button>`;
+}
+
+/** 熟：标记已掌握，不再进入背词队列（interval≥21 视为 mastered） */
+async function master() {
+    if (cur >= queue.length) return;
+    const v0 = queue[cur];
+    history.push({
+        cur, done, word: v0.word,
+        prevSrs: v0.srs ? JSON.parse(JSON.stringify(v0.srs)) : undefined,
+        pushedBack: false, mastered: true
+    });
+    const v = queue[cur];
+    v.srs = { interval: 30, reps: 9, ease: 3.0, lapses: 0, state: 'review', due: dayStr(30), last: dayStr(0) };
+    await dbPut('vocab', v);
+    done++;
+    cur++;
+    saveSession();
+    renderCard();
 }
 
 async function judge(known) {
