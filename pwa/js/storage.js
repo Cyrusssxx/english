@@ -227,18 +227,23 @@ async function migrateVocabDecks() {
         }
         localStorage.setItem('en2_favMigrated', '1');
     }
-    // 补齐 seq：历史无 seq 记录按 added_at 升序分配，保证加入顺序稳定
-    if (localStorage.getItem('en2_seqMigrated') !== '1') {
-        const missing = (await dbAll('vocab')).filter(v => !v.seq)
-            .sort((a, b) => (a.added_at || '').localeCompare(b.added_at || ''));
-        if (missing.length) {
-            let lastSeq = 0;
-            for (const v of missing) {
-                v.seq = (lastSeq = nextSeq());
-                await dbPut('vocab', v);
-            }
+    // 补齐 seq：历史无 seq 记录按「来源文章+句序」分配（一键记录同秒批量无法用 added_at 区分，
+    // 按文章内出现顺序重排，而非字典序）；无来源的词退化为 added_at 排序。
+    // v2：v44 首版按 added_at 迁移导致同秒批量词仍字典序，这里统一按来源顺序重排全部记录。
+    if (localStorage.getItem('en2_seqMigrated') !== '2') {
+        const all = (await dbAll('vocab'));
+        const key = v => {
+            const aid = v.article_id || '';
+            const m = /_s(\d+)$/.exec(v.sentence_id || '');
+            if (!aid) return 'zzzzzz_' + (v.added_at || '');
+            return aid + '_' + (m ? String(m[1]).padStart(5, '0') : '');
+        };
+        all.sort((a, b) => key(a).localeCompare(key(b)) || (a.added_at || '').localeCompare(b.added_at || ''));
+        for (const v of all) {
+            v.seq = nextSeq();
+            await dbPut('vocab', v);
         }
-        localStorage.setItem('en2_seqMigrated', '1');
+        localStorage.setItem('en2_seqMigrated', '2');
     }
 }
 
