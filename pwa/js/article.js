@@ -387,11 +387,29 @@ function annotatePhrases(text, sid) {
                 if (i + n > toks.length) continue;
                 let ok = true;
                 for (let k = 1; k < n; k++) {
-                    if (toks[i + k].low !== c.tokens[k]) { ok = false; break; }
+                    if (!phraseTokenEq(toks[i + k], c.tokens[k])) { ok = false; break; }
                     // 两 token 之间只允许空白/连字符，否则不是连续词组
                     if (!/^[\s\-]*$/.test(text.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
                 }
                 if (ok) { matched = c; break; }
+            }
+        }
+        // 首词精确未命中 → 尝试词形还原匹配（draws out→draw out）
+        if (!matched) {
+            for (const stem of stemCandidates(toks[i].low)) {
+                const c2s = phraseCandidates(stem);
+                if (!c2s) continue;
+                for (const c of c2s) {
+                    const n = c.tokens.length;
+                    if (i + n > toks.length) continue;
+                    let ok = true;
+                    for (let k = 1; k < n; k++) {
+                        if (!phraseTokenEq(toks[i + k], c.tokens[k])) { ok = false; break; }
+                        if (!/^[\s\-]*$/.test(text.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
+                    }
+                    if (ok) { matched = c; break; }
+                }
+                if (matched) break;
             }
         }
         if (matched) {
@@ -408,6 +426,16 @@ function annotatePhrases(text, sid) {
     }
     out += annotatePlain(text.slice(last), sid);
     return out;
+}
+
+/** 词组 token 匹配：精确相等，或任意一方词形还原后相等（draws=draw、reported=report）。 */
+function phraseTokenEq(tok, candWord) {
+    if (tok.low === candWord) return true;
+    if (typeof stemCandidates !== 'function') return false;
+    const cands = stemCandidates(candWord);
+    if (cands.includes(tok.low)) return true;
+    const lows = stemCandidates(tok.low);
+    return cands.some(c => lows.includes(c)) || cands.includes(tok.low) || lows.includes(candWord);
 }
 
 /** 全词匹配（大小写不敏感，前后均非字母才算命中），返回位置或 -1 */
