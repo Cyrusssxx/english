@@ -19,6 +19,16 @@
         .chain-tools button{background:var(--accent,#0d9488);color:#fff;border:none;border-radius:9px;
             padding:9px 14px;font-size:14px;cursor:pointer;}
         .chain-tools button.ghost{background:transparent;color:var(--accent,#0d9488);border:1px solid var(--accent,#0d9488);}
+        .book-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;}
+        .book-label{font-size:13px;color:var(--muted,#64748b);}
+        .book-btn{background:transparent;color:var(--muted,#64748b);border:1px solid var(--border,#e2e8f0);
+            border-radius:9px;padding:6px 12px;font-size:13px;cursor:pointer;}
+        .book-btn.active{background:var(--accent,#0d9488);color:#fff;border-color:var(--accent,#0d9488);}
+        .obscure-note{margin-top:10px;max-height:210px;overflow:auto;border:1px solid var(--border,#e2e8f0);
+            border-radius:10px;padding:10px 12px;background:var(--soft,#f1f5f9);}
+        .obscure-note .on-item{font-size:13px;line-height:1.8;}
+        .obscure-note .on-w{color:var(--accent,#0d9488);font-weight:600;margin-right:6px;}
+        .obscure-note .on-m{color:var(--muted,#475569);}
         #words{width:100%;min-height:120px;border:1px solid var(--border,#e2e8f0);border-radius:10px;
             padding:12px;font-size:15px;line-height:1.6;resize:vertical;background:var(--input,#fff);color:var(--text,#1a202c);}
         .chain-hint{color:var(--muted,#64748b);font-size:13px;margin-top:6px;}
@@ -64,14 +74,20 @@
         </div>
 
         <div class="chain-card">
+            <div class="book-row">
+                <span class="book-label">词书：</span>
+                <button class="book-btn active" data-book="freq" onclick="selectBook('freq')">真题高频词</button>
+                <button class="book-btn" data-book="obscure" onclick="selectBook('obscure')">熟词僻意</button>
+            </div>
             <textarea id="words" placeholder="每行一个单词或词组，最多约 40 个。例如：&#10;decline&#10;increasingly&#10;tend to&#10;account for"></textarea>
             <div class="chain-tools">
                 <button onclick="generate()">生成串联句</button>
                 <button class="ghost" onclick="random40()">随机抽 40 词</button>
                 <button class="ghost" onclick="fillExample()">示例</button>
-                <button class="ghost" onclick="document.getElementById('words').value='';document.getElementById('chStats').innerHTML='';document.getElementById('chList').innerHTML='';">清空</button>
+                <button class="ghost" onclick="clearAll()">清空</button>
             </div>
-            <div class="chain-hint">提示：点击句子中任意单词/词组即可看中文释义；下方色块标出该句覆盖的你输入的词。词组（如 tend to）也会被识别。英文小写匹配。</div>
+            <div id="obscureNote" class="obscure-note" hidden></div>
+            <div class="chain-hint">提示：点击句子中任意单词/词组即可看中文释义；下方色块标出该句覆盖的你输入的词。词组（如 tend to）也会被识别，英文小写匹配。可切换「真题高频词 / 熟词僻意」词书后随机抽 40 词，每次尽量不重复。</div>
         </div>
 
         <div id="chStats"></div>
@@ -303,6 +319,8 @@
     /* ===================== 数据加载 + 串联算法 ===================== */
     let CORPUS = [];
     const REF_CACHE = {};   // aid -> ref_cn（懒加载，按文章去重）
+    const BOOKS = { freq: null, obscure: null };
+    let currentBook = 'freq';
 
     async function boot() {
         try {
@@ -316,7 +334,76 @@
         await loadPhrases();
         try { await loadHardwords(); } catch (e) {}
         try { await loadFreq(); } catch (e) {}
+        // 加载两套词书
+        try {
+            const [f, o] = await Promise.all([
+                fetch('data/wordbook_freq.json').then(r => r.json()),
+                fetch('data/wordbook_obscure.json').then(r => r.json()),
+            ]);
+            BOOKS.freq = f; BOOKS.obscure = o;
+        } catch (e) { /* 词书缺失不影响主功能 */ }
         window.__ready = true;
+    }
+
+    function shuffle(arr) {
+        const a = arr.slice();
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
+
+    function selectBook(id) {
+        currentBook = id;
+        document.querySelectorAll('.book-btn').forEach(b => {
+            b.classList.toggle('active', b.getAttribute('data-book') === id);
+        });
+        const note = document.getElementById('obscureNote');
+        note.hidden = true; note.innerHTML = '';
+    }
+
+    function clearAll() {
+        document.getElementById('words').value = '';
+        document.getElementById('chStats').innerHTML = '';
+        document.getElementById('chList').innerHTML = '';
+        const note = document.getElementById('obscureNote');
+        note.hidden = true; note.innerHTML = '';
+    }
+
+    // 随机抽 40 词：从当前词书抽取，并与近几次抽取尽量不重复
+    async function random40() {
+        if (!window.__ready) { alert('语料还在加载，请稍候'); return; }
+        const book = BOOKS[currentBook];
+        if (!book) { alert('词书未加载，请刷新'); return; }
+        const pool = currentBook === 'freq' ? (book.words || []) : (book.items || []).map(i => i.w);
+        if (!pool.length) { alert('词书为空'); return; }
+        const k = Math.min(40, pool.length);
+        const histKey = 'chain_last40_' + currentBook;
+        let hist = [];
+        try { hist = JSON.parse(localStorage.getItem(histKey) || '[]'); } catch (e) { hist = []; }
+        const recent = new Set(hist.flat());   // 近 3 次并集
+        const targetOv = Math.min(4, Math.floor(pool.length * 0.08));
+        let best = null, bestOv = Infinity;
+        for (let t = 0; t < 12; t++) {
+            const pick = shuffle(pool).slice(0, k);
+            const ov = pick.filter(w => recent.has(w)).length;
+            if (ov < bestOv) { bestOv = ov; best = pick; if (ov <= targetOv) break; }
+        }
+        hist.push(best);
+        while (hist.length > 3) hist.shift();
+        try { localStorage.setItem(histKey, JSON.stringify(hist)); } catch (e) {}
+        document.getElementById('words').value = best.join('\n');
+        // 熟词僻意：展示本次词及僻意
+        const note = document.getElementById('obscureNote');
+        if (currentBook === 'obscure') {
+            const map = {}; (book.items || []).forEach(i => { map[i.w] = i.m; });
+            note.innerHTML = '<div class="on-item"><b>本次熟词僻意（点句内词看释义，此处对照僻意）：</b></div>' +
+                best.map(w => `<div class="on-item"><span class="on-w">${esc(w)}</span><span class="on-m">${esc(map[w] || '（无）')}</span></div>`).join('');
+            note.hidden = false;
+        } else {
+            note.hidden = true; note.innerHTML = '';
+        }
     }
 
     function parseQueries(text) {
@@ -420,14 +507,6 @@
         }
         div.dataset.loaded = '1';
         div.hidden = false; btn.disabled = false; btn.textContent = '收起译文';
-    }
-
-    async function random40() {
-        if (!window.__ready) { alert('语料还在加载，请稍候'); return; }
-        const keys = Object.keys(_freq || {});
-        if (!keys.length) { alert('词频表未加载'); return; }
-        for (let i = keys.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [keys[i], keys[j]] = [keys[j], keys[i]]; }
-        document.getElementById('words').value = keys.slice(0, 40).join('\n');
     }
 
     function fillExample() {
