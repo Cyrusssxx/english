@@ -2,10 +2,13 @@
 used by chain.html (串联词汇). Covers EN2 reading (2007-2025) + EN1 reading (2010-2025).
 
 Each entry: {"id": sentence id, "aid": article id, "exam": "en1"/"en2",
-             "year": int, "en": english sentence text}
+             "year": int, "en": english sentence text,
+             "cn": per-sentence 中文译文 (可选, 仅当为真正的逐句译文时嵌入)}
 
-Translation (ref_cn) is intentionally NOT embedded here (it's whole-passage and heavy);
-chain.html lazy-loads an article's ref_cn on demand via storage getArticle.
+嵌入策略：
+- EN2 2010-2025 的句子级 cn 来自早期提取、质量好，且与整篇 ref_cn 不同 → 直接嵌入作为逐句译文。
+- 2007-2009 / EN1 的句子 cn 等于整篇 ref_cn（重复整段）→ 不嵌入，交由 chain.html 按 aid 懒加载文章 ref_cn 整篇译文。
+- 无 cn 的句子（如 EN1 扫描图年份）→ 不嵌入，回退为「暂无译文」。
 """
 import json, glob, os
 from datetime import datetime, timezone
@@ -20,17 +23,23 @@ def add_from(path, exam):
         if not a.get('type', '').startswith('text'):
             continue
         aid = a['id']
+        art_ref_cn = a.get('ref_cn') or ''   # 整篇参考译文（2007-2009/EN1 有，EN2 2010-2025 无）
         for s in a.get('sentences', []):
             en = (s.get('en') or '').replace('\n', ' ').strip()
             if not en:
                 continue
-            sentences.append({
+            sent = {
                 'id': s['id'],
                 'aid': aid,
                 'exam': exam,
                 'year': year,
                 'en': en,
-            })
+            }
+            # 仅当该 cn 是真正的逐句译文（不等于整篇 ref_cn）时才嵌入
+            cn = (s.get('cn') or '').strip()
+            if cn and cn != art_ref_cn:
+                sent['cn'] = cn
+            sentences.append(sent)
 
 # EN2 reading: 2007-2025
 for y in range(2007, 2026):

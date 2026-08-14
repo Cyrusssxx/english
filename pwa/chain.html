@@ -388,6 +388,7 @@
             const qs = (coveredBy[si] || []).map(i => queries[i]);
             const { html } = annotate({ id: s.id, en: s.en, words: [] });
             const ex = s.exam === 'en1' ? '英语一' : '英语二';
+            const hasCn = !!(s.cn && s.cn.trim());
             return `<div class="ch-card">
                 <div class="ch-head">
                     <span class="ch-src">${s.year} ${ex} · ${typeLabel(s.aid)}</span>
@@ -395,7 +396,7 @@
                 </div>
                 <div class="ch-sent">${html}</div>
                 <div class="ch-words">${qs.map(q => `<span class="ch-chip">${esc(q)}</span>`).join('')}</div>
-                <div class="ch-cn" id="cn-${esc(s.id)}" hidden></div>
+                <div class="ch-cn" id="cn-${esc(s.id)}" hidden${hasCn ? ' data-loaded="1"' : ''}>${hasCn ? esc(s.cn) : ''}</div>
             </div>`;
         }).join('');
     }
@@ -404,12 +405,21 @@
         const div = document.getElementById('cn-' + sid);
         if (!div) return;
         if (!div.hidden) { div.hidden = true; btn.textContent = '看译文'; return; }
-        if (!REF_CACHE[aid]) {
-            const art = await getArticle(aid);
-            REF_CACHE[aid] = (art && art.ref_cn) ? art.ref_cn : '（该篇暂无参考译文）';
+        // 已内嵌逐句译文（EN2 2010-2025）或已加载过 → 直接展开
+        if (div.dataset.loaded) { div.hidden = false; btn.textContent = '收起译文'; return; }
+        // 否则异步拉取整篇 ref_cn（2007-2009/EN1 等无逐句译文的文章）
+        btn.disabled = true; btn.textContent = '加载中…';
+        try {
+            if (!REF_CACHE[aid]) {
+                const art = await getArticle(aid);
+                REF_CACHE[aid] = (art && art.ref_cn) ? art.ref_cn : '（该篇暂无参考译文）';
+            }
+            div.textContent = REF_CACHE[aid];
+        } catch (e) {
+            div.textContent = '（该篇暂无参考译文）';
         }
-        div.textContent = REF_CACHE[aid];
-        div.hidden = false; btn.textContent = '收起译文';
+        div.dataset.loaded = '1';
+        div.hidden = false; btn.disabled = false; btn.textContent = '收起译文';
     }
 
     async function random40() {
