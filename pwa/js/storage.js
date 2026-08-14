@@ -23,12 +23,48 @@ async function loadYear(year) {
     return data;
 }
 
-/** 文章 id 形如 2022_text1，前4位即年份 */
+/** 文章 id 形如 2022_text1，前4位即年份；en1_ 前缀走英语一独立目录 */
 async function getArticle(aid) {
+    if (typeof aid === 'string' && aid.startsWith('en1_')) {
+        const m = /^en1_(\d{4})_/.exec(aid);
+        const year = m ? m[1] : aid.slice(4, 8);
+        return getEn1Article(year, aid);
+    }
     const year = parseInt(aid.slice(0, 4), 10);
     if (!year) return null;
     const data = await loadYear(year);
     return (data.articles || []).find(a => a.id === aid) || null;
+}
+
+// ==================== 英语一（EN1）题库：独立目录 data/en1/${year}.json ====================
+const _en1YearCache = {};   // {year: data}
+let _en1IndexCache = null;  // en1_index.json
+
+async function loadEn1Year(year) {
+    if (_en1YearCache[year]) return _en1YearCache[year];
+    const resp = await fetch(`data/en1/${year}.json`);
+    if (!resp.ok) throw new Error(`加载英语一 ${year} 年题库失败: ` + resp.status);
+    const data = await resp.json();
+    _en1YearCache[year] = data;
+    return data;
+}
+
+async function getEn1Article(year, aid) {
+    try {
+        const data = await loadEn1Year(year);
+        return (data.articles || []).find(a => a.id === aid) || null;
+    } catch (e) {
+        console.warn(e);
+        return null;
+    }
+}
+
+async function loadEn1Index() {
+    if (_en1IndexCache) return _en1IndexCache;
+    const resp = await fetch('data/en1_index.json');
+    if (!resp.ok) throw new Error('加载英语一目录失败: ' + resp.status);
+    _en1IndexCache = await resp.json();
+    return _en1IndexCache;
 }
 
 // 文章类型显示名

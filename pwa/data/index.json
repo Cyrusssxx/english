@@ -1234,5 +1234,117 @@
         }
       ]
     }
+,
+    {
+      "year": 2009,
+      "articles": [
+        {
+          "id": "2009_text1",
+          "type": "text1",
+          "title": "你能成为一个拥有新习惯的人吗？",
+          "topic": "你能成为一个拥有新习惯的人吗？",
+          "sentence_count": 17,
+          "question_count": 5
+        },
+        {
+          "id": "2009_text2",
+          "type": "text2",
+          "title": "基因检测及其存在的问题",
+          "topic": "基因检测及其存在的问题",
+          "sentence_count": 16,
+          "question_count": 5
+        },
+        {
+          "id": "2009_text3",
+          "type": "text3",
+          "title": "正规教育的缺乏不会限制生产力的提高",
+          "topic": "正规教育的缺乏不会限制生产力的提高",
+          "sentence_count": 20,
+          "question_count": 4
+        },
+        {
+          "id": "2009_text4",
+          "type": "text4",
+          "title": "新英格兰的早期文化生活",
+          "topic": "新英格兰的早期文化生活",
+          "sentence_count": 14,
+          "question_count": 4
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "articles": [
+        {
+          "id": "2008_text1",
+          "type": "text1",
+          "title": "女性更易受到压力带来的负面影晌",
+          "topic": "女性更易受到压力带来的负面影晌",
+          "sentence_count": 16,
+          "question_count": 5
+        },
+        {
+          "id": "2008_text2",
+          "type": "text2",
+          "title": "科学出版新方式：在线出版",
+          "topic": "科学出版新方式：在线出版",
+          "sentence_count": 24,
+          "question_count": 5
+        },
+        {
+          "id": "2008_text3",
+          "type": "text3",
+          "title": "美国人身高已达基因极限",
+          "topic": "美国人身高已达基因极限",
+          "sentence_count": 19,
+          "question_count": 5
+        },
+        {
+          "id": "2008_text4",
+          "type": "text4",
+          "title": "美国开国元勋们对奴隶制的复杂态度",
+          "topic": "美国开国元勋们对奴隶制的复杂态度",
+          "sentence_count": 19,
+          "question_count": 4
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "articles": [
+        {
+          "id": "2007_text1",
+          "type": "text1",
+          "title": "人的成就取决于后天培养而非先天遗传",
+          "topic": "人的成就取决于后天培养而非先天遗传",
+          "sentence_count": 14,
+          "question_count": 5
+        },
+        {
+          "id": "2007_text2",
+          "type": "text2",
+          "title": "智力测试不能全面体现人的智力高低和实际能力强弱",
+          "topic": "智力测试不能全面体现人的智力高低和实际能力强弱",
+          "sentence_count": 19,
+          "question_count": 5
+        },
+        {
+          "id": "2007_text3",
+          "type": "text3",
+          "title": "美国中产阶级家庭身处悬崖边缘：经济凤险在增加",
+          "topic": "美国中产阶级家庭身处悬崖边缘：经济凤险在增加",
+          "sentence_count": 16,
+          "question_count": 5
+        },
+        {
+          "id": "2007_text4",
+          "type": "text4",
+          "title": "公司数据管理的重要性",
+          "topic": "公司数据管理的重要性",
+          "sentence_count": 11,
+          "question_count": 5
+        }
+      ]
+    }
   ]
 }

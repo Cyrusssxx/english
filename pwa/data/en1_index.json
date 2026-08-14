@@ -1,0 +1,566 @@
+{
+  "schema_version": 1,
+  "exam": "en1",
+  "years": [
+    {
+      "year": 2025,
+      "articles": [
+        {
+          "id": "en1_2025_text1",
+          "type": "text1",
+          "title": "The grammar school boy from Stratford-upon-Avon has landed a",
+          "topic": "",
+          "sentence_count": 14,
+          "question_count": 0
+        },
+        {
+          "id": "en1_2025_text2",
+          "type": "text2",
+          "title": "I was shocked to learn recently that some scientists want to",
+          "topic": "",
+          "sentence_count": 18,
+          "question_count": 0
+        },
+        {
+          "id": "en1_2025_text3",
+          "type": "text3",
+          "title": "Ever since taking on Netflix Inc. at its own game, old Holly",
+          "topic": "",
+          "sentence_count": 9,
+          "question_count": 0
+        },
+        {
+          "id": "en1_2025_text4",
+          "type": "text4",
+          "title": "Visit any antiques store and you’ll encounter artifacts from",
+          "topic": "",
+          "sentence_count": 25,
+          "question_count": 0
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "articles": [
+        {
+          "id": "en1_2024_text1",
+          "type": "text1",
+          "title": "Nearly 2,000 years ago, as the Romans began to pull out of S",
+          "topic": "",
+          "sentence_count": 19,
+          "question_count": 2
+        },
+        {
+          "id": "en1_2024_text2",
+          "type": "text2",
+          "title": "Parenting tips obtained from hunter-gatherers in Africa may ",
+          "topic": "",
+          "sentence_count": 18,
+          "question_count": 1
+        },
+        {
+          "id": "en1_2024_text3",
+          "type": "text3",
+          "title": "A Polish digital artist who uses classical painting styles t",
+          "topic": "",
+          "sentence_count": 19,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2024_text4",
+          "type": "text4",
+          "title": "The miracle of the Chesapeake Bay lies not in its depths, bu",
+          "topic": "",
+          "sentence_count": 21,
+          "question_count": 1
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "articles": [
+        {
+          "id": "en1_2023_text1",
+          "type": "text1",
+          "title": "学校面临加强环境教育的呼声",
+          "topic": "学校面临加强环境教育的呼声",
+          "sentence_count": 13,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2023_text2",
+          "type": "text2",
+          "title": "短租兴起引发住房危机？",
+          "topic": "短租兴起引发住房危机？",
+          "sentence_count": 12,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2023_text3",
+          "type": "text3",
+          "title": "书店和出版商的战争中没有谁是赢家",
+          "topic": "书店和出版商的战争中没有谁是赢家",
+          "sentence_count": 13,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2023_text4",
+          "type": "text4",
+          "title": "引用成了科学界的“通货”",
+          "topic": "引用成了科学界的“通货”",
+          "sentence_count": 20,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "articles": [
+        {
+          "id": "en1_2022_text1",
+          "type": "text1",
+          "title": "当塑料弥足珍贵之时",
+          "topic": "当塑料弥足珍贵之时",
+          "sentence_count": 25,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2022_text2",
+          "type": "text2",
+          "title": "大学学位不能定义Z 世代",
+          "topic": "大学学位不能定义Z 世代",
+          "sentence_count": 19,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2022_text3",
+          "type": "text3",
+          "title": "艺术与科学的联姻不应止于传播科学",
+          "topic": "艺术与科学的联姻不应止于传播科学",
+          "sentence_count": 20,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2022_text4",
+          "type": "text4",
+          "title": "不正当解雇法不应适用于高薪员工",
+          "topic": "不正当解雇法不应适用于高薪员工",
+          "sentence_count": 23,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "articles": [
+        {
+          "id": "en1_2021_text1",
+          "type": "text1",
+          "title": "火车票价一涨再涨，乘客终将忍无可忍",
+          "topic": "火车票价一涨再涨，乘客终将忍无可忍",
+          "sentence_count": 14,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2021_text2",
+          "type": "text2",
+          "title": "印尼的扶贫计划有助于减缓森林砍伐",
+          "topic": "印尼的扶贫计划有助于减缓森林砍伐",
+          "sentence_count": 2,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2021_text3",
+          "type": "text3",
+          "title": "维多利亚人拍照不笑是个谣言",
+          "topic": "维多利亚人拍照不笑是个谣言",
+          "sentence_count": 14,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2021_text4",
+          "type": "text4",
+          "title": "国会需赋权 FCC，确保实施网络中立",
+          "topic": "国会需赋权 FCC，确保实施网络中立",
+          "sentence_count": 15,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "articles": [
+        {
+          "id": "en1_2020_text1",
+          "type": "text1",
+          "title": "“文化之镇”？值得一试",
+          "topic": "“文化之镇”？值得一试",
+          "sentence_count": 17,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2020_text3",
+          "type": "text3",
+          "title": "董事会性别配额制强化特权",
+          "topic": "董事会性别配额制强化特权",
+          "sentence_count": 19,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2020_text4",
+          "type": "text4",
+          "title": "法国开创数字服务税先河",
+          "topic": "法国开创数字服务税先河",
+          "sentence_count": 14,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "articles": [
+        {
+          "id": "en1_2019_text1",
+          "type": "text1",
+          "title": "耐心是一种企业美德",
+          "topic": "耐心是一种企业美德",
+          "sentence_count": 13,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2019_text2",
+          "type": "text2",
+          "title": "大学\"成绩宽恕\"的兴起",
+          "topic": "大学\"成绩宽恕\"的兴起",
+          "sentence_count": 12,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2019_text3",
+          "type": "text3",
+          "title": "赋予 AI 以良知，任重道远",
+          "topic": "赋予 AI 以良知，任重道远",
+          "sentence_count": 19,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2019_text4",
+          "type": "text4",
+          "title": "美最高法院裁定各州可向电商征收销售税",
+          "topic": "美最高法院裁定各州可向电商征收销售税",
+          "sentence_count": 17,
+          "question_count": 4
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "articles": [
+        {
+          "id": "en1_2018_text1",
+          "type": "text1",
+          "title": "机器人 VS中产阶级",
+          "topic": "机器人 VS中产阶级",
+          "sentence_count": 26,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2018_text2",
+          "type": "text2",
+          "title": "网络信息分享中审辨式思维技能的提升",
+          "topic": "网络信息分享中审辨式思维技能的提升",
+          "sentence_count": 18,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2018_text3",
+          "type": "text3",
+          "title": "科技巨头涉足医疗领域引发的问题",
+          "topic": "科技巨头涉足医疗领域引发的问题",
+          "sentence_count": 23,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2018_text4",
+          "type": "text4",
+          "title": "USPS 需要的不只是权宜之计",
+          "topic": "USPS 需要的不只是权宜之计",
+          "sentence_count": 19,
+          "question_count": 4
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "articles": [
+        {
+          "id": "en1_2017_text2",
+          "type": "text2",
+          "title": "如何解决莫纳克亚山上的望远镜纷争",
+          "topic": "如何解决莫纳克亚山上的望远镜纷争",
+          "sentence_count": 21,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2017_text3",
+          "type": "text3",
+          "title": "GDP不能衡量民生福祉",
+          "topic": "GDP不能衡量民生福祉",
+          "sentence_count": 19,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2017_text4",
+          "type": "text4",
+          "title": "美最高法院推翻前弗吉尼亚州长贪腐定罪判决",
+          "topic": "美最高法院推翻前弗吉尼亚州长贪腐定罪判决",
+          "sentence_count": 17,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "articles": [
+        {
+          "id": "en1_2016_text1",
+          "type": "text1",
+          "title": "时尚业的身材典范面临挑战",
+          "topic": "时尚业的身材典范面临挑战",
+          "sentence_count": 20,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2016_text2",
+          "type": "text2",
+          "title": "英国乡村亟待各派政治力量",
+          "topic": "英国乡村亟待各派政治力量",
+          "sentence_count": 30,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2016_text3",
+          "type": "text3",
+          "title": "光环效应∶行善政策能在企业被诉时有所助益",
+          "topic": "光环效应∶行善政策能在企业被诉时有所助益",
+          "sentence_count": 17,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2016_text4",
+          "type": "text4",
+          "title": "让纸质版报纸成为一种奢侈品",
+          "topic": "让纸质版报纸成为一种奢侈品",
+          "sentence_count": 15,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "articles": [
+        {
+          "id": "en1_2015_text1",
+          "type": "text1",
+          "title": "欧洲王室是否行将就木?",
+          "topic": "欧洲王室是否行将就木?",
+          "sentence_count": 19,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2015_text2",
+          "type": "text2",
+          "title": "最高法院应该开始为智能手机制定",
+          "topic": "最高法院应该开始为智能手机制定",
+          "sentence_count": 21,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2015_text3",
+          "type": "text3",
+          "title": "《科学》努力加入推进论文",
+          "topic": "《科学》努力加入推进论文",
+          "sentence_count": 11,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2015_text4",
+          "type": "text4",
+          "title": "从\"电话窃听案\"看公共生活中的",
+          "topic": "从\"电话窃听案\"看公共生活中的",
+          "sentence_count": 19,
+          "question_count": 4
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "articles": [
+        {
+          "id": "en1_2014_text2",
+          "type": "text2",
+          "title": "美国律师∶被指控罪名成立",
+          "topic": "美国律师∶被指控罪名成立",
+          "sentence_count": 24,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2014_text3",
+          "type": "text3",
+          "title": "科学界涌现新奖项",
+          "topic": "科学界涌现新奖项",
+          "sentence_count": 27,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2014_text4",
+          "type": "text4",
+          "title": "非人文素质教育与《问题的核心》",
+          "topic": "非人文素质教育与《问题的核心》",
+          "sentence_count": 14,
+          "question_count": 3
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "articles": [
+        {
+          "id": "en1_2013_text2",
+          "type": "text2",
+          "title": "微软与隐私∶信息追踪的改变",
+          "topic": "微软与隐私∶信息追踪的改变",
+          "sentence_count": 22,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2013_text3",
+          "type": "text3",
+          "title": "人类拥有光明未来",
+          "topic": "人类拥有光明未来",
+          "sentence_count": 18,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2013_text4",
+          "type": "text4",
+          "title": "最高法院对亚利桑那州移民法的裁定",
+          "topic": "最高法院对亚利桑那州移民法的裁定",
+          "sentence_count": 20,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "articles": [
+        {
+          "id": "en1_2012_text1",
+          "type": "text1",
+          "title": "同侪压力的作用",
+          "topic": "同侪压力的作用",
+          "sentence_count": 21,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2012_text2",
+          "type": "text2",
+          "title": "佛蒙特扬基厂主必须履行承诺",
+          "topic": "佛蒙特扬基厂主必须履行承诺",
+          "sentence_count": 21,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2012_text3",
+          "type": "text3",
+          "title": "科学发现声明的取信过程",
+          "topic": "科学发现声明的取信过程",
+          "sentence_count": 23,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2012_text4",
+          "type": "text4",
+          "title": "公共部门改革最大的障碍是工会",
+          "topic": "公共部门改革最大的障碍是工会",
+          "sentence_count": 26,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "articles": [
+        {
+          "id": "en1_2011_text1",
+          "type": "text1",
+          "title": "古典音乐面临挑战",
+          "topic": "古典音乐面临挑战",
+          "sentence_count": 16,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2011_text2",
+          "type": "text2",
+          "title": "高层管理人员正在纷纷裸辞",
+          "topic": "高层管理人员正在纷纷裸辞",
+          "sentence_count": 21,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2011_text3",
+          "type": "text3",
+          "title": "新媒介给营销传播带来的机遇和风险",
+          "topic": "新媒介给营销传播带来的机遇和风险",
+          "sentence_count": 20,
+          "question_count": 0
+        },
+        {
+          "id": "en1_2011_text4",
+          "type": "text4",
+          "title": "提倡理性的育儿幸福观",
+          "topic": "提倡理性的育儿幸福观",
+          "sentence_count": 13,
+          "question_count": 5
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "articles": [
+        {
+          "id": "en1_2010_text1",
+          "type": "text1",
+          "title": "报纸艺术评论的衰落",
+          "topic": "报纸艺术评论的衰落",
+          "sentence_count": 16,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2010_text2",
+          "type": "text2",
+          "title": "商业方法专利受到潜在法律威胁",
+          "topic": "商业方法专利受到潜在法律威胁",
+          "sentence_count": 20,
+          "question_count": 5
+        },
+        {
+          "id": "en1_2010_text3",
+          "type": "text3",
+          "title": "社会流行潮的传播",
+          "topic": "社会流行潮的传播",
+          "sentence_count": 15,
+          "question_count": 4
+        },
+        {
+          "id": "en1_2010_text4",
+          "type": "text4",
+          "title": "会计准则制定者被迁怒",
+          "topic": "会计准则制定者被迁怒",
+          "sentence_count": 22,
+          "question_count": 5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+#!/bin/sh
+# 英语二精翻 PWA - pre-commit 钩子
+# 提交前自动按「预缓存资源内容」重算 sw.js 的 CACHE_VER（离线缓存版本），
+# 并把更新后的 sw.js 加回暂存区，保证客户端在资源变动后自动拉取新缓存。
+# 即使重建失败也只是告警、不阻断提交（避免卡死你的正常 git 流程）。
+
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null)"
+if [ -z "$ROOT" ]; then
+  echo "⚠️  不在 git 仓库内，跳过 sw.js 自动重建"
+  exit 0
+fi
+
+HOOK_PY="$ROOT/tools/build_sw.py"
+if [ ! -f "$HOOK_PY" ]; then
+  echo "⚠️  未找到 $HOOK_PY，跳过 sw.js 自动重建"
+  exit 0
+fi
+
+# 选一个可用的 python（优先虚拟环境，其次系统 python3/python/py）
+if [ -x "$ROOT/tools/.venv/Scripts/python.exe" ]; then
+  PY="$ROOT/tools/.venv/Scripts/python.exe"
+elif command -v python3 >/dev/null 2>&1; then
+  PY=python3
+elif command -v python >/dev/null 2>&1; then
+  PY=python
+elif command -v py >/dev/null 2>&1; then
+  PY=py
+else
+  echo "⚠️  未找到 Python，跳过 sw.js 自动重建（请手动更新 CACHE_VER）"
+  exit 0
+fi
+
+echo "🔧 pre-commit: 重建 sw.js 缓存版本..."
+if "$PY" "$HOOK_PY"; then
+  if [ -n "$(git status --porcelain "$ROOT/pwa/sw.js" 2>/dev/null)" ]; then
+    git add -f "$ROOT/pwa/sw.js"
+    echo "✅ sw.js 已更新并加入暂存区"
+  fi
+else
+  echo "⚠️  sw.js 重建失败（详见上方错误），本次提交照常进行"
+fi
+exit 0

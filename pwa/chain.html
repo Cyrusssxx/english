@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>串联词汇 · 用最少真题句串起你的单词</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .chain-wrap{max-width:860px;margin:0 auto;}
+        .chain-card{background:var(--card,#fff);border:1px solid var(--border,#e2e8f0);border-radius:14px;
+            padding:18px 18px 14px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+        .chain-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;}
+        .chain-tools button{background:var(--accent,#0d9488);color:#fff;border:none;border-radius:9px;
+            padding:9px 14px;font-size:14px;cursor:pointer;}
+        .chain-tools button.ghost{background:transparent;color:var(--accent,#0d9488);border:1px solid var(--accent,#0d9488);}
+        #words{width:100%;min-height:120px;border:1px solid var(--border,#e2e8f0);border-radius:10px;
+            padding:12px;font-size:15px;line-height:1.6;resize:vertical;background:var(--input,#fff);color:var(--text,#1a202c);}
+        .chain-hint{color:var(--muted,#64748b);font-size:13px;margin-top:6px;}
+        #chStats{margin:14px 0 4px;font-size:14px;color:var(--muted,#64748b);}
+        #chStats b{color:var(--accent,#0d9488);}
+        .ch-card{background:var(--card,#fff);border:1px solid var(--border,#e2e8f0);border-radius:14px;
+            padding:14px 16px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+        .ch-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+        .ch-src{font-size:13px;color:var(--accent,#0d9488);font-weight:600;}
+        .ch-cnbtn{background:transparent;border:1px solid var(--border,#e2e8f0);border-radius:8px;
+            padding:4px 10px;font-size:12px;cursor:pointer;color:var(--muted,#64748b);}
+        .ch-sent{font-size:17px;line-height:1.9;color:var(--text,#1a202c);}
+        .ch-words{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;}
+        .ch-chip{background:rgba(13,148,136,.1);color:var(--accent,#0d9488);border-radius:999px;
+            padding:2px 10px;font-size:12px;border:1px solid rgba(13,148,136,.25);}
+        .ch-cn{margin-top:8px;padding:10px 12px;background:var(--soft,#f1f5f9);border-radius:8px;
+            font-size:14px;line-height:1.7;color:var(--muted,#475569);white-space:pre-wrap;}
+        .word-pop button{margin-top:8px;background:var(--accent,#0d9488);color:#fff;border:none;
+            border-radius:7px;padding:5px 12px;font-size:13px;cursor:pointer;}
+        :root.dark{--card:#0f172a;--border:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--input:#0b1220;--soft:#1e293b;}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="chain.html" class="nav-brand">串联词汇</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">英语二精翻</a>
+                <a href="en1.html" class="nav-link">英语一阅读</a>
+                <a href="chain.html" class="nav-link active">串联词汇</a>
+            </div>
+            <div class="nav-tools">
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="container chain-wrap">
+        <div class="hero">
+            <h1>串联词汇</h1>
+            <p class="subtitle">输入约 40 个单词/词组，自动从英语一+英语二真题里挑出最少的句子，把它们串起来</p>
+        </div>
+
+        <div class="chain-card">
+            <textarea id="words" placeholder="每行一个单词或词组，最多约 40 个。例如：&#10;decline&#10;increasingly&#10;tend to&#10;account for"></textarea>
+            <div class="chain-tools">
+                <button onclick="generate()">生成串联句</button>
+                <button class="ghost" onclick="random40()">随机抽 40 词</button>
+                <button class="ghost" onclick="fillExample()">示例</button>
+                <button class="ghost" onclick="document.getElementById('words').value='';document.getElementById('chStats').innerHTML='';document.getElementById('chList').innerHTML='';">清空</button>
+            </div>
+            <div class="chain-hint">提示：点击句子中任意单词/词组即可看中文释义；下方色块标出该句覆盖的你输入的词。词组（如 tend to）也会被识别。英文小写匹配。</div>
+        </div>
+
+        <div id="chStats"></div>
+        <div id="chList"><div class="empty">输入单词后点「生成串联句」。</div></div>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/dict.js"></script>
+    <script>
+    /* ===================== 复用 article.js 的标注引擎（纯函数，仅依赖 dict.js 全局） ===================== */
+    let vocabSet = new Set();   // 占位，避免潜在引用；chain 不接生词本
+
+    function findWord(text, w) {
+        const lowerText = text.toLowerCase();
+        const lowerW = w.toLowerCase();
+        let from = 0;
+        while (true) {
+            const pos = lowerText.indexOf(lowerW, from);
+            if (pos < 0) return -1;
+            const b = pos === 0 ? '' : text[pos - 1];
+            const a = pos + w.length >= text.length ? '' : text[pos + w.length];
+            if (!/[A-Za-z]/.test(b) && !/[A-Za-z]/.test(a)) return pos;
+            from = pos + 1;
+        }
+    }
+
+    function annotatePlain(text, sid) {
+        const RE = /\[(\d+)\]|[A-Za-z][A-Za-z'\-]*/g;
+        let out = '', last = 0, m;
+        while ((m = RE.exec(text)) !== null) {
+            out += esc(text.slice(last, m.index));
+            if (m[1] !== undefined) {
+                out += `<span class="blank" id="blank-${m[1]}" onclick="onBlankClick(event,${m[1]})">[${m[1]}]</span>`;
+            } else {
+                const tok = m[0];
+                if (dictLookup(tok)) {
+                    const hard = isHard(tok) ? ' hard' : '';
+                    out += `<span class="word dict-hard${hard}" data-w="${esc(tok)}" onclick="onDictWordClick(event,'${sid}')">${esc(tok)}</span>`;
+                } else {
+                    out += esc(tok);
+                }
+            }
+            last = m.index + m[0].length;
+        }
+        out += esc(text.slice(last));
+        return out;
+    }
+
+    function annotatePhrases(text, sid) {
+        if (maxPhraseWords() < 2) return annotatePlain(text, sid);
+        const TOK = /[A-Za-z][A-Za-z'\-]*/g;
+        const toks = [];
+        let m;
+        while ((m = TOK.exec(text)) !== null) {
+            toks.push({ s: m.index, e: m.index + m[0].length, low: m[0].toLowerCase() });
+        }
+        let out = '', last = 0, i = 0;
+        while (i < toks.length) {
+            const cands = phraseCandidates(toks[i].low);
+            let matched = null;
+            if (cands) {
+                for (const c of cands) {
+                    const n = c.tokens.length;
+                    if (i + n > toks.length) continue;
+                    let ok = true;
+                    for (let k = 1; k < n; k++) {
+                        if (!phraseTokenEq(toks[i + k], c.tokens[k])) { ok = false; break; }
+                        if (!/^[\s\-]*$/.test(text.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
+                    }
+                    if (ok) { matched = c; break; }
+                }
+            }
+            if (!matched) {
+                for (const stem of stemCandidates(toks[i].low)) {
+                    const c2s = phraseCandidates(stem);
+                    if (!c2s) continue;
+                    for (const c of c2s) {
+                        const n = c.tokens.length;
+                        if (i + n > toks.length) continue;
+                        let ok = true;
+                        for (let k = 1; k < n; k++) {
+                            if (!phraseTokenEq(toks[i + k], c.tokens[k])) { ok = false; break; }
+                            if (!/^[\s\-]*$/.test(text.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
+                        }
+                        if (ok) { matched = c; break; }
+                    }
+                    if (matched) break;
+                }
+            }
+            if (matched) {
+                const n = matched.tokens.length;
+                const segStart = toks[i].s, segEnd = toks[i + n - 1].e;
+                out += annotatePlain(text.slice(last, segStart), sid);
+                const hard = isHard(matched.key) ? ' hard' : '';
+                out += `<span class="word phrase dict-hard${hard}" data-w="${esc(matched.key)}" onclick="onPhraseClick(event,'${sid}')">${esc(text.slice(segStart, segEnd))}</span>`;
+                last = segEnd;
+                i += n;
+            } else {
+                i++;
+            }
+        }
+        out += annotatePlain(text.slice(last), sid);
+        return out;
+    }
+
+    function phraseTokenEq(tok, candWord) {
+        if (tok.low === candWord) return true;
+        if (typeof stemCandidates !== 'function') return false;
+        const cands = stemCandidates(candWord);
+        if (cands.includes(tok.low)) return true;
+        const lows = stemCandidates(tok.low);
+        return cands.some(c => lows.includes(c)) || cands.includes(tok.low) || lows.includes(candWord);
+    }
+
+    function annotate(s) {
+        const words = (s.words || []).map((w, i) => ({ ...w, _i: i }));
+        words.sort((a, b) => b.w.length - a.w.length);
+        let segs = [{ text: s.en }];
+        const missed = [];
+        for (const w of words) {
+            let hit = false;
+            for (let i = 0; i < segs.length; i++) {
+                const seg = segs[i];
+                if (seg.wi !== undefined || seg.dictFallback) continue;
+                const pos = findWord(seg.text, w.w);
+                if (pos < 0) continue;
+                const before = seg.text.slice(0, pos);
+                const after = seg.text.slice(pos + w.w.length);
+                const mid = { text: seg.text.slice(pos, pos + w.w.length), wi: w._i };
+                const repl = [];
+                if (before) repl.push({ text: before });
+                repl.push(mid);
+                if (after) repl.push({ text: after });
+                segs.splice(i, 1, ...repl);
+                hit = true;
+                break;
+            }
+            if (!hit) missed.push(w);
+        }
+        for (const w of missed) {
+            if (!dictLookup(w.w)) continue;
+            for (let i = 0; i < segs.length; i++) {
+                const seg = segs[i];
+                if (seg.wi !== undefined || seg.dictFallback) continue;
+                const pos = findWord(seg.text, w.w);
+                if (pos < 0) continue;
+                const before = seg.text.slice(0, pos);
+                const after = seg.text.slice(pos + w.w.length);
+                const mid = { text: seg.text.slice(pos, pos + w.w.length), dictFallback: true, word: w };
+                const repl = [];
+                if (before) repl.push({ text: before });
+                repl.push(mid);
+                if (after) repl.push({ text: after });
+                segs.splice(i, 1, ...repl);
+                missed.splice(missed.indexOf(w), 1);
+                break;
+            }
+        }
+        const html = segs.map(seg => {
+            if (seg.wi !== undefined) {
+                const w = s.words[seg.wi];
+                const hard = isHard(w.w) ? ' hard' : '';
+                return `<span class="word${hard}" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
+            }
+            if (seg.dictFallback) {
+                const w = seg.word;
+                const hard = isHard(w.w) ? ' hard' : '';
+                return `<span class="word dict-hard${hard}" data-w="${esc(w.w)}" onclick="onDictWordClick(event,'${s.id}')">${esc(seg.text)}</span>`;
+            }
+            return annotatePhrases(seg.text, s.id);
+        }).join('');
+        return { html, missed };
+    }
+
+    /* ===================== 点击弹卡（chain 版：显示释义 + 复制，不接生词本） ===================== */
+    let popEl = null;
+    function openPop(targetEl, innerHtml) {
+        closePop();
+        popEl = document.createElement('div');
+        popEl.className = 'word-pop';
+        popEl.innerHTML = innerHtml;
+        document.body.appendChild(popEl);
+        const r = targetEl.getBoundingClientRect();
+        const pw = popEl.offsetWidth, ph = popEl.offsetHeight;
+        let left = r.left + window.scrollX;
+        if (left + pw > window.scrollX + document.documentElement.clientWidth - 12)
+            left = window.scrollX + document.documentElement.clientWidth - pw - 12;
+        let top = r.bottom + window.scrollY + 6;
+        if (top + ph > window.scrollY + document.documentElement.clientHeight - 12)
+            top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
+        popEl.style.left = left + 'px';
+        popEl.style.top = top + 'px';
+    }
+    function closePop() { if (popEl) { popEl.remove(); popEl = null; } }
+    document.addEventListener('click', (e) => {
+        if (popEl && !e.target.closest('.word-pop') && !e.target.closest('.word')) closePop();
+    });
+
+    function onWordClick(e, sid, wi) { /* chain 句子无预标注词，该函数不会被触发 */ }
+    function onBlankClick(e, n) { /* 阅读句无完形空格 */ }
+    function onDictWordClick(e, sid) {
+        e.stopPropagation();
+        const el = e.currentTarget;
+        const word = el.getAttribute('data-w');
+        const entry = dictLookup(word);
+        openPop(el, dictPopHtml(word, entry ? entry.t : '', entry ? entry.p : '', freqBadge(word)));
+    }
+    function onPhraseClick(e, sid) {
+        e.stopPropagation();
+        const el = e.currentTarget;
+        const key = el.getAttribute('data-w');
+        const meaning = phraseLookup(key) || '';
+        openPop(el, dictPopHtml(key, meaning, '', freqBadge(key)));
+    }
+    function dictPopHtml(word, meaning, phonetic, freq) {
+        return `<span class="wp-word">${esc(word)}</span>${phonetic ? `<span class="wp-phonetic">${esc(phonetic)}</span>` : ''}
+            <div class="wp-meaning">${meaning ? esc(meaning) : '（无离线释义）'}</div>
+            ${freq || ''}
+            <button onclick="copyWord(this)" data-w="${esc(word)}">复制</button>`;
+    }
+    function copyWord(btn) {
+        const w = btn.getAttribute('data-w');
+        if (navigator.clipboard) navigator.clipboard.writeText(w).catch(() => {});
+        btn.textContent = '已复制 ✓';
+        setTimeout(() => btn.textContent = '复制', 1200);
+    }
+
+    /* ===================== 数据加载 + 串联算法 ===================== */
+    let CORPUS = [];
+    const REF_CACHE = {};   // aid -> ref_cn（懒加载，按文章去重）
+
+    async function boot() {
+        try {
+            const c = await (await fetch('data/chain_corpus.json')).json();
+            CORPUS = c.sentences || [];
+        } catch (e) {
+            document.getElementById('chList').innerHTML = '<div class="error">语料加载失败，请用 start.bat 启动后访问 http://localhost:8410</div>';
+            return;
+        }
+        await loadDict();
+        await loadPhrases();
+        try { await loadHardwords(); } catch (e) {}
+        try { await loadFreq(); } catch (e) {}
+        window.__ready = true;
+    }
+
+    function parseQueries(text) {
+        const out = [];
+        for (const raw of text.split(/[\n,，、]+/)) {
+            const w = raw.trim().replace(/^\W+|\W+$/g, '');
+            if (w) out.push(w);
+        }
+        return [...new Set(out)];
+    }
+
+    function matches(en, q) {
+        const le = en.toLowerCase(), lq = q.toLowerCase();
+        if (lq.indexOf(' ') !== -1) return le.indexOf(lq) !== -1;   // 词组：子串匹配
+        const re = new RegExp('(^|[^a-z])' + lq.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z]|$)', 'i');
+        return re.test(en);
+    }
+
+    function buildCoverage(queries) {
+        return queries.map(q => {
+            const idxs = [];
+            for (let i = 0; i < CORPUS.length; i++) if (matches(CORPUS[i].en, q)) idxs.push(i);
+            return idxs;
+        });
+    }
+
+    function greedySetCover(queries, cov) {
+        const uncovered = new Set(queries.map((_, i) => i));
+        const chosen = [];
+        const coveredBy = {};
+        while (uncovered.size) {
+            const cand = new Set();
+            for (const qi of uncovered) for (const si of cov[qi]) cand.add(si);
+            let best = -1, bestGain = 0, bestCovered = null;
+            for (const si of cand) {
+                const cs = [];
+                for (const qi of uncovered) if (cov[qi].includes(si)) cs.push(qi);
+                if (cs.length > bestGain) { bestGain = cs.length; best = si; bestCovered = cs; }
+            }
+            if (bestGain === 0) break;
+            chosen.push(best);
+            coveredBy[best] = bestCovered;
+            for (const qi of bestCovered) uncovered.delete(qi);
+        }
+        return { chosen, coveredBy, remaining: [...uncovered] };
+    }
+
+    function typeLabel(aid) {
+        const m = aid.match(/text(\d)/);
+        return m ? 'Text ' + m[1] : aid;
+    }
+
+    async function generate() {
+        if (!window.__ready) { alert('语料还在加载，请稍候'); return; }
+        const queries = parseQueries(document.getElementById('words').value);
+        if (!queries.length) { alert('请输入至少一个单词或词组'); return; }
+        const cov = buildCoverage(queries);
+        const { chosen, coveredBy, remaining } = greedySetCover(queries, cov);
+
+        const coveredN = queries.length - remaining.length;
+        let stat = `用 <b>${chosen.length}</b> 个真题句串起了 <b>${coveredN}/${queries.length}</b> 个词`;
+        if (remaining.length) stat += `；未找到例句的词：<b>${remaining.map(i => esc(queries[i])).join('、')}</b>`;
+        document.getElementById('chStats').innerHTML = stat;
+
+        const list = document.getElementById('chList');
+        if (!chosen.length) { list.innerHTML = '<div class="empty">没有匹配到任何真题句，试试更常见的词。</div>'; return; }
+        list.innerHTML = chosen.map(si => {
+            const s = CORPUS[si];
+            const qs = (coveredBy[si] || []).map(i => queries[i]);
+            const { html } = annotate({ id: s.id, en: s.en, words: [] });
+            const ex = s.exam === 'en1' ? '英语一' : '英语二';
+            return `<div class="ch-card">
+                <div class="ch-head">
+                    <span class="ch-src">${s.year} ${ex} · ${typeLabel(s.aid)}</span>
+                    <button class="ch-cnbtn" onclick="toggleChainCn('${esc(s.id)}','${esc(s.aid)}',this)">看译文</button>
+                </div>
+                <div class="ch-sent">${html}</div>
+                <div class="ch-words">${qs.map(q => `<span class="ch-chip">${esc(q)}</span>`).join('')}</div>
+                <div class="ch-cn" id="cn-${esc(s.id)}" hidden></div>
+            </div>`;
+        }).join('');
+    }
+
+    async function toggleChainCn(sid, aid, btn) {
+        const div = document.getElementById('cn-' + sid);
+        if (!div) return;
+        if (!div.hidden) { div.hidden = true; btn.textContent = '看译文'; return; }
+        if (!REF_CACHE[aid]) {
+            const art = await getArticle(aid);
+            REF_CACHE[aid] = (art && art.ref_cn) ? art.ref_cn : '（该篇暂无参考译文）';
+        }
+        div.textContent = REF_CACHE[aid];
+        div.hidden = false; btn.textContent = '收起译文';
+    }
+
+    async function random40() {
+        if (!window.__ready) { alert('语料还在加载，请稍候'); return; }
+        const keys = Object.keys(_freq || {});
+        if (!keys.length) { alert('词频表未加载'); return; }
+        for (let i = keys.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [keys[i], keys[j]] = [keys[j], keys[i]]; }
+        document.getElementById('words').value = keys.slice(0, 40).join('\n');
+    }
+
+    function fillExample() {
+        document.getElementById('words').value = ['decline', 'increasingly', 'capacity', 'nevertheless', 'consequence',
+            'reflect', 'significant', 'tend to', 'account for', 'in terms of', 'argue', 'evidence', 'potential', 'despite'].join('\n');
+    }
+
+    boot();
+    </script>
+</body>
+</html>

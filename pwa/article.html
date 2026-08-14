@@ -70,5 +70,12 @@
     <script src="js/dict.js"></script>
     <script src="js/annotate.js"></script>
     <script src="js/article.js"></script>
+    <script>
+        // 英语一文章：返回按钮指向英语一阅读入口（而非英语二首页）
+        if (typeof AID === 'string' && AID.startsWith('en1_')) {
+            const brand = document.querySelector('.nav-brand');
+            if (brand) brand.setAttribute('href', 'en1.html');
+        }
+    </script>
 </body>
 </html>
