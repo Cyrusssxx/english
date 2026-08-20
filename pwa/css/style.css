@@ -755,6 +755,28 @@ html.dark body.show-hard .word.hard {
     background: rgba(245, 158, 11, 0.30);
 }
 
+/* 单词本/背单词页例句：复用精翻界面的可点词 + 点击译文（与 .word / .sent-cn 同源样式） */
+/* 目标词高亮加粗（背单词卡/单词本例句里当前词） */
+.word.tgt {
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+html.dark .word.tgt {
+    color: #7edcd2;
+}
+/* 单词本卡片里的例句块：略缩字号、收紧间距，避免列表过长 */
+.vocab-example {
+    margin: 8px 0 4px;
+}
+.vocab-example .sent-en {
+    font-size: 0.97rem;
+    line-height: 1.55;
+}
+.vocab-example .sent-cn {
+    margin: 4px 0 6px;
+    padding: 7px 10px;
+}
+
 /* 匹配失败降级：句尾词汇列表 */
 .sent-words-fallback {
     font-size: 0.85rem;

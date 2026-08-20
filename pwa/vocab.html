@@ -48,6 +48,7 @@
     <script src="js/common.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/dict.js"></script>
+    <script src="js/annotate-lite.js"></script>
     <script>
         function dayStr(offset = 0) {
             const d = new Date();
@@ -164,6 +165,13 @@
                     </div>
                     <div class="ic-meaning">${esc(v.meaning || '')}</div>
                     ${typeof freqBadge === 'function' ? freqBadge(v.word) : ''}
+                    ${v.example_en ? `<div class="vocab-example">
+                        <div class="sent-en">${annotateLite(v.example_en, v.word)}</div>
+                        <div class="sent-cn" onclick="onLiteCnClick(event,this)">
+                            <span class="cn-placeholder">▾ 点击查看翻译</span>
+                            <span class="cn-text">${esc(v.example_cn || '')}</span>
+                        </div>
+                    </div>` : ''}
                     <div class="ic-foot">
                         <span>${esc(v.added_at || '')}</span>
                         <span class="ic-actions">
@@ -466,7 +474,15 @@
             }
         }
 
-        (async () => { await migrateVocabDecks(); if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } } await renderAll(); })();
+        (async () => {
+            await migrateVocabDecks();
+            // 离线词典/词组/精选难词：例句可点词与释义弹卡依赖，失败静默降级
+            await loadDict();
+            await loadPhrases();
+            if (typeof loadHardwords === 'function') { try { await loadHardwords(); } catch (e) { /* 降级 */ } }
+            if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } }
+            await renderAll();
+        })();
     </script>
 </body>
 </html>

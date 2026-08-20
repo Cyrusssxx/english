@@ -97,15 +97,6 @@ function findWord(text, w) {
     }
 }
 
-/** 例句：目标词加粗 + 主色 */
-function highlightExample(en, w) {
-    if (!en) return '';
-    const pos = findWord(en, w);
-    if (pos < 0) return esc(en);
-    return esc(en.slice(0, pos)) + '<b class="tgt">' + esc(en.slice(pos, pos + w.length)) +
-        '</b>' + esc(en.slice(pos + w.length));
-}
-
 /** 释义按记忆层级渲染：词性斜体主色 · 核心义加粗主色 · 次要义弱化 */
 function renderMeaning(raw) {
     raw = raw || '';
@@ -330,8 +321,11 @@ async function renderCard() {
             <div class="fc-meaning">${renderMeaning(v.meaning)}</div>
             ${typeof freqBadge === 'function' ? freqBadge(v.word) : ''}
             ${ex ? `<div class="fc-example">
-                <div class="fe-en">${highlightExample(ex.en, v.word)}</div>
-                <div class="fe-cn">${esc(ex.cn)}</div>
+                <div class="fe-en">${annotateLite(ex.en, v.word)}</div>
+                <div class="sent-cn" onclick="onLiteCnClick(event,this)">
+                    <span class="cn-placeholder">▾ 点击查看翻译</span>
+                    <span class="cn-text">${esc(ex.cn)}</span>
+                </div>
             </div>` : ''}
             <div class="fc-src"><a href="article.html?id=${esc(v.article_id || '')}#${esc(v.sentence_id || '')}" target="_blank" onclick="event.stopPropagation()">查看原文语境 →</a></div>`;
     }
@@ -534,6 +528,10 @@ window.addEventListener('scroll', () => hideSettings(), { passive: true });
 // ============ 初始化 ============
 async function init() {
     await migrateVocabDecks();
+    // 离线词典/词组/精选难词：例句可点词与释义弹卡依赖，失败静默降级
+    await loadDict();
+    await loadPhrases();
+    if (typeof loadHardwords === 'function') { try { await loadHardwords(); } catch (e) { /* 降级 */ } }
     if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } }
     // 若来自单词本「背这本 →」，URL 带 deck 参数则切换背词范围
     const qDeck = new URLSearchParams(location.search).get('deck');
