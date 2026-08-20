@@ -6,19 +6,28 @@
 const _yearCache = {};   // {year: data}
 let _indexCache = null;  // index.json
 
+// 带超时的 JSON fetch：网络慢/挂起时主动失败，避免页面无限"加载中"
+async function fetchJSON(url, ms = 8000) {
+    const ctrl = new AbortController();
+    const id = setTimeout(() => ctrl.abort(), ms);
+    try {
+        const resp = await fetch(url, { signal: ctrl.signal });
+        if (!resp.ok) throw new Error('加载失败: ' + resp.status + ' ' + url);
+        return await resp.json();
+    } finally {
+        clearTimeout(id);
+    }
+}
+
 async function loadIndex() {
     if (_indexCache) return _indexCache;
-    const resp = await fetch('data/index.json');
-    if (!resp.ok) throw new Error('加载目录失败: ' + resp.status);
-    _indexCache = await resp.json();
+    _indexCache = await fetchJSON('data/index.json');
     return _indexCache;
 }
 
 async function loadYear(year) {
     if (_yearCache[year]) return _yearCache[year];
-    const resp = await fetch(`data/${year}.json`);
-    if (!resp.ok) throw new Error(`加载 ${year} 年题库失败: ` + resp.status);
-    const data = await resp.json();
+    const data = await fetchJSON(`data/${year}.json`);
     _yearCache[year] = data;
     return data;
 }
@@ -42,9 +51,7 @@ let _en1IndexCache = null;  // en1_index.json
 
 async function loadEn1Year(year) {
     if (_en1YearCache[year]) return _en1YearCache[year];
-    const resp = await fetch(`data/en1/${year}.json`);
-    if (!resp.ok) throw new Error(`加载英语一 ${year} 年题库失败: ` + resp.status);
-    const data = await resp.json();
+    const data = await fetchJSON(`data/en1/${year}.json`);
     _en1YearCache[year] = data;
     return data;
 }
@@ -61,9 +68,7 @@ async function getEn1Article(year, aid) {
 
 async function loadEn1Index() {
     if (_en1IndexCache) return _en1IndexCache;
-    const resp = await fetch('data/en1_index.json');
-    if (!resp.ok) throw new Error('加载英语一目录失败: ' + resp.status);
-    _en1IndexCache = await resp.json();
+    _en1IndexCache = await fetchJSON('data/en1_index.json');
     return _en1IndexCache;
 }
 

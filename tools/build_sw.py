@@ -81,10 +81,18 @@ const PRECACHE = [
 {precache}
 ];
 
+// 带超时的 fetch：网络慢/挂起时 abort，避免请求无限 pending（首页"加载中"卡死的根因）
+function fetchTO(req, ms) {{
+    const ctrl = new AbortController();
+    const id = setTimeout(() => ctrl.abort(), ms);
+    return fetch(req, {{ signal: ctrl.signal }}).finally(() => clearTimeout(id));
+}}
+
 self.addEventListener('install', (e) => {{
     e.waitUntil(
         caches.open(CACHE_VER)
-            .then(cache => cache.addAll(PRECACHE))
+            // 逐个缓存 + allSettled：单个资源失败不阻塞 SW 激活（addAll 是原子的，一个 404 就全废）
+            .then(cache => Promise.allSettled(PRECACHE.map(u => cache.add(u))))
             .then(() => self.skipWaiting())
     );
 }});
@@ -97,19 +105,21 @@ self.addEventListener('activate', (e) => {{
     );
 }});
 
-// cache-first：离线优先；缓存未命中再走网络并回填
+// cache-first：离线优先；缓存未命中走网络（带超时），失败返回 504 而非挂起
 self.addEventListener('fetch', (e) => {{
     if (e.request.method !== 'GET') return;
     e.respondWith(
         caches.match(e.request, {{ ignoreSearch: true }}).then(hit => {{
             if (hit) return hit;
-            return fetch(e.request).then(resp => {{
-                if (resp.ok && new URL(e.request.url).origin === location.origin) {{
-                    const clone = resp.clone();
-                    caches.open(CACHE_VER).then(cache => cache.put(e.request, clone));
-                }}
-                return resp;
-            }});
+            return fetchTO(e.request, 8000)
+                .then(resp => {{
+                    if (resp.ok && new URL(e.request.url).origin === location.origin) {{
+                        const clone = resp.clone();
+                        caches.open(CACHE_VER).then(cache => cache.put(e.request, clone));
+                    }}
+                    return resp;
+                }})
+                .catch(() => new Response('', {{ status: 504, statusText: 'Gateway Timeout' }}));
         }})
     );
 }});

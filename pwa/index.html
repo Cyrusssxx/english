@@ -74,13 +74,22 @@
         let answerStats = {};   // {article_id: {answered, correct}}
 
         async function init() {
+            // 3 秒未加载完，提示网络慢（避免误以为卡死）
+            const slowTip = setTimeout(() => {
+                const el = document.getElementById('articleList');
+                if (el && el.querySelector('.loading')) {
+                    el.innerHTML = '<div class="loading">网络较慢，正在加载…<br><span class="loading-hint">访问 GitHub Pages 受网络影响可能较慢，首次加载后即离线可用</span></div>';
+                }
+            }, 3000);
             try {
                 idx = await loadIndex();
             } catch (e) {
+                clearTimeout(slowTip);
                 document.getElementById('articleList').innerHTML =
-                    `<div class="error">加载失败: ${esc(e.message)}<br>请用 start.bat 启动后访问 http://localhost:8410</div>`;
+                    `<div class="error">加载失败: ${esc(e.message)}<br>可能是网络不稳（访问 GitHub Pages 受限）或未用本地服务。<br>请用 start.bat 启动后访问 http://localhost:8410，或<button class="retry-btn" onclick="init()">重试</button></div>`;
                 return;
             }
+            clearTimeout(slowTip);
             // 用户数据：进度与答题统计
             for (const p of await dbAll('article_progress')) progressMap[p.article_id] = p;
             for (const a of await dbAll('quiz_answers')) {
