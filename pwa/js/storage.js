@@ -144,6 +144,19 @@ async function dbDelete(store, key) {
     });
 }
 
+/** 单事务批量写（一次性 put 多个记录），避免逐条 await dbPut 造成的"事务洪水" */
+async function dbPutMany(store, vals) {
+    if (!vals || !vals.length) return;
+    const db = await openDB();
+    await new Promise((res, rej) => {
+        const tx = db.transaction(store, 'readwrite');
+        const os = tx.objectStore(store);
+        for (const v of vals) os.put(v);
+        tx.oncomplete = res;
+        tx.onerror = () => rej(tx.error);
+    });
+}
+
 function now() {
     const d = new Date(), p = n => String(n).padStart(2, '0');
     return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
@@ -238,34 +251,36 @@ async function deleteDeck(id) {
     if (getStudyDeck() === id) setStudyDeck(ALL_DECKS);
 }
 
-/** 一次性迁移：给历史无 decks 字段的生词补 ['default']（带完成标记） */
+/** 一次性迁移：给历史无 decks 字段的生词补 ['default']（带完成标记）。
+ *  每个迁移用 dbPutMany 单事务批量写，几百上千词也只开一次事务，不再洪水式逐条写。 */
 async function migrateVocabDecks() {
     ensureDefaultDeck();
+    // 1) 历史无 decks 字段 → 补 ['default']
     if (localStorage.getItem('en2_decksMigrated') !== '1') {
-        for (const v of await dbAll('vocab')) {
-            if (!Array.isArray(v.decks) || !v.decks.length) {
-                v.decks = [DEFAULT_DECK_ID];
-                await dbPut('vocab', v);
-            }
-        }
+        const all = await dbAll('vocab');
+        const changed = all
+            .filter(v => !Array.isArray(v.decks) || !v.decks.length)
+            .map(v => ({ ...v, decks: [DEFAULT_DECK_ID] }));
+        if (changed.length) await dbPutMany('vocab', changed);
         localStorage.setItem('en2_decksMigrated', '1');
     }
-    // 收藏语义统一：把历史 v.fav 星标词并入当前收藏目标词书，再清掉 fav 字段
+    // 2) fav 星标并入当前收藏词书（单事务）
     if (localStorage.getItem('en2_favMigrated') !== '1') {
         const target = getActiveDeck();
-        for (const v of await dbAll('vocab')) {
+        const all = await dbAll('vocab');
+        const changed = [];
+        for (const v of all) {
             if (!v.fav) continue;
             const decks = new Set(Array.isArray(v.decks) ? v.decks : [DEFAULT_DECK_ID]);
             decks.add(target);
-            v.decks = [...decks];
-            delete v.fav;
-            await dbPut('vocab', v);
+            const nv = { ...v, decks: [...decks] };
+            delete nv.fav;
+            changed.push(nv);
         }
+        if (changed.length) await dbPutMany('vocab', changed);
         localStorage.setItem('en2_favMigrated', '1');
     }
-    // 补齐 seq：历史无 seq 记录按「来源文章+句序」分配（一键记录同秒批量无法用 added_at 区分，
-    // 按文章内出现顺序重排，而非字典序）；无来源的词退化为 added_at 排序。
-    // v2：v44 首版按 added_at 迁移导致同秒批量词仍字典序，这里统一按来源顺序重排全部记录。
+    // 3) 补齐 seq（按来源顺序重排，单事务一次写）
     if (localStorage.getItem('en2_seqMigrated') !== '2') {
         const all = (await dbAll('vocab'));
         const key = v => {
@@ -275,10 +290,8 @@ async function migrateVocabDecks() {
             return aid + '_' + (m ? String(m[1]).padStart(5, '0') : '');
         };
         all.sort((a, b) => key(a).localeCompare(key(b)) || (a.added_at || '').localeCompare(b.added_at || ''));
-        for (const v of all) {
-            v.seq = nextSeq();
-            await dbPut('vocab', v);
-        }
+        const changed = all.map(v => ({ ...v, seq: nextSeq() }));
+        await dbPutMany('vocab', changed);
         localStorage.setItem('en2_seqMigrated', '2');
     }
 }
@@ -462,10 +475,10 @@ async function backupImport(input) {
             if (Array.isArray(body.decks)) localStorage.setItem('en2_decks', JSON.stringify(body.decks));
             if (body.active_deck) localStorage.setItem('en2_activeDeck', body.active_deck);
             localStorage.removeItem('en2_decksMigrated');
-            alert('导入成功，页面即将刷新');
-            location.reload();
+            toast('导入成功，即将刷新…');
+            setTimeout(() => location.reload(), 1000);
         } catch (e) {
-            alert('导入失败: ' + e.message);
+            toast('导入失败: ' + e.message);
         }
         input.value = '';
     };

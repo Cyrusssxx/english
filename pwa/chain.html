@@ -373,11 +373,11 @@
 
     // 随机抽 40 词：从当前词书抽取，并与近几次抽取尽量不重复
     async function random40() {
-        if (!window.__ready) { alert('语料还在加载，请稍候'); return; }
+        if (!window.__ready) { toast('语料还在加载，请稍候'); return; }
         const book = BOOKS[currentBook];
-        if (!book) { alert('词书未加载，请刷新'); return; }
+        if (!book) { toast('词书未加载，请刷新'); return; }
         const pool = currentBook === 'freq' ? (book.words || []) : (book.items || []).map(i => i.w);
-        if (!pool.length) { alert('词书为空'); return; }
+        if (!pool.length) { toast('词书为空'); return; }
         const k = Math.min(40, pool.length);
         const histKey = 'chain_last40_' + currentBook;
         let hist = [];
@@ -457,9 +457,9 @@
     }
 
     async function generate() {
-        if (!window.__ready) { alert('语料还在加载，请稍候'); return; }
+        if (!window.__ready) { toast('语料还在加载，请稍候'); return; }
         const queries = parseQueries(document.getElementById('words').value);
-        if (!queries.length) { alert('请输入至少一个单词或词组'); return; }
+        if (!queries.length) { toast('请输入至少一个单词或词组'); return; }
         const cov = buildCoverage(queries);
         const { chosen, coveredBy, remaining } = greedySetCover(queries, cov);
 

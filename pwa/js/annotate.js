@@ -182,7 +182,7 @@ const Annot = (() => {
             const p = ta.selectionStart;
             ta.value = ta.value.slice(0, p) + tag + ta.value.slice(ta.selectionEnd);
             ta.selectionStart = ta.selectionEnd = p + tag.length;
-        }).catch(() => alert('图片保存失败'));
+        }).catch(() => toast('图片保存失败'));
     }
 
     function renderNoteBox(block, text, editing) {
@@ -234,8 +234,8 @@ const Annot = (() => {
         renderNoteBox(block, bucket().notes[block.dataset.sid] || '', true);
     }
 
-    function delNote(btn) {
-        if (!confirm('确定删除这条批注？')) return;   // 删除需确认，修改不用
+    async function delNote(btn) {
+        if (!await confirmAsync('确定删除这条批注？', { danger: true })) return;   // 删除需确认，修改不用
         const block = btn.closest('[data-sid]');
         imgDel(refsOf(bucket().notes[block.dataset.sid]));  // 随批注删掉其引用的图
         delete bucket().notes[block.dataset.sid];
@@ -386,10 +386,10 @@ const Annot = (() => {
                         if (m && m.k && m.t && !gids.has(gidOf(m))) dst.marks.push(m);
                 }
                 save();
-                alert('导入成功，已合并到现有标注');
-                location.reload();
+                toast('导入成功，已合并到现有标注');
+                setTimeout(() => location.reload(), 1000);
             } catch (e) {
-                alert('导入失败: ' + e.message);
+                toast('导入失败: ' + e.message);
             }
             input.value = '';
         };

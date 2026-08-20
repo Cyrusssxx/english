@@ -2509,3 +2509,101 @@ mark.mk-b { background: var(--mk-b); }
     color: #fff;
     font-weight: 700;
 }
+
+/* ==================== 非阻塞弹层（替换原生 confirm/alert/prompt） ==================== */
+#uiModalRoot {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+.ui-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity .18s ease;
+    pointer-events: auto;
+}
+.ui-overlay.show { opacity: 1; }
+.ui-dialog {
+    background: var(--surface, #fff);
+    color: var(--text, #1e293b);
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 14px;
+    max-width: 440px;
+    width: 100%;
+    padding: 20px 22px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, .28);
+    transform: translateY(10px);
+    transition: transform .18s ease;
+}
+.ui-overlay.show .ui-dialog { transform: translateY(0); }
+.ui-dialog-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.ui-dialog-body {
+    font-size: .92rem;
+    line-height: 1.6;
+    color: var(--text, #1e293b);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.ui-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 18px;
+}
+.ui-btn {
+    border: 1px solid var(--border, #e2e8f0);
+    background: #f1f5f9;
+    color: var(--text, #1e293b);
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-size: .9rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+html.dark .ui-btn { background: #334155; color: #e2e8f0; border-color: #475569; }
+.ui-btn.ui-ok { background: var(--primary, #2563eb); border-color: var(--primary, #2563eb); color: #fff; }
+.ui-btn.ui-ok.danger { background: var(--danger, #ef4444); border-color: var(--danger, #ef4444); }
+.ui-btn:active { transform: translateY(1px); }
+.ui-input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 9px 11px;
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 10px;
+    background: var(--surface, #fff);
+    color: var(--text, #1e293b);
+    font-size: .95rem;
+    font-family: inherit;
+}
+html.dark .ui-input { background: #1e293b; color: #e2e8f0; border-color: #475569; }
+.ui-prompt-msg { margin-bottom: 2px; }
+
+.ui-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 42px;
+    transform: translateX(-50%) translateY(12px);
+    background: rgba(15, 23, 42, .92);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: .9rem;
+    max-width: 82vw;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .2s ease, transform .2s ease;
+    pointer-events: none;
+    z-index: 10000;
+}
+.ui-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }

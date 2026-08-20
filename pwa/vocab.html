@@ -205,10 +205,10 @@
 
         function selectView(id) { viewDeck = id; renderAll(); }
 
-        function onCreateDeck() {
-            const name = prompt('新建词书名称：');
-            if (!name || !name.trim()) return;
-            const id = createDeck(name.trim());
+        async function onCreateDeck() {
+            const name = await promptAsync('新建词书名称：');
+            if (!name) return;
+            const id = createDeck(name);
             if (id) { viewDeck = id; renderAll(); }
         }
 
@@ -219,26 +219,26 @@
             const label = id === '__all__' ? '全部生词' : `词书「${deckName(id)}」`;
             const rows = await vocabByDeck(id);
             const learned = rows.filter(v => v.srs);
-            if (!learned.length) { alert(`${label}没有已开始学习的词，无需重学。`); return; }
-            if (!confirm(`重学${label}？将清空其中 ${learned.length} 个词的记忆进度（复习间隔归零，变回新词从头背），此操作不可撤销。`)) return;
+            if (!learned.length) { toast(`${label}没有已开始学习的词，无需重学。`); return; }
+            if (!await confirmAsync(`重学${label}？将清空其中 ${learned.length} 个词的记忆进度（复习间隔归零，变回新词从头背），此操作不可撤销。`, { danger: true })) return;
             for (const v of learned) { delete v.srs; await dbPut('vocab', v); }
             localStorage.removeItem('en2_studySession');   // 清掉残留本轮会话，避免恢复到旧队列
             renderAll();
-            alert(`已重置 ${learned.length} 个词，去背单词即可从头学。`);
+            toast(`已重置 ${learned.length} 个词，去背单词即可从头学。`);
         }
 
-        function onRenameDeck(id) {
+        async function onRenameDeck(id) {
             const d = getDeck(id);
-            const name = prompt('重命名词书：', d ? d.name : '');
-            if (!name || !name.trim()) return;
-            renameDeck(id, name.trim());
+            const name = await promptAsync('重命名词书：', d ? d.name : '');
+            if (!name) return;
+            renameDeck(id, name);
             renderAll();
         }
 
         async function onDeleteDeck(id) {
             const d = getDeck(id);
             if (!d || d.builtin) return;
-            if (!confirm(`删除词书「${d.name}」？其中仅属于本词书的词也会一并移除。`)) return;
+            if (!await confirmAsync(`删除词书「${d.name}」？其中仅属于本词书的词也会一并移除。`, { danger: true })) return;
             await deleteDeck(id);
             viewDeck = '__all__';
             renderAll();
@@ -263,9 +263,9 @@
                     const added = await addWordsBulk(items, id);
                     viewDeck = id;
                     await renderAll();
-                    alert(`已导入词书「${name}」，新增 ${added} 个词`);
+                    toast(`已导入词书「${name}」，新增 ${added} 个词`);
                 } catch (e) {
-                    alert('导入失败: ' + e.message);
+                    toast('导入失败: ' + e.message);
                 }
                 input.value = '';
             };
@@ -408,14 +408,14 @@
         /** 删除选中的词（二次确认） */
         async function deleteSelected() {
             const n = batchSel.size;
-            if (!n) { alert('请先勾选要删除的词'); return; }
+            if (!n) { toast('请先勾选要删除的词'); return; }
             const scope = viewDeck === '__all__' ? '全部生词' : `词书「${deckName(viewDeck)}」`;
-            if (!confirm(`确定从${scope}中删除选中的 ${n} 个词/词组？删除后不可恢复（同步清理背单词进度）。`)) return;
+            if (!await confirmAsync(`确定从${scope}中删除选中的 ${n} 个词/词组？删除后不可恢复（同步清理背单词进度）。`, { danger: true })) return;
             for (const w of batchSel) await dbDelete('vocab', w);
             batchMode = false;
             batchSel = new Set();
             renderAll();
-            alert(`已删除 ${n} 个词/词组`);
+            toast(`已删除 ${n} 个词/词组`);
         }
 
         async function toggleFav(word) {
@@ -452,7 +452,7 @@
             if (getDeck(id)) {
                 const counts = await deckCounts();
                 if ((counts[id] || 0) > 0 &&
-                    !confirm(`「${b.name}」已导入（${counts[id]} 词），重新导入仅并入新词、不覆盖已有进度，继续？`)) return;
+                    !await confirmAsync(`「${b.name}」已导入（${counts[id]} 词），重新导入仅并入新词、不覆盖已有进度，继续？`)) return;
             }
             try {
                 const res = await fetch(b.file);
@@ -468,9 +468,9 @@
                 const added = await addWordsBulk(items, id);
                 viewDeck = id;
                 await renderAll();
-                alert(`已导入内置词书「${b.name}」，新增 ${added} 个词`);
+                toast(`已导入内置词书「${b.name}」，新增 ${added} 个词`);
             } catch (e) {
-                alert('导入失败: ' + e.message);
+                toast('导入失败: ' + e.message);
             }
         }
 

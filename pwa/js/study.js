@@ -496,7 +496,7 @@ document.addEventListener('keydown', (e) => {
         if (e.code === 'Escape') { bindingAction = null; renderSettings(); return; }
         const km = getKeyMap();
         const dup = KEY_ACTIONS.find(([a]) => a !== bindingAction && km[a] === e.code);
-        if (dup) { alert('「' + keyLabel(e.code) + '」已绑定给「' + dup[1] + '」，请换一个键'); return; }
+        if (dup) { toast('「' + keyLabel(e.code) + '」已绑定给「' + dup[1] + '」，请换一个键'); return; }
         km[bindingAction] = e.code;
         setKeyMap(km);
         bindingAction = null;

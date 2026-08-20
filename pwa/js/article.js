@@ -161,6 +161,9 @@ function toggleCnAll() {
 }
 
 // ============ 初始化 ============
+// 后台数据加载的 Promise：记录生词等操作可 await 它，确保 vocabSet 已就绪
+let _dataPromise = null;
+
 async function init() {
     if (!AID) {
         document.getElementById('readPane').innerHTML = '<div class="error">缺少文章参数</div>';
@@ -182,21 +185,7 @@ async function init() {
     document.getElementById('navTitle').textContent = `${year} ${TYPE_NAMES[article.type] || article.type}`;
     localStorage.setItem('lastArticle', AID);
 
-    // 用户数据
-    await migrateVocabDecks();
-    vocabSet = new Set((await vocabByDeck(getVocabTarget())).map(v => v.word));
-    favSet = new Set((await dbAll('fav_sentences')).map(f => f.sentence_id));
-    for (const a of await dbAll('quiz_answers')) if (a.article_id === AID) answerMap[a.question_id] = a;
-
-    // 离线词典：失败静默降级为仅预标注词可点
-    await loadDict();
-    // 词组词典：失败静默降级为无词组高亮
-    await loadPhrases();
-    // 真题考频：失败静默降级为不显示徽标
-    if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } }
-    // 精选难词集合：失败静默降级为不额外高亮
-    if (typeof loadHardwords === 'function') { try { await loadHardwords(); } catch (e) { /* 精选降级 */ } }
-
+    // —— 先渲染正文（仅依赖 s.words 预标注，无需词典/生词本数据），打开文章不再整页卡 ——
     renderModeSwitch();
     renderHardSwitch();
     renderQuizCollapse();
@@ -205,6 +194,55 @@ async function init() {
     renderQuiz();
     await restoreScroll();
     watchScroll();
+
+    // —— 用户数据 + 离线词典：后台异步补齐，完成后刷新可点词与收藏/生词态（保持不变的视图） ——
+    _dataPromise = (async () => {
+        try {
+            await migrateVocabDecks();
+            vocabSet = new Set((await vocabByDeck(getVocabTarget())).map(v => v.word));
+            favSet = new Set((await dbAll('fav_sentences')).map(f => f.sentence_id));
+            for (const a of await dbAll('quiz_answers')) if (a.article_id === AID) answerMap[a.question_id] = a;
+            // 离线词典：失败静默降级为仅预标注词可点
+            await loadDict();
+            // 词组词典：失败静默降级为无词组高亮
+            await loadPhrases();
+            // 真题考频：失败静默降级为不显示徽标
+            if (typeof loadFreq === 'function') { try { await loadFreq(); } catch (e) { /* 徽标降级 */ } }
+            // 精选难词集合：失败静默降级为不额外高亮
+            if (typeof loadHardwords === 'function') { try { await loadHardwords(); } catch (e) { /* 精选降级 */ } }
+            enrichRender();
+        } catch (e) {
+            console.warn('后台数据加载失败（已降级为仅预标注词可点）', e);
+        }
+    })();
+}
+
+/** 数据就绪后重渲染：补齐词典难词/词组高亮、收藏星标、生词态，并尽量保持用户当前视图（展开的译文、滚动位置） */
+function enrichRender() {
+    // 记录当前展开的译文句与已收藏星标、滚动位置
+    const openCn = [];
+    document.querySelectorAll('.sent-cn.open').forEach(el => {
+        const s = el.closest('.sent'); if (s) openCn.push(s.dataset.sid);
+    });
+    const favOn = [];
+    document.querySelectorAll('.fav-btn.on').forEach(b => {
+        const s = b.closest('.sent'); if (s) favOn.push(s.dataset.sid);
+    });
+    const y = window.scrollY;
+    renderArticle();
+    renderQuiz();
+    if (window.Annot) Annot.apply(AID);
+    // 恢复展开译文
+    openCn.forEach(id => {
+        const cn = document.querySelector(`#s-${CSS.escape(id)} .sent-cn`);
+        if (cn) cn.classList.add('open');
+    });
+    // 恢复收藏星标
+    favOn.forEach(id => {
+        const b = document.querySelector(`#s-${CSS.escape(id)} .fav-btn`);
+        if (b) { b.classList.add('on'); b.textContent = '★'; }
+    });
+    window.scrollTo(0, y);
 }
 
 // ============ 正文渲染 ============
@@ -600,6 +638,7 @@ async function onAddPhraseVocab(btn) {
  *  （词典 v26 扩到 8525 词后含大量简单词，故按 hardwords 精选集合过滤；
  *    精选集合未加载成功时回退为旧逻辑——词典命中即记录，避免降级为空）。 */
 async function recordArticleWords() {
+    if (_dataPromise) { try { await _dataPromise; } catch (e) { /* 降级为仅预标注词可点 */ } }
     const seen = new Set();
     const items = [];
     const useHard = typeof isHard === 'function' && typeof isHardLoaded === 'function' && isHardLoaded();
@@ -621,12 +660,12 @@ async function recordArticleWords() {
             });
         }
     }
-    if (!items.length) { alert('本篇没有可新增的难词（可能都已在生词本）'); return; }
+    if (!items.length) { toast('本篇没有可新增的难词（可能都已在生词本）'); return; }
     const dname = deckName(getVocabTarget());
-    if (!confirm(`将本篇 ${items.length} 个较难词加入「${dname}」？`)) return;
+    if (!await confirmAsync(`将本篇 ${items.length} 个较难词加入「${dname}」？`, { okText: '加入', title: '一键记录难词' })) return;
     const added = await addWordsBulk(items, getVocabTarget());
-    vocabSet = new Set((await vocabByDeck(getVocabTarget())).map(v => v.word));
-    alert(`已加入「${dname}」${added} 个词`);
+    for (const it of items) vocabSet.add(it.word);   // 不再整库重读（Fix#3：去掉调用方的第二次全量读）
+    toast(`已加入「${dname}」${added} 个词`);
 }
 
 function closePop() {
@@ -775,7 +814,7 @@ function renderQuiz() {
 async function resetQuiz() {
     const qs = article.questions || [];
     if (!qs.length) return;
-    if (!confirm('清除本篇全部作答记录？')) return;
+    if (!await confirmAsync('清除本篇全部作答记录？', { danger: true })) return;
     await clearAnswers(AID);
     answerMap = {};
     // 完形题：blank 文本已填入正文，需整篇重绘还原为 [n] 占位
@@ -1041,7 +1080,7 @@ document.addEventListener('keydown', (e) => {
             e.code === 'MetaLeft' || e.code === 'MetaRight') return;
         if (!combo) return;
         const dup = ART_KEY_ACTIONS.find(([a]) => a !== artBindAction && getArtKeyMap()[a] === combo);
-        if (dup) { alert('「' + artKeyLabel(combo) + '」已绑定给「' + dup[1] + '」，请换一个键'); return; }
+        if (dup) { toast('「' + artKeyLabel(combo) + '」已绑定给「' + dup[1] + '」，请换一个键'); return; }
         const km2 = getArtKeyMap();
         km2[artBindAction] = combo;
         setArtKeyMap(km2);
