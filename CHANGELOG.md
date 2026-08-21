@@ -1,5 +1,20 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-08-20] 修复：首页「加载中」无限卡死（SW 不阻塞 + 文件加载超时）
+
+- **根因**：① Service Worker 安装用 `cache.addAll`（原子），88 个预缓存资源任一失败/超时则 SW 卡在 installing 不激活，缓存建不起来；② fetch 拦截缓存未命中走网络时无超时，国内访问 GitHub Pages 慢/不稳时请求无限 pending，首页永远停在「加载中」不报错。
+- **SW 安装**：`tools/build_sw.py` 模板改 `Promise.allSettled(PRECACHE.map(u => cache.add(u)))` 逐个缓存，单个资源失败不再阻塞 SW 激活（之前 `addAll` 一个 404 就全废）。
+- **fetch 超时**：缓存未命中走网络加 `fetchTO(req, 8000)`（AbortController 8 秒超时），超时/失败返回 504 而非挂起。
+- **数据加载双保险**：`storage.js` 新增 `fetchJSON(url, ms)` 带超时 JSON fetch，`loadIndex/loadYear/loadEn1Year/loadEn1Index` 全部改用它（覆盖 SW 未激活的首次访问）。
+- **首页交互**：`index.html` 的 `init()` 3 秒未加载完显示「网络较慢，正在加载…」；失败时显示明确原因并加「重试」按钮；`style.css` 加 `.loading-hint`/`.retry-btn` 样式。
+
+## [2026-08-20] 性能：消除卡顿（非阻塞弹层 + 批量事务 + 异步渲染）
+
+- **非阻塞弹层**：`common.js` 新增 `toast/alertAsync/confirmAsync/promptAsync` + `#uiModalRoot` 容器；全站原生 `confirm/alert/prompt` 共 20+ 处替换为非阻塞弹层（article/vocab/study/annotate/chain），根治 PWA 独立窗口弹到后台导致的「冻结感」。
+- **migrateVocabDecks 单事务**：`storage.js` 新增 `dbPutMany`（单事务批量 put），三个迁移循环各自改为「收集变更 → 一次 dbPutMany」，几百上千词一次搞定，不再逐词 `await dbPut` 洪水式事务。
+- **去掉冗余全量读**：`recordArticleWords` 记录生词后去掉 `vocabByDeck` 第二次全量读，改为本地 `vocabSet.add(it.word)` 增量更新。
+- **文章页先渲染正文**：`init` 拆为「先 renderArticle（仅依赖句子预标注 s.words）」+「enrichRender 后台异步补 migrate/词典/词组/难词/生词本/作答记录」，打开文章不再整页卡等数据；enrichRender 完成后恢复已展开译文/收藏星标/滚动位置。
+
 ## [en2-v45] 2026-08-06
 
 ### 修复：一键记录批量加的生词背出来仍是字母序
