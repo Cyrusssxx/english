@@ -18,10 +18,11 @@
             <a href="index.html" class="nav-brand" title="返回列表">‹ <span id="navTitle">精读</span></a>
             <div class="nav-tools">
                 <div class="nav-search-wrap">
-                    <input class="nav-search" id="navSearch" type="search" placeholder="查词" title="输入英文单词/词组或中文后回车查释义；Alt+C 快速聚焦"
+                    <input class="nav-search" id="navSearch" type="search" placeholder="查词" title="输入英文单词/词组或中文后回车（或点🔍）查释义；Alt+C 快速聚焦"
                         onfocus="showSearchHist()" oninput="hideSearchHist()"
                         onkeydown="if(event.key==='Enter')navLookup();else if(event.key==='Escape')hideSearchHist()"
                         onblur="setTimeout(hideSearchHist,150)">
+                    <button class="nav-search-btn" id="navSearchBtn" onclick="navLookup()" title="查词（点击或 Alt+C 聚焦后回车）">🔍</button>
                     <div class="nav-search-hist" id="navSearchHist" hidden></div>
                 </div>
                 <span class="nav-timer" id="navTimer" title="今日学习时长">⏱ 00:00:00</span>

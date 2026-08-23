@@ -1,0 +1,865 @@
+{
+ "schema_version": 1,
+ "exam": "en1",
+ "year": 2025,
+ "articles": [
+  {
+   "id": "en1_2025_text1",
+   "type": "text1",
+   "title": "",
+   "topic": "",
+   "ref_cn": "",
+   "source": "2025 年考研英语一 Text 1 · 真题 PDF 抽取 + 手工补译",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "The grammar school boy from Stratford-upon-Avon has landed a scholarly punch after ground-breaking research showed that Shakespeare does benefit children’s literacy and emotional development.",
+     "cn": "",
+     "id": "en1_2025_text1_s01",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "But only if you act him out.",
+     "cn": "",
+     "id": "en1_2025_text1_s02",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "A study found that a “rehearsal room” approach to teaching Shakespeare broadened children’s vocabulary and the complexity of their writing as well as their emotional literacy. “The research shows that the way actors work makes a big difference to the way children use language and also how they think about themselves,” Jacqui O’Hanlon of the Royal Shakespeare Company (RSC), which commissioned the study, said.",
+     "cn": "",
+     "id": "en1_2025_text1_s03",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The randomised control trial involved hundreds of year 5 pupils—aged nine and ten—at 45 state primary schools that had not been “previously exposed to RSC pedagogy”.",
+     "cn": "",
+     "id": "en1_2025_text1_s04",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "They were split into target and control groups and asked to write, for example, a message in a bottle as Ferdinand after the shipwreck in The Tempest.",
+     "cn": "",
+     "id": "en1_2025_text1_s05",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The target group was given a 30-minute drama-based activity to accompany the passage.",
+     "cn": "",
+     "id": "en1_2025_text1_s06",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The peer-reviewed results showed that the target group of pupils drew on a wider vocabulary, used words “classed as more sophisticated or rarer”, and wrote at greater length.",
+     "cn": "",
+     "id": "en1_2025_text1_s07",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "They also “appear to be more comfortable writing in role...while [control] group imagine how they themselves would react to being shipwrecked, [target] group put themselves in the shoes of a literary character and express that character’s emotion”.",
+     "cn": "",
+     "id": "en1_2025_text1_s08",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The Time to Act study also found that while control pupils relied on “desert island cliches” such as palm trees, target pupils were “more expansive [giving] a broader picture of the sky, the sea and the atmospheric conditions”.",
+     "cn": "",
+     "id": "en1_2025_text1_s09",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "O’Hanlon said she had been most surprised by the “emotional literacy that was evident in the [target] children’s writing” and that they were “more resilient in their writing, more hopeful”.",
+     "cn": "",
+     "id": "en1_2025_text1_s10",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "She added: “The emotional understanding was very evident and it is probably related to the [rehearsal room process] where you are used to trying to imagine your way through.",
+     "cn": "",
+     "id": "en1_2025_text1_s11",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "They were comfortable in describing different emotional states and part of what you do in drama is put yourself in different shoes.” The study showed the importance of embedding the arts in education, she said.",
+     "cn": "",
+     "id": "en1_2025_text1_s12",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "But could the results be replicated with any old dramatist?",
+     "cn": "",
+     "id": "en1_2025_text1_s13",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "O’Hanlon said more research would be needed but suggested that Shakespeare’s use of 20,000 words, compared with the everyday 2,000 words, gave a “massive expansion of language into children’s lives”, which was combined with children “using their whole bodies to bring words to life”. .3. (4 15 )",
+     "cn": "",
+     "id": "en1_2025_text1_s14",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "number": 21,
+     "stem": "The “rehearsal room” approach requires pupils to",
+     "options": {
+      "A": "rewrite the lines from Shakespeare",
+      "B": "watch RSC actors’ performances",
+      "C": "play the roles in Shakespeare",
+      "D": "study drama under RSC artists"
+     },
+     "id": "en1_2025_text1_q21",
+     "type": "reading",
+     "answer": "C",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 22,
+     "stem": "The study divided the pupils into two groups to find whether",
+     "options": {
+      "A": "the change in instruction enhances learning outcomes",
+      "B": "expanding vocabulary helps develop reading fluency",
+      "C": "emotion affects understanding of sophisticated works",
+      "D": "the classroom activity stimulates interest in the arts"
+     },
+     "id": "en1_2025_text1_q22",
+     "type": "reading",
+     "answer": "A",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 23,
+     "stem": "Control pupils’ reliance on “desert island cliches” shows their",
+     "options": {
+      "A": "weakness in description",
+      "B": "omission of small details",
+      "C": "casual style of writing",
+      "D": "preference for big words"
+     },
+     "id": "en1_2025_text1_q23",
+     "type": "reading",
+     "answer": "A",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 24,
+     "stem": "What can promote children’s emotional literacy according to O’Hanlon?",
+     "options": {
+      "A": "Writing in an imaginative manner.",
+      "B": "Identifying with literary characters.",
+      "C": "Drawing inspiration from nature.",
+      "D": "Concentrating on real-life situations."
+     },
+     "id": "en1_2025_text1_q24",
+     "type": "reading",
+     "answer": "B",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 25,
+     "stem": "It can be inferred from the last paragraph that",
+     "options": {
+      "A": "the new teaching method may work best with Shakespeare",
+      "B": "the language of Shakespeare may be formidable for pupils",
+      "C": "other old dramatists may be included in primary education",
+      "D": "pupils may be reluctant to work on other old dramatists .4.(415 )"
+     },
+     "id": "en1_2025_text1_q25",
+     "type": "reading",
+     "answer": "A",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    }
+   ],
+   "sentence_count": 14,
+   "question_count": 5
+  },
+  {
+   "id": "en1_2025_text2",
+   "type": "text2",
+   "title": "",
+   "topic": "",
+   "ref_cn": "",
+   "source": "2025 年考研英语一 Text 2 · 真题 PDF 抽取 + 手工补译",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "I was shocked to learn recently that some scientists want to scale back their research in an effort to decrease carbon emissions.",
+     "cn": "",
+     "id": "en1_2025_text2_s01",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The crisis is here, they said, and we need to cut back on our energy-intensive modelling.",
+     "cn": "",
+     "id": "en1_2025_text2_s02",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "At the very least, we need to make our energy use far more sustainable.",
+     "cn": "",
+     "id": "en1_2025_text2_s03",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "It is unarguable that our laboratories, scientific instruments, rockets and satellites—the tools we scientists need to measure the planet’s pulse—demand significant amounts of energy both in their construction and operation.",
+     "cn": "",
+     "id": "en1_2025_text2_s04",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "And it is equally true that science’s unrelenting appetite for information has caused a mushrooming of energy-intensive data centres around the world.",
+     "cn": "",
+     "id": "en1_2025_text2_s05",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "According to the International Energy Agency, these buildings now consume about 1 per cent of the world’s electricity.",
+     "cn": "",
+     "id": "en1_2025_text2_s06",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "However, this is a price we must pay for understanding the world.",
+     "cn": "",
+     "id": "en1_2025_text2_s07",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "How can we inform decision makers about the best ways to bring down carbon emissions if we can’t track the amount of carbon dioxide in the atmosphere, where it’s coming from and who’s producing it?",
+     "cn": "",
+     "id": "en1_2025_text2_s08",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The carbon emissions from technological research are well spent: ultimately this research will safeguard the future of our planet.",
+     "cn": "",
+     "id": "en1_2025_text2_s09",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "It can be hard for scientists to make the case because our work is complex, often takes place behind closed doors and does not always lend itself to easy interpretation or explanation.",
+     "cn": "",
+     "id": "en1_2025_text2_s10",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "But demonstrating the efficacy of science will be crucial if we are to solve humanity’s greatest challenges.",
+     "cn": "",
+     "id": "en1_2025_text2_s11",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Recognising the hope that science and engineering can bring was the impetus behind the creation of the Millennium Technology Prize, which is now entering its 20th year as a celebration of human ingenuity.",
+     "cn": "",
+     "id": "en1_2025_text2_s12",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "One of the past winners, Professor Martin Green from the University of New South Wales, Australia, is the inventor of the Passivated Emitter and Rear Cell technology which is now found in most of the world’s solar panels.",
+     "cn": "",
+     "id": "en1_2025_text2_s13",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Thanks to his invention, we have a real chance to decrease the world’s carbon emissions.",
+     "cn": "",
+     "id": "en1_2025_text2_s14",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Every day, scientists, technologists and engineers are discovering new ways to exploit renewable energy sources and develop techniques not just to use power more intelligently but to power our intelligence.",
+     "cn": "",
+     "id": "en1_2025_text2_s15",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "A great example of this is Europe’s largest supercomputer, LUMI in Finland, which is astonishingly carbonnegative.",
+     "cn": "",
+     "id": "en1_2025_text2_s16",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Established in an old paper mill, it is powered by a nearby river and its remote heat warms the people who live in the surrounding town of Kajaani.",
+     "cn": "",
+     "id": "en1_2025_text2_s17",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "If the world is to meet its net-zero ambitions, we must think hard about how we can deliver sustainable computing and deliver more LUMIs. .5. ( 15 )",
+     "cn": "",
+     "id": "en1_2025_text2_s18",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "number": 26,
+     "stem": "The author expressed great surprise at some scientists’",
+     "options": {
+      "A": "unwillingness to cut carbon emissions",
+      "B": "intention to reduce their research",
+      "C": "suspicions about sustainable energy",
+      "D": "waste of electricity in their projects"
+     },
+     "id": "en1_2025_text2_q26",
+     "type": "reading",
+     "answer": "B",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 27,
+     "stem": "The author believes that carbon emissions from research",
+     "options": {
+      "A": "have caused grave consequences",
+      "B": "have aroused groundless worries",
+      "C": "are hard to handle at present",
+      "D": "are justifiable in the long run"
+     },
+     "id": "en1_2025_text2_q27",
+     "type": "reading",
+     "answer": "D",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 28,
+     "stem": "The example of Green in Paragraph 5 is used to illustrate",
+     "options": {
+      "A": "the achievements of great scientists",
+      "B": "the urgency of addressing climate change",
+      "C": "the rewards of scientific endeavours",
+      "D": "the value of fostering human ingenuity"
+     },
+     "id": "en1_2025_text2_q28",
+     "type": "reading",
+     "answer": "C",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 29,
+     "stem": "It can be learned from the last two paragraphs that LUMI",
+     "options": {
+      "A": "is a model of sustainability efforts",
+      "B": "is a triumph against energy shortage",
+      "C": "owes much to global net-zero initiatives",
+      "D": "aims to explore the power of intelligence"
+     },
+     "id": "en1_2025_text2_q29",
+     "type": "reading",
+     "answer": "A",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 30,
+     "stem": "Which of the following statements would the author agree with?",
+     "options": {
+      "A": "Emission-free modelling demands extra funding.",
+      "B": "The need for supercomputers is difficult to meet.",
+      "C": "Energy-intensive research work is inevitable.",
+      "D": "The goals of researchers ought to be realistic. .6. ( 15 )"
+     },
+     "id": "en1_2025_text2_q30",
+     "type": "reading",
+     "answer": "C",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    }
+   ],
+   "sentence_count": 18,
+   "question_count": 5
+  },
+  {
+   "id": "en1_2025_text3",
+   "type": "text3",
+   "title": "",
+   "topic": "",
+   "ref_cn": "",
+   "source": "2025 年考研英语一 Text 3 · 真题 PDF 抽取 + 手工补译",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "Ever since taking on Netflix Inc. at its own game, old Hollywood has struggled to turn a profit in streaming, with the likes of Disney+, Peacock and Paramount+ losing billions of dollars each year, sparking concerns on Wall Street that the services will never be as profitable as cable once was.",
+     "cn": "",
+     "id": "en1_2025_text3_s01",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "But the age of streaming has been a boon for some unintended winners: pirates that use software to rip a film or television show in seconds from legitimate online video platforms and host the titles on their own, illegitimate services, which rake in about $2 billion annually from ads and subscriptions.",
+     "cn": "",
+     "id": "en1_2025_text3_s02",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "With no video production costs, illegal streaming sites have achieved profit margins approaching 90%, according to the Motion Picture Association (MPA), a trade group representing Hollywood studios that’s working to crack down on the thousands of illegal platforms that have cropped up in recent years.",
+     "cn": "",
+     "id": "en1_2025_text3_s03",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Initially the rise of legitimate online businesses such as Netflix actually helped curb digital piracy, which had largely been based on file uploads.",
+     "cn": "",
+     "id": "en1_2025_text3_s04",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "But now piracy involving illegal streaming services as well as file-sharing costs the US economy about $30 billion in lost revenue a year and some 250,000 jobs, estimates the US Chamber of Commerce’s Global Innovation Policy Center.",
+     "cn": "",
+     "id": "en1_2025_text3_s05",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The global impact is about $71 billion annually. “The people who are stealing our movies and our television shows and operating piracy sites are not mom and pop operations,” says Charlie Rivkin, chief executive officer of the MPA. “This is organized crime.” Rivkin joined the MPA in 2017 after the organization failed five years earlier to build consensus between Hollywood and Silicon Valley to win passage of legislation in Congress aimed at stopping online piracy.",
+     "cn": "",
+     "id": "en1_2025_text3_s06",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "In 2017 the association formed the Alliance for Creativity and Entertainment (ACE), an enforcement task force of about 100 detectives circling the globe to help local authorities arrest streaming pirates.",
+     "cn": "",
+     "id": "en1_2025_text3_s07",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "ACE says it’s helped shrink the number of illegal streaming services in North America to 126, from more than 1,400 in 2018, aided in part by the MPA’s support for a 2020 federal law that made large-scale streaming of copyrighted material a serious crime.",
+     "cn": "",
+     "id": "en1_2025_text3_s08",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Consulting firm Parks Associates predicts that legitimate US streaming services’ cumulative loss from piracy since 2022 will reach $113 billion in the next two years. “While there is some optimism that emerging countermeasures and best practices may see piracy begin to plateau by 2027, there is no consensus among stakeholders as to when it may begin to decline,” says analyst Steve Hawley. «(-)i M .7. (£■ 15 )",
+     "cn": "",
+     "id": "en1_2025_text3_s09",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "number": 31,
+     "stem": "According to Paragraph 1, legitimate streaming services",
+     "options": {
+      "A": "have drawn lessons from Hollywood",
+      "B": "have surpassed cable in revenue",
+      "C": "are unpopular with advertisers",
+      "D": "are confronted with a real threat"
+     },
+     "id": "en1_2025_text3_q31",
+     "type": "reading",
+     "answer": "D",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 32,
+     "stem": "It can be learned that streamers like Netflix",
+     "options": {
+      "A": "played a part in the fight against illegal file-sharing",
+      "B": "reaped benefits from the war with digital pirates",
+      "C": "promised to become big job creators in the US",
+      "D": "used to collaborate with file-uploading platforms"
+     },
+     "id": "en1_2025_text3_q32",
+     "type": "reading",
+     "answer": "A",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 33,
+     "stem": "It can be inferred from Paragraph 4 that the MPA",
+     "options": {
+      "A": "was denied cooperation by Silicon Valley",
+      "B": "led a national protest against online piracy",
+      "C": "was urged to form an enforcement task force",
+      "D": "failed to win support from local authorities"
+     },
+     "id": "en1_2025_text3_q33",
+     "type": "reading",
+     "answer": "A",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 34,
+     "stem": "According to Hawley, digital piracy",
+     "options": {
+      "A": "cannot be checked in spite of new legislation",
+      "B": "will possibly overwhelm legitimate streamers",
+      "C": "is unlikely to diminish in the near future",
+      "D": "has been underestimated by some analysts"
+     },
+     "id": "en1_2025_text3_q34",
+     "type": "reading",
+     "answer": "C",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 35,
+     "stem": "Which of the following is emphasized in the text?",
+     "options": {
+      "A": "The need to coordinate anti-piracy action.",
+      "B": "The criminal nature of copyright violation.",
+      "C": "The prospect of eliminating online piracy.",
+      "D": "The economic harm from illegal streaming. £*§-(-)« .8. (£■ 15 )"
+     },
+     "id": "en1_2025_text3_q35",
+     "type": "reading",
+     "answer": "D",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    }
+   ],
+   "sentence_count": 9,
+   "question_count": 5
+  },
+  {
+   "id": "en1_2025_text4",
+   "type": "text4",
+   "title": "",
+   "topic": "",
+   "ref_cn": "",
+   "source": "2025 年考研英语一 Text 4 · 真题 PDF 抽取 + 手工补译",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "Visit any antiques store and you’ll encounter artifacts from the past: photographs, letters, a brochure detailing the Sinclair dinosaur exhibit from the 1964-1965 World’s Fair, the ephemera of history.",
+     "cn": "",
+     "id": "en1_2025_text4_s01",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Yet these objects aren’t truly ephemeral, because they’re still here, decades, even centuries later.",
+     "cn": "",
+     "id": "en1_2025_text4_s02",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Why?",
+     "cn": "",
+     "id": "en1_2025_text4_s03",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Because they’re tangible.",
+     "cn": "",
+     "id": "en1_2025_text4_s04",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Have you pondered the life cycle of intangible formats, digital information, given that those who produce these artifacts seldom make provision for their long-term preservation?",
+     "cn": "",
+     "id": "en1_2025_text4_s05",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "For millennia, we’ve known what we’ve known due to artifacts that have survived, often despite their original creators’ neglect.",
+     "cn": "",
+     "id": "en1_2025_text4_s06",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The thing itself is the medium that delivers the information.",
+     "cn": "",
+     "id": "en1_2025_text4_s07",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "At the time of creation, no attempts were made at intentional preservation, yet analog materials have a chance of surviving and serving as the historical record that biographers, historians, and novelists rely on.",
+     "cn": "",
+     "id": "en1_2025_text4_s08",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Libraries and archives have traditionally shouldered the responsibility of organization, preservation, and access to information.",
+     "cn": "",
+     "id": "en1_2025_text4_s09",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "One of S.R.",
+     "cn": "",
+     "id": "en1_2025_text4_s10",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Ranganathan’s foundational Laws of Library Science is “Save the time of the reader.” Thus, librarians digitize the tangible so that researchers the world over can quickly search and access their holdings.",
+     "cn": "",
+     "id": "en1_2025_text4_s11",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The result is an embarrassment of historical riches, which brings its own needle-and-haystack problems.",
+     "cn": "",
+     "id": "en1_2025_text4_s12",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Librarians’ selfless devotion can act against us when users point to universality of access by holding up a cellphone and saying, “it’s all in here” as evidence that libraries are less vital for researchers today.",
+     "cn": "",
+     "id": "en1_2025_text4_s13",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Yet how was that universality of access made possible and, perhaps more importantly, how is it maintained?",
+     "cn": "",
+     "id": "en1_2025_text4_s14",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Who curates what is preserved?",
+     "cn": "",
+     "id": "en1_2025_text4_s15",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "When it comes to born-digital information, the terrifying answer can be: if not librarians and archivists, then no one.",
+     "cn": "",
+     "id": "en1_2025_text4_s16",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Digital information requires a great deal more care than analog.",
+     "cn": "",
+     "id": "en1_2025_text4_s17",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Even when a digital object is preserved, it may only be the carrier that’s saved, not the information itself.",
+     "cn": "",
+     "id": "en1_2025_text4_s18",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "As technology advances and a format becomes obsolete, the object is useless.",
+     "cn": "",
+     "id": "en1_2025_text4_s19",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Have you ever stared helplessly at a ZIP disk, thinking: how do I get the files off this?",
+     "cn": "",
+     "id": "en1_2025_text4_s20",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Without constant migration of digital assets, a nightmare about the foreseeable future is what keeps historians up at night: a historical record that abruptly stops when digital replaces analog.",
+     "cn": "",
+     "id": "en1_2025_text4_s21",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "As a librarian whose day job revolves around special collections and digital assets, I share the night terrors of historians, and I’d be lying if I said a comprehensive preservation solution currently exists.",
+     "cn": "",
+     "id": "en1_2025_text4_s22",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Yet researchers can take some comfort in the fact that there are a multitude of librarians devoted to discovering, organizing, and preserving digital information for researchers current and future.",
+     "cn": "",
+     "id": "en1_2025_text4_s23",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Librarians are uniquely positioned to understand how end users seek and use information.",
+     "cn": "",
+     "id": "en1_2025_text4_s24",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Thus we play an integral role in identifying, preserving, and providing accessibility to digital artifacts so that, while future researchers may find the digital realm a challenging place to ply their trade, they won’t find it an impossible one. £*&(-) M .9. ( 15 )",
+     "cn": "",
+     "id": "en1_2025_text4_s25",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "number": 36,
+     "stem": "The author mentions the artifacts from the past to",
+     "options": {
+      "A": "introduce the coming of antiques",
+      "B": "contrast them with everyday items",
+      "C": "bring up the issue of preservation",
+      "D": "comment on their historical value"
+     },
+     "id": "en1_2025_text4_q36",
+     "type": "reading",
+     "answer": "C",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 37,
+     "stem": "Compared with digital objects, tangible artifacts",
+     "options": {
+      "A": "are less subject to their creators’ neglect",
+      "B": "convey information in a more direct way",
+      "C": "require more intentional preservation",
+      "D": "are less likely to suffer serious damage"
+     },
+     "id": "en1_2025_text4_q37",
+     "type": "reading",
+     "answer": "B",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 38,
+     "stem": "According to Paragraph 3, librarians’ work may result in ,",
+     "options": {
+      "A": "oversupply of materials",
+      "B": "undervaluation of libraries",
+      "C": "researchers’ underperformance",
+      "D": "users’ overreliance on technology"
+     },
+     "id": "en1_2025_text4_q38",
+     "type": "reading",
+     "answer": "B",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 39,
+     "stem": "The “ZIP disk” is cited as an example to show",
+     "options": {
+      "A": "the difficulty of retrieving files through unusual means",
+      "B": "the infeasibility of constantly migrating digital assets",
+      "C": "the possibility of losing information in obsolete formats",
+      "D": "the inconvenience of storing information on analog devices"
+     },
+     "id": "en1_2025_text4_q39",
+     "type": "reading",
+     "answer": "C",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    },
+    {
+     "number": 40,
+     "stem": "Which of the following statements best summarizes the text?",
+     "options": {
+      "A": "Hard work should be done to preserve artifacts.",
+      "B": "Contributions of librarians should be recognized.",
+      "C": "Accessing databases is essential to researchers.",
+      "D": "Keeping digital historical records is a challenge. (-) MM. .10. (£ 15 £)"
+     },
+     "id": "en1_2025_text4_q40",
+     "type": "reading",
+     "answer": "D",
+     "explanation": "",
+     "related_sentences": [],
+     "stem_cn": "",
+     "options_cn": {}
+    }
+   ],
+   "sentence_count": 25,
+   "question_count": 5
+  }
+ ]
+}

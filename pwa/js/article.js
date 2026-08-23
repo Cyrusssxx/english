@@ -549,11 +549,8 @@ function onWordClick(e, sid, wi) {
         <button class="${inV ? 'added' : ''}" onclick="onAddVocab(this,'${sid}',${wi})">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
 }
 
-/** 词典难词：未预标注词，词形取自 data-w，释义走 dictLookup（未命中显「无离线释义」，仍可加入生词本） */
-function onDictWordClick(e, sid) {
-    e.stopPropagation();
-    const _sel = getSelection(); if (_sel && !_sel.isCollapsed) return;  // 划词标注时不弹词卡
-    const el = e.currentTarget;
+/** 词典词卡（核心）：给定含 data-w 的元素，弹其释义卡；sid 用于例句解析（可空） */
+function openDictCard(el, sid) {
     const word = el.getAttribute('data-w');
     const entry = dictLookup(word);
     const inV = vocabSet.has(word);
@@ -561,7 +558,14 @@ function onDictWordClick(e, sid) {
         <span class="wp-word">${esc(word)}</span><span class="wp-phonetic">${esc(entry ? entry.p || '' : '')}</span>
         <div class="wp-meaning">${entry ? esc(entry.t || '') : '（无离线释义）'}</div>
         ${typeof freqBadge === 'function' ? freqBadge(word) : ''}
-        <button class="${inV ? 'added' : ''}" data-w="${esc(word)}" data-sid="${esc(sid)}" onclick="onAddDictVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
+        <button class="${inV ? 'added' : ''}" data-w="${esc(word)}" data-sid="${esc(sid || '')}" onclick="onAddDictVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
+}
+
+/** 词典难词：未预标注词，词形取自 data-w，释义走 dictLookup（未命中显「无离线释义」，仍可加入生词本） */
+function onDictWordClick(e, sid) {
+    e.stopPropagation();
+    const _sel = getSelection(); if (_sel && !_sel.isCollapsed) return;  // 划词标注时不弹词卡
+    openDictCard(e.currentTarget, sid);
 }
 
 async function onAddVocab(btn, sid, wi) {
@@ -599,7 +603,7 @@ async function onAddDictVocab(btn) {
     }
 }
 
-/** 词组下划线点击：phraseLookup 取释义 → 弹卡（含加入生词本） */
+/** 词组下划线点击：整组释义 → 弹卡（含每个组成词的释义，点组成词可在同一弹卡内查其完整卡） */
 function onPhraseClick(e, sid) {
     e.stopPropagation();
     const _sel = getSelection(); if (_sel && !_sel.isCollapsed) return;  // 划词标注时不弹词卡
@@ -608,10 +612,20 @@ function onPhraseClick(e, sid) {
     const meaning = phraseLookup(key);
     if (!meaning) return;
     const inV = vocabSet.has(key);
+    // 拆出每个组成词，显示各自释义；简单词（词典未收录）也列出但无释义
+    const wordLines = key.split(/\s+/).map(w => {
+        const entry = dictLookup(w);
+        const m = entry ? entry.t : null;
+        return `<div class="wpw"><span class="wpw-word" data-w="${esc(w)}" onclick="openDictCard(this, null)" title="点查该词">${esc(w)}</span>` +
+            (m ? `<span class="wpw-mean">${esc(m)}</span>` : `<span class="wpw-mean wpw-none">（离线无释义）</span>`) +
+            `</div>`;
+    }).join('');
     openPop(el, `
         <span class="wp-word">${esc(key)}</span>
+        <div class="wp-phrase-tag">词组</div>
         <div class="wp-meaning">${esc(meaning)}</div>
         ${typeof freqBadge === 'function' ? freqBadge(key) : ''}
+        <div class="wp-phrase-words">${wordLines}</div>
         <button class="${inV ? 'added' : ''}" data-w="${esc(key)}" data-sid="${esc(sid)}" onclick="onAddPhraseVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`);
 }
 

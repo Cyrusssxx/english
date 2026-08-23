@@ -869,6 +869,57 @@ html.dark .word.tgt {
     background: var(--secondary);
 }
 
+/* 词组弹卡：组成词拆解（每个词可点查完整卡） */
+.word-pop .wp-phrase-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 999px;
+    padding: 0 7px;
+    margin-bottom: 2px;
+}
+.word-pop .wp-phrase-words {
+    margin: 2px 0 8px;
+    padding: 7px 9px;
+    background: var(--primary-soft);
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+html.dark .word-pop .wp-phrase-words {
+    background: rgba(13, 148, 136, 0.14);
+}
+.word-pop .wpw {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 2px 0;
+}
+.word-pop .wpw + .wpw {
+    border-top: 1px dashed var(--border);
+}
+.word-pop .wpw-word {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: var(--primary-dark);
+    cursor: pointer;
+}
+.word-pop .wpw-word:hover {
+    text-decoration: underline dotted var(--primary) 2px;
+    text-underline-offset: 3px;
+}
+html.dark .word-pop .wpw-word {
+    color: #7edcd2;
+}
+.word-pop .wpw-mean {
+    color: var(--text-light);
+    font-size: 0.82rem;
+}
+.word-pop .wpw-mean.wpw-none {
+    font-style: italic;
+    opacity: 0.7;
+}
+
 /* ==================== 做题面板 ==================== */
 .quiz-pane {
     width: 400px;
@@ -2352,6 +2403,37 @@ mark.mk-b { background: var(--mk-b); }
 .nav-search-wrap {
     position: relative;
     display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+/* 可点击查词按钮：与搜索框视觉一致的圆角图标按钮 */
+.nav-search-btn {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid #c8cdd4;
+    border-radius: 999px;
+    background: var(--card-bg);
+    color: var(--text-light);
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+    transition: border-color .18s, color .18s, background .18s;
+}
+.nav-search-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-soft);
+}
+html.dark .nav-search-btn {
+    border-color: #3a4d4a;
+}
+html.dark .nav-search-btn:hover {
+    background: rgba(13, 148, 136, 0.18);
 }
 .nav-search-hist {
     position: absolute;
