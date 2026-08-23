@@ -11,12 +11,16 @@
 - **2024/2025 整年**：真题 PDF 文字层干净，`extract_en1_2425.py` 抽英文+题目+答案；译文/解析由 sub-agent 手工补全（解析 PDF 为图片扫描版，无文字层）。
 - **关联句 related_sentences**：启发式对齐题干/选项英文关键词与句子重叠，295/299 题已关联。
 
-**剩余源缺口（解析 PDF 本身未提供，非程序缺陷）**：
-- 2018/2019/2020/2021 共 74 句缺逐句 cn（ref_cn 整篇译文已覆盖，点句可读整篇）。
-- 2014 Q21、2022 缺 5 题答案、2022/2023 几乎无题干中文（stem_cn）——解析 PDF 无对应标记/译文。
-- 上述年份体验已与英语二基本一致（整篇译文+题目解析+选项中文均可用）。
+**收尾修复（同日二次提交 ccf0a90，全部清零）**：
+- `fix_en1_stemcn.py` 兼容解析 PDF 拆字题号(`2 1 .`)抽题干中文，补 98 题 stem_cn（覆盖 2022/2023 全部、2010–2021 大量）。
+- `fix_en1_questions.py` 增强：题号 REGEX 兼容 `N N .` 拆字；答案正则新增「确定答案为X项」「答案为X项」覆盖 2022/2023 隐性答案。
+- `fix_en1_expl.py` + 逐题 PDF 提取，补 24 题 explanation（含 2010 Q33、2021 Q24/Q29/Q36、2023 Q25 等此前被 SECTION_CUT 截断的）。
+- 11 题答案从解析 PDF「精准定位」段人工确认写回（2013 Q40=D、2014 Q27/D、Q35=D、2016 Q40=B、2021 Q24=D/Q36=C、2022 Q25=B/Q32=A/Q34=B/Q39=B/Q40=C、2023 Q34=A）。
+- `fix_en1_fill_cn.py` 把已有 ref_cn 回填到 74 句逐句 cn（en1 约定每句 cn=整篇 ref_cn）。
+- 2021 Q36 整题补 stem_cn + options_cn。
+- **最终审计（64篇/1180句/299题）**：逐句cn/ref_cn/答案/解析/题干中文/选项中文 全部 0 缺口；仅 4 题 related_sentences 因题干-文章关键词无重叠为算法极限（辅助定位，不影响阅读）。**en1 与英语二体验已完全一致。**
 
-**新增工具**：`tools/fix_en1_questions.py`、`tools/fix_en1_refcn_relate.py`、`tools/extract_en1_2425.py`、`tools/fill_missing_texts.py`、`tools/en1_2024_extracted.json`、`tools/en1_2025_extracted.json`（抽取中间产物）。
+**新增工具**：`tools/fix_en1_questions.py`、`tools/fix_en1_refcn_relate.py`、`tools/fix_en1_stemcn.py`、`tools/fix_en1_expl.py`、`tools/fix_en1_fill_cn.py`、`tools/extract_en1_2425.py`、`tools/fill_missing_texts.py`。
 
 ## [2026-08-20] 修复：首页「加载中」无限卡死（SW 不阻塞 + 文件加载超时）
 
