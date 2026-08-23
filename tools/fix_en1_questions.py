@@ -24,10 +24,14 @@ if SYS not in sys.path:
     sys.path.insert(0, SYS)
 
 OPT_RE = re.compile(r"[\[｜［【]?\s*([A-D])\s*[\]］J】]?\s*([\u4e00-\u9fff][^\n]*)")  # 兼容 ［A］ / 【A】 两种括号
-NUM_RE = re.compile(r"(?:^|\n)\s*(\d{2})\s*[\.．]")   # 行首 "NN." / "NN．" (兼容无尾随空格/全角句号)
+NUM_RE = re.compile(r"(?:^|\n)\s*(\d)\s*(\d)\s*[\.．]")   # 兼容 "NN." / "N N ." / "NN．" / "N N ．" 拆分格式
 STEM_CN_RE = re.compile(r"^\s*(\d{2})\.\s*([\u4e00-\u9fff][^\n]*)")
 ANSWER_RES = [
     re.compile(r"([A-D])\s*项正确"),                       # 2022/2023：A 项正确。/故C 项正确。
+    re.compile(r"确定答案为\s*[【｜]?([A-D])[】｜]?\s*项"),  # 2022/2023：确定答案为C 项
+    re.compile(r"答案为\s*[【｜]?([A-D])[】｜]?\s*项"),       # 答案为C 项
+    re.compile(r"本题答案为\s*[【｜]?([A-D])[】｜]?"),
+    re.compile(r"答案应为\s*[【｜]?([A-D])[】｜]?"),
     re.compile(r"正确项[^\n]{0,6}?([A-D])"),
     re.compile(r"[\[｜［【]([A-D])[\]］J】]?\s*为正确"),
     re.compile(r"[\[｜［【]([A-D])[\]］J】]?\s*正确"),
@@ -51,8 +55,8 @@ def load_pdf_text(path):
 def find_blocks(text):
     """返回 {num: (start, end)}，按题号 21-40 切块。"""
     blocks = {}
-    spans = [(m.start(), int(m.group(1))) for m in NUM_RE.finditer(text)
-             if 21 <= int(m.group(1)) <= 40]
+    spans = [(m.start(), int(m.group(1) + m.group(2))) for m in NUM_RE.finditer(text)
+             if 21 <= int(m.group(1) + m.group(2)) <= 40]
     spans.sort()
     for idx, (pos, num) in enumerate(spans):
         end = spans[idx + 1][0] if idx + 1 < len(spans) else len(text)
