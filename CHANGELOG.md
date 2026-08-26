@@ -1,5 +1,12 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-08-26 微调] 方法导图「题型」列拆成双列各占一半
+
+- **需求**：阅读一张纸的「题型」列（6 大题型 × 各 4 行）单列太高，用户要求「搞成两列 各一半」。
+- **实现**：`pwa/js/mindmap.js` 给题型分支加 `split: 2` 标记；新增 `renderSplitItems()` 将分支子项直接铺进 2 列网格（避免被 `.branch-body` 整包无法分列）；`renderMap` 对带 `split` 的分支外层加 `mm-col-split` 并改用 `renderSplitItems`。`pwa/mindmap.html` 加 `.mm-col-split{ flex:2 1 0; min-width:540px }`（拆分列占 2 份宽度，内部两半才不挤）、`.mm-split{ display:grid; grid-template-columns:1fr 1fr; gap:12px }`，并更新横向滑动提示文案。
+- **jsdom 验证**：总列数仍 7（态度词3+阅读4），题型列外层 `mm-col-split`、内部 `.mm-split` 网格含 6 个题型块（主旨/段主/观点/例子/态度/猜词），每个含 4 个 leaf-row，其余 6 列不变。
+- **提交**：（本次）；SW 重建 `CACHE_VER=en2-f07219a9`。
+
 ## [2026-08-26 新增] 单词本支持导出 TXT
 
 - **需求**：单词本（单词本页）支持导出成 `.txt`，一行一个单词、不要序号，按「单词 意思」排列。

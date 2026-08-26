@@ -28,6 +28,10 @@
             border: 1px solid var(--border); border-top: 4px solid var(--c);
             border-radius: 12px; padding: 12px 14px;
         }
+        /* 拆分列：外层占 2 份宽度，内部子项铺成 2 列网格，各占一半 */
+        .mm-col-split { flex: 2 1 0; min-width: 540px; }
+        .mm-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .mm-split > .sub { margin-top: 0; }
         .mm-col-head {
             font-size: 1.02rem; font-weight: 700; color: var(--c);
             margin: 0 0 10px; padding-bottom: 8px; border-bottom: 2px solid var(--c);
@@ -72,7 +76,7 @@
 
     <main class="mm-page">
         <h1 class="mm-page-title">考研阅读方法导图</h1>
-        <p class="scroll-hint">横向滑动查看每一列 · 态度词 3 列 / 阅读一张纸 4 列</p>
+        <p class="scroll-hint">横向滑动查看每一列 · 态度词 3 列 / 阅读一张纸 4 列（题型拆成双列各占一半）</p>
         <div id="mmContent"></div>
     </main>
 

@@ -88,6 +88,7 @@
           {
             name: "题型",
             color: "#14b8a6",
+            split: 2,
             children: [
               {
                 name: "主旨",
@@ -235,14 +236,32 @@
     return html;
   }
 
+  // 拆分列：将分支的子项直接铺进 N 列网格（每个子项是一个网格单元，不再被整包 .branch-body）
+  function renderSplitItems(items, color) {
+    var html = '<div class="mm-split">';
+    items.forEach(function (it) {
+      if (it.children && it.children.length) {
+        html += '<div class="sub" style="--c:' + color + '">';
+        html += '<div class="sub-title">' + esc(it.name) + '</div>';
+        html += renderItems(it.children, color);
+        html += '</div>';
+      } else {
+        html += '<div class="leaf-row">' + leafText(it.name) + '</div>';
+      }
+    });
+    html += '</div>';
+    return html;
+  }
+
   function renderMap(map) {
     var html = '';
     if (map.intro) html += '<p class="map-intro">' + esc(map.intro) + '</p>';
     html += '<div class="mm-cols">';
     map.branches.forEach(function (b) {
-      html += '<div class="mm-col" style="--c:' + b.color + '">';
+      var colCls = b.split ? 'mm-col mm-col-split' : 'mm-col';
+      html += '<div class="' + colCls + '" style="--c:' + b.color + '">';
       html += '<div class="mm-col-head">' + esc(b.name) + '</div>';
-      html += renderItems(b.children, b.color);
+      html += b.split ? renderSplitItems(b.children, b.color) : renderItems(b.children, b.color);
       html += '</div>';
     });
     html += '</div>';
