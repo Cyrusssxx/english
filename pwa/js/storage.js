@@ -492,7 +492,18 @@ async function backupImport(input) {
 
 // ==================== Service Worker 注册 ====================
 if ('serviceWorker' in navigator) {
+    // updateViaCache:'none'：每次都去网络检查 sw.js 是否有变化，不被 GitHub Pages 的 HTTP 缓存挡住
+    // controllerchange 自动刷新：新 SW 接管页面后立即 reload，让当前页面用上新缓存（避免刷新多次仍是旧版）
+    const hadController = !!navigator.serviceWorker.controller;
+    let swReloading = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!hadController) return;        // 首次安装不强制刷新（已是最新）
+        if (swReloading) return;           // 防止重载循环
+        swReloading = true;
+        location.reload();
+    });
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(e => console.warn('SW注册失败（file:// 下属正常，请用 start.bat 启动）', e));
+        navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+            .catch(e => console.warn('SW注册失败（file:// 下属正常，请用 start.bat 启动）', e));
     });
 }

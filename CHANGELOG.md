@@ -1,5 +1,13 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-08-26 修复] 方法导图线上不更新（Service Worker 缓存顶旧版）
+
+- **现象**：重做为静态方法页并推送后，用户线上仍看到旧的 SVG 交互导图。
+- **根因**：`pwa/js/storage.js` 注册 SW 时仅 `register('sw.js')`，未加 `updateViaCache: 'none'`，也未监听 `controllerchange` 自动刷新。新 SW 虽会因 `skipWaiting`+`clients.claim` 激活，但当前页面已加载的资源仍来自旧缓存，导致"刷新多次仍是旧版"。
+- **修复**：注册改为 `register('sw.js', { updateViaCache: 'none' })`；并监听 `controllerchange`，在新 SW 接管后自动 `location.reload()`（首次安装不刷新，带守卫防重载循环）。此后推送新版本，用户刷新一次即生效。
+- **验证**：`tools/build_sw.py` 重建 `CACHE_VER=en2-b12e8ccc`。
+- **用户侧**：已注册的旧 SW 需手动清一次（DevTools→应用→Service Workers→Unregister，或用无痕窗口访问）后刷新，之后自动生效。
+
 ## [2026-08-26 重构] 方法导图改为静态方法页（弃用 SVG 交互导图）
 
 - **背景**：用户反馈 SVG 交互思维导图（缩放/拖拽/折叠）"不方便阅读"——默认字号小、需手动缩放拖拽、结构不直观。
