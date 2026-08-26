@@ -1,19 +1,21 @@
-/* 方法导图渲染引擎：数据驱动水平树 SVG + 缩放/平移/折叠 + 窄屏树形列表兜底 */
+/* 方法导图渲染引擎：数据驱动竖向树 SVG + 缩放/平移/折叠 + 窄屏树形列表兜底 */
 (function () {
   'use strict';
 
-  var COLW = 300;      // 层级水平间距
-  var ROW = 52;        // 叶子垂直间距
-  var MARGIN_X = 40;
-  var MARGIN_Y = 30;
-  var MAXW = 250;      // 节点最大宽度
+  var ROWDEPTH = 138;  // 层级纵向间距（竖向布局：depth -> y）
+  var COLX = 212;      // 叶子横向间距（竖向布局：兄弟 -> x）
+  var MARGIN_X = 56;
+  var MARGIN_Y = 40;
+  var MAXW = 260;      // 节点最大宽度
   var MINW = 96;
   var CHARW = 13;      // 每字符近似宽度
+  var DEFAULT_ZOOM = 1.32; // 默认放大倍数（竖排长图默认放大，字号更清晰）
 
   var data = null;
   var curMap = null;
   var collapsed = {};  // id -> true 表示收起
-  var tf = { x: MARGIN_X, y: MARGIN_Y, k: 1 };
+  var tf = { x: MARGIN_X, y: MARGIN_Y, k: DEFAULT_ZOOM };
+  var didInitialFit = false;
   var dragging = false, moved = false, lastX = 0, lastY = 0;
 
   function hexToRgba(hex, a) {
@@ -32,11 +34,11 @@
     if (name.length <= maxChars) return [name];
     var lines = [], cur = '';
     for (var i = 0; i < name.length; i++) {
-      cur += name[i];
-      if (cur.length >= maxChars && name[i] !== '、' && name[i] !== '，' && name[i] !== ' ') {
-        // 避免在标点处断行太多，简单按字数断
+      var ch = name[i];
+      if (cur.length >= maxChars && ch !== '、' && ch !== '，' && ch !== ' ') {
+        lines.push(cur); cur = '';
       }
-      if (cur.length >= maxChars) { lines.push(cur); cur = ''; }
+      cur += ch;
     }
     if (cur) lines.push(cur);
     return lines;
@@ -61,9 +63,10 @@
     return root;
   }
 
+  // 竖向布局：depth -> y（自上而下），兄弟按中序铺开 -> x（自左而右），父节点居中于子节点
   function layout(root) {
     var nodes = [];
-    var leafY = 0;
+    var leafCursor = 0; // 叶子横向游标，按实际宽度累加避免重叠(串)
     function walk(node, depth) {
       var w = nodeWidth(node.name);
       var maxChars = Math.floor((w - 16) / CHARW);
@@ -71,20 +74,37 @@
       node._w = w;
       node._h = lines.length * 17 + 14;
       node._lines = lines;
-      var n = { node: node, depth: depth, x: MARGIN_X + depth * COLW, y: 0 };
+      var n = { node: node, depth: depth, x: 0, y: MARGIN_Y + depth * ROWDEPTH };
       nodes.push(n);
       var kids = (collapsed[node.id] ? [] : (node.children || []));
       if (!kids.length) {
-        n.y = MARGIN_Y + leafY * ROW + node._h / 2;
-        leafY++;
+        n.x = MARGIN_X + leafCursor + w / 2;
+        leafCursor += w + 30;
       } else {
         var childNs = kids.map(function (c) { return walk(c, depth + 1); });
-        n.y = (childNs[0].y + childNs[childNs.length - 1].y) / 2;
+        n.x = (childNs[0].x + childNs[childNs.length - 1].x) / 2;
       }
       return n;
     }
     walk(root, 0);
+    // 归一化到 (0,0) 起
+    var minX = Infinity, minY = Infinity;
+    nodes.forEach(function (n) {
+      minX = Math.min(minX, n.x - n.node._w / 2);
+      minY = Math.min(minY, n.y - n.node._h / 2);
+    });
+    nodes.forEach(function (n) { n.x -= minX; n.y -= minY; });
     return nodes;
+  }
+
+  function measure() {
+    var nodes = layout(buildTree(curMap));
+    var W = 0, H = 0;
+    nodes.forEach(function (n) {
+      W = Math.max(W, n.x + n.node._w / 2);
+      H = Math.max(H, n.y + n.node._h / 2);
+    });
+    return { W: W + MARGIN_X, H: H + MARGIN_Y };
   }
 
   function renderSVG() {
@@ -98,7 +118,7 @@
 
     var W = 0, H = 0;
     nodes.forEach(function (n) {
-      W = Math.max(W, n.x + n.node._w);
+      W = Math.max(W, n.x + n.node._w / 2);
       H = Math.max(H, n.y + n.node._h / 2);
     });
     W += MARGIN_X; H += MARGIN_Y;
@@ -106,33 +126,32 @@
     var edges = '', boxes = '';
     nodes.forEach(function (n) {
       var node = n.node;
-      var cy = n.y, cx = n.x;
-      // 边
+      var cy = n.y, cx = n.x; // cx/cy 为中心点
+      // 边（竖向：父底 -> 子顶）
       if (node._parent) {
         var p = node._parent;
-        var px = p._x != null ? p._x : 0, py = p._y != null ? p._y : 0;
-        var x1 = px + p._w, y1 = py, x2 = cx, y2 = cy;
-        var mx = (x1 + x2) / 2;
-        edges += '<path d="M' + x1 + ',' + y1 + ' C' + mx + ',' + y1 + ' ' + mx + ',' + y2 + ' ' + x2 + ',' + y2 +
-          '" stroke="' + hexToRgba(colorOf(node), 0.5) + '" stroke-width="1.5" fill="none"/>';
+        var x1 = p._x, y1 = p._y + p._h / 2;
+        var x2 = cx, y2 = cy - node._h / 2;
+        var my = (y1 + y2) / 2;
+        edges += '<path d="M' + x1 + ',' + y1 + ' C' + x1 + ',' + my + ' ' + x2 + ',' + my + ' ' + x2 + ',' + y2 +
+          '" stroke="' + hexToRgba(colorOf(node), 0.5) + '" stroke-width="1.6" fill="none"/>';
       }
       node._x = cx; node._y = cy;
       // 框
       var col = colorOf(node);
       var fill = node._isRoot ? col : hexToRgba(col, 0.14);
       var txtColor = node._isRoot ? '#fff' : '#1f2937';
-      var stroke = node._isRoot ? col : col;
       var hasKids = (node.children || []).length > 0;
-      var rx = cx, ry = cy - node._h / 2;
+      var rx = cx - node._w / 2, ry = cy - node._h / 2;
       boxes += '<g class="mm-node" data-id="' + node.id + '">';
       boxes += '<rect x="' + rx + '" y="' + ry + '" width="' + node._w + '" height="' + node._h +
-        '" fill="' + fill + '" stroke="' + stroke + '" stroke-width="' + (node._isRoot ? 2 : 1.4) + '" rx="9" ry="9"/>';
+        '" fill="' + fill + '" stroke="' + col + '" stroke-width="' + (node._isRoot ? 2.2 : 1.5) + '" rx="10" ry="10"/>';
       var tspans = '';
       node._lines.forEach(function (ln, li) {
         var ty = ry + 16 + li * 17;
-        tspans += '<tspan x="' + (rx + node._w / 2) + '" y="' + ty + '" text-anchor="middle" fill="' + txtColor + '">' + esc(ln) + '</tspan>';
+        tspans += '<tspan x="' + cx + '" y="' + ty + '" text-anchor="middle" fill="' + txtColor + '">' + esc(ln) + '</tspan>';
       });
-      boxes += '<text font-size="13">' + tspans + '</text>';
+      boxes += '<text font-size="13.5">' + tspans + '</text>';
       if (hasKids) {
         var tag = collapsed[node.id] ? '＋' : '－';
         boxes += '<text class="mm-toggle" x="' + (rx + node._w - 10) + '" y="' + (ry + node._h - 6) + '" text-anchor="end">' + tag + '</text>';
@@ -146,17 +165,16 @@
       edges + boxes + '</g></svg>';
 
     bindSVG();
-    fitIfNeeded(W, H);
+    if (!didInitialFit) { initialZoom(W, H); didInitialFit = true; }
   }
 
-  function fitIfNeeded(W, H) {
+  // 默认放大：固定 DEFAULT_ZOOM，字号清晰；图宽于视口则左上对齐，靠拖拽查看其余部分
+  function initialZoom(W, H) {
     var stage = document.getElementById('mmStage');
-    var sw = stage.clientWidth, sh = stage.clientHeight;
-    if (sw <= 0 || sh <= 0) return;
-    var k = Math.min(sw / W, sh / H, 1.2);
-    tf.k = k;
-    tf.x = (sw - W * k) / 2;
-    tf.y = Math.max(10, (sh - H * k) / 2);
+    var sw = stage.clientWidth || 1000;
+    tf.k = DEFAULT_ZOOM;
+    tf.x = Math.max(8, (sw - W * DEFAULT_ZOOM) / 2);
+    tf.y = 18;
     applyTf();
   }
 
@@ -208,6 +226,7 @@
       var node = findNode(curMap, id);
       if (node && (node.children || []).length) {
         if (collapsed[id]) delete collapsed[id]; else collapsed[id] = true;
+        didInitialFit = true; // 折叠后保持当前视图
         renderSVG();
       }
     });
@@ -274,6 +293,7 @@
         box.querySelectorAll('.mm-tab').forEach(function (x) { x.classList.remove('active'); });
         b.classList.add('active');
         curMap = data.maps[+b.getAttribute('data-i')];
+        didInitialFit = false; // 切换地图重新按默认放大铺开
         render();
       });
     });
@@ -289,28 +309,23 @@
       tf.k *= f; applyTf();
     },
     fit: function () {
-      // 重新计算布局尺寸并适应
-      var root = buildTree(curMap);
-      var nodes = layout(root);
-      var W = 0, H = 0;
-      nodes.forEach(function (n) {
-        W = Math.max(W, n.x + n.node._w);
-        H = Math.max(H, n.y + n.node._h / 2);
-      });
-      W += MARGIN_X; H += MARGIN_Y;
+      var m = measure();
       var stage = document.getElementById('mmStage');
-      var sw = stage.clientWidth, sh = stage.clientHeight;
-      var k = Math.min(sw / W, sh / H, 1.2);
-      tf.k = k; tf.x = (sw - W * k) / 2; tf.y = Math.max(10, (sh - H * k) / 2);
+      var sw = stage.clientWidth || 1000, sh = stage.clientHeight || 700;
+      var k = Math.min(sw / m.W, sh / m.H);
+      tf.k = k; tf.x = (sw - m.W * k) / 2; tf.y = Math.max(10, (sh - m.H * k) / 2);
       applyTf();
     },
-    reset: function () { tf = { x: MARGIN_X, y: MARGIN_Y, k: 1 }; applyTf(); },
-    expandAll: function () { collapsed = {}; render(); },
+    reset: function () {
+      var m = measure();
+      didInitialFit = true;
+      initialZoom(m.W, m.H);
+    },
+    expandAll: function () { collapsed = {}; didInitialFit = false; render(); },
     collapseAll: function () {
       collapsed = {};
-      // 收起一级分支
       buildTree(curMap).children.forEach(function (c) { collapsed[c.id] = true; });
-      render();
+      didInitialFit = false; render();
     }
   };
 
@@ -332,7 +347,6 @@
   }
 
   window.addEventListener('resize', function () {
-    // 仅在宽窄屏跨越阈值时切换渲染模式
     if (!curMap) return;
     clearTimeout(window._mmRz);
     window._mmRz = setTimeout(render, 200);
