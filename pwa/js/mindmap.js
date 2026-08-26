@@ -238,42 +238,23 @@
   function renderMap(map) {
     var html = '';
     if (map.intro) html += '<p class="map-intro">' + esc(map.intro) + '</p>';
+    html += '<div class="mm-cols">';
     map.branches.forEach(function (b) {
-      html += '<section class="branch-card" style="--c:' + b.color + '">';
-      html += '<h3 class="branch-title">' + esc(b.name) + '</h3>';
+      html += '<div class="mm-col" style="--c:' + b.color + '">';
+      html += '<div class="mm-col-head">' + esc(b.name) + '</div>';
       html += renderItems(b.children, b.color);
-      html += '</section>';
+      html += '</div>';
     });
+    html += '</div>';
     return html;
   }
 
   function init() {
-    var tabs = document.getElementById('mmTabs');
     var content = document.getElementById('mmContent');
-    if (!tabs || !content) return;
-
-    DATA.maps.forEach(function (m, i) {
-      var btn = document.createElement('button');
-      btn.className = 'mm-tab' + (i === 0 ? ' active' : '');
-      btn.type = 'button';
-      btn.textContent = m.title;
-      btn.addEventListener('click', function () {
-        var all = tabs.querySelectorAll('.mm-tab');
-        for (var k = 0; k < all.length; k++) all[k].classList.remove('active');
-        btn.classList.add('active');
-        showMap(i);
-      });
-      tabs.appendChild(btn);
-    });
-
-    function showMap(i) {
-      content.innerHTML = DATA.maps.map(function (m, idx) {
-        return '<div class="map-panel' + (idx === i ? ' active' : '') + '">' +
-          renderMap(m) + '</div>';
-      }).join('');
-    }
-
-    showMap(0);
+    if (!content) return;
+    content.innerHTML = DATA.maps.map(function (m) {
+      return '<section class="map-section"><h2 class="map-h">' + esc(m.title) + '</h2>' + renderMap(m) + '</section>';
+    }).join('');
   }
 
   if (document.readyState === 'loading') {
