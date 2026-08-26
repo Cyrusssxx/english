@@ -268,12 +268,53 @@
     return html;
   }
 
+  // ==================== 高亮标记 ====================
+  var HL_KEY = 'mm_highlights_v1';
+  var content = null;
+  var hlSet = loadHL();
+
+  function loadHL() {
+    try { return new Set(JSON.parse(localStorage.getItem(HL_KEY) || '[]')); }
+    catch (e) { return new Set(); }
+  }
+  function saveHL() {
+    try { localStorage.setItem(HL_KEY, JSON.stringify(Array.from(hlSet))); } catch (e) {}
+  }
+  function rowKey(row) { return row.textContent; }
+
+  function restoreHL() {
+    if (!content) return;
+    var rows = content.querySelectorAll('.leaf-row');
+    for (var i = 0; i < rows.length; i++) {
+      if (hlSet.has(rowKey(rows[i]))) rows[i].classList.add('hl');
+    }
+  }
+  function onContentClick(e) {
+    var row = e.target.closest ? e.target.closest('.leaf-row') : null;
+    if (!row) return;
+    var k = rowKey(row);
+    if (hlSet.has(k)) { hlSet.delete(k); row.classList.remove('hl'); }
+    else { hlSet.add(k); row.classList.add('hl'); }
+    saveHL();
+  }
+  // 供「清除高亮」按钮调用（暴露到全局）
+  window.clearHighlights = function () {
+    hlSet.clear();
+    saveHL();
+    if (content) {
+      var rows = content.querySelectorAll('.hl');
+      for (var i = 0; i < rows.length; i++) rows[i].classList.remove('hl');
+    }
+  };
+
   function init() {
-    var content = document.getElementById('mmContent');
+    content = document.getElementById('mmContent');
     if (!content) return;
     content.innerHTML = DATA.maps.map(function (m) {
       return '<section class="map-section"><h2 class="map-h">' + esc(m.title) + '</h2>' + renderMap(m) + '</section>';
     }).join('');
+    restoreHL();
+    content.addEventListener('click', onContentClick);
   }
 
   if (document.readyState === 'loading') {

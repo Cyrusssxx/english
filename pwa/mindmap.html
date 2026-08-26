@@ -51,6 +51,17 @@
         .dark .leaf-row { background: #1f2937; }
         .leaf-row b { color: var(--c); font-weight: 700; }
         .leaf-row:hover { border-color: var(--c); }
+        .leaf-row { cursor: pointer; user-select: none; transition: background .15s, border-color .15s; }
+        .leaf-row.hl { background: #ffe680 !important; border-color: #f59e0b !important; }
+        .dark .leaf-row.hl { background: #6b5d1f !important; border-color: #f59e0b !important; }
+        .mm-tools { display: flex; align-items: center; gap: 14px; margin: 0 0 14px; flex-wrap: wrap; }
+        .mm-tools-tip { color: var(--text-light); font-size: .82rem; }
+        .mm-clear-btn {
+            font: inherit; font-size: .82rem; cursor: pointer;
+            padding: 5px 12px; border-radius: 8px;
+            border: 1px solid var(--border); background: var(--card); color: var(--text);
+        }
+        .mm-clear-btn:hover { border-color: var(--primary); color: var(--primary); }
     </style>
 </head>
 <body>
@@ -77,6 +88,10 @@
     <main class="mm-page">
         <h1 class="mm-page-title">考研阅读方法导图</h1>
         <p class="scroll-hint">横向滑动查看每一列 · 态度词 3 列 / 阅读一张纸 4 列（题型拆成双列各占一半）</p>
+        <div class="mm-tools">
+            <span class="mm-tools-tip">点任意条目即高亮标记 · 再点取消</span>
+            <button type="button" class="mm-clear-btn" onclick="clearHighlights()">清除高亮</button>
+        </div>
         <div id="mmContent"></div>
     </main>
 
