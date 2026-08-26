@@ -48,7 +48,7 @@
 
   // 构建带 parent/color/id 的节点树
   function buildTree(map) {
-    var root = { name: map.root, color: map.rootColor, id: map.id + '/r', _isRoot: true };
+    var root = { name: map.root, color: map.rootColor, id: map.id + '/r', _isRoot: true, children: map.branches };
     function attach(parent, children) {
       (children || []).forEach(function (c, i) {
         c._parent = parent;
