@@ -92,7 +92,8 @@
             if (viewDeck === '__all__') {
                 tb.innerHTML = `<span class="tb-info">当前收藏目标：<b>${esc(deckName(active))}</b></span>
                     <a class="tb-btn" href="study.html?deck=__all__">背全部 →</a>
-                    <button class="tb-btn" onclick="onRelearnDeck('__all__')">重学全部</button>`;
+                    <button class="tb-btn" onclick="onRelearnDeck('__all__')">重学全部</button>
+                    <button class="tb-btn" onclick="exportDeckTxt()">导出TXT</button>`;
             } else {
                 const d = getDeck(viewDeck);
                 let btns = `<span class="tb-info">当前查看：<b>${esc(d ? d.name : '')}</b></span>`;
@@ -101,6 +102,7 @@
                     : `<button class="tb-btn" onclick="onSetActive('${esc(viewDeck)}')">设为收藏目标</button>`;
                 btns += `<a class="tb-btn" href="study.html?deck=${esc(viewDeck)}">背这本 →</a>`;
                 btns += `<button class="tb-btn" onclick="onRelearnDeck('${esc(viewDeck)}')">重学本书</button>`;
+                btns += `<button class="tb-btn" onclick="exportDeckTxt()">导出TXT</button>`;
                 if (!(d && d.builtin)) {
                     btns += `<button class="tb-btn" onclick="onRenameDeck('${esc(viewDeck)}')">重命名</button>`;
                     btns += `<button class="tb-btn danger" onclick="onDeleteDeck('${esc(viewDeck)}')">删除词书</button>`;
@@ -321,6 +323,31 @@
             a.click();
             a.remove();
             setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }
+
+        /** 导出当前视图词书为 TXT：一行一个词，无序号，格式「单词 意思」 */
+        function exportDeckTxt() {
+            const rows = (curRows && curRows.length) ? curRows : [];
+            if (!rows.length) { toast('当前视图没有词可导出'); return; }
+            // 按当前展示顺序逐行输出，单词与意思之间一个空格，无序号
+            const lines = rows.map(v => {
+                const w = String(v.word || '').trim();
+                const m = String(v.meaning || '').trim();
+                return m ? (w + ' ' + m) : w;
+            });
+            // 加 BOM（\uFEFF）让 Windows 记事本也能正确显示中文
+            const content = '﻿' + lines.join('\r\n') + '\r\n';
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            const label = viewDeck === '__all__' ? '全部生词' : (deckName(viewDeck) || '单词本');
+            a.href = url;
+            a.download = label + '-' + new Date().toISOString().slice(0, 10) + '.txt';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+            toast(`已导出 ${rows.length} 个词/词组`);
         }
 
         async function del(word) {
