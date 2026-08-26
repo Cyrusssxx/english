@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方法导图 - 英语真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .mm-wrap { display: flex; flex-direction: column; height: calc(100vh - 58px); }
+        .mm-tabs { display: flex; gap: 8px; padding: 12px 16px 0; flex-wrap: wrap; }
+        .mm-tab {
+            padding: 8px 18px; border-radius: 999px; border: 1px solid var(--border);
+            background: var(--card); color: var(--text-light); cursor: pointer; font-size: 0.95rem;
+            transition: all .15s;
+        }
+        .mm-tab:hover { border-color: var(--primary); color: var(--primary); }
+        .mm-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+        .mm-toolbar {
+            display: flex; gap: 6px; align-items: center; padding: 8px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .mm-toolbar .mm-spacer { flex: 1; }
+        .mm-btn {
+            padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border);
+            background: var(--card); color: var(--text); cursor: pointer; font-size: 0.9rem;
+        }
+        .mm-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .mm-stage { position: relative; flex: 1; overflow: hidden; background: var(--bg); }
+        .mm-stage svg { width: 100%; height: 100%; display: block; cursor: grab; }
+        .mm-stage svg.grabbing { cursor: grabbing; }
+        .mm-node { cursor: pointer; }
+        .mm-node rect { rx: 9; ry: 9; stroke-width: 1.5; transition: filter .15s; }
+        .mm-node:hover rect { filter: brightness(1.06); }
+        .mm-node text { font-size: 13px; fill: #1f2937; pointer-events: none; }
+        .dark .mm-node text { fill: #e5e7eb; }
+        .mm-toggle { font-size: 11px; fill: #6b7280; pointer-events: none; }
+        .mm-empty { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--text-light); }
+        /* 窄屏树形列表兜底 */
+        .mm-list { padding: 12px 16px; overflow: auto; }
+        .mm-list ul { list-style: none; margin: 0; padding-left: 16px; }
+        .mm-list > ul { padding-left: 0; }
+        .mm-li { margin: 4px 0; }
+        .mm-li-head {
+            display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 8px;
+            background: var(--card); border: 1px solid var(--border); cursor: pointer; font-size: 0.92rem;
+        }
+        .mm-li-head .dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 auto; }
+        .mm-li-head .caret { font-size: 0.75rem; color: var(--text-light); width: 12px; }
+        @media (max-width: 768px) {
+            .mm-toolbar { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
+                <a href="vocab.html" class="nav-link">单词本</a>
+                <a href="favorites.html" class="nav-link">句子收藏</a>
+                <a href="en1.html" class="nav-link">英语一阅读</a>
+                <a href="chain.html" class="nav-link">串联词汇</a>
+                <a href="mindmap.html" class="nav-link active">方法导图</a>
+            </div>
+            <div class="nav-tools">
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mm-wrap">
+        <div class="mm-tabs" id="mmTabs"></div>
+        <div class="mm-toolbar" id="mmToolbar" style="display:none">
+            <button class="mm-btn" onclick="mm.zoomBy(1.2)">放大 ＋</button>
+            <button class="mm-btn" onclick="mm.zoomBy(1/1.2)">缩小 －</button>
+            <button class="mm-btn" onclick="mm.fit()">适应屏幕</button>
+            <button class="mm-btn" onclick="mm.reset()">重置</button>
+            <button class="mm-btn" onclick="mm.expandAll()">展开全部</button>
+            <button class="mm-btn" onclick="mm.collapseAll()">收起分支</button>
+            <span class="mm-spacer"></span>
+            <span style="color:var(--text-light);font-size:0.85rem">滚轮缩放 · 拖拽平移 · 点节点折叠</span>
+        </div>
+        <div class="mm-stage" id="mmStage">
+            <div class="mm-empty" id="mmEmpty">加载中…</div>
+        </div>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/mindmap.js"></script>
+</body>
+</html>
