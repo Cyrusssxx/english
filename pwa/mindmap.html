@@ -12,49 +12,46 @@
     <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .mm-wrap { display: flex; flex-direction: column; height: calc(100vh - 58px); }
-        .mm-tabs { display: flex; gap: 8px; padding: 12px 16px 0; flex-wrap: wrap; }
+        .mm-page { max-width: 940px; margin: 0 auto; padding: 20px 16px 64px; }
+        .mm-tabs { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
         .mm-tab {
-            padding: 8px 18px; border-radius: 999px; border: 1px solid var(--border);
-            background: var(--card); color: var(--text-light); cursor: pointer; font-size: 0.95rem;
-            transition: all .15s;
+            padding: 9px 20px; border-radius: 999px; border: 1px solid var(--border);
+            background: var(--card); color: var(--text-light); cursor: pointer;
+            font-size: 0.95rem; transition: all .15s;
         }
         .mm-tab:hover { border-color: var(--primary); color: var(--primary); }
         .mm-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
-        .mm-toolbar {
-            display: flex; gap: 6px; align-items: center; padding: 8px 16px;
-            border-bottom: 1px solid var(--border);
+        .map-panel { display: none; }
+        .map-panel.active { display: block; animation: mmFade .2s ease; }
+        @keyframes mmFade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+        .map-intro {
+            color: var(--text-light); font-size: 0.92rem; line-height: 1.7;
+            background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+            padding: 12px 16px; margin: 0 0 18px;
         }
-        .mm-toolbar .mm-spacer { flex: 1; }
-        .mm-btn {
-            padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border);
-            background: var(--card); color: var(--text); cursor: pointer; font-size: 0.9rem;
+        .branch-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-left: 5px solid var(--c); border-radius: 12px;
+            padding: 16px 18px; margin-bottom: 16px;
         }
-        .mm-btn:hover { border-color: var(--primary); color: var(--primary); }
-        .mm-stage { position: relative; flex: 1; overflow: hidden; background: var(--bg); }
-        .mm-stage svg { width: 100%; height: 100%; display: block; cursor: grab; }
-        .mm-stage svg.grabbing { cursor: grabbing; }
-        .mm-node { cursor: pointer; }
-        .mm-node rect { rx: 9; ry: 9; stroke-width: 1.5; transition: filter .15s; }
-        .mm-node:hover rect { filter: brightness(1.06); }
-        .mm-node text { font-size: 13px; fill: #1f2937; pointer-events: none; }
-        .dark .mm-node text { fill: #e5e7eb; }
-        .mm-toggle { font-size: 11px; fill: #6b7280; pointer-events: none; }
-        .mm-empty { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--text-light); }
-        /* 窄屏树形列表兜底 */
-        .mm-list { padding: 12px 16px; overflow: auto; }
-        .mm-list ul { list-style: none; margin: 0; padding-left: 16px; }
-        .mm-list > ul { padding-left: 0; }
-        .mm-li { margin: 4px 0; }
-        .mm-li-head {
-            display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 8px;
-            background: var(--card); border: 1px solid var(--border); cursor: pointer; font-size: 0.92rem;
+        .branch-title {
+            margin: 0 0 12px; font-size: 1.08rem; font-weight: 700; color: var(--c);
         }
-        .mm-li-head .dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 auto; }
-        .mm-li-head .caret { font-size: 0.75rem; color: var(--text-light); width: 12px; }
-        @media (max-width: 768px) {
-            .mm-toolbar { display: none; }
+        .branch-body { display: flex; flex-direction: column; gap: 8px; }
+        .sub { margin-top: 4px; }
+        .sub-title {
+            font-size: 0.95rem; font-weight: 600; color: var(--text);
+            padding-left: 10px; border-left: 3px solid var(--c); margin: 10px 0 8px;
         }
+        .sub .branch-body { gap: 6px; }
+        .leaf-row {
+            font-size: 0.92rem; line-height: 1.5; color: var(--text);
+            padding: 8px 12px; border-radius: 8px; background: var(--bg);
+            border: 1px solid var(--border);
+        }
+        .dark .leaf-row { background: #1f2937; }
+        .leaf-row b { color: var(--c); font-weight: 700; }
+        .leaf-row:hover { border-color: var(--c); }
     </style>
 </head>
 <body>
@@ -78,21 +75,9 @@
         </div>
     </nav>
 
-    <main class="mm-wrap">
+    <main class="mm-page">
         <div class="mm-tabs" id="mmTabs"></div>
-        <div class="mm-toolbar" id="mmToolbar" style="display:none">
-            <button class="mm-btn" onclick="mm.zoomBy(1.2)">放大 ＋</button>
-            <button class="mm-btn" onclick="mm.zoomBy(1/1.2)">缩小 －</button>
-            <button class="mm-btn" onclick="mm.fit()">适应屏幕</button>
-            <button class="mm-btn" onclick="mm.reset()">重置</button>
-            <button class="mm-btn" onclick="mm.expandAll()">展开全部</button>
-            <button class="mm-btn" onclick="mm.collapseAll()">收起分支</button>
-            <span class="mm-spacer"></span>
-            <span style="color:var(--text-light);font-size:0.85rem">滚轮缩放 · 拖拽平移 · 点节点折叠</span>
-        </div>
-        <div class="mm-stage" id="mmStage">
-            <div class="mm-empty" id="mmEmpty">加载中…</div>
-        </div>
+        <div id="mmContent"></div>
     </main>
 
     <script src="js/common.js"></script>
