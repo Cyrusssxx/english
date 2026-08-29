@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人建议 - 英语二真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .sug-hero { background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%); border-radius: 14px; padding: 22px 24px; margin-bottom: 22px; }
+        .dark .sug-hero { background: linear-gradient(135deg, #134e4a 0%, #0c4a6e 100%); }
+        .sug-hero h1 { margin: 0 0 8px; font-size: 1.4rem; color: var(--text); }
+        .sug-hero p { margin: 0; color: var(--text-light); font-size: 0.95rem; line-height: 1.6; }
+        .sug-section { background: var(--card-bg); border-radius: 12px; padding: 18px 22px; margin-bottom: 18px; box-shadow: 0 1px 4px rgba(0,0,0,.04); border-left: 5px solid var(--c, #0d9488); }
+        .sug-section h2 { margin: 0 0 12px; font-size: 1.1rem; color: var(--text); display: flex; align-items: center; gap: 8px; }
+        .sug-section h2 .badge { font-size: 0.72rem; padding: 2px 8px; border-radius: 10px; background: var(--c, #0d9488); color: #fff; font-weight: 600; }
+        .sug-section p { margin: 0 0 8px; line-height: 1.7; color: var(--text); font-size: 0.95rem; }
+        .sug-section ul { margin: 0; padding-left: 20px; }
+        .sug-section li { margin: 4px 0; line-height: 1.6; color: var(--text); font-size: 0.92rem; }
+        .sug-section li b { color: var(--primary); }
+        .sug-section .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 10px; }
+        .sug-section .card-mini { background: var(--bg-2, #f8fafc); border-radius: 8px; padding: 10px 14px; font-size: 0.88rem; }
+        .sug-section .card-mini b { color: var(--primary); }
+        .sug-section a { color: var(--primary); text-decoration: none; border-bottom: 1px dashed var(--primary); }
+        .sug-section a:hover { background: var(--bg-2); }
+        .priority-h { color: #dc2626; }
+        .priority-m { color: #f59e0b; }
+        .priority-l { color: #6b7280; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
+                <a href="vocab.html" class="nav-link">单词本</a>
+                <a href="favorites.html" class="nav-link">句子收藏</a>
+                <a href="mindmap.html" class="nav-link">方法导图</a>
+                <a href="mistakes.html" class="nav-link">错题本</a>
+                <a href="suggestions.html" class="nav-link active">建议</a>
+            </div>
+            <div class="nav-tools">
+                <span class="nav-timer" id="navTimer">⏱ 00:00:00</span>
+                <button class="nav-timer-btn" id="timerPause" onclick="togglePauseTimer()" title="暂停/继续计时">⏸</button>
+                <button class="nav-timer-btn" onclick="resetTimer()" title="重置今日计时">↺</button>
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="sug-hero">
+            <h1>🎯 个人建议（针对你 46 道错题画像）</h1>
+            <p>基于 <b>2026-08-29 导出的 46 道错题</b>（细节题 24 / 推理题 11 / 主旨 4 / 猜词 3 / 观点 2 / 句意 1 / 态度 1），下面这些建议<b>不是通用方法</b>，是专治你的反复坑。按优先级排好，先做有 🔴 标的。</p>
+        </div>
+
+        <div class="sug-section" style="--c:#dc2626">
+            <h2>🔴 P0 · 做题习惯 <span class="badge">不改代码</span></h2>
+            <p>你 52% 错在细节题、24% 错在推理题——<b>不是能力问题，是做题习惯</b>。改 3 个动作，下周起 24 道细节题至少能少错 10 道。</p>
+            <ul>
+                <li><b>细节题手指定位</b>：做每道 According to Para X 题时，用笔/手指<b>在原文里指到该段</b>，逐句读完再选。14/24 道细节错题是这种题型。</li>
+                <li><b>人物名题先圈人名</b>：题干出现 X believes/holds/notes，<b>先在草稿纸上写下人名</b>，再回原文<b>先找人名</b>，不要先读选项。6/24 道细节错题是这种。</li>
+                <li><b>推理题看前后各一句</b>：引语句题（it can be inferred / by saying X implies），永远读完引语句<b>前一句和后一句</b>再选。你 9/11 道推理错是这种。</li>
+                <li><b>做完一道立刻回看题干</b>：选完答案<b>回题干</b>问自己"我问的是这个吗？"，是再继续下一道。</li>
+            </ul>
+        </div>
+
+        <div class="sug-section" style="--c:#ef4444">
+            <h2>🔴 P0 · 主旨题抢救 <span class="badge">你 4/4 全错</span></h2>
+            <p>主旨题 0% 命中是最严重的问题——4 道题说明你<b>完全没掌握主旨题套路</b>，不是粗心。</p>
+            <ul>
+                <li><b>每篇阅读先做主旨题</b>：4 道里最难、最该花时间。完成主旨后再做细节/推理。</li>
+                <li><b>扫每段第 1 句</b>，<b>写 5 个关键词</b>在草稿纸上（每段 1 个）。</li>
+                <li><b>找出现 ≥3 次的词</b>作为主旨候选。</li>
+                <li>排除"段意型"（只覆盖一段）"以偏概全型"（只覆盖部分）。</li>
+                <li>英一 + 英二 主旨题共刷 <b>8 道</b>：在 <a href="mistakes.html">错题本</a> 顶部 ⑤ 类。</li>
+            </ul>
+        </div>
+
+        <div class="sug-section" style="--c:#f59e0b">
+            <h2>🟡 P1 · 猜词同义改写训练 <span class="badge">你 3/3 全错</span></h2>
+            <p>猜词本质是<b>同义改写</b>，不是你词汇量不够，是你不擅长判断"改写是否严丝合缝"。</p>
+            <ul>
+                <li>每道猜词题先<b>口述原句意思</b>，再选答案。</li>
+                <li>排除"字面相似但改写过头的"选项（比如把"情绪"改成"想法"，就不是同义）。</li>
+                <li>英一 4 道 + 你错过的英二 3 道（14T2-4, 17T3-3, 19T1-5），共 7 道集中刷。</li>
+            </ul>
+        </div>
+
+        <div class="sug-section" style="--c:#8b5cf6">
+            <h2>🟢 P2 · 人物观点混 <span class="badge">2 题</span></h2>
+            <p>这是细节题的<b>子集</b>，单列是因为"作者观点 vs 第三方观点"容易混。</p>
+            <ul>
+                <li>题干出现 X believes/holds/notes/argues/most likely agrees —— <b>X 是谁先圈出来</b>。</li>
+                <li>回原文找 X 出现的那句，<b>只信那句话</b>，不要被其他段落里相似词带走。</li>
+                <li>英一 8 道 + 你错过的英二 2 道（19T1-3, 20T1-4），共 10 道。</li>
+            </ul>
+        </div>
+
+        <div class="sug-section" style="--c:#a855f7">
+            <h2>🟢 P2 · 类比/比喻推断 <span class="badge">罕见但易错</span></h2>
+            <p>英一这种题少（2010-2025 只有 1 道），但考到就是 0% 命中。</p>
+            <ul>
+                <li>题干出现 <b>analogy / like / such as / -ing 当主语</b> 时，<b>还原喻体本身</b>，不要按字面理解。</li>
+                <li>你错过的英二 18T3-5 "ants analogy is used to illustrate" + 英一 15T2-28，共 2 道。</li>
+            </ul>
+        </div>
+
+        <div class="sug-section" style="--c:#0d9488">
+            <h2>📊 已用功能（这些已上线，用起来）</h2>
+            <div class="grid">
+                <div class="card-mini"><b>方法导图「我的错题地图」</b>：按你错法组织的 6 类分支 + 题号（<a href="mindmap.html">打开</a>）</div>
+                <div class="card-mini"><b>方法导图「我的刷题包」</b>：55 道针对性训练题（<a href="mindmap.html">打开</a>）</div>
+                <div class="card-mini"><b>错题本 mistakes.html</b>：列出 46 道错题、点开看解析、标记已掌握（<a href="mistakes.html">打开</a>）</div>
+                <div class="card-mini"><b>错题本顶部刷题包</b>：55 道点题号跳原文页（<a href="mistakes.html">打开</a>）</div>
+                <div class="card-mini"><b>导出错题 CSV</b>：首页/错题本都有，可贴给 ZCode 做精准化（<a href="index.html">打开</a>）</div>
+                <div class="card-mini"><b>方法导图「我的高频错法」</b>：在「选项→错误」列里（<a href="mindmap.html">打开</a>）</div>
+            </div>
+        </div>
+
+        <div class="sug-section" style="--c:#22c55e">
+            <h2>🚀 还没做的（你说"做"我就动）</h2>
+            <p>每条都能帮你更进一步，标了<b>价值（高/中/低）</b>和<b>预计改动量</b>。</p>
+            <ul>
+                <li><b>错题本「重做模式」</b><span class="priority-h">· 价值高</span>：点开一道错题，<b>只显示题干和选项</b>，你的原答案/正解/解析全部隐藏，自己答完再揭晓。比"看解析"更接近真实训练。</li>
+                <li><b>错题本「每日限 5 道」训练模式</b><span class="priority-m">· 价值中</span>：46 道一次看完会焦虑。每天只推 5 道，按题型混搭。</li>
+                <li><b>刷题进度跟踪</b><span class="priority-m">· 价值中</span>：mistakes.html 加"已刷 / 未刷"统计（用 localStorage 记访问过的题号），知道刷题包刷到哪了。</li>
+                <li><b>做题时间分配</b><span class="priority-m">· 价值中</span>：英二 4 篇阅读 70 分钟，主旨 5+ 细节 24+ 推理 24+ 猜词 8+ 机动 4，按你 60+/80+ 目标分两档。</li>
+                <li><b>复盘日历（streak）</b><span class="priority-l">· 价值低</span>：30 天热力图，激励类。你会不会用看个人喜好。</li>
+                <li><b>全文笔记</b><span class="priority-l">· 价值低</span>：favorites.html 只能收藏句子。要不要"按文章做笔记"？</li>
+                <li><b>错题本导回 mindmap</b><span class="priority-m">· 价值中</span>：导出 CSV 后，<b>反向导入</b>回 mindmap 自动更新「我的错题地图」题号列表。下次做完题一键刷新。</li>
+            </ul>
+        </div>
+
+        <div class="sug-section" style="--c:#6366f1">
+            <h2>📅 接下来 2 周建议节奏</h2>
+            <div class="grid">
+                <div class="card-mini"><b>本周</b>：刷 ① 段内定位（12 道）+ ③ 过度推断（8 道），共 20 道。每天 4 道，5 天刷完。</div>
+                <div class="card-mini"><b>下周</b>：刷 ⑤ 主旨（8 道）+ ⑥ 猜词（4 道）+ ② 人物观点混（8 道），共 20 道。每天 4 道。</div>
+                <div class="card-mini"><b>第 3 周</b>：再导一次 CSV，<b>对比错题分布变化</b>。把导图「我的错题地图」题号刷新到最新状态。</div>
+                <div class="card-mini"><b>习惯</b>：做题时笔指定位（不指定位 = 错的概率大幅上升）。这 2 周练出手感。</div>
+            </div>
+        </div>
+
+        <div class="sug-section" style="--c:#0d9488">
+            <h2>💡 一些小技巧</h2>
+            <ul>
+                <li><b>做完一组题先看解析</b>，把"我当时为什么选错"想清楚（凭印象？跳读？过度推断？）—— 这比看正确答案更有价值。</li>
+                <li><b>不要一次刷完一类</b>，混着刷（4 道细节 + 1 道主旨 + 1 道推理）能保持注意力。</li>
+                <li><b>错题先别立刻重做</b>：隔 1-2 天再做印象更深。错题本「标记已掌握」就是为这个设计的。</li>
+                <li><b>每周导一次 CSV</b>：用首页「导出错题」按钮。把新文件路径发 ZCode，方法导图自动更新。</li>
+            </ul>
+        </div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/storage.js"></script>
+</body>
+</html>
