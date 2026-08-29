@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>错题本 - 英语二真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .mistake-card { cursor: pointer; }
+        .mistake-card .ic-en { font-weight: 600; }
+        .mistake-card .ic-options { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; margin-top: 8px; font-size: 0.92rem; }
+        .mistake-card .ic-options .opt { padding: 4px 8px; border-radius: 4px; background: var(--bg-2, #f5f5f5); }
+        .mistake-card .ic-options .opt.correct { background: #d1fae5; color: #065f46; font-weight: 600; }
+        .mistake-card .ic-options .opt.mine { background: #fee2e2; color: #991b1b; text-decoration: line-through; }
+        .mistake-card .ic-options .opt.mine.correct { background: #d1fae5; color: #065f46; text-decoration: none; }
+        .mistake-card .ic-expl { margin-top: 6px; padding: 6px 10px; background: #fef3c7; border-radius: 4px; font-size: 0.85rem; color: #78350f; display: none; }
+        .mistake-card.open .ic-expl { display: block; }
+        .mistake-card .ic-tag { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #e0e7ff; color: #3730a3; font-size: 0.78rem; margin-right: 6px; }
+        .mistake-card .ic-actions button.mastered { color: #059669; }
+        .mistake-card.mastered { opacity: 0.55; }
+        .mistake-card.mastered .ic-en::before { content: "✔ "; color: #059669; }
+        .topbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 12px 0 18px; }
+        .topbar .stat { font-size: 0.9rem; color: var(--text-light); }
+        .topbar .stat b { color: var(--primary); }
+        .topbar button { background: none; border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; font-size: 0.85rem; }
+        .topbar button:hover { color: var(--primary); border-color: var(--primary); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
+                <a href="vocab.html" class="nav-link">单词本</a>
+                <a href="favorites.html" class="nav-link">句子收藏</a>
+                <a href="mindmap.html" class="nav-link">方法导图</a>
+                <a href="mistakes.html" class="nav-link active">错题本</a>
+            </div>
+            <div class="nav-tools">
+                <span class="nav-timer" id="navTimer">⏱ 00:00:00</span>
+                <button class="nav-timer-btn" id="timerPause" onclick="togglePauseTimer()" title="暂停/继续计时">⏸</button>
+                <button class="nav-timer-btn" onclick="resetTimer()" title="重置今日计时">↺</button>
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="hero">
+            <h1>错题本</h1>
+            <p class="subtitle" id="mCount"></p>
+        </div>
+        <div class="topbar">
+            <span class="stat">未掌握 <b id="statUn">0</b></span>
+            <span class="stat">已掌握 <b id="statOk">0</b></span>
+            <span class="stat">共 <b id="statAll">0</b></span>
+            <button onclick="filterAll()">全部</button>
+            <button onclick="filterUn()">只看未掌握</button>
+            <button onclick="exportWrong()">导出 CSV</button>
+            <button onclick="resetMastered()">重置已掌握</button>
+        </div>
+        <div class="item-list" id="mList">
+            <div class="loading">加载中...</div>
+        </div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/storage.js"></script>
+    <script>
+    // 加载过的题目缓存：{question_id: question}
+    const _qCache = {};
+    async function loadQuestion(qid) {
+        if (_qCache[qid]) return _qCache[qid];
+        const m = qid.match(/^(\d{4})_text(\d+)_q(\d+)$/);
+        if (!m) return null;
+        const year = +m[1];
+        const data = await loadYear(year);
+        for (const art of (data.articles || [])) {
+            if (art.id !== qid.replace(/_q\d+$/, '')) continue;
+            for (const q of (art.questions || [])) {
+                if (q.id === qid) { _qCache[qid] = q; return q; }
+            }
+        }
+        return null;
+    }
+
+    // 已掌握状态：localStorage 存 {question_id: 1}
+    const MK_KEY = 'mistakes_mastered_v1';
+    function loadMastered() {
+        try { return JSON.parse(localStorage.getItem(MK_KEY) || '{}'); } catch (e) { return {}; }
+    }
+    function saveMastered(m) { localStorage.setItem(MK_KEY, JSON.stringify(m)); }
+    function isMastered(qid) { return !!loadMastered()[qid]; }
+    function markMastered(qid) {
+        const m = loadMastered(); m[qid] = 1; saveMastered(m);
+    }
+    function clearMastered(qid) {
+        const m = loadMastered(); delete m[qid]; saveMastered(m);
+    }
+    function resetMastered() {
+        if (!confirm('清空所有「已掌握」标记？错题会重新出现。')) return;
+        localStorage.removeItem(MK_KEY);
+        render();
+    }
+
+    let _allRows = [];
+    let _filter = 'un';   // 'all' | 'un'
+
+    async function render() {
+        const allAnswers = await dbAll('quiz_answers');
+        // 同一题只保留最近一次
+        const latest = {};
+        for (const a of allAnswers) {
+            if (!a.question_id) continue;
+            const prev = latest[a.question_id];
+            if (!prev || (a.answered_at || '') > (prev.answered_at || '')) {
+                latest[a.question_id] = a;
+            }
+        }
+        const wrongAnswers = Object.values(latest).filter(a => !a.is_correct);
+        // 并发拉题目
+        const rows = await Promise.all(wrongAnswers.map(async a => {
+            const q = await loadQuestion(a.question_id);
+            if (!q) return null;
+            const m = q.id.match(/^(\d{4})_text(\d+)_q(\d+)$/);
+            const tag = m ? `${m[1]}T${+m[2]}-${+m[3]}` : q.id;
+            return { ans: a, q, tag };
+        }));
+        _allRows = rows.filter(Boolean).sort((a, b) => (b.ans.answered_at || '').localeCompare(a.ans.answered_at || ''));
+
+        // 统计
+        const mastered = loadMastered();
+        const okCount = _allRows.filter(r => mastered[r.q.id]).length;
+        const unCount = _allRows.length - okCount;
+        document.getElementById('statAll').textContent = _allRows.length;
+        document.getElementById('statOk').textContent = okCount;
+        document.getElementById('statUn').textContent = unCount;
+        document.getElementById('mCount').textContent = _allRows.length
+            ? `共 ${_allRows.length} 道错题，${okCount} 已掌握 / ${unCount} 待重做`
+            : '';
+
+        drawList();
+    }
+
+    function drawList() {
+        const mastered = loadMastered();
+        const list = _filter === 'all' ? _allRows : _allRows.filter(r => !mastered[r.q.id]);
+        const box = document.getElementById('mList');
+        if (!list.length) {
+            box.innerHTML = '<div class="empty">' +
+                (_filter === 'un' ? '🎉 没有未掌握的错题了！可以点「全部」查看已掌握的。' : '还没有错题记录。在文章页做完题后再来看。') +
+                '</div>';
+            return;
+        }
+        box.innerHTML = list.map(r => {
+            const { q, ans, tag } = r;
+            const ok = isMastered(q.id);
+            const opts = q.options || {};
+            const optsCn = q.options_cn || {};
+            const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+            const optsHtml = letters
+                .filter(L => opts[L])
+                .map(L => {
+                    let cls = 'opt';
+                    if (L === q.answer) cls += ' correct';
+                    if (L === ans.user_answer && L !== q.answer) cls += ' mine';
+                    return `<div class="${cls}"><b>${L}.</b> ${esc(opts[L])} ${optsCn[L] ? '<br><span style="color:var(--text-light);font-size:0.82rem">' + esc(optsCn[L]) + '</span>' : ''}</div>`;
+                }).join('');
+            return `<div class="item-card mistake-card ${ok ? 'mastered' : ''}" data-qid="${esc(q.id)}" onclick="toggleCard(this)">
+                <div class="ic-head">
+                    <span class="ic-word">${esc(tag)} <span class="ic-tag">${esc(q.qtype || '')}</span></span>
+                    <span style="color:var(--text-light);font-size:0.82rem">${esc(ans.answered_at || '')}</span>
+                </div>
+                <div class="ic-en">${esc(q.stem || '')}</div>
+                <div class="ic-options">${optsHtml}</div>
+                <div class="ic-expl">${esc(q.explanation || '(无解析)')}</div>
+                <div class="ic-foot">
+                    <span>你的答案：<b>${esc(ans.user_answer || '?')}</b> · 正确答案：<b style="color:#065f46">${esc(q.answer || '?')}</b></span>
+                    <span class="ic-actions">
+                        <a href="article.html?id=${esc(ans.article_id)}" onclick="event.stopPropagation()">看原文 →</a>
+                        <button class="${ok ? 'mastered' : ''}" onclick="event.stopPropagation(); toggleMastered('${esc(q.id)}')">${ok ? '取消已掌握' : '标记已掌握'}</button>
+                    </span>
+                </div>
+            </div>`;
+        }).join('');
+    }
+
+    function toggleCard(el) { el.classList.toggle('open'); }
+    function toggleMastered(qid) {
+        if (isMastered(qid)) clearMastered(qid);
+        else markMastered(qid);
+        render();
+    }
+    function filterAll() { _filter = 'all'; drawList(); }
+    function filterUn() { _filter = 'un'; drawList(); }
+
+    render();
+    </script>
+</body>
+</html>

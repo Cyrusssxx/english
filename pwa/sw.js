@@ -2,7 +2,7 @@
  * 预缓存全部页面/样式/脚本/题库/图标，安装后完全离线可用。
  * 升级题库或代码后：CACHE_VER 会随资源内容自动变化，客户端自动换新缓存。
  */
-const CACHE_VER = 'en2-a96f44e5';
+const CACHE_VER = 'en2-dd5ebd21';
 
 const PRECACHE = [
     'index.html',
