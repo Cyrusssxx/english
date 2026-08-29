@@ -30,6 +30,17 @@
         .topbar .stat b { color: var(--primary); }
         .topbar button { background: none; border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; font-size: 0.85rem; }
         .topbar button:hover { color: var(--primary); border-color: var(--primary); }
+        .drill-pack { background: var(--card-bg, #fff); border: 1px solid var(--border, #e2e8f0); border-radius: 10px; padding: 12px 18px; margin: 12px 0 18px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+        .drill-pack > summary { cursor: pointer; font-weight: 600; color: var(--text); font-size: 1rem; }
+        .drill-hint { color: var(--text-light); font-size: 0.85rem; margin: 8px 0 12px; }
+        .drill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+        .drill-col { border-left: 4px solid var(--c, #0d9488); background: var(--bg-2, #f8fafc); border-radius: 6px; padding: 10px 14px; }
+        .drill-col h4 { margin: 0 0 4px; font-size: 0.95rem; color: var(--text); }
+        .drill-cnt { margin: 0 0 8px; font-size: 0.8rem; color: var(--text-light); }
+        .drill-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+        .drill-tags a { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #fff; border: 1px solid var(--border, #e2e8f0); color: var(--text); text-decoration: none; font-size: 0.82rem; font-family: Georgia, serif; }
+        .drill-tags a:hover { background: var(--c, #0d9488); color: #fff; border-color: var(--c, #0d9488); }
+        .drill-foot { margin: 6px 0 0; font-size: 0.78rem; color: var(--text-light); }
     </style>
 </head>
 <body>
@@ -59,6 +70,117 @@
             <h1>错题本</h1>
             <p class="subtitle" id="mCount"></p>
         </div>
+        <details class="drill-pack" open>
+            <summary>🎯 针对性刷题包（49 道，按你错题画像筛）</summary>
+            <p class="drill-hint">点击题号跳到原文页（请先在原文页切换到「做题」模式答题，答对才算掌握）。题号来源：英一 2010-2025（49 道） + 英二 同题型补充。英一前缀 <code>en1_</code>。</p>
+            <div class="drill-grid">
+                <div class="drill-col" style="--c:#dc2626">
+                    <h4>① 段内定位错位（细节题头号死穴）</h4>
+                    <p class="drill-cnt">12 道</p>
+                    <div class="drill-tags">
+                        <a href="en1.html?id=en1_2012_text2#q29">12T2-29</a>
+                        <a href="en1.html?id=en1_2012_text3#q31">12T3-31</a>
+                        <a href="en1.html?id=en1_2013_text1#q22">13T1-22</a>
+                        <a href="en1.html?id=en1_2013_text2#q27">13T2-27</a>
+                        <a href="en1.html?id=en1_2013_text2#q29">13T2-29</a>
+                        <a href="en1.html?id=en1_2013_text2#q30">13T2-30</a>
+                        <a href="en1.html?id=en1_2013_text3#q33">13T3-33</a>
+                        <a href="en1.html?id=en1_2013_text4#q37">13T4-37</a>
+                        <a href="en1.html?id=en1_2014_text1#q24">14T1-24</a>
+                        <a href="en1.html?id=en1_2014_text2#q30">14T2-30</a>
+                        <a href="en1.html?id=en1_2014_text3#q34">14T3-34</a>
+                        <a href="en1.html?id=en1_2015_text1#q23">15T1-23</a>
+                    </div>
+                </div>
+                <div class="drill-col" style="--c:#8b5cf6">
+                    <h4>② 人物观点混（细节题子集）</h4>
+                    <p class="drill-cnt">8 道</p>
+                    <div class="drill-tags">
+                        <a href="en1.html?id=en1_2010_text3#q32">10T3-32</a>
+                        <a href="en1.html?id=en1_2010_text4#q39">10T4-39</a>
+                        <a href="en1.html?id=en1_2011_text1#q23">11T1-23</a>
+                        <a href="en1.html?id=en1_2011_text4#q36">11T4-36</a>
+                        <a href="en1.html?id=en1_2011_text4#q38">11T4-38</a>
+                        <a href="en1.html?id=en1_2012_text1#q22">12T1-22</a>
+                        <a href="en1.html?id=en1_2012_text1#q25">12T1-25</a>
+                        <a href="en1.html?id=en1_2012_text3#q34">12T3-34</a>
+                    </div>
+                </div>
+                <div class="drill-col" style="--c:#ef4444">
+                    <h4>③ 过度推断（第二大坑）</h4>
+                    <p class="drill-cnt">8 道</p>
+                    <div class="drill-tags">
+                        <a href="en1.html?id=en1_2011_text2#q29">11T2-29</a>
+                        <a href="en1.html?id=en1_2011_text4#q40">11T4-40</a>
+                        <a href="en1.html?id=en1_2012_text2#q30">12T2-30</a>
+                        <a href="en1.html?id=en1_2012_text3#q32">12T3-32</a>
+                        <a href="en1.html?id=en1_2013_text1#q24">13T1-24</a>
+                        <a href="en1.html?id=en1_2013_text4#q38">13T4-38</a>
+                        <a href="en1.html?id=en1_2014_text4#q39">14T4-39</a>
+                        <a href="en1.html?id=en1_2016_text2#q28">16T2-28</a>
+                    </div>
+                </div>
+                <div class="drill-col" style="--c:#a855f7">
+                    <h4>④ 类比/比喻推断</h4>
+                    <p class="drill-cnt">1 道</p>
+                    <div class="drill-tags">
+                        <a href="en1.html?id=en1_2015_text2#q28">15T2-28</a>
+                    </div>
+                    <p class="drill-foot">英一这种题少，做完可补英二 18T3-5（已错）</p>
+                </div>
+                <div class="drill-col" style="--c:#f59e0b">
+                    <h4>⑤ 主旨题（4/4 全错）</h4>
+                    <p class="drill-cnt">8 道</p>
+                    <div class="drill-tags">
+                        <a href="en1.html?id=en1_2010_text1#q25">10T1-25</a>
+                        <a href="en1.html?id=en1_2010_text2#q30">10T2-30</a>
+                        <a href="en1.html?id=en1_2012_text3#q35">12T3-35</a>
+                        <a href="en1.html?id=en1_2013_text1#q25">13T1-25</a>
+                        <a href="en1.html?id=en1_2013_text3#q35">13T3-35</a>
+                        <a href="en1.html?id=en1_2014_text4#q40">14T4-40</a>
+                        <a href="en1.html?id=en1_2015_text1#q25">15T1-25</a>
+                        <a href="en1.html?id=en1_2015_text3#q35">15T3-35</a>
+                    </div>
+                </div>
+                <div class="drill-col" style="--c:#3b82f6">
+                    <h4>⑥ 猜词（3/3 全错）</h4>
+                    <p class="drill-cnt">4 道</p>
+                    <div class="drill-tags">
+                        <a href="en1.html?id=en1_2010_text2#q28">10T2-28</a>
+                        <a href="en1.html?id=en1_2011_text2#q28">11T2-28</a>
+                        <a href="en1.html?id=en1_2012_text2#q26">12T2-26</a>
+                        <a href="en1.html?id=en1_2013_text1#q23">13T1-23</a>
+                    </div>
+                </div>
+                <div class="drill-col" style="--c:#22c55e">
+                    <h4>⑦ 段内定位训练包（再加 8 道巩固）</h4>
+                    <p class="drill-cnt">8 道</p>
+                    <div class="drill-tags">
+                        <a href="en1.html?id=en1_2010_text1#q24">10T1-24</a>
+                        <a href="en1.html?id=en1_2010_text3#q31">10T3-31</a>
+                        <a href="en1.html?id=en1_2010_text4#q37">10T4-37</a>
+                        <a href="en1.html?id=en1_2010_text4#q38">10T4-38</a>
+                        <a href="en1.html?id=en1_2010_text4#q40">10T4-40</a>
+                        <a href="en1.html?id=en1_2011_text1#q25">11T1-25</a>
+                        <a href="en1.html?id=en1_2011_text4#q39">11T4-39</a>
+                        <a href="en1.html?id=en1_2012_text1#q23">12T1-23</a>
+                    </div>
+                </div>
+                <div class="drill-col" style="--c:#0d9488">
+                    <h4>⑧ 英二补充（同题型新题）</h4>
+                    <p class="drill-cnt">6 道（避开你已错的 46 道）</p>
+                    <div class="drill-tags">
+                        <a href="article.html?id=2021_text2#q27">21T2-27</a>
+                        <a href="article.html?id=2022_text3#q32">22T3-32</a>
+                        <a href="article.html?id=2022_text4#q38">22T4-38</a>
+                        <a href="article.html?id=2023_text3#q34">23T3-34</a>
+                        <a href="article.html?id=2024_text2#q27">24T2-27</a>
+                        <a href="article.html?id=2024_text3#q33">24T3-33</a>
+                    </div>
+                    <p class="drill-foot">细节题/推理题 混合（先看你英一刷得如何再补）</p>
+                </div>
+            </div>
+        </details>
         <div class="topbar">
             <span class="stat">未掌握 <b id="statUn">0</b></span>
             <span class="stat">已掌握 <b id="statOk">0</b></span>
