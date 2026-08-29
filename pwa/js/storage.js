@@ -490,6 +490,72 @@ async function backupImport(input) {
     rd.readAsText(f);
 }
 
+/** 导出错题清单（按题型聚合，CSV）
+ *  从 IndexedDB 的 quiz_answers 拉所有 is_correct===0 的记录，
+ *  按 qtype 分组、按错题数从多到少排序，
+ *  下载为 CSV（Excel 可打开）+ 同步弹窗展示统计。
+ *  用途：让你把错题清单直接贴给 ZCode，做方法导图「题型」列的"个人化"题号替换。
+ */
+async function exportWrong() {
+    const all = await dbAll('quiz_answers');
+    const wrong = all.filter(a => !a.is_correct);
+    if (!wrong.length) {
+        alert('暂无错题记录（你还没在 PWA 做过题，或者全部答对了）');
+        return;
+    }
+    // 按年份去重拉题库拿 qtype
+    const years = [...new Set(wrong.map(a => (a.article_id || '').match(/^\d{4}/)?.[0]).filter(Boolean))];
+    const byType = {};   // {qtype: [{tag, stem, answer, user}]}
+    for (const y of years) {
+        let data;
+        try { data = await (await fetch(`data/${y}.json`)).json(); }
+        catch (e) { console.warn(`跳过 ${y}.json：${e.message}`); continue; }
+        for (const art of (data.articles || [])) {
+            for (const q of (art.questions || [])) {
+                const myWrong = wrong.find(w => w.question_id === q.id);
+                if (!myWrong) continue;
+                const m = q.id.match(/(\d{4})_text(\d)_q(\d+)/);
+                if (!m) continue;
+                const tag = `${m[1]}T${m[2]}-${m[3]}`;
+                (byType[q.qtype] = byType[q.qtype] || []).push({
+                    tag,
+                    stem: (q.stem || '').slice(0, 80),
+                    answer: q.answer || '',
+                    my: myWrong.user_answer || '',
+                    qid: q.id
+                });
+            }
+        }
+    }
+    // 按错题数降序
+    const types = Object.entries(byType).sort((a, b) => b[1].length - a[1].length);
+    // 生成 CSV
+    const esc = s => `"${String(s).replace(/"/g, '""')}"`;
+    const lines = ['题型,题号,题干(前80字),你的答案,正确答案,question_id'];
+    for (const [t, arr] of types) {
+        for (const r of arr) {
+            lines.push([t, r.tag, r.stem, r.my, r.answer, r.qid].map(esc).join(','));
+        }
+    }
+    const csv = '\uFEFF' + lines.join('\n');   // 加 BOM 让 Excel 正确识别 UTF-8
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = '英二错题-' + new Date().toISOString().slice(0, 10) + '.csv';
+    a.click();
+    URL.revokeObjectURL(a.href);
+    // 弹个汇总方便直接复制贴给我
+    const summary = '=== 你的错题（按题型，错的多的在前）===\n' +
+        types.map(([t, arr]) => `\n【${t}】共 ${arr.length} 题\n` + arr.map(r => r.tag).join(', ')).join('\n') +
+        '\n\n总错题数：' + types.reduce((s, [, a]) => s + a.length, 0);
+    console.log(summary);
+    if (navigator.clipboard) {
+        try { await navigator.clipboard.writeText(summary); } catch (e) {}
+    }
+    alert('已下载错题 CSV 到本机。\n\n汇总已尝试复制到剪贴板（请检查）；如未复制，下面这段在 console 也可查看：\n\n' +
+        types.map(([t, arr]) => `【${t}】${arr.length} 题：${arr.map(r => r.tag).join(', ')}`).join('\n'));
+}
+
 // ==================== Service Worker 注册 ====================
 if ('serviceWorker' in navigator) {
     // updateViaCache:'none'：每次都去网络检查 sw.js 是否有变化，不被 GitHub Pages 的 HTTP 缓存挡住

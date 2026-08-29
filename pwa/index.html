@@ -63,6 +63,7 @@
             学习数据（生词/收藏/进度/答题）存于本机浏览器
             <button onclick="backupExport()">导出备份</button>
             <button onclick="document.getElementById('bakImport').click()">导入备份</button>
+            <button onclick="exportWrong()">导出错题(按题型)</button>
             <input type="file" id="bakImport" accept="application/json" style="display:none" onchange="backupImport(this)">
         </div>
     </main>
