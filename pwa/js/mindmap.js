@@ -528,12 +528,38 @@
     return html;
   }
 
+  // 态度词：CSS 多栏自动填满，不留右/下大空白（分支作栏内大标题，子分组作次标题，条目按列流式铺）
+  function renderAttitude(branches) {
+    var html = '<div class="att-flow">';
+    branches.forEach(function (b) {
+      var hasSub = (b.children || []).some(function (c) { return c.children && c.children.length; });
+      html += '<h3 class="att-title" style="--c:' + b.color + '">' + esc(b.name) + '</h3>';
+      if (hasSub) {
+        b.children.forEach(function (sub) {
+          html += '<h4 class="att-sub-title" style="--c:' + b.color + '">' + esc(sub.name) + '</h4>';
+          (sub.children || []).forEach(function (l) {
+            html += '<div class="leaf-row">' + leafText(l.name) + '</div>';
+          });
+        });
+      } else {
+        b.children.forEach(function (l) {
+          html += '<div class="leaf-row">' + leafText(l.name) + '</div>';
+        });
+      }
+    });
+    html += '</div>';
+    return html;
+  }
+
   function renderMap(map) {
     var html = '';
     if (map.intro) html += '<p class="map-intro">' + esc(map.intro) + '</p>';
-    // 态度词图用「左两行 + 右整块」专属网格布局，其余图保持横向排列
-    var colsCls = map.id === 'attitude' ? 'mm-cols mm-cols-attitude' : 'mm-cols';
-    html += '<div class="' + colsCls + '">';
+    // 态度词：多栏自动填满；其余图保持横向列
+    if (map.id === 'attitude') {
+      html += renderAttitude(map.branches);
+      return html;
+    }
+    html += '<div class="mm-cols">';
     map.branches.forEach(function (b) {
       var colCls = b.split ? 'mm-col mm-col-split' : 'mm-col';
       html += '<div class="' + colCls + '" style="--c:' + b.color + '">';
