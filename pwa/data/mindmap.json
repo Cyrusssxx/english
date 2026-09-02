@@ -59,7 +59,7 @@
           ]
         },
         {
-          "name": "零中选·中频+低频",
+          "name": "零中选·中频",
           "color": "#dc2626",
           "children": [
             {
@@ -75,58 +75,11 @@
                   "name": "scornful 轻蔑的 · 2 次，0 次中选"
                 }
               ]
-            },
-            {
-              "name": "低频 · 1 次（证据弱，仅参考）",
-              "children": [
-                {
-                  "name": "impartial 不偏不倚的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "defensive 防卫的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "disappointed 失望的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "satisfaction 满意的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "understanding 理解的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "pessimistic 悲观的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "conceited 自负的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "destructive 毁灭性的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "enthusiasm 极热情的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "desperate 绝望的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "indulgence 放纵 · 1 次，0 次中选"
-                },
-                {
-                  "name": "permissive 放纵的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "sarcastic 讽刺的 · 1 次，0 次中选"
-                },
-                {
-                  "name": "trivial 不重要的 · 1 次，0 次中选"
-                }
-              ]
             }
           ]
         },
         {
-          "name": "零中选·铁证（高频+别误杀）",
+          "name": "零中选·铁证（高频+别误杀）+ 低频",
           "color": "#b91c1c",
           "split": 2,
           "children": [
@@ -176,6 +129,54 @@
                 },
                 {
                   "name": "approval 赞同 · 3 次中选 2 次"
+                }
+              ]
+            },
+            {
+              "name": "低频 · 1 次（证据弱，仅参考）",
+              "full": true,
+              "children": [
+                {
+                  "name": "impartial 不偏不倚的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "defensive 防卫的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "disappointed 失望的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "satisfaction 满意的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "understanding 理解的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "pessimistic 悲观的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "conceited 自负的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "destructive 毁灭性的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "enthusiasm 极热情的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "desperate 绝望的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "indulgence 放纵 · 1 次，0 次中选"
+                },
+                {
+                  "name": "permissive 放纵的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "sarcastic 讽刺的 · 1 次，0 次中选"
+                },
+                {
+                  "name": "trivial 不重要的 · 1 次，0 次中选"
                 }
               ]
             }

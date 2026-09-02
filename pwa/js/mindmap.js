@@ -40,7 +40,7 @@
             ]
           },
           {
-            name: "零中选·中频+低频",
+            name: "零中选·中频",
             color: "#dc2626",
             children: [
               {
@@ -50,30 +50,11 @@
                   { name: "respectful 尊重的 · 2 次，0 次中选" },
                   { name: "scornful 轻蔑的 · 2 次，0 次中选" }
                 ]
-              },
-              {
-                name: "低频 · 1 次（证据弱，仅参考）",
-                children: [
-                  { name: "impartial 不偏不倚的 · 1 次，0 次中选" },
-                  { name: "defensive 防卫的 · 1 次，0 次中选" },
-                  { name: "disappointed 失望的 · 1 次，0 次中选" },
-                  { name: "satisfaction 满意的 · 1 次，0 次中选" },
-                  { name: "understanding 理解的 · 1 次，0 次中选" },
-                  { name: "pessimistic 悲观的 · 1 次，0 次中选" },
-                  { name: "conceited 自负的 · 1 次，0 次中选" },
-                  { name: "destructive 毁灭性的 · 1 次，0 次中选" },
-                  { name: "enthusiasm 极热情的 · 1 次，0 次中选" },
-                  { name: "desperate 绝望的 · 1 次，0 次中选" },
-                  { name: "indulgence 放纵 · 1 次，0 次中选" },
-                  { name: "permissive 放纵的 · 1 次，0 次中选" },
-                  { name: "sarcastic 讽刺的 · 1 次，0 次中选" },
-                  { name: "trivial 不重要的 · 1 次，0 次中选" }
-                ]
               }
             ]
           },
           {
-            name: "零中选·铁证（高频+别误杀）",
+            name: "零中选·铁证（高频+别误杀）+ 低频",
             color: "#b91c1c",
             split: 2,
             children: [
@@ -98,6 +79,26 @@
                   { name: "disapproval 不赞成 · 2 次中选 2 次" },
                   { name: "doubtful 怀疑的 · 3 次中选 2 次" },
                   { name: "approval 赞同 · 3 次中选 2 次" }
+                ]
+              },
+              {
+                name: "低频 · 1 次（证据弱，仅参考）",
+                full: true,
+                children: [
+                  { name: "impartial 不偏不倚的 · 1 次，0 次中选" },
+                  { name: "defensive 防卫的 · 1 次，0 次中选" },
+                  { name: "disappointed 失望的 · 1 次，0 次中选" },
+                  { name: "satisfaction 满意的 · 1 次，0 次中选" },
+                  { name: "understanding 理解的 · 1 次，0 次中选" },
+                  { name: "pessimistic 悲观的 · 1 次，0 次中选" },
+                  { name: "conceited 自负的 · 1 次，0 次中选" },
+                  { name: "destructive 毁灭性的 · 1 次，0 次中选" },
+                  { name: "enthusiasm 极热情的 · 1 次，0 次中选" },
+                  { name: "desperate 绝望的 · 1 次，0 次中选" },
+                  { name: "indulgence 放纵 · 1 次，0 次中选" },
+                  { name: "permissive 放纵的 · 1 次，0 次中选" },
+                  { name: "sarcastic 讽刺的 · 1 次，0 次中选" },
+                  { name: "trivial 不重要的 · 1 次，0 次中选" }
                 ]
               }
             ]
@@ -502,10 +503,19 @@
   }
 
   // 拆分列：将分支的子项直接铺进 N 列网格（每个子项是一个网格单元，不再被整包 .branch-body）
+  // 子项带 full:true 时占满整行（跨两列），其内部 leaf 再铺成两列（用于"长清单塞进列底部"）。
   function renderSplitItems(items, color) {
     var html = '<div class="mm-split">';
     items.forEach(function (it) {
-      if (it.children && it.children.length) {
+      if (it.full && it.children && it.children.length) {
+        html += '<div class="mm-full" style="--c:' + color + '">';
+        html += '<div class="sub-title">' + esc(it.name) + '</div>';
+        html += '<div class="mm-split">';
+        it.children.forEach(function (leaf) {
+          html += '<div class="leaf-row">' + leafText(leaf.name) + '</div>';
+        });
+        html += '</div></div>';
+      } else if (it.children && it.children.length) {
         html += '<div class="sub" style="--c:' + color + '">';
         html += '<div class="sub-title">' + esc(it.name) + '</div>';
         html += renderItems(it.children, color);

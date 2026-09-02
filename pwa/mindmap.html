@@ -60,6 +60,10 @@
         .mm-col-split { flex: 2 1 0; min-width: 540px; }
         .mm-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
         .mm-split > .sub { margin-top: 0; }
+        /* full 块：占满 split 整行（跨两列），内部再拆两列，用于把长清单塞进列底部 */
+        .mm-full { grid-column: 1 / -1; margin-top: 6px; padding-top: 10px; border-top: 1px dashed var(--border); }
+        .mm-full > .sub-title { margin-top: 0; }
+        .mm-full .mm-split { margin-top: 2px; }
         .mm-col-head {
             font-size: 1.02rem; font-weight: 700; color: var(--c);
             margin: 0 0 10px; padding-bottom: 8px; border-bottom: 2px solid var(--c);
