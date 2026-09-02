@@ -12,7 +12,7 @@
         title: "态度词小墓碑",
         root: "态度词小墓碑",
         rootColor: "#0d9488",
-        intro: "这些词在考研阅读态度题里一出现，基本就是干扰项（小墓碑）——看到先排除，别选。",
+        intro: "这些词在考研阅读态度题里一出现，基本就是干扰项（小墓碑）——看到先排除，别选。第 4 栏是实测统计：逐题统计本库 28 道真题态度题（英二 13 道 2007–2021 + 英一 15 道 2010–2024）里每个词的「出现次数 / 中选次数」，从未中选的才是真正的绝对排除项。",
         branches: [
           {
             name: "不符合价值观",
@@ -46,6 +46,63 @@
               { name: "ambiguous 模棱两可的" },
               { name: "uncertain 不确定的" },
               { name: "puzzled 困惑的" }
+            ]
+          },
+          {
+            name: "真题零中选（28 道态度题实测）",
+            color: "#dc2626",
+            split: 2,
+            children: [
+              {
+                name: "铁证 · 高频零中选（≥3 次）",
+                children: [
+                  { name: "tolerant 容忍的 · 11 次出现，0 次中选" },
+                  { name: "appreciation 欣赏/赞赏的 · 4 次，0 次中选" },
+                  { name: "indifferent 冷漠/不关心的 · 4 次，0 次中选" },
+                  { name: "ambiguous 模棱两可的 · 3 次，0 次中选" },
+                  { name: "contempt 轻蔑的 · 3 次，0 次中选" },
+                  { name: "puzzled 困惑的 · 3 次，0 次中选" },
+                  { name: "uncertain 不确定的 · 3 次，0 次中选" }
+                ]
+              },
+              {
+                name: "中频 · 2 次零中选",
+                children: [
+                  { name: "biased 有偏见的 · 2 次，0 次中选" },
+                  { name: "respectful 尊重的 · 2 次，0 次中选" },
+                  { name: "scornful 轻蔑的 · 2 次，0 次中选" }
+                ]
+              },
+              {
+                name: "低频 · 1 次（证据弱，仅参考）",
+                children: [
+                  { name: "impartial 不偏不倚的 · 1 次，0 次中选" },
+                  { name: "defensive 防卫的 · 1 次，0 次中选" },
+                  { name: "disappointed 失望的 · 1 次，0 次中选" },
+                  { name: "satisfaction 满意的 · 1 次，0 次中选" },
+                  { name: "understanding 理解的 · 1 次，0 次中选" },
+                  { name: "pessimistic 悲观的 · 1 次，0 次中选" },
+                  { name: "conceited 自负的 · 1 次，0 次中选" },
+                  { name: "destructive 毁灭性的 · 1 次，0 次中选" },
+                  { name: "enthusiasm 极热情的 · 1 次，0 次中选" },
+                  { name: "desperate 绝望的 · 1 次，0 次中选" },
+                  { name: "indulgence 放纵 · 1 次，0 次中选" },
+                  { name: "permissive 放纵的 · 1 次，0 次中选" },
+                  { name: "sarcastic 讽刺的 · 1 次，0 次中选" },
+                  { name: "trivial 不重要的 · 1 次，0 次中选" }
+                ]
+              },
+              {
+                name: "别误杀 · 这些反而常中选",
+                children: [
+                  { name: "skeptical 怀疑的 · 8 次中选 3 次" },
+                  { name: "critical 批评的 · 7 次中选 3 次" },
+                  { name: "supportive 支持的 · 6 次中选 3 次" },
+                  { name: "disapproval 不赞成 · 2 次中选 2 次" },
+                  { name: "doubtful 怀疑的 · 3 次中选 2 次" },
+                  { name: "approval 赞同 · 3 次中选 2 次" }
+                ]
+              }
             ]
           }
         ]

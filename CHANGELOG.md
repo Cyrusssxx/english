@@ -1,5 +1,22 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-02 新增] 态度词墓碑加第 4 栏「真题零中选」+ 回退笔记功能
+
+### 1. 回退笔记功能
+- 用户反馈笔记功能「做得差了」。`e2213d5`（富文本笔记）已由 revert 提交 `c1cefb8` 回退并推送，方法导图恢复为「高亮 + 卡片」形态；`mindmap.js` 中 `note-panel` / `toggleNote` / `mm_notes_v1` 相关代码已清零（jsdom 验证零残留）。高亮功能不受影响。
+
+### 2. 态度词小墓碑新增第 4 栏：真题零中选（28 道态度题实测）
+- **需求**：加一栏「哪些绝对不可能选的态度词」，内容从真题阅读题里统计得出。
+- **方法**：脚本扫描 `pwa/data/*.json`（英二 2007–2025）+ `pwa/data/en1/*.json`（英一），按 stem/stem_cn 关键词识别态度题、清洗选项（截掉 PDF 正文污染 + 保留 ≤3 词的形容词选项），再用词形归一（tolerant/tolerance → tolerant 等）统计每个态度词的**出现次数 / 中选次数**。有效样本 **28 道**（英二 13 道 2007–2021 + 英一 15 道 2010–2024）。
+- **结论（新栏内容）**：
+  - 铁证高频零中选：tolerant **11 次 0 中选**、appreciation 4 次 0、indifferent 4 次 0、ambiguous 3 次 0、contempt 3 次 0、puzzled 3 次 0、uncertain 3 次 0。
+  - 中频 2 次 0 中选：biased、respectful、scornful。
+  - 低频 1 次 0 中选（证据弱，标注为参考）：impartial、defensive、disappointed、satisfaction、understanding、pessimistic 等 14 个。
+  - 另加「别误杀 · 反而常中选」：skeptical 8 中 3、critical 7 中 3、supportive 6 中 3、disapproval 2 中 2、doubtful 3 中 2、approval 3 中 2。
+- **关键发现**：appreciation / respectful / impartial / satisfaction / understanding 这类「看似正面」的词，真题里同样 **0 次中选**——反直觉、最易踩坑。
+- **实现**：`pwa/js/mindmap.js` 态度词图新增第 4 栏（带 `split: 2` 双列布局，4 个子分组共 30 条）；intro 补充样本口径说明；`pwa/mindmap.html` 更新列数提示文案；`pwa/data/mindmap.json` 由内联 DATA 反向重新生成，两者严格同步。
+- **验证**：jsdom 实跑确认态度词 4 列、第 4 栏 4 分组（7/3/14/6）、全页 162 条目、渲染正常。
+
 ## [2026-08-26 新增] 方法导图支持条目高亮标记
 
 - **需求**：用户要求方法导图「可以高亮」。
