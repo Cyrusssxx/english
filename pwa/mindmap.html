@@ -22,18 +22,24 @@
             background: var(--card); border: 1px solid var(--border); border-radius: 10px;
             padding: 12px 16px; margin: 0 0 16px;
         }
-        /* 左两行 + 右整块：第 4 栏跨两行占满右侧，左侧上排放前两栏、下排放第 3 栏
+        /* 态度词专属两排布局：
+           第一排横排 = 零中选·铁证(g1, 跨2) + 零中选·中频+低频(g2, 跨2)
+           第二排横排 = 不符合价值观(g3) + 感情色彩太过(g4) + 模糊的(g5) + 留空
+           branches 顺序固定，用 nth-child 映射到网格区域。
            注意：必须用 .mm-cols.mm-cols-attitude 双类选择器——单类特异性低于后面的 .mm-cols{display:flex}，会被覆盖 */
         .mm-cols.mm-cols-attitude {
             display: grid;
-            grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr) minmax(480px, 2fr);
-            grid-template-areas: "c1 c2 c4" "c3 c3 c4";
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-template-areas:
+                "g1 g1 g2 g2"
+                "g3 g4 g5 .";
             gap: 14px; align-items: start; overflow-x: visible;
         }
-        .mm-cols.mm-cols-attitude > .mm-col:nth-child(1) { grid-area: c1; }
-        .mm-cols.mm-cols-attitude > .mm-col:nth-child(2) { grid-area: c2; }
-        .mm-cols.mm-cols-attitude > .mm-col:nth-child(3) { grid-area: c3; }
-        .mm-cols.mm-cols-attitude > .mm-col:nth-child(4) { grid-area: c4; }
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(1) { grid-area: g3; }   /* 不符合价值观 */
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(2) { grid-area: g4; }   /* 感情色彩太过 */
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(3) { grid-area: g2; }   /* 零中选·中频+低频 */
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(4) { grid-area: g1; }   /* 零中选·铁证 */
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(5) { grid-area: g5; }   /* 模糊的 */
         .mm-cols.mm-cols-attitude > .mm-col { flex: none; min-width: 0; }
         .mm-cols.mm-cols-attitude > .mm-col-split { flex: none; min-width: 0; }
         @media (max-width: 1100px) {
@@ -111,7 +117,7 @@
 
     <main class="mm-page">
         <h1 class="mm-page-title">考研阅读方法导图</h1>
-        <p class="scroll-hint">横向滑动查看每一列 · 态度词 5 列 / 阅读一张纸 4 列（真题实测与题型均拆双列各占一半）</p>
+        <p class="scroll-hint">态度词两排展示（上排：真题零中选两栏；下排：符合价值观/感情色彩/模糊的） · 阅读一张纸向右横滑 · 题型/实测列内部双列</p>
         <div class="mm-tools">
             <span class="mm-tools-tip">点任意条目即高亮标记 · 再点取消</span>
             <button type="button" class="mm-clear-btn" onclick="clearHighlights()">清除高亮</button>
