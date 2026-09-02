@@ -36,6 +36,8 @@
             margin: 10px 0 6px; padding-left: 10px; border-left: 3px solid var(--c);
             break-inside: avoid; -webkit-column-break-inside: avoid;
         }
+        /* 置顶：让指定大标题/子标题开新栏、顶到栏首（其它照常） */
+        .att-title-top, .att-sub-title-top { break-before: column; -webkit-column-break-before: always; }
         .att-flow > .leaf-row { break-inside: avoid; -webkit-column-break-inside: avoid; margin: 0 0 6px; }
         @media (max-width: 640px) {
             .att-flow { column-width: auto; column-count: 1; }

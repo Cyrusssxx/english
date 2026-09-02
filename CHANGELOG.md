@@ -1,5 +1,12 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-03 微调] 态度词：中频/别误杀标题置顶 + conceited 归位
+
+- 「零中选·中频」大标题、「别误杀 · 这些反而常中选」子标题各自 `break-before: column` 开新栏顶到栏首（仅这两个，其它标题照常）。
+- conceited（自负的）从「低频·1次」组删除（它已在「感情色彩太过」作主分类保留），低频 14→13 条，词表不重复。
+- 文件：`pwa/js/mindmap.js`（renderAttitude 精确匹配置顶 + 低频删 conceited）、`pwa/mindmap.html`（.att-title-top/.att-sub-title-top CSS）、`pwa/data/mindmap.json`（同步）、`pwa/sw.js`。
+- 验证：jsdom 确认仅这两个标题带置顶 class、低频无 conceited、leaf 45 条。SW `en2-69b4c3ef`。
+
 ## [2026-09-03 改版] 态度词改 CSS 多栏自动填满
 
 - 弃用 `mm-cols-attitude` 两排 grid（右下空格 + 列高差造成大片留白）。新增 `renderAttitude()` 输出 `.att-flow`：CSS `column-width:300px` 多栏流，5 分支作栏内大标题（色条）、子分组作次标题、46 条单词流式铺栏自动占满不留空；`break-inside:avoid` 防条目/标题跨栏截断；窄屏(<640)收单栏。`renderMap` 按 `map.id==='attitude'` 分派，reading 等仍 `mm-cols` 横排。

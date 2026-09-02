@@ -91,7 +91,6 @@
                   { name: "satisfaction 满意的 · 1 次，0 次中选" },
                   { name: "understanding 理解的 · 1 次，0 次中选" },
                   { name: "pessimistic 悲观的 · 1 次，0 次中选" },
-                  { name: "conceited 自负的 · 1 次，0 次中选" },
                   { name: "destructive 毁灭性的 · 1 次，0 次中选" },
                   { name: "enthusiasm 极热情的 · 1 次，0 次中选" },
                   { name: "desperate 绝望的 · 1 次，0 次中选" },
@@ -533,10 +532,14 @@
     var html = '<div class="att-flow">';
     branches.forEach(function (b) {
       var hasSub = (b.children || []).some(function (c) { return c.children && c.children.length; });
-      html += '<h3 class="att-title" style="--c:' + b.color + '">' + esc(b.name) + '</h3>';
+      // 仅「零中选·中频」大标题置顶（开新栏顶到栏首），其余大标题照常
+      var top = (b.name === '零中选·中频') ? ' att-title-top' : '';
+      html += '<h3 class="att-title' + top + '" style="--c:' + b.color + '">' + esc(b.name) + '</h3>';
       if (hasSub) {
         b.children.forEach(function (sub) {
-          html += '<h4 class="att-sub-title" style="--c:' + b.color + '">' + esc(sub.name) + '</h4>';
+          // 仅「别误杀 · 这些反而常中选」子标题置顶，其余子标题照常
+          var stop = (sub.name.indexOf('别误杀') >= 0) ? ' att-sub-title-top' : '';
+          html += '<h4 class="att-sub-title' + stop + '" style="--c:' + b.color + '">' + esc(sub.name) + '</h4>';
           (sub.children || []).forEach(function (l) {
             html += '<div class="leaf-row">' + leafText(l.name) + '</div>';
           });
