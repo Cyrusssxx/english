@@ -22,6 +22,28 @@
             background: var(--card); border: 1px solid var(--border); border-radius: 10px;
             padding: 12px 16px; margin: 0 0 16px;
         }
+        /* 左两行 + 右整块：第 4 栏跨两行占满右侧，左侧上排放前两栏、下排放第 3 栏
+           注意：必须用 .mm-cols.mm-cols-attitude 双类选择器——单类特异性低于后面的 .mm-cols{display:flex}，会被覆盖 */
+        .mm-cols.mm-cols-attitude {
+            display: grid;
+            grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr) minmax(480px, 2fr);
+            grid-template-areas: "c1 c2 c4" "c3 c3 c4";
+            gap: 14px; align-items: start; overflow-x: visible;
+        }
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(1) { grid-area: c1; }
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(2) { grid-area: c2; }
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(3) { grid-area: c3; }
+        .mm-cols.mm-cols-attitude > .mm-col:nth-child(4) { grid-area: c4; }
+        .mm-cols.mm-cols-attitude > .mm-col { flex: none; min-width: 0; }
+        .mm-cols.mm-cols-attitude > .mm-col-split { flex: none; min-width: 0; }
+        @media (max-width: 1100px) {
+            /* 窄屏退化：全部单列纵向排列，避免挤压 */
+            .mm-cols.mm-cols-attitude {
+                display: flex; flex-wrap: wrap; grid-template-areas: none;
+            }
+            .mm-cols.mm-cols-attitude > .mm-col { flex: 1 1 260px; min-width: 260px; }
+            .mm-cols.mm-cols-attitude > .mm-col-split { flex: 1 1 540px; min-width: 300px; }
+        }
         .mm-cols { display: flex; gap: 14px; align-items: flex-start; overflow-x: auto; padding-bottom: 10px; }
         .mm-col {
             flex: 1 1 0; min-width: 260px; background: var(--card);
@@ -89,7 +111,7 @@
 
     <main class="mm-page">
         <h1 class="mm-page-title">考研阅读方法导图</h1>
-        <p class="scroll-hint">横向滑动查看每一列 · 态度词 4 列 / 阅读一张纸 4 列（真题实测与题型均拆双列各占一半）</p>
+        <p class="scroll-hint">横向滑动查看每一列 · 态度词 5 列 / 阅读一张纸 4 列（真题实测与题型均拆双列各占一半）</p>
         <div class="mm-tools">
             <span class="mm-tools-tip">点任意条目即高亮标记 · 再点取消</span>
             <button type="button" class="mm-clear-btn" onclick="clearHighlights()">清除高亮</button>
