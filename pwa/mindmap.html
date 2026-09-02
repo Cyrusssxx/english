@@ -51,62 +51,9 @@
         .dark .leaf-row { background: #1f2937; }
         .leaf-row b { color: var(--c); font-weight: 700; }
         .leaf-row:hover { border-color: var(--c); }
-        .leaf-row {
-            display: flex; align-items: flex-start; gap: 6px; flex-wrap: wrap;
-            cursor: pointer; user-select: none; transition: background .15s, border-color .15s;
-        }
-        .leaf-row .leaf-text { flex: 1 1 auto; min-width: 0; }
+        .leaf-row { cursor: pointer; user-select: none; transition: background .15s, border-color .15s; }
         .leaf-row.hl { background: #ffe680 !important; border-color: #f59e0b !important; }
         .dark .leaf-row.hl { background: #6b5d1f !important; border-color: #f59e0b !important; }
-        .leaf-row.has-note { background: #fffbe6 !important; border-color: #f59e0b !important; }
-        .dark .leaf-row.has-note { background: #4a4320 !important; border-color: #f59e0b !important; }
-        .note-toggle {
-            flex: 0 0 auto; width: 24px; height: 24px; line-height: 1; margin-top: 1px;
-            border: 1px solid var(--border); background: var(--card); color: var(--text-light);
-            border-radius: 6px; cursor: pointer; font-size: .8rem; padding: 0; transition: all .15s;
-        }
-        .note-toggle:hover { border-color: var(--primary); color: var(--primary); }
-        .note-toggle.active { background: #fff3a3; border-color: #f59e0b; }
-        .dark .note-toggle.active { background: #6b5e1a; }
-        .note-panel {
-            flex-basis: 100%; margin-top: 8px; padding: 10px 12px;
-            background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-        }
-        .note-toolbar { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; padding: 4px 2px 8px; border-bottom: 1px dashed var(--border); }
-        .note-toolbar button {
-            background: none; border: 1px solid transparent; color: var(--text-light);
-            cursor: pointer; width: 26px; height: 26px; border-radius: 4px; font-size: .85rem; padding: 0;
-        }
-        .note-toolbar button:hover { border-color: var(--border); background: rgba(128,128,128,.08); }
-        .note-toolbar button[data-cmd="h1"], .note-toolbar button[data-cmd="h2"], .note-toolbar button[data-cmd="clear"] { width: auto; padding: 0 8px; font-weight: 600; }
-        .note-toolbar-sep { display: inline-block; width: 1px; height: 18px; background: var(--border); margin: 0 4px; }
-        .note-hl-dot { display: inline-block; width: 20px; height: 20px; border-radius: 50%; border: 1px solid rgba(128,128,128,.3); cursor: pointer; transition: transform .1s; }
-        .note-hl-dot:hover { transform: scale(1.15); }
-        .note-input {
-            width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px;
-            font-size: .88rem; font-family: inherit; min-height: 54px; line-height: 1.5;
-            word-break: break-word; white-space: pre-wrap;
-        }
-        .note-input:focus { outline: none; border-color: var(--primary); }
-        .note-input:empty::before, .note-input.is-empty::before {
-            content: attr(data-placeholder); color: var(--text-light); opacity: .6; pointer-events: none;
-        }
-        .note-input h1 { font-size: 1.2rem; font-weight: 700; margin: .3em 0 .15em; }
-        .note-input h2 { font-size: 1.05rem; font-weight: 700; margin: .3em 0 .15em; }
-        .note-input p { margin: .2em 0; }
-        .note-input blockquote { border-left: 3px solid var(--border); margin: .3em 0; padding-left: 8px; color: var(--text-light); }
-        .note-input .hl-yellow, .note-input [style*="background:#fff3a3"] { background: #fff3a3 !important; }
-        .note-input .hl-green, .note-input [style*="background:#b8e6c0"] { background: #b8e6c0 !important; }
-        .note-input .hl-blue, .note-input [style*="background:#b3d9f2"] { background: #b3d9f2 !important; }
-        .note-input .hl-pink, .note-input [style*="background:#f5c2d5"] { background: #f5c2d5 !important; }
-        .note-actions { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
-        .note-save-btn {
-            font: inherit; font-size: .82rem; padding: 5px 14px; border-radius: 8px;
-            border: 1px solid var(--primary); background: var(--primary); color: #fff; cursor: pointer;
-        }
-        .note-save-btn.saved { opacity: .5; }
-        .note-hint { font-size: .8rem; color: #16a34a; }
-        .dark .note-hint { color: #4ade80; }
         .mm-tools { display: flex; align-items: center; gap: 14px; margin: 0 0 14px; flex-wrap: wrap; }
         .mm-tools-tip { color: var(--text-light); font-size: .82rem; }
         .mm-clear-btn {

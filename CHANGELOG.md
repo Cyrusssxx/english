@@ -1,12 +1,5 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
-## [2026-09-02 新增] 方法导图接入「每题笔记」富文本功能（跨项目复用 408-quiz）
-
-- **需求**：把 408-quiz 的「每题富文本笔记」功能（见 `D:\ai code\408-quiz\笔记功能跨项目复用.md`）追加到方法导图。
-- **实现**：`pwa/js/mindmap.js` 给每个 `.leaf-row` 加稳定 `data-nid`（路径式 `mapId/分支名/序号`）+ 📝 按钮；点击内联展开 `.note-panel` 富文本编辑器（加粗/斜体/H1/H2/4 色高亮/清除格式、Ctrl+B/I 快捷键、停顿 800ms 自动保存 + 手动保存）；笔记存 `localStorage`（键 `mm_notes_v1`，按 nid 索引）；有笔记的条目渲染 `has-note` 高亮边框 + 按钮 active。复用 408-quiz 的白名单 `sanitizeNoteHtml`（装载时清洗防 XSS）、`serializeNote`/`loadNoteIntoEditor` 等。无后端依赖（原 408-quiz 用 `/api/note` + IndexedDB，此处改 localStorage，与高亮一致）。
-- **注意**：修复 `leafRow` 调用时重复拼 `mapId` 导致 nid 错乱（如 `attitudeattitude/...`），改为只用 `p`（已含 mapId）。
-- **验证**：jsdom 实跑确认 132 条目均带 nid+按钮、预置笔记渲染 has-note、点开建编辑器（9 按钮+4 色点）、保存入 localStorage、清空即删；XSS 载荷（`<script>`/`<img onerror>`）在装载时被 sanitize 剥离。
-
 ## [2026-08-26 新增] 方法导图支持条目高亮标记
 
 - **需求**：用户要求方法导图「可以高亮」。

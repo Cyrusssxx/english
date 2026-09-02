@@ -422,30 +422,16 @@
     return esc(t);
   }
 
-  function hasNote(nid) {
-    return !!(notesCache[nid] && notesCache[nid].trim());
-  }
-
-  function leafRow(name, nid) {
-    var cls = 'leaf-row' + (hasNote(nid) ? ' has-note' : '');
-    return '<div class="' + cls + '" data-nid="' + esc(nid) + '">' +
-      '<span class="leaf-text">' + leafText(name) + '</span>' +
-      '<button type="button" class="note-toggle' + (hasNote(nid) ? ' active' : '') + '" title="写笔记" aria-label="写笔记">📝</button>' +
-      '<div class="note-panel" hidden></div>' +
-      '</div>';
-  }
-
-  function renderItems(items, color, mapId, prefix) {
+  function renderItems(items, color) {
     var html = '<div class="branch-body">';
-    items.forEach(function (it, i) {
-      var p = prefix + '/' + i;
+    items.forEach(function (it) {
       if (it.children && it.children.length) {
         html += '<div class="sub" style="--c:' + color + '">';
         html += '<div class="sub-title">' + esc(it.name) + '</div>';
-        html += renderItems(it.children, color, mapId, p);
+        html += renderItems(it.children, color);
         html += '</div>';
       } else {
-        html += leafRow(it.name, p);
+        html += '<div class="leaf-row">' + leafText(it.name) + '</div>';
       }
     });
     html += '</div>';
@@ -453,17 +439,16 @@
   }
 
   // 拆分列：将分支的子项直接铺进 N 列网格（每个子项是一个网格单元，不再被整包 .branch-body）
-  function renderSplitItems(items, color, mapId, prefix) {
+  function renderSplitItems(items, color) {
     var html = '<div class="mm-split">';
-    items.forEach(function (it, i) {
-      var p = prefix + '/' + i;
+    items.forEach(function (it) {
       if (it.children && it.children.length) {
         html += '<div class="sub" style="--c:' + color + '">';
         html += '<div class="sub-title">' + esc(it.name) + '</div>';
-        html += renderItems(it.children, color, mapId, p);
+        html += renderItems(it.children, color);
         html += '</div>';
       } else {
-        html += leafRow(it.name, p);
+        html += '<div class="leaf-row">' + leafText(it.name) + '</div>';
       }
     });
     html += '</div>';
@@ -476,10 +461,9 @@
     html += '<div class="mm-cols">';
     map.branches.forEach(function (b) {
       var colCls = b.split ? 'mm-col mm-col-split' : 'mm-col';
-      var pfx = map.id + '/' + b.name;
       html += '<div class="' + colCls + '" style="--c:' + b.color + '">';
       html += '<div class="mm-col-head">' + esc(b.name) + '</div>';
-      html += b.split ? renderSplitItems(b.children, b.color, map.id, pfx) : renderItems(b.children, b.color, map.id, pfx);
+      html += b.split ? renderSplitItems(b.children, b.color) : renderItems(b.children, b.color);
       html += '</div>';
     });
     html += '</div>';
@@ -498,10 +482,7 @@
   function saveHL() {
     try { localStorage.setItem(HL_KEY, JSON.stringify(Array.from(hlSet))); } catch (e) {}
   }
-  function rowKey(row) {
-    var t = row.querySelector('.leaf-text');
-    return t ? t.textContent : row.textContent;
-  }
+  function rowKey(row) { return row.textContent; }
 
   function restoreHL() {
     if (!content) return;
@@ -511,11 +492,7 @@
     }
   }
   function onContentClick(e) {
-    if (!e.target.closest) return;
-    if (e.target.closest('.note-panel')) return;        // 编辑器内交互不触发高亮
-    var toggle = e.target.closest('.note-toggle');
-    if (toggle) { toggleNote(toggle); return; }
-    var row = e.target.closest('.leaf-row');
+    var row = e.target.closest ? e.target.closest('.leaf-row') : null;
     if (!row) return;
     var k = rowKey(row);
     if (hlSet.has(k)) { hlSet.delete(k); row.classList.remove('hl'); }
@@ -531,223 +508,6 @@
       for (var i = 0; i < rows.length; i++) rows[i].classList.remove('hl');
     }
   };
-
-  // ==================== 笔记（富文本，localStorage 持久化，复用 408-quiz 笔记功能） ====================
-  var NOTES_KEY = 'mm_notes_v1';
-  var notesCache = loadNotes();
-
-  function loadNotes() {
-    try { return JSON.parse(localStorage.getItem(NOTES_KEY) || '{}'); } catch (e) { return {}; }
-  }
-  function persistNotes() {
-    try { localStorage.setItem(NOTES_KEY, JSON.stringify(notesCache)); } catch (e) {}
-  }
-  function saveNoteStore(nid, html) {
-    if (html && html.trim()) notesCache[nid] = html; else delete notesCache[nid];
-    persistNotes();
-  }
-
-  // ---- 白名单 sanitize（防 XSS） ----
-  var NOTE_ALLOWED_TAGS = new Set(['B', 'I', 'U', 'STRONG', 'EM', 'H1', 'H2', 'H3', 'P', 'BR', 'DIV', 'SPAN', 'UL', 'OL', 'LI', 'BLOCKQUOTE']);
-  var NOTE_ALLOWED_CLASS_RE = /^(hl-|note-hl-)?(yellow|green|blue|pink)$/;
-
-  function sanitizeNoteHtml(html) {
-    if (!html) return '';
-    if (html.indexOf('<') < 0) return '';
-    var t = document.createElement('template');
-    t.innerHTML = html;
-    (function walk(node) {
-      var children = [].slice.call(node.childNodes);
-      for (var i = 0; i < children.length; i++) {
-        var c = children[i];
-        if (c.nodeType === 1) {
-          if (!NOTE_ALLOWED_TAGS.has(c.tagName)) {
-            while (c.firstChild) node.insertBefore(c.firstChild, c);
-            node.removeChild(c);
-          } else {
-            var attrs = [].slice.call(c.attributes);
-            for (var j = 0; j < attrs.length; j++) {
-              var a = attrs[j];
-              if (a.name === 'style') {
-                var ok = a.value.split(';').map(function (s) { return s.trim(); }).filter(function (s) {
-                  var m = s.match(/^([a-z-]+):/);
-                  return m && (m[1] === 'color' || m[1] === 'background-color' || m[1] === 'background');
-                });
-                if (ok.length) c.setAttribute('style', ok.join('; ')); else c.removeAttribute('style');
-              } else if (a.name === 'class') {
-                if (!NOTE_ALLOWED_CLASS_RE.test(a.value)) c.removeAttribute('class');
-              } else {
-                c.removeAttribute(a.name);
-              }
-            }
-            walk(c);
-          }
-        } else if (c.nodeType === 8) {
-          c.remove();
-        }
-      }
-    })(t.content);
-    return t.innerHTML;
-  }
-  function isHtmlNote(s) {
-    return /<(b|i|u|strong|em|h[1-3]|p|br|div|span|ul|ol|li|blockquote)\b/i.test(s);
-  }
-  function loadNoteIntoEditor(el, raw) {
-    if (!el) return;
-    el.innerHTML = '';
-    if (!raw) { updateNotePlaceholder(el); return; }
-    if (isHtmlNote(raw)) el.innerHTML = sanitizeNoteHtml(raw);
-    else el.innerHTML = sanitizeNoteHtml(raw.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>'));
-    updateNotePlaceholder(el);
-  }
-  function serializeNote(el) {
-    if (!el) return '';
-    var text = (el.textContent || '').replace(/ /g, ' ').trim();
-    if (!text) return '';
-    return el.innerHTML;
-  }
-  function updateNotePlaceholder(el) {
-    if (!el) return;
-    var text = (el.textContent || '').trim();
-    el.classList.toggle('is-empty', !text);
-  }
-
-  // ---- 工具条 / 高亮 / 清除格式 ----
-  function applyNoteHighlight(el, color) {
-    var sel = window.getSelection();
-    if (!sel || sel.isCollapsed || !sel.rangeCount) return;
-    var range = sel.getRangeAt(0);
-    if (!el.contains(range.startContainer) || !el.contains(range.endContainer)) return;
-    var ok = document.execCommand('hiliteColor', false, ({ yellow: '#fff3a3', green: '#b8e6c0', blue: '#b3d9f2', pink: '#f5c2d5' })[color]);
-    if (ok) return;
-    try {
-      var span = document.createElement('span');
-      span.className = 'hl hl-' + color;
-      span.appendChild(range.extractContents());
-      range.insertNode(span);
-    } catch (e) {}
-  }
-  function clearNoteFormat(el) {
-    el.focus();
-    var sel = window.getSelection();
-    if (!sel || sel.rangeCount === 0) return;
-    document.execCommand('removeFormat');
-    try { document.execCommand('formatBlock', false, 'P'); } catch (e) {}
-    stripNoteHighlight(sel.getRangeAt(0), el);
-  }
-  function stripNoteHighlight(range, root) {
-    var all = root.querySelectorAll('*');
-    for (var i = 0; i < all.length; i++) {
-      var s = all[i];
-      if (!range.intersectsNode(s)) continue;
-      if (s.style && (s.style.backgroundColor || s.style.background)) {
-        s.style.backgroundColor = '';
-        s.style.background = '';
-        if (s.getAttribute('style') === '') s.removeAttribute('style');
-      }
-      if (s.classList && s.classList.contains('hl')) {
-        var p = s.parentNode;
-        while (s.firstChild) p.insertBefore(s.firstChild, s);
-        p.removeChild(s);
-      }
-    }
-  }
-  function bindNoteToolbar(el, panel, nid) {
-    var tb = panel.querySelector('.note-toolbar');
-    if (!tb || tb.dataset.bound) return;
-    tb.dataset.bound = '1';
-    tb.addEventListener('mousedown', function (e) { e.preventDefault(); });
-    tb.addEventListener('click', function (e) {
-      var btn = e.target.closest('[data-cmd]');
-      if (!btn) return;
-      el.focus();
-      var cmd = btn.dataset.cmd;
-      if (cmd === 'bold') document.execCommand('bold');
-      else if (cmd === 'italic') document.execCommand('italic');
-      else if (cmd === 'h1') document.execCommand('formatBlock', false, 'H1');
-      else if (cmd === 'h2') document.execCommand('formatBlock', false, 'H2');
-      else if (cmd === 'hl') applyNoteHighlight(el, btn.dataset.color);
-      else if (cmd === 'clear') clearNoteFormat(el);
-      debouncedSave(el, panel, nid);
-    });
-    el.addEventListener('keydown', function (e) {
-      if (!(e.ctrlKey || e.metaKey)) return;
-      if (e.key === 'b' || e.key === 'B') { e.preventDefault(); document.execCommand('bold'); debouncedSave(el, panel, nid); }
-      else if (e.key === 'i' || e.key === 'I') { e.preventDefault(); document.execCommand('italic'); debouncedSave(el, panel, nid); }
-    });
-    el.addEventListener('input', function () { updateNotePlaceholder(el); debouncedSave(el, panel, nid); });
-    el.addEventListener('blur', function () { updateNotePlaceholder(el); });
-  }
-  function debouncedSave(el, panel, nid) {
-    clearTimeout(el._t);
-    el._t = setTimeout(function () { doSaveNote(panel, nid, true); }, 800);
-  }
-
-  function buildEditor(panel, nid) {
-    panel.innerHTML =
-      '<div class="note-toolbar">' +
-        '<button type="button" data-cmd="bold" title="加粗 (Ctrl+B)"><b>B</b></button>' +
-        '<button type="button" data-cmd="italic" title="斜体 (Ctrl+I)"><i>I</i></button>' +
-        '<span class="note-toolbar-sep"></span>' +
-        '<button type="button" data-cmd="h1" title="大标题">H1</button>' +
-        '<button type="button" data-cmd="h2" title="中标题">H2</button>' +
-        '<span class="note-toolbar-sep"></span>' +
-        '<span class="note-hl-dot" data-cmd="hl" data-color="yellow" title="黄高亮" style="background:#fff3a3"></span>' +
-        '<span class="note-hl-dot" data-cmd="hl" data-color="green" title="绿高亮" style="background:#b8e6c0"></span>' +
-        '<span class="note-hl-dot" data-cmd="hl" data-color="blue" title="蓝高亮" style="background:#b3d9f2"></span>' +
-        '<span class="note-hl-dot" data-cmd="hl" data-color="pink" title="粉高亮" style="background:#f5c2d5"></span>' +
-        '<span class="note-toolbar-sep"></span>' +
-        '<button type="button" data-cmd="clear" title="清除格式">⌫ 清除</button>' +
-      '</div>' +
-      '<div class="note-input" contenteditable="true" spellcheck="false" data-placeholder="写点笔记…（Ctrl+V 可粘贴截图；停顿自动保存；清空保存即删除）"></div>' +
-      '<div class="note-actions">' +
-        '<button type="button" class="note-save-btn">保存</button>' +
-        '<span class="note-hint"></span>' +
-      '</div>';
-    var input = panel.querySelector('.note-input');
-    loadNoteIntoEditor(input, notesCache[nid] || '');
-    bindNoteToolbar(input, panel, nid);
-    panel.querySelector('.note-save-btn').addEventListener('click', function () { doSaveNote(panel, nid, false); });
-  }
-
-  function doSaveNote(panel, nid, isAuto) {
-    var input = panel.querySelector('.note-input');
-    if (!input) return;
-    var contentHtml = serializeNote(input);
-    saveNoteStore(nid, contentHtml);
-    var row = panel.closest('.leaf-row');
-    if (row) {
-      row.classList.toggle('has-note', !!contentHtml);
-      var toggle = row.querySelector('.note-toggle');
-      if (toggle) toggle.classList.toggle('active', !!contentHtml);
-    }
-    var hint = panel.querySelector('.note-hint');
-    if (hint) {
-      hint.textContent = contentHtml ? (isAuto ? '已自动保存 ✓' : '已保存 ✓') : '已清空笔记';
-      setTimeout(function () { if (hint) hint.textContent = ''; }, 2000);
-    }
-    var btn = panel.querySelector('.note-save-btn');
-    if (btn) btn.classList.toggle('saved', !!contentHtml);
-  }
-
-  function toggleNote(btn) {
-    var row = btn.closest('.leaf-row');
-    if (!row) return;
-    var panel = row.querySelector('.note-panel');
-    var nid = row.dataset.nid;
-    if (panel.hidden) {
-      if (!panel.dataset.built) {
-        buildEditor(panel, nid);
-        panel.dataset.built = '1';
-      }
-      panel.hidden = false;
-      var input = panel.querySelector('.note-input');
-      if (input) input.focus();
-    } else {
-      doSaveNote(panel, nid, false);
-      panel.hidden = true;
-    }
-  }
 
   function init() {
     content = document.getElementById('mmContent');
