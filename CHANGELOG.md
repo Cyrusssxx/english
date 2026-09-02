@@ -1,5 +1,10 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-03 改版] 态度词改 CSS 多栏自动填满
+
+- 弃用 `mm-cols-attitude` 两排 grid（右下空格 + 列高差造成大片留白）。新增 `renderAttitude()` 输出 `.att-flow`：CSS `column-width:300px` 多栏流，5 分支作栏内大标题（色条）、子分组作次标题、46 条单词流式铺栏自动占满不留空；`break-inside:avoid` 防条目/标题跨栏截断；窄屏(<640)收单栏。`renderMap` 按 `map.id==='attitude'` 分派，reading 等仍 `mm-cols` 横排。
+- 提交 `d556c6c`（push main）；SW `en2-a540762f`。json 数据未动（仅改渲染 + CSS）。
+
 ## [2026-09-03 回退] 撤掉「态度词单张纵向大卡」，回到两排 grid
 
 - 用户对 `b7e8d96`（态度词改单张纵向大卡 `renderAttitude`/`.mm-single`）不满意，回退到 `b8aaa5a`（两排 grid：第一排零中选两列、第二排其余 + 低频并入铁证卡内拆两列垫底）。
