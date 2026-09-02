@@ -1,14 +1,5 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
-## [2026-09-03 重构] 态度词改为「单张纵向大卡」
-
-- **需求**：态度词之前两排 grid 仍被嫌乱，用户要「全部塞到零中选·中频下面、塞满」→ 最终确认**把所有内容收进一张纵向大卡**。
-- **实现**：`pwa/js/mindmap.js` 新增 `renderAttitude()`：attitude 不再用 `mm-cols` 多列横排（放弃之前的 `.mm-cols-attitude` grid），改为输出 `.mm-single` 单卡——每个 branch 是一个纵向分区 `.az`（左色条标题），子分组显示为 `.az-sub-title`，条目用 `.az-grid`（`repeat(auto-fill,minmax(230px,1fr))`）自适应多列铺满宽、省高度。`renderMap` 按 `map.id==='attitude'` 分派；其它图（reading 等）仍走 `mm-cols` 横排。
-- **CSS**：`pwa/mindmap.html` 删除旧 `.mm-cols-attitude` grid 规则，新增 `.mm-single/.az/.az-title/.az-sub/.az-grid`；窄屏 <640 分区单列。
-- **布局结果（一张大卡，自上而下）**：不符合价值观(9) → 感情色彩太过(4) → 零中选·中频[中频·2次](3) → 零中选·铁证+低频[铁证·高频/别误杀/低频·1次](27) → 模糊的(3)，共 46 条。
-- **验证**：jsdom 确认 attitude 用 `.mm-single`、5 分区、46 条无丢失；阅读一张纸仍 4 列横排。json 已反向同步。
-- **注**：低频率的 `full:true` 字段在单卡渲染下不再特判（leafGrid 天然多列），无害保留。
-
 ## [2026-09-03 调整] 态度词：低频并入铁证卡内、拆两列垫底 + 顶部对齐
 
 - **需求**：①「低频·1次」(14 条)太长，拆两列放到左侧「零中选·铁证」列下面；② attitude 各卡片块向上（顶部）对齐。

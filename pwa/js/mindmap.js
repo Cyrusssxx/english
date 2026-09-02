@@ -528,47 +528,12 @@
     return html;
   }
 
-  // 单张大卡内：把叶子条目铺成自适应多列（塞满宽度、省高度）
-  function leafGrid(leaves) {
-    var h = '<div class="az-grid">';
-    leaves.forEach(function (l) {
-      h += '<div class="leaf-row">' + leafText(l.name) + '</div>';
-    });
-    h += '</div>';
-    return h;
-  }
-  // 态度词专属：全部内容塞进一张纵向大卡，从上到下每个分支一个分区
-  function renderAttitude(branches) {
-    var html = '<div class="mm-single">';
-    branches.forEach(function (b) {
-      var hasSub = (b.children || []).some(function (c) { return c.children && c.children.length; });
-      html += '<section class="az" style="--c:' + b.color + '">';
-      html += '<h3 class="az-title">' + esc(b.name) + '</h3>';
-      if (hasSub) {
-        b.children.forEach(function (sub) {
-          html += '<div class="az-sub">';
-          html += '<h4 class="az-sub-title">' + esc(sub.name) + '</h4>';
-          html += leafGrid(sub.children);
-          html += '</div>';
-        });
-      } else {
-        html += leafGrid(b.children);
-      }
-      html += '</section>';
-    });
-    html += '</div>';
-    return html;
-  }
-
   function renderMap(map) {
     var html = '';
     if (map.intro) html += '<p class="map-intro">' + esc(map.intro) + '</p>';
-    // 态度词：全部塞进一张纵向大卡；其余图保持横向列
-    if (map.id === 'attitude') {
-      html += renderAttitude(map.branches);
-      return html;
-    }
-    html += '<div class="mm-cols">';
+    // 态度词图用「左两行 + 右整块」专属网格布局，其余图保持横向排列
+    var colsCls = map.id === 'attitude' ? 'mm-cols mm-cols-attitude' : 'mm-cols';
+    html += '<div class="' + colsCls + '">';
     map.branches.forEach(function (b) {
       var colCls = b.split ? 'mm-col mm-col-split' : 'mm-col';
       html += '<div class="' + colCls + '" style="--c:' + b.color + '">';
