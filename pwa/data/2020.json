@@ -1630,7 +1630,25 @@
               "w": "most polluting cars",
               "meaning": "污染最严重的汽车"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Madrid"
+              },
+              {
+                "r": "谓语",
+                "t": "was hailed as a public health guiding light"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "last November when it rolled out ambitious restrictions on the most polluting cars.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s02",
@@ -1650,7 +1668,28 @@
               "w": "termination",
               "meaning": "n. 终止，废除"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Seven months and one election day later,"
+              },
+              {
+                "r": "主语",
+                "t": "a new conservative city council"
+              },
+              {
+                "r": "谓语",
+                "t": "suspended enforcement of the clean air zone,"
+              },
+              {
+                "r": "同位语",
+                "t": "a first step toward its possible termination."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s03",
@@ -1670,7 +1709,24 @@
               "w": "election campaign",
               "meaning": "竞选运动"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Mayor Jose Luis Martinez-Almeida"
+              },
+              {
+                "r": "谓语",
+                "t": "made opposition to the zone a centrepiece of his election campaign,"
+              },
+              {
+                "r": "让步状语",
+                "t": "despite its success in improving air quality."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s04",
@@ -1730,7 +1786,30 @@
               "w": "city-by-city",
               "meaning": "各城市各自为政的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Madrid's back and forth on clean air"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "a pointed reminder of the limits to the patchwork, city-by-city approach"
+              },
+              {
+                "r": "定语从句",
+                "t": "that characterises efforts on air pollution across Europe, Britain very much included.",
+                "lead": "that",
+                "mod": "the patchwork, city-by-city approach"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s07",
@@ -1750,7 +1829,37 @@
               "w": "vulnerable",
               "meaning": "adj. 易受攻击的，脆弱的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Among other weaknesses,"
+              },
+              {
+                "r": "主语",
+                "t": "the measures cities must employ"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when left to tackle dirty air on their own",
+                "lead": "when"
+              },
+              {
+                "r": "谓语",
+                "t": "are politically controversial,"
+              },
+              {
+                "r": "并列",
+                "t": "and therefore"
+              },
+              {
+                "r": "表语",
+                "t": "vulnerable."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s08",
@@ -1770,7 +1879,30 @@
               "w": "cheating",
               "meaning": "n. 舞弊，作弊"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That's"
+              },
+              {
+                "r": "表语",
+                "t": "because they inevitably put the costs of cleaning the air on to individual drivers - who must pay fees or buy better vehicles -"
+              },
+              {
+                "r": "并列",
+                "t": "rather than on to the car manufacturers"
+              },
+              {
+                "r": "定语从句",
+                "t": "whose cheating is the real cause of our toxic pollution.",
+                "lead": "whose",
+                "mod": "the car manufacturers"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s09",
@@ -1806,7 +1938,20 @@
               "w": "mayoral election",
               "meaning": "市长选举"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The new ultra-low emission zone (Ulez)"
+              },
+              {
+                "r": "谓语",
+                "t": "is likely to be a big issue in next year's mayoral election."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s11",
@@ -1826,7 +1971,31 @@
               "w": "motorists",
               "meaning": "n. 汽车车主，开车的人"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "And if Sadiq Khan wins and extends it to the North and South Circular roads in 2021 as he intends,",
+                "lead": "if"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is sure to spark intense opposition from the far larger number of motorists"
+              },
+              {
+                "r": "定语从句",
+                "t": "who will then be affected.",
+                "lead": "who",
+                "mod": "motorists"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s12",
@@ -1842,7 +2011,21 @@
               "w": "useless",
               "meaning": "adj. 无用的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "not that measures such as London's Ulez are useless.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s13",
@@ -1874,7 +2057,34 @@
               "w": "serious threat",
               "meaning": "严重威胁"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Local officials"
+              },
+              {
+                "r": "谓语",
+                "t": "are using"
+              },
+              {
+                "r": "宾语",
+                "t": "the levers"
+              },
+              {
+                "r": "定语从句",
+                "t": "that are available to them",
+                "lead": "that",
+                "mod": "the levers"
+              },
+              {
+                "r": "目的状语",
+                "t": "to safeguard residents' health in the face of a serious threat."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s15",
@@ -1894,7 +2104,37 @@
               "w": "health benefits",
               "meaning": "健康收益"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The zones"
+              },
+              {
+                "r": "谓语",
+                "t": "do deliver some improvements to air quality,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "the science"
+              },
+              {
+                "r": "谓语",
+                "t": "tells us"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that means real health benefits.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s16",
@@ -1914,7 +2154,30 @@
               "w": "far bigger than",
               "meaning": "远大于"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "mayors and councilors"
+              },
+              {
+                "r": "谓语",
+                "t": "can only do so much about a problem"
+              },
+              {
+                "r": "定语从句",
+                "t": "that is far bigger than any one city or town.",
+                "lead": "that",
+                "mod": "a problem"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s17",
@@ -1934,7 +2197,25 @@
               "w": "do so",
               "meaning": "这样做"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "are acting"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "because national governments - Britain's and others across Europe - have failed to do so.",
+                "lead": "because"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s18",
@@ -1954,7 +2235,30 @@
               "w": "bring their vehicles into compliance",
               "meaning": "使其车辆合规"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Restrictions"
+              },
+              {
+                "r": "定语从句",
+                "t": "that keep highly polluting cars out of certain areas - city centres, \"school streets\", even individual roads -",
+                "lead": "that",
+                "mod": "Restrictions"
+              },
+              {
+                "r": "谓语",
+                "t": "are"
+              },
+              {
+                "r": "表语",
+                "t": "a response to the absence of a larger effort to properly enforce existing regulations and require auto companies to bring their vehicles into compliance."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text3_s19",
@@ -2158,7 +2462,25 @@
               "w": "rising steadily",
               "meaning": "稳步上升"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "Now that members of Generation Z are graduating college this spring - the most commonly-accepted definition says this generation was born after 1995, give or take a year -",
+                "lead": "that"
+              },
+              {
+                "r": "主语",
+                "t": "the attention"
+              },
+              {
+                "r": "谓语",
+                "t": "has been rising steadily in recent weeks."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s02",
@@ -2178,7 +2500,26 @@
               "w": "tighter",
               "meaning": "adj. 更紧俏的（劳动力供不应求）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Gen Zs"
+              },
+              {
+                "r": "谓语",
+                "t": "are about to hit the streets looking for work in a labor market"
+              },
+              {
+                "r": "定语从句",
+                "t": "that's tighter than it's been in decades.",
+                "lead": "that",
+                "mod": "a labor market"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s03",
@@ -2198,7 +2539,28 @@
               "w": "according to a survey",
               "meaning": "根据一项调查"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "主语",
+                "t": "employers"
+              },
+              {
+                "r": "谓语",
+                "t": "are planning on hiring about 17 percent more new graduates for jobs in the U.S. this year than last,"
+              },
+              {
+                "r": "状语",
+                "t": "according to a survey conducted by the National Association of Colleges and Employers."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s04",
@@ -2218,7 +2580,25 @@
               "w": "differ from",
               "meaning": "与……不同"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Everybody"
+              },
+              {
+                "r": "谓语",
+                "t": "wants to know"
+              },
+              {
+                "r": "宾语从句",
+                "t": "how the people who will soon inhabit those empty office cubicles will differ from those who came before them.",
+                "lead": "how"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s05",
@@ -2238,7 +2618,29 @@
               "w": "practical and cautious",
               "meaning": "讲求实际、谨慎小心"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If \"entitled\" is the most common adjective, fairly or not, applied to millennials (those born between 1981 and 1995),",
+                "lead": "if"
+              },
+              {
+                "r": "主语",
+                "t": "the catchwords for Generation Z"
+              },
+              {
+                "r": "谓语",
+                "t": "are"
+              },
+              {
+                "r": "表语",
+                "t": "practical and cautious."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s06",
@@ -2278,7 +2680,24 @@
               "w": "Despite",
               "meaning": "prep. 尽管"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语",
+                "t": "Despite graduating into the best economy in the past 50 years,"
+              },
+              {
+                "r": "主语",
+                "t": "Gen Zs"
+              },
+              {
+                "r": "谓语",
+                "t": "know what an economic train wreck looks like."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s08",
@@ -2298,7 +2717,30 @@
               "w": "life savings",
               "meaning": "毕生积蓄"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "were impressionable kids"
+              },
+              {
+                "r": "时间状语",
+                "t": "during the crash of 2008,"
+              },
+              {
+                "r": "定语从句",
+                "t": "when many of their parents lost their jobs or their life savings or both.",
+                "lead": "when",
+                "mod": "the crash of 2008"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s09",
@@ -2334,7 +2776,30 @@
               "w": "college debt",
               "meaning": "大学债务"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The booming economy"
+              },
+              {
+                "r": "谓语",
+                "t": "seems to have done little to assuage this underlying generational sense of anxious urgency,"
+              },
+              {
+                "r": "状语",
+                "t": "especially for those"
+              },
+              {
+                "r": "定语从句",
+                "t": "who have college debt.",
+                "lead": "who",
+                "mod": "those"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s11",
@@ -2354,7 +2819,24 @@
               "w": "Federal Reserve",
               "meaning": "美联储"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "College loan balances in the U.S."
+              },
+              {
+                "r": "谓语",
+                "t": "now stand at a record $1.5 trillion,"
+              },
+              {
+                "r": "状语",
+                "t": "according to the Federal Reserve."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s12",
@@ -2374,7 +2856,25 @@
               "w": "with a job in mind",
               "meaning": "心中有明确的工作目标"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "One survey from Accenture"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that 88 percent of graduating seniors this year chose their major with a job in mind.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s13",
@@ -2394,7 +2894,33 @@
               "w": "professional development",
               "meaning": "职业发展"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In a 2019 survey of University of Georgia students, meanwhile,"
+              },
+              {
+                "r": "主语",
+                "t": "the career office"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语",
+                "t": "the most desirable trait in a future employer"
+              },
+              {
+                "r": "表语",
+                "t": "was the ability to offer secure employment (followed by professional development and training, and then inspiring purpose).",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s14",
@@ -2414,7 +2940,24 @@
               "w": "the greater good",
               "meaning": "宏大高尚的事业，更大的公共利益"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Job security or stability"
+              },
+              {
+                "r": "谓语",
+                "t": "was the second most important career goal (work-life balance was number one),"
+              },
+              {
+                "r": "分词短语",
+                "t": "followed by a sense of being dedicated to a cause or to feel good about serving the greater good."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s15",
@@ -2450,7 +2993,38 @@
               "w": "apply to American youth",
               "meaning": "适用于美国青年"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Millennials wanted more flexibility in their lives,\""
+              },
+              {
+                "r": "谓语",
+                "t": "notes"
+              },
+              {
+                "r": "主语",
+                "t": "Tanya Michelsen,"
+              },
+              {
+                "r": "同位语",
+                "t": "Associate Director of YouthSight,"
+              },
+              {
+                "r": "定语从句",
+                "t": "a UK-based brand manager that conducts regular 60-day surveys of British youth,",
+                "lead": "that",
+                "mod": "a UK-based brand manager"
+              },
+              {
+                "r": "状语",
+                "t": "in findings that might just as well apply to American youth."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text4_s17",
