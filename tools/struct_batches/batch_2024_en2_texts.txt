@@ -1,0 +1,208 @@
+# 2024 英二 Text1-4 长难句结构 · 批次1 (text1+text2, 28句)
+# 行格式: <深度>|<角色>|<文本>[|lead:引导词][|mod:修饰对象]   sid 行不带 |
+
+2024_text1_s01
+1|状语|In her new book Cogs and Monsters: What Economics Is, and What It Should Be,
+1|主语|Diane Coyle,
+1|同位语|an economist at Cambridge University,
+1|谓语|argues
+1|宾语从句|that the digital economy requires new ways of thinking about progress.|lead:that
+
+2024_text1_s02
+1|状语从句|"Whatever we mean by the economy growing, by things getting better,|lead:Whatever
+1|主语|the gains
+1|谓语|will have to be more evenly shared
+1|状语|than in the recent past,"
+1|插入语|she writes.
+
+2024_text1_s03
+1|主语|"An economy of tech millionaires or billionaires and gig workers,
+1|状语|with middle-income jobs undercut by automation,
+1|谓语|will not be politically sustainable."
+
+2024_text1_s04
+1|主语|Improving living standards and increasing prosperity for more people
+1|谓语|will require
+1|宾语|greater use of digital technologies to boost productivity in various sectors,
+1|举例|including health care and construction,|mod:various sectors
+1|插入语|says Coyle.
+
+2024_text1_s05
+1|并列|But
+1|主语|people
+1|谓语|can't be expected
+1|宾语|to embrace the changes
+1|状语从句|if they're not seeing the benefits—if they're just seeing good jobs being destroyed.|lead:if
+
+2024_text1_s06
+1|状语|In a recent interview,
+1|主语|Coyle
+1|谓语|said
+1|宾语从句|she fears
+2|宾语从句|that tech's inequality problem could be a roadblock to deploying AI.|lead:that
+
+2024_text1_s07
+1|宾语|"We're talking about disruption,"
+1|插入语|she says.
+1|主语|"These
+1|谓语|are
+1|表语|transformative technologies
+2|定语从句|that change the ways we spend our time every day,|lead:that
+2|定语从句|that change business models|lead:that|mod:transformative technologies
+3|定语从句|that succeed."|lead:that|mod:business models
+
+2024_text1_s09
+1|状语|Instead,
+1|插入语|says Coyle,
+1|主语|resentment
+1|谓语|is simmering
+1|状语|among many
+1|状语从句|as the benefits are perceived to go to elites in a handful of prosperous cities.|lead:as
+
+2024_text1_s10
+1|状语|According to the Brookings Institution,
+1|主语|a short list of eight American cities
+2|定语从句|that included San Francisco, San Jose, Boston, and Seattle|lead:that|mod:cities
+1|谓语|had
+1|宾语|roughly 38% of all tech jobs
+1|状语|by 2019.
+
+2024_text1_s11
+1|主语|New AI technologies
+1|谓语|are particularly concentrated:
+1|主语|Brookings's Mark Muro and Sifan Liu
+1|谓语|estimate
+1|宾语从句|that just 15 cities account for two-thirds of the AI assets and capabilities in the United States.|lead:that
+
+2024_text1_s12
+1|主语|The dominance of a few cities in the invention and commercialization of AI
+1|谓语|means
+1|宾语从句|that geographical disparities in wealth will continue to soar.|lead:that
+
+2024_text1_s13
+1|并列|Not only
+1|谓语|will
+1|主语|this
+1|谓语|foster
+1|宾语|political and social unrest,
+1|并列|but
+1|主语|it
+1|谓语|could,
+1|插入语|as Coyle suggests,
+1|谓语|hold back
+1|宾语|the sorts of AI technologies
+2|定语|needed for regional economies to grow.
+
+2024_text1_s14
+1|主语|Part of the solution
+1|谓语|could lie in
+1|宾语|somehow loosening the stranglehold
+2|定语从句|that Big Tech has on defining the AI agenda.|lead:that|mod:the stranglehold
+
+2024_text1_s16
+1|主语|A more immediate response
+1|谓语|is
+1|表语|to broaden our digital imaginations
+1|目的状语|to conceive of AI technologies
+2|定语从句|that don't simply replace jobs but expand opportunities in the sectors|lead:that|mod:AI technologies
+3|定语从句|that different parts of the country care most about,|lead:that|mod:the sectors
+2|举例|like health care, education, and manufacturing.|mod:the sectors
+
+2024_text2_s01
+1|主语|The UK
+1|谓语|is facing
+1|宾语|a future construction crisis
+1|状语|because of a failure to plant trees to produce wood,
+1|插入语|Confor has warned.
+
+2024_text2_s02
+1|主语|The forestry and wood trade body
+1|谓语|has called for
+1|宾语|urgent action
+1|目的状语|to reduce the country's reliance on timber imports and provide a stable supply of wood for future generations.
+
+2024_text2_s03
+1|状语|Currently
+1|主语|only 20 per cent of the UK's wood requirement
+1|谓语|is home-grown
+1|状语从句|while it remains the second-largest net importer of timber in the world.|lead:while
+
+2024_text2_s04
+1|状语|Coming at a time of fresh incentives from the UK government for landowners to grow more trees,
+1|主语|the trade body
+1|谓语|says
+1|宾语从句|these don't go far enough and fail to promote the benefits of planting them
+2|目的状语|to boost timber supplies.
+
+2024_text2_s05
+1|状语|"Not only
+1|谓语|are
+1|主语|we
+1|谓语|facing
+1|宾语|a carbon crisis
+1|状语|now,
+1|并列|but
+1|主语|we
+1|谓语|will also be facing
+1|宾语|a future construction crisis
+1|状语|because of a failure to plant trees to produce wood,"
+1|插入语|said Stuart Goodall, chief executive of Confor.
+
+2024_text2_s06
+1|状语|"For decades
+1|主语|we
+1|谓语|have not taken
+1|宾语|responsibility for investing in our domestic wood supply,
+1|状语|leaving us exposed to fluctuating prices and fighting for future supplies of wood
+1|状语从句|as global demand rises and our own supplies fall."|lead:as
+
+2024_text2_s07
+1|主语|The UK
+1|谓语|has
+1|宾语|ideal conditions for growing wood to build low-carbon homes
+1|并列|and
+1|谓语|is
+1|表语|a global leader in certifying
+2|宾语从句|that its forests are sustainably managed,|lead:that
+1|插入语|Confor says.
+
+2024_text2_s08
+1|状语从句|While around three quarters of Scottish homes are built from Scottish timber,|lead:While
+1|主语|the use of home-grown wood in England
+1|谓语|is
+1|表语|only around 25 per cent.
+
+2024_text2_s09
+1|主语|The causes of the UK's current position
+1|谓语|are complex and range from outdated perceptions of productive forestry to the decimation of trees by grey squirrels.
+
+2024_text2_s10
+1|主语|It
+1|状语|also
+1|谓语|encompasses
+1|宾语|significant hesitation on behalf of farmers and other landowners to invest in longer-term planting projects.
+
+2024_text2_s11
+1|状语从句|While productive tree planting can deliver real financial benefits to rural economies and contribute to the UK's net-zero strategy,|lead:While
+1|主语|the focus of government support
+1|谓语|continues to be on food production and the rewilding and planting of native woodland
+1|状语|solely for biodiversity.
+
+2024_text2_s12
+1|主语|Goodall
+1|谓语|added:
+1|状语从句|"While food production and biodiversity health are clearly of critical importance,|lead:While
+1|主语|we
+1|谓语|need
+1|宾语|our land to also provide secure supplies of wood for construction, manufacturing and contribute to net zero."
+
+2024_text2_s13
+1|状语从句|While the UK government has stated its ambition for more tree planting,|lead:While
+1|谓语|there has been
+1|主语|little action on the ground.
+
+2024_text2_s14
+1|主语|Confor
+1|谓语|is now calling for
+1|宾语|much greater impetus behind those aspirations
+1|目的状语|to ensure we have enough wood to meet increasing demand.
