@@ -2744,17 +2744,17 @@ html.dark .ui-input { background: #1e293b; color: #e2e8f0; border-color: #475569
 
 /* ===== 句子信号染色 + 结构树（精翻页） ===== */
 .sig-trans { background: #FCEBEB; color: #A32D2D; border-radius: 6px; padding: 0 4px; font-weight: 500; }
-.sig-caus { background: #EAF3DE; color: #3B6D11; border-radius: 6px; padding: 0 4px; }
-.sig-lead { background: #FAC775; color: #633806; border-radius: 6px; padding: 0 3px; font-size: 0.92em; }
-.sig-ref { color: #534AB7; border-bottom: 1px dashed #AFA9EC; }
-.sig-mod { color: var(--text-light); }
-.sig-trunk { background: #E1F5EE; color: #085041; font-weight: 500; border-radius: 6px; padding: 0 4px; }
+.sig-caus { background: #DCEFC2; color: #2E5A0D; border-radius: 6px; padding: 0 4px; font-weight: 500; }
+.sig-lead { background: #FAC775; color: #633806; border-radius: 6px; padding: 0 3px; font-size: 0.92em; font-weight: 500; }
+.sig-ref { background: #EEEDFE; color: #534AB7; border-radius: 6px; padding: 0 4px; }
+.sig-mod { background: #F1EFE8; color: #5F5E5A; border-radius: 6px; padding: 0 4px; }
+.sig-trunk { background: #C9EBDD; color: #085041; font-weight: 500; border-radius: 6px; padding: 0 4px; }
 .sig-cls { color: #185FA5; }
 .dark .sig-trans { background: #501313; color: #F7C1C1; }
 .dark .sig-caus { background: #27500A; color: #C0DD97; }
 .dark .sig-lead { background: #633806; color: #FAC775; }
-.dark .sig-ref { color: #AFA9EC; border-bottom-color: #534AB7; }
-.dark .sig-mod { color: var(--text-light); }
+.dark .sig-ref { background: #3C3489; color: #CECBF6; }
+.dark .sig-mod { background: #444441; color: #D3D1C7; }
 .dark .sig-trunk { background: #085041; color: #9FE1CB; }
 .dark .sig-cls { color: #85B7EB; }
 .trunkline { margin: 6px 0 2px; font-size: 0.82rem; color: #085041; background: #E1F5EE; border-radius: 8px; padding: 4px 10px; display: inline-block; }
