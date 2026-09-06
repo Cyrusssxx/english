@@ -480,9 +480,28 @@ function renderArticle() {
     if (article.topic) {
         html += `<div class="read-summary"><span class="rs-label">本文概要</span>${esc(article.topic)}</div>`;
     }
+    // 新题型空位映射：小标题题 → para_no 段首空位卡；匹配题 → 人名首次出现句前徽标
+    const ntQs = article.type === 'newtype' ? (article.questions || []) : [];
+    const paraQMap = {}, personQMap = {};
+    ntQs.forEach(q => {
+        if (q.para_no) paraQMap[q.para_no] = q;
+        if (q.person) personQMap[q.person.toLowerCase()] = q;
+    });
     paras.forEach((sents, i) => {
         html += `<div class="para"><div class="para-tag">P${i + 1}</div>`;
-        for (const s of sents) html += sentenceHtml(s);
+        const slotQ = paraQMap[i + 1];
+        if (slotQ) html += ntSlotHtml(slotQ);
+        const personHit = new Set();
+        for (const s of sents) {
+            const en = (s.en || '');
+            let personQ = null;
+            for (const name in personQMap) {
+                if (personHit.has(name)) continue;
+                if (en.toLowerCase().includes(name)) { personQ = personQMap[name]; personHit.add(name); break; }
+            }
+            if (personQ) html += ntMatchRowHtml(personQ);
+            html += sentenceHtml(s);
+        }
         html += '</div>';
     });
     document.getElementById('readPane').innerHTML = html;
@@ -1040,6 +1059,63 @@ const QTYPE_CN = { detail: '细节题', viewpoint: '观点题', inference: '推�
     attitude: '态度题', vocabulary: '词义题', cloze: '完形', example: '例证题', opinion: '观点题',
     '推理题': '推断题', '细节题': '细节题', '词义题': '词义题', '主旨题': '主旨题', '态度题': '态度题', '句意题': '句意题', '判断': '判断' };
 function qtypeCn(t) { return QTYPE_CN[t] || t; }
+
+// ============ 新题型「空位」：小标题题段首空位卡 + 匹配题人名徽标 ============
+function ntPool(q) {
+    return (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});
+}
+function ntPoolCn(q) {
+    return (q.options_cn && Object.keys(q.options_cn).length) ? q.options_cn : (article.pool_cn || {});
+}
+function ntFindQ(qid) { return (article.questions || []).find(q => q.id === qid); }
+
+/** 小标题题：段落顶部的空位卡（[41] ▾ 选择本段小标题），点击展开候选池 */
+function ntSlotHtml(q) {
+    const ans = answerMap[q.id];
+    const pool = ntPool(q);
+    const val = ans
+        ? `${ans.user_answer}. ${pool[ans.user_answer] || ''}`
+        : '选择本段小标题 ▾';
+    return `<div class="nt-slot" id="ntslot-${q.id}">
+        <span class="nt-no">[${q.number}]</span>
+        <span class="nt-val" id="ntval-${q.id}" onclick="toggleNtOpts('${q.id}')">${esc(val)}</span>
+        <div class="nt-opts" id="ntopts-${q.id}" hidden>
+            ${Object.keys(pool).map(k =>
+                `<button class="nt-opt" onclick="ntPick('${q.id}','${k}')">${k}. ${esc(pool[k])}${ntPoolCn(q)[k] ? esc('　' + ntPoolCn(q)[k]) : ''}</button>`).join('')}
+        </div>
+    </div>`;
+}
+/** 匹配题：人名首次出现句前的作答徽标行（点击跳转到下方题块） */
+function ntMatchRowHtml(q) {
+    return `<div class="nt-match" id="ntm-${q.id}" onclick="ntGoto('${q.id}')">
+        <span class="nt-no">[${q.number}]</span>
+        <span class="nt-person">${esc(q.person)}</span>
+        <span class="nt-goto">在此作答 ▸</span>
+    </div>`;
+}
+/** 空位卡选项展开/收起（force=true 强制收起） */
+function toggleNtOpts(qid, force) {
+    const el = document.getElementById('ntopts-' + qid);
+    if (!el) return;
+    el.hidden = force ? true : !el.hidden;
+}
+/** 空位卡选答案：同步答题状态（与题块 onPick 同一逻辑），题块解析区展开 */
+async function ntPick(qid, key) {
+    const q = ntFindQ(qid);
+    if (!q) return;
+    const val = document.getElementById('ntval-' + qid);
+    if (val) val.innerHTML = esc(`${key}. ${ntPool(q)[key] || ''}`);
+    toggleNtOpts(qid, true);
+    await onPick(qid, key);
+}
+/** 匹配题徽标：滚动到题块并闪烁高亮 */
+function ntGoto(qid) {
+    const el = document.getElementById('q-' + qid);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.classList.add('nt-flash');
+    setTimeout(() => el.classList.remove('nt-flash'), 1200);
+}
 
 function questionHtml(q) {
     const opts = (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});

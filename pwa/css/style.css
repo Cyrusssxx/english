@@ -2804,3 +2804,68 @@ html.dark .q-tip {
     color: #A8D3F5;
     border-left-color: #4A90C4;
 }
+
+/* ===== 新题型「空位」：小标题段首空位卡 + 匹配题人名徽标 ===== */
+.nt-slot {
+    border: 1px dashed var(--primary);
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 8px 0 10px;
+    background: var(--primary-soft);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.nt-no {
+    background: var(--primary);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 1px 8px;
+    flex: 0 0 auto;
+}
+.nt-val {
+    color: var(--primary-dark);
+    font-size: 0.88rem;
+    cursor: pointer;
+    user-select: none;
+}
+.nt-val:hover { text-decoration: underline; }
+.nt-opts {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.nt-opt {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.82rem;
+    cursor: pointer;
+}
+.nt-opt:hover { border-color: var(--primary); color: var(--primary); }
+.nt-match {
+    border-left: 3px solid var(--primary);
+    background: var(--primary-soft);
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin: 8px 0 6px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.nt-match:hover { background: var(--primary-soft2, var(--primary-soft)); }
+.nt-person { font-weight: 600; color: var(--primary-dark); }
+.nt-goto { color: var(--primary); font-size: 0.8rem; }
+.nt-flash { animation: ntFlash 1.2s ease; }
+@keyframes ntFlash {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(74, 144, 196, 0); }
+    30%, 70% { box-shadow: 0 0 0 4px rgba(74, 144, 196, 0.45); }
+}
