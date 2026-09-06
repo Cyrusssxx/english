@@ -144,7 +144,36 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "Ask people about public libraries"
+       },
+       {
+        "r": "并列",
+        "t": "and a certain image springs to mind:"
+       },
+       {
+        "r": "同位语",
+        "t": "dusty, old-fashioned, the sort of place you enjoyed as a child"
+       },
+       {
+        "r": "插入语",
+        "t": "but, rather like a British seaside town,"
+       },
+       {
+        "r": "并列",
+        "t": "would you go there now?"
+       },
+       {
+        "r": "并列",
+        "t": "And anyway—aren't they all closing?"
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s02",
@@ -240,7 +269,34 @@
        "w": "I",
        "meaning": "pron.我"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The reality"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语",
+        "t": "startlingly different,"
+       },
+       {
+        "r": "方式状语从句",
+        "t": "as I discovered",
+        "nodes": [
+         {
+          "r": "时间状语从句",
+          "t": "when the culture department commissioned me to conduct an independent review of English public libraries, published yesterday."
+         }
+        ]
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s03",
@@ -328,7 +384,28 @@
        "w": "I",
        "meaning": "pron.我"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语从句",
+        "t": "As I visited libraries up and down the country,"
+       },
+       {
+        "r": "主语",
+        "t": "I"
+       },
+       {
+        "r": "谓语",
+        "t": "was surprised"
+       },
+       {
+        "r": "宾语",
+        "t": "to learn there are more than twice the number of libraries (2,892) as there are branches of McDonald's."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s04",
@@ -468,7 +545,36 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "Enter any one of them"
+       },
+       {
+        "r": "并列",
+        "t": "and you will find a hive of activity;"
+       },
+       {
+        "r": "让步状语从句",
+        "t": "while books are, and should always be, at the heart of any library,"
+       },
+       {
+        "r": "主语",
+        "t": "a multitude of other services"
+       },
+       {
+        "r": "谓语",
+        "t": "are offered:"
+       },
+       {
+        "r": "同位语",
+        "t": "employment advice, language classes or digital access and support."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s05",
@@ -604,7 +710,32 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Many"
+       },
+       {
+        "r": "谓语",
+        "t": "have"
+       },
+       {
+        "r": "宾语",
+        "t": "nurses on site"
+       },
+       {
+        "r": "目的状语",
+        "t": "to carry out basic health checks,"
+       },
+       {
+        "r": "状语",
+        "t": "with a link to the GP's surgery."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s07",
@@ -816,7 +947,36 @@
        "w": "do",
        "meaning": "v.做, 进行, 完成, 做出, 合适, 足够"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "There"
+       },
+       {
+        "r": "谓语",
+        "t": "will be"
+       },
+       {
+        "r": "表语",
+        "t": "no charge"
+       },
+       {
+        "r": "并列",
+        "t": "and you will never be asked to justify or explain yourself;"
+       },
+       {
+        "r": "并列",
+        "t": "you will simply be welcomed in, offered help if you need it,"
+       },
+       {
+        "r": "并列",
+        "t": "and left alone if you do not."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s10",
@@ -996,7 +1156,32 @@
        "w": "as",
        "meaning": "prep.作为, 像, 当作, 如同"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "There"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语",
+        "t": "an overall decline in visits"
+       },
+       {
+        "r": "并列",
+        "t": "and many are struggling"
+       },
+       {
+        "r": "原因状语从句",
+        "t": "as local authorities come under continued financial pressure."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s13",
@@ -1040,7 +1225,28 @@
        "w": "is",
        "meaning": "v.到场, 位于, 在（某处）, （在某时或某地）发生"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The number of libraries"
+       },
+       {
+        "r": "定语从句",
+        "t": "that have closed since 2010"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语",
+        "t": "disputed."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s14",
@@ -1144,7 +1350,32 @@
        "w": "in",
        "meaning": "prep.在……里面，参与；穿着；进入"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "An annual survey by the Chartered Institute of Public Finance and Accountancy"
+       },
+       {
+        "r": "谓语",
+        "t": "puts"
+       },
+       {
+        "r": "宾语",
+        "t": "it"
+       },
+       {
+        "r": "状语",
+        "t": "at nearly 800 across the UK;"
+       },
+       {
+        "r": "并列",
+        "t": "official statistics held by the Arts Council record 230 in England."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s15",
@@ -1272,7 +1503,32 @@
        "w": "do",
        "meaning": "v.做, 进行, 完成, 做出, 合适, 足够"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "插入语",
+        "t": "So"
+       },
+       {
+        "r": "条件状语从句",
+        "t": "if we are to protect our libraries for future generations,"
+       },
+       {
+        "r": "主语",
+        "t": "we"
+       },
+       {
+        "r": "谓语",
+        "t": "must raise"
+       },
+       {
+        "r": "宾语",
+        "t": "awareness of them and the work they do."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s17",
@@ -1388,7 +1644,24 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The review"
+       },
+       {
+        "r": "谓语",
+        "t": "recommends"
+       },
+       {
+        "r": "宾语",
+        "t": "a national branding campaign to give libraries a stronger physical presence, the reintroduction of a scheme to enable members to use their card in any library in the country, and automatic memberships for children."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text1_s18",
@@ -1512,7 +1785,36 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列词",
+        "t": "And"
+       },
+       {
+        "r": "状语",
+        "t": "for those"
+       },
+       {
+        "r": "定语从句",
+        "t": "who haven't been to a library for some time,"
+       },
+       {
+        "r": "主语",
+        "t": "they"
+       },
+       {
+        "r": "谓语",
+        "t": "may be surprised by"
+       },
+       {
+        "r": "宾语",
+        "t": "what they find."
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -1747,7 +2049,32 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "插入语",
+        "t": "According to our research,"
+       },
+       {
+        "r": "主语",
+        "t": "around one in five workers in the UK"
+       },
+       {
+        "r": "谓语",
+        "t": "talk to"
+       },
+       {
+        "r": "宾语",
+        "t": "AI like a friend,"
+       },
+       {
+        "r": "分词短语",
+        "t": "looking for guidance on personal and professional problems."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s02",
@@ -1955,7 +2282,36 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列词",
+        "t": "But,"
+       },
+       {
+        "r": "状语",
+        "t": "with this newfound connection,"
+       },
+       {
+        "r": "主语",
+        "t": "many of us"
+       },
+       {
+        "r": "谓语",
+        "t": "share"
+       },
+       {
+        "r": "宾语",
+        "t": "sensitive, sometimes highly confidential information,"
+       },
+       {
+        "r": "让步状语从句",
+        "t": "even though over a third of people don't realise that AI platforms may not be very good at keeping our secrets... secret."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s04",
@@ -2107,7 +2463,28 @@
        "w": "in",
        "meaning": "prep.在……里面，参与；穿着；进入"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "grants"
+       },
+       {
+        "r": "宾语",
+        "t": "Microsoft broad rights to the data inputted or outputted by any user—rights to use this data in any way it sees fit;"
+       },
+       {
+        "r": "并列",
+        "t": "it can even share it with third parties."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s07",
@@ -2275,7 +2652,28 @@
        "w": "or",
        "meaning": "conj.或者, 否则, 不然, （用于否定句，提出两种或多种事物时）也不"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "插入语",
+        "t": "According to our research,"
+       },
+       {
+        "r": "主语",
+        "t": "25%"
+       },
+       {
+        "r": "谓语",
+        "t": "have decided"
+       },
+       {
+        "r": "宾语",
+        "t": "to either outright ban AI or regulate its use within their organisations."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s10",
@@ -2439,7 +2837,28 @@
        "w": "AI",
        "meaning": "[计] 附加信息, 人工智能; [化] 人工智能"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "They"
+       },
+       {
+        "r": "谓语",
+        "t": "have"
+       },
+       {
+        "r": "宾语",
+        "t": "their reasons—around 63% of them report that using AI increases their productivity,"
+       },
+       {
+        "r": "并列",
+        "t": "and some even feel AI offers more help than their human colleagues."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s12",
@@ -2511,7 +2930,24 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The situation"
+       },
+       {
+        "r": "谓语",
+        "t": "presents"
+       },
+       {
+        "r": "宾语",
+        "t": "a delicate balance between leveraging AI for its productivity gains and risking confidential data exposure."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s13",
@@ -2599,7 +3035,24 @@
        "w": "or",
        "meaning": "conj.或者, 否则, 不然, （用于否定句，提出两种或多种事物时）也不"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Employers"
+       },
+       {
+        "r": "谓语",
+        "t": "need"
+       },
+       {
+        "r": "宾语",
+        "t": "to manage AI tools with the same level of care as any other form of data sharing or storage."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s14",
@@ -2703,7 +3156,24 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "There's"
+       },
+       {
+        "r": "表语",
+        "t": "also a knowledge gap"
+       },
+       {
+        "r": "定语从句",
+        "t": "that needs to be addressed—40% of individuals surveyed are unsure about who retains ownership over the content produced by AI."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s15",
@@ -2787,7 +3257,32 @@
        "w": "AI",
        "meaning": "[计] 附加信息, 人工智能; [化] 人工智能"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "By instilling best practices in AI engagement and creating policies"
+       },
+       {
+        "r": "定语从句",
+        "t": "that evolve with the technology,"
+       },
+       {
+        "r": "主语",
+        "t": "businesses"
+       },
+       {
+        "r": "谓语",
+        "t": "can positively shift"
+       },
+       {
+        "r": "宾语",
+        "t": "the AI landscape."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s16",
@@ -2887,7 +3382,32 @@
        "w": "it",
        "meaning": "pron.[指无生命的东西，动物，植物]它；这；那"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "With AI's potential to simplify our professional lives, do the admin and enhance the work experience,"
+       },
+       {
+        "r": "主语",
+        "t": "it's"
+       },
+       {
+        "r": "表语",
+        "t": "up to us"
+       },
+       {
+        "r": "目的状语",
+        "t": "to navigate its usage cautiously"
+       },
+       {
+        "r": "结果状语从句",
+        "t": "so it supports us without compromising our privacy."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s17",
@@ -2987,7 +3507,24 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "There's"
+       },
+       {
+        "r": "表语",
+        "t": "no need to back away from progress,"
+       },
+       {
+        "r": "条件状语从句",
+        "t": "as long as we're equipped with the knowledge and tools to make sure AI remains a friend."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s18",
@@ -3103,7 +3640,32 @@
        "w": "to",
        "meaning": "prep.到; 向, 至; 对于"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "There"
+       },
+       {
+        "r": "谓语",
+        "t": "are"
+       },
+       {
+        "r": "表语",
+        "t": "so many products out there,"
+       },
+       {
+        "r": "分词短语",
+        "t": "being promoted with huge advertising and marketing budgets,"
+       },
+       {
+        "r": "结果状语从句",
+        "t": "that it's easy to fall victim."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text2_s20",
@@ -3195,7 +3757,36 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列词",
+        "t": "But"
+       },
+       {
+        "r": "状语",
+        "t": "by building a culture of digital responsibility within our business,"
+       },
+       {
+        "r": "主语",
+        "t": "we"
+       },
+       {
+        "r": "谓语",
+        "t": "can create"
+       },
+       {
+        "r": "宾语",
+        "t": "a future"
+       },
+       {
+        "r": "定语从句",
+        "t": "where AI can help us without spilling the beans."
+       }
+      ]
+     }
     }
    ],
    "questions": [
