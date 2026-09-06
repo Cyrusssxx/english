@@ -32,7 +32,36 @@
               "w": "get left behind",
               "meaning": "落伍，被时代淘汰"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "\"Reskilling\""
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "something"
+              },
+              {
+                "r": "定语从句",
+                "t": "that sounds like a buzzword but is actually a requirement"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "if we plan to have a future"
+              },
+              {
+                "r": "定语从句",
+                "t": "where a lot of would-be workers do not get left behind."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s02",
@@ -52,7 +81,36 @@
               "w": "the jobs that remain",
               "meaning": "留存下来的工作岗位"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "know"
+              },
+              {
+                "r": "宾语从句",
+                "t": "we are moving into a period"
+              },
+              {
+                "r": "定语从句",
+                "t": "where the jobs in demand will change rapidly,"
+              },
+              {
+                "r": "并列",
+                "t": "as will the requirements of the jobs"
+              },
+              {
+                "r": "定语从句",
+                "t": "that remain."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s03",
@@ -72,7 +130,24 @@
               "w": "core skills",
               "meaning": "核心技能"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Research by the World Economic Forum"
+              },
+              {
+                "r": "谓语",
+                "t": "finds"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that on average 42 per cent of the \"core skills\" within job roles will change by 2022."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s04",
@@ -120,7 +195,40 @@
               "w": "replace",
               "meaning": "v. 取代，替换"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "For individual companies,"
+              },
+              {
+                "r": "主语",
+                "t": "the temptation"
+              },
+              {
+                "r": "谓语",
+                "t": "is always"
+              },
+              {
+                "r": "表语",
+                "t": "to let go of workers"
+              },
+              {
+                "r": "定语从句",
+                "t": "whose skills are no longer in demand"
+              },
+              {
+                "r": "并列",
+                "t": "and replace them with those"
+              },
+              {
+                "r": "定语从句",
+                "t": "whose skills are."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s07",
@@ -152,7 +260,28 @@
               "w": "go with",
               "meaning": "接受，采纳（看法或计划）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "AT&T"
+              },
+              {
+                "r": "谓语",
+                "t": "is often given as"
+              },
+              {
+                "r": "表语",
+                "t": "the gold standard of a company"
+              },
+              {
+                "r": "定语从句",
+                "t": "who decided to do a massive reskilling program rather than go with a fire-and-hire strategy."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s09",
@@ -188,7 +317,28 @@
               "w": "turns to",
               "meaning": "转向，求助于"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When the skills mismatch is in the broader economy though,"
+              },
+              {
+                "r": "主语",
+                "t": "the focus"
+              },
+              {
+                "r": "谓语",
+                "t": "usually turns to"
+              },
+              {
+                "r": "宾语",
+                "t": "government to handle."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s11",
@@ -212,7 +362,36 @@
               "w": "begging for",
               "meaning": "急求，乞求"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Efforts in Canada and elsewhere"
+              },
+              {
+                "r": "谓语",
+                "t": "have been arguably languid"
+              },
+              {
+                "r": "状语",
+                "t": "at best,"
+              },
+              {
+                "r": "并列",
+                "t": "and have given us a situation"
+              },
+              {
+                "r": "定语从句",
+                "t": "where we frequently hear of employers begging for workers, even at times and in regions"
+              },
+              {
+                "r": "定语从句",
+                "t": "where unemployment is high."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s12",
@@ -252,7 +431,36 @@
               "w": "worker shortages",
               "meaning": "员工短缺"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In February,"
+              },
+              {
+                "r": "状语",
+                "t": "at 3.5 per cent and 5.5 per cent respectively,"
+              },
+              {
+                "r": "主语",
+                "t": "unemployment rates in Canada and the United States"
+              },
+              {
+                "r": "谓语",
+                "t": "were"
+              },
+              {
+                "r": "表语",
+                "t": "at generational lows"
+              },
+              {
+                "r": "并列",
+                "t": "and worker shortages were everywhere."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s14",
@@ -272,7 +480,36 @@
               "w": "disappeared",
               "meaning": "v. 消失（disappear 的过去分词）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "As of May,"
+              },
+              {
+                "r": "主语",
+                "t": "those rates"
+              },
+              {
+                "r": "谓语",
+                "t": "had spiked up"
+              },
+              {
+                "r": "状语",
+                "t": "to 13.3 per cent and 13.7 per cent,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "and although many worker shortages had disappeared,"
+              },
+              {
+                "r": "并列",
+                "t": "not all had done so."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s15",
@@ -292,7 +529,32 @@
               "w": "medical personnel",
               "meaning": "医务人员"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In the medical field,"
+              },
+              {
+                "r": "插入语",
+                "t": "to take an obvious example,"
+              },
+              {
+                "r": "主语",
+                "t": "the pandemic"
+              },
+              {
+                "r": "谓语",
+                "t": "meant"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that there were still clear shortages of doctors, nurses and other medical personnel."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s16",
@@ -312,7 +574,32 @@
               "w": "in a few weeks",
               "meaning": "在几周内"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Of course,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "not like you can take an unemployed waiter and train him to be a doctor in a few weeks,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "no matter who pays for it."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s17",
@@ -332,7 +619,36 @@
               "w": "all concerned",
               "meaning": "所有相关方"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "But even if you cannot close that gap,"
+              },
+              {
+                "r": "插入语",
+                "t": "maybe"
+              },
+              {
+                "r": "主语",
+                "t": "you"
+              },
+              {
+                "r": "谓语",
+                "t": "can close"
+              },
+              {
+                "r": "宾语",
+                "t": "others,"
+              },
+              {
+                "r": "并列",
+                "t": "and doing so would be to the benefit of all concerned."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s18",
@@ -356,7 +672,44 @@
               "w": "laid-off",
               "meaning": "adj. 被解雇的，下岗的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That"
+              },
+              {
+                "r": "谓语",
+                "t": "seems to be"
+              },
+              {
+                "r": "表语",
+                "t": "the case in Sweden:"
+              },
+              {
+                "r": "时间状语",
+                "t": "When forced to furlough 90 per cent of their cabin staff,"
+              },
+              {
+                "r": "主语",
+                "t": "Scandinavian Airlines"
+              },
+              {
+                "r": "谓语",
+                "t": "decided to start up"
+              },
+              {
+                "r": "宾语",
+                "t": "a short retraining program"
+              },
+              {
+                "r": "定语从句",
+                "t": "that reskilled the laid-off workers to support hospital staff."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text1_s19",
@@ -376,7 +729,28 @@
               "w": "as well as",
               "meaning": "以及，还有"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The effort"
+              },
+              {
+                "r": "谓语",
+                "t": "was"
+              },
+              {
+                "r": "表语",
+                "t": "a collective one"
+              },
+              {
+                "r": "并列",
+                "t": "and involved other companies as well as a Swedish university."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -546,7 +920,36 @@
               "w": "making headlines",
               "meaning": "成为新闻焦点"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "With the global population predicted to hit close to 10 billion by 2050,"
+              },
+              {
+                "r": "并列",
+                "t": "and forecasts"
+              },
+              {
+                "r": "同位语从句",
+                "t": "that agricultural production in some regions will need to nearly double to keep pace,"
+              },
+              {
+                "r": "主语",
+                "t": "food security"
+              },
+              {
+                "r": "谓语",
+                "t": "is increasingly making"
+              },
+              {
+                "r": "宾语",
+                "t": "headlines."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s02",
@@ -566,7 +969,36 @@
               "w": "Brexit",
               "meaning": "n. 英国脱欧"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In the UK,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "has become"
+              },
+              {
+                "r": "表语",
+                "t": "a big talking point recently too,"
+              },
+              {
+                "r": "状语",
+                "t": "for a rather particular reason:"
+              },
+              {
+                "r": "同位语",
+                "t": "Brexit."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s03",
@@ -586,7 +1018,24 @@
               "w": "importing food",
               "meaning": "进口粮食"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Brexit"
+              },
+              {
+                "r": "谓语",
+                "t": "is seen"
+              },
+              {
+                "r": "状语",
+                "t": "by some as an opportunity to reverse a recent trend towards the UK importing food."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s04",
@@ -606,7 +1055,28 @@
               "w": "down from",
               "meaning": "从……下降到"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The country"
+              },
+              {
+                "r": "谓语",
+                "t": "produces"
+              },
+              {
+                "r": "宾语",
+                "t": "only about 60 per cent of the food it eats,"
+              },
+              {
+                "r": "状语",
+                "t": "down from almost three-quarters in the late 1980s."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s05",
@@ -630,7 +1100,28 @@
               "w": "sovereignty",
               "meaning": "n. 主权"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "A move back to self-sufficiency,"
+              },
+              {
+                "r": "插入语",
+                "t": "the argument goes,"
+              },
+              {
+                "r": "谓语",
+                "t": "would boost"
+              },
+              {
+                "r": "宾语",
+                "t": "the farming industry, political sovereignty and even the nation's health."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s06",
@@ -666,7 +1157,28 @@
               "w": "meat and dairy production",
               "meaning": "肉类及奶制品生产"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "According to a report on UK food production from the University of Leeds, UK,"
+              },
+              {
+                "r": "主语",
+                "t": "85 per cent of the country's total land area"
+              },
+              {
+                "r": "谓语",
+                "t": "is associated with"
+              },
+              {
+                "r": "宾语",
+                "t": "meat and dairy production."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s08",
@@ -686,7 +1198,28 @@
               "w": "livestock farms",
               "meaning": "畜牧场"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That"
+              },
+              {
+                "r": "谓语",
+                "t": "supplies"
+              },
+              {
+                "r": "宾语",
+                "t": "80 per cent of what is consumed,"
+              },
+              {
+                "r": "结果状语从句",
+                "t": "so even covering the whole country in livestock farms wouldn't allow us to cover all our meat and dairy needs."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s09",
@@ -730,7 +1263,32 @@
               "w": "factory-style production",
               "meaning": "工厂式生产"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "目的状语",
+                "t": "To become much more self-sufficient,"
+              },
+              {
+                "r": "主语",
+                "t": "the UK"
+              },
+              {
+                "r": "谓语",
+                "t": "would need"
+              },
+              {
+                "r": "宾语",
+                "t": "to drastically reduce its consumption of animal foods,"
+              },
+              {
+                "r": "并列",
+                "t": "and probably also farm more intensively - meaning fewer green fields and more factory-style production."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s11",
@@ -770,7 +1328,28 @@
               "w": "on a commercial basis",
               "meaning": "商业性地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "a good reason why the UK is dominated by animal husbandry:"
+              },
+              {
+                "r": "同位语",
+                "t": "most of its terrain doesn't have the right soil or climate to grow crops on a commercial basis."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s13",
@@ -790,7 +1369,28 @@
               "w": "arable fields",
               "meaning": "耕地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Just 25 per cent of the country's land"
+              },
+              {
+                "r": "谓语",
+                "t": "is suitable for"
+              },
+              {
+                "r": "宾语",
+                "t": "crop-growing,"
+              },
+              {
+                "r": "定语从句",
+                "t": "most of which is already occupied by arable fields."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s14",
@@ -810,7 +1410,28 @@
               "w": "crop production",
               "meaning": "作物产量"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Even if we converted all the suitable land to fields of fruit and veg - which would involve taking out all the nature reserves and removing thousands of people from their homes -"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "would achieve"
+              },
+              {
+                "r": "宾语",
+                "t": "only a 30 per cent boost in crop production."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s15",
@@ -830,7 +1451,28 @@
               "w": "fresh produce",
               "meaning": "新鲜农产品"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Just 23 per cent of the fruit and vegetables consumed in the UK"
+              },
+              {
+                "r": "谓语",
+                "t": "are currently"
+              },
+              {
+                "r": "表语",
+                "t": "home-grown,"
+              },
+              {
+                "r": "结果状语从句",
+                "t": "so even with the most extreme measures we could meet only 30 per cent of our fresh produce needs."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text2_s16",
@@ -850,7 +1492,28 @@
               "w": "calorie intake",
               "meaning": "卡路里摄入量"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "before we look for the space to grow the grains, sugars, seeds and oils"
+              },
+              {
+                "r": "定语从句",
+                "t": "that provide us with the vast bulk of our current calorie intake."
+              }
+            ]
+          }
         }
       ],
       "questions": [
