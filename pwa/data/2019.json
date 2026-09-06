@@ -1701,7 +1701,26 @@
               "w": "agricultural workers",
               "meaning": "农业工人"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Congress"
+              },
+              {
+                "r": "谓语",
+                "t": "has obstructed efforts to create a more straightforward visa for agricultural workers"
+              },
+              {
+                "r": "定语从句",
+                "t": "that would let foreign workers stay longer in the U.S. and change jobs within the industry.",
+                "lead": "that",
+                "mod": "a more straightforward visa"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s04",
@@ -1769,7 +1788,25 @@
               "w": "migrating",
               "meaning": "v. 迁移（migrate 的现在分词）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Today's farm laborers,"
+              },
+              {
+                "r": "让步状语",
+                "t": "while still predominantly born in Mexico,",
+                "lead": "while"
+              },
+              {
+                "r": "谓语",
+                "t": "are more likely to be settled rather than migrating and more likely to be married than single."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s08",
@@ -1845,7 +1882,24 @@
               "w": "all along",
               "meaning": "自始至终，一直"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "One oft-debated cure for this labor shortage"
+              },
+              {
+                "r": "谓语",
+                "t": "remains as implausible as it's been all along:"
+              },
+              {
+                "r": "同位语",
+                "t": "Native U.S. workers won't be returning to the farm."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s13",
@@ -1885,7 +1939,32 @@
               "w": "labor-intensive",
               "meaning": "adj. 劳动密集型的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Production of corn, cotton, rice, soybeans, and wheat"
+              },
+              {
+                "r": "谓语",
+                "t": "has been largely mechanized,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "many high-value, labor-intensive crops, such as strawberries,"
+              },
+              {
+                "r": "谓语",
+                "t": "need labor."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s15",
@@ -1905,7 +1984,22 @@
               "w": "automated",
               "meaning": "adj. 自动化的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Even dairy farms, where robots do a small share of milking, have a long way to go",
+                "lead": "where"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "before they're automated.",
+                "lead": "before"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s16",
@@ -1925,7 +2019,24 @@
               "w": "fill the gaps",
               "meaning": "填补空缺"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "As a result,"
+              },
+              {
+                "r": "主语",
+                "t": "farms"
+              },
+              {
+                "r": "谓语",
+                "t": "have grown increasingly reliant on temporary guest workers using the H-2A visa to fill the gaps in the workforce."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s17",
@@ -1945,7 +2056,28 @@
               "w": "doubled",
               "meaning": "v. 翻倍，增加一倍"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Starting around 2012,"
+              },
+              {
+                "r": "主语",
+                "t": "requests for the visas"
+              },
+              {
+                "r": "谓语",
+                "t": "rose sharply;"
+              },
+              {
+                "r": "并列",
+                "t": "from 2011 to 2016 the number of visas issued more than doubled."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s18",
@@ -1965,7 +2097,30 @@
               "w": "limited to",
               "meaning": "限制在"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The H-2A visa"
+              },
+              {
+                "r": "谓语",
+                "t": "has no numerical cap,"
+              },
+              {
+                "r": "状语",
+                "t": "unlike the H-2B visa for nonagricultural work,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which is limited to 66,000 a year.",
+                "lead": "which",
+                "mod": "the H-2B visa"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s19",
@@ -2021,7 +2176,25 @@
               "w": "on the job",
               "meaning": "上工，在岗"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "One survey"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that bureaucratic delays led the average H-2A worker to arrive on the job 22 days late.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s22",
@@ -2061,7 +2234,29 @@
               "w": "short of labor",
               "meaning": "缺少劳动力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In a 2012 survey,"
+              },
+              {
+                "r": "主语",
+                "t": "71 percent of tree-fruit growers and almost 80 percent of raisin and berry growers"
+              },
+              {
+                "r": "谓语",
+                "t": "said"
+              },
+              {
+                "r": "宾语从句",
+                "t": "they were short of labor.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text3_s24",
@@ -2313,7 +2508,24 @@
               "w": "combat",
               "meaning": "v. 与……斗争，对抗"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They're"
+              },
+              {
+                "r": "表语",
+                "t": "part of a bunch of celebrities starring in a new video for World Environment Day"
+              },
+              {
+                "r": "分词短语",
+                "t": "- encouraging you, the consumer, to swap out your single-use plastic staples like straws and cutlery to combat the plastics crisis."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s03",
@@ -2333,7 +2545,20 @@
               "w": "curb",
               "meaning": "v. 控制，抑制"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The key messages that have been put together for World Environment Day"
+              },
+              {
+                "r": "谓语",
+                "t": "do include a call for governments to enact legislation to curb single-use plastics."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s04",
@@ -2369,7 +2594,28 @@
               "w": "limited sense",
               "meaning": "有限的认识"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "My concern with leaving it up to the individual,"
+              },
+              {
+                "r": "插入语",
+                "t": "however,"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "our limited sense of what needs to be achieved."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s06",
@@ -2389,7 +2635,24 @@
               "w": "accomplish little",
               "meaning": "收效甚微"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "On their own,"
+              },
+              {
+                "r": "主语",
+                "t": "taking our own bags to the grocery store or quitting plastic straws, for example,"
+              },
+              {
+                "r": "谓语",
+                "t": "will accomplish little and require very little of us."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s07",
@@ -2409,7 +2672,34 @@
               "w": "those in charge",
               "meaning": "当权者，主管者"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "could even be detrimental,"
+              },
+              {
+                "r": "分词短语",
+                "t": "satisfying a need to have \"done our bit\" without ever progressing onto bigger, bolder, more effective actions"
+              },
+              {
+                "r": "同位语",
+                "t": "- a kind of \"moral licensing\""
+              },
+              {
+                "r": "定语从句",
+                "t": "that allays our concerns and stops us doing more and asking more of those in charge.",
+                "lead": "that",
+                "mod": "a kind of \"moral licensing\""
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s08",
@@ -2429,7 +2719,40 @@
               "w": "systemic change",
               "meaning": "系统性变革"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "While the conversation around our environment and our responsibility toward it remains centered on shopping bags and straws,",
+                "lead": "While"
+              },
+              {
+                "r": "主语",
+                "t": "we're"
+              },
+              {
+                "r": "谓语",
+                "t": "ignoring the balance of power"
+              },
+              {
+                "r": "定语从句",
+                "t": "that implies",
+                "lead": "that",
+                "mod": "the balance of power"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that as \"consumers\" we must shop sustainably,",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "rather than as \"citizens\" hold our governments and industries to account to push for real systemic change."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s09",
@@ -2477,7 +2800,29 @@
               "w": "structural",
               "meaning": "adj. 结构性的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In her latest book, Why Good People Do Bad Environmental Things,"
+              },
+              {
+                "r": "主语",
+                "t": "Wellesley College professor Elizabeth R. DeSombre"
+              },
+              {
+                "r": "谓语",
+                "t": "argues"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the best way to collectively change the behavior of large numbers of people is for the change to be structural.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s12",
@@ -2497,7 +2842,30 @@
               "w": "banning",
               "meaning": "v. 禁止，取缔"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "might mean implementing policy such as a plastic tax"
+              },
+              {
+                "r": "定语从句",
+                "t": "that adds a cost to environmentally problematic action,",
+                "lead": "that",
+                "mod": "a plastic tax"
+              },
+              {
+                "r": "并列",
+                "t": "or banning single-use plastics altogether."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s13",
@@ -2533,7 +2901,24 @@
               "w": "trash disposal",
               "meaning": "垃圾处理"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There"
+              },
+              {
+                "r": "谓语",
+                "t": "are also incentive-based ways of making better environmental choices easier,"
+              },
+              {
+                "r": "举例",
+                "t": "such as ensuring recycling is at least as easy as trash disposal."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s15",
@@ -2565,7 +2950,29 @@
               "w": "widespread behavior",
               "meaning": "普遍行为"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "just that individual actions are too slow,",
+                "lead": "that"
+              },
+              {
+                "r": "插入语",
+                "t": "she says,"
+              },
+              {
+                "r": "状语",
+                "t": "for that to be the only, or even primary, approach to changing widespread behavior."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text4_s17",
@@ -2621,7 +3028,30 @@
               "w": "engaged citizens",
               "meaning": "积极参与的公民"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "need progressive policies"
+              },
+              {
+                "r": "定语从句",
+                "t": "that shape collective action (and rein in polluting businesses),",
+                "lead": "that",
+                "mod": "progressive policies"
+              },
+              {
+                "r": "状语",
+                "t": "alongside engaged citizens pushing for change."
+              }
+            ]
+          }
         }
       ],
       "questions": [
