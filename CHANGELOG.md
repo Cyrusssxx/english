@@ -1,5 +1,20 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-06 新增] 精翻页信号染色（六层）+ 结构树渲染端
+
+- **需求**：用户"只能大概理解句子，搞不清句子形式"——在精翻界面加句子结构辅助；另提出转折词（but/however/rather than）很重要、主干要高亮、默认全开、全部功能收在精翻界面内（不要单词卡方向）。
+- **总开关**：article.html 顶栏新增「信号染色」开关（默认开，localStorage.sigColors）；**层级开关**在 ⚙设置面板（6 层独立，localStorage.sigLayers，默认全开）。
+- **规则层（全库立即生效，2161 句）**，在 annotate() 词/词组标注之后对纯文本段切分（词 span/词典 span 不动，点词查词不受影响）：
+  - 转折·让步（红底）：however/but/yet/although/though/whereas/instead/rather than/even though/even if/in contrast/by contrast/while(仅句首或标点后，时间 while 不标)；
+  - 因果·目的（绿底）：because/therefore/thus/hence/due to/in order to/so as to/so that/as a result/lead to/result in/contribute to 等；
+  - 从句引导词（黄标）：which/who/whom/whose/where/when/how（that 留给数据版，避免指示代词误标）；
+  - 指代（紫虚线）：this/these/those/such（such as 归插入层）；
+  - 插入语·举例（灰）：such as/including/for example/for instance/, says X。
+- **数据层（struct）渲染端就绪**：句子带 `struct.nodes` 时——句下常显「主干：…」绿框（主/谓/宾/表）+ 「结构」按钮展开缩进结构树（角色胶囊 + lead 黄标 + 「→ 修饰 X」）；无 struct 的句子自动退回规则层，全库无空窗。
+- **CSS**：sig-* 六层 + 深色模式适配 + trunkline/struct-btn/struct-tree。
+- **验证**：jsdom 全流程通过——默认全开染色、trunkline/树行数/lead 黄标、主开关关→全部消失、层开关独立生效（关转折不影响指代）、设置面板含层级开关。
+- **下一步**：分批生成近十年 1383 句长难句的 struct 数据（≥18 词或 ≥2 从句引导词），每批过"平铺还原=原句"校验后入库。
+
 ## [2026-09-06 修订] 顶栏收起/展开合并为单一固定按钮（最右）
 
 - 撤掉双按钮（nav-tools 内 ▲ + 悬浮 ▼），改为**单一固定按钮**：`position: fixed; top:14px; right:10px`（56px 顶栏内垂直居中），▲收起 / ▼展开同一位置切换，收起后按钮原地保留不动。

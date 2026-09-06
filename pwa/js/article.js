@@ -131,6 +131,108 @@ function toggleHard() {
     renderHardSwitch();
 }
 
+// ============ 信号染色：转折/因果/引导词/指代/插入语（规则层）+ 主干（struct 数据层） ============
+const SIG_KEY_ON = 'sigColors';
+const SIG_KEY_LAYERS = 'sigLayers';
+const SIG_LAYERS_DEFAULT = { trunk: true, trans: true, caus: true, lead: true, ref: true, mod: true };
+const TRUNK_ROLES = ['主语', '谓语', '宾语', '表语'];
+
+function sigOn() {
+    return localStorage.getItem(SIG_KEY_ON) !== '0';   // 默认全开
+}
+function sigLayers() {
+    try { return { ...SIG_LAYERS_DEFAULT, ...(JSON.parse(localStorage.getItem(SIG_KEY_LAYERS) || '{}')) }; }
+    catch (e) { return { ...SIG_LAYERS_DEFAULT }; }
+}
+function renderSigSwitch() {
+    const st = document.getElementById('sigState');
+    if (st) st.textContent = sigOn() ? '开' : '关';
+}
+function toggleSig() {
+    localStorage.setItem(SIG_KEY_ON, sigOn() ? '0' : '1');
+    renderSigSwitch();
+    renderArticle();
+}
+function toggleSigLayer(k) {
+    const L = sigLayers(); L[k] = !L[k];
+    localStorage.setItem(SIG_KEY_LAYERS, JSON.stringify(L));
+    renderArtSettings();
+    renderArticle();
+}
+
+// 规则表：cls = 信号层；while 仅句首/标点后算让步；such 让位给 such as
+const SIG_RULES = [
+    { cls: 'mod', re: /\b(?:such as|including|for example|for instance)\b|,\s*says\s+[A-Z][A-Za-z.]+|,\s*said\s+[A-Z][A-Za-z.]+/gi },
+    { cls: 'trans', re: /\b(?:however|but|yet|although|though|whereas|nevertheless|nonetheless|instead|rather than|even though|even if|in contrast|by contrast|while)\b/gi },
+    { cls: 'caus', re: /\b(?:because|therefore|thus|hence|due to|owing to|thanks to|in order to|so as to|so that|as a result|lead to|leads to|led to|result in|results in|resulted in|contribute to|contributes to|contributed to)\b/gi },
+    { cls: 'lead', re: /\b(?:which|who|whom|whose|where|when|how)\b/gi },
+    { cls: 'ref', re: /\b(?:this|these|those|such)\b/gi },
+];
+
+/** 对 annotate 的纯文本分段做信号词切分（词 span / 词典 span 不动，保证点词查词不受影响） */
+function markSignals(segs) {
+    if (!sigOn()) return;
+    const L = sigLayers();
+    for (let i = 0; i < segs.length; i++) {
+        const seg = segs[i];
+        if (seg.wi !== undefined || seg.dictFallback || seg.sig) continue;
+        const text = seg.text;
+        const hits = [];
+        for (const rule of SIG_RULES) {
+            if (!L[rule.cls]) continue;
+            const re = new RegExp(rule.re.source, 'gi');
+            let m;
+            while ((m = re.exec(text)) !== null) {
+                if (rule.cls === 'trans' && /^while$/i.test(m[0])) {
+                    const before = text.slice(0, m.index);
+                    if (before.trim() !== '' && !/[.,;:]\s*$/.test(before)) continue;  // 时间 while 不标
+                }
+                if (rule.cls === 'ref' && /^such$/i.test(m[0])) {
+                    if (/^\s+as\b/i.test(text.slice(m.index + m[0].length))) continue; // such as 走 mod
+                }
+                hits.push({ s: m.index, e: m.index + m[0].length, cls: rule.cls });
+            }
+        }
+        if (!hits.length) continue;
+        hits.sort((a, b) => a.s - b.s || (b.e - b.s) - (a.e - a.s));
+        const picked = [];
+        let lastEnd = -1;
+        for (const h of hits) { if (h.s >= lastEnd) { picked.push(h); lastEnd = h.e; } }
+        const repl = [];
+        let pos = 0;
+        for (const h of picked) {
+            if (h.s > pos) repl.push({ text: text.slice(pos, h.s) });
+            repl.push({ text: text.slice(h.s, h.e), sig: h.cls });
+            pos = h.e;
+        }
+        if (pos < text.length) repl.push({ text: text.slice(pos) });
+        segs.splice(i, 1, ...repl);
+        i += repl.length - 1;
+    }
+}
+
+/** struct 数据 → 句下缩进结构树（r 白名单见生成契约；t 含引导词原文） */
+function structTreeHtml(nodes, depth) {
+    return nodes.map(n => {
+        const pillCls = TRUNK_ROLES.includes(n.r) ? 'st-t' : (/从句$/.test(n.r) ? 'st-c' : 'st-m');
+        const lead = n.lead && (n.t || '').toLowerCase().startsWith(String(n.lead).toLowerCase())
+            ? `<span class="sig-lead">${esc(n.lead)}</span>${esc(n.t.slice(n.lead.length))}` : esc(n.t || '');
+        const kids = n.nodes && n.nodes.length ? structTreeHtml(n.nodes, depth + 1) : '';
+        return `<div class="st-row" style="padding-left:${depth * 18}px">` +
+            `<span class="st-pill ${pillCls}">${esc(n.r)}</span><span>${lead}</span>` +
+            (n.mod ? `<span class="st-mod">→ 修饰 ${esc(n.mod)}</span>` : '') + `</div>` + kids;
+    }).join('');
+}
+function structTrunkLine(nodes) {
+    const parts = (nodes || []).filter(n => TRUNK_ROLES.includes(n.r)).map(n => esc(n.t));
+    return parts.length ? `<div class="trunkline">主干：${parts.join(' ｜ ')}</div>` : '';
+}
+function toggleStructTree(id) {
+    const el = document.getElementById('st-' + id);
+    if (el) el.hidden = !el.hidden;
+}
+renderSigSwitch();
+
 // ============ 题目面板收缩（存 localStorage） ============
 function isQuizCollapsed() {
     return localStorage.getItem('quizCollapsed') === '1';
@@ -301,14 +403,20 @@ function renderArticle() {
 function sentenceHtml(s) {
     const { html: enHtml, missed } = annotate(s);
     const favOn = favSet.has(s.id);
+    const hasStruct = !!(s.struct && s.struct.nodes && sigOn());
+    const structBtn = hasStruct
+        ? `<button class="struct-btn" onclick="toggleStructTree('${s.id}')" title="展开/收起句子结构树">结构</button>` : '';
     let out = `<div class="sent" id="s-${s.id}" data-sid="${s.id}">
         <div class="sent-en">${enHtml}
-            <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>
+            <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>${structBtn}
         </div>
+        ${hasStruct ? structTrunkLine(s.struct.nodes) : ''}
         <div class="sent-cn" onclick="onCnClick(event,'${s.id}')">
             <span class="cn-placeholder">▾ 点击查看翻译</span>
             <span class="cn-text">${esc(s.cn || '')}</span>
         </div>`;
+    // struct 数据：句下折叠结构树
+    if (hasStruct) out += `<div class="struct-tree" id="st-${s.id}" hidden>${structTreeHtml(s.struct.nodes, 0)}</div>`;
     // 匹配失败降级：句尾词汇列表
     if (missed.length) {
         out += `<div class="sent-words-fallback">${missed.map(w =>
@@ -364,6 +472,7 @@ function annotate(s) {
             break;
         }
     }
+    markSignals(segs);   // 信号染色：在词/词组标注之后，仅切分纯文本段
     const html = segs.map(seg => {
         if (seg.wi !== undefined) {
             const w = s.words[seg.wi];
@@ -374,6 +483,9 @@ function annotate(s) {
             const w = seg.word;
             const hard = isHard(w.w) ? ' hard' : '';
             return `<span class="word dict-hard${hard}" data-w="${esc(w.w)}" onclick="onDictWordClick(event,'${s.id}')">${esc(seg.text)}</span>`;
+        }
+        if (seg.sig) {
+            return `<span class="sig-${seg.sig}">${annotatePhrases(seg.text, s.id)}</span>`;
         }
         // 纯文本段：先试词组扫描，其余回落难词/空格/转义
         return annotatePhrases(seg.text, s.id);
@@ -1058,6 +1170,14 @@ function renderArtSettings() {
         <div class="ss-title">夜间模式</div>
         <div class="ss-row"><span class="ss-act">深色护眼</span>
             <button class="ss-toggle${darkOn ? ' on' : ''}" onclick="toggleArtDark()">${darkOn ? '开' : '关'}</button></div>
+        <div class="ss-title">信号染色 <span class="ss-tip">层级开关</span></div>
+        ${(() => {
+            const L = sigLayers();
+            return [['trunk', '主干（需 struct 数据）'], ['trans', '转折·让步'], ['caus', '因果·目的'],
+                ['lead', '从句引导词'], ['ref', '指代'], ['mod', '插入语·举例']]
+                .map(([k, label]) => `<div class="ss-row"><span class="ss-act">${label}</span>
+                    <button class="ss-toggle${L[k] ? ' on' : ''}" onclick="toggleSigLayer('${k}')">${L[k] ? '开' : '关'}</button></div>`).join('');
+        })()}
         <div class="ss-title">标注备份</div>
         <div class="ss-row"><button class="ss-key" onclick="Annot.exportAnnot()">导出标注</button></div>
         <div class="ss-row"><button class="ss-key" onclick="document.getElementById('annImport').click()">导入标注</button></div>

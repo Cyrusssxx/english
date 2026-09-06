@@ -2741,3 +2741,37 @@ html.dark .ui-input { background: #1e293b; color: #e2e8f0; border-color: #475569
 .navbar.nav-anim {
     transition: margin-top 0.25s ease, transform 0.25s ease;
 }
+
+/* ===== 句子信号染色 + 结构树（精翻页） ===== */
+.sig-trans { background: #FCEBEB; color: #A32D2D; border-radius: 6px; padding: 0 4px; font-weight: 500; }
+.sig-caus { background: #EAF3DE; color: #3B6D11; border-radius: 6px; padding: 0 4px; }
+.sig-lead { background: #FAC775; color: #633806; border-radius: 6px; padding: 0 3px; font-size: 0.92em; }
+.sig-ref { color: #534AB7; border-bottom: 1px dashed #AFA9EC; }
+.sig-mod { color: var(--text-light); }
+.sig-trunk { background: #E1F5EE; color: #085041; font-weight: 500; border-radius: 6px; padding: 0 4px; }
+.sig-cls { color: #185FA5; }
+.dark .sig-trans { background: #501313; color: #F7C1C1; }
+.dark .sig-caus { background: #27500A; color: #C0DD97; }
+.dark .sig-lead { background: #633806; color: #FAC775; }
+.dark .sig-ref { color: #AFA9EC; border-bottom-color: #534AB7; }
+.dark .sig-mod { color: var(--text-light); }
+.dark .sig-trunk { background: #085041; color: #9FE1CB; }
+.dark .sig-cls { color: #85B7EB; }
+.trunkline { margin: 6px 0 2px; font-size: 0.82rem; color: #085041; background: #E1F5EE; border-radius: 8px; padding: 4px 10px; display: inline-block; }
+.dark .trunkline { background: #085041; color: #9FE1CB; }
+.struct-btn {
+    background: none; border: 1px solid var(--border); color: var(--text-light);
+    font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; cursor: pointer;
+    margin-left: 6px; vertical-align: middle; transition: border-color 0.15s, color 0.15s;
+}
+.struct-btn:hover { border-color: var(--primary); color: var(--primary); }
+.struct-tree { margin-top: 8px; border-top: 1px dashed var(--border); padding-top: 8px; }
+.st-row { display: flex; align-items: baseline; gap: 8px; font-size: 0.86rem; line-height: 1.8; }
+.st-pill { flex: 0 0 auto; font-size: 0.72rem; border-radius: 6px; padding: 1px 7px; }
+.st-t { background: #E1F5EE; color: #085041; }
+.st-c { background: #E6F1FB; color: #185FA5; }
+.st-m { background: var(--bg); color: var(--text-light); }
+.st-mod { color: var(--text-light); font-size: 0.78rem; }
+.dark .st-t { background: #085041; color: #9FE1CB; }
+.dark .st-c { background: #0C447C; color: #B5D4F4; }
+.dark .st-m { background: #1f2937; color: var(--text-light); }
