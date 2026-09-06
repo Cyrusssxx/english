@@ -25,7 +25,32 @@
               "phonetic": "/bɔːd/",
               "meaning": "n. 董事会"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Ruth Simmons"
+              },
+              {
+                "r": "谓语",
+                "t": "joined Goldman Sachs's board as an outside director in January 2000;"
+              },
+              {
+                "r": "时间状语",
+                "t": "a year later"
+              },
+              {
+                "r": "主语",
+                "t": "she"
+              },
+              {
+                "r": "谓语",
+                "t": "became president of Brown University."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s02",
@@ -58,7 +83,32 @@
               "w": "pass unremarked",
               "meaning": "未受置评地通过"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "状语",
+                "t": "by the end of 2009"
+              },
+              {
+                "r": "主语",
+                "t": "Ms. Simmons"
+              },
+              {
+                "r": "谓语",
+                "t": "was under fire for having sat on Goldman's compensation committee;"
+              },
+              {
+                "r": "主语",
+                "t": "how could she have let those enormous bonus payouts pass unremarked?"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s04",
@@ -115,7 +165,24 @@
               "w": "disagree with",
               "meaning": "不同意，反对"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "分词短语",
+                "t": "Having made their wealth and their reputations elsewhere,"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "presumably have enough independence to disagree with the chief executive's proposals."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s08",
@@ -132,7 +199,25 @@
               "phonetic": "/ˈweðəd/",
               "meaning": "v. 平安渡过（困难）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If the sky, and the share price is falling,",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "outside directors"
+              },
+              {
+                "r": "谓语",
+                "t": "should be able to give advice based on having weathered their own crises."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s09",
@@ -145,7 +230,26 @@
               "phonetic": "/ˈdeɪtəbeɪs/",
               "meaning": "n. 数据库"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The researchers from Ohio University"
+              },
+              {
+                "r": "谓语",
+                "t": "used a database"
+              },
+              {
+                "r": "定语从句",
+                "t": "that covered more than 10,000 firms and more than 64,000 different directors between 1989 and 2004.",
+                "lead": "that",
+                "mod": "a database"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s10",
@@ -174,7 +278,25 @@
               "phonetic": "/dɪˈpɑːtɪŋ/",
               "meaning": "v. 离开"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The most likely reason for departing a board"
+              },
+              {
+                "r": "谓语",
+                "t": "was age,"
+              },
+              {
+                "r": "结果状语从句",
+                "t": "so the researchers concentrated on those \"surprise\" disappearances by directors under the age of 70.",
+                "lead": "so"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s12",
@@ -191,7 +313,25 @@
               "phonetic": "/ˈsʌbsɪkwəntli/",
               "meaning": "adv. 随后"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that after a surprise departure, the probability that the company will subsequently have to restate earnings increases by nearly 20%.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s13",
@@ -208,7 +348,32 @@
               "phonetic": "/ˈlaɪklihʊd/",
               "meaning": "n. 可能性"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The likelihood of being named in a federal class-action lawsuit"
+              },
+              {
+                "r": "谓语",
+                "t": "also increases,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "the stock"
+              },
+              {
+                "r": "谓语",
+                "t": "is likely to perform worse."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s14",
@@ -242,7 +407,30 @@
               "phonetic": "/səˈdʒestɪv/",
               "meaning": "adj. 引人联想的，耐人寻味的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Although a correlation between them leaving and subsequent bad performance at the firm is suggestive,",
+                "lead": "Although"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "does not mean"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that such directors are always jumping off a sinking ship.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s16",
@@ -271,7 +459,34 @@
               "phonetic": "/ˈrɒŋduːɪŋ/",
               "meaning": "n. 不当行为"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the researchers"
+              },
+              {
+                "r": "谓语",
+                "t": "believe"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that outside directors have an easier time of avoiding a blow to their reputations if they leave a firm before bad news breaks,",
+                "lead": "that"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "even if a review of history shows they were on the board at the time any wrongdoing occurred.",
+                "lead": "if"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text1_s18",
@@ -585,7 +800,16 @@
               "w": "returned to profit",
               "meaning": "重新盈利"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Even American newspapers, which inhabit the most troubled corner of the global industry, have not only survived but often returned to profit."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text2_s12",
@@ -642,7 +866,25 @@
               "phonetic": "/ˈnjuːzruːm/",
               "meaning": "n. 新闻编辑部"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The American Society of News Editors"
+              },
+              {
+                "r": "谓语",
+                "t": "reckons"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that 13,500 newsroom jobs have gone since 2007.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text2_s16",
@@ -684,7 +926,40 @@
               "w": "desperate measures",
               "meaning": "孤注一掷的措施"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "Yet"
+              },
+              {
+                "r": "主语",
+                "t": "these desperate measures"
+              },
+              {
+                "r": "谓语",
+                "t": "have proved the right ones"
+              },
+              {
+                "r": "并列",
+                "t": "and,"
+              },
+              {
+                "r": "状语",
+                "t": "sadly for many journalists,"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "can be pushed further."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text2_s19",
@@ -726,7 +1001,20 @@
               "phonetic": "/ˈfʊli/",
               "meaning": "adv. 足足，整整"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Fully 87% of their revenues came from advertising in 2008,"
+              },
+              {
+                "r": "状语",
+                "t": "according to the Organization for Economic Cooperation & Development (OECD)."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text2_s22",
@@ -773,7 +1061,32 @@
               "phonetic": "/dɪˈstɪŋktɪv/",
               "meaning": "adj. 有特色的，与众不同的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The whirlwind that swept through newsrooms"
+              },
+              {
+                "r": "谓语",
+                "t": "harmed everybody,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "much of the damage"
+              },
+              {
+                "r": "谓语",
+                "t": "has been concentrated in areas where newspapers are least distinctive."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text2_s25",
@@ -1004,7 +1317,24 @@
               "phonetic": "/ˈbjʊərəʊz/",
               "meaning": "n. 局，处"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "tend to think of the decades immediately following World War II as a time of prosperity and growth,"
+              },
+              {
+                "r": "分词短语",
+                "t": "with soldiers returning home by the millions, going off to college on the G. I. Bill and lining up at the marriage bureaus."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s02",
@@ -1020,7 +1350,39 @@
               "w": "common sense",
               "meaning": "常识"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when it came to their houses,",
+                "lead": "when"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "was"
+              },
+              {
+                "r": "表语",
+                "t": "a time of common sense and a belief"
+              },
+              {
+                "r": "定语从句",
+                "t": "that less could truly be more.",
+                "lead": "that",
+                "mod": "a belief"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s03",
@@ -1042,7 +1404,36 @@
               "phonetic": "/ˈstaɪlɪʃ/",
               "meaning": "adj. 时尚的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "During the Depression and the war,"
+              },
+              {
+                "r": "主语",
+                "t": "Americans"
+              },
+              {
+                "r": "谓语",
+                "t": "had learned to live with less,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "that restraint, in combination with the postwar confidence in the future,"
+              },
+              {
+                "r": "谓语",
+                "t": "made small, efficient housing positively stylish."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s04",
@@ -1077,7 +1468,26 @@
               "w": "took up posts",
               "meaning": "就职，任职"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The phrase \"less is more\""
+              },
+              {
+                "r": "谓语",
+                "t": "was actually first popularized by a German, the architect Ludwig Mies van der Rohe,"
+              },
+              {
+                "r": "定语从句",
+                "t": "who like other people associated with the Bauhaus, a school of design, emigrated to the United States before World War II and took up posts at American architecture schools.",
+                "lead": "who",
+                "mod": "Ludwig Mies van der Rohe"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s06",
@@ -1093,7 +1503,32 @@
               "w": "none more so than",
               "meaning": "没有谁比……更甚"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These designers"
+              },
+              {
+                "r": "谓语",
+                "t": "came to exert enormous influence on the course of American architecture,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "none"
+              },
+              {
+                "r": "谓语",
+                "t": "more so than Mies."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s07",
@@ -1144,7 +1579,40 @@
               "phonetic": "/ˈlæmɪneɪtɪd/",
               "meaning": "adj. 层压的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Like other modern architects,"
+              },
+              {
+                "r": "主语",
+                "t": "he"
+              },
+              {
+                "r": "谓语",
+                "t": "employed metal, glass and laminated wood – materials"
+              },
+              {
+                "r": "定语从句",
+                "t": "that we take for granted today",
+                "lead": "that",
+                "mod": "materials"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "定语从句",
+                "t": "that in the 1940s symbolized the future.",
+                "lead": "that",
+                "mod": "materials"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s10",
@@ -1166,7 +1634,26 @@
               "w": "rather than",
               "meaning": "而不是"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Mies's sophisticated presentation"
+              },
+              {
+                "r": "谓语",
+                "t": "masked the fact"
+              },
+              {
+                "r": "定语从句",
+                "t": "that the spaces he designed were small and efficient, rather than big and often empty.",
+                "lead": "that",
+                "mod": "the fact"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s11",
@@ -1182,7 +1669,20 @@
               "w": "square feet",
               "meaning": "平方英尺"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The apartments in the elegant towers Mies built on Chicago's Lake Shore Drive, for example,"
+              },
+              {
+                "r": "谓语",
+                "t": "were smaller – two-bedroom units under 1,000 square feet – than those in their older neighbors along the city's Gold Coast."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s12",
@@ -1205,7 +1705,28 @@
               "phonetic": "/prəˈpɔːʃnz/",
               "meaning": "n. 比例"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "were popular because of their airy glass walls, the views they afforded and the elegance of the buildings' details and proportions,"
+              },
+              {
+                "r": "同位语",
+                "t": "the architectural equivalent of the abstract art so popular at the time."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s13",
@@ -1235,7 +1756,24 @@
               "w": "two-story",
               "meaning": "adj. 两层的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In the 1930s"
+              },
+              {
+                "r": "主语",
+                "t": "Frank Lloyd Wright"
+              },
+              {
+                "r": "谓语",
+                "t": "started building more modest and efficient houses – usually around 1,200 square feet – than the spreading two-story ones he had designed in the 1890s and the early 20th century."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s15",
@@ -1253,7 +1791,20 @@
               "phonetic": "/ˌhəʊmˈɡrəʊn/",
               "meaning": "adj. 本土的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The \"Case Study Houses\" commissioned from talented modern architects by California Arts & Architecture magazine between 1945 and 1962"
+              },
+              {
+                "r": "谓语",
+                "t": "were yet another homegrown influence on the \"less is more\" trend."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text3_s16",
@@ -1288,7 +1839,36 @@
               "phonetic": "/ˌself səˈfɪʃnsi/",
               "meaning": "n. 自给自足"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In his Case Study House,"
+              },
+              {
+                "r": "主语",
+                "t": "Ralph Rapson"
+              },
+              {
+                "r": "谓语",
+                "t": "may have mispredicted just how the mechanical revolution would impact everyday life – few American families acquired helicopters, though most eventually got clothes dryers –"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "his belief that self-sufficiency was both desirable and inevitable"
+              },
+              {
+                "r": "谓语",
+                "t": "was widely shared."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -1469,7 +2049,24 @@
               "w": "population decline",
               "meaning": "人口下降"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Now"
+              },
+              {
+                "r": "主语",
+                "t": "even the project's greatest cheerleaders"
+              },
+              {
+                "r": "谓语",
+                "t": "talk of a continent facing a \"Bermuda triangle\" of debt, population decline and lower growth."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s04",
@@ -1495,7 +2092,28 @@
               "w": "single currency",
               "meaning": "单一货币"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "As well as those chronic problems,"
+              },
+              {
+                "r": "主语",
+                "t": "the EU"
+              },
+              {
+                "r": "谓语",
+                "t": "faces an acute crisis in its economic core,"
+              },
+              {
+                "r": "同位语",
+                "t": "the 16 countries that use the single currency."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s05",
@@ -1521,7 +2139,31 @@
               "phonetic": "/ˌdiːˌvæljuˈeɪʃn/",
               "meaning": "n. 货币贬值"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Markets"
+              },
+              {
+                "r": "谓语",
+                "t": "have lost faith"
+              },
+              {
+                "r": "同位语从句",
+                "t": "that the euro zone's economies, weaker or stronger, will one day converge thanks to the discipline of sharing a single currency,",
+                "lead": "that"
+              },
+              {
+                "r": "定语从句",
+                "t": "which denies uncompetitive members the quick fix of devaluation.",
+                "lead": "which",
+                "mod": "a single currency"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s06",
@@ -1556,7 +2198,25 @@
               "phonetic": "/ˌhɑːmənaɪˈzeɪʃn/",
               "meaning": "n. 协调，统一"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "is stuck"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "because the euro zone's dominant powers, France and Germany, agree on the need for greater harmonisation within the euro zone, but disagree about what to harmonise.",
+                "lead": "because"
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s08",
@@ -1578,7 +2238,24 @@
               "phonetic": "/kəmˈpetətɪvnəs/",
               "meaning": "n. 竞争力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Germany"
+              },
+              {
+                "r": "谓语",
+                "t": "thinks the euro must be saved by stricter rules on borrowing, spending and competitiveness,"
+              },
+              {
+                "r": "分词短语",
+                "t": "backed by quasi-automatic sanctions for governments that do not obey."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s09",
@@ -1600,7 +2277,20 @@
               "w": "voting rights",
               "meaning": "投票权"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These"
+              },
+              {
+                "r": "谓语",
+                "t": "might include threats to freeze EU funds for poorer regions and EU mega-projects, and even the suspension of a country's voting rights in EU ministerial councils."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s10",
@@ -1623,7 +2313,39 @@
               "phonetic": "/ˌɪntəˈfɪərəns/",
               "meaning": "n. 干预，干涉"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "insists"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that economic co-ordination should involve all 27 members of the EU club,",
+                "lead": "that"
+              },
+              {
+                "r": "定语从句",
+                "t": "among whom there is a small majority for free-market liberalism and economic rigour;",
+                "lead": "whom",
+                "mod": "all 27 members"
+              },
+              {
+                "r": "插入语",
+                "t": "in the inner core alone, Germany fears,"
+              },
+              {
+                "r": "宾语从句",
+                "t": "a small majority favour French interference."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s11",
@@ -1640,7 +2362,24 @@
               "phonetic": "/kæmp/",
               "meaning": "n. 阵营"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "A \"southern\" camp headed by France"
+              },
+              {
+                "r": "谓语",
+                "t": "wants something different:"
+              },
+              {
+                "r": "同位语",
+                "t": "\"European economic government\" within an inner core of euro-zone members."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s12",
@@ -1661,7 +2400,28 @@
               "w": "fiscal transfers",
               "meaning": "财政转移"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "分词短语",
+                "t": "Translated,"
+              },
+              {
+                "r": "主语",
+                "t": "that"
+              },
+              {
+                "r": "谓语",
+                "t": "means politicians intervening in monetary policy and a system of redistribution from richer to poorer members,"
+              },
+              {
+                "r": "状语",
+                "t": "via cheaper borrowing for governments through common Eurobonds or complete fiscal transfers."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s13",
@@ -1679,7 +2439,32 @@
               "phonetic": "/kɜːbɪŋ/",
               "meaning": "v. 抑制，控制"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "副词",
+                "t": "Finally,"
+              },
+              {
+                "r": "插入语",
+                "t": "figures close to the Franch government have murmured,"
+              },
+              {
+                "r": "主语",
+                "t": "euro-zone members"
+              },
+              {
+                "r": "谓语",
+                "t": "should agree to some fiscal and social harmonisation:"
+              },
+              {
+                "r": "举例",
+                "t": "e.g., curbing competition in corporate-tax rates or labour costs."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s14",
@@ -1725,7 +2510,36 @@
               "phonetic": "/ˈkɒmpərəbl/",
               "meaning": "adj. 可比的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "At its best,"
+              },
+              {
+                "r": "主语",
+                "t": "the European project"
+              },
+              {
+                "r": "谓语",
+                "t": "is remarkably liberal:"
+              },
+              {
+                "r": "分词短语",
+                "t": "built around a single market of 27 rich and poor countries,"
+              },
+              {
+                "r": "主语",
+                "t": "its internal borders"
+              },
+              {
+                "r": "谓语",
+                "t": "are far more open to goods, capital and labour than any comparable trading area."
+              }
+            ]
+          }
         },
         {
           "id": "2011_text4_s17",
