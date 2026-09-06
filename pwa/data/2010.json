@@ -24,7 +24,20 @@
               "w": "on a dramatic note",
               "meaning": "以戏剧性的方式"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The longest bull run in a century of art-market history"
+              },
+              {
+                "r": "谓语",
+                "t": "ended on a dramatic note with a sale of 56 works by Damien Hirst, Beautiful Inside My Head Forever, at Sotheby's in London on September 15th 2008."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s02",
@@ -41,7 +54,28 @@
               "phonetic": "/ˈfetʃɪŋ/",
               "meaning": "v. 售得，卖得（某价钱）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "All but two pieces"
+              },
+              {
+                "r": "谓语",
+                "t": "sold,"
+              },
+              {
+                "r": "分词短语",
+                "t": "fetching more than £70m,"
+              },
+              {
+                "r": "同位语",
+                "t": "a record for a sale by a single artist."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s03",
@@ -69,7 +103,29 @@
               "phonetic": "/ˌɔːkʃəˈnɪə/",
               "meaning": "n. 拍卖师"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "As the auctioneer called out bids,",
+                "lead": "As"
+              },
+              {
+                "r": "状语",
+                "t": "in New York"
+              },
+              {
+                "r": "主语",
+                "t": "one of the oldest banks on Wall Street, Lehman Brothers,"
+              },
+              {
+                "r": "谓语",
+                "t": "filed for bankruptcy."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s05",
@@ -86,7 +142,24 @@
               "phonetic": "/bɪˈwɪldərɪŋli/",
               "meaning": "adv. 令人费解地，令人瞠目地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The world art market"
+              },
+              {
+                "r": "谓语",
+                "t": "had already been losing momentum for a while"
+              },
+              {
+                "r": "时间状语",
+                "t": "after rising bewilderingly since 2003."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s06",
@@ -103,7 +176,32 @@
               "phonetic": "/ˈrekənz/",
               "meaning": "v. 估算，认为"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "At its peak in 2007"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "was worth some $65 billion,"
+              },
+              {
+                "r": "插入语",
+                "t": "reckons Clare McAndrew, founder of Arts Economics, a research firm"
+              },
+              {
+                "r": "同位语",
+                "t": "– double the figure five years earlier."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s07",
@@ -136,7 +234,29 @@
               "phonetic": "/ˈkɒntrəvɜːsi/",
               "meaning": "n. 争议"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the market"
+              },
+              {
+                "r": "谓语",
+                "t": "generates interest far beyond its size"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "because it brings together great wealth, enormous egos, greed, passion and controversy in a way matched by few other industries.",
+                "lead": "because"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s09",
@@ -188,7 +308,36 @@
               "phonetic": "/ˌəʊvəˈhiːtɪd/",
               "meaning": "adj. 过热的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Sales of contemporary art"
+              },
+              {
+                "r": "谓语",
+                "t": "fell by two-thirds,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "状语",
+                "t": "in the most overheated sector,"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "were down by nearly 90% in the year to November 2008."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s12",
@@ -205,7 +354,30 @@
               "phonetic": "/ˌɡærənˈtiːz/",
               "meaning": "n. 保证金"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Within weeks"
+              },
+              {
+                "r": "主语",
+                "t": "the world's two biggest auction houses, Sotheby's and Christie's,"
+              },
+              {
+                "r": "谓语",
+                "t": "had to pay out nearly $200m in guarantees to clients"
+              },
+              {
+                "r": "定语从句",
+                "t": "who had placed works for sale with them.",
+                "lead": "who",
+                "mod": "clients"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s13",
@@ -223,7 +395,25 @@
               "phonetic": "/ɪmˈpreʃənɪsts/",
               "meaning": "n. 印象派画家（作品）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The current downturn in the art market"
+              },
+              {
+                "r": "谓语",
+                "t": "is the worst"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "since the Japanese stopped buying Impressionists at the end of 1989.",
+                "lead": "since"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s14",
@@ -240,7 +430,29 @@
               "phonetic": "/ˈflʌktʃuənt/",
               "meaning": "adj. 波动的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "This time"
+              },
+              {
+                "r": "主语",
+                "t": "experts"
+              },
+              {
+                "r": "谓语",
+                "t": "reckon that prices are about 40% down on their peak on average,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "though some have been far more fluctuant.",
+                "lead": "though"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s15",
@@ -269,7 +481,29 @@
               "phonetic": "/slʌmp/",
               "meaning": "n. 萧条，暴跌"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "What makes this slump different from the last,"
+              },
+              {
+                "r": "插入语",
+                "t": "he says,"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语从句",
+                "t": "that there are still buyers in the market.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s17",
@@ -285,7 +519,31 @@
               "w": "a lack of",
               "meaning": "缺乏"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Almost everyone"
+              },
+              {
+                "r": "定语从句",
+                "t": "who was interviewed for this special report",
+                "lead": "who",
+                "mod": "Almost everyone"
+              },
+              {
+                "r": "谓语",
+                "t": "said"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the biggest problem at the moment is not a lack of demand but a lack of good work to sell.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text1_s18",
@@ -473,7 +731,26 @@
               "phonetic": "/ˈɡæðərɪŋ/",
               "meaning": "n. 聚会"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "I"
+              },
+              {
+                "r": "谓语",
+                "t": "was addressing a small gathering in a suburban Virginia living room – a women's group"
+              },
+              {
+                "r": "定语从句",
+                "t": "that had invited men to join them.",
+                "lead": "that",
+                "mod": "a women's group"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s02",
@@ -491,7 +768,29 @@
               "phonetic": "/ˈænɪkdəʊts/",
               "meaning": "n. 轶事，趣闻"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Throughout the evening,"
+              },
+              {
+                "r": "主语",
+                "t": "one man"
+              },
+              {
+                "r": "谓语",
+                "t": "had been particularly talkative, frequently offering ideas and anecdotes,"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "while his wife sat silently beside him on the couch.",
+                "lead": "while"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s03",
@@ -504,7 +803,29 @@
               "phonetic": "/ˈkɒmentɪd/",
               "meaning": "v. 评论"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Toward the end of the evening,"
+              },
+              {
+                "r": "主语",
+                "t": "I"
+              },
+              {
+                "r": "谓语",
+                "t": "commented"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that women frequently complain that their husbands don't talk to them.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s04",
@@ -562,7 +883,24 @@
               "w": "in silence",
               "meaning": "沉默地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"It's true,\""
+              },
+              {
+                "r": "插入语",
+                "t": "he explained."
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"When I come home from work I have nothing to say. If she didn't keep the conversation going, we'd spend the whole evening in silence.\""
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s08",
@@ -580,7 +918,26 @@
               "phonetic": "/ˈaɪrəni/",
               "meaning": "n. 讽刺，反讽"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This episode"
+              },
+              {
+                "r": "谓语",
+                "t": "crystallizes the irony"
+              },
+              {
+                "r": "定语从句",
+                "t": "that although American men tend to talk more than women in public situations, they often talk less at home.",
+                "lead": "that",
+                "mod": "the irony"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s09",
@@ -622,7 +979,25 @@
               "phonetic": "/ˌsəʊsiˈɒlədʒɪst/",
               "meaning": "n. 社会学家"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Sociologist Catherine Kohler Riessman"
+              },
+              {
+                "r": "谓语",
+                "t": "reports in her new book Divorce Talk"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that most of the women she interviewed – but only a few of the men – gave lack of communication as the reason for their divorces.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s12",
@@ -644,7 +1019,24 @@
               "phonetic": "/ˌepɪˈdemɪk/",
               "meaning": "n. 流行病"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "分词短语",
+                "t": "Given the current divorce rate of nearly 50 percent,"
+              },
+              {
+                "r": "主语",
+                "t": "that"
+              },
+              {
+                "r": "谓语",
+                "t": "amounts to millions of cases in the United States every year – a virtual epidemic of failed conversation."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s13",
@@ -666,7 +1058,28 @@
               "w": "given up",
               "meaning": "放弃"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In my own research,"
+              },
+              {
+                "r": "主语",
+                "t": "complaints from women about their husbands"
+              },
+              {
+                "r": "谓语",
+                "t": "most often focused not on tangible inequities"
+              },
+              {
+                "r": "举例",
+                "t": "such as having given up the chance for a career to accompany a husband to his, or doing far more than their share of daily life-support work like cleaning, cooking and social arrangements."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s14",
@@ -694,7 +1107,37 @@
               "w": "conversational partners",
               "meaning": "谈话伴侣"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "I"
+              },
+              {
+                "r": "谓语",
+                "t": "found, as Hacker observed years before,"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that most wives want their husbands to be, first and foremost, conversational partners,",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "few husbands"
+              },
+              {
+                "r": "谓语",
+                "t": "share this expectation of their wives."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text2_s16",
@@ -715,7 +1158,29 @@
               "w": "glares at",
               "meaning": "怒视，瞪着"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In short,"
+              },
+              {
+                "r": "主语",
+                "t": "the image that best represents the current crisis"
+              },
+              {
+                "r": "谓语",
+                "t": "is the stereotypical cartoon scene of a man sitting at the breakfast table with a newspaper held up in front of his face,"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "while a woman glares at the back of it, wanting to talk.",
+                "lead": "while"
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -875,7 +1340,24 @@
               "w": "automatic behaviors",
               "meaning": "自动化行为"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Over the past decade,"
+              },
+              {
+                "r": "主语",
+                "t": "many companies"
+              },
+              {
+                "r": "谓语",
+                "t": "had perfected the art of creating automatic behaviors – habits – among consumers."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s02",
@@ -892,7 +1374,29 @@
               "phonetic": "/kjuːz/",
               "meaning": "n. 暗示，提示"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These habits"
+              },
+              {
+                "r": "谓语",
+                "t": "have helped companies earn billions of dollars"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when customers eat snacks or wipe counters almost without thinking,",
+                "lead": "when"
+              },
+              {
+                "r": "状语",
+                "t": "often in response to a carefully designed set of daily cues."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s03",
@@ -909,7 +1413,24 @@
               "phonetic": "/ˌfʌndəˈmentl/",
               "meaning": "adj. 根本的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"There are fundamental public health problems, like dirty hands instead of a soap habit, that remain killers only because we can't figure out how to change people's habits,\""
+              },
+              {
+                "r": "插入语",
+                "t": "said Dr. Curtis,"
+              },
+              {
+                "r": "同位语",
+                "t": "the director of the Hygiene Center at the London School of Hygiene & Tropical Medicine."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s04",
@@ -943,7 +1464,26 @@
               "phonetic": "/ruːˈtiːnz/",
               "meaning": "n. 惯例，例行之事"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The companies that Dr. Curtis turned to – Procter & Gamble, Colgate-Palmolive and Unilever –"
+              },
+              {
+                "r": "谓语",
+                "t": "had invested hundreds of millions of dollars finding the subtle cues in consumers' lives"
+              },
+              {
+                "r": "定语从句",
+                "t": "that corporations could use to introduce new routines.",
+                "lead": "that",
+                "mod": "the subtle cues"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s06",
@@ -961,7 +1501,30 @@
               "phonetic": "/ˌmænjuˈfæktʃəd/",
               "meaning": "adj. 人为制造的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If you look hard enough,",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "you'll"
+              },
+              {
+                "r": "谓语",
+                "t": "find"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that many of the products we use every day – chewing gums, skin moisturizers, disinfecting wipes, air fresheners, water purifiers, health snacks, teeth whiteners, fabric softeners, vitamins – are results of manufactured habits.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s07",
@@ -996,7 +1559,28 @@
               "phonetic": "/ˈkævəti/",
               "meaning": "n. 蛀洞，龋洞"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Today, because of shrewd advertising and public health campaigns,"
+              },
+              {
+                "r": "主语",
+                "t": "many Americans"
+              },
+              {
+                "r": "谓语",
+                "t": "habitually give their pearly whites a cavity-preventing scrub twice a day,"
+              },
+              {
+                "r": "状语",
+                "t": "often with Colgate, Crest or one of the other brands."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s09",
@@ -1030,7 +1614,36 @@
               "phonetic": "/sɪp/",
               "meaning": "v. 小口喝，啜饮"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Then beverage companies"
+              },
+              {
+                "r": "谓语",
+                "t": "started bottling the production of far-off springs,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "状语",
+                "t": "now"
+              },
+              {
+                "r": "主语",
+                "t": "office workers"
+              },
+              {
+                "r": "谓语",
+                "t": "unthinkingly sip bottled water all day long."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s11",
@@ -1052,7 +1665,24 @@
               "phonetic": "/kəˈmɜːʃlz/",
               "meaning": "n. 商业广告"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Chewing gum,"
+              },
+              {
+                "r": "插入语",
+                "t": "once bought primarily by adolescent boys,"
+              },
+              {
+                "r": "谓语",
+                "t": "is now featured in commercials as a breath freshener and teeth cleanser for use after a meal."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s12",
@@ -1069,7 +1699,24 @@
               "phonetic": "/ˈrɪtʃuəlz/",
               "meaning": "n. 例行程序，仪式"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Skin moisturizers"
+              },
+              {
+                "r": "谓语",
+                "t": "are advertised as part of morning beauty rituals,"
+              },
+              {
+                "r": "分词短语",
+                "t": "slipped in between hair brushing and putting on makeup."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s13",
@@ -1086,7 +1733,30 @@
               "w": "retired from",
               "meaning": "从……退休"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Our products succeed when they become part of daily or weekly patterns,\""
+              },
+              {
+                "r": "插入语",
+                "t": "said Carol Berning,"
+              },
+              {
+                "r": "同位语",
+                "t": "a consumer psychologist who recently retired from Procter & Gamble,"
+              },
+              {
+                "r": "定语从句",
+                "t": "the company that sold $76 billion of Tide, Crest and other products last year.",
+                "lead": "that",
+                "mod": "Procter & Gamble"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s14",
@@ -1103,7 +1773,16 @@
               "phonetic": "/ɪˈsenʃl/",
               "meaning": "adj. 必不可少的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Creating positive habits is a huge part of improving our consumers' lives, and it's essential to making new products commercially viable.\""
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s15",
@@ -1121,7 +1800,29 @@
               "phonetic": "/ˈruːθləs/",
               "meaning": "adj. 无情的，不遗余力的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Through experiments and observation,"
+              },
+              {
+                "r": "主语",
+                "t": "social scientists like Dr. Berning"
+              },
+              {
+                "r": "谓语",
+                "t": "have learned"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that there is power in tying certain behaviors to habitual cues through ruthless advertising.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text3_s16",
@@ -1144,7 +1845,30 @@
               "phonetic": "/ˈtæktɪks/",
               "meaning": "n. 策略，手段"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "As this new science of habit has emerged,",
+                "lead": "As"
+              },
+              {
+                "r": "主语",
+                "t": "controversies"
+              },
+              {
+                "r": "谓语",
+                "t": "have erupted"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when the tactics have been used to sell questionable beauty creams or unhealthy foods.",
+                "lead": "when"
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -1317,7 +2041,24 @@
               "phonetic": "/ˈvɜːdɪkts/",
               "meaning": "n. 裁决，判决"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Many Americans"
+              },
+              {
+                "r": "谓语",
+                "t": "regard the jury system as a concrete expression of crucial democratic values,"
+              },
+              {
+                "r": "分词短语",
+                "t": "including the principles that all citizens who meet minimal qualifications of age and literacy are equally competent to serve on juries; that jurors should be selected randomly from a representative cross section of the community; that no citizen should be denied the right to serve on a jury on account of race, religion, sex, or national origin; that defendants are entitled to trial by their peers; and that verdicts should represent the conscience of the community and not just the letter of the law."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s02",
@@ -1362,7 +2103,28 @@
               "w": "conflicted with",
               "meaning": "与……冲突"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "状语",
+                "t": "as recently as in 1968,"
+              },
+              {
+                "r": "主语",
+                "t": "jury selection procedures"
+              },
+              {
+                "r": "谓语",
+                "t": "conflicted with these democratic ideals."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s05",
@@ -1379,7 +2141,24 @@
               "phonetic": "/səˈpəʊzɪdli/",
               "meaning": "adv. 据称，所谓"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In some states, for example,"
+              },
+              {
+                "r": "主语",
+                "t": "jury duty"
+              },
+              {
+                "r": "谓语",
+                "t": "was limited to persons of supposedly superior intelligence, education, and moral character."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s06",
@@ -1400,7 +2179,25 @@
               "phonetic": "/prəˈhɪbɪtɪd/",
               "meaning": "v. 禁止"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Although the Supreme Court of the United States had prohibited intentional racial discrimination in jury selection as early as the 1880 case of Strauder v. West Virginia,",
+                "lead": "Although"
+              },
+              {
+                "r": "主语",
+                "t": "the practice of selecting so-called elite or blue-ribbon juries"
+              },
+              {
+                "r": "谓语",
+                "t": "provided a convenient way around this and other antidiscrimination laws."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s07",
@@ -1428,7 +2225,30 @@
               "w": "eligible for",
               "meaning": "有资格的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Although women first served on state juries in Utah in 1898,",
+                "lead": "Although"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "was not until the 1940s"
+              },
+              {
+                "r": "主语从句",
+                "t": "that a majority of states made women eligible for jury duty.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s09",
@@ -1445,7 +2265,29 @@
               "w": "included on",
               "meaning": "列入"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Even then"
+              },
+              {
+                "r": "主语",
+                "t": "several states"
+              },
+              {
+                "r": "谓语",
+                "t": "automatically exempted women from jury duty"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "unless they personally asked to have their names included on the jury list.",
+                "lead": "unless"
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s10",
@@ -1462,7 +2304,37 @@
               "phonetic": "/ˌʌnreprɪˈzentətɪv/",
               "meaning": "adj. 不具代表性的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This practice"
+              },
+              {
+                "r": "谓语",
+                "t": "was justified by the claim"
+              },
+              {
+                "r": "同位语从句",
+                "t": "that women were needed at home,",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "kept juries unrepresentative of women through the 1960s."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s11",
@@ -1474,7 +2346,28 @@
               "w": "ushering in",
               "meaning": "开创，引领"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In 1968,"
+              },
+              {
+                "r": "主语",
+                "t": "the Congress of the United States"
+              },
+              {
+                "r": "谓语",
+                "t": "passed the Jury Selection and Service Act,"
+              },
+              {
+                "r": "分词短语",
+                "t": "ushering in a new era of democratic reforms for the jury."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s12",
@@ -1491,7 +2384,20 @@
               "phonetic": "/əˈbɒlɪʃt/",
               "meaning": "v. 废除"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This law"
+              },
+              {
+                "r": "谓语",
+                "t": "abolished special educational requirements for federal jurors and required them to be selected at random from a cross section of the entire community."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s13",
@@ -1508,7 +2414,33 @@
               "w": "representative of",
               "meaning": "代表……的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In the landmark 1975 decision Taylor v. Louisiana,"
+              },
+              {
+                "r": "主语",
+                "t": "the Supreme Court"
+              },
+              {
+                "r": "谓语",
+                "t": "extended the requirement"
+              },
+              {
+                "r": "同位语从句",
+                "t": "that juries be representative of all parts of the community",
+                "lead": "that"
+              },
+              {
+                "r": "状语",
+                "t": "to the state level."
+              }
+            ]
+          }
         },
         {
           "id": "2010_text4_s14",
@@ -1525,7 +2457,20 @@
               "phonetic": "/ˌʌnkɒnstɪˈtjuːʃənl/",
               "meaning": "adj. 违宪的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Taylor decision"
+              },
+              {
+                "r": "谓语",
+                "t": "also declared sex discrimination in jury selection to be unconstitutional and ordered states to use the same procedures for selecting male and female jurors."
+              }
+            ]
+          }
         }
       ],
       "questions": [
