@@ -145,7 +145,10 @@
      "type": "reading",
      "answer": "C",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "人物观点",
+     "tip": "人物观点题：只认此人（或该群体）说过的话——答案必须有他/她/他们本人的直接或间接表述作依据；他人、机构的观点即使文中属实，也只是干扰项。",
+     "qtype": "viewpoint"
     },
     {
      "number": 22,
@@ -160,7 +163,10 @@
      "type": "reading",
      "answer": "D",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     },
     {
      "number": 23,
@@ -175,7 +181,10 @@
      "type": "reading",
      "answer": "A",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "词义题",
+     "tip": "词义题：本义 / 常义多为干扰——答案看上下文逻辑（并列 / 转折 / 因果 / 举例），把四个选项代回原句验证语义通顺且与主旨一致。",
+     "qtype": "vocabulary"
     },
     {
      "number": 24,
@@ -190,7 +199,10 @@
      "type": "reading",
      "answer": "D",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "人物观点",
+     "tip": "人物观点题：只认此人（或该群体）说过的话——答案必须有他/她/他们本人的直接或间接表述作依据；他人、机构的观点即使文中属实，也只是干扰项。",
+     "qtype": "viewpoint"
     },
     {
      "number": 25,
@@ -205,7 +217,10 @@
      "type": "reading",
      "answer": "A",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实推断",
+     "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。",
+     "qtype": "inference"
     }
    ],
    "sentence_count": 17,
@@ -346,7 +361,10 @@
      "type": "reading",
      "answer": "A",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     },
     {
      "number": 27,
@@ -361,7 +379,10 @@
      "type": "reading",
      "answer": "C",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     },
     {
      "number": 28,
@@ -376,7 +397,10 @@
      "type": "reading",
      "answer": "D",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "人物观点",
+     "tip": "人物观点题：只认此人（或该群体）说过的话——答案必须有他/她/他们本人的直接或间接表述作依据；他人、机构的观点即使文中属实，也只是干扰项。",
+     "qtype": "viewpoint"
     },
     {
      "number": 29,
@@ -391,7 +415,10 @@
      "type": "reading",
      "answer": "A",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     },
     {
      "number": 30,
@@ -406,7 +433,10 @@
      "type": "reading",
      "answer": "B",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     }
    ],
    "sentence_count": 16,
@@ -575,7 +605,10 @@
      "type": "reading",
      "answer": "D",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "态度题",
+     "tip": "态度题：答案 = 作者的“态度词”——找评价性形容词/副词与转折词后的立场；中性项（indifferent / objective 等）常是干扰，作者完全中立少见。",
+     "qtype": "attitude"
     },
     {
      "number": 32,
@@ -590,7 +623,10 @@
      "type": "reading",
      "answer": "B",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     },
     {
      "number": 33,
@@ -605,7 +641,10 @@
      "type": "reading",
      "answer": "B",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     },
     {
      "number": 34,
@@ -620,7 +659,10 @@
      "type": "reading",
      "answer": "C",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     }
    ],
    "sentence_count": 20,
@@ -747,7 +789,10 @@
      "type": "reading",
      "answer": "B",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "态度题",
+     "tip": "态度题：答案 = 作者的“态度词”——找评价性形容词/副词与转折词后的立场；中性项（indifferent / objective 等）常是干扰，作者完全中立少见。",
+     "qtype": "attitude"
     },
     {
      "number": 38,
@@ -762,7 +807,10 @@
      "type": "reading",
      "answer": "D",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实细节",
+     "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。",
+     "qtype": "detail"
     },
     {
      "number": 39,
@@ -777,7 +825,10 @@
      "type": "reading",
      "answer": "A",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "例证题",
+     "tip": "例证题：例子本身不是答案——问例子的目的时，答案在其前的论点句或之后的总结句（论点先行或尾随）。",
+     "qtype": "example"
     },
     {
      "number": 40,
@@ -792,7 +843,10 @@
      "type": "reading",
      "answer": "C",
      "explanation": "",
-     "related_sentences": []
+     "related_sentences": [],
+     "quick": "事实推断",
+     "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。",
+     "qtype": "inference"
     }
    ],
    "sentence_count": 14,
