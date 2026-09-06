@@ -84,7 +84,32 @@
               "w": "climate-friendly eggs",
               "meaning": "气候友好型鸡蛋"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "all seems"
+              },
+              {
+                "r": "表语",
+                "t": "random,"
+              },
+              {
+                "r": "并列",
+                "t": "but it's by design,"
+              },
+              {
+                "r": "同位语",
+                "t": "part of what the $6.1 billion U.S. egg industry bets will be its next big thing: climate-friendly eggs."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s05",
@@ -112,7 +137,40 @@
               "w": "trap green-house gases",
               "meaning": "捕获温室气体"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These eggs,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which are making their debut now on shelves for as much as $8 a dozen,"
+              },
+              {
+                "r": "谓语",
+                "t": "are still labeled"
+              },
+              {
+                "r": "表语",
+                "t": "organic and animal-friendly,"
+              },
+              {
+                "r": "并列",
+                "t": "but they're also from birds"
+              },
+              {
+                "r": "定语从句",
+                "t": "that live on farms using regenerative agriculture - special techniques to cultivate rich soils"
+              },
+              {
+                "r": "定语从句",
+                "t": "that can trap green-house gases."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s06",
@@ -152,7 +210,28 @@
               "w": "crickets",
               "meaning": "n. 蟋蟀（cricket 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语",
+                "t": "\"I'm excited about our progress,\""
+              },
+              {
+                "r": "谓语",
+                "t": "says"
+              },
+              {
+                "r": "主语",
+                "t": "Brown,"
+              },
+              {
+                "r": "定语从句",
+                "t": "who is adding more cover crops that draw worms and crickets for the chickens to eat."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s08",
@@ -192,7 +271,28 @@
               "w": "supply to",
               "meaning": "供应给"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Such improvements"
+              },
+              {
+                "r": "谓语",
+                "t": "\"allow"
+              },
+              {
+                "r": "宾语",
+                "t": "our hens to forage for higher-quality natural feed"
+              },
+              {
+                "r": "定语从句",
+                "t": "that will be good for the land, the hens, and the eggs that we supply to our customers.\""
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s10",
@@ -212,7 +312,24 @@
               "w": "premium offering",
               "meaning": "高端产品，优质产品"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The egg industry's push"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "the first major test of whether animal products from regenerative farms can become the next premium offering."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s11",
@@ -232,7 +349,28 @@
               "w": "niche product",
               "meaning": "小众产品，利基产品"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In barely more than a decade,"
+              },
+              {
+                "r": "主语",
+                "t": "organic eggs"
+              },
+              {
+                "r": "谓语",
+                "t": "went"
+              },
+              {
+                "r": "状语",
+                "t": "from being dismissed as a niche product in natural foods stores to being sold at Walmart."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s12",
@@ -256,7 +394,32 @@
               "w": "exploded into",
               "meaning": "迅猛发展为，激增为"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "More recently"
+              },
+              {
+                "r": "主语",
+                "t": "there"
+              },
+              {
+                "r": "谓语",
+                "t": "were"
+              },
+              {
+                "r": "表语",
+                "t": "similar doubts about probiotics and plant-based meats,"
+              },
+              {
+                "r": "并列",
+                "t": "but both have exploded into major supermarket categories."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s13",
@@ -296,7 +459,32 @@
               "w": "associate professor",
               "meaning": "副教授"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Regenerative products"
+              },
+              {
+                "r": "谓语",
+                "t": "could be"
+              },
+              {
+                "r": "表语",
+                "t": "a hard sell,"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "because the concept is tough to define quickly,"
+              },
+              {
+                "r": "插入语",
+                "t": "says Julie Stanton, associate professor of agricultural economics at Pennsylvania State University Brandywine."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s15",
@@ -316,7 +504,24 @@
               "w": "protein",
               "meaning": "n. 蛋白质"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Such farming"
+              },
+              {
+                "r": "谓语",
+                "t": "also brings"
+              },
+              {
+                "r": "宾语",
+                "t": "minimal, if any, improvement to the food products (though some producers say their eggs have more protein)."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s16",
@@ -340,7 +545,24 @@
               "w": "embrace",
               "meaning": "v. 欣然接受，乐意采纳"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The industry"
+              },
+              {
+                "r": "谓语",
+                "t": "is betting"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the same consumers paying more for premium attributes such as free-range, non-GMO, and pasture-raised eggs will embrace sustainability."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s17",
@@ -360,7 +582,28 @@
               "w": "signal",
               "meaning": "v. 表达，表明"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Surveys"
+              },
+              {
+                "r": "谓语",
+                "t": "show"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that younger generations are more concerned about climate change,"
+              },
+              {
+                "r": "并列",
+                "t": "and some of the success of plant-based meat can be chalked up to shoppers wanting to signal their desire to protect the environment."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text1_s18",
@@ -568,7 +811,32 @@
               "w": "workforce",
               "meaning": "n. 劳动力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "More Americans"
+              },
+              {
+                "r": "谓语",
+                "t": "are opting"
+              },
+              {
+                "r": "宾语",
+                "t": "to work well into retirement,"
+              },
+              {
+                "r": "同位语",
+                "t": "a growing trend"
+              },
+              {
+                "r": "定语从句",
+                "t": "that threatens to upend the old workforce model."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text2_s02",
@@ -592,7 +860,32 @@
               "w": "according to a survey",
               "meaning": "根据一项调查"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "One in three Americans"
+              },
+              {
+                "r": "定语从句",
+                "t": "who are at least 40"
+              },
+              {
+                "r": "谓语",
+                "t": "have, or plan to have"
+              },
+              {
+                "r": "宾语",
+                "t": "a job in retirement to prepare for a longer life,"
+              },
+              {
+                "r": "插入语",
+                "t": "according to a survey conducted by Harris Poll for TD Ameritrade."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text2_s03",
@@ -612,7 +905,28 @@
               "w": "settle down",
               "meaning": "安定下来，过安定生活"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "表语",
+                "t": "Even more surprising"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语从句",
+                "t": "that more than half of \"unretirees\" - those who plan to work in retirement or went back to work after retiring - said they would be employed in their later years even if they had enough money to settle down,"
+              },
+              {
+                "r": "插入语",
+                "t": "the survey showed."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text2_s04",
@@ -648,7 +962,28 @@
               "w": "avoiding depression",
               "meaning": "避免抑郁"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Other reasons,"
+              },
+              {
+                "r": "插入语",
+                "t": "according to the study,"
+              },
+              {
+                "r": "谓语",
+                "t": "include"
+              },
+              {
+                "r": "宾语",
+                "t": "personal fulfillment such as staying mentally fit, preventing boredom or avoiding depression."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text2_s06",
@@ -772,7 +1107,32 @@
               "w": "money manager",
               "meaning": "资金管理公司/经理"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "About 20% of people 65 and older"
+              },
+              {
+                "r": "谓语",
+                "t": "were"
+              },
+              {
+                "r": "状语",
+                "t": "in the workforce in February 2019,"
+              },
+              {
+                "r": "分词短语",
+                "t": "up from an all-time low of 10% in January 1985,"
+              },
+              {
+                "r": "插入语",
+                "t": "according to money manager United Income."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text2_s13",
@@ -792,7 +1152,36 @@
               "w": "nest eggs",
               "meaning": "备用的钱，储备金"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Because of longer life spans,"
+              },
+              {
+                "r": "主语",
+                "t": "Americans"
+              },
+              {
+                "r": "谓语",
+                "t": "are also boosting"
+              },
+              {
+                "r": "宾语",
+                "t": "their savings to preserve their nest eggs,"
+              },
+              {
+                "r": "插入语",
+                "t": "the TD Ameritrade study showed,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which surveyed 2,000 adults between 40 to 79."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text2_s14",
@@ -828,7 +1217,28 @@
               "w": "maximizing their contributions",
               "meaning": "使缴款最大化"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "表语",
+                "t": "Among the most popular ways they are doing this,"
+              },
+              {
+                "r": "插入语",
+                "t": "the company said,"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "by reducing their overall expenses, securing life insurance or maximizing their contributions to retirement accounts."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text2_s16",
@@ -848,7 +1258,40 @@
               "w": "co-founder",
               "meaning": "n. 联合创始人"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Unfortunately,"
+              },
+              {
+                "r": "主语",
+                "t": "many people"
+              },
+              {
+                "r": "定语从句",
+                "t": "who are opting to work in retirement"
+              },
+              {
+                "r": "谓语",
+                "t": "are preparing"
+              },
+              {
+                "r": "宾语",
+                "t": "to do so because they are worried about making ends meet in their later years,"
+              },
+              {
+                "r": "谓语",
+                "t": "said"
+              },
+              {
+                "r": "主语",
+                "t": "Brent Weiss, a co-founder at Baltimore-based financial-planning firm Facet Wealth."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text2_s17",
