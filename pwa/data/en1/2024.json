@@ -16,7 +16,36 @@
      "en": "Nearly 2,000 years ago, as the Romans began to pull out of Scotland, they left behind a curious treasure: 10 tons of nails, nearly a million of the things.",
      "cn": "约两千年前，当罗马人开始从苏格兰撤军时，他们留下了一件奇特的“珍宝”：10吨铁钉，近百万枚之多。",
      "id": "en1_2024_text1_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Nearly 2,000 years ago,"
+       },
+       {
+        "r": "状语从句",
+        "t": "as the Romans began to pull out of Scotland,"
+       },
+       {
+        "r": "主语",
+        "t": "they"
+       },
+       {
+        "r": "谓语",
+        "t": "left behind"
+       },
+       {
+        "r": "宾语",
+        "t": "a curious treasure:"
+       },
+       {
+        "r": "同位语",
+        "t": "10 tons of nails, nearly a million of the things."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -37,7 +66,28 @@
      "en": "The likely explanation is that the withdrawal was rushed, and they didn't want the local Caledonians getting their hands on 10 tons of weapon-grade iron.",
      "cn": "最可能的解释是，这次撤军十分仓促，而他们不想让当地的喀里多尼亚人得到这10吨可用于制造武器的铁。",
      "id": "en1_2024_text1_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The likely explanation"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语从句",
+        "t": "that the withdrawal was rushed,"
+       },
+       {
+        "r": "并列",
+        "t": "and they didn't want the local Caledonians getting their hands on 10 tons of weapon-grade iron."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -58,7 +108,32 @@
      "en": "As Roma Agrawal explains in her new delightful book Nuts and Bolts, early 17th-century Virginians would sometimes burn down their homes if they were planning to relocate.",
      "cn": "正如罗马·阿格拉瓦尔在她新近出版的精彩著作《螺母与螺栓》中所解释的，17世纪初的弗吉尼亚人如果打算搬迁，有时会把自家的房子烧掉。",
      "id": "en1_2024_text1_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语从句",
+        "t": "As Roma Agrawal explains in her new delightful book Nuts and Bolts,"
+       },
+       {
+        "r": "主语",
+        "t": "early 17th-century Virginians"
+       },
+       {
+        "r": "谓语",
+        "t": "would sometimes burn down"
+       },
+       {
+        "r": "宾语",
+        "t": "their homes"
+       },
+       {
+        "r": "状语从句",
+        "t": "if they were planning to relocate."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -72,21 +147,84 @@
      "en": "The idea that one might burn down an entire house just to reclaim the nails underlines how scarce, costly and valuable the simpleseeming technology was.",
      "cn": "一个人竟会为了取回铁钉而烧掉整座房子，这一念头凸显出这项看似简单的技术当时是多么稀缺、昂贵而又珍贵。",
      "id": "en1_2024_text1_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "同位语从句",
+        "t": "The idea that one might burn down an entire house just to reclaim the nails"
+       },
+       {
+        "r": "谓语",
+        "t": "underlines"
+       },
+       {
+        "r": "宾语",
+        "t": "how scarce, costly and valuable the simpleseeming technology was."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The price of nails fell by 90etween the late 1700s and mid-1900s, as economist Daniel Sichel points out in a research paper.",
      "cn": "正如经济学家丹尼尔·西歇尔在一篇研究论文中指出的，从18世纪末到20世纪中叶，铁钉的价格下降了约90%。",
      "id": "en1_2024_text1_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The price of nails"
+       },
+       {
+        "r": "谓语",
+        "t": "fell by 90etween the late 1700s and mid-1900s,"
+       },
+       {
+        "r": "状语从句",
+        "t": "as economist Daniel Sichel points out in a research paper."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "According to Sichel, although the falling price of nails was driven partly by cheaper iron and cheaper energy, most of the credit goes to nail manufacturers who simply found more efficient ways to turn steel into nails.",
      "cn": "据西歇尔所说，尽管铁钉价格下降部分归因于更廉价的铁和更廉价的能源，但最大的功劳要归于那些找到了把钢更高效制成铁钉方法的制造商。",
      "id": "en1_2024_text1_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "插入语",
+        "t": "According to Sichel,"
+       },
+       {
+        "r": "状语从句",
+        "t": "although the falling price of nails was driven partly by cheaper iron and cheaper energy,"
+       },
+       {
+        "r": "主语",
+        "t": "most of the credit"
+       },
+       {
+        "r": "谓语",
+        "t": "goes to"
+       },
+       {
+        "r": "宾语",
+        "t": "nail manufacturers"
+       },
+       {
+        "r": "定语从句",
+        "t": "who simply found more efficient ways to turn steel into nails."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -100,42 +238,180 @@
      "en": "Roman lamps and Roman chariots are very different from LED strips and sports cars, but Roman nails are still clearly nails.",
      "cn": "罗马的灯具、罗马的战车与LED灯带、跑车截然不同，但罗马的铁钉显然仍是铁钉。",
      "id": "en1_2024_text1_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Roman lamps and Roman chariots"
+       },
+       {
+        "r": "谓语",
+        "t": "are very different from"
+       },
+       {
+        "r": "宾语",
+        "t": "LED strips and sports cars,"
+       },
+       {
+        "r": "并列",
+        "t": "but Roman nails are still clearly nails."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It would be absurd to try to track the changing price of sports cars since 1695, but to ask the same question of nails makes perfect sense.",
      "cn": "若要追踪自1695年以来跑车价格的变化，那会显得荒谬；但对铁钉提出同样的问题却完全说得通。",
      "id": "en1_2024_text1_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "would be absurd"
+       },
+       {
+        "r": "不定式短语",
+        "t": "to try to track the changing price of sports cars since 1695,"
+       },
+       {
+        "r": "并列",
+        "t": "but to ask the same question of nails makes perfect sense."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "I make no apology for being obsessed by a particular feature of everyday objects: their price.I am an economist, after all.",
      "cn": "我丝毫不讳言自己对日常用品的一个特定特征——它们的价格——的痴迷。毕竟，我是一名经济学家。",
      "id": "en1_2024_text1_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "I"
+       },
+       {
+        "r": "谓语",
+        "t": "make no apology for"
+       },
+       {
+        "r": "宾语",
+        "t": "being obsessed by a particular feature of everyday objects:"
+       },
+       {
+        "r": "同位语",
+        "t": "their price.I am an economist, after all."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "After writing two books about the history of inventions, one thing I've learnt is that while it is the enchantingly sophisticated technologies that get all the hype, it's the cheap technologies that change the world.",
      "cn": "在写了两本关于发明史的书之后，我学到的一点是：获得所有追捧的，往往是那些迷人而精密的技术，但改变世界的，却是廉价的技术。",
      "id": "en1_2024_text1_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "After writing two books about the history of inventions,"
+       },
+       {
+        "r": "主语",
+        "t": "one thing"
+       },
+       {
+        "r": "谓语",
+        "t": "I've learnt is"
+       },
+       {
+        "r": "表语从句",
+        "t": "that while it is the enchantingly sophisticated technologies that get all the hype,"
+       },
+       {
+        "r": "并列",
+        "t": "it's the cheap technologies that change the world."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The Gutenberg printing press transformed civilisation not by changing the nature of writing but by changing its cost—and it would have achieved little without a parallel collapse in the price of surfaces to write on, thanks to an often-overlooked technology called paper.",
      "cn": "古腾堡印刷机改变文明，靠的不是改变书写的本质，而是改变其成本——而且，若没有与之相伴的、因一项常被忽视的技术（纸）而带来的书写载体价格崩塌，它几乎不会取得什么成就。",
      "id": "en1_2024_text1_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The Gutenberg printing press"
+       },
+       {
+        "r": "谓语",
+        "t": "transformed"
+       },
+       {
+        "r": "宾语",
+        "t": "civilisation"
+       },
+       {
+        "r": "状语",
+        "t": "not by changing the nature of writing but by changing its cost—and"
+       },
+       {
+        "r": "并列",
+        "t": "it would have achieved little without a parallel collapse in the price of surfaces to write on, thanks to an often-overlooked technology called paper."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Solar panels had a few niche uses until they became cheap; now they are transforming the global energy system.",
      "cn": "在变得廉价之前，太阳能电池板只有少数利基用途；如今它们正在改变全球能源体系。2024-4",
      "id": "en1_2024_text1_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Solar panels"
+       },
+       {
+        "r": "谓语",
+        "t": "had"
+       },
+       {
+        "r": "宾语",
+        "t": "a few niche uses"
+       },
+       {
+        "r": "状语从句",
+        "t": "until they became cheap;"
+       },
+       {
+        "r": "并列",
+        "t": "now they are transforming the global energy system."
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -281,28 +557,124 @@
      "en": "Parenting tips obtained from hunter-gatherers in Africa may be the key to bringing up more contented children, researchers have suggested.",
      "cn": "研究人员提出，从非洲的狩猎采集者那里获得的育儿建议，或许是养育出更快乐孩子的关键。",
      "id": "en1_2024_text2_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Parenting tips obtained from hunter-gatherers in Africa"
+       },
+       {
+        "r": "谓语",
+        "t": "may be"
+       },
+       {
+        "r": "表语",
+        "t": "the key"
+       },
+       {
+        "r": "不定式短语",
+        "t": "to bringing up more contented children,"
+       },
+       {
+        "r": "插入语",
+        "t": "researchers have suggested."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The idea is based on studies of communities such as the Kung of Botswana, where each child is cared for by many adults.",
      "cn": "这一理念基于对诸如博茨瓦纳的昆人等社群的研究，在那里，每个孩子都由许多成年人共同照料。",
      "id": "en1_2024_text2_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The idea"
+       },
+       {
+        "r": "谓语",
+        "t": "is based on"
+       },
+       {
+        "r": "宾语",
+        "t": "studies of communities such as the Kung of Botswana,"
+       },
+       {
+        "r": "定语从句",
+        "t": "where each child is cared for by many adults."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Kung children as young as four will help to look after younger ones and \"babywearing\", in which infants are carried in slings, is considered the norm.",
      "cn": "昆族年仅四岁的孩子就会帮忙照看更小的孩子；而用吊带背着婴儿（“婴儿背带”）被视为常态。",
      "id": "en1_2024_text2_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Kung children as young as four"
+       },
+       {
+        "r": "谓语",
+        "t": "will help to look after"
+       },
+       {
+        "r": "宾语",
+        "t": "younger ones"
+       },
+       {
+        "r": "并列",
+        "t": "and \"babywearing\","
+       },
+       {
+        "r": "定语从句",
+        "t": "in which infants are carried in slings,"
+       },
+       {
+        "r": "谓语",
+        "t": "is considered the norm."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "According to Dr Nikhil Chaudhary, an evolutionary anthropologist at Cambridge University, these practices, known as alloparenting, could lead to less anxiety for children and parents.",
      "cn": "剑桥大学的进化人类学家尼基尔·乔杜里博士认为，这些被称为“非父母育儿”（alloparenting）的做法，可能让儿童和父母都减少焦虑。",
      "id": "en1_2024_text2_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "插入语",
+        "t": "According to Dr Nikhil Chaudhary, an evolutionary anthropologist at Cambridge University,"
+       },
+       {
+        "r": "主语",
+        "t": "these practices, known as alloparenting,"
+       },
+       {
+        "r": "谓语",
+        "t": "could lead to"
+       },
+       {
+        "r": "宾语",
+        "t": "less anxiety for children and parents."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -330,28 +702,120 @@
      "en": "Another measure could be encouraging friendships between children in diferent school years to mirror the unsupervised mixed-age playgroups in huntergatherer communities.",
      "cn": "另一项措施可以是，鼓励不同年级的孩子之间建立友谊，以模仿狩猎采集者社群中那种无成人监督的混龄玩乐小组。",
      "id": "en1_2024_text2_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Another measure"
+       },
+       {
+        "r": "谓语",
+        "t": "could be"
+       },
+       {
+        "r": "表语",
+        "t": "encouraging friendships between children in diferent school years"
+       },
+       {
+        "r": "不定式短语",
+        "t": "to mirror the unsupervised mixed-age playgroups in huntergatherer communities."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In a paper published in the Journal of Child Psychology and Psychiatry, researchers said that the western nuclear family was a recent invention which broke with evolutionary history.",
      "cn": "研究人员在发表于《儿童心理学与精神病学杂志》的一篇论文中说，西方的核心家庭是一种近期的发明，背离了进化史。",
      "id": "en1_2024_text2_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In a paper published in the Journal of Child Psychology and Psychiatry,"
+       },
+       {
+        "r": "主语",
+        "t": "researchers"
+       },
+       {
+        "r": "谓语",
+        "t": "said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that the western nuclear family was a recent invention"
+       },
+       {
+        "r": "定语从句",
+        "t": "which broke with evolutionary history."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "This abrupt shift to an\"intensive mothering narrative\", which suggests that mothers should manage childcare alone, was likely to have been harmful.“Such narratives can lead to maternal exhaustion and have dangerous consequences,” they wrote.",
      "cn": "这种对“密集母职叙事”的骤然转向——即认为母亲应独自承担育儿——很可能已造成危害。他们写道：“此类叙事会导致母亲精疲力竭，并带来危险的后果。”",
      "id": "en1_2024_text2_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This abrupt shift to an\"intensive mothering narrative\","
+       },
+       {
+        "r": "定语从句",
+        "t": "which suggests that mothers should manage childcare alone,"
+       },
+       {
+        "r": "谓语",
+        "t": "was likely to have been"
+       },
+       {
+        "r": "表语",
+        "t": "harmful.“Such narratives can lead to maternal exhaustion and have dangerous consequences,” they wrote."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "By contrast, in hunter-gatherer societies adults other than the parents can provide almost half of a child's care.",
      "cn": "相比之下，在狩猎采集社会中，非父母的其他成年人能提供孩子近一半的照料。",
      "id": "en1_2024_text2_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "插入语",
+        "t": "By contrast,"
+       },
+       {
+        "r": "状语",
+        "t": "in hunter-gatherer societies"
+       },
+       {
+        "r": "主语",
+        "t": "adults other than the parents"
+       },
+       {
+        "r": "谓语",
+        "t": "can provide"
+       },
+       {
+        "r": "宾语",
+        "t": "almost half of a child's care."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -365,35 +829,156 @@
      "en": "It found that infants had an average of 14 alloparents a day by the time they were 18 weeks old and were passed between caregivers eight times an hour.",
      "cn": "研究发现，婴儿在18周大时，平均每天有14位非父母照料者，并且每小时在照料者之间被传递8次。",
      "id": "en1_2024_text2_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "found"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that infants had an average of 14 alloparents a day by the time they were 18 weeks old"
+       },
+       {
+        "r": "并列",
+        "t": "and were passed between caregivers eight times an hour."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Chaudhary said that parents now had less childcare support from family and social networks than during most of humans'evolutionary history, but introducing additional caregivers could reduce stress and maternal depression, which could have a“knock-on” benefit to a child's wellbeing.",
      "cn": "乔杜里说，与人类文明进化史的大部分时期相比，如今的父母从家庭和社会网络中得到的育儿支持更少；但引入额外的照料者可以减轻压力和产妇抑郁，从而对孩子福祉产生“连锁”益处。",
      "id": "en1_2024_text2_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Chaudhary"
+       },
+       {
+        "r": "谓语",
+        "t": "said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that parents now had less childcare support from family and social networks than during most of humans'evolutionary history,"
+       },
+       {
+        "r": "并列",
+        "t": "but introducing additional caregivers could reduce stress and maternal depression,"
+       },
+       {
+        "r": "定语从句",
+        "t": "which could have a“knock-on” benefit to a child's wellbeing."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "An infant born to a hunter-gatherer society could have more than ten caregivers—this contrasts starkly to nursery settings in the UK where regulations call for a ratio of one carer to four children aged two to three.",
      "cn": "在狩猎采集社会出生的婴儿可能有十多位照料者——这与英国的托儿所形成鲜明对比，英国的规定要求一位照料者对应四名两至三岁的孩子。",
      "id": "en1_2024_text2_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "An infant born to a hunter-gatherer society"
+       },
+       {
+        "r": "谓语",
+        "t": "could have"
+       },
+       {
+        "r": "宾语",
+        "t": "more than ten caregivers—this contrasts starkly to nursery settings in the UK"
+       },
+       {
+        "r": "定语从句",
+        "t": "where regulations call for a ratio of one carer to four children aged two to three."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "While hunter-gatherer children learnt from observation and imitation in mixedage playgroups, researchers said that western \"instructive teaching\", where pupils are asked to sit still, may contribute to conditions such as attention deficit hyperactivity disorder.",
      "cn": "狩猎采集者的孩子在混龄玩乐小组中通过观察和模仿来学习，而研究人员说，西方那种要求学生静坐的“指导式教学”可能导致注意缺陷多动障碍等问题。",
      "id": "en1_2024_text2_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语从句",
+        "t": "While hunter-gatherer children learnt from observation and imitation in mixedage playgroups,"
+       },
+       {
+        "r": "主语",
+        "t": "researchers"
+       },
+       {
+        "r": "谓语",
+        "t": "said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that western \"instructive teaching\","
+       },
+       {
+        "r": "定语从句",
+        "t": "where pupils are asked to sit still,"
+       },
+       {
+        "r": "谓语",
+        "t": "may contribute to"
+       },
+       {
+        "r": "宾语",
+        "t": "conditions such as attention deficit hyperactivity disorder."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Chaudhary said that Britain should explore the possibility that older siblings helping their parents \"might also enhance their own social development\".",
      "cn": "乔杜里说，英国应当探索这样一种可能：年长的兄弟姐妹帮助父母“也可能促进他们自身的社交发展”。2024-6",
      "id": "en1_2024_text2_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Chaudhary"
+       },
+       {
+        "r": "谓语",
+        "t": "said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that Britain should explore the possibility"
+       },
+       {
+        "r": "同位语从句",
+        "t": "that older siblings helping their parents \"might also enhance their own social development\"."
+       }
+      ]
+     }
     }
    ],
    "questions": [

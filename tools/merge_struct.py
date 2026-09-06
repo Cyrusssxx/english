@@ -64,13 +64,23 @@ def load_batch(path):
     exec(open(path, encoding='utf-8').read(), ns)
     return ns['DATA']
 
+def year_of(sid):
+    """en1_2024_text1_s01 → ('en1','2024'); 2024_text1_s01 → ('en2','2024')"""
+    m = re.match(r'(en1)_(\d{4})_', sid)
+    if m: return (m.group(1), m.group(2))
+    m = re.match(r'(\d{4})_', sid)
+    if m: return ('en2', m.group(1))
+    raise ValueError(f'无法从 sid 解析年份: {sid}')
+
 def main(batch_path, force=False):
     DATA = load_batch(batch_path)
-    byyear = {}
-    for sid in DATA: byyear.setdefault(sid[:4], []).append(sid)
+    byfile = {}
+    for sid in DATA:
+        exam, year = year_of(sid)
+        byfile.setdefault((exam, year), []).append(sid)
     ok = fail = skip = 0
-    for year, sids in byyear.items():
-        p = os.path.join('pwa/data', f'{year}.json')
+    for (exam, year), sids in byfile.items():
+        p = os.path.join('pwa/data', exam, f'{year}.json') if exam == 'en1' else os.path.join('pwa/data', f'{year}.json')
         d = json.load(open(p, encoding='utf-8'))
         smap = {s['id']: s for a in d.get('articles', []) for s in a.get('sentences', [])}
         for sid in sids:
