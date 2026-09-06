@@ -2869,3 +2869,29 @@ html.dark .q-tip {
     0%, 100% { box-shadow: 0 0 0 0 rgba(74, 144, 196, 0); }
     30%, 70% { box-shadow: 0 0 0 4px rgba(74, 144, 196, 0.45); }
 }
+
+/* ===== 完形专属紧凑排版 ===== */
+.cloze-q .q-head { margin-bottom: 4px; }
+.cloze-opts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+.cloze-opts .q-opt { margin-bottom: 0; padding: 6px 8px; }
+.cloze-opts .opt-en { font-size: 0.86rem; }
+.cloze-opts .opt-cn { font-size: 0.74rem; }
+@media (max-width: 700px) {
+    .cloze-opts { grid-template-columns: repeat(2, 1fr); }
+}
+.expl-fold {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-light);
+    border-radius: 999px;
+    padding: 1px 10px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.expl-fold:hover { border-color: var(--primary); color: var(--primary); }
+.expl-body { margin-top: 8px; line-height: 1.7; }

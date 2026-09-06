@@ -1129,19 +1129,30 @@ function ntGoto(qid) {
 }
 
 function questionHtml(q) {
+    const isCloze = article.type === 'cloze';
     const opts = (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});
     const optsCn = (q.options_cn && Object.keys(q.options_cn).length) ? q.options_cn : (article.pool_cn || {});
-    return `<div class="qblock" id="q-${q.id}">
-        <div class="q-head"><span class="q-no">Q${q.number}</span>${q.qtype ? `<span class="q-type-badge">${esc(qtypeCn(q.qtype))}</span>` : ''}</div>
-        <div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
-        ${q.stem_cn ? `<div class="q-stem-cn">${esc(q.stem_cn)}</div>` : ''}
-        ${Object.keys(opts).map(k => `
+    const optRows = Object.keys(opts).map(k => `
         <div class="q-opt" id="opt-${q.id}-${k}" onclick="onPick('${q.id}','${k}')">
             <div class="opt-en">${k}. ${quizTextHtml(opts[k], q.id)}</div>
             ${optsCn[k] ? `<div class="opt-cn">${esc(optsCn[k])}</div>` : ''}
-        </div>`).join('')}
+        </div>`).join('');
+    return `<div class="qblock${isCloze ? ' cloze-q' : ''}" id="q-${q.id}">
+        <div class="q-head"><span class="q-no">Q${q.number}</span>${q.qtype ? `<span class="q-type-badge">${esc(qtypeCn(q.qtype))}</span>` : ''}</div>
+        ${!isCloze ? `<div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
+        ${q.stem_cn ? `<div class="q-stem-cn">${esc(q.stem_cn)}</div>` : ''}` : ''}
+        ${isCloze ? `<div class="cloze-opts">${optRows}</div>` : optRows}
         <div id="expl-${q.id}"></div>
     </div>`;
+}
+
+/** 完形解析折叠：展开/收起详细解析 */
+function toggleExplFold(qid) {
+    const body = document.getElementById('explbody-' + qid);
+    const btn = document.getElementById('explfold-' + qid);
+    if (!body) return;
+    body.hidden = !body.hidden;
+    if (btn) btn.textContent = body.hidden ? '展开解析 ▾' : '收起解析 ▴';
 }
 
 /** 题目文本渲染：英文词/词组可点查释义（点词 stopPropagation 不触达答题，点空白/字母处仍选答案） */
@@ -1171,13 +1182,23 @@ function showResult(q, userKey, scrollToRelated) {
     }
     const expl = document.getElementById(`expl-${q.id}`);
     if (expl) {
-        expl.innerHTML = `${q.quick ? `<div class="q-quick">📌 考题速览　${esc(q.quick)}</div>` : ''}
+        if (article.type === 'cloze') {
+            // 完形：紧凑一行（答案+展开按钮），详细解析折叠；无需定位原文（空位即原文）
+            expl.innerHTML = `<div class="q-expl">
+            <span class="expl-tag">${ok ? '✔ 回答正确' : '✘ 回答错误'} · 答案 ${q.answer}</span>
+            <button class="expl-fold" id="explfold-${q.id}" onclick="toggleExplFold('${q.id}')">展开解析 ▾</button>
+            <div class="expl-body" id="explbody-${q.id}" hidden>${esc(q.explanation || '')}</div>
+            ${q.tip ? `<div class="q-tip">💡 技巧　${esc(q.tip)}</div>` : ''}
+        </div>`;
+        } else {
+            expl.innerHTML = `${q.quick ? `<div class="q-quick">📌 考题速览　${esc(q.quick)}</div>` : ''}
         <div class="q-expl">
             <span class="expl-tag">${ok ? '✔ 回答正确' : '✘ 回答错误'} · 答案 ${q.answer}</span>
             <div>${esc(q.explanation || '')}</div>
             ${(q.related_sentences || []).length ? `<button class="q-locate" onclick="locateRelated('${q.id}')">↖ 定位原文依据</button>` : ''}
             ${q.tip ? `<div class="q-tip">💡 技巧　${esc(q.tip)}</div>` : ''}
         </div>`;
+        }
     }
     const jb = document.getElementById(`qj-${q.id}`);
     if (jb) { jb.classList.remove('answered-right', 'answered-wrong'); jb.classList.add(ok ? 'answered-right' : 'answered-wrong'); }
