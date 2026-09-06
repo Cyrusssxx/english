@@ -3997,7 +3997,28 @@
        "w": "of",
        "meaning": "prep.关于, 属于（某人）, 关于（某人）, 属于（某物）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Since the 2008 launch of the high-speed rail network between Rome and Milan,"
+       },
+       {
+        "r": "主语",
+        "t": "trains"
+       },
+       {
+        "r": "谓语",
+        "t": "have become"
+       },
+       {
+        "r": "表语",
+        "t": "the preferred means of travel across Italy for locals and tourists alike."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s02",
@@ -4153,7 +4174,28 @@
        "w": "of",
        "meaning": "prep.关于, 属于（某人）, 关于（某人）, 属于（某物）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In many cases,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语",
+        "t": "the best option—in terms of travel time and cost—for both leisure and business travellers."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s05",
@@ -4321,7 +4363,40 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语从句",
+        "t": "why the recent severe delays caused by numerous maintenance works have thrown the rail industry into chaos at a time",
+        "nodes": [
+         {
+          "r": "定语从句",
+          "t": "when most people head on holiday,"
+         },
+         {
+          "r": "定语从句",
+          "t": "which matters for business in a country",
+          "nodes": [
+           {
+            "r": "定语从句",
+            "t": "where tourism accounts for 10 per cent of GDP."
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s06",
@@ -4469,7 +4544,32 @@
        "w": "in",
        "meaning": "prep.在……里面，参与；穿着；进入"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Ferrovie dello Stato Italiane,"
+       },
+       {
+        "r": "同位语",
+        "t": "the publicly controlled group"
+       },
+       {
+        "r": "定语从句",
+        "t": "that owns train operator Trenitalia and the national train network RFI,"
+       },
+       {
+        "r": "谓语",
+        "t": "said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "23 per cent of high-speed trains it operated were late in 2023."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s08",
@@ -4585,7 +4685,28 @@
        "w": "by",
        "meaning": "prep.按照；靠近；被, 经由；在...之前；根据；[表示交通、传递等方式]；[表示乘、除、面积等]"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "RFI,"
+       },
+       {
+        "r": "同位语",
+        "t": "the network operator,"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语",
+        "t": "the single largest European recovery fund beneficiary with planned investments of €24bn by 2026."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s10",
@@ -4741,7 +4862,24 @@
        "w": "in",
        "meaning": "prep.在……里面，参与；穿着；进入"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Transport economist Andrea Giuricin"
+       },
+       {
+        "r": "谓语",
+        "t": "said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "the planned investments would bring improvements but disruptions in the meantime were inevitable."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s13",
@@ -4841,7 +4979,24 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "宾语",
+        "t": "'We have a mixed system, there is no spare capacity"
+       },
+       {
+        "r": "并列",
+        "t": "and as soon as there's a hiccup on the line, the situation becomes highly complex,'"
+       },
+       {
+        "r": "插入语",
+        "t": "he said."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s14",
@@ -4929,7 +5084,24 @@
        "w": "A",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A mixed system"
+       },
+       {
+        "r": "谓语",
+        "t": "means"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that high-speed trains must travel on the regular tracks on certain routes or when passing through large cities."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s15",
@@ -5101,7 +5273,24 @@
        "w": "in",
        "meaning": "prep.在……里面，参与；穿着；进入"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "One of the most important changes the upgrades will bring"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语",
+        "t": "the segregation of the high-speed line from the regular one in certain urban centres through the construction of underground rail links."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s17",
@@ -5181,7 +5370,32 @@
        "w": "in",
        "meaning": "prep.在……里面，参与；穿着；进入"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Improvements"
+       },
+       {
+        "r": "谓语",
+        "t": "will also come from"
+       },
+       {
+        "r": "宾语",
+        "t": "the high-density technology and satellite signalling"
+       },
+       {
+        "r": "定语从句",
+        "t": "that RFI has been investing in for years,"
+       },
+       {
+        "r": "插入语",
+        "t": "say experts."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text3_s18",
@@ -5309,7 +5523,32 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "will allow for"
+       },
+       {
+        "r": "宾语",
+        "t": "a reduction of the distance between high-speed trains travelling on the same line at any given time,"
+       },
+       {
+        "r": "定语从句",
+        "t": "which should mean a significant increase in capacity and traffic fluidity,"
+       },
+       {
+        "r": "插入语",
+        "t": "according to Giuricin."
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -5556,7 +5795,28 @@
        "w": "in",
        "meaning": "prep.在……里面，参与；穿着；进入"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The Silver Room Block Party,"
+       },
+       {
+        "r": "分词短语",
+        "t": "staged by Hyde Park community leader Eric Williams,"
+       },
+       {
+        "r": "谓语",
+        "t": "announced"
+       },
+       {
+        "r": "宾语从句",
+        "t": "it would not return in 2024."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s03",
@@ -5656,7 +5916,28 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语从句",
+        "t": "What began as a small neighborhood gathering"
+       },
+       {
+        "r": "谓语",
+        "t": "blossomed into"
+       },
+       {
+        "r": "宾语",
+        "t": "a massive cultural event,"
+       },
+       {
+        "r": "分词短语",
+        "t": "welcoming tens of thousands of people each year over nearly two decades before abruptly shutting down."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s04",
@@ -5776,7 +6057,36 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Williams"
+       },
+       {
+        "r": "谓语",
+        "t": "pointed to"
+       },
+       {
+        "r": "宾语",
+        "t": "rising production costs and declining attendee donations"
+       },
+       {
+        "r": "定语从句",
+        "t": "as primary reasons the Silver Room Block Party could not continue,"
+       },
+       {
+        "r": "分词短语",
+        "t": "highlighting a reality"
+       },
+       {
+        "r": "定语从句",
+        "t": "that all street festival organizers face right now."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s05",
@@ -5892,7 +6202,24 @@
        "w": "as",
        "meaning": "prep.作为, 像, 当作, 如同"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Security, entertainment, portable restrooms, insurance and even basics such as fencing and staffing"
+       },
+       {
+        "r": "谓语",
+        "t": "have all become"
+       },
+       {
+        "r": "表语",
+        "t": "significantly more expensive."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s07",
@@ -6036,7 +6363,32 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Chicago's summer festivals"
+       },
+       {
+        "r": "谓语",
+        "t": "are about"
+       },
+       {
+        "r": "宾语",
+        "t": "more than just entertainment;"
+       },
+       {
+        "r": "并列",
+        "t": "they are economic engines"
+       },
+       {
+        "r": "定语从句",
+        "t": "that directly benefit the neighborhoods they're in and the city of Chicago as a whole."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s09",
@@ -6116,7 +6468,32 @@
        "w": "of",
        "meaning": "prep.关于, 属于（某人）, 关于（某人）, 属于（某物）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Street festivals"
+       },
+       {
+        "r": "谓语",
+        "t": "drive"
+       },
+       {
+        "r": "宾语",
+        "t": "foot traffic to local businesses"
+       },
+       {
+        "r": "并列",
+        "t": "and foster the kind of cultural vibrancy"
+       },
+       {
+        "r": "定语从句",
+        "t": "that makes our city special."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s10",
@@ -6208,7 +6585,28 @@
        "w": "do",
        "meaning": "v.做, 进行, 完成, 做出, 合适, 足够"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "We"
+       },
+       {
+        "r": "谓语",
+        "t": "often hear"
+       },
+       {
+        "r": "宾语",
+        "t": "people ask why we solicit donations at our entry points,"
+       },
+       {
+        "r": "时间状语从句",
+        "t": "especially when the city's largest festivals like the Chicago Jazz Festival do not request donations."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s11",
@@ -6320,7 +6718,28 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The fact"
+       },
+       {
+        "r": "谓语",
+        "t": "is,"
+       },
+       {
+        "r": "状语",
+        "t": "unlike those large, city-produced music festivals,"
+       },
+       {
+        "r": "表语从句",
+        "t": "your neighborhood street festivals receive no city funding and rely on a combination of sponsorships, vendor fees and gate donations to cover their costs."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s12",
@@ -6424,7 +6843,28 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Wicker Park Fest"
+       },
+       {
+        "r": "谓语",
+        "t": "has long been"
+       },
+       {
+        "r": "表语",
+        "t": "one of Chicago's most anticipated summer festivals,"
+       },
+       {
+        "r": "分词短语",
+        "t": "drawing upward of 70,000 attendees for a full weekend of live indie music, local art, small business vendors and, most importantly, community connection."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s13",
@@ -6676,7 +7116,28 @@
        "w": "a",
        "meaning": "article.一(个), 每一(个), 任一（个）"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "We"
+       },
+       {
+        "r": "谓语",
+        "t": "are eliminating"
+       },
+       {
+        "r": "宾语",
+        "t": "a stage, booking fewer performers and making additional cuts to reduce our costs,"
+       },
+       {
+        "r": "状语",
+        "t": "all while striving to keep the festival as vibrant as ever, as supportive of local artists and businesses, and as true to Wicker Park's unique spirit and reputation as festgoers have come to expect."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s17",
@@ -6768,7 +7229,32 @@
        "w": "I",
        "meaning": "pron.我"
       }
-     ]
+     ],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "This summer,"
+       },
+       {
+        "r": "时间状语从句",
+        "t": "as you enjoy your favorite neighborhood street festival,"
+       },
+       {
+        "r": "主语",
+        "t": "I"
+       },
+       {
+        "r": "谓语",
+        "t": "hope"
+       },
+       {
+        "r": "宾语从句",
+        "t": "you'll remember that they exist because of community support."
+       }
+      ]
+     }
     },
     {
      "id": "2026_text4_s18",
