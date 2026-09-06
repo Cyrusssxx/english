@@ -28,7 +28,28 @@
               "w": "moral norms",
               "meaning": "道德规范"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Unlike so-called basic emotions such as sadness, fear, and anger,"
+              },
+              {
+                "r": "主语",
+                "t": "guilt"
+              },
+              {
+                "r": "谓语",
+                "t": "emerges a little later,"
+              },
+              {
+                "r": "状语",
+                "t": "in conjunction with a child's growing grasp of social and moral norms."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s02",
@@ -48,7 +69,37 @@
               "w": "consciences",
               "meaning": "n. 道德心，良心（conscience 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Children"
+              },
+              {
+                "r": "谓语",
+                "t": "aren't born knowing how to say \"I'm sorry\";"
+              },
+              {
+                "r": "并列",
+                "t": "rather,"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "learn over time"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that such statements appease parents and friends - and their own consciences.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s03",
@@ -68,7 +119,24 @@
               "w": "a good thing",
               "meaning": "好事"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "why researchers generally regard so-called moral guilt, in the right amount, to be a good thing."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s04",
@@ -136,7 +204,32 @@
               "w": "advantageous",
               "meaning": "adj. 有利的，有好处的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"There has been a kind of revival or a rethinking about what guilt is and what role guilt can serve,\""
+              },
+              {
+                "r": "谓语",
+                "t": "says"
+              },
+              {
+                "r": "主语",
+                "t": "Amrisha Vaish,"
+              },
+              {
+                "r": "同位语",
+                "t": "a psychology researcher at the University of Virginia,"
+              },
+              {
+                "r": "分词短语",
+                "t": "adding that this revival is part of a larger recognition that emotions aren't binary - feelings that may be advantageous in one context may be harmful in another."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s08",
@@ -188,7 +281,28 @@
               "w": "fix relationships",
               "meaning": "修复关系"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "主语",
+                "t": "guilt,"
+              },
+              {
+                "r": "插入语",
+                "t": "by prompting us to think more deeply about our goodness,"
+              },
+              {
+                "r": "谓语",
+                "t": "can encourage humans to make up for errors and fix relationships."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s11",
@@ -252,7 +366,25 @@
               "w": "emotional deficiency",
               "meaning": "情感缺失"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Work by Tina Malti, a psychology professor at the University of Toronto,"
+              },
+              {
+                "r": "谓语",
+                "t": "suggests"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that guilt may compensate for an emotional deficiency.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s15",
@@ -272,7 +404,29 @@
               "w": "different pathways",
               "meaning": "不同的路径"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In a number of studies,"
+              },
+              {
+                "r": "主语",
+                "t": "Malti and others"
+              },
+              {
+                "r": "谓语",
+                "t": "have shown"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that guilt and sympathy may represent different pathways to cooperation and sharing.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s16",
@@ -292,7 +446,32 @@
               "w": "rein in",
               "meaning": "抑制，严格控制"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Some kids"
+              },
+              {
+                "r": "定语从句",
+                "t": "who are low in sympathy",
+                "lead": "who",
+                "mod": "Some kids"
+              },
+              {
+                "r": "谓语",
+                "t": "may make up for that shortfall by experiencing more guilt,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which can rein in their nastier impulses.",
+                "lead": "which",
+                "mod": "that shortfall"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s17",
@@ -340,7 +519,28 @@
               "w": "transgressions",
               "meaning": "n. 越轨行为，违背道德"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Using caregiver assessments and the children's self-observations,"
+              },
+              {
+                "r": "主语",
+                "t": "she"
+              },
+              {
+                "r": "谓语",
+                "t": "rated"
+              },
+              {
+                "r": "宾语",
+                "t": "each child's overall sympathy level and his or her tendency to feel negative emotions after moral transgressions."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s20",
@@ -356,7 +556,28 @@
               "w": "anonymous",
               "meaning": "adj. 匿名的，名字不公开的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Then the kids"
+              },
+              {
+                "r": "谓语",
+                "t": "were handed chocolate coins,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "谓语",
+                "t": "given a chance to share them with an anonymous child."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s21",
@@ -376,7 +597,24 @@
               "w": "inclined",
               "meaning": "adj. 倾向于……的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "For the low-sympathy kids,"
+              },
+              {
+                "r": "主语",
+                "t": "how much they shared"
+              },
+              {
+                "r": "谓语",
+                "t": "appeared to turn on how inclined they were to feel guilty."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s22",
@@ -396,7 +634,25 @@
               "w": "deprivation",
               "meaning": "n. 匮乏，缺少"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The guilt-prone ones"
+              },
+              {
+                "r": "谓语",
+                "t": "shared more,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "even though they hadn't magically become more sympathetic to the other child's deprivation.",
+                "lead": "though"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text1_s23",
@@ -614,7 +870,25 @@
               "w": "carbon dioxide",
               "meaning": "二氧化碳"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Even as we humans count on forests to soak up a good share of the carbon dioxide we produce,",
+                "lead": "as"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "are threatening their ability to do so."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s03",
@@ -634,7 +908,26 @@
               "w": "absorb",
               "meaning": "v. 吸收"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The climate change we are hastening"
+              },
+              {
+                "r": "谓语",
+                "t": "could one day leave us with forests"
+              },
+              {
+                "r": "定语从句",
+                "t": "that emit more carbon than they absorb.",
+                "lead": "that",
+                "mod": "forests"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s04",
@@ -674,7 +967,20 @@
               "w": "capacity to absorb carbon",
               "meaning": "吸碳能力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Helping forests flourish as valuable \"carbon sinks\" long into the future"
+              },
+              {
+                "r": "谓语",
+                "t": "may require reducing their capacity to absorb carbon now."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s06",
@@ -694,7 +1000,29 @@
               "w": "figuring out",
               "meaning": "弄清楚，想出"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "California"
+              },
+              {
+                "r": "谓语",
+                "t": "is leading the way,"
+              },
+              {
+                "r": "方式状语从句",
+                "t": "as it does on so many climate efforts,",
+                "lead": "as"
+              },
+              {
+                "r": "状语",
+                "t": "in figuring out the details."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s07",
@@ -714,7 +1042,20 @@
               "w": "brush",
               "meaning": "n. 灌木丛，矮树丛"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The state's proposed Forest Carbon Plan"
+              },
+              {
+                "r": "谓语",
+                "t": "aims to double efforts to thin out young trees and clear brush in parts of the forest."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s08",
@@ -750,7 +1091,29 @@
               "w": "thrive",
               "meaning": "v. 茁壮成长"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the remaining trees"
+              },
+              {
+                "r": "谓语",
+                "t": "draw a greater share of the available moisture,"
+              },
+              {
+                "r": "结果状语从句",
+                "t": "so they grow and thrive, restoring the forest's capacity to pull carbon from the air.",
+                "lead": "so"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s10",
@@ -838,7 +1201,40 @@
               "w": "acres",
               "meaning": "n. 英亩"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Already, since 2010,"
+              },
+              {
+                "r": "主语",
+                "t": "drought and insects"
+              },
+              {
+                "r": "谓语",
+                "t": "have killed over 100 million trees in California,"
+              },
+              {
+                "r": "插入语",
+                "t": "most of them in 2016 alone,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "wildfires"
+              },
+              {
+                "r": "谓语",
+                "t": "have burned hundreds of thousands of acres."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s15",
@@ -858,7 +1254,24 @@
               "w": "emissions-permit auctions",
               "meaning": "排放许可证拍卖"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "California"
+              },
+              {
+                "r": "谓语",
+                "t": "plans to treat 35,000 acres of forest a year by 2020, and 60,000 by 2030"
+              },
+              {
+                "r": "分词短语",
+                "t": "- financed from the proceeds of the state's emissions-permit auctions."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s16",
@@ -878,7 +1291,35 @@
               "w": "prioritize",
               "meaning": "v. 优先处理，优先考虑"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That's"
+              },
+              {
+                "r": "表语",
+                "t": "only a small share of the total acreage"
+              },
+              {
+                "r": "定语从句",
+                "t": "that could benefit,",
+                "lead": "that",
+                "mod": "the total acreage"
+              },
+              {
+                "r": "插入语",
+                "t": "about half a million acres in all,"
+              },
+              {
+                "r": "结果状语从句",
+                "t": "so it will be vital to prioritize areas at greatest risk of fire or drought.",
+                "lead": "so"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s17",
@@ -898,7 +1339,31 @@
               "w": "fossil fuels",
               "meaning": "化石燃料"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The strategy"
+              },
+              {
+                "r": "谓语",
+                "t": "also aims to ensure"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that carbon in woody material removed from the forests is locked away in the form of solid lumber or burned as biofuel in vehicles",
+                "lead": "that"
+              },
+              {
+                "r": "定语从句",
+                "t": "that would otherwise run on fossil fuels.",
+                "lead": "that",
+                "mod": "vehicles"
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s18",
@@ -934,7 +1399,36 @@
               "w": "recreation",
               "meaning": "n. 休闲娱乐"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "State governments"
+              },
+              {
+                "r": "谓语",
+                "t": "are well accustomed to managing forests,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "状语",
+                "t": "traditionally"
+              },
+              {
+                "r": "主语",
+                "t": "they've"
+              },
+              {
+                "r": "谓语",
+                "t": "focused on wildlife, watersheds and opportunities for recreation."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s20",
@@ -954,7 +1448,20 @@
               "w": "storing carbon",
               "meaning": "储存碳"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Only recently"
+              },
+              {
+                "r": "谓语",
+                "t": "have they come to see the vital part forests will have to play in storing carbon."
+              }
+            ]
+          }
         },
         {
           "id": "2019_text2_s21",
@@ -974,7 +1481,26 @@
               "w": "serve as a model",
               "meaning": "成为典范"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "California's plan,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which is expected to be finalized by the governor next year,",
+                "lead": "which",
+                "mod": "California's plan"
+              },
+              {
+                "r": "谓语",
+                "t": "should serve as a model."
+              }
+            ]
+          }
         }
       ],
       "questions": [
