@@ -1468,7 +1468,28 @@
               "w": "professor",
               "meaning": "n. 教授"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Internet"
+              },
+              {
+                "r": "谓语",
+                "t": "may be changing"
+              },
+              {
+                "r": "宾语",
+                "t": "merely what we remember, not our capacity to do so,"
+              },
+              {
+                "r": "插入语",
+                "t": "suggests Columbia University psychology professor Betsy Sparrow."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s02",
@@ -1488,7 +1509,32 @@
               "w": "ostrich",
               "meaning": "n. 鸵鸟"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In 2011,"
+              },
+              {
+                "r": "主语",
+                "t": "Sparrow"
+              },
+              {
+                "r": "谓语",
+                "t": "led"
+              },
+              {
+                "r": "宾语",
+                "t": "a study"
+              },
+              {
+                "r": "定语从句",
+                "t": "in which participants were asked to record 40 factoids in a computer (\"an ostrich's eye is bigger than its brain,\" for example)."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s03",
@@ -1500,7 +1546,28 @@
               "w": "erased",
               "meaning": "v. 删除，擦掉"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Half of the participants"
+              },
+              {
+                "r": "谓语",
+                "t": "were told"
+              },
+              {
+                "r": "宾语从句",
+                "t": "the information would be erased,"
+              },
+              {
+                "r": "并列",
+                "t": "while the other half were told it would be saved."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s04",
@@ -1516,7 +1583,36 @@
               "w": "quizzed",
               "meaning": "v. 对……测验，考查"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Guess what?"
+              },
+              {
+                "r": "主语",
+                "t": "The latter group"
+              },
+              {
+                "r": "谓语",
+                "t": "made no effort to recall"
+              },
+              {
+                "r": "宾语",
+                "t": "the information"
+              },
+              {
+                "r": "时间状语",
+                "t": "when quizzed on it later,"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "because they knew they could find it on their computers."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s05",
@@ -1528,7 +1624,28 @@
               "w": "folders",
               "meaning": "n. 文件夹"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In the same study,"
+              },
+              {
+                "r": "主语",
+                "t": "a group"
+              },
+              {
+                "r": "谓语",
+                "t": "was asked to remember"
+              },
+              {
+                "r": "宾语",
+                "t": "both the information and the folders it was stored in."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s06",
@@ -1571,7 +1688,32 @@
               "w": "offloading",
               "meaning": "v. 卸载"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In a very practical way,"
+              },
+              {
+                "r": "主语",
+                "t": "the Internet"
+              },
+              {
+                "r": "谓语",
+                "t": "is becoming"
+              },
+              {
+                "r": "表语",
+                "t": "an external hard drive for our memories,"
+              },
+              {
+                "r": "同位语",
+                "t": "a process known as \"cognitive offloading.\""
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s09",
@@ -1627,7 +1769,36 @@
               "w": "conceptual",
               "meaning": "adj. 概念的，观念的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Perhaps,"
+              },
+              {
+                "r": "插入语",
+                "t": "she suggests,"
+              },
+              {
+                "r": "主语",
+                "t": "the trend"
+              },
+              {
+                "r": "谓语",
+                "t": "will change"
+              },
+              {
+                "r": "宾语",
+                "t": "our approach to learning from a focus on individual facts and memorization to an emphasis on more conceptual thinking—something"
+              },
+              {
+                "r": "定语从句",
+                "t": "that is not available on the Internet."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s13",
@@ -1639,7 +1810,28 @@
               "w": "intellectual",
               "meaning": "adj. 智力的，脑力的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语",
+                "t": "\"I personally have never seen all that much intellectual value in memorizing things,\""
+              },
+              {
+                "r": "主语",
+                "t": "Sparrow"
+              },
+              {
+                "r": "谓语",
+                "t": "says,"
+              },
+              {
+                "r": "分词短语",
+                "t": "adding that we haven't lost our ability to do it."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s14",
@@ -1666,7 +1858,32 @@
               "w": "interferes with",
               "meaning": "扰乱，干扰（某物）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "no experimental evidence"
+              },
+              {
+                "r": "分词短语",
+                "t": "showing that it interferes with our ability to focus, for instance,"
+              },
+              {
+                "r": "插入语",
+                "t": "wrote psychologists Christopher Chabris and Daniel J. Simons."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s16",
@@ -1682,7 +1899,28 @@
               "w": "Neuroscience",
               "meaning": "n. 神经科学"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列词",
+                "t": "And"
+              },
+              {
+                "r": "主语",
+                "t": "surfing the web"
+              },
+              {
+                "r": "谓语",
+                "t": "exercised"
+              },
+              {
+                "r": "宾语",
+                "t": "the brain more than reading did among computer-savvy older adults in a 2008 study involving 24 participants at the Semel Institute for Neuroscience and Human Behavior at the University of California, Los Angeles."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s17",
@@ -1710,7 +1948,24 @@
               "w": "associated with",
               "meaning": "与……有关"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语",
+                "t": "\"There may be costs associated with our increased reliance on the Internet, but I'd have to imagine that overall the benefits are going to outweigh those costs,\""
+              },
+              {
+                "r": "谓语",
+                "t": "observes"
+              },
+              {
+                "r": "主语",
+                "t": "psychology professor Benjamin Storm."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text3_s18",
@@ -1722,7 +1977,16 @@
               "w": "for the better",
               "meaning": "向着较好的情况"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语",
+                "t": "\"It seems pretty clear that memory is changing, but is it changing for the better? At this point, we don't know.\""
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -1900,7 +2164,24 @@
               "w": "considerably",
               "meaning": "adv. 非常，相当多地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That's"
+              },
+              {
+                "r": "表语",
+                "t": "a mild and detached way of saying something"
+              },
+              {
+                "r": "定语从句",
+                "t": "that parents often express with considerably stronger language."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s03",
@@ -1916,7 +2197,28 @@
               "w": "as well as",
               "meaning": "不仅 B，也 A"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the paradox"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "scientific as well as personal."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s04",
@@ -1932,7 +2234,36 @@
               "w": "just about",
               "meaning": "几乎，差不多"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In adolescence,"
+              },
+              {
+                "r": "主语",
+                "t": "helpless and dependent children"
+              },
+              {
+                "r": "定语从句",
+                "t": "who have relied on grown-ups for just about everything"
+              },
+              {
+                "r": "谓语",
+                "t": "become"
+              },
+              {
+                "r": "宾语",
+                "t": "independent people"
+              },
+              {
+                "r": "定语从句",
+                "t": "who can take care of themselves and help each other."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s05",
@@ -1968,7 +2299,28 @@
               "w": "go hand in hand",
               "meaning": "密切关联，相伴随行"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "A new study published in the journal Child Development,"
+              },
+              {
+                "r": "插入语",
+                "t": "by Eveline Crone of the University of Leiden and colleagues,"
+              },
+              {
+                "r": "谓语",
+                "t": "suggests"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the positive and negative sides of teenagers go hand in hand."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s07",
@@ -2000,7 +2352,36 @@
               "w": "policy makers",
               "meaning": "政策制定者"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "For a long time,"
+              },
+              {
+                "r": "主语",
+                "t": "scientists and policy makers"
+              },
+              {
+                "r": "谓语",
+                "t": "concentrated on"
+              },
+              {
+                "r": "宾语",
+                "t": "the idea"
+              },
+              {
+                "r": "同位语从句",
+                "t": "that teenagers were a problem"
+              },
+              {
+                "r": "定语从句",
+                "t": "that needed to be solved."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s09",
@@ -2016,7 +2397,24 @@
               "w": "work",
               "meaning": "n. 研究"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The new work"
+              },
+              {
+                "r": "谓语",
+                "t": "emphasizes"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that adolescence is a time of opportunity as well as risk."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s10",
@@ -2032,7 +2430,28 @@
               "w": "traits",
               "meaning": "n. 特征，特点"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The researchers"
+              },
+              {
+                "r": "谓语",
+                "t": "studied"
+              },
+              {
+                "r": "宾语",
+                "t": "\"prosocial\" and rebellious traits in more than 200 children and young adults,"
+              },
+              {
+                "r": "分词短语",
+                "t": "ranging from 11 to 28 years old."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s11",
@@ -2056,7 +2475,36 @@
               "w": "staying out late",
               "meaning": "晚归"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The participants"
+              },
+              {
+                "r": "谓语",
+                "t": "filled out"
+              },
+              {
+                "r": "宾语",
+                "t": "questionnaires about how often they did things"
+              },
+              {
+                "r": "定语从句",
+                "t": "that were altruistic and positive,"
+              },
+              {
+                "r": "举例",
+                "t": "like sacrificing their own interests to help a friend,"
+              },
+              {
+                "r": "并列",
+                "t": "or rebellious and negative, like getting drunk or staying out late."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s12",
@@ -2068,7 +2516,24 @@
               "w": "fades away",
               "meaning": "逐渐消逝"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Other studies"
+              },
+              {
+                "r": "谓语",
+                "t": "have shown"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that rebellious behavior increases as you become a teenager and then fades away as you grow older."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s13",
@@ -2100,7 +2565,28 @@
               "w": "likely",
               "meaning": "adj. 可能的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Teenagers"
+              },
+              {
+                "r": "谓语",
+                "t": "were more likely"
+              },
+              {
+                "r": "状语",
+                "t": "than younger children or adults"
+              },
+              {
+                "r": "不定式短语",
+                "t": "to report that they did things like unselfishly helping a friend."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s15",
@@ -2231,14 +2717,56 @@
               "w": "impressing",
               "meaning": "v. 给……留下好印象，打动"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Teenagers"
+              },
+              {
+                "r": "谓语",
+                "t": "are particularly sensitive to"
+              },
+              {
+                "r": "宾语",
+                "t": "social rewards—winning the game, impressing a new friend, getting that boy to notice you."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s23",
           "para": 7,
           "en": "Reward sensitivity, like prosocial behavior and risk-taking, seems to go up in adolescence and then down again as we age.",
           "cn": "像亲社会行为和冒险倾向一样，回报敏感性似乎也是在青春期会不断增强，然后又随年龄渐长而逐渐减弱。",
-          "words": []
+          "words": [],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Reward sensitivity,"
+              },
+              {
+                "r": "插入语",
+                "t": "like prosocial behavior and risk-taking,"
+              },
+              {
+                "r": "谓语",
+                "t": "seems to go up"
+              },
+              {
+                "r": "状语",
+                "t": "in adolescence and then down again"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "as we age."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text4_s24",
@@ -2254,7 +2782,36 @@
               "w": "hit",
               "meaning": "v. 达到"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Somehow,"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when you hit 30,"
+              },
+              {
+                "r": "主语",
+                "t": "the chance"
+              },
+              {
+                "r": "同位语从句",
+                "t": "that something exciting and new will happen at that party"
+              },
+              {
+                "r": "谓语",
+                "t": "just doesn't seem to outweigh"
+              },
+              {
+                "r": "宾语",
+                "t": "the effort of getting up off the couch."
+              }
+            ]
+          }
         }
       ],
       "questions": [
