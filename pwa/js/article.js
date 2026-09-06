@@ -169,14 +169,50 @@ const SIG_RULES = [
     { cls: 'ref', re: /\b(?:this|these|those|such)\b/gi },
 ];
 
-/** 对 annotate 的纯文本分段做信号词切分（词 span / 词典 span 不动，保证点词查词不受影响） */
+/** 单词级信号映射：词 span 的文本精确命中即叠加信号类（点词查词保留） */
+const SIG_WORD_MAP = {
+    'but': 'trans', 'however': 'trans', 'yet': 'trans', 'although': 'trans', 'though': 'trans',
+    'while': 'trans', 'whereas': 'trans', 'nevertheless': 'trans', 'nonetheless': 'trans',
+    'instead': 'trans', 'rather than': 'trans', 'even though': 'trans', 'even if': 'trans',
+    'in contrast': 'trans', 'by contrast': 'trans', 'on the contrary': 'trans',
+    'because': 'caus', 'therefore': 'caus', 'thus': 'caus', 'hence': 'caus', 'due to': 'caus',
+    'owing to': 'caus', 'thanks to': 'caus', 'in order to': 'caus', 'so as to': 'caus',
+    'so that': 'caus', 'as a result': 'caus', 'lead to': 'caus', 'leads to': 'caus',
+    'led to': 'caus', 'result in': 'caus', 'results in': 'caus', 'resulted in': 'caus',
+    'contribute to': 'caus', 'contributes to': 'caus', 'contributed to': 'caus',
+    'which': 'lead', 'who': 'lead', 'whom': 'lead', 'whose': 'lead',
+    'where': 'lead', 'when': 'lead', 'how': 'lead',
+    'this': 'ref', 'these': 'ref', 'those': 'ref', 'such': 'ref',
+    'such as': 'mod', 'including': 'mod', 'for example': 'mod', 'for instance': 'mod',
+};
+
+/** 对 annotate 的分段做信号词标注：
+ *  纯文本段 → 正则切分；词 span/词典 span → 文本命中信号词时叠加 sig 类（点词查词保留） */
 function markSignals(segs) {
     if (!sigOn()) return;
     const L = sigLayers();
+    let prev = '';   // 已处理分段的拼接文本（while 让步上下文判断用）
     for (let i = 0; i < segs.length; i++) {
         const seg = segs[i];
-        if (seg.wi !== undefined || seg.dictFallback || seg.sig) continue;
+        const isWord = seg.wi !== undefined || seg.dictFallback;
         const text = seg.text;
+        if (isWord) {
+            const key = text.trim().toLowerCase();
+            const cls = SIG_WORD_MAP[key];
+            if (cls && L[cls]) {
+                if (key === 'while') {
+                    // while 仅句首/标点后算让步，时间 while 不标
+                    if (prev.trim() !== '' && !/[.,;:]\s*$/.test(prev)) { prev += text; continue; }
+                }
+                if (key === 'such' && /^\s*as\b/i.test((segs[i + 1] || {}).text || '')) {
+                    prev += text; continue;   // such as 不标指代
+                }
+                seg.sig = cls;
+            }
+            prev += text;
+            continue;
+        }
+        if (seg.sig) { prev += text; continue; }
         const hits = [];
         for (const rule of SIG_RULES) {
             if (!L[rule.cls]) continue;
@@ -184,7 +220,7 @@ function markSignals(segs) {
             let m;
             while ((m = re.exec(text)) !== null) {
                 if (rule.cls === 'trans' && /^while$/i.test(m[0])) {
-                    const before = text.slice(0, m.index);
+                    const before = (prev + text.slice(0, m.index));
                     if (before.trim() !== '' && !/[.,;:]\s*$/.test(before)) continue;  // 时间 while 不标
                 }
                 if (rule.cls === 'ref' && /^such$/i.test(m[0])) {
@@ -193,7 +229,7 @@ function markSignals(segs) {
                 hits.push({ s: m.index, e: m.index + m[0].length, cls: rule.cls });
             }
         }
-        if (!hits.length) continue;
+        if (!hits.length) { prev += text; continue; }
         hits.sort((a, b) => a.s - b.s || (b.e - b.s) - (a.e - a.s));
         const picked = [];
         let lastEnd = -1;
@@ -206,6 +242,7 @@ function markSignals(segs) {
             pos = h.e;
         }
         if (pos < text.length) repl.push({ text: text.slice(pos) });
+        prev += text;
         segs.splice(i, 1, ...repl);
         i += repl.length - 1;
     }
@@ -215,11 +252,18 @@ function markSignals(segs) {
 function structTreeHtml(nodes, depth) {
     return nodes.map(n => {
         const pillCls = TRUNK_ROLES.includes(n.r) ? 'st-t' : (/从句$/.test(n.r) ? 'st-c' : 'st-m');
-        const lead = n.lead && (n.t || '').toLowerCase().startsWith(String(n.lead).toLowerCase())
-            ? `<span class="sig-lead">${esc(n.lead)}</span>${esc(n.t.slice(n.lead.length))}` : esc(n.t || '');
+        let body = esc(n.t || '');
+        if (n.lead) {
+            // t 可能以引号/括号开头（如 "While...），允许跳过少量非字母字符后高亮 lead
+            const idx = body.toLowerCase().indexOf(String(n.lead).toLowerCase());
+            if (idx > -1 && idx <= 12) {
+                const lead = String(n.lead);
+                body = body.slice(0, idx) + '<span class="sig-lead">' + body.slice(idx, idx + lead.length) + '</span>' + body.slice(idx + lead.length);
+            }
+        }
         const kids = n.nodes && n.nodes.length ? structTreeHtml(n.nodes, depth + 1) : '';
         return `<div class="st-row" style="padding-left:${depth * 18}px">` +
-            `<span class="st-pill ${pillCls}">${esc(n.r)}</span><span>${lead}</span>` +
+            `<span class="st-pill ${pillCls}">${esc(n.r)}</span><span>${body}</span>` +
             (n.mod ? `<span class="st-mod">→ 修饰 ${esc(n.mod)}</span>` : '') + `</div>` + kids;
     }).join('');
 }
@@ -474,15 +518,16 @@ function annotate(s) {
     }
     markSignals(segs);   // 信号染色：在词/词组标注之后，仅切分纯文本段
     const html = segs.map(seg => {
+        const sigCls = seg.sig ? ' sig-' + seg.sig : '';
         if (seg.wi !== undefined) {
             const w = s.words[seg.wi];
             const hard = isHard(w.w) ? ' hard' : '';
-            return `<span class="word${hard}" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
+            return `<span class="word${hard}${sigCls}" data-w="${esc(w.w)}" onclick="onWordClick(event,'${s.id}',${seg.wi})">${esc(seg.text)}</span>`;
         }
         if (seg.dictFallback) {
             const w = seg.word;
             const hard = isHard(w.w) ? ' hard' : '';
-            return `<span class="word dict-hard${hard}" data-w="${esc(w.w)}" onclick="onDictWordClick(event,'${s.id}')">${esc(seg.text)}</span>`;
+            return `<span class="word dict-hard${hard}${sigCls}" data-w="${esc(w.w)}" onclick="onDictWordClick(event,'${s.id}')">${esc(seg.text)}</span>`;
         }
         if (seg.sig) {
             return `<span class="sig-${seg.sig}">${annotatePhrases(seg.text, s.id)}</span>`;
