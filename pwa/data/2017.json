@@ -24,7 +24,24 @@
               "w": "local park",
               "meaning": "当地公园"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Every Saturday morning, at 9 am,"
+              },
+              {
+                "r": "主语",
+                "t": "more than 50,000 runners"
+              },
+              {
+                "r": "谓语",
+                "t": "set off to run 5km around their local park."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s02",
@@ -40,7 +57,20 @@
               "w": "has inspired",
               "meaning": "激发，激励"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Parkrun phenomenon"
+              },
+              {
+                "r": "谓语",
+                "t": "began with a dozen friends and has inspired 400 events in the UK and more abroad."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s03",
@@ -72,7 +102,28 @@
               "w": "world record",
               "meaning": "世界纪录"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Runners"
+              },
+              {
+                "r": "谓语",
+                "t": "range from four years old to grandparents;"
+              },
+              {
+                "r": "主语",
+                "t": "their times"
+              },
+              {
+                "r": "谓语",
+                "t": "range from Andrew Baddeley's world record 13 minutes 48 seconds up to an hour."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s05",
@@ -104,7 +155,29 @@
               "w": "Olympiad",
               "meaning": "n. 奥林匹克运动会（届）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Ten years ago on Monday,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "was announced"
+              },
+              {
+                "r": "主语从句",
+                "t": "that the Games of the 30th Olympiad would be in London.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s07",
@@ -124,7 +197,25 @@
               "w": "couches",
               "meaning": "n. 沙发"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Planning documents"
+              },
+              {
+                "r": "谓语",
+                "t": "pledged"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the great legacy of the Games would be to lever a nation of sport lovers away from their couches.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s08",
@@ -164,7 +255,24 @@
               "w": "general population",
               "meaning": "总人口"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The number of adults doing weekly sport"
+              },
+              {
+                "r": "谓语",
+                "t": "did rise, by nearly 2 million in the run-up to 2012"
+              },
+              {
+                "r": "并列",
+                "t": "- but the general population was growing faster."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s11",
@@ -192,7 +300,25 @@
               "w": "halved",
               "meaning": "v. 减半"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The opposition"
+              },
+              {
+                "r": "谓语",
+                "t": "claims"
+              },
+              {
+                "r": "宾语从句",
+                "t": "primary school pupils doing at least two hours of sport a week have nearly halved.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s13",
@@ -280,7 +406,24 @@
               "w": "top talent",
               "meaning": "顶尖天才"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There"
+              },
+              {
+                "r": "谓语",
+                "t": "is as much joy over a puffed-out first-timer being clapped over the line"
+              },
+              {
+                "r": "并列",
+                "t": "as there is about top talent shining."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s19",
@@ -300,7 +443,24 @@
               "w": "elite athletes",
               "meaning": "精英运动员"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Olympic bidders,"
+              },
+              {
+                "r": "插入语",
+                "t": "by contrast,"
+              },
+              {
+                "r": "谓语",
+                "t": "wanted to get more people doing sport and to produce more elite athletes."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s20",
@@ -340,7 +500,24 @@
               "w": "grassroots",
               "meaning": "n./adj. 基层民众；草根的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "副词",
+                "t": "Indeed,"
+              },
+              {
+                "r": "主语",
+                "t": "there"
+              },
+              {
+                "r": "谓语",
+                "t": "is something a little absurd in the state getting involved in the planning of such a fundamentally \"grassroots\" concept as community sports associations."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s22",
@@ -360,7 +537,29 @@
               "w": "pave",
               "meaning": "v. 铺筑，铺设"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If there is a role for government,",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "should really be getting involved in providing common goods"
+              },
+              {
+                "r": "同位语",
+                "t": "- making sure there is space for playing fields and the money to pave tennis and netball courts, and encouraging the provision of all these activities in schools."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s23",
@@ -380,7 +579,24 @@
               "w": "local authorities",
               "meaning": "地方政府"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "successive governments"
+              },
+              {
+                "r": "谓语",
+                "t": "have presided over selling green spaces, squeezing money from local authorities and declining attention on sport in education."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s24",
@@ -400,7 +616,24 @@
               "w": "thrive",
               "meaning": "v. 繁荣，兴盛"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Instead of wordy, worthy strategies,"
+              },
+              {
+                "r": "主语",
+                "t": "future governments"
+              },
+              {
+                "r": "谓语",
+                "t": "need to do more to provide the conditions for sport to thrive."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text1_s25",
@@ -578,7 +811,24 @@
               "w": "screen use",
               "meaning": "屏幕/数字产品使用"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "With so much focus on children's use of screens,"
+              },
+              {
+                "r": "主语",
+                "t": "it's"
+              },
+              {
+                "r": "谓语",
+                "t": "easy for parents to forget about their own screen use."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s02",
@@ -594,7 +844,24 @@
               "w": "maximal engagement",
               "meaning": "最大参与度"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Tech is designed to really suck you in,\""
+              },
+              {
+                "r": "插入语",
+                "t": "says Jenny Radesky in her study of digital play,"
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"and digital products are there to promote maximal engagement.\""
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s03",
@@ -634,7 +901,20 @@
               "w": "food-testing exercise",
               "meaning": "食物测试任务"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Radesky"
+              },
+              {
+                "r": "谓语",
+                "t": "has studied the use of mobile phones and tablets at mealtimes by giving mother-child pairs a food-testing exercise."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s05",
@@ -650,7 +930,25 @@
               "w": "nonverbal interactions",
               "meaning": "非语言互动"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "She"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that mothers who used devices during the exercise started 20 per cent fewer verbal and 39 per cent fewer nonverbal interactions with their children.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s06",
@@ -678,7 +976,24 @@
               "w": "attention",
               "meaning": "n. 注意，关注"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Parents"
+              },
+              {
+                "r": "谓语",
+                "t": "would be looking at their emails"
+              },
+              {
+                "r": "并列",
+                "t": "while the children would be making excited bids for their attention."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s08",
@@ -698,7 +1013,37 @@
               "w": "disconcerting",
               "meaning": "adj. 令人不安的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Infants"
+              },
+              {
+                "r": "谓语",
+                "t": "are wired to look at parents' faces to try to understand their world,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "if those faces are blank and unresponsive - as they often are when absorbed in a device -",
+                "lead": "if"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "can be extremely disconcerting for the children."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s09",
@@ -738,7 +1083,28 @@
               "w": "distressed",
               "meaning": "adj. 苦恼的，痛苦的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In it,"
+              },
+              {
+                "r": "主语",
+                "t": "a mother"
+              },
+              {
+                "r": "谓语",
+                "t": "is asked to interact with her child in a normal way before putting on a blank expression and not giving them any visual social feedback:"
+              },
+              {
+                "r": "同位语",
+                "t": "The child becomes increasingly distressed as she tries to capture her mother's attention."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s11",
@@ -758,7 +1124,20 @@
               "w": "emotional need",
               "meaning": "情感需求"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Parents don't have to be exquisitely present at all times, but there needs to be a balance and parents need to be responsive and sensitive to a child's verbal or nonverbal expressions of an emotional need,\""
+              },
+              {
+                "r": "插入语",
+                "t": "says Radesky."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s12",
@@ -778,7 +1157,29 @@
               "w": "always be interacting",
               "meaning": "一直保持互动"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "On the other hand,"
+              },
+              {
+                "r": "主语",
+                "t": "Tronick himself"
+              },
+              {
+                "r": "谓语",
+                "t": "is concerned"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the worries about kids' use of screens are born out of an \"oppressive ideology that demands that parents should always be interacting\" with their children:",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s13",
@@ -798,7 +1199,26 @@
               "w": "neglecting",
               "meaning": "v. 忽视，疏忽"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "\"It's"
+              },
+              {
+                "r": "表语",
+                "t": "based on a somewhat fantasised, very white, very upper-middle-class ideology"
+              },
+              {
+                "r": "定语从句",
+                "t": "that says if you're failing to expose your child to 30,000 words you are neglecting them.\"",
+                "lead": "that",
+                "mod": "an ideology"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s14",
@@ -814,7 +1234,29 @@
               "w": "have a break from",
               "meaning": "暂时离开……休息一下"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Tronick"
+              },
+              {
+                "r": "谓语",
+                "t": "believes"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that just because a child isn't learning from the screen doesn't mean there's no value to it",
+                "lead": "that"
+              },
+              {
+                "r": "分词短语",
+                "t": "- particularly if it gives parents time to have a shower, do housework or simply have a break from their child."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s15",
@@ -830,7 +1272,24 @@
               "w": "get some work out of the way",
               "meaning": "把一些工作处理完"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Parents,"
+              },
+              {
+                "r": "插入语",
+                "t": "he says,"
+              },
+              {
+                "r": "谓语",
+                "t": "can get a lot out of using their devices to speak to a friend or get some work out of the way."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text2_s16",
@@ -846,7 +1305,26 @@
               "w": "the rest of the time",
               "meaning": "其余时间"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "can make them feel happier,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which lets them be more available to their child the rest of the time.",
+                "lead": "which",
+                "mod": "This"
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -1013,7 +1491,24 @@
               "w": "a gap year",
               "meaning": "间隔年（休整一年）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Today,"
+              },
+              {
+                "r": "主语",
+                "t": "widespread social pressure to immediately go to college in conjunction with increasingly high expectations in a fast-moving world"
+              },
+              {
+                "r": "谓语",
+                "t": "often causes students to completely overlook the possibility of taking a gap year."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s02",
@@ -1029,7 +1524,33 @@
               "w": "stay back a year",
               "meaning": "延迟一年"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "After all,"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "if everyone you know is going to college in the fall,",
+                "lead": "if"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "seems silly to stay back a year,"
+              },
+              {
+                "r": "插入语",
+                "t": "doesn't it?"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s03",
@@ -1045,7 +1566,34 @@
               "w": "academic",
               "meaning": "adj. 学术的，学业的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "状语",
+                "t": "after going to school for 12 years,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "doesn't feel natural to spend a year doing something"
+              },
+              {
+                "r": "定语从句",
+                "t": "that isn't academic.",
+                "lead": "that",
+                "mod": "something"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s04",
@@ -1077,7 +1625,25 @@
               "w": "lucrative career",
               "meaning": "赚钱的职业"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There's"
+              },
+              {
+                "r": "表语",
+                "t": "always a constant fear of falling behind everyone else on the socially perpetuated \"race to the finish line,\""
+              },
+              {
+                "r": "让步状语从句",
+                "t": "whether that be toward graduate school, medical school or a lucrative career.",
+                "lead": "whether"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s06",
@@ -1097,7 +1663,32 @@
               "w": "academic pursuits",
               "meaning": "学术事业/追求"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "让步状语",
+                "t": "despite common misconceptions,"
+              },
+              {
+                "r": "主语",
+                "t": "a gap year"
+              },
+              {
+                "r": "谓语",
+                "t": "does not hinder the success of academic pursuits"
+              },
+              {
+                "r": "并列",
+                "t": "- in fact, it probably enhances it."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s07",
@@ -1113,7 +1704,25 @@
               "w": "perform better",
               "meaning": "表现更好"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Studies from the United States and Australia"
+              },
+              {
+                "r": "谓语",
+                "t": "show"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that students who take a gap year are generally better prepared for and perform better in college than those who do not.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s08",
@@ -1133,7 +1742,28 @@
               "w": "struggle with",
               "meaning": "为……而苦恼、纠结"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Rather than pulling students back,"
+              },
+              {
+                "r": "主语",
+                "t": "a gap year"
+              },
+              {
+                "r": "谓语",
+                "t": "pushes them ahead by preparing them for independence, new responsibilities and environmental changes"
+              },
+              {
+                "r": "同位语",
+                "t": "- all things that first-year students often struggle with the most."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s09",
@@ -1153,7 +1783,29 @@
               "w": "acclimation blunders",
               "meaning": "适应过程中的失误"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Gap year experiences"
+              },
+              {
+                "r": "谓语",
+                "t": "can lessen the blow"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when it comes to adjusting to college and being thrown into a brand new environment,",
+                "lead": "when"
+              },
+              {
+                "r": "分词短语",
+                "t": "making it easier to focus on academics and activities rather than acclimation blunders."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s10",
@@ -1173,7 +1825,25 @@
               "w": "financial impact",
               "meaning": "经济影响"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If you're not convinced of the inherent value in taking a year off to explore interests,",
+                "lead": "If"
+              },
+              {
+                "r": "并列",
+                "t": "then"
+              },
+              {
+                "r": "谓语",
+                "t": "consider its financial impact on future academic choices."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s11",
@@ -1189,7 +1859,24 @@
               "w": "at least once",
               "meaning": "至少一次"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "According to the National Center for Education Statistics,"
+              },
+              {
+                "r": "主语",
+                "t": "nearly 80 percent of college students"
+              },
+              {
+                "r": "谓语",
+                "t": "end up changing their majors at least once."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s12",
@@ -1209,7 +1896,30 @@
               "w": "await them",
               "meaning": "等待着他们"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "isn't surprising,"
+              },
+              {
+                "r": "原因状语",
+                "t": "considering the basic mandatory high school curriculum leaves students with a poor understanding of the vast academic possibilities"
+              },
+              {
+                "r": "定语从句",
+                "t": "that await them in college.",
+                "lead": "that",
+                "mod": "the vast academic possibilities"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s13",
@@ -1225,7 +1935,24 @@
               "w": "switching to another",
               "meaning": "转到另一个（专业）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Many students"
+              },
+              {
+                "r": "谓语",
+                "t": "find themselves listing one major on their college applications,"
+              },
+              {
+                "r": "并列",
+                "t": "but switching to another after taking college classes."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s14",
@@ -1245,7 +1972,36 @@
               "w": "too late in the game",
               "meaning": "为时太晚"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "not necessarily a bad thing,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "状语",
+                "t": "depending on the school,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "can be costly to make up credits after switching too late in the game."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s15",
@@ -1261,7 +2017,29 @@
               "w": "nursing school",
               "meaning": "护理学院"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "At Boston College, for example,"
+              },
+              {
+                "r": "主语",
+                "t": "you"
+              },
+              {
+                "r": "谓语",
+                "t": "would have to complete an extra year"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "were you to switch to the nursing school from another department.",
+                "lead": "were"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text3_s16",
@@ -1281,7 +2059,20 @@
               "w": "save money",
               "meaning": "省钱"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Taking a gap year to figure things out initially"
+              },
+              {
+                "r": "谓语",
+                "t": "can help prevent stress and save money later on."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -1451,7 +2242,33 @@
               "w": "federal tax dollars",
               "meaning": "联邦税款"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Though often viewed as a problem for western states,",
+                "lead": "Though"
+              },
+              {
+                "r": "主语",
+                "t": "the growing frequency of wildfires"
+              },
+              {
+                "r": "谓语",
+                "t": "is a national concern because of its impact on federal tax dollars,"
+              },
+              {
+                "r": "插入语",
+                "t": "says Professor Max Moritz,"
+              },
+              {
+                "r": "同位语",
+                "t": "a specialist in fire ecology and management."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s02",
@@ -1471,7 +2288,28 @@
               "w": "nearly double",
               "meaning": "几乎两倍"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In 2015,"
+              },
+              {
+                "r": "主语",
+                "t": "the US Forest Service"
+              },
+              {
+                "r": "谓语",
+                "t": "for the first time spent more than half of its $5.5 billion annual budget fighting fires"
+              },
+              {
+                "r": "同位语",
+                "t": "- nearly double the percentage it spent on such efforts 20 years ago."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s03",
@@ -1491,7 +2329,30 @@
               "w": "infrastructure upkeep",
               "meaning": "基础设施养护"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In effect,"
+              },
+              {
+                "r": "主语",
+                "t": "fewer federal funds today"
+              },
+              {
+                "r": "谓语",
+                "t": "are going towards the agency's other work - such as forest conservation, watershed and cultural resources management, and infrastructure upkeep -"
+              },
+              {
+                "r": "定语从句",
+                "t": "that affect the lives of all Americans.",
+                "lead": "that",
+                "mod": "the agency's other work"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s04",
@@ -1527,7 +2388,27 @@
               "w": "lost to a wildfire",
               "meaning": "毁于野火"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "As Moritz puts it,",
+                "lead": "As"
+              },
+              {
+                "r": "谓语",
+                "t": "how often are federal dollars building homes"
+              },
+              {
+                "r": "定语从句",
+                "t": "that are likely to be lost to a wildfire?",
+                "lead": "that",
+                "mod": "homes"
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s06",
@@ -1563,7 +2444,16 @@
               "w": "lower-hazard",
               "meaning": "较低风险的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"We need to take a magnifying glass to that. Like, 'Wait a minute, is this OK?' Do we want instead to redirect those funds to concentrate on lower-hazard parts of the landscape?\""
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s08",
@@ -1579,7 +2469,24 @@
               "w": "views fire",
               "meaning": "看待火灾"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Such a view"
+              },
+              {
+                "r": "谓语",
+                "t": "would require a corresponding shift in the way US society today views fire,"
+              },
+              {
+                "r": "插入语",
+                "t": "researchers say."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s09",
@@ -1615,7 +2522,28 @@
               "w": "worsen fires",
               "meaning": "使火灾恶化"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Over the past decade,"
+              },
+              {
+                "r": "主语",
+                "t": "the focus"
+              },
+              {
+                "r": "谓语",
+                "t": "has been on climate change"
+              },
+              {
+                "r": "同位语",
+                "t": "- how the warming of the Earth from greenhouse gases is leading to conditions that worsen fires."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s11",
@@ -1635,7 +2563,29 @@
               "w": "the rest of the equation",
               "meaning": "其余的（影响）因素"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "While climate is a key element,",
+                "lead": "While"
+              },
+              {
+                "r": "插入语",
+                "t": "Moritz says,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "shouldn't come at the expense of the rest of the equation."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s12",
@@ -1655,7 +2605,20 @@
               "w": "go both ways",
               "meaning": "双向的，互相的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"The human systems and the landscapes we live on are linked, and the interactions go both ways,\""
+              },
+              {
+                "r": "插入语",
+                "t": "he says."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s13",
@@ -1675,7 +2638,24 @@
               "w": "perception",
               "meaning": "n. 认知，看法"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Failing to recognize that,"
+              },
+              {
+                "r": "插入语",
+                "t": "he notes,"
+              },
+              {
+                "r": "谓语",
+                "t": "leads to \"an overly simplified view of what the solutions might be. Our perception of the problem and of what the solution is becomes very limited.\""
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s14",
@@ -1695,7 +2675,34 @@
               "w": "out of necessity",
               "meaning": "出于必要"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "At the same time,"
+              },
+              {
+                "r": "主语",
+                "t": "people"
+              },
+              {
+                "r": "谓语",
+                "t": "continue to treat fire as an event"
+              },
+              {
+                "r": "定语从句",
+                "t": "that needs to be wholly controlled and unleashed only out of necessity,",
+                "lead": "that",
+                "mod": "an event"
+              },
+              {
+                "r": "插入语",
+                "t": "says Professor Balch at the University of Colorado."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s15",
@@ -1715,7 +2722,34 @@
               "w": "crucial to",
               "meaning": "对……至关重要"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "acknowledging fire's inevitable presence in human life"
+              },
+              {
+                "r": "谓语",
+                "t": "is an attitude crucial to developing the laws, policies, and practices"
+              },
+              {
+                "r": "定语从句",
+                "t": "that make it as safe as possible,",
+                "lead": "that",
+                "mod": "the laws, policies, and practices"
+              },
+              {
+                "r": "插入语",
+                "t": "she says."
+              }
+            ]
+          }
         },
         {
           "id": "2017_text4_s16",
@@ -1747,7 +2781,16 @@
               "w": "human connection with fire",
               "meaning": "人类与火灾的关联"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"It is really important to understand and try and tease out what is the human connection with fire today.\""
+              }
+            ]
+          }
         }
       ],
       "questions": [

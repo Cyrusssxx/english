@@ -48,7 +48,28 @@
               "w": "assistant dean",
               "meaning": "副院长"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Students without experience"
+              },
+              {
+                "r": "谓语",
+                "t": "can catch up after a few introductory courses,"
+              },
+              {
+                "r": "插入语",
+                "t": "said Tom Cortina,"
+              },
+              {
+                "r": "同位语",
+                "t": "the assistant dean at Carnegie Mellon's School of Computer Science."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s03",
@@ -84,7 +105,30 @@
               "w": "test hypotheses",
               "meaning": "检验假设"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When younger kids learn computer science,",
+                "lead": "When"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "learn"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that it's not just a confusing, endless string of letters and numbers - but a tool to build apps, or create artwork, or test hypotheses.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s05",
@@ -96,7 +140,24 @@
               "w": "transform their thought processes",
               "meaning": "转换他们的思维过程"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "not as hard for them to transform their thought processes"
+              },
+              {
+                "r": "并列",
+                "t": "as it is for older students."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s06",
@@ -128,7 +189,24 @@
               "w": "fill the jobs gap",
               "meaning": "填补职位缺口"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Giving more children this training"
+              },
+              {
+                "r": "谓语",
+                "t": "could increase the number of people interested in the field and help fill the jobs gap,"
+              },
+              {
+                "r": "插入语",
+                "t": "Cortina said."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s08",
@@ -148,7 +226,37 @@
               "w": "drive the less-experienced or -determined students away",
               "meaning": "吓跑经验欠缺或意志力不足的学生"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Students"
+              },
+              {
+                "r": "谓语",
+                "t": "also benefit from learning something about coding"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "before they get to college,",
+                "lead": "before"
+              },
+              {
+                "r": "定语从句",
+                "t": "where introductory computer-science classes are packed to the brim,",
+                "lead": "where",
+                "mod": "college"
+              },
+              {
+                "r": "定语从句",
+                "t": "which can drive the less-experienced or -determined students away.",
+                "lead": "which",
+                "mod": "classes"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s09",
@@ -164,7 +272,32 @@
               "w": "a career change",
               "meaning": "职业转变"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Flatiron School,"
+              },
+              {
+                "r": "定语从句",
+                "t": "where people pay to learn programming,",
+                "lead": "where",
+                "mod": "The Flatiron School"
+              },
+              {
+                "r": "谓语",
+                "t": "started as one of the many coding bootcamps"
+              },
+              {
+                "r": "定语从句",
+                "t": "that's become popular for adults looking for a career change.",
+                "lead": "that",
+                "mod": "the many coding bootcamps"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s10",
@@ -184,7 +317,36 @@
               "w": "instructor",
               "meaning": "n. 讲师，教员"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The high-schoolers"
+              },
+              {
+                "r": "谓语",
+                "t": "get the same curriculum,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"we try to gear lessons toward things they're interested in,\""
+              },
+              {
+                "r": "插入语",
+                "t": "said Victoria Friedman,"
+              },
+              {
+                "r": "同位语",
+                "t": "an instructor."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s11",
@@ -212,7 +374,20 @@
               "w": "drop out of high school",
               "meaning": "从高中辍学"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The students in the Flatiron class"
+              },
+              {
+                "r": "谓语",
+                "t": "probably won't drop out of high school and build the next Facebook."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s13",
@@ -232,7 +407,25 @@
               "w": "the job market",
               "meaning": "就业市场"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Programming languages"
+              },
+              {
+                "r": "谓语",
+                "t": "have a quick turnover,"
+              },
+              {
+                "r": "结果状语从句",
+                "t": "so the \"Ruby on Rails\" language they learned may not even be relevant by the time they enter the job market.",
+                "lead": "so"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s14",
@@ -252,7 +445,32 @@
               "w": "education consultant",
               "meaning": "教育顾问"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the skills they learn - how to think logically through a problem and organize the results -"
+              },
+              {
+                "r": "谓语",
+                "t": "apply to any coding language,"
+              },
+              {
+                "r": "插入语",
+                "t": "said Deborah Seehorn,"
+              },
+              {
+                "r": "同位语",
+                "t": "an education consultant for the state of North Carolina."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s15",
@@ -296,7 +514,24 @@
               "w": "for the rest of their lives",
               "meaning": "在他们余生中"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These kids"
+              },
+              {
+                "r": "谓语",
+                "t": "are going to be surrounded by computers - in their pockets, in their offices, in their homes -"
+              },
+              {
+                "r": "状语",
+                "t": "for the rest of their lives."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text1_s18",
@@ -316,7 +551,21 @@
               "w": "have the power to do that",
               "meaning": "具备做这件事的能力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "比较状语从句",
+                "t": "The younger they learn how computers think, how to coax the machine into producing what they want -",
+                "lead": "the"
+              },
+              {
+                "r": "并列",
+                "t": "the earlier they learn that they have the power to do that - the better."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -480,7 +729,25 @@
               "w": "stretching grasslands",
               "meaning": "绵延的草地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Biologists"
+              },
+              {
+                "r": "谓语",
+                "t": "estimate"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that as many as 2 million lesser prairie chickens - a kind of bird living on stretching grasslands - once lent red to the often grey landscape of the midwestern and southwestern United States.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s02",
@@ -516,7 +783,24 @@
               "w": "list the bird as threatened",
               "meaning": "将该鸟列为受威胁物种"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The crash"
+              },
+              {
+                "r": "谓语",
+                "t": "was"
+              },
+              {
+                "r": "表语",
+                "t": "a major reason the U.S. Fish and Wildlife Service (USFWS) decided to formally list the bird as threatened."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s04",
@@ -568,7 +852,24 @@
               "w": "crack down on",
               "meaning": "打击，严厉整治"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "had pushed the agency to designate the bird as \"endangered,\""
+              },
+              {
+                "r": "同位语",
+                "t": "a status that gives federal officials greater regulatory power to crack down on threats."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s07",
@@ -588,7 +889,29 @@
               "w": "conservation approaches",
               "meaning": "保护方法"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "Ashe and others"
+              },
+              {
+                "r": "谓语",
+                "t": "argued"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the \"threatened\" tag gave the federal government flexibility to try out new, potentially less confrontational conservation approaches.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s08",
@@ -608,7 +931,24 @@
               "w": "private landowners",
               "meaning": "私人土地所有者"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In particular,"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "called for forging closer collaborations with western state governments, which are often uneasy with federal action, and with the private landowners who control an estimated 95% of the prairie chicken's habitat."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s09",
@@ -632,7 +972,34 @@
               "w": "restore",
               "meaning": "v. 恢复，复原"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Under the plan, for example,"
+              },
+              {
+                "r": "主语",
+                "t": "the agency"
+              },
+              {
+                "r": "谓语",
+                "t": "said"
+              },
+              {
+                "r": "宾语从句",
+                "t": "it would not prosecute landowners or businesses that unintentionally kill, harm, or disturb the bird,",
+                "lead": "that"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "as long as they had signed a range-wide management plan to restore prairie chicken habitat.",
+                "lead": "as"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s10",
@@ -652,7 +1019,34 @@
               "w": "suitable habitat",
               "meaning": "适宜的栖息地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "分词短语",
+                "t": "Negotiated by USFWS and the states,"
+              },
+              {
+                "r": "主语",
+                "t": "the plan"
+              },
+              {
+                "r": "谓语",
+                "t": "requires individuals and businesses"
+              },
+              {
+                "r": "定语从句",
+                "t": "that damage habitat as part of their operations",
+                "lead": "that",
+                "mod": "individuals and businesses"
+              },
+              {
+                "r": "谓语",
+                "t": "to pay into a fund to replace every acre destroyed with 2 new acres of suitable habitat."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s11",
@@ -684,7 +1078,20 @@
               "w": "an annual average",
               "meaning": "年平均值"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "USFWS"
+              },
+              {
+                "r": "谓语",
+                "t": "also set an interim goal of restoring prairie chicken populations to an annual average of 67,000 birds over the next 10 years."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s13",
@@ -700,7 +1107,24 @@
               "w": "monitoring progress",
               "meaning": "监督进程"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "gives the Western Association of Fish and Wildlife Agencies (WAFWA), a coalition of state agencies, the job of monitoring progress."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s14",
@@ -716,7 +1140,28 @@
               "w": "remain in the driver's seat",
               "meaning": "处于主导/掌控地位"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Overall,"
+              },
+              {
+                "r": "主语",
+                "t": "the idea"
+              },
+              {
+                "r": "谓语",
+                "t": "is to let \"states remain in the driver's seat for managing the species,\""
+              },
+              {
+                "r": "插入语",
+                "t": "Ashe said."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s15",
@@ -752,7 +1197,32 @@
               "w": "challenging it in federal court",
               "meaning": "在联邦法庭上对其发起质疑"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Some Congress members"
+              },
+              {
+                "r": "谓语",
+                "t": "are trying to block the plan,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "at least a dozen industry groups, four states, and three environmental groups"
+              },
+              {
+                "r": "谓语",
+                "t": "are challenging it in federal court."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s17",
@@ -772,7 +1242,32 @@
               "w": "doesn't go far enough",
               "meaning": "做得还不够"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Not surprisingly,"
+              },
+              {
+                "r": "主语",
+                "t": "industry groups and states"
+              },
+              {
+                "r": "谓语",
+                "t": "generally argue it goes too far;"
+              },
+              {
+                "r": "主语",
+                "t": "environmentalists"
+              },
+              {
+                "r": "谓语",
+                "t": "say it doesn't go far enough."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text2_s18",
@@ -788,7 +1283,20 @@
               "w": "pushing it to extinction",
               "meaning": "将其推向灭绝"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"The federal government is giving responsibility for managing the bird to the same industries that are pushing it to extinction,\""
+              },
+              {
+                "r": "插入语",
+                "t": "says biologist Jay Lininger."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -996,7 +1504,20 @@
               "w": "making time to read",
               "meaning": "腾出时间阅读"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The web's full of articles offering tips on making time to read:"
+              },
+              {
+                "r": "同位语",
+                "t": "\"Give up TV\" or \"Carry a book with you at all times.\""
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s05",
@@ -1032,7 +1553,24 @@
               "w": "exhausted",
               "meaning": "adj. 精疲力竭的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "谓语",
+                "t": "Sit down to read"
+              },
+              {
+                "r": "并列",
+                "t": "and the flywheel of work-related thoughts keeps spinning"
+              },
+              {
+                "r": "并列",
+                "t": "- or else you're so exhausted that a challenging book's the last thing you need."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s07",
@@ -1052,7 +1590,24 @@
               "w": "interruption",
               "meaning": "n. 打断，中断"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The modern mind,"
+              },
+              {
+                "r": "插入语",
+                "t": "Tim Parks, a novelist and critic, writes,"
+              },
+              {
+                "r": "表语",
+                "t": "\"is overwhelmingly inclined toward communication... It is not simply that one is interrupted; it is that one is actually inclined to interruption.\""
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s08",
@@ -1072,7 +1627,26 @@
               "w": "becoming more efficient",
               "meaning": "变得更高效"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Deep reading"
+              },
+              {
+                "r": "谓语",
+                "t": "requires not just time, but a special kind of time"
+              },
+              {
+                "r": "定语从句",
+                "t": "which can't be obtained merely by becoming more efficient.",
+                "lead": "which",
+                "mod": "a special kind of time"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s09",
@@ -1104,7 +1678,25 @@
               "w": "advances progress toward",
               "meaning": "推动朝……的进展"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Thinking of time as a resource to be maximised"
+              },
+              {
+                "r": "谓语",
+                "t": "means"
+              },
+              {
+                "r": "宾语从句",
+                "t": "you approach it instrumentally, judging any given moment as well spent only in so far as it advances progress toward some goal.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s11",
@@ -1144,7 +1736,24 @@
               "w": "goal-focused reading",
               "meaning": "目标集中式阅读"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "谓语",
+                "t": "Try to slot it in as a to-do list item"
+              },
+              {
+                "r": "并列",
+                "t": "and you'll manage only goal-focused reading"
+              },
+              {
+                "r": "分词短语",
+                "t": "- useful, sometimes, but not the most fulfilling kind."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s13",
@@ -1164,7 +1773,24 @@
               "w": "feel a pressure to fill",
               "meaning": "感到有把……装满的压力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"The future comes at us like empty bottles along an unstoppable and nearly infinite conveyor belt,\""
+              },
+              {
+                "r": "谓语",
+                "t": "writes Gary Eberle in his book Sacred Time,"
+              },
+              {
+                "r": "并列",
+                "t": "and \"we feel a pressure to fill these different-sized bottles (days, hours, minutes) as they pass, for if they get by without being filled, we will have wasted them.\""
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s14",
@@ -1216,7 +1842,36 @@
               "w": "step outside time's flow",
               "meaning": "从时间的流逝中走出来"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "You'd"
+              },
+              {
+                "r": "谓语",
+                "t": "think this might fuel the efficiency mind-set,"
+              },
+              {
+                "r": "并列",
+                "t": "but in fact,"
+              },
+              {
+                "r": "插入语",
+                "t": "Eberle notes,"
+              },
+              {
+                "r": "主语",
+                "t": "such ritualistic behaviour"
+              },
+              {
+                "r": "谓语",
+                "t": "helps us \"step outside time's flow\" into \"soul time.\""
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s17",
@@ -1256,7 +1911,24 @@
               "w": "the default state",
               "meaning": "默认状态"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "\"Carry a book with you at all times\""
+              },
+              {
+                "r": "谓语",
+                "t": "can actually work, too"
+              },
+              {
+                "r": "分词短语",
+                "t": "- providing you dip in often enough, so that reading becomes the default state from which you temporarily surface to take care of business, before dropping back down."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text3_s19",
@@ -1272,7 +1944,28 @@
               "w": "making time for everything else",
               "meaning": "为其他一切事情挤出时间"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "On a really good day,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "no longer feels as if you're \"making time to read,\""
+              },
+              {
+                "r": "并列",
+                "t": "but just reading, and making time for everything else."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -1435,7 +2128,28 @@
               "w": "road map to success",
               "meaning": "成功路线图"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Against a backdrop of drastic changes in economy and population structure,"
+              },
+              {
+                "r": "主语",
+                "t": "younger Americans"
+              },
+              {
+                "r": "谓语",
+                "t": "are drawing a new 21st-century road map to success,"
+              },
+              {
+                "r": "插入语",
+                "t": "a latest poll has found."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s02",
@@ -1455,7 +2169,28 @@
               "w": "traditional milestones",
               "meaning": "传统的里程碑"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Across generational lines,"
+              },
+              {
+                "r": "主语",
+                "t": "Americans"
+              },
+              {
+                "r": "谓语",
+                "t": "continue to prize many of the same traditional milestones of a successful life,"
+              },
+              {
+                "r": "分词短语",
+                "t": "including getting married, having children, owning a home, and retiring in their sixties."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s03",
@@ -1475,7 +2210,29 @@
               "w": "strikingly different paths",
               "meaning": "截然不同的路径"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "while young and old mostly agree on what constitutes the finish line of a fulfilling life,",
+                "lead": "while"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "offer strikingly different paths for reaching it."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s04",
@@ -1495,7 +2252,24 @@
               "w": "financially secure",
               "meaning": "经济上有保障"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Young people who are still getting started in life"
+              },
+              {
+                "r": "谓语",
+                "t": "were more likely than older adults to prioritize personal fulfillment in their work, to believe they will advance their careers most by regularly changing jobs, to favor communities with more public services and a faster pace of life, to agree that couples should be financially secure before getting married or having children, and to maintain that children are best served by two parents working outside the home,"
+              },
+              {
+                "r": "插入语",
+                "t": "the survey found."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s05",
@@ -1515,7 +2289,35 @@
               "w": "spread through virtually all aspects",
               "meaning": "蔓延至几乎所有方面"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "From career to community and family,"
+              },
+              {
+                "r": "主语",
+                "t": "these contrasts"
+              },
+              {
+                "r": "谓语",
+                "t": "suggest"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that in the aftermath of the searing Great Recession, those just starting out in life are defining priorities and expectations",
+                "lead": "that"
+              },
+              {
+                "r": "定语从句",
+                "t": "that will increasingly spread through virtually all aspects of American life, from consumer preferences to housing patterns to politics.",
+                "lead": "that",
+                "mod": "priorities and expectations"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s06",
@@ -1535,7 +2337,24 @@
               "w": "earlier generations",
               "meaning": "前几代人"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Young and old"
+              },
+              {
+                "r": "谓语",
+                "t": "converge on one key point:"
+              },
+              {
+                "r": "同位语",
+                "t": "Overwhelming majorities of both groups said they believe it is harder for young people today to get started in life than it was for earlier generations."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s07",
@@ -1559,7 +2378,25 @@
               "w": "affordable housing",
               "meaning": "买得起的住房"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "While younger people are somewhat more optimistic than their elders about the prospects for those starting out today,",
+                "lead": "While"
+              },
+              {
+                "r": "主语",
+                "t": "big majorities in both groups"
+              },
+              {
+                "r": "谓语",
+                "t": "believe those \"just getting started in life\" face a tougher climb than earlier generations in reaching such signpost achievements as securing a good-paying job, starting a family, managing debt, and finding affordable housing."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s08",
@@ -1591,7 +2428,20 @@
               "w": "graduating from college",
               "meaning": "大学毕业"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Schneider, a 27-year-old auto technician from the Chicago suburbs,"
+              },
+              {
+                "r": "谓语",
+                "t": "says he struggled to find a job after graduating from college."
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s10",
@@ -1611,7 +2461,25 @@
               "w": "rent rooms out",
               "meaning": "把房间租出去"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Even now that he is working steadily,",
+                "lead": "that"
+              },
+              {
+                "r": "插入语",
+                "t": "he said,"
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"I can't afford to pay my monthly mortgage payments on my own, so I have to rent rooms out to people to make that happen.\""
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s11",
@@ -1631,7 +2499,34 @@
               "w": "a comfortable life",
               "meaning": "舒适的生活"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "分词短语",
+                "t": "Looking back,"
+              },
+              {
+                "r": "主语",
+                "t": "he"
+              },
+              {
+                "r": "谓语",
+                "t": "is struck"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that his parents could provide a comfortable life for their children",
+                "lead": "that"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "even though neither had completed college when he was young.",
+                "lead": "though"
+              }
+            ]
+          }
         },
         {
           "id": "2016_text4_s12",
@@ -1651,7 +2546,24 @@
               "w": "capable of that",
               "meaning": "能够做到那样"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"I still grew up in an upper middle-class home with parents who didn't have college degrees,\""
+              },
+              {
+                "r": "插入语",
+                "t": "Schneider said."
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"I don't think people are capable of that anymore.\""
+              }
+            ]
+          }
         }
       ],
       "questions": [
