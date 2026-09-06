@@ -21,7 +21,36 @@
               "phonetic": "/skɔːnd/",
               "meaning": "v. 轻蔑，责难"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Homework"
+              },
+              {
+                "r": "谓语",
+                "t": "has never been terribly popular with students and even many parents,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "状语",
+                "t": "in recent years"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "has been particularly scorned."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s02",
@@ -37,7 +66,20 @@
               "w": "educational ritual",
               "meaning": "教育惯例"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "School districts across the country, most recently Los Angeles Unified,"
+              },
+              {
+                "r": "谓语",
+                "t": "are revising their thinking on this educational ritual."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s03",
@@ -58,7 +100,30 @@
               "w": "count for",
               "meaning": "占（比重），有价值"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "副词",
+                "t": "Unfortunately,"
+              },
+              {
+                "r": "主语",
+                "t": "L.A. Unified"
+              },
+              {
+                "r": "谓语",
+                "t": "has produced an inflexible policy"
+              },
+              {
+                "r": "定语从句",
+                "t": "which mandates that with the exception of some advanced courses, homework may no longer count for more than 10% of a student's academic grade.",
+                "lead": "which",
+                "mod": "an inflexible policy"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s04",
@@ -75,7 +140,26 @@
               "phonetic": "/ɪmˈpɒvərɪʃt/",
               "meaning": "adj. 贫困的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This rule"
+              },
+              {
+                "r": "谓语",
+                "t": "is meant to address the difficulty"
+              },
+              {
+                "r": "定语从句",
+                "t": "that students from impoverished or chaotic homes might have in completing their homework.",
+                "lead": "that",
+                "mod": "the difficulty"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s05",
@@ -100,7 +184,40 @@
               "w": "on their own",
               "meaning": "独立地，靠自己"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "副词",
+                "t": "Certainly,"
+              },
+              {
+                "r": "主语",
+                "t": "no homework"
+              },
+              {
+                "r": "谓语",
+                "t": "should be assigned"
+              },
+              {
+                "r": "定语从句",
+                "t": "that students cannot complete on their own",
+                "lead": "that",
+                "mod": "no homework"
+              },
+              {
+                "r": "并列",
+                "t": "or"
+              },
+              {
+                "r": "定语从句",
+                "t": "that they cannot do without expensive equipment.",
+                "lead": "that",
+                "mod": "no homework"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s07",
@@ -117,7 +234,31 @@
               "phonetic": "/ˌɪmplɪˈkeɪʃn/",
               "meaning": "n. 暗示，含义"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "But if the district is essentially giving a pass to students who do not do their homework because of complicated family lives,",
+                "lead": "if"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is going riskily close to the implication"
+              },
+              {
+                "r": "定语从句",
+                "t": "that standards need to be lowered for poor children.",
+                "lead": "that",
+                "mod": "the implication"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s08",
@@ -130,7 +271,25 @@
               "phonetic": "/ədˈmɪnɪstreɪtəz/",
               "meaning": "n. 管理者"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "District administrators"
+              },
+              {
+                "r": "谓语",
+                "t": "say"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that homework will still be a part of schooling; teachers are allowed to assign as much of it as they want.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s09",
@@ -147,7 +306,24 @@
               "w": "report cards",
               "meaning": "成绩单"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "原因状语",
+                "t": "But with homework counting for no more than 10% of their grades,"
+              },
+              {
+                "r": "主语",
+                "t": "students"
+              },
+              {
+                "r": "谓语",
+                "t": "can easily skip half their homework and see very little difference on their report cards."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s10",
@@ -159,7 +335,28 @@
               "w": "state tests",
               "meaning": "州统考"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Some students"
+              },
+              {
+                "r": "谓语",
+                "t": "might do well on state tests without completing their homework,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "what about the students who performed well on the tests and did their homework?"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s11",
@@ -183,7 +380,28 @@
               "w": "across-the-board",
               "meaning": "adj. 全面的，一刀切的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "Yet"
+              },
+              {
+                "r": "状语",
+                "t": "rather than empowering teachers to find what works best for their students,"
+              },
+              {
+                "r": "主语",
+                "t": "the policy"
+              },
+              {
+                "r": "谓语",
+                "t": "imposes a flat, across-the-board rule."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s13",
@@ -209,7 +427,25 @@
               "phonetic": "/ɪˈlɪmɪneɪt/",
               "meaning": "v. 取消，消除"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If the district finds homework to be unimportant to its students' academic achievement,",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "should move to reduce or eliminate the assignments, not make them count for almost nothing."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s15",
@@ -238,7 +474,38 @@
               "w": "appropriate to",
               "meaning": "适合于"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "副词",
+                "t": "Meanwhile,"
+              },
+              {
+                "r": "主语",
+                "t": "this policy"
+              },
+              {
+                "r": "谓语",
+                "t": "does nothing to ensure"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the homework students receive is meaningful or appropriate to their age and the subject,",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "or"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that teachers are not assigning more than they are willing to review and correct.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s17",
@@ -254,7 +521,25 @@
               "w": "public hearings",
               "meaning": "公开听证会"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The homework rules"
+              },
+              {
+                "r": "谓语",
+                "t": "should be put on hold"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "while the school board, which is responsible for setting educational policy, looks into the matter and conducts public hearings.",
+                "lead": "while"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text1_s18",
@@ -423,7 +708,36 @@
               "phonetic": "/pəˈveɪsɪv/",
               "meaning": "adj. 无处不在的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Pretty in pink:"
+              },
+              {
+                "r": "主语",
+                "t": "adult women"
+              },
+              {
+                "r": "谓语",
+                "t": "do not remember being so obsessed with the colour,"
+              },
+              {
+                "r": "转折词",
+                "t": "yet"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is pervasive in our young girls' lives."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s02",
@@ -445,7 +759,50 @@
               "phonetic": "/ˈfjuːzɪz/",
               "meaning": "v. 融合，捆绑"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "is not"
+              },
+              {
+                "r": "表语从句",
+                "t": "that pink is intrinsically bad,",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is such a tiny slice of the rainbow and,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "though it may celebrate girlhood in one way,",
+                "lead": "though"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "also repeatedly and firmly fuses girls' identity to appearance."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s03",
@@ -458,7 +815,24 @@
               "phonetic": "/ˈɪnəsns/",
               "meaning": "n. 天真，无邪"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "副词",
+                "t": "Then"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "presents that connection, even among two-year-olds, between girls as not only innocent but as evidence of innocence."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s04",
@@ -491,7 +865,36 @@
               "w": "associate professor",
               "meaning": "副教授"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Girls' attraction to pink"
+              },
+              {
+                "r": "谓语",
+                "t": "may seem unavoidable, somehow encoded in their DNA,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "状语",
+                "t": "according to Jo Paoletti, an associate professor of American Studies,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is not."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s06",
@@ -507,7 +910,29 @@
               "w": "as a practical matter",
               "meaning": "出于实际考虑"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Children"
+              },
+              {
+                "r": "谓语",
+                "t": "were not colour-coded at all"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "until the early 20th century:",
+                "lead": "until"
+              },
+              {
+                "r": "同位语",
+                "t": "in the era before domestic washing machines all babies wore white as a practical matter, since the only way of getting clothes clean was to boil them."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s07",
@@ -537,7 +962,29 @@
               "phonetic": "/ˈpæstl/",
               "meaning": "adj. 色彩柔和的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When nursery colours were introduced,",
+                "lead": "When"
+              },
+              {
+                "r": "主语",
+                "t": "pink"
+              },
+              {
+                "r": "谓语",
+                "t": "was actually considered the more masculine colour,"
+              },
+              {
+                "r": "同位语",
+                "t": "a pastel version of red, which was associated with strength."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s09",
@@ -577,7 +1024,35 @@
               "phonetic": "/ɪnˈhɪərəntli/",
               "meaning": "adv. 天生地，固有地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "was"
+              },
+              {
+                "r": "状语",
+                "t": "not until the mid-1980s, when amplifying age and sex differences became a dominant children's marketing strategy,",
+                "lead": "when"
+              },
+              {
+                "r": "表语从句",
+                "t": "that pink fully came into its own,",
+                "lead": "that"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when it began to seem inherently attractive to girls, part of what defined them as female, at least for the first few critical years.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s11",
@@ -595,7 +1070,20 @@
               "phonetic": "/pəˈsepʃn/",
               "meaning": "n. 认知，看法"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "I"
+              },
+              {
+                "r": "谓语",
+                "t": "had not realised how profoundly marketing trends dictated our perception of what is natural to kids, including our core beliefs about their psychological development."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s12",
@@ -638,7 +1126,24 @@
               "phonetic": "/kənˈsjuːmərɪzəm/",
               "meaning": "n. 消费主义"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Turns out, according to Daniel Cook, a historian of childhood consumerism,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "was popularised as a marketing trick by clothing manufacturers in the 1930s."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s15",
@@ -655,7 +1160,25 @@
               "w": "stepping stone",
               "meaning": "跳板，垫脚石"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Trade publications"
+              },
+              {
+                "r": "谓语",
+                "t": "counselled department stores"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that, in order to increase sales, they should create a \"third stepping stone\" between infant wear and older kids' clothes.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s16",
@@ -667,7 +1190,25 @@
               "w": "evolved into",
               "meaning": "演变为"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "was only after \"toddler\" became a common shoppers' term"
+              },
+              {
+                "r": "主语从句",
+                "t": "that it evolved into a broadly accepted developmental stage.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text2_s17",
@@ -701,7 +1242,29 @@
               "phonetic": "/ˈmæɡnɪfaɪ/",
               "meaning": "v. 放大"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "主语",
+                "t": "one of the easiest ways to segment a market"
+              },
+              {
+                "r": "谓语",
+                "t": "is to magnify gender differences – or invent them"
+              },
+              {
+                "r": "地点状语从句",
+                "t": "where they did not previously exist.",
+                "lead": "where"
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -882,7 +1445,20 @@
               "phonetic": "/ˈpætəntɪd/",
               "meaning": "v. 获得专利"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Companies"
+              },
+              {
+                "r": "谓语",
+                "t": "had won patents for isolated DNA for decades – by 2005 some 20% of human genes were patented."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s03",
@@ -930,7 +1506,25 @@
               "phonetic": "/prɪˈlɪmɪnəri/",
               "meaning": "adj. 初步的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Biotechnology Industry Organisation (BIO), a trade group,"
+              },
+              {
+                "r": "谓语",
+                "t": "assured members"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that this was just a \"preliminary step\" in a longer battle.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s06",
@@ -964,7 +1558,24 @@
               "w": "breast cancer",
               "meaning": "乳腺癌"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "A federal appeals court"
+              },
+              {
+                "r": "谓语",
+                "t": "overturned the prior decision,"
+              },
+              {
+                "r": "分词短语",
+                "t": "ruling that Myriad Genetics could indeed hold patents to two genes that help forecast a woman's risk of breast cancer."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s08",
@@ -982,7 +1593,20 @@
               "phonetic": "/əˈlaɪk/",
               "meaning": "adv. 同样地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The chief executive of Myriad, a company in Utah,"
+              },
+              {
+                "r": "谓语",
+                "t": "said the ruling was a blessing to firms and patients alike."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s09",
@@ -1023,7 +1647,24 @@
               "phonetic": "/məˈnɒpəliz/",
               "meaning": "n. 垄断"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Critics"
+              },
+              {
+                "r": "谓语",
+                "t": "make three main arguments against gene patents:"
+              },
+              {
+                "r": "同位语",
+                "t": "a gene is a product of nature, so it may not be patented; gene patents suppress innovation rather than reward it; and patents' monopolies restrict access to genetic tests such as Myriad's."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s12",
@@ -1068,7 +1709,28 @@
               "w": "cotton fibres",
               "meaning": "棉纤维"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In October"
+              },
+              {
+                "r": "主语",
+                "t": "the Department of Justice"
+              },
+              {
+                "r": "谓语",
+                "t": "filed a brief in the Myriad case,"
+              },
+              {
+                "r": "分词短语",
+                "t": "arguing that an isolated DNA molecule \"is no less a product of nature…than are cotton fibres that have been separated from cotton seeds.\""
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s15",
@@ -1103,7 +1765,24 @@
               "phonetic": "/ˈvaɪəleɪts/",
               "meaning": "v. 侵犯"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "For example,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is unclear whether the sequencing of a whole genome violates the patents of individual genes within it."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s17",
@@ -1140,7 +1819,20 @@
               "w": "public domain",
               "meaning": "公有领域"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Companies"
+              },
+              {
+                "r": "谓语",
+                "t": "are unlikely to file many more patents for human DNA molecules – most are already patented or in the public domain."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s20",
@@ -1163,7 +1855,24 @@
               "phonetic": "/ˈefɪkəsi/",
               "meaning": "n. 疗效"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Firms"
+              },
+              {
+                "r": "谓语",
+                "t": "are now studying how genes interact,"
+              },
+              {
+                "r": "分词短语",
+                "t": "looking for correlations that might be used to determine the causes of disease or predict a drug's efficacy."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s21",
@@ -1179,7 +1888,24 @@
               "w": "eager to",
               "meaning": "渴望，急于"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Companies"
+              },
+              {
+                "r": "谓语",
+                "t": "are eager to win patents for \"connecting the dots,\""
+              },
+              {
+                "r": "插入语",
+                "t": "explains Hans Sauer, a lawyer for the BIO."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s22",
@@ -1196,7 +1922,26 @@
               "phonetic": "/tɜːm/",
               "meaning": "n. （法院）会期"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Their success"
+              },
+              {
+                "r": "谓语",
+                "t": "may be determined by a suit related to this issue, brought by the Mayo Clinic,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which the Supreme Court will hear in its next term.",
+                "lead": "which",
+                "mod": "a suit"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s23",
@@ -1218,7 +1963,26 @@
               "w": "shifting landscape",
               "meaning": "不断变化的局面"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The BIO"
+              },
+              {
+                "r": "谓语",
+                "t": "recently held a convention"
+              },
+              {
+                "r": "定语从句",
+                "t": "which included sessions to coach lawyers on the shifting landscape for patents.",
+                "lead": "which",
+                "mod": "a convention"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text3_s24",
@@ -1407,7 +2171,25 @@
               "w": "life course",
               "meaning": "人生轨迹"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "Before it ends,",
+                "lead": "Before"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "will likely change the life course and character of a generation of young adults."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s03",
@@ -1420,7 +2202,28 @@
               "phonetic": "/ˌriːˈʃeɪp/",
               "meaning": "v. 重塑"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "状语",
+                "t": "ultimately,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is likely to reshape our politics, our culture, and the character of our society for years."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s04",
@@ -1454,7 +2257,29 @@
               "phonetic": "/ˈpruːdnt/",
               "meaning": "adj. 谨慎的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Many"
+              },
+              {
+                "r": "谓语",
+                "t": "said"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that unemployment, while extremely painful, had improved them in some ways:",
+                "lead": "that"
+              },
+              {
+                "r": "同位语",
+                "t": "they had become less materialistic and more financially prudent; they were more aware of the struggles of others."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s06",
@@ -1483,7 +2308,24 @@
               "phonetic": "/ˈrekləs/",
               "meaning": "adj. 胆大妄为的，鲁莽的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "At the very least,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "has awoken us from our national fever dream of easy riches and bigger houses, and put a necessary end to an era of reckless personal spending."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s08",
@@ -1517,7 +2359,29 @@
               "phonetic": "/ɪnˈkluːsɪv/",
               "meaning": "adj. 包容的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In The Moral Consequences of Economic Growth,"
+              },
+              {
+                "r": "主语",
+                "t": "the economic historian Benjamin Friedman"
+              },
+              {
+                "r": "谓语",
+                "t": "argues"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that both inside and outside the U.S., lengthy periods of economic stagnation or decline have almost always left society more mean-spirited and less inclusive, and have usually stopped or reversed the advance of rights and freedoms.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s10",
@@ -1563,7 +2427,24 @@
               "w": "class divides",
               "meaning": "阶级鸿沟"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "副词",
+                "t": "Indeed,"
+              },
+              {
+                "r": "主语",
+                "t": "this period of economic weakness"
+              },
+              {
+                "r": "谓语",
+                "t": "may reinforce class divides, and decrease opportunities to cross them – especially for young people."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s13",
@@ -1588,7 +2469,29 @@
               "w": "left behind",
               "meaning": "被抛在后面"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The research of Till Von Wachter, the economist at Columbia University,"
+              },
+              {
+                "r": "谓语",
+                "t": "suggests"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that not all people graduating into a recession see their life chances dimmed:",
+                "lead": "that"
+              },
+              {
+                "r": "同位语",
+                "t": "those with degrees from elite universities catch up fairly quickly to where they otherwise would have been if they had graduated in better times; it is the masses beneath them that are left behind."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s14",
@@ -1601,7 +2504,30 @@
               "phonetic": "/rɪˈzentmənt/",
               "meaning": "n. 怨恨，不满"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In the Internet age,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is particularly easy to see the resentment"
+              },
+              {
+                "r": "定语从句",
+                "t": "that has always been hidden within American society.",
+                "lead": "that",
+                "mod": "the resentment"
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s15",
@@ -1638,7 +2564,36 @@
               "w": "mixed results",
               "meaning": "结果不一的情况"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In many respects,"
+              },
+              {
+                "r": "主语",
+                "t": "the U.S."
+              },
+              {
+                "r": "谓语",
+                "t": "was more socially tolerant entering this recession than at any time in its history,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "a variety of national polls on social conflict since then"
+              },
+              {
+                "r": "谓语",
+                "t": "have shown mixed results."
+              }
+            ]
+          }
         },
         {
           "id": "2012_text4_s17",
