@@ -7,9 +7,9 @@ import json, re, sys, os
 sys.stdout.reconfigure(encoding='utf-8')
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def mk_sentences(items):
-    """items: [(para, en, cn)] → sentence dicts"""
-    return [{"id": f"2026_{AID}{i:02d}", "para": p, "en": e, "cn": c, "words": []}
+def mk_sentences(items, tid):
+    """items: [(para, en, cn)] → sentence dicts（tid 必传，否则各篇句子 id 撞车）"""
+    return [{"id": f"2026_{tid}_s{i:02d}", "para": p, "en": e, "cn": c, "words": []}
             for i, (p, e, c) in enumerate(items, 1)]
 
 def mk_questions(qs, prefix, start):
@@ -420,7 +420,7 @@ In an age dominated by digital screens, these findings underscore a collective y
 def article(tid, title, topic, sents, qs, extra=None):
     a = {"id": f"2026_{tid}", "type": tid, "title": title, "topic": topic,
          "source": "2026 年考研英语（二）真题 · 多源交叉核验（新东方/海文/希赛/人人文库）",
-         "sentences": mk_sentences(sents), "questions": qs}
+         "sentences": mk_sentences(sents, tid), "questions": qs}
     if extra: a.update(extra)
     return a
 
