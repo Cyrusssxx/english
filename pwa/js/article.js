@@ -152,12 +152,14 @@ function toggleSig() {
     localStorage.setItem(SIG_KEY_ON, sigOn() ? '0' : '1');
     renderSigSwitch();
     renderArticle();
+    restoreCnAll();
 }
 function toggleSigLayer(k) {
     const L = sigLayers(); L[k] = !L[k];
     localStorage.setItem(SIG_KEY_LAYERS, JSON.stringify(L));
     renderArtSettings();
     renderArticle();
+    restoreCnAll();
 }
 
 // 规则表：cls = 信号层；while 仅句首/标点后算让步；such 让位给 such as
@@ -338,6 +340,14 @@ function toggleQuizPane() {
 // ============ 全文翻译开关（仅本页会话，不持久化） ============
 let cnAll = false;
 
+/** 全文翻译模式下重渲染后恢复状态（toggleSig/toggleSigLayer/enrichRender/resetQuiz 调用） */
+function restoreCnAll() {
+    if (!cnAll) return;
+    document.querySelectorAll('.sent-cn').forEach(el => el.classList.add('open'));
+    document.body.classList.add('show-quiz-cn');
+    showReadTitle(true);
+}
+
 function toggleCnAll() {
     cnAll = !cnAll;
     const btn = document.getElementById('cnAllSwitch');
@@ -422,7 +432,8 @@ function enrichRender() {
     renderArticle();
     renderQuiz();
     if (window.Annot) Annot.apply(AID);
-    // 恢复展开译文
+    // 恢复展开译文（含全文翻译模式）
+    restoreCnAll();
     openCn.forEach(id => {
         const cn = document.querySelector(`#s-${CSS.escape(id)} .sent-cn`);
         if (cn) cn.classList.add('open');
@@ -1051,7 +1062,7 @@ async function resetQuiz() {
     await clearAnswers(AID);
     answerMap = {};
     // 完形题：blank 文本已填入正文，需整篇重绘还原为 [n] 占位
-    if (article.type === 'cloze') { renderArticle(); if (window.Annot) Annot.apply(AID); }
+    if (article.type === 'cloze') { renderArticle(); if (window.Annot) Annot.apply(AID); restoreCnAll(); }
     renderQuiz();
 }
 
