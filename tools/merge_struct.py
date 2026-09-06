@@ -13,6 +13,13 @@ ROLES = {'主语','谓语','宾语','表语','定语','状语','补语','同位�
          '定语从句','状语从句','宾语从句','主语从句','表语从句','同位语从句','不定式短语','分词短语',
          '原因状语从句','方式状语从句','条件状语从句','让步状语从句','时间状语从句','地点状语从句',
          '比较状语从句','结果状语从句','目的状语从句'}
+
+# 各文件 JSON 缩进（写回必须匹配原格式，否则整文件重排）：
+# en1 目录全部 indent=1；en2 按年份：2007/2008/2009/2024/2026 = 1，其余 = 2
+def file_indent(exam, year):
+    if exam == 'en1':
+        return 1
+    return 1 if int(year) in (2007, 2008, 2009, 2024, 2026) else 2
 norm = lambda s: re.sub(r'\s+', ' ', s.strip())
 
 def build_from_outline(lines):
@@ -112,7 +119,7 @@ def main(batch_path, force=False):
                 print(f'✗ {sid}: {e}'); fail += 1; continue
             s['struct'] = {'v': 1, 'nodes': st['nodes']}
             ok += 1
-        json.dump(d, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        json.dump(d, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=file_indent(exam, year))
     print(f'\n结果: 成功 {ok} / 失败 {fail} / 跳过 {skip}')
     sys.exit(1 if fail else 0)
 
