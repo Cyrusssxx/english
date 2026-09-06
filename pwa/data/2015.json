@@ -24,7 +24,25 @@
               "w": "more stressed at home than at work",
               "meaning": "在家比上班压力更大"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "A new study"
+              },
+              {
+                "r": "谓语",
+                "t": "suggests"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that contrary to most surveys, people are actually more stressed at home than at work.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s02",
@@ -45,7 +63,33 @@
               "w": "a place of refuge",
               "meaning": "避风港"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Researchers"
+              },
+              {
+                "r": "谓语",
+                "t": "measured people's cortisol, which is a stress marker,"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "while they were at work and while they were at home",
+                "lead": "while"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "谓语",
+                "t": "found it higher at what is supposed to be a place of refuge."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s03",
@@ -65,7 +109,20 @@
               "w": "lower levels of stress",
               "meaning": "更低的压力水平"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Further contradicting conventional wisdom, we found that women as well as men have lower levels of stress at work than at home,\""
+              },
+              {
+                "r": "插入语",
+                "t": "writes one of the researchers, Sarah Damaske."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s04",
@@ -109,7 +166,25 @@
               "w": "nonparents",
               "meaning": "n. 没有子女的人"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Another surprise"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语从句",
+                "t": "that the findings hold true for both those with children and without, but more so for nonparents.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s07",
@@ -137,7 +212,20 @@
               "w": "brought home from the office",
               "meaning": "从办公室带回家"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "What the study doesn't measure"
+              },
+              {
+                "r": "谓语",
+                "t": "is whether people are still doing work when they're at home, whether it is household work or work brought home from the office."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s09",
@@ -197,7 +285,29 @@
               "w": "the home front",
               "meaning": "家庭大后方"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "With the blurring of roles, and the fact that the home front lags well behind the workplace in making adjustments for working women,"
+              },
+              {
+                "r": "主语",
+                "t": "it's"
+              },
+              {
+                "r": "谓语",
+                "t": "not surprising"
+              },
+              {
+                "r": "主语从句",
+                "t": "that women are more stressed at home.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s13",
@@ -225,7 +335,28 @@
               "w": "draw an income",
               "meaning": "赚取收入"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "At work,"
+              },
+              {
+                "r": "主语",
+                "t": "people"
+              },
+              {
+                "r": "谓语",
+                "t": "pretty much know what they're supposed to be doing:"
+              },
+              {
+                "r": "同位语",
+                "t": "working, making money, doing the tasks they have to do in order to draw an income."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s15",
@@ -245,7 +376,24 @@
               "w": "life-sustaining moola",
               "meaning": "维持生计的钱（moola 为“钱”的俚语）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The bargain"
+              },
+              {
+                "r": "谓语",
+                "t": "is very pure:"
+              },
+              {
+                "r": "同位语",
+                "t": "Employee puts in hours of physical or mental labor and employee draws out life-sustaining moola."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s16",
@@ -309,7 +457,32 @@
               "w": "electronic devices",
               "meaning": "电子设备"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Your home colleagues - your family -"
+              },
+              {
+                "r": "谓语",
+                "t": "have no clear rewards for their labor;"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "need to be talked into it,"
+              },
+              {
+                "r": "并列",
+                "t": "or if they're teenagers, threatened with complete removal of all electronic devices."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text1_s20",
@@ -538,7 +711,29 @@
               "w": "education achievement factors",
               "meaning": "学业成就指标"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "For years,"
+              },
+              {
+                "r": "主语",
+                "t": "studies"
+              },
+              {
+                "r": "谓语",
+                "t": "have found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that first-generation college students - those who do not have a parent with a college degree - lag other students on a range of education achievement factors.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s02",
@@ -570,7 +765,29 @@
               "w": "recruit more of them",
               "meaning": "招收更多这类学生"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "since such students are most likely to advance economically if they succeed in higher education,",
+                "lead": "since"
+              },
+              {
+                "r": "主语",
+                "t": "colleges and universities"
+              },
+              {
+                "r": "谓语",
+                "t": "have pushed for decades to recruit more of them."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s04",
@@ -594,7 +811,28 @@
               "w": "forthcoming",
               "meaning": "adj. 即将发表的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "has created \"a paradox\""
+              },
+              {
+                "r": "原因状语",
+                "t": "in that recruiting first-generation students, but then watching many of them fail, means that higher education has \"continued to reproduce and widen, rather than close\" an achievement gap based on social class,"
+              },
+              {
+                "r": "状语",
+                "t": "according to the depressing beginning of a paper forthcoming in the journal Psychological Science."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s05",
@@ -614,7 +852,33 @@
               "w": "next-to-no-cost",
               "meaning": "几乎零成本的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the article"
+              },
+              {
+                "r": "谓语",
+                "t": "is actually quite optimistic,"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "as it outlines a potential solution to this problem,",
+                "lead": "as"
+              },
+              {
+                "r": "分词短语",
+                "t": "suggesting that an approach (which involves a one-hour, next-to-no-cost program) can close 63 percent of the achievement gap (measured by such factors as grades) between first-generation and other students."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s06",
@@ -630,7 +894,32 @@
               "w": "unnamed private university",
               "meaning": "匿名的私立大学"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The authors of the paper"
+              },
+              {
+                "r": "谓语",
+                "t": "are from different universities,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "their findings"
+              },
+              {
+                "r": "谓语",
+                "t": "are based on a study involving 147 students (who completed the project) at an unnamed private university."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s07",
@@ -666,7 +955,25 @@
               "w": "financial need",
               "meaning": "经济需求"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Most of the first-generation students (59.1 percent)"
+              },
+              {
+                "r": "谓语",
+                "t": "were recipients of Pell Grants, a federal grant for undergraduates with financial need,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "while this was true only for 8.6 percent of the students with at least one parent with a four-year degree.",
+                "lead": "while"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s09",
@@ -686,7 +993,26 @@
               "w": "not in potential but in practical knowledge",
               "meaning": "不在于潜力，而在于实用知识"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Their thesis - that a relatively modest intervention could have a big impact -"
+              },
+              {
+                "r": "谓语",
+                "t": "was based on the view"
+              },
+              {
+                "r": "定语从句",
+                "t": "that first-generation students may be most lacking not in potential but in practical knowledge about how to deal with the issues that face most college students.",
+                "lead": "that",
+                "mod": "the view"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s10",
@@ -702,7 +1028,25 @@
               "w": "the gap that must be narrowed",
               "meaning": "必须缩小的缺口"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "cite past research by several authors to show"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that this is the gap that must be narrowed to close the achievement gap.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s11",
@@ -722,7 +1066,20 @@
               "w": "take advantage of",
               "meaning": "利用"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Many first-generation students \"struggle to navigate the middle-class culture of higher education, learn the 'rules of the game,' and take advantage of college resources,\""
+              },
+              {
+                "r": "插入语",
+                "t": "they write."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s12",
@@ -734,7 +1091,29 @@
               "w": "class advantages and disadvantages",
               "meaning": "阶层优势与劣势"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "主语",
+                "t": "this"
+              },
+              {
+                "r": "谓语",
+                "t": "becomes more of a problem"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when colleges don't talk about the class advantages and disadvantages of different groups of students.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text2_s13",
@@ -754,7 +1133,16 @@
               "w": "social class",
               "meaning": "社会阶层"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Because US colleges and universities seldom acknowledge how social class can affect students' educational experiences, many first-generation students lack insight about why they are struggling and do not understand how students 'like them' can improve.\""
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -918,7 +1306,24 @@
               "w": "emotional",
               "meaning": "adj. 情感化的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Even in traditional offices,"
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"the lingua franca of corporate America has gotten much more emotional and much more right-brained than it was 20 years ago,\""
+              },
+              {
+                "r": "插入语",
+                "t": "said Harvard Business School professor Nancy Koehn."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s02",
@@ -946,7 +1351,16 @@
               "w": "Fortune 500 companies",
               "meaning": "《财富》500强企业"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"If you and I parachuted back to Fortune 500 companies in 1990, we would see much less frequent use of terms like journey, mission, passion."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s04",
@@ -958,7 +1372,16 @@
               "w": "objectives",
               "meaning": "n. 目标，目的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "There were goals, there were strategies, there were objectives, but we didn't talk about energy; we didn't talk about passion.\""
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s05",
@@ -978,7 +1401,25 @@
               "w": "not by coincidence",
               "meaning": "并非偶然"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Koehn"
+              },
+              {
+                "r": "谓语",
+                "t": "pointed out"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that this new era of corporate vocabulary is very \"team\"-oriented - and not by coincidence.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s06",
@@ -1010,7 +1451,29 @@
               "w": "in this together",
               "meaning": "同舟共济"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "not explicitly conscious;"
+              },
+              {
+                "r": "主语",
+                "t": "it's"
+              },
+              {
+                "r": "表语",
+                "t": "the idea that I'm a coach, and you're my team, and we're in this together.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s08",
@@ -1022,7 +1485,32 @@
               "w": "think of themselves as",
               "meaning": "把自己看作"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There"
+              },
+              {
+                "r": "谓语",
+                "t": "are lots and lots of CEOs in very different companies,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "most"
+              },
+              {
+                "r": "谓语",
+                "t": "think of themselves as coaches and this is their team and they want to win.\""
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s09",
@@ -1038,7 +1526,24 @@
               "w": "allegiance to the firm",
               "meaning": "对公司的忠诚"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These terms"
+              },
+              {
+                "r": "谓语",
+                "t": "are also intended to infuse work with meaning"
+              },
+              {
+                "r": "并列",
+                "t": "- and, as Rakesh Khurana, another professor, points out, increase allegiance to the firm."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s10",
@@ -1058,7 +1563,20 @@
               "w": "non-profit organizations",
               "meaning": "非营利组织"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"You have the importation of terminology that historically used to be associated with non-profit organizations and religious organizations: terms like vision, values, passion, and purpose,\""
+              },
+              {
+                "r": "插入语",
+                "t": "said Khurana."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s11",
@@ -1074,7 +1592,24 @@
               "w": "work-life balance",
               "meaning": "工作与生活的平衡"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This new focus on personal fulfillment"
+              },
+              {
+                "r": "谓语",
+                "t": "can help keep employees motivated"
+              },
+              {
+                "r": "状语",
+                "t": "amid increasingly loud debates over work-life balance."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s12",
@@ -1094,7 +1629,30 @@
               "w": "buzzword",
               "meaning": "n. 流行语"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The \"mommy wars\" of the 1990s"
+              },
+              {
+                "r": "谓语",
+                "t": "are still going on today,"
+              },
+              {
+                "r": "分词短语",
+                "t": "prompting arguments about why women still can't have it all and books like Sheryl Sandberg's Lean In,"
+              },
+              {
+                "r": "定语从句",
+                "t": "whose title has become a buzzword in its own right.",
+                "lead": "whose",
+                "mod": "books like Sheryl Sandberg's Lean In"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s13",
@@ -1110,7 +1668,20 @@
               "w": "bandwidth",
               "meaning": "n. 带宽；（比喻）精力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Terms like unplug, offline, life-hack, bandwidth, and capacity"
+              },
+              {
+                "r": "谓语",
+                "t": "are all about setting boundaries between the office and the home."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s14",
@@ -1122,7 +1693,30 @@
               "w": "devote yourself to it",
               "meaning": "全身心投入"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "But if your work is your \"passion,\"",
+                "lead": "if"
+              },
+              {
+                "r": "主语",
+                "t": "you'll"
+              },
+              {
+                "r": "谓语",
+                "t": "be more likely to devote yourself to it,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "even if that means going home for dinner and then working long after the kids are in bed.",
+                "lead": "if"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s15",
@@ -1142,7 +1736,28 @@
               "w": "willingly absorb it",
               "meaning": "心甘情愿地接受"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "this"
+              },
+              {
+                "r": "谓语",
+                "t": "seems to be the irony of office speak:"
+              },
+              {
+                "r": "同位语",
+                "t": "Everyone makes fun of it, but managers love it, companies depend on it, and regular people willingly absorb it."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s16",
@@ -1158,7 +1773,21 @@
               "w": "buy into it",
               "meaning": "接受/认同它"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "方式状语从句",
+                "t": "As a linguist once said,",
+                "lead": "As"
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"You can get people to think it's nonsense at the same time that you buy into it.\""
+              }
+            ]
+          }
         },
         {
           "id": "2015_text3_s17",
@@ -1178,7 +1807,28 @@
               "w": "defines who you are",
               "meaning": "定义你是谁"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In a workplace that's fundamentally indifferent to your life and its meaning,"
+              },
+              {
+                "r": "主语",
+                "t": "office speak"
+              },
+              {
+                "r": "谓语",
+                "t": "can help you figure out how you relate to your work"
+              },
+              {
+                "r": "并列",
+                "t": "- and how your work defines who you are."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -1341,7 +1991,20 @@
               "w": "unemployment rate",
               "meaning": "失业率"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Many people"
+              },
+              {
+                "r": "谓语",
+                "t": "talked of the 288,000 new jobs the Labor Department reported for June, along with the drop in the unemployment rate to 6.1 percent, as good news."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s02",
@@ -1389,7 +2052,24 @@
               "w": "moving forward",
               "meaning": "向前推进"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "still have a long way to go to get back to full employment,"
+              },
+              {
+                "r": "并列",
+                "t": "but at least we are now finally moving forward at a faster pace."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s05",
@@ -1501,7 +2181,32 @@
               "w": "making ends meet",
               "meaning": "勉强维持生计，收支相抵"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "An increase in involuntary part-time work"
+              },
+              {
+                "r": "谓语",
+                "t": "is evidence of weakness in the labor market"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "means that many people will be having a very hard time making ends meet."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s12",
@@ -1533,7 +2238,32 @@
               "w": "down by",
               "meaning": "下降了（某数量）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Involuntary part-time employment"
+              },
+              {
+                "r": "谓语",
+                "t": "is still far higher than before the recession,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is down by 640,000 (7.9 percent) from its year ago level."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s14",
@@ -1565,7 +2295,20 @@
               "w": "the reference week",
               "meaning": "（调查）参考周"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The survey used by the Labor Department"
+              },
+              {
+                "r": "谓语",
+                "t": "asks people if they worked less than 35 hours in the reference week."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s16",
@@ -1577,7 +2320,25 @@
               "w": "classified as",
               "meaning": "被归类为"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If the answer is \"yes,\"",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "are classified as working part-time."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s17",
@@ -1593,7 +2354,20 @@
               "w": "had no choice",
               "meaning": "别无选择"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The survey"
+              },
+              {
+                "r": "谓语",
+                "t": "then asks whether they worked less than 35 hours in that week because they wanted to work less than full time or because they had no choice."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s18",
@@ -1609,7 +2383,25 @@
               "w": "the survey taker",
               "meaning": "调查者，问卷发放者"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "are only classified as voluntary part-time workers"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "if they tell the survey taker they chose to work less than 35 hours a week.",
+                "lead": "if"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s19",
@@ -1629,7 +2421,25 @@
               "w": "outside of employment",
               "meaning": "在就业之外，非就业情形下"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The issue of voluntary part-time"
+              },
+              {
+                "r": "谓语",
+                "t": "relates to Obamacare"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "because one of the main purposes was to allow people to get insurance outside of employment.",
+                "lead": "because"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s20",
@@ -1649,7 +2459,28 @@
               "w": "health insurance",
               "meaning": "医疗保险"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "For many people, especially those with serious health conditions or family members with serious health conditions,"
+              },
+              {
+                "r": "状语",
+                "t": "before Obamacare"
+              },
+              {
+                "r": "主语",
+                "t": "the only way to get insurance"
+              },
+              {
+                "r": "谓语",
+                "t": "was through a job that provided health insurance."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s21",
@@ -1665,7 +2496,24 @@
               "w": "the exchanges",
               "meaning": "（医保）交易市场"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "However,"
+              },
+              {
+                "r": "主语",
+                "t": "Obamacare"
+              },
+              {
+                "r": "谓语",
+                "t": "has allowed more than 12 million people to either get insurance through Medicaid or the exchanges."
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s22",
@@ -1685,7 +2533,26 @@
               "w": "cover",
               "meaning": "v. 为……投保，承保"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These"
+              },
+              {
+                "r": "谓语",
+                "t": "are people"
+              },
+              {
+                "r": "定语从句",
+                "t": "who may previously have felt the need to get a full-time job that provided insurance in order to cover themselves and their families.",
+                "lead": "who",
+                "mod": "people"
+              }
+            ]
+          }
         },
         {
           "id": "2015_text4_s23",
