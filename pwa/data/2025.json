@@ -1603,7 +1603,28 @@
               "w": "institutions",
               "meaning": "n. 机构（institution 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "In general,"
+              },
+              {
+                "r": "主语",
+                "t": "an HAP"
+              },
+              {
+                "r": "谓语",
+                "t": "spells out"
+              },
+              {
+                "r": "宾语从句",
+                "t": "when and how officials should issue heat warnings and alert hospitals and other institutions."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s03",
@@ -1619,7 +1640,32 @@
               "w": "laborers",
               "meaning": "n. 工人，劳动者（laborer 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Nagpur's plan,"
+              },
+              {
+                "r": "插入语",
+                "t": "for instance,"
+              },
+              {
+                "r": "谓语",
+                "t": "calls for"
+              },
+              {
+                "r": "宾语",
+                "t": "hospitals to set aside \"cold wards\" in the summer for treating heatstroke patients,"
+              },
+              {
+                "r": "并列",
+                "t": "and advises builders to give construction laborers a break from work on very hot days."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s04",
@@ -1635,7 +1681,32 @@
               "w": "uneven",
               "meaning": "adj. 不均衡的，参差不齐的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "implementation of existing HAPs"
+              },
+              {
+                "r": "谓语",
+                "t": "has been"
+              },
+              {
+                "r": "表语",
+                "t": "uneven,"
+              },
+              {
+                "r": "插入语",
+                "t": "according to a report from the Center for Policy Research."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s05",
@@ -1707,7 +1778,32 @@
               "w": "gauge",
               "meaning": "n. 衡量标准，尺度"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列词",
+                "t": "But"
+              },
+              {
+                "r": "状语",
+                "t": "in other places,"
+              },
+              {
+                "r": "主语",
+                "t": "nighttime temperatures or humidity"
+              },
+              {
+                "r": "谓语",
+                "t": "might be"
+              },
+              {
+                "r": "表语",
+                "t": "as important a gauge of risk as daytime highs."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s09",
@@ -1743,7 +1839,24 @@
               "w": "meteorological",
               "meaning": "adj. 气象的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That day's high temperature of roughly 36°C"
+              },
+              {
+                "r": "谓语",
+                "t": "was"
+              },
+              {
+                "r": "表语",
+                "t": "1°C shy of the heat wave alert threshold for coastal cities set by national meteorological authorities."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s11",
@@ -1763,7 +1876,36 @@
               "w": "shade",
               "meaning": "n. 阴凉处，遮荫"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the effects of the heat"
+              },
+              {
+                "r": "谓语",
+                "t": "were amplified by"
+              },
+              {
+                "r": "宾语",
+                "t": "humidity"
+              },
+              {
+                "r": "插入语",
+                "t": "—an often neglected factor in heat alert systems—"
+              },
+              {
+                "r": "并列",
+                "t": "and the lack of shade at the late-morning outdoor ceremony."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s12",
@@ -1783,7 +1925,32 @@
               "w": "conditions",
               "meaning": "n. 条件，情况（condition 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "目的状语",
+                "t": "To help improve HAPs,"
+              },
+              {
+                "r": "主语",
+                "t": "urban planner Kotharkar's team"
+              },
+              {
+                "r": "谓语",
+                "t": "is working on"
+              },
+              {
+                "r": "宾语",
+                "t": "a model plan"
+              },
+              {
+                "r": "定语从句",
+                "t": "that outlines best practices and could be adapted to local conditions."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s13",
@@ -1799,7 +1966,36 @@
               "w": "populations",
               "meaning": "n. 人口，人群（population 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Among other things,"
+              },
+              {
+                "r": "插入语",
+                "t": "she says,"
+              },
+              {
+                "r": "主语",
+                "t": "all cities"
+              },
+              {
+                "r": "谓语",
+                "t": "should create"
+              },
+              {
+                "r": "宾语",
+                "t": "a vulnerability map"
+              },
+              {
+                "r": "目的状语",
+                "t": "to help focus responses on the populations most at risk."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s14",
@@ -1847,7 +2043,36 @@
               "w": "bolstered",
               "meaning": "v. 增强，支持（bolster 的过去分词）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "For example,"
+              },
+              {
+                "r": "主语",
+                "t": "neighborhoods with a large elderly population or informal dwellings"
+              },
+              {
+                "r": "定语从句",
+                "t": "that cope poorly with heat"
+              },
+              {
+                "r": "谓语",
+                "t": "could get"
+              },
+              {
+                "r": "宾语",
+                "t": "special warnings"
+              },
+              {
+                "r": "并列",
+                "t": "or be bolstered with cooling centers."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s17",
@@ -1863,7 +2088,28 @@
               "w": "officials",
               "meaning": "n. 官员（official 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Nagpur project"
+              },
+              {
+                "r": "谓语",
+                "t": "has already created"
+              },
+              {
+                "r": "宾语",
+                "t": "a risk and vulnerability map,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which enabled Kotharkar to tell officials which neighborhoods to focus on in the event of a heat wave this summer."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s18",
@@ -1879,7 +2125,36 @@
               "w": "measures",
               "meaning": "n. 措施（measure 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "HAPs"
+              },
+              {
+                "r": "谓语",
+                "t": "shouldn't just include"
+              },
+              {
+                "r": "宾语",
+                "t": "short-term emergency responses,"
+              },
+              {
+                "r": "插入语",
+                "t": "researchers say,"
+              },
+              {
+                "r": "并列",
+                "t": "but also recommend medium- to long-term measures"
+              },
+              {
+                "r": "定语从句",
+                "t": "that could make communities cooler."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s19",
@@ -1895,7 +2170,32 @@
               "w": "shade",
               "meaning": "n. 阴凉处，遮荫"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In Nagpur,"
+              },
+              {
+                "r": "插入语",
+                "t": "for example,"
+              },
+              {
+                "r": "主语",
+                "t": "Kotharkar's team"
+              },
+              {
+                "r": "谓语",
+                "t": "has been able to advise"
+              },
+              {
+                "r": "宾语",
+                "t": "city officials about where to plant trees to provide shade."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text3_s20",
@@ -1927,7 +2227,24 @@
               "w": "target",
               "meaning": "n. 目标"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语",
+                "t": "\"Reducing deaths in an emergency is a good target to have, but it's the lowest target,\""
+              },
+              {
+                "r": "谓语",
+                "t": "says"
+              },
+              {
+                "r": "主语",
+                "t": "climate researcher Chandni Singh."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -2090,7 +2407,32 @@
               "w": "unspoken",
               "meaning": "adj. 未说出口的，心照不宣的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Navigating beyond the organised pavements and parks of our urban spaces,"
+              },
+              {
+                "r": "主语",
+                "t": "desire paths"
+              },
+              {
+                "r": "谓语",
+                "t": "are"
+              },
+              {
+                "r": "表语",
+                "t": "the unofficial footprints of a community,"
+              },
+              {
+                "r": "分词短语",
+                "t": "revealing the unspoken preferences, shared shortcuts and collective choices of humans."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s02",
@@ -2110,7 +2452,36 @@
               "w": "bisect",
               "meaning": "v. 把……一分为二，二等分"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Often appearing as trodden dirt tracks through otherwise neat green spaces,"
+              },
+              {
+                "r": "主语",
+                "t": "these routes of collective disobedience"
+              },
+              {
+                "r": "谓语",
+                "t": "cut"
+              },
+              {
+                "r": "宾语",
+                "t": "corners,"
+              },
+              {
+                "r": "并列",
+                "t": "bisect lawns and cross hills,"
+              },
+              {
+                "r": "分词短语",
+                "t": "representing the natural capability of people (and animals) to go from point A to point B most effectively."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s03",
@@ -2126,7 +2497,28 @@
               "w": "dynamics",
               "meaning": "n. 动态，动力（关系）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Urban planners"
+              },
+              {
+                "r": "谓语",
+                "t": "interpret"
+              },
+              {
+                "r": "宾语",
+                "t": "desire paths as more than just convenient shortcuts;"
+              },
+              {
+                "r": "并列",
+                "t": "they offer valuable insights into the dynamics between planning and behaviour."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s04",
@@ -2146,7 +2538,32 @@
               "w": "established",
               "meaning": "v. 建立，开辟（establish 的过去分词）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Ohio State University"
+              },
+              {
+                "r": "谓语",
+                "t": "allowed"
+              },
+              {
+                "r": "宾语",
+                "t": "its students to navigate the Oval, a lawn in the centre of campus, freely,"
+              },
+              {
+                "r": "并列",
+                "t": "then proceeded to pave the desire paths,"
+              },
+              {
+                "r": "分词短语",
+                "t": "creating a web of effective routes students had established."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s05",
@@ -2166,7 +2583,32 @@
               "w": "aesthetics",
               "meaning": "n. 美观，美学"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Yet,"
+              },
+              {
+                "r": "主语",
+                "t": "reluctance"
+              },
+              {
+                "r": "谓语",
+                "t": "persists"
+              },
+              {
+                "r": "状语",
+                "t": "among other planners to integrate desire paths into formal plans,"
+              },
+              {
+                "r": "分词短语",
+                "t": "citing concerns about safety, environmental impact, or primarily, aesthetics."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s06",
@@ -2186,7 +2628,32 @@
               "w": "rebellious",
               "meaning": "adj. 反叛的，反抗的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "A Reddit webpage devoted to the phenomenon,"
+              },
+              {
+                "r": "分词短语",
+                "t": "boasting nearly 50,000 members,"
+              },
+              {
+                "r": "谓语",
+                "t": "showcases"
+              },
+              {
+                "r": "宾语",
+                "t": "images of local desire paths adorned with signs instructing pedestrians to adhere to designated walkways,"
+              },
+              {
+                "r": "分词短语",
+                "t": "underscoring the rebellious nature inherent in these human-made tracks."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s07",
@@ -2206,7 +2673,24 @@
               "w": "curated",
               "meaning": "adj. 精心组织的，精心策划的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This clash"
+              },
+              {
+                "r": "谓语",
+                "t": "highlights"
+              },
+              {
+                "r": "宾语",
+                "t": "an ongoing struggle between the organic, user-driven evolution of public spaces and the desire for a visually curated and controlled urban environment."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s08",
@@ -2222,7 +2706,28 @@
               "w": "settlements",
               "meaning": "n. 定居点，聚居地（settlement 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Wickquasgeck Trail"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "an example of a historical desire path,"
+              },
+              {
+                "r": "分词短语",
+                "t": "created by Native Americans to cross the forests of Manhattan and move between settlements quickly."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s09",
@@ -2238,7 +2743,32 @@
               "w": "widened",
               "meaning": "v. 拓宽，加宽（widen 的过去分词）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This trail,"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when Dutch colonists arrived,"
+              },
+              {
+                "r": "谓语",
+                "t": "was widened and made into"
+              },
+              {
+                "r": "宾语",
+                "t": "one of the main trade roads across the island,"
+              },
+              {
+                "r": "分词短语",
+                "t": "known at the time as de Heere Straat, or Gentlemen's Street."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s10",
@@ -2270,7 +2800,36 @@
               "w": "diagonal",
               "meaning": "n. 对角线，斜线"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Notably,"
+              },
+              {
+                "r": "主语",
+                "t": "Broadway"
+              },
+              {
+                "r": "谓语",
+                "t": "stands out as"
+              },
+              {
+                "r": "宾语",
+                "t": "one of the few areas in NYC"
+              },
+              {
+                "r": "定语从句",
+                "t": "that defies the grid-based system applied to the rest of the city,"
+              },
+              {
+                "r": "分词短语",
+                "t": "cutting a diagonal across parts of the city."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s12",
@@ -2290,7 +2849,36 @@
               "w": "hub",
               "meaning": "n. 中心，枢纽"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In online spaces,"
+              },
+              {
+                "r": "主语",
+                "t": "desire paths"
+              },
+              {
+                "r": "谓语",
+                "t": "have sparked"
+              },
+              {
+                "r": "宾语",
+                "t": "a fascination"
+              },
+              {
+                "r": "定语从句",
+                "t": "that can approach obsession,"
+              },
+              {
+                "r": "状语",
+                "t": "with the Reddit page serving as a hub."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s13",
@@ -2326,7 +2914,28 @@
               "w": "adaptability",
               "meaning": "n. 适应性"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Animal desire paths,"
+              },
+              {
+                "r": "举例",
+                "t": "such as ducks forging trails through frozen ponds or dogs carving direct routes in gardens,"
+              },
+              {
+                "r": "谓语",
+                "t": "highlight"
+              },
+              {
+                "r": "宾语",
+                "t": "the adaptability of these trails in both human and animal experiences."
+              }
+            ]
+          }
         },
         {
           "id": "2025_text4_s15",
@@ -2346,7 +2955,28 @@
               "w": "communal",
               "meaning": "adj. 集体的，公共的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语从句",
+                "t": "As desire paths criss-cross through both physical and virtual landscapes,"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "stand as"
+              },
+              {
+                "r": "宾语",
+                "t": "a proof of the collective insistence on forging unconventional routes and embracing the spirit of communal choice."
+              }
+            ]
+          }
         }
       ],
       "questions": [
