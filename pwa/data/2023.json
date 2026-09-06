@@ -32,7 +32,28 @@
               "w": "paying the price",
               "meaning": "付出代价，吃苦头"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In the quest for the perfect lawn,"
+              },
+              {
+                "r": "主语",
+                "t": "homeowners across the country"
+              },
+              {
+                "r": "谓语",
+                "t": "are taking"
+              },
+              {
+                "r": "宾语",
+                "t": "a shortcut—and it is the environment that is paying the price."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s02",
@@ -48,7 +69,28 @@
               "w": "gardening circles",
               "meaning": "园艺界"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "About eight million square metres of plastic grass"
+              },
+              {
+                "r": "谓语",
+                "t": "is sold"
+              },
+              {
+                "r": "状语",
+                "t": "each year"
+              },
+              {
+                "r": "并列",
+                "t": "but opposition has now spread to the highest gardening circles."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s03",
@@ -64,7 +106,28 @@
               "w": "ethos",
               "meaning": "n. 理念，精神特质"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Chelsea Flower Show"
+              },
+              {
+                "r": "谓语",
+                "t": "has banned"
+              },
+              {
+                "r": "宾语",
+                "t": "fake grass from this year's event,"
+              },
+              {
+                "r": "分词短语",
+                "t": "declaring it to be not part of its ethos."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s04",
@@ -80,7 +143,28 @@
               "w": "biodiversity",
               "meaning": "n. 生物多样性"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Royal Horticultural Society (RHS),"
+              },
+              {
+                "r": "定语从句",
+                "t": "which runs the annual show in west London,"
+              },
+              {
+                "r": "谓语",
+                "t": "says"
+              },
+              {
+                "r": "宾语从句",
+                "t": "it has introduced the ban because of the damage plastic grass does to the environment and biodiversity."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s05",
@@ -100,7 +184,24 @@
               "w": "in line with",
               "meaning": "与……一致，与……相符"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Ed Horne, of the RHS,"
+              },
+              {
+                "r": "谓语",
+                "t": "said:"
+              },
+              {
+                "r": "宾语",
+                "t": "\"We launched our sustainability strategy last year and fake grass is just not in line with our ethos and views on plastic."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s06",
@@ -116,7 +217,28 @@
               "w": "supporting wildlife",
               "meaning": "维持野生动物生存"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "recommend"
+              },
+              {
+                "r": "宾语",
+                "t": "using real grass because of its environmental benefits,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which include supporting wildlife, alleviating flooding and cooling the environment.\""
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s07",
@@ -152,7 +274,28 @@
               "w": "cut through",
               "meaning": "刺穿……"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "A Twitter account,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which claims to \"cut through the greenwash\" of artificial grass,"
+              },
+              {
+                "r": "谓语",
+                "t": "already has"
+              },
+              {
+                "r": "宾语",
+                "t": "more than 20,000 followers."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s09",
@@ -172,7 +315,32 @@
               "w": "ecological",
               "meaning": "adj. 生态的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "is trying"
+              },
+              {
+                "r": "宾语",
+                "t": "to encourage people to sign two petitions,"
+              },
+              {
+                "r": "同位语",
+                "t": "one calling for a ban on the sale of plastic grass"
+              },
+              {
+                "r": "并列",
+                "t": "and another calling for an \"ecological damage\" tax on such lawns."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s10",
@@ -208,7 +376,32 @@
               "w": "petrol",
               "meaning": "n. 汽油"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "However,"
+              },
+              {
+                "r": "主语",
+                "t": "supporters of fake grass"
+              },
+              {
+                "r": "谓语",
+                "t": "point out"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that there is also an environmental impact with natural lawns,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which need mowing and therefore usually consume electricity or petrol."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s12",
@@ -228,7 +421,28 @@
               "w": "lay",
               "meaning": "v. 铺放，铺设"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The industry"
+              },
+              {
+                "r": "谓语",
+                "t": "also points out"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that real grass requires considerable amounts of water, weed killer or other treatments"
+              },
+              {
+                "r": "并列",
+                "t": "and that people who lay fake grass tend to use their garden more."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s13",
@@ -244,7 +458,30 @@
               "w": "habitat",
               "meaning": "n. 生活环境，栖息地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The industry"
+              },
+              {
+                "r": "谓语",
+                "t": "also claims"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that people who lay fake grass spend an average of £500 on trees or shrubs for their garden,",
+                "nodes": [
+                  {
+                    "r": "定语从句",
+                    "t": "which provides habitat for insects."
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s14",
@@ -256,7 +493,32 @@
               "w": "In response to",
               "meaning": "作为对……的回应"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In response to another petition last year about banning fake lawns,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which gathered 30,000 signatures,"
+              },
+              {
+                "r": "主语",
+                "t": "the government"
+              },
+              {
+                "r": "谓语",
+                "t": "responded"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that it has \"no plans to ban the use of artificial grass\"."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s15",
@@ -268,7 +530,24 @@
               "w": "legislating",
               "meaning": "v. 立法，制定法律"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "added:"
+              },
+              {
+                "r": "宾语",
+                "t": "\"We prefer to help people and organisations make the right choice rather than legislating on such matters."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text1_s16",
@@ -296,7 +575,32 @@
               "w": "in place",
               "meaning": "在运作的，就位的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "However,"
+              },
+              {
+                "r": "主语",
+                "t": "the use of artificial grass"
+              },
+              {
+                "r": "谓语",
+                "t": "must comply with"
+              },
+              {
+                "r": "宾语",
+                "t": "the legal and policy safeguards in place to protect biodiversity and ensure sustainable drainage,"
+              },
+              {
+                "r": "状语从句",
+                "t": "while measures such as the strengthened biodiversity duty should serve to encourage public authorities to consider sustainable alternatives.\""
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -466,7 +770,24 @@
               "w": "chronic",
               "meaning": "adj. 长期存在的，难以根除的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "easy"
+              },
+              {
+                "r": "不定式短语",
+                "t": "to dismiss as absurd the federal government's ideas for plugging the chronic funding gap of our national parks."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s02",
@@ -482,7 +803,32 @@
               "w": "line up",
               "meaning": "排成一行，排队"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "谓语",
+                "t": "Can"
+              },
+              {
+                "r": "主语",
+                "t": "anyone"
+              },
+              {
+                "r": "状语",
+                "t": "really"
+              },
+              {
+                "r": "谓语",
+                "t": "think"
+              },
+              {
+                "r": "宾语从句",
+                "t": "it's a good idea to allow Amazon deliveries to your tent in Yosemite or food trucks to line up under the redwood trees at Sequoia National Park?"
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s03",
@@ -578,7 +924,28 @@
               "w": "revenues",
               "meaning": "n. 收益，收入"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Campgrounds"
+              },
+              {
+                "r": "谓语",
+                "t": "are"
+              },
+              {
+                "r": "表语",
+                "t": "a tiny portion of the overall infrastructure backlog,"
+              },
+              {
+                "r": "并列",
+                "t": "and businesses in the parks hand over, on average, only about 5% of their revenues to the National Park Service."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s08",
@@ -598,7 +965,44 @@
               "w": "drumbeat",
               "meaning": "n. 击鼓声（此处指商业喧嚣）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Moreover,"
+              },
+              {
+                "r": "主语",
+                "t": "increased privatization"
+              },
+              {
+                "r": "谓语",
+                "t": "would certainly undercut"
+              },
+              {
+                "r": "宾语",
+                "t": "one of the major reasons",
+                "nodes": [
+                  {
+                    "r": "定语从句",
+                    "t": "why 300 million visitors come to the parks each year:"
+                  },
+                  {
+                    "r": "同位语",
+                    "t": "to enjoy nature and get a break from the commercial drumbeat",
+                    "nodes": [
+                      {
+                        "r": "定语从句",
+                        "t": "that overwhelms daily life."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s09",
@@ -634,7 +1038,24 @@
               "w": "intact",
               "meaning": "adj. 完好无缺的，完整的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "An economic survey of 700 U.S. taxpayers"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that people would be willing to pay a significant amount of money to make sure the parks and their programs are kept intact."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s11",
@@ -654,7 +1075,24 @@
               "w": "cuts",
               "meaning": "n. 削减，减少"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Some 81% of respondents"
+              },
+              {
+                "r": "谓语",
+                "t": "said"
+              },
+              {
+                "r": "宾语从句",
+                "t": "they would be willing to pay additional taxes for the next 10 years to avoid any cuts to the national parks."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s12",
@@ -670,7 +1108,24 @@
               "w": "symbols",
               "meaning": "n. 象征"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The national parks"
+              },
+              {
+                "r": "谓语",
+                "t": "provide"
+              },
+              {
+                "r": "宾语",
+                "t": "great value to U.S. residents both as places to escape and as symbols of nature."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s13",
@@ -690,7 +1145,28 @@
               "w": "artistic",
               "meaning": "adj. 艺术的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "On top of this,"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "produce"
+              },
+              {
+                "r": "宾语",
+                "t": "value from their extensive educational programs, their positive impact on the climate through carbon sequestration, their contribution to our cultural and artistic life, and of course through tourism."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s14",
@@ -710,7 +1186,28 @@
               "w": "bring the stories of these places to life",
               "meaning": "使……更生动"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The parks"
+              },
+              {
+                "r": "谓语",
+                "t": "also help keep"
+              },
+              {
+                "r": "宾语",
+                "t": "America's past alive,"
+              },
+              {
+                "r": "分词短语",
+                "t": "working with thousands of local jurisdictions around the country to protect historical sites and to bring the stories of these places to life."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s15",
@@ -746,7 +1243,28 @@
               "w": "with the exception of",
               "meaning": "除……外"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Congress"
+              },
+              {
+                "r": "谓语",
+                "t": "allocates"
+              },
+              {
+                "r": "宾语",
+                "t": "only $3 billion a year to the national park system—an amount"
+              },
+              {
+                "r": "定语从句",
+                "t": "that has been flat since 2001 (in inflation-adjusted dollars) with the exception of a onetime boost in 2009."
+              }
+            ]
+          }
         },
         {
           "id": "2023_text2_s17",
@@ -766,7 +1284,28 @@
               "w": "stands at",
               "meaning": "达到（特定水平、数量）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Meanwhile,"
+              },
+              {
+                "r": "主语",
+                "t": "the number of annual visitors"
+              },
+              {
+                "r": "谓语",
+                "t": "has increased by more than 50% since 1980,"
+              },
+              {
+                "r": "并列",
+                "t": "and now stands at 330 million visitors per year."
+              }
+            ]
+          }
         }
       ],
       "questions": [
