@@ -1545,7 +1545,24 @@
               "w": "seamless",
               "meaning": "adj. 无缝的，流畅无停顿的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "谓语",
+                "t": "Think about"
+              },
+              {
+                "r": "宾语",
+                "t": "the times you felt tricked or frustrated by a membership or subscription"
+              },
+              {
+                "r": "定语从句",
+                "t": "that had a seamless sign-up process but was later difficult to cancel."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s03",
@@ -1565,7 +1582,36 @@
               "w": "impair",
               "meaning": "v. 损害，削弱"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Something"
+              },
+              {
+                "r": "定语从句",
+                "t": "that should be simple and transparent"
+              },
+              {
+                "r": "谓语",
+                "t": "can be"
+              },
+              {
+                "r": "表语",
+                "t": "complicated, intentionally or unintentionally,"
+              },
+              {
+                "r": "状语",
+                "t": "in ways"
+              },
+              {
+                "r": "定语从句",
+                "t": "that impair consumer choice."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s04",
@@ -1601,7 +1647,32 @@
               "w": "decision-making",
               "meaning": "决策"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "分词短语",
+                "t": "First coined in 2010 by user experience expert Harry Brignull,"
+              },
+              {
+                "r": "主语",
+                "t": "\"dark patterns\""
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "a catch-all term for practices"
+              },
+              {
+                "r": "定语从句",
+                "t": "that manipulate user interfaces to influence the decision-making ability of users."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s06",
@@ -1625,7 +1696,32 @@
               "w": "get out",
               "meaning": "退出，脱身"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Brignull"
+              },
+              {
+                "r": "谓语",
+                "t": "identifies"
+              },
+              {
+                "r": "宾语",
+                "t": "12 types of common dark patterns,"
+              },
+              {
+                "r": "分词短语",
+                "t": "ranging from misdirection and hidden costs to \"roach motel,\""
+              },
+              {
+                "r": "定语从句",
+                "t": "where a user experience seems easy and intuitive at the start, but turns difficult when the user tries to get out."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s07",
@@ -1645,7 +1741,28 @@
               "w": "design practices",
               "meaning": "设计手法，设计做法"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In a 2019 study of 53,000 product pages and 11,000 websites,"
+              },
+              {
+                "r": "主语",
+                "t": "researchers"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that about one in 10 employs these design practices."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s08",
@@ -1681,7 +1798,28 @@
               "w": "engender",
               "meaning": "v. 产生，引起"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Business and nonprofit leaders"
+              },
+              {
+                "r": "谓语",
+                "t": "should be aware of"
+              },
+              {
+                "r": "宾语",
+                "t": "dark patterns"
+              },
+              {
+                "r": "并列",
+                "t": "and try to avoid the gray areas they engender."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s10",
@@ -1717,7 +1855,28 @@
               "w": "privacy policy",
               "meaning": "隐私政策"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Businesses"
+              },
+              {
+                "r": "谓语",
+                "t": "should engage in"
+              },
+              {
+                "r": "宾语",
+                "t": "conversations with IT, compliance, risk, and legal teams to review their privacy policy,"
+              },
+              {
+                "r": "并列",
+                "t": "and include in the discussion the customer/user experience designers and coders responsible for the company's user interface, as well as the marketers and advertisers responsible for sign-ups, checkout baskets, pricing, and promotions."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s12",
@@ -1757,7 +1916,28 @@
               "w": "at the state level",
               "meaning": "在州一级层面"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Lawmakers and regulators"
+              },
+              {
+                "r": "谓语",
+                "t": "are slowly starting to address"
+              },
+              {
+                "r": "宾语",
+                "t": "the ambiguity around dark patterns,"
+              },
+              {
+                "r": "状语",
+                "t": "most recently at the state level."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s14",
@@ -1781,7 +1961,32 @@
               "w": "data privacy rights",
               "meaning": "数据隐私权"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In March,"
+              },
+              {
+                "r": "主语",
+                "t": "the California Attorney General"
+              },
+              {
+                "r": "谓语",
+                "t": "announced"
+              },
+              {
+                "r": "宾语",
+                "t": "the approval of additional regulations under the California Consumer Privacy Act (CCPA)"
+              },
+              {
+                "r": "定语从句",
+                "t": "that \"ensure that consumers will not be confused or misled when seeking to exercise their data privacy rights.\""
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s15",
@@ -1801,7 +2006,24 @@
               "w": "opt out",
               "meaning": "选择退出，退订"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The regulations"
+              },
+              {
+                "r": "谓语",
+                "t": "aim to ban"
+              },
+              {
+                "r": "宾语",
+                "t": "dark patterns - this means prohibiting companies from using confusing language or unnecessary steps such as forcing them to click through multiple screens or listen to reasons why they shouldn't opt out.\""
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s16",
@@ -1821,7 +2043,28 @@
               "w": "business community",
               "meaning": "商界，企业界"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语从句",
+                "t": "As more states consider promulgating additional regulations,"
+              },
+              {
+                "r": "主语",
+                "t": "there"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "a need for greater accountability from within the business community."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text3_s17",
@@ -1841,7 +2084,28 @@
               "w": "best practices",
               "meaning": "最佳实践，最优做法"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Dark patterns"
+              },
+              {
+                "r": "谓语",
+                "t": "also can be addressed"
+              },
+              {
+                "r": "状语",
+                "t": "on a self-regulatory basis,"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "but only if organizations hold themselves accountable, not just to legal requirements but also to industry best practices and standards."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -2012,7 +2276,36 @@
               "w": "self-reports",
               "meaning": "自我报告，自述"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Although ethics classes are common around the world,"
+              },
+              {
+                "r": "主语",
+                "t": "scientists"
+              },
+              {
+                "r": "谓语",
+                "t": "are unsure"
+              },
+              {
+                "r": "宾语从句",
+                "t": "if their lessons can actually change behavior;"
+              },
+              {
+                "r": "并列",
+                "t": "evidence either way is weak,"
+              },
+              {
+                "r": "分词短语",
+                "t": "relying on contrived laboratory tests or sometimes unreliable self-reports."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s02",
@@ -2032,7 +2325,28 @@
               "w": "lasting effects",
               "meaning": "持久的影响"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "a new study published in Cognition"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that, in at least one real-world situation, a single ethics lesson may have had lasting effects."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s03",
@@ -2076,7 +2390,32 @@
               "w": "animal suffering",
               "meaning": "动物的痛苦"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "chose"
+              },
+              {
+                "r": "宾语",
+                "t": "this particular behavior for three reasons,"
+              },
+              {
+                "r": "插入语",
+                "t": "according to study co-author Eric Schwitzgebel, a philosopher at the University of California, Riverside:"
+              },
+              {
+                "r": "同位语",
+                "t": "students' attitudes on the topic are variable and unstable, behavior is easily measurable, and ethics literature largely agrees that eating less meat is good because it reduces environmental harm and animal suffering."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s05",
@@ -2096,7 +2435,28 @@
               "w": "joined",
               "meaning": "v. 参加，加入（join 的过去式）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Half of the students in four large philosophy classes"
+              },
+              {
+                "r": "谓语",
+                "t": "read"
+              },
+              {
+                "r": "宾语",
+                "t": "an article on the ethics of factory-farmed meat,"
+              },
+              {
+                "r": "并列",
+                "t": "optionally watched an 11-minute video on the topic and joined a 50-minute discussion."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s06",
@@ -2140,7 +2500,32 @@
               "w": "receipts",
               "meaning": "n. 收据，小票（receipt 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "插入语",
+                "t": "Then,"
+              },
+              {
+                "r": "插入语",
+                "t": "unknown to the students,"
+              },
+              {
+                "r": "主语",
+                "t": "the researchers"
+              },
+              {
+                "r": "谓语",
+                "t": "studied"
+              },
+              {
+                "r": "宾语",
+                "t": "their anonymized meal-card purchases for that semester - nearly 14,000 receipts for almost 500 students."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s08",
@@ -2164,7 +2549,28 @@
               "w": "voting rates",
               "meaning": "投票率"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Schwitzgebel"
+              },
+              {
+                "r": "谓语",
+                "t": "predicted"
+              },
+              {
+                "r": "宾语从句",
+                "t": "the intervention would have no effect;"
+              },
+              {
+                "r": "并列",
+                "t": "he had previously found that ethics professors do not differ from other professors on a range of behaviors, including voting rates, blood donation and returning library books."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s09",
@@ -2188,7 +2594,36 @@
               "w": "duration",
               "meaning": "n. 持续时间"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列词",
+                "t": "But"
+              },
+              {
+                "r": "状语",
+                "t": "among student subjects"
+              },
+              {
+                "r": "定语从句",
+                "t": "who discussed meat ethics,"
+              },
+              {
+                "r": "主语",
+                "t": "meal purchases containing meat"
+              },
+              {
+                "r": "谓语",
+                "t": "decreased"
+              },
+              {
+                "r": "状语",
+                "t": "from 52 to 45 percent - and this effect held steady for the study's duration of several weeks."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s10",
@@ -2244,7 +2679,28 @@
               "w": "confounding variable",
               "meaning": "混杂变量"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Psychologist Nina Strohminger at the University of Pennsylvania,"
+              },
+              {
+                "r": "定语从句",
+                "t": "who was not involved in the study,"
+              },
+              {
+                "r": "谓语",
+                "t": "says"
+              },
+              {
+                "r": "宾语从句",
+                "t": "she wants the effect to be real but cannot rule out some unknown confounding variable."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s13",
@@ -2288,7 +2744,24 @@
               "w": "vegetarianism",
               "meaning": "n. 素食主义"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Schwitzgebel"
+              },
+              {
+                "r": "谓语",
+                "t": "suspects"
+              },
+              {
+                "r": "宾语从句",
+                "t": "the greatest impact came from social influence - classmates or teaching assistants leading the discussions may have shared their own vegetarianism, showing it as achievable or more common."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s15",
@@ -2344,7 +2817,28 @@
               "w": "video exposure",
               "meaning": "视频接触，观看视频的情况"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Now"
+              },
+              {
+                "r": "主语",
+                "t": "the researchers"
+              },
+              {
+                "r": "谓语",
+                "t": "are probing"
+              },
+              {
+                "r": "宾语",
+                "t": "the specific effects of teaching style, teaching assistants' eating habits and students' video exposure."
+              }
+            ]
+          }
         },
         {
           "id": "2022_text4_s18",
