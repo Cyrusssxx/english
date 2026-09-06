@@ -186,33 +186,81 @@ const SIG_WORD_MAP = {
     'such as': 'mod', 'including': 'mod', 'for example': 'mod', 'for instance': 'mod',
 };
 
+/** struct 主干在原文中的区间（顶部 主/谓/宾/表 节点 t 的 [start,end) 偏移） */
+function trunkRanges(s) {
+    if (!s.struct || !s.struct.nodes) return null;
+    const L = sigLayers();
+    if (!L.trunk) return null;
+    const en = s.en || '';
+    const ranges = [];
+    let cur = 0;
+    for (const n of s.struct.nodes) {
+        if (!TRUNK_ROLES.includes(n.r)) continue;
+        const idx = en.indexOf(n.t, cur);
+        if (idx < 0) continue;
+        ranges.push([idx, idx + n.t.length]);
+        cur = idx + n.t.length;
+    }
+    return ranges.length ? ranges : null;
+}
+
 /** 对 annotate 的分段做信号词标注：
- *  纯文本段 → 正则切分；词 span/词典 span → 文本命中信号词时叠加 sig 类（点词查词保留） */
-function markSignals(segs) {
+ *  纯文本段 → 正则切分；词 span/词典 span → 文本命中信号词时叠加 sig 类（点词查词保留）
+ *  struct 句额外做主干黄色高亮：ranges 内的文本标 sig-trunk（词 span 直接叠加类）
+ *  每个 seg 附 _s（原文起始偏移），切分时子段继承父段偏移——不维护全局游标，避免错位 */
+function markSignals(segs, ranges) {
     if (!sigOn()) return;
     const L = sigLayers();
+    let pos = 0;
+    for (const s of segs) { s._s = pos; pos += s.text.length; }
     let prev = '';   // 已处理分段的拼接文本（while 让步上下文判断用）
-    for (let i = 0; i < segs.length; i++) {
+    const inTrunk = (o, len) => !!ranges && ranges.some(r => o >= r[0] && o + len <= r[1]);
+    let i = 0;
+    while (i < segs.length) {
         const seg = segs[i];
         const isWord = seg.wi !== undefined || seg.dictFallback;
         const text = seg.text;
+        if (!isWord && !seg.sig && L.trunk && ranges) {
+            // 纯文本段与主干区间重叠 → 按区间切出黄色主干块
+            let overlapped = false;
+            for (const r of ranges) if (r[0] < seg._s + text.length && r[1] > seg._s) { overlapped = true; break; }
+            if (overlapped) {
+                const subs = [];
+                let p = 0;
+                for (const r of ranges) {
+                    const s = Math.max(r[0] - seg._s, 0), e = Math.min(r[1] - seg._s, text.length);
+                    if (e <= p) continue;
+                    if (s > p) subs.push({ text: text.slice(p, s), _s: seg._s + p });
+                    subs.push({ text: text.slice(s, e), sig: 'trunk', _s: seg._s + s });
+                    p = e;
+                }
+                if (p < text.length) subs.push({ text: text.slice(p), _s: seg._s + p });
+                prev += text;
+                segs.splice(i, 1, ...subs);
+                continue;   // 留在 i，处理 subs[0]
+            }
+        }
         if (isWord) {
-            const key = text.trim().toLowerCase();
-            const cls = SIG_WORD_MAP[key];
-            if (cls && L[cls]) {
-                if (key === 'while') {
-                    // while 仅句首/标点后算让步，时间 while 不标
-                    if (prev.trim() !== '' && !/[.,;:]\s*$/.test(prev)) { prev += text; continue; }
+            if (L.trunk && inTrunk(seg._s, text.length)) {
+                seg.sig = 'trunk';
+            } else {
+                const key = text.trim().toLowerCase();
+                const cls = SIG_WORD_MAP[key];
+                if (cls && L[cls]) {
+                    if (key === 'while') {
+                        if (prev.trim() !== '' && !/[.,;:]\s*$/.test(prev)) { prev += text; i++; continue; }
+                    }
+                    if (key === 'such' && /^\s*as\b/i.test((segs[i + 1] || {}).text || '')) {
+                        prev += text; i++; continue;
+                    }
+                    seg.sig = cls;
                 }
-                if (key === 'such' && /^\s*as\b/i.test((segs[i + 1] || {}).text || '')) {
-                    prev += text; continue;   // such as 不标指代
-                }
-                seg.sig = cls;
             }
             prev += text;
+            i++;
             continue;
         }
-        if (seg.sig) { prev += text; continue; }
+        if (seg.sig) { prev += text; i++; continue; }
         const hits = [];
         for (const rule of SIG_RULES) {
             if (!L[rule.cls]) continue;
@@ -229,22 +277,22 @@ function markSignals(segs) {
                 hits.push({ s: m.index, e: m.index + m[0].length, cls: rule.cls });
             }
         }
-        if (!hits.length) { prev += text; continue; }
+        if (!hits.length) { prev += text; i++; continue; }
         hits.sort((a, b) => a.s - b.s || (b.e - b.s) - (a.e - a.s));
         const picked = [];
         let lastEnd = -1;
         for (const h of hits) { if (h.s >= lastEnd) { picked.push(h); lastEnd = h.e; } }
         const repl = [];
-        let pos = 0;
+        let p2 = 0;
         for (const h of picked) {
-            if (h.s > pos) repl.push({ text: text.slice(pos, h.s) });
-            repl.push({ text: text.slice(h.s, h.e), sig: h.cls });
-            pos = h.e;
+            if (h.s > p2) repl.push({ text: text.slice(p2, h.s), _s: seg._s + p2 });
+            repl.push({ text: text.slice(h.s, h.e), sig: h.cls, _s: seg._s + h.s });
+            p2 = h.e;
         }
-        if (pos < text.length) repl.push({ text: text.slice(pos) });
+        if (p2 < text.length) repl.push({ text: text.slice(p2), _s: seg._s + p2 });
         prev += text;
         segs.splice(i, 1, ...repl);
-        i += repl.length - 1;
+        continue;   // 留在 i，处理 repl[0]
     }
 }
 
@@ -266,10 +314,6 @@ function structTreeHtml(nodes, depth) {
             `<span class="st-pill ${pillCls}">${esc(n.r)}</span><span>${body}</span>` +
             (n.mod ? `<span class="st-mod">→ 修饰 ${esc(n.mod)}</span>` : '') + `</div>` + kids;
     }).join('');
-}
-function structTrunkLine(nodes) {
-    const parts = (nodes || []).filter(n => TRUNK_ROLES.includes(n.r)).map(n => esc(n.t));
-    return parts.length ? `<div class="trunkline">主干：${parts.join(' ｜ ')}</div>` : '';
 }
 function toggleStructTree(id) {
     const el = document.getElementById('st-' + id);
@@ -454,7 +498,6 @@ function sentenceHtml(s) {
         <div class="sent-en">${enHtml}
             <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>${structBtn}
         </div>
-        ${hasStruct ? structTrunkLine(s.struct.nodes) : ''}
         <div class="sent-cn" onclick="onCnClick(event,'${s.id}')">
             <span class="cn-placeholder">▾ 点击查看翻译</span>
             <span class="cn-text">${esc(s.cn || '')}</span>
@@ -516,7 +559,7 @@ function annotate(s) {
             break;
         }
     }
-    markSignals(segs);   // 信号染色：在词/词组标注之后，仅切分纯文本段
+    markSignals(segs, trunkRanges(s));   // 信号染色 + struct 主干黄色高亮（仅切纯文本段/叠词 span 类）
     const html = segs.map(seg => {
         const sigCls = seg.sig ? ' sig-' + seg.sig : '';
         if (seg.wi !== undefined) {
