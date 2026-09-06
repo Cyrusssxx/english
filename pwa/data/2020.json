@@ -28,7 +28,25 @@
               "w": "cooperate with",
               "meaning": "与……合作"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Rats and other animals"
+              },
+              {
+                "r": "谓语",
+                "t": "need to be highly attuned to social signals from others"
+              },
+              {
+                "r": "结果状语从句",
+                "t": "so they can identify friends to cooperate with and enemies to avoid.",
+                "lead": "so"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s02",
@@ -48,7 +66,29 @@
               "w": "detect",
               "meaning": "v. 察觉，发现"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "目的状语",
+                "t": "To find out if this extends to non-living beings,"
+              },
+              {
+                "r": "主语",
+                "t": "Laleh Quinn at the University of California, San Diego, and her colleagues"
+              },
+              {
+                "r": "谓语",
+                "t": "tested"
+              },
+              {
+                "r": "宾语从句",
+                "t": "whether rats can detect social signals from robotic rats.",
+                "lead": "whether"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s03",
@@ -68,7 +108,32 @@
               "w": "for four days",
               "meaning": "为期四天"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "housed"
+              },
+              {
+                "r": "宾语",
+                "t": "eight adult rats"
+              },
+              {
+                "r": "状语",
+                "t": "with two types of robotic rat - one social and one asocial -"
+              },
+              {
+                "r": "状语",
+                "t": "for four days."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s04",
@@ -88,7 +153,24 @@
               "w": "colourful markings",
               "meaning": "鲜艳的标记"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The robot rats"
+              },
+              {
+                "r": "谓语",
+                "t": "were quite minimalist,"
+              },
+              {
+                "r": "分词短语",
+                "t": "resembling a chunkier version of a computer mouse with wheels to move around and colourful markings."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s05",
@@ -108,7 +190,40 @@
               "w": "trapped rats",
               "meaning": "被困的老鼠"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "During the experiment,"
+              },
+              {
+                "r": "主语",
+                "t": "the social robot rat"
+              },
+              {
+                "r": "谓语",
+                "t": "followed"
+              },
+              {
+                "r": "宾语",
+                "t": "the living rats around,"
+              },
+              {
+                "r": "谓语",
+                "t": "played with the same toys,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "谓语",
+                "t": "opened cage doors to let trapped rats escape."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s06",
@@ -148,7 +263,36 @@
               "w": "pressing a lever",
               "meaning": "按下控制杆"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Next,"
+              },
+              {
+                "r": "主语",
+                "t": "the researchers"
+              },
+              {
+                "r": "谓语",
+                "t": "trapped"
+              },
+              {
+                "r": "宾语",
+                "t": "the robots in cages"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "谓语",
+                "t": "gave the rats the opportunity to release them by pressing a lever."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s08",
@@ -168,7 +312,24 @@
               "w": "set the social robot free",
               "meaning": "解救社交机器鼠"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Across 18 trials each,"
+              },
+              {
+                "r": "主语",
+                "t": "the living rats"
+              },
+              {
+                "r": "谓语",
+                "t": "were 52 per cent more likely on average to set the social robot free than the asocial one."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s09",
@@ -188,7 +349,25 @@
               "w": "social being",
               "meaning": "社交生物"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "suggests"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the rats perceived the social robot as a genuine social being.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s10",
@@ -208,7 +387,25 @@
               "w": "exploring",
               "meaning": "v. 探索（explore 的现在分词）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "may have bonded more with the social robot"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "because it displayed behaviors like communal exploring and playing.",
+                "lead": "because"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s11",
@@ -228,7 +425,37 @@
               "w": "get trapped",
               "meaning": "受困，被困住"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "could lead to the rats better remembering having freed it earlier,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "谓语",
+                "t": "wanting the robot to return the favour"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when they get trapped,",
+                "lead": "when"
+              },
+              {
+                "r": "插入语",
+                "t": "says Quinn."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s12",
@@ -248,7 +475,21 @@
               "w": "direct reciprocity",
               "meaning": "直接互惠"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Rats have been shown to engage in multiple forms of reciprocal help and cooperation, including what is referred to as direct reciprocity - where a rat will help another rat that has previously helped them,\"",
+                "lead": "that"
+              },
+              {
+                "r": "插入语",
+                "t": "says Quinn."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s13",
@@ -288,7 +529,28 @@
               "w": "plastic box on wheels",
               "meaning": "带轮子的塑料盒"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The robot"
+              },
+              {
+                "r": "谓语",
+                "t": "was the same size as a regular rat"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "谓语",
+                "t": "resembled a simple plastic box on wheels."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s15",
@@ -308,7 +570,31 @@
               "w": "scent",
               "meaning": "n. 气味，香味"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"We'd assumed we'd have to give it a moving head and tail, facial features, and put a scent on it to make it smell like a real rat, but that wasn't necessary,\"",
+                "lead": "that"
+              },
+              {
+                "r": "谓语",
+                "t": "says"
+              },
+              {
+                "r": "主语",
+                "t": "Janet Wiles at the University of Queensland in Australia,"
+              },
+              {
+                "r": "定语从句",
+                "t": "who helped with the research.",
+                "lead": "who",
+                "mod": "Janet Wiles"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s16",
@@ -348,7 +634,29 @@
               "w": "fellow beings",
               "meaning": "同类"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Similarly,"
+              },
+              {
+                "r": "主语",
+                "t": "children"
+              },
+              {
+                "r": "谓语",
+                "t": "tend to treat robots as if they are fellow beings,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "even when they display only simple social signals.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text1_s18",
@@ -364,7 +672,20 @@
               "w": "it turns out",
               "meaning": "结果证明，原来"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"We humans seem to be fascinated by robots, and it turns out other animals are too,\""
+              },
+              {
+                "r": "插入语",
+                "t": "says Wiles."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -529,7 +850,42 @@
               "w": "publicly traded",
               "meaning": "上市交易的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "is true"
+              },
+              {
+                "r": "主语从句",
+                "t": "that CEO pay has gone up - top ones may make 300 times the pay of typical workers on average,",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "since the mid-1970s,",
+                "lead": "since"
+              },
+              {
+                "r": "主语",
+                "t": "CEO pay for large publicly traded American corporations"
+              },
+              {
+                "r": "谓语",
+                "t": "has, by varying estimates, gone up by about 500%."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s02",
@@ -565,7 +921,30 @@
               "w": "growing rapidly",
               "meaning": "迅速增长"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The best model for understanding the growth of CEO pay"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "that of limited CEO talent"
+              },
+              {
+                "r": "定语从句",
+                "t": "in a world where business opportunities for the top firms are growing rapidly.",
+                "lead": "where",
+                "mod": "a world"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s04",
@@ -585,7 +964,20 @@
               "w": "global economy",
               "meaning": "全球经济"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The efforts of America's highest-earning 1%"
+              },
+              {
+                "r": "谓语",
+                "t": "have been one of the more dynamic elements of the global economy."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s05",
@@ -605,7 +997,37 @@
               "w": "one reason",
               "meaning": "原因之一"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "not popular to say,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "one reason their pay has gone up so much"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语从句",
+                "t": "that CEOs really have upped their game relative to many other workers in the U.S. economy.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s06",
@@ -625,7 +1047,28 @@
               "w": "major American firms",
               "meaning": "美国大公司"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Today's CEO,"
+              },
+              {
+                "r": "插入语",
+                "t": "at least for major American firms,"
+              },
+              {
+                "r": "谓语",
+                "t": "must have"
+              },
+              {
+                "r": "宾语",
+                "t": "many more skills than simply being able to \"run the company.\""
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s07",
@@ -645,7 +1088,24 @@
               "w": "trade in them",
               "meaning": "在其中进行交易"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "CEOs"
+              },
+              {
+                "r": "谓语",
+                "t": "must have"
+              },
+              {
+                "r": "宾语",
+                "t": "a good sense of financial markets and maybe even how the company should trade in them."
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s08",
@@ -665,7 +1125,25 @@
               "w": "slipup",
               "meaning": "n. 失误，疏忽"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "They"
+              },
+              {
+                "r": "谓语",
+                "t": "also need better public relations skills than their predecessors,"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "as the costs of even a minor slipup can be significant.",
+                "lead": "as"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s09",
@@ -685,7 +1163,25 @@
               "w": "than ever before",
               "meaning": "比以往任何时候"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Then"
+              },
+              {
+                "r": "谓语",
+                "t": "there's"
+              },
+              {
+                "r": "表语",
+                "t": "the fact that large American companies are much more globalized than ever before, with supply chains spread across a larger number of countries.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s10",
@@ -701,7 +1197,25 @@
               "w": "mind-boggling",
               "meaning": "adj. 难以置信的，十分惊人的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "目的状语",
+                "t": "To lead in that system"
+              },
+              {
+                "r": "谓语",
+                "t": "requires"
+              },
+              {
+                "r": "宾语",
+                "t": "knowledge that is fairly mind-boggling.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s11",
@@ -757,7 +1271,25 @@
               "w": "common idea",
               "meaning": "普遍看法"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The common idea that high CEO pay is mainly about ripping people off"
+              },
+              {
+                "r": "谓语",
+                "t": "doesn't explain"
+              },
+              {
+                "r": "宾语",
+                "t": "history very well.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s14",
@@ -797,7 +1329,33 @@
               "w": "high and rising",
               "meaning": "处于高位且持续上涨"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "Yet"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "状语",
+                "t": "principally during this period of stronger governance"
+              },
+              {
+                "r": "表语",
+                "t": "that CEO pay has been high and rising.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s16",
@@ -837,7 +1395,29 @@
               "w": "at the expense of",
               "meaning": "以牺牲……为代价"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "Furthermore,"
+              },
+              {
+                "r": "主语",
+                "t": "the highest CEO salaries"
+              },
+              {
+                "r": "谓语",
+                "t": "are paid to outside candidates, not to the cozy insider picks,"
+              },
+              {
+                "r": "同位语",
+                "t": "another sign that high CEO pay is not some kind of depredation at the expense of the rest of the company.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2020_text2_s18",
@@ -857,7 +1437,34 @@
               "w": "build up corporate value",
               "meaning": "增加公司价值"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "主语",
+                "t": "the stock market"
+              },
+              {
+                "r": "谓语",
+                "t": "reacts positively"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when companies tie CEO pay to, say, stock prices,",
+                "lead": "when"
+              },
+              {
+                "r": "同位语",
+                "t": "a sign that those practices build up corporate value not just for the CEO.",
+                "lead": "that"
+              }
+            ]
+          }
         }
       ],
       "questions": [
