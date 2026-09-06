@@ -2773,3 +2773,34 @@ html.dark .ui-input { background: #1e293b; color: #e2e8f0; border-color: #475569
 .dark .st-t { background: #085041; color: #9FE1CB; }
 .dark .st-c { background: #0C447C; color: #B5D4F4; }
 .dark .st-m { background: #1f2937; color: var(--text-light); }
+
+/* ===== 考题速览 + 技巧总结（解析区） ===== */
+.q-quick {
+    background: #FFF8E7;
+    color: #8A5A00;
+    border: 1px solid #F0D9A8;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+html.dark .q-quick {
+    background: #3A2E10;
+    color: #F0D9A8;
+    border-color: #5C4A1E;
+}
+.q-tip {
+    background: #EAF3FB;
+    color: #1D5B8E;
+    border-left: 3px solid #4A90C4;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.82rem;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+html.dark .q-tip {
+    background: #10293E;
+    color: #A8D3F5;
+    border-left-color: #4A90C4;
+}

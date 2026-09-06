@@ -1036,11 +1036,16 @@ async function resetQuiz() {
     renderQuiz();
 }
 
+const QTYPE_CN = { detail: '细节题', viewpoint: '观点题', inference: '推断题', main_idea: '主旨题',
+    attitude: '态度题', vocabulary: '词义题', cloze: '完形', example: '例证题', opinion: '观点题',
+    '推理题': '推断题', '细节题': '细节题', '词义题': '词义题', '主旨题': '主旨题', '态度题': '态度题', '句意题': '句意题', '判断': '判断' };
+function qtypeCn(t) { return QTYPE_CN[t] || t; }
+
 function questionHtml(q) {
     const opts = (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});
     const optsCn = (q.options_cn && Object.keys(q.options_cn).length) ? q.options_cn : (article.pool_cn || {});
     return `<div class="qblock" id="q-${q.id}">
-        <div class="q-head"><span class="q-no">Q${q.number}</span>${q.qtype ? `<span class="q-type-badge">${esc(q.qtype)}</span>` : ''}</div>
+        <div class="q-head"><span class="q-no">Q${q.number}</span>${q.qtype ? `<span class="q-type-badge">${esc(qtypeCn(q.qtype))}</span>` : ''}</div>
         <div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
         ${q.stem_cn ? `<div class="q-stem-cn">${esc(q.stem_cn)}</div>` : ''}
         ${Object.keys(opts).map(k => `
@@ -1079,10 +1084,12 @@ function showResult(q, userKey, scrollToRelated) {
     }
     const expl = document.getElementById(`expl-${q.id}`);
     if (expl) {
-        expl.innerHTML = `<div class="q-expl">
+        expl.innerHTML = `${q.quick ? `<div class="q-quick">📌 考题速览　${esc(q.quick)}</div>` : ''}
+        <div class="q-expl">
             <span class="expl-tag">${ok ? '✔ 回答正确' : '✘ 回答错误'} · 答案 ${q.answer}</span>
             <div>${esc(q.explanation || '')}</div>
             ${(q.related_sentences || []).length ? `<button class="q-locate" onclick="locateRelated('${q.id}')">↖ 定位原文依据</button>` : ''}
+            ${q.tip ? `<div class="q-tip">💡 技巧　${esc(q.tip)}</div>` : ''}
         </div>`;
     }
     const jb = document.getElementById(`qj-${q.id}`);
