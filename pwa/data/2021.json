@@ -1683,7 +1683,34 @@
               "w": "Silicon Valley",
               "meaning": "硅谷"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When Microsoft bought task management app Wunderlist and mobile calendar Sunrise in 2015,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "picked"
+              },
+              {
+                "r": "宾语",
+                "t": "two newcomers"
+              },
+              {
+                "r": "定语从句",
+                "t": "that were attracting considerable buzz in Silicon Valley.",
+                "lead": "that",
+                "mod": "two newcomers"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s02",
@@ -1703,7 +1730,41 @@
               "w": "from the ground up",
               "meaning": "从头开始，彻底地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Microsoft's own Office"
+              },
+              {
+                "r": "谓语",
+                "t": "dominates"
+              },
+              {
+                "r": "宾语",
+                "t": "the market for \"productivity\" software,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "the start-ups"
+              },
+              {
+                "r": "谓语",
+                "t": "represented"
+              },
+              {
+                "r": "宾语",
+                "t": "a new wave of technology designed from the ground up for the smartphone world.",
+                "mod": "a new wave of technology"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s03",
@@ -1719,7 +1780,29 @@
               "w": "features",
               "meaning": "n. 特色，特点（feature 的复数）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Both apps,"
+              },
+              {
+                "r": "插入语",
+                "t": "however,"
+              },
+              {
+                "r": "谓语",
+                "t": "were later scrapped,"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "after Microsoft said it had used their best features in its own products.",
+                "lead": "after"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s04",
@@ -1739,7 +1822,30 @@
               "w": "feed their great hunger for",
               "meaning": "满足其对……的强烈渴求"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Their teams of engineers"
+              },
+              {
+                "r": "谓语",
+                "t": "stayed on,"
+              },
+              {
+                "r": "分词短语",
+                "t": "making them two of the many \"acqui-hires\""
+              },
+              {
+                "r": "定语从句",
+                "t": "that the biggest companies have used to feed their great hunger for tech talent.",
+                "lead": "that",
+                "mod": "the many \"acqui-hires\""
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s05",
@@ -1763,7 +1869,34 @@
               "w": "lie in their path",
               "meaning": "挡其道，妨碍其发展"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "To Microsoft's critics,"
+              },
+              {
+                "r": "主语",
+                "t": "the fates of Wunderlist and Sunrise"
+              },
+              {
+                "r": "谓语",
+                "t": "are"
+              },
+              {
+                "r": "表语",
+                "t": "examples of a remorseless drive by Big Tech to chew up any innovative companies"
+              },
+              {
+                "r": "定语从句",
+                "t": "that lie in their path.",
+                "lead": "that",
+                "mod": "any innovative companies"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s06",
@@ -1783,7 +1916,38 @@
               "w": "putting an end to",
               "meaning": "终结，扼杀"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"They bought the seedlings and closed them down,\""
+              },
+              {
+                "r": "谓语",
+                "t": "complained"
+              },
+              {
+                "r": "主语",
+                "t": "Paul Arnold,"
+              },
+              {
+                "r": "同位语",
+                "t": "a partner at San Francisco-based Switch Ventures,"
+              },
+              {
+                "r": "分词短语",
+                "t": "putting an end to businesses"
+              },
+              {
+                "r": "定语从句",
+                "t": "that might one day turn into competitors.",
+                "lead": "that",
+                "mod": "businesses"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s07",
@@ -1819,7 +1983,33 @@
               "w": "mixed feelings",
               "meaning": "五味杂陈，喜忧参半"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Like other start-up investors,"
+              },
+              {
+                "r": "主语",
+                "t": "Mr. Arnold's own business"
+              },
+              {
+                "r": "谓语",
+                "t": "often depends on selling start-ups to larger tech companies,"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "though he admits to mixed feelings about the result:",
+                "lead": "though"
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"I think these things are good for me, if I put my selfish hat on."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s09",
@@ -1879,7 +2069,32 @@
               "w": "over the past decade",
               "meaning": "在过去十年间"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语",
+                "t": "This week,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "asked"
+              },
+              {
+                "r": "宾语",
+                "t": "the five most valuable US tech companies"
+              },
+              {
+                "r": "状语",
+                "t": "for information about their many small acquisitions over the past decade."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s13",
@@ -1903,7 +2118,35 @@
               "w": "beyond their reach",
               "meaning": "力所不能及，鞭长莫及"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Although only a research project at this stage,",
+                "lead": "Although"
+              },
+              {
+                "r": "主语",
+                "t": "the request"
+              },
+              {
+                "r": "谓语",
+                "t": "has raised"
+              },
+              {
+                "r": "宾语",
+                "t": "the prospect of regulators wading into early-stage tech markets"
+              },
+              {
+                "r": "定语从句",
+                "t": "that until now have been beyond their reach.",
+                "lead": "that",
+                "mod": "early-stage tech markets"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s14",
@@ -1927,7 +2170,28 @@
               "w": "beside the point",
               "meaning": "不是重点，无关紧要"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "分词短语",
+                "t": "Given their combined market value of more than $5.5 trillion,"
+              },
+              {
+                "r": "主语",
+                "t": "rifling through such small deals - many of them much less prominent than Wunderlist and Sunrise -"
+              },
+              {
+                "r": "谓语",
+                "t": "might seem"
+              },
+              {
+                "r": "表语",
+                "t": "beside the point."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s15",
@@ -1951,7 +2215,42 @@
               "w": "venture capital",
               "meaning": "风险资本"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Between them,"
+              },
+              {
+                "r": "主语",
+                "t": "the five biggest tech companies"
+              },
+              {
+                "r": "谓语",
+                "t": "have spent"
+              },
+              {
+                "r": "宾语",
+                "t": "an average of only $3.4 billion a year on sub-$1 billion acquisitions over the past five years"
+              },
+              {
+                "r": "同位语",
+                "t": "- a drop in the ocean compared with their massive financial reserves,"
+              },
+              {
+                "r": "并列",
+                "t": "and the more than $130 billion of venture capital"
+              },
+              {
+                "r": "定语从句",
+                "t": "that was invested in the US last year.",
+                "lead": "that",
+                "mod": "the more than $130 billion of venture capital"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text3_s16",
@@ -1975,7 +2274,32 @@
               "w": "tactic",
               "meaning": "n. 策略，手段"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "However,"
+              },
+              {
+                "r": "主语",
+                "t": "critics"
+              },
+              {
+                "r": "谓语",
+                "t": "say"
+              },
+              {
+                "r": "宾语从句",
+                "t": "the big companies use such deals to buy their most threatening potential competitors before their businesses have a chance to gain momentum,"
+              },
+              {
+                "r": "举例",
+                "t": "in some cases as part of a \"buy and kill\" tactic to simply close them down."
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -2149,7 +2473,36 @@
               "w": "intrusive",
               "meaning": "adj. 打搅的，侵扰的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We're"
+              },
+              {
+                "r": "表语",
+                "t": "fairly good at judging people based on first impressions, thin slices of experience ranging from a glimpse of a photo to five-minute interaction,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "deliberation"
+              },
+              {
+                "r": "谓语",
+                "t": "can be"
+              },
+              {
+                "r": "表语",
+                "t": "not only extraneous but intrusive."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s02",
@@ -2173,7 +2526,32 @@
               "w": "rate",
               "meaning": "v. 评分，评价"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In one study of the ability she called \"thin slicing,\""
+              },
+              {
+                "r": "主语",
+                "t": "the late psychologist Nalini Ambady"
+              },
+              {
+                "r": "谓语",
+                "t": "asked"
+              },
+              {
+                "r": "宾语",
+                "t": "participants"
+              },
+              {
+                "r": "宾语补足语",
+                "t": "to watch silent 10-second video clips of professors and to rate the instructor's overall effectiveness."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s03",
@@ -2213,7 +2591,29 @@
               "w": "conscious working memory",
               "meaning": "意识工作记忆"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Another set of participants"
+              },
+              {
+                "r": "谓语",
+                "t": "had to count backward from 1,000 by nines"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "as they watched the clips,",
+                "lead": "as"
+              },
+              {
+                "r": "分词短语",
+                "t": "occupying their conscious working memory."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s05",
@@ -2253,7 +2653,28 @@
               "w": "judgment",
               "meaning": "n. 判断"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Critically,"
+              },
+              {
+                "r": "主语",
+                "t": "another group"
+              },
+              {
+                "r": "谓语",
+                "t": "was asked"
+              },
+              {
+                "r": "宾语补足语",
+                "t": "to spend a minute writing down reasons for their judgment, before giving the rating."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s07",
@@ -2293,7 +2714,25 @@
               "w": "holistic impression",
               "meaning": "整体印象"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Ambady"
+              },
+              {
+                "r": "谓语",
+                "t": "suspected"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that deliberation focused them on vivid but misleading cues, such as certain gestures or utterances, rather than letting the complex interplay of subtle signals form a holistic impression.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s09",
@@ -2313,7 +2752,29 @@
               "w": "dating partners",
               "meaning": "约会对象"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "She"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语",
+                "t": "similar interference"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when participants watched 15-second clips of pairs of people and judged whether they were strangers, friends, or dating partners.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s10",
@@ -2337,7 +2798,25 @@
               "w": "reflection",
               "meaning": "n. 深思，反省"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Other research"
+              },
+              {
+                "r": "谓语",
+                "t": "shows"
+              },
+              {
+                "r": "宾语从句",
+                "t": "we're better at detecting deception from thin slices when we rely on intuition instead of reflection.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s11",
@@ -2357,7 +2836,32 @@
               "w": "thinking about it too much",
               "meaning": "想得太多，反复思考"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"It's as if you're driving a stick shift,\""
+              },
+              {
+                "r": "谓语",
+                "t": "says"
+              },
+              {
+                "r": "主语",
+                "t": "Judith Hall,"
+              },
+              {
+                "r": "同位语",
+                "t": "a psychologist at Northeastern University,"
+              },
+              {
+                "r": "并列",
+                "t": "\"and if you start thinking about it too much, you can't remember what you're doing."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s12",
@@ -2429,7 +2933,25 @@
               "w": "analyze their rationale",
               "meaning": "分析其（评判的）理由依据"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "College students' ratings of strawberry jams and college courses"
+              },
+              {
+                "r": "谓语",
+                "t": "aligned better with experts' opinions"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when the students weren't asked to analyze their rationale.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s16",
@@ -2453,7 +2975,44 @@
               "w": "information to process",
               "meaning": "需处理的信息"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "并列",
+                "t": "And"
+              },
+              {
+                "r": "主语",
+                "t": "people"
+              },
+              {
+                "r": "谓语",
+                "t": "made"
+              },
+              {
+                "r": "宾语",
+                "t": "car-buying decisions"
+              },
+              {
+                "r": "定语从句",
+                "t": "that were both objectively better and more personally satisfying",
+                "lead": "that",
+                "mod": "car-buying decisions"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when asked to focus on their feelings rather than on details,",
+                "lead": "when"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "but only if the decision was complex - when they had a lot of information to process.",
+                "lead": "if"
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s17",
@@ -2497,7 +3056,32 @@
               "w": "figures of speech",
               "meaning": "修辞格，修辞手段"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In one study,"
+              },
+              {
+                "r": "主语",
+                "t": "participants"
+              },
+              {
+                "r": "谓语",
+                "t": "completed"
+              },
+              {
+                "r": "宾语",
+                "t": "a battery of eight tasks,"
+              },
+              {
+                "r": "分词短语",
+                "t": "including four that tapped reflective thinking (discerning rules, comprehending vocabulary) and four that tapped intuition and creativity (generating new products or figures of speech)."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s19",
@@ -2537,7 +3121,40 @@
               "w": "as expected",
               "meaning": "不出所料，如预期"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Use of their gut"
+              },
+              {
+                "r": "谓语",
+                "t": "hurt"
+              },
+              {
+                "r": "宾语",
+                "t": "their performance on the first four tasks,"
+              },
+              {
+                "r": "状语",
+                "t": "as expected,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "谓语",
+                "t": "helped"
+              },
+              {
+                "r": "宾语",
+                "t": "them on the rest."
+              }
+            ]
+          }
         },
         {
           "id": "2021_text4_s21",
