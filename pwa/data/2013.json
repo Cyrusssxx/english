@@ -25,7 +25,28 @@
               "phonetic": "/ˈɔːtəmeɪtɪd/",
               "meaning": "adj. 自动化的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In an essay entitled \"Making It in America,\""
+              },
+              {
+                "r": "主语",
+                "t": "the author Adam Davidson"
+              },
+              {
+                "r": "谓语",
+                "t": "relates a joke from cotton country about just how much a modern textile mill has been automated:"
+              },
+              {
+                "r": "同位语",
+                "t": "the average mill has only two employees today, \"a man and a dog.\""
+              }
+            ]
+          }
         },
         {
           "id": "2013_text1_s02",
@@ -37,7 +58,32 @@
               "w": "keep the man away from",
               "meaning": "让人远离……"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The man"
+              },
+              {
+                "r": "谓语",
+                "t": "is there to feed the dog,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "the dog"
+              },
+              {
+                "r": "谓语",
+                "t": "is there to keep the man away from the machines."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text1_s03",
@@ -58,7 +104,37 @@
               "phonetic": "/ˌɡləʊbəlaɪˈzeɪʃn/",
               "meaning": "n. 全球化"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Davidson's article"
+              },
+              {
+                "r": "谓语",
+                "t": "is one of a number of pieces"
+              },
+              {
+                "r": "定语从句",
+                "t": "that have recently appeared making the point",
+                "lead": "that",
+                "mod": "a number of pieces"
+              },
+              {
+                "r": "同位语从句",
+                "t": "that the reason we have such stubbornly high unemployment and declining middle-class incomes today is largely because of the big drop in demand because of the Great Recession, but it is also because of the advances in both globalization and the information technology revolution,",
+                "lead": "that"
+              },
+              {
+                "r": "定语从句",
+                "t": "which are more rapidly than ever replacing labor with machines or foreign workers.",
+                "lead": "which",
+                "mod": "the advances"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text1_s04",
@@ -107,7 +183,25 @@
               "phonetic": "/rəʊˈbɒtɪks/",
               "meaning": "n. 机器人技术"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "can't"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when so many more employers have so much more access to so much more above average cheap foreign labor, cheap robotics, cheap software, cheap automation and cheap genius.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text1_s08",
@@ -123,7 +217,30 @@
               "w": "field of employment",
               "meaning": "就业领域"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Therefore,"
+              },
+              {
+                "r": "主语",
+                "t": "everyone"
+              },
+              {
+                "r": "谓语",
+                "t": "needs to find their extra - their unique value contribution"
+              },
+              {
+                "r": "定语从句",
+                "t": "that makes them stand out in whatever is their field of employment.",
+                "lead": "that",
+                "mod": "their unique value contribution"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text1_s09",
@@ -169,7 +286,21 @@
               "w": "manufacturing jobs",
               "meaning": "制造业岗位"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "方式状语从句",
+                "t": "As Davidson notes,",
+                "lead": "As"
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"In the 10 years ending in 2009, [U.S.] factories shed workers so fast that they erased almost all the gains of the previous 70 years; roughly one out of every three manufacturing jobs - about 6 million in total - disappeared.\""
+              }
+            ]
+          }
         },
         {
           "id": "2013_text1_s12",
@@ -192,7 +323,29 @@
               "w": "above average",
               "meaning": "高于平均水平的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the one thing we know for sure"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语从句",
+                "t": "that with each advance in globalization and the I.T. revolution, the best jobs will require workers to have more and better education to make themselves above average.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text1_s14",
@@ -212,7 +365,42 @@
               "w": "post-high school education",
               "meaning": "高中后教育（高等教育）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In a world where average is officially over,"
+              },
+              {
+                "r": "主语",
+                "t": "there"
+              },
+              {
+                "r": "谓语",
+                "t": "are many things we need to do to support employment,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "nothing"
+              },
+              {
+                "r": "谓语",
+                "t": "would be more important than passing some kind of G.I. Bill for the 21st century"
+              },
+              {
+                "r": "定语从句",
+                "t": "that ensures that every American has access to post-high school education.",
+                "lead": "that",
+                "mod": "some kind of G.I. Bill"
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -389,7 +577,24 @@
               "w": "no intention to stay",
               "meaning": "无意久留"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Along with the many folks looking to make a permanent home in the United States"
+              },
+              {
+                "r": "谓语",
+                "t": "came"
+              },
+              {
+                "r": "主语",
+                "t": "those who had no intention to stay, and who would make some money and then go home."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text2_s03",
@@ -481,7 +686,28 @@
               "w": "kicked out",
               "meaning": "赶出，驱逐"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "hail them as Americans in the making,"
+              },
+              {
+                "r": "并列",
+                "t": "or"
+              },
+              {
+                "r": "谓语",
+                "t": "brand them as aliens to be kicked out."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text2_s09",
@@ -497,7 +723,20 @@
               "w": "political paralysis",
               "meaning": "政治瘫痪"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That framework"
+              },
+              {
+                "r": "谓语",
+                "t": "has contributed mightily to our broken immigration system and the long political paralysis over how to fix it."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text2_s10",
@@ -533,7 +772,24 @@
               "w": "gray areas",
               "meaning": "灰色地带"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "目的状语",
+                "t": "To start,"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "can recognize the new birds of passage, those living and thriving in the gray areas."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text2_s13",
@@ -563,7 +819,20 @@
               "phonetic": "/ˈfɪzɪsɪsts/",
               "meaning": "n. 物理学家"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Crop pickers, violinists, construction workers, entrepreneurs, engineers, home health-care aides and physicists"
+              },
+              {
+                "r": "谓语",
+                "t": "are among today's birds of passage."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text2_s15",
@@ -640,7 +909,26 @@
               "w": "committing themselves to",
               "meaning": "使自己承诺／致力于"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "need them to imagine the United States as a place"
+              },
+              {
+                "r": "定语从句",
+                "t": "where they can be productive for a while without committing themselves to staying forever.",
+                "lead": "where",
+                "mod": "a place"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text2_s20",
@@ -657,7 +945,34 @@
               "phonetic": "/ˈɒnərəbli/",
               "meaning": "adv. 体面地，光荣地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "need them to feel"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that home can be both here and there",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that they can belong to two nations honorably.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text2_s21",
@@ -678,7 +993,20 @@
               "w": "immigration battle",
               "meaning": "移民之争"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Accommodating this new world of people in motion"
+              },
+              {
+                "r": "谓语",
+                "t": "will require new attitudes on both sides of the immigration battle."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text2_s22",
@@ -698,7 +1026,25 @@
               "w": "multiple paths",
               "meaning": "多种途径"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Looking beyond the culture war logic of right or wrong"
+              },
+              {
+                "r": "谓语",
+                "t": "means opening up the middle ground and understanding"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that managing immigration today requires multiple paths and multiple outcomes, including some that are not easy to accomplish legally in the existing system.",
+                "lead": "that"
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -868,7 +1214,25 @@
               "w": "hard-wired",
               "meaning": "adj. 天生固定的，硬性的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Scientists"
+              },
+              {
+                "r": "谓语",
+                "t": "have found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that although we are prone to snap overreactions, if we take a moment and think about how we are likely to react, we can reduce or even eliminate the negative effects of our quick, hard-wired responses.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s02",
@@ -884,7 +1248,33 @@
               "w": "milliseconds",
               "meaning": "n. 毫秒"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Snap decisions"
+              },
+              {
+                "r": "谓语",
+                "t": "can be important defense mechanisms;"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "if we are judging whether someone is dangerous,",
+                "lead": "if"
+              },
+              {
+                "r": "主语",
+                "t": "our brains and bodies"
+              },
+              {
+                "r": "谓语",
+                "t": "are hard-wired to react very quickly, within milliseconds."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s03",
@@ -962,7 +1352,30 @@
               "w": "has little to do with",
               "meaning": "与……几乎无关"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Psychologists at the University of Toronto"
+              },
+              {
+                "r": "谓语",
+                "t": "found"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that viewing a fast-food logo for just a few milliseconds primes us to read 20 percent faster,",
+                "lead": "that"
+              },
+              {
+                "r": "让步状语从句",
+                "t": "even though reading has little to do with eating.",
+                "lead": "though"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s08",
@@ -979,7 +1392,20 @@
               "phonetic": "/ˈɪmpʌlsɪz/",
               "meaning": "n. 冲动"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "unconsciously associate fast food with speed and impatience and carry those impulses into whatever else we're doing."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s09",
@@ -1025,7 +1451,25 @@
               "w": "real estate agents",
               "meaning": "房产中介"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If we know we will overreact to consumer products or housing options when we see a happy face (one reason good sales representatives and real estate agents are always smiling),",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "can take a moment before buying."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s12",
@@ -1042,7 +1486,25 @@
               "phonetic": "/ˈbaɪəsɪz/",
               "meaning": "n. 偏见"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If we know female job screeners are more likely to reject attractive female applicants,",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "can help screeners understand their biases - or hire outside screeners."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s13",
@@ -1058,7 +1520,25 @@
               "w": "ground such snap reactions in",
               "meaning": "将这些快速反应建立在……基础上"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "John Gottman, the marriage expert,"
+              },
+              {
+                "r": "谓语",
+                "t": "explains"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that we quickly \"thin slice\" information reliably only after we ground such snap reactions in \"thick sliced\" long-term study.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s14",
@@ -1075,7 +1555,29 @@
               "phonetic": "/ɪˌvæljuˈeɪʃn/",
               "meaning": "n. 评估"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When Dr. Gottman really wants to assess whether a couple will stay together,",
+                "lead": "When"
+              },
+              {
+                "r": "主语",
+                "t": "he"
+              },
+              {
+                "r": "谓语",
+                "t": "invites them to his island retreat for a much longer evaluation:"
+              },
+              {
+                "r": "同位语",
+                "t": "two days, not two seconds."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s15",
@@ -1096,7 +1598,24 @@
               "w": "intermittently",
               "meaning": "adv. 断断续续地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Our ability to mute our hard-wired reactions by pausing"
+              },
+              {
+                "r": "谓语",
+                "t": "is what differentiates us from animals:"
+              },
+              {
+                "r": "同位语",
+                "t": "dogs can think about the future only intermittently or for a few minutes."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text3_s16",
@@ -1324,7 +1843,41 @@
               "phonetic": "/ˌəʌvəˈwelmɪŋli/",
               "meaning": "adv. 压倒性地，绝大多数地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In particular,"
+              },
+              {
+                "r": "主语",
+                "t": "the corporate workplace"
+              },
+              {
+                "r": "谓语",
+                "t": "will never be completely family-friendly"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "until women are part of senior management decisions,",
+                "lead": "until"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "Europe's top corporate-governance positions"
+              },
+              {
+                "r": "谓语",
+                "t": "remain overwhelmingly male."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text4_s03",
@@ -1359,7 +1912,20 @@
               "phonetic": "/prəˈpɔːʃn/",
               "meaning": "n. 比例"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The European Union"
+              },
+              {
+                "r": "谓语",
+                "t": "is now considering legislation to compel corporate boards to maintain a certain proportion of women - up to 60 per cent."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text4_s05",
@@ -1442,7 +2008,26 @@
               "w": "climb the corporate ladder",
               "meaning": "攀爬企业晋升阶梯"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "谓语",
+                "t": "Do we need quotas to ensure"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that women can continue to climb the corporate ladder fairly",
+                "lead": "that"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "as they balance work and family?",
+                "lead": "as"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text4_s10",
@@ -1478,7 +2063,32 @@
               "w": "legally binding",
               "meaning": "有法律约束力的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Quotas"
+              },
+              {
+                "r": "谓语",
+                "t": "get action:"
+              },
+              {
+                "r": "同位语",
+                "t": "they \"open the way to equality and they break through the glass ceiling,\""
+              },
+              {
+                "r": "状语",
+                "t": "according to Reding,"
+              },
+              {
+                "r": "同位语",
+                "t": "a result seen in France and other countries with legally binding provisions on placing women in top business positions."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text4_s13",
@@ -1525,7 +2135,29 @@
               "w": "temporarily ordered",
               "meaning": "暂时强制安排"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But,"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when one considers the obstacles to achieving the meritocratic ideal,",
+                "lead": "when"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "does look as if a fairer world must be temporarily ordered."
+              }
+            ]
+          }
         },
         {
           "id": "2013_text4_s16",
@@ -1542,7 +2174,29 @@
               "w": "soft pressure",
               "meaning": "软压力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "After all,"
+              },
+              {
+                "r": "主语",
+                "t": "four decades of evidence"
+              },
+              {
+                "r": "谓语",
+                "t": "has now shown"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that corporations in Europe as well as the US are evading the meritocratic hiring and promotion of women to top positions - no matter how much \"soft pressure\" is put upon them.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text4_s17",
@@ -1558,7 +2212,30 @@
               "w": "the exception to the rule",
               "meaning": "惯例中的例外"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When women do break through to the summit of corporate power - as, for example, Sheryl Sandberg recently did at Facebook -",
+                "lead": "When"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "attract massive attention"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "precisely because they remain the exception to the rule.",
+                "lead": "because"
+              }
+            ]
+          }
         },
         {
           "id": "2013_text4_s18",
@@ -1578,7 +2255,25 @@
               "w": "newsworthy",
               "meaning": "adj. 有新闻价值的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If appropriate public policies were in place to help all women - whether CEOs or their children's caregivers - and all families,",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "Sandberg"
+              },
+              {
+                "r": "谓语",
+                "t": "would be no more newsworthy than any other highly capable person living in a more just society."
+              }
+            ]
+          }
         }
       ],
       "questions": [
