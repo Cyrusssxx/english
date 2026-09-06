@@ -209,19 +209,19 @@ function promptAsync(message, defaultValue = '', opts = {}) {
     });
 }
 
-// ============ 顶栏收起/展开（右上角箭头，全局生效） ============
-// 箭头注入 .nav-tools 最右；收起后右上角保留悬浮 ▼ 供展开；状态存 localStorage.navCollapsed。
+// ============ 顶栏收起/展开（右上角单按钮，固定最右，全局生效） ============
+// 单一固定按钮：▲收起 / ▼展开 同一位置；状态存 localStorage.navCollapsed。
 (function () {
     const KEY = 'navCollapsed';
     const navbar = document.querySelector('.navbar');
     if (!navbar) return;
 
-    const chevronBtn = document.createElement('button');
-    chevronBtn.className = 'nav-collapse-btn';
-    chevronBtn.type = 'button';
-    const restoreBtn = document.createElement('button');
-    restoreBtn.className = 'nav-restore-btn';
-    restoreBtn.type = 'button';
+    const btn = document.createElement('button');
+    btn.className = 'nav-toggle-btn';
+    btn.type = 'button';
+    btn.addEventListener('click', () => apply(navbar.dataset.collapsed !== '1', true));
+    document.body.appendChild(btn);
+    document.body.classList.add('nav-toggle-on'); // 让 .nav-tools 预留按钮位，避免窄屏遮挡
 
     function apply(collapsed, animate) {
         if (animate) navbar.classList.add('nav-anim');
@@ -235,21 +235,10 @@ function promptAsync(message, defaultValue = '', opts = {}) {
             navbar.style.transform = '';
             navbar.dataset.collapsed = '';
         }
-        chevronBtn.textContent = collapsed ? '▼' : '▲';
-        chevronBtn.title = collapsed ? '展开顶栏' : '收起顶栏';
-        restoreBtn.style.display = collapsed ? 'flex' : 'none';
+        btn.textContent = collapsed ? '▼' : '▲';
+        btn.title = collapsed ? '展开顶栏' : '收起顶栏';
         localStorage.setItem(KEY, collapsed ? '1' : '0');
     }
-
-    chevronBtn.addEventListener('click', () => apply(true, true));
-    restoreBtn.addEventListener('click', () => apply(false, true));
-    restoreBtn.textContent = '▼';
-    restoreBtn.title = '展开顶栏';
-
-    const tools = navbar.querySelector('.nav-tools') || navbar.querySelector('.nav-container');
-    if (tools) tools.appendChild(chevronBtn);
-    else document.body.appendChild(chevronBtn);
-    document.body.appendChild(restoreBtn);
 
     // 初始恢复（不加动画类，避免刷新闪动）
     apply(localStorage.getItem(KEY) === '1', false);

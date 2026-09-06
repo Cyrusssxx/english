@@ -2709,47 +2709,33 @@ html.dark .ui-input { background: #1e293b; color: #e2e8f0; border-color: #475569
 }
 .ui-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-/* ===== 顶栏收起/展开箭头（common.js 注入，全局） ===== */
-.nav-collapse-btn {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--text-light);
+/* ===== 顶栏收起/展开箭头（common.js 注入，全局；单按钮固定最右） ===== */
+.nav-toggle-btn {
+    position: fixed;
+    top: 14px; /* 56px 顶栏内垂直居中 */
+    right: 10px;
+    z-index: 300; /* 高于 navbar 的 z-index:100 */
     width: 28px;
     height: 28px;
     border-radius: 999px;
-    cursor: pointer;
-    font-size: 0.7rem;
-    line-height: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 auto;
-    transition: border-color 0.15s, color 0.15s;
-}
-.nav-collapse-btn:hover { border-color: var(--primary); color: var(--primary); }
-
-/* 收起后右上角的悬浮恢复按钮（顶栏隐藏时仍可见） */
-.nav-restore-btn {
-    position: fixed;
-    top: 8px;
-    right: 12px;
-    z-index: 300; /* 高于 navbar 的 z-index:100 */
-    display: none; /* JS 按状态切换 */
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 26px;
-    border-radius: 8px;
     border: 1px solid var(--border);
     background: var(--card-bg);
     color: var(--text-light);
     cursor: pointer;
     font-size: 0.7rem;
     line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: var(--shadow);
     transition: border-color 0.15s, color 0.15s;
 }
-.nav-restore-btn:hover { border-color: var(--primary); color: var(--primary); }
+.nav-toggle-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+/* 窄屏（容器贴边）给 .nav-tools 预留按钮位，避免遮挡右侧夜间开关 */
+@media (max-width: 1240px) {
+    body.nav-toggle-on .nav-tools { margin-right: 36px; }
+}
 
 /* 收起/展开动画：transform 上移 + 负 margin 回收布局占位（高度由 JS 量出） */
 .navbar.nav-anim {
