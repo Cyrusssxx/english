@@ -28,7 +28,25 @@
               "w": "a better future",
               "meaning": "更美好的未来"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "is curious"
+              },
+              {
+                "r": "主语从句",
+                "t": "that Stephen Koziatek feels almost as though he has to justify his efforts to give his students a better future.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s02",
@@ -56,7 +74,30 @@
               "w": "practical",
               "meaning": "adj. 实际的，动手的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "He"
+              },
+              {
+                "r": "谓语",
+                "t": "is"
+              },
+              {
+                "r": "表语",
+                "t": "a teacher at a New Hampshire high school"
+              },
+              {
+                "r": "定语从句",
+                "t": "where learning is not something of books and tests and mechanical memorization, but practical.",
+                "lead": "where",
+                "mod": "a New Hampshire high school"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s04",
@@ -76,7 +117,22 @@
               "w": "a broken bike chain",
               "meaning": "断裂的自行车链"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语",
+                "t": "When did it become accepted wisdom",
+                "lead": "When"
+              },
+              {
+                "r": "主语从句",
+                "t": "that students should be able to name the 13th president of the United States but be utterly overwhelmed by a broken bike chain?",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s05",
@@ -112,7 +168,20 @@
               "w": "discarded chewing gum",
               "meaning": "丢弃的口香糖"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Nothing"
+              },
+              {
+                "r": "谓语",
+                "t": "is necessarily gained by forcing students to learn geometry at a graffitied desk stuck with generations of discarded chewing gum."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s07",
@@ -176,7 +245,24 @@
               "w": "can't make it academically",
               "meaning": "无法取得学业成功"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Schools in the family of vocational education"
+              },
+              {
+                "r": "谓语",
+                "t": "\"have that stereotype ... that it's for kids who can't make it academically,\""
+              },
+              {
+                "r": "插入语",
+                "t": "he says."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s11",
@@ -276,7 +362,32 @@
               "w": "devaluing",
               "meaning": "v. 贬低，贬抑"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "the headlong push into bachelor's degrees for all - and the subtle devaluing of anything less -"
+              },
+              {
+                "r": "谓语",
+                "t": "misses"
+              },
+              {
+                "r": "宾语",
+                "t": "an important point:"
+              },
+              {
+                "r": "同位语",
+                "t": "That's not the only thing the American economy needs."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s17",
@@ -304,7 +415,32 @@
               "w": "construction",
               "meaning": "n. 建筑，建造"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "状语",
+                "t": "even now,"
+              },
+              {
+                "r": "主语",
+                "t": "54 percent of the jobs in the country"
+              },
+              {
+                "r": "谓语",
+                "t": "are middle-skill jobs,"
+              },
+              {
+                "r": "举例",
+                "t": "such as construction and high-skill manufacturing."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s19",
@@ -336,7 +472,29 @@
               "w": "staring us in the face",
               "meaning": "明摆在眼前"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In other words,"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "at a time when the working class has turned the country on its political head, frustrated that the opportunity that once defined America is vanishing,",
+                "lead": "when"
+              },
+              {
+                "r": "主语",
+                "t": "one obvious solution"
+              },
+              {
+                "r": "谓语",
+                "t": "is staring us in the face."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s21",
@@ -352,7 +510,32 @@
               "w": "aren't equipped to do them",
               "meaning": "不具备做它们的能力"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There"
+              },
+              {
+                "r": "谓语",
+                "t": "is a gap in working-class jobs,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "the workers who need those jobs most"
+              },
+              {
+                "r": "谓语",
+                "t": "aren't equipped to do them."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text1_s22",
@@ -563,7 +746,30 @@
               "w": "renewable sources",
               "meaning": "可再生能源"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "While fossil fuels - coal, oil, gas - still generate roughly 85 percent of the world's energy supply,",
+                "lead": "While"
+              },
+              {
+                "r": "主语",
+                "t": "it's"
+              },
+              {
+                "r": "谓语",
+                "t": "clearer than ever"
+              },
+              {
+                "r": "主语从句",
+                "t": "that the future belongs to renewable sources such as wind and solar.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s02",
@@ -583,7 +789,24 @@
               "w": "going on line",
               "meaning": "投入运行，在使用"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The move to renewables"
+              },
+              {
+                "r": "谓语",
+                "t": "is picking up momentum around the world:"
+              },
+              {
+                "r": "同位语",
+                "t": "They now account for more than half of new power sources going on line."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s03",
@@ -639,7 +862,32 @@
               "w": "dropped by 80 percent",
               "meaning": "下降了80%"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The cost of solar panels"
+              },
+              {
+                "r": "谓语",
+                "t": "has dropped by 80 percent"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "the cost of wind turbines"
+              },
+              {
+                "r": "谓语",
+                "t": "by close to one-third in the past eight years."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s06",
@@ -687,7 +935,25 @@
               "w": "a remarkable shift",
               "meaning": "显著的转变"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "While the rest of the world takes the lead, notably China and Europe,",
+                "lead": "While"
+              },
+              {
+                "r": "主语",
+                "t": "the United States"
+              },
+              {
+                "r": "谓语",
+                "t": "is also seeing a remarkable shift."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s09",
@@ -703,7 +969,28 @@
               "w": "power generated",
               "meaning": "发电量"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In March, for the first time,"
+              },
+              {
+                "r": "主语",
+                "t": "wind and solar power"
+              },
+              {
+                "r": "谓语",
+                "t": "accounted for more than 10 percent of the power generated in the US,"
+              },
+              {
+                "r": "插入语",
+                "t": "reported the US Energy Information Administration."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s10",
@@ -755,7 +1042,36 @@
               "w": "the availability of clean energy",
               "meaning": "清洁能源的易获得性"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "that message"
+              },
+              {
+                "r": "谓语",
+                "t": "did not play well with many in Iowa,"
+              },
+              {
+                "r": "定语从句",
+                "t": "where wind turbines dot the fields and provide 36 percent of the state's electricity generation",
+                "lead": "where",
+                "mod": "Iowa"
+              },
+              {
+                "r": "定语从句",
+                "t": "- and where tech giants like Microsoft are being attracted by the availability of clean energy to power their data centers.",
+                "lead": "where",
+                "mod": "Iowa"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s13",
@@ -771,7 +1087,20 @@
               "w": "skeptics",
               "meaning": "n. 怀疑论者"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The question \"what happens when the wind doesn't blow or the sun doesn't shine?\""
+              },
+              {
+                "r": "谓语",
+                "t": "has provided a quick put-down for skeptics."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s14",
@@ -791,7 +1120,24 @@
               "w": "around the clock",
               "meaning": "昼夜不停地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "But"
+              },
+              {
+                "r": "主语",
+                "t": "a boost in the storage capacity of batteries"
+              },
+              {
+                "r": "谓语",
+                "t": "is making their ability to keep power flowing around the clock more likely."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s15",
@@ -811,7 +1157,26 @@
               "w": "battery-powered electric vehicles",
               "meaning": "电池驱动的电动汽车"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The advance"
+              },
+              {
+                "r": "谓语",
+                "t": "is driven in part by vehicle manufacturers,"
+              },
+              {
+                "r": "定语从句",
+                "t": "who are placing big bets on battery-powered electric vehicles.",
+                "lead": "who",
+                "mod": "vehicle manufacturers"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s16",
@@ -831,7 +1196,25 @@
               "w": "change the picture",
               "meaning": "改变局面"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "Although electric cars are still a rarity on roads now,",
+                "lead": "Although"
+              },
+              {
+                "r": "主语",
+                "t": "this massive investment"
+              },
+              {
+                "r": "谓语",
+                "t": "could change the picture rapidly in coming years."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s17",
@@ -871,7 +1254,24 @@
               "w": "slowing climate change",
               "meaning": "减缓气候变化"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The pace of change in energy sources"
+              },
+              {
+                "r": "谓语",
+                "t": "appears to be speeding up"
+              },
+              {
+                "r": "分词短语",
+                "t": "- perhaps just in time to have a meaningful effect in slowing climate change."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text2_s19",
@@ -891,7 +1291,24 @@
               "w": "a global shift in thought",
               "meaning": "全球思想的转变"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "What Washington does - or doesn't do - to promote alternative energy"
+              },
+              {
+                "r": "谓语",
+                "t": "may mean less and less"
+              },
+              {
+                "r": "状语",
+                "t": "at a time of a global shift in thought."
+              }
+            ]
+          }
         }
       ],
       "questions": [
