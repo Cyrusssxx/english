@@ -1476,7 +1476,46 @@
               "w": "physical product",
               "meaning": "实体产品"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The power and ambition of the giants of the digital economy"
+              },
+              {
+                "r": "谓语",
+                "t": "is astonishing"
+              },
+              {
+                "r": "同位语",
+                "t": "- Amazon has just announced the purchase of the upmarket grocery chain Whole Foods for $13.5bn,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "状语",
+                "t": "two years ago"
+              },
+              {
+                "r": "主语",
+                "t": "Facebook"
+              },
+              {
+                "r": "谓语",
+                "t": "paid even more than that to acquire the WhatsApp messaging service,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which doesn't have any physical product at all.",
+                "lead": "which",
+                "mod": "the WhatsApp messaging service"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s02",
@@ -1496,7 +1535,24 @@
               "w": "friendships and social lives",
               "meaning": "友谊与社交生活"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "What WhatsApp offered Facebook"
+              },
+              {
+                "r": "谓语",
+                "t": "was"
+              },
+              {
+                "r": "表语",
+                "t": "an intricate and finely detailed web of its users' friendships and social lives."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s03",
@@ -1516,7 +1572,37 @@
               "w": "the deal went through",
               "meaning": "交易获准通过"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Facebook"
+              },
+              {
+                "r": "谓语",
+                "t": "promised the European commission then"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that it would not link phone numbers to Facebook identities,",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "broke the promise almost as soon as the deal went through."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s04",
@@ -1532,7 +1618,24 @@
               "w": "revealing",
               "meaning": "adj. 揭示内情的，泄密的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语",
+                "t": "Even without knowing what was in the messages,"
+              },
+              {
+                "r": "主语",
+                "t": "the knowledge of who sent them and to whom"
+              },
+              {
+                "r": "谓语",
+                "t": "was enormously revealing and still could be."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s05",
@@ -1552,7 +1655,26 @@
               "w": "plotting",
               "meaning": "v. 密谋，策划"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "What political journalist, what party whip,"
+              },
+              {
+                "r": "谓语",
+                "t": "would not want to know the makeup of the WhatsApp groups"
+              },
+              {
+                "r": "定语从句",
+                "t": "in which Theresa May's enemies are currently plotting?",
+                "lead": "which",
+                "mod": "the WhatsApp groups"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s06",
@@ -1568,7 +1690,25 @@
               "w": "the records of which customers have purchased what",
               "meaning": "哪些顾客购买了什么的记录"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "may be"
+              },
+              {
+                "r": "表语从句",
+                "t": "that the value of Whole Foods to Amazon is not so much the 460 shops it owns, but the records of which customers have purchased what.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s07",
@@ -1636,7 +1776,29 @@
               "w": "abuses of power",
               "meaning": "权力的滥用"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "By the time a problem has been addressed and remedied",
+                "lead": "when"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "may have vanished in the marketplace,"
+              },
+              {
+                "r": "分词短语",
+                "t": "to be replaced by new abuses of power."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s11",
@@ -1668,7 +1830,37 @@
               "w": "don't pay for them",
               "meaning": "不为它们付费"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Competition law as presently interpreted"
+              },
+              {
+                "r": "谓语",
+                "t": "deals with financial disadvantage to consumers"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "this"
+              },
+              {
+                "r": "谓语",
+                "t": "is not obvious"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "when the users of these services don't pay for them.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s13",
@@ -1700,7 +1892,28 @@
               "w": "to the disadvantage of",
               "meaning": "不利于"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That"
+              },
+              {
+                "r": "谓语",
+                "t": "would be"
+              },
+              {
+                "r": "表语",
+                "t": "the people who buy advertising from them"
+              },
+              {
+                "r": "同位语",
+                "t": "- and Facebook and Google, the two virtual giants, dominate digital advertising to the disadvantage of all other media and entertainment companies."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s15",
@@ -1716,7 +1929,32 @@
               "w": "for the benefit of",
               "meaning": "为了……的利益"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The product they're selling"
+              },
+              {
+                "r": "谓语",
+                "t": "is data,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "we, the users,"
+              },
+              {
+                "r": "谓语",
+                "t": "convert our lives to data for the benefit of the digital giants."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s16",
@@ -1736,7 +1974,35 @@
               "w": "yield",
               "meaning": "v. 产生，产出"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "方式状语从句",
+                "t": "Just as some ants farm the bugs called aphids for the honeydew they produce when they feed,",
+                "lead": "as"
+              },
+              {
+                "r": "状语",
+                "t": "so"
+              },
+              {
+                "r": "主语",
+                "t": "Google"
+              },
+              {
+                "r": "谓语",
+                "t": "farms us for the data"
+              },
+              {
+                "r": "定语从句",
+                "t": "that our digital lives yield.",
+                "lead": "that",
+                "mod": "the data"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s17",
@@ -1756,7 +2022,24 @@
               "w": "inboxes",
               "meaning": "n. 收件箱"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Ants"
+              },
+              {
+                "r": "谓语",
+                "t": "keep predatory insects away from where their aphids feed;"
+              },
+              {
+                "r": "并列",
+                "t": "Gmail keeps the spammers out of our inboxes."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text3_s18",
@@ -1938,7 +2221,28 @@
               "w": "focus without distraction",
               "meaning": "专注而不分心"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "目的状语",
+                "t": "To combat the trap of putting a premium on being busy,"
+              },
+              {
+                "r": "主语",
+                "t": "Cal Newport, author of Deep Work: Rules for Focused Success in a Distracted World,"
+              },
+              {
+                "r": "谓语",
+                "t": "recommends building a habit of \"deep work\""
+              },
+              {
+                "r": "同位语",
+                "t": "- the ability to focus without distraction."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s02",
@@ -1962,7 +2266,24 @@
               "w": "seizing moments of deep work",
               "meaning": "抓住深度工作的时刻"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There"
+              },
+              {
+                "r": "谓语",
+                "t": "are a number of approaches to mastering the art of deep work"
+              },
+              {
+                "r": "举例",
+                "t": "- be it lengthy retreats dedicated to a specific task; developing a daily ritual; or taking a \"journalistic\" approach to seizing moments of deep work when you can throughout the day."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s03",
@@ -2038,7 +2359,29 @@
               "w": "a doctor's appointment",
               "meaning": "就诊预约"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "Once on the calendar,",
+                "lead": "Once"
+              },
+              {
+                "r": "主语",
+                "t": "I"
+              },
+              {
+                "r": "谓语",
+                "t": "protect this time like I would a doctor's appointment or important meeting\","
+              },
+              {
+                "r": "插入语",
+                "t": "he writes."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s07",
@@ -2058,7 +2401,24 @@
               "w": "craft our to-do lists",
               "meaning": "精心制作任务清单"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Another approach to getting more done in less time"
+              },
+              {
+                "r": "谓语",
+                "t": "is to rethink how you prioritise your day"
+              },
+              {
+                "r": "分词短语",
+                "t": "- in particular how we craft our to-do lists."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s08",
@@ -2082,7 +2442,30 @@
               "w": "day by day",
               "meaning": "逐日地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Tim Harford, author of Messy: The Power of Disorder to Transform Our Lives,"
+              },
+              {
+                "r": "谓语",
+                "t": "points to a study in the early 1980s"
+              },
+              {
+                "r": "定语从句",
+                "t": "that divided undergraduates into two groups:",
+                "lead": "that",
+                "mod": "a study"
+              },
+              {
+                "r": "同位语",
+                "t": "some were advised to set out monthly goals and study activities; others were told to plan activities and goals in much more detail, day by day."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s09",
@@ -2102,7 +2485,29 @@
               "w": "demotivated",
               "meaning": "v. 使失去动力，使消极"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "While the researchers assumed that the well-structured daily plans would be most effective when it came to the execution of tasks,",
+                "lead": "While"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "were wrong:"
+              },
+              {
+                "r": "同位语",
+                "t": "the detailed daily plans demotivated students."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s10",
@@ -2126,7 +2531,29 @@
               "w": "reap the best results",
               "meaning": "收获最佳结果"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Harford"
+              },
+              {
+                "r": "谓语",
+                "t": "argues"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that inevitable distractions often render the daily to-do list ineffective,",
+                "lead": "that"
+              },
+              {
+                "r": "并列",
+                "t": "while leaving room for improvisation in such a list can reap the best results."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s11",
@@ -2146,7 +2573,32 @@
               "w": "be lazy",
               "meaning": "偷个懒"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "目的状语",
+                "t": "In order to make the most of our focus and energy,"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "also need to embrace downtime,"
+              },
+              {
+                "r": "并列",
+                "t": "or"
+              },
+              {
+                "r": "状语",
+                "t": "as Newport suggests, \"be lazy\"."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s12",
@@ -2170,7 +2622,20 @@
               "w": "necessary to getting any work done",
               "meaning": "对完成任何工作都必要"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"Idleness is not just a vacation, an indulgence or a vice; it is as indispensable to the brain as vitamin D is to the body ... [idleness] is, paradoxically, necessary to getting any work done,\""
+              },
+              {
+                "r": "插入语",
+                "t": "he argues."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s13",
@@ -2190,7 +2655,25 @@
               "w": "the way our brains operate",
               "meaning": "我们大脑的运作方式"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Srini Pillay, an assistant professor of psychiatry at Harvard Medical School,"
+              },
+              {
+                "r": "谓语",
+                "t": "believes"
+              },
+              {
+                "r": "宾语从句",
+                "t": "this counterintuitive link between downtime and productivity may be due to the way our brains operate.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s14",
@@ -2206,7 +2689,25 @@
               "w": "tend to be more efficient",
               "meaning": "往往更高效"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When our brains switch between being focused and unfocused on a task,",
+                "lead": "When"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "tend to be more efficient."
+              }
+            ]
+          }
         },
         {
           "id": "2018_text4_s15",
@@ -2222,7 +2723,20 @@
               "w": "the focus and unfocus circuits",
               "meaning": "专注与分心两种回路"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "宾语从句",
+                "t": "\"What people don't realise is that in order to complete these tasks they need to use both the focus and unfocus circuits in their brain,\""
+              },
+              {
+                "r": "插入语",
+                "t": "says Pillay."
+              }
+            ]
+          }
         }
       ],
       "questions": [
