@@ -9,8 +9,10 @@
 import json, re, sys, os
 
 sys.stdout.reconfigure(encoding='utf-8')
-ROLES = {'主语','谓语','宾语','表语','定语','状语','补语','同位语','插入语','举例','并列','目的状语',
-         '定语从句','状语从句','宾语从句','主语从句','表语从句','同位语从句','不定式短语','分词短语'}
+ROLES = {'主语','谓语','宾语','表语','定语','状语','补语','同位语','插入语','举例','并列','并列词','目的状语',
+         '定语从句','状语从句','宾语从句','主语从句','表语从句','同位语从句','不定式短语','分词短语',
+         '原因状语从句','方式状语从句','条件状语从句','让步状语从句','时间状语从句','地点状语从句',
+         '比较状语从句','结果状语从句','目的状语从句'}
 norm = lambda s: re.sub(r'\s+', ' ', s.strip())
 
 def build_from_outline(lines):
@@ -91,7 +93,16 @@ def main(batch_path, force=False):
             try:
                 out = []
                 flatten(st['nodes'], out)
-                got = ' '.join(out)
+                # 贴连感知 join：段以破折号(—)开头/结尾时与前段不插空格（支持 workforce—which…—will 等原句贴连）
+                got = ''
+                for t in out:
+                    t = str(t).strip()
+                    if not t:
+                        continue
+                    if got and (got.endswith('\u2014') or t.startswith('\u2014')):
+                        got += t
+                    else:
+                        got += (' ' if got else '') + t
                 if norm(got) != norm(s['en']):
                     exp, g = norm(s['en']), norm(got)
                     i = 0
