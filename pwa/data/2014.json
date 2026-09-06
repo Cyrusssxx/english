@@ -32,7 +32,30 @@
               "w": "lottery jackpot",
               "meaning": "彩票头奖"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "is now a question for Gloria MacKenzie,"
+              },
+              {
+                "r": "同位语",
+                "t": "an 84-year-old widow"
+              },
+              {
+                "r": "定语从句",
+                "t": "who recently emerged from her small, tin-roofed house in Florida to collect the biggest undivided lottery jackpot in history.",
+                "lead": "who",
+                "mod": "Gloria MacKenzie"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s03",
@@ -48,7 +71,25 @@
               "w": "lasting feelings of fulfilment",
               "meaning": "持久的满足感"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If she hopes her new-found fortune will yield lasting feelings of fulfilment,",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "she"
+              },
+              {
+                "r": "谓语",
+                "t": "could do worse than read Happy Money by Elizabeth Dunn and Michael Norton."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s04",
@@ -64,7 +105,25 @@
               "w": "counterintuitive",
               "meaning": "adj. 与直觉相悖的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These two academics"
+              },
+              {
+                "r": "谓语",
+                "t": "use an array of behavioral research to show"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that the most rewarding ways to spend money can be counterintuitive.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s05",
@@ -117,7 +176,28 @@
               "w": "spend money on experiences",
               "meaning": "把钱花在体验上"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "is far better to spend money on experiences,"
+              },
+              {
+                "r": "插入语",
+                "t": "say Ms Dunn and Mr Norton,"
+              },
+              {
+                "r": "举例",
+                "t": "like interesting trips, unique meals or even going to the cinema."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s09",
@@ -129,7 +209,25 @@
               "w": "connected to others",
               "meaning": "与他人联系"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "These purchases"
+              },
+              {
+                "r": "谓语",
+                "t": "often become more valuable with time - as stories or memories -"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "particularly if they involve feeling more connected to others.",
+                "lead": "if"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s10",
@@ -149,7 +247,20 @@
               "w": "packed with",
               "meaning": "充满，塞满"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This slim volume"
+              },
+              {
+                "r": "谓语",
+                "t": "is packed with tips to help wage slaves as well as lottery winners get the most \"happiness bang for your buck.\""
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s11",
@@ -169,7 +280,25 @@
               "w": "whopping",
               "meaning": "adj. 巨大的，惊人的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "seems most people would be better off"
+              },
+              {
+                "r": "条件状语从句",
+                "t": "if they could shorten their commutes to work, spend more time with friends and family and less of it watching television (something the average American spends a whopping two months a year doing, and is hardly jollier for it).",
+                "lead": "if"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s12",
@@ -185,7 +314,37 @@
               "w": "consumed sparingly",
               "meaning": "偶尔、节制地享用"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Buying gifts or giving to charity"
+              },
+              {
+                "r": "谓语",
+                "t": "is often more pleasurable than purchasing things for oneself,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "luxuries"
+              },
+              {
+                "r": "谓语",
+                "t": "are most enjoyable"
+              },
+              {
+                "r": "时间状语从句",
+                "t": "when they are consumed sparingly.",
+                "lead": "when"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s13",
@@ -205,7 +364,24 @@
               "w": "object of obsession",
               "meaning": "让人痴迷的对象"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This"
+              },
+              {
+                "r": "谓语",
+                "t": "is apparently the reason McDonald's restricts the availability of its popular McRib"
+              },
+              {
+                "r": "同位语",
+                "t": "- a marketing trick that has turned the pork sandwich into an object of obsession."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s14",
@@ -229,7 +405,32 @@
               "w": "buy happiness",
               "meaning": "买到幸福"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Money"
+              },
+              {
+                "r": "谓语",
+                "t": "may not quite buy happiness,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "people in wealthier countries"
+              },
+              {
+                "r": "谓语",
+                "t": "are generally happier than those in poor ones."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s16",
@@ -246,7 +447,36 @@
               "phonetic": "/ˈskeəsəti/",
               "meaning": "n. 稀缺，匮乏"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "Yet"
+              },
+              {
+                "r": "主语",
+                "t": "the link between feeling good and spending money on others"
+              },
+              {
+                "r": "谓语",
+                "t": "can be seen among rich and poor people around the world,"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "scarcity"
+              },
+              {
+                "r": "谓语",
+                "t": "enhances the pleasure of most things for most people."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s17",
@@ -262,7 +492,26 @@
               "w": "tax incentives",
               "meaning": "税收优惠"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Not everyone"
+              },
+              {
+                "r": "谓语",
+                "t": "will agree with the authors' policy ideas,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which range from mandating more holiday time to reducing tax incentives for American homebuyers.",
+                "lead": "which",
+                "mod": "the authors' policy ideas"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text1_s18",
@@ -434,7 +683,25 @@
               "w": "empirical research",
               "meaning": "实证研究"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "An article in Scientific American"
+              },
+              {
+                "r": "谓语",
+                "t": "has pointed out"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that empirical research says that, actually, you think you're more beautiful than you are.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s02",
@@ -450,7 +717,32 @@
               "w": "self-enhancing strategies",
               "meaning": "自我美化的策略"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "We"
+              },
+              {
+                "r": "谓语",
+                "t": "have a deep-seated need to feel good about ourselves"
+              },
+              {
+                "r": "并列",
+                "t": "and"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "naturally employ a number of self-enhancing strategies to achieve this."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s03",
@@ -466,7 +758,25 @@
               "w": "illusory superiority",
               "meaning": "虚幻的优越感"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Social psychologists"
+              },
+              {
+                "r": "谓语",
+                "t": "have amassed oceans of research into what they call the \"above average effect\", or \"illusory superiority\", and shown"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that, for example, 70% of us rate ourselves as above average in leadership, 93% in driving and 85% at getting on well with others - all obviously statistical impossibilities.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s04",
@@ -542,7 +852,24 @@
               "w": "lineup",
               "meaning": "n. （供辨认的）一组照片/人物"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "Rather than have people simply rate their beauty compared with others,"
+              },
+              {
+                "r": "主语",
+                "t": "he"
+              },
+              {
+                "r": "谓语",
+                "t": "asked them to identify an original photograph of themselves from a lineup including versions that had been altered to appear more and less attractive."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s09",
@@ -558,7 +885,24 @@
               "w": "conscious deliberation",
               "meaning": "有意识的思考/权衡"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Visual recognition,"
+              },
+              {
+                "r": "插入语",
+                "t": "reads the study,"
+              },
+              {
+                "r": "谓语",
+                "t": "is \"an automatic psychological process, occurring rapidly and intuitively with little or no apparent conscious deliberation\"."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s10",
@@ -574,7 +918,25 @@
               "w": "genuinely",
               "meaning": "adv. 真心地，真正地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "条件状语从句",
+                "t": "If the subjects quickly chose a falsely flattering image - which most did -",
+                "lead": "If"
+              },
+              {
+                "r": "主语",
+                "t": "they"
+              },
+              {
+                "r": "谓语",
+                "t": "genuinely believed it was really how they looked."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s11",
@@ -606,7 +968,22 @@
               "w": "profound insecurities",
               "meaning": "深刻的不安感"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Nor was there any evidence"
+              },
+              {
+                "r": "定语从句",
+                "t": "that those who self-enhanced the most (that is, the participants who thought the most positively doctored pictures were real) were doing so to make up for profound insecurities.",
+                "lead": "that",
+                "mod": "evidence"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s13",
@@ -622,7 +999,24 @@
               "w": "self-esteem",
               "meaning": "n. 自尊"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In fact,"
+              },
+              {
+                "r": "主语",
+                "t": "those who thought that the images higher up the attractiveness scale were real"
+              },
+              {
+                "r": "谓语",
+                "t": "directly corresponded with those who showed other markers for having higher self-esteem."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s14",
@@ -675,7 +1069,28 @@
               "w": "makes sense",
               "meaning": "说得通，有道理"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "分词短语",
+                "t": "Knowing the results of Epley's study,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "makes sense that many people hate photographs of themselves viscerally"
+              },
+              {
+                "r": "同位语",
+                "t": "- on one level, they don't even recognise the person in the picture as themselves."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s18",
@@ -691,7 +1106,26 @@
               "w": "the cream of",
               "meaning": "……中的精华"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Facebook, therefore,"
+              },
+              {
+                "r": "谓语",
+                "t": "is a self-enhancer's paradise,"
+              },
+              {
+                "r": "定语从句",
+                "t": "where people can share only the most flattering photos, the cream of their wit, style, beauty, intellect and lifestyles.",
+                "lead": "where",
+                "mod": "a self-enhancer's paradise"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text2_s19",
@@ -707,7 +1141,28 @@
               "w": "idealised version",
               "meaning": "理想化的版本"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "not that people's profiles are dishonest,"
+              },
+              {
+                "r": "插入语",
+                "t": "says Catalina Toma of Wisconsin-Madison University,"
+              },
+              {
+                "r": "宾语从句",
+                "t": "\"but they portray an idealised version of themselves.\""
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -865,7 +1320,32 @@
               "w": "economic downturns",
               "meaning": "经济衰退"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The concept of man versus machine"
+              },
+              {
+                "r": "谓语",
+                "t": "is at least as old as the industrial revolution,"
+              },
+              {
+                "r": "并列",
+                "t": "but"
+              },
+              {
+                "r": "主语",
+                "t": "this phenomenon"
+              },
+              {
+                "r": "谓语",
+                "t": "tends to be most acutely felt during economic downturns and fragile recoveries."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s02",
@@ -877,7 +1357,24 @@
               "w": "boom and bust cycle",
               "meaning": "繁荣与萧条周期"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "And yet,"
+              },
+              {
+                "r": "主语",
+                "t": "it"
+              },
+              {
+                "r": "谓语",
+                "t": "would be a mistake to think we are right now simply experiencing the painful side of a boom and bust cycle."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s03",
@@ -909,7 +1406,25 @@
               "w": "eating up",
               "meaning": "吞噬，耗尽"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "原因状语从句",
+                "t": "Since technology has such an insatiable appetite for eating up human jobs,",
+                "lead": "Since"
+              },
+              {
+                "r": "主语",
+                "t": "this phenomenon"
+              },
+              {
+                "r": "谓语",
+                "t": "will continue to restructure our economy in ways we cannot immediately foresee."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s05",
@@ -926,7 +1441,31 @@
               "phonetic": "/ˌɔːtəˈmeɪʃn/",
               "meaning": "n. 自动化"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When there is rapid improvement in the price and performance of technology,",
+                "lead": "When"
+              },
+              {
+                "r": "主语",
+                "t": "jobs"
+              },
+              {
+                "r": "定语从句",
+                "t": "that were once thought to be immune from automation",
+                "lead": "that",
+                "mod": "jobs"
+              },
+              {
+                "r": "谓语",
+                "t": "suddenly become threatened."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s06",
@@ -938,7 +1477,30 @@
               "w": "hail from",
               "meaning": "来自，原籍为"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "This argument"
+              },
+              {
+                "r": "谓语",
+                "t": "has attracted a lot of attention,"
+              },
+              {
+                "r": "状语",
+                "t": "via the success of the book Race Against the Machine, by Erik Brynjolfsson and Andrew McAfee,"
+              },
+              {
+                "r": "定语从句",
+                "t": "who both hail from MIT's Center for Digital Business.",
+                "lead": "who",
+                "mod": "Erik Brynjolfsson and Andrew McAfee"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s07",
@@ -967,7 +1529,24 @@
               "w": "in the first place",
               "meaning": "当初，首先"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "转折词",
+                "t": "And yet,"
+              },
+              {
+                "r": "主语",
+                "t": "John Hagel, author of The Power of Pull and other books,"
+              },
+              {
+                "r": "谓语",
+                "t": "says Brynjolfsson and McAfee miss the reason why these jobs are so vulnerable to technology in the first place."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s09",
@@ -983,7 +1562,20 @@
               "w": "leave no room for",
               "meaning": "不给……留余地"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Hagel"
+              },
+              {
+                "r": "谓语",
+                "t": "says we have designed jobs in the U.S. that tend to be \"tightly scripted\" and \"highly standardized\" ones that leave no room for \"individual initiative or creativity\"."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s10",
@@ -995,7 +1587,30 @@
               "w": "In short",
               "meaning": "简而言之"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In short,"
+              },
+              {
+                "r": "主语",
+                "t": "these"
+              },
+              {
+                "r": "谓语",
+                "t": "are the types of jobs"
+              },
+              {
+                "r": "定语从句",
+                "t": "that machines can perform much better at than human beings.",
+                "lead": "that",
+                "mod": "the types of jobs"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s11",
@@ -1007,7 +1622,24 @@
               "w": "target sign",
               "meaning": "靶子标志"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "That"
+              },
+              {
+                "r": "谓语",
+                "t": "is how we have put a giant target sign on the backs of American workers,"
+              },
+              {
+                "r": "插入语",
+                "t": "Hagel says."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s12",
@@ -1023,7 +1655,29 @@
               "w": "notion of work",
               "meaning": "对工作的认识/观念"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It's"
+              },
+              {
+                "r": "表语",
+                "t": "time to reinvent the formula for how work is conducted,"
+              },
+              {
+                "r": "原因状语从句",
+                "t": "since we are still relying on a very 20th century notion of work,",
+                "lead": "since"
+              },
+              {
+                "r": "插入语",
+                "t": "Hagel says."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s13",
@@ -1039,7 +1693,30 @@
               "w": "respond to unexpected events",
               "meaning": "应对突发事件"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In our rapidly changing economy,"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "more than ever need people in the workplace"
+              },
+              {
+                "r": "定语从句",
+                "t": "who can take initiative and exercise their imagination \"to respond to unexpected events\".",
+                "lead": "who",
+                "mod": "people"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s14",
@@ -1104,7 +1781,24 @@
               "w": "rather than",
               "meaning": "而不是"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "In other words,"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "need to look at the ways in which machines can augment human labor rather than replace it."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text3_s19",
@@ -1120,7 +1814,28 @@
               "w": "work practices",
               "meaning": "工作方式/惯例"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "状语",
+                "t": "So then"
+              },
+              {
+                "r": "主语",
+                "t": "the problem"
+              },
+              {
+                "r": "谓语",
+                "t": "is not really about technology,"
+              },
+              {
+                "r": "并列",
+                "t": "but rather, \"how do we innovate our institutions and our work practices?\""
+              }
+            ]
+          }
         }
       ],
       "questions": [
@@ -1281,7 +1996,25 @@
               "w": "contributing to",
               "meaning": "有助于，促成"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "时间状语从句",
+                "t": "When the government talks about infrastructure contributing to the economy",
+                "lead": "When"
+              },
+              {
+                "r": "主语",
+                "t": "the focus"
+              },
+              {
+                "r": "谓语",
+                "t": "is usually on roads, railways, broadband and energy."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s02",
@@ -1357,7 +2090,25 @@
               "phonetic": "/ɪnˈevɪtəbl/",
               "meaning": "adj. 不可避免的"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "is hard to shove for attention among multibillion-pound infrastructure projects,"
+              },
+              {
+                "r": "结果状语从句",
+                "t": "so it is inevitable that the attention is focused elsewhere.",
+                "lead": "so"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s08",
@@ -1434,7 +2185,20 @@
               "w": "to one side",
               "meaning": "搁置一旁"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "It"
+              },
+              {
+                "r": "谓语",
+                "t": "needs to put historical prejudices to one side and take some steps to address our urgent housing need."
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s13",
@@ -1446,7 +2210,26 @@
               "w": "indications",
               "meaning": "n. 迹象，迹兵"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "There"
+              },
+              {
+                "r": "谓语",
+                "t": "are some indications"
+              },
+              {
+                "r": "定语从句",
+                "t": "that it is preparing to do just that.",
+                "lead": "that",
+                "mod": "indications"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s14",
@@ -1466,7 +2249,25 @@
               "w": "cap",
               "meaning": "n. （可用或可借资金的）上限"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The communities minister, Don Foster,"
+              },
+              {
+                "r": "谓语",
+                "t": "has hinted"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that George Osborne, Chancellor of the Exchequer, may introduce more flexibility to the current cap on the amount that local authorities can borrow against their housing stock debt.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s15",
@@ -1478,7 +2279,25 @@
               "w": "the cap were lifted",
               "meaning": "上限被提高（虚拟语气）"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Evidence"
+              },
+              {
+                "r": "谓语",
+                "t": "shows"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that 60,000 extra new homes could be built over the next five years if the cap were lifted, increasing GDP by 0.6%.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s16",
@@ -1494,7 +2313,26 @@
               "w": "registered providers",
               "meaning": "注册（住房）供应商"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "Ministers"
+              },
+              {
+                "r": "谓语",
+                "t": "should also look at creating greater certainty in the rental environment,"
+              },
+              {
+                "r": "定语从句",
+                "t": "which would have a significant impact on the ability of registered providers to fund new developments from revenues.",
+                "lead": "which",
+                "mod": "creating greater certainty"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s17",
@@ -1526,7 +2364,31 @@
               "w": "set to expire",
               "meaning": "将要到期"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "While these measures would be welcome in the short term,",
+                "lead": "While"
+              },
+              {
+                "r": "主语",
+                "t": "we"
+              },
+              {
+                "r": "谓语",
+                "t": "must face up to the fact"
+              },
+              {
+                "r": "定语从句",
+                "t": "that the existing £4.5bn programme of grants to fund new affordable housing, set to expire in 2015, is unlikely to be extended beyond then.",
+                "lead": "that",
+                "mod": "the fact"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s19",
@@ -1542,7 +2404,25 @@
               "w": "returns to power",
               "meaning": "重新执政"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The Labour party"
+              },
+              {
+                "r": "谓语",
+                "t": "has recently announced"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that it will retain a large part of the coalition's spending plans if it returns to power.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s20",
@@ -1554,7 +2434,25 @@
               "w": "large-scale public grants",
               "meaning": "大规模公共拨款"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "主语",
+                "t": "The housing sector"
+              },
+              {
+                "r": "谓语",
+                "t": "needs to accept"
+              },
+              {
+                "r": "宾语从句",
+                "t": "that we are very unlikely to ever return to the era of large-scale public grants.",
+                "lead": "that"
+              }
+            ]
+          }
         },
         {
           "id": "2014_text4_s21",
@@ -1586,7 +2484,25 @@
               "w": "pressing need",
               "meaning": "迫切需求"
             }
-          ]
+          ],
+          "struct": {
+            "v": 1,
+            "nodes": [
+              {
+                "r": "让步状语从句",
+                "t": "While the government's commitment to long-term funding may have changed,",
+                "lead": "While"
+              },
+              {
+                "r": "主语",
+                "t": "the very pressing need for more affordable housing"
+              },
+              {
+                "r": "谓语",
+                "t": "is real and is not going away."
+              }
+            ]
+          }
         }
       ],
       "questions": [
