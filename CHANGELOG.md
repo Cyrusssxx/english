@@ -1,5 +1,15 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-06 新增] 顶栏收起/展开箭头（全局）
+
+- **需求**：顶栏右上角加一个向上收起顶栏的箭头，全局生效。
+- **实现**：`common.js` 末尾注入（10 个页面零 HTML 改动）——
+  - 在 `.nav-tools` 最右注入 `▲` 圆形小按钮，点击收起：navbar 上移隐藏（`transform: translateY(-100%)`）+ JS 量高设负 `margin-top` 同步回收布局占位（0.25s 动画）。
+  - 收起后右上角保留**悬浮 ▼ 按钮**（fixed，z-index 300 高于顶栏）供展开；展开后悬浮按钮隐藏。
+  - 状态存 `localStorage.navCollapsed`，刷新/换页保持；初始恢复不加动画类防闪动；resize 时重算收起态负 margin（窄屏顶栏换行变高场景）。
+- **CSS**：`style.css` 末尾新增 `.nav-collapse-btn`（风格同 nav-timer-btn，28px 圆形，深浅色自适应）、`.nav-restore-btn`（悬浮胶囊）、`.navbar.nav-anim`（动画过渡）。
+- **验证**：jsdom 全流程通过（注入位置/点击收起/悬浮展开/localStorage 持久化/恢复态无闪动）；margin-top 显示 0px 系 jsdom 无布局引擎（真实浏览器量得实高）。
+
 ## [2026-09-04 修复] 英语一阅读：净化正文混题 + 补全缺失篇
 
 - **问题**：部分 EN1 阅读文章数据错乱——正文 sentences 尾部混入题目/题号/页标；2021 年 text2 正文整篇缺失（被题目污染成 0 句）。

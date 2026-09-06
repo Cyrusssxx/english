@@ -208,3 +208,57 @@ function promptAsync(message, defaultValue = '', opts = {}) {
         });
     });
 }
+
+// ============ 顶栏收起/展开（右上角箭头，全局生效） ============
+// 箭头注入 .nav-tools 最右；收起后右上角保留悬浮 ▼ 供展开；状态存 localStorage.navCollapsed。
+(function () {
+    const KEY = 'navCollapsed';
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+
+    const chevronBtn = document.createElement('button');
+    chevronBtn.className = 'nav-collapse-btn';
+    chevronBtn.type = 'button';
+    const restoreBtn = document.createElement('button');
+    restoreBtn.className = 'nav-restore-btn';
+    restoreBtn.type = 'button';
+
+    function apply(collapsed, animate) {
+        if (animate) navbar.classList.add('nav-anim');
+        if (collapsed) {
+            // JS 量高：负 margin 抵消布局占位 + 上移隐藏，动画同时进行
+            navbar.style.marginTop = -navbar.offsetHeight + 'px';
+            navbar.style.transform = 'translateY(-100%)';
+            navbar.dataset.collapsed = '1';
+        } else {
+            navbar.style.marginTop = '';
+            navbar.style.transform = '';
+            navbar.dataset.collapsed = '';
+        }
+        chevronBtn.textContent = collapsed ? '▼' : '▲';
+        chevronBtn.title = collapsed ? '展开顶栏' : '收起顶栏';
+        restoreBtn.style.display = collapsed ? 'flex' : 'none';
+        localStorage.setItem(KEY, collapsed ? '1' : '0');
+    }
+
+    chevronBtn.addEventListener('click', () => apply(true, true));
+    restoreBtn.addEventListener('click', () => apply(false, true));
+    restoreBtn.textContent = '▼';
+    restoreBtn.title = '展开顶栏';
+
+    const tools = navbar.querySelector('.nav-tools') || navbar.querySelector('.nav-container');
+    if (tools) tools.appendChild(chevronBtn);
+    else document.body.appendChild(chevronBtn);
+    document.body.appendChild(restoreBtn);
+
+    // 初始恢复（不加动画类，避免刷新闪动）
+    apply(localStorage.getItem(KEY) === '1', false);
+
+    // 视口变化时重算收起态的负 margin（顶栏可能在窄屏换行变高）
+    window.addEventListener('resize', () => {
+        if (navbar.dataset.collapsed !== '1') return;
+        navbar.classList.remove('nav-anim');
+        navbar.style.marginTop = -navbar.offsetHeight + 'px';
+        requestAnimationFrame(() => navbar.classList.add('nav-anim'));
+    });
+})();
