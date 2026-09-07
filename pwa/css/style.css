@@ -2915,3 +2915,25 @@ html.dark .q-tip {
 .nt-opts .q-opt { padding: 6px 8px; }
 .nt-opts .opt-en { font-size: 0.85rem; }
 .nt-opts .opt-cn { font-size: 0.74rem; }
+
+/* ===== 紧凑题型（翻译/完形/新题型）：短句卡片流——短句并排、长句占整行、句间小空隙 ===== */
+.sent-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    align-items: flex-start;
+}
+.sent-grid .sent {
+    flex: 1 1 300px;
+    min-width: 210px;
+    margin: 0;
+}
+.sent-grid .sent.long {
+    flex: 1 1 100%;
+    min-width: 0;
+}
+/* 空位卡/人名徽标在新题型网格里占整行 */
+.sent-grid > .nt-slot,
+.sent-grid > .nt-match {
+    flex: 0 0 100%;
+}

@@ -473,7 +473,8 @@ function renderArticle() {
             <div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>
             <div class="read-source">${esc(article.source || '')} · 点句下占位条显示译文，点下划线词查释义</div>
             ${article.topic ? `<div class="read-summary"><span class="rs-label">本文概要</span>${esc(article.topic)}</div>` : ''}
-            <div class="para"><div class="para-tag">P1</div>${article.sentences.map(s => sentenceHtml(s)).join('')}</div>
+            <div class="para"><div class="para-tag">P1</div>
+            <div class="sent-grid">${article.sentences.map(s => sentenceHtml(s)).join('')}</div></div>
             ${article.ref_cn ? `<div class="translation-ref">
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示全文参考译文</button>
                 <div class="translation-ref-cn" hidden>${esc(article.ref_cn)}</div>
@@ -485,6 +486,8 @@ function renderArticle() {
         const p = (s.para || 1) - 1;
         (paras[p] || (paras[p] = [])).push(s);
     }
+    // 紧凑题型（翻译/完形/新题型）：短句卡片流——短句并排、长句占整行
+    const isCompact = article.type === 'cloze' || article.type === 'newtype' || article.type === 'translation';
     let html = `<div class="read-title" onclick="toggleReadTitle()" title="点击显示/隐藏文章标题" hidden>${esc(article.title || '')}</div>`;
     html += `<div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>`;
     html += `<div class="read-source">${esc(article.source || '')} · 点句下占位条显示译文，点下划线词查释义</div>`;
@@ -500,6 +503,7 @@ function renderArticle() {
     });
     paras.forEach((sents, i) => {
         html += `<div class="para"><div class="para-tag">P${i + 1}</div>`;
+        if (isCompact) html += '<div class="sent-grid">';
         const slotQ = paraQMap[i + 1];
         if (slotQ) html += ntSlotHtml(slotQ);
         const personHit = new Set();
@@ -513,6 +517,7 @@ function renderArticle() {
             if (personQ) html += ntMatchRowHtml(personQ);
             html += sentenceHtml(s);
         }
+        if (isCompact) html += '</div>';
         html += '</div>';
     });
     document.getElementById('readPane').innerHTML = html;
@@ -524,7 +529,9 @@ function sentenceHtml(s) {
     const hasStruct = !!(s.struct && s.struct.nodes && sigOn());
     const structBtn = hasStruct
         ? `<button class="struct-btn" onclick="toggleStructTree('${s.id}')" title="展开/收起句子结构树">结构</button>` : '';
-    let out = `<div class="sent" id="s-${s.id}" data-sid="${s.id}">
+    // 紧凑题型网格里长句（>170 字符）占整行，短句并排
+    const isLong = (s.en || '').length > 170;
+    let out = `<div class="sent${isLong ? ' long' : ''}" id="s-${s.id}" data-sid="${s.id}">
         <div class="sent-en">${enHtml}
             <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>${structBtn}
         </div>
