@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>方法导图 - 英语真题精翻</title>
+    <title>选项高频近义词 - 英语真题精翻</title>
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#0d9488">
     <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
@@ -22,51 +22,17 @@
             background: var(--card); border: 1px solid var(--border); border-radius: 10px;
             padding: 12px 16px; margin: 0 0 16px;
         }
-        /* ===== 态度词：CSS 多栏自动填满（renderAttitude 输出 .att-flow）=====
-           条目+标题按顺序流式铺栏，自动占满宽度不留右侧大空；条目/标题不跨栏断行。 */
-        .att-flow { column-width: 300px; column-gap: 18px; }
-        .att-title {
-            font-size: 1rem; font-weight: 700; color: var(--c);
-            margin: 4px 0 8px; padding-left: 10px; border-left: 4px solid var(--c);
-            break-inside: avoid; -webkit-column-break-inside: avoid;
-        }
-        .att-flow > .att-title:first-child { margin-top: 0; }
-        .att-sub-title {
-            font-size: 0.92rem; font-weight: 600; color: var(--text);
-            margin: 10px 0 6px; padding-left: 10px; border-left: 3px solid var(--c);
-            break-inside: avoid; -webkit-column-break-inside: avoid;
-        }
-        /* 置顶：让指定大标题/子标题开新栏、顶到栏首（其它照常） */
-        .att-title-top, .att-sub-title-top { break-before: column; -webkit-column-break-before: always; }
-        .att-flow > .leaf-row { break-inside: avoid; -webkit-column-break-inside: avoid; margin: 0 0 6px; }
-        @media (max-width: 640px) {
-            .att-flow { column-width: auto; column-count: 1; }
-        }
         .mm-cols { display: flex; gap: 14px; align-items: flex-start; overflow-x: auto; padding-bottom: 10px; }
         .mm-col {
-            flex: 1 1 0; min-width: 260px; background: var(--card);
+            flex: 1 1 0; min-width: 250px; background: var(--card);
             border: 1px solid var(--border); border-top: 4px solid var(--c);
             border-radius: 12px; padding: 12px 14px;
         }
-        /* 拆分列：外层占 2 份宽度，内部子项铺成 2 列网格，各占一半 */
-        .mm-col-split { flex: 2 1 0; min-width: 540px; }
-        .mm-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .mm-split > .sub { margin-top: 0; }
-        /* full 块：占满 split 整行（跨两列），内部再拆两列，用于把长清单塞进列底部 */
-        .mm-full { grid-column: 1 / -1; margin-top: 6px; padding-top: 10px; border-top: 1px dashed var(--border); }
-        .mm-full > .sub-title { margin-top: 0; }
-        .mm-full .mm-split { margin-top: 2px; }
         .mm-col-head {
             font-size: 1.02rem; font-weight: 700; color: var(--c);
             margin: 0 0 10px; padding-bottom: 8px; border-bottom: 2px solid var(--c);
         }
         .branch-body { display: flex; flex-direction: column; gap: 8px; }
-        .sub { margin-top: 4px; }
-        .sub-title {
-            font-size: 0.92rem; font-weight: 600; color: var(--text);
-            padding-left: 10px; border-left: 3px solid var(--c); margin: 10px 0 8px;
-        }
-        .sub .branch-body { gap: 6px; }
         .leaf-row {
             font-size: 0.9rem; line-height: 1.55; color: var(--text);
             padding: 7px 11px; border-radius: 8px; background: var(--bg);
@@ -99,8 +65,8 @@
                 <a href="favorites.html" class="nav-link">句子收藏</a>
                 <a href="en1.html" class="nav-link">英语一阅读</a>
                 <a href="chain.html" class="nav-link">串联词汇</a>
-                <a href="mindmap.html" class="nav-link active">方法导图</a>
-                <a href="nearmap.html" class="nav-link">近义词</a>
+                <a href="mindmap.html" class="nav-link">方法导图</a>
+                <a href="nearmap.html" class="nav-link active">近义词</a>
                 <a href="mistakes.html" class="nav-link">错题本</a>
                 <a href="suggestions.html" class="nav-link">建议</a>
             </div>
@@ -113,8 +79,8 @@
     </nav>
 
     <main class="mm-page">
-        <h1 class="mm-page-title">考研阅读方法导图</h1>
-        <p class="scroll-hint">态度词两排展示（上排：真题零中选两栏；下排：符合价值观/感情色彩/模糊的） · 阅读一张纸向右横滑 · 题型/实测列内部双列</p>
+        <h1 class="mm-page-title">选项高频近义词</h1>
+        <p class="scroll-hint">词全部取自 36 年真题（英二 2007–2026 + 英一 2010–2025）阅读 / 完形 / 新题型选项 · 按意思相近成簇 · 词频 = 在选项文本中出现的次数 · 向右横滑查看更多</p>
         <div class="mm-tools">
             <span class="mm-tools-tip">点任意条目即高亮标记 · 再点取消</span>
             <button type="button" class="mm-clear-btn" onclick="clearHighlights()">清除高亮</button>
@@ -123,6 +89,6 @@
     </main>
 
     <script src="js/common.js"></script>
-    <script src="js/mindmap.js"></script>
+    <script src="js/nearmap.js"></script>
 </body>
 </html>
