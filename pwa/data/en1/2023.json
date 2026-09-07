@@ -16,14 +16,64 @@
      "en": "The weather in Texas may have cooled since the recent extreme heat, but the\ntemperature will be high at the State Board of Education meeting in Austin this month\nas officials debate how climate change is taught in Texas schools.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The weather in Texas"
+       },
+       {
+        "r": "谓语",
+        "t": "may have cooled since the recent extreme heat,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "the temperature"
+       },
+       {
+        "r": "谓语",
+        "t": "will be high at the State Board of Education meeting in Austin this month"
+       },
+       {
+        "r": "状语从句",
+        "t": "as officials debate how climate change is taught in Texas schools."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Pat Hardy, who sympathises with the views of the energy sector, is resisting\nproposed changes to science standards for pre-teen pupils. u There are as many scientists\nworking against all the panic of global climate change as there are those who are\npushing it,“ she claims. \"Texas is an energy state and we need to recognise that.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Pat Hardy, who sympathises with the views of the energy sector,"
+       },
+       {
+        "r": "谓语",
+        "t": "is resisting proposed changes to science standards for pre-teen pupils."
+       },
+       {
+        "r": "宾语从句",
+        "t": "u There are as many scientists working against all the panic of global climate change as there are those who are pushing it,“ she claims."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"Texas is an energy state and we need to recognise that."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -37,49 +87,172 @@
      "en": "Board members like her\n“ casually dismiss the career work of scholars and scientists as just another misguided\nopinion,v says Dan Quinn, senior communications strategist at the Texas Freedom\nNetwork, a non-profit group that monitors public education.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Board members like her"
+       },
+       {
+        "r": "谓语",
+        "t": "“ casually dismiss the career work of scholars and scientists as just another misguided opinion,v"
+       },
+       {
+        "r": "插入语",
+        "t": "says Dan Quinn, senior communications strategist at the Texas Freedom Network, a non-profit group that monitors public education."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Such debates reflect fierce discussions across the US, as researchers, policymakers,\nteachers and students step up demands for a greater focus on teaching about the facts of\nclimate change in schools.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Such debates"
+       },
+       {
+        "r": "谓语",
+        "t": "reflect fierce discussions across the US,"
+       },
+       {
+        "r": "状语从句",
+        "t": "as researchers, policymakers, teachers and students step up demands for a greater focus on teaching about the facts of climate change in schools."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "A study last year by the National Center for Science Education, a non-profit group\nof scientists and teachers, looking at how state public schools across the country address\nclimate change in science classes, gave barely half of US states a grade B+ or higher.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A study last year by the National Center for Science Education, a non-profit group of scientists and teachers,"
+       },
+       {
+        "r": "定语",
+        "t": "looking at how state public schools across the country address climate change in science classes,"
+       },
+       {
+        "r": "谓语",
+        "t": "gave barely half of US states a grade B+ or higher."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Among the 10 worst performers were some of the most populous states, including\nTexas, which was given the lowest grade (F) and has a disproportionate influence\nbecause its textbooks are widely sold elsewhere.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Among the 10 worst performers"
+       },
+       {
+        "r": "谓语",
+        "t": "were"
+       },
+       {
+        "r": "主语",
+        "t": "some of the most populous states, including Texas, which was given the lowest grade (F) and has a disproportionate influence"
+       },
+       {
+        "r": "原因状语从句",
+        "t": "because its textbooks are widely sold elsewhere."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Glenn Branch, the centre's deputy director, cautions that setting state-level science\nstandards is only one limited benchmark in a country that decentralises decisions to local\nschool boards.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Glenn Branch, the centre's deputy director,"
+       },
+       {
+        "r": "谓语",
+        "t": "cautions"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that setting state-level science standards is only one limited benchmark in a country that decentralises decisions to local school boards."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Even if a state is considered a high performer in its science standards,\n“that does not mean it will be taught\"，he says.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "让步状语从句",
+        "t": "Even if a state is considered a high performer in its science standards,"
+       },
+       {
+        "r": "宾语从句",
+        "t": "“that does not mean it will be taught\"，he says."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Another issue is that while climate change is well integrated into some subjects and\nat some ages- such as earth and space sciences in high schools- it is not as well\nrepresented in curricula for younger children and in subjects that are more widely taught,\nsuch as biology and chemistry.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Another issue"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语从句",
+        "t": "that while climate change is well integrated into some subjects and at some ages- such as earth and space sciences in high schools- it is not as well represented in curricula for younger children and in subjects that are more widely taught,"
+       },
+       {
+        "r": "举例",
+        "t": "such as biology and chemistry."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -93,7 +266,24 @@
      "en": "Branch points out that, even if a growing number of official guidelines and\ntextbooks reflect scientific consensus on climate change, unofficial educational materials\nthat convey more slanted perspectives are being distributed to teachers.",
      "cn": "得克萨斯州（以下简称得州）的天气自近期的极端高温之后可能已有所转凉，但本月在奥斯汀举行的州教育委员会的会议将会热火朝天，这是因为官员们将就得州学校如何讲授气候变化的知识展开争论。",
      "id": "en1_2023_text1_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Branch"
+       },
+       {
+        "r": "谓语",
+        "t": "points out"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that, even if a growing number of official guidelines and textbooks reflect scientific consensus on climate change, unofficial educational materials that convey more slanted perspectives are being distributed to teachers."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -246,70 +436,296 @@
      "en": "Communities throughout New England have been attempting to regulate short-term\nrentals since sites like Airbnb took off in the 2010s.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Communities throughout New England"
+       },
+       {
+        "r": "谓语",
+        "t": "have been attempting to regulate short-term rentals"
+       },
+       {
+        "r": "时间状语从句",
+        "t": "since sites like Airbnb took off in the 2010s."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Now, with record-high home prices\nand historically low inventory, there's an increased urgency in such regulation,\nparticularly among those who worry that developers will come in and buy up swaths of\nhousing to flip for a fortune on the short-term rental market.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Now, with record-high home prices and historically low inventory,"
+       },
+       {
+        "r": "谓语",
+        "t": "there's"
+       },
+       {
+        "r": "主语",
+        "t": "an increased urgency in such regulation, particularly among those who worry that developers will come in and buy up swaths of housing to flip for a fortune on the short-term rental market."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In New Hampshire, where the rental vacancy rate has dropped below 1 percent,\nhousing advocates fear unchecked short-term rentals will put further pressure on an\nalready strained market.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In New Hampshire, where the rental vacancy rate has dropped below 1 percent,"
+       },
+       {
+        "r": "主语",
+        "t": "housing advocates"
+       },
+       {
+        "r": "谓语",
+        "t": "fear"
+       },
+       {
+        "r": "宾语从句",
+        "t": "unchecked short-term rentals will put further pressure on an already strained market."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The state Legislature recently voted against a bill that wouldVe\nmade it illegal for towns to create legislation restricting short-term rentals.\n“We are at a crisis level on the supply of rental housing,said Nick Taylor,\nexecutive director of the Workforce Housing Coalition of the Greater Seacoast.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The state Legislature"
+       },
+       {
+        "r": "谓语",
+        "t": "recently voted against a bill that wouldVe made it illegal for towns to create legislation restricting short-term rentals."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“We are at a crisis level on the supply of rental housing,said Nick Taylor,"
+       },
+       {
+        "r": "同位语",
+        "t": "executive director of the Workforce Housing Coalition of the Greater Seacoast."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Without\nenough affordable housing in southern New Hampshire towns, u employers are having a\nhard time attracting employees, and workers are having a hard time finding a place to\nlive,“ Taylor said.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Without enough affordable housing in southern New Hampshire towns,"
+       },
+       {
+        "r": "主语",
+        "t": "u employers"
+       },
+       {
+        "r": "谓语",
+        "t": "are having a hard time attracting employees,"
+       },
+       {
+        "r": "并列",
+        "t": "and"
+       },
+       {
+        "r": "主语",
+        "t": "workers"
+       },
+       {
+        "r": "谓语",
+        "t": "are having a hard time finding a place to live,“ Taylor said."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "However, short-term rentals also provide housing for tourists, pointed out Ryan\nCastle, CEO of a local association of realtors. 66 A lot of workers are servicing the tourist\nindustry, and the tourism industry is serviced by those people coming in short term,”\nCastle said, “and so it's a cyclical effect.”\nShort-term rentals themselves are not the crux of the issue, said Keren Hom, an\nexpert on affordable housing policy. \"I think individuals being able to rent out their\nsecond home is a good thing.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "However,"
+       },
+       {
+        "r": "主语",
+        "t": "short-term rentals"
+       },
+       {
+        "r": "谓语",
+        "t": "also provide housing for tourists,"
+       },
+       {
+        "r": "插入语",
+        "t": "pointed out Ryan Castle, CEO of a local association of realtors."
+       },
+       {
+        "r": "宾语从句",
+        "t": "66 A lot of workers are servicing the tourist industry, and the tourism industry is serviced by those people coming in short term,” Castle said, “and so it's a cyclical effect.”"
+       },
+       {
+        "r": "主语",
+        "t": "Short-term rentals themselves"
+       },
+       {
+        "r": "谓语",
+        "t": "are not the crux of the issue,"
+       },
+       {
+        "r": "插入语",
+        "t": "said Keren Hom, an expert on affordable housing policy."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"I think individuals being able to rent out their second home is a good thing."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "If ifs their vacation home anyway, and it's just empty,\nwhy can't you make money off it?” Hom said.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If ifs their vacation home anyway, and it's just empty,"
+       },
+       {
+        "r": "副词",
+        "t": "why"
+       },
+       {
+        "r": "谓语",
+        "t": "can't you make money off it?” Hom said."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Issues arise, however, when developers\nattempt to create large-scale short-term rental facilities- de facto hotels- to bypass\ntaxes and regulations. \"I think the question is, shouldn't a developer who's really\nbuilding a hotel, but disguising it as not a hotel, be treated and taxed and regulated like\na hotel?,, Hom said.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Issues"
+       },
+       {
+        "r": "谓语",
+        "t": "arise, however,"
+       },
+       {
+        "r": "时间状语从句",
+        "t": "when developers attempt to create large-scale short-term rental facilities- de facto hotels- to bypass taxes and regulations."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"I think the question is, shouldn't a developer who's really building a hotel, but disguising it as not a hotel, be treated and taxed and regulated like a hotel?,, Hom said."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "At the end of 2018, Governor Charlie Baker of Massachusetts signed a bill to rein\nin those potential investor-buyers.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "At the end of 2018,"
+       },
+       {
+        "r": "主语",
+        "t": "Governor Charlie Baker of Massachusetts"
+       },
+       {
+        "r": "谓语",
+        "t": "signed a bill to rein in those potential investor-buyers."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The bill requires every rental host to register with the\nstate, mandates they carry insurance, and opens the potential for local taxes on top of a\nnew state levy.",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The bill"
+       },
+       {
+        "r": "谓语",
+        "t": "requires every rental host to register with the state,"
+       },
+       {
+        "r": "并列",
+        "t": "mandates they carry insurance,"
+       },
+       {
+        "r": "并列词",
+        "t": "and"
+       },
+       {
+        "r": "谓语",
+        "t": "opens the potential for local taxes on top of a new state levy."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -323,7 +739,36 @@
      "en": "Hom said similar registration requirements could benefit struggling cities and\ntowns, but “if we want to make a change in the housing market, the main one is we\nhave to build a lot more.”\n英语（一）试题.5 .\n（共1 4 页）",
      "cn": "自从爱彼迎等网站在21世纪的第二个十年间兴起以来，整个新英格兰地区的各个社区就一直在试图对短租市场实行管控。如今房价创历史新高而库存处历史低位的情形之下，这种管控需求愈发紧迫，尤其是对于那些担心开发商会趁机而入、买下成片住房并迅速租售，以求在短租市场上大捞一笔的人而言，紧迫性更甚。",
      "id": "en1_2023_text2_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Hom"
+       },
+       {
+        "r": "谓语",
+        "t": "said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "similar registration requirements could benefit struggling cities and towns,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "宾语从句",
+        "t": "“if we want to make a change in the housing market, the main one is we have to build a lot more.”"
+       },
+       {
+        "r": "页标记",
+        "t": "英语（一）试题.5 . （共1 4 页）"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -469,49 +914,196 @@
      "en": "If you're heading for your nearest branch of Waterstones, the biggest book retailer\nin the UK, in search of the Duchess of Sussex's new children's book The Bench, you\nmight have to be prepared to hunt around a bit; the same may be true of The President's\nDaughter, the new thriller by Bill Clinton and James Patterson.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If you're heading for your nearest branch of Waterstones, the biggest book retailer in the UK, in search of the Duchess of Sussex's new children's book The Bench,"
+       },
+       {
+        "r": "主语",
+        "t": "you"
+       },
+       {
+        "r": "谓语",
+        "t": "might have to be prepared to hunt around a bit;"
+       },
+       {
+        "r": "并列",
+        "t": "the same may be true of The President's Daughter, the new thriller by Bill Clinton and James Patterson."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Both of these books are\npublished next week by Penguin Random House (PRH), a company currently involved\nin a stand-off with Waterstones.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Both of these books"
+       },
+       {
+        "r": "谓语",
+        "t": "are published next week by Penguin Random House (PRH), a company currently involved in a stand-off with Waterstones."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The problem began late last year, when PRH confirmed that it had introduced a\ncredit limit with Waterstones “ at a very significant le v e l.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The problem"
+       },
+       {
+        "r": "谓语",
+        "t": "began late last year,"
+       },
+       {
+        "r": "定语从句",
+        "t": "when PRH confirmed that it had introduced a credit limit with Waterstones “ at a very significant le v e l."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The trade magazine The\nBookseller reported that Waterstones branch managers were being told to remove PRH\nbooks from prominent areas such as tables, display spaces and windows, and were\nu quietly retiring them to their relevant sections”.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The trade magazine The Bookseller"
+       },
+       {
+        "r": "谓语",
+        "t": "reported"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that Waterstones branch managers were being told to remove PRH books from prominent areas such as tables, display spaces and windows, and were u quietly retiring them to their relevant sections”."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "PRH declined to comment on the issue, but a spokesperson for Waterstones told\nme: “ Waterstones are currently operating with reduced credit terms from PRH, the only\npublisher in the UK to place any limitations on our ability to trade.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "PRH"
+       },
+       {
+        "r": "谓语",
+        "t": "declined to comment on the issue,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "a spokesperson for Waterstones"
+       },
+       {
+        "r": "谓语",
+        "t": "told me: “ Waterstones are currently operating with reduced credit terms from PRH, the only publisher in the UK to place any limitations on our ability to trade."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "We are not\nboycotting PRH titles but we are doing our utmost to ensure that availability for\ncustomers remains good despite the lower overall levels of stock.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "We"
+       },
+       {
+        "r": "谓语",
+        "t": "are not boycotting PRH titles"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "we"
+       },
+       {
+        "r": "谓语",
+        "t": "are doing our utmost to ensure that availability for customers remains good despite the lower overall levels of stock."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "We are hopeful with\nour shops now open again that normality will return and that we will be allowed to buy\nappropriately.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "We"
+       },
+       {
+        "r": "谓语",
+        "t": "are hopeful"
+       },
+       {
+        "r": "状语",
+        "t": "with our shops now open again"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that normality will return"
+       },
+       {
+        "r": "并列",
+        "t": "and"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that we will be allowed to buy appropriately."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -525,35 +1117,172 @@
      "en": "The sales for our May Books\nof the Month surpassed any month since 2018.”\nIn the meantime, PRH authors have been the losers.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The sales for our May Books of the Month"
+       },
+       {
+        "r": "谓语",
+        "t": "surpassed any month since 2018.”"
+       },
+       {
+        "r": "状语",
+        "t": "In the meantime,"
+       },
+       {
+        "r": "主语",
+        "t": "PRH authors"
+       },
+       {
+        "r": "谓语",
+        "t": "have been the losers."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Big-name PRH authors may\nsuffer a bit, but ifs those mid-list authors, who normally rely on Waterstones staffs\npassion for promoting books by lesser-known writers, who will be praying for an end to\nthe dispute.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Big-name PRH authors"
+       },
+       {
+        "r": "谓语",
+        "t": "may suffer a bit,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "ifs those mid-list authors,"
+       },
+       {
+        "r": "定语从句",
+        "t": "who normally rely on Waterstones staffs passion for promoting books by lesser-known writers,"
+       },
+       {
+        "r": "谓语",
+        "t": "who will be praying for an end to the dispute."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It comes at a time when authors are already worried about the consequences of the\nproposed merger between PRH and another big publisher, Simon & Schuster- the\nreduction in the number of unaligned UK publishers is likely to lead to fewer bidding\nwars, lower advances, and more conformity in terms of what is published.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "comes at a time"
+       },
+       {
+        "r": "定语从句",
+        "t": "when authors are already worried about the consequences of the proposed merger between PRH and another big publisher, Simon & Schuster- the reduction in the number of unaligned UK publishers is likely to lead to fewer bidding wars, lower advances, and more conformity in terms of what is published."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "This is all part of a wider change towards concentration of power,“ says literary\nagent Andrew Lownie. \" The publishing industry talks about diversity in terms of\nauthors and staff but it also needs a plurality of ways of delivering intellectual contact,\nchoice and different voices.",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This"
+       },
+       {
+        "r": "谓语",
+        "t": "is all part of a wider change towards concentration of power,“"
+       },
+       {
+        "r": "插入语",
+        "t": "says literary agent Andrew Lownie."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\" The publishing industry talks about diversity in terms of authors and staff"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "also needs a plurality of ways of delivering intellectual contact, choice and different voices."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "After all, many of the most interesting books in recent years\nhave come from small publishers/J\nWe shall see whether that plurality is a casualty of the current need among\npublishers to be big enough to take on all-comers.\n英语（一）试题.7 .\n（共1 4 页）",
      "cn": "你如果打算前往水石书店（英国最大的图书零售商）最近的分店去寻找苏塞克斯公爵夫人刚出版的儿童读物《长椅》，那可能要做好在书店找上一阵子的准备；对于比尔•克林顿和詹姆斯・帕特森合写的新惊悚小说《总统的女儿》，可能也会是如此情形。这两本书都将由企鹅兰登书屋于下周出版发行，而该公司目前与水石书店正处于对峙状态。",
      "id": "en1_2023_text3_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "After all,"
+       },
+       {
+        "r": "主语",
+        "t": "many of the most interesting books in recent years"
+       },
+       {
+        "r": "谓语",
+        "t": "have come from small publishers/J"
+       },
+       {
+        "r": "主语",
+        "t": "We"
+       },
+       {
+        "r": "谓语",
+        "t": "shall see"
+       },
+       {
+        "r": "宾语从句",
+        "t": "whether that plurality is a casualty of the current need among publishers to be big enough to take on all-comers."
+       },
+       {
+        "r": "页标记",
+        "t": "英语（一）试题.7 . （共1 4 页）"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -713,42 +1442,136 @@
      "en": "The scientific\ncommunity measures the quality of those papers in a number of ways, including the\nperceived quality of the journal (as reflected by the title's impact factor) and the number\nof citations a specific paper accumulates.",
      "cn": "二",
      "id": "en1_2023_text4_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The scientific community"
+       },
+       {
+        "r": "谓语",
+        "t": "measures the quality of those papers in a number of ways, including the perceived quality of the journal (as reflected by the title's impact factor) and the number of citations a specific paper accumulates."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The careers of scientists and the reputation of\ntheir institutions depend on the number and prestige of the papers they produce, but\neven more so on the citations attracted by these papers.",
      "cn": "二",
      "id": "en1_2023_text4_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The careers of scientists and the reputation of their institutions"
+       },
+       {
+        "r": "谓语",
+        "t": "depend on the number and prestige of the papers they produce,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "谓语",
+        "t": "even more so on the citations attracted by these papers."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Citation cartels, where journals, authors, and institutions conspire to inflate citation\nnumbers, have existed for a long time.",
      "cn": "二",
      "id": "en1_2023_text4_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Citation cartels, where journals, authors, and institutions conspire to inflate citation numbers,"
+       },
+       {
+        "r": "谓语",
+        "t": "have existed for a long time."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In 2016, researchers developed an algorithm to\nrecognize \nsuspicious \ncitation \npatterns, \nincluding \ngroups \nof \nauthors \nthat\ndisproportionately cite one another and groups of journals that cite each other frequently\nto increase the impact factors of their publications.",
      "cn": "二",
      "id": "en1_2023_text4_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "In 2016,"
+       },
+       {
+        "r": "主语",
+        "t": "researchers"
+       },
+       {
+        "r": "谓语",
+        "t": "developed an algorithm to recognize suspicious citation patterns, including groups of authors that disproportionately cite one another and groups of journals that cite each other frequently to increase the impact factors of their publications."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Recently, another expression of this\npredatory behavior has emerged: so-called support service consultancies that provide\nlanguage and other editorial support to individual authors and to journals sometimes\nadvise contributors to add a number of citations to their articles.",
      "cn": "二",
      "id": "en1_2023_text4_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Recently,"
+       },
+       {
+        "r": "主语",
+        "t": "another expression of this predatory behavior"
+       },
+       {
+        "r": "谓语",
+        "t": "has emerged: so-called support service consultancies that provide language and other editorial support to individual authors and to journals sometimes advise contributors to add a number of citations to their articles."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The advent of electronic publishing and authors9 need to find outlets for their\npapers resulted in thousands of new journals.",
      "cn": "二",
      "id": "en1_2023_text4_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The advent of electronic publishing and authors9 need to find outlets for their papers"
+       },
+       {
+        "r": "谓语",
+        "t": "resulted in thousands of new journals."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -762,7 +1585,24 @@
      "en": "These journals can act as milk cows where every single article in an issue may\ncite a specific paper or a series of papers.",
      "cn": "二",
      "id": "en1_2023_text4_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "These journals"
+       },
+       {
+        "r": "谓语",
+        "t": "can act as milk cows"
+       },
+       {
+        "r": "定语从句",
+        "t": "where every single article in an issue may cite a specific paper or a series of papers."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -776,14 +1616,44 @@
      "en": "The peculiar part is that\nthe journal that the editor is supposedly working for is not profiting at all- it is just\nproviding citations to other journals.",
      "cn": "二",
      "id": "en1_2023_text4_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The peculiar part"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语从句",
+        "t": "that the journal that the editor is supposedly working for is not profiting at all- it is just providing citations to other journals."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Such practices can lead an article to accrue more\nthan 150 citations in the same year that it was published.",
      "cn": "二",
      "id": "en1_2023_text4_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Such practices"
+       },
+       {
+        "r": "谓语",
+        "t": "can lead an article to accrue more than 150 citations in the same year that it was published."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -797,21 +1667,68 @@
      "en": "In one example, an\nindividual—acting as author, editor, and consultant—was able to use at least 15 journals\nas citation providers to articles published by five scientists at three universities.",
      "cn": "二",
      "id": "en1_2023_text4_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In one example,"
+       },
+       {
+        "r": "主语",
+        "t": "an individual—acting as author, editor, and consultant—"
+       },
+       {
+        "r": "谓语",
+        "t": "was able to use at least 15 journals as citation providers to articles published by five scientists at three universities."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The\nproblem is rampant in Scopus, a citation database, which includes a high number of the\nnew “international“ journals.",
      "cn": "二",
      "id": "en1_2023_text4_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The problem"
+       },
+       {
+        "r": "谓语",
+        "t": "is rampant in Scopus, a citation database, which includes a high number of the new “international“ journals."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In fact, a listing in Scopus seems to be a criterion to be\ntargeted in this type of citation manipulation.",
      "cn": "二",
      "id": "en1_2023_text4_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In fact,"
+       },
+       {
+        "r": "主语",
+        "t": "a listing in Scopus"
+       },
+       {
+        "r": "谓语",
+        "t": "seems to be a criterion to be targeted in this type of citation manipulation."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -832,7 +1749,32 @@
      "en": "And for authors who wish\nto steer clear of citation cartel activities: when an editor, a reviewer, or a support service\nasks you to add inappropriate references, do not oblige and do report the request to the\njournal.\n英语（一）试题. 9\n. （共14页）",
      "cn": "二",
      "id": "en1_2023_text4_s20",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "And for authors who wish to steer clear of citation cartel activities:"
+       },
+       {
+        "r": "时间状语从句",
+        "t": "when an editor, a reviewer, or a support service asks you to add inappropriate references,"
+       },
+       {
+        "r": "谓语",
+        "t": "do not oblige"
+       },
+       {
+        "r": "并列",
+        "t": "and do report the request to the journal."
+       },
+       {
+        "r": "页标记",
+        "t": "英语（一）试题. 9 . （共14页）"
+       }
+      ]
+     }
     }
    ],
    "questions": [
