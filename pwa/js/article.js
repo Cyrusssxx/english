@@ -1129,7 +1129,7 @@ function ntGoto(qid) {
 }
 
 function questionHtml(q) {
-    const isCloze = article.type === 'cloze';
+    const isCompact = article.type === 'cloze' || article.type === 'newtype';
     const opts = (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});
     const optsCn = (q.options_cn && Object.keys(q.options_cn).length) ? q.options_cn : (article.pool_cn || {});
     const optRows = Object.keys(opts).map(k => `
@@ -1137,11 +1137,11 @@ function questionHtml(q) {
             <div class="opt-en">${k}. ${quizTextHtml(opts[k], q.id)}</div>
             ${optsCn[k] ? `<div class="opt-cn">${esc(optsCn[k])}</div>` : ''}
         </div>`).join('');
-    return `<div class="qblock${isCloze ? ' cloze-q' : ''}" id="q-${q.id}">
+    return `<div class="qblock${isCompact ? ' cloze-q' : ''}" id="q-${q.id}">
         <div class="q-head"><span class="q-no">Q${q.number}</span>${q.qtype ? `<span class="q-type-badge">${esc(qtypeCn(q.qtype))}</span>` : ''}</div>
-        ${!isCloze ? `<div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
+        ${!isCompact ? `<div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
         ${q.stem_cn ? `<div class="q-stem-cn">${esc(q.stem_cn)}</div>` : ''}` : ''}
-        ${isCloze ? `<div class="cloze-opts">${optRows}</div>` : optRows}
+        ${isCompact ? `<div class="cloze-opts nt-opts">${optRows}</div>` : optRows}
         <div id="expl-${q.id}"></div>
     </div>`;
 }
@@ -1182,13 +1182,12 @@ function showResult(q, userKey, scrollToRelated) {
     }
     const expl = document.getElementById(`expl-${q.id}`);
     if (expl) {
-        if (article.type === 'cloze') {
-            // 完形：紧凑一行（答案+展开按钮），详细解析折叠；无需定位原文（空位即原文）
+        if (article.type === 'cloze' || article.type === 'newtype') {
+            // 完形/新题型：紧凑一行（答案+展开按钮），详细解析与技巧折叠收起；无需定位原文（空位/空位卡即原文）
             expl.innerHTML = `<div class="q-expl">
             <span class="expl-tag">${ok ? '✔ 回答正确' : '✘ 回答错误'} · 答案 ${q.answer}</span>
             <button class="expl-fold" id="explfold-${q.id}" onclick="toggleExplFold('${q.id}')">展开解析 ▾</button>
-            <div class="expl-body" id="explbody-${q.id}" hidden>${esc(q.explanation || '')}</div>
-            ${q.tip ? `<div class="q-tip">💡 技巧　${esc(q.tip)}</div>` : ''}
+            <div class="expl-body" id="explbody-${q.id}" hidden>${esc(q.explanation || '')}${q.tip ? `<div class="q-tip">💡 技巧　${esc(q.tip)}</div>` : ''}</div>
         </div>`;
         } else {
             expl.innerHTML = `${q.quick ? `<div class="q-quick">📌 考题速览　${esc(q.quick)}</div>` : ''}
@@ -1211,7 +1210,7 @@ function showResult(q, userKey, scrollToRelated) {
             blank.classList.add(ok ? 'filled-right' : 'filled-wrong');
         }
     }
-    if (scrollToRelated && (q.related_sentences || []).length) locateRelated(q.id);
+    if (scrollToRelated && (q.related_sentences || []).length && article.type !== 'cloze' && article.type !== 'newtype') locateRelated(q.id);
 }
 
 /** 高亮题目关联句并滚动定位；再次点击同题按钮则取消高亮 */

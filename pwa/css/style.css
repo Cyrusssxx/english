@@ -2895,3 +2895,9 @@ html.dark .q-tip {
 }
 .expl-fold:hover { border-color: var(--primary); color: var(--primary); }
 .expl-body { margin-top: 8px; line-height: 1.7; }
+
+/* ===== 新题型紧凑版式（与完形共用网格 + 自适应列宽） ===== */
+.nt-opts { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+.nt-opts .q-opt { padding: 6px 8px; }
+.nt-opts .opt-en { font-size: 0.85rem; }
+.nt-opts .opt-cn { font-size: 0.74rem; }
