@@ -1,5 +1,12 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-07 优化] 近义词图扩簇 + 卡片网格排版
+
+- 簇 14 → 21（新增 促进增强 / 减轻缓解(reduce/decline/ease/relieve) / 削弱阻止 / 原因结果(lead/result/reason/cause) / 代替选择 / 连接·过渡(rather than/even if/as to) / 因果·由来(in that/due to/lead to/owing to)），条目 59 → 101。
+- 排版：横向横滑列 → 响应式卡片网格（桌面 2~3 列、手机单列，auto-fill minmax 300px），长簇不再需要横滑。
+- 高亮 key（nm_highlights_v1）与叶子文本不变，旧点亮全兼容。
+- jsdom 验证：21 卡 101 条/新簇/in that 加粗/点亮/旧高亮恢复全通过。SW en2-xxx。
+
 ## [2026-09-07 新模块] 选项高频近义词点亮图（nearmap.html）
 
 - 仿方法导图交互：点条目点亮（黄色）、再点取消、localStorage `nm_highlights_v1` 持久化（与导图 key 隔离）。
