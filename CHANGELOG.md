@@ -1,5 +1,10 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-07 优化] struct 结构树配色：主干改淡紫、整体调淡
+
+- 主干(.st-t) 淡绿 → 淡紫（浅 #EDE8F9/#5B3E96，深 #3B2E63/#C9B8F0）；从句(.st-c) 与修饰(.st-m) 一并调淡但文字保持对比度。
+- jsdom 验证结构树三类渲染与 sig-lead 引导词高亮正常。SW en2-xxx。
+
 ## [2026-09-07 修复] SW 更新自动刷新不再“莫名”：controllerchange 加提示条
 
 - **根因**：storage.js 的 controllerchange 检测到新版 SW 时无条件 location.reload()，时机与用户操作（如点「全文翻译」）撞上，误以为按钮触发刷新。
