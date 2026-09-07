@@ -702,22 +702,36 @@ html.dark .sent.related {
     color: var(--warning);
 }
 
-/* 译文区：默认为“点击查看翻译”占位条，.open 后原位显示译文 */
+/* 译文区：默认为“点击查看翻译”占位条（淡化），.open 后原位显示译文 */
 .sent-cn {
-    background: var(--primary-soft);
-    border-radius: 8px;
-    padding: 9px 12px;
-    margin: 6px 0 10px;
+    background: transparent;
+    border: 1px dashed rgba(128, 128, 128, 0.28);
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin: 4px 0 7px;
     cursor: pointer;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    transition: border-color 0.15s, background 0.15s;
 }
 
 .sent-cn .cn-placeholder {
     display: block;
     text-align: center;
     color: var(--text-light);
-    font-size: 0.85rem;
+    opacity: 0.55;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
     user-select: none;
+    transition: opacity 0.15s;
+}
+
+.sent-cn:hover .cn-placeholder {
+    opacity: 0.95;
+}
+
+.sent-cn.open {
+    background: var(--primary-soft);
+    border-color: transparent;
 }
 
 .sent-cn .cn-text {
