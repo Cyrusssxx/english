@@ -16,7 +16,28 @@
      "en": "Among the annoying challenges facing the middle class is one that will probably \ngo unmentioned in the next presidential campaign: What happens when the robots \ncome for their jobs?",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。",
      "id": "en1_2018_text1_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "表语",
+        "t": "Among the annoying challenges facing the middle class"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "主语",
+        "t": "one that will probably go unmentioned in the next presidential campaign:"
+       },
+       {
+        "r": "并列",
+        "t": "What happens when the robots come for their jobs?"
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -30,7 +51,20 @@
      "en": "About half of U.S. jobs are at high risk of \nbeing automated, according to a University of Oxford study, with the middle class \ndisproportionately squeezed.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "About half of U.S. jobs"
+       },
+       {
+        "r": "谓语",
+        "t": "are at high risk of being automated, according to a University of Oxford study, with the middle class disproportionately squeezed."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -44,7 +78,24 @@
      "en": "But many middle-class occupations - trucking, financial advice, \nsoftware engineering - have aroused their interest, or soon will.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "many middle-class occupations - trucking, financial advice, software engineering -"
+       },
+       {
+        "r": "谓语",
+        "t": "have aroused their interest, or soon will."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -72,14 +123,56 @@
      "en": "The Industrial Revolution didn't go so well for Luddites \nwhose jobs were displaced by mechanized looms, but it eventually raised living \nstandards and created more jobs than it destroyed.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The Industrial Revolution"
+       },
+       {
+        "r": "谓语",
+        "t": "didn't go so well for Luddites whose jobs were displaced by mechanized looms,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "eventually raised living standards and created more jobs than it destroyed."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Likewise, automation should \neventually boost productivity, stimulate demand by driving down prices, and free \nworkers from hard, boring work.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Likewise,"
+       },
+       {
+        "r": "主语",
+        "t": "automation"
+       },
+       {
+        "r": "谓语",
+        "t": "should eventually boost productivity, stimulate demand by driving down prices, and free workers from hard, boring work."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -93,14 +186,44 @@
      "en": "The first step, as Erik Brynjolfsson and Andrew McAfee argue in The Second \nMachine Age, should be rethinking education and job training.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The first step,"
+       },
+       {
+        "r": "插入语",
+        "t": "as Erik Brynjolfsson and Andrew McAfee argue in The Second Machine Age,"
+       },
+       {
+        "r": "谓语",
+        "t": "should be rethinking education and job training."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Curriculums - from \ngrammar school to college - should evolve to focus less on memorizing facts and \nmore on creativity and complex communication.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Curriculums - from grammar school to college -"
+       },
+       {
+        "r": "谓语",
+        "t": "should evolve to focus less on memorizing facts and more on creativity and complex communication."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -135,14 +258,44 @@
      "en": "The challenge of coping with automation underlines the need for the U.S. to \nrevive its fading business dynamism: Starting new companies must be made easier.",
      "cn": "分句谓语主语分互主语谓语",
      "id": "en1_2018_text1_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The challenge of coping with automation"
+       },
+       {
+        "r": "谓语",
+        "t": "underlines the need for the U.S. to revive its fading business dynamism: Starting new companies must be made easier."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In \nprevious eras of drastic technological change, entrepreneurs smoothed the transition \nby dreaming up ways to combine labor and machines.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "In previous eras of drastic technological change,"
+       },
+       {
+        "r": "主语",
+        "t": "entrepreneurs"
+       },
+       {
+        "r": "谓语",
+        "t": "smoothed the transition by dreaming up ways to combine labor and machines."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -163,21 +316,84 @@
      "en": "Finally, because automation threatens to widen the gap between capital income \nand labor income, taxes and the safety net will have to be rethought.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s22",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "副词",
+        "t": "Finally,"
+       },
+       {
+        "r": "原因状语从句",
+        "t": "because automation threatens to widen the gap between capital income and labor income,"
+       },
+       {
+        "r": "主语",
+        "t": "taxes and the safety net"
+       },
+       {
+        "r": "谓语",
+        "t": "will have to be rethought."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Taxes on \nlow-wage labor need to be cut, and wage subsidies such as the earned income tax \ncredit should be expanded: This would boost incomes, encourage work, reward \ncompanies for job creation, and reduce inequality.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s23",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Taxes on low-wage labor"
+       },
+       {
+        "r": "谓语",
+        "t": "need to be cut,"
+       },
+       {
+        "r": "并列",
+        "t": "and wage subsidies such as the earned income tax credit should be expanded: This would boost incomes, encourage work, reward companies for job creation, and reduce inequality."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Technology will improve society in ways big and small over the next few years, \nyet this will be little comfort to those who find their lives and careers upended by \nautomation.",
      "cn": "结构切分∶谓语引导词做主语状语定谱从句句子主干∶表语系动词主语同位语状语疑问代词做主语谓语特之处。冒号后问句指出挑战的具体内容。\n应对自动化这一挑战突显了美国恢的新公司。认准淘宝店铺∶光速考研工作室，赠送配套课程分句谓语主语分互主语谓语\n分句谓语主语分互主语谓语\n疯的，疯狂的）含强烈贬义，暗示中产阶级不大可能会有此极度不理智行为。\"不可或缺的，必不可少的\"）强调政策帮助的必不可少，反驳第一至三段所暗示的乐观主义心态\"挑战不存在，不值得关注\"。反、语义重点完全改变∶不能只乐观关注自动化的最终趋势\"使所有劳动者受益\"，还应认识到过渡阶段认准淘宝店铺∶光速考研工作室，赠送配套课程",
      "id": "en1_2018_text1_s24",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Technology"
+       },
+       {
+        "r": "谓语",
+        "t": "will improve society in ways big and small over the next few years,"
+       },
+       {
+        "r": "转折词",
+        "t": "yet"
+       },
+       {
+        "r": "主语",
+        "t": "this"
+       },
+       {
+        "r": "谓语",
+        "t": "will be little comfort to those who find their lives and careers upended by automation."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -312,14 +528,48 @@
      "en": "A new survey by Harvard University finds more than two-thirds of young \nAmericans disapprove of President Trump's use of Twitter.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A new survey by Harvard University"
+       },
+       {
+        "r": "谓语",
+        "t": "finds"
+       },
+       {
+        "r": "宾语从句",
+        "t": "more than two-thirds of young Americans disapprove of President Trump's use of Twitter."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The implication is that \nMillennials prefer news from the White House to be filtered through other sources, \nnot a president's social media platform.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The implication"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语从句",
+        "t": "that Millennials prefer news from the White House to be filtered through other sources, not a president's social media platform."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -333,7 +583,28 @@
      "en": "Yet as distrust has \nrisen toward all media, people may be starting to beef up their media literacy skills.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "Yet"
+       },
+       {
+        "r": "状语从句",
+        "t": "as distrust has risen toward all media,"
+       },
+       {
+        "r": "主语",
+        "t": "people"
+       },
+       {
+        "r": "谓语",
+        "t": "may be starting to beef up their media literacy skills."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -347,35 +618,112 @@
      "en": "During the 2016 presidential campaign, nearly a quarter \nof web content shared by Twitter users in the politically critical state of Michigan was \nfake news, according to the University of Oxford.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "During the 2016 presidential campaign,"
+       },
+       {
+        "r": "主语",
+        "t": "nearly a quarter of web content shared by Twitter users in the politically critical state of Michigan"
+       },
+       {
+        "r": "谓语",
+        "t": "was fake news, according to the University of Oxford."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "And a survey conducted for \nBuzzFeed News found 44 percent of Facebook users rarely or never trust news from \nthe media giant.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "And"
+       },
+       {
+        "r": "主语",
+        "t": "a survey conducted for BuzzFeed News"
+       },
+       {
+        "r": "谓语",
+        "t": "found 44 percent of Facebook users rarely or never trust news from the media giant."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Young people who are digital natives are indeed becoming more skillful at \nseparating fact from fiction in cyberspace.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Young people who are digital natives"
+       },
+       {
+        "r": "谓语",
+        "t": "are indeed becoming more skillful at separating fact from fiction in cyberspace."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "A Knight Foundation focus-group survey \nof young people between ages 14 and 24 found they use \"distributed trust\" to verify \nstories.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A Knight Foundation focus-group survey of young people between ages 14 and 24"
+       },
+       {
+        "r": "谓语",
+        "t": "found they use \"distributed trust\" to verify stories."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "They cross-check sources and prefer news from different perspectives -\nespecially those that are open about any bias. \"Many young people assume a great \ndeal of personal responsibility for educating themselves and actively seeking out \nopposing viewpoints,\" the survey concluded.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "They"
+       },
+       {
+        "r": "谓语",
+        "t": "cross-check sources and prefer news from different perspectives - especially those that are open about any bias."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"Many young people assume a great deal of personal responsibility for educating themselves and actively seeking out opposing viewpoints,\" the survey concluded."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -389,14 +737,44 @@
      "en": "A 2014 survey conducted in \nAustralia, Britain, and the United States by the University of Wisconsin-Madison \nfound that young people's reliance on social media led to greater political \nengagement.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A 2014 survey conducted in Australia, Britain, and the United States by the University of Wisconsin-Madison"
+       },
+       {
+        "r": "谓语",
+        "t": "found"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that young people's reliance on social media led to greater political engagement."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Social media allows users to experience news events more intimately and \nimmediately while also permitting them to re-share news as a projection of their \nvalues and interests.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Social media"
+       },
+       {
+        "r": "谓语",
+        "t": "allows users to experience news events more intimately and immediately while also permitting them to re-share news as a projection of their values and interests."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -410,28 +788,100 @@
      "en": "A survey by Barna research group found the top reason given by \nAmericans for the fake news phenomenon is \"reader error,\" more so than made-up \nstories or factual mistakes in reporting.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A survey by Barna research group"
+       },
+       {
+        "r": "谓语",
+        "t": "found the top reason given by Americans for the fake news phenomenon is \"reader error,\" more so than made-up stories or factual mistakes in reporting."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "About a third say the problem of fake news \nlies in \"misinterpretation or exaggeration of actual news\" via social media.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "About a third"
+       },
+       {
+        "r": "谓语",
+        "t": "say the problem of fake news lies in \"misinterpretation or exaggeration of actual news\" via social media."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In other \nwords, the choice to share news on social media may be the heart of the issue. \"This \nindicates there is a real personal responsibility in counteracting this problem,\" says \nRoxanne Stone, editor in chief at Barna Group.",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In other words,"
+       },
+       {
+        "r": "主语",
+        "t": "the choice to share news on social media"
+       },
+       {
+        "r": "谓语",
+        "t": "may be the heart of the issue."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"This indicates there is a real personal responsibility in counteracting this problem,\" says Roxanne Stone, editor in chief at Barna Group."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "So when young people are critical of an over-tweeting president, they reveal a \nmental discipline in thinking skills - and in their choices on when to share on social \nmedia. \n.5. \n(-3¾-14 yf)",
      "cn": "大多数美国人依赖社交媒体来查阅每",
      "id": "en1_2018_text2_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "结果状语",
+        "t": "So"
+       },
+       {
+        "r": "时间状语从句",
+        "t": "when young people are critical of an over-tweeting president,"
+       },
+       {
+        "r": "主语",
+        "t": "they"
+       },
+       {
+        "r": "谓语",
+        "t": "reveal a mental discipline in thinking skills - and in their choices on when to share on social media."
+       },
+       {
+        "r": "页标记",
+        "t": ".5. (-3¾-14 yf)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -577,7 +1027,20 @@
      "en": "Any fair-minded assessment of the dangers of the deal between Britain's \nNational Health Service (NHS) and DeepMind must start by acknowledging that both \nsides mean well.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Any fair-minded assessment of the dangers of the deal between Britain's National Health Service (NHS) and DeepMind"
+       },
+       {
+        "r": "谓语",
+        "t": "must start by acknowledging that both sides mean well."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -591,14 +1054,56 @@
      "en": "The potential of this work applied to healthcare is very great, \nbut it could also lead to further concentration of power in the tech giants.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The potential of this work applied to healthcare"
+       },
+       {
+        "r": "谓语",
+        "t": "is very great,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "could also lead to further concentration of power in the tech giants."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It is against \nthat background that the information commissioner, Elizabeth Denham, has issued her \ndamning verdict against the Royal Free hospital trust under the NHS, which handed \nover to DeepMind the records of 1.6 million patients in 2015 on the basis of a vague \nagreement which took far too little account of the patients' rights and their \nexpectations of privacy.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "is against that background"
+       },
+       {
+        "r": "定语从句",
+        "t": "that the information commissioner, Elizabeth Denham, has issued her damning verdict against the Royal Free hospital trust under the NHS, which handed over to DeepMind the records of 1.6 million patients in 2015 on the basis of a vague agreement which took far too little account of the patients' rights and their expectations of privacy."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -619,7 +1124,20 @@
      "en": "Further \narrangements - and there may be many - between the NHS and DeepMind will be \ncarefully scrutinised to ensure that all necessary permissions have been asked of \npatients and all unnecessary data has been cleaned.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Further arrangements - and there may be many - between the NHS and DeepMind"
+       },
+       {
+        "r": "谓语",
+        "t": "will be carefully scrutinised to ensure that all necessary permissions have been asked of patients and all unnecessary data has been cleaned."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -640,21 +1158,76 @@
      "en": "Ms Denham chose to concentrate the blame on the NHS trust, since \nunder existing law it \"controlled\" the data and DeepMind merely \"processed\" it.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Ms Denham"
+       },
+       {
+        "r": "谓语",
+        "t": "chose to concentrate the blame on the NHS trust,"
+       },
+       {
+        "r": "原因状语从句",
+        "t": "since under existing law it \"controlled\" the data and DeepMind merely \"processed\" it."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But \nthis distinction misses the point that it is processing and aggregation, not the mere \npossession of bits, that gives the data value.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "this distinction"
+       },
+       {
+        "r": "谓语",
+        "t": "misses the point"
+       },
+       {
+        "r": "定语从句",
+        "t": "that it is processing and aggregation, not the mere possession of bits, that gives the data value."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The great question is who should benefit from the analysis of all the data that our \nlives now generate.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The great question"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语从句",
+        "t": "who should benefit from the analysis of all the data that our lives now generate."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -675,7 +1248,20 @@
      "en": "The data of an individual there gains its value only when it is \ncompared with the data of countless millions more.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The data of an individual there"
+       },
+       {
+        "r": "谓语",
+        "t": "gains its value only when it is compared with the data of countless millions more."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -703,21 +1289,72 @@
      "en": "What matters \nis that they will belong to a private monopoly which developed them using public \nresources.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "What matters"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语从句",
+        "t": "that they will belong to a private monopoly which developed them using public resources."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "If software promises to save lives on the scale that drugs now can, big data \nmay be expected to behave as a big pharma has done.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s20",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If software promises to save lives on the scale that drugs now can,"
+       },
+       {
+        "r": "主语",
+        "t": "big data"
+       },
+       {
+        "r": "谓语",
+        "t": "may be expected to behave as a big pharma has done."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "We are still at the beginning of \nthis revolution and small choices now may tum out to have gigantic consequences \nlater.",
      "cn": "also lead to...突出强调这一积极事态之下的问题所在∶巨头垄断之势或进一步加剧。④句继而引出事件∶NHS 下属的皇家自由信托医院将患者信息交予 DeepMind 被判违法。It is...上述背景\"发展迅猛的 AI技术已进军医疗领域，而利好背后也存隐忧\"关乎主旨，极其关键。that 后为核心事件;其中verdict against..引出\"违法方\"，damning（谴责的，足以定罪的）强调违法事实清楚，不容辩驳;which 定语从句说明案情原委，展现裁定依据，其中on the basis of a vague agreement...先抛出总印象∶交易协议不清不楚、有规避重点问题之嫌，嵌套的 which 从句进而解释 vague 内涵，far too（极其、非常）修饰 little，再一起限定account（深思熟虑、考虑），昭示协议对\"病人隐私权\"的忽视程度，明确医院罪责。费\"之意;trust 应与我们通常说的金融领域法律行为区别开来，hospital trust 指的是\"医疗联合体\"，英国及其卫生行政部门为适应医疗服务市场的发展，组织单个的、分散的医院形成医院托拉斯，其仍属于公立部门，作为独立的法人实体存在，其在资金、管理和人事等的决策上拥有较大的自主权。政府对医院的管办职能进行分离，利于政府及医疗机构等各司其职。【",
      "id": "en1_2018_text3_s21",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "We"
+       },
+       {
+        "r": "谓语",
+        "t": "are still at the beginning of this revolution"
+       },
+       {
+        "r": "并列",
+        "t": "and small choices now may tum out to have gigantic consequences later."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -891,7 +1528,20 @@
      "en": "It reported a net loss \nof $5.6 billion for fiscal 2016, the 10th straight year its expenses have exceeded \nrevenue.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "reported a net loss of $5.6 billion for fiscal 2016, the 10th straight year its expenses have exceeded revenue."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -912,63 +1562,196 @@
      "en": "Fundamentally, the USPS is \nin a historic squeeze between technological change that has permanently decreased \ndemand for its bread-and-butter product, first-class mail, and a regulatory structure \nthat denies management the flexibility to adjust its operations to the new reality.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Fundamentally,"
+       },
+       {
+        "r": "主语",
+        "t": "the USPS"
+       },
+       {
+        "r": "谓语",
+        "t": "is in a historic squeeze between technological change that has permanently decreased demand for its bread-and-butter product, first-class mail, and a regulatory structure that denies management the flexibility to adjust its operations to the new reality."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "And interest groups ranging from postal unions to greeting-card makers exert \nself-interested pressure on the USPS 's ultimate overseer - Congress - insisting that \nwhatever else happens to the Postal Service, aspects of the status quo they depend on \nget protected.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "And"
+       },
+       {
+        "r": "主语",
+        "t": "interest groups ranging from postal unions to greeting-card makers"
+       },
+       {
+        "r": "谓语",
+        "t": "exert self-interested pressure on the USPS 's ultimate overseer - Congress - insisting that whatever else happens to the Postal Service, aspects of the status quo they depend on get protected."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "This is why repeated attempts at reform legislation have failed in recent \nyears, leaving the Postal Service unable to pay its bills except by deferring vital \nmodernization.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This"
+       },
+       {
+        "r": "谓语",
+        "t": "is why repeated attempts at reform legislation have failed in recent years, leaving the Postal Service unable to pay its bills except by deferring vital modernization."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Now comes word that everyone involved - Democrats, Republicans, the Postal \nService, the unions and the system's heaviest users - has finally agreed on a plan to \nfix the system.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Now"
+       },
+       {
+        "r": "谓语",
+        "t": "comes word"
+       },
+       {
+        "r": "定语从句",
+        "t": "that everyone involved - Democrats, Republicans, the Postal Service, the unions and the system's heaviest users - has finally agreed on a plan to fix the system."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Legislation is moving through the House that would save USPS an \nestimated $28.6 billion over five years, which could help pay for new vehicles, \namong other survival measures.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Legislation"
+       },
+       {
+        "r": "谓语",
+        "t": "is moving through the House that would save USPS an estimated $28.6 billion over five years, which could help pay for new vehicles, among other survival measures."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Most of the money would come from a \npenny-per-letter permanent rate increase and from shifting postal retirees into \nMedicare.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Most of the money"
+       },
+       {
+        "r": "谓语",
+        "t": "would come from a penny-per-letter permanent rate increase and from shifting postal retirees into Medicare."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The latter step would largely offset the financial burden of annually \npre-funding retiree health care, thus addressing a long-standing complaint by the \nUSPS and its unions.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The latter step"
+       },
+       {
+        "r": "谓语",
+        "t": "would largely offset the financial burden of annually pre-funding retiree health care, thus addressing a long-standing complaint by the USPS and its unions."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "If it clears the House, this measure would still have to get through the Senate -\nwhere someone is bound to point out that it amounts to the bare, bare minimum \nnecessary to keep the Postal Service afloat, not comprehensive reform.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If it clears the House,"
+       },
+       {
+        "r": "主语",
+        "t": "this measure"
+       },
+       {
+        "r": "谓语",
+        "t": "would still have to get through the Senate - where someone is bound to point out that it amounts to the bare, bare minimum necessary to keep the Postal Service afloat, not comprehensive reform."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "There's no \nchange to collective bargaining at the USPS, a major omission considering that \npersonnel accounts for 80 percent of the agency's costs.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "There's no change to collective bargaining at the USPS,"
+       },
+       {
+        "r": "同位语",
+        "t": "a major omission considering that personnel accounts for 80 percent of the agency's costs."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -996,14 +1779,52 @@
      "en": "The emerging \nconsensus around the bill is a sign that legislators are getting :frightened about a \npolitically embarrassing short-term collapse at the USPS.",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The emerging consensus around the bill"
+       },
+       {
+        "r": "谓语",
+        "t": "is a sign"
+       },
+       {
+        "r": "定语从句",
+        "t": "that legislators are getting :frightened about a politically embarrassing short-term collapse at the USPS."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It is not, however, a sign \nthat they're getting serious about transforming the postal system for the 21st century. \n.9. \n(-3¾-14 yf)",
      "cn": "术变革导致对其核心产品（普通邮件）的需层无法灵活调整业务以适应新现实。·汇注释与",
      "id": "en1_2018_text4_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "is not, however, a sign"
+       },
+       {
+        "r": "定语从句",
+        "t": "that they're getting serious about transforming the postal system for the 21st century."
+       },
+       {
+        "r": "页标记",
+        "t": ".9. (-3¾-14 yf)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
