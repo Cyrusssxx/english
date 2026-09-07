@@ -16,14 +16,40 @@
      "en": "France, which prides itself as the global innovator of fashion, has decided its\nfashion industry has lost an absolute right to define physical beauty for women.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "France, which prides itself as the global innovator of fashion,"
+       },
+       {
+        "r": "谓语",
+        "t": "has decided its fashion industry has lost an absolute right to define physical beauty for women."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Its\nlawmakers gave preliminary approval last week to a law that would make it a\ncrime to employ ultra-thin models on runways.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Its lawmakers"
+       },
+       {
+        "r": "谓语",
+        "t": "gave preliminary approval last week to a law that would make it a crime to employ ultra-thin models on runways."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -58,70 +84,248 @@
      "en": "And the ban on ultra-thin models seems to go beyond protecting models from\nstarving themselves to death – as some have done.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "And"
+       },
+       {
+        "r": "主语",
+        "t": "the ban on ultra-thin models"
+       },
+       {
+        "r": "谓语",
+        "t": "seems to go beyond protecting models from starving themselves to death – as some have done."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It tells the fashion industry that\nit must take responsibility for the signal it sends women, especially teenage girls,\nabout the social tape-measure they must use to determine their individual worth.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "tells the fashion industry"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that it must take responsibility for the signal it sends women, especially teenage girls, about the social tape-measure they must use to determine their individual worth."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The bans, if fully enforced, would suggest to women (and many men) that\nthey should not let others be arbiters of their beauty.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The bans,"
+       },
+       {
+        "r": "插入语",
+        "t": "if fully enforced,"
+       },
+       {
+        "r": "谓语",
+        "t": "would suggest to women (and many men) that they should not let others be arbiters of their beauty."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "And perhaps faintly, they\nhint that people should look to intangible qualities like character and intellect\nrather than dieting their way to size zero or wasp-waist physiques.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "And"
+       },
+       {
+        "r": "状语",
+        "t": "perhaps faintly,"
+       },
+       {
+        "r": "主语",
+        "t": "they"
+       },
+       {
+        "r": "谓语",
+        "t": "hint that people should look to intangible qualities like character and intellect rather than dieting their way to size zero or wasp-waist physiques."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The French measures, however, rely too much on severe punishment to\nchange a culture that still regards beauty as skin-deep – and bone-showing.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The French measures,"
+       },
+       {
+        "r": "转折词",
+        "t": "however,"
+       },
+       {
+        "r": "谓语",
+        "t": "rely too much on severe punishment to change a culture that still regards beauty as skin-deep – and bone-showing."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Under\nthe law, using a fashion model that does not meet a government-defined index of\nbody mass could result in a $85,000 fine and six months in prison.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Under the law,"
+       },
+       {
+        "r": "主语",
+        "t": "using a fashion model that does not meet a government-defined index of body mass"
+       },
+       {
+        "r": "谓语",
+        "t": "could result in a $85,000 fine and six months in prison."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The fashion industry knows it has an inherent problem in focusing on\nmaterial adornment and idealized body types.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The fashion industry"
+       },
+       {
+        "r": "谓语",
+        "t": "knows it has an inherent problem in focusing on material adornment and idealized body types."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In Denmark, the United States, and\na few other countries, it is trying to set voluntary standards for models and fashion\nimages that rely more on peer pressure for enforcement.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In Denmark, the United States, and a few other countries,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "is trying to set voluntary standards for models and fashion images that rely more on peer pressure for enforcement."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In contrast to France’s actions, Denmark’s fashion industry agreed last month\non rules and sanctions regarding the age, health, and other characteristics of\nmodels.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In contrast to France’s actions,"
+       },
+       {
+        "r": "主语",
+        "t": "Denmark’s fashion industry"
+       },
+       {
+        "r": "谓语",
+        "t": "agreed last month on rules and sanctions regarding the age, health, and other characteristics of models."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The newly revised Danish Fashion Ethical Charter clearly states: “We are\naware of and take responsibility for the impact the fashion industry has on body\nideals, especially on young people.” The charter’s main tool of enforcement is to\ndeny access for designers and modeling agencies to Copenhagen Fashion Week\n(CFW), which is run by the Danish Fashion Institute.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The newly revised Danish Fashion Ethical Charter"
+       },
+       {
+        "r": "谓语",
+        "t": "clearly states:"
+       },
+       {
+        "r": "宾语从句",
+        "t": "“We are aware of and take responsibility for the impact the fashion industry has on body ideals, especially on young people.”"
+       },
+       {
+        "r": "主语",
+        "t": "The charter’s main tool of enforcement"
+       },
+       {
+        "r": "谓语",
+        "t": "is to deny access for designers and modeling agencies to Copenhagen Fashion Week (CFW), which is run by the Danish Fashion Institute."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -135,14 +339,40 @@
      "en": "Relying on ethical persuasion rather than law to address the misuse of body\nideals may be the best step.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Relying on ethical persuasion rather than law to address the misuse of body ideals"
+       },
+       {
+        "r": "谓语",
+        "t": "may be the best step."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Even better would be to help elevate notions of beauty\nbeyond the material standards of a particular industry.",
      "cn": "式来\"鼓动过度瘦削\"的网站。",
      "id": "en1_2016_text1_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "表语",
+        "t": "Even better"
+       },
+       {
+        "r": "谓语",
+        "t": "would be to help elevate notions of beauty beyond the material standards of a particular industry."
+       }
+      ]
+     }
     },
     {
      "para": 2,
@@ -275,14 +505,72 @@
      "en": "In\nBritain this has had a curious result.While polls show Britons rate “the countryside”\nalongside the royal family, Shakespeare and the National Health Service (NHS) as\nwhat makes them proudest of their country, this has limited political support.",
      "cn": "有史以来第一次，住在城镇的人多于村\"与王室、莎士比亚和国民保健制度（NHS）一样，是他们对自己的国家最为自豪的地方，但这得到的政治支持有限。",
      "id": "en1_2016_text2_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In Britain"
+       },
+       {
+        "r": "主语",
+        "t": "this"
+       },
+       {
+        "r": "谓语",
+        "t": "has had a curious result.While polls show Britons rate “the countryside” alongside the royal family, Shakespeare and the National Health Service (NHS) as what makes them proudest of their country,"
+       },
+       {
+        "r": "主语",
+        "t": "this"
+       },
+       {
+        "r": "谓语",
+        "t": "has limited political support."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "A century ago Octavia Hill launched the National Trust not to rescue stylish\nhouses but to save “the beauty of natural places for everyone forever.” It was\nspecifically to provide city dwellers with spaces for leisure where they could\nexperience “a refreshing air.” Hill’s pressure later led to the creation of national\nparks and green belts.",
      "cn": "有史以来第一次，住在城镇的人多于村\"与王室、莎士比亚和国民保健制度（NHS）一样，是他们对自己的国家最为自豪的地方，但这得到的政治支持有限。",
      "id": "en1_2016_text2_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "A century ago"
+       },
+       {
+        "r": "主语",
+        "t": "Octavia Hill"
+       },
+       {
+        "r": "谓语",
+        "t": "launched the National Trust not to rescue stylish houses but to save “the beauty of natural places for everyone forever.”"
+       },
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "was specifically to provide city dwellers with spaces for leisure where they could experience “a refreshing air.”"
+       },
+       {
+        "r": "主语",
+        "t": "Hill’s pressure"
+       },
+       {
+        "r": "谓语",
+        "t": "later led to the creation of national parks and green belts."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -310,7 +598,20 @@
      "en": "The Conservatives’ planning reform explicitly gives rural development\npriority over conservation, even authorising “off-plan” building where local\npeople might object.",
      "cn": "有史以来第一次，住在城镇的人多于村\"与王室、莎士比亚和国民保健制度（NHS）一样，是他们对自己的国家最为自豪的地方，但这得到的政治支持有限。",
      "id": "en1_2016_text2_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The Conservatives’ planning reform"
+       },
+       {
+        "r": "谓语",
+        "t": "explicitly gives rural development priority over conservation, even authorising “off-plan” building where local people might object."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -338,7 +639,24 @@
      "en": "Only Ukip, sensing its\nchance, has sided with those pleading for a more considered approach to using\ngreen land.",
      "cn": "有史以来第一次，住在城镇的人多于村\"与王室、莎士比亚和国民保健制度（NHS）一样，是他们对自己的国家最为自豪的地方，但这得到的政治支持有限。",
      "id": "en1_2016_text2_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Only Ukip,"
+       },
+       {
+        "r": "插入语",
+        "t": "sensing its chance,"
+       },
+       {
+        "r": "谓语",
+        "t": "has sided with those pleading for a more considered approach to using green land."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -352,14 +670,40 @@
      "en": "The sensible place to build new houses, factories and offices is where people\nare, in cities and towns where infrastructure is in place.",
      "cn": "有史以来第一次，住在城镇的人多于村\"与王室、莎士比亚和国民保健制度（NHS）一样，是他们对自己的国家最为自豪的地方，但这得到的政治支持有限。",
      "id": "en1_2016_text2_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The sensible place to build new houses, factories and offices"
+       },
+       {
+        "r": "谓语",
+        "t": "is where people are, in cities and towns where infrastructure is in place."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The London agents\nStirling Ackroyd recently identified enough sites for half a million houses in the\nLondon area alone, with no intrusion on green belt.",
      "cn": "有史以来第一次，住在城镇的人多于村\"与王室、莎士比亚和国民保健制度（NHS）一样，是他们对自己的国家最为自豪的地方，但这得到的政治支持有限。",
      "id": "en1_2016_text2_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The London agents Stirling Ackroyd"
+       },
+       {
+        "r": "谓语",
+        "t": "recently identified enough sites for half a million houses in the London area alone, with no intrusion on green belt."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -380,7 +724,20 @@
      "en": "The issue is not the need for more houses but, as always, where to put them.",
      "cn": "有史以来第一次，住在城镇的人多于村\"与王室、莎士比亚和国民保健制度（NHS）一样，是他们对自己的国家最为自豪的地方，但这得到的政治支持有限。",
      "id": "en1_2016_text2_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The issue"
+       },
+       {
+        "r": "谓语",
+        "t": "is not the need for more houses but, as always, where to put them."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -450,7 +807,20 @@
      "en": "Half a century of town and country planning has\nenabled it to retain an enviable rural coherence, while still permitting low-density\nurban living.",
      "cn": "有史以来第一次，住在城镇的人多于村\"与王室、莎士比亚和国民保健制度（NHS）一样，是他们对自己的国家最为自豪的地方，但这得到的政治支持有限。",
      "id": "en1_2016_text2_s27",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Half a century of town and country planning"
+       },
+       {
+        "r": "谓语",
+        "t": "has enabled it to retain an enviable rural coherence, while still permitting low-density urban living."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -617,21 +987,76 @@
      "en": "“There is one and only one social responsibility of business,” wrote Milton\nFriedman, a Nobel prize-winning economist, “That is, to use its resources and\nengage in activities designed to increase its profits.” But even if you accept\nFriedman’s premise and regard corporate social responsibility (CSR) policies as a\nwaste of shareholders’ money, things may not be absolutely clear-cut.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "宾语从句",
+        "t": "“There is one and only one social responsibility of business,” wrote Milton Friedman, a Nobel prize-winning economist, “That is, to use its resources and engage in activities designed to increase its profits.”"
+       },
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "让步状语从句",
+        "t": "even if you accept Friedman’s premise and regard corporate social responsibility (CSR) policies as a waste of shareholders’ money,"
+       },
+       {
+        "r": "主语",
+        "t": "things"
+       },
+       {
+        "r": "谓语",
+        "t": "may not be absolutely clear-cut."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "New\nresearch suggests that CSR may create monetary value for companies – at least\nwhen they are prosecuted for corruption.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "New research"
+       },
+       {
+        "r": "谓语",
+        "t": "suggests"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that CSR may create monetary value for companies – at least when they are prosecuted for corruption."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The largest firms in America and Britain together spend more than $15 billion\na year on CSR, according to an estimate by EPG, a consulting firm.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The largest firms in America and Britain together"
+       },
+       {
+        "r": "谓语",
+        "t": "spend more than $15 billion a year on CSR, according to an estimate by EPG, a consulting firm."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -645,84 +1070,280 @@
      "en": "First, consumers may take CSR\nspending as a “signal” that a company’s products are of high quality.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "First,"
+       },
+       {
+        "r": "主语",
+        "t": "consumers"
+       },
+       {
+        "r": "谓语",
+        "t": "may take CSR spending as a “signal” that a company’s products are of high quality."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Second,\ncustomers may be willing to buy a company’s products as an indirect way to\ndonate to the good causes it helps.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Second,"
+       },
+       {
+        "r": "主语",
+        "t": "customers"
+       },
+       {
+        "r": "谓语",
+        "t": "may be willing to buy a company’s products as an indirect way to donate to the good causes it helps."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "And third, through a more diffuse “halo effect,”\nwhereby its good deeds earn it greater consideration from consumers and others.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "And third,"
+       },
+       {
+        "r": "状语",
+        "t": "through a more diffuse “halo effect,” whereby its good deeds earn it greater consideration from consumers and others."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Previous studies on CSR have had trouble differentiating these effects\nbecause consumers can be affected by all three.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Previous studies on CSR"
+       },
+       {
+        "r": "谓语",
+        "t": "have had trouble differentiating these effects because consumers can be affected by all three."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "A recent study attempts to\nseparate them by looking at bribery prosecutions under America’s Foreign\nCorrupt Practices Act (FCPA).",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A recent study"
+       },
+       {
+        "r": "谓语",
+        "t": "attempts to separate them by looking at bribery prosecutions under America’s Foreign Corrupt Practices Act (FCPA)."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It argues that since prosecutors do not consume a\ncompany’s products as part of their investigations, they could be influenced only\nby the halo effect.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "argues"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that since prosecutors do not consume a company’s products as part of their investigations, they could be influenced only by the halo effect."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The\nstudy\nfound\nthat,\namong\nprosecuted\nfirms,\nthose\nwith\nthe\nmost\ncomprehensive CSR programmes tended to get more lenient penalties.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The study"
+       },
+       {
+        "r": "谓语",
+        "t": "found"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that, among prosecuted firms, those with the most comprehensive CSR programmes tended to get more lenient penalties."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Their\nanalysis ruled out the possibility that it was firms’ political influence, rather than\ntheir CSR stand, that accounted for the leniency: Companies that contributed more\nto political campaigns did not receive lower fines.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Their analysis"
+       },
+       {
+        "r": "谓语",
+        "t": "ruled out the possibility that it was firms’ political influence, rather than their CSR stand, that accounted for the leniency: Companies that contributed more to political campaigns did not receive lower fines."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In all, the study concludes that whereas prosecutors should only evaluate a\ncase based on its merits, they do seem to be influenced by a company’s record in\nCSR. “We estimate that either eliminating a substantial labour-rights concern,\nsuch as child labour, or increasing corporate giving by about 20% results in fines\nthat generally are 40% lower than the typical punishment for bribing foreign\nofficials,” says one researcher.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In all,"
+       },
+       {
+        "r": "主语",
+        "t": "the study"
+       },
+       {
+        "r": "谓语",
+        "t": "concludes"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that whereas prosecutors should only evaluate a case based on its merits, they do seem to be influenced by a company’s record in CSR."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“We estimate that either eliminating a substantial labour-rights concern, such as child labour, or increasing corporate giving by about 20% results in fines that generally are 40% lower than the typical punishment for bribing foreign officials,” says one researcher."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Researchers admit that their study does not answer the question of how much\nbusinesses ought to spend on CSR.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Researchers"
+       },
+       {
+        "r": "谓语",
+        "t": "admit"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that their study does not answer the question of how much businesses ought to spend on CSR."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Nor does it reveal how much companies are\nbanking on the halo effect, rather than the other possible benefits, when they\ndecide their do-gooding policies.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "Nor does it reveal how much companies are banking on the halo effect, rather than the other possible benefits, when they decide their do-gooding policies."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But at least they have demonstrated that when\ncompanies get into trouble with the law, evidence of good character can win them\na less costly punishment.",
      "cn": "\"企业有且仅有一项社会责任，\"诺贝尔经济学奖得主米尔顿 · 弗里德曼写到，\"那",
      "id": "en1_2016_text3_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "状语",
+        "t": "at least"
+       },
+       {
+        "r": "主语",
+        "t": "they"
+       },
+       {
+        "r": "谓语",
+        "t": "have demonstrated"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that when companies get into trouble with the law, evidence of good character can win them a less costly punishment."
+       }
+      ]
+     }
     },
     {
      "para": 2,
@@ -881,21 +1502,64 @@
      "en": "Exactly when that day will be is a matter of debate. “Sometime\nin the future,” the paper’s publisher said back in 2010.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Exactly when that day will be"
+       },
+       {
+        "r": "谓语",
+        "t": "is a matter of debate."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“Sometime in the future,” the paper’s publisher said back in 2010."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Nostalgia for ink on paper and the rustle of pages aside, there’s plenty of\nincentive to ditch print.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Nostalgia for ink on paper and the rustle of pages aside,"
+       },
+       {
+        "r": "谓语",
+        "t": "there’s plenty of incentive to ditch print."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The infrastructure required to make a physical newspaper\n– printing presses, delivery trucks – isn’t just expensive; it’s excessive at a time\nwhen online-only competitors don’t have the same set of financial constraints.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The infrastructure required to make a physical newspaper – printing presses, delivery trucks –"
+       },
+       {
+        "r": "谓语",
+        "t": "isn’t just expensive; it’s excessive at a time when online-only competitors don’t have the same set of financial constraints."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -909,28 +1573,128 @@
      "en": "And though print ad sales still\ndwarf their online and mobile counterparts, revenue from print is still declining.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "And"
+       },
+       {
+        "r": "让步状语从句",
+        "t": "though print ad sales still dwarf their online and mobile counterparts,"
+       },
+       {
+        "r": "主语",
+        "t": "revenue from print"
+       },
+       {
+        "r": "谓语",
+        "t": "is still declining."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Overhead may be high and circulation lower, but rushing to eliminate its print\nedition would be a mistake, says BuzzFeed CEO Jonah Peretti.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Overhead"
+       },
+       {
+        "r": "谓语",
+        "t": "may be high and circulation lower,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "rushing to eliminate its print edition"
+       },
+       {
+        "r": "谓语",
+        "t": "would be a mistake,"
+       },
+       {
+        "r": "插入语",
+        "t": "says BuzzFeed CEO Jonah Peretti."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Peretti says the Times shouldn’t waste time getting out of the print business,\nbut only if they go about doing it the right way. “Figuring out a way to accelerate\nthat transition would make sense for them,” he said, “but if you discontinue it,\nyou’re going to have your most loyal customers really upset with you.”\nSometimes that’s worth making a change anyway.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Peretti"
+       },
+       {
+        "r": "谓语",
+        "t": "says the Times shouldn’t waste time getting out of the print business,"
+       },
+       {
+        "r": "转折词",
+        "t": "but only if they go about doing it the right way."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“Figuring out a way to accelerate that transition would make sense for them,” he said, “but if you discontinue it, you’re going to have your most loyal customers really upset with you.”"
+       },
+       {
+        "r": "状语",
+        "t": "Sometimes"
+       },
+       {
+        "r": "主语",
+        "t": "that’s"
+       },
+       {
+        "r": "谓语",
+        "t": "worth making a change anyway."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Peretti gives the example\nof Netflix discontinuing its DVD-mailing service to focus on streaming. “It was\nseen as a blunder,” he said.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Peretti"
+       },
+       {
+        "r": "谓语",
+        "t": "gives the example of Netflix discontinuing its DVD-mailing service to focus on streaming."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“It was seen as a blunder,” he said."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -944,7 +1708,56 @@
      "en": "And if Peretti\nwere in charge at the Times? “I wouldn’t pick a year to end print,” he said. “I\nwould raise prices and make it into more of a legacy product.”\nThe most loyal customers would still get the product they favor, the idea goes,\nand they’d feel like they were helping sustain the quality of something they\nbelieve in. “So if you’re overpaying for print, you could feel like you were\nhelping,” Peretti said. “Then increase it at a higher rate each year and essentially\ntry to generate additional revenue.” In other words, if you’re going to make a print\nproduct, make it for the people who are already obsessed with it.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "And"
+       },
+       {
+        "r": "条件状语从句",
+        "t": "if Peretti were in charge at the Times?"
+       },
+       {
+        "r": "宾语从句",
+        "t": "“I wouldn’t pick a year to end print,” he said."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“I would raise prices and make it into more of a legacy product.”"
+       },
+       {
+        "r": "主语",
+        "t": "The most loyal customers would still get the product they favor, the idea goes,"
+       },
+       {
+        "r": "并列",
+        "t": "and they’d feel like they were helping sustain the quality of something they believe in."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“So if you’re overpaying for print, you could feel like you were helping,” Peretti said."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“Then increase it at a higher rate each year and essentially try to generate additional revenue.”"
+       },
+       {
+        "r": "状语",
+        "t": "In other words,"
+       },
+       {
+        "r": "条件状语从句",
+        "t": "if you’re going to make a print product,"
+       },
+       {
+        "r": "谓语",
+        "t": "make it for the people who are already obsessed with it."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -958,7 +1771,28 @@
      "en": "Getting the print edition seven days a week costs\nnearly $500 a year – more than twice as much as a digital-only subscription.\n“It’s a really hard thing to do and it’s a tremendous luxury that BuzzFeed\ndoesn’t have a legacy business,” Peretti remarked. “But we’re going to have\nquestions like that where we have things we’re doing that don’t make sense when\nthe market changes and the world changes.",
      "cn": "某一天\"，该报出版人早在 2010 年说过。",
      "id": "en1_2016_text4_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Getting the print edition seven days a week"
+       },
+       {
+        "r": "谓语",
+        "t": "costs nearly $500 a year – more than twice as much as a digital-only subscription."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“It’s a really hard thing to do and it’s a tremendous luxury that BuzzFeed doesn’t have a legacy business,” Peretti remarked."
+       },
+       {
+        "r": "宾语从句",
+        "t": "“But we’re going to have questions like that where we have things we’re doing that don’t make sense when the market changes and the world changes."
+       }
+      ]
+     }
     },
     {
      "para": 1,
