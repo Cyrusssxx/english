@@ -16,28 +16,88 @@
      "en": "In the 2006 film version of The Devil Wears Prada, Miranda Priestly, played by \nMeryl Streep, scolds her unattractive assistant for imagining that high fashion doesn't \naffect her.",
      "cn": "2006电影版《时尚女魔头》中，梅丽尔·斯特里普所饰演的米兰达·普瑞斯特利在斥责其毫不引人注目的助手，原因是她认为高端时尚与己无关。",
      "id": "en1_2013_text1_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In the 2006 film version of The Devil Wears Prada,"
+       },
+       {
+        "r": "主语",
+        "t": "Miranda Priestly, played by Meryl Streep,"
+       },
+       {
+        "r": "谓语",
+        "t": "scolds her unattractive assistant for imagining that high fashion doesn't affect her."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Priestly explains how the deep blue color of the assistant's sweater \ndescended over the years from fashion shows to department stores and to the bargain \nbin in which the poor girl doubtless found her garment.",
      "cn": "普瑞斯特利解释了助手身上毛衫的深蓝色如何在几年间从时装展屈尊至百货店，再沦落到打折区——这个可怜女孩儿身上的衣衫无疑淘自最后一站。",
      "id": "en1_2013_text1_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Priestly"
+       },
+       {
+        "r": "谓语",
+        "t": "explains how the deep blue color of the assistant's sweater descended over the years from fashion shows to department stores and to the bargain bin in which the poor girl doubtless found her garment."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "This top-down conception of the fashion business couldn't be more out of date \nor at odds with the feverish world described in Overdressed, Elizabeth Cline's \nthree-year indictment of \"fast fashion\".",
      "cn": "时尚业这一“自上而下”的观念早已过时，或者说和《着装过度》一书——克莱恩历时三年完成的对“快时尚”的控诉——所描绘的狂热世界完全相悖。",
      "id": "en1_2013_text1_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This top-down conception of the fashion business"
+       },
+       {
+        "r": "谓语",
+        "t": "couldn't be more out of date or at odds with the feverish world described in Overdressed, Elizabeth Cline's three-year indictment of \"fast fashion\"."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In the last decade or so, advances in \ntechnology have allowed mass-market labels such as Zara, H&M, and Uniqlo to react \nto trends more quickly and anticipate demand more precisely.",
      "cn": "在过去十年左右时间里，技术进步使得大众品牌，如 Zara、H&M、Uniqlo，得以对时尚趋势做出更快速的反应、对需求进行更精准的预测。",
      "id": "en1_2013_text1_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In the last decade or so,"
+       },
+       {
+        "r": "主语",
+        "t": "advances in technology"
+       },
+       {
+        "r": "谓语",
+        "t": "have allowed mass-market labels such as Zara, H&M, and Uniqlo to react to trends more quickly and anticipate demand more precisely."
+       }
+      ]
+     }
     },
     {
      "para": 2,
@@ -51,14 +111,48 @@
      "en": "These labels \nencourage style-conscious consumers to see clothes as disposable - meant to last only \na wash or two, although they don't advertise that- and to renew their wardrobe every \nfew weeks.",
      "cn": "这些品牌鼓动那些追求时尚的消费者们将衣服视为用完即弃的物品——原本就只用来穿一两水，虽然它们并非如此宣扬——且隔不了几周就要更新一次衣橱。",
      "id": "en1_2013_text1_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "These labels"
+       },
+       {
+        "r": "谓语",
+        "t": "encourage style-conscious consumers to see clothes as disposable - meant to last only a wash or two, although they don't advertise that- and to renew their wardrobe every few weeks."
+       }
+      ]
+     }
     },
     {
      "para": 2,
      "en": "By offering on-trend items at dirt-cheap prices, Cline argues, these brands \nhave hijacked fashion cycles, shaking an industry long accustomed to a seasonal pace.",
      "cn": "克莱恩提出，通过以极低的价格提供时髦的物品，这些品牌已经绑架了时尚周期，撼动了一个长久以来习惯于以“季”为步伐的产业。",
      "id": "en1_2013_text1_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "By offering on-trend items at dirt-cheap prices,"
+       },
+       {
+        "r": "插入语",
+        "t": "Cline argues,"
+       },
+       {
+        "r": "主语",
+        "t": "these brands"
+       },
+       {
+        "r": "谓语",
+        "t": "have hijacked fashion cycles, shaking an industry long accustomed to a seasonal pace."
+       }
+      ]
+     }
     },
     {
      "para": 2,
@@ -72,42 +166,148 @@
      "en": "For H&M \nto offer a $5. 95 knit miniskirt in all its 2,300-plus stores around the world, it must rely \non low-wage overseas labor, order in volumes that strain natural resources, and use \nmassive amounts of harmful chemicals.",
      "cn": "H&M若要在其全球总共2300多家店内提供5.95美元的针织迷你裙，必须依靠低薪的海外劳动力以及造成自然资源过度使用的批量订单，并大量使用有害化学物质。",
      "id": "en1_2013_text1_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "For H&M to offer a $5. 95 knit miniskirt in all its 2,300-plus stores around the world,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "must rely on low-wage overseas labor, order in volumes that strain natural resources, and use massive amounts of harmful chemicals."
+       }
+      ]
+     }
     },
     {
      "para": 3,
      "en": "Overdressed is the fashion world's answer to consumer-activist bestsellers like \nMichael Pollan's The Omnivores Dilemma. \"Mass-produced clothing, like fast food, \nfills a hunger and need, yet is non-durable and wasteful,\" Cline argues.",
      "cn": "《着装过度》是时尚界对消费者活跃分子畅销书（诸如迈克尔·普兰《杂食者的困境》之类）的回应。",
      "id": "en1_2013_text1_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Overdressed"
+       },
+       {
+        "r": "谓语",
+        "t": "is the fashion world's answer to consumer-activist bestsellers like Michael Pollan's The Omnivores Dilemma."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"Mass-produced clothing, like fast food, fills a hunger and need, yet is non-durable and wasteful,\" Cline argues."
+       }
+      ]
+     }
     },
     {
      "para": 3,
      "en": "Americans, \nshe finds, buy roughly 20 billion garments a year - about 64 items per person - and \nno matter how much they give away, this excess leads to waste.",
      "cn": "“批量生产服装如同快餐，虽填补了饥饿和需求，却不耐用，且浪费，”克莱恩如是认为。",
      "id": "en1_2013_text1_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Americans,"
+       },
+       {
+        "r": "插入语",
+        "t": "she finds,"
+       },
+       {
+        "r": "谓语",
+        "t": "buy roughly 20 billion garments a year - about 64 items per person - and no matter how much they give away, this excess leads to waste."
+       }
+      ]
+     }
     },
     {
      "para": 3,
      "en": "Towards the end of Overdressed, Cline introduced her ideal, a Brooklyn woman \nnamed Sarah Kate Beaumont, who since 2008 has made all of her own clothes - and \nbeautifully.",
      "cn": "她发现，美国人每年大约购入200亿件衣服——每人约64件——且无论他们捐出多少，这种过量都会造成浪费。",
      "id": "en1_2013_text1_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Towards the end of Overdressed,"
+       },
+       {
+        "r": "主语",
+        "t": "Cline"
+       },
+       {
+        "r": "谓语",
+        "t": "introduced her ideal, a Brooklyn woman named Sarah Kate Beaumont, who since 2008 has made all of her own clothes - and beautifully."
+       }
+      ]
+     }
     },
     {
      "para": 4,
      "en": "But as Cline is the first to note, it took Beaumont decades to perfect her \ncraft; her example can't be knocked off.",
      "cn": "在《着装过度》临结尾处，克莱恩推出了她的典范，一位名为萨拉·凯特·博蒙特的布鲁克林女性，她从2008年起就亲手制作自己所有的衣服——且做得很漂亮。",
      "id": "en1_2013_text1_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "状语从句",
+        "t": "as Cline is the first to note,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "took Beaumont decades to perfect her craft; her example can't be knocked off."
+       }
+      ]
+     }
     },
     {
      "para": 4,
      "en": "Though several fast-fashion companies have made efforts to curb their impact on \nlabor and the environment - including H&M, with its green Conscious Collection \nline - Cline believes lasting change can only be effected by the customer.",
      "cn": "但正如克莱恩首次提到，博蒙特花了几十年时光来完善自己的技能；她的做法不可能被轻松复制。",
      "id": "en1_2013_text1_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "让步状语从句",
+        "t": "Though several fast-fashion companies have made efforts to curb their impact on labor and the environment - including H&M, with its green Conscious Collection line -"
+       },
+       {
+        "r": "主语",
+        "t": "Cline"
+       },
+       {
+        "r": "谓语",
+        "t": "believes lasting change can only be effected by the customer."
+       }
+      ]
+     }
     },
     {
      "para": 4,
@@ -121,7 +321,28 @@
      "en": "Vanity is a constant; people will only start shopping more sustainably when they can't \nafford not to. \n.3. \n(-3¾-14 yf)",
      "cn": "她表现出可持续发展倡导者（无论是食品领域还是能源领域）共有的理想主义。虚荣是永恒的；只有在无力支付不可持续性购物时，人们才会开始可持续性购物。",
      "id": "en1_2013_text1_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Vanity"
+       },
+       {
+        "r": "谓语",
+        "t": "is a constant;"
+       },
+       {
+        "r": "并列",
+        "t": "people will only start shopping more sustainably when they can't afford not to."
+       },
+       {
+        "r": "页标记",
+        "t": ".3. (-3¾-14 yf)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -267,7 +488,24 @@
      "en": "An old saying has it that half of all advertising budgets are wasted - the trouble \nis, no one knows which half.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "An old saying"
+       },
+       {
+        "r": "谓语",
+        "t": "has it"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that half of all advertising budgets are wasted - the trouble is, no one knows which half."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -281,14 +519,48 @@
      "en": "By watching what people search for, click on and say online, \ncompanies can aim \"behavioural\" ads at those most likely to buy.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "By watching what people search for, click on and say online,"
+       },
+       {
+        "r": "主语",
+        "t": "companies"
+       },
+       {
+        "r": "谓语",
+        "t": "can aim \"behavioural\" ads at those most likely to buy."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In the past couple of weeks a quarrel has illustrated the value to advertisers of \nsuch fine-grained information: Should advertisers assume that people are happy to be \ntracked and sent behavioural ads?",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "In the past couple of weeks"
+       },
+       {
+        "r": "主语",
+        "t": "a quarrel"
+       },
+       {
+        "r": "谓语",
+        "t": "has illustrated the value to advertisers of such fine-grained information: Should advertisers assume that people are happy to be tracked and sent behavioural ads?"
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -302,21 +574,72 @@
      "en": "In December 2010 America's Federal Trade Commission (FTC) proposed adding \na \"do not track\" (DNT) option to internet browsers, so that users could tell advertisers \nthat they did not want to be followed.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "In December 2010"
+       },
+       {
+        "r": "主语",
+        "t": "America's Federal Trade Commission (FTC)"
+       },
+       {
+        "r": "谓语",
+        "t": "proposed adding a \"do not track\" (DNT) option to internet browsers, so that users could tell advertisers that they did not want to be followed."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Microsoft's Internet Explorer and Apple's \nSafari both offer DNT; Google's Chrome is due to do so this year.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Microsoft's Internet Explorer and Apple's Safari"
+       },
+       {
+        "r": "谓语",
+        "t": "both offer DNT;"
+       },
+       {
+        "r": "并列",
+        "t": "Google's Chrome is due to do so this year."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In February the \nFTC and the Digital Advertising Alliance (DAA) agreed that the industry would get \ncracking on responding to DNT requests.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "In February"
+       },
+       {
+        "r": "主语",
+        "t": "the FTC and the Digital Advertising Alliance (DAA)"
+       },
+       {
+        "r": "谓语",
+        "t": "agreed that the industry would get cracking on responding to DNT requests."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -330,7 +653,24 @@
      "en": "It said that Internet Explorer 10, the \nversion due to appear with Windows 8, would have DNT as a default.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that Internet Explorer 10, the version due to appear with Windows 8, would have DNT as a default."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -358,28 +698,96 @@
      "en": "Bob \nLiodice, the chief executive of the Association of National Advertisers, says \nconsumers will be worse off if the industry cannot collect information about their \npreferences.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Bob Liodice, the chief executive of the Association of National Advertisers,"
+       },
+       {
+        "r": "谓语",
+        "t": "says consumers will be worse off if the industry cannot collect information about their preferences."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "People will not get fewer ads, he says. \"They'll get less meaningful, less \ntargeted ads.\" \nIt is not yet clear how advertisers will respond.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "宾语从句",
+        "t": "People will not get fewer ads, he says."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"They'll get less meaningful, less targeted ads.\""
+       },
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "is not yet clear how advertisers will respond."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Getting a DNT signal does not \noblige anyone to stop tracking, although some companies have promised to do so.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Getting a DNT signal"
+       },
+       {
+        "r": "谓语",
+        "t": "does not oblige anyone to stop tracking,"
+       },
+       {
+        "r": "让步状语从句",
+        "t": "although some companies have promised to do so."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Unable to tell whether someone really objects to behavioural ads or whether they are \nsticking with Microsoft's default, some may ignore a DNT signal and press on \nanyway.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Unable to tell whether someone really objects to behavioural ads or whether they are sticking with Microsoft's default,"
+       },
+       {
+        "r": "主语",
+        "t": "some"
+       },
+       {
+        "r": "谓语",
+        "t": "may ignore a DNT signal and press on anyway."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -393,28 +801,96 @@
      "en": "After all, it has an ad business \ntoo, which it says will comply with DNT requests, though it is still working out how.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "After all,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "has an ad business too, which it says will comply with DNT requests, though it is still working out how."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "If it is trying to upset Google, which relies almost wholly on advertising, it has \nchosen an indirect method: there is no guarantee that DNT by default will become the \nnorm.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s20",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If it is trying to upset Google, which relies almost wholly on advertising,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "has chosen an indirect method: there is no guarantee that DNT by default will become the norm."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "DNT does not seem an obviously huge selling point for windows 8 - though \nthe firm has compared some of its other products favourably with Google's on that \ncount before.",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s21",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "DNT"
+       },
+       {
+        "r": "谓语",
+        "t": "does not seem an obviously huge selling point for windows 8 - though the firm has compared some of its other products favourably with Google's on that count before."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Brendon Lynch, Microsoft's chief privacy officer, blogged: \"We believe \nconsumers should have more control.\" Could it really be that simple? \n.5. \n(-3¾-14 yf)",
      "cn": "常言道，一半的广告预算都被浪费了—问题是，没人知道是哪一半。在互联网时代，至少在理论上，被浪费掉的这部分能被大幅减少。通过观察人们搜索的内容、点击的链接及在线，的言论，企业可以针对那些最可能购买的人投放\"行为\"广告。",
      "id": "en1_2013_text2_s22",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Brendon Lynch, Microsoft's chief privacy officer,"
+       },
+       {
+        "r": "谓语",
+        "t": "blogged: \"We believe consumers should have more control.\""
+       },
+       {
+        "r": "谓语",
+        "t": "Could it really be that simple?"
+       },
+       {
+        "r": "页标记",
+        "t": ".5. (-3¾-14 yf)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -560,21 +1036,68 @@
      "en": "Up until a few decades ago, our visions of the future were largely - though by no \nmeans uniformly - glowingly positive.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "Up until a few decades ago,"
+       },
+       {
+        "r": "主语",
+        "t": "our visions of the future"
+       },
+       {
+        "r": "谓语",
+        "t": "were largely - though by no means uniformly - glowingly positive."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Science and technology would cure all the ills \nof humanity, leading to lives of fulfilment and opportunity for all.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Science and technology"
+       },
+       {
+        "r": "谓语",
+        "t": "would cure all the ills of humanity, leading to lives of fulfilment and opportunity for all."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Now utopia has grown unfashionable, as we have gained a deeper appreciation \nof the range of threats facing us, from asteroid strike to epidemic flu and to climate \nchange.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Now"
+       },
+       {
+        "r": "主语",
+        "t": "utopia"
+       },
+       {
+        "r": "谓语",
+        "t": "has grown unfashionable, as we have gained a deeper appreciation of the range of threats facing us, from asteroid strike to epidemic flu and to climate change."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -595,21 +1118,64 @@
      "en": "The fossil record shows that many species \nhave endured for millions of years - so why shouldn't we?",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The fossil record"
+       },
+       {
+        "r": "谓语",
+        "t": "shows that many species have endured for millions of years - so why shouldn't we?"
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Take a broader look at our \nspecies' place in the universe, and it becomes clear that we have an excellent chance \nof surviving for tens, if not hundreds, of thousands of years.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "Take a broader look at our species' place in the universe,"
+       },
+       {
+        "r": "并列",
+        "t": "and it becomes clear that we have an excellent chance of surviving for tens, if not hundreds, of thousands of years."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Look up Homo sapiens \nin the \"Red List\" of threatened species of the International Union for the \nConservation of Nature (IUCN) and you will read: \"Listed as Least Concern as the \nspecies is very widely distributed, adaptable, currently increasing, and there are no \nmajor threats resulting in an overall population decline.\" \nSo what does our deep future hold?",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "Look up Homo sapiens in the \"Red List\" of threatened species of the International Union for the Conservation of Nature (IUCN)"
+       },
+       {
+        "r": "并列",
+        "t": "and you will read: \"Listed as Least Concern as the species is very widely distributed, adaptable, currently increasing, and there are no major threats resulting in an overall population decline.\""
+       },
+       {
+        "r": "谓语",
+        "t": "So what does our deep future hold?"
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -623,21 +1189,72 @@
      "en": "For example, the Long \nNow Foundation has as its flagship project a mechanical clock that is designed to still \nbe marking time thousands of years hence.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "For example,"
+       },
+       {
+        "r": "主语",
+        "t": "the Long Now Foundation"
+       },
+       {
+        "r": "谓语",
+        "t": "has as its flagship project a mechanical clock that is designed to still be marking time thousands of years hence."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Perhaps willfully, it may be easier to think about such lengthy timescales than \nabout the more immediate future.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Perhaps willfully,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "may be easier to think about such lengthy timescales than about the more immediate future."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The potential evolution of today's technology, and \nits social consequences, is dazzlingly complicated, and it's perhaps best left to science \nfiction writers and futurologists to explore the many possibilities we can envisage.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The potential evolution of today's technology, and its social consequences,"
+       },
+       {
+        "r": "谓语",
+        "t": "is dazzlingly complicated,"
+       },
+       {
+        "r": "并列",
+        "t": "and it's perhaps best left to science fiction writers and futurologists to explore the many possibilities we can envisage."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -651,21 +1268,68 @@
      "en": "But take a longer view and there is a surprising amount that we can say with \nconsiderable assurance.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "谓语",
+        "t": "take a longer view"
+       },
+       {
+        "r": "并列",
+        "t": "and there is a surprising amount that we can say with considerable assurance."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "As so often, the past holds the key to the future: we have now \nidentified enough of the long-term patterns shaping the history of the planet, and our \nspecies, to make evidence-based forecasts about the situations in which our \ndescendants will find themselves.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "As so often,"
+       },
+       {
+        "r": "主语",
+        "t": "the past"
+       },
+       {
+        "r": "谓语",
+        "t": "holds the key to the future: we have now identified enough of the long-term patterns shaping the history of the planet, and our species, to make evidence-based forecasts about the situations in which our descendants will find themselves."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "This long perspective makes the pessimistic view of our prospects seem more \nlikely to be a passing fad.",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This long perspective"
+       },
+       {
+        "r": "谓语",
+        "t": "makes the pessimistic view of our prospects seem more likely to be a passing fad."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -679,7 +1343,28 @@
      "en": "But we are now \nknowledgeable enough to reduce many of the risks that threatened the existence of \nearlier humans, and to improve the lot of those to come. \n.7. \n(-3¾-14 yf)",
      "cn": "【A】、【D】把首段②句\"人们憧憬的具体内容，即预想的科技发展的影响——使人人生活得充实、机会多多\"变为\"人的渴望/信念\"，并将之偷换成\"憧憬的促因\"。【C】源于第二段首句\"人们对自身面临的威胁有了更加深刻的认识\"，但这是\"目前人们持悲观态度\"的原因，而非\"以前人们持乐观态度\"的原因。的情况，因此排除第二段（Now），聚焦第一段（Upuntil...ago）。inspired by...实际引出\"促因\"，故本题考查因果细节，首段共两句话，①句说明想象的具体情况，显然非题干所考，只能锁定②句∶无明显因果关联词，但 would 表明全句为\"主观相信或期待发生的情况\"，选项里只有【B】和【D】符合，但【D】中opportunity位于结果状语里，故真正的源头在前，即全句主语∶科学和技术。然而，如此悲观实无必要。化石记录那么我们人类为何就不能呢? 以更广阔的视野来审视我们这个物种在宇宙中的地位，你就会很清楚我们即使存活不了数十万年，但（起码）再存活数万年是大有希物种分布极广，适应性强，目前数量正在的重大威胁\"。",
      "id": "en1_2013_text3_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "we"
+       },
+       {
+        "r": "谓语",
+        "t": "are now knowledgeable enough to reduce many of the risks that threatened the existence of earlier humans, and to improve the lot of those to come."
+       },
+       {
+        "r": "页标记",
+        "t": ".7. (-3¾-14 yf)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -825,14 +1510,52 @@
      "en": "On a five to three vote, the Supreme Court knocked out much of Arizona's \nimmigration law Monday - a modest policy victory for the Obama Administration.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "On a five to three vote,"
+       },
+       {
+        "r": "主语",
+        "t": "the Supreme Court"
+       },
+       {
+        "r": "谓语",
+        "t": "knocked out much of Arizona's immigration law Monday - a modest policy victory for the Obama Administration."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But on the more important matter of the Constitution, the decision was an 8-0 defeat \nfor the Administration's effort to upset the balance of power between the federal \ngovernment and the states.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "状语",
+        "t": "on the more important matter of the Constitution,"
+       },
+       {
+        "r": "主语",
+        "t": "the decision"
+       },
+       {
+        "r": "谓语",
+        "t": "was an 8-0 defeat for the Administration's effort to upset the balance of power between the federal government and the states."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -846,14 +1569,44 @@
      "en": "United States, the majority overturned three of the four contested \nprovisions of Arizona's controversial plan to have state and local police enforce \nfederal immigration law.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "United States,"
+       },
+       {
+        "r": "主语",
+        "t": "the majority"
+       },
+       {
+        "r": "谓语",
+        "t": "overturned three of the four contested provisions of Arizona's controversial plan to have state and local police enforce federal immigration law."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The Constitutional principles that Washington alone has the \npower to \"establish a uniform Rule of Naturalization\" and that federal laws precede \nstate laws are noncontroversial.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The Constitutional principles that Washington alone has the power to \"establish a uniform Rule of Naturalization\" and that federal laws precede state laws"
+       },
+       {
+        "r": "谓语",
+        "t": "are noncontroversial."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -867,77 +1620,244 @@
      "en": "Justice Anthony Kennedy, joined by Chief Justice John Roberts and the Court's \nliberals, ruled that the state flew too close to the federal sun.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Justice Anthony Kennedy, joined by Chief Justice John Roberts and the Court's liberals,"
+       },
+       {
+        "r": "谓语",
+        "t": "ruled that the state flew too close to the federal sun."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "On the overturned \nprovisions the majority held Congress had deliberately \"occupied the field\" and \nArizona had thus intruded on the federal's privileged powers.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "On the overturned provisions"
+       },
+       {
+        "r": "主语",
+        "t": "the majority"
+       },
+       {
+        "r": "谓语",
+        "t": "held Congress had deliberately \"occupied the field\" and Arizona had thus intruded on the federal's privileged powers."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "However, the Justices said that Arizona police would be allowed to verify the \nlegal status of people who come in contact with law enforcement.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "However,"
+       },
+       {
+        "r": "主语",
+        "t": "the Justices"
+       },
+       {
+        "r": "谓语",
+        "t": "said that Arizona police would be allowed to verify the legal status of people who come in contact with law enforcement."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "That's because \nCongress has always envisioned joint federal-state immigration enforcement and \nexplicitly encourages state officers to share information and cooperate with federal \ncolleagues.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "That's"
+       },
+       {
+        "r": "谓语",
+        "t": "because Congress has always envisioned joint federal-state immigration enforcement and explicitly encourages state officers to share information and cooperate with federal colleagues."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Two of the three objecting Justices - Samuel Alita and Clarence Thomas -\nagreed with this Constitutional logic but disagreed about which Arizona rules \nconflicted with the federal statute.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Two of the three objecting Justices - Samuel Alita and Clarence Thomas -"
+       },
+       {
+        "r": "谓语",
+        "t": "agreed with this Constitutional logic but disagreed about which Arizona rules conflicted with the federal statute."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The only major objection came from Justice \nAntonin Scalia, who offered an even more robust defense of state privileges going \nback to the Alien and Sedition Acts.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The only major objection"
+       },
+       {
+        "r": "谓语",
+        "t": "came from Justice Antonin Scalia, who offered an even more robust defense of state privileges going back to the Alien and Sedition Acts."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The 8-0 objection to President Obama turns on what Justice Samuel Alita \ndescribes in his objection as \"a shocking assertion of federal executive power\".",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The 8-0 objection to President Obama"
+       },
+       {
+        "r": "谓语",
+        "t": "turns on what Justice Samuel Alita describes in his objection as \"a shocking assertion of federal executive power\"."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The \nWhite House argued that Arizona's laws conflicted with its enforcement priorities, \neven if state laws complied with federal statutes to the letter.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The White House"
+       },
+       {
+        "r": "谓语",
+        "t": "argued that Arizona's laws conflicted with its enforcement priorities, even if state laws complied with federal statutes to the letter."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In effect, the White \nHouse claimed that it could invalidate any otherwise legitimate state law that it \ndisagrees with.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In effect,"
+       },
+       {
+        "r": "主语",
+        "t": "the White House"
+       },
+       {
+        "r": "谓语",
+        "t": "claimed that it could invalidate any otherwise legitimate state law that it disagrees with."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Some powers do belong exclusively to the federal government, and control of \ncitizenship and the borders is among them.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Some powers"
+       },
+       {
+        "r": "谓语",
+        "t": "do belong exclusively to the federal government,"
+       },
+       {
+        "r": "并列",
+        "t": "and control of citizenship and the borders is among them."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But if Congress wanted to prevent states \nfrom using their own resources to check immigration status, it could.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "条件状语从句",
+        "t": "if Congress wanted to prevent states from using their own resources to check immigration status,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "could."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -951,7 +1871,20 @@
      "en": "The Administration was in essence asserting that because it didn't want to carry out \nCongress's immigration wishes, no state should be allowed to do so either.",
      "cn": "院对\"亚利桑那州自行制定其移民法案\"以及\"奥巴马政府（白宫）欲滥用其行政权\"所作的裁决（第一段），并分别就两项裁决展开论述（第二至五段、第六至七段）。二.",
      "id": "en1_2013_text4_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The Administration"
+       },
+       {
+        "r": "谓语",
+        "t": "was in essence asserting that because it didn't want to carry out Congress's immigration wishes, no state should be allowed to do so either."
+       }
+      ]
+     }
     },
     {
      "para": 1,
