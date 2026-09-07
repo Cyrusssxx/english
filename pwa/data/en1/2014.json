@@ -16,14 +16,44 @@
      "en": "In order to \"change lives for the better\" and reduce \"dependency\", George \nOsborne, Chancellor of the Exchequer, introduced the \"upfront work search\" \nscheme.",
      "cn": "为了“使生活更好”并降低“依赖”，财政大臣乔治·奥斯本开始推行“先期工作搜索”计划。",
      "id": "en1_2014_text1_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "目的状语",
+        "t": "In order to \"change lives for the better\" and reduce \"dependency\","
+       },
+       {
+        "r": "主语",
+        "t": "George Osborne, Chancellor of the Exchequer,"
+       },
+       {
+        "r": "谓语",
+        "t": "introduced the \"upfront work search\" scheme."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Only if the jobless arrive at the jobcentre with a CV, register for online \njob search, and start looking for work will they be eligible for benefit - and then \nthey should report weekly rather than fortnightly.",
      "cn": "失业者只有带着简历到求职中心，注册网上求职，并开始寻找工作，才有资格领取救济金。此后，他们必须每周而不是每两周汇报一次。",
      "id": "en1_2014_text1_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "Only if the jobless arrive at the jobcentre with a CV, register for online job search, and start looking for work"
+       },
+       {
+        "r": "谓语",
+        "t": "will they be eligible for benefit - and then they should report weekly rather than fortnightly."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -44,7 +74,24 @@
      "en": "There will now be a seven-day wait \nfor the jobseeker 's allowance. \"Those first few days should be spent looking for \nwork, not looking to sign on,\" he claimed. \"We're doing these things because we \nknow they help people stay off benefits and help those on benefits get into work \nfaster.\" Help?",
      "cn": "现在，申请求职者津贴需要经过一个七天的等待期。“最初几天应该用于寻找工作，而不是指望登记（领取救济金），”他声称。“我们之所以这样做，是知道这能帮助人们远离救济，且能帮助那些依靠救济的人更快找到工作。”帮助？",
      "id": "en1_2014_text1_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "There will now be a seven-day wait for the jobseeker 's allowance."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"Those first few days should be spent looking for work, not looking to sign on,\" he claimed."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"We're doing these things because we know they help people stay off benefits and help those on benefits get into work faster.\" Help?"
+       }
+      ]
+     }
     },
     {
      "para": 2,
@@ -58,35 +105,112 @@
      "en": "On first hearing, this was the socially concerned chancellor, \ntrying to change lives for the better, complete with \"reforms\" to an obviously \nindulgent system that demands too little effort from the newly unemployed to find \nwork, and subsidises laziness.",
      "cn": "乍一听，这是这位心系社会的财相在通过“改革”明显具有纵容性的制度——对新失业者找工作的努力几乎不作要求，从而助长懒惰——来努力使人们生活更好。",
      "id": "en1_2014_text1_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "On first hearing,"
+       },
+       {
+        "r": "主语",
+        "t": "this"
+       },
+       {
+        "r": "谓语",
+        "t": "was the socially concerned chancellor, trying to change lives for the better, complete with \"reforms\" to an obviously indulgent system that demands too little effort from the newly unemployed to find work, and subsidises laziness."
+       }
+      ]
+     }
     },
     {
      "para": 2,
      "en": "What motivated him, we were to understand, was \nhis zeal for \"fundamental fairness\" - protecting the taxpayer, controlling spending \nand ensuring that only the most deserving claimants received their benefits.",
      "cn": "不过我们要明白，真正激励他的是对“基本公平”的热情——保护纳税人，控制开支并确保只有最需要帮助的申请人才能领到救济金。",
      "id": "en1_2014_text1_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "What motivated him,"
+       },
+       {
+        "r": "插入语",
+        "t": "we were to understand,"
+       },
+       {
+        "r": "谓语",
+        "t": "was his zeal for \"fundamental fairness\" - protecting the taxpayer, controlling spending and ensuring that only the most deserving claimants received their benefits."
+       }
+      ]
+     }
     },
     {
      "para": 3,
      "en": "Losing a job is hurting: you don't skip down to the jobcentre with a song in \nyour heart, delighted at the prospect of doubling your income from the generous \nstate.",
      "cn": "失去工作令人痛苦：你不可能是心哼小曲、蹦蹦跳跳地走向求职中心，途中你也不会因畅想慷慨的政府会使你的收入翻番而感到兴奋。",
      "id": "en1_2014_text1_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Losing a job"
+       },
+       {
+        "r": "谓语",
+        "t": "is hurting: you don't skip down to the jobcentre with a song in your heart, delighted at the prospect of doubling your income from the generous state."
+       }
+      ]
+     }
     },
     {
      "para": 3,
      "en": "It is financially terrifying, psychologically embarrassing and you know that \nsupport is minimal and extraordinarily hard to get.",
      "cn": "失业在经济上是可怕的，在心理上是不安的，而且你知道救济极少且极难获得。",
      "id": "en1_2014_text1_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "is financially terrifying, psychologically embarrassing and you know that support is minimal and extraordinarily hard to get."
+       }
+      ]
+     }
     },
     {
      "para": 3,
      "en": "You are now not wanted; you \nare now excluded from the work environment that offers purpose and structure in \nyour life.",
      "cn": "你现在不被需要；你被排除在为人们提供目标和结构的工作环境之外。",
      "id": "en1_2014_text1_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "You"
+       },
+       {
+        "r": "谓语",
+        "t": "are now not wanted;"
+       },
+       {
+        "r": "并列",
+        "t": "you are now excluded from the work environment that offers purpose and structure in your life."
+       }
+      ]
+     }
     },
     {
      "para": 3,
@@ -107,35 +231,120 @@
      "en": "But in Osborneland, your first instinct is to fall into dependency - permanent \ndependency if you can get it - supported by a state only too ready to indulge your \nfalsehood.",
      "cn": "但在奥斯本世界，你的第一本能是陷入依赖——若能得逞，你希望永远依赖——它被一个非常愿意纵容你错误的政府所支持。",
      "id": "en1_2014_text1_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "状语",
+        "t": "in Osborneland,"
+       },
+       {
+        "r": "主语",
+        "t": "your first instinct"
+       },
+       {
+        "r": "谓语",
+        "t": "is to fall into dependency - permanent dependency if you can get it - supported by a state only too ready to indulge your falsehood."
+       }
+      ]
+     }
     },
     {
      "para": 4,
      "en": "It is as though 20 years of ever-tougher reforms of the job search and \nbenefit administration system never happened.",
      "cn": "这好像二十年来日益严厉的求职和救济管理体系改革从来都没有发生过。",
      "id": "en1_2014_text1_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "is as though 20 years of ever-tougher reforms of the job search and benefit administration system never happened."
+       }
+      ]
+     }
     },
     {
      "para": 4,
      "en": "The principle of British welfare is \nno longer that you can insure yourself against the risk of unemployment and \nreceive unconditional payments if the disaster happens.",
      "cn": "英国福利制度的原则不再是“为防失业风险而给自己投保，从而在灾难发生时无条件获得付款”。",
      "id": "en1_2014_text1_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The principle of British welfare"
+       },
+       {
+        "r": "谓语",
+        "t": "is no longer"
+       },
+       {
+        "r": "表语从句",
+        "t": "that you can insure yourself against the risk of unemployment and receive unconditional payments if the disaster happens."
+       }
+      ]
+     }
     },
     {
      "para": 5,
      "en": "Even the very phrase \n\"jobseeker's allowance\" is about redefining the unemployed as a \"jobseeker\" who \nhad no fundamental right to a benefit he or she has earned through making \nnational insurance contributions.",
      "cn": "甚至“求职者津贴”这一术语本身就是将失业者重新定义为不具有领取救济金这一基本权利的“求职者”，而这一权利是他或她通过缴纳国民保险所赢得的。",
      "id": "en1_2014_text1_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Even the very phrase \"jobseeker's allowance\""
+       },
+       {
+        "r": "谓语",
+        "t": "is about redefining the unemployed as a \"jobseeker\" who had no fundamental right to a benefit he or she has earned through making national insurance contributions."
+       }
+      ]
+     }
     },
     {
      "para": 5,
      "en": "Instead, the claimant receives a time-limited \n\"allowance,\" conditional on actively seeking a job; no entitlement and no \ninsurance, at £71.70 a week, one of the least generous in the EU. \n** ( - ) ij\\;;¥! \n.3. \n( \f 14 Yi)",
      "cn": "取而代之的是，申请人获得一种具有时限、附带积极寻找工作条件的“津贴”；没有权利，没有保障，有的只是一周71.70镑，欧盟最低的补贴。",
      "id": "en1_2014_text1_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Instead,"
+       },
+       {
+        "r": "主语",
+        "t": "the claimant"
+       },
+       {
+        "r": "谓语",
+        "t": "receives a time-limited \"allowance,\" conditional on actively seeking a job; no entitlement and no insurance, at £71.70 a week, one of the least generous in the EU."
+       },
+       {
+        "r": "页标记",
+        "t": "** ( - ) ij\\;;¥! .3. ( \f 14 Yi)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -256,7 +465,24 @@
      "en": "All around the world, lawyers generate more hostility than the members of \nany other profession - with the possible exception of journalism.",
      "cn": "在一定程度上即为restrictive 的注解。事实上，通过鼓励律师事务所使用科技为委托人提供更好的服务。毕竞，其他一些国家，如澳大利亚和英国，已经开始放宽对其法律行业的限制，美国应该效仿。",
      "id": "en1_2014_text2_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "All around the world,"
+       },
+       {
+        "r": "主语",
+        "t": "lawyers"
+       },
+       {
+        "r": "谓语",
+        "t": "generate more hostility than the members of any other profession - with the possible exception of journalism."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -270,7 +496,24 @@
      "en": "During the decade before the economic crisis, spending on legal services in \nAmerica grew twice as fast as inflation.",
      "cn": "在一定程度上即为restrictive 的注解。事实上，通过鼓励律师事务所使用科技为委托人提供更好的服务。毕竞，其他一些国家，如澳大利亚和英国，已经开始放宽对其法律行业的限制，美国应该效仿。",
      "id": "en1_2014_text2_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "During the decade before the economic crisis,"
+       },
+       {
+        "r": "主语",
+        "t": "spending on legal services in America"
+       },
+       {
+        "r": "谓语",
+        "t": "grew twice as fast as inflation."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -291,7 +534,20 @@
      "en": "Many of them instead become the kind of \nnuisance-lawsuit filer that makes the tort system a costly nightmare.",
      "cn": "在一定程度上即为restrictive 的注解。事实上，通过鼓励律师事务所使用科技为委托人提供更好的服务。毕竞，其他一些国家，如澳大利亚和英国，已经开始放宽对其法律行业的限制，美国应该效仿。",
      "id": "en1_2014_text2_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Many of them"
+       },
+       {
+        "r": "谓语",
+        "t": "instead become the kind of nuisance-lawsuit filer that makes the tort system a costly nightmare."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -312,7 +568,16 @@
      "en": "There is just one path for a lawyer in most American states: a four-year \nundergraduate degree in some unrelated subject, then a three-year law degree at \none of 200 law schools authorized by the American Bar Association and an \nexpensive preparation for the bar exam.",
      "cn": "在一定程度上即为restrictive 的注解。事实上，通过鼓励律师事务所使用科技为委托人提供更好的服务。毕竞，其他一些国家，如澳大利亚和英国，已经开始放宽对其法律行业的限制，美国应该效仿。",
      "id": "en1_2014_text2_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "There is just one path for a lawyer in most American states: a four-year undergraduate degree in some unrelated subject, then a three-year law degree at one of 200 law schools authorized by the American Bar Association and an expensive preparation for the bar exam."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -340,7 +605,32 @@
      "en": "Sensible \nideas have been around for a long time, but the state-level bodies that govern the \nprofession have been too conservative to implement them.",
      "cn": "在一定程度上即为restrictive 的注解。事实上，通过鼓励律师事务所使用科技为委托人提供更好的服务。毕竞，其他一些国家，如澳大利亚和英国，已经开始放宽对其法律行业的限制，美国应该效仿。",
      "id": "en1_2014_text2_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Sensible ideas"
+       },
+       {
+        "r": "谓语",
+        "t": "have been around for a long time,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "the state-level bodies that govern the profession"
+       },
+       {
+        "r": "谓语",
+        "t": "have been too conservative to implement them."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -361,7 +651,24 @@
      "en": "If the bar exam is truly a stem enough \ntest for a would-be lawyer, those who can sit it earlier should be allowed to do so.",
      "cn": "在一定程度上即为restrictive 的注解。事实上，通过鼓励律师事务所使用科技为委托人提供更好的服务。毕竞，其他一些国家，如澳大利亚和英国，已经开始放宽对其法律行业的限制，美国应该效仿。",
      "id": "en1_2014_text2_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If the bar exam is truly a stem enough test for a would-be lawyer,"
+       },
+       {
+        "r": "主语",
+        "t": "those who can sit it earlier"
+       },
+       {
+        "r": "谓语",
+        "t": "should be allowed to do so."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -396,14 +703,52 @@
      "en": "There is \npressure for change from within the profession, but opponents of change among \nthe regulators insist that keeping outsiders out of a law firm isolates lawyers from \nthe pressure to make money rather than serve clients ethically.",
      "cn": "在一定程度上即为restrictive 的注解。事实上，通过鼓励律师事务所使用科技为委托人提供更好的服务。毕竞，其他一些国家，如澳大利亚和英国，已经开始放宽对其法律行业的限制，美国应该效仿。",
      "id": "en1_2014_text2_s21",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "There is pressure for change from within the profession,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "opponents of change among the regulators"
+       },
+       {
+        "r": "谓语",
+        "t": "insist that keeping outsiders out of a law firm isolates lawyers from the pressure to make money rather than serve clients ethically."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In fact, allowing non-lawyers to own shares in law firms would reduce costs \nand improve services to customers, by encouraging law firms to use technology \nand to employ professional managers to focus on improving firms' efficiency.",
      "cn": "在一定程度上即为restrictive 的注解。事实上，通过鼓励律师事务所使用科技为委托人提供更好的服务。毕竞，其他一些国家，如澳大利亚和英国，已经开始放宽对其法律行业的限制，美国应该效仿。",
      "id": "en1_2014_text2_s22",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In fact,"
+       },
+       {
+        "r": "主语",
+        "t": "allowing non-lawyers to own shares in law firms"
+       },
+       {
+        "r": "谓语",
+        "t": "would reduce costs and improve services to customers, by encouraging law firms to use technology and to employ professional managers to focus on improving firms' efficiency."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -563,7 +908,20 @@
      "en": "The US$3-million Fundamental Physics Prize is indeed an interesting \nexperiment, as Alexander Polyakov said when he accepted this year's award in \nMarch.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The US$3-million Fundamental Physics Prize"
+       },
+       {
+        "r": "谓语",
+        "t": "is indeed an interesting experiment, as Alexander Polyakov said when he accepted this year's award in March."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -577,7 +935,24 @@
      "en": "As a News Feature article in \nNature discusses, a string of lucrative awards for researchers have joined the \nNobel Prizes in recent years.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语从句",
+        "t": "As a News Feature article in Nature discusses,"
+       },
+       {
+        "r": "主语",
+        "t": "a string of lucrative awards for researchers"
+       },
+       {
+        "r": "谓语",
+        "t": "have joined the Nobel Prizes in recent years."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -591,7 +966,28 @@
      "en": "These benefactors have succeeded in their chosen fields, they say, and they want \nto use their wealth to draw attention to those who have succeeded in science.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "These benefactors"
+       },
+       {
+        "r": "谓语",
+        "t": "have succeeded in their chosen fields,"
+       },
+       {
+        "r": "插入语",
+        "t": "they say,"
+       },
+       {
+        "r": "并列",
+        "t": "and they want to use their wealth to draw attention to those who have succeeded in science."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -612,7 +1008,28 @@
      "en": "You cannot buy class, as the old saying goes, and these upstart \nentrepreneurs cannot buy their prizes the prestige of the Nobels.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "You"
+       },
+       {
+        "r": "谓语",
+        "t": "cannot buy class,"
+       },
+       {
+        "r": "插入语",
+        "t": "as the old saying goes,"
+       },
+       {
+        "r": "并列",
+        "t": "and these upstart entrepreneurs cannot buy their prizes the prestige of the Nobels."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -654,42 +1071,124 @@
      "en": "The goals of the prize-givers seem as scattered as the criticism.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The goals of the prize-givers"
+       },
+       {
+        "r": "谓语",
+        "t": "seem as scattered as the criticism."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Some want to \nshock, others to draw people into science, or to better reward those who have \nmade their careers in research.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Some"
+       },
+       {
+        "r": "谓语",
+        "t": "want to shock, others to draw people into science, or to better reward those who have made their careers in research."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "As Nature has pointed out before, there are some legitimate concerns about \nhow science prizes - both new and old - are distributed.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语从句",
+        "t": "As Nature has pointed out before,"
+       },
+       {
+        "r": "谓语",
+        "t": "there are some legitimate concerns about how science prizes - both new and old - are distributed."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The Breakthrough Prize \nin Life Sciences, launched this year, takes an unrepresentative view of what the \nlife sciences include.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The Breakthrough Prize in Life Sciences, launched this year,"
+       },
+       {
+        "r": "谓语",
+        "t": "takes an unrepresentative view of what the life sciences include."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But the Nobel Foundation's limit of three recipients per \nprize, each of whom must still be living, has long been outgrown by the \ncollaborative nature of modem research - as will be demonstrated by the \ninevitable row over who is ignored when it comes to acknowledging the discovery \nof the Higgs boson.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "the Nobel Foundation's limit of three recipients per prize, each of whom must still be living,"
+       },
+       {
+        "r": "谓语",
+        "t": "has long been outgrown by the collaborative nature of modem research - as will be demonstrated by the inevitable row over who is ignored when it comes to acknowledging the discovery of the Higgs boson."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The Nobels were, of course, themselves set up by a very rich \nindividual who had decided what he wanted to do with his own money.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The Nobels"
+       },
+       {
+        "r": "谓语",
+        "t": "were, of course, themselves set up by a very rich individual who had decided what he wanted to do with his own money."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -703,7 +1202,24 @@
      "en": "As much as some scientists may complain about the new awards, two things \nseem clear.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s21",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "让步状语从句",
+        "t": "As much as some scientists may complain about the new awards,"
+       },
+       {
+        "r": "主语",
+        "t": "two things"
+       },
+       {
+        "r": "谓语",
+        "t": "seem clear."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -717,21 +1233,80 @@
      "en": "Second, it is surely a good thing that the money and attention come to \nscience rather than go elsewhere.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s23",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Second,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "is surely a good thing that the money and attention come to science rather than go elsewhere."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It is fair to criticize and question the mechanism \n- that is the culture of research, after all - but it is the prize-givers' money to do\nwith as they please.",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s24",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "is fair to criticize and question the mechanism - that is the culture of research, after all -"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "is the prize-givers' money to do with as they please."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It is wise to take such gifts with gratitude and grace.\n** ( - ) ij\\;;¥! \n.7. \n( \f 14 Yi)",
      "cn": "【A】 历史从来没有怀疑过它们。【B】 它们延续至今的事实彰显出其真正价值。【C】 它们是最具代表性的荣誉。【D】 长期以来它们的合理性一直受到争议。【精准定位】第四段④句指出，诺贝尔奖和新奖项一样，当年也是由有钱的私人设立，⑤句随后表明;诺奖现在在人们心目中的正统地位及其合理性是经过时间的洗礼而成，与设立者的初衷无关。即，正是\"奖项延续至今\"这一事实赋予了诺奖今天的尊贵品质，因此【B】正确。注;endurance 意为\"（时间上的）底地体现/发挥出某物的内在价值\"。【A】与原文不符∶虽然诺奖一直备受推崇，但第四段论述了新旧奖项的通病，③句提及\"诺奖基金会对获奖人数的限制\"早已与时代脱节。【C】从\"诺奖一直享有尊贵地位\"过度推出\"是最具代表性的荣誉\"，无法从第四段中找出佐证。【D】利用③句\"对诺奖局限性的说明（人数不超三人，且都要健在）\"设置干扰，但段末最终肯定了诺奖∶时间赋予其合理性地位，举世公认其价值。【技巧总结】段落事实题的四个选项对应的原文范围较大，不易定位至某个点，可以结合题干锁定的\"核心点\"先明确段落重心（首句、末句、语意转折处是重点），再大致判断几个选项的方向。本题考查第四段中有关\"诺贝尔奖\"的信息，首句谈及\"新旧奖项存在的问题\"，且③句语义转折突显\"诺奖的局限性\"，但末句 given them legitimacy 又表明\"作者最终认可诺奖地位\"，可见，\"绝对的推崇或\"绝对否定\"，不符合全段重心——有保留地肯定诺奖（提请人们能包容地看待新奖项的局限性）。虽然一些科学家可能对新奖项有诸多不满，事。对机制的批评和质疑都有其合理性———毕竞科学研究的文化就是如此——但授奖者随意支配的是自己的钱。感激大方地接受此类赠与",
      "id": "en1_2014_text3_s25",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "is wise to take such gifts with gratitude and grace."
+       },
+       {
+        "r": "页标记",
+        "t": "** ( - ) ij\\;;¥! .7. ( \f 14 Yi)"
+       }
+      ]
+     }
     },
     {
      "para": 2,
@@ -859,28 +1434,104 @@
      "en": "\"The Heart of the Matter,\" the just-released report by the American Academy \nof Arts and Sciences (AAAS), deserves praise for affirming the importance of the \nhumanities and social sciences to the prosperity and security of liberal democracy \nin America.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "\"The Heart of the Matter,\" the just-released report by the American Academy of Arts and Sciences (AAAS),"
+       },
+       {
+        "r": "谓语",
+        "t": "deserves praise for affirming the importance of the humanities and social sciences to the prosperity and security of liberal democracy in America."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Regrettably, however, the report's failure to address the true nature of \nthe crisis facing liberal education may cause more harm than good.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Regrettably, however,"
+       },
+       {
+        "r": "主语",
+        "t": "the report's failure to address the true nature of the crisis facing liberal education"
+       },
+       {
+        "r": "谓语",
+        "t": "may cause more harm than good."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In 2010, leading congressional Democrats and Republicans sent letters to the \nAAAS asking that it identify actions that could be taken by \"federal, state and local \ngovernments, universities, foundations, educators, individual benefactors and others\" \nto \"maintain national excellence in humanities and social scientific scholarship \nand education.\" In response, the American Academy formed the Commission on \nthe Humanities and Social Sciences.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "In 2010,"
+       },
+       {
+        "r": "主语",
+        "t": "leading congressional Democrats and Republicans"
+       },
+       {
+        "r": "谓语",
+        "t": "sent letters to the AAAS asking that it identify actions that could be taken by \"federal, state and local governments, universities, foundations, educators, individual benefactors and others\" to \"maintain national excellence in humanities and social scientific scholarship and education.\""
+       },
+       {
+        "r": "状语",
+        "t": "In response,"
+       },
+       {
+        "r": "主语",
+        "t": "the American Academy"
+       },
+       {
+        "r": "谓语",
+        "t": "formed the Commission on the Humanities and Social Sciences."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Among the commission's 5 1 members are \ntop-tier-university presidents, scholars, lawyers, judges, and business executives, \nas well as prominent figures from diplomacy, filmmaking, music and journalism.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "表语",
+        "t": "Among the commission's 5 1 members"
+       },
+       {
+        "r": "谓语",
+        "t": "are"
+       },
+       {
+        "r": "主语",
+        "t": "top-tier-university presidents, scholars, lawyers, judges, and business executives, as well as prominent figures from diplomacy, filmmaking, music and journalism."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -894,49 +1545,164 @@
      "en": "Because \nrepresentative government presupposes an informed citizenry, the report supports \nfull literacy; stresses the study of history and government, particularly American \nhistory and American government; and encourages the use of new digital \ntechnologies.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "原因状语从句",
+        "t": "Because representative government presupposes an informed citizenry,"
+       },
+       {
+        "r": "主语",
+        "t": "the report"
+       },
+       {
+        "r": "谓语",
+        "t": "supports full literacy; stresses the study of history and government, particularly American history and American government; and encourages the use of new digital technologies."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "To encourage innovation and competition, the report calls for \nincreased investment in research, the crafting of coherent curricula that improve \nstudents' ability to solve problems and communicate effectively in the 21 st \ncentury, increased funding for teachers and the encouragement of scholars to bring \ntheir learning to bear on the great challenges of the day.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "目的状语",
+        "t": "To encourage innovation and competition,"
+       },
+       {
+        "r": "主语",
+        "t": "the report"
+       },
+       {
+        "r": "谓语",
+        "t": "calls for increased investment in research, the crafting of coherent curricula that improve students' ability to solve problems and communicate effectively in the 21 st century, increased funding for teachers and the encouragement of scholars to bring their learning to bear on the great challenges of the day."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The report also advocates \ngreater study of foreign languages, international affairs and the expansion of study \nabroad programs.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The report"
+       },
+       {
+        "r": "谓语",
+        "t": "also advocates greater study of foreign languages, international affairs and the expansion of study abroad programs."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Unfortunately, despite 2½ years in the making, \"The Heart of the Matter\" \nnever gets to the heart of the matter: the illiberal nature of liberal education at our \nleading colleges and universities.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Unfortunately, despite 2½ years in the making,"
+       },
+       {
+        "r": "主语",
+        "t": "\"The Heart of the Matter\""
+       },
+       {
+        "r": "谓语",
+        "t": "never gets to the heart of the matter: the illiberal nature of liberal education at our leading colleges and universities."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The commission ignores that for several decades \nAmerica's colleges and universities have produced graduates who don't know the \ncontent and character of liberal education and are thus deprived of its benefits.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The commission"
+       },
+       {
+        "r": "谓语",
+        "t": "ignores"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that for several decades America's colleges and universities have produced graduates who don't know the content and character of liberal education and are thus deprived of its benefits."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Sadly, the spirit of inquiry once at home on campus has been replaced by the use \nof the humanities and social sciences as vehicles for publicizing \"progressive,\" or \nleft-liberal propaganda.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Sadly,"
+       },
+       {
+        "r": "主语",
+        "t": "the spirit of inquiry once at home on campus"
+       },
+       {
+        "r": "谓语",
+        "t": "has been replaced by the use of the humanities and social sciences as vehicles for publicizing \"progressive,\" or left-liberal propaganda."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Today, professors routinely treat the progressive interpretation of history and \nprogressive public policy as the proper subject of study while portraying conservative \nor classical liberal ideas - such as free markets and self-reliance - as falling \noutside the boundaries of routine, and sometimes legitimate, intellectual investigation.",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "Today,"
+       },
+       {
+        "r": "主语",
+        "t": "professors"
+       },
+       {
+        "r": "谓语",
+        "t": "routinely treat the progressive interpretation of history and progressive public policy as the proper subject of study while portraying conservative or classical liberal ideas - such as free markets and self-reliance - as falling outside the boundaries of routine, and sometimes legitimate, intellectual investigation."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -950,7 +1716,28 @@
      "en": "Yet its report may \nwell set back reform by obscuring the depth and breadth of the challenge that \nCongress asked it to illuminate. \n** ( - ) ij\\;;¥! \n.9. \n( \f 14 Yi)",
      "cn": "具体内容\"将 A 视为 B却将 X视为 Y\"及作者站位\"应将 X视为 B而非 Y∶传统人文思想不该被视为超\"不仅将其视为超出常规界线，而且甚至将其视为非正当的学术研究范畴\"，其中 and sometimes 暗藏语义递进\"甚至\"之意。【",
      "id": "en1_2014_text4_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "Yet"
+       },
+       {
+        "r": "主语",
+        "t": "its report"
+       },
+       {
+        "r": "谓语",
+        "t": "may well set back reform by obscuring the depth and breadth of the challenge that Congress asked it to illuminate."
+       },
+       {
+        "r": "页标记",
+        "t": "** ( - ) ij\\;;¥! .9. ( \f 14 Yi)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
