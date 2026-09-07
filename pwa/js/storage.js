@@ -566,7 +566,21 @@ if ('serviceWorker' in navigator) {
         if (!hadController) return;        // 首次安装不强制刷新（已是最新）
         if (swReloading) return;           // 防止重载循环
         swReloading = true;
-        location.reload();
+        // 新 SW 已接管：顶部提示 + 延迟刷新，避免阅读中被无提示的刷新打断
+        //（此前直接 location.reload()，用户点“全文翻译”等操作时恰好撞上 SW 更新会被误以为按钮触发了刷新）
+        try {
+            const tip = document.createElement('div');
+            tip.setAttribute('id', 'swUpdateTip');
+            Object.assign(tip.style, {
+                position: 'fixed', top: '0', left: '0', right: '0', zIndex: '99999',
+                background: 'rgba(32,36,40,0.92)', color: '#fff',
+                fontSize: '13px', textAlign: 'center', padding: '7px 12px',
+                boxShadow: '0 2px 10px rgba(0,0,0,0.3)', letterSpacing: '0.3px'
+            });
+            tip.textContent = '💡 已更新到新版本，2 秒后自动刷新…';
+            (document.body || document.documentElement).appendChild(tip);
+        } catch (e) { /* 提示失败也照常刷新 */ }
+        setTimeout(() => location.reload(), 2000);
     });
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
