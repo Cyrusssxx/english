@@ -16,7 +16,20 @@
      "en": "The decision of the New York Philharmonic to hire Alan Gilbert as its next music\ndirector has been the talk of the classical-music world ever since the sudden\nannouncement of his appointment in 2009.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The decision of the New York Philharmonic to hire Alan Gilbert as its next music director"
+       },
+       {
+        "r": "谓语",
+        "t": "has been the talk of the classical-music world ever since the sudden announcement of his appointment in 2009."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -37,77 +50,272 @@
      "en": "One of the reasons why the appointment came as such a surprise, however, is that\nGilbert is comparatively little known.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "One of the reasons why the appointment came as such a surprise,"
+       },
+       {
+        "r": "插入语",
+        "t": "however,"
+       },
+       {
+        "r": "谓语",
+        "t": "is that Gilbert is comparatively little known."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Even Tommasini, who had advocated Gilbert's\nappointment in the Times, calls him “ an unpretentious musician with no air of the\nformidable conductor about \nAs a description of the next music director of an\norchestra that has hitherto been led by musicians like Gustav Mahler and Pierre Boulez,\nthat seems likely to have struck at least some Times readers as faint praise.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Even Tommasini, who had advocated Gilbert's appointment in the Times,"
+       },
+       {
+        "r": "谓语",
+        "t": "calls him “ an unpretentious musician with no air of the formidable conductor about"
+       },
+       {
+        "r": "状语",
+        "t": "As a description of the next music director of an orchestra that has hitherto been led by musicians like Gustav Mahler and Pierre Boulez,"
+       },
+       {
+        "r": "主语",
+        "t": "that"
+       },
+       {
+        "r": "谓语",
+        "t": "seems likely to have struck at least some Times readers as faint praise."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "For my part, I have no idea whether Gilbert is a great conductor or even a good one.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "For my part,"
+       },
+       {
+        "r": "主语",
+        "t": "I"
+       },
+       {
+        "r": "谓语",
+        "t": "have no idea whether Gilbert is a great conductor or even a good one."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "To be sure, he performs an impressive variety of interesting compositions, but it is not\nnecessary for me to visit Avery Fisher Hall, or anywhere else, to hear interesting\norchestral music.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "To be sure,"
+       },
+       {
+        "r": "主语",
+        "t": "he"
+       },
+       {
+        "r": "谓语",
+        "t": "performs an impressive variety of interesting compositions,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "is not necessary for me to visit Avery Fisher Hall, or anywhere else, to hear interesting orchestral music."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "All I have to do is to go to my CD shel£ or boot up my computer and\ndownload still more recorded music from iTunes.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "All I have to do"
+       },
+       {
+        "r": "谓语",
+        "t": "is to go to my CD shel£ or boot up my computer and download still more recorded music from iTunes."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Devoted concertgoers who reply that recordings are no substitute for live\nperformance are missing the point.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Devoted concertgoers who reply that recordings are no substitute for live performance"
+       },
+       {
+        "r": "谓语",
+        "t": "are missing the point."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "For the time, attention, and money of the art-loving\npublic, classical instrumentalists must compete not only with opera houses, dance\ntroupes, theater companies, and museums, but also with the recorded performances of\nthe great classical musicians of the 20th century.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "For the time, attention, and money of the art-loving public,"
+       },
+       {
+        "r": "主语",
+        "t": "classical instrumentalists"
+       },
+       {
+        "r": "谓语",
+        "t": "must compete not only with opera houses, dance troupes, theater companies, and museums, but also with the recorded performances of the great classical musicians of the 20th century."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "These recordings are cheap, available\neverywhere, and very often much higher in artistic quality than today's live\nperformances; moreover, they can be ccconsumed99 at a time and place of the listener's\nchoosing.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "These recordings"
+       },
+       {
+        "r": "谓语",
+        "t": "are cheap, available everywhere, and very often much higher in artistic quality than today's live performances;"
+       },
+       {
+        "r": "并列",
+        "t": "moreover, they can be ccconsumed99 at a time and place of the listener's choosing."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The widespread availability of such recordings has thus brought about a crisis\nin the institution of the traditional classical concert.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The widespread availability of such recordings"
+       },
+       {
+        "r": "谓语",
+        "t": "has thus brought about a crisis in the institution of the traditional classical concert."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "One possible response is for classical performers to program attractive new music\nthat is not yet available on record.",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "One possible response"
+       },
+       {
+        "r": "谓语",
+        "t": "is for classical performers to program attractive new music that is not yet available on record."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Gilbert's own interest in new music has been widely\nnoted: Alex Ross, a classical-music critic, has described him as a man who is capable of\nturning the Philharmonic into \" a markedly different, more vibrant organization.\" But\nwhat will be the nature of that difference?",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Gilbert's own interest in new music"
+       },
+       {
+        "r": "谓语",
+        "t": "has been widely noted: Alex Ross, a classical-music critic, has described him as a man who is capable of turning the Philharmonic into \" a markedly different, more vibrant organization.\""
+       },
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "谓语",
+        "t": "what will be the nature of that difference?"
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -121,7 +329,28 @@
      "en": "If Gilbert and the Philharmonic are to succeed, they must first\nchange the relationship between America's oldest orchestra and the new audience it\nhopes to attract.\n2011年英语（一）试题第3 页共1 4 页",
      "cn": "对于古典音乐演奏者而言，一种可能的力的新音乐作品。吉尔伯特本人对新音乐·罗斯称其为一个有能力将纽约爱乐乐团们必须首先改变\"美国最古老的交响乐团\"",
      "id": "en1_2011_text1_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If Gilbert and the Philharmonic are to succeed,"
+       },
+       {
+        "r": "主语",
+        "t": "they"
+       },
+       {
+        "r": "谓语",
+        "t": "must first change the relationship between America's oldest orchestra and the new audience it hopes to attract."
+       },
+       {
+        "r": "页标记",
+        "t": "2011年英语（一）试题第3 页共1 4 页"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -266,28 +495,100 @@
      "en": "When Liam McGee departed as president of Bank of America in August, his\nexplanation was surprisingly straight up.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语从句",
+        "t": "When Liam McGee departed as president of Bank of America in August,"
+       },
+       {
+        "r": "主语",
+        "t": "his explanation"
+       },
+       {
+        "r": "谓语",
+        "t": "was surprisingly straight up."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Rather than cloaking his exit in the usual vague\nexcuses, he came right out and said he was leaving ccto pursue my goal of running a\ncompany.\" Broadcasting his ambition was 66very much my decision,“ McGee says.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Rather than cloaking his exit in the usual vague excuses,"
+       },
+       {
+        "r": "主语",
+        "t": "he"
+       },
+       {
+        "r": "谓语",
+        "t": "came right out and said he was leaving ccto pursue my goal of running a company.\""
+       },
+       {
+        "r": "主语",
+        "t": "Broadcasting his ambition"
+       },
+       {
+        "r": "谓语",
+        "t": "was 66very much my decision,“ McGee says."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Within two weeks, he was talking for the first time with the board of Hartford Financial\nServices Group, which named him CEO and chairman on September 29.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "Within two weeks,"
+       },
+       {
+        "r": "主语",
+        "t": "he"
+       },
+       {
+        "r": "谓语",
+        "t": "was talking for the first time with the board of Hartford Financial Services Group, which named him CEO and chairman on September 29."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "McGee says leaving without a position lined up gave him time to reflect on what\nkind of company he wanted to run.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "McGee"
+       },
+       {
+        "r": "谓语",
+        "t": "says leaving without a position lined up gave him time to reflect on what kind of company he wanted to run."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -308,14 +609,48 @@
      "en": "In recent weeks the No.2 executives at\nAvon and American Express quit with the explanation that they were looking fbr a CEO\npost.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "In recent weeks"
+       },
+       {
+        "r": "主语",
+        "t": "the No.2 executives at Avon and American Express"
+       },
+       {
+        "r": "谓语",
+        "t": "quit with the explanation that they were looking fbr a CEO post."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "As boards scrutinize succession plans in response to shareholder pressure,\nexecutives who don't get the nod also may wish to move on.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语从句",
+        "t": "As boards scrutinize succession plans in response to shareholder pressure,"
+       },
+       {
+        "r": "主语",
+        "t": "executives who don't get the nod"
+       },
+       {
+        "r": "谓语",
+        "t": "also may wish to move on."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -329,14 +664,48 @@
      "en": "As the first signs of recovery begin to take hold, deputy chiefs may be more willing\nto make the jump without a net.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语从句",
+        "t": "As the first signs of recovery begin to take hold,"
+       },
+       {
+        "r": "主语",
+        "t": "deputy chiefs"
+       },
+       {
+        "r": "谓语",
+        "t": "may be more willing to make the jump without a net."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In the third quarter, CEO turnover was down 23% from\na year ago as nervous boards stuck with the leaders they had, according to Liberum\nResearch.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "In the third quarter,"
+       },
+       {
+        "r": "主语",
+        "t": "CEO turnover"
+       },
+       {
+        "r": "谓语",
+        "t": "was down 23% from a year ago as nervous boards stuck with the leaders they had, according to Liberum Research."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -357,14 +726,52 @@
      "en": "For\nyears executives and headhunters have adhered to the rule that the most attractive CEO\ncandidates are the ones who must be poached.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "For years"
+       },
+       {
+        "r": "主语",
+        "t": "executives and headhunters"
+       },
+       {
+        "r": "谓语",
+        "t": "have adhered to the rule that the most attractive CEO candidates are the ones who must be poached."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Says Kom/Ferry senior partner Dennis\nCarey: \"I can't think of a single search I've done where a board has not instructed me to\nlook at sitting CEOs first.55\nThose who jumped without a job haven,t always landed in top positions quickly.",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "Says Kom/Ferry senior partner Dennis Carey:"
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"I can't think of a single search I've done where a board has not instructed me to look at sitting CEOs first.55"
+       },
+       {
+        "r": "主语",
+        "t": "Those who jumped without a job haven,t"
+       },
+       {
+        "r": "谓语",
+        "t": "always landed in top positions quickly."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -406,7 +813,32 @@
      "en": "The financial\ncrisis has made it more acceptable to be between jobs or to leave a bad one. \"The\ntraditional rule was ifs safer to stay where you are, but thafs been fundamentally\ninverted/5 says one headhunter. \"The people who5ve been hurt the worst are those\nwho've stayed too long.”\n2011年英语（一）试题第5 页共1 4 页",
      "cn": "离职理由∶想去管理一家公司，喑示麦基为裸辞。②And McGee isn't alone∶麦基并非高调裸辞的唯——不光彩正在淡去。纵观以上段落主题句可知，全文一直都是在讲高管的裸辞，【C】正确。",
      "id": "en1_2011_text2_s21",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The financial crisis"
+       },
+       {
+        "r": "谓语",
+        "t": "has made it more acceptable to be between jobs or to leave a bad one."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"The traditional rule was ifs safer to stay where you are, but thafs been fundamentally inverted/5 says one headhunter."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"The people who5ve been hurt the worst are those who've stayed too long.”"
+       },
+       {
+        "r": "页标记",
+        "t": "2011年英语（一）试题第5 页共1 4 页"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -540,21 +972,68 @@
      "en": "While traditional “paid\" media-\nsuch as television commercials and print\nadvertisements一still play a major role, companies today can exploit many alternative\nforms of media.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "让步状语从句",
+        "t": "While traditional “paid\" media- such as television commercials and print advertisements一still play a major role,"
+       },
+       {
+        "r": "主语",
+        "t": "companies today"
+       },
+       {
+        "r": "谓语",
+        "t": "can exploit many alternative forms of media."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Consumers passionate about a product may create cc earned55 media by\nwillingly promoting it to friends, and a company may leverage “owned“ media by\nsending e-mail alerts about products and sales to customers registered with its Web site.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Consumers passionate about a product"
+       },
+       {
+        "r": "谓语",
+        "t": "may create cc earned55 media by willingly promoting it to friends,"
+       },
+       {
+        "r": "并列",
+        "t": "and a company may leverage “owned“ media by sending e-mail alerts about products and sales to customers registered with its Web site."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The way consumers now approach the process of making purchase decisions means that\nmarketing's impact stems from a broad range of factors beyond conventional paid media.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The way consumers now approach the process of making purchase decisions"
+       },
+       {
+        "r": "谓语",
+        "t": "means that marketing's impact stems from a broad range of factors beyond conventional paid media."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -575,77 +1054,240 @@
      "en": "But in some\ncases, one marketer's owned media become another marketer's paid media—fbr instance,\nwhen an e-commerce retailer sells ad space on its Web site.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "状语",
+        "t": "in some cases,"
+       },
+       {
+        "r": "主语",
+        "t": "one marketer's owned media"
+       },
+       {
+        "r": "谓语",
+        "t": "become another marketer's paid media—fbr instance, when an e-commerce retailer sells ad space on its Web site."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "We define such sold media\nas owned media whose traffic is so strong that other organizations place their content or\ne-commerce engines within that environment.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "We"
+       },
+       {
+        "r": "谓语",
+        "t": "define such sold media as owned media whose traffic is so strong that other organizations place their content or e-commerce engines within that environment."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "This trend, which we believe is still in its\ninfancy, effectively began with retailers and travel providers such as airlines and hotels\nand will no doubt go fiirther.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This trend, which we believe is still in its infancy,"
+       },
+       {
+        "r": "谓语",
+        "t": "effectively began with retailers and travel providers such as airlines and hotels and will no doubt go fiirther."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Johnson & Johnson, fbr example, has created BabyCenter,\na stand-alone media property that promotes complementary and even competitive\nproducts.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Johnson & Johnson, fbr example,"
+       },
+       {
+        "r": "谓语",
+        "t": "has created BabyCenter, a stand-alone media property that promotes complementary and even competitive products."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Besides generating income, the presence of other marketers makes the site\nseem objective, gives companies opportunities to learn valuable information about the\nappeal of other companies5 marketing, and may help expand user traffic fbr all\ncompanies concerned.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Besides generating income,"
+       },
+       {
+        "r": "主语",
+        "t": "the presence of other marketers"
+       },
+       {
+        "r": "谓语",
+        "t": "makes the site seem objective, gives companies opportunities to learn valuable information about the appeal of other companies5 marketing, and may help expand user traffic fbr all companies concerned."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The same dramatic technological changes that have provided marketers with more\n(and more diverse) communications choices have also increased the risk that passionate\nconsumers will voice their opinions in quicker, more visible, and much more damaging\nways.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The same dramatic technological changes that have provided marketers with more (and more diverse) communications choices"
+       },
+       {
+        "r": "谓语",
+        "t": "have also increased the risk that passionate consumers will voice their opinions in quicker, more visible, and much more damaging ways."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Such hijacked media are the opposite of earned media: an asset or campaign\nbecomes hostage to consumers, other stakeholders, or activists who make negative\nallegations about a brand or product.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Such hijacked media"
+       },
+       {
+        "r": "谓语",
+        "t": "are the opposite of earned media: an asset or campaign becomes hostage to consumers, other stakeholders, or activists who make negative allegations about a brand or product."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Members of social networks, fbr instance, are\nlearning that they can hijack media to apply pressure on the businesses that originally\ncreated them.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Members of social networks, fbr instance,"
+       },
+       {
+        "r": "谓语",
+        "t": "are learning that they can hijack media to apply pressure on the businesses that originally created them."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "If that happens, passionate consumers would try to persuade others to boycott\nproducts, putting the reputation of the target company at risk.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If that happens,"
+       },
+       {
+        "r": "主语",
+        "t": "passionate consumers"
+       },
+       {
+        "r": "谓语",
+        "t": "would try to persuade others to boycott products, putting the reputation of the target company at risk."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "In such a case, the\ncompany5 s response may not be sufficiently quick or thoughtfill, and the learning curve\nhas been steep.",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In such a case,"
+       },
+       {
+        "r": "主语",
+        "t": "the company5 s response"
+       },
+       {
+        "r": "谓语",
+        "t": "may not be sufficiently quick or thoughtfill, and the learning curve has been steep."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Toyota Motor, for example, alleviated some of the damage from its recall\ncrisis earlier this year with a relatively quick and well-orchestrated social-media\nresponse campaign, which included efforts to engage with consumers directly on sites\nsuch as Twitter and the social-news site Digg.\n2011年英语（一）试题第7 页共1 4 页",
      "cn": "营销成功的大致准则曾经是∶使你的消费者发送关于产品及减价信息的电子响来自于超越传统付费媒介的众多因素 。",
      "id": "en1_2011_text3_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Toyota Motor, for example, alleviated some of the damage from its recall crisis earlier this year with a relatively quick and well-orchestrated social-media response campaign, which included efforts to engage with consumers directly on sites such as Twitter and the social-news site Digg."
+       },
+       {
+        "r": "页标记",
+        "t": "2011年英语（一）试题第7 页共1 4 页"
+       }
+      ]
+     }
     }
    ],
    "questions": [],
@@ -665,28 +1307,92 @@
      "en": "It's no surprise that Jennifer Senior5s insightful, provocative magazine cover story,\n“I love My Children, I Hate My Life/9 is arousing much chatter-\nnothing gets people\ntalking like the suggestion that child rearing is anything less than a completely fillfilling,\nlife-enriching experience.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It's no surprise that Jennifer Senior5s insightful, provocative magazine cover story, “I love My Children, I Hate My Life/9"
+       },
+       {
+        "r": "谓语",
+        "t": "is arousing much chatter- nothing gets people talking like the suggestion that child rearing is anything less than a completely fillfilling, life-enriching experience."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Rather than concluding that children make parents either\nhappy or miserable, Senior suggests we need to redefine happiness: instead of thinking\nof it as something that can be measured by moment-to-moment joy, we should consider\nbeing happy as a past-tense condition.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Rather than concluding that children make parents either happy or miserable,"
+       },
+       {
+        "r": "主语",
+        "t": "Senior"
+       },
+       {
+        "r": "谓语",
+        "t": "suggests we need to redefine happiness: instead of thinking of it as something that can be measured by moment-to-moment joy, we should consider being happy as a past-tense condition."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Even though the day-to-day experience of raising\nkids can be soul-cmshingly hard, Senior writes that ccthe very things that in the moment\ndampen our moods can later be sources of intense gratification and delight.,,\nThe magazine cover showing an attractive mother holding a cute baby is hardly the\nonly Madonna-and-child image on newsstands this week.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "让步状语从句",
+        "t": "Even though the day-to-day experience of raising kids can be soul-cmshingly hard,"
+       },
+       {
+        "r": "谓语",
+        "t": "Senior writes that ccthe very things that in the moment dampen our moods can later be sources of intense gratification and delight.,,"
+       },
+       {
+        "r": "主语",
+        "t": "The magazine cover showing an attractive mother holding a cute baby"
+       },
+       {
+        "r": "谓语",
+        "t": "is hardly the only Madonna-and-child image on newsstands this week."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "There are also stories about\nnewly adoptive 一 and newly single 一 mom Sandra Bullock, as well as the usual\n''Jennifer Aniston is pregnant55 news.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "There are also stories about newly adoptive 一 and newly single 一 mom Sandra Bullock,"
+       },
+       {
+        "r": "并列",
+        "t": "as well as the usual ''Jennifer Aniston is pregnant55 news."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -700,56 +1406,196 @@
      "en": "In a society that so persistently celebrates procreation, is it any wonder that\nadmitting you regret having children is equivalent to admitting you support kitten­\nkilling?",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In a society that so persistently celebrates procreation,"
+       },
+       {
+        "r": "谓语",
+        "t": "is it any wonder that admitting you regret having children is equivalent to admitting you support kitten­ killing?"
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It doesn,t seem quite fair, then, to compare the regrets of parents to the regrets\nof the childless.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It doesn,t"
+       },
+       {
+        "r": "谓语",
+        "t": "seem quite fair, then, to compare the regrets of parents to the regrets of the childless."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Unhappy parents rarely are provoked to wonder if they shouldn5t have\nhad kids, but unhappy childless folks are bothered with the message that children are the\nsingle most important thing in the world: obviously their misery must be a direct result\nof the gaping baby-size holes in their lives.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Unhappy parents"
+       },
+       {
+        "r": "谓语",
+        "t": "rarely are provoked to wonder if they shouldn5t have had kids,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "主语",
+        "t": "unhappy childless folks"
+       },
+       {
+        "r": "谓语",
+        "t": "are bothered with the message that children are the single most important thing in the world: obviously their misery must be a direct result of the gaping baby-size holes in their lives."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Of course, the image of parenthood that celebrity magazines like Us Weekly and\nPeople present is hugely unrealistic, especially when the parents are single mothers like\nBullock.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Of course,"
+       },
+       {
+        "r": "主语",
+        "t": "the image of parenthood that celebrity magazines like Us Weekly and People present"
+       },
+       {
+        "r": "谓语",
+        "t": "is hugely unrealistic, especially when the parents are single mothers like Bullock."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "According to several studies concluding that parents are less happy than childless\ncouples, single parents are the least happy of all.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "According to several studies concluding that parents are less happy than childless couples,"
+       },
+       {
+        "r": "主语",
+        "t": "single parents"
+       },
+       {
+        "r": "谓语",
+        "t": "are the least happy of all."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "No shock there, considering how much\nwork it is to raise a kid without a partner to lean on; yet to hear Sandra and Britney tell it,\nraising a kid on their \"own” (read: with round-the-clock help) is a piece of cake.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "No shock there, considering how much work it is to raise a kid without a partner to lean on;"
+       },
+       {
+        "r": "转折词",
+        "t": "yet"
+       },
+       {
+        "r": "状语",
+        "t": "to hear Sandra and Britney tell it,"
+       },
+       {
+        "r": "主语",
+        "t": "raising a kid on their \"own” (read: with round-the-clock help)"
+       },
+       {
+        "r": "谓语",
+        "t": "is a piece of cake."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It's hard to imagine that many people are dumb enough to want children just\nbecause Reese and Angelina make it look so glamorous: most adults understand that a\nbaby is not a haircut.",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It's hard to imagine that many people are dumb enough to want children just because Reese and Angelina make it look so glamorous: most adults understand that a baby is not a haircut."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But it5s interesting to wonder if the images we see every week of\nstress-free, happiness-enhancing parenthood aren't in some small, subconscious way\ncontributing to our own dissatisfactions with the actual experience, in the same way that\na small part of us hoped getting ccthe Rachel“ might make us look just a little bit like\nJennifer Aniston.\n2011年英语（一）试题第9 页共1 4 页",
      "cn": "在一个如此执着于颂扬生育的社会，\"承认后悔生儿育女\"就等同于\"承认赞同残杀小猫\"又有什么奇怪呢?所以，将\"为人父的窟隆所带来的直接后果。",
      "id": "en1_2011_text4_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "it5s"
+       },
+       {
+        "r": "谓语",
+        "t": "interesting to wonder if the images we see every week of stress-free, happiness-enhancing parenthood aren't in some small, subconscious way contributing to our own dissatisfactions with the actual experience, in the same way that a small part of us hoped getting ccthe Rachel“ might make us look just a little bit like Jennifer Aniston."
+       },
+       {
+        "r": "页标记",
+        "t": "2011年英语（一）试题第9 页共1 4 页"
+       }
+      ]
+     }
     }
    ],
    "questions": [
