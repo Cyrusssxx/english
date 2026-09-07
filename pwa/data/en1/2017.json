@@ -16,7 +16,20 @@
      "en": "First two hours, now three hours - this is how far in advance authorities are \nrecommending people show up to catch a domestic flight, at least at some major \nU.S. airports with increasingly massive security lines.",
      "cn": "起先是两小时，如今是三小时——这是官方建议搭乘国内航班的乘客需提前抵达机场的时间，至少在安检队伍越来越长的美国几大主要机场是如此。",
      "id": "en1_2017_text1_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "First two hours, now three hours - this"
+       },
+       {
+        "r": "谓语",
+        "t": "is how far in advance authorities are recommending people show up to catch a domestic flight, at least at some major U.S. airports with increasingly massive security lines."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -30,49 +43,160 @@
      "en": "The crash of EgyptAir Flight 804, which terrorists may \nhave downed over the Mediterranean Sea, provides another tragic reminder of \nwhy.",
      "cn": "埃及航空 804 航班疑遭恐怖分子袭击而坠入地中海，这一悲剧再一次提醒着人们为何支持安检。",
      "id": "en1_2017_text1_s03",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The crash of EgyptAir Flight 804, which terrorists may have downed over the Mediterranean Sea,"
+       },
+       {
+        "r": "谓语",
+        "t": "provides another tragic reminder of why."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But demanding too much of air travelers or providing too little security in \nreturn undermines public support for the process.",
      "cn": "但是，对航空旅客要求太多，或向他们提供的相应安全保障太少，都会削弱旅客对这一程序的支持。",
      "id": "en1_2017_text1_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "demanding too much of air travelers or providing too little security in return"
+       },
+       {
+        "r": "谓语",
+        "t": "undermines public support for the process."
+       }
+      ]
+     }
     },
     {
      "para": 2,
      "en": "And it should: Wasted time is a \ndrag on Americans' economic and private lives, not to mention infuriating.",
      "cn": "而这是理所应当的：浪费的时间拖累美国人民的经济生活和私人生活，更不必说还令人愤怒。",
      "id": "en1_2017_text1_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "并列",
+        "t": "And"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "should: Wasted time is a drag on Americans' economic and private lives, not to mention infuriating."
+       }
+      ]
+     }
     },
     {
      "para": 2,
      "en": "Last year, the Transportation Security Administration (TSA) found in a secret \ncheck that undercover investigators were able to sneak weapons - both fake and \nreal - past airport security nearly every time they tried.",
      "cn": "去年，美国运输安全管理局（TSA）在一次秘密调查中发现，卧底调查员能够偷偷携带武器（不管真假）成功通过机场安检，几乎屡试不爽。",
      "id": "en1_2017_text1_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "时间状语",
+        "t": "Last year,"
+       },
+       {
+        "r": "主语",
+        "t": "the Transportation Security Administration (TSA)"
+       },
+       {
+        "r": "谓语",
+        "t": "found in a secret check"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that undercover investigators were able to sneak weapons - both fake and real - past airport security nearly every time they tried."
+       }
+      ]
+     }
     },
     {
      "para": 2,
      "en": "Enhanced security \nmeasures since then, combined with a rise in airline travel due to the improving \neconomy and low oil prices, have resulted in long waits at major airports such as \nChicago's O'Hare International.",
      "cn": "自那以后，安全措施有所加强，加上选择航空旅行的人数也因经济好转和低油价而有所增加，导致旅客在芝加哥奥黑尔国际机场等主要机场等候时间过长。",
      "id": "en1_2017_text1_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Enhanced security measures since then, combined with a rise in airline travel due to the improving economy and low oil prices,"
+       },
+       {
+        "r": "谓语",
+        "t": "have resulted in long waits at major airports such as Chicago's O'Hare International."
+       }
+      ]
+     }
     },
     {
      "para": 2,
      "en": "It is not yet clear how much more effective \nairline security has become - but the lines are obvious.",
      "cn": "航空安检的有效性提升了多少尚不清楚，但候机队伍（长）是显而易见的。",
      "id": "en1_2017_text1_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "is not yet clear how much more effective airline security has become - but the lines are obvious."
+       }
+      ]
+     }
     },
     {
      "para": 3,
      "en": "Part of the issue is that the government did not anticipate the steep increase in \nairline travel, so the TSA is now rushing to get new screeners on the line.",
      "cn": "部分问题在于政府没有预计到航空旅客人数激增的情况，因此运输安全管理局正仓促招募新的安检员。",
      "id": "en1_2017_text1_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Part of the issue"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "表语从句",
+        "t": "that the government did not anticipate the steep increase in airline travel, so the TSA is now rushing to get new screeners on the line."
+       }
+      ]
+     }
     },
     {
      "para": 3,
@@ -86,14 +210,48 @@
      "en": "Another \nfactor may be that more people are trying to overpack their carry-on bags to avoid \nchecked-baggage fees, though the airlines strongly dispute this.",
      "cn": "另一原因可能是更多旅客试图多带随身行李，以免去托运行李的费用，不过航空公司均强烈抵制这一做法。",
      "id": "en1_2017_text1_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Another factor"
+       },
+       {
+        "r": "谓语",
+        "t": "may be"
+       },
+       {
+        "r": "表语从句",
+        "t": "that more people are trying to overpack their carry-on bags to avoid checked-baggage fees,"
+       },
+       {
+        "r": "让步状语从句",
+        "t": "though the airlines strongly dispute this."
+       }
+      ]
+     }
     },
     {
      "para": 3,
      "en": "There is one step the TSA could take that would not require remodeling \nairports or rushing to hire: Enroll more people in the PreCheck program.",
      "cn": "TSA 可以采取一项措施，而无需改造机场或急聘员工：将更多人纳入预检计划。",
      "id": "en1_2017_text1_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "There is one step the TSA could take that would not require remodeling airports or rushing to hire:"
+       },
+       {
+        "r": "并列",
+        "t": "Enroll more people in the PreCheck program."
+       }
+      ]
+     }
     },
     {
      "para": 4,
@@ -128,7 +286,24 @@
      "en": "It has not gotten anywhere close to that, and one big reason is sticker shock: \nPassengers must pay $85 every five years to process their background checks.",
      "cn": "实际人数远未达到这一目标，一大原因在于标价冲击波（价格过高带来的震惊）。",
      "id": "en1_2017_text1_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "has not gotten anywhere close to that,"
+       },
+       {
+        "r": "并列",
+        "t": "and one big reason is sticker shock: Passengers must pay $85 every five years to process their background checks."
+       }
+      ]
+     }
     },
     {
      "para": 5,
@@ -149,14 +324,44 @@
      "en": "But Congress should \nlook into doing so directly, by helping to finance PreCheck enrollment or to cut \ncosts in other ways.",
      "cn": "即将进行的改革可能会使价格降至更合理的水平。",
      "id": "en1_2017_text1_s20",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "Congress"
+       },
+       {
+        "r": "谓语",
+        "t": "should look into doing so directly, by helping to finance PreCheck enrollment or to cut costs in other ways."
+       }
+      ]
+     }
     },
     {
      "para": 6,
      "en": "The TSA cannot continue diverting resources into underused PreCheck lanes \nwhile most of the traveling public suffers in unnecessary lines.",
      "cn": "但是国会应该考虑直接降低价格，这可以通过向预检注册提供资金或削减其他方面的开支来实现。",
      "id": "en1_2017_text1_s21",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The TSA"
+       },
+       {
+        "r": "谓语",
+        "t": "cannot continue diverting resources into underused PreCheck lanes while most of the traveling public suffers in unnecessary lines."
+       }
+      ]
+     }
     },
     {
      "para": 6,
@@ -330,14 +535,44 @@
      "en": "Protests have erupted over construction of the Thirty Meter \nTelescope (TMT), a giant observatory that promises to revolutionize humanity's \nview of the cosmos.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Protests"
+       },
+       {
+        "r": "谓语",
+        "t": "have erupted over construction of the Thirty Meter Telescope (TMT), a giant observatory that promises to revolutionize humanity's view of the cosmos."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "At issue is the TMT's planned location on Mauna Kea, a dormant volcano \nworshiped by some Hawaiians as the piko, that connects the Hawaiian Islands to \nthe heavens.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "表语",
+        "t": "At issue"
+       },
+       {
+        "r": "谓语",
+        "t": "is"
+       },
+       {
+        "r": "主语",
+        "t": "the TMT's planned location on Mauna Kea, a dormant volcano worshiped by some Hawaiians as the piko, that connects the Hawaiian Islands to the heavens."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -351,7 +586,24 @@
      "en": "Rested in the Pacific Ocean, Mauna Kea's peak rises above the bulk of \nour planet's dense atmosphere, where conditions allow telescopes to obtain \nimages of unsurpassed clarity.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Rested in the Pacific Ocean,"
+       },
+       {
+        "r": "主语",
+        "t": "Mauna Kea's peak"
+       },
+       {
+        "r": "谓语",
+        "t": "rises above the bulk of our planet's dense atmosphere, where conditions allow telescopes to obtain images of unsurpassed clarity."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -365,7 +617,20 @@
      "en": "A small but vocal \ngroup of Hawaiians and environmentalists have long viewed their presence as \ndisrespect for sacred land and a painful reminder of the occupation of what was \nonce a sovereign nation.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A small but vocal group of Hawaiians and environmentalists"
+       },
+       {
+        "r": "谓语",
+        "t": "have long viewed their presence as disrespect for sacred land and a painful reminder of the occupation of what was once a sovereign nation."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -379,21 +644,72 @@
      "en": "In their \neagerness to build bigger telescopes, they forgot that science is not the only way \nof understanding the world.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In their eagerness to build bigger telescopes,"
+       },
+       {
+        "r": "主语",
+        "t": "they"
+       },
+       {
+        "r": "谓语",
+        "t": "forgot"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that science is not the only way of understanding the world."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "They did not always prioritize the protection of \nMauna Kea's fragile ecosystems or its holiness to the island's inhabitants.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "They"
+       },
+       {
+        "r": "谓语",
+        "t": "did not always prioritize the protection of Mauna Kea's fragile ecosystems or its holiness to the island's inhabitants."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Hawaiian \nculture is not a relic of the past; it is a living culture undergoing a renaissance today.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s13",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Hawaiian culture"
+       },
+       {
+        "r": "谓语",
+        "t": "is not a relic of the past;"
+       },
+       {
+        "r": "并列",
+        "t": "it is a living culture undergoing a renaissance today."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -407,21 +723,68 @@
      "en": "The same curiosity to find what lies beyond the horizon that first \nbrought early Polynesians to Hawaii's shores inspires astronomers today to \nexplore the heavens.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The same curiosity to find what lies beyond the horizon that first brought early Polynesians to Hawaii's shores"
+       },
+       {
+        "r": "谓语",
+        "t": "inspires astronomers today to explore the heavens."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Calls to disassemble all telescopes on Mauna Kea or to ban \nfuture development there ignore the reality that astronomy and Hawaiian culture \nboth seek to answer big questions about who we are, where we come from and \nwhere we are going.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Calls to disassemble all telescopes on Mauna Kea or to ban future development there"
+       },
+       {
+        "r": "谓语",
+        "t": "ignore the reality"
+       },
+       {
+        "r": "定语从句",
+        "t": "that astronomy and Hawaiian culture both seek to answer big questions about who we are, where we come from and where we are going."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Perhaps that is why we explore the starry skies, as if \nanswering a primal calling to know ourselves and our true ancestral homes.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Perhaps"
+       },
+       {
+        "r": "主语",
+        "t": "that"
+       },
+       {
+        "r": "谓语",
+        "t": "is why we explore the starry skies, as if answering a primal calling to know ourselves and our true ancestral homes."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -435,21 +798,64 @@
      "en": "The TMT site was chosen to minimize the telescope's visibility \naround the island and to avoid archaeological and environmental impact.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The TMT site"
+       },
+       {
+        "r": "谓语",
+        "t": "was chosen to minimize the telescope's visibility around the island and to avoid archaeological and environmental impact."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "To limit \nthe number of telescopes on Mauna Kea, old ones will be removed at the end of \ntheir lifetimes and their sites returned to a natural state.",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s20",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "目的状语",
+        "t": "To limit the number of telescopes on Mauna Kea,"
+       },
+       {
+        "r": "主语",
+        "t": "old ones"
+       },
+       {
+        "r": "谓语",
+        "t": "will be removed at the end of their lifetimes and their sites returned to a natural state."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "There is no reason why \neveryone cannot be welcomed on Mauna Kea to embrace their cultural heritage \nand to study the stars. \n.5. \n(-3¾-14 yf)",
      "cn": "Hawaiian culture both seek to...将文意\"天文学与夏威夷文化在本质使命上具有相通之处\"扭曲为\"天文学能够揭示夏威夷文化的起源\"。【D】将③句\"天文学与夏威夷文化都在探索相同人类本源问题\"主观臆断出\"天文学的进步将缓和夏威夷人的敌意\"，而这实为作者期冀的结果，并非事实。【技巧总结】本题既考查对文中细节的概括推理，也考查对段落主旨的理解。解答此类题关键在于搞清段落中各句/句群与段落主旨的关系，正确项是对段落主旨的高度概述，具有抽象性，不直接对应原文字句，而是其思想内容的升华。干扰项虽然通常是对文中某一信息的推导，但都偏离/背离段落主旨。以此题为例，【A】是对第五段主旨\"天文学与夏威夷文化根本上是相通的∶都具有探索未知世界的好奇心，设法解答同样的重要问题\"的高度概述，即\"天文学与夏威夷文化具有相同的（探索未知世界的）梦想\";而【B】、EC】、【D】则对文中某一具体信息过度推断，添加主观捏造成分。天文学界正在做出让步，来改变其对",
      "id": "en1_2017_text2_s21",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "谓语",
+        "t": "There is no reason why everyone cannot be welcomed on Mauna Kea to embrace their cultural heritage and to study the stars."
+       },
+       {
+        "r": "页标记",
+        "t": ".5. (-3¾-14 yf)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -602,7 +1008,36 @@
      "en": "Kennedy once said that a country's GDP measures \"everything \nexcept that which makes life worthwhile.\" With Britain voting to leave the \nEuropean Union, and GDP already predicted to slow as a result, it is now a timely \nmoment to assess what he was referring to.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Kennedy"
+       },
+       {
+        "r": "谓语",
+        "t": "once said"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that a country's GDP measures \"everything except that which makes life worthwhile.\""
+       },
+       {
+        "r": "状语",
+        "t": "With Britain voting to leave the European Union, and GDP already predicted to slow as a result,"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "is now a timely moment to assess what he was referring to."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -623,42 +1058,136 @@
      "en": "It measures things that do \nnot matter and misses things that do.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "measures things that do not matter and misses things that do."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "By most recent measures, the UK's GDP has \nbeen the envy of the Western world, with record low unemployment and high \ngrowth figures.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "By most recent measures,"
+       },
+       {
+        "r": "主语",
+        "t": "the UK's GDP"
+       },
+       {
+        "r": "谓语",
+        "t": "has been the envy of the Western world, with record low unemployment and high growth figures."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "If everything was going so well, then why did over 17 million \npeople vote for Brexit, despite the warnings about what it could do to their \ncountry's economic prospects?",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s07",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If everything was going so well,"
+       },
+       {
+        "r": "主语",
+        "t": "then why"
+       },
+       {
+        "r": "谓语",
+        "t": "did over 17 million people vote for Brexit, despite the warnings about what it could do to their country's economic prospects?"
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "A recent annual study of countries and their ability to convert growth into \nwell-being sheds some light on that question.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s08",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "A recent annual study of countries and their ability to convert growth into well-being"
+       },
+       {
+        "r": "谓语",
+        "t": "sheds some light on that question."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Across the 163 countries measured, \nthe UK is one of the poorest performers in ensuring that economic growth is \ntranslated into meaningful improvements for its citizens.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Across the 163 countries measured,"
+       },
+       {
+        "r": "主语",
+        "t": "the UK"
+       },
+       {
+        "r": "谓语",
+        "t": "is one of the poorest performers in ensuring that economic growth is translated into meaningful improvements for its citizens."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Rather than just focusing \non GDP, over 40 different sets of criteria from health, education and civil society \nengagement have been measured to get a more rounded assessment of how \ncountries are performing.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "Rather than just focusing on GDP,"
+       },
+       {
+        "r": "主语",
+        "t": "over 40 different sets of criteria from health, education and civil society engagement"
+       },
+       {
+        "r": "谓语",
+        "t": "have been measured to get a more rounded assessment of how countries are performing."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -672,7 +1201,36 @@
      "en": "Yes, there has been a budding economic recovery since the \n2008 global crash, but in key indicators in areas such as health and education, \nmajor economies have continued to decline.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s12",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "副词",
+        "t": "Yes,"
+       },
+       {
+        "r": "谓语",
+        "t": "there has been a budding economic recovery since the 2008 global crash,"
+       },
+       {
+        "r": "转折词",
+        "t": "but"
+       },
+       {
+        "r": "状语",
+        "t": "in key indicators in areas such as health and education,"
+       },
+       {
+        "r": "主语",
+        "t": "major economies"
+       },
+       {
+        "r": "谓语",
+        "t": "have continued to decline."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -686,42 +1244,136 @@
      "en": "Some relatively poor European countries have seen huge improvements \nacross measures including civil society, income equality and the environment.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s14",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Some relatively poor European countries"
+       },
+       {
+        "r": "谓语",
+        "t": "have seen huge improvements across measures including civil society, income equality and the environment."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "This is a lesson that rich countries can learn: When GDP is no longer \nregarded as the sole measure of a country's success, the world looks very \ndifferent.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This"
+       },
+       {
+        "r": "谓语",
+        "t": "is a lesson that rich countries can learn: When GDP is no longer regarded as the sole measure of a country's success, the world looks very different."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "So, what Kennedy was referring to was that while GDP has been the most \ncommon method for measuring the economic activity of nations, as a measure, it \nis no longer enough.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s16",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "So,"
+       },
+       {
+        "r": "主语",
+        "t": "what Kennedy was referring to"
+       },
+       {
+        "r": "谓语",
+        "t": "was"
+       },
+       {
+        "r": "表语从句",
+        "t": "that while GDP has been the most common method for measuring the economic activity of nations, as a measure, it is no longer enough."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "It does not include important factors such as environmental \nquality or education outcomes - all things that contribute to a person's sense of \nwell-being.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "It"
+       },
+       {
+        "r": "谓语",
+        "t": "does not include important factors such as environmental quality or education outcomes - all things that contribute to a person's sense of well-being."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The sharp hit to growth predicted around the world and in the UK could lead \nto a decline in the everyday services we depend on for our well-being and for \ngrowth.",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s18",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The sharp hit to growth predicted around the world and in the UK"
+       },
+       {
+        "r": "谓语",
+        "t": "could lead to a decline in the everyday services we depend on for our well-being and for growth."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But policymakers who refocus efforts on improving well-being rather \nthan simply worrying about GDP figures could avoid the forecasted doom and \nmay even see progress. \n.7. \n(-3¾-14 yf)",
      "cn": "罗伯特·F 。肯尼迪曾说过，一国的 GDP 可衡量\"一切，除了那些令人生真正有价值的东",
      "id": "en1_2017_text3_s19",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "policymakers who refocus efforts on improving well-being rather than simply worrying about GDP figures"
+       },
+       {
+        "r": "谓语",
+        "t": "could avoid the forecasted doom and may even see progress."
+       },
+       {
+        "r": "页标记",
+        "t": ".7. (-3¾-14 yf)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
@@ -867,14 +1519,48 @@
      "en": "In a rare unammous ruling, the US Supreme Court has overturned the \ncorruption conviction of a former Virginia governor, Robert McDonnell.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s01",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "状语",
+        "t": "In a rare unammous ruling,"
+       },
+       {
+        "r": "主语",
+        "t": "the US Supreme Court"
+       },
+       {
+        "r": "谓语",
+        "t": "has overturned the corruption conviction of a former Virginia governor, Robert McDonnell."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "But it did \nso while holding its nose at the ethics of his conduct, which included accepting \ngifts such as a Rolex watch and a Ferrari automobile from a company seeking \naccess to government.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s02",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "it"
+       },
+       {
+        "r": "谓语",
+        "t": "did so while holding its nose at the ethics of his conduct, which included accepting gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to government."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -888,21 +1574,88 @@
      "en": "McDonnell's trial failed to tell \na jury that it must look only at his \"official acts,\" or the former governor's \ndecisions on \"specific\" and \"unsettled\" issues related to his duties.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s04",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "McDonnell's trial"
+       },
+       {
+        "r": "谓语",
+        "t": "failed to tell a jury that it must look only at his \"official acts,\" or the former governor's decisions on \"specific\" and \"unsettled\" issues related to his duties."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Merely helping a gift-giver gain access to other officials, unless done with \nclear intent to pressure those officials, is not corruption, the justices found.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s05",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Merely helping a gift-giver gain access to other officials,"
+       },
+       {
+        "r": "插入语",
+        "t": "unless done with clear intent to pressure those officials,"
+       },
+       {
+        "r": "谓语",
+        "t": "is not corruption,"
+       },
+       {
+        "r": "插入语",
+        "t": "the justices found."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "The court did suggest that accepting favors in return for opening doors is \n\"distasteful\" and \"nasty.\" But under anti-bribery laws, proof must be made of \nconcrete benefits, such as approval of a contract or regulation.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s06",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The court"
+       },
+       {
+        "r": "谓语",
+        "t": "did suggest"
+       },
+       {
+        "r": "宾语从句",
+        "t": "that accepting favors in return for opening doors is \"distasteful\" and \"nasty.\""
+       },
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "状语",
+        "t": "under anti-bribery laws,"
+       },
+       {
+        "r": "主语",
+        "t": "proof"
+       },
+       {
+        "r": "谓语",
+        "t": "must be made of concrete benefits, such as approval of a contract or regulation."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -923,21 +1676,76 @@
      "en": "Elected leaders must be allowed to help supporters deal with \nbureaucratic problems without fear of prosecution for bribery. \"The basic compact \nunderlying representative government,\" wrote Chief Justice John Roberts for the \ncourt, \"assumes that public officials will hear from their constituents and act on \ntheir concerns.\" \nBut the ruling reinforces the need for citizens and their elected representatives, \nnot the courts, to ensure equality of access to government.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s09",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Elected leaders"
+       },
+       {
+        "r": "谓语",
+        "t": "must be allowed to help supporters deal with bureaucratic problems without fear of prosecution for bribery."
+       },
+       {
+        "r": "宾语从句",
+        "t": "\"The basic compact underlying representative government,\" wrote Chief Justice John Roberts for the court, \"assumes that public officials will hear from their constituents and act on their concerns.\""
+       },
+       {
+        "r": "转折词",
+        "t": "But"
+       },
+       {
+        "r": "主语",
+        "t": "the ruling"
+       },
+       {
+        "r": "谓语",
+        "t": "reinforces the need for citizens and their elected representatives, not the courts, to ensure equality of access to government."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "Officials must not be \nallowed to play favorites in providing information or in arranging meetings \nsimply because an individual or group provides a campaign donation or a personal \ngift.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s10",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "Officials"
+       },
+       {
+        "r": "谓语",
+        "t": "must not be allowed to play favorites in providing information or in arranging meetings simply because an individual or group provides a campaign donation or a personal gift."
+       }
+      ]
+     }
     },
     {
      "para": 1,
      "en": "This type of integrity requires well-enforced laws in government transparency, \nsuch as records of official meetings, rules on lobbying, and information about \neach elected leader's source of wealth.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s11",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "This type of integrity"
+       },
+       {
+        "r": "谓语",
+        "t": "requires well-enforced laws in government transparency, such as records of official meetings, rules on lobbying, and information about each elected leader's source of wealth."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -965,7 +1773,24 @@
      "en": "If connections can be bought, \na basic premise of democratic society - that all are equal in treatment by \ngovernment - is undermined.",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s15",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "条件状语从句",
+        "t": "If connections can be bought,"
+       },
+       {
+        "r": "主语",
+        "t": "a basic premise of democratic society - that all are equal in treatment by government -"
+       },
+       {
+        "r": "谓语",
+        "t": "is undermined."
+       }
+      ]
+     }
     },
     {
      "para": 1,
@@ -979,7 +1804,24 @@
      "en": "The court's ruling is a step forward in the struggle against both corruption and \nofficial favoritism. \n.9. \n(-3¾-14 yf)",
      "cn": "其行为包括从一家谋求接近政府官员机会的公司收受劳力士手表、法拉利汽车等礼物。",
      "id": "en1_2017_text4_s17",
-     "words": []
+     "words": [],
+     "struct": {
+      "v": 1,
+      "nodes": [
+       {
+        "r": "主语",
+        "t": "The court's ruling"
+       },
+       {
+        "r": "谓语",
+        "t": "is a step forward in the struggle against both corruption and official favoritism."
+       },
+       {
+        "r": "页标记",
+        "t": ".9. (-3¾-14 yf)"
+       }
+      ]
+     }
     }
    ],
    "questions": [
