@@ -2937,3 +2937,73 @@ html.dark .q-tip {
 .sent-grid > .nt-match {
     flex: 0 0 100%;
 }
+
+/* ===== 熟词僻义 / 熟词短语 板块共用样式 ===== */
+.wn-page, .ph-page { width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 16px 14px 72px; }
+.wn-title { font-size: 1.3rem; margin: 4px 0 6px; color: var(--text); }
+.wn-hint { color: var(--text-light); font-size: .84rem; line-height: 1.7; margin: 0 0 12px; }
+.wn-hint b { color: var(--primary); }
+.wn-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 10px; }
+.wn-chip-lb { font-size: .8rem; color: var(--text-light); margin-right: 2px; }
+.wn-chip {
+    border: 1px solid var(--border); background: var(--card); color: var(--text);
+    border-radius: 999px; padding: 2px 10px; font: inherit; font-size: .8rem; cursor: pointer;
+    transition: border-color .15s, color .15s, background .15s;
+}
+.wn-chip:hover { border-color: var(--primary); color: var(--primary); }
+.wn-chip.on { background: var(--primary); border-color: var(--primary); color: #fff; }
+.wn-search {
+    width: 100%; box-sizing: border-box; margin: 0 0 10px;
+    padding: 8px 12px; font: inherit; font-size: .9rem;
+    border: 1px solid var(--border); border-radius: 10px;
+    background: var(--card); color: var(--text);
+}
+.wn-search:focus { outline: none; border-color: var(--primary); }
+.wn-count { color: var(--text-light); font-size: .84rem; margin: 0 0 10px; }
+.wn-h2 { font-size: 1.02rem; color: var(--text); margin: 22px 0 8px; padding-left: 10px; border-left: 4px solid var(--primary); }
+.wn-h2 small { color: var(--text-light); font-weight: 400; font-size: .78rem; margin-left: 8px; }
+.wn-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+.wn-table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: .88rem; }
+.wn-table th, .wn-table td {
+    border: 1px solid var(--border); padding: 8px 10px;
+    vertical-align: top; text-align: left; line-height: 1.6;
+}
+.wn-table th { background: var(--primary-soft); color: var(--primary-dark); font-weight: 700; white-space: nowrap; }
+.wn-table tbody tr:nth-child(even) { background: rgba(128, 128, 128, 0.04); }
+.wn-w { font-weight: 700; color: var(--primary); white-space: nowrap; width: 122px; }
+.wn-common { width: 158px; color: var(--text-light); }
+.wn-uncommon { width: 210px; color: var(--text); font-weight: 600; }
+.wn-en { color: var(--text); font-family: Georgia, "Times New Roman", serif; }
+.wn-cn { color: var(--text-light); font-size: .84rem; margin-top: 3px; }
+.wn-cn.na { color: #b9a06a; font-style: italic; }
+.wn-src { color: var(--text-light); font-size: .75rem; margin-top: 3px; opacity: .8; }
+.wn-tier { display: inline-block; margin-left: 6px; font-size: .66rem; padding: 0 5px; border-radius: 4px; vertical-align: 2px; font-weight: 400; }
+.t-hi { background: #fde8e8; color: #b3261e; }
+.t-mid { background: #fff3d6; color: #8a6100; }
+.t-lo { background: #eef0f2; color: #7c848d; }
+.dark .t-hi { background: #4a1f1c; color: #ffb4ab; }
+.dark .t-mid { background: #4a3a12; color: #ffd98a; }
+.dark .t-lo { background: #2b3038; color: #9aa3ad; }
+.dark .wn-cn.na { color: #d0b579; }
+
+/* 短语卡片网格 */
+.ph-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+.ph-card { background: var(--card); border: 1px solid var(--border); border-top: 4px solid var(--primary); border-radius: 12px; padding: 12px 14px; }
+.ph-card h3 { margin: 0 0 8px; font-size: 1rem; color: var(--primary); display: flex; justify-content: space-between; }
+.ph-n { color: var(--text-light); font-weight: 400; font-size: .78rem; }
+.ph-item { padding: 9px 0; border-top: 1px dashed var(--border); }
+.ph-item:first-of-type { border-top: none; }
+.ph-w { font-weight: 700; color: var(--text); }
+.ph-m { color: var(--primary); font-size: .88rem; margin: 2px 0 4px; }
+.ph-e { color: var(--text); font-size: .85rem; font-family: Georgia, "Times New Roman", serif; }
+.ph-cn { color: var(--text-light); font-size: .82rem; margin-top: 2px; }
+.ph-src { color: var(--text-light); font-size: .74rem; margin-top: 3px; opacity: .8; }
+
+@media (max-width: 640px) {
+    .wn-table { min-width: 0; }
+    .wn-table, .wn-table thead, .wn-table tbody, .wn-table tr, .wn-table th, .wn-table td { display: block; width: auto !important; }
+    .wn-table thead { display: none; }
+    .wn-table tr { border-bottom: 3px solid var(--border); padding: 4px 0; }
+    .wn-table td { border: none; padding: 4px 10px; }
+    .wn-table td::before { content: attr(data-label); color: var(--text-light); font-size: .74rem; margin-right: 6px; }
+}

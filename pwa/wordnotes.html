@@ -11,47 +11,6 @@
     <link rel="apple-touch-icon" href="icons/icon-192.png">
     <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .wn-page { width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 16px 14px 72px; }
-        .wn-title { font-size: 1.3rem; margin: 4px 0 6px; color: var(--text); }
-        .wn-hint { color: var(--text-light); font-size: .84rem; line-height: 1.7; margin: 0 0 14px; }
-        .wn-search {
-            width: 100%; box-sizing: border-box; margin: 0 0 12px;
-            padding: 8px 12px; font: inherit; font-size: .9rem;
-            border: 1px solid var(--border); border-radius: 10px;
-            background: var(--card); color: var(--text);
-        }
-        .wn-search:focus { outline: none; border-color: var(--primary); }
-        .wn-count { color: var(--text-light); font-size: .84rem; margin: 0 0 8px; }
-        .wn-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
-        .wn-table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: .88rem; }
-        .wn-table th, .wn-table td {
-            border: 1px solid var(--border); padding: 8px 10px;
-            vertical-align: top; text-align: left; line-height: 1.6;
-        }
-        .wn-table th {
-            background: var(--primary-soft); color: var(--primary-dark);
-            font-weight: 700; white-space: nowrap; position: sticky; top: 0;
-        }
-        .wn-table tbody tr:nth-child(even) { background: rgba(128, 128, 128, 0.04); }
-        .wn-w { font-weight: 700; color: var(--primary); white-space: nowrap; width: 116px; }
-        .wn-freq {
-            width: 62px; text-align: right; color: var(--text-light); font-variant-numeric: tabular-nums;
-        }
-        .wn-common { width: 168px; color: var(--text); }
-        .wn-uncommon { width: 208px; color: var(--text); font-weight: 600; }
-        .wn-en { color: var(--text); font-family: Georgia, "Times New Roman", serif; }
-        .wn-cn { color: var(--text-light); font-size: .84rem; margin-top: 3px; }
-        .wn-src { color: var(--text-light); font-size: .75rem; margin-top: 3px; opacity: .8; }
-        @media (max-width: 640px) {
-            .wn-table { min-width: 0; }
-            .wn-table, .wn-table thead, .wn-table tbody, .wn-table tr, .wn-table th, .wn-table td { display: block; width: auto !important; }
-            .wn-table thead { display: none; }
-            .wn-table tr { border-bottom: 3px solid var(--border); padding: 4px 0; }
-            .wn-table td { border: none; padding: 4px 10px; }
-            .wn-table td::before { content: attr(data-label); color: var(--text-light); font-size: .74rem; margin-right: 6px; }
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -65,6 +24,7 @@
                 <a href="mindmap.html" class="nav-link">方法导图</a>
                 <a href="nearmap.html" class="nav-link">近义词</a>
                 <a href="wordnotes.html" class="nav-link active">熟词僻义</a>
+                <a href="phrasebook.html" class="nav-link">熟词短语</a>
                 <a href="mistakes.html" class="nav-link">错题本</a>
                 <a href="suggestions.html" class="nav-link">建议</a>
             </div>
@@ -79,11 +39,14 @@
     <main class="wn-page">
         <h1 class="wn-title">熟词僻义</h1>
         <p class="wn-hint">
-            <b>词频</b>＝该词在全部真题（阅读 / 完形 / 新题型 / 翻译）里出现的次数，<b>最常出现的排最上面</b> ·
-            <b>熟义</b>＝常见义（ECDICT）·<b>僻义</b>＝真题实际考的特殊义（唐迟讲义，OCR＋人工核对）·
-            <b>原句</b>只取含该词的短句（长句标「截取」），出处见句下小字。
+            <b>判义规则</b>：逐词回真题语料核对实际义项，<b>只收真题里真正考过「僻义」的词</b>——
+            该词在真题句中的实际含义 ≠ 它最常见的含义（真题没考过僻义的词一律不收）。
+            <b>熟义</b>取 ECDICT 常见义，<b>僻义</b>由真题例句反推，<b>原句</b>即该僻义的真题出处（句下为官方译文与本词出现过的年份）。
+            译文只采信「英语二 2010+」的可靠逐句译文，其余来源只显示英文原句。
         </p>
-        <input id="wnSearch" class="wn-search" type="search" placeholder="搜索单词 / 释义（如 handsome、支撑）">
+        <div class="wn-bar" id="wnYears"></div>
+        <input id="wnSearch" class="wn-search" type="search" placeholder="搜索单词 / 熟义 / 僻义（如 bill、宣传）">
+        <div class="wn-count" id="wnCount"></div>
         <div id="wnContent"><p style="color:var(--text-light)">加载中…</p></div>
     </main>
 

@@ -1,75 +1,96 @@
-/* 熟词僻义 - 表格渲染
- * 数据：pwa/data/wordnotes.json（tools/build_wordnotes.py 生成，按词频降序）
- * 单表五列：单词 / 词频 / 熟义 / 僻义 / 原句（含该词的短句 + 译文 + 出处）
- */
-(function () {
-  'use strict';
+/* 熟词僻义 v2：逐词回真题语料核对义项，只收「义项 ≠ 常用义」的词
+   列：单词 | 熟义 | 僻义 | 原句（英+中）｜出处 · 年份筛选（不分题型） */
+let WN_ROWS = [];
+let WN_YEARS = new Set();
+const WN_YEARS_ON = new Set();
 
-  var state = { data: null, q: '' };
+function wnEsc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
 
-  function esc(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  }
+const WN_TIER = { '高': 't-hi', '中': 't-mid', '低': 't-lo' };
 
-  function rowHtml(r) {
-    return '<tr>' +
-      '<td class="wn-w" data-label="单词">' + esc(r.w) + '</td>' +
-      '<td class="wn-freq" data-label="词频">' + (r.freq || 0) + '</td>' +
-      '<td class="wn-common" data-label="熟义">' + esc(r.common) + '</td>' +
-      '<td class="wn-uncommon" data-label="僻义">' + esc(r.uncommon) + '</td>' +
-      '<td class="wn-sent" data-label="原句">' +
-        '<div class="wn-en">' + esc(r.en) + '</div>' +
-        (r.cn ? '<div class="wn-cn">' + esc(r.cn) + '</div>' : '') +
-        (r.src ? '<div class="wn-src">' + esc(r.src) + '</div>' : '') +
-      '</td>' +
-    '</tr>';
-  }
+function wnYearsOf(r) {
+    return (r.years && r.years.length ? r.years : [r.year]).filter(Boolean);
+}
 
-  function render() {
-    var content = document.getElementById('wnContent');
-    if (!content || !state.data) return;
-    var q = state.q.trim().toLowerCase();
-    var rows = state.data.rows.filter(function (r) {
-      if (!q) return true;
-      return (r.w + ' ' + r.common + ' ' + r.uncommon + ' ' + (r.cn || '')).toLowerCase().indexOf(q) >= 0;
+function wnYearChips() {
+    const years = [...WN_YEARS].sort().reverse();
+    const box = document.getElementById('wnYears');
+    if (!box) return;
+    box.innerHTML = '<span class="wn-chip-lb">按年份：</span><button class="wn-chip on" data-y="all">全部</button>' +
+        years.map(y => `<button class="wn-chip" data-y="${y}">${y}</button>`).join('');
+    box.querySelectorAll('.wn-chip').forEach(c => {
+        c.onclick = () => {
+            const y = c.dataset.y;
+            if (y === 'all') WN_YEARS_ON.clear();
+            else if (WN_YEARS_ON.has(y)) WN_YEARS_ON.delete(y); else WN_YEARS_ON.add(y);
+            box.querySelectorAll('.wn-chip').forEach(x => {
+                x.classList.toggle('on', (x.dataset.y === 'all' && WN_YEARS_ON.size === 0) || WN_YEARS_ON.has(x.dataset.y));
+            });
+            wnRender();
+        };
     });
-    var head = '<div class="wn-count">' + rows.length + ' / ' + state.data.count + ' 词' +
-               (q ? '（筛选：' + esc(state.q) + '）' : '，按词频降序') + '</div>';
+}
+
+function wnRow(r) {
+    const years = wnYearsOf(r);
+    const cn = r.cn ? `<div class="wn-cn">${wnEsc(r.cn)}</div>`
+        : `<div class="wn-cn na">（该来源译文数据不可靠，仅保留英文原句）</div>`;
+    return `<tr data-year="${wnEsc(years.join(','))}" data-tier="${wnEsc(r.tier)}">
+        <td class="wn-w" data-label="单词"><b>${wnEsc(r.w)}</b><span class="wn-tier ${WN_TIER[r.tier] || ''}">${wnEsc(r.tier)}</span></td>
+        <td class="wn-common" data-label="熟义">${wnEsc(r.common)}</td>
+        <td class="wn-uncommon" data-label="僻义">${wnEsc(r.uncommon)}</td>
+        <td class="wn-en-cell" data-label="原句">
+            <div class="wn-en">${wnEsc(r.en)}</div>${cn}
+            <div class="wn-src">${wnEsc(r.src)}${years.length ? ' · ' + wnEsc(years.join(' · ')) : ''}</div>
+        </td></tr>`;
+}
+
+function wnRender() {
+    const sEl = document.getElementById('wnSearch');
+    const q = (sEl ? sEl.value : '').trim().toLowerCase();
+    const rows = WN_ROWS.filter(r => {
+        const ys = wnYearsOf(r);
+        if (WN_YEARS_ON.size && !ys.some(y => WN_YEARS_ON.has(y))) return false;
+        if (!q) return true;
+        return (r.w + ' ' + r.common + ' ' + r.uncommon + ' ' + r.en + ' ' + (r.cn || '')).toLowerCase().includes(q);
+    });
+    const cnt = document.getElementById('wnCount');
+    if (cnt) cnt.textContent = `共 ${rows.length} 条` + ((WN_YEARS_ON.size || q) ? `（在 ${WN_ROWS.length} 条中筛选）` : '');
+    const box = document.getElementById('wnContent');
     if (!rows.length) {
-      content.innerHTML = head + '<p style="color:var(--text-light)">没有匹配的词</p>';
-      return;
+        box.innerHTML = '<p style="color:var(--text-light)">没有匹配的条目</p>';
+        return;
     }
-    content.innerHTML = head +
-      '<div class="wn-table-wrap"><table class="wn-table">' +
-        '<thead><tr><th>单词</th><th>词频</th><th>熟义</th><th>僻义</th><th>原句（含该词的短句）</th></tr></thead>' +
-        '<tbody>' + rows.map(rowHtml).join('') + '</tbody>' +
-      '</table></div>';
-  }
-
-  function fail(msg) {
-    var content = document.getElementById('wnContent');
-    if (content) content.innerHTML = '<p style="color:var(--text-light)">' + esc(msg) + '</p>';
-  }
-
-  function init() {
-    var input = document.getElementById('wnSearch');
-    if (input) {
-      input.addEventListener('input', function () { state.q = input.value; render(); });
+    const groups = [['高', '高价值 · 完全想不到'], ['中', '中价值 · 有距离但能猜'], ['低', '低价值 · 近义，沉底']];
+    let html = '';
+    for (const [t, label] of groups) {
+        const sub = rows.filter(r => r.tier === t);
+        if (!sub.length) continue;
+        html += `<h2 class="wn-h2">${label}<small>${sub.length} 条</small></h2>
+        <div class="wn-table-wrap"><table class="wn-table">
+        <thead><tr><th>单词</th><th>熟义</th><th>僻义</th><th>原句（含中文译文 / 出处）</th></tr></thead>
+        <tbody>${sub.map(wnRow).join('')}</tbody></table></div>`;
     }
-    fetch('data/wordnotes.json')
-      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (d) {
-        state.data = d;
-        render();
-        document.title = '熟词僻义（' + (d.count || 0) + ' 词） - 英语真题精翻';
-      })
-      .catch(function (e) { fail('数据加载失败：' + e.message + '（请用 start.bat 启动后访问）'); });
-  }
+    box.innerHTML = html;
+}
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
+async function wnInit() {
+    try {
+        const res = await fetch('data/wordnotes.json', { cache: 'no-cache' });
+        const data = await res.json();
+        WN_ROWS = data.rows || [];
+        WN_ROWS.forEach(r => wnYearsOf(r).forEach(y => WN_YEARS.add(y)));
+        wnYearChips();
+        wnRender();
+        const s = document.getElementById('wnSearch');
+        if (s) s.addEventListener('input', wnRender);
+    } catch (e) {
+        document.getElementById('wnContent').innerHTML =
+            '<p style="color:var(--text-light)">数据加载失败，请刷新重试</p>';
+    }
+}
+
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wnInit);
+else wnInit();

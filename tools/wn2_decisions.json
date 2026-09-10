@@ -1,0 +1,470 @@
+{
+ "words": [
+  {
+   "w": "address",
+   "uncommon": "v. 解决，处理（问题）",
+   "tier": "高",
+   "sid": "2018_text3_s07",
+   "sids": [
+    "2018_text3_s07"
+   ]
+  },
+  {
+   "w": "board",
+   "uncommon": "n. （公司的）董事会，理事会",
+   "tier": "高",
+   "sid": "2013_text4_s03",
+   "sids": [
+    "2013_text4_s03"
+   ]
+  },
+  {
+   "w": "camp",
+   "uncommon": "n. （政治）阵营，派别",
+   "tier": "高",
+   "sid": "2011_text4_s11",
+   "sids": [
+    "2011_text4_s11"
+   ]
+  },
+  {
+   "w": "dismiss",
+   "uncommon": "v. 不予考虑；把……视为（不值一提）",
+   "tier": "高",
+   "sid": "2023_text2_s01",
+   "sids": [
+    "2023_text2_s01"
+   ]
+  },
+  {
+   "w": "race",
+   "uncommon": "v. （心脏）急速跳动",
+   "tier": "高",
+   "sid": "2021_newtype_s22",
+   "sids": [
+    "2021_newtype_s22"
+   ]
+  },
+  {
+   "w": "term",
+   "uncommon": "n. （法庭的）开庭期，庭审期",
+   "tier": "高",
+   "sid": "2012_text2_s16",
+   "sids": [
+    "2012_text2_s16"
+   ]
+  },
+  {
+   "w": "art",
+   "uncommon": "n. 技能，技艺，技巧",
+   "tier": "中",
+   "sid": "2018_text4_s02",
+   "sids": [
+    "2018_text4_s02"
+   ]
+  },
+  {
+   "w": "cap",
+   "uncommon": "n. （数量的）上限，限额",
+   "tier": "中",
+   "sid": "2019_text3_s18",
+   "sids": [
+    "2019_text3_s18"
+   ]
+  },
+  {
+   "w": "cover",
+   "uncommon": "v. 占（面积）；足以支付",
+   "tier": "中",
+   "sid": "2023_newtype_s13",
+   "sids": [
+    "2023_newtype_s13"
+   ]
+  },
+  {
+   "w": "develop",
+   "uncommon": "v. 患上（疾病）；出现（症状）",
+   "tier": "中",
+   "sid": "2014_cloze_s04",
+   "sids": [
+    "2014_cloze_s04"
+   ]
+  },
+  {
+   "w": "fan",
+   "uncommon": "v. 激起，煽起（情绪、看法）",
+   "tier": "中",
+   "sid": "en1_2017_text4_s12",
+   "sids": [
+    "en1_2017_text4_s12"
+   ]
+  },
+  {
+   "w": "flat",
+   "uncommon": "a. （数量）固定不变的，无起伏的",
+   "tier": "中",
+   "sid": "2023_text2_s16",
+   "sids": [
+    "2023_text2_s16"
+   ]
+  },
+  {
+   "w": "house",
+   "uncommon": "n. （从事某行业的）行，商行（如拍卖行）",
+   "tier": "中",
+   "sid": "2010_text1_s12",
+   "sids": [
+    "2010_text1_s12"
+   ]
+  },
+  {
+   "w": "lay",
+   "uncommon": "v. 铺设，铺放",
+   "tier": "中",
+   "sid": "2023_text1_s13",
+   "sids": [
+    "2023_text1_s13"
+   ]
+  },
+  {
+   "w": "prize",
+   "uncommon": "v. 珍视，高度重视",
+   "tier": "中",
+   "sid": "2016_text4_s02",
+   "sids": [
+    "2016_text4_s02"
+   ]
+  },
+  {
+   "w": "process",
+   "uncommon": "v. 处理（数据、交易等）",
+   "tier": "中",
+   "sid": "2025_newtype_s07",
+   "sids": [
+    "2025_newtype_s07"
+   ]
+  },
+  {
+   "w": "produce",
+   "uncommon": "n. 农产品（尤指蔬果）",
+   "tier": "中",
+   "sid": "2024_translation_s05",
+   "sids": [
+    "2024_translation_s05"
+   ]
+  },
+  {
+   "w": "coach",
+   "uncommon": "n./v. 教练（引申：指导，培训）",
+   "tier": "低",
+   "sid": "2015_cloze_s07",
+   "sids": [
+    "2015_cloze_s07"
+   ]
+  },
+  {
+   "w": "traffic",
+   "uncommon": "n. 客流，人流（foot traffic）",
+   "tier": "低",
+   "sid": "2026_text4_s09",
+   "sids": [
+    "2026_text4_s09"
+   ]
+  },
+  {
+   "w": "value",
+   "uncommon": "n. 用途，好处（与熟义接近）",
+   "tier": "低",
+   "sid": "2023_text2_s12",
+   "sids": [
+    "2023_text2_s12"
+   ]
+  },
+  {
+   "w": "take",
+   "uncommon": "v. 以……为例（Take sth 拿…来说）",
+   "tier": "中",
+   "sid": "2012_text2_s12",
+   "sids": [
+    "2012_text2_s12"
+   ],
+   "common": "vt. 拿；取；花费"
+  },
+  {
+   "w": "see",
+   "uncommon": "v. 把……看作，视为（see sth as）",
+   "tier": "中",
+   "sid": "2020_translation_s03",
+   "sids": [
+    "2020_translation_s03"
+   ]
+  },
+  {
+   "w": "report",
+   "uncommon": "v. 声称，自述（据……反映）",
+   "tier": "中",
+   "sid": "2015_text4_s06",
+   "sids": [
+    "2015_text4_s06"
+   ]
+  },
+  {
+   "w": "average",
+   "uncommon": "a. 平平的，普通的；平庸的",
+   "tier": "中",
+   "sid": "2013_text1_s06",
+   "sids": [
+    "2013_text1_s06"
+   ]
+  },
+  {
+   "w": "claim",
+   "uncommon": "v. 声称，断言（未必属实）",
+   "tier": "中",
+   "sid": "2013_newtype_s18",
+   "sids": [
+    "2013_newtype_s18"
+   ]
+  },
+  {
+   "w": "nature",
+   "uncommon": "n. 本性，天性，本质",
+   "tier": "中",
+   "sid": "2013_text3_s17",
+   "sids": [
+    "2013_text3_s17"
+   ]
+  },
+  {
+   "w": "approach",
+   "uncommon": "n. 方法，途径，方式",
+   "tier": "中",
+   "sid": "2011_cloze_s13",
+   "sids": [
+    "2011_cloze_s13"
+   ]
+  },
+  {
+   "w": "buy",
+   "uncommon": "v. 相信，接受（buy into 认同）",
+   "tier": "中",
+   "sid": "2015_text3_s16",
+   "sids": [
+    "2015_text3_s16"
+   ]
+  },
+  {
+   "w": "line",
+   "uncommon": "n. （行为的）界限，界线",
+   "tier": "中",
+   "sid": "2022_text3_s10",
+   "sids": [
+    "2022_text3_s10"
+   ]
+  },
+  {
+   "w": "run",
+   "uncommon": "v. 与……相悖（run counter to）",
+   "tier": "中",
+   "sid": "2013_text4_s14",
+   "sids": [
+    "2013_text4_s14"
+   ],
+   "common": "v. 跑；经营；运转"
+  },
+  {
+   "w": "Director",
+   "uncommon": "n. （政府机构）局长，主任；公司董事",
+   "tier": "中",
+   "sid": "2011_text1_s10",
+   "sids": [
+    "2011_text1_s10"
+   ]
+  },
+  {
+   "w": "fund",
+   "uncommon": "v. 资助，为……提供资金",
+   "tier": "中",
+   "sid": "2018_text2_s03",
+   "sids": [
+    "2018_text2_s03"
+   ]
+  },
+  {
+   "w": "fire",
+   "uncommon": "v. 解雇，开除",
+   "tier": "中",
+   "sid": "2015_text1_s21",
+   "sids": [
+    "2015_text1_s21"
+   ]
+  },
+  {
+   "w": "signal",
+   "uncommon": "v. 表明，预示（signaling danger）",
+   "tier": "中",
+   "sid": "2015_newtype_s09",
+   "sids": [
+    "2015_newtype_s09"
+   ]
+  },
+  {
+   "w": "hit",
+   "uncommon": "v. 达到（某水平）；命中",
+   "tier": "中",
+   "sid": "2021_cloze_s21",
+   "sids": [
+    "2021_cloze_s21"
+   ]
+  },
+  {
+   "w": "charge",
+   "uncommon": "a. 充满（某种情绪/氛围）的（-charged）",
+   "tier": "中",
+   "sid": "2014_text4_s08",
+   "sids": [
+    "2014_text4_s08"
+   ]
+  },
+  {
+   "w": "net",
+   "uncommon": "a. 净的，纯的（net imports 净进口）",
+   "tier": "中",
+   "sid": "2024_text2_s03",
+   "sids": [
+    "2024_text2_s03"
+   ]
+  },
+  {
+   "w": "land",
+   "uncommon": "v. （笑话、观点）奏效，被接受；获得",
+   "tier": "高",
+   "sid": "2020_newtype_s28",
+   "sids": [
+    "2020_newtype_s28"
+   ]
+  },
+  {
+   "w": "bill",
+   "uncommon": "v. 把……宣传为，宣称",
+   "tier": "高",
+   "sid": "2021_cloze_s31",
+   "sids": [
+    "2021_cloze_s31"
+   ]
+  },
+  {
+   "w": "field",
+   "uncommon": "v. 应对，处理（问题、提问）",
+   "tier": "高",
+   "sid": "2013_newtype_s08",
+   "sids": [
+    "2013_newtype_s08"
+   ]
+  },
+  {
+   "w": "Institute",
+   "uncommon": "v. 开始实行，设立（institute rules）",
+   "tier": "高",
+   "sid": "2014_cloze_s25",
+   "sids": [
+    "2014_cloze_s25"
+   ]
+  },
+  {
+   "w": "climate",
+   "uncommon": "n. 形势，氛围，风气",
+   "tier": "低",
+   "sid": "2014_text4_s21",
+   "sids": [
+    "2014_text4_s21"
+   ]
+  },
+  {
+   "w": "scale",
+   "uncommon": "n. 规模，范围",
+   "tier": "低",
+   "sid": "2014_text4_s06",
+   "sids": [
+    "2014_text4_s06"
+   ]
+  }
+ ],
+ "phrases": [
+  {
+   "w": "to its core",
+   "meaning": "从根本上，彻底地",
+   "cat": "政法"
+  },
+  {
+   "w": "appeals court",
+   "meaning": "上诉法院",
+   "cat": "政法"
+  },
+  {
+   "w": "a product of nature",
+   "meaning": "自然界的产物（不可授予专利）",
+   "cat": "政法"
+  },
+  {
+   "w": "bull run",
+   "meaning": "牛市态势",
+   "cat": "商业经济"
+  },
+  {
+   "w": "filed for bankruptcy",
+   "meaning": "申请破产",
+   "cat": "商业经济"
+  },
+  {
+   "w": "on a dramatic note",
+   "meaning": "以戏剧性的方式",
+   "cat": "商业经济"
+  },
+  {
+   "w": "suck you in",
+   "meaning": "把你卷入其中，让你上瘾",
+   "cat": "科学科技"
+  },
+  {
+   "w": "maximal engagement",
+   "meaning": "最大程度的参与度",
+   "cat": "科学科技"
+  },
+  {
+   "w": "are wired to",
+   "meaning": "天生倾向于，生来就要",
+   "cat": "科学科技"
+  },
+  {
+   "w": "first-generation college students",
+   "meaning": "第一代大学生（父母无大学学历）",
+   "cat": "教育文化历史"
+  },
+  {
+   "w": "dropout rates",
+   "meaning": "辍学率",
+   "cat": "教育文化历史"
+  },
+  {
+   "w": "advance economically",
+   "meaning": "在经济上取得发展",
+   "cat": "教育文化历史"
+  },
+  {
+   "w": "wreaking havoc with",
+   "meaning": "严重破坏，造成巨大危害",
+   "cat": "社会生活"
+  },
+  {
+   "w": "burst into laughter",
+   "meaning": "突然大笑",
+   "cat": "社会生活"
+  },
+  {
+   "w": "keep the conversation going",
+   "meaning": "让谈话继续下去",
+   "cat": "社会生活"
+  }
+ ]
+}
