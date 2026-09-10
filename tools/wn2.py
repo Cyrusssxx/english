@@ -249,7 +249,7 @@ def cmd_pool():
 def cmd_show(start=0, count=50, occ=3, wlen=140):
     d = json.load(open(POOL_FP, encoding='utf-8'))
     dec = json.load(open(DEC_FP, encoding='utf-8')) if os.path.exists(DEC_FP) else {'words': [], 'phrases': []}
-    done = {x['w'].lower() for x in dec['words']}
+    done = {x['w'].lower() for x in dec['words']} | {w.lower() for w in dec.get('dropped', [])}
     todo = [r for r in d['rows'] if r['w'].lower() not in done]
     print('# 剩余 %d 词（已判 %d）｜本批 %d-%d' % (len(todo), len(done), start, start + count))
     for r in todo[start:start + count]:
@@ -264,9 +264,10 @@ def cmd_show(start=0, count=50, occ=3, wlen=140):
 def cmd_stat():
     d = json.load(open(POOL_FP, encoding='utf-8'))
     dec = json.load(open(DEC_FP, encoding='utf-8')) if os.path.exists(DEC_FP) else {'words': [], 'phrases': []}
-    done = {x['w'].lower() for x in dec['words']}
-    print('合池 %d ｜已判 %d ｜剩余 %d' % (len(d['rows']), len(done), len(d['rows']) - len(done)))
-    print('已判档位分布:', collections.Counter(x['tier'] for x in dec['words']))
+    done = {x['w'].lower() for x in dec['words']} | {w.lower() for w in dec.get('dropped', [])}
+    print('合池 %d ｜已判 %d（其中丢弃 %d）｜剩余 %d' % (len(d['rows']), len(done), len(dec.get('dropped', [])), len(d['rows']) - len(done)))
+    print('入库档位分布:', collections.Counter(x['tier'] for x in dec['words']))
+    print('丢弃(真题无僻义):', len(dec.get('dropped', [])))
 
 
 # ------------------------------------------------------------------ build
@@ -341,6 +342,60 @@ def cmd_build():
             sum(len(v) for v in groups.values()), len(cats), miss))
 
 
+def _remaining_rows():
+    d = json.load(open(POOL_FP, encoding='utf-8'))
+    dec = json.load(open(DEC_FP, encoding='utf-8')) if os.path.exists(DEC_FP) else {'words': [], 'dropped': []}
+    done = {x['w'].lower() for x in dec['words']} | {w.lower() for w in dec.get('dropped', [])}
+    return [r for r in d['rows'] if r['w'].lower() not in done]
+
+
+def cmd_word(w, occ=8, wlen=115):
+    """打印某个词在全语料中的全部出现句（判义/复核用）"""
+    d = json.load(open(POOL_FP, encoding='utf-8'))
+    r = next((x for x in d['rows'] if x['w'].lower() == w.strip().lower()), None)
+    if not r:
+        print('词池中没有:', w)
+        return
+    print('%s ┃频%d ┃熟义: %s' % (r['w'], r['n'], r['common']))
+    if r['tips']:
+        print('deck提示:', ' / '.join(r['tips'])[:110])
+    for o in r['occ'][:occ]:
+        print('  [%s] %s | %s' % ('✓' if o['ok'] else '✗', o['sid'], o['en'][:wlen]))
+        if o['ok'] and o['cn']:
+            print('      译:', o['cn'][:80])
+
+
+def cmd_remaining():
+    rows = _remaining_rows()
+    fp = os.path.join(TOOLS, 'wn2_remaining.json')
+    json.dump({'total': len(rows), 'rows': rows}, open(fp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print('待判 %d 词 →' % len(rows), fp)
+
+
+def cmd_rslice(a, b, occ=2, wlen=100):
+    rows = _remaining_rows()
+    for r in rows[a:b]:
+        print('=' * 74)
+        print('%s ┃频%d ┃熟义: %s' % (r['w'], r['n'], r['common']))
+        if r['tips']:
+            print('  deck提示:', ' / '.join(r['tips'])[:100])
+        for o in r['occ'][:occ]:
+            print('  [%s] %s | %s' % ('✓' if o['ok'] else '✗', o['sid'], o['en'][:wlen]))
+
+
+def cmd_skip(n):
+    d = json.load(open(POOL_FP, encoding='utf-8'))
+    dec = json.load(open(DEC_FP, encoding='utf-8'))
+    done = {x['w'].lower() for x in dec['words']} | {w.lower() for w in dec.get('dropped', [])}
+    todo = [r for r in d['rows'] if r['w'].lower() not in done]
+    dropped = dec.setdefault('dropped', [])
+    for r in todo[:n]:
+        dropped.append(r['w'])
+    json.dump(dec, open(DEC_FP, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print('已标记丢弃 %d 个（累计丢弃 %d）' % (min(n, len(todo)), len(dropped)))
+    print('本批丢弃:', [r['w'] for r in todo[:n]])
+
+
 if __name__ == '__main__':
     c = sys.argv[1] if len(sys.argv) > 1 else 'stat'
     if c == 'pool':
@@ -350,6 +405,16 @@ if __name__ == '__main__':
                  int(sys.argv[3]) if len(sys.argv) > 3 else 50,
                  int(sys.argv[4]) if len(sys.argv) > 4 else 3,
                  int(sys.argv[5]) if len(sys.argv) > 5 else 140)
+    elif c == 'word':
+        cmd_word(sys.argv[2])
+    elif c == 'remaining':
+        cmd_remaining()
+    elif c == 'rslice':
+        cmd_rslice(int(sys.argv[2]), int(sys.argv[3]),
+                   int(sys.argv[4]) if len(sys.argv) > 4 else 2,
+                   int(sys.argv[5]) if len(sys.argv) > 5 else 100)
+    elif c == 'skip':
+        cmd_skip(int(sys.argv[2]) if len(sys.argv) > 2 else 100)
     elif c == 'build':
         cmd_build()
     else:
