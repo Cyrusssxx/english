@@ -314,12 +314,25 @@ def cmd_build():
     # —— 短语板块 ——
     ph_fp = os.path.join(TOOLS, 'wn2_phrases_worklist.json')
     if os.path.exists(ph_fp) and dec.get('phrases'):
-        ph = {r['w'].strip().lower(): r for r in json.load(open(ph_fp, encoding='utf-8'))['rows']}
+        _phrows = json.load(open(ph_fp, encoding='utf-8'))['rows']
+
+        def _pkey(s):
+            s = (s or '').lower().replace('’', "'")
+            s = re.sub(r"[^a-z ]+", ' ', s)
+            return re.sub(r'\s+', ' ', s).strip()
+
+        ph = {}
+        for _r in _phrows:
+            ph[_r['w'].strip().lower()] = _r
+            ph.setdefault(_pkey(_r['w']), _r)
+            ph.setdefault(_pkey(_r['w']).replace(' ', ''), _r)
         cats = ['政法', '商业经济', '科学科技', '教育文化历史', '社会生活']
         groups = {c: [] for c in cats}
         miss = []
         for x in dec['phrases']:
-            r = ph.get(x['w'].strip().lower())
+            r = (ph.get((x.get('src_w') or '').strip().lower())
+                 or ph.get(x['w'].strip().lower()) or ph.get(_pkey(x['w']))
+                 or ph.get(_pkey(x['w']).replace(' ', '')))
             if not r:
                 miss.append(x['w'])
                 continue
@@ -331,7 +344,7 @@ def cmd_build():
                 cn = cn[:148].rstrip() + '…'
             cat = x.get('cat') or r['cat'] or '社会生活'
             groups.setdefault(cat, []).append({
-                'w': r['w'], 'meaning': x.get('meaning') or ' | '.join(r['meanings'])[:40],
+                'w': x['w'], 'meaning': x.get('meaning') or ' | '.join(r['meanings'])[:40],
                 'en': en, 'cn': cn, 'src': r['src'], 'year': r['year']})
         for c in groups:
             groups[c].sort(key=lambda a: a['w'].lower())
