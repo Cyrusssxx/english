@@ -1,5 +1,5 @@
 {
- "count": 15,
+ "count": 109,
  "cats": [
   "政法",
   "商业经济",
@@ -26,15 +26,175 @@
     "year": "2012"
    },
    {
+    "w": "brand them as",
+    "meaning": "给……打上（污名）烙印",
+    "en": "We hail them as Americans in the making, or brand them as aliens to be kicked out.",
+    "cn": "我们或将其誉为“缔造中的美国人”，或将其归为“需要驱逐的异族”。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "compounded by",
+    "meaning": "因……而加剧，雪上加霜",
+    "en": "The shortage is compounded by federal immigration raids, which remove some workers and drive others underground.",
+    "cn": "联邦政府对移民的突击搜查也加剧了劳动力短缺，一些工人被驱逐出境，另一些则被迫转入地下。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
+    "w": "connecting the dots",
+    "meaning": "串联线索；看清内在联系",
+    "en": "Companies are eager to win patents for \"connecting the dots,\" explains Hans Sauer, a lawyer for the BIO.",
+    "cn": "来自 BIO 的律师 Hans Sauer 解释道，各企业正急于获取“连点”专利。",
+    "src": "2012 英语二 · 阅读",
+    "year": "2012"
+   },
+   {
+    "w": "cross section",
+    "meaning": "（社会的）横断面；各阶层代表",
+    "en": "Many Americans regard the jury system as a concrete expression of crucial democratic values, including the principles that all citizens who meet minimal qualifications of age and literacy…",
+    "cn": "许多美国人把陪审团制度看作是关键民主价值观的具体表现，该制度包括以下原则：所有满足最低年龄和文化要求的公民都具备同等资格担任陪审员；陪审员应从社会各部门的典型代表中随机挑选；任何公民不得由于种族、宗教、性别和民族出身被剥夺担任陪审员的权利；被告人有权利接受由同等地位的人进行的审判；审判结果应该代…",
+    "src": "2010 英语二 · 阅读",
+    "year": "2010"
+   },
+   {
+    "w": "face up to",
+    "meaning": "正视；勇于面对",
+    "en": "While these measures would be welcome in the short term, we must face up to the fact that the existing £4.5bn programme of grants to fund new affordable housing, set to expire in 2015, is…",
+    "cn": "尽管这些措施在短期内将受到欢迎，但是我们必须面对现实：目前用于投资新的可支付住房的 45 亿英镑拨款项目将于 2015 年到期，并且不可能延期。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
+   },
+   {
+    "w": "Far from it",
+    "meaning": "远非如此，恰恰相反",
+    "en": "Far from it.",
+    "cn": "恰恰相反。",
+    "src": "2020 英语二 · 阅读",
+    "year": "2020"
+   },
+   {
+    "w": "for good",
+    "meaning": "永久地；一劳永逸地",
+    "en": "About a quarter of all Italian immigrants, for example, eventually returned to Italy for good.",
+    "cn": "例如，约有四分之一的意大利移民最终永久返回了意大利。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "goes too far",
+    "meaning": "做得太过分，太过火",
+    "en": "Not surprisingly, industry groups and states generally argue it goes too far; environmentalists say it doesn't go far enough.",
+    "cn": "行业团体和各州普遍认为它做得太过，而环保主义者表示它做得还不够，这并不令人意外。",
+    "src": "2016 英语二 · 阅读",
+    "year": "2016"
+   },
+   {
+    "w": "gray areas",
+    "meaning": "灰色地带；规则的模糊区",
+    "en": "To start, we can recognize the new birds of passage, those living and thriving in the gray areas.",
+    "cn": "首先，我们可以认可那些“新候鸟”，那些于灰色地带生活并繁荣发展的人。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "hail them as",
+    "meaning": "将……誉为",
+    "en": "We hail them as Americans in the making, or brand them as aliens to be kicked out.",
+    "cn": "我们或将其誉为“缔造中的美国人”，或将其归为“需要驱逐的异族”。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "leaving it up to",
+    "meaning": "把……交给（某人）决定",
+    "en": "My concern with leaving it up to the individual, however, is our limited sense of what needs to be achieved.",
+    "cn": "然而，对于将应对塑料危机的重任留给个人的做法，我的担忧在于人们对需要达成的目标认识有限。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
+    "w": "middle ground",
+    "meaning": "中间立场；折中方案",
+    "en": "Looking beyond the culture war logic of right or wrong means opening up the middle ground and understanding that managing immigration today requires multiple paths and multiple outcomes, i…",
+    "cn": "超越这种非对即错文化战争的逻辑，意味着要打开中间地带，并知晓当今的移民管理需要多种途径及多样结果，包括一些现有制度下通过法律难以达成的途径和结果。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "politically charged",
+    "meaning": "政治敏感的；引发争议的",
+    "en": "But perhaps the most significant reason is that the issue has always been so politically charged.",
+    "cn": "但是也许最重要的原因是，这个问题一直受到严重政治制约。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
+   },
+   {
+    "w": "putting things into perspective",
+    "meaning": "客观正确地认识（事物重要性）",
+    "en": "It's just about putting things into perspective.",
+    "cn": "不过是正确地认识形势。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
+    "w": "shifting landscape",
+    "meaning": "不断变化的局面；形势",
+    "en": "The BIO recently held a convention which included sessions to coach lawyers on the shifting landscape for patents.",
+    "cn": "BIO 最近召开大会，开展一系列会议针对目前变换的专利情形对律师进行培训。",
+    "src": "2012 英语二 · 阅读",
+    "year": "2012"
+   },
+   {
+    "w": "shoulder the blame",
+    "meaning": "承担责任、过错",
+    "en": "To some extent the housing sector must shoulder the blame.",
+    "cn": "在某种程度上，房地产行业必须承担责任。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
+   },
+   {
     "w": "to its core",
     "meaning": "从根本上，彻底地",
     "en": "In 2010, a federal judge shook America's biotech industry to its core.",
     "cn": "2010 年，一位联邦法官彻底震惊了美国生物技术行业。",
     "src": "2012 英语二 · 阅读",
     "year": "2012"
+   },
+   {
+    "w": "writing off",
+    "meaning": "忽视；一笔勾销",
+    "en": "None of this is about writing off the individual.",
+    "cn": "这全无否定个体之意。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
    }
   ],
   "商业经济": [
+   {
+    "w": "a big deal",
+    "meaning": "了不起的事；举足轻重",
+    "en": "\"Let's not forget sports - in male-dominated corporate America, it's still a big deal.",
+    "cn": "“别忘了体育运动——在男性主导的美国企业中，它依然非同小可。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "a big jump",
+    "meaning": "大幅增长，激增",
+    "en": "There was a big jump in the number of people who report voluntarily working part-time.",
+    "cn": "申报自愿从事兼职工作的人数出现大幅激增。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "All but",
+    "meaning": "除……之外全部",
+    "en": "All but two pieces sold, fetching more than £70m, a record for a sale by a single artist.",
+    "cn": "除两件作品以外，其余作品全部售出，拍卖总额超过七千万英镑，创造了单个艺术家作品拍卖的最高记录。",
+    "src": "2010 英语二 · 阅读",
+    "year": "2010"
+   },
    {
     "w": "bull run",
     "meaning": "牛市态势",
@@ -42,6 +202,54 @@
     "cn": "2008 年 9 月 15 日伦敦苏富比拍卖行举办的“在我脑海，美丽永恒”主题拍卖会上，随着达米恩·赫斯特的 56 件作品被售出，一个世纪以来艺术品市场最长的牛市也戏剧性地落幕了。",
     "src": "2010 英语二 · 阅读",
     "year": "2010"
+   },
+   {
+    "w": "buy into it",
+    "meaning": "接受，认同，买账",
+    "en": "As a linguist once said, \"You can get people to think it's nonsense at the same time that you buy into it.\"",
+    "cn": "正如一位语言学家所说，“你可以让其他人认为它是无稽之谈，但与此同时你却买它的账。”",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "chew up",
+    "meaning": "蚕食，摧毁",
+    "en": "To Microsoft's critics, the fates of Wunderlist and Sunrise are examples of a remorseless drive by Big Tech to chew up any innovative companies that lie in their path.",
+    "cn": "在微软的批评者看来，Wunderlist和Sunrise的命运表明：科技巨头会无情地蚕食一切阻碍其发展的创新公司。",
+    "src": "2021 英语二 · 阅读",
+    "year": "2021"
+   },
+   {
+    "w": "climb the corporate ladder",
+    "meaning": "在职场步步高升",
+    "en": "Do we need quotas to ensure that women can continue to climb the corporate ladder fairly as they balance work and family?",
+    "cn": "我们真的需要定额来确保女性在平衡工作和家庭的同时能继续公平地攀爬企业晋升阶梯吗？",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "considerable buzz",
+    "meaning": "热议，高度关注",
+    "en": "When Microsoft bought task management app Wunderlist and mobile calendar Sunrise in 2015, it picked two newcomers that were attracting considerable buzz in Silicon Valley.",
+    "cn": "2015年，微软收购任务管理应用Wunderlist和移动日历Sunrise时，挑选的是当时在硅谷名声大噪的两家新科技公司。",
+    "src": "2021 英语二 · 阅读",
+    "year": "2021"
+   },
+   {
+    "w": "eating jobs",
+    "meaning": "吞噬工作岗位",
+    "en": "Yes, new technology has been eating jobs forever, and always will.",
+    "cn": "的确，新技术一直在吞噬工作岗位，而且将永远持续下去。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "eating up",
+    "meaning": "吞噬；耗尽",
+    "en": "Since technology has such an insatiable appetite for eating up human jobs, this phenomenon will continue to restructure our economy in ways we cannot immediately foresee.",
+    "cn": "由于技术在吞噬人类工作方面非常“贪得无厌”，所以这一现象将会继续以难以即时预料的方式重构我们的经济。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
    },
    {
     "w": "filed for bankruptcy",
@@ -52,20 +260,284 @@
     "year": "2010"
    },
    {
+    "w": "from the ground up",
+    "meaning": "从零开始；彻底地",
+    "en": "Microsoft's own Office dominates the market for \"productivity\" software, but the start-ups represented a new wave of technology designed from the ground up for the smartphone world.",
+    "cn": "微软自创的Office在“生产效率”软件市场独占鳌头，而这两家初创企业则代表了智能手机领域全新科技的一股新潮。",
+    "src": "2021 英语二 · 阅读",
+    "year": "2021"
+   },
+   {
+    "w": "go with",
+    "meaning": "采纳，采取（策略等）",
+    "en": "AT&T is often given as the gold standard of a company who decided to do a massive reskilling program rather than go with a fire-and-hire strategy.",
+    "cn": "美国电话电报公司（AT&T）便常常被奉为（反其道而行之的）完美范例，该公司采用了大规模的技能再培训方案，而非“先裁后聘”的策略。",
+    "src": "2021 英语二 · 阅读",
+    "year": "2021"
+   },
+   {
+    "w": "gold standard",
+    "meaning": "标杆，典范",
+    "en": "AT&T is often given as the gold standard of a company who decided to do a massive reskilling program rather than go with a fire-and-hire strategy.",
+    "cn": "美国电话电报公司（AT&T）便常常被奉为（反其道而行之的）完美范例，该公司采用了大规模的技能再培训方案，而非“先裁后聘”的策略。",
+    "src": "2021 英语二 · 阅读",
+    "year": "2021"
+   },
+   {
+    "w": "have it all",
+    "meaning": "兼顾一切；拥有一切",
+    "en": "The \"mommy wars\" of the 1990s are still going on today, prompting arguments about why women still can't have it all and books like Sheryl Sandberg's Lean In, whose title has become a buzzw…",
+    "cn": "二十世纪九十年代的“妈咪大战”如今仍在继续，激起了关于“为何女性仍然不能兼顾工作与家庭”的争论，还催生了如谢丽尔·桑德伯格的《向前一步》一类的书籍，这一书名本身也因此成为流行语。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "in place",
+    "meaning": "已就绪；已实施到位",
+    "en": "If appropriate public policies were in place to help all women - whether CEOs or their children's caregivers - and all families, Sandberg would be no more newsworthy than any other highly…",
+    "cn": "如果能够制定适当的公共政策来帮助所有女性——无论是公司高管还是她们孩子的护工——以及所有家庭，那么在这样一个更公平的社会，桑德伯格就不会比任何其他卓越人士更具报道价值。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "in this together",
+    "meaning": "同舟共济；共进退",
+    "en": "It's not explicitly conscious; it's the idea that I'm a coach, and you're my team, and we're in this together.",
+    "cn": "它不是明明白白的有意行为；它是这样一种想法：我是教练，你们是我的队员，我们同舟共济。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "jobs picture",
+    "meaning": "就业状况，就业形势",
+    "en": "However, there is another important part of the jobs picture that was largely overlooked.",
+    "cn": "然而，人们在很大程度上忽略了就业图景的另一重要部分。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "leave no room for",
+    "meaning": "不给……留余地",
+    "en": "Hagel says we have designed jobs in the U.S. that tend to be \"tightly scripted\" and \"highly standardized\" ones that leave no room for \"individual initiative or creativity\".",
+    "cn": "哈格尔说，在美国，我们往往把工作设计成“高度模式化”、“高度标准化”，以至于没给人们留下“发挥个人主动性和创造力”的空间。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
+   },
+   {
+    "w": "let go of",
+    "meaning": "放弃；解雇",
+    "en": "For individual companies, the temptation is always to let go of workers whose skills are no longer in demand and replace them with those whose skills are.",
+    "cn": "对各公司来说，解雇技能过时的员工，用掌握紧缺技能的人取而代之，这一直是个有吸引力的办法。",
+    "src": "2021 英语二 · 阅读",
+    "year": "2021"
+   },
+   {
+    "w": "make it",
+    "meaning": "成功；渡过难关",
+    "en": "Will the European Union make it?",
+    "cn": "欧盟还能成功走下去吗？",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
+   },
+   {
+    "w": "making ends meet",
+    "meaning": "收支相抵；勉强维持生计",
+    "en": "An increase in involuntary part-time work is evidence of weakness in the labor market and it means that many people will be having a very hard time making ends meet.",
+    "cn": "非自愿兼职工作的增加是劳动力市场疲软的证据，这意味着许多人将很难维持收支平衡。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "making headlines",
+    "meaning": "成为新闻焦点，登上头条",
+    "en": "With the global population predicted to hit close to 10 billion by 2050, and forecasts that agricultural production in some regions will need to nearly double to keep pace, food security i…",
+    "cn": "预计到2050年，全球人口将多达近100亿，预测若要跟上步伐，某些地区的农业产量需接近翻倍，因此，粮食保障问题正越来越多地占据头条新闻。",
+    "src": "2021 英语二 · 阅读",
+    "year": "2021"
+   },
+   {
     "w": "on a dramatic note",
     "meaning": "以戏剧性的方式",
     "en": "The longest bull run in a century of art-market history ended on a dramatic note with a sale of 56 works by Damien Hirst, Beautiful Inside My Head Forever, at Sotheby's in London on Septem…",
     "cn": "2008 年 9 月 15 日伦敦苏富比拍卖行举办的“在我脑海，美丽永恒”主题拍卖会上，随着达米恩·赫斯特的 56 件作品被售出，一个世纪以来艺术品市场最长的牛市也戏剧性地落幕了。",
     "src": "2010 英语二 · 阅读",
     "year": "2010"
+   },
+   {
+    "w": "pushing journalists overboard",
+    "meaning": "把记者推下船（喻大举裁员）",
+    "en": "Many papers stayed afloat by pushing journalists overboard.",
+    "cn": "多家报社通过裁员来维持运营。",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
+   },
+   {
+    "w": "quick fix",
+    "meaning": "权宜之计；临时凑合的办法",
+    "en": "Markets have lost faith that the euro zone's economies, weaker or stronger, will one day converge thanks to the discipline of sharing a single currency, which denies uncompetitive members…",
+    "cn": "市场已不再相信欧元区各经济体，无论强弱，会由于共用单一货币这一原则——让缺乏竞争力的成员国无法采取货币贬值这一权宜之计——而最终走向联合。",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
+   },
+   {
+    "w": "ripping people off",
+    "meaning": "剥削，敲竹杠",
+    "en": "The common idea that high CEO pay is mainly about ripping people off doesn't explain history very well.",
+    "cn": "人们普遍认为CEO的高薪很大程度上是对员工的剥削，但这并不能很好地解释历史。",
+    "src": "2020 英语二 · 阅读",
+    "year": "2020"
+   },
+   {
+    "w": "run counter to",
+    "meaning": "与……背道而驰；相悖",
+    "en": "I don't like quotas either; they run counter to my belief in meritocracy, governance by the capable.",
+    "cn": "我也不喜欢定额；它们有悖于我所信仰的英才制度，即能者居之。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "shed workers",
+    "meaning": "裁减员工",
+    "en": "As Davidson notes, \"In the 10 years ending in 2009, [U.S.] factories shed workers so fast that they erased almost all the gains of the previous 70 years; roughly one out of every three man…",
+    "cn": "正如戴维森所言，“2009 年以前的十年间，（美国）工厂裁员如此之快，以至于抹掉了前 70 年所有新增员工的总额；制造业岗位中，大约有三分之一，共计将近 600 万个岗位不复存在。”",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "shrugged off",
+    "meaning": "对……不予理会；摆脱",
+    "en": "German and Brazilian papers have shrugged off the recession.",
+    "cn": "德国和巴西的报纸业已经摆脱了经济衰退。",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
+   },
+   {
+    "w": "soft pressure",
+    "meaning": "软压力；非强制的劝导",
+    "en": "After all, four decades of evidence has now shown that corporations in Europe as well as the US are evading the meritocratic hiring and promotion of women to top positions - no matter how…",
+    "cn": "毕竟，四十年的证据现已表明，不管给它们施加多少“软压力”，欧洲以及美国的企业都在逃避精英选才，拒绝升迁女性到高层。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "stand out",
+    "meaning": "脱颖而出；出众",
+    "en": "Therefore, everyone needs to find their extra - their unique value contribution that makes them stand out in whatever is their field of employment.",
+    "cn": "因此，所有人都需要找到自身的额外价值——一种可以令其在各种工作领域中脱颖而出的独特价值贡献。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "stayed afloat",
+    "meaning": "维持经营；免于破产",
+    "en": "Many papers stayed afloat by pushing journalists overboard.",
+    "cn": "多家报社通过裁员来维持运营。",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
+   },
+   {
+    "w": "stick to it",
+    "meaning": "坚持下去",
+    "en": "Whichever approach, the key is to determine your length of focus time and stick to it.",
+    "cn": "无论哪种方式，关键都是：确定你的专注时长并坚持下去。",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
+   {
+    "w": "trade up",
+    "meaning": "越换越好；另谋高就",
+    "en": "Often they \"trade up,\" leaving riskier, smaller firms for larger and more stable firms.",
+    "cn": "他们通常是在“另谋高就”，离开风险较高的小公司而去往更稳定的大公司。",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
+   },
+   {
+    "w": "under fire",
+    "meaning": "受到抨击；遭到批评",
+    "en": "But by the end of 2009 Ms. Simmons was under fire for having sat on Goldman's compensation committee; how could she have let those enormous bonus payouts pass unremarked?",
+    "cn": "到了 2009 年底，西蒙斯女士却因在高盛薪酬委员会的任职而遭受抨击；她怎么能让那些巨额奖金支出毫无察觉地就通过了呢？",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
+   },
+   {
+    "w": "upped their game",
+    "meaning": "提升表现，提高水平",
+    "en": "It's not popular to say, but one reason their pay has gone up so much is that CEOs really have upped their game relative to many other workers in the U.S. economy.",
+    "cn": "尽管这么说不太讨喜，但CEO薪酬涨幅如此之大的一个原因是，相对于美国经济中的许多其他工作者来说，CEO确实提升了工作表现。",
+    "src": "2020 英语二 · 阅读",
+    "year": "2020"
+   },
+   {
+    "w": "write off",
+    "meaning": "认定……失败；一笔勾销",
+    "en": "It is too soon to write off the EU.",
+    "cn": "就这么宣判欧盟的死刑还为时过早。",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
    }
   ],
   "科学科技": [
+   {
+    "w": "a quick put-down",
+    "meaning": "贬损（奚落）之语",
+    "en": "The question \"what happens when the wind doesn't blow or the sun doesn't shine?\" has provided a quick put-down for skeptics.",
+    "cn": "“如果不刮风、不出太阳，会发生什么？”这一问话为怀疑论者提供了一句快速的贬斥之辞。",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
    {
     "w": "are wired to",
     "meaning": "天生倾向于，生来就要",
     "en": "Infants are wired to look at parents' faces to try to understand their world, and if those faces are blank and unresponsive - as they often are when absorbed in a device - it can be extrem…",
     "cn": "婴幼儿生来就靠观察父母的面孔来理解世界，如果这些面孔毫无表情也无任何反应——就像他们沉浸在数字设备时经常就是如此——这会让孩子感到非常不安。",
+    "src": "2017 英语二 · 阅读",
+    "year": "2017"
+   },
+   {
+    "w": "around the clock",
+    "meaning": "昼夜不停地",
+    "en": "But a boost in the storage capacity of batteries is making their ability to keep power flowing around the clock more likely.",
+    "cn": "但是，电池存储容量的提升正使其昼夜不停地持续供电的能力更有可能实现。",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
+   {
+    "w": "at the expense of",
+    "meaning": "以……为代价，牺牲",
+    "en": "While climate is a key element, Moritz says, it shouldn't come at the expense of the rest of the equation.",
+    "cn": "莫里茨说，尽管气候是一个关键要素，但它不应以牺牲其他影响因素作为代价。",
+    "src": "2017 英语二 · 阅读",
+    "year": "2017"
+   },
+   {
+    "w": "come to see",
+    "meaning": "逐渐意识到",
+    "en": "Only recently have they come to see the vital part forests will have to play in storing carbon.",
+    "cn": "直到最近，他们才意识到必须让森林在碳储存方面发挥重要作用。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
+    "w": "figuring out",
+    "meaning": "弄清楚，想出",
+    "en": "California is leading the way, as it does on so many climate efforts, in figuring out the details.",
+    "cn": "加州在明确细节方面做出了示范，正如它在诸多应对气候变化的运动中所做的一样。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
+    "w": "hot stuff",
+    "meaning": "了不起的人物；大人物",
+    "en": "We stalk around thinking we're hot stuff.",
+    "cn": "我们趾高气昂，自认为很有魅力。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
+   },
+   {
+    "w": "making excited bids for",
+    "meaning": "急切地争取、设法吸引（注意）",
+    "en": "Parents would be looking at their emails while the children would be making excited bids for their attention.",
+    "cn": "当孩子们紧张不安地企图获得父母的注意时，父母们却在查看电子邮件。",
     "src": "2017 英语二 · 阅读",
     "year": "2017"
    },
@@ -78,15 +550,95 @@
     "year": "2017"
    },
    {
+    "w": "not so much",
+    "meaning": "与其说……倒不如说",
+    "en": "It may be that the value of Whole Foods to Amazon is not so much the 460 shops it owns, but the records of which customers have purchased what.",
+    "cn": "亚马逊之所以看重全食超市，其价值与其说是在于它旗下的 460 间店铺，倒不如说在于其顾客的购买记录。",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
+   {
+    "w": "placing big bets on",
+    "meaning": "大力投入，寄予厚望",
+    "en": "The advance is driven in part by vehicle manufacturers, who are placing big bets on battery-powered electric vehicles.",
+    "cn": "这一进展一定程度上是由汽车制造商推动的，他们在电池驱动的电动汽车上押下重注。",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
+   {
+    "w": "rise above",
+    "meaning": "超越；克服（诱惑等）",
+    "en": "We still have the imaginative capacity to rise above temptation and reverse the high-speed trend.",
+    "cn": "我们仍然具有丰富的想象能力，去超越诱惑、扭转快速趋向。",
+    "src": "2013 英语二 · 阅读",
+    "year": "2013"
+   },
+   {
+    "w": "striking a subtle balance",
+    "meaning": "达成微妙的平衡",
+    "en": "Thankfully, there is a way out of this trap - but it involves striking a subtle balance.",
+    "cn": "值得庆幸的是，有一种方法可以摆脱这一困境——但这需要达成一种微妙的平衡。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
     "w": "suck you in",
     "meaning": "把你卷入其中，让你上瘾",
     "en": "\"Tech is designed to really suck you in,\" says Jenny Radesky in her study of digital play, \"and digital products are there to promote maximal engagement.\"",
     "cn": "“科技旨在真正让你卷入其中，”珍妮·拉德斯基在她的数字消遣研究中说道，“而且数字产品是为了促进最大参与度。”",
     "src": "2017 英语二 · 阅读",
     "year": "2017"
+   },
+   {
+    "w": "tease out",
+    "meaning": "梳理出，厘清",
+    "en": "\"It is really important to understand and try and tease out what is the human connection with fire today.\"",
+    "cn": "“理解并尽力梳理出当今人类与火灾之间的关联非常重要。”",
+    "src": "2017 英语二 · 阅读",
+    "year": "2017"
+   },
+   {
+    "w": "the cream of",
+    "meaning": "……中的精华；佼佼者",
+    "en": "Facebook, therefore, is a self-enhancer's paradise, where people can share only the most flattering photos, the cream of their wit, style, beauty, intellect and lifestyles.",
+    "cn": "因此，Facebook 就成为了自我拉抬者的乐园，用户们可以只在上面分享自己最美的照片以及他们的风趣、风格、美丽、才智和生活方式的精华部分。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
+   },
+   {
+    "w": "the makeup",
+    "meaning": "（团队等的）组成，构成",
+    "en": "What political journalist, what party whip, would not want to know the makeup of the WhatsApp groups in which Theresa May's enemies are currently plotting?",
+    "cn": "特蕾莎·梅的政敌正在其中进行密谋的那些 WhatsApp（聊天）群，哪个政治记者、哪个党鞭会不想了解其构成呢？",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
+   {
+    "w": "under way",
+    "meaning": "在进行中",
+    "en": "New research on transportation biofuels is already under way.",
+    "cn": "关于交通用生物燃料的新研究已在进行中。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
    }
   ],
   "教育文化历史": [
+   {
+    "w": "a wake-up call",
+    "meaning": "警钟，警示",
+    "en": "Koziatek's school is a wake-up call.",
+    "cn": "Koziatek 的学校敲响了警钟。",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
+   {
+    "w": "accepted wisdom",
+    "meaning": "普遍看法，公认观点",
+    "en": "When did it become accepted wisdom that students should be able to name the 13th president of the United States but be utterly overwhelmed by a broken bike chain?",
+    "cn": "究竟何时人们开始普遍认为，学生就该叫得出美国第 13 任总统的名字，却面对断裂的自行车链完全不知所措？",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
    {
     "w": "advance economically",
     "meaning": "在经济上取得发展",
@@ -110,9 +662,89 @@
     "cn": "多年来的研究已发现，第一代大学生——那些父母均没有大学学位的大学生——在一系列学业成就指标上均落后于其他学生。",
     "src": "2015 英语二 · 阅读",
     "year": "2015"
+   },
+   {
+    "w": "fuel the efficiency mind-set",
+    "meaning": "助长效率至上的思维",
+    "en": "You'd think this might fuel the efficiency mind-set, but in fact, Eberle notes, such ritualistic behaviour helps us \"step outside time's flow\" into \"soul time.\"",
+    "cn": "你或许认为这可能会加剧“效率至上”的思维倾向，但实际上，埃伯利指出，这种例行行为帮助我们“从时间的流逝中走出来”，进入“灵魂时间”。",
+    "src": "2016 英语二 · 阅读",
+    "year": "2016"
+   },
+   {
+    "w": "lessen the blow",
+    "meaning": "减轻打击、冲击",
+    "en": "Gap year experiences can lessen the blow when it comes to adjusting to college and being thrown into a brand new environment, making it easier to focus on academics and activities rather t…",
+    "cn": "间隔年经历可以减轻适应大学生活和陷入全新环境所带来的冲击，使学生更容易专注于学业和活动，而不必为适应问题分心。",
+    "src": "2017 英语二 · 阅读",
+    "year": "2017"
+   },
+   {
+    "w": "opens more doors",
+    "meaning": "带来更多机会；打开门路",
+    "en": "Yes, a bachelor's degree opens more doors.",
+    "cn": "确实，学士学位会打开更多扇门。",
+    "src": "2018 英语二 · 阅读",
+    "year": "2018"
+   },
+   {
+    "w": "packed to the brim",
+    "meaning": "挤得满满的",
+    "en": "Students also benefit from learning something about coding before they get to college, where introductory computer-science classes are packed to the brim, which can drive the less-experien…",
+    "cn": "学生在进入大学之前也会从学习一些有关编码的知识中获益，因为在大学里，计算机科学入门课程都排得满满当当，这可能会吓跑那些经验欠缺或意志力不足的学生。",
+    "src": "2016 英语二 · 阅读",
+    "year": "2016"
+   },
+   {
+    "w": "put on hold",
+    "meaning": "暂缓；搁置",
+    "en": "The homework rules should be put on hold while the school board, which is responsible for setting educational policy, looks into the matter and conducts public hearings.",
+    "cn": "有关家庭作业的规定应暂缓实施，而负责制定教育政策的校董事会应深入调查并举行公众听证会。",
+    "src": "2012 英语二 · 阅读",
+    "year": "2012"
+   },
+   {
+    "w": "slot it in",
+    "meaning": "把……安插、安排进去",
+    "en": "Try to slot it in as a to-do list item and you'll manage only goal-focused reading - useful, sometimes, but not the most fulfilling kind.",
+    "cn": "将之放在任务清单里只能进行目标集中式阅读——有时候有用，但是并非是最令人满足的阅读方式。",
+    "src": "2016 英语二 · 阅读",
+    "year": "2016"
+   },
+   {
+    "w": "struggle to navigate",
+    "meaning": "艰难地应付、摸索（复杂局面）",
+    "en": "Many first-generation students \"struggle to navigate the middle-class culture of higher education, learn the 'rules of the game,' and take advantage of college resources,\" they write.",
+    "cn": "许多第一代大学生“挣扎于应付高等教育中的中产阶级文化，学会‘游戏规则’并利用高校资源”，他们写道。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "take for granted",
+    "meaning": "认为理所当然",
+    "en": "Like other modern architects, he employed metal, glass and laminated wood – materials that we take for granted today but that in the 1940s symbolized the future.",
+    "cn": "和其他的现代建筑师一样，他使用金属、玻璃和复合板，这些我们今天习以为常的材料，在 20 世纪 40 年代却是一种对未来的象征。",
+    "src": "2011 英语二 · 阅读",
+    "year": "2011"
    }
   ],
   "社会生活": [
+   {
+    "w": "a bad rap",
+    "meaning": "恶名，差评",
+    "en": "In the popular imagination, of course, guilt still gets a bad rap.",
+    "cn": "当然，在大众想象中内疚感可不是件好事。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
+    "w": "better off",
+    "meaning": "境况更好；更宽裕",
+    "en": "In limited respects, perhaps the recession will leave society better off.",
+    "cn": "在有限的几个方面，也许经济衰退将使得整个社会变得更好。",
+    "src": "2012 英语二 · 阅读",
+    "year": "2012"
+   },
    {
     "w": "burst into laughter",
     "meaning": "突然大笑",
@@ -122,12 +754,132 @@
     "year": "2010"
    },
    {
+    "w": "came into its own",
+    "meaning": "大放异彩；进入全盛期",
+    "en": "It was not until the mid-1980s, when amplifying age and sex differences became a dominant children's marketing strategy, that pink fully came into its own, when it began to seem inherently…",
+    "cn": "直到 20 世纪 80 年代中期，随着强化年龄和性别差异成为儿童市场主要营销策略时，粉色才盛行起来，开始对女孩产生一种看似固有的吸引力，这让粉色成为定义女性特质的一部分，至少在最初关键的几年里是如此。",
+    "src": "2012 英语二 · 阅读",
+    "year": "2012"
+   },
+   {
+    "w": "creeps in",
+    "meaning": "悄然出现；渐渐产生",
+    "en": "What was once exciting and new becomes old-hat; regret creeps in.",
+    "cn": "曾经令人兴奋又新奇的东西变得陈旧过时，懊悔悄然而至。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
+   },
+   {
+    "w": "find silver linings",
+    "meaning": "寻找（困境中的）一线希望",
+    "en": "No one tries harder than the jobless to find silver linings in this national economic disaster.",
+    "cn": "在这场全国性的经济灾难中，没有人比失业者更努力地在寻找一线希望。",
+    "src": "2012 英语二 · 阅读",
+    "year": "2012"
+   },
+   {
+    "w": "give or take",
+    "meaning": "出入，大约（误差范围）",
+    "en": "Now that members of Generation Z are graduating college this spring - the most commonly-accepted definition says this generation was born after 1995, give or take a year - the attention ha…",
+    "cn": "由于一些Z世代成员——对这代人最普遍接受的定义是出生于1995年之后（可有一年出入）——今春即将大学毕业，近几周对他们的关注也在不断增长。",
+    "src": "2020 英语二 · 阅读",
+    "year": "2020"
+   },
+   {
+    "w": "hit the streets",
+    "meaning": "涌入、走上街头（求职等）",
+    "en": "Gen Zs are about to hit the streets looking for work in a labor market that's tighter than it's been in decades.",
+    "cn": "Z世代即将涌入几十年来劳动力最为紧缺的职场，开启求职之旅。",
+    "src": "2020 英语二 · 阅读",
+    "year": "2020"
+   },
+   {
+    "w": "hold true",
+    "meaning": "（说法、规律）成立；适用",
+    "en": "Another surprise is that the findings hold true for both those with children and without, but more so for nonparents.",
+    "cn": "另一项令人惊讶的结论是，该发现对有无子女者来说都适用，不过对于无子女者来说更甚。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
     "w": "keep the conversation going",
     "meaning": "让谈话继续下去",
     "en": "\"It's true,\" he explained. \"When I come home from work I have nothing to say. If she didn't keep the conversation going, we'd spend the whole evening in silence.\"",
     "cn": "“这是真的，”他解释说。“我下班回家后总是无话可说。如果她不一直和我说话，我们整晚都会在沉默中度过。”",
     "src": "2010 英语二 · 阅读",
     "year": "2010"
+   },
+   {
+    "w": "kick back",
+    "meaning": "放松；休息",
+    "en": "For many men, the end of the workday is a time to kick back.",
+    "cn": "对于许多男性来说，工作日结束之时便是放松的时刻。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "rein in",
+    "meaning": "抑制，约束",
+    "en": "Some kids who are low in sympathy may make up for that shortfall by experiencing more guilt, which can rein in their nastier impulses.",
+    "cn": "同情心较低的孩子可以通过体验更多的内疚感来弥补这一不足，这种内疚感可以遏制他们的恶意冲动。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
+    "w": "social fabric",
+    "meaning": "社会结构；社会肌理",
+    "en": "We will have to wait and see exactly how these hard times will reshape our social fabric.",
+    "cn": "这些艰苦日子到底将如何重塑我们的社会结构，我们只能继续观望。",
+    "src": "2012 英语二 · 阅读",
+    "year": "2012"
+   },
+   {
+    "w": "the home front",
+    "meaning": "家庭大后方",
+    "en": "With the blurring of roles, and the fact that the home front lags well behind the workplace in making adjustments for working women, it's not surprising that women are more stressed at home.",
+    "cn": "由于角色的模糊，以及职业女性在家庭大后方比在职场中更难作出自我调整这一事实，女性在家中压力更大也就不足为奇了。",
+    "src": "2015 英语二 · 阅读",
+    "year": "2015"
+   },
+   {
+    "w": "the run-up to",
+    "meaning": "……的前夕，筹备期",
+    "en": "The number of adults doing weekly sport did rise, by nearly 2 million in the run-up to 2012 - but the general population was growing faster.",
+    "cn": "在 2012 年前的筹备阶段，每周参加体育运动的成年人数量确实上升了，增加了近 200 万——但总人口增长得更快。",
+    "src": "2017 英语二 · 阅读",
+    "year": "2017"
+   },
+   {
+    "w": "train wreck",
+    "meaning": "惨败，灾难",
+    "en": "Despite graduating into the best economy in the past 50 years, Gen Zs know what an economic train wreck looks like.",
+    "cn": "尽管毕业于五十年来最好的经济形势，但Z世代了解经济火车失事的惨状。",
+    "src": "2020 英语二 · 阅读",
+    "year": "2020"
+   },
+   {
+    "w": "turn on",
+    "meaning": "取决于",
+    "en": "For the low-sympathy kids, how much they shared appeared to turn on how inclined they were to feel guilty.",
+    "cn": "对于那些缺乏同情心的孩子，他们分享出多少（巧克力）取决于他们感到内疚的倾向。",
+    "src": "2019 英语二 · 阅读",
+    "year": "2019"
+   },
+   {
+    "w": "wage slaves",
+    "meaning": "为薪水所困的上班族",
+    "en": "This slim volume is packed with tips to help wage slaves as well as lottery winners get the most \"happiness bang for your buck.\"",
+    "cn": "这本小书满载各种建议，帮助“工薪奴隶”和彩票中奖者们用每一分钱换来最多的快乐。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
+   },
+   {
+    "w": "wears off",
+    "meaning": "（感觉）逐渐消退",
+    "en": "Yet satisfaction with these material purchases wears off fairly quickly.",
+    "cn": "然而，这些物质购买所带来的满足感会消失得相当快。",
+    "src": "2014 英语二 · 阅读",
+    "year": "2014"
    },
    {
     "w": "wreaking havoc with",

@@ -1,5 +1,5 @@
 {
- "count": 122,
+ "count": 161,
  "rows": [
   {
    "w": "board",
@@ -58,6 +58,20 @@
    "n": 22
   },
   {
+   "w": "article",
+   "common": "n. 文章；冠词",
+   "uncommon": "n. 物品；用品（配发的物资）",
+   "tier": "高",
+   "en": "G.I. is just a military abbreviation [7] Government Issue, and it was on all of the articles [8] to soldiers.",
+   "cn": "G.I.只是一个军事缩写，表示\"政府发给\"，分发给士兵的所有物品上都印有这个符号。",
+   "src": "2012 英语二 · 完形",
+   "year": "2012",
+   "years": [
+    "2012"
+   ],
+   "n": 21
+  },
+  {
    "w": "field",
    "common": "n. 领域；田地",
    "uncommon": "v. 应对，处理（问题、提问）",
@@ -72,6 +86,20 @@
    "n": 20
   },
   {
+   "w": "peer",
+   "common": "n. 同等的人；匹敌",
+   "uncommon": "v. 凝视，端详",
+   "tier": "高",
+   "en": "A passenger peering out of the window might not even see the other planes.",
+   "cn": "望向窗外的乘客甚至不会看到其他的飞机。",
+   "src": "2010 英语二 · 新题型",
+   "year": "2010",
+   "years": [
+    "2010"
+   ],
+   "n": 19
+  },
+  {
    "w": "address",
    "common": "n. 住址；演说",
    "uncommon": "v. 解决，处理（问题）",
@@ -84,6 +112,20 @@
     "2018"
    ],
    "n": 17
+  },
+  {
+   "w": "content",
+   "common": "n. 内容；满足",
+   "uncommon": "a. 满足的，甘愿的",
+   "tier": "高",
+   "en": "While their parents were content to work long hours, young people value flexibility.",
+   "cn": "他们的父母甘愿长时间工作，而年轻人重视弹性。",
+   "src": "2017 英语二 · 新题型",
+   "year": "2017",
+   "years": [
+    "2017"
+   ],
+   "n": 14
   },
   {
    "w": "wage",
@@ -140,6 +182,20 @@
     "2023"
    ],
    "n": 5
+  },
+  {
+   "w": "secretary",
+   "common": "n. 秘书；书记",
+   "uncommon": "n. （英国）大臣，部长",
+   "tier": "高",
+   "en": "… week by the health secretary, Andrew Lansley, who insisted the government could not force people to make healthy choices and promis…",
+   "cn": "这些要求是在卫生部长安德鲁·兰斯利上周发言之后提出的。兰斯利在发言中坚持认为政府不能强迫人们作出健康选择，他承诺会把各企业从公共卫生规范中解放出来。",
+   "src": "2011 英语二 · 新题型",
+   "year": "2011",
+   "years": [
+    "2011"
+   ],
+   "n": 3
   },
   {
    "w": "buys",
@@ -464,6 +520,20 @@
    "n": 20
   },
   {
+   "w": "stress",
+   "common": "n. 压力；紧迫",
+   "uncommon": "n. 强调，重视",
+   "tier": "中",
+   "en": "The dual aim was mixed up: The stress on success over taking part was intimidating for newcomers.",
+   "cn": "双重目的被混为一谈：强调“成功”胜过“参与”会吓退新手。",
+   "src": "2017 英语二 · 阅读",
+   "year": "2017",
+   "years": [
+    "2017"
+   ],
+   "n": 20
+  },
+  {
    "w": "run",
    "common": "v. 跑；经营；运转",
    "uncommon": "v. 与……相悖（run counter to）",
@@ -548,6 +618,20 @@
    "n": 12
   },
   {
+   "w": "print",
+   "common": "n. 打印；版",
+   "uncommon": "n. 印刷品，纸媒",
+   "tier": "中",
+   "en": "Readers are migrating away from print anyway.",
+   "cn": "",
+   "src": "2016 英语一 · 阅读",
+   "year": "2016",
+   "years": [
+    "2016"
+   ],
+   "n": 12
+  },
+  {
    "w": "prize",
    "common": "n. 奖赏；奖金",
    "uncommon": "v. 珍视，高度重视",
@@ -560,6 +644,20 @@
     "2016"
    ],
    "n": 12
+  },
+  {
+   "w": "character",
+   "common": "n. 个性；字符",
+   "uncommon": "n. （社会、时代的）特征，性质",
+   "tier": "中",
+   "en": "And ultimately, it is likely to reshape our politics, our culture, and the character of our society for years.",
+   "cn": "而且它最终可能会在未来许多年重塑我们的政治、文化以及社会特征。",
+   "src": "2012 英语二 · 阅读",
+   "year": "2012",
+   "years": [
+    "2012"
+   ],
+   "n": 11
   },
   {
    "w": "charge",
@@ -660,6 +758,20 @@
    "n": 9
   },
   {
+   "w": "express",
+   "common": "n. 快车；快递",
+   "uncommon": "a. 明确的，清楚的（express claims）",
+   "tier": "中",
+   "en": "…laint that \"despite express privacy claims, the company took control of users' sensitive fertility data and shared it with third par…",
+   "cn": "联邦贸易委员会在一份投诉中声称，“尽管该公司有明确的隐私声明，但它还是控制了用户敏感的生育数据，并与第三方进行了共享”。",
+   "src": "2024 英语二 · 阅读",
+   "year": "2024",
+   "years": [
+    "2024"
+   ],
+   "n": 9
+  },
+  {
    "w": "file",
    "common": "n. 档案；公文箱",
    "uncommon": "v. 提交，申请（专利等）",
@@ -670,6 +782,20 @@
    "year": "2023",
    "years": [
     "2023"
+   ],
+   "n": 9
+  },
+  {
+   "w": "respect",
+   "common": "n. 尊敬；尊重",
+   "uncommon": "n. 方面，点（in limited respects）",
+   "tier": "中",
+   "en": "In limited respects, perhaps the recession will leave society better off.",
+   "cn": "在有限的几个方面，也许经济衰退将使得整个社会变得更好。",
+   "src": "2012 英语二 · 阅读",
+   "year": "2012",
+   "years": [
+    "2012"
    ],
    "n": 9
   },
@@ -688,6 +814,48 @@
    "n": 9
   },
   {
+   "w": "brand",
+   "common": "n. 商标；牌子",
+   "uncommon": "v. 给……打上（污名）烙印",
+   "tier": "中",
+   "en": "We hail them as Americans in the making, or brand them as aliens to be kicked out.",
+   "cn": "我们或将其誉为“缔造中的美国人”，或将其归为“需要驱逐的异族”。",
+   "src": "2013 英语二 · 阅读",
+   "year": "2013",
+   "years": [
+    "2013"
+   ],
+   "n": 8
+  },
+  {
+   "w": "credit",
+   "common": "n. 信用；信任",
+   "uncommon": "n. 学分；认可，功劳",
+   "tier": "中",
+   "en": "…e costly to make up credits after switching too late in the game.",
+   "cn": "这并不一定是坏事，但是根据学校的不同，由于转专业太晚，补学分的费用可能会很高。",
+   "src": "2017 英语二 · 阅读",
+   "year": "2017",
+   "years": [
+    "2017"
+   ],
+   "n": 8
+  },
+  {
+   "w": "formation",
+   "common": "n. 形成；构造",
+   "uncommon": "n. 队形，编队",
+   "tier": "中",
+   "en": "Since 1914, scientists have known that birds flying in formation – a V-shape – expend less energy.",
+   "cn": "从1914年起，科学家已经了解到鸟类的V字型飞行阵型耗能相对较少。",
+   "src": "2010 英语二 · 新题型",
+   "year": "2010",
+   "years": [
+    "2010"
+   ],
+   "n": 8
+  },
+  {
    "w": "picture",
    "common": "n. 图画；照片",
    "uncommon": "n. 状况，形势（the big picture）",
@@ -700,6 +868,48 @@
     "2015"
    ],
    "n": 8
+  },
+  {
+   "w": "capital",
+   "common": "n. 首都；大写字母",
+   "uncommon": "n. 资本，资金",
+   "tier": "中",
+   "en": "…le will own all the capital, and the masses will struggle in an impoverished wasteland.",
+   "cn": "其中一些人猜测即将到来的无工作世界将会以不平等为特征：少数富人将会掌握所有的资本，而大众将会在贫困的荒芜之地苦苦挣扎。",
+   "src": "2017 英语二 · 完形",
+   "year": "2017",
+   "years": [
+    "2017"
+   ],
+   "n": 7
+  },
+  {
+   "w": "grant",
+   "common": "n. 授予；授予物",
+   "uncommon": "v. 视……为理所当然（take for granted）",
+   "tier": "中",
+   "en": "…ls that we take for granted today but that in the 1940s symbolized the future.",
+   "cn": "和其他的现代建筑师一样，他使用金属、玻璃和复合板，这些我们今天习以为常的材料，在 20 世纪 40 年代却是一种对未来的象征。",
+   "src": "2011 英语二 · 阅读",
+   "year": "2011",
+   "years": [
+    "2011"
+   ],
+   "n": 7
+  },
+  {
+   "w": "jump",
+   "common": "n. 跳跃；跳动",
+   "uncommon": "n. 猛增，激增",
+   "tier": "中",
+   "en": "There was a big jump in the number of people who report voluntarily working part-time.",
+   "cn": "申报自愿从事兼职工作的人数出现大幅激增。",
+   "src": "2015 英语二 · 阅读",
+   "year": "2015",
+   "years": [
+    "2015"
+   ],
+   "n": 7
   },
   {
    "w": "lay",
@@ -728,6 +938,20 @@
     "2017"
    ],
    "n": 7
+  },
+  {
+   "w": "premium",
+   "common": "n. 额外补贴；奖金",
+   "uncommon": "a. 优质的，高级的",
+   "tier": "中",
+   "en": "Most customers were simply unaware of the premium version and what it offered.",
+   "cn": "（问题在于）大多数客户根本就不了解产品的高级版本及其所提供的服务功能。",
+   "src": "2023 英语二 · 完形",
+   "year": "2023",
+   "years": [
+    "2023"
+   ],
+   "n": 6
   },
   {
    "w": "foster",
@@ -800,6 +1024,34 @@
    "n": 5
   },
   {
+   "w": "spring",
+   "common": "n. 春天；弹簧",
+   "uncommon": "n. 泉水",
+   "tier": "中",
+   "en": "…oduction of far-off springs, and now office workers unthinkingly sip bottled water all day long.",
+   "cn": "后来，饮料公司开始将遥远地带的泉水装入瓶中，现在办公室职员整天都在不假思索地喝着瓶装水。",
+   "src": "2010 英语二 · 阅读",
+   "year": "2010",
+   "years": [
+    "2010"
+   ],
+   "n": 5
+  },
+  {
+   "w": "stage",
+   "common": "n. 阶段；舞台",
+   "uncommon": "v. 举办，上演，筹划",
+   "tier": "中",
+   "en": "The Silver Room Block Party, staged by Hyde Park community leader Eric Williams, announced it would not return in 2024.",
+   "cn": "由海德公园社区领袖 Eric Williams 主办的银屋街区派对宣布，2024 年将不再举办。",
+   "src": "2026 英语二 · 阅读",
+   "year": "2026",
+   "years": [
+    "2026"
+   ],
+   "n": 5
+  },
+  {
    "w": "bid",
    "common": "n. 出价\\nv. 命令；吩咐",
    "uncommon": "n. 努力，争取（bid for）",
@@ -824,6 +1076,20 @@
    "year": "2019",
    "years": [
     "2019"
+   ],
+   "n": 4
+  },
+  {
+   "w": "engagement",
+   "common": "n. 诺言；约会",
+   "uncommon": "n. 参与；参与度",
+   "tier": "中",
+   "en": "…est practices in AI engagement and creating policies that evolve with the technology, businesses can positively shift the AI landsca…",
+   "cn": "通过灌输 AI 使用的最佳实践、制定随技术发展而演变的政策，企业可以积极地改变 AI 格局。",
+   "src": "2026 英语二 · 阅读",
+   "year": "2026",
+   "years": [
+    "2026"
    ],
    "n": 4
   },
@@ -870,6 +1136,34 @@
    "n": 4
   },
   {
+   "w": "saw",
+   "common": "n. 锯子；谚语\\nvt. 锯",
+   "uncommon": "v. 见证，经历（see 的过去式）",
+   "tier": "中",
+   "en": "Long gaps there saw increased connection.",
+   "cn": "在这种情况下，长时间的停顿使彼此的关系更加亲密。",
+   "src": "2025 英语二 · 翻译",
+   "year": "2025",
+   "years": [
+    "2025"
+   ],
+   "n": 4
+  },
+  {
+   "w": "snap",
+   "common": "vt. 使突然中断；猛咬",
+   "uncommon": "a. 仓促的，下意识的（snap decisions）",
+   "tier": "中",
+   "en": "Snap decisions can be important defense mechanisms; if we are judging whether someone is dangerous, our brains and bodies are hard-wi…",
+   "cn": "快速决策可能是重要防御机制；如果要判断某人是否具有危险性，毫秒间我们的大脑和身体就会本能地快速做出反应。",
+   "src": "2013 英语二 · 阅读",
+   "year": "2013",
+   "years": [
+    "2013"
+   ],
+   "n": 4
+  },
+  {
    "w": "stem",
    "common": "n. 茎；干",
    "uncommon": "v. 起源于（stem from）",
@@ -880,6 +1174,20 @@
    "year": "2018",
    "years": [
     "2018"
+   ],
+   "n": 4
+  },
+  {
+   "w": "volume",
+   "common": "n. 册；卷",
+   "uncommon": "n. 量，大量",
+   "tier": "中",
+   "en": "The sheer volume of available choice is enough to send shoppers into a state of information overload.",
+   "cn": "单是可供选择的货品数量就足以让购物者陷入信息超负荷的状态。",
+   "src": "2016 英语二 · 翻译",
+   "year": "2016",
+   "years": [
+    "2016"
    ],
    "n": 4
   },
@@ -898,6 +1206,48 @@
    "n": 3
   },
   {
+   "w": "below",
+   "common": "prep. 在下面\\nadv. 在下面",
+   "uncommon": "n. 底层，下层（from below）",
+   "tier": "中",
+   "en": "History from below stood alongside biographies of great men.",
+   "cn": "草根的历史与伟人传记平起平坐。",
+   "src": "2012 英语二 · 新题型",
+   "year": "2012",
+   "years": [
+    "2012"
+   ],
+   "n": 3
+  },
+  {
+   "w": "blank",
+   "common": "n. 空格；空白\\na. 空白的",
+   "uncommon": "a. 茫然的，无表情的",
+   "tier": "中",
+   "en": "…before putting on a blank expression and not giving them any visual social feedback: The child becomes increasingly distressed as sh…",
+   "cn": "在实验中，母亲被要求先以正常方式与孩子交流，之后摆出一副面无表情的神情并且不给孩子任何视觉上的社交反馈：孩子会因试图获得母亲的注意而变得越来越痛苦。",
+   "src": "2017 英语二 · 阅读",
+   "year": "2017",
+   "years": [
+    "2017"
+   ],
+   "n": 3
+  },
+  {
+   "w": "bottom",
+   "common": "n. 底部\\na. 底部的\\nvt. 给...装底；查明真相\\nvi. 到达底部",
+   "uncommon": "n. 实质，本质（at bottom）",
+   "tier": "中",
+   "en": "…n this world, is at bottom the History of the Great Men who have worked here,\" wrote the Victorian sage Thomas Carlyle.",
+   "cn": "维多利亚时期的哲人托马斯·卡莱尔写道，\"世界历史就是人类在这个世界上所取得的种种成就的历史，实质上也就是在世界上活动的伟人的历史。\"",
+   "src": "2012 英语二 · 新题型",
+   "year": "2012",
+   "years": [
+    "2012"
+   ],
+   "n": 3
+  },
+  {
    "w": "commissioned",
    "common": "a. 受委任的；现役的",
    "uncommon": "v. 委托（制作、创作）",
@@ -908,6 +1258,20 @@
    "year": "2026",
    "years": [
     "2026"
+   ],
+   "n": 3
+  },
+  {
+   "w": "compensation",
+   "common": "n. 补偿；赔偿金",
+   "uncommon": "n. 薪酬，报酬",
+   "tier": "中",
+   "en": "…ng sat on Goldman's compensation committee; how could she have let those enormous bonus payouts pass unremarked?",
+   "cn": "到了 2009 年底，西蒙斯女士却因在高盛薪酬委员会的任职而遭受抨击；她怎么能让那些巨额奖金支出毫无察觉地就通过了呢？",
+   "src": "2011 英语二 · 阅读",
+   "year": "2011",
+   "years": [
+    "2011"
    ],
    "n": 3
   },
@@ -926,6 +1290,20 @@
    "n": 3
   },
   {
+   "w": "curious",
+   "common": "a. 好奇的；求知的",
+   "uncommon": "a. 奇怪的，奇特的",
+   "tier": "中",
+   "en": "It is curious that Stephen Koziatek feels almost as though he has to justify his efforts to give his students a better future.",
+   "cn": "令人好奇的是，Stephen Koziatek 几乎感觉自己似乎必须为“努力给学生一个更好的未来”这件事辩护一番。",
+   "src": "2018 英语二 · 阅读",
+   "year": "2018",
+   "years": [
+    "2018"
+   ],
+   "n": 3
+  },
+  {
    "w": "flat",
    "common": "a. 平坦的；单调的",
    "uncommon": "a. （数量）固定不变的，无起伏的",
@@ -936,6 +1314,20 @@
    "year": "2023",
    "years": [
     "2023"
+   ],
+   "n": 3
+  },
+  {
+   "w": "index",
+   "common": "n. 索引；指针",
+   "uncommon": "n. 指数，指标",
+   "tier": "中",
+   "en": "It is often defined [6] body mass index, or BMI.",
+   "cn": "它通常依据身高体重指数（BMI）来定义。",
+   "src": "2014 英语二 · 完形",
+   "year": "2014",
+   "years": [
+    "2014"
    ],
    "n": 3
   },
@@ -954,6 +1346,34 @@
    "n": 3
   },
   {
+   "w": "lean",
+   "common": "n. 瘦肉；倾斜",
+   "uncommon": "a. 贫乏的，艰难的（lean times）",
+   "tier": "中",
+   "en": "More difficult, in the moment, is discerning precisely how these lean times are affecting society's character.",
+   "cn": "当前难的是去弄清楚这些艰苦岁月究竟如何影响社会特征。",
+   "src": "2012 英语二 · 阅读",
+   "year": "2012",
+   "years": [
+    "2012"
+   ],
+   "n": 3
+  },
+  {
+   "w": "original",
+   "common": "a. 最初的；原始的",
+   "uncommon": "n. 原作，真迹",
+   "tier": "中",
+   "en": "…them to identify an original photograph of themselves from a lineup including versions that had been altered to appear more and less…",
+   "cn": "艾普里没有让人们直接将自己的美貌与别人比对，而是让他们从一组被修改过的照片中识别出自己的原始照片，被修改的照片增加或减少了他们的吸引力。",
+   "src": "2014 英语二 · 阅读",
+   "year": "2014",
+   "years": [
+    "2014"
+   ],
+   "n": 3
+  },
+  {
    "w": "owe",
    "common": "vt. 亏欠；负...债",
    "uncommon": "v. 把……归功于（owe A to B）",
@@ -968,6 +1388,34 @@
    "n": 3
   },
   {
+   "w": "rein",
+   "common": "n. 缰绳；统治",
+   "uncommon": "v. 控制，约束（rein in）",
+   "tier": "中",
+   "en": "Some kids who are low in sympathy may make up for that shortfall by experiencing more guilt, which can rein in their nastier impulses.",
+   "cn": "同情心较低的孩子可以通过体验更多的内疚感来弥补这一不足，这种内疚感可以遏制他们的恶意冲动。",
+   "src": "2019 英语二 · 阅读",
+   "year": "2019",
+   "years": [
+    "2019"
+   ],
+   "n": 3
+  },
+  {
+   "w": "sole",
+   "common": "n. 脚掌；鞋底",
+   "uncommon": "a. 唯一的，仅有的",
+   "tier": "中",
+   "en": "But creating a future army of coders is not the sole purpose of the classes.",
+   "cn": "但是创建一支未来程序员队伍并不是这些课程的唯一目的。",
+   "src": "2016 英语二 · 阅读",
+   "year": "2016",
+   "years": [
+    "2016"
+   ],
+   "n": 3
+  },
+  {
    "w": "underground",
    "common": "n. 地下；地铁",
    "uncommon": "adv. 转入地下，秘密地",
@@ -978,6 +1426,20 @@
    "year": "2019",
    "years": [
     "2019"
+   ],
+   "n": 3
+  },
+  {
+   "w": "wisdom",
+   "common": "n. 智慧；明智行为",
+   "uncommon": "n. 普遍看法，公认观点",
+   "tier": "中",
+   "en": "…icting conventional wisdom, we found that women as well as men have lower levels of stress at work than at home,\" writes one of the…",
+   "cn": "“与普遍看法更加矛盾的是，我们发现女性和男性一样，上班比在家中压力更小。”研究者之一萨拉·达玛斯克写道。",
+   "src": "2015 英语二 · 阅读",
+   "year": "2015",
+   "years": [
+    "2015"
    ],
    "n": 3
   },
@@ -1584,6 +2046,20 @@
    "n": 15
   },
   {
+   "w": "thin",
+   "common": "a. 薄的；细的",
+   "uncommon": "a. 微薄的，稀少的",
+   "tier": "低",
+   "en": "But for the most part, these benefits seem thin, uncertain, and far off.",
+   "cn": "然而对于大多数情况而言，这些好处似乎是微乎其微、未知且遥远的。",
+   "src": "2012 英语二 · 阅读",
+   "year": "2012",
+   "years": [
+    "2012"
+   ],
+   "n": 7
+  },
+  {
    "w": "coach",
    "common": "n. 四轮大马车；教练\\nvt. 训练",
    "uncommon": "n./v. 教练（引申：指导，培训）",
@@ -1626,6 +2102,34 @@
    "n": 3
   },
   {
+   "w": "awkward",
+   "common": "a. 笨拙的；棘手的",
+   "uncommon": "a. 尴尬的，令人窘迫的",
+   "tier": "低",
+   "en": "It's awkward, and so awkward that some people will panic and say anything.",
+   "cn": "这种场面令人尴尬，尴尬到让一些人惊慌失措，只能随便说些什么。",
+   "src": "2025 英语二 · 翻译",
+   "year": "2025",
+   "years": [
+    "2025"
+   ],
+   "n": 3
+  },
+  {
+   "w": "broken",
+   "common": "a. 坏掉的；打破的",
+   "uncommon": "a. 失灵的，积弊深重的（broken system）",
+   "tier": "低",
+   "en": "That framework has contributed mightily to our broken immigration system and the long political paralysis over how to fix it.",
+   "cn": "这一思维构架在很大程度上导致了我们的移民体系漏洞百出，也致使政府对“如何修复这一体系”处于长期瘫痪状态。",
+   "src": "2013 英语二 · 阅读",
+   "year": "2013",
+   "years": [
+    "2013"
+   ],
+   "n": 3
+  },
+  {
    "w": "buy-in",
    "common": "n. 买进；补进（为了接管某公司买进其控制股权）",
    "uncommon": "n. 认同，支持",
@@ -1650,6 +2154,48 @@
    "year": "2025",
    "years": [
     "2025"
+   ],
+   "n": 3
+  },
+  {
+   "w": "ritual",
+   "common": "n. 仪式；典礼",
+   "uncommon": "n. 惯例，习俗",
+   "tier": "低",
+   "en": "School districts across the country, most recently Los Angeles Unified, are revising their thinking on this educational ritual.",
+   "cn": "全国各地的学区，最近的是洛杉矶联合学区，正在重新思考这一教育惯例。",
+   "src": "2012 英语二 · 阅读",
+   "year": "2012",
+   "years": [
+    "2012"
+   ],
+   "n": 3
+  },
+  {
+   "w": "sadly",
+   "common": "adv. 悲痛地；悲惨地",
+   "uncommon": "adv. 遗憾的是（作评注性状语）",
+   "tier": "低",
+   "en": "Yet these desperate measures have proved the right ones and, sadly for many journalists, they can be pushed further.",
+   "cn": "不过，这些孤注一掷的举措证明是对的，只是不幸的是，对于许多新闻工作者来说，他们可能遭到进一步的裁员。",
+   "src": "2011 英语二 · 阅读",
+   "year": "2011",
+   "years": [
+    "2011"
+   ],
+   "n": 3
+  },
+  {
+   "w": "trick",
+   "common": "n. 诡计；欺诈",
+   "uncommon": "n. 诀窍，窍门",
+   "tier": "低",
+   "en": "The trick is not only to [19] just one or even two dimensions of the objective, but also to understand how to help people better [20]…",
+   "cn": "窍门在于，不仅要指定目标的一个、甚至两个维度，还要了解如何帮助人们更好地实现目标。",
+   "src": "2021 英语二 · 完形",
+   "year": "2021",
+   "years": [
+    "2021"
    ],
    "n": 3
   },

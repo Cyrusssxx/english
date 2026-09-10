@@ -365,6 +365,33 @@ def cmd_word(w, occ=8, wlen=115):
             print('      译:', o['cn'][:80])
 
 
+def cmd_pslice(a, b, maxen=170):
+    """打印待筛短语（按出处文章主题已初分类）"""
+    fp = os.path.join(TOOLS, 'wn2_phrases_worklist.json')
+    rows = json.load(open(fp, encoding='utf-8'))['rows']
+    dec = json.load(open(DEC_FP, encoding='utf-8')) if os.path.exists(DEC_FP) else {}
+    done = {x['w'].strip().lower() for x in dec.get('phrases', [])} | {w.strip().lower() for w in dec.get('pdropped', [])}
+    todo = [r for r in rows if r['w'].strip().lower() not in done]
+    print('# 待筛短语 %d ｜本批 %d-%d' % (len(todo), a, b))
+    for r in todo[a:b]:
+        print('=' * 74)
+        print('%s ┃类别:%s ┃出处:%s' % (r['w'], r['cat'] or '未分类', r['src']))
+        print('  释义: %s' % ' | '.join(r['meanings'])[:60])
+        print('  主题: %s' % (r['topic'] or '')[:56])
+        print('  句: %s' % r['en'][:maxen])
+        if r['cn']:
+            print('  译: %s' % r['cn'][:70])
+
+
+def cmd_pcount():
+    fp = os.path.join(TOOLS, 'wn2_phrases_worklist.json')
+    rows = json.load(open(fp, encoding='utf-8'))['rows']
+    dec = json.load(open(DEC_FP, encoding='utf-8')) if os.path.exists(DEC_FP) else {}
+    done = {x['w'].strip().lower() for x in dec.get('phrases', [])} | {w.strip().lower() for w in dec.get('pdropped', [])}
+    print('短语池 %d ｜已筛 %d（含已入库 %d）｜待筛 %d' % (
+        len(rows), len(done), len(dec.get('phrases', [])), len(rows) - len(done)))
+
+
 def cmd_remaining():
     rows = _remaining_rows()
     fp = os.path.join(TOOLS, 'wn2_remaining.json')
@@ -407,6 +434,11 @@ if __name__ == '__main__':
                  int(sys.argv[5]) if len(sys.argv) > 5 else 140)
     elif c == 'word':
         cmd_word(sys.argv[2])
+    elif c == 'pslice':
+        cmd_pslice(int(sys.argv[2]), int(sys.argv[3]),
+                   int(sys.argv[4]) if len(sys.argv) > 4 else 170)
+    elif c == 'pcount':
+        cmd_pcount()
     elif c == 'remaining':
         cmd_remaining()
     elif c == 'rslice':
