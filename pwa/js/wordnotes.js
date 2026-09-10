@@ -1,22 +1,21 @@
 /* 熟词僻义 - 表格渲染
- * 数据：pwa/data/wordnotes.json（tools/build_wordnotes.py 生成）
- * 结构：按年份分区的四列表格 —— 单词 / 熟义 / 僻义 / 原句（英 + 中）
+ * 数据：pwa/data/wordnotes.json（tools/build_wordnotes.py 生成，按词频降序）
+ * 单表五列：单词 / 词频 / 熟义 / 僻义 / 原句（含该词的短句 + 译文 + 出处）
  */
 (function () {
   'use strict';
+
+  var state = { data: null, q: '' };
 
   function esc(s) {
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  function yearLabel(y) {
-    return y === '通用' ? '通用（未定位年份）' : y + ' 年';
-  }
-
   function rowHtml(r) {
     return '<tr>' +
       '<td class="wn-w" data-label="单词">' + esc(r.w) + '</td>' +
+      '<td class="wn-freq" data-label="词频">' + (r.freq || 0) + '</td>' +
       '<td class="wn-common" data-label="熟义">' + esc(r.common) + '</td>' +
       '<td class="wn-uncommon" data-label="僻义">' + esc(r.uncommon) + '</td>' +
       '<td class="wn-sent" data-label="原句">' +
@@ -27,32 +26,25 @@
     '</tr>';
   }
 
-  function sectionHtml(sec) {
-    return '<section class="wn-year" id="wn-y-' + esc(sec.year) + '">' +
-      '<h2 class="wn-year-h">' + esc(yearLabel(sec.year)) +
-        '<span class="wn-year-n">' + sec.rows.length + ' 词</span></h2>' +
-      '<div class="wn-table-wrap">' +
-        '<table class="wn-table">' +
-          '<thead><tr><th>单词</th><th>熟义</th><th>僻义</th><th>原句</th></tr></thead>' +
-          '<tbody>' + sec.rows.map(rowHtml).join('') + '</tbody>' +
-        '</table>' +
-      '</div>' +
-    '</section>';
-  }
-
-  function render(data) {
+  function render() {
     var content = document.getElementById('wnContent');
-    var toc = document.getElementById('wnToc');
-    if (!content) return;
-    content.innerHTML = data.years.map(sectionHtml).join('');
-    if (toc) {
-      toc.innerHTML = '<span style="color:var(--text-light);font-size:.82rem;align-self:center">跳到：</span>' +
-        data.years.map(function (s) {
-          return '<a href="#wn-y-' + esc(s.year) + '">' + esc(s.year === '通用' ? '通用' : s.year) +
-                 '（' + s.rows.length + '）</a>';
-        }).join('');
+    if (!content || !state.data) return;
+    var q = state.q.trim().toLowerCase();
+    var rows = state.data.rows.filter(function (r) {
+      if (!q) return true;
+      return (r.w + ' ' + r.common + ' ' + r.uncommon + ' ' + (r.cn || '')).toLowerCase().indexOf(q) >= 0;
+    });
+    var head = '<div class="wn-count">' + rows.length + ' / ' + state.data.count + ' 词' +
+               (q ? '（筛选：' + esc(state.q) + '）' : '，按词频降序') + '</div>';
+    if (!rows.length) {
+      content.innerHTML = head + '<p style="color:var(--text-light)">没有匹配的词</p>';
+      return;
     }
-    document.title = '熟词僻义（' + (data.count || 0) + ' 词） - 英语真题精翻';
+    content.innerHTML = head +
+      '<div class="wn-table-wrap"><table class="wn-table">' +
+        '<thead><tr><th>单词</th><th>词频</th><th>熟义</th><th>僻义</th><th>原句（含该词的短句）</th></tr></thead>' +
+        '<tbody>' + rows.map(rowHtml).join('') + '</tbody>' +
+      '</table></div>';
   }
 
   function fail(msg) {
@@ -61,9 +53,17 @@
   }
 
   function init() {
+    var input = document.getElementById('wnSearch');
+    if (input) {
+      input.addEventListener('input', function () { state.q = input.value; render(); });
+    }
     fetch('data/wordnotes.json')
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(render)
+      .then(function (d) {
+        state.data = d;
+        render();
+        document.title = '熟词僻义（' + (d.count || 0) + ' 词） - 英语真题精翻';
+      })
       .catch(function (e) { fail('数据加载失败：' + e.message + '（请用 start.bat 启动后访问）'); });
   }
 

@@ -15,23 +15,14 @@
         .wn-page { width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 16px 14px 72px; }
         .wn-title { font-size: 1.3rem; margin: 4px 0 6px; color: var(--text); }
         .wn-hint { color: var(--text-light); font-size: .84rem; line-height: 1.7; margin: 0 0 14px; }
-        /* 年份锚点目录 */
-        .wn-toc {
-            display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 20px;
-            padding: 10px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+        .wn-search {
+            width: 100%; box-sizing: border-box; margin: 0 0 12px;
+            padding: 8px 12px; font: inherit; font-size: .9rem;
+            border: 1px solid var(--border); border-radius: 10px;
+            background: var(--card); color: var(--text);
         }
-        .wn-toc a {
-            font-size: .82rem; text-decoration: none; color: var(--text-light);
-            padding: 2px 9px; border-radius: 999px; border: 1px solid var(--border);
-            transition: border-color .15s, color .15s;
-        }
-        .wn-toc a:hover { border-color: var(--primary); color: var(--primary); }
-        .wn-year { margin: 0 0 26px; }
-        .wn-year-h {
-            font-size: 1.06rem; color: var(--text); margin: 0 0 10px;
-            padding-left: 12px; border-left: 5px solid var(--primary);
-        }
-        .wn-year-n { font-size: .8rem; color: var(--text-light); font-weight: 400; margin-left: 6px; }
+        .wn-search:focus { outline: none; border-color: var(--primary); }
+        .wn-count { color: var(--text-light); font-size: .84rem; margin: 0 0 8px; }
         .wn-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
         .wn-table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: .88rem; }
         .wn-table th, .wn-table td {
@@ -43,9 +34,12 @@
             font-weight: 700; white-space: nowrap; position: sticky; top: 0;
         }
         .wn-table tbody tr:nth-child(even) { background: rgba(128, 128, 128, 0.04); }
-        .wn-w { font-weight: 700; color: var(--primary); white-space: nowrap; width: 118px; }
-        .wn-common { width: 170px; color: var(--text); }
-        .wn-uncommon { width: 210px; color: var(--text); font-weight: 600; }
+        .wn-w { font-weight: 700; color: var(--primary); white-space: nowrap; width: 116px; }
+        .wn-freq {
+            width: 62px; text-align: right; color: var(--text-light); font-variant-numeric: tabular-nums;
+        }
+        .wn-common { width: 168px; color: var(--text); }
+        .wn-uncommon { width: 208px; color: var(--text); font-weight: 600; }
         .wn-en { color: var(--text); font-family: Georgia, "Times New Roman", serif; }
         .wn-cn { color: var(--text-light); font-size: .84rem; margin-top: 3px; }
         .wn-src { color: var(--text-light); font-size: .75rem; margin-top: 3px; opacity: .8; }
@@ -67,9 +61,7 @@
                 <a href="index.html" class="nav-link">真题文章</a>
                 <a href="study.html" class="nav-link">背单词</a>
                 <a href="vocab.html" class="nav-link">单词本</a>
-                <a href="favorites.html" class="nav-link">句子收藏</a>
                 <a href="en1.html" class="nav-link">英语一阅读</a>
-                <a href="chain.html" class="nav-link">串联词汇</a>
                 <a href="mindmap.html" class="nav-link">方法导图</a>
                 <a href="nearmap.html" class="nav-link">近义词</a>
                 <a href="wordnotes.html" class="nav-link active">熟词僻义</a>
@@ -87,10 +79,11 @@
     <main class="wn-page">
         <h1 class="wn-title">熟词僻义</h1>
         <p class="wn-hint">
-            <b>熟义</b>＝考试外最常见的意思（取自 ECDICT）·<b>僻义</b>＝真题里实际考的特殊义（唐迟讲义，OCR＋人工核对）·
-            <b>原句</b>优先取真题原文并附官方译文，少数标「例证句」的来自讲义例句。
+            <b>词频</b>＝该词在全部真题（阅读 / 完形 / 新题型 / 翻译）里出现的次数，<b>最常出现的排最上面</b> ·
+            <b>熟义</b>＝常见义（ECDICT）·<b>僻义</b>＝真题实际考的特殊义（唐迟讲义，OCR＋人工核对）·
+            <b>原句</b>只取含该词的短句（长句标「截取」），出处见句下小字。
         </p>
-        <div class="wn-toc" id="wnToc"></div>
+        <input id="wnSearch" class="wn-search" type="search" placeholder="搜索单词 / 释义（如 handsome、支撑）">
         <div id="wnContent"><p style="color:var(--text-light)">加载中…</p></div>
     </main>
 
