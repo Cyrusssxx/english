@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熟词僻义 - 英语真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .wn-page { width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 16px 14px 72px; }
+        .wn-title { font-size: 1.3rem; margin: 4px 0 6px; color: var(--text); }
+        .wn-hint { color: var(--text-light); font-size: .84rem; line-height: 1.7; margin: 0 0 14px; }
+        /* 年份锚点目录 */
+        .wn-toc {
+            display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 20px;
+            padding: 10px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+        }
+        .wn-toc a {
+            font-size: .82rem; text-decoration: none; color: var(--text-light);
+            padding: 2px 9px; border-radius: 999px; border: 1px solid var(--border);
+            transition: border-color .15s, color .15s;
+        }
+        .wn-toc a:hover { border-color: var(--primary); color: var(--primary); }
+        .wn-year { margin: 0 0 26px; }
+        .wn-year-h {
+            font-size: 1.06rem; color: var(--text); margin: 0 0 10px;
+            padding-left: 12px; border-left: 5px solid var(--primary);
+        }
+        .wn-year-n { font-size: .8rem; color: var(--text-light); font-weight: 400; margin-left: 6px; }
+        .wn-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+        .wn-table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: .88rem; }
+        .wn-table th, .wn-table td {
+            border: 1px solid var(--border); padding: 8px 10px;
+            vertical-align: top; text-align: left; line-height: 1.6;
+        }
+        .wn-table th {
+            background: var(--primary-soft); color: var(--primary-dark);
+            font-weight: 700; white-space: nowrap; position: sticky; top: 0;
+        }
+        .wn-table tbody tr:nth-child(even) { background: rgba(128, 128, 128, 0.04); }
+        .wn-w { font-weight: 700; color: var(--primary); white-space: nowrap; width: 118px; }
+        .wn-common { width: 170px; color: var(--text); }
+        .wn-uncommon { width: 210px; color: var(--text); font-weight: 600; }
+        .wn-en { color: var(--text); font-family: Georgia, "Times New Roman", serif; }
+        .wn-cn { color: var(--text-light); font-size: .84rem; margin-top: 3px; }
+        .wn-src { color: var(--text-light); font-size: .75rem; margin-top: 3px; opacity: .8; }
+        @media (max-width: 640px) {
+            .wn-table { min-width: 0; }
+            .wn-table, .wn-table thead, .wn-table tbody, .wn-table tr, .wn-table th, .wn-table td { display: block; width: auto !important; }
+            .wn-table thead { display: none; }
+            .wn-table tr { border-bottom: 3px solid var(--border); padding: 4px 0; }
+            .wn-table td { border: none; padding: 4px 10px; }
+            .wn-table td::before { content: attr(data-label); color: var(--text-light); font-size: .74rem; margin-right: 6px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
+                <a href="vocab.html" class="nav-link">单词本</a>
+                <a href="favorites.html" class="nav-link">句子收藏</a>
+                <a href="en1.html" class="nav-link">英语一阅读</a>
+                <a href="chain.html" class="nav-link">串联词汇</a>
+                <a href="mindmap.html" class="nav-link">方法导图</a>
+                <a href="nearmap.html" class="nav-link">近义词</a>
+                <a href="wordnotes.html" class="nav-link active">熟词僻义</a>
+                <a href="mistakes.html" class="nav-link">错题本</a>
+                <a href="suggestions.html" class="nav-link">建议</a>
+            </div>
+            <div class="nav-tools">
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="wn-page">
+        <h1 class="wn-title">熟词僻义</h1>
+        <p class="wn-hint">
+            <b>熟义</b>＝考试外最常见的意思（取自 ECDICT）·<b>僻义</b>＝真题里实际考的特殊义（唐迟讲义，OCR＋人工核对）·
+            <b>原句</b>优先取真题原文并附官方译文，少数标「例证句」的来自讲义例句。
+        </p>
+        <div class="wn-toc" id="wnToc"></div>
+        <div id="wnContent"><p style="color:var(--text-light)">加载中…</p></div>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/wordnotes.js"></script>
+</body>
+</html>

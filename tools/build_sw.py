@@ -19,8 +19,9 @@ PWA = os.path.normpath(os.path.join(ROOT, "..", "pwa"))     # pwa/
 
 CORE_PAGES = [
     "index.html", "article.html", "study.html", "vocab.html", "favorites.html",
-    "en1.html", "chain.html", "mindmap.html", "nearmap.html",
+    "en1.html", "chain.html", "mindmap.html", "nearmap.html", "wordnotes.html",
     "js/mindmap.js", "data/mindmap.json", "js/nearmap.js",
+    "js/wordnotes.js", "data/wordnotes.json",
     "manifest.webmanifest", "css/style.css",
 ]
 

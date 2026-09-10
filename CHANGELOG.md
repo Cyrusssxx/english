@@ -1,5 +1,12 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-10 新模块] 熟词僻义表格板块（wordnotes.html）
+
+- 四列表格：单词 / 熟义 / 僻义 / 原句（英文 + 官方中文译文），按年份分区（21 区：2007-2025 + 通用），共 188 词。
+- 数据链路（tools/build_wordnotes.py）：僻义来自唐迟·熟词僻义 deck（OCR+人工核对）→ 熟义取 ECDICT translation 首义（前 2 义项）→ 原句用「例句实词指纹」在 3536 条真题句中定位（110 条），失败退宽松定位（73 条），仅 5 条用讲义例证句。同词去重。
+- 页面：年份锚点目录 + 响应式表格（窄屏卡片化，data-label 转行）；导航全站 10 页加入口；SW CORE_PAGES 注册 wordnotes。
+- jsdom 验证：21 分区/188 行/4 列/真题原句+译文 全通过。SW en2-7aac54bd。
+
 ## [2026-09-07 优化] 近义词图扩簇 + 卡片网格排版
 
 - 簇 14 → 21（新增 促进增强 / 减轻缓解(reduce/decline/ease/relieve) / 削弱阻止 / 原因结果(lead/result/reason/cause) / 代替选择 / 连接·过渡(rather than/even if/as to) / 因果·由来(in that/due to/lead to/owing to)），条目 59 → 101。
