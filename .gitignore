@@ -27,3 +27,4 @@ Thumbs.db
 # 熟词僻义 v2 判义中间产物（可重建：python tools/wn2.py pool / python tools/wn2_pipeline.py phrases）
 tools/wn2_all_worklist.json
 tools/wn2_phrases_worklist.json
+tools/wn2_remaining.json
