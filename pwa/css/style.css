@@ -3007,3 +3007,56 @@ html.dark .q-tip {
     .wn-table td { border: none; padding: 4px 10px; }
     .wn-table td::before { content: attr(data-label); color: var(--text-light); font-size: .74rem; margin-right: 6px; }
 }
+
+/* ===== 封面正确率配色徽标 ===== */
+.ac-rate { display: inline-block; font-size: .72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; margin-left: 6px; font-variant-numeric: tabular-nums; }
+.ac-rate.r-red { background: rgba(220,38,38,.12); color: #dc2626; border: 1px solid rgba(220,38,38,.32); }
+.ac-rate.r-yellow { background: rgba(245,158,11,.13); color: #b45309; border: 1px solid rgba(245,158,11,.4); }
+.ac-rate.r-green { background: rgba(22,163,74,.13); color: #15803d; border: 1px solid rgba(22,163,74,.35); }
+.dark .ac-rate.r-red { background: rgba(248,113,113,.13); color: #fca5a5; border-color: rgba(248,113,113,.35); }
+.dark .ac-rate.r-yellow { background: rgba(251,191,36,.11); color: #fcd34d; border-color: rgba(251,191,36,.4); }
+.dark .ac-rate.r-green { background: rgba(74,222,128,.11); color: #86efac; border-color: rgba(74,222,128,.35); }
+
+/* ===== 学习统计页 ===== */
+.stats-page { width: 100%; max-width: 1120px; margin: 0 auto; box-sizing: border-box; padding: 16px 14px 72px; }
+.st-hero { background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 45%, #f5f3ff 100%); border-radius: 14px; padding: 20px 24px; margin-bottom: 18px; }
+.dark .st-hero { background: linear-gradient(135deg, #134e4a 0%, #0c4a6e 50%, #312e81 100%); }
+.st-hero h1 { margin: 0 0 6px; font-size: 1.35rem; color: var(--text); }
+.st-hero p { margin: 0; color: var(--text-light); font-size: .9rem; line-height: 1.6; }
+.st-hero p b { color: var(--primary); }
+.st-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 18px; }
+.st-tile { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+.st-tile .k { font-size: .78rem; color: var(--text-light); margin-bottom: 4px; }
+.st-tile .v { font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.st-tile .v small { font-size: .74rem; color: var(--text-light); font-weight: 400; margin-left: 4px; }
+.st-h2 { font-size: 1.05rem; margin: 22px 0 10px; padding-left: 10px; border-left: 4px solid var(--primary); color: var(--text); }
+.st-h2 small { color: var(--text-light); font-weight: 400; font-size: .78rem; margin-left: 8px; }
+.st-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+.st-table { border-collapse: collapse; width: 100%; font-size: .88rem; }
+.st-table th, .st-table td { border-bottom: 1px solid var(--border); padding: 8px 12px; text-align: left; vertical-align: middle; }
+.st-table th { background: var(--primary-soft); color: var(--primary-dark); font-weight: 700; font-size: .78rem; white-space: nowrap; }
+.st-table tbody tr:last-child td { border-bottom: none; }
+.st-table tr:nth-child(even) td { background: rgba(128,128,128,.03); }
+.st-tag { display: inline-block; font-size: .7rem; padding: 1px 7px; border-radius: 999px; margin-right: 4px; font-weight: 600; }
+.st-tag.en1 { background: rgba(139,92,246,.12); color: #7c3aed; }
+.st-tag.en2 { background: rgba(13,148,136,.12); color: #0d9488; }
+.st-bar { height: 7px; min-width: 44px; border-radius: 4px; background: rgba(128,128,128,.15); position: relative; display: inline-block; width: 90px; vertical-align: middle; }
+.st-bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; }
+.st-bar.b-red i { background: #ef4444; } .dark .st-bar.b-red i { background: #f87171; }
+.st-bar.b-yellow i { background: #f59e0b; } .dark .st-bar.b-yellow i { background: #fbbf24; }
+.st-bar.b-green i { background: #22c55e; } .dark .st-bar.b-green i { background: #4ade80; }
+.rate-txt { font-variant-numeric: tabular-nums; color: var(--text); font-weight: 600; }
+.art-title { color: var(--text-light); font-size: .8rem; }
+.st-empty { color: var(--text-light); padding: 18px 14px; font-size: .88rem; }
+
+/* 建议区块（并入统计页） */
+.st-sug-section { background: var(--card); border-radius: 12px; padding: 16px 20px; margin-bottom: 14px; border-left: 5px solid var(--c, #0d9488); }
+.st-sug-section h2 { margin: 0 0 10px; font-size: 1.05rem; color: var(--text); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.st-sug-section h2 .badge { font-size: .7rem; padding: 2px 8px; border-radius: 10px; background: var(--c, #0d9488); color: #fff; font-weight: 600; }
+.st-sug-section p { margin: 0 0 8px; line-height: 1.7; color: var(--text); font-size: .92rem; }
+.st-sug-section ul { margin: 0; padding-left: 20px; }
+.st-sug-section li { margin: 4px 0; line-height: 1.6; color: var(--text); font-size: .9rem; }
+.st-sug-section li b { color: var(--primary); }
+.st-sug-section a { color: var(--primary); text-decoration: none; border-bottom: 1px dashed var(--primary); }
+.st-sug-section .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 8px; }
+.st-sug-section .card-mini { background: var(--bg-2, rgba(128,128,128,.06)); border-radius: 8px; padding: 9px 13px; font-size: .86rem; color: var(--text); }

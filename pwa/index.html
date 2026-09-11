@@ -26,7 +26,7 @@
                 <a href="wordnotes.html" class="nav-link">熟词僻义</a>
                 <a href="phrasebook.html" class="nav-link">熟词短语</a>
                 <a href="mistakes.html" class="nav-link">错题本</a>
-                <a href="suggestions.html" class="nav-link">建议</a>
+                <a href="stats.html" class="nav-link">统计</a>
             </div>
             <div class="nav-tools">
                 <span class="nav-timer" id="navTimer" title="今日学习时长（切走窗口或手动暂停时停止计时）">⏱ 00:00:00</span>
@@ -138,6 +138,13 @@
             renderList();
         }
 
+        function rateBadge(st) {
+            // 正确率配色：≤2/5(40%) 红｜3/5~4/5 黄｜5/5 绿
+            const rate = st.correct / st.answered;
+            const cls = rate <= 0.4 ? 'ac-rate r-red' : (rate < 1 ? 'ac-rate r-yellow' : 'ac-rate r-green');
+            return '<span class="' + cls + '">' + st.correct + '/' + st.answered + ' · ' + Math.round(rate * 100) + '%</span>';
+        }
+
         function renderList() {
             const yearData = idx.years.find(y => y.year === curYear);
             if (!yearData || !yearData.articles.length) {
@@ -152,8 +159,7 @@
                 const isLast = localStorage.getItem('lastArticle') === a.id;
                 let right = '';
                 if (isLast) right += '<span class="ac-badge">● 上次学习</span>';
-                if (done) right += `<span class="ac-done">✔ ${st.correct}/${st.answered}</span>`;
-                else if (st && st.answered) right += `<span class="ac-badge">${st.answered}/${a.question_count}题</span>`;
+                if (st && st.answered) right += rateBadge(st);
                 return `
                 <a class="article-card" href="article.html?id=${a.id}">
                     <div class="ac-main">

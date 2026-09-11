@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习统计 - 英语真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
+                <a href="vocab.html" class="nav-link">单词本</a>
+                <a href="mindmap.html" class="nav-link">方法导图</a>
+                <a href="nearmap.html" class="nav-link">近义词</a>
+                <a href="wordnotes.html" class="nav-link">熟词僻义</a>
+                <a href="phrasebook.html" class="nav-link">熟词短语</a>
+                <a href="mistakes.html" class="nav-link">错题本</a>
+                <a href="stats.html" class="nav-link active">统计</a>
+            </div>
+            <div class="nav-tools">
+                <span class="nav-timer" id="navTimer">⏱ 00:00:00</span>
+                <button class="nav-timer-btn" id="timerPause" onclick="togglePauseTimer()" title="暂停/继续计时">⏸</button>
+                <button class="nav-timer-btn" onclick="resetTimer()" title="重置今日计时">↺</button>
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="stats-page">
+        <div class="st-hero">
+            <h1>📊 学习统计</h1>
+            <p>基于你本机的答题记录（<span id="stHeroTotal">…</span>），实时计算。封面正确率配色：<span class="ac-rate r-red">≤2/5 红</span> <span class="ac-rate r-yellow">3·4/5 黄</span> <span class="ac-rate r-green">5/5 绿</span>。</p>
+        </div>
+        <div class="st-grid" id="stTiles"></div>
+
+        <h2 class="st-h2">⛔ 错误率最高的文章 <small>置顶 · 按错误率降序，先补你丢分最多的</small></h2>
+        <div class="st-card" id="stWrongList"></div>
+
+        <h2 class="st-h2">📊 按题型统计 <small>阅读 / 完形 / 新题型 / 翻译</small></h2>
+        <div class="st-card" id="stTypeTable"></div>
+
+        <h2 class="st-h2">🎯 按题目类型统计 <small>你的错题画像（细节 / 推断 / 主旨 / 词义 / 观点 / 态度…）</small></h2>
+        <div class="st-card" id="stQtypeTable"></div>
+
+        <h2 class="st-h2">🧠 按年份统计 <small>逐年正确率趋势</small></h2>
+        <div class="st-card" id="stYearTable"></div>
+
+        <h2 class="st-h2">🎯 个人建议 <small>针对你的错题画像生成，按优先级排好</small></h2>
+
+        <div class="st-sug-section" style="--c:#dc2626">
+            <h2>🔴 P0 · 做题习惯 <span class="badge">先改这个</span></h2>
+            <p><span id="stImg"></span>——<b>不是能力问题，是做题习惯</b>。改 3 个动作，细节题至少能少错一半。</p>
+            <ul>
+                <li><b>细节题手指定位</b>：做每道 According to Para X 题时，用笔/手指<b>在原文里指到该段</b>，逐句读完再选。</li>
+                <li><b>人物名题先圈人名</b>：题干出现 X believes/holds/notes，<b>先在草稿纸上写下人名</b>，再回原文<b>先找人名</b>，不要先读选项。</li>
+                <li><b>推理题看前后各一句</b>：it can be inferred / by saying X implies 的题，永远读完引语句<b>前一句和后一句</b>再选。</li>
+                <li><b>做完一道立刻回看题干</b>：选完答案回题干问自己"我问的是这个吗？"。</li>
+            </ul>
+        </div>
+
+        <div class="st-sug-section" style="--c:#ef4444">
+            <h2>🔴 P0 · 主旨题抢救 <span class="badge">常见全错区</span></h2>
+            <ul>
+                <li><b>每篇阅读先做主旨题</b>，完成后再做细节/推理。</li>
+                <li><b>扫每段第 1 句</b>，写 5 个关键词在草稿纸上（每段 1 个）。</li>
+                <li><b>找出现 ≥3 次的词</b>作为主旨候选。</li>
+                <li>排除"段意型"（只覆盖一段）、"以偏概全型"选项。</li>
+                <li>在 <a href="mistakes.html">错题本</a> 顶部按题型刷「主旨题」。</li>
+            </ul>
+        </div>
+
+        <div class="st-sug-section" style="--c:#f59e0b">
+            <h2>🟡 P1 · 词义题同义改写</h2>
+            <ul>
+                <li>每道词义题先<b>口述原句意思</b>，再选答案。</li>
+                <li>排除"字面相似但改写过头的"选项（把"情绪"改成"想法"就不是同义）。</li>
+                <li>英一 + 英二词义题集中刷，见 <a href="mistakes.html">错题本</a>。</li>
+            </ul>
+        </div>
+
+        <div class="st-sug-section" style="--c:#8b5cf6">
+            <h2>🟢 P2 · 人物观点混</h2>
+            <ul>
+                <li>题干出现 X believes/holds/argues/most likely agrees —— <b>X 是谁先圈出来</b>。</li>
+                <li>回原文找 X 出现的那句，<b>只信那句话</b>，不要被其他段落里相似词带走。</li>
+            </ul>
+        </div>
+
+        <div class="st-sug-section" style="--c:#0d9488">
+            <h2>📊 已用功能（用起来）</h2>
+            <div class="grid">
+                <div class="card-mini"><b>方法导图「我的错题地图」</b>：按你错法组织的 6 类分支 + 题号（<a href="mindmap.html">打开</a>）</div>
+                <div class="card-mini"><b>错题本 mistakes.html</b>：列出错题、点开看解析、标记已掌握（<a href="mistakes.html">打开</a>）</div>
+                <div class="card-mini"><b>导出错题 CSV</b>：首页/错题本都有导出按钮（<a href="index.html">打开</a>）</div>
+                <div class="card-mini"><b>熟词僻义 / 熟词短语</b>：真题实考的僻义与陷阱短语（<a href="wordnotes.html">单词</a> · <a href="phrasebook.html">短语</a>）</div>
+                <div class="card-mini"><b>近义词点亮图</b>：选项高频近义词分组记忆（<a href="nearmap.html">打开</a>）</div>
+            </div>
+        </div>
+
+        <div class="st-sug-section" style="--c:#6366f1">
+            <h2>📅 节奏建议</h2>
+            <div class="grid">
+                <div class="card-mini"><b>本周</b>：把上方「错误率最高的文章」前几篇<b>重做一遍</b>，再刷错题本对应题。</div>
+                <div class="card-mini"><b>下周</b>：按「按题目类型统计」里正确率最低的类型集中刷。</div>
+                <div class="card-mini"><b>每周</b>：重看一次本页，<b>对比统计变化</b>，弱项连续两周 <b>正确率 &lt; 60%</b> 的类型优先补。</div>
+                <div class="card-mini"><b>习惯</b>：做题时笔指定位（不指定位 = 错的概率大幅上升）。</div>
+            </div>
+        </div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/stats.js"></script>
+</body>
+</html>
