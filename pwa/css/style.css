@@ -3060,3 +3060,56 @@ html.dark .q-tip {
 .st-sug-section a { color: var(--primary); text-decoration: none; border-bottom: 1px dashed var(--primary); }
 .st-sug-section .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 8px; }
 .st-sug-section .card-mini { background: var(--bg-2, rgba(128,128,128,.06)); border-radius: 8px; padding: 9px 13px; font-size: .86rem; color: var(--text); }
+
+/* ===== 按类型刷（话题分类 chip 栏 + 难度星级） ===== */
+.topic-tabs {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding: 4px 2px 12px;
+    margin-bottom: 2px;
+    scrollbar-width: thin;
+}
+.topic-tab {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--text-light);
+    font-size: .84rem;
+    font-weight: 600;
+    padding: 5px 13px;
+    cursor: pointer;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: border-color .15s, color .15s, background .15s;
+}
+.topic-tab:hover { border-color: var(--primary); color: var(--primary); }
+.topic-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+.topic-hint {
+    color: var(--text-light);
+    font-size: .76rem;
+    margin: -6px 2px 10px;
+}
+.ac-diff {
+    font-size: .8rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.ac-diff.d5 { color: #e0245e; }
+.ac-diff.d4 { color: #ef7a1a; }
+.ac-diff.d3 { color: #d89a12; }
+.ac-diff.d2 { color: #7c9c3f; }
+.ac-diff.d1 { color: #8ab4a0; }
+.dark .ac-diff.d5 { color: #ff6b95; }
+.dark .ac-diff.d4 { color: #ffa057; }
+.dark .ac-diff.d3 { color: #f5c544; }
+.dark .ac-diff.d2 { color: #a5c763; }
+.dark .ac-diff.d1 { color: #a9cdbb; }
+.ac-year {
+    color: var(--text-light);
+    font-weight: 400;
+    font-size: .88rem;
+}

@@ -48,6 +48,10 @@
             <a id="cbLink" href="#">继续学习 →</a>
         </div>
 
+        <!-- 按类型刷（话题分类） -->
+        <div class="topic-tabs" id="topicTabs"></div>
+        <div class="topic-hint" id="topicHint" style="display:none">按话题跨年份刷题（英语一 · 阅读 Text1-4，暂无难度标注）</div>
+
         <!-- 年份 Tab -->
         <div class="year-tabs" id="yearTabs"></div>
 
@@ -62,6 +66,8 @@
         let idx = null;
         let curYear = null;
         let answerStats = {};
+        let topicMap = null;
+        let curTopic = '';
 
         async function init() {
             try {
@@ -78,6 +84,13 @@
                 if (a.is_correct) st.correct++;
             }
             renderContinue();
+            // 按类型刷：加载话题分类映射
+            try {
+                topicMap = await fetchJSON('data/topic_map.json');
+            } catch (e) { topicMap = null; }
+            const savedTopic = localStorage.getItem('en1_lastTopic') || '';
+            curTopic = (savedTopic && topicMap && Object.values(topicMap).some(v => v.cat === savedTopic)) ? savedTopic : '';
+            renderTopicTabs();
             const years = idx.years.map(y => y.year).sort((a, b) => b - a);
             const saved = parseInt(localStorage.getItem('en1_lastYear') || '0', 10);
             curYear = years.includes(saved) ? saved : years[0];
@@ -120,7 +133,69 @@
             return '<span class="' + cls + '">' + st.correct + '/' + st.answered + ' · ' + Math.round(rate * 100) + '%</span>';
         }
 
+        const TOPIC_CATS = ['政法', '商业经济', '科学科技', '教育文化历史', '社会生活'];
+
+        function renderTopicTabs() {
+            const el = document.getElementById('topicTabs');
+            const hint = document.getElementById('topicHint');
+            el.innerHTML = ['全部', ...TOPIC_CATS].map(c =>
+                `<button class="topic-tab ${(c === '全部' ? !curTopic : curTopic === c) ? 'active' : ''}" onclick="pickTopic('${c === '全部' ? '' : c}')">${c}</button>`).join('');
+            hint.style.display = curTopic ? '' : 'none';
+            document.getElementById('yearTabs').style.display = curTopic ? 'none' : '';
+        }
+
+        function pickTopic(c) {
+            curTopic = c;
+            localStorage.setItem('en1_lastTopic', c);
+            renderTopicTabs();
+            renderList();
+        }
+
+        function diffStars(n) {
+            if (!n) return '';
+            const cls = n >= 5 ? 'd5' : n === 4 ? 'd4' : n === 3 ? 'd3' : n === 2 ? 'd2' : 'd1';
+            return `<span class="ac-diff ${cls}" title="难度">${'★'.repeat(n)}</span>`;
+        }
+
+        function cardHtml(a, showYear) {
+            const st = answerStats[a.id];
+            const isLast = localStorage.getItem('lastArticle') === a.id;
+            let right = '';
+            if (isLast) right += '<span class="ac-badge">● 上次学习</span>';
+            if (st && st.answered) right += rateBadge(st);
+            const tm = topicMap ? topicMap[a.id] : null;
+            const diff = tm ? diffStars(tm.diff) : '';
+            const yearTag = showYear ? `<span class="ac-year">${a.year}</span>` : '';
+            return `
+                <a class="article-card" href="article.html?id=${a.id}">
+                    <div class="ac-main">
+                        ${yearTag}
+                        <span class="ac-type">${TYPE_NAMES[a.type] || a.type}</span>
+                        ${diff}
+                    </div>
+                    <div class="ac-right">${right}<span class="ac-arrow">→</span></div>
+                </a>`;
+        }
+
         function renderList() {
+            if (curTopic) {
+                // 按话题跨年刷题：只取阅读 text1-4
+                const arts = [];
+                for (const y of idx.years) {
+                    for (const a of y.articles) {
+                        if (!/^text[1-4]$/.test(a.type)) continue;
+                        const tm = topicMap ? topicMap[a.id] : null;
+                        if (tm && tm.cat === curTopic) arts.push({ a, year: y.year, diff: tm.diff || 0 });
+                    }
+                }
+                arts.sort((x, y) => y.diff - x.diff || y.year - x.year || x.a.type.localeCompare(y.a.type));
+                if (!arts.length) {
+                    document.getElementById('articleList').innerHTML = '<div class="empty">该话题暂无阅读文章</div>';
+                    return;
+                }
+                document.getElementById('articleList').innerHTML = arts.map(x => cardHtml({ ...x.a, year: x.year }, true)).join('');
+                return;
+            }
             const yearData = idx.years.find(y => y.year === curYear);
             if (!yearData || !yearData.articles.length) {
                 document.getElementById('articleList').innerHTML = '<div class="empty">该年份暂无内容</div>';
@@ -128,21 +203,7 @@
             }
             const order = ['text1', 'text2', 'text3', 'text4'];
             const arts = [...yearData.articles].sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type));
-            document.getElementById('articleList').innerHTML = arts.map(a => {
-                const st = answerStats[a.id];
-                const done = st && a.question_count && st.answered >= a.question_count;
-                const isLast = localStorage.getItem('lastArticle') === a.id;
-                let right = '';
-                if (isLast) right += '<span class="ac-badge">● 上次学习</span>';
-                if (st && st.answered) right += rateBadge(st);
-                return `
-                <a class="article-card" href="article.html?id=${a.id}">
-                    <div class="ac-main">
-                        <span class="ac-type">${TYPE_NAMES[a.type] || a.type}</span>
-                    </div>
-                    <div class="ac-right">${right}<span class="ac-arrow">→</span></div>
-                </a>`;
-            }).join('');
+            document.getElementById('articleList').innerHTML = arts.map(a => cardHtml(a, false)).join('');
         }
 
         init();
