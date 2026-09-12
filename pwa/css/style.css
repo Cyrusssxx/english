@@ -3113,3 +3113,7 @@ html.dark .q-tip {
     font-weight: 400;
     font-size: .88rem;
 }
+
+/* 详细解析换行排版 */
+.q-expl { white-space: pre-line; }
+.expl-body { white-space: pre-line; }
