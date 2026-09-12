@@ -50,7 +50,7 @@
 
         <!-- 按类型刷（话题分类） -->
         <div class="topic-tabs" id="topicTabs"></div>
-        <div class="topic-hint" id="topicHint" style="display:none">按话题跨年份刷题（英语一 · 阅读 Text1-4，暂无难度标注）</div>
+        <div class="topic-hint" id="topicHint" style="display:none">按话题跨年份刷题（英语一 · 阅读 Text1-4，按年份新旧排序）</div>
 
         <!-- 年份 Tab -->
         <div class="year-tabs" id="yearTabs"></div>
@@ -151,27 +151,18 @@
             renderList();
         }
 
-        function diffStars(n) {
-            if (!n) return '';
-            const cls = n >= 5 ? 'd5' : n === 4 ? 'd4' : n === 3 ? 'd3' : n === 2 ? 'd2' : 'd1';
-            return `<span class="ac-diff ${cls}" title="难度">${'★'.repeat(n)}</span>`;
-        }
-
         function cardHtml(a, showYear) {
             const st = answerStats[a.id];
             const isLast = localStorage.getItem('lastArticle') === a.id;
             let right = '';
             if (isLast) right += '<span class="ac-badge">● 上次学习</span>';
             if (st && st.answered) right += rateBadge(st);
-            const tm = topicMap ? topicMap[a.id] : null;
-            const diff = tm ? diffStars(tm.diff) : '';
             const yearTag = showYear ? `<span class="ac-year">${a.year}</span>` : '';
             return `
                 <a class="article-card" href="article.html?id=${a.id}">
                     <div class="ac-main">
                         ${yearTag}
                         <span class="ac-type">${TYPE_NAMES[a.type] || a.type}</span>
-                        ${diff}
                     </div>
                     <div class="ac-right">${right}<span class="ac-arrow">→</span></div>
                 </a>`;
@@ -185,10 +176,10 @@
                     for (const a of y.articles) {
                         if (!/^text[1-4]$/.test(a.type)) continue;
                         const tm = topicMap ? topicMap[a.id] : null;
-                        if (tm && tm.cat === curTopic) arts.push({ a, year: y.year, diff: tm.diff || 0 });
+                        if (tm && tm.cat === curTopic) arts.push({ a, year: y.year });
                     }
                 }
-                arts.sort((x, y) => y.diff - x.diff || y.year - x.year || x.a.type.localeCompare(y.a.type));
+                arts.sort((x, y) => y.year - x.year || x.a.type.localeCompare(y.a.type));
                 if (!arts.length) {
                     document.getElementById('articleList').innerHTML = '<div class="empty">该话题暂无阅读文章</div>';
                     return;
