@@ -1837,8 +1837,10 @@
       "D": "调查它们的现状"
      },
      "answer": "D",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "定位首段②句：the culture department commissioned me to conduct an independent review of English public libraries——作者受委托对该国公共图书馆进行“独立审查”，即调查其现状，D 正确。A 记录传统／B 制定扩张计划／C 收集读者意见均无原文依据，属无中生有。",
+     "related_sentences": [
+      "2026_text1_s02"
+     ],
      "quick": "事实细节：作者被委托就英格兰公共图书馆做些什么？",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -1861,8 +1863,11 @@
       "D": "主要吸引年轻读者"
      },
      "answer": "C",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "第三段（③④句）列举图书馆数量为麦当劳两倍、提供就业咨询／语言课／数字接入等多类服务；第四段进一步给出商业知识产权中心、护士健康检查、借足球等例子——都指向图书馆功能多样，C 正确。A 藏书规模（③段只是数量对比）、B 访客记录、D 读者年龄结构均未提及。",
+     "related_sentences": [
+      "2026_text1_s03",
+      "2026_text1_s04"
+     ],
      "quick": "事实推断：根据第三、四段，作者发现图书馆______。",
      "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。"
     },
@@ -1885,8 +1890,11 @@
       "D": "升级设备"
      },
      "answer": "A",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "第五段首句 yet still our libraries are often overlooked and underappreciated——图书馆常被忽视、被低估，随后作者反复呼吁 raise awareness，故隐含应获得更多关注，A 正确。B 限制访问／C 与私营合作／D 升级设备均无依据。",
+     "related_sentences": [
+      "2026_text1_s11",
+      "2026_text1_s16"
+     ],
      "quick": "事实推断：第五段暗示，图书馆应该______。",
      "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。"
     },
@@ -1909,8 +1917,12 @@
       "D": "图书馆存在的缺陷"
      },
      "answer": "A",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "第六段数字：Chartered Institute 统计全英关闭近 800 家、官方数据英格兰 230 家，且 is 230 libraries too many——这些数字反映的是图书馆面临的生存危机，A 正确。B 进步／C 贡献／D 缺陷均与“关闭数量”这一核心相反或无据。",
+     "related_sentences": [
+      "2026_text1_s13",
+      "2026_text1_s14",
+      "2026_text1_s15"
+     ],
      "quick": "事实推断：第六段提到的统计数据表明______。",
      "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。"
     },
@@ -1933,8 +1945,10 @@
       "D": "提供终身会员资格"
      },
      "answer": "C",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "末段建议：national branding campaign 提升实体存在感、reintroduction of a scheme 使会员卡全国通用、automatic memberships for children——核心是提升使用的便利性，C 正确。A 征求公众反馈／B 寻求资金／D 终身会员：文章说的是“儿童自动会员”而非终身，且未提资金问题。",
+     "related_sentences": [
+      "2026_text1_s17"
+     ],
      "quick": "事实细节：最后一段为图书馆提出了以下哪项建议？",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     }
@@ -3809,8 +3823,10 @@
       "D": "改善职场沟通"
      },
      "answer": "B",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "首段②句：engaging with AI like this can leave us feeling heard and less isolated——与 AI 互动让人感到被倾听、不再孤立，即提供情感支持，B 正确。A 事业进步／C 维持动力／D 改善职场沟通均为过度引申。",
+     "related_sentences": [
+      "2026_text2_s02"
+     ],
      "quick": "事实细节：根据第一段，员工与 AI 的互动可以______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -3833,8 +3849,12 @@
       "D": "鼓励信息共享"
      },
      "answer": "A",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "③段④-⑦句：以微软 Copilot 为例，其条款赋予微软对用户数据广泛使用权、可与第三方共享，导致敏感商业信息可能暴露——即 AI 使用可能对企业构成威胁，A 正确。B 产生多余数据／C 促进合作／D 鼓励信息共享皆非该例要说明的损害性结论。",
+     "related_sentences": [
+      "2026_text2_s04",
+      "2026_text2_s06",
+      "2026_text2_s07"
+     ],
      "quick": "事实细节：引用微软 Copilot 是为了说明使用 AI 可能______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -3857,8 +3877,11 @@
       "D": "与他人竞争的需要"
      },
      "answer": "C",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "⑤段（句 11）：break the rules 的员工中约 63% 自述 AI 提高生产率，部分人甚至觉得 AI 比人类同事帮助更大——即 AI 在其工作中作用显著，C 正确。A 产品易得／B 保持信息灵通／D 竞争压力均无原文支撑。",
+     "related_sentences": [
+      "2026_text2_s10",
+      "2026_text2_s11"
+     ],
      "quick": "事实细节：一些员工在 AI 问题上选择违规，是因为______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -3881,8 +3904,10 @@
       "D": "让管理适应 AI 的发展"
      },
      "answer": "D",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "倒数②段（句 15）：creating policies that evolve with the technology——企业应制定随技术发展而演变的政策，即管理与 AI 发展同步调整，D 正确。A 数据来源透明／B 内容质量优先／C 规则纳入员工视角均非原文。",
+     "related_sentences": [
+      "2026_text2_s15"
+     ],
      "quick": "事实细节：要积极地改变 AI 格局，企业应该______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -3905,8 +3930,10 @@
       "D": "过度接触它"
      },
      "answer": "A",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "末段（句 19）：so many products… promoted with huge advertising and marketing budgets, that it's easy to fall victim——市面产品太多、营销声势浩大，人们因缺乏足够辨别知识而轻易上当，A 正确。B 低估经济成本／C 夸大其能力／D 过度接触均未提及。",
+     "related_sentences": [
+      "2026_text2_s19"
+     ],
      "quick": "事实推断：根据最后一段，我们很容易沦为 AI 的受害者，因为我们______。",
      "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。"
     }
@@ -5571,8 +5598,11 @@
       "D": "是维护良好的典范"
      },
      "answer": "B",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "首段：trains have become the preferred means of travel across Italy——高铁已成为意大利人及游客的首选出游方式，且二段给出 3 小时 500 公里的效率，B 正确。A 被认为过时／C 本地人利用不足与前文相反；D 维护良好与后文 maintenance works 致延误相悖。",
+     "related_sentences": [
+      "2026_text3_s01",
+      "2026_text3_s02"
+     ],
      "quick": "事实细节：根据前两段，意大利的高铁网络______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -5595,8 +5625,11 @@
       "D": "Trenitalia 的高效率"
      },
      "answer": "A",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "三-四段：Ferrovie 称 2023 年其高铁 23% 晚点，且延误已成意大利媒体报道常客——引其数据意在说明火车晚点频繁、屡见不鲜，A 正确。B 铁路网络价值／D 效率高均与晚点统计无关；C 虽提媒体报道，但引 Ferrovie 的具体目的是佐证延误普遍。",
+     "related_sentences": [
+      "2026_text3_s06",
+      "2026_text3_s07"
+     ],
      "quick": "事实细节：第三段引用 Ferrovie 是为了说明______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -5619,8 +5652,11 @@
       "D": "规模庞大"
      },
      "answer": "C",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "六段（句 11）：But lack of capacity is another problem——运力不足是中断的另一原因，C 正确。A 复杂时刻表未提；B 投资短缺与后文数十亿欧元投资相悖；D 规模大并非中断原因。",
+     "related_sentences": [
+      "2026_text3_s11",
+      "2026_text3_s13"
+     ],
      "quick": "事实细节：以下哪项是网络中断的原因之一？",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -5643,8 +5679,11 @@
       "D": "使高铁网络陷入困境"
      },
      "answer": "D",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "七-八段：高铁须在部分线路或穿城时行驶普通轨道；一旦拥堵或普速车故障，整个高铁网都受影响——混合系统令高铁网络陷入麻烦，D 正确。A 路线选择更多／B 额外运营成本／C 出行舒适度提升均无依据。",
+     "related_sentences": [
+      "2026_text3_s14",
+      "2026_text3_s15"
+     ],
      "quick": "事实推断：可以得知，混合系统______。",
      "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。"
     },
@@ -5667,8 +5706,11 @@
       "D": "提高高铁的安全性"
      },
      "answer": "B",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "末段（句 18）：reduction of the distance between high-speed trains… significant increase in capacity——改进将缩短同一线路上高铁列车间距、提升运力，B 正确。A 重建普速线（是“隔离”而非重建）；C 增建车站未提；D 安全提升非句 18 重心（卫星信号另属句 17 的改善点）。",
+     "related_sentences": [
+      "2026_text3_s16",
+      "2026_text3_s18"
+     ],
      "quick": "事实细节：对意大利铁路网络的改进将______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     }
@@ -7349,8 +7391,11 @@
       "D": "曾是一场极具吸引力的文化聚会"
      },
      "answer": "D",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "首段：one of its most beloved street festivals、blossomed into a massive cultural event, welcoming tens of thousands——银屋街区派对是广受喜爱的文化盛会，D 正确。A 被其他节庆取代／B 国际声望／C 在多个社区举办均无依据。",
+     "related_sentences": [
+      "2026_text4_s01",
+      "2026_text4_s03"
+     ],
      "quick": "事实推断：从第一段可以得知，银屋街区派对______。",
      "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。"
     },
@@ -7373,8 +7418,11 @@
       "D": "他们必须加强安保措施"
      },
      "answer": "C",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "②段：rising production costs and declining attendee donations as primary reasons——制作成本上涨、捐赠下降，主办方面临的是资金困难，C 正确。A 捐款使用不当／B 设施不足／D 安全措施不足：安保费上涨属成本之一，但核心是“资金紧张”。",
+     "related_sentences": [
+      "2026_text4_s04",
+      "2026_text4_s06"
+     ],
      "quick": "事实细节：街头节庆主办方面临的一个现实是______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -7397,8 +7445,11 @@
       "D": "以音乐演出著称"
      },
      "answer": "C",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "三-四段：economic engines that directly benefit the neighborhoods… drive foot traffic to local businesses——街头节庆带动本地消费、惠及社区经济，C 正确。B 政府拨款与⑤段“无市政拨款”相悖；A 城市生活方式／D 以音乐演出闻名均偏移段落要旨。",
+     "related_sentences": [
+      "2026_text4_s08",
+      "2026_text4_s09"
+     ],
      "quick": "事实细节：根据第三、四段，芝加哥的街头节庆______。",
      "tip": "事实细节题：答案必为原文同义改写——先定位题干关键词所在句（含前后句），警惕张冠李戴（偷换主语）与断章取义。"
     },
@@ -7421,8 +7472,11 @@
       "D": "与大型企业合作"
      },
      "answer": "B",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "第七段：forced to scale back… eliminating a stage, booking fewer performers——威克公园主办方被迫缩减规模、减少演出场次与艺人，B 正确。A 依赖业余艺人／C 放弃最大特色（句 15-16 明确要 keep the festival as vibrant as ever）／D 与大企业合作均无依据。",
+     "related_sentences": [
+      "2026_text4_s15",
+      "2026_text4_s16"
+     ],
      "quick": "事实推断：文章暗示，威克公园节庆的主办方不得不______。",
      "tip": "推断题：答案必有原文事实依据——由信息合理推出即可，禁止无中生有、绝对化（all / never）与原文相悖。"
     },
@@ -7445,8 +7499,11 @@
       "D": "开支的管理"
      },
      "answer": "B",
-     "explanation": "",
-     "related_sentences": [],
+     "explanation": "末段：they exist because of community support… it happens when we all chip in——节庆存续依赖社区的慷慨支持（捐款、参与），作者态度指向参加者的慷慨解囊，B 正确。A 活动多样性／C 社区声誉／D 支出管理均非作者强调的决定因素。",
+     "related_sentences": [
+      "2026_text4_s17",
+      "2026_text4_s18"
+     ],
      "quick": "态度题：作者认为，街头节庆的未来取决于______。",
      "tip": "态度题：答案 = 作者的“态度词”——找评价性形容词/副词与转折词后的立场；中性项（indifferent / objective 等）常是干扰，作者完全中立少见。"
     }
@@ -8800,7 +8857,7 @@
       "D": "tolerant"
      },
      "answer": "C",
-     "explanation": "",
+     "explanation": "固定搭配 be proud of——本句意为“为自己是谁而感到自豪”，与上文 see ourselves in a positive light 呼应。A afraid of 害怕、B critical of 挑剔、D tolerant of 容忍，皆不合语境。",
      "related_sentences": []
     },
     {
@@ -8822,7 +8879,7 @@
       "D": "foolish"
      },
      "answer": "B",
-     "explanation": "",
+     "explanation": "it's only natural to want to avoid them——想避开令人不适的事“完全是人之常情”。A risky 冒险、C admirable 可敬、D foolish 愚蠢，语义均不符。",
      "related_sentences": []
     },
     {
@@ -8844,7 +8901,7 @@
       "D": "how"
      },
      "answer": "A",
-     "explanation": "",
+     "explanation": "whether your self-worth really is being undermined is subjective——“自我价值是否真的受损是主观的”，whether 引导主语从句表“是否”。where/why/how 均无法表达是非判断。",
      "related_sentences": []
     },
     {
@@ -8866,7 +8923,7 @@
       "D": "introduction"
      },
      "answer": "C",
-     "explanation": "",
+     "explanation": "come down to your perception of what someone said or did——“取决于你如何理解（感知）他人的言行”。A citation 引用、B imitation 模仿、D introduction 介绍，均不符。",
      "related_sentences": []
     },
     {
@@ -8888,7 +8945,7 @@
       "D": "shy"
      },
      "answer": "A",
-     "explanation": "",
+     "explanation": "she thinks you're a poor member of staff——老板挑错让你觉得她认为你“能力差”。A poor（差的）正确；B loyal 忠诚、C creative 有创意、D shy 害羞，与挑错的语境相反或无据。",
      "related_sentences": []
     },
     {
@@ -8910,7 +8967,7 @@
       "D": "计划好的"
      },
      "answer": "D",
-     "explanation": "",
+     "explanation": "cancel the planned get-together——“取消约好的聚会”。D planned 计划好的正确；A sponsored 赞助的、B crowded 拥挤的、C disputed 有争议的均不搭配。",
      "related_sentences": []
     },
     {
@@ -8932,7 +8989,7 @@
       "D": "goal"
      },
      "answer": "B",
-     "explanation": "",
+     "explanation": "Psychologists have a term for this way of thinking: personalisation——“心理学家对这种思维方式有一个术语”。B term 术语正确；A method 方法、C design 设计、D goal 目标不符。",
      "related_sentences": []
     },
     {
@@ -8954,7 +9011,7 @@
       "D": "现实，事实"
      },
      "answer": "D",
-     "explanation": "",
+     "explanation": "But the reality is that your boss might view you very highly——“但事实可能是老板很看重你”，与前文你的消极解读形成转折。D reality 事实正确；A evidence 证据、B theory 理论、C condition 条件不符。",
      "related_sentences": []
     },
     {
@@ -8976,7 +9033,7 @@
       "D": "suggestions"
      },
      "answer": "C",
-     "explanation": "",
+     "explanation": "you made some mistakes in the report——“报告里犯了错误”，与 boss picks holes in your sales report 呼应。C mistakes 错误正确；A complaints 抱怨、B choices 选择、D suggestions 建议不符。",
      "related_sentences": []
     },
     {
@@ -8998,7 +9055,7 @@
       "D": "Contrarily"
      },
      "answer": "A",
-     "explanation": "",
+     "explanation": "Similarly, in the case of your friends cancelling——由工作场景过渡到朋友场景的同类举例，用“同样地”。A Similarly 正确；B Relatively 相对地、C Accordingly 因此、D Contrarily 相反地，逻辑不符。",
      "related_sentences": []
     },
     {
@@ -9020,7 +9077,7 @@
       "D": "cleared"
      },
      "answer": "B",
-     "explanation": "",
+     "explanation": "they just changed their minds——“他们只是改变了主意”。B changed 正确；A opened 打开、C trained 训练、D cleared 清理，均不构成 changed one's mind 的熟语搭配。",
      "related_sentences": []
     },
     {
@@ -9042,7 +9099,7 @@
       "D": "例子"
      },
      "answer": "D",
-     "explanation": "",
+     "explanation": "In both examples—and others that we all experience——“在这两个例子以及我们经历的其他情形中”。D examples 例子正确；A quotations 引文、B experiments 实验、C questions 问题不符。",
      "related_sentences": []
     },
     {
@@ -9064,7 +9121,7 @@
       "D": "background"
      },
      "answer": "A",
-     "explanation": "",
+     "explanation": "there's another process at work——作者把 mind reading 称为另一种“心理过程/机制”，与上文 personalisation 并列。A process 过程正确；B objective 目标、C outcome 结果、D background 背景不符。",
      "related_sentences": []
     },
     {
@@ -9086,7 +9143,7 @@
       "D": "询问"
      },
      "answer": "D",
-     "explanation": "",
+     "explanation": "when you can't really know without asking them directly——“不直接询问就无法真正知道”。D asking 询问正确；A blaming 责备、B warning 警告、C teaching 教导不符。",
      "related_sentences": []
     },
     {
@@ -9108,7 +9165,7 @@
       "D": "interfering with"
      },
      "answer": "C",
-     "explanation": "",
+     "explanation": "avoid engaging in personalisation and mind reading——“避免陷入个人化归因与读心术”。C engaging in 卷入、从事正确；A arguing about 争论、B accounting for 解释、D interfering with 干涉，语义不符。",
      "related_sentences": []
     },
     {
@@ -9130,7 +9187,7 @@
       "D": "disappeared"
      },
      "answer": "A",
-     "explanation": "",
+     "explanation": "challenge your negative assumptions of what's happened——“质疑你对已发生之事的消极假设”。A happened 发生正确；B continued 继续、C returned 返回、D disappeared 消失不符。",
      "related_sentences": []
     },
     {
@@ -9152,7 +9209,7 @@
       "D": "根本的，基本的"
      },
      "answer": "D",
-     "explanation": "",
+     "explanation": "anything deep or fundamental about you——“任何深层或根本性的评价”，deep 与 fundamental 并列递进。D fundamental 根本的、基本的正确；A casual 随意的（与 deep 相反）、B obvious 明显的、C familiar 熟悉的均不搭。",
      "related_sentences": []
     },
     {
@@ -9174,7 +9231,7 @@
       "D": "proof"
      },
      "answer": "B",
-     "explanation": "",
+     "explanation": "give you feedback at all——“老板肯给你反馈”。B feedback 反馈正确；A reward 奖励、C trust 信任、D proof 证据不符。",
      "related_sentences": []
     },
     {
@@ -9196,7 +9253,7 @@
       "D": "relax"
      },
      "answer": "C",
-     "explanation": "",
+     "explanation": "want to help you improve——“想帮助你进步”，与 she wanted to point these out so that you do better next time 呼应。C improve 提高正确；A innovate 创新、B concentrate 专注、D relax 放松不符。",
      "related_sentences": []
     },
     {
@@ -9218,7 +9275,7 @@
       "D": "valuable"
      },
      "answer": "B",
-     "explanation": "",
+     "explanation": "your friendship is so strong that they felt able to cancel——“你们的友谊足够深厚，所以他们才敢临时取消”。B strong 牢固、深厚正确；A strange 奇怪、C vulnerable 脆弱的、D valuable 宝贵的——本句逻辑在“关系牢固故不拘礼数”，strong 最贴切。",
      "related_sentences": []
     }
    ]
