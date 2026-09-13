@@ -639,11 +639,13 @@ html.dark .writing-toggle {
     color: var(--text-light);
 }
 
-/* 翻译模块：全文参考译文 */
+/* 翻译模块：全文参考译文（卡片式，与译文占位条区隔） */
 .translation-ref {
-    margin-top: 6px;
-    border-top: 1px dashed var(--border, rgba(128, 128, 128, 0.25));
-    padding-top: 12px;
+    margin-top: 18px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--card-bg);
+    padding: 12px 14px;
 }
 
 .translation-ref-cn {
@@ -817,17 +819,22 @@ html.dark .word.tgt {
     margin: 2px 0 6px;
 }
 
-/* 完形填空空格 */
+/* 完形填空空格：胶囊式，醒目可扫读 */
 .blank {
     display: inline-block;
-    min-width: 46px;
+    min-width: 52px;
     text-align: center;
     border-bottom: 2px solid var(--primary);
+    background: var(--primary-soft);
+    border-radius: 6px;
+    padding: 0 8px;
     color: var(--primary);
     font-weight: 600;
     cursor: pointer;
     margin: 0 2px;
+    transition: background 0.15s;
 }
+.blank:hover { background: var(--primary-soft2, var(--primary-soft)); }
 
 .blank.filled-right {
     color: var(--success);
@@ -2884,16 +2891,36 @@ html.dark .q-tip {
     30%, 70% { box-shadow: 0 0 0 4px rgba(74, 144, 196, 0.45); }
 }
 
-/* ===== 完形专属紧凑排版 ===== */
-.cloze-q .q-head { margin-bottom: 4px; }
-.cloze-opts {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6px;
+/* ===== 完形：题号+选项同一行卡（2×2 单行选项，英中同行） ===== */
+.cloze-q { padding: 0; margin-bottom: 10px; }
+.cloze-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 8px 10px;
 }
-.cloze-opts .q-opt { margin-bottom: 0; padding: 6px 8px; }
-.cloze-opts .opt-en { font-size: 0.86rem; }
-.cloze-opts .opt-cn { font-size: 0.74rem; }
+.cloze-row .q-no { flex: 0 0 auto; margin-top: 4px; min-width: 26px; }
+.cloze-opts {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px 6px;
+    min-width: 0;
+}
+.cloze-opts .q-opt {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1px 6px;
+    margin-bottom: 0;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+.cloze-opts .opt-en { font-size: 0.85rem; }
+.cloze-opts .opt-cn { font-size: 0.73rem; }
 @media (max-width: 700px) {
     .cloze-opts { grid-template-columns: repeat(2, 1fr); }
 }
@@ -2910,32 +2937,125 @@ html.dark .q-tip {
 .expl-fold:hover { border-color: var(--primary); color: var(--primary); }
 .expl-body { margin-top: 8px; line-height: 1.7; }
 
-/* ===== 新题型紧凑版式（与完形共用网格 + 自适应列宽） ===== */
-.nt-opts { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
-.nt-opts .q-opt { padding: 6px 8px; }
-.nt-opts .opt-en { font-size: 0.85rem; }
-.nt-opts .opt-cn { font-size: 0.74rem; }
+/* ===== 新题型题目面板：置顶选项池（默认收起，展开为浮层） + 胶囊作答行 ===== */
+.nt-pool {
+    margin: 0 0 12px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+.nt-pool-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+.nt-pool-title { font-weight: 700; color: var(--primary); font-size: 0.86rem; }
+.nt-pool-body {
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: calc(100% + 6px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 62vh;
+    overflow-y: auto;
+    z-index: 30;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+.nt-pool-body[hidden] { display: none; }
+.nt-pool-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+}
+.nt-pool-k {
+    flex: 0 0 auto;
+    font-weight: 700;
+    color: var(--primary);
+    min-width: 16px;
+}
+.nt-pool-txt { min-width: 0; }
+.nt-pool-txt .opt-en { font-size: 0.82rem; line-height: 1.55; }
+.nt-pool-txt .opt-cn { font-size: 0.74rem; color: var(--text-light); }
+.nt-pool-item.nt-flash { animation: ntFlash 1.2s ease; }
 
-/* ===== 紧凑题型（翻译/完形/新题型）：短句卡片流——短句并排、长句占整行、句间小空隙 ===== */
-.sent-grid {
+.nt-q { padding: 0; margin-bottom: 12px; scroll-margin-top: 48px; }
+.nt-stem {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    font-weight: 400;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1 1 auto;
+}
+.nt-letters {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 14px;
-    align-items: flex-start;
+    gap: 6px;
+    margin: 8px 0 0;
+    padding-left: 2px;
 }
-.sent-grid .sent {
-    flex: 1 1 300px;
-    min-width: 210px;
-    margin: 0;
+.nt-letter {
+    min-width: 38px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    font: inherit;
+    font-weight: 700;
+    font-size: 0.92rem;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
 }
-.sent-grid .sent.long {
-    flex: 1 1 100%;
+.nt-letter:hover { border-color: var(--primary); color: var(--primary); }
+.nt-letter-txt {
+    height: auto;
     min-width: 0;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
 }
-/* 空位卡/人名徽标在新题型网格里占整行 */
-.sent-grid > .nt-slot,
-.sent-grid > .nt-match {
-    flex: 0 0 100%;
+.nt-letter.right {
+    border-color: var(--success);
+    background: rgba(40, 167, 69, 0.12);
+    color: var(--success);
+}
+.nt-letter.wrong {
+    border-color: var(--danger);
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--danger);
+}
+
+/* ===== 完形/新题型/翻译：连续篇章排版 ===== */
+.para-compact { margin-bottom: 14px; }
+.sent-list { display: block; }
+
+/* ===== 翻译：全文参考译文卡片 ===== */
+.translation-ref {
+    margin-top: 18px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--card-bg);
+    padding: 12px 14px;
 }
 
 /* ===== 熟词僻义 / 熟词短语 板块共用样式 ===== */

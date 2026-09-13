@@ -510,8 +510,8 @@ function renderArticle() {
             <div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>
             <div class="read-source">${esc(article.source || '')} · 点句下占位条显示译文，点下划线词查释义</div>
             ${article.topic ? `<div class="read-summary"><span class="rs-label">本文概要</span>${esc(article.topic)}</div>` : ''}
-            <div class="para"><div class="para-tag">P1</div>
-            <div class="sent-grid">${article.sentences.map(s => sentenceHtml(s)).join('')}</div></div>
+            <div class="para para-compact"><div class="para-tag">P1</div>
+            <div class="sent-list">${article.sentences.map(s => sentenceHtml(s)).join('')}</div></div>
             ${article.ref_cn ? `<div class="translation-ref">
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示全文参考译文</button>
                 <div class="translation-ref-cn" hidden>${esc(article.ref_cn)}</div>
@@ -523,7 +523,7 @@ function renderArticle() {
         const p = (s.para || 1) - 1;
         (paras[p] || (paras[p] = [])).push(s);
     }
-    // 紧凑题型（翻译/完形/新题型）：短句卡片流——短句并排、长句占整行
+    // 完形/新题型/翻译：正文按「连续篇章」竖排——挖空文章与连续短文不宜并排打断行文
     const isCompact = article.type === 'cloze' || article.type === 'newtype' || article.type === 'translation';
     let html = `<div class="read-title" onclick="toggleReadTitle()" title="点击显示/隐藏文章标题" hidden>${esc(article.title || '')}</div>`;
     html += `<div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>`;
@@ -539,8 +539,7 @@ function renderArticle() {
         if (q.person) personQMap[q.person.toLowerCase()] = q;
     });
     paras.forEach((sents, i) => {
-        html += `<div class="para"><div class="para-tag">P${i + 1}</div>`;
-        if (isCompact) html += '<div class="sent-grid">';
+        html += `<div class="para${isCompact ? ' para-compact' : ''}"><div class="para-tag">P${i + 1}</div>`;
         const slotQ = paraQMap[i + 1];
         if (slotQ) html += ntSlotHtml(slotQ);
         const personHit = new Set();
@@ -554,7 +553,6 @@ function renderArticle() {
             if (personQ) html += ntMatchRowHtml(personQ);
             html += sentenceHtml(s);
         }
-        if (isCompact) html += '</div>';
         html += '</div>';
     });
     document.getElementById('readPane').innerHTML = html;
@@ -566,9 +564,7 @@ function sentenceHtml(s) {
     const hasStruct = !!(s.struct && s.struct.nodes && sigOn());
     const structBtn = hasStruct
         ? `<button class="struct-btn" onclick="toggleStructTree('${s.id}')" title="展开/收起句子结构树">结构</button>` : '';
-    // 紧凑题型网格里长句（>170 字符）占整行，短句并排
-    const isLong = (s.en || '').length > 170;
-    let out = `<div class="sent${isLong ? ' long' : ''}" id="s-${s.id}" data-sid="${s.id}">
+    let out = `<div class="sent" id="s-${s.id}" data-sid="${s.id}">
         <div class="sent-en">${enHtml}
             <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>${structBtn}
         </div>
@@ -1087,6 +1083,25 @@ function renderQuiz() {
         return;
     }
     let html = '';
+    // 新题型：选项池（A-G）只渲染一次，置顶可折叠（默认收起，展开为浮层不挤压内容）；题块内用胶囊作答
+    if (article.type === 'newtype' && article.pool && Object.keys(article.pool).length) {
+        html += `<div class="nt-pool" id="ntPool">
+            <div class="nt-pool-head">
+                <span class="nt-pool-title">选项池（${Object.keys(article.pool).length} 项）</span>
+                <button class="expl-fold" id="ntPoolBtn" onclick="toggleNtPool()">展开 ▾</button>
+            </div>
+            <div class="nt-pool-body" id="ntPoolBody" hidden>
+                ${Object.keys(article.pool).map(k => `
+                    <div class="nt-pool-item" id="poolopt-${k}">
+                        <span class="nt-pool-k">${k}</span>
+                        <div class="nt-pool-txt">
+                            <div class="opt-en">${esc(article.pool[k])}</div>
+                            ${(article.pool_cn && article.pool_cn[k]) ? `<div class="opt-cn">${esc(article.pool_cn[k])}</div>` : ''}
+                        </div>
+                    </div>`).join('')}
+            </div>
+        </div>`;
+    }
     for (const q of qs) html += questionHtml(q);
     scroll.innerHTML = html;
     document.getElementById('quizJumpbar').innerHTML = qs.map(q => {
@@ -1173,19 +1188,47 @@ function ntGoto(qid) {
 }
 
 function questionHtml(q) {
-    const isCompact = article.type === 'cloze' || article.type === 'newtype';
     const opts = (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});
     const optsCn = (q.options_cn && Object.keys(q.options_cn).length) ? q.options_cn : (article.pool_cn || {});
+    // 完形：题号与选项同一行卡，选项 2×2 单行（英+中同行），去掉重复徽标
+    if (article.type === 'cloze') {
+        const optRows = Object.keys(opts).map(k => `
+            <div class="q-opt" id="opt-${q.id}-${k}" onclick="onPick('${q.id}','${k}')">
+                <div class="opt-en">${k}. ${quizTextHtml(opts[k], q.id)}</div>
+                ${optsCn[k] ? `<div class="opt-cn">${esc(optsCn[k])}</div>` : ''}
+            </div>`).join('');
+        return `<div class="qblock cloze-q" id="q-${q.id}">
+        <div class="cloze-row">
+            <span class="q-no">Q${q.number}</span>
+            <div class="cloze-opts">${optRows}</div>
+        </div>
+        <div id="expl-${q.id}"></div>
+    </div>`;
+    }
+    // 新题型：选项池只渲染一次（面板顶部），题块内用胶囊作答（短选项带文字，长选项仅字母+悬浮提示）
+    if (article.type === 'newtype') {
+        const letters = Object.keys(opts).map(k => {
+            const txt = opts[k] || '';
+            const short = txt.length <= 24;
+            return `<button class="nt-letter${short ? ' nt-letter-txt' : ''}" id="opt-${q.id}-${k}" onclick="onPick('${q.id}','${k}')" title="${esc(txt)}">${short ? `${k}. ${esc(txt)}` : k}</button>`;
+        }).join('');
+        const stemTxt = (q.stem || '').replace(/^第\s*\d+\s*题[：:]\s*/, '');
+        return `<div class="qblock nt-q" id="q-${q.id}">
+        <div class="q-head"><span class="q-no">Q${q.number}</span>${stemTxt ? `<span class="nt-stem">${esc(stemTxt)}</span>` : ''}</div>
+        <div class="nt-letters">${letters}</div>
+        <div id="expl-${q.id}"></div>
+    </div>`;
+    }
     const optRows = Object.keys(opts).map(k => `
         <div class="q-opt" id="opt-${q.id}-${k}" onclick="onPick('${q.id}','${k}')">
             <div class="opt-en">${k}. ${quizTextHtml(opts[k], q.id)}</div>
             ${optsCn[k] ? `<div class="opt-cn">${esc(optsCn[k])}</div>` : ''}
         </div>`).join('');
-    return `<div class="qblock${isCompact ? ' cloze-q' : ''}" id="q-${q.id}">
+    return `<div class="qblock" id="q-${q.id}">
         <div class="q-head"><span class="q-no">Q${q.number}</span>${q.qtype ? `<span class="q-type-badge">${esc(qtypeCn(q.qtype))}</span>` : ''}</div>
-        ${!isCompact ? `<div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
-        ${q.stem_cn ? `<div class="q-stem-cn">${esc(q.stem_cn)}</div>` : ''}` : ''}
-        ${isCompact ? `<div class="cloze-opts nt-opts">${optRows}</div>` : optRows}
+        <div class="q-stem">${quizTextHtml(q.stem || '', q.id)}</div>
+        ${q.stem_cn ? `<div class="q-stem-cn">${esc(q.stem_cn)}</div>` : ''}
+        ${optRows}
         <div id="expl-${q.id}"></div>
     </div>`;
 }
@@ -1197,6 +1240,15 @@ function toggleExplFold(qid) {
     if (!body) return;
     body.hidden = !body.hidden;
     if (btn) btn.textContent = body.hidden ? '展开解析 ▾' : '收起解析 ▴';
+}
+
+/** 新题型选项池折叠 */
+function toggleNtPool() {
+    const body = document.getElementById('ntPoolBody');
+    const btn = document.getElementById('ntPoolBtn');
+    if (!body) return;
+    body.hidden = !body.hidden;
+    if (btn) btn.textContent = body.hidden ? '展开 ▾' : '收起 ▴';
 }
 
 /** 题目文本渲染：英文词/词组可点查释义（点词 stopPropagation 不触达答题，点空白/字母处仍选答案） */
@@ -1253,6 +1305,11 @@ function showResult(q, userKey, scrollToRelated) {
             blank.classList.remove('filled-right', 'filled-wrong');
             blank.classList.add(ok ? 'filled-right' : 'filled-wrong');
         }
+    }
+    // 新题型：选项池里对应项闪一下，提示该答案的原文
+    if (article.type === 'newtype') {
+        const po = document.getElementById(`poolopt-${q.answer}`);
+        if (po) { po.classList.remove('nt-flash'); void po.offsetWidth; po.classList.add('nt-flash'); }
     }
     if (scrollToRelated && (q.related_sentences || []).length && article.type !== 'cloze' && article.type !== 'newtype') locateRelated(q.id);
 }
