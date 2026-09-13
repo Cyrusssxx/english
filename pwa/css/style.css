@@ -3412,3 +3412,66 @@ body.wr-toc-folded .wr-toc-tab { display: inline-flex; }
 
 /* 近义词页：写作句式条目（整句英文加粗 + 浅色说明） */
 .leaf-rest { color: var(--text-light); font-size: .92em; }
+
+/* ===== 套用示范标注：槽位词 / 自写处高亮 + 逐句来源面板 ===== */
+.apply-en .apply-para { margin: 0 0 8px; }
+.apply-en .apply-para:last-child { margin-bottom: 0; }
+mark.ap-slot {
+    background: rgba(29, 111, 208, .14); color: #1a5fb4;
+    border-radius: 3px; padding: 0 2px; font-weight: 600;
+}
+mark.ap-own {
+    background: rgba(245, 158, 11, .20); color: #92400e;
+    border-radius: 3px; padding: 0 2px;
+}
+.dark mark.ap-slot { background: rgba(124, 192, 255, .18); color: #9ecbff; }
+.dark mark.ap-own { background: rgba(252, 211, 77, .18); color: #fcd34d; }
+
+.ap-marks {
+    margin: 12px 0 4px; padding: 10px 12px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+}
+.ap-marks-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.ap-wc { font-size: .84rem; color: var(--text); }
+.ap-wc b { font-size: 1rem; color: var(--primary); }
+.ap-wc-req { margin-left: 6px; font-size: .74rem; color: var(--text-light); }
+.ap-wc-seg { margin-left: 10px; font-size: .74rem; color: var(--text-light); }
+.ap-exp-btn2 {
+    border: 1px solid var(--primary); background: var(--card); color: var(--primary);
+    font: inherit; font-size: .74rem; padding: 2px 11px; border-radius: 999px; cursor: pointer;
+    transition: background .15s, color .15s;
+}
+.ap-exp-btn2:hover { background: var(--primary); color: #fff; }
+.ap-legend { margin-top: 7px; font-size: .74rem; color: var(--text-light); line-height: 1.7; }
+.ap-legend mark { font-size: .74rem; }
+.ap-sent-list { margin-top: 10px; padding-top: 9px; border-top: 1px dashed var(--border); }
+.ap-list-cap { font-size: .76rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.ap-sent-row {
+    padding: 7px 9px; margin-bottom: 6px; border-radius: 8px;
+    background: var(--card-bg); border: 1px solid var(--border);
+}
+.ap-sent-head { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; font-size: .76rem; }
+.ap-no {
+    flex: 0 0 auto; font-weight: 700; color: var(--primary);
+    background: var(--primary-soft); border-radius: 4px; padding: 0 6px;
+    font-variant-numeric: tabular-nums;
+}
+.ap-k { font-weight: 700; border-radius: 4px; padding: 0 6px; font-size: .72rem; }
+.ap-k-tpl { background: rgba(13,148,136,.14); color: #0b7c72; }
+.ap-k-own { background: rgba(245,158,11,.18); color: #92400e; }
+.dark .ap-k-tpl { background: rgba(45,212,191,.16); color: #5eead4; }
+.dark .ap-k-own { background: rgba(252,211,77,.16); color: #fcd34d; }
+.ap-src { color: var(--text-light); }
+.ap-cov { color: var(--text-light); opacity: .8; }
+.ap-line { display: flex; gap: 7px; align-items: flex-start; margin-top: 5px; font-size: .79rem; line-height: 1.7; color: var(--text); }
+.ap-tag {
+    flex: 0 0 auto; font-size: .68rem; font-weight: 700; border-radius: 4px;
+    padding: 1px 6px; margin-top: 2px; white-space: nowrap;
+}
+.ap-tag-s { background: rgba(29,111,208,.14); color: #1a5fb4; }
+.ap-tag-o { background: rgba(245,158,11,.18); color: #92400e; }
+.ap-tag-k { background: var(--primary-soft); color: var(--primary-dark); }
+.ap-tag-cn { background: rgba(128,128,128,.14); color: var(--text-light); }
+.dark .ap-tag-s { background: rgba(124,192,255,.16); color: #9ecbff; }
+.dark .ap-tag-o { background: rgba(252,211,77,.16); color: #fcd34d; }
+.ap-line-cn { color: var(--text-light); }

@@ -40,8 +40,10 @@ function toggleReserve(btn) {
 }
 
 /** 模板套用示范（置于参考范文上方）：示范文 → 建议 → 关键句型 */
-function applyHtml(ap) {
+function applyHtml(ap, year) {
     if (!ap || !ap.apply_en) return '';
+    const mk = (typeof APPLY_MARKS !== 'undefined' && APPLY_MARKS && year) ? APPLY_MARKS[year] : null;
+    const bodyHtml = renderApplyBody(mk) || `<div class="apply-en">${esc(ap.apply_en)}</div>`;
     const tips = (ap.tips || []).map(t => `<li>${esc(t)}</li>`).join('');
     const phrs = (ap.key_phrases || []).map(p =>
         `<div class="ap-phrase"><span class="ap-phrase-en">${esc(p.en)}</span><span class="ap-phrase-cn">${esc(p.cn)}</span></div>`).join('');
@@ -50,9 +52,10 @@ function applyHtml(ap) {
             <span class="rs-label">模板套用示范</span>
             <button class="writing-toggle" onclick="toggleApplyCn(this)">显示中文译文</button>
         </div>
-        <div class="ap-note">用「作文模板」的句型套写本篇真题，占位词已按题目替换</div>
-        <div class="apply-en">${esc(ap.apply_en)}</div>
+        <div class="ap-note">用「作文模板」的句型套写本篇真题：<mark class="ap-slot">槽位词</mark>按题替换，<mark class="ap-own">自写处</mark>自己组织</div>
+        <div class="apply-en">${bodyHtml}</div>
         <div class="apply-cn" hidden>${esc(ap.apply_cn || '')}</div>
+        ${renderApplyMarks(mk)}
         ${tips ? `<div class="ap-sub">📝 套用建议</div><ul class="apply-tips">${tips}</ul>` : ''}
         ${phrs ? `<div class="ap-sub">🔑 关键句型<span class="ap-xref">已收录进 <a href="phrasebook.html">熟词短语</a> · <a href="nearmap.html">近义词</a> 板块</span></div><div class="ap-phrases">${phrs}</div>` : ''}
     </div>`;
@@ -412,6 +415,7 @@ async function init() {
     document.title = `${year} ${TYPE_NAMES[article.type] || article.type} - 英语二精翻`;
     document.getElementById('navTitle').textContent = `${year} ${TYPE_NAMES[article.type] || article.type}`;
     localStorage.setItem('lastArticle', AID);
+    if (article.apply) await loadApplyMarks();   // 套用示范的逐句标注（很小，命中 SW 缓存）
 
     // —— 先渲染正文（仅依赖 s.words 预标注，无需词典/生词本数据），打开文章不再整页卡 ——
     renderModeSwitch();
@@ -488,7 +492,7 @@ function renderArticle() {
                 ${article.directions_cn ? `<div class="writing-directions-cn">${esc(article.directions_cn)}</div>` : ''}
             </div>` : ''}
             ${article.chart_img ? `<div class="writing-chart"><img src="${esc(article.chart_img)}" alt="图表" loading="lazy"></div>` : ''}
-            ${applyHtml(article.apply)}
+            ${applyHtml(article.apply, article.id.slice(0, 4))}
             <div class="writing-sample">
                 <div class="rs-label">参考范文</div>
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示中文译文</button>

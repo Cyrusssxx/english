@@ -251,3 +251,77 @@ function promptAsync(message, defaultValue = '', opts = {}) {
         requestAnimationFrame(() => navbar.classList.add('nav-anim'));
     });
 })();
+
+/* ===== 作文「套用示范」标注：逐句来源 / 可替换词 / 非模板词 / 词数 =====
+   数据：pwa/data/writing_apply_marks.json（tools/annotate_writing_apply.py 生成）
+   · spans 里 t=模板固定（不高亮）、s=模板槽位（可替换）、o=模板外自写     */
+let APPLY_MARKS = null;
+
+async function loadApplyMarks() {
+    if (APPLY_MARKS) return APPLY_MARKS;
+    try {
+        const res = await fetch('data/writing_apply_marks.json', { cache: 'no-cache' });
+        if (res.ok) APPLY_MARKS = await res.json();
+    } catch (e) { /* 离线或缺失时退化为纯文本 */ }
+    return APPLY_MARKS;
+}
+
+function apEsc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+/** 示范文正文：模板部分原样，槽位词与自写部分分别高亮 */
+function renderApplyBody(mk) {
+    if (!mk || !mk.paras) return '';
+    return mk.paras.map(p => '<p class="apply-para">' + p.sents.map(s =>
+        (s.spans || []).map(sp => sp.t === 't'
+            ? apEsc(sp.x)
+            : `<mark class="${sp.t === 's' ? 'ap-slot' : 'ap-own'}">${apEsc(sp.x)}</mark>`).join('')
+    ).join(' ') + '</p>').join('');
+}
+
+/** 展开/收起逐句标注 */
+function apToggleMarks(btn) {
+    const box = btn.closest('.ap-marks');
+    const list = box.querySelector('.ap-sent-list');
+    const show = list.hidden;
+    list.hidden = !show;
+    btn.textContent = show ? '收起逐句标注 ▴' : '展开逐句标注 ▾';
+}
+
+/** 标注面板：词数 + 图例 + 逐句来源/可替换词/非模板词/功能句（默认收起） */
+function renderApplyMarks(mk) {
+    if (!mk || !mk.paras) return '';
+    const ok = mk.wc >= 150;
+    const nSent = mk.paras.reduce((n, p) => n + p.sents.length, 0);
+    let html = '<div class="ap-marks">';
+    html += `<div class="ap-marks-head"><span class="ap-wc">📊 全文 <b>${mk.wc}</b> 词`
+        + `<span class="ap-wc-req">要求 ≥150，${ok ? '达标' : '偏少'}</span>`
+        + `<span class="ap-wc-seg">三段 ${mk.paras.map(p => p.wc).join(' / ')}</span></span>`
+        + `<button class="ap-exp-btn2" onclick="apToggleMarks(this)">展开逐句标注 ▾</button></div>`;
+    html += '<div class="ap-legend"><mark class="ap-slot">槽位词</mark>＝模板里留空处，按题替换　'
+        + '<mark class="ap-own">自写/改写</mark>＝模板之外，需自己组织语言</div>';
+    html += `<div class="ap-sent-list" hidden><div class="ap-list-cap">逐句来源与可替换词（共 ${nSent} 句）</div>`;
+    mk.paras.forEach((p, pi) => {
+        p.sents.forEach((s, si) => {
+            const slots = [], own = [];
+            (s.spans || []).forEach(sp => {
+                const x = (sp.x || '').trim();
+                if (!x) return;
+                if (sp.t === 's') slots.push(x);
+                else if (sp.t === 'o') own.push(x);
+            });
+            const head = s.kind === 'own'
+                ? '<span class="ap-k ap-k-own">自写句</span><span class="ap-src">模板未覆盖</span>'
+                : `<span class="ap-k ap-k-tpl">模板</span><span class="ap-src">${apEsc(s.src)}</span>`
+                  + (s.cov ? `<span class="ap-cov">覆盖 ${Math.round(s.cov * 100)}%</span>` : '');
+            html += `<div class="ap-sent-row"><div class="ap-sent-head"><span class="ap-no">P${pi + 1}.${si + 1}</span>${head}</div>`;
+            if (s.cn) html += `<div class="ap-line ap-line-cn"><span class="ap-tag ap-tag-cn">中译</span><span>${apEsc(s.cn)}</span></div>`;
+            if (slots.length) html += `<div class="ap-line"><span class="ap-tag ap-tag-s">可替换词</span><span>${apEsc(slots.join('　/　'))}</span></div>`;
+            if (own.length) html += `<div class="ap-line"><span class="ap-tag ap-tag-o">非模板词</span><span>${apEsc(own.join('　/　'))}</span></div>`;
+            if (s.keys && s.keys.length) html += `<div class="ap-line"><span class="ap-tag ap-tag-k">功能句</span><span>${s.keys.map(apEsc).join('；')}</span></div>`;
+            html += '</div>';
+        });
+    });
+    return html + '</div></div>';
+}

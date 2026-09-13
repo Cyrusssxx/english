@@ -82,13 +82,16 @@ function wrSectionCard(sec) {
 
 /** 展开行的真题套用示范内容（示范文 + 建议 + 关键句型） */
 function wrApplyHtml(year, ap) {
+    const mk = (typeof APPLY_MARKS !== 'undefined' && APPLY_MARKS) ? APPLY_MARKS[year] : null;
+    const bodyHtml = renderApplyBody(mk) || `<div class="apply-en">${wrEsc(ap.apply_en || '')}</div>`;
     const tips = (ap.tips || []).map(x => `<li>${wrEsc(x)}</li>`).join('');
     const phrs = (ap.key_phrases || []).map(p =>
         `<div class="ap-phrase"><span class="ap-phrase-en">${wrEsc(p.en)}</span><span class="ap-phrase-cn">${wrEsc(p.cn)}</span></div>`).join('');
     return `<div class="wr-apply-detail">
         <div class="wr-apply-title">${wrEsc(year)} 真题套用示范${ap.title ? ' · ' + wrEsc(ap.title) : ''}</div>
-        <div class="apply-en">${wrEsc(ap.apply_en || '')}</div>
+        <div class="apply-en">${bodyHtml}</div>
         ${ap.apply_cn ? `<div class="apply-cn">${wrEsc(ap.apply_cn)}</div>` : ''}
+        ${renderApplyMarks(mk)}
         ${tips ? `<div class="ap-sub">📝 套用建议</div><ul class="apply-tips">${tips}</ul>` : ''}
         ${phrs ? `<div class="ap-sub">🔑 关键句型<span class="ap-xref">已收录进 <a href="phrasebook.html">熟词短语</a> · <a href="nearmap.html">近义词</a> 板块</span></div><div class="ap-phrases">${phrs}</div>` : ''}
     </div>`;
@@ -228,6 +231,7 @@ async function initWriting() {
         const ra = await fetch('data/writing_apply.json', { cache: 'no-cache' });
         if (ra.ok) APPLY = await ra.json();
     } catch (e) { APPLY = {}; }
+    await loadApplyMarks();   // 套用示范的逐句标注
     const it = WR.intro || {};
     document.title = (it.title || '作文模板') + ' - 英语真题精翻';
     document.getElementById('wrTitle').textContent = it.title || '作文模板库';

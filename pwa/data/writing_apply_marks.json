@@ -1,0 +1,4533 @@
+{
+ "2010": {
+  "wc": 173,
+  "paras": [
+   {
+    "wc": 61,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart shows that the "
+       },
+       {
+        "t": "o",
+        "x": "mobile-phone subscription numbers "
+       },
+       {
+        "t": "t",
+        "x": "associated with "
+       },
+       {
+        "t": "s",
+        "x": "the two groups rose steadily "
+       },
+       {
+        "t": "t",
+        "x": "during the periods presented."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.55,
+      "matched": 11,
+      "wc": 20,
+      "keys": [
+       "rose steadily during the periods presented"
+      ],
+      "cn": "该柱状图表明，两组对象的手机订阅量在相应时期内均持续上升。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Subscriptions in developing countries "
+       },
+       {
+        "t": "t",
+        "x": "climbed from "
+       },
+       {
+        "t": "s",
+        "x": "0.5 billion "
+       },
+       {
+        "t": "t",
+        "x": "in "
+       },
+       {
+        "t": "s",
+        "x": "2000 "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "s",
+        "x": "4 billion "
+       },
+       {
+        "t": "t",
+        "x": "in "
+       },
+       {
+        "t": "s",
+        "x": "2008, "
+       },
+       {
+        "t": "t",
+        "x": "while "
+       },
+       {
+        "t": "s",
+        "x": "those in developed countries "
+       },
+       {
+        "t": "t",
+        "x": "rose from "
+       },
+       {
+        "t": "s",
+        "x": "0.7 billion "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "s",
+        "x": "1 billion."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.33,
+      "matched": 9,
+      "wc": 27,
+      "keys": [
+       "climbed from … to …"
+      ],
+      "cn": "发展中国家的订阅量从 2000 年的 5 亿攀升至 2008 年的 40 亿，而发达国家同期从 7 亿增至 10 亿。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Although the two moved in the same direction, the pace of growth differed sharply."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 14,
+      "keys": [
+       "the pace of growth differed sharply"
+      ],
+      "cn": "二者虽同向变动，但增速差异明显。"
+     }
+    ]
+   },
+   {
+    "wc": 59,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The gap stems from the different market conditions of the two groups."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 12,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "In developing countries, the mobile-phone market had not yet reached saturation, and the number of potential customers was huge."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 19,
+      "keys": [
+       "had not yet reached saturation"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Thanks to the economic boom, an increasing number of them gradually joined the market."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 14,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "In developed countries, by contrast, a saturated market left little room for further growth."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 14,
+      "keys": [
+       "left little room for further growth"
+      ],
+      "cn": ""
+     }
+    ]
+   },
+   {
+    "wc": 53,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "For "
+       },
+       {
+        "t": "s",
+        "x": "this trend "
+       },
+       {
+        "t": "t",
+        "x": "to continue exerting a positive influence on "
+       },
+       {
+        "t": "o",
+        "x": "everyday life, "
+       },
+       {
+        "t": "t",
+        "x": "concerted efforts from all sectors of society are essential."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.81,
+      "matched": 17,
+      "wc": 21,
+      "keys": [],
+      "cn": "要使这一趋势持续为日常生活带来积极影响，需要社会各方共同努力。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Relevant authorities should provide the necessary support and create favorable conditions under which "
+       },
+       {
+        "t": "s",
+        "x": "mobile services "
+       },
+       {
+        "t": "t",
+        "x": "can play a constructive role."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.9,
+      "matched": 18,
+      "wc": 20,
+      "keys": [],
+      "cn": "有关部门应提供必要支持，为移动服务发挥作用创造良好条件。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Individuals should also make well-informed choices in light of their own circumstances."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 1.0,
+      "matched": 12,
+      "wc": 12,
+      "keys": [],
+      "cn": "个人也应结合自身情况作出理性选择。"
+     }
+    ]
+   }
+  ]
+ },
+ "2011": {
+  "wc": 171,
+  "paras": [
+   {
+    "wc": 78,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart shows that the "
+       },
+       {
+        "t": "o",
+        "x": "market shares "
+       },
+       {
+        "t": "t",
+        "x": "associated with "
+       },
+       {
+        "t": "s",
+        "x": "the three auto brands "
+       },
+       {
+        "t": "t",
+        "x": "did not move in a uniform direction during the periods presented."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.72,
+      "matched": 18,
+      "wc": 25,
+      "keys": [
+       "did not move in a uniform direction"
+      ],
+      "cn": "该柱状图表明，三个汽车品牌的市场份额在相应时期内并未朝着相同方向变化。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Chinese brands climbed from a modest share to the leading position, while Japanese brands fell by nearly 10 percentage points and were displaced from their leading position."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 27,
+      "keys": [
+       "were displaced from their leading position"
+      ],
+      "cn": "国产品牌从一个不大的份额攀升至领先地位，日系品牌则下降近 10 个百分点、被赶下了头名位置。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Chinese brands expanded their share by nearly the same margin as Japanese brands lost theirs."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 15,
+      "keys": [
+       "expanded their share by nearly the same margin"
+      ],
+      "cn": "两大国产品牌扩大的份额与日系品牌失去的份额大致相当。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "By contrast, American brands held steady, with only a slight increase."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 11,
+      "keys": [
+       "By contrast"
+      ],
+      "cn": "相比之下，美系品牌保持稳定，仅略有增长。"
+     }
+    ]
+   },
+   {
+    "wc": 62,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The shift is not unexpected."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 5,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the one hand, Chinese auto producers have narrowed the technology gap between themselves and foreign competitors and have cleverly adjusted their promotion strategies."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 24,
+      "keys": [
+       "narrowed the technology gap"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the other hand, as the national economy grows, consumers increasingly favour products that suit their own needs and budgets."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 20,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "In addition, rising national confidence has made domestic brands a more attractive option."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 13,
+      "keys": [],
+      "cn": ""
+     }
+    ]
+   },
+   {
+    "wc": 31,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "For "
+       },
+       {
+        "t": "s",
+        "x": "domestic brands "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "o",
+        "x": "hold their advantage, continued "
+       },
+       {
+        "t": "t",
+        "x": "efforts are essential."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.45,
+      "matched": 5,
+      "wc": 11,
+      "keys": [],
+      "cn": "国产品牌若要保持优势，仍需持续努力。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Manufacturers "
+       },
+       {
+        "t": "t",
+        "x": "should "
+       },
+       {
+        "t": "o",
+        "x": "keep improving quality and after-sales service, while consumers should "
+       },
+       {
+        "t": "t",
+        "x": "make well-informed choices in light of their own circumstances."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.5,
+      "matched": 10,
+      "wc": 20,
+      "keys": [],
+      "cn": "厂商应不断提升质量与售后服务，消费者也应结合自身情况作出理性选择。"
+     }
+    ]
+   }
+  ]
+ },
+ "2012": {
+  "wc": 170,
+  "paras": [
+   {
+    "wc": 65,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "table "
+       },
+       {
+        "t": "t",
+        "x": "presents an uneven distribution among the "
+       },
+       {
+        "t": "o",
+        "x": "age groups "
+       },
+       {
+        "t": "t",
+        "x": "associated with "
+       },
+       {
+        "t": "o",
+        "x": "job satisfaction."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.64,
+      "matched": 9,
+      "wc": 14,
+      "keys": [
+       "The table presents an uneven distribution among…"
+      ],
+      "cn": "该表格呈现了各年龄段在工作满意度上的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Employees above 50 account "
+       },
+       {
+        "t": "t",
+        "x": "for the largest share, at "
+       },
+       {
+        "t": "o",
+        "x": "40%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.5,
+      "matched": 5,
+      "wc": 10,
+      "keys": [
+       "account for the largest share, at …%"
+      ],
+      "cn": "50 岁以上员工满意度占比最大，达 40%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The middle group, those aged 41 to 50, represents the lowest level, where none of them felt satisfied and 64% expressed dissatisfaction."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 22,
+      "keys": [
+       "none of them felt satisfied"
+      ],
+      "cn": "41 至 50 岁的中间组水平最低，无人满意，64% 表示不满。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "employees aged 40 or younger "
+       },
+       {
+        "t": "t",
+        "x": "make up a relatively small "
+       },
+       {
+        "t": "o",
+        "x": "proportion, only 16.7% "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "s",
+        "x": "whom reported contentment."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.37,
+      "matched": 7,
+      "wc": 19,
+      "keys": [],
+      "cn": "相比之下，40 岁及以下员工占比很小，仅 16.7% 表示满意。"
+     }
+    ]
+   },
+   {
+    "wc": 71,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "The differences "
+       },
+       {
+        "t": "t",
+        "x": "are closely "
+       },
+       {
+        "t": "o",
+        "x": "related "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "o",
+        "x": "the career situation "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "o",
+        "x": "each group."
+       }
+      ],
+      "src": "环境生态类第二段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.33,
+      "matched": 4,
+      "wc": 12,
+      "keys": [],
+      "cn": "这些差异与各群体的职业处境密切相关。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The 41-to-50 group, less energetic than the younger crowd and less established than older professionals, often reaches a career plateau, and the consequent sense of powerlessness reduces them to deep dissatisfaction."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 31,
+      "keys": [
+       "the consequent sense of powerlessness"
+      ],
+      "cn": "41 至 50 岁组比年轻人精力不足、比年长者资历尚浅，往往进入职业平台期，随之而来的无力感使他们深感不满。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Younger employees, by contrast, may still be adapting to their posts and are therefore cautious about declaring satisfaction."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 18,
+      "keys": [],
+      "cn": "相比之下，年轻员工可能仍在适应岗位，因而对表达满意较为谨慎。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Middle-aged staff therefore need more encouragement rather than more pressure."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 10,
+      "keys": [],
+      "cn": "因此，中年员工需要的是更多鼓励，而不是更大压力。"
+     }
+    ]
+   },
+   {
+    "wc": 34,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "For "
+       },
+       {
+        "t": "s",
+        "x": "job satisfaction "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "o",
+        "x": "improve, "
+       },
+       {
+        "t": "t",
+        "x": "efforts from "
+       },
+       {
+        "t": "o",
+        "x": "both employers and employees "
+       },
+       {
+        "t": "t",
+        "x": "are essential."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.46,
+      "matched": 6,
+      "wc": 13,
+      "keys": [],
+      "cn": "要提升工作满意度，需要雇主与员工共同努力。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Employers "
+       },
+       {
+        "t": "t",
+        "x": "should "
+       },
+       {
+        "t": "o",
+        "x": "offer clearer promotion paths and timely feedback, while employees should "
+       },
+       {
+        "t": "t",
+        "x": "make well-informed choices in light of their own circumstances."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.48,
+      "matched": 10,
+      "wc": 21,
+      "keys": [],
+      "cn": "雇主应提供更清晰的晋升通道与及时反馈，员工也应结合自身情况作出理性选择。"
+     }
+    ]
+   }
+  ]
+ },
+ "2013": {
+  "wc": 167,
+  "paras": [
+   {
+    "wc": 66,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart shows that the "
+       },
+       {
+        "t": "o",
+        "x": "proportion of college students taking part-time jobs rose steadily "
+       },
+       {
+        "t": "t",
+        "x": "during the periods presented."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.47,
+      "matched": 9,
+      "wc": 19,
+      "keys": [
+       "rose steadily during the periods presented"
+      ],
+      "cn": "该柱状图表明，大学生兼职比例在相应时期内持续上升。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The rate climbed from 67.77% in the first year to 88.24% in the final year, and the biggest increase occurred in the graduation year, when the figure was 16% higher than a year earlier."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 34,
+      "keys": [
+       "the biggest increase occurred in …"
+      ],
+      "cn": "比例从大一的 67.77% 升至大四的 88.24%，其中增幅最大的是毕业那年，比上年高出 16%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Overall, the figure kept "
+       },
+       {
+        "t": "t",
+        "x": "showing a steady upward trend "
+       },
+       {
+        "t": "o",
+        "x": "throughout the four years."
+       }
+      ],
+      "src": "动态图表第一段 · 功能句1",
+      "kind": "func",
+      "cov": 0.38,
+      "matched": 5,
+      "wc": 13,
+      "keys": [
+       "showing a steady upward trend"
+      ],
+      "cn": "总体来看，这一比例在四年间呈现稳定上升趋势。"
+     }
+    ]
+   },
+   {
+    "wc": 64,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "The upward trend "
+       },
+       {
+        "t": "t",
+        "x": "stems from "
+       },
+       {
+        "t": "o",
+        "x": "students' growing wish "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "o",
+        "x": "gain "
+       },
+       {
+        "t": "t",
+        "x": "practical "
+       },
+       {
+        "t": "o",
+        "x": "experience."
+       }
+      ],
+      "src": "经济类第二段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.33,
+      "matched": 4,
+      "wc": 12,
+      "keys": [
+       "gain practical experience"
+      ],
+      "cn": "这一上升趋势源于学生获取实践经验意愿的增强。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Undoubtedly, the "
+       },
+       {
+        "t": "o",
+        "x": "competitive job market "
+       },
+       {
+        "t": "t",
+        "x": "has laid a solid foundation for "
+       },
+       {
+        "t": "s",
+        "x": "this change."
+       }
+      ],
+      "src": "经济类第二段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.62,
+      "matched": 8,
+      "wc": 13,
+      "keys": [],
+      "cn": "毫无疑问，竞争激烈的就业市场为这一变化奠定了坚实基础。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "As the "
+       },
+       {
+        "t": "o",
+        "x": "school years advance, students "
+       },
+       {
+        "t": "t",
+        "x": "attach greater importance to "
+       },
+       {
+        "t": "o",
+        "x": "career preparation "
+       },
+       {
+        "t": "t",
+        "x": "and become increasingly willing to embrace "
+       },
+       {
+        "t": "o",
+        "x": "real working environments."
+       }
+      ],
+      "src": "经济类第二段 · 模板第3句",
+      "kind": "tpl",
+      "cov": 0.57,
+      "matched": 12,
+      "wc": 21,
+      "keys": [],
+      "cn": "随着年级升高，学生更加重视职业准备，也更愿意走进真实的工作环境。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Consequently, "
+       },
+       {
+        "t": "s",
+        "x": "part-time jobs have "
+       },
+       {
+        "t": "t",
+        "x": "gradually become integrated into "
+       },
+       {
+        "t": "o",
+        "x": "campus "
+       },
+       {
+        "t": "t",
+        "x": "life, while their practical value has gained wider recognition."
+       }
+      ],
+      "src": "经济类第二段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.72,
+      "matched": 13,
+      "wc": 18,
+      "keys": [],
+      "cn": "兼职因此逐渐融入校园生活，其实践价值也得到更多认可。"
+     }
+    ]
+   },
+   {
+    "wc": 37,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "For "
+       },
+       {
+        "t": "s",
+        "x": "this trend "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "o",
+        "x": "bring lasting benefits, "
+       },
+       {
+        "t": "t",
+        "x": "efforts from "
+       },
+       {
+        "t": "o",
+        "x": "both universities and students "
+       },
+       {
+        "t": "t",
+        "x": "are essential."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.4,
+      "matched": 6,
+      "wc": 15,
+      "keys": [],
+      "cn": "要使这一趋势带来长久收益，需要高校与学生共同努力。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Universities "
+       },
+       {
+        "t": "t",
+        "x": "should "
+       },
+       {
+        "t": "o",
+        "x": "provide more internship channels, while students should strike a balance between work and study "
+       },
+       {
+        "t": "t",
+        "x": "in light of their own circumstances."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.32,
+      "matched": 7,
+      "wc": 22,
+      "keys": [
+       "strike a balance between work and study"
+      ],
+      "cn": "高校应提供更多实习渠道，学生也应结合自身情况平衡好学业与工作。"
+     }
+    ]
+   }
+  ]
+ },
+ "2014": {
+  "wc": 165,
+  "paras": [
+   {
+    "wc": 60,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart shows that the "
+       },
+       {
+        "t": "o",
+        "x": "population figures "
+       },
+       {
+        "t": "t",
+        "x": "associated with "
+       },
+       {
+        "t": "s",
+        "x": "urban and rural areas "
+       },
+       {
+        "t": "t",
+        "x": "did not move in a uniform direction "
+       },
+       {
+        "t": "o",
+        "x": "from 1990 to 2010."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.56,
+      "matched": 14,
+      "wc": 25,
+      "keys": [
+       "did not move in a uniform direction"
+      ],
+      "cn": "该柱状图表明，1990 至 2010 年间城乡人口数量并未朝着相同方向变化。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The urban population climbed from 300 million to 670 million, while the rural population declined from 820 million to 680 million over the same span."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 25,
+      "keys": [
+       "climbed from … to …, while … declined from … to …"
+      ],
+      "cn": "城镇人口从 3 亿攀升至 6.7 亿，而农村人口在同一时期从 8.2 亿降至 6.8 亿。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The gap therefore narrowed from 520 million to 10 million."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 10,
+      "keys": [],
+      "cn": "差距因此从 5.2 亿缩小到 1000 万。"
+     }
+    ]
+   },
+   {
+    "wc": 64,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The narrowing gap results from the joint effects of urbanization and unequal economic opportunities."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 14,
+      "keys": [
+       "the joint effects of urbanization and unequal economic opportunities"
+      ],
+      "cn": "差距的缩小源于城镇化与经济机会不均的共同作用。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "In the twenty years, urban sprawl transformed millions of peasants into city residents, and many more chose to leave their hometowns on their own initiative."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 25,
+      "keys": [
+       "on their own initiative"
+      ],
+      "cn": "二十年间，城市扩张使数百万农民被动转为城镇居民，更多人则主动离开家乡。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Meanwhile, as urban living standards improved considerably, few economic opportunities fell on rural areas, which prompted the young to seek a better life in cities."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 25,
+      "keys": [],
+      "cn": "与此同时，城镇生活水平大幅提高，而农村地区获得的经济机会很少，这促使年轻人进城寻求更好的生活。"
+     }
+    ]
+   },
+   {
+    "wc": 41,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "For "
+       },
+       {
+        "t": "s",
+        "x": "urban and rural areas "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "o",
+        "x": "develop in "
+       },
+       {
+        "t": "t",
+        "x": "a "
+       },
+       {
+        "t": "o",
+        "x": "balanced way, "
+       },
+       {
+        "t": "t",
+        "x": "concerted efforts are essential."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.47,
+      "matched": 7,
+      "wc": 15,
+      "keys": [],
+      "cn": "要使城乡协调发展，需要各方共同努力。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Relevant authorities should "
+       },
+       {
+        "t": "o",
+        "x": "channel more resources into "
+       },
+       {
+        "t": "t",
+        "x": "the "
+       },
+       {
+        "t": "o",
+        "x": "countryside "
+       },
+       {
+        "t": "t",
+        "x": "and create favorable conditions "
+       },
+       {
+        "t": "s",
+        "x": "for local employment, so that rural residents "
+       },
+       {
+        "t": "t",
+        "x": "can "
+       },
+       {
+        "t": "o",
+        "x": "also benefit from national progress."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.35,
+      "matched": 9,
+      "wc": 26,
+      "keys": [
+       "channel more resources into …"
+      ],
+      "cn": "有关部门应向农村倾斜更多资源，为本地就业创造有利条件，让农村居民也能从国家发展中获益。"
+     }
+    ]
+   }
+  ]
+ },
+ "2015": {
+  "wc": 170,
+  "paras": [
+   {
+    "wc": 70,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "This pie "
+       },
+       {
+        "t": "t",
+        "x": "chart presents an uneven distribution among the categories associated with "
+       },
+       {
+        "t": "o",
+        "x": "Spring Festival spending."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 10,
+      "wc": 15,
+      "keys": [
+       "This pie chart presents an uneven distribution among…"
+      ],
+      "cn": "该饼图呈现了春节各项花销之间的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Traveling, gift giving and dinners with friends or relatives account for the largest share, together making up 80% of the total."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 21,
+      "keys": [
+       "account for the largest share, together making up …% of the total"
+      ],
+      "cn": "旅行、送礼以及与亲友聚餐占比最大，合计达总额的 80%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "other items, such as decorations "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "fireworks, "
+       },
+       {
+        "t": "t",
+        "x": "make up a relatively small "
+       },
+       {
+        "t": "o",
+        "x": "proportion "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "s",
+        "x": "the remaining 20%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.42,
+      "matched": 8,
+      "wc": 19,
+      "keys": [],
+      "cn": "相比之下，其他项目占比很小。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Seen as a whole, the chart shows how much weight Chinese families place on togetherness."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 15,
+      "keys": [],
+      "cn": "总体来看，这张图显示出中国家庭对团聚的重视程度。"
+     }
+    ]
+   },
+   {
+    "wc": 66,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Most spending is used to maintain or facilitate interpersonal relationships."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 10,
+      "keys": [
+       "facilitate interpersonal relationships"
+      ],
+      "cn": "大部分开支用于维系或增进人际关系。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "This finding is not strange, since the Spring Festival is a traditional Chinese festival for family reunion."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 17,
+      "keys": [],
+      "cn": "这并不奇怪，因为春节是中国人家庭团聚的传统节日。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Developing relationships is beneficial and necessary for a person's fulfillment, and investing in the people we love is sweet and happy."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 21,
+      "keys": [],
+      "cn": "经营关系对个人幸福既有益又必要，为所爱之人花钱也甜蜜而快乐。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Seen in this light, the "
+       },
+       {
+        "t": "o",
+        "x": "pattern "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "s",
+        "x": "spending "
+       },
+       {
+        "t": "t",
+        "x": "is no coincidence but a natural consequence of social life."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.89,
+      "matched": 16,
+      "wc": 18,
+      "keys": [
+       "a natural consequence of social life"
+      ],
+      "cn": "由此可见，这一消费结构并非偶然，而是社会生活变化的自然结果。"
+     }
+    ]
+   },
+   {
+    "wc": 34,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "However, we should not go to extremes."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 7,
+      "keys": [
+       "not go to extremes"
+      ],
+      "cn": "然而，我们不应走极端。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Individuals should make well-informed choices in light of their own circumstances, ensuring that "
+       },
+       {
+        "t": "s",
+        "x": "the festival spending "
+       },
+       {
+        "t": "t",
+        "x": "genuinely contributes to their long-term "
+       },
+       {
+        "t": "o",
+        "x": "well-being rather than to unnecessary comparison."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 18,
+      "wc": 27,
+      "keys": [],
+      "cn": "个人应结合自身情况作出理性选择，让节日花销真正有利于长期福祉，而非助长不必要的攀比。"
+     }
+    ]
+   }
+  ]
+ },
+ "2016": {
+  "wc": 170,
+  "paras": [
+   {
+    "wc": 59,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "pie "
+       },
+       {
+        "t": "t",
+        "x": "chart presents an uneven distribution among the "
+       },
+       {
+        "t": "s",
+        "x": "purposes of travel for students polled in a certain university."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.42,
+      "matched": 8,
+      "wc": 19,
+      "keys": [],
+      "cn": "该饼图呈现了某高校受访学生旅游目的之间的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Appreciating the beauty of the scenery "
+       },
+       {
+        "t": "t",
+        "x": "accounts for the largest share, at "
+       },
+       {
+        "t": "o",
+        "x": "37%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.46,
+      "matched": 6,
+      "wc": 13,
+      "keys": [
+       "accounts for the largest share, at …%"
+      ],
+      "cn": "欣赏风景占比最大，达 37%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Relieving pressure follows closely, representing 33%."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 6,
+      "keys": [
+       "follows closely, representing …%"
+      ],
+      "cn": "缓解压力紧随其后，占 33%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "making more friends, fostering independence "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "other aims "
+       },
+       {
+        "t": "t",
+        "x": "make up relatively small proportions of "
+       },
+       {
+        "t": "s",
+        "x": "9%, 6% "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "o",
+        "x": "15% respectively."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.48,
+      "matched": 10,
+      "wc": 21,
+      "keys": [
+       "make up relatively small proportions of …, respectively"
+      ],
+      "cn": "相比之下，广交朋友、培养独立能力及其他目的占比很小，分别为 9%、6% 和 15%。"
+     }
+    ]
+   },
+   {
+    "wc": 84,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The survey reveals that most students travel to enjoy the view as well as to unwind."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 16,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the one hand, with the prosperity of tourism, college students who have ample time and curiosity are lured to explore the outside world."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 24,
+      "keys": [
+       "with the prosperity of tourism"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the other hand, growing academic pressure makes a journey an ideal way to recharge."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 15,
+      "keys": [
+       "an ideal way to recharge"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Seen in this light, the "
+       },
+       {
+        "t": "o",
+        "x": "pattern "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "s",
+        "x": "travel purposes "
+       },
+       {
+        "t": "t",
+        "x": "is a natural consequence of "
+       },
+       {
+        "t": "o",
+        "x": "campus "
+       },
+       {
+        "t": "t",
+        "x": "life."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.75,
+      "matched": 12,
+      "wc": 16,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "In other words, the figures mirror how students nowadays balance study and rest."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 13,
+      "keys": [],
+      "cn": ""
+     }
+    ]
+   },
+   {
+    "wc": 27,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For travel to bring lasting benefits, students "
+       },
+       {
+        "t": "t",
+        "x": "should make well-informed choices in light of their own circumstances, ensuring that "
+       },
+       {
+        "t": "s",
+        "x": "a journey "
+       },
+       {
+        "t": "t",
+        "x": "genuinely contributes to their long-term development."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 18,
+      "wc": 27,
+      "keys": [],
+      "cn": "要使旅行带来长久收益，学生应结合自身情况作出理性选择，让旅程真正有利于自身长远发展。"
+     }
+    ]
+   }
+  ]
+ },
+ "2017": {
+  "wc": 171,
+  "paras": [
+   {
+    "wc": 76,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The line chart shows that the "
+       },
+       {
+        "t": "o",
+        "x": "figures "
+       },
+       {
+        "t": "t",
+        "x": "associated with "
+       },
+       {
+        "t": "s",
+        "x": "museums and museum visitors rose steadily from 2013 to 2015."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.42,
+      "matched": 8,
+      "wc": 19,
+      "keys": [
+       "rose steadily from … to …"
+      ],
+      "cn": "该折线图表明，2013 至 2015 年间博物馆数量与参观人数的数据均持续上升。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "The number of museums "
+       },
+       {
+        "t": "t",
+        "x": "climbed from "
+       },
+       {
+        "t": "s",
+        "x": "4,169 "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "s",
+        "x": "4,692, "
+       },
+       {
+        "t": "t",
+        "x": "while "
+       },
+       {
+        "t": "s",
+        "x": "the number of visitors "
+       },
+       {
+        "t": "t",
+        "x": "rose from "
+       },
+       {
+        "t": "s",
+        "x": "637 million "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "s",
+        "x": "954 million over the same span."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.26,
+      "matched": 7,
+      "wc": 27,
+      "keys": [],
+      "cn": "博物馆数量从 4169 家攀升至 4692 家，参观人数同期从 6.37 亿增至 9.54 亿。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Although both moved in the same direction, the growth of museums slowed down in 2014 while visits maintained a dynamic momentum."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 21,
+      "keys": [
+       "maintained a dynamic momentum"
+      ],
+      "cn": "二者虽同向变动，但博物馆数量的增长在 2014 年放缓，而参观人数保持了强劲势头。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Taken together, the two lines point to a booming cultural market."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 11,
+      "keys": [],
+      "cn": "总体来看，两条曲线共同指向一个繁荣的文化市场。"
+     }
+    ]
+   },
+   {
+    "wc": 66,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "o",
+        "x": "progress "
+       },
+       {
+        "t": "t",
+        "x": "can "
+       },
+       {
+        "t": "o",
+        "x": "be attributed "
+       },
+       {
+        "t": "t",
+        "x": "to the "
+       },
+       {
+        "t": "o",
+        "x": "following reasons."
+       }
+      ],
+      "src": "校园类第二段（对应英语一品质类） · 负面版第1句",
+      "kind": "neg",
+      "cov": 0.44,
+      "matched": 4,
+      "wc": 9,
+      "keys": [],
+      "cn": "这一进步可归因于以下原因。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Firstly, thanks to the national endeavour in cultural undertakings, numerous museums have been built and opened free to the public."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 20,
+      "keys": [
+       "the national endeavour in cultural undertakings"
+      ],
+      "cn": "首先，得益于国家在文化事业上的努力，大量博物馆建成并向公众免费开放。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Moreover, as living standards improve, the public demand increasingly varied spiritual nourishment, and visiting museums has therefore become a willing choice for more people."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 24,
+      "keys": [
+       "varied spiritual nourishment"
+      ],
+      "cn": "此外，随着生活水平提高，公众对多样化精神食粮的需求上升，参观博物馆因而成为更多人的自愿选择。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Besides, museums themselves have become more visitor-friendly, with free admission and better exhibitions."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 13,
+      "keys": [],
+      "cn": "此外，博物馆自身也变得更友好，免费开放且展览更优质。"
+     }
+    ]
+   },
+   {
+    "wc": 29,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "However, this encouraging sign also presents challenges."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 7,
+      "keys": [],
+      "cn": "然而，这一可喜迹象也带来挑战。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Relevant authorities should improve the supply of cultural services, so that the growth of facilities can keep pace with the public demand."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 22,
+      "keys": [
+       "keep pace with the public demand"
+      ],
+      "cn": "有关部门应改善文化服务供给，使设施增长能够跟上公众日益增长的需求。"
+     }
+    ]
+   }
+  ]
+ },
+ "2018": {
+  "wc": 170,
+  "paras": [
+   {
+    "wc": 60,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "pie "
+       },
+       {
+        "t": "t",
+        "x": "chart presents an uneven distribution among the "
+       },
+       {
+        "t": "s",
+        "x": "factors consumers take into account when selecting a restaurant in a certain city in 2017."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.33,
+      "matched": 8,
+      "wc": 24,
+      "keys": [],
+      "cn": "该饼图呈现了 2017 年某市消费者选择餐厅时各关注因素之间的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Distinguishing features account "
+       },
+       {
+        "t": "t",
+        "x": "for the largest share, at "
+       },
+       {
+        "t": "o",
+        "x": "36.3%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.56,
+      "matched": 5,
+      "wc": 9,
+      "keys": [],
+      "cn": "餐厅特色占比最大，达 36.3%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Service "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "environment "
+       },
+       {
+        "t": "t",
+        "x": "form the middle group, representing "
+       },
+       {
+        "t": "s",
+        "x": "26.8% "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "23.8% "
+       },
+       {
+        "t": "t",
+        "x": "respectively."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第3句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 8,
+      "wc": 12,
+      "keys": [
+       "form the middle group, representing …% and …% respectively"
+      ],
+      "cn": "服务与环境处于中间位置，分别占 26.8% 和 23.8%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "price "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "other factors "
+       },
+       {
+        "t": "t",
+        "x": "make up relatively small proportions of "
+       },
+       {
+        "t": "s",
+        "x": "8.4% "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "o",
+        "x": "4.7%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 10,
+      "wc": 15,
+      "keys": [
+       "make up relatively small proportions of … and …"
+      ],
+      "cn": "相比之下，价格及其他因素占比很小，分别为 8.4% 和 4.7%。"
+     }
+    ]
+   },
+   {
+    "wc": 79,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The pattern is closely related to economic development."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 8,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the one hand, as per capita disposable income has risen, more people can afford to dine out, and it is natural that they care more about high-quality enjoyment than about price."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 32,
+      "keys": [
+       "per capita disposable income"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the other hand, an increasing number of restaurants with similar prices are available, so distinctive features have become the key to standing out."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 24,
+      "keys": [
+       "the key to standing out"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Seen in this light, the "
+       },
+       {
+        "t": "s",
+        "x": "change in priorities "
+       },
+       {
+        "t": "t",
+        "x": "is a natural consequence of social life."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.8,
+      "matched": 12,
+      "wc": 15,
+      "keys": [
+       "the change in priorities"
+      ],
+      "cn": ""
+     }
+    ]
+   },
+   {
+    "wc": 31,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For this trend to continue, both restaurants and consumers should act reasonably."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 12,
+      "keys": [],
+      "cn": "要使这一趋势延续，餐厅与消费者都应理性行事。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Restaurants "
+       },
+       {
+        "t": "t",
+        "x": "should "
+       },
+       {
+        "t": "o",
+        "x": "improve service and environment objectively, while consumers should "
+       },
+       {
+        "t": "t",
+        "x": "make well-informed choices in light of their own circumstances."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.53,
+      "matched": 10,
+      "wc": 19,
+      "keys": [],
+      "cn": "餐厅应客观提升服务与环境，消费者也应结合自身情况作出理性选择。"
+     }
+    ]
+   }
+  ]
+ },
+ "2019": {
+  "wc": 169,
+  "paras": [
+   {
+    "wc": 61,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart shows that the "
+       },
+       {
+        "t": "o",
+        "x": "proportions "
+       },
+       {
+        "t": "t",
+        "x": "associated with "
+       },
+       {
+        "t": "s",
+        "x": "graduates' choices "
+       },
+       {
+        "t": "t",
+        "x": "did not move in a uniform direction "
+       },
+       {
+        "t": "o",
+        "x": "from 2013 to 2018."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.64,
+      "matched": 14,
+      "wc": 22,
+      "keys": [
+       "did not move in a uniform direction"
+      ],
+      "cn": "该柱状图表明，2013 至 2018 年间毕业生去向的占比并未朝着相同方向变化。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The share of those entering employment declined from 68.1% to 60.7%, while the share of those pursuing further education climbed from 26.3% to 34.0%."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 24,
+      "keys": [
+       "declined from … to …, while … climbed from … to …"
+      ],
+      "cn": "就业比例从 68.1% 降至 60.7%，而升学比例从 26.3% 升至 34.0%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "By contrast, "
+       },
+       {
+        "t": "s",
+        "x": "the proportion of graduates starting a business rose slightly, "
+       },
+       {
+        "t": "t",
+        "x": "from "
+       },
+       {
+        "t": "s",
+        "x": "1.3% "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "s",
+        "x": "2.6%."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第3句",
+      "kind": "tpl",
+      "cov": 0.27,
+      "matched": 4,
+      "wc": 15,
+      "keys": [
+       "rose slightly"
+      ],
+      "cn": "相比之下，创业比例略有上升，从 1.3% 升至 2.6%。"
+     }
+    ]
+   },
+   {
+    "wc": 66,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "o",
+        "x": "data reflects "
+       },
+       {
+        "t": "t",
+        "x": "a "
+       },
+       {
+        "t": "o",
+        "x": "shift "
+       },
+       {
+        "t": "t",
+        "x": "in "
+       },
+       {
+        "t": "o",
+        "x": "graduates' view of post-university "
+       },
+       {
+        "t": "t",
+        "x": "life."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.36,
+      "matched": 4,
+      "wc": 11,
+      "keys": [
+       "a shift in graduates’ view of post-university life"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the one hand, as the job market becomes increasingly competitive, a higher degree is widely regarded as a way to secure an advantage."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 24,
+      "keys": [
+       "secure an advantage"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the other hand, with living standards improving, more families can afford to support further study, and the idea that one should earn a living as early as possible is changing."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 31,
+      "keys": [],
+      "cn": ""
+     }
+    ]
+   },
+   {
+    "wc": 42,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "For "
+       },
+       {
+        "t": "s",
+        "x": "graduates "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "o",
+        "x": "make sound decisions, "
+       },
+       {
+        "t": "t",
+        "x": "efforts from "
+       },
+       {
+        "t": "o",
+        "x": "both universities and students "
+       },
+       {
+        "t": "t",
+        "x": "are essential."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.43,
+      "matched": 6,
+      "wc": 14,
+      "keys": [],
+      "cn": "要使毕业生作出合理选择，需要高校与学生共同努力。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Universities "
+       },
+       {
+        "t": "t",
+        "x": "should "
+       },
+       {
+        "t": "o",
+        "x": "offer clearer career guidance, while students should "
+       },
+       {
+        "t": "t",
+        "x": "make well-informed choices in light of their own circumstances."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.56,
+      "matched": 10,
+      "wc": 18,
+      "keys": [],
+      "cn": "高校应提供更清晰的职业指导，学生也应结合自身情况作出理性选择。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Authorities should "
+       },
+       {
+        "t": "o",
+        "x": "also "
+       },
+       {
+        "t": "t",
+        "x": "create "
+       },
+       {
+        "t": "o",
+        "x": "more favourable "
+       },
+       {
+        "t": "t",
+        "x": "conditions "
+       },
+       {
+        "t": "o",
+        "x": "for young entrepreneurs."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.4,
+      "matched": 4,
+      "wc": 10,
+      "keys": [],
+      "cn": "有关部门也应为青年创业者创造更有利的条件。"
+     }
+    ]
+   }
+  ]
+ },
+ "2020": {
+  "wc": 170,
+  "paras": [
+   {
+    "wc": 54,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "pie "
+       },
+       {
+        "t": "t",
+        "x": "chart presents an uneven distribution among the "
+       },
+       {
+        "t": "s",
+        "x": "purposes of mobile reading among students at a certain university."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.42,
+      "matched": 8,
+      "wc": 19,
+      "keys": [],
+      "cn": "该饼图呈现了某高校学生手机阅读目的之间的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Gaining knowledge "
+       },
+       {
+        "t": "t",
+        "x": "accounts for the largest share, at "
+       },
+       {
+        "t": "o",
+        "x": "59.5%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 6,
+      "wc": 9,
+      "keys": [
+       "accounts for the largest share, at …%"
+      ],
+      "cn": "获取知识占比最大，达 59.5%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Killing time "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "obtaining information "
+       },
+       {
+        "t": "t",
+        "x": "form the middle group, representing "
+       },
+       {
+        "t": "s",
+        "x": "21.3% "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "17.0% "
+       },
+       {
+        "t": "t",
+        "x": "respectively."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第3句",
+      "kind": "tpl",
+      "cov": 0.57,
+      "matched": 8,
+      "wc": 14,
+      "keys": [
+       "form the middle group, representing …% and …% respectively"
+      ],
+      "cn": "消磨时间与获取信息处于中间位置，分别占 21.3% 和 17.0%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "other purposes "
+       },
+       {
+        "t": "t",
+        "x": "make up a relatively small "
+       },
+       {
+        "t": "o",
+        "x": "proportion "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "s",
+        "x": "2.2%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.58,
+      "matched": 7,
+      "wc": 12,
+      "keys": [
+       "make up a relatively small proportion of …%"
+      ],
+      "cn": "相比之下，其他目的占比很小，仅 2.2%。"
+     }
+    ]
+   },
+   {
+    "wc": 67,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "A few factors contribute to this trend."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 7,
+      "keys": [],
+      "cn": "若干因素促成了这一趋势。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "To begin with, as a nation with a booming digital economy, knowledge is increasingly available through mobile reading, which serves as a fast and convenient tool."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 26,
+      "keys": [],
+      "cn": "首先，在数字经济蓬勃发展的国家，知识越来越容易通过手机阅读获取，手机成为快速便捷的工具。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Moreover, the awareness of self-improvement has spread widely among university students who wish to stay competitive in the job market."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 20,
+      "keys": [
+       "stay competitive in the job market",
+       "the awareness of self-improvement"
+      ],
+      "cn": "此外，希望在就业市场保持竞争力的学生中，自我提升意识已广泛传播。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Seen in this light, "
+       },
+       {
+        "t": "o",
+        "x": "mobile reading has become "
+       },
+       {
+        "t": "t",
+        "x": "a natural "
+       },
+       {
+        "t": "o",
+        "x": "choice for campus "
+       },
+       {
+        "t": "t",
+        "x": "life."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.5,
+      "matched": 7,
+      "wc": 14,
+      "keys": [],
+      "cn": "由此可见，手机阅读已成为校园生活的自然选择。"
+     }
+    ]
+   },
+   {
+    "wc": 49,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For mobile reading to bring lasting benefits, students "
+       },
+       {
+        "t": "t",
+        "x": "should make well-informed choices in light of their own circumstances, ensuring that it genuinely contributes to their long-term development."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 18,
+      "wc": 27,
+      "keys": [],
+      "cn": "要使手机阅读带来长久收益，学生应结合自身情况作出理性选择，让它真正有利于自身长远发展。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "They should also set aside time for printed books and face-to-face communication, so that fragmented reading does not crowd out deeper thinking."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 22,
+      "keys": [],
+      "cn": "还应留出时间阅读纸质书、进行面对面交流，别让碎片化阅读挤占深度思考。"
+     }
+    ]
+   }
+  ]
+ },
+ "2021": {
+  "wc": 168,
+  "paras": [
+   {
+    "wc": 64,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart presents an uneven distribution among the "
+       },
+       {
+        "t": "s",
+        "x": "exercise methods chosen by residents in a certain city."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.44,
+      "matched": 8,
+      "wc": 18,
+      "keys": [],
+      "cn": "该柱状图呈现了某市居民锻炼方式之间的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Working out alone "
+       },
+       {
+        "t": "t",
+        "x": "accounts for the largest share, at "
+       },
+       {
+        "t": "o",
+        "x": "slightly over half of the respondents."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.4,
+      "matched": 6,
+      "wc": 15,
+      "keys": [
+       "accounts for the largest share, at slightly over half of the respondents"
+      ],
+      "cn": "独自锻炼占比最大，略超受访者半数。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Exercising with friends follows closely, representing 47.7%, while working out with family members accounts for 23.9%."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 16,
+      "keys": [
+       "follows closely, representing …%"
+      ],
+      "cn": "与朋友一起锻炼紧随其后，占 47.7%，与家人一起锻炼占 23.9%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "playing team sports makes "
+       },
+       {
+        "t": "t",
+        "x": "up a relatively small "
+       },
+       {
+        "t": "o",
+        "x": "proportion "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "s",
+        "x": "less than 16%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.4,
+      "matched": 6,
+      "wc": 15,
+      "keys": [],
+      "cn": "相比之下，参加团体活动占比很小，不足 16%。"
+     }
+    ]
+   },
+   {
+    "wc": 68,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "People "
+       },
+       {
+        "t": "o",
+        "x": "prefer "
+       },
+       {
+        "t": "t",
+        "x": "to exercise "
+       },
+       {
+        "t": "o",
+        "x": "alone primarily on account "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "o",
+        "x": "flexibility and convenience."
+       }
+      ],
+      "src": "体育健康类第二段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.33,
+      "matched": 4,
+      "wc": 12,
+      "keys": [
+       "on account of flexibility and convenience"
+      ],
+      "cn": "人们偏好独自锻炼，主要出于灵活与便利。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "In this way, they can go jogging anytime they want, without the need to make a plan with others in advance."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 21,
+      "keys": [],
+      "cn": "这样他们可以随时去跑步，无需提前与他人约定。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Furthermore, a wide range of fitness videos, apps and games have boosted the popularity of doing workouts at home."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 19,
+      "keys": [
+       "boosted the popularity of doing workouts at home"
+      ],
+      "cn": "此外，大量健身视频、应用与游戏也推动了居家独自锻炼的流行。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Seen in this light, the "
+       },
+       {
+        "t": "o",
+        "x": "popularity "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "s",
+        "x": "independent exercise "
+       },
+       {
+        "t": "t",
+        "x": "is a natural consequence of "
+       },
+       {
+        "t": "o",
+        "x": "changing lifestyles."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.69,
+      "matched": 11,
+      "wc": 16,
+      "keys": [],
+      "cn": "由此可见，独立锻炼的流行是生活方式变化的自然结果。"
+     }
+    ]
+   },
+   {
+    "wc": 36,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For physical exercise to bring lasting benefits, "
+       },
+       {
+        "t": "t",
+        "x": "individuals should make well-informed choices in light of their own circumstances, "
+       },
+       {
+        "t": "o",
+        "x": "while relevant authorities should provide more public sports facilities."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.41,
+      "matched": 11,
+      "wc": 27,
+      "keys": [
+       "public sports facilities"
+      ],
+      "cn": "要使体育锻炼带来长久收益，个人应结合自身情况作出理性选择，有关部门也应提供更多公共体育设施。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Communities should also organize more group activities for residents."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 9,
+      "keys": [],
+      "cn": "社区也应为居民组织更多集体活动。"
+     }
+    ]
+   }
+  ]
+ },
+ "2022": {
+  "wc": 171,
+  "paras": [
+   {
+    "wc": 65,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart shows that the "
+       },
+       {
+        "t": "o",
+        "x": "express delivery volumes "
+       },
+       {
+        "t": "t",
+        "x": "associated with the "
+       },
+       {
+        "t": "o",
+        "x": "whole country and rural areas rose steadily from 2018 to 2020."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.35,
+      "matched": 8,
+      "wc": 23,
+      "keys": [
+       "rose steadily from … to …"
+      ],
+      "cn": "该柱状图表明，2018 至 2020 年间全国与农村的快递业务量均持续上升。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "The national volume "
+       },
+       {
+        "t": "t",
+        "x": "climbed from "
+       },
+       {
+        "t": "s",
+        "x": "51 billion pieces "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "s",
+        "x": "83 billion pieces, "
+       },
+       {
+        "t": "t",
+        "x": "while "
+       },
+       {
+        "t": "s",
+        "x": "the rural volume "
+       },
+       {
+        "t": "t",
+        "x": "rose from "
+       },
+       {
+        "t": "s",
+        "x": "12 billion "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "s",
+        "x": "30 billion over the same span."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.26,
+      "matched": 7,
+      "wc": 27,
+      "keys": [],
+      "cn": "全国业务量从 510 亿件攀升至 830 亿件，农村同期从 120 亿件增至 300 亿件。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Although both moved "
+       },
+       {
+        "t": "t",
+        "x": "in the "
+       },
+       {
+        "t": "s",
+        "x": "same direction, the trend "
+       },
+       {
+        "t": "t",
+        "x": "is "
+       },
+       {
+        "t": "o",
+        "x": "particularly striking "
+       },
+       {
+        "t": "t",
+        "x": "in "
+       },
+       {
+        "t": "o",
+        "x": "rural areas."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.27,
+      "matched": 4,
+      "wc": 15,
+      "keys": [
+       "the trend is particularly striking"
+      ],
+      "cn": "二者虽同向变动，但农村地区的增长尤为显著。"
+     }
+    ]
+   },
+   {
+    "wc": 72,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "robust growth "
+       },
+       {
+        "t": "t",
+        "x": "is "
+       },
+       {
+        "t": "o",
+        "x": "closely tied "
+       },
+       {
+        "t": "t",
+        "x": "to the "
+       },
+       {
+        "t": "o",
+        "x": "e-commerce boom."
+       }
+      ],
+      "src": "校园类第二段（对应英语一品质类） · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.4,
+      "matched": 4,
+      "wc": 10,
+      "keys": [],
+      "cn": "这一强劲增长与电商繁荣密切相关。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "To be specific, as livestreaming e-commerce takes off, people are more inclined to purchase online, thereby giving impetus to the delivery business."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 22,
+      "keys": [
+       "as livestreaming e-commerce takes off"
+      ],
+      "cn": "具体而言，随着直播电商兴起，人们更倾向线上购物，从而推动快递业务发展。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Moreover, the government has made sustained efforts to improve infrastructure in the countryside, which paves the way for courier services to extend to the vast rural markets."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 27,
+      "keys": [
+       "paves the way for …"
+      ],
+      "cn": "此外，政府持续改善农村基础设施，为快递服务延伸到广阔的农村市场铺平了道路。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Seen in this light, the "
+       },
+       {
+        "t": "s",
+        "x": "surge "
+       },
+       {
+        "t": "t",
+        "x": "is a natural consequence of "
+       },
+       {
+        "t": "o",
+        "x": "economic change."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.77,
+      "matched": 10,
+      "wc": 13,
+      "keys": [],
+      "cn": "由此可见，这一激增是经济变化的自然结果。"
+     }
+    ]
+   },
+   {
+    "wc": 34,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For this trend to continue, both enterprises and authorities should act reasonably."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 12,
+      "keys": [],
+      "cn": "要使这一趋势延续，企业与政府都应理性行事。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Enterprises should improve efficiency and service quality, while authorities should keep upgrading rural logistics."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 14,
+      "keys": [],
+      "cn": "企业应提升效率与服务质量，政府则应持续升级农村物流。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Packaging and delivery should also be made greener."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 8,
+      "keys": [],
+      "cn": "包装与配送也应更绿色。"
+     }
+    ]
+   }
+  ]
+ },
+ "2023": {
+  "wc": 177,
+  "paras": [
+   {
+    "wc": 62,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The line chart shows that the "
+       },
+       {
+        "t": "o",
+        "x": "health literacy rate of Chinese residents rose steadily from 2012 to 2021."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.33,
+      "matched": 6,
+      "wc": 18,
+      "keys": [
+       "rose steadily from … to …",
+       "health literacy rate"
+      ],
+      "cn": "该折线图表明，2012 至 2021 年间中国居民健康素养水平持续上升。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "figure "
+       },
+       {
+        "t": "o",
+        "x": "climbed "
+       },
+       {
+        "t": "t",
+        "x": "from "
+       },
+       {
+        "t": "s",
+        "x": "8.80% in 2012 "
+       },
+       {
+        "t": "t",
+        "x": "to "
+       },
+       {
+        "t": "s",
+        "x": "25.40% in 2021, "
+       },
+       {
+        "t": "t",
+        "x": "showing a steady upward trend."
+       }
+      ],
+      "src": "动态图表第一段 · 功能句1",
+      "kind": "func",
+      "cov": 0.44,
+      "matched": 7,
+      "wc": 16,
+      "keys": [
+       "showing a steady upward trend"
+      ],
+      "cn": "该数值从 2012 年的 8.80% 攀升至 2021 年的 25.40%，呈现稳定上升趋势。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Notably, the year 2016 marked a watershed when the growth accelerated considerably."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 12,
+      "keys": [
+       "marked a watershed when the growth accelerated"
+      ],
+      "cn": "值得注意的是，2016 年是转折点，增速明显加快。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "figure "
+       },
+       {
+        "t": "t",
+        "x": "has "
+       },
+       {
+        "t": "o",
+        "x": "grown almost threefold within "
+       },
+       {
+        "t": "t",
+        "x": "a "
+       },
+       {
+        "t": "o",
+        "x": "decade, and "
+       },
+       {
+        "t": "t",
+        "x": "the "
+       },
+       {
+        "t": "s",
+        "x": "momentum has yet to fade."
+       }
+      ],
+      "src": "经济类第二段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.25,
+      "matched": 4,
+      "wc": 16,
+      "keys": [],
+      "cn": "这一数值十年间增长近两倍，势头仍未减弱。"
+     }
+    ]
+   },
+   {
+    "wc": 85,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "A few factors contribute to this progress."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 7,
+      "keys": [],
+      "cn": "若干因素促成了这一进步。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "To begin with, as general living standards and educational levels improve, residents become more aware of their health and start to seek various ways to stay healthy."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 27,
+      "keys": [],
+      "cn": "首先，随着整体生活水平与教育水平提高，居民健康意识增强，开始寻求多种保持健康的方式。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Secondly, the digitalization of many health services, such as online consultation and AI diagnosis, has enabled residents to gain easy and fast access to professional advice."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 26,
+      "keys": [
+       "gain easy and fast access to professional advice"
+      ],
+      "cn": "其次，在线问诊、AI 诊断等健康服务的数字化，使居民能够便捷快速地获得专业建议。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Moreover, government campaigns to promote public hygiene have also played a part."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 12,
+      "keys": [],
+      "cn": "此外，政府推动公共卫生的宣传活动也发挥了作用。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Finally, health education has been introduced into school curricula from an early age."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 13,
+      "keys": [],
+      "cn": "最后，健康教育已从小学阶段起进入课程体系。"
+     }
+    ]
+   },
+   {
+    "wc": 30,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For this trend to continue, both authorities and individuals should act reasonably."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 12,
+      "keys": [],
+      "cn": "要使这一趋势延续，政府与个人都应理性行事。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Authorities should keep improving medical services, while "
+       },
+       {
+        "t": "t",
+        "x": "individuals should make well-informed choices in light of their own circumstances."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.61,
+      "matched": 11,
+      "wc": 18,
+      "keys": [],
+      "cn": "政府应持续改善医疗服务，个人也应结合自身情况作出理性选择。"
+     }
+    ]
+   }
+  ]
+ },
+ "2024": {
+  "wc": 173,
+  "paras": [
+   {
+    "wc": 56,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart presents an uneven distribution among the "
+       },
+       {
+        "t": "s",
+        "x": "benefits students gained from labor practice courses at a certain university."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.4,
+      "matched": 8,
+      "wc": 20,
+      "keys": [],
+      "cn": "该柱状图呈现了某高校学生从劳动实践课中所得收获之间的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Gaining relevant knowledge "
+       },
+       {
+        "t": "t",
+        "x": "accounts for the largest share, at "
+       },
+       {
+        "t": "o",
+        "x": "91.3%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.6,
+      "matched": 6,
+      "wc": 10,
+      "keys": [
+       "accounts for the largest share, at …%"
+      ],
+      "cn": "获得相关知识占比最大，达 91.3%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Improving practical ability follows closely, representing 84.8%."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 7,
+      "keys": [
+       "follows closely, representing …%"
+      ],
+      "cn": "提升实践能力紧随其后，占 84.8%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "obtaining cheerful moods "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "enhancing cooperative ability "
+       },
+       {
+        "t": "t",
+        "x": "make up relatively small proportions of "
+       },
+       {
+        "t": "s",
+        "x": "54.4% "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "o",
+        "x": "32.6% respectively."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.53,
+      "matched": 10,
+      "wc": 19,
+      "keys": [
+       "make up relatively small proportions of …% and …% respectively"
+      ],
+      "cn": "相比之下，获得愉悦心情与增强合作能力占比相对较小，分别为 54.4% 和 32.6%。"
+     }
+    ]
+   },
+   {
+    "wc": 65,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The chart "
+       },
+       {
+        "t": "o",
+        "x": "reflects "
+       },
+       {
+        "t": "t",
+        "x": "the "
+       },
+       {
+        "t": "o",
+        "x": "university's tendency "
+       },
+       {
+        "t": "t",
+        "x": "in "
+       },
+       {
+        "t": "o",
+        "x": "course design to provide knowledge and foster practical ability."
+       }
+      ],
+      "src": "动态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.25,
+      "matched": 4,
+      "wc": 16,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "This can be attributed to the following aspects."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 8,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Firstly, the practical knowledge offered by the course enables students to better understand their interests and paves the way for their career development."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 23,
+      "keys": [
+       "paves the way for their career development"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Moreover, hands-on experience is highly valued in today's job market, which encourages students to focus on applicable skills."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 18,
+      "keys": [
+       "hands-on experience"
+      ],
+      "cn": ""
+     }
+    ]
+   },
+   {
+    "wc": 52,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For labor practice courses to play a greater role, universities "
+       },
+       {
+        "t": "t",
+        "x": "should "
+       },
+       {
+        "t": "o",
+        "x": "keep improving the curriculum, while students should "
+       },
+       {
+        "t": "t",
+        "x": "make well-informed choices in light of their own "
+       },
+       {
+        "t": "o",
+        "x": "needs."
+       }
+      ],
+      "src": "第三段 · 正面版 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.33,
+      "matched": 9,
+      "wc": 27,
+      "keys": [],
+      "cn": "要使劳动实践课发挥更大作用，高校应持续改进课程，学生也应结合自身需求作出理性选择。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Courses should also be linked more closely with local industries, so that what is learned in class can be put to use in real workplaces."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 25,
+      "keys": [],
+      "cn": "课程还应与本地产业更紧密衔接，让课堂所学能在真实岗位中用得上。"
+     }
+    ]
+   }
+  ]
+ },
+ "2025": {
+  "wc": 173,
+  "paras": [
+   {
+    "wc": 52,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart presents an uneven distribution among the "
+       },
+       {
+        "t": "s",
+        "x": "leisure activities of the elderly in a certain community."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.44,
+      "matched": 8,
+      "wc": 18,
+      "keys": [],
+      "cn": "该柱状图呈现了某社区老年人日常休闲活动之间的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Watching television "
+       },
+       {
+        "t": "t",
+        "x": "accounts for the largest share, at "
+       },
+       {
+        "t": "o",
+        "x": "90.8%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 6,
+      "wc": 9,
+      "keys": [
+       "accounts for the largest share, at …%"
+      ],
+      "cn": "看电视占比最大，达 90.8%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Taking walks follows closely, representing 68.3%."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 6,
+      "keys": [
+       "follows closely, representing …%"
+      ],
+      "cn": "散步紧随其后，占 68.3%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "planting flowers, reading "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "playing chess "
+       },
+       {
+        "t": "t",
+        "x": "make up relatively small proportions of "
+       },
+       {
+        "t": "s",
+        "x": "34.7%, 31.8% "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "o",
+        "x": "18.4% respectively."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.53,
+      "matched": 10,
+      "wc": 19,
+      "keys": [
+       "make up relatively small proportions of …, … and … respectively"
+      ],
+      "cn": "相比之下，养花、阅读与下棋占比相对较小，分别为 34.7%、31.8% 和 18.4%。"
+     }
+    ]
+   },
+   {
+    "wc": 68,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "The differences reflect the living conditions and needs of the elderly."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 11,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "First of all, watching television is an extremely convenient way to obtain information and enjoy entertainment, which explains why the vast majority choose it."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 24,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Secondly, walking is a low-intensity activity suitable for the elderly."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 10,
+      "keys": [
+       "a low-intensity activity suitable for the elderly"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Besides, although planting flowers, reading and playing chess occupy smaller shares, they still enrich the daily life of those who take them up."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 23,
+      "keys": [
+       "enrich the daily life"
+      ],
+      "cn": ""
+     }
+    ]
+   },
+   {
+    "wc": 53,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For the elderly to enjoy a better life, both communities and families should act reasonably."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 15,
+      "keys": [],
+      "cn": "要让老年人享有更好的生活，社区与家庭都应理性行事。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Communities should offer more recreational facilities, while families should care about the elderly's real needs."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 15,
+      "keys": [],
+      "cn": "社区应提供更多休闲设施，家庭应关心老年人的真实需求。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Families should care about the elderly’s real needs rather than simply keeping them entertained, and communities should organize activities suited to older residents."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 23,
+      "keys": [],
+      "cn": "家庭应关心老年人的真实需求，而不只是让他们有消遣；社区也应组织适合老年人的活动。"
+     }
+    ]
+   }
+  ]
+ },
+ "2026": {
+  "wc": 174,
+  "paras": [
+   {
+    "wc": 50,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The "
+       },
+       {
+        "t": "s",
+        "x": "bar "
+       },
+       {
+        "t": "t",
+        "x": "chart presents an uneven distribution among the "
+       },
+       {
+        "t": "s",
+        "x": "perceived benefits of children's outdoor activities."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.53,
+      "matched": 8,
+      "wc": 15,
+      "keys": [
+       "presents an uneven distribution among the perceived benefits of …"
+      ],
+      "cn": "该柱状图呈现了人们对儿童户外活动各项益处看法之间的不均衡分布。"
+     },
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "Satisfying curiosity "
+       },
+       {
+        "t": "t",
+        "x": "accounts for the largest share, at "
+       },
+       {
+        "t": "o",
+        "x": "54.6%."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.67,
+      "matched": 6,
+      "wc": 9,
+      "keys": [
+       "accounts for the largest share, at …%"
+      ],
+      "cn": "满足好奇心占比最大，达 54.6%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Enhancing observation skills follows closely, representing 54.5%."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 7,
+      "keys": [
+       "follows closely, representing …%"
+      ],
+      "cn": "促进观察力紧随其后，占 54.5%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "In contrast, "
+       },
+       {
+        "t": "s",
+        "x": "improving physical fitness "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "strengthening parent-child interaction "
+       },
+       {
+        "t": "t",
+        "x": "make up relatively "
+       },
+       {
+        "t": "o",
+        "x": "smaller "
+       },
+       {
+        "t": "t",
+        "x": "proportions of "
+       },
+       {
+        "t": "s",
+        "x": "37.2% "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "o",
+        "x": "33.2% respectively."
+       }
+      ],
+      "src": "静态图表第一段 · 模板第4句",
+      "kind": "tpl",
+      "cov": 0.47,
+      "matched": 9,
+      "wc": 19,
+      "keys": [],
+      "cn": "相比之下，强身健体与增强亲子互动占比相对较小，分别为 37.2% 和 33.2%。"
+     }
+    ]
+   },
+   {
+    "wc": 83,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "s",
+        "x": "The findings "
+       },
+       {
+        "t": "t",
+        "x": "are closely linked to rising public awareness of "
+       },
+       {
+        "t": "o",
+        "x": "children's all-round development."
+       }
+      ],
+      "src": "环境生态类第二段 · 模板第1句",
+      "kind": "tpl",
+      "cov": 0.62,
+      "matched": 8,
+      "wc": 13,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the one hand, the high value placed on curiosity and observation suggests that parents increasingly regard the outdoor world as a vivid classroom where children learn through discovery."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 29,
+      "keys": [
+       "regard … as a vivid classroom where children learn through discovery"
+      ],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "On the other hand, as daily life becomes more sedentary, outdoor activities serve as a practical way to build physical fitness and tighten family bonds."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 25,
+      "keys": [],
+      "cn": ""
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Seen in this light, the "
+       },
+       {
+        "t": "o",
+        "x": "pattern "
+       },
+       {
+        "t": "t",
+        "x": "of "
+       },
+       {
+        "t": "s",
+        "x": "opinions "
+       },
+       {
+        "t": "t",
+        "x": "is a natural consequence of "
+       },
+       {
+        "t": "o",
+        "x": "changing parenting ideas."
+       }
+      ],
+      "src": "经济类第二段 · 模板第5句",
+      "kind": "tpl",
+      "cov": 0.69,
+      "matched": 11,
+      "wc": 16,
+      "keys": [
+       "a natural consequence of changing parenting ideas"
+      ],
+      "cn": ""
+     }
+    ]
+   },
+   {
+    "wc": 41,
+    "sents": [
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "For children to benefit more from outdoor activities, both families and schools should act reasonably."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 15,
+      "keys": [],
+      "cn": "要让孩子从户外活动中获益更多，家庭与学校都应理性行事。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Families should set aside regular time for outdoor play, while schools should design more activity-based courses."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 16,
+      "keys": [],
+      "cn": "家庭应留出固定的户外活动时间，学校应设计更多以活动为主的课程。"
+     },
+     {
+      "spans": [
+       {
+        "t": "o",
+        "x": "Families should also set aside regular time for outdoor play."
+       }
+      ],
+      "src": "自写句（模板未覆盖）",
+      "kind": "own",
+      "cov": 0.0,
+      "matched": 0,
+      "wc": 10,
+      "keys": [],
+      "cn": "家庭还应留出固定的户外活动时间。"
+     }
+    ]
+   }
+  ]
+ }
+}
