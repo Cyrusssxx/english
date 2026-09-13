@@ -93,15 +93,202 @@ async function wrClearHl() {
     wrHlCount();
 }
 
-/** 事件委托：点模板行 / 功能句切换高亮（点按钮不触发） */
+/** 事件委托：点模板行 / 功能句切换高亮（点按钮不触发；点查词 span 不触发点亮） */
 function wrHlBind() {
     const c = document.getElementById('wrContent');
     if (!c) return;
     c.addEventListener('click', e => {
         if (e.target.closest('button')) return;
+        if (e.target.closest('.word')) return;   // 划词查词，不点亮
         const t = e.target.closest('.wr-line, .wr-sent, .wr-line-cn[data-k]');
         if (t) wrToggleHl(t);
     });
+}
+
+/* ==================== 划词查词：精翻页同款，词组优先 ==================== */
+let wrVocabSet = new Set();
+
+async function wrInitVocab() {
+    try {
+        const rows = await dbAll('vocab');
+        wrVocabSet = new Set((rows || []).map(r => r.word));
+    } catch (e) { /* IndexedDB 不可用时降级为空 */ }
+}
+
+/** 词组 token 匹配：精确相等或词形还原后相等（draws=draw） */
+function wrTokEq(tok, candWord) {
+    if (tok.low === candWord) return true;
+    if (typeof stemCandidates !== 'function') return false;
+    const cands = stemCandidates(candWord);
+    if (cands.includes(tok.low)) return true;
+    const lows = stemCandidates(tok.low);
+    return cands.some(c => lows.includes(c)) || cands.includes(tok.low) || lows.includes(candWord);
+}
+
+/** 非占位符文本的词组优先标注：词组（真题词组表）→ 词组 span；其余每个单词 → 词 span（全部可点查） */
+function wrAnnotatePlain(t) {
+    if (!t) return '';
+    if (typeof maxPhraseWords !== 'function' || maxPhraseWords() < 1 || typeof dictLookup !== 'function') {
+        return wrEsc(t);   // 词典未加载/为空：纯文本
+    }
+    const TOK = /[A-Za-z][A-Za-z'\-]*/g;
+    const toks = [];
+    let m;
+    while ((m = TOK.exec(t)) !== null) {
+        toks.push({ s: m.index, e: m.index + m[0].length, low: m[0].toLowerCase(), raw: m[0] });
+    }
+    let out = '', last = 0, i = 0;
+    while (i < toks.length) {
+        let matched = null;
+        const cands = phraseCandidates(toks[i].low);
+        if (cands) {
+            for (const c of cands) {                 // 候选已按 token 数降序 → 最长优先
+                const n = c.tokens.length;
+                if (i + n > toks.length) continue;
+                let ok = true;
+                for (let k = 1; k < n; k++) {
+                    if (!wrTokEq(toks[i + k], c.tokens[k])) { ok = false; break; }
+                    if (!/^[\s\-]*$/.test(t.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
+                }
+                if (ok) { matched = c; break; }
+            }
+        }
+        if (!matched) {                              // 首词未命中 → 词形还原后再试（draws out→draw out）
+            for (const stem of stemCandidates(toks[i].low)) {
+                const c2 = phraseCandidates(stem);
+                if (!c2) continue;
+                for (const c of c2) {
+                    const n = c.tokens.length;
+                    if (i + n > toks.length) continue;
+                    let ok = true;
+                    for (let k = 1; k < n; k++) {
+                        if (!wrTokEq(toks[i + k], c.tokens[k])) { ok = false; break; }
+                        if (!/^[\s\-]*$/.test(t.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
+                    }
+                    if (ok) { matched = c; break; }
+                }
+                if (matched) break;
+            }
+        }
+        if (matched) {
+            const n = matched.tokens.length;
+            const s0 = toks[i].s, e0 = toks[i + n - 1].e;
+            out += wrEsc(t.slice(last, s0));
+            out += `<span class="word phrase" data-w="${wrEsc(matched.key)}" data-ph="1">${wrEsc(t.slice(s0, e0))}</span>`;
+            last = e0;
+            i += n;
+        } else {
+            out += wrEsc(t.slice(last, toks[i].s));
+            out += `<span class="word" data-w="${wrEsc(toks[i].low)}">${wrEsc(toks[i].raw)}</span>`;
+            last = toks[i].e;
+            i++;
+        }
+    }
+    out += wrEsc(t.slice(last));
+    return out;
+}
+
+/** 划词标注入口：先按 {{占位符}} 切段（占位符只高亮不可点），段内做词组优先标注 */
+function wrAnnotate(text) {
+    if (!text) return '';
+    let out = '', last = 0;
+    const re = /\{\{(.+?)\}\}/g;
+    let m;
+    while ((m = re.exec(text)) !== null) {
+        out += wrAnnotatePlain(text.slice(last, m.index));
+        out += `<span class="wr-ph">${wrEsc(m[1])}</span>`;
+        last = m.index + m[0].length;
+    }
+    out += wrAnnotatePlain(text.slice(last));
+    return out;
+}
+
+/* ---- 释义弹卡（精翻页 word-pop 同款样式，自备定位与开关） ---- */
+let wrPopEl = null;
+
+function wrCloseWordPop() {
+    if (wrPopEl) { wrPopEl.remove(); wrPopEl = null; }
+}
+
+function wrOpenPop(targetEl, html) {
+    wrCloseWordPop();
+    wrPopEl = document.createElement('div');
+    wrPopEl.className = 'word-pop wr-pop-c';
+    wrPopEl.innerHTML = html;
+    document.body.appendChild(wrPopEl);
+    const r = targetEl.getBoundingClientRect();
+    const pw = wrPopEl.offsetWidth, ph = wrPopEl.offsetHeight;
+    let left = r.left + window.scrollX;
+    if (left + pw > window.scrollX + document.documentElement.clientWidth - 12) {
+        left = window.scrollX + document.documentElement.clientWidth - pw - 12;
+    }
+    let top = r.bottom + window.scrollY + 6;
+    if (top + ph > window.scrollY + document.documentElement.clientHeight - 12) {
+        top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
+    }
+    wrPopEl.style.left = left + 'px';
+    wrPopEl.style.top = top + 'px';
+}
+
+/** 点击词/词组：词组优先显示整组释义 + 组成词分释；单词显示词典释义；均可加入生词本 */
+function wrWordPop(el) {
+    const key = el.getAttribute('data-w') || '';
+    const isPhrase = el.getAttribute('data-ph') === '1';
+    let html = '';
+    if (isPhrase) {
+        const meaning = phraseLookup(key);
+        if (!meaning) return;
+        html += `<div class="wp-phrase">${wrEsc(key)}</div><div class="wp-meaning">${wrEsc(meaning)}</div>`;
+        html += key.split(/\s+/).map(w => {
+            const entry = dictLookup(w);
+            return `<div class="wpw"><span class="wpw-word word" data-w="${wrEsc(normWord(w))}">${wrEsc(w)}</span>` +
+                (entry ? `<span class="wpw-mean">${wrEsc(entry.t)}</span>` : `<span class="wpw-mean wpw-none">（离线无释义）</span>`) + `</div>`;
+        }).join('');
+    } else {
+        const entry = dictLookup(key);
+        html += `<span class="wp-word">${wrEsc(key)}</span><span class="wp-phonetic">${wrEsc(entry ? entry.p || '' : '')}</span>` +
+            `<div class="wp-meaning">${entry ? wrEsc(entry.t) : '（无离线释义）'}</div>`;
+    }
+    const inV = wrVocabSet.has(key);
+    html += `<button class="${inV ? 'added' : ''}" data-w="${wrEsc(key)}" onclick="wrAddVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`;
+    wrOpenPop(el, html);
+}
+
+/** 加入/移出生词本（例句 = 当前模板句） */
+async function wrAddVocab(btn) {
+    const word = btn.getAttribute('data-w');
+    if (!word) return;
+    try {
+        if (wrVocabSet.has(word)) {
+            await dbDelete('vocab', word);
+            wrVocabSet.delete(word);
+            btn.textContent = '+ 加入生词本';
+            btn.classList.remove('added');
+        } else {
+            const entry = dictLookup(word);
+            const card = btn.closest('.word-pop');
+            const exEn = card ? (card.getAttribute('data-ex') || '') : '';
+            await addVocab(word, entry ? entry.t : '', entry ? entry.p : '', '', '', exEn, '', getVocabTarget());
+            wrVocabSet.add(word);
+            btn.textContent = '已加入 ✓';
+            btn.classList.add('added');
+        }
+    } catch (e) { /* IndexedDB 不可用时静默 */ }
+}
+
+/** 全局委托：点词弹卡；点空白/其他区域关卡（卡内点击除外） */
+function wrWordBind() {
+    document.addEventListener('click', e => {
+        const w = e.target.closest('.word');
+        if (w && !e.target.closest('.wr-pop-c')) {
+            e.stopPropagation();
+            const line = w.closest('.wr-line, .wr-sent');
+            wrWordPop(w);
+            if (wrPopEl && line) wrPopEl.setAttribute('data-ex', line.textContent.replace(/\s+/g, ' ').trim());
+            return;
+        }
+        if (!e.target.closest('.wr-pop-c')) wrCloseWordPop();
+    }, true);   // 捕获阶段：先于 wrHlBind（冒泡）执行，stopPropagation 阻断点亮
 }
 
 /* ==================== ✨ 精句弹窗：本卡有用词组/短句（英中对照） ==================== */
@@ -110,7 +297,7 @@ function wrShowPhrases(secId) {
     if (!sec || !(sec.phrases || []).length) return;
     document.getElementById('wrPopTitle').textContent = (sec.title || '') + ' · 精句词组';
     document.getElementById('wrPopBody').innerHTML = sec.phrases.map(p =>
-        `<div class="wr-pop-row"><div class="wr-pop-en">${wrHl(p[0])}</div><div class="wr-pop-cn">${wrEsc(p[1])}</div></div>`).join('');
+        `<div class="wr-pop-row"><div class="wr-pop-en">${wrAnnotate(p[0])}</div><div class="wr-pop-cn">${wrEsc(p[1])}</div></div>`).join('');
     document.getElementById('wrPopMask').hidden = false;
     document.getElementById('wrPop').hidden = false;
 }
@@ -137,8 +324,10 @@ function wrRenderCards() {
     document.getElementById('wrContent').innerHTML = Object.keys(groups).map((gname, gi) => `
         <h2 class="wr-h2" id="wrGroup${gi}">${wrEsc(gname)}</h2>
         ${groups[gname].map(wrSectionCard).join('')}`).join('');
-    const st = document.getElementById('wrStructState');
-    if (st) st.textContent = wrStructOn() ? '开' : '关';
+    for (const id of ('wrStructState wrStructNavState').split(' ')) {
+        const st = document.getElementById(id);
+        if (st) st.textContent = wrStructOn() ? '开' : '关';
+    }
     wrHlRestore();
 }
 
@@ -154,8 +343,8 @@ function wrSplitCn(t) {
 }
 
 /** 英文按句拆行；中文句数对齐时逐句配对（同 data-k 联动高亮），不齐则整段；
- *  struct = 每句的片段标注（[[text, role], ...]），开启「结构染色」时行内染色 */
-const WR_ROLE_CLS = { t: 'sig-trunk', p: 'sig-trunk', o: 'sig-trunk', lead: 'sig-lead', trans: 'sig-trans', caus: 'sig-caus' };
+ *  struct = 每句的片段标注（[[text, role], ...]），开启「结构染色」时**划词式**染色（下划线着色，非色块） */
+const WR_ROLE_CLS = { t: 'wr-subj', p: 'wr-pred', o: 'wr-obj', lead: 'wr-lead', trans: 'wr-trans', caus: 'wr-caus' };
 const WR_STRUCT_KEY = 'wr_struct_on';
 
 function wrStructOn() { return localStorage.getItem(WR_STRUCT_KEY) !== '0'; }
@@ -164,11 +353,11 @@ function wrSentenceHtml(s, struct) {
     if (wrStructOn() && struct && struct.length) {
         return struct.map(seg => {
             const cls = WR_ROLE_CLS[seg[1]] || '';
-            const inner = wrHl(seg[0]);
+            const inner = wrAnnotate(seg[0]);
             return cls ? `<span class="${cls}">${inner}</span>` : inner;
         }).join('');
     }
-    return wrHl(s);
+    return wrAnnotate(s);
 }
 
 function wrTplBody(en, cn, struct) {
@@ -193,7 +382,7 @@ function wrCopyLines(btn) {
 function wrSectionCard(sec) {
     const sents = (sec.sentences || []).map((s, i) => `
         <li class="wr-sent" data-k="${wrEsc(s.en || '')}" title="点击点亮/取消">
-            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${wrHl(s.en)}</div>
+            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${wrAnnotate(s.en)}</div>
             <div class="wr-sent-cn">${wrEsc(s.cn)}</div>
         </li>`).join('');
 
@@ -382,6 +571,8 @@ async function initWriting() {
             `<p class="wr-loading">加载失败：${wrEsc(e.message)}</p>`;
         return;
     }
+    await Promise.all([loadDict(), loadPhrases()]);   // 离线词典 + 真题词组表（划词查词，词组优先）
+    wrInitVocab();                                     // 生词本集合（弹卡按钮状态）
     // 真题套用示范（按年份汇总，可空）
     let APPLY = {};
     try {
@@ -437,9 +628,10 @@ async function initWriting() {
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrHlBind(); initWriting(); });
+    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrHlBind(); wrWordBind(); initWriting(); });
 } else {
     wrTocBind();
     wrHlBind();
+    wrWordBind();
     initWriting();
 }

@@ -3728,3 +3728,36 @@ html.dark .wr-sent.hl { border-color: #6b5e2c; }
 .wr-pop-row:last-child { border-bottom: none; }
 .wr-pop-en { font-family: Georgia, "Times New Roman", serif; font-size: .9rem; line-height: 1.7; color: var(--text); }
 .wr-pop-cn { font-size: .8rem; color: var(--text-light); margin-top: 2px; line-height: 1.6; }
+
+/* ===== 作文模板：结构染色改「划词式」（文字着色 + 下划线，无色块背景） ===== */
+.wr-line .wr-subj {
+    color: #1d6fd0;
+    border-bottom: 2px solid rgba(29, 111, 208, .45);
+    font-weight: 600;
+}
+.wr-line .wr-pred {
+    color: #c2410c;
+    border-bottom: 2px solid rgba(194, 65, 12, .5);
+    font-weight: 600;
+}
+.wr-line .wr-obj {
+    color: #0b7c72;
+    border-bottom: 2px solid rgba(11, 124, 114, .45);
+}
+.wr-line .wr-lead { color: #b45309; border-bottom: 1px dashed rgba(180, 83, 9, .6); }
+.wr-line .wr-trans { color: #be123c; border-bottom: 1px dashed rgba(190, 18, 60, .55); }
+.wr-line .wr-caus { color: #3f6212; border-bottom: 1px dashed rgba(63, 98, 18, .55); }
+html.dark .wr-line .wr-subj { color: #8ec2ff; border-bottom-color: rgba(142, 194, 255, .5); }
+html.dark .wr-line .wr-pred { color: #fca37a; border-bottom-color: rgba(252, 163, 122, .5); }
+html.dark .wr-line .wr-obj { color: #5eead4; border-bottom-color: rgba(94, 234, 212, .45); }
+html.dark .wr-line .wr-lead { color: #fbbf24; border-bottom-color: rgba(251, 191, 36, .5); }
+html.dark .wr-line .wr-trans { color: #fb7185; border-bottom-color: rgba(251, 113, 133, .5); }
+html.dark .wr-line .wr-caus { color: #a3e635; border-bottom-color: rgba(163, 230, 53, .5); }
+
+/* 模板页划词查词：词组常显浅下划线（引导注意），单词 hover 才提示（复用全局 .word hover） */
+.wr-page .word.phrase, .wr-pop-c .word.phrase {
+    border-bottom: 2px solid rgba(29, 111, 208, .35);
+    padding-bottom: 1px;
+}
+.wr-pop-c { z-index: 320; }
+.wr-pop-c .wp-phrase { font-family: Georgia, "Times New Roman", serif; font-size: .95rem; color: var(--primary); font-weight: 700; margin-bottom: 3px; }

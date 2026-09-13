@@ -30,6 +30,9 @@
                 <a href="stats.html" class="nav-link">统计</a>
             </div>
             <div class="nav-tools">
+                <button class="nav-switch" id="wrStructNavBtn" onclick="wrToggleStruct()" title="模板句主干/信号词划词染色（主语蓝·谓语红·宾语绿）">
+                    染色 <span class="switch-state" id="wrStructNavState">开</span>
+                </button>
                 <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
                     夜间 <span class="switch-state" id="darkState">关</span>
                 </button>
@@ -90,6 +93,8 @@
     </div>
 
     <script src="js/common.js"></script>
+    <script src="js/dict.js"></script>
+    <script src="js/storage.js"></script>
     <script src="js/writing.js"></script>
 </body>
 </html>
