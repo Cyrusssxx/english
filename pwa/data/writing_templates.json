@@ -1,0 +1,170 @@
+{
+  "intro": {
+    "title": "考研英语二 · 作文模板库",
+    "desc": "大作文（图表作文）与小作文通用模板。模板正文保持原样，蓝色占位符按题目替换。核心用法：不要整段硬套——按题目结构从「功能句库」挑 2~4 句拼接，控制字数、自然过渡。",
+    "rules": [
+      "图表类型决定第一句：柱状 bar chart / 饼图 pie chart / 折线 line chart / 表格 table",
+      "事物个数决定选句：1 个事物用单句；2 个用对比句（while / By contrast）；3 个以上用分组句（form the middle group）",
+      "走势决定动词：同向上升用 rose / climbed；下降用 fell / declined；一升一降用 By contrast 转折；单线平稳用 plateaued / steady upward trend",
+      "第二段按话题选（经济 / 校园 / 环境 / 体育 / 文化），四句左右即可",
+      "第三段用正面或负面其一，主体词随题替换（政府 / 商家 / 学校 / 媒体）"
+    ]
+  },
+  "chart_guide": {
+    "title": "图表适配表（2007–2026 英语二大作文）",
+    "desc": "先认图表：动态图（有时间变化）用动态第一段；静态图（只比占例）用静态第一段。同一模板靠「换图名 + 选功能句」即可覆盖所有年份。",
+    "table": [
+      { "year": "2010", "chart": "柱状 bar", "items": 2, "trend": "都升，速度不同", "type": "动态", "hint": "发展中国家 vs 发达国家手机用户：While A rose from…, B climbed from…" },
+      { "year": "2011", "chart": "柱状 bar", "items": 3, "trend": "有升有降", "type": "动态", "hint": "国产/日系/美系份额：A rose while B and C fell" },
+      { "year": "2012", "chart": "柱状 bar", "items": 4, "trend": "分布比高低", "type": "静态", "hint": "不同年龄段满意度：用 accounts for / the largest share" },
+      { "year": "2013", "chart": "柱状 bar", "items": 1, "trend": "单值逐年上升", "type": "动态", "hint": "兼职比例上升：只写一条上升线，配 steady upward trend" },
+      { "year": "2014", "chart": "柱状 bar", "items": 2, "trend": "一升一降", "type": "动态", "hint": "城乡人口：A climbed…, while B fell…（By contrast）" },
+      { "year": "2015", "chart": "饼图 pie", "items": 5, "trend": "占比分布", "type": "静态", "hint": "春节花销比例：largest share / middle group / small proportions" },
+      { "year": "2016", "chart": "饼图 pie", "items": 5, "trend": "占比分布", "type": "静态", "hint": "旅游目的占比：ditto" },
+      { "year": "2017", "chart": "折线 line", "items": 2, "trend": "都升", "type": "动态", "hint": "博物馆数量与参观人数：both rose steadily" },
+      { "year": "2018", "chart": "饼图 pie", "items": 4, "trend": "占比分布", "type": "静态", "hint": "选餐厅关注因素：ditto" },
+      { "year": "2019", "chart": "柱状 bar", "items": 3, "trend": "两年对比变化", "type": "动态", "hint": "就业/升学/创业去向：A rose while B fell" },
+      { "year": "2020", "chart": "饼图 pie", "items": 4, "trend": "占比分布", "type": "静态", "hint": "手机阅读目的：ditto" },
+      { "year": "2021", "chart": "柱状 bar", "items": 4, "trend": "占比分布", "type": "静态", "hint": "锻炼方式：独自超半数（largest share）" },
+      { "year": "2022", "chart": "柱状 bar", "items": 2, "trend": "都升，幅度不同", "type": "动态", "hint": "快递业务量（总体 vs 农村）：While A rose from…, B climbed from…" },
+      { "year": "2023", "chart": "折线 line", "items": 1, "trend": "单线持续升", "type": "动态", "hint": "居民健康素养：一条线 + steady upward trend / plateaued" },
+      { "year": "2024", "chart": "柱状 bar", "items": 4, "trend": "占比分布", "type": "静态", "hint": "劳动实践课收获：ditto" },
+      { "year": "2025", "chart": "柱形 bar", "items": 5, "trend": "占比分布", "type": "静态", "hint": "老年人休闲活动：ditto" },
+      { "year": "2026", "chart": "待确认", "items": 0, "trend": "", "type": "", "hint": "" }
+    ],
+    "decisions": [
+      {
+        "k": "事物个数 = 1",
+        "v": "只写一句主体句 + 一句趋势句（如 From…to…, X rose from…to…, showing a steady upward trend.）。不要硬凑对比句。"
+      },
+      {
+        "k": "事物个数 = 2",
+        "v": "用对比结构：While B holds…, A takes…；或 A rose from…, while B climbed from…（同向）；一升一降则 A climbed…, while B fell… 后接 By contrast。"
+      },
+      {
+        "k": "事物个数 ≥ 3",
+        "v": "分组写法：最大项 accounts for the largest share at…，中间组 form the middle group, representing…, respectively，其余 make up relatively small proportions。"
+      },
+      {
+        "k": "走势 = 都升（速度不同）",
+        "v": "两事物各用 rose/climbed，加 while 表同向并列，末句用 both showed an upward trend 收束。"
+      },
+      {
+        "k": "走势 = 有升有降",
+        "v": "升用 rose/climbed，降用 fell/declined，衔接用 By contrast / while；切勿把下降写成上升。"
+      },
+      {
+        "k": "走势 = 单线持续升",
+        "v": "单主体句 + plateaued around…（增速放缓）/ steady upward trend（持续上升）/ outpaced earlier gains（加速）。"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "chart_static",
+      "group": "大作文 · 第一段（图表描述）",
+      "title": "静态图表第一段",
+      "subtitle": "适用：饼图 / 柱状图中各类别的占比分布（只比比例，无时间变化）",
+      "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}. {{事物1}} accounts for the largest share, at {{百分比1}}. {{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively. In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
+      "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。{{事物1}} 所占比例最大，达到 {{百分比1}}。{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+      "note": "chart 处按图型填 pie / bar；自行挑选几句、控制字数，不必全写。",
+      "sentences": [
+        { "en": "As for {{事物1}}, it accounts for {{百分比1}}.", "cn": "就 {{事物1}} 而言，占比为 {{百分比1}}。" },
+        { "en": "Turning to {{事物1}}, it makes up {{百分比1}} of the total.", "cn": "看 {{事物1}}，其占整体的 {{百分比1}}。" },
+        { "en": "Regarding {{事物1}}, the share stands at {{百分比1}}.", "cn": "关于 {{事物1}}，占比为 {{百分比1}}。" },
+        { "en": "For {{事物1}}, the proportion is {{百分比1}}.", "cn": "{{事物1}} 的比例为 {{百分比1}}。" },
+        { "en": "In the case of {{事物1}}, the slice reaches {{百分比1}}.", "cn": "{{事物1}} 的扇区达到 {{百分比1}}。" },
+        { "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.", "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。" },
+        { "en": "Compared with {{事物2}} at {{百分比2}}, {{事物1}} comes in at {{百分比1}}.", "cn": "与处于 {{百分比2}} 的 {{事物2}} 相比，{{事物1}} 为 {{百分比1}}。" },
+        { "en": "While {{事物2}} holds {{百分比2}}, {{事物1}} takes {{百分比1}}.", "cn": "{{事物2}} 占 {{百分比2}}，而 {{事物1}} 为 {{百分比1}}。" },
+        { "en": "{{事物1}} accounts for {{百分比1}}, whereas {{事物3}} posts {{百分比3}}.", "cn": "{{事物1}} 占 {{百分比1}}，而 {{事物3}} 为 {{百分比3}}。" },
+        { "en": "{{事物1}} and {{事物2}} together make up {{百分比合计}}, with individual shares of {{百分比1}} and {{百分比2}}.", "cn": "{{事物1}} 与 {{事物2}} 合计为 {{百分比合计}}，单项占比分别为 {{百分比1}} 与 {{百分比2}}。" }
+      ],
+      "tips": [
+        "换词能力靠积累：后续可直接用翻译软件查词替换，不必死记。",
+        "图型英文先记住：柱状 bar chart、饼图 pie chart、折线 line chart、表格 table——把首句 This chart 改成 This xx chart。"
+      ]
+    },
+    {
+      "id": "chart_dynamic",
+      "group": "大作文 · 第一段（图表描述）",
+      "title": "动态图表第一段",
+      "subtitle": "适用：折线 / 柱状图中事物随时间变化（有起始年—终止年）",
+      "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented. {{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}. By contrast, {{事物3}} fell from {{数字5}} in {{时间5}} to {{数字6}} in {{时间6}}.",
+      "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。相比之下，{{事物3}} 由 {{时间5}} 的 {{数字5}} 下降至 {{时间6}} 的 {{数字6}}。",
+      "note": "若所有事物同向，去掉 did not move in a uniform direction 改为 showed a similar upward/downward trend；只用 2 个事物时删去 By contrast 那句。",
+      "sentences": [
+        { "en": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.", "cn": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。" },
+        { "en": "Over the same span, {{事物2}} fell from {{数字3}} to {{数字4}}, indicating a clear decline.", "cn": "同一时期，{{事物2}} 由 {{数字3}} 降至 {{数字4}}，表明明显下滑。" },
+        { "en": "By {{时间2}}, {{事物3}} plateaued around {{数字5}}, and its growth slowed and stabilized.", "cn": "到 {{时间2}} 时，{{事物3}} 在 {{数字5}} 附近进入平台期，其增速放缓并趋于稳定。" },
+        { "en": "After {{时间1}}, {{事物1}} accelerated, and the increase from {{数字1}} to {{数字2}} outpaced earlier gains.", "cn": "{{时间1}} 之后，{{事物1}} 出现加速，从 {{数字1}} 到 {{数字2}} 的增幅超过此前增幅。" },
+        { "en": "Volatility increased for {{事物3}}, swings widened around {{数字区间}}, and short-term fluctuations became frequent.", "cn": "{{事物3}} 的波动性上升，在 {{数字区间}} 附近的振幅加大，短期起伏变得更为频繁。" }
+      ],
+      "tips": [
+        "同向专用词组：in a uniform direction（朝同一方向）、during the periods presented（在相应时期）。",
+        "两事物同向但速度不同：用 while 连接两个 rose/climbed 即可，无需 By contrast。"
+      ]
+    },
+    {
+      "id": "para2_economy",
+      "group": "大作文 · 第二段（原因分析）",
+      "title": "经济类第二段",
+      "subtitle": "最热门话题：经济基础决定上层建筑，最容易与「国家发展、生活改善」挂钩",
+      "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life. Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living. Consequently, {{题目相关词}} has gradually become integrated into everyday life, while its practical value has gained wider recognition. Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
+      "cn": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。{{题目相关词}} 因此逐渐融入日常生活，其实际作用也得到更多认可。由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
+      "note": "示例套用（2014 城乡人口）：城乡人口变化之所以受到越来越多关注，是因为它能够反映人们在经济发展中的生活选择……城镇化因此逐渐融入国家发展进程。",
+      "sentences": []
+    },
+    {
+      "id": "para2_campus",
+      "group": "大作文 · 第二段（原因分析）",
+      "title": "校园类第二段（对应英语一品质类）",
+      "subtitle": "含正面 / 负面两版，改几个词即可通用",
+      "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. {{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. In this process, individuals gradually become less dependent on external reminders and begin to take responsibility for their own choices. Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+      "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。在这一过程中，个人会逐步减少对外界提醒的依赖，并开始主动为自己的选择负责。最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+      "negative_en": "The harmful influence of {{题目相关词}} is not confined to a single action; rather, it can continue to disrupt the way individuals handle everyday responsibilities. {{题目相关词}} can cause individuals to approach routine tasks with less commitment, making them more likely to give up when temporary difficulties arise. In this process, individuals may become increasingly dependent on external reminders and less willing to take responsibility for their own choices. Ultimately, {{题目相关词}} can not only undermine individuals' present conduct but also weaken their capacity for self-management, thereby creating a persistent obstacle to future growth.",
+      "negative_cn": "{{题目相关词}} 的消极影响，并不会局限于某一次行为，而会持续干扰个人处理日常事务的方式。{{题目相关词}} 可能使个人以敷衍的态度处理日常任务，并在遇到暂时困难时轻易放弃。在这一过程中，个人可能越来越依赖外界提醒，也更不愿意为自己的选择负责。最终，{{题目相关词}} 不仅会损害个人当下的行为表现，也会削弱其自我管理能力，从而长期阻碍个人成长。"
+    },
+    {
+      "id": "para2_env",
+      "group": "大作文 · 第二段（原因分析）",
+      "title": "环境生态类第二段",
+      "subtitle": "也可归入校园类，改几个词即可",
+      "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of environmental protection and increasingly favorable conditions for environmental action. Improved environmental infrastructure makes it easier for people to participate in environmental protection, while a wider range of environmental practices enables different groups to make choices suited to their own circumstances. As environmental protection becomes increasingly integrated into everyday life, the number of people willing to take part in related initiatives will continue to grow. For this reason, {{题目相关词}} not only reflects the continued advancement of ecological conservation but also demonstrates the growing acceptance of green living.",
+      "cn": "{{题目相关词}} 所反映的变化，与公众环保意识的提高和公共环境条件的改善密切相关。更加完善的环保设施为人们参与环境保护提供了便利，而多样化的环保方式也使不同群体能够根据自身情况作出选择。随着环境保护逐渐融入日常生活，愿意参与相关行动的人数也会不断增加。正因如此，{{题目相关词}} 不仅体现了生态文明建设的持续推进，也说明绿色生活正在得到更加广泛的认可。"
+    },
+    {
+      "id": "para2_sports",
+      "group": "大作文 · 第二段（原因分析）",
+      "title": "体育健康类第二段",
+      "subtitle": "环境生态类换词即用（这就是换词应万变）",
+      "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise. Improved sports infrastructure makes it easier for people to participate in physical exercise, while a wider range of exercise methods enables different groups to make choices suited to their own circumstances. As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow. For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
+      "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。"
+    },
+    {
+      "id": "para2_culture",
+      "group": "大作文 · 第二段（原因分析）",
+      "title": "文化自信类第二段",
+      "subtitle": "与经济类思路类似",
+      "en": "Traditional culture cannot be effectively conveyed through the one-way delivery of content alone; its modes of expression must also be adjusted in response to real-world feedback. {{题目相关词}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity. Public participation can also give rise to new forms of cultural expression, enabling traditional culture to adapt to social change while preserving its core values. Seen from this perspective, {{题目相关词}} not only enhances the effectiveness of cultural transmission but also strengthens traditional culture's capacity to remain relevant to contemporary life.",
+      "cn": "传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。{{题目相关词}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。由此可见，{{题目相关词}} 不仅提高了文化传播的效果，也增强了传统文化适应当代生活的能力。"
+    },
+    {
+      "id": "para3_positive",
+      "group": "大作文 · 第三段（总结建议）",
+      "title": "第三段 · 正面版",
+      "subtitle": "经济 / 校园 / 环境 / 体育 / 文化通用；主体词随题替换（政府 / 商家 / 学校 / 媒体）",
+      "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role. Media organizations should present the practical value of {{题目相关词}} objectively, thereby helping the public develop a sound understanding of {{题目相关词}}. Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+      "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。媒体应客观介绍其实际价值，帮助公众形成正确认识。个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+      "note": "套用示例（2016 英语一）：要使父母以身作则持续为孩子成长带来积极影响，需要家庭与学校共同配合。学校应提供适当指导……父母也应结合孩子特点作出正确示范。"
+    },
+    {
+      "id": "para3_negative",
+      "group": "大作文 · 第三段（总结建议）",
+      "title": "第三段 · 负面版",
+      "subtitle": "题目涉及危害 / 消极影响时使用",
+      "en": "For the harmful effects of {{题目相关词}} on personal growth to be effectively contained, concerted efforts across society are essential. Relevant authorities should strengthen regulatory oversight and keep {{题目相关词}} within clear and reasonable limits. Media organizations should present the potential risks of {{题目相关词}} objectively, thereby helping the public develop a sound understanding of {{题目相关词}}. Individuals should also remain vigilant in light of their own circumstances and guard against any threat that {{题目相关词}} may pose to their long-term development.",
+      "cn": "要使 {{题目相关词}} 对个人成长造成的消极影响得到有效控制，需要社会各方共同努力。有关部门应加强必要监管，将 {{题目相关词}} 限制在明确而合理的范围内。媒体应客观介绍其潜在风险，帮助公众形成正确认识。个人也应结合自身情况保持警惕，防范 {{题目相关词}} 对自身长期发展造成威胁。"
+    }
+  ]
+}

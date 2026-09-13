@@ -3117,3 +3117,101 @@ html.dark .q-tip {
 /* 详细解析换行排版 */
 .q-expl { white-space: pre-line; }
 .expl-body { white-space: pre-line; }
+
+/* ===== 作文模板库（写作模块） ===== */
+.wr-page { width: 100%; max-width: 1080px; margin: 0 auto; box-sizing: border-box; padding: 16px 14px 80px; }
+.wr-title { font-size: 1.35rem; margin: 4px 0 8px; color: var(--text); }
+.wr-desc { color: var(--text-light); font-size: .88rem; line-height: 1.75; margin: 0 0 12px; }
+.wr-rules { background: var(--card); border: 1px solid var(--border); border-left: 5px solid var(--primary); border-radius: 10px; padding: 12px 16px; margin-bottom: 20px; }
+.wr-rule { display: flex; gap: 9px; align-items: flex-start; color: var(--text); font-size: .87rem; line-height: 1.65; padding: 3px 0; }
+.wr-rule-no {
+    flex: 0 0 auto; width: 18px; height: 18px; border-radius: 50%;
+    background: var(--primary); color: #fff; font-size: .68rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; margin-top: 3px;
+}
+.wr-h2 { font-size: 1.1rem; color: var(--text); margin: 26px 0 12px; padding-left: 11px; border-left: 4px solid var(--primary); }
+.wr-h3 { font-size: .98rem; color: var(--text); margin: 20px 0 10px; }
+.wr-note { color: var(--text-light); font-size: .84rem; line-height: 1.7; margin: 0 0 12px; }
+
+/* 图表适配表 */
+.wr-block { margin-bottom: 8px; }
+.wr-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--card); }
+.wr-table { border-collapse: collapse; width: 100%; min-width: 680px; font-size: .84rem; }
+.wr-table th, .wr-table td { border-bottom: 1px solid var(--border); padding: 7px 10px; text-align: left; vertical-align: top; line-height: 1.6; }
+.wr-table th { background: var(--primary-soft); color: var(--primary-dark); font-weight: 700; white-space: nowrap; font-size: .78rem; }
+.wr-table tbody tr:last-child td { border-bottom: none; }
+.wr-table tbody tr:nth-child(even) td { background: rgba(128,128,128,.03); }
+.wr-t-year { font-weight: 700; color: var(--primary); white-space: nowrap; }
+.wr-t-num { text-align: center; font-variant-numeric: tabular-nums; }
+.wr-t-hint { color: var(--text-light); font-size: .8rem; }
+.wr-type { display: inline-block; font-size: .7rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+.wr-type-dyn { background: rgba(13,148,136,.14); color: #0b7c72; }
+.wr-type-sta { background: rgba(139,92,246,.14); color: #6d47c9; }
+.dark .wr-type-dyn { background: rgba(45,212,191,.16); color: #5eead4; }
+.dark .wr-type-sta { background: rgba(167,139,250,.16); color: #c4b5fd; }
+
+/* 选句决策 */
+.wr-decisions { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; margin-top: 6px; }
+.wr-decision { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 11px 14px; }
+.wr-decision-k { font-size: .86rem; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+.wr-decision-v { font-size: .84rem; color: var(--text); line-height: 1.7; }
+
+/* 模板卡片 */
+.wr-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 18px; margin-bottom: 16px;
+}
+.wr-card-head { margin-bottom: 12px; padding-bottom: 10px; border-bottom: 2px solid var(--primary-soft); }
+.wr-card-title { margin: 0 0 4px; font-size: 1.04rem; color: var(--text); }
+.wr-card-sub { font-size: .82rem; color: var(--text-light); line-height: 1.6; }
+
+.wr-tpl { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; }
+.wr-tpl-neg { border-left: 3px solid #c2410c; }
+.wr-tpl-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.wr-tpl-tag { font-size: .72rem; font-weight: 700; color: var(--primary); letter-spacing: .04em; }
+.wr-tag-neg { color: #c2410c; }
+.dark .wr-tag-neg { color: #fb923c; }
+.wr-copy {
+    border: 1px solid var(--border); background: var(--card); color: var(--text-light);
+    font: inherit; font-size: .74rem; padding: 2px 10px; border-radius: 999px; cursor: pointer;
+    transition: border-color .15s, color .15s;
+}
+.wr-copy:hover { border-color: var(--primary); color: var(--primary); }
+.wr-en { font-family: Georgia, "Times New Roman", serif; font-size: .95rem; line-height: 1.95; color: var(--text); }
+.wr-cn { font-size: .86rem; line-height: 1.85; color: var(--text-light); margin-top: 9px; padding-top: 9px; border-top: 1px dashed var(--border); }
+
+/* 占位符高亮 */
+.wr-ph {
+    color: #1d6fd0; font-weight: 600;
+    background: rgba(29,111,208,.09); border-radius: 3px; padding: 0 2px;
+}
+.dark .wr-ph { color: #7cc0ff; background: rgba(124,192,255,.13); }
+
+/* 功能句列表 */
+.wr-sents { margin-top: 4px; }
+.wr-sents-title { font-size: .84rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+.wr-sent-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.wr-sent { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 9px 12px; }
+.wr-sent-en { font-family: Georgia, "Times New Roman", serif; font-size: .9rem; line-height: 1.8; color: var(--text); display: flex; gap: 8px; }
+.wr-sent-no {
+    flex: 0 0 auto; width: 17px; height: 17px; border-radius: 4px; margin-top: 2px;
+    background: var(--primary-soft); color: var(--primary-dark);
+    font-size: .68rem; font-weight: 700; font-family: inherit;
+    display: flex; align-items: center; justify-content: center;
+}
+.wr-sent-cn { font-size: .82rem; color: var(--text-light); line-height: 1.7; margin-top: 3px; padding-left: 25px; }
+
+.wr-note-inline {
+    margin-top: 10px; padding: 9px 12px; border-radius: 8px;
+    background: var(--primary-soft); color: var(--text); font-size: .83rem; line-height: 1.75;
+}
+.wr-tips { margin: 10px 0 0; padding-left: 20px; }
+.wr-tips li { color: var(--text-light); font-size: .82rem; line-height: 1.7; margin: 3px 0; }
+.wr-loading { color: var(--text-light); }
+
+@media (max-width: 640px) {
+    .wr-page { padding: 12px 10px 64px; }
+    .wr-decisions { grid-template-columns: 1fr; }
+    .wr-en { font-size: .9rem; }
+    .wr-table { min-width: 560px; font-size: .8rem; }
+}

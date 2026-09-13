@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>熟词短语 - 英语真题精翻</title>
+    <title>作文模板 - 英语真题精翻</title>
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#0d9488">
     <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
@@ -24,8 +24,8 @@
                 <a href="mindmap.html" class="nav-link">方法导图</a>
                 <a href="nearmap.html" class="nav-link">近义词</a>
                 <a href="wordnotes.html" class="nav-link">熟词僻义</a>
-                <a href="phrasebook.html" class="nav-link active">熟词短语</a>
-                <a href="writing.html" class="nav-link">作文模板</a>
+                <a href="phrasebook.html" class="nav-link">熟词短语</a>
+                <a href="writing.html" class="nav-link active">作文模板</a>
                 <a href="mistakes.html" class="nav-link">错题本</a>
                 <a href="stats.html" class="nav-link">统计</a>
             </div>
@@ -37,19 +37,30 @@
         </div>
     </nav>
 
-    <main class="ph-page">
-        <h1 class="wn-title">熟词短语</h1>
-        <p class="wn-hint">
-            由<b>熟词构成、且字面义 ≠ 实际义</b>的真题短语（阅读 / 完形 / 新题型 / 翻译全覆盖），按<b>出处文章主题</b>分成 5 类。<br>
-            <b>释义</b>为该短语在真题句中的实际含义，<b>原句</b>即出处（句下为官方译文与来源）。译文只采信「英语二 2010+」的可靠逐句译文。
-        </p>
-        <div class="wn-bar" id="phYears"></div>
-        <input id="phSearch" class="wn-search" type="search" placeholder="搜索短语 / 释义（如 bull run、破产）">
-        <div class="wn-count" id="phCount"></div>
-        <div id="phContent"><p style="color:var(--text-light)">加载中…</p></div>
+    <main class="wr-page">
+        <h1 class="wr-title" id="wrTitle">作文模板库</h1>
+        <p class="wr-desc" id="wrDesc"></p>
+        <div class="wr-rules" id="wrRules"></div>
+
+        <!-- 图表适配表 -->
+        <section class="wr-block" id="wrGuideBlock">
+            <h2 class="wr-h2" id="wrGuideTitle"></h2>
+            <p class="wr-note" id="wrGuideDesc"></p>
+            <div class="wr-table-wrap">
+                <table class="wr-table" id="wrChartTable">
+                    <thead><tr><th>年份</th><th>图表</th><th>事物数</th><th>走势特征</th><th>类型</th><th>套用要点</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <h3 class="wr-h3">选句决策（按结构挑句，而非整段硬套）</h3>
+            <div class="wr-decisions" id="wrDecisions"></div>
+        </section>
+
+        <!-- 模板分区 -->
+        <div id="wrContent"><p class="wr-loading">加载中…</p></div>
     </main>
 
     <script src="js/common.js"></script>
-    <script src="js/phrasebook.js"></script>
+    <script src="js/writing.js"></script>
 </body>
 </html>
