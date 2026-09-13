@@ -1,5 +1,12 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-14 优化] 作文模板划词：排除高频功能词，只留实词与词组
+
+- 模板句/功能句/精句的划词标注新增 `WR_STOP` 高频功能词集合（the/a/an/and/or/while/that 等 130+ 个），单独出现时不再生成可点 span，避免误触。
+- **词组不受影响**：词组匹配先于单词判断，`in contrast` / `associated with` / `stems from` 等仍整组命中可点（76 处不变）；单独出现的转折词 while 等改由结构染色（wr-trans 虚线）承担信号提示。
+- 可点词 684 → 452，误触率大降；实词（presents/distribution/individuals…）照常可点弹卡。
+- jsdom 验证：the/a/and/while 均不可点、实词可点、词组 76 处完整、词组弹卡正常、文本无遗漏。SW en2-9c1d2b44。
+
 ## [2026-09-14 优化] 作文模板：header 染色开关 + 结构染色改「划词式」+ 精翻划词查词引入（词组优先）
 
 - **header 染色开关**：顶部导航栏新增「染色 开/关」（`wrStructNavState`），与工具条开关双向同步（`wrRenderCards` 统一更新两处状态）。

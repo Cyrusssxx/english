@@ -125,6 +125,13 @@ function wrTokEq(tok, candWord) {
     return cands.some(c => lows.includes(c)) || cands.includes(tok.low) || lows.includes(candWord);
 }
 
+/** 高频功能词：单独出现时不进入划词（词组命中不受影响，仍整体可点） */
+const WR_STOP = new Set(('a an the and or of in on to from with by as at for while that this these those it its is are was were be been being ' +
+    'their they them we our you your him her his not no nor but so if then than when which who whom whose what where how ' +
+    'will would can could shall should may might must do does did have has had more most less least very just only also too ' +
+    'there here such own one two three over under between among about against during through across after before because ' +
+    'although though since until unless whether either neither both each every any some all').split(' '));
+
 /** 非占位符文本的词组优先标注：词组（真题词组表）→ 词组 span；其余每个单词 → 词 span（全部可点查） */
 function wrAnnotatePlain(t) {
     if (!t) return '';
@@ -177,11 +184,13 @@ function wrAnnotatePlain(t) {
             out += `<span class="word phrase" data-w="${wrEsc(matched.key)}" data-ph="1">${wrEsc(t.slice(s0, e0))}</span>`;
             last = e0;
             i += n;
-        } else {
+        } else if (!WR_STOP.has(toks[i].low)) {
             out += wrEsc(t.slice(last, toks[i].s));
             out += `<span class="word" data-w="${wrEsc(toks[i].low)}">${wrEsc(toks[i].raw)}</span>`;
             last = toks[i].e;
             i++;
+        } else {
+            i++;   // 高频功能词：跳过不标（词组命中的整组不受影响）
         }
     }
     out += wrEsc(t.slice(last));
