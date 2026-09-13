@@ -3378,3 +3378,37 @@ body.wr-toc-folded .wr-toc-tab { display: inline-flex; }
     border-bottom: 1px solid var(--border);
 }
 .wr-t-hint { min-width: 250px; }
+
+/* ===== 熟词短语页：写作句式交叉索引 ===== */
+.ph-freq {
+    display: inline-block; margin-left: 8px; vertical-align: middle;
+    font-size: .66rem; font-weight: 700; font-family: inherit;
+    color: #b45309; background: rgba(245,158,11,.16);
+    border-radius: 999px; padding: 1px 8px; white-space: nowrap;
+}
+.dark .ph-freq { color: #fcd34d; background: rgba(252,211,77,.15); }
+.ph-func {
+    display: inline-block; margin-right: 7px;
+    font-size: .68rem; font-weight: 700;
+    color: var(--primary-dark); background: var(--primary-soft);
+    border-radius: 4px; padding: 1px 6px;
+}
+.ph-var {
+    margin-top: 6px; font-size: .78rem; line-height: 1.7;
+    color: var(--text-light); word-break: break-word;
+}
+.ph-var::before { content: ''; }
+.ph-go {
+    display: inline-block; margin-left: 10px;
+    color: var(--primary); text-decoration: none;
+    border-bottom: 1px dashed var(--primary); font-size: .78rem;
+}
+.ph-go:hover { color: var(--primary-dark); }
+
+/* 关键句型 → 板块交叉索引链接 */
+.ap-xref { float: right; font-weight: 400; font-size: .74rem; color: var(--text-light); }
+.ap-xref a { color: var(--primary); text-decoration: none; border-bottom: 1px dashed var(--primary); }
+.ap-xref a:hover { color: var(--primary-dark); }
+
+/* 近义词页：写作句式条目（整句英文加粗 + 浅色说明） */
+.leaf-rest { color: var(--text-light); font-size: .92em; }

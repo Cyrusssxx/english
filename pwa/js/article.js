@@ -54,7 +54,7 @@ function applyHtml(ap) {
         <div class="apply-en">${esc(ap.apply_en)}</div>
         <div class="apply-cn" hidden>${esc(ap.apply_cn || '')}</div>
         ${tips ? `<div class="ap-sub">📝 套用建议</div><ul class="apply-tips">${tips}</ul>` : ''}
-        ${phrs ? `<div class="ap-sub">🔑 关键句型</div><div class="ap-phrases">${phrs}</div>` : ''}
+        ${phrs ? `<div class="ap-sub">🔑 关键句型<span class="ap-xref">已收录进 <a href="phrasebook.html">熟词短语</a> · <a href="nearmap.html">近义词</a> 板块</span></div><div class="ap-phrases">${phrs}</div>` : ''}
     </div>`;
 }
 

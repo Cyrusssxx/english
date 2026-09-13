@@ -353,6 +353,15 @@ def cmd_build():
                   ensure_ascii=False, indent=1)
         print('写入 pwa/data/phrasebook.json：%d 条 / %d 类（缺失 %s）' % (
             sum(len(v) for v in groups.values()), len(cats), miss))
+        # 重建后重挂「写作句式」交叉索引（否则会被本次覆盖）
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            import build_writing_patterns as _bwp
+            _payload = _bwp.build()
+            _bwp.merge_phrasebook(_payload)
+            _bwp.inject_nearmap(_payload)
+        except Exception as _e:
+            print('  ⚠ 写作句式交叉索引未生成：%s' % _e)
 
 
 def _remaining_rows():

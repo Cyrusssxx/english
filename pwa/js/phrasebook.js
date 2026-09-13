@@ -40,19 +40,32 @@ function phRender() {
     let html = '';
     for (const c of cats) {
         const items = ((PH_DATA.groups[c]) || []).filter(x => {
-            if (PH_YEARS_ON.size && !PH_YEARS_ON.has(x.year)) return false;
+            const ys = x.years || (x.year ? [x.year] : []);
+            if (PH_YEARS_ON.size && !ys.some(y => PH_YEARS_ON.has(y))) return false;
             if (!q) return true;
-            return (x.w + ' ' + x.meaning + ' ' + x.en + ' ' + (x.cn || '')).toLowerCase().includes(q);
+            const hay = [x.w, x.meaning, x.en, x.cn, x.func, ys.join(' '), (x.variants || []).join(' ')]
+                .join(' ').toLowerCase();
+            return hay.includes(q);
         });
         if (!items.length) continue;
         total += items.length;
         html += `<div class="ph-card"><h3>${phEsc(c)}<span class="ph-n">${items.length}</span></h3>` +
-            items.map(x => `<div class="ph-item">
-                <div class="ph-w">${phEsc(x.w)}</div>
-                <div class="ph-m">${phEsc(x.meaning)}</div>
-                <div class="ph-e">${phEsc(x.en)}</div>
+            items.map(x => {
+                const ys = x.years || (x.year ? [x.year] : []);
+                const freq = x.freq > 1
+                    ? `<span class="ph-freq" title="在 ${ys.join(' / ')} 年的套用示范中都用到">★ 高频 · ${x.freq} 年</span>` : '';
+                const vars = (x.variants || []).length > 1
+                    ? `<div class="ph-var">变体：${(x.variants || []).filter(v => v !== x.w).map(phEsc).join(' ／ ')}</div>` : '';
+                const link = x.aid
+                    ? `<a class="ph-go" href="article.html?id=${encodeURIComponent(x.aid)}">→ 看套用示范</a>` : '';
+                return `<div class="ph-item">
+                <div class="ph-w">${phEsc(x.w)}${freq}</div>
+                <div class="ph-m">${x.func ? `<span class="ph-func">${phEsc(x.func)}</span>` : ''}${phEsc(x.meaning)}</div>
+                ${x.en ? `<div class="ph-e">${phEsc(x.en)}</div>` : ''}
                 ${x.cn ? `<div class="ph-cn">${phEsc(x.cn)}</div>` : ''}
-                <div class="ph-src">${phEsc(x.src)}</div></div>`).join('') + '</div>';
+                ${vars}
+                <div class="ph-src">${phEsc(x.src)}${link}</div></div>`;
+            }).join('') + '</div>';
     }
     const cnt = document.getElementById('phCount');
     if (cnt) cnt.textContent = `共 ${total} 条 / ${cats.length} 类`;
@@ -65,7 +78,7 @@ async function phInit() {
     try {
         const res = await fetch('data/phrasebook.json', { cache: 'no-cache' });
         PH_DATA = await res.json();
-        phAll().forEach(x => x.year && PH_YEARS.add(x.year));
+        phAll().forEach(x => (x.years || [x.year]).forEach(y => y && PH_YEARS.add(y)));
         phYearChips();
         phRender();
         const s = document.getElementById('phSearch');

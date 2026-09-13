@@ -1,0 +1,881 @@
+{
+ "count": 65,
+ "raw_count": 85,
+ "cat": "写作句式",
+ "funcs": [
+  {
+   "name": "图表引出",
+   "color": "#0d9488",
+   "desc": "开篇点图：先说清图是什么、整体呈现什么分布"
+  },
+  {
+   "name": "上升趋势",
+   "color": "#ef4444",
+   "desc": "描述上涨：rose / climbed / upward trend / momentum"
+  },
+  {
+   "name": "幅度·速度",
+   "color": "#f59e0b",
+   "desc": "比快慢、比幅度、点出转折点与天花板"
+  },
+  {
+   "name": "占比·分布",
+   "color": "#8b5cf6",
+   "desc": "静态图三板斧：largest share / middle group / small proportions"
+  },
+  {
+   "name": "升降对比·转折",
+   "color": "#10b981",
+   "desc": "一升一降 / 被取代 / By contrast——转折表达集中放这里"
+  },
+  {
+   "name": "原因·背景",
+   "color": "#f97316",
+   "desc": "第二段归因：时代、政策、观念、经济、心态"
+  },
+  {
+   "name": "意义·价值",
+   "color": "#eab308",
+   "desc": "说好处：gain / facilitate / enrich / an ideal way"
+  },
+  {
+   "name": "建议·展望",
+   "color": "#06b6d4",
+   "desc": "第三段收尾：pave the way / stay competitive / keep improving"
+  },
+  {
+   "name": "主题词·术语",
+   "color": "#64748b",
+   "desc": "各话题的固定说法，换题时直接替换"
+  }
+ ],
+ "groups": {
+  "图表引出": [
+   {
+    "w": "did not move in a uniform direction",
+    "meaning": "并未朝着相同方向变化",
+    "en": "The bar chart shows that the population figures associated with urban and rural areas did not move in a uniform direction from 1990 to 2010.",
+    "cn": "该柱状图表明，1990 至 2010 年间城乡人口数量并未朝着相同方向变化。",
+    "years": [
+     "2011",
+     "2014",
+     "2019"
+    ],
+    "freq": 3,
+    "aid": "2019_writingb",
+    "variants": []
+   },
+   {
+    "w": "presents an uneven distribution among the perceived benefits of …",
+    "meaning": "呈现了人们对……各项益处的看法分布",
+    "en": "The bar chart presents an uneven distribution among the perceived benefits of children's outdoor activities.",
+    "cn": "",
+    "years": [
+     "2026"
+    ],
+    "freq": 1,
+    "aid": "2026_writingb",
+    "variants": []
+   },
+   {
+    "w": "The table presents an uneven distribution among…",
+    "meaning": "该表格呈现了……之间的不均衡分布",
+    "en": "The table presents an uneven distribution among the age groups associated with job satisfaction.",
+    "cn": "该表格呈现了各年龄段在工作满意度上的不均衡分布。",
+    "years": [
+     "2012"
+    ],
+    "freq": 1,
+    "aid": "2012_writingb",
+    "variants": []
+   },
+   {
+    "w": "This pie chart presents an uneven distribution among…",
+    "meaning": "该饼图呈现了……之间的不均衡分布",
+    "en": "The pie chart presents an uneven distribution among the categories associated with Spring Festival spending.",
+    "cn": "该饼图呈现了春节各项花销之间的不均衡分布。",
+    "years": [
+     "2015"
+    ],
+    "freq": 1,
+    "aid": "2015_writingb",
+    "variants": []
+   }
+  ],
+  "上升趋势": [
+   {
+    "w": "rose steadily from … to …",
+    "meaning": "从……至……持续上升",
+    "en": "The line chart shows that the figures associated with museums and museum visitors rose steadily from 2013 to 2015.",
+    "cn": "该折线图表明，2013 至 2015 年间博物馆数量与参观人数的数据均持续上升。",
+    "years": [
+     "2017",
+     "2022",
+     "2023"
+    ],
+    "freq": 3,
+    "aid": "2023_writingb",
+    "variants": []
+   },
+   {
+    "w": "rose steadily during the periods presented",
+    "meaning": "在相应时期内持续上升",
+    "en": "The bar chart shows that the proportion of college students taking part-time jobs rose steadily during the periods presented.",
+    "cn": "该柱状图表明，大学生兼职比例在相应时期内持续上升。",
+    "years": [
+     "2010",
+     "2013"
+    ],
+    "freq": 2,
+    "aid": "2013_writingb",
+    "variants": []
+   },
+   {
+    "w": "showing a steady upward trend",
+    "meaning": "呈现稳定上升趋势",
+    "en": "The upward trend stems from students' growing wish to gain practical experience.",
+    "cn": "这一上升趋势源于学生获取实践经验意愿的增强。",
+    "years": [
+     "2013",
+     "2023"
+    ],
+    "freq": 2,
+    "aid": "2023_writingb",
+    "variants": []
+   },
+   {
+    "w": "climbed from … to …",
+    "meaning": "由……攀升至……",
+    "en": "Subscriptions in developing countries climbed from 0.5 billion in 2000 to 4 billion in 2008, while those in developed countries rose from 0.7 billion to 1 billion over the same span.",
+    "cn": "",
+    "years": [
+     "2010"
+    ],
+    "freq": 1,
+    "aid": "2010_writingb",
+    "variants": []
+   },
+   {
+    "w": "maintained a dynamic momentum",
+    "meaning": "保持强劲势头",
+    "en": "Although both moved in the same direction, the growth of museums slowed down in 2014 while visits maintained a dynamic momentum.",
+    "cn": "二者虽同向变动，但博物馆数量的增长在 2014 年放缓，而参观人数保持了强劲势头。",
+    "years": [
+     "2017"
+    ],
+    "freq": 1,
+    "aid": "2017_writingb",
+    "variants": []
+   },
+   {
+    "w": "rose slightly",
+    "meaning": "略有上升",
+    "en": "By contrast, the proportion of graduates starting a business rose slightly, from 1.3% to 2.6%.",
+    "cn": "",
+    "years": [
+     "2019"
+    ],
+    "freq": 1,
+    "aid": "2019_writingb",
+    "variants": []
+   },
+   {
+    "w": "the biggest increase occurred in …",
+    "meaning": "最大增幅出现在……",
+    "en": "The rate climbed from 67.77% in the first year to 88.24% in the final year, and the biggest increase occurred in the graduation year, when the figure was 16% higher than a year earlier.",
+    "cn": "比例从大一的 67.77% 升至大四的 88.24%，其中增幅最大的是毕业那年，比上年高出 16%。",
+    "years": [
+     "2013"
+    ],
+    "freq": 1,
+    "aid": "2013_writingb",
+    "variants": []
+   }
+  ],
+  "幅度·速度": [
+   {
+    "w": "expanded their share by nearly the same margin",
+    "meaning": "以相近幅度扩大份额",
+    "en": "Chinese brands climbed from a modest share to the leading position, while Japanese brands fell by nearly 10 percentage points and lost their top place.",
+    "cn": "",
+    "years": [
+     "2011"
+    ],
+    "freq": 1,
+    "aid": "2011_writingb",
+    "variants": []
+   },
+   {
+    "w": "had not yet reached saturation",
+    "meaning": "尚未达到饱和",
+    "en": "In developing countries, the mobile-phone market had not yet reached saturation, and given the enormous population, the number of potential customers was huge.",
+    "cn": "",
+    "years": [
+     "2010"
+    ],
+    "freq": 1,
+    "aid": "2010_writingb",
+    "variants": []
+   },
+   {
+    "w": "left little room for further growth",
+    "meaning": "几乎没有进一步增长的空间",
+    "en": "In developed countries, by contrast, a saturated market left little room for further growth.",
+    "cn": "",
+    "years": [
+     "2010"
+    ],
+    "freq": 1,
+    "aid": "2010_writingb",
+    "variants": []
+   },
+   {
+    "w": "marked a watershed when the growth accelerated",
+    "meaning": "是增速加快的转折点",
+    "en": "Notably, the year 2016 marked a watershed, when the growth accelerated considerably.",
+    "cn": "值得注意的是，2016 年是转折点，增速明显加快。",
+    "years": [
+     "2023"
+    ],
+    "freq": 1,
+    "aid": "2023_writingb",
+    "variants": []
+   },
+   {
+    "w": "the pace of growth differed sharply",
+    "meaning": "增长速度差异明显",
+    "en": "Although the two moved in the same direction, the pace of growth differed sharply.",
+    "cn": "",
+    "years": [
+     "2010"
+    ],
+    "freq": 1,
+    "aid": "2010_writingb",
+    "variants": []
+   },
+   {
+    "w": "the trend is particularly striking",
+    "meaning": "这一趋势尤为显著",
+    "en": "Although both moved in the same direction, the growth in rural areas was particularly striking.",
+    "cn": "二者虽同向变动，但农村地区的增长尤为显著。",
+    "years": [
+     "2022"
+    ],
+    "freq": 1,
+    "aid": "2022_writingb",
+    "variants": []
+   }
+  ],
+  "占比·分布": [
+   {
+    "w": "accounts for the largest share, at …%",
+    "meaning": "占比最大，达到……%",
+    "en": "Employees above 50 account for the largest share of satisfaction, at 40%.",
+    "cn": "50 岁以上员工满意度占比最大，达 40%。",
+    "years": [
+     "2012",
+     "2016",
+     "2020",
+     "2024",
+     "2025",
+     "2026"
+    ],
+    "freq": 6,
+    "aid": "2026_writingb",
+    "variants": [
+     "accounts for the largest share, at …%",
+     "account for the largest share, at …%"
+    ]
+   },
+   {
+    "w": "follows closely, representing …%",
+    "meaning": "紧随其后，占……%",
+    "en": "Exercising with friends follows closely, representing 47.7%, while working out with family members accounts for 23.9%.",
+    "cn": "与朋友一起锻炼紧随其后，占 47.7%，与家人一起锻炼占 23.9%。",
+    "years": [
+     "2016",
+     "2021",
+     "2024",
+     "2025",
+     "2026"
+    ],
+    "freq": 5,
+    "aid": "2026_writingb",
+    "variants": []
+   },
+   {
+    "w": "make up relatively small proportions of …",
+    "meaning": "占比相对较小，分别为……",
+    "en": "In contrast, other purposes make up a relatively small proportion of 2.2%.",
+    "cn": "相比之下，其他目的占比很小，仅 2.2%。",
+    "years": [
+     "2016",
+     "2018",
+     "2020",
+     "2024",
+     "2025"
+    ],
+    "freq": 5,
+    "aid": "2025_writingb",
+    "variants": [
+     "make up a relatively small proportion of …%",
+     "make up relatively small proportions of … and …",
+     "make up relatively small proportions of …% and …% respectively",
+     "make up relatively small proportions of …, respectively",
+     "make up relatively small proportions of …, … and … respectively"
+    ]
+   },
+   {
+    "w": "form the middle group, representing …% and …% respectively",
+    "meaning": "处于中间位置，分别占……% 和……%",
+    "en": "Killing time and obtaining information form the middle group, representing 21.3% and 17.0% respectively.",
+    "cn": "消磨时间与获取信息处于中间位置，分别占 21.3% 和 17.0%。",
+    "years": [
+     "2018",
+     "2020"
+    ],
+    "freq": 2,
+    "aid": "2020_writingb",
+    "variants": []
+   },
+   {
+    "w": "account for the largest share, together making up …% of the total",
+    "meaning": "占比最大，合计达总额的……%",
+    "en": "Traveling, gift giving and dinners with friends or relatives account for the largest share, together making up 80% of the total.",
+    "cn": "旅行、送礼以及与亲友聚餐占比最大，合计达总额的 80%。",
+    "years": [
+     "2015"
+    ],
+    "freq": 1,
+    "aid": "2015_writingb",
+    "variants": []
+   },
+   {
+    "w": "accounts for the largest share, at slightly over half of the respondents",
+    "meaning": "占比最大，略超受访者半数",
+    "en": "Working out alone accounts for the largest share, at slightly over half of the respondents.",
+    "cn": "独自锻炼占比最大，略超受访者半数。",
+    "years": [
+     "2021"
+    ],
+    "freq": 1,
+    "aid": "2021_writingb",
+    "variants": []
+   },
+   {
+    "w": "none of them felt satisfied",
+    "meaning": "无一人感到满意",
+    "en": "The middle group, those aged 41 to 50, represents the lowest level, with none of them satisfied and 64% expressing dissatisfaction.",
+    "cn": "41 至 50 岁的中间组水平最低，无人满意，64% 表示不满。",
+    "years": [
+     "2012"
+    ],
+    "freq": 1,
+    "aid": "2012_writingb",
+    "variants": []
+   }
+  ],
+  "升降对比·转折": [
+   {
+    "w": "By contrast",
+    "meaning": "相比之下（用于转折对比）",
+    "en": "By contrast, American brands held steady, with only a slight increase.",
+    "cn": "",
+    "years": [
+     "2011"
+    ],
+    "freq": 1,
+    "aid": "2011_writingb",
+    "variants": []
+   },
+   {
+    "w": "climbed from … to …, while … declined from … to …",
+    "meaning": "从……攀升至……，而……从……降至……",
+    "en": "The urban population climbed from 300 million to 670 million, while the rural population declined from 820 million to 680 million over the same span.",
+    "cn": "城镇人口从 3 亿攀升至 6.7 亿，而农村人口在同一时期从 8.2 亿降至 6.8 亿。",
+    "years": [
+     "2014"
+    ],
+    "freq": 1,
+    "aid": "2014_writingb",
+    "variants": []
+   },
+   {
+    "w": "declined from … to …, while … climbed from … to …",
+    "meaning": "从……降至……，而……从……升至……",
+    "en": "The share of those entering employment declined from 68.1% to 60.7%, while the share of those pursuing further education climbed from 26.3% to 34.0%.",
+    "cn": "",
+    "years": [
+     "2019"
+    ],
+    "freq": 1,
+    "aid": "2019_writingb",
+    "variants": []
+   },
+   {
+    "w": "were displaced from their leading position",
+    "meaning": "从领先位置被取代",
+    "en": "Chinese brands climbed from a modest share to the leading position, while Japanese brands fell by nearly 10 percentage points and lost their top place.",
+    "cn": "",
+    "years": [
+     "2011"
+    ],
+    "freq": 1,
+    "aid": "2011_writingb",
+    "variants": []
+   }
+  ],
+  "原因·背景": [
+   {
+    "w": "a natural consequence of changing parenting ideas",
+    "meaning": "育儿观念变化的自然结果",
+    "en": "Seen in this light, the pattern of opinions is a natural consequence of changing parenting ideas.",
+    "cn": "",
+    "years": [
+     "2026"
+    ],
+    "freq": 1,
+    "aid": "2026_writingb",
+    "variants": []
+   },
+   {
+    "w": "a natural consequence of social life",
+    "meaning": "社会生活变化的自然结果",
+    "en": "Seen in this light, the pattern of spending is no coincidence but a natural consequence of social life.",
+    "cn": "由此可见，这一消费结构并非偶然，而是社会生活变化的自然结果。",
+    "years": [
+     "2015"
+    ],
+    "freq": 1,
+    "aid": "2015_writingb",
+    "variants": []
+   },
+   {
+    "w": "a shift in graduates’ view of post-university life",
+    "meaning": "毕业生对毕业后生活看法的转变",
+    "en": "The data reflects a shift in graduates' view of post-university life.",
+    "cn": "",
+    "years": [
+     "2019"
+    ],
+    "freq": 1,
+    "aid": "2019_writingb",
+    "variants": []
+   },
+   {
+    "w": "as livestreaming e-commerce takes off",
+    "meaning": "随着直播电商兴起",
+    "en": "To be specific, as livestreaming e-commerce takes off, people are more inclined to purchase online, thereby giving impetus to the delivery business.",
+    "cn": "具体而言，随着直播电商兴起，人们更倾向线上购物，从而推动快递业务发展。",
+    "years": [
+     "2022"
+    ],
+    "freq": 1,
+    "aid": "2022_writingb",
+    "variants": []
+   },
+   {
+    "w": "narrowed the technology gap",
+    "meaning": "缩小了技术差距",
+    "en": "On the one hand, Chinese auto producers have narrowed the technology gap between themselves and foreign competitors and have cleverly adjusted their promotion strategies.",
+    "cn": "",
+    "years": [
+     "2011"
+    ],
+    "freq": 1,
+    "aid": "2011_writingb",
+    "variants": []
+   },
+   {
+    "w": "on account of flexibility and convenience",
+    "meaning": "出于灵活与便利",
+    "en": "People prefer to exercise alone primarily on account of flexibility and convenience.",
+    "cn": "人们偏好独自锻炼，主要出于灵活与便利。",
+    "years": [
+     "2021"
+    ],
+    "freq": 1,
+    "aid": "2021_writingb",
+    "variants": []
+   },
+   {
+    "w": "reach a career plateau",
+    "meaning": "进入职业平台期",
+    "en": "The 41-to-50 group, less energetic than the younger crowd and less established than older professionals, often reaches a career plateau, and the consequent sense of powerlessness reduces them to deep dissatisfaction.",
+    "cn": "41 至 50 岁组比年轻人精力不足、比年长者资历尚浅，往往进入职业平台期，随之而来的无力感使他们深感不满。",
+    "years": [
+     "2012"
+    ],
+    "freq": 1,
+    "aid": "2012_writingb",
+    "variants": []
+   },
+   {
+    "w": "the awareness of self-improvement",
+    "meaning": "自我提升意识",
+    "en": "Moreover, the awareness of self-improvement has spread widely among university students who wish to stay competitive in the job market.",
+    "cn": "此外，希望在就业市场保持竞争力的学生中，自我提升意识已广泛传播。",
+    "years": [
+     "2020"
+    ],
+    "freq": 1,
+    "aid": "2020_writingb",
+    "variants": []
+   },
+   {
+    "w": "the change in priorities",
+    "meaning": "关注重点的转变",
+    "en": "Seen in this light, the change in priorities is a natural consequence of social life.",
+    "cn": "",
+    "years": [
+     "2018"
+    ],
+    "freq": 1,
+    "aid": "2018_writingb",
+    "variants": []
+   },
+   {
+    "w": "the consequent sense of powerlessness",
+    "meaning": "随之而来的无力感",
+    "en": "The 41-to-50 group, less energetic than the younger crowd and less established than older professionals, often reaches a career plateau, and the consequent sense of powerlessness reduces them to deep dissatisfaction.",
+    "cn": "41 至 50 岁组比年轻人精力不足、比年长者资历尚浅，往往进入职业平台期，随之而来的无力感使他们深感不满。",
+    "years": [
+     "2012"
+    ],
+    "freq": 1,
+    "aid": "2012_writingb",
+    "variants": []
+   },
+   {
+    "w": "the joint effects of urbanization and unequal economic opportunities",
+    "meaning": "城镇化与经济机会不均的共同作用",
+    "en": "The narrowing gap results from the joint effects of urbanization and unequal economic opportunities.",
+    "cn": "差距的缩小源于城镇化与经济机会不均的共同作用。",
+    "years": [
+     "2014"
+    ],
+    "freq": 1,
+    "aid": "2014_writingb",
+    "variants": []
+   },
+   {
+    "w": "the national endeavour in cultural undertakings",
+    "meaning": "国家在文化事业上的努力",
+    "en": "Firstly, thanks to the national endeavour in cultural undertakings, numerous museums have been built and opened free to the public.",
+    "cn": "首先，得益于国家在文化事业上的努力，大量博物馆建成并向公众免费开放。",
+    "years": [
+     "2017"
+    ],
+    "freq": 1,
+    "aid": "2017_writingb",
+    "variants": []
+   },
+   {
+    "w": "with the prosperity of tourism",
+    "meaning": "随着旅游业繁荣",
+    "en": "On the one hand, with the prosperity of tourism, college students who have ample time and curiosity are lured to explore the outside world.",
+    "cn": "",
+    "years": [
+     "2016"
+    ],
+    "freq": 1,
+    "aid": "2016_writingb",
+    "variants": []
+   }
+  ],
+  "意义·价值": [
+   {
+    "w": "a low-intensity activity suitable for the elderly",
+    "meaning": "适合老年人的低强度活动",
+    "en": "Secondly, walking is a low-intensity activity suitable for most elderly people.",
+    "cn": "",
+    "years": [
+     "2025"
+    ],
+    "freq": 1,
+    "aid": "2025_writingb",
+    "variants": []
+   },
+   {
+    "w": "an ideal way to recharge",
+    "meaning": "理想的充电方式",
+    "en": "On the other hand, growing academic pressure makes a journey an ideal way to recharge.",
+    "cn": "",
+    "years": [
+     "2016"
+    ],
+    "freq": 1,
+    "aid": "2016_writingb",
+    "variants": []
+   },
+   {
+    "w": "enrich the daily life",
+    "meaning": "丰富日常生活",
+    "en": "Besides, although planting flowers, reading and playing chess occupy smaller shares, they still enrich the daily life of those who take them up.",
+    "cn": "",
+    "years": [
+     "2025"
+    ],
+    "freq": 1,
+    "aid": "2025_writingb",
+    "variants": []
+   },
+   {
+    "w": "facilitate interpersonal relationships",
+    "meaning": "增进人际关系",
+    "en": "Most spending is used to maintain or facilitate interpersonal relationships.",
+    "cn": "大部分开支用于维系或增进人际关系。",
+    "years": [
+     "2015"
+    ],
+    "freq": 1,
+    "aid": "2015_writingb",
+    "variants": []
+   },
+   {
+    "w": "gain easy and fast access to professional advice",
+    "meaning": "便捷快速地获得专业建议",
+    "en": "Secondly, the digitalization of many health services, such as online consultation and AI diagnosis, has enabled residents to gain easy and fast access to professional advice.",
+    "cn": "其次，在线问诊、AI 诊断等健康服务的数字化，使居民能够便捷快速地获得专业建议。",
+    "years": [
+     "2023"
+    ],
+    "freq": 1,
+    "aid": "2023_writingb",
+    "variants": []
+   },
+   {
+    "w": "gain practical experience",
+    "meaning": "获取实践经验",
+    "en": "The upward trend stems from students' growing wish to gain practical experience.",
+    "cn": "这一上升趋势源于学生获取实践经验意愿的增强。",
+    "years": [
+     "2013"
+    ],
+    "freq": 1,
+    "aid": "2013_writingb",
+    "variants": []
+   },
+   {
+    "w": "regard … as a vivid classroom where children learn through discovery",
+    "meaning": "把……视为孩子通过探索来学习的生动课堂",
+    "en": "On the one hand, the high value placed on curiosity and observation suggests that parents increasingly regard the outdoor world as a vivid classroom where children learn through discovery.",
+    "cn": "",
+    "years": [
+     "2026"
+    ],
+    "freq": 1,
+    "aid": "2026_writingb",
+    "variants": []
+   },
+   {
+    "w": "the key to standing out",
+    "meaning": "脱颖而出的关键",
+    "en": "On the other hand, an increasing number of restaurants with similar prices are available, so distinctive features have become the key to standing out.",
+    "cn": "",
+    "years": [
+     "2018"
+    ],
+    "freq": 1,
+    "aid": "2018_writingb",
+    "variants": []
+   },
+   {
+    "w": "varied spiritual nourishment",
+    "meaning": "多样化的精神食粮",
+    "en": "Moreover, as living standards improve, the public demand increasingly varied spiritual nourishment, and visiting museums has therefore become a willing choice for more people.",
+    "cn": "此外，随着生活水平提高，公众对多样化精神食粮的需求上升，参观博物馆因而成为更多人的自愿选择。",
+    "years": [
+     "2017"
+    ],
+    "freq": 1,
+    "aid": "2017_writingb",
+    "variants": []
+   }
+  ],
+  "建议·展望": [
+   {
+    "w": "boosted the popularity of doing workouts at home",
+    "meaning": "推动了居家锻炼的流行",
+    "en": "Furthermore, a wide range of fitness videos, apps and games have boosted the popularity of doing workouts at home.",
+    "cn": "此外，大量健身视频、应用与游戏也推动了居家独自锻炼的流行。",
+    "years": [
+     "2021"
+    ],
+    "freq": 1,
+    "aid": "2021_writingb",
+    "variants": []
+   },
+   {
+    "w": "channel more resources into …",
+    "meaning": "向……倾斜更多资源",
+    "en": "Relevant authorities should channel more resources into the countryside and create favorable conditions for local employment, so that rural residents can also benefit from national progress.",
+    "cn": "有关部门应向农村倾斜更多资源，为本地就业创造有利条件，让农村居民也能从国家发展中获益。",
+    "years": [
+     "2014"
+    ],
+    "freq": 1,
+    "aid": "2014_writingb",
+    "variants": []
+   },
+   {
+    "w": "give impetus to the delivery business",
+    "meaning": "推动快递业务发展",
+    "en": "The bar chart shows that the express delivery volumes associated with the whole country and rural areas rose steadily from 2018 to 2020.",
+    "cn": "该柱状图表明，2018 至 2020 年间全国与农村的快递业务量均持续上升。",
+    "years": [
+     "2022"
+    ],
+    "freq": 1,
+    "aid": "2022_writingb",
+    "variants": []
+   },
+   {
+    "w": "keep pace with the public demand",
+    "meaning": "跟上公众需求",
+    "en": "Firstly, thanks to the national endeavour in cultural undertakings, numerous museums have been built and opened free to the public.",
+    "cn": "首先，得益于国家在文化事业上的努力，大量博物馆建成并向公众免费开放。",
+    "years": [
+     "2017"
+    ],
+    "freq": 1,
+    "aid": "2017_writingb",
+    "variants": []
+   },
+   {
+    "w": "not go to extremes",
+    "meaning": "不走极端",
+    "en": "However, we should not go to extremes.",
+    "cn": "然而，我们不应走极端。",
+    "years": [
+     "2015"
+    ],
+    "freq": 1,
+    "aid": "2015_writingb",
+    "variants": []
+   },
+   {
+    "w": "on their own initiative",
+    "meaning": "主动地",
+    "en": "In the twenty years, urban sprawl transformed millions of peasants into city residents, and many more chose to leave their hometowns on their own initiative.",
+    "cn": "二十年间，城市扩张使数百万农民被动转为城镇居民，更多人则主动离开家乡。",
+    "years": [
+     "2014"
+    ],
+    "freq": 1,
+    "aid": "2014_writingb",
+    "variants": []
+   },
+   {
+    "w": "paves the way for their career development",
+    "meaning": "为职业发展铺路",
+    "en": "Firstly, the practical knowledge offered by the course enables students to better understand their interests and paves the way for their career development.",
+    "cn": "",
+    "years": [
+     "2024"
+    ],
+    "freq": 1,
+    "aid": "2024_writingb",
+    "variants": []
+   },
+   {
+    "w": "paves the way for …",
+    "meaning": "为……铺平道路",
+    "en": "Moreover, the government has made sustained efforts to improve infrastructure in the countryside, which paves the way for courier services to extend to the vast rural markets.",
+    "cn": "此外，政府持续改善农村基础设施，为快递服务延伸到广阔的农村市场铺平了道路。",
+    "years": [
+     "2022"
+    ],
+    "freq": 1,
+    "aid": "2022_writingb",
+    "variants": []
+   },
+   {
+    "w": "public sports facilities",
+    "meaning": "公共体育设施",
+    "en": "For physical exercise to bring lasting benefits, individuals should make well-informed choices in light of their own circumstances, while relevant authorities should provide more public sports facilities.",
+    "cn": "要使体育锻炼带来长久收益，个人应结合自身情况作出理性选择，有关部门也应提供更多公共体育设施。",
+    "years": [
+     "2021"
+    ],
+    "freq": 1,
+    "aid": "2021_writingb",
+    "variants": []
+   },
+   {
+    "w": "secure an advantage",
+    "meaning": "获取优势",
+    "en": "On the one hand, as the job market becomes increasingly competitive, a higher degree is widely regarded as a way of securing an advantage.",
+    "cn": "",
+    "years": [
+     "2019"
+    ],
+    "freq": 1,
+    "aid": "2019_writingb",
+    "variants": []
+   },
+   {
+    "w": "stay competitive in the job market",
+    "meaning": "在就业市场中保持竞争力",
+    "en": "Moreover, the awareness of self-improvement has spread widely among university students who wish to stay competitive in the job market.",
+    "cn": "此外，希望在就业市场保持竞争力的学生中，自我提升意识已广泛传播。",
+    "years": [
+     "2020"
+    ],
+    "freq": 1,
+    "aid": "2020_writingb",
+    "variants": []
+   },
+   {
+    "w": "strike a balance between work and study",
+    "meaning": "平衡工作与学业",
+    "en": "Universities should provide more internship channels, while students should strike a balance between work and study in light of their own circumstances.",
+    "cn": "高校应提供更多实习渠道，学生也应结合自身情况平衡好学业与工作。",
+    "years": [
+     "2013"
+    ],
+    "freq": 1,
+    "aid": "2013_writingb",
+    "variants": []
+   }
+  ],
+  "主题词·术语": [
+   {
+    "w": "hands-on experience",
+    "meaning": "实践/动手经历",
+    "en": "Moreover, hands-on experience is highly valued in today's job market, which encourages students to focus on applicable skills.",
+    "cn": "",
+    "years": [
+     "2024"
+    ],
+    "freq": 1,
+    "aid": "2024_writingb",
+    "variants": []
+   },
+   {
+    "w": "health literacy rate",
+    "meaning": "健康素养水平",
+    "en": "The line chart shows that the health literacy rate of Chinese residents rose steadily from 2012 to 2021.",
+    "cn": "该折线图表明，2012 至 2021 年间中国居民健康素养水平持续上升。",
+    "years": [
+     "2023"
+    ],
+    "freq": 1,
+    "aid": "2023_writingb",
+    "variants": []
+   },
+   {
+    "w": "per capita disposable income",
+    "meaning": "人均可支配收入",
+    "en": "On the one hand, as per capita disposable income has risen, more people can afford to dine out, and it is natural that they care more about high-quality enjoyment than about price.",
+    "cn": "",
+    "years": [
+     "2018"
+    ],
+    "freq": 1,
+    "aid": "2018_writingb",
+    "variants": []
+   }
+  ]
+ }
+}
