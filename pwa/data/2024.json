@@ -3804,7 +3804,39 @@
    "sample_cn": "题中所给的条形图描绘了某高校学生从劳动实践课程中得到的各种主要收获的占比情况。具体来说，“学习了相关知识”所占的比例最大，占91.3%，其次是“提升了动手能力”，占84.8%。相比之下，“感觉到心情舒畅”和“增强了合作能力”分别只占了54.4%和32.6%。\n\n上述图表反映了大学在课程设计上倾向于为学生提供知识并培养学生的动手能力。我们可以将这一现象归因于以下几个方面。首先，该课程提供的实用且专业的知识使学生能够更好地了解自己的兴趣，为其未来的职业发展铺平道路。此外，动手能力有助于学生增强竞争力，适应职场。然而，合作能力对工作和生活都是极其重要的，它应该受到高校更多的关注。\n\n总之，由于劳动实践课程对学生来说非常重要，高校在设计课程时应该考虑学生的全面发展。",
    "questions": [],
    "directions": "Write an essay based on the chart below. In your essay, you should 1) describe and interpret the chart, and 2) give your comments. Write your answer in about 150 words on the ANSWER SHEET. (15 points)",
-   "directions_cn": "根据下面的图表写一篇短文。在你的短文中，你应该1) 描述并解读图表，并2) 发表你的评论。你应在答题卡上写约150词的答案。（15分）"
+   "directions_cn": "根据下面的图表写一篇短文。在你的短文中，你应该1) 描述并解读图表，并2) 发表你的评论。你应在答题卡上写约150词的答案。（15分）",
+   "apply": {
+    "apply_en": "The bar chart presents an uneven distribution among the benefits students gained from labor practice courses at a certain university. Gaining relevant knowledge accounts for the largest share, at 91.3%. Improving practical ability follows closely, representing 84.8%. In contrast, obtaining cheerful moods and enhancing cooperative ability make up relatively small proportions of 54.4% and 32.6% respectively.\n\nThe chart reflects the university's tendency in course design to provide knowledge and foster practical ability. This can be attributed to the following aspects. Firstly, the practical knowledge offered by the course enables students to better understand their interests and paves the way for their career development. Moreover, hands-on experience is highly valued in today's job market, which encourages students to focus on applicable skills.\n\nFor labor practice courses to play a greater role, universities should keep improving the curriculum, while students should make well-informed choices in light of their own needs.",
+    "apply_cn": "该柱状图呈现了某高校学生从劳动实践课中所得收获之间的不均衡分布。获得相关知识占比最大，达 91.3%。提升实践能力紧随其后，占 84.8%。相比之下，获得愉悦心情与增强合作能力占比相对较小，分别为 54.4% 和 32.6%。\n\n该图反映了高校在课程设计中提供知识、培养实践能力的倾向。这可归因于以下方面。首先，课程提供的实用知识使学生更好地了解自身兴趣，为职业发展铺路；此外，实践经历在当今就业市场备受重视，促使学生关注可应用技能。\n\n要使劳动实践课发挥更大作用，高校应持续改进课程，学生也应结合自身需求作出理性选择。",
+    "tips": [
+     "柱状图、占比分布 → 静态模板：最大项 + 紧随项 + In contrast 收尾的两项。",
+     "\"知识 91.3% / 实践 84.8%\"两项都超八成，是本题的\"高占比组\"，与前两名的表述要连贯。",
+     "第二段套校园类模板，双因：课程设计 + 就业市场需求。",
+     "注意题干的 gains 是\"收获\"，第二段解释\"为什么这些收获被认可\"。"
+    ],
+    "key_phrases": [
+     {
+      "en": "accounts for the largest share, at …%",
+      "cn": "占比最大，达……%"
+     },
+     {
+      "en": "follows closely, representing …%",
+      "cn": "紧随其后，占……%"
+     },
+     {
+      "en": "make up relatively small proportions of …% and …% respectively",
+      "cn": "占比相对较小，分别为……% 和……%"
+     },
+     {
+      "en": "paves the way for their career development",
+      "cn": "为职业发展铺路"
+     },
+     {
+      "en": "hands-on experience",
+      "cn": "实践/动手经历"
+     }
+    ]
+   }
   }
  ]
 }

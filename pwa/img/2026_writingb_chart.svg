@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <rect width="820" height="440" fill="#ffffff"/>
+  <text x="410" y="42" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2937">某项关于儿童户外活动看法的调查</text>
+
+  <!-- 坐标轴 -->
+  <line x1="90" y1="80" x2="90" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="90" y1="350" x2="760" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+
+  <!-- y 轴刻度 0 / 20 / 40 / 60 (%) -->
+  <g font-size="13" fill="#6b7280" text-anchor="end">
+    <text x="80" y="355">0</text>
+    <text x="80" y="292">20</text>
+    <text x="80" y="229">40</text>
+    <text x="80" y="166">60</text>
+  </g>
+  <g stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="90" y1="350" x2="760" y2="350"/>
+    <line x1="90" y1="287" x2="760" y2="287"/>
+    <line x1="90" y1="224" x2="760" y2="224"/>
+    <line x1="90" y1="161" x2="760" y2="161"/>
+  </g>
+
+  <!-- 柱：54.6 / 54.5 / 37.2 / 33.2，比例 60% = 189px -->
+  <g>
+    <rect x="150" y="178" width="86" height="172" fill="#3b82f6" rx="2"/>
+    <text x="193" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#1d4ed8">54.6%</text>
+
+    <rect x="300" y="178" width="86" height="172" fill="#3b82f6" rx="2"/>
+    <text x="343" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#1d4ed8">54.5%</text>
+
+    <rect x="450" y="233" width="86" height="117" fill="#60a5fa" rx="2"/>
+    <text x="493" y="225" text-anchor="middle" font-size="15" font-weight="700" fill="#1d4ed8">37.2%</text>
+
+    <rect x="600" y="245" width="86" height="105" fill="#93c5fd" rx="2"/>
+    <text x="643" y="237" text-anchor="middle" font-size="15" font-weight="700" fill="#1d4ed8">33.2%</text>
+  </g>
+
+  <!-- x 轴标签 -->
+  <g font-size="14" fill="#374151" text-anchor="middle">
+    <text x="193" y="376">满足好奇心</text>
+    <text x="343" y="376">促进观察力</text>
+    <text x="493" y="376">强身健体</text>
+    <text x="643" y="376">增强亲子互动</text>
+  </g>
+  <text x="410" y="416" text-anchor="middle" font-size="13" fill="#6b7280">（受访者认可各项益处的比例）</text>
+</svg>

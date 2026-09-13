@@ -80,6 +80,30 @@ function wrSectionCard(sec) {
     </section>`;
 }
 
+/** 展开行的真题套用示范内容（示范文 + 建议 + 关键句型） */
+function wrApplyHtml(year, ap) {
+    const tips = (ap.tips || []).map(x => `<li>${wrEsc(x)}</li>`).join('');
+    const phrs = (ap.key_phrases || []).map(p =>
+        `<div class="ap-phrase"><span class="ap-phrase-en">${wrEsc(p.en)}</span><span class="ap-phrase-cn">${wrEsc(p.cn)}</span></div>`).join('');
+    return `<div class="wr-apply-detail">
+        <div class="wr-apply-title">${wrEsc(year)} 真题套用示范${ap.title ? ' · ' + wrEsc(ap.title) : ''}</div>
+        <div class="apply-en">${wrEsc(ap.apply_en || '')}</div>
+        ${ap.apply_cn ? `<div class="apply-cn">${wrEsc(ap.apply_cn)}</div>` : ''}
+        ${tips ? `<div class="ap-sub">📝 套用建议</div><ul class="apply-tips">${tips}</ul>` : ''}
+        ${phrs ? `<div class="ap-sub">🔑 关键句型</div><div class="ap-phrases">${phrs}</div>` : ''}
+    </div>`;
+}
+
+/** 展开/收起某年份的套用示范 */
+function wrToggleApply(i) {
+    const row = document.getElementById('wrApplyRow' + i);
+    if (!row) return;
+    const btn = event && event.target;
+    const show = row.hidden;
+    row.hidden = !show;
+    if (btn) btn.textContent = show ? '收起示范 ▴' : '展开示范 ▾';
+}
+
 async function initWriting() {
     try {
         const res = await fetch('data/writing_templates.json', { cache: 'no-cache' });
@@ -90,6 +114,12 @@ async function initWriting() {
             `<p class="wr-loading">加载失败：${wrEsc(e.message)}</p>`;
         return;
     }
+    // 真题套用示范（按年份汇总，可空）
+    let APPLY = {};
+    try {
+        const ra = await fetch('data/writing_apply.json', { cache: 'no-cache' });
+        if (ra.ok) APPLY = await ra.json();
+    } catch (e) { APPLY = {}; }
     const it = WR.intro || {};
     document.title = (it.title || '作文模板') + ' - 英语真题精翻';
     document.getElementById('wrTitle').textContent = it.title || '作文模板库';
@@ -101,7 +131,12 @@ async function initWriting() {
     const g = WR.chart_guide || {};
     document.getElementById('wrGuideTitle').textContent = g.title || '图表适配表';
     document.getElementById('wrGuideDesc').textContent = g.desc || '';
-    document.querySelector('#wrChartTable tbody').innerHTML = (g.table || []).map(row => `
+    document.querySelector('#wrChartTable tbody').innerHTML = (g.table || []).map((row, i) => {
+        const ap = APPLY[row.year];
+        const cell = ap
+            ? `<button class="wr-exp-btn" onclick="wrToggleApply(${i})">展开示范 ▾</button>`
+            : `<span class="wr-t-hint">—</span>`;
+        return `
         <tr>
             <td class="wr-t-year">${wrEsc(row.year)}</td>
             <td>${wrEsc(row.chart)}</td>
@@ -109,7 +144,10 @@ async function initWriting() {
             <td>${wrEsc(row.trend)}</td>
             <td><span class="wr-type ${row.type === '动态' ? 'wr-type-dyn' : (row.type === '静态' ? 'wr-type-sta' : '')}">${wrEsc(row.type) || '—'}</span></td>
             <td class="wr-t-hint">${wrEsc(row.hint)}</td>
-        </tr>`).join('');
+            <td class="wr-t-apply">${cell}</td>
+        </tr>
+        ${ap ? `<tr class="wr-apply-row" id="wrApplyRow${i}" hidden><td colspan="7">${wrApplyHtml(row.year, ap)}</td></tr>` : ''}`;
+    }).join('');
     document.getElementById('wrDecisions').innerHTML = (g.decisions || []).map(d => `
         <div class="wr-decision">
             <div class="wr-decision-k">${wrEsc(d.k)}</div>

@@ -39,6 +39,34 @@ function toggleReserve(btn) {
     btn.textContent = collapsed ? '展开' : '收起';
 }
 
+/** 模板套用示范（置于参考范文上方）：示范文 → 建议 → 关键句型 */
+function applyHtml(ap) {
+    if (!ap || !ap.apply_en) return '';
+    const tips = (ap.tips || []).map(t => `<li>${esc(t)}</li>`).join('');
+    const phrs = (ap.key_phrases || []).map(p =>
+        `<div class="ap-phrase"><span class="ap-phrase-en">${esc(p.en)}</span><span class="ap-phrase-cn">${esc(p.cn)}</span></div>`).join('');
+    return `<div class="writing-apply">
+        <div class="wr-apply-head">
+            <span class="rs-label">模板套用示范</span>
+            <button class="writing-toggle" onclick="toggleApplyCn(this)">显示中文译文</button>
+        </div>
+        <div class="ap-note">用「作文模板」的句型套写本篇真题，占位词已按题目替换</div>
+        <div class="apply-en">${esc(ap.apply_en)}</div>
+        <div class="apply-cn" hidden>${esc(ap.apply_cn || '')}</div>
+        ${tips ? `<div class="ap-sub">📝 套用建议</div><ul class="apply-tips">${tips}</ul>` : ''}
+        ${phrs ? `<div class="ap-sub">🔑 关键句型</div><div class="ap-phrases">${phrs}</div>` : ''}
+    </div>`;
+}
+
+/** 套用示范中文切换 */
+function toggleApplyCn(btn) {
+    const box = btn.closest('.writing-apply');
+    const cn = box.querySelector('.apply-cn');
+    const show = cn.hidden;
+    cn.hidden = !show;
+    btn.textContent = show ? '隐藏中文译文' : '显示中文译文';
+}
+
 /** 渲染作文储备板块（亮点词汇/必备表达/话题词汇等） */
 function analysisHtml(r) {
     if (!r) return '';
@@ -454,8 +482,13 @@ function renderArticle() {
             <div class="read-title" onclick="toggleReadTitle()" title="点击显示/隐藏文章标题" hidden>${esc(article.title || '')}</div>
             <div class="read-title-placeholder" onclick="toggleReadTitle()" title="点击显示文章标题">…</div>
             <div class="read-source">${esc(article.source || '')} · 写作练习：先自行构思，再对照官方范文</div>
-            ${article.directions ? `<div class="writing-directions"><span class="rs-label">题目要求</span><div class="writing-directions-text">${esc(article.directions)}</div></div>` : ''}
+            ${article.directions ? `<div class="writing-directions">
+                <span class="rs-label">题目要求</span>
+                <div class="writing-directions-text">${esc(article.directions)}</div>
+                ${article.directions_cn ? `<div class="writing-directions-cn">${esc(article.directions_cn)}</div>` : ''}
+            </div>` : ''}
             ${article.chart_img ? `<div class="writing-chart"><img src="${esc(article.chart_img)}" alt="图表" loading="lazy"></div>` : ''}
+            ${applyHtml(article.apply)}
             <div class="writing-sample">
                 <div class="rs-label">参考范文</div>
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示中文译文</button>

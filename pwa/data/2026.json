@@ -9886,7 +9886,40 @@
    "directions": "Write an essay based on the following chart. In your writing, you should 1) describe and interpret the chart, and 2) give your comments. You should write about 150 words.",
    "directions_cn": "根据下面的图表写一篇短文。写作中应：1）描述并解读图表；2）发表你的评论。词数约 150 词。",
    "sample_en": "The chart presents the findings of a survey on the perceived benefits of children's outdoor activities. According to the data, \"satisfying curiosity\" and \"improving observation skills\" are considered the most significant advantages, each recognized by 54.5% and 54.6% of respondents respectively. Following closely, \"enhancing physical fitness\" is acknowledged by 33.2% of participants, while \"strengthening parent-child interaction\" is valued by 31.2%.\n\nThis data reveals a profound shift in parental focus, prioritizing cognitive and exploratory development over purely physical outcomes. The high value placed on curiosity and observation suggests an awareness that outdoor environments serve as vital, unstructured classrooms where children learn through discovery and sensory engagement. Meanwhile, the recognition of parent-child interaction highlights an understanding of the relational and emotional benefits derived from shared outdoor experiences.\n\nIn an age dominated by digital screens, these findings underscore a collective yearning for reconnection with the natural world as a foundation for holistic growth. In conclusion, the survey underscores that outdoor activities are not merely recreational but essential for nurturing inquisitive, observant, and well-rounded individuals. Parents and educators should therefore actively create and protect opportunities for children to explore, play, and connect outdoors.",
-   "sample_cn": "该图表呈现了一项关于儿童户外活动益处认知的调查结果。数据显示，\"满足好奇心\"和\"提升观察能力\"被认为是最重要的益处，分别得到 54.5% 和 54.6% 受访者的认可。紧随其后，\"增强体质\"得到 33.2% 受访者的认同，而\"增进亲子互动\"得到 31.2% 的认同。\n\n这一数据揭示了家长关注点的深刻转变——他们更看重认知与探索能力的发展，而非单纯的体能成果。对好奇心和观察力的高度重视，表明人们意识到户外环境是重要的非结构化课堂，孩子们在探索和感官体验中学习。与此同时，对亲子互动的认可，凸显了人们理解共同户外体验所带来的情感与关系层面的益处。\n\n在数字屏幕主导的时代，这些发现凸显了人们渴望重新与自然建立联系、将其作为全面发展基础的集体诉求。总之，这项调查表明，户外活动不仅是娱乐，更是培养好奇、善于观察、全面发展的个体的必要途径。家长和教育者应当积极创造并守护孩子们在户外探索、玩耍和联结的机会。"
+   "sample_cn": "该图表呈现了一项关于儿童户外活动益处认知的调查结果。数据显示，\"满足好奇心\"和\"提升观察能力\"被认为是最重要的益处，分别得到 54.5% 和 54.6% 受访者的认可。紧随其后，\"增强体质\"得到 33.2% 受访者的认同，而\"增进亲子互动\"得到 31.2% 的认同。\n\n这一数据揭示了家长关注点的深刻转变——他们更看重认知与探索能力的发展，而非单纯的体能成果。对好奇心和观察力的高度重视，表明人们意识到户外环境是重要的非结构化课堂，孩子们在探索和感官体验中学习。与此同时，对亲子互动的认可，凸显了人们理解共同户外体验所带来的情感与关系层面的益处。\n\n在数字屏幕主导的时代，这些发现凸显了人们渴望重新与自然建立联系、将其作为全面发展基础的集体诉求。总之，这项调查表明，户外活动不仅是娱乐，更是培养好奇、善于观察、全面发展的个体的必要途径。家长和教育者应当积极创造并守护孩子们在户外探索、玩耍和联结的机会。",
+   "chart_img": "img/2026_writingb_chart.svg",
+   "apply": {
+    "apply_en": "The bar chart presents an uneven distribution among the perceived benefits of children's outdoor activities. Satisfying curiosity accounts for the largest share, at 54.6%. Enhancing observation skills follows closely, representing 54.5%. In contrast, improving physical fitness and strengthening parent-child interaction make up relatively smaller proportions of 37.2% and 33.2% respectively.\n\nThe findings are closely linked to rising public awareness of children's all-round development. On the one hand, the high value placed on curiosity and observation suggests that parents increasingly regard the outdoor world as a vivid classroom where children learn through discovery. On the other hand, as daily life becomes more sedentary, outdoor activities serve as a practical way to build physical fitness and tighten family bonds. Seen in this light, the pattern of opinions is a natural consequence of changing parenting ideas.\n\nFor children to benefit more from outdoor activities, both families and schools should act reasonably. Families should set aside regular time for outdoor play, while schools should design more activity-based courses.",
+    "apply_cn": "该柱状图呈现了人们对儿童户外活动各项益处看法之间的不均衡分布。满足好奇心占比最大，达 54.6%。促进观察力紧随其后，占 54.5%。相比之下，强身健体与增强亲子互动占比相对较小，分别为 37.2% 和 33.2%。\n\n调查结果与公众对儿童全面发展意识的提高密切相关。一方面，人们对好奇心与观察力的高度重视表明，家长日益把户外世界视为孩子通过探索来学习的生动课堂；另一方面，随着日常生活愈发久坐化，户外活动成为强健体魄、密切亲子关系的实用途径。由此可见，这一看法格局是育儿观念变化的自然结果。\n\n要让孩子从户外活动中获益更多，家庭与学校都应理性行事。家庭应留出固定的户外活动时间，学校应设计更多以活动为主的课程。",
+    "tips": [
+     "柱状图 4 项、两项相近（54.6% / 54.5%）→ 前两项并列，后两项用 In contrast 合并。",
+     "\"人们看法\"类图表（survey）第二段用校园类/体育健康类模板，落点写\"全面发展 + 育儿观念\"。",
+     "注意题干是 people's views，写原因时要写\"家长/公众为什么这样认为\"，而非\"儿童为什么喜欢户外\"。",
+     "数字若与官方图有出入，以考场原图为准，本示范按 54.6 / 54.5 / 37.2 / 33.2 撰写。"
+    ],
+    "key_phrases": [
+     {
+      "en": "presents an uneven distribution among the perceived benefits of …",
+      "cn": "呈现了人们对……各项益处的看法分布"
+     },
+     {
+      "en": "accounts for the largest share, at …%",
+      "cn": "占比最大，达……%"
+     },
+     {
+      "en": "follows closely, representing …%",
+      "cn": "紧随其后，占……%"
+     },
+     {
+      "en": "regard … as a vivid classroom where children learn through discovery",
+      "cn": "把……视为孩子通过探索来学习的生动课堂"
+     },
+     {
+      "en": "a natural consequence of changing parenting ideas",
+      "cn": "育儿观念变化的自然结果"
+     }
+    ]
+   }
   }
  ]
 }

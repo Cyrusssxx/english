@@ -2,7 +2,7 @@
  * 预缓存全部页面/样式/脚本/题库/图标，安装后完全离线可用。
  * 升级题库或代码后：CACHE_VER 会随资源内容自动变化，客户端自动换新缓存。
  */
-const CACHE_VER = 'en2-13ed8301';
+const CACHE_VER = 'en2-a2fb430e';
 
 const PRECACHE = [
     'index.html',
@@ -29,6 +29,7 @@ const PRECACHE = [
     'data/topic_map.json',
     'js/writing.js',
     'data/writing_templates.json',
+    'data/writing_apply.json',
     'manifest.webmanifest',
     'css/style.css',
     'js/annotate-lite.js',
@@ -109,6 +110,7 @@ const PRECACHE = [
     'img/2023_writingb_chart.png',
     'img/2024_writingb_chart.png',
     'img/2025_writingb_chart.png',
+    'img/2026_writingb_chart.svg',
     'icons/favicon.svg',
     'icons/icon-192.png',
     'icons/icon-512.png'

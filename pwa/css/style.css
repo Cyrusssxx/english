@@ -3215,3 +3215,60 @@ html.dark .q-tip {
     .wr-en { font-size: .9rem; }
     .wr-table { min-width: 560px; font-size: .8rem; }
 }
+
+/* ===== 作文：模板套用示范（置于参考范文上方） ===== */
+.writing-apply {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--primary);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 16px 0;
+}
+.wr-apply-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.wr-apply-head .rs-label { margin-bottom: 0; }
+.ap-note { color: var(--text-light); font-size: .78rem; margin: 6px 0 10px; }
+.apply-en {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: .92rem; line-height: 1.9; color: var(--text);
+    white-space: pre-line;
+}
+.apply-cn {
+    font-size: .85rem; line-height: 1.85; color: var(--text-light);
+    margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border);
+    white-space: pre-line;
+}
+.ap-sub {
+    font-size: .84rem; font-weight: 700; color: var(--primary);
+    margin: 14px 0 8px; padding-top: 10px; border-top: 1px solid var(--border);
+}
+.apply-tips { margin: 0; padding-left: 20px; }
+.apply-tips li { color: var(--text); font-size: .84rem; line-height: 1.75; margin: 4px 0; }
+.apply-tips li b { color: var(--primary); }
+.ap-phrases { display: flex; flex-direction: column; gap: 6px; }
+.ap-phrase {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 7px 11px;
+}
+.ap-phrase-en { font-family: Georgia, "Times New Roman", serif; font-size: .88rem; color: var(--text); font-weight: 600; }
+.ap-phrase-cn { font-size: .8rem; color: var(--text-light); }
+.dark .writing-apply { border-left-color: var(--primary); }
+
+/* 题目要求中文翻译 */
+.writing-directions-cn {
+    font-size: .84rem; color: var(--text-light); line-height: 1.75;
+    margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border);
+}
+
+/* 适配表：真题套用示范列 */
+.wr-t-apply { white-space: nowrap; }
+.wr-exp-btn {
+    border: 1px solid var(--primary); background: var(--card); color: var(--primary);
+    font: inherit; font-size: .74rem; padding: 2px 10px; border-radius: 999px; cursor: pointer;
+    transition: background .15s, color .15s;
+}
+.wr-exp-btn:hover { background: var(--primary); color: #fff; }
+.wr-apply-row > td { background: var(--bg) !important; padding: 0 !important; }
+.wr-apply-detail { padding: 14px 16px; border-left: 4px solid var(--primary); }
+.wr-apply-title { font-size: .88rem; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
