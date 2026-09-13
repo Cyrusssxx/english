@@ -12,7 +12,7 @@
  },
  "chart_guide": {
   "title": "图表适配表（2007–2026 英语二大作文）",
-  "desc": "先认图表：动态图（有时间变化）用动态第一段；静态图（只比占例）用静态第一段。同一模板靠「换图名 + 选功能句」即可覆盖所有年份。",
+  "desc": "先认图表：动态图（有时间变化）用动态第一段；静态图（只比占比）用静态第一段。下表不按年份排列，而是按「动态 / 静态 → 走势特征」分组：同一组的年份可直接套同一组功能句，只需换关键词与数据。",
   "table": [
    {
     "year": "2010",
@@ -20,55 +20,9 @@
     "items": 2,
     "trend": "都升，速度不同",
     "type": "动态",
-    "hint": "发展中国家 vs 发达国家手机用户：While A rose from…, B climbed from…"
-   },
-   {
-    "year": "2011",
-    "chart": "柱状 bar",
-    "items": 3,
-    "trend": "有升有降",
-    "type": "动态",
-    "hint": "国产/日系/美系份额：A rose while B and C fell"
-   },
-   {
-    "year": "2012",
-    "chart": "柱状 bar",
-    "items": 4,
-    "trend": "分布比高低",
-    "type": "静态",
-    "hint": "不同年龄段满意度：用 accounts for / the largest share"
-   },
-   {
-    "year": "2013",
-    "chart": "柱状 bar",
-    "items": 1,
-    "trend": "单值逐年上升",
-    "type": "动态",
-    "hint": "兼职比例上升：只写一条上升线，配 steady upward trend"
-   },
-   {
-    "year": "2014",
-    "chart": "柱状 bar",
-    "items": 2,
-    "trend": "一升一降",
-    "type": "动态",
-    "hint": "城乡人口：A climbed…, while B fell…（By contrast）"
-   },
-   {
-    "year": "2015",
-    "chart": "饼图 pie",
-    "items": 5,
-    "trend": "占比分布",
-    "type": "静态",
-    "hint": "春节花销比例：largest share / middle group / small proportions"
-   },
-   {
-    "year": "2016",
-    "chart": "饼图 pie",
-    "items": 5,
-    "trend": "占比分布",
-    "type": "静态",
-    "hint": "旅游目的占比：ditto"
+    "hint": "发展中国家 vs 发达国家手机用户：While A rose from…, B climbed from…",
+    "pattern": "同向上升",
+    "group": "动态图 · 同向上升（事物一起涨，比速度 / 幅度）"
    },
    {
     "year": "2017",
@@ -76,39 +30,9 @@
     "items": 2,
     "trend": "都升",
     "type": "动态",
-    "hint": "博物馆数量与参观人数：both rose steadily"
-   },
-   {
-    "year": "2018",
-    "chart": "饼图 pie",
-    "items": 4,
-    "trend": "占比分布",
-    "type": "静态",
-    "hint": "选餐厅关注因素：ditto"
-   },
-   {
-    "year": "2019",
-    "chart": "柱状 bar",
-    "items": 3,
-    "trend": "两年对比变化",
-    "type": "动态",
-    "hint": "就业/升学/创业去向：A rose while B fell"
-   },
-   {
-    "year": "2020",
-    "chart": "饼图 pie",
-    "items": 4,
-    "trend": "占比分布",
-    "type": "静态",
-    "hint": "手机阅读目的：ditto"
-   },
-   {
-    "year": "2021",
-    "chart": "柱状 bar",
-    "items": 4,
-    "trend": "占比分布",
-    "type": "静态",
-    "hint": "锻炼方式：独自超半数（largest share）"
+    "hint": "博物馆数量与参观人数：both rose steadily",
+    "pattern": "同向上升",
+    "group": "动态图 · 同向上升（事物一起涨，比速度 / 幅度）"
    },
    {
     "year": "2022",
@@ -116,7 +40,19 @@
     "items": 2,
     "trend": "都升，幅度不同",
     "type": "动态",
-    "hint": "快递业务量（总体 vs 农村）：While A rose from…, B climbed from…"
+    "hint": "快递业务量（总体 vs 农村）：While A rose from…, B climbed from…",
+    "pattern": "同向上升",
+    "group": "动态图 · 同向上升（事物一起涨，比速度 / 幅度）"
+   },
+   {
+    "year": "2013",
+    "chart": "柱状 bar",
+    "items": 1,
+    "trend": "单值逐年上升",
+    "type": "动态",
+    "hint": "兼职比例上升：只写一条上升线，配 steady upward trend",
+    "pattern": "单线上升",
+    "group": "动态图 · 单线上升（只有一条线，别硬写对比）"
    },
    {
     "year": "2023",
@@ -124,7 +60,99 @@
     "items": 1,
     "trend": "单线持续升",
     "type": "动态",
-    "hint": "居民健康素养：一条线 + steady upward trend / plateaued"
+    "hint": "居民健康素养：一条线 + steady upward trend / plateaued",
+    "pattern": "单线上升",
+    "group": "动态图 · 单线上升（只有一条线，别硬写对比）"
+   },
+   {
+    "year": "2011",
+    "chart": "柱状 bar",
+    "items": 3,
+    "trend": "有升有降",
+    "type": "动态",
+    "hint": "国产/日系/美系份额：A rose while B and C fell",
+    "pattern": "升降混合",
+    "group": "动态图 · 升降混合（有升有降，必须写转折对比）"
+   },
+   {
+    "year": "2014",
+    "chart": "柱状 bar",
+    "items": 2,
+    "trend": "一升一降",
+    "type": "动态",
+    "hint": "城乡人口：A climbed…, while B fell…（By contrast）",
+    "pattern": "升降混合",
+    "group": "动态图 · 升降混合（有升有降，必须写转折对比）"
+   },
+   {
+    "year": "2019",
+    "chart": "柱状 bar",
+    "items": 3,
+    "trend": "两年对比变化",
+    "type": "动态",
+    "hint": "就业/升学/创业去向：A rose while B fell",
+    "pattern": "升降混合",
+    "group": "动态图 · 升降混合（有升有降，必须写转折对比）"
+   },
+   {
+    "year": "2012",
+    "chart": "柱状 bar",
+    "items": 4,
+    "trend": "分布比高低",
+    "type": "静态",
+    "hint": "不同年龄段满意度：用 accounts for / the largest share",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
+   },
+   {
+    "year": "2015",
+    "chart": "饼图 pie",
+    "items": 5,
+    "trend": "占比分布",
+    "type": "静态",
+    "hint": "春节花销比例：largest share / middle group / small proportions",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
+   },
+   {
+    "year": "2016",
+    "chart": "饼图 pie",
+    "items": 5,
+    "trend": "占比分布",
+    "type": "静态",
+    "hint": "旅游目的占比：ditto",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
+   },
+   {
+    "year": "2018",
+    "chart": "饼图 pie",
+    "items": 4,
+    "trend": "占比分布",
+    "type": "静态",
+    "hint": "选餐厅关注因素：ditto",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
+   },
+   {
+    "year": "2020",
+    "chart": "饼图 pie",
+    "items": 4,
+    "trend": "占比分布",
+    "type": "静态",
+    "hint": "手机阅读目的：ditto",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
+   },
+   {
+    "year": "2021",
+    "chart": "柱状 bar",
+    "items": 4,
+    "trend": "占比分布",
+    "type": "静态",
+    "hint": "锻炼方式：独自超半数（largest share）",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
    },
    {
     "year": "2024",
@@ -132,7 +160,9 @@
     "items": 4,
     "trend": "占比分布",
     "type": "静态",
-    "hint": "劳动实践课收获：ditto"
+    "hint": "劳动实践课收获：ditto",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
    },
    {
     "year": "2025",
@@ -140,7 +170,9 @@
     "items": 5,
     "trend": "占比分布",
     "type": "静态",
-    "hint": "老年人休闲活动：ditto"
+    "hint": "老年人休闲活动：ditto",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
    },
    {
     "year": "2026",
@@ -148,7 +180,9 @@
     "items": 4,
     "trend": "占比分布",
     "type": "静态",
-    "hint": "儿童户外活动益处：满足好奇心 54.6% / 促进观察力 54.5% / 强身健体 37.2% / 增强亲子互动 33.2%（用 largest share / follows closely / In contrast）"
+    "hint": "儿童户外活动益处：满足好奇心 54.6% / 促进观察力 54.5% / 强身健体 37.2% / 增强亲子互动 33.2%（用 largest share / follows closely / In contrast）",
+    "pattern": "占比分布",
+    "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
    }
   ],
   "decisions": [

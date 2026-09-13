@@ -104,6 +104,114 @@ function wrToggleApply(i) {
     if (btn) btn.textContent = show ? '收起示范 ▴' : '展开示范 ▾';
 }
 
+/* ==================== 悬浮目录（左侧） ==================== */
+const WR_TOC_KEY = 'wr_toc_fold';
+const WR_TOC_NARROW = 1180;
+
+function wrNavH() {
+    const n = document.querySelector('.navbar');
+    return n ? n.getBoundingClientRect().height : 56;
+}
+
+/** 收集目录条目：适配表 → 选句决策 → 各分区（一级）+ 各模板卡（二级） */
+function wrTocItems() {
+    const items = [];
+    if (document.getElementById('wrGuideBlock')) items.push({ lv: 1, id: 'wrGuideBlock', text: '图表适配表' });
+    if (document.getElementById('wrDecisionsTitle')) items.push({ lv: 2, id: 'wrDecisionsTitle', text: '选句决策' });
+    document.querySelectorAll('#wrContent h2.wr-h2').forEach(h => {
+        items.push({ lv: 1, id: h.id, text: h.textContent.trim() });
+        let n = h.nextElementSibling;
+        while (n && n.tagName === 'SECTION') {
+            const t = n.querySelector('.wr-card-title');
+            if (n.id && t) items.push({ lv: 2, id: n.id, text: t.textContent.trim() });
+            n = n.nextElementSibling;
+        }
+    });
+    return items;
+}
+
+function wrTocBuild() {
+    const list = document.getElementById('wrTocList');
+    if (!list) return;
+    const items = wrTocItems();
+    list.innerHTML = items.map(x =>
+        `<a class="lv${x.lv}" href="#${wrEsc(x.id)}" data-target="${wrEsc(x.id)}">${wrEsc(x.text)}</a>`).join('');
+    wrTocApplyFold(localStorage.getItem(WR_TOC_KEY) === '1' || window.innerWidth <= WR_TOC_NARROW);
+    wrTocSpy();
+}
+
+/** 滚动高亮当前所在章节 */
+function wrTocSpy() {
+    const list = document.getElementById('wrTocList');
+    if (!list || document.body.classList.contains('wr-toc-folded') && window.innerWidth > WR_TOC_NARROW) return;
+    const links = Array.prototype.slice.call(list.querySelectorAll('a[data-target]'));
+    const top = wrNavH() + 24;
+    let cur = null;
+    for (const a of links) {
+        const el = document.getElementById(a.dataset.target);
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= top) cur = a; else break;
+    }
+    if (!cur) cur = links[0];
+    links.forEach(a => a.classList.toggle('on', a === cur));
+    if (cur && list.scrollHeight > list.clientHeight + 4) {
+        const r = cur.getBoundingClientRect(), lr = list.getBoundingClientRect();
+        if (r.top < lr.top || r.bottom > lr.bottom) list.scrollTop += r.top - lr.top - 24;
+    }
+}
+
+function wrTocApplyFold(folded) {
+    document.body.classList.toggle('wr-toc-folded', !!folded);
+    try { localStorage.setItem(WR_TOC_KEY, folded ? '1' : '0'); } catch (e) { /* ignore */ }
+    if (folded && !document.body.classList.contains('wr-toc-open')) wrTocClose();
+}
+
+function wrTocToggleFold() {
+    wrTocApplyFold(!document.body.classList.contains('wr-toc-folded'));
+}
+
+function wrTocOpen() {
+    if (window.innerWidth <= WR_TOC_NARROW) {
+        document.body.classList.add('wr-toc-open');
+        const m = document.getElementById('wrTocMask');
+        if (m) m.hidden = false;
+    } else {
+        wrTocApplyFold(false);
+    }
+    wrTocSpy();
+}
+
+function wrTocClose() {
+    document.body.classList.remove('wr-toc-open');
+    const m = document.getElementById('wrTocMask');
+    if (m) m.hidden = true;
+}
+
+function wrTocGo(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - wrNavH() - 12;
+    window.scrollTo({ top: y < 0 ? 0 : y, behavior: 'smooth' });
+    try { history.replaceState(null, '', '#' + id); } catch (e) { /* ignore */ }
+    if (window.innerWidth <= WR_TOC_NARROW) wrTocClose();
+}
+
+function wrTocBind() {
+    const list = document.getElementById('wrTocList');
+    if (!list) return;
+    list.addEventListener('click', e => {
+        const a = e.target.closest && e.target.closest('a[data-target]');
+        if (!a) return;
+        e.preventDefault();
+        wrTocGo(a.dataset.target);
+    });
+    window.addEventListener('scroll', wrTocSpy, { passive: true });
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > WR_TOC_NARROW) wrTocClose();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') wrTocClose(); });
+}
+
 async function initWriting() {
     try {
         const res = await fetch('data/writing_templates.json', { cache: 'no-cache' });
@@ -131,12 +239,18 @@ async function initWriting() {
     const g = WR.chart_guide || {};
     document.getElementById('wrGuideTitle').textContent = g.title || '图表适配表';
     document.getElementById('wrGuideDesc').textContent = g.desc || '';
+    let lastGroup = null;
     document.querySelector('#wrChartTable tbody').innerHTML = (g.table || []).map((row, i) => {
         const ap = APPLY[row.year];
         const cell = ap
             ? `<button class="wr-exp-btn" onclick="wrToggleApply(${i})">展开示范 ▾</button>`
             : `<span class="wr-t-hint">—</span>`;
-        return `
+        let head = '';
+        if (row.group && row.group !== lastGroup) {
+            lastGroup = row.group;
+            head = `<tr class="wr-group-row"><td colspan="7">${wrEsc(row.group)}</td></tr>`;
+        }
+        return `${head}
         <tr>
             <td class="wr-t-year">${wrEsc(row.year)}</td>
             <td>${wrEsc(row.chart)}</td>
@@ -159,13 +273,16 @@ async function initWriting() {
     for (const s of WR.sections || []) {
         (groups[s.group] || (groups[s.group] = [])).push(s);
     }
-    document.getElementById('wrContent').innerHTML = Object.keys(groups).map(gname => `
-        <h2 class="wr-h2">${wrEsc(gname)}</h2>
+    document.getElementById('wrContent').innerHTML = Object.keys(groups).map((gname, gi) => `
+        <h2 class="wr-h2" id="wrGroup${gi}">${wrEsc(gname)}</h2>
         ${groups[gname].map(wrSectionCard).join('')}`).join('');
+
+    wrTocBuild();
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initWriting);
+    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); initWriting(); });
 } else {
+    wrTocBind();
     initWriting();
 }
