@@ -266,6 +266,134 @@
    "tips": [
     "换词能力靠积累：后续可直接用翻译软件查词替换，不必死记。",
     "图型英文先记住：柱状 bar chart、饼图 pie chart、折线 line chart、表格 table——把首句 This chart 改成 This xx chart。"
+   ],
+   "en_struct": [
+    [
+     [
+      "The {{chart}} chart",
+      "t"
+     ],
+     [
+      " presents",
+      "p"
+     ],
+     [
+      " an uneven distribution",
+      "o"
+     ],
+     [
+      " among the categories associated with {{题目相关词}}",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "{{事物1}}",
+      "t"
+     ],
+     [
+      " accounts for",
+      "p"
+     ],
+     [
+      " the largest share",
+      "o"
+     ],
+     [
+      ", at {{百分比1}}",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "{{事物2}} and {{事物3}}",
+      "t"
+     ],
+     [
+      " form",
+      "p"
+     ],
+     [
+      " the middle group",
+      "o"
+     ],
+     [
+      ", representing {{百分比2}} and {{百分比3}}, respectively",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "In contrast",
+      "trans"
+     ],
+     [
+      ", ",
+      ""
+     ],
+     [
+      "{{事物4}} and {{事物5}}",
+      "t"
+     ],
+     [
+      " make up",
+      "p"
+     ],
+     [
+      " relatively small proportions of {{百分比4}} and {{百分比5}}",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "presents an uneven distribution",
+     "呈现出不均匀的分布"
+    ],
+    [
+     "associated with",
+     "与…相关的"
+    ],
+    [
+     "accounts for the largest share",
+     "所占比例最大"
+    ],
+    [
+     "at 54.6%",
+     "达到某比例（at + 数字）"
+    ],
+    [
+     "form the middle group",
+     "处于中间位置"
+    ],
+    [
+     "respectively",
+     "分别地（对应前面两个数字）"
+    ],
+    [
+     "make up relatively small proportions",
+     "占比较小"
+    ],
+    [
+     "In contrast",
+     "相比之下（引出对比）"
+    ]
    ]
   },
   {
@@ -301,6 +429,140 @@
    "tips": [
     "同向专用词组：in a uniform direction（朝同一方向）、during the periods presented（在相应时期）。",
     "两事物同向但速度不同：用 while 连接两个 rose/climbed 即可，无需 By contrast。"
+   ],
+   "en_struct": [
+    [
+     [
+      "The line chart",
+      "t"
+     ],
+     [
+      " shows",
+      "p"
+     ],
+     [
+      " that",
+      "lead"
+     ],
+     [
+      " the items associated with {{题目相关词}}",
+      "t"
+     ],
+     [
+      " did not move in a uniform direction",
+      "p"
+     ],
+     [
+      " during the periods presented",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "{{事物1}}",
+      "t"
+     ],
+     [
+      " climbed",
+      "p"
+     ],
+     [
+      " from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}",
+      ""
+     ],
+     [
+      ", while",
+      "trans"
+     ],
+     [
+      " {{事物2}}",
+      "t"
+     ],
+     [
+      " rose",
+      "p"
+     ],
+     [
+      " from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "By contrast",
+      "trans"
+     ],
+     [
+      ", ",
+      ""
+     ],
+     [
+      "{{事物3}}",
+      "t"
+     ],
+     [
+      " fell",
+      "p"
+     ],
+     [
+      " from {{数字5}} in {{时间5}} to {{数字6}} in {{时间6}}",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "shows that",
+     "表明（引出宾语从句）"
+    ],
+    [
+     "associated with",
+     "与…相关的"
+    ],
+    [
+     "did not move in a uniform direction",
+     "变化方向并不一致（同向上升时改写）"
+    ],
+    [
+     "during the periods presented",
+     "在所示时期内"
+    ],
+    [
+     "climbed from … to …",
+     "从…攀升至…"
+    ],
+    [
+     "rose from … to …",
+     "从…上升至…"
+    ],
+    [
+     "over the same span",
+     "在同一时期"
+    ],
+    [
+     "while",
+     "而（一句内对比两事物）"
+    ],
+    [
+     "By contrast",
+     "相比之下（另起对比）"
+    ],
+    [
+     "the pace of growth differed sharply",
+     "增速差异显著"
+    ]
    ]
   },
   {
@@ -311,7 +573,185 @@
    "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life. Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living. Consequently, {{题目相关词}} has gradually become integrated into everyday life, while its practical value has gained wider recognition. Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
    "cn": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。{{题目相关词}} 因此逐渐融入日常生活，其实际作用也得到更多认可。由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
    "note": "示例套用（2014 城乡人口）：城乡人口变化之所以受到越来越多关注，是因为它能够反映人们在经济发展中的生活选择……城镇化因此逐渐融入国家发展进程。",
-   "sentences": []
+   "sentences": [],
+   "en_struct": [
+    [
+     [
+      "Growing public attention to {{题目相关词}}",
+      "t"
+     ],
+     [
+      " stems from",
+      "p"
+     ],
+     [
+      " its ability to meet practical needs in everyday life",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Undoubtedly",
+      ""
+     ],
+     [
+      ", the country's rapid economic growth",
+      "t"
+     ],
+     [
+      " has laid",
+      "p"
+     ],
+     [
+      " a solid material foundation",
+      "o"
+     ],
+     [
+      " for the emergence of {{题目相关词}}",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "As",
+      "lead"
+     ],
+     [
+      " the pace of life accelerates",
+      ""
+     ],
+     [
+      ", individuals",
+      "t"
+     ],
+     [
+      " attach",
+      "p"
+     ],
+     [
+      " greater importance to convenience and efficiency",
+      "o"
+     ],
+     [
+      " and become increasingly willing to embrace new ways of living",
+      "p"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Consequently",
+      "caus"
+     ],
+     [
+      ", ",
+      ""
+     ],
+     [
+      "{{题目相关词}}",
+      "t"
+     ],
+     [
+      " has gradually become integrated into",
+      "p"
+     ],
+     [
+      " everyday life",
+      "o"
+     ],
+     [
+      ", while",
+      "trans"
+     ],
+     [
+      " its practical value",
+      "t"
+     ],
+     [
+      " has gained",
+      "p"
+     ],
+     [
+      " wider recognition",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Seen in this light",
+      ""
+     ],
+     [
+      ", the development of {{题目相关词}}",
+      "t"
+     ],
+     [
+      " is no coincidence but a natural consequence of broader changes in social life",
+      "p"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "Growing public attention to …",
+     "公众对…日益关注"
+    ],
+    [
+     "stems from",
+     "源于"
+    ],
+    [
+     "meet practical needs",
+     "满足实际需求"
+    ],
+    [
+     "lay a solid material foundation for",
+     "为…奠定坚实的物质基础"
+    ],
+    [
+     "the emergence of …",
+     "…的出现"
+    ],
+    [
+     "as the pace of life accelerates",
+     "随着生活节奏加快"
+    ],
+    [
+     "attach greater importance to",
+     "更加重视"
+    ],
+    [
+     "become integrated into everyday life",
+     "融入日常生活"
+    ],
+    [
+     "gain wider recognition",
+     "得到更广泛认可"
+    ],
+    [
+     "Seen in this light",
+     "由此观之（总结句开头）"
+    ]
+   ]
   },
   {
    "id": "para2_campus",
@@ -321,7 +761,297 @@
    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. {{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. In this process, individuals gradually become less dependent on external reminders and begin to take responsibility for their own choices. Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。在这一过程中，个人会逐步减少对外界提醒的依赖，并开始主动为自己的选择负责。最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
    "negative_en": "The harmful influence of {{题目相关词}} is not confined to a single action; rather, it can continue to disrupt the way individuals handle everyday responsibilities. {{题目相关词}} can cause individuals to approach routine tasks with less commitment, making them more likely to give up when temporary difficulties arise. In this process, individuals may become increasingly dependent on external reminders and less willing to take responsibility for their own choices. Ultimately, {{题目相关词}} can not only undermine individuals' present conduct but also weaken their capacity for self-management, thereby creating a persistent obstacle to future growth.",
-   "negative_cn": "{{题目相关词}} 的消极影响，并不会局限于某一次行为，而会持续干扰个人处理日常事务的方式。{{题目相关词}} 可能使个人以敷衍的态度处理日常任务，并在遇到暂时困难时轻易放弃。在这一过程中，个人可能越来越依赖外界提醒，也更不愿意为自己的选择负责。最终，{{题目相关词}} 不仅会损害个人当下的行为表现，也会削弱其自我管理能力，从而长期阻碍个人成长。"
+   "negative_cn": "{{题目相关词}} 的消极影响，并不会局限于某一次行为，而会持续干扰个人处理日常事务的方式。{{题目相关词}} 可能使个人以敷衍的态度处理日常任务，并在遇到暂时困难时轻易放弃。在这一过程中，个人可能越来越依赖外界提醒，也更不愿意为自己的选择负责。最终，{{题目相关词}} 不仅会损害个人当下的行为表现，也会削弱其自我管理能力，从而长期阻碍个人成长。",
+   "en_struct": [
+    [
+     [
+      "The influence of {{题目相关词}}",
+      "t"
+     ],
+     [
+      " is not confined to",
+      "p"
+     ],
+     [
+      " a single action",
+      "o"
+     ],
+     [
+      "; rather",
+      "trans"
+     ],
+     [
+      ", it",
+      "t"
+     ],
+     [
+      " continues to shape",
+      "p"
+     ],
+     [
+      " the way individuals handle everyday responsibilities",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "{{题目相关词}}",
+      "t"
+     ],
+     [
+      " can enable",
+      "p"
+     ],
+     [
+      " individuals to approach routine tasks with greater maturity",
+      "o"
+     ],
+     [
+      ", preventing them from giving up too readily in the face of temporary difficulties",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "In this process",
+      ""
+     ],
+     [
+      ", individuals",
+      "t"
+     ],
+     [
+      " gradually become",
+      "p"
+     ],
+     [
+      " less dependent on external reminders",
+      "o"
+     ],
+     [
+      " and begin to take responsibility for their own choices",
+      "p"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Ultimately",
+      ""
+     ],
+     [
+      ", {{题目相关词}}",
+      "t"
+     ],
+     [
+      " can not only improve",
+      "p"
+     ],
+     [
+      " individuals' present conduct",
+      "o"
+     ],
+     [
+      " but also strengthen",
+      "p"
+     ],
+     [
+      " their capacity for self-management",
+      "o"
+     ],
+     [
+      ", thereby",
+      "caus"
+     ],
+     [
+      " laying a solid foundation for their future growth",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "is not confined to",
+     "不局限于"
+    ],
+    [
+     "shape the way sb handle …",
+     "塑造某人处理…的方式"
+    ],
+    [
+     "enable sb to do sth",
+     "使某人能够做…"
+    ],
+    [
+     "approach routine tasks with greater maturity",
+     "更成熟地处理日常事务"
+    ],
+    [
+     "prevent sb from giving up",
+     "防止某人放弃"
+    ],
+    [
+     "in the face of temporary difficulties",
+     "面对暂时的困难"
+    ],
+    [
+     "take responsibility for",
+     "为…承担责任"
+    ],
+    [
+     "not only … but also …",
+     "不仅…而且…（句子加长利器）"
+    ],
+    [
+     "strengthen the capacity for self-management",
+     "增强自我管理能力"
+    ],
+    [
+     "lay a solid foundation for future growth",
+     "为未来成长打下坚实基础"
+    ]
+   ],
+   "negative_struct": [
+    [
+     [
+      "The harmful influence of {{题目相关词}}",
+      "t"
+     ],
+     [
+      " is not confined to",
+      "p"
+     ],
+     [
+      " a single action",
+      "o"
+     ],
+     [
+      "; rather",
+      "trans"
+     ],
+     [
+      ", it",
+      "t"
+     ],
+     [
+      " can continue to disrupt",
+      "p"
+     ],
+     [
+      " the way individuals handle everyday responsibilities",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "{{题目相关词}}",
+      "t"
+     ],
+     [
+      " can cause",
+      "p"
+     ],
+     [
+      " individuals to approach routine tasks with less commitment",
+      "o"
+     ],
+     [
+      ", making them more likely to give up",
+      ""
+     ],
+     [
+      " when",
+      "lead"
+     ],
+     [
+      " temporary difficulties arise",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "In this process",
+      ""
+     ],
+     [
+      ", individuals",
+      "t"
+     ],
+     [
+      " may become",
+      "p"
+     ],
+     [
+      " increasingly dependent on external reminders and less willing to take responsibility for their own choices",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Ultimately",
+      ""
+     ],
+     [
+      ", {{题目相关词}}",
+      "t"
+     ],
+     [
+      " can not only undermine",
+      "p"
+     ],
+     [
+      " individuals' present conduct",
+      "o"
+     ],
+     [
+      " but also weaken",
+      "p"
+     ],
+     [
+      " their capacity for self-management",
+      "o"
+     ],
+     [
+      ", thereby",
+      "caus"
+     ],
+     [
+      " creating a persistent obstacle to future growth",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ]
   },
   {
    "id": "para2_env",
@@ -329,7 +1059,159 @@
    "title": "环境生态类第二段",
    "subtitle": "也可归入校园类，改几个词即可",
    "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of environmental protection and increasingly favorable conditions for environmental action. Improved environmental infrastructure makes it easier for people to participate in environmental protection, while a wider range of environmental practices enables different groups to make choices suited to their own circumstances. As environmental protection becomes increasingly integrated into everyday life, the number of people willing to take part in related initiatives will continue to grow. For this reason, {{题目相关词}} not only reflects the continued advancement of ecological conservation but also demonstrates the growing acceptance of green living.",
-   "cn": "{{题目相关词}} 所反映的变化，与公众环保意识的提高和公共环境条件的改善密切相关。更加完善的环保设施为人们参与环境保护提供了便利，而多样化的环保方式也使不同群体能够根据自身情况作出选择。随着环境保护逐渐融入日常生活，愿意参与相关行动的人数也会不断增加。正因如此，{{题目相关词}} 不仅体现了生态文明建设的持续推进，也说明绿色生活正在得到更加广泛的认可。"
+   "cn": "{{题目相关词}} 所反映的变化，与公众环保意识的提高和公共环境条件的改善密切相关。更加完善的环保设施为人们参与环境保护提供了便利，而多样化的环保方式也使不同群体能够根据自身情况作出选择。随着环境保护逐渐融入日常生活，愿意参与相关行动的人数也会不断增加。正因如此，{{题目相关词}} 不仅体现了生态文明建设的持续推进，也说明绿色生活正在得到更加广泛的认可。",
+   "en_struct": [
+    [
+     [
+      "Changes reflected in {{题目相关词}}",
+      "t"
+     ],
+     [
+      " are closely linked to",
+      "p"
+     ],
+     [
+      " rising public awareness of environmental protection and increasingly favorable conditions for environmental action",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Improved environmental infrastructure",
+      "t"
+     ],
+     [
+      " makes it easier",
+      "p"
+     ],
+     [
+      " for people to participate in environmental protection",
+      "o"
+     ],
+     [
+      ", while",
+      "trans"
+     ],
+     [
+      " a wider range of environmental practices",
+      "t"
+     ],
+     [
+      " enables",
+      "p"
+     ],
+     [
+      " different groups to make choices suited to their own circumstances",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "As",
+      "lead"
+     ],
+     [
+      " environmental protection becomes increasingly integrated into everyday life",
+      ""
+     ],
+     [
+      ", the number of people willing to take part in related initiatives",
+      "t"
+     ],
+     [
+      " will continue to grow",
+      "p"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "For this reason",
+      "caus"
+     ],
+     [
+      ", ",
+      ""
+     ],
+     [
+      "{{题目相关词}}",
+      "t"
+     ],
+     [
+      " not only reflects",
+      "p"
+     ],
+     [
+      " the continued advancement of ecological conservation",
+      "o"
+     ],
+     [
+      " but also demonstrates",
+      "p"
+     ],
+     [
+      " the growing acceptance of green living",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "be closely linked to",
+     "与…密切相关"
+    ],
+    [
+     "rising public awareness of …",
+     "公众…意识不断增强"
+    ],
+    [
+     "increasingly favorable conditions",
+     "日趋有利的条件"
+    ],
+    [
+     "make it easier for sb to do",
+     "让人们更容易做…"
+    ],
+    [
+     "participate in",
+     "参与"
+    ],
+    [
+     "a wider range of",
+     "更加多样的"
+    ],
+    [
+     "suited to their own circumstances",
+     "适合自身情况的"
+    ],
+    [
+     "be integrated into everyday life",
+     "融入日常生活"
+    ],
+    [
+     "take part in related initiatives",
+     "参与相关行动"
+    ],
+    [
+     "demonstrate the growing acceptance of …",
+     "体现…日益被接受"
+    ]
+   ]
   },
   {
    "id": "para2_sports",
@@ -337,7 +1219,151 @@
    "title": "体育健康类第二段",
    "subtitle": "环境生态类换词即用（这就是换词应万变）",
    "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise. Improved sports infrastructure makes it easier for people to participate in physical exercise, while a wider range of exercise methods enables different groups to make choices suited to their own circumstances. As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow. For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
-   "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。"
+   "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
+   "en_struct": [
+    [
+     [
+      "Changes reflected in {{题目相关词}}",
+      "t"
+     ],
+     [
+      " are closely linked to",
+      "p"
+     ],
+     [
+      " rising public awareness of personal health and increasingly favorable conditions for physical exercise",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Improved sports infrastructure",
+      "t"
+     ],
+     [
+      " makes it easier",
+      "p"
+     ],
+     [
+      " for people to participate in physical exercise",
+      "o"
+     ],
+     [
+      ", while",
+      "trans"
+     ],
+     [
+      " a wider range of exercise methods",
+      "t"
+     ],
+     [
+      " enables",
+      "p"
+     ],
+     [
+      " different groups to make choices suited to their own circumstances",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "As",
+      "lead"
+     ],
+     [
+      " physical exercise becomes increasingly integrated into everyday life",
+      ""
+     ],
+     [
+      ", the number of people willing to take part in related activities",
+      "t"
+     ],
+     [
+      " will continue to grow",
+      "p"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "For this reason",
+      "caus"
+     ],
+     [
+      ", ",
+      ""
+     ],
+     [
+      "{{题目相关词}}",
+      "t"
+     ],
+     [
+      " not only reflects",
+      "p"
+     ],
+     [
+      " the continued advancement of national fitness",
+      "o"
+     ],
+     [
+      " but also demonstrates",
+      "p"
+     ],
+     [
+      " the growing acceptance of healthy living",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "be closely linked to",
+     "与…密切相关"
+    ],
+    [
+     "rising public awareness of personal health",
+     "公众健康意识不断增强"
+    ],
+    [
+     "improved sports infrastructure",
+     "更完善的体育设施"
+    ],
+    [
+     "participate in physical exercise",
+     "参加体育锻炼"
+    ],
+    [
+     "a wider range of exercise methods",
+     "更多样的锻炼方式"
+    ],
+    [
+     "the number of … will continue to grow",
+     "…的数量将持续增长"
+    ],
+    [
+     "the continued advancement of national fitness",
+     "全民健身的持续推进"
+    ],
+    [
+     "the growing acceptance of healthy living",
+     "健康生活方式日益被接受"
+    ]
+   ]
   },
   {
    "id": "para2_culture",
@@ -345,7 +1371,163 @@
    "title": "文化自信类第二段",
    "subtitle": "与经济类思路类似",
    "en": "Traditional culture cannot be effectively conveyed through the one-way delivery of content alone; its modes of expression must also be adjusted in response to real-world feedback. {{题目相关词}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity. Public participation can also give rise to new forms of cultural expression, enabling traditional culture to adapt to social change while preserving its core values. Seen from this perspective, {{题目相关词}} not only enhances the effectiveness of cultural transmission but also strengthens traditional culture's capacity to remain relevant to contemporary life.",
-   "cn": "传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。{{题目相关词}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。由此可见，{{题目相关词}} 不仅提高了文化传播的效果，也增强了传统文化适应当代生活的能力。"
+   "cn": "传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。{{题目相关词}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。由此可见，{{题目相关词}} 不仅提高了文化传播的效果，也增强了传统文化适应当代生活的能力。",
+   "en_struct": [
+    [
+     [
+      "Traditional culture",
+      "t"
+     ],
+     [
+      " cannot be effectively conveyed",
+      "p"
+     ],
+     [
+      " through the one-way delivery of content alone",
+      ""
+     ],
+     [
+      "; its modes of expression",
+      "t"
+     ],
+     [
+      " must also be adjusted",
+      "p"
+     ],
+     [
+      " in response to real-world feedback",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "{{题目相关词}}",
+      "t"
+     ],
+     [
+      " can establish",
+      "p"
+     ],
+     [
+      " a channel of communication between traditional culture and the public",
+      "o"
+     ],
+     [
+      ", allowing cultural content to be explained with greater clarity",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Public participation",
+      "t"
+     ],
+     [
+      " can also give rise to",
+      "p"
+     ],
+     [
+      " new forms of cultural expression",
+      "o"
+     ],
+     [
+      ", enabling traditional culture to adapt to social change",
+      ""
+     ],
+     [
+      " while",
+      "trans"
+     ],
+     [
+      " preserving its core values",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Seen from this perspective",
+      ""
+     ],
+     [
+      ", ",
+      ""
+     ],
+     [
+      "{{题目相关词}}",
+      "t"
+     ],
+     [
+      " not only enhances",
+      "p"
+     ],
+     [
+      " the effectiveness of cultural transmission",
+      "o"
+     ],
+     [
+      " but also strengthens",
+      "p"
+     ],
+     [
+      " traditional culture's capacity to remain relevant to contemporary life",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "be effectively conveyed through",
+     "通过…得到有效传达"
+    ],
+    [
+     "the one-way delivery of content",
+     "单向的内容输出"
+    ],
+    [
+     "in response to real-world feedback",
+     "响应现实反馈"
+    ],
+    [
+     "establish a channel of communication between A and B",
+     "在 A 与 B 之间建立沟通渠道"
+    ],
+    [
+     "give rise to",
+     "催生、带来"
+    ],
+    [
+     "adapt to social change",
+     "适应社会变迁"
+    ],
+    [
+     "preserve its core values",
+     "保留其核心价值"
+    ],
+    [
+     "enhance the effectiveness of cultural transmission",
+     "提升文化传播效果"
+    ],
+    [
+     "remain relevant to contemporary life",
+     "与当代生活保持相关"
+    ]
+   ]
   },
   {
    "id": "para3_positive",
@@ -354,7 +1536,167 @@
    "subtitle": "经济 / 校园 / 环境 / 体育 / 文化通用；主体词随题替换（政府 / 商家 / 学校 / 媒体）",
    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role. Media organizations should present the practical value of {{题目相关词}} objectively, thereby helping the public develop a sound understanding of {{题目相关词}}. Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。媒体应客观介绍其实际价值，帮助公众形成正确认识。个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
-   "note": "套用示例（2016 英语一）：要使父母以身作则持续为孩子成长带来积极影响，需要家庭与学校共同配合。学校应提供适当指导……父母也应结合孩子特点作出正确示范。"
+   "note": "套用示例（2016 英语一）：要使父母以身作则持续为孩子成长带来积极影响，需要家庭与学校共同配合。学校应提供适当指导……父母也应结合孩子特点作出正确示范。",
+   "en_struct": [
+    [
+     [
+      "For {{题目相关词}} to continue exerting a positive influence on personal growth",
+      ""
+     ],
+     [
+      ", concerted efforts from all sectors of society",
+      "t"
+     ],
+     [
+      " are essential",
+      "p"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Relevant authorities",
+      "t"
+     ],
+     [
+      " should provide",
+      "p"
+     ],
+     [
+      " the necessary support",
+      "o"
+     ],
+     [
+      " and create",
+      "p"
+     ],
+     [
+      " favorable conditions",
+      "o"
+     ],
+     [
+      " under which",
+      "lead"
+     ],
+     [
+      " {{题目相关词}} can play a constructive role",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Media organizations",
+      "t"
+     ],
+     [
+      " should present",
+      "p"
+     ],
+     [
+      " the practical value of {{题目相关词}}",
+      "o"
+     ],
+     [
+      " objectively",
+      ""
+     ],
+     [
+      ", thereby",
+      "caus"
+     ],
+     [
+      " helping the public develop a sound understanding of {{题目相关词}}",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Individuals",
+      "t"
+     ],
+     [
+      " should also make",
+      "p"
+     ],
+     [
+      " well-informed choices",
+      "o"
+     ],
+     [
+      " in light of their own circumstances",
+      ""
+     ],
+     [
+      ", ensuring",
+      ""
+     ],
+     [
+      " that",
+      "lead"
+     ],
+     [
+      " {{题目相关词}} genuinely contributes to their long-term development",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "For … to continue exerting a positive influence on …",
+     "为了让…持续对…发挥积极作用"
+    ],
+    [
+     "concerted efforts from all sectors of society",
+     "社会各方共同努力"
+    ],
+    [
+     "provide the necessary support",
+     "提供必要支持"
+    ],
+    [
+     "create favorable conditions under which …",
+     "创造良好条件让…"
+    ],
+    [
+     "play a constructive role",
+     "发挥建设性作用"
+    ],
+    [
+     "present … objectively",
+     "客观呈现…"
+    ],
+    [
+     "develop a sound understanding of",
+     "形成正确认识"
+    ],
+    [
+     "make well-informed choices",
+     "作出理性选择"
+    ],
+    [
+     "in light of their own circumstances",
+     "结合自身情况"
+    ],
+    [
+     "contribute to long-term development",
+     "有助于长远发展"
+    ]
+   ]
   },
   {
    "id": "para3_negative",
@@ -362,7 +1704,155 @@
    "title": "第三段 · 负面版",
    "subtitle": "题目涉及危害 / 消极影响时使用",
    "en": "For the harmful effects of {{题目相关词}} on personal growth to be effectively contained, concerted efforts across society are essential. Relevant authorities should strengthen regulatory oversight and keep {{题目相关词}} within clear and reasonable limits. Media organizations should present the potential risks of {{题目相关词}} objectively, thereby helping the public develop a sound understanding of {{题目相关词}}. Individuals should also remain vigilant in light of their own circumstances and guard against any threat that {{题目相关词}} may pose to their long-term development.",
-   "cn": "要使 {{题目相关词}} 对个人成长造成的消极影响得到有效控制，需要社会各方共同努力。有关部门应加强必要监管，将 {{题目相关词}} 限制在明确而合理的范围内。媒体应客观介绍其潜在风险，帮助公众形成正确认识。个人也应结合自身情况保持警惕，防范 {{题目相关词}} 对自身长期发展造成威胁。"
+   "cn": "要使 {{题目相关词}} 对个人成长造成的消极影响得到有效控制，需要社会各方共同努力。有关部门应加强必要监管，将 {{题目相关词}} 限制在明确而合理的范围内。媒体应客观介绍其潜在风险，帮助公众形成正确认识。个人也应结合自身情况保持警惕，防范 {{题目相关词}} 对自身长期发展造成威胁。",
+   "en_struct": [
+    [
+     [
+      "For the harmful effects of {{题目相关词}} on personal growth to be effectively contained",
+      ""
+     ],
+     [
+      ", concerted efforts across society",
+      "t"
+     ],
+     [
+      " are essential",
+      "p"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Relevant authorities",
+      "t"
+     ],
+     [
+      " should strengthen",
+      "p"
+     ],
+     [
+      " regulatory oversight",
+      "o"
+     ],
+     [
+      " and keep",
+      "p"
+     ],
+     [
+      " {{题目相关词}} within clear and reasonable limits",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Media organizations",
+      "t"
+     ],
+     [
+      " should present",
+      "p"
+     ],
+     [
+      " the potential risks of {{题目相关词}}",
+      "o"
+     ],
+     [
+      " objectively",
+      ""
+     ],
+     [
+      ", thereby",
+      "caus"
+     ],
+     [
+      " helping the public develop a sound understanding of {{题目相关词}}",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Individuals",
+      "t"
+     ],
+     [
+      " should also remain",
+      "p"
+     ],
+     [
+      " vigilant",
+      "o"
+     ],
+     [
+      " in light of their own circumstances",
+      ""
+     ],
+     [
+      " and guard against",
+      "p"
+     ],
+     [
+      " any threat",
+      "o"
+     ],
+     [
+      " that",
+      "lead"
+     ],
+     [
+      " {{题目相关词}} may pose to their long-term development",
+      ""
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "phrases": [
+    [
+     "the harmful effects of … on …",
+     "…对…的有害影响"
+    ],
+    [
+     "be effectively contained",
+     "得到有效遏制"
+    ],
+    [
+     "concerted efforts across society",
+     "全社会共同努力"
+    ],
+    [
+     "strengthen regulatory oversight",
+     "加强监管"
+    ],
+    [
+     "keep … within clear and reasonable limits",
+     "把…控制在清晰合理的限度内"
+    ],
+    [
+     "present the potential risks objectively",
+     "客观呈现潜在风险"
+    ],
+    [
+     "remain vigilant",
+     "保持警惕"
+    ],
+    [
+     "guard against any threat … may pose to …",
+     "防范…可能带来的任何威胁"
+    ]
+   ]
   }
  ]
 }

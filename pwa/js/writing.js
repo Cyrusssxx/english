@@ -42,37 +42,190 @@ function wrFallback(text, done) {
     document.body.removeChild(ta);
 }
 
+/* ==================== 批注高亮：点句点亮、localStorage 持久化 ==================== */
+const WR_HL_KEY = 'wr_highlights_v1';
+
+function wrHlGet() {
+    try { return new Set(JSON.parse(localStorage.getItem(WR_HL_KEY) || '[]')); }
+    catch (e) { return new Set(); }
+}
+
+function wrHlSave(set) {
+    try { localStorage.setItem(WR_HL_KEY, JSON.stringify(Array.from(set))); } catch (e) { /* ignore */ }
+    wrHlCount();
+}
+
+function wrHlCount() {
+    const n = wrHlGet().size;
+    const c = document.getElementById('wrHlCount');
+    const b = document.getElementById('wrHlClear');
+    if (c) c.textContent = n ? `已亮 ${n} 句` : '';
+    if (b) b.hidden = !n;
+}
+
+/** 点击切换高亮：同 key 的英文行与中文行联动 */
+function wrToggleHl(el) {
+    const key = el.dataset.k;
+    if (!key) return;
+    const set = wrHlGet();
+    const on = !set.has(key);
+    if (on) set.add(key); else set.delete(key);
+    document.querySelectorAll(`#wrContent [data-k]`).forEach(x => {
+        if (x.dataset.k === key) x.classList.toggle('hl', on);
+    });
+    wrHlSave(set);
+}
+
+/** 渲染后按存储恢复高亮 */
+function wrHlRestore() {
+    const set = wrHlGet();
+    document.querySelectorAll('#wrContent [data-k]').forEach(el => {
+        if (set.has(el.dataset.k)) el.classList.add('hl');
+    });
+    wrHlCount();
+}
+
+async function wrClearHl() {
+    if (wrHlGet().size === 0) return;
+    if (typeof confirmAsync === 'function' && !(await confirmAsync('清除全部批注高亮？', { danger: true }))) return;
+    try { localStorage.removeItem(WR_HL_KEY); } catch (e) { /* ignore */ }
+    document.querySelectorAll('#wrContent .hl').forEach(el => el.classList.remove('hl'));
+    wrHlCount();
+}
+
+/** 事件委托：点模板行 / 功能句切换高亮（点按钮不触发） */
+function wrHlBind() {
+    const c = document.getElementById('wrContent');
+    if (!c) return;
+    c.addEventListener('click', e => {
+        if (e.target.closest('button')) return;
+        const t = e.target.closest('.wr-line, .wr-sent, .wr-line-cn[data-k]');
+        if (t) wrToggleHl(t);
+    });
+}
+
+/* ==================== ✨ 精句弹窗：本卡有用词组/短句（英中对照） ==================== */
+function wrShowPhrases(secId) {
+    const sec = (WR.sections || []).find(s => s.id === secId);
+    if (!sec || !(sec.phrases || []).length) return;
+    document.getElementById('wrPopTitle').textContent = (sec.title || '') + ' · 精句词组';
+    document.getElementById('wrPopBody').innerHTML = sec.phrases.map(p =>
+        `<div class="wr-pop-row"><div class="wr-pop-en">${wrHl(p[0])}</div><div class="wr-pop-cn">${wrEsc(p[1])}</div></div>`).join('');
+    document.getElementById('wrPopMask').hidden = false;
+    document.getElementById('wrPop').hidden = false;
+}
+
+function wrClosePhrases() {
+    document.getElementById('wrPopMask').hidden = true;
+    document.getElementById('wrPop').hidden = true;
+}
+
+/* ==================== 结构染色开关 ==================== */
+function wrToggleStruct() {
+    localStorage.setItem(WR_STRUCT_KEY, wrStructOn() ? '0' : '1');
+    wrRenderCards();
+    wrTocSpy();
+}
+
+/** 重渲染模板卡（开关切换后调用），并恢复已点亮状态 */
+function wrRenderCards() {
+    if (!WR) return;
+    const groups = {};
+    for (const s of WR.sections || []) {
+        (groups[s.group] || (groups[s.group] = [])).push(s);
+    }
+    document.getElementById('wrContent').innerHTML = Object.keys(groups).map((gname, gi) => `
+        <h2 class="wr-h2" id="wrGroup${gi}">${wrEsc(gname)}</h2>
+        ${groups[gname].map(wrSectionCard).join('')}`).join('');
+    const st = document.getElementById('wrStructState');
+    if (st) st.textContent = wrStructOn() ? '开' : '关';
+    wrHlRestore();
+}
+
+/* ==================== 模板正文：按句拆行（英文行 + 对齐的中文行，共享 data-k） ==================== */
+function wrSplitEn(t) {
+    const m = (t || '').match(/[^.!?]+[.!?]+["')\]]*\s*|[^.!?]+$/g) || [];
+    return m.map(x => x.trim()).filter(Boolean);
+}
+
+function wrSplitCn(t) {
+    const m = (t || '').match(/[^。！？]*[。！？]|[^。！？]+$/g) || [];
+    return m.map(x => x.trim()).filter(Boolean);
+}
+
+/** 英文按句拆行；中文句数对齐时逐句配对（同 data-k 联动高亮），不齐则整段；
+ *  struct = 每句的片段标注（[[text, role], ...]），开启「结构染色」时行内染色 */
+const WR_ROLE_CLS = { t: 'sig-trunk', p: 'sig-trunk', o: 'sig-trunk', lead: 'sig-lead', trans: 'sig-trans', caus: 'sig-caus' };
+const WR_STRUCT_KEY = 'wr_struct_on';
+
+function wrStructOn() { return localStorage.getItem(WR_STRUCT_KEY) !== '0'; }
+
+function wrSentenceHtml(s, struct) {
+    if (wrStructOn() && struct && struct.length) {
+        return struct.map(seg => {
+            const cls = WR_ROLE_CLS[seg[1]] || '';
+            const inner = wrHl(seg[0]);
+            return cls ? `<span class="${cls}">${inner}</span>` : inner;
+        }).join('');
+    }
+    return wrHl(s);
+}
+
+function wrTplBody(en, cn, struct) {
+    const es = wrSplitEn(en);
+    const cs = wrSplitCn(cn);
+    const aligned = es.length > 0 && es.length === cs.length;
+    const enHtml = es.map((s, i) =>
+        `<div class="wr-line" data-k="${wrEsc(s)}" title="点击点亮/取消">${wrSentenceHtml(s, struct && struct[i])}</div>`).join('');
+    const cnHtml = aligned
+        ? cs.map((s, i) => `<div class="wr-line-cn" data-k="${wrEsc(es[i])}">${wrHl(s)}</div>`).join('')
+        : `<div class="wr-line-cn">${wrHl(cn || '')}</div>`;
+    return { enHtml, cnHtml };
+}
+
+/** 复制整段英文（行 div 的 textContent 无空格，需按行拼接） */
+function wrCopyLines(btn) {
+    const en = btn.closest('.wr-tpl').querySelector('.wr-en');
+    const t = Array.from(en.querySelectorAll('.wr-line')).map(x => x.textContent).join(' ');
+    wrCopy(btn, t);
+}
+
 function wrSectionCard(sec) {
     const sents = (sec.sentences || []).map((s, i) => `
-        <li class="wr-sent">
+        <li class="wr-sent" data-k="${wrEsc(s.en || '')}" title="点击点亮/取消">
             <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${wrHl(s.en)}</div>
             <div class="wr-sent-cn">${wrEsc(s.cn)}</div>
         </li>`).join('');
 
     const tips = (sec.tips || []).map(x => `<li>${wrEsc(x)}</li>`).join('');
+    const body = wrTplBody(sec.en, sec.cn, sec.en_struct);
+    const neg = sec.negative_en ? wrTplBody(sec.negative_en, sec.negative_cn, sec.negative_struct) : null;
 
     return `
     <section class="wr-card" id="${sec.id}">
         <div class="wr-card-head">
-            <h3 class="wr-card-title">${wrEsc(sec.title)}</h3>
-            ${sec.subtitle ? `<div class="wr-card-sub">${wrEsc(sec.subtitle)}</div>` : ''}
+            <div class="wr-card-head-txt">
+                <h3 class="wr-card-title">${wrEsc(sec.title)}</h3>
+                ${sec.subtitle ? `<div class="wr-card-sub">${wrEsc(sec.subtitle)}</div>` : ''}
+            </div>
+            <button class="wr-copy" onclick="wrShowPhrases('${wrEsc(sec.id)}')" title="本段有用词组/短句（英中对照）">✨ 精句</button>
         </div>
         <div class="wr-tpl">
             <div class="wr-tpl-bar">
                 <span class="wr-tpl-tag">英文模板</span>
-                <button class="wr-copy" onclick="wrCopy(this, this.closest('.wr-tpl').querySelector('.wr-en').textContent)">复制</button>
+                <button class="wr-copy" onclick="wrCopyLines(this)">复制</button>
             </div>
-            <div class="wr-en">${wrHl(sec.en)}</div>
-            <div class="wr-cn">${wrHl(sec.cn)}</div>
+            <div class="wr-en">${body.enHtml}</div>
+            <div class="wr-cn">${body.cnHtml}</div>
         </div>
-        ${sec.negative_en ? `
+        ${neg ? `
         <div class="wr-tpl wr-tpl-neg">
             <div class="wr-tpl-bar">
                 <span class="wr-tpl-tag wr-tag-neg">负面版（选一）</span>
-                <button class="wr-copy" onclick="wrCopy(this, this.closest('.wr-tpl').querySelector('.wr-en').textContent)">复制</button>
+                <button class="wr-copy" onclick="wrCopyLines(this)">复制</button>
             </div>
-            <div class="wr-en">${wrHl(sec.negative_en)}</div>
-            <div class="wr-cn">${wrHl(sec.negative_cn)}</div>
+            <div class="wr-en">${neg.enHtml}</div>
+            <div class="wr-cn">${neg.cnHtml}</div>
         </div>` : ''}
         ${sents ? `<div class="wr-sents"><div class="wr-sents-title">功能句挑选（自行选 2~4 句拼接，控制字数）</div><ol class="wr-sent-list">${sents}</ol></div>` : ''}
         ${sec.note ? `<div class="wr-note-inline">💡 ${wrHl(sec.note)}</div>` : ''}
@@ -212,7 +365,11 @@ function wrTocBind() {
     window.addEventListener('resize', () => {
         if (window.innerWidth > WR_TOC_NARROW) wrTocClose();
     });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') wrTocClose(); });
+    document.addEventListener('keydown', e => {
+        if (e.key !== 'Escape') return;
+        if (!document.getElementById('wrPop').hidden) { wrClosePhrases(); return; }
+        wrTocClose();
+    });
 }
 
 async function initWriting() {
@@ -273,20 +430,16 @@ async function initWriting() {
         </div>`).join('');
 
     // 模板分区（按 group 分组）
-    const groups = {};
-    for (const s of WR.sections || []) {
-        (groups[s.group] || (groups[s.group] = [])).push(s);
-    }
-    document.getElementById('wrContent').innerHTML = Object.keys(groups).map((gname, gi) => `
-        <h2 class="wr-h2" id="wrGroup${gi}">${wrEsc(gname)}</h2>
-        ${groups[gname].map(wrSectionCard).join('')}`).join('');
+    wrRenderCards();
 
+    wrHlRestore();
     wrTocBuild();
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); initWriting(); });
+    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrHlBind(); initWriting(); });
 } else {
     wrTocBind();
+    wrHlBind();
     initWriting();
 }

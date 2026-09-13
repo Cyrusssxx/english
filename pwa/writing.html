@@ -53,6 +53,12 @@
             <h1 class="wr-title" id="wrTitle">作文模板库</h1>
             <p class="wr-desc" id="wrDesc"></p>
             <div class="wr-rules" id="wrRules"></div>
+            <div class="wr-hl-bar">
+                <span class="wr-hl-tip">✍ 点击句型可<b>点亮标记</b>（再点取消，自动保存）；主干/信号词已按文章页同款配色染色</span>
+                <button class="wr-struct-btn" id="wrStructBtn" onclick="wrToggleStruct()">结构染色 <span id="wrStructState">开</span></button>
+                <span class="wr-hl-count" id="wrHlCount"></span>
+                <button class="wr-hl-clear" id="wrHlClear" onclick="wrClearHl()" hidden>清除高亮</button>
+            </div>
 
             <!-- 图表适配表 -->
             <section class="wr-block" id="wrGuideBlock">
@@ -71,6 +77,16 @@
             <!-- 模板分区 -->
             <div id="wrContent"><p class="wr-loading">加载中…</p></div>
         </main>
+    </div>
+
+    <!-- ✨ 精句弹窗 -->
+    <div class="wr-pop-mask" id="wrPopMask" hidden onclick="wrClosePhrases()"></div>
+    <div class="wr-pop" id="wrPop" hidden role="dialog" aria-modal="true">
+        <div class="wr-pop-head">
+            <span class="wr-pop-title" id="wrPopTitle"></span>
+            <button class="wr-pop-close" onclick="wrClosePhrases()" title="关闭">✕</button>
+        </div>
+        <div class="wr-pop-body" id="wrPopBody"></div>
     </div>
 
     <script src="js/common.js"></script>
