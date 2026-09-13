@@ -163,394 +163,1291 @@
   };
 
   /* >>> 写作句式（tools/build_writing_patterns.py 自动生成，勿手改） >>> */
-  DATA.maps.push({
+  [{
   "id": "writing",
-  "title": "写作句式 · 同义替换（大作文 2010-2026）",
+  "title": "写作句式 · 模板句型（大作文 2010-2026）",
   "root": "写作句式",
   "rootColor": "#0d9488",
-  "intro": "来源：2010-2026 英语二大作文「真题套用示范」里的关键句型，按写作功能成簇。写大作文时同簇表达换着用（如「占比最大」有 3 种说法、「上升」有 5 种说法），就不会通篇 rose / increase 重复。中文即该句型的用法，尾部数字为出现年份数——数字越大越是高频万能句。",
+  "intro": "来源：2010-2026 英语二大作文「真题套用示范」真正用到的模板句。{{ }} 是留给题目的槽位，尾部数字为该句在多届示范里出现过的年数——数字越大越适合直接背。",
   "branches": [
     {
-      "name": "图表引出（4）",
+      "name": "第一段 · 静态图描述（5）",
       "color": "#0d9488",
       "children": [
         {
-          "name": "did not move in a uniform direction 并未朝着相同方向变化 · 3 年",
-          "en": "did not move in a uniform direction",
-          "rest": "并未朝着相同方向变化 · 3 年"
+          "name": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}. 该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。 · 9 年",
+          "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+          "rest": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。 · 9 年"
         },
         {
-          "name": "presents an uneven distribution among the perceived benefits of … 呈现了人们对……各项益处的看法分布 · 2026",
-          "en": "presents an uneven distribution among the perceived benefits of …",
-          "rest": "呈现了人们对……各项益处的看法分布 · 2026"
+          "name": "{{事物1}} accounts for the largest share, at {{百分比1}}. {{事物1}} 所占比例最大，达到 {{百分比1}}。 · 9 年",
+          "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+          "rest": "{{事物1}} 所占比例最大，达到 {{百分比1}}。 · 9 年"
         },
         {
-          "name": "The table presents an uneven distribution among… 该表格呈现了……之间的不均衡分布 · 2012",
-          "en": "The table presents an uneven distribution among…",
-          "rest": "该表格呈现了……之间的不均衡分布 · 2012"
+          "name": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively. 就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。 · 6 年",
+          "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
+          "rest": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。 · 6 年"
         },
         {
-          "name": "This pie chart presents an uneven distribution among… 该饼图呈现了……之间的不均衡分布 · 2015",
-          "en": "This pie chart presents an uneven distribution among…",
-          "rest": "该饼图呈现了……之间的不均衡分布 · 2015"
+          "name": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}. 相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。 · 6 年",
+          "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
+          "rest": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。 · 6 年"
+        },
+        {
+          "name": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively. {{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。 · 4 年",
+          "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
+          "rest": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。 · 4 年"
         }
       ]
     },
     {
-      "name": "上升趋势（7）",
-      "color": "#ef4444",
+      "name": "第一段 · 动态图描述（4）",
+      "color": "#0ea5e9",
       "children": [
         {
-          "name": "rose steadily from … to … 从……至……持续上升 · 3 年",
-          "en": "rose steadily from … to …",
-          "rest": "从……至……持续上升 · 3 年"
+          "name": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented. 该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。 · 8 年",
+          "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+          "rest": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。 · 8 年"
         },
         {
-          "name": "rose steadily during the periods presented 在相应时期内持续上升 · 2 年",
-          "en": "rose steadily during the periods presented",
-          "rest": "在相应时期内持续上升 · 2 年"
+          "name": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}. {{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。 · 8 年",
+          "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+          "rest": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。 · 8 年"
         },
         {
-          "name": "showing a steady upward trend 呈现稳定上升趋势 · 2 年",
-          "en": "showing a steady upward trend",
-          "rest": "呈现稳定上升趋势 · 2 年"
+          "name": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend. 自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。 · 3 年",
+          "en": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.",
+          "rest": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。 · 3 年"
         },
         {
-          "name": "climbed from … to … 由……攀升至…… · 2010",
-          "en": "climbed from … to …",
-          "rest": "由……攀升至…… · 2010"
-        },
-        {
-          "name": "maintained a dynamic momentum 保持强劲势头 · 2017",
-          "en": "maintained a dynamic momentum",
-          "rest": "保持强劲势头 · 2017"
-        },
-        {
-          "name": "rose slightly 略有上升 · 2019",
-          "en": "rose slightly",
-          "rest": "略有上升 · 2019"
-        },
-        {
-          "name": "the biggest increase occurred in … 最大增幅出现在…… · 2013",
-          "en": "the biggest increase occurred in …",
-          "rest": "最大增幅出现在…… · 2013"
+          "name": "By contrast, {{事物3}} fell from {{数字5}} in {{时间5}} to {{数字6}} in {{时间6}}. 相比之下，{{事物3}} 由 {{时间5}} 的 {{数字5}} 下降至 {{时间6}} 的 {{数字6}}。 · 2019",
+          "en": "By contrast, {{事物3}} fell from {{数字5}} in {{时间5}} to {{数字6}} in {{时间6}}.",
+          "rest": "相比之下，{{事物3}} 由 {{时间5}} 的 {{数字5}} 下降至 {{时间6}} 的 {{数字6}}。 · 2019"
         }
       ]
     },
     {
-      "name": "幅度·速度（6）",
-      "color": "#f59e0b",
-      "children": [
-        {
-          "name": "expanded their share by nearly the same margin 以相近幅度扩大份额 · 2011",
-          "en": "expanded their share by nearly the same margin",
-          "rest": "以相近幅度扩大份额 · 2011"
-        },
-        {
-          "name": "had not yet reached saturation 尚未达到饱和 · 2010",
-          "en": "had not yet reached saturation",
-          "rest": "尚未达到饱和 · 2010"
-        },
-        {
-          "name": "left little room for further growth 几乎没有进一步增长的空间 · 2010",
-          "en": "left little room for further growth",
-          "rest": "几乎没有进一步增长的空间 · 2010"
-        },
-        {
-          "name": "marked a watershed when the growth accelerated 是增速加快的转折点 · 2023",
-          "en": "marked a watershed when the growth accelerated",
-          "rest": "是增速加快的转折点 · 2023"
-        },
-        {
-          "name": "the pace of growth differed sharply 增长速度差异明显 · 2010",
-          "en": "the pace of growth differed sharply",
-          "rest": "增长速度差异明显 · 2010"
-        },
-        {
-          "name": "the trend is particularly striking 这一趋势尤为显著 · 2022",
-          "en": "the trend is particularly striking",
-          "rest": "这一趋势尤为显著 · 2022"
-        }
-      ]
-    },
-    {
-      "name": "占比·分布（7）",
-      "color": "#8b5cf6",
-      "children": [
-        {
-          "name": "accounts for the largest share, at …% 占比最大，达到……% · 6 年",
-          "en": "accounts for the largest share, at …%",
-          "rest": "占比最大，达到……% · 6 年"
-        },
-        {
-          "name": "follows closely, representing …% 紧随其后，占……% · 5 年",
-          "en": "follows closely, representing …%",
-          "rest": "紧随其后，占……% · 5 年"
-        },
-        {
-          "name": "make up relatively small proportions of … 占比相对较小，分别为…… · 5 年",
-          "en": "make up relatively small proportions of …",
-          "rest": "占比相对较小，分别为…… · 5 年"
-        },
-        {
-          "name": "form the middle group, representing …% and …% respectively 处于中间位置，分别占……% 和……% · 2 年",
-          "en": "form the middle group, representing …% and …% respectively",
-          "rest": "处于中间位置，分别占……% 和……% · 2 年"
-        },
-        {
-          "name": "account for the largest share, together making up …% of the total 占比最大，合计达总额的……% · 2015",
-          "en": "account for the largest share, together making up …% of the total",
-          "rest": "占比最大，合计达总额的……% · 2015"
-        },
-        {
-          "name": "accounts for the largest share, at slightly over half of the respondents 占比最大，略超受访者半数 · 2021",
-          "en": "accounts for the largest share, at slightly over half of the respondents",
-          "rest": "占比最大，略超受访者半数 · 2021"
-        },
-        {
-          "name": "none of them felt satisfied 无一人感到满意 · 2012",
-          "en": "none of them felt satisfied",
-          "rest": "无一人感到满意 · 2012"
-        }
-      ]
-    },
-    {
-      "name": "升降对比·转折（4）",
-      "color": "#10b981",
-      "children": [
-        {
-          "name": "By contrast 相比之下（用于转折对比） · 2011",
-          "en": "By contrast",
-          "rest": "相比之下（用于转折对比） · 2011"
-        },
-        {
-          "name": "climbed from … to …, while … declined from … to … 从……攀升至……，而……从……降至…… · 2014",
-          "en": "climbed from … to …, while … declined from … to …",
-          "rest": "从……攀升至……，而……从……降至…… · 2014"
-        },
-        {
-          "name": "declined from … to …, while … climbed from … to … 从……降至……，而……从……升至…… · 2019",
-          "en": "declined from … to …, while … climbed from … to …",
-          "rest": "从……降至……，而……从……升至…… · 2019"
-        },
-        {
-          "name": "were displaced from their leading position 从领先位置被取代 · 2011",
-          "en": "were displaced from their leading position",
-          "rest": "从领先位置被取代 · 2011"
-        }
-      ]
-    },
-    {
-      "name": "原因·背景（13）",
+      "name": "第二段 · 经济类归因（4）",
       "color": "#f97316",
       "children": [
         {
-          "name": "a natural consequence of changing parenting ideas 育儿观念变化的自然结果 · 2026",
-          "en": "a natural consequence of changing parenting ideas",
-          "rest": "育儿观念变化的自然结果 · 2026"
+          "name": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}. 毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。 · 6 年",
+          "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
+          "rest": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。 · 6 年"
         },
         {
-          "name": "a natural consequence of social life 社会生活变化的自然结果 · 2015",
-          "en": "a natural consequence of social life",
-          "rest": "社会生活变化的自然结果 · 2015"
+          "name": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living. 随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。 · 6 年",
+          "en": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.",
+          "rest": "随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。 · 6 年"
         },
         {
-          "name": "a shift in graduates’ view of post-university life 毕业生对毕业后生活看法的转变 · 2019",
-          "en": "a shift in graduates’ view of post-university life",
-          "rest": "毕业生对毕业后生活看法的转变 · 2019"
+          "name": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life. {{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。 · 3 年",
+          "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life.",
+          "rest": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。 · 3 年"
         },
         {
-          "name": "as livestreaming e-commerce takes off 随着直播电商兴起 · 2022",
-          "en": "as livestreaming e-commerce takes off",
-          "rest": "随着直播电商兴起 · 2022"
-        },
-        {
-          "name": "narrowed the technology gap 缩小了技术差距 · 2011",
-          "en": "narrowed the technology gap",
-          "rest": "缩小了技术差距 · 2011"
-        },
-        {
-          "name": "on account of flexibility and convenience 出于灵活与便利 · 2021",
-          "en": "on account of flexibility and convenience",
-          "rest": "出于灵活与便利 · 2021"
-        },
-        {
-          "name": "reach a career plateau 进入职业平台期 · 2012",
-          "en": "reach a career plateau",
-          "rest": "进入职业平台期 · 2012"
-        },
-        {
-          "name": "the awareness of self-improvement 自我提升意识 · 2020",
-          "en": "the awareness of self-improvement",
-          "rest": "自我提升意识 · 2020"
-        },
-        {
-          "name": "the change in priorities 关注重点的转变 · 2018",
-          "en": "the change in priorities",
-          "rest": "关注重点的转变 · 2018"
-        },
-        {
-          "name": "the consequent sense of powerlessness 随之而来的无力感 · 2012",
-          "en": "the consequent sense of powerlessness",
-          "rest": "随之而来的无力感 · 2012"
-        },
-        {
-          "name": "the joint effects of urbanization and unequal economic opportunities 城镇化与经济机会不均的共同作用 · 2014",
-          "en": "the joint effects of urbanization and unequal economic opportunities",
-          "rest": "城镇化与经济机会不均的共同作用 · 2014"
-        },
-        {
-          "name": "the national endeavour in cultural undertakings 国家在文化事业上的努力 · 2017",
-          "en": "the national endeavour in cultural undertakings",
-          "rest": "国家在文化事业上的努力 · 2017"
-        },
-        {
-          "name": "with the prosperity of tourism 随着旅游业繁荣 · 2016",
-          "en": "with the prosperity of tourism",
-          "rest": "随着旅游业繁荣 · 2016"
+          "name": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life. 由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。 · 3 年",
+          "en": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
+          "rest": "由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。 · 3 年"
         }
       ]
     },
     {
-      "name": "意义·价值（9）",
+      "name": "第二段 · 校园/成长类归因（4）",
       "color": "#eab308",
       "children": [
         {
-          "name": "a low-intensity activity suitable for the elderly 适合老年人的低强度活动 · 2025",
-          "en": "a low-intensity activity suitable for the elderly",
-          "rest": "适合老年人的低强度活动 · 2025"
+          "name": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. {{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。 · 7 年",
+          "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+          "rest": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。 · 7 年"
         },
         {
-          "name": "an ideal way to recharge 理想的充电方式 · 2016",
-          "en": "an ideal way to recharge",
-          "rest": "理想的充电方式 · 2016"
+          "name": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth. 最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。 · 7 年",
+          "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+          "rest": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。 · 7 年"
         },
         {
-          "name": "enrich the daily life 丰富日常生活 · 2025",
-          "en": "enrich the daily life",
-          "rest": "丰富日常生活 · 2025"
+          "name": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. {{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。 · 6 年",
+          "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+          "rest": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。 · 6 年"
         },
         {
-          "name": "facilitate interpersonal relationships 增进人际关系 · 2015",
-          "en": "facilitate interpersonal relationships",
-          "rest": "增进人际关系 · 2015"
-        },
-        {
-          "name": "gain easy and fast access to professional advice 便捷快速地获得专业建议 · 2023",
-          "en": "gain easy and fast access to professional advice",
-          "rest": "便捷快速地获得专业建议 · 2023"
-        },
-        {
-          "name": "gain practical experience 获取实践经验 · 2013",
-          "en": "gain practical experience",
-          "rest": "获取实践经验 · 2013"
-        },
-        {
-          "name": "regard … as a vivid classroom where children learn through discovery 把……视为孩子通过探索来学习的生动课堂 · 2026",
-          "en": "regard … as a vivid classroom where children learn through discovery",
-          "rest": "把……视为孩子通过探索来学习的生动课堂 · 2026"
-        },
-        {
-          "name": "the key to standing out 脱颖而出的关键 · 2018",
-          "en": "the key to standing out",
-          "rest": "脱颖而出的关键 · 2018"
-        },
-        {
-          "name": "varied spiritual nourishment 多样化的精神食粮 · 2017",
-          "en": "varied spiritual nourishment",
-          "rest": "多样化的精神食粮 · 2017"
+          "name": "In this process, individuals gradually become less dependent on external reminders and begin to take responsibility for their own choices. 在这一过程中，个人会逐步减少对外界提醒的依赖，并开始主动为自己的选择负责。 · 2024",
+          "en": "In this process, individuals gradually become less dependent on external reminders and begin to take responsibility for their own choices.",
+          "rest": "在这一过程中，个人会逐步减少对外界提醒的依赖，并开始主动为自己的选择负责。 · 2024"
         }
       ]
     },
     {
-      "name": "建议·展望（12）",
+      "name": "第二段 · 体育健康类归因（4）",
+      "color": "#10b981",
+      "children": [
+        {
+          "name": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise. {{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。 · 3 年",
+          "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
+          "rest": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。 · 3 年"
+        },
+        {
+          "name": "As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow. 随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。 · 3 年",
+          "en": "As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow.",
+          "rest": "随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。 · 3 年"
+        },
+        {
+          "name": "For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living. 正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。 · 2 年",
+          "en": "For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
+          "rest": "正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。 · 2 年"
+        },
+        {
+          "name": "Improved sports infrastructure makes it easier for people to participate in physical exercise, while a wider range of exercise methods enables different groups to make choices suited to their own circumstances. 更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。 · 2021",
+          "en": "Improved sports infrastructure makes it easier for people to participate in physical exercise, while a wider range of exercise methods enables different groups to make choices suited to their own circumstances.",
+          "rest": "更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。 · 2021"
+        }
+      ]
+    },
+    {
+      "name": "第二段 · 文化自信类归因（3）",
+      "color": "#a855f7",
+      "children": [
+        {
+          "name": "Traditional culture cannot be effectively conveyed through the one-way delivery of content alone; its modes of expression must also be adjusted in response to real-world feedback. 传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。 · 2017",
+          "en": "Traditional culture cannot be effectively conveyed through the one-way delivery of content alone; its modes of expression must also be adjusted in response to real-world feedback.",
+          "rest": "传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。 · 2017"
+        },
+        {
+          "name": "{{题目相关词}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity. {{题目相关词}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。 · 2017",
+          "en": "{{题目相关词}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity.",
+          "rest": "{{题目相关词}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。 · 2017"
+        },
+        {
+          "name": "Public participation can also give rise to new forms of cultural expression, enabling traditional culture to adapt to social change while preserving its core values. 公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。 · 2017",
+          "en": "Public participation can also give rise to new forms of cultural expression, enabling traditional culture to adapt to social change while preserving its core values.",
+          "rest": "公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。 · 2017"
+        }
+      ]
+    },
+    {
+      "name": "第三段 · 正面总结建议（3）",
       "color": "#06b6d4",
       "children": [
         {
-          "name": "boosted the popularity of doing workouts at home 推动了居家锻炼的流行 · 2021",
-          "en": "boosted the popularity of doing workouts at home",
-          "rest": "推动了居家锻炼的流行 · 2021"
+          "name": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role. 有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。 · 17 年",
+          "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+          "rest": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。 · 17 年"
         },
         {
-          "name": "channel more resources into … 向……倾斜更多资源 · 2014",
-          "en": "channel more resources into …",
-          "rest": "向……倾斜更多资源 · 2014"
+          "name": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development. 个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。 · 11 年",
+          "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+          "rest": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。 · 11 年"
         },
         {
-          "name": "give impetus to the delivery business 推动快递业务发展 · 2022",
-          "en": "give impetus to the delivery business",
-          "rest": "推动快递业务发展 · 2022"
-        },
-        {
-          "name": "keep pace with the public demand 跟上公众需求 · 2017",
-          "en": "keep pace with the public demand",
-          "rest": "跟上公众需求 · 2017"
-        },
-        {
-          "name": "not go to extremes 不走极端 · 2015",
-          "en": "not go to extremes",
-          "rest": "不走极端 · 2015"
-        },
-        {
-          "name": "on their own initiative 主动地 · 2014",
-          "en": "on their own initiative",
-          "rest": "主动地 · 2014"
-        },
-        {
-          "name": "paves the way for their career development 为职业发展铺路 · 2024",
-          "en": "paves the way for their career development",
-          "rest": "为职业发展铺路 · 2024"
-        },
-        {
-          "name": "paves the way for … 为……铺平道路 · 2022",
-          "en": "paves the way for …",
-          "rest": "为……铺平道路 · 2022"
-        },
-        {
-          "name": "public sports facilities 公共体育设施 · 2021",
-          "en": "public sports facilities",
-          "rest": "公共体育设施 · 2021"
-        },
-        {
-          "name": "secure an advantage 获取优势 · 2019",
-          "en": "secure an advantage",
-          "rest": "获取优势 · 2019"
-        },
-        {
-          "name": "stay competitive in the job market 在就业市场中保持竞争力 · 2020",
-          "en": "stay competitive in the job market",
-          "rest": "在就业市场中保持竞争力 · 2020"
-        },
-        {
-          "name": "strike a balance between work and study 平衡工作与学业 · 2013",
-          "en": "strike a balance between work and study",
-          "rest": "平衡工作与学业 · 2013"
-        }
-      ]
-    },
-    {
-      "name": "主题词·术语（3）",
-      "color": "#64748b",
-      "children": [
-        {
-          "name": "hands-on experience 实践/动手经历 · 2024",
-          "en": "hands-on experience",
-          "rest": "实践/动手经历 · 2024"
-        },
-        {
-          "name": "health literacy rate 健康素养水平 · 2023",
-          "en": "health literacy rate",
-          "rest": "健康素养水平 · 2023"
-        },
-        {
-          "name": "per capita disposable income 人均可支配收入 · 2018",
-          "en": "per capita disposable income",
-          "rest": "人均可支配收入 · 2018"
+          "name": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. 要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。 · 10 年",
+          "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+          "rest": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。 · 10 年"
         }
       ]
     }
   ]
-});
+},
+   {
+  "id": "writing_slot",
+  "title": "填槽表达 · 换词应万变（大作文 2010-2026）",
+  "root": "填槽表达",
+  "rootColor": "#8b5cf6",
+  "intro": "来源：17 篇示范里真正填进模板 {{槽位}} 的题相关表达。写新题时在同类里换词即可——例如「占比最大」的主体、「时间」的起止年份，都有现成说法可套。",
+  "branches": [
+    {
+      "name": "图型 · 引出词（37）",
+      "color": "#0d9488",
+      "children": [
+        {
+          "name": "bar 柱状 · chart",
+          "en": "bar",
+          "rest": "柱状（{{chart}}）"
+        },
+        {
+          "name": "pie 饼 · chart",
+          "en": "pie",
+          "rest": "饼（{{chart}}）"
+        },
+        {
+          "name": "the leisure activities of the elderly 老年人的日常休闲活动 · 题目相关词",
+          "en": "the leisure activities of the elderly",
+          "rest": "老年人的日常休闲活动（{{题目相关词}}）"
+        },
+        {
+          "name": "line 折线 · chart",
+          "en": "line",
+          "rest": "折线（{{chart}}）"
+        },
+        {
+          "name": "dining out 外出就餐 · 题目相关词",
+          "en": "dining out",
+          "rest": "外出就餐（{{题目相关词}}）"
+        },
+        {
+          "name": "domestic auto brands 国产汽车品牌 · 题目相关词",
+          "en": "domestic auto brands",
+          "rest": "国产汽车品牌（{{题目相关词}}）"
+        },
+        {
+          "name": "express delivery 快递服务 · 题目相关词",
+          "en": "express delivery",
+          "rest": "快递服务（{{题目相关词}}）"
+        },
+        {
+          "name": "festival spending 节日花销 · 题目相关词",
+          "en": "festival spending",
+          "rest": "节日花销（{{题目相关词}}）"
+        },
+        {
+          "name": "further education 继续深造 · 题目相关词",
+          "en": "further education",
+          "rest": "继续深造（{{题目相关词}}）"
+        },
+        {
+          "name": "health literacy 健康素养 · 题目相关词",
+          "en": "health literacy",
+          "rest": "健康素养（{{题目相关词}}）"
+        },
+        {
+          "name": "job satisfaction 工作满意度 · 题目相关词",
+          "en": "job satisfaction",
+          "rest": "工作满意度（{{题目相关词}}）"
+        },
+        {
+          "name": "labor practice courses 劳动实践课 · 题目相关词",
+          "en": "labor practice courses",
+          "rest": "劳动实践课（{{题目相关词}}）"
+        },
+        {
+          "name": "mobile reading 手机阅读 · 题目相关词",
+          "en": "mobile reading",
+          "rest": "手机阅读（{{题目相关词}}）"
+        },
+        {
+          "name": "mobile services 手机服务 · 题目相关词",
+          "en": "mobile services",
+          "rest": "手机服务（{{题目相关词}}）"
+        },
+        {
+          "name": "museums 博物馆 · 题目相关词",
+          "en": "museums",
+          "rest": "博物馆（{{题目相关词}}）"
+        },
+        {
+          "name": "outdoor activities 户外活动 · 题目相关词",
+          "en": "outdoor activities",
+          "rest": "户外活动（{{题目相关词}}）"
+        },
+        {
+          "name": "part-time jobs 兼职 · 题目相关词",
+          "en": "part-time jobs",
+          "rest": "兼职（{{题目相关词}}）"
+        },
+        {
+          "name": "physical exercise 体育锻炼 · 题目相关词",
+          "en": "physical exercise",
+          "rest": "体育锻炼（{{题目相关词}}）"
+        },
+        {
+          "name": "travel 旅行 · 题目相关词",
+          "en": "travel",
+          "rest": "旅行（{{题目相关词}}）"
+        },
+        {
+          "name": "urbanization 城镇化 · 题目相关词",
+          "en": "urbanization",
+          "rest": "城镇化（{{题目相关词}}）"
+        },
+        {
+          "name": "table 表格 · chart",
+          "en": "table",
+          "rest": "表格（{{chart}}）"
+        },
+        {
+          "name": "Spring Festival spending 春节花销 · 题目相关词",
+          "en": "Spring Festival spending",
+          "rest": "春节花销（{{题目相关词}}）"
+        },
+        {
+          "name": "express delivery volumes nationwide and in rural areas 全国与农村的快递业务量 · 题目相关词",
+          "en": "express delivery volumes nationwide and in rural areas",
+          "rest": "全国与农村的快递业务量（{{题目相关词}}）"
+        },
+        {
+          "name": "graduates' choices after university 本科毕业生的去向 · 题目相关词",
+          "en": "graduates' choices after university",
+          "rest": "本科毕业生的去向（{{题目相关词}}）"
+        },
+        {
+          "name": "job satisfaction across the age groups 各年龄段的工作满意度 · 题目相关词",
+          "en": "job satisfaction across the age groups",
+          "rest": "各年龄段的工作满意度（{{题目相关词}}）"
+        },
+        {
+          "name": "mobile-phone subscriptions in developing and developed countries 发展中国家与发达国家的手机订阅量 · 题目相关词",
+          "en": "mobile-phone subscriptions in developing and developed countries",
+          "rest": "发展中国家与发达国家的手机订阅量（{{题目相关词}}）"
+        },
+        {
+          "name": "the benefits students gained from labor practice courses 学生从劳动实践课中得到的收获 · 题目相关词",
+          "en": "the benefits students gained from labor practice courses",
+          "rest": "学生从劳动实践课中得到的收获（{{题目相关词}}）"
+        },
+        {
+          "name": "the exercise methods chosen by city residents 城市居民的锻炼方式 · 题目相关词",
+          "en": "the exercise methods chosen by city residents",
+          "rest": "城市居民的锻炼方式（{{题目相关词}}）"
+        },
+        {
+          "name": "the factors consumers consider when choosing a restaurant 消费者选择餐厅时的关注因素 · 题目相关词",
+          "en": "the factors consumers consider when choosing a restaurant",
+          "rest": "消费者选择餐厅时的关注因素（{{题目相关词}}）"
+        },
+        {
+          "name": "the health literacy rate of Chinese residents 中国居民的健康素养水平 · 题目相关词",
+          "en": "the health literacy rate of Chinese residents",
+          "rest": "中国居民的健康素养水平（{{题目相关词}}）"
+        },
+        {
+          "name": "the market shares of Chinese, Japanese and American auto brands 中国、日本与美国汽车品牌的市场份额 · 题目相关词",
+          "en": "the market shares of Chinese, Japanese and American auto brands",
+          "rest": "中国、日本与美国汽车品牌的市场份额（{{题目相关词}}）"
+        },
+        {
+          "name": "the number of museums and museum visitors 博物馆数量与参观人数 · 题目相关词",
+          "en": "the number of museums and museum visitors",
+          "rest": "博物馆数量与参观人数（{{题目相关词}}）"
+        },
+        {
+          "name": "the perceived benefits of children's outdoor activities 人们看重的儿童户外活动益处 · 题目相关词",
+          "en": "the perceived benefits of children's outdoor activities",
+          "rest": "人们看重的儿童户外活动益处（{{题目相关词}}）"
+        },
+        {
+          "name": "the proportion of college students taking part-time jobs 大学生兼职比例 · 题目相关词",
+          "en": "the proportion of college students taking part-time jobs",
+          "rest": "大学生兼职比例（{{题目相关词}}）"
+        },
+        {
+          "name": "the purposes of mobile reading among college students 大学生的手机阅读目的 · 题目相关词",
+          "en": "the purposes of mobile reading among college students",
+          "rest": "大学生的手机阅读目的（{{题目相关词}}）"
+        },
+        {
+          "name": "the purposes of travel among college students 大学生的旅游目的 · 题目相关词",
+          "en": "the purposes of travel among college students",
+          "rest": "大学生的旅游目的（{{题目相关词}}）"
+        },
+        {
+          "name": "the urban and rural population 城镇与农村人口 · 题目相关词",
+          "en": "the urban and rural population",
+          "rest": "城镇与农村人口（{{题目相关词}}）"
+        }
+      ]
+    },
+    {
+      "name": "主体 · 事物（63）",
+      "color": "#8b5cf6",
+      "children": [
+        {
+          "name": "Appreciating the beauty of the scenery 欣赏风景 · 事物1",
+          "en": "Appreciating the beauty of the scenery",
+          "rest": "欣赏风景（{{事物1}}）"
+        },
+        {
+          "name": "Chinese brands 国产品牌 · 事物1",
+          "en": "Chinese brands",
+          "rest": "国产品牌（{{事物1}}）"
+        },
+        {
+          "name": "Distinguishing features 餐厅特色 · 事物1",
+          "en": "Distinguishing features",
+          "rest": "餐厅特色（{{事物1}}）"
+        },
+        {
+          "name": "Gaining knowledge 获取知识 · 事物1",
+          "en": "Gaining knowledge",
+          "rest": "获取知识（{{事物1}}）"
+        },
+        {
+          "name": "Gaining relevant knowledge 获得相关知识 · 事物1",
+          "en": "Gaining relevant knowledge",
+          "rest": "获得相关知识（{{事物1}}）"
+        },
+        {
+          "name": "Satisfying curiosity 满足好奇心 · 事物1",
+          "en": "Satisfying curiosity",
+          "rest": "满足好奇心（{{事物1}}）"
+        },
+        {
+          "name": "Subscriptions in developing countries 发展中国家的订阅量 · 事物1",
+          "en": "Subscriptions in developing countries",
+          "rest": "发展中国家的订阅量（{{事物1}}）"
+        },
+        {
+          "name": "The group over 50 50 岁以上群体 · 事物1",
+          "en": "The group over 50",
+          "rest": "50 岁以上群体（{{事物1}}）"
+        },
+        {
+          "name": "The health literacy rate 健康素养水平 · 事物1",
+          "en": "The health literacy rate",
+          "rest": "健康素养水平（{{事物1}}）"
+        },
+        {
+          "name": "The national volume 全国业务量 · 事物1",
+          "en": "The national volume",
+          "rest": "全国业务量（{{事物1}}）"
+        },
+        {
+          "name": "The number of museums 博物馆数量 · 事物1",
+          "en": "The number of museums",
+          "rest": "博物馆数量（{{事物1}}）"
+        },
+        {
+          "name": "The rate 这一比例 · 事物1",
+          "en": "The rate",
+          "rest": "这一比例（{{事物1}}）"
+        },
+        {
+          "name": "The urban population 城镇人口 · 事物1",
+          "en": "The urban population",
+          "rest": "城镇人口（{{事物1}}）"
+        },
+        {
+          "name": "Travelling, gift giving and dinners with friends or relatives 旅行、送礼以及与亲友聚餐 · 事物1",
+          "en": "Travelling, gift giving and dinners with friends or relatives",
+          "rest": "旅行、送礼以及与亲友聚餐（{{事物1}}）"
+        },
+        {
+          "name": "Watching television 看电视 · 事物1",
+          "en": "Watching television",
+          "rest": "看电视（{{事物1}}）"
+        },
+        {
+          "name": "Working out alone 独自锻炼 · 事物1",
+          "en": "Working out alone",
+          "rest": "独自锻炼（{{事物1}}）"
+        },
+        {
+          "name": "the proportion entering employment 就业比例 · 事物1",
+          "en": "the proportion entering employment",
+          "rest": "就业比例（{{事物1}}）"
+        },
+        {
+          "name": "American brands 美系品牌 · 事物2",
+          "en": "American brands",
+          "rest": "美系品牌（{{事物2}}）"
+        },
+        {
+          "name": "Relieving pressure 缓解压力 · 事物2",
+          "en": "Relieving pressure",
+          "rest": "缓解压力（{{事物2}}）"
+        },
+        {
+          "name": "enhancing observation skills 促进观察力 · 事物2",
+          "en": "enhancing observation skills",
+          "rest": "促进观察力（{{事物2}}）"
+        },
+        {
+          "name": "exercising with friends 与朋友一起锻炼 · 事物2",
+          "en": "exercising with friends",
+          "rest": "与朋友一起锻炼（{{事物2}}）"
+        },
+        {
+          "name": "gifts for colleagues 给同事的礼物 · 事物2",
+          "en": "gifts for colleagues",
+          "rest": "给同事的礼物（{{事物2}}）"
+        },
+        {
+          "name": "improving practical ability 提升实践能力 · 事物2",
+          "en": "improving practical ability",
+          "rest": "提升实践能力（{{事物2}}）"
+        },
+        {
+          "name": "killing time 消磨时间 · 事物2",
+          "en": "killing time",
+          "rest": "消磨时间（{{事物2}}）"
+        },
+        {
+          "name": "service 服务 · 事物2",
+          "en": "service",
+          "rest": "服务（{{事物2}}）"
+        },
+        {
+          "name": "taking walks 散步 · 事物2",
+          "en": "taking walks",
+          "rest": "散步（{{事物2}}）"
+        },
+        {
+          "name": "the number of visitors 参观人数 · 事物2",
+          "en": "the number of visitors",
+          "rest": "参观人数（{{事物2}}）"
+        },
+        {
+          "name": "the proportion in the graduation year 毕业当年的比例 · 事物2",
+          "en": "the proportion in the graduation year",
+          "rest": "毕业当年的比例（{{事物2}}）"
+        },
+        {
+          "name": "the proportion pursuing further education 升学比例 · 事物2",
+          "en": "the proportion pursuing further education",
+          "rest": "升学比例（{{事物2}}）"
+        },
+        {
+          "name": "the rate in the same period 同期的这一比例 · 事物2",
+          "en": "the rate in the same period",
+          "rest": "同期的这一比例（{{事物2}}）"
+        },
+        {
+          "name": "the rural population 农村人口 · 事物2",
+          "en": "the rural population",
+          "rest": "农村人口（{{事物2}}）"
+        },
+        {
+          "name": "the rural volume 农村业务量 · 事物2",
+          "en": "the rural volume",
+          "rest": "农村业务量（{{事物2}}）"
+        },
+        {
+          "name": "those aged 41 to 50 41 至 50 岁的员工 · 事物2",
+          "en": "those aged 41 to 50",
+          "rest": "41 至 50 岁的员工（{{事物2}}）"
+        },
+        {
+          "name": "those in developed countries 发达国家同期的订阅量 · 事物2",
+          "en": "those in developed countries",
+          "rest": "发达国家同期的订阅量（{{事物2}}）"
+        },
+        {
+          "name": "Japanese brands 日系品牌 · 事物3",
+          "en": "Japanese brands",
+          "rest": "日系品牌（{{事物3}}）"
+        },
+        {
+          "name": "employees aged 31 to 40 31 至 40 岁的员工 · 事物3",
+          "en": "employees aged 31 to 40",
+          "rest": "31 至 40 岁的员工（{{事物3}}）"
+        },
+        {
+          "name": "household decorations 家庭装饰 · 事物3",
+          "en": "household decorations",
+          "rest": "家庭装饰（{{事物3}}）"
+        },
+        {
+          "name": "improving physical fitness 强身健体 · 事物3",
+          "en": "improving physical fitness",
+          "rest": "强身健体（{{事物3}}）"
+        },
+        {
+          "name": "obtaining cheerful moods 获得愉悦心情 · 事物3",
+          "en": "obtaining cheerful moods",
+          "rest": "获得愉悦心情（{{事物3}}）"
+        },
+        {
+          "name": "obtaining information 获取信息 · 事物3",
+          "en": "obtaining information",
+          "rest": "获取信息（{{事物3}}）"
+        },
+        {
+          "name": "other aims 其他目的 · 事物3",
+          "en": "other aims",
+          "rest": "其他目的（{{事物3}}）"
+        },
+        {
+          "name": "planting flowers 养花 · 事物3",
+          "en": "planting flowers",
+          "rest": "养花（{{事物3}}）"
+        },
+        {
+          "name": "the dining environment 就餐环境 · 事物3",
+          "en": "the dining environment",
+          "rest": "就餐环境（{{事物3}}）"
+        },
+        {
+          "name": "the proportion starting a business 创业比例 · 事物3",
+          "en": "the proportion starting a business",
+          "rest": "创业比例（{{事物3}}）"
+        },
+        {
+          "name": "working out with family members 与家人一起锻炼 · 事物3",
+          "en": "working out with family members",
+          "rest": "与家人一起锻炼（{{事物3}}）"
+        },
+        {
+          "name": "employees aged 40 or younger 40 岁及以下员工 · 事物4",
+          "en": "employees aged 40 or younger",
+          "rest": "40 岁及以下员工（{{事物4}}）"
+        },
+        {
+          "name": "enhancing cooperative ability 增强合作能力 · 事物4",
+          "en": "enhancing cooperative ability",
+          "rest": "增强合作能力（{{事物4}}）"
+        },
+        {
+          "name": "making more friends 广交朋友 · 事物4",
+          "en": "making more friends",
+          "rest": "广交朋友（{{事物4}}）"
+        },
+        {
+          "name": "other items such as fireworks 烟花等其他项目 · 事物4",
+          "en": "other items such as fireworks",
+          "rest": "烟花等其他项目（{{事物4}}）"
+        },
+        {
+          "name": "other purposes 其他目的 · 事物4",
+          "en": "other purposes",
+          "rest": "其他目的（{{事物4}}）"
+        },
+        {
+          "name": "playing team sports 参加团队运动 · 事物4",
+          "en": "playing team sports",
+          "rest": "参加团队运动（{{事物4}}）"
+        },
+        {
+          "name": "price 价格 · 事物4",
+          "en": "price",
+          "rest": "价格（{{事物4}}）"
+        },
+        {
+          "name": "reading 阅读 · 事物4",
+          "en": "reading",
+          "rest": "阅读（{{事物4}}）"
+        },
+        {
+          "name": "strengthening parent-child interaction 增强亲子互动 · 事物4",
+          "en": "strengthening parent-child interaction",
+          "rest": "增强亲子互动（{{事物4}}）"
+        },
+        {
+          "name": "fostering independence 培养独立能力 · 事物5",
+          "en": "fostering independence",
+          "rest": "培养独立能力（{{事物5}}）"
+        },
+        {
+          "name": "miscellaneous spending 杂项支出 · 事物5",
+          "en": "miscellaneous spending",
+          "rest": "杂项支出（{{事物5}}）"
+        },
+        {
+          "name": "other benefits 其他益处 · 事物5",
+          "en": "other benefits",
+          "rest": "其他益处（{{事物5}}）"
+        },
+        {
+          "name": "other factors 其他因素 · 事物5",
+          "en": "other factors",
+          "rest": "其他因素（{{事物5}}）"
+        },
+        {
+          "name": "other forms of exercise 其他锻炼形式 · 事物5",
+          "en": "other forms of exercise",
+          "rest": "其他锻炼形式（{{事物5}}）"
+        },
+        {
+          "name": "other gains 其他收获 · 事物5",
+          "en": "other gains",
+          "rest": "其他收获（{{事物5}}）"
+        },
+        {
+          "name": "playing chess 下棋 · 事物5",
+          "en": "playing chess",
+          "rest": "下棋（{{事物5}}）"
+        },
+        {
+          "name": "the remaining aims 其余目标 · 事物5",
+          "en": "the remaining aims",
+          "rest": "其余目标（{{事物5}}）"
+        },
+        {
+          "name": "the remaining respondents 其余受访者 · 事物5",
+          "en": "the remaining respondents",
+          "rest": "其余受访者（{{事物5}}）"
+        }
+      ]
+    },
+    {
+      "name": "数据 · 数值（36）",
+      "color": "#f59e0b",
+      "children": [
+        {
+          "name": "0.5 billion 5 亿 · 数字1",
+          "en": "0.5 billion",
+          "rest": "5 亿（{{数字1}}）"
+        },
+        {
+          "name": "300 million 3 亿 · 数字1",
+          "en": "300 million",
+          "rest": "3 亿（{{数字1}}）"
+        },
+        {
+          "name": "4,169 4169 · 数字1",
+          "en": "4,169",
+          "rest": "4169（{{数字1}}）"
+        },
+        {
+          "name": "51 billion pieces 510 亿件 · 数字1",
+          "en": "51 billion pieces",
+          "rest": "510 亿件（{{数字1}}）"
+        },
+        {
+          "name": "67.77% 67.77% · 数字1",
+          "en": "67.77%",
+          "rest": "67.77%（{{数字1}}）"
+        },
+        {
+          "name": "68.1% 68.1% · 数字1",
+          "en": "68.1%",
+          "rest": "68.1%（{{数字1}}）"
+        },
+        {
+          "name": "8.80% 8.80% · 数字1",
+          "en": "8.80%",
+          "rest": "8.80%（{{数字1}}）"
+        },
+        {
+          "name": "a modest share 一个不大的份额 · 数字1",
+          "en": "a modest share",
+          "rest": "一个不大的份额（{{数字1}}）"
+        },
+        {
+          "name": "25.40% 25.40% · 数字2",
+          "en": "25.40%",
+          "rest": "25.40%（{{数字2}}）"
+        },
+        {
+          "name": "4 billion 40 亿 · 数字2",
+          "en": "4 billion",
+          "rest": "40 亿（{{数字2}}）"
+        },
+        {
+          "name": "4,692 4692 · 数字2",
+          "en": "4,692",
+          "rest": "4692（{{数字2}}）"
+        },
+        {
+          "name": "60.7% 60.7% · 数字2",
+          "en": "60.7%",
+          "rest": "60.7%（{{数字2}}）"
+        },
+        {
+          "name": "670 million 6.7 亿 · 数字2",
+          "en": "670 million",
+          "rest": "6.7 亿（{{数字2}}）"
+        },
+        {
+          "name": "83 billion pieces 830 亿件 · 数字2",
+          "en": "83 billion pieces",
+          "rest": "830 亿件（{{数字2}}）"
+        },
+        {
+          "name": "88.24% 88.24% · 数字2",
+          "en": "88.24%",
+          "rest": "88.24%（{{数字2}}）"
+        },
+        {
+          "name": "the leading position 领先地位 · 数字2",
+          "en": "the leading position",
+          "rest": "领先地位（{{数字2}}）"
+        },
+        {
+          "name": "0.7 billion 7 亿 · 数字3",
+          "en": "0.7 billion",
+          "rest": "7 亿（{{数字3}}）"
+        },
+        {
+          "name": "12 billion pieces 120 亿件 · 数字3",
+          "en": "12 billion pieces",
+          "rest": "120 亿件（{{数字3}}）"
+        },
+        {
+          "name": "26.3% 26.3% · 数字3",
+          "en": "26.3%",
+          "rest": "26.3%（{{数字3}}）"
+        },
+        {
+          "name": "637 million 6.37 亿 · 数字3",
+          "en": "637 million",
+          "rest": "6.37 亿（{{数字3}}）"
+        },
+        {
+          "name": "8.80% 8.80% · 数字3",
+          "en": "8.80%",
+          "rest": "8.80%（{{数字3}}）"
+        },
+        {
+          "name": "820 million 8.2 亿 · 数字3",
+          "en": "820 million",
+          "rest": "8.2 亿（{{数字3}}）"
+        },
+        {
+          "name": "83.7% 83.7% · 数字3",
+          "en": "83.7%",
+          "rest": "83.7%（{{数字3}}）"
+        },
+        {
+          "name": "a small share 一个较小的份额 · 数字3",
+          "en": "a small share",
+          "rest": "一个较小的份额（{{数字3}}）"
+        },
+        {
+          "name": "1 billion 10 亿 · 数字4",
+          "en": "1 billion",
+          "rest": "10 亿（{{数字4}}）"
+        },
+        {
+          "name": "25.40% 25.40% · 数字4",
+          "en": "25.40%",
+          "rest": "25.40%（{{数字4}}）"
+        },
+        {
+          "name": "30 billion pieces 300 亿件 · 数字4",
+          "en": "30 billion pieces",
+          "rest": "300 亿件（{{数字4}}）"
+        },
+        {
+          "name": "34.0% 34.0% · 数字4",
+          "en": "34.0%",
+          "rest": "34.0%（{{数字4}}）"
+        },
+        {
+          "name": "680 million 6.8 亿 · 数字4",
+          "en": "680 million",
+          "rest": "6.8 亿（{{数字4}}）"
+        },
+        {
+          "name": "88.24% 88.24% · 数字4",
+          "en": "88.24%",
+          "rest": "88.24%（{{数字4}}）"
+        },
+        {
+          "name": "954 million 9.54 亿 · 数字4",
+          "en": "954 million",
+          "rest": "9.54 亿（{{数字4}}）"
+        },
+        {
+          "name": "a slightly larger share 略大的份额 · 数字4",
+          "en": "a slightly larger share",
+          "rest": "略大的份额（{{数字4}}）"
+        },
+        {
+          "name": "1.3% 1.3% · 数字5",
+          "en": "1.3%",
+          "rest": "1.3%（{{数字5}}）"
+        },
+        {
+          "name": "their peak level 其最高水平 · 数字5",
+          "en": "their peak level",
+          "rest": "其最高水平（{{数字5}}）"
+        },
+        {
+          "name": "2.6% 2.6% · 数字6",
+          "en": "2.6%",
+          "rest": "2.6%（{{数字6}}）"
+        },
+        {
+          "name": "a much lower level 远低于此的水平 · 数字6",
+          "en": "a much lower level",
+          "rest": "远低于此的水平（{{数字6}}）"
+        }
+      ]
+    },
+    {
+      "name": "时间（34）",
+      "color": "#3b82f6",
+      "children": [
+        {
+          "name": "2013 2013 年 · 时间1",
+          "en": "2013",
+          "rest": "2013 年（{{时间1}}）"
+        },
+        {
+          "name": "2013 2013 年 · 时间3",
+          "en": "2013",
+          "rest": "2013 年（{{时间3}}）"
+        },
+        {
+          "name": "1990 1990 年 · 时间1",
+          "en": "1990",
+          "rest": "1990 年（{{时间1}}）"
+        },
+        {
+          "name": "2000 2000 年 · 时间1",
+          "en": "2000",
+          "rest": "2000 年（{{时间1}}）"
+        },
+        {
+          "name": "2012 2012 年 · 时间1",
+          "en": "2012",
+          "rest": "2012 年（{{时间1}}）"
+        },
+        {
+          "name": "2018 2018 年 · 时间1",
+          "en": "2018",
+          "rest": "2018 年（{{时间1}}）"
+        },
+        {
+          "name": "the earlier period 前一时期 · 时间1",
+          "en": "the earlier period",
+          "rest": "前一时期（{{时间1}}）"
+        },
+        {
+          "name": "the first year 大一 · 时间1",
+          "en": "the first year",
+          "rest": "大一（{{时间1}}）"
+        },
+        {
+          "name": "2008 2008 年 · 时间2",
+          "en": "2008",
+          "rest": "2008 年（{{时间2}}）"
+        },
+        {
+          "name": "2010 2010 年 · 时间2",
+          "en": "2010",
+          "rest": "2010 年（{{时间2}}）"
+        },
+        {
+          "name": "2015 2015 年 · 时间2",
+          "en": "2015",
+          "rest": "2015 年（{{时间2}}）"
+        },
+        {
+          "name": "2018 2018 年 · 时间2",
+          "en": "2018",
+          "rest": "2018 年（{{时间2}}）"
+        },
+        {
+          "name": "2020 2020 年 · 时间2",
+          "en": "2020",
+          "rest": "2020 年（{{时间2}}）"
+        },
+        {
+          "name": "2021 2021 年 · 时间2",
+          "en": "2021",
+          "rest": "2021 年（{{时间2}}）"
+        },
+        {
+          "name": "the final year 大四 · 时间2",
+          "en": "the final year",
+          "rest": "大四（{{时间2}}）"
+        },
+        {
+          "name": "the later period 后一时期 · 时间2",
+          "en": "the later period",
+          "rest": "后一时期（{{时间2}}）"
+        },
+        {
+          "name": "1990 1990 年 · 时间3",
+          "en": "1990",
+          "rest": "1990 年（{{时间3}}）"
+        },
+        {
+          "name": "2000 2000 年 · 时间3",
+          "en": "2000",
+          "rest": "2000 年（{{时间3}}）"
+        },
+        {
+          "name": "2012 2012 年 · 时间3",
+          "en": "2012",
+          "rest": "2012 年（{{时间3}}）"
+        },
+        {
+          "name": "2018 2018 年 · 时间3",
+          "en": "2018",
+          "rest": "2018 年（{{时间3}}）"
+        },
+        {
+          "name": "the earlier period 前一时期 · 时间3",
+          "en": "the earlier period",
+          "rest": "前一时期（{{时间3}}）"
+        },
+        {
+          "name": "the third year 大三 · 时间3",
+          "en": "the third year",
+          "rest": "大三（{{时间3}}）"
+        },
+        {
+          "name": "2008 2008 年 · 时间4",
+          "en": "2008",
+          "rest": "2008 年（{{时间4}}）"
+        },
+        {
+          "name": "2010 2010 年 · 时间4",
+          "en": "2010",
+          "rest": "2010 年（{{时间4}}）"
+        },
+        {
+          "name": "2015 2015 年 · 时间4",
+          "en": "2015",
+          "rest": "2015 年（{{时间4}}）"
+        },
+        {
+          "name": "2018 2018 年 · 时间4",
+          "en": "2018",
+          "rest": "2018 年（{{时间4}}）"
+        },
+        {
+          "name": "2020 2020 年 · 时间4",
+          "en": "2020",
+          "rest": "2020 年（{{时间4}}）"
+        },
+        {
+          "name": "2021 2021 年 · 时间4",
+          "en": "2021",
+          "rest": "2021 年（{{时间4}}）"
+        },
+        {
+          "name": "the final year 大四 · 时间4",
+          "en": "the final year",
+          "rest": "大四（{{时间4}}）"
+        },
+        {
+          "name": "the later period 后一时期 · 时间4",
+          "en": "the later period",
+          "rest": "后一时期（{{时间4}}）"
+        },
+        {
+          "name": "2013 2013 年 · 时间5",
+          "en": "2013",
+          "rest": "2013 年（{{时间5}}）"
+        },
+        {
+          "name": "the earlier period 前一时期 · 时间5",
+          "en": "the earlier period",
+          "rest": "前一时期（{{时间5}}）"
+        },
+        {
+          "name": "2018 2018 年 · 时间6",
+          "en": "2018",
+          "rest": "2018 年（{{时间6}}）"
+        },
+        {
+          "name": "the later period 后一时期 · 时间6",
+          "en": "the later period",
+          "rest": "后一时期（{{时间6}}）"
+        }
+      ]
+    },
+    {
+      "name": "数据 · 占比（42）",
+      "color": "#ef4444",
+      "children": [
+        {
+          "name": "a still smaller share 更小的比例 · 百分比5",
+          "en": "a still smaller share",
+          "rest": "更小的比例（{{百分比5}}）"
+        },
+        {
+          "name": "36.3% 36.3% · 百分比1",
+          "en": "36.3%",
+          "rest": "36.3%（{{百分比1}}）"
+        },
+        {
+          "name": "37% 37% · 百分比1",
+          "en": "37%",
+          "rest": "37%（{{百分比1}}）"
+        },
+        {
+          "name": "40% 40% · 百分比1",
+          "en": "40%",
+          "rest": "40%（{{百分比1}}）"
+        },
+        {
+          "name": "54.6% 54.6% · 百分比1",
+          "en": "54.6%",
+          "rest": "54.6%（{{百分比1}}）"
+        },
+        {
+          "name": "59.5% 59.5% · 百分比1",
+          "en": "59.5%",
+          "rest": "59.5%（{{百分比1}}）"
+        },
+        {
+          "name": "80% of the total 总额的 80% · 百分比1",
+          "en": "80% of the total",
+          "rest": "总额的 80%（{{百分比1}}）"
+        },
+        {
+          "name": "90.8% 90.8% · 百分比1",
+          "en": "90.8%",
+          "rest": "90.8%（{{百分比1}}）"
+        },
+        {
+          "name": "91.3% 91.3% · 百分比1",
+          "en": "91.3%",
+          "rest": "91.3%（{{百分比1}}）"
+        },
+        {
+          "name": "slightly over half of the respondents 略超受访者半数 · 百分比1",
+          "en": "slightly over half of the respondents",
+          "rest": "略超受访者半数（{{百分比1}}）"
+        },
+        {
+          "name": "21.3% 21.3% · 百分比2",
+          "en": "21.3%",
+          "rest": "21.3%（{{百分比2}}）"
+        },
+        {
+          "name": "26.8% 26.8% · 百分比2",
+          "en": "26.8%",
+          "rest": "26.8%（{{百分比2}}）"
+        },
+        {
+          "name": "33% 33% · 百分比2",
+          "en": "33%",
+          "rest": "33%（{{百分比2}}）"
+        },
+        {
+          "name": "47.7% 47.7% · 百分比2",
+          "en": "47.7%",
+          "rest": "47.7%（{{百分比2}}）"
+        },
+        {
+          "name": "54.5% 54.5% · 百分比2",
+          "en": "54.5%",
+          "rest": "54.5%（{{百分比2}}）"
+        },
+        {
+          "name": "68.3% 68.3% · 百分比2",
+          "en": "68.3%",
+          "rest": "68.3%（{{百分比2}}）"
+        },
+        {
+          "name": "84.8% 84.8% · 百分比2",
+          "en": "84.8%",
+          "rest": "84.8%（{{百分比2}}）"
+        },
+        {
+          "name": "a small share 一个很小的比例 · 百分比2",
+          "en": "a small share",
+          "rest": "一个很小的比例（{{百分比2}}）"
+        },
+        {
+          "name": "the lowest level 最低水平 · 百分比2",
+          "en": "the lowest level",
+          "rest": "最低水平（{{百分比2}}）"
+        },
+        {
+          "name": "15% 15% · 百分比3",
+          "en": "15%",
+          "rest": "15%（{{百分比3}}）"
+        },
+        {
+          "name": "17.0% 17.0% · 百分比3",
+          "en": "17.0%",
+          "rest": "17.0%（{{百分比3}}）"
+        },
+        {
+          "name": "23.8% 23.8% · 百分比3",
+          "en": "23.8%",
+          "rest": "23.8%（{{百分比3}}）"
+        },
+        {
+          "name": "23.9% 23.9% · 百分比3",
+          "en": "23.9%",
+          "rest": "23.9%（{{百分比3}}）"
+        },
+        {
+          "name": "34.7% 34.7% · 百分比3",
+          "en": "34.7%",
+          "rest": "34.7%（{{百分比3}}）"
+        },
+        {
+          "name": "37.2% 37.2% · 百分比3",
+          "en": "37.2%",
+          "rest": "37.2%（{{百分比3}}）"
+        },
+        {
+          "name": "54.4% 54.4% · 百分比3",
+          "en": "54.4%",
+          "rest": "54.4%（{{百分比3}}）"
+        },
+        {
+          "name": "a modest level 中等水平 · 百分比3",
+          "en": "a modest level",
+          "rest": "中等水平（{{百分比3}}）"
+        },
+        {
+          "name": "a smaller share 更小的比例 · 百分比3",
+          "en": "a smaller share",
+          "rest": "更小的比例（{{百分比3}}）"
+        },
+        {
+          "name": "12% 12% · 百分比4",
+          "en": "12%",
+          "rest": "12%（{{百分比4}}）"
+        },
+        {
+          "name": "16.7% 16.7% · 百分比4",
+          "en": "16.7%",
+          "rest": "16.7%（{{百分比4}}）"
+        },
+        {
+          "name": "2.2% 2.2% · 百分比4",
+          "en": "2.2%",
+          "rest": "2.2%（{{百分比4}}）"
+        },
+        {
+          "name": "31.8% 31.8% · 百分比4",
+          "en": "31.8%",
+          "rest": "31.8%（{{百分比4}}）"
+        },
+        {
+          "name": "32.6% 32.6% · 百分比4",
+          "en": "32.6%",
+          "rest": "32.6%（{{百分比4}}）"
+        },
+        {
+          "name": "33.2% 33.2% · 百分比4",
+          "en": "33.2%",
+          "rest": "33.2%（{{百分比4}}）"
+        },
+        {
+          "name": "8.4% 8.4% · 百分比4",
+          "en": "8.4%",
+          "rest": "8.4%（{{百分比4}}）"
+        },
+        {
+          "name": "9% 9% · 百分比4",
+          "en": "9%",
+          "rest": "9%（{{百分比4}}）"
+        },
+        {
+          "name": "less than 16% 不足 16% · 百分比4",
+          "en": "less than 16%",
+          "rest": "不足 16%（{{百分比4}}）"
+        },
+        {
+          "name": "18.4% 18.4% · 百分比5",
+          "en": "18.4%",
+          "rest": "18.4%（{{百分比5}}）"
+        },
+        {
+          "name": "4.7% 4.7% · 百分比5",
+          "en": "4.7%",
+          "rest": "4.7%（{{百分比5}}）"
+        },
+        {
+          "name": "6% 6% · 百分比5",
+          "en": "6%",
+          "rest": "6%（{{百分比5}}）"
+        },
+        {
+          "name": "8% 8% · 百分比5",
+          "en": "8%",
+          "rest": "8%（{{百分比5}}）"
+        },
+        {
+          "name": "a negligible share 微不足道的比例 · 百分比5",
+          "en": "a negligible share",
+          "rest": "微不足道的比例（{{百分比5}}）"
+        }
+      ]
+    }
+  ]
+}].forEach(function (m) { DATA.maps.push(m); });
   /* <<< 写作句式 <<< */
 
   function esc(s) {

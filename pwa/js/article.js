@@ -45,8 +45,7 @@ function applyHtml(ap, year) {
     const mk = (typeof APPLY_MARKS !== 'undefined' && APPLY_MARKS && year) ? APPLY_MARKS[year] : null;
     const bodyHtml = renderApplyBody(mk) || `<div class="apply-en">${esc(ap.apply_en)}</div>`;
     const tips = (ap.tips || []).map(t => `<li>${esc(t)}</li>`).join('');
-    const phrs = (ap.key_phrases || []).map(p =>
-        `<div class="ap-phrase"><span class="ap-phrase-en">${esc(p.en)}</span><span class="ap-phrase-cn">${esc(p.cn)}</span></div>`).join('');
+
     return `<div class="writing-apply">
         <div class="wr-apply-head">
             <span class="rs-label">模板套用示范</span>
@@ -54,10 +53,11 @@ function applyHtml(ap, year) {
         </div>
         <div class="ap-note">用「作文模板」的句型套写本篇真题：<mark class="ap-slot">槽位词</mark>按题替换，<mark class="ap-own">自写处</mark>自己组织</div>
         <div class="apply-en">${bodyHtml}</div>
-        <div class="apply-cn" hidden>${esc(ap.apply_cn || '')}</div>
+        <div class="apply-cn" hidden>${renderApplyCn(mk, ap.apply_cn)}</div>
         ${renderApplyMarks(mk)}
         ${tips ? `<div class="ap-sub">📝 套用建议</div><ul class="apply-tips">${tips}</ul>` : ''}
-        ${phrs ? `<div class="ap-sub">🔑 关键句型<span class="ap-xref">已收录进 <a href="phrasebook.html">熟词短语</a> · <a href="nearmap.html">近义词</a> 板块</span></div><div class="ap-phrases">${phrs}</div>` : ''}
+        ${renderSlotPhrases((mk && mk.slot_phrases) || ap.slot_phrases)}
+        ${renderKeyPhrases((mk && mk.key_phrases) || ap.key_phrases)}
     </div>`;
 }
 

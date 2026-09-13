@@ -27,7 +27,8 @@ SENT_SPLIT_CN = re.compile(r'(?<=[\u3002\uff01\uff1f])')
 
 
 def wc(text):
-    return len([x for x in re.split(r'\s+', (text or '').strip()) if re.search(r'[A-Za-z0-9]', x)])
+    '''考研口径：含字母的空白串算 1 个（连字符算 1），纯数字/百分比不计'''
+    return len([x for x in re.split(r'\s+', (text or '').strip()) if re.search(r'[A-Za-z]', x)])
 
 
 def en_sents(t):
@@ -167,6 +168,30 @@ def spans_of(sent, kinds):
     return [s for s in spans if s['x'].strip()] or [{'t': 'o', 'x': sent}]
 
 
+def cn_spans(sent, slot_cns):
+    '''把译文里对应「填槽表达」的部分标为 s（可替换），其余为模板'''
+    if not sent:
+        return []
+    marks = [False] * len(sent)
+    for val in sorted({x for x in slot_cns if x}, key=len, reverse=True):
+        start = 0
+        while True:
+            i = sent.find(val, start)
+            if i < 0:
+                break
+            for k in range(i, i + len(val)):
+                marks[k] = True
+            start = i + len(val)
+    spans = []
+    for ch, mk in zip(sent, marks):
+        k = 's' if mk else 't'
+        if spans and spans[-1]['t'] == k:
+            spans[-1]['x'] += ch
+        else:
+            spans.append({'t': k, 'x': ch})
+    return spans
+
+
 def segs(pat):
     return [p.strip(' ,.;') for p in re.split(r'\u2026+', pat) if len(p.strip(' ,.;')) > 3]
 
@@ -202,7 +227,14 @@ def main():
         en_paras = paras(v['apply_en'])
         cn_paras = paras(v.get('apply_cn'))
         keys = [k['en'] for k in v.get('key_phrases', [])]
-        rec = {'wc': wc(v['apply_en']), 'paras': []}
+        slots_by_para = {}
+        for sl in v.get('slot_used', []):
+            if sl.get('cn'):
+                slots_by_para.setdefault(sl['para'], []).append(sl['cn'])
+        rec = {'wc': wc(v['apply_en']),
+               'key_phrases': v.get('key_phrases', []),
+               'slot_phrases': v.get('slot_phrases', []),
+               'paras': []}
         for pi, para in enumerate(en_paras):
             sents = en_sents(para)
             cns = cn_sents(cn_paras[pi]) if pi < len(cn_paras) else []
@@ -217,15 +249,18 @@ def main():
                 else:
                     kinds = classify(toks, sm, holes, ref_len)
                 stat[kind] = stat.get(kind, 0) + 1
+                cn_txt = cns[si] if use_cn else ''
+                sp_cn = cn_spans(cn_txt, slots_by_para.get('p%d' % (pi + 1), []))
                 pre['sents'].append({
                     'spans': spans_of(s, kinds),
+                    'spans_cn': sp_cn,
                     'src': label,
                     'kind': kind,
                     'cov': round(cov, 2),
                     'matched': matched,
                     'wc': len(toks),
                     'keys': key_hits(s, keys),
-                    'cn': cns[si] if use_cn else '',
+                    'cn': cn_txt,
                 })
             rec['paras'].append(pre)
         out[y] = rec

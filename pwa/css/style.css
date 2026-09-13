@@ -3475,3 +3475,40 @@ mark.ap-own {
 .dark .ap-tag-s { background: rgba(124,192,255,.16); color: #9ecbff; }
 .dark .ap-tag-o { background: rgba(252,211,77,.16); color: #fcd34d; }
 .ap-line-cn { color: var(--text-light); }
+
+/* ===== 套用示范：填槽表达 / 模板句型 两块 ===== */
+.ap-sub2 {
+    display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+    font-size: .84rem; font-weight: 700; color: var(--primary);
+    margin: 14px 0 8px; padding-top: 10px; border-top: 1px solid var(--border);
+}
+.ap-sub2-tip { font-weight: 400; font-size: .73rem; color: var(--text-light); }
+.ap-sub2 .ap-xref { float: none; margin-left: 6px; }
+.ap-slots { display: flex; flex-direction: column; gap: 8px; }
+.ap-slot-para { border-left: 3px solid var(--primary-soft); padding-left: 9px; }
+.ap-slot-para-t { font-size: .74rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 3px; }
+.ap-slot-row {
+    display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap;
+    font-size: .81rem; line-height: 1.7; padding: 2px 0;
+}
+.ap-slot-name {
+    flex: 0 0 auto; font-family: Georgia, "Times New Roman", serif; font-size: .74rem;
+    color: #1a5fb4; background: rgba(29,111,208,.12);
+    border-radius: 4px; padding: 0 6px;
+}
+.dark .ap-slot-name { color: #9ecbff; background: rgba(124,192,255,.14); }
+.ap-slot-en { color: var(--text); font-family: Georgia, "Times New Roman", serif; }
+.ap-slot-cn { color: var(--text-light); font-size: .78rem; }
+.ap-tpls { display: flex; flex-direction: column; gap: 7px; }
+.ap-tpl-row {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 11px;
+}
+.ap-tpl-en { font-family: Georgia, "Times New Roman", serif; font-size: .87rem; line-height: 1.75; color: var(--text); }
+.ap-tpl-cn { font-size: .79rem; color: var(--text-light); line-height: 1.7; margin-top: 3px; }
+.ap-tpl-src { font-size: .72rem; color: var(--text-light); opacity: .85; margin-top: 3px; }
+.ap-ph {
+    color: #1a5fb4; background: rgba(29,111,208,.13);
+    border-radius: 3px; padding: 0 3px; font-weight: 600;
+}
+.dark .ap-ph { color: #9ecbff; background: rgba(124,192,255,.16); }

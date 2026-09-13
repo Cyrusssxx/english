@@ -1,8 +1,8 @@
 {
  "2010": {
   "title": "Part B 图表作文：手机用户量增长情况对比",
-  "apply_en": "The bar chart shows that the mobile-phone subscription numbers associated with the two groups rose steadily during the periods presented. Subscriptions in developing countries climbed from 0.5 billion in 2000 to 4 billion in 2008, while those in developed countries rose from 0.7 billion to 1 billion. Although the two moved in the same direction, the pace of growth differed sharply.\n\nThe gap stems from the different market conditions of the two groups. In developing countries, the mobile-phone market had not yet reached saturation, and the number of potential customers was huge. Thanks to the economic boom, an increasing number of them gradually joined the market. In developed countries, by contrast, a saturated market left little room for further growth.\n\nFor this trend to continue exerting a positive influence on everyday life, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which mobile services can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances.",
-  "apply_cn": "该柱状图表明，两组对象的手机订阅量在相应时期内均持续上升。发展中国家的订阅量从 2000 年的 5 亿攀升至 2008 年的 40 亿，而发达国家同期从 7 亿增至 10 亿。二者虽同向变动，但增速差异明显。\n\n这一差距源于两组市场环境的差异。发展中国家的手机市场尚未饱和，加之人口基数庞大，潜在客户数量巨大；得益于经济腾飞，越来越多的人陆续进入市场。相比之下，发达国家市场已经饱和，几乎没有进一步增长的空间。\n\n要使这一趋势持续为日常生活带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为移动服务发挥作用创造良好条件。个人也应结合自身情况作出理性选择。",
+  "apply_en": "The bar chart shows that the items associated with mobile-phone subscriptions in developing and developed countries rose steadily during the periods presented. Subscriptions in developing countries climbed from 0.5 billion in 2000 to 4 billion in 2008, while those in developed countries rose from 0.7 billion in 2000 to 1 billion in 2008.\n\nUndoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of mobile services. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living. Seen in this light, the development of mobile services is no coincidence but a natural consequence of broader changes in social life.\n\nFor mobile services to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which mobile services can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that mobile services genuinely contributes to their long-term development.",
+  "apply_cn": "该柱状图表明，与发展中国家与发达国家的手机订阅量有关的不同项目在相应时期内均持续上升。发展中国家的订阅量由2000年的5亿上升至2008年的40亿，发达国家同期的订阅量则从2000年的7亿增至2008年的10亿。\n\n毫无疑问，国家经济的飞速发展，为手机服务的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。由此可见，手机服务的发展并非偶然，而是社会生活发生变化后的自然结果。\n\n要使手机服务持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为手机服务发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使手机服务真正服务于自身的长期发展。",
   "tips": [
    "图型：柱状（bar），两事物同向不同速——首句用 rose steadily，**不要**用 did not move in a uniform direction（那是给有升有降的图准备的）。",
    "两个上升各用 climbed / rose 换词，末句用 the pace of growth differed sharply 点出\"速度不同\"，这是本题的题眼。",
@@ -11,31 +11,272 @@
   ],
   "key_phrases": [
    {
-    "en": "rose steadily during the periods presented",
-    "cn": "在相应时期内持续上升"
+    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "climbed from … to …",
-    "cn": "由……攀升至……"
+    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "the pace of growth differed sharply",
-    "cn": "增长速度差异明显"
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "src": "经济类第二段 · 模板第2句"
    },
    {
-    "en": "had not yet reached saturation",
-    "cn": "尚未达到饱和"
+    "en": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.",
+    "cn": "随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。",
+    "src": "经济类第二段 · 模板第3句"
    },
    {
-    "en": "left little room for further growth",
-    "cn": "几乎没有进一步增长的空间"
+    "en": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
+    "cn": "由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
+    "src": "经济类第二段 · 模板第5句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_dynamic",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "para2_economy",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "t",
+      5
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Subscriptions in developing countries",
+    "cn": "发展中国家的订阅量"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "those in developed countries",
+    "cn": "发达国家同期的订阅量"
+   },
+   {
+    "para": "p1",
+    "name": "数字1",
+    "en": "0.5 billion",
+    "cn": "5 亿"
+   },
+   {
+    "para": "p1",
+    "name": "数字2",
+    "en": "4 billion",
+    "cn": "40 亿"
+   },
+   {
+    "para": "p1",
+    "name": "数字3",
+    "en": "0.7 billion",
+    "cn": "7 亿"
+   },
+   {
+    "para": "p1",
+    "name": "数字4",
+    "en": "1 billion",
+    "cn": "10 亿"
+   },
+   {
+    "para": "p1",
+    "name": "时间1",
+    "en": "2000",
+    "cn": "2000 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间2",
+    "en": "2008",
+    "cn": "2008 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间3",
+    "en": "2000",
+    "cn": "2000 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间4",
+    "en": "2008",
+    "cn": "2008 年"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "mobile-phone subscriptions in developing and developed countries",
+    "cn": "发展中国家与发达国家的手机订阅量"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "mobile services",
+    "cn": "手机服务"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "mobile services",
+    "cn": "手机服务"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Subscriptions in developing countries",
+    "cn": "发展中国家的订阅量",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "those in developed countries",
+    "cn": "发达国家同期的订阅量",
+    "para": "第一段"
+   },
+   {
+    "name": "数字1",
+    "en": "0.5 billion",
+    "cn": "5 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "数字2",
+    "en": "4 billion",
+    "cn": "40 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "数字3",
+    "en": "0.7 billion",
+    "cn": "7 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "数字4",
+    "en": "1 billion",
+    "cn": "10 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "时间1",
+    "en": "2000",
+    "cn": "2000 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间2",
+    "en": "2008",
+    "cn": "2008 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间3",
+    "en": "2000",
+    "cn": "2000 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间4",
+    "en": "2008",
+    "cn": "2008 年",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "mobile-phone subscriptions in developing and developed countries",
+    "cn": "发展中国家与发达国家的手机订阅量",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "mobile services",
+    "cn": "手机服务",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "mobile services",
+    "cn": "手机服务",
+    "para": "第三段"
    }
   ]
  },
  "2011": {
   "title": "Part B 图表作文：汽车品牌市场份额变化",
-  "apply_en": "The bar chart shows that the market shares associated with the three auto brands did not move in a uniform direction during the periods presented. Chinese brands climbed from a modest share to the leading position, while Japanese brands fell by nearly 10 percentage points and were displaced from their leading position. Chinese brands expanded their share by nearly the same margin as Japanese brands lost theirs. By contrast, American brands held steady, with only a slight increase.\n\nThe shift is not unexpected. On the one hand, Chinese auto producers have narrowed the technology gap between themselves and foreign competitors and have cleverly adjusted their promotion strategies. On the other hand, as the national economy grows, consumers increasingly favour products that suit their own needs and budgets. In addition, rising national confidence has made domestic brands a more attractive option.\n\nFor domestic brands to hold their advantage, continued efforts are essential. Manufacturers should keep improving quality and after-sales service, while consumers should make well-informed choices in light of their own circumstances.",
-  "apply_cn": "该柱状图表明，三个汽车品牌的市场份额在相应时期内并未朝着相同方向变化。国产品牌从一个不大的份额攀升至领先地位，日系品牌则下降近 10 个百分点、被赶下了头名位置。两大国产品牌扩大的份额与日系品牌失去的份额大致相当。相比之下，美系品牌保持稳定，仅略有增长。\n\n这一变化并不意外。一方面，中国汽车制造商缩小了与外国竞争者的技术差距，并灵活调整了营销策略；另一方面，随着国民经济发展，消费者越来越青睐契合自身需求与预算的产品。此外，民族自信的提升也让国产品牌更具吸引力。\n\n国产品牌若要保持优势，仍需持续努力。厂商应不断提升质量与售后服务，消费者也应结合自身情况作出理性选择。",
+  "apply_en": "The bar chart shows that the items associated with the market shares of Chinese, Japanese and American auto brands did not move in a uniform direction during the periods presented. Chinese brands climbed from a modest share in the earlier period to the leading position in the later period, while American brands rose from a small share in the earlier period to a slightly larger share in the later period.\n\nGrowing public attention to domestic auto brands stems from its ability to meet practical needs in everyday life. Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of domestic auto brands. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.\n\nFor domestic auto brands to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which domestic auto brands can play a constructive role.",
+  "apply_cn": "该柱状图表明，与中国、日本与美国汽车品牌的市场份额有关的不同项目在相应时期内并未朝着相同方向变化。国产品牌由前一时期的一个不大的份额上升至后一时期的领先地位，美系品牌则从前一时期的一个较小的份额增至后一时期的略大的份额。\n\n国产汽车品牌之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。毫无疑问，国家经济的飞速发展，为国产汽车品牌的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。\n\n要使国产汽车品牌持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为国产汽车品牌发挥作用创造良好条件。",
   "tips": [
    "本题是**有升有降**的典型：首句务必用 did not move in a uniform direction。",
    "三事物分组写法：升的（国产）→ 降的（日系）→ 持平的（美系，By contrast 引出），与静态模板的\"分组\"思路一致。",
@@ -44,31 +285,323 @@
   ],
   "key_phrases": [
    {
-    "en": "did not move in a uniform direction",
-    "cn": "并未朝着相同方向变化"
+    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "were displaced from their leading position",
-    "cn": "从领先位置被取代"
+    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "expanded their share by nearly the same margin",
-    "cn": "以相近幅度扩大份额"
+    "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life.",
+    "cn": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
+    "src": "经济类第二段 · 模板第1句"
    },
    {
-    "en": "narrowed the technology gap",
-    "cn": "缩小了技术差距"
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "src": "经济类第二段 · 模板第2句"
    },
    {
-    "en": "By contrast",
-    "cn": "相比之下（用于转折对比）"
+    "en": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.",
+    "cn": "随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。",
+    "src": "经济类第二段 · 模板第3句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_dynamic",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "para2_economy",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Chinese brands",
+    "cn": "国产品牌"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "American brands",
+    "cn": "美系品牌"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "Japanese brands",
+    "cn": "日系品牌"
+   },
+   {
+    "para": "p1",
+    "name": "数字1",
+    "en": "a modest share",
+    "cn": "一个不大的份额"
+   },
+   {
+    "para": "p1",
+    "name": "数字2",
+    "en": "the leading position",
+    "cn": "领先地位"
+   },
+   {
+    "para": "p1",
+    "name": "数字3",
+    "en": "a small share",
+    "cn": "一个较小的份额"
+   },
+   {
+    "para": "p1",
+    "name": "数字4",
+    "en": "a slightly larger share",
+    "cn": "略大的份额"
+   },
+   {
+    "para": "p1",
+    "name": "数字5",
+    "en": "their peak level",
+    "cn": "其最高水平"
+   },
+   {
+    "para": "p1",
+    "name": "数字6",
+    "en": "a much lower level",
+    "cn": "远低于此的水平"
+   },
+   {
+    "para": "p1",
+    "name": "时间1",
+    "en": "the earlier period",
+    "cn": "前一时期"
+   },
+   {
+    "para": "p1",
+    "name": "时间2",
+    "en": "the later period",
+    "cn": "后一时期"
+   },
+   {
+    "para": "p1",
+    "name": "时间3",
+    "en": "the earlier period",
+    "cn": "前一时期"
+   },
+   {
+    "para": "p1",
+    "name": "时间4",
+    "en": "the later period",
+    "cn": "后一时期"
+   },
+   {
+    "para": "p1",
+    "name": "时间5",
+    "en": "the earlier period",
+    "cn": "前一时期"
+   },
+   {
+    "para": "p1",
+    "name": "时间6",
+    "en": "the later period",
+    "cn": "后一时期"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the market shares of Chinese, Japanese and American auto brands",
+    "cn": "中国、日本与美国汽车品牌的市场份额"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "domestic auto brands",
+    "cn": "国产汽车品牌"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "domestic auto brands",
+    "cn": "国产汽车品牌"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Chinese brands",
+    "cn": "国产品牌",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "American brands",
+    "cn": "美系品牌",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "Japanese brands",
+    "cn": "日系品牌",
+    "para": "第一段"
+   },
+   {
+    "name": "数字1",
+    "en": "a modest share",
+    "cn": "一个不大的份额",
+    "para": "第一段"
+   },
+   {
+    "name": "数字2",
+    "en": "the leading position",
+    "cn": "领先地位",
+    "para": "第一段"
+   },
+   {
+    "name": "数字3",
+    "en": "a small share",
+    "cn": "一个较小的份额",
+    "para": "第一段"
+   },
+   {
+    "name": "数字4",
+    "en": "a slightly larger share",
+    "cn": "略大的份额",
+    "para": "第一段"
+   },
+   {
+    "name": "数字5",
+    "en": "their peak level",
+    "cn": "其最高水平",
+    "para": "第一段"
+   },
+   {
+    "name": "数字6",
+    "en": "a much lower level",
+    "cn": "远低于此的水平",
+    "para": "第一段"
+   },
+   {
+    "name": "时间1",
+    "en": "the earlier period",
+    "cn": "前一时期",
+    "para": "第一段"
+   },
+   {
+    "name": "时间2",
+    "en": "the later period",
+    "cn": "后一时期",
+    "para": "第一段"
+   },
+   {
+    "name": "时间3",
+    "en": "the earlier period",
+    "cn": "前一时期",
+    "para": "第一段"
+   },
+   {
+    "name": "时间4",
+    "en": "the later period",
+    "cn": "后一时期",
+    "para": "第一段"
+   },
+   {
+    "name": "时间5",
+    "en": "the earlier period",
+    "cn": "前一时期",
+    "para": "第一段"
+   },
+   {
+    "name": "时间6",
+    "en": "the later period",
+    "cn": "后一时期",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the market shares of Chinese, Japanese and American auto brands",
+    "cn": "中国、日本与美国汽车品牌的市场份额",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "domestic auto brands",
+    "cn": "国产汽车品牌",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "domestic auto brands",
+    "cn": "国产汽车品牌",
+    "para": "第三段"
    }
   ]
  },
  "2012": {
   "title": "Part B 图表作文：某公司员工工作满意度调查",
-  "apply_en": "The table presents an uneven distribution among the age groups associated with job satisfaction. Employees above 50 account for the largest share, at 40%. The middle group, those aged 41 to 50, represents the lowest level, where none of them felt satisfied and 64% expressed dissatisfaction. In contrast, employees aged 40 or younger make up a relatively small proportion, only 16.7% of whom reported contentment.\n\nThe differences are closely related to the career situation of each group. The 41-to-50 group, less energetic than the younger crowd and less established than older professionals, often reaches a career plateau, and the consequent sense of powerlessness reduces them to deep dissatisfaction. Younger employees, by contrast, may still be adapting to their posts and are therefore cautious about declaring satisfaction. Middle-aged staff therefore need more encouragement rather than more pressure.\n\nFor job satisfaction to improve, efforts from both employers and employees are essential. Employers should offer clearer promotion paths and timely feedback, while employees should make well-informed choices in light of their own circumstances.",
-  "apply_cn": "该表格呈现了各年龄段在工作满意度上的不均衡分布。50 岁以上员工满意度占比最大，达 40%。41 至 50 岁的中间组水平最低，无人满意，64% 表示不满。相比之下，40 岁及以下员工占比很小，仅 16.7% 表示满意。\n\n这些差异与各群体的职业处境密切相关。41 至 50 岁组比年轻人精力不足、比年长者资历尚浅，往往进入职业平台期，随之而来的无力感使他们深感不满。相比之下，年轻员工可能仍在适应岗位，因而对表达满意较为谨慎。因此，中年员工需要的是更多鼓励，而不是更大压力。\n\n要提升工作满意度，需要雇主与员工共同努力。雇主应提供更清晰的晋升通道与及时反馈，员工也应结合自身情况作出理性选择。",
+  "apply_en": "The table chart presents an uneven distribution among the categories associated with job satisfaction across the age groups. The group over 50 accounts for the largest share, at 40%. In contrast, employees aged 40 or younger and the remaining respondents make up relatively small proportions of 16.7% and a still smaller share. As for The group over 50 and those aged 41 to 50, they register 40% and the lowest level respectively.\n\nThe influence of job satisfaction is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. Job satisfaction can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. Ultimately, job satisfaction can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.\n\nFor job satisfaction to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which job satisfaction can play a constructive role.",
+  "apply_cn": "该图表呈现了与各年龄段的工作满意度有关的不同类别之间不均衡的分布情况。50岁以上群体所占比例最大，达到40%。相比之下，40岁及以下员工和其余受访者所占比例较小，分别为16.7%和更小的比例。就50岁以上群体与41至50岁的员工而言，它们分别为40%和最低水平。\n\n工作满意度的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。工作满意度能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。最终，工作满意度不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。\n\n要使工作满意度持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为工作满意度发挥作用创造良好条件。",
   "tips": [
    "本题图表是**表格（table）**：首句把 chart 换成 This table，这是最容易失分的地方。",
    "数据是\"分组比高低\"而非时间变化 → 用**静态**第一段模板（largest share / middle group / relatively small）。",
@@ -77,31 +610,281 @@
   ],
   "key_phrases": [
    {
-    "en": "The table presents an uneven distribution among…",
-    "cn": "该表格呈现了……之间的不均衡分布"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "account for the largest share, at …%",
-    "cn": "占比最大，达到……%"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "none of them felt satisfied",
-    "cn": "无一人感到满意"
+    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
+    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "reach a career plateau",
-    "cn": "进入职业平台期"
+    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
+    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "the consequent sense of powerlessness",
-    "cn": "随之而来的无力感"
+    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
+   },
+   {
+    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+   },
+   {
+    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第4句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ],
+     [
+      "f",
+      6
+     ]
+    ]
+   },
+   {
+    "id": "para2_campus",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "table",
+    "cn": "表格"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "The group over 50",
+    "cn": "50 岁以上群体"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "those aged 41 to 50",
+    "cn": "41 至 50 岁的员工"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "employees aged 31 to 40",
+    "cn": "31 至 40 岁的员工"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "employees aged 40 or younger",
+    "cn": "40 岁及以下员工"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "the remaining respondents",
+    "cn": "其余受访者"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "40%",
+    "cn": "40%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "the lowest level",
+    "cn": "最低水平"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "a modest level",
+    "cn": "中等水平"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "16.7%",
+    "cn": "16.7%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "a still smaller share",
+    "cn": "更小的比例"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "job satisfaction across the age groups",
+    "cn": "各年龄段的工作满意度"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "job satisfaction",
+    "cn": "工作满意度"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "job satisfaction",
+    "cn": "工作满意度"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "table",
+    "cn": "表格",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "The group over 50",
+    "cn": "50 岁以上群体",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "those aged 41 to 50",
+    "cn": "41 至 50 岁的员工",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "employees aged 31 to 40",
+    "cn": "31 至 40 岁的员工",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "employees aged 40 or younger",
+    "cn": "40 岁及以下员工",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "the remaining respondents",
+    "cn": "其余受访者",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "40%",
+    "cn": "40%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "the lowest level",
+    "cn": "最低水平",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "a modest level",
+    "cn": "中等水平",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "16.7%",
+    "cn": "16.7%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "a still smaller share",
+    "cn": "更小的比例",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "job satisfaction across the age groups",
+    "cn": "各年龄段的工作满意度",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "job satisfaction",
+    "cn": "工作满意度",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "job satisfaction",
+    "cn": "工作满意度",
+    "para": "第三段"
    }
   ]
  },
  "2013": {
   "title": "Part B 大作文：大学生兼职比例柱状图",
-  "apply_en": "The bar chart shows that the proportion of college students taking part-time jobs rose steadily during the periods presented. The rate climbed from 67.77% in the first year to 88.24% in the final year, and the biggest increase occurred in the graduation year, when the figure was 16% higher than a year earlier. Overall, the figure kept showing a steady upward trend throughout the four years.\n\nThe upward trend stems from students' growing wish to gain practical experience. Undoubtedly, the competitive job market has laid a solid foundation for this change. As the school years advance, students attach greater importance to career preparation and become increasingly willing to embrace real working environments. Consequently, part-time jobs have gradually become integrated into campus life, while their practical value has gained wider recognition.\n\nFor this trend to bring lasting benefits, efforts from both universities and students are essential. Universities should provide more internship channels, while students should strike a balance between work and study in light of their own circumstances.",
-  "apply_cn": "该柱状图表明，大学生兼职比例在相应时期内持续上升。比例从大一的 67.77% 升至大四的 88.24%，其中增幅最大的是毕业那年，比上年高出 16%。总体来看，这一比例在四年间呈现稳定上升趋势。\n\n这一上升趋势源于学生获取实践经验意愿的增强。毫无疑问，竞争激烈的就业市场为这一变化奠定了坚实基础。随着年级升高，学生更加重视职业准备，也更愿意走进真实的工作环境。兼职因此逐渐融入校园生活，其实践价值也得到更多认可。\n\n要使这一趋势带来长久收益，需要高校与学生共同努力。高校应提供更多实习渠道，学生也应结合自身情况平衡好学业与工作。",
+  "apply_en": "The bar chart shows that the items associated with the proportion of college students taking part-time jobs rose steadily during the periods presented. The rate climbed from 67.77% in the first year to 88.24% in the final year, while the proportion in the graduation year rose from 83.7% in the third year to 88.24% in the final year.\n\nThe influence of part-time jobs is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. Part-time jobs can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. Ultimately, part-time jobs can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.\n\nRelevant authorities should provide the necessary support and create favorable conditions under which part-time jobs can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that part-time jobs genuinely contributes to their long-term development.",
+  "apply_cn": "该柱状图表明，与大学生兼职比例有关的不同项目在相应时期内持续上升。这一比例由大一的67.77%上升至大四的88.24%，毕业当年的比例则从大三的83.7%增至大四的88.24%。\n\n兼职的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。兼职能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。最终，兼职不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。\n\n有关部门应提供必要支持，为兼职发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使兼职真正服务于自身的长期发展。",
   "tips": [
    "本题是**单事物持续上升**：直接写一条上升线，用 showing a steady upward trend 收尾，不必硬凑对比句。",
    "\"毕业年增幅最大\"是题眼，用 the biggest increase occurred in … 单列一句。",
@@ -110,31 +893,263 @@
   ],
   "key_phrases": [
    {
-    "en": "rose steadily during the periods presented",
-    "cn": "在相应时期内持续上升"
+    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "showing a steady upward trend",
-    "cn": "呈现稳定上升趋势"
+    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "the biggest increase occurred in …",
-    "cn": "最大增幅出现在……"
+    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
    },
    {
-    "en": "gain practical experience",
-    "cn": "获取实践经验"
+    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
    },
    {
-    "en": "strike a balance between work and study",
-    "cn": "平衡工作与学业"
+    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第4句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_dynamic",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "para2_campus",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "The rate",
+    "cn": "这一比例"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "the proportion in the graduation year",
+    "cn": "毕业当年的比例"
+   },
+   {
+    "para": "p1",
+    "name": "数字1",
+    "en": "67.77%",
+    "cn": "67.77%"
+   },
+   {
+    "para": "p1",
+    "name": "数字2",
+    "en": "88.24%",
+    "cn": "88.24%"
+   },
+   {
+    "para": "p1",
+    "name": "数字3",
+    "en": "83.7%",
+    "cn": "83.7%"
+   },
+   {
+    "para": "p1",
+    "name": "数字4",
+    "en": "88.24%",
+    "cn": "88.24%"
+   },
+   {
+    "para": "p1",
+    "name": "时间1",
+    "en": "the first year",
+    "cn": "大一"
+   },
+   {
+    "para": "p1",
+    "name": "时间2",
+    "en": "the final year",
+    "cn": "大四"
+   },
+   {
+    "para": "p1",
+    "name": "时间3",
+    "en": "the third year",
+    "cn": "大三"
+   },
+   {
+    "para": "p1",
+    "name": "时间4",
+    "en": "the final year",
+    "cn": "大四"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the proportion of college students taking part-time jobs",
+    "cn": "大学生兼职比例"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "part-time jobs",
+    "cn": "兼职"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "part-time jobs",
+    "cn": "兼职"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "The rate",
+    "cn": "这一比例",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "the proportion in the graduation year",
+    "cn": "毕业当年的比例",
+    "para": "第一段"
+   },
+   {
+    "name": "数字1",
+    "en": "67.77%",
+    "cn": "67.77%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字2",
+    "en": "88.24%",
+    "cn": "88.24%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字3",
+    "en": "83.7%",
+    "cn": "83.7%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字4",
+    "en": "88.24%",
+    "cn": "88.24%",
+    "para": "第一段"
+   },
+   {
+    "name": "时间1",
+    "en": "the first year",
+    "cn": "大一",
+    "para": "第一段"
+   },
+   {
+    "name": "时间2",
+    "en": "the final year",
+    "cn": "大四",
+    "para": "第一段"
+   },
+   {
+    "name": "时间3",
+    "en": "the third year",
+    "cn": "大三",
+    "para": "第一段"
+   },
+   {
+    "name": "时间4",
+    "en": "the final year",
+    "cn": "大四",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the proportion of college students taking part-time jobs",
+    "cn": "大学生兼职比例",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "part-time jobs",
+    "cn": "兼职",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "part-time jobs",
+    "cn": "兼职",
+    "para": "第三段"
    }
   ]
  },
  "2014": {
   "title": "Part B 大作文：城市与乡村人口的变化",
-  "apply_en": "The bar chart shows that the population figures associated with urban and rural areas did not move in a uniform direction from 1990 to 2010. The urban population climbed from 300 million to 670 million, while the rural population declined from 820 million to 680 million over the same span. The gap therefore narrowed from 520 million to 10 million.\n\nThe narrowing gap results from the joint effects of urbanization and unequal economic opportunities. In the twenty years, urban sprawl transformed millions of peasants into city residents, and many more chose to leave their hometowns on their own initiative. Meanwhile, as urban living standards improved considerably, few economic opportunities fell on rural areas, which prompted the young to seek a better life in cities.\n\nFor urban and rural areas to develop in a balanced way, concerted efforts are essential. Relevant authorities should channel more resources into the countryside and create favorable conditions for local employment, so that rural residents can also benefit from national progress.",
-  "apply_cn": "该柱状图表明，1990 至 2010 年间城乡人口数量并未朝着相同方向变化。城镇人口从 3 亿攀升至 6.7 亿，而农村人口在同一时期从 8.2 亿降至 6.8 亿。差距因此从 5.2 亿缩小到 1000 万。\n\n差距的缩小源于城镇化与经济机会不均的共同作用。二十年间，城市扩张使数百万农民被动转为城镇居民，更多人则主动离开家乡。与此同时，城镇生活水平大幅提高，而农村地区获得的经济机会很少，这促使年轻人进城寻求更好的生活。\n\n要使城乡协调发展，需要各方共同努力。有关部门应向农村倾斜更多资源，为本地就业创造有利条件，让农村居民也能从国家发展中获益。",
+  "apply_en": "The bar chart shows that the items associated with the urban and rural population did not move in a uniform direction during the periods presented. The urban population climbed from 300 million in 1990 to 670 million in 2010, while the rural population rose from 820 million in 1990 to 680 million in 2010.\n\nUndoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of urbanization. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living. Seen in this light, the development of urbanization is no coincidence but a natural consequence of broader changes in social life.\n\nFor urbanization to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which urbanization can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that urbanization genuinely contributes to their long-term development.",
+  "apply_cn": "该柱状图表明，与城镇与农村人口有关的不同项目在相应时期内并未朝着相同方向变化。城镇人口由1990年的3亿上升至2010年的6.7亿，农村人口则从1990年的8.2亿增至2010年的6.8亿。\n\n毫无疑问，国家经济的飞速发展，为城镇化的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。由此可见，城镇化的发展并非偶然，而是社会生活发生变化后的自然结果。\n\n要使城镇化持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为城镇化发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使城镇化真正服务于自身的长期发展。",
   "tips": [
    "本题是**一升一降**的经典图：首句用 did not move in a uniform direction，主体句用 climbed … while … declined。",
    "数据只有首末两年，两句写完即可；无需 By contrast（while 已表对比）。",
@@ -143,31 +1158,272 @@
   ],
   "key_phrases": [
    {
-    "en": "did not move in a uniform direction",
-    "cn": "并未朝着相同方向变化"
+    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "climbed from … to …, while … declined from … to …",
-    "cn": "从……攀升至……，而……从……降至……"
+    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "the joint effects of urbanization and unequal economic opportunities",
-    "cn": "城镇化与经济机会不均的共同作用"
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "src": "经济类第二段 · 模板第2句"
    },
    {
-    "en": "on their own initiative",
-    "cn": "主动地"
+    "en": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.",
+    "cn": "随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。",
+    "src": "经济类第二段 · 模板第3句"
    },
    {
-    "en": "channel more resources into …",
-    "cn": "向……倾斜更多资源"
+    "en": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
+    "cn": "由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
+    "src": "经济类第二段 · 模板第5句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_dynamic",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "para2_economy",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "t",
+      5
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "The urban population",
+    "cn": "城镇人口"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "the rural population",
+    "cn": "农村人口"
+   },
+   {
+    "para": "p1",
+    "name": "数字1",
+    "en": "300 million",
+    "cn": "3 亿"
+   },
+   {
+    "para": "p1",
+    "name": "数字2",
+    "en": "670 million",
+    "cn": "6.7 亿"
+   },
+   {
+    "para": "p1",
+    "name": "数字3",
+    "en": "820 million",
+    "cn": "8.2 亿"
+   },
+   {
+    "para": "p1",
+    "name": "数字4",
+    "en": "680 million",
+    "cn": "6.8 亿"
+   },
+   {
+    "para": "p1",
+    "name": "时间1",
+    "en": "1990",
+    "cn": "1990 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间2",
+    "en": "2010",
+    "cn": "2010 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间3",
+    "en": "1990",
+    "cn": "1990 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间4",
+    "en": "2010",
+    "cn": "2010 年"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the urban and rural population",
+    "cn": "城镇与农村人口"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "urbanization",
+    "cn": "城镇化"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "urbanization",
+    "cn": "城镇化"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "The urban population",
+    "cn": "城镇人口",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "the rural population",
+    "cn": "农村人口",
+    "para": "第一段"
+   },
+   {
+    "name": "数字1",
+    "en": "300 million",
+    "cn": "3 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "数字2",
+    "en": "670 million",
+    "cn": "6.7 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "数字3",
+    "en": "820 million",
+    "cn": "8.2 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "数字4",
+    "en": "680 million",
+    "cn": "6.8 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "时间1",
+    "en": "1990",
+    "cn": "1990 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间2",
+    "en": "2010",
+    "cn": "2010 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间3",
+    "en": "1990",
+    "cn": "1990 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间4",
+    "en": "2010",
+    "cn": "2010 年",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the urban and rural population",
+    "cn": "城镇与农村人口",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "urbanization",
+    "cn": "城镇化",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "urbanization",
+    "cn": "城镇化",
+    "para": "第三段"
    }
   ]
  },
  "2015": {
   "title": "Part B 大作文：春节假期花销比例饼图",
-  "apply_en": "This pie chart presents an uneven distribution among the categories associated with Spring Festival spending. Traveling, gift giving and dinners with friends or relatives account for the largest share, together making up 80% of the total. In contrast, other items, such as decorations and fireworks, make up a relatively small proportion of the remaining 20%. Seen as a whole, the chart shows how much weight Chinese families place on togetherness.\n\nMost spending is used to maintain or facilitate interpersonal relationships. This finding is not strange, since the Spring Festival is a traditional Chinese festival for family reunion. Developing relationships is beneficial and necessary for a person's fulfillment, and investing in the people we love is sweet and happy. Seen in this light, the pattern of spending is no coincidence but a natural consequence of social life.\n\nHowever, we should not go to extremes. Individuals should make well-informed choices in light of their own circumstances, ensuring that the festival spending genuinely contributes to their long-term well-being rather than to unnecessary comparison.",
-  "apply_cn": "该饼图呈现了春节各项花销之间的不均衡分布。旅行、送礼以及与亲友聚餐占比最大，合计达总额的 80%。相比之下，其他项目占比很小。总体来看，这张图显示出中国家庭对团聚的重视程度。\n\n大部分开支用于维系或增进人际关系。这并不奇怪，因为春节是中国人家庭团聚的传统节日。经营关系对个人幸福既有益又必要，为所爱之人花钱也甜蜜而快乐。由此可见，这一消费结构并非偶然，而是社会生活变化的自然结果。\n\n然而，我们不应走极端。个人应结合自身情况作出理性选择，让节日花销真正有利于长期福祉，而非助长不必要的攀比。",
+  "apply_en": "The pie chart presents an uneven distribution among the categories associated with Spring Festival spending. Travelling, gift giving and dinners with friends or relatives accounts for the largest share, at 80% of the total. In contrast, other items such as fireworks and miscellaneous spending make up relatively small proportions of 12% and 8%.\n\nGrowing public attention to festival spending stems from its ability to meet practical needs in everyday life. Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of festival spending. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.\n\nFor festival spending to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which festival spending can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that festival spending genuinely contributes to their long-term development.",
+  "apply_cn": "该图表呈现了与春节花销有关的不同类别之间不均衡的分布情况。旅行、送礼以及与亲友聚餐所占比例最大，达到总额的80%。相比之下，烟花等其他项目和杂项支出所占比例较小，分别为12%和8%。\n\n节日花销之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。毫无疑问，国家经济的飞速发展，为节日花销的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。\n\n要使节日花销持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为节日花销发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使节日花销真正服务于自身的长期发展。",
   "tips": [
    "饼图 + 占比分布 → 用**静态**第一段模板（accounts for the largest share / in contrast），首句 chart 前加 pie。",
    "三项合计 80% 是本图关键，用 together making up 80% of the total 一句带过，不必分列三个百分比（图中未给全）。",
@@ -176,31 +1432,281 @@
   ],
   "key_phrases": [
    {
-    "en": "This pie chart presents an uneven distribution among…",
-    "cn": "该饼图呈现了……之间的不均衡分布"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "account for the largest share, together making up …% of the total",
-    "cn": "占比最大，合计达总额的……%"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "facilitate interpersonal relationships",
-    "cn": "增进人际关系"
+    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
+    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "not go to extremes",
-    "cn": "不走极端"
+    "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life.",
+    "cn": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
+    "src": "经济类第二段 · 模板第1句"
    },
    {
-    "en": "a natural consequence of social life",
-    "cn": "社会生活变化的自然结果"
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "src": "经济类第二段 · 模板第2句"
+   },
+   {
+    "en": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.",
+    "cn": "随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。",
+    "src": "经济类第二段 · 模板第3句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para2_economy",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "pie",
+    "cn": "饼"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Travelling, gift giving and dinners with friends or relatives",
+    "cn": "旅行、送礼以及与亲友聚餐"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "gifts for colleagues",
+    "cn": "给同事的礼物"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "household decorations",
+    "cn": "家庭装饰"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "other items such as fireworks",
+    "cn": "烟花等其他项目"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "miscellaneous spending",
+    "cn": "杂项支出"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "80% of the total",
+    "cn": "总额的 80%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "a small share",
+    "cn": "一个很小的比例"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "a smaller share",
+    "cn": "更小的比例"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "12%",
+    "cn": "12%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "8%",
+    "cn": "8%"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "Spring Festival spending",
+    "cn": "春节花销"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "festival spending",
+    "cn": "节日花销"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "festival spending",
+    "cn": "节日花销"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "pie",
+    "cn": "饼",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Travelling, gift giving and dinners with friends or relatives",
+    "cn": "旅行、送礼以及与亲友聚餐",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "gifts for colleagues",
+    "cn": "给同事的礼物",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "household decorations",
+    "cn": "家庭装饰",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "other items such as fireworks",
+    "cn": "烟花等其他项目",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "miscellaneous spending",
+    "cn": "杂项支出",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "80% of the total",
+    "cn": "总额的 80%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "a small share",
+    "cn": "一个很小的比例",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "a smaller share",
+    "cn": "更小的比例",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "12%",
+    "cn": "12%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "8%",
+    "cn": "8%",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "Spring Festival spending",
+    "cn": "春节花销",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "festival spending",
+    "cn": "节日花销",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "festival spending",
+    "cn": "节日花销",
+    "para": "第三段"
    }
   ]
  },
  "2016": {
   "title": "Part B 大作文：高校学生旅游目的调查饼图",
-  "apply_en": "The pie chart presents an uneven distribution among the purposes of travel for students polled in a certain university. Appreciating the beauty of the scenery accounts for the largest share, at 37%. Relieving pressure follows closely, representing 33%. In contrast, making more friends, fostering independence and other aims make up relatively small proportions of 9%, 6% and 15% respectively.\n\nThe survey reveals that most students travel to enjoy the view as well as to unwind. On the one hand, with the prosperity of tourism, college students who have ample time and curiosity are lured to explore the outside world. On the other hand, growing academic pressure makes a journey an ideal way to recharge. Seen in this light, the pattern of travel purposes is a natural consequence of campus life. In other words, the figures mirror how students nowadays balance study and rest.\n\nFor travel to bring lasting benefits, students should make well-informed choices in light of their own circumstances, ensuring that a journey genuinely contributes to their long-term development.",
-  "apply_cn": "该饼图呈现了某高校受访学生旅游目的之间的不均衡分布。欣赏风景占比最大，达 37%。缓解压力紧随其后，占 33%。相比之下，广交朋友、培养独立能力及其他目的占比很小，分别为 9%、6% 和 15%。\n\n调查显示，多数学生旅行是为欣赏风景和放松身心。一方面，随着旅游业繁荣，时间充裕、好奇心强的大学生被吸引去探索外部世界；另一方面，学业压力增大，旅行成为理想的充电方式。由此可见，这一旅游目的结构是校园生活的自然结果。换言之，这些数字反映出当下学生如何平衡学习与休息。\n\n要使旅行带来长久收益，学生应结合自身情况作出理性选择，让旅程真正有利于自身长远发展。",
+  "apply_en": "The pie chart presents an uneven distribution among the categories associated with the purposes of travel among college students. Appreciating the beauty of the scenery accounts for the largest share, at 37%. In contrast, making more friends and fostering independence make up relatively small proportions of 9% and 6%. As for Appreciating the beauty of the scenery and Relieving pressure, they register 37% and 33% respectively.\n\nThe influence of travel is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. Travel can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. Ultimately, travel can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.\n\nRelevant authorities should provide the necessary support and create favorable conditions under which travel can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that travel genuinely contributes to their long-term development.",
+  "apply_cn": "该图表呈现了与大学生的旅游目的有关的不同类别之间不均衡的分布情况。欣赏风景所占比例最大，达到37%。相比之下，广交朋友和培养独立能力所占比例较小，分别为9%和6%。就欣赏风景与缓解压力而言，它们分别为37%和33%。\n\n旅行的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。旅行能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。最终，旅行不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。\n\n有关部门应提供必要支持，为旅行发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使旅行真正服务于自身的长期发展。",
   "tips": [
    "饼图 5 项：最大的两项用完整句，其余三项合并一句带过（respectively 收尾），避免句子臃肿。",
    "首句直接点出图型 pie chart，用静态模板的 presents an uneven distribution。",
@@ -209,31 +1715,281 @@
   ],
   "key_phrases": [
    {
-    "en": "accounts for the largest share, at …%",
-    "cn": "占比最大，达……%"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "follows closely, representing …%",
-    "cn": "紧随其后，占……%"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "make up relatively small proportions of …, respectively",
-    "cn": "占比相对较小，分别为……"
+    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
+    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "with the prosperity of tourism",
-    "cn": "随着旅游业繁荣"
+    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
+    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "an ideal way to recharge",
-    "cn": "理想的充电方式"
+    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
+   },
+   {
+    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+   },
+   {
+    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第4句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ],
+     [
+      "f",
+      6
+     ]
+    ]
+   },
+   {
+    "id": "para2_campus",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "pie",
+    "cn": "饼"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Appreciating the beauty of the scenery",
+    "cn": "欣赏风景"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "Relieving pressure",
+    "cn": "缓解压力"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "other aims",
+    "cn": "其他目的"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "making more friends",
+    "cn": "广交朋友"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "fostering independence",
+    "cn": "培养独立能力"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "37%",
+    "cn": "37%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "33%",
+    "cn": "33%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "15%",
+    "cn": "15%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "9%",
+    "cn": "9%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "6%",
+    "cn": "6%"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the purposes of travel among college students",
+    "cn": "大学生的旅游目的"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "travel",
+    "cn": "旅行"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "travel",
+    "cn": "旅行"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "pie",
+    "cn": "饼",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Appreciating the beauty of the scenery",
+    "cn": "欣赏风景",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "Relieving pressure",
+    "cn": "缓解压力",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "other aims",
+    "cn": "其他目的",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "making more friends",
+    "cn": "广交朋友",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "fostering independence",
+    "cn": "培养独立能力",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "37%",
+    "cn": "37%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "33%",
+    "cn": "33%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "15%",
+    "cn": "15%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "9%",
+    "cn": "9%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "6%",
+    "cn": "6%",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the purposes of travel among college students",
+    "cn": "大学生的旅游目的",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "travel",
+    "cn": "旅行",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "travel",
+    "cn": "旅行",
+    "para": "第三段"
    }
   ]
  },
  "2017": {
   "title": "Part B 大作文：2013-2015年博物馆数量与参观人数折线图",
-  "apply_en": "The line chart shows that the figures associated with museums and museum visitors rose steadily from 2013 to 2015. The number of museums climbed from 4,169 to 4,692, while the number of visitors rose from 637 million to 954 million over the same span. Although both moved in the same direction, the growth of museums slowed down in 2014 while visits maintained a dynamic momentum. Taken together, the two lines point to a booming cultural market.\n\nThe progress can be attributed to the following reasons. Firstly, thanks to the national endeavour in cultural undertakings, numerous museums have been built and opened free to the public. Moreover, as living standards improve, the public demand increasingly varied spiritual nourishment, and visiting museums has therefore become a willing choice for more people. Besides, museums themselves have become more visitor-friendly, with free admission and better exhibitions.\n\nHowever, this encouraging sign also presents challenges. Relevant authorities should improve the supply of cultural services, so that the growth of facilities can keep pace with the public demand.",
-  "apply_cn": "该折线图表明，2013 至 2015 年间博物馆数量与参观人数的数据均持续上升。博物馆数量从 4169 家攀升至 4692 家，参观人数同期从 6.37 亿增至 9.54 亿。二者虽同向变动，但博物馆数量的增长在 2014 年放缓，而参观人数保持了强劲势头。总体来看，两条曲线共同指向一个繁荣的文化市场。\n\n这一进步可归因于以下原因。首先，得益于国家在文化事业上的努力，大量博物馆建成并向公众免费开放。此外，随着生活水平提高，公众对多样化精神食粮的需求上升，参观博物馆因而成为更多人的自愿选择。此外，博物馆自身也变得更友好，免费开放且展览更优质。\n\n然而，这一可喜迹象也带来挑战。有关部门应改善文化服务供给，使设施增长能够跟上公众日益增长的需求。",
+  "apply_en": "The line chart shows that the items associated with the number of museums and museum visitors rose steadily during the periods presented. The number of museums climbed from 4,169 in 2013 to 4,692 in 2015, while the number of visitors rose from 637 million in 2013 to 954 million in 2015. From 2013 to 2015, The number of museums rose from 4,169 to 4,692, showing a steady upward trend.\n\nTraditional culture cannot be effectively conveyed through the one-way delivery of content alone; its modes of expression must also be adjusted in response to real-world feedback. Museums can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity. Public participation can also give rise to new forms of cultural expression, enabling traditional culture to adapt to social change while preserving its core values.\n\nRelevant authorities should provide the necessary support and create favorable conditions under which museums can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that museums genuinely contributes to their long-term development.",
+  "apply_cn": "该折线图表明，与博物馆数量与参观人数有关的不同项目在相应时期内均持续上升。博物馆数量由2013年的4169上升至2015年的4692，参观人数则从2013年的6.37亿增至2015年的9.54亿。自2013年至2015年，博物馆数量由4169升至4692，呈现稳定上升趋势。\n\n传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。博物馆为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。\n\n有关部门应提供必要支持，为博物馆发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使博物馆真正服务于自身的长期发展。",
   "tips": [
    "折线图 + 两事物同向 → 首句用 rose steadily，**不要**用 did not move in a uniform direction。",
    "\"2014 年博物馆增速放缓、参观人数仍强劲\"是本题最容易被忽略的对比，必须写。",
@@ -242,31 +1998,272 @@
   ],
   "key_phrases": [
    {
-    "en": "rose steadily from … to …",
-    "cn": "从……至……持续上升"
+    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "maintained a dynamic momentum",
-    "cn": "保持强劲势头"
+    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "the national endeavour in cultural undertakings",
-    "cn": "国家在文化事业上的努力"
+    "en": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.",
+    "cn": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。",
+    "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "varied spiritual nourishment",
-    "cn": "多样化的精神食粮"
+    "en": "Traditional culture cannot be effectively conveyed through the one-way delivery of content alone; its modes of expression must also be adjusted in response to real-world feedback.",
+    "cn": "传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。",
+    "src": "文化自信类第二段 · 模板第1句"
    },
    {
-    "en": "keep pace with the public demand",
-    "cn": "跟上公众需求"
+    "en": "{{题目相关词}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity.",
+    "cn": "{{题目相关词}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。",
+    "src": "文化自信类第二段 · 模板第2句"
+   },
+   {
+    "en": "Public participation can also give rise to new forms of cultural expression, enabling traditional culture to adapt to social change while preserving its core values.",
+    "cn": "公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。",
+    "src": "文化自信类第二段 · 模板第3句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_dynamic",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "f",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "para2_culture",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "line",
+    "cn": "折线"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "The number of museums",
+    "cn": "博物馆数量"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "the number of visitors",
+    "cn": "参观人数"
+   },
+   {
+    "para": "p1",
+    "name": "数字1",
+    "en": "4,169",
+    "cn": "4169"
+   },
+   {
+    "para": "p1",
+    "name": "数字2",
+    "en": "4,692",
+    "cn": "4692"
+   },
+   {
+    "para": "p1",
+    "name": "数字3",
+    "en": "637 million",
+    "cn": "6.37 亿"
+   },
+   {
+    "para": "p1",
+    "name": "数字4",
+    "en": "954 million",
+    "cn": "9.54 亿"
+   },
+   {
+    "para": "p1",
+    "name": "时间1",
+    "en": "2013",
+    "cn": "2013 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间2",
+    "en": "2015",
+    "cn": "2015 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间3",
+    "en": "2013",
+    "cn": "2013 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间4",
+    "en": "2015",
+    "cn": "2015 年"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the number of museums and museum visitors",
+    "cn": "博物馆数量与参观人数"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "museums",
+    "cn": "博物馆"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "museums",
+    "cn": "博物馆"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "line",
+    "cn": "折线",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "The number of museums",
+    "cn": "博物馆数量",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "the number of visitors",
+    "cn": "参观人数",
+    "para": "第一段"
+   },
+   {
+    "name": "数字1",
+    "en": "4,169",
+    "cn": "4169",
+    "para": "第一段"
+   },
+   {
+    "name": "数字2",
+    "en": "4,692",
+    "cn": "4692",
+    "para": "第一段"
+   },
+   {
+    "name": "数字3",
+    "en": "637 million",
+    "cn": "6.37 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "数字4",
+    "en": "954 million",
+    "cn": "9.54 亿",
+    "para": "第一段"
+   },
+   {
+    "name": "时间1",
+    "en": "2013",
+    "cn": "2013 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间2",
+    "en": "2015",
+    "cn": "2015 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间3",
+    "en": "2013",
+    "cn": "2013 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间4",
+    "en": "2015",
+    "cn": "2015 年",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the number of museums and museum visitors",
+    "cn": "博物馆数量与参观人数",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "museums",
+    "cn": "博物馆",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "museums",
+    "cn": "博物馆",
+    "para": "第三段"
    }
   ]
  },
  "2018": {
   "title": "Part B 大作文：2017年某市消费者选择餐厅时的关注因素饼状图",
-  "apply_en": "The pie chart presents an uneven distribution among the factors consumers take into account when selecting a restaurant in a certain city in 2017. Distinguishing features account for the largest share, at 36.3%. Service and environment form the middle group, representing 26.8% and 23.8% respectively. In contrast, price and other factors make up relatively small proportions of 8.4% and 4.7%.\n\nThe pattern is closely related to economic development. On the one hand, as per capita disposable income has risen, more people can afford to dine out, and it is natural that they care more about high-quality enjoyment than about price. On the other hand, an increasing number of restaurants with similar prices are available, so distinctive features have become the key to standing out. Seen in this light, the change in priorities is a natural consequence of social life.\n\nFor this trend to continue, both restaurants and consumers should act reasonably. Restaurants should improve service and environment objectively, while consumers should make well-informed choices in light of their own circumstances.",
-  "apply_cn": "该饼图呈现了 2017 年某市消费者选择餐厅时各关注因素之间的不均衡分布。餐厅特色占比最大，达 36.3%。服务与环境处于中间位置，分别占 26.8% 和 23.8%。相比之下，价格及其他因素占比很小，分别为 8.4% 和 4.7%。\n\n这一格局与经济发展密切相关。一方面，随着人均可支配收入提高，更多人能够负担外出就餐，自然更看重高品质享受而非价格；另一方面，价格相近的餐厅越来越多，特色便成为脱颖而出的关键。由此可见，关注重点的转变是社会生活变化的自然结果。\n\n要使这一趋势延续，餐厅与消费者都应理性行事。餐厅应客观提升服务与环境，消费者也应结合自身情况作出理性选择。",
+  "apply_en": "The pie chart presents an uneven distribution among the categories associated with the factors consumers consider when choosing a restaurant. Distinguishing features accounts for the largest share, at 36.3%. Service and the dining environment form the middle group, representing 26.8% and 23.8%, respectively. As for Distinguishing features and service, they register 36.3% and 26.8% respectively.\n\nGrowing public attention to dining out stems from its ability to meet practical needs in everyday life. Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of dining out. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.\n\nFor dining out to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which dining out can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that dining out genuinely contributes to their long-term development.",
+  "apply_cn": "该图表呈现了与消费者选择餐厅时的关注因素有关的不同类别之间不均衡的分布情况。餐厅特色所占比例最大，达到36.3%。服务和就餐环境处于中间位置，分别占26.8%和23.8%。就餐厅特色与服务而言，它们分别为36.3%和26.8%。\n\n外出就餐之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。毫无疑问，国家经济的飞速发展，为外出就餐的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。\n\n要使外出就餐持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为外出就餐发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使外出就餐真正服务于自身的长期发展。",
   "tips": [
    "饼图 4+1 项：前两项完整句，中间组用 form the middle group 合并，价格与其他合并一句（In contrast 引出）。",
    "\"价格仅 8.4%，低于服务与环境\"是本题的对比亮点，务必点出。",
@@ -275,31 +2272,290 @@
   ],
   "key_phrases": [
    {
-    "en": "form the middle group, representing …% and …% respectively",
-    "cn": "处于中间位置，分别占……% 和……%"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "make up relatively small proportions of … and …",
-    "cn": "占比相对较小，为……和……"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "per capita disposable income",
-    "cn": "人均可支配收入"
+    "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
+    "cn": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "the key to standing out",
-    "cn": "脱颖而出的关键"
+    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
+    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "the change in priorities",
-    "cn": "关注重点的转变"
+    "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life.",
+    "cn": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
+    "src": "经济类第二段 · 模板第1句"
+   },
+   {
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "src": "经济类第二段 · 模板第2句"
+   },
+   {
+    "en": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.",
+    "cn": "随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。",
+    "src": "经济类第二段 · 模板第3句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "f",
+      6
+     ]
+    ]
+   },
+   {
+    "id": "para2_economy",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "pie",
+    "cn": "饼"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Distinguishing features",
+    "cn": "餐厅特色"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "service",
+    "cn": "服务"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "the dining environment",
+    "cn": "就餐环境"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "price",
+    "cn": "价格"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "other factors",
+    "cn": "其他因素"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "36.3%",
+    "cn": "36.3%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "26.8%",
+    "cn": "26.8%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "23.8%",
+    "cn": "23.8%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "8.4%",
+    "cn": "8.4%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "4.7%",
+    "cn": "4.7%"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the factors consumers consider when choosing a restaurant",
+    "cn": "消费者选择餐厅时的关注因素"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "dining out",
+    "cn": "外出就餐"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "dining out",
+    "cn": "外出就餐"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "pie",
+    "cn": "饼",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Distinguishing features",
+    "cn": "餐厅特色",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "service",
+    "cn": "服务",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "the dining environment",
+    "cn": "就餐环境",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "price",
+    "cn": "价格",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "other factors",
+    "cn": "其他因素",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "36.3%",
+    "cn": "36.3%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "26.8%",
+    "cn": "26.8%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "23.8%",
+    "cn": "23.8%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "8.4%",
+    "cn": "8.4%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "4.7%",
+    "cn": "4.7%",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the factors consumers consider when choosing a restaurant",
+    "cn": "消费者选择餐厅时的关注因素",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "dining out",
+    "cn": "外出就餐",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "dining out",
+    "cn": "外出就餐",
+    "para": "第三段"
    }
   ]
  },
  "2019": {
   "title": "Part B 大作文：某高校2013年和2018年本科毕业生去向统计柱状图",
-  "apply_en": "The bar chart shows that the proportions associated with graduates' choices did not move in a uniform direction from 2013 to 2018. The share of those entering employment declined from 68.1% to 60.7%, while the share of those pursuing further education climbed from 26.3% to 34.0%. By contrast, the proportion of graduates starting a business rose slightly, from 1.3% to 2.6%.\n\nThe data reflects a shift in graduates' view of post-university life. On the one hand, as the job market becomes increasingly competitive, a higher degree is widely regarded as a way to secure an advantage. On the other hand, with living standards improving, more families can afford to support further study, and the idea that one should earn a living as early as possible is changing.\n\nFor graduates to make sound decisions, efforts from both universities and students are essential. Universities should offer clearer career guidance, while students should make well-informed choices in light of their own circumstances. Authorities should also create more favourable conditions for young entrepreneurs.",
-  "apply_cn": "该柱状图表明，2013 至 2018 年间毕业生去向的占比并未朝着相同方向变化。就业比例从 68.1% 降至 60.7%，而升学比例从 26.3% 升至 34.0%。相比之下，创业比例略有上升，从 1.3% 升至 2.6%。\n\n这些数据反映了毕业生对毕业后生活看法的转变。一方面，就业市场竞争日趋激烈，更高学历被普遍视为获取优势的途径；另一方面，随着生活水平提高，更多家庭能够负担继续深造，而“尽早挣钱养家”的观念正在发生变化。\n\n要使毕业生作出合理选择，需要高校与学生共同努力。高校应提供更清晰的职业指导，学生也应结合自身情况作出理性选择。有关部门也应为青年创业者创造更有利的条件。",
+  "apply_en": "The bar chart shows that the items associated with graduates' choices after university did not move in a uniform direction during the periods presented. The proportion entering employment climbed from 68.1% in 2013 to 60.7% in 2018, while the proportion pursuing further education rose from 26.3% in 2013 to 34.0% in 2018. By contrast, the proportion starting a business fell from 1.3% in 2013 to 2.6% in 2018.\n\nThe influence of further education is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. Further education can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. Ultimately, further education can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.\n\nRelevant authorities should provide the necessary support and create favorable conditions under which further education can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that further education genuinely contributes to their long-term development.",
+  "apply_cn": "该柱状图表明，与本科毕业生的去向有关的不同项目在相应时期内并未朝着相同方向变化。就业比例由2013年的68.1%上升至2018年的60.7%，升学比例则从2013年的26.3%增至2018年的34.0%。相比之下，创业比例由2013年的1.3%下降至2018年的2.6%。\n\n继续深造的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。继续深造能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。最终，继续深造不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。\n\n有关部门应提供必要支持，为继续深造发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使继续深造真正服务于自身的长期发展。",
   "tips": [
    "三事物、有升有降 → 首句用 did not move in a uniform direction，主体句一降一升用 while，第三项用 By contrast 引出。",
    "两组年份（2013 vs 2018）是本题的\"时间跨度\"，务必在首句标明 from 2013 to 2018。",
@@ -308,31 +2564,332 @@
   ],
   "key_phrases": [
    {
-    "en": "did not move in a uniform direction",
-    "cn": "并未朝着相同方向变化"
+    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "declined from … to …, while … climbed from … to …",
-    "cn": "从……降至……，而……从……升至……"
+    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "rose slightly",
-    "cn": "略有上升"
+    "en": "By contrast, {{事物3}} fell from {{数字5}} in {{时间5}} to {{数字6}} in {{时间6}}.",
+    "cn": "相比之下，{{事物3}} 由 {{时间5}} 的 {{数字5}} 下降至 {{时间6}} 的 {{数字6}}。",
+    "src": "动态图表第一段 · 模板第3句"
    },
    {
-    "en": "a shift in graduates’ view of post-university life",
-    "cn": "毕业生对毕业后生活看法的转变"
+    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
    },
    {
-    "en": "secure an advantage",
-    "cn": "获取优势"
+    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+   },
+   {
+    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第4句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_dynamic",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "para2_campus",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "the proportion entering employment",
+    "cn": "就业比例"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "the proportion pursuing further education",
+    "cn": "升学比例"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "the proportion starting a business",
+    "cn": "创业比例"
+   },
+   {
+    "para": "p1",
+    "name": "数字1",
+    "en": "68.1%",
+    "cn": "68.1%"
+   },
+   {
+    "para": "p1",
+    "name": "数字2",
+    "en": "60.7%",
+    "cn": "60.7%"
+   },
+   {
+    "para": "p1",
+    "name": "数字3",
+    "en": "26.3%",
+    "cn": "26.3%"
+   },
+   {
+    "para": "p1",
+    "name": "数字4",
+    "en": "34.0%",
+    "cn": "34.0%"
+   },
+   {
+    "para": "p1",
+    "name": "数字5",
+    "en": "1.3%",
+    "cn": "1.3%"
+   },
+   {
+    "para": "p1",
+    "name": "数字6",
+    "en": "2.6%",
+    "cn": "2.6%"
+   },
+   {
+    "para": "p1",
+    "name": "时间1",
+    "en": "2013",
+    "cn": "2013 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间2",
+    "en": "2018",
+    "cn": "2018 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间3",
+    "en": "2013",
+    "cn": "2013 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间4",
+    "en": "2018",
+    "cn": "2018 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间5",
+    "en": "2013",
+    "cn": "2013 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间6",
+    "en": "2018",
+    "cn": "2018 年"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "graduates' choices after university",
+    "cn": "本科毕业生的去向"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "further education",
+    "cn": "继续深造"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "further education",
+    "cn": "继续深造"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "the proportion entering employment",
+    "cn": "就业比例",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "the proportion pursuing further education",
+    "cn": "升学比例",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "the proportion starting a business",
+    "cn": "创业比例",
+    "para": "第一段"
+   },
+   {
+    "name": "数字1",
+    "en": "68.1%",
+    "cn": "68.1%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字2",
+    "en": "60.7%",
+    "cn": "60.7%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字3",
+    "en": "26.3%",
+    "cn": "26.3%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字4",
+    "en": "34.0%",
+    "cn": "34.0%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字5",
+    "en": "1.3%",
+    "cn": "1.3%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字6",
+    "en": "2.6%",
+    "cn": "2.6%",
+    "para": "第一段"
+   },
+   {
+    "name": "时间1",
+    "en": "2013",
+    "cn": "2013 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间2",
+    "en": "2018",
+    "cn": "2018 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间3",
+    "en": "2013",
+    "cn": "2013 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间4",
+    "en": "2018",
+    "cn": "2018 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间5",
+    "en": "2013",
+    "cn": "2013 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间6",
+    "en": "2018",
+    "cn": "2018 年",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "graduates' choices after university",
+    "cn": "本科毕业生的去向",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "further education",
+    "cn": "继续深造",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "further education",
+    "cn": "继续深造",
+    "para": "第三段"
    }
   ]
  },
  "2020": {
   "title": "Part B 大作文：某高校学生手机阅读目的调查",
-  "apply_en": "The pie chart presents an uneven distribution among the purposes of mobile reading among students at a certain university. Gaining knowledge accounts for the largest share, at 59.5%. Killing time and obtaining information form the middle group, representing 21.3% and 17.0% respectively. In contrast, other purposes make up a relatively small proportion of 2.2%.\n\nA few factors contribute to this trend. To begin with, as a nation with a booming digital economy, knowledge is increasingly available through mobile reading, which serves as a fast and convenient tool. Moreover, the awareness of self-improvement has spread widely among university students who wish to stay competitive in the job market. Seen in this light, mobile reading has become a natural choice for campus life.\n\nFor mobile reading to bring lasting benefits, students should make well-informed choices in light of their own circumstances, ensuring that it genuinely contributes to their long-term development. They should also set aside time for printed books and face-to-face communication, so that fragmented reading does not crowd out deeper thinking.",
-  "apply_cn": "该饼图呈现了某高校学生手机阅读目的之间的不均衡分布。获取知识占比最大，达 59.5%。消磨时间与获取信息处于中间位置，分别占 21.3% 和 17.0%。相比之下，其他目的占比很小，仅 2.2%。\n\n若干因素促成了这一趋势。首先，在数字经济蓬勃发展的国家，知识越来越容易通过手机阅读获取，手机成为快速便捷的工具。此外，希望在就业市场保持竞争力的学生中，自我提升意识已广泛传播。由此可见，手机阅读已成为校园生活的自然选择。\n\n要使手机阅读带来长久收益，学生应结合自身情况作出理性选择，让它真正有利于自身长远发展。还应留出时间阅读纸质书、进行面对面交流，别让碎片化阅读挤占深度思考。",
+  "apply_en": "The pie chart presents an uneven distribution among the categories associated with the purposes of mobile reading among college students. Gaining knowledge accounts for the largest share, at 59.5%. Killing time and obtaining information form the middle group, representing 21.3% and 17.0%, respectively. In contrast, other purposes and the remaining aims make up relatively small proportions of 2.2% and a negligible share.\n\nThe influence of mobile reading is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. Mobile reading can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. Ultimately, mobile reading can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.\n\nFor mobile reading to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which mobile reading can play a constructive role.",
+  "apply_cn": "该图表呈现了与大学生的手机阅读目的有关的不同类别之间不均衡的分布情况。获取知识所占比例最大，达到59.5%。消磨时间和获取信息处于中间位置，分别占21.3%和17.0%。相比之下，其他目的和其余目标所占比例较小，分别为2.2%和微不足道的比例。\n\n手机阅读的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。手机阅读能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。最终，手机阅读不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。\n\n要使手机阅读持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为手机阅读发挥作用创造良好条件。",
   "tips": [
    "饼图 4 项、占比差距大（59.5% vs 2.2%）→ 用静态模板：最大项完整句 + 中间组合并 + 最小项 In contrast 收尾。",
    "\"获取知识\"占近六成是本题的主旨指向（正面），第二段因此写\"自我提升\"而非\"浪费时间\"。",
@@ -341,31 +2898,281 @@
   ],
   "key_phrases": [
    {
-    "en": "accounts for the largest share, at …%",
-    "cn": "占比最大，达……%"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "form the middle group, representing …% and …% respectively",
-    "cn": "处于中间位置，分别占……% 和……%"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "make up a relatively small proportion of …%",
-    "cn": "占比相对较小，为……%"
+    "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
+    "cn": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "stay competitive in the job market",
-    "cn": "在就业市场中保持竞争力"
+    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
+    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "the awareness of self-improvement",
-    "cn": "自我提升意识"
+    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
+   },
+   {
+    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+   },
+   {
+    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第4句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para2_campus",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "pie",
+    "cn": "饼"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Gaining knowledge",
+    "cn": "获取知识"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "killing time",
+    "cn": "消磨时间"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "obtaining information",
+    "cn": "获取信息"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "other purposes",
+    "cn": "其他目的"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "the remaining aims",
+    "cn": "其余目标"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "59.5%",
+    "cn": "59.5%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "21.3%",
+    "cn": "21.3%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "17.0%",
+    "cn": "17.0%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "2.2%",
+    "cn": "2.2%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "a negligible share",
+    "cn": "微不足道的比例"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the purposes of mobile reading among college students",
+    "cn": "大学生的手机阅读目的"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "mobile reading",
+    "cn": "手机阅读"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "mobile reading",
+    "cn": "手机阅读"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "pie",
+    "cn": "饼",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Gaining knowledge",
+    "cn": "获取知识",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "killing time",
+    "cn": "消磨时间",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "obtaining information",
+    "cn": "获取信息",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "other purposes",
+    "cn": "其他目的",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "the remaining aims",
+    "cn": "其余目标",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "59.5%",
+    "cn": "59.5%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "21.3%",
+    "cn": "21.3%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "17.0%",
+    "cn": "17.0%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "2.2%",
+    "cn": "2.2%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "a negligible share",
+    "cn": "微不足道的比例",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the purposes of mobile reading among college students",
+    "cn": "大学生的手机阅读目的",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "mobile reading",
+    "cn": "手机阅读",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "mobile reading",
+    "cn": "手机阅读",
+    "para": "第三段"
    }
   ]
  },
  "2021": {
   "title": "Part B 大作文：某市居民锻炼方式调查",
-  "apply_en": "The bar chart presents an uneven distribution among the exercise methods chosen by residents in a certain city. Working out alone accounts for the largest share, at slightly over half of the respondents. Exercising with friends follows closely, representing 47.7%, while working out with family members accounts for 23.9%. In contrast, playing team sports makes up a relatively small proportion of less than 16%.\n\nPeople prefer to exercise alone primarily on account of flexibility and convenience. In this way, they can go jogging anytime they want, without the need to make a plan with others in advance. Furthermore, a wide range of fitness videos, apps and games have boosted the popularity of doing workouts at home. Seen in this light, the popularity of independent exercise is a natural consequence of changing lifestyles.\n\nFor physical exercise to bring lasting benefits, individuals should make well-informed choices in light of their own circumstances, while relevant authorities should provide more public sports facilities. Communities should also organize more group activities for residents.",
-  "apply_cn": "该柱状图呈现了某市居民锻炼方式之间的不均衡分布。独自锻炼占比最大，略超受访者半数。与朋友一起锻炼紧随其后，占 47.7%，与家人一起锻炼占 23.9%。相比之下，参加团体活动占比很小，不足 16%。\n\n人们偏好独自锻炼，主要出于灵活与便利。这样他们可以随时去跑步，无需提前与他人约定。此外，大量健身视频、应用与游戏也推动了居家独自锻炼的流行。由此可见，独立锻炼的流行是生活方式变化的自然结果。\n\n要使体育锻炼带来长久收益，个人应结合自身情况作出理性选择，有关部门也应提供更多公共体育设施。社区也应为居民组织更多集体活动。",
+  "apply_en": "The bar chart presents an uneven distribution among the categories associated with the exercise methods chosen by city residents. Working out alone accounts for the largest share, at slightly over half of the respondents. As for Working out alone and exercising with friends, they register slightly over half of the respondents and 47.7% respectively.\n\nChanges reflected in physical exercise are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise. Improved sports infrastructure makes it easier for people to participate in physical exercise, while a wider range of exercise methods enables different groups to make choices suited to their own circumstances. As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow.\n\nRelevant authorities should provide the necessary support and create favorable conditions under which physical exercise can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that physical exercise genuinely contributes to their long-term development.",
+  "apply_cn": "该图表呈现了与城市居民的锻炼方式有关的不同类别之间不均衡的分布情况。独自锻炼所占比例最大，达到略超受访者半数。就独自锻炼与与朋友一起锻炼而言，它们分别为略超受访者半数和47.7%。\n\n体育锻炼所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。\n\n有关部门应提供必要支持，为体育锻炼发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使体育锻炼真正服务于自身的长期发展。",
   "tips": [
    "\"超过半数\"没有精确数字，用 slightly over half of the respondents，不要臆造百分比。",
    "四项中前三项递减、末项骤降 → 前三句并列，末项用 In contrast 收尾。",
@@ -374,31 +3181,272 @@
   ],
   "key_phrases": [
    {
-    "en": "accounts for the largest share, at slightly over half of the respondents",
-    "cn": "占比最大，略超受访者半数"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "follows closely, representing …%",
-    "cn": "紧随其后，占……%"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "on account of flexibility and convenience",
-    "cn": "出于灵活与便利"
+    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
+    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "boosted the popularity of doing workouts at home",
-    "cn": "推动了居家锻炼的流行"
+    "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
+    "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
+    "src": "体育健康类第二段 · 模板第1句"
    },
    {
-    "en": "public sports facilities",
-    "cn": "公共体育设施"
+    "en": "Improved sports infrastructure makes it easier for people to participate in physical exercise, while a wider range of exercise methods enables different groups to make choices suited to their own circumstances.",
+    "cn": "更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。",
+    "src": "体育健康类第二段 · 模板第2句"
+   },
+   {
+    "en": "As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow.",
+    "cn": "随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。",
+    "src": "体育健康类第二段 · 模板第3句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "f",
+      6
+     ]
+    ]
+   },
+   {
+    "id": "para2_sports",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Working out alone",
+    "cn": "独自锻炼"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "exercising with friends",
+    "cn": "与朋友一起锻炼"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "working out with family members",
+    "cn": "与家人一起锻炼"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "playing team sports",
+    "cn": "参加团队运动"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "other forms of exercise",
+    "cn": "其他锻炼形式"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "slightly over half of the respondents",
+    "cn": "略超受访者半数"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "47.7%",
+    "cn": "47.7%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "23.9%",
+    "cn": "23.9%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "less than 16%",
+    "cn": "不足 16%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "a still smaller share",
+    "cn": "更小的比例"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the exercise methods chosen by city residents",
+    "cn": "城市居民的锻炼方式"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "physical exercise",
+    "cn": "体育锻炼"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "physical exercise",
+    "cn": "体育锻炼"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Working out alone",
+    "cn": "独自锻炼",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "exercising with friends",
+    "cn": "与朋友一起锻炼",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "working out with family members",
+    "cn": "与家人一起锻炼",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "playing team sports",
+    "cn": "参加团队运动",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "other forms of exercise",
+    "cn": "其他锻炼形式",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "slightly over half of the respondents",
+    "cn": "略超受访者半数",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "47.7%",
+    "cn": "47.7%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "23.9%",
+    "cn": "23.9%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "less than 16%",
+    "cn": "不足 16%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "a still smaller share",
+    "cn": "更小的比例",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the exercise methods chosen by city residents",
+    "cn": "城市居民的锻炼方式",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "physical exercise",
+    "cn": "体育锻炼",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "physical exercise",
+    "cn": "体育锻炼",
+    "para": "第三段"
    }
   ]
  },
  "2022": {
   "title": "Part B 大作文：2018—2020年我国快递业务量变动情况",
-  "apply_en": "The bar chart shows that the express delivery volumes associated with the whole country and rural areas rose steadily from 2018 to 2020. The national volume climbed from 51 billion pieces to 83 billion pieces, while the rural volume rose from 12 billion to 30 billion over the same span. Although both moved in the same direction, the trend is particularly striking in rural areas.\n\nThe robust growth is closely tied to the e-commerce boom. To be specific, as livestreaming e-commerce takes off, people are more inclined to purchase online, thereby giving impetus to the delivery business. Moreover, the government has made sustained efforts to improve infrastructure in the countryside, which paves the way for courier services to extend to the vast rural markets. Seen in this light, the surge is a natural consequence of economic change.\n\nFor this trend to continue, both enterprises and authorities should act reasonably. Enterprises should improve efficiency and service quality, while authorities should keep upgrading rural logistics. Packaging and delivery should also be made greener.",
-  "apply_cn": "该柱状图表明，2018 至 2020 年间全国与农村的快递业务量均持续上升。全国业务量从 510 亿件攀升至 830 亿件，农村同期从 120 亿件增至 300 亿件。二者虽同向变动，但农村地区的增长尤为显著。\n\n这一强劲增长与电商繁荣密切相关。具体而言，随着直播电商兴起，人们更倾向线上购物，从而推动快递业务发展。此外，政府持续改善农村基础设施，为快递服务延伸到广阔的农村市场铺平了道路。由此可见，这一激增是经济变化的自然结果。\n\n要使这一趋势延续，企业与政府都应理性行事。企业应提升效率与服务质量，政府则应持续升级农村物流。包装与配送也应更绿色。",
+  "apply_en": "The bar chart shows that the items associated with express delivery volumes nationwide and in rural areas rose steadily during the periods presented. The national volume climbed from 51 billion pieces in 2018 to 83 billion pieces in 2020, while the rural volume rose from 12 billion pieces in 2018 to 30 billion pieces in 2020. From 2018 to 2020, The national volume rose from 51 billion pieces to 83 billion pieces, showing a steady upward trend.\n\nUndoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of express delivery. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living. Seen in this light, the development of express delivery is no coincidence but a natural consequence of broader changes in social life.\n\nRelevant authorities should provide the necessary support and create favorable conditions under which express delivery can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that express delivery genuinely contributes to their long-term development.",
+  "apply_cn": "该柱状图表明，与全国与农村的快递业务量有关的不同项目在相应时期内均持续上升。全国业务量由2018年的510亿件上升至2020年的830亿件，农村业务量则从2018年的120亿件增至2020年的300亿件。自2018年至2020年，全国业务量由510亿件升至830亿件，呈现稳定上升趋势。\n\n毫无疑问，国家经济的飞速发展，为快递服务的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。由此可见，快递服务的发展并非偶然，而是社会生活发生变化后的自然结果。\n\n有关部门应提供必要支持，为快递服务发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使快递服务真正服务于自身的长期发展。",
   "tips": [
    "两事物同向、幅度不同 → 首句 rose steadily，用 while 并列两个上升，末句用 the growth in rural areas was particularly striking 点题。",
    "\"农村翻倍\"是题眼：用 doubled 或 the growth was particularly striking 强调。",
@@ -407,31 +3455,272 @@
   ],
   "key_phrases": [
    {
-    "en": "rose steadily from … to …",
-    "cn": "从……至……持续上升"
+    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "the trend is particularly striking",
-    "cn": "这一趋势尤为显著"
+    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "as livestreaming e-commerce takes off",
-    "cn": "随着直播电商兴起"
+    "en": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.",
+    "cn": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。",
+    "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "paves the way for …",
-    "cn": "为……铺平道路"
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "src": "经济类第二段 · 模板第2句"
    },
    {
-    "en": "give impetus to the delivery business",
-    "cn": "推动快递业务发展"
+    "en": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.",
+    "cn": "随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。",
+    "src": "经济类第二段 · 模板第3句"
+   },
+   {
+    "en": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
+    "cn": "由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
+    "src": "经济类第二段 · 模板第5句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_dynamic",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "f",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "para2_economy",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "t",
+      5
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "The national volume",
+    "cn": "全国业务量"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "the rural volume",
+    "cn": "农村业务量"
+   },
+   {
+    "para": "p1",
+    "name": "数字1",
+    "en": "51 billion pieces",
+    "cn": "510 亿件"
+   },
+   {
+    "para": "p1",
+    "name": "数字2",
+    "en": "83 billion pieces",
+    "cn": "830 亿件"
+   },
+   {
+    "para": "p1",
+    "name": "数字3",
+    "en": "12 billion pieces",
+    "cn": "120 亿件"
+   },
+   {
+    "para": "p1",
+    "name": "数字4",
+    "en": "30 billion pieces",
+    "cn": "300 亿件"
+   },
+   {
+    "para": "p1",
+    "name": "时间1",
+    "en": "2018",
+    "cn": "2018 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间2",
+    "en": "2020",
+    "cn": "2020 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间3",
+    "en": "2018",
+    "cn": "2018 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间4",
+    "en": "2020",
+    "cn": "2020 年"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "express delivery volumes nationwide and in rural areas",
+    "cn": "全国与农村的快递业务量"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "express delivery",
+    "cn": "快递服务"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "express delivery",
+    "cn": "快递服务"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "The national volume",
+    "cn": "全国业务量",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "the rural volume",
+    "cn": "农村业务量",
+    "para": "第一段"
+   },
+   {
+    "name": "数字1",
+    "en": "51 billion pieces",
+    "cn": "510 亿件",
+    "para": "第一段"
+   },
+   {
+    "name": "数字2",
+    "en": "83 billion pieces",
+    "cn": "830 亿件",
+    "para": "第一段"
+   },
+   {
+    "name": "数字3",
+    "en": "12 billion pieces",
+    "cn": "120 亿件",
+    "para": "第一段"
+   },
+   {
+    "name": "数字4",
+    "en": "30 billion pieces",
+    "cn": "300 亿件",
+    "para": "第一段"
+   },
+   {
+    "name": "时间1",
+    "en": "2018",
+    "cn": "2018 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间2",
+    "en": "2020",
+    "cn": "2020 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间3",
+    "en": "2018",
+    "cn": "2018 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间4",
+    "en": "2020",
+    "cn": "2020 年",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "express delivery volumes nationwide and in rural areas",
+    "cn": "全国与农村的快递业务量",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "express delivery",
+    "cn": "快递服务",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "express delivery",
+    "cn": "快递服务",
+    "para": "第三段"
    }
   ]
  },
  "2023": {
   "title": "Part B 大作文：2012—2021年我国居民健康素养水平变化趋势",
-  "apply_en": "The line chart shows that the health literacy rate of Chinese residents rose steadily from 2012 to 2021. The figure climbed from 8.80% in 2012 to 25.40% in 2021, showing a steady upward trend. Notably, the year 2016 marked a watershed when the growth accelerated considerably. The figure has grown almost threefold within a decade, and the momentum has yet to fade.\n\nA few factors contribute to this progress. To begin with, as general living standards and educational levels improve, residents become more aware of their health and start to seek various ways to stay healthy. Secondly, the digitalization of many health services, such as online consultation and AI diagnosis, has enabled residents to gain easy and fast access to professional advice. Moreover, government campaigns to promote public hygiene have also played a part. Finally, health education has been introduced into school curricula from an early age.\n\nFor this trend to continue, both authorities and individuals should act reasonably. Authorities should keep improving medical services, while individuals should make well-informed choices in light of their own circumstances.",
-  "apply_cn": "该折线图表明，2012 至 2021 年间中国居民健康素养水平持续上升。该数值从 2012 年的 8.80% 攀升至 2021 年的 25.40%，呈现稳定上升趋势。值得注意的是，2016 年是转折点，增速明显加快。这一数值十年间增长近两倍，势头仍未减弱。\n\n若干因素促成了这一进步。首先，随着整体生活水平与教育水平提高，居民健康意识增强，开始寻求多种保持健康的方式。其次，在线问诊、AI 诊断等健康服务的数字化，使居民能够便捷快速地获得专业建议。此外，政府推动公共卫生的宣传活动也发挥了作用。最后，健康教育已从小学阶段起进入课程体系。\n\n要使这一趋势延续，政府与个人都应理性行事。政府应持续改善医疗服务，个人也应结合自身情况作出理性选择。",
+  "apply_en": "The line chart shows that the items associated with the health literacy rate of Chinese residents rose steadily during the periods presented. The health literacy rate climbed from 8.80% in 2012 to 25.40% in 2021, while the rate in the same period rose from 8.80% in 2012 to 25.40% in 2021. From 2012 to 2021, The health literacy rate rose from 8.80% to 25.40%, showing a steady upward trend.\n\nChanges reflected in health literacy are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise. As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow. For this reason, health literacy not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.\n\nRelevant authorities should provide the necessary support and create favorable conditions under which health literacy can play a constructive role. Individuals should also make well-informed choices in light of their own circumstances, ensuring that health literacy genuinely contributes to their long-term development.",
+  "apply_cn": "该折线图表明，与中国居民的健康素养水平有关的不同项目在相应时期内持续上升。健康素养水平由2012年的8.80%上升至2021年的25.40%，同期的这一比例则从2012年的8.80%增至2021年的25.40%。自2012年至2021年，健康素养水平由8.80%升至25.40%，呈现稳定上升趋势。\n\n健康素养所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。正因如此，健康素养不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。\n\n有关部门应提供必要支持，为健康素养发挥作用创造良好条件。个人也应结合自身情况作出合理选择，使健康素养真正服务于自身的长期发展。",
   "tips": [
    "折线图、单线持续升 → 一条上升线写到底，配 showing a steady upward trend，**不要**写对比句。",
    "\"2016 年是转折点、增速加快\"是本题唯一的结构信息，用 marked a watershed when … accelerated considerately 写出。",
@@ -440,31 +3729,272 @@
   ],
   "key_phrases": [
    {
-    "en": "rose steadily from … to …",
-    "cn": "从……至……持续上升"
+    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "showing a steady upward trend",
-    "cn": "呈现稳定上升趋势"
+    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
+    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "marked a watershed when the growth accelerated",
-    "cn": "是增速加快的转折点"
+    "en": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.",
+    "cn": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。",
+    "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "gain easy and fast access to professional advice",
-    "cn": "便捷快速地获得专业建议"
+    "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
+    "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
+    "src": "体育健康类第二段 · 模板第1句"
    },
    {
-    "en": "health literacy rate",
+    "en": "As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow.",
+    "cn": "随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。",
+    "src": "体育健康类第二段 · 模板第3句"
+   },
+   {
+    "en": "For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
+    "cn": "正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
+    "src": "体育健康类第二段 · 模板第4句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   },
+   {
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "src": "第三段 · 正面版 · 模板第4句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_dynamic",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "f",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "para2_sports",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "line",
+    "cn": "折线"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "The health literacy rate",
     "cn": "健康素养水平"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "the rate in the same period",
+    "cn": "同期的这一比例"
+   },
+   {
+    "para": "p1",
+    "name": "数字1",
+    "en": "8.80%",
+    "cn": "8.80%"
+   },
+   {
+    "para": "p1",
+    "name": "数字2",
+    "en": "25.40%",
+    "cn": "25.40%"
+   },
+   {
+    "para": "p1",
+    "name": "数字3",
+    "en": "8.80%",
+    "cn": "8.80%"
+   },
+   {
+    "para": "p1",
+    "name": "数字4",
+    "en": "25.40%",
+    "cn": "25.40%"
+   },
+   {
+    "para": "p1",
+    "name": "时间1",
+    "en": "2012",
+    "cn": "2012 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间2",
+    "en": "2021",
+    "cn": "2021 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间3",
+    "en": "2012",
+    "cn": "2012 年"
+   },
+   {
+    "para": "p1",
+    "name": "时间4",
+    "en": "2021",
+    "cn": "2021 年"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the health literacy rate of Chinese residents",
+    "cn": "中国居民的健康素养水平"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "health literacy",
+    "cn": "健康素养"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "health literacy",
+    "cn": "健康素养"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "line",
+    "cn": "折线",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "The health literacy rate",
+    "cn": "健康素养水平",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "the rate in the same period",
+    "cn": "同期的这一比例",
+    "para": "第一段"
+   },
+   {
+    "name": "数字1",
+    "en": "8.80%",
+    "cn": "8.80%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字2",
+    "en": "25.40%",
+    "cn": "25.40%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字3",
+    "en": "8.80%",
+    "cn": "8.80%",
+    "para": "第一段"
+   },
+   {
+    "name": "数字4",
+    "en": "25.40%",
+    "cn": "25.40%",
+    "para": "第一段"
+   },
+   {
+    "name": "时间1",
+    "en": "2012",
+    "cn": "2012 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间2",
+    "en": "2021",
+    "cn": "2021 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间3",
+    "en": "2012",
+    "cn": "2012 年",
+    "para": "第一段"
+   },
+   {
+    "name": "时间4",
+    "en": "2021",
+    "cn": "2021 年",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the health literacy rate of Chinese residents",
+    "cn": "中国居民的健康素养水平",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "health literacy",
+    "cn": "健康素养",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "health literacy",
+    "cn": "健康素养",
+    "para": "第三段"
    }
   ]
  },
  "2024": {
   "title": "Part B 大作文：某高校劳动实践课学生主要收获调查（柱状图）",
-  "apply_en": "The bar chart presents an uneven distribution among the benefits students gained from labor practice courses at a certain university. Gaining relevant knowledge accounts for the largest share, at 91.3%. Improving practical ability follows closely, representing 84.8%. In contrast, obtaining cheerful moods and enhancing cooperative ability make up relatively small proportions of 54.4% and 32.6% respectively.\n\nThe chart reflects the university's tendency in course design to provide knowledge and foster practical ability. This can be attributed to the following aspects. Firstly, the practical knowledge offered by the course enables students to better understand their interests and paves the way for their career development. Moreover, hands-on experience is highly valued in today's job market, which encourages students to focus on applicable skills.\n\nFor labor practice courses to play a greater role, universities should keep improving the curriculum, while students should make well-informed choices in light of their own needs. Courses should also be linked more closely with local industries, so that what is learned in class can be put to use in real workplaces.",
-  "apply_cn": "该柱状图呈现了某高校学生从劳动实践课中所得收获之间的不均衡分布。获得相关知识占比最大，达 91.3%。提升实践能力紧随其后，占 84.8%。相比之下，获得愉悦心情与增强合作能力占比相对较小，分别为 54.4% 和 32.6%。\n\n该图反映了高校在课程设计中提供知识、培养实践能力的倾向。这可归因于以下方面。首先，课程提供的实用知识使学生更好地了解自身兴趣，为职业发展铺路；此外，实践经历在当今就业市场备受重视，促使学生关注可应用技能。\n\n要使劳动实践课发挥更大作用，高校应持续改进课程，学生也应结合自身需求作出理性选择。课程还应与本地产业更紧密衔接，让课堂所学能在真实岗位中用得上。",
+  "apply_en": "The bar chart presents an uneven distribution among the categories associated with the benefits students gained from labor practice courses. Gaining relevant knowledge accounts for the largest share, at 91.3%. Improving practical ability and obtaining cheerful moods form the middle group, representing 84.8% and 54.4%, respectively. As for Gaining relevant knowledge and improving practical ability, they register 91.3% and 84.8% respectively.\n\nLabor practice courses can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. In this process, individuals gradually become less dependent on external reminders and begin to take responsibility for their own choices. Ultimately, labor practice courses can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.\n\nFor labor practice courses to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which labor practice courses can play a constructive role.",
+  "apply_cn": "该图表呈现了与学生从劳动实践课中得到的收获有关的不同类别之间不均衡的分布情况。获得相关知识所占比例最大，达到91.3%。提升实践能力和获得愉悦心情处于中间位置，分别占84.8%和54.4%。就获得相关知识与提升实践能力而言，它们分别为91.3%和84.8%。\n\n劳动实践课能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。在这一过程中，个人会逐步减少对外界提醒的依赖，并开始主动为自己的选择负责。最终，劳动实践课不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。\n\n要使劳动实践课持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为劳动实践课发挥作用创造良好条件。",
   "tips": [
    "柱状图、占比分布 → 静态模板：最大项 + 紧随项 + In contrast 收尾的两项。",
    "\"知识 91.3% / 实践 84.8%\"两项都超八成，是本题的\"高占比组\"，与前两名的表述要连贯。",
@@ -473,31 +4003,281 @@
   ],
   "key_phrases": [
    {
-    "en": "accounts for the largest share, at …%",
-    "cn": "占比最大，达……%"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "follows closely, representing …%",
-    "cn": "紧随其后，占……%"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "make up relatively small proportions of …% and …% respectively",
-    "cn": "占比相对较小，分别为……% 和……%"
+    "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
+    "cn": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "paves the way for their career development",
-    "cn": "为职业发展铺路"
+    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
+    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "hands-on experience",
-    "cn": "实践/动手经历"
+    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+   },
+   {
+    "en": "In this process, individuals gradually become less dependent on external reminders and begin to take responsibility for their own choices.",
+    "cn": "在这一过程中，个人会逐步减少对外界提醒的依赖，并开始主动为自己的选择负责。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第3句"
+   },
+   {
+    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第4句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "f",
+      6
+     ]
+    ]
+   },
+   {
+    "id": "para2_campus",
+    "refs": [
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Gaining relevant knowledge",
+    "cn": "获得相关知识"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "improving practical ability",
+    "cn": "提升实践能力"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "obtaining cheerful moods",
+    "cn": "获得愉悦心情"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "enhancing cooperative ability",
+    "cn": "增强合作能力"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "other gains",
+    "cn": "其他收获"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "91.3%",
+    "cn": "91.3%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "84.8%",
+    "cn": "84.8%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "54.4%",
+    "cn": "54.4%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "32.6%",
+    "cn": "32.6%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "a still smaller share",
+    "cn": "更小的比例"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the benefits students gained from labor practice courses",
+    "cn": "学生从劳动实践课中得到的收获"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "labor practice courses",
+    "cn": "劳动实践课"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "labor practice courses",
+    "cn": "劳动实践课"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Gaining relevant knowledge",
+    "cn": "获得相关知识",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "improving practical ability",
+    "cn": "提升实践能力",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "obtaining cheerful moods",
+    "cn": "获得愉悦心情",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "enhancing cooperative ability",
+    "cn": "增强合作能力",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "other gains",
+    "cn": "其他收获",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "91.3%",
+    "cn": "91.3%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "84.8%",
+    "cn": "84.8%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "54.4%",
+    "cn": "54.4%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "32.6%",
+    "cn": "32.6%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "a still smaller share",
+    "cn": "更小的比例",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the benefits students gained from labor practice courses",
+    "cn": "学生从劳动实践课中得到的收获",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "labor practice courses",
+    "cn": "劳动实践课",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "labor practice courses",
+    "cn": "劳动实践课",
+    "para": "第三段"
    }
   ]
  },
  "2025": {
   "title": "Part B 大作文：某社区老年人主要日常休闲活动调查（柱形图）",
-  "apply_en": "The bar chart presents an uneven distribution among the leisure activities of the elderly in a certain community. Watching television accounts for the largest share, at 90.8%. Taking walks follows closely, representing 68.3%. In contrast, planting flowers, reading and playing chess make up relatively small proportions of 34.7%, 31.8% and 18.4% respectively.\n\nThe differences reflect the living conditions and needs of the elderly. First of all, watching television is an extremely convenient way to obtain information and enjoy entertainment, which explains why the vast majority choose it. Secondly, walking is a low-intensity activity suitable for the elderly. Besides, although planting flowers, reading and playing chess occupy smaller shares, they still enrich the daily life of those who take them up.\n\nFor the elderly to enjoy a better life, both communities and families should act reasonably. Communities should offer more recreational facilities, while families should care about the elderly's real needs. Families should care about the elderly’s real needs rather than simply keeping them entertained, and communities should organize activities suited to older residents.",
-  "apply_cn": "该柱状图呈现了某社区老年人日常休闲活动之间的不均衡分布。看电视占比最大，达 90.8%。散步紧随其后，占 68.3%。相比之下，养花、阅读与下棋占比相对较小，分别为 34.7%、31.8% 和 18.4%。\n\n这些差异反映了老年人的生活条件与需求。首先，看电视是获取信息、享受娱乐的极便捷方式，这解释了为何绝大多数人选择它；其次，散步是适合多数老年人的低强度活动。此外，养花、阅读与下棋虽占比较小，仍丰富了参与者的日常生活。\n\n要让老年人享有更好的生活，社区与家庭都应理性行事。社区应提供更多休闲设施，家庭应关心老年人的真实需求。家庭应关心老年人的真实需求，而不只是让他们有消遣；社区也应组织适合老年人的活动。",
+  "apply_en": "The bar chart presents an uneven distribution among the categories associated with the leisure activities of the elderly. Watching television accounts for the largest share, at 90.8%. Taking walks and planting flowers form the middle group, representing 68.3% and 34.7%, respectively. In contrast, reading and playing chess make up relatively small proportions of 31.8% and 18.4%.\n\nChanges reflected in the leisure activities of the elderly are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise. As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow. For this reason, the leisure activities of the elderly not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.\n\nFor the leisure activities of the elderly to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which the leisure activities of the elderly can play a constructive role.",
+  "apply_cn": "该图表呈现了与老年人的日常休闲活动有关的不同类别之间不均衡的分布情况。看电视所占比例最大，达到90.8%。散步和养花处于中间位置，分别占68.3%和34.7%。相比之下，阅读和下棋所占比例较小，分别为31.8%和18.4%。\n\n老年人的休闲活动所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。正因如此，老年人的休闲活动不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。\n\n要使老年人的休闲活动持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为老年人的休闲活动发挥作用创造良好条件。",
   "tips": [
    "柱状图 5 项：两项高占比完整句，三项低占比合并且用 respectively 收尾。",
    "首句 chart 换 bar chart，用 present an uneven distribution 起头最稳。",
@@ -506,31 +4286,281 @@
   ],
   "key_phrases": [
    {
-    "en": "accounts for the largest share, at …%",
-    "cn": "占比最大，达……%"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "follows closely, representing …%",
-    "cn": "紧随其后，占……%"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "make up relatively small proportions of …, … and … respectively",
-    "cn": "占比相对较小，分别为……、……和……"
+    "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
+    "cn": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "a low-intensity activity suitable for the elderly",
-    "cn": "适合老年人的低强度活动"
+    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
+    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "enrich the daily life",
-    "cn": "丰富日常生活"
+    "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
+    "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
+    "src": "体育健康类第二段 · 模板第1句"
+   },
+   {
+    "en": "As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow.",
+    "cn": "随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。",
+    "src": "体育健康类第二段 · 模板第3句"
+   },
+   {
+    "en": "For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
+    "cn": "正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
+    "src": "体育健康类第二段 · 模板第4句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para2_sports",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      3
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Watching television",
+    "cn": "看电视"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "taking walks",
+    "cn": "散步"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "planting flowers",
+    "cn": "养花"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "reading",
+    "cn": "阅读"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "playing chess",
+    "cn": "下棋"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "90.8%",
+    "cn": "90.8%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "68.3%",
+    "cn": "68.3%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "34.7%",
+    "cn": "34.7%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "31.8%",
+    "cn": "31.8%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "18.4%",
+    "cn": "18.4%"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the leisure activities of the elderly",
+    "cn": "老年人的日常休闲活动"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "the leisure activities of the elderly",
+    "cn": "老年人的休闲活动"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "the leisure activities of the elderly",
+    "cn": "老年人的休闲活动"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Watching television",
+    "cn": "看电视",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "taking walks",
+    "cn": "散步",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "planting flowers",
+    "cn": "养花",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "reading",
+    "cn": "阅读",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "playing chess",
+    "cn": "下棋",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "90.8%",
+    "cn": "90.8%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "68.3%",
+    "cn": "68.3%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "34.7%",
+    "cn": "34.7%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "31.8%",
+    "cn": "31.8%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "18.4%",
+    "cn": "18.4%",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the leisure activities of the elderly",
+    "cn": "老年人的日常休闲活动",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the leisure activities of the elderly",
+    "cn": "老年人的休闲活动",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the leisure activities of the elderly",
+    "cn": "老年人的休闲活动",
+    "para": "第三段"
    }
   ]
  },
  "2026": {
   "title": "图表作文：儿童户外活动的益处",
-  "apply_en": "The bar chart presents an uneven distribution among the perceived benefits of children's outdoor activities. Satisfying curiosity accounts for the largest share, at 54.6%. Enhancing observation skills follows closely, representing 54.5%. In contrast, improving physical fitness and strengthening parent-child interaction make up relatively smaller proportions of 37.2% and 33.2% respectively.\n\nThe findings are closely linked to rising public awareness of children's all-round development. On the one hand, the high value placed on curiosity and observation suggests that parents increasingly regard the outdoor world as a vivid classroom where children learn through discovery. On the other hand, as daily life becomes more sedentary, outdoor activities serve as a practical way to build physical fitness and tighten family bonds. Seen in this light, the pattern of opinions is a natural consequence of changing parenting ideas.\n\nFor children to benefit more from outdoor activities, both families and schools should act reasonably. Families should set aside regular time for outdoor play, while schools should design more activity-based courses. Families should also set aside regular time for outdoor play.",
-  "apply_cn": "该柱状图呈现了人们对儿童户外活动各项益处看法之间的不均衡分布。满足好奇心占比最大，达 54.6%。促进观察力紧随其后，占 54.5%。相比之下，强身健体与增强亲子互动占比相对较小，分别为 37.2% 和 33.2%。\n\n调查结果与公众对儿童全面发展意识的提高密切相关。一方面，人们对好奇心与观察力的高度重视表明，家长日益把户外世界视为孩子通过探索来学习的生动课堂；另一方面，随着日常生活愈发久坐化，户外活动成为强健体魄、密切亲子关系的实用途径。由此可见，这一看法格局是育儿观念变化的自然结果。\n\n要让孩子从户外活动中获益更多，家庭与学校都应理性行事。家庭应留出固定的户外活动时间，学校应设计更多以活动为主的课程。家庭还应留出固定的户外活动时间。",
+  "apply_en": "The bar chart presents an uneven distribution among the categories associated with the perceived benefits of children's outdoor activities. Satisfying curiosity accounts for the largest share, at 54.6%. In contrast, strengthening parent-child interaction and other benefits make up relatively small proportions of 33.2% and a still smaller share. As for Satisfying curiosity and enhancing observation skills, they register 54.6% and 54.5% respectively.\n\nThe influence of outdoor activities is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. Outdoor activities can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. Ultimately, outdoor activities can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.\n\nFor outdoor activities to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which outdoor activities can play a constructive role.",
+  "apply_cn": "该图表呈现了与人们看重的儿童户外活动益处有关的不同类别之间不均衡的分布情况。满足好奇心所占比例最大，达到54.6%。相比之下，增强亲子互动和其他益处所占比例较小，分别为33.2%和更小的比例。就满足好奇心与促进观察力而言，它们分别为54.6%和54.5%。\n\n户外活动的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。户外活动能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。最终，户外活动不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。\n\n要使户外活动持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为户外活动发挥作用创造良好条件。",
   "tips": [
    "柱状图 4 项、两项相近（54.6% / 54.5%）→ 前两项并列，后两项用 In contrast 合并。",
    "\"人们看法\"类图表（survey）第二段用校园类/体育健康类模板，落点写\"全面发展 + 育儿观念\"。",
@@ -539,24 +4569,274 @@
   ],
   "key_phrases": [
    {
-    "en": "presents an uneven distribution among the perceived benefits of …",
-    "cn": "呈现了人们对……各项益处的看法分布"
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "accounts for the largest share, at …%",
-    "cn": "占比最大，达……%"
+    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
+    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "follows closely, representing …%",
-    "cn": "紧随其后，占……%"
+    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
+    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "regard … as a vivid classroom where children learn through discovery",
-    "cn": "把……视为孩子通过探索来学习的生动课堂"
+    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
+    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "a natural consequence of changing parenting ideas",
-    "cn": "育儿观念变化的自然结果"
+    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
+   },
+   {
+    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+   },
+   {
+    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "src": "校园类第二段（对应英语一品质类） · 模板第4句"
+   },
+   {
+    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "src": "第三段 · 正面版 · 模板第1句"
+   },
+   {
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "src": "第三段 · 正面版 · 模板第2句"
+   }
+  ],
+  "tpl_used": [
+   {
+    "id": "chart_static",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ],
+     [
+      "f",
+      6
+     ]
+    ]
+   },
+   {
+    "id": "para2_campus",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ],
+     [
+      "t",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "para3_positive",
+    "refs": [
+     [
+      "t",
+      1
+     ],
+     [
+      "t",
+      2
+     ]
+    ]
+   }
+  ],
+  "slot_used": [
+   {
+    "para": "p1",
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状"
+   },
+   {
+    "para": "p1",
+    "name": "事物1",
+    "en": "Satisfying curiosity",
+    "cn": "满足好奇心"
+   },
+   {
+    "para": "p1",
+    "name": "事物2",
+    "en": "enhancing observation skills",
+    "cn": "促进观察力"
+   },
+   {
+    "para": "p1",
+    "name": "事物3",
+    "en": "improving physical fitness",
+    "cn": "强身健体"
+   },
+   {
+    "para": "p1",
+    "name": "事物4",
+    "en": "strengthening parent-child interaction",
+    "cn": "增强亲子互动"
+   },
+   {
+    "para": "p1",
+    "name": "事物5",
+    "en": "other benefits",
+    "cn": "其他益处"
+   },
+   {
+    "para": "p1",
+    "name": "百分比1",
+    "en": "54.6%",
+    "cn": "54.6%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比2",
+    "en": "54.5%",
+    "cn": "54.5%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比3",
+    "en": "37.2%",
+    "cn": "37.2%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比4",
+    "en": "33.2%",
+    "cn": "33.2%"
+   },
+   {
+    "para": "p1",
+    "name": "百分比5",
+    "en": "a still smaller share",
+    "cn": "更小的比例"
+   },
+   {
+    "para": "p1",
+    "name": "题目相关词",
+    "en": "the perceived benefits of children's outdoor activities",
+    "cn": "人们看重的儿童户外活动益处"
+   },
+   {
+    "para": "p2",
+    "name": "题目相关词",
+    "en": "outdoor activities",
+    "cn": "户外活动"
+   },
+   {
+    "para": "p3",
+    "name": "题目相关词",
+    "en": "outdoor activities",
+    "cn": "户外活动"
+   }
+  ],
+  "slot_phrases": [
+   {
+    "name": "chart",
+    "en": "bar",
+    "cn": "柱状",
+    "para": "第一段"
+   },
+   {
+    "name": "事物1",
+    "en": "Satisfying curiosity",
+    "cn": "满足好奇心",
+    "para": "第一段"
+   },
+   {
+    "name": "事物2",
+    "en": "enhancing observation skills",
+    "cn": "促进观察力",
+    "para": "第一段"
+   },
+   {
+    "name": "事物3",
+    "en": "improving physical fitness",
+    "cn": "强身健体",
+    "para": "第一段"
+   },
+   {
+    "name": "事物4",
+    "en": "strengthening parent-child interaction",
+    "cn": "增强亲子互动",
+    "para": "第一段"
+   },
+   {
+    "name": "事物5",
+    "en": "other benefits",
+    "cn": "其他益处",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比1",
+    "en": "54.6%",
+    "cn": "54.6%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比2",
+    "en": "54.5%",
+    "cn": "54.5%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比3",
+    "en": "37.2%",
+    "cn": "37.2%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比4",
+    "en": "33.2%",
+    "cn": "33.2%",
+    "para": "第一段"
+   },
+   {
+    "name": "百分比5",
+    "en": "a still smaller share",
+    "cn": "更小的比例",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "the perceived benefits of children's outdoor activities",
+    "cn": "人们看重的儿童户外活动益处",
+    "para": "第一段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "outdoor activities",
+    "cn": "户外活动",
+    "para": "第二段"
+   },
+   {
+    "name": "题目相关词",
+    "en": "outdoor activities",
+    "cn": "户外活动",
+    "para": "第三段"
    }
   ]
  }

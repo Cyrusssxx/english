@@ -1,0 +1,1779 @@
+{
+ "2010": {
+  "title": "手机用户量增长情况对比",
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_economy",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     5
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "trend": "rose steadily",
+  "trend_cn": "均持续上升",
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "mobile-phone subscriptions in developing and developed countries",
+   "事物1": "Subscriptions in developing countries",
+   "数字1": "0.5 billion",
+   "时间1": "2000",
+   "数字2": "4 billion",
+   "时间2": "2008",
+   "事物2": "those in developed countries",
+   "数字3": "0.7 billion",
+   "时间3": "2000",
+   "数字4": "1 billion",
+   "时间4": "2008"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "发展中国家与发达国家的手机订阅量",
+   "事物1": "发展中国家的订阅量",
+   "数字1": "5 亿",
+   "时间1": "2000 年",
+   "数字2": "40 亿",
+   "时间2": "2008 年",
+   "事物2": "发达国家同期的订阅量",
+   "数字3": "7 亿",
+   "时间3": "2000 年",
+   "数字4": "10 亿",
+   "时间4": "2008 年"
+  },
+  "slots_p2": {
+   "题目相关词": "mobile services"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "手机服务"
+  },
+  "slots_p3": {
+   "题目相关词": "mobile services"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "手机服务"
+  }
+ },
+ "2011": {
+  "title": "汽车品牌市场份额变化",
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_economy",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     5
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "the market shares of Chinese, Japanese and American auto brands",
+   "事物1": "Chinese brands",
+   "数字1": "a modest share",
+   "时间1": "the earlier period",
+   "数字2": "the leading position",
+   "时间2": "the later period",
+   "事物2": "American brands",
+   "数字3": "a small share",
+   "时间3": "the earlier period",
+   "数字4": "a slightly larger share",
+   "时间4": "the later period",
+   "事物3": "Japanese brands",
+   "数字5": "their peak level",
+   "时间5": "the earlier period",
+   "数字6": "a much lower level",
+   "时间6": "the later period"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "中国、日本与美国汽车品牌的市场份额",
+   "事物1": "国产品牌",
+   "数字1": "一个不大的份额",
+   "时间1": "前一时期",
+   "数字2": "领先地位",
+   "时间2": "后一时期",
+   "事物2": "美系品牌",
+   "数字3": "一个较小的份额",
+   "时间3": "前一时期",
+   "数字4": "略大的份额",
+   "时间4": "后一时期",
+   "事物3": "日系品牌",
+   "数字5": "其最高水平",
+   "时间5": "前一时期",
+   "数字6": "远低于此的水平",
+   "时间6": "后一时期"
+  },
+  "slots_p2": {
+   "题目相关词": "domestic auto brands"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "国产汽车品牌"
+  },
+  "slots_p3": {
+   "题目相关词": "domestic auto brands"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "国产汽车品牌"
+  }
+ },
+ "2012": {
+  "title": "某公司员工工作满意度调查",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_campus",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "table",
+   "题目相关词": "job satisfaction across the age groups",
+   "事物1": "The group over 50",
+   "百分比1": "40%",
+   "事物2": "those aged 41 to 50",
+   "百分比2": "the lowest level",
+   "事物3": "employees aged 31 to 40",
+   "百分比3": "a modest level",
+   "事物4": "employees aged 40 or younger",
+   "百分比4": "16.7%",
+   "事物5": "the remaining respondents",
+   "百分比5": "a still smaller share"
+  },
+  "slots_p1_cn": {
+   "chart": "表格",
+   "题目相关词": "各年龄段的工作满意度",
+   "事物1": "50 岁以上群体",
+   "百分比1": "40%",
+   "事物2": "41 至 50 岁的员工",
+   "百分比2": "最低水平",
+   "事物3": "31 至 40 岁的员工",
+   "百分比3": "中等水平",
+   "事物4": "40 岁及以下员工",
+   "百分比4": "16.7%",
+   "事物5": "其余受访者",
+   "百分比5": "更小的比例",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "job satisfaction"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "工作满意度"
+  },
+  "slots_p3": {
+   "题目相关词": "job satisfaction"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "工作满意度"
+  }
+ },
+ "2013": {
+  "title": "大学生兼职比例柱状图",
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_campus",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "trend": "rose steadily",
+  "trend_cn": "持续上升",
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "the proportion of college students taking part-time jobs",
+   "事物1": "The rate",
+   "数字1": "67.77%",
+   "时间1": "the first year",
+   "数字2": "88.24%",
+   "时间2": "the final year",
+   "事物2": "the proportion in the graduation year",
+   "数字3": "83.7%",
+   "时间3": "the third year",
+   "数字4": "88.24%",
+   "时间4": "the final year"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "大学生兼职比例",
+   "事物1": "这一比例",
+   "数字1": "67.77%",
+   "时间1": "大一",
+   "数字2": "88.24%",
+   "时间2": "大四",
+   "事物2": "毕业当年的比例",
+   "数字3": "83.7%",
+   "时间3": "大三",
+   "数字4": "88.24%",
+   "时间4": "大四"
+  },
+  "slots_p2": {
+   "题目相关词": "part-time jobs"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "兼职"
+  },
+  "slots_p3": {
+   "题目相关词": "part-time jobs"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "兼职"
+  }
+ },
+ "2014": {
+  "title": "城市与乡村人口的变化",
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_economy",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     5
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "the urban and rural population",
+   "事物1": "The urban population",
+   "数字1": "300 million",
+   "时间1": "1990",
+   "数字2": "670 million",
+   "时间2": "2010",
+   "事物2": "the rural population",
+   "数字3": "820 million",
+   "时间3": "1990",
+   "数字4": "680 million",
+   "时间4": "2010"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "城镇与农村人口",
+   "事物1": "城镇人口",
+   "数字1": "3 亿",
+   "时间1": "1990 年",
+   "数字2": "6.7 亿",
+   "时间2": "2010 年",
+   "事物2": "农村人口",
+   "数字3": "8.2 亿",
+   "时间3": "1990 年",
+   "数字4": "6.8 亿",
+   "时间4": "2010 年"
+  },
+  "slots_p2": {
+   "题目相关词": "urbanization"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "城镇化"
+  },
+  "slots_p3": {
+   "题目相关词": "urbanization"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "城镇化"
+  }
+ },
+ "2015": {
+  "title": "春节假期花销比例饼图",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_economy",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     5
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "pie",
+   "题目相关词": "Spring Festival spending",
+   "事物1": "Travelling, gift giving and dinners with friends or relatives",
+   "百分比1": "80% of the total",
+   "事物2": "gifts for colleagues",
+   "百分比2": "a small share",
+   "事物3": "household decorations",
+   "百分比3": "a smaller share",
+   "事物4": "other items such as fireworks",
+   "百分比4": "12%",
+   "事物5": "miscellaneous spending",
+   "百分比5": "8%"
+  },
+  "slots_p1_cn": {
+   "chart": "饼",
+   "题目相关词": "春节花销",
+   "事物1": "旅行、送礼以及与亲友聚餐",
+   "百分比1": "总额的 80%",
+   "事物2": "给同事的礼物",
+   "百分比2": "一个很小的比例",
+   "事物3": "家庭装饰",
+   "百分比3": "更小的比例",
+   "事物4": "烟花等其他项目",
+   "百分比4": "12%",
+   "事物5": "杂项支出",
+   "百分比5": "8%",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "festival spending"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "节日花销"
+  },
+  "slots_p3": {
+   "题目相关词": "festival spending"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "节日花销"
+  }
+ },
+ "2016": {
+  "title": "高校学生旅游目的调查饼图",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_campus",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "pie",
+   "题目相关词": "the purposes of travel among college students",
+   "事物1": "Appreciating the beauty of the scenery",
+   "百分比1": "37%",
+   "事物2": "Relieving pressure",
+   "百分比2": "33%",
+   "事物3": "other aims",
+   "百分比3": "15%",
+   "事物4": "making more friends",
+   "百分比4": "9%",
+   "事物5": "fostering independence",
+   "百分比5": "6%"
+  },
+  "slots_p1_cn": {
+   "chart": "饼",
+   "题目相关词": "大学生的旅游目的",
+   "事物1": "欣赏风景",
+   "百分比1": "37%",
+   "事物2": "缓解压力",
+   "百分比2": "33%",
+   "事物3": "其他目的",
+   "百分比3": "15%",
+   "事物4": "广交朋友",
+   "百分比4": "9%",
+   "事物5": "培养独立能力",
+   "百分比5": "6%",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "travel"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "旅行"
+  },
+  "slots_p3": {
+   "题目相关词": "travel"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "旅行"
+  }
+ },
+ "2017": {
+  "title": "博物馆数量与参观人数折线图",
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_culture",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "trend": "rose steadily",
+  "trend_cn": "均持续上升",
+  "slots_p1": {
+   "chart": "line",
+   "题目相关词": "the number of museums and museum visitors",
+   "事物1": "The number of museums",
+   "数字1": "4,169",
+   "时间1": "2013",
+   "数字2": "4,692",
+   "时间2": "2015",
+   "事物2": "the number of visitors",
+   "数字3": "637 million",
+   "时间3": "2013",
+   "数字4": "954 million",
+   "时间4": "2015"
+  },
+  "slots_p1_cn": {
+   "chart": "折线",
+   "题目相关词": "博物馆数量与参观人数",
+   "事物1": "博物馆数量",
+   "数字1": "4169",
+   "时间1": "2013 年",
+   "数字2": "4692",
+   "时间2": "2015 年",
+   "事物2": "参观人数",
+   "数字3": "6.37 亿",
+   "时间3": "2013 年",
+   "数字4": "9.54 亿",
+   "时间4": "2015 年"
+  },
+  "slots_p2": {
+   "题目相关词": "museums"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "博物馆"
+  },
+  "slots_p3": {
+   "题目相关词": "museums"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "博物馆"
+  }
+ },
+ "2018": {
+  "title": "消费者选择餐厅时的关注因素饼图",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_economy",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     5
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "pie",
+   "题目相关词": "the factors consumers consider when choosing a restaurant",
+   "事物1": "Distinguishing features",
+   "百分比1": "36.3%",
+   "事物2": "service",
+   "百分比2": "26.8%",
+   "事物3": "the dining environment",
+   "百分比3": "23.8%",
+   "事物4": "price",
+   "百分比4": "8.4%",
+   "事物5": "other factors",
+   "百分比5": "4.7%"
+  },
+  "slots_p1_cn": {
+   "chart": "饼",
+   "题目相关词": "消费者选择餐厅时的关注因素",
+   "事物1": "餐厅特色",
+   "百分比1": "36.3%",
+   "事物2": "服务",
+   "百分比2": "26.8%",
+   "事物3": "就餐环境",
+   "百分比3": "23.8%",
+   "事物4": "价格",
+   "百分比4": "8.4%",
+   "事物5": "其他因素",
+   "百分比5": "4.7%",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "dining out"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "外出就餐"
+  },
+  "slots_p3": {
+   "题目相关词": "dining out"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "外出就餐"
+  }
+ },
+ "2019": {
+  "title": "本科毕业生去向统计柱状图",
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_campus",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "graduates' choices after university",
+   "事物1": "the proportion entering employment",
+   "数字1": "68.1%",
+   "时间1": "2013",
+   "数字2": "60.7%",
+   "时间2": "2018",
+   "事物2": "the proportion pursuing further education",
+   "数字3": "26.3%",
+   "时间3": "2013",
+   "数字4": "34.0%",
+   "时间4": "2018",
+   "事物3": "the proportion starting a business",
+   "数字5": "1.3%",
+   "时间5": "2013",
+   "数字6": "2.6%",
+   "时间6": "2018"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "本科毕业生的去向",
+   "事物1": "就业比例",
+   "数字1": "68.1%",
+   "时间1": "2013 年",
+   "数字2": "60.7%",
+   "时间2": "2018 年",
+   "事物2": "升学比例",
+   "数字3": "26.3%",
+   "时间3": "2013 年",
+   "数字4": "34.0%",
+   "时间4": "2018 年",
+   "事物3": "创业比例",
+   "数字5": "1.3%",
+   "时间5": "2013 年",
+   "数字6": "2.6%",
+   "时间6": "2018 年"
+  },
+  "slots_p2": {
+   "题目相关词": "further education"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "继续深造"
+  },
+  "slots_p3": {
+   "题目相关词": "further education"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "继续深造"
+  }
+ },
+ "2020": {
+  "title": "学生手机阅读目的调查饼图",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_campus",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "pie",
+   "题目相关词": "the purposes of mobile reading among college students",
+   "事物1": "Gaining knowledge",
+   "百分比1": "59.5%",
+   "事物2": "killing time",
+   "百分比2": "21.3%",
+   "事物3": "obtaining information",
+   "百分比3": "17.0%",
+   "事物4": "other purposes",
+   "百分比4": "2.2%",
+   "事物5": "the remaining aims",
+   "百分比5": "a negligible share"
+  },
+  "slots_p1_cn": {
+   "chart": "饼",
+   "题目相关词": "大学生的手机阅读目的",
+   "事物1": "获取知识",
+   "百分比1": "59.5%",
+   "事物2": "消磨时间",
+   "百分比2": "21.3%",
+   "事物3": "获取信息",
+   "百分比3": "17.0%",
+   "事物4": "其他目的",
+   "百分比4": "2.2%",
+   "事物5": "其余目标",
+   "百分比5": "微不足道的比例",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "mobile reading"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "手机阅读"
+  },
+  "slots_p3": {
+   "题目相关词": "mobile reading"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "手机阅读"
+  }
+ },
+ "2021": {
+  "title": "居民锻炼方式调查柱状图",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_sports",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "the exercise methods chosen by city residents",
+   "事物1": "Working out alone",
+   "百分比1": "slightly over half of the respondents",
+   "事物2": "exercising with friends",
+   "百分比2": "47.7%",
+   "事物3": "working out with family members",
+   "百分比3": "23.9%",
+   "事物4": "playing team sports",
+   "百分比4": "less than 16%",
+   "事物5": "other forms of exercise",
+   "百分比5": "a still smaller share"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "城市居民的锻炼方式",
+   "事物1": "独自锻炼",
+   "百分比1": "略超受访者半数",
+   "事物2": "与朋友一起锻炼",
+   "百分比2": "47.7%",
+   "事物3": "与家人一起锻炼",
+   "百分比3": "23.9%",
+   "事物4": "参加团队运动",
+   "百分比4": "不足 16%",
+   "事物5": "其他锻炼形式",
+   "百分比5": "更小的比例",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "physical exercise"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "体育锻炼"
+  },
+  "slots_p3": {
+   "题目相关词": "physical exercise"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "体育锻炼"
+  }
+ },
+ "2022": {
+  "title": "全国与农村快递业务量变动",
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_economy",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     5
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "trend": "rose steadily",
+  "trend_cn": "均持续上升",
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "express delivery volumes nationwide and in rural areas",
+   "事物1": "The national volume",
+   "数字1": "51 billion pieces",
+   "时间1": "2018",
+   "数字2": "83 billion pieces",
+   "时间2": "2020",
+   "事物2": "the rural volume",
+   "数字3": "12 billion pieces",
+   "时间3": "2018",
+   "数字4": "30 billion pieces",
+   "时间4": "2020"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "全国与农村的快递业务量",
+   "事物1": "全国业务量",
+   "数字1": "510 亿件",
+   "时间1": "2018 年",
+   "数字2": "830 亿件",
+   "时间2": "2020 年",
+   "事物2": "农村业务量",
+   "数字3": "120 亿件",
+   "时间3": "2018 年",
+   "数字4": "300 亿件",
+   "时间4": "2020 年"
+  },
+  "slots_p2": {
+   "题目相关词": "express delivery"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "快递服务"
+  },
+  "slots_p3": {
+   "题目相关词": "express delivery"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "快递服务"
+  }
+ },
+ "2023": {
+  "title": "居民健康素养水平变化趋势",
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_sports",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "trend": "rose steadily",
+  "trend_cn": "持续上升",
+  "slots_p1": {
+   "chart": "line",
+   "题目相关词": "the health literacy rate of Chinese residents",
+   "事物1": "The health literacy rate",
+   "数字1": "8.80%",
+   "时间1": "2012",
+   "数字2": "25.40%",
+   "时间2": "2021",
+   "事物2": "the rate in the same period",
+   "数字3": "8.80%",
+   "时间3": "2012",
+   "数字4": "25.40%",
+   "时间4": "2021"
+  },
+  "slots_p1_cn": {
+   "chart": "折线",
+   "题目相关词": "中国居民的健康素养水平",
+   "事物1": "健康素养水平",
+   "数字1": "8.80%",
+   "时间1": "2012 年",
+   "数字2": "25.40%",
+   "时间2": "2021 年",
+   "事物2": "同期的这一比例",
+   "数字3": "8.80%",
+   "时间3": "2012 年",
+   "数字4": "25.40%",
+   "时间4": "2021 年"
+  },
+  "slots_p2": {
+   "题目相关词": "health literacy"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "健康素养"
+  },
+  "slots_p3": {
+   "题目相关词": "health literacy"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "健康素养"
+  }
+ },
+ "2024": {
+  "title": "劳动实践课学生主要收获调查",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_campus",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "the benefits students gained from labor practice courses",
+   "事物1": "Gaining relevant knowledge",
+   "百分比1": "91.3%",
+   "事物2": "improving practical ability",
+   "百分比2": "84.8%",
+   "事物3": "obtaining cheerful moods",
+   "百分比3": "54.4%",
+   "事物4": "enhancing cooperative ability",
+   "百分比4": "32.6%",
+   "事物5": "other gains",
+   "百分比5": "a still smaller share"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "学生从劳动实践课中得到的收获",
+   "事物1": "获得相关知识",
+   "百分比1": "91.3%",
+   "事物2": "提升实践能力",
+   "百分比2": "84.8%",
+   "事物3": "获得愉悦心情",
+   "百分比3": "54.4%",
+   "事物4": "增强合作能力",
+   "百分比4": "32.6%",
+   "事物5": "其他收获",
+   "百分比5": "更小的比例",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "labor practice courses"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "劳动实践课"
+  },
+  "slots_p3": {
+   "题目相关词": "labor practice courses"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "劳动实践课"
+  }
+ },
+ "2025": {
+  "title": "社区老年人主要日常休闲活动",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_sports",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "the leisure activities of the elderly",
+   "事物1": "Watching television",
+   "百分比1": "90.8%",
+   "事物2": "taking walks",
+   "百分比2": "68.3%",
+   "事物3": "planting flowers",
+   "百分比3": "34.7%",
+   "事物4": "reading",
+   "百分比4": "31.8%",
+   "事物5": "playing chess",
+   "百分比5": "18.4%"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "老年人的日常休闲活动",
+   "事物1": "看电视",
+   "百分比1": "90.8%",
+   "事物2": "散步",
+   "百分比2": "68.3%",
+   "事物3": "养花",
+   "百分比3": "34.7%",
+   "事物4": "阅读",
+   "百分比4": "31.8%",
+   "事物5": "下棋",
+   "百分比5": "18.4%",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "the leisure activities of the elderly"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "老年人的休闲活动"
+  },
+  "slots_p3": {
+   "题目相关词": "the leisure activities of the elderly"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "老年人的休闲活动"
+  }
+ },
+ "2026": {
+  "title": "儿童户外活动的益处",
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_campus",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     4
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "chart": "bar",
+   "题目相关词": "the perceived benefits of children's outdoor activities",
+   "事物1": "Satisfying curiosity",
+   "百分比1": "54.6%",
+   "事物2": "enhancing observation skills",
+   "百分比2": "54.5%",
+   "事物3": "improving physical fitness",
+   "百分比3": "37.2%",
+   "事物4": "strengthening parent-child interaction",
+   "百分比4": "33.2%",
+   "事物5": "other benefits",
+   "百分比5": "a still smaller share"
+  },
+  "slots_p1_cn": {
+   "chart": "柱状",
+   "题目相关词": "人们看重的儿童户外活动益处",
+   "事物1": "满足好奇心",
+   "百分比1": "54.6%",
+   "事物2": "促进观察力",
+   "百分比2": "54.5%",
+   "事物3": "强身健体",
+   "百分比3": "37.2%",
+   "事物4": "增强亲子互动",
+   "百分比4": "33.2%",
+   "事物5": "其他益处",
+   "百分比5": "更小的比例",
+   "xx": ""
+  },
+  "slots_p2": {
+   "题目相关词": "outdoor activities"
+  },
+  "slots_p2_cn": {
+   "题目相关词": "户外活动"
+  },
+  "slots_p3": {
+   "题目相关词": "outdoor activities"
+  },
+  "slots_p3_cn": {
+   "题目相关词": "户外活动"
+  }
+ }
+}
