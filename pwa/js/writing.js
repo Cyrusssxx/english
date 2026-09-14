@@ -237,26 +237,56 @@ function wrWordBind() {
     }, true);   // 捕获阶段先执行，stopPropagation 避免与卡片其他点击冲突
 }
 
-/* ==================== 划词高亮批注（408 式荧光笔：选中文本 → 🖍 高亮） ==================== */
-const WR_NOTE_KEY = 'wr_notes_hl_v1';
-let wrNotes = [];          // [{i: 行索引, s: 起, e: 止}]
-let wrSelBar = null;
+/* ==================== 正文划词高亮（4 色荧光笔：选中文字 → 点色块） ==================== */
+const WR_MK_KEY = 'wr_mk_v1';
+const WR_MK_SEL = '.wr-line, .wr-line-cn, .wr-sent-txt, .wr-sent-cn, .wr-note-inline, .wr-note, .wr-tips li, .apply-para, .ap-tpl-en, .ap-tpl-cn';
+let wrMarks = [];              // [{ c: 正文块序号, s: 起, e: 止, k: y/g/b/p }]
+let wrMkMsgTimer = null;
 
-function wrNotesLoad() {
-    try { wrNotes = JSON.parse(localStorage.getItem(WR_NOTE_KEY) || '[]') || []; }
-    catch (e) { wrNotes = []; }
-}
-function wrNotesSave() {
-    try { localStorage.setItem(WR_NOTE_KEY, JSON.stringify(wrNotes)); } catch (e) { /* ignore */ }
-    const c = document.getElementById('wrNoteCount');
-    if (c) c.textContent = wrNotes.length ? `批注 ${wrNotes.length} 处` : '';
-    const b = document.getElementById('wrNoteClear');
-    if (b) b.hidden = !wrNotes.length;
+function wrMkLoad() {
+    try { wrMarks = JSON.parse(localStorage.getItem(WR_MK_KEY) || '[]') || []; }
+    catch (e) { wrMarks = []; }
+    if (!Array.isArray(wrMarks)) wrMarks = [];
+    try { localStorage.removeItem('wr_notes_hl_v1'); } catch (e) { /* 清掉上一版批注残留 */ }
 }
 
-/** 行内全部 Text 节点 → [{node, start, len}]（按文档序，start=行内字符偏移） */
-function wrLineTexts(line) {
-    const tw = document.createTreeWalker(line, NodeFilter.SHOW_TEXT);
+function wrMkSave() {
+    try { localStorage.setItem(WR_MK_KEY, JSON.stringify(wrMarks)); } catch (e) { /* ignore */ }
+    const c = document.getElementById('wrMkCount');
+    if (c) c.textContent = wrMarks.length ? wrMarks.length + ' 处高亮' : '';
+    const b = document.getElementById('wrMkClear');
+    if (b) b.hidden = !wrMarks.length;
+}
+
+function wrMkMsg(t) {
+    const el = document.getElementById('wrMkMsg');
+    if (!el) return;
+    el.textContent = t;
+    clearTimeout(wrMkMsgTimer);
+    wrMkMsgTimer = setTimeout(() => { el.textContent = ''; }, 1800);
+}
+
+/** 可高亮正文块：一次 DFS 收集（命中即收、不再下钻，天然去掉嵌套），按文档序编号 data-mk */
+function wrMkBlocks() {
+    const out = [];
+    (function walk(node) {
+        for (const el of node.children) {
+            if (el.matches(WR_MK_SEL)) { out.push(el); continue; }
+            walk(el);
+        }
+    })(document.body);
+    for (let i = 0; i < out.length; i++) out[i].setAttribute('data-mk', String(i));
+    return out;
+}
+
+function wrMkBlockOf(node) {
+    const el = node && node.nodeType === 3 ? node.parentElement : node;
+    return (el && el.closest) ? el.closest('[data-mk]') : null;
+}
+
+/** 块内全部 Text 节点 → [{node, start, len}]（按文档序，start = 块内字符偏移） */
+function wrMkTexts(el) {
+    const tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
     const out = []; let acc = 0;
     while (tw.nextNode()) {
         const n = tw.currentNode;
@@ -266,8 +296,14 @@ function wrLineTexts(line) {
     return out;
 }
 
-/** 行内偏移 → (node, offset) */
-function wrNodeAt(texts, off) {
+/** (node, offset) → 块内字符偏移 */
+function wrMkOffset(texts, node, off) {
+    for (const t of texts) if (t.node === node) return t.start + off;
+    return null;
+}
+
+/** 块内偏移 → (node, offset) */
+function wrMkAt(texts, off) {
     for (const t of texts) {
         if (off <= t.start + t.len) return { node: t.node, off: off - t.start };
     }
@@ -275,164 +311,113 @@ function wrNodeAt(texts, off) {
     return last ? { node: last.node, off: last.len } : null;
 }
 
-/** 选区 → {line, lineIdx, s, e}；跨行/不在行内返回 null */
-function wrSelRange() {
+function wrMkRange(el, s, e) {
+    const texts = wrMkTexts(el);
+    const a = wrMkAt(texts, s), b = wrMkAt(texts, e);
+    if (!a || !b) return null;
+    if (a.node === b.node && a.off === b.off) return null;
+    const r = document.createRange();
+    r.setStart(a.node, a.off);
+    r.setEnd(b.node, b.off);
+    return r;
+}
+
+/** 当前选区 → { block, i, s, e }；失败时返回 { err } */
+function wrMkSelInfo() {
     const sel = window.getSelection();
-    if (!sel || sel.isCollapsed || !sel.rangeCount) return null;
+    if (!sel || sel.isCollapsed || !sel.rangeCount) return { err: '先选中要标注的文字' };
     const r = sel.getRangeAt(0);
-    const sc = r.startContainer.nodeType === 3 ? r.startContainer.parentElement : r.startContainer;
-    const ec = r.endContainer.nodeType === 3 ? r.endContainer.parentElement : r.endContainer;
-    const line = sc && sc.closest ? sc.closest('.wr-line, .wr-sent') : null;
-    if (!line || !line.contains(ec)) return null;
-    const lines = Array.from(document.querySelectorAll('.wr-line, .wr-sent'));
-    const lineIdx = lines.indexOf(line);
-    if (lineIdx < 0) return null;
-    const texts = wrLineTexts(line);
-    let s = 0, e = line.textContent.length;
-    for (const t of texts) {
-        if (t.node === r.startContainer) { s = t.start + r.startOffset; break; }
-    }
-    for (const t of texts) {
-        if (t.node === r.endContainer) { e = t.start + r.endOffset; break; }
-    }
-    if (e < s) { const x = s; s = e; e = x; }
-    return { line, lineIdx, s, e };
+    const b1 = wrMkBlockOf(r.startContainer), b2 = wrMkBlockOf(r.endContainer);
+    if (!b1 || !b2) return { err: '这块内容暂不支持标注' };
+    if (b1 !== b2) return { err: '一次只能标注同一行内的文字' };
+    const texts = wrMkTexts(b1);
+    const s = wrMkOffset(texts, r.startContainer, r.startOffset);
+    const e = wrMkOffset(texts, r.endContainer, r.endOffset);
+    if (s == null || e == null) return { err: '没能识别这段文字' };
+    if (e <= s) return { err: '先选中要标注的文字' };
+    return { block: b1, i: parseInt(b1.getAttribute('data-mk'), 10), s, e };
 }
 
-/** 高亮/取消高亮当前选区（取消模式：起点落在已有 mark 内则剥除该 mark） */
-function wrApplyNote() {
-    const sr = wrSelRange();
-    if (!sr) return;
-    // 取消模式：起点所在 mark
-    const r = window.getSelection().getRangeAt(0);
-    const sc = r.startContainer.nodeType === 3 ? r.startContainer.parentElement : r.startContainer;
-    const hit = sc && sc.closest ? sc.closest('.note-hl') : null;
-    if (hit) {
-        wrRemoveMark(hit);
-        wrSelBarHide();
-        return;
-    }
-    const texts = wrLineTexts(sr.line);
-    const a = wrNodeAt(texts, sr.s), b = wrNodeAt(texts, sr.e);
-    if (!a || !b || a.node === b.node && a.off === b.off) { wrSelBarHide(); return; }
-    const range = document.createRange();
-    range.setStart(a.node, a.off);
-    range.setEnd(b.node, b.off);
-    const mark = document.createElement('mark');
-    mark.className = 'note-hl';
-    mark.appendChild(range.extractContents());
-    range.insertNode(mark);
-    const idx = wrNotes.length;
-    mark.setAttribute('data-si', String(idx));
-    wrNotes.push({ i: sr.lineIdx, s: sr.s, e: sr.e });
-    wrNotesSave();
-    wrSelBarHide();
-    window.getSelection().removeAllRanges();
+function wrMkUnwrap(mk) {
+    const f = document.createDocumentFragment();
+    while (mk.firstChild) f.appendChild(mk.firstChild);
+    if (mk.parentNode) mk.replaceWith(f);
 }
 
-/** 剥除单个 mark（含其内部 .word 等子元素保留）并同步 store */
-function wrRemoveMark(mark) {
-    const si = parseInt(mark.getAttribute('data-si') || '-1', 10);
-    if (si >= 0) {
-        wrNotes = wrNotes.filter((_, k) => k !== si);
-        // 之后所有 data-si 需前移
-        document.querySelectorAll('.note-hl[data-si]').forEach(m => {
-            const k = parseInt(m.getAttribute('data-si'), 10);
-            if (k > si) m.setAttribute('data-si', String(k - 1));
-        });
-    }
-    const frag = document.createDocumentFragment();
-    while (mark.firstChild) frag.appendChild(mark.firstChild);
-    mark.replaceWith(frag);
-    wrNotesSave();
-}
-
-/** 渲染后恢复全部高亮批注 */
-function wrNotesRestore() {
-    document.querySelectorAll('.note-hl').forEach(m => { const f = document.createDocumentFragment(); while (m.firstChild) f.appendChild(m.firstChild); m.replaceWith(f); });
-    const lines = Array.from(document.querySelectorAll('.wr-line, .wr-sent'));
-    wrNotes.forEach((n, idx) => {
-        const line = lines[n.i];
-        if (!line) return;
-        const texts = wrLineTexts(line);
-        const a = wrNodeAt(texts, n.s), b = wrNodeAt(texts, n.e);
-        if (!a || !b) return;
-        const range = document.createRange();
-        range.setStart(a.node, a.off);
-        range.setEnd(b.node, b.off);
-        const mark = document.createElement('mark');
-        mark.className = 'note-hl';
-        mark.setAttribute('data-si', String(idx));
-        mark.appendChild(range.extractContents());
-        range.insertNode(mark);
+/** 重建单个块内的高亮（先剥旧 mark 再按 store 重画） */
+function wrMkPaint(block, i) {
+    block.querySelectorAll('mark.wr-mk').forEach(wrMkUnwrap);
+    wrMarks.filter(m => m.c === i).sort((a, b) => a.s - b.s).forEach(m => {
+        const r = wrMkRange(block, m.s, m.e);
+        if (!r) return;
+        const mk = document.createElement('mark');
+        mk.className = 'wr-mk wr-mk-' + m.k;
+        mk.title = '选中后点同色可取消，或用「擦除」';
+        try { mk.appendChild(r.extractContents()); r.insertNode(mk); } catch (e) { /* 越界忽略 */ }
     });
-    wrNotesSave();
 }
 
-async function wrClearNotes() {
-    if (!wrNotes.length) return;
-    if (typeof confirmAsync === 'function' && !(await confirmAsync('清除全部划词高亮批注？', { danger: true }))) return;
-    wrNotes = [];
-    try { localStorage.removeItem(WR_NOTE_KEY); } catch (e) { /* ignore */ }
-    document.querySelectorAll('.note-hl').forEach(m => { const f = document.createDocumentFragment(); while (m.firstChild) f.appendChild(m.firstChild); m.replaceWith(f); });
-    wrNotesSave();
+/** 全页重建（渲染后 / 载入时调用） */
+function wrMkRestore() {
+    document.querySelectorAll('mark.wr-mk').forEach(wrMkUnwrap);
+    const blocks = wrMkBlocks();
+    const dirty = {};
+    wrMarks.forEach(m => { dirty[m.c] = 1; });
+    blocks.forEach((b, i) => { if (dirty[i]) wrMkPaint(b, i); });
+    wrMkSave();
 }
 
-/** 选区浮层：mouseup 检测 + 🖍 高亮 / ✖ 取消 两态 */
-function wrSelBarShow(btnText) {
-    wrSelBarHide();
-    const sel = window.getSelection();
-    if (!sel || sel.isCollapsed || !sel.rangeCount) return;
-    const r = sel.getRangeAt(0);
-    const sc = r.startContainer.nodeType === 3 ? r.startContainer.parentElement : r.startContainer;
-    const line = sc && sc.closest ? sc.closest('.wr-line, .wr-sent') : null;
-    if (!line) return;
-    const rect = r.getBoundingClientRect();
-    if (!rect || (!rect.width && !rect.height)) return;
-    const bar = document.createElement('div');
-    bar.className = 'wr-selbar';
-    const btn = document.createElement('button');
-    btn.className = 'wr-selbar-btn';
-    const hit = sc.closest('.note-hl');
-    btn.textContent = hit ? '✖ 取消高亮' : '🖍 高亮';
-    btn.addEventListener('mousedown', e => e.preventDefault());   // 阻止选区丢失
-    btn.addEventListener('click', wrApplyNote);
-    bar.appendChild(btn);
-    document.body.appendChild(bar);
-    wrSelBar = bar;
-    const bw = bar.offsetWidth;
-    let left = rect.left + rect.width / 2 - bw / 2;
-    if (left < 6) left = 6;
-    if (left + bw > document.documentElement.clientWidth - 6) left = document.documentElement.clientWidth - bw - 6;
-    bar.style.left = left + 'px';
-    bar.style.top = Math.max(6, rect.top - bar.offsetHeight - 8) + 'px';
+/** 上色 / 换色 / 再点同色取消 */
+function wrMkApply(k) {
+    const sr = wrMkSelInfo();
+    if (sr.err) { wrMkMsg(sr.err); return; }
+    const same = wrMarks.find(m => m.c === sr.i && m.s === sr.s && m.e === sr.e && m.k === k);
+    if (same) {
+        wrMarks = wrMarks.filter(m => m !== same);
+        wrMkMsg('已取消这处高亮');
+    } else {
+        wrMarks = wrMarks.filter(m => !(m.c === sr.i && m.s < sr.e && sr.s < m.e));
+        wrMarks.push({ c: sr.i, s: sr.s, e: sr.e, k });
+        wrMkMsg('已高亮，共 ' + wrMarks.length + ' 处');
+    }
+    wrMkPaint(sr.block, sr.i);
+    wrMkSave();
+    const s = window.getSelection(); if (s) s.removeAllRanges();
 }
 
-function wrSelBarHide() {
-    if (wrSelBar) { wrSelBar.remove(); wrSelBar = null; }
+/** 擦掉选区内的高亮 */
+function wrMkErase() {
+    const sr = wrMkSelInfo();
+    if (sr.err) { wrMkMsg(sr.err); return; }
+    const before = wrMarks.length;
+    wrMarks = wrMarks.filter(m => !(m.c === sr.i && m.s < sr.e && sr.s < m.e));
+    if (wrMarks.length === before) { wrMkMsg('选区内没有高亮'); return; }
+    wrMkPaint(sr.block, sr.i);
+    wrMkSave();
+    wrMkMsg('已擦除');
+    const s = window.getSelection(); if (s) s.removeAllRanges();
 }
 
-function wrNoteBind() {
-    document.addEventListener('mouseup', e => {
-        if (e.target.closest('.wr-selbar')) return;
-        setTimeout(() => {
-            const sel = window.getSelection();
-            if (!sel || sel.isCollapsed || !sel.rangeCount) { wrSelBarHide(); return; }
-            const r = sel.getRangeAt(0);
-            const sc = r.startContainer.nodeType === 3 ? r.startContainer.parentElement : r.startContainer;
-            if (!sc || !sc.closest('.wr-line, .wr-sent')) { wrSelBarHide(); return; }
-            wrSelBarShow();
-        }, 10);
-    });
-    document.addEventListener('click', e => {
-        if (!e.target.closest('.wr-selbar')) wrSelBarHide();
-    });
-    // 点击已高亮文字（非 .word 区域）→ 取消该处高亮
-    document.addEventListener('click', e => {
-        if (e.target.closest('.word')) return;
-        const m = e.target.closest('.note-hl');
-        if (m) wrRemoveMark(m);
-    });
+async function wrMkClearAll() {
+    if (!wrMarks.length) return;
+    if (typeof confirmAsync === 'function' && !(await confirmAsync('清除全部划词高亮？', { danger: true }))) return;
+    wrMarks = [];
+    try { localStorage.removeItem(WR_MK_KEY); } catch (e) { /* ignore */ }
+    document.querySelectorAll('mark.wr-mk').forEach(wrMkUnwrap);
+    wrMkSave();
+    wrMkMsg('已清除全部');
+}
+
+/** 把导航栏高度写进 --nav-h（吸顶工具条用）；量不到时回退 56px */
+function wrNavHVar() {
+    const h = wrNavH();
+    document.documentElement.style.setProperty('--nav-h', (h >= 20 ? h : 56) + 'px');
+}
+
+/** 数字换字体：Georgia 是「旧式数字」（3/4/5/7/9 掉基线），包 span 走衬线 lining 数字 */
+function wrNumWrap(html) {
+    if (!html) return html;
+    return html.replace(/(^|>)([^<]*)/g, (m, pre, seg) => pre + seg.replace(/\d+(?:[.,:]\d+)*%?/g, d => '<span class="wr-num">' + d + '</span>'));
 }
 
 /* ==================== ✨ 精句弹窗：本卡有用词组/短句（英中对照） ==================== */
@@ -440,8 +425,11 @@ function wrShowPhrases(secId) {
     const sec = (WR.sections || []).find(s => s.id === secId);
     if (!sec || !(sec.phrases || []).length) return;
     document.getElementById('wrPopTitle').textContent = (sec.title || '') + ' · 精句词组';
-    document.getElementById('wrPopBody').innerHTML = sec.phrases.map(p =>
-        `<div class="wr-pop-row"><div class="wr-pop-en">${wrAnnotate(p[0])}</div><div class="wr-pop-cn">${wrEsc(p[1])}</div></div>`).join('');
+    const sub = document.getElementById('wrPopSub');
+    if (sub) sub.textContent = '共 ' + sec.phrases.length + ' 条 · 点英文里的单词可查释义';
+    document.getElementById('wrPopBody').innerHTML = wrNumWrap(sec.phrases.map((p, i) =>
+        `<div class="wr-pop-row"><span class="wr-pop-no">${i + 1}</span><div class="wr-pop-txt">` +
+        `<div class="wr-pop-en">${wrAnnotate(p[0])}</div><div class="wr-pop-cn">${wrEsc(p[1])}</div></div></div>`).join(''));
     document.getElementById('wrPopMask').hidden = false;
     document.getElementById('wrPop').hidden = false;
 }
@@ -465,14 +453,15 @@ function wrRenderCards() {
     for (const s of WR.sections || []) {
         (groups[s.group] || (groups[s.group] = [])).push(s);
     }
-    document.getElementById('wrContent').innerHTML = Object.keys(groups).map((gname, gi) => `
+    const html = Object.keys(groups).map((gname, gi) => `
         <h2 class="wr-h2" id="wrGroup${gi}">${wrEsc(gname)}</h2>
         ${groups[gname].map(wrSectionCard).join('')}`).join('');
+    document.getElementById('wrContent').innerHTML = wrNumWrap(html);
     for (const id of ('wrStructState wrStructNavState').split(' ')) {
         const st = document.getElementById(id);
         if (st) st.textContent = wrStructOn() ? '开' : '关';
     }
-    wrNotesRestore();
+    wrMkRestore();
 }
 
 /* ==================== 模板正文：按句拆行（英文行 + 对齐的中文行） ==================== */
@@ -573,7 +562,7 @@ function wrApplyHtml(year, ap) {
     const bodyHtml = renderApplyBody(mk) || `<div class="apply-en">${wrEsc(ap.apply_en || '')}</div>`;
     const tips = (ap.tips || []).map(x => `<li>${wrEsc(x)}</li>`).join('');
 
-    return `<div class="wr-apply-detail">
+    return wrNumWrap(`<div class="wr-apply-detail">
         <div class="wr-apply-title">${wrEsc(year)} 真题套用示范${ap.title ? ' · ' + wrEsc(ap.title) : ''}</div>
         <div class="apply-en">${bodyHtml}</div>
         ${ap.apply_cn ? `<div class="apply-cn">${renderApplyCn(mk, ap.apply_cn)}</div>` : ''}
@@ -581,7 +570,7 @@ function wrApplyHtml(year, ap) {
         ${tips ? `<div class="ap-sub">📝 套用建议</div><ul class="apply-tips">${tips}</ul>` : ''}
         ${renderSlotPhrases((mk && mk.slot_phrases) || ap.slot_phrases)}
         ${renderKeyPhrases((mk && mk.key_phrases) || ap.key_phrases)}
-    </div>`;
+    </div>`);
 }
 
 /** 展开/收起某年份的套用示范 */
@@ -717,7 +706,7 @@ async function initWriting() {
         return;
     }
     await Promise.all([loadDict(), loadPhrases()]);   // 离线词典 + 真题词组表（划词查词，词组优先）
-    wrNotesLoad();
+    wrMkLoad();                       // 划词高亮数据
     wrInitVocab();                                     // 生词本集合（弹卡按钮状态）
     // 真题套用示范（按年份汇总，可空）
     let APPLY = {};
@@ -769,13 +758,14 @@ async function initWriting() {
     // 模板分区（按 group 分组）
     wrRenderCards();
     wrTocBuild();
+    wrNavHVar();
+    window.addEventListener('resize', wrNavHVar);
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrWordBind(); wrNoteBind(); initWriting(); });
+    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrWordBind(); initWriting(); });
 } else {
     wrTocBind();
     wrWordBind();
-    wrNoteBind();
     initWriting();
 }

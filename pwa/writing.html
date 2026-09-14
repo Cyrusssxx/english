@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
     <link rel="icon" type="image/png" href="icons/icon-192.png">
     <link rel="apple-touch-icon" href="icons/icon-192.png">
-    <script>if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <script>document.documentElement.classList.add('wr-zoom');if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -56,11 +56,19 @@
             <h1 class="wr-title" id="wrTitle">作文模板库</h1>
             <p class="wr-desc" id="wrDesc"></p>
             <div class="wr-rules" id="wrRules"></div>
-            <div class="wr-hl-bar">
-                <span class="wr-hl-tip">✍ <b>选中文字</b>即可高亮批注（荧光笔，可取消）；点词可<b>划词查词</b>（词组优先）；主干可选 <b>浅黄高亮</b></span>
+            <div class="wr-hl-bar" id="wrHlBar">
+                <span class="wr-hl-tip">🖍 <b>选中</b>正文任意文字 → 点色块即高亮（再点同色＝取消）；点单词可查词</span>
+                <span class="wr-hl-dots">
+                    <button type="button" class="wr-hl-dot d-y" title="黄色高亮" onmousedown="event.preventDefault()" onclick="wrMkApply('y')"></button>
+                    <button type="button" class="wr-hl-dot d-g" title="绿色高亮" onmousedown="event.preventDefault()" onclick="wrMkApply('g')"></button>
+                    <button type="button" class="wr-hl-dot d-b" title="蓝色高亮" onmousedown="event.preventDefault()" onclick="wrMkApply('b')"></button>
+                    <button type="button" class="wr-hl-dot d-p" title="粉色高亮" onmousedown="event.preventDefault()" onclick="wrMkApply('p')"></button>
+                </span>
+                <button type="button" class="wr-hl-erase" onmousedown="event.preventDefault()" onclick="wrMkErase()">🧽 擦除</button>
+                <span class="wr-hl-msg" id="wrMkMsg"></span>
+                <span class="wr-hl-count" id="wrMkCount"></span>
+                <button type="button" class="wr-hl-clear" id="wrMkClear" onclick="wrMkClearAll()" hidden>清除全部</button>
                 <button class="wr-struct-btn" id="wrStructBtn" onclick="wrToggleStruct()">主干 <span id="wrStructState">开</span></button>
-                <span class="wr-hl-count" id="wrNoteCount"></span>
-                <button class="wr-hl-clear" id="wrNoteClear" onclick="wrClearNotes()" hidden>清除批注</button>
             </div>
 
             <!-- 图表适配表 -->
@@ -86,8 +94,11 @@
     <div class="wr-pop-mask" id="wrPopMask" hidden onclick="wrClosePhrases()"></div>
     <div class="wr-pop" id="wrPop" hidden role="dialog" aria-modal="true">
         <div class="wr-pop-head">
-            <span class="wr-pop-title" id="wrPopTitle"></span>
-            <button class="wr-pop-close" onclick="wrClosePhrases()" title="关闭">✕</button>
+            <span class="wr-pop-head-txt">
+                <span class="wr-pop-title" id="wrPopTitle"></span>
+                <span class="wr-pop-sub" id="wrPopSub"></span>
+            </span>
+            <button class="wr-pop-close" onclick="wrClosePhrases()" title="关闭 (Esc)">✕</button>
         </div>
         <div class="wr-pop-body" id="wrPopBody"></div>
     </div>
