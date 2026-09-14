@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>选项高频近义词 - 英语真题精翻</title>
+    <title>近义词 · 熟词短语 - 英语真题精翻</title>
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#0d9488">
     <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
@@ -19,7 +19,7 @@
         .map-h { font-size: 1.12rem; margin: 0 0 14px; padding-left: 12px; border-left: 5px solid var(--primary); color: var(--text); }
         .map-intro {
             color: var(--text-light); font-size: 0.92rem; line-height: 1.7;
-            background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+            background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
             padding: 12px 16px; margin: 0 0 16px;
         }
         .nm-grid {
@@ -29,7 +29,7 @@
             align-items: start;
         }
         .nm-card {
-            background: var(--card);
+            background: var(--card-bg);
             border: 1px solid var(--border);
             border-top: 4px solid var(--c);
             border-radius: 12px;
@@ -57,7 +57,7 @@
         .mm-clear-btn {
             font: inherit; font-size: .82rem; cursor: pointer;
             padding: 5px 12px; border-radius: 8px;
-            border: 1px solid var(--border); background: var(--card); color: var(--text);
+            border: 1px solid var(--border); background: var(--card-bg); color: var(--text);
         }
         .mm-clear-btn:hover { border-color: var(--primary); color: var(--primary); }
     </style>
@@ -69,14 +69,13 @@
             <div class="nav-links">
                 <a href="index.html" class="nav-link">真题文章</a>
                 <a href="study.html" class="nav-link">背单词</a>
-                <a href="vocab.html" class="nav-link">单词本</a>
                 <a href="en1.html" class="nav-link">英语一阅读</a>
                 <a href="mindmap.html" class="nav-link">方法导图</a>
-                <a href="nearmap.html" class="nav-link active">近义词</a>
+                <a href="nearmap.html" class="nav-link active">近义词·短语</a>
                 <a href="wordnotes.html" class="nav-link">熟词僻义</a>
-                <a href="phrasebook.html" class="nav-link">熟词短语</a>
-                <a href="writing.html" class="nav-link">作文模板</a>
-                <a href="mistakes.html" class="nav-link">错题本</a>
+                <a href="writing.html" class="nav-link">大作文</a>
+                <a href="smallwriting.html" class="nav-link">小作文</a>
+                <a href="recite.html" class="nav-link">速记页</a>
                 <a href="stats.html" class="nav-link">统计</a>
             </div>
             <div class="nav-tools">
@@ -88,20 +87,56 @@
     </nav>
 
     <main class="mm-page">
-        <h1 class="mm-page-title">近义词 / 短语导图</h1>
-        <p class="scroll-hint">
-            <b>① 选项高频近义词</b>：36 年真题（英二 2007–2026 + 英一 2010–2025）阅读 / 完形 / 新题型<b>选项</b>里的高频词与短语，按意思相近成簇，词频 = 在选项文本中出现次数。<br>
-            <b>② 写作句式 · 同义替换</b>：2010–2026 英语二大作文「真题套用示范」里的关键句型，按<b>写作功能</b>成簇（上升 / 升降对比 / 占比分布 / 归因 / 意义 / 建议…），尾部数字为该句型的出现届数——数字越大越万能。
-            同批句型也已收录进「<b>熟词短语</b>」页的「写作句式」类（含例句与中文译文）。
-        </p>
-        <div class="mm-tools">
-            <span class="mm-tools-tip">点任意条目即高亮标记 · 再点取消</span>
-            <button type="button" class="mm-clear-btn" onclick="clearHighlights()">清除高亮</button>
+        <h1 class="mm-page-title">近义词 · 熟词短语</h1>
+
+        <div class="vw-bar">
+            <button type="button" class="vw-btn on" data-v="near">① 近义词地图</button>
+            <button type="button" class="vw-btn" data-v="phrase">② 熟词短语</button>
         </div>
-        <div id="mmContent"></div>
+
+        <section id="viewNear">
+            <p class="scroll-hint">
+                <b>选项高频近义词</b>：36 年真题（英二 2007–2026 + 英一 2010–2025）阅读 / 完形 / 新题型<b>选项</b>里的高频词与短语，按意思相近成簇，词频 = 在选项文本中出现次数。
+                做选择时同簇词先想清各自侧重：如 reduce 是减少、decline 是下降、ease 是缓解。
+            </p>
+            <div class="mm-tools">
+                <span class="mm-tools-tip">点任意条目即高亮标记 · 再点取消</span>
+                <button type="button" class="mm-clear-btn" onclick="clearHighlights()">清除高亮</button>
+            </div>
+            <div id="mmContent"></div>
+        </section>
+
+        <section id="viewPhrase" hidden>
+            <p class="wn-hint">
+                <b>熟词短语</b>：由<b>熟词构成、且字面义 ≠ 实际义</b>的真题短语（阅读 / 完形 / 新题型 / 翻译全覆盖），按<b>出处文章主题</b>分成 5 类。<br>
+                <b>释义</b>为该短语在真题句中的实际含义，<b>原句</b>即出处（句下为官方译文与来源）。译文只采信「英语二 2010+」的可靠逐句译文。
+            </p>
+            <div class="wn-bar" id="phYears"></div>
+            <input id="phSearch" class="wn-search" type="search" placeholder="搜索短语 / 释义（如 bull run、破产）">
+            <div class="wn-count" id="phCount"></div>
+            <div id="phContent"><p style="color:var(--text-light)">加载中…</p></div>
+        </section>
     </main>
 
     <script src="js/common.js"></script>
     <script src="js/nearmap.js"></script>
+    <script src="js/phrasebook.js"></script>
+    <script>
+        /* 近义词 / 熟词短语 合并在同一页，顶部按钮切换（记住上次的选择） */
+        (function () {
+            var KEY = 'nm_view_v1';
+            var btns = [].slice.call(document.querySelectorAll('.vw-btn'));
+            function show(v) {
+                document.getElementById('viewNear').hidden = v !== 'near';
+                document.getElementById('viewPhrase').hidden = v !== 'phrase';
+                btns.forEach(function (b) { b.classList.toggle('on', b.dataset.v === v); });
+                try { localStorage.setItem(KEY, v); } catch (e) { /* ignore */ }
+            }
+            btns.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.v); }); });
+            var saved = 'near';
+            try { saved = localStorage.getItem(KEY) || 'near'; } catch (e) { /* ignore */ }
+            show(saved === 'phrase' ? 'phrase' : 'near');
+        })();
+    </script>
 </body>
 </html>

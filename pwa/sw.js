@@ -2,7 +2,7 @@
  * 预缓存全部页面/样式/脚本/题库/图标，安装后完全离线可用。
  * 升级题库或代码后：CACHE_VER 会随资源内容自动变化，客户端自动换新缓存。
  */
-const CACHE_VER = 'en2-72b95ef8';
+const CACHE_VER = 'en2-40818581';
 
 const PRECACHE = [
     'index.html',
@@ -15,9 +15,9 @@ const PRECACHE = [
     'mindmap.html',
     'nearmap.html',
     'wordnotes.html',
-    'phrasebook.html',
     'stats.html',
     'writing.html',
+    'smallwriting.html',
     'recite.html',
     'js/mindmap.js',
     'data/mindmap.json',
@@ -29,6 +29,8 @@ const PRECACHE = [
     'js/stats.js',
     'data/topic_map.json',
     'js/writing.js',
+    'js/smallwriting.js',
+    'data/small_writing.json',
     'data/writing_templates.json',
     'data/writing_apply.json',
     'data/writing_patterns.json',

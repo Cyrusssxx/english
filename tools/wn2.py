@@ -353,7 +353,7 @@ def cmd_build():
                   ensure_ascii=False, indent=1)
         print('写入 pwa/data/phrasebook.json：%d 条 / %d 类（缺失 %s）' % (
             sum(len(v) for v in groups.values()), len(cats), miss))
-        # 重建后重挂「写作句式」交叉索引（否则会被本次覆盖）
+        # 重建后清掉模板相关类（2026-09-15 起模板内容不再进词汇页，此调用为清理）
         try:
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
             import build_writing_patterns as _bwp

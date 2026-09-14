@@ -370,7 +370,7 @@ function renderKeyPhrases(list) {
         + '</div>').join('');
     return '<div class="ap-sub2">🔑 模板句型'
         + '<span class="ap-sub2-tip">本篇真正用到的模板句（{{ }} 是留给题目的槽位）'
-        + '<a class="ap-xref" href="phrasebook.html">熟词短语</a>'
+        + '<a class="ap-xref" href="nearmap.html">近义词·短语</a>'
         + '<a class="ap-xref" href="nearmap.html">近义词</a></span></div>'
         + '<div class="ap-tpls">' + rows + '</div>';
 }

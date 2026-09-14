@@ -1,0 +1,1680 @@
+{
+ "meta": {
+  "title": "小作文（应用文）功能句库",
+  "desc": "英语二 A 节 · 应用文（书信 / 通知），约 100 词。下面按「第几句」收集了可直接套用的功能句；{{ }} 包住的是按题目替换的槽位，词句本身不要动。",
+  "note": "数据源：考研英语小作文功能句全集（用户提供）。第 1、5 步的称呼与落款原文未含，为本站补充。"
+ },
+ "steps": [
+  {
+   "no": 1,
+   "name": "称呼（补充，原文未含）",
+   "body": "Dear Sir or Madam,（不认识对方）／ Dear Bob,（认识）／ Dear Mr. Smith,。顶格写，后面<b>用逗号</b>。"
+  },
+  {
+   "no": 2,
+   "name": "第一段（2 句，约 25 词）",
+   "body": "首句<b>问候 / 自我介绍</b>（I hope this message finds you well.…）＋ 第二句<b>表明来意</b>（I am writing to…）。"
+  },
+  {
+   "no": 3,
+   "name": "第二段（2~4 句，约 55 词）",
+   "body": "先用<b>通用首句</b>引出（To be more specific…），再按<b>信件类型</b>挑 2~3 句展开。这一段的句子可以跨类型混用。"
+  },
+  {
+   "no": 4,
+   "name": "第三段（1~2 句，约 20 词）",
+   "body": "客套收尾 / 期待回复（I would appreciate it very much if…）。"
+  },
+  {
+   "no": 5,
+   "name": "落款（补充，原文未含）",
+   "body": "Yours sincerely,（正式）／ Best wishes,（朋友）＋ 换行写题目给的名字（Li Ming）。"
+  }
+ ],
+ "study": "先自己写：拿功能句对着题目写一遍（写错也没关系），写完再让 AI 按题目要求改。越少依赖 AI，你越强。",
+ "notes": [
+  {
+   "part": 1,
+   "slot": "第一段第二句功能句挑选",
+   "text": "第一段也可以写三句，大家可以根据自己积累的功能句配合题目自行选择\\~"
+  },
+  {
+   "part": 2,
+   "slot": "第二段第一句功能句挑选",
+   "text": "小作文第二段及其灵活，考察的很多都是综合类，你可能第二段从建议类选2句，从祝贺类选1句这种。而不是死盯着某个类去只用这里面的功能句。"
+  },
+  {
+   "part": 2,
+   "slot": "第二段第二句功能句挑选",
+   "text": "难道第二段第二句就一定写在第二句吗？也可以写在第三句第四句！大家只需要把 First、what’s more 这种前缀换一换就好了！"
+  }
+ ],
+ "placeholders": [
+  [
+   "ving",
+   "动词ing形式，比如 putting",
+   "First and foremost, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}."
+  ],
+  [
+   "detail",
+   "题目相关短语或者词",
+   "First and foremost, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}."
+  ],
+  [
+   "action",
+   "建议行动，动词短语",
+   "At this stage, it would be wise for you to {{action}} in terms of {{topic}}, as this will help you better understand {{detail}}."
+  ],
+  [
+   "task",
+   "要做的事",
+   "Furthermore, there is no denying that it is of great necessity for you to {{task}}."
+  ],
+  [
+   "benefit",
+   "好处是什么",
+   "Last but not least, it is advisable for you to {{task}}. Only in this way can you truly {{benefit}}."
+  ],
+  [
+   "join",
+   "受邀行动，比如 take part in",
+   "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}."
+  ],
+  [
+   "gain",
+   "参加收获",
+   "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}."
+  ],
+  [
+   "time place",
+   "时间地点信息",
+   "More specifically, your participation in {{topic}} at {{time place}} would be greatly appreciated, as it will enable you to {{gain}}."
+  ],
+  [
+   "quality",
+   "邀请相关能力或品质",
+   "What is more, taking this chance to {{task}} in {{topic}} will significantly enhance {{quality}}."
+  ],
+  [
+   "benefit1",
+   "好处之一",
+   "Taken together, your involvement in {{topic}} will not only {{benefit1}} but also {{benefit2}}."
+  ],
+  [
+   "benefit2",
+   "好处之二",
+   "Taken together, your involvement in {{topic}} will not only {{benefit1}} but also {{benefit2}}."
+  ],
+  [
+   "fault",
+   "过失行为",
+   "At this point, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}."
+  ],
+  [
+   "impact",
+   "产生的影响",
+   "At this point, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}."
+  ],
+  [
+   "cause",
+   "客观原因",
+   "Although {{cause}} partly explains why this happened, the main responsibility still lies with me."
+  ],
+  [
+   "reason",
+   "主观原因，例如 proper planning",
+   "Instead of simply blaming {{cause}}, I must acknowledge my lack of {{reason}} in dealing with {{topic}}."
+  ],
+  [
+   "should",
+   "本应做到的事",
+   "In retrospect, if I had {{should}} when handling {{topic}}, the situation would not have become so serious."
+  ],
+  [
+   "achievement",
+   "取得的成就",
+   "As far as {{topic}} is concerned, your success in {{achievement}} is truly impressive and inspiring."
+  ],
+  [
+   "performance",
+   "具体表现",
+   "In relation to {{topic}}, your ability to {{performance}} strongly confirms your {{quality}}."
+  ],
+  [
+   "effort",
+   "付出或过程",
+   "With such a remarkable outcome in {{topic}}, it is evident that you have made persistent efforts in {{effort}}."
+  ],
+  [
+   "audience",
+   "受众对象",
+   "At this point, it is fair to say that your achievement in {{topic}} has set a good example for {{audience}}."
+  ],
+  [
+   "habit",
+   "良好习惯",
+   "Moreover, it is your habit of {{habit}} in {{topic}} that lays a solid foundation for such an achievement."
+  ],
+  [
+   "persistence",
+   "长期坚持的行为",
+   "In addition, your persistence in {{persistence}} regarding {{topic}} has turned difficulties into opportunities."
+  ],
+  [
+   "behavior",
+   "积极行为",
+   "What is more, your readiness to {{behavior}} whenever {{topic}} is involved has greatly contributed to this outcome."
+  ],
+  [
+   "approach",
+   "具体做法",
+   "Besides, the way you {{approach}} in {{topic}} demonstrates a mature attitude towards {{value}}."
+  ],
+  [
+   "value",
+   "相关价值",
+   "Besides, the way you {{approach}} in {{topic}} demonstrates a mature attitude towards {{value}}."
+  ],
+  [
+   "duty",
+   "其他任务或责任",
+   "Furthermore, your ability to balance {{topic}} with {{duty}} shows impressive self-discipline."
+  ],
+  [
+   "next step",
+   "未来行动",
+   "Last but not least, this achievement in {{topic}} will surely encourage you to {{next step}}, helping you reach {{goal}}."
+  ],
+  [
+   "goal",
+   "下一阶段目标",
+   "Last but not least, this achievement in {{topic}} will surely encourage you to {{next step}}, helping you reach {{goal}}."
+  ],
+  [
+   "subject",
+   "介绍对象或概念",
+   "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}."
+  ],
+  [
+   "feature",
+   "核心特点",
+   "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}."
+  ],
+  [
+   "definition",
+   "概括性定义",
+   "In essence, {{topic}} can be understood as {{definition}}, with a special focus on {{focus}}."
+  ],
+  [
+   "focus",
+   "重点方面",
+   "In essence, {{topic}} can be understood as {{definition}}, with a special focus on {{focus}}."
+  ],
+  [
+   "function",
+   "功能或作用",
+   "As a whole, {{topic}} serves as {{function}}, providing {{audience}} with {{benefit}}."
+  ],
+  [
+   "part1",
+   "要素 1",
+   "In terms of its basic nature, {{topic}} combines {{part1}} with {{part2}}, forming a unique pattern."
+  ],
+  [
+   "part2",
+   "要素 2",
+   "In terms of its basic nature, {{topic}} combines {{part1}} with {{part2}}, forming a unique pattern."
+  ],
+  [
+   "content",
+   "主要内容",
+   "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}."
+  ],
+  [
+   "purpose",
+   "总体目标",
+   "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}."
+  ],
+  [
+   "role",
+   "角色定位",
+   "Viewed broadly, {{topic}} functions as {{role}}, playing an important part in {{scene}}."
+  ],
+  [
+   "scene",
+   "应用场景",
+   "Viewed broadly, {{topic}} functions as {{role}}, playing an important part in {{scene}}."
+  ],
+  [
+   "profile",
+   "简要描述",
+   "In its simplest form, {{topic}} can be described as {{profile}}, which distinguishes it from {{contrast}}."
+  ],
+  [
+   "contrast",
+   "对比对象",
+   "In its simplest form, {{topic}} can be described as {{profile}}, which distinguishes it from {{contrast}}."
+  ],
+  [
+   "habit1",
+   "日常习惯 1",
+   "More specifically, in my daily life I usually {{habit1}} and {{habit2}}, which helps me maintain {{advantage}}."
+  ],
+  [
+   "habit2",
+   "日常习惯 2",
+   "More specifically, in my daily life I usually {{habit1}} and {{habit2}}, which helps me maintain {{advantage}}."
+  ],
+  [
+   "advantage",
+   "生活相关优点，如 a balanced and healthy lifestyle",
+   "More specifically, in my daily life I usually {{habit1}} and {{habit2}}, which helps me maintain {{advantage}}."
+  ],
+  [
+   "routine",
+   "作息习惯，如 get up early",
+   "As for my daily routine, I tend to {{routine}} and {{activity}}, which enables me to stay {{state}}."
+  ],
+  [
+   "activity",
+   "学习/锻炼习惯，如 set aside time for regular exercise",
+   "As for my daily routine, I tend to {{routine}} and {{activity}}, which enables me to stay {{state}}."
+  ],
+  [
+   "state",
+   "状态，如 energetic and focused",
+   "As for my daily routine, I tend to {{routine}} and {{activity}}, which enables me to stay {{state}}."
+  ],
+  [
+   "aspect1",
+   "方面 1",
+   "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}."
+  ],
+  [
+   "gain1",
+   "具体收获 1",
+   "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}."
+  ],
+  [
+   "aspect2",
+   "方面 2",
+   "Moreover, its emphasis on {{aspect2}} helps to {{effect}}, which is especially valuable for {{audience}}."
+  ],
+  [
+   "effect",
+   "具体作用 2",
+   "Moreover, its emphasis on {{aspect2}} helps to {{effect}}, which is especially valuable for {{audience}}."
+  ],
+  [
+   "content1",
+   "内容 1",
+   "In addition, by integrating {{content1}} with {{content2}}, {{topic}} provides a comprehensive way to {{effect}}."
+  ],
+  [
+   "content2",
+   "内容 2",
+   "In addition, by integrating {{content1}} with {{content2}}, {{topic}} provides a comprehensive way to {{effect}}."
+  ],
+  [
+   "highlight",
+   "亮点设计",
+   "What is more, the design of {{topic}} highlights {{highlight}}, making it easier to {{benefit}}."
+  ],
+  [
+   "scene1",
+   "应用场景 1",
+   "Besides, its flexible form allows it to be adapted to {{scene1}} and {{scene2}} without much difficulty."
+  ],
+  [
+   "scene2",
+   "应用场景 2",
+   "Besides, its flexible form allows it to be adapted to {{scene1}} and {{scene2}} without much difficulty."
+  ],
+  [
+   "improve",
+   "提升点",
+   "Furthermore, the clear structure of {{topic}} makes it convenient for users to {{action}}, improving {{improve}}."
+  ],
+  [
+   "need",
+   "目标需求",
+   "Taken together, these features make {{topic}} an ideal choice for {{audience}} who wish to {{need}}."
+  ],
+  [
+   "beneficiary",
+   "受益者",
+   "As a result, {{topic}} serves as a reliable tool for {{purpose}}, bringing long term benefits to {{beneficiary}}."
+  ],
+  [
+   "impression",
+   "表面印象",
+   "Viewed in this light, {{topic}} is far more than {{impression}}, but a meaningful approach to {{value}}."
+  ],
+  [
+   "field",
+   "适用领域",
+   "Altogether, {{topic}} stands out for {{advantage}}, making it highly valuable in {{field}}."
+  ],
+  [
+   "time",
+   "时间信息",
+   "First, {{time}} has been set as the official time for {{topic}}, and all {{audience}} are required to attend on time."
+  ],
+  [
+   "place",
+   "地点信息",
+   "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}."
+  ],
+  [
+   "time1",
+   "起始时间",
+   "In terms of schedule, {{topic}} is arranged from {{time1}} to {{time2}}, during which {{session}} will be carried out."
+  ],
+  [
+   "time2",
+   "结束时间",
+   "In terms of schedule, {{topic}} is arranged from {{time1}} to {{time2}}, during which {{session}} will be carried out."
+  ],
+  [
+   "session",
+   "主要环节",
+   "In terms of schedule, {{topic}} is arranged from {{time1}} to {{time2}}, during which {{session}} will be carried out."
+  ],
+  [
+   "theme",
+   "活动主题或内容",
+   "With regard to the theme, {{topic}} will focus on {{theme}}, aiming to address {{problem}}."
+  ],
+  [
+   "problem",
+   "目标问题",
+   "With regard to the theme, {{topic}} will focus on {{theme}}, aiming to address {{problem}}."
+  ],
+  [
+   "organizer",
+   "主办单位",
+   "From the organizational point of view, {{topic}} is jointly held by {{organizer}} and {{coorganizer}}, ensuring smooth coordination."
+  ],
+  [
+   "coorganizer",
+   "协办单位",
+   "From the organizational point of view, {{topic}} is jointly held by {{organizer}} and {{coorganizer}}, ensuring smooth coordination."
+  ],
+  [
+   "content3",
+   "内容 3",
+   "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, forming a clear structure."
+  ],
+  [
+   "form1",
+   "形式 1",
+   "Moreover, {{topic}} will be conducted in the form of {{form1}}, followed by {{form2}}, so as to enhance {{effect}}."
+  ],
+  [
+   "form2",
+   "形式 2",
+   "Moreover, {{topic}} will be conducted in the form of {{form1}}, followed by {{form2}}, so as to enhance {{effect}}."
+  ],
+  [
+   "session1",
+   "重点环节 1",
+   "In addition, key parts such as {{session1}} and {{session2}} will be highlighted to ensure substantial gains for {{audience}}."
+  ],
+  [
+   "session2",
+   "重点环节 2",
+   "In addition, key parts such as {{session1}} and {{session2}} will be highlighted to ensure substantial gains for {{audience}}."
+  ],
+  [
+   "arrangement",
+   "具体安排，如 group discussion or Q and A",
+   "Besides, during {{topic}},{{arrangement}} will be arranged to encourage active participation."
+  ],
+  [
+   "requirement",
+   "注意事项或要求",
+   "Last but not least, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way."
+  ],
+  [
+   "item",
+   "携带物品或准备事项",
+   "Last but not least, participants should {{item}}, which is necessary for the smooth progress of {{topic}}."
+  ],
+  [
+   "rule",
+   "纪律或安全要求",
+   "Last but not least, please pay special attention to {{rule}}, so as to maintain a safe and tidy environment for {{topic}}."
+  ],
+  [
+   "channel",
+   "通知渠道",
+   "From now on, any changes related to {{topic}} will be updated through {{channel}}, and all {{audience}} should keep informed in time."
+  ],
+  [
+   "expect",
+   "期待动作",
+   "I would appreciate it very much if you could {{expect}} by {{deadline}}."
+  ],
+  [
+   "deadline",
+   "时间节点",
+   "I would appreciate it very much if you could {{expect}} by {{deadline}}."
+  ],
+  [
+   "outcome",
+   "期待成效",
+   "I sincerely hope that you will make full use of this opportunity to {{outcome}}."
+  ],
+  [
+   "change",
+   "积极变化",
+   "With joint efforts, {{topic}} is sure to bring about {{change}}."
+  ]
+ ],
+ "banks": [
+  {
+   "id": "p1s1",
+   "part": 1,
+   "type": "通用",
+   "label": "第一段 · 首句（问候 / 自我介绍）",
+   "items": [
+    {
+     "en": "I hope this message finds you well.",
+     "cn": "希望你一切安好。"
+    },
+    {
+     "en": "I am so delighted to receive your letter.",
+     "cn": "非常高兴收到你的来信。"
+    },
+    {
+     "en": "It is a great pleasure for me to write this letter to you.",
+     "cn": "能给你写这封信，我感到十分高兴。"
+    },
+    {
+     "en": "I hope everything is going smoothly with your study and life.",
+     "cn": "希望你的学习和生活一切顺利。"
+    },
+    {
+     "en": "I hope you are doing well these days.",
+     "cn": "希望你最近一切顺利。"
+    },
+    {
+     "en": "It is really nice to hear from you again.",
+     "cn": "很高兴再次收到你的消息。"
+    },
+    {
+     "en": "I hope you are enjoying good health and a pleasant life.",
+     "cn": "希望你身体健康，生活愉快。"
+    },
+    {
+     "en": "I hope everything is going well on your side.",
+     "cn": "希望你那边一切顺利。"
+    },
+    {
+     "en": "I feel honored to be able to write to you today.",
+     "cn": "今天能够给你写信，我感到很荣幸。"
+    },
+    {
+     "en": "I am truly glad to get in touch with you.",
+     "cn": "能够和你取得联系，我由衷感到高兴。"
+    },
+    {
+     "en": "We greatly appreciate all students for sparing your precious time to pay attention to this notice.",
+     "cn": "我们十分感谢全体同学抽出宝贵时间关注本通知。"
+    },
+    {
+     "en": "Our sincere gratitude goes to you for your willingness to read and comply with the arrangements in this notice.",
+     "cn": "诚挚感谢各位愿意阅读并遵照本通知中的相关安排。"
+    },
+    {
+     "en": "We would like to extend our thanks to every student for sparing your time amid busy schedules to pay attention to this notice.",
+     "cn": "谨向每位同学致谢，感谢大家百忙之中来关注本通知。"
+    },
+    {
+     "en": "I have documented the content of the previous seminar, and the key points of the meeting minutes are listed as follows.",
+     "cn": "我已记录上次课程研讨会的内容，本次会议纪要的核心要点整理如下。"
+    },
+    {
+     "en": "The content of the last graduation project team meeting has been recorded, and the detailed meeting minutes are presented below.",
+     "cn": "我已记录上次毕设项目组会议的内容，具体会议纪要内容如下所示。"
+    },
+    {
+     "en": "I have compiled the content of the previous academic exchange meeting, and the structured meeting minutes are provided as follows.",
+     "cn": "我已整理上次学术交流会的内容，条理化的会议纪要内容详见下文。"
+    }
+   ]
+  },
+  {
+   "id": "p1s2",
+   "part": 1,
+   "type": "通用",
+   "label": "第一段 · 第二句（表明来意）",
+   "items": [
+    {
+     "en": "I am writing to you regarding the matter of {{topic}}.",
+     "cn": "我写信是关于{{topic}}这一事项。",
+     "ex": [
+      {
+       "en": "I am writing to you regarding the matter of my sincere thanks for your warm reception during my stay in the United States and my invitation for you to visit China in due course.",
+       "cn": "我写信是关于两件事：一是对你在我赴美期间热情接待的诚挚感谢，二是诚挚邀请你在方便的时候来中国访问。",
+       "src": "2010 英语二"
+      }
+     ]
+    },
+    {
+     "en": "I am writing to express my sincere gratitude for your help.",
+     "cn": "我写信是为表达我对你帮助的诚挚感谢。"
+    },
+    {
+     "en": "I am writing to invite you to take part in {{topic}}.",
+     "cn": "我写信是邀请你参加{{topic}}。",
+     "ex": [
+      {
+       "en": "I am writing to invite you to take part in our upcoming online meeting about study and campus life at our university.",
+       "cn": "我写信是邀请你参加我们即将举行的，以本校学习和校园生活为主题的线上会议。",
+       "src": "2021 英语二"
+      }
+     ]
+    },
+    {
+     "en": "Please allow me to extend my warmest congratulations to you.",
+     "cn": "请允许我向你致以最诚挚的祝贺。"
+    },
+    {
+     "en": "I am writing on behalf of our class to discuss {{topic}}.",
+     "cn": "我代表我们班给你写信，讨论{{topic}}。",
+     "ex": [
+      {
+       "en": "I am writing on behalf of our class to discuss how we might improve students’ physical condition on campus.",
+       "cn": "我代表我们班给您写信，讨论我们可以如何提升校园内学生的身体素质。",
+       "src": "2014 英语一"
+      }
+     ]
+    },
+    {
+     "en": "With this letter, I would like to share my views on {{topic}}.",
+     "cn": "借此来信，我想与你分享我对{{topic}}的看法。",
+     "ex": [
+      {
+       "en": "With this letter, I would like to share my views on whether you should choose the art exhibition or the robot show this Sunday.",
+       "cn": "借此来信，我想和你分享我对本周日该选择参加艺术展还是机器人展的看法。",
+       "src": "2023 英语二"
+      }
+     ]
+    },
+    {
+     "en": "In order to further promote {{topic}}, our school has decided to issue the following notice.",
+     "cn": "为了进一步推进{{topic}}，学校决定发布如下通知。",
+     "ex": [
+      {
+       "en": "In order to further promote the summer camp for high school students that our university is going to host, our school has decided to issue the following notice.",
+       "cn": "为了进一步推进我校即将举办的高中生夏令营，学校决定发布如下通知。",
+       "src": "2015 英语二"
+      }
+     ]
+    },
+    {
+     "en": "To ensure the smooth implementation of {{topic}}, the following arrangements are hereby announced.",
+     "cn": "为确保{{topic}}顺利开展，现将相关安排通知如下。",
+     "ex": [
+      {
+       "en": "To ensure the smooth implementation of the upcoming campus singing contest, the following arrangements are hereby announced.",
+       "cn": "为确保即将举行的校园歌唱比赛顺利开展，现将相关安排通知如下。",
+       "src": "2020 英语一"
+      }
+     ]
+    },
+    {
+     "en": "To raise students’ awareness of {{topic}}, the school will carry out the following activities.",
+     "cn": "为提升学生对{{topic}}的认识，学校将开展以下活动。",
+     "ex": [
+      {
+       "en": "To raise students’ awareness of campus food festival and traditional Chinese food culture, the school will carry out the following activities.",
+       "cn": "为提升学生对校园美食节及中国传统饮食文化的认识，学校将开展以下活动。",
+       "src": "2022 英语二"
+      }
+     ]
+    },
+    {
+     "en": "The purpose of this letter is to discuss {{topic}} with you in detail.",
+     "cn": "这封信的目的是想与你详细讨论{{topic}}。",
+     "ex": [
+      {
+       "en": "The purpose of this letter is to discuss our survey plan on the protection of old houses in the ancient town with you in detail.",
+       "cn": "这封信的目的是想与你详细讨论我们关于古镇老宅保护调研计划的具体安排。",
+       "src": "2024 英语二"
+      }
+     ]
+    },
+    {
+     "en": "The primary aim of this letter is to offer some suggestions on {{topic}}.",
+     "cn": "本信的首要目的，是就{{topic}}提出若干建议。",
+     "ex": [
+      {
+       "en": "The primary aim of this letter is to offer some suggestions on improving students’ physical condition at our university.",
+       "cn": "本信的首要目的是就如何提升我校学生的身体素质提出若干建议。",
+       "src": "2014 英语一"
+      }
+     ]
+    },
+    {
+     "en": "Through this letter, I would like to call your attention to {{topic}}.",
+     "cn": "借此来信，我想引起你对{{topic}}的重视。",
+     "ex": [
+      {
+       "en": "Through this letter, I would like to call your attention to the current problems with our university library’s services.",
+       "cn": "借此来信，我想引起您对本校图书馆当前服务问题的重视。",
+       "src": "2007 英语一"
+      }
+     ]
+    },
+    {
+     "en": "The central purpose of this letter is to seek your advice on {{topic}}.",
+     "cn": "此信的核心目的，是就{{topic}}向你征求意见。",
+     "ex": [
+      {
+       "en": "The central purpose of this letter is to seek your advice on how I can better adapt to our shared apartment life abroad.",
+       "cn": "此信的核心目的，是就我如何更好地适应今后在国外合租生活向你征求意见。",
+       "src": "2014 英语二"
+      }
+     ]
+    },
+    {
+     "en": "This letter is meant to convey my heartfelt thanks for your support with {{topic}}.",
+     "cn": "这封信旨在对你在{{topic}}方面给予的支持表达由衷感谢。",
+     "ex": [
+      {
+       "en": "This letter is meant to convey my heartfelt thanks for your warm reception during my visit to the United States as a member of the Sino-American cultural exchange program.",
+       "cn": "这封信旨在对我作为中美文化交流项目成员赴美期间你给予的热情接待表达由衷感谢。",
+       "src": "2010 英语二"
+      }
+     ]
+    },
+    {
+     "en": "The purpose of this letter is to extend my sincere gratitude for your help with {{topic}}.",
+     "cn": "本信的目的，是为你在{{topic}}上给予的帮助致以诚挚谢意。",
+     "ex": [
+      {
+       "en": "The purpose of this letter is to extend my sincere gratitude for your constant help with my translation practice, which contributed a lot to my success in the recent contest.",
+       "cn": "本信的目的，是为你在我翻译练习中给予的长期帮助致以诚挚谢意，这对我在近期比赛取得成功起到了重要作用。",
+       "src": "2016 英语二"
+      }
+     ]
+    },
+    {
+     "en": "This letter is intended to offer a sincere apology for the problems caused by {{topic}}.",
+     "cn": "这封信旨在就{{topic}}所带来的问题向你致以诚挚的歉意。",
+     "ex": [
+      {
+       "en": "This letter is intended to offer a sincere apology for the problems caused by my having to cancel my visit to you at the last minute.",
+       "cn": "这封信旨在就在我最后时刻不得不取消对您的拜访所带来的种种问题向您致以诚挚的歉意。",
+       "src": "2018 英语二"
+      }
+     ]
+    },
+    {
+     "en": "In this letter, I would like to explain the reasons behind {{topic}} and ask for your understanding.",
+     "cn": "在信中，我想解释{{topic}}背后的原因，并请求你的理解。",
+     "ex": [
+      {
+       "en": "In this letter, I would like to explain the reasons behind my change of travel plan and ask for your understanding.",
+       "cn": "在信中，我想向您说明我更改行程计划的原因，并请求您的理解。",
+       "src": "2018 英语二"
+      }
+     ]
+    },
+    {
+     "en": "The purpose of this letter is to invite you to take an active part in {{topic}}.",
+     "cn": "本信的目的，是邀请你积极参加{{topic}}。",
+     "ex": [
+      {
+       "en": "The purpose of this letter is to invite you to take an active part in our class charity sale for children in need.",
+       "cn": "本信的目的是邀请你积极参加我们班为贫困儿童举办的义卖活动。",
+       "src": "2013 英语二"
+      }
+     ]
+    },
+    {
+     "en": "Through this letter, I sincerely invite you to join us in {{topic}}.",
+     "cn": "借此来信，我诚挚邀请你参与我们组织的{{topic}}。",
+     "ex": [
+      {
+       "en": "Through this letter, I sincerely invite you to join us in the upcoming campus food festival for international and Chinese students.",
+       "cn": "借此来信，我诚挚邀请你参加即将举行的、面向中外学生的校园美食节。",
+       "src": "2022 英语二"
+      }
+     ]
+    },
+    {
+     "en": "The purpose of this letter is to recommend {{topic}} as a valuable opportunity for you.",
+     "cn": "本信旨在向你推荐{{topic}}这一宝贵机会。",
+     "ex": [
+      {
+       "en": "The purpose of this letter is to recommend the robot show on Sunday as a valuable opportunity for you to experience cutting-edge technology.",
+       "cn": "本信旨在向你推荐周日的机器人展，这对你体验前沿科技是一次十分宝贵的机会。",
+       "src": "2023 英语二"
+      }
+     ]
+    },
+    {
+     "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
+     "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+     "ex": [
+      {
+       "en": "In this letter, I would like to introduce the art exhibition this Sunday to you as an excellent option if you are interested in culture and creativity.",
+       "cn": "在这封信中，我想向你介绍本周日的艺术展，如果你对文化与创意感兴趣，这是一个极佳的选择。",
+       "src": "2023 英语二"
+      }
+     ]
+    },
+    {
+     "en": "This letter serves as a formal complaint about the recent problems with {{topic}}.",
+     "cn": "这封信作为一份正式投诉，旨在反映近期与{{topic}}有关的问题。",
+     "ex": [
+      {
+       "en": "This letter serves as a formal complaint about the recent problems with the electronic dictionary I bought from your online store.",
+       "cn": "这封信作为一份正式投诉，旨在反映我最近在贵网店购买的电子词典所出现的问题。",
+       "src": "2012 英语二"
+      }
+     ]
+    },
+    {
+     "en": "This letter is intended to extend my warm congratulations on your achievement in {{topic}}.",
+     "cn": "这封信旨在对你在{{topic}}方面取得的成就表示热烈祝贺。",
+     "ex": [
+      {
+       "en": "This letter is intended to extend my warm congratulations on your achievement in being admitted to university.",
+       "cn": "这封信旨在对你考入大学这一重要成就表示热烈祝贺。",
+       "src": "2011 英语二"
+      }
+     ]
+    },
+    {
+     "en": "The purpose of this letter is to congratulate you sincerely on your remarkable progress in {{topic}}.",
+     "cn": "本信旨在对你在{{topic}}上取得的显著进步致以诚挚祝贺。",
+     "ex": [
+      {
+       "en": "The purpose of this letter is to congratulate you sincerely on your remarkable progress in English-Chinese translation.",
+       "cn": "本信旨在对你在英汉翻译方面取得的显著进步致以诚挚祝贺。",
+       "src": "2016 英语二"
+      }
+     ]
+    },
+    {
+     "en": "This announcement aims to provide detailed information about {{topic}}.",
+     "cn": "本公告旨在提供关于{{topic}}的详细信息。",
+     "ex": [
+      {
+       "en": "This announcement aims to provide detailed information about our university library for the newly enrolled international students.",
+       "cn": "本公告旨在向新入学的国际学生提供关于本校图书馆的详细信息。",
+       "src": "2016 英语一"
+      }
+     ]
+    },
+    {
+     "en": "The purpose of this notice is to remind everyone of the upcoming activities related to {{topic}}.",
+     "cn": "本通知旨在提醒大家即将开展的{{topic}}相关活动。",
+     "ex": [
+      {
+       "en": "The purpose of this notice is to remind everyone of the upcoming campus singing contest next Friday evening.",
+       "cn": "本通知旨在提醒大家注意下周五晚即将举行的校园歌唱比赛。",
+       "src": "2020 英语一"
+      }
+     ]
+    },
+    {
+     "en": "This notice is intended to clarify the requirements for participating in {{topic}}.",
+     "cn": "本通知旨在说明参与{{topic}}的具体要求。",
+     "ex": [
+      {
+       "en": "This notice is intended to clarify the requirements for participating in Professor Smith’s research project on campus sports activities.",
+       "cn": "本通知旨在说明参与史密斯教授校园体育活动研究项目的具体要求。",
+       "src": "2023 英语一"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p2s1",
+   "part": 2,
+   "type": "通用",
+   "label": "第二段 · 通用首句（引出下文）",
+   "items": [
+    {
+     "en": "To be more specific, the main points can be arranged as follows.",
+     "cn": "更具体地说，主要内容可以概括为以下几点。"
+    },
+    {
+     "en": "In terms of concrete arrangements, the details are as follows.",
+     "cn": "就具体安排而言，细节如下。"
+    },
+    {
+     "en": "With regard to the practical steps, the key information is listed below.",
+     "cn": "关于实际步骤，关键信息如下所示。"
+    },
+    {
+     "en": "As for the specific arrangements, they can be outlined in the following way.",
+     "cn": "至于具体安排，可以概括为如下几点。"
+    },
+    {
+     "en": "When it comes to the concrete details, they may be presented as follows.",
+     "cn": "说到具体细节，可以作如下说明。"
+    },
+    {
+     "en": "As for the practical measures, my suggestions are listed as follows.",
+     "cn": "至于具体措施，我的建议如下。"
+    },
+    {
+     "en": "Concerning the next steps, several suggestions can be made as follows.",
+     "cn": "关于下一步的做法，可以提出如下建议。"
+    },
+    {
+     "en": "In light of the above, the following suggestions may be of some help.",
+     "cn": "鉴于以上情况，以下几点建议或许有所帮助。"
+    },
+    {
+     "en": "To address this issue more effectively, the following actions are recommended.",
+     "cn": "为更有效地解决这一问题，建议采取以下行动。"
+    },
+    {
+     "en": "As for the underlying reasons, they can be explained as follows.",
+     "cn": "至于背后的原因，可以作如下解释。"
+    },
+    {
+     "en": "To justify my opinion, several points need to be mentioned as follows.",
+     "cn": "为说明我的观点，有必要提出以下几点。"
+    },
+    {
+     "en": "With respect to the causes of this phenomenon, they can be summarized as follows.",
+     "cn": "至于这一现象的成因，可以归纳为以下几点。"
+    },
+    {
+     "en": "As for the planned event, the main arrangements are as follows.",
+     "cn": "至于本次活动的具体安排，主要如下。"
+    },
+    {
+     "en": "With respect to the upcoming activity, the relevant information is given below.",
+     "cn": "关于即将举行的活动，相关信息如下。"
+    },
+    {
+     "en": "Regarding the details of this notice, please pay attention to the following points.",
+     "cn": "关于本通知的具体内容，请注意以下几点。"
+    },
+    {
+     "en": "As far as the schedule is concerned, the key items are listed as follows.",
+     "cn": "就时间安排而言，主要事项如下。"
+    }
+   ]
+  },
+  {
+   "id": "p2_advice_s2",
+   "part": 2,
+   "type": "建议",
+   "label": "第二段 · 建议类 第二句",
+   "items": [
+    {
+     "en": "First and foremost, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}.",
+     "cn": "首先，强烈建议你在日常生活中持续{{ving}}{{topic}}，因为这有助于你更清楚地认识{{detail}}。"
+    },
+    {
+     "en": "First and foremost, {{ving}} {{topic}} in your daily routine is strongly recommended, as it can help you have a clearer insight into {{detail}}.",
+     "cn": "首先，强烈建议你在日常作息中不断{{ving}}{{topic}}，因为这能帮助你更清楚地认识{{detail}}。"
+    },
+    {
+     "en": "At this stage, it would be wise for you to {{action}} in terms of {{topic}}, as this will help you better understand {{detail}}.",
+     "cn": "在当前阶段，建议你在{{topic}}方面{{action}}，因为这将帮助你更好地理解{{detail}}。"
+    },
+    {
+     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
+     "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。"
+    },
+    {
+     "en": "A sensible step would be to {{action}} with a clear focus on {{topic}}, which is essential for {{detail}}.",
+     "cn": "明智之举是{{action}}，并将重点放在{{topic}}上，这对{{detail}}至关重要。"
+    },
+    {
+     "en": "To move from intention to action, you might {{action}} around {{topic}}, thereby strengthening {{detail}}.",
+     "cn": "为将想法化为行动，你不妨围绕{{topic}}{{action}}，从而强化{{detail}}。"
+    },
+    {
+     "en": "To make your efforts more effective, it is preferable to {{action}} in the light of {{topic}}, which will sharpen {{detail}}.",
+     "cn": "为使你的努力更为有效，最好能结合{{topic}}{{action}}，这将有助于提升{{detail}}。"
+    }
+   ]
+  },
+  {
+   "id": "p2_advice_s3",
+   "part": 2,
+   "type": "建议",
+   "label": "第二段 · 建议类 第三句",
+   "items": [
+    {
+     "en": "Furthermore, there is no denying that it is of great necessity for you to {{task}}.",
+     "cn": "此外，不可否认的是，你有必要{{task}}。"
+    },
+    {
+     "en": "Moreover, it is widely recognized that it is of vital importance for you to {{task}}.",
+     "cn": "此外，普遍认为你{{task}}具有至关重要的意义。"
+    },
+    {
+     "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
+     "cn": "另外，强烈建议你{{task}}，以便改善当前状况。"
+    },
+    {
+     "en": "What is more, it is highly advisable for you to {{task}} in order to achieve better results.",
+     "cn": "更重要的是，为了取得更好的效果，非常建议你{{task}}。"
+    },
+    {
+     "en": "Besides, it is of great significance for you to {{task}}, which will benefit you in the long run.",
+     "cn": "此外，你{{task}}具有重要意义，这将在长远看来对你大有裨益。"
+    },
+    {
+     "en": "Furthermore, you are expected to {{task}}, which can help you handle {{topic}} more effectively.",
+     "cn": "此外，希望你能够{{task}}，这将帮助你更有效地应对{{topic}}。"
+    },
+    {
+     "en": "What is more, it is essential for you to {{task}}, because this is closely related to {{topic}}.",
+     "cn": "更重要的是，你必须{{task}}，因为这与{{topic}}密切相关。"
+    }
+   ]
+  },
+  {
+   "id": "p2_advice_s4",
+   "part": 2,
+   "type": "建议",
+   "label": "第二段 · 建议类 第四句",
+   "items": [
+    {
+     "en": "Last but not least, it is advisable for you to {{task}}. Only in this way can you truly {{benefit}}.",
+     "cn": "最后，需要指出的是，你最好{{task}}。唯有如此，你才能真正{{benefit}}。"
+    },
+    {
+     "en": "Last but not least, you are strongly encouraged to {{task}}. Only in this way will you be able to {{benefit}}.",
+     "cn": "最后，强烈建议你{{task}}。只有这样，你才有可能{{benefit}}。"
+    },
+    {
+     "en": "Last but not least, it would be a wise choice for you to {{task}}. Only in this way can you better {{benefit}}.",
+     "cn": "最后，你{{task}}是不失为明智之举。唯有如此，你才能更好地{{benefit}}。"
+    },
+    {
+     "en": "Last but not least, it is of great necessity for you to {{task}}. Only in this way can you gradually {{benefit}}.",
+     "cn": "最后，你{{task}}是十分必要的。只有这样，你才能逐步{{benefit}}。"
+    },
+    {
+     "en": "Last but not least, you should make a conscious effort to {{task}}. Only in this way can you effectively {{benefit}}.",
+     "cn": "最后，你应当有意识地{{task}}。唯有如此，你才能有效地{{benefit}}。"
+    },
+    {
+     "en": "Last but not least, {{task}} will enable you to {{benefit}} in terms of {{topic}}.",
+     "cn": "最后，{{task}}将使你在{{topic}}方面得以 {{benefit}}。"
+    },
+    {
+     "en": "Only by {{task}} can you truly {{benefit}} when dealing with {{topic}}.",
+     "cn": "唯有 {{task}}，你在面对{{topic}}时才能真正 {{benefit}}。"
+    }
+   ]
+  },
+  {
+   "id": "p2_invite_s2",
+   "part": 2,
+   "type": "邀请",
+   "label": "第二段 · 邀请类 第二句",
+   "items": [
+    {
+     "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
+     "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。"
+    },
+    {
+     "en": "More specifically, your participation in {{topic}} at {{time place}} would be greatly appreciated, as it will enable you to {{gain}}.",
+     "cn": "更具体地说，如果你能于{{time place}}参与{{topic}}，我们将不胜感激，因为这将使你得以{{gain}}。"
+    },
+    {
+     "en": "As for the concrete arrangement, you are warmly invited to {{join}} in connection with {{topic}} so that you can {{gain}}.",
+     "cn": "至于具体安排，特此诚挚邀请你围绕{{topic}}{{join}}，以便你能够{{gain}}。"
+    },
+    {
+     "en": "At this point, it would be a great honor if you could {{join}} for {{topic}}, which serves as an ideal chance to {{gain}}.",
+     "cn": "在此时刻，若你能为{{topic}}{{join}}，将是我们的莫大荣幸，这也是{{gain}}的绝佳机会。"
+    },
+    {
+     "en": "In relation to {{topic}}, we sincerely invite you to {{join}}, allowing you to {{gain}}.",
+     "cn": "就{{topic}}而言，我们诚挚邀请你{{join}}，从而使你得以{{gain}}。"
+    },
+    {
+     "en": "With regard to {{topic}}, it is my pleasure to invite you to {{join}}, which can greatly broaden {{gain}}.",
+     "cn": "关于{{topic}}，我很高兴邀请你{{join}}，这将极大拓展{{gain}}。"
+    },
+    {
+     "en": "To make full use of {{topic}}, you are cordially invited to {{join}}, through which you may {{gain}}.",
+     "cn": "为更好地发挥{{topic}}的价值，特此诚挚邀请你{{join}}，借此你可以{{gain}}。"
+    }
+   ]
+  },
+  {
+   "id": "p2_invite_s3",
+   "part": 2,
+   "type": "邀请",
+   "label": "第二段 · 邀请类 第三句",
+   "items": [
+    {
+     "en": "Furthermore, this will be a valuable opportunity for you to {{task}}, especially in the light of {{topic}}.",
+     "cn": "此外，借此你将获得一次{{task}}的宝贵机会，尤其是在{{topic}}这一背景下。"
+    },
+    {
+     "en": "Moreover, it is widely believed that {{task}} at {{topic}} can help you {{gain}}.",
+     "cn": "再者，普遍认为在{{topic}}中{{task}}有助于你{{gain}}。"
+    },
+    {
+     "en": "In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which is of great benefit to you.",
+     "cn": "另外，在{{topic}}期间{{task}}，将使你能够{{gain}}，这对你大有裨益。"
+    },
+    {
+     "en": "What is more, taking this chance to {{task}} in {{topic}} will significantly enhance {{quality}}.",
+     "cn": "更重要的是，借此机会在{{topic}}中{{task}}，将显著提升{{quality}}。"
+    },
+    {
+     "en": "Besides,{{task}} in the context of {{topic}} will provide you with first-hand experience to {{gain}}.",
+     "cn": "此外，在{{topic}}这一情境下{{task}}，还能为你提供{{gain}}的一手体验。"
+    },
+    {
+     "en": "Furthermore, engaging in {{topic}} and {{task}} will create a rare platform for you to {{gain}}.",
+     "cn": "此外，参与{{topic}}并{{task}}，将为你搭建一个难得的平台，使你得以{{gain}}。"
+    },
+    {
+     "en": "Moreover, through {{topic}}, the chance to {{task}} will help you build a stronger sense of {{gain}}.",
+     "cn": "再者，通过{{topic}}，{{task}}的机会将帮助你建立更强的{{gain}}。"
+    }
+   ]
+  },
+  {
+   "id": "p2_invite_s4",
+   "part": 2,
+   "type": "邀请",
+   "label": "第二段 · 邀请类 第四句",
+   "items": [
+    {
+     "en": "Last but not least, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.",
+     "cn": "最后，你的到来将使{{topic}}更加有意义，并使你得以{{benefit}}。"
+    },
+    {
+     "en": "Last but not least, accepting this invitation to {{topic}} will allow you to {{benefit}} and leave you with {{gain}}.",
+     "cn": "最后，接受此次关于{{topic}}的邀请，会让你{{benefit}}，并收获{{gain}}。"
+    },
+    {
+     "en": "Last but not least, by taking part in {{topic}}, you will open up new possibilities to {{benefit}}.",
+     "cn": "最后，通过参与{{topic}}，你将为{{benefit}}打开新的可能性。"
+    },
+    {
+     "en": "Last but not least, joining {{topic}} serves as a rare chance for you to {{benefit}}, which should not be missed.",
+     "cn": "最后，参与{{topic}}是你{{benefit}}的难得机会，实在不应错过。"
+    },
+    {
+     "en": "Last but not least, with your active participation in {{topic}}, the goal of {{benefit}} will be much easier to achieve.",
+     "cn": "最后，只要你积极参与{{topic}}，{{benefit}}的目标将更容易实现。"
+    },
+    {
+     "en": "Taken together, your involvement in {{topic}} will not only {{benefit1}} but also {{benefit2}}.",
+     "cn": "总的来看，你参与{{topic}}，不仅会{{benefit1}}，还会{{benefit2}}。"
+    },
+    {
+     "en": "Handled in this way, {{topic}} will become a wonderful occasion for you to {{benefit}}.",
+     "cn": "如此一来，{{topic}}将成为你{{benefit}}的绝佳契机。"
+    }
+   ]
+  },
+  {
+   "id": "p2_apology_s2",
+   "part": 2,
+   "type": "道歉",
+   "label": "第二段 · 道歉类 第二句",
+   "items": [
+    {
+     "en": "At this point, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}.",
+     "cn": "在此，我必须承认，在{{topic}}方面的{{fault}}已经造成了{{impact}}。"
+    },
+    {
+     "en": "More specifically, my improper handling of {{topic}}, namely {{fault}}, has brought you {{impact}}.",
+     "cn": "更具体地说，我对{{topic}}处理不当，尤其是{{fault}}，给你带来了{{impact}}。"
+    },
+    {
+     "en": "In fact, the way I dealt with {{topic}} by {{fault}} fell far short of your reasonable expectations.",
+     "cn": "事实上，我通过{{fault}}来处理{{topic}}的方式，远远达不到你合理的期待。"
+    },
+    {
+     "en": "To be honest, my decision to {{fault}} in relation to {{topic}} turned out to be inconsiderate and unprofessional.",
+     "cn": "说实话，我在{{topic}}上作出{{fault}}的决定，确实欠考虑，也不够专业。"
+    },
+    {
+     "en": "As a result of {{fault}} with regard to {{topic}}, you had to face {{impact}}, which should not have happened.",
+     "cn": "由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。"
+    },
+    {
+     "en": "When looking back, it is clear that {{fault}} about {{topic}} was a serious mistake on my part.",
+     "cn": "回头来看，我在{{topic}}上{{fault}}，无疑是我这边的严重失误。"
+    },
+    {
+     "en": "In connection with {{topic}}, my act of {{fault}} directly led to {{impact}}, which I deeply regret.",
+     "cn": "在{{topic}}这一问题上，我{{fault}}的做法直接导致了{{impact}}，对此我深感遗憾。"
+    }
+   ]
+  },
+  {
+   "id": "p2_apology_s3",
+   "part": 2,
+   "type": "道歉",
+   "label": "第二段 · 道歉类 第三句",
+   "items": [
+    {
+     "en": "Although {{cause}} partly explains why this happened, the main responsibility still lies with me.",
+     "cn": "尽管{{cause}}在一定程度上解释了事情发生的原因，但主要责任仍然在我。"
+    },
+    {
+     "en": "Admittedly, factors such as {{cause}} played a role, yet I should have foreseen the risk in {{topic}}.",
+     "cn": "诚然，{{cause}}等因素确实起到了一定作用，但我本应预见到{{topic}}中的风险。"
+    },
+    {
+     "en": "Instead of simply blaming {{cause}}, I must acknowledge my lack of {{reason}} in dealing with {{topic}}.",
+     "cn": "与其将问题简单归咎于{{cause}}，我更应该承认自己在处理{{topic}}时缺乏{{reason}}。"
+    },
+    {
+     "en": "In retrospect, if I had {{should}} when handling {{topic}}, the situation would not have become so serious.",
+     "cn": "事后反思，如果我在处理{{topic}}时能够{{should}}，情况就不会发展到如此严重的地步。"
+    },
+    {
+     "en": "What matters more is that my failure to {{should}} about {{topic}} clearly shows my negligence.",
+     "cn": "更为重要的是，我没有在{{topic}}上及时{{should}}，这清楚地反映出我的疏忽。"
+    },
+    {
+     "en": "Beyond any doubt,{{reason}} in relation to {{topic}} is the real reason behind the problem.",
+     "cn": "毫无疑问，在{{topic}}上的{{reason}}才是这一问题的真正根源。"
+    }
+   ]
+  },
+  {
+   "id": "p2_congrats_s2",
+   "part": 2,
+   "type": "祝贺",
+   "label": "第二段 · 祝贺类 第二句",
+   "items": [
+    {
+     "en": "To be more specific, your remarkable achievement in {{topic}} clearly shows your {{quality}}.",
+     "cn": "更具体地说，你在{{topic}}方面取得{{achievement}}，清楚地展现了你的{{quality}}。"
+    },
+    {
+     "en": "As far as {{topic}} is concerned, your success in {{achievement}} is truly impressive and inspiring.",
+     "cn": "就{{topic}}而言，你在{{achievement}}上的成功，确实令人钦佩，也颇具鼓舞意义。"
+    },
+    {
+     "en": "In relation to {{topic}}, your ability to {{performance}} strongly confirms your {{quality}}.",
+     "cn": "在{{topic}}方面，你能够{{performance}}，这有力地印证了你的{{quality}}。"
+    },
+    {
+     "en": "With such a remarkable outcome in {{topic}}, it is evident that you have made persistent efforts in {{effort}}.",
+     "cn": "在{{topic}}上取得如此优异的结果，足以说明你在{{effort}}方面付出了长期不懈的努力。"
+    },
+    {
+     "en": "Seen from the perspective of {{topic}}, your success vividly reflects {{quality}}, which deserves full recognition.",
+     "cn": "从{{topic}}的角度来看，你的成功生动体现了{{quality}}，理应得到充分肯定。"
+    },
+    {
+     "en": "At this point, it is fair to say that your achievement in {{topic}} has set a good example for {{audience}}.",
+     "cn": "此时，可以毫不夸张地说，你在{{topic}}上的成就已经为{{audience}}树立了良好榜样。"
+    }
+   ]
+  },
+  {
+   "id": "p2_congrats_s3",
+   "part": 2,
+   "type": "祝贺",
+   "label": "第二段 · 祝贺类 第三句",
+   "items": [
+    {
+     "en": "To a large extent, this success comes from your willingness to {{effort}}, especially when dealing with {{topic}}.",
+     "cn": "在很大程度上，这一成功源于你愿意在{{topic}}上{{effort}}。"
+    },
+    {
+     "en": "Moreover, it is your habit of {{habit}} in {{topic}} that lays a solid foundation for such an achievement.",
+     "cn": "再者，正是你在{{topic}}中形成的{{habit}}，为这一成就奠定了坚实基础。"
+    },
+    {
+     "en": "In addition, your persistence in {{persistence}} regarding {{topic}} has turned difficulties into opportunities.",
+     "cn": "另外，你在{{topic}}上坚持{{persistence}}，把一次次困难转化为机遇。"
+    },
+    {
+     "en": "What is more, your readiness to {{behavior}} whenever {{topic}} is involved has greatly contributed to this outcome.",
+     "cn": "更重要的是，每当涉及{{topic}}时，你总是愿意{{behavior}}，这对取得这一结果起到了关键作用。"
+    },
+    {
+     "en": "Besides, the way you {{approach}} in {{topic}} demonstrates a mature attitude towards {{value}}.",
+     "cn": "此外，你在{{topic}}中{{approach}}的方式，也展现出你对{{value}}的成熟态度。"
+    },
+    {
+     "en": "Furthermore, your ability to balance {{topic}} with {{duty}} shows impressive self-discipline.",
+     "cn": "此外，你能在{{topic}}与{{duty}}之间取得平衡，体现出非同一般的自律能力。"
+    },
+    {
+     "en": "More importantly, through {{topic}}, you have gradually learned to {{quality}}, which makes this success even more meaningful.",
+     "cn": "更为重要的是，通过{{topic}}，你逐渐学会了{{quality}}，这也使得这次成功更加弥足珍贵。"
+    }
+   ]
+  },
+  {
+   "id": "p2_congrats_s4",
+   "part": 2,
+   "type": "祝贺",
+   "label": "第二段 · 祝贺类 第四句",
+   "items": [
+    {
+     "en": "Last but not least, this achievement in {{topic}} will surely encourage you to {{next step}}, helping you reach {{goal}}.",
+     "cn": "最后，{{topic}}上的这一成就必将激励你{{next step}}，助你迈向{{goal}}。"
+    },
+    {
+     "en": "Last but not least, with this success as a new starting point in {{topic}}, you are well positioned to {{goal}}.",
+     "cn": "最后，以这次在{{topic}}上的成功为新起点，你已具备良好条件去{{goal}}。"
+    },
+    {
+     "en": "Last but not least, the experience gained from {{topic}} will pave the way for you to {{goal}}.",
+     "cn": "最后，你在{{topic}}中积累的经验，将为今后实现{{goal}}铺平道路。"
+    },
+    {
+     "en": "Taken together, this milestone in {{topic}} not only rewards your past efforts but also opens up broader space for {{goal}}.",
+     "cn": "总的来看，{{topic}}上的这一里程碑，不仅是对你过去努力的回报，也为{{goal}}打开了更广阔的空间。"
+    },
+    {
+     "en": "From now on, with the confidence built through {{topic}}, it will be easier for you to {{goal}}.",
+     "cn": "从现在起，凭借你在{{topic}}中树立的自信，你将更从容地应对{{goal}}。"
+    },
+    {
+     "en": "Viewed in a long-term perspective, this success in {{topic}} will become a lasting source of motivation for you to {{goal}}.",
+     "cn": "从长远来看，你在{{topic}}上的这次成功，将成为你持续{{goal}}的重要动力源泉。"
+    },
+    {
+     "en": "Under such a promising start in {{topic}}, it is reasonable to expect that you will soon {{goal}}.",
+     "cn": "在{{topic}}如此良好的开端之下，我们有理由期待你不久后能{{goal}}。"
+    }
+   ]
+  },
+  {
+   "id": "p2_intro_s2",
+   "part": 2,
+   "type": "介绍",
+   "label": "第二段 · 介绍类 第二句",
+   "items": [
+    {
+     "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
+     "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。"
+    },
+    {
+     "en": "In essence, {{topic}} can be understood as {{definition}}, with a special focus on {{focus}}.",
+     "cn": "从本质上看，{{topic}}可以理解为{{definition}}，尤其强调{{focus}}。"
+    },
+    {
+     "en": "As a whole, {{topic}} serves as {{function}}, providing {{audience}} with {{benefit}}.",
+     "cn": "总体而言，{{topic}}起到{{function}}的作用，为{{audience}}提供{{benefit}}。"
+    },
+    {
+     "en": "In terms of its basic nature, {{topic}} combines {{part1}} with {{part2}}, forming a unique pattern.",
+     "cn": "就其基本性质而言，{{topic}}融合了{{part1}}与{{part2}}，形成了独特格局。"
+    },
+    {
+     "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
+     "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。"
+    },
+    {
+     "en": "Viewed broadly, {{topic}} functions as {{role}}, playing an important part in {{scene}}.",
+     "cn": "从更广泛的角度看，{{topic}}扮演{{role}}的角色，在{{scene}}中发挥着重要作用。"
+    },
+    {
+     "en": "In its simplest form, {{topic}} can be described as {{profile}}, which distinguishes it from {{contrast}}.",
+     "cn": "用最简洁的方式来说，{{topic}}可以描述为{{profile}}，这使它有别于{{contrast}}。"
+    },
+    {
+     "en": "More specifically, in my daily life I usually {{habit1}} and {{habit2}}, which helps me maintain {{advantage}}.",
+     "cn": "更具体而言，在日常生活中，我通常会{{habit1}}并且{{habit2}}，这有助于我保持{{advantage}}。"
+    },
+    {
+     "en": "As for my daily routine, I tend to {{routine}} and {{activity}}, which enables me to stay {{state}}.",
+     "cn": "至于我的日常作息，我通常会{{routine}}，并{{activity}}，这使我始终保持{{state}}。"
+    },
+    {
+     "en": "In my everyday life, I not only {{habit1}} but also {{habit2}}, and this combination shapes {{advantage}}.",
+     "cn": "在日常生活中，我既会{{habit1}}，也会{{habit2}}，而这种组合塑造了{{advantage}}。"
+    }
+   ]
+  },
+  {
+   "id": "p2_intro_s3",
+   "part": 2,
+   "type": "介绍",
+   "label": "第二段 · 介绍类 第三句",
+   "items": [
+    {
+     "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+     "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。"
+    },
+    {
+     "en": "Moreover, its emphasis on {{aspect2}} helps to {{effect}}, which is especially valuable for {{audience}}.",
+     "cn": "此外，它对{{aspect2}}的重视，有助于{{effect}}，对{{audience}}尤为重要。"
+    },
+    {
+     "en": "In addition, by integrating {{content1}} with {{content2}}, {{topic}} provides a comprehensive way to {{effect}}.",
+     "cn": "另外，通过将{{content1}}与{{content2}}结合起来，{{topic}}为{{effect}}提供了一种较为完整的途径。"
+    },
+    {
+     "en": "What is more, the design of {{topic}} highlights {{highlight}}, making it easier to {{benefit}}.",
+     "cn": "更重要的是，{{topic}}的设计突出{{highlight}}，从而更便于{{benefit}}。"
+    },
+    {
+     "en": "Besides, its flexible form allows it to be adapted to {{scene1}} and {{scene2}} without much difficulty.",
+     "cn": "此外，其形式较为灵活，可以较为容易地适用于{{scene1}}和{{scene2}}。"
+    },
+    {
+     "en": "Furthermore, the clear structure of {{topic}} makes it convenient for users to {{action}}, improving {{improve}}.",
+     "cn": "再者，{{topic}}结构清晰，便于使用者{{action}}，从而提升{{improve}}。"
+    },
+    {
+     "en": "On top of that, {{topic}} offers practical guidance on {{content}}, which can effectively support {{audience}}.",
+     "cn": "并且，{{topic}}还就{{content}}提供了实践性指引，可有效支撑{{audience}}。"
+    }
+   ]
+  },
+  {
+   "id": "p2_intro_s4",
+   "part": 2,
+   "type": "介绍",
+   "label": "第二段 · 介绍类 第四句",
+   "items": [
+    {
+     "en": "Taken together, these features make {{topic}} an ideal choice for {{audience}} who wish to {{need}}.",
+     "cn": "总的来看，这些特征使{{topic}}成为{{audience}}实现{{need}}的理想选择。"
+    },
+    {
+     "en": "In this sense, {{topic}} not only clarifies {{content}} but also strengthens {{value}}.",
+     "cn": "从这个意义上讲，{{topic}}既有助于厘清{{content}}，也强化了{{value}}。"
+    },
+    {
+     "en": "As a result, {{topic}} serves as a reliable tool for {{purpose}}, bringing long term benefits to {{beneficiary}}.",
+     "cn": "因此，{{topic}}成为实现{{purpose}}的可靠工具，为{{beneficiary}}带来长远收益。"
+    },
+    {
+     "en": "In summary, with its focus on {{advantage}}, {{topic}} can effectively support {{goal}}.",
+     "cn": "总之，凭借其在{{advantage}}方面的突出表现，{{topic}}能够有力支撑{{goal}}。"
+    },
+    {
+     "en": "Under such a description, it is clear that {{topic}} can play a constructive role in {{scene}}.",
+     "cn": "在上述介绍之下，不难看出，{{topic}}能够在{{scene}}中发挥积极作用。"
+    },
+    {
+     "en": "Viewed in this light, {{topic}} is far more than {{impression}}, but a meaningful approach to {{value}}.",
+     "cn": "由此可见，{{topic}}远不止于{{impression}}，更是一种实现{{value}}的重要途径。"
+    },
+    {
+     "en": "Altogether, {{topic}} stands out for {{advantage}}, making it highly valuable in {{field}}.",
+     "cn": "综上，{{topic}}因{{advantage}}而脱颖而出，在{{field}}中具有较高价值。"
+    }
+   ]
+  },
+  {
+   "id": "p2_notice_s2",
+   "part": 2,
+   "type": "通知",
+   "label": "第二段 · 通知类 第二句",
+   "items": [
+    {
+     "en": "First, {{time}} has been set as the official time for {{topic}}, and all {{audience}} are required to attend on time.",
+     "cn": "首先，{{time}}被确定为{{topic}}的正式时间，届时要求全体{{audience}}准时参加。"
+    },
+    {
+     "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
+     "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。"
+    },
+    {
+     "en": "In terms of schedule, {{topic}} is arranged from {{time1}} to {{time2}}, during which {{session}} will be carried out.",
+     "cn": "在时间安排上，{{topic}}定于{{time1}}至{{time2}}进行，期间将开展{{session}}。"
+    },
+    {
+     "en": "As for the participants, {{topic}} mainly targets {{audience}}, who are kindly asked to follow the arrangements below.",
+     "cn": "至于参与人员，{{topic}}主要面向{{audience}}，请相关人员注意以下安排。"
+    },
+    {
+     "en": "With regard to the theme, {{topic}} will focus on {{theme}}, aiming to address {{problem}}.",
+     "cn": "在主题方面，{{topic}}将围绕{{theme}}展开，旨在回应{{problem}}。"
+    },
+    {
+     "en": "From the organizational point of view, {{topic}} is jointly held by {{organizer}} and {{coorganizer}}, ensuring smooth coordination.",
+     "cn": "从组织层面来看，{{topic}}由{{organizer}}与{{coorganizer}}联合举办，以保障整体有序。"
+    }
+   ]
+  },
+  {
+   "id": "p2_notice_s3",
+   "part": 2,
+   "type": "通知",
+   "label": "第二段 · 通知类 第三句",
+   "items": [
+    {
+     "en": "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, forming a clear structure.",
+     "cn": "此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，整体结构清晰明了。"
+    },
+    {
+     "en": "Moreover, {{topic}} will be conducted in the form of {{form1}}, followed by {{form2}}, so as to enhance {{effect}}.",
+     "cn": "再者，{{topic}}将采用{{form1}}的方式开展，并配合{{form2}}，以增强{{effect}}。"
+    },
+    {
+     "en": "In addition, key parts such as {{session1}} and {{session2}} will be highlighted to ensure substantial gains for {{audience}}.",
+     "cn": "另外，活动将重点突出{{session1}}和{{session2}}，以确保{{audience}}切实受益。"
+    },
+    {
+     "en": "What is more, {{topic}} will integrate {{part1}} with {{part2}}, offering participants a comprehensive experience.",
+     "cn": "更重要的是，{{topic}}将融合{{part1}}与{{part2}}，为参与者提供较为全面的体验。"
+    },
+    {
+     "en": "Besides, during {{topic}},{{arrangement}} will be arranged to encourage active participation.",
+     "cn": "此外，在{{topic}}过程中将安排{{arrangement}}，以鼓励大家积极参与。"
+    },
+    {
+     "en": "At the same time, sufficient time will be reserved for {{session}}, so that {{audience}} can {{gain}}.",
+     "cn": "同时，将预留充足时间用于{{session}}，以便{{audience}}能够{{gain}}。"
+    }
+   ]
+  },
+  {
+   "id": "p2_notice_s4",
+   "part": 2,
+   "type": "通知",
+   "label": "第二段 · 通知类 第四句",
+   "items": [
+    {
+     "en": "Last but not least, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way.",
+     "cn": "最后，要求全体{{audience}}{{requirement}}，以确保{{topic}}有序开展。"
+    },
+    {
+     "en": "Last but not least, participants should {{item}}, which is necessary for the smooth progress of {{topic}}.",
+     "cn": "最后，请参与人员{{item}}，这是确保{{topic}}顺利进行的必要条件。"
+    },
+    {
+     "en": "Last but not least, please pay special attention to {{rule}}, so as to maintain a safe and tidy environment for {{topic}}.",
+     "cn": "最后，请特别注意{{rule}}，以维持{{topic}}的安全、有序环境。"
+    },
+    {
+     "en": "Taken together, the above arrangements call for your active cooperation, without which {{topic}} cannot achieve the expected results.",
+     "cn": "总的来看，以上安排需要大家积极配合，否则{{topic}}难以达到预期效果。"
+    },
+    {
+     "en": "From now on, any changes related to {{topic}} will be updated through {{channel}}, and all {{audience}} should keep informed in time.",
+     "cn": "自即日起，凡与{{topic}}有关的变动将通过{{channel}}发布，请全体{{audience}}及时关注。"
+    },
+    {
+     "en": "Under these requirements, {{topic}} is expected to run efficiently and create real value for {{audience}}.",
+     "cn": "在上述要求下，{{topic}}有望高效运行，并为{{audience}}带来实质性收获。"
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "part": 3,
+   "type": "收尾",
+   "label": "第三段 · 收尾 / 客套",
+   "items": [
+    {
+     "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
+     "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。"
+    },
+    {
+     "en": "It would be greatly appreciated if all {{audience}} could {{expect}} in accordance with the above arrangements.",
+     "cn": "若全体{{audience}}能够按照以上安排{{expect}}，将不胜感激。"
+    },
+    {
+     "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
+     "cn": "请你/各位{{expect}}，以便{{topic}}能够得到更为有效的落实。"
+    },
+    {
+     "en": "Please make sure that you {{expect}} before {{deadline}}, ensuring that {{topic}} proceeds smoothly.",
+     "cn": "请务必在{{deadline}}前{{expect}}，以确保{{topic}}顺利开展。"
+    },
+    {
+     "en": "All {{audience}} are expected to {{expect}}, which is essential for the success of {{topic}}.",
+     "cn": "希望全体{{audience}}{{expect}}，这一点对{{topic}}的顺利开展至关重要。"
+    },
+    {
+     "en": "Thank you for your time and attention, and I look forward to your positive response.",
+     "cn": "感谢你/大家的时间与关注，期待你/大家给予积极回应。"
+    },
+    {
+     "en": "Thank you in advance for your cooperation with {{topic}}.",
+     "cn": "预先感谢你/大家在{{topic}}方面的配合。"
+    },
+    {
+     "en": "Many thanks for your support of {{topic}}, and your understanding is highly appreciated.",
+     "cn": "衷心感谢你/大家对{{topic}}的支持，也非常感谢你/大家的理解。"
+    },
+    {
+     "en": "Your attention and cooperation will be highly valued and sincerely appreciated.",
+     "cn": "你/大家的重视与配合将受到高度重视，并深表感谢。"
+    },
+    {
+     "en": "Once again, thank you for your consideration and support in this matter.",
+     "cn": "再次感谢你/大家对本事项的关心与支持。"
+    },
+    {
+     "en": "In summary, the above arrangements about {{topic}} are made to {{purpose}}.",
+     "cn": "总之，以上关于{{topic}}的安排，旨在{{purpose}}。"
+    },
+    {
+     "en": "To conclude, all the measures mentioned above are designed to {{purpose}}, and your participation is of great importance.",
+     "cn": "总而言之，上述各项措施均是为{{purpose}}而设，你/大家的参与至关重要。"
+    },
+    {
+     "en": "Taken together, these efforts are expected to promote {{topic}} and bring real benefits to {{beneficiary}}.",
+     "cn": "综合来看，这些举措有望推进{{topic}}，并为{{beneficiary}}带来实实在在的收获。"
+    },
+    {
+     "en": "Under the above arrangements, {{topic}} is believed to play a more constructive role in {{scene}}.",
+     "cn": "在上述安排下，{{topic}}有望在{{scene}}中发挥更加积极的作用。"
+    },
+    {
+     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
+     "cn": "我真诚希望你能充分利用这次机会{{outcome}}。"
+    },
+    {
+     "en": "It is my sincere hope that all {{audience}} can grow through {{topic}} and achieve {{outcome}}.",
+     "cn": "我衷心希望全体{{audience}}能够通过{{topic}}得到成长，并实现{{outcome}}。"
+    },
+    {
+     "en": "With joint efforts, {{topic}} is sure to bring about {{change}}.",
+     "cn": "相信在共同努力下，{{topic}}必将带来{{change}}。"
+    },
+    {
+     "en": "I firmly believe that your active involvement in {{topic}} will lead to {{outcome}}.",
+     "cn": "我坚信，你/大家积极参与{{topic}}，必然会促成{{outcome}}。"
+    },
+    {
+     "en": "Please read this notice carefully and pass it on to those concerned.",
+     "cn": "请认真阅读本通知，并转告相关人员。"
+    },
+    {
+     "en": "All {{audience}} should keep a close eye on further notices related to {{topic}}.",
+     "cn": "请全体{{audience}}密切关注后续关于{{topic}}的相关通知。"
+    },
+    {
+     "en": "If there is any adjustment to {{topic}}, additional information will be announced in due course.",
+     "cn": "如若{{topic}}有任何调整，后续将会另行通知。"
+    }
+   ]
+  }
+ ],
+ "types": [
+  {
+   "id": "advice",
+   "name": "建议信",
+   "banks": [
+    "p1s1",
+    "p2s1",
+    "p2_advice_s2",
+    "p2_advice_s3",
+    "p2_advice_s4",
+    "p3"
+   ]
+  },
+  {
+   "id": "invite",
+   "name": "邀请信",
+   "banks": [
+    "p1s1",
+    "p2s1",
+    "p2_invite_s2",
+    "p2_invite_s3",
+    "p2_invite_s4",
+    "p3"
+   ]
+  },
+  {
+   "id": "apology",
+   "name": "道歉信",
+   "banks": [
+    "p1s1",
+    "p2s1",
+    "p2_apology_s2",
+    "p2_apology_s3",
+    "p3"
+   ]
+  },
+  {
+   "id": "congrats",
+   "name": "祝贺信",
+   "banks": [
+    "p1s1",
+    "p2s1",
+    "p2_congrats_s2",
+    "p2_congrats_s3",
+    "p2_congrats_s4",
+    "p3"
+   ]
+  },
+  {
+   "id": "intro",
+   "name": "介绍信",
+   "banks": [
+    "p1s1",
+    "p2s1",
+    "p2_intro_s2",
+    "p2_intro_s3",
+    "p2_intro_s4",
+    "p3"
+   ]
+  },
+  {
+   "id": "notice",
+   "name": "通知",
+   "banks": [
+    "p1s1",
+    "p2s1",
+    "p2_notice_s2",
+    "p2_notice_s3",
+    "p2_notice_s4",
+    "p3"
+   ]
+  }
+ ]
+}

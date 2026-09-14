@@ -3,9 +3,9 @@
   ① 模板句型  —— 该年真正用到的模板句（跨年重复自动合并成「高频 · N 年」）
   ② 填槽表达  —— 该年往 {{槽位}} 里填的题相关表达（换词应万变）
 落到三处：
-  1. pwa/data/writing_patterns.json
-  2. pwa/data/phrasebook.json  新增「写作句式」「填槽表达」两类（幂等）
-  3. pwa/js/nearmap.js         两张地图：写作句式（按功能簇）/ 填槽表达（按段落）
+  1. pwa/data/writing_patterns.json（句型索引，仅存档；2026-09-15 起不再进词汇页）
+  2. pwa/data/phrasebook.json  清理「写作句式」「填槽表达」两类（幂等）
+  3. pwa/js/nearmap.js         移除「写作句式」注入块（幂等）
 用法：python tools/build_writing_patterns.py
 '''
 import json
@@ -126,35 +126,19 @@ def build():
 
 
 def merge_phrasebook(payload=None):
-    payload = payload or json.load(open(OUT_FP, encoding='utf-8'))
+    """从 phrasebook.json 里清掉「写作句式 / 填槽表达」两类。
+
+    2026-09-15 用户要求：模板相关内容不要再塞进「近义词 / 熟词短语」页。
+    数据仍在 writing_patterns.json 里存档，需要时可从这里取回。"""
     ph = json.load(open(PH_FP, encoding='utf-8'))
+    drop_n = sum(len(v) for k, v in ph.get('groups', {}).items() if k in (CAT_TPL, CAT_SLOT))
     cats = [c for c in ph.get('cats', []) if c not in (CAT_TPL, CAT_SLOT)]
     groups = {k: v for k, v in ph.get('groups', {}).items() if k not in (CAT_TPL, CAT_SLOT)}
-    rows = []
-    for gname, items in payload['tpl_groups'].items():
-        for e in items:
-            rows.append({'w': e['w'], 'meaning': e['cn'], 'en': '', 'cn': '',
-                         'src': '%s（%s）' % (e['src'], '/'.join(e['years'])),
-                         'year': e['years'][-1], 'years': e['years'], 'freq': len(e['years']),
-                         'func': gname, 'variants': [], 'aid': ''})
-    rows.sort(key=lambda r: (list(payload['tpl_groups']).index(r['func']), -r['freq']))
-    srows = []
-    for gname, items in payload['slot_groups'].items():
-        for e in items:
-            srows.append({'w': e['w'], 'meaning': e['cn'], 'en': '', 'cn': '',
-                          'src': '%s 的 {{%s}}（%s）' % (e['para'], e['name'], '/'.join(e['years'])),
-                          'year': e['years'][-1], 'years': e['years'], 'freq': len(e['years']),
-                          'func': gname, 'variants': [], 'aid': ''})
-    srows.sort(key=lambda r: (list(payload['slot_groups']).index(r['func']), -r['freq'], r['w']))
-    cats.extend([CAT_TPL, CAT_SLOT])
-    groups[CAT_TPL] = rows
-    groups[CAT_SLOT] = srows
     ph['cats'] = cats
     ph['groups'] = groups
     ph['count'] = sum(len(v) for v in groups.values())
     json.dump(ph, open(PH_FP, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print('并入 phrasebook.json：「%s」%d 条、「%s」%d 条，总计 %d 条'
-          % (CAT_TPL, len(rows), CAT_SLOT, len(srows), ph['count']))
+    print('phrasebook.json：清掉模板相关 %d 条 → 余 %d 条 / %d 类' % (drop_n, ph['count'], len(cats)))
 
 
 NM_START = '  /* >>> 写作句式（tools/build_writing_patterns.py 自动生成，勿手改） >>> */'
@@ -162,54 +146,15 @@ NM_END = '  /* <<< 写作句式 <<< */'
 
 
 def inject_nearmap(payload=None):
-    payload = payload or json.load(open(OUT_FP, encoding='utf-8'))
-    maps = []
-    br = []
-    for gname, items in payload['tpl_groups'].items():
-        if not items:
-            continue
-        br.append({'name': '%s（%d）' % (gname, len(items)),
-                   'color': items[0].get('color', '#0d9488'),
-                   'children': [{'name': '%s %s · %s' % (e['w'], e['cn'],
-                                ('%d 年' % len(e['years'])) if len(e['years']) > 1 else e['years'][0]),
-                                'en': e['w'],
-                                'rest': '%s · %s' % (e['cn'], ('%d 年' % len(e['years']))
-                                                     if len(e['years']) > 1 else e['years'][0])}
-                               for e in items]})
-    maps.append({'id': 'writing', 'title': '写作句式 · 模板句型（大作文 2010-2026）',
-                 'root': '写作句式', 'rootColor': '#0d9488',
-                 'intro': ('来源：2010-2026 英语二大作文「真题套用示范」真正用到的模板句。'
-                           '{{ }} 是留给题目的槽位，尾部数字为该句在多届示范里出现过的年数——'
-                           '数字越大越适合直接背。'),
-                 'branches': br})
-    br2 = []
-    for gname, items in payload['slot_groups'].items():
-        if not items:
-            continue
-        br2.append({'name': '%s（%d）' % (gname, len(items)),
-                    'color': payload['slot_colors'].get(gname, '#64748b'),
-                    'children': [{'name': '%s %s · %s' % (e['w'], e['cn'], e['name']),
-                                  'en': e['w'],
-                                  'rest': '%s（{{%s}}）' % (e['cn'], e['name'])}
-                                 for e in items]})
-    maps.append({'id': 'writing_slot', 'title': '填槽表达 · 换词应万变（大作文 2010-2026）',
-                 'root': '填槽表达', 'rootColor': '#8b5cf6',
-                 'intro': ('来源：17 篇示范里真正填进模板 {{槽位}} 的题相关表达。'
-                           '写新题时在同类里换词即可——例如「占比最大」的主体、'
-                           '「时间」的起止年份，都有现成说法可套。'),
-                 'branches': br2})
-    block = NM_START + '\n  [' + ',\n   '.join(json.dumps(m, ensure_ascii=False, indent=2) for m in maps) + \
-        '].forEach(function (m) { DATA.maps.push(m); });\n' + NM_END
+    """从 nearmap.js 移除「写作句式」注入块（旧版本是注入两张地图，现改为清理）。"""
     src = open(NM_FP, encoding='utf-8').read()
-    if NM_START in src and NM_END in src:
-        src = re.sub(re.escape(NM_START) + r'.*?' + re.escape(NM_END), lambda _: block, src, flags=re.S)
-    else:
-        anchor = '  function esc(s) {'
-        if anchor not in src:
-            raise SystemExit('nearmap.js 找不到插入锚点')
-        src = src.replace(anchor, block + '\n\n' + anchor, 1)
+    pat = r'\n+[ \t]*' + re.escape(NM_START) + r'.*?' + re.escape(NM_END)
+    if not re.search(pat, src, flags=re.S):
+        print('nearmap.js：无写作句式块，跳过')
+        return
+    src = re.sub(pat, '\n', src, count=1, flags=re.S)
     open(NM_FP, 'w', encoding='utf-8', newline='\n').write(src)
-    print('注入 nearmap.js：%d 张地图（%s）' % (len(maps), ' / '.join(m['title'][:12] for m in maps)))
+    print('nearmap.js：已移除写作句式注入块')
 
 
 def main():
