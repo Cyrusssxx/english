@@ -1606,8 +1606,8 @@
   ],
   "写作句式": [
    {
-    "w": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "meaning": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "w": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "meaning": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "en": "",
     "cn": "",
     "src": "静态图表第一段 · 模板第1句（2012/2015/2016/2018/2020/2021/2024/2025/2026）",
@@ -1629,8 +1629,8 @@
     "aid": ""
    },
    {
-    "w": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "meaning": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "w": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "meaning": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "en": "",
     "cn": "",
     "src": "静态图表第一段 · 模板第2句（2012/2015/2016/2018/2020/2021/2024/2025/2026）",
@@ -1652,8 +1652,8 @@
     "aid": ""
    },
    {
-    "w": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
-    "meaning": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "w": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
+    "meaning": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
     "en": "",
     "cn": "",
     "src": "静态图表第一段 · 功能句6（2012/2016/2018/2021/2024/2026）",
@@ -1672,8 +1672,8 @@
     "aid": ""
    },
    {
-    "w": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
-    "meaning": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "w": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
+    "meaning": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
     "en": "",
     "cn": "",
     "src": "静态图表第一段 · 模板第4句（2012/2015/2016/2020/2025/2026）",
@@ -1692,8 +1692,8 @@
     "aid": ""
    },
    {
-    "w": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
-    "meaning": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "w": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
+    "meaning": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
     "en": "",
     "cn": "",
     "src": "静态图表第一段 · 模板第3句（2018/2020/2024/2025）",
@@ -1710,8 +1710,8 @@
     "aid": ""
    },
    {
-    "w": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "meaning": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "w": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "meaning": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "en": "",
     "cn": "",
     "src": "动态图表第一段 · 模板第1句（2010/2011/2013/2014/2017/2019/2022/2023）",
@@ -1732,8 +1732,8 @@
     "aid": ""
    },
    {
-    "w": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "meaning": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "w": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "meaning": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "en": "",
     "cn": "",
     "src": "动态图表第一段 · 模板第2句（2010/2011/2013/2014/2017/2019/2022/2023）",
@@ -1754,8 +1754,8 @@
     "aid": ""
    },
    {
-    "w": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.",
-    "meaning": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。",
+    "w": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, showing a steady upward trend.",
+    "meaning": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，呈现稳定上升趋势。",
     "en": "",
     "cn": "",
     "src": "动态图表第一段 · 功能句1（2017/2022/2023）",
@@ -1771,8 +1771,8 @@
     "aid": ""
    },
    {
-    "w": "By contrast, {{事物3}} fell from {{数字5}} in {{时间5}} to {{数字6}} in {{时间6}}.",
-    "meaning": "相比之下，{{事物3}} 由 {{时间5}} 的 {{数字5}} 下降至 {{时间6}} 的 {{数字6}}。",
+    "w": "By contrast, {{item3}} fell from {{num5}} in {{time5}} to {{num6}} in {{time6}}.",
+    "meaning": "相比之下，{{item3}} 由 {{time5}} 的 {{num5}} 下降至 {{time6}} 的 {{num6}}。",
     "en": "",
     "cn": "",
     "src": "动态图表第一段 · 模板第3句（2019）",
@@ -1786,8 +1786,8 @@
     "aid": ""
    },
    {
-    "w": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
-    "meaning": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "w": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}.",
+    "meaning": "毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。",
     "en": "",
     "cn": "",
     "src": "经济类第二段 · 模板第2句（2010/2011/2014/2015/2018/2022）",
@@ -1826,8 +1826,8 @@
     "aid": ""
    },
    {
-    "w": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life.",
-    "meaning": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
+    "w": "Growing public attention to {{topic}} stems from its ability to meet practical needs in everyday life.",
+    "meaning": "{{topic}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
     "en": "",
     "cn": "",
     "src": "经济类第二段 · 模板第1句（2011/2015/2018）",
@@ -1843,8 +1843,8 @@
     "aid": ""
    },
    {
-    "w": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
-    "meaning": "由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
+    "w": "Seen in this light, the development of {{topic}} is no coincidence but a natural consequence of broader changes in social life.",
+    "meaning": "由此可见，{{topic}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
     "en": "",
     "cn": "",
     "src": "经济类第二段 · 模板第5句（2010/2014/2022）",
@@ -1860,8 +1860,8 @@
     "aid": ""
    },
    {
-    "w": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "meaning": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "w": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "meaning": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
     "en": "",
     "cn": "",
     "src": "校园类第二段（对应英语一品质类） · 模板第2句（2012/2013/2016/2019/2020/2024/2026）",
@@ -1881,8 +1881,8 @@
     "aid": ""
    },
    {
-    "w": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "meaning": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "w": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "meaning": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
     "en": "",
     "cn": "",
     "src": "校园类第二段（对应英语一品质类） · 模板第4句（2012/2013/2016/2019/2020/2024/2026）",
@@ -1902,8 +1902,8 @@
     "aid": ""
    },
    {
-    "w": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
-    "meaning": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "w": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "meaning": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
     "en": "",
     "cn": "",
     "src": "校园类第二段（对应英语一品质类） · 模板第1句（2012/2013/2016/2019/2020/2026）",
@@ -1937,8 +1937,8 @@
     "aid": ""
    },
    {
-    "w": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
-    "meaning": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
+    "w": "Changes reflected in {{topic}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
+    "meaning": "{{topic}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
     "en": "",
     "cn": "",
     "src": "体育健康类第二段 · 模板第1句（2021/2023/2025）",
@@ -1971,8 +1971,8 @@
     "aid": ""
    },
    {
-    "w": "For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
-    "meaning": "正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
+    "w": "For this reason, {{topic}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
+    "meaning": "正因如此，{{topic}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
     "en": "",
     "cn": "",
     "src": "体育健康类第二段 · 模板第4句（2023/2025）",
@@ -2017,8 +2017,8 @@
     "aid": ""
    },
    {
-    "w": "{{题目相关词}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity.",
-    "meaning": "{{题目相关词}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。",
+    "w": "{{topic}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity.",
+    "meaning": "{{topic}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。",
     "en": "",
     "cn": "",
     "src": "文化自信类第二段 · 模板第2句（2017）",
@@ -2047,8 +2047,8 @@
     "aid": ""
    },
    {
-    "w": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "meaning": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "w": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "meaning": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "en": "",
     "cn": "",
     "src": "第三段 · 正面版 · 模板第2句（2010/2011/2012/2013/2014/2015/2016/2017/2018/2019/2020/2021/2022/2023/2024/2025/2026）",
@@ -2078,8 +2078,8 @@
     "aid": ""
    },
    {
-    "w": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "meaning": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "w": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "meaning": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "en": "",
     "cn": "",
     "src": "第三段 · 正面版 · 模板第4句（2010/2013/2014/2015/2016/2017/2018/2019/2021/2022/2023）",
@@ -2103,8 +2103,8 @@
     "aid": ""
    },
    {
-    "w": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "meaning": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "w": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "meaning": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "en": "",
     "cn": "",
     "src": "第三段 · 正面版 · 模板第1句（2010/2011/2012/2014/2015/2018/2020/2024/2025/2026）",
@@ -2175,7 +2175,7 @@
     "meaning": "老年人的日常休闲活动",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2025/2025/2025）",
+    "src": "第一段 的 {{topic}}（2025/2025/2025）",
     "year": "2025",
     "years": [
      "2025",
@@ -2192,7 +2192,7 @@
     "meaning": "外出就餐",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2018/2018）",
+    "src": "第二段 的 {{topic}}（2018/2018）",
     "year": "2018",
     "years": [
      "2018",
@@ -2208,7 +2208,7 @@
     "meaning": "国产汽车品牌",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2011/2011）",
+    "src": "第二段 的 {{topic}}（2011/2011）",
     "year": "2011",
     "years": [
      "2011",
@@ -2224,7 +2224,7 @@
     "meaning": "快递服务",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2022/2022）",
+    "src": "第二段 的 {{topic}}（2022/2022）",
     "year": "2022",
     "years": [
      "2022",
@@ -2240,7 +2240,7 @@
     "meaning": "节日花销",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2015/2015）",
+    "src": "第二段 的 {{topic}}（2015/2015）",
     "year": "2015",
     "years": [
      "2015",
@@ -2256,7 +2256,7 @@
     "meaning": "继续深造",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2019/2019）",
+    "src": "第二段 的 {{topic}}（2019/2019）",
     "year": "2019",
     "years": [
      "2019",
@@ -2272,7 +2272,7 @@
     "meaning": "健康素养",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2023/2023）",
+    "src": "第二段 的 {{topic}}（2023/2023）",
     "year": "2023",
     "years": [
      "2023",
@@ -2288,7 +2288,7 @@
     "meaning": "工作满意度",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2012/2012）",
+    "src": "第二段 的 {{topic}}（2012/2012）",
     "year": "2012",
     "years": [
      "2012",
@@ -2304,7 +2304,7 @@
     "meaning": "劳动实践课",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2024/2024）",
+    "src": "第二段 的 {{topic}}（2024/2024）",
     "year": "2024",
     "years": [
      "2024",
@@ -2336,7 +2336,7 @@
     "meaning": "手机阅读",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2020/2020）",
+    "src": "第二段 的 {{topic}}（2020/2020）",
     "year": "2020",
     "years": [
      "2020",
@@ -2352,7 +2352,7 @@
     "meaning": "手机服务",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2010/2010）",
+    "src": "第二段 的 {{topic}}（2010/2010）",
     "year": "2010",
     "years": [
      "2010",
@@ -2368,7 +2368,7 @@
     "meaning": "博物馆",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2017/2017）",
+    "src": "第二段 的 {{topic}}（2017/2017）",
     "year": "2017",
     "years": [
      "2017",
@@ -2384,7 +2384,7 @@
     "meaning": "户外活动",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2026/2026）",
+    "src": "第二段 的 {{topic}}（2026/2026）",
     "year": "2026",
     "years": [
      "2026",
@@ -2400,7 +2400,7 @@
     "meaning": "兼职",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2013/2013）",
+    "src": "第二段 的 {{topic}}（2013/2013）",
     "year": "2013",
     "years": [
      "2013",
@@ -2416,7 +2416,7 @@
     "meaning": "体育锻炼",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2021/2021）",
+    "src": "第二段 的 {{topic}}（2021/2021）",
     "year": "2021",
     "years": [
      "2021",
@@ -2432,7 +2432,7 @@
     "meaning": "旅行",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2016/2016）",
+    "src": "第二段 的 {{topic}}（2016/2016）",
     "year": "2016",
     "years": [
      "2016",
@@ -2448,7 +2448,7 @@
     "meaning": "城镇化",
     "en": "",
     "cn": "",
-    "src": "第二段 的 {{题目相关词}}（2014/2014）",
+    "src": "第二段 的 {{topic}}（2014/2014）",
     "year": "2014",
     "years": [
      "2014",
@@ -2464,7 +2464,7 @@
     "meaning": "春节花销",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2015）",
+    "src": "第一段 的 {{topic}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -2479,7 +2479,7 @@
     "meaning": "全国与农村的快递业务量",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2022）",
+    "src": "第一段 的 {{topic}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -2494,7 +2494,7 @@
     "meaning": "本科毕业生的去向",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2019）",
+    "src": "第一段 的 {{topic}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -2509,7 +2509,7 @@
     "meaning": "各年龄段的工作满意度",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2012）",
+    "src": "第一段 的 {{topic}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -2524,7 +2524,7 @@
     "meaning": "发展中国家与发达国家的手机订阅量",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2010）",
+    "src": "第一段 的 {{topic}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -2554,7 +2554,7 @@
     "meaning": "学生从劳动实践课中得到的收获",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2024）",
+    "src": "第一段 的 {{topic}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -2569,7 +2569,7 @@
     "meaning": "城市居民的锻炼方式",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2021）",
+    "src": "第一段 的 {{topic}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -2584,7 +2584,7 @@
     "meaning": "消费者选择餐厅时的关注因素",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2018）",
+    "src": "第一段 的 {{topic}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -2599,7 +2599,7 @@
     "meaning": "中国居民的健康素养水平",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2023）",
+    "src": "第一段 的 {{topic}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -2614,7 +2614,7 @@
     "meaning": "中国、日本与美国汽车品牌的市场份额",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2011）",
+    "src": "第一段 的 {{topic}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -2629,7 +2629,7 @@
     "meaning": "博物馆数量与参观人数",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2017）",
+    "src": "第一段 的 {{topic}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -2644,7 +2644,7 @@
     "meaning": "人们看重的儿童户外活动益处",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2026）",
+    "src": "第一段 的 {{topic}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -2659,7 +2659,7 @@
     "meaning": "大学生兼职比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2013）",
+    "src": "第一段 的 {{topic}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -2674,7 +2674,7 @@
     "meaning": "大学生的手机阅读目的",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2020）",
+    "src": "第一段 的 {{topic}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -2689,7 +2689,7 @@
     "meaning": "大学生的旅游目的",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2016）",
+    "src": "第一段 的 {{topic}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -2704,7 +2704,7 @@
     "meaning": "城镇与农村人口",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{题目相关词}}（2014）",
+    "src": "第一段 的 {{topic}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -2719,7 +2719,7 @@
     "meaning": "美系品牌",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2011）",
+    "src": "第一段 的 {{item2}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -2734,7 +2734,7 @@
     "meaning": "欣赏风景",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2016）",
+    "src": "第一段 的 {{item1}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -2749,7 +2749,7 @@
     "meaning": "国产品牌",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2011）",
+    "src": "第一段 的 {{item1}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -2764,7 +2764,7 @@
     "meaning": "餐厅特色",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2018）",
+    "src": "第一段 的 {{item1}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -2779,7 +2779,7 @@
     "meaning": "获取知识",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2020）",
+    "src": "第一段 的 {{item1}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -2794,7 +2794,7 @@
     "meaning": "获得相关知识",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2024）",
+    "src": "第一段 的 {{item1}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -2809,7 +2809,7 @@
     "meaning": "日系品牌",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2011）",
+    "src": "第一段 的 {{item3}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -2824,7 +2824,7 @@
     "meaning": "缓解压力",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2016）",
+    "src": "第一段 的 {{item2}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -2839,7 +2839,7 @@
     "meaning": "满足好奇心",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2026）",
+    "src": "第一段 的 {{item1}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -2854,7 +2854,7 @@
     "meaning": "发展中国家的订阅量",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2010）",
+    "src": "第一段 的 {{item1}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -2869,7 +2869,7 @@
     "meaning": "50 岁以上群体",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2012）",
+    "src": "第一段 的 {{item1}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -2884,7 +2884,7 @@
     "meaning": "健康素养水平",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2023）",
+    "src": "第一段 的 {{item1}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -2899,7 +2899,7 @@
     "meaning": "全国业务量",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2022）",
+    "src": "第一段 的 {{item1}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -2914,7 +2914,7 @@
     "meaning": "博物馆数量",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2017）",
+    "src": "第一段 的 {{item1}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -2929,7 +2929,7 @@
     "meaning": "这一比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2013）",
+    "src": "第一段 的 {{item1}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -2944,7 +2944,7 @@
     "meaning": "城镇人口",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2014）",
+    "src": "第一段 的 {{item1}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -2959,7 +2959,7 @@
     "meaning": "旅行、送礼以及与亲友聚餐",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2015）",
+    "src": "第一段 的 {{item1}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -2974,7 +2974,7 @@
     "meaning": "看电视",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2025）",
+    "src": "第一段 的 {{item1}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -2989,7 +2989,7 @@
     "meaning": "独自锻炼",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2021）",
+    "src": "第一段 的 {{item1}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -3004,7 +3004,7 @@
     "meaning": "31 至 40 岁的员工",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2012）",
+    "src": "第一段 的 {{item3}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -3019,7 +3019,7 @@
     "meaning": "40 岁及以下员工",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2012）",
+    "src": "第一段 的 {{item4}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -3034,7 +3034,7 @@
     "meaning": "增强合作能力",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2024）",
+    "src": "第一段 的 {{item4}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -3049,7 +3049,7 @@
     "meaning": "促进观察力",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2026）",
+    "src": "第一段 的 {{item2}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -3064,7 +3064,7 @@
     "meaning": "与朋友一起锻炼",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2021）",
+    "src": "第一段 的 {{item2}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -3079,7 +3079,7 @@
     "meaning": "培养独立能力",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2016）",
+    "src": "第一段 的 {{item5}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -3094,7 +3094,7 @@
     "meaning": "给同事的礼物",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2015）",
+    "src": "第一段 的 {{item2}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -3109,7 +3109,7 @@
     "meaning": "家庭装饰",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2015）",
+    "src": "第一段 的 {{item3}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -3124,7 +3124,7 @@
     "meaning": "强身健体",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2026）",
+    "src": "第一段 的 {{item3}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -3139,7 +3139,7 @@
     "meaning": "提升实践能力",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2024）",
+    "src": "第一段 的 {{item2}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -3154,7 +3154,7 @@
     "meaning": "消磨时间",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2020）",
+    "src": "第一段 的 {{item2}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -3169,7 +3169,7 @@
     "meaning": "广交朋友",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2016）",
+    "src": "第一段 的 {{item4}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -3184,7 +3184,7 @@
     "meaning": "杂项支出",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2015）",
+    "src": "第一段 的 {{item5}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -3199,7 +3199,7 @@
     "meaning": "获得愉悦心情",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2024）",
+    "src": "第一段 的 {{item3}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -3214,7 +3214,7 @@
     "meaning": "获取信息",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2020）",
+    "src": "第一段 的 {{item3}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -3229,7 +3229,7 @@
     "meaning": "其他目的",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2016）",
+    "src": "第一段 的 {{item3}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -3244,7 +3244,7 @@
     "meaning": "其他益处",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2026）",
+    "src": "第一段 的 {{item5}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -3259,7 +3259,7 @@
     "meaning": "其他因素",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2018）",
+    "src": "第一段 的 {{item5}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -3274,7 +3274,7 @@
     "meaning": "其他锻炼形式",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2021）",
+    "src": "第一段 的 {{item5}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -3289,7 +3289,7 @@
     "meaning": "其他收获",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2024）",
+    "src": "第一段 的 {{item5}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -3304,7 +3304,7 @@
     "meaning": "烟花等其他项目",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2015）",
+    "src": "第一段 的 {{item4}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -3319,7 +3319,7 @@
     "meaning": "其他目的",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2020）",
+    "src": "第一段 的 {{item4}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -3334,7 +3334,7 @@
     "meaning": "养花",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2025）",
+    "src": "第一段 的 {{item3}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -3349,7 +3349,7 @@
     "meaning": "下棋",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2025）",
+    "src": "第一段 的 {{item5}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -3364,7 +3364,7 @@
     "meaning": "参加团队运动",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2021）",
+    "src": "第一段 的 {{item4}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -3379,7 +3379,7 @@
     "meaning": "价格",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2018）",
+    "src": "第一段 的 {{item4}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -3394,7 +3394,7 @@
     "meaning": "阅读",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2025）",
+    "src": "第一段 的 {{item4}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -3409,7 +3409,7 @@
     "meaning": "服务",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2018）",
+    "src": "第一段 的 {{item2}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -3424,7 +3424,7 @@
     "meaning": "增强亲子互动",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物4}}（2026）",
+    "src": "第一段 的 {{item4}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -3439,7 +3439,7 @@
     "meaning": "散步",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2025）",
+    "src": "第一段 的 {{item2}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -3454,7 +3454,7 @@
     "meaning": "就餐环境",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2018）",
+    "src": "第一段 的 {{item3}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -3469,7 +3469,7 @@
     "meaning": "参观人数",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2017）",
+    "src": "第一段 的 {{item2}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -3484,7 +3484,7 @@
     "meaning": "就业比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物1}}（2019）",
+    "src": "第一段 的 {{item1}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3499,7 +3499,7 @@
     "meaning": "毕业当年的比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2013）",
+    "src": "第一段 的 {{item2}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -3514,7 +3514,7 @@
     "meaning": "升学比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2019）",
+    "src": "第一段 的 {{item2}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3529,7 +3529,7 @@
     "meaning": "创业比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2019）",
+    "src": "第一段 的 {{item3}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3544,7 +3544,7 @@
     "meaning": "同期的这一比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2023）",
+    "src": "第一段 的 {{item2}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -3559,7 +3559,7 @@
     "meaning": "其余目标",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2020）",
+    "src": "第一段 的 {{item5}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -3574,7 +3574,7 @@
     "meaning": "其余受访者",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物5}}（2012）",
+    "src": "第一段 的 {{item5}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -3589,7 +3589,7 @@
     "meaning": "农村人口",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2014）",
+    "src": "第一段 的 {{item2}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -3604,7 +3604,7 @@
     "meaning": "农村业务量",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2022）",
+    "src": "第一段 的 {{item2}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -3619,7 +3619,7 @@
     "meaning": "41 至 50 岁的员工",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2012）",
+    "src": "第一段 的 {{item2}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -3634,7 +3634,7 @@
     "meaning": "发达国家同期的订阅量",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物2}}（2010）",
+    "src": "第一段 的 {{item2}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -3649,7 +3649,7 @@
     "meaning": "与家人一起锻炼",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{事物3}}（2021）",
+    "src": "第一段 的 {{item3}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -3664,7 +3664,7 @@
     "meaning": "5 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字1}}（2010）",
+    "src": "第一段 的 {{num1}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -3679,7 +3679,7 @@
     "meaning": "7 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字3}}（2010）",
+    "src": "第一段 的 {{num3}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -3694,7 +3694,7 @@
     "meaning": "10 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字4}}（2010）",
+    "src": "第一段 的 {{num4}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -3709,7 +3709,7 @@
     "meaning": "1.3%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字5}}（2019）",
+    "src": "第一段 的 {{num5}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3724,7 +3724,7 @@
     "meaning": "120 亿件",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字3}}（2022）",
+    "src": "第一段 的 {{num3}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -3739,7 +3739,7 @@
     "meaning": "2.6%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字6}}（2019）",
+    "src": "第一段 的 {{num6}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3754,7 +3754,7 @@
     "meaning": "25.40%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字2}}（2023）",
+    "src": "第一段 的 {{num2}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -3769,7 +3769,7 @@
     "meaning": "25.40%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字4}}（2023）",
+    "src": "第一段 的 {{num4}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -3784,7 +3784,7 @@
     "meaning": "26.3%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字3}}（2019）",
+    "src": "第一段 的 {{num3}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3799,7 +3799,7 @@
     "meaning": "300 亿件",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字4}}（2022）",
+    "src": "第一段 的 {{num4}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -3814,7 +3814,7 @@
     "meaning": "3 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字1}}（2014）",
+    "src": "第一段 的 {{num1}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -3829,7 +3829,7 @@
     "meaning": "34.0%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字4}}（2019）",
+    "src": "第一段 的 {{num4}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3844,7 +3844,7 @@
     "meaning": "40 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字2}}（2010）",
+    "src": "第一段 的 {{num2}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -3859,7 +3859,7 @@
     "meaning": "4169",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字1}}（2017）",
+    "src": "第一段 的 {{num1}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -3874,7 +3874,7 @@
     "meaning": "4692",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字2}}（2017）",
+    "src": "第一段 的 {{num2}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -3889,7 +3889,7 @@
     "meaning": "510 亿件",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字1}}（2022）",
+    "src": "第一段 的 {{num1}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -3904,7 +3904,7 @@
     "meaning": "60.7%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字2}}（2019）",
+    "src": "第一段 的 {{num2}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3919,7 +3919,7 @@
     "meaning": "6.37 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字3}}（2017）",
+    "src": "第一段 的 {{num3}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -3934,7 +3934,7 @@
     "meaning": "67.77%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字1}}（2013）",
+    "src": "第一段 的 {{num1}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -3949,7 +3949,7 @@
     "meaning": "6.7 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字2}}（2014）",
+    "src": "第一段 的 {{num2}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -3964,7 +3964,7 @@
     "meaning": "68.1%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字1}}（2019）",
+    "src": "第一段 的 {{num1}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -3979,7 +3979,7 @@
     "meaning": "6.8 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字4}}（2014）",
+    "src": "第一段 的 {{num4}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -3994,7 +3994,7 @@
     "meaning": "8.80%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字1}}（2023）",
+    "src": "第一段 的 {{num1}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -4009,7 +4009,7 @@
     "meaning": "8.80%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字3}}（2023）",
+    "src": "第一段 的 {{num3}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -4024,7 +4024,7 @@
     "meaning": "8.2 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字3}}（2014）",
+    "src": "第一段 的 {{num3}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -4039,7 +4039,7 @@
     "meaning": "830 亿件",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字2}}（2022）",
+    "src": "第一段 的 {{num2}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -4054,7 +4054,7 @@
     "meaning": "83.7%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字3}}（2013）",
+    "src": "第一段 的 {{num3}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -4069,7 +4069,7 @@
     "meaning": "88.24%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字2}}（2013）",
+    "src": "第一段 的 {{num2}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -4084,7 +4084,7 @@
     "meaning": "88.24%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字4}}（2013）",
+    "src": "第一段 的 {{num4}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -4099,7 +4099,7 @@
     "meaning": "9.54 亿",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字4}}（2017）",
+    "src": "第一段 的 {{num4}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -4114,7 +4114,7 @@
     "meaning": "一个不大的份额",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字1}}（2011）",
+    "src": "第一段 的 {{num1}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4129,7 +4129,7 @@
     "meaning": "远低于此的水平",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字6}}（2011）",
+    "src": "第一段 的 {{num6}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4144,7 +4144,7 @@
     "meaning": "略大的份额",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字4}}（2011）",
+    "src": "第一段 的 {{num4}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4159,7 +4159,7 @@
     "meaning": "一个较小的份额",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字3}}（2011）",
+    "src": "第一段 的 {{num3}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4174,7 +4174,7 @@
     "meaning": "领先地位",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字2}}（2011）",
+    "src": "第一段 的 {{num2}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4189,7 +4189,7 @@
     "meaning": "其最高水平",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{数字5}}（2011）",
+    "src": "第一段 的 {{num5}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4204,7 +4204,7 @@
     "meaning": "2013 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间1}}（2017/2019）",
+    "src": "第一段 的 {{time1}}（2017/2019）",
     "year": "2019",
     "years": [
      "2017",
@@ -4220,7 +4220,7 @@
     "meaning": "2013 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间3}}（2017/2019）",
+    "src": "第一段 的 {{time3}}（2017/2019）",
     "year": "2019",
     "years": [
      "2017",
@@ -4236,7 +4236,7 @@
     "meaning": "1990 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间1}}（2014）",
+    "src": "第一段 的 {{time1}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -4251,7 +4251,7 @@
     "meaning": "1990 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间3}}（2014）",
+    "src": "第一段 的 {{time3}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -4266,7 +4266,7 @@
     "meaning": "2000 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间1}}（2010）",
+    "src": "第一段 的 {{time1}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -4281,7 +4281,7 @@
     "meaning": "2000 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间3}}（2010）",
+    "src": "第一段 的 {{time3}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -4296,7 +4296,7 @@
     "meaning": "2008 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间2}}（2010）",
+    "src": "第一段 的 {{time2}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -4311,7 +4311,7 @@
     "meaning": "2008 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间4}}（2010）",
+    "src": "第一段 的 {{time4}}（2010）",
     "year": "2010",
     "years": [
      "2010"
@@ -4326,7 +4326,7 @@
     "meaning": "2010 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间2}}（2014）",
+    "src": "第一段 的 {{time2}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -4341,7 +4341,7 @@
     "meaning": "2010 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间4}}（2014）",
+    "src": "第一段 的 {{time4}}（2014）",
     "year": "2014",
     "years": [
      "2014"
@@ -4356,7 +4356,7 @@
     "meaning": "2012 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间1}}（2023）",
+    "src": "第一段 的 {{time1}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -4371,7 +4371,7 @@
     "meaning": "2012 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间3}}（2023）",
+    "src": "第一段 的 {{time3}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -4386,7 +4386,7 @@
     "meaning": "2013 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间5}}（2019）",
+    "src": "第一段 的 {{time5}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -4401,7 +4401,7 @@
     "meaning": "2015 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间2}}（2017）",
+    "src": "第一段 的 {{time2}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -4416,7 +4416,7 @@
     "meaning": "2015 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间4}}（2017）",
+    "src": "第一段 的 {{time4}}（2017）",
     "year": "2017",
     "years": [
      "2017"
@@ -4431,7 +4431,7 @@
     "meaning": "2018 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间1}}（2022）",
+    "src": "第一段 的 {{time1}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -4446,7 +4446,7 @@
     "meaning": "2018 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间2}}（2019）",
+    "src": "第一段 的 {{time2}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -4461,7 +4461,7 @@
     "meaning": "2018 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间3}}（2022）",
+    "src": "第一段 的 {{time3}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -4476,7 +4476,7 @@
     "meaning": "2018 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间4}}（2019）",
+    "src": "第一段 的 {{time4}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -4491,7 +4491,7 @@
     "meaning": "2018 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间6}}（2019）",
+    "src": "第一段 的 {{time6}}（2019）",
     "year": "2019",
     "years": [
      "2019"
@@ -4506,7 +4506,7 @@
     "meaning": "2020 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间2}}（2022）",
+    "src": "第一段 的 {{time2}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -4521,7 +4521,7 @@
     "meaning": "2020 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间4}}（2022）",
+    "src": "第一段 的 {{time4}}（2022）",
     "year": "2022",
     "years": [
      "2022"
@@ -4536,7 +4536,7 @@
     "meaning": "2021 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间2}}（2023）",
+    "src": "第一段 的 {{time2}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -4551,7 +4551,7 @@
     "meaning": "2021 年",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间4}}（2023）",
+    "src": "第一段 的 {{time4}}（2023）",
     "year": "2023",
     "years": [
      "2023"
@@ -4566,7 +4566,7 @@
     "meaning": "前一时期",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间1}}（2011）",
+    "src": "第一段 的 {{time1}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4581,7 +4581,7 @@
     "meaning": "前一时期",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间3}}（2011）",
+    "src": "第一段 的 {{time3}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4596,7 +4596,7 @@
     "meaning": "前一时期",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间5}}（2011）",
+    "src": "第一段 的 {{time5}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4611,7 +4611,7 @@
     "meaning": "大四",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间2}}（2013）",
+    "src": "第一段 的 {{time2}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -4626,7 +4626,7 @@
     "meaning": "大四",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间4}}（2013）",
+    "src": "第一段 的 {{time4}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -4641,7 +4641,7 @@
     "meaning": "大一",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间1}}（2013）",
+    "src": "第一段 的 {{time1}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -4656,7 +4656,7 @@
     "meaning": "后一时期",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间2}}（2011）",
+    "src": "第一段 的 {{time2}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4671,7 +4671,7 @@
     "meaning": "后一时期",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间4}}（2011）",
+    "src": "第一段 的 {{time4}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4686,7 +4686,7 @@
     "meaning": "后一时期",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间6}}（2011）",
+    "src": "第一段 的 {{time6}}（2011）",
     "year": "2011",
     "years": [
      "2011"
@@ -4701,7 +4701,7 @@
     "meaning": "大三",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{时间3}}（2013）",
+    "src": "第一段 的 {{time3}}（2013）",
     "year": "2013",
     "years": [
      "2013"
@@ -4716,7 +4716,7 @@
     "meaning": "更小的比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比5}}（2012/2021/2024/2026）",
+    "src": "第一段 的 {{pct5}}（2012/2021/2024/2026）",
     "year": "2026",
     "years": [
      "2012",
@@ -4734,7 +4734,7 @@
     "meaning": "12%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2015）",
+    "src": "第一段 的 {{pct4}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -4749,7 +4749,7 @@
     "meaning": "15%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2016）",
+    "src": "第一段 的 {{pct3}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -4764,7 +4764,7 @@
     "meaning": "16.7%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2012）",
+    "src": "第一段 的 {{pct4}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -4779,7 +4779,7 @@
     "meaning": "17.0%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2020）",
+    "src": "第一段 的 {{pct3}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -4794,7 +4794,7 @@
     "meaning": "18.4%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比5}}（2025）",
+    "src": "第一段 的 {{pct5}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -4809,7 +4809,7 @@
     "meaning": "2.2%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2020）",
+    "src": "第一段 的 {{pct4}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -4824,7 +4824,7 @@
     "meaning": "21.3%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2020）",
+    "src": "第一段 的 {{pct2}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -4839,7 +4839,7 @@
     "meaning": "23.8%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2018）",
+    "src": "第一段 的 {{pct3}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -4854,7 +4854,7 @@
     "meaning": "23.9%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2021）",
+    "src": "第一段 的 {{pct3}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -4869,7 +4869,7 @@
     "meaning": "26.8%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2018）",
+    "src": "第一段 的 {{pct2}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -4884,7 +4884,7 @@
     "meaning": "31.8%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2025）",
+    "src": "第一段 的 {{pct4}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -4899,7 +4899,7 @@
     "meaning": "32.6%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2024）",
+    "src": "第一段 的 {{pct4}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -4914,7 +4914,7 @@
     "meaning": "33%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2016）",
+    "src": "第一段 的 {{pct2}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -4929,7 +4929,7 @@
     "meaning": "33.2%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2026）",
+    "src": "第一段 的 {{pct4}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -4944,7 +4944,7 @@
     "meaning": "34.7%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2025）",
+    "src": "第一段 的 {{pct3}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -4959,7 +4959,7 @@
     "meaning": "36.3%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2018）",
+    "src": "第一段 的 {{pct1}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -4974,7 +4974,7 @@
     "meaning": "37%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2016）",
+    "src": "第一段 的 {{pct1}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -4989,7 +4989,7 @@
     "meaning": "37.2%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2026）",
+    "src": "第一段 的 {{pct3}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -5004,7 +5004,7 @@
     "meaning": "4.7%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比5}}（2018）",
+    "src": "第一段 的 {{pct5}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -5019,7 +5019,7 @@
     "meaning": "40%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2012）",
+    "src": "第一段 的 {{pct1}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -5034,7 +5034,7 @@
     "meaning": "47.7%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2021）",
+    "src": "第一段 的 {{pct2}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -5049,7 +5049,7 @@
     "meaning": "54.4%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2024）",
+    "src": "第一段 的 {{pct3}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -5064,7 +5064,7 @@
     "meaning": "54.5%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2026）",
+    "src": "第一段 的 {{pct2}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -5079,7 +5079,7 @@
     "meaning": "54.6%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2026）",
+    "src": "第一段 的 {{pct1}}（2026）",
     "year": "2026",
     "years": [
      "2026"
@@ -5094,7 +5094,7 @@
     "meaning": "59.5%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2020）",
+    "src": "第一段 的 {{pct1}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -5109,7 +5109,7 @@
     "meaning": "6%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比5}}（2016）",
+    "src": "第一段 的 {{pct5}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -5124,7 +5124,7 @@
     "meaning": "68.3%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2025）",
+    "src": "第一段 的 {{pct2}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -5139,7 +5139,7 @@
     "meaning": "8%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比5}}（2015）",
+    "src": "第一段 的 {{pct5}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -5154,7 +5154,7 @@
     "meaning": "8.4%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2018）",
+    "src": "第一段 的 {{pct4}}（2018）",
     "year": "2018",
     "years": [
      "2018"
@@ -5169,7 +5169,7 @@
     "meaning": "总额的 80%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2015）",
+    "src": "第一段 的 {{pct1}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -5184,7 +5184,7 @@
     "meaning": "84.8%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2024）",
+    "src": "第一段 的 {{pct2}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -5199,7 +5199,7 @@
     "meaning": "9%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2016）",
+    "src": "第一段 的 {{pct4}}（2016）",
     "year": "2016",
     "years": [
      "2016"
@@ -5214,7 +5214,7 @@
     "meaning": "90.8%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2025）",
+    "src": "第一段 的 {{pct1}}（2025）",
     "year": "2025",
     "years": [
      "2025"
@@ -5229,7 +5229,7 @@
     "meaning": "91.3%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2024）",
+    "src": "第一段 的 {{pct1}}（2024）",
     "year": "2024",
     "years": [
      "2024"
@@ -5244,7 +5244,7 @@
     "meaning": "中等水平",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2012）",
+    "src": "第一段 的 {{pct3}}（2012）",
     "year": "2012",
     "years": [
      "2012"
@@ -5259,7 +5259,7 @@
     "meaning": "微不足道的比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比5}}（2020）",
+    "src": "第一段 的 {{pct5}}（2020）",
     "year": "2020",
     "years": [
      "2020"
@@ -5274,7 +5274,7 @@
     "meaning": "一个很小的比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2015）",
+    "src": "第一段 的 {{pct2}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -5289,7 +5289,7 @@
     "meaning": "更小的比例",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比3}}（2015）",
+    "src": "第一段 的 {{pct3}}（2015）",
     "year": "2015",
     "years": [
      "2015"
@@ -5304,7 +5304,7 @@
     "meaning": "不足 16%",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比4}}（2021）",
+    "src": "第一段 的 {{pct4}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -5319,7 +5319,7 @@
     "meaning": "略超受访者半数",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比1}}（2021）",
+    "src": "第一段 的 {{pct1}}（2021）",
     "year": "2021",
     "years": [
      "2021"
@@ -5334,7 +5334,7 @@
     "meaning": "最低水平",
     "en": "",
     "cn": "",
-    "src": "第一段 的 {{百分比2}}（2012）",
+    "src": "第一段 的 {{pct2}}（2012）",
     "year": "2012",
     "years": [
      "2012"

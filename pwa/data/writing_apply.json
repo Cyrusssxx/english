@@ -11,18 +11,18 @@
   ],
   "key_phrases": [
    {
-    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "en": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
-    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。",
     "src": "经济类第二段 · 模板第2句"
    },
    {
@@ -31,23 +31,23 @@
     "src": "经济类第二段 · 模板第3句"
    },
    {
-    "en": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
-    "cn": "由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
+    "en": "Seen in this light, the development of {{topic}} is no coincidence but a natural consequence of broader changes in social life.",
+    "cn": "由此可见，{{topic}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
     "src": "经济类第二段 · 模板第5句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -109,79 +109,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Subscriptions in developing countries",
     "cn": "发展中国家的订阅量"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "those in developed countries",
     "cn": "发达国家同期的订阅量"
    },
    {
     "para": "p1",
-    "name": "数字1",
+    "name": "num1",
     "en": "0.5 billion",
     "cn": "5 亿"
    },
    {
     "para": "p1",
-    "name": "数字2",
+    "name": "num2",
     "en": "4 billion",
     "cn": "40 亿"
    },
    {
     "para": "p1",
-    "name": "数字3",
+    "name": "num3",
     "en": "0.7 billion",
     "cn": "7 亿"
    },
    {
     "para": "p1",
-    "name": "数字4",
+    "name": "num4",
     "en": "1 billion",
     "cn": "10 亿"
    },
    {
     "para": "p1",
-    "name": "时间1",
+    "name": "time1",
     "en": "2000",
     "cn": "2000 年"
    },
    {
     "para": "p1",
-    "name": "时间2",
+    "name": "time2",
     "en": "2008",
     "cn": "2008 年"
    },
    {
     "para": "p1",
-    "name": "时间3",
+    "name": "time3",
     "en": "2000",
     "cn": "2000 年"
    },
    {
     "para": "p1",
-    "name": "时间4",
+    "name": "time4",
     "en": "2008",
     "cn": "2008 年"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile-phone subscriptions in developing and developed countries",
     "cn": "发展中国家与发达国家的手机订阅量"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile services",
     "cn": "手机服务"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile services",
     "cn": "手机服务"
    }
@@ -194,79 +194,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Subscriptions in developing countries",
     "cn": "发展中国家的订阅量",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "those in developed countries",
     "cn": "发达国家同期的订阅量",
     "para": "第一段"
    },
    {
-    "name": "数字1",
+    "name": "num1",
     "en": "0.5 billion",
     "cn": "5 亿",
     "para": "第一段"
    },
    {
-    "name": "数字2",
+    "name": "num2",
     "en": "4 billion",
     "cn": "40 亿",
     "para": "第一段"
    },
    {
-    "name": "数字3",
+    "name": "num3",
     "en": "0.7 billion",
     "cn": "7 亿",
     "para": "第一段"
    },
    {
-    "name": "数字4",
+    "name": "num4",
     "en": "1 billion",
     "cn": "10 亿",
     "para": "第一段"
    },
    {
-    "name": "时间1",
+    "name": "time1",
     "en": "2000",
     "cn": "2000 年",
     "para": "第一段"
    },
    {
-    "name": "时间2",
+    "name": "time2",
     "en": "2008",
     "cn": "2008 年",
     "para": "第一段"
    },
    {
-    "name": "时间3",
+    "name": "time3",
     "en": "2000",
     "cn": "2000 年",
     "para": "第一段"
    },
    {
-    "name": "时间4",
+    "name": "time4",
     "en": "2008",
     "cn": "2008 年",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile-phone subscriptions in developing and developed countries",
     "cn": "发展中国家与发达国家的手机订阅量",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile services",
     "cn": "手机服务",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile services",
     "cn": "手机服务",
     "para": "第三段"
@@ -285,23 +285,23 @@
   ],
   "key_phrases": [
    {
-    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "en": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life.",
-    "cn": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
+    "en": "Growing public attention to {{topic}} stems from its ability to meet practical needs in everyday life.",
+    "cn": "{{topic}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
     "src": "经济类第二段 · 模板第1句"
    },
    {
-    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
-    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。",
     "src": "经济类第二段 · 模板第2句"
    },
    {
@@ -310,13 +310,13 @@
     "src": "经济类第二段 · 模板第3句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    }
   ],
@@ -374,109 +374,109 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Chinese brands",
     "cn": "国产品牌"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "American brands",
     "cn": "美系品牌"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "Japanese brands",
     "cn": "日系品牌"
    },
    {
     "para": "p1",
-    "name": "数字1",
+    "name": "num1",
     "en": "a modest share",
     "cn": "一个不大的份额"
    },
    {
     "para": "p1",
-    "name": "数字2",
+    "name": "num2",
     "en": "the leading position",
     "cn": "领先地位"
    },
    {
     "para": "p1",
-    "name": "数字3",
+    "name": "num3",
     "en": "a small share",
     "cn": "一个较小的份额"
    },
    {
     "para": "p1",
-    "name": "数字4",
+    "name": "num4",
     "en": "a slightly larger share",
     "cn": "略大的份额"
    },
    {
     "para": "p1",
-    "name": "数字5",
+    "name": "num5",
     "en": "their peak level",
     "cn": "其最高水平"
    },
    {
     "para": "p1",
-    "name": "数字6",
+    "name": "num6",
     "en": "a much lower level",
     "cn": "远低于此的水平"
    },
    {
     "para": "p1",
-    "name": "时间1",
+    "name": "time1",
     "en": "the earlier period",
     "cn": "前一时期"
    },
    {
     "para": "p1",
-    "name": "时间2",
+    "name": "time2",
     "en": "the later period",
     "cn": "后一时期"
    },
    {
     "para": "p1",
-    "name": "时间3",
+    "name": "time3",
     "en": "the earlier period",
     "cn": "前一时期"
    },
    {
     "para": "p1",
-    "name": "时间4",
+    "name": "time4",
     "en": "the later period",
     "cn": "后一时期"
    },
    {
     "para": "p1",
-    "name": "时间5",
+    "name": "time5",
     "en": "the earlier period",
     "cn": "前一时期"
    },
    {
     "para": "p1",
-    "name": "时间6",
+    "name": "time6",
     "en": "the later period",
     "cn": "后一时期"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the market shares of Chinese, Japanese and American auto brands",
     "cn": "中国、日本与美国汽车品牌的市场份额"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "domestic auto brands",
     "cn": "国产汽车品牌"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "domestic auto brands",
     "cn": "国产汽车品牌"
    }
@@ -489,109 +489,109 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Chinese brands",
     "cn": "国产品牌",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "American brands",
     "cn": "美系品牌",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "Japanese brands",
     "cn": "日系品牌",
     "para": "第一段"
    },
    {
-    "name": "数字1",
+    "name": "num1",
     "en": "a modest share",
     "cn": "一个不大的份额",
     "para": "第一段"
    },
    {
-    "name": "数字2",
+    "name": "num2",
     "en": "the leading position",
     "cn": "领先地位",
     "para": "第一段"
    },
    {
-    "name": "数字3",
+    "name": "num3",
     "en": "a small share",
     "cn": "一个较小的份额",
     "para": "第一段"
    },
    {
-    "name": "数字4",
+    "name": "num4",
     "en": "a slightly larger share",
     "cn": "略大的份额",
     "para": "第一段"
    },
    {
-    "name": "数字5",
+    "name": "num5",
     "en": "their peak level",
     "cn": "其最高水平",
     "para": "第一段"
    },
    {
-    "name": "数字6",
+    "name": "num6",
     "en": "a much lower level",
     "cn": "远低于此的水平",
     "para": "第一段"
    },
    {
-    "name": "时间1",
+    "name": "time1",
     "en": "the earlier period",
     "cn": "前一时期",
     "para": "第一段"
    },
    {
-    "name": "时间2",
+    "name": "time2",
     "en": "the later period",
     "cn": "后一时期",
     "para": "第一段"
    },
    {
-    "name": "时间3",
+    "name": "time3",
     "en": "the earlier period",
     "cn": "前一时期",
     "para": "第一段"
    },
    {
-    "name": "时间4",
+    "name": "time4",
     "en": "the later period",
     "cn": "后一时期",
     "para": "第一段"
    },
    {
-    "name": "时间5",
+    "name": "time5",
     "en": "the earlier period",
     "cn": "前一时期",
     "para": "第一段"
    },
    {
-    "name": "时间6",
+    "name": "time6",
     "en": "the later period",
     "cn": "后一时期",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the market shares of Chinese, Japanese and American auto brands",
     "cn": "中国、日本与美国汽车品牌的市场份额",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "domestic auto brands",
     "cn": "国产汽车品牌",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "domestic auto brands",
     "cn": "国产汽车品牌",
     "para": "第三段"
@@ -610,48 +610,48 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
-    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
-    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
-    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "en": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
     "src": "校园类第二段（对应英语一品质类） · 模板第1句"
    },
    {
-    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "en": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
     "src": "校园类第二段（对应英语一品质类） · 模板第2句"
    },
    {
-    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "en": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
     "src": "校园类第二段（对应英语一品质类） · 模板第4句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    }
   ],
@@ -717,79 +717,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "The group over 50",
     "cn": "50 岁以上群体"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "those aged 41 to 50",
     "cn": "41 至 50 岁的员工"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "employees aged 31 to 40",
     "cn": "31 至 40 岁的员工"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "employees aged 40 or younger",
     "cn": "40 岁及以下员工"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "the remaining respondents",
     "cn": "其余受访者"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "40%",
     "cn": "40%"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "the lowest level",
     "cn": "最低水平"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "a modest level",
     "cn": "中等水平"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "16.7%",
     "cn": "16.7%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a still smaller share",
     "cn": "更小的比例"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "job satisfaction across the age groups",
     "cn": "各年龄段的工作满意度"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "job satisfaction",
     "cn": "工作满意度"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "job satisfaction",
     "cn": "工作满意度"
    }
@@ -802,79 +802,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "The group over 50",
     "cn": "50 岁以上群体",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "those aged 41 to 50",
     "cn": "41 至 50 岁的员工",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "employees aged 31 to 40",
     "cn": "31 至 40 岁的员工",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "employees aged 40 or younger",
     "cn": "40 岁及以下员工",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "the remaining respondents",
     "cn": "其余受访者",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "40%",
     "cn": "40%",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "the lowest level",
     "cn": "最低水平",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "a modest level",
     "cn": "中等水平",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "16.7%",
     "cn": "16.7%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a still smaller share",
     "cn": "更小的比例",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "job satisfaction across the age groups",
     "cn": "各年龄段的工作满意度",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "job satisfaction",
     "cn": "工作满意度",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "job satisfaction",
     "cn": "工作满意度",
     "para": "第三段"
@@ -893,38 +893,38 @@
   ],
   "key_phrases": [
    {
-    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "en": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
-    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "en": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
     "src": "校园类第二段（对应英语一品质类） · 模板第1句"
    },
    {
-    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "en": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
     "src": "校园类第二段（对应英语一品质类） · 模板第2句"
    },
    {
-    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "en": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
     "src": "校园类第二段（对应英语一品质类） · 模板第4句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -982,79 +982,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "The rate",
     "cn": "这一比例"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "the proportion in the graduation year",
     "cn": "毕业当年的比例"
    },
    {
     "para": "p1",
-    "name": "数字1",
+    "name": "num1",
     "en": "67.77%",
     "cn": "67.77%"
    },
    {
     "para": "p1",
-    "name": "数字2",
+    "name": "num2",
     "en": "88.24%",
     "cn": "88.24%"
    },
    {
     "para": "p1",
-    "name": "数字3",
+    "name": "num3",
     "en": "83.7%",
     "cn": "83.7%"
    },
    {
     "para": "p1",
-    "name": "数字4",
+    "name": "num4",
     "en": "88.24%",
     "cn": "88.24%"
    },
    {
     "para": "p1",
-    "name": "时间1",
+    "name": "time1",
     "en": "the first year",
     "cn": "大一"
    },
    {
     "para": "p1",
-    "name": "时间2",
+    "name": "time2",
     "en": "the final year",
     "cn": "大四"
    },
    {
     "para": "p1",
-    "name": "时间3",
+    "name": "time3",
     "en": "the third year",
     "cn": "大三"
    },
    {
     "para": "p1",
-    "name": "时间4",
+    "name": "time4",
     "en": "the final year",
     "cn": "大四"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the proportion of college students taking part-time jobs",
     "cn": "大学生兼职比例"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "part-time jobs",
     "cn": "兼职"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "part-time jobs",
     "cn": "兼职"
    }
@@ -1067,79 +1067,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "The rate",
     "cn": "这一比例",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "the proportion in the graduation year",
     "cn": "毕业当年的比例",
     "para": "第一段"
    },
    {
-    "name": "数字1",
+    "name": "num1",
     "en": "67.77%",
     "cn": "67.77%",
     "para": "第一段"
    },
    {
-    "name": "数字2",
+    "name": "num2",
     "en": "88.24%",
     "cn": "88.24%",
     "para": "第一段"
    },
    {
-    "name": "数字3",
+    "name": "num3",
     "en": "83.7%",
     "cn": "83.7%",
     "para": "第一段"
    },
    {
-    "name": "数字4",
+    "name": "num4",
     "en": "88.24%",
     "cn": "88.24%",
     "para": "第一段"
    },
    {
-    "name": "时间1",
+    "name": "time1",
     "en": "the first year",
     "cn": "大一",
     "para": "第一段"
    },
    {
-    "name": "时间2",
+    "name": "time2",
     "en": "the final year",
     "cn": "大四",
     "para": "第一段"
    },
    {
-    "name": "时间3",
+    "name": "time3",
     "en": "the third year",
     "cn": "大三",
     "para": "第一段"
    },
    {
-    "name": "时间4",
+    "name": "time4",
     "en": "the final year",
     "cn": "大四",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the proportion of college students taking part-time jobs",
     "cn": "大学生兼职比例",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "part-time jobs",
     "cn": "兼职",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "part-time jobs",
     "cn": "兼职",
     "para": "第三段"
@@ -1158,18 +1158,18 @@
   ],
   "key_phrases": [
    {
-    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "en": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
-    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。",
     "src": "经济类第二段 · 模板第2句"
    },
    {
@@ -1178,23 +1178,23 @@
     "src": "经济类第二段 · 模板第3句"
    },
    {
-    "en": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
-    "cn": "由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
+    "en": "Seen in this light, the development of {{topic}} is no coincidence but a natural consequence of broader changes in social life.",
+    "cn": "由此可见，{{topic}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
     "src": "经济类第二段 · 模板第5句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -1256,79 +1256,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "The urban population",
     "cn": "城镇人口"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "the rural population",
     "cn": "农村人口"
    },
    {
     "para": "p1",
-    "name": "数字1",
+    "name": "num1",
     "en": "300 million",
     "cn": "3 亿"
    },
    {
     "para": "p1",
-    "name": "数字2",
+    "name": "num2",
     "en": "670 million",
     "cn": "6.7 亿"
    },
    {
     "para": "p1",
-    "name": "数字3",
+    "name": "num3",
     "en": "820 million",
     "cn": "8.2 亿"
    },
    {
     "para": "p1",
-    "name": "数字4",
+    "name": "num4",
     "en": "680 million",
     "cn": "6.8 亿"
    },
    {
     "para": "p1",
-    "name": "时间1",
+    "name": "time1",
     "en": "1990",
     "cn": "1990 年"
    },
    {
     "para": "p1",
-    "name": "时间2",
+    "name": "time2",
     "en": "2010",
     "cn": "2010 年"
    },
    {
     "para": "p1",
-    "name": "时间3",
+    "name": "time3",
     "en": "1990",
     "cn": "1990 年"
    },
    {
     "para": "p1",
-    "name": "时间4",
+    "name": "time4",
     "en": "2010",
     "cn": "2010 年"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the urban and rural population",
     "cn": "城镇与农村人口"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "urbanization",
     "cn": "城镇化"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "urbanization",
     "cn": "城镇化"
    }
@@ -1341,79 +1341,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "The urban population",
     "cn": "城镇人口",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "the rural population",
     "cn": "农村人口",
     "para": "第一段"
    },
    {
-    "name": "数字1",
+    "name": "num1",
     "en": "300 million",
     "cn": "3 亿",
     "para": "第一段"
    },
    {
-    "name": "数字2",
+    "name": "num2",
     "en": "670 million",
     "cn": "6.7 亿",
     "para": "第一段"
    },
    {
-    "name": "数字3",
+    "name": "num3",
     "en": "820 million",
     "cn": "8.2 亿",
     "para": "第一段"
    },
    {
-    "name": "数字4",
+    "name": "num4",
     "en": "680 million",
     "cn": "6.8 亿",
     "para": "第一段"
    },
    {
-    "name": "时间1",
+    "name": "time1",
     "en": "1990",
     "cn": "1990 年",
     "para": "第一段"
    },
    {
-    "name": "时间2",
+    "name": "time2",
     "en": "2010",
     "cn": "2010 年",
     "para": "第一段"
    },
    {
-    "name": "时间3",
+    "name": "time3",
     "en": "1990",
     "cn": "1990 年",
     "para": "第一段"
    },
    {
-    "name": "时间4",
+    "name": "time4",
     "en": "2010",
     "cn": "2010 年",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the urban and rural population",
     "cn": "城镇与农村人口",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "urbanization",
     "cn": "城镇化",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "urbanization",
     "cn": "城镇化",
     "para": "第三段"
@@ -1432,28 +1432,28 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
-    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life.",
-    "cn": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
+    "en": "Growing public attention to {{topic}} stems from its ability to meet practical needs in everyday life.",
+    "cn": "{{topic}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
     "src": "经济类第二段 · 模板第1句"
    },
    {
-    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
-    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。",
     "src": "经济类第二段 · 模板第2句"
    },
    {
@@ -1462,18 +1462,18 @@
     "src": "经济类第二段 · 模板第3句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -1539,79 +1539,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Travelling, gift giving and dinners with friends or relatives",
     "cn": "旅行、送礼以及与亲友聚餐"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "gifts for colleagues",
     "cn": "给同事的礼物"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "household decorations",
     "cn": "家庭装饰"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "other items such as fireworks",
     "cn": "烟花等其他项目"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "miscellaneous spending",
     "cn": "杂项支出"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "80% of the total",
     "cn": "总额的 80%"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "a small share",
     "cn": "一个很小的比例"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "a smaller share",
     "cn": "更小的比例"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "12%",
     "cn": "12%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "8%",
     "cn": "8%"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "Spring Festival spending",
     "cn": "春节花销"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "festival spending",
     "cn": "节日花销"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "festival spending",
     "cn": "节日花销"
    }
@@ -1624,79 +1624,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Travelling, gift giving and dinners with friends or relatives",
     "cn": "旅行、送礼以及与亲友聚餐",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "gifts for colleagues",
     "cn": "给同事的礼物",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "household decorations",
     "cn": "家庭装饰",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "other items such as fireworks",
     "cn": "烟花等其他项目",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "miscellaneous spending",
     "cn": "杂项支出",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "80% of the total",
     "cn": "总额的 80%",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "a small share",
     "cn": "一个很小的比例",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "a smaller share",
     "cn": "更小的比例",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "12%",
     "cn": "12%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "8%",
     "cn": "8%",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "Spring Festival spending",
     "cn": "春节花销",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "festival spending",
     "cn": "节日花销",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "festival spending",
     "cn": "节日花销",
     "para": "第三段"
@@ -1715,48 +1715,48 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
-    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
-    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
-    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "en": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
     "src": "校园类第二段（对应英语一品质类） · 模板第1句"
    },
    {
-    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "en": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
     "src": "校园类第二段（对应英语一品质类） · 模板第2句"
    },
    {
-    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "en": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
     "src": "校园类第二段（对应英语一品质类） · 模板第4句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -1822,79 +1822,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Appreciating the beauty of the scenery",
     "cn": "欣赏风景"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "Relieving pressure",
     "cn": "缓解压力"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "other aims",
     "cn": "其他目的"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "making more friends",
     "cn": "广交朋友"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "fostering independence",
     "cn": "培养独立能力"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "37%",
     "cn": "37%"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "33%",
     "cn": "33%"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "15%",
     "cn": "15%"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "9%",
     "cn": "9%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "6%",
     "cn": "6%"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the purposes of travel among college students",
     "cn": "大学生的旅游目的"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "travel",
     "cn": "旅行"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "travel",
     "cn": "旅行"
    }
@@ -1907,79 +1907,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Appreciating the beauty of the scenery",
     "cn": "欣赏风景",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "Relieving pressure",
     "cn": "缓解压力",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "other aims",
     "cn": "其他目的",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "making more friends",
     "cn": "广交朋友",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "fostering independence",
     "cn": "培养独立能力",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "37%",
     "cn": "37%",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "33%",
     "cn": "33%",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "15%",
     "cn": "15%",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "9%",
     "cn": "9%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "6%",
     "cn": "6%",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the purposes of travel among college students",
     "cn": "大学生的旅游目的",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "travel",
     "cn": "旅行",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "travel",
     "cn": "旅行",
     "para": "第三段"
@@ -1998,18 +1998,18 @@
   ],
   "key_phrases": [
    {
-    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "en": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.",
-    "cn": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。",
+    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, showing a steady upward trend.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，呈现稳定上升趋势。",
     "src": "动态图表第一段 · 功能句1"
    },
    {
@@ -2018,8 +2018,8 @@
     "src": "文化自信类第二段 · 模板第1句"
    },
    {
-    "en": "{{题目相关词}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity.",
-    "cn": "{{题目相关词}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。",
+    "en": "{{topic}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity.",
+    "cn": "{{topic}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。",
     "src": "文化自信类第二段 · 模板第2句"
    },
    {
@@ -2028,13 +2028,13 @@
     "src": "文化自信类第二段 · 模板第3句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -2096,79 +2096,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "The number of museums",
     "cn": "博物馆数量"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "the number of visitors",
     "cn": "参观人数"
    },
    {
     "para": "p1",
-    "name": "数字1",
+    "name": "num1",
     "en": "4,169",
     "cn": "4169"
    },
    {
     "para": "p1",
-    "name": "数字2",
+    "name": "num2",
     "en": "4,692",
     "cn": "4692"
    },
    {
     "para": "p1",
-    "name": "数字3",
+    "name": "num3",
     "en": "637 million",
     "cn": "6.37 亿"
    },
    {
     "para": "p1",
-    "name": "数字4",
+    "name": "num4",
     "en": "954 million",
     "cn": "9.54 亿"
    },
    {
     "para": "p1",
-    "name": "时间1",
+    "name": "time1",
     "en": "2013",
     "cn": "2013 年"
    },
    {
     "para": "p1",
-    "name": "时间2",
+    "name": "time2",
     "en": "2015",
     "cn": "2015 年"
    },
    {
     "para": "p1",
-    "name": "时间3",
+    "name": "time3",
     "en": "2013",
     "cn": "2013 年"
    },
    {
     "para": "p1",
-    "name": "时间4",
+    "name": "time4",
     "en": "2015",
     "cn": "2015 年"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the number of museums and museum visitors",
     "cn": "博物馆数量与参观人数"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "museums",
     "cn": "博物馆"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "museums",
     "cn": "博物馆"
    }
@@ -2181,79 +2181,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "The number of museums",
     "cn": "博物馆数量",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "the number of visitors",
     "cn": "参观人数",
     "para": "第一段"
    },
    {
-    "name": "数字1",
+    "name": "num1",
     "en": "4,169",
     "cn": "4169",
     "para": "第一段"
    },
    {
-    "name": "数字2",
+    "name": "num2",
     "en": "4,692",
     "cn": "4692",
     "para": "第一段"
    },
    {
-    "name": "数字3",
+    "name": "num3",
     "en": "637 million",
     "cn": "6.37 亿",
     "para": "第一段"
    },
    {
-    "name": "数字4",
+    "name": "num4",
     "en": "954 million",
     "cn": "9.54 亿",
     "para": "第一段"
    },
    {
-    "name": "时间1",
+    "name": "time1",
     "en": "2013",
     "cn": "2013 年",
     "para": "第一段"
    },
    {
-    "name": "时间2",
+    "name": "time2",
     "en": "2015",
     "cn": "2015 年",
     "para": "第一段"
    },
    {
-    "name": "时间3",
+    "name": "time3",
     "en": "2013",
     "cn": "2013 年",
     "para": "第一段"
    },
    {
-    "name": "时间4",
+    "name": "time4",
     "en": "2015",
     "cn": "2015 年",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the number of museums and museum visitors",
     "cn": "博物馆数量与参观人数",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "museums",
     "cn": "博物馆",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "museums",
     "cn": "博物馆",
     "para": "第三段"
@@ -2272,33 +2272,33 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
-    "cn": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
-    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "Growing public attention to {{题目相关词}} stems from its ability to meet practical needs in everyday life.",
-    "cn": "{{题目相关词}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
+    "en": "Growing public attention to {{topic}} stems from its ability to meet practical needs in everyday life.",
+    "cn": "{{topic}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
     "src": "经济类第二段 · 模板第1句"
    },
    {
-    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
-    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。",
     "src": "经济类第二段 · 模板第2句"
    },
    {
@@ -2307,18 +2307,18 @@
     "src": "经济类第二段 · 模板第3句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -2388,79 +2388,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Distinguishing features",
     "cn": "餐厅特色"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "service",
     "cn": "服务"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "the dining environment",
     "cn": "就餐环境"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "price",
     "cn": "价格"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "other factors",
     "cn": "其他因素"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "36.3%",
     "cn": "36.3%"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "26.8%",
     "cn": "26.8%"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "23.8%",
     "cn": "23.8%"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "8.4%",
     "cn": "8.4%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "4.7%",
     "cn": "4.7%"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the factors consumers consider when choosing a restaurant",
     "cn": "消费者选择餐厅时的关注因素"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "dining out",
     "cn": "外出就餐"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "dining out",
     "cn": "外出就餐"
    }
@@ -2473,79 +2473,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Distinguishing features",
     "cn": "餐厅特色",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "service",
     "cn": "服务",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "the dining environment",
     "cn": "就餐环境",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "price",
     "cn": "价格",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "other factors",
     "cn": "其他因素",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "36.3%",
     "cn": "36.3%",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "26.8%",
     "cn": "26.8%",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "23.8%",
     "cn": "23.8%",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "8.4%",
     "cn": "8.4%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "4.7%",
     "cn": "4.7%",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the factors consumers consider when choosing a restaurant",
     "cn": "消费者选择餐厅时的关注因素",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "dining out",
     "cn": "外出就餐",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "dining out",
     "cn": "外出就餐",
     "para": "第三段"
@@ -2564,43 +2564,43 @@
   ],
   "key_phrases": [
    {
-    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "en": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "By contrast, {{事物3}} fell from {{数字5}} in {{时间5}} to {{数字6}} in {{时间6}}.",
-    "cn": "相比之下，{{事物3}} 由 {{时间5}} 的 {{数字5}} 下降至 {{时间6}} 的 {{数字6}}。",
+    "en": "By contrast, {{item3}} fell from {{num5}} in {{time5}} to {{num6}} in {{time6}}.",
+    "cn": "相比之下，{{item3}} 由 {{time5}} 的 {{num5}} 下降至 {{time6}} 的 {{num6}}。",
     "src": "动态图表第一段 · 模板第3句"
    },
    {
-    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
-    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "en": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
     "src": "校园类第二段（对应英语一品质类） · 模板第1句"
    },
    {
-    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "en": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
     "src": "校园类第二段（对应英语一品质类） · 模板第2句"
    },
    {
-    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "en": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
     "src": "校园类第二段（对应英语一品质类） · 模板第4句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -2662,109 +2662,109 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "the proportion entering employment",
     "cn": "就业比例"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "the proportion pursuing further education",
     "cn": "升学比例"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "the proportion starting a business",
     "cn": "创业比例"
    },
    {
     "para": "p1",
-    "name": "数字1",
+    "name": "num1",
     "en": "68.1%",
     "cn": "68.1%"
    },
    {
     "para": "p1",
-    "name": "数字2",
+    "name": "num2",
     "en": "60.7%",
     "cn": "60.7%"
    },
    {
     "para": "p1",
-    "name": "数字3",
+    "name": "num3",
     "en": "26.3%",
     "cn": "26.3%"
    },
    {
     "para": "p1",
-    "name": "数字4",
+    "name": "num4",
     "en": "34.0%",
     "cn": "34.0%"
    },
    {
     "para": "p1",
-    "name": "数字5",
+    "name": "num5",
     "en": "1.3%",
     "cn": "1.3%"
    },
    {
     "para": "p1",
-    "name": "数字6",
+    "name": "num6",
     "en": "2.6%",
     "cn": "2.6%"
    },
    {
     "para": "p1",
-    "name": "时间1",
+    "name": "time1",
     "en": "2013",
     "cn": "2013 年"
    },
    {
     "para": "p1",
-    "name": "时间2",
+    "name": "time2",
     "en": "2018",
     "cn": "2018 年"
    },
    {
     "para": "p1",
-    "name": "时间3",
+    "name": "time3",
     "en": "2013",
     "cn": "2013 年"
    },
    {
     "para": "p1",
-    "name": "时间4",
+    "name": "time4",
     "en": "2018",
     "cn": "2018 年"
    },
    {
     "para": "p1",
-    "name": "时间5",
+    "name": "time5",
     "en": "2013",
     "cn": "2013 年"
    },
    {
     "para": "p1",
-    "name": "时间6",
+    "name": "time6",
     "en": "2018",
     "cn": "2018 年"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "graduates' choices after university",
     "cn": "本科毕业生的去向"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "further education",
     "cn": "继续深造"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "further education",
     "cn": "继续深造"
    }
@@ -2777,109 +2777,109 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "the proportion entering employment",
     "cn": "就业比例",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "the proportion pursuing further education",
     "cn": "升学比例",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "the proportion starting a business",
     "cn": "创业比例",
     "para": "第一段"
    },
    {
-    "name": "数字1",
+    "name": "num1",
     "en": "68.1%",
     "cn": "68.1%",
     "para": "第一段"
    },
    {
-    "name": "数字2",
+    "name": "num2",
     "en": "60.7%",
     "cn": "60.7%",
     "para": "第一段"
    },
    {
-    "name": "数字3",
+    "name": "num3",
     "en": "26.3%",
     "cn": "26.3%",
     "para": "第一段"
    },
    {
-    "name": "数字4",
+    "name": "num4",
     "en": "34.0%",
     "cn": "34.0%",
     "para": "第一段"
    },
    {
-    "name": "数字5",
+    "name": "num5",
     "en": "1.3%",
     "cn": "1.3%",
     "para": "第一段"
    },
    {
-    "name": "数字6",
+    "name": "num6",
     "en": "2.6%",
     "cn": "2.6%",
     "para": "第一段"
    },
    {
-    "name": "时间1",
+    "name": "time1",
     "en": "2013",
     "cn": "2013 年",
     "para": "第一段"
    },
    {
-    "name": "时间2",
+    "name": "time2",
     "en": "2018",
     "cn": "2018 年",
     "para": "第一段"
    },
    {
-    "name": "时间3",
+    "name": "time3",
     "en": "2013",
     "cn": "2013 年",
     "para": "第一段"
    },
    {
-    "name": "时间4",
+    "name": "time4",
     "en": "2018",
     "cn": "2018 年",
     "para": "第一段"
    },
    {
-    "name": "时间5",
+    "name": "time5",
     "en": "2013",
     "cn": "2013 年",
     "para": "第一段"
    },
    {
-    "name": "时间6",
+    "name": "time6",
     "en": "2018",
     "cn": "2018 年",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "graduates' choices after university",
     "cn": "本科毕业生的去向",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "further education",
     "cn": "继续深造",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "further education",
     "cn": "继续深造",
     "para": "第三段"
@@ -2898,48 +2898,48 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
-    "cn": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
-    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
-    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "en": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
     "src": "校园类第二段（对应英语一品质类） · 模板第1句"
    },
    {
-    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "en": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
     "src": "校园类第二段（对应英语一品质类） · 模板第2句"
    },
    {
-    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "en": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
     "src": "校园类第二段（对应英语一品质类） · 模板第4句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    }
   ],
@@ -3005,79 +3005,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Gaining knowledge",
     "cn": "获取知识"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "killing time",
     "cn": "消磨时间"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "obtaining information",
     "cn": "获取信息"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "other purposes",
     "cn": "其他目的"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "the remaining aims",
     "cn": "其余目标"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "59.5%",
     "cn": "59.5%"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "21.3%",
     "cn": "21.3%"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "17.0%",
     "cn": "17.0%"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "2.2%",
     "cn": "2.2%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a negligible share",
     "cn": "微不足道的比例"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the purposes of mobile reading among college students",
     "cn": "大学生的手机阅读目的"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile reading",
     "cn": "手机阅读"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile reading",
     "cn": "手机阅读"
    }
@@ -3090,79 +3090,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Gaining knowledge",
     "cn": "获取知识",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "killing time",
     "cn": "消磨时间",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "obtaining information",
     "cn": "获取信息",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "other purposes",
     "cn": "其他目的",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "the remaining aims",
     "cn": "其余目标",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "59.5%",
     "cn": "59.5%",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "21.3%",
     "cn": "21.3%",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "17.0%",
     "cn": "17.0%",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "2.2%",
     "cn": "2.2%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a negligible share",
     "cn": "微不足道的比例",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the purposes of mobile reading among college students",
     "cn": "大学生的手机阅读目的",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile reading",
     "cn": "手机阅读",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "mobile reading",
     "cn": "手机阅读",
     "para": "第三段"
@@ -3181,23 +3181,23 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
-    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
-    "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
+    "en": "Changes reflected in {{topic}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
+    "cn": "{{topic}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
     "src": "体育健康类第二段 · 模板第1句"
    },
    {
@@ -3211,13 +3211,13 @@
     "src": "体育健康类第二段 · 模板第3句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -3279,79 +3279,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Working out alone",
     "cn": "独自锻炼"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "exercising with friends",
     "cn": "与朋友一起锻炼"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "working out with family members",
     "cn": "与家人一起锻炼"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "playing team sports",
     "cn": "参加团队运动"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "other forms of exercise",
     "cn": "其他锻炼形式"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "slightly over half of the respondents",
     "cn": "略超受访者半数"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "47.7%",
     "cn": "47.7%"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "23.9%",
     "cn": "23.9%"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "less than 16%",
     "cn": "不足 16%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a still smaller share",
     "cn": "更小的比例"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the exercise methods chosen by city residents",
     "cn": "城市居民的锻炼方式"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "physical exercise",
     "cn": "体育锻炼"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "physical exercise",
     "cn": "体育锻炼"
    }
@@ -3364,79 +3364,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Working out alone",
     "cn": "独自锻炼",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "exercising with friends",
     "cn": "与朋友一起锻炼",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "working out with family members",
     "cn": "与家人一起锻炼",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "playing team sports",
     "cn": "参加团队运动",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "other forms of exercise",
     "cn": "其他锻炼形式",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "slightly over half of the respondents",
     "cn": "略超受访者半数",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "47.7%",
     "cn": "47.7%",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "23.9%",
     "cn": "23.9%",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "less than 16%",
     "cn": "不足 16%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a still smaller share",
     "cn": "更小的比例",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the exercise methods chosen by city residents",
     "cn": "城市居民的锻炼方式",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "physical exercise",
     "cn": "体育锻炼",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "physical exercise",
     "cn": "体育锻炼",
     "para": "第三段"
@@ -3455,23 +3455,23 @@
   ],
   "key_phrases": [
    {
-    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "en": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.",
-    "cn": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。",
+    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, showing a steady upward trend.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，呈现稳定上升趋势。",
     "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{题目相关词}}.",
-    "cn": "毫无疑问，国家经济的飞速发展，为 {{题目相关词}} 的出现奠定了坚实的物质基础。",
+    "en": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}.",
+    "cn": "毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。",
     "src": "经济类第二段 · 模板第2句"
    },
    {
@@ -3480,18 +3480,18 @@
     "src": "经济类第二段 · 模板第3句"
    },
    {
-    "en": "Seen in this light, the development of {{题目相关词}} is no coincidence but a natural consequence of broader changes in social life.",
-    "cn": "由此可见，{{题目相关词}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
+    "en": "Seen in this light, the development of {{topic}} is no coincidence but a natural consequence of broader changes in social life.",
+    "cn": "由此可见，{{topic}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
     "src": "经济类第二段 · 模板第5句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -3553,79 +3553,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "The national volume",
     "cn": "全国业务量"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "the rural volume",
     "cn": "农村业务量"
    },
    {
     "para": "p1",
-    "name": "数字1",
+    "name": "num1",
     "en": "51 billion pieces",
     "cn": "510 亿件"
    },
    {
     "para": "p1",
-    "name": "数字2",
+    "name": "num2",
     "en": "83 billion pieces",
     "cn": "830 亿件"
    },
    {
     "para": "p1",
-    "name": "数字3",
+    "name": "num3",
     "en": "12 billion pieces",
     "cn": "120 亿件"
    },
    {
     "para": "p1",
-    "name": "数字4",
+    "name": "num4",
     "en": "30 billion pieces",
     "cn": "300 亿件"
    },
    {
     "para": "p1",
-    "name": "时间1",
+    "name": "time1",
     "en": "2018",
     "cn": "2018 年"
    },
    {
     "para": "p1",
-    "name": "时间2",
+    "name": "time2",
     "en": "2020",
     "cn": "2020 年"
    },
    {
     "para": "p1",
-    "name": "时间3",
+    "name": "time3",
     "en": "2018",
     "cn": "2018 年"
    },
    {
     "para": "p1",
-    "name": "时间4",
+    "name": "time4",
     "en": "2020",
     "cn": "2020 年"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "express delivery volumes nationwide and in rural areas",
     "cn": "全国与农村的快递业务量"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "express delivery",
     "cn": "快递服务"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "express delivery",
     "cn": "快递服务"
    }
@@ -3638,79 +3638,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "The national volume",
     "cn": "全国业务量",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "the rural volume",
     "cn": "农村业务量",
     "para": "第一段"
    },
    {
-    "name": "数字1",
+    "name": "num1",
     "en": "51 billion pieces",
     "cn": "510 亿件",
     "para": "第一段"
    },
    {
-    "name": "数字2",
+    "name": "num2",
     "en": "83 billion pieces",
     "cn": "830 亿件",
     "para": "第一段"
    },
    {
-    "name": "数字3",
+    "name": "num3",
     "en": "12 billion pieces",
     "cn": "120 亿件",
     "para": "第一段"
    },
    {
-    "name": "数字4",
+    "name": "num4",
     "en": "30 billion pieces",
     "cn": "300 亿件",
     "para": "第一段"
    },
    {
-    "name": "时间1",
+    "name": "time1",
     "en": "2018",
     "cn": "2018 年",
     "para": "第一段"
    },
    {
-    "name": "时间2",
+    "name": "time2",
     "en": "2020",
     "cn": "2020 年",
     "para": "第一段"
    },
    {
-    "name": "时间3",
+    "name": "time3",
     "en": "2018",
     "cn": "2018 年",
     "para": "第一段"
    },
    {
-    "name": "时间4",
+    "name": "time4",
     "en": "2020",
     "cn": "2020 年",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "express delivery volumes nationwide and in rural areas",
     "cn": "全国与农村的快递业务量",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "express delivery",
     "cn": "快递服务",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "express delivery",
     "cn": "快递服务",
     "para": "第三段"
@@ -3729,23 +3729,23 @@
   ],
   "key_phrases": [
    {
-    "en": "The line chart shows that the items associated with {{题目相关词}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{题目相关词}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
+    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} climbed from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}, while {{事物2}} rose from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}.",
-    "cn": "{{事物1}} 由 {{时间1}} 的 {{数字1}} 上升至 {{时间2}} 的 {{数字2}}，{{事物2}} 则从 {{时间3}} 的 {{数字3}} 增至 {{时间4}} 的 {{数字4}}。",
+    "en": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
+    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "From {{时间1}} to {{时间2}}, {{事物1}} rose from {{数字1}} to {{数字2}}, showing a steady upward trend.",
-    "cn": "自 {{时间1}} 至 {{时间2}}，{{事物1}} 由 {{数字1}} 升至 {{数字2}}，呈现稳定上升趋势。",
+    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, showing a steady upward trend.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，呈现稳定上升趋势。",
     "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
-    "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
+    "en": "Changes reflected in {{topic}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
+    "cn": "{{topic}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
     "src": "体育健康类第二段 · 模板第1句"
    },
    {
@@ -3754,18 +3754,18 @@
     "src": "体育健康类第二段 · 模板第3句"
    },
    {
-    "en": "For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
-    "cn": "正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
+    "en": "For this reason, {{topic}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
+    "cn": "正因如此，{{topic}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
     "src": "体育健康类第二段 · 模板第4句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    },
    {
-    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{题目相关词}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{题目相关词}} 真正服务于自身的长期发展。",
+    "en": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
+    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
     "src": "第三段 · 正面版 · 模板第4句"
    }
   ],
@@ -3827,79 +3827,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "The health literacy rate",
     "cn": "健康素养水平"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "the rate in the same period",
     "cn": "同期的这一比例"
    },
    {
     "para": "p1",
-    "name": "数字1",
+    "name": "num1",
     "en": "8.80%",
     "cn": "8.80%"
    },
    {
     "para": "p1",
-    "name": "数字2",
+    "name": "num2",
     "en": "25.40%",
     "cn": "25.40%"
    },
    {
     "para": "p1",
-    "name": "数字3",
+    "name": "num3",
     "en": "8.80%",
     "cn": "8.80%"
    },
    {
     "para": "p1",
-    "name": "数字4",
+    "name": "num4",
     "en": "25.40%",
     "cn": "25.40%"
    },
    {
     "para": "p1",
-    "name": "时间1",
+    "name": "time1",
     "en": "2012",
     "cn": "2012 年"
    },
    {
     "para": "p1",
-    "name": "时间2",
+    "name": "time2",
     "en": "2021",
     "cn": "2021 年"
    },
    {
     "para": "p1",
-    "name": "时间3",
+    "name": "time3",
     "en": "2012",
     "cn": "2012 年"
    },
    {
     "para": "p1",
-    "name": "时间4",
+    "name": "time4",
     "en": "2021",
     "cn": "2021 年"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the health literacy rate of Chinese residents",
     "cn": "中国居民的健康素养水平"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "health literacy",
     "cn": "健康素养"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "health literacy",
     "cn": "健康素养"
    }
@@ -3912,79 +3912,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "The health literacy rate",
     "cn": "健康素养水平",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "the rate in the same period",
     "cn": "同期的这一比例",
     "para": "第一段"
    },
    {
-    "name": "数字1",
+    "name": "num1",
     "en": "8.80%",
     "cn": "8.80%",
     "para": "第一段"
    },
    {
-    "name": "数字2",
+    "name": "num2",
     "en": "25.40%",
     "cn": "25.40%",
     "para": "第一段"
    },
    {
-    "name": "数字3",
+    "name": "num3",
     "en": "8.80%",
     "cn": "8.80%",
     "para": "第一段"
    },
    {
-    "name": "数字4",
+    "name": "num4",
     "en": "25.40%",
     "cn": "25.40%",
     "para": "第一段"
    },
    {
-    "name": "时间1",
+    "name": "time1",
     "en": "2012",
     "cn": "2012 年",
     "para": "第一段"
    },
    {
-    "name": "时间2",
+    "name": "time2",
     "en": "2021",
     "cn": "2021 年",
     "para": "第一段"
    },
    {
-    "name": "时间3",
+    "name": "time3",
     "en": "2012",
     "cn": "2012 年",
     "para": "第一段"
    },
    {
-    "name": "时间4",
+    "name": "time4",
     "en": "2021",
     "cn": "2021 年",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the health literacy rate of Chinese residents",
     "cn": "中国居民的健康素养水平",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "health literacy",
     "cn": "健康素养",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "health literacy",
     "cn": "健康素养",
     "para": "第三段"
@@ -4003,28 +4003,28 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
-    "cn": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
-    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "en": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
     "src": "校园类第二段（对应英语一品质类） · 模板第2句"
    },
    {
@@ -4033,18 +4033,18 @@
     "src": "校园类第二段（对应英语一品质类） · 模板第3句"
    },
    {
-    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "en": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
     "src": "校园类第二段（对应英语一品质类） · 模板第4句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    }
   ],
@@ -4110,79 +4110,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Gaining relevant knowledge",
     "cn": "获得相关知识"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "improving practical ability",
     "cn": "提升实践能力"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "obtaining cheerful moods",
     "cn": "获得愉悦心情"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "enhancing cooperative ability",
     "cn": "增强合作能力"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "other gains",
     "cn": "其他收获"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "91.3%",
     "cn": "91.3%"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "84.8%",
     "cn": "84.8%"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "54.4%",
     "cn": "54.4%"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "32.6%",
     "cn": "32.6%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a still smaller share",
     "cn": "更小的比例"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the benefits students gained from labor practice courses",
     "cn": "学生从劳动实践课中得到的收获"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "labor practice courses",
     "cn": "劳动实践课"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "labor practice courses",
     "cn": "劳动实践课"
    }
@@ -4195,79 +4195,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Gaining relevant knowledge",
     "cn": "获得相关知识",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "improving practical ability",
     "cn": "提升实践能力",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "obtaining cheerful moods",
     "cn": "获得愉悦心情",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "enhancing cooperative ability",
     "cn": "增强合作能力",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "other gains",
     "cn": "其他收获",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "91.3%",
     "cn": "91.3%",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "84.8%",
     "cn": "84.8%",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "54.4%",
     "cn": "54.4%",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "32.6%",
     "cn": "32.6%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a still smaller share",
     "cn": "更小的比例",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the benefits students gained from labor practice courses",
     "cn": "学生从劳动实践课中得到的收获",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "labor practice courses",
     "cn": "劳动实践课",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "labor practice courses",
     "cn": "劳动实践课",
     "para": "第三段"
@@ -4286,28 +4286,28 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{事物2}} and {{事物3}} form the middle group, representing {{百分比2}} and {{百分比3}}, respectively.",
-    "cn": "{{事物2}} 和 {{事物3}} 处于中间位置，分别占 {{百分比2}} 和 {{百分比3}}。",
+    "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
-    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "Changes reflected in {{题目相关词}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
-    "cn": "{{题目相关词}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
+    "en": "Changes reflected in {{topic}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
+    "cn": "{{topic}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
     "src": "体育健康类第二段 · 模板第1句"
    },
    {
@@ -4316,18 +4316,18 @@
     "src": "体育健康类第二段 · 模板第3句"
    },
    {
-    "en": "For this reason, {{题目相关词}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
-    "cn": "正因如此，{{题目相关词}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
+    "en": "For this reason, {{topic}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
+    "cn": "正因如此，{{topic}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
     "src": "体育健康类第二段 · 模板第4句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    }
   ],
@@ -4393,79 +4393,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Watching television",
     "cn": "看电视"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "taking walks",
     "cn": "散步"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "planting flowers",
     "cn": "养花"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "reading",
     "cn": "阅读"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "playing chess",
     "cn": "下棋"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "90.8%",
     "cn": "90.8%"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "68.3%",
     "cn": "68.3%"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "34.7%",
     "cn": "34.7%"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "31.8%",
     "cn": "31.8%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "18.4%",
     "cn": "18.4%"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the leisure activities of the elderly",
     "cn": "老年人的日常休闲活动"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the leisure activities of the elderly",
     "cn": "老年人的休闲活动"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the leisure activities of the elderly",
     "cn": "老年人的休闲活动"
    }
@@ -4478,79 +4478,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Watching television",
     "cn": "看电视",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "taking walks",
     "cn": "散步",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "planting flowers",
     "cn": "养花",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "reading",
     "cn": "阅读",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "playing chess",
     "cn": "下棋",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "90.8%",
     "cn": "90.8%",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "68.3%",
     "cn": "68.3%",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "34.7%",
     "cn": "34.7%",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "31.8%",
     "cn": "31.8%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "18.4%",
     "cn": "18.4%",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the leisure activities of the elderly",
     "cn": "老年人的日常休闲活动",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the leisure activities of the elderly",
     "cn": "老年人的休闲活动",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the leisure activities of the elderly",
     "cn": "老年人的休闲活动",
     "para": "第三段"
@@ -4569,48 +4569,48 @@
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{题目相关词}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{题目相关词}} 有关的不同类别之间不均衡的分布情况。",
+    "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
+    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{事物1}} accounts for the largest share, at {{百分比1}}.",
-    "cn": "{{事物1}} 所占比例最大，达到 {{百分比1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "In contrast, {{事物4}} and {{事物5}} make up relatively small proportions of {{百分比4}} and {{百分比5}}.",
-    "cn": "相比之下，{{事物4}} 和 {{事物5}} 所占比例较小，分别为 {{百分比4}} 和 {{百分比5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "As for {{事物1}} and {{事物2}}, they register {{百分比1}} and {{百分比2}} respectively.",
-    "cn": "就 {{事物1}} 与 {{事物2}} 而言，它们分别为 {{百分比1}} 和 {{百分比2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
-    "en": "The influence of {{题目相关词}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
-    "cn": "{{题目相关词}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
+    "en": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
+    "cn": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
     "src": "校园类第二段（对应英语一品质类） · 模板第1句"
    },
    {
-    "en": "{{题目相关词}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "cn": "{{题目相关词}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "en": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
+    "cn": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
     "src": "校园类第二段（对应英语一品质类） · 模板第2句"
    },
    {
-    "en": "Ultimately, {{题目相关词}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "cn": "最终，{{题目相关词}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "en": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
+    "cn": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
     "src": "校园类第二段（对应英语一品质类） · 模板第4句"
    },
    {
-    "en": "For {{题目相关词}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{题目相关词}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
+    "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
+    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
     "src": "第三段 · 正面版 · 模板第1句"
    },
    {
-    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{题目相关词}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{题目相关词}} 发挥作用创造良好条件。",
+    "en": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
+    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
     "src": "第三段 · 正面版 · 模板第2句"
    }
   ],
@@ -4676,79 +4676,79 @@
    },
    {
     "para": "p1",
-    "name": "事物1",
+    "name": "item1",
     "en": "Satisfying curiosity",
     "cn": "满足好奇心"
    },
    {
     "para": "p1",
-    "name": "事物2",
+    "name": "item2",
     "en": "enhancing observation skills",
     "cn": "促进观察力"
    },
    {
     "para": "p1",
-    "name": "事物3",
+    "name": "item3",
     "en": "improving physical fitness",
     "cn": "强身健体"
    },
    {
     "para": "p1",
-    "name": "事物4",
+    "name": "item4",
     "en": "strengthening parent-child interaction",
     "cn": "增强亲子互动"
    },
    {
     "para": "p1",
-    "name": "事物5",
+    "name": "item5",
     "en": "other benefits",
     "cn": "其他益处"
    },
    {
     "para": "p1",
-    "name": "百分比1",
+    "name": "pct1",
     "en": "54.6%",
     "cn": "54.6%"
    },
    {
     "para": "p1",
-    "name": "百分比2",
+    "name": "pct2",
     "en": "54.5%",
     "cn": "54.5%"
    },
    {
     "para": "p1",
-    "name": "百分比3",
+    "name": "pct3",
     "en": "37.2%",
     "cn": "37.2%"
    },
    {
     "para": "p1",
-    "name": "百分比4",
+    "name": "pct4",
     "en": "33.2%",
     "cn": "33.2%"
    },
    {
     "para": "p1",
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a still smaller share",
     "cn": "更小的比例"
    },
    {
     "para": "p1",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the perceived benefits of children's outdoor activities",
     "cn": "人们看重的儿童户外活动益处"
    },
    {
     "para": "p2",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "outdoor activities",
     "cn": "户外活动"
    },
    {
     "para": "p3",
-    "name": "题目相关词",
+    "name": "topic",
     "en": "outdoor activities",
     "cn": "户外活动"
    }
@@ -4761,79 +4761,79 @@
     "para": "第一段"
    },
    {
-    "name": "事物1",
+    "name": "item1",
     "en": "Satisfying curiosity",
     "cn": "满足好奇心",
     "para": "第一段"
    },
    {
-    "name": "事物2",
+    "name": "item2",
     "en": "enhancing observation skills",
     "cn": "促进观察力",
     "para": "第一段"
    },
    {
-    "name": "事物3",
+    "name": "item3",
     "en": "improving physical fitness",
     "cn": "强身健体",
     "para": "第一段"
    },
    {
-    "name": "事物4",
+    "name": "item4",
     "en": "strengthening parent-child interaction",
     "cn": "增强亲子互动",
     "para": "第一段"
    },
    {
-    "name": "事物5",
+    "name": "item5",
     "en": "other benefits",
     "cn": "其他益处",
     "para": "第一段"
    },
    {
-    "name": "百分比1",
+    "name": "pct1",
     "en": "54.6%",
     "cn": "54.6%",
     "para": "第一段"
    },
    {
-    "name": "百分比2",
+    "name": "pct2",
     "en": "54.5%",
     "cn": "54.5%",
     "para": "第一段"
    },
    {
-    "name": "百分比3",
+    "name": "pct3",
     "en": "37.2%",
     "cn": "37.2%",
     "para": "第一段"
    },
    {
-    "name": "百分比4",
+    "name": "pct4",
     "en": "33.2%",
     "cn": "33.2%",
     "para": "第一段"
    },
    {
-    "name": "百分比5",
+    "name": "pct5",
     "en": "a still smaller share",
     "cn": "更小的比例",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "the perceived benefits of children's outdoor activities",
     "cn": "人们看重的儿童户外活动益处",
     "para": "第一段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "outdoor activities",
     "cn": "户外活动",
     "para": "第二段"
    },
    {
-    "name": "题目相关词",
+    "name": "topic",
     "en": "outdoor activities",
     "cn": "户外活动",
     "para": "第三段"

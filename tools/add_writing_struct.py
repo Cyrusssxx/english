@@ -45,12 +45,12 @@ def check(sec_id, sents, structs):
 S = {}
 S['chart_static'] = [
     [["The {{chart}} chart", "t"], [" presents", "p"], [" an uneven distribution", "o"],
-     [" among the categories associated with {{题目相关词}}", ""], ["."]],
-    [["{{事物1}}", "t"], [" accounts for", "p"], [" the largest share", "o"], [", at {{百分比1}}", ""], ["."]],
-    [["{{事物2}} and {{事物3}}", "t"], [" form", "p"], [" the middle group", "o"],
-     [", representing {{百分比2}} and {{百分比3}}, respectively", ""], ["."]],
-    [["In contrast", "trans"], [", ", ""], ["{{事物4}} and {{事物5}}", "t"], [" make up", "p"],
-     [" relatively small proportions of {{百分比4}} and {{百分比5}}", ""], ["."]],
+     [" among the categories associated with {{topic}}", ""], ["."]],
+    [["{{item1}}", "t"], [" accounts for", "p"], [" the largest share", "o"], [", at {{pct1}}", ""], ["."]],
+    [["{{item2}} and {{item3}}", "t"], [" form", "p"], [" the middle group", "o"],
+     [", representing {{pct2}} and {{pct3}}, respectively", ""], ["."]],
+    [["In contrast", "trans"], [", ", ""], ["{{item4}} and {{item5}}", "t"], [" make up", "p"],
+     [" relatively small proportions of {{pct4}} and {{pct5}}", ""], ["."]],
 ]
 P = {}
 P['chart_static'] = [
@@ -66,13 +66,13 @@ P['chart_static'] = [
 
 S['chart_dynamic'] = [
     [["The line chart", "t"], [" shows", "p"], [" that", "lead"],
-     [" the items associated with {{题目相关词}}", "t"], [" did not move in a uniform direction", "p"],
+     [" the items associated with {{topic}}", "t"], [" did not move in a uniform direction", "p"],
      [" during the periods presented", ""], ["."]],
-    [["{{事物1}}", "t"], [" climbed", "p"], [" from {{数字1}} in {{时间1}} to {{数字2}} in {{时间2}}", ""],
-     [", while", "trans"], [" {{事物2}}", "t"], [" rose", "p"],
-     [" from {{数字3}} in {{时间3}} to {{数字4}} in {{时间4}}", ""], ["."]],
-    [["By contrast", "trans"], [", ", ""], ["{{事物3}}", "t"], [" fell", "p"],
-     [" from {{数字5}} in {{时间5}} to {{数字6}} in {{时间6}}", ""], ["."]],
+    [["{{item1}}", "t"], [" climbed", "p"], [" from {{num1}} in {{time1}} to {{num2}} in {{time2}}", ""],
+     [", while", "trans"], [" {{item2}}", "t"], [" rose", "p"],
+     [" from {{num3}} in {{time3}} to {{num4}} in {{time4}}", ""], ["."]],
+    [["By contrast", "trans"], [", ", ""], ["{{item3}}", "t"], [" fell", "p"],
+     [" from {{num5}} in {{time5}} to {{num6}} in {{time6}}", ""], ["."]],
 ]
 P['chart_dynamic'] = [
     ["shows that", "表明（引出宾语从句）"],
@@ -88,17 +88,17 @@ P['chart_dynamic'] = [
 ]
 
 S['para2_economy'] = [
-    [["Growing public attention to {{题目相关词}}", "t"], [" stems from", "p"],
+    [["Growing public attention to {{topic}}", "t"], [" stems from", "p"],
      [" its ability to meet practical needs in everyday life", "o"], ["."]],
     [["Undoubtedly", ""], [", the country's rapid economic growth", "t"], [" has laid", "p"],
-     [" a solid material foundation", "o"], [" for the emergence of {{题目相关词}}", ""], ["."]],
+     [" a solid material foundation", "o"], [" for the emergence of {{topic}}", ""], ["."]],
     [["As", "lead"], [" the pace of life accelerates", ""], [", individuals", "t"], [" attach", "p"],
      [" greater importance to convenience and efficiency", "o"],
      [" and become increasingly willing to embrace new ways of living", "p"], ["."]],
-    [["Consequently", "caus"], [", ", ""], ["{{题目相关词}}", "t"],
+    [["Consequently", "caus"], [", ", ""], ["{{topic}}", "t"],
      [" has gradually become integrated into", "p"], [" everyday life", "o"], [", while", "trans"],
      [" its practical value", "t"], [" has gained", "p"], [" wider recognition", "o"], ["."]],
-    [["Seen in this light", ""], [", the development of {{题目相关词}}", "t"],
+    [["Seen in this light", ""], [", the development of {{topic}}", "t"],
      [" is no coincidence but a natural consequence of broader changes in social life", "p"], ["."]],
 ]
 P['para2_economy'] = [
@@ -115,30 +115,30 @@ P['para2_economy'] = [
 ]
 
 S['para2_campus'] = [
-    [["The influence of {{题目相关词}}", "t"], [" is not confined to", "p"], [" a single action", "o"],
+    [["The influence of {{topic}}", "t"], [" is not confined to", "p"], [" a single action", "o"],
      ["; rather", "trans"], [", it", "t"], [" continues to shape", "p"],
      [" the way individuals handle everyday responsibilities", "o"], ["."]],
-    [["{{题目相关词}}", "t"], [" can enable", "p"],
+    [["{{topic}}", "t"], [" can enable", "p"],
      [" individuals to approach routine tasks with greater maturity", "o"],
      [", preventing them from giving up too readily in the face of temporary difficulties", ""], ["."]],
     [["In this process", ""], [", individuals", "t"], [" gradually become", "p"],
      [" less dependent on external reminders", "o"], [" and begin to take responsibility for their own choices", "p"],
      ["."]],
-    [["Ultimately", ""], [", {{题目相关词}}", "t"], [" can not only improve", "p"], [" individuals' present conduct", "o"],
+    [["Ultimately", ""], [", {{topic}}", "t"], [" can not only improve", "p"], [" individuals' present conduct", "o"],
      [" but also strengthen", "p"], [" their capacity for self-management", "o"], [", thereby", "caus"],
      [" laying a solid foundation for their future growth", ""], ["."]],
 ]
 S['para2_campus_neg'] = [
-    [["The harmful influence of {{题目相关词}}", "t"], [" is not confined to", "p"], [" a single action", "o"],
+    [["The harmful influence of {{topic}}", "t"], [" is not confined to", "p"], [" a single action", "o"],
      ["; rather", "trans"], [", it", "t"], [" can continue to disrupt", "p"],
      [" the way individuals handle everyday responsibilities", "o"], ["."]],
-    [["{{题目相关词}}", "t"], [" can cause", "p"],
+    [["{{topic}}", "t"], [" can cause", "p"],
      [" individuals to approach routine tasks with less commitment", "o"],
      [", making them more likely to give up", ""], [" when", "lead"], [" temporary difficulties arise", ""], ["."]],
     [["In this process", ""], [", individuals", "t"], [" may become", "p"],
      [" increasingly dependent on external reminders and less willing to take responsibility for their own choices", "o"],
      ["."]],
-    [["Ultimately", ""], [", {{题目相关词}}", "t"], [" can not only undermine", "p"], [" individuals' present conduct", "o"],
+    [["Ultimately", ""], [", {{topic}}", "t"], [" can not only undermine", "p"], [" individuals' present conduct", "o"],
      [" but also weaken", "p"], [" their capacity for self-management", "o"], [", thereby", "caus"],
      [" creating a persistent obstacle to future growth", ""], ["."]],
 ]
@@ -156,7 +156,7 @@ P['para2_campus'] = [
 ]
 
 S['para2_env'] = [
-    [["Changes reflected in {{题目相关词}}", "t"], [" are closely linked to", "p"],
+    [["Changes reflected in {{topic}}", "t"], [" are closely linked to", "p"],
      [" rising public awareness of environmental protection and increasingly favorable conditions for environmental action", "o"],
      ["."]],
     [["Improved environmental infrastructure", "t"], [" makes it easier", "p"],
@@ -165,7 +165,7 @@ S['para2_env'] = [
      [" different groups to make choices suited to their own circumstances", "o"], ["."]],
     [["As", "lead"], [" environmental protection becomes increasingly integrated into everyday life", ""],
      [", the number of people willing to take part in related initiatives", "t"], [" will continue to grow", "p"], ["."]],
-    [["For this reason", "caus"], [", ", ""], ["{{题目相关词}}", "t"], [" not only reflects", "p"],
+    [["For this reason", "caus"], [", ", ""], ["{{topic}}", "t"], [" not only reflects", "p"],
      [" the continued advancement of ecological conservation", "o"], [" but also demonstrates", "p"],
      [" the growing acceptance of green living", "o"], ["."]],
 ]
@@ -183,7 +183,7 @@ P['para2_env'] = [
 ]
 
 S['para2_sports'] = [
-    [["Changes reflected in {{题目相关词}}", "t"], [" are closely linked to", "p"],
+    [["Changes reflected in {{topic}}", "t"], [" are closely linked to", "p"],
      [" rising public awareness of personal health and increasingly favorable conditions for physical exercise", "o"],
      ["."]],
     [["Improved sports infrastructure", "t"], [" makes it easier", "p"],
@@ -192,7 +192,7 @@ S['para2_sports'] = [
      [" different groups to make choices suited to their own circumstances", "o"], ["."]],
     [["As", "lead"], [" physical exercise becomes increasingly integrated into everyday life", ""],
      [", the number of people willing to take part in related activities", "t"], [" will continue to grow", "p"], ["."]],
-    [["For this reason", "caus"], [", ", ""], ["{{题目相关词}}", "t"], [" not only reflects", "p"],
+    [["For this reason", "caus"], [", ", ""], ["{{topic}}", "t"], [" not only reflects", "p"],
      [" the continued advancement of national fitness", "o"], [" but also demonstrates", "p"],
      [" the growing acceptance of healthy living", "o"], ["."]],
 ]
@@ -211,13 +211,13 @@ S['para2_culture'] = [
     [["Traditional culture", "t"], [" cannot be effectively conveyed", "p"],
      [" through the one-way delivery of content alone", ""], ["; its modes of expression", "t"],
      [" must also be adjusted", "p"], [" in response to real-world feedback", ""], ["."]],
-    [["{{题目相关词}}", "t"], [" can establish", "p"],
+    [["{{topic}}", "t"], [" can establish", "p"],
      [" a channel of communication between traditional culture and the public", "o"],
      [", allowing cultural content to be explained with greater clarity", ""], ["."]],
     [["Public participation", "t"], [" can also give rise to", "p"], [" new forms of cultural expression", "o"],
      [", enabling traditional culture to adapt to social change", ""], [" while", "trans"],
      [" preserving its core values", ""], ["."]],
-    [["Seen from this perspective", ""], [", ", ""], ["{{题目相关词}}", "t"], [" not only enhances", "p"],
+    [["Seen from this perspective", ""], [", ", ""], ["{{topic}}", "t"], [" not only enhances", "p"],
      [" the effectiveness of cultural transmission", "o"], [" but also strengthens", "p"],
      [" traditional culture's capacity to remain relevant to contemporary life", "o"], ["."]],
 ]
@@ -234,17 +234,17 @@ P['para2_culture'] = [
 ]
 
 S['para3_positive'] = [
-    [["For {{题目相关词}} to continue exerting a positive influence on personal growth", ""],
+    [["For {{topic}} to continue exerting a positive influence on personal growth", ""],
      [", concerted efforts from all sectors of society", "t"], [" are essential", "p"], ["."]],
     [["Relevant authorities", "t"], [" should provide", "p"], [" the necessary support", "o"],
      [" and create", "p"], [" favorable conditions", "o"], [" under which", "lead"],
-     [" {{题目相关词}} can play a constructive role", ""], ["."]],
-    [["Media organizations", "t"], [" should present", "p"], [" the practical value of {{题目相关词}}", "o"],
+     [" {{topic}} can play a constructive role", ""], ["."]],
+    [["Media organizations", "t"], [" should present", "p"], [" the practical value of {{topic}}", "o"],
      [" objectively", ""], [", thereby", "caus"],
-     [" helping the public develop a sound understanding of {{题目相关词}}", ""], ["."]],
+     [" helping the public develop a sound understanding of {{topic}}", ""], ["."]],
     [["Individuals", "t"], [" should also make", "p"], [" well-informed choices", "o"],
      [" in light of their own circumstances", ""], [", ensuring", ""], [" that", "lead"],
-     [" {{题目相关词}} genuinely contributes to their long-term development", ""], ["."]],
+     [" {{topic}} genuinely contributes to their long-term development", ""], ["."]],
 ]
 P['para3_positive'] = [
     ["For … to continue exerting a positive influence on …", "为了让…持续对…发挥积极作用"],
@@ -260,16 +260,16 @@ P['para3_positive'] = [
 ]
 
 S['para3_negative'] = [
-    [["For the harmful effects of {{题目相关词}} on personal growth to be effectively contained", ""],
+    [["For the harmful effects of {{topic}} on personal growth to be effectively contained", ""],
      [", concerted efforts across society", "t"], [" are essential", "p"], ["."]],
     [["Relevant authorities", "t"], [" should strengthen", "p"], [" regulatory oversight", "o"],
-     [" and keep", "p"], [" {{题目相关词}} within clear and reasonable limits", "o"], ["."]],
-    [["Media organizations", "t"], [" should present", "p"], [" the potential risks of {{题目相关词}}", "o"],
+     [" and keep", "p"], [" {{topic}} within clear and reasonable limits", "o"], ["."]],
+    [["Media organizations", "t"], [" should present", "p"], [" the potential risks of {{topic}}", "o"],
      [" objectively", ""], [", thereby", "caus"],
-     [" helping the public develop a sound understanding of {{题目相关词}}", ""], ["."]],
+     [" helping the public develop a sound understanding of {{topic}}", ""], ["."]],
     [["Individuals", "t"], [" should also remain", "p"], [" vigilant", "o"],
      [" in light of their own circumstances", ""], [" and guard against", "p"], [" any threat", "o"],
-     [" that", "lead"], [" {{题目相关词}} may pose to their long-term development", ""], ["."]],
+     [" that", "lead"], [" {{topic}} may pose to their long-term development", ""], ["."]],
 ]
 P['para3_negative'] = [
     ["the harmful effects of … on …", "…对…的有害影响"],

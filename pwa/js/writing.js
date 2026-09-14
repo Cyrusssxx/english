@@ -226,7 +226,7 @@ async function wrAddVocab(btn) {
 function wrWordBind() {
     document.addEventListener('click', e => {
         const w = e.target.closest('.word');
-        if (w && !e.target.closest('.wr-pop-c')) {
+        if (w && !e.target.closest('.wr-pop-c') && !e.target.closest('mark.note-hl')) {
             e.stopPropagation();
             const line = w.closest('.wr-line, .wr-sent');
             wrWordPop(w);
@@ -237,33 +237,40 @@ function wrWordBind() {
     }, true);   // 捕获阶段先执行，stopPropagation 避免与卡片其他点击冲突
 }
 
-/* ==================== 正文划词高亮（4 色荧光笔：选中文字 → 点色块） ==================== */
+/* ==================== 正文划词高亮 + 行批注（浮条交互，照搬 408 notes 页） ==================== */
 const WR_MK_KEY = 'wr_mk_v1';
+const WR_ANNO_KEY = 'wr_anno_v1';
+const WR_HL_COLORS = ['yellow', 'green', 'blue', 'pink'];
+const WR_HL_CN = { yellow: '黄色', green: '绿色', blue: '蓝色', pink: '粉色' };
 const WR_MK_SEL = '.wr-line, .wr-line-cn, .wr-sent-txt, .wr-sent-cn, .wr-note-inline, .wr-note, .wr-tips li, .apply-para, .ap-tpl-en, .ap-tpl-cn';
-let wrMarks = [];              // [{ c: 正文块序号, s: 起, e: 止, k: y/g/b/p }]
-let wrMkMsgTimer = null;
+let wrMarks = [];        // 高亮 [{ c: 正文块序号, s: 起, e: 止, k: 颜色名 }]
+let wrAnnos = {};        // 行批注 { 正文块序号: 文本 }
+let wrHlBar = null;      // 划词浮条
+let wrHlTimer = null;
 
 function wrMkLoad() {
     try { wrMarks = JSON.parse(localStorage.getItem(WR_MK_KEY) || '[]') || []; }
     catch (e) { wrMarks = []; }
     if (!Array.isArray(wrMarks)) wrMarks = [];
-    try { localStorage.removeItem('wr_notes_hl_v1'); } catch (e) { /* 清掉上一版批注残留 */ }
+    const LEGACY = { y: 'yellow', g: 'green', b: 'blue', p: 'pink' };
+    wrMarks = wrMarks.filter(m => m && typeof m.c === 'number')
+        .map(m => ({ c: m.c, s: m.s, e: m.e, k: WR_HL_COLORS.includes(m.k) ? m.k : (LEGACY[m.k] || 'yellow') }));
+    try { wrAnnos = JSON.parse(localStorage.getItem(WR_ANNO_KEY) || '{}') || {}; }
+    catch (e) { wrAnnos = {}; }
+    if (!wrAnnos || typeof wrAnnos !== 'object' || Array.isArray(wrAnnos)) wrAnnos = {};
+    try { localStorage.removeItem('wr_notes_hl_v1'); } catch (e) { /* 清掉更早一版的批注残留 */ }
 }
 
 function wrMkSave() {
     try { localStorage.setItem(WR_MK_KEY, JSON.stringify(wrMarks)); } catch (e) { /* ignore */ }
     const c = document.getElementById('wrMkCount');
-    if (c) c.textContent = wrMarks.length ? wrMarks.length + ' 处高亮' : '';
-    const b = document.getElementById('wrMkClear');
+    if (c) c.textContent = String(wrMarks.length);
+    const b = document.getElementById('wrMkClearBtn');
     if (b) b.hidden = !wrMarks.length;
 }
 
-function wrMkMsg(t) {
-    const el = document.getElementById('wrMkMsg');
-    if (!el) return;
-    el.textContent = t;
-    clearTimeout(wrMkMsgTimer);
-    wrMkMsgTimer = setTimeout(() => { el.textContent = ''; }, 1800);
+function wrAnnoSave() {
+    try { localStorage.setItem(WR_ANNO_KEY, JSON.stringify(wrAnnos)); } catch (e) { /* ignore */ }
 }
 
 /** 可高亮正文块：一次 DFS 收集（命中即收、不再下钻，天然去掉嵌套），按文档序编号 data-mk */
@@ -284,6 +291,11 @@ function wrMkBlockOf(node) {
     return (el && el.closest) ? el.closest('[data-mk]') : null;
 }
 
+function wrInAnno(node) {
+    const el = node && node.nodeType === 3 ? node.parentElement : node;
+    return !!(el && el.closest && el.closest('.wr-anno, .hl-toolbar'));
+}
+
 /** 块内全部 Text 节点 → [{node, start, len}]（按文档序，start = 块内字符偏移） */
 function wrMkTexts(el) {
     const tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
@@ -296,13 +308,11 @@ function wrMkTexts(el) {
     return out;
 }
 
-/** (node, offset) → 块内字符偏移 */
 function wrMkOffset(texts, node, off) {
     for (const t of texts) if (t.node === node) return t.start + off;
     return null;
 }
 
-/** 块内偏移 → (node, offset) */
 function wrMkAt(texts, off) {
     for (const t of texts) {
         if (off <= t.start + t.len) return { node: t.node, off: off - t.start };
@@ -325,17 +335,15 @@ function wrMkRange(el, s, e) {
 /** 当前选区 → { block, i, s, e }；失败时返回 { err } */
 function wrMkSelInfo() {
     const sel = window.getSelection();
-    if (!sel || sel.isCollapsed || !sel.rangeCount) return { err: '先选中要标注的文字' };
+    if (!sel || sel.isCollapsed || !sel.rangeCount) return { err: 'none' };
     const r = sel.getRangeAt(0);
     const b1 = wrMkBlockOf(r.startContainer), b2 = wrMkBlockOf(r.endContainer);
-    if (!b1 || !b2) return { err: '这块内容暂不支持标注' };
-    if (b1 !== b2) return { err: '一次只能标注同一行内的文字' };
+    if (!b1 || !b2 || b1 !== b2) return { err: 'none' };
     const texts = wrMkTexts(b1);
     const s = wrMkOffset(texts, r.startContainer, r.startOffset);
     const e = wrMkOffset(texts, r.endContainer, r.endOffset);
-    if (s == null || e == null) return { err: '没能识别这段文字' };
-    if (e <= s) return { err: '先选中要标注的文字' };
-    return { block: b1, i: parseInt(b1.getAttribute('data-mk'), 10), s, e };
+    if (s == null || e == null || e <= s) return { err: 'none' };
+    return { block: b1, i: parseInt(b1.getAttribute('data-mk'), 10), s, e, range: r };
 }
 
 function wrMkUnwrap(mk) {
@@ -344,74 +352,214 @@ function wrMkUnwrap(mk) {
     if (mk.parentNode) mk.replaceWith(f);
 }
 
-/** 重建单个块内的高亮（先剥旧 mark 再按 store 重画） */
+/** 重建单个块内的高亮 */
 function wrMkPaint(block, i) {
-    block.querySelectorAll('mark.wr-mk').forEach(wrMkUnwrap);
+    block.querySelectorAll('mark.note-hl').forEach(wrMkUnwrap);
     wrMarks.filter(m => m.c === i).sort((a, b) => a.s - b.s).forEach(m => {
         const r = wrMkRange(block, m.s, m.e);
         if (!r) return;
         const mk = document.createElement('mark');
-        mk.className = 'wr-mk wr-mk-' + m.k;
-        mk.title = '选中后点同色可取消，或用「擦除」';
+        mk.className = 'note-hl note-hl-' + m.k;
+        mk.dataset.start = String(m.s);
+        mk.dataset.color = m.k;
+        mk.title = '点击可取消这处高亮';
         try { mk.appendChild(r.extractContents()); r.insertNode(mk); } catch (e) { /* 越界忽略 */ }
     });
 }
 
-/** 全页重建（渲染后 / 载入时调用） */
-function wrMkRestore() {
-    document.querySelectorAll('mark.wr-mk').forEach(wrMkUnwrap);
+/** 全页重建：高亮 + 批注（渲染后 / 载入时调用） */
+function wrRestoreAll() {
+    document.querySelectorAll('mark.note-hl').forEach(wrMkUnwrap);
+    document.querySelectorAll('.wr-anno').forEach(x => x.remove());
     const blocks = wrMkBlocks();
     const dirty = {};
     wrMarks.forEach(m => { dirty[m.c] = 1; });
     blocks.forEach((b, i) => { if (dirty[i]) wrMkPaint(b, i); });
+    Object.keys(wrAnnos).forEach(k => {
+        const i = parseInt(k, 10);
+        if (blocks[i] && wrAnnos[k]) wrAnnoRender(i, blocks[i], wrAnnos[k]);
+    });
     wrMkSave();
 }
 
-/** 上色 / 换色 / 再点同色取消 */
-function wrMkApply(k) {
+/* ---------- 上色 / 取消 ---------- */
+
+function wrHlApply(color) {
     const sr = wrMkSelInfo();
-    if (sr.err) { wrMkMsg(sr.err); return; }
-    const same = wrMarks.find(m => m.c === sr.i && m.s === sr.s && m.e === sr.e && m.k === k);
-    if (same) {
-        wrMarks = wrMarks.filter(m => m !== same);
-        wrMkMsg('已取消这处高亮');
-    } else {
-        wrMarks = wrMarks.filter(m => !(m.c === sr.i && m.s < sr.e && sr.s < m.e));
-        wrMarks.push({ c: sr.i, s: sr.s, e: sr.e, k });
-        wrMkMsg('已高亮，共 ' + wrMarks.length + ' 处');
-    }
+    if (sr.err) { wrHlBarHide(); return; }
+    wrMarks = wrMarks.filter(m => !(m.c === sr.i && m.s < sr.e && sr.s < m.e));   // 重叠的先去掉
+    wrMarks.push({ c: sr.i, s: sr.s, e: sr.e, k: color });
     wrMkPaint(sr.block, sr.i);
     wrMkSave();
+    hideHlToolbar();
     const s = window.getSelection(); if (s) s.removeAllRanges();
 }
 
-/** 擦掉选区内的高亮 */
-function wrMkErase() {
-    const sr = wrMkSelInfo();
-    if (sr.err) { wrMkMsg(sr.err); return; }
-    const before = wrMarks.length;
-    wrMarks = wrMarks.filter(m => !(m.c === sr.i && m.s < sr.e && sr.s < m.e));
-    if (wrMarks.length === before) { wrMkMsg('选区内没有高亮'); return; }
-    wrMkPaint(sr.block, sr.i);
+/** 取消选区起点所在那处高亮 */
+function wrHlCancelAt(node) {
+    const el = node && node.nodeType === 3 ? node.parentElement : node;
+    const mk = (el && el.closest) ? el.closest('mark.note-hl') : null;
+    if (!mk) return false;
+    wrHlRemoveMark(mk);
+    return true;
+}
+
+function wrHlRemoveMark(mk) {
+    const block = mk.closest('[data-mk]');
+    if (!block) return;
+    const i = parseInt(block.getAttribute('data-mk'), 10);
+    const s = parseInt(mk.dataset.start, 10);
+    const k = mk.dataset.color;
+    wrMarks = wrMarks.filter(m => !(m.c === i && m.s === s && m.k === k));
+    wrMkPaint(block, i);
     wrMkSave();
-    wrMkMsg('已擦除');
-    const s = window.getSelection(); if (s) s.removeAllRanges();
 }
 
 async function wrMkClearAll() {
     if (!wrMarks.length) return;
-    if (typeof confirmAsync === 'function' && !(await confirmAsync('清除全部划词高亮？', { danger: true }))) return;
+    if (typeof confirmAsync === 'function' && !(await confirmAsync('清除本页全部划词高亮？', { danger: true }))) return;
     wrMarks = [];
     try { localStorage.removeItem(WR_MK_KEY); } catch (e) { /* ignore */ }
-    document.querySelectorAll('mark.wr-mk').forEach(wrMkUnwrap);
+    document.querySelectorAll('mark.note-hl').forEach(wrMkUnwrap);
     wrMkSave();
-    wrMkMsg('已清除全部');
 }
 
-/** 把导航栏高度写进 --nav-h（吸顶工具条用）；量不到时回退 56px */
-function wrNavHVar() {
-    const h = wrNavH();
-    document.documentElement.style.setProperty('--nav-h', (h >= 20 ? h : 56) + 'px');
+/* ---------- 划词浮条（408 同款：4 色 + 📝批注 + ✕） ---------- */
+
+function hideHlToolbar() { if (wrHlBar) { wrHlBar.remove(); wrHlBar = null; } }
+
+/** 取选区位置：优先 Range 自带 rect，取不到（如 jsdom / 空选区）就退回起点元素 */
+function wrRectOf(range) {
+    let rect = null;
+    try { rect = range.getBoundingClientRect(); } catch (e) { rect = null; }
+    if (!rect || (!rect.width && !rect.height)) {
+        const n = range.startContainer;
+        const el = n && n.nodeType === 1 ? n : (n && n.parentElement);
+        if (el && el.getBoundingClientRect) rect = el.getBoundingClientRect();
+    }
+    return rect || { top: 0, bottom: 0, left: 0, width: 0, height: 0 };
+}
+
+/** 浮条定位：默认放选区上方，撞到导航栏/视口顶就翻到选区下方 */
+function wrHlBarPlace(bar, rect) {
+    const bh = bar.offsetHeight, bw = bar.offsetWidth;
+    const navH = wrNavH();
+    let top = window.scrollY + rect.top - bh - 8;
+    if (rect.top - bh - 8 < navH + 6) top = window.scrollY + rect.bottom + 8;
+    let left = window.scrollX + rect.left;
+    const maxLeft = window.scrollX + document.documentElement.clientWidth - bw - 8;
+    if (left > maxLeft) left = Math.max(window.scrollX + 8, maxLeft);
+    bar.style.top = top + 'px';
+    bar.style.left = left + 'px';
+}
+
+function wrHlShowForSelection() {
+    if (wrHlBar && wrHlBar.classList.contains('hl-cancel-only')) return;   // 别把「取消高亮」条顶掉
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || !sel.rangeCount) { hideHlToolbar(); return; }
+    const r = sel.getRangeAt(0);
+    if (wrInAnno(r.startContainer) || wrInAnno(r.endContainer)) { hideHlToolbar(); return; }
+    const sr = wrMkSelInfo();
+    if (sr.err) { hideHlToolbar(); return; }
+    hideHlToolbar();
+    const bar = document.createElement('div');
+    bar.className = 'hl-toolbar';
+    bar.innerHTML = WR_HL_COLORS.map(c =>
+        '<span class="hl-dot hl-dot-' + c + '" data-color="' + c + '" title="' + WR_HL_CN[c] + '高亮"></span>').join('') +
+        '<span class="hl-anno-btn" title="为这一行写批注">📝批注</span>' +
+        '<span class="hl-cancel" title="取消这处高亮">✕</span>';
+    document.body.appendChild(bar);
+    wrHlBar = bar;
+    wrHlBarPlace(bar, wrRectOf(r));
+    bar.addEventListener('mousedown', e => e.preventDefault());   // 按住不丢选区
+    bar.querySelectorAll('.hl-dot').forEach(dot =>
+        dot.addEventListener('click', () => wrHlApply(dot.dataset.color)));
+    bar.querySelector('.hl-anno-btn').addEventListener('click', () => wrAnnoOpenFrom(r));
+    bar.querySelector('.hl-cancel').addEventListener('click', () => {
+        wrHlCancelAt(r.startContainer);
+        hideHlToolbar();
+    });
+}
+
+/** 点已有高亮 → 只显示「✕ 取消高亮」 */
+function wrHlShowCancelFor(mk) {
+    clearTimeout(wrHlTimer);
+    hideHlToolbar();
+    const bar = document.createElement('div');
+    bar.className = 'hl-toolbar hl-cancel-only';
+    bar.innerHTML = '<span class="hl-cancel" title="取消高亮">✕ 取消高亮</span>';
+    document.body.appendChild(bar);
+    wrHlBar = bar;
+    wrHlBarPlace(bar, mk.getBoundingClientRect());
+    bar.addEventListener('mousedown', e => e.preventDefault());
+    bar.querySelector('.hl-cancel').addEventListener('click', () => {
+        wrHlRemoveMark(mk);
+        hideHlToolbar();
+    });
+}
+
+function wrHlBind() {
+    document.addEventListener('mouseup', () => {
+        clearTimeout(wrHlTimer);
+        wrHlTimer = setTimeout(wrHlShowForSelection, 0);
+    });
+    document.addEventListener('mousedown', e => {
+        if (wrHlBar && !wrHlBar.contains(e.target)) hideHlToolbar();
+    });
+    document.addEventListener('click', e => {
+        if (wrInAnno(e.target)) return;
+        const mk = e.target.closest ? e.target.closest('mark.note-hl') : null;
+        if (mk) { e.stopPropagation(); wrHlShowCancelFor(mk); }
+    });
+    window.addEventListener('scroll', () => { if (wrHlBar) hideHlToolbar(); }, { passive: true });
+}
+
+/* ---------- 行批注（点 📝批注：在该行正下方开编辑框，自动保存） ---------- */
+
+/** 批注框挂到"行级"元素之后（避免插进 flex 行/表格单元格里破坏布局） */
+function wrAnnoAnchor(block) {
+    if (block.matches('.wr-sent-txt, .wr-sent-cn')) return block.closest('.wr-sent') || block;
+    if (block.matches('.ap-tpl-en, .ap-tpl-cn')) return block.closest('.ap-tpl-row') || block;
+    return block;
+}
+
+function wrAnnoRender(i, block, text) {
+    const box = document.createElement('div');
+    box.className = 'wr-anno';
+    box.dataset.anno = String(i);
+    box.innerHTML = '<div class="wr-anno-head">📝 我的批注<span class="wr-anno-hint">自动保存</span></div>' +
+        '<textarea class="wr-anno-input" rows="2" placeholder="写给这一行的批注…（留空即删除）"></textarea>' +
+        '<div class="wr-anno-ops"><button type="button" class="wr-anno-del">删除批注</button></div>';
+    const ta = box.querySelector('textarea');
+    ta.value = text || '';
+    let timer = null;
+    const commit = () => {
+        const v = ta.value.trim();
+        if (v) wrAnnos[i] = v; else delete wrAnnos[i];
+        wrAnnoSave();
+    };
+    ta.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(commit, 600); });
+    ta.addEventListener('blur', () => { clearTimeout(timer); commit(); });
+    box.querySelector('.wr-anno-del').addEventListener('click', () => {
+        delete wrAnnos[i];
+        wrAnnoSave();
+        box.remove();
+    });
+    wrAnnoAnchor(block).insertAdjacentElement('afterend', box);
+    return box;
+}
+
+function wrAnnoOpenFrom(range) {
+    const block = wrMkBlockOf(range.startContainer);
+    const sel = window.getSelection(); if (sel) sel.removeAllRanges();
+    hideHlToolbar();
+    if (!block) return;
+    const i = parseInt(block.getAttribute('data-mk'), 10);
+    let box = document.querySelector('.wr-anno[data-anno="' + i + '"]');
+    if (!box) box = wrAnnoRender(i, block, wrAnnos[i] || '');
+    if (box.scrollIntoView) box.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    const ta = box.querySelector('textarea');
+    if (ta) ta.focus();
 }
 
 /** 数字换字体：Georgia 是「旧式数字」（3/4/5/7/9 掉基线），包 span 走衬线 lining 数字 */
@@ -461,7 +609,7 @@ function wrRenderCards() {
         const st = document.getElementById(id);
         if (st) st.textContent = wrStructOn() ? '开' : '关';
     }
-    wrMkRestore();
+    wrRestoreAll();
 }
 
 /* ==================== 模板正文：按句拆行（英文行 + 对齐的中文行） ==================== */
@@ -517,7 +665,7 @@ function wrSectionCard(sec) {
     const sents = (sec.sentences || []).map((s, i) => `
         <li class="wr-sent">
             <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span><span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
-            <div class="wr-sent-cn">${wrEsc(s.cn)}</div>
+            <div class="wr-sent-cn">${wrHl(s.cn)}</div>
         </li>`).join('');
 
     const tips = (sec.tips || []).map(x => `<li>${wrEsc(x)}</li>`).join('');
@@ -706,7 +854,7 @@ async function initWriting() {
         return;
     }
     await Promise.all([loadDict(), loadPhrases()]);   // 离线词典 + 真题词组表（划词查词，词组优先）
-    wrMkLoad();                       // 划词高亮数据
+    wrMkLoad();                       // 划词高亮 + 行批注数据
     wrInitVocab();                                     // 生词本集合（弹卡按钮状态）
     // 真题套用示范（按年份汇总，可空）
     let APPLY = {};
@@ -758,14 +906,13 @@ async function initWriting() {
     // 模板分区（按 group 分组）
     wrRenderCards();
     wrTocBuild();
-    wrNavHVar();
-    window.addEventListener('resize', wrNavHVar);
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrWordBind(); initWriting(); });
+    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrWordBind(); wrHlBind(); initWriting(); });
 } else {
     wrTocBind();
     wrWordBind();
+    wrHlBind();
     initWriting();
 }

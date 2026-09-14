@@ -365,7 +365,7 @@ function renderKeyPhrases(list) {
     if (!list || !list.length) return '';
     const rows = list.map(k => '<div class="ap-tpl-row">'
         + '<div class="ap-tpl-en">' + apEsc(k.en).replace(AP_PH_G, '<span class="ap-ph">{{$1}}</span>') + '</div>'
-        + (k.cn ? '<div class="ap-tpl-cn">' + apEsc(k.cn) + '</div>' : '')
+        + (k.cn ? '<div class="ap-tpl-cn">' + apEsc(k.cn).replace(AP_PH_G, '<span class="ap-ph">{{$1}}</span>') + '</div>' : '')
         + (k.src ? '<div class="ap-tpl-src">' + apEsc(k.src) + '</div>' : '')
         + '</div>').join('');
     return '<div class="ap-sub2">🔑 模板句型'

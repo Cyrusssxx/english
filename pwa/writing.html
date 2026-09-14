@@ -30,7 +30,10 @@
                 <a href="stats.html" class="nav-link">统计</a>
             </div>
             <div class="nav-tools">
-                <button class="nav-switch" id="wrStructNavBtn" onclick="wrToggleStruct()" title="模板句主干浅黄高亮（主谓宾表）">
+                <button class="nav-switch" id="wrMkClearBtn" onclick="wrMkClearAll()" title="清除本页全部划词高亮" hidden>
+                    清除高亮 <span class="switch-state" id="wrMkCount">0</span>
+                </button>
+                <button class="nav-switch" id="wrStructNavBtn" onclick="wrToggleStruct()" title="模板句主干浅色高亮（主谓宾表）">
                     主干 <span class="switch-state" id="wrStructNavState">开</span>
                 </button>
                 <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
@@ -56,20 +59,6 @@
             <h1 class="wr-title" id="wrTitle">作文模板库</h1>
             <p class="wr-desc" id="wrDesc"></p>
             <div class="wr-rules" id="wrRules"></div>
-            <div class="wr-hl-bar" id="wrHlBar">
-                <span class="wr-hl-tip">🖍 <b>选中</b>正文任意文字 → 点色块即高亮（再点同色＝取消）；点单词可查词</span>
-                <span class="wr-hl-dots">
-                    <button type="button" class="wr-hl-dot d-y" title="黄色高亮" onmousedown="event.preventDefault()" onclick="wrMkApply('y')"></button>
-                    <button type="button" class="wr-hl-dot d-g" title="绿色高亮" onmousedown="event.preventDefault()" onclick="wrMkApply('g')"></button>
-                    <button type="button" class="wr-hl-dot d-b" title="蓝色高亮" onmousedown="event.preventDefault()" onclick="wrMkApply('b')"></button>
-                    <button type="button" class="wr-hl-dot d-p" title="粉色高亮" onmousedown="event.preventDefault()" onclick="wrMkApply('p')"></button>
-                </span>
-                <button type="button" class="wr-hl-erase" onmousedown="event.preventDefault()" onclick="wrMkErase()">🧽 擦除</button>
-                <span class="wr-hl-msg" id="wrMkMsg"></span>
-                <span class="wr-hl-count" id="wrMkCount"></span>
-                <button type="button" class="wr-hl-clear" id="wrMkClear" onclick="wrMkClearAll()" hidden>清除全部</button>
-                <button class="wr-struct-btn" id="wrStructBtn" onclick="wrToggleStruct()">主干 <span id="wrStructState">开</span></button>
-            </div>
 
             <!-- 图表适配表 -->
             <section class="wr-block" id="wrGuideBlock">
