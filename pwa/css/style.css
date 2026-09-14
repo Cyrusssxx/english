@@ -3647,13 +3647,6 @@ mark.ap-own {
 }
 .wr-hl-tip { font-size: .78rem; color: var(--text-light); line-height: 1.6; }
 .wr-hl-tip b { color: var(--primary); }
-.wr-hl-count { font-size: .78rem; font-weight: 700; color: var(--primary); }
-.wr-hl-clear {
-    border: 1px solid var(--border); background: none; color: var(--danger);
-    font: inherit; font-size: .76rem; padding: 2px 11px; border-radius: 999px; cursor: pointer;
-    transition: border-color .15s, background .15s;
-}
-.wr-hl-clear:hover { border-color: var(--danger); background: rgba(220, 53, 69, .06); }
 .wr-struct-btn {
     border: 1px solid var(--border); background: var(--card-bg); color: var(--text-light);
     font: inherit; font-size: .76rem; padding: 2px 11px; border-radius: 999px; cursor: pointer;
@@ -3661,22 +3654,12 @@ mark.ap-own {
 }
 .wr-struct-btn:hover { border-color: var(--primary); color: var(--primary); }
 
-.wr-line {
-    cursor: pointer;
-    padding: 1px 5px;
-    margin: 1px -5px;
-    border-radius: 4px;
-    transition: background .15s;
-}
-.wr-line:hover { background: var(--primary-soft); }
-.wr-line-cn[data-k] { cursor: pointer; }
-.wr-line-cn[data-k]:hover { background: var(--primary-soft); }
-.wr-line.hl, .wr-line-cn.hl { background: var(--hl-y); }
-html.dark .wr-line.hl, html.dark .wr-line-cn.hl { background: var(--hl-y); }
-.wr-sent { cursor: pointer; transition: border-color .15s, background .15s; }
+/* 模板句行（结构染色的承载单元，不可点击点亮，仅内容可划词） */
+.wr-line { padding: 1px 0; }
+.wr-sent { transition: border-color .15s; }
 .wr-sent:hover { border-color: var(--primary); }
-.wr-sent.hl { background: var(--hl-y); border-color: #d9c66f; }
-html.dark .wr-sent.hl { border-color: #6b5e2c; }
+/* 功能句：编号 + 句子横向排布（句子整体作一个 flex 单元，内部划词 span 自然横流） */
+.wr-sent-txt { flex: 1 1 auto; min-width: 0; }
 
 /* 功能句并排（两列网格，窄屏单列） */
 .wr-sent-list {

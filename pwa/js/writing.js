@@ -42,69 +42,6 @@ function wrFallback(text, done) {
     document.body.removeChild(ta);
 }
 
-/* ==================== 批注高亮：点句点亮、localStorage 持久化 ==================== */
-const WR_HL_KEY = 'wr_highlights_v1';
-
-function wrHlGet() {
-    try { return new Set(JSON.parse(localStorage.getItem(WR_HL_KEY) || '[]')); }
-    catch (e) { return new Set(); }
-}
-
-function wrHlSave(set) {
-    try { localStorage.setItem(WR_HL_KEY, JSON.stringify(Array.from(set))); } catch (e) { /* ignore */ }
-    wrHlCount();
-}
-
-function wrHlCount() {
-    const n = wrHlGet().size;
-    const c = document.getElementById('wrHlCount');
-    const b = document.getElementById('wrHlClear');
-    if (c) c.textContent = n ? `已亮 ${n} 句` : '';
-    if (b) b.hidden = !n;
-}
-
-/** 点击切换高亮：同 key 的英文行与中文行联动 */
-function wrToggleHl(el) {
-    const key = el.dataset.k;
-    if (!key) return;
-    const set = wrHlGet();
-    const on = !set.has(key);
-    if (on) set.add(key); else set.delete(key);
-    document.querySelectorAll(`#wrContent [data-k]`).forEach(x => {
-        if (x.dataset.k === key) x.classList.toggle('hl', on);
-    });
-    wrHlSave(set);
-}
-
-/** 渲染后按存储恢复高亮 */
-function wrHlRestore() {
-    const set = wrHlGet();
-    document.querySelectorAll('#wrContent [data-k]').forEach(el => {
-        if (set.has(el.dataset.k)) el.classList.add('hl');
-    });
-    wrHlCount();
-}
-
-async function wrClearHl() {
-    if (wrHlGet().size === 0) return;
-    if (typeof confirmAsync === 'function' && !(await confirmAsync('清除全部批注高亮？', { danger: true }))) return;
-    try { localStorage.removeItem(WR_HL_KEY); } catch (e) { /* ignore */ }
-    document.querySelectorAll('#wrContent .hl').forEach(el => el.classList.remove('hl'));
-    wrHlCount();
-}
-
-/** 事件委托：点模板行 / 功能句切换高亮（点按钮不触发；点查词 span 不触发点亮） */
-function wrHlBind() {
-    const c = document.getElementById('wrContent');
-    if (!c) return;
-    c.addEventListener('click', e => {
-        if (e.target.closest('button')) return;
-        if (e.target.closest('.word')) return;   // 划词查词，不点亮
-        const t = e.target.closest('.wr-line, .wr-sent, .wr-line-cn[data-k]');
-        if (t) wrToggleHl(t);
-    });
-}
-
 /* ==================== 划词查词：精翻页同款，词组优先 ==================== */
 let wrVocabSet = new Set();
 
@@ -297,7 +234,7 @@ function wrWordBind() {
             return;
         }
         if (!e.target.closest('.wr-pop-c')) wrCloseWordPop();
-    }, true);   // 捕获阶段：先于 wrHlBind（冒泡）执行，stopPropagation 阻断点亮
+    }, true);   // 捕获阶段先执行，stopPropagation 避免与卡片其他点击冲突
 }
 
 /* ==================== ✨ 精句弹窗：本卡有用词组/短句（英中对照） ==================== */
@@ -337,10 +274,9 @@ function wrRenderCards() {
         const st = document.getElementById(id);
         if (st) st.textContent = wrStructOn() ? '开' : '关';
     }
-    wrHlRestore();
 }
 
-/* ==================== 模板正文：按句拆行（英文行 + 对齐的中文行，共享 data-k） ==================== */
+/* ==================== 模板正文：按句拆行（英文行 + 对齐的中文行） ==================== */
 function wrSplitEn(t) {
     const m = (t || '').match(/[^.!?]+[.!?]+["')\]]*\s*|[^.!?]+$/g) || [];
     return m.map(x => x.trim()).filter(Boolean);
@@ -351,7 +287,7 @@ function wrSplitCn(t) {
     return m.map(x => x.trim()).filter(Boolean);
 }
 
-/** 英文按句拆行；中文句数对齐时逐句配对（同 data-k 联动高亮），不齐则整段；
+/** 英文按句拆行；中文句数对齐时逐句配对，不齐则整段；
  *  struct = 每句的片段标注（[[text, role], ...]），开启「结构染色」时**划词式**染色（下划线着色，非色块） */
 const WR_ROLE_CLS = { t: 'wr-subj', p: 'wr-pred', o: 'wr-obj', lead: 'wr-lead', trans: 'wr-trans', caus: 'wr-caus' };
 const WR_STRUCT_KEY = 'wr_struct_on';
@@ -374,9 +310,9 @@ function wrTplBody(en, cn, struct) {
     const cs = wrSplitCn(cn);
     const aligned = es.length > 0 && es.length === cs.length;
     const enHtml = es.map((s, i) =>
-        `<div class="wr-line" data-k="${wrEsc(s)}" title="点击点亮/取消">${wrSentenceHtml(s, struct && struct[i])}</div>`).join('');
+        `<div class="wr-line">${wrSentenceHtml(s, struct && struct[i])}</div>`).join('');
     const cnHtml = aligned
-        ? cs.map((s, i) => `<div class="wr-line-cn" data-k="${wrEsc(es[i])}">${wrHl(s)}</div>`).join('')
+        ? cs.map((s, i) => `<div class="wr-line-cn">${wrHl(s)}</div>`).join('')
         : `<div class="wr-line-cn">${wrHl(cn || '')}</div>`;
     return { enHtml, cnHtml };
 }
@@ -390,8 +326,8 @@ function wrCopyLines(btn) {
 
 function wrSectionCard(sec) {
     const sents = (sec.sentences || []).map((s, i) => `
-        <li class="wr-sent" data-k="${wrEsc(s.en || '')}" title="点击点亮/取消">
-            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${wrAnnotate(s.en)}</div>
+        <li class="wr-sent">
+            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span><span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
             <div class="wr-sent-cn">${wrEsc(s.cn)}</div>
         </li>`).join('');
 
@@ -631,16 +567,13 @@ async function initWriting() {
 
     // 模板分区（按 group 分组）
     wrRenderCards();
-
-    wrHlRestore();
     wrTocBuild();
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrHlBind(); wrWordBind(); initWriting(); });
+    document.addEventListener('DOMContentLoaded', () => { wrTocBind(); wrWordBind(); initWriting(); });
 } else {
     wrTocBind();
-    wrHlBind();
     wrWordBind();
     initWriting();
 }
