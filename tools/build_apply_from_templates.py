@@ -54,8 +54,24 @@ def load_templates():
             'fcn': cn_sents(sec.get('negative_cn')),
             'fn': [x['en'] for x in sec.get('sentences', [])],
             'fcn_items': [x.get('cn', '') for x in sec.get('sentences', [])],
+            # 走势变体（chart_dynamic）：按年份选一套，再由 main 覆盖 en/cn
+            'skel': [{'label': v.get('label', ''), 'years': v.get('years', ''),
+                      'en': en_sents(v.get('en')), 'cn': cn_sents(v.get('cn'))}
+                     for v in (sec.get('skeletons') or [])],
         }
     return out
+
+
+def apply_skeleton(TPL, sid, year):
+    """把该 section 的 en/cn 换成「这一年该用的那套走势骨架」"""
+    tp = TPL.get(sid)
+    if not tp or not tp.get('skel'):
+        return None
+    for i, sk in enumerate(tp['skel']):
+        if year and year in sk['years']:
+            TPL[sid] = dict(tp, en=sk['en'], cn=sk['cn'])
+            return i
+    return None
 
 
 ALIAS = {'xx': 'chart', '图表': 'chart'}
@@ -136,7 +152,7 @@ def auto_compose(y, sp, TPL):
         cand[pkey] = [tuple(x) for x in sp[pkey][1]]
     def subsets(refs):
         out = []
-        for k in range(2, min(4, len(refs)) + 1):
+        for k in range(2, min(6, len(refs)) + 1):   # 上限 6：让「骨架 3 句 + 句池 2 句」这类组合能被搜到
             for c in itertools.combinations(range(len(refs)), k):
                 out.append([refs[i] for i in c])   # combinations 天然保序
         return out or [list(refs)]
@@ -206,6 +222,7 @@ def main():
     bad = []
     for y in sorted(spec):
         sp = dict(spec[y])
+        apply_skeleton(TPL, sp['p1'][0], y)      # 动态图：先定这一年用哪套走势骨架
         en, cn, used_tpl, used_slot = auto_compose(y, sp, TPL)
         data[y]['apply_en'] = en
         data[y]['apply_cn'] = cn

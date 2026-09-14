@@ -1,11 +1,11 @@
 {
- "count": 27,
+ "count": 52,
  "slot_count": 212,
  "tpl_groups": {
   "第一段 · 静态图描述": [
    {
-    "w": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}.",
-    "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。",
+    "w": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
+    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
     "years": [
      "2012",
      "2015",
@@ -21,8 +21,8 @@
     "color": "#0d9488"
    },
    {
-    "w": "{{item1}} accounts for the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
+    "w": "{{item1}} takes the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
     "years": [
      "2012",
      "2015",
@@ -38,27 +38,46 @@
     "color": "#0d9488"
    },
    {
-    "w": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
-    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。",
-    "years": [
-     "2012",
-     "2016",
-     "2018",
-     "2021",
-     "2024",
-     "2026"
-    ],
-    "src": "静态图表第一段 · 功能句6",
-    "color": "#0d9488"
-   },
-   {
-    "w": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。",
+    "w": "{{item1}} alone accounts for {{percent1}} of the total.",
+    "cn": "{{item1}} 一项就占了总量的 {{percent1}}。",
     "years": [
      "2012",
      "2015",
      "2016",
+     "2018",
      "2020",
+     "2024",
+     "2025",
+     "2026"
+    ],
+    "src": "静态图表第一段 · 功能句1",
+    "color": "#0d9488"
+   },
+   {
+    "w": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
+    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "years": [
+     "2015",
+     "2016",
+     "2018",
+     "2020",
+     "2021",
+     "2024",
+     "2025",
+     "2026"
+    ],
+    "src": "静态图表第一段 · 模板第3句",
+    "color": "#0d9488"
+   },
+   {
+    "w": "By contrast, {{item4}} and {{item5}} account for only {{percent4}} and {{percent5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 仅占 {{percent4}} 和 {{percent5}}。",
+    "years": [
+     "2012",
+     "2016",
+     "2018",
+     "2020",
+     "2021",
      "2025",
      "2026"
     ],
@@ -66,56 +85,24 @@
     "color": "#0d9488"
    },
    {
-    "w": "{{item2}} and {{item3}} form the middle group, representing {{percent2}} and {{percent3}}, respectively.",
-    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{percent2}} 和 {{percent3}}。",
+    "w": "Only {{percent4}} goes to {{item4}}, and {{item5}} is even lower.",
+    "cn": "{{item4}} 只占 {{percent4}}，{{item5}} 更低。",
     "years": [
-     "2018",
-     "2020",
-     "2024",
-     "2025"
+     "2024"
     ],
-    "src": "静态图表第一段 · 模板第3句",
+    "src": "静态图表第一段 · 功能句2",
     "color": "#0d9488"
    }
   ],
   "第一段 · 动态图描述": [
    {
-    "w": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented.",
-    "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。",
+    "w": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
     "years": [
      "2010",
-     "2011",
      "2013",
      "2014",
-     "2017",
      "2019",
-     "2022",
-     "2023"
-    ],
-    "src": "动态图表第一段 · 模板第1句",
-    "color": "#0ea5e9"
-   },
-   {
-    "w": "{{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}.",
-    "cn": "{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。",
-    "years": [
-     "2010",
-     "2011",
-     "2013",
-     "2014",
-     "2017",
-     "2019",
-     "2022",
-     "2023"
-    ],
-    "src": "动态图表第一段 · 模板第2句",
-    "color": "#0ea5e9"
-   },
-   {
-    "w": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, showing a steady upward trend.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，呈现稳定上升趋势。",
-    "years": [
-     "2017",
      "2022",
      "2023"
     ],
@@ -123,19 +110,98 @@
     "color": "#0ea5e9"
    },
    {
-    "w": "By contrast, {{item3}} fell from {{num5}} in {{time5}} to {{num6}} in {{time6}}.",
-    "cn": "相比之下，{{item3}} 由 {{time5}} 的 {{num5}} 下降至 {{time6}} 的 {{num6}}。",
+    "w": "Over the same period, {{item2}} fell from {{num3}} to {{num4}}, a clear decline.",
+    "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，降幅明显。",
     "years": [
+     "2013",
+     "2014",
+     "2017",
+     "2019",
+     "2023"
+    ],
+    "src": "动态图表第一段 · 功能句2",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "By {{time2}}, {{item1}} had more than doubled, reaching {{num2}}.",
+    "cn": "到 {{time2}} 时，{{item1}} 已经翻了一倍多，达到 {{num2}}。",
+    "years": [
+     "2010",
+     "2011",
+     "2023"
+    ],
+    "src": "动态图表第一段 · 功能句3",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "The {{chart}} chart tracks how {{topic}} changed over the period.",
+    "cn": "该 {{chart}} 图记录了这一时期 {{topic}} 的变化。",
+    "years": [
+     "2010",
+     "2017",
+     "2022"
+    ],
+    "src": "动态图表第一段 · 模板第1句",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "years": [
+     "2011",
+     "2014",
      "2019"
     ],
-    "src": "动态图表第一段 · 模板第3句",
+    "src": "动态图表第一段 · 模板第1句",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "Both rose, but {{item1}} climbed from {{num1}} to {{num2}} while {{item2}} only went from {{num3}} to {{num4}}.",
+    "cn": "两者都在上升，但 {{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 仅从 {{num3}} 升到 {{num4}}。",
+    "years": [
+     "2010",
+     "2017",
+     "2022"
+    ],
+    "src": "动态图表第一段 · 模板第2句",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降至 {{num4}}。",
+    "years": [
+     "2011",
+     "2014",
+     "2019"
+    ],
+    "src": "动态图表第一段 · 模板第2句",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图记录了 {{topic}} 从 {{time1}} 到 {{time2}} 的变化。",
+    "years": [
+     "2013",
+     "2023"
+    ],
+    "src": "动态图表第一段 · 模板第1句",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "It rose from {{num1}} to {{num2}} without a single fall.",
+    "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有回落。",
+    "years": [
+     "2013",
+     "2023"
+    ],
+    "src": "动态图表第一段 · 模板第2句",
     "color": "#0ea5e9"
    }
   ],
   "第二段 · 经济类归因": [
    {
-    "w": "Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}.",
-    "cn": "毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。",
+    "w": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。",
     "years": [
      "2010",
      "2011",
@@ -144,12 +210,12 @@
      "2018",
      "2022"
     ],
-    "src": "经济类第二段 · 模板第2句",
+    "src": "经济类第二段 · 功能句1",
     "color": "#f97316"
    },
    {
-    "w": "As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living.",
-    "cn": "随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。",
+    "w": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
+    "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。",
     "years": [
      "2010",
      "2011",
@@ -158,40 +224,70 @@
      "2018",
      "2022"
     ],
-    "src": "经济类第二段 · 模板第3句",
+    "src": "经济类第二段 · 功能句3",
     "color": "#f97316"
    },
    {
-    "w": "Growing public attention to {{topic}} stems from its ability to meet practical needs in everyday life.",
-    "cn": "{{topic}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。",
+    "w": "Online platforms and mobile payment have cut the time and cost of getting {{topic}}.",
+    "cn": "线上平台和移动支付降低了获得 {{topic}} 的时间和成本。",
     "years": [
+     "2010",
      "2011",
+     "2014",
      "2015",
-     "2018"
+     "2018",
+     "2022"
+    ],
+    "src": "经济类第二段 · 功能句4",
+    "color": "#f97316"
+   },
+   {
+    "w": "The trend in the chart is closely tied to how people live and spend today.",
+    "cn": "图中的变化与人们当下的生活和消费方式密切相关。",
+    "years": [
+     "2010",
+     "2011",
+     "2014",
+     "2015",
+     "2018",
+     "2022"
     ],
     "src": "经济类第二段 · 模板第1句",
-    "color": "#f97316"
-   },
-   {
-    "w": "Seen in this light, the development of {{topic}} is no coincidence but a natural consequence of broader changes in social life.",
-    "cn": "由此可见，{{topic}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
-    "years": [
-     "2010",
-     "2014",
-     "2022"
-    ],
-    "src": "经济类第二段 · 模板第5句",
     "color": "#f97316"
    }
   ],
   "第二段 · 校园/成长类归因": [
    {
-    "w": "{{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties.",
-    "cn": "{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。",
+    "w": "{{topic}} teaches students to plan their own time rather than wait to be told.",
+    "cn": "{{topic}} 让学生学会自己安排时间，而不是等人安排。",
     "years": [
-     "2012",
      "2013",
-     "2016",
+     "2019",
+     "2020",
+     "2024",
+     "2026"
+    ],
+    "src": "校园类第二段（对应英语一品质类） · 功能句1",
+    "color": "#eab308"
+   },
+   {
+    "w": "On the other hand, too much of it can crowd out sleep and real conversation.",
+    "cn": "另一方面，过度投入会挤占睡眠和真实交流的时间。",
+    "years": [
+     "2013",
+     "2019",
+     "2020",
+     "2024",
+     "2026"
+    ],
+    "src": "校园类第二段（对应英语一品质类） · 功能句2",
+    "color": "#eab308"
+   },
+   {
+    "w": "Habits built at this stage shape how young people take responsibility later.",
+    "cn": "这个阶段养成的习惯，会影响他们日后承担责任的方式。",
+    "years": [
+     "2013",
      "2019",
      "2020",
      "2024",
@@ -201,27 +297,10 @@
     "color": "#eab308"
    },
    {
-    "w": "Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-    "cn": "最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
+    "w": "Behind the numbers in the chart lies a change in how students spend their time.",
+    "cn": "数字背后，是学生时间安排方式的变化。",
     "years": [
-     "2012",
      "2013",
-     "2016",
-     "2019",
-     "2020",
-     "2024",
-     "2026"
-    ],
-    "src": "校园类第二段（对应英语一品质类） · 模板第4句",
-    "color": "#eab308"
-   },
-   {
-    "w": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities.",
-    "cn": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。",
-    "years": [
-     "2012",
-     "2013",
-     "2016",
      "2019",
      "2020",
      "2026"
@@ -230,53 +309,138 @@
     "color": "#eab308"
    },
    {
-    "w": "In this process, individuals gradually become less dependent on external reminders and begin to take responsibility for their own choices.",
-    "cn": "在这一过程中，个人会逐步减少对外界提醒的依赖，并开始主动为自己的选择负责。",
+    "w": "Students who take part in {{topic}} often work better with others.",
+    "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
     "years": [
+     "2019",
+     "2020",
      "2024"
+    ],
+    "src": "校园类第二段（对应英语一品质类） · 功能句3",
+    "color": "#eab308"
+   },
+   {
+    "w": "{{topic}} is one of the clearest examples.",
+    "cn": "{{topic}} 就是最清楚的例子之一。",
+    "years": [
+     "2013",
+     "2024",
+     "2026"
     ],
     "src": "校园类第二段（对应英语一品质类） · 模板第3句",
     "color": "#eab308"
    }
   ],
+  "第二段 · 社会职场生活类归因": [
+   {
+    "w": "Longer working hours have made people value the time they can call their own.",
+    "cn": "更长的工作时间让人们更看重属于自己的时间。",
+    "years": [
+     "2012",
+     "2016",
+     "2025"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 功能句1",
+    "color": "#0d9488"
+   },
+   {
+    "w": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
+    "cn": "收入提高把过去的奢侈品变成了日常消费。",
+    "years": [
+     "2012",
+     "2016",
+     "2025"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 功能句2",
+    "color": "#0d9488"
+   },
+   {
+    "w": "The change in the chart reflects a broader shift in how people live and work.",
+    "cn": "图中的变化反映了人们生活和工作方式的更大转变。",
+    "years": [
+     "2012",
+     "2016",
+     "2025"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 模板第1句",
+    "color": "#0d9488"
+   },
+   {
+    "w": "Once basic needs are met, people care more about how they spend their time.",
+    "cn": "基本需求满足之后，人们更在意自己的时间怎么花。",
+    "years": [
+     "2012",
+     "2016",
+     "2025"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 模板第2句",
+    "color": "#0d9488"
+   },
+   {
+    "w": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+    "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已经不同。",
+    "years": [
+     "2012"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 功能句4",
+    "color": "#0d9488"
+   },
+   {
+    "w": "Better transport and online booking have made travel easy to arrange.",
+    "cn": "交通改善和线上预订让出行变得容易安排。",
+    "years": [
+     "2016"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 功能句5",
+    "color": "#0d9488"
+   },
+   {
+    "w": "Longer life expectancy has pushed families to think about how older members spend their days.",
+    "cn": "寿命延长让家庭开始考虑老年人怎么度过日常。",
+    "years": [
+     "2025"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 功能句6",
+    "color": "#0d9488"
+   }
+  ],
   "第二段 · 体育健康类归因": [
    {
-    "w": "Changes reflected in {{topic}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise.",
-    "cn": "{{topic}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。",
+    "w": "Sitting all day has turned exercise into a practical need rather than a hobby.",
+    "cn": "整天坐着，让运动从爱好变成了实际需要。",
     "years": [
      "2021",
-     "2023",
-     "2025"
+     "2023"
     ],
-    "src": "体育健康类第二段 · 模板第1句",
+    "src": "体育健康类第二段 · 功能句1",
     "color": "#10b981"
    },
    {
-    "w": "As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow.",
-    "cn": "随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。",
+    "w": "The rise is not only about money: attitudes to health have changed.",
+    "cn": "这一增长不只因为钱：人们对健康的态度也变了。",
     "years": [
      "2021",
-     "2023",
-     "2025"
+     "2023"
     ],
-    "src": "体育健康类第二段 · 模板第3句",
+    "src": "体育健康类第二段 · 功能句3",
     "color": "#10b981"
    },
    {
-    "w": "For this reason, {{topic}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
-    "cn": "正因如此，{{topic}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
+    "w": "Fitness apps and smart watches let people track their progress and stay motivated.",
+    "cn": "健身 App 和智能手表让人能记录进展、保持动力。",
     "years": [
-     "2023",
-     "2025"
+     "2021",
+     "2023"
     ],
-    "src": "体育健康类第二段 · 模板第4句",
+    "src": "体育健康类第二段 · 功能句4",
     "color": "#10b981"
    },
    {
-    "w": "Improved sports infrastructure makes it easier for people to participate in physical exercise, while a wider range of exercise methods enables different groups to make choices suited to their own circumstances.",
-    "cn": "更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。",
+    "w": "Long working hours have turned health into something to plan for, and {{topic}} is the easiest way to do that.",
+    "cn": "长时间工作让健康变成需要主动安排的事，而 {{topic}} 是最容易做到的一种方式。",
     "years": [
-     "2021"
+     "2021",
+     "2023"
     ],
     "src": "体育健康类第二段 · 模板第2句",
     "color": "#10b981"
@@ -284,8 +448,35 @@
   ],
   "第二段 · 文化自信类归因": [
    {
-    "w": "Traditional culture cannot be effectively conveyed through the one-way delivery of content alone; its modes of expression must also be adjusted in response to real-world feedback.",
-    "cn": "传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。",
+    "w": "{{topic}} brings traditional culture closer to ordinary life instead of leaving it on the shelf.",
+    "cn": "{{topic}} 把传统文化拉近日常生活，而不是把它束之高阁。",
+    "years": [
+     "2017"
+    ],
+    "src": "文化自信类第二段 · 功能句1",
+    "color": "#a855f7"
+   },
+   {
+    "w": "Documentaries and short videos have made old stories interesting to young audiences.",
+    "cn": "纪录片和短视频让老故事对年轻观众有了吸引力。",
+    "years": [
+     "2017"
+    ],
+    "src": "文化自信类第二段 · 功能句3",
+    "color": "#a855f7"
+   },
+   {
+    "w": "Schools have added courses on local history and traditional crafts.",
+    "cn": "学校增加了地方历史和传统手工艺课程。",
+    "years": [
+     "2017"
+    ],
+    "src": "文化自信类第二段 · 功能句4",
+    "color": "#a855f7"
+   },
+   {
+    "w": "Traditional culture does not survive by being preserved in a museum.",
+    "cn": "传统文化不是靠放进博物馆保存下来的。",
     "years": [
      "2017"
     ],
@@ -293,8 +484,8 @@
     "color": "#a855f7"
    },
    {
-    "w": "{{topic}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity.",
-    "cn": "{{topic}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。",
+    "w": "It survives when people find new ways to pass it on.",
+    "cn": "它靠的是人们不断找到新的传递方式。",
     "years": [
      "2017"
     ],
@@ -302,8 +493,8 @@
     "color": "#a855f7"
    },
    {
-    "w": "Public participation can also give rise to new forms of cultural expression, enabling traditional culture to adapt to social change while preserving its core values.",
-    "cn": "公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。",
+    "w": "The growth shown in the chart is that process at work.",
+    "cn": "图中的增长，正是这一过程在起作用。",
     "years": [
      "2017"
     ],
@@ -313,11 +504,10 @@
   ],
   "第三段 · 正面总结建议": [
    {
-    "w": "Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role.",
-    "cn": "有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。",
+    "w": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
+    "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
     "years": [
      "2010",
-     "2011",
      "2012",
      "2013",
      "2014",
@@ -328,50 +518,124 @@
      "2019",
      "2020",
      "2021",
-     "2022",
      "2023",
      "2024",
      "2025",
+     "2026"
+    ],
+    "src": "第三段 · 正面版 · 功能句1",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Each of them has a different job to do, and none can do it alone.",
+    "cn": "各方要做的事不同，单靠任何一方都做不到。",
+    "years": [
+     "2010",
+     "2012",
+     "2013",
+     "2015",
+     "2017",
+     "2019",
+     "2020",
+     "2021",
+     "2022",
+     "2024",
      "2026"
     ],
     "src": "第三段 · 正面版 · 模板第2句",
     "color": "#06b6d4"
    },
    {
-    "w": "Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
-    "cn": "个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
+    "w": "If the trend in the chart is to continue, more than one side has to act.",
+    "cn": "图中的趋势若要延续，就需要多方一起行动。",
     "years": [
      "2010",
-     "2013",
-     "2014",
+     "2012",
      "2015",
-     "2016",
      "2017",
-     "2018",
      "2019",
      "2021",
-     "2022",
-     "2023"
-    ],
-    "src": "第三段 · 正面版 · 模板第4句",
-    "color": "#06b6d4"
-   },
-   {
-    "w": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential.",
-    "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。",
-    "years": [
-     "2010",
-     "2011",
-     "2012",
-     "2014",
-     "2015",
-     "2018",
-     "2020",
      "2024",
-     "2025",
      "2026"
     ],
     "src": "第三段 · 正面版 · 模板第1句",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
+    "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
+    "years": [
+     "2011",
+     "2013",
+     "2014",
+     "2016",
+     "2018",
+     "2022",
+     "2025"
+    ],
+    "src": "第三段 · 正面版 · 功能句2",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Families matter most: children copy what adults do far more than what they are told.",
+    "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
+    "years": [
+     "2011",
+     "2014",
+     "2022"
+    ],
+    "src": "第三段 · 正面版 · 功能句3",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
+    "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
+    "years": [
+     "2016",
+     "2020",
+     "2023"
+    ],
+    "src": "第三段 · 正面版 · 功能句5",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Clear rules and steady funding matter more than one-off campaigns.",
+    "cn": "明确的规则和持续的投入，比一次性活动更重要。",
+    "years": [
+     "2014",
+     "2023",
+     "2025"
+    ],
+    "src": "第三段 · 正面版 · 功能句7",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
+    "cn": "企业可以把 {{topic}} 做得更便宜、更好用，让它覆盖更多人。",
+    "years": [
+     "2011",
+     "2018"
+    ],
+    "src": "第三段 · 正面版 · 功能句4",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
+    "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+    "years": [
+     "2018",
+     "2022"
+    ],
+    "src": "第三段 · 正面版 · 功能句8",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Documentaries and short videos can show how {{topic}} works in real life.",
+    "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中是怎样运作的。",
+    "years": [
+     "2023"
+    ],
+    "src": "第三段 · 正面版 · 功能句9",
     "color": "#06b6d4"
    }
   ]

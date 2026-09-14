@@ -283,28 +283,10 @@
      "freq": 3
     },
     {
-     "en": "In other words, the first two categories take up more than half of {{topic}}.",
-     "cn": "换句话说，前两类占了 {{topic}} 的一半以上。",
-     "tag": "过半",
-     "freq": 3
-    },
-    {
-     "en": "While {{item1}} dominates the chart, the remaining categories are spread rather evenly.",
-     "cn": "虽然 {{item1}} 在图中占主导，其余类别的分布却比较平均。",
-     "tag": "主导",
-     "freq": 3
-    },
-    {
      "en": "Taken together, the three largest categories account for {{percent total}}.",
      "cn": "把最大的三类加在一起，共占 {{percent total}}。",
      "tag": "分组统计",
      "freq": 3
-    },
-    {
-     "en": "The top three categories — {{item1}}, {{item2}} and {{item3}} — make up {{percent1}}, {{percent2}} and {{percent3}}.",
-     "cn": "排名前三的类别——{{item1}}、{{item2}} 和 {{item3}}——分别占 {{percent1}}、{{percent2}} 和 {{percent3}}。",
-     "tag": "前三合计",
-     "freq": 2
     },
     {
      "en": "This distribution suggests that {{topic}} is still concentrated in a few categories.",
@@ -474,24 +456,6 @@
      "cn": "{{time1}} 之后，{{item3}} 一直稳定在 {{num5}} 附近。",
      "tag": "平稳",
      "freq": 2
-    },
-    {
-     "en": "One detail stands out: {{item1}} rose from {{num1}} to {{num2}} while {{item3}} went the other way.",
-     "cn": "有一点很突出：{{item1}} 从 {{num1}} 升到 {{num2}}，而 {{item3}} 恰恰相反。",
-     "tag": "反差",
-     "freq": 2
-    },
-    {
-     "en": "The increase in {{item1}} accelerated after {{time1}}.",
-     "cn": "{{time1}} 之后，{{item1}} 的增长明显加快。",
-     "tag": "加速",
-     "freq": 1
-    },
-    {
-     "en": "{{item3}} moved within a narrow range of {{num range}}, with no clear direction.",
-     "cn": "{{item3}} 在 {{num range}} 这个窄区间内波动，看不出明确方向。",
-     "tag": "窄幅波动",
-     "freq": 1
     }
    ],
    "tips": [
@@ -770,12 +734,6 @@
      "freq": 3
     },
     {
-     "en": "The price of {{topic}} has fallen sharply, putting it within reach of ordinary families.",
-     "cn": "{{topic}} 的价格大幅下降，普通家庭也消费得起。",
-     "tag": "价格",
-     "freq": 3
-    },
-    {
      "en": "Once {{item1}} reached {{num2}}, growth became hard to stop.",
      "cn": "{{item1}} 一旦达到 {{num2}}，增长就很难再停下来。",
      "tag": "数据回扣",
@@ -804,12 +762,6 @@
      "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。",
      "tag": "政策",
      "freq": 2
-    },
-    {
-     "en": "Young people are the first to try new things, and their choices soon spread.",
-     "cn": "年轻人最先尝试新事物，他们的选择很快扩散开来。",
-     "tag": "人群",
-     "freq": 1
     }
    ],
    "en_struct": [
@@ -1033,12 +985,6 @@
      "freq": 3
     },
     {
-     "en": "It also builds the habit of finishing what has been started, even when it is boring.",
-     "cn": "它还能养成有始有终的习惯，哪怕过程枯燥。",
-     "tag": "有始有终",
-     "freq": 3
-    },
-    {
      "en": "On the other hand, too much of it can crowd out sleep and real conversation.",
      "cn": "另一方面，过度投入会挤占睡眠和真实交流的时间。",
      "tag": "负面·挤占",
@@ -1067,12 +1013,6 @@
      "cn": "所以学校和家长都需要参与。",
      "tag": "家校协同",
      "freq": 2
-    },
-    {
-     "en": "Used well, {{topic}} is training for adult life rather than a way to fill time.",
-     "cn": "用得好的话，{{topic}} 是为成年生活做准备，而不是打发时间。",
-     "tag": "正面·训练",
-     "freq": 1
     }
    ],
    "priority": true
@@ -1170,18 +1110,6 @@
      "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，正是这种转变的一个迹象。",
      "tag": "数据回扣 · 通用",
      "freq": 3
-    },
-    {
-     "en": "In short, the numbers record a change in expectations, not just in behaviour.",
-     "cn": "总之，这些数字记录的是期望值的变化，而不只是行为的变化。",
-     "tag": "收束 · 通用",
-     "freq": 3
-    },
-    {
-     "en": "A steady job and fair pay now matter as much as the salary itself.",
-     "cn": "工作稳定和待遇公平，现在和薪水本身一样重要。",
-     "tag": "职场 · 2012",
-     "freq": 2
     },
     {
      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
@@ -1323,18 +1251,6 @@
      "cn": "健康宣传提醒公众：预防比治疗便宜。",
      "tag": "宣传",
      "freq": 2
-    },
-    {
-     "en": "In short, exercising has moved from a personal choice to a social habit.",
-     "cn": "总之，运动已经从个人选择变成了社会习惯。",
-     "tag": "习惯化",
-     "freq": 2
-    },
-    {
-     "en": "People with higher incomes spend more on keeping fit, and the gap is widening.",
-     "cn": "收入较高的人更愿意为健身花钱，而且这个差距在扩大。",
-     "tag": "收入差距",
-     "freq": 1
     }
    ]
   },
@@ -1441,12 +1357,6 @@
      "freq": 3
     },
     {
-     "en": "In short, the chart records a culture that is being used rather than only admired.",
-     "cn": "总之，图表记录的是一种正在被使用、而不只是被欣赏的文化。",
-     "tag": "在使用中传承",
-     "freq": 3
-    },
-    {
      "en": "Documentaries and short videos have made old stories interesting to young audiences.",
      "cn": "纪录片和短视频让老故事对年轻观众有了吸引力。",
      "tag": "新媒体",
@@ -1463,18 +1373,6 @@
      "cn": "传统被真正用起来、而不只是背诵时，文化自信才会增长。",
      "tag": "文化自信",
      "freq": 2
-    },
-    {
-     "en": "Museums now design exhibitions that visitors can take part in, not just look at.",
-     "cn": "博物馆现在设计的展览，观众能参与而不只是观看。",
-     "tag": "互动展览",
-     "freq": 1
-    },
-    {
-     "en": "Commercial products carry cultural elements into daily use, from clothing to household goods.",
-     "cn": "从服装到家居用品，文创产品把文化元素带进了日常使用。",
-     "tag": "文创",
-     "freq": 1
     }
    ],
    "priority": false
@@ -1600,18 +1498,6 @@
      "en": "Clear rules and steady funding matter more than one-off campaigns.",
      "cn": "明确的规则和持续的投入，比一次性活动更重要。",
      "tag": "政府 · 2014/2023/2025",
-     "freq": 2
-    },
-    {
-     "en": "Courses and after-class activities give students a chance to try {{topic}} for themselves.",
-     "cn": "课程和课外活动让学生有机会亲自体验 {{topic}}。",
-     "tag": "学校 · 2024/2026",
-     "freq": 2
-    },
-    {
-     "en": "Parents can set the tone by making {{topic}} part of ordinary family life.",
-     "cn": "父母可以把 {{topic}} 变成家庭日常的一部分，从而带动全家人。",
-     "tag": "家庭 · 2016/2026",
      "freq": 2
     },
     {
@@ -1744,12 +1630,6 @@
      "freq": 3
     },
     {
-     "en": "Penalties need to be heavy enough to matter.",
-     "cn": "处罚要重到真正起作用。",
-     "tag": "政府 · 2022",
-     "freq": 2
-    },
-    {
      "en": "Classes on {{topic}} can help students tell safe use from misuse.",
      "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
      "tag": "学校 · 2020/2024",
@@ -1762,18 +1642,6 @@
      "freq": 2
     },
     {
-     "en": "Companies should not profit from designs that keep users hooked.",
-     "cn": "企业不应靠让人上瘾的设计赚钱。",
-     "tag": "企业/平台 · 2020",
-     "freq": 2
-    },
-    {
-     "en": "Sensational coverage makes the public numb instead of alert.",
-     "cn": "耸动的报道让公众变得麻木，而不是警觉。",
-     "tag": "媒体 · 2023",
-     "freq": 2
-    },
-    {
      "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
      "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
      "tag": "个人 · 2020/2021",
@@ -1782,5 +1650,142 @@
    ],
    "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。"
   }
+ ],
+ "_extra_ver": 1,
+ "teacher": [
+  [
+   "档位的分界线不是语言，是内容针对性",
+   "四档（10~12）与五档（13~15）的区别不在句式，而在<b>内容要点是否全部覆盖且贴合这张图</b>。语言再漂亮，只要第二段归因、第三段建议<b>换到任何年份都能原样使用</b>，就会被压在四档——这是模板最大的风险，也是每次写作必须往句子里塞「本题专属信息」的原因。"
+  ],
+  [
+   "数据必须准确，这是硬指标",
+   "数值、单位、年份、倍数一个都不能错：最高/最低值要有，起止值要对得上图。<b>算错倍数或抄错数字，直接扣内容分</b>，比语法错误严重得多（如 0.5 → 4 billion 是 8 倍，不是\"翻了一倍\"）。"
+  ],
+  [
+   "三段字数这样分",
+   "<b>P1 图表描述 40~55 词 · P2 归因 55~65 词 · P3 评论建议 45~55 词</b>，合计 <b>150~180 词</b>。超 200 词不加分，只会提高出错率；低于 150 词按字数不足扣分。"
+  ],
+  [
+   "万能句只能保底，不能加分",
+   "<b>Relevant authorities should…</b>、<b>with the development of…</b>、<b>Only in this way can…</b> 阅卷人一眼能认出。它们保证语言分不掉，但内容分要靠<b>图里的具体信息</b>：最高值是谁、涨了多少、哪一年翻倍、哪个主体在领跑。"
+  ],
+  [
+   "评论段要\"为什么/怎么办\"，不要表态",
+   "P3 写「我认为这个现象很好」等于没写。四档以上要求「对目标读者产生预期效果」——<b>要么给出机制（为什么会这样），要么给出可执行的做法（谁该做什么）</b>。"
+  ],
+  [
+   "时态：图用过去，评论用现在",
+   "图表数据都是历史年份 → <b>一般过去时 / 过去完成时</b>（climbed / had doubled by 2008）；归因与建议 → <b>一般现在时</b>（has become / should provide）。<b>时态混用是最常见的失分点</b>。"
+  ],
+  [
+   "别整句照抄题干",
+   "题干里 directions 的句子抄进作文不计内容分，还可能被判套作。把 \"interpret the chart and give your comments\" 这种要求<b>用自己的话转述</b>成句子框架。"
+  ],
+  [
+   "分数预期：认真填槽 11~13 分，13+ 靠\"本题专属\"",
+   "数据准确 + 三段完整 + 语言基本准确 = 二档到三档（<b>11~13 / 15</b>）；<b>13 分以上要求每一段都有针对这张图的具体归类或具体主体</b>，这是模板给不了的，只能靠平时套真题练出来。"
+  ]
+ ],
+ "flow": [
+  [
+   "① 审题",
+   "3 min",
+   "圈出四件事：<b>图型</b>（柱 / 饼 / 折线 / 表格）、<b>对象</b>（几个事物、谁和谁比）、<b>时间跨度</b>（哪年到哪年 / 单一时间点）、<b>单位</b>（billion / million / %）。再判断类型：<b>静态</b>（一个时间点的占比分布）还是<b>动态</b>（随年份变化）。"
+  ],
+  [
+   "② 定骨架",
+   "1 min",
+   "静态 → 用「静态骨架」；动态 → 三套走势骨架里选一套：<b>单线上升</b>（只有一个事物）/ <b>同向不同速</b>（都在涨但快慢不同）/ <b>一升一降</b>（有涨有跌）。选错骨架整段都会别扭。"
+  ],
+  [
+   "③ 定归因",
+   "2 min",
+   "想好 2 个<b>具体机制</b>，不要写「生活水平提高」这种空话。可用的一套推理链：<b>收入↑ → 价格↓ / 可及性↑</b>；<b>技术↑ → 成本↓</b>；<b>政策 + 基建 → 供给↑</b>；<b>观念变 → 需求变</b>。"
+  ],
+  [
+   "④ 写作",
+   "22 min",
+   "P1 = 骨架 + 1 句数据补充；P2 = 骨架 + 2 句归因；P3 = 骨架 + 2 句主体句。<b>边写边填 {{ }} 槽位</b>，不要留到最后统一填（容易漏）。"
+  ],
+  [
+   "⑤ 填槽",
+   "随写随填",
+   "每个 {{ }} 都要换成本题的具体内容，数字与图一致、单位统一。不确定写哪个主体时，回头用「⚡ 弹药句池」按用途标签挑。"
+  ],
+  [
+   "⑥ 检查",
+   "5 min",
+   "对着下方「✅ 交卷前自查表」逐条过；重点看<b>数字、时态、单位、词数</b>四项。"
+  ]
+ ],
+ "data_lang": [
+  [
+   "上升 / 增长",
+   "climb · rise · grow · increase · surge · soar",
+   "climb / rise / grow 是中性动词，surge / soar 表示猛涨。<b>rise 是不及物动词，没有被动</b>：the number <b>rose</b> ✓ / was risen ✗。典型句：<b>It climbed from 0.5 billion in 2000 to 4 billion in 2008.</b>"
+  ],
+  [
+   "下降 / 减少",
+   "fall · decline · drop · decrease · slide",
+   "同样<b>没有被动语态</b>：the figure <b>fell</b> from 0.7 to 0.5。说到\"降到\"用 <b>drop to</b>，\"下降了 X\"用 <b>fall by X</b>（to 是终点、by 是幅度，别混）。"
+  ],
+  [
+   "幅度与速度",
+   "sharply · steadily · slightly · dramatically · gradually",
+   "副词修饰动词：<b>rose steadily</b> / <b>fell sharply</b>。说倍数最划算：<b>more than doubled</b>（翻了一倍多）/ <b>nearly tripled</b> / <b>three times as many as</b>。"
+  ],
+  [
+   "占比（饼图/柱图）",
+   "account for · make up · take up · constitute · the largest share",
+   "标准说法：<b>{{item1}} alone accounts for {{percent1}} of the total.</b>注意 <b>account for 用主动</b>，占比的主语是事物本身。percentage 指数值本身（a high percentage），percent 跟在数字后（20 percent，<b>不加 s</b>）。"
+  ],
+  [
+   "比较与对照",
+   "three times as many as · twice the figure for · outnumber … by 2 to 1 · slightly higher than",
+   "两组对比的万能骨架：<b>A rose from X to Y, while B fell from P to Q.</b>幅度不同时：<b>Both rose, but A climbed faster than B.</b>"
+  ],
+  [
+   "极值与走势",
+   "peak at · hit a low of · level off · remain steady · fluctuate within a narrow range",
+   "最高点 <b>peaked at 4 billion</b>；最低点 <b>hit a low of 0.5 billion</b>；走平 <b>levelled off at</b>；小幅波动 <b>fluctuated within a narrow range</b>。写极值是拿内容分最省力的一步，<b>别漏</b>。"
+  ]
+ ],
+ "mistakes": [
+  [
+   "rise / fall 加了被动",
+   "the number <b>was risen</b> ✗ → the number <b>rose</b> ✓（rise / fall / decline / drop 都不及物）"
+  ],
+  [
+   "amount / number 用错",
+   "the <b>amount</b> of people ✗ → the <b>number</b> of people ✓（number 可数、amount 不可数）"
+  ],
+  [
+   "数字写法",
+   "<b>0.5 billion</b> ✓ / 500 millions ✗ / 500 million ✓；<b>20 percent</b> 不加 s"
+  ],
+  [
+   "时态混用",
+   "数据用过去时（climbed），归因用现在时（has become）；\"到某年为止\"用过去完成 <b>had doubled by 2008</b>"
+  ],
+  [
+   "主谓一致",
+   "The <b>number</b> of users <b>was</b>…（单数）；The <b>figures</b> <b>were</b>…（复数）"
+  ],
+  [
+   "比较级不成立",
+   "more higher ✗ / higher ✓；as many as 中间放原级：<b>three times as many as</b>"
+  ]
+ ],
+ "checklist": [
+  "数字与图逐个核对：起止值、最高值、最低值、倍数",
+  "单位统一：billion / million 没混用，百分比写成 % 或 percent",
+  "时态：图表用过去时，归因/建议用现在时",
+  "每个 {{ }} 槽位都换成本题内容了吗",
+  "主谓一致：The number / The percentage 用单数",
+  "三段都有主题句，段落数符合题目要求",
+  "词数在 150~180（不够补一句归因，超了删一句弹药）",
+  "没有整句照抄题干 directions",
+  "开头没有 \"With the development of…\" 这类空话",
+  "拼写与大小写：句首字母、专有名词、专名首字母"
  ]
 }

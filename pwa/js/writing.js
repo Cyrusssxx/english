@@ -760,6 +760,57 @@ function wrToggleApply(i) {
     if (btn) btn.textContent = show ? '收起示范 ▴' : '展开示范 ▾';
 }
 
+/** 允许 <b> 的富文本：转义 → 包 {{}} 占位符 → 还原 <b> */
+function wrRich(s) {
+    return wrEsc(s)
+        .replace(/\{\{(.+?)\}\}/g, '<span class="wr-ph">{{$1}}</span>')
+        .replace(/&lt;(\/?b)&gt;/g, '<$1>');
+}
+
+/* ==================== 🎓 评分老师视角 / ✍️ 答题动线 / 📐 数据语言 / ✅ 自查表 ==================== */
+
+function wrRenderTeacher() {
+    const box = document.getElementById('wrTeacher');
+    if (!box) return;
+    box.innerHTML = (WR.teacher || []).map((x, i) => `
+        <div class="wr-decision">
+            <div class="wr-decision-k"><span class="wr-dno">${i + 1}</span>${wrEsc(x[0])}</div>
+            <div class="wr-decision-v">${wrRich(x[1])}</div>
+        </div>`).join('');
+}
+
+function wrRenderFlow() {
+    const box = document.getElementById('wrFlow');
+    if (!box) return;
+    box.innerHTML = (WR.flow || []).map((x, i) => `
+        <div class="wr-flow-step">
+            <div class="wr-flow-head"><span class="wr-flow-no">${i + 1}</span><b>${wrEsc(x[0].replace(/^[①-⑥]\s*/, ''))}</b>
+                <span class="wr-flow-time">${wrEsc(x[1])}</span></div>
+            <div class="wr-flow-body">${wrRich(x[2])}</div>
+        </div>`).join('');
+}
+
+function wrRenderDataLang() {
+    const box = document.getElementById('wrDataLang');
+    if (!box) return;
+    box.innerHTML = (WR.data_lang || []).map(x => `
+        <div class="wr-dl-card">
+            <div class="wr-dl-name">${wrEsc(x[0])}</div>
+            <div class="wr-dl-words">${wrEsc(x[1])}</div>
+            <div class="wr-dl-how">${wrRich(x[2])}</div>
+        </div>`).join('');
+    const mb = document.getElementById('wrMistakes');
+    if (mb) mb.innerHTML = (WR.mistakes || []).map(x => `
+        <div class="wr-mist-row"><span class="wr-mist-k">${wrEsc(x[0])}</span>
+        <span class="wr-mist-v">${wrRich(x[1])}</span></div>`).join('');
+}
+
+function wrRenderChecklist() {
+    const box = document.getElementById('wrChecklist');
+    if (!box) return;
+    box.innerHTML = (WR.checklist || []).map(x => `<li>${wrRich(x)}</li>`).join('');
+}
+
 /* ==================== 悬浮目录（左侧） ==================== */
 const WR_TOC_KEY = 'wr_toc_fold';
 const WR_TOC_NARROW = 1180;
@@ -772,8 +823,11 @@ function wrNavH() {
 /** 收集目录条目：适配表 → 选句决策 → 各分区（一级）+ 各模板卡（二级） */
 function wrTocItems() {
     const items = [];
+    if (document.getElementById('wrTeacherTitle')) items.push({ lv: 1, id: 'wrTeacherTitle', text: '评分老师怎么看' });
+    if (document.getElementById('wrFlowTitle')) items.push({ lv: 1, id: 'wrFlowTitle', text: '答题动线' });
     if (document.getElementById('wrGuideBlock')) items.push({ lv: 1, id: 'wrGuideBlock', text: '图表适配表' });
     if (document.getElementById('wrDecisionsTitle')) items.push({ lv: 2, id: 'wrDecisionsTitle', text: '选句决策' });
+    if (document.getElementById('wrDataTitle')) items.push({ lv: 1, id: 'wrDataTitle', text: '数据描述语言工具' });
     document.querySelectorAll('#wrContent h2.wr-h2').forEach(h => {
         items.push({ lv: 1, id: h.id, text: h.textContent.trim() });
         let n = h.nextElementSibling;
@@ -783,6 +837,7 @@ function wrTocItems() {
             n = n.nextElementSibling;
         }
     });
+    if (document.getElementById('wrCheckTitle')) items.push({ lv: 1, id: 'wrCheckTitle', text: '交卷前自查表' });
     return items;
 }
 
@@ -941,6 +996,12 @@ async function initWriting() {
             <div class="wr-decision-k">${wrEsc(d.k)}</div>
             <div class="wr-decision-v">${wrEsc(d.v)}</div>
         </div>`).join('');
+
+    // 评分标准 / 答题动线 / 数据语言 / 自查表
+    wrRenderTeacher();
+    wrRenderFlow();
+    wrRenderDataLang();
+    wrRenderChecklist();
 
     // 模板分区（按 group 分组）
     wrRenderCards();

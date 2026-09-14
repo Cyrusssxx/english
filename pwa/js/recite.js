@@ -113,6 +113,28 @@ async function rcInit() {
     });
     document.getElementById('rcSkeleton').innerHTML = sk;
 
+    // 五、考场流程 + 交卷自查（来自 writing_templates.json 的 flow / checklist / data_lang）
+    (function () {
+        const box = document.getElementById('rcExam');
+        if (!box) return;
+        const flow = RC.flow || [], ck = RC.checklist || [];
+        const dl = RC.data_lang || [];
+        box.innerHTML = '<div class="rc-order">'
+            + flow.map((x, i) => `<div class="rc-order-step"><span class="rc-order-no">${i + 1}</span><b>${rcEsc(x[0].replace(/^[①-⑥]\s*/, ''))} · ${rcEsc(x[1])}</b>
+                <div class="rc-order-body">${rcPh(x[2])}</div></div>`).join('')
+            + '</div>'
+            + '<div class="rc-group">📐 数据说法速查（第一段全靠它）</div>'
+            + '<div class="rc-plan"><table class="rc-table"><tbody>'
+            + dl.map(x => `<tr><td>${rcEsc(x[0])}</td><td>${rcEsc(x[1])}</td></tr>`).join('')
+            + '</tbody></table></div>'
+            + '<div class="rc-group">✅ 交卷前自查（逐条过）</div>'
+            + '<div class="rc-plan"><table class="rc-table"><tbody>'
+            + ck.map((x, i) => `<tr><td>${i + 1}</td><td>${rcPh(x)}</td></tr>`).join('')
+            + '</tbody></table></div>'
+            + '<div class="rc-note"><b>时间分配：</b>审题 3 分钟 → 定骨架与归因 3 分钟 → 写 22 分钟 → 检查 5 分钟。'
+            + '最后 5 分钟只做三件事：<b>核对数字、查时态、数字数</b>。</div>';
+    })();
+
     // 三、第三段主体句池
     let ag = '';
     [['para3_positive', '正面版（建议怎么做）'], ['para3_negative', '负面版（怎么控制危害）']].forEach(([id, label]) => {
@@ -149,7 +171,8 @@ function rcToc() {
         ['rcSecOrder', '① 三段怎么拼'],
         ['rcSecSkeleton', '② ⭐ 必背骨架'],
         ['rcSecAgents', '③ ⚡ 主体句池'],
-        ['rcSecPlan', '④ 30 天计划']
+        ['rcSecPlan', '④ 30 天计划'],
+        ['rcSecExam', '⑤ 考场 30 分钟']
     ]);
     rcTocBuild('rcTocS', [
         ['rcSecSOrder', '① 怎么拼（5 步）'],
