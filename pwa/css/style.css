@@ -4024,6 +4024,8 @@ html.sw-zoom { font-size: 16.5px; }
 .sw-h2 { font-size: 1.12rem; color: var(--text); margin: 0 0 12px; padding-left: 11px; border-left: 4px solid var(--primary); }
 .sw-legend { margin-bottom: 18px; }
 .sw-legend > summary { cursor: pointer; list-style: none; }
+.sw-legend > summary::before { content: '▸'; color: var(--text-light); font-size: .78rem; }
+.sw-legend[open] > summary::before { content: '▾'; }
 .sw-legend > summary::-webkit-details-marker { display: none; }
 .sw-legend > summary:hover { color: var(--primary-dark); }
 .sw-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }

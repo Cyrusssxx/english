@@ -118,7 +118,7 @@ function swRenderLegend() {
     const box = document.getElementById('swLegend');
     if (!box) return;
     box.innerHTML = `
-        <summary class="wr-legend-head">占位符图例<span class="wr-legend-tip">模板里 <b>{{ }}</b> 包住的英文，按你的题目替换；词句本身不要动（共 ${ph.length} 个）</span></summary>
+        <summary class="wr-legend-head">占位符图例<span class="wr-legend-tip">模板里 <b>{{ }}</b> 包住的英文，按你的题目替换；词句本身不要动（共 ${ph.length} 个 · 点开查看）</span></summary>
         <div class="wr-legend-grid">${ph.map(x => `
             <div class="wr-legend-row">
                 <code class="wr-legend-tok">{{${swEsc(x[0])}}}</code>
