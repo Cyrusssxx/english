@@ -30,7 +30,6 @@
                 <a href="mistakes.html" class="nav-link">错题本</a>
             </div>
             <div class="nav-tools">
-                <button class="nav-switch" id="rcPrint" onclick="window.print()" title="打印或存为 PDF">打印 / 存 PDF</button>
                 <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
                     夜间 <span class="switch-state" id="darkState">关</span>
                 </button>
@@ -44,22 +43,24 @@
 
         <div class="rc-stats" id="rcStats"></div>
 
-        <section class="rc-sec">
+        <nav class="rc-toc" id="rcToc" aria-label="页面目录"></nav>
+
+        <section class="rc-sec" id="rcSecOrder">
             <h2 class="rc-h2">一、三段怎么拼成一篇（150~180 词）</h2>
             <div id="rcOrder"></div>
         </section>
 
-        <section class="rc-sec">
+        <section class="rc-sec" id="rcSecSkeleton">
             <h2 class="rc-h2">二、⭐ 必背骨架（背熟这些，结构就稳了）</h2>
             <div id="rcSkeleton"></div>
         </section>
 
-        <section class="rc-sec">
+        <section class="rc-sec" id="rcSecAgents">
             <h2 class="rc-h2">三、⚡ 第三段主体句池（按题挑 2 句）</h2>
             <div id="rcAgents"></div>
         </section>
 
-        <section class="rc-sec">
+        <section class="rc-sec" id="rcSecPlan">
             <h2 class="rc-h2">四、30 天背诵计划</h2>
             <div class="rc-plan">
                 <table class="rc-table">

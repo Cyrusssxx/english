@@ -128,8 +128,50 @@ function toggleDark() {
     if (s) s.textContent = on ? '开' : '关';
 }
 
+/** 目录（吸顶横条）：点击跳转 + 滚动高亮当前节 */
+function rcToc() {
+    const items = [
+        ['rcSecOrder', '① 三段怎么拼'],
+        ['rcSecSkeleton', '② ⭐ 必背骨架'],
+        ['rcSecAgents', '③ ⚡ 主体句池'],
+        ['rcSecPlan', '④ 30 天计划']
+    ].filter(x => document.getElementById(x[0]));
+    const toc = document.getElementById('rcToc');
+    if (!toc || !items.length) return;
+    toc.innerHTML = items.map(x => `<a href="#${x[0]}" data-t="${x[0]}">${x[1]}</a>`).join('');
+    const navH = () => {
+        const n = document.querySelector('.navbar');
+        const h = n ? n.getBoundingClientRect().height : 56;
+        return h >= 20 ? h : 56;
+    };
+    document.documentElement.style.setProperty('--nav-h', navH() + 'px');
+    window.addEventListener('resize', () => document.documentElement.style.setProperty('--nav-h', navH() + 'px'));
+    toc.addEventListener('click', e => {
+        const a = e.target.closest && e.target.closest('a[data-t]');
+        if (!a) return;
+        e.preventDefault();
+        const el = document.getElementById(a.dataset.t);
+        if (!el) return;
+        const y = el.getBoundingClientRect().top + window.scrollY - navH() - 62;
+        window.scrollTo({ top: y < 0 ? 0 : y, behavior: 'smooth' });
+    });
+    const links = [...toc.querySelectorAll('a[data-t]')];
+    const spy = () => {
+        const top = navH() + 80;
+        let cur = links[0];
+        links.forEach(a => {
+            const el = document.getElementById(a.dataset.t);
+            if (el && el.getBoundingClientRect().top <= top) cur = a;
+        });
+        links.forEach(a => a.classList.toggle('on', a === cur));
+    };
+    window.addEventListener('scroll', spy, { passive: true });
+    spy();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const s = document.getElementById('darkState');
     if (s) s.textContent = document.documentElement.classList.contains('dark') ? '开' : '关';
+    rcToc();
     rcInit();
 });

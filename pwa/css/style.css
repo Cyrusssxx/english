@@ -3637,6 +3637,29 @@ mark.ap-own {
 }
 .dark .ap-ph { color: #8fb4d8; background: rgba(124,192,255,.09); }
 
+/* 速记页目录（吸顶横条） */
+.rc-toc {
+    position: sticky;
+    top: var(--nav-h, 56px);
+    z-index: 60;
+    display: flex; flex-wrap: wrap; gap: 6px;
+    padding: 8px 10px;
+    margin: 0 0 18px;
+    background: var(--card-bg);
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .04);
+}
+.rc-toc a {
+    font-size: .84rem; font-weight: 600;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 3px 11px; border-radius: 999px;
+    border: 1px solid transparent;
+    transition: color .15s, border-color .15s, background .15s;
+}
+.rc-toc a:hover { color: var(--primary); border-color: var(--primary); }
+.rc-toc a.on { color: #fff; background: var(--primary); border-color: var(--primary); }
 /* ===== 速记页（recite.html）：可打印的一页 ===== */
 .rc-page { width: 100%; max-width: 1000px; margin: 0 auto; box-sizing: border-box; padding: 16px 14px 80px; }
 .rc-title { font-size: 1.35rem; margin: 4px 0 8px; color: var(--text); }
