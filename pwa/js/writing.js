@@ -661,10 +661,15 @@ function wrCopyLines(btn) {
     wrCopy(btn, t);
 }
 
+/** 考研口径词数：含字母或数字的空白串才算一个词（占位符 {{x}} 算 1 个） */
+function wrWords(t) {
+    return ((t || '').match(/[A-Za-z0-9][A-Za-z0-9'’%.,:_-]*/g) || []).length;
+}
+
 function wrSectionCard(sec) {
     const sents = (sec.sentences || []).map((s, i) => `
         <li class="wr-sent">
-            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span><span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
+            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
             <div class="wr-sent-cn">${wrHl(s.cn)}</div>
         </li>`).join('');
 
@@ -672,18 +677,25 @@ function wrSectionCard(sec) {
     const body = wrTplBody(sec.en, sec.cn, sec.en_struct);
     const neg = sec.negative_en ? wrTplBody(sec.negative_en, sec.negative_cn, sec.negative_struct) : null;
 
+    const skW = wrWords(sec.en);
+    const nS = (sec.sentences || []).length;
     return `
     <section class="wr-card" id="${sec.id}">
         <div class="wr-card-head">
             <div class="wr-card-head-txt">
                 <h3 class="wr-card-title">${wrEsc(sec.title)}</h3>
                 ${sec.subtitle ? `<div class="wr-card-sub">${wrEsc(sec.subtitle)}</div>` : ''}
+                <div class="wr-badges">
+                    <span class="wr-badge wr-badge-must">⭐ 必背 ${skW} 词</span>
+                    ${nS ? `<span class="wr-badge wr-badge-ammo">⚡ 弹药 ${nS} 句</span>` : ''}
+                    ${sec.priority ? '<span class="wr-badge wr-badge-top">优先背</span>' : ''}
+                </div>
             </div>
             <button class="wr-copy" onclick="wrShowPhrases('${wrEsc(sec.id)}')" title="本段有用词组/短句（英中对照）">✨ 精句</button>
         </div>
         <div class="wr-tpl">
             <div class="wr-tpl-bar">
-                <span class="wr-tpl-tag">英文模板</span>
+                <span class="wr-tpl-tag">⭐ 必背骨架（背熟这段，结构就稳了）</span>
                 <button class="wr-copy" onclick="wrCopyLines(this)">复制</button>
             </div>
             <div class="wr-en">${body.enHtml}</div>
@@ -698,7 +710,7 @@ function wrSectionCard(sec) {
             <div class="wr-en">${neg.enHtml}</div>
             <div class="wr-cn">${neg.cnHtml}</div>
         </div>` : ''}
-        ${sents ? `<div class="wr-sents"><div class="wr-sents-title">功能句挑选（自行选 2~4 句拼接，控制字数）</div><ol class="wr-sent-list">${sents}</ol></div>` : ''}
+        ${sents ? `<div class="wr-sents"><div class="wr-sents-title">⚡ 弹药句池（挑 1~2 句接在骨架后面，共 ${nS} 句可选）</div><ol class="wr-sent-list">${sents}</ol></div>` : ''}
         ${sec.note ? `<div class="wr-note-inline">💡 ${wrHl(sec.note)}</div>` : ''}
         ${tips ? `<ul class="wr-tips">${tips}</ul>` : ''}
     </section>`;

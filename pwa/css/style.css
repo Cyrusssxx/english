@@ -3637,6 +3637,68 @@ mark.ap-own {
 }
 .dark .ap-ph { color: #8fb4d8; background: rgba(124,192,255,.09); }
 
+/* ===== 速记页（recite.html）：可打印的一页 ===== */
+.rc-page { width: 100%; max-width: 1000px; margin: 0 auto; box-sizing: border-box; padding: 16px 14px 80px; }
+.rc-title { font-size: 1.35rem; margin: 4px 0 8px; color: var(--text); }
+.rc-desc { color: var(--text-light); font-size: .95rem; line-height: 1.75; margin: 0 0 14px; }
+.rc-desc b { color: var(--primary); }
+.rc-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 22px; }
+.rc-stat { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; text-align: center; }
+.rc-stat-n { display: block; font-size: 1.35rem; font-weight: 700; color: var(--primary); font-variant-numeric: lining-nums tabular-nums; }
+.rc-stat-k { display: block; font-size: .78rem; color: var(--text-light); margin-top: 2px; }
+.rc-sec { margin-bottom: 26px; }
+.rc-h2 { font-size: 1.1rem; color: var(--text); margin: 0 0 12px; padding-left: 11px; border-left: 4px solid var(--primary); }
+.rc-group { font-size: .9rem; font-weight: 700; color: var(--text-light); margin: 16px 0 8px; }
+.rc-order { display: grid; gap: 10px; }
+.rc-order-step { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; }
+.rc-order-no { display: inline-flex; width: 20px; height: 20px; margin-right: 7px; border-radius: 50%; background: var(--primary-soft); color: var(--primary-dark); font-size: .72rem; font-weight: 700; align-items: center; justify-content: center; }
+.rc-order-step b { font-size: .95rem; color: var(--text); }
+.rc-order-body { font-size: .88rem; color: var(--text-light); line-height: 1.75; margin-top: 4px; }
+.rc-order-body b { color: var(--primary); }
+.rc-total { text-align: center; font-size: .9rem; color: var(--text); background: var(--card-bg); border: 1px dashed var(--primary); border-radius: 10px; padding: 9px; }
+.rc-total b { color: var(--primary); }
+.rc-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 11px 14px 13px; margin-bottom: 10px; break-inside: avoid; }
+.rc-card-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 7px; }
+.rc-card-title { font-size: .98rem; font-weight: 700; color: var(--text); }
+.rc-card-sub { font-size: .78rem; font-weight: 700; color: #8a6d1a; }
+html.dark .rc-card-sub { color: #fbbf24; }
+.rc-sub { font-size: .82rem; font-weight: 700; color: #c2410c; margin: 9px 0 5px; }
+html.dark .rc-sub { color: #fb923c; }
+.rc-lines-neg .rc-en { color: var(--text-light); }
+.rc-line { padding: 4px 0; border-bottom: 1px dashed var(--border); }
+.rc-line:last-child { border-bottom: none; }
+.rc-en { font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; line-height: 1.7; color: var(--text); }
+.rc-cn { font-size: .88rem; color: var(--text-light); line-height: 1.65; margin-top: 2px; }
+.rc-ph { color: #62809f; font-weight: 500; font-style: italic; background: rgba(29, 111, 208, .05); border-radius: 3px; padding: 0 2px; }
+html.dark .rc-ph { color: #8fb4d8; background: rgba(124, 192, 255, .09); }
+.rc-agent-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+.rc-agent { background: var(--card-bg); border: 1px solid var(--border); border-top: 3px solid var(--primary); border-radius: 10px; padding: 10px 12px; break-inside: avoid; }
+.rc-agent-name { font-size: .92rem; font-weight: 700; color: var(--primary); margin-bottom: 5px; display: flex; justify-content: space-between; gap: 8px; }
+.rc-agent-yrs { font-size: .74rem; font-weight: 400; color: var(--text-light); }
+.rc-agent-s { padding: 4px 0; border-bottom: 1px dashed var(--border); }
+.rc-agent-s:last-child { border-bottom: none; }
+.rc-agent-s .rc-en { font-size: .98rem; }
+.rc-table { border-collapse: collapse; width: 100%; font-size: .88rem; background: var(--card-bg); }
+.rc-table th, .rc-table td { border: 1px solid var(--border); padding: 7px 10px; text-align: left; vertical-align: top; line-height: 1.6; }
+.rc-table th { background: var(--primary-soft); color: var(--primary-dark); font-weight: 700; white-space: nowrap; }
+.rc-table td:first-child { font-weight: 700; color: var(--primary); white-space: nowrap; }
+.rc-day { margin-top: 12px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 11px 14px; }
+.rc-day > b { font-size: .95rem; color: var(--text); }
+.rc-day-row { font-size: .88rem; color: var(--text-light); line-height: 1.8; }
+.rc-day-t { display: inline-block; width: 62px; font-weight: 700; color: var(--primary); }
+.rc-note { margin-top: 12px; padding: 10px 13px; background: var(--ann-bg); border: 1px solid var(--ann-border); border-left: 4px solid var(--warning); border-radius: 9px; font-size: .88rem; line-height: 1.8; color: var(--text); }
+.rc-note b { color: #8a6d1a; }
+html.dark .rc-note b { color: #e0c968; }
+
+@media print {
+    .rc-noprint { display: none !important; }
+    html.wr-zoom { font-size: 11.5pt; }
+    body { background: #fff !important; }
+    .rc-page { max-width: none; padding: 0; }
+    .rc-stat, .rc-card, .rc-agent, .rc-day, .rc-note, .rc-order-step, .rc-total, .rc-table { background: #fff !important; }
+    .rc-line, .rc-agent-s, .rc-card, .rc-agent { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+}
 /* ===== 占位符图例 ===== */
 .wr-legend {
     margin: 0 0 20px;
@@ -3779,6 +3841,27 @@ html.dark .wr-anno-head { color: #e0c968; }
 }
 .wr-anno-del:hover { border-color: var(--danger); background: rgba(220, 53, 69, .06); }
 
+
+/* ===== 背诵友好：必背/弹药徽标 + 句池用途标签 ===== */
+.wr-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.wr-badge {
+    display: inline-block; font-size: .72rem; font-weight: 700;
+    padding: 1px 8px; border-radius: 999px; white-space: nowrap;
+    border: 1px solid transparent;
+}
+.wr-badge-must { color: #8a6d1a; background: rgba(234, 179, 8, .14); border-color: rgba(234, 179, 8, .35); }
+html.dark .wr-badge-must { color: #fbbf24; background: rgba(251, 191, 36, .14); }
+.wr-badge-ammo { color: #0f766e; background: rgba(13, 148, 136, .12); border-color: rgba(13, 148, 136, .3); }
+html.dark .wr-badge-ammo { color: #5eead4; background: rgba(45, 212, 191, .14); }
+.wr-badge-top { color: #b45309; background: rgba(245, 158, 11, .16); border-color: rgba(245, 158, 11, .4); }
+html.dark .wr-badge-top { color: #fbbf24; background: rgba(245, 158, 11, .18); }
+.wr-tag {
+    flex: 0 0 auto; align-self: flex-start; margin-top: 2px;
+    font-size: .68rem; font-weight: 700; line-height: 1.5;
+    color: var(--primary-dark); background: var(--primary-soft);
+    border-radius: 4px; padding: 0 5px; white-space: nowrap;
+}
+html.dark .wr-tag { color: #5eead4; }
 
 /* 模板句行（结构染色的承载单元，不可点击点亮，仅内容可划词） */
 .wr-line { padding: 1px 0; }

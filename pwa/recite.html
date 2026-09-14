@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作文速记页 - 英语真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>document.documentElement.classList.add('wr-zoom');if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar rc-noprint">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
+                <a href="vocab.html" class="nav-link">单词本</a>
+                <a href="en1.html" class="nav-link">英语一阅读</a>
+                <a href="mindmap.html" class="nav-link">方法导图</a>
+                <a href="nearmap.html" class="nav-link">近义词</a>
+                <a href="wordnotes.html" class="nav-link">熟词僻义</a>
+                <a href="phrasebook.html" class="nav-link">熟词短语</a>
+                <a href="writing.html" class="nav-link">作文模板</a>
+                <a href="recite.html" class="nav-link active">速记页</a>
+                <a href="mistakes.html" class="nav-link">错题本</a>
+            </div>
+            <div class="nav-tools">
+                <button class="nav-switch" id="rcPrint" onclick="window.print()" title="打印或存为 PDF">打印 / 存 PDF</button>
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="rc-page">
+        <h1 class="rc-title">作文速记页</h1>
+        <p class="rc-desc" id="rcDesc">加载中…</p>
+
+        <div class="rc-stats" id="rcStats"></div>
+
+        <section class="rc-sec">
+            <h2 class="rc-h2">一、三段怎么拼成一篇（150~180 词）</h2>
+            <div id="rcOrder"></div>
+        </section>
+
+        <section class="rc-sec">
+            <h2 class="rc-h2">二、⭐ 必背骨架（背熟这些，结构就稳了）</h2>
+            <div id="rcSkeleton"></div>
+        </section>
+
+        <section class="rc-sec">
+            <h2 class="rc-h2">三、⚡ 第三段主体句池（按题挑 2 句）</h2>
+            <div id="rcAgents"></div>
+        </section>
+
+        <section class="rc-sec">
+            <h2 class="rc-h2">四、30 天背诵计划</h2>
+            <div class="rc-plan">
+                <table class="rc-table">
+                    <thead><tr><th>阶段</th><th>天数</th><th>背什么</th><th>验收</th></tr></thead>
+                    <tbody>
+                        <tr><td rowspan="3">第 1 周</td><td>D1–D3</td><td>第一段两个骨架（静态 4 句 + 动态 3 句，共 72 词）</td><td>能默写第一段</td></tr>
+                        <tr><td>D4–D5</td><td>经济类第二段骨架（33 词）+ 正面第三段骨架（31 词）</td><td>能默写两段骨架</td></tr>
+                        <tr><td>D6–D7</td><td>套写 2010 真题：拼出第一篇 150 词</td><td>默写一整篇</td></tr>
+                        <tr><td rowspan="2">第 2 周</td><td>D8–D11</td><td>校园类第二段骨架（正面 34 + 负面 39 词）</td><td>能默写正负两版</td></tr>
+                        <tr><td>D12–D14</td><td>滚动复习第 1 周 + 套写 2014、2019</td><td>不看稿写出两篇</td></tr>
+                        <tr><td rowspan="2">第 3 周</td><td>D15–D18</td><td>环保类（32 词）+ 体育健康类（35 词）骨架</td><td>能默写两段</td></tr>
+                        <tr><td>D19–D21</td><td>滚动复习 + 套写 2013、2021</td><td>不看稿写出两篇</td></tr>
+                        <tr><td rowspan="3">第 4 周</td><td>D22–D25</td><td>文化类（33 词）+ 负面第三段（25 词）骨架</td><td>全部骨架可默写</td></tr>
+                        <tr><td>D26–D28</td><td>主体句池 6 组各挑 1 句（共 6 句）+ 弹药句池挑 10 句</td><td>会用不背错主体</td></tr>
+                        <tr><td>D29–D30</td><td>全真套写 2016、2020、2024 + 总复习</td><td>限时 25 分钟成篇</td></tr>
+                    </tbody>
+                </table>
+                <div class="rc-day">
+                    <b>每天 0.5~1 小时怎么用</b>
+                    <div class="rc-day-row"><span class="rc-day-t">5 min</span>先默写昨天背的骨架，错的当场抄 3 遍</div>
+                    <div class="rc-day-row"><span class="rc-day-t">15 min</span>背 1~2 句新骨架（先读中文 → 读英文 → 遮中文复述）</div>
+                    <div class="rc-day-row"><span class="rc-day-t">10 min</span>合上书写这一句（默写比朗读有效得多）</div>
+                    <div class="rc-day-row"><span class="rc-day-t">剩下</span>做一篇阅读，或整篇套写（第 1 周之后每天可以整篇套写）</div>
+                </div>
+                <div class="rc-note">
+                    <b>只背骨架就够了吗？</b>够。骨架 334 词撑起全文结构，句池是「弹药」——写的时候现挑现抄，
+                    不用背。先把骨架背到能默写，再从每段句池里挑 1~2 句用得顺手的固定下来（约 10 句），就已经覆盖绝大多数年份。
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/recite.js"></script>
+</body>
+</html>
