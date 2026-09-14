@@ -669,7 +669,7 @@ function wrWords(t) {
 function wrSectionCard(sec) {
     const sents = (sec.sentences || []).map((s, i) => `
         <li class="wr-sent">
-            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
+            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${s.freq ? `<span class="wr-freq" title="考频：★★★ 通用（跨话题都能接）/ ★★ 常用 / ★ 专场">${'★'.repeat(s.freq)}</span>` : ''}${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
             <div class="wr-sent-cn">${wrHl(s.cn)}</div>
         </li>`).join('');
 
@@ -710,7 +710,8 @@ function wrSectionCard(sec) {
             <div class="wr-en">${neg.enHtml}</div>
             <div class="wr-cn">${neg.cnHtml}</div>
         </div>` : ''}
-        ${sents ? `<div class="wr-sents"><div class="wr-sents-title">⚡ 弹药句池（挑 1~2 句接在骨架后面，共 ${nS} 句可选）</div><ol class="wr-sent-list">${sents}</ol></div>` : ''}
+        ${sents ? `<div class="wr-sents"><div class="wr-sents-title">⚡ 弹药句池（挑 1~2 句接在骨架后面，共 ${nS} 句可选）
+                    <span class="wr-sents-legend"><b>★★★</b> 通用 · 跨话题都能接，优先挑；<b>★★</b> 常用；<b>★</b> 专场</span></div><ol class="wr-sent-list">${sents}</ol></div>` : ''}
         ${sec.note ? `<div class="wr-note-inline">💡 ${wrHl(sec.note)}</div>` : ''}
         ${tips ? `<ul class="wr-tips">${tips}</ul>` : ''}
     </section>`;

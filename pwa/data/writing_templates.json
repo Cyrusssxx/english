@@ -273,42 +273,50 @@
     {
      "en": "{{item1}} alone accounts for {{percent1}} of the total.",
      "cn": "{{item1}} 一项就占了总量的 {{percent1}}。",
-     "tag": "总量"
-    },
-    {
-     "en": "The top three categories — {{item1}}, {{item2}} and {{item3}} — make up {{percent1}}, {{percent2}} and {{percent3}}.",
-     "cn": "排名前三的类别——{{item1}}、{{item2}} 和 {{item3}}——分别占 {{percent1}}、{{percent2}} 和 {{percent3}}。",
-     "tag": "前三合计"
+     "tag": "总量",
+     "freq": 3
     },
     {
      "en": "Only {{percent4}} goes to {{item4}}, and {{item5}} is even lower.",
      "cn": "{{item4}} 只占 {{percent4}}，{{item5}} 更低。",
-     "tag": "长尾"
+     "tag": "长尾",
+     "freq": 3
     },
     {
      "en": "In other words, the first two categories take up more than half of {{topic}}.",
      "cn": "换句话说，前两类占了 {{topic}} 的一半以上。",
-     "tag": "过半"
-    },
-    {
-     "en": "A closer look shows that the four smaller categories are fairly evenly matched.",
-     "cn": "再仔细看，其余四个类别的占比其实相差不大。",
-     "tag": "均衡"
+     "tag": "过半",
+     "freq": 3
     },
     {
      "en": "While {{item1}} dominates the chart, the remaining categories are spread rather evenly.",
      "cn": "虽然 {{item1}} 在图中占主导，其余类别的分布却比较平均。",
-     "tag": "主导"
-    },
-    {
-     "en": "This distribution suggests that {{topic}} is still concentrated in a few categories.",
-     "cn": "这种分布说明 {{topic}} 仍然集中在少数几类上。",
-     "tag": "集中度"
+     "tag": "主导",
+     "freq": 3
     },
     {
      "en": "Taken together, the three largest categories account for {{percent total}}.",
      "cn": "把最大的三类加在一起，共占 {{percent total}}。",
-     "tag": "分组统计"
+     "tag": "分组统计",
+     "freq": 3
+    },
+    {
+     "en": "The top three categories — {{item1}}, {{item2}} and {{item3}} — make up {{percent1}}, {{percent2}} and {{percent3}}.",
+     "cn": "排名前三的类别——{{item1}}、{{item2}} 和 {{item3}}——分别占 {{percent1}}、{{percent2}} 和 {{percent3}}。",
+     "tag": "前三合计",
+     "freq": 2
+    },
+    {
+     "en": "This distribution suggests that {{topic}} is still concentrated in a few categories.",
+     "cn": "这种分布说明 {{topic}} 仍然集中在少数几类上。",
+     "tag": "集中度",
+     "freq": 2
+    },
+    {
+     "en": "A closer look shows that the four smaller categories are fairly evenly matched.",
+     "cn": "再仔细看，其余四个类别的占比其实相差不大。",
+     "tag": "均衡",
+     "freq": 1
     }
    ],
    "tips": [
@@ -440,42 +448,50 @@
     {
      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
      "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
-     "tag": "上升"
+     "tag": "上升",
+     "freq": 3
     },
     {
      "en": "Over the same period, {{item2}} fell from {{num3}} to {{num4}}, a clear decline.",
      "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，降幅明显。",
-     "tag": "下降"
-    },
-    {
-     "en": "{{item3}} held steady at around {{num5}} after {{time1}}.",
-     "cn": "{{time1}} 之后，{{item3}} 一直稳定在 {{num5}} 附近。",
-     "tag": "平稳"
-    },
-    {
-     "en": "The increase in {{item1}} accelerated after {{time1}}.",
-     "cn": "{{time1}} 之后，{{item1}} 的增长明显加快。",
-     "tag": "加速"
-    },
-    {
-     "en": "{{item3}} moved within a narrow range of {{num range}}, with no clear direction.",
-     "cn": "{{item3}} 在 {{num range}} 这个窄区间内波动，看不出明确方向。",
-     "tag": "窄幅波动"
+     "tag": "下降",
+     "freq": 3
     },
     {
      "en": "By {{time2}}, {{item1}} had more than doubled, reaching {{num2}}.",
      "cn": "到 {{time2}} 时，{{item1}} 已经翻了一倍多，达到 {{num2}}。",
-     "tag": "翻倍"
+     "tag": "翻倍",
+     "freq": 3
     },
     {
      "en": "Both moved in the same direction, but at very different speeds.",
      "cn": "两者方向一致，但速度快慢差别很大。",
-     "tag": "同向不同速"
+     "tag": "同向不同速",
+     "freq": 3
+    },
+    {
+     "en": "{{item3}} held steady at around {{num5}} after {{time1}}.",
+     "cn": "{{time1}} 之后，{{item3}} 一直稳定在 {{num5}} 附近。",
+     "tag": "平稳",
+     "freq": 2
     },
     {
      "en": "One detail stands out: {{item1}} rose from {{num1}} to {{num2}} while {{item3}} went the other way.",
      "cn": "有一点很突出：{{item1}} 从 {{num1}} 升到 {{num2}}，而 {{item3}} 恰恰相反。",
-     "tag": "反差"
+     "tag": "反差",
+     "freq": 2
+    },
+    {
+     "en": "The increase in {{item1}} accelerated after {{time1}}.",
+     "cn": "{{time1}} 之后，{{item1}} 的增长明显加快。",
+     "tag": "加速",
+     "freq": 1
+    },
+    {
+     "en": "{{item3}} moved within a narrow range of {{num range}}, with no clear direction.",
+     "cn": "{{item3}} 在 {{num range}} 这个窄区间内波动，看不出明确方向。",
+     "tag": "窄幅波动",
+     "freq": 1
     }
    ],
    "tips": [
@@ -602,42 +618,50 @@
     {
      "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
      "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。",
-     "tag": "收入"
+     "tag": "收入",
+     "freq": 3
     },
     {
      "en": "The price of {{topic}} has fallen sharply, putting it within reach of ordinary families.",
      "cn": "{{topic}} 的价格大幅下降，普通家庭也消费得起。",
-     "tag": "价格"
-    },
-    {
-     "en": "Online platforms and mobile payment have cut the time and cost of getting {{topic}}.",
-     "cn": "线上平台和移动支付降低了获得 {{topic}} 的时间和成本。",
-     "tag": "技术"
-    },
-    {
-     "en": "Cities have grown quickly, and demand for {{topic}} has grown with them.",
-     "cn": "城市快速扩张，{{topic}} 的需求也随之增长。",
-     "tag": "城市化"
-    },
-    {
-     "en": "Young people are the first to try new things, and their choices soon spread.",
-     "cn": "年轻人最先尝试新事物，他们的选择很快扩散开来。",
-     "tag": "人群"
-    },
-    {
-     "en": "Government support — from tax breaks to better infrastructure — has also helped.",
-     "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。",
-     "tag": "政策"
+     "tag": "价格",
+     "freq": 3
     },
     {
      "en": "Once {{item1}} reached {{num2}}, growth became hard to stop.",
      "cn": "{{item1}} 一旦达到 {{num2}}，增长就很难再停下来。",
-     "tag": "数据回扣"
+     "tag": "数据回扣",
+     "freq": 3
     },
     {
      "en": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
      "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。",
-     "tag": "观念"
+     "tag": "观念",
+     "freq": 3
+    },
+    {
+     "en": "Online platforms and mobile payment have cut the time and cost of getting {{topic}}.",
+     "cn": "线上平台和移动支付降低了获得 {{topic}} 的时间和成本。",
+     "tag": "技术",
+     "freq": 2
+    },
+    {
+     "en": "Cities have grown quickly, and demand for {{topic}} has grown with them.",
+     "cn": "城市快速扩张，{{topic}} 的需求也随之增长。",
+     "tag": "城市化",
+     "freq": 2
+    },
+    {
+     "en": "Government support — from tax breaks to better infrastructure — has also helped.",
+     "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。",
+     "tag": "政策",
+     "freq": 2
+    },
+    {
+     "en": "Young people are the first to try new things, and their choices soon spread.",
+     "cn": "年轻人最先尝试新事物，他们的选择很快扩散开来。",
+     "tag": "人群",
+     "freq": 1
     }
    ],
    "en_struct": [
@@ -857,42 +881,50 @@
     {
      "en": "{{topic}} teaches students to plan their own time rather than wait to be told.",
      "cn": "{{topic}} 让学生学会自己安排时间，而不是等人安排。",
-     "tag": "时间管理"
+     "tag": "时间管理",
+     "freq": 3
     },
     {
      "en": "It also builds the habit of finishing what has been started, even when it is boring.",
      "cn": "它还能养成有始有终的习惯，哪怕过程枯燥。",
-     "tag": "有始有终"
-    },
-    {
-     "en": "Students who take part in {{topic}} often work better with others.",
-     "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
-     "tag": "合作"
-    },
-    {
-     "en": "The skills involved — patience, self-control, persistence — matter long after school ends.",
-     "cn": "其中的耐心、自控和坚持，在离开学校很久之后仍然有用。",
-     "tag": "长期收益"
+     "tag": "有始有终",
+     "freq": 3
     },
     {
      "en": "On the other hand, too much of it can crowd out sleep and real conversation.",
      "cn": "另一方面，过度投入会挤占睡眠和真实交流的时间。",
-     "tag": "负面·挤占"
+     "tag": "负面·挤占",
+     "freq": 3
+    },
+    {
+     "en": "Students who take part in {{topic}} often work better with others.",
+     "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
+     "tag": "合作",
+     "freq": 2
+    },
+    {
+     "en": "The skills involved — patience, self-control, persistence — matter long after school ends.",
+     "cn": "其中的耐心、自控和坚持，在离开学校很久之后仍然有用。",
+     "tag": "长期收益",
+     "freq": 2
     },
     {
      "en": "Without guidance, students may copy what their peers do instead of deciding for themselves.",
      "cn": "缺少引导时，学生容易跟着同伴走，而不是自己判断。",
-     "tag": "负面·盲从"
+     "tag": "负面·盲从",
+     "freq": 2
     },
     {
      "en": "That is why schools and parents both have a part to play.",
      "cn": "所以学校和家长都需要参与。",
-     "tag": "家校协同"
+     "tag": "家校协同",
+     "freq": 2
     },
     {
      "en": "Used well, {{topic}} is training for adult life rather than a way to fill time.",
      "cn": "用得好的话，{{topic}} 是为成年生活做准备，而不是打发时间。",
-     "tag": "正面·训练"
+     "tag": "正面·训练",
+     "freq": 1
     }
    ],
    "priority": true
@@ -976,42 +1008,50 @@
     {
      "en": "Longer working hours have made people value the time they can call their own.",
      "cn": "更长的工作时间让人们更看重属于自己的时间。",
-     "tag": "工作 · 2012/2021"
-    },
-    {
-     "en": "A steady job and fair pay now matter as much as the salary itself.",
-     "cn": "工作稳定和待遇公平，现在和薪水本身一样重要。",
-     "tag": "职场 · 2012"
-    },
-    {
-     "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-     "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已经不同。",
-     "tag": "职场 · 2012/2019"
+     "tag": "工作 · 2012/2021",
+     "freq": 3
     },
     {
      "en": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
      "cn": "收入提高把过去的奢侈品变成了日常消费。",
-     "tag": "消费 · 2015/2016"
-    },
-    {
-     "en": "Better transport and online booking have made travel easy to arrange.",
-     "cn": "交通改善和线上预订让出行变得容易安排。",
-     "tag": "生活 · 2016"
-    },
-    {
-     "en": "Longer life expectancy has pushed families to think about how older members spend their days.",
-     "cn": "寿命延长让家庭开始考虑老年人怎么度过日常。",
-     "tag": "养老 · 2025"
+     "tag": "消费 · 2015/2016",
+     "freq": 3
     },
     {
      "en": "The figure for {{item1}} rose from {{num1}} to {{num2}}, one sign of that shift.",
      "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，正是这种转变的一个迹象。",
-     "tag": "数据回扣 · 通用"
+     "tag": "数据回扣 · 通用",
+     "freq": 3
     },
     {
      "en": "In short, the numbers record a change in expectations, not just in behaviour.",
      "cn": "总之，这些数字记录的是期望值的变化，而不只是行为的变化。",
-     "tag": "收束 · 通用"
+     "tag": "收束 · 通用",
+     "freq": 3
+    },
+    {
+     "en": "A steady job and fair pay now matter as much as the salary itself.",
+     "cn": "工作稳定和待遇公平，现在和薪水本身一样重要。",
+     "tag": "职场 · 2012",
+     "freq": 2
+    },
+    {
+     "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+     "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已经不同。",
+     "tag": "职场 · 2012/2019",
+     "freq": 2
+    },
+    {
+     "en": "Better transport and online booking have made travel easy to arrange.",
+     "cn": "交通改善和线上预订让出行变得容易安排。",
+     "tag": "生活 · 2016",
+     "freq": 2
+    },
+    {
+     "en": "Longer life expectancy has pushed families to think about how older members spend their days.",
+     "cn": "寿命延长让家庭开始考虑老年人怎么度过日常。",
+     "tag": "养老 · 2025",
+     "freq": 1
     }
    ],
    "note": "套用示例：2012 员工满意度 → 第 2、3 句（工作稳定、换工作更频繁）；2016 旅游目的 → 第 4、5 句（消费升级、出行便利）；2025 老年休闲 → 第 6 句 + 第 1 句。"
@@ -1103,42 +1143,50 @@
     {
      "en": "Sitting all day has turned exercise into a practical need rather than a hobby.",
      "cn": "整天坐着，让运动从爱好变成了实际需要。",
-     "tag": "久坐"
-    },
-    {
-     "en": "Fitness apps and smart watches let people track their progress and stay motivated.",
-     "cn": "健身 App 和智能手表让人能记录进展、保持动力。",
-     "tag": "工具助力"
-    },
-    {
-     "en": "Gyms, running tracks and community courts are now common even in smaller cities.",
-     "cn": "现在连中小城市也常见健身房、跑道和社区球场。",
-     "tag": "设施"
-    },
-    {
-     "en": "Health campaigns have reminded the public that prevention is cheaper than treatment.",
-     "cn": "健康宣传提醒公众：预防比治疗便宜。",
-     "tag": "宣传"
-    },
-    {
-     "en": "People with higher incomes spend more on keeping fit, and the gap is widening.",
-     "cn": "收入较高的人更愿意为健身花钱，而且这个差距在扩大。",
-     "tag": "收入差距"
+     "tag": "久坐",
+     "freq": 3
     },
     {
      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, which fits the wider pattern.",
      "cn": "从 {{time1}} 到 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，与整体趋势一致。",
-     "tag": "数据回扣"
+     "tag": "数据回扣",
+     "freq": 3
     },
     {
      "en": "The rise is not only about money: attitudes to health have changed.",
      "cn": "这一增长不只因为钱：人们对健康的态度也变了。",
-     "tag": "观念"
+     "tag": "观念",
+     "freq": 3
+    },
+    {
+     "en": "Fitness apps and smart watches let people track their progress and stay motivated.",
+     "cn": "健身 App 和智能手表让人能记录进展、保持动力。",
+     "tag": "工具助力",
+     "freq": 2
+    },
+    {
+     "en": "Gyms, running tracks and community courts are now common even in smaller cities.",
+     "cn": "现在连中小城市也常见健身房、跑道和社区球场。",
+     "tag": "设施",
+     "freq": 2
+    },
+    {
+     "en": "Health campaigns have reminded the public that prevention is cheaper than treatment.",
+     "cn": "健康宣传提醒公众：预防比治疗便宜。",
+     "tag": "宣传",
+     "freq": 2
     },
     {
      "en": "In short, exercising has moved from a personal choice to a social habit.",
      "cn": "总之，运动已经从个人选择变成了社会习惯。",
-     "tag": "习惯化"
+     "tag": "习惯化",
+     "freq": 2
+    },
+    {
+     "en": "People with higher incomes spend more on keeping fit, and the gap is widening.",
+     "cn": "收入较高的人更愿意为健身花钱，而且这个差距在扩大。",
+     "tag": "收入差距",
+     "freq": 1
     }
    ]
   },
@@ -1235,42 +1283,50 @@
     {
      "en": "{{topic}} brings traditional culture closer to ordinary life instead of leaving it on the shelf.",
      "cn": "{{topic}} 把传统文化拉近日常生活，而不是把它束之高阁。",
-     "tag": "贴近生活"
-    },
-    {
-     "en": "Documentaries and short videos have made old stories interesting to young audiences.",
-     "cn": "纪录片和短视频让老故事对年轻观众有了吸引力。",
-     "tag": "新媒体"
-    },
-    {
-     "en": "Museums now design exhibitions that visitors can take part in, not just look at.",
-     "cn": "博物馆现在设计的展览，观众能参与而不只是观看。",
-     "tag": "互动展览"
-    },
-    {
-     "en": "Schools have added courses on local history and traditional crafts.",
-     "cn": "学校增加了地方历史和传统手工艺课程。",
-     "tag": "课程"
-    },
-    {
-     "en": "Commercial products carry cultural elements into daily use, from clothing to household goods.",
-     "cn": "从服装到家居用品，文创产品把文化元素带进了日常使用。",
-     "tag": "文创"
+     "tag": "贴近生活",
+     "freq": 3
     },
     {
      "en": "The rise in {{item1}}, from {{num1}} to {{num2}}, shows how quickly public interest can grow.",
      "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，说明公众兴趣可以增长得多快。",
-     "tag": "数据回扣"
-    },
-    {
-     "en": "Cultural confidence grows when tradition is lived, not merely recited.",
-     "cn": "传统被真正用起来、而不只是背诵时，文化自信才会增长。",
-     "tag": "文化自信"
+     "tag": "数据回扣",
+     "freq": 3
     },
     {
      "en": "In short, the chart records a culture that is being used rather than only admired.",
      "cn": "总之，图表记录的是一种正在被使用、而不只是被欣赏的文化。",
-     "tag": "在使用中传承"
+     "tag": "在使用中传承",
+     "freq": 3
+    },
+    {
+     "en": "Documentaries and short videos have made old stories interesting to young audiences.",
+     "cn": "纪录片和短视频让老故事对年轻观众有了吸引力。",
+     "tag": "新媒体",
+     "freq": 2
+    },
+    {
+     "en": "Schools have added courses on local history and traditional crafts.",
+     "cn": "学校增加了地方历史和传统手工艺课程。",
+     "tag": "课程",
+     "freq": 2
+    },
+    {
+     "en": "Cultural confidence grows when tradition is lived, not merely recited.",
+     "cn": "传统被真正用起来、而不只是背诵时，文化自信才会增长。",
+     "tag": "文化自信",
+     "freq": 2
+    },
+    {
+     "en": "Museums now design exhibitions that visitors can take part in, not just look at.",
+     "cn": "博物馆现在设计的展览，观众能参与而不只是观看。",
+     "tag": "互动展览",
+     "freq": 1
+    },
+    {
+     "en": "Commercial products carry cultural elements into daily use, from clothing to household goods.",
+     "cn": "从服装到家居用品，文创产品把文化元素带进了日常使用。",
+     "tag": "文创",
+     "freq": 1
     }
    ],
    "priority": false
@@ -1359,62 +1415,74 @@
     {
      "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
      "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
-     "tag": "政府 · 2010/2014/2017/2022"
-    },
-    {
-     "en": "Clear rules and steady funding matter more than one-off campaigns.",
-     "cn": "明确的规则和持续的投入，比一次性活动更重要。",
-     "tag": "政府 · 2014/2023/2025"
+     "tag": "政府 · 2010/2014/2017/2022",
+     "freq": 3
     },
     {
      "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
      "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
-     "tag": "学校 · 2013/2019/2024/2026"
-    },
-    {
-     "en": "Courses and after-class activities give students a chance to try {{topic}} for themselves.",
-     "cn": "课程和课外活动让学生有机会亲自体验 {{topic}}。",
-     "tag": "学校 · 2024/2026"
+     "tag": "学校 · 2013/2019/2024/2026",
+     "freq": 3
     },
     {
      "en": "Families matter most: children copy what adults do far more than what they are told.",
      "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
-     "tag": "家庭 · 2013/2026"
-    },
-    {
-     "en": "Parents can set the tone by making {{topic}} part of ordinary family life.",
-     "cn": "父母可以把 {{topic}} 变成家庭日常的一部分，从而带动全家人。",
-     "tag": "家庭 · 2016/2026"
+     "tag": "家庭 · 2013/2026",
+     "freq": 3
     },
     {
      "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
      "cn": "企业可以把 {{topic}} 做得更便宜、更好用，让它覆盖更多人。",
-     "tag": "企业/平台 · 2011/2012/2018"
-    },
-    {
-     "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-     "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
-     "tag": "企业/平台 · 2018/2020/2022"
+     "tag": "企业/平台 · 2011/2012/2018",
+     "freq": 3
     },
     {
      "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
      "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
-     "tag": "媒体 · 2016/2020/2023"
-    },
-    {
-     "en": "Documentaries and short videos can show how {{topic}} works in real life.",
-     "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中是怎样运作的。",
-     "tag": "媒体 · 2017/2020/2023"
+     "tag": "媒体 · 2016/2020/2023",
+     "freq": 3
     },
     {
      "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
      "cn": "个人应按自身情况选择，而不是随大流。",
-     "tag": "个人 · 2015/2016/2021"
+     "tag": "个人 · 2015/2016/2021",
+     "freq": 3
+    },
+    {
+     "en": "Clear rules and steady funding matter more than one-off campaigns.",
+     "cn": "明确的规则和持续的投入，比一次性活动更重要。",
+     "tag": "政府 · 2014/2023/2025",
+     "freq": 2
+    },
+    {
+     "en": "Courses and after-class activities give students a chance to try {{topic}} for themselves.",
+     "cn": "课程和课外活动让学生有机会亲自体验 {{topic}}。",
+     "tag": "学校 · 2024/2026",
+     "freq": 2
+    },
+    {
+     "en": "Parents can set the tone by making {{topic}} part of ordinary family life.",
+     "cn": "父母可以把 {{topic}} 变成家庭日常的一部分，从而带动全家人。",
+     "tag": "家庭 · 2016/2026",
+     "freq": 2
+    },
+    {
+     "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
+     "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+     "tag": "企业/平台 · 2018/2020/2022",
+     "freq": 2
+    },
+    {
+     "en": "Documentaries and short videos can show how {{topic}} works in real life.",
+     "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中是怎样运作的。",
+     "tag": "媒体 · 2017/2020/2023",
+     "freq": 2
     },
     {
      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
      "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
-     "tag": "个人 · 2021/2025"
+     "tag": "个人 · 2021/2025",
+     "freq": 2
     }
    ],
    "priority": true
@@ -1494,62 +1562,74 @@
     {
      "en": "Authorities should set clear limits and make sure they are actually enforced.",
      "cn": "政府应设定明确的上限，并确保真正执行。",
-     "tag": "政府 · 2020/2022"
-    },
-    {
-     "en": "Penalties need to be heavy enough to matter.",
-     "cn": "处罚要重到真正起作用。",
-     "tag": "政府 · 2022"
+     "tag": "政府 · 2020/2022",
+     "freq": 3
     },
     {
      "en": "Schools and families should warn young people before the habit takes hold.",
      "cn": "学校和家庭应在习惯养成之前提醒年轻人。",
-     "tag": "学校 · 2013/2020/2024"
-    },
-    {
-     "en": "Classes on {{topic}} can help students tell safe use from misuse.",
-     "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
-     "tag": "学校 · 2020/2024"
+     "tag": "学校 · 2013/2020/2024",
+     "freq": 3
     },
     {
      "en": "Parents who ignore their own habits cannot expect children to do better.",
      "cn": "父母自己不注意，就别指望孩子做得好。",
-     "tag": "家庭 · 2013/2026"
-    },
-    {
-     "en": "A stable routine at home leaves less room for the problem to grow.",
-     "cn": "家里作息稳定，问题就不容易滋生。",
-     "tag": "家庭 · 2026"
+     "tag": "家庭 · 2013/2026",
+     "freq": 3
     },
     {
      "en": "Platforms should label or restrict content that encourages misuse.",
      "cn": "平台应对诱导滥用的内容加以标注或限制。",
-     "tag": "企业/平台 · 2020/2022"
-    },
-    {
-     "en": "Companies should not profit from designs that keep users hooked.",
-     "cn": "企业不应靠让人上瘾的设计赚钱。",
-     "tag": "企业/平台 · 2020"
+     "tag": "企业/平台 · 2020/2022",
+     "freq": 3
     },
     {
      "en": "Media should report the real risks rather than treat them as scare stories.",
      "cn": "媒体应报道真实风险，而不是把它当成吓人的故事。",
-     "tag": "媒体 · 2020/2023"
-    },
-    {
-     "en": "Sensational coverage makes the public numb instead of alert.",
-     "cn": "耸动的报道让公众变得麻木，而不是警觉。",
-     "tag": "媒体 · 2023"
+     "tag": "媒体 · 2020/2023",
+     "freq": 3
     },
     {
      "en": "Individuals need to watch their own habits instead of assuming they are safe.",
      "cn": "个人需要留意自己的习惯，而不是想当然地认为没问题。",
-     "tag": "个人 · 2020/2021"
+     "tag": "个人 · 2020/2021",
+     "freq": 3
+    },
+    {
+     "en": "Penalties need to be heavy enough to matter.",
+     "cn": "处罚要重到真正起作用。",
+     "tag": "政府 · 2022",
+     "freq": 2
+    },
+    {
+     "en": "Classes on {{topic}} can help students tell safe use from misuse.",
+     "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
+     "tag": "学校 · 2020/2024",
+     "freq": 2
+    },
+    {
+     "en": "A stable routine at home leaves less room for the problem to grow.",
+     "cn": "家里作息稳定，问题就不容易滋生。",
+     "tag": "家庭 · 2026",
+     "freq": 2
+    },
+    {
+     "en": "Companies should not profit from designs that keep users hooked.",
+     "cn": "企业不应靠让人上瘾的设计赚钱。",
+     "tag": "企业/平台 · 2020",
+     "freq": 2
+    },
+    {
+     "en": "Sensational coverage makes the public numb instead of alert.",
+     "cn": "耸动的报道让公众变得麻木，而不是警觉。",
+     "tag": "媒体 · 2023",
+     "freq": 2
     },
     {
      "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
      "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
-     "tag": "个人 · 2020/2021"
+     "tag": "个人 · 2020/2021",
+     "freq": 2
     }
    ],
    "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。"

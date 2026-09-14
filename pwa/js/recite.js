@@ -109,7 +109,7 @@ async function rcInit() {
             const hit = (s.sentences || []).filter(x => (x.tag || '').indexOf(a) === 0);
             if (!hit.length) return;
             ag += `<div class="rc-agent"><div class="rc-agent-name">${rcEsc(a)}<span class="rc-agent-yrs">${rcEsc((hit[0].tag || '').split('·')[1] || '')}</span></div>`
-                + hit.map(x => `<div class="rc-agent-s"><div class="rc-en">${rcPh(x.en)}</div><div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')
+                + hit.map(x => `<div class="rc-agent-s"><div class="rc-en"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span>${rcPh(x.en)}</div><div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')
                 + '</div>';
         });
         ag += '</div>';

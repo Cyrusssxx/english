@@ -3886,6 +3886,19 @@ html.dark .wr-badge-top { color: #fbbf24; background: rgba(245, 158, 11, .18); }
 }
 html.dark .wr-tag { color: #5eead4; }
 
+/* 考频星（★★★ 通用 / ★★ 常用 / ★ 专场） */
+.wr-freq {
+    flex: 0 0 auto; align-self: flex-start; margin-top: 2px;
+    font-size: .68rem; letter-spacing: -.5px;
+    color: #d9a40b; font-weight: 700; white-space: nowrap;
+}
+html.dark .wr-freq { color: #fbbf24; }
+.wr-sents-legend { display: block; margin-top: 3px; font-weight: 400; font-size: .76rem; color: var(--text-light); }
+.wr-sents-legend b { color: #d9a40b; }
+html.dark .wr-sents-legend b { color: #fbbf24; }
+.rc-freq { color: #d9a40b; font-size: .72rem; letter-spacing: -.5px; margin-right: 4px; font-weight: 700; }
+html.dark .rc-freq { color: #fbbf24; }
+
 /* 模板句行（结构染色的承载单元，不可点击点亮，仅内容可划词） */
 .wr-line { padding: 1px 0; }
 .wr-sent { transition: border-color .15s; }
