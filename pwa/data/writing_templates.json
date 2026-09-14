@@ -898,12 +898,12 @@
    "priority": true
   },
   {
-   "id": "para2_env",
+   "id": "para2_social",
    "group": "大作文 · 第二段（原因分析）",
-   "title": "环境生态类第二段",
-   "subtitle": "环境生态类：挂在意识提升 + 条件改善上",
-   "en": "The change in the chart has been building for years. People today are far more aware of environmental problems than they were in {{time1}}, and {{topic}} is what that awareness has produced.",
-   "cn": "图中的变化已经积累了很多年。如今人们对环境问题的认识比 {{time1}} 时清楚得多，{{topic}} 正是这种认识带来的结果。",
+   "title": "社会 · 职场 · 生活类第二段",
+   "subtitle": "挂在生活方式变化、观念转变、社会结构上（覆盖 2012 职场满意度 / 2016 旅游目的 / 2025 老年休闲）",
+   "en": "The change in the chart reflects a broader shift in how people live and work. Once basic needs are met, people care more about how they spend their time.",
+   "cn": "图中的变化反映了人们生活和工作方式的更大转变。基本需求满足之后，人们更在意自己的时间怎么花。",
    "en_struct": [
     [
      [
@@ -911,12 +911,12 @@
       "t"
      ],
      [
-      " has been building",
+      " reflects",
       "p"
      ],
      [
-      " for years",
-      ""
+      " a broader shift in how people live and work",
+      "o"
      ],
      [
       ".",
@@ -925,24 +925,20 @@
     ],
     [
      [
-      "People today",
+      "Once basic needs are met",
+      ""
+     ],
+     [
+      ", people",
       "t"
      ],
      [
-      " are far more aware of",
+      " care more about",
       "p"
      ],
      [
-      " environmental problems",
+      " how they spend their time",
       "o"
-     ],
-     [
-      " than they were in {{time1}}",
-      ""
-     ],
-     [
-      ", and {{topic}} is what that awareness has produced",
-      ""
      ],
      [
       ".",
@@ -952,72 +948,73 @@
    ],
    "phrases": [
     [
-     "has been building for years",
-     "多年积累而来"
+     "a broader shift in how people live and work",
+     "生活与工作方式的更大转变"
     ],
     [
-     "are far more aware of",
-     "对…的认识清楚得多"
+     "the time they can call their own",
+     "属于自己的时间"
     ],
     [
-     "turn awareness into action",
-     "把认识变成行动"
+     "matter as much as",
+     "和…一样重要"
     ],
     [
-     "have visibly improved",
-     "有明显改善"
+     "works differently",
+     "运作逻辑已经不同"
     ],
     [
-     "have taken root",
-     "已经扎下根"
+     "a change in expectations",
+     "期望值的变化"
     ]
    ],
    "tips": [
-    "环境类最忌只喊口号（「保护环境很重要」），尽量写具体做法。",
-    "这一段的写法与体育健康类通用，换几个词即可。"
+    "骨架句 29 词 + 句池挑 1~2 句 ≈ 55~65 词。本段与经济类最容易混：经济类讲收入与成本，本段讲时间、观念与生活方式。",
+    "万一考到环保（2010–2026 从未考过）：把前两句换成 Public awareness of environmental problems has risen sharply. / Green facilities are now common enough to make the choice easy. 即可——这两句不用背，写的时候现抄。"
    ],
    "sentences": [
     {
-     "en": "Air and water quality have visibly improved in many cities, so green habits no longer seem pointless.",
-     "cn": "许多城市的空气和水质明显好转，环保习惯不再显得没有意义。",
-     "tag": "环境改善"
+     "en": "Longer working hours have made people value the time they can call their own.",
+     "cn": "更长的工作时间让人们更看重属于自己的时间。",
+     "tag": "工作 · 2012/2021"
     },
     {
-     "en": "Sorted bins, electric buses and public parks have made green choices easier to make.",
-     "cn": "分类垃圾桶、电动公交和城市公园让环保选择更容易实现。",
-     "tag": "设施便利"
+     "en": "A steady job and fair pay now matter as much as the salary itself.",
+     "cn": "工作稳定和待遇公平，现在和薪水本身一样重要。",
+     "tag": "职场 · 2012"
     },
     {
-     "en": "Schools now teach children about the environment, and those children bring the habit home.",
-     "cn": "学校开始教孩子环保知识，孩子又把习惯带回家里。",
-     "tag": "教育传导"
+     "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+     "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已经不同。",
+     "tag": "职场 · 2012/2019"
     },
     {
-     "en": "New technologies have cut the cost of clean energy and recycled products.",
-     "cn": "新技术降低了清洁能源和再生产品的成本。",
-     "tag": "技术降本"
+     "en": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
+     "cn": "收入提高把过去的奢侈品变成了日常消费。",
+     "tag": "消费 · 2015/2016"
     },
     {
-     "en": "Government rules have pushed companies to clean up their production.",
-     "cn": "政府的法规推动企业减少生产中的污染。",
-     "tag": "政策推动"
+     "en": "Better transport and online booking have made travel easy to arrange.",
+     "cn": "交通改善和线上预订让出行变得容易安排。",
+     "tag": "生活 · 2016"
     },
     {
-     "en": "Once green choices are convenient, more people are willing to change their routines.",
-     "cn": "环保选择一旦变得方便，愿意改变日常习惯的人就多了。",
-     "tag": "便利带动"
+     "en": "Longer life expectancy has pushed families to think about how older members spend their days.",
+     "cn": "寿命延长让家庭开始考虑老年人怎么度过日常。",
+     "tag": "养老 · 2025"
     },
     {
-     "en": "The figure for {{item1}} going from {{num1}} to {{num2}} is only the visible part of that shift.",
-     "cn": "{{item1}} 从 {{num1}} 到 {{num2}}，只是这场变化里看得见的那部分。",
-     "tag": "数据回扣"
+     "en": "The figure for {{item1}} rose from {{num1}} to {{num2}}, one sign of that shift.",
+     "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，正是这种转变的一个迹象。",
+     "tag": "数据回扣 · 通用"
     },
     {
-     "en": "In short, the numbers reflect habits that have already taken root.",
-     "cn": "总之，这些数字反映的是已经扎下根的习惯。",
-     "tag": "习惯生根"
+     "en": "In short, the numbers record a change in expectations, not just in behaviour.",
+     "cn": "总之，这些数字记录的是期望值的变化，而不只是行为的变化。",
+     "tag": "收束 · 通用"
     }
-   ]
+   ],
+   "note": "套用示例：2012 员工满意度 → 第 2、3 句（工作稳定、换工作更频繁）；2016 旅游目的 → 第 4、5 句（消费升级、出行便利）；2025 老年休闲 → 第 6 句 + 第 1 句。"
   },
   {
    "id": "para2_sports",

@@ -74,7 +74,7 @@ async function rcInit() {
     // 二、必背骨架
     const groups = [
         ['大作文 · 第一段（图表描述）', ['chart_static', 'chart_dynamic']],
-        ['大作文 · 第二段（原因分析）', ['para2_economy', 'para2_campus', 'para2_env', 'para2_sports', 'para2_culture']],
+        ['大作文 · 第二段（原因分析）', ['para2_economy', 'para2_campus', 'para2_social', 'para2_sports', 'para2_culture']],
         ['大作文 · 第三段（总结建议）', ['para3_positive', 'para3_negative']]
     ];
     let sk = '';

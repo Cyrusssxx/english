@@ -43,6 +43,210 @@ def check(sec_id, sents, structs):
 
 # ===== chart_static 静态图表第一段 =====
 S = {
+    "chart_static": [
+        [
+            [
+                "The {{chart}} chart",
+                "t"
+            ],
+            [
+                " shows",
+                "p"
+            ],
+            [
+                " how {{topic}} is distributed among the categories",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{item1}}",
+                "t"
+            ],
+            [
+                " takes",
+                "p"
+            ],
+            [
+                " the largest share",
+                "o"
+            ],
+            [
+                ", at {{percent1}}",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{item2}} and {{item3}}",
+                "t"
+            ],
+            [
+                " come next",
+                "p"
+            ],
+            [
+                ", at {{percent2}} and {{percent3}}",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "By contrast",
+                "trans"
+            ],
+            [
+                ", ",
+                ""
+            ],
+            [
+                "{{item4}} and {{item5}}",
+                "t"
+            ],
+            [
+                " account for",
+                "p"
+            ],
+            [
+                " only {{percent4}} and {{percent5}}",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "chart_dynamic": [
+        [
+            [
+                "The {{chart}} chart",
+                "t"
+            ],
+            [
+                " tracks",
+                "p"
+            ],
+            [
+                " how {{topic}} changed from {{time1}} to {{time2}}",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{item1}}",
+                "t"
+            ],
+            [
+                " climbed",
+                "p"
+            ],
+            [
+                " from {{num1}} to {{num2}}",
+                "o"
+            ],
+            [
+                ", while ",
+                "trans"
+            ],
+            [
+                "{{item2}}",
+                "t"
+            ],
+            [
+                " rose more slowly",
+                "p"
+            ],
+            [
+                ", from {{num3}} to {{num4}}",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "By contrast",
+                "trans"
+            ],
+            [
+                ", ",
+                ""
+            ],
+            [
+                "{{item3}}",
+                "t"
+            ],
+            [
+                " fell",
+                "p"
+            ],
+            [
+                " from {{num5}} to {{num6}}",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_economy": [
+        [
+            [
+                "The trend in the chart",
+                "t"
+            ],
+            [
+                " is closely tied to",
+                "p"
+            ],
+            [
+                " how people live and spend today",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{item1}}",
+                "t"
+            ],
+            [
+                " rose from {{num1}} in {{time1}} to {{num2}} in {{time2}}",
+                "p"
+            ],
+            [
+                ", and that change did not happen by itself",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
     "para2_campus": [
         [
             [
@@ -99,18 +303,36 @@ S = {
             ]
         ]
     ],
-    "para2_env": [
+    "para2_campus_neg": [
         [
             [
-                "The change in the chart",
-                "t"
+                "Behind the numbers in the chart",
+                ""
             ],
             [
-                " has been building",
+                " lies",
                 "p"
             ],
             [
-                " for years",
+                " a problem that deserves attention",
+                "t"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "Habits formed at this stage",
+                "t"
+            ],
+            [
+                " are hard to change later",
+                "p"
+            ],
+            [
+                ", and the wrong ones carry a lasting cost",
                 ""
             ],
             [
@@ -120,24 +342,58 @@ S = {
         ],
         [
             [
-                "People today",
+                "{{topic}}",
                 "t"
             ],
             [
-                " are far more aware of",
+                " shows",
                 "p"
             ],
             [
-                " environmental problems",
+                " how easily that cost can build up",
                 "o"
             ],
             [
-                " than they were in {{time1}}",
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_social": [
+        [
+            [
+                "The change in the chart",
+                "t"
+            ],
+            [
+                " reflects",
+                "p"
+            ],
+            [
+                " a broader shift in how people live and work",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "Once basic needs are met",
                 ""
             ],
             [
-                ", and {{topic}} is what that awareness has produced",
-                ""
+                ", people",
+                "t"
+            ],
+            [
+                " care more about",
+                "p"
+            ],
+            [
+                " how they spend their time",
+                "o"
             ],
             [
                 ".",
@@ -188,6 +444,62 @@ S = {
             [
                 ", and {{topic}} is the easiest way to do that",
                 ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_culture": [
+        [
+            [
+                "Traditional culture",
+                "t"
+            ],
+            [
+                " does not survive by",
+                "p"
+            ],
+            [
+                " being preserved in a museum",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "It",
+                "t"
+            ],
+            [
+                " survives",
+                "p"
+            ],
+            [
+                " when people find new ways to pass it on",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "The growth shown in the chart",
+                "t"
+            ],
+            [
+                " is",
+                "p"
+            ],
+            [
+                " that process at work",
+                "o"
             ],
             [
                 ".",
@@ -279,6 +591,168 @@ S = {
 
 
 P = {
+    "chart_static": [
+        [
+            "shows how … is distributed",
+            "显示…的分布情况"
+        ],
+        [
+            "takes the largest share",
+            "占据最大份额"
+        ],
+        [
+            "come next",
+            "紧随其后"
+        ],
+        [
+            "account for only",
+            "仅占"
+        ],
+        [
+            "are fairly evenly matched",
+            "占比相差不大"
+        ],
+        [
+            "is concentrated in",
+            "集中在…"
+        ]
+    ],
+    "chart_dynamic": [
+        [
+            "tracks how … changed",
+            "记录…的变化"
+        ],
+        [
+            "a steady climb",
+            "稳步上升"
+        ],
+        [
+            "over the same period",
+            "同一时期"
+        ],
+        [
+            "held steady at",
+            "稳定在"
+        ],
+        [
+            "more than doubled",
+            "翻了一倍多"
+        ],
+        [
+            "went the other way",
+            "走势相反"
+        ]
+    ],
+    "para2_economy": [
+        [
+            "is closely tied to",
+            "与…密切相关"
+        ],
+        [
+            "moved from a luxury to an everyday necessity",
+            "从奢侈品变成日常必需品"
+        ],
+        [
+            "within reach of ordinary families",
+            "普通家庭负担得起"
+        ],
+        [
+            "cut the time and cost of",
+            "降低…的时间和成本"
+        ],
+        [
+            "a passing fashion",
+            "一时风尚"
+        ]
+    ],
+    "para2_campus": [
+        [
+            "Behind the numbers in the chart lies …",
+            "数字背后是…"
+        ],
+        [
+            "Habits built at this stage",
+            "这个阶段养成的习惯"
+        ],
+        [
+            "shape the way sb do sth",
+            "影响某人做事的方式"
+        ],
+        [
+            "have a part to play",
+            "需要参与、有作用"
+        ],
+        [
+            "crowd out",
+            "挤占"
+        ]
+    ],
+    "para2_social": [
+        [
+            "a broader shift in how people live and work",
+            "生活与工作方式的更大转变"
+        ],
+        [
+            "the time they can call their own",
+            "属于自己的时间"
+        ],
+        [
+            "matter as much as",
+            "和…一样重要"
+        ],
+        [
+            "works differently",
+            "运作逻辑已经不同"
+        ],
+        [
+            "a change in expectations",
+            "期望值的变化"
+        ]
+    ],
+    "para2_sports": [
+        [
+            "are less about … than about …",
+            "与其说关于…不如说关于…"
+        ],
+        [
+            "look after themselves",
+            "照顾自己的身体"
+        ],
+        [
+            "a practical need rather than a hobby",
+            "是实际需要而非爱好"
+        ],
+        [
+            "stay motivated",
+            "保持动力"
+        ],
+        [
+            "the gap is widening",
+            "差距在扩大"
+        ]
+    ],
+    "para2_culture": [
+        [
+            "being preserved in a museum",
+            "被供在博物馆里"
+        ],
+        [
+            "find new ways to pass it on",
+            "找到新的传递方式"
+        ],
+        [
+            "bring … closer to ordinary life",
+            "把…拉近日常生活"
+        ],
+        [
+            "take part in",
+            "参与其中"
+        ],
+        [
+            "is being used rather than only admired",
+            "在被使用而不只是被欣赏"
+        ]
+    ],
     "para3_positive": [
         [
             "more than one side has to act",
