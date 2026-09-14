@@ -675,10 +675,27 @@ function wrSectionCard(sec) {
 
     const tips = (sec.tips || []).map(x => `<li>${wrEsc(x)}</li>`).join('');
     const body = wrTplBody(sec.en, sec.cn, sec.en_struct);
+    const skels = sec.skeletons || null;
+    const skW = skels ? skels.map(v => wrWords(v.en)) : null;
     const neg = sec.negative_en ? wrTplBody(sec.negative_en, sec.negative_cn, sec.negative_struct) : null;
 
-    const skW = wrWords(sec.en);
     const nS = (sec.sentences || []).length;
+    const mustBadge = skels
+        ? `⭐ 必背 ${skels.length} 选 1 · 每套 ${Math.min.apply(null, skW)}~${Math.max.apply(null, skW)} 词`
+        : `⭐ 必背 ${wrWords(sec.en)} 词`;
+    const tplBody = skels
+        ? skels.map(v => {
+            const b2 = wrTplBody(v.en, v.cn, v.struct);
+            return `<div class="wr-skel">
+                <div class="wr-skel-head"><span class="wr-skel-label">${wrEsc(v.label)}</span>
+                    <span class="wr-skel-years">适用 ${wrEsc(v.years)}</span>
+                    <span class="wr-skel-w">${wrWords(v.en)} 词</span></div>
+                <div class="wr-en">${b2.enHtml}</div>
+                <div class="wr-cn">${b2.cnHtml}</div>
+            </div>`;
+        }).join('')
+        : `<div class="wr-en">${body.enHtml}</div>
+            <div class="wr-cn">${body.cnHtml}</div>`;
     return `
     <section class="wr-card" id="${sec.id}">
         <div class="wr-card-head">
@@ -686,7 +703,7 @@ function wrSectionCard(sec) {
                 <h3 class="wr-card-title">${wrEsc(sec.title)}</h3>
                 ${sec.subtitle ? `<div class="wr-card-sub">${wrEsc(sec.subtitle)}</div>` : ''}
                 <div class="wr-badges">
-                    <span class="wr-badge wr-badge-must">⭐ 必背 ${skW} 词</span>
+                    <span class="wr-badge wr-badge-must">${mustBadge}</span>
                     ${nS ? `<span class="wr-badge wr-badge-ammo">⚡ 弹药 ${nS} 句</span>` : ''}
                     ${sec.priority ? '<span class="wr-badge wr-badge-top">优先背</span>' : ''}
                 </div>
@@ -695,11 +712,10 @@ function wrSectionCard(sec) {
         </div>
         <div class="wr-tpl">
             <div class="wr-tpl-bar">
-                <span class="wr-tpl-tag">⭐ 必背骨架（背熟这段，结构就稳了）</span>
+                <span class="wr-tpl-tag">${skels ? '⭐ 必背骨架（先看走势，选一套）' : '⭐ 必背骨架（背熟这段，结构就稳了）'}</span>
                 <button class="wr-copy" onclick="wrCopyLines(this)">复制</button>
             </div>
-            <div class="wr-en">${body.enHtml}</div>
-            <div class="wr-cn">${body.cnHtml}</div>
+            ${tplBody}
         </div>
         ${neg ? `
         <div class="wr-tpl wr-tpl-neg">

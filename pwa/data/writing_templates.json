@@ -248,15 +248,15 @@
    },
    {
     "k": "走势 = 都升（速度不同）",
-    "v": "两事物各用 rose / climbed，用 while 并列，收尾用 Both moved in the same direction, but at very different speeds。"
+    "v": "用「② 同向不同速」骨架：Both rose, but A climbed…while B only went…。不要再套 By contrast。"
    },
    {
     "k": "走势 = 有升有降",
-    "v": "升用 rose / climbed，降用 fell / declined，衔接用 while 或 By contrast。切勿把下降写成上升。"
+    "v": "用「③ 一升一降」骨架：A climbed…, while B fell…。三个事物时补一句 By contrast。"
    },
    {
     "k": "走势 = 单线持续升",
-    "v": "一句数值 + 一句走势：more than doubled（翻倍）/ held steady（平稳）/ moved within a narrow range（窄幅波动）。"
+    "v": "用「① 单线上升」骨架两句即可：It rose from…to… without a single fall。不必凑对比句。"
    }
   ]
  },
@@ -440,10 +440,10 @@
    "id": "chart_dynamic",
    "group": "大作文 · 第一段（图表描述）",
    "title": "动态图表第一段",
-   "subtitle": "适用：折线 / 柱状图中事物随时间变化（有起始年—终止年）",
-   "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} rose more slowly, from {{num3}} to {{num4}}. By contrast, {{item3}} fell from {{num5}} to {{num6}}.",
-   "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 上升较慢，从 {{num3}} 增至 {{num4}}。相比之下，{{item3}} 由 {{num5}} 降至 {{num6}}。",
-   "note": "所有事物同向时：删掉 By contrast 那句，把 fell 改成 rose more slowly，末句加 Both moved in the same direction, but at very different speeds. 只用 2 个事物时，删去第三句。",
+   "subtitle": "适用：折线 / 柱状图中事物随时间变化 —— 先看走势，选下面 3 套骨架之一",
+   "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.",
+   "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降至 {{num4}}。",
+   "note": "先看走势再选骨架：只有 1 个事物用 ①；都涨但快慢不同用 ②；有涨有跌用 ③。三个事物时，③ 的第 2 句后面接句池里的 By contrast 那句。",
    "sentences": [
     {
      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
@@ -496,8 +496,8 @@
    ],
    "tips": [
     "动态图必须有时间（{{time1}} → {{time2}}）；没有时间就改用静态第一段。",
-    "同向但速度不同 → 一个 climbed + 一个 rose more slowly，用 while 并列即可，不必用 By contrast。",
-    "只有一升一降时，才用 By contrast 转折。"
+    "三套骨架是「选一套」，不是全背——先把 ③ 背熟（覆盖 2011/2014/2019），再补 ①（2013/2023）和 ②（2010/2017/2022）。",
+    "同向但速度不同：② 已经把 while 写进句子里，不必再用 By contrast。"
    ],
    "en_struct": [
     [
@@ -540,37 +540,11 @@
       "t"
      ],
      [
-      " rose more slowly",
-      "p"
-     ],
-     [
-      ", from {{num3}} to {{num4}}",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "By contrast",
-      "trans"
-     ],
-     [
-      ", ",
-      ""
-     ],
-     [
-      "{{item3}}",
-      "t"
-     ],
-     [
       " fell",
       "p"
      ],
      [
-      " from {{num5}} to {{num6}}",
+      " from {{num3}} to {{num4}}",
       "o"
      ],
      [
@@ -604,6 +578,180 @@
      "went the other way",
      "走势相反"
     ]
+   ],
+   "skeletons": [
+    {
+     "label": "① 单线上升（图里只有一个事物）",
+     "years": "2013 · 2023",
+     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. It rose from {{num1}} to {{num2}} without a single fall.",
+     "cn": "该 {{chart}} 图记录了 {{topic}} 从 {{time1}} 到 {{time2}} 的变化。它由 {{num1}} 一路升至 {{num2}}，中途没有回落。",
+     "struct": [
+      [
+       [
+        "The {{chart}} chart",
+        "t"
+       ],
+       [
+        " tracks",
+        "p"
+       ],
+       [
+        " {{topic}}",
+        "o"
+       ],
+       [
+        " from {{time1}} to {{time2}}",
+        ""
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "It",
+        "t"
+       ],
+       [
+        " rose",
+        "p"
+       ],
+       [
+        " from {{num1}} to {{num2}}",
+        "o"
+       ],
+       [
+        " without a single fall",
+        ""
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ]
+    },
+    {
+     "label": "② 同向不同速（都在涨，快慢不同）",
+     "years": "2010 · 2017 · 2022",
+     "en": "The {{chart}} chart tracks how {{topic}} changed over the period. Both rose, but {{item1}} climbed from {{num1}} to {{num2}} while {{item2}} only went from {{num3}} to {{num4}}.",
+     "cn": "该 {{chart}} 图记录了这一时期 {{topic}} 的变化。两者都在上升，但 {{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 仅从 {{num3}} 升到 {{num4}}。",
+     "struct": [
+      [
+       [
+        "The {{chart}} chart",
+        "t"
+       ],
+       [
+        " tracks",
+        "p"
+       ],
+       [
+        " how {{topic}} changed over the period",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "Both",
+        "t"
+       ],
+       [
+        " rose",
+        "p"
+       ],
+       [
+        ", but ",
+        "trans"
+       ],
+       [
+        "{{item1}}",
+        "t"
+       ],
+       [
+        " climbed",
+        "p"
+       ],
+       [
+        " from {{num1}} to {{num2}}",
+        "o"
+       ],
+       [
+        " while {{item2}} only went from {{num3}} to {{num4}}",
+        ""
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ]
+    },
+    {
+     "label": "③ 一升一降（有涨有跌）",
+     "years": "2011 · 2014 · 2019",
+     "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.",
+     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降至 {{num4}}。",
+     "struct": [
+      [
+       [
+        "The {{chart}} chart",
+        "t"
+       ],
+       [
+        " tracks",
+        "p"
+       ],
+       [
+        " how {{topic}} changed from {{time1}} to {{time2}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "{{item1}}",
+        "t"
+       ],
+       [
+        " climbed",
+        "p"
+       ],
+       [
+        " from {{num1}} to {{num2}}",
+        "o"
+       ],
+       [
+        ", while ",
+        "trans"
+       ],
+       [
+        "{{item2}}",
+        "t"
+       ],
+       [
+        " fell",
+        "p"
+       ],
+       [
+        " from {{num3}} to {{num4}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ]
+    }
    ]
   },
   {

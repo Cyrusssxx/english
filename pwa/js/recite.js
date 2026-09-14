@@ -43,9 +43,15 @@ async function rcInit() {
     const S = {};
     secs.forEach(s => { S[s.id] = s; });
 
-    const mustWords = secs.reduce((a, s) => a + rcWords(s.en) + rcWords(s.negative_en), 0);
+    const allEn = secs.reduce((a, s) => {
+        if (s.skeletons && s.skeletons.length) {               // 有走势变体的段：只算变体（s.en 就是其中一套，别重复计）
+            return a.concat(s.negative_en ? [s.negative_en] : [], s.skeletons.map(v => v.en));
+        }
+        return a.concat([s.en], s.negative_en ? [s.negative_en] : []);
+    }, []);
+    const mustWords = allEn.reduce((a, x) => a + rcWords(x), 0);
+    const mustSent = allEn.reduce((a, x) => a + rcSplitEn(x).length, 0);
     const ammoN = secs.reduce((a, s) => a + (s.sentences || []).length, 0);
-    const mustSent = secs.reduce((a, s) => a + rcSplitEn(s.en).length + rcSplitEn(s.negative_en).length, 0);
 
     document.getElementById('rcDesc').innerHTML =
         '一整页 = 全部要背的东西。<b>只背骨架（⭐），句池（⚡）不用背</b>——写的时候现挑现抄。';
@@ -60,8 +66,8 @@ async function rcInit() {
     document.getElementById('rcOrder').innerHTML = `
         <div class="rc-order">
             <div class="rc-order-step"><span class="rc-order-no">1</span><b>第一段 · 描述图表</b>
-                <div class="rc-order-body">静态图用「静态骨架」（38 词）；动态图用「动态骨架」（34 词）。<br>
-                再从句池挑 0~1 句补一句趋势/分组，本段约 40~55 词。</div></div>
+                <div class="rc-order-body">静态图用「静态骨架」（38 词）；动态图先看走势，从 3 套里<b>选一套</b><br>
+                （单线上升 19 / 同向不同速 27 / 一升一降 24 词）。再从句池挑 0~1 句，本段约 40~55 词。</div></div>
             <div class="rc-order-step"><span class="rc-order-no">2</span><b>第二段 · 原因分析</b>
                 <div class="rc-order-body">按话题挑 1 个骨架（经济 33 / 校园 34 / 环保 32 / 体育 35 / 文化 33 词），<br>
                 再接 1~2 句句池，本段约 55~65 词。优先背<b>经济</b>和<b>校园</b>这两段。</div></div>
@@ -83,11 +89,20 @@ async function rcInit() {
         ids.forEach(id => {
             const s = S[id];
             if (!s) return;
-            const w = rcWords(s.en);
-            sk += rcCard(id, s.title, `⭐ ${w} 词${s.priority ? ' · 优先背' : ''}`)
-                + '<div class="rc-lines">'
-                + rcPairs(s.en, s.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
-                + '</div>';
+            const skels = s.skeletons || null;
+            const w = skels ? skels.reduce((a, v) => a + rcWords(v.en), 0) : rcWords(s.en);
+            const wTxt = skels ? `${skels.length} 选 1 · 共 ${w} 词` : `${w} 词`;
+            sk += rcCard(id, s.title, `⭐ ${wTxt}${s.priority ? ' · 优先背' : ''}`);
+            if (skels) {
+                sk += skels.map(v => `<div class="rc-skel">
+                    <div class="rc-skel-head"><b>${rcEsc(v.label)}</b><span>适用 ${rcEsc(v.years)}</span></div>`
+                    + rcPairs(v.en, v.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
+                    + '</div>').join('');
+            } else {
+                sk += '<div class="rc-lines">'
+                    + rcPairs(s.en, s.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
+                    + '</div>';
+            }
             if (s.negative_en) {
                 sk += '<div class="rc-sub">负面版（危害类题目用）</div><div class="rc-lines rc-lines-neg">'
                     + rcPairs(s.negative_en, s.negative_cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')

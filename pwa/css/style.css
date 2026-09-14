@@ -3886,6 +3886,24 @@ html.dark .wr-badge-top { color: #fbbf24; background: rgba(245, 158, 11, .18); }
 }
 html.dark .wr-tag { color: #5eead4; }
 
+/* 动态第一段：3 套走势骨架 */
+.wr-skel {
+    padding: 9px 0 4px;
+    border-bottom: 1px dashed var(--border);
+}
+.wr-skel:last-child { border-bottom: none; padding-bottom: 0; }
+.wr-skel-head { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; margin-bottom: 5px; }
+.wr-skel-label { font-size: .88rem; font-weight: 700; color: var(--primary); }
+.wr-skel-years { font-size: .74rem; font-weight: 700; color: #b45309; background: rgba(245, 158, 11, .14); border-radius: 999px; padding: 1px 8px; }
+html.dark .wr-skel-years { color: #fbbf24; background: rgba(245, 158, 11, .18); }
+.wr-skel-w { font-size: .74rem; color: var(--text-light); }
+.rc-skel { padding: 8px 0 4px; border-bottom: 1px dashed var(--border); }
+.rc-skel:last-child { border-bottom: none; }
+.rc-skel-head { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; margin-bottom: 4px; }
+.rc-skel-head b { font-size: .92rem; color: var(--primary); }
+.rc-skel-head span { font-size: .76rem; font-weight: 700; color: #b45309; }
+html.dark .rc-skel-head span { color: #fbbf24; }
+
 /* 考频星（★★★ 通用 / ★★ 常用 / ★ 专场） */
 .wr-freq {
     flex: 0 0 auto; align-self: flex-start; margin-top: 2px;
