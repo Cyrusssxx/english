@@ -20,9 +20,13 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import small_writing_extra as EXTRA      # 补充类型 / 真题适配表 / 选句决策 / 分层规则
+
 MD = r'D:/cjx/下载/download/考研英语小作文功能句全集（可直接复制粘贴到Word）.md'
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(os.path.normpath(os.path.join(ROOT, '..')), 'pwa', 'data', 'small_writing.json')
+DATA_DIR = os.path.normpath(os.path.join(ROOT, '..', 'pwa', 'data'))
 
 # ---------- 槽位角色 → 英文 token ----------
 PH = {
@@ -215,6 +219,96 @@ TYPE_MAP = [('建议', 'advice'), ('邀请', 'invite'), ('道歉', 'apology'),
             ('祝贺', 'congrats'), ('介绍', 'intro'), ('通知', 'notice')]
 
 
+def merge_extra(banks, order):
+    """并入 md 缺的 4 个第二段类型（感谢 / 投诉 / 询问 / 观点）"""
+    for bid, spec in EXTRA.EXTRA_BANKS.items():
+        items = []
+        for en, cn, yrs in spec['items']:
+            items.append({'en': en, 'cn': cn, 'tag': (yrs + ' 真题') if yrs else '通用'})
+        banks[bid] = {'id': bid, 'part': spec['part'], 'type': spec['type'],
+                      'label': spec['label'], 'items': items}
+        order.append(bid)
+
+
+def tag_of(bid, en):
+    for pre, rx, tag in EXTRA.TAG_RULES:
+        if bid.startswith(pre) and re.search(rx, en, re.I):
+            return tag
+    if bid == 'p2s1':
+        return '引出'
+    if bid == 'p3':
+        return '收尾'
+    if bid == 'p1s1':
+        return '问候'
+    if bid == 'p1s2':
+        return '来意'
+    m = re.match(r'p2_\w+_s(\d)', bid)
+    if m:
+        return EXTRA.SLOT_TAGS.get('s' + m.group(1), '展开')
+    return ''
+
+
+CORE_SLOTS = ('p1s1', 'p1s2', 'p2s1', 'p3')   # ⭐⭐ 骨架：任何一封信都要用的 4 句
+TYPE_MUST_SLOTS = 2                          # 每个类型只把前 2 个槽位的首句标 ⭐
+
+
+def compute_layers(banks):
+    """三档：core（⭐⭐骨架 4 句）/ must（⭐必背，每类型 2 句）/ ammo（⚡弹药）
+       freq：3 通用 / 2 常用 / 1 专场"""
+    keep = set()
+    by_type = {}
+    for b in banks:
+        m = re.match(r'p2_(\w+)_s(\d)', b['id'])
+        if m:
+            by_type.setdefault(m.group(1), []).append(int(m.group(2)))
+    for tid, slots in by_type.items():
+        for s in sorted(slots)[:TYPE_MUST_SLOTS]:
+            keep.add('p2_%s_s%d' % (tid, s))
+    for b in banks:
+        bid = b['id']
+        for i, it in enumerate(b['items']):
+            if bid in CORE_SLOTS:
+                it['tier'] = 'core' if i == 0 else 'ammo'
+            elif bid in keep:
+                it['tier'] = 'must' if i == 0 else 'ammo'
+            else:
+                it['tier'] = 'ammo'
+            it['must'] = it['tier'] != 'ammo'
+            if bid == 'p2s1':
+                it['freq'] = 3
+            elif bid == 'p1s1':
+                it['freq'] = 3 if i < 8 else (2 if i < 13 else 1)
+            elif bid == 'p3':
+                it['freq'] = 3 if i < 6 else 2
+            elif bid == 'p1s2':
+                it['freq'] = 3 if i in (0, 4, 5, 8, 9) else 2
+            else:
+                it['freq'] = 3 if i == 0 else 2
+            it['tag'] = tag_of(bid, it['en'])
+        # 骨架 → 必背 → 弹药，同档内按考频降序（稳定排序）
+        rank = {'core': 0, 'must': 1, 'ammo': 2}
+        b['items'].sort(key=lambda x: (rank[x['tier']], -x['freq']))
+
+
+def build_guide():
+    """17 年真题适配表（题型 + 主题 + 该挑哪些句 + 跳原文）"""
+    rows = []
+    for y in sorted(EXTRA.GUIDE_MAP):
+        tid, tname, hint = EXTRA.GUIDE_MAP[y]
+        aid, topic = '%s_writinga' % y, ''
+        fp = os.path.join(DATA_DIR, '%s.json' % y)
+        if os.path.exists(fp):
+            d = json.load(open(fp, encoding='utf-8'))
+            for a in (d.get('articles') or []):
+                if str(a.get('id')).replace('_writing_a', '_writinga') == aid:
+                    aid = a['id']
+                    topic = re.sub(r'^Part A\s*(应用文)?[：:]\s*', '', str(a.get('title') or '')).strip()
+                    break
+        rows.append({'year': y, 'type': tname, 'typeId': tid, 'topic': topic,
+                     'hint': hint, 'aid': aid})
+    return rows
+
+
 def main():
     lines = io.open(MD, encoding='utf-8').read().split('\n')
     part, group, slot = 0, '', ''
@@ -339,13 +433,30 @@ def main():
                 break
         ph_list.append([tok, cn, eg])
 
-    # 类型视图
+    # 补齐 md 缺的 4 类 → 分层（必背 / 弹药）
+    merge_extra(banks, order)
+    compute_layers([banks[k] for k in order])
+
+    # 图例：扫描全部句子，补上补充类型里出现的新 token
+    for k in order:
+        for it in banks[k]['items']:
+            for tok in re.findall(r'\{\{(.+?)\}\}', it['en']):
+                if tok not in ph_example:
+                    ph_example[tok] = EXTRA.EXTRA_TOKENS_CN.get(tok, tok)
+
+    # 类型视图（10 类，顺序见 EXTRA.TYPE_ORDER）
     types = []
-    for cn_name, eid in TYPE_MAP:
+    for eid in EXTRA.TYPE_ORDER:
         bs = [b for b in ('p1s1', 'p2s1', 'p2_%s_s2' % eid, 'p2_%s_s3' % eid, 'p2_%s_s4' % eid, 'p3')
               if b in banks]
-        types.append({'id': eid, 'name': cn_name + '信' if eid != 'notice' else '通知',
-                      'banks': bs})
+        if not bs:
+            continue
+        name = {'notice': '通知'}.get(eid)
+        if not name:
+            name = next((x['name'] for x in EXTRA.EXTRA_TYPES if x['id'] == eid), None)
+        if not name:
+            name = next(c for c, e in TYPE_MAP if e == eid) + '信'
+        types.append({'id': eid, 'name': name, 'banks': bs})
 
     steps = [
         {'no': 1, 'name': '称呼（补充，原文未含）',
@@ -376,6 +487,25 @@ def main():
         'placeholders': ph_list,
         'banks': [banks[b] for b in order],
         'types': types,
+        'guide': build_guide(),
+        'decisions': EXTRA.DECISIONS,
+    }
+    all_items = [it for b in data['banks'] for it in b['items']]
+
+    def wc(s):
+        return len([x for x in re.split(r'\s+', (s or '').strip()) if re.search(r'[A-Za-z0-9]', x)])
+
+    def pick(tier):
+        return [x for x in all_items if x.get('tier') == tier]
+
+    core, musty = pick('core'), pick('must')
+    data['stats'] = {
+        'items': len(all_items), 'banks': len(data['banks']), 'types': len(types),
+        'core': len(core), 'core_words': sum(wc(x['en']) for x in core),
+        'must': len(musty), 'must_words': sum(wc(x['en']) for x in musty),
+        'ammo': len(pick('ammo')),
+        'freq3': sum(1 for x in all_items if x.get('freq') == 3),
+        'guide': len(data['guide']),
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(data, io.open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -384,6 +514,13 @@ def main():
     print('写入 %s' % os.path.relpath(OUT, os.path.dirname(ROOT)))
     print('  句库 %d 组 / %d 句 | 占位符 %d 个 | 类型 %d 个 | 提示 %d 条'
           % (len(data['banks']), total, len(ph_list), len(types), len(notes)))
+    s = data['stats']
+    print('  ⭐⭐骨架 %d 句 / %d 词 ｜ ⭐必背 %d 句 / %d 词 ｜ 合计 %d 句 %d 词（≈ %.1f 词/天，30 天）'
+          % (s['core'], s['core_words'], s['must'], s['must_words'],
+             s['core'] + s['must'], s['core_words'] + s['must_words'],
+             (s['core_words'] + s['must_words']) / 30.0))
+    print('  ⚡弹药 %d 句 ｜ ★★★ %d 句 ｜ 适配表 %d 年 ｜ 类型 %d 个'
+          % (s['ammo'], s['freq3'], s['guide'], s['types']))
     for b in data['banks']:
         print('    %-14s %-28s %d 句' % (b['id'], b['label'], len(b['items'])))
 

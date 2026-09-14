@@ -38,6 +38,13 @@
 
     <main class="rc-page">
         <h1 class="rc-title">作文速记页</h1>
+
+        <div class="rc-vw" id="rcVw">
+            <button type="button" class="rc-vw-btn on" data-v="big">大作文 · 图表（150+ 词）</button>
+            <button type="button" class="rc-vw-btn" data-v="small">小作文 · 应用文（约 100 词）</button>
+        </div>
+
+        <div id="rcBig">
         <p class="rc-desc" id="rcDesc">加载中…</p>
 
         <div class="rc-stats" id="rcStats"></div>
@@ -90,6 +97,33 @@
                 </div>
             </div>
         </section>
+        </div><!-- /rcBig -->
+
+        <div id="rcSmall" hidden>
+            <p class="rc-desc" id="rcDescS">加载中…</p>
+            <div class="rc-stats" id="rcStatsS"></div>
+            <nav class="rc-toc" id="rcTocS" aria-label="小作文速记目录"></nav>
+
+            <section class="rc-sec" id="rcSecSOrder">
+                <h2 class="rc-h2">一、小作文怎么拼（5 步 · 约 100 词）</h2>
+                <div id="rcSOrder"></div>
+            </section>
+
+            <section class="rc-sec" id="rcSecSCore">
+                <h2 class="rc-h2">二、⭐⭐ 骨架 4 句 + ⭐ 每类型 2 句（要背的全在这）</h2>
+                <div id="rcSCore"></div>
+            </section>
+
+            <section class="rc-sec" id="rcSecSGuide">
+                <h2 class="rc-h2">三、17 年真题该挑哪些句</h2>
+                <div id="rcSGuide"></div>
+            </section>
+
+            <section class="rc-sec" id="rcSecSPlan">
+                <h2 class="rc-h2">四、30 天计划（小作文只占总时长的一小半）</h2>
+                <div id="rcSPlan"></div>
+            </section>
+        </div><!-- /rcSmall -->
     </main>
 
     <script src="js/recite.js"></script>

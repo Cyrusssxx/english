@@ -36,15 +36,38 @@
         </div>
     </nav>
 
+    <div class="wr-layout">
+        <aside class="wr-toc" id="swToc" aria-label="页面目录">
+            <div class="wr-toc-head">
+                <span class="wr-toc-title">目录</span>
+                <button type="button" class="wr-toc-fold" id="swTocFold" onclick="swTocToggleFold()" title="收起目录">‹ 收起</button>
+            </div>
+            <nav class="wr-toc-list" id="swTocList"></nav>
+        </aside>
+        <button type="button" class="wr-toc-tab" id="swTocTab" onclick="swTocOpen()" title="展开目录">目录</button>
+        <div class="wr-toc-mask" id="swTocMask" onclick="swTocClose()" hidden></div>
+
     <main class="sw-page">
         <h1 class="sw-title" id="swTitle">📝 小作文功能句库</h1>
         <p class="sw-desc" id="swDesc">加载中…</p>
+        <div class="sw-hero" id="swStats"></div>
 
         <details class="wr-legend sw-legend" id="swLegend"></details>
 
-        <section class="sw-block">
-            <h2 class="sw-h2">🧩 小作文怎么拼（3 段 · 5 步）</h2>
+        <section class="sw-block" id="swStepsBlock">
+            <h2 class="sw-h2" id="swStepsTitle">🧩 小作文怎么拼（3 段 · 5 步）</h2>
             <div class="sw-steps" id="swSteps"></div>
+        </section>
+
+        <section class="sw-block" id="swGuideBlock">
+            <h2 class="sw-h2">📊 真题适配表 <small>2010–2026 英语二 A 节，共 17 套</small></h2>
+            <p class="sw-block-tip">先看每一年的<b>题型</b>与<b>该挑哪几句</b>，再往下到「按信件类型」里照单取句；主题列可点原文核对题干。</p>
+            <div id="swGuide"></div>
+        </section>
+
+        <section class="sw-block" id="swDecisionsBlock">
+            <h2 class="sw-h2" id="swDecisionsTitle">🎯 选句决策 <small>题干 → 挑哪几句</small></h2>
+            <div class="sw-decs" id="swDecisions"></div>
         </section>
 
         <div class="sw-viewbar">
@@ -59,6 +82,7 @@
 
         <div class="sw-study" id="swStudy"></div>
     </main>
+    </div>
 
     <script src="js/common.js"></script>
     <script src="js/smallwriting.js"></script>

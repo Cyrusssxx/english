@@ -4117,3 +4117,108 @@ html.dark .sw-ex { background: #1f2937; }
 }
 .x-entry:hover { border-color: var(--primary); }
 .x-entry b { color: var(--primary); }
+
+/* ===== 小作文页 v2：顶部指标 / 适配表 / 选句决策 / 必背徽标（配 js/smallwriting.js） ===== */
+.wr-layout > .sw-page { flex: 1 1 auto; min-width: 0; max-width: none; margin: 0; }
+#swLegend, #swStepsBlock, #swGuideBlock, #swDecisionsTitle, #swContent h2.sw-h2, .sw-card { scroll-margin-top: 76px; }
+
+/* 顶部指标 */
+.sw-hero { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; }
+.sw-chip {
+    font-size: .84rem; font-weight: 600; line-height: 1.5;
+    padding: 4px 12px; border-radius: 999px; cursor: default;
+    color: var(--text-light); background: var(--card-bg);
+    border: 1px solid var(--border);
+}
+.sw-chip.c-total { color: var(--text); }
+.sw-chip.c-core { color: #b45309; background: rgba(245, 158, 11, .12); border-color: rgba(245, 158, 11, .38); }
+.sw-chip.c-must { color: #8a6d1a; background: rgba(234, 179, 8, .13); border-color: rgba(234, 179, 8, .35); }
+.sw-chip.c-ammo { color: #0f766e; background: rgba(13, 148, 136, .11); border-color: rgba(13, 148, 136, .3); }
+.sw-chip.c-days, .sw-chip.c-guide { color: var(--primary-dark); background: var(--primary-soft); border-color: transparent; }
+html.dark .sw-chip.c-core { color: #fbbf24; }
+html.dark .sw-chip.c-must { color: #fbbf24; }
+html.dark .sw-chip.c-ammo { color: #5eead4; }
+html.dark .sw-chip.c-days, html.dark .sw-chip.c-guide { color: #5eead4; background: rgba(45, 212, 191, .14); }
+
+.sw-block-tip { color: var(--text-light); font-size: .86rem; line-height: 1.75; margin: -4px 0 12px; }
+.sw-block-tip b { color: var(--primary); }
+.sw-h2 small { font-weight: 400; font-size: .78rem; color: var(--text-light); margin-left: 6px; }
+
+/* 真题适配表 */
+.sw-gtable {
+    width: 100%; border-collapse: collapse; font-size: .88rem;
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+}
+.sw-gtable th, .sw-gtable td { border: 1px solid var(--border); padding: 7px 10px; text-align: left; vertical-align: top; line-height: 1.6; }
+.sw-gtable th { background: var(--primary-soft); color: var(--primary-dark); font-weight: 700; white-space: nowrap; font-size: .82rem; }
+.sw-gtable tr:hover td { background: rgba(13, 148, 136, .04); }
+.sw-gy { font-weight: 700; color: var(--primary); white-space: nowrap; font-variant-numeric: lining-nums tabular-nums; }
+.sw-gtag {
+    display: inline-block; white-space: nowrap; font-size: .78rem; font-weight: 700;
+    color: var(--primary-dark); background: var(--primary-soft); border-radius: 999px; padding: 1px 9px;
+}
+html.dark .sw-gtag { color: #5eead4; }
+.sw-gtop { color: var(--text); min-width: 180px; }
+.sw-ghint { color: var(--text-light); }
+.sw-ghint b { color: var(--primary); }
+.sw-glink {
+    font-size: .74rem; color: var(--primary); text-decoration: none;
+    border: 1px solid var(--border); border-radius: 999px; padding: 0 7px; white-space: nowrap;
+}
+.sw-glink:hover { border-color: var(--primary); }
+@media (max-width: 720px) {
+    .sw-gtable, .sw-gtable thead, .sw-gtable tbody, .sw-gtable tr, .sw-gtable th, .sw-gtable td { display: block; width: auto; }
+    .sw-gtable thead { display: none; }
+    .sw-gtable tr { border-bottom: 1px solid var(--border); padding: 6px 0; }
+    .sw-gtable td { border: none; padding: 2px 10px; }
+}
+
+/* 选句决策 */
+.sw-decs { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 10px; }
+.sw-dec { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 11px 14px; }
+.sw-dec-q { font-size: .92rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; display: flex; gap: 7px; }
+.sw-dec-no {
+    flex: 0 0 auto; width: 19px; height: 19px; border-radius: 50%; margin-top: 1px;
+    background: var(--primary-soft); color: var(--primary-dark);
+    font-size: .72rem; display: flex; align-items: center; justify-content: center;
+}
+.sw-dec-a { font-size: .87rem; line-height: 1.85; color: var(--text-light); }
+.sw-dec-a b { color: var(--primary); }
+
+/* 卡片徽标 / 星级 / 用途标签 */
+.sw-badge {
+    display: inline-block; white-space: nowrap; font-size: .71rem; font-weight: 700;
+    padding: 1px 8px; border-radius: 999px; border: 1px solid transparent;
+}
+.sw-badge.b-core { color: #b45309; background: rgba(245, 158, 11, .14); border-color: rgba(245, 158, 11, .4); }
+.sw-badge.b-must { color: #8a6d1a; background: rgba(234, 179, 8, .13); border-color: rgba(234, 179, 8, .35); }
+.sw-badge.b-ammo { color: #0f766e; background: rgba(13, 148, 136, .1); border-color: rgba(13, 148, 136, .28); }
+html.dark .sw-badge.b-core { color: #fbbf24; }
+html.dark .sw-badge.b-must { color: #fbbf24; }
+html.dark .sw-badge.b-ammo { color: #5eead4; }
+.sw-star {
+    flex: 0 0 auto; align-self: flex-start; margin-top: .22em;
+    font-size: .7rem; letter-spacing: -.5px; font-weight: 700;
+    color: #d9a40b; white-space: nowrap;
+}
+.sw-star.s-core { color: #b45309; font-size: .74rem; }
+html.dark .sw-star { color: #fbbf24; }
+html.dark .sw-star.s-core { color: #fbbf24; }
+.sw-tag {
+    flex: 0 0 auto; align-self: flex-start; margin-top: .18em;
+    font-size: .68rem; font-weight: 700; line-height: 1.5;
+    color: var(--primary-dark); background: var(--primary-soft);
+    border-radius: 4px; padding: 0 5px; white-space: nowrap;
+}
+html.dark .sw-tag { color: #5eead4; }
+.sw-en { margin-top: 2px; }
+
+/* ===== 速记页：大作文 / 小作文 同页切换 ===== */
+.rc-vw { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 14px; }
+.rc-vw-btn {
+    font: inherit; font-size: .92rem; font-weight: 600; padding: 7px 16px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--card-bg); color: var(--text-light); cursor: pointer;
+    transition: border-color .15s, color .15s, background .15s;
+}
+.rc-vw-btn:hover { border-color: var(--primary); color: var(--primary); }
+.rc-vw-btn.on { background: var(--primary); border-color: var(--primary); color: #fff; }

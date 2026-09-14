@@ -145,13 +145,23 @@ function toggleDark() {
 
 /** 目录（吸顶横条）：点击跳转 + 滚动高亮当前节 */
 function rcToc() {
-    const items = [
+    rcTocBuild('rcToc', [
         ['rcSecOrder', '① 三段怎么拼'],
         ['rcSecSkeleton', '② ⭐ 必背骨架'],
         ['rcSecAgents', '③ ⚡ 主体句池'],
         ['rcSecPlan', '④ 30 天计划']
-    ].filter(x => document.getElementById(x[0]));
-    const toc = document.getElementById('rcToc');
+    ]);
+    rcTocBuild('rcTocS', [
+        ['rcSecSOrder', '① 怎么拼（5 步）'],
+        ['rcSecSCore', '② ⭐ 骨架 + 必背'],
+        ['rcSecSGuide', '③ 17 年真题挑句'],
+        ['rcSecSPlan', '④ 30 天计划']
+    ]);
+}
+
+function rcTocBuild(tocId, rawItems) {
+    const items = rawItems.filter(x => document.getElementById(x[0]));
+    const toc = document.getElementById(tocId);
     if (!toc || !items.length) return;
     toc.innerHTML = items.map(x => `<a href="#${x[0]}" data-t="${x[0]}">${x[1]}</a>`).join('');
     const navH = () => {
@@ -184,9 +194,138 @@ function rcToc() {
     spy();
 }
 
+/* ==================== 视图切换（大作文 / 小作文，同页） ==================== */
+const RC_VW_KEY = 'rc_view_v1';
+
+function rcView(v) {
+    const big = document.getElementById('rcBig'), small = document.getElementById('rcSmall');
+    if (!big || !small) return;
+    big.hidden = v !== 'big';
+    small.hidden = v !== 'small';
+    document.querySelectorAll('.rc-vw-btn').forEach(b => b.classList.toggle('on', b.dataset.v === v));
+    try { localStorage.setItem(RC_VW_KEY, v); } catch (e) { /* ignore */ }
+}
+
+function rcVwBind() {
+    document.querySelectorAll('.rc-vw-btn').forEach(b =>
+        b.addEventListener('click', () => { rcView(b.dataset.v); window.scrollTo({ top: 0 }); }));
+    let v = 'big';
+    try { v = localStorage.getItem(RC_VW_KEY) || 'big'; } catch (e) { /* ignore */ }
+    rcView(v === 'small' ? 'small' : 'big');
+}
+
+/* ==================== 小作文速记 ==================== */
+function rcSTier(it) {
+    if (it.tier === 'core') return '⭐⭐';
+    if (it.tier === 'must') return '⭐';
+    return '';
+}
+
+async function rcSmallInit() {
+    let D = null;
+    try {
+        const res = await fetch('data/small_writing.json', { cache: 'no-cache' });
+        D = await res.json();
+    } catch (e) {
+        document.getElementById('rcDescS').textContent = '加载失败：' + e.message;
+        return;
+    }
+    const st = D.stats || {};
+    const core = [], must = [];
+    (D.banks || []).forEach(b => (b.items || []).forEach(it => {
+        if (it.tier === 'core') core.push({ b: b, it: it });
+        else if (it.tier === 'must') must.push({ b: b, it: it });
+    }));
+    const mustTotal = st.core_words + st.must_words;
+    document.getElementById('rcDescS').innerHTML =
+        '一页背完小作文：<b>⭐⭐ 骨架 4 句（任何一封信都要用）+ ⭐ 每类型 2 句</b>，其余 197 句是弹药（现挑现抄，不用背）。';
+    document.getElementById('rcStatsS').innerHTML = `
+        <div class="rc-stat"><span class="rc-stat-n">${st.core + st.must}</span><span class="rc-stat-k">⭐ 要背的句子</span></div>
+        <div class="rc-stat"><span class="rc-stat-n">${mustTotal}</span><span class="rc-stat-k">⭐ 要背的词数</span></div>
+        <div class="rc-stat"><span class="rc-stat-n">${st.ammo}</span><span class="rc-stat-k">⚡ 弹药（选抄）</span></div>
+        <div class="rc-stat"><span class="rc-stat-n">${D.types.length}</span><span class="rc-stat-k">个信件类型</span></div>
+        <div class="rc-stat"><span class="rc-stat-n">${(mustTotal / 30).toFixed(1)}</span><span class="rc-stat-k">平均词/天</span></div>`;
+
+    // 一、怎么拼
+    document.getElementById('rcSOrder').innerHTML = `
+        <div class="rc-order">
+            <div class="rc-order-step"><span class="rc-order-no">1</span><b>称呼</b>
+                <div class="rc-order-body">不知道收信人：<b>Dear Sir or Madam,</b>；知道姓名：<b>Dear Jack,</b> / <b>Dear Prof. Smith,</b>。顶格写、以逗号结尾。</div></div>
+            <div class="rc-order-step"><span class="rc-order-no">2</span><b>第一段 · 问候 + 来意（2 句，约 25 词）</b>
+                <div class="rc-order-body">⭐⭐ 骨架首句问候 ＋ 来意句点明目的（I am writing to…）。</div></div>
+            <div class="rc-order-step"><span class="rc-order-no">3</span><b>第二段 · 展开（2 句，约 50 词）</b>
+                <div class="rc-order-body">先用通用引出句，再按<b>题干动词</b>选类型，挑该类型的 ⭐ 2 句（做法 + 理由/要求）。</div></div>
+            <div class="rc-order-step"><span class="rc-order-no">4</span><b>第三段 · 收尾（1 句，约 15 词）</b>
+                <div class="rc-order-body">客套 / 期待回复（I would appreciate it very much if…）。</div></div>
+            <div class="rc-order-step"><span class="rc-order-no">5</span><b>落款</b>
+                <div class="rc-order-body">正式 <b>Yours sincerely,</b>；朋友 <b>Best wishes,</b>。下一行写题目给的名字（Li Ming）。通知不用落款人名。</div></div>
+            <div class="rc-total">全文合计 <b>90~110 词</b>（英语二 A 节要求约 100 词）</div>
+        </div>`;
+
+    // 二、要背的句子
+    const line = (x, star) => `<div class="rc-line"><div class="rc-en"><span class="rc-freq">${star}</span>${rcPh(x.it.en)}</div>`
+        + `<div class="rc-cn">${rcPh(x.it.cn || '')}</div></div>`;
+    let sk = '<div class="rc-group">⭐⭐ 骨架（4 句 · ' + st.core_words + ' 词）— 任何一封信都要用</div>';
+    sk += '<div class="rc-card"><div class="rc-card-head"><span class="rc-card-title">首句 / 来意 / 通用引出 / 收尾</span>'
+        + `<span class="rc-card-sub">⭐ ${st.core_words} 词</span></div><div class="rc-lines">`
+        + core.map(x => line(x, '⭐⭐')).join('') + '</div></div>';
+
+    sk += '<div class="rc-group">⭐ 必背（每个类型 2 句 · 共 ' + st.must + ' 句 / ' + st.must_words + ' 词）</div>';
+    (D.types || []).forEach(tp => {
+        // 按类型视图里声明的 bank 归属取句（别按 type 名字匹配：'建议' ≠ '建议信'）
+        const list = [];
+        (tp.banks || []).forEach(bid => {
+            const b = (D.banks || []).find(x => x.id === bid);
+            if (!b) return;
+            (b.items || []).forEach(it => { if (it.tier === 'must') list.push({ b: b, it: it }); });
+        });
+        if (!list.length) return;
+        const w = list.reduce((a, x) => a + rcWords(x.it.en), 0);
+        sk += rcCard(tp.id, tp.name, '⭐ ' + list.length + ' 句 · ' + w + ' 词');
+        sk += '<div class="rc-lines">' + list.map(x => line(x, '⭐')).join('') + '</div></div>';
+    });
+    sk += `<div class="rc-note"><b>觉得多？最省路径：</b>只背 ⭐⭐ 骨架 4 句（${st.core_words} 词）+ 真题最常考的
+        <b>建议 / 邀请 / 介绍</b> 三类各 2 句（共 6 句）——这样 10 句、约 ${st.core_words + 60} 词就能应付绝大多数年份；
+        其余类型等考到再补。</div>`;
+    document.getElementById('rcSCore').innerHTML = sk;
+
+    // 三、真题适配表
+    document.getElementById('rcSGuide').innerHTML = '<div class="rc-plan"><table class="rc-table">'
+        + '<thead><tr><th>年份</th><th>题型</th><th>该挑哪些句</th></tr></thead><tbody>'
+        + (D.guide || []).map(r => `<tr><td>${rcEsc(r.year)}</td><td>${rcEsc(r.type)}</td><td>${rcPh(r.hint)}</td></tr>`).join('')
+        + '</tbody></table></div>';
+
+    // 四、30 天计划
+    document.getElementById('rcSPlan').innerHTML = `
+        <div class="rc-plan">
+            <table class="rc-table">
+                <thead><tr><th>阶段</th><th>天数</th><th>背什么</th><th>验收</th></tr></thead>
+                <tbody>
+                    <tr><td rowspan="2">第 1 周</td><td>D1–D3</td><td>⭐⭐ 骨架 4 句（${st.core_words} 词）+ 来信/去信的称呼与落款</td><td>能默写骨架</td></tr>
+                    <tr><td>D4–D7</td><td>建议 / 邀请 / 介绍 三类各 2 句（最常考）</td><td>能各写一段第二段</td></tr>
+                    <tr><td rowspan="2">第 2 周</td><td>D8–D14</td><td>感谢 / 道歉 / 通知 / 祝贺 四类各 2 句</td><td>看题干能选对类型</td></tr>
+                    <tr><td>D15–D17</td><td>投诉 / 询问 / 观点 三类各 2 句 + 回滚复习</td><td>10 类全覆盖</td></tr>
+                    <tr><td>第 3 周</td><td>D18–D24</td><td>每天套写一篇真题（按适配表挑句），限时 15 分钟</td><td>连写 7 年不卡壳</td></tr>
+                    <tr><td>第 4 周</td><td>D25–D30</td><td>剩余年份套写 + 只看中文默写必背句</td><td>必背句全默写正确</td></tr>
+                </tbody>
+            </table>
+            <div class="rc-day">
+                <b>每天 0.5 小时怎么分（小作文用不了 1 小时）</b>
+                <div class="rc-day-row"><span class="rc-day-t">3 min</span>默写昨天背的 2 句，错的抄 3 遍</div>
+                <div class="rc-day-row"><span class="rc-day-t">8 min</span>背 2 句新的（读中文 → 读英文 → 遮住中文复述）</div>
+                <div class="rc-day-row"><span class="rc-day-t">4 min</span>合上书写这 2 句</div>
+                <div class="rc-day-row"><span class="rc-day-t">剩下</span>第 3 周开始，隔天套写一篇真题</div>
+            </div>
+            <div class="rc-note"><b>小作文占 10 分，别把时间全给它。</b>先把大作文骨架背完（那个 15 分），
+                小作文用「隔天 15 分钟」的节奏穿插进去就行。</div>
+        </div>`;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const s = document.getElementById('darkState');
     if (s) s.textContent = document.documentElement.classList.contains('dark') ? '开' : '关';
+    rcVwBind();
     rcToc();
     rcInit();
+    rcSmallInit();
 });

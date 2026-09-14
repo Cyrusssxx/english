@@ -20,6 +20,36 @@ function swPh(s) {
 
 function swBank(id) { return (SW.banks || []).find(b => b.id === id); }
 
+/** 考研口径词数 */
+function swWords(t) {
+    return ((t || '').match(/[A-Za-z0-9][A-Za-z0-9'’%.,:_-]*/g) || []).length;
+}
+
+/** 星级：⭐⭐ 骨架（任何信都用）/ ⭐ 必背（每类型 2 句）/ ★★★ 通用 · ★★ 常用 · ★ 专场 */
+function swStars(it) {
+    if (it.tier === 'core') return '<span class="sw-star s-core" title="骨架句：任何一封信都要用">⭐⭐</span>';
+    if (it.tier === 'must') return '<span class="sw-star s-must" title="必背：这一类题最万能的一句">⭐</span>';
+    const f = it.freq || 2;
+    return '<span class="sw-star" title="通用度：★★★ 任何题都能接 · ★★ 常用 · ★ 专场">'
+        + '★'.repeat(f) + '</span>';
+}
+
+/** 允许 <b> 的富文本：先转义/包占位符，再把 &lt;b&gt; 还原 */
+function swRich(s) {
+    return swPh(s).replace(/&lt;(\/?b)&gt;/g, '<$1>');
+}
+
+/** 组内分层统计 */
+function swBankTier(bank) {
+    let core = 0, must = 0, ammo = 0, cw = 0, mw = 0;
+    (bank.items || []).forEach(it => {
+        if (it.tier === 'core') { core++; cw += swWords(it.en); }
+        else if (it.tier === 'must') { must++; mw += swWords(it.en); }
+        else ammo++;
+    });
+    return { core: core, must: must, ammo: ammo, cw: cw, mw: mw };
+}
+
 /* 高亮块编号：与「视图」无关的稳定索引（key = 组id#序号），
    否则切「按段落 / 按类型」时 DOM 顺序变了、高亮会跳到别的句子上 */
 const swKeyMap = new Map();
@@ -47,18 +77,23 @@ function swLine(it, no, key) {
             ${e.cn ? `<div class="sw-ex-cn">${swPh(e.cn)}</div>` : ''}
         </div>`).join('');
     return `<li class="sw-line" data-k="${key}">
-        <div class="sw-en"><span class="sw-no">${no}</span><span class="sw-en-txt">${swPh(it.en)}</span></div>
+        <div class="sw-en"><span class="sw-no">${no}</span>${swStars(it)}${it.tag ? `<span class="sw-tag">${swEsc(it.tag)}</span>` : ''}<span class="sw-en-txt">${swPh(it.en)}</span></div>
         ${it.cn ? `<div class="sw-cn">${swPh(it.cn)}</div>` : ''}
         ${ex}
     </li>`;
 }
 
-function swCard(bank, order) {
+function swCard(bank, order, uid) {
     const n = bank.items.length;
-    const opened = n <= 14;
-    return `<details class="sw-card"${opened ? ' open' : ''} data-bank="${swEsc(bank.id)}">
+    const tb = swBankTier(bank);
+    const opened = n <= 14 || tb.core > 0;
+    const badges = (tb.core ? `<span class="sw-badge b-core">⭐⭐ 骨架 ${tb.core} 句 · ${tb.cw} 词</span>` : '')
+        + (tb.must ? `<span class="sw-badge b-must">⭐ 必背 ${tb.must} 句 · ${tb.mw} 词</span>` : '')
+        + `<span class="sw-badge b-ammo">⚡ 弹药 ${tb.ammo} 句</span>`;
+    return `<details class="sw-card"${opened ? ' open' : ''} id="${swEsc(uid)}" data-bank="${swEsc(bank.id)}">
         <summary class="sw-card-head">
             <span class="sw-card-title">${order ? `<span class="sw-ord">${order}</span>` : ''}${swEsc(bank.label)}</span>
+            ${badges}
             <span class="sw-card-n">${n} 句</span>
             <button type="button" class="sw-copy" data-copy="${swEsc(bank.id)}" title="复制这一组句子">复制</button>
         </summary>
@@ -80,22 +115,23 @@ function swRender() {
         [1, 2, 3].forEach(p => {
             const bs = SW.banks.filter(b => b.part === p);
             if (!bs.length) return;
-            html += `<section class="sw-part"><h2 class="sw-h2">${heads[p]}</h2>`
-                + swPartNote(p) + bs.map(b => swCard(b)).join('') + '</section>';
+            html += `<section class="sw-part"><h2 class="sw-h2" id="swP${p}">${heads[p]}</h2>`
+                + swPartNote(p) + bs.map(b => swCard(b, '', 'swB-p-' + b.id)).join('') + '</section>';
         });
     } else {
         html += `<div class="sw-note" data-k="noteType">💡 小作文第二段极其灵活：可以<b>跨类型混搭</b>——比如从「建议类」挑 2 句、从「祝贺类」挑 1 句。下面每一类按<b>拼装顺序</b>排好了（首句 / 来意 / 通用首句 → 该类型二三四句 → 收尾），照着从上往下挑 2~4 句即可。</div>`;
         SW.types.forEach(t => {
             const bs = (t.banks || []).map(swBank).filter(Boolean);
             if (!bs.length) return;
-            html += `<section class="sw-part"><h2 class="sw-h2">${swEsc(t.name)}</h2>
+            html += `<section class="sw-part"><h2 class="sw-h2" id="swT-${swEsc(t.id)}">${swEsc(t.name)}</h2>
                 <div class="sw-path">${bs.map(b => `<span class="sw-path-node">${swEsc(b.label.replace('第一段 · ', '').replace('第二段 · ', '').replace('第三段 · ', ''))}</span>`).join('<span class="sw-path-arrow">→</span>')}</div>
-                ${bs.map(b => swCard(b, b.id === 'p1s1' || b.id === 'p2s1' || b.id === 'p3' ? '共用' : '本类')).join('')}</section>`;
+                ${bs.map(b => swCard(b, b.id === 'p1s1' || b.id === 'p2s1' || b.id === 'p3' ? '共用' : '本类', 'swB-t-' + t.id + '-' + b.id)).join('')}</section>`;
         });
     }
     box.innerHTML = html;
     swRestoreAll();
     swSyncOpenBtn();
+    swTocBuild();
 }
 
 function swExpandAll(on) {
@@ -132,7 +168,7 @@ function swRenderSteps() {
     box.innerHTML = (SW.steps || []).map(s => `
         <div class="sw-step">
             <div class="sw-step-no">${s.no}</div>
-            <div class="sw-step-body"><b>${s.name}</b>${s.body}</div>
+            <div class="sw-step-body"><b>${swEsc(s.name)}</b>${swRich(s.body)}</div>
         </div>`).join('');
 }
 
@@ -194,9 +230,14 @@ async function swInit() {
     swBuildKeyMap();
     swRenderLegend();
     swRenderSteps();
+    swRenderStats();
+    swRenderGuide();
+    swRenderDecisions();
     swSyncViewBtns();
     swRender();
     swBind();
+    swTocBind();
+    swTocSpy();
     const st = document.getElementById('swStudy');
     if (st && SW.study) st.innerHTML = '📌 <b>怎么用</b>：' + swEsc(SW.study);
     const n = document.getElementById('swMkCount');
@@ -204,6 +245,152 @@ async function swInit() {
     swHlBind();
     swNavHVar();
     window.addEventListener('resize', swNavHVar);
+}
+
+
+/* ==================== 顶部指标 ==================== */
+function swRenderStats() {
+    const box = document.getElementById('swStats');
+    const s = SW.stats;
+    if (!box || !s) return;
+    const chips = [
+        ['total', s.items + ' 句', '句库总量（' + s.banks + ' 组）'],
+        ['core', '⭐⭐ 骨架 ' + s.core + ' 句', '任何一封信都要用 · 共 ' + s.core_words + ' 词'],
+        ['must', '⭐ 必背 ' + s.must + ' 句', '每类型 2 句 · 共 ' + s.must_words + ' 词'],
+        ['ammo', '⚡ 弹药 ' + s.ammo + ' 句', '不用背，写的时候现挑'],
+        ['days', ((s.core_words + s.must_words) / 30).toFixed(1) + ' 词/天', '按 30 天背完 ⭐/⭐⭐ 算'],
+        ['guide', s.guide + ' 年真题', '2010–2026 英语二 A 节'],
+    ];
+    box.innerHTML = chips.map(c =>
+        '<div class="sw-chip c-' + c[0] + '" title="' + swEsc(c[2]) + '">' + swEsc(c[1]) + '</div>').join('');
+}
+
+/* ==================== 真题适配表 ==================== */
+function swRenderGuide() {
+    const box = document.getElementById('swGuide');
+    if (!box || !SW.guide) return;
+    box.innerHTML = '<table class="sw-gtable"><thead><tr>'
+        + '<th>年份</th><th>题型</th><th>题目主题</th><th>该挑哪些句</th></tr></thead><tbody>'
+        + SW.guide.map(r => '<tr>'
+            + '<td class="sw-gy">' + swEsc(r.year) + '</td>'
+            + '<td><span class="sw-gtag">' + swEsc(r.type) + '</span></td>'
+            + '<td class="sw-gtop">' + swEsc(r.topic)
+            + (r.aid ? ' <a class="sw-glink" href="article.html?id=' + encodeURIComponent(r.aid) + '" title="看题目原文">原文</a>' : '')
+            + '</td>'
+            + '<td class="sw-ghint">' + swRich(r.hint) + '</td>'
+            + '</tr>').join('')
+        + '</tbody></table>';
+}
+
+/* ==================== 选句决策 ==================== */
+function swRenderDecisions() {
+    const box = document.getElementById('swDecisions');
+    if (!box || !SW.decisions) return;
+    box.innerHTML = SW.decisions.map((x, i) => '<div class="sw-dec">'
+        + '<div class="sw-dec-q"><span class="sw-dec-no">' + (i + 1) + '</span>' + swEsc(x.q) + '</div>'
+        + '<div class="sw-dec-a">' + swRich(x.a) + '</div>'
+        + '</div>').join('');
+}
+
+/* ==================== 悬浮目录（左侧，同大作文） ==================== */
+const SW_TOC_KEY = 'sw_toc_fold';
+const SW_TOC_NARROW = 1180;
+
+function swTocItems() {
+    const items = [];
+    const push = (lv, id, text) => { if (document.getElementById(id)) items.push({ lv: lv, id: id, text: text }); };
+    push(1, 'swLegend', '占位符图例');
+    push(1, 'swStepsTitle', '小作文怎么拼');
+    push(1, 'swGuideBlock', '真题适配表');
+    push(1, 'swDecisionsTitle', '选句决策');
+    document.querySelectorAll('#swContent h2.sw-h2').forEach(h => {
+        items.push({ lv: 1, id: h.id, text: h.textContent.trim() });
+        let n = h.nextElementSibling;
+        while (n && n.tagName !== 'H2') {
+            if (n.classList && n.classList.contains('sw-card') && n.id) {
+                const ct = n.querySelector('.sw-card-title');
+                if (ct) items.push({ lv: 2, id: n.id, text: ct.textContent.trim() });
+            }
+            n = n.nextElementSibling;
+        }
+    });
+    return items;
+}
+
+function swTocBuild() {
+    const list = document.getElementById('swTocList');
+    if (!list) return;
+    const items = swTocItems();
+    list.innerHTML = items.map(x =>
+        '<a class="lv' + x.lv + '" href="#' + swEsc(x.id) + '" data-target="' + swEsc(x.id) + '">' + swEsc(x.text) + '</a>').join('');
+    swTocApplyFold(localStorage.getItem(SW_TOC_KEY) === '1' || window.innerWidth <= SW_TOC_NARROW);
+    swTocSpy();
+}
+
+function swTocSpy() {
+    const list = document.getElementById('swTocList');
+    if (!list) return;
+    const links = Array.prototype.slice.call(list.querySelectorAll('a[data-target]'));
+    const top = swNavH() + 24;
+    let cur = null;
+    for (const a of links) {
+        const el = document.getElementById(a.dataset.target);
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= top) cur = a; else break;
+    }
+    if (!cur) cur = links[0];
+    links.forEach(a => a.classList.toggle('on', a === cur));
+    if (cur && list.scrollHeight > list.clientHeight + 4) {
+        const r = cur.getBoundingClientRect(), lr = list.getBoundingClientRect();
+        if (r.top < lr.top || r.bottom > lr.bottom) list.scrollTop += r.top - lr.top - 24;
+    }
+}
+
+function swTocApplyFold(folded) {
+    document.body.classList.toggle('wr-toc-folded', !!folded);
+    try { localStorage.setItem(SW_TOC_KEY, folded ? '1' : '0'); } catch (e) { /* ignore */ }
+    if (folded) swTocClose();
+}
+
+function swTocToggleFold() { swTocApplyFold(!document.body.classList.contains('wr-toc-folded')); }
+
+function swTocOpen() {
+    if (window.innerWidth <= SW_TOC_NARROW) {
+        document.body.classList.add('wr-toc-open');
+        const m = document.getElementById('swTocMask');
+        if (m) m.hidden = false;
+    } else {
+        swTocApplyFold(false);
+    }
+}
+
+function swTocClose() {
+    document.body.classList.remove('wr-toc-open');
+    const m = document.getElementById('swTocMask');
+    if (m) m.hidden = true;
+}
+
+function swTocGo(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - swNavH() - 12;
+    window.scrollTo({ top: y < 0 ? 0 : y, behavior: 'smooth' });
+    try { history.replaceState(null, '', '#' + id); } catch (e) { /* ignore */ }
+    if (window.innerWidth <= SW_TOC_NARROW) swTocClose();
+}
+
+function swTocBind() {
+    const list = document.getElementById('swTocList');
+    if (list) {
+        list.addEventListener('click', e => {
+            const a = e.target.closest ? e.target.closest('a[data-target]') : null;
+            if (!a) return;
+            e.preventDefault();
+            swTocGo(a.dataset.target);
+        });
+    }
+    window.addEventListener('scroll', () => { swTocSpy(); }, { passive: true });
+    window.addEventListener('resize', () => { swTocSpy(); });
 }
 
 /* ==================== 正文划词高亮 + 行批注（浮条交互，照搬 408 notes 页） ==================== */
