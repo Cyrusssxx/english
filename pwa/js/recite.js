@@ -238,7 +238,7 @@ async function rcSmallInit() {
     }));
     const mustTotal = st.core_words + st.must_words;
     document.getElementById('rcDescS').innerHTML =
-        '一页背完小作文：<b>⭐⭐ 骨架 4 句（任何一封信都要用）+ ⭐ 每类型 2 句</b>，其余 197 句是弹药（现挑现抄，不用背）。';
+        '一页背完小作文：<b>⭐⭐ 骨架 4 句（任何一封信都要用）+ ⭐ 每类型 2 句</b>，' + st.ammo + ' 句弹药（现挑现抄，不用背）。';
     document.getElementById('rcStatsS').innerHTML = `
         <div class="rc-stat"><span class="rc-stat-n">${st.core + st.must}</span><span class="rc-stat-k">⭐ 要背的句子</span></div>
         <div class="rc-stat"><span class="rc-stat-n">${mustTotal}</span><span class="rc-stat-k">⭐ 要背的词数</span></div>

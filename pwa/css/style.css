@@ -4222,3 +4222,7 @@ html.dark .sw-tag { color: #5eead4; }
 }
 .rc-vw-btn:hover { border-color: var(--primary); color: var(--primary); }
 .rc-vw-btn.on { background: var(--primary); border-color: var(--primary); color: #fff; }
+/* 评分老师视角：卡片稍作区分 */
+.sw-teacher { border-left: 3px solid var(--primary); }
+.sw-teacher .sw-dec-q { color: var(--primary-dark); }
+html.dark .sw-teacher .sw-dec-q { color: #5eead4; }

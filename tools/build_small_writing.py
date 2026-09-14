@@ -433,8 +433,36 @@ def main():
                 break
         ph_list.append([tok, cn, eg])
 
-    # 补齐 md 缺的 4 类 → 分层（必背 / 弹药）
+    # 补齐 md 缺的 4 类
     merge_extra(banks, order)
+
+    # dump 模式：打印「md 原始顺序」的候选清单（供人工挑保留句），不写文件
+    if 'dump' in sys.argv:
+        for k in order:
+            b = banks[k]
+            print('=' * 96)
+            print('### %s  (%d 句)' % (b['label'], len(b['items'])))
+            for i, it in enumerate(b['items']):
+                ex = ('｜示例' + it['ex'][0]['src']) if it.get('ex') else ''
+                print('%2d%s %s' % (i, ex, it['en']))
+        return
+
+    # 按人工挑的保留清单删冗余（EXTRA.PRUNE：bankId → 保留的自然序号）
+    pruned = 0
+    for k in order:
+        keep = EXTRA.PRUNE.get(k)
+        if keep is None:
+            continue
+        b = banks[k]
+        before = len(b['items'])
+        b['items'] = [it for i, it in enumerate(b['items']) if i in keep]
+        pruned += before - len(b['items'])
+        if not b['items']:
+            raise SystemExit('%s 被清空，检查 PRUNE' % k)
+    if pruned:
+        print('  按保留清单删去 %d 句冗余' % pruned)
+
+    # 分层（必背 / 弹药）
     compute_layers([banks[k] for k in order])
 
     # 图例：扫描全部句子，补上补充类型里出现的新 token
@@ -489,6 +517,7 @@ def main():
         'types': types,
         'guide': build_guide(),
         'decisions': EXTRA.DECISIONS,
+        'teacher': EXTRA.TEACHER,
     }
     all_items = [it for b in data['banks'] for it in b['items']]
 
