@@ -667,7 +667,9 @@ function wrWords(t) {
 }
 
 function wrSectionCard(sec) {
-    const sents = (sec.sentences || []).map((s, i) => `
+    // 考频优先展示（数据里新句追加在池尾，但不能让 ★ 排在 ★★★ 前面）
+    const pool = (sec.sentences || []).slice().sort((a, b) => (b.freq || 2) - (a.freq || 2));
+    const sents = pool.map((s, i) => `
         <li class="wr-sent">
             <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${s.freq ? `<span class="wr-freq" title="考频：★★★ 通用（跨话题都能接）/ ★★ 常用 / ★ 专场">${'★'.repeat(s.freq)}</span>` : ''}${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
             <div class="wr-sent-cn">${wrHl(s.cn)}</div>

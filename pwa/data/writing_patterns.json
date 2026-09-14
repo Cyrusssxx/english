@@ -1,6 +1,6 @@
 {
- "count": 52,
- "slot_count": 212,
+ "count": 65,
+ "slot_count": 181,
  "tpl_groups": {
   "第一段 · 静态图描述": [
    {
@@ -38,25 +38,10 @@
     "color": "#0d9488"
    },
    {
-    "w": "{{item1}} alone accounts for {{percent1}} of the total.",
-    "cn": "{{item1}} 一项就占了总量的 {{percent1}}。",
-    "years": [
-     "2012",
-     "2015",
-     "2016",
-     "2018",
-     "2020",
-     "2024",
-     "2025",
-     "2026"
-    ],
-    "src": "静态图表第一段 · 功能句1",
-    "color": "#0d9488"
-   },
-   {
     "w": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
     "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
     "years": [
+     "2012",
      "2015",
      "2016",
      "2018",
@@ -70,40 +55,86 @@
     "color": "#0d9488"
    },
    {
+    "w": "{{item4}} comes last, at {{percent4}}.",
+    "cn": "{{item4}} 排在最后，占 {{percent4}}。",
+    "years": [
+     "2015",
+     "2020",
+     "2021",
+     "2024",
+     "2026"
+    ],
+    "src": "静态图表第一段 · 功能句6",
+    "color": "#0d9488"
+   },
+   {
+    "w": "Taken together, the three largest categories account for {{percent total}}.",
+    "cn": "把最大的三类加在一起，共占 {{percent total}}。",
+    "years": [
+     "2015",
+     "2016",
+     "2018",
+     "2020"
+    ],
+    "src": "静态图表第一段 · 功能句3",
+    "color": "#0d9488"
+   },
+   {
+    "w": "The gap between the largest and smallest categories is wide.",
+    "cn": "最大类别与最小类别之间的差距很大。",
+    "years": [
+     "2021",
+     "2024",
+     "2025",
+     "2026"
+    ],
+    "src": "静态图表第一段 · 功能句7",
+    "color": "#0d9488"
+   },
+   {
     "w": "By contrast, {{item4}} and {{item5}} account for only {{percent4}} and {{percent5}}.",
     "cn": "相比之下，{{item4}} 和 {{item5}} 仅占 {{percent4}} 和 {{percent5}}。",
     "years": [
-     "2012",
      "2016",
      "2018",
-     "2020",
-     "2021",
-     "2025",
-     "2026"
+     "2025"
     ],
     "src": "静态图表第一段 · 模板第4句",
     "color": "#0d9488"
    },
    {
-    "w": "Only {{percent4}} goes to {{item4}}, and {{item5}} is even lower.",
-    "cn": "{{item4}} 只占 {{percent4}}，{{item5}} 更低。",
+    "w": "This distribution suggests that {{topic}} is still concentrated in a few categories.",
+    "cn": "这种分布说明 {{topic}} 仍然集中在少数几类上。",
     "years": [
-     "2024"
+     "2012"
     ],
-    "src": "静态图表第一段 · 功能句2",
+    "src": "静态图表第一段 · 功能句4",
     "color": "#0d9488"
    }
   ],
   "第一段 · 动态图描述": [
    {
+    "w": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图记录了{{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "years": [
+     "2010",
+     "2011",
+     "2014",
+     "2017",
+     "2019",
+     "2022"
+    ],
+    "src": "动态图表第一段 · 模板第1句",
+    "color": "#0ea5e9"
+   },
+   {
     "w": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
     "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
     "years": [
-     "2010",
+     "2011",
      "2013",
      "2014",
      "2019",
-     "2022",
      "2023"
     ],
     "src": "动态图表第一段 · 功能句1",
@@ -113,46 +144,44 @@
     "w": "Over the same period, {{item2}} fell from {{num3}} to {{num4}}, a clear decline.",
     "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，降幅明显。",
     "years": [
-     "2013",
+     "2011",
      "2014",
-     "2017",
-     "2019",
-     "2023"
+     "2019"
     ],
     "src": "动态图表第一段 · 功能句2",
     "color": "#0ea5e9"
    },
    {
-    "w": "By {{time2}}, {{item1}} had more than doubled, reaching {{num2}}.",
-    "cn": "到 {{time2}} 时，{{item1}} 已经翻了一倍多，达到 {{num2}}。",
-    "years": [
-     "2010",
-     "2011",
-     "2023"
-    ],
-    "src": "动态图表第一段 · 功能句3",
-    "color": "#0ea5e9"
-   },
-   {
-    "w": "The {{chart}} chart tracks how {{topic}} changed over the period.",
-    "cn": "该 {{chart}} 图记录了这一时期 {{topic}} 的变化。",
+    "w": "The gap between the two widened over the period.",
+    "cn": "两者之间的差距在这一时期拉大了。",
     "years": [
      "2010",
      "2017",
      "2022"
     ],
-    "src": "动态图表第一段 · 模板第1句",
+    "src": "动态图表第一段 · 功能句6",
     "color": "#0ea5e9"
    },
    {
-    "w": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "w": "Growth was slow at first and then sped up.",
+    "cn": "增长起初缓慢，后来明显加快。",
+    "years": [
+     "2013",
+     "2022",
+     "2023"
+    ],
+    "src": "动态图表第一段 · 功能句7",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "The two groups moved in opposite directions.",
+    "cn": "两组朝相反的方向变化。",
     "years": [
      "2011",
      "2014",
      "2019"
     ],
-    "src": "动态图表第一段 · 模板第1句",
+    "src": "动态图表第一段 · 功能句8",
     "color": "#0ea5e9"
    },
    {
@@ -162,17 +191,6 @@
      "2010",
      "2017",
      "2022"
-    ],
-    "src": "动态图表第一段 · 模板第2句",
-    "color": "#0ea5e9"
-   },
-   {
-    "w": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.",
-    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降至 {{num4}}。",
-    "years": [
-     "2011",
-     "2014",
-     "2019"
     ],
     "src": "动态图表第一段 · 模板第2句",
     "color": "#0ea5e9"
@@ -188,13 +206,21 @@
     "color": "#0ea5e9"
    },
    {
-    "w": "It rose from {{num1}} to {{num2}} without a single fall.",
-    "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有回落。",
+    "w": "Both moved in the same direction, but at very different speeds.",
+    "cn": "两者方向一致，但速度快慢差别很大。",
     "years": [
-     "2013",
+     "2010"
+    ],
+    "src": "动态图表第一段 · 功能句4",
+    "color": "#0ea5e9"
+   },
+   {
+    "w": "The figure more than doubled over the period.",
+    "cn": "这一数字在该时期翻了一倍多。",
+    "years": [
      "2023"
     ],
-    "src": "动态图表第一段 · 模板第2句",
+    "src": "动态图表第一段 · 功能句9",
     "color": "#0ea5e9"
    }
   ],
@@ -207,38 +233,9 @@
      "2011",
      "2014",
      "2015",
-     "2018",
      "2022"
     ],
     "src": "经济类第二段 · 功能句1",
-    "color": "#f97316"
-   },
-   {
-    "w": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
-    "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。",
-    "years": [
-     "2010",
-     "2011",
-     "2014",
-     "2015",
-     "2018",
-     "2022"
-    ],
-    "src": "经济类第二段 · 功能句3",
-    "color": "#f97316"
-   },
-   {
-    "w": "Online platforms and mobile payment have cut the time and cost of getting {{topic}}.",
-    "cn": "线上平台和移动支付降低了获得 {{topic}} 的时间和成本。",
-    "years": [
-     "2010",
-     "2011",
-     "2014",
-     "2015",
-     "2018",
-     "2022"
-    ],
-    "src": "经济类第二段 · 功能句4",
     "color": "#f97316"
    },
    {
@@ -249,10 +246,51 @@
      "2011",
      "2014",
      "2015",
-     "2018",
      "2022"
     ],
     "src": "经济类第二段 · 模板第1句",
+    "color": "#f97316"
+   },
+   {
+    "w": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
+    "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。",
+    "years": [
+     "2010",
+     "2011",
+     "2015"
+    ],
+    "src": "经济类第二段 · 功能句3",
+    "color": "#f97316"
+   },
+   {
+    "w": "Cities have grown quickly, and demand for {{topic}} has grown with them.",
+    "cn": "城市快速扩张，{{topic}} 的需求也随之增长。",
+    "years": [
+     "2010",
+     "2014",
+     "2022"
+    ],
+    "src": "经济类第二段 · 功能句5",
+    "color": "#f97316"
+   },
+   {
+    "w": "Government support — from tax breaks to better infrastructure — has also helped.",
+    "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。",
+    "years": [
+     "2011",
+     "2014",
+     "2022"
+    ],
+    "src": "经济类第二段 · 功能句6",
+    "color": "#f97316"
+   },
+   {
+    "w": "Online platforms and mobile payment have cut the time and cost of getting {{topic}}.",
+    "cn": "线上平台和移动支付降低了获得 {{topic}} 的时间和成本。",
+    "years": [
+     "2015"
+    ],
+    "src": "经济类第二段 · 功能句4",
     "color": "#f97316"
    }
   ],
@@ -264,36 +302,9 @@
      "2013",
      "2019",
      "2020",
-     "2024",
-     "2026"
+     "2024"
     ],
     "src": "校园类第二段（对应英语一品质类） · 功能句1",
-    "color": "#eab308"
-   },
-   {
-    "w": "On the other hand, too much of it can crowd out sleep and real conversation.",
-    "cn": "另一方面，过度投入会挤占睡眠和真实交流的时间。",
-    "years": [
-     "2013",
-     "2019",
-     "2020",
-     "2024",
-     "2026"
-    ],
-    "src": "校园类第二段（对应英语一品质类） · 功能句2",
-    "color": "#eab308"
-   },
-   {
-    "w": "Habits built at this stage shape how young people take responsibility later.",
-    "cn": "这个阶段养成的习惯，会影响他们日后承担责任的方式。",
-    "years": [
-     "2013",
-     "2019",
-     "2020",
-     "2024",
-     "2026"
-    ],
-    "src": "校园类第二段（对应英语一品质类） · 模板第2句",
     "color": "#eab308"
    },
    {
@@ -303,20 +314,21 @@
      "2013",
      "2019",
      "2020",
-     "2026"
+     "2024"
     ],
     "src": "校园类第二段（对应英语一品质类） · 模板第1句",
     "color": "#eab308"
    },
    {
-    "w": "Students who take part in {{topic}} often work better with others.",
-    "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
+    "w": "Habits built at this stage shape how young people take responsibility later.",
+    "cn": "这个阶段养成的习惯，会影响他们日后承担责任的方式。",
     "years": [
+     "2013",
      "2019",
      "2020",
      "2024"
     ],
-    "src": "校园类第二段（对应英语一品质类） · 功能句3",
+    "src": "校园类第二段（对应英语一品质类） · 模板第2句",
     "color": "#eab308"
    },
    {
@@ -324,56 +336,77 @@
     "cn": "{{topic}} 就是最清楚的例子之一。",
     "years": [
      "2013",
-     "2024",
-     "2026"
+     "2019",
+     "2020",
+     "2024"
     ],
     "src": "校园类第二段（对应英语一品质类） · 模板第3句",
+    "color": "#eab308"
+   },
+   {
+    "w": "Students who take part in {{topic}} often work better with others.",
+    "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
+    "years": [
+     "2013",
+     "2019",
+     "2024"
+    ],
+    "src": "校园类第二段（对应英语一品质类） · 功能句3",
+    "color": "#eab308"
+   },
+   {
+    "w": "The skills involved — patience, self-control, persistence — matter long after school ends.",
+    "cn": "其中的耐心、自控和坚持，在离开学校很久之后仍然有用。",
+    "years": [
+     "2020"
+    ],
+    "src": "校园类第二段（对应英语一品质类） · 功能句4",
     "color": "#eab308"
    }
   ],
   "第二段 · 社会职场生活类归因": [
-   {
-    "w": "Longer working hours have made people value the time they can call their own.",
-    "cn": "更长的工作时间让人们更看重属于自己的时间。",
-    "years": [
-     "2012",
-     "2016",
-     "2025"
-    ],
-    "src": "社会 · 职场 · 生活类第二段 · 功能句1",
-    "color": "#0d9488"
-   },
-   {
-    "w": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
-    "cn": "收入提高把过去的奢侈品变成了日常消费。",
-    "years": [
-     "2012",
-     "2016",
-     "2025"
-    ],
-    "src": "社会 · 职场 · 生活类第二段 · 功能句2",
-    "color": "#0d9488"
-   },
    {
     "w": "The change in the chart reflects a broader shift in how people live and work.",
     "cn": "图中的变化反映了人们生活和工作方式的更大转变。",
     "years": [
      "2012",
      "2016",
+     "2018",
      "2025"
     ],
     "src": "社会 · 职场 · 生活类第二段 · 模板第1句",
     "color": "#0d9488"
    },
    {
+    "w": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
+    "cn": "收入提高把过去的奢侈品变成了日常消费。",
+    "years": [
+     "2016",
+     "2018",
+     "2025"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 功能句2",
+    "color": "#0d9488"
+   },
+   {
     "w": "Once basic needs are met, people care more about how they spend their time.",
     "cn": "基本需求满足之后，人们更在意自己的时间怎么花。",
     "years": [
-     "2012",
      "2016",
+     "2018",
      "2025"
     ],
     "src": "社会 · 职场 · 生活类第二段 · 模板第2句",
+    "color": "#0d9488"
+   },
+   {
+    "w": "Longer working hours have made people value the time they can call their own.",
+    "cn": "更长的工作时间让人们更看重属于自己的时间。",
+    "years": [
+     "2012",
+     "2016"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 功能句1",
     "color": "#0d9488"
    },
    {
@@ -402,6 +435,15 @@
     ],
     "src": "社会 · 职场 · 生活类第二段 · 功能句6",
     "color": "#0d9488"
+   },
+   {
+    "w": "What people want from a job has changed: pay alone no longer keeps them satisfied.",
+    "cn": "人们对工作的要求变了：只靠工资已经留不住人。",
+    "years": [
+     "2012"
+    ],
+    "src": "社会 · 职场 · 生活类第二段 · 功能句7",
+    "color": "#0d9488"
    }
   ],
   "第二段 · 体育健康类归因": [
@@ -410,19 +452,21 @@
     "cn": "整天坐着，让运动从爱好变成了实际需要。",
     "years": [
      "2021",
-     "2023"
+     "2023",
+     "2026"
     ],
     "src": "体育健康类第二段 · 功能句1",
     "color": "#10b981"
    },
    {
-    "w": "The rise is not only about money: attitudes to health have changed.",
-    "cn": "这一增长不只因为钱：人们对健康的态度也变了。",
+    "w": "The figures are less about sport itself than about how people now look after themselves.",
+    "cn": "这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。",
     "years": [
      "2021",
-     "2023"
+     "2023",
+     "2026"
     ],
-    "src": "体育健康类第二段 · 功能句3",
+    "src": "体育健康类第二段 · 模板第1句",
     "color": "#10b981"
    },
    {
@@ -440,9 +484,27 @@
     "cn": "长时间工作让健康变成需要主动安排的事，而 {{topic}} 是最容易做到的一种方式。",
     "years": [
      "2021",
-     "2023"
+     "2026"
     ],
     "src": "体育健康类第二段 · 模板第2句",
+    "color": "#10b981"
+   },
+   {
+    "w": "The rise is not only about money: attitudes to health have changed.",
+    "cn": "这一增长不只因为钱：人们对健康的态度也变了。",
+    "years": [
+     "2023"
+    ],
+    "src": "体育健康类第二段 · 功能句3",
+    "color": "#10b981"
+   },
+   {
+    "w": "Health campaigns have reminded the public that prevention is cheaper than treatment.",
+    "cn": "健康宣传提醒公众：预防比治疗便宜。",
+    "years": [
+     "2026"
+    ],
+    "src": "体育健康类第二段 · 功能句6",
     "color": "#10b981"
    }
   ],
@@ -457,21 +519,12 @@
     "color": "#a855f7"
    },
    {
-    "w": "Documentaries and short videos have made old stories interesting to young audiences.",
-    "cn": "纪录片和短视频让老故事对年轻观众有了吸引力。",
+    "w": "Cultural confidence grows when tradition is lived, not merely recited.",
+    "cn": "传统被真正用起来、而不只是背诵时，文化自信才会增长。",
     "years": [
      "2017"
     ],
-    "src": "文化自信类第二段 · 功能句3",
-    "color": "#a855f7"
-   },
-   {
-    "w": "Schools have added courses on local history and traditional crafts.",
-    "cn": "学校增加了地方历史和传统手工艺课程。",
-    "years": [
-     "2017"
-    ],
-    "src": "文化自信类第二段 · 功能句4",
+    "src": "文化自信类第二段 · 功能句5",
     "color": "#a855f7"
    },
    {
@@ -504,11 +557,11 @@
   ],
   "第三段 · 正面总结建议": [
    {
-    "w": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-    "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
+    "w": "If the trend in the chart is to continue, more than one side has to act.",
+    "cn": "图中的趋势若要延续，就需要多方一起行动。",
     "years": [
      "2010",
-     "2012",
+     "2011",
      "2013",
      "2014",
      "2015",
@@ -518,12 +571,13 @@
      "2019",
      "2020",
      "2021",
+     "2022",
      "2023",
      "2024",
      "2025",
      "2026"
     ],
-    "src": "第三段 · 正面版 · 功能句1",
+    "src": "第三段 · 正面版 · 模板第1句",
     "color": "#06b6d4"
    },
    {
@@ -531,71 +585,58 @@
     "cn": "各方要做的事不同，单靠任何一方都做不到。",
     "years": [
      "2010",
-     "2012",
+     "2011",
      "2013",
+     "2014",
      "2015",
+     "2016",
      "2017",
+     "2018",
      "2019",
      "2020",
      "2021",
      "2022",
+     "2023",
      "2024",
+     "2025",
      "2026"
     ],
     "src": "第三段 · 正面版 · 模板第2句",
     "color": "#06b6d4"
    },
    {
-    "w": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
+    "w": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
+    "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
     "years": [
      "2010",
-     "2012",
-     "2015",
+     "2014",
      "2017",
-     "2019",
-     "2021",
-     "2024",
-     "2026"
+     "2022"
     ],
-    "src": "第三段 · 正面版 · 模板第1句",
+    "src": "第三段 · 正面版 · 功能句1",
     "color": "#06b6d4"
    },
    {
     "w": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
     "years": [
-     "2011",
      "2013",
-     "2014",
-     "2016",
-     "2018",
-     "2022",
-     "2025"
+     "2019",
+     "2024",
+     "2026"
     ],
     "src": "第三段 · 正面版 · 功能句2",
     "color": "#06b6d4"
    },
    {
-    "w": "Families matter most: children copy what adults do far more than what they are told.",
-    "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
+    "w": "Individuals should choose what fits their own situation rather than follow the crowd.",
+    "cn": "个人应按自身情况选择，而不是随大流。",
     "years": [
-     "2011",
-     "2014",
-     "2022"
-    ],
-    "src": "第三段 · 正面版 · 功能句3",
-    "color": "#06b6d4"
-   },
-   {
-    "w": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
-    "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
-    "years": [
+     "2015",
      "2016",
-     "2020",
-     "2023"
+     "2021"
     ],
-    "src": "第三段 · 正面版 · 功能句5",
+    "src": "第三段 · 正面版 · 功能句6",
     "color": "#06b6d4"
    },
    {
@@ -610,6 +651,27 @@
     "color": "#06b6d4"
    },
    {
+    "w": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
+    "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+    "years": [
+     "2018",
+     "2020",
+     "2022"
+    ],
+    "src": "第三段 · 正面版 · 功能句8",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Small habits matter: a little {{topic}} every day adds up over a year.",
+    "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
+    "years": [
+     "2021",
+     "2025"
+    ],
+    "src": "第三段 · 正面版 · 功能句10",
+    "color": "#06b6d4"
+   },
+   {
     "w": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
     "cn": "企业可以把 {{topic}} 做得更便宜、更好用，让它覆盖更多人。",
     "years": [
@@ -620,23 +682,70 @@
     "color": "#06b6d4"
    },
    {
-    "w": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-    "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+    "w": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
+    "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
     "years": [
-     "2018",
-     "2022"
+     "2020",
+     "2023"
     ],
-    "src": "第三段 · 正面版 · 功能句8",
+    "src": "第三段 · 正面版 · 功能句5",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Families matter most: children copy what adults do far more than what they are told.",
+    "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
+    "years": [
+     "2026"
+    ],
+    "src": "第三段 · 正面版 · 功能句3",
     "color": "#06b6d4"
    },
    {
     "w": "Documentaries and short videos can show how {{topic}} works in real life.",
     "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中是怎样运作的。",
     "years": [
-     "2023"
+     "2017"
     ],
     "src": "第三段 · 正面版 · 功能句9",
     "color": "#06b6d4"
+   }
+  ],
+  "第三段 · 负面总结建议": [
+   {
+    "w": "Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.",
+    "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
+    "years": [
+     "2012"
+    ],
+    "src": "第三段 · 负面版 · 功能句10",
+    "color": "#64748b"
+   },
+   {
+    "w": "A company that ignores this gap will lose the very people it most depends on.",
+    "cn": "忽视这一差距的公司，会失去它最依赖的那批人。",
+    "years": [
+     "2012"
+    ],
+    "src": "第三段 · 负面版 · 功能句11",
+    "color": "#64748b"
+   },
+   {
+    "w": "If nothing is done, the problem shown in the chart will only get worse.",
+    "cn": "如果什么都不做，图中的问题只会更严重。",
+    "years": [
+     "2012"
+    ],
+    "src": "第三段 · 负面版 · 模板第1句",
+    "color": "#64748b"
+   },
+   {
+    "w": "Any serious response has to come from several directions at once.",
+    "cn": "任何认真的应对，都需要多个方向同时发力。",
+    "years": [
+     "2012"
+    ],
+    "src": "第三段 · 负面版 · 模板第2句",
+    "color": "#64748b"
    }
   ]
  },
@@ -673,7 +782,7 @@
    },
    {
     "w": "pie",
-    "cn": "饼",
+    "cn": "饼状",
     "name": "chart",
     "para": "第一段",
     "years": [
@@ -681,17 +790,6 @@
      "2016",
      "2018",
      "2020"
-    ]
-   },
-   {
-    "w": "the leisure activities of the elderly",
-    "cn": "老年人的日常休闲活动",
-    "name": "topic",
-    "para": "第一段",
-    "years": [
-     "2025",
-     "2025",
-     "2025"
     ]
    },
    {
@@ -705,6 +803,26 @@
     ]
    },
    {
+    "w": "career planning",
+    "cn": "职业规划",
+    "name": "topic",
+    "para": "第二段",
+    "years": [
+     "2019",
+     "2019"
+    ]
+   },
+   {
+    "w": "city living",
+    "cn": "城市生活",
+    "name": "topic",
+    "para": "第二段",
+    "years": [
+     "2014",
+     "2014"
+    ]
+   },
+   {
     "w": "dining out",
     "cn": "外出就餐",
     "name": "topic",
@@ -712,46 +830,6 @@
     "years": [
      "2018",
      "2018"
-    ]
-   },
-   {
-    "w": "domestic auto brands",
-    "cn": "国产汽车品牌",
-    "name": "topic",
-    "para": "第二段",
-    "years": [
-     "2011",
-     "2011"
-    ]
-   },
-   {
-    "w": "express delivery",
-    "cn": "快递服务",
-    "name": "topic",
-    "para": "第二段",
-    "years": [
-     "2022",
-     "2022"
-    ]
-   },
-   {
-    "w": "festival spending",
-    "cn": "节日花销",
-    "name": "topic",
-    "para": "第二段",
-    "years": [
-     "2015",
-     "2015"
-    ]
-   },
-   {
-    "w": "further education",
-    "cn": "继续深造",
-    "name": "topic",
-    "para": "第二段",
-    "years": [
-     "2019",
-     "2019"
     ]
    },
    {
@@ -765,23 +843,13 @@
     ]
    },
    {
-    "w": "job satisfaction",
-    "cn": "工作满意度",
+    "w": "mobile phone use",
+    "cn": "手机的使用",
     "name": "topic",
     "para": "第二段",
     "years": [
-     "2012",
-     "2012"
-    ]
-   },
-   {
-    "w": "labor practice courses",
-    "cn": "劳动实践课",
-    "name": "topic",
-    "para": "第二段",
-    "years": [
-     "2024",
-     "2024"
+     "2010",
+     "2010"
     ]
    },
    {
@@ -795,18 +863,8 @@
     ]
    },
    {
-    "w": "mobile services",
-    "cn": "手机服务",
-    "name": "topic",
-    "para": "第二段",
-    "years": [
-     "2010",
-     "2010"
-    ]
-   },
-   {
-    "w": "museums",
-    "cn": "博物馆",
+    "w": "museum visiting",
+    "cn": "参观博物馆",
     "name": "topic",
     "para": "第二段",
     "years": [
@@ -815,7 +873,17 @@
     ]
    },
    {
-    "w": "outdoor activities",
+    "w": "online shopping",
+    "cn": "网购",
+    "name": "topic",
+    "para": "第二段",
+    "years": [
+     "2022",
+     "2022"
+    ]
+   },
+   {
+    "w": "outdoor activity",
     "cn": "户外活动",
     "name": "topic",
     "para": "第二段",
@@ -825,7 +893,7 @@
     ]
    },
    {
-    "w": "part-time jobs",
+    "w": "part-time work",
     "cn": "兼职",
     "name": "topic",
     "para": "第二段",
@@ -835,33 +903,13 @@
     ]
    },
    {
-    "w": "physical exercise",
-    "cn": "体育锻炼",
-    "name": "topic",
-    "para": "第二段",
-    "years": [
-     "2021",
-     "2021"
-    ]
-   },
-   {
-    "w": "travel",
-    "cn": "旅行",
+    "w": "travelling",
+    "cn": "旅游",
     "name": "topic",
     "para": "第二段",
     "years": [
      "2016",
      "2016"
-    ]
-   },
-   {
-    "w": "urbanization",
-    "cn": "城镇化",
-    "name": "topic",
-    "para": "第二段",
-    "years": [
-     "2014",
-     "2014"
     ]
    },
    {
@@ -874,8 +922,17 @@
     ]
    },
    {
+    "w": "New Year gifts",
+    "cn": "新年礼物",
+    "name": "topic",
+    "para": "第二段",
+    "years": [
+     "2015"
+    ]
+   },
+   {
     "w": "Spring Festival spending",
-    "cn": "春节花销",
+    "cn": "春节假期花销",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -883,26 +940,26 @@
     ]
    },
    {
-    "w": "express delivery volumes nationwide and in rural areas",
-    "cn": "全国与农村的快递业务量",
+    "w": "car ownership",
+    "cn": "汽车保有量",
     "name": "topic",
-    "para": "第一段",
+    "para": "第二段",
     "years": [
-     "2022"
+     "2011"
     ]
    },
    {
-    "w": "graduates' choices after university",
-    "cn": "本科毕业生的去向",
+    "w": "domestic car brands",
+    "cn": "国产汽车品牌",
     "name": "topic",
-    "para": "第一段",
+    "para": "第三段",
     "years": [
-     "2019"
+     "2011"
     ]
    },
    {
-    "w": "job satisfaction across the age groups",
-    "cn": "各年龄段的工作满意度",
+    "w": "employee dissatisfaction",
+    "cn": "员工的不满意比例",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -910,17 +967,62 @@
     ]
    },
    {
-    "w": "mobile-phone subscriptions in developing and developed countries",
-    "cn": "发展中国家与发达国家的手机订阅量",
+    "w": "exercise",
+    "cn": "运动",
     "name": "topic",
-    "para": "第一段",
+    "para": "第三段",
     "years": [
-     "2010"
+     "2021"
     ]
    },
    {
-    "w": "the benefits students gained from labor practice courses",
-    "cn": "学生从劳动实践课中得到的收获",
+    "w": "exercising",
+    "cn": "锻炼",
+    "name": "topic",
+    "para": "第二段",
+    "years": [
+     "2021"
+    ]
+   },
+   {
+    "w": "express delivery volume",
+    "cn": "快递业务量",
+    "name": "topic",
+    "para": "第一段",
+    "years": [
+     "2022"
+    ]
+   },
+   {
+    "w": "festival spending",
+    "cn": "节日花销",
+    "name": "topic",
+    "para": "第三段",
+    "years": [
+     "2015"
+    ]
+   },
+   {
+    "w": "graduates' destinations",
+    "cn": "毕业生去向",
+    "name": "topic",
+    "para": "第一段",
+    "years": [
+     "2019"
+    ]
+   },
+   {
+    "w": "job satisfaction",
+    "cn": "工作满意度",
+    "name": "topic",
+    "para": "第二段",
+    "years": [
+     "2012"
+    ]
+   },
+   {
+    "w": "labour practice course gains",
+    "cn": "劳动实践课的收获",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -928,17 +1030,62 @@
     ]
    },
    {
-    "w": "the exercise methods chosen by city residents",
-    "cn": "城市居民的锻炼方式",
+    "w": "labour practice courses",
+    "cn": "劳动实践课",
     "name": "topic",
-    "para": "第一段",
+    "para": "第二段",
     "years": [
-     "2021"
+     "2024"
     ]
    },
    {
-    "w": "the factors consumers consider when choosing a restaurant",
-    "cn": "消费者选择餐厅时的关注因素",
+    "w": "leisure activity",
+    "cn": "休闲活动",
+    "name": "topic",
+    "para": "第三段",
+    "years": [
+     "2025"
+    ]
+   },
+   {
+    "w": "mobile-phone subscriptions",
+    "cn": "手机用户数",
+    "name": "topic",
+    "para": "第一段",
+    "years": [
+     "2010"
+    ]
+   },
+   {
+    "w": "practical training",
+    "cn": "实践训练",
+    "name": "topic",
+    "para": "第三段",
+    "years": [
+     "2024"
+    ]
+   },
+   {
+    "w": "retirement life",
+    "cn": "退休生活",
+    "name": "topic",
+    "para": "第二段",
+    "years": [
+     "2025"
+    ]
+   },
+   {
+    "w": "staff satisfaction",
+    "cn": "员工满意度",
+    "name": "topic",
+    "para": "第三段",
+    "years": [
+     "2012"
+    ]
+   },
+   {
+    "w": "the factors consumers weigh when choosing a restaurant",
+    "cn": "消费者选择餐厅时考虑的因素",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -947,7 +1094,7 @@
    },
    {
     "w": "the health literacy rate of Chinese residents",
-    "cn": "中国居民的健康素养水平",
+    "cn": "居民健康素养水平",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -955,8 +1102,17 @@
     ]
    },
    {
-    "w": "the market shares of Chinese, Japanese and American auto brands",
-    "cn": "中国、日本与美国汽车品牌的市场份额",
+    "w": "the leisure activities of the elderly",
+    "cn": "老年人的休闲活动",
+    "name": "topic",
+    "para": "第一段",
+    "years": [
+     "2025"
+    ]
+   },
+   {
+    "w": "the market shares of Chinese, Japanese and American car brands",
+    "cn": "国产、日系与美系汽车品牌的市场份额",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -973,8 +1129,8 @@
     ]
    },
    {
-    "w": "the perceived benefits of children's outdoor activities",
-    "cn": "人们看重的儿童户外活动益处",
+    "w": "the perceived benefits of outdoor activities for children",
+    "cn": "儿童户外活动的益处",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -991,8 +1147,8 @@
     ]
    },
    {
-    "w": "the purposes of mobile reading among college students",
-    "cn": "大学生的手机阅读目的",
+    "w": "the purposes of mobile reading",
+    "cn": "手机阅读目的",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -1000,8 +1156,8 @@
     ]
    },
    {
-    "w": "the purposes of travel among college students",
-    "cn": "大学生的旅游目的",
+    "w": "the purposes of travel",
+    "cn": "旅游目的",
     "name": "topic",
     "para": "第一段",
     "years": [
@@ -1010,24 +1166,24 @@
    },
    {
     "w": "the urban and rural population",
-    "cn": "城镇与农村人口",
+    "cn": "城乡人口",
     "name": "topic",
     "para": "第一段",
     "years": [
      "2014"
     ]
+   },
+   {
+    "w": "the ways residents take exercise",
+    "cn": "居民的锻炼方式",
+    "name": "topic",
+    "para": "第一段",
+    "years": [
+     "2021"
+    ]
    }
   ],
   "主体 · 事物": [
-   {
-    "w": "Appreciating the beauty of the scenery",
-    "cn": "欣赏风景",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2016"
-    ]
-   },
    {
     "w": "Chinese brands",
     "cn": "国产品牌",
@@ -1038,7 +1194,16 @@
     ]
    },
    {
-    "w": "Distinguishing features",
+    "w": "appreciating the scenery",
+    "cn": "欣赏风景",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2016"
+    ]
+   },
+   {
+    "w": "distinctive features",
     "cn": "餐厅特色",
     "name": "item1",
     "para": "第一段",
@@ -1047,115 +1212,7 @@
     ]
    },
    {
-    "w": "Gaining knowledge",
-    "cn": "获取知识",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2020"
-    ]
-   },
-   {
-    "w": "Gaining relevant knowledge",
-    "cn": "获得相关知识",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2024"
-    ]
-   },
-   {
-    "w": "Satisfying curiosity",
-    "cn": "满足好奇心",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2026"
-    ]
-   },
-   {
-    "w": "Subscriptions in developing countries",
-    "cn": "发展中国家的订阅量",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2010"
-    ]
-   },
-   {
-    "w": "The group over 50",
-    "cn": "50 岁以上群体",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2012"
-    ]
-   },
-   {
-    "w": "The health literacy rate",
-    "cn": "健康素养水平",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2023"
-    ]
-   },
-   {
-    "w": "The national volume",
-    "cn": "全国业务量",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2022"
-    ]
-   },
-   {
-    "w": "The number of museums",
-    "cn": "博物馆数量",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2017"
-    ]
-   },
-   {
-    "w": "The rate",
-    "cn": "这一比例",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2013"
-    ]
-   },
-   {
-    "w": "The urban population",
-    "cn": "城镇人口",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2014"
-    ]
-   },
-   {
-    "w": "Travelling, gift giving and dinners with friends or relatives",
-    "cn": "旅行、送礼以及与亲友聚餐",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2015"
-    ]
-   },
-   {
-    "w": "Watching television",
-    "cn": "看电视",
-    "name": "item1",
-    "para": "第一段",
-    "years": [
-     "2025"
-    ]
-   },
-   {
-    "w": "Working out alone",
+    "w": "exercising on one's own",
     "cn": "独自锻炼",
     "name": "item1",
     "para": "第一段",
@@ -1164,8 +1221,80 @@
     ]
    },
    {
-    "w": "the proportion entering employment",
-    "cn": "就业比例",
+    "w": "gaining relevant knowledge",
+    "cn": "获得相关知识",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2024"
+    ]
+   },
+   {
+    "w": "gifts for family and friends",
+    "cn": "给亲友买礼物",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2015"
+    ]
+   },
+   {
+    "w": "reading for knowledge",
+    "cn": "获取知识",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2020"
+    ]
+   },
+   {
+    "w": "satisfying curiosity",
+    "cn": "满足好奇心",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2026"
+    ]
+   },
+   {
+    "w": "the 41-to-50 age group",
+    "cn": "41~50 岁组",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2012"
+    ]
+   },
+   {
+    "w": "the health literacy rate of Chinese residents",
+    "cn": "居民健康素养水平",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2023"
+    ]
+   },
+   {
+    "w": "the proportion of college students taking part-time jobs",
+    "cn": "大学生兼职比例",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2013"
+    ]
+   },
+   {
+    "w": "the rural figure",
+    "cn": "农村快递量",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2022"
+    ]
+   },
+   {
+    "w": "the share going on to further study",
+    "cn": "升学比例",
     "name": "item1",
     "para": "第一段",
     "years": [
@@ -1173,8 +1302,44 @@
     ]
    },
    {
-    "w": "American brands",
-    "cn": "美系品牌",
+    "w": "the urban population",
+    "cn": "城镇人口",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2014"
+    ]
+   },
+   {
+    "w": "those in developing countries",
+    "cn": "发展中国家",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2010"
+    ]
+   },
+   {
+    "w": "visitor numbers",
+    "cn": "参观人数",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2017"
+    ]
+   },
+   {
+    "w": "watching television",
+    "cn": "看电视",
+    "name": "item1",
+    "para": "第一段",
+    "years": [
+     "2025"
+    ]
+   },
+   {
+    "w": "Japanese brands",
+    "cn": "日系品牌",
     "name": "item2",
     "para": "第一段",
     "years": [
@@ -1182,16 +1347,25 @@
     ]
    },
    {
-    "w": "Relieving pressure",
-    "cn": "缓解压力",
+    "w": "dinners with relatives",
+    "cn": "与亲友聚餐",
     "name": "item2",
     "para": "第一段",
     "years": [
-     "2016"
+     "2015"
     ]
    },
    {
-    "w": "enhancing observation skills",
+    "w": "exercising with friends",
+    "cn": "与朋友一起",
+    "name": "item2",
+    "para": "第一段",
+    "years": [
+     "2021"
+    ]
+   },
+   {
+    "w": "improving observation skills",
     "cn": "促进观察力",
     "name": "item2",
     "para": "第一段",
@@ -1200,26 +1374,8 @@
     ]
    },
    {
-    "w": "exercising with friends",
-    "cn": "与朋友一起锻炼",
-    "name": "item2",
-    "para": "第一段",
-    "years": [
-     "2021"
-    ]
-   },
-   {
-    "w": "gifts for colleagues",
-    "cn": "给同事的礼物",
-    "name": "item2",
-    "para": "第一段",
-    "years": [
-     "2015"
-    ]
-   },
-   {
     "w": "improving practical ability",
-    "cn": "提升实践能力",
+    "cn": "提高实践能力",
     "name": "item2",
     "para": "第一段",
     "years": [
@@ -1233,6 +1389,15 @@
     "para": "第一段",
     "years": [
      "2020"
+    ]
+   },
+   {
+    "w": "relieving pressure",
+    "cn": "缓解压力",
+    "name": "item2",
+    "para": "第一段",
+    "years": [
+     "2016"
     ]
    },
    {
@@ -1254,53 +1419,8 @@
     ]
    },
    {
-    "w": "the number of visitors",
-    "cn": "参观人数",
-    "name": "item2",
-    "para": "第一段",
-    "years": [
-     "2017"
-    ]
-   },
-   {
-    "w": "the proportion in the graduation year",
-    "cn": "毕业当年的比例",
-    "name": "item2",
-    "para": "第一段",
-    "years": [
-     "2013"
-    ]
-   },
-   {
-    "w": "the proportion pursuing further education",
-    "cn": "升学比例",
-    "name": "item2",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
-    "w": "the rate in the same period",
-    "cn": "同期的这一比例",
-    "name": "item2",
-    "para": "第一段",
-    "years": [
-     "2023"
-    ]
-   },
-   {
-    "w": "the rural population",
-    "cn": "农村人口",
-    "name": "item2",
-    "para": "第一段",
-    "years": [
-     "2014"
-    ]
-   },
-   {
-    "w": "the rural volume",
-    "cn": "农村业务量",
+    "w": "the national total",
+    "cn": "全国总量",
     "name": "item2",
     "para": "第一段",
     "years": [
@@ -1308,8 +1428,35 @@
     ]
    },
    {
-    "w": "those aged 41 to 50",
-    "cn": "41 至 50 岁的员工",
+    "w": "the number of museums",
+    "cn": "博物馆数量",
+    "name": "item2",
+    "para": "第一段",
+    "years": [
+     "2017"
+    ]
+   },
+   {
+    "w": "the rural population",
+    "cn": "乡村人口",
+    "name": "item2",
+    "para": "第一段",
+    "years": [
+     "2014"
+    ]
+   },
+   {
+    "w": "the share entering employment",
+    "cn": "就业比例",
+    "name": "item2",
+    "para": "第一段",
+    "years": [
+     "2019"
+    ]
+   },
+   {
+    "w": "those aged 40 or younger",
+    "cn": "40 岁及以下组",
     "name": "item2",
     "para": "第一段",
     "years": [
@@ -1318,7 +1465,7 @@
    },
    {
     "w": "those in developed countries",
-    "cn": "发达国家同期的订阅量",
+    "cn": "发达国家",
     "name": "item2",
     "para": "第一段",
     "years": [
@@ -1326,39 +1473,30 @@
     ]
    },
    {
-    "w": "Japanese brands",
-    "cn": "日系品牌",
-    "name": "item3",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
-    "w": "employees aged 31 to 40",
-    "cn": "31 至 40 岁的员工",
-    "name": "item3",
-    "para": "第一段",
-    "years": [
-     "2012"
-    ]
-   },
-   {
-    "w": "household decorations",
-    "cn": "家庭装饰",
-    "name": "item3",
-    "para": "第一段",
-    "years": [
-     "2015"
-    ]
-   },
-   {
-    "w": "improving physical fitness",
+    "w": "enhancing physical fitness",
     "cn": "强身健体",
     "name": "item3",
     "para": "第一段",
     "years": [
      "2026"
+    ]
+   },
+   {
+    "w": "exercising with family",
+    "cn": "与家人一起",
+    "name": "item3",
+    "para": "第一段",
+    "years": [
+     "2021"
+    ]
+   },
+   {
+    "w": "making more friends",
+    "cn": "结交朋友",
+    "name": "item3",
+    "para": "第一段",
+    "years": [
+     "2016"
     ]
    },
    {
@@ -1380,17 +1518,8 @@
     ]
    },
    {
-    "w": "other aims",
-    "cn": "其他目的",
-    "name": "item3",
-    "para": "第一段",
-    "years": [
-     "2016"
-    ]
-   },
-   {
     "w": "planting flowers",
-    "cn": "养花",
+    "cn": "种花",
     "name": "item3",
     "para": "第一段",
     "years": [
@@ -1407,30 +1536,21 @@
     ]
    },
    {
-    "w": "the proportion starting a business",
-    "cn": "创业比例",
+    "w": "the group over 50",
+    "cn": "50 岁以上组",
     "name": "item3",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
-    "w": "working out with family members",
-    "cn": "与家人一起锻炼",
-    "name": "item3",
-    "para": "第一段",
-    "years": [
-     "2021"
-    ]
-   },
-   {
-    "w": "employees aged 40 or younger",
-    "cn": "40 岁及以下员工",
-    "name": "item4",
     "para": "第一段",
     "years": [
      "2012"
+    ]
+   },
+   {
+    "w": "travel",
+    "cn": "出行",
+    "name": "item3",
+    "para": "第一段",
+    "years": [
+     "2015"
     ]
    },
    {
@@ -1443,21 +1563,12 @@
     ]
    },
    {
-    "w": "making more friends",
-    "cn": "广交朋友",
+    "w": "other aims",
+    "cn": "其他目的",
     "name": "item4",
     "para": "第一段",
     "years": [
      "2016"
-    ]
-   },
-   {
-    "w": "other items such as fireworks",
-    "cn": "烟花等其他项目",
-    "name": "item4",
-    "para": "第一段",
-    "years": [
-     "2015"
     ]
    },
    {
@@ -1470,12 +1581,12 @@
     ]
    },
    {
-    "w": "playing team sports",
-    "cn": "参加团队运动",
+    "w": "other spending",
+    "cn": "其他花销",
     "name": "item4",
     "para": "第一段",
     "years": [
-     "2021"
+     "2015"
     ]
    },
    {
@@ -1489,7 +1600,7 @@
    },
    {
     "w": "reading",
-    "cn": "阅读",
+    "cn": "读书",
     "name": "item4",
     "para": "第一段",
     "years": [
@@ -1506,30 +1617,21 @@
     ]
    },
    {
+    "w": "team sports",
+    "cn": "团队项目",
+    "name": "item4",
+    "para": "第一段",
+    "years": [
+     "2021"
+    ]
+   },
+   {
     "w": "fostering independence",
-    "cn": "培养独立能力",
+    "cn": "锻炼独立性",
     "name": "item5",
     "para": "第一段",
     "years": [
      "2016"
-    ]
-   },
-   {
-    "w": "miscellaneous spending",
-    "cn": "杂项支出",
-    "name": "item5",
-    "para": "第一段",
-    "years": [
-     "2015"
-    ]
-   },
-   {
-    "w": "other benefits",
-    "cn": "其他益处",
-    "name": "item5",
-    "para": "第一段",
-    "years": [
-     "2026"
     ]
    },
    {
@@ -1542,48 +1644,12 @@
     ]
    },
    {
-    "w": "other forms of exercise",
-    "cn": "其他锻炼形式",
-    "name": "item5",
-    "para": "第一段",
-    "years": [
-     "2021"
-    ]
-   },
-   {
-    "w": "other gains",
-    "cn": "其他收获",
-    "name": "item5",
-    "para": "第一段",
-    "years": [
-     "2024"
-    ]
-   },
-   {
     "w": "playing chess",
     "cn": "下棋",
     "name": "item5",
     "para": "第一段",
     "years": [
      "2025"
-    ]
-   },
-   {
-    "w": "the remaining aims",
-    "cn": "其余目标",
-    "name": "item5",
-    "para": "第一段",
-    "years": [
-     "2020"
-    ]
-   },
-   {
-    "w": "the remaining respondents",
-    "cn": "其余受访者",
-    "name": "item5",
-    "para": "第一段",
-    "years": [
-     "2012"
     ]
    }
   ],
@@ -1598,6 +1664,33 @@
     ]
    },
    {
+    "w": "12 billion pieces",
+    "cn": "120 亿件",
+    "name": "num1",
+    "para": "第一段",
+    "years": [
+     "2022"
+    ]
+   },
+   {
+    "w": "26%",
+    "cn": "26%",
+    "name": "num1",
+    "para": "第一段",
+    "years": [
+     "2011"
+    ]
+   },
+   {
+    "w": "26.3%",
+    "cn": "26.3%",
+    "name": "num1",
+    "para": "第一段",
+    "years": [
+     "2019"
+    ]
+   },
+   {
     "w": "300 million",
     "cn": "3 亿",
     "name": "num1",
@@ -1607,21 +1700,12 @@
     ]
    },
    {
-    "w": "4,169",
-    "cn": "4169",
+    "w": "640 million",
+    "cn": "6.4 亿",
     "name": "num1",
     "para": "第一段",
     "years": [
      "2017"
-    ]
-   },
-   {
-    "w": "51 billion pieces",
-    "cn": "510 亿件",
-    "name": "num1",
-    "para": "第一段",
-    "years": [
-     "2022"
     ]
    },
    {
@@ -1634,15 +1718,6 @@
     ]
    },
    {
-    "w": "68.1%",
-    "cn": "68.1%",
-    "name": "num1",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
     "w": "8.80%",
     "cn": "8.80%",
     "name": "num1",
@@ -1652,21 +1727,39 @@
     ]
    },
    {
-    "w": "a modest share",
-    "cn": "一个不大的份额",
-    "name": "num1",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
     "w": "25.40%",
     "cn": "25.40%",
     "name": "num2",
     "para": "第一段",
     "years": [
      "2023"
+    ]
+   },
+   {
+    "w": "30 billion pieces",
+    "cn": "300 亿件",
+    "name": "num2",
+    "para": "第一段",
+    "years": [
+     "2022"
+    ]
+   },
+   {
+    "w": "31%",
+    "cn": "31%",
+    "name": "num2",
+    "para": "第一段",
+    "years": [
+     "2011"
+    ]
+   },
+   {
+    "w": "34.0%",
+    "cn": "34.0%",
+    "name": "num2",
+    "para": "第一段",
+    "years": [
+     "2019"
     ]
    },
    {
@@ -1679,24 +1772,6 @@
     ]
    },
    {
-    "w": "4,692",
-    "cn": "4692",
-    "name": "num2",
-    "para": "第一段",
-    "years": [
-     "2017"
-    ]
-   },
-   {
-    "w": "60.7%",
-    "cn": "60.7%",
-    "name": "num2",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
     "w": "670 million",
     "cn": "6.7 亿",
     "name": "num2",
@@ -1706,12 +1781,12 @@
     ]
    },
    {
-    "w": "83 billion pieces",
-    "cn": "830 亿件",
+    "w": "780 million",
+    "cn": "7.8 亿",
     "name": "num2",
     "para": "第一段",
     "years": [
-     "2022"
+     "2017"
     ]
    },
    {
@@ -1724,15 +1799,6 @@
     ]
    },
    {
-    "w": "the leading position",
-    "cn": "领先地位",
-    "name": "num2",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
     "w": "0.7 billion",
     "cn": "7 亿",
     "name": "num3",
@@ -1742,26 +1808,17 @@
     ]
    },
    {
-    "w": "12 billion pieces",
-    "cn": "120 亿件",
+    "w": "35%",
+    "cn": "35%",
     "name": "num3",
     "para": "第一段",
     "years": [
-     "2022"
+     "2011"
     ]
    },
    {
-    "w": "26.3%",
-    "cn": "26.3%",
-    "name": "num3",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
-    "w": "637 million",
-    "cn": "6.37 亿",
+    "w": "4,200",
+    "cn": "4200 家",
     "name": "num3",
     "para": "第一段",
     "years": [
@@ -1769,12 +1826,21 @@
     ]
    },
    {
-    "w": "8.80%",
-    "cn": "8.80%",
+    "w": "51 billion pieces",
+    "cn": "510 亿件",
     "name": "num3",
     "para": "第一段",
     "years": [
-     "2023"
+     "2022"
+    ]
+   },
+   {
+    "w": "68.1%",
+    "cn": "68.1%",
+    "name": "num3",
+    "para": "第一段",
+    "years": [
+     "2019"
     ]
    },
    {
@@ -1787,24 +1853,6 @@
     ]
    },
    {
-    "w": "83.7%",
-    "cn": "83.7%",
-    "name": "num3",
-    "para": "第一段",
-    "years": [
-     "2013"
-    ]
-   },
-   {
-    "w": "a small share",
-    "cn": "一个较小的份额",
-    "name": "num3",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
     "w": "1 billion",
     "cn": "10 亿",
     "name": "num4",
@@ -1814,26 +1862,26 @@
     ]
    },
    {
-    "w": "25.40%",
-    "cn": "25.40%",
+    "w": "26%",
+    "cn": "26%",
     "name": "num4",
     "para": "第一段",
     "years": [
-     "2023"
+     "2011"
     ]
    },
    {
-    "w": "30 billion pieces",
-    "cn": "300 亿件",
+    "w": "4,600",
+    "cn": "4600 家",
     "name": "num4",
     "para": "第一段",
     "years": [
-     "2022"
+     "2017"
     ]
    },
    {
-    "w": "34.0%",
-    "cn": "34.0%",
+    "w": "60.7%",
+    "cn": "60.7%",
     "name": "num4",
     "para": "第一段",
     "years": [
@@ -1850,66 +1898,12 @@
     ]
    },
    {
-    "w": "88.24%",
-    "cn": "88.24%",
+    "w": "83 billion pieces",
+    "cn": "830 亿件",
     "name": "num4",
     "para": "第一段",
     "years": [
-     "2013"
-    ]
-   },
-   {
-    "w": "954 million",
-    "cn": "9.54 亿",
-    "name": "num4",
-    "para": "第一段",
-    "years": [
-     "2017"
-    ]
-   },
-   {
-    "w": "a slightly larger share",
-    "cn": "略大的份额",
-    "name": "num4",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
-    "w": "1.3%",
-    "cn": "1.3%",
-    "name": "num5",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
-    "w": "their peak level",
-    "cn": "其最高水平",
-    "name": "num5",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
-    "w": "2.6%",
-    "cn": "2.6%",
-    "name": "num6",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
-    "w": "a much lower level",
-    "cn": "远低于此的水平",
-    "name": "num6",
-    "para": "第一段",
-    "years": [
-     "2011"
+     "2022"
     ]
    }
   ],
@@ -1918,16 +1912,6 @@
     "w": "2013",
     "cn": "2013 年",
     "name": "time1",
-    "para": "第一段",
-    "years": [
-     "2017",
-     "2019"
-    ]
-   },
-   {
-    "w": "2013",
-    "cn": "2013 年",
-    "name": "time3",
     "para": "第一段",
     "years": [
      "2017",
@@ -1953,6 +1937,15 @@
     ]
    },
    {
+    "w": "2008",
+    "cn": "2008 年",
+    "name": "time1",
+    "para": "第一段",
+    "years": [
+     "2011"
+    ]
+   },
+   {
     "w": "2012",
     "cn": "2012 年",
     "name": "time1",
@@ -1968,15 +1961,6 @@
     "para": "第一段",
     "years": [
      "2022"
-    ]
-   },
-   {
-    "w": "the earlier period",
-    "cn": "前一时期",
-    "name": "time1",
-    "para": "第一段",
-    "years": [
-     "2011"
     ]
    },
    {
@@ -1998,6 +1982,15 @@
     ]
    },
    {
+    "w": "2009",
+    "cn": "2009 年",
+    "name": "time2",
+    "para": "第一段",
+    "years": [
+     "2011"
+    ]
+   },
+   {
     "w": "2010",
     "cn": "2010 年",
     "name": "time2",
@@ -2049,193 +2042,10 @@
     "para": "第一段",
     "years": [
      "2013"
-    ]
-   },
-   {
-    "w": "the later period",
-    "cn": "后一时期",
-    "name": "time2",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
-    "w": "1990",
-    "cn": "1990 年",
-    "name": "time3",
-    "para": "第一段",
-    "years": [
-     "2014"
-    ]
-   },
-   {
-    "w": "2000",
-    "cn": "2000 年",
-    "name": "time3",
-    "para": "第一段",
-    "years": [
-     "2010"
-    ]
-   },
-   {
-    "w": "2012",
-    "cn": "2012 年",
-    "name": "time3",
-    "para": "第一段",
-    "years": [
-     "2023"
-    ]
-   },
-   {
-    "w": "2018",
-    "cn": "2018 年",
-    "name": "time3",
-    "para": "第一段",
-    "years": [
-     "2022"
-    ]
-   },
-   {
-    "w": "the earlier period",
-    "cn": "前一时期",
-    "name": "time3",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
-    "w": "the third year",
-    "cn": "大三",
-    "name": "time3",
-    "para": "第一段",
-    "years": [
-     "2013"
-    ]
-   },
-   {
-    "w": "2008",
-    "cn": "2008 年",
-    "name": "time4",
-    "para": "第一段",
-    "years": [
-     "2010"
-    ]
-   },
-   {
-    "w": "2010",
-    "cn": "2010 年",
-    "name": "time4",
-    "para": "第一段",
-    "years": [
-     "2014"
-    ]
-   },
-   {
-    "w": "2015",
-    "cn": "2015 年",
-    "name": "time4",
-    "para": "第一段",
-    "years": [
-     "2017"
-    ]
-   },
-   {
-    "w": "2018",
-    "cn": "2018 年",
-    "name": "time4",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
-    "w": "2020",
-    "cn": "2020 年",
-    "name": "time4",
-    "para": "第一段",
-    "years": [
-     "2022"
-    ]
-   },
-   {
-    "w": "2021",
-    "cn": "2021 年",
-    "name": "time4",
-    "para": "第一段",
-    "years": [
-     "2023"
-    ]
-   },
-   {
-    "w": "the final year",
-    "cn": "大四",
-    "name": "time4",
-    "para": "第一段",
-    "years": [
-     "2013"
-    ]
-   },
-   {
-    "w": "the later period",
-    "cn": "后一时期",
-    "name": "time4",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
-    "w": "2013",
-    "cn": "2013 年",
-    "name": "time5",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
-    "w": "the earlier period",
-    "cn": "前一时期",
-    "name": "time5",
-    "para": "第一段",
-    "years": [
-     "2011"
-    ]
-   },
-   {
-    "w": "2018",
-    "cn": "2018 年",
-    "name": "time6",
-    "para": "第一段",
-    "years": [
-     "2019"
-    ]
-   },
-   {
-    "w": "the later period",
-    "cn": "后一时期",
-    "name": "time6",
-    "para": "第一段",
-    "years": [
-     "2011"
     ]
    }
   ],
   "数据 · 占比": [
-   {
-    "w": "a still smaller share",
-    "cn": "更小的比例",
-    "name": "percent5",
-    "para": "第一段",
-    "years": [
-     "2012",
-     "2021",
-     "2024",
-     "2026"
-    ]
-   },
    {
     "w": "36.3%",
     "cn": "36.3%",
@@ -2260,7 +2070,16 @@
     "name": "percent1",
     "para": "第一段",
     "years": [
-     "2012"
+     "2015"
+    ]
+   },
+   {
+    "w": "54.3%",
+    "cn": "54.3%",
+    "name": "percent1",
+    "para": "第一段",
+    "years": [
+     "2021"
     ]
    },
    {
@@ -2282,12 +2101,12 @@
     ]
    },
    {
-    "w": "80% of the total",
-    "cn": "总额的 80%",
+    "w": "64%",
+    "cn": "64%",
     "name": "percent1",
     "para": "第一段",
     "years": [
-     "2015"
+     "2012"
     ]
    },
    {
@@ -2309,12 +2128,12 @@
     ]
    },
    {
-    "w": "slightly over half of the respondents",
-    "cn": "略超受访者半数",
-    "name": "percent1",
+    "w": "20%",
+    "cn": "20%",
+    "name": "percent2",
     "para": "第一段",
     "years": [
-     "2021"
+     "2015"
     ]
    },
    {
@@ -2342,6 +2161,15 @@
     "para": "第一段",
     "years": [
      "2016"
+    ]
+   },
+   {
+    "w": "33.3%",
+    "cn": "33.3%",
+    "name": "percent2",
+    "para": "第一段",
+    "years": [
+     "2012"
     ]
    },
    {
@@ -2381,30 +2209,12 @@
     ]
    },
    {
-    "w": "a small share",
-    "cn": "一个很小的比例",
-    "name": "percent2",
-    "para": "第一段",
-    "years": [
-     "2015"
-    ]
-   },
-   {
-    "w": "the lowest level",
-    "cn": "最低水平",
-    "name": "percent2",
-    "para": "第一段",
-    "years": [
-     "2012"
-    ]
-   },
-   {
-    "w": "15%",
-    "cn": "15%",
+    "w": "10%",
+    "cn": "10%",
     "name": "percent3",
     "para": "第一段",
     "years": [
-     "2016"
+     "2012"
     ]
    },
    {
@@ -2414,6 +2224,15 @@
     "para": "第一段",
     "years": [
      "2020"
+    ]
+   },
+   {
+    "w": "20%",
+    "cn": "20%",
+    "name": "percent3",
+    "para": "第一段",
+    "years": [
+     "2015"
     ]
    },
    {
@@ -2435,21 +2254,21 @@
     ]
    },
    {
+    "w": "33.2%",
+    "cn": "33.2%",
+    "name": "percent3",
+    "para": "第一段",
+    "years": [
+     "2026"
+    ]
+   },
+   {
     "w": "34.7%",
     "cn": "34.7%",
     "name": "percent3",
     "para": "第一段",
     "years": [
      "2025"
-    ]
-   },
-   {
-    "w": "37.2%",
-    "cn": "37.2%",
-    "name": "percent3",
-    "para": "第一段",
-    "years": [
-     "2026"
     ]
    },
    {
@@ -2462,39 +2281,30 @@
     ]
    },
    {
-    "w": "a modest level",
-    "cn": "中等水平",
+    "w": "9%",
+    "cn": "9%",
     "name": "percent3",
     "para": "第一段",
     "years": [
-     "2012"
+     "2016"
     ]
    },
    {
-    "w": "a smaller share",
-    "cn": "更小的比例",
-    "name": "percent3",
-    "para": "第一段",
-    "years": [
-     "2015"
-    ]
-   },
-   {
-    "w": "12%",
-    "cn": "12%",
+    "w": "15%",
+    "cn": "15%",
     "name": "percent4",
     "para": "第一段",
     "years": [
-     "2015"
+     "2016"
     ]
    },
    {
-    "w": "16.7%",
-    "cn": "16.7%",
+    "w": "16%",
+    "cn": "16%",
     "name": "percent4",
     "para": "第一段",
     "years": [
-     "2012"
+     "2021"
     ]
    },
    {
@@ -2504,6 +2314,24 @@
     "para": "第一段",
     "years": [
      "2020"
+    ]
+   },
+   {
+    "w": "20%",
+    "cn": "20%",
+    "name": "percent4",
+    "para": "第一段",
+    "years": [
+     "2015"
+    ]
+   },
+   {
+    "w": "31.2%",
+    "cn": "31.2%",
+    "name": "percent4",
+    "para": "第一段",
+    "years": [
+     "2026"
     ]
    },
    {
@@ -2525,39 +2353,12 @@
     ]
    },
    {
-    "w": "33.2%",
-    "cn": "33.2%",
-    "name": "percent4",
-    "para": "第一段",
-    "years": [
-     "2026"
-    ]
-   },
-   {
     "w": "8.4%",
     "cn": "8.4%",
     "name": "percent4",
     "para": "第一段",
     "years": [
      "2018"
-    ]
-   },
-   {
-    "w": "9%",
-    "cn": "9%",
-    "name": "percent4",
-    "para": "第一段",
-    "years": [
-     "2016"
-    ]
-   },
-   {
-    "w": "less than 16%",
-    "cn": "不足 16%",
-    "name": "percent4",
-    "para": "第一段",
-    "years": [
-     "2021"
     ]
    },
    {
@@ -2586,20 +2387,40 @@
     "years": [
      "2016"
     ]
-   },
+   }
+  ],
+  "其他": [
    {
-    "w": "8%",
-    "cn": "8%",
-    "name": "percent5",
+    "w": "80%",
+    "cn": "80%",
+    "name": "percent total",
     "para": "第一段",
     "years": [
      "2015"
     ]
    },
    {
-    "w": "a negligible share",
-    "cn": "微不足道的比例",
-    "name": "percent5",
+    "w": "85%",
+    "cn": "85%",
+    "name": "percent total",
+    "para": "第一段",
+    "years": [
+     "2016"
+    ]
+   },
+   {
+    "w": "86.9%",
+    "cn": "86.9%",
+    "name": "percent total",
+    "para": "第一段",
+    "years": [
+     "2018"
+    ]
+   },
+   {
+    "w": "97.8%",
+    "cn": "97.8%",
+    "name": "percent total",
     "para": "第一段",
     "years": [
      "2020"

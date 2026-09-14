@@ -108,7 +108,7 @@
     "items": 1,
     "trend": "单线持续升",
     "type": "动态",
-    "hint": "居民健康素养：一条线 + steady upward trend / plateaued",
+    "hint": "居民健康素养：一条上升线，2016 年后明显加快（先慢后快）",
     "pattern": "单线上升",
     "group": "动态图 · 单线上升（只有一条线，别硬写对比）"
    },
@@ -145,7 +145,7 @@
    {
     "year": "2012",
     "chart": "柱状 bar",
-    "items": 4,
+    "items": 3,
     "trend": "分布比高低",
     "type": "静态",
     "hint": "不同年龄段满意度：用 accounts for / the largest share",
@@ -155,7 +155,7 @@
    {
     "year": "2015",
     "chart": "饼图 pie",
-    "items": 5,
+    "items": 4,
     "trend": "占比分布",
     "type": "静态",
     "hint": "春节花销比例：largest share / middle group / small proportions",
@@ -175,7 +175,7 @@
    {
     "year": "2018",
     "chart": "饼图 pie",
-    "items": 4,
+    "items": 5,
     "trend": "占比分布",
     "type": "静态",
     "hint": "选餐厅关注因素：ditto",
@@ -228,7 +228,7 @@
     "items": 4,
     "trend": "占比分布",
     "type": "静态",
-    "hint": "儿童户外活动益处：满足好奇心 54.6% / 促进观察力 54.5% / 强身健体 37.2% / 增强亲子互动 33.2%（用 largest share / follows closely / In contrast）",
+    "hint": "儿童户外活动益处：满足好奇心 54.6% / 促进观察力 54.5% / 强身健体 33.2% / 增强亲子互动 31.2%",
     "pattern": "占比分布",
     "group": "静态图 · 占比分布（只比比例，用 largest share / middle group / small proportions）"
    }
@@ -299,6 +299,18 @@
      "cn": "再仔细看，其余四个类别的占比其实相差不大。",
      "tag": "均衡",
      "freq": 1
+    },
+    {
+     "en": "{{item4}} comes last, at {{percent4}}.",
+     "cn": "{{item4}} 排在最后，占 {{percent4}}。",
+     "freq": 3,
+     "tag": "长尾"
+    },
+    {
+     "en": "The gap between the largest and smallest categories is wide.",
+     "cn": "最大类别与最小类别之间的差距很大。",
+     "freq": 2,
+     "tag": "差距"
     }
    ],
    "tips": [
@@ -456,6 +468,30 @@
      "cn": "{{time1}} 之后，{{item3}} 一直稳定在 {{num5}} 附近。",
      "tag": "平稳",
      "freq": 2
+    },
+    {
+     "en": "The gap between the two widened over the period.",
+     "cn": "两者之间的差距在这一时期拉大了。",
+     "freq": 3,
+     "tag": "差距"
+    },
+    {
+     "en": "Growth was slow at first and then sped up.",
+     "cn": "增长起初缓慢，后来明显加快。",
+     "freq": 3,
+     "tag": "加速"
+    },
+    {
+     "en": "The two groups moved in opposite directions.",
+     "cn": "两组朝相反的方向变化。",
+     "freq": 3,
+     "tag": "反差"
+    },
+    {
+     "en": "The figure more than doubled over the period.",
+     "cn": "这一数字在该时期翻了一倍多。",
+     "freq": 2,
+     "tag": "倍数"
     }
    ],
    "tips": [
@@ -599,8 +635,8 @@
     {
      "label": "② 同向不同速（都在涨，快慢不同）",
      "years": "2010 · 2017 · 2022",
-     "en": "The {{chart}} chart tracks how {{topic}} changed over the period. Both rose, but {{item1}} climbed from {{num1}} to {{num2}} while {{item2}} only went from {{num3}} to {{num4}}.",
-     "cn": "该 {{chart}} 图记录了这一时期 {{topic}} 的变化。两者都在上升，但 {{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 仅从 {{num3}} 升到 {{num4}}。",
+     "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}. Both rose, but {{item1}} climbed from {{num1}} to {{num2}} while {{item2}} only went from {{num3}} to {{num4}}.",
+     "cn": "该 {{chart}} 图记录了{{time1}} 到 {{time2}} 期间 {{topic}} 的变化。两者都在上升，但 {{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 仅从 {{num3}} 升到 {{num4}}。",
      "struct": [
       [
        [
@@ -612,7 +648,7 @@
         "p"
        ],
        [
-        " how {{topic}} changed over the period",
+        " how {{topic}} changed from {{time1}} to {{time2}}",
         "o"
        ],
        [
@@ -1128,6 +1164,12 @@
      "cn": "寿命延长让家庭开始考虑老年人怎么度过日常。",
      "tag": "养老 · 2025",
      "freq": 1
+    },
+    {
+     "en": "What people want from a job has changed: pay alone no longer keeps them satisfied.",
+     "cn": "人们对工作的要求变了：只靠工资已经留不住人。",
+     "freq": 2,
+     "tag": "职场 · 2012"
     }
    ],
    "note": "套用示例：2012 员工满意度 → 第 2、3 句（工作稳定、换工作更频繁）；2016 旅游目的 → 第 4、5 句（消费升级、出行便利）；2025 老年休闲 → 第 6 句 + 第 1 句。"
@@ -1646,6 +1688,18 @@
      "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
      "tag": "个人 · 2020/2021",
      "freq": 2
+    },
+    {
+     "en": "Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.",
+     "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
+     "freq": 3,
+     "tag": "企业 · 2012"
+    },
+    {
+     "en": "A company that ignores this gap will lose the very people it most depends on.",
+     "cn": "忽视这一差距的公司，会失去它最依赖的那批人。",
+     "freq": 2,
+     "tag": "企业 · 2012"
     }
    ],
    "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。"
@@ -1787,5 +1841,6 @@
   "没有整句照抄题干 directions",
   "开头没有 \"With the development of…\" 这类空话",
   "拼写与大小写：句首字母、专有名词、专名首字母"
- ]
+ ],
+ "_plan_ver": "plan-2026-09-15d"
 }

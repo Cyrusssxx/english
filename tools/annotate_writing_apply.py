@@ -43,6 +43,18 @@ def paras(t):
     return [p.strip() for p in re.split(r'\n\s*\n', (t or '').strip()) if p.strip()]
 
 
+# 主谓一致会让同一个模板句出现 come/comes、is/are 等差异，比对前先归一（只影响匹配，不改内容）
+NORM = {}
+for _sg, _pl in [('comes', 'come'), ('takes', 'take'), ('is', 'are'), ('has', 'have'), ('serves', 'serve'),
+                 ('teaches', 'teach'), ('brings', 'bring'), ('reaches', 'reach'), ('matters', 'matter'),
+                 ('goes', 'go'), ('accounts', 'account')]:
+    NORM[_pl] = _sg
+
+
+def norm_toks(toks):
+    return [NORM.get(x, x) for x in toks]
+
+
 def ref_tokens(text):
     '''模板句 → (token 列表, 占位符边界集合)。占位符被抽掉，边界处记录「此处原本是槽」。'''
     toks, holes = [], set()
@@ -52,7 +64,7 @@ def ref_tokens(text):
         holes.add(len(toks))          # 在 toks[b-1] 与 toks[b] 之间有一个 {{}}
         pos = m.end()
     toks.extend(t.lower() for t in TOK_RE.findall(text[pos:]))
-    return toks, holes
+    return norm_toks(toks), holes
 
 
 def build_pool(tpl):
@@ -63,6 +75,10 @@ def build_pool(tpl):
         for i, s in enumerate(en_sents(sec.get('en'))):
             toks, holes = ref_tokens(s)
             pool.append((toks, holes, '%s · 模板第%d句' % (title, i + 1), 'tpl'))
+        for sk in (sec.get('skeletons') or []):         # 走势骨架（动态图 ①②③）也要进参考池
+            for i, s in enumerate(en_sents(sk.get('en'))):
+                toks, holes = ref_tokens(s)
+                pool.append((toks, holes, '%s · %s 第%d句' % (title, sk.get('label', '走势骨架'), i + 1), 'tpl'))
         for i, s in enumerate(sec.get('sentences', [])):
             toks, holes = ref_tokens(s.get('en', ''))
             pool.append((toks, holes, '%s · 功能句%d' % (title, i + 1), 'func'))
@@ -90,7 +106,9 @@ def best_ref(demo_toks, pool):
         sm = difflib.SequenceMatcher(None, demo_toks, toks, autojunk=False)
         matched = match_stats(sm)
         ref_cov = matched / len(toks)
-        if matched >= 4 and matched / max(len(demo_toks), 1) >= 0.25:
+        cov = matched / max(len(demo_toks), 1)
+        ok = (matched >= 4 and cov >= 0.25) or (matched >= 3 and cov >= 0.40)   # 短模板句放宽（如「X comes last, at Y」）
+        if ok:
             cands.append((matched / max(len(demo_toks), 1), matched, ref_cov, holes, label, kind, sm))
     if not cands:
         return 0.0, 0, set(), '自写句（模板未覆盖）', 'own', 0, None
@@ -241,7 +259,7 @@ def main():
             use_cn = len(cns) == len(sents)
             pre = {'wc': wc(para), 'sents': []}
             for si, s in enumerate(sents):
-                toks = [t.lower() for t in TOK_RE.findall(s)]
+                toks = norm_toks([t.lower() for t in TOK_RE.findall(s)])
                 cov, matched, holes, label, kind, ref_len, sm = best_ref(toks, pool)
                 if sm is None:
                     kinds = ['o'] * len(toks)

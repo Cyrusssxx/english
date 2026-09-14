@@ -76,6 +76,35 @@ def apply_skeleton(TPL, sid, year):
 
 ALIAS = {'xx': 'chart', '图表': 'chart'}
 
+# 主谓一致：只有「复数槽位值」**正后方紧跟**的谓语才需要改（v2 曾产出 "brands has moved" / "features takes"）
+PL_LEAD = [('has', 'have'), ('is', 'are'), ('serves', 'serve'), ('takes', 'take'), ('comes', 'come'),
+           ('teaches', 'teach'), ('brings', 'bring'), ('reaches', 'reach'), ('matters', 'matter'),
+           ('goes', 'go'), ('account for', 'account for'), ('accounts for', 'account for')]
+PL_ADV = r'(?:(?:now|also|still|only|usually|often|alone)\s+)?'
+# 少数句子里代词也指代主题（仅此两处模板）
+PL_PHR = [('so that it reaches', 'so that they reach'),
+          ('instead of treating it as an extra', 'instead of treating them as an extra')]
+
+
+def finalize(s, slots, pl_values):
+    """① 表格图别写成 "table chart"；② 复数槽位值后紧跟的谓语改复数（别的谓语一律不动）"""
+    s = s.replace('table chart', 'table')
+    for k, v in slots.items():
+        if not v or v not in (pl_values or []):
+            continue
+        i = s.lower().find(v.lower())        # 句首槽位会被 fill() 首字母大写，必须大小写不敏感定位
+        if i < 0:
+            continue
+        head, tail = s[:i + len(v)], s[i + len(v):]
+        for a, b in PL_LEAD:
+            tail = re.sub(r'^(\s+' + PL_ADV + r')' + re.escape(a) + r'\b',
+                          lambda m: m.group(1) + b, tail)
+        for a, b in PL_PHR:
+            tail = tail.replace(a, b)
+        s = head + tail
+    return s
+
+
 
 CJK = r'一-鿿　-〿＀-￯'
 
@@ -120,17 +149,20 @@ def pick(tpl, refs, slots, side):
 def build_year(y, spec, TPL):
     paras_en, paras_cn = [], []
     used_tpl, used_slot = [], []
+    pl_all = spec.get('pl') or []
     for pkey in ('p1', 'p2', 'p3'):
         pid, refs = spec[pkey][0], spec[pkey][1]
         slots = spec.get('slots_' + pkey, {})
         slots_cn = spec.get('slots_' + pkey + '_cn') or slots
         tpl = TPL[pid]
-        en = pick(tpl, refs, slots, 'en')
+        en = [finalize(x, slots, pl_all) for x in pick(tpl, refs, slots, 'en')]
         cn = [tighten_cn(x) for x in pick(tpl, refs, slots_cn, 'cn')]
         if pkey == 'p1' and slots.get('chart'):
             cw = slots['chart']
             en = [s.replace('line chart', cw + ' chart') for s in en]
             cn = [s.replace('折线图', slots_cn.get('chart', cw) + '图') for s in cn]
+        if slots.get('chart') == 'table':                     # 表格图：英文 "table chart" → "table"
+            cn = [s.replace('表格图', '表格') for s in cn]
         if spec.get('trend') and pkey == 'p1':
             en = [s.replace('did not move in a uniform direction', spec['trend']) for s in en]
             cn = [s.replace('并未朝着相同方向变化', spec.get('trend_cn', '')) for s in cn]
@@ -217,13 +249,20 @@ def auto_compose(y, sp, TPL):
 def main():
     TPL = load_templates()
     spec = json.load(open(os.path.join(ROOT, 'tools', 'apply_tpl_spec.json'), encoding='utf-8'))
+    plan_fp = os.path.join(ROOT, 'tools', 'apply_plan.json')
+    if os.path.exists(plan_fp):
+        spec = json.load(open(plan_fp, encoding='utf-8'))   # 人工挑句组（apply_plan.py 生成）
+        print('用人工方案 apply_plan.json（%d 年）' % len(spec))
     data = json.load(open(AP_FP, encoding='utf-8'))
     print('%-6s %-5s %s' % ('年份', '词数', '各段词数'))
     bad = []
     for y in sorted(spec):
         sp = dict(spec[y])
         apply_skeleton(TPL, sp['p1'][0], y)      # 动态图：先定这一年用哪套走势骨架
-        en, cn, used_tpl, used_slot = auto_compose(y, sp, TPL)
+        if sp.get('fixed'):
+            en, cn, used_tpl, used_slot = build_year(y, sp, TPL)   # 直接用人工挑的句组，不做组合搜索
+        else:
+            en, cn, used_tpl, used_slot = auto_compose(y, sp, TPL)
         data[y]['apply_en'] = en
         data[y]['apply_cn'] = cn
         data[y]['tpl_used'] = [{'id': a, 'refs': [list(r) for r in b]} for a, b in used_tpl]
