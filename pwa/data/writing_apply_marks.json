@@ -1084,18 +1084,18 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
@@ -1162,31 +1162,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "40%",
     "cn": "40%",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "the lowest level",
     "cn": "最低水平",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "a modest level",
     "cn": "中等水平",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "16.7%",
     "cn": "16.7%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "a still smaller share",
     "cn": "更小的比例",
     "para": "第一段"
@@ -2678,13 +2678,13 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
@@ -2756,31 +2756,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "80% of the total",
     "cn": "总额的 80%",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "a small share",
     "cn": "一个很小的比例",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "a smaller share",
     "cn": "更小的比例",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "12%",
     "cn": "12%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "8%",
     "cn": "8%",
     "para": "第一段"
@@ -3186,18 +3186,18 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
@@ -3264,31 +3264,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "37%",
     "cn": "37%",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "33%",
     "cn": "33%",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "15%",
     "cn": "15%",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "9%",
     "cn": "9%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "6%",
     "cn": "6%",
     "para": "第一段"
@@ -4300,18 +4300,18 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
-    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
+    "en": "{{item2}} and {{item3}} form the middle group, representing {{percent2}} and {{percent3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
@@ -4383,31 +4383,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "36.3%",
     "cn": "36.3%",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "26.8%",
     "cn": "26.8%",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "23.8%",
     "cn": "23.8%",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "8.4%",
     "cn": "8.4%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "4.7%",
     "cn": "4.7%",
     "para": "第一段"
@@ -5524,18 +5524,18 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
-    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
+    "en": "{{item2}} and {{item3}} form the middle group, representing {{percent2}} and {{percent3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
@@ -5602,31 +5602,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "59.5%",
     "cn": "59.5%",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "21.3%",
     "cn": "21.3%",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "17.0%",
     "cn": "17.0%",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "2.2%",
     "cn": "2.2%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "a negligible share",
     "cn": "微不足道的比例",
     "para": "第一段"
@@ -6090,13 +6090,13 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
@@ -6163,31 +6163,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "slightly over half of the respondents",
     "cn": "略超受访者半数",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "47.7%",
     "cn": "47.7%",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "23.9%",
     "cn": "23.9%",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "less than 16%",
     "cn": "不足 16%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "a still smaller share",
     "cn": "更小的比例",
     "para": "第一段"
@@ -7690,18 +7690,18 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
-    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
+    "en": "{{item2}} and {{item3}} form the middle group, representing {{percent2}} and {{percent3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
@@ -7768,31 +7768,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "91.3%",
     "cn": "91.3%",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "84.8%",
     "cn": "84.8%",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "54.4%",
     "cn": "54.4%",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "32.6%",
     "cn": "32.6%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "a still smaller share",
     "cn": "更小的比例",
     "para": "第一段"
@@ -8250,18 +8250,18 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
-    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
+    "en": "{{item2}} and {{item3}} form the middle group, representing {{percent2}} and {{percent3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
@@ -8328,31 +8328,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "90.8%",
     "cn": "90.8%",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "68.3%",
     "cn": "68.3%",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "34.7%",
     "cn": "34.7%",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "31.8%",
     "cn": "31.8%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "18.4%",
     "cn": "18.4%",
     "para": "第一段"
@@ -8810,18 +8810,18 @@
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
+    "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
+    "en": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。",
     "src": "静态图表第一段 · 功能句6"
    },
    {
@@ -8888,31 +8888,31 @@
     "para": "第一段"
    },
    {
-    "name": "pct1",
+    "name": "percent1",
     "en": "54.6%",
     "cn": "54.6%",
     "para": "第一段"
    },
    {
-    "name": "pct2",
+    "name": "percent2",
     "en": "54.5%",
     "cn": "54.5%",
     "para": "第一段"
    },
    {
-    "name": "pct3",
+    "name": "percent3",
     "en": "37.2%",
     "cn": "37.2%",
     "para": "第一段"
    },
    {
-    "name": "pct4",
+    "name": "percent4",
     "en": "33.2%",
     "cn": "33.2%",
     "para": "第一段"
    },
    {
-    "name": "pct5",
+    "name": "percent5",
     "en": "a still smaller share",
     "cn": "更小的比例",
     "para": "第一段"

@@ -180,24 +180,24 @@
           "rest": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。 · 9 年"
         },
         {
-          "name": "{{item1}} accounts for the largest share, at {{pct1}}. {{item1}} 所占比例最大，达到 {{pct1}}。 · 9 年",
-          "en": "{{item1}} accounts for the largest share, at {{pct1}}.",
-          "rest": "{{item1}} 所占比例最大，达到 {{pct1}}。 · 9 年"
+          "name": "{{item1}} accounts for the largest share, at {{percent1}}. {{item1}} 所占比例最大，达到 {{percent1}}。 · 9 年",
+          "en": "{{item1}} accounts for the largest share, at {{percent1}}.",
+          "rest": "{{item1}} 所占比例最大，达到 {{percent1}}。 · 9 年"
         },
         {
-          "name": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively. 就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。 · 6 年",
-          "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-          "rest": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。 · 6 年"
+          "name": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively. 就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。 · 6 年",
+          "en": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
+          "rest": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。 · 6 年"
         },
         {
-          "name": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}. 相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。 · 6 年",
-          "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-          "rest": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。 · 6 年"
+          "name": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}. 相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。 · 6 年",
+          "en": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
+          "rest": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。 · 6 年"
         },
         {
-          "name": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively. {{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。 · 4 年",
-          "en": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
-          "rest": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。 · 4 年"
+          "name": "{{item2}} and {{item3}} form the middle group, representing {{percent2}} and {{percent3}}, respectively. {{item2}} 和 {{item3}} 处于中间位置，分别占 {{percent2}} 和 {{percent3}}。 · 4 年",
+          "en": "{{item2}} and {{item3}} form the middle group, representing {{percent2}} and {{percent3}}, respectively.",
+          "rest": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{percent2}} 和 {{percent3}}。 · 4 年"
         }
       ]
     },
@@ -1235,214 +1235,214 @@
       "color": "#ef4444",
       "children": [
         {
-          "name": "a still smaller share 更小的比例 · pct5",
+          "name": "a still smaller share 更小的比例 · percent5",
           "en": "a still smaller share",
-          "rest": "更小的比例（{{pct5}}）"
+          "rest": "更小的比例（{{percent5}}）"
         },
         {
-          "name": "36.3% 36.3% · pct1",
+          "name": "36.3% 36.3% · percent1",
           "en": "36.3%",
-          "rest": "36.3%（{{pct1}}）"
+          "rest": "36.3%（{{percent1}}）"
         },
         {
-          "name": "37% 37% · pct1",
+          "name": "37% 37% · percent1",
           "en": "37%",
-          "rest": "37%（{{pct1}}）"
+          "rest": "37%（{{percent1}}）"
         },
         {
-          "name": "40% 40% · pct1",
+          "name": "40% 40% · percent1",
           "en": "40%",
-          "rest": "40%（{{pct1}}）"
+          "rest": "40%（{{percent1}}）"
         },
         {
-          "name": "54.6% 54.6% · pct1",
+          "name": "54.6% 54.6% · percent1",
           "en": "54.6%",
-          "rest": "54.6%（{{pct1}}）"
+          "rest": "54.6%（{{percent1}}）"
         },
         {
-          "name": "59.5% 59.5% · pct1",
+          "name": "59.5% 59.5% · percent1",
           "en": "59.5%",
-          "rest": "59.5%（{{pct1}}）"
+          "rest": "59.5%（{{percent1}}）"
         },
         {
-          "name": "80% of the total 总额的 80% · pct1",
+          "name": "80% of the total 总额的 80% · percent1",
           "en": "80% of the total",
-          "rest": "总额的 80%（{{pct1}}）"
+          "rest": "总额的 80%（{{percent1}}）"
         },
         {
-          "name": "90.8% 90.8% · pct1",
+          "name": "90.8% 90.8% · percent1",
           "en": "90.8%",
-          "rest": "90.8%（{{pct1}}）"
+          "rest": "90.8%（{{percent1}}）"
         },
         {
-          "name": "91.3% 91.3% · pct1",
+          "name": "91.3% 91.3% · percent1",
           "en": "91.3%",
-          "rest": "91.3%（{{pct1}}）"
+          "rest": "91.3%（{{percent1}}）"
         },
         {
-          "name": "slightly over half of the respondents 略超受访者半数 · pct1",
+          "name": "slightly over half of the respondents 略超受访者半数 · percent1",
           "en": "slightly over half of the respondents",
-          "rest": "略超受访者半数（{{pct1}}）"
+          "rest": "略超受访者半数（{{percent1}}）"
         },
         {
-          "name": "21.3% 21.3% · pct2",
+          "name": "21.3% 21.3% · percent2",
           "en": "21.3%",
-          "rest": "21.3%（{{pct2}}）"
+          "rest": "21.3%（{{percent2}}）"
         },
         {
-          "name": "26.8% 26.8% · pct2",
+          "name": "26.8% 26.8% · percent2",
           "en": "26.8%",
-          "rest": "26.8%（{{pct2}}）"
+          "rest": "26.8%（{{percent2}}）"
         },
         {
-          "name": "33% 33% · pct2",
+          "name": "33% 33% · percent2",
           "en": "33%",
-          "rest": "33%（{{pct2}}）"
+          "rest": "33%（{{percent2}}）"
         },
         {
-          "name": "47.7% 47.7% · pct2",
+          "name": "47.7% 47.7% · percent2",
           "en": "47.7%",
-          "rest": "47.7%（{{pct2}}）"
+          "rest": "47.7%（{{percent2}}）"
         },
         {
-          "name": "54.5% 54.5% · pct2",
+          "name": "54.5% 54.5% · percent2",
           "en": "54.5%",
-          "rest": "54.5%（{{pct2}}）"
+          "rest": "54.5%（{{percent2}}）"
         },
         {
-          "name": "68.3% 68.3% · pct2",
+          "name": "68.3% 68.3% · percent2",
           "en": "68.3%",
-          "rest": "68.3%（{{pct2}}）"
+          "rest": "68.3%（{{percent2}}）"
         },
         {
-          "name": "84.8% 84.8% · pct2",
+          "name": "84.8% 84.8% · percent2",
           "en": "84.8%",
-          "rest": "84.8%（{{pct2}}）"
+          "rest": "84.8%（{{percent2}}）"
         },
         {
-          "name": "a small share 一个很小的比例 · pct2",
+          "name": "a small share 一个很小的比例 · percent2",
           "en": "a small share",
-          "rest": "一个很小的比例（{{pct2}}）"
+          "rest": "一个很小的比例（{{percent2}}）"
         },
         {
-          "name": "the lowest level 最低水平 · pct2",
+          "name": "the lowest level 最低水平 · percent2",
           "en": "the lowest level",
-          "rest": "最低水平（{{pct2}}）"
+          "rest": "最低水平（{{percent2}}）"
         },
         {
-          "name": "15% 15% · pct3",
+          "name": "15% 15% · percent3",
           "en": "15%",
-          "rest": "15%（{{pct3}}）"
+          "rest": "15%（{{percent3}}）"
         },
         {
-          "name": "17.0% 17.0% · pct3",
+          "name": "17.0% 17.0% · percent3",
           "en": "17.0%",
-          "rest": "17.0%（{{pct3}}）"
+          "rest": "17.0%（{{percent3}}）"
         },
         {
-          "name": "23.8% 23.8% · pct3",
+          "name": "23.8% 23.8% · percent3",
           "en": "23.8%",
-          "rest": "23.8%（{{pct3}}）"
+          "rest": "23.8%（{{percent3}}）"
         },
         {
-          "name": "23.9% 23.9% · pct3",
+          "name": "23.9% 23.9% · percent3",
           "en": "23.9%",
-          "rest": "23.9%（{{pct3}}）"
+          "rest": "23.9%（{{percent3}}）"
         },
         {
-          "name": "34.7% 34.7% · pct3",
+          "name": "34.7% 34.7% · percent3",
           "en": "34.7%",
-          "rest": "34.7%（{{pct3}}）"
+          "rest": "34.7%（{{percent3}}）"
         },
         {
-          "name": "37.2% 37.2% · pct3",
+          "name": "37.2% 37.2% · percent3",
           "en": "37.2%",
-          "rest": "37.2%（{{pct3}}）"
+          "rest": "37.2%（{{percent3}}）"
         },
         {
-          "name": "54.4% 54.4% · pct3",
+          "name": "54.4% 54.4% · percent3",
           "en": "54.4%",
-          "rest": "54.4%（{{pct3}}）"
+          "rest": "54.4%（{{percent3}}）"
         },
         {
-          "name": "a modest level 中等水平 · pct3",
+          "name": "a modest level 中等水平 · percent3",
           "en": "a modest level",
-          "rest": "中等水平（{{pct3}}）"
+          "rest": "中等水平（{{percent3}}）"
         },
         {
-          "name": "a smaller share 更小的比例 · pct3",
+          "name": "a smaller share 更小的比例 · percent3",
           "en": "a smaller share",
-          "rest": "更小的比例（{{pct3}}）"
+          "rest": "更小的比例（{{percent3}}）"
         },
         {
-          "name": "12% 12% · pct4",
+          "name": "12% 12% · percent4",
           "en": "12%",
-          "rest": "12%（{{pct4}}）"
+          "rest": "12%（{{percent4}}）"
         },
         {
-          "name": "16.7% 16.7% · pct4",
+          "name": "16.7% 16.7% · percent4",
           "en": "16.7%",
-          "rest": "16.7%（{{pct4}}）"
+          "rest": "16.7%（{{percent4}}）"
         },
         {
-          "name": "2.2% 2.2% · pct4",
+          "name": "2.2% 2.2% · percent4",
           "en": "2.2%",
-          "rest": "2.2%（{{pct4}}）"
+          "rest": "2.2%（{{percent4}}）"
         },
         {
-          "name": "31.8% 31.8% · pct4",
+          "name": "31.8% 31.8% · percent4",
           "en": "31.8%",
-          "rest": "31.8%（{{pct4}}）"
+          "rest": "31.8%（{{percent4}}）"
         },
         {
-          "name": "32.6% 32.6% · pct4",
+          "name": "32.6% 32.6% · percent4",
           "en": "32.6%",
-          "rest": "32.6%（{{pct4}}）"
+          "rest": "32.6%（{{percent4}}）"
         },
         {
-          "name": "33.2% 33.2% · pct4",
+          "name": "33.2% 33.2% · percent4",
           "en": "33.2%",
-          "rest": "33.2%（{{pct4}}）"
+          "rest": "33.2%（{{percent4}}）"
         },
         {
-          "name": "8.4% 8.4% · pct4",
+          "name": "8.4% 8.4% · percent4",
           "en": "8.4%",
-          "rest": "8.4%（{{pct4}}）"
+          "rest": "8.4%（{{percent4}}）"
         },
         {
-          "name": "9% 9% · pct4",
+          "name": "9% 9% · percent4",
           "en": "9%",
-          "rest": "9%（{{pct4}}）"
+          "rest": "9%（{{percent4}}）"
         },
         {
-          "name": "less than 16% 不足 16% · pct4",
+          "name": "less than 16% 不足 16% · percent4",
           "en": "less than 16%",
-          "rest": "不足 16%（{{pct4}}）"
+          "rest": "不足 16%（{{percent4}}）"
         },
         {
-          "name": "18.4% 18.4% · pct5",
+          "name": "18.4% 18.4% · percent5",
           "en": "18.4%",
-          "rest": "18.4%（{{pct5}}）"
+          "rest": "18.4%（{{percent5}}）"
         },
         {
-          "name": "4.7% 4.7% · pct5",
+          "name": "4.7% 4.7% · percent5",
           "en": "4.7%",
-          "rest": "4.7%（{{pct5}}）"
+          "rest": "4.7%（{{percent5}}）"
         },
         {
-          "name": "6% 6% · pct5",
+          "name": "6% 6% · percent5",
           "en": "6%",
-          "rest": "6%（{{pct5}}）"
+          "rest": "6%（{{percent5}}）"
         },
         {
-          "name": "8% 8% · pct5",
+          "name": "8% 8% · percent5",
           "en": "8%",
-          "rest": "8%（{{pct5}}）"
+          "rest": "8%（{{percent5}}）"
         },
         {
-          "name": "a negligible share 微不足道的比例 · pct5",
+          "name": "a negligible share 微不足道的比例 · percent5",
           "en": "a negligible share",
-          "rest": "微不足道的比例（{{pct5}}）"
+          "rest": "微不足道的比例（{{percent5}}）"
         }
       ]
     }

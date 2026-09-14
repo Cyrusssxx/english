@@ -3637,6 +3637,48 @@ mark.ap-own {
 }
 .dark .ap-ph { color: #8fb4d8; background: rgba(124,192,255,.09); }
 
+/* ===== 占位符图例 ===== */
+.wr-legend {
+    margin: 0 0 20px;
+    padding: 12px 16px 14px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+.wr-legend-head {
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+    font-size: .9rem; font-weight: 700; color: var(--primary);
+    margin-bottom: 9px;
+}
+.wr-legend-tip { font-weight: 400; font-size: .8rem; color: var(--text-light); }
+.wr-legend-tip b { color: var(--primary); }
+.wr-legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 6px 18px;
+}
+.wr-legend-row {
+    display: flex; align-items: baseline; gap: 8px;
+    font-size: .86rem; line-height: 1.5;
+    padding: 3px 0;
+    border-bottom: 1px dashed var(--border);
+}
+.wr-legend-row:last-child { border-bottom: none; }
+.wr-legend-tok {
+    flex: 0 0 auto; min-width: 96px;
+    font-family: ui-monospace, Consolas, "Courier New", monospace;
+    font-size: .8rem; font-style: normal;
+    color: #62809f; background: rgba(29, 111, 208, .05);
+    border-radius: 4px; padding: 1px 5px;
+}
+html.dark .wr-legend-tok { color: #8fb4d8; background: rgba(124, 192, 255, .09); }
+.wr-legend-cn { flex: 0 0 auto; color: var(--text); }
+.wr-legend-eg { color: var(--text-light); font-size: .8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 640px) {
+    .wr-legend-row { flex-wrap: wrap; }
+    .wr-legend-eg { white-space: normal; }
+}
+
 /* 作文页整体字号放大一档（只作用于本页，不影响其它页面） */
 html.wr-zoom { font-size: 17px; }
 

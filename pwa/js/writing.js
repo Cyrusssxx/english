@@ -869,6 +869,16 @@ async function initWriting() {
     document.getElementById('wrDesc').textContent = it.desc || '';
     document.getElementById('wrRules').innerHTML = (it.rules || [])
         .map((r, i) => `<div class="wr-rule"><span class="wr-rule-no">${i + 1}</span>${wrEsc(r)}</div>`).join('');
+    // 占位符图例（{{ }} 里那些英文 token 分别代表什么）
+    const ph = it.placeholders || [];
+    document.getElementById('wrLegend').innerHTML = ph.length ? `
+        <div class="wr-legend-head">占位符图例<span class="wr-legend-tip">模板里 <b>{{ }}</b> 包住的英文，按你的题目替换；词句本身不要动</span></div>
+        <div class="wr-legend-grid">${ph.map(x => `
+            <div class="wr-legend-row">
+                <code class="wr-legend-tok">{{${wrEsc(x[0])}}}</code>
+                <span class="wr-legend-cn">${wrEsc(x[1])}</span>
+                <span class="wr-legend-eg">${wrEsc(x[2] || '')}</span>
+            </div>`).join('')}</div>` : '';
 
     // 图表适配表
     const g = WR.chart_guide || {};

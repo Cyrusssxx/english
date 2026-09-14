@@ -1,5 +1,30 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-14 重写] 作文模板全面优化（去生硬）+ 占位符图例 + pct→percent
+
+### 一、占位符：顶部图例 + `pct` → `percent`
+- `intro.placeholders` 新增 9 条图例（topic / item1~5 / percent1~5 / percent total / num1~6 / num range / time1~6 / chart / xx），页首渲染成 `.wr-legend` 卡片（token 等宽芯片 + 中文含义 + 例句）。
+- `pct1~pct5` / `pct total` 全量改名 `percent1~5` / `percent total`（670 处）：4 个 data 文件 + `phrasebook.json` + `nearmap.js` 内联副本 + 生成器（`apply_tpl_spec.json`、`add_writing_struct.py`、`build_writing_patterns.py`）。
+
+### 二、9 个模板 section 全部重写（量化验收线）
+定下的验收线：**单句 ≤22 词、每段骨架 ≤45 词、三段合计 150~180 词、无讲义腔、每段至少一半内容针对具体图表**。
+- 删掉的讲义腔（黑名单式清理）：`did not move in a uniform direction`、`during the periods presented`、`laid a solid material foundation for`、`Seen in this light … is no coincidence but a natural consequence of`、`concerted efforts from all sectors of society`、`well-informed choices in light of their own circumstances`、`the one-way delivery of content`、`strengthen their capacity for self-management` 等。
+- **第一段**：`items associated with {{topic}}` 这类不是人话的表达换成 `shows how {{topic}} is distributed among the categories` / `tracks how {{topic}} changed from time1 to time2`；静态 4 句 38 词、动态 3 句 34 词。
+- **第二段（结构性改动）**：原来 5 个话题段各是一整段 91~98 词、**没有可选句**，只能整段硬套。现在每段压到 **33~42 词骨架 + 8 条可选句池**，并在 tips 里给出「骨架 + 句池挑 1~2 句 ≈ 55~65 词」的拼装口径。
+- **修掉重复**：原 `para2_env` 与 `para2_sports` 是同一段的换词版（四个分句结构完全一致）。现在环保讲「意识提升 + 条件改善」，体育讲「久坐 + 健康支出 + 观念变化」，骨架句完全不同。
+- **第三段**：原来 80 词「政府/媒体/个人」万能三连击；现在 **31~32 词骨架 + 8 条句池**，并在 tips 里明确「主体三选二即可，不必政府、媒体、个人全写一遍——那是最像模板的写法」。
+- 每段新增/改写的 `note`（💡）给出具体的套用示例与「同向怎么改」「拆句怎么拆」的操作说明。
+- 实测拼装：`chart_dynamic + para2_economy + para3_positive` = **183 词**；`chart_static + para2_env + para3_negative` = **189 词**（骨架 + 每段 2 句池）。
+- 主干结构标注按新句重写（`tools/add_writing_struct.py` 的 S/P 字典由脚本按新模板重新生成，片段拼接断言全通过，脚本重跑幂等）。
+
+### 三、待办（下一批：真题示范）
+- `chart_guide.table` 按年份的 hint 未动；**17 篇真题套用示范文仍由旧模板生成**，因此示范区仍能看到旧句式（已验证：9 个讲义腔禁词只存在于示范区，模板卡与页首全干净）。作者说「真题示范等会搞」，到时重跑 `build_apply_from_templates.py → annotate_writing_apply.py → build_writing_patterns.py` 即可同步（句型索引与熟词短语页同批更新）。
+
+### 验证
+- jsdom **21/21 通过**：图例 9 行且 token 与数据一致、percent 新名生效、规则文案更新、9 张卡渲染、模板卡+页首无讲义腔、残留只在示范区、每卡 8 条句池、主干标注对齐（79 处 trunk）、精句弹窗显示新词组、三段合计 183/189 词落在验收线内、句池单句最大 17 词、骨架最大 42 词、划词高亮与主干开关正常、图例样式与紫色主干在位。
+- 数据侧自查（合并脚本内置）问题数 **0**：无超长句、无禁词。
+- SW en2-bfb78ba3。
+
 ## [2026-09-14 重做2] 划词浮条（408 同款）+ 真题套用示范字号/数字字体 + 占位符英文化 + 主干改紫
 
 ### 一、划词高亮改成「浮条」交互（上一版吸顶工具条作废）

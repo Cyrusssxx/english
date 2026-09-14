@@ -1,13 +1,61 @@
 {
  "intro": {
   "title": "考研英语二 · 作文模板库",
-  "desc": "大作文（图表作文）与小作文通用模板。模板正文保持原样，蓝色占位符按题目替换。核心用法：不要整段硬套——按题目结构从「功能句库」挑 2~4 句拼接，控制字数、自然过渡。",
+  "desc": "大作文（图表作文）与小作文通用模板。先认占位符，再按「认图 → 数事物 → 挑走势」三步选句：骨架句给结构，功能句池给变化——不要整段硬套，按提示挑句拼装。",
   "rules": [
-   "图表类型决定第一句：柱状 bar chart / 饼图 pie chart / 折线 line chart / 表格 table",
-   "事物个数决定选句：1 个事物用单句；2 个用对比句（while / By contrast）；3 个以上用分组句（form the middle group）",
-   "走势决定动词：同向上升用 rose / climbed；下降用 fell / declined；一升一降用 By contrast 转折；单线平稳用 plateaued / steady upward trend",
-   "第二段按话题选（经济 / 校园 / 环境 / 体育 / 文化），四句左右即可",
-   "第三段用正面或负面其一，主体词随题替换（政府 / 商家 / 学校 / 媒体）"
+   "认图：柱状 bar chart / 饼图 pie chart / 折线 line chart / 表格 table——图表类型决定首句怎么写",
+   "数事物：1 个用单句；2 个用对比句（while / By contrast）；3 个以上先分组再写（最大 / 中间两个 / 其余）",
+   "挑走势动词：上升 rose / climbed；下降 fell / declined；一升一降才用 By contrast；平稳用 held steady / plateaued",
+   "第二段（原因）：骨架句 + 句池挑 1~2 句 ≈ 55~65 词，尽量留一句回扣图表数字",
+   "第三段（建议）：正面或负面选一版，骨架句 + 句池挑 1~2 句 ≈ 50~60 词",
+   "字数核算：三段合计 150~180 词最稳（考研要求 150+）。宁可少写一句，也不要超"
+  ],
+  "placeholders": [
+   [
+    "topic",
+    "这一题的题相关词（题眼）",
+    "mobile phone subscriptions / online shopping"
+   ],
+   [
+    "item1 ~ item5",
+    "图里要对比的第 1/2/3…个事物",
+    "China / Japan / the US"
+   ],
+   [
+    "percent1 ~ percent5",
+    "各事物对应的百分比",
+    "35% / 21.5% / 8.8%"
+   ],
+   [
+    "percent total",
+    "几个事物的合计占比",
+    "80%"
+   ],
+   [
+    "num1 ~ num6",
+    "具体数值",
+    "0.5 billion / 4 million"
+   ],
+   [
+    "num range",
+    "数值区间（讲波动幅度时用）",
+    "2 to 4 billion"
+   ],
+   [
+    "time1 ~ time6",
+    "时间点",
+    "2000 / 2008"
+   ],
+   [
+    "chart",
+    "图表类型名，跟着图换",
+    "bar chart / pie chart / line chart"
+   ],
+   [
+    "xx",
+    "中文行里图表类型的泛称",
+    "该图表的类型（柱状 / 饼）"
+   ]
   ]
  },
  "chart_guide": {
@@ -188,27 +236,27 @@
   "decisions": [
    {
     "k": "事物个数 = 1",
-    "v": "只写一句主体句 + 一句趋势句（如 From…to…, X rose from…to…, showing a steady upward trend.）。不要硬凑对比句。"
+    "v": "只写两句：一句给数值，一句给走势（From…to…, rose from…to…）。不要硬凑对比句。"
    },
    {
     "k": "事物个数 = 2",
-    "v": "用对比结构：While B holds…, A takes…；或 A rose from…, while B climbed from…（同向）；一升一降则 A climbed…, while B fell… 后接 By contrast。"
+    "v": "用对比结构：同向且速度不同 → While B rose slowly, A climbed sharply；一升一降 → A climbed…, while B fell…，后半句才用 By contrast。"
    },
    {
     "k": "事物个数 ≥ 3",
-    "v": "分组写法：最大项 accounts for the largest share at…，中间组 form the middle group, representing…, respectively，其余 make up relatively small proportions。"
+    "v": "先分组再写：最大项 takes the largest share at…，中间两个 come next at… and…，其余 account for only…。不要平铺五个数字。"
    },
    {
     "k": "走势 = 都升（速度不同）",
-    "v": "两事物各用 rose/climbed，加 while 表同向并列，末句用 both showed an upward trend 收束。"
+    "v": "两事物各用 rose / climbed，用 while 并列，收尾用 Both moved in the same direction, but at very different speeds。"
    },
    {
     "k": "走势 = 有升有降",
-    "v": "升用 rose/climbed，降用 fell/declined，衔接用 By contrast / while；切勿把下降写成上升。"
+    "v": "升用 rose / climbed，降用 fell / declined，衔接用 while 或 By contrast。切勿把下降写成上升。"
    },
    {
     "k": "走势 = 单线持续升",
-    "v": "单主体句 + plateaued around…（增速放缓）/ steady upward trend（持续上升）/ outpaced earlier gains（加速）。"
+    "v": "一句数值 + 一句走势：more than doubled（翻倍）/ held steady（平稳）/ moved within a narrow range（窄幅波动）。"
    }
   ]
  },
@@ -217,55 +265,47 @@
    "id": "chart_static",
    "group": "大作文 · 第一段（图表描述）",
    "title": "静态图表第一段",
-   "subtitle": "适用：饼图 / 柱状图中各类别的占比分布（只比比例，无时间变化）",
-   "en": "The {{chart}} chart presents an uneven distribution among the categories associated with {{topic}}. {{item1}} accounts for the largest share, at {{pct1}}. {{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively. In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-   "cn": "该 {{xx}} 图表呈现了与 {{topic}} 有关的不同类别之间不均衡的分布情况。{{item1}} 所占比例最大，达到 {{pct1}}。{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
-   "note": "chart 处按图型填 pie / bar；自行挑选几句、控制字数，不必全写。",
+   "subtitle": "适用：饼图 / 柱状图中各类别的占比分布（只比比例，没有时间变化）",
+   "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories. {{item1}} takes the largest share, at {{percent1}}. {{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}. By contrast, {{item4}} and {{item5}} account for only {{percent4}} and {{percent5}}.",
+   "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。{{item1}} 占比最高，为 {{percent1}}。其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。相比之下，{{item4}} 和 {{item5}} 仅占 {{percent4}} 和 {{percent5}}。",
+   "note": "{{chart}} 处按图型填 pie / bar / line；句池里挑 1~2 句替换骨架后半段，控制字数，不必全写。",
    "sentences": [
     {
-     "en": "As for {{item1}}, it accounts for {{pct1}}.",
-     "cn": "就 {{item1}} 而言，占比为 {{pct1}}。"
+     "en": "{{item1}} alone accounts for {{percent1}} of the total.",
+     "cn": "{{item1}} 一项就占了总量的 {{percent1}}。"
     },
     {
-     "en": "Turning to {{item1}}, it makes up {{pct1}} of the total.",
-     "cn": "看 {{item1}}，其占整体的 {{pct1}}。"
+     "en": "The top three categories — {{item1}}, {{item2}} and {{item3}} — make up {{percent1}}, {{percent2}} and {{percent3}}.",
+     "cn": "排名前三的类别——{{item1}}、{{item2}} 和 {{item3}}——分别占 {{percent1}}、{{percent2}} 和 {{percent3}}。"
     },
     {
-     "en": "Regarding {{item1}}, the share stands at {{pct1}}.",
-     "cn": "关于 {{item1}}，占比为 {{pct1}}。"
+     "en": "Only {{percent4}} goes to {{item4}}, and {{item5}} is even lower.",
+     "cn": "{{item4}} 只占 {{percent4}}，{{item5}} 更低。"
     },
     {
-     "en": "For {{item1}}, the proportion is {{pct1}}.",
-     "cn": "{{item1}} 的比例为 {{pct1}}。"
+     "en": "In other words, the first two categories take up more than half of {{topic}}.",
+     "cn": "换句话说，前两类占了 {{topic}} 的一半以上。"
     },
     {
-     "en": "In the case of {{item1}}, the slice reaches {{pct1}}.",
-     "cn": "{{item1}} 的扇区达到 {{pct1}}。"
+     "en": "A closer look shows that the four smaller categories are fairly evenly matched.",
+     "cn": "再仔细看，其余四个类别的占比其实相差不大。"
     },
     {
-     "en": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-     "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。"
+     "en": "While {{item1}} dominates the chart, the remaining categories are spread rather evenly.",
+     "cn": "虽然 {{item1}} 在图中占主导，其余类别的分布却比较平均。"
     },
     {
-     "en": "Compared with {{item2}} at {{pct2}}, {{item1}} comes in at {{pct1}}.",
-     "cn": "与处于 {{pct2}} 的 {{item2}} 相比，{{item1}} 为 {{pct1}}。"
+     "en": "This distribution suggests that {{topic}} is still concentrated in a few categories.",
+     "cn": "这种分布说明 {{topic}} 仍然集中在少数几类上。"
     },
     {
-     "en": "While {{item2}} holds {{pct2}}, {{item1}} takes {{pct1}}.",
-     "cn": "{{item2}} 占 {{pct2}}，而 {{item1}} 为 {{pct1}}。"
-    },
-    {
-     "en": "{{item1}} accounts for {{pct1}}, whereas {{item3}} posts {{pct3}}.",
-     "cn": "{{item1}} 占 {{pct1}}，而 {{item3}} 为 {{pct3}}。"
-    },
-    {
-     "en": "{{item1}} and {{item2}} together make up {{pct total}}, with individual shares of {{pct1}} and {{pct2}}.",
-     "cn": "{{item1}} 与 {{item2}} 合计为 {{pct total}}，单项占比分别为 {{pct1}} 与 {{pct2}}。"
+     "en": "Taken together, the three largest categories account for {{percent total}}.",
+     "cn": "把最大的三类加在一起，共占 {{percent total}}。"
     }
    ],
    "tips": [
-    "换词能力靠积累：后续可直接用翻译软件查词替换，不必死记。",
-    "图型英文先记住：柱状 bar chart、饼图 pie chart、折线 line chart、表格 table——把首句 This chart 改成 This xx chart。"
+    "静态图只比占比，别写时间——一旦出现年份，就改用动态第一段。",
+    "三个以上事物一定要先分组（最大 / 中间 / 其余），不要平铺五个数字。"
    ],
    "en_struct": [
     [
@@ -274,16 +314,12 @@
       "t"
      ],
      [
-      " presents",
+      " shows",
       "p"
      ],
      [
-      " an uneven distribution",
+      " how {{topic}} is distributed among the categories",
       "o"
-     ],
-     [
-      " among the categories associated with {{topic}}",
-      ""
      ],
      [
       ".",
@@ -296,7 +332,7 @@
       "t"
      ],
      [
-      " accounts for",
+      " takes",
       "p"
      ],
      [
@@ -304,7 +340,7 @@
       "o"
      ],
      [
-      ", at {{pct1}}",
+      ", at {{percent1}}",
       ""
      ],
      [
@@ -318,15 +354,11 @@
       "t"
      ],
      [
-      " form",
+      " come next",
       "p"
      ],
      [
-      " the middle group",
-      "o"
-     ],
-     [
-      ", representing {{pct2}} and {{pct3}}, respectively",
+      ", at {{percent2}} and {{percent3}}",
       ""
      ],
      [
@@ -336,7 +368,7 @@
     ],
     [
      [
-      "In contrast",
+      "By contrast",
       "trans"
      ],
      [
@@ -348,12 +380,12 @@
       "t"
      ],
      [
-      " make up",
+      " account for",
       "p"
      ],
      [
-      " relatively small proportions of {{pct4}} and {{pct5}}",
-      ""
+      " only {{percent4}} and {{percent5}}",
+      "o"
      ],
      [
       ".",
@@ -363,36 +395,28 @@
    ],
    "phrases": [
     [
-     "presents an uneven distribution",
-     "呈现出不均匀的分布"
+     "shows how … is distributed",
+     "显示…的分布情况"
     ],
     [
-     "associated with",
-     "与…相关的"
+     "takes the largest share",
+     "占据最大份额"
     ],
     [
-     "accounts for the largest share",
-     "所占比例最大"
+     "come next",
+     "紧随其后"
     ],
     [
-     "at 54.6%",
-     "达到某比例（at + 数字）"
+     "account for only",
+     "仅占"
     ],
     [
-     "form the middle group",
-     "处于中间位置"
+     "are fairly evenly matched",
+     "占比相差不大"
     ],
     [
-     "respectively",
-     "分别地（对应前面两个数字）"
-    ],
-    [
-     "make up relatively small proportions",
-     "占比较小"
-    ],
-    [
-     "In contrast",
-     "相比之下（引出对比）"
+     "is concentrated in",
+     "集中在…"
     ]
    ]
   },
@@ -401,60 +425,61 @@
    "group": "大作文 · 第一段（图表描述）",
    "title": "动态图表第一段",
    "subtitle": "适用：折线 / 柱状图中事物随时间变化（有起始年—终止年）",
-   "en": "The line chart shows that the items associated with {{topic}} did not move in a uniform direction during the periods presented. {{item1}} climbed from {{num1}} in {{time1}} to {{num2}} in {{time2}}, while {{item2}} rose from {{num3}} in {{time3}} to {{num4}} in {{time4}}. By contrast, {{item3}} fell from {{num5}} in {{time5}} to {{num6}} in {{time6}}.",
-   "cn": "该折线图表明，与 {{topic}} 有关的不同项目在相应时期内并未朝着相同方向变化。{{item1}} 由 {{time1}} 的 {{num1}} 上升至 {{time2}} 的 {{num2}}，{{item2}} 则从 {{time3}} 的 {{num3}} 增至 {{time4}} 的 {{num4}}。相比之下，{{item3}} 由 {{time5}} 的 {{num5}} 下降至 {{time6}} 的 {{num6}}。",
-   "note": "若所有事物同向，去掉 did not move in a uniform direction 改为 showed a similar upward/downward trend；只用 2 个事物时删去 By contrast 那句。",
+   "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} rose more slowly, from {{num3}} to {{num4}}. By contrast, {{item3}} fell from {{num5}} to {{num6}}.",
+   "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 上升较慢，从 {{num3}} 增至 {{num4}}。相比之下，{{item3}} 由 {{num5}} 降至 {{num6}}。",
+   "note": "所有事物同向时：删掉 By contrast 那句，把 fell 改成 rose more slowly，末句加 Both moved in the same direction, but at very different speeds. 只用 2 个事物时，删去第三句。",
    "sentences": [
     {
-     "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, showing a steady upward trend.",
-     "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，呈现稳定上升趋势。"
+     "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
+     "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。"
     },
     {
-     "en": "Over the same span, {{item2}} fell from {{num3}} to {{num4}}, indicating a clear decline.",
-     "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，表明明显下滑。"
+     "en": "Over the same period, {{item2}} fell from {{num3}} to {{num4}}, a clear decline.",
+     "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，降幅明显。"
     },
     {
-     "en": "By {{time2}}, {{item3}} plateaued around {{num5}}, and its growth slowed and stabilized.",
-     "cn": "到 {{time2}} 时，{{item3}} 在 {{num5}} 附近进入平台期，其增速放缓并趋于稳定。"
+     "en": "{{item3}} held steady at around {{num5}} after {{time1}}.",
+     "cn": "{{time1}} 之后，{{item3}} 一直稳定在 {{num5}} 附近。"
     },
     {
-     "en": "After {{time1}}, {{item1}} accelerated, and the increase from {{num1}} to {{num2}} outpaced earlier gains.",
-     "cn": "{{time1}} 之后，{{item1}} 出现加速，从 {{num1}} 到 {{num2}} 的增幅超过此前增幅。"
+     "en": "The increase in {{item1}} accelerated after {{time1}}.",
+     "cn": "{{time1}} 之后，{{item1}} 的增长明显加快。"
     },
     {
-     "en": "Volatility increased for {{item3}}, swings widened around {{num range}}, and short-term fluctuations became frequent.",
-     "cn": "{{item3}} 的波动性上升，在 {{num range}} 附近的振幅加大，短期起伏变得更为频繁。"
+     "en": "{{item3}} moved within a narrow range of {{num range}}, with no clear direction.",
+     "cn": "{{item3}} 在 {{num range}} 这个窄区间内波动，看不出明确方向。"
+    },
+    {
+     "en": "By {{time2}}, {{item1}} had more than doubled, reaching {{num2}}.",
+     "cn": "到 {{time2}} 时，{{item1}} 已经翻了一倍多，达到 {{num2}}。"
+    },
+    {
+     "en": "Both moved in the same direction, but at very different speeds.",
+     "cn": "两者方向一致，但速度快慢差别很大。"
+    },
+    {
+     "en": "One detail stands out: {{item1}} rose from {{num1}} to {{num2}} while {{item3}} went the other way.",
+     "cn": "有一点很突出：{{item1}} 从 {{num1}} 升到 {{num2}}，而 {{item3}} 恰恰相反。"
     }
    ],
    "tips": [
-    "同向专用词组：in a uniform direction（朝同一方向）、during the periods presented（在相应时期）。",
-    "两事物同向但速度不同：用 while 连接两个 rose/climbed 即可，无需 By contrast。"
+    "动态图必须有时间（{{time1}} → {{time2}}）；没有时间就改用静态第一段。",
+    "同向但速度不同 → 一个 climbed + 一个 rose more slowly，用 while 并列即可，不必用 By contrast。",
+    "只有一升一降时，才用 By contrast 转折。"
    ],
    "en_struct": [
     [
      [
-      "The line chart",
+      "The {{chart}} chart",
       "t"
      ],
      [
-      " shows",
+      " tracks",
       "p"
      ],
      [
-      " that",
-      "lead"
-     ],
-     [
-      " the items associated with {{topic}}",
-      "t"
-     ],
-     [
-      " did not move in a uniform direction",
-      "p"
-     ],
-     [
-      " during the periods presented",
-      ""
+      " how {{topic}} changed from {{time1}} to {{time2}}",
+      "o"
      ],
      [
       ".",
@@ -471,23 +496,23 @@
       "p"
      ],
      [
-      " from {{num1}} in {{time1}} to {{num2}} in {{time2}}",
-      ""
+      " from {{num1}} to {{num2}}",
+      "o"
      ],
      [
-      ", while",
+      ", while ",
       "trans"
      ],
      [
-      " {{item2}}",
+      "{{item2}}",
       "t"
      ],
      [
-      " rose",
+      " rose more slowly",
       "p"
      ],
      [
-      " from {{num3}} in {{time3}} to {{num4}} in {{time4}}",
+      ", from {{num3}} to {{num4}}",
       ""
      ],
      [
@@ -513,8 +538,8 @@
       "p"
      ],
      [
-      " from {{num5}} in {{time5}} to {{num6}} in {{time6}}",
-      ""
+      " from {{num5}} to {{num6}}",
+      "o"
      ],
      [
       ".",
@@ -524,44 +549,28 @@
    ],
    "phrases": [
     [
-     "shows that",
-     "表明（引出宾语从句）"
+     "tracks how … changed",
+     "记录…的变化"
     ],
     [
-     "associated with",
-     "与…相关的"
+     "a steady climb",
+     "稳步上升"
     ],
     [
-     "did not move in a uniform direction",
-     "变化方向并不一致（同向上升时改写）"
+     "over the same period",
+     "同一时期"
     ],
     [
-     "during the periods presented",
-     "在所示时期内"
+     "held steady at",
+     "稳定在"
     ],
     [
-     "climbed from … to …",
-     "从…攀升至…"
+     "more than doubled",
+     "翻了一倍多"
     ],
     [
-     "rose from … to …",
-     "从…上升至…"
-    ],
-    [
-     "over the same span",
-     "在同一时期"
-    ],
-    [
-     "while",
-     "而（一句内对比两事物）"
-    ],
-    [
-     "By contrast",
-     "相比之下（另起对比）"
-    ],
-    [
-     "the pace of growth differed sharply",
-     "增速差异显著"
+     "went the other way",
+     "走势相反"
     ]
    ]
   },
@@ -569,23 +578,56 @@
    "id": "para2_economy",
    "group": "大作文 · 第二段（原因分析）",
    "title": "经济类第二段",
-   "subtitle": "最热门话题：经济基础决定上层建筑，最容易与「国家发展、生活改善」挂钩",
-   "en": "Growing public attention to {{topic}} stems from its ability to meet practical needs in everyday life. Undoubtedly, the country's rapid economic growth has laid a solid material foundation for the emergence of {{topic}}. As the pace of life accelerates, individuals attach greater importance to convenience and efficiency and become increasingly willing to embrace new ways of living. Consequently, {{topic}} has gradually become integrated into everyday life, while its practical value has gained wider recognition. Seen in this light, the development of {{topic}} is no coincidence but a natural consequence of broader changes in social life.",
-   "cn": "{{topic}} 之所以受到越来越多关注，是因为它能够回应人们在现实生活中的实际需要。毫无疑问，国家经济的飞速发展，为 {{topic}} 的出现奠定了坚实的物质基础。随着生活节奏加快，个人开始更加重视便利和效率，也更愿意接受新的生活方式。{{topic}} 因此逐渐融入日常生活，其实际作用也得到更多认可。由此可见，{{topic}} 的发展并非偶然，而是社会生活发生变化后的自然结果。",
-   "note": "示例套用（2014 城乡人口）：城乡人口变化之所以受到越来越多关注，是因为它能够反映人们在经济发展中的生活选择……城镇化因此逐渐融入国家发展进程。",
-   "sentences": [],
+   "subtitle": "经济 / 消费 / 科技类：挂在收入、成本、生活方式上，最好写",
+   "en": "The trend in the chart is closely tied to how people live and spend today. {{item1}} rose from {{num1}} in {{time1}} to {{num2}} in {{time2}}, and that change did not happen by itself.",
+   "cn": "图中的变化与人们当下的生活和消费方式密切相关。{{item1}} 从 {{time1}} 的 {{num1}} 升到 {{time2}} 的 {{num2}}，而这种变化并非凭空发生。",
+   "note": "示例套用（2014 城乡人口）：骨架句写「城乡人口的变化与人们的生活选择有关」，再从句池挑「城市扩张带来需求」和「收入提高让选择变多」两句，本段约 58 词。",
+   "sentences": [
+    {
+     "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+     "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。"
+    },
+    {
+     "en": "The price of {{topic}} has fallen sharply, putting it within reach of ordinary families.",
+     "cn": "{{topic}} 的价格大幅下降，普通家庭也消费得起。"
+    },
+    {
+     "en": "Online platforms and mobile payment have cut the time and cost of getting {{topic}}.",
+     "cn": "线上平台和移动支付降低了获得 {{topic}} 的时间和成本。"
+    },
+    {
+     "en": "Cities have grown quickly, and demand for {{topic}} has grown with them.",
+     "cn": "城市快速扩张，{{topic}} 的需求也随之增长。"
+    },
+    {
+     "en": "Young people are the first to try new things, and their choices soon spread.",
+     "cn": "年轻人最先尝试新事物，他们的选择很快扩散开来。"
+    },
+    {
+     "en": "Government support — from tax breaks to better infrastructure — has also helped.",
+     "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。"
+    },
+    {
+     "en": "Once {{item1}} reached {{num2}}, growth became hard to stop.",
+     "cn": "{{item1}} 一旦达到 {{num2}}，增长就很难再停下来。"
+    },
+    {
+     "en": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
+     "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。"
+    }
+   ],
    "en_struct": [
     [
      [
-      "Growing public attention to {{topic}}",
+      "The trend in the chart",
       "t"
      ],
      [
-      " stems from",
+      " is closely tied to",
       "p"
      ],
      [
-      " its ability to meet practical needs in everyday life",
+      " how people live and spend today",
       "o"
      ],
      [
@@ -595,114 +637,16 @@
     ],
     [
      [
-      "Undoubtedly",
-      ""
-     ],
-     [
-      ", the country's rapid economic growth",
+      "{{item1}}",
       "t"
      ],
      [
-      " has laid",
+      " rose from {{num1}} in {{time1}} to {{num2}} in {{time2}}",
       "p"
      ],
      [
-      " a solid material foundation",
-      "o"
-     ],
-     [
-      " for the emergence of {{topic}}",
+      ", and that change did not happen by itself",
       ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "As",
-      "lead"
-     ],
-     [
-      " the pace of life accelerates",
-      ""
-     ],
-     [
-      ", individuals",
-      "t"
-     ],
-     [
-      " attach",
-      "p"
-     ],
-     [
-      " greater importance to convenience and efficiency",
-      "o"
-     ],
-     [
-      " and become increasingly willing to embrace new ways of living",
-      "p"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Consequently",
-      "caus"
-     ],
-     [
-      ", ",
-      ""
-     ],
-     [
-      "{{topic}}",
-      "t"
-     ],
-     [
-      " has gradually become integrated into",
-      "p"
-     ],
-     [
-      " everyday life",
-      "o"
-     ],
-     [
-      ", while",
-      "trans"
-     ],
-     [
-      " its practical value",
-      "t"
-     ],
-     [
-      " has gained",
-      "p"
-     ],
-     [
-      " wider recognition",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Seen in this light",
-      ""
-     ],
-     [
-      ", the development of {{topic}}",
-      "t"
-     ],
-     [
-      " is no coincidence but a natural consequence of broader changes in social life",
-      "p"
      ],
      [
       ".",
@@ -712,84 +656,70 @@
    ],
    "phrases": [
     [
-     "Growing public attention to …",
-     "公众对…日益关注"
+     "is closely tied to",
+     "与…密切相关"
     ],
     [
-     "stems from",
-     "源于"
+     "moved from a luxury to an everyday necessity",
+     "从奢侈品变成日常必需品"
     ],
     [
-     "meet practical needs",
-     "满足实际需求"
+     "within reach of ordinary families",
+     "普通家庭负担得起"
     ],
     [
-     "lay a solid material foundation for",
-     "为…奠定坚实的物质基础"
+     "cut the time and cost of",
+     "降低…的时间和成本"
     ],
     [
-     "the emergence of …",
-     "…的出现"
-    ],
-    [
-     "as the pace of life accelerates",
-     "随着生活节奏加快"
-    ],
-    [
-     "attach greater importance to",
-     "更加重视"
-    ],
-    [
-     "become integrated into everyday life",
-     "融入日常生活"
-    ],
-    [
-     "gain wider recognition",
-     "得到更广泛认可"
-    ],
-    [
-     "Seen in this light",
-     "由此观之（总结句开头）"
+     "a passing fashion",
+     "一时风尚"
     ]
+   ],
+   "tips": [
+    "骨架句 33 词 + 句池挑 1~2 句 ≈ 55~65 词，第二段到此为止，不要贪多。",
+    "留一句回扣图表数字（第 7 句那种），阅卷人一眼就能看到你用了图里的数据。"
    ]
   },
   {
    "id": "para2_campus",
    "group": "大作文 · 第二段（原因分析）",
    "title": "校园类第二段（对应英语一品质类）",
-   "subtitle": "含正面 / 负面两版，改几个词即可通用",
-   "en": "The influence of {{topic}} is not confined to a single action; rather, it continues to shape the way individuals handle everyday responsibilities. {{topic}} can enable individuals to approach routine tasks with greater maturity, preventing them from giving up too readily in the face of temporary difficulties. In this process, individuals gradually become less dependent on external reminders and begin to take responsibility for their own choices. Ultimately, {{topic}} can not only improve individuals' present conduct but also strengthen their capacity for self-management, thereby laying a solid foundation for their future growth.",
-   "cn": "{{topic}} 的作用，并不会局限于某一次行为，而会持续影响个人处理日常事务的方式。{{topic}} 能够使个人以更加成熟的态度处理日常任务，不因暂时困难就轻易放弃。在这一过程中，个人会逐步减少对外界提醒的依赖，并开始主动为自己的选择负责。最终，{{topic}} 不仅能够改善个人当下的行为表现，也会增强其自我管理能力，为今后的成长提供稳定支持。",
-   "negative_en": "The harmful influence of {{topic}} is not confined to a single action; rather, it can continue to disrupt the way individuals handle everyday responsibilities. {{topic}} can cause individuals to approach routine tasks with less commitment, making them more likely to give up when temporary difficulties arise. In this process, individuals may become increasingly dependent on external reminders and less willing to take responsibility for their own choices. Ultimately, {{topic}} can not only undermine individuals' present conduct but also weaken their capacity for self-management, thereby creating a persistent obstacle to future growth.",
-   "negative_cn": "{{topic}} 的消极影响，并不会局限于某一次行为，而会持续干扰个人处理日常事务的方式。{{topic}} 可能使个人以敷衍的态度处理日常任务，并在遇到暂时困难时轻易放弃。在这一过程中，个人可能越来越依赖外界提醒，也更不愿意为自己的选择负责。最终，{{topic}} 不仅会损害个人当下的行为表现，也会削弱其自我管理能力，从而长期阻碍个人成长。",
+   "subtitle": "校园 / 品质类（对应英语一品质题）：含正面、负面两版，改几个词即可切换",
+   "en": "Behind the numbers in the chart lies a change in how students spend their time. Habits built at this stage shape the way young people take responsibility later. {{topic}} is one of the clearest examples of that.",
+   "cn": "数字背后，是学生时间安排方式的变化。这个阶段养成的习惯，会影响他们日后承担责任的方式。{{topic}} 就是最清楚的例子之一。",
+   "negative_en": "Behind the numbers in the chart lies a problem that deserves attention. Habits formed at this stage are hard to change later, and the wrong ones carry a lasting cost. {{topic}} shows how easily that cost can build up.",
+   "negative_cn": "数字背后，是一个值得注意的问题。这个阶段形成的习惯日后很难改变，而不良习惯的代价会长期存在。{{topic}} 正说明这种代价有多容易累积。",
    "en_struct": [
     [
      [
-      "The influence of {{topic}}",
-      "t"
+      "Behind the numbers in the chart",
+      ""
      ],
      [
-      " is not confined to",
+      " lies",
       "p"
      ],
      [
-      " a single action",
-      "o"
-     ],
-     [
-      "; rather",
-      "trans"
-     ],
-     [
-      ", it",
+      " a change in how students spend their time",
       "t"
      ],
      [
-      " continues to shape",
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Habits built at this stage",
+      "t"
+     ],
+     [
+      " shape",
       "p"
      ],
      [
-      " the way individuals handle everyday responsibilities",
+      " the way young people take responsibility later",
       "o"
      ],
      [
@@ -803,80 +733,12 @@
       "t"
      ],
      [
-      " can enable",
+      " is",
       "p"
      ],
      [
-      " individuals to approach routine tasks with greater maturity",
+      " one of the clearest examples of that",
       "o"
-     ],
-     [
-      ", preventing them from giving up too readily in the face of temporary difficulties",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "In this process",
-      ""
-     ],
-     [
-      ", individuals",
-      "t"
-     ],
-     [
-      " gradually become",
-      "p"
-     ],
-     [
-      " less dependent on external reminders",
-      "o"
-     ],
-     [
-      " and begin to take responsibility for their own choices",
-      "p"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Ultimately",
-      ""
-     ],
-     [
-      ", {{topic}}",
-      "t"
-     ],
-     [
-      " can not only improve",
-      "p"
-     ],
-     [
-      " individuals' present conduct",
-      "o"
-     ],
-     [
-      " but also strengthen",
-      "p"
-     ],
-     [
-      " their capacity for self-management",
-      "o"
-     ],
-     [
-      ", thereby",
-      "caus"
-     ],
-     [
-      " laying a solid foundation for their future growth",
-      ""
      ],
      [
       ".",
@@ -886,75 +748,57 @@
    ],
    "phrases": [
     [
-     "is not confined to",
-     "不局限于"
+     "Behind the numbers in the chart lies …",
+     "数字背后是…"
     ],
     [
-     "shape the way sb handle …",
-     "塑造某人处理…的方式"
+     "Habits built at this stage",
+     "这个阶段养成的习惯"
     ],
     [
-     "enable sb to do sth",
-     "使某人能够做…"
+     "shape the way sb do sth",
+     "影响某人做事的方式"
     ],
     [
-     "approach routine tasks with greater maturity",
-     "更成熟地处理日常事务"
+     "have a part to play",
+     "需要参与、有作用"
     ],
     [
-     "prevent sb from giving up",
-     "防止某人放弃"
-    ],
-    [
-     "in the face of temporary difficulties",
-     "面对暂时的困难"
-    ],
-    [
-     "take responsibility for",
-     "为…承担责任"
-    ],
-    [
-     "not only … but also …",
-     "不仅…而且…（句子加长利器）"
-    ],
-    [
-     "strengthen the capacity for self-management",
-     "增强自我管理能力"
-    ],
-    [
-     "lay a solid foundation for future growth",
-     "为未来成长打下坚实基础"
+     "crowd out",
+     "挤占"
     ]
    ],
    "negative_struct": [
     [
      [
-      "The harmful influence of {{topic}}",
-      "t"
+      "Behind the numbers in the chart",
+      ""
      ],
      [
-      " is not confined to",
+      " lies",
       "p"
      ],
      [
-      " a single action",
-      "o"
-     ],
-     [
-      "; rather",
-      "trans"
-     ],
-     [
-      ", it",
+      " a problem that deserves attention",
       "t"
      ],
      [
-      " can continue to disrupt",
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Habits formed at this stage",
+      "t"
+     ],
+     [
+      " are hard to change later",
       "p"
      ],
      [
-      " the way individuals handle everyday responsibilities",
-      "o"
+      ", and the wrong ones carry a lasting cost",
+      ""
      ],
      [
       ".",
@@ -967,111 +811,77 @@
       "t"
      ],
      [
-      " can cause",
+      " shows",
       "p"
      ],
      [
-      " individuals to approach routine tasks with less commitment",
+      " how easily that cost can build up",
       "o"
-     ],
-     [
-      ", making them more likely to give up",
-      ""
-     ],
-     [
-      " when",
-      "lead"
-     ],
-     [
-      " temporary difficulties arise",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "In this process",
-      ""
-     ],
-     [
-      ", individuals",
-      "t"
-     ],
-     [
-      " may become",
-      "p"
-     ],
-     [
-      " increasingly dependent on external reminders and less willing to take responsibility for their own choices",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Ultimately",
-      ""
-     ],
-     [
-      ", {{topic}}",
-      "t"
-     ],
-     [
-      " can not only undermine",
-      "p"
-     ],
-     [
-      " individuals' present conduct",
-      "o"
-     ],
-     [
-      " but also weaken",
-      "p"
-     ],
-     [
-      " their capacity for self-management",
-      "o"
-     ],
-     [
-      ", thereby",
-      "caus"
-     ],
-     [
-      " creating a persistent obstacle to future growth",
-      ""
      ],
      [
       ".",
       ""
      ]
     ]
+   ],
+   "tips": [
+    "骨架句 37 词 + 句池挑 1~2 句 ≈ 55~65 词；正面、负面两版骨架只差几个词，改词即可切换，不必另背一段。",
+    "这一段最容易写空，尽量用一句具体场景（如「合作」那句）替代抽象概括。"
+   ],
+   "sentences": [
+    {
+     "en": "{{topic}} teaches students to plan their own time rather than wait to be told.",
+     "cn": "{{topic}} 让学生学会自己安排时间，而不是等人安排。"
+    },
+    {
+     "en": "It also builds the habit of finishing what has been started, even when it is boring.",
+     "cn": "它还能养成有始有终的习惯，哪怕过程枯燥。"
+    },
+    {
+     "en": "Students who take part in {{topic}} often work better with others.",
+     "cn": "参与 {{topic}} 的学生通常更善于与人合作。"
+    },
+    {
+     "en": "The skills involved — patience, self-control, persistence — matter long after school ends.",
+     "cn": "其中的耐心、自控和坚持，在离开学校很久之后仍然有用。"
+    },
+    {
+     "en": "On the other hand, too much of it can crowd out sleep and real conversation.",
+     "cn": "另一方面，过度投入会挤占睡眠和真实交流的时间。"
+    },
+    {
+     "en": "Without guidance, students may copy what their peers do instead of deciding for themselves.",
+     "cn": "缺少引导时，学生容易跟着同伴走，而不是自己判断。"
+    },
+    {
+     "en": "That is why schools and parents both have a part to play.",
+     "cn": "所以学校和家长都需要参与。"
+    },
+    {
+     "en": "Used well, {{topic}} is training for adult life rather than a way to fill time.",
+     "cn": "用得好的话，{{topic}} 是为成年生活做准备，而不是打发时间。"
+    }
    ]
   },
   {
    "id": "para2_env",
    "group": "大作文 · 第二段（原因分析）",
    "title": "环境生态类第二段",
-   "subtitle": "也可归入校园类，改几个词即可",
-   "en": "Changes reflected in {{topic}} are closely linked to rising public awareness of environmental protection and increasingly favorable conditions for environmental action. Improved environmental infrastructure makes it easier for people to participate in environmental protection, while a wider range of environmental practices enables different groups to make choices suited to their own circumstances. As environmental protection becomes increasingly integrated into everyday life, the number of people willing to take part in related initiatives will continue to grow. For this reason, {{topic}} not only reflects the continued advancement of ecological conservation but also demonstrates the growing acceptance of green living.",
-   "cn": "{{topic}} 所反映的变化，与公众环保意识的提高和公共环境条件的改善密切相关。更加完善的环保设施为人们参与环境保护提供了便利，而多样化的环保方式也使不同群体能够根据自身情况作出选择。随着环境保护逐渐融入日常生活，愿意参与相关行动的人数也会不断增加。正因如此，{{topic}} 不仅体现了生态文明建设的持续推进，也说明绿色生活正在得到更加广泛的认可。",
+   "subtitle": "环境生态类：挂在意识提升 + 条件改善上",
+   "en": "The change in the chart reflects something that has been building for years. People today are far more aware of environmental problems than they were in {{time1}}. They have gradually turned that awareness into action, and {{topic}} is part of the result.",
+   "cn": "图中的变化反映的是多年积累的结果。如今人们对环境问题的认识，比 {{time1}} 时清楚得多。他们逐渐把这种认识变成了行动，{{topic}} 就是其中的一部分。",
    "en_struct": [
     [
      [
-      "Changes reflected in {{topic}}",
+      "The change in the chart",
       "t"
      ],
      [
-      " are closely linked to",
+      " reflects",
       "p"
      ],
      [
-      " rising public awareness of environmental protection and increasingly favorable conditions for environmental action",
+      " something that has been building for years",
       "o"
      ],
      [
@@ -1081,32 +891,20 @@
     ],
     [
      [
-      "Improved environmental infrastructure",
+      "People today",
       "t"
      ],
      [
-      " makes it easier",
+      " are far more aware of",
       "p"
      ],
      [
-      " for people to participate in environmental protection",
+      " environmental problems",
       "o"
      ],
      [
-      ", while",
-      "trans"
-     ],
-     [
-      " a wider range of environmental practices",
-      "t"
-     ],
-     [
-      " enables",
-      "p"
-     ],
-     [
-      " different groups to make choices suited to their own circumstances",
-      "o"
+      " than they were in {{time1}}",
+      ""
      ],
      [
       ".",
@@ -1115,54 +913,24 @@
     ],
     [
      [
-      "As",
-      "lead"
-     ],
-     [
-      " environmental protection becomes increasingly integrated into everyday life",
-      ""
-     ],
-     [
-      ", the number of people willing to take part in related initiatives",
+      "They",
       "t"
      ],
      [
-      " will continue to grow",
+      " have gradually turned",
       "p"
      ],
      [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "For this reason",
-      "caus"
-     ],
-     [
-      ", ",
-      ""
-     ],
-     [
-      "{{topic}}",
-      "t"
-     ],
-     [
-      " not only reflects",
-      "p"
-     ],
-     [
-      " the continued advancement of ecological conservation",
+      " that awareness",
       "o"
      ],
      [
-      " but also demonstrates",
-      "p"
+      " into action",
+      ""
      ],
      [
-      " the growing acceptance of green living",
-      "o"
+      ", and {{topic}} is part of the result",
+      ""
      ],
      [
       ".",
@@ -1172,67 +940,89 @@
    ],
    "phrases": [
     [
-     "be closely linked to",
-     "与…密切相关"
+     "has been building for years",
+     "多年积累而来"
     ],
     [
-     "rising public awareness of …",
-     "公众…意识不断增强"
+     "are far more aware of",
+     "对…的认识清楚得多"
     ],
     [
-     "increasingly favorable conditions",
-     "日趋有利的条件"
+     "turn awareness into action",
+     "把认识变成行动"
     ],
     [
-     "make it easier for sb to do",
-     "让人们更容易做…"
+     "have visibly improved",
+     "有明显改善"
     ],
     [
-     "participate in",
-     "参与"
-    ],
-    [
-     "a wider range of",
-     "更加多样的"
-    ],
-    [
-     "suited to their own circumstances",
-     "适合自身情况的"
-    ],
-    [
-     "be integrated into everyday life",
-     "融入日常生活"
-    ],
-    [
-     "take part in related initiatives",
-     "参与相关行动"
-    ],
-    [
-     "demonstrate the growing acceptance of …",
-     "体现…日益被接受"
+     "have taken root",
+     "已经扎下根"
     ]
+   ],
+   "tips": [
+    "环境类最忌只喊口号（「保护环境很重要」），尽量写具体做法。",
+    "这一段的写法与体育健康类通用，换几个词即可。"
+   ],
+   "sentences": [
+    {
+     "en": "Air and water quality have visibly improved in many cities, so green habits no longer seem pointless.",
+     "cn": "许多城市的空气和水质明显好转，环保习惯不再显得没有意义。"
+    },
+    {
+     "en": "Sorted bins, electric buses and public parks have made green choices easier to make.",
+     "cn": "分类垃圾桶、电动公交和城市公园让环保选择更容易实现。"
+    },
+    {
+     "en": "Schools now teach children about the environment, and those children bring the habit home.",
+     "cn": "学校开始教孩子环保知识，孩子又把习惯带回家里。"
+    },
+    {
+     "en": "New technologies have cut the cost of clean energy and recycled products.",
+     "cn": "新技术降低了清洁能源和再生产品的成本。"
+    },
+    {
+     "en": "Government rules have pushed companies to clean up their production.",
+     "cn": "政府的法规推动企业减少生产中的污染。"
+    },
+    {
+     "en": "Once green choices are convenient, more people are willing to change their routines.",
+     "cn": "环保选择一旦变得方便，愿意改变日常习惯的人就多了。"
+    },
+    {
+     "en": "The figure for {{item1}} going from {{num1}} to {{num2}} is only the visible part of that shift.",
+     "cn": "{{item1}} 从 {{num1}} 到 {{num2}}，只是这场变化里看得见的那部分。"
+    },
+    {
+     "en": "In short, the numbers reflect habits that have already taken root.",
+     "cn": "总之，这些数字反映的是已经扎下根的习惯。"
+    }
    ]
   },
   {
    "id": "para2_sports",
    "group": "大作文 · 第二段（原因分析）",
    "title": "体育健康类第二段",
-   "subtitle": "环境生态类换词即用（这就是换词应万变）",
-   "en": "Changes reflected in {{topic}} are closely linked to rising public awareness of personal health and increasingly favorable conditions for physical exercise. Improved sports infrastructure makes it easier for people to participate in physical exercise, while a wider range of exercise methods enables different groups to make choices suited to their own circumstances. As physical exercise becomes increasingly integrated into everyday life, the number of people willing to take part in related activities will continue to grow. For this reason, {{topic}} not only reflects the continued advancement of national fitness but also demonstrates the growing acceptance of healthy living.",
-   "cn": "{{topic}} 所反映的变化，与公众健康意识的提高和公共运动条件的改善密切相关。更加完善的体育设施为人们参与体育锻炼提供了便利，而多样化的运动方式也使不同群体能够根据自身情况作出选择。随着体育锻炼逐渐融入日常生活，愿意参与相关活动的人数也会不断增加。正因如此，{{topic}} 不仅体现了全民健身事业的持续推进，也说明健康生活正在得到更加广泛的认可。",
+   "subtitle": "体育健康类：挂在久坐、健康支出和观念变化上（与环保类思路不同，别混用）",
+   "en": "The figures in the chart are less about sport itself than about how people now look after themselves. Long working hours have made health something people have to plan for, and {{topic}} has become the easiest way to do that.",
+   "cn": "这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。长时间工作让健康变成需要主动安排的事，而 {{topic}} 成了最容易做到的一种方式。",
    "en_struct": [
     [
      [
-      "Changes reflected in {{topic}}",
+      "The figures in the chart",
       "t"
      ],
      [
-      " are closely linked to",
+      " are less about",
       "p"
      ],
      [
-      " rising public awareness of personal health and increasingly favorable conditions for physical exercise",
+      " sport itself",
       "o"
+     ],
+     [
+      " than about how people now look after themselves",
+      ""
      ],
      [
       ".",
@@ -1241,88 +1031,24 @@
     ],
     [
      [
-      "Improved sports infrastructure",
+      "Long working hours",
       "t"
      ],
      [
-      " makes it easier",
+      " have made",
       "p"
      ],
      [
-      " for people to participate in physical exercise",
+      " health",
       "o"
      ],
      [
-      ", while",
-      "trans"
-     ],
-     [
-      " a wider range of exercise methods",
-      "t"
-     ],
-     [
-      " enables",
-      "p"
-     ],
-     [
-      " different groups to make choices suited to their own circumstances",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "As",
-      "lead"
-     ],
-     [
-      " physical exercise becomes increasingly integrated into everyday life",
+      " something people have to plan for",
       ""
      ],
      [
-      ", the number of people willing to take part in related activities",
-      "t"
-     ],
-     [
-      " will continue to grow",
-      "p"
-     ],
-     [
-      ".",
+      ", and {{topic}} has become the easiest way to do that",
       ""
-     ]
-    ],
-    [
-     [
-      "For this reason",
-      "caus"
-     ],
-     [
-      ", ",
-      ""
-     ],
-     [
-      "{{topic}}",
-      "t"
-     ],
-     [
-      " not only reflects",
-      "p"
-     ],
-     [
-      " the continued advancement of national fitness",
-      "o"
-     ],
-     [
-      " but also demonstrates",
-      "p"
-     ],
-     [
-      " the growing acceptance of healthy living",
-      "o"
      ],
      [
       ".",
@@ -1332,46 +1058,72 @@
    ],
    "phrases": [
     [
-     "be closely linked to",
-     "与…密切相关"
+     "are less about … than about …",
+     "与其说关于…不如说关于…"
     ],
     [
-     "rising public awareness of personal health",
-     "公众健康意识不断增强"
+     "look after themselves",
+     "照顾自己的身体"
     ],
     [
-     "improved sports infrastructure",
-     "更完善的体育设施"
+     "a practical need rather than a hobby",
+     "是实际需要而非爱好"
     ],
     [
-     "participate in physical exercise",
-     "参加体育锻炼"
+     "stay motivated",
+     "保持动力"
     ],
     [
-     "a wider range of exercise methods",
-     "更多样的锻炼方式"
-    ],
-    [
-     "the number of … will continue to grow",
-     "…的数量将持续增长"
-    ],
-    [
-     "the continued advancement of national fitness",
-     "全民健身的持续推进"
-    ],
-    [
-     "the growing acceptance of healthy living",
-     "健康生活方式日益被接受"
+     "the gap is widening",
+     "差距在扩大"
     ]
+   ],
+   "tips": [
+    "这一段的骨架句和环保类完全不同（环保讲意识与条件，体育讲久坐、支出与观念），不要混用。",
+    "写完原因后留一句回扣数据（第 6 句那种），避免全段空谈。"
+   ],
+   "sentences": [
+    {
+     "en": "Sitting all day has turned exercise into a practical need rather than a hobby.",
+     "cn": "整天坐着，让运动从爱好变成了实际需要。"
+    },
+    {
+     "en": "Fitness apps and smart watches let people track their progress and stay motivated.",
+     "cn": "健身 App 和智能手表让人能记录进展、保持动力。"
+    },
+    {
+     "en": "Gyms, running tracks and community courts are now common even in smaller cities.",
+     "cn": "现在连中小城市也常见健身房、跑道和社区球场。"
+    },
+    {
+     "en": "Health campaigns have reminded the public that prevention is cheaper than treatment.",
+     "cn": "健康宣传提醒公众：预防比治疗便宜。"
+    },
+    {
+     "en": "People with higher incomes spend more on keeping fit, and the gap is widening.",
+     "cn": "收入较高的人更愿意为健身花钱，而且这个差距在扩大。"
+    },
+    {
+     "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, which fits the wider pattern.",
+     "cn": "从 {{time1}} 到 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，与整体趋势一致。"
+    },
+    {
+     "en": "The rise is not only about money: attitudes to health have changed.",
+     "cn": "这一增长不只因为钱：人们对健康的态度也变了。"
+    },
+    {
+     "en": "In short, exercising has moved from a personal choice to a social habit.",
+     "cn": "总之，运动已经从个人选择变成了社会习惯。"
+    }
    ]
   },
   {
    "id": "para2_culture",
    "group": "大作文 · 第二段（原因分析）",
    "title": "文化自信类第二段",
-   "subtitle": "与经济类思路类似",
-   "en": "Traditional culture cannot be effectively conveyed through the one-way delivery of content alone; its modes of expression must also be adjusted in response to real-world feedback. {{topic}} can establish a channel of communication between traditional culture and the public, allowing cultural content to be explained with greater clarity. Public participation can also give rise to new forms of cultural expression, enabling traditional culture to adapt to social change while preserving its core values. Seen from this perspective, {{topic}} not only enhances the effectiveness of cultural transmission but also strengthens traditional culture's capacity to remain relevant to contemporary life.",
-   "cn": "传统文化的传播不能只是向公众单向传递内容，也需要根据现实反馈不断调整表达方式。{{topic}} 为传统文化与公众之间建立了交流渠道，使文化内容能够得到更加清楚的解释。公众的参与也会为传统文化带来新的表达，使其在保留核心价值的同时适应社会变化。由此可见，{{topic}} 不仅提高了文化传播的效果，也增强了传统文化适应当代生活的能力。",
+   "subtitle": "文化自信类：核心逻辑是「传统 + 现代表达」",
+   "en": "Traditional culture does not survive by being preserved in a museum. It survives when people find new ways to pass it on. The growth shown in the chart is that process at work.",
+   "cn": "传统文化不是靠放进博物馆保存下来的。它靠的是人们不断找到新的传递方式。图中的增长，正是这一过程在起作用。",
    "en_struct": [
     [
      [
@@ -1379,24 +1131,12 @@
       "t"
      ],
      [
-      " cannot be effectively conveyed",
+      " does not survive by",
       "p"
      ],
      [
-      " through the one-way delivery of content alone",
-      ""
-     ],
-     [
-      "; its modes of expression",
-      "t"
-     ],
-     [
-      " must also be adjusted",
-      "p"
-     ],
-     [
-      " in response to real-world feedback",
-      ""
+      " being preserved in a museum",
+      "o"
      ],
      [
       ".",
@@ -1405,20 +1145,16 @@
     ],
     [
      [
-      "{{topic}}",
+      "It",
       "t"
      ],
      [
-      " can establish",
+      " survives",
       "p"
      ],
      [
-      " a channel of communication between traditional culture and the public",
+      " when people find new ways to pass it on",
       "o"
-     ],
-     [
-      ", allowing cultural content to be explained with greater clarity",
-      ""
      ],
      [
       ".",
@@ -1427,61 +1163,15 @@
     ],
     [
      [
-      "Public participation",
+      "The growth shown in the chart",
       "t"
      ],
      [
-      " can also give rise to",
+      " is",
       "p"
      ],
      [
-      " new forms of cultural expression",
-      "o"
-     ],
-     [
-      ", enabling traditional culture to adapt to social change",
-      ""
-     ],
-     [
-      " while",
-      "trans"
-     ],
-     [
-      " preserving its core values",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Seen from this perspective",
-      ""
-     ],
-     [
-      ", ",
-      ""
-     ],
-     [
-      "{{topic}}",
-      "t"
-     ],
-     [
-      " not only enhances",
-      "p"
-     ],
-     [
-      " the effectiveness of cultural transmission",
-      "o"
-     ],
-     [
-      " but also strengthens",
-      "p"
-     ],
-     [
-      " traditional culture's capacity to remain relevant to contemporary life",
+      " that process at work",
       "o"
      ],
      [
@@ -1492,63 +1182,85 @@
    ],
    "phrases": [
     [
-     "be effectively conveyed through",
-     "通过…得到有效传达"
+     "being preserved in a museum",
+     "被供在博物馆里"
     ],
     [
-     "the one-way delivery of content",
-     "单向的内容输出"
+     "find new ways to pass it on",
+     "找到新的传递方式"
     ],
     [
-     "in response to real-world feedback",
-     "响应现实反馈"
+     "bring … closer to ordinary life",
+     "把…拉近日常生活"
     ],
     [
-     "establish a channel of communication between A and B",
-     "在 A 与 B 之间建立沟通渠道"
+     "take part in",
+     "参与其中"
     ],
     [
-     "give rise to",
-     "催生、带来"
-    ],
-    [
-     "adapt to social change",
-     "适应社会变迁"
-    ],
-    [
-     "preserve its core values",
-     "保留其核心价值"
-    ],
-    [
-     "enhance the effectiveness of cultural transmission",
-     "提升文化传播效果"
-    ],
-    [
-     "remain relevant to contemporary life",
-     "与当代生活保持相关"
+     "is being used rather than only admired",
+     "在被使用而不只是被欣赏"
     ]
+   ],
+   "tips": [
+    "文化类最容易写成口号，尽量落到具体做法（纪录片、展览、课程、文创）。",
+    "「传统 + 现代表达」是这一段的通用逻辑，换题只需换载体。"
+   ],
+   "sentences": [
+    {
+     "en": "{{topic}} brings traditional culture closer to ordinary life instead of leaving it on the shelf.",
+     "cn": "{{topic}} 把传统文化拉近日常生活，而不是把它束之高阁。"
+    },
+    {
+     "en": "Documentaries and short videos have made old stories interesting to young audiences.",
+     "cn": "纪录片和短视频让老故事对年轻观众有了吸引力。"
+    },
+    {
+     "en": "Museums now design exhibitions that visitors can take part in, not just look at.",
+     "cn": "博物馆现在设计的展览，观众能参与而不只是观看。"
+    },
+    {
+     "en": "Schools have added courses on local history and traditional crafts.",
+     "cn": "学校增加了地方历史和传统手工艺课程。"
+    },
+    {
+     "en": "Commercial products carry cultural elements into daily use, from clothing to household goods.",
+     "cn": "从服装到家居用品，文创产品把文化元素带进了日常使用。"
+    },
+    {
+     "en": "The rise in {{item1}}, from {{num1}} to {{num2}}, shows how quickly public interest can grow.",
+     "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，说明公众兴趣可以增长得多快。"
+    },
+    {
+     "en": "Cultural confidence grows when tradition is lived, not merely recited.",
+     "cn": "传统被真正用起来、而不只是背诵时，文化自信才会增长。"
+    },
+    {
+     "en": "In short, the chart records a culture that is being used rather than only admired.",
+     "cn": "总之，图表记录的是一种正在被使用、而不只是被欣赏的文化。"
+    }
    ]
   },
   {
    "id": "para3_positive",
    "group": "大作文 · 第三段（总结建议）",
    "title": "第三段 · 正面版",
-   "subtitle": "经济 / 校园 / 环境 / 体育 / 文化通用；主体词随题替换（政府 / 商家 / 学校 / 媒体）",
-   "en": "For {{topic}} to continue exerting a positive influence on personal growth, concerted efforts from all sectors of society are essential. Relevant authorities should provide the necessary support and create favorable conditions under which {{topic}} can play a constructive role. Media organizations should present the practical value of {{topic}} objectively, thereby helping the public develop a sound understanding of {{topic}}. Individuals should also make well-informed choices in light of their own circumstances, ensuring that {{topic}} genuinely contributes to their long-term development.",
-   "cn": "要使 {{topic}} 持续为个人成长带来积极影响，需要社会各方共同努力。有关部门应提供必要支持，为 {{topic}} 发挥作用创造良好条件。媒体应客观介绍其实际价值，帮助公众形成正确认识。个人也应结合自身情况作出合理选择，使 {{topic}} 真正服务于自身的长期发展。",
-   "note": "套用示例（2016 英语一）：要使父母以身作则持续为孩子成长带来积极影响，需要家庭与学校共同配合。学校应提供适当指导……父母也应结合孩子特点作出正确示范。",
+   "subtitle": "第三段 · 正面版：经济 / 校园 / 环境 / 体育 / 文化通用",
+   "en": "For {{topic}} to keep helping people grow, more than one side has to act. Governments can make the basic conditions easier, and schools can teach students how to use {{topic}} well.",
+   "cn": "要让 {{topic}} 持续帮助人们成长，需要多方一起行动。政府可以把基本条件做好，学校可以教学生怎样用好 {{topic}}。",
+   "note": "示例套用（2016 英语一）：骨架句写「要让父母以身作则真正起作用，需要多方配合」，再从句池挑「学校纳入日常」「家庭最关键」两句，本段约 52 词。",
    "en_struct": [
     [
      [
-      "For {{topic}} to continue exerting a positive influence on personal growth",
+      "For {{topic}} to keep helping people grow",
       ""
      ],
      [
-      ", concerted efforts from all sectors of society",
+      ", more than one side",
       "t"
      ],
      [
-      " are essential",
+      " has to act",
       "p"
      ],
      [
@@ -1558,95 +1270,23 @@
     ],
     [
      [
-      "Relevant authorities",
+      "Governments",
       "t"
      ],
      [
-      " should provide",
+      " can make",
       "p"
      ],
      [
-      " the necessary support",
+      " the basic conditions",
       "o"
      ],
      [
-      " and create",
-      "p"
-     ],
-     [
-      " favorable conditions",
-      "o"
-     ],
-     [
-      " under which",
-      "lead"
-     ],
-     [
-      " {{topic}} can play a constructive role",
+      " easier",
       ""
      ],
      [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Media organizations",
-      "t"
-     ],
-     [
-      " should present",
-      "p"
-     ],
-     [
-      " the practical value of {{topic}}",
-      "o"
-     ],
-     [
-      " objectively",
-      ""
-     ],
-     [
-      ", thereby",
-      "caus"
-     ],
-     [
-      " helping the public develop a sound understanding of {{topic}}",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Individuals",
-      "t"
-     ],
-     [
-      " should also make",
-      "p"
-     ],
-     [
-      " well-informed choices",
-      "o"
-     ],
-     [
-      " in light of their own circumstances",
-      ""
-     ],
-     [
-      ", ensuring",
-      ""
-     ],
-     [
-      " that",
-      "lead"
-     ],
-     [
-      " {{topic}} genuinely contributes to their long-term development",
+      ", and schools can teach students how to use {{topic}} well",
       ""
      ],
      [
@@ -1657,66 +1297,84 @@
    ],
    "phrases": [
     [
-     "For … to continue exerting a positive influence on …",
-     "为了让…持续对…发挥积极作用"
+     "more than one side has to act",
+     "需要多方行动"
     ],
     [
-     "concerted efforts from all sectors of society",
-     "社会各方共同努力"
+     "make the basic conditions easier",
+     "把基本条件做好"
     ],
     [
-     "provide the necessary support",
-     "提供必要支持"
+     "is not limited to those who can pay",
+     "不只属于付得起钱的人"
     ],
     [
-     "create favorable conditions under which …",
-     "创造良好条件让…"
+     "without exaggerating",
+     "不夸大"
     ],
     [
-     "play a constructive role",
-     "发挥建设性作用"
-    ],
-    [
-     "present … objectively",
-     "客观呈现…"
-    ],
-    [
-     "develop a sound understanding of",
-     "形成正确认识"
-    ],
-    [
-     "make well-informed choices",
-     "作出理性选择"
-    ],
-    [
-     "in light of their own circumstances",
-     "结合自身情况"
-    ],
-    [
-     "contribute to long-term development",
-     "有助于长远发展"
+     "whatever fits their own situation",
+     "适合自身情况的做法"
     ]
+   ],
+   "tips": [
+    "骨架句 31 词 + 句池挑 1~2 句 ≈ 50~60 词，第三段不要写长。",
+    "主体三选二即可（政府 / 学校 / 媒体 / 家庭），不必政府、媒体、个人全写一遍——那是最像模板的写法。"
+   ],
+   "sentences": [
+    {
+     "en": "Authorities could fund public facilities so that {{topic}} is not limited to those who can pay.",
+     "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。"
+    },
+    {
+     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
+     "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。"
+    },
+    {
+     "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
+     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。"
+    },
+    {
+     "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
+     "cn": "企业可以把 {{topic}} 做得更便宜、更好用，让它覆盖更多人。"
+    },
+    {
+     "en": "Families matter most: children copy what adults do far more than what they are told.",
+     "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。"
+    },
+    {
+     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
+     "cn": "个人应按自身情况选择，而不是随大流。"
+    },
+    {
+     "en": "If these efforts continue, the trend shown in the chart is likely to hold.",
+     "cn": "如果这些努力持续下去，图中的趋势很可能保持。"
+    },
+    {
+     "en": "Handled well, {{topic}} will keep paying off for years to come.",
+     "cn": "处理得当，{{topic}} 的好处还会持续很多年。"
+    }
    ]
   },
   {
    "id": "para3_negative",
    "group": "大作文 · 第三段（总结建议）",
    "title": "第三段 · 负面版",
-   "subtitle": "题目涉及危害 / 消极影响时使用",
-   "en": "For the harmful effects of {{topic}} on personal growth to be effectively contained, concerted efforts across society are essential. Relevant authorities should strengthen regulatory oversight and keep {{topic}} within clear and reasonable limits. Media organizations should present the potential risks of {{topic}} objectively, thereby helping the public develop a sound understanding of {{topic}}. Individuals should also remain vigilant in light of their own circumstances and guard against any threat that {{topic}} may pose to their long-term development.",
-   "cn": "要使 {{topic}} 对个人成长造成的消极影响得到有效控制，需要社会各方共同努力。有关部门应加强必要监管，将 {{topic}} 限制在明确而合理的范围内。媒体应客观介绍其潜在风险，帮助公众形成正确认识。个人也应结合自身情况保持警惕，防范 {{topic}} 对自身长期发展造成威胁。",
+   "subtitle": "第三段 · 负面版：题目涉及危害、消极影响时使用",
+   "en": "If nothing is done, the problem shown in the chart will only get worse. Keeping {{topic}} within reasonable limits calls for action on several fronts. Rules by themselves will not be enough.",
+   "cn": "如果什么都不做，图中的问题只会更严重。要把 {{topic}} 控制在合理范围内，需要多方面一起行动。单靠规定是不够的。",
    "en_struct": [
     [
      [
-      "For the harmful effects of {{topic}} on personal growth to be effectively contained",
+      "If nothing is done",
       ""
      ],
      [
-      ", concerted efforts across society",
+      ", the problem shown in the chart",
       "t"
      ],
      [
-      " are essential",
+      " will only get worse",
       "p"
      ],
      [
@@ -1726,23 +1384,15 @@
     ],
     [
      [
-      "Relevant authorities",
+      "Keeping {{topic}} within reasonable limits",
       "t"
      ],
      [
-      " should strengthen",
+      " calls for",
       "p"
      ],
      [
-      " regulatory oversight",
-      "o"
-     ],
-     [
-      " and keep",
-      "p"
-     ],
-     [
-      " {{topic}} within clear and reasonable limits",
+      " action on several fronts",
       "o"
      ],
      [
@@ -1752,66 +1402,16 @@
     ],
     [
      [
-      "Media organizations",
+      "Rules by themselves",
       "t"
      ],
      [
-      " should present",
+      " will not be",
       "p"
      ],
      [
-      " the potential risks of {{topic}}",
+      " enough",
       "o"
-     ],
-     [
-      " objectively",
-      ""
-     ],
-     [
-      ", thereby",
-      "caus"
-     ],
-     [
-      " helping the public develop a sound understanding of {{topic}}",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Individuals",
-      "t"
-     ],
-     [
-      " should also remain",
-      "p"
-     ],
-     [
-      " vigilant",
-      "o"
-     ],
-     [
-      " in light of their own circumstances",
-      ""
-     ],
-     [
-      " and guard against",
-      "p"
-     ],
-     [
-      " any threat",
-      "o"
-     ],
-     [
-      " that",
-      "lead"
-     ],
-     [
-      " {{topic}} may pose to their long-term development",
-      ""
      ],
      [
       ".",
@@ -1821,37 +1421,63 @@
    ],
    "phrases": [
     [
-     "the harmful effects of … on …",
-     "…对…的有害影响"
+     "within reasonable limits",
+     "在合理范围内"
     ],
     [
-     "be effectively contained",
-     "得到有效遏制"
+     "calls for action on several fronts",
+     "需要多方面行动"
     ],
     [
-     "concerted efforts across society",
-     "全社会共同努力"
+     "before the habit takes hold",
+     "在习惯养成之前"
     ],
     [
-     "strengthen regulatory oversight",
-     "加强监管"
+     "rather than treat them as scare stories",
+     "而不是当成吓人的故事"
     ],
     [
-     "keep … within clear and reasonable limits",
-     "把…控制在清晰合理的限度内"
-    ],
-    [
-     "present the potential risks objectively",
-     "客观呈现潜在风险"
-    ],
-    [
-     "remain vigilant",
-     "保持警惕"
-    ],
-    [
-     "guard against any threat … may pose to …",
-     "防范…可能带来的任何威胁"
+     "The longer … is ignored, the more expensive it becomes",
+     "越被忽视，代价越大"
     ]
+   ],
+   "tips": [
+    "负面版与正面版骨架结构相同，改词即可切换。",
+    "不要写成「我们要重视」，写清谁做什么（政府 / 学校 / 平台 / 个人）。"
+   ],
+   "sentences": [
+    {
+     "en": "Authorities should set clear limits and make sure they are actually enforced.",
+     "cn": "政府应设定明确的上限，并确保真正执行。"
+    },
+    {
+     "en": "Schools and families should warn young people before the habit takes hold.",
+     "cn": "学校和家庭应在习惯养成之前提醒年轻人。"
+    },
+    {
+     "en": "Platforms should label or restrict content that encourages misuse.",
+     "cn": "平台应对诱导滥用的内容加以标注或限制。"
+    },
+    {
+     "en": "Media should report the real risks rather than treat them as scare stories.",
+     "cn": "媒体应报道真实风险，而不是把它当成吓人的故事。"
+    },
+    {
+     "en": "Individuals need to watch their own habits instead of assuming they are safe.",
+     "cn": "个人需要留意自己的习惯，而不是想当然地认为没问题。"
+    },
+    {
+     "en": "The longer the problem is ignored, the more expensive it becomes to fix.",
+     "cn": "问题越被忽视，解决的代价就越大。"
+    },
+    {
+     "en": "If these steps are taken early, the damage shown in the chart can still be limited.",
+     "cn": "如果这些措施及早采取，图中的损害仍可以被控制。"
+    },
+    {
+     "en": "In short, the trend can be reversed, but not by waiting.",
+     "cn": "总之，趋势可以扭转，但等不来。"
+    }
    ]
   }
  ]

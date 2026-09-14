@@ -42,245 +42,810 @@ def check(sec_id, sents, structs):
 
 
 # ===== chart_static 静态图表第一段 =====
-S = {}
-S['chart_static'] = [
-    [["The {{chart}} chart", "t"], [" presents", "p"], [" an uneven distribution", "o"],
-     [" among the categories associated with {{topic}}", ""], ["."]],
-    [["{{item1}}", "t"], [" accounts for", "p"], [" the largest share", "o"], [", at {{pct1}}", ""], ["."]],
-    [["{{item2}} and {{item3}}", "t"], [" form", "p"], [" the middle group", "o"],
-     [", representing {{pct2}} and {{pct3}}, respectively", ""], ["."]],
-    [["In contrast", "trans"], [", ", ""], ["{{item4}} and {{item5}}", "t"], [" make up", "p"],
-     [" relatively small proportions of {{pct4}} and {{pct5}}", ""], ["."]],
-]
-P = {}
-P['chart_static'] = [
-    ["presents an uneven distribution", "呈现出不均匀的分布"],
-    ["associated with", "与…相关的"],
-    ["accounts for the largest share", "所占比例最大"],
-    ["at 54.6%", "达到某比例（at + 数字）"],
-    ["form the middle group", "处于中间位置"],
-    ["respectively", "分别地（对应前面两个数字）"],
-    ["make up relatively small proportions", "占比较小"],
-    ["In contrast", "相比之下（引出对比）"],
-]
+S = {
+    "chart_static": [
+        [
+            [
+                "The {{chart}} chart",
+                "t"
+            ],
+            [
+                " shows",
+                "p"
+            ],
+            [
+                " how {{topic}} is distributed among the categories",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{item1}}",
+                "t"
+            ],
+            [
+                " takes",
+                "p"
+            ],
+            [
+                " the largest share",
+                "o"
+            ],
+            [
+                ", at {{percent1}}",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{item2}} and {{item3}}",
+                "t"
+            ],
+            [
+                " come next",
+                "p"
+            ],
+            [
+                ", at {{percent2}} and {{percent3}}",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "By contrast",
+                "trans"
+            ],
+            [
+                ", ",
+                ""
+            ],
+            [
+                "{{item4}} and {{item5}}",
+                "t"
+            ],
+            [
+                " account for",
+                "p"
+            ],
+            [
+                " only {{percent4}} and {{percent5}}",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "chart_dynamic": [
+        [
+            [
+                "The {{chart}} chart",
+                "t"
+            ],
+            [
+                " tracks",
+                "p"
+            ],
+            [
+                " how {{topic}} changed from {{time1}} to {{time2}}",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{item1}}",
+                "t"
+            ],
+            [
+                " climbed",
+                "p"
+            ],
+            [
+                " from {{num1}} to {{num2}}",
+                "o"
+            ],
+            [
+                ", while ",
+                "trans"
+            ],
+            [
+                "{{item2}}",
+                "t"
+            ],
+            [
+                " rose more slowly",
+                "p"
+            ],
+            [
+                ", from {{num3}} to {{num4}}",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "By contrast",
+                "trans"
+            ],
+            [
+                ", ",
+                ""
+            ],
+            [
+                "{{item3}}",
+                "t"
+            ],
+            [
+                " fell",
+                "p"
+            ],
+            [
+                " from {{num5}} to {{num6}}",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_economy": [
+        [
+            [
+                "The trend in the chart",
+                "t"
+            ],
+            [
+                " is closely tied to",
+                "p"
+            ],
+            [
+                " how people live and spend today",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{item1}}",
+                "t"
+            ],
+            [
+                " rose from {{num1}} in {{time1}} to {{num2}} in {{time2}}",
+                "p"
+            ],
+            [
+                ", and that change did not happen by itself",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_campus": [
+        [
+            [
+                "Behind the numbers in the chart",
+                ""
+            ],
+            [
+                " lies",
+                "p"
+            ],
+            [
+                " a change in how students spend their time",
+                "t"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "Habits built at this stage",
+                "t"
+            ],
+            [
+                " shape",
+                "p"
+            ],
+            [
+                " the way young people take responsibility later",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{topic}}",
+                "t"
+            ],
+            [
+                " is",
+                "p"
+            ],
+            [
+                " one of the clearest examples of that",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_campus_neg": [
+        [
+            [
+                "Behind the numbers in the chart",
+                ""
+            ],
+            [
+                " lies",
+                "p"
+            ],
+            [
+                " a problem that deserves attention",
+                "t"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "Habits formed at this stage",
+                "t"
+            ],
+            [
+                " are hard to change later",
+                "p"
+            ],
+            [
+                ", and the wrong ones carry a lasting cost",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "{{topic}}",
+                "t"
+            ],
+            [
+                " shows",
+                "p"
+            ],
+            [
+                " how easily that cost can build up",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_env": [
+        [
+            [
+                "The change in the chart",
+                "t"
+            ],
+            [
+                " reflects",
+                "p"
+            ],
+            [
+                " something that has been building for years",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "People today",
+                "t"
+            ],
+            [
+                " are far more aware of",
+                "p"
+            ],
+            [
+                " environmental problems",
+                "o"
+            ],
+            [
+                " than they were in {{time1}}",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "They",
+                "t"
+            ],
+            [
+                " have gradually turned",
+                "p"
+            ],
+            [
+                " that awareness",
+                "o"
+            ],
+            [
+                " into action",
+                ""
+            ],
+            [
+                ", and {{topic}} is part of the result",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_sports": [
+        [
+            [
+                "The figures in the chart",
+                "t"
+            ],
+            [
+                " are less about",
+                "p"
+            ],
+            [
+                " sport itself",
+                "o"
+            ],
+            [
+                " than about how people now look after themselves",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "Long working hours",
+                "t"
+            ],
+            [
+                " have made",
+                "p"
+            ],
+            [
+                " health",
+                "o"
+            ],
+            [
+                " something people have to plan for",
+                ""
+            ],
+            [
+                ", and {{topic}} has become the easiest way to do that",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para2_culture": [
+        [
+            [
+                "Traditional culture",
+                "t"
+            ],
+            [
+                " does not survive by",
+                "p"
+            ],
+            [
+                " being preserved in a museum",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "It",
+                "t"
+            ],
+            [
+                " survives",
+                "p"
+            ],
+            [
+                " when people find new ways to pass it on",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "The growth shown in the chart",
+                "t"
+            ],
+            [
+                " is",
+                "p"
+            ],
+            [
+                " that process at work",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para3_positive": [
+        [
+            [
+                "For {{topic}} to keep helping people grow",
+                ""
+            ],
+            [
+                ", more than one side",
+                "t"
+            ],
+            [
+                " has to act",
+                "p"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "Governments",
+                "t"
+            ],
+            [
+                " can make",
+                "p"
+            ],
+            [
+                " the basic conditions",
+                "o"
+            ],
+            [
+                " easier",
+                ""
+            ],
+            [
+                ", and schools can teach students how to use {{topic}} well",
+                ""
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ],
+    "para3_negative": [
+        [
+            [
+                "If nothing is done",
+                ""
+            ],
+            [
+                ", the problem shown in the chart",
+                "t"
+            ],
+            [
+                " will only get worse",
+                "p"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "Keeping {{topic}} within reasonable limits",
+                "t"
+            ],
+            [
+                " calls for",
+                "p"
+            ],
+            [
+                " action on several fronts",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ],
+        [
+            [
+                "Rules by themselves",
+                "t"
+            ],
+            [
+                " will not be",
+                "p"
+            ],
+            [
+                " enough",
+                "o"
+            ],
+            [
+                ".",
+                ""
+            ]
+        ]
+    ]
+}
 
-S['chart_dynamic'] = [
-    [["The line chart", "t"], [" shows", "p"], [" that", "lead"],
-     [" the items associated with {{topic}}", "t"], [" did not move in a uniform direction", "p"],
-     [" during the periods presented", ""], ["."]],
-    [["{{item1}}", "t"], [" climbed", "p"], [" from {{num1}} in {{time1}} to {{num2}} in {{time2}}", ""],
-     [", while", "trans"], [" {{item2}}", "t"], [" rose", "p"],
-     [" from {{num3}} in {{time3}} to {{num4}} in {{time4}}", ""], ["."]],
-    [["By contrast", "trans"], [", ", ""], ["{{item3}}", "t"], [" fell", "p"],
-     [" from {{num5}} in {{time5}} to {{num6}} in {{time6}}", ""], ["."]],
-]
-P['chart_dynamic'] = [
-    ["shows that", "表明（引出宾语从句）"],
-    ["associated with", "与…相关的"],
-    ["did not move in a uniform direction", "变化方向并不一致（同向上升时改写）"],
-    ["during the periods presented", "在所示时期内"],
-    ["climbed from … to …", "从…攀升至…"],
-    ["rose from … to …", "从…上升至…"],
-    ["over the same span", "在同一时期"],
-    ["while", "而（一句内对比两事物）"],
-    ["By contrast", "相比之下（另起对比）"],
-    ["the pace of growth differed sharply", "增速差异显著"],
-]
 
-S['para2_economy'] = [
-    [["Growing public attention to {{topic}}", "t"], [" stems from", "p"],
-     [" its ability to meet practical needs in everyday life", "o"], ["."]],
-    [["Undoubtedly", ""], [", the country's rapid economic growth", "t"], [" has laid", "p"],
-     [" a solid material foundation", "o"], [" for the emergence of {{topic}}", ""], ["."]],
-    [["As", "lead"], [" the pace of life accelerates", ""], [", individuals", "t"], [" attach", "p"],
-     [" greater importance to convenience and efficiency", "o"],
-     [" and become increasingly willing to embrace new ways of living", "p"], ["."]],
-    [["Consequently", "caus"], [", ", ""], ["{{topic}}", "t"],
-     [" has gradually become integrated into", "p"], [" everyday life", "o"], [", while", "trans"],
-     [" its practical value", "t"], [" has gained", "p"], [" wider recognition", "o"], ["."]],
-    [["Seen in this light", ""], [", the development of {{topic}}", "t"],
-     [" is no coincidence but a natural consequence of broader changes in social life", "p"], ["."]],
-]
-P['para2_economy'] = [
-    ["Growing public attention to …", "公众对…日益关注"],
-    ["stems from", "源于"],
-    ["meet practical needs", "满足实际需求"],
-    ["lay a solid material foundation for", "为…奠定坚实的物质基础"],
-    ["the emergence of …", "…的出现"],
-    ["as the pace of life accelerates", "随着生活节奏加快"],
-    ["attach greater importance to", "更加重视"],
-    ["become integrated into everyday life", "融入日常生活"],
-    ["gain wider recognition", "得到更广泛认可"],
-    ["Seen in this light", "由此观之（总结句开头）"],
-]
-
-S['para2_campus'] = [
-    [["The influence of {{topic}}", "t"], [" is not confined to", "p"], [" a single action", "o"],
-     ["; rather", "trans"], [", it", "t"], [" continues to shape", "p"],
-     [" the way individuals handle everyday responsibilities", "o"], ["."]],
-    [["{{topic}}", "t"], [" can enable", "p"],
-     [" individuals to approach routine tasks with greater maturity", "o"],
-     [", preventing them from giving up too readily in the face of temporary difficulties", ""], ["."]],
-    [["In this process", ""], [", individuals", "t"], [" gradually become", "p"],
-     [" less dependent on external reminders", "o"], [" and begin to take responsibility for their own choices", "p"],
-     ["."]],
-    [["Ultimately", ""], [", {{topic}}", "t"], [" can not only improve", "p"], [" individuals' present conduct", "o"],
-     [" but also strengthen", "p"], [" their capacity for self-management", "o"], [", thereby", "caus"],
-     [" laying a solid foundation for their future growth", ""], ["."]],
-]
-S['para2_campus_neg'] = [
-    [["The harmful influence of {{topic}}", "t"], [" is not confined to", "p"], [" a single action", "o"],
-     ["; rather", "trans"], [", it", "t"], [" can continue to disrupt", "p"],
-     [" the way individuals handle everyday responsibilities", "o"], ["."]],
-    [["{{topic}}", "t"], [" can cause", "p"],
-     [" individuals to approach routine tasks with less commitment", "o"],
-     [", making them more likely to give up", ""], [" when", "lead"], [" temporary difficulties arise", ""], ["."]],
-    [["In this process", ""], [", individuals", "t"], [" may become", "p"],
-     [" increasingly dependent on external reminders and less willing to take responsibility for their own choices", "o"],
-     ["."]],
-    [["Ultimately", ""], [", {{topic}}", "t"], [" can not only undermine", "p"], [" individuals' present conduct", "o"],
-     [" but also weaken", "p"], [" their capacity for self-management", "o"], [", thereby", "caus"],
-     [" creating a persistent obstacle to future growth", ""], ["."]],
-]
-P['para2_campus'] = [
-    ["is not confined to", "不局限于"],
-    ["shape the way sb handle …", "塑造某人处理…的方式"],
-    ["enable sb to do sth", "使某人能够做…"],
-    ["approach routine tasks with greater maturity", "更成熟地处理日常事务"],
-    ["prevent sb from giving up", "防止某人放弃"],
-    ["in the face of temporary difficulties", "面对暂时的困难"],
-    ["take responsibility for", "为…承担责任"],
-    ["not only … but also …", "不仅…而且…（句子加长利器）"],
-    ["strengthen the capacity for self-management", "增强自我管理能力"],
-    ["lay a solid foundation for future growth", "为未来成长打下坚实基础"],
-]
-
-S['para2_env'] = [
-    [["Changes reflected in {{topic}}", "t"], [" are closely linked to", "p"],
-     [" rising public awareness of environmental protection and increasingly favorable conditions for environmental action", "o"],
-     ["."]],
-    [["Improved environmental infrastructure", "t"], [" makes it easier", "p"],
-     [" for people to participate in environmental protection", "o"], [", while", "trans"],
-     [" a wider range of environmental practices", "t"], [" enables", "p"],
-     [" different groups to make choices suited to their own circumstances", "o"], ["."]],
-    [["As", "lead"], [" environmental protection becomes increasingly integrated into everyday life", ""],
-     [", the number of people willing to take part in related initiatives", "t"], [" will continue to grow", "p"], ["."]],
-    [["For this reason", "caus"], [", ", ""], ["{{topic}}", "t"], [" not only reflects", "p"],
-     [" the continued advancement of ecological conservation", "o"], [" but also demonstrates", "p"],
-     [" the growing acceptance of green living", "o"], ["."]],
-]
-P['para2_env'] = [
-    ["be closely linked to", "与…密切相关"],
-    ["rising public awareness of …", "公众…意识不断增强"],
-    ["increasingly favorable conditions", "日趋有利的条件"],
-    ["make it easier for sb to do", "让人们更容易做…"],
-    ["participate in", "参与"],
-    ["a wider range of", "更加多样的"],
-    ["suited to their own circumstances", "适合自身情况的"],
-    ["be integrated into everyday life", "融入日常生活"],
-    ["take part in related initiatives", "参与相关行动"],
-    ["demonstrate the growing acceptance of …", "体现…日益被接受"],
-]
-
-S['para2_sports'] = [
-    [["Changes reflected in {{topic}}", "t"], [" are closely linked to", "p"],
-     [" rising public awareness of personal health and increasingly favorable conditions for physical exercise", "o"],
-     ["."]],
-    [["Improved sports infrastructure", "t"], [" makes it easier", "p"],
-     [" for people to participate in physical exercise", "o"], [", while", "trans"],
-     [" a wider range of exercise methods", "t"], [" enables", "p"],
-     [" different groups to make choices suited to their own circumstances", "o"], ["."]],
-    [["As", "lead"], [" physical exercise becomes increasingly integrated into everyday life", ""],
-     [", the number of people willing to take part in related activities", "t"], [" will continue to grow", "p"], ["."]],
-    [["For this reason", "caus"], [", ", ""], ["{{topic}}", "t"], [" not only reflects", "p"],
-     [" the continued advancement of national fitness", "o"], [" but also demonstrates", "p"],
-     [" the growing acceptance of healthy living", "o"], ["."]],
-]
-P['para2_sports'] = [
-    ["be closely linked to", "与…密切相关"],
-    ["rising public awareness of personal health", "公众健康意识不断增强"],
-    ["improved sports infrastructure", "更完善的体育设施"],
-    ["participate in physical exercise", "参加体育锻炼"],
-    ["a wider range of exercise methods", "更多样的锻炼方式"],
-    ["the number of … will continue to grow", "…的数量将持续增长"],
-    ["the continued advancement of national fitness", "全民健身的持续推进"],
-    ["the growing acceptance of healthy living", "健康生活方式日益被接受"],
-]
-
-S['para2_culture'] = [
-    [["Traditional culture", "t"], [" cannot be effectively conveyed", "p"],
-     [" through the one-way delivery of content alone", ""], ["; its modes of expression", "t"],
-     [" must also be adjusted", "p"], [" in response to real-world feedback", ""], ["."]],
-    [["{{topic}}", "t"], [" can establish", "p"],
-     [" a channel of communication between traditional culture and the public", "o"],
-     [", allowing cultural content to be explained with greater clarity", ""], ["."]],
-    [["Public participation", "t"], [" can also give rise to", "p"], [" new forms of cultural expression", "o"],
-     [", enabling traditional culture to adapt to social change", ""], [" while", "trans"],
-     [" preserving its core values", ""], ["."]],
-    [["Seen from this perspective", ""], [", ", ""], ["{{topic}}", "t"], [" not only enhances", "p"],
-     [" the effectiveness of cultural transmission", "o"], [" but also strengthens", "p"],
-     [" traditional culture's capacity to remain relevant to contemporary life", "o"], ["."]],
-]
-P['para2_culture'] = [
-    ["be effectively conveyed through", "通过…得到有效传达"],
-    ["the one-way delivery of content", "单向的内容输出"],
-    ["in response to real-world feedback", "响应现实反馈"],
-    ["establish a channel of communication between A and B", "在 A 与 B 之间建立沟通渠道"],
-    ["give rise to", "催生、带来"],
-    ["adapt to social change", "适应社会变迁"],
-    ["preserve its core values", "保留其核心价值"],
-    ["enhance the effectiveness of cultural transmission", "提升文化传播效果"],
-    ["remain relevant to contemporary life", "与当代生活保持相关"],
-]
-
-S['para3_positive'] = [
-    [["For {{topic}} to continue exerting a positive influence on personal growth", ""],
-     [", concerted efforts from all sectors of society", "t"], [" are essential", "p"], ["."]],
-    [["Relevant authorities", "t"], [" should provide", "p"], [" the necessary support", "o"],
-     [" and create", "p"], [" favorable conditions", "o"], [" under which", "lead"],
-     [" {{topic}} can play a constructive role", ""], ["."]],
-    [["Media organizations", "t"], [" should present", "p"], [" the practical value of {{topic}}", "o"],
-     [" objectively", ""], [", thereby", "caus"],
-     [" helping the public develop a sound understanding of {{topic}}", ""], ["."]],
-    [["Individuals", "t"], [" should also make", "p"], [" well-informed choices", "o"],
-     [" in light of their own circumstances", ""], [", ensuring", ""], [" that", "lead"],
-     [" {{topic}} genuinely contributes to their long-term development", ""], ["."]],
-]
-P['para3_positive'] = [
-    ["For … to continue exerting a positive influence on …", "为了让…持续对…发挥积极作用"],
-    ["concerted efforts from all sectors of society", "社会各方共同努力"],
-    ["provide the necessary support", "提供必要支持"],
-    ["create favorable conditions under which …", "创造良好条件让…"],
-    ["play a constructive role", "发挥建设性作用"],
-    ["present … objectively", "客观呈现…"],
-    ["develop a sound understanding of", "形成正确认识"],
-    ["make well-informed choices", "作出理性选择"],
-    ["in light of their own circumstances", "结合自身情况"],
-    ["contribute to long-term development", "有助于长远发展"],
-]
-
-S['para3_negative'] = [
-    [["For the harmful effects of {{topic}} on personal growth to be effectively contained", ""],
-     [", concerted efforts across society", "t"], [" are essential", "p"], ["."]],
-    [["Relevant authorities", "t"], [" should strengthen", "p"], [" regulatory oversight", "o"],
-     [" and keep", "p"], [" {{topic}} within clear and reasonable limits", "o"], ["."]],
-    [["Media organizations", "t"], [" should present", "p"], [" the potential risks of {{topic}}", "o"],
-     [" objectively", ""], [", thereby", "caus"],
-     [" helping the public develop a sound understanding of {{topic}}", ""], ["."]],
-    [["Individuals", "t"], [" should also remain", "p"], [" vigilant", "o"],
-     [" in light of their own circumstances", ""], [" and guard against", "p"], [" any threat", "o"],
-     [" that", "lead"], [" {{topic}} may pose to their long-term development", ""], ["."]],
-]
-P['para3_negative'] = [
-    ["the harmful effects of … on …", "…对…的有害影响"],
-    ["be effectively contained", "得到有效遏制"],
-    ["concerted efforts across society", "全社会共同努力"],
-    ["strengthen regulatory oversight", "加强监管"],
-    ["keep … within clear and reasonable limits", "把…控制在清晰合理的限度内"],
-    ["present the potential risks objectively", "客观呈现潜在风险"],
-    ["remain vigilant", "保持警惕"],
-    ["guard against any threat … may pose to …", "防范…可能带来的任何威胁"],
-]
+P = {
+    "chart_static": [
+        [
+            "shows how … is distributed",
+            "显示…的分布情况"
+        ],
+        [
+            "takes the largest share",
+            "占据最大份额"
+        ],
+        [
+            "come next",
+            "紧随其后"
+        ],
+        [
+            "account for only",
+            "仅占"
+        ],
+        [
+            "are fairly evenly matched",
+            "占比相差不大"
+        ],
+        [
+            "is concentrated in",
+            "集中在…"
+        ]
+    ],
+    "chart_dynamic": [
+        [
+            "tracks how … changed",
+            "记录…的变化"
+        ],
+        [
+            "a steady climb",
+            "稳步上升"
+        ],
+        [
+            "over the same period",
+            "同一时期"
+        ],
+        [
+            "held steady at",
+            "稳定在"
+        ],
+        [
+            "more than doubled",
+            "翻了一倍多"
+        ],
+        [
+            "went the other way",
+            "走势相反"
+        ]
+    ],
+    "para2_economy": [
+        [
+            "is closely tied to",
+            "与…密切相关"
+        ],
+        [
+            "moved from a luxury to an everyday necessity",
+            "从奢侈品变成日常必需品"
+        ],
+        [
+            "within reach of ordinary families",
+            "普通家庭负担得起"
+        ],
+        [
+            "cut the time and cost of",
+            "降低…的时间和成本"
+        ],
+        [
+            "a passing fashion",
+            "一时风尚"
+        ]
+    ],
+    "para2_campus": [
+        [
+            "Behind the numbers in the chart lies …",
+            "数字背后是…"
+        ],
+        [
+            "Habits built at this stage",
+            "这个阶段养成的习惯"
+        ],
+        [
+            "shape the way sb do sth",
+            "影响某人做事的方式"
+        ],
+        [
+            "have a part to play",
+            "需要参与、有作用"
+        ],
+        [
+            "crowd out",
+            "挤占"
+        ]
+    ],
+    "para2_env": [
+        [
+            "has been building for years",
+            "多年积累而来"
+        ],
+        [
+            "are far more aware of",
+            "对…的认识清楚得多"
+        ],
+        [
+            "turn awareness into action",
+            "把认识变成行动"
+        ],
+        [
+            "have visibly improved",
+            "有明显改善"
+        ],
+        [
+            "have taken root",
+            "已经扎下根"
+        ]
+    ],
+    "para2_sports": [
+        [
+            "are less about … than about …",
+            "与其说关于…不如说关于…"
+        ],
+        [
+            "look after themselves",
+            "照顾自己的身体"
+        ],
+        [
+            "a practical need rather than a hobby",
+            "是实际需要而非爱好"
+        ],
+        [
+            "stay motivated",
+            "保持动力"
+        ],
+        [
+            "the gap is widening",
+            "差距在扩大"
+        ]
+    ],
+    "para2_culture": [
+        [
+            "being preserved in a museum",
+            "被供在博物馆里"
+        ],
+        [
+            "find new ways to pass it on",
+            "找到新的传递方式"
+        ],
+        [
+            "bring … closer to ordinary life",
+            "把…拉近日常生活"
+        ],
+        [
+            "take part in",
+            "参与其中"
+        ],
+        [
+            "is being used rather than only admired",
+            "在被使用而不只是被欣赏"
+        ]
+    ],
+    "para3_positive": [
+        [
+            "more than one side has to act",
+            "需要多方行动"
+        ],
+        [
+            "make the basic conditions easier",
+            "把基本条件做好"
+        ],
+        [
+            "is not limited to those who can pay",
+            "不只属于付得起钱的人"
+        ],
+        [
+            "without exaggerating",
+            "不夸大"
+        ],
+        [
+            "whatever fits their own situation",
+            "适合自身情况的做法"
+        ]
+    ],
+    "para3_negative": [
+        [
+            "within reasonable limits",
+            "在合理范围内"
+        ],
+        [
+            "calls for action on several fronts",
+            "需要多方面行动"
+        ],
+        [
+            "before the habit takes hold",
+            "在习惯养成之前"
+        ],
+        [
+            "rather than treat them as scare stories",
+            "而不是当成吓人的故事"
+        ],
+        [
+            "The longer … is ignored, the more expensive it becomes",
+            "越被忽视，代价越大"
+        ]
+    ]
+}
 
 
 def main():

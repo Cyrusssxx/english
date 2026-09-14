@@ -29,7 +29,7 @@ CAT_SLOT = '填槽表达'
 SLOT_GROUP = [
     ('图型 · 引出词', ['chart', 'topic']),
     ('主体 · 事物', ['item1', 'item2', 'item3', 'item4', 'item5']),
-    ('数据 · 占比', ['pct1', 'pct2', 'pct3', 'pct4', 'pct5']),
+    ('数据 · 占比', ['percent1', 'percent2', 'percent3', 'percent4', 'percent5']),
     ('数据 · 数值', ['num1', 'num2', 'num3', 'num4', 'num5', 'num6']),
     ('时间', ['time1', 'time2', 'time3', 'time4', 'time5', 'time6']),
 ]

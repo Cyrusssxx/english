@@ -21,8 +21,8 @@
     "color": "#0d9488"
    },
    {
-    "w": "{{item1}} accounts for the largest share, at {{pct1}}.",
-    "cn": "{{item1}} 所占比例最大，达到 {{pct1}}。",
+    "w": "{{item1}} accounts for the largest share, at {{percent1}}.",
+    "cn": "{{item1}} 所占比例最大，达到 {{percent1}}。",
     "years": [
      "2012",
      "2015",
@@ -38,8 +38,8 @@
     "color": "#0d9488"
    },
    {
-    "w": "As for {{item1}} and {{item2}}, they register {{pct1}} and {{pct2}} respectively.",
-    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{pct1}} 和 {{pct2}}。",
+    "w": "As for {{item1}} and {{item2}}, they register {{percent1}} and {{percent2}} respectively.",
+    "cn": "就 {{item1}} 与 {{item2}} 而言，它们分别为 {{percent1}} 和 {{percent2}}。",
     "years": [
      "2012",
      "2016",
@@ -52,8 +52,8 @@
     "color": "#0d9488"
    },
    {
-    "w": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{pct4}} and {{pct5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{pct4}} 和 {{pct5}}。",
+    "w": "In contrast, {{item4}} and {{item5}} make up relatively small proportions of {{percent4}} and {{percent5}}.",
+    "cn": "相比之下，{{item4}} 和 {{item5}} 所占比例较小，分别为 {{percent4}} 和 {{percent5}}。",
     "years": [
      "2012",
      "2015",
@@ -66,8 +66,8 @@
     "color": "#0d9488"
    },
    {
-    "w": "{{item2}} and {{item3}} form the middle group, representing {{pct2}} and {{pct3}}, respectively.",
-    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{pct2}} 和 {{pct3}}。",
+    "w": "{{item2}} and {{item3}} form the middle group, representing {{percent2}} and {{percent3}}, respectively.",
+    "cn": "{{item2}} 和 {{item3}} 处于中间位置，分别占 {{percent2}} 和 {{percent3}}。",
     "years": [
      "2018",
      "2020",
@@ -1963,7 +1963,7 @@
    {
     "w": "a still smaller share",
     "cn": "更小的比例",
-    "name": "pct5",
+    "name": "percent5",
     "para": "第一段",
     "years": [
      "2012",
@@ -1975,7 +1975,7 @@
    {
     "w": "36.3%",
     "cn": "36.3%",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2018"
@@ -1984,7 +1984,7 @@
    {
     "w": "37%",
     "cn": "37%",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2016"
@@ -1993,7 +1993,7 @@
    {
     "w": "40%",
     "cn": "40%",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2012"
@@ -2002,7 +2002,7 @@
    {
     "w": "54.6%",
     "cn": "54.6%",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2026"
@@ -2011,7 +2011,7 @@
    {
     "w": "59.5%",
     "cn": "59.5%",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2020"
@@ -2020,7 +2020,7 @@
    {
     "w": "80% of the total",
     "cn": "总额的 80%",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2015"
@@ -2029,7 +2029,7 @@
    {
     "w": "90.8%",
     "cn": "90.8%",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2025"
@@ -2038,7 +2038,7 @@
    {
     "w": "91.3%",
     "cn": "91.3%",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2024"
@@ -2047,7 +2047,7 @@
    {
     "w": "slightly over half of the respondents",
     "cn": "略超受访者半数",
-    "name": "pct1",
+    "name": "percent1",
     "para": "第一段",
     "years": [
      "2021"
@@ -2056,7 +2056,7 @@
    {
     "w": "21.3%",
     "cn": "21.3%",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2020"
@@ -2065,7 +2065,7 @@
    {
     "w": "26.8%",
     "cn": "26.8%",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2018"
@@ -2074,7 +2074,7 @@
    {
     "w": "33%",
     "cn": "33%",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2016"
@@ -2083,7 +2083,7 @@
    {
     "w": "47.7%",
     "cn": "47.7%",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2021"
@@ -2092,7 +2092,7 @@
    {
     "w": "54.5%",
     "cn": "54.5%",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2026"
@@ -2101,7 +2101,7 @@
    {
     "w": "68.3%",
     "cn": "68.3%",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2025"
@@ -2110,7 +2110,7 @@
    {
     "w": "84.8%",
     "cn": "84.8%",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2024"
@@ -2119,7 +2119,7 @@
    {
     "w": "a small share",
     "cn": "一个很小的比例",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2015"
@@ -2128,7 +2128,7 @@
    {
     "w": "the lowest level",
     "cn": "最低水平",
-    "name": "pct2",
+    "name": "percent2",
     "para": "第一段",
     "years": [
      "2012"
@@ -2137,7 +2137,7 @@
    {
     "w": "15%",
     "cn": "15%",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2016"
@@ -2146,7 +2146,7 @@
    {
     "w": "17.0%",
     "cn": "17.0%",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2020"
@@ -2155,7 +2155,7 @@
    {
     "w": "23.8%",
     "cn": "23.8%",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2018"
@@ -2164,7 +2164,7 @@
    {
     "w": "23.9%",
     "cn": "23.9%",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2021"
@@ -2173,7 +2173,7 @@
    {
     "w": "34.7%",
     "cn": "34.7%",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2025"
@@ -2182,7 +2182,7 @@
    {
     "w": "37.2%",
     "cn": "37.2%",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2026"
@@ -2191,7 +2191,7 @@
    {
     "w": "54.4%",
     "cn": "54.4%",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2024"
@@ -2200,7 +2200,7 @@
    {
     "w": "a modest level",
     "cn": "中等水平",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2012"
@@ -2209,7 +2209,7 @@
    {
     "w": "a smaller share",
     "cn": "更小的比例",
-    "name": "pct3",
+    "name": "percent3",
     "para": "第一段",
     "years": [
      "2015"
@@ -2218,7 +2218,7 @@
    {
     "w": "12%",
     "cn": "12%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2015"
@@ -2227,7 +2227,7 @@
    {
     "w": "16.7%",
     "cn": "16.7%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2012"
@@ -2236,7 +2236,7 @@
    {
     "w": "2.2%",
     "cn": "2.2%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2020"
@@ -2245,7 +2245,7 @@
    {
     "w": "31.8%",
     "cn": "31.8%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2025"
@@ -2254,7 +2254,7 @@
    {
     "w": "32.6%",
     "cn": "32.6%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2024"
@@ -2263,7 +2263,7 @@
    {
     "w": "33.2%",
     "cn": "33.2%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2026"
@@ -2272,7 +2272,7 @@
    {
     "w": "8.4%",
     "cn": "8.4%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2018"
@@ -2281,7 +2281,7 @@
    {
     "w": "9%",
     "cn": "9%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2016"
@@ -2290,7 +2290,7 @@
    {
     "w": "less than 16%",
     "cn": "不足 16%",
-    "name": "pct4",
+    "name": "percent4",
     "para": "第一段",
     "years": [
      "2021"
@@ -2299,7 +2299,7 @@
    {
     "w": "18.4%",
     "cn": "18.4%",
-    "name": "pct5",
+    "name": "percent5",
     "para": "第一段",
     "years": [
      "2025"
@@ -2308,7 +2308,7 @@
    {
     "w": "4.7%",
     "cn": "4.7%",
-    "name": "pct5",
+    "name": "percent5",
     "para": "第一段",
     "years": [
      "2018"
@@ -2317,7 +2317,7 @@
    {
     "w": "6%",
     "cn": "6%",
-    "name": "pct5",
+    "name": "percent5",
     "para": "第一段",
     "years": [
      "2016"
@@ -2326,7 +2326,7 @@
    {
     "w": "8%",
     "cn": "8%",
-    "name": "pct5",
+    "name": "percent5",
     "para": "第一段",
     "years": [
      "2015"
@@ -2335,7 +2335,7 @@
    {
     "w": "a negligible share",
     "cn": "微不足道的比例",
-    "name": "pct5",
+    "name": "percent5",
     "para": "第一段",
     "years": [
      "2020"
