@@ -30,8 +30,8 @@
                 <a href="stats.html" class="nav-link">统计</a>
             </div>
             <div class="nav-tools">
-                <button class="nav-switch" id="wrStructNavBtn" onclick="wrToggleStruct()" title="模板句主干/信号词划词染色（主语蓝·谓语红·宾语绿）">
-                    染色 <span class="switch-state" id="wrStructNavState">开</span>
+                <button class="nav-switch" id="wrStructNavBtn" onclick="wrToggleStruct()" title="模板句主干浅黄高亮（主谓宾表）">
+                    主干 <span class="switch-state" id="wrStructNavState">开</span>
                 </button>
                 <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
                     夜间 <span class="switch-state" id="darkState">关</span>
@@ -57,8 +57,10 @@
             <p class="wr-desc" id="wrDesc"></p>
             <div class="wr-rules" id="wrRules"></div>
             <div class="wr-hl-bar">
-                <span class="wr-hl-tip">✍ 模板句可<b>划词查词</b>（词组优先，点击弹释义可加生词本）；主干/信号词按<b>结构染色</b>（主蓝·谓红·宾绿）</span>
-                <button class="wr-struct-btn" id="wrStructBtn" onclick="wrToggleStruct()">结构染色 <span id="wrStructState">开</span></button>
+                <span class="wr-hl-tip">✍ <b>选中文字</b>即可高亮批注（荧光笔，可取消）；点词可<b>划词查词</b>（词组优先）；主干可选 <b>浅黄高亮</b></span>
+                <button class="wr-struct-btn" id="wrStructBtn" onclick="wrToggleStruct()">主干 <span id="wrStructState">开</span></button>
+                <span class="wr-hl-count" id="wrNoteCount"></span>
+                <button class="wr-hl-clear" id="wrNoteClear" onclick="wrClearNotes()" hidden>清除批注</button>
             </div>
 
             <!-- 图表适配表 -->
