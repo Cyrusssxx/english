@@ -4,6 +4,12 @@ let RC = null;
 function rcEsc(s) {
     return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
+/** 骨架同义升级提示（速记页版） */
+function rcAlts(alts) {
+    if (!alts) return '';
+    const rows = Object.entries(alts).map(([k, v]) => `<span class="wr-alt"><b>${rcEsc(k)}</b> → ${rcEsc(v)}</span>`);
+    return rows.join('<span class="wr-alt-sep">｜</span>');
+}
 function rcPh(s) {
     return rcEsc(s).replace(/\{\{(.+?)\}\}/g, '<span class="rc-ph">$1</span>');
 }
@@ -102,6 +108,7 @@ async function rcInit() {
                 sk += skels.map(v => `<div class="rc-skel">
                     <div class="rc-skel-head"><b>${rcEsc(v.label)}</b><span>适用 ${rcEsc(v.years)}</span></div>`
                     + rcPairs(v.en, v.cn).map(p => `<div class="rc-line">${p.star ? `<span class="rc-freq">${p.star}</span>` : ''}<div class="rc-en">${rcAnno(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
+                    + (v.alts ? `<div class="rc-alts">✎ 同义升级：${rcAlts(v.alts)}</div>` : '')
                     + '</div>').join('');
             } else {
                 sk += '<div class="rc-lines">'

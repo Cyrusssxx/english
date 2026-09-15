@@ -1,5 +1,28 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16 骨架润色] 按考研范文口径润色骨架 + 每套骨架加「同义升级」提示
+
+- **对照范文润色骨架**（用户对照机构范文与评析后指出：骨干太简洁、个别词小众但没用）：
+  - 静态 t4：`rounds off the list`（花哨不加分）→ **`comes last`**（朴素准确）
+  - 动态① t2：`It rose … with no real dip` → **`It climbed … without any noticeable fall`**（用户给的润色方向）
+  - 动态② t2：`went from … as well` → **`increased from … over the same period`**（over the same period 是范文用语，且与 climbed 换词避免重复）
+  - 动态③ t2：`slipped`（偏「小幅下滑」，大幅下降不准确）→ **`fell`**
+  - P2 引入句：`The numbers in the chart are the result of deeper changes.` → **`This change can be attributed to the following factors.`**
+    （be attributed to 正是评析点名的高分词组，且与「机制句池挑 3 条」衔接更顺）
+  - 机制句小众词清理：`call their own` → `the little free time they have`；`fits the wider pattern` → `matches the overall trend`；
+    `keep users hooked` → `hold users' attention for as long as possible`；rose → climbed（数据回扣句）
+  - 精句卡同步：删掉已不在句子里的 `come out of nowhere` / `call their own`，换成 `be attributed to` / `value the little free time`
+- **新增「✎ 同义升级」提示行**（用户要求：骨架空位处展示可更换的少量词）：
+  每套骨架带 `alts` 数据（`{原词: '替换词 / 替换词'}`），模板页与速记页在骨架下方渲染小字提示行，
+  如 `tracks → shows / illustrates`、`climbed → increased / went up`、`can be attributed to → stems from / results from`。
+  这是「背一句、会三句」的写法——骨架还是一套，考场上换词避免重复。
+- **phrases.json EXTRA 补 12 组范文高分搭配**（评析点名）：sharp contrast / be attributed to / a modest increase /
+  for one thing / for another / gain access to / over the same period / takes the lead / ranks first / trails behind /
+  continue to rise / saw a steady rise —— 按 **build → patch** 管道重建，最终 60320 条。
+- **必背量**：138 词（P2 引入句 11 → 9 词）。套用示范按用户要求**暂不重生成**。
+- 验证：结构校验器通过（17 句骨架 / 46 句池 / 词数体检）｜jsdom **12/12**（润色断言 + 5/3 处同义升级行 + 速记页渲染）。
+  SW en2-3df15daf。
+
 ## [2026-09-16 去重] 第一段句池删掉与骨架重复的 4 句（50 → 46）
 
 - **用户指出的重复**：静态句池「末位」`{{item5}} trails with {{percent5}}.` 与骨架第四句

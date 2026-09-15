@@ -727,6 +727,13 @@ function wrCopyLines(btn) {
     wrCopy(btn, t);
 }
 
+/** 骨架同义升级提示：{原词: '替换词 / 替换词'} → 一行小字 */
+function wrAlts(alts) {
+    if (!alts) return '';
+    const rows = Object.entries(alts).map(([k, v]) => `<span class="wr-alt"><b>${wrEsc(k)}</b> → ${wrEsc(v)}</span>`);
+    return rows.join('<span class="wr-alt-sep">｜</span>');
+}
+
 /** 考研口径词数：含字母或数字的空白串才算一个词（占位符 {{x}} 算 1 个） */
 function wrWords(t) {
     return ((t || '').match(/[A-Za-z0-9][A-Za-z0-9'’%.,:_-]*/g) || []).length;
@@ -760,10 +767,11 @@ function wrSectionCard(sec) {
                     <span class="wr-skel-w">${wrWords(v.en)} 词</span></div>
                 <div class="wr-en">${b2.enHtml}</div>
                 <div class="wr-cn">${b2.cnHtml}</div>
+                ${v.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(v.alts)}</div>` : ''}
             </div>`;
         }).join('')
         : `<div class="wr-en">${body.enHtml}</div>
-            <div class="wr-cn">${body.cnHtml}</div>`;
+            <div class="wr-cn">${body.cnHtml}</div>` + (sec.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(sec.alts)}</div>` : '');
     return `
     <section class="wr-card" id="${sec.id}">
         <div class="wr-card-head">

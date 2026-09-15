@@ -50,9 +50,9 @@ STATIC = [
     sent('{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.',
          '紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。',
          [[S('{{item2}} and {{item3}}', 't'), S(' follow', 'p'), S(', at {{percent2}} and {{percent3}}', 'o'), S('.', '')]]),
-    sent('{{item4}} rounds off the list at {{percent4}}.',
+    sent('{{item4}} comes last, at {{percent4}}.',
          '最后是 {{item4}}，占 {{percent4}}。',
-         [[S('{{item4}}', 't'), S(' rounds off', 'p'), S(' the list', 'o'), S(' at {{percent4}}', 'o'), S('.', '')]]),
+         [[S('{{item4}}', 't'), S(' comes last', 'p'), S(', at {{percent4}}', 'o'), S('.', '')]]),
 ]
 
 DYN_OPEN = sent('The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.',
@@ -61,28 +61,32 @@ DYN_OPEN = sent('The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}
 
 DYN = [
     {'label': '① 一条线在走', 'years': '2013 · 2023',
-     'en': DYN_OPEN['en'] + ' ' + 'It rose from {{num1}} to {{num2}}, with no real dip.',
-     'cn': DYN_OPEN['cn'] + '它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。',
+     'en': DYN_OPEN['en'] + ' ' + 'It climbed from {{num1}} to {{num2}}, without any noticeable fall.',
+     'cn': DYN_OPEN['cn'] + '它由 {{num1}} 升至 {{num2}}，全程没有明显回落。',
      'struct': [DYN_OPEN['struct'],
-                [S('It', 't'), S(' rose', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', with no real dip', 'o'), S('.', '')]]},
+                [S('It', 't'), S(' climbed', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', without any noticeable fall', 'o'), S('.', '')]],
+     'alts': {'tracks': 'shows / illustrates', 'climbed': 'increased / went up'}},
     {'label': '② 两条都在涨', 'years': '2010 · 2017 · 2022',
-     'en': DYN_OPEN['en'] + ' ' + '{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.',
-     'cn': DYN_OPEN['cn'] + '{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。',
+     'en': DYN_OPEN['en'] + ' ' + '{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} increased from {{num3}} to {{num4}} over the same period.',
+     'cn': DYN_OPEN['cn'] + '{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 同期由 {{num3}} 增至 {{num4}}。',
      'struct': [DYN_OPEN['struct'],
                 [S('{{item1}}', 't'), S(' climbed', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', and ', 'trans'),
-                 S('{{item2}}', 't'), S(' went', 'p'), S(' from {{num3}} to {{num4}} as well', 'o'), S('.', '')]]},
+                 S('{{item2}}', 't'), S(' increased', 'p'), S(' from {{num3}} to {{num4}} over the same period', 'o'), S('.', '')]],
+     'alts': {'climbed': 'rose / went up', 'increased': 'saw a steady rise', 'over the same period': 'during the same period'}},
     {'label': '③ 一升一降', 'years': '2011 · 2014 · 2019',
-     'en': DYN_OPEN['en'] + ' ' + '{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.',
+     'en': DYN_OPEN['en'] + ' ' + '{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.',
      'cn': DYN_OPEN['cn'] + '{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。',
      'struct': [DYN_OPEN['struct'],
                 [S('{{item1}}', 't'), S(' climbed', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', while ', 'trans'),
-                 S('{{item2}}', 't'), S(' slipped', 'p'), S(' from {{num3}} to {{num4}}', 'o'), S('.', '')]]},
+                 S('{{item2}}', 't'), S(' fell', 'p'), S(' from {{num3}} to {{num4}}', 'o'), S('.', '')]],
+     'alts': {'climbed': 'rose / went up', 'fell': 'declined / dropped', 'while': 'whereas'}},
 ]
 
 # ══════════ 二、第二段：1 句引入 + 机制句池 ══════════
-PARA2_SKEL = sent('The numbers in the chart are the result of deeper changes.',
-                  '图里的数字，是更深层变化的结果。',
-                  [[S('The numbers in the chart', 't'), S(' are', 'p'), S(' the result of deeper changes', 'o'), S('.', '')]])
+PARA2_SKEL = sent('This change can be attributed to the following factors.',
+                  '这一变化可以归因于以下几点。',
+                  [[S('This change', 't'), S(' can be attributed to', 'p'), S(' the following factors', 'o'), S('.', '')]])
+PARA2_SKEL['alts'] = {'can be attributed to': 'stems from / results from', 'the following factors': 'a combination of factors'}
 
 MECH = [
     (3, '收入', 'As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.',
@@ -93,7 +97,7 @@ MECH = [
      '线上平台和移动支付让 {{topic}} 变得更快更方便。'),
     (3, '观念', 'People now judge {{topic}} by what it does for them rather than by what others think.',
      '人们现在看 {{topic}} 好不好用，而不是看别人怎么想。'),
-    (3, '数据回扣', 'The figure for {{item1}} rose from {{num1}} to {{num2}}, which fits the wider pattern.',
+    (3, '数据回扣', 'The figure for {{item1}} climbed from {{num1}} to {{num2}}, which matches the overall trend.',
      '{{item1}} 从 {{num1}} 升到 {{num2}}，与整体趋势一致。'),
     (2, '公共投入', 'Public spending on infrastructure has made {{topic}} far more widely available.',
      '公共基础设施投入让 {{topic}} 的覆盖面大大增加。'),
@@ -101,8 +105,8 @@ MECH = [
      '城市吸纳了大量新居民，{{topic}} 的需求随之增长。'),
     (2, '久坐', 'Sitting all day has turned {{topic}} from a hobby into a practical need.',
      '整天坐着，让 {{topic}} 从爱好变成了实际需要。'),
-    (2, '职场时间', 'Longer working hours have made people value the little time they can call their own.',
-     '工作时间变长，人们更看重那点属于自己的时间。'),
+    (2, '职场时间', 'Longer working hours have made people value the little free time they have.',
+     '工作时间变长，人们更看重仅有的空闲时间。'),
     (2, '学校', 'Schools now treat {{topic}} as part of the routine rather than an optional extra.',
      '学校现在把 {{topic}} 当成日常安排，而不是可选项。'),
     (2, '文化传承', 'Old traditions survive only when people find new ways to pass them on.',
@@ -147,7 +151,7 @@ SUBJ_POS = [
     (3, '媒体', 'Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.', '媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。'),
     (3, '个人', 'Individuals should choose what fits their own situation rather than follow the crowd.', '个人应按自身情况选择，而不是随大流。'),
     (2, '政府·长效', 'Clear rules and steady funding matter more than one-off campaigns.', '明确的规则和持续投入，比一次性活动更重要。'),
-    (2, '平台·设计', 'Platforms should design simple, honest interfaces instead of ones that keep users hooked.', '平台应把界面做得简单诚实，而不是想方设法让人上瘾。'),
+    (2, '平台·设计', 'Platforms should design simple, honest services instead of ones that hold users\u2019 attention for as long as possible.', '平台应把服务做得简单诚实，而不是想方设法长时间留住用户。'),
     (2, '媒体·展示', 'Documentaries and short videos can show how {{topic}} works in real life.', '纪录片和短视频能让人看到 {{topic}} 在现实中怎样运作。'),
     (2, '个人·习惯', 'Small habits matter: a little {{topic}} every day adds up over a year.', '小习惯很重要：每天一点 {{topic}}，一年下来就不一样。'),
 ]
@@ -179,6 +183,8 @@ def main():
     # 第一段
     s = by_id['chart_static']
     set_skeleton(s, STATIC)
+    s['alts'] = {'shows': 'clearly illustrates / presents', 'comes first': 'takes the lead / ranks first',
+                 'comes last': 'trails behind / is the smallest'}
     s['sentences'] = [
         {'en': 'Taken together, the three largest items make up {{percent total}}.', 'cn': '前三项加起来占 {{percent total}}。', 'freq': 3, 'tag': '合计'},
         {'en': 'The pattern is clear: a few items dominate the rest.', 'cn': '格局很清楚：少数几项占了大头。', 'freq': 2, 'tag': '集中度'},
@@ -207,12 +213,13 @@ def main():
         'subtitle': '不背整段：1 句引入 + 从下面 16 条机制里挑 3 条（每条都是一个完整原因）',
         'group': secs[0].get('group', ''),
         'en': PARA2_SKEL['en'], 'cn': PARA2_SKEL['cn'], 'en_struct': [PARA2_SKEL['struct']],
+        'alts': PARA2_SKEL['alts'],
         'priority': True,
         'sentences': [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in MECH],
         'phrases': [
-            ['come out of nowhere', '凭空出现（did not come out of nowhere 并非凭空发生）'],
+            ['be attributed to', '归因于（P2 引入句）'],
             ['within reach', '够得着、负担得起'],
-            ['call their own', '属于自己的'],
+            ['value the little free time', '看重仅有的空闲时间'],
             ['a practical need', '实际需要'],
             ['pass them on', '把它传下去'],
             ['as much as', '和……一样（不只是）'],

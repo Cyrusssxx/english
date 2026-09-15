@@ -266,7 +266,7 @@
    "group": "大作文 · 第一段（图表描述）",
    "title": "静态图表第一段",
    "subtitle": "适用：饼图 / 柱状图中各类别的占比分布（只比比例，没有时间变化）",
-   "en": "The {{chart}} chart shows how {{topic}} breaks down. {{item1}} comes first, at {{percent1}}. {{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}. {{item4}} rounds off the list at {{percent4}}.",
+   "en": "The {{chart}} chart shows how {{topic}} breaks down. {{item1}} comes first, at {{percent1}}. {{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}. {{item4}} comes last, at {{percent4}}.",
    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。{{item1}} 排在第一位，占 {{percent1}}。紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。最后是 {{item4}}，占 {{percent4}}。",
    "note": "{{chart}} 处按图型填 pie / bar / line；句池里挑 1~2 句替换骨架后半段，控制字数，不必全写。",
    "sentences": [
@@ -354,15 +354,11 @@
       "t"
      ],
      [
-      " rounds off",
+      " comes last",
       "p"
      ],
      [
-      " the list",
-      "o"
-     ],
-     [
-      " at {{percent4}}",
+      ", at {{percent4}}",
       "o"
      ],
      [
@@ -396,15 +392,20 @@
      "is concentrated in",
      "集中在…"
     ]
-   ]
+   ],
+   "alts": {
+    "shows": "clearly illustrates / presents",
+    "comes first": "takes the lead / ranks first",
+    "comes last": "trails behind / is the smallest"
+   }
   },
   {
    "id": "chart_dynamic",
    "group": "大作文 · 第一段（图表描述）",
    "title": "动态图表第一段",
    "subtitle": "适用：折线 / 柱状图中事物随时间变化 —— 先看走势，选下面 3 套骨架之一",
-   "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
-   "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
+   "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} increased from {{num3}} to {{num4}} over the same period.",
+   "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 同期由 {{num3}} 增至 {{num4}}。",
    "note": "先看走势再选骨架：只有 1 个事物用 ①；都涨但快慢不同用 ②；有涨有跌用 ③。三个事物时，③ 的第 2 句后面接句池里的 By contrast 那句。",
    "sentences": [
     {
@@ -488,11 +489,11 @@
       "t"
      ],
      [
-      " went",
+      " increased",
       "p"
      ],
      [
-      " from {{num3}} to {{num4}} as well",
+      " from {{num3}} to {{num4}} over the same period",
       "o"
      ],
      [
@@ -531,8 +532,8 @@
     {
      "label": "① 一条线在走",
      "years": "2013 · 2023",
-     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. It rose from {{num1}} to {{num2}}, with no real dip.",
-     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
+     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. It climbed from {{num1}} to {{num2}}, without any noticeable fall.",
+     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。它由 {{num1}} 升至 {{num2}}，全程没有明显回落。",
      "struct": [
       [
        [
@@ -562,7 +563,7 @@
         "t"
        ],
        [
-        " rose",
+        " climbed",
         "p"
        ],
        [
@@ -570,7 +571,7 @@
         "o"
        ],
        [
-        ", with no real dip",
+        ", without any noticeable fall",
         "o"
        ],
        [
@@ -578,13 +579,17 @@
         ""
        ]
       ]
-     ]
+     ],
+     "alts": {
+      "tracks": "shows / illustrates",
+      "climbed": "increased / went up"
+     }
     },
     {
      "label": "② 两条都在涨",
      "years": "2010 · 2017 · 2022",
-     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
-     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
+     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} increased from {{num3}} to {{num4}} over the same period.",
+     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 同期由 {{num3}} 增至 {{num4}}。",
      "struct": [
       [
        [
@@ -630,11 +635,11 @@
         "t"
        ],
        [
-        " went",
+        " increased",
         "p"
        ],
        [
-        " from {{num3}} to {{num4}} as well",
+        " from {{num3}} to {{num4}} over the same period",
         "o"
        ],
        [
@@ -642,12 +647,17 @@
         ""
        ]
       ]
-     ]
+     ],
+     "alts": {
+      "climbed": "rose / went up",
+      "increased": "saw a steady rise",
+      "over the same period": "during the same period"
+     }
     },
     {
      "label": "③ 一升一降",
      "years": "2011 · 2014 · 2019",
-     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.",
      "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
      "struct": [
       [
@@ -694,7 +704,7 @@
         "t"
        ],
        [
-        " slipped",
+        " fell",
         "p"
        ],
        [
@@ -706,7 +716,12 @@
         ""
        ]
       ]
-     ]
+     ],
+     "alts": {
+      "climbed": "rose / went up",
+      "fell": "declined / dropped",
+      "while": "whereas"
+     }
     }
    ]
   },
@@ -715,20 +730,20 @@
    "title": "第二段 · 原因（机制句池）",
    "subtitle": "不背整段：1 句引入 + 从下面 16 条机制里挑 3 条（每条都是一个完整原因）",
    "group": "大作文 · 第一段（图表描述）",
-   "en": "The numbers in the chart are the result of deeper changes.",
-   "cn": "图里的数字，是更深层变化的结果。",
+   "en": "This change can be attributed to the following factors.",
+   "cn": "这一变化可以归因于以下几点。",
    "en_struct": [
     [
      [
-      "The numbers in the chart",
+      "This change",
       "t"
      ],
      [
-      " are",
+      " can be attributed to",
       "p"
      ],
      [
-      " the result of deeper changes",
+      " the following factors",
       "o"
      ],
      [
@@ -737,6 +752,10 @@
      ]
     ]
    ],
+   "alts": {
+    "can be attributed to": "stems from / results from",
+    "the following factors": "a combination of factors"
+   },
    "priority": true,
    "sentences": [
     {
@@ -764,7 +783,7 @@
      "tag": "观念"
     },
     {
-     "en": "The figure for {{item1}} rose from {{num1}} to {{num2}}, which fits the wider pattern.",
+     "en": "The figure for {{item1}} climbed from {{num1}} to {{num2}}, which matches the overall trend.",
      "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，与整体趋势一致。",
      "freq": 3,
      "tag": "数据回扣"
@@ -788,8 +807,8 @@
      "tag": "久坐"
     },
     {
-     "en": "Longer working hours have made people value the little time they can call their own.",
-     "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+     "en": "Longer working hours have made people value the little free time they have.",
+     "cn": "工作时间变长，人们更看重仅有的空闲时间。",
      "freq": 2,
      "tag": "职场时间"
     },
@@ -838,16 +857,16 @@
    ],
    "phrases": [
     [
-     "come out of nowhere",
-     "凭空出现（did not come out of nowhere 并非凭空发生）"
+     "be attributed to",
+     "归因于（P2 引入句）"
     ],
     [
      "within reach",
      "够得着、负担得起"
     ],
     [
-     "call their own",
-     "属于自己的"
+     "value the little free time",
+     "看重仅有的空闲时间"
     ],
     [
      "a practical need",
@@ -999,8 +1018,8 @@
      "tag": "政府·长效"
     },
     {
-     "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-     "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+     "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
+     "cn": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。",
      "freq": 2,
      "tag": "平台·设计"
     },

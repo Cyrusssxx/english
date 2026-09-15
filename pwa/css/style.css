@@ -4327,3 +4327,18 @@ html.dark .wr-mist-k { color: #fbbf24; }
 /* 示范文：称呼 / 落款（小作文有，大作文没有） */
 .ap-sal { margin: 0 0 8px; font-weight: 600; }
 .ap-sign { margin: 8px 0 0; white-space: pre-line; }
+
+/* 骨架「同义升级」提示行（模板页 / 速记页共用） */
+.wr-alts, .rc-alts {
+    margin-top: 7px; font-size: .8rem; line-height: 1.9;
+    color: var(--text-light);
+}
+.wr-alts::before, .rc-alts::before { content: ''; }
+.wr-alt {
+    display: inline-block; margin: 1px 0;
+    padding: 0 7px; border-radius: 6px;
+    background: var(--primary-soft);
+}
+.wr-alt b { color: var(--primary-dark); font-weight: 700; }
+html.dark .wr-alt b { color: #5eead4; }
+.wr-alt-sep { opacity: .45; margin: 0 2px; }
