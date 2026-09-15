@@ -855,7 +855,7 @@
    "items": [
     {
      "en": "To be more specific, your remarkable achievement in {{topic}} clearly shows your {{quality}}.",
-     "cn": "更具体地说，你在{{topic}}方面取得{{achievement}}，清楚地展现了你的{{quality}}。",
+     "cn": "更具体地说，你在{{topic}}方面的优异表现，清楚地展现了你的{{quality}}。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -1039,7 +1039,7 @@
     },
     {
      "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-     "cn": "请你/各位{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+     "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -1047,7 +1047,7 @@
     },
     {
      "en": "Thank you for your time and attention, and I look forward to your positive response.",
-     "cn": "感谢你/大家的时间与关注，期待你/大家给予积极回应。",
+     "cn": "感谢你的时间与关注，期待你给予积极回应。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -1055,7 +1055,7 @@
     },
     {
      "en": "To conclude, all the measures mentioned above are designed to {{purpose}}, and your participation is of great importance.",
-     "cn": "总而言之，上述各项措施均是为{{purpose}}而设，你/大家的参与至关重要。",
+     "cn": "总而言之，上述各项措施均是为{{purpose}}而设，你的参与至关重要。",
      "tier": "ammo",
      "must": false,
      "freq": 3,

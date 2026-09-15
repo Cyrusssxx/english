@@ -4323,3 +4323,7 @@ html.dark .wr-mist-k { color: #fbbf24; }
     font-size: .68rem; font-weight: 700; text-align: center; line-height: 17px;
 }
 .wr-check li b { color: var(--primary); }
+
+/* 示范文：称呼 / 落款（小作文有，大作文没有） */
+.ap-sal { margin: 0 0 8px; font-weight: 600; }
+.ap-sign { margin: 8px 0 0; white-space: pre-line; }

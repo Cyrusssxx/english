@@ -4373,6 +4373,98 @@
     "prompt": "道歉信。1）写信人身份：\"你\"，即大学生；2）写作对象：史密斯教授；3）写作话题：因不能如约拜访而致歉；4）写作类型：书信；5）交际目的：致歉并做出弥补（提议下次会面）。归纳要点：1）格式：书信（道歉信）；2）语域：收信人身份为教授，用语应尊敬、礼貌；\"私人拜访\"并非公务，文字不必过于拘谨；3）内容要点：①致歉并解释原因；②约定下次会面。",
     "framework": "第一段：说明写信的目的，表示歉意；第二段：解释原因，并询问下次见面时间；第三段：感谢谅解并期待回复。篇章衔接：引言部分（2句）①句说明道歉事由，并简要说明原因；②句表示歉意。主体部分（3句）①句让步表达对原本约定的期待；②句转而说明不能前往的原因；③句进行弥补：约定下次会面时间。结尾部分（2句）①句感谢谅解；②句表达对回复的期待。",
     "template": "本模板由【优秀范文】提炼而来，适用于道歉信。\nI am writing to apologize for 道歉事由, since 简述原因. I am terribly sorry for any inconvenience this causes you and any changes that it necessitates in your current plans.\nI have been looking forward to seeing you since we made the appointment. Unexpectedly, I 说明不能前往的原因. If it is possible, I would like to reschedule our appointment at a time that is convenient for you.\nThank you for understanding in this matter. Looking forward to your reply."
+   },
+   "apply": {
+    "apply_en": "Dear Professor Smith,\nI hope this message finds you well. This letter is intended to offer a sincere apology for the problems caused by the cancellation of my visit.\n\nAs a result of the sudden change in my schedule with regard to the planned visit, you had to face great inconvenience, which should not have happened. Although an urgent family matter partly explains why this happened, the main responsibility still lies with me. In addition, it is strongly recommended that you should let me know a date in early October that suits you so as to improve the situation.\n\nI would appreciate it very much if you could let me know which date suits you by the end of this month.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Professor Smith,\n希望你一切安好。这封信旨在就我取消此次拜访所带来的问题向你致以诚挚的歉意。\n\n由于我在原定的拜访方面行程突变，你不得不面对诸多不便，这本不该发生。尽管家里有急事在一定程度上解释了事情发生的原因，但主要责任仍然在我。另外，强烈建议你告诉我十月初一个对你合适的日期，以便改善当前状况。\n\n如果你能在本月底前告诉我哪个时间合适，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "道歉信三段式：<b>承认问题 → 解释原因（但责任在我）→ 提出补救</b>。第二句的 {{impact}} 要写对方受到的影响，比只说 sorry 有力。",
+     "{{cause}} 不要写成推责（The traffic was terrible），用「家里有急事」这类中性说法即可。",
+     "本题第二问是「另约时间」，所以第三句接建议类（{{action}} 给新方案），最后一句请对方确认时间。"
+    ],
+    "title": "2018 真题套用示范 · Part A 道歉信（+ 另约时间）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "the cancellation of my visit",
+      "cn": "我取消此次拜访",
+      "para": "第一段"
+     },
+     {
+      "name": "fault",
+      "en": "the sudden change in my schedule",
+      "cn": "行程突变",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "the planned visit",
+      "cn": "原定的拜访",
+      "para": "第二段"
+     },
+     {
+      "name": "impact",
+      "en": "great inconvenience",
+      "cn": "诸多不便",
+      "para": "第二段"
+     },
+     {
+      "name": "cause",
+      "en": "an urgent family matter",
+      "cn": "家里有急事",
+      "para": "第二段"
+     },
+     {
+      "name": "task",
+      "en": "let me know a date in early October that suits you",
+      "cn": "告诉我十月初一个对你合适的日期",
+      "para": "第二段"
+     },
+     {
+      "name": "expect",
+      "en": "let me know which date suits you",
+      "cn": "告诉我哪个时间合适",
+      "para": "第三段"
+     },
+     {
+      "name": "deadline",
+      "en": "the end of this month",
+      "cn": "本月底",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "This letter is intended to offer a sincere apology for the problems caused by {{topic}}.",
+      "cn": "这封信旨在就{{topic}}所带来的问题向你致以诚挚的歉意。",
+      "src": "第一段 · 第二句（表明来意） · 模板第4句"
+     },
+     {
+      "en": "As a result of {{fault}} with regard to {{topic}}, you had to face {{impact}}, which should not have happened.",
+      "cn": "由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。",
+      "src": "第二段 · 道歉类 第二句 · 模板第2句"
+     },
+     {
+      "en": "Although {{cause}} partly explains why this happened, the main responsibility still lies with me.",
+      "cn": "尽管{{cause}}在一定程度上解释了事情发生的原因，但主要责任仍然在我。",
+      "src": "第二段 · 道歉类 第三句 · 模板第1句"
+     },
+     {
+      "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
+      "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+      "src": "第二段 · 建议类 第三句 · 模板第1句"
+     },
+     {
+      "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
+      "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
+      "src": "第三段 · 收尾 / 客套 · 模板第1句"
+     }
+    ]
    }
   },
   {
@@ -4466,34 +4558,165 @@
     "template": "该思路适用于关于\"选择/关注因素/原因等\"的占比分析，如：高校学生创业的原因调查、人们选择定居城市的考虑因素等。\nFrom the information given in the pie chart, we can see the survey on 图表主题. Those 对象1 account for 数据1, the biggest among all of the factors, while 对象2 makes up only 数据2.\nMultiple factors underlie the phenomenon reflected in the chart. The most important factor to be considered is the fact that 原因1, which has a significant effect on 对象. In the second place, 原因2.\nIn view of the discussion above, it is no surprise to see such phenomenon in the current context of 背景. And there is reason to believe that this trend will continue in the years to come.\n模板注释：第二段分析现象背后的两方面原因；第三段发表对于图中现象/趋势的总体看法，并对未来情形作出判断。"
    },
    "apply": {
-    "apply_en": "The pie chart presents an uneven distribution among the factors consumers take into account when selecting a restaurant in a certain city in 2017. Distinguishing features account for the largest share, at 36.3%. Service and environment form the middle group, representing 26.8% and 23.8% respectively. In contrast, price and other factors make up relatively small proportions of 8.4% and 4.7%.\n\nThe pattern is closely related to economic development. On the one hand, as per capita disposable income has risen, more people can afford to dine out, and it is natural that they care more about high-quality enjoyment than about price. On the other hand, an increasing number of restaurants with similar prices are available, so distinctive features have become the key to standing out. Seen in this light, the change in priorities is a natural consequence of social life.\n\nFor this trend to continue, both restaurants and consumers should act reasonably. Restaurants should improve service and environment objectively, while consumers should make well-informed choices in light of their own circumstances.",
-    "apply_cn": "该饼图呈现了 2017 年某市消费者选择餐厅时各关注因素之间的不均衡分布。餐厅特色占比最大，达 36.3%。服务与环境处于中间位置，分别占 26.8% 和 23.8%。相比之下，价格及其他因素占比很小，分别为 8.4% 和 4.7%。\n\n这一格局与经济发展密切相关。一方面，随着人均可支配收入提高，更多人能够负担外出就餐，自然更看重高品质享受而非价格；另一方面，价格相近的餐厅越来越多，特色便成为脱颖而出的关键。由此可见，关注重点的转变是社会生活变化的自然结果。\n\n要使这一趋势延续，餐厅与消费者都应理性行事。餐厅应客观提升服务与环境，消费者也应结合自身情况作出理性选择。",
+    "apply_en": "The pie chart shows how the factors consumers weigh when choosing a restaurant break down. Distinctive features come first, at 36.3%. Service and the dining environment follow, at 26.8% and 23.8%. Other factors round off the list at 4.7%. Taken together, the three largest items make up 86.9%.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, dining out has moved from a luxury to an everyday necessity. People now judge dining out by what it does for them rather than by what others think. Online platforms and mobile payment have made dining out quicker and easier to arrange.\n\nOn balance, this is a change worth welcoming. Companies can make dining out cheaper and easier to use, so that it reaches more people. Platforms should design simple, honest interfaces instead of ones that keep users hooked. Individuals should choose what fits their own situation rather than follow the crowd. That is what will decide whether the change lasts.",
+    "apply_cn": "该饼状图展示消费者选择餐厅时考虑的因素的构成情况。餐厅特色排在第一位，占36.3%。紧随其后的是服务和就餐环境，分别占26.8%和23.8%。最后是其他因素，占4.7%。前三项加起来占86.9%。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，外出就餐已从奢侈品变成日常必需。人们现在看外出就餐好不好用，而不是看别人怎么想。线上平台和移动支付让外出就餐变得更快更方便。\n\n总体来看，这是值得欢迎的变化。企业可以把外出就餐做得更便宜好用，让它覆盖更多人。平台应把界面做得简单诚实，而不是想方设法让人上瘾。个人应按自身情况选择，而不是随大流。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "饼图 4+1 项：前两项完整句，中间组用 form the middle group 合并，价格与其他合并一句（In contrast 引出）。",
-     "\"价格仅 8.4%，低于服务与环境\"是本题的对比亮点，务必点出。",
-     "第二段用经济类模板，双因落到\"可支配收入 + 同类餐厅增多\"。",
-     "首句 chart 换成 pie chart，且注意题干有年份（in 2017），可写入首句。"
+     "饼图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
+     "数据要点：distinctive features 占 36.3%；service 占 26.8%；the dining environment 占 23.8%；other factors 占 4.7%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 58 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：2017年某市消费者选择餐厅时的关注因素饼状图",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "pie",
+      "cn": "饼状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "distinctive features",
+      "cn": "餐厅特色",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "service",
+      "cn": "服务",
+      "para": "第一段"
+     },
+     {
+      "name": "item3",
+      "en": "the dining environment",
+      "cn": "就餐环境",
+      "para": "第一段"
+     },
+     {
+      "name": "item4",
+      "en": "other factors",
+      "cn": "其他因素",
+      "para": "第一段"
+     },
+     {
+      "name": "percent total",
+      "en": "86.9%",
+      "cn": "86.9%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent1",
+      "en": "36.3%",
+      "cn": "36.3%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent2",
+      "en": "26.8%",
+      "cn": "26.8%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent3",
+      "en": "23.8%",
+      "cn": "23.8%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent4",
+      "en": "4.7%",
+      "cn": "4.7%",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the factors consumers weigh when choosing a restaurant",
+      "cn": "消费者选择餐厅时考虑的因素",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "dining out",
+      "cn": "外出就餐",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "dining out",
+      "cn": "外出就餐",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "form the middle group, representing …% and …% respectively",
-      "cn": "处于中间位置，分别占……% 和……%"
+      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "make up relatively small proportions of … and …",
-      "cn": "占比相对较小，为……和……"
+      "en": "{{item1}} comes first, at {{percent1}}.",
+      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "src": "静态图表第一段 · 模板第2句"
      },
      {
-      "en": "per capita disposable income",
-      "cn": "人均可支配收入"
+      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
+      "src": "静态图表第一段 · 模板第3句"
      },
      {
-      "en": "the key to standing out",
-      "cn": "脱颖而出的关键"
+      "en": "{{item4}} rounds off the list at {{percent4}}.",
+      "cn": "最后是 {{item4}}，占 {{percent4}}。",
+      "src": "静态图表第一段 · 模板第4句"
      },
      {
-      "en": "the change in priorities",
-      "cn": "关注重点的转变"
+      "en": "Taken together, the three largest items make up {{percent total}}.",
+      "cn": "前三项加起来占 {{percent total}}。",
+      "src": "静态图表第一段 · 功能句3"
+     },
+     {
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+      "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+      "src": "第二段 · 原因（机制句池） · 功能句1"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+      "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+      "src": "第二段 · 原因（机制句池） · 功能句3"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
+      "cn": "企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
+     },
+     {
+      "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
+      "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
+     },
+     {
+      "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
+      "cn": "个人应按自身情况选择，而不是随大流。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

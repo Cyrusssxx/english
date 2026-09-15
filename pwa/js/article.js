@@ -40,9 +40,9 @@ function toggleReserve(btn) {
 }
 
 /** 模板套用示范（置于参考范文上方）：示范文 → 建议 → 关键句型 */
-function applyHtml(ap, year, sid) {
+function applyHtml(ap, year, sid, type) {
     if (!ap || !ap.apply_en) return '';
-    const mk = (typeof APPLY_MARKS !== 'undefined' && APPLY_MARKS && year) ? APPLY_MARKS[year] : null;
+    const mk = (typeof marksFor === 'function') ? marksFor(type, year) : null;
     const ann = t => annotatePhrases(t, sid || '');
     const bodyHtml = renderApplyBody(mk, ann) || `<div class="apply-en">${ann(ap.apply_en)}</div>`;
     const tips = (ap.tips || []).map(t => `<li>${esc(t)}</li>`).join('');
@@ -416,7 +416,11 @@ async function init() {
     document.title = `${year} ${TYPE_NAMES[article.type] || article.type} - 英语二精翻`;
     document.getElementById('navTitle').textContent = `${year} ${TYPE_NAMES[article.type] || article.type}`;
     localStorage.setItem('lastArticle', AID);
-    if (article.apply) await loadApplyMarks();   // 套用示范的逐句标注（很小，命中 SW 缓存）
+    if (article.apply) {
+        // 套用示范的逐句标注（很小，命中 SW 缓存）：大小作文各一份，按类型取
+        if (article.type === 'writing_a') await loadSmallApplyMarks();
+        else await loadApplyMarks();
+    }
 
     // —— 先渲染正文（仅依赖 s.words 预标注，无需词典/生词本数据），打开文章不再整页卡 ——
     renderModeSwitch();
@@ -493,7 +497,7 @@ function renderArticle() {
                 ${article.directions_cn ? `<div class="writing-directions-cn">${esc(article.directions_cn)}</div>` : ''}
             </div>` : ''}
             ${article.chart_img ? `<div class="writing-chart"><img src="${esc(article.chart_img)}" alt="图表" loading="lazy"></div>` : ''}
-            ${applyHtml(article.apply, article.id.slice(0, 4), article.id)}
+            ${applyHtml(article.apply, article.id.slice(0, 4), article.id, article.type)}
             <div class="writing-sample">
                 <div class="rs-label">参考范文</div>
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示中文译文</button>

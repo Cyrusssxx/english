@@ -3719,6 +3719,98 @@
     "prompt": "祝贺信。1）应用文类型为书信，格式需完整；2）收信人为堂弟/堂妹李明，是关系密切的亲属，用词需亲切、自然；3）内容必须包括：恭喜对方被大学录取，给对方为大学生活做准备提出建议，建议内容需与大学新生的学习、生活紧密相关。",
     "framework": "祝贺信一般包括两部分：1. 回顾对方现有成绩、展望美好未来；2. 为更好的发展提出适当建议。第一段第1句概述对方的成绩，第2句表明成绩的现实意义及未来的意义。第二段第1句指出新生活与以往不同，第2句顺势提出为适应变化而改变的建议，第3句解释建议、说明实施建议的意义。",
     "template": "该思路适用于以长辈或前辈的身份恭喜对方取得一定成绩从而人生进入新阶段。Dear ____, I must congratulate you for ____. This success means that you have acquired extraordinary capacity to ____ and, if this capacity can be further developed and purposefully used in ____, you will become competent to ____. However, I must also warn you that the approaching ____ is different to your previous ____. You should make important adjustment for it; that is, you should mentally and practically prepare to ____. I wish you could ____, and gradually grow into an adult/a person ____. Yours, Zhang Wei"
+   },
+   "apply": {
+    "apply_en": "Dear Cousin,\nI hope this message finds you well. Please allow me to extend my warmest congratulations to you.\n\nTo be more specific, your remarkable achievement in the university entrance examination clearly shows your solid academic ability and years of steady effort. To a large extent, this success comes from your willingness to keep working for what you want, especially when dealing with the long preparation for the exam. In particular, you are advised to plan your studies around your interests in university life so that you can gradually improve your sense of direction at university.\n\nTo conclude, all the measures mentioned above are designed to help you settle into university life more smoothly, and your participation is of great importance.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Cousin,\n希望你一切安好。请允许我向你致以最诚挚的祝贺。\n\n更具体地说，你在高考方面的优异表现，清楚地展现了你的扎实的学力和多年稳扎稳打的付出。在很大程度上，这一成功源于你愿意在备考那漫长的过程上为自己想要的东西持续努力。具体而言，建议你围绕你在大学生活中的兴趣规划学习，以便逐步提升你在大学里的方向感。\n\n总而言之，上述各项措施均是为帮助你更顺利地适应大学生活而设，你的参与至关重要。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "祝贺类骨架 = 「具体夸什么」+「这份成绩从哪来」：{{topic}} 填录取这件事，{{quality}}/{{effort}} 填品质与付出。",
+     "本题第二问是「如何为大学生活做准备」，第三句接<b>建议类</b>：{{action}} 是建议动作，{{detail}} 是这样做能看到什么。",
+     "收尾用「以上建议是为了……」这句，比「期待回信」更贴建议类题目。"
+    ],
+    "title": "2011 真题套用示范 · Part A 祝贺信（+ 给建议）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "the university entrance examination",
+      "cn": "高考",
+      "para": "第二段"
+     },
+     {
+      "name": "quality",
+      "en": "solid academic ability and years of steady effort",
+      "cn": "扎实的学力和多年稳扎稳打的付出",
+      "para": "第二段"
+     },
+     {
+      "name": "effort",
+      "en": "keep working for what you want",
+      "cn": "为自己想要的东西持续努力",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "the long preparation for the exam",
+      "cn": "备考那漫长的过程",
+      "para": "第二段"
+     },
+     {
+      "name": "action",
+      "en": "plan your studies",
+      "cn": "规划学习",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "your interests in university life",
+      "cn": "你在大学生活中的兴趣",
+      "para": "第二段"
+     },
+     {
+      "name": "detail",
+      "en": "your sense of direction at university",
+      "cn": "你在大学里的方向感",
+      "para": "第二段"
+     },
+     {
+      "name": "purpose",
+      "en": "help you settle into university life more smoothly",
+      "cn": "帮助你更顺利地适应大学生活",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "Please allow me to extend my warmest congratulations to you.",
+      "cn": "请允许我向你致以最诚挚的祝贺。",
+      "src": "第一段 · 第二句（表明来意） · 模板第8句"
+     },
+     {
+      "en": "To be more specific, your remarkable achievement in {{topic}} clearly shows your {{quality}}.",
+      "cn": "更具体地说，你在{{topic}}方面的优异表现，清楚地展现了你的{{quality}}。",
+      "src": "第二段 · 祝贺类 第二句 · 模板第1句"
+     },
+     {
+      "en": "To a large extent, this success comes from your willingness to {{effort}}, especially when dealing with {{topic}}.",
+      "cn": "在很大程度上，这一成功源于你愿意在{{topic}}上{{effort}}。",
+      "src": "第二段 · 祝贺类 第三句 · 模板第1句"
+     },
+     {
+      "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
+      "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+      "src": "第二段 · 建议类 第二句 · 模板第2句"
+     },
+     {
+      "en": "To conclude, all the measures mentioned above are designed to {{purpose}}, and your participation is of great importance.",
+      "cn": "总而言之，上述各项措施均是为{{purpose}}而设，你的参与至关重要。",
+      "src": "第三段 · 收尾 / 客套 · 模板第4句"
+     }
+    ]
    }
   },
   {
@@ -3946,34 +4038,154 @@
     "template": "可选用该思路中的语句分析市场占有率排名有变化的图表；若图表反映三个品牌中前两名排名互换，则可全盘借用范文中的表达。____ market was still dominated by ____ brands. ____ remained the third most popular in the market with a slight increase/decline in market share. A noticeable change occurred in ____ brands. ____, whose share of market slipped by almost ____%, were displaced from their leading position by ____, which expanded their share by ____. The performance of ____ is to be expected, given their ____. The big change in the performance of ____ seems sudden but is not unexpected. （具体阐释后来者登上第一位置的主观原因）When ____ were growing, ____ were hit by reputation crisis caused by ____.（阐释昔日冠军失去第一位置的主观原因）The plight of ____ is the reminder that ____ is the soul of products. Hopefully, ____ will consistently guarantee ____, thereby protecting their own reputation to maintain market popularity."
    },
    "apply": {
-    "apply_en": "The bar chart shows that the market shares associated with the three auto brands did not move in a uniform direction during the periods presented. Chinese brands climbed from a modest share to the leading position, while Japanese brands fell by nearly 10 percentage points and lost their top place. By contrast, American brands held steady, with only a slight increase.\n\nThe shift is not unexpected. On the one hand, Chinese auto producers have narrowed the technology gap between themselves and foreign competitors and have cleverly adjusted their promotion strategies. On the other hand, as the national economy grows, consumers increasingly favour products that suit their own needs and budgets.\n\nFor domestic brands to hold their advantage, continued efforts are essential. Manufacturers should keep improving quality and after-sales service, while consumers should make well-informed choices in light of their own circumstances.",
-    "apply_cn": "该柱状图表明，三个汽车品牌的市场份额在相应时期内并未朝着相同方向变化。国产品牌从一个不大的份额攀升至领先地位，日系品牌则下降近 10 个百分点、失去头名位置。相比之下，美系品牌保持稳定，仅略有增长。\n\n这一变化并不意外。一方面，中国汽车制造商缩小了与外国竞争者的技术差距，并灵活调整了营销策略；另一方面，随着国民经济发展，消费者越来越青睐契合自身需求与预算的产品。\n\n国产品牌若要保持优势，仍需持续努力。厂商应不断提升质量与售后服务，消费者也应结合自身情况作出理性选择。",
+    "apply_en": "The bar chart tracks the market shares of Chinese, Japanese and American car brands from 2008 to 2009. From 2008 to 2009, Chinese brands rose from 26% to 31%. Over the same period, Japanese brands slipped from 35% to 26%. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. People now judge car ownership by what it does for them rather than by what others think. Public spending on infrastructure has made car ownership far more widely available. Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands. Cities have absorbed millions of new residents, and demand for car ownership has grown with them.\n\nOn balance, this is a change worth welcoming. Companies can make domestic car brands cheaper and easier to use, so that they reach more people. Clear rules and steady funding matter more than one-off campaigns. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图记录了2008年到2009年期间国产、日系与美系汽车品牌的市场份额的变化。自2008年至2009年，国产品牌由26%升至31%。同一时期，日系品牌由35%降到26%。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。人们现在看汽车保有量好不好用，而不是看别人怎么想。公共基础设施投入让汽车保有量的覆盖面大大增加。国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。城市吸纳了大量新居民，汽车保有量的需求随之增长。\n\n总体来看，这是值得欢迎的变化。企业可以把国产汽车品牌做得更便宜好用，让它覆盖更多人。明确的规则和持续投入，比一次性活动更重要。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "本题是**有升有降**的典型：首句务必用 did not move in a uniform direction。",
-     "三事物分组写法：升的（国产）→ 降的（日系）→ 持平的（美系，By contrast 引出），与静态模板的\"分组\"思路一致。",
-     "第二段套经济类模板，把\"经济发展\"落到\"技术差距缩小 + 营销策略\"，即原文的两条因果。",
-     "注意份额用 percentage points（百分点），不要与 percent 混用。"
+     "柱状图、有升有降（3 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
+     "数据要点：Chinese brands 26% → 31%；Japanese brands 35% → 26%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 73 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 图表作文：汽车品牌市场份额变化",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "bar",
+      "cn": "柱状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "Chinese brands",
+      "cn": "国产品牌",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "Japanese brands",
+      "cn": "日系品牌",
+      "para": "第一段"
+     },
+     {
+      "name": "num1",
+      "en": "26%",
+      "cn": "26%",
+      "para": "第一段"
+     },
+     {
+      "name": "num2",
+      "en": "31%",
+      "cn": "31%",
+      "para": "第一段"
+     },
+     {
+      "name": "num3",
+      "en": "35%",
+      "cn": "35%",
+      "para": "第一段"
+     },
+     {
+      "name": "num4",
+      "en": "26%",
+      "cn": "26%",
+      "para": "第一段"
+     },
+     {
+      "name": "time1",
+      "en": "2008",
+      "cn": "2008 年",
+      "para": "第一段"
+     },
+     {
+      "name": "time2",
+      "en": "2009",
+      "cn": "2009 年",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the market shares of Chinese, Japanese and American car brands",
+      "cn": "国产、日系与美系汽车品牌的市场份额",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "car ownership",
+      "cn": "汽车保有量",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "domestic car brands",
+      "cn": "国产汽车品牌",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "did not move in a uniform direction",
-      "cn": "并未朝着相同方向变化"
+      "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+      "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+      "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "were displaced from their leading position",
-      "cn": "从领先位置被取代"
+      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+      "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
+      "src": "动态图表第一段 · 功能句1"
      },
      {
-      "en": "expanded their share by nearly the same margin",
-      "cn": "以相近幅度扩大份额"
+      "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
+      "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
+      "src": "动态图表第一段 · 功能句2"
      },
      {
-      "en": "narrowed the technology gap",
-      "cn": "缩小了技术差距"
+      "en": "The two moved in opposite directions.",
+      "cn": "两者朝相反的方向变化。",
+      "src": "动态图表第一段 · 功能句6"
      },
      {
-      "en": "By contrast",
-      "cn": "相比之下（用于转折对比）"
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+      "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+      "src": "第二段 · 原因（机制句池） · 功能句6"
+     },
+     {
+      "en": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.",
+      "cn": "国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。",
+      "src": "第二段 · 原因（机制句池） · 功能句13"
+     },
+     {
+      "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
+      "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+      "src": "第二段 · 原因（机制句池） · 功能句7"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
+      "cn": "企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
+     },
+     {
+      "en": "Clear rules and steady funding matter more than one-off campaigns.",
+      "cn": "明确的规则和持续投入，比一次性活动更重要。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

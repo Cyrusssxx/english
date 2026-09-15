@@ -3791,7 +3791,87 @@
    "sample_cn": "亲爱的杰克：\n我很高兴能和你一起进行古镇老宅保护的调查。我写这封信的目的是分享我的调查计划。\n首先，我们应该向建筑师求助以获得一些专业的指导和建议。此外，我们可以在当地人中开展这项调查并收集他们对老宅保护的意见，因为他们对那里的老宅的具体情况了解得更多。而且，我们可以通过照片来记录老宅的情况。\n你对于这个计划有什么看法？如果你有任何其他见解，请与我联系。\n你真诚的\n李明",
    "questions": [],
    "directions": "Suppose you and Jack are going to do a survey on the protection of old houses in an ancient town. Write him an email to 1) put forward your plan, and 2) ask for his opinion. Write your answer in about 100 words on the ANSWER SHEET. Do not use your own name in your email; use “Li Ming,9 instead. (10 points)",
-   "directions_cn": "假设你和杰克打算在一座古镇开展一项关于老房子保护的调查。给他写一封电子邮件，1) 提出你的计划，并2) 征求他的意见。你应在答题卡上写约100词的答案。不要在邮件中使用你自己的名字，用\"Li Ming\"代替。（10分）"
+   "directions_cn": "假设你和杰克打算在一座古镇开展一项关于老房子保护的调查。给他写一封电子邮件，1) 提出你的计划，并2) 征求他的意见。你应在答题卡上写约100词的答案。不要在邮件中使用你自己的名字，用\"Li Ming\"代替。（10分）",
+   "apply": {
+    "apply_en": "Dear Jack,\nI hope this message finds you well. The purpose of this letter is to discuss our survey plan on the protection of old houses with you in detail.\n\nFrom a practical perspective, the survey mainly involves interviews with local residents and on-site visits, aiming to find out how these old houses can be better protected. More specifically, I am not sure whether my plan is practical, so I would value your opinion. Since you are familiar with the situation there, your advice would be of great value to me.\n\nI would appreciate it very much if you could tell me what you think of the plan by next Monday.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Jack,\n希望你一切安好。这封信的目的是想与你详细讨论我们关于老宅保护的调查计划。\n\n从实践角度看，这次调查主要涵盖走访当地居民和实地勘察，其根本目标在于弄清如何更好地保护这些老宅。更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。由于你对那边的情况很熟悉，你的建议对我会非常有价值。\n\n如果你能在下周一前告诉我你对这个计划的看法，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "「提出计划」用介绍类：{{content}} 填具体做法（走访 + 实地勘察），{{purpose}} 填目的，比只写 plan 有内容。",
+     "「征求意见」用询问类两句（想问什么 + 为什么问你）；本题两人是搭档，问句可以直白一些。",
+     "收尾把 {{deadline}} 写成 next Monday，并请对方直接给意见——本题不需要太多客套。"
+    ],
+    "title": "2024 真题套用示范 · Part A 计划 + 征求意见",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "our survey plan on the protection of old houses",
+      "cn": "我们关于老宅保护的调查计划",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the survey",
+      "cn": "这次调查",
+      "para": "第二段"
+     },
+     {
+      "name": "content",
+      "en": "interviews with local residents and on-site visits",
+      "cn": "走访当地居民和实地勘察",
+      "para": "第二段"
+     },
+     {
+      "name": "purpose",
+      "en": "find out how these old houses can be better protected",
+      "cn": "弄清如何更好地保护这些老宅",
+      "para": "第二段"
+     },
+     {
+      "name": "expect",
+      "en": "tell me what you think of the plan",
+      "cn": "告诉我你对这个计划的看法",
+      "para": "第三段"
+     },
+     {
+      "name": "deadline",
+      "en": "next Monday",
+      "cn": "下周一",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "The purpose of this letter is to discuss {{topic}} with you in detail.",
+      "cn": "这封信的目的是想与你详细讨论{{topic}}。",
+      "src": "第一段 · 第二句（表明来意） · 模板第9句"
+     },
+     {
+      "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
+      "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。",
+      "src": "第二段 · 介绍类 第二句 · 模板第2句"
+     },
+     {
+      "en": "More specifically, I am not sure whether my plan is practical, so I would value your opinion.",
+      "cn": "更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。",
+      "src": "第二段 · 询问类 第二句（想问什么） · 模板第2句"
+     },
+     {
+      "en": "Since you are familiar with the situation there, your advice would be of great value to me.",
+      "cn": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。",
+      "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
+     },
+     {
+      "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
+      "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
+      "src": "第三段 · 收尾 / 客套 · 模板第1句"
+     }
+    ]
+   }
   },
   {
    "id": "2024_writingb",
@@ -3806,34 +3886,159 @@
    "directions": "Write an essay based on the chart below. In your essay, you should 1) describe and interpret the chart, and 2) give your comments. Write your answer in about 150 words on the ANSWER SHEET. (15 points)",
    "directions_cn": "根据下面的图表写一篇短文。在你的短文中，你应该1) 描述并解读图表，并2) 发表你的评论。你应在答题卡上写约150词的答案。（15分）",
    "apply": {
-    "apply_en": "The bar chart presents an uneven distribution among the benefits students gained from labor practice courses at a certain university. Gaining relevant knowledge accounts for the largest share, at 91.3%. Improving practical ability follows closely, representing 84.8%. In contrast, obtaining cheerful moods and enhancing cooperative ability make up relatively small proportions of 54.4% and 32.6% respectively.\n\nThe chart reflects the university's tendency in course design to provide knowledge and foster practical ability. This can be attributed to the following aspects. Firstly, the practical knowledge offered by the course enables students to better understand their interests and paves the way for their career development. Moreover, hands-on experience is highly valued in today's job market, which encourages students to focus on applicable skills.\n\nFor labor practice courses to play a greater role, universities should keep improving the curriculum, while students should make well-informed choices in light of their own needs.",
-    "apply_cn": "该柱状图呈现了某高校学生从劳动实践课中所得收获之间的不均衡分布。获得相关知识占比最大，达 91.3%。提升实践能力紧随其后，占 84.8%。相比之下，获得愉悦心情与增强合作能力占比相对较小，分别为 54.4% 和 32.6%。\n\n该图反映了高校在课程设计中提供知识、培养实践能力的倾向。这可归因于以下方面。首先，课程提供的实用知识使学生更好地了解自身兴趣，为职业发展铺路；此外，实践经历在当今就业市场备受重视，促使学生关注可应用技能。\n\n要使劳动实践课发挥更大作用，高校应持续改进课程，学生也应结合自身需求作出理性选择。",
+    "apply_en": "The bar chart shows how labour practice course gains break down. Gaining relevant knowledge comes first, at 91.3%. Improving practical ability and obtaining cheerful moods follow, at 84.8% and 54.4%. Enhancing cooperative ability rounds off the list at 32.6%. The gap between the largest and the smallest is wide.\n\nThe numbers in the chart are the result of deeper changes. Schools now treat labour practice courses as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge labour practice courses by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build practical training into daily routines instead of treating it as an extra. What matters most is whether families and schools treat practical training as a normal part of life. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图展示劳动实践课的收获的构成情况。获得相关知识排在第一位，占91.3%。紧随其后的是提高实践能力和获得愉悦心情，分别占84.8%和54.4%。最后是增强合作能力，占32.6%。最大项与最小项之间差距很大。\n\n图里的数字，是更深层变化的结果。学校现在把劳动实践课当成日常安排，而不是可选项。现在用人单位既看成绩，也看经验。人们现在看劳动实践课好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把实践训练纳入日常安排，而不是当成额外任务。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "柱状图、占比分布 → 静态模板：最大项 + 紧随项 + In contrast 收尾的两项。",
-     "\"知识 91.3% / 实践 84.8%\"两项都超八成，是本题的\"高占比组\"，与前两名的表述要连贯。",
-     "第二段套校园类模板，双因：课程设计 + 就业市场需求。",
-     "注意题干的 gains 是\"收获\"，第二段解释\"为什么这些收获被认可\"。"
+     "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
+     "数据要点：gaining relevant knowledge 占 91.3%；improving practical ability 占 84.8%；obtaining cheerful moods 占 54.4%；enhancing cooperative ability 占 32.6%。数值与图逐个核对，别漏最大值。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 70 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：某高校劳动实践课学生主要收获调查（柱状图）",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "bar",
+      "cn": "柱状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "gaining relevant knowledge",
+      "cn": "获得相关知识",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "improving practical ability",
+      "cn": "提高实践能力",
+      "para": "第一段"
+     },
+     {
+      "name": "item3",
+      "en": "obtaining cheerful moods",
+      "cn": "获得愉悦心情",
+      "para": "第一段"
+     },
+     {
+      "name": "item4",
+      "en": "enhancing cooperative ability",
+      "cn": "增强合作能力",
+      "para": "第一段"
+     },
+     {
+      "name": "percent1",
+      "en": "91.3%",
+      "cn": "91.3%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent2",
+      "en": "84.8%",
+      "cn": "84.8%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent3",
+      "en": "54.4%",
+      "cn": "54.4%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent4",
+      "en": "32.6%",
+      "cn": "32.6%",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "labour practice course gains",
+      "cn": "劳动实践课的收获",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "labour practice courses",
+      "cn": "劳动实践课",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "practical training",
+      "cn": "实践训练",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "accounts for the largest share, at …%",
-      "cn": "占比最大，达……%"
+      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "follows closely, representing …%",
-      "cn": "紧随其后，占……%"
+      "en": "{{item1}} comes first, at {{percent1}}.",
+      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "src": "静态图表第一段 · 模板第2句"
      },
      {
-      "en": "make up relatively small proportions of …% and …% respectively",
-      "cn": "占比相对较小，分别为……% 和……%"
+      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
+      "src": "静态图表第一段 · 模板第3句"
      },
      {
-      "en": "paves the way for their career development",
-      "cn": "为职业发展铺路"
+      "en": "{{item4}} rounds off the list at {{percent4}}.",
+      "cn": "最后是 {{item4}}，占 {{percent4}}。",
+      "src": "静态图表第一段 · 模板第4句"
      },
      {
-      "en": "hands-on experience",
-      "cn": "实践/动手经历"
+      "en": "The gap between the largest and the smallest is wide.",
+      "cn": "最大项与最小项之间差距很大。",
+      "src": "静态图表第一段 · 功能句5"
+     },
+     {
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+      "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+      "src": "第二段 · 原因（机制句池） · 功能句10"
+     },
+     {
+      "en": "Employers now look for experience as much as for grades.",
+      "cn": "现在用人单位既看成绩，也看经验。",
+      "src": "第二段 · 原因（机制句池） · 功能句15"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+      "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+      "src": "第二段 · 原因（机制句池） · 功能句14"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
+      "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+     },
+     {
+      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

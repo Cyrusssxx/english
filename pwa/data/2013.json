@@ -3846,6 +3846,104 @@
     "prompt": "邀请信。1）应用文类型为书信（电子邮件），格式需完整；2）收信人为同学，用语不需太正式，亲切即可；3）信中要介绍清楚义卖的时间、内容以及目的（帮助需要帮助的孩子），并邀请同学参加，可补充义卖什么时候开始、有什么货品以及如何帮助孩子等细节。",
     "framework": "邀请信是让别人对某一活动感兴趣而选择参加的信件。第一段介绍活动的举办时间、地点、目的；在阐明目的后指出对方的参与对达成目的具有关键作用，从感性层面唤起对方兴趣。第二段首句借势提出希望对方参与，末句暗示活动能给参与者带来的利益，以进一步增加对方的兴趣。",
     "template": "该思路适用于邀请对方参加某项活动。Dear ____, It is a great honor to inform you that ____ is scheduled for 日期 from ____ a.m. to ____ p.m. ____ is going to be held in 地点 for the sake of ____.（具体介绍目的）Your participation is necessary to achieve this aim. Hopefully, you can come and ____. You will happily find ____（暗示活动能给参与者带来的利益）. Yours sincerely, Li Ming"
+   },
+   "apply": {
+    "apply_en": "Dear classmates,\nI hope this message finds you well. I am writing to you regarding the matter of the charity sale for children in need.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the charity sale will take place at the school auditorium, providing a fixed venue for all classmates. In particular, I would like to invite you to join us in the charity sale, which will offer you a chance to do something meaningful for children in need.\n\nYou are kindly requested to let me know if you can come so that all the money raised can be implemented more effectively.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear classmates,\n希望你一切安好。我写信是关于为困境儿童举办的慈善义卖这一事项。\n\n至于本次活动的具体安排，主要如下。首先，本次义卖将在学校礼堂举行，为全体同学提供固定场所。具体而言，我诚挚邀请你参加我们这次义卖，这将为你带来为困境儿童做点实事的机会。\n\n请你告诉我你能否参加，以便所筹得的善款能够得到更为有效的落实。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "本题两问 = 「告知细节」+「鼓励参加」：第二段先用<b>通知类</b>交代时间地点，再用<b>邀请类</b>拉人。",
+     "{{place}} 一定要填具体场地（学校礼堂 / 操场），这是「细节」的评分点。",
+     "写给同学用 <b>Dear classmates,</b>；收尾句的 {{topic}} 填「所筹善款」这类活动目标，句子才顺。"
+    ],
+    "title": "2013 真题套用示范 · Part A 告知 + 鼓励参加（班级义卖）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "the charity sale for children in need",
+      "cn": "为困境儿童举办的慈善义卖",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the charity sale",
+      "cn": "本次义卖",
+      "para": "第二段"
+     },
+     {
+      "name": "place",
+      "en": "the school auditorium",
+      "cn": "学校礼堂",
+      "para": "第二段"
+     },
+     {
+      "name": "audience",
+      "en": "classmates",
+      "cn": "同学",
+      "para": "第二段"
+     },
+     {
+      "name": "join",
+      "en": "join",
+      "cn": "参加",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "us in the charity sale",
+      "cn": "我们这次义卖",
+      "para": "第二段"
+     },
+     {
+      "name": "gain",
+      "en": "a chance to do something meaningful for children in need",
+      "cn": "为困境儿童做点实事的机会",
+      "para": "第二段"
+     },
+     {
+      "name": "expect",
+      "en": "let me know if you can come",
+      "cn": "告诉我你能否参加",
+      "para": "第三段"
+     },
+     {
+      "name": "topic",
+      "en": "all the money raised",
+      "cn": "所筹得的善款",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "I am writing to you regarding the matter of {{topic}}.",
+      "cn": "我写信是关于{{topic}}这一事项。",
+      "src": "第一段 · 第二句（表明来意） · 模板第1句"
+     },
+     {
+      "en": "As for the planned event, the main arrangements are as follows.",
+      "cn": "至于本次活动的具体安排，主要如下。",
+      "src": "第二段 · 通用首句（引出下文） · 模板第3句"
+     },
+     {
+      "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
+      "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+      "src": "第二段 · 通知类 第二句 · 模板第2句"
+     },
+     {
+      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
+      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+      "src": "第二段 · 邀请类 第二句 · 模板第1句"
+     },
+     {
+      "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
+      "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+      "src": "第三段 · 收尾 / 客套 · 模板第2句"
+     }
+    ]
    }
   },
   {
@@ -4037,34 +4135,131 @@
     "template": "该思路适用于描写和分析反映百分比上升的图表。The rate of ____ rises annually from ____% in 年份 to ____% in 年份. The biggest increase occurs in 年份, with the rate ____% higher than a year ago. ____ will become increasingly willing to ____, mainly because of the growing wish to ____. It is reasonable and wise to ____, especially after ____. Another motive is obviously ____. As ____, there will be ____, undoubtedly pushing ____ to ____. It can indeed be beneficial for ____ to ____. However, the risk of ____ should be also considered. To benefit from ____ without ____, ____ should ____."
    },
    "apply": {
-    "apply_en": "The bar chart shows that the proportion of college students taking part-time jobs rose steadily during the periods presented. The rate climbed from 67.77% in the first year to 88.24% in the final year, and the biggest increase occurred in the graduation year, when the figure was 16% higher than a year earlier.\n\nThe upward trend stems from students' growing wish to gain practical experience. Undoubtedly, the competitive job market has laid a solid foundation for this change. As the school years advance, students attach greater importance to career preparation and become increasingly willing to embrace real working environments. Consequently, part-time jobs have gradually become integrated into campus life, while their practical value has gained wider recognition.\n\nFor this trend to bring lasting benefits, efforts from both universities and students are essential. Universities should provide more internship channels, while students should strike a balance between work and study in light of their own circumstances.",
-    "apply_cn": "该柱状图表明，大学生兼职比例在相应时期内持续上升。比例从大一的 67.77% 升至大四的 88.24%，其中增幅最大的是毕业那年，比上年高出 16%。\n\n这一上升趋势源于学生获取实践经验意愿的增强。毫无疑问，竞争激烈的就业市场为这一变化奠定了坚实基础。随着年级升高，学生更加重视职业准备，也更愿意走进真实的工作环境。兼职因此逐渐融入校园生活，其实践价值也得到更多认可。\n\n要使这一趋势带来长久收益，需要高校与学生共同努力。高校应提供更多实习渠道，学生也应结合自身情况平衡好学业与工作。",
+    "apply_en": "The bar chart tracks the proportion of college students taking part-time jobs from the first year to the final year. From the first year to the final year, the proportion of college students taking part-time jobs rose from 67.77% to 88.24%. Growth was slow at first and then sped up.\n\nThe numbers in the chart are the result of deeper changes. Schools now treat part-time work as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge part-time work by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build part-time work into daily routines instead of treating it as an extra. Families matter most: children copy what adults do far more than what they are told. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图记录了大一到大四期间大学生兼职比例的变化。自大一至大四，大学生兼职比例由67.77%升至88.24%。增长起初缓慢，后来明显加快。\n\n图里的数字，是更深层变化的结果。学校现在把兼职当成日常安排，而不是可选项。现在用人单位既看成绩，也看经验。人们现在看兼职好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把兼职纳入日常安排，而不是当成额外任务。家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "本题是**单事物持续上升**：直接写一条上升线，用 showing a steady upward trend 收尾，不必硬凑对比句。",
-     "\"毕业年增幅最大\"是题眼，用 the biggest increase occurred in … 单列一句。",
-     "第二段套经济类模板，把落点写成\"就业竞争 + 职业准备\"。",
-     "数字要原文照抄（67.77% / 88.24% / 16%），百分比精确到小数点。"
+     "柱状图、单值逐年上升（1 个事物 / 动态）→ 用 **① 一条线在走 骨架**（适用 2013 · 2023）。",
+     "数据要点：the proportion of college students taking part-time jobs 67.77% → 88.24%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：大学生兼职比例柱状图",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "bar",
+      "cn": "柱状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "the proportion of college students taking part-time jobs",
+      "cn": "大学生兼职比例",
+      "para": "第一段"
+     },
+     {
+      "name": "num1",
+      "en": "67.77%",
+      "cn": "67.77%",
+      "para": "第一段"
+     },
+     {
+      "name": "num2",
+      "en": "88.24%",
+      "cn": "88.24%",
+      "para": "第一段"
+     },
+     {
+      "name": "time1",
+      "en": "the first year",
+      "cn": "大一",
+      "para": "第一段"
+     },
+     {
+      "name": "time2",
+      "en": "the final year",
+      "cn": "大四",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the proportion of college students taking part-time jobs",
+      "cn": "大学生兼职比例",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "part-time work",
+      "cn": "兼职",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "part-time work",
+      "cn": "兼职",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "rose steadily during the periods presented",
-      "cn": "在相应时期内持续上升"
+      "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+      "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+      "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "showing a steady upward trend",
-      "cn": "呈现稳定上升趋势"
+      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+      "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
+      "src": "动态图表第一段 · 功能句1"
      },
      {
-      "en": "the biggest increase occurred in …",
-      "cn": "最大增幅出现在……"
+      "en": "Growth was slow at first and then sped up.",
+      "cn": "增长起初缓慢，后来明显加快。",
+      "src": "动态图表第一段 · 功能句5"
      },
      {
-      "en": "gain practical experience",
-      "cn": "获取实践经验"
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
-      "en": "strike a balance between work and study",
-      "cn": "平衡工作与学业"
+      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+      "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+      "src": "第二段 · 原因（机制句池） · 功能句10"
+     },
+     {
+      "en": "Employers now look for experience as much as for grades.",
+      "cn": "现在用人单位既看成绩，也看经验。",
+      "src": "第二段 · 原因（机制句池） · 功能句15"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+      "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+      "src": "第二段 · 原因（机制句池） · 功能句14"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
+      "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+     },
+     {
+      "en": "Families matter most: children copy what adults do far more than what they are told.",
+      "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句4"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

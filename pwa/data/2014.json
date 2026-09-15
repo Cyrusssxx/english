@@ -4255,6 +4255,86 @@
     "prompt": "向未来室友写邮件介绍自己。指令解读：write him an email——规定应用文类型为书信；tell him about your living habits——信件主要内容是告知对方你的生活习惯；ask for advice about living there——信中还需要求对方就你居住提出建议，也可以涉及对你的要求；信件背景为你将留学期间与当地学生John合住，宏观话题为对外文化交流。要点归纳：1）题目要求写一封信，书信格式需完整；2）收信人为未来合住的室友，语气应亲切、自然；3）信的内容包括介绍自己的生活习惯、询问对方对自己的建议或要求，最好能涉及与文化、地域差异相关的内容，以增加文章深度。",
     "framework": "该封信的写作目的是让双方初步了解彼此，侧重于联络感情和自我介绍。首段在寒暄的基础上，提出初步了解的意义，引出第二段的自我介绍。第二段先对自己的习惯进行介绍，再表达对对方习惯的关注，并表示希望收到对方的回信。",
     "template": "该思路适用于初次见面前的自我介绍。Dear ____, I am glad that it is you who will ____ and cannot wait to meet you. Before my ____, I think it is necessary to arrive at a basic understanding about each other's ____. As a typical ____, I observe ____ rules（用同位语解释说明rules）. In addition, I prefer ____ and hope to get your tolerance for ____. There must be some special ____ rules to be respected in your ____. Can you introduce them to me in advance? Hope to get your early reply. Yours, Li Ming"
+   },
+   "apply": {
+    "apply_en": "Dear John,\nI hope this message finds you well. I am writing to you regarding the matter of our living habits and the life there.\n\nMore specifically, in my daily life I usually keep the room clean and quiet and cook simple meals at home, which helps me maintain a regular and healthy routine. In particular, I would like to know how I can better adapt to the local way of life. Since you are familiar with the situation there, your advice would be of great value to me.\n\nI would appreciate it very much if you could share your advice with me by I move in next month.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear John,\n希望你一切安好。我写信是关于我们的生活习惯以及那边的生活这一事项。\n\n更具体而言，在日常生活中，我通常会保持房间整洁安静并且在家做些简单的饭菜，这有助于我保持规律健康的生活节奏。具体而言，我想知道我怎样才能更好地适应当地的生活方式。由于你对那边的情况很熟悉，你的建议对我会非常有价值。\n\n如果你能在我下个月搬进去之前前把你的建议告诉我，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "「介绍生活习惯」有现成句：{{habit1}}/{{habit2}} 各填一个具体习惯（作息、做饭、安静），{{advantage}} 填好处。",
+     "「征求意见」用<b>询问类</b>两句：先说要问什么，再解释为什么问你（因为你熟悉那边情况）。",
+     "收尾 {{deadline}} 给一个时间点（我下个月搬进去之前），比空泛的「期待回复」更像真实邮件。"
+    ],
+    "title": "2014 真题套用示范 · Part A 介绍自己 + 征求意见",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "our living habits and the life there",
+      "cn": "我们的生活习惯以及那边的生活",
+      "para": "第一段"
+     },
+     {
+      "name": "habit1",
+      "en": "keep the room clean and quiet",
+      "cn": "保持房间整洁安静",
+      "para": "第二段"
+     },
+     {
+      "name": "habit2",
+      "en": "cook simple meals at home",
+      "cn": "在家做些简单的饭菜",
+      "para": "第二段"
+     },
+     {
+      "name": "advantage",
+      "en": "a regular and healthy routine",
+      "cn": "规律健康的生活节奏",
+      "para": "第二段"
+     },
+     {
+      "name": "expect",
+      "en": "share your advice with me",
+      "cn": "把你的建议告诉我",
+      "para": "第三段"
+     },
+     {
+      "name": "deadline",
+      "en": "I move in next month",
+      "cn": "我下个月搬进去之前",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "I am writing to you regarding the matter of {{topic}}.",
+      "cn": "我写信是关于{{topic}}这一事项。",
+      "src": "第一段 · 第二句（表明来意） · 模板第1句"
+     },
+     {
+      "en": "More specifically, in my daily life I usually {{habit1}} and {{habit2}}, which helps me maintain {{advantage}}.",
+      "cn": "更具体而言，在日常生活中，我通常会{{habit1}}并且{{habit2}}，这有助于我保持{{advantage}}。",
+      "src": "第二段 · 介绍类 第二句 · 模板第3句"
+     },
+     {
+      "en": "In particular, I would like to know how I can better adapt to the local way of life.",
+      "cn": "具体而言，我想知道我怎样才能更好地适应当地的生活方式。",
+      "src": "第二段 · 询问类 第二句（想问什么） · 模板第1句"
+     },
+     {
+      "en": "Since you are familiar with the situation there, your advice would be of great value to me.",
+      "cn": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。",
+      "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
+     },
+     {
+      "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
+      "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
+      "src": "第三段 · 收尾 / 客套 · 模板第1句"
+     }
+    ]
    }
   },
   {
@@ -4514,34 +4594,159 @@
     "template": "当数量关系呈此消彼长趋势，且具有积极意义又隐藏着问题时，可以采用该思路。From 时间 to 时间, while moderate increase occurred in total ____, ____ experienced a dramatic shift. ____ increased considerably from 数据 to 数据; contrastingly ____ declined from 数据 to 数据. ____ largely because of the joint effects of ____（过渡，引出原因）.（具体分析原因1）Meanwhile,（具体分析原因2）. ____ is a sure indication of ____ achievement. However, we should not ignore the inability of ____ to ____ due to ____（具体阐释问题）. In this sense, we cannot be superficially satisfied with the optimistic figure, but should endeavor to ____."
    },
    "apply": {
-    "apply_en": "The bar chart shows that the population figures associated with urban and rural areas did not move in a uniform direction from 1990 to 2010. The urban population climbed from 300 million to 670 million, while the rural population declined from 820 million to 680 million over the same span.\n\nThe narrowing gap results from the joint effects of urbanization and unequal economic opportunities. In the twenty years, urban sprawl transformed millions of peasants into city residents, and many more chose to leave their hometowns on their own initiative. Meanwhile, as urban living standards improved considerably, few economic opportunities fell on rural areas, which prompted the young to seek a better life in cities.\n\nFor urban and rural areas to develop in a balanced way, concerted efforts are essential. Relevant authorities should channel more resources into the countryside and create favorable conditions for local employment, so that rural residents can also benefit from national progress.",
-    "apply_cn": "该柱状图表明，1990 至 2010 年间城乡人口数量并未朝着相同方向变化。城镇人口从 3 亿攀升至 6.7 亿，而农村人口在同一时期从 8.2 亿降至 6.8 亿。\n\n差距的缩小源于城镇化与经济机会不均的共同作用。二十年间，城市扩张使数百万农民被动转为城镇居民，更多人则主动离开家乡。与此同时，城镇生活水平大幅提高，而农村地区获得的经济机会很少，这促使年轻人进城寻求更好的生活。\n\n要使城乡协调发展，需要各方共同努力。有关部门应向农村倾斜更多资源，为本地就业创造有利条件，让农村居民也能从国家发展中获益。",
+    "apply_en": "The bar chart tracks the urban and rural population from 1990 to 2010. From 1990 to 2010, the urban population rose from 300 million to 670 million. Over the same period, the rural population slipped from 820 million to 680 million. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. Cities have absorbed millions of new residents, and demand for city living has grown with them. As household incomes have grown, city living has moved from a luxury to an everyday necessity. Public spending on infrastructure has made city living far more widely available. People now judge city living by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. What matters most is whether families and schools treat city living as a normal part of life. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图记录了1990年到2010年期间城乡人口的变化。自1990年至2010年，城镇人口由3亿升至6.7亿。同一时期，乡村人口由8.2亿降到6.8亿。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。城市吸纳了大量新居民，城市生活的需求随之增长。随着家庭收入提高，城市生活已从奢侈品变成日常必需。公共基础设施投入让城市生活的覆盖面大大增加。人们现在看城市生活好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让城市生活不只属于付得起钱的人。明确的规则和持续投入，比一次性活动更重要。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "本题是**一升一降**的经典图：首句用 did not move in a uniform direction，主体句用 climbed … while … declined。",
-     "数据只有首末两年，两句写完即可；无需 By contrast（while 已表对比）。",
-     "第二段用经济类模板，落点写\"城镇化 + 经济机会不均\"。",
-     "第三段若写负面倾向，可把 authorities should 换成 channel more resources into the countryside。"
+     "柱状图、一升一降（2 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
+     "数据要点：the urban population 300 million → 670 million；the rural population 820 million → 680 million。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 72 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：城市与乡村人口的变化",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "bar",
+      "cn": "柱状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "the urban population",
+      "cn": "城镇人口",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "the rural population",
+      "cn": "乡村人口",
+      "para": "第一段"
+     },
+     {
+      "name": "num1",
+      "en": "300 million",
+      "cn": "3 亿",
+      "para": "第一段"
+     },
+     {
+      "name": "num2",
+      "en": "670 million",
+      "cn": "6.7 亿",
+      "para": "第一段"
+     },
+     {
+      "name": "num3",
+      "en": "820 million",
+      "cn": "8.2 亿",
+      "para": "第一段"
+     },
+     {
+      "name": "num4",
+      "en": "680 million",
+      "cn": "6.8 亿",
+      "para": "第一段"
+     },
+     {
+      "name": "time1",
+      "en": "1990",
+      "cn": "1990 年",
+      "para": "第一段"
+     },
+     {
+      "name": "time2",
+      "en": "2010",
+      "cn": "2010 年",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the urban and rural population",
+      "cn": "城乡人口",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "city living",
+      "cn": "城市生活",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "city living",
+      "cn": "城市生活",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "did not move in a uniform direction",
-      "cn": "并未朝着相同方向变化"
+      "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+      "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+      "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "climbed from … to …, while … declined from … to …",
-      "cn": "从……攀升至……，而……从……降至……"
+      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+      "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
+      "src": "动态图表第一段 · 功能句1"
      },
      {
-      "en": "the joint effects of urbanization and unequal economic opportunities",
-      "cn": "城镇化与经济机会不均的共同作用"
+      "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
+      "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
+      "src": "动态图表第一段 · 功能句2"
      },
      {
-      "en": "on their own initiative",
-      "cn": "主动地"
+      "en": "The two moved in opposite directions.",
+      "cn": "两者朝相反的方向变化。",
+      "src": "动态图表第一段 · 功能句6"
      },
      {
-      "en": "channel more resources into …",
-      "cn": "向……倾斜更多资源"
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
+      "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+      "src": "第二段 · 原因（机制句池） · 功能句7"
+     },
+     {
+      "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+      "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+      "src": "第二段 · 原因（机制句池） · 功能句1"
+     },
+     {
+      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+      "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+      "src": "第二段 · 原因（机制句池） · 功能句6"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
+      "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
+     },
+     {
+      "en": "Clear rules and steady funding matter more than one-off campaigns.",
+      "cn": "明确的规则和持续投入，比一次性活动更重要。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+     },
+     {
+      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

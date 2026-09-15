@@ -4784,6 +4784,116 @@
     "prompt": "情景与要求：Suppose you are planning a tour of a historical site for a group of international students. Write them an email to 1) tell them about the site, and 2) give them some tips for the tour. ①写作人身份：“你”，即大学生；②写作对象：留学生；③写作话题：某一历史古迹的游览计划；④写作类型：书信；⑤交际目的：介绍古迹并给出旅行建议。格式为书信（“介绍+建议”信）；语域上收信人为留学生，用语不必太正式，保持礼貌、亲切即可；内容要点：①简单介绍古迹信息；②给出一些旅行建议。关键词：tour/trip/travel 旅游；historical site/attraction/landmark 历史遗迹/名胜；archaeological discovery 考古发现；tip/advice/suggestion 建议。",
     "framework": "第一段：表明写作目的，引出古迹名称；第二段：简介古迹信息，给出旅行建议；第三段：表达期待与祝愿。",
     "template": "本模板由【优秀范文】提炼、改编而来，适用于撰写以介绍某事物（如景点、城市、活动等）为切入点的建议信（如游览建议、活动参与建议等）。Dear ____, I'm writing to inform you of 要介绍的事物 and share some (tips/suggestions). This (site/city/activity) is/involves 具体介绍. It offers a fascinating glimpse into ____. To 目的, you may consider 建议一 or 建议一的替代方案. In addition, it's also advisable to 建议二, which will certainly 建议带来的好处. Hope this (trip/activity) suits your taste and that you can enjoy it. Yours sincerely, Li Ming"
+   },
+   "apply": {
+    "apply_en": "Dear Friends,\nI hope this message finds you well. In this letter, I would like to introduce the Terracotta Army in Xi’an to you as an excellent option.\n\nTo be more specific, the Terracotta Army refers to an army of over 8,000 life-size clay soldiers, which is characterized by over 2,000 years of history. To begin with, it covers three large exhibition pits, enabling visitors to gain a vivid sense of the Qin Dynasty. In particular, you are advised to book tickets online in advance around the date of your visit so that you can gradually improve your experience at the site.\n\nI sincerely hope that you will make full use of this opportunity to enjoy every moment of the tour.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Friends,\n希望你一切安好。在这封信中，我想向你介绍西安的兵马俑，把它作为一个极佳的选择推荐给你。\n\n更具体而言，兵马俑是指一支由八千多尊等身陶俑组成的军阵，其突出特点在于两千多年历史。首先，它涵盖三个大型展示坑，使参观者能够获得对秦朝的鲜活感受。具体而言，建议你围绕参观的日期提前在网上订票，以便逐步提升你在遗址的参观体验。\n\n我真诚希望你能充分利用这次机会享受参观的每一刻。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "「介绍景点」用介绍类两句：第一句给「是什么 + 特征」（数量 + 年代最好写），第二句展开一个看点。",
+     "{{aspect1}} 填 three exhibition pits 这类<b>具体结构</b>，比说 beautiful 有效得多——这是内容分的来源。",
+     "「旅行建议」不要新起一段，接一句建议类即可；写给一群人用 <b>Dear Friends,</b>。"
+    ],
+    "title": "2020 真题套用示范 · Part A 介绍古迹 + 旅行建议",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "the Terracotta Army in Xi’an",
+      "cn": "西安的兵马俑",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the Terracotta Army",
+      "cn": "兵马俑",
+      "para": "第二段"
+     },
+     {
+      "name": "subject",
+      "en": "an army of over 8,000 life-size clay soldiers",
+      "cn": "一支由八千多尊等身陶俑组成的军阵",
+      "para": "第二段"
+     },
+     {
+      "name": "feature",
+      "en": "over 2,000 years of history",
+      "cn": "两千多年历史",
+      "para": "第二段"
+     },
+     {
+      "name": "aspect1",
+      "en": "three large exhibition pits",
+      "cn": "三个大型展示坑",
+      "para": "第二段"
+     },
+     {
+      "name": "audience",
+      "en": "visitors",
+      "cn": "参观者",
+      "para": "第二段"
+     },
+     {
+      "name": "gain1",
+      "en": "gain a vivid sense of the Qin Dynasty",
+      "cn": "获得对秦朝的鲜活感受",
+      "para": "第二段"
+     },
+     {
+      "name": "action",
+      "en": "book tickets online in advance",
+      "cn": "提前在网上订票",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "the date of your visit",
+      "cn": "参观的日期",
+      "para": "第二段"
+     },
+     {
+      "name": "detail",
+      "en": "your experience at the site",
+      "cn": "你在遗址的参观体验",
+      "para": "第二段"
+     },
+     {
+      "name": "outcome",
+      "en": "enjoy every moment of the tour",
+      "cn": "享受参观的每一刻",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
+      "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+      "src": "第一段 · 第二句（表明来意） · 模板第5句"
+     },
+     {
+      "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
+      "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+      "src": "第二段 · 介绍类 第二句 · 模板第1句"
+     },
+     {
+      "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+      "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。",
+      "src": "第二段 · 介绍类 第三句 · 模板第1句"
+     },
+     {
+      "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
+      "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+      "src": "第二段 · 建议类 第二句 · 模板第2句"
+     },
+     {
+      "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
+      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "src": "第三段 · 收尾 / 客套 · 模板第5句"
+     }
+    ]
    }
   },
   {
@@ -4885,34 +4995,165 @@
     "template": "该模板适用于“多因素同时比较”的饼状图，涉及“某群体做某事的目的（以正面为主）”，用于反映某种积极趋势。模板注释：该模板第一段①句介绍调查主题，②至④句按照“占比降序”罗列数据。第二段①句点明图表反映的趋势并给出一大理由（与占比最大的因素关联），②句针对占比排在中上游的因素展开阐述，③句提及占比较少的因素。第三段积极评价这一趋势并简要说明理由。此外，该模板稍作调整还可适用于“列举做某事的原因”（如首段用why替换what for、on account of替换for the purpose of、because替换so that）或“反映负面现象的主题”（如末段用a shame that they替换a delight to see them、potential harm替换direct benefits、is detrimental to替换goes a long way to）。I ① The above chart provides answers as to what ________ for. ② Most striking of all, ________ % make this choice for the purpose of ________. ③ Another crucial factor is ________, according to ________ % of respondents. ④ There are also ________ % (and ________ % respectively) deciding to ________ so that they can ________ (or ________). II ① The survey indicates the trend of ________, which occurs as expected and will continue, considering that ________. ② It is noteworthy that some ________ have little intention of ________ but ________. ③ On top of that, ________ still matter(s) to a handful of them. III ① All in all, it is a delight to see them ________. ② Doing so not only results in direct benefits to themselves, but goes a long way to (doing) ________."
    },
    "apply": {
-    "apply_en": "The pie chart presents an uneven distribution among the purposes of mobile reading among students at a certain university. Gaining knowledge accounts for the largest share, at 59.5%. Killing time and obtaining information form the middle group, representing 21.3% and 17.0% respectively. In contrast, other purposes make up a relatively small proportion of 2.2%.\n\nA few factors contribute to this trend. To begin with, as a nation with a booming digital economy, knowledge is increasingly available through mobile reading, which serves as a fast and convenient tool. Moreover, the awareness of self-improvement has spread widely among university students who wish to stay competitive in the job market. Seen in this light, mobile reading has become a natural choice for campus life.\n\nFor mobile reading to bring lasting benefits, students should make well-informed choices in light of their own circumstances, ensuring that it genuinely contributes to their long-term development.",
-    "apply_cn": "该饼图呈现了某高校学生手机阅读目的之间的不均衡分布。获取知识占比最大，达 59.5%。消磨时间与获取信息处于中间位置，分别占 21.3% 和 17.0%。相比之下，其他目的占比很小，仅 2.2%。\n\n若干因素促成了这一趋势。首先，在数字经济蓬勃发展的国家，知识越来越容易通过手机阅读获取，手机成为快速便捷的工具。此外，希望在就业市场保持竞争力的学生中，自我提升意识已广泛传播。由此可见，手机阅读已成为校园生活的自然选择。\n\n要使手机阅读带来长久收益，学生应结合自身情况作出理性选择，让它真正有利于自身长远发展。",
+    "apply_en": "The pie chart shows how the purposes of mobile reading break down. Reading for knowledge comes first, at 59.5%. Killing time and obtaining information follow, at 21.3% and 17.0%. Other purposes round off the list at 2.2%. Taken together, the three largest items make up 97.8%.\n\nThe numbers in the chart are the result of deeper changes. Online platforms and mobile payment have made mobile reading quicker and easier to arrange. Longer working hours have made people value the little time they can call their own. People now judge mobile reading by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Media should report on mobile reading honestly, without exaggerating its benefits or its risks. Platforms should design simple, honest interfaces instead of ones that keep users hooked. Small habits matter: a little mobile reading every day adds up over a year. That is what will decide whether the change lasts.",
+    "apply_cn": "该饼状图展示手机阅读目的的构成情况。获取知识排在第一位，占59.5%。紧随其后的是消磨时间和获取信息，分别占21.3%和17.0%。最后是其他目的，占2.2%。前三项加起来占97.8%。\n\n图里的数字，是更深层变化的结果。线上平台和移动支付让手机阅读变得更快更方便。工作时间变长，人们更看重那点属于自己的时间。人们现在看手机阅读好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。媒体应如实报道手机阅读，既不夸大好处，也不夸大风险。平台应把界面做得简单诚实，而不是想方设法让人上瘾。小习惯很重要：每天一点手机阅读，一年下来就不一样。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "饼图 4 项、占比差距大（59.5% vs 2.2%）→ 用静态模板：最大项完整句 + 中间组合并 + 最小项 In contrast 收尾。",
-     "\"获取知识\"占近六成是本题的主旨指向（正面），第二段因此写\"自我提升\"而非\"浪费时间\"。",
-     "第二段套校园类模板，双因：数字经济发展 + 竞争意识。",
-     "末段用正面版，落在 make well-informed choices。"
+     "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
+     "数据要点：reading for knowledge 占 59.5%；killing time 占 21.3%；obtaining information 占 17.0%；other purposes 占 2.2%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 57 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：某高校学生手机阅读目的调查",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "pie",
+      "cn": "饼状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "reading for knowledge",
+      "cn": "获取知识",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "killing time",
+      "cn": "消磨时间",
+      "para": "第一段"
+     },
+     {
+      "name": "item3",
+      "en": "obtaining information",
+      "cn": "获取信息",
+      "para": "第一段"
+     },
+     {
+      "name": "item4",
+      "en": "other purposes",
+      "cn": "其他目的",
+      "para": "第一段"
+     },
+     {
+      "name": "percent total",
+      "en": "97.8%",
+      "cn": "97.8%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent1",
+      "en": "59.5%",
+      "cn": "59.5%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent2",
+      "en": "21.3%",
+      "cn": "21.3%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent3",
+      "en": "17.0%",
+      "cn": "17.0%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent4",
+      "en": "2.2%",
+      "cn": "2.2%",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the purposes of mobile reading",
+      "cn": "手机阅读目的",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "mobile reading",
+      "cn": "手机阅读",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "mobile reading",
+      "cn": "手机阅读",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "accounts for the largest share, at …%",
-      "cn": "占比最大，达……%"
+      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "form the middle group, representing …% and …% respectively",
-      "cn": "处于中间位置，分别占……% 和……%"
+      "en": "{{item1}} comes first, at {{percent1}}.",
+      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "src": "静态图表第一段 · 模板第2句"
      },
      {
-      "en": "make up a relatively small proportion of …%",
-      "cn": "占比相对较小，为……%"
+      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
+      "src": "静态图表第一段 · 模板第3句"
      },
      {
-      "en": "stay competitive in the job market",
-      "cn": "在就业市场中保持竞争力"
+      "en": "{{item4}} rounds off the list at {{percent4}}.",
+      "cn": "最后是 {{item4}}，占 {{percent4}}。",
+      "src": "静态图表第一段 · 模板第4句"
      },
      {
-      "en": "the awareness of self-improvement",
-      "cn": "自我提升意识"
+      "en": "Taken together, the three largest items make up {{percent total}}.",
+      "cn": "前三项加起来占 {{percent total}}。",
+      "src": "静态图表第一段 · 功能句3"
+     },
+     {
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+      "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+      "src": "第二段 · 原因（机制句池） · 功能句3"
+     },
+     {
+      "en": "Longer working hours have made people value the little time they can call their own.",
+      "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+      "src": "第二段 · 原因（机制句池） · 功能句9"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
+      "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
+     },
+     {
+      "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
+      "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
+     },
+     {
+      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
+      "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

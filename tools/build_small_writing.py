@@ -519,6 +519,21 @@ def main():
         'decisions': EXTRA.DECISIONS,
         'teacher': EXTRA.TEACHER,
     }
+    # 中文模板修正（原 md 的中文行与英文句槽位不一致时统一在这里改，重跑不回退）
+    CN_FIX = {
+        'p2_congrats_s2': {0: '更具体地说，你在{{topic}}方面的优异表现，清楚地展现了你的{{quality}}。'},
+        'p3': {1: '请你{{expect}}，以便{{topic}}能够得到更为有效的落实。',
+               2: '感谢你的时间与关注，期待你给予积极回应。',
+               3: '总而言之，上述各项措施均是为{{purpose}}而设，你的参与至关重要。'},
+    }
+    for b_ in data['banks']:
+        fix = CN_FIX.get(b_['id'])
+        if not fix:
+            continue
+        for k, cn in fix.items():
+            if k < len(b_['items']):
+                b_['items'][k]['cn'] = cn
+
     all_items = [it for b in data['banks'] for it in b['items']]
 
     def wc(s):

@@ -9873,7 +9873,87 @@
    "directions": "Suppose you are Li Ming. Your friend Jack has just posted a video about his travel on social media. Write him an email to share your views on it. You should write about 100 words.",
    "directions_cn": "假设你是李明。你的朋友杰克刚刚在社交媒体上发布了一段关于他旅行的视频。请给他写一封邮件，谈谈你对这段视频的看法。词数约 100 词。",
    "sample_en": "Dear Jack,\n\nI just finished watching your travel video, and I was absolutely captivated by it! The landscapes you filmed were breathtaking, and the way you captured the local culture felt so genuine and immersive. It truly felt like I was traveling alongside you.\n\nThe segment about the traditional village particularly caught my interest. The architecture and daily life there looked fascinating. I'd love to hear more about your experiences there and any other interesting stories from your trip that didn't make it into the video.\n\nLooking forward to catching up soon and hearing all about your adventures in more detail.\n\nBest regards,\nYours sincerely,\nLi Ming",
-   "sample_cn": "亲爱的杰克：\n\n我刚看完你的旅行视频，完全被它吸引住了！你拍摄的风景令人叹为观止，你捕捉当地文化的方式如此真实而身临其境，感觉就像和你一起旅行一样。\n\n其中关于传统村庄的那一段尤其引起我的兴趣。那里的建筑和日常生活看起来非常迷人。我很想多听听你在那里的经历，以及视频里没有剪进去的其他旅行趣事。\n\n期待尽快与你叙旧，听你详细分享冒险经历。\n\n此致\n敬礼\n李明"
+   "sample_cn": "亲爱的杰克：\n\n我刚看完你的旅行视频，完全被它吸引住了！你拍摄的风景令人叹为观止，你捕捉当地文化的方式如此真实而身临其境，感觉就像和你一起旅行一样。\n\n其中关于传统村庄的那一段尤其引起我的兴趣。那里的建筑和日常生活看起来非常迷人。我很想多听听你在那里的经历，以及视频里没有剪进去的其他旅行趣事。\n\n期待尽快与你叙旧，听你详细分享冒险经历。\n\n此致\n敬礼\n李明",
+   "apply": {
+    "apply_en": "Dear Jack,\nI hope this message finds you well. With this letter, I would like to share my views on your travel video.\n\nTo be honest, I am deeply impressed by what you shared, especially the way you captured the local people and their daily life. The reason is that such records help us rediscover the beauty of ordinary moments. In particular, I would like to invite you to take me along on your next trip, which will offer you a chance to see the world through your camera.\n\nI sincerely hope that you will make full use of this opportunity to keep sharing such wonderful moments with us.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Jack,\n希望你一切安好。借此来信，我想与你分享我对你的旅行视频的看法。\n\n说实话，你分享的内容让我印象很深，尤其是你镜头下当地人与他们的日常生活。原因在于，这类记录帮我们重新发现平凡时刻里的美好。具体而言，我诚挚邀请你让我随行参加你的下一次旅行，这将为你带来透过你的镜头看世界的机会。\n\n我真诚希望你能充分利用这次机会继续与我们分享这样的美好瞬间。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "观点分享类目前只考过一次（2026），结构最简单：<b>分享看法 → 说清为什么 → 顺势回应</b>。",
+     "{{detail}} 要具体（当地人与日常生活），空泛地说 interesting 拿不到内容分。",
+     "本题要求「分享看法」而非「办事」，所以收尾不要写「期待回复」，用「希望继续分享」这类呼应主题的句子。"
+    ],
+    "title": "2026 真题套用示范 · 回复邮件（分享对旅行视频的看法）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "your travel video",
+      "cn": "你的旅行视频",
+      "para": "第一段"
+     },
+     {
+      "name": "detail",
+      "en": "the way you captured the local people and their daily life",
+      "cn": "你镜头下当地人与他们的日常生活",
+      "para": "第二段"
+     },
+     {
+      "name": "join",
+      "en": "take me along on",
+      "cn": "让我随行参加",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "your next trip",
+      "cn": "你的下一次旅行",
+      "para": "第二段"
+     },
+     {
+      "name": "gain",
+      "en": "a chance to see the world through your camera",
+      "cn": "透过你的镜头看世界的机会",
+      "para": "第二段"
+     },
+     {
+      "name": "outcome",
+      "en": "keep sharing such wonderful moments with us",
+      "cn": "继续与我们分享这样的美好瞬间",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "With this letter, I would like to share my views on {{topic}}.",
+      "cn": "借此来信，我想与你分享我对{{topic}}的看法。",
+      "src": "第一段 · 第二句（表明来意） · 模板第2句"
+     },
+     {
+      "en": "To be honest, I am deeply impressed by what you shared, especially {{detail}}.",
+      "cn": "说实话，你分享的内容让我印象很深，尤其是{{detail}}。",
+      "src": "第二段 · 观点类 第二句（我的看法） · 模板第1句"
+     },
+     {
+      "en": "The reason is that such records help us rediscover the beauty of ordinary moments.",
+      "cn": "原因在于，这类记录帮我们重新发现平凡时刻里的美好。",
+      "src": "第二段 · 观点类 第三句（为什么这样看） · 模板第1句"
+     },
+     {
+      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
+      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+      "src": "第二段 · 邀请类 第二句 · 模板第1句"
+     },
+     {
+      "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
+      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "src": "第三段 · 收尾 / 客套 · 模板第5句"
+     }
+    ]
+   }
   },
   {
    "id": "2026_writing_b",

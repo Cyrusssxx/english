@@ -5490,6 +5490,104 @@
     "prompt": "情景与要求：Suppose you are organizing an online meeting. Write an email to Jack, an international student, to 1) invite him to participate and 2) tell him the details. ①写作人身份：“你”，即大学生；②写作话题：线上会议；③写作类型：电子邮件；④写作对象：留学生；⑤交际目的：邀请参加线上会议并告知相关事宜。格式为书信（邀请信）；语域上，给线上会议参与者、国际学生的信件属于公务信函，应使用正式语体，但因面向同辈，语言不必过于拘谨，应礼貌亲切；内容要点：①邀请收信人参加线上会议；②说明举办线上会议的相关事宜。关键词：meeting/gathering/conference/session 会议；participate in/join/attend a meeting 参加会议；participant/attendee 参会者；meeting agenda/schedule/arrangement 会议议程/安排。",
     "framework": "第一段：表明写作目的，邀请收信人参加线上会议，并简要介绍活动；第二段：介绍活动的具体内容；第三段：表达期待。",
     "template": "本模板由【优秀范文】提炼、改编而来，适用于会议、论坛、典礼等活动的邀请信。Dear ____, As 邀请人身份, I am writing to invite you to 活动名称 scheduled for 时间、地点、举办方式. With the theme of 活动主题, this 活动类型 aims to 活动目的. Attendees from 参会者身份 will gather to 活动内容. As a 指出受邀人与活动契合的身份, you are very welcome to 期待对方做的事. Our 活动类型 arrangements are attached for your reference. We will be very pleased if you could accept our invitation. Yours sincerely, Li Ming"
+   },
+   "apply": {
+    "apply_en": "Dear Jack,\nI hope this message finds you well. I am writing to invite you to take part in our monthly online reading session.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the online meeting will take place at Zoom, providing a fixed venue for all participants. In particular, I would like to invite you to join us in the online meeting, which will offer you a chance to share a famous writer from your own country.\n\nI would appreciate it very much if you could confirm your attendance by next Wednesday.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Jack,\n希望你一切安好。我写信是邀请你参加我们每月一次的线上读书会。\n\n至于本次活动的具体安排，主要如下。首先，本次线上会议将在Zoom 线上平台举行，为全体参会者提供固定场所。具体而言，我诚挚邀请你参加我们这次线上会议，这将为你带来分享贵国一位著名作家的机会。\n\n如果你能在下周三前确认你是否参加，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "邀请信第二段 = 「安排细节 + 邀请理由」：先用通知类交代时间和平台，再用邀请类说明参加能得到什么。",
+     "{{gain}} 填与本题主题相关的收益（分享自己国家的作家），这是「为什么值得来」的评分点。",
+     "收尾请对方确认出席并给截止时间，是邀请信最稳的收尾方式。"
+    ],
+    "title": "2021 真题套用示范 · Part A 邀请信（线上会议）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "our monthly online reading session",
+      "cn": "我们每月一次的线上读书会",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the online meeting",
+      "cn": "本次线上会议",
+      "para": "第二段"
+     },
+     {
+      "name": "place",
+      "en": "Zoom",
+      "cn": "Zoom 线上平台",
+      "para": "第二段"
+     },
+     {
+      "name": "audience",
+      "en": "participants",
+      "cn": "参会者",
+      "para": "第二段"
+     },
+     {
+      "name": "join",
+      "en": "join",
+      "cn": "参加",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "us in the online meeting",
+      "cn": "我们这次线上会议",
+      "para": "第二段"
+     },
+     {
+      "name": "gain",
+      "en": "a chance to share a famous writer from your own country",
+      "cn": "分享贵国一位著名作家的机会",
+      "para": "第二段"
+     },
+     {
+      "name": "expect",
+      "en": "confirm your attendance",
+      "cn": "确认你是否参加",
+      "para": "第三段"
+     },
+     {
+      "name": "deadline",
+      "en": "next Wednesday",
+      "cn": "下周三",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "I am writing to invite you to take part in {{topic}}.",
+      "cn": "我写信是邀请你参加{{topic}}。",
+      "src": "第一段 · 第二句（表明来意） · 模板第7句"
+     },
+     {
+      "en": "As for the planned event, the main arrangements are as follows.",
+      "cn": "至于本次活动的具体安排，主要如下。",
+      "src": "第二段 · 通用首句（引出下文） · 模板第3句"
+     },
+     {
+      "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
+      "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+      "src": "第二段 · 通知类 第二句 · 模板第2句"
+     },
+     {
+      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
+      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+      "src": "第二段 · 邀请类 第二句 · 模板第1句"
+     },
+     {
+      "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
+      "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
+      "src": "第三段 · 收尾 / 客套 · 模板第1句"
+     }
+    ]
    }
   },
   {
@@ -5611,34 +5709,164 @@
     "template": "该模板适用于基于多项选择的调查数据制成的“多因素同时比较”的柱状图，涉及“某群体做某件事的多种选择”。模板注释：该模板第一段①句介绍图表主题，②句对比介绍占比最高和最低的数据，③句按占比从高到低的顺序罗列其他数据。第二段①句点明图表反映的趋势，②句过渡引出原因分析，③至⑥句具体阐述原因，其中③④句分析主观原因，⑤句提及客观必要条件，⑥句补充不可忽视的推动因素。第三段展望发展趋势并提及积极影响。I ① The bar chart clearly illustrates the multiple options ________ have of (doing) ________. ② The majority of them (________ %) ________, whereas ________ is the least popular choice, only accounting for ________ %. ③ Other ways to ________ include ________ and ________, at ________ % and ________ % respectively, followed by ________, at ________ %. II ① The data indicates people's inclination to ________. ② It may seem a matter of personal preference, but in fact several factors play a part. ③ For one thing, ________ gives them a sense of happiness and satisfaction. ④ To put it another way, they do so in pursuit of a higher quality of life. ⑤ For another, the advent/popularization of ________ is an essential precondition for this. ⑥ Moreover, those who ________ have set this trend to some extent. III ① In conclusion, given (that) ________, we can expect to see an increasing number of people ________. ② This will contribute to greater diversity in ________."
    },
    "apply": {
-    "apply_en": "The bar chart presents an uneven distribution among the exercise methods chosen by residents in a certain city. Working out alone accounts for the largest share, at slightly over half of the respondents. Exercising with friends follows closely, representing 47.7%, while working out with family members accounts for 23.9%. In contrast, playing team sports makes up a relatively small proportion of less than 16%.\n\nPeople prefer to exercise alone primarily on account of flexibility and convenience. In this way, they can go jogging anytime they want, without the need to make a plan with others in advance. Furthermore, a wide range of fitness videos, apps and games have boosted the popularity of doing workouts at home. Seen in this light, the popularity of independent exercise is a natural consequence of changing lifestyles.\n\nFor physical exercise to bring lasting benefits, individuals should make well-informed choices in light of their own circumstances, while relevant authorities should provide more public sports facilities.",
-    "apply_cn": "该柱状图呈现了某市居民锻炼方式之间的不均衡分布。独自锻炼占比最大，略超受访者半数。与朋友一起锻炼紧随其后，占 47.7%，与家人一起锻炼占 23.9%。相比之下，参加团体活动占比很小，不足 16%。\n\n人们偏好独自锻炼，主要出于灵活与便利。这样他们可以随时去跑步，无需提前与他人约定。此外，大量健身视频、应用与游戏也推动了居家独自锻炼的流行。由此可见，独立锻炼的流行是生活方式变化的自然结果。\n\n要使体育锻炼带来长久收益，个人应结合自身情况作出理性选择，有关部门也应提供更多公共体育设施。",
+    "apply_en": "The bar chart shows how the ways residents take exercise break down. Exercising on one's own comes first, at 54.3%. Exercising with friends and exercising with family follow, at 47.7% and 23.9%. Team sports round off the list at 16%. The gap between the largest and the smallest is wide.\n\nThe numbers in the chart are the result of deeper changes. Sitting all day has turned exercising from a hobby into a practical need. Longer working hours have made people value the little time they can call their own. Public spending on infrastructure has made exercising far more widely available. People now judge exercising by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. Small habits matter: a little exercise every day adds up over a year. What matters most is whether families and schools treat exercise as a normal part of life. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图展示居民的锻炼方式的构成情况。独自锻炼排在第一位，占54.3%。紧随其后的是与朋友一起和与家人一起，分别占47.7%和23.9%。最后是团队项目，占16%。最大项与最小项之间差距很大。\n\n图里的数字，是更深层变化的结果。整天坐着，让锻炼从爱好变成了实际需要。工作时间变长，人们更看重那点属于自己的时间。公共基础设施投入让锻炼的覆盖面大大增加。人们现在看锻炼好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。个人应按自身情况选择，而不是随大流。小习惯很重要：每天一点运动，一年下来就不一样。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "\"超过半数\"没有精确数字，用 slightly over half of the respondents，不要臆造百分比。",
-     "四项中前三项递减、末项骤降 → 前三句并列，末项用 In contrast 收尾。",
-     "第二段套体育健康类模板（或环境类换词），双因：灵活便利 + 居家健身资源。",
-     "\"独自 > 与朋友 > 与家人 > 团体\"的排序本身就是题眼，句式要体现递降关系。"
+     "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
+     "数据要点：exercising on one's own 占 54.3%；exercising with friends 占 47.7%；exercising with family 占 23.9%；team sports 占 16%。数值与图逐个核对，别漏最大值。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 66 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：某市居民锻炼方式调查",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "bar",
+      "cn": "柱状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "exercising on one's own",
+      "cn": "独自锻炼",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "exercising with friends",
+      "cn": "与朋友一起",
+      "para": "第一段"
+     },
+     {
+      "name": "item3",
+      "en": "exercising with family",
+      "cn": "与家人一起",
+      "para": "第一段"
+     },
+     {
+      "name": "item4",
+      "en": "team sports",
+      "cn": "团队项目",
+      "para": "第一段"
+     },
+     {
+      "name": "percent1",
+      "en": "54.3%",
+      "cn": "54.3%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent2",
+      "en": "47.7%",
+      "cn": "47.7%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent3",
+      "en": "23.9%",
+      "cn": "23.9%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent4",
+      "en": "16%",
+      "cn": "16%",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the ways residents take exercise",
+      "cn": "居民的锻炼方式",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "exercising",
+      "cn": "锻炼",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "exercise",
+      "cn": "运动",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "accounts for the largest share, at slightly over half of the respondents",
-      "cn": "占比最大，略超受访者半数"
+      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "follows closely, representing …%",
-      "cn": "紧随其后，占……%"
+      "en": "{{item1}} comes first, at {{percent1}}.",
+      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "src": "静态图表第一段 · 模板第2句"
      },
      {
-      "en": "on account of flexibility and convenience",
-      "cn": "出于灵活与便利"
+      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
+      "src": "静态图表第一段 · 模板第3句"
      },
      {
-      "en": "boosted the popularity of doing workouts at home",
-      "cn": "推动了居家锻炼的流行"
+      "en": "{{item4}} rounds off the list at {{percent4}}.",
+      "cn": "最后是 {{item4}}，占 {{percent4}}。",
+      "src": "静态图表第一段 · 模板第4句"
      },
      {
-      "en": "public sports facilities",
-      "cn": "公共体育设施"
+      "en": "The gap between the largest and the smallest is wide.",
+      "cn": "最大项与最小项之间差距很大。",
+      "src": "静态图表第一段 · 功能句5"
+     },
+     {
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
+      "cn": "整天坐着，让 {{topic}} 从爱好变成了实际需要。",
+      "src": "第二段 · 原因（机制句池） · 功能句8"
+     },
+     {
+      "en": "Longer working hours have made people value the little time they can call their own.",
+      "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+      "src": "第二段 · 原因（机制句池） · 功能句9"
+     },
+     {
+      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+      "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+      "src": "第二段 · 原因（机制句池） · 功能句6"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
+      "cn": "个人应按自身情况选择，而不是随大流。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+     },
+     {
+      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
+      "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+     },
+     {
+      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

@@ -266,6 +266,24 @@ async function loadApplyMarks() {
     return APPLY_MARKS;
 }
 
+/** 小作文（应用文）的逐句标注：与大作文分开文件，避免同一年份互相覆盖 */
+let SMALL_MARKS = null;
+
+async function loadSmallApplyMarks() {
+    if (SMALL_MARKS) return SMALL_MARKS;
+    try {
+        const res = await fetch('data/small_apply_marks.json', { cache: 'no-cache' });
+        if (res.ok) SMALL_MARKS = await res.json();
+    } catch (e) { /* 离线或缺失时退化为纯文本 */ }
+    return SMALL_MARKS;
+}
+
+/** 按文章类型取对应的逐句标注（同一年份大小作文都有示范） */
+function marksFor(type, year) {
+    const m = (type === 'writing_a') ? SMALL_MARKS : APPLY_MARKS;
+    return (m && m[year]) || null;
+}
+
 function apEsc(s) {
     return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
@@ -273,14 +291,19 @@ function apEsc(s) {
 /** 示范文正文：模板部分原样（可选划词标注 annotate），槽位词与自写部分分别高亮 */
 function renderApplyBody(mk, annotate) {
     if (!mk || !mk.paras) return '';
+    const sal = mk.salutation
+        ? '<p class="ap-sal">' + (annotate ? annotate(mk.salutation) : apEsc(mk.salutation)) + '</p>' : '';
+    const sign = mk.close
+        ? '<p class="ap-sign">' + (annotate ? annotate(mk.close) : apEsc(mk.close)) + '</p>' : '';
+
     // 模板固定部分与「槽位词」都要能点词（槽位词正是学生最想查的题相关词）
     const put = (x, kind) => {
         const inner = annotate ? annotate(x) : apEsc(x);
         return kind === 't' ? inner : `<mark class="${kind === 's' ? 'ap-slot' : 'ap-own'}">${inner}</mark>`;
     };
-    return mk.paras.map(p => '<p class="apply-para">' + p.sents.map(s =>
+    return sal + mk.paras.map(p => '<p class="apply-para">' + p.sents.map(s =>
         (s.spans || []).map(sp => put(sp.x, sp.t)).join('')
-    ).join(' ') + '</p>').join('');
+    ).join(' ') + '</p>').join('') + sign;
 }
 
 /** 展开/收起逐句标注 */
@@ -295,11 +318,12 @@ function apToggleMarks(btn) {
 /** 标注面板：词数 + 图例 + 逐句来源/可替换词/非模板词/功能句（默认收起） */
 function renderApplyMarks(mk) {
     if (!mk || !mk.paras) return '';
-    const ok = mk.wc >= 150;
+    const req = mk.req || 150;                 // 小作文 100 词 / 大作文 150 词
+    const ok = mk.wc >= req;
     const nSent = mk.paras.reduce((n, p) => n + p.sents.length, 0);
     let html = '<div class="ap-marks">';
     html += `<div class="ap-marks-head"><span class="ap-wc">📊 全文 <b>${mk.wc}</b> 词`
-        + `<span class="ap-wc-req">要求 ≥150，${ok ? '达标' : '偏少'}</span>`
+        + `<span class="ap-wc-req">要求 ≥${req}，${ok ? '达标' : '偏少'}</span>`
         + `<span class="ap-wc-seg">三段 ${mk.paras.map(p => p.wc).join(' / ')}</span></span>`
         + `<button class="ap-exp-btn2" onclick="apToggleMarks(this)">展开逐句标注 ▾</button></div>`;
     html += '<div class="ap-legend"><mark class="ap-slot">槽位词</mark>＝模板里留空处，按题替换　'
@@ -339,11 +363,13 @@ function apSlotSpans(s) {
 /** 中文译文：与英文同样标注（槽位词蓝底，其余为模板固定部分） */
 function renderApplyCn(mk, fallbackText) {
     if (!mk || !mk.paras) return apEsc(fallbackText || '');
-    return mk.paras.map(p => '<p class="apply-para">' + p.sents.map(s =>
+    const sal = mk.salutation ? '<p class="ap-sal">' + apEsc(mk.salutation) + '</p>' : '';
+    const sign = mk.close ? '<p class="ap-sign">' + apEsc(mk.close) + '</p>' : '';
+    return sal + mk.paras.map(p => '<p class="apply-para">' + p.sents.map(s =>
         apSlotSpans(s).map(sp => sp.t === 't'
             ? apEsc(sp.x)
             : '<mark class="ap-slot">' + apEsc(sp.x) + '</mark>').join('')
-    ).join('') + '</p>').join('');
+    ).join('') + '</p>').join('') + sign;
 }
 
 /** 填槽表达：本篇往 {{槽位}} 里填的词，按段落分组 */

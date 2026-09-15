@@ -4168,6 +4168,80 @@
     "prompt": "给朋友Jack写回复信，感谢祝贺并就翻译学习提出建议。指令解读：write a reply——应用文形式为回复函；your friend, Jack, wrote an email to congratulate you and ask for advice on translation——点明来函的是一位朋友，他对自己表示祝贺并寻求建议；thank him——规定回复函内容要对朋友的祝贺表示感谢；give your advice——要为朋友提供学习翻译的建议。要点归纳：1）题目要求写一封回复函，回复函的格式要完整；2）来函的是一位朋友，回信时的语气应热情、乐于分享；3）回函内容涵盖两点：表达对朋友祝贺的感谢、为朋友提供翻译学习的建议并以提建议为主体，可根据自身体悟提出两至三条建议，比如博览群书、多接触外国文化、重在坚持等，并表示期待切磋、期待回信。关键词：gratitude 谢意，share with 和……分享，suggestion 建议。",
     "framework": "建议信的交际目的是让收信人采纳自己的观点建议。范文首段表达感谢，简述事由；第二段随即根据自身体悟提出\"广泛阅读\"、\"持之以恒\"等建议，具有合理性和说服性；第三段重申目的，并表示期待。",
     "template": "该思路适用于撰写回复别人、给予别人建议的信件，如：建议如何提高英语口语水平。Dear ____, I am very glad to hear that you want to seek some suggestions about（说明提出建议相关事宜）in order to（说明对方诉求）. From my point of view,（提出建议一）. Also, to you, I highly recommend that（提出建议二）. On the one hand,（具体展开建议）. On the other hand, ____. Besides, it is unnecessary for you to（补充说明反向不必要举措）. Consequently, I believe that（进而提出建议三）. I hope that my opinions are of help to you, and please feel free to contact me for further discussions. Yours sincerely, Li Ming"
+   },
+   "apply": {
+    "apply_en": "Dear Jack,\nI am so delighted to receive your letter. I am writing to express my sincere gratitude for your help.\n\nWithout your generous help, I could never have made such progress in translation. In particular, you are advised to work steadily around translation so that you can gradually improve your sense of how Chinese and English differ. In addition, it is strongly recommended that you should translate one short passage every day so as to improve the situation.\n\nI sincerely hope that you will make full use of this opportunity to make steady progress in translation.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Jack,\n非常高兴收到你的来信。我写信是为表达我对你帮助的诚挚感谢。\n\n没有你慷慨的帮助，我不可能在翻译上取得这样的进步。具体而言，建议你围绕翻译稳步下功夫，以便逐步提升你对中英差异的敏感度。另外，强烈建议你每天翻译一小段文字，以便改善当前状况。\n\n我真诚希望你能充分利用这次机会在翻译上稳步进步。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "回信型题目第一句用 <b>I am so delighted to receive your letter.</b>（你确实收到了信），再用感谢句回应对方的祝贺。",
+     "感谢类第二句可用「没有你的帮助我不可能……」，{{topic}} 填对方帮过你的事。",
+     "两问都完成：先感谢、再给建议，建议用「建议类」两句（一句给做法、一句给可执行动作），不要两句都讲道理。"
+    ],
+    "title": "2016 真题套用示范 · Part A 感谢 + 建议（回信）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "translation",
+      "cn": "翻译",
+      "para": "第二段"
+     },
+     {
+      "name": "action",
+      "en": "work steadily",
+      "cn": "稳步下功夫",
+      "para": "第二段"
+     },
+     {
+      "name": "detail",
+      "en": "your sense of how Chinese and English differ",
+      "cn": "你对中英差异的敏感度",
+      "para": "第二段"
+     },
+     {
+      "name": "task",
+      "en": "translate one short passage every day",
+      "cn": "每天翻译一小段文字",
+      "para": "第二段"
+     },
+     {
+      "name": "outcome",
+      "en": "make steady progress in translation",
+      "cn": "在翻译上稳步进步",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I am so delighted to receive your letter.",
+      "cn": "非常高兴收到你的来信。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
+     },
+     {
+      "en": "I am writing to express my sincere gratitude for your help.",
+      "cn": "我写信是为表达我对你帮助的诚挚感谢。",
+      "src": "第一段 · 第二句（表明来意） · 模板第6句"
+     },
+     {
+      "en": "Without your generous help, I could never have made such progress in {{topic}}.",
+      "cn": "没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
+      "src": "第二段 · 感谢类 第二句（具体谢什么） · 模板第2句"
+     },
+     {
+      "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
+      "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+      "src": "第二段 · 建议类 第二句 · 模板第2句"
+     },
+     {
+      "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
+      "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+      "src": "第二段 · 建议类 第三句 · 模板第1句"
+     },
+     {
+      "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
+      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "src": "第三段 · 收尾 / 客套 · 模板第5句"
+     }
+    ]
    }
   },
   {
@@ -4342,34 +4416,170 @@
     "template": "当图表体现某现象并要求对其解读和评论时，可以参照该思路，如：解读手机使用功能图表。This pie chart, simple yet illuminating, illustrates（概括图表描绘的内容）. As is reflected by the chart,（具体说明图表数据体现的情况）. The survey reveals that（概括说明图表数据体现的情况、突出重点）. On the one hand,（对重点一进行阐释）. On the other hand,（对重点二进行阐释）. In my opinion, though it's natural... they should（对图表情况予以评论）.（对评论引出部分予以详细阐述、完善论证）."
    },
    "apply": {
-    "apply_en": "The pie chart presents an uneven distribution among the purposes of travel for students polled in a certain university. Appreciating the beauty of the scenery accounts for the largest share, at 37%. Relieving pressure follows closely, representing 33%. In contrast, making more friends, fostering independence and other aims make up relatively small proportions of 9%, 6% and 15% respectively.\n\nThe survey reveals that most students travel to enjoy the view as well as to unwind. On the one hand, with the prosperity of tourism, college students who have ample time and curiosity are lured to explore the outside world. On the other hand, growing academic pressure makes a journey an ideal way to recharge. Seen in this light, the pattern of travel purposes is a natural consequence of campus life.\n\nFor travel to bring lasting benefits, students should make well-informed choices in light of their own circumstances, ensuring that a journey genuinely contributes to their long-term development.",
-    "apply_cn": "该饼图呈现了某高校受访学生旅游目的之间的不均衡分布。欣赏风景占比最大，达 37%。缓解压力紧随其后，占 33%。相比之下，广交朋友、培养独立能力及其他目的占比很小，分别为 9%、6% 和 15%。\n\n调查显示，多数学生旅行是为欣赏风景和放松身心。一方面，随着旅游业繁荣，时间充裕、好奇心强的大学生被吸引去探索外部世界；另一方面，学业压力增大，旅行成为理想的充电方式。由此可见，这一旅游目的结构是校园生活的自然结果。\n\n要使旅行带来长久收益，学生应结合自身情况作出理性选择，让旅程真正有利于自身长远发展。",
+    "apply_en": "The pie chart shows how the purposes of travel break down. Appreciating the scenery comes first, at 37%. Relieving pressure and other aims follow, at 33% and 15%. Fostering independence rounds off the list at 6%. Taken together, the three largest items make up 85%.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, travelling has moved from a luxury to an everyday necessity. Longer working hours have made people value the little time they can call their own. Online platforms and mobile payment have made travelling quicker and easier to arrange. Public spending on infrastructure has made travelling far more widely available.\n\nOn balance, this is a change worth welcoming. Media should report on travelling honestly, without exaggerating its benefits or its risks. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat travelling as a normal part of life. That is what will decide whether the change lasts.",
+    "apply_cn": "该饼状图展示旅游目的的构成情况。欣赏风景排在第一位，占37%。紧随其后的是缓解压力和其他目的，分别占33%和15%。最后是锻炼独立性，占6%。前三项加起来占85%。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，旅游已从奢侈品变成日常必需。工作时间变长，人们更看重那点属于自己的时间。线上平台和移动支付让旅游变得更快更方便。公共基础设施投入让旅游的覆盖面大大增加。\n\n总体来看，这是值得欢迎的变化。媒体应如实报道旅游，既不夸大好处，也不夸大风险。个人应按自身情况选择，而不是随大流。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "饼图 5 项：最大的两项用完整句，其余三项合并一句带过（respectively 收尾），避免句子臃肿。",
-     "首句直接点出图型 pie chart，用静态模板的 presents an uneven distribution。",
-     "第二段套校园类模板，双因结构（旅游繁荣 / 学业压力）对应原文的两条理由。",
-     "注意 37% / 33% 是\"最大两项\"，写完后用 follows closely 衔接，比 next comes 更书面。"
+     "饼图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
+     "数据要点：appreciating the scenery 占 37%；relieving pressure 占 33%；other aims 占 15%；fostering independence 占 6%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 65 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：高校学生旅游目的调查饼图",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "pie",
+      "cn": "饼状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "appreciating the scenery",
+      "cn": "欣赏风景",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "relieving pressure",
+      "cn": "缓解压力",
+      "para": "第一段"
+     },
+     {
+      "name": "item3",
+      "en": "other aims",
+      "cn": "其他目的",
+      "para": "第一段"
+     },
+     {
+      "name": "item4",
+      "en": "fostering independence",
+      "cn": "锻炼独立性",
+      "para": "第一段"
+     },
+     {
+      "name": "percent total",
+      "en": "85%",
+      "cn": "85%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent1",
+      "en": "37%",
+      "cn": "37%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent2",
+      "en": "33%",
+      "cn": "33%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent3",
+      "en": "15%",
+      "cn": "15%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent4",
+      "en": "6%",
+      "cn": "6%",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the purposes of travel",
+      "cn": "旅游目的",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "travelling",
+      "cn": "旅游",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "travelling",
+      "cn": "旅游",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "accounts for the largest share, at …%",
-      "cn": "占比最大，达……%"
+      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "follows closely, representing …%",
-      "cn": "紧随其后，占……%"
+      "en": "{{item1}} comes first, at {{percent1}}.",
+      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "src": "静态图表第一段 · 模板第2句"
      },
      {
-      "en": "make up relatively small proportions of …, respectively",
-      "cn": "占比相对较小，分别为……"
+      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
+      "src": "静态图表第一段 · 模板第3句"
      },
      {
-      "en": "with the prosperity of tourism",
-      "cn": "随着旅游业繁荣"
+      "en": "{{item4}} rounds off the list at {{percent4}}.",
+      "cn": "最后是 {{item4}}，占 {{percent4}}。",
+      "src": "静态图表第一段 · 模板第4句"
      },
      {
-      "en": "an ideal way to recharge",
-      "cn": "理想的充电方式"
+      "en": "Taken together, the three largest items make up {{percent total}}.",
+      "cn": "前三项加起来占 {{percent total}}。",
+      "src": "静态图表第一段 · 功能句3"
+     },
+     {
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+      "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+      "src": "第二段 · 原因（机制句池） · 功能句1"
+     },
+     {
+      "en": "Longer working hours have made people value the little time they can call their own.",
+      "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+      "src": "第二段 · 原因（机制句池） · 功能句9"
+     },
+     {
+      "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+      "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+      "src": "第二段 · 原因（机制句池） · 功能句3"
+     },
+     {
+      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+      "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+      "src": "第二段 · 原因（机制句池） · 功能句6"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
+      "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
+     },
+     {
+      "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
+      "cn": "个人应按自身情况选择，而不是随大流。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+     },
+     {
+      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

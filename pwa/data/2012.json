@@ -3842,6 +3842,80 @@
     "prompt": "投诉信。1）应用文类型为书信（电子邮件），格式需完整；2）收信人为客服部门工作人员，虽然信件目的是投诉，但仍要表现出对其工作的尊重、语气不能太生硬；3）内容应包括：简要回顾购买过程、详细说明电子词典的质量问题、提出期望的解决措施（换货、维修或退款）以及适当的客套语。",
     "framework": "投诉信用于反映出现的问题以期获得解决。第一段首句为背景介绍，引出下文问题的提出；第2、3句按照从概括到具体的顺序说明问题；第4、5句提出希望对方如何解决问题。第二段为书信的常规客套语。",
     "template": "该思路适合对商品质量问题进行投诉。Dear Sir or Madam, （时间状语）I bought ____ in 购买地点. To my dismay, （时间状语）I found it couldn't work normally. 具体阐述问题. I expect you to provide a new one for replacement or, at least, to follow the warranty policy by repairing it. If no satisfaction can be gained by these means, I will have to demand a refund. Thank you for taking the time to read this letter. If detailed information is required, please reach me at 12345678. Yours faithfully, Zhang Wei"
+   },
+   "apply": {
+    "apply_en": "Dear Sir or Madam,\nI hope this message finds you well. This letter serves as a formal complaint about the recent problems with the electronic dictionary I bought from your online store.\n\nTo my disappointment, the electronic dictionary I bought from your online store last week has failed to work properly. Specifically, a serious system failure appeared only three days after it arrived. I would appreciate it if you could arrange a repair or a full refund as soon as possible.\n\nI would appreciate it very much if you could arrange a replacement or a full refund by the end of this week.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Sir or Madam,\n希望你一切安好。这封信作为一份正式投诉，旨在反映近期与我从贵网店购买的电子词典有关的问题。\n\n令我失望的是，上周在贵网店购买的电子词典无法正常使用。具体来说，到货才三天就出现了严重的系统故障。如果你能尽快安排维修或全额退款，我将不胜感激。\n\n如果你能在本周末前安排换货或全额退款，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "投诉信最忌「只说情绪不说事实」：第二句点名 {{product}}，第三句给出具体 {{problem}}（到货三天就出故障）。",
+     "要求用<b>一句</b>说清即可（维修 / 换货 / 退款三选一），第三段再用「如能……将不胜感激」收口。",
+     "写给客服中心且不知对方姓名时，称呼用 <b>Dear Sir or Madam,</b>（顶格 + 逗号）。"
+    ],
+    "title": "2012 真题套用示范 · Part A 投诉信（+ 要求解决）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "the electronic dictionary I bought from your online store",
+      "cn": "我从贵网店购买的电子词典",
+      "para": "第一段"
+     },
+     {
+      "name": "product",
+      "en": "electronic dictionary",
+      "cn": "电子词典",
+      "para": "第二段"
+     },
+     {
+      "name": "problem",
+      "en": "a serious system failure",
+      "cn": "严重的系统故障",
+      "para": "第二段"
+     },
+     {
+      "name": "expect",
+      "en": "arrange a replacement or a full refund",
+      "cn": "安排换货或全额退款",
+      "para": "第三段"
+     },
+     {
+      "name": "deadline",
+      "en": "the end of this week",
+      "cn": "本周末",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "This letter serves as a formal complaint about the recent problems with {{topic}}.",
+      "cn": "这封信作为一份正式投诉，旨在反映近期与{{topic}}有关的问题。",
+      "src": "第一段 · 第二句（表明来意） · 模板第11句"
+     },
+     {
+      "en": "To my disappointment, the {{product}} I bought from your online store last week has failed to work properly.",
+      "cn": "令我失望的是，上周在贵网店购买的{{product}}无法正常使用。",
+      "src": "第二段 · 投诉类 第二句（出了什么问题） · 模板第1句"
+     },
+     {
+      "en": "Specifically, {{problem}} appeared only three days after it arrived.",
+      "cn": "具体来说，到货才三天就出现了{{problem}}。",
+      "src": "第二段 · 投诉类 第二句（出了什么问题） · 模板第2句"
+     },
+     {
+      "en": "I would appreciate it if you could arrange a repair or a full refund as soon as possible.",
+      "cn": "如果你能尽快安排维修或全额退款，我将不胜感激。",
+      "src": "第二段 · 投诉类 第三句（要求怎么解决） · 模板第1句"
+     },
+     {
+      "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
+      "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
+      "src": "第三段 · 收尾 / 客套 · 模板第1句"
+     }
+    ]
    }
   },
   {
@@ -4085,34 +4159,142 @@
     "template": "该思路适用于分析体现满意度差异的表格。____ were most likely to report satisfaction, with ____% of them indicating they were content. ____ were less willing to declare satisfaction, only ____% of whom said they were satisfied; instead, ____% of whom expressed dissatisfaction. ____ were surely unhappiest: none of them felt satisfied and the percentage of respondents reporting dissatisfaction was as high as ____%. There is a significant difference in ____ satisfaction by ____. The difference relates to ____.（分析差异原因）The consequent sense of 负面情绪名词 is strong enough to reduce them to deep dissatisfaction. In contrast, ____ and understandably will feel happier. As for ____, ____. Not surprisingly, they are the happiest. It is clear that ____. For lasting happiness with ____, ____ is necessary."
    },
    "apply": {
-    "apply_en": "The table presents an uneven distribution among the age groups associated with job satisfaction. Employees above 50 account for the largest share of satisfaction, at 40%. The middle group, those aged 41 to 50, represents the lowest level, with none of them satisfied and 64% expressing dissatisfaction. In contrast, employees aged 40 or younger make up a relatively small proportion, only 16.7% of whom reported contentment.\n\nThe differences are closely related to the career situation of each group. The 41-to-50 group, less energetic than the younger crowd and less established than older professionals, often reaches a career plateau, and the consequent sense of powerlessness reduces them to deep dissatisfaction. Younger employees, by contrast, may still be adapting to their posts and are therefore cautious about declaring satisfaction.\n\nFor job satisfaction to improve, efforts from both employers and employees are essential. Employers should offer clearer promotion paths and timely feedback, while employees should make well-informed choices in light of their own circumstances.",
-    "apply_cn": "该表格呈现了各年龄段在工作满意度上的不均衡分布。50 岁以上员工满意度占比最大，达 40%。41 至 50 岁的中间组水平最低，无人满意，64% 表示不满。相比之下，40 岁及以下员工占比很小，仅 16.7% 表示满意。\n\n这些差异与各群体的职业处境密切相关。41 至 50 岁组比年轻人精力不足、比年长者资历尚浅，往往进入职业平台期，随之而来的无力感使他们深感不满。相比之下，年轻员工可能仍在适应岗位，因而对表达满意较为谨慎。\n\n要提升工作满意度，需要雇主与员工共同努力。雇主应提供更清晰的晋升通道与及时反馈，员工也应结合自身情况作出理性选择。",
+    "apply_en": "The table shows how employee dissatisfaction breaks down. The 41-to-50 age group comes first, at 64%. Those aged 40 or younger and the group over 50 follow, at 33.3% and 10%. The gap between the largest and the smallest is wide. The pattern is clear: a few items dominate the rest.\n\nThe numbers in the chart are the result of deeper changes. Longer working hours have made people value the little time they can call their own. Young people change jobs far more often than their parents did, so loyalty works differently. People now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures point to a problem worth taking seriously. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Left alone, the problem will not correct itself.",
+    "apply_cn": "该表格展示员工的不满意比例的构成情况。41~50岁组排在第一位，占64%。紧随其后的是40岁及以下组和50岁以上组，分别占33.3%和10%。最大项与最小项之间差距很大。格局很清楚：少数几项占了大头。\n\n图里的数字，是更深层变化的结果。工作时间变长，人们更看重那点属于自己的时间。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。人们现在看工作满意度好不好用，而不是看别人怎么想。\n\n总体来看，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。放任不管，这个问题不会自己好转。",
     "tips": [
-     "本题图表是**表格（table）**：首句把 chart 换成 This table，这是最容易失分的地方。",
-     "数据是\"分组比高低\"而非时间变化 → 用**静态**第一段模板（largest share / middle group / relatively small）。",
-     "41-50 岁组\"无人满意 + 64% 不满\"是本题最关键的对比，务必写出。",
-     "第二段可套校园类/经济类模板，落点写\"职业平台期（career plateau）\"。"
+     "表格、分布比高低（3 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
+     "数据要点：the 41-to-50 age group 占 64%；those aged 40 or younger 占 33.3%；the group over 50 占 10%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 58 词。",
+     "第三段用 **负面版**（问题可能恶化）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 图表作文：某公司员工工作满意度调查",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "table",
+      "cn": "表格",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "the 41-to-50 age group",
+      "cn": "41~50 岁组",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "those aged 40 or younger",
+      "cn": "40 岁及以下组",
+      "para": "第一段"
+     },
+     {
+      "name": "item3",
+      "en": "the group over 50",
+      "cn": "50 岁以上组",
+      "para": "第一段"
+     },
+     {
+      "name": "percent1",
+      "en": "64%",
+      "cn": "64%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent2",
+      "en": "33.3%",
+      "cn": "33.3%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent3",
+      "en": "10%",
+      "cn": "10%",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "employee dissatisfaction",
+      "cn": "员工的不满意比例",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "job satisfaction",
+      "cn": "工作满意度",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "staff satisfaction",
+      "cn": "员工满意度",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "The table presents an uneven distribution among…",
-      "cn": "该表格呈现了……之间的不均衡分布"
+      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "account for the largest share, at …%",
-      "cn": "占比最大，达到……%"
+      "en": "{{item1}} comes first, at {{percent1}}.",
+      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "src": "静态图表第一段 · 模板第2句"
      },
      {
-      "en": "none of them felt satisfied",
-      "cn": "无一人感到满意"
+      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
+      "src": "静态图表第一段 · 模板第3句"
      },
      {
-      "en": "reach a career plateau",
-      "cn": "进入职业平台期"
+      "en": "The gap between the largest and the smallest is wide.",
+      "cn": "最大项与最小项之间差距很大。",
+      "src": "静态图表第一段 · 功能句5"
      },
      {
-      "en": "the consequent sense of powerlessness",
-      "cn": "随之而来的无力感"
+      "en": "The pattern is clear: a few items dominate the rest.",
+      "cn": "格局很清楚：少数几项占了大头。",
+      "src": "静态图表第一段 · 功能句4"
+     },
+     {
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "Longer working hours have made people value the little time they can call their own.",
+      "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+      "src": "第二段 · 原因（机制句池） · 功能句9"
+     },
+     {
+      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+      "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+      "src": "第二段 · 原因（机制句池） · 功能句14"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "On balance, the figures point to a problem worth taking seriously.",
+      "cn": "总体来看，这些数据指向一个不容忽视的问题。",
+      "src": "第三段 · 负面版（立场 + 对策） · 模板第1句"
+     },
+     {
+      "en": "Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.",
+      "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
+      "src": "第三段 · 负面版（立场 + 对策） · 功能句7"
+     },
+     {
+      "en": "A company that ignores this gap will lose the very people it most depends on.",
+      "cn": "忽视这一差距的公司，会失去它最依赖的那批人。",
+      "src": "第三段 · 负面版（立场 + 对策） · 功能句8"
+     },
+     {
+      "en": "Left alone, the problem will not correct itself.",
+      "cn": "放任不管，这个问题不会自己好转。",
+      "src": "第三段 · 负面版（立场 + 对策） · 模板第2句"
      }
     ]
    }

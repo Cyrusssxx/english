@@ -4652,7 +4652,88 @@
    "sample_cn": "亲爱的约翰：\n我正在策划一部短剧。我写信是想邀请你参演这部剧。\n该剧改编自《三国演义》，将于12月30日开始拍摄。它将展现这部中国经典小说中关于谋略、忠诚与英雄主义的伟大故事。它不但有着引人入胜的情节和丰富的人物形象，而且蕴含着深刻的智慧，为体验中国文化提供了一个非常好的机会。\n鉴于你对中国文化的热爱，我相信你出色的演技和对艺术的热情会让剧中的情节生动逼真。如果你能加入我们，我将不胜感激。期待你的早日回复。\n你真诚的\n李明",
    "questions": [],
    "directions": "Suppose you are planning a short play based on a classic Chinese novel. Write your friend John an email to 1) introduce the play, and 2) invite him to take part in it. Write your answer in about 100 words on the ANSWER SHEET. Do not sign your own name in your email; use \"Li Ming\" instead. (10 points)",
-   "directions_cn": "假设你正在策划一部基于一部中国古典小说的短剧。给你的朋友约翰写一封电子邮件，1) 介绍这部短剧，并2) 邀请他参与其中。你应在答题卡上写约100词的答案。不要在邮件中签上你自己的名字，用\"Li Ming\"代替。（10分）"
+   "directions_cn": "假设你正在策划一部基于一部中国古典小说的短剧。给你的朋友约翰写一封电子邮件，1) 介绍这部短剧，并2) 邀请他参与其中。你应在答题卡上写约100词的答案。不要在邮件中签上你自己的名字，用\"Li Ming\"代替。（10分）",
+   "apply": {
+    "apply_en": "Dear John,\nI hope this message finds you well. In this letter, I would like to introduce a short play based on The Romance of the Three Kingdoms to you as an excellent option.\n\nFrom a practical perspective, the play mainly involves the stories of strategy, loyalty and heroism in the novel, aiming to bring a classic Chinese story to the stage. In particular, I would like to invite you to take a role in it the play, which will offer you a deeper understanding of Chinese culture.\n\nYou are kindly requested to let me know your decision so that the play can be implemented more effectively.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear John,\n希望你一切安好。在这封信中，我想向你介绍一部改编自《三国演义》的短剧，把它作为一个极佳的选择推荐给你。\n\n从实践角度看，这部短剧主要涵盖小说中谋略、忠义与英雄气概的故事，其根本目标在于把一个中国经典故事搬上舞台。具体而言，我诚挚邀请你出演其中一个角色这部短剧，这将为你带来更深入地理解中国文化。\n\n请你告诉我你的决定，以便这部短剧能够得到更为有效的落实。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "本题两问 = 「介绍短剧 + 邀请参演」：用介绍类点明改编来源和看点，再用邀请类发出邀请。",
+     "{{content}} 写出小说的三个关键词（谋略、忠义、英雄气概），这是「介绍」部分最能得分的地方。",
+     "再接一句通知类交代开拍时间，让「介绍」有具体信息；收尾请对方回复决定即可。"
+    ],
+    "title": "2025 真题套用示范 · Part A 介绍 + 邀请（短剧参演）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "a short play based on The Romance of the Three Kingdoms",
+      "cn": "一部改编自《三国演义》的短剧",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the play",
+      "cn": "这部短剧",
+      "para": "第二段"
+     },
+     {
+      "name": "content",
+      "en": "the stories of strategy, loyalty and heroism in the novel",
+      "cn": "小说中谋略、忠义与英雄气概的故事",
+      "para": "第二段"
+     },
+     {
+      "name": "purpose",
+      "en": "bring a classic Chinese story to the stage",
+      "cn": "把一个中国经典故事搬上舞台",
+      "para": "第二段"
+     },
+     {
+      "name": "join",
+      "en": "take a role in it",
+      "cn": "出演其中一个角色",
+      "para": "第二段"
+     },
+     {
+      "name": "gain",
+      "en": "a deeper understanding of Chinese culture",
+      "cn": "更深入地理解中国文化",
+      "para": "第二段"
+     },
+     {
+      "name": "expect",
+      "en": "let me know your decision",
+      "cn": "告诉我你的决定",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
+      "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+      "src": "第一段 · 第二句（表明来意） · 模板第5句"
+     },
+     {
+      "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
+      "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。",
+      "src": "第二段 · 介绍类 第二句 · 模板第2句"
+     },
+     {
+      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
+      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+      "src": "第二段 · 邀请类 第二句 · 模板第1句"
+     },
+     {
+      "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
+      "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+      "src": "第三段 · 收尾 / 客套 · 模板第2句"
+     }
+    ]
+   }
   },
   {
    "id": "2025_writingb",
@@ -4667,34 +4748,164 @@
    "directions": "Write an essay based on the chart below. In your essay, you should 1) describe and interpret the chart, and 2) give your comments. Write your answer in about 150 words on the ANSWER SHEET. (15 points)",
    "directions_cn": "根据下面的图表写一篇短文。在你的短文中，你应该1) 描述并解读图表，并2) 发表你的评论。你应在答题卡上写约150词的答案。（15分）",
    "apply": {
-    "apply_en": "The bar chart presents an uneven distribution among the leisure activities of the elderly in a certain community. Watching television accounts for the largest share, at 90.8%. Taking walks follows closely, representing 68.3%. In contrast, planting flowers, reading and playing chess make up relatively small proportions of 34.7%, 31.8% and 18.4% respectively.\n\nThe differences reflect the living conditions and needs of the elderly. First of all, watching television is an extremely convenient way to obtain information and enjoy entertainment, which explains why the vast majority choose it. Secondly, walking is a low-intensity activity suitable for most elderly people. Besides, although planting flowers, reading and playing chess occupy smaller shares, they still enrich the daily life of those who take them up.\n\nFor the elderly to enjoy a better life, both communities and families should act reasonably. Communities should offer more recreational facilities, while families should care about the elderly's real needs.",
-    "apply_cn": "该柱状图呈现了某社区老年人日常休闲活动之间的不均衡分布。看电视占比最大，达 90.8%。散步紧随其后，占 68.3%。相比之下，养花、阅读与下棋占比相对较小，分别为 34.7%、31.8% 和 18.4%。\n\n这些差异反映了老年人的生活条件与需求。首先，看电视是获取信息、享受娱乐的极便捷方式，这解释了为何绝大多数人选择它；其次，散步是适合多数老年人的低强度活动。此外，养花、阅读与下棋虽占比较小，仍丰富了参与者的日常生活。\n\n要让老年人享有更好的生活，社区与家庭都应理性行事。社区应提供更多休闲设施，家庭应关心老年人的真实需求。",
+    "apply_en": "The bar chart shows how the leisure activities of the elderly break down. Watching television comes first, at 90.8%. Taking walks and planting flowers follow, at 68.3% and 34.7%. Playing chess rounds off the list at 18.4%. The gap between the largest and the smallest is wide.\n\nThe numbers in the chart are the result of deeper changes. Longer life expectancy has changed how families plan for their later years. As household incomes have grown, retirement life has moved from a luxury to an everyday necessity. People now judge retirement life by what it does for them rather than by what others think. Public spending on infrastructure has made retirement life far more widely available.\n\nOn balance, this is a change worth welcoming. Clear rules and steady funding matter more than one-off campaigns. Small habits matter: a little leisure activity every day adds up over a year. What matters most is whether families and schools treat leisure activity as a normal part of life. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图展示老年人的休闲活动的构成情况。看电视排在第一位，占90.8%。紧随其后的是散步和种花，分别占68.3%和34.7%。最后是下棋，占18.4%。最大项与最小项之间差距很大。\n\n图里的数字，是更深层变化的结果。寿命延长，改变了家庭对晚年的安排。随着家庭收入提高，退休生活已从奢侈品变成日常必需。人们现在看退休生活好不好用，而不是看别人怎么想。公共基础设施投入让退休生活的覆盖面大大增加。\n\n总体来看，这是值得欢迎的变化。明确的规则和持续投入，比一次性活动更重要。小习惯很重要：每天一点休闲活动，一年下来就不一样。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "柱状图 5 项：两项高占比完整句，三项低占比合并且用 respectively 收尾。",
-     "首句 chart 换 bar chart，用 present an uneven distribution 起头最稳。",
-     "第二段套体育健康类（或社会生活）模板，分述\"便捷\"与\"低强度\"两条原因。",
-     "\"低占比项也丰富了生活\"是加分点——避免只写正向、忽略次要数据。"
+     "柱状图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
+     "数据要点：watching television 占 90.8%；taking walks 占 68.3%；planting flowers 占 34.7%；playing chess 占 18.4%。数值与图逐个核对，别漏最大值。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：某社区老年人主要日常休闲活动调查（柱形图）",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "bar",
+      "cn": "柱状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "watching television",
+      "cn": "看电视",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "taking walks",
+      "cn": "散步",
+      "para": "第一段"
+     },
+     {
+      "name": "item3",
+      "en": "planting flowers",
+      "cn": "种花",
+      "para": "第一段"
+     },
+     {
+      "name": "item4",
+      "en": "playing chess",
+      "cn": "下棋",
+      "para": "第一段"
+     },
+     {
+      "name": "percent1",
+      "en": "90.8%",
+      "cn": "90.8%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent2",
+      "en": "68.3%",
+      "cn": "68.3%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent3",
+      "en": "34.7%",
+      "cn": "34.7%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent4",
+      "en": "18.4%",
+      "cn": "18.4%",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the leisure activities of the elderly",
+      "cn": "老年人的休闲活动",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "retirement life",
+      "cn": "退休生活",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "leisure activity",
+      "cn": "休闲活动",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "accounts for the largest share, at …%",
-      "cn": "占比最大，达……%"
+      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "follows closely, representing …%",
-      "cn": "紧随其后，占……%"
+      "en": "{{item1}} comes first, at {{percent1}}.",
+      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "src": "静态图表第一段 · 模板第2句"
      },
      {
-      "en": "make up relatively small proportions of …, … and … respectively",
-      "cn": "占比相对较小，分别为……、……和……"
+      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
+      "src": "静态图表第一段 · 模板第3句"
      },
      {
-      "en": "a low-intensity activity suitable for the elderly",
-      "cn": "适合老年人的低强度活动"
+      "en": "{{item4}} rounds off the list at {{percent4}}.",
+      "cn": "最后是 {{item4}}，占 {{percent4}}。",
+      "src": "静态图表第一段 · 模板第4句"
      },
      {
-      "en": "enrich the daily life",
-      "cn": "丰富日常生活"
+      "en": "The gap between the largest and the smallest is wide.",
+      "cn": "最大项与最小项之间差距很大。",
+      "src": "静态图表第一段 · 功能句5"
+     },
+     {
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "Longer life expectancy has changed how families plan for their later years.",
+      "cn": "寿命延长，改变了家庭对晚年的安排。",
+      "src": "第二段 · 原因（机制句池） · 功能句12"
+     },
+     {
+      "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+      "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+      "src": "第二段 · 原因（机制句池） · 功能句1"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+      "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+      "src": "第二段 · 原因（机制句池） · 功能句6"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Clear rules and steady funding matter more than one-off campaigns.",
+      "cn": "明确的规则和持续投入，比一次性活动更重要。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+     },
+     {
+      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
+      "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+     },
+     {
+      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

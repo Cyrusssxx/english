@@ -1,5 +1,43 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16] 小作文 17 篇「真题套用示范」上线 ＋ 修「文章页示范是旧版」的 bug
+
+**一、修 bug：文章页看到的套用示范是旧版**
+- 现象：`article.js` 读的是 `pwa/data/{year}.json` 里文章的 `apply` 字段，而生成器一直写的是
+  `wr_write`/`writing_apply.json` 与 `small_apply.json` —— **两个数据源，year.json 从未同步**。
+  结果：写作页是新示范（带真实数字），点进真题文章看到的却是旧版（还带 `items associated with`
+  ／`during the periods presented` 这类已删掉的讲义腔）。
+- 修法：新增 **`tools/sync_apply.py`**，把大作文（`writing_apply.json` → `*_writingb`）与小作文
+  （`small_apply.json` → `*_writinga`）统一写回 year.json。**以后改完示范必须跑它。**
+
+**二、小作文 17 篇真题套用示范（2010–2026）**
+- 与大作文同款做法：每年由句库句子拼成（**零自写句**），槽位按真题信息填；示范文渲染在
+  「参考范文」**上方**，带逐句标注（模板句 / 槽位词）、中文译文、套用建议、填槽表达与模板句型
+  （后两块默认收起）。
+- 数据链：`tools/apply_small_plan.py`（人工方案：每年挑哪些句 + 槽位值 **(英文, 中文)** ）
+  → `tools/build_small_apply.py`（生成 + 逐句标注 + 注入 year.json）
+  → `tools/audit_small_apply.py`（17 篇严格体检）。
+- 逐句标注独立文件 `pwa/data/small_apply_marks.json`（**不与大作文的 `writing_apply_marks.json`
+  混用**，否则同一年份会互相覆盖）；前端 `marksFor(type, year)` 按文章类型取。
+- 结果：17 篇 **95~119 词**（真题要求 about 100 words）；每段都能追溯到句库；称呼与落款也参与渲染
+  （通知类写标题、不写落款）。
+
+**三、顺带修的数据 bug**
+- 句库 `p2_congrats_s2[0]` 的中文模板槽位比英文多一个 `{{achievement}}`（会填不出值）→ 已统一，
+  并在 `build_small_writing.py` 加 `CN_FIX` 表（重跑不回退）。
+- 句库第三段中文里的「你/各位」统一为「你」。
+- `build_small_apply.py` 新增**动词槽位检查**：`to / should / could / be able to` 后面的槽位若填了
+  以 a/an/the 开头的名词（如 `enabling visitors to a vivid sense`）直接报错——这条当场抓出
+  2017/2020/2022 三处真语法错误。
+
+**四、前端**
+- `renderApplyBody` / `renderApplyCn` 渲染称呼（`.ap-sal`）与落款（`.ap-sign`）。
+- `renderApplyMarks` 的达标线改为 `mk.req`（小作文 95 / 大作文 150），不再写死 150。
+
+**验证**：`audit_small_apply.py` 17 篇全通过 ｜ 大作文 `audit_apply.py` 17 篇全通过 ｜
+jsdom **20/20**（称呼落款、槽位标注、达标线按类型、折叠默认收起、17 篇完整、注入正确、顺序正确）。
+SW en2-d3e6bbb1。
+
 ## [2026-09-16 模板重置] 骨架从「整段套话」改成「短框架 + 句池」＋ 查词/语境义/缩进/折叠
 
 **一、模板重置（上帝视角重做骨架）**

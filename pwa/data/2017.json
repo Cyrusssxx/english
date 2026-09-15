@@ -4388,6 +4388,110 @@
     "prompt": "接受邀请信。1）写信人身份：\"你\"，即大学生；2）写作对象：威廉姆斯教授；3）写作话题：关于中国文化的讲座；4）写信类型：书信；5）交际目的：回应邀请。归纳要点：1）格式：书信（接受邀请信）；2）语域：给教授的信件属于公务信函，应使用正式语体；3）内容要点：①接受邀请；②介绍讲座要点。",
     "framework": "第一段：说明写信目的，接受邀请；第二段：介绍讲座要点；第三段：表达期待。篇章衔接：引言部分（2句）①句表示已收到邀请；②句表示接受邀请。主体部分（5句）①句明确讲座主题；②至⑤句介绍讲座的内容要点。结尾部分（2句）①句表达感谢；②句表达对见面的期待。",
     "template": "本模板由【优秀范文】提炼、改编而来，适用于接受讲座邀请等的回信。\nI have received your letter inviting me to 具体邀请内容. Thank you for your invitation. I am pleased to accept it.\nMy presentation would be focused on 讲座主题. The key points of my presentation would be as follows. To begin with, 要点一. Then, I will focus on 要点二. Furthermore, 要点三.\nThank you once again for your kind invitation. I am looking forward to meeting you soon."
+   },
+   "apply": {
+    "apply_en": "Dear Professor Williams,\nI hope this message finds you well. I am writing to you regarding the matter of your invitation to give a presentation on Chinese culture.\n\nTo be more specific, my presentation refers to four key aspects of Chinese culture, which is characterized by a balance between tradition and everyday life. To begin with, it covers traditional festivals, food and family life, enabling international students to get a clearer picture of how Chinese people actually live. Last but not least, your presence will make the presentation more meaningful and enable you to understand China a little better.\n\nI sincerely hope that you will make full use of this opportunity to enjoy the talk.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Professor Williams,\n希望你一切安好。我写信是关于你邀请我作一场关于中国文化的讲座这一事项。\n\n更具体而言，讲座内容是指中国文化的四个主要方面，其突出特点在于传统与日常生活的交融。首先，它涵盖传统节日、饮食与家庭生活，使留学生能够更清楚地看到中国人真实的生活。最后，你的到来将使这场讲座更加有意义，并使你得以对中国多一些了解。\n\n我真诚希望你能充分利用这次机会享受这场讲座。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "接受邀请不必写「我接受」三个字：来意句的 {{topic}} 填「这场邀请」本身，就完成了「接受」的功能。",
+     "「介绍要点」用介绍类两句：先总述（几个方面 + 特点），再展开第一个要点（{{aspect1}}）。",
+     "给教授写信落款用 <b>Yours sincerely,</b>；本题不需要对方回复，收尾用 I sincerely hope… 比 Please reply 更得体。"
+    ],
+    "title": "2017 真题套用示范 · Part A 接受邀请 + 介绍要点",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "your invitation to give a presentation on Chinese culture",
+      "cn": "你邀请我作一场关于中国文化的讲座",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "my presentation",
+      "cn": "讲座内容",
+      "para": "第二段"
+     },
+     {
+      "name": "subject",
+      "en": "four key aspects of Chinese culture",
+      "cn": "中国文化的四个主要方面",
+      "para": "第二段"
+     },
+     {
+      "name": "feature",
+      "en": "a balance between tradition and everyday life",
+      "cn": "传统与日常生活的交融",
+      "para": "第二段"
+     },
+     {
+      "name": "aspect1",
+      "en": "traditional festivals, food and family life",
+      "cn": "传统节日、饮食与家庭生活",
+      "para": "第二段"
+     },
+     {
+      "name": "audience",
+      "en": "international students",
+      "cn": "留学生",
+      "para": "第二段"
+     },
+     {
+      "name": "gain1",
+      "en": "get a clearer picture of how Chinese people actually live",
+      "cn": "更清楚地看到中国人真实的生活",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "the presentation",
+      "cn": "这场讲座",
+      "para": "第二段"
+     },
+     {
+      "name": "benefit",
+      "en": "understand China a little better",
+      "cn": "对中国多一些了解",
+      "para": "第二段"
+     },
+     {
+      "name": "outcome",
+      "en": "enjoy the talk",
+      "cn": "享受这场讲座",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "I am writing to you regarding the matter of {{topic}}.",
+      "cn": "我写信是关于{{topic}}这一事项。",
+      "src": "第一段 · 第二句（表明来意） · 模板第1句"
+     },
+     {
+      "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
+      "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+      "src": "第二段 · 介绍类 第二句 · 模板第1句"
+     },
+     {
+      "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+      "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。",
+      "src": "第二段 · 介绍类 第三句 · 模板第1句"
+     },
+     {
+      "en": "Last but not least, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.",
+      "cn": "最后，你的到来将使{{topic}}更加有意义，并使你得以{{benefit}}。",
+      "src": "第二段 · 邀请类 第四句 · 模板第1句"
+     },
+     {
+      "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
+      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "src": "第三段 · 收尾 / 客套 · 模板第5句"
+     }
+    ]
    }
   },
   {
@@ -4521,34 +4625,149 @@
     "template": "该思路适用于对正向变化趋势进行评价和分析，如\"发达国家手机订阅量发展\"、\"在线教育增长\"等。\nThe above chart illustrates that 描述图表变化.\nFrom my perspective, the above phenomenon will inevitably benefit both individuals and our society in the following aspects. To begin with, through 方式, people are entrusted with an opportunity to improve their 能力, thus living a more fulfilling life wherever they are. In addition, from a long-term vision, the change which is closely related to/caused by 原因, constitutes the engine of development, which indicates a promising future for 对象.\nHowever, while maintaining the development of 对象, we should also realize the risk of 风险, thus making joint efforts to 建议. Only by 总结性建议, can we yield a fruitful result of 成果.\n模板注释：第二段着眼变化带来的机遇，从\"个人\"与\"社会\"两个方面进行分析；第三段指出须规避风险，并给出具体建议。"
    },
    "apply": {
-    "apply_en": "The line chart shows that the figures associated with museums and museum visitors rose steadily from 2013 to 2015. The number of museums climbed from 4,169 to 4,692, while the number of visitors rose from 637 million to 954 million over the same span. Although both moved in the same direction, the growth of museums slowed down in 2014 while visits maintained a dynamic momentum.\n\nThe progress can be attributed to the following reasons. Firstly, thanks to the national endeavour in cultural undertakings, numerous museums have been built and opened free to the public. Moreover, as living standards improve, the public demand increasingly varied spiritual nourishment, and visiting museums has therefore become a willing choice for more people.\n\nHowever, this encouraging sign also presents challenges. Relevant authorities should improve the supply of cultural services, so that the growth of facilities can keep pace with the public's growing demand.",
-    "apply_cn": "该折线图表明，2013 至 2015 年间博物馆数量与参观人数的数据均持续上升。博物馆数量从 4169 家攀升至 4692 家，参观人数同期从 6.37 亿增至 9.54 亿。二者虽同向变动，但博物馆数量的增长在 2014 年放缓，而参观人数保持了强劲势头。\n\n这一进步可归因于以下原因。首先，得益于国家在文化事业上的努力，大量博物馆建成并向公众免费开放。此外，随着生活水平提高，公众对多样化精神食粮的需求上升，参观博物馆因而成为更多人的自愿选择。\n\n然而，这一可喜迹象也带来挑战。有关部门应改善文化服务供给，使设施增长能够跟上公众日益增长的需求。",
+    "apply_en": "The line chart tracks the number of museums and museum visitors from 2013 to 2015. Visitor numbers climbed from 640 million to 780 million, and the number of museums went from 4,200 to 4,600 as well. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. Public spending on infrastructure has made museum visiting far more widely available. Schools now treat museum visiting as part of the routine rather than an optional extra. Old traditions survive only when people find new ways to pass them on. People now judge museum visiting by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that museum visiting is not limited to those who can pay. Documentaries and short videos can show how museum visiting works in real life. That is what will decide whether the change lasts.",
+    "apply_cn": "该折线图记录了2013年到2015年期间博物馆数量与参观人数的变化。参观人数由6.4亿升至7.8亿，博物馆数量也从4200家升到4600家。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。公共基础设施投入让参观博物馆的覆盖面大大增加。学校现在把参观博物馆当成日常安排，而不是可选项。老传统只有在被不断重新传递时才能活下来。人们现在看参观博物馆好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让参观博物馆不只属于付得起钱的人。纪录片和短视频能让人看到参观博物馆在现实中怎样运作。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "折线图 + 两事物同向 → 首句用 rose steadily，**不要**用 did not move in a uniform direction。",
-     "\"2014 年博物馆增速放缓、参观人数仍强劲\"是本题最容易被忽略的对比，必须写。",
-     "第二段是文化类话题，用文化自信类模板的经济/文化双因（国家投入 + 生活水平）。",
-     "第三段用负面版转向\"挑战（supply deficiency）\"，与参考答案的 however 收尾一致。"
+     "折线图、都升（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
+     "数据要点：visitor numbers 640 million → 780 million；the number of museums 4,200 → 4,600。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：2013-2015年博物馆数量与参观人数折线图",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "line",
+      "cn": "折线",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "visitor numbers",
+      "cn": "参观人数",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "the number of museums",
+      "cn": "博物馆数量",
+      "para": "第一段"
+     },
+     {
+      "name": "num1",
+      "en": "640 million",
+      "cn": "6.4 亿",
+      "para": "第一段"
+     },
+     {
+      "name": "num2",
+      "en": "780 million",
+      "cn": "7.8 亿",
+      "para": "第一段"
+     },
+     {
+      "name": "num3",
+      "en": "4,200",
+      "cn": "4200 家",
+      "para": "第一段"
+     },
+     {
+      "name": "num4",
+      "en": "4,600",
+      "cn": "4600 家",
+      "para": "第一段"
+     },
+     {
+      "name": "time1",
+      "en": "2013",
+      "cn": "2013 年",
+      "para": "第一段"
+     },
+     {
+      "name": "time2",
+      "en": "2015",
+      "cn": "2015 年",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the number of museums and museum visitors",
+      "cn": "博物馆数量与参观人数",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "museum visiting",
+      "cn": "参观博物馆",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "museum visiting",
+      "cn": "参观博物馆",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "rose steadily from … to …",
-      "cn": "从……至……持续上升"
+      "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+      "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+      "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "maintained a dynamic momentum",
-      "cn": "保持强劲势头"
+      "en": "{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
+      "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
+      "src": "动态图表第一段 · 模板第2句"
      },
      {
-      "en": "the national endeavour in cultural undertakings",
-      "cn": "国家在文化事业上的努力"
+      "en": "The gap between the two widened over the period.",
+      "cn": "两者的差距在这一时期拉大了。",
+      "src": "动态图表第一段 · 功能句4"
      },
      {
-      "en": "varied spiritual nourishment",
-      "cn": "多样化的精神食粮"
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
-      "en": "keep pace with the public demand",
-      "cn": "跟上公众需求"
+      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+      "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+      "src": "第二段 · 原因（机制句池） · 功能句6"
+     },
+     {
+      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+      "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+      "src": "第二段 · 原因（机制句池） · 功能句10"
+     },
+     {
+      "en": "Old traditions survive only when people find new ways to pass them on.",
+      "cn": "老传统只有在被不断重新传递时才能活下来。",
+      "src": "第二段 · 原因（机制句池） · 功能句11"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
+      "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
+     },
+     {
+      "en": "Documentaries and short videos can show how {{topic}} works in real life.",
+      "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中怎样运作。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句10"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

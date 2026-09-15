@@ -4637,6 +4637,92 @@
     "prompt": "建议信。1）写作对象：史密斯教授；2）写信人身份：大学生；3）写作话题：筹划以\"城市交通\"为主题的辩论赛；4）写作类型：书信；5）交际目的：就\"辩论赛选题\"向教授提出建议，并说明选题理由，告知教授辩论赛的安排。归纳要点：1）格式：书信（建议信）；2）语域：收信人的身份为老师，用语应比较正式、礼貌，不可过于随意；3）内容要点：①提出一个辩题；②说明理由；③告知比赛安排。",
     "framework": "第一段：说明来信目的；第二段：给出一个\"城市交通\"相关的辩题，并说明选题理由；第三段：告知辩论赛日程安排并表达期待回复。篇章衔接：开头部分（2句）①句进行寒暄；②句说明活动准备情况并引出写作目的：提议辩论赛选题。主体部分（4句）①句提出一个辩题；②句说明选题理由一：辩题具有可辩论性；③句说明选题理由二：辩题涉及本学期课程，能加深同学们对课程内容的理解；④句说明选题理由三：辩题涵盖同学们关注的热点事件，适合讨论。结尾部分（2句）①句告知老师辩论赛安排；②句表达期待老师回复。",
     "template": "本模板由【优秀范文】提炼而来，适用于撰写以\"建议某项活动\"为切入点的建议信。\nDear ____,\nThank you for trusting me to arrange 活动. Now the 活动 is ready except for 主题, so I'm writing to offer my advice regarding 主题.\nI suggest 建议内容. Given that 原因一, people/students will surely benefit from it in terms of 益处. Moreover, 原因二, which is a great way to 目的.\n活动 will be held from 时间1 to 时间2 at/in 地点. I am waiting for your response on this matter.\nYours sincerely,\nLi Ming"
+   },
+   "apply": {
+    "apply_en": "Dear Professor Smith,\nI hope this message finds you well. The primary aim of this letter is to offer some suggestions on the topic of the debate on city traffic.\n\nAs for the practical measures, my suggestions are listed as follows. In particular, you are advised to choose \"Is Traffic Jam Caused by Poor Road Planning\" as the topic around city traffic so that you can gradually improve the quality of the debate on both sides. In addition, it is strongly recommended that you should set the debate for next Friday afternoon in Room 302 so as to improve the situation.\n\nI would appreciate it very much if you could confirm the topic and the date by this Friday.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Professor Smith,\n希望你一切安好。本信的首要目的，是就本次城市交通辩论赛的辩题提出若干建议。\n\n至于具体措施，我的建议如下。具体而言，建议你围绕城市交通选用「交通拥堵源于道路规划不足吗」作为辩题，以便逐步提升正反双方交锋的质量。另外，强烈建议你把辩论安排在下周五下午302教室，以便改善当前状况。\n\n如果你能在本周五前确认辩题和日期，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "tips": [
+     "两问 = 「建议辩题 + 说明安排」，正好各用一句建议类：第一句给辩题，第二句给时间地点。",
+     "辩题写成<b>一个疑问句</b>（Is Traffic Jam Caused by…）才像辩题，这是本题的得分细节。",
+     "收尾请对方确认，{{deadline}} 给明确时间点，避免「尽快」这类模糊表达。"
+    ],
+    "title": "2019 真题套用示范 · Part A 建议信（辩题 + 安排）",
+    "slot_phrases": [
+     {
+      "name": "topic",
+      "en": "the topic of the debate on city traffic",
+      "cn": "本次城市交通辩论赛的辩题",
+      "para": "第一段"
+     },
+     {
+      "name": "action",
+      "en": "choose \"Is Traffic Jam Caused by Poor Road Planning\" as the topic",
+      "cn": "选用「交通拥堵源于道路规划不足吗」作为辩题",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "city traffic",
+      "cn": "城市交通",
+      "para": "第二段"
+     },
+     {
+      "name": "detail",
+      "en": "the quality of the debate on both sides",
+      "cn": "正反双方交锋的质量",
+      "para": "第二段"
+     },
+     {
+      "name": "task",
+      "en": "set the debate for next Friday afternoon in Room 302",
+      "cn": "把辩论安排在下周五下午302教室",
+      "para": "第二段"
+     },
+     {
+      "name": "expect",
+      "en": "confirm the topic and the date",
+      "cn": "确认辩题和日期",
+      "para": "第三段"
+     },
+     {
+      "name": "deadline",
+      "en": "this Friday",
+      "cn": "本周五",
+      "para": "第三段"
+     }
+    ],
+    "key_phrases": [
+     {
+      "en": "I hope this message finds you well.",
+      "cn": "希望你一切安好。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
+     },
+     {
+      "en": "The primary aim of this letter is to offer some suggestions on {{topic}}.",
+      "cn": "本信的首要目的，是就{{topic}}提出若干建议。",
+      "src": "第一段 · 第二句（表明来意） · 模板第10句"
+     },
+     {
+      "en": "As for the practical measures, my suggestions are listed as follows.",
+      "cn": "至于具体措施，我的建议如下。",
+      "src": "第二段 · 通用首句（引出下文） · 模板第2句"
+     },
+     {
+      "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
+      "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+      "src": "第二段 · 建议类 第二句 · 模板第2句"
+     },
+     {
+      "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
+      "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+      "src": "第二段 · 建议类 第三句 · 模板第1句"
+     },
+     {
+      "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
+      "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
+      "src": "第三段 · 收尾 / 客套 · 模板第1句"
+     }
+    ]
    }
   },
   {
@@ -4762,34 +4848,154 @@
     "template": "该模板适用于\"反映数据变化趋势\"的动态图（柱状图、线条图等），如\"博物馆及参观人数变化\"、\"汽车品牌市场份额的变化\"。\nIn the light of the chart above, it is evident that dramatic changes have taken place in terms of 主题词 these years. Specifically, the proportion/number of those who 类别1（下降） declined hugely/moderately from 数据1 in 起始年 to 数据2 in 终止年, while that of those 类别2（增加） ascended enormously/slightly from 数据3 to 数据4 during the same time span.\nThe data above illustrates a shift in people's view regarding 某领域. On the one hand, because 原因1, it's not surprising that the proportion/number of 类别1 remains pretty high. On the other hand, this trend/idea is also changing. With the advancement of/decline in 影响因素, 类别2 which allows/brings people 带来的益处 becomes increasingly popular, leaving the number of those who 选择类别1的群体 dropping accordingly.\nIt can be predicted that as 影响因素 improves/develops, 主题词 will be more 发展趋势. Therefore, only by 建议的做法, can we better embrace this new trend.\n模板注释：该模板第一段①句概述图表内容，②句说明数据变化。第二段着重分析原因：①句揭示变化本质，②句和③④句分别揭示\"不变\"和\"变化\"的原因。第三段说明未来发展趋势及相关主体应对之策。"
    },
    "apply": {
-    "apply_en": "The bar chart shows that the proportions associated with graduates' choices did not move in a uniform direction from 2013 to 2018. The share of those entering employment declined from 68.1% to 60.7%, while the share of those pursuing further education climbed from 26.3% to 34.0%. By contrast, the proportion of graduates starting a business rose slightly, from 1.3% to 2.6%.\n\nThe data reflects a shift in graduates' view of post-university life. On the one hand, as the job market becomes increasingly competitive, a higher degree is widely regarded as a way of securing an advantage. On the other hand, with living standards improving, more families can afford to support further study, and the idea that one should earn a living as early as possible is changing.\n\nFor graduates to make sound decisions, efforts from both universities and students are essential. Universities should offer clearer career guidance, while students should make well-informed choices in light of their own circumstances.",
-    "apply_cn": "该柱状图表明，2013 至 2018 年间毕业生去向的占比并未朝着相同方向变化。就业比例从 68.1% 降至 60.7%，而升学比例从 26.3% 升至 34.0%。相比之下，创业比例略有上升，从 1.3% 升至 2.6%。\n\n这些数据反映了毕业生对毕业后生活看法的转变。一方面，就业市场竞争日趋激烈，更高学历被普遍视为获取优势的途径；另一方面，随着生活水平提高，更多家庭能够负担继续深造，而“尽早挣钱养家”的观念正在发生变化。\n\n要使毕业生作出合理选择，需要高校与学生共同努力。高校应提供更清晰的职业指导，学生也应结合自身情况作出理性选择。",
+    "apply_en": "The bar chart tracks graduates' destinations from 2013 to 2018. From 2013 to 2018, the share going on to further study rose from 26.3% to 34.0%. Over the same period, the share entering employment slipped from 68.1% to 60.7%. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. Employers now look for experience as much as for grades. Schools now treat career planning as part of the routine rather than an optional extra. People now judge career planning by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build career planning into daily routines instead of treating it as an extra. What matters most is whether families and schools treat career planning as a normal part of life. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图记录了2013年到2018年期间毕业生去向的变化。自2013年至2018年，升学比例由26.3%升至34.0%。同一时期，就业比例由68.1%降到60.7%。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。现在用人单位既看成绩，也看经验。学校现在把职业规划当成日常安排，而不是可选项。人们现在看职业规划好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把职业规划纳入日常安排，而不是当成额外任务。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
     "tips": [
-     "三事物、有升有降 → 首句用 did not move in a uniform direction，主体句一降一升用 while，第三项用 By contrast 引出。",
-     "两组年份（2013 vs 2018）是本题的\"时间跨度\"，务必在首句标明 from 2013 to 2018。",
-     "第二段套经济类（就业市场）或校园类模板，把两条原因写清即可。",
-     "创业比例 1.3%→2.6% 属\"轻微上升\"，用 rose slightly，程度词不可省。"
+     "柱状图、两年对比变化（3 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
+     "数据要点：the share going on to further study 26.3% → 34.0%；the share entering employment 68.1% → 60.7%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "Part B 大作文：某高校2013年和2018年本科毕业生去向统计柱状图",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "bar",
+      "cn": "柱状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "the share going on to further study",
+      "cn": "升学比例",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "the share entering employment",
+      "cn": "就业比例",
+      "para": "第一段"
+     },
+     {
+      "name": "num1",
+      "en": "26.3%",
+      "cn": "26.3%",
+      "para": "第一段"
+     },
+     {
+      "name": "num2",
+      "en": "34.0%",
+      "cn": "34.0%",
+      "para": "第一段"
+     },
+     {
+      "name": "num3",
+      "en": "68.1%",
+      "cn": "68.1%",
+      "para": "第一段"
+     },
+     {
+      "name": "num4",
+      "en": "60.7%",
+      "cn": "60.7%",
+      "para": "第一段"
+     },
+     {
+      "name": "time1",
+      "en": "2013",
+      "cn": "2013 年",
+      "para": "第一段"
+     },
+     {
+      "name": "time2",
+      "en": "2018",
+      "cn": "2018 年",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "graduates' destinations",
+      "cn": "毕业生去向",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "career planning",
+      "cn": "职业规划",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "career planning",
+      "cn": "职业规划",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "did not move in a uniform direction",
-      "cn": "并未朝着相同方向变化"
+      "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+      "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+      "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "declined from … to …, while … climbed from … to …",
-      "cn": "从……降至……，而……从……升至……"
+      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+      "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
+      "src": "动态图表第一段 · 功能句1"
      },
      {
-      "en": "rose slightly",
-      "cn": "略有上升"
+      "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
+      "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
+      "src": "动态图表第一段 · 功能句2"
      },
      {
-      "en": "a shift in graduates’ view of post-university life",
-      "cn": "毕业生对毕业后生活看法的转变"
+      "en": "The two moved in opposite directions.",
+      "cn": "两者朝相反的方向变化。",
+      "src": "动态图表第一段 · 功能句6"
      },
      {
-      "en": "secure an advantage",
-      "cn": "获取优势"
+      "en": "The numbers in the chart are the result of deeper changes.",
+      "cn": "图里的数字，是更深层变化的结果。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
+     },
+     {
+      "en": "Employers now look for experience as much as for grades.",
+      "cn": "现在用人单位既看成绩，也看经验。",
+      "src": "第二段 · 原因（机制句池） · 功能句15"
+     },
+     {
+      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+      "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+      "src": "第二段 · 原因（机制句池） · 功能句10"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+      "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+      "src": "第二段 · 原因（机制句池） · 功能句14"
+     },
+     {
+      "en": "On balance, this is a change worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的变化。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
+      "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+     },
+     {
+      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+     },
+     {
+      "en": "That is what will decide whether the change lasts.",
+      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }
