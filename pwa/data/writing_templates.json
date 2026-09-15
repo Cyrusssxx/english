@@ -782,6 +782,75 @@
       "By contrast": "In contrast"
      },
      "demo": "The bar chart above clearly illustrates the sharp contrast in market share between Chinese and Japanese car brands from 2008 to 2009. During this period, Chinese brands rose sharply from 26% to 31%. By contrast, the figure for Japanese brands saw a steady decline, falling from 35% to 26%."
+    },
+    {
+     "label": "④ 先稳后急（图有分段就换这套）",
+     "years": "2013 · 2023",
+     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. From {{time1}} to {{time3}}, it rose steadily from {{num1}} to {{num3}}, and then climbed sharply to {{num2}}.",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{time1}} 到 {{time3}} 期间，它由 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。",
+     "struct": [
+      [
+       [
+        "The {{chart}} chart above",
+        "t"
+       ],
+       [
+        " clearly illustrates",
+        "p"
+       ],
+       [
+        " the changes in {{topic}}",
+        "o"
+       ],
+       [
+        " from {{time1}} to {{time2}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "From {{time1}} to {{time3}}",
+        "o"
+       ],
+       [
+        ", it",
+        "t"
+       ],
+       [
+        " rose steadily",
+        "p"
+       ],
+       [
+        " from {{num1}} to {{num3}}",
+        "o"
+       ],
+       [
+        ", and then",
+        "trans"
+       ],
+       [
+        " climbed sharply",
+        "p"
+       ],
+       [
+        " to {{num2}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "rose steadily": "climbed steadily / kept rising",
+      "climbed sharply": "surged / shot up"
+     },
+     "demo": "The line chart above clearly illustrates the changes in the health literacy rate of Chinese residents from 2012 to 2021. From 2012 to 2015, it rose steadily from 8.80% to 10.25%, and then climbed sharply to 25.40%."
     }
    ]
   },

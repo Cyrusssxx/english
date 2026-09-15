@@ -90,6 +90,15 @@ DYN = [
      'demo': ('The bar chart above clearly illustrates the sharp contrast in market share between Chinese and Japanese car brands '
               'from 2008 to 2009. During this period, Chinese brands rose sharply from 26% to 31%. By contrast, the figure for '
               'Japanese brands saw a steady decline, falling from 35% to 26%.')},
+    {'label': '④ 先稳后急（图有分段就换这套）', 'years': '2013 · 2023',
+     'en': DYN_OPEN['en'] + ' ' + 'From {{time1}} to {{time3}}, it rose steadily from {{num1}} to {{num3}}, and then climbed sharply to {{num2}}.',
+     'cn': DYN_OPEN['cn'] + '{{time1}} 到 {{time3}} 期间，它由 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。',
+     'struct': [DYN_OPEN['struct'],
+                [S('From {{time1}} to {{time3}}', 'o'), S(', it', 't'), S(' rose steadily', 'p'), S(' from {{num1}} to {{num3}}', 'o'),
+                 S(', and then', 'trans'), S(' climbed sharply', 'p'), S(' to {{num2}}', 'o'), S('.', '')]],
+     'alts': {'rose steadily': 'climbed steadily / kept rising', 'climbed sharply': 'surged / shot up'},
+     'demo': ('The line chart above clearly illustrates the changes in the health literacy rate of Chinese residents from 2012 to 2021. '
+              'From 2012 to 2015, it rose steadily from 8.80% to 10.25%, and then climbed sharply to 25.40%.')},
 ]
 
 # ══════════ 二、第二段：1 句引入 + 机制句池 ══════════
@@ -299,15 +308,15 @@ def main():
         import re
         return len([x for x in re.split(r'\s+', (t or '').strip()) if re.search(r'[A-Za-z]', x)])
     w_static = sum(wc(x['en']) for x in STATIC)
-    w_dyn = [wc(x['en']) for x in (DYN[0], DYN[1], DYN[2])]
+    w_dyn = [wc(x['en']) for x in DYN]
     core = w_static + max(w_dyn) + wc(PARA2_SKEL['en']) + sum(wc(x['en']) for x in P3_POS) + sum(wc(x['en']) for x in P3_NEG)
     print('骨架重置完成：%d 个段落' % len(d['sections']))
-    print('  P1 静态 %d 词（2 句）｜ 动态 ①%d ②%d ③%d 词' % (w_static, w_dyn[0], w_dyn[1], w_dyn[2]))
+    print('  P1 静态 %d 词（2 句）｜ 动态 ①%d ②%d ③%d ④%d 词' % (w_static, w_dyn[0], w_dyn[1], w_dyn[2], w_dyn[3]))
     print('  P2 %d 词 + 机制句池 %d 条 ｜ P3 正 %d 词 / 负 %d 词 + 主体句池 %d+%d 条' % (
         wc(PARA2_SKEL['en']), len(MECH),
         sum(wc(x['en']) for x in P3_POS), sum(wc(x['en']) for x in P3_NEG), len(SUBJ_POS), len(SUBJ_NEG)))
     print('  → 必背估算 %d 词（静态 %d + 动态最长的② %d + P2 %d + P3 两版 %d）'
-          % (core, w_static, w_dyn[1], wc(PARA2_SKEL['en']),
+          % (core, w_static, max(w_dyn), wc(PARA2_SKEL['en']),
              sum(wc(x['en']) for x in P3_POS) + sum(wc(x['en']) for x in P3_NEG)))
 
 
