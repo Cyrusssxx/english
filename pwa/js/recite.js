@@ -101,7 +101,7 @@ async function rcInit() {
             if (skels) {
                 sk += skels.map(v => `<div class="rc-skel">
                     <div class="rc-skel-head"><b>${rcEsc(v.label)}</b><span>适用 ${rcEsc(v.years)}</span></div>`
-                    + rcPairs(v.en, v.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
+                    + rcPairs(v.en, v.cn).map(p => `<div class="rc-line">${p.star ? `<span class="rc-freq">${p.star}</span>` : ''}<div class="rc-en">${rcAnno(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
                     + '</div>').join('');
             } else {
                 sk += '<div class="rc-lines">'
@@ -152,7 +152,7 @@ async function rcInit() {
             const hit = (s.sentences || []).filter(x => (x.tag || '').split('·')[0].trim() === a);
             if (!hit.length) return;
             ag += `<div class="rc-agent"><div class="rc-agent-name">${rcEsc(a)}<span class="rc-agent-yrs">${rcEsc((hit[0].tag || '').split('·')[1] || '')}</span></div>`
-                + hit.map(x => `<div class="rc-agent-s"><div class="rc-en"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span>${rcPh(x.en)}</div><div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')
+                + hit.map(x => `<div class="rc-agent-s"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span><div class="rc-en">${rcAnno(x.en)}</div><div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')
                 + '</div>';
         });
         ag += '</div>';
@@ -161,6 +161,202 @@ async function rcInit() {
         是基础设施/规则 → 政府 + 企业；是平台/产品 → 企业 + 个人。<b>不要 6 个主体全写</b>，那是模板味最重的地方。</div>`;
     document.getElementById('rcAgents').innerHTML = ag;
 }
+
+/* ==================== 划词查词（writing.js 精简副本：词组优先 + 本句义 + 熟词僻义） ==================== */
+let rcPopEl = null;
+let RC_SENSES = null;   // { word: [本句义, 说明, U/C] }
+let RC_WN = null;       // { word: wordnotes 行 }
+
+const RC_STOP = new Set(('a an the and or of in on to from with by as at for while that this these those it its is are was were be been being ' +
+    'their they them we our you your him her his not no nor but so if then than when which who whom whose what where how ' +
+    'will would can could shall should may might must do does did have has had more most less least very just only also too ' +
+    'there here such own one two three over under between among about against during through across after before because ' +
+    'although though since until unless whether either neither both each every any some all').split(' '));
+
+async function rcLoadSense() {
+    const grab = u => fetch(u).then(r => (r.ok ? r.json() : null)).catch(() => null);
+    try {
+        const [s, w] = await Promise.all([grab('data/writing_senses.json'), grab('data/wordnotes.json')]);
+        RC_SENSES = (s && s.words) || {};
+        RC_WN = {};
+        (((w && w.rows) || [])).forEach(r => { if (r && r.w) RC_WN[String(r.w).toLowerCase()] = r; });
+    } catch (e) { RC_SENSES = RC_SENSES || {}; RC_WN = RC_WN || {}; }
+}
+
+function rcTokEq(tok, candWord) {
+    if (tok.low === candWord) return true;
+    if (typeof stemCandidates !== 'function') return false;
+    const cands = stemCandidates(candWord);
+    if (cands.includes(tok.low)) return true;
+    const lows = stemCandidates(tok.low);
+    return cands.some(c => lows.includes(c)) || cands.includes(tok.low) || lows.includes(candWord);
+}
+
+/** 文本 → 词组优先的 .word 标注（{{占位符}} 先摘出来，标注完再放回芯片） */
+function rcAnno(t) {
+    const phs = [];
+    const masked = String(t || '').replace(/\{\{(.+?)\}\}/g, (m, x) => { phs.push(x); return '\u0000'; });
+    let html;
+    if (typeof maxPhraseWords === 'function' && maxPhraseWords() >= 1 && typeof dictLookup === 'function') {
+        const TOK = /[A-Za-z][A-Za-z'\-]*/g;
+        const toks = [];
+        let m;
+        while ((m = TOK.exec(masked)) !== null) {
+            toks.push({ s: m.index, e: m.index + m[0].length, low: m[0].toLowerCase(), raw: m[0] });
+        }
+        let out = '', last = 0, i = 0;
+        const tryCands = cands => {
+            if (!cands) return null;
+            for (const c of cands) {                     // 候选按 token 数降序 → 最长优先
+                const n = c.tokens.length;
+                if (i + n > toks.length) continue;
+                let ok = true;
+                for (let k = 1; k < n; k++) {
+                    if (!rcTokEq(toks[i + k], c.tokens[k])) { ok = false; break; }
+                    if (!/^[\s\-]*$/.test(masked.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
+                }
+                if (ok) return c;
+            }
+            return null;
+        };
+        while (i < toks.length) {
+            let matched = tryCands(phraseCandidates(toks[i].low));
+            if (!matched) {                              // 词形还原后再试（draws out → draw out）
+                for (const stem of stemCandidates(toks[i].low)) {
+                    matched = tryCands(phraseCandidates(stem));
+                    if (matched) break;
+                }
+            }
+            if (matched) {
+                const n = matched.tokens.length;
+                const s0 = toks[i].s, e0 = toks[i + n - 1].e;
+                out += rcEsc(masked.slice(last, s0));
+                out += `<span class="word phrase" data-w="${rcEsc(matched.key)}" data-ph="1">${rcEsc(masked.slice(s0, e0))}</span>`;
+                last = e0;
+                i += n;
+            } else if (!RC_STOP.has(toks[i].low)) {
+                out += rcEsc(masked.slice(last, toks[i].s));
+                out += `<span class="word" data-w="${rcEsc(toks[i].low)}">${rcEsc(toks[i].raw)}</span>`;
+                last = toks[i].e;
+                i++;
+            } else {
+                i++;                                     // 高频功能词：跳过不标（词组整组不受影响）
+            }
+        }
+        out += rcEsc(masked.slice(last));
+        html = out;
+    } else {
+        html = rcEsc(masked);                            // 词典未加载：先纯文本，加载完 rcAnnoAll 重标
+    }
+    return html.replace(/\u0000/g, () => '<span class="rc-ph">' + rcEsc(phs.shift()) + '</span>');
+}
+
+/** 词典/词组加载完成后：把还没标注的 .rc-en 重标一遍 */
+function rcAnnoAll() {
+    if (typeof maxPhraseWords !== 'function' || maxPhraseWords() < 1 || typeof dictLookup !== 'function') return;
+    document.querySelectorAll('.rc-en').forEach(el => {
+        if (el.dataset.anno) return;
+        el.dataset.anno = '1';
+        el.innerHTML = rcAnno(el.textContent);
+    });
+}
+
+function rcOpenPop(targetEl, html) {
+    rcClosePop();
+    rcPopEl = document.createElement('div');
+    rcPopEl.className = 'word-pop wr-pop-c';
+    rcPopEl.innerHTML = html;
+    document.body.appendChild(rcPopEl);
+    const r = targetEl.getBoundingClientRect();
+    const pw = rcPopEl.offsetWidth, ph = rcPopEl.offsetHeight;
+    let left = r.left + window.scrollX;
+    if (left + pw > window.scrollX + document.documentElement.clientWidth - 12) {
+        left = window.scrollX + document.documentElement.clientWidth - pw - 12;
+    }
+    let top = r.bottom + window.scrollY + 6;
+    if (top + ph > window.scrollY + document.documentElement.clientHeight - 12) {
+        top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
+    }
+    rcPopEl.style.left = left + 'px';
+    rcPopEl.style.top = top + 'px';
+}
+
+function rcClosePop() {
+    if (rcPopEl) { rcPopEl.remove(); rcPopEl = null; }
+}
+
+function rcWordKeys(key, base) {
+    const out = [];
+    const push = x => { x = String(x || '').toLowerCase().trim(); if (x && !out.includes(x)) out.push(x); };
+    push(key); push(base);
+    [key, base].forEach(w => {
+        if (/ies$/.test(w)) push(w.slice(0, -3) + 'y');
+        if (/es$/.test(w)) push(w.slice(0, -2));
+        if (/s$/.test(w) && !/ss$/.test(w)) push(w.slice(0, -1));
+        push(w + 's');
+        push(w + 'es');
+        if (/y$/.test(w)) push(w.slice(0, -1) + 'ies');
+        if (typeof stemCandidates === 'function') stemCandidates(w).forEach(push);
+    });
+    return out;
+}
+
+/** 词卡：📌 本句义 → 词组整组释义（组成词可点换查）→ 词典 → ⚡熟词僻义 */
+function rcWordPop(el) {
+    const key = el.getAttribute('data-w') || '';
+    const isPhrase = el.getAttribute('data-ph') === '1';
+    const base = (typeof normWord === 'function') ? normWord(key) : String(key).toLowerCase();
+    const pick = map => {
+        if (!map) return null;
+        for (const c of rcWordKeys(key, base)) { if (map[c]) return map[c]; }
+        return null;
+    };
+    const sense = pick(RC_SENSES);
+    const wn = pick(RC_WN);
+    let html = '';
+    if (sense) {
+        html += `<div class="wp-sense"><span class="wp-sense-tag">📌 本句义</span>`
+            + `<span class="wp-sense-cn">${rcEsc(sense[0])}</span>`
+            + (sense[1] ? `<div class="wp-sense-note">${rcEsc(sense[1])}</div>` : '') + `</div>`;
+    }
+    if (isPhrase) {
+        const meaning = (typeof phraseLookup === 'function') ? phraseLookup(key) : null;
+        if (!meaning) { rcOpenPop(el, html || '<div class="wp-meaning">（无释义）</div>'); return; }
+        html += `<div class="wp-phrase">${rcEsc(key)}</div><div class="wp-meaning">${rcEsc(meaning)}</div>`;
+        html += key.split(/\s+/).map(w => {
+            const entry = dictLookup(w);
+            return `<div class="wpw"><span class="wpw-word word" data-w="${rcEsc(normWord(w))}">${rcEsc(w)}</span>` +
+                (entry ? `<span class="wpw-mean">${rcEsc(entry.t)}</span>` : `<span class="wpw-mean wpw-none">（离线无释义）</span>`) + `</div>`;
+        }).join('');
+    } else {
+        const entry = dictLookup(key);
+        html += `<span class="wp-word">${rcEsc(key)}</span><span class="wp-phonetic">${rcEsc(entry ? entry.p || '' : '')}</span>` +
+            `<div class="wp-meaning">${entry ? rcEsc(entry.t) : '（无离线释义）'}</div>`;
+    }
+    if (wn) {
+        html += `<div class="wp-wn"><div class="wp-wn-t">⚡ 熟词僻义`
+            + (wn.tier ? `<span class="wp-wn-tier">${rcEsc(wn.tier)}频</span>` : '')
+            + (sense && sense[2] === 'U' ? `<span class="wp-wn-flag u">本句用的正是僻义</span>`
+               : (sense && sense[2] === 'C' ? `<span class="wp-wn-flag">本句是熟义</span>` : ''))
+            + `</div>`
+            + `<div class="wp-wn-row"><b>熟义</b>${rcEsc(wn.common || '')}</div>`
+            + `<div class="wp-wn-row"><b>僻义</b>${rcEsc(wn.uncommon || '')}</div>`
+            + (wn.en ? `<div class="wp-wn-ex">${rcEsc(wn.en)}</div>` : '')
+            + (wn.cn ? `<div class="wp-wn-excn">${rcEsc(wn.cn)}</div>` : '')
+            + (wn.src ? `<div class="wp-wn-src">${rcEsc(wn.src)}</div>` : '') + `</div>`;
+    }
+    rcOpenPop(el, html);
+}
+
+/** 全局委托：点词弹卡（卡内组成词可换查）；点卡外空白关卡 */
+function rcAnnoBind() {
+    document.addEventListener('click', e => {
+        const w = e.target.closest('.word');
+        if (w) { e.stopPropagation(); rcWordPop(w); return; }
+        if (!e.target.closest('.wr-pop-c')) rcClosePop();
+    }, true);
+}
+
 
 /** 夜间模式（本页不依赖 common.js，自带一份最小实现） */
 function toggleDark() {
@@ -292,7 +488,7 @@ async function rcSmallInit() {
         </div>`;
 
     // 二、要背的句子
-    const line = (x, star) => `<div class="rc-line"><div class="rc-en"><span class="rc-freq">${star}</span>${rcPh(x.it.en)}</div>`
+    const line = (x, star) => `<div class="rc-line">${star ? `<span class="rc-freq">${star}</span>` : ''}<div class="rc-en">${rcAnno(x.it.en)}</div>`
         + `<div class="rc-cn">${rcPh(x.it.cn || '')}</div></div>`;
     let sk = '<div class="rc-group">⭐⭐ 骨架（4 句 · ' + st.core_words + ' 词）— 任何一封信都要用</div>';
     sk += '<div class="rc-card"><div class="rc-card-head"><span class="rc-card-title">首句 / 来意 / 通用引出 / 收尾</span>'
@@ -357,4 +553,6 @@ document.addEventListener('DOMContentLoaded', () => {
     rcToc();
     rcInit();
     rcSmallInit();
+    rcAnnoBind();
+    Promise.all([loadDict(), loadPhrases(), rcLoadSense()]).then(rcAnnoAll);   // 词典就绪后全页标注
 });

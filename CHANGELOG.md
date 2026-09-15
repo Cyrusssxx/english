@@ -1,5 +1,24 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16] 速记页划词查词（词组优先）+ 词组表补作文搭配 + 机制句串接指引
+
+- **速记页接入划词查词**（`recite.js` 加 `rcAnno*` 精简模块，`recite.html` 引入 `dict.js`）：
+  61 行英文全部可点，**词组最长优先**（break down / come first / rounds off the list…共 85 处整组标注）；
+  词卡 = 📌 本句义 → 词组整组释义（组成词可点换查）→ 词典义 → ⚡熟词僻义（本句用的正是僻义会标出）。
+  {{占位符}} 先摘出再标注，芯片完好不参与查词。
+- **词组表补 76 组作文高频搭配**（`build_phrases.py` 的 `EXTRA` 表，最高优先级）：
+  数据描述类（take the largest share / round off the list / more than doubled / widen over the period…）、
+  机制句类（disposable income / within reach / sit at a desk / aging population…）、
+  第三段类（in the long run / on balance / worth welcoming / take seriously…）、
+  小作文类（first and foremost / feel at home / heartfelt thanks / full refund / as soon as possible…）。
+  ⚠ **险情**：重跑 `build_phrases.py` 时发现 HEAD 里的 phrases.json 曾被 `patch_phrases.py`
+  （ECDICT 增量）扩到 5.5 万条，直接重跑会抹掉 —— 正确管道是 **build → patch（ECDICT 增量）**，
+  已按此恢复并叠加 EXTRA，最终 **60311 条**。
+- **第二段机制句串接指引**（回应「没有类型会不会好写」）：tips 加固定串法
+  「First and foremost, + 第 1 条。 In addition, + 第 2 条。 Finally, + 第 3 条。」。
+- 验证：jsdom **12/12**（61 行标注、85 处词组、占位符芯片、弹卡四层内容、卡内换查、串接指引）。
+  SW en2-bcbbeed2。
+
 ## [2026-09-16] 小作文 17 篇「真题套用示范」上线 ＋ 修「文章页示范是旧版」的 bug
 
 **一、修 bug：文章页看到的套用示范是旧版**

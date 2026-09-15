@@ -257,6 +257,102 @@ def example_looks_clean(en, cn):
     return True
 
 
+# ---------------- 作文模块高频搭配（人工核对，2026-09-16） ----------------
+# 来源：大作文骨架/机制句池/主体句池 + 小作文功能句库 + 速记页。
+# key 一律小写；释义贴作文语境（短），划词查词时整组优先显示。
+EXTRA = {
+    # —— 数据描述（大作文第一段）——
+    'take the largest share': '占最大份额',
+    'come first': '排在第一',
+    'come last': '排在最后',
+    'round off the list': '排在名单末位',
+    'rounds off the list': '排在名单末位',
+    'the rest of': '其余的',
+    'taken together': '合计起来',
+    'more than half': '过半；超过一半',
+    'a quarter of': '……的四分之一',
+    'account for': '占（比例）',
+    'rose steadily': '稳步上升',
+    'rose sharply': '急剧上升',
+    'fell sharply': '急剧下降',
+    'dropped slightly': '小幅下降',
+    'more than doubled': '翻了一倍多',
+    'speed up': '加快',
+    'sped up': '明显加快',
+    'more slowly': '更缓慢地',
+    'the same direction': '同一方向',
+    'opposite directions': '相反的方向',
+    'the gap between': '……之间的差距',
+    'widened over the period': '在这一时期拉大',
+    # —— 第二段机制句 ——
+    'disposable income': '可支配收入',
+    'purchasing power': '购买力',
+    'basic needs': '基本需求',
+    'care more about': '更在意',
+    'public facilities': '公共设施',
+    'within reach': '够得着；负担得起',
+    'spend more on': '在……上花更多钱',
+    'sit at a desk': '久坐',
+    'team sports': '团体运动',
+    'outdoor activities': '户外活动',
+    'take exercise': '锻炼',
+    'health awareness': '健康意识',
+    'cultural confidence': '文化自信',
+    'pass on': '传递下去',
+    'pass it on': '把它传下去',
+    'aging population': '老龄化人口',
+    'more and more people': '越来越多的人',
+    'be willing to': '愿意去',
+    'come out of nowhere': '凭空出现',
+    'call their own': '属于自己的',
+    'a practical need': '实际需要',
+    'live and work': '生活与工作',
+    'spend their time': '安排自己的时间',
+    'move in the same direction': '朝同一方向变化',
+    'moved in the same direction': '朝同一方向变化',
+    'everyday life': '日常生活',
+    # —— 第三段 ——
+    'in the long run': '从长远看',
+    'on balance': '总的来说',
+    'worth welcoming': '值得欢迎',
+    'take seriously': '认真对待',
+    'act together': '共同行动',
+    'play a role': '发挥作用',
+    'correct itself': '自行纠正',
+    # —— 小作文高频 ——
+    'first and foremost': '首先，最重要的是',
+    'last but not least': '最后但同样重要',
+    'to be more specific': '更具体地说',
+    'in particular': '尤其，特别',
+    'with regard to': '关于',
+    'as follows': '如下',
+    'take part in': '参加',
+    'sign up': '报名',
+    'on time': '准时',
+    'be required to': '被要求',
+    'warm reception': '热情接待',
+    'feel at home': '感到宾至如归',
+    'heartfelt thanks': '由衷的感谢',
+    'sincere gratitude': '诚挚的感谢',
+    'make full use of': '充分利用',
+    'look forward to': '期待',
+    'of great benefit': '大有裨益',
+    'so as to': '以便',
+    'only in this way': '唯有如此',
+    'a formal complaint': '正式投诉',
+    'as soon as possible': '尽快',
+    'full refund': '全额退款',
+    'online store': '网店',
+    'adapt to': '适应',
+    'be familiar with': '熟悉',
+    'deeply impressed by': '对……印象深刻',
+    'an ideal choice': '理想的选择',
+    'is characterized by': '其特点是',
+    'aiming to': '旨在',
+    'i would appreciate it': '我将不胜感激',
+}
+
+
 def collect_year_phrases():
     """从 16 年题库收集人工标注的多词词组（w 含空格），释义已去「词组：」前缀。"""
     out = {}
@@ -311,6 +407,7 @@ def main():
     phrases = dict(pdf_phrases)
     ymap = collect_year_phrases()
     phrases.update(ymap)  # 题库语境释义覆盖 PDF 通用释义
+    phrases.update(EXTRA)  # 作文模块高频搭配（语境释义，最高优先）
     pdf_only = len(set(pdf_phrases) - set(ymap))
     max_words = max((len(k.split()) for k in phrases), default=0)
     out = {'version': VERSION, 'maxWords': max_words, 'phrases': phrases}
