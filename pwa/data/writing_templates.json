@@ -415,6 +415,24 @@
      "tag": "加速"
     },
     {
+     "en": "The first half of the period saw a steady rise, while the last few years brought a sharp acceleration.",
+     "cn": "前半段稳步上升，最后几年明显加速。",
+     "freq": 3,
+     "tag": "分段·先稳后急"
+    },
+    {
+     "en": "In the later years, {{item1}} climbed sharply while {{item2}} stayed almost flat.",
+     "cn": "后几年 {{item1}} 急剧上升，而 {{item2}} 几乎原地不动。",
+     "freq": 3,
+     "tag": "分段·后段分化"
+    },
+    {
+     "en": "From {{time1}} to {{time3}}, it rose steadily, and after {{time3}} it accelerated sharply to reach {{num2}}.",
+     "cn": "{{time1}} 到 {{time3}} 稳步上升，{{time3}} 之后明显加速，最终达到 {{num2}}。",
+     "freq": 2,
+     "tag": "分段·中点句"
+    },
+    {
      "en": "The two moved in opposite directions.",
      "cn": "两者朝相反的方向变化。",
      "freq": 3,

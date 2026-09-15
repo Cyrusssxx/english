@@ -231,6 +231,9 @@ def main():
         {'en': 'The two moved in the same direction, but not at the same pace.', 'cn': '两者方向一致，但速度不同。', 'freq': 3, 'tag': '同向不同速'},
         {'en': 'The gap between the two widened over the period.', 'cn': '两者的差距在这一时期拉大了。', 'freq': 3, 'tag': '差距'},
         {'en': 'Growth was slow at first and then sped up.', 'cn': '增长起初缓慢，后来明显加快。', 'freq': 3, 'tag': '加速'},
+        {'en': 'The first half of the period saw a steady rise, while the last few years brought a sharp acceleration.', 'cn': '前半段稳步上升，最后几年明显加速。', 'freq': 3, 'tag': '分段·先稳后急'},
+        {'en': 'In the later years, {{item1}} climbed sharply while {{item2}} stayed almost flat.', 'cn': '后几年 {{item1}} 急剧上升，而 {{item2}} 几乎原地不动。', 'freq': 3, 'tag': '分段·后段分化'},
+        {'en': 'From {{time1}} to {{time3}}, it rose steadily, and after {{time3}} it accelerated sharply to reach {{num2}}.', 'cn': '{{time1}} 到 {{time3}} 稳步上升，{{time3}} 之后明显加速，最终达到 {{num2}}。', 'freq': 2, 'tag': '分段·中点句'},
         {'en': 'The two moved in opposite directions.', 'cn': '两者朝相反的方向变化。', 'freq': 3, 'tag': '反差'},
         {'en': 'The figure more than doubled over the period.', 'cn': '这一数字在该时期翻了一倍多。', 'freq': 2, 'tag': '倍数'},
     ]
