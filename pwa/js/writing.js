@@ -176,11 +176,62 @@ function wrOpenPop(targetEl, html) {
     wrPopEl.style.top = top + 'px';
 }
 
-/** 点击词/词组：词组优先显示整组释义 + 组成词分释；单词显示词典释义；均可加入生词本 */
+/** 一个词可能的查表键：原词 / 归一形 / 去复数 / 词形还原候选（figures ↔ figure） */
+function wrWordKeys(key, base) {
+    const out = [];
+    const push = x => { x = String(x || '').toLowerCase().trim(); if (x && !out.includes(x)) out.push(x); };
+    push(key); push(base);
+    [key, base].forEach(w => {
+        if (/ies$/.test(w)) push(w.slice(0, -3) + 'y');
+        if (/es$/.test(w)) push(w.slice(0, -2));
+        if (/s$/.test(w) && !/ss$/.test(w)) push(w.slice(0, -1));
+        push(w + 's');                                  // 表里可能收的是复数（wordnotes 有 figures 无 figure）
+        push(w + 'es');
+        if (/y$/.test(w)) push(w.slice(0, -1) + 'ies');
+        if (typeof stemCandidates === 'function') stemCandidates(w).forEach(push);
+    });
+    return out;
+}
+
+/* ── 本句语境义（writing_senses.json）与真题熟词僻义（wordnotes.json） ── */
+let WR_SENSES = null;    // { word: [本句义, 说明, U/C] }
+let WR_WN = null;        // { word: wordnotes 行 }
+
+async function wrLoadSenses() {
+    const grab = u => fetch(u).then(r => (r.ok ? r.json() : null)).catch(() => null);
+    try {
+        const [s, w] = await Promise.all([grab('data/writing_senses.json'), grab('data/wordnotes.json')]);
+        WR_SENSES = (s && s.words) || {};
+        WR_WN = {};
+        (((w && w.rows) || [])).forEach(r => { if (r && r.w) WR_WN[String(r.w).toLowerCase()] = r; });
+    } catch (e) { WR_SENSES = WR_SENSES || {}; WR_WN = WR_WN || {}; }
+}
+
+/** 取消「弹卡所在位置」的高亮（点高亮里的词 → 弹卡 → 一键取消） */
+function wrUnhlFromPop() {
+    const mk = wrPopEl && wrPopEl.__mk;
+    wrCloseWordPop();
+    if (mk) wrHlRemoveMark(mk);
+}
+
+/** 点击词/词组：本句义 → 词典义 → 熟词僻义；均可加入生词本 */
 function wrWordPop(el) {
     const key = el.getAttribute('data-w') || '';
     const isPhrase = el.getAttribute('data-ph') === '1';
+    const base = (typeof normWord === 'function') ? normWord(key) : String(key).toLowerCase();
+    const pick = map => {
+        if (!map) return null;
+        for (const c of wrWordKeys(key, base)) { if (map[c]) return map[c]; }
+        return null;
+    };
+    const sense = pick(WR_SENSES);
+    const wn = pick(WR_WN);
     let html = '';
+    if (sense) {                       // 词典义项常常对不上本句，先给「本句义」
+        html += `<div class="wp-sense"><span class="wp-sense-tag">📌 本句义</span>`
+            + `<span class="wp-sense-cn">${wrEsc(sense[0])}</span>`
+            + (sense[1] ? `<div class="wp-sense-note">${wrEsc(sense[1])}</div>` : '') + `</div>`;
+    }
     if (isPhrase) {
         const meaning = phraseLookup(key);
         if (!meaning) return;
@@ -195,9 +246,24 @@ function wrWordPop(el) {
         html += `<span class="wp-word">${wrEsc(key)}</span><span class="wp-phonetic">${wrEsc(entry ? entry.p || '' : '')}</span>` +
             `<div class="wp-meaning">${entry ? wrEsc(entry.t) : '（无离线释义）'}</div>`;
     }
+    if (wn) {                          // 真题考过的熟词僻义（含真题例句）
+        html += `<div class="wp-wn"><div class="wp-wn-t">⚡ 熟词僻义`
+            + (wn.tier ? `<span class="wp-wn-tier">${wrEsc(wn.tier)}频</span>` : '')
+            + (sense && sense[2] === 'U' ? `<span class="wp-wn-flag u">本句用的正是僻义</span>`
+               : (sense && sense[2] === 'C' ? `<span class="wp-wn-flag">本句是熟义</span>` : ''))
+            + `</div>`
+            + `<div class="wp-wn-row"><b>熟义</b>${wrEsc(wn.common || '')}</div>`
+            + `<div class="wp-wn-row"><b>僻义</b>${wrEsc(wn.uncommon || '')}</div>`
+            + (wn.en ? `<div class="wp-wn-ex">${wrEsc(wn.en)}</div>` : '')
+            + (wn.cn ? `<div class="wp-wn-excn">${wrEsc(wn.cn)}</div>` : '')
+            + (wn.src ? `<div class="wp-wn-src">${wrEsc(wn.src)}</div>` : '') + `</div>`;
+    }
     const inV = wrVocabSet.has(key);
     html += `<button class="${inV ? 'added' : ''}" data-w="${wrEsc(key)}" onclick="wrAddVocab(this)">${inV ? '移出生词本' : '+ 加入生词本'}</button>`;
+    const mk = (el.closest && el.closest('mark.note-hl')) || null;
+    if (mk) html += `<button class="wp-unhl" onclick="wrUnhlFromPop()">✕ 取消该处高亮</button>`;
     wrOpenPop(el, html);
+    if (wrPopEl) wrPopEl.__mk = mk;    // 记住这处高亮，供上面的按钮取消
 }
 
 /** 加入/移出生词本（例句 = 当前模板句） */
@@ -226,7 +292,7 @@ async function wrAddVocab(btn) {
 function wrWordBind() {
     document.addEventListener('click', e => {
         const w = e.target.closest('.word');
-        if (w && !e.target.closest('.wr-pop-c') && !e.target.closest('mark.note-hl')) {
+        if (w && !e.target.closest('.wr-pop-c')) {   // 高亮里的词也要能查（取消高亮走弹卡内按钮 / 划选）
             e.stopPropagation();
             const line = w.closest('.wr-line, .wr-sent');
             wrWordPop(w);
@@ -509,7 +575,7 @@ function wrHlBind() {
     document.addEventListener('click', e => {
         if (wrInAnno(e.target)) return;
         const mk = e.target.closest ? e.target.closest('mark.note-hl') : null;
-        if (mk) { e.stopPropagation(); wrHlShowCancelFor(mk); }
+        if (mk && !(e.target.closest && e.target.closest('.word'))) { e.stopPropagation(); wrHlShowCancelFor(mk); }
     });
     window.addEventListener('scroll', () => { if (wrHlBar) hideHlToolbar(); }, { passive: true });
 }
@@ -738,7 +804,8 @@ function wrSectionCard(sec) {
 /** 展开行的真题套用示范内容（示范文 + 建议 + 关键句型） */
 function wrApplyHtml(year, ap) {
     const mk = (typeof APPLY_MARKS !== 'undefined' && APPLY_MARKS) ? APPLY_MARKS[year] : null;
-    const bodyHtml = renderApplyBody(mk) || `<div class="apply-en">${wrEsc(ap.apply_en || '')}</div>`;
+    const bodyHtml = renderApplyBody(mk, wrAnnotatePlain)     // 示范文的词也可点（同一套词典）
+        || `<div class="apply-en">${wrAnnotatePlain(ap.apply_en || '')}</div>`;
     const tips = (ap.tips || []).map(x => `<li>${wrEsc(x)}</li>`).join('');
 
     return wrNumWrap(`<div class="wr-apply-detail">
@@ -939,7 +1006,7 @@ async function initWriting() {
             `<p class="wr-loading">加载失败：${wrEsc(e.message)}</p>`;
         return;
     }
-    await Promise.all([loadDict(), loadPhrases()]);   // 离线词典 + 真题词组表（划词查词，词组优先）
+    await Promise.all([loadDict(), loadPhrases(), wrLoadSenses()]);   // 词典 + 词组表 + 本句语境义/熟词僻义
     wrMkLoad();                       // 划词高亮 + 行批注数据
     wrInitVocab();                                     // 生词本集合（弹卡按钮状态）
     // 真题套用示范（按年份汇总，可空）

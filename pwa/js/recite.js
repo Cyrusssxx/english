@@ -62,25 +62,30 @@ async function rcInit() {
         <div class="rc-stat"><span class="rc-stat-n">30</span><span class="rc-stat-k">天完成</span></div>
         <div class="rc-stat"><span class="rc-stat-n">${Math.ceil(mustWords / 30)}</span><span class="rc-stat-k">平均词/天</span></div>`;
 
-    // 一、拼装顺序
+    // 一、拼装顺序（词数从数据算，改骨架不用改这里）
+    const W1 = Math.max(rcWords(S.chart_static ? S.chart_static.en : ''), 23);
+    const W2 = rcWords(S.para2_why ? S.para2_why.en : '');
+    const dyn = ['① 一条线在走', '② 两条都在涨', '③ 一升一降'].map(x => {
+        const hit = ((S.chart_dynamic || {}).skeletons || []).find(v => v.label === x);
+        return hit ? rcWords(hit.en) : 0;
+    });
     document.getElementById('rcOrder').innerHTML = `
         <div class="rc-order">
-            <div class="rc-order-step"><span class="rc-order-no">1</span><b>第一段 · 描述图表</b>
-                <div class="rc-order-body">静态图用「静态骨架」（38 词）；动态图先看走势，从 3 套里<b>选一套</b><br>
-                （单线上升 19 / 同向不同速 27 / 一升一降 24 词）。再从句池挑 0~1 句，本段约 40~55 词。</div></div>
-            <div class="rc-order-step"><span class="rc-order-no">2</span><b>第二段 · 原因分析</b>
-                <div class="rc-order-body">按话题挑 1 个骨架（经济 33 / 校园 34 / 环保 32 / 体育 35 / 文化 33 词），<br>
-                再接 1~2 句句池，本段约 55~65 词。优先背<b>经济</b>和<b>校园</b>这两段。</div></div>
-            <div class="rc-order-step"><span class="rc-order-no">3</span><b>第三段 · 建议总结</b>
-                <div class="rc-order-body">正面题用「正面骨架」（31 词），负面题用「负面骨架」（25 词）；<br>
-                再从 6 组主体句池里挑 <b>2 个主体各 1 句</b>，本段约 50~60 词。</div></div>
+            <div class="rc-order-step"><span class="rc-order-no">1</span><b>第一段 · 描述图</b>
+                <div class="rc-order-body">静态分布图用「静态骨架」（${W1} 词）；动态图先看走势，从 3 套里<b>选一套</b>：
+                ${rcEsc(dyn[0])} / ${rcEsc(dyn[1])} / ${rcEsc(dyn[2])} 词。再按需补 1 句句池，本段约 40~55 词。</div></div>
+            <div class="rc-order-step"><span class="rc-order-no">2</span><b>第二段 · 说原因</b>
+                <div class="rc-order-body">引入句 ${W2} 词 + 从机制句池<b>挑 3 条</b>（每条都是一个完整原因），本段约 55~65 词。</div></div>
+            <div class="rc-order-step"><span class="rc-order-no">3</span><b>第三段 · 评论</b>
+                <div class="rc-order-body"><b>立场句</b>（正面 ${rcWords(S.para3_positive ? S.para3_positive.en : '')} 词 / 负面 ${rcWords(S.para3_negative ? S.para3_negative.en : '')} 词，含收束句）
+                ＋ 从主体句池挑 1~2 句，本段约 45~55 词。</div></div>
             <div class="rc-total">三段合计 <b>150~180 词</b>（考研要求 150+）· 超了就少接一句句池</div>
         </div>`;
 
     // 二、必背骨架
     const groups = [
         ['大作文 · 第一段（图表描述）', ['chart_static', 'chart_dynamic']],
-        ['大作文 · 第二段（原因分析）', ['para2_economy', 'para2_campus', 'para2_social', 'para2_sports', 'para2_culture']],
+        ['大作文 · 第二段（原因）', ['para2_why']],
         ['大作文 · 第三段（总结建议）', ['para3_positive', 'para3_negative']]
     ];
     let sk = '';
@@ -137,13 +142,14 @@ async function rcInit() {
 
     // 三、第三段主体句池
     let ag = '';
-    [['para3_positive', '正面版（建议怎么做）'], ['para3_negative', '负面版（怎么控制危害）']].forEach(([id, label]) => {
+    [['para3_positive', '正面版（立场 + 建议）'], ['para3_negative', '负面版（立场 + 对策）']].forEach(([id, label]) => {
         const s = S[id];
         if (!s) return;
-        ag += `<div class="rc-group">${rcEsc(label)} · 骨架 ${rcWords(s.en)} 词 · 挑 2 个主体各 1 句</div>`;
+        ag += `<div class="rc-group">${rcEsc(label)} · 立场句 + 收束句 ${rcWords(s.en)} 词 · 主体句挑 1~2 句</div>`;
         ag += '<div class="rc-agent-grid">';
+        const RC_AGENTS = [...new Set((s.sentences || []).map(x => (x.tag || '').split('·')[0].trim()).filter(Boolean))];
         RC_AGENTS.forEach(a => {
-            const hit = (s.sentences || []).filter(x => (x.tag || '').indexOf(a) === 0);
+            const hit = (s.sentences || []).filter(x => (x.tag || '').split('·')[0].trim() === a);
             if (!hit.length) return;
             ag += `<div class="rc-agent"><div class="rc-agent-name">${rcEsc(a)}<span class="rc-agent-yrs">${rcEsc((hit[0].tag || '').split('·')[1] || '')}</span></div>`
                 + hit.map(x => `<div class="rc-agent-s"><div class="rc-en"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span>${rcPh(x.en)}</div><div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')

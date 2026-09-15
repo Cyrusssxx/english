@@ -106,8 +106,10 @@ def best_ref(demo_toks, pool):
         sm = difflib.SequenceMatcher(None, demo_toks, toks, autojunk=False)
         matched = match_stats(sm)
         ref_cov = matched / len(toks)
-        cov = matched / max(len(demo_toks), 1)
-        ok = (matched >= 4 and cov >= 0.25) or (matched >= 3 and cov >= 0.40)   # 短模板句放宽（如「X comes last, at Y」）
+        # 覆盖率只按「含字母的词」算：填进槽位的数字/百分比不该拉低覆盖率
+        alpha = [x for x in demo_toks if re.search(r'[a-z]', x)]
+        cov = matched / max(len(alpha), 1)
+        ok = (matched >= 4 and cov >= 0.25) or (matched >= 3 and cov >= 0.28)   # 短模板句放宽（如「X comes first, at Y」）
         if ok:
             cands.append((matched / max(len(demo_toks), 1), matched, ref_cov, holes, label, kind, sm))
     if not cands:

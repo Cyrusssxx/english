@@ -46,11 +46,7 @@ SLOT_COLOR = {
 SEC_FUNC = {
     'chart_static': ('第一段 · 静态图描述', '#0d9488'),
     'chart_dynamic': ('第一段 · 动态图描述', '#0ea5e9'),
-    'para2_economy': ('第二段 · 经济类归因', '#f97316'),
-    'para2_campus': ('第二段 · 校园/成长类归因', '#eab308'),
-    'para2_social': ('第二段 · 社会职场生活类归因', '#0d9488'),
-    'para2_sports': ('第二段 · 体育健康类归因', '#10b981'),
-    'para2_culture': ('第二段 · 文化自信类归因', '#a855f7'),
+    'para2_why': ('第二段 · 原因（机制句池）', '#f97316'),
     'para3_positive': ('第三段 · 正面总结建议', '#06b6d4'),
     'para3_negative': ('第三段 · 负面总结建议', '#64748b'),
 }

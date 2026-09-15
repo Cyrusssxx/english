@@ -61,10 +61,13 @@ def sort_pool(d):
 
 # ---------- ② 骨架 ② 首句补时间 ----------
 def fix_skel(d):
-    """把骨架 ② 首句的「over the period」换成「from {{time1}} to {{time2}}」（看不出年份是硬伤）"""
+    """把骨架 ② 首句的「over the period」换成「from {{time1}} to {{time2}}」（看不出年份是硬伤）。
+       骨架重置后已自带时间跨度 → 直接跳过。"""
     sid, idx = P.SKEL_FIX[0], P.SKEL_FIX[1]
     s = sec(d, sid)
     sk = s['skeletons'][idx]
+    if 'over the period' not in sk['en']:
+        return 'n/a（重置后的骨架已含时间跨度）'
     if 'from {{time1}} to {{time2}}' in sk['en']:
         return 'already'
     assert 'over the period' in sk['en'], sk['en'][:80]
@@ -83,8 +86,23 @@ def fix_skel(d):
 
 
 # ---------- ③ 写 apply_plan.json ----------
-def refs(s):
-    return [[m[0], int(m[1:])] for m in re.findall(r'[tf]\d+', s)]
+def parse_refs(txt, sec_d, year):
+    """refs 形如 't1 t2 f:差距'：t/f + 序号，或 f:标签（按句池 tag 查；重排/增句都不会错位）"""
+    out = []
+    for tok in str(txt).split():
+        kind, rest = tok[0], tok[1:]
+        if kind not in ('t', 'f', 'n'):
+            raise SystemExit('%s 的 refs 写法不对：%r' % (year, tok))
+        if rest.startswith(':'):
+            tag = rest[1:]
+            hit = [i for i, x in enumerate(sec_d.get('sentences') or [])
+                   if (x.get('tag') or '').strip() == tag]
+            if len(hit) != 1:
+                raise SystemExit('%s：标签 %r 命中 %d 条（要求唯一）' % (year, tag, len(hit)))
+            out.append([kind, hit[0] + 1])
+        else:
+            out.append([kind, int(rest)])
+    return out
 
 
 def build_spec(d):
@@ -99,12 +117,16 @@ def build_spec(d):
         cn1['topic'] = c['topiccn']
         t2 = c.get('topic2', c['topic'])
         t3 = c.get('topic3', c['topic'])
+        SEC = {s['id']: s for s in d['sections']}
+        for sid in (c['p1'][0], c['p2'][0], c['p3'][0]):
+            if sid not in SEC:
+                raise SystemExit('%s 引用了不存在的段 %s' % (y, sid))
         out[y] = {
             'title': old.get(y, {}).get('title', ''),
             'fixed': True,
-            'p1': [c['p1'][0], refs(c['p1'][1])],
-            'p2': [c['p2'][0], refs(c['p2'][1])],
-            'p3': [c['p3'][0], refs(c['p3'][1])],
+            'p1': [c['p1'][0], parse_refs(c['p1'][1], SEC[c['p1'][0]], y)],
+            'p2': [c['p2'][0], parse_refs(c['p2'][1], SEC[c['p2'][0]], y)],
+            'p3': [c['p3'][0], parse_refs(c['p3'][1], SEC[c['p3'][0]], y)],
             'slots_p1': sp1, 'slots_p1_cn': cn1,
             'slots_p2': {'topic': t2}, 'slots_p2_cn': {'topic': c.get('topic2cn', c['topiccn'])},
             'slots_p3': {'topic': t3}, 'slots_p3_cn': {'topic': c.get('topic3cn', c['topiccn'])},
@@ -140,6 +162,8 @@ def main():
 
     spec = build_spec(load())
     json.dump(spec, io.open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    json.dump(spec, io.open(os.path.join(ROOT, 'tools', 'apply_tpl_spec.json'), 'w', encoding='utf-8'),
+              ensure_ascii=False, indent=1)     # 后备 spec 与人工方案保持一致（否则残留旧段落 id）
     print('apply_plan.json 已写出：%d 年' % len(spec))
     for y in sorted(spec):
         a = spec[y]

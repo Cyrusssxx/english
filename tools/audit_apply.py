@@ -93,6 +93,9 @@ def main():
         for m in SV.finditer(en):
             if m.group(1).lower() in SV_WHITE:
                 continue
+            if re.search(r'[A-Za-z]+ing[ ]+$', en[max(0, m.start() - 14):m.start()]):
+                continue            # 动名词短语作主语（Playing chess is…）合法
+
             prev = en[max(0, m.start() - 45):m.end()]
             bad.append('%s 疑似主谓不一致：…%s…' % (y, prev.replace('\n', ' ')))
 

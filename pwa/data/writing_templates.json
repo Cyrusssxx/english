@@ -78,7 +78,7 @@
     "items": 2,
     "trend": "都升",
     "type": "动态",
-    "hint": "博物馆数量与参观人数：both rose steadily",
+    "hint": "博物馆数量与参观人数：两条都在涨 → 用「② 两条都在涨」",
     "pattern": "同向上升",
     "group": "动态图 · 同向上升（事物一起涨，比速度 / 幅度）"
    },
@@ -98,7 +98,7 @@
     "items": 1,
     "trend": "单值逐年上升",
     "type": "动态",
-    "hint": "兼职比例上升：只写一条上升线，配 steady upward trend",
+    "hint": "兼职比例上升：一条线 → 用「① 一条线在走」",
     "pattern": "单线上升",
     "group": "动态图 · 单线上升（只有一条线，别硬写对比）"
    },
@@ -266,49 +266,37 @@
    "group": "大作文 · 第一段（图表描述）",
    "title": "静态图表第一段",
    "subtitle": "适用：饼图 / 柱状图中各类别的占比分布（只比比例，没有时间变化）",
-   "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories. {{item1}} takes the largest share, at {{percent1}}. {{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}. By contrast, {{item4}} and {{item5}} account for only {{percent4}} and {{percent5}}.",
-   "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。{{item1}} 占比最高，为 {{percent1}}。其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。相比之下，{{item4}} 和 {{item5}} 仅占 {{percent4}} 和 {{percent5}}。",
+   "en": "The {{chart}} chart shows how {{topic}} breaks down. {{item1}} comes first, at {{percent1}}. {{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}. {{item4}} rounds off the list at {{percent4}}.",
+   "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。{{item1}} 排在第一位，占 {{percent1}}。紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。最后是 {{item4}}，占 {{percent4}}。",
    "note": "{{chart}} 处按图型填 pie / bar / line；句池里挑 1~2 句替换骨架后半段，控制字数，不必全写。",
    "sentences": [
     {
      "en": "{{item1}} alone accounts for {{percent1}} of the total.",
      "cn": "{{item1}} 一项就占了总量的 {{percent1}}。",
-     "tag": "总量",
-     "freq": 3
-    },
-    {
-     "en": "Only {{percent4}} goes to {{item4}}, and {{item5}} is even lower.",
-     "cn": "{{item4}} 只占 {{percent4}}，{{item5}} 更低。",
-     "tag": "长尾",
-     "freq": 3
-    },
-    {
-     "en": "Taken together, the three largest categories account for {{percent total}}.",
-     "cn": "把最大的三类加在一起，共占 {{percent total}}。",
-     "tag": "分组统计",
-     "freq": 3
-    },
-    {
-     "en": "This distribution suggests that {{topic}} is still concentrated in a few categories.",
-     "cn": "这种分布说明 {{topic}} 仍然集中在少数几类上。",
-     "tag": "集中度",
-     "freq": 2
-    },
-    {
-     "en": "A closer look shows that the four smaller categories are fairly evenly matched.",
-     "cn": "再仔细看，其余四个类别的占比其实相差不大。",
-     "tag": "均衡",
-     "freq": 1
-    },
-    {
-     "en": "{{item4}} comes last, at {{percent4}}.",
-     "cn": "{{item4}} 排在最后，占 {{percent4}}。",
      "freq": 3,
-     "tag": "长尾"
+     "tag": "总量"
     },
     {
-     "en": "The gap between the largest and smallest categories is wide.",
-     "cn": "最大类别与最小类别之间的差距很大。",
+     "en": "{{item5}} trails with {{percent5}}.",
+     "cn": "{{item5}} 排在最后，占 {{percent5}}。",
+     "freq": 3,
+     "tag": "末位"
+    },
+    {
+     "en": "Taken together, the three largest items make up {{percent total}}.",
+     "cn": "前三项加起来占 {{percent total}}。",
+     "freq": 3,
+     "tag": "合计"
+    },
+    {
+     "en": "The pattern is clear: a few items dominate the rest.",
+     "cn": "格局很清楚：少数几项占了大头。",
+     "freq": 2,
+     "tag": "集中度"
+    },
+    {
+     "en": "The gap between the largest and the smallest is wide.",
+     "cn": "最大项与最小项之间差距很大。",
      "freq": 2,
      "tag": "差距"
     }
@@ -328,7 +316,7 @@
       "p"
      ],
      [
-      " how {{topic}} is distributed among the categories",
+      " how {{topic}} breaks down",
       "o"
      ],
      [
@@ -342,16 +330,12 @@
       "t"
      ],
      [
-      " takes",
+      " comes first",
       "p"
      ],
      [
-      " the largest share",
-      "o"
-     ],
-     [
       ", at {{percent1}}",
-      ""
+      "o"
      ],
      [
       ".",
@@ -364,12 +348,12 @@
       "t"
      ],
      [
-      " come next",
+      " follow",
       "p"
      ],
      [
       ", at {{percent2}} and {{percent3}}",
-      ""
+      "o"
      ],
      [
       ".",
@@ -378,23 +362,19 @@
     ],
     [
      [
-      "By contrast",
-      "trans"
-     ],
-     [
-      ", ",
-      ""
-     ],
-     [
-      "{{item4}} and {{item5}}",
+      "{{item4}}",
       "t"
      ],
      [
-      " account for",
+      " rounds off",
       "p"
      ],
      [
-      " only {{percent4}} and {{percent5}}",
+      " the list",
+      "o"
+     ],
+     [
+      " at {{percent4}}",
       "o"
      ],
      [
@@ -435,43 +415,31 @@
    "group": "大作文 · 第一段（图表描述）",
    "title": "动态图表第一段",
    "subtitle": "适用：折线 / 柱状图中事物随时间变化 —— 先看走势，选下面 3 套骨架之一",
-   "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.",
-   "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降至 {{num4}}。",
+   "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
+   "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
    "note": "先看走势再选骨架：只有 1 个事物用 ①；都涨但快慢不同用 ②；有涨有跌用 ③。三个事物时，③ 的第 2 句后面接句池里的 By contrast 那句。",
    "sentences": [
     {
-     "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
-     "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
-     "tag": "上升",
-     "freq": 3
+     "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+     "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
+     "freq": 3,
+     "tag": "上升"
     },
     {
-     "en": "Over the same period, {{item2}} fell from {{num3}} to {{num4}}, a clear decline.",
-     "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，降幅明显。",
-     "tag": "下降",
-     "freq": 3
+     "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
+     "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
+     "freq": 3,
+     "tag": "下降"
     },
     {
-     "en": "By {{time2}}, {{item1}} had more than doubled, reaching {{num2}}.",
-     "cn": "到 {{time2}} 时，{{item1}} 已经翻了一倍多，达到 {{num2}}。",
-     "tag": "翻倍",
-     "freq": 3
-    },
-    {
-     "en": "Both moved in the same direction, but at very different speeds.",
-     "cn": "两者方向一致，但速度快慢差别很大。",
-     "tag": "同向不同速",
-     "freq": 3
-    },
-    {
-     "en": "{{item3}} held steady at around {{num5}} after {{time1}}.",
-     "cn": "{{time1}} 之后，{{item3}} 一直稳定在 {{num5}} 附近。",
-     "tag": "平稳",
-     "freq": 2
+     "en": "The two moved in the same direction, but not at the same pace.",
+     "cn": "两者方向一致，但速度不同。",
+     "freq": 3,
+     "tag": "同向不同速"
     },
     {
      "en": "The gap between the two widened over the period.",
-     "cn": "两者之间的差距在这一时期拉大了。",
+     "cn": "两者的差距在这一时期拉大了。",
      "freq": 3,
      "tag": "差距"
     },
@@ -482,8 +450,8 @@
      "tag": "加速"
     },
     {
-     "en": "The two groups moved in opposite directions.",
-     "cn": "两组朝相反的方向变化。",
+     "en": "The two moved in opposite directions.",
+     "cn": "两者朝相反的方向变化。",
      "freq": 3,
      "tag": "反差"
     },
@@ -510,7 +478,11 @@
       "p"
      ],
      [
-      " how {{topic}} changed from {{time1}} to {{time2}}",
+      " {{topic}}",
+      "o"
+     ],
+     [
+      " from {{time1}} to {{time2}}",
       "o"
      ],
      [
@@ -532,7 +504,7 @@
       "o"
      ],
      [
-      ", while ",
+      ", and ",
       "trans"
      ],
      [
@@ -540,11 +512,11 @@
       "t"
      ],
      [
-      " fell",
+      " went",
       "p"
      ],
      [
-      " from {{num3}} to {{num4}}",
+      " from {{num3}} to {{num4}} as well",
       "o"
      ],
      [
@@ -581,10 +553,10 @@
    ],
    "skeletons": [
     {
-     "label": "① 单线上升（图里只有一个事物）",
+     "label": "① 一条线在走",
      "years": "2013 · 2023",
-     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. It rose from {{num1}} to {{num2}} without a single fall.",
-     "cn": "该 {{chart}} 图记录了 {{topic}} 从 {{time1}} 到 {{time2}} 的变化。它由 {{num1}} 一路升至 {{num2}}，中途没有回落。",
+     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. It rose from {{num1}} to {{num2}}, with no real dip.",
+     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
      "struct": [
       [
        [
@@ -601,7 +573,7 @@
        ],
        [
         " from {{time1}} to {{time2}}",
-        ""
+        "o"
        ],
        [
         ".",
@@ -622,8 +594,8 @@
         "o"
        ],
        [
-        " without a single fall",
-        ""
+        ", with no real dip",
+        "o"
        ],
        [
         ".",
@@ -633,10 +605,10 @@
      ]
     },
     {
-     "label": "② 同向不同速（都在涨，快慢不同）",
+     "label": "② 两条都在涨",
      "years": "2010 · 2017 · 2022",
-     "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}. Both rose, but {{item1}} climbed from {{num1}} to {{num2}} while {{item2}} only went from {{num3}} to {{num4}}.",
-     "cn": "该 {{chart}} 图记录了{{time1}} 到 {{time2}} 期间 {{topic}} 的变化。两者都在上升，但 {{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 仅从 {{num3}} 升到 {{num4}}。",
+     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
+     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
      "struct": [
       [
        [
@@ -648,7 +620,11 @@
         "p"
        ],
        [
-        " how {{topic}} changed from {{time1}} to {{time2}}",
+        " {{topic}}",
+        "o"
+       ],
+       [
+        " from {{time1}} to {{time2}}",
         "o"
        ],
        [
@@ -657,18 +633,6 @@
        ]
       ],
       [
-       [
-        "Both",
-        "t"
-       ],
-       [
-        " rose",
-        "p"
-       ],
-       [
-        ", but ",
-        "trans"
-       ],
        [
         "{{item1}}",
         "t"
@@ -682,8 +646,20 @@
         "o"
        ],
        [
-        " while {{item2}} only went from {{num3}} to {{num4}}",
-        ""
+        ", and ",
+        "trans"
+       ],
+       [
+        "{{item2}}",
+        "t"
+       ],
+       [
+        " went",
+        "p"
+       ],
+       [
+        " from {{num3}} to {{num4}} as well",
+        "o"
        ],
        [
         ".",
@@ -693,10 +669,10 @@
      ]
     },
     {
-     "label": "③ 一升一降（有涨有跌）",
+     "label": "③ 一升一降",
      "years": "2011 · 2014 · 2019",
-     "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.",
-     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降至 {{num4}}。",
+     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
      "struct": [
       [
        [
@@ -708,7 +684,11 @@
         "p"
        ],
        [
-        " how {{topic}} changed from {{time1}} to {{time2}}",
+        " {{topic}}",
+        "o"
+       ],
+       [
+        " from {{time1}} to {{time2}}",
         "o"
        ],
        [
@@ -738,7 +718,7 @@
         "t"
        ],
        [
-        " fell",
+        " slipped",
         "p"
        ],
        [
@@ -755,691 +735,188 @@
    ]
   },
   {
-   "id": "para2_economy",
-   "group": "大作文 · 第二段（原因分析）",
-   "title": "经济类第二段",
-   "subtitle": "经济 / 消费 / 科技类：挂在收入、成本、生活方式上，最好写",
-   "en": "The trend in the chart is closely tied to how people live and spend today. {{item1}} rose from {{num1}} in {{time1}} to {{num2}} in {{time2}}, and that change did not happen by itself.",
-   "cn": "图中的变化与人们当下的生活和消费方式密切相关。{{item1}} 从 {{time1}} 的 {{num1}} 升到 {{time2}} 的 {{num2}}，而这种变化并非凭空发生。",
-   "note": "示例套用（2014 城乡人口）：骨架句写「城乡人口的变化与人们的生活选择有关」，再从句池挑「城市扩张带来需求」和「收入提高让选择变多」两句，本段约 58 词。",
+   "id": "para2_why",
+   "title": "第二段 · 原因（机制句池）",
+   "subtitle": "不背整段：1 句引入 + 从下面 16 条机制里挑 3 条（每条都是一个完整原因）",
+   "group": "大作文 · 第一段（图表描述）",
+   "en": "The numbers in the chart are the result of deeper changes.",
+   "cn": "图里的数字，是更深层变化的结果。",
+   "en_struct": [
+    [
+     [
+      "The numbers in the chart",
+      "t"
+     ],
+     [
+      " are",
+      "p"
+     ],
+     [
+      " the result of deeper changes",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "priority": true,
    "sentences": [
     {
      "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
-     "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。",
-     "tag": "收入",
-     "freq": 3
+     "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+     "freq": 3,
+     "tag": "收入"
     },
     {
-     "en": "Once {{item1}} reached {{num2}}, growth became hard to stop.",
-     "cn": "{{item1}} 一旦达到 {{num2}}，增长就很难再停下来。",
-     "tag": "数据回扣",
-     "freq": 3
+     "en": "Technology has cut the cost of {{topic}} and put it within reach of far more people.",
+     "cn": "技术把 {{topic}} 的成本压了下来，让更多人够得着。",
+     "freq": 3,
+     "tag": "成本"
     },
     {
-     "en": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
-     "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。",
-     "tag": "观念",
-     "freq": 3
+     "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+     "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+     "freq": 3,
+     "tag": "便利"
     },
     {
-     "en": "Online platforms and mobile payment have cut the time and cost of getting {{topic}}.",
-     "cn": "线上平台和移动支付降低了获得 {{topic}} 的时间和成本。",
-     "tag": "技术",
-     "freq": 2
+     "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+     "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+     "freq": 3,
+     "tag": "观念"
     },
     {
-     "en": "Cities have grown quickly, and demand for {{topic}} has grown with them.",
-     "cn": "城市快速扩张，{{topic}} 的需求也随之增长。",
-     "tag": "城市化",
-     "freq": 2
+     "en": "The figure for {{item1}} rose from {{num1}} to {{num2}}, which fits the wider pattern.",
+     "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，与整体趋势一致。",
+     "freq": 3,
+     "tag": "数据回扣"
     },
     {
-     "en": "Government support — from tax breaks to better infrastructure — has also helped.",
-     "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。",
-     "tag": "政策",
-     "freq": 2
-    }
-   ],
-   "en_struct": [
-    [
-     [
-      "The trend in the chart",
-      "t"
-     ],
-     [
-      " is closely tied to",
-      "p"
-     ],
-     [
-      " how people live and spend today",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "{{item1}}",
-      "t"
-     ],
-     [
-      " rose from {{num1}} in {{time1}} to {{num2}} in {{time2}}",
-      "p"
-     ],
-     [
-      ", and that change did not happen by itself",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ]
-   ],
-   "phrases": [
-    [
-     "is closely tied to",
-     "与…密切相关"
-    ],
-    [
-     "moved from a luxury to an everyday necessity",
-     "从奢侈品变成日常必需品"
-    ],
-    [
-     "within reach of ordinary families",
-     "普通家庭负担得起"
-    ],
-    [
-     "cut the time and cost of",
-     "降低…的时间和成本"
-    ],
-    [
-     "a passing fashion",
-     "一时风尚"
-    ]
-   ],
-   "tips": [
-    "骨架句 33 词 + 句池挑 1~2 句 ≈ 55~65 词，第二段到此为止，不要贪多。",
-    "留一句回扣图表数字（第 7 句那种），阅卷人一眼就能看到你用了图里的数据。"
-   ],
-   "priority": true
-  },
-  {
-   "id": "para2_campus",
-   "group": "大作文 · 第二段（原因分析）",
-   "title": "校园类第二段（对应英语一品质类）",
-   "subtitle": "校园 / 品质类（对应英语一品质题）：含正面、负面两版，改几个词即可切换",
-   "en": "Behind the numbers in the chart lies a change in how students spend their time. Habits built at this stage shape how young people take responsibility later. {{topic}} is one of the clearest examples.",
-   "cn": "数字背后，是学生时间安排方式的变化。这个阶段养成的习惯，会影响他们日后承担责任的方式。{{topic}} 就是最清楚的例子之一。",
-   "negative_en": "Behind the numbers in the chart lies a problem that deserves attention. Habits formed at this stage are hard to change later, and the wrong ones carry a lasting cost. {{topic}} shows how easily that cost can build up.",
-   "negative_cn": "数字背后，是一个值得注意的问题。这个阶段形成的习惯日后很难改变，而不良习惯的代价会长期存在。{{topic}} 正说明这种代价有多容易累积。",
-   "en_struct": [
-    [
-     [
-      "Behind the numbers in the chart",
-      ""
-     ],
-     [
-      " lies",
-      "p"
-     ],
-     [
-      " a change in how students spend their time",
-      "t"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Habits built at this stage",
-      "t"
-     ],
-     [
-      " shape",
-      "p"
-     ],
-     [
-      " how young people take responsibility later",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "{{topic}}",
-      "t"
-     ],
-     [
-      " is",
-      "p"
-     ],
-     [
-      " one of the clearest examples",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ]
-   ],
-   "phrases": [
-    [
-     "Behind the numbers in the chart lies …",
-     "数字背后是…"
-    ],
-    [
-     "Habits built at this stage",
-     "这个阶段养成的习惯"
-    ],
-    [
-     "shape the way sb do sth",
-     "影响某人做事的方式"
-    ],
-    [
-     "have a part to play",
-     "需要参与、有作用"
-    ],
-    [
-     "crowd out",
-     "挤占"
-    ]
-   ],
-   "negative_struct": [
-    [
-     [
-      "Behind the numbers in the chart",
-      ""
-     ],
-     [
-      " lies",
-      "p"
-     ],
-     [
-      " a problem that deserves attention",
-      "t"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Habits formed at this stage",
-      "t"
-     ],
-     [
-      " are hard to change later",
-      "p"
-     ],
-     [
-      ", and the wrong ones carry a lasting cost",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "{{topic}}",
-      "t"
-     ],
-     [
-      " shows",
-      "p"
-     ],
-     [
-      " how easily that cost can build up",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ]
-   ],
-   "tips": [
-    "骨架句 37 词 + 句池挑 1~2 句 ≈ 55~65 词；正面、负面两版骨架只差几个词，改词即可切换，不必另背一段。",
-    "这一段最容易写空，尽量用一句具体场景（如「合作」那句）替代抽象概括。"
-   ],
-   "sentences": [
-    {
-     "en": "{{topic}} teaches students to plan their own time rather than wait to be told.",
-     "cn": "{{topic}} 让学生学会自己安排时间，而不是等人安排。",
-     "tag": "时间管理",
-     "freq": 3
+     "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+     "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+     "freq": 2,
+     "tag": "公共投入"
     },
     {
-     "en": "On the other hand, too much of it can crowd out sleep and real conversation.",
-     "cn": "另一方面，过度投入会挤占睡眠和真实交流的时间。",
-     "tag": "负面·挤占",
-     "freq": 3
+     "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
+     "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+     "freq": 2,
+     "tag": "城市化"
     },
     {
-     "en": "Students who take part in {{topic}} often work better with others.",
-     "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
-     "tag": "合作",
-     "freq": 2
+     "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
+     "cn": "整天坐着，让 {{topic}} 从爱好变成了实际需要。",
+     "freq": 2,
+     "tag": "久坐"
     },
     {
-     "en": "The skills involved — patience, self-control, persistence — matter long after school ends.",
-     "cn": "其中的耐心、自控和坚持，在离开学校很久之后仍然有用。",
-     "tag": "长期收益",
-     "freq": 2
+     "en": "Longer working hours have made people value the little time they can call their own.",
+     "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+     "freq": 2,
+     "tag": "职场时间"
     },
     {
-     "en": "Without guidance, students may copy what their peers do instead of deciding for themselves.",
-     "cn": "缺少引导时，学生容易跟着同伴走，而不是自己判断。",
-     "tag": "负面·盲从",
-     "freq": 2
+     "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+     "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+     "freq": 2,
+     "tag": "学校"
     },
     {
-     "en": "That is why schools and parents both have a part to play.",
-     "cn": "所以学校和家长都需要参与。",
-     "tag": "家校协同",
-     "freq": 2
-    }
-   ],
-   "priority": true
-  },
-  {
-   "id": "para2_social",
-   "group": "大作文 · 第二段（原因分析）",
-   "title": "社会 · 职场 · 生活类第二段",
-   "subtitle": "挂在生活方式变化、观念转变、社会结构上（覆盖 2012 职场满意度 / 2016 旅游目的 / 2025 老年休闲）",
-   "en": "The change in the chart reflects a broader shift in how people live and work. Once basic needs are met, people care more about how they spend their time.",
-   "cn": "图中的变化反映了人们生活和工作方式的更大转变。基本需求满足之后，人们更在意自己的时间怎么花。",
-   "en_struct": [
-    [
-     [
-      "The change in the chart",
-      "t"
-     ],
-     [
-      " reflects",
-      "p"
-     ],
-     [
-      " a broader shift in how people live and work",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Once basic needs are met",
-      ""
-     ],
-     [
-      ", people",
-      "t"
-     ],
-     [
-      " care more about",
-      "p"
-     ],
-     [
-      " how they spend their time",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ]
-   ],
-   "phrases": [
-    [
-     "a broader shift in how people live and work",
-     "生活与工作方式的更大转变"
-    ],
-    [
-     "the time they can call their own",
-     "属于自己的时间"
-    ],
-    [
-     "matter as much as",
-     "和…一样重要"
-    ],
-    [
-     "works differently",
-     "运作逻辑已经不同"
-    ],
-    [
-     "a change in expectations",
-     "期望值的变化"
-    ]
-   ],
-   "tips": [
-    "骨架句 29 词 + 句池挑 1~2 句 ≈ 55~65 词。本段与经济类最容易混：经济类讲收入与成本，本段讲时间、观念与生活方式。",
-    "万一考到环保（2010–2026 从未考过）：把前两句换成 Public awareness of environmental problems has risen sharply. / Green facilities are now common enough to make the choice easy. 即可——这两句不用背，写的时候现抄。"
-   ],
-   "sentences": [
-    {
-     "en": "Longer working hours have made people value the time they can call their own.",
-     "cn": "更长的工作时间让人们更看重属于自己的时间。",
-     "tag": "工作 · 2012/2021",
-     "freq": 3
+     "en": "Old traditions survive only when people find new ways to pass them on.",
+     "cn": "老传统只有在被不断重新传递时才能活下来。",
+     "freq": 2,
+     "tag": "文化传承"
     },
     {
-     "en": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
-     "cn": "收入提高把过去的奢侈品变成了日常消费。",
-     "tag": "消费 · 2015/2016",
-     "freq": 3
+     "en": "Longer life expectancy has changed how families plan for their later years.",
+     "cn": "寿命延长，改变了家庭对晚年的安排。",
+     "freq": 2,
+     "tag": "人口结构"
     },
     {
-     "en": "The figure for {{item1}} rose from {{num1}} to {{num2}}, one sign of that shift.",
-     "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，正是这种转变的一个迹象。",
-     "tag": "数据回扣 · 通用",
-     "freq": 3
+     "en": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.",
+     "cn": "国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。",
+     "freq": 2,
+     "tag": "国产替代"
     },
     {
      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-     "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已经不同。",
-     "tag": "职场 · 2012/2019",
-     "freq": 2
-    },
-    {
-     "en": "Better transport and online booking have made travel easy to arrange.",
-     "cn": "交通改善和线上预订让出行变得容易安排。",
-     "tag": "生活 · 2016",
-     "freq": 2
-    },
-    {
-     "en": "Longer life expectancy has pushed families to think about how older members spend their days.",
-     "cn": "寿命延长让家庭开始考虑老年人怎么度过日常。",
-     "tag": "养老 · 2025",
-     "freq": 1
-    },
-    {
-     "en": "What people want from a job has changed: pay alone no longer keeps them satisfied.",
-     "cn": "人们对工作的要求变了：只靠工资已经留不住人。",
+     "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
      "freq": 2,
-     "tag": "职场 · 2012"
+     "tag": "职场流动"
+    },
+    {
+     "en": "Employers now look for experience as much as for grades.",
+     "cn": "现在用人单位既看成绩，也看经验。",
+     "freq": 1,
+     "tag": "就业门槛"
+    },
+    {
+     "en": "Daily life has become more rushed, and {{topic}} is one of the few things people still fit in.",
+     "cn": "生活节奏越来越快，{{topic}} 是少数还能挤进去的事。",
+     "freq": 1,
+     "tag": "生活节奏"
     }
-   ],
-   "note": "套用示例：2012 员工满意度 → 第 2、3 句（工作稳定、换工作更频繁）；2016 旅游目的 → 第 4、5 句（消费升级、出行便利）；2025 老年休闲 → 第 6 句 + 第 1 句。"
-  },
-  {
-   "id": "para2_sports",
-   "group": "大作文 · 第二段（原因分析）",
-   "title": "体育健康类第二段",
-   "subtitle": "体育健康类：挂在久坐、健康支出和观念变化上（与环保类思路不同，别混用）",
-   "en": "The figures are less about sport itself than about how people now look after themselves. Long working hours have turned health into something to plan for, and {{topic}} is the easiest way to do that.",
-   "cn": "这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。长时间工作让健康变成需要主动安排的事，而 {{topic}} 是最容易做到的一种方式。",
-   "en_struct": [
-    [
-     [
-      "The figures",
-      "t"
-     ],
-     [
-      " are less about",
-      "p"
-     ],
-     [
-      " sport itself",
-      "o"
-     ],
-     [
-      " than about how people now look after themselves",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "Long working hours",
-      "t"
-     ],
-     [
-      " have turned",
-      "p"
-     ],
-     [
-      " health",
-      "o"
-     ],
-     [
-      " into something to plan for",
-      ""
-     ],
-     [
-      ", and {{topic}} is the easiest way to do that",
-      ""
-     ],
-     [
-      ".",
-      ""
-     ]
-    ]
    ],
    "phrases": [
     [
-     "are less about … than about …",
-     "与其说关于…不如说关于…"
+     "come out of nowhere",
+     "凭空出现（did not come out of nowhere 并非凭空发生）"
     ],
     [
-     "look after themselves",
-     "照顾自己的身体"
+     "within reach",
+     "够得着、负担得起"
     ],
     [
-     "a practical need rather than a hobby",
-     "是实际需要而非爱好"
+     "call their own",
+     "属于自己的"
     ],
     [
-     "stay motivated",
-     "保持动力"
+     "a practical need",
+     "实际需要"
     ],
     [
-     "the gap is widening",
-     "差距在扩大"
+     "pass them on",
+     "把它传下去"
+    ],
+    [
+     "as much as",
+     "和……一样（不只是）"
     ]
    ],
    "tips": [
-    "这一段的骨架句和环保类完全不同（环保讲意识与条件，体育讲久坐、支出与观念），不要混用。",
-    "写完原因后留一句回扣数据（第 6 句那种），避免全段空谈。"
-   ],
-   "sentences": [
-    {
-     "en": "Sitting all day has turned exercise into a practical need rather than a hobby.",
-     "cn": "整天坐着，让运动从爱好变成了实际需要。",
-     "tag": "久坐",
-     "freq": 3
-    },
-    {
-     "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, which fits the wider pattern.",
-     "cn": "从 {{time1}} 到 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}，与整体趋势一致。",
-     "tag": "数据回扣",
-     "freq": 3
-    },
-    {
-     "en": "The rise is not only about money: attitudes to health have changed.",
-     "cn": "这一增长不只因为钱：人们对健康的态度也变了。",
-     "tag": "观念",
-     "freq": 3
-    },
-    {
-     "en": "Fitness apps and smart watches let people track their progress and stay motivated.",
-     "cn": "健身 App 和智能手表让人能记录进展、保持动力。",
-     "tag": "工具助力",
-     "freq": 2
-    },
-    {
-     "en": "Gyms, running tracks and community courts are now common even in smaller cities.",
-     "cn": "现在连中小城市也常见健身房、跑道和社区球场。",
-     "tag": "设施",
-     "freq": 2
-    },
-    {
-     "en": "Health campaigns have reminded the public that prevention is cheaper than treatment.",
-     "cn": "健康宣传提醒公众：预防比治疗便宜。",
-     "tag": "宣传",
-     "freq": 2
-    }
+    "引入句 11 词 + 机制句挑 3 条 ≈ 55~62 词。",
+    "每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 16 条都写。",
+    "挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。"
    ]
-  },
-  {
-   "id": "para2_culture",
-   "group": "大作文 · 第二段（原因分析）",
-   "title": "文化自信类第二段",
-   "subtitle": "文化自信类：核心逻辑是「传统 + 现代表达」",
-   "en": "Traditional culture does not survive by being preserved in a museum. It survives when people find new ways to pass it on. The growth shown in the chart is that process at work.",
-   "cn": "传统文化不是靠放进博物馆保存下来的。它靠的是人们不断找到新的传递方式。图中的增长，正是这一过程在起作用。",
-   "en_struct": [
-    [
-     [
-      "Traditional culture",
-      "t"
-     ],
-     [
-      " does not survive by",
-      "p"
-     ],
-     [
-      " being preserved in a museum",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "It",
-      "t"
-     ],
-     [
-      " survives",
-      "p"
-     ],
-     [
-      " when people find new ways to pass it on",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ],
-    [
-     [
-      "The growth shown in the chart",
-      "t"
-     ],
-     [
-      " is",
-      "p"
-     ],
-     [
-      " that process at work",
-      "o"
-     ],
-     [
-      ".",
-      ""
-     ]
-    ]
-   ],
-   "phrases": [
-    [
-     "being preserved in a museum",
-     "被供在博物馆里"
-    ],
-    [
-     "find new ways to pass it on",
-     "找到新的传递方式"
-    ],
-    [
-     "bring … closer to ordinary life",
-     "把…拉近日常生活"
-    ],
-    [
-     "take part in",
-     "参与其中"
-    ],
-    [
-     "is being used rather than only admired",
-     "在被使用而不只是被欣赏"
-    ]
-   ],
-   "tips": [
-    "文化类最容易写成口号，尽量落到具体做法（纪录片、展览、课程、文创）。",
-    "「传统 + 现代表达」是这一段的通用逻辑，换题只需换载体。"
-   ],
-   "sentences": [
-    {
-     "en": "{{topic}} brings traditional culture closer to ordinary life instead of leaving it on the shelf.",
-     "cn": "{{topic}} 把传统文化拉近日常生活，而不是把它束之高阁。",
-     "tag": "贴近生活",
-     "freq": 3
-    },
-    {
-     "en": "The rise in {{item1}}, from {{num1}} to {{num2}}, shows how quickly public interest can grow.",
-     "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，说明公众兴趣可以增长得多快。",
-     "tag": "数据回扣",
-     "freq": 3
-    },
-    {
-     "en": "Documentaries and short videos have made old stories interesting to young audiences.",
-     "cn": "纪录片和短视频让老故事对年轻观众有了吸引力。",
-     "tag": "新媒体",
-     "freq": 2
-    },
-    {
-     "en": "Schools have added courses on local history and traditional crafts.",
-     "cn": "学校增加了地方历史和传统手工艺课程。",
-     "tag": "课程",
-     "freq": 2
-    },
-    {
-     "en": "Cultural confidence grows when tradition is lived, not merely recited.",
-     "cn": "传统被真正用起来、而不只是背诵时，文化自信才会增长。",
-     "tag": "文化自信",
-     "freq": 2
-    }
-   ],
-   "priority": false
   },
   {
    "id": "para3_positive",
    "group": "大作文 · 第三段（总结建议）",
-   "title": "第三段 · 正面版",
-   "subtitle": "第三段 · 正面版：主体按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人 各 2 句）",
-   "en": "If the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone.",
-   "cn": "图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。",
+   "title": "第三段 · 正面版（立场 + 建议）",
+   "subtitle": "立场句 + 从主体句池挑 1~2 句 + 收束句",
+   "en": "On balance, this is a change worth welcoming. That is what will decide whether the change lasts.",
+   "cn": "总体来看，这是值得欢迎的变化。而这，正是决定这种变化能否持续的关键。",
    "note": "主体按题挑：政府（2010/2014/2017/2022/2023）、学校（2013/2019/2024/2026）、家庭（2013/2016/2026）、企业平台（2011/2012/2018/2020/2022）、媒体（2016/2017/2020/2023）、个人（2015/2016/2021/2025）。挑 2 个主体各 1 句即可，不要 6 个都写。",
    "en_struct": [
     [
      [
-      "If the trend in the chart is to continue",
-      ""
+      "On balance",
+      "trans"
      ],
      [
-      ", more than one side",
+      ", this",
       "t"
      ],
      [
-      " has to act",
+      " is",
       "p"
+     ],
+     [
+      " a change worth welcoming",
+      "o"
      ],
      [
       ".",
@@ -1448,20 +925,16 @@
     ],
     [
      [
-      "Each of them",
+      "That",
       "t"
      ],
      [
-      " has",
+      " is",
       "p"
      ],
      [
-      " a different job to do",
+      " what will decide whether the change lasts",
       "o"
-     ],
-     [
-      ", and none can do it alone",
-      ""
      ],
      [
       ".",
@@ -1501,64 +974,70 @@
    ],
    "sentences": [
     {
+     "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+     "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+     "freq": 3,
+     "tag": "观念"
+    },
+    {
      "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
      "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
-     "tag": "政府 · 2010/2014/2017/2022",
-     "freq": 3
+     "freq": 3,
+     "tag": "政府"
     },
     {
      "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
      "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
-     "tag": "学校 · 2013/2019/2024/2026",
-     "freq": 3
+     "freq": 3,
+     "tag": "学校"
     },
     {
      "en": "Families matter most: children copy what adults do far more than what they are told.",
      "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
-     "tag": "家庭 · 2013/2026",
-     "freq": 3
+     "freq": 3,
+     "tag": "家庭"
     },
     {
      "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
-     "cn": "企业可以把 {{topic}} 做得更便宜、更好用，让它覆盖更多人。",
-     "tag": "企业/平台 · 2011/2012/2018",
-     "freq": 3
+     "cn": "企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。",
+     "freq": 3,
+     "tag": "企业/平台"
     },
     {
      "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
      "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
-     "tag": "媒体 · 2016/2020/2023",
-     "freq": 3
+     "freq": 3,
+     "tag": "媒体"
     },
     {
      "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
      "cn": "个人应按自身情况选择，而不是随大流。",
-     "tag": "个人 · 2015/2016/2021",
-     "freq": 3
+     "freq": 3,
+     "tag": "个人"
     },
     {
      "en": "Clear rules and steady funding matter more than one-off campaigns.",
-     "cn": "明确的规则和持续的投入，比一次性活动更重要。",
-     "tag": "政府 · 2014/2023/2025",
-     "freq": 2
+     "cn": "明确的规则和持续投入，比一次性活动更重要。",
+     "freq": 2,
+     "tag": "政府·长效"
     },
     {
      "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
      "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
-     "tag": "企业/平台 · 2018/2020/2022",
-     "freq": 2
+     "freq": 2,
+     "tag": "平台·设计"
     },
     {
      "en": "Documentaries and short videos can show how {{topic}} works in real life.",
-     "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中是怎样运作的。",
-     "tag": "媒体 · 2017/2020/2023",
-     "freq": 2
+     "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中怎样运作。",
+     "freq": 2,
+     "tag": "媒体·展示"
     },
     {
      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
      "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
-     "tag": "个人 · 2021/2025",
-     "freq": 2
+     "freq": 2,
+     "tag": "个人·习惯"
     }
    ],
    "priority": true
@@ -1566,23 +1045,27 @@
   {
    "id": "para3_negative",
    "group": "大作文 · 第三段（总结建议）",
-   "title": "第三段 · 负面版",
-   "subtitle": "第三段 · 负面版：同样按主体挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人 各 2 句）",
-   "en": "If nothing is done, the problem shown in the chart will only get worse. Any serious response has to come from several directions at once.",
-   "cn": "如果什么都不做，图中的问题只会更严重。任何认真的应对，都需要多个方向同时发力。",
+   "title": "第三段 · 负面版（立场 + 对策）",
+   "subtitle": "立场句 + 从主体句池挑 1~2 句 + 收束句",
+   "en": "On balance, the figures point to a problem worth taking seriously. Left alone, the problem will not correct itself.",
+   "cn": "总体来看，这些数据指向一个不容忽视的问题。放任不管，这个问题不会自己好转。",
    "en_struct": [
     [
      [
-      "If nothing is done",
-      ""
+      "On balance",
+      "trans"
      ],
      [
-      ", the problem shown in the chart",
+      ", the figures",
       "t"
      ],
      [
-      " will only get worse",
+      " point to",
       "p"
+     ],
+     [
+      " a problem worth taking seriously",
+      "o"
      ],
      [
       ".",
@@ -1591,15 +1074,19 @@
     ],
     [
      [
-      "Any serious response",
+      "Left alone",
+      "o"
+     ],
+     [
+      ", the problem",
       "t"
      ],
      [
-      " has to come from",
+      " will not correct",
       "p"
      ],
      [
-      " several directions at once",
+      " itself",
       "o"
      ],
      [
@@ -1638,68 +1125,68 @@
     {
      "en": "Authorities should set clear limits and make sure they are actually enforced.",
      "cn": "政府应设定明确的上限，并确保真正执行。",
-     "tag": "政府 · 2020/2022",
-     "freq": 3
+     "freq": 3,
+     "tag": "政府"
     },
     {
      "en": "Schools and families should warn young people before the habit takes hold.",
      "cn": "学校和家庭应在习惯养成之前提醒年轻人。",
-     "tag": "学校 · 2013/2020/2024",
-     "freq": 3
+     "freq": 3,
+     "tag": "学校/家庭"
     },
     {
      "en": "Parents who ignore their own habits cannot expect children to do better.",
      "cn": "父母自己不注意，就别指望孩子做得好。",
-     "tag": "家庭 · 2013/2026",
-     "freq": 3
+     "freq": 3,
+     "tag": "家庭"
     },
     {
      "en": "Platforms should label or restrict content that encourages misuse.",
      "cn": "平台应对诱导滥用的内容加以标注或限制。",
-     "tag": "企业/平台 · 2020/2022",
-     "freq": 3
+     "freq": 3,
+     "tag": "企业/平台"
     },
     {
      "en": "Media should report the real risks rather than treat them as scare stories.",
      "cn": "媒体应报道真实风险，而不是把它当成吓人的故事。",
-     "tag": "媒体 · 2020/2023",
-     "freq": 3
+     "freq": 3,
+     "tag": "媒体"
     },
     {
      "en": "Individuals need to watch their own habits instead of assuming they are safe.",
-     "cn": "个人需要留意自己的习惯，而不是想当然地认为没问题。",
-     "tag": "个人 · 2020/2021",
-     "freq": 3
-    },
-    {
-     "en": "Classes on {{topic}} can help students tell safe use from misuse.",
-     "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
-     "tag": "学校 · 2020/2024",
-     "freq": 2
-    },
-    {
-     "en": "A stable routine at home leaves less room for the problem to grow.",
-     "cn": "家里作息稳定，问题就不容易滋生。",
-     "tag": "家庭 · 2026",
-     "freq": 2
-    },
-    {
-     "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
-     "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
-     "tag": "个人 · 2020/2021",
-     "freq": 2
+     "cn": "个人需要留意自己的习惯，而不是想当然认为没问题。",
+     "freq": 3,
+     "tag": "个人"
     },
     {
      "en": "Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.",
      "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
-     "freq": 3,
-     "tag": "企业 · 2012"
+     "freq": 2,
+     "tag": "企业·雇主"
     },
     {
      "en": "A company that ignores this gap will lose the very people it most depends on.",
      "cn": "忽视这一差距的公司，会失去它最依赖的那批人。",
      "freq": 2,
-     "tag": "企业 · 2012"
+     "tag": "企业·管理"
+    },
+    {
+     "en": "Classes on {{topic}} can help students tell safe use from misuse.",
+     "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
+     "freq": 2,
+     "tag": "学校·课程"
+    },
+    {
+     "en": "A stable routine at home leaves less room for the problem to grow.",
+     "cn": "家里作息稳定，问题就不容易滋生。",
+     "freq": 2,
+     "tag": "家庭·作息"
+    },
+    {
+     "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
+     "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
+     "freq": 2,
+     "tag": "个人·记录"
     }
    ],
    "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。"
@@ -1717,7 +1204,7 @@
   ],
   [
    "三段字数这样分",
-   "<b>P1 图表描述 40~55 词 · P2 归因 55~65 词 · P3 评论建议 45~55 词</b>，合计 <b>150~180 词</b>。超 200 词不加分，只会提高出错率；低于 150 词按字数不足扣分。"
+   "<b>P1 图表描述 40~55 词 · P2 原因 55~70 词 · P3 评论 45~60 词</b>，合计 <b>150~180 词</b>。超 200 词不加分，只会提高出错率；低于 150 词按字数不足扣分。P2 只挑 3 条机制句，P3 只挑 1~2 句主体句。"
   ],
   [
    "万能句只能保底，不能加分",
@@ -1725,7 +1212,7 @@
   ],
   [
    "评论段要\"为什么/怎么办\"，不要表态",
-   "P3 写「我认为这个现象很好」等于没写。四档以上要求「对目标读者产生预期效果」——<b>要么给出机制（为什么会这样），要么给出可执行的做法（谁该做什么）</b>。"
+   "P3 写「我认为这个现象很好」等于没写。四档以上要求「对目标读者产生预期效果」——<b>先用一句立场句表态，再给出可执行的做法（谁该做什么），最后一句收束</b>。"
   ],
   [
    "时态：图用过去，评论用现在",
@@ -1837,10 +1324,11 @@
   "每个 {{ }} 槽位都换成本题内容了吗",
   "主谓一致：The number / The percentage 用单数",
   "三段都有主题句，段落数符合题目要求",
-  "词数在 150~180（不够补一句归因，超了删一句弹药）",
+  "词数在 150~180（不够就多加 1 条机制句，超了就删 1 句）",
   "没有整句照抄题干 directions",
   "开头没有 \"With the development of…\" 这类空话",
   "拼写与大小写：句首字母、专有名词、专名首字母"
  ],
- "_plan_ver": "plan-2026-09-15d"
+ "_plan_ver": "plan-2026-09-15d",
+ "_skeleton_ver": "skel-2026-09-16"
 }

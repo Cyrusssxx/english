@@ -1,69 +1,74 @@
 {
  "2010": {
   "title": "Part B 图表作文：手机用户量增长情况对比",
-  "apply_en": "The bar chart tracks how mobile-phone subscriptions changed from 2000 to 2008. Both rose, but those in developing countries climbed from 0.5 billion to 4 billion while those in developed countries only went from 0.7 billion to 1 billion. Both moved in the same direction, but at very different speeds. The gap between the two widened over the period.\n\nThe trend in the chart is closely tied to how people live and spend today. As household incomes have grown, mobile phone use has moved from a luxury to an everyday necessity. More importantly, mobile phone use now serves a practical need rather than a passing fashion. Cities have grown quickly, and demand for mobile phone use has grown with them.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Government can fund public facilities so that mobile phone use is not limited to those who can pay.",
-  "apply_cn": "该柱状图记录了2000年到2008年期间手机用户数的变化。两者都在上升，但发展中国家由5亿升至40亿，而发达国家仅从7亿升到10亿。两者方向一致，但速度快慢差别很大。两者之间的差距在这一时期拉大了。\n\n图中的变化与人们当下的生活和消费方式密切相关。随着家庭收入提高，手机的使用已从奢侈品变成日常必需品。更重要的是，手机的使用现在满足的是实际需要，而不是一时风尚。城市快速扩张，手机的使用的需求也随之增长。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。政府可以投入公共设施，让手机的使用不只属于付得起钱的人。",
+  "apply_en": "The bar chart tracks mobile-phone subscriptions from 2000 to 2008. Those in developing countries climbed from 0.5 billion to 4 billion, and those in developed countries went from 0.7 billion to 1 billion as well. The two moved in the same direction, but not at the same pace. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, mobile phone use has moved from a luxury to an everyday necessity. Online platforms and mobile payment have made mobile phone use quicker and easier to arrange. People now judge mobile phone use by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that mobile phone use is not limited to those who can pay. What matters most is whether families and schools treat mobile phone use as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了2000年到2008年期间手机用户数的变化。发展中国家由5亿升至40亿，发达国家也从7亿升到10亿。两者方向一致，但速度不同。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，手机的使用已从奢侈品变成日常必需。线上平台和移动支付让手机的使用变得更快更方便。人们现在看手机的使用好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让手机的使用不只属于付得起钱的人。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
-   "柱状图、都升，速度不同（2 个事物 / 动态）→ 用 **② 同向不同速（都在涨，快慢不同） 骨架**（适用 2010 · 2017 · 2022）。",
+   "柱状图、都升，速度不同（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
    "数据要点：those in developing countries 0.5 billion → 4 billion；those in developed countries 0.7 billion → 1 billion。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **经济类第二段**：句池挑「收入」「观念」「城市化」；本段骨架 2 句 + 句池 3 句 ≈ 61 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 政府 · 2010/2014/2017/2022；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 61 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了{{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "Both rose, but {{item1}} climbed from {{num1}} to {{num2}} while {{item2}} only went from {{num3}} to {{num4}}.",
-    "cn": "两者都在上升，但 {{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 仅从 {{num3}} 升到 {{num4}}。",
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "Both moved in the same direction, but at very different speeds.",
-    "cn": "两者方向一致，但速度快慢差别很大。",
-    "src": "动态图表第一段 · 功能句4"
+    "en": "The two moved in the same direction, but not at the same pace.",
+    "cn": "两者方向一致，但速度不同。",
+    "src": "动态图表第一段 · 功能句3"
    },
    {
     "en": "The gap between the two widened over the period.",
-    "cn": "两者之间的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句6"
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句4"
    },
    {
-    "en": "The trend in the chart is closely tied to how people live and spend today.",
-    "cn": "图中的变化与人们当下的生活和消费方式密切相关。",
-    "src": "经济类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
     "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
-    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。",
-    "src": "经济类第二段 · 功能句1"
+    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+    "src": "第二段 · 原因（机制句池） · 功能句1"
    },
    {
-    "en": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
-    "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。",
-    "src": "经济类第二段 · 功能句3"
+    "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+    "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+    "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "Cities have grown quickly, and demand for {{topic}} has grown with them.",
-    "cn": "城市快速扩张，{{topic}} 的需求也随之增长。",
-    "src": "经济类第二段 · 功能句5"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
-   },
-   {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
     "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
-    "src": "第三段 · 正面版 · 功能句1"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
+   },
+   {
+    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -80,16 +85,16 @@
      ],
      [
       "f",
-      4
+      3
      ],
      [
       "f",
-      6
+      4
      ]
     ]
    },
    {
-    "id": "para2_economy",
+    "id": "para2_why",
     "refs": [
      [
       "t",
@@ -105,7 +110,7 @@
      ],
      [
       "f",
-      5
+      4
      ]
     ]
    },
@@ -117,12 +122,16 @@
       1
      ],
      [
-      "t",
+      "f",
       2
      ],
      [
       "f",
       1
+     ],
+     [
+      "t",
+      2
      ]
     ]
    }
@@ -278,69 +287,79 @@
  },
  "2011": {
   "title": "Part B 图表作文：汽车品牌市场份额变化",
-  "apply_en": "The bar chart tracks how the market shares of Chinese, Japanese and American car brands changed from 2008 to 2009. From 2008 to 2009, Chinese brands rose from 26% to 31%, a steady climb. Over the same period, Japanese brands fell from 35% to 26%, a clear decline. The two groups moved in opposite directions.\n\nThe trend in the chart is closely tied to how people live and spend today. As household incomes have grown, car ownership has moved from a luxury to an everyday necessity. More importantly, car ownership now serves a practical need rather than a passing fashion. Government support — from tax breaks to better infrastructure — has also helped.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Companies can make domestic car brands cheaper and easier to use, so that they reach more people.",
-  "apply_cn": "该柱状图记录了2008年到2009年期间国产、日系与美系汽车品牌的市场份额的变化。自2008年至2009年，国产品牌由26%稳步升至31%。同一时期，日系品牌由35%降至26%，降幅明显。两组朝相反的方向变化。\n\n图中的变化与人们当下的生活和消费方式密切相关。随着家庭收入提高，汽车保有量已从奢侈品变成日常必需品。更重要的是，汽车保有量现在满足的是实际需要，而不是一时风尚。政府支持——从税收优惠到基础设施改善——也起了作用。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。企业可以把国产汽车品牌做得更便宜、更好用，让它覆盖更多人。",
+  "apply_en": "The bar chart tracks the market shares of Chinese, Japanese and American car brands from 2008 to 2009. From 2008 to 2009, Chinese brands rose from 26% to 31%. Over the same period, Japanese brands slipped from 35% to 26%. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. People now judge car ownership by what it does for them rather than by what others think. Public spending on infrastructure has made car ownership far more widely available. Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands. Cities have absorbed millions of new residents, and demand for car ownership has grown with them.\n\nOn balance, this is a change worth welcoming. Companies can make domestic car brands cheaper and easier to use, so that they reach more people. Clear rules and steady funding matter more than one-off campaigns. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了2008年到2009年期间国产、日系与美系汽车品牌的市场份额的变化。自2008年至2009年，国产品牌由26%升至31%。同一时期，日系品牌由35%降到26%。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。人们现在看汽车保有量好不好用，而不是看别人怎么想。公共基础设施投入让汽车保有量的覆盖面大大增加。国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。城市吸纳了大量新居民，汽车保有量的需求随之增长。\n\n总体来看，这是值得欢迎的变化。企业可以把国产汽车品牌做得更便宜好用，让它覆盖更多人。明确的规则和持续投入，比一次性活动更重要。而这，正是决定这种变化能否持续的关键。",
   "tips": [
-   "柱状图、有升有降（3 个事物 / 动态）→ 用 **③ 一升一降（有涨有跌） 骨架**（适用 2011 · 2014 · 2019）。",
+   "柱状图、有升有降（3 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
    "数据要点：Chinese brands 26% → 31%；Japanese brands 35% → 26%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **经济类第二段**：句池挑「收入」「观念」「政策」；本段骨架 2 句 + 句池 3 句 ≈ 58 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 企业/平台 · 2011/2012/2018；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 73 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
+    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
+    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
     "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "Over the same period, {{item2}} fell from {{num3}} to {{num4}}, a clear decline.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，降幅明显。",
+    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
     "src": "动态图表第一段 · 功能句2"
    },
    {
-    "en": "The two groups moved in opposite directions.",
-    "cn": "两组朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句8"
+    "en": "The two moved in opposite directions.",
+    "cn": "两者朝相反的方向变化。",
+    "src": "动态图表第一段 · 功能句6"
    },
    {
-    "en": "The trend in the chart is closely tied to how people live and spend today.",
-    "cn": "图中的变化与人们当下的生活和消费方式密切相关。",
-    "src": "经济类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
-    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。",
-    "src": "经济类第二段 · 功能句1"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
-    "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。",
-    "src": "经济类第二段 · 功能句3"
+    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "Government support — from tax breaks to better infrastructure — has also helped.",
-    "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。",
-    "src": "经济类第二段 · 功能句6"
+    "en": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.",
+    "cn": "国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。",
+    "src": "第二段 · 原因（机制句池） · 功能句13"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
+    "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
+    "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+    "src": "第二段 · 原因（机制句池） · 功能句7"
    },
    {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
-    "cn": "企业可以把 {{topic}} 做得更便宜、更好用，让它覆盖更多人。",
-    "src": "第三段 · 正面版 · 功能句4"
+    "cn": "企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
+   },
+   {
+    "en": "Clear rules and steady funding matter more than one-off campaigns.",
+    "cn": "明确的规则和持续投入，比一次性活动更重要。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -361,12 +380,12 @@
      ],
      [
       "f",
-      8
+      6
      ]
     ]
    },
    {
-    "id": "para2_economy",
+    "id": "para2_why",
     "refs": [
      [
       "t",
@@ -374,15 +393,19 @@
      ],
      [
       "f",
-      1
-     ],
-     [
-      "f",
-      3
+      4
      ],
      [
       "f",
       6
+     ],
+     [
+      "f",
+      13
+     ],
+     [
+      "f",
+      7
      ]
     ]
    },
@@ -394,12 +417,16 @@
       1
      ],
      [
-      "t",
-      2
+      "f",
+      5
      ],
      [
       "f",
-      4
+      8
+     ],
+     [
+      "t",
+      2
      ]
     ]
    }
@@ -555,74 +582,79 @@
  },
  "2012": {
   "title": "Part B 图表作文：某公司员工工作满意度调查",
-  "apply_en": "The table shows how employee dissatisfaction is distributed among the categories. The 41-to-50 age group takes the largest share, at 64%. Those aged 40 or younger and the group over 50 come next, at 33.3% and 10%. This distribution suggests that employee dissatisfaction is still concentrated in a few categories.\n\nThe change in the chart reflects a broader shift in how people live and work. Longer working hours have made people value the time they can call their own. Young people change jobs far more often than their parents did, so loyalty works differently. What people want from a job has changed: pay alone no longer keeps them satisfied.\n\nIf nothing is done, the problem shown in the chart will only get worse. Any serious response has to come from several directions at once. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on.",
-  "apply_cn": "该表格显示员工的不满意比例在各类别之间的分布情况。41~50岁组占比最高，为64%。其次是40岁及以下组和50岁以上组，分别为33.3%和10%。这种分布说明员工的不满意比例仍然集中在少数几类上。\n\n图中的变化反映了人们生活和工作方式的更大转变。更长的工作时间让人们更看重属于自己的时间。年轻人换工作比父辈频繁得多，「忠诚」的含义已经不同。人们对工作的要求变了：只靠工资已经留不住人。\n\n如果什么都不做，图中的问题只会更严重。任何认真的应对，都需要多个方向同时发力。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。",
+  "apply_en": "The table shows how employee dissatisfaction breaks down. The 41-to-50 age group comes first, at 64%. Those aged 40 or younger and the group over 50 follow, at 33.3% and 10%. The gap between the largest and the smallest is wide. The pattern is clear: a few items dominate the rest.\n\nThe numbers in the chart are the result of deeper changes. Longer working hours have made people value the little time they can call their own. Young people change jobs far more often than their parents did, so loyalty works differently. People now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures point to a problem worth taking seriously. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Left alone, the problem will not correct itself.",
+  "apply_cn": "该表格展示员工的不满意比例的构成情况。41~50岁组排在第一位，占64%。紧随其后的是40岁及以下组和50岁以上组，分别占33.3%和10%。最大项与最小项之间差距很大。格局很清楚：少数几项占了大头。\n\n图里的数字，是更深层变化的结果。工作时间变长，人们更看重那点属于自己的时间。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。人们现在看工作满意度好不好用，而不是看别人怎么想。\n\n总体来看，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。放任不管，这个问题不会自己好转。",
   "tips": [
    "表格、分布比高低（3 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
    "数据要点：the 41-to-50 age group 占 64%；those aged 40 or younger 占 33.3%；the group over 50 占 10%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **社会 · 职场 · 生活类第二段**：句池挑「工作 · 2012/2021」「职场 · 2012/2019」「职场 · 2012」；本段骨架 2 句 + 句池 3 句 ≈ 59 词。",
-   "第三段用 **负面版**（问题可能恶化）：主体 = 企业 · 2012 + 企业 · 2012；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 58 词。",
+   "第三段用 **负面版**（问题可能恶化）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "This distribution suggests that {{topic}} is still concentrated in a few categories.",
-    "cn": "这种分布说明 {{topic}} 仍然集中在少数几类上。",
+    "en": "The gap between the largest and the smallest is wide.",
+    "cn": "最大项与最小项之间差距很大。",
+    "src": "静态图表第一段 · 功能句5"
+   },
+   {
+    "en": "The pattern is clear: a few items dominate the rest.",
+    "cn": "格局很清楚：少数几项占了大头。",
     "src": "静态图表第一段 · 功能句4"
    },
    {
-    "en": "The change in the chart reflects a broader shift in how people live and work.",
-    "cn": "图中的变化反映了人们生活和工作方式的更大转变。",
-    "src": "社会 · 职场 · 生活类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Longer working hours have made people value the time they can call their own.",
-    "cn": "更长的工作时间让人们更看重属于自己的时间。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句1"
+    "en": "Longer working hours have made people value the little time they can call their own.",
+    "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+    "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
     "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-    "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已经不同。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句4"
+    "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+    "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
-    "en": "What people want from a job has changed: pay alone no longer keeps them satisfied.",
-    "cn": "人们对工作的要求变了：只靠工资已经留不住人。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句7"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "If nothing is done, the problem shown in the chart will only get worse.",
-    "cn": "如果什么都不做，图中的问题只会更严重。",
-    "src": "第三段 · 负面版 · 模板第1句"
-   },
-   {
-    "en": "Any serious response has to come from several directions at once.",
-    "cn": "任何认真的应对，都需要多个方向同时发力。",
-    "src": "第三段 · 负面版 · 模板第2句"
+    "en": "On balance, the figures point to a problem worth taking seriously.",
+    "cn": "总体来看，这些数据指向一个不容忽视的问题。",
+    "src": "第三段 · 负面版（立场 + 对策） · 模板第1句"
    },
    {
     "en": "Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.",
     "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
-    "src": "第三段 · 负面版 · 功能句10"
+    "src": "第三段 · 负面版（立场 + 对策） · 功能句7"
    },
    {
     "en": "A company that ignores this gap will lose the very people it most depends on.",
     "cn": "忽视这一差距的公司，会失去它最依赖的那批人。",
-    "src": "第三段 · 负面版 · 功能句11"
+    "src": "第三段 · 负面版（立场 + 对策） · 功能句8"
+   },
+   {
+    "en": "Left alone, the problem will not correct itself.",
+    "cn": "放任不管，这个问题不会自己好转。",
+    "src": "第三段 · 负面版（立场 + 对策） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -643,12 +675,16 @@
      ],
      [
       "f",
+      5
+     ],
+     [
+      "f",
       4
      ]
     ]
    },
    {
-    "id": "para2_social",
+    "id": "para2_why",
     "refs": [
      [
       "t",
@@ -656,15 +692,15 @@
      ],
      [
       "f",
-      1
+      9
+     ],
+     [
+      "f",
+      14
      ],
      [
       "f",
       4
-     ],
-     [
-      "f",
-      7
      ]
     ]
    },
@@ -676,16 +712,16 @@
       1
      ],
      [
+      "f",
+      7
+     ],
+     [
+      "f",
+      8
+     ],
+     [
       "t",
       2
-     ],
-     [
-      "f",
-      10
-     ],
-     [
-      "f",
-      11
      ]
     ]
    }
@@ -817,69 +853,74 @@
  },
  "2013": {
   "title": "Part B 大作文：大学生兼职比例柱状图",
-  "apply_en": "The bar chart tracks the proportion of college students taking part-time jobs from the first year to the final year. From the first year to the final year, the proportion of college students taking part-time jobs rose from 67.77% to 88.24%, a steady climb. Growth was slow at first and then sped up.\n\nBehind the numbers in the chart lies a change in how students spend their time. Habits built at this stage shape how young people take responsibility later. Part-time work is one of the clearest examples. Part-time work teaches students to plan their own time rather than wait to be told. Students who take part in part-time work often work better with others.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Schools can build part-time work into daily routines instead of treating it as an extra.",
-  "apply_cn": "该柱状图记录了大学生兼职比例从大一到大四的变化。自大一至大四，大学生兼职比例由67.77%稳步升至88.24%。增长起初缓慢，后来明显加快。\n\n数字背后，是学生时间安排方式的变化。这个阶段养成的习惯，会影响他们日后承担责任的方式。兼职就是最清楚的例子之一。兼职让学生学会自己安排时间，而不是等人安排。参与兼职的学生通常更善于与人合作。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。学校可以把兼职纳入日常安排，而不是当成额外任务。",
+  "apply_en": "The bar chart tracks the proportion of college students taking part-time jobs from the first year to the final year. From the first year to the final year, the proportion of college students taking part-time jobs rose from 67.77% to 88.24%. Growth was slow at first and then sped up.\n\nThe numbers in the chart are the result of deeper changes. Schools now treat part-time work as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge part-time work by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build part-time work into daily routines instead of treating it as an extra. Families matter most: children copy what adults do far more than what they are told. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了大一到大四期间大学生兼职比例的变化。自大一至大四，大学生兼职比例由67.77%升至88.24%。增长起初缓慢，后来明显加快。\n\n图里的数字，是更深层变化的结果。学校现在把兼职当成日常安排，而不是可选项。现在用人单位既看成绩，也看经验。人们现在看兼职好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把兼职纳入日常安排，而不是当成额外任务。家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。而这，正是决定这种变化能否持续的关键。",
   "tips": [
-   "柱状图、单值逐年上升（1 个事物 / 动态）→ 用 **① 单线上升（图里只有一个事物） 骨架**（适用 2013 · 2023）。",
+   "柱状图、单值逐年上升（1 个事物 / 动态）→ 用 **① 一条线在走 骨架**（适用 2013 · 2023）。",
    "数据要点：the proportion of college students taking part-time jobs 67.77% → 88.24%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **校园类第二段（对应英语一品质类）**：句池挑「时间管理」「合作」；本段骨架 3 句 + 句池 2 句 ≈ 62 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 学校 · 2013/2019/2024/2026；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{topic}} 从 {{time1}} 到 {{time2}} 的变化。",
+    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
+    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
     "src": "动态图表第一段 · 功能句1"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句7"
+    "src": "动态图表第一段 · 功能句5"
    },
    {
-    "en": "Behind the numbers in the chart lies a change in how students spend their time.",
-    "cn": "数字背后，是学生时间安排方式的变化。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Habits built at this stage shape how young people take responsibility later.",
-    "cn": "这个阶段养成的习惯，会影响他们日后承担责任的方式。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+    "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "{{topic}} is one of the clearest examples.",
-    "cn": "{{topic}} 就是最清楚的例子之一。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第3句"
+    "en": "Employers now look for experience as much as for grades.",
+    "cn": "现在用人单位既看成绩，也看经验。",
+    "src": "第二段 · 原因（机制句池） · 功能句15"
    },
    {
-    "en": "{{topic}} teaches students to plan their own time rather than wait to be told.",
-    "cn": "{{topic}} 让学生学会自己安排时间，而不是等人安排。",
-    "src": "校园类第二段（对应英语一品质类） · 功能句1"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "Students who take part in {{topic}} often work better with others.",
-    "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
-    "src": "校园类第二段（对应英语一品质类） · 功能句3"
+    "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+    "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+    "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
-   },
-   {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
-    "src": "第三段 · 正面版 · 功能句2"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+   },
+   {
+    "en": "Families matter most: children copy what adults do far more than what they are told.",
+    "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句4"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -896,32 +937,32 @@
      ],
      [
       "f",
-      7
+      5
      ]
     ]
    },
    {
-    "id": "para2_campus",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
-     ],
-     [
-      "t",
-      3
+      "f",
+      10
      ],
      [
       "f",
-      1
+      15
      ],
      [
       "f",
-      3
+      4
+     ],
+     [
+      "f",
+      14
      ]
     ]
    },
@@ -933,11 +974,15 @@
       1
      ],
      [
-      "t",
-      2
+      "f",
+      3
      ],
      [
       "f",
+      4
+     ],
+     [
+      "t",
       2
      ]
     ]
@@ -1058,74 +1103,84 @@
  },
  "2014": {
   "title": "Part B 大作文：城市与乡村人口的变化",
-  "apply_en": "The bar chart tracks how the urban and rural population changed from 1990 to 2010. From 1990 to 2010, the urban population rose from 300 million to 670 million, a steady climb. Over the same period, the rural population fell from 820 million to 680 million, a clear decline. The two groups moved in opposite directions.\n\nThe trend in the chart is closely tied to how people live and spend today. As household incomes have grown, city living has moved from a luxury to an everyday necessity. Cities have grown quickly, and demand for city living has grown with them. Government support — from tax breaks to better infrastructure — has also helped.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns.",
-  "apply_cn": "该柱状图记录了1990年到2010年期间城乡人口的变化。自1990年至2010年，城镇人口由3亿稳步升至6.7亿。同一时期，乡村人口由8.2亿降至6.8亿，降幅明显。两组朝相反的方向变化。\n\n图中的变化与人们当下的生活和消费方式密切相关。随着家庭收入提高，城市生活已从奢侈品变成日常必需品。城市快速扩张，城市生活的需求也随之增长。政府支持——从税收优惠到基础设施改善——也起了作用。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。政府可以投入公共设施，让城市生活不只属于付得起钱的人。明确的规则和持续的投入，比一次性活动更重要。",
+  "apply_en": "The bar chart tracks the urban and rural population from 1990 to 2010. From 1990 to 2010, the urban population rose from 300 million to 670 million. Over the same period, the rural population slipped from 820 million to 680 million. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. Cities have absorbed millions of new residents, and demand for city living has grown with them. As household incomes have grown, city living has moved from a luxury to an everyday necessity. Public spending on infrastructure has made city living far more widely available. People now judge city living by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. What matters most is whether families and schools treat city living as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了1990年到2010年期间城乡人口的变化。自1990年至2010年，城镇人口由3亿升至6.7亿。同一时期，乡村人口由8.2亿降到6.8亿。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。城市吸纳了大量新居民，城市生活的需求随之增长。随着家庭收入提高，城市生活已从奢侈品变成日常必需。公共基础设施投入让城市生活的覆盖面大大增加。人们现在看城市生活好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让城市生活不只属于付得起钱的人。明确的规则和持续投入，比一次性活动更重要。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
-   "柱状图、一升一降（2 个事物 / 动态）→ 用 **③ 一升一降（有涨有跌） 骨架**（适用 2011 · 2014 · 2019）。",
+   "柱状图、一升一降（2 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
    "数据要点：the urban population 300 million → 670 million；the rural population 820 million → 680 million。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **经济类第二段**：句池挑「收入」「城市化」「政策」；本段骨架 2 句 + 句池 3 句 ≈ 57 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 政府 · 2010/2014/2017/2022 + 政府 · 2014/2023/2025；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 72 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
+    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
+    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
     "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "Over the same period, {{item2}} fell from {{num3}} to {{num4}}, a clear decline.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，降幅明显。",
+    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
     "src": "动态图表第一段 · 功能句2"
    },
    {
-    "en": "The two groups moved in opposite directions.",
-    "cn": "两组朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句8"
+    "en": "The two moved in opposite directions.",
+    "cn": "两者朝相反的方向变化。",
+    "src": "动态图表第一段 · 功能句6"
    },
    {
-    "en": "The trend in the chart is closely tied to how people live and spend today.",
-    "cn": "图中的变化与人们当下的生活和消费方式密切相关。",
-    "src": "经济类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
+   },
+   {
+    "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
+    "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+    "src": "第二段 · 原因（机制句池） · 功能句7"
    },
    {
     "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
-    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。",
-    "src": "经济类第二段 · 功能句1"
+    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+    "src": "第二段 · 原因（机制句池） · 功能句1"
    },
    {
-    "en": "Cities have grown quickly, and demand for {{topic}} has grown with them.",
-    "cn": "城市快速扩张，{{topic}} 的需求也随之增长。",
-    "src": "经济类第二段 · 功能句5"
+    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "Government support — from tax breaks to better infrastructure — has also helped.",
-    "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。",
-    "src": "经济类第二段 · 功能句6"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
-   },
-   {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
     "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
-    "src": "第三段 · 正面版 · 功能句1"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
-    "cn": "明确的规则和持续的投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版 · 功能句7"
+    "cn": "明确的规则和持续投入，比一次性活动更重要。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+   },
+   {
+    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -1146,12 +1201,12 @@
      ],
      [
       "f",
-      8
+      6
      ]
     ]
    },
    {
-    "id": "para2_economy",
+    "id": "para2_why",
     "refs": [
      [
       "t",
@@ -1159,15 +1214,19 @@
      ],
      [
       "f",
+      7
+     ],
+     [
+      "f",
       1
      ],
      [
       "f",
-      5
+      6
      ],
      [
       "f",
-      6
+      4
      ]
     ]
    },
@@ -1179,16 +1238,20 @@
       1
      ],
      [
-      "t",
+      "f",
       2
+     ],
+     [
+      "f",
+      8
      ],
      [
       "f",
       1
      ],
      [
-      "f",
-      7
+      "t",
+      2
      ]
     ]
    }
@@ -1344,74 +1407,84 @@
  },
  "2015": {
   "title": "Part B 大作文：春节假期花销比例饼图",
-  "apply_en": "The pie chart shows how Spring Festival spending is distributed among the categories. Gifts for family and friends take the largest share, at 40%. Dinners with relatives and travel come next, at 20% and 20%. Taken together, the three largest categories account for 80%. Other spending comes last, at 20%.\n\nThe trend in the chart is closely tied to how people live and spend today. As household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. More importantly, New Year gifts now serve a practical need rather than a passing fashion. Online platforms and mobile payment have cut the time and cost of getting New Year gifts.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Individuals should choose what fits their own situation rather than follow the crowd.",
-  "apply_cn": "该饼状图显示春节假期花销在各类别之间的分布情况。给亲友买礼物占比最高，为40%。其次是与亲友聚餐和出行，分别为20%和20%。把最大的三类加在一起，共占80%。其他花销排在最后，占20%。\n\n图中的变化与人们当下的生活和消费方式密切相关。随着家庭收入提高，新年礼物已从奢侈品变成日常必需品。更重要的是，新年礼物现在满足的是实际需要，而不是一时风尚。线上平台和移动支付降低了获得新年礼物的时间和成本。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。个人应按自身情况选择，而不是随大流。",
+  "apply_en": "The pie chart shows how Spring Festival spending breaks down. Gifts for family and friends come first, at 40%. Dinners with relatives and travel follow, at 20% and 20%. Other spending rounds off the list at 20%. Taken together, the three largest items make up 80%.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. People now judge New Year gifts by what it does for them rather than by what others think. Online platforms and mobile payment have made New Year gifts quicker and easier to arrange. Old traditions survive only when people find new ways to pass them on.\n\nOn balance, this is a change worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该饼状图展示春节假期花销的构成情况。给亲友买礼物排在第一位，占40%。紧随其后的是与亲友聚餐和出行，分别占20%和20%。最后是其他花销，占20%。前三项加起来占80%。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，新年礼物已从奢侈品变成日常必需。人们现在看新年礼物好不好用，而不是看别人怎么想。线上平台和移动支付让新年礼物变得更快更方便。老传统只有在被不断重新传递时才能活下来。\n\n总体来看，这是值得欢迎的变化。个人应按自身情况选择，而不是随大流。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
    "数据要点：gifts for family and friends 占 40%；dinners with relatives 占 20%；travel 占 20%；other spending 占 20%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **经济类第二段**：句池挑「收入」「观念」「技术」；本段骨架 2 句 + 句池 3 句 ≈ 63 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 个人 · 2015/2016/2021；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 74 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "Taken together, the three largest categories account for {{percent total}}.",
-    "cn": "把最大的三类加在一起，共占 {{percent total}}。",
+    "en": "{{item4}} rounds off the list at {{percent4}}.",
+    "cn": "最后是 {{item4}}，占 {{percent4}}。",
+    "src": "静态图表第一段 · 模板第4句"
+   },
+   {
+    "en": "Taken together, the three largest items make up {{percent total}}.",
+    "cn": "前三项加起来占 {{percent total}}。",
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "{{item4}} comes last, at {{percent4}}.",
-    "cn": "{{item4}} 排在最后，占 {{percent4}}。",
-    "src": "静态图表第一段 · 功能句6"
-   },
-   {
-    "en": "The trend in the chart is closely tied to how people live and spend today.",
-    "cn": "图中的变化与人们当下的生活和消费方式密切相关。",
-    "src": "经济类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
     "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
-    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。",
-    "src": "经济类第二段 · 功能句1"
+    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+    "src": "第二段 · 原因（机制句池） · 功能句1"
    },
    {
-    "en": "More importantly, {{topic}} now serves a practical need rather than a passing fashion.",
-    "cn": "更重要的是，{{topic}} 现在满足的是实际需要，而不是一时风尚。",
-    "src": "经济类第二段 · 功能句3"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "Online platforms and mobile payment have cut the time and cost of getting {{topic}}.",
-    "cn": "线上平台和移动支付降低了获得 {{topic}} 的时间和成本。",
-    "src": "经济类第二段 · 功能句4"
+    "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+    "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+    "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
+    "en": "Old traditions survive only when people find new ways to pass them on.",
+    "cn": "老传统只有在被不断重新传递时才能活下来。",
+    "src": "第二段 · 原因（机制句池） · 功能句11"
    },
    {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
     "cn": "个人应按自身情况选择，而不是随大流。",
-    "src": "第三段 · 正面版 · 功能句6"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+   },
+   {
+    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -1431,17 +1504,17 @@
       3
      ],
      [
-      "f",
-      3
+      "t",
+      4
      ],
      [
       "f",
-      6
+      3
      ]
     ]
    },
    {
-    "id": "para2_economy",
+    "id": "para2_why",
     "refs": [
      [
       "t",
@@ -1453,11 +1526,15 @@
      ],
      [
       "f",
+      4
+     ],
+     [
+      "f",
       3
      ],
      [
       "f",
-      4
+      11
      ]
     ]
    },
@@ -1469,12 +1546,16 @@
       1
      ],
      [
-      "t",
-      2
+      "f",
+      7
      ],
      [
       "f",
-      6
+      1
+     ],
+     [
+      "t",
+      2
      ]
     ]
    }
@@ -1642,79 +1723,89 @@
  },
  "2016": {
   "title": "Part B 大作文：高校学生旅游目的调查饼图",
-  "apply_en": "The pie chart shows how the purposes of travel are distributed among the categories. Appreciating the scenery takes the largest share, at 37%. Relieving pressure and making more friends come next, at 33% and 9%. By contrast, other aims and fostering independence account for only 15% and 6%. Taken together, the three largest categories account for 85%.\n\nThe change in the chart reflects a broader shift in how people live and work. Once basic needs are met, people care more about how they spend their time. Longer working hours have made people value the time they can call their own. Rising incomes have turned what used to be a luxury into an ordinary purchase. Better transport and online booking have made travel easy to arrange.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Individuals should choose what fits their own situation rather than follow the crowd.",
-  "apply_cn": "该饼状图显示旅游目的在各类别之间的分布情况。欣赏风景占比最高，为37%。其次是缓解压力和结交朋友，分别为33%和9%。相比之下，其他目的和锻炼独立性仅占15%和6%。把最大的三类加在一起，共占85%。\n\n图中的变化反映了人们生活和工作方式的更大转变。基本需求满足之后，人们更在意自己的时间怎么花。更长的工作时间让人们更看重属于自己的时间。收入提高把过去的奢侈品变成了日常消费。交通改善和线上预订让出行变得容易安排。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。个人应按自身情况选择，而不是随大流。",
+  "apply_en": "The pie chart shows how the purposes of travel break down. Appreciating the scenery comes first, at 37%. Relieving pressure and other aims follow, at 33% and 15%. Fostering independence rounds off the list at 6%. Taken together, the three largest items make up 85%.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, travelling has moved from a luxury to an everyday necessity. Longer working hours have made people value the little time they can call their own. Online platforms and mobile payment have made travelling quicker and easier to arrange. Public spending on infrastructure has made travelling far more widely available.\n\nOn balance, this is a change worth welcoming. Media should report on travelling honestly, without exaggerating its benefits or its risks. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat travelling as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该饼状图展示旅游目的的构成情况。欣赏风景排在第一位，占37%。紧随其后的是缓解压力和其他目的，分别占33%和15%。最后是锻炼独立性，占6%。前三项加起来占85%。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，旅游已从奢侈品变成日常必需。工作时间变长，人们更看重那点属于自己的时间。线上平台和移动支付让旅游变得更快更方便。公共基础设施投入让旅游的覆盖面大大增加。\n\n总体来看，这是值得欢迎的变化。媒体应如实报道旅游，既不夸大好处，也不夸大风险。个人应按自身情况选择，而不是随大流。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "饼图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
-   "数据要点：appreciating the scenery 占 37%；relieving pressure 占 33%；making more friends 占 9%；other aims 占 15%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **社会 · 职场 · 生活类第二段**：句池挑「工作 · 2012/2021」「消费 · 2015/2016」「生活 · 2016」；本段骨架 2 句 + 句池 3 句 ≈ 68 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 个人 · 2015/2016/2021；**只挑 2 个主体**，不要六个都写。"
+   "数据要点：appreciating the scenery 占 37%；relieving pressure 占 33%；other aims 占 15%；fostering independence 占 6%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 65 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "By contrast, {{item4}} and {{item5}} account for only {{percent4}} and {{percent5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 仅占 {{percent4}} 和 {{percent5}}。",
+    "en": "{{item4}} rounds off the list at {{percent4}}.",
+    "cn": "最后是 {{item4}}，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "Taken together, the three largest categories account for {{percent total}}.",
-    "cn": "把最大的三类加在一起，共占 {{percent total}}。",
+    "en": "Taken together, the three largest items make up {{percent total}}.",
+    "cn": "前三项加起来占 {{percent total}}。",
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "The change in the chart reflects a broader shift in how people live and work.",
-    "cn": "图中的变化反映了人们生活和工作方式的更大转变。",
-    "src": "社会 · 职场 · 生活类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Once basic needs are met, people care more about how they spend their time.",
-    "cn": "基本需求满足之后，人们更在意自己的时间怎么花。",
-    "src": "社会 · 职场 · 生活类第二段 · 模板第2句"
+    "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+    "src": "第二段 · 原因（机制句池） · 功能句1"
    },
    {
-    "en": "Longer working hours have made people value the time they can call their own.",
-    "cn": "更长的工作时间让人们更看重属于自己的时间。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句1"
+    "en": "Longer working hours have made people value the little time they can call their own.",
+    "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+    "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
-    "en": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
-    "cn": "收入提高把过去的奢侈品变成了日常消费。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句2"
+    "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+    "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+    "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "Better transport and online booking have made travel easy to arrange.",
-    "cn": "交通改善和线上预订让出行变得容易安排。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句5"
+    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
+    "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
    },
    {
     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
     "cn": "个人应按自身情况选择，而不是随大流。",
-    "src": "第三段 · 正面版 · 功能句6"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+   },
+   {
+    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -1744,27 +1835,27 @@
     ]
    },
    {
-    "id": "para2_social",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
-     ],
-     [
       "f",
       1
      ],
      [
       "f",
-      2
+      9
      ],
      [
       "f",
-      5
+      3
+     ],
+     [
+      "f",
+      6
      ]
     ]
    },
@@ -1776,12 +1867,20 @@
       1
      ],
      [
-      "t",
-      2
+      "f",
+      6
      ],
      [
       "f",
-      6
+      7
+     ],
+     [
+      "f",
+      1
+     ],
+     [
+      "t",
+      2
      ]
     ]
    }
@@ -1808,18 +1907,12 @@
    {
     "para": "p1",
     "name": "item3",
-    "en": "making more friends",
-    "cn": "结交朋友"
-   },
-   {
-    "para": "p1",
-    "name": "item4",
     "en": "other aims",
     "cn": "其他目的"
    },
    {
     "para": "p1",
-    "name": "item5",
+    "name": "item4",
     "en": "fostering independence",
     "cn": "锻炼独立性"
    },
@@ -1844,18 +1937,12 @@
    {
     "para": "p1",
     "name": "percent3",
-    "en": "9%",
-    "cn": "9%"
-   },
-   {
-    "para": "p1",
-    "name": "percent4",
     "en": "15%",
     "cn": "15%"
    },
    {
     "para": "p1",
-    "name": "percent5",
+    "name": "percent4",
     "en": "6%",
     "cn": "6%"
    },
@@ -1899,18 +1986,12 @@
    },
    {
     "name": "item3",
-    "en": "making more friends",
-    "cn": "结交朋友",
-    "para": "第一段"
-   },
-   {
-    "name": "item4",
     "en": "other aims",
     "cn": "其他目的",
     "para": "第一段"
    },
    {
-    "name": "item5",
+    "name": "item4",
     "en": "fostering independence",
     "cn": "锻炼独立性",
     "para": "第一段"
@@ -1935,18 +2016,12 @@
    },
    {
     "name": "percent3",
-    "en": "9%",
-    "cn": "9%",
-    "para": "第一段"
-   },
-   {
-    "name": "percent4",
     "en": "15%",
     "cn": "15%",
     "para": "第一段"
    },
    {
-    "name": "percent5",
+    "name": "percent4",
     "en": "6%",
     "cn": "6%",
     "para": "第一段"
@@ -1973,74 +2048,74 @@
  },
  "2017": {
   "title": "Part B 大作文：2013-2015年博物馆数量与参观人数折线图",
-  "apply_en": "The line chart tracks how the number of museums and museum visitors changed from 2013 to 2015. Both rose, but visitor numbers climbed from 640 million to 780 million while the number of museums only went from 4,200 to 4,600. The gap between the two widened over the period.\n\nTraditional culture does not survive by being preserved in a museum. It survives when people find new ways to pass it on. The growth shown in the chart is that process at work. Museum visiting brings traditional culture closer to ordinary life instead of leaving it on the shelf. Cultural confidence grows when tradition is lived, not merely recited.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Government can fund public facilities so that museum visiting is not limited to those who can pay. Documentaries and short videos can show how museum visiting works in real life.",
-  "apply_cn": "该折线图记录了2013年到2015年期间博物馆数量与参观人数的变化。两者都在上升，但参观人数由6.4亿升至7.8亿，而博物馆数量仅从4200家升到4600家。两者之间的差距在这一时期拉大了。\n\n传统文化不是靠放进博物馆保存下来的。它靠的是人们不断找到新的传递方式。图中的增长，正是这一过程在起作用。参观博物馆把传统文化拉近日常生活，而不是把它束之高阁。传统被真正用起来、而不只是背诵时，文化自信才会增长。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。政府可以投入公共设施，让参观博物馆不只属于付得起钱的人。纪录片和短视频能让人看到参观博物馆在现实中是怎样运作的。",
+  "apply_en": "The line chart tracks the number of museums and museum visitors from 2013 to 2015. Visitor numbers climbed from 640 million to 780 million, and the number of museums went from 4,200 to 4,600 as well. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. Public spending on infrastructure has made museum visiting far more widely available. Schools now treat museum visiting as part of the routine rather than an optional extra. Old traditions survive only when people find new ways to pass them on. People now judge museum visiting by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that museum visiting is not limited to those who can pay. Documentaries and short videos can show how museum visiting works in real life. That is what will decide whether the change lasts.",
+  "apply_cn": "该折线图记录了2013年到2015年期间博物馆数量与参观人数的变化。参观人数由6.4亿升至7.8亿，博物馆数量也从4200家升到4600家。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。公共基础设施投入让参观博物馆的覆盖面大大增加。学校现在把参观博物馆当成日常安排，而不是可选项。老传统只有在被不断重新传递时才能活下来。人们现在看参观博物馆好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让参观博物馆不只属于付得起钱的人。纪录片和短视频能让人看到参观博物馆在现实中怎样运作。而这，正是决定这种变化能否持续的关键。",
   "tips": [
-   "折线图、都升（2 个事物 / 动态）→ 用 **② 同向不同速（都在涨，快慢不同） 骨架**（适用 2010 · 2017 · 2022）。",
+   "折线图、都升（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
    "数据要点：visitor numbers 640 million → 780 million；the number of museums 4,200 → 4,600。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **文化自信类第二段**：句池挑「贴近生活」「文化自信」；本段骨架 3 句 + 句池 2 句 ≈ 59 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 政府 · 2010/2014/2017/2022 + 媒体 · 2017/2020/2023；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了{{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "Both rose, but {{item1}} climbed from {{num1}} to {{num2}} while {{item2}} only went from {{num3}} to {{num4}}.",
-    "cn": "两者都在上升，但 {{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 仅从 {{num3}} 升到 {{num4}}。",
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "The gap between the two widened over the period.",
-    "cn": "两者之间的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句6"
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句4"
    },
    {
-    "en": "Traditional culture does not survive by being preserved in a museum.",
-    "cn": "传统文化不是靠放进博物馆保存下来的。",
-    "src": "文化自信类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "It survives when people find new ways to pass it on.",
-    "cn": "它靠的是人们不断找到新的传递方式。",
-    "src": "文化自信类第二段 · 模板第2句"
+    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "The growth shown in the chart is that process at work.",
-    "cn": "图中的增长，正是这一过程在起作用。",
-    "src": "文化自信类第二段 · 模板第3句"
+    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+    "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "{{topic}} brings traditional culture closer to ordinary life instead of leaving it on the shelf.",
-    "cn": "{{topic}} 把传统文化拉近日常生活，而不是把它束之高阁。",
-    "src": "文化自信类第二段 · 功能句1"
+    "en": "Old traditions survive only when people find new ways to pass them on.",
+    "cn": "老传统只有在被不断重新传递时才能活下来。",
+    "src": "第二段 · 原因（机制句池） · 功能句11"
    },
    {
-    "en": "Cultural confidence grows when tradition is lived, not merely recited.",
-    "cn": "传统被真正用起来、而不只是背诵时，文化自信才会增长。",
-    "src": "文化自信类第二段 · 功能句5"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
-   },
-   {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
     "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
-    "src": "第三段 · 正面版 · 功能句1"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
    },
    {
     "en": "Documentaries and short videos can show how {{topic}} works in real life.",
-    "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中是怎样运作的。",
-    "src": "第三段 · 正面版 · 功能句9"
+    "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中怎样运作。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句10"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -2057,32 +2132,32 @@
      ],
      [
       "f",
-      6
+      4
      ]
     ]
    },
    {
-    "id": "para2_culture",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
-     ],
-     [
-      "t",
-      3
+      "f",
+      6
      ],
      [
       "f",
-      1
+      10
      ],
      [
       "f",
-      5
+      11
+     ],
+     [
+      "f",
+      4
      ]
     ]
    },
@@ -2094,16 +2169,16 @@
       1
      ],
      [
-      "t",
+      "f",
       2
      ],
      [
       "f",
-      1
+      10
      ],
      [
-      "f",
-      9
+      "t",
+      2
      ]
     ]
    }
@@ -2259,74 +2334,84 @@
  },
  "2018": {
   "title": "Part B 大作文：2017年某市消费者选择餐厅时的关注因素饼状图",
-  "apply_en": "The pie chart shows how the factors consumers weigh when choosing a restaurant are distributed among the categories. Distinctive features take the largest share, at 36.3%. Service and the dining environment come next, at 26.8% and 23.8%. By contrast, price and other factors account for only 8.4% and 4.7%. Taken together, the three largest categories account for 86.9%.\n\nThe change in the chart reflects a broader shift in how people live and work. Once basic needs are met, people care more about how they spend their time. Rising incomes have turned what used to be a luxury into an ordinary purchase.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Companies can make dining out cheaper and easier to use, so that it reaches more people. Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-  "apply_cn": "该饼状图显示消费者选择餐厅时考虑的因素在各类别之间的分布情况。餐厅特色占比最高，为36.3%。其次是服务和就餐环境，分别为26.8%和23.8%。相比之下，价格和其他因素仅占8.4%和4.7%。把最大的三类加在一起，共占86.9%。\n\n图中的变化反映了人们生活和工作方式的更大转变。基本需求满足之后，人们更在意自己的时间怎么花。收入提高把过去的奢侈品变成了日常消费。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。企业可以把外出就餐做得更便宜、更好用，让它覆盖更多人。平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+  "apply_en": "The pie chart shows how the factors consumers weigh when choosing a restaurant break down. Distinctive features come first, at 36.3%. Service and the dining environment follow, at 26.8% and 23.8%. Other factors round off the list at 4.7%. Taken together, the three largest items make up 86.9%.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, dining out has moved from a luxury to an everyday necessity. People now judge dining out by what it does for them rather than by what others think. Online platforms and mobile payment have made dining out quicker and easier to arrange.\n\nOn balance, this is a change worth welcoming. Companies can make dining out cheaper and easier to use, so that it reaches more people. Platforms should design simple, honest interfaces instead of ones that keep users hooked. Individuals should choose what fits their own situation rather than follow the crowd. That is what will decide whether the change lasts.",
+  "apply_cn": "该饼状图展示消费者选择餐厅时考虑的因素的构成情况。餐厅特色排在第一位，占36.3%。紧随其后的是服务和就餐环境，分别占26.8%和23.8%。最后是其他因素，占4.7%。前三项加起来占86.9%。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，外出就餐已从奢侈品变成日常必需。人们现在看外出就餐好不好用，而不是看别人怎么想。线上平台和移动支付让外出就餐变得更快更方便。\n\n总体来看，这是值得欢迎的变化。企业可以把外出就餐做得更便宜好用，让它覆盖更多人。平台应把界面做得简单诚实，而不是想方设法让人上瘾。个人应按自身情况选择，而不是随大流。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "饼图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
-   "数据要点：distinctive features 占 36.3%；service 占 26.8%；the dining environment 占 23.8%；price 占 8.4%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **社会 · 职场 · 生活类第二段**：句池挑「消费 · 2015/2016」；本段骨架 2 句 + 句池 1 句 ≈ 43 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 企业/平台 · 2011/2012/2018 + 企业/平台 · 2018/2020/2022；**只挑 2 个主体**，不要六个都写。"
+   "数据要点：distinctive features 占 36.3%；service 占 26.8%；the dining environment 占 23.8%；other factors 占 4.7%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 58 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "By contrast, {{item4}} and {{item5}} account for only {{percent4}} and {{percent5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 仅占 {{percent4}} 和 {{percent5}}。",
+    "en": "{{item4}} rounds off the list at {{percent4}}.",
+    "cn": "最后是 {{item4}}，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "Taken together, the three largest categories account for {{percent total}}.",
-    "cn": "把最大的三类加在一起，共占 {{percent total}}。",
+    "en": "Taken together, the three largest items make up {{percent total}}.",
+    "cn": "前三项加起来占 {{percent total}}。",
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "The change in the chart reflects a broader shift in how people live and work.",
-    "cn": "图中的变化反映了人们生活和工作方式的更大转变。",
-    "src": "社会 · 职场 · 生活类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Once basic needs are met, people care more about how they spend their time.",
-    "cn": "基本需求满足之后，人们更在意自己的时间怎么花。",
-    "src": "社会 · 职场 · 生活类第二段 · 模板第2句"
+    "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+    "src": "第二段 · 原因（机制句池） · 功能句1"
    },
    {
-    "en": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
-    "cn": "收入提高把过去的奢侈品变成了日常消费。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句2"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
+    "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+    "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+    "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
-    "cn": "企业可以把 {{topic}} 做得更便宜、更好用，让它覆盖更多人。",
-    "src": "第三段 · 正面版 · 功能句4"
+    "cn": "企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
    },
    {
     "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
     "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
-    "src": "第三段 · 正面版 · 功能句8"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
+   },
+   {
+    "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
+    "cn": "个人应按自身情况选择，而不是随大流。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -2356,19 +2441,23 @@
     ]
    },
    {
-    "id": "para2_social",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
+      "f",
+      1
      ],
      [
       "f",
-      2
+      4
+     ],
+     [
+      "f",
+      3
      ]
     ]
    },
@@ -2380,16 +2469,20 @@
       1
      ],
      [
+      "f",
+      5
+     ],
+     [
+      "f",
+      9
+     ],
+     [
+      "f",
+      7
+     ],
+     [
       "t",
       2
-     ],
-     [
-      "f",
-      4
-     ],
-     [
-      "f",
-      8
      ]
     ]
    }
@@ -2422,12 +2515,6 @@
    {
     "para": "p1",
     "name": "item4",
-    "en": "price",
-    "cn": "价格"
-   },
-   {
-    "para": "p1",
-    "name": "item5",
     "en": "other factors",
     "cn": "其他因素"
    },
@@ -2458,12 +2545,6 @@
    {
     "para": "p1",
     "name": "percent4",
-    "en": "8.4%",
-    "cn": "8.4%"
-   },
-   {
-    "para": "p1",
-    "name": "percent5",
     "en": "4.7%",
     "cn": "4.7%"
    },
@@ -2513,12 +2594,6 @@
    },
    {
     "name": "item4",
-    "en": "price",
-    "cn": "价格",
-    "para": "第一段"
-   },
-   {
-    "name": "item5",
     "en": "other factors",
     "cn": "其他因素",
     "para": "第一段"
@@ -2549,12 +2624,6 @@
    },
    {
     "name": "percent4",
-    "en": "8.4%",
-    "cn": "8.4%",
-    "para": "第一段"
-   },
-   {
-    "name": "percent5",
     "en": "4.7%",
     "cn": "4.7%",
     "para": "第一段"
@@ -2581,74 +2650,79 @@
  },
  "2019": {
   "title": "Part B 大作文：某高校2013年和2018年本科毕业生去向统计柱状图",
-  "apply_en": "The bar chart tracks how graduates' destinations changed from 2013 to 2018. From 2013 to 2018, the share going on to further study rose from 26.3% to 34.0%, a steady climb. Over the same period, the share entering employment fell from 68.1% to 60.7%, a clear decline. The two groups moved in opposite directions.\n\nBehind the numbers in the chart lies a change in how students spend their time. Habits built at this stage shape how young people take responsibility later. Career planning is one of the clearest examples. Career planning teaches students to plan their own time rather than wait to be told. Students who take part in career planning often work better with others.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Schools can build career planning into daily routines instead of treating it as an extra.",
-  "apply_cn": "该柱状图记录了2013年到2018年期间毕业生去向的变化。自2013年至2018年，升学比例由26.3%稳步升至34.0%。同一时期，就业比例由68.1%降至60.7%，降幅明显。两组朝相反的方向变化。\n\n数字背后，是学生时间安排方式的变化。这个阶段养成的习惯，会影响他们日后承担责任的方式。职业规划就是最清楚的例子之一。职业规划让学生学会自己安排时间，而不是等人安排。参与职业规划的学生通常更善于与人合作。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。学校可以把职业规划纳入日常安排，而不是当成额外任务。",
+  "apply_en": "The bar chart tracks graduates' destinations from 2013 to 2018. From 2013 to 2018, the share going on to further study rose from 26.3% to 34.0%. Over the same period, the share entering employment slipped from 68.1% to 60.7%. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. Employers now look for experience as much as for grades. Schools now treat career planning as part of the routine rather than an optional extra. People now judge career planning by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build career planning into daily routines instead of treating it as an extra. What matters most is whether families and schools treat career planning as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了2013年到2018年期间毕业生去向的变化。自2013年至2018年，升学比例由26.3%升至34.0%。同一时期，就业比例由68.1%降到60.7%。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。现在用人单位既看成绩，也看经验。学校现在把职业规划当成日常安排，而不是可选项。人们现在看职业规划好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把职业规划纳入日常安排，而不是当成额外任务。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
-   "柱状图、两年对比变化（3 个事物 / 动态）→ 用 **③ 一升一降（有涨有跌） 骨架**（适用 2011 · 2014 · 2019）。",
+   "柱状图、两年对比变化（3 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
    "数据要点：the share going on to further study 26.3% → 34.0%；the share entering employment 68.1% → 60.7%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **校园类第二段（对应英语一品质类）**：句池挑「时间管理」「合作」；本段骨架 3 句 + 句池 2 句 ≈ 62 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 学校 · 2013/2019/2024/2026；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
+    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
+    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
     "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "Over the same period, {{item2}} fell from {{num3}} to {{num4}}, a clear decline.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降至 {{num4}}，降幅明显。",
+    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
     "src": "动态图表第一段 · 功能句2"
    },
    {
-    "en": "The two groups moved in opposite directions.",
-    "cn": "两组朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句8"
+    "en": "The two moved in opposite directions.",
+    "cn": "两者朝相反的方向变化。",
+    "src": "动态图表第一段 · 功能句6"
    },
    {
-    "en": "Behind the numbers in the chart lies a change in how students spend their time.",
-    "cn": "数字背后，是学生时间安排方式的变化。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Habits built at this stage shape how young people take responsibility later.",
-    "cn": "这个阶段养成的习惯，会影响他们日后承担责任的方式。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+    "en": "Employers now look for experience as much as for grades.",
+    "cn": "现在用人单位既看成绩，也看经验。",
+    "src": "第二段 · 原因（机制句池） · 功能句15"
    },
    {
-    "en": "{{topic}} is one of the clearest examples.",
-    "cn": "{{topic}} 就是最清楚的例子之一。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第3句"
+    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+    "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "{{topic}} teaches students to plan their own time rather than wait to be told.",
-    "cn": "{{topic}} 让学生学会自己安排时间，而不是等人安排。",
-    "src": "校园类第二段（对应英语一品质类） · 功能句1"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "Students who take part in {{topic}} often work better with others.",
-    "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
-    "src": "校园类第二段（对应英语一品质类） · 功能句3"
+    "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+    "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+    "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
-   },
-   {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
-    "src": "第三段 · 正面版 · 功能句2"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+   },
+   {
+    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -2669,32 +2743,32 @@
      ],
      [
       "f",
-      8
+      6
      ]
     ]
    },
    {
-    "id": "para2_campus",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
-     ],
-     [
-      "t",
-      3
+      "f",
+      15
      ],
      [
       "f",
-      1
+      10
      ],
      [
       "f",
-      3
+      4
+     ],
+     [
+      "f",
+      14
      ]
     ]
    },
@@ -2706,11 +2780,15 @@
       1
      ],
      [
-      "t",
-      2
+      "f",
+      3
      ],
      [
       "f",
+      1
+     ],
+     [
+      "t",
       2
      ]
     ]
@@ -2867,84 +2945,84 @@
  },
  "2020": {
   "title": "Part B 大作文：某高校学生手机阅读目的调查",
-  "apply_en": "The pie chart shows how the purposes of mobile reading are distributed among the categories. Reading for knowledge takes the largest share, at 59.5%. Killing time and obtaining information come next, at 21.3% and 17.0%. Taken together, the three largest categories account for 97.8%. Other purposes come last, at 2.2%.\n\nBehind the numbers in the chart lies a change in how students spend their time. Habits built at this stage shape how young people take responsibility later. Mobile reading is one of the clearest examples. Mobile reading teaches students to plan their own time rather than wait to be told. The skills involved — patience, self-control, persistence — matter long after school ends.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Media should report on mobile reading honestly, without exaggerating its benefits or its risks. Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-  "apply_cn": "该饼状图显示手机阅读目的在各类别之间的分布情况。获取知识占比最高，为59.5%。其次是消磨时间和获取信息，分别为21.3%和17.0%。把最大的三类加在一起，共占97.8%。其他目的排在最后，占2.2%。\n\n数字背后，是学生时间安排方式的变化。这个阶段养成的习惯，会影响他们日后承担责任的方式。手机阅读就是最清楚的例子之一。手机阅读让学生学会自己安排时间，而不是等人安排。其中的耐心、自控和坚持，在离开学校很久之后仍然有用。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。媒体应如实报道手机阅读，既不夸大好处，也不夸大风险。平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+  "apply_en": "The pie chart shows how the purposes of mobile reading break down. Reading for knowledge comes first, at 59.5%. Killing time and obtaining information follow, at 21.3% and 17.0%. Other purposes round off the list at 2.2%. Taken together, the three largest items make up 97.8%.\n\nThe numbers in the chart are the result of deeper changes. Online platforms and mobile payment have made mobile reading quicker and easier to arrange. Longer working hours have made people value the little time they can call their own. People now judge mobile reading by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Media should report on mobile reading honestly, without exaggerating its benefits or its risks. Platforms should design simple, honest interfaces instead of ones that keep users hooked. Small habits matter: a little mobile reading every day adds up over a year. That is what will decide whether the change lasts.",
+  "apply_cn": "该饼状图展示手机阅读目的的构成情况。获取知识排在第一位，占59.5%。紧随其后的是消磨时间和获取信息，分别占21.3%和17.0%。最后是其他目的，占2.2%。前三项加起来占97.8%。\n\n图里的数字，是更深层变化的结果。线上平台和移动支付让手机阅读变得更快更方便。工作时间变长，人们更看重那点属于自己的时间。人们现在看手机阅读好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。媒体应如实报道手机阅读，既不夸大好处，也不夸大风险。平台应把界面做得简单诚实，而不是想方设法让人上瘾。小习惯很重要：每天一点手机阅读，一年下来就不一样。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
    "数据要点：reading for knowledge 占 59.5%；killing time 占 21.3%；obtaining information 占 17.0%；other purposes 占 2.2%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **校园类第二段（对应英语一品质类）**：句池挑「时间管理」「长期收益」；本段骨架 3 句 + 句池 2 句 ≈ 63 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 媒体 · 2016/2020/2023 + 企业/平台 · 2018/2020/2022；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 57 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "Taken together, the three largest categories account for {{percent total}}.",
-    "cn": "把最大的三类加在一起，共占 {{percent total}}。",
+    "en": "{{item4}} rounds off the list at {{percent4}}.",
+    "cn": "最后是 {{item4}}，占 {{percent4}}。",
+    "src": "静态图表第一段 · 模板第4句"
+   },
+   {
+    "en": "Taken together, the three largest items make up {{percent total}}.",
+    "cn": "前三项加起来占 {{percent total}}。",
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "{{item4}} comes last, at {{percent4}}.",
-    "cn": "{{item4}} 排在最后，占 {{percent4}}。",
-    "src": "静态图表第一段 · 功能句6"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Behind the numbers in the chart lies a change in how students spend their time.",
-    "cn": "数字背后，是学生时间安排方式的变化。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
+    "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+    "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+    "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "Habits built at this stage shape how young people take responsibility later.",
-    "cn": "这个阶段养成的习惯，会影响他们日后承担责任的方式。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+    "en": "Longer working hours have made people value the little time they can call their own.",
+    "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+    "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
-    "en": "{{topic}} is one of the clearest examples.",
-    "cn": "{{topic}} 就是最清楚的例子之一。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第3句"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "{{topic}} teaches students to plan their own time rather than wait to be told.",
-    "cn": "{{topic}} 让学生学会自己安排时间，而不是等人安排。",
-    "src": "校园类第二段（对应英语一品质类） · 功能句1"
-   },
-   {
-    "en": "The skills involved — patience, self-control, persistence — matter long after school ends.",
-    "cn": "其中的耐心、自控和坚持，在离开学校很久之后仍然有用。",
-    "src": "校园类第二段（对应英语一品质类） · 功能句4"
-   },
-   {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
-   },
-   {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
-    "src": "第三段 · 正面版 · 功能句5"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
    },
    {
     "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
     "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
-    "src": "第三段 · 正面版 · 功能句8"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
+   },
+   {
+    "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
+    "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -2964,33 +3042,29 @@
       3
      ],
      [
-      "f",
-      3
+      "t",
+      4
      ],
      [
       "f",
-      6
+      3
      ]
     ]
    },
    {
-    "id": "para2_campus",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
-     ],
-     [
-      "t",
+      "f",
       3
      ],
      [
       "f",
-      1
+      9
      ],
      [
       "f",
@@ -3006,16 +3080,20 @@
       1
      ],
      [
+      "f",
+      6
+     ],
+     [
+      "f",
+      9
+     ],
+     [
+      "f",
+      11
+     ],
+     [
       "t",
       2
-     ],
-     [
-      "f",
-      5
-     ],
-     [
-      "f",
-      8
      ]
     ]
    }
@@ -3183,79 +3261,89 @@
  },
  "2021": {
   "title": "Part B 大作文：某市居民锻炼方式调查",
-  "apply_en": "The bar chart shows how the ways residents take exercise are distributed among the categories. Exercising on one's own takes the largest share, at 54.3%. Exercising with friends and exercising with family come next, at 47.7% and 23.9%. Team sports come last, at 16%. The gap between the largest and smallest categories is wide.\n\nThe figures are less about sport itself than about how people now look after themselves. Long working hours have turned health into something to plan for, and exercising is the easiest way to do that. Sitting all day has turned exercise into a practical need rather than a hobby. Fitness apps and smart watches let people track their progress and stay motivated.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Individuals should choose what fits their own situation rather than follow the crowd. Small habits matter: a little exercise every day adds up over a year.",
-  "apply_cn": "该柱状图显示居民的锻炼方式在各类别之间的分布情况。独自锻炼占比最高，为54.3%。其次是与朋友一起和与家人一起，分别为47.7%和23.9%。团队项目排在最后，占16%。最大类别与最小类别之间的差距很大。\n\n这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。长时间工作让健康变成需要主动安排的事，而锻炼是最容易做到的一种方式。整天坐着，让运动从爱好变成了实际需要。健身App和智能手表让人能记录进展、保持动力。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。个人应按自身情况选择，而不是随大流。小习惯很重要：每天一点运动，一年下来就不一样。",
+  "apply_en": "The bar chart shows how the ways residents take exercise break down. Exercising on one's own comes first, at 54.3%. Exercising with friends and exercising with family follow, at 47.7% and 23.9%. Team sports round off the list at 16%. The gap between the largest and the smallest is wide.\n\nThe numbers in the chart are the result of deeper changes. Sitting all day has turned exercising from a hobby into a practical need. Longer working hours have made people value the little time they can call their own. Public spending on infrastructure has made exercising far more widely available. People now judge exercising by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. Small habits matter: a little exercise every day adds up over a year. What matters most is whether families and schools treat exercise as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图展示居民的锻炼方式的构成情况。独自锻炼排在第一位，占54.3%。紧随其后的是与朋友一起和与家人一起，分别占47.7%和23.9%。最后是团队项目，占16%。最大项与最小项之间差距很大。\n\n图里的数字，是更深层变化的结果。整天坐着，让锻炼从爱好变成了实际需要。工作时间变长，人们更看重那点属于自己的时间。公共基础设施投入让锻炼的覆盖面大大增加。人们现在看锻炼好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。个人应按自身情况选择，而不是随大流。小习惯很重要：每天一点运动，一年下来就不一样。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
    "数据要点：exercising on one's own 占 54.3%；exercising with friends 占 47.7%；exercising with family 占 23.9%；team sports 占 16%。数值与图逐个核对，别漏最大值。",
-   "第二段套 **体育健康类第二段**：句池挑「久坐」「工具助力」；本段骨架 2 句 + 句池 2 句 ≈ 62 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 个人 · 2015/2016/2021 + 个人 · 2021/2025；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 66 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "{{item4}} comes last, at {{percent4}}.",
-    "cn": "{{item4}} 排在最后，占 {{percent4}}。",
-    "src": "静态图表第一段 · 功能句6"
+    "en": "{{item4}} rounds off the list at {{percent4}}.",
+    "cn": "最后是 {{item4}}，占 {{percent4}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "The gap between the largest and smallest categories is wide.",
-    "cn": "最大类别与最小类别之间的差距很大。",
-    "src": "静态图表第一段 · 功能句7"
+    "en": "The gap between the largest and the smallest is wide.",
+    "cn": "最大项与最小项之间差距很大。",
+    "src": "静态图表第一段 · 功能句5"
    },
    {
-    "en": "The figures are less about sport itself than about how people now look after themselves.",
-    "cn": "这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。",
-    "src": "体育健康类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Long working hours have turned health into something to plan for, and {{topic}} is the easiest way to do that.",
-    "cn": "长时间工作让健康变成需要主动安排的事，而 {{topic}} 是最容易做到的一种方式。",
-    "src": "体育健康类第二段 · 模板第2句"
+    "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
+    "cn": "整天坐着，让 {{topic}} 从爱好变成了实际需要。",
+    "src": "第二段 · 原因（机制句池） · 功能句8"
    },
    {
-    "en": "Sitting all day has turned exercise into a practical need rather than a hobby.",
-    "cn": "整天坐着，让运动从爱好变成了实际需要。",
-    "src": "体育健康类第二段 · 功能句1"
+    "en": "Longer working hours have made people value the little time they can call their own.",
+    "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+    "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
-    "en": "Fitness apps and smart watches let people track their progress and stay motivated.",
-    "cn": "健身 App 和智能手表让人能记录进展、保持动力。",
-    "src": "体育健康类第二段 · 功能句4"
+    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
     "cn": "个人应按自身情况选择，而不是随大流。",
-    "src": "第三段 · 正面版 · 功能句6"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
    },
    {
     "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
     "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
-    "src": "第三段 · 正面版 · 功能句10"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+   },
+   {
+    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -3275,29 +3363,33 @@
       3
      ],
      [
-      "f",
-      6
+      "t",
+      4
      ],
      [
       "f",
-      7
+      5
      ]
     ]
    },
    {
-    "id": "para2_sports",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
+      "f",
+      8
      ],
      [
       "f",
-      1
+      9
+     ],
+     [
+      "f",
+      6
      ],
      [
       "f",
@@ -3313,16 +3405,20 @@
       1
      ],
      [
+      "f",
+      7
+     ],
+     [
+      "f",
+      11
+     ],
+     [
+      "f",
+      1
+     ],
+     [
       "t",
       2
-     ],
-     [
-      "f",
-      6
-     ],
-     [
-      "f",
-      10
      ]
     ]
    }
@@ -3478,74 +3574,74 @@
  },
  "2022": {
   "title": "Part B 大作文：2018—2020年我国快递业务量变动情况",
-  "apply_en": "The bar chart tracks how express delivery volume changed from 2018 to 2020. Both rose, but the rural figure climbed from 12 billion pieces to 30 billion pieces while the national total only went from 51 billion pieces to 83 billion pieces. The gap between the two widened over the period. Growth was slow at first and then sped up.\n\nThe trend in the chart is closely tied to how people live and spend today. As household incomes have grown, online shopping has moved from a luxury to an everyday necessity. Cities have grown quickly, and demand for online shopping has grown with them. Government support — from tax breaks to better infrastructure — has also helped.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Government can fund public facilities so that online shopping is not limited to those who can pay. Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-  "apply_cn": "该柱状图记录了2018年到2020年期间快递业务量的变化。两者都在上升，但农村快递量由120亿件升至300亿件，而全国总量仅从510亿件升到830亿件。两者之间的差距在这一时期拉大了。增长起初缓慢，后来明显加快。\n\n图中的变化与人们当下的生活和消费方式密切相关。随着家庭收入提高，网购已从奢侈品变成日常必需品。城市快速扩张，网购的需求也随之增长。政府支持——从税收优惠到基础设施改善——也起了作用。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。政府可以投入公共设施，让网购不只属于付得起钱的人。平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+  "apply_en": "The bar chart tracks express delivery volume from 2018 to 2020. The rural figure climbed from 12 billion pieces to 30 billion pieces, and the national total went from 51 billion pieces to 83 billion pieces as well. The gap between the two widened over the period. Growth was slow at first and then sped up.\n\nThe numbers in the chart are the result of deeper changes. Technology has cut the cost of online shopping and put it within reach of far more people. Online platforms and mobile payment have made online shopping quicker and easier to arrange. Cities have absorbed millions of new residents, and demand for online shopping has grown with them.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that online shopping is not limited to those who can pay. Companies can make online shopping cheaper and easier to use, so that it reaches more people. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了2018年到2020年期间快递业务量的变化。农村快递量由120亿件升至300亿件，全国总量也从510亿件升到830亿件。两者的差距在这一时期拉大了。增长起初缓慢，后来明显加快。\n\n图里的数字，是更深层变化的结果。技术把网购的成本压了下来，让更多人够得着。线上平台和移动支付让网购变得更快更方便。城市吸纳了大量新居民，网购的需求随之增长。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让网购不只属于付得起钱的人。企业可以把网购做得更便宜好用，让它覆盖更多人。而这，正是决定这种变化能否持续的关键。",
   "tips": [
-   "柱状图、都升，幅度不同（2 个事物 / 动态）→ 用 **② 同向不同速（都在涨，快慢不同） 骨架**（适用 2010 · 2017 · 2022）。",
+   "柱状图、都升，幅度不同（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
    "数据要点：the rural figure 12 billion pieces → 30 billion pieces；the national total 51 billion pieces → 83 billion pieces。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **经济类第二段**：句池挑「收入」「城市化」「政策」；本段骨架 2 句 + 句池 3 句 ≈ 57 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 政府 · 2010/2014/2017/2022 + 企业/平台 · 2018/2020/2022；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 58 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks how {{topic}} changed from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了{{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "Both rose, but {{item1}} climbed from {{num1}} to {{num2}} while {{item2}} only went from {{num3}} to {{num4}}.",
-    "cn": "两者都在上升，但 {{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 仅从 {{num3}} 升到 {{num4}}。",
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "The gap between the two widened over the period.",
-    "cn": "两者之间的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句6"
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句4"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句7"
+    "src": "动态图表第一段 · 功能句5"
    },
    {
-    "en": "The trend in the chart is closely tied to how people live and spend today.",
-    "cn": "图中的变化与人们当下的生活和消费方式密切相关。",
-    "src": "经济类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
-    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需品。",
-    "src": "经济类第二段 · 功能句1"
+    "en": "Technology has cut the cost of {{topic}} and put it within reach of far more people.",
+    "cn": "技术把 {{topic}} 的成本压了下来，让更多人够得着。",
+    "src": "第二段 · 原因（机制句池） · 功能句2"
    },
    {
-    "en": "Cities have grown quickly, and demand for {{topic}} has grown with them.",
-    "cn": "城市快速扩张，{{topic}} 的需求也随之增长。",
-    "src": "经济类第二段 · 功能句5"
+    "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
+    "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+    "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "Government support — from tax breaks to better infrastructure — has also helped.",
-    "cn": "政府支持——从税收优惠到基础设施改善——也起了作用。",
-    "src": "经济类第二段 · 功能句6"
+    "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
+    "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+    "src": "第二段 · 原因（机制句池） · 功能句7"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
-   },
-   {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
     "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
-    "src": "第三段 · 正面版 · 功能句1"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
    },
    {
-    "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-    "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
-    "src": "第三段 · 正面版 · 功能句8"
+    "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
+    "cn": "企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -3562,16 +3658,16 @@
      ],
      [
       "f",
-      6
+      4
      ],
      [
       "f",
-      7
+      5
      ]
     ]
    },
    {
-    "id": "para2_economy",
+    "id": "para2_why",
     "refs": [
      [
       "t",
@@ -3579,15 +3675,15 @@
      ],
      [
       "f",
-      1
+      2
      ],
      [
       "f",
-      5
+      3
      ],
      [
       "f",
-      6
+      7
      ]
     ]
    },
@@ -3599,16 +3695,16 @@
       1
      ],
      [
-      "t",
+      "f",
       2
      ],
      [
       "f",
-      1
+      5
      ],
      [
-      "f",
-      8
+      "t",
+      2
      ]
     ]
    }
@@ -3764,74 +3860,84 @@
  },
  "2023": {
   "title": "Part B 大作文：2012—2021年我国居民健康素养水平变化趋势",
-  "apply_en": "The line chart tracks the health literacy rate of Chinese residents from 2012 to 2021. From 2012 to 2021, the health literacy rate of Chinese residents rose from 8.80% to 25.40%, a steady climb. Growth was slow at first and then sped up. The figure more than doubled over the period.\n\nThe figures are less about sport itself than about how people now look after themselves. Sitting all day has turned exercise into a practical need rather than a hobby. The rise is not only about money: attitudes to health have changed. Fitness apps and smart watches let people track their progress and stay motivated.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Media should report on health literacy honestly, without exaggerating its benefits or its risks. Clear rules and steady funding matter more than one-off campaigns.",
-  "apply_cn": "该折线图记录了居民健康素养水平从2012年到2021年的变化。自2012年至2021年，居民健康素养水平由8.80%稳步升至25.40%。增长起初缓慢，后来明显加快。这一数字在该时期翻了一倍多。\n\n这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。整天坐着，让运动从爱好变成了实际需要。这一增长不只因为钱：人们对健康的态度也变了。健身App和智能手表让人能记录进展、保持动力。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。媒体应如实报道健康素养，既不夸大好处，也不夸大风险。明确的规则和持续的投入，比一次性活动更重要。",
+  "apply_en": "The line chart tracks the health literacy rate of Chinese residents from 2012 to 2021. From 2012 to 2021, the health literacy rate of Chinese residents rose from 8.80% to 25.40%. Growth was slow at first and then sped up. The figure more than doubled over the period.\n\nThe numbers in the chart are the result of deeper changes. Public spending on infrastructure has made health literacy far more widely available. People now judge health literacy by what it does for them rather than by what others think. Sitting all day has turned health literacy from a hobby into a practical need. Schools now treat health literacy as part of the routine rather than an optional extra.\n\nOn balance, this is a change worth welcoming. Media should report on health literacy honestly, without exaggerating its benefits or its risks. Clear rules and steady funding matter more than one-off campaigns. Individuals should choose what fits their own situation rather than follow the crowd. That is what will decide whether the change lasts.",
+  "apply_cn": "该折线图记录了2012年到2021年期间居民健康素养水平的变化。自2012年至2021年，居民健康素养水平由8.80%升至25.40%。增长起初缓慢，后来明显加快。这一数字在该时期翻了一倍多。\n\n图里的数字，是更深层变化的结果。公共基础设施投入让健康素养的覆盖面大大增加。人们现在看健康素养好不好用，而不是看别人怎么想。整天坐着，让健康素养从爱好变成了实际需要。学校现在把健康素养当成日常安排，而不是可选项。\n\n总体来看，这是值得欢迎的变化。媒体应如实报道健康素养，既不夸大好处，也不夸大风险。明确的规则和持续投入，比一次性活动更重要。个人应按自身情况选择，而不是随大流。而这，正是决定这种变化能否持续的关键。",
   "tips": [
-   "折线图、单线持续升（1 个事物 / 动态）→ 用 **① 单线上升（图里只有一个事物） 骨架**（适用 2013 · 2023）。",
+   "折线图、单线持续升（1 个事物 / 动态）→ 用 **① 一条线在走 骨架**（适用 2013 · 2023）。",
    "数据要点：the health literacy rate of Chinese residents 8.80% → 25.40%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-   "第二段套 **体育健康类第二段**：句池挑「久坐」「观念」「工具助力」；本段骨架 2 句 + 句池 3 句 ≈ 54 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 媒体 · 2016/2020/2023 + 政府 · 2014/2023/2025；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 69 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{topic}} 从 {{time1}} 到 {{time2}} 的变化。",
+    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}, a steady climb.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 稳步升至 {{num2}}。",
+    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
+    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
     "src": "动态图表第一段 · 功能句1"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句7"
+    "src": "动态图表第一段 · 功能句5"
    },
    {
     "en": "The figure more than doubled over the period.",
     "cn": "这一数字在该时期翻了一倍多。",
-    "src": "动态图表第一段 · 功能句9"
+    "src": "动态图表第一段 · 功能句7"
    },
    {
-    "en": "The figures are less about sport itself than about how people now look after themselves.",
-    "cn": "这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。",
-    "src": "体育健康类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Sitting all day has turned exercise into a practical need rather than a hobby.",
-    "cn": "整天坐着，让运动从爱好变成了实际需要。",
-    "src": "体育健康类第二段 · 功能句1"
+    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "The rise is not only about money: attitudes to health have changed.",
-    "cn": "这一增长不只因为钱：人们对健康的态度也变了。",
-    "src": "体育健康类第二段 · 功能句3"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "Fitness apps and smart watches let people track their progress and stay motivated.",
-    "cn": "健身 App 和智能手表让人能记录进展、保持动力。",
-    "src": "体育健康类第二段 · 功能句4"
+    "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
+    "cn": "整天坐着，让 {{topic}} 从爱好变成了实际需要。",
+    "src": "第二段 · 原因（机制句池） · 功能句8"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
+    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+    "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
-    "src": "第三段 · 正面版 · 功能句5"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
-    "cn": "明确的规则和持续的投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版 · 功能句7"
+    "cn": "明确的规则和持续投入，比一次性活动更重要。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+   },
+   {
+    "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
+    "cn": "个人应按自身情况选择，而不是随大流。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -3848,16 +3954,16 @@
      ],
      [
       "f",
-      7
+      5
      ],
      [
       "f",
-      9
+      7
      ]
     ]
    },
    {
-    "id": "para2_sports",
+    "id": "para2_why",
     "refs": [
      [
       "t",
@@ -3865,15 +3971,19 @@
      ],
      [
       "f",
-      1
-     ],
-     [
-      "f",
-      3
+      6
      ],
      [
       "f",
       4
+     ],
+     [
+      "f",
+      8
+     ],
+     [
+      "f",
+      10
      ]
     ]
    },
@@ -3885,16 +3995,20 @@
       1
      ],
      [
-      "t",
-      2
+      "f",
+      6
      ],
      [
       "f",
-      5
+      8
      ],
      [
       "f",
       7
+     ],
+     [
+      "t",
+      2
      ]
     ]
    }
@@ -4014,79 +4128,84 @@
  },
  "2024": {
   "title": "Part B 大作文：某高校劳动实践课学生主要收获调查（柱状图）",
-  "apply_en": "The bar chart shows how labour practice course gains are distributed among the categories. Gaining relevant knowledge takes the largest share, at 91.3%. Improving practical ability and obtaining cheerful moods come next, at 84.8% and 54.4%. Enhancing cooperative ability comes last, at 32.6%. The gap between the largest and smallest categories is wide.\n\nBehind the numbers in the chart lies a change in how students spend their time. Habits built at this stage shape how young people take responsibility later. Labour practice courses are one of the clearest examples. Labour practice courses teach students to plan their own time rather than wait to be told. Students who take part in labour practice courses often work better with others.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Schools can build practical training into daily routines instead of treating it as an extra.",
-  "apply_cn": "该柱状图显示劳动实践课的收获在各类别之间的分布情况。获得相关知识占比最高，为91.3%。其次是提高实践能力和获得愉悦心情，分别为84.8%和54.4%。增强合作能力排在最后，占32.6%。最大类别与最小类别之间的差距很大。\n\n数字背后，是学生时间安排方式的变化。这个阶段养成的习惯，会影响他们日后承担责任的方式。劳动实践课就是最清楚的例子之一。劳动实践课让学生学会自己安排时间，而不是等人安排。参与劳动实践课的学生通常更善于与人合作。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。学校可以把实践训练纳入日常安排，而不是当成额外任务。",
+  "apply_en": "The bar chart shows how labour practice course gains break down. Gaining relevant knowledge comes first, at 91.3%. Improving practical ability and obtaining cheerful moods follow, at 84.8% and 54.4%. Enhancing cooperative ability rounds off the list at 32.6%. The gap between the largest and the smallest is wide.\n\nThe numbers in the chart are the result of deeper changes. Schools now treat labour practice courses as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge labour practice courses by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build practical training into daily routines instead of treating it as an extra. What matters most is whether families and schools treat practical training as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图展示劳动实践课的收获的构成情况。获得相关知识排在第一位，占91.3%。紧随其后的是提高实践能力和获得愉悦心情，分别占84.8%和54.4%。最后是增强合作能力，占32.6%。最大项与最小项之间差距很大。\n\n图里的数字，是更深层变化的结果。学校现在把劳动实践课当成日常安排，而不是可选项。现在用人单位既看成绩，也看经验。人们现在看劳动实践课好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把实践训练纳入日常安排，而不是当成额外任务。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
    "数据要点：gaining relevant knowledge 占 91.3%；improving practical ability 占 84.8%；obtaining cheerful moods 占 54.4%；enhancing cooperative ability 占 32.6%。数值与图逐个核对，别漏最大值。",
-   "第二段套 **校园类第二段（对应英语一品质类）**：句池挑「时间管理」「合作」；本段骨架 3 句 + 句池 2 句 ≈ 65 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 学校 · 2013/2019/2024/2026；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 70 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "{{item4}} comes last, at {{percent4}}.",
-    "cn": "{{item4}} 排在最后，占 {{percent4}}。",
-    "src": "静态图表第一段 · 功能句6"
+    "en": "{{item4}} rounds off the list at {{percent4}}.",
+    "cn": "最后是 {{item4}}，占 {{percent4}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "The gap between the largest and smallest categories is wide.",
-    "cn": "最大类别与最小类别之间的差距很大。",
-    "src": "静态图表第一段 · 功能句7"
+    "en": "The gap between the largest and the smallest is wide.",
+    "cn": "最大项与最小项之间差距很大。",
+    "src": "静态图表第一段 · 功能句5"
    },
    {
-    "en": "Behind the numbers in the chart lies a change in how students spend their time.",
-    "cn": "数字背后，是学生时间安排方式的变化。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Habits built at this stage shape how young people take responsibility later.",
-    "cn": "这个阶段养成的习惯，会影响他们日后承担责任的方式。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第2句"
+    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+    "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "{{topic}} is one of the clearest examples.",
-    "cn": "{{topic}} 就是最清楚的例子之一。",
-    "src": "校园类第二段（对应英语一品质类） · 模板第3句"
+    "en": "Employers now look for experience as much as for grades.",
+    "cn": "现在用人单位既看成绩，也看经验。",
+    "src": "第二段 · 原因（机制句池） · 功能句15"
    },
    {
-    "en": "{{topic}} teaches students to plan their own time rather than wait to be told.",
-    "cn": "{{topic}} 让学生学会自己安排时间，而不是等人安排。",
-    "src": "校园类第二段（对应英语一品质类） · 功能句1"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "Students who take part in {{topic}} often work better with others.",
-    "cn": "参与 {{topic}} 的学生通常更善于与人合作。",
-    "src": "校园类第二段（对应英语一品质类） · 功能句3"
+    "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+    "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+    "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
-   },
-   {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
-    "src": "第三段 · 正面版 · 功能句2"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+   },
+   {
+    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -4106,37 +4225,37 @@
       3
      ],
      [
-      "f",
-      6
+      "t",
+      4
      ],
      [
       "f",
-      7
+      5
      ]
     ]
    },
    {
-    "id": "para2_campus",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
-     ],
-     [
-      "t",
-      3
+      "f",
+      10
      ],
      [
       "f",
-      1
+      15
      ],
      [
       "f",
-      3
+      4
+     ],
+     [
+      "f",
+      14
      ]
     ]
    },
@@ -4148,11 +4267,15 @@
       1
      ],
      [
-      "t",
-      2
+      "f",
+      3
      ],
      [
       "f",
+      1
+     ],
+     [
+      "t",
       2
      ]
     ]
@@ -4309,79 +4432,89 @@
  },
  "2025": {
   "title": "Part B 大作文：某社区老年人主要日常休闲活动调查（柱形图）",
-  "apply_en": "The bar chart shows how the leisure activities of the elderly are distributed among the categories. Watching television takes the largest share, at 90.8%. Taking walks and planting flowers come next, at 68.3% and 34.7%. By contrast, reading and playing chess account for only 31.8% and 18.4%. The gap between the largest and smallest categories is wide.\n\nThe change in the chart reflects a broader shift in how people live and work. Once basic needs are met, people care more about how they spend their time. Longer life expectancy has pushed families to think about how older members spend their days. Rising incomes have turned what used to be a luxury into an ordinary purchase.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Clear rules and steady funding matter more than one-off campaigns. Small habits matter: a little leisure activity every day adds up over a year.",
-  "apply_cn": "该柱状图显示老年人的休闲活动在各类别之间的分布情况。看电视占比最高，为90.8%。其次是散步和种花，分别为68.3%和34.7%。相比之下，读书和下棋仅占31.8%和18.4%。最大类别与最小类别之间的差距很大。\n\n图中的变化反映了人们生活和工作方式的更大转变。基本需求满足之后，人们更在意自己的时间怎么花。寿命延长让家庭开始考虑老年人怎么度过日常。收入提高把过去的奢侈品变成了日常消费。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。明确的规则和持续的投入，比一次性活动更重要。小习惯很重要：每天一点休闲活动，一年下来就不一样。",
+  "apply_en": "The bar chart shows how the leisure activities of the elderly break down. Watching television comes first, at 90.8%. Taking walks and planting flowers follow, at 68.3% and 34.7%. Playing chess rounds off the list at 18.4%. The gap between the largest and the smallest is wide.\n\nThe numbers in the chart are the result of deeper changes. Longer life expectancy has changed how families plan for their later years. As household incomes have grown, retirement life has moved from a luxury to an everyday necessity. People now judge retirement life by what it does for them rather than by what others think. Public spending on infrastructure has made retirement life far more widely available.\n\nOn balance, this is a change worth welcoming. Clear rules and steady funding matter more than one-off campaigns. Small habits matter: a little leisure activity every day adds up over a year. What matters most is whether families and schools treat leisure activity as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图展示老年人的休闲活动的构成情况。看电视排在第一位，占90.8%。紧随其后的是散步和种花，分别占68.3%和34.7%。最后是下棋，占18.4%。最大项与最小项之间差距很大。\n\n图里的数字，是更深层变化的结果。寿命延长，改变了家庭对晚年的安排。随着家庭收入提高，退休生活已从奢侈品变成日常必需。人们现在看退休生活好不好用，而不是看别人怎么想。公共基础设施投入让退休生活的覆盖面大大增加。\n\n总体来看，这是值得欢迎的变化。明确的规则和持续投入，比一次性活动更重要。小习惯很重要：每天一点休闲活动，一年下来就不一样。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "柱状图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
-   "数据要点：watching television 占 90.8%；taking walks 占 68.3%；planting flowers 占 34.7%；reading 占 31.8%。数值与图逐个核对，别漏最大值。",
-   "第二段套 **社会 · 职场 · 生活类第二段**：句池挑「养老 · 2025」「消费 · 2015/2016」；本段骨架 2 句 + 句池 2 句 ≈ 58 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 政府 · 2014/2023/2025 + 个人 · 2021/2025；**只挑 2 个主体**，不要六个都写。"
+   "数据要点：watching television 占 90.8%；taking walks 占 68.3%；planting flowers 占 34.7%；playing chess 占 18.4%。数值与图逐个核对，别漏最大值。",
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "By contrast, {{item4}} and {{item5}} account for only {{percent4}} and {{percent5}}.",
-    "cn": "相比之下，{{item4}} 和 {{item5}} 仅占 {{percent4}} 和 {{percent5}}。",
+    "en": "{{item4}} rounds off the list at {{percent4}}.",
+    "cn": "最后是 {{item4}}，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "The gap between the largest and smallest categories is wide.",
-    "cn": "最大类别与最小类别之间的差距很大。",
-    "src": "静态图表第一段 · 功能句7"
+    "en": "The gap between the largest and the smallest is wide.",
+    "cn": "最大项与最小项之间差距很大。",
+    "src": "静态图表第一段 · 功能句5"
    },
    {
-    "en": "The change in the chart reflects a broader shift in how people live and work.",
-    "cn": "图中的变化反映了人们生活和工作方式的更大转变。",
-    "src": "社会 · 职场 · 生活类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Once basic needs are met, people care more about how they spend their time.",
-    "cn": "基本需求满足之后，人们更在意自己的时间怎么花。",
-    "src": "社会 · 职场 · 生活类第二段 · 模板第2句"
+    "en": "Longer life expectancy has changed how families plan for their later years.",
+    "cn": "寿命延长，改变了家庭对晚年的安排。",
+    "src": "第二段 · 原因（机制句池） · 功能句12"
    },
    {
-    "en": "Longer life expectancy has pushed families to think about how older members spend their days.",
-    "cn": "寿命延长让家庭开始考虑老年人怎么度过日常。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句6"
+    "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
+    "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
+    "src": "第二段 · 原因（机制句池） · 功能句1"
    },
    {
-    "en": "Rising incomes have turned what used to be a luxury into an ordinary purchase.",
-    "cn": "收入提高把过去的奢侈品变成了日常消费。",
-    "src": "社会 · 职场 · 生活类第二段 · 功能句2"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
+    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
-    "cn": "明确的规则和持续的投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版 · 功能句7"
+    "cn": "明确的规则和持续投入，比一次性活动更重要。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
    },
    {
     "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
     "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
-    "src": "第三段 · 正面版 · 功能句10"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+   },
+   {
+    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -4406,28 +4539,32 @@
      ],
      [
       "f",
-      7
+      5
      ]
     ]
    },
    {
-    "id": "para2_social",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
+      "f",
+      12
+     ],
+     [
+      "f",
+      1
+     ],
+     [
+      "f",
+      4
      ],
      [
       "f",
       6
-     ],
-     [
-      "f",
-      2
      ]
     ]
    },
@@ -4439,16 +4576,20 @@
       1
      ],
      [
+      "f",
+      8
+     ],
+     [
+      "f",
+      11
+     ],
+     [
+      "f",
+      1
+     ],
+     [
       "t",
       2
-     ],
-     [
-      "f",
-      7
-     ],
-     [
-      "f",
-      10
      ]
     ]
    }
@@ -4481,12 +4622,6 @@
    {
     "para": "p1",
     "name": "item4",
-    "en": "reading",
-    "cn": "读书"
-   },
-   {
-    "para": "p1",
-    "name": "item5",
     "en": "playing chess",
     "cn": "下棋"
    },
@@ -4511,12 +4646,6 @@
    {
     "para": "p1",
     "name": "percent4",
-    "en": "31.8%",
-    "cn": "31.8%"
-   },
-   {
-    "para": "p1",
-    "name": "percent5",
     "en": "18.4%",
     "cn": "18.4%"
    },
@@ -4566,12 +4695,6 @@
    },
    {
     "name": "item4",
-    "en": "reading",
-    "cn": "读书",
-    "para": "第一段"
-   },
-   {
-    "name": "item5",
     "en": "playing chess",
     "cn": "下棋",
     "para": "第一段"
@@ -4596,12 +4719,6 @@
    },
    {
     "name": "percent4",
-    "en": "31.8%",
-    "cn": "31.8%",
-    "para": "第一段"
-   },
-   {
-    "name": "percent5",
     "en": "18.4%",
     "cn": "18.4%",
     "para": "第一段"
@@ -4628,79 +4745,84 @@
  },
  "2026": {
   "title": "图表作文：儿童户外活动的益处",
-  "apply_en": "The bar chart shows how the perceived benefits of outdoor activities for children are distributed among the categories. Satisfying curiosity takes the largest share, at 54.6%. Improving observation skills and enhancing physical fitness come next, at 54.5% and 33.2%. Strengthening parent-child interaction comes last, at 31.2%. The gap between the largest and smallest categories is wide.\n\nThe figures are less about sport itself than about how people now look after themselves. Long working hours have turned health into something to plan for, and outdoor activity is the easiest way to do that. Sitting all day has turned exercise into a practical need rather than a hobby. Health campaigns have reminded the public that prevention is cheaper than treatment.\n\nIf the trend in the chart is to continue, more than one side has to act. Each of them has a different job to do, and none can do it alone. Families matter most: children copy what adults do far more than what they are told. Schools can build outdoor activity into daily routines instead of treating it as an extra.",
-  "apply_cn": "该柱状图显示儿童户外活动的益处在各类别之间的分布情况。满足好奇心占比最高，为54.6%。其次是促进观察力和强身健体，分别为54.5%和33.2%。增强亲子互动排在最后，占31.2%。最大类别与最小类别之间的差距很大。\n\n这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。长时间工作让健康变成需要主动安排的事，而户外活动是最容易做到的一种方式。整天坐着，让运动从爱好变成了实际需要。健康宣传提醒公众：预防比治疗便宜。\n\n图中的趋势若要延续，就需要多方一起行动。各方要做的事不同，单靠任何一方都做不到。家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。学校可以把户外活动纳入日常安排，而不是当成额外任务。",
+  "apply_en": "The bar chart shows how the perceived benefits of outdoor activities for children break down. Satisfying curiosity comes first, at 54.6%. Improving observation skills and enhancing physical fitness follow, at 54.5% and 33.2%. Strengthening parent-child interaction rounds off the list at 31.2%. The gap between the largest and the smallest is wide.\n\nThe numbers in the chart are the result of deeper changes. Sitting all day has turned outdoor activity from a hobby into a practical need. Public spending on infrastructure has made outdoor activity far more widely available. People now judge outdoor activity by what it does for them rather than by what others think. Schools now treat outdoor activity as part of the routine rather than an optional extra.\n\nOn balance, this is a change worth welcoming. Families matter most: children copy what adults do far more than what they are told. Schools can build outdoor activity into daily routines instead of treating it as an extra. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图展示儿童户外活动的益处的构成情况。满足好奇心排在第一位，占54.6%。紧随其后的是促进观察力和强身健体，分别占54.5%和33.2%。最后是增强亲子互动，占31.2%。最大项与最小项之间差距很大。\n\n图里的数字，是更深层变化的结果。整天坐着，让户外活动从爱好变成了实际需要。公共基础设施投入让户外活动的覆盖面大大增加。人们现在看户外活动好不好用，而不是看别人怎么想。学校现在把户外活动当成日常安排，而不是可选项。\n\n总体来看，这是值得欢迎的变化。家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。学校可以把户外活动纳入日常安排，而不是当成额外任务。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
    "数据要点：satisfying curiosity 占 54.6%；improving observation skills 占 54.5%；enhancing physical fitness 占 33.2%；strengthening parent-child interaction 占 31.2%。数值与图逐个核对，别漏最大值。",
-   "第二段套 **体育健康类第二段**：句池挑「久坐」「宣传」；本段骨架 2 句 + 句池 2 句 ≈ 62 词。",
-   "第三段用 **正面版**（继续向好）：主体 = 家庭 · 2013/2026 + 学校 · 2013/2019/2024/2026；**只挑 2 个主体**，不要六个都写。"
+   "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 69 词。",
+   "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
   ],
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} is distributed among the categories.",
-    "cn": "该 {{chart}} 图显示 {{topic}} 在各类别之间的分布情况。",
+    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
+    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} takes the largest share, at {{percent1}}.",
-    "cn": "{{item1}} 占比最高，为 {{percent1}}。",
+    "en": "{{item1}} comes first, at {{percent1}}.",
+    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
     "src": "静态图表第一段 · 模板第2句"
    },
    {
-    "en": "{{item2}} and {{item3}} come next, at {{percent2}} and {{percent3}}.",
-    "cn": "其次是 {{item2}} 和 {{item3}}，分别为 {{percent2}} 和 {{percent3}}。",
+    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
+    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
     "src": "静态图表第一段 · 模板第3句"
    },
    {
-    "en": "{{item4}} comes last, at {{percent4}}.",
-    "cn": "{{item4}} 排在最后，占 {{percent4}}。",
-    "src": "静态图表第一段 · 功能句6"
+    "en": "{{item4}} rounds off the list at {{percent4}}.",
+    "cn": "最后是 {{item4}}，占 {{percent4}}。",
+    "src": "静态图表第一段 · 模板第4句"
    },
    {
-    "en": "The gap between the largest and smallest categories is wide.",
-    "cn": "最大类别与最小类别之间的差距很大。",
-    "src": "静态图表第一段 · 功能句7"
+    "en": "The gap between the largest and the smallest is wide.",
+    "cn": "最大项与最小项之间差距很大。",
+    "src": "静态图表第一段 · 功能句5"
    },
    {
-    "en": "The figures are less about sport itself than about how people now look after themselves.",
-    "cn": "这些数字与其说关于运动本身，不如说反映了人们现在如何照顾自己。",
-    "src": "体育健康类第二段 · 模板第1句"
+    "en": "The numbers in the chart are the result of deeper changes.",
+    "cn": "图里的数字，是更深层变化的结果。",
+    "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Long working hours have turned health into something to plan for, and {{topic}} is the easiest way to do that.",
-    "cn": "长时间工作让健康变成需要主动安排的事，而 {{topic}} 是最容易做到的一种方式。",
-    "src": "体育健康类第二段 · 模板第2句"
+    "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
+    "cn": "整天坐着，让 {{topic}} 从爱好变成了实际需要。",
+    "src": "第二段 · 原因（机制句池） · 功能句8"
    },
    {
-    "en": "Sitting all day has turned exercise into a practical need rather than a hobby.",
-    "cn": "整天坐着，让运动从爱好变成了实际需要。",
-    "src": "体育健康类第二段 · 功能句1"
+    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "Health campaigns have reminded the public that prevention is cheaper than treatment.",
-    "cn": "健康宣传提醒公众：预防比治疗便宜。",
-    "src": "体育健康类第二段 · 功能句6"
+    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+    "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "If the trend in the chart is to continue, more than one side has to act.",
-    "cn": "图中的趋势若要延续，就需要多方一起行动。",
-    "src": "第三段 · 正面版 · 模板第1句"
+    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+    "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "Each of them has a different job to do, and none can do it alone.",
-    "cn": "各方要做的事不同，单靠任何一方都做不到。",
-    "src": "第三段 · 正面版 · 模板第2句"
+    "en": "On balance, this is a change worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的变化。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
     "en": "Families matter most: children copy what adults do far more than what they are told.",
     "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
-    "src": "第三段 · 正面版 · 功能句3"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句4"
    },
    {
     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
-    "src": "第三段 · 正面版 · 功能句2"
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+   },
+   {
+    "en": "That is what will decide whether the change lasts.",
+    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
   "tpl_used": [
@@ -4720,33 +4842,37 @@
       3
      ],
      [
-      "f",
-      6
+      "t",
+      4
      ],
      [
       "f",
-      7
+      5
      ]
     ]
    },
    {
-    "id": "para2_sports",
+    "id": "para2_why",
     "refs": [
      [
       "t",
       1
      ],
      [
-      "t",
-      2
-     ],
-     [
       "f",
-      1
+      8
      ],
      [
       "f",
       6
+     ],
+     [
+      "f",
+      4
+     ],
+     [
+      "f",
+      10
      ]
     ]
    },
@@ -4758,15 +4884,15 @@
       1
      ],
      [
-      "t",
-      2
+      "f",
+      4
      ],
      [
       "f",
       3
      ],
      [
-      "f",
+      "t",
       2
      ]
     ]

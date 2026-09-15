@@ -78,6 +78,7 @@ ALIAS = {'xx': 'chart', '图表': 'chart'}
 
 # 主谓一致：只有「复数槽位值」**正后方紧跟**的谓语才需要改（v2 曾产出 "brands has moved" / "features takes"）
 PL_LEAD = [('has', 'have'), ('is', 'are'), ('serves', 'serve'), ('takes', 'take'), ('comes', 'come'),
+           ('breaks', 'break'), ('rounds', 'round'), ('matters', 'matter'), ('points', 'point'),
            ('teaches', 'teach'), ('brings', 'bring'), ('reaches', 'reach'), ('matters', 'matter'),
            ('goes', 'go'), ('account for', 'account for'), ('accounts for', 'account for')]
 PL_ADV = r'(?:(?:now|also|still|only|usually|often|alone)\s+)?'

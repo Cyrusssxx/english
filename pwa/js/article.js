@@ -40,10 +40,11 @@ function toggleReserve(btn) {
 }
 
 /** 模板套用示范（置于参考范文上方）：示范文 → 建议 → 关键句型 */
-function applyHtml(ap, year) {
+function applyHtml(ap, year, sid) {
     if (!ap || !ap.apply_en) return '';
     const mk = (typeof APPLY_MARKS !== 'undefined' && APPLY_MARKS && year) ? APPLY_MARKS[year] : null;
-    const bodyHtml = renderApplyBody(mk) || `<div class="apply-en">${esc(ap.apply_en)}</div>`;
+    const ann = t => annotatePhrases(t, sid || '');
+    const bodyHtml = renderApplyBody(mk, ann) || `<div class="apply-en">${ann(ap.apply_en)}</div>`;
     const tips = (ap.tips || []).map(t => `<li>${esc(t)}</li>`).join('');
 
     return `<div class="writing-apply">
@@ -492,7 +493,7 @@ function renderArticle() {
                 ${article.directions_cn ? `<div class="writing-directions-cn">${esc(article.directions_cn)}</div>` : ''}
             </div>` : ''}
             ${article.chart_img ? `<div class="writing-chart"><img src="${esc(article.chart_img)}" alt="图表" loading="lazy"></div>` : ''}
-            ${applyHtml(article.apply, article.id.slice(0, 4))}
+            ${applyHtml(article.apply, article.id.slice(0, 4), article.id)}
             <div class="writing-sample">
                 <div class="rs-label">参考范文</div>
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示中文译文</button>

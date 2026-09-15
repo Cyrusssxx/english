@@ -270,13 +270,16 @@ function apEsc(s) {
     return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
 
-/** 示范文正文：模板部分原样，槽位词与自写部分分别高亮 */
-function renderApplyBody(mk) {
+/** 示范文正文：模板部分原样（可选划词标注 annotate），槽位词与自写部分分别高亮 */
+function renderApplyBody(mk, annotate) {
     if (!mk || !mk.paras) return '';
+    // 模板固定部分与「槽位词」都要能点词（槽位词正是学生最想查的题相关词）
+    const put = (x, kind) => {
+        const inner = annotate ? annotate(x) : apEsc(x);
+        return kind === 't' ? inner : `<mark class="${kind === 's' ? 'ap-slot' : 'ap-own'}">${inner}</mark>`;
+    };
     return mk.paras.map(p => '<p class="apply-para">' + p.sents.map(s =>
-        (s.spans || []).map(sp => sp.t === 't'
-            ? apEsc(sp.x)
-            : `<mark class="${sp.t === 's' ? 'ap-slot' : 'ap-own'}">${apEsc(sp.x)}</mark>`).join('')
+        (s.spans || []).map(sp => put(sp.x, sp.t)).join('')
     ).join(' ') + '</p>').join('');
 }
 
@@ -355,9 +358,9 @@ function renderSlotPhrases(list) {
             + '<span class="ap-slot-en">' + apEsc(s.en) + '</span>'
             + '<span class="ap-slot-cn">' + apEsc(s.cn || '') + '</span></div>').join('')
         + '</div>').join('');
-    return '<div class="ap-sub2">🧩 填槽表达'
-        + '<span class="ap-sub2-tip">本篇填进模板槽位的题相关词——换题时替换这些即可</span></div>'
-        + '<div class="ap-slots">' + inner + '</div>';
+    return '<details class="ap-fold"><summary class="ap-sub2">🧩 填槽表达'
+        + '<span class="ap-sub2-tip">本篇填进模板槽位的题相关词——换题时替换这些即可</span></summary>'
+        + '<div class="ap-slots">' + inner + '</div></details>';
 }
 
 /** 模板句型：本篇真正用到的模板句（{{ }} 槽位标蓝） */
@@ -368,9 +371,8 @@ function renderKeyPhrases(list) {
         + (k.cn ? '<div class="ap-tpl-cn">' + apEsc(k.cn).replace(AP_PH_G, '<span class="ap-ph">{{$1}}</span>') + '</div>' : '')
         + (k.src ? '<div class="ap-tpl-src">' + apEsc(k.src) + '</div>' : '')
         + '</div>').join('');
-    return '<div class="ap-sub2">🔑 模板句型'
+    return '<details class="ap-fold"><summary class="ap-sub2">🔑 模板句型'
         + '<span class="ap-sub2-tip">本篇真正用到的模板句（{{ }} 是留给题目的槽位）'
-        + '<a class="ap-xref" href="nearmap.html">近义词·短语</a>'
-        + '<a class="ap-xref" href="nearmap.html">近义词</a></span></div>'
-        + '<div class="ap-tpls">' + rows + '</div>';
+        + '<a class="ap-xref" href="nearmap.html">近义词·短语</a></span></summary>'
+        + '<div class="ap-tpls">' + rows + '</div></details>';
 }

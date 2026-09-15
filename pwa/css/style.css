@@ -3537,7 +3537,8 @@ body.wr-toc-folded .wr-toc-tab { display: inline-flex; }
 .leaf-rest { color: var(--text-light); font-size: .92em; }
 
 /* ===== 套用示范标注：槽位词 / 自写处高亮 + 逐句来源面板 ===== */
-.apply-en .apply-para { margin: 0 0 8px; }
+.apply-en .apply-para { margin: 0 0 8px; text-indent: 2em; }        /* 英文段首空两格 */
+.apply-cn .apply-para { margin: 0 0 6px; text-indent: 2em; }        /* 中文译文同样空两格 */
 .apply-en .apply-para:last-child { margin-bottom: 0; }
 mark.ap-slot {
     background: rgba(29, 111, 208, .14); color: #1a5fb4;
@@ -3722,6 +3723,42 @@ html.dark .rc-note b { color: #e0c968; }
     .rc-line, .rc-agent-s, .rc-card, .rc-agent { break-inside: avoid; }
     a { color: inherit; text-decoration: none; }
 }
+/* ===== 示范文里的可折叠板块（填槽表达 / 模板句型，默认收起） ===== */
+.ap-fold { margin-top: 12px; }
+.ap-fold > summary { cursor: pointer; list-style: none; }
+.ap-fold > summary::-webkit-details-marker { display: none; }
+.ap-fold > summary::before { content: '▸ '; color: var(--text-light); font-size: .8rem; }
+.ap-fold[open] > summary::before { content: '▾ '; }
+.ap-fold > summary:hover { color: var(--primary-dark); }
+.ap-fold .ap-sub2 { margin-top: 0; }
+.ap-fold[open] .ap-slots, .ap-fold[open] .ap-tpls { margin-top: 8px; }
+
+/* ===== 词卡：本句义 / 熟词僻义 / 取消高亮 ===== */
+.wp-sense {
+    margin: -2px 0 8px; padding: 7px 9px; border-radius: 8px;
+    background: var(--primary-soft); border-left: 3px solid var(--primary);
+}
+.wp-sense-tag { font-size: .72rem; font-weight: 700; color: var(--primary-dark); margin-right: 6px; }
+html.dark .wp-sense-tag { color: #5eead4; }
+.wp-sense-cn { font-size: .88rem; font-weight: 700; color: var(--text); }
+.wp-sense-note { font-size: .78rem; color: var(--text-light); line-height: 1.65; margin-top: 4px; }
+.wp-wn { margin: 8px 0 4px; padding: 7px 9px; border-radius: 8px; background: var(--ann-bg); border-left: 3px solid var(--warning); }
+.wp-wn-t { font-size: .76rem; font-weight: 700; color: #8a6d1a; }
+html.dark .wp-wn-t { color: #e0c968; }
+.wp-wn-tier { margin-left: 6px; font-weight: 400; color: var(--text-light); font-size: .72rem; }
+.wp-wn-flag { margin-left: 6px; font-size: .7rem; font-weight: 700; padding: 0 5px; border-radius: 999px; background: var(--card-bg); color: var(--text-light); }
+.wp-wn-flag.u { color: #b45309; background: rgba(245, 158, 11, .18); }
+.wp-wn-row { font-size: .8rem; color: var(--text); line-height: 1.7; margin-top: 3px; }
+.wp-wn-row b { color: var(--text-light); font-weight: 700; margin-right: 5px; }
+.wp-wn-ex { font-family: Georgia, "Times New Roman", serif; font-size: .82rem; color: var(--text); margin-top: 5px; line-height: 1.6; }
+.wp-wn-excn { font-size: .78rem; color: var(--text-light); line-height: 1.6; }
+.wp-wn-src { font-size: .7rem; color: var(--text-light); opacity: .8; margin-top: 3px; }
+.wp-unhl {
+    margin-left: 6px; font: inherit; font-size: .78rem; padding: 4px 10px; border-radius: 7px;
+    border: 1px solid var(--border); background: none; color: var(--danger); cursor: pointer;
+}
+.wp-unhl:hover { border-color: var(--danger); background: rgba(220, 53, 69, .06); }
+
 /* ===== 占位符图例 ===== */
 .wr-legend {
     margin: 0 0 20px;

@@ -1,6 +1,7 @@
 {
  "2010": {
   "title": "手机用户量增长情况对比",
+  "fixed": true,
   "p1": [
    "chart_dynamic",
    [
@@ -14,14 +15,6 @@
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
      3
     ],
     [
@@ -31,23 +24,15 @@
    ]
   ],
   "p2": [
-   "para2_economy",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
      "f",
      1
-    ],
-    [
-     "f",
-     2
     ],
     [
      "f",
@@ -67,7 +52,7 @@
      1
     ],
     [
-     "t",
+     "f",
      2
     ],
     [
@@ -75,72 +60,52 @@
      1
     ],
     [
-     "f",
+     "t",
      2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
     ]
    ]
   ],
   "slots_p1": {
-   "chart": "bar",
-   "topic": "mobile-phone subscriptions in developing and developed countries",
-   "item1": "Subscriptions in developing countries",
+   "item1": "those in developing countries",
    "num1": "0.5 billion",
-   "time1": "2000",
    "num2": "4 billion",
-   "time2": "2008",
    "item2": "those in developed countries",
    "num3": "0.7 billion",
-   "time3": "2000",
    "num4": "1 billion",
-   "time4": "2008"
+   "time1": "2000",
+   "time2": "2008",
+   "chart": "bar",
+   "topic": "mobile-phone subscriptions"
   },
   "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "发展中国家与发达国家的手机订阅量",
-   "item1": "发展中国家的订阅量",
+   "item1": "发展中国家",
    "num1": "5 亿",
-   "time1": "2000 年",
    "num2": "40 亿",
-   "time2": "2008 年",
-   "item2": "发达国家同期的订阅量",
+   "item2": "发达国家",
    "num3": "7 亿",
-   "time3": "2000 年",
    "num4": "10 亿",
-   "time4": "2008 年"
+   "time1": "2000 年",
+   "time2": "2008 年",
+   "chart": "柱状",
+   "topic": "手机用户数"
   },
   "slots_p2": {
-   "topic": "mobile services"
+   "topic": "mobile phone use"
   },
   "slots_p2_cn": {
-   "topic": "手机服务"
+   "topic": "手机的使用"
   },
   "slots_p3": {
-   "topic": "mobile services"
+   "topic": "mobile phone use"
   },
   "slots_p3_cn": {
-   "topic": "手机服务"
+   "topic": "手机的使用"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
+  "pl": []
  },
  "2011": {
   "title": "汽车品牌市场份额变化",
+  "fixed": true,
   "p1": [
    "chart_dynamic",
    [
@@ -149,10 +114,6 @@
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
      "f",
      1
     ],
@@ -162,508 +123,28 @@
     ],
     [
      "f",
-     3
-    ],
-    [
-     "f",
-     4
+     6
     ]
    ]
   ],
   "p2": [
-   "para2_economy",
+   "para2_why",
    [
     [
      "t",
      1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
     ],
     [
      "f",
      4
-    ]
-   ]
-  ],
-  "p3": [
-   "para3_positive",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
     ],
     [
      "f",
-     1
+     6
     ],
     [
      "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "slots_p1": {
-   "chart": "bar",
-   "topic": "the market shares of Chinese, Japanese and American auto brands",
-   "item1": "Chinese brands",
-   "num1": "a modest share",
-   "time1": "the earlier period",
-   "num2": "the leading position",
-   "time2": "the later period",
-   "item2": "American brands",
-   "num3": "a small share",
-   "time3": "the earlier period",
-   "num4": "a slightly larger share",
-   "time4": "the later period",
-   "item3": "Japanese brands",
-   "num5": "their peak level",
-   "time5": "the earlier period",
-   "num6": "a much lower level",
-   "time6": "the later period"
-  },
-  "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "中国、日本与美国汽车品牌的市场份额",
-   "item1": "国产品牌",
-   "num1": "一个不大的份额",
-   "time1": "前一时期",
-   "num2": "领先地位",
-   "time2": "后一时期",
-   "item2": "美系品牌",
-   "num3": "一个较小的份额",
-   "time3": "前一时期",
-   "num4": "略大的份额",
-   "time4": "后一时期",
-   "item3": "日系品牌",
-   "num5": "其最高水平",
-   "time5": "前一时期",
-   "num6": "远低于此的水平",
-   "time6": "后一时期"
-  },
-  "slots_p2": {
-   "topic": "domestic auto brands"
-  },
-  "slots_p2_cn": {
-   "topic": "国产汽车品牌"
-  },
-  "slots_p3": {
-   "topic": "domestic auto brands"
-  },
-  "slots_p3_cn": {
-   "topic": "国产汽车品牌"
-  },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
- },
- "2012": {
-  "title": "某公司员工工作满意度调查",
-  "p1": [
-   "chart_static",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p2": [
-   "para2_social",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p3": [
-   "para3_positive",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "slots_p1": {
-   "chart": "table",
-   "topic": "job satisfaction across the age groups",
-   "item1": "The group over 50",
-   "percent1": "40%",
-   "item2": "those aged 41 to 50",
-   "percent2": "the lowest level",
-   "item3": "employees aged 31 to 40",
-   "percent3": "a modest level",
-   "item4": "employees aged 40 or younger",
-   "percent4": "16.7%",
-   "item5": "the remaining respondents",
-   "percent5": "a still smaller share"
-  },
-  "slots_p1_cn": {
-   "chart": "表格",
-   "topic": "各年龄段的工作满意度",
-   "item1": "50 岁以上群体",
-   "percent1": "40%",
-   "item2": "41 至 50 岁的员工",
-   "percent2": "最低水平",
-   "item3": "31 至 40 岁的员工",
-   "percent3": "中等水平",
-   "item4": "40 岁及以下员工",
-   "percent4": "16.7%",
-   "item5": "其余受访者",
-   "percent5": "更小的比例",
-   "xx": ""
-  },
-  "slots_p2": {
-   "topic": "job satisfaction"
-  },
-  "slots_p2_cn": {
-   "topic": "工作满意度"
-  },
-  "slots_p3": {
-   "topic": "job satisfaction"
-  },
-  "slots_p3_cn": {
-   "topic": "工作满意度"
-  },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
- },
- "2013": {
-  "title": "大学生兼职比例柱状图",
-  "p1": [
-   "chart_dynamic",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p2": [
-   "para2_campus",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p3": [
-   "para3_positive",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "slots_p1": {
-   "chart": "bar",
-   "topic": "the proportion of college students taking part-time jobs",
-   "item1": "The rate",
-   "num1": "67.77%",
-   "time1": "the first year",
-   "num2": "88.24%",
-   "time2": "the final year",
-   "item2": "the proportion in the graduation year",
-   "num3": "83.7%",
-   "time3": "the third year",
-   "num4": "88.24%",
-   "time4": "the final year"
-  },
-  "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "大学生兼职比例",
-   "item1": "这一比例",
-   "num1": "67.77%",
-   "time1": "大一",
-   "num2": "88.24%",
-   "time2": "大四",
-   "item2": "毕业当年的比例",
-   "num3": "83.7%",
-   "time3": "大三",
-   "num4": "88.24%",
-   "time4": "大四"
-  },
-  "slots_p2": {
-   "topic": "part-time jobs"
-  },
-  "slots_p2_cn": {
-   "topic": "兼职"
-  },
-  "slots_p3": {
-   "topic": "part-time jobs"
-  },
-  "slots_p3_cn": {
-   "topic": "兼职"
-  },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
- },
- "2014": {
-  "title": "城市与乡村人口的变化",
-  "p1": [
-   "chart_dynamic",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p2": [
-   "para2_economy",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p3": [
-   "para3_positive",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
+     13
     ],
     [
      "f",
@@ -671,59 +152,384 @@
     ]
    ]
   ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     5
+    ],
+    [
+     "f",
+     8
+    ],
+    [
+     "t",
+     2
+    ]
+   ]
+  ],
   "slots_p1": {
+   "item1": "Chinese brands",
+   "num1": "26%",
+   "num2": "31%",
+   "item2": "Japanese brands",
+   "num3": "35%",
+   "num4": "26%",
+   "time1": "2008",
+   "time2": "2009",
    "chart": "bar",
-   "topic": "the urban and rural population",
-   "item1": "The urban population",
-   "num1": "300 million",
-   "time1": "1990",
-   "num2": "670 million",
-   "time2": "2010",
-   "item2": "the rural population",
-   "num3": "820 million",
-   "time3": "1990",
-   "num4": "680 million",
-   "time4": "2010"
+   "topic": "the market shares of Chinese, Japanese and American car brands"
   },
   "slots_p1_cn": {
+   "item1": "国产品牌",
+   "num1": "26%",
+   "num2": "31%",
+   "item2": "日系品牌",
+   "num3": "35%",
+   "num4": "26%",
+   "time1": "2008 年",
+   "time2": "2009 年",
    "chart": "柱状",
-   "topic": "城镇与农村人口",
-   "item1": "城镇人口",
-   "num1": "3 亿",
-   "time1": "1990 年",
-   "num2": "6.7 亿",
-   "time2": "2010 年",
-   "item2": "农村人口",
-   "num3": "8.2 亿",
-   "time3": "1990 年",
-   "num4": "6.8 亿",
-   "time4": "2010 年"
+   "topic": "国产、日系与美系汽车品牌的市场份额"
   },
   "slots_p2": {
-   "topic": "urbanization"
+   "topic": "car ownership"
   },
   "slots_p2_cn": {
-   "topic": "城镇化"
+   "topic": "汽车保有量"
   },
   "slots_p3": {
-   "topic": "urbanization"
+   "topic": "domestic car brands"
   },
   "slots_p3_cn": {
-   "topic": "城镇化"
+   "topic": "国产汽车品牌"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
+  "pl": [
+   "domestic car brands"
   ]
+ },
+ "2012": {
+  "title": "某公司员工工作满意度调查",
+  "fixed": true,
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "f",
+     5
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_why",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     9
+    ],
+    [
+     "f",
+     14
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_negative",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     7
+    ],
+    [
+     "f",
+     8
+    ],
+    [
+     "t",
+     2
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "item1": "the 41-to-50 age group",
+   "percent1": "64%",
+   "item2": "those aged 40 or younger",
+   "percent2": "33.3%",
+   "item3": "the group over 50",
+   "percent3": "10%",
+   "chart": "table",
+   "topic": "employee dissatisfaction"
+  },
+  "slots_p1_cn": {
+   "item1": "41~50 岁组",
+   "percent1": "64%",
+   "item2": "40 岁及以下组",
+   "percent2": "33.3%",
+   "item3": "50 岁以上组",
+   "percent3": "10%",
+   "chart": "表格",
+   "topic": "员工的不满意比例"
+  },
+  "slots_p2": {
+   "topic": "job satisfaction"
+  },
+  "slots_p2_cn": {
+   "topic": "工作满意度"
+  },
+  "slots_p3": {
+   "topic": "staff satisfaction"
+  },
+  "slots_p3_cn": {
+   "topic": "员工满意度"
+  },
+  "pl": []
+ },
+ "2013": {
+  "title": "大学生兼职比例柱状图",
+  "fixed": true,
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     5
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_why",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     10
+    ],
+    [
+     "f",
+     15
+    ],
+    [
+     "f",
+     4
+    ],
+    [
+     "f",
+     14
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     3
+    ],
+    [
+     "f",
+     4
+    ],
+    [
+     "t",
+     2
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "item1": "the proportion of college students taking part-time jobs",
+   "num1": "67.77%",
+   "num2": "88.24%",
+   "time1": "the first year",
+   "time2": "the final year",
+   "chart": "bar",
+   "topic": "the proportion of college students taking part-time jobs"
+  },
+  "slots_p1_cn": {
+   "item1": "大学生兼职比例",
+   "num1": "67.77%",
+   "num2": "88.24%",
+   "time1": "大一",
+   "time2": "大四",
+   "chart": "柱状",
+   "topic": "大学生兼职比例"
+  },
+  "slots_p2": {
+   "topic": "part-time work"
+  },
+  "slots_p2_cn": {
+   "topic": "兼职"
+  },
+  "slots_p3": {
+   "topic": "part-time work"
+  },
+  "slots_p3_cn": {
+   "topic": "兼职"
+  },
+  "pl": []
+ },
+ "2014": {
+  "title": "城市与乡村人口的变化",
+  "fixed": true,
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     2
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_why",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     7
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     6
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     2
+    ],
+    [
+     "f",
+     8
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "t",
+     2
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "item1": "the urban population",
+   "num1": "300 million",
+   "num2": "670 million",
+   "item2": "the rural population",
+   "num3": "820 million",
+   "num4": "680 million",
+   "time1": "1990",
+   "time2": "2010",
+   "chart": "bar",
+   "topic": "the urban and rural population"
+  },
+  "slots_p1_cn": {
+   "item1": "城镇人口",
+   "num1": "3 亿",
+   "num2": "6.7 亿",
+   "item2": "乡村人口",
+   "num3": "8.2 亿",
+   "num4": "6.8 亿",
+   "time1": "1990 年",
+   "time2": "2010 年",
+   "chart": "柱状",
+   "topic": "城乡人口"
+  },
+  "slots_p2": {
+   "topic": "city living"
+  },
+  "slots_p2_cn": {
+   "topic": "城市生活"
+  },
+  "slots_p3": {
+   "topic": "city living"
+  },
+  "slots_p3_cn": {
+   "topic": "城市生活"
+  },
+  "pl": []
  },
  "2015": {
   "title": "春节假期花销比例饼图",
+  "fixed": true,
   "p1": [
    "chart_static",
    [
@@ -745,40 +551,24 @@
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
      3
-    ],
-    [
-     "f",
-     4
     ]
    ]
   ],
   "p2": [
-   "para2_economy",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
      "f",
      1
     ],
     [
      "f",
-     2
+     4
     ],
     [
      "f",
@@ -786,7 +576,7 @@
     ],
     [
      "f",
-     4
+     11
     ]
    ]
   ],
@@ -798,61 +588,50 @@
      1
     ],
     [
-     "t",
-     2
+     "f",
+     7
     ],
     [
      "f",
      1
     ],
     [
-     "f",
+     "t",
      2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     6
     ]
    ]
   ],
   "slots_p1": {
+   "item1": "gifts for family and friends",
+   "percent1": "40%",
+   "item2": "dinners with relatives",
+   "percent2": "20%",
+   "item3": "travel",
+   "percent3": "20%",
+   "item4": "other spending",
+   "percent4": "20%",
+   "percent total": "80%",
    "chart": "pie",
-   "topic": "Spring Festival spending",
-   "item1": "Travelling, gift giving and dinners with friends or relatives",
-   "percent1": "80% of the total",
-   "item2": "gifts for colleagues",
-   "percent2": "a small share",
-   "item3": "household decorations",
-   "percent3": "a smaller share",
-   "item4": "other items such as fireworks",
-   "percent4": "12%",
-   "item5": "miscellaneous spending",
-   "percent5": "8%"
+   "topic": "Spring Festival spending"
   },
   "slots_p1_cn": {
-   "chart": "饼",
-   "topic": "春节花销",
-   "item1": "旅行、送礼以及与亲友聚餐",
-   "percent1": "总额的 80%",
-   "item2": "给同事的礼物",
-   "percent2": "一个很小的比例",
-   "item3": "家庭装饰",
-   "percent3": "更小的比例",
-   "item4": "烟花等其他项目",
-   "percent4": "12%",
-   "item5": "杂项支出",
-   "percent5": "8%",
-   "xx": ""
+   "item1": "给亲友买礼物",
+   "percent1": "40%",
+   "item2": "与亲友聚餐",
+   "percent2": "20%",
+   "item3": "出行",
+   "percent3": "20%",
+   "item4": "其他花销",
+   "percent4": "20%",
+   "percent total": "80%",
+   "chart": "饼状",
+   "topic": "春节假期花销"
   },
   "slots_p2": {
-   "topic": "festival spending"
+   "topic": "New Year gifts"
   },
   "slots_p2_cn": {
-   "topic": "节日花销"
+   "topic": "新年礼物"
   },
   "slots_p3": {
    "topic": "festival spending"
@@ -860,19 +639,14 @@
   "slots_p3_cn": {
    "topic": "节日花销"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
+  "pl": [
+   "New Year gifts",
+   "gifts for family and friends"
   ]
  },
  "2016": {
   "title": "高校学生旅游目的调查饼图",
+  "fixed": true,
   "p1": [
    "chart_static",
    [
@@ -894,40 +668,24 @@
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
      3
-    ],
-    [
-     "f",
-     4
     ]
    ]
   ],
   "p2": [
-   "para2_social",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
      "f",
      1
     ],
     [
      "f",
-     2
+     9
     ],
     [
      "f",
@@ -935,7 +693,7 @@
     ],
     [
      "f",
-     5
+     6
     ]
    ]
   ],
@@ -947,81 +705,68 @@
      1
     ],
     [
-     "t",
-     2
+     "f",
+     6
+    ],
+    [
+     "f",
+     7
     ],
     [
      "f",
      1
     ],
     [
-     "f",
+     "t",
      2
-    ],
-    [
-     "f",
-     5
-    ],
-    [
-     "f",
-     6
     ]
    ]
   ],
   "slots_p1": {
-   "chart": "pie",
-   "topic": "the purposes of travel among college students",
-   "item1": "Appreciating the beauty of the scenery",
+   "item1": "appreciating the scenery",
    "percent1": "37%",
-   "item2": "Relieving pressure",
+   "item2": "relieving pressure",
    "percent2": "33%",
    "item3": "other aims",
    "percent3": "15%",
-   "item4": "making more friends",
-   "percent4": "9%",
-   "item5": "fostering independence",
-   "percent5": "6%"
+   "item4": "fostering independence",
+   "percent4": "6%",
+   "percent total": "85%",
+   "chart": "pie",
+   "topic": "the purposes of travel"
   },
   "slots_p1_cn": {
-   "chart": "饼",
-   "topic": "大学生的旅游目的",
    "item1": "欣赏风景",
    "percent1": "37%",
    "item2": "缓解压力",
    "percent2": "33%",
    "item3": "其他目的",
    "percent3": "15%",
-   "item4": "广交朋友",
-   "percent4": "9%",
-   "item5": "培养独立能力",
-   "percent5": "6%",
-   "xx": ""
+   "item4": "锻炼独立性",
+   "percent4": "6%",
+   "percent total": "85%",
+   "chart": "饼状",
+   "topic": "旅游目的"
   },
   "slots_p2": {
-   "topic": "travel"
+   "topic": "travelling"
   },
   "slots_p2_cn": {
-   "topic": "旅行"
+   "topic": "旅游"
   },
   "slots_p3": {
-   "topic": "travel"
+   "topic": "travelling"
   },
   "slots_p3_cn": {
-   "topic": "旅行"
+   "topic": "旅游"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
+  "pl": [
+   "the purposes of travel"
   ]
  },
  "2017": {
   "title": "博物馆数量与参观人数折线图",
+  "fixed": true,
   "p1": [
    "chart_dynamic",
    [
@@ -1035,48 +780,28 @@
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
      4
     ]
    ]
   ],
   "p2": [
-   "para2_culture",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
+     "f",
+     6
     ],
     [
      "f",
-     1
+     10
     ],
     [
      "f",
-     2
-    ],
-    [
-     "f",
-     3
+     11
     ],
     [
      "f",
@@ -1092,80 +817,60 @@
      1
     ],
     [
+     "f",
+     2
+    ],
+    [
+     "f",
+     10
+    ],
+    [
      "t",
      2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     9
     ]
    ]
   ],
   "slots_p1": {
-   "chart": "line",
-   "topic": "the number of museums and museum visitors",
-   "item1": "The number of museums",
-   "num1": "4,169",
+   "item1": "visitor numbers",
+   "num1": "640 million",
+   "num2": "780 million",
+   "item2": "the number of museums",
+   "num3": "4,200",
+   "num4": "4,600",
    "time1": "2013",
-   "num2": "4,692",
    "time2": "2015",
-   "item2": "the number of visitors",
-   "num3": "637 million",
-   "time3": "2013",
-   "num4": "954 million",
-   "time4": "2015"
+   "chart": "line",
+   "topic": "the number of museums and museum visitors"
   },
   "slots_p1_cn": {
-   "chart": "折线",
-   "topic": "博物馆数量与参观人数",
-   "item1": "博物馆数量",
-   "num1": "4169",
+   "item1": "参观人数",
+   "num1": "6.4 亿",
+   "num2": "7.8 亿",
+   "item2": "博物馆数量",
+   "num3": "4200 家",
+   "num4": "4600 家",
    "time1": "2013 年",
-   "num2": "4692",
    "time2": "2015 年",
-   "item2": "参观人数",
-   "num3": "6.37 亿",
-   "time3": "2013 年",
-   "num4": "9.54 亿",
-   "time4": "2015 年"
+   "chart": "折线",
+   "topic": "博物馆数量与参观人数"
   },
   "slots_p2": {
-   "topic": "museums"
+   "topic": "museum visiting"
   },
   "slots_p2_cn": {
-   "topic": "博物馆"
+   "topic": "参观博物馆"
   },
   "slots_p3": {
-   "topic": "museums"
+   "topic": "museum visiting"
   },
   "slots_p3_cn": {
-   "topic": "博物馆"
+   "topic": "参观博物馆"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
+  "pl": []
  },
  "2018": {
   "title": "消费者选择餐厅时的关注因素饼图",
+  "fixed": true,
   "p1": [
    "chart_static",
    [
@@ -1187,48 +892,28 @@
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
      3
-    ],
-    [
-     "f",
-     4
     ]
    ]
   ],
   "p2": [
-   "para2_economy",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
      "f",
      1
     ],
     [
      "f",
-     2
+     4
     ],
     [
      "f",
      3
-    ],
-    [
-     "f",
-     4
     ]
    ]
   ],
@@ -1237,321 +922,6 @@
    [
     [
      "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     4
-    ],
-    [
-     "f",
-     8
-    ]
-   ]
-  ],
-  "slots_p1": {
-   "chart": "pie",
-   "topic": "the factors consumers consider when choosing a restaurant",
-   "item1": "Distinguishing features",
-   "percent1": "36.3%",
-   "item2": "service",
-   "percent2": "26.8%",
-   "item3": "the dining environment",
-   "percent3": "23.8%",
-   "item4": "price",
-   "percent4": "8.4%",
-   "item5": "other factors",
-   "percent5": "4.7%"
-  },
-  "slots_p1_cn": {
-   "chart": "饼",
-   "topic": "消费者选择餐厅时的关注因素",
-   "item1": "餐厅特色",
-   "percent1": "36.3%",
-   "item2": "服务",
-   "percent2": "26.8%",
-   "item3": "就餐环境",
-   "percent3": "23.8%",
-   "item4": "价格",
-   "percent4": "8.4%",
-   "item5": "其他因素",
-   "percent5": "4.7%",
-   "xx": ""
-  },
-  "slots_p2": {
-   "topic": "dining out"
-  },
-  "slots_p2_cn": {
-   "topic": "外出就餐"
-  },
-  "slots_p3": {
-   "topic": "dining out"
-  },
-  "slots_p3_cn": {
-   "topic": "外出就餐"
-  },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
- },
- "2019": {
-  "title": "本科毕业生去向统计柱状图",
-  "p1": [
-   "chart_dynamic",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p2": [
-   "para2_campus",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p3": [
-   "para3_positive",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "slots_p1": {
-   "chart": "bar",
-   "topic": "graduates' choices after university",
-   "item1": "the proportion entering employment",
-   "num1": "68.1%",
-   "time1": "2013",
-   "num2": "60.7%",
-   "time2": "2018",
-   "item2": "the proportion pursuing further education",
-   "num3": "26.3%",
-   "time3": "2013",
-   "num4": "34.0%",
-   "time4": "2018",
-   "item3": "the proportion starting a business",
-   "num5": "1.3%",
-   "time5": "2013",
-   "num6": "2.6%",
-   "time6": "2018"
-  },
-  "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "本科毕业生的去向",
-   "item1": "就业比例",
-   "num1": "68.1%",
-   "time1": "2013 年",
-   "num2": "60.7%",
-   "time2": "2018 年",
-   "item2": "升学比例",
-   "num3": "26.3%",
-   "time3": "2013 年",
-   "num4": "34.0%",
-   "time4": "2018 年",
-   "item3": "创业比例",
-   "num5": "1.3%",
-   "time5": "2013 年",
-   "num6": "2.6%",
-   "time6": "2018 年"
-  },
-  "slots_p2": {
-   "topic": "further education"
-  },
-  "slots_p2_cn": {
-   "topic": "继续深造"
-  },
-  "slots_p3": {
-   "topic": "further education"
-  },
-  "slots_p3_cn": {
-   "topic": "继续深造"
-  },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
- },
- "2020": {
-  "title": "学生手机阅读目的调查饼图",
-  "p1": [
-   "chart_static",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p2": [
-   "para2_campus",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p3": [
-   "para3_positive",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
      1
     ],
     [
@@ -1560,18 +930,246 @@
     ],
     [
      "f",
-     8
+     9
     ],
     [
      "f",
-     9
+     7
+    ],
+    [
+     "t",
+     2
     ]
    ]
   ],
   "slots_p1": {
+   "item1": "distinctive features",
+   "percent1": "36.3%",
+   "item2": "service",
+   "percent2": "26.8%",
+   "item3": "the dining environment",
+   "percent3": "23.8%",
+   "item4": "other factors",
+   "percent4": "4.7%",
+   "percent total": "86.9%",
    "chart": "pie",
-   "topic": "the purposes of mobile reading among college students",
-   "item1": "Gaining knowledge",
+   "topic": "the factors consumers weigh when choosing a restaurant"
+  },
+  "slots_p1_cn": {
+   "item1": "餐厅特色",
+   "percent1": "36.3%",
+   "item2": "服务",
+   "percent2": "26.8%",
+   "item3": "就餐环境",
+   "percent3": "23.8%",
+   "item4": "其他因素",
+   "percent4": "4.7%",
+   "percent total": "86.9%",
+   "chart": "饼状",
+   "topic": "消费者选择餐厅时考虑的因素"
+  },
+  "slots_p2": {
+   "topic": "dining out"
+  },
+  "slots_p2_cn": {
+   "topic": "外出就餐"
+  },
+  "slots_p3": {
+   "topic": "dining out"
+  },
+  "slots_p3_cn": {
+   "topic": "外出就餐"
+  },
+  "pl": [
+   "distinctive features",
+   "other factors",
+   "the factors consumers weigh when choosing a restaurant"
+  ]
+ },
+ "2019": {
+  "title": "本科毕业生去向统计柱状图",
+  "fixed": true,
+  "p1": [
+   "chart_dynamic",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "f",
+     2
+    ],
+    [
+     "f",
+     6
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_why",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     15
+    ],
+    [
+     "f",
+     10
+    ],
+    [
+     "f",
+     4
+    ],
+    [
+     "f",
+     14
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     3
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "t",
+     2
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "item1": "the share going on to further study",
+   "num1": "26.3%",
+   "num2": "34.0%",
+   "item2": "the share entering employment",
+   "num3": "68.1%",
+   "num4": "60.7%",
+   "time1": "2013",
+   "time2": "2018",
+   "chart": "bar",
+   "topic": "graduates' destinations"
+  },
+  "slots_p1_cn": {
+   "item1": "升学比例",
+   "num1": "26.3%",
+   "num2": "34.0%",
+   "item2": "就业比例",
+   "num3": "68.1%",
+   "num4": "60.7%",
+   "time1": "2013 年",
+   "time2": "2018 年",
+   "chart": "柱状",
+   "topic": "毕业生去向"
+  },
+  "slots_p2": {
+   "topic": "career planning"
+  },
+  "slots_p2_cn": {
+   "topic": "职业规划"
+  },
+  "slots_p3": {
+   "topic": "career planning"
+  },
+  "slots_p3_cn": {
+   "topic": "职业规划"
+  },
+  "pl": []
+ },
+ "2020": {
+  "title": "学生手机阅读目的调查饼图",
+  "fixed": true,
+  "p1": [
+   "chart_static",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "t",
+     2
+    ],
+    [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     3
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_why",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     3
+    ],
+    [
+     "f",
+     9
+    ],
+    [
+     "f",
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     6
+    ],
+    [
+     "f",
+     9
+    ],
+    [
+     "f",
+     11
+    ],
+    [
+     "t",
+     2
+    ]
+   ]
+  ],
+  "slots_p1": {
+   "item1": "reading for knowledge",
    "percent1": "59.5%",
    "item2": "killing time",
    "percent2": "21.3%",
@@ -1579,12 +1177,11 @@
    "percent3": "17.0%",
    "item4": "other purposes",
    "percent4": "2.2%",
-   "item5": "the remaining aims",
-   "percent5": "a negligible share"
+   "percent total": "97.8%",
+   "chart": "pie",
+   "topic": "the purposes of mobile reading"
   },
   "slots_p1_cn": {
-   "chart": "饼",
-   "topic": "大学生的手机阅读目的",
    "item1": "获取知识",
    "percent1": "59.5%",
    "item2": "消磨时间",
@@ -1593,9 +1190,9 @@
    "percent3": "17.0%",
    "item4": "其他目的",
    "percent4": "2.2%",
-   "item5": "其余目标",
-   "percent5": "微不足道的比例",
-   "xx": ""
+   "percent total": "97.8%",
+   "chart": "饼状",
+   "topic": "手机阅读目的"
   },
   "slots_p2": {
    "topic": "mobile reading"
@@ -1609,19 +1206,14 @@
   "slots_p3_cn": {
    "topic": "手机阅读"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
+  "pl": [
+   "other purposes",
+   "the purposes of mobile reading"
   ]
  },
  "2021": {
   "title": "居民锻炼方式调查柱状图",
+  "fixed": true,
   "p1": [
    "chart_static",
    [
@@ -1643,69 +1235,24 @@
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
+     5
     ]
    ]
   ],
   "p2": [
-   "para2_sports",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
+     "f",
+     8
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p3": [
-   "para3_positive",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
+     9
     ],
     [
      "f",
@@ -1713,64 +1260,79 @@
     ],
     [
      "f",
-     10
+     4
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     7
+    ],
+    [
+     "f",
+     11
+    ],
+    [
+     "f",
+     1
+    ],
+    [
+     "t",
+     2
     ]
    ]
   ],
   "slots_p1": {
-   "chart": "bar",
-   "topic": "the exercise methods chosen by city residents",
-   "item1": "Working out alone",
-   "percent1": "slightly over half of the respondents",
+   "item1": "exercising on one's own",
+   "percent1": "54.3%",
    "item2": "exercising with friends",
    "percent2": "47.7%",
-   "item3": "working out with family members",
+   "item3": "exercising with family",
    "percent3": "23.9%",
-   "item4": "playing team sports",
-   "percent4": "less than 16%",
-   "item5": "other forms of exercise",
-   "percent5": "a still smaller share"
+   "item4": "team sports",
+   "percent4": "16%",
+   "chart": "bar",
+   "topic": "the ways residents take exercise"
   },
   "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "城市居民的锻炼方式",
    "item1": "独自锻炼",
-   "percent1": "略超受访者半数",
-   "item2": "与朋友一起锻炼",
+   "percent1": "54.3%",
+   "item2": "与朋友一起",
    "percent2": "47.7%",
-   "item3": "与家人一起锻炼",
+   "item3": "与家人一起",
    "percent3": "23.9%",
-   "item4": "参加团队运动",
-   "percent4": "不足 16%",
-   "item5": "其他锻炼形式",
-   "percent5": "更小的比例",
-   "xx": ""
+   "item4": "团队项目",
+   "percent4": "16%",
+   "chart": "柱状",
+   "topic": "居民的锻炼方式"
   },
   "slots_p2": {
-   "topic": "physical exercise"
+   "topic": "exercising"
   },
   "slots_p2_cn": {
-   "topic": "体育锻炼"
+   "topic": "锻炼"
   },
   "slots_p3": {
-   "topic": "physical exercise"
+   "topic": "exercise"
   },
   "slots_p3_cn": {
-   "topic": "体育锻炼"
+   "topic": "运动"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
+  "pl": [
+   "team sports",
+   "the ways residents take exercise"
   ]
  },
  "2022": {
   "title": "全国与农村快递业务量变动",
+  "fixed": true,
   "p1": [
    "chart_dynamic",
    [
@@ -1784,38 +1346,22 @@
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
      4
+    ],
+    [
+     "f",
+     5
     ]
    ]
   ],
   "p2": [
-   "para2_economy",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
      "f",
      2
     ],
@@ -1825,7 +1371,7 @@
     ],
     [
      "f",
-     4
+     7
     ]
    ]
   ],
@@ -1837,148 +1383,66 @@
      1
     ],
     [
+     "f",
+     2
+    ],
+    [
+     "f",
+     5
+    ],
+    [
      "t",
      2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     8
     ]
    ]
   ],
   "slots_p1": {
-   "chart": "bar",
-   "topic": "express delivery volumes nationwide and in rural areas",
-   "item1": "The national volume",
-   "num1": "51 billion pieces",
+   "item1": "the rural figure",
+   "num1": "12 billion pieces",
+   "num2": "30 billion pieces",
+   "item2": "the national total",
+   "num3": "51 billion pieces",
+   "num4": "83 billion pieces",
    "time1": "2018",
-   "num2": "83 billion pieces",
    "time2": "2020",
-   "item2": "the rural volume",
-   "num3": "12 billion pieces",
-   "time3": "2018",
-   "num4": "30 billion pieces",
-   "time4": "2020"
+   "chart": "bar",
+   "topic": "express delivery volume"
   },
   "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "全国与农村的快递业务量",
-   "item1": "全国业务量",
-   "num1": "510 亿件",
+   "item1": "农村快递量",
+   "num1": "120 亿件",
+   "num2": "300 亿件",
+   "item2": "全国总量",
+   "num3": "510 亿件",
+   "num4": "830 亿件",
    "time1": "2018 年",
-   "num2": "830 亿件",
    "time2": "2020 年",
-   "item2": "农村业务量",
-   "num3": "120 亿件",
-   "time3": "2018 年",
-   "num4": "300 亿件",
-   "time4": "2020 年"
+   "chart": "柱状",
+   "topic": "快递业务量"
   },
   "slots_p2": {
-   "topic": "express delivery"
+   "topic": "online shopping"
   },
   "slots_p2_cn": {
-   "topic": "快递服务"
+   "topic": "网购"
   },
   "slots_p3": {
-   "topic": "express delivery"
+   "topic": "online shopping"
   },
   "slots_p3_cn": {
-   "topic": "快递服务"
+   "topic": "网购"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
+  "pl": []
  },
  "2023": {
   "title": "居民健康素养水平变化趋势",
+  "fixed": true,
   "p1": [
    "chart_dynamic",
    [
     [
      "t",
      1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p2": [
-   "para2_sports",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
-    ]
-   ]
-  ],
-  "p3": [
-   "para3_positive",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
     ],
     [
      "f",
@@ -1991,133 +1455,31 @@
     [
      "f",
      7
-    ],
-    [
-     "f",
-     9
-    ]
-   ]
-  ],
-  "slots_p1": {
-   "chart": "line",
-   "topic": "the health literacy rate of Chinese residents",
-   "item1": "The health literacy rate",
-   "num1": "8.80%",
-   "time1": "2012",
-   "num2": "25.40%",
-   "time2": "2021",
-   "item2": "the rate in the same period",
-   "num3": "8.80%",
-   "time3": "2012",
-   "num4": "25.40%",
-   "time4": "2021"
-  },
-  "slots_p1_cn": {
-   "chart": "折线",
-   "topic": "中国居民的健康素养水平",
-   "item1": "健康素养水平",
-   "num1": "8.80%",
-   "time1": "2012 年",
-   "num2": "25.40%",
-   "time2": "2021 年",
-   "item2": "同期的这一比例",
-   "num3": "8.80%",
-   "time3": "2012 年",
-   "num4": "25.40%",
-   "time4": "2021 年"
-  },
-  "slots_p2": {
-   "topic": "health literacy"
-  },
-  "slots_p2_cn": {
-   "topic": "健康素养"
-  },
-  "slots_p3": {
-   "topic": "health literacy"
-  },
-  "slots_p3_cn": {
-   "topic": "健康素养"
-  },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
- },
- "2024": {
-  "title": "劳动实践课学生主要收获调查",
-  "p1": [
-   "chart_static",
-   [
-    [
-     "t",
-     1
-    ],
-    [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
     ]
    ]
   ],
   "p2": [
-   "para2_campus",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
+     6
     ],
     [
      "f",
      4
+    ],
+    [
+     "f",
+     8
+    ],
+    [
+     "f",
+     10
     ]
    ]
   ],
@@ -2129,81 +1491,58 @@
      1
     ],
     [
+     "f",
+     6
+    ],
+    [
+     "f",
+     8
+    ],
+    [
+     "f",
+     7
+    ],
+    [
      "t",
      2
-    ],
-    [
-     "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
     ]
    ]
   ],
   "slots_p1": {
-   "chart": "bar",
-   "topic": "the benefits students gained from labor practice courses",
-   "item1": "Gaining relevant knowledge",
-   "percent1": "91.3%",
-   "item2": "improving practical ability",
-   "percent2": "84.8%",
-   "item3": "obtaining cheerful moods",
-   "percent3": "54.4%",
-   "item4": "enhancing cooperative ability",
-   "percent4": "32.6%",
-   "item5": "other gains",
-   "percent5": "a still smaller share"
+   "item1": "the health literacy rate of Chinese residents",
+   "num1": "8.80%",
+   "num2": "25.40%",
+   "time1": "2012",
+   "time2": "2021",
+   "chart": "line",
+   "topic": "the health literacy rate of Chinese residents"
   },
   "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "学生从劳动实践课中得到的收获",
-   "item1": "获得相关知识",
-   "percent1": "91.3%",
-   "item2": "提升实践能力",
-   "percent2": "84.8%",
-   "item3": "获得愉悦心情",
-   "percent3": "54.4%",
-   "item4": "增强合作能力",
-   "percent4": "32.6%",
-   "item5": "其他收获",
-   "percent5": "更小的比例",
-   "xx": ""
+   "item1": "居民健康素养水平",
+   "num1": "8.80%",
+   "num2": "25.40%",
+   "time1": "2012 年",
+   "time2": "2021 年",
+   "chart": "折线",
+   "topic": "居民健康素养水平"
   },
   "slots_p2": {
-   "topic": "labor practice courses"
+   "topic": "health literacy"
   },
   "slots_p2_cn": {
-   "topic": "劳动实践课"
+   "topic": "健康素养"
   },
   "slots_p3": {
-   "topic": "labor practice courses"
+   "topic": "health literacy"
   },
   "slots_p3_cn": {
-   "topic": "劳动实践课"
+   "topic": "健康素养"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
-  ]
+  "pl": []
  },
- "2025": {
-  "title": "社区老年人主要日常休闲活动",
+ "2024": {
+  "title": "劳动实践课学生主要收获调查",
+  "fixed": true,
   "p1": [
    "chart_static",
    [
@@ -2225,11 +1564,41 @@
     ],
     [
      "f",
+     5
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_why",
+   [
+    [
+     "t",
      1
     ],
     [
      "f",
-     2
+     10
+    ],
+    [
+     "f",
+     15
+    ],
+    [
+     "f",
+     4
+    ],
+    [
+     "f",
+     14
+    ]
+   ]
+  ],
+  "p3": [
+   "para3_positive",
+   [
+    [
+     "t",
+     1
     ],
     [
      "f",
@@ -2237,12 +1606,60 @@
     ],
     [
      "f",
-     4
+     1
+    ],
+    [
+     "t",
+     2
     ]
    ]
   ],
-  "p2": [
-   "para2_social",
+  "slots_p1": {
+   "item1": "gaining relevant knowledge",
+   "percent1": "91.3%",
+   "item2": "improving practical ability",
+   "percent2": "84.8%",
+   "item3": "obtaining cheerful moods",
+   "percent3": "54.4%",
+   "item4": "enhancing cooperative ability",
+   "percent4": "32.6%",
+   "chart": "bar",
+   "topic": "labour practice course gains"
+  },
+  "slots_p1_cn": {
+   "item1": "获得相关知识",
+   "percent1": "91.3%",
+   "item2": "提高实践能力",
+   "percent2": "84.8%",
+   "item3": "获得愉悦心情",
+   "percent3": "54.4%",
+   "item4": "增强合作能力",
+   "percent4": "32.6%",
+   "chart": "柱状",
+   "topic": "劳动实践课的收获"
+  },
+  "slots_p2": {
+   "topic": "labour practice courses"
+  },
+  "slots_p2_cn": {
+   "topic": "劳动实践课"
+  },
+  "slots_p3": {
+   "topic": "practical training"
+  },
+  "slots_p3_cn": {
+   "topic": "实践训练"
+  },
+  "pl": [
+   "labour practice course gains",
+   "labour practice courses"
+  ]
+ },
+ "2025": {
+  "title": "社区老年人主要日常休闲活动",
+  "fixed": true,
+  "p1": [
+   "chart_static",
    [
     [
      "t",
@@ -2253,16 +1670,37 @@
      2
     ],
     [
+     "t",
+     3
+    ],
+    [
+     "t",
+     4
+    ],
+    [
+     "f",
+     5
+    ]
+   ]
+  ],
+  "p2": [
+   "para2_why",
+   [
+    [
+     "t",
+     1
+    ],
+    [
+     "f",
+     12
+    ],
+    [
      "f",
      1
     ],
     [
      "f",
-     2
-    ],
-    [
-     "f",
-     3
+     4
     ],
     [
      "f",
@@ -2278,81 +1716,66 @@
      1
     ],
     [
-     "t",
-     2
+     "f",
+     8
+    ],
+    [
+     "f",
+     11
     ],
     [
      "f",
      1
     ],
     [
-     "f",
+     "t",
      2
-    ],
-    [
-     "f",
-     7
-    ],
-    [
-     "f",
-     10
     ]
    ]
   ],
   "slots_p1": {
-   "chart": "bar",
-   "topic": "the leisure activities of the elderly",
-   "item1": "Watching television",
+   "item1": "watching television",
    "percent1": "90.8%",
    "item2": "taking walks",
    "percent2": "68.3%",
    "item3": "planting flowers",
    "percent3": "34.7%",
-   "item4": "reading",
-   "percent4": "31.8%",
-   "item5": "playing chess",
-   "percent5": "18.4%"
+   "item4": "playing chess",
+   "percent4": "18.4%",
+   "chart": "bar",
+   "topic": "the leisure activities of the elderly"
   },
   "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "老年人的日常休闲活动",
    "item1": "看电视",
    "percent1": "90.8%",
    "item2": "散步",
    "percent2": "68.3%",
-   "item3": "养花",
+   "item3": "种花",
    "percent3": "34.7%",
-   "item4": "阅读",
-   "percent4": "31.8%",
-   "item5": "下棋",
-   "percent5": "18.4%",
-   "xx": ""
+   "item4": "下棋",
+   "percent4": "18.4%",
+   "chart": "柱状",
+   "topic": "老年人的休闲活动"
   },
   "slots_p2": {
-   "topic": "the leisure activities of the elderly"
+   "topic": "retirement life"
   },
   "slots_p2_cn": {
-   "topic": "老年人的休闲活动"
+   "topic": "退休生活"
   },
   "slots_p3": {
-   "topic": "the leisure activities of the elderly"
+   "topic": "leisure activity"
   },
   "slots_p3_cn": {
-   "topic": "老年人的休闲活动"
+   "topic": "休闲活动"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
+  "pl": [
+   "the leisure activities of the elderly"
   ]
  },
  "2026": {
   "title": "儿童户外活动的益处",
+  "fixed": true,
   "p1": [
    "chart_static",
    [
@@ -2374,52 +1797,32 @@
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
-    ],
-    [
-     "f",
-     4
+     5
     ]
    ]
   ],
   "p2": [
-   "para2_campus",
+   "para2_why",
    [
     [
      "t",
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
+     "f",
+     8
     ],
     [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
-    ],
-    [
-     "f",
-     3
+     6
     ],
     [
      "f",
      4
+    ],
+    [
+     "f",
+     10
     ]
    ]
   ],
@@ -2431,77 +1834,57 @@
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
      "f",
-     1
-    ],
-    [
-     "f",
-     2
+     4
     ],
     [
      "f",
      3
     ],
     [
-     "f",
-     4
+     "t",
+     2
     ]
    ]
   ],
   "slots_p1": {
-   "chart": "bar",
-   "topic": "the perceived benefits of children's outdoor activities",
-   "item1": "Satisfying curiosity",
+   "item1": "satisfying curiosity",
    "percent1": "54.6%",
-   "item2": "enhancing observation skills",
+   "item2": "improving observation skills",
    "percent2": "54.5%",
-   "item3": "improving physical fitness",
-   "percent3": "37.2%",
+   "item3": "enhancing physical fitness",
+   "percent3": "33.2%",
    "item4": "strengthening parent-child interaction",
-   "percent4": "33.2%",
-   "item5": "other benefits",
-   "percent5": "a still smaller share"
+   "percent4": "31.2%",
+   "chart": "bar",
+   "topic": "the perceived benefits of outdoor activities for children"
   },
   "slots_p1_cn": {
-   "chart": "柱状",
-   "topic": "人们看重的儿童户外活动益处",
    "item1": "满足好奇心",
    "percent1": "54.6%",
    "item2": "促进观察力",
    "percent2": "54.5%",
    "item3": "强身健体",
-   "percent3": "37.2%",
+   "percent3": "33.2%",
    "item4": "增强亲子互动",
-   "percent4": "33.2%",
-   "item5": "其他益处",
-   "percent5": "更小的比例",
-   "xx": ""
+   "percent4": "31.2%",
+   "chart": "柱状",
+   "topic": "儿童户外活动的益处"
   },
   "slots_p2": {
-   "topic": "outdoor activities"
+   "topic": "outdoor activity"
   },
   "slots_p2_cn": {
    "topic": "户外活动"
   },
   "slots_p3": {
-   "topic": "outdoor activities"
+   "topic": "outdoor activity"
   },
   "slots_p3_cn": {
    "topic": "户外活动"
   },
-  "p1_must": [
-   [
-    "t",
-    1
-   ],
-   [
-    "t",
-    2
-   ]
+  "pl": [
+   "the perceived benefits of outdoor activities for children"
   ]
  }
 }
