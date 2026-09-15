@@ -197,6 +197,16 @@ function wrWordKeys(key, base) {
 let WR_SENSES = null;    // { word: [本句义, 说明, U/C] }
 let WR_WN = null;        // { word: wordnotes 行 }
 
+/* 词典类重资源就绪（dict/phrases/senses）。加载错峰：页面主体先渲染、图片先下载，
+   空闲后再拉；点击查词时若未就绪会自动等待（loadDict/loadPhrases 有缓存，就绪后瞬时）。 */
+let _wrHeavyP = null;
+function wrHeavyReady() {
+    if (!_wrHeavyP) {
+        _wrHeavyP = Promise.all([loadDict(), loadPhrases(), wrLoadSenses()]).catch(() => {});
+    }
+    return _wrHeavyP;
+}
+
 async function wrLoadSenses() {
     const grab = u => fetch(u).then(r => (r.ok ? r.json() : null)).catch(() => null);
     try {
@@ -214,8 +224,10 @@ function wrUnhlFromPop() {
     if (mk) wrHlRemoveMark(mk);
 }
 
-/** 点击词/词组：本句义 → 词典义 → 熟词僻义；均可加入生词本 */
-function wrWordPop(el) {
+/** 点击词/词组：本句义 → 词典义 → 熟词僻义；均可加入生词本
+ * 词典错峰加载后，这里先等就绪再查（就绪后 loadDict/loadPhrases 缓存命中，瞬时返回）。 */
+async function wrWordPop(el) {
+    try { await wrHeavyReady(); } catch (e) { /* 词典不可用则显示降级文案 */ }
     const key = el.getAttribute('data-w') || '';
     const isPhrase = el.getAttribute('data-ph') === '1';
     const base = (typeof normWord === 'function') ? normWord(key) : String(key).toLowerCase();
@@ -290,12 +302,12 @@ async function wrAddVocab(btn) {
 
 /** 全局委托：点词弹卡；点空白/其他区域关卡（卡内点击除外） */
 function wrWordBind() {
-    document.addEventListener('click', e => {
+    document.addEventListener('click', async e => {
         const w = e.target.closest('.word');
         if (w && !e.target.closest('.wr-pop-c')) {   // 高亮里的词也要能查（取消高亮走弹卡内按钮 / 划选）
             e.stopPropagation();
             const line = w.closest('.wr-line, .wr-sent');
-            wrWordPop(w);
+            await wrWordPop(w);
             if (wrPopEl && line) wrPopEl.setAttribute('data-ex', line.textContent.replace(/\s+/g, ' ').trim());
             return;
         }
@@ -1024,9 +1036,8 @@ async function initWriting() {
             `<p class="wr-loading">加载失败：${wrEsc(e.message)}</p>`;
         return;
     }
-    await Promise.all([loadDict(), loadPhrases(), wrLoadSenses()]);   // 词典 + 词组表 + 本句语境义/熟词僻义
-    wrMkLoad();                       // 划词高亮 + 行批注数据
-    wrInitVocab();                                     // 生词本集合（弹卡按钮状态）
+    wrMkLoad();                       // 划词高亮 + 行批注数据（localStorage，不依赖词典）
+    wrInitVocab();                                     // 生词本集合（IndexedDB，不依赖词典）
     // 真题套用示范（按年份汇总，可空）
     let APPLY = {};
     try {
@@ -1092,6 +1103,18 @@ async function initWriting() {
     // 模板分区（按 group 分组）
     wrRenderCards();
     wrTocBuild();
+
+    // 词典类重资源错峰：主体渲染完、真题图表图片先下，再拉 dict/phrases/senses。
+    // requestIdleCallback 在部分环境不可靠（jsdom 存在但不触发/后台页被节流）→ setTimeout 兜底必达；
+    // 词典就绪后重渲染卡片一次，把纯文本句子重新标注成可点词（dict 未加载时 wrAnnotatePlain 只出纯文本）。
+    let _heavyFired = false;
+    const fireHeavy = () => {
+        if (_heavyFired) return;
+        _heavyFired = true;
+        wrHeavyReady().then(() => { if (typeof wrRenderCards === 'function') wrRenderCards(); });
+    };
+    if ('requestIdleCallback' in window) window.requestIdleCallback(fireHeavy, { timeout: 4000 });
+    setTimeout(fireHeavy, 1500);   // 兜底：让 2MB 真题图先下 1.5s，之后必拉词典
 }
 
 if (document.readyState === 'loading') {
