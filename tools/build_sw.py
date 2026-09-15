@@ -44,6 +44,10 @@ def collect_precache():
     for fp in sorted(glob.glob(os.path.join(PWA, "data", "**", "*.json"), recursive=True)):
         if os.path.isfile(fp):
             files.append(rel(fp))
+    # data 图片（如 data/charts/*.png）
+    for fp in sorted(glob.glob(os.path.join(PWA, "data", "**", "*.png"), recursive=True)):
+        if os.path.isfile(fp):
+            files.append(rel(fp))
     # img
     for fp in sorted(glob.glob(os.path.join(PWA, "img", "*"))):
         if os.path.isfile(fp):

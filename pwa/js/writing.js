@@ -912,6 +912,7 @@ function wrTocItems() {
     const items = [];
     if (document.getElementById('wrFlowTitle')) items.push({ lv: 1, id: 'wrFlowTitle', text: '答题动线' });
     if (document.getElementById('wrGuideBlock')) items.push({ lv: 1, id: 'wrGuideBlock', text: '图表适配表' });
+    if (document.getElementById('wrChartsTitle')) items.push({ lv: 1, id: 'wrChartsTitle', text: '真题图表' });
     if (document.getElementById('wrDecisionsTitle')) items.push({ lv: 2, id: 'wrDecisionsTitle', text: '选句决策' });
     if (document.getElementById('wrDataTitle')) items.push({ lv: 1, id: 'wrDataTitle', text: '数据描述语言工具' });
     document.querySelectorAll('#wrContent h2.wr-h2').forEach(h => {
