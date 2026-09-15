@@ -4342,3 +4342,31 @@ html.dark .wr-mist-k { color: #fbbf24; }
 .wr-alt b { color: var(--primary-dark); font-weight: 700; }
 html.dark .wr-alt b { color: #5eead4; }
 .wr-alt-sep { opacity: .45; margin: 0 2px; }
+
+/* ===== 骨架「例」行（真题数据示例） + P2 拼装框架 ===== */
+.wr-demo, .rc-demo {
+    margin-top: 8px; padding: 8px 12px;
+    background: var(--primary-soft); border-left: 3px solid var(--primary);
+    border-radius: 6px; font-size: .92rem; line-height: 1.7; color: var(--text);
+}
+.wr-demo b, .rc-demo b { color: var(--primary-dark); margin-right: 8px; font-size: .8rem; }
+html.dark .wr-demo, html.dark .rc-demo { background: rgba(13, 148, 136, .12); }
+.wr-frame, .rc-frame {
+    margin-top: 10px; padding: 8px 14px;
+    border: 1px dashed var(--border); border-radius: 8px;
+}
+.rc-frame { margin: 8px 0 4px; }
+.wr-frame-title, .rc-frame-title { font-weight: 700; font-size: .9rem; color: var(--primary-dark); margin-bottom: 4px; }
+html.dark .wr-frame-title, html.dark .rc-frame-title { color: #5eead4; }
+.wr-frame-step { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; }
+.wr-frame-step + .wr-frame-step { border-top: 1px dashed var(--border); }
+.wr-frame-no {
+    flex: 0 0 auto; width: 22px; height: 22px; margin-top: 2px;
+    border-radius: 50%; background: var(--primary); color: #fff;
+    font-size: .78rem; display: flex; align-items: center; justify-content: center;
+}
+.wr-frame-txt { min-width: 0; }
+.wr-frame-en { display: block; font-weight: 700; color: var(--text); }
+.wr-frame-cn { display: block; font-size: .85rem; color: var(--text-light); margin-top: 2px; }
+summary.wr-legend-head { cursor: pointer; list-style: revert; }
+summary.wr-legend-head::-webkit-details-marker { display: revert; }

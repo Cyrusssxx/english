@@ -382,11 +382,10 @@
     ]
    ],
    "alts": {
-    "clearly illustrates": "shows / presents",
     "takes the lead": "ranks first / comes top",
-    "accounting for": "making up",
     "comes last": "ranks last / trails behind"
-   }
+   },
+   "demo": "The pie chart above clearly illustrates how the purposes of travel are distributed. Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims at 33% and 15% respectively, while fostering independence comes last at 6%."
   },
   {
    "id": "chart_dynamic",
@@ -588,9 +587,9 @@
       ]
      ],
      "alts": {
-      "illustrates": "shows / presents",
-      "rose steadily": "kept climbing / went up steadily"
-     }
+      "rose steadily": "climbed steadily / kept rising"
+     },
+     "demo": "The bar chart above clearly illustrates the changes in the proportion of college students taking part-time jobs from freshman year to senior year. During this period, it rose steadily from 67.77% to 88.24%, without any noticeable fall."
     },
     {
      "label": "② 两条都在涨",
@@ -674,7 +673,8 @@
       "By contrast": "In contrast",
       "saw a modest increase": "saw only a slight rise",
       "climbing from": "rising from"
-     }
+     },
+     "demo": "The bar chart above clearly illustrates the changes in mobile-phone subscriptions between developing and developed countries from 2000 to 2008. During this period, subscriptions in developing countries rose sharply from 0.5 billion to 4 billion. By contrast, the figure for developed countries saw a modest increase, climbing from 0.7 billion to 1 billion over the same period."
     },
     {
      "label": "③ 一升一降",
@@ -762,7 +762,8 @@
       "rose sharply": "rose dramatically",
       "saw a steady decline": "declined steadily",
       "By contrast": "In contrast"
-     }
+     },
+     "demo": "The bar chart above clearly illustrates the sharp contrast in market share between Chinese and Japanese car brands from 2008 to 2009. During this period, Chinese brands rose sharply from 26% to 31%. By contrast, the figure for Japanese brands saw a steady decline, falling from 35% to 26%."
     }
    ]
   },
@@ -809,6 +810,24 @@
     {
      "banned": "So / As a result（焊因果）",
      "better": "which 从句：..., which has lowered the threshold for ..."
+    }
+   ],
+   "framework": [
+    {
+     "en": "This phenomenon can be attributed to two major factors.",
+     "cn": "引入句：一句话点明「原因有两条」，全段总起。"
+    },
+    {
+     "en": "Primary among these is + 机制句 ①",
+     "cn": "第 1 条：高级衔接词开头，接句池里最有力的原因（收入 / 成本 / 观念…）。"
+    },
+    {
+     "en": "Equally important, + 机制句 ②",
+     "cn": "第 2 条：换个衔接词、换个角度；句尾可用 which 从句焊因果（..., which has lowered the threshold for ...）。"
+    },
+    {
+     "en": "（可选）A further driver is + 机制句 ③",
+     "cn": "想写三条就再加一句；此时引入句的 two major factors 要换成 several major factors。"
     }
    ],
    "priority": true,

@@ -309,6 +309,8 @@ const WR_ANNO_KEY = 'wr_anno_v1';
 const WR_HL_COLORS = ['yellow', 'green', 'blue', 'pink'];
 const WR_HL_CN = { yellow: '黄色', green: '绿色', blue: '蓝色', pink: '粉色' };
 const WR_MK_SEL = '.wr-line, .wr-line-cn, .wr-sent-txt, .wr-sent-cn, .wr-note-inline, .wr-note, .wr-tips li, .apply-para, .ap-tpl-en, .ap-tpl-cn';
+/* 追加可高亮块：选句决策 / 数据描述语言 / 流程 / 错误清单——追加在注册表【尾部】，不插在卡片前，避免老高亮（按块序号存）错位 */
+const WR_MK_EXTRA_SEL = '.wr-decision-v, .wr-dl-name, .wr-dl-words, .wr-dl-how, .wr-mist-v, .wr-flow-body';
 let wrMarks = [];        // 高亮 [{ c: 正文块序号, s: 起, e: 止, k: 颜色名 }]
 let wrAnnos = {};        // 行批注 { 正文块序号: 文本 }
 let wrHlBar = null;      // 划词浮条
@@ -348,6 +350,7 @@ function wrMkBlocks() {
             walk(el);
         }
     })(document.body);
+    document.querySelectorAll(WR_MK_EXTRA_SEL).forEach(el => { if (!out.includes(el)) out.push(el); });
     for (let i = 0; i < out.length; i++) out[i].setAttribute('data-mk', String(i));
     return out;
 }
@@ -774,11 +777,13 @@ function wrSectionCard(sec) {
                 <div class="wr-en">${b2.enHtml}</div>
                 <div class="wr-cn">${b2.cnHtml}</div>
                 ${v.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(v.alts)}</div>` : ''}
+                ${v.demo ? `<div class="wr-demo"><b>例</b>${wrAnnotate(v.demo)}</div>` : ''}
             </div>`;
         }).join('')
         : `<div class="wr-en">${body.enHtml}</div>
             <div class="wr-cn">${body.cnHtml}</div>` + (sec.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(sec.alts)}</div>` : '')
-            + (sec.linkers ? `<div class="wr-alts">✎ 高级衔接词：${wrLinkers(sec.linkers)}</div>` : '');
+            + (sec.linkers ? `<div class="wr-alts">✎ 高级衔接词：${wrLinkers(sec.linkers)}</div>` : '')
+            + (sec.demo ? `<div class="wr-demo"><b>例</b>${wrAnnotate(sec.demo)}</div>` : '');
     return `
     <section class="wr-card" id="${sec.id}">
         <div class="wr-card-head">
@@ -800,6 +805,8 @@ function wrSectionCard(sec) {
             </div>
             ${tplBody}
         </div>
+        ${sec.framework ? `<div class="wr-frame"><div class="wr-frame-title">🧩 第二段框架（4 步拼装）</div>${sec.framework.map((f, i) => `
+            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${wrEsc(f.en)}</span><span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>` : ''}
         ${neg ? `
         <div class="wr-tpl wr-tpl-neg">
             <div class="wr-tpl-bar">
@@ -853,16 +860,6 @@ function wrRich(s) {
 
 /* ==================== 🎓 评分老师视角 / ✍️ 答题动线 / 📐 数据语言 / ✅ 自查表 ==================== */
 
-function wrRenderTeacher() {
-    const box = document.getElementById('wrTeacher');
-    if (!box) return;
-    box.innerHTML = (WR.teacher || []).map((x, i) => `
-        <div class="wr-decision">
-            <div class="wr-decision-k"><span class="wr-dno">${i + 1}</span>${wrEsc(x[0])}</div>
-            <div class="wr-decision-v">${wrRich(x[1])}</div>
-        </div>`).join('');
-}
-
 function wrRenderFlow() {
     const box = document.getElementById('wrFlow');
     if (!box) return;
@@ -907,7 +904,6 @@ function wrNavH() {
 /** 收集目录条目：适配表 → 选句决策 → 各分区（一级）+ 各模板卡（二级） */
 function wrTocItems() {
     const items = [];
-    if (document.getElementById('wrTeacherTitle')) items.push({ lv: 1, id: 'wrTeacherTitle', text: '评分老师怎么看' });
     if (document.getElementById('wrFlowTitle')) items.push({ lv: 1, id: 'wrFlowTitle', text: '答题动线' });
     if (document.getElementById('wrGuideBlock')) items.push({ lv: 1, id: 'wrGuideBlock', text: '图表适配表' });
     if (document.getElementById('wrDecisionsTitle')) items.push({ lv: 2, id: 'wrDecisionsTitle', text: '选句决策' });
@@ -1040,7 +1036,7 @@ async function initWriting() {
     // 占位符图例（{{ }} 里那些英文 token 分别代表什么）
     const ph = it.placeholders || [];
     document.getElementById('wrLegend').innerHTML = ph.length ? `
-        <div class="wr-legend-head">占位符图例<span class="wr-legend-tip">模板里 <b>{{ }}</b> 包住的英文，按你的题目替换；词句本身不要动</span></div>
+        <summary class="wr-legend-head">占位符图例<span class="wr-legend-tip">模板里 <b>{{ }}</b> 包住的英文，按你的题目替换；词句本身不要动（点开查看）</span></summary>
         <div class="wr-legend-grid">${ph.map(x => `
             <div class="wr-legend-row">
                 <code class="wr-legend-tok">{{${wrEsc(x[0])}}}</code>
@@ -1082,7 +1078,6 @@ async function initWriting() {
         </div>`).join('');
 
     // 评分标准 / 答题动线 / 数据语言 / 自查表
-    wrRenderTeacher();
     wrRenderFlow();
     wrRenderDataLang();
     wrRenderChecklist();

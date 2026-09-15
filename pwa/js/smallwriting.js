@@ -231,7 +231,6 @@ async function swInit() {
     swRenderLegend();
     swRenderSteps();
     swRenderStats();
-    swRenderTeacher();
     swRenderGuide();
     swRenderDecisions();
     swSyncViewBtns();
@@ -264,16 +263,6 @@ function swRenderStats() {
     ];
     box.innerHTML = chips.map(c =>
         '<div class="sw-chip c-' + c[0] + '" title="' + swEsc(c[2]) + '">' + swEsc(c[1]) + '</div>').join('');
-}
-
-/* ==================== 评分老师视角 ==================== */
-function swRenderTeacher() {
-    const box = document.getElementById('swTeacher');
-    if (!box || !SW.teacher) return;
-    box.innerHTML = SW.teacher.map((x, i) => '<div class="sw-dec sw-teacher">'
-        + '<div class="sw-dec-q"><span class="sw-dec-no">' + (i + 1) + '</span>' + swEsc(x[0]) + '</div>'
-        + '<div class="sw-dec-a">' + swRich(x[1]) + '</div>'
-        + '</div>').join('');
 }
 
 /* ==================== 真题适配表 ==================== */
@@ -312,7 +301,6 @@ function swTocItems() {
     const push = (lv, id, text) => { if (document.getElementById(id)) items.push({ lv: lv, id: id, text: text }); };
     push(1, 'swLegend', '占位符图例');
     push(1, 'swStepsTitle', '小作文怎么拼');
-    push(1, 'swTeacherTitle', '评分老师怎么看');
     push(1, 'swGuideBlock', '真题适配表');
     push(1, 'swDecisionsTitle', '选句决策');
     document.querySelectorAll('#swContent h2.sw-h2').forEach(h => {

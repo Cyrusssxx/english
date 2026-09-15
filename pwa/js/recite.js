@@ -113,12 +113,15 @@ async function rcInit() {
                     <div class="rc-skel-head"><b>${rcEsc(v.label)}</b><span>适用 ${rcEsc(v.years)}</span></div>`
                     + rcPairs(v.en, v.cn).map(p => `<div class="rc-line">${p.star ? `<span class="rc-freq">${p.star}</span>` : ''}<div class="rc-en">${rcAnno(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
                     + (v.alts ? `<div class="rc-alts">✎ 同义升级：${rcAlts(v.alts)}</div>` : '')
+                    + (v.demo ? `<div class="rc-demo"><b>例</b><span class="rc-en">${rcAnno(v.demo)}</span></div>` : '')
                     + '</div>').join('');
             } else {
                 sk += '<div class="rc-lines">'
                     + rcPairs(s.en, s.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
                     + '</div>'
-                    + (s.linkers ? `<div class="rc-alts">✎ 高级衔接词：${rcLinkers(s.linkers)}</div>` : '');
+                    + (s.framework ? `<div class="rc-frame"><div class="rc-frame-title">🧩 第二段框架（4 步拼装）</div>${s.framework.map(f => `<div class="rc-line"><div class="rc-en">${rcAnno(f.en)}</div>${f.cn ? `<div class="rc-cn">${rcPh(f.cn)}</div>` : ''}</div>`).join('')}</div>` : '')
+                    + (s.linkers ? `<div class="rc-alts">✎ 高级衔接词：${rcLinkers(s.linkers)}</div>` : '')
+                    + (s.demo ? `<div class="rc-demo"><b>例</b><span class="rc-en">${rcAnno(s.demo)}</span></div>` : '');
             }
             if (s.negative_en) {
                 sk += '<div class="rc-sub">负面版（危害类题目用）</div><div class="rc-lines rc-lines-neg">'
