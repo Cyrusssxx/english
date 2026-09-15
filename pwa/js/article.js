@@ -24,12 +24,24 @@ function showReadTitle(show) {
 }
 
 /** 作文范文中英切换 */
+function toggleWritingDirCn(el) {
+    const box = el.closest('.writing-directions');
+    const cn = box && box.querySelector('.writing-directions-cn');
+    if (!cn) return;
+    cn.hidden = !cn.hidden;
+    el.classList.toggle('open', !cn.hidden);
+}
+
 function toggleWritingCn(btn) {
-    const box = btn.closest('.writing-sample');
-    const cn = box.querySelector('.writing-sample-cn');
+    // 兼容两种容器：范文（.writing-sample）与全文参考译文（.translation-ref）
+    const box = btn.closest('.writing-sample') || btn.closest('.translation-ref');
+    if (!box) return;
+    const cn = box.querySelector('.writing-sample-cn') || box.querySelector('.translation-ref-cn');
+    if (!cn) return;
+    const isRef = box.classList.contains('translation-ref');
     const show = cn.hidden;
     cn.hidden = !show;
-    btn.textContent = show ? '隐藏中文译文' : '显示中文译文';
+    btn.textContent = (show ? '隐藏' : '显示') + (isRef ? '全文参考译文' : '中文译文');
 }
 
 /** 作文储备板块折叠切换 */
@@ -378,6 +390,9 @@ function restoreCnAll() {
     document.querySelectorAll('.sent-cn').forEach(el => el.classList.add('open'));
     document.body.classList.add('show-quiz-cn');
     showReadTitle(true);
+    // 写作模块中文区恢复（与 toggleCnAll 同步，按钮文案一并复原）
+    document.querySelectorAll('.writing-directions-cn, .writing-sample-cn, .translation-ref-cn').forEach(el => { el.hidden = false; });
+    document.querySelectorAll('.writing-toggle').forEach(b => { b.textContent = '隐藏中文译文'; });
     syncPhraseZone(true);
 }
 
@@ -391,6 +406,11 @@ function toggleCnAll() {
     document.body.classList.toggle('show-quiz-cn', cnAll);
     // 展开全部译文时自动显示标题
     if (cnAll) showReadTitle(true);
+    // 写作模块：题目要求中文 / 范文中译 / 翻译模块全文译文 随精读开关联动（按钮文案同步）
+    document.querySelectorAll('.writing-directions-cn').forEach(el => { el.hidden = !cnAll; });
+    document.querySelectorAll('.writing-sample-cn').forEach(el => { el.hidden = !cnAll; });
+    document.querySelectorAll('.translation-ref-cn').forEach(el => { el.hidden = !cnAll; });
+    document.querySelectorAll('.writing-toggle').forEach(b => { b.textContent = cnAll ? '隐藏中文译文' : '显示中文译文'; });
     // 精读模式：底部本篇词组区随开关显示/隐藏
     syncPhraseZone(cnAll);
     if (cnAll) {
@@ -509,8 +529,8 @@ function renderArticle() {
             <div class="read-source">${esc(article.source || '')} · 写作练习：先自行构思，再对照官方范文</div>
             ${article.directions ? `<div class="writing-directions">
                 <span class="rs-label">题目要求</span>
-                <div class="writing-directions-text">${esc(article.directions)}</div>
-                ${article.directions_cn ? `<div class="writing-directions-cn">${esc(article.directions_cn)}</div>` : ''}
+                <div class="writing-directions-text" onclick="toggleWritingDirCn(this)" title="点题目要求显示/隐藏中文翻译">${esc(article.directions)}</div>
+                ${article.directions_cn ? `<div class="writing-directions-cn" hidden>${esc(article.directions_cn)}</div>` : ''}
             </div>` : ''}
             ${article.chart_img ? `<div class="writing-chart"><img src="${esc(article.chart_img)}" alt="图表" loading="lazy"></div>` : ''}
             ${applyHtml(article.apply, article.id.slice(0, 4), article.id, article.type)}
@@ -576,6 +596,13 @@ function renderArticle() {
         }
         html += '</div>';
     });
+    // 全文参考译文（早期真题逐句译文缺失时，整篇译文仍有参考价值）
+    if (article.ref_cn) {
+        html += `<div class="translation-ref">
+            <button class="writing-toggle" onclick="toggleWritingCn(this)">显示全文参考译文</button>
+            <div class="translation-ref-cn" hidden>${esc(article.ref_cn)}</div>
+        </div>`;
+    }
     document.getElementById('readPane').innerHTML = html;
     // 精读模式：任何重渲染路径都重建本篇词组区（幂等，词典未就绪时留空待 enrichRender 补）
     renderPhraseZone();
@@ -587,12 +614,13 @@ function sentenceHtml(s) {
     const hasStruct = !!(s.struct && s.struct.nodes && sigOn());
     const structBtn = hasStruct
         ? `<button class="struct-btn" onclick="toggleStructTree('${s.id}')" title="展开/收起句子结构树">结构</button>` : '';
+    const noCn = !(s.cn || '').trim();   // 早期真题（2007-2009）逐句译文缺失
     let out = `<div class="sent" id="s-${s.id}" data-sid="${s.id}">
         <div class="sent-en">${enHtml}
             <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>${structBtn}
         </div>
-        <div class="sent-cn" onclick="onCnClick(event,'${s.id}')">
-            <span class="cn-placeholder">▾ 点击查看翻译</span>
+        <div class="sent-cn${noCn ? ' no-cn' : ''}" onclick="onCnClick(event,'${s.id}')">
+            <span class="cn-placeholder">${noCn ? '▾ 早期真题 · 逐句译文暂缺' : '▾ 点击查看翻译'}</span>
             <span class="cn-text">${esc(s.cn || '')}</span>
         </div>`;
     // struct 数据：句下折叠结构树
@@ -789,7 +817,9 @@ function findWord(text, w) {
 function onCnClick(e, sid) {
     closePop();
     const cn = document.querySelector(`#s-${CSS.escape(sid)} .sent-cn`);
-    if (cn) cn.classList.toggle('open');
+    if (!cn) return;
+    if (cn.classList.contains('no-cn')) return;   // 无逐句译文：展开也是空白，占位条已提示
+    cn.classList.toggle('open');
 }
 
 async function onFav(e, sid) {

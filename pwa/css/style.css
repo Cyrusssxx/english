@@ -24,6 +24,11 @@
     --hl-b: #e3effc;
     --ann-bg: #fffbe8;
     --ann-border: #e0c968;
+    /* 补齐历史代码里只带浅色 fallback 的变量（夜间模式会沿用 fallback → 白底刺眼/暗字看不清） */
+    --surface: #ffffff;
+    --text-dim: #666666;
+    --bg-2: rgba(128, 128, 128, .06);
+    --primary-soft2: #a7f3e4;
 }
 
 html.dark {
@@ -43,6 +48,10 @@ html.dark {
     --hl-b: #1f2f45;
     --ann-bg: #2e2b1d;
     --ann-border: #8a7a3a;
+    --surface: #1a2c2a;
+    --text-dim: #93a8a4;
+    --bg-2: rgba(255, 255, 255, .07);
+    --primary-soft2: #1c5c55;
 }
 
 * {
@@ -481,6 +490,14 @@ html.dark .nav-timer-btn {
     margin-bottom: 8px;
     display: block;
 }
+
+.sent-cn.no-cn .cn-placeholder { color: var(--text-light); opacity: .7; cursor: default; }
+.sent-cn.no-cn { cursor: default; }
+.read-pane .translation-ref { margin-top: 16px; }
+
+.writing-directions-text { cursor: pointer; border-radius: 8px; padding: 2px 4px; transition: background .15s; }
+.writing-directions-text:hover { background: var(--ann-bg); }
+.writing-directions-text.open { border-bottom: 2px solid var(--warning); }
 
 .writing-directions-text {
     line-height: 1.7;
