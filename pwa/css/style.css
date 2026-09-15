@@ -4383,5 +4383,13 @@ html.dark .wr-frame-title, html.dark .rc-frame-title { color: #5eead4; }
 .wr-zoom-box img { max-width: 94vw; max-height: 88vh; width: auto; height: auto; background: #fff; border-radius: 8px; box-shadow: 0 8px 40px rgba(0, 0, 0, .5); }
 .wr-zoom-close { position: absolute; top: 18px; right: 24px; font-size: 22px; color: #fff; cursor: pointer; }
 
+.rc-collapse > summary.rc-h2 {
+    cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px;
+}
+.rc-collapse > summary.rc-h2::-webkit-details-marker { display: none; }
+.rc-collapse > summary.rc-h2::before { content: '▸ '; color: var(--text-light); transition: transform .15s ease; }
+.rc-collapse[open] > summary.rc-h2::before { content: '▾ '; }
+.rc-collapse-tip { font-size: .72rem; font-weight: 400; color: var(--text-light); margin-left: 4px; padding: 1px 7px; border: 1px solid var(--border); border-radius: 20px; }
+
 summary.wr-legend-head { cursor: pointer; list-style: revert; }
 summary.wr-legend-head::-webkit-details-marker { display: revert; }
