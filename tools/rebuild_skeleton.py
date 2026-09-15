@@ -41,52 +41,53 @@ def sent(en, cn, struct):
 
 # ══════════ 一、第一段：4 套短骨架 ══════════
 STATIC = [
-    sent('The {{chart}} chart shows how {{topic}} breaks down.',
-         '该 {{chart}} 图展示 {{topic}} 的构成情况。',
-         [[S('The {{chart}} chart', 't'), S(' shows', 'p'), S(' how {{topic}} breaks down', 'o'), S('.', '')]]),
-    sent('{{item1}} comes first, at {{percent1}}.',
-         '{{item1}} 排在第一位，占 {{percent1}}。',
-         [[S('{{item1}}', 't'), S(' comes first', 'p'), S(', at {{percent1}}', 'o'), S('.', '')]]),
-    sent('{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.',
-         '紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。',
-         [[S('{{item2}} and {{item3}}', 't'), S(' follow', 'p'), S(', at {{percent2}} and {{percent3}}', 'o'), S('.', '')]]),
-    sent('{{item4}} comes last, at {{percent4}}.',
-         '最后是 {{item4}}，占 {{percent4}}。',
-         [[S('{{item4}}', 't'), S(' comes last', 'p'), S(', at {{percent4}}', 'o'), S('.', '')]]),
+    sent('The {{chart}} chart above clearly illustrates how {{topic}} is distributed.',
+         '该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。',
+         [[S('The {{chart}} chart above', 't'), S(' clearly illustrates', 'p'), S(' how {{topic}} is distributed', 'o'), S('.', '')]]),
+    sent('{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.',
+         '{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。',
+         [[S('{{item1}}', 't'), S(' takes the lead', 'p'), S(', accounting for {{percent1}}', 'o'), S(', followed by ', 'trans'),
+           S('{{item2}} and {{item3}}', 't'), S(' at {{percent2}} and {{percent3}} respectively', 'o'), S(', while ', 'trans'),
+           S('{{item4}}', 't'), S(' comes last at {{percent4}}', 'o'), S('.', '')]]),
 ]
 
-DYN_OPEN = sent('The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.',
-                '该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。',
-                [[S('The {{chart}} chart', 't'), S(' tracks', 'p'), S(' {{topic}}', 'o'), S(' from {{time1}} to {{time2}}', 'o'), S('.', '')]])
+DYN_OPEN = sent('The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.',
+                '该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。',
+                [[S('The {{chart}} chart above', 't'), S(' clearly illustrates', 'p'), S(' the changes in {{topic}}', 'o'), S(' from {{time1}} to {{time2}}', 'o'), S('.', '')]])
+
+# ③ 的开头句自带「对比框架」（一升一降本来就有 sharp contrast）
+DYN_OPEN3 = sent('The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.',
+                 '该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。',
+                 [[S('The {{chart}} chart above', 't'), S(' clearly illustrates', 'p'), S(' the sharp contrast in {{topic}}', 'o'), S(' between {{item1}} and {{item2}}', 'o'), S(' from {{time1}} to {{time2}}', 'o'), S('.', '')]])
 
 DYN = [
     {'label': '① 一条线在走', 'years': '2013 · 2023',
-     'en': DYN_OPEN['en'] + ' ' + 'It climbed from {{num1}} to {{num2}}, without any noticeable fall.',
-     'cn': DYN_OPEN['cn'] + '它由 {{num1}} 升至 {{num2}}，全程没有明显回落。',
+     'en': DYN_OPEN['en'] + ' ' + 'During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.',
+     'cn': DYN_OPEN['cn'] + '在此期间，它由 {{num1}} 稳步升至 {{num2}}，全程没有明显回落。',
      'struct': [DYN_OPEN['struct'],
-                [S('It', 't'), S(' climbed', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', without any noticeable fall', 'o'), S('.', '')]],
-     'alts': {'tracks': 'shows / illustrates', 'climbed': 'increased / went up'}},
+                [S('During this period', 'trans'), S(', it', 't'), S(' rose steadily', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', without any noticeable fall', 'o'), S('.', '')]],
+     'alts': {'illustrates': 'shows / presents', 'rose steadily': 'kept climbing / went up steadily'}},
     {'label': '② 两条都在涨', 'years': '2010 · 2017 · 2022',
-     'en': DYN_OPEN['en'] + ' ' + '{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} increased from {{num3}} to {{num4}} over the same period.',
-     'cn': DYN_OPEN['cn'] + '{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 同期由 {{num3}} 增至 {{num4}}。',
+     'en': DYN_OPEN['en'] + ' ' + 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.',
+     'cn': DYN_OPEN['cn'] + '在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。',
      'struct': [DYN_OPEN['struct'],
-                [S('{{item1}}', 't'), S(' climbed', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', and ', 'trans'),
-                 S('{{item2}}', 't'), S(' increased', 'p'), S(' from {{num3}} to {{num4}} over the same period', 'o'), S('.', '')]],
-     'alts': {'climbed': 'rose / went up', 'increased': 'saw a steady rise', 'over the same period': 'during the same period'}},
+                [S('During this period', 'trans'), S(', {{item1}}', 't'), S(' rose sharply', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S('.', '')],
+                [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' saw', 'p'), S(' a modest increase', 'o'), S(', climbing from {{num3}} to {{num4}} over the same period', 'o'), S('.', '')]],
+     'alts': {'rose sharply': 'rose dramatically / climbed quickly', 'By contrast': 'In contrast', 'saw a modest increase': 'saw only a slight rise', 'climbing from': 'rising from'}},
     {'label': '③ 一升一降', 'years': '2011 · 2014 · 2019',
-     'en': DYN_OPEN['en'] + ' ' + '{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.',
-     'cn': DYN_OPEN['cn'] + '{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。',
-     'struct': [DYN_OPEN['struct'],
-                [S('{{item1}}', 't'), S(' climbed', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', while ', 'trans'),
-                 S('{{item2}}', 't'), S(' fell', 'p'), S(' from {{num3}} to {{num4}}', 'o'), S('.', '')]],
-     'alts': {'climbed': 'rose / went up', 'fell': 'declined / dropped', 'while': 'whereas'}},
+     'en': DYN_OPEN3['en'] + ' ' + 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.',
+     'cn': DYN_OPEN3['cn'] + '在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。',
+     'struct': [DYN_OPEN3['struct'],
+                [S('During this period', 'trans'), S(', {{item1}}', 't'), S(' rose sharply', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S('.', '')],
+                [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' saw', 'p'), S(' a steady decline', 'o'), S(', falling from {{num3}} to {{num4}}', 'o'), S('.', '')]],
+     'alts': {'sharp contrast': 'marked contrast / striking gap', 'rose sharply': 'rose dramatically', 'saw a steady decline': 'declined steadily', 'By contrast': 'In contrast'}},
 ]
 
 # ══════════ 二、第二段：1 句引入 + 机制句池 ══════════
-PARA2_SKEL = sent('This change can be attributed to the following factors.',
-                  '这一变化可以归因于以下几点。',
-                  [[S('This change', 't'), S(' can be attributed to', 'p'), S(' the following factors', 'o'), S('.', '')]])
-PARA2_SKEL['alts'] = {'can be attributed to': 'stems from / results from', 'the following factors': 'a combination of factors'}
+PARA2_SKEL = sent('This phenomenon can be attributed to two major factors.',
+                  '这一现象可以归因于两大因素。',
+                  [[S('This phenomenon', 't'), S(' can be attributed to', 'p'), S(' two major factors', 'o'), S('.', '')]])
+PARA2_SKEL['alts'] = {'can be attributed to': 'stems from / results from', 'two major factors': 'several major factors（挑 3 条机制句时）'}
 
 MECH = [
     (3, '收入', 'As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.',
@@ -125,20 +126,31 @@ MECH = [
 
 # ══════════ 三、第三段：立场句 + 主体句池 + 收束句 ══════════
 P3_POS = [
-    sent('On balance, this is a change worth welcoming.',
-         '总体来看，这是值得欢迎的变化。',
-         [[S('On balance', 'trans'), S(', this', 't'), S(' is', 'p'), S(' a change worth welcoming', 'o'), S('.', '')]]),
-    sent('That is what will decide whether the change lasts.',
-         '而这，正是决定这种变化能否持续的关键。',
-         [[S('That', 't'), S(' is', 'p'), S(' what will decide whether the change lasts', 'o'), S('.', '')]]),
+    sent('On balance, this is a positive trend worth welcoming.',
+         '总体来看，这是值得欢迎的积极趋势。',
+         [[S('On balance', 'trans'), S(', this', 't'), S(' is', 'p'), S(' a positive trend worth welcoming', 'o'), S('.', '')]]),
+    sent('Given the momentum behind it, there is every reason to believe that this trend will continue in the years ahead.',
+         '考虑到它背后的推动力，我们完全有理由相信，这一趋势将在未来几年持续下去。',
+         [[S('Given the momentum behind it', 'trans'), S(', there', 't'), S(' is', 'p'), S(' every reason to believe that this trend will continue in the years ahead', 'o'), S('.', '')]]),
 ]
 P3_NEG = [
     sent('On balance, the figures point to a problem worth taking seriously.',
          '总体来看，这些数据指向一个不容忽视的问题。',
          [[S('On balance', 'trans'), S(', the figures', 't'), S(' point to', 'p'), S(' a problem worth taking seriously', 'o'), S('.', '')]]),
-    sent('Left alone, the problem will not correct itself.',
-         '放任不管，这个问题不会自己好转。',
-         [[S('Left alone', 'o'), S(', the problem', 't'), S(' will not correct', 'p'), S(' itself', 'o'), S('.', '')]]),
+    sent('Unless effective measures are taken, it may well get worse.',
+         '若不采取有效措施，问题很可能进一步恶化。',
+         [[S('Unless effective measures are taken', 'trans'), S(', it', 't'), S(' may well get worse', 'p'), S('.', '')]]),
+]
+
+# 高级衔接词（替代 First and foremost / Furthermore / To sum up 等烂大街写法；同篇不重样）
+P2_LINKERS = [
+    {'banned': 'First and foremost / The first one is', 'better': 'Primary among these is ... / The most immediate factor is ... / Chief among them is ...'},
+    {'banned': 'Furthermore / What is more', 'better': 'Equally important, ... / Just as significant, ... / Beyond that, ...'},
+    {'banned': 'So / As a result（焊因果）', 'better': 'which 从句：..., which has lowered the threshold for ...'},
+]
+P3_LINKERS = [
+    {'banned': 'To sum up / In conclusion', 'better': 'On balance / Taking everything into account / Given the trends above'},
+    {'banned': 'will rise（预测）', 'better': 'is predicted to rise / is set to rise / is estimated to stay stable'},
 ]
 
 # 主体句池（沿用旧版并按更自然的口径重写两句；第一位是「通用档」）
@@ -183,8 +195,8 @@ def main():
     # 第一段
     s = by_id['chart_static']
     set_skeleton(s, STATIC)
-    s['alts'] = {'shows': 'clearly illustrates / presents', 'comes first': 'takes the lead / ranks first',
-                 'comes last': 'trails behind / is the smallest'}
+    s['alts'] = {'clearly illustrates': 'shows / presents', 'takes the lead': 'ranks first / comes top',
+                 'accounting for': 'making up', 'comes last': 'ranks last / trails behind'}
     s['sentences'] = [
         {'en': 'Taken together, the three largest items make up {{percent total}}.', 'cn': '前三项加起来占 {{percent total}}。', 'freq': 3, 'tag': '合计'},
         {'en': 'The pattern is clear: a few items dominate the rest.', 'cn': '格局很清楚：少数几项占了大头。', 'freq': 2, 'tag': '集中度'},
@@ -214,6 +226,7 @@ def main():
         'group': secs[0].get('group', ''),
         'en': PARA2_SKEL['en'], 'cn': PARA2_SKEL['cn'], 'en_struct': [PARA2_SKEL['struct']],
         'alts': PARA2_SKEL['alts'],
+        'linkers': P2_LINKERS,
         'priority': True,
         'sentences': [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in MECH],
         'phrases': [
@@ -225,7 +238,7 @@ def main():
             ['as much as', '和……一样（不只是）'],
         ],
         'tips': [
-        "串接方式固定：First and foremost, + 第 1 条。 In addition, + 第 2 条。 Finally, + 第 3 条。—— 三个连接词轮流用，不要每句都 First and foremost。",'引入句 11 词 + 机制句挑 3 条 ≈ 55~62 词。',
+        "串接方式：引入句（two major factors）之后，第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。",'引入句 8 词 + 机制句挑 3 条 ≈ 55~62 词。',
                  '每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 16 条都写。',
                  '挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。'],
     })
@@ -235,11 +248,15 @@ def main():
     s['title'] = '第三段 · 正面版（立场 + 建议）'
     s['subtitle'] = '立场句 + 从主体句池挑 1~2 句 + 收束句'
     set_skeleton(s, P3_POS)
+    s['alts'] = {'will continue': 'is predicted to continue / is set to continue', 'Given the momentum behind it': 'Considering the forces driving it'}
+    s['linkers'] = P3_LINKERS
     s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in SUBJ_POS]
     s = by_id['para3_negative']
     s['title'] = '第三段 · 负面版（立场 + 对策）'
     s['subtitle'] = '立场句 + 从主体句池挑 1~2 句 + 收束句'
     set_skeleton(s, P3_NEG)
+    s['alts'] = {'Unless effective measures are taken': 'If left unchecked / Without timely intervention', 'may well get worse': 'is unlikely to correct itself'}
+    s['linkers'] = P3_LINKERS
     s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in SUBJ_NEG]
 
     # 顺序：第一段 → 第二段 → 第三段
@@ -262,7 +279,7 @@ def main():
     w_dyn = [wc(x['en']) for x in (DYN[0], DYN[1], DYN[2])]
     core = w_static + max(w_dyn) + wc(PARA2_SKEL['en']) + sum(wc(x['en']) for x in P3_POS) + sum(wc(x['en']) for x in P3_NEG)
     print('骨架重置完成：%d 个段落' % len(d['sections']))
-    print('  P1 静态 %d 词（4 句）｜ 动态 ①%d ②%d ③%d 词' % (w_static, w_dyn[0], w_dyn[1], w_dyn[2]))
+    print('  P1 静态 %d 词（2 句）｜ 动态 ①%d ②%d ③%d 词' % (w_static, w_dyn[0], w_dyn[1], w_dyn[2]))
     print('  P2 %d 词 + 机制句池 %d 条 ｜ P3 正 %d 词 / 负 %d 词 + 主体句池 %d+%d 条' % (
         wc(PARA2_SKEL['en']), len(MECH),
         sum(wc(x['en']) for x in P3_POS), sum(wc(x['en']) for x in P3_NEG), len(SUBJ_POS), len(SUBJ_NEG)))

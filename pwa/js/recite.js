@@ -5,6 +5,10 @@ function rcEsc(s) {
     return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
 /** 骨架同义升级提示（速记页版） */
+function rcLinkers(linkers) {
+    if (!linkers || !linkers.length) return '';
+    return linkers.map(x => `<span class="wr-alt"><b>${rcEsc(x.banned)}</b> → ${rcEsc(x.better)}</span>`).join('<span class="wr-alt-sep">｜</span>');
+}
 function rcAlts(alts) {
     if (!alts) return '';
     const rows = Object.entries(alts).map(([k, v]) => `<span class="wr-alt"><b>${rcEsc(k)}</b> → ${rcEsc(v)}</span>`);
@@ -113,7 +117,8 @@ async function rcInit() {
             } else {
                 sk += '<div class="rc-lines">'
                     + rcPairs(s.en, s.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
-                    + '</div>';
+                    + '</div>'
+                    + (s.linkers ? `<div class="rc-alts">✎ 高级衔接词：${rcLinkers(s.linkers)}</div>` : '');
             }
             if (s.negative_en) {
                 sk += '<div class="rc-sub">负面版（危害类题目用）</div><div class="rc-lines rc-lines-neg">'

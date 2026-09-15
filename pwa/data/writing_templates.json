@@ -266,8 +266,8 @@
    "group": "大作文 · 第一段（图表描述）",
    "title": "静态图表第一段",
    "subtitle": "适用：饼图 / 柱状图中各类别的占比分布（只比比例，没有时间变化）",
-   "en": "The {{chart}} chart shows how {{topic}} breaks down. {{item1}} comes first, at {{percent1}}. {{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}. {{item4}} comes last, at {{percent4}}.",
-   "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。{{item1}} 排在第一位，占 {{percent1}}。紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。最后是 {{item4}}，占 {{percent4}}。",
+   "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed. {{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+   "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
    "note": "{{chart}} 处按图型填 pie / bar / line；句池里挑 1~2 句替换骨架后半段，控制字数，不必全写。",
    "sentences": [
     {
@@ -296,15 +296,15 @@
    "en_struct": [
     [
      [
-      "The {{chart}} chart",
+      "The {{chart}} chart above",
       "t"
      ],
      [
-      " shows",
+      " clearly illustrates",
       "p"
      ],
      [
-      " how {{topic}} breaks down",
+      " how {{topic}} is distributed",
       "o"
      ],
      [
@@ -318,47 +318,35 @@
       "t"
      ],
      [
-      " comes first",
+      " takes the lead",
       "p"
      ],
      [
-      ", at {{percent1}}",
+      ", accounting for {{percent1}}",
       "o"
      ],
      [
-      ".",
-      ""
-     ]
-    ],
-    [
+      ", followed by ",
+      "trans"
+     ],
      [
       "{{item2}} and {{item3}}",
       "t"
      ],
      [
-      " follow",
-      "p"
-     ],
-     [
-      ", at {{percent2}} and {{percent3}}",
+      " at {{percent2}} and {{percent3}} respectively",
       "o"
      ],
      [
-      ".",
-      ""
-     ]
-    ],
-    [
+      ", while ",
+      "trans"
+     ],
      [
       "{{item4}}",
       "t"
      ],
      [
-      " comes last",
-      "p"
-     ],
-     [
-      ", at {{percent4}}",
+      " comes last at {{percent4}}",
       "o"
      ],
      [
@@ -394,9 +382,10 @@
     ]
    ],
    "alts": {
-    "shows": "clearly illustrates / presents",
-    "comes first": "takes the lead / ranks first",
-    "comes last": "trails behind / is the smallest"
+    "clearly illustrates": "shows / presents",
+    "takes the lead": "ranks first / comes top",
+    "accounting for": "making up",
+    "comes last": "ranks last / trails behind"
    }
   },
   {
@@ -404,8 +393,8 @@
    "group": "大作文 · 第一段（图表描述）",
    "title": "动态图表第一段",
    "subtitle": "适用：折线 / 柱状图中事物随时间变化 —— 先看走势，选下面 3 套骨架之一",
-   "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} increased from {{num3}} to {{num4}} over the same period.",
-   "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 同期由 {{num3}} 增至 {{num4}}。",
+   "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
+   "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
    "note": "先看走势再选骨架：只有 1 个事物用 ①；都涨但快慢不同用 ②；有涨有跌用 ③。三个事物时，③ 的第 2 句后面接句池里的 By contrast 那句。",
    "sentences": [
     {
@@ -447,15 +436,15 @@
    "en_struct": [
     [
      [
-      "The {{chart}} chart",
+      "The {{chart}} chart above",
       "t"
      ],
      [
-      " tracks",
+      " clearly illustrates",
       "p"
      ],
      [
-      " {{topic}}",
+      " the changes in {{topic}}",
       "o"
      ],
      [
@@ -469,11 +458,15 @@
     ],
     [
      [
-      "{{item1}}",
+      "During this period",
+      "trans"
+     ],
+     [
+      ", {{item1}}",
       "t"
      ],
      [
-      " climbed",
+      " rose sharply",
       "p"
      ],
      [
@@ -481,19 +474,29 @@
       "o"
      ],
      [
-      ", and ",
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "By contrast",
       "trans"
      ],
      [
-      "{{item2}}",
+      ", the figure for {{item2}}",
       "t"
      ],
      [
-      " increased",
+      " saw",
       "p"
      ],
      [
-      " from {{num3}} to {{num4}} over the same period",
+      " a modest increase",
+      "o"
+     ],
+     [
+      ", climbing from {{num3}} to {{num4}} over the same period",
       "o"
      ],
      [
@@ -532,20 +535,20 @@
     {
      "label": "① 一条线在走",
      "years": "2013 · 2023",
-     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. It climbed from {{num1}} to {{num2}}, without any noticeable fall.",
-     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。它由 {{num1}} 升至 {{num2}}，全程没有明显回落。",
+     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，它由 {{num1}} 稳步升至 {{num2}}，全程没有明显回落。",
      "struct": [
       [
        [
-        "The {{chart}} chart",
+        "The {{chart}} chart above",
         "t"
        ],
        [
-        " tracks",
+        " clearly illustrates",
         "p"
        ],
        [
-        " {{topic}}",
+        " the changes in {{topic}}",
         "o"
        ],
        [
@@ -559,11 +562,15 @@
       ],
       [
        [
-        "It",
+        "During this period",
+        "trans"
+       ],
+       [
+        ", it",
         "t"
        ],
        [
-        " climbed",
+        " rose steadily",
         "p"
        ],
        [
@@ -581,27 +588,27 @@
       ]
      ],
      "alts": {
-      "tracks": "shows / illustrates",
-      "climbed": "increased / went up"
+      "illustrates": "shows / presents",
+      "rose steadily": "kept climbing / went up steadily"
      }
     },
     {
      "label": "② 两条都在涨",
      "years": "2010 · 2017 · 2022",
-     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} increased from {{num3}} to {{num4}} over the same period.",
-     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 同期由 {{num3}} 增至 {{num4}}。",
+     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
      "struct": [
       [
        [
-        "The {{chart}} chart",
+        "The {{chart}} chart above",
         "t"
        ],
        [
-        " tracks",
+        " clearly illustrates",
         "p"
        ],
        [
-        " {{topic}}",
+        " the changes in {{topic}}",
         "o"
        ],
        [
@@ -615,11 +622,15 @@
       ],
       [
        [
-        "{{item1}}",
+        "During this period",
+        "trans"
+       ],
+       [
+        ", {{item1}}",
         "t"
        ],
        [
-        " climbed",
+        " rose sharply",
         "p"
        ],
        [
@@ -627,19 +638,29 @@
         "o"
        ],
        [
-        ", and ",
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "By contrast",
         "trans"
        ],
        [
-        "{{item2}}",
+        ", the figure for {{item2}}",
         "t"
        ],
        [
-        " increased",
+        " saw",
         "p"
        ],
        [
-        " from {{num3}} to {{num4}} over the same period",
+        " a modest increase",
+        "o"
+       ],
+       [
+        ", climbing from {{num3}} to {{num4}} over the same period",
         "o"
        ],
        [
@@ -649,28 +670,33 @@
       ]
      ],
      "alts": {
-      "climbed": "rose / went up",
-      "increased": "saw a steady rise",
-      "over the same period": "during the same period"
+      "rose sharply": "rose dramatically / climbed quickly",
+      "By contrast": "In contrast",
+      "saw a modest increase": "saw only a slight rise",
+      "climbing from": "rising from"
      }
     },
     {
      "label": "③ 一升一降",
      "years": "2011 · 2014 · 2019",
-     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}. {{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} fell from {{num3}} to {{num4}}.",
-     "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+     "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。",
      "struct": [
       [
        [
-        "The {{chart}} chart",
+        "The {{chart}} chart above",
         "t"
        ],
        [
-        " tracks",
+        " clearly illustrates",
         "p"
        ],
        [
-        " {{topic}}",
+        " the sharp contrast in {{topic}}",
+        "o"
+       ],
+       [
+        " between {{item1}} and {{item2}}",
         "o"
        ],
        [
@@ -684,11 +710,15 @@
       ],
       [
        [
-        "{{item1}}",
+        "During this period",
+        "trans"
+       ],
+       [
+        ", {{item1}}",
         "t"
        ],
        [
-        " climbed",
+        " rose sharply",
         "p"
        ],
        [
@@ -696,19 +726,29 @@
         "o"
        ],
        [
-        ", while ",
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "By contrast",
         "trans"
        ],
        [
-        "{{item2}}",
+        ", the figure for {{item2}}",
         "t"
        ],
        [
-        " fell",
+        " saw",
         "p"
        ],
        [
-        " from {{num3}} to {{num4}}",
+        " a steady decline",
+        "o"
+       ],
+       [
+        ", falling from {{num3}} to {{num4}}",
         "o"
        ],
        [
@@ -718,9 +758,10 @@
       ]
      ],
      "alts": {
-      "climbed": "rose / went up",
-      "fell": "declined / dropped",
-      "while": "whereas"
+      "sharp contrast": "marked contrast / striking gap",
+      "rose sharply": "rose dramatically",
+      "saw a steady decline": "declined steadily",
+      "By contrast": "In contrast"
      }
     }
    ]
@@ -730,12 +771,12 @@
    "title": "第二段 · 原因（机制句池）",
    "subtitle": "不背整段：1 句引入 + 从下面 16 条机制里挑 3 条（每条都是一个完整原因）",
    "group": "大作文 · 第一段（图表描述）",
-   "en": "This change can be attributed to the following factors.",
-   "cn": "这一变化可以归因于以下几点。",
+   "en": "This phenomenon can be attributed to two major factors.",
+   "cn": "这一现象可以归因于两大因素。",
    "en_struct": [
     [
      [
-      "This change",
+      "This phenomenon",
       "t"
      ],
      [
@@ -743,7 +784,7 @@
       "p"
      ],
      [
-      " the following factors",
+      " two major factors",
       "o"
      ],
      [
@@ -754,8 +795,22 @@
    ],
    "alts": {
     "can be attributed to": "stems from / results from",
-    "the following factors": "a combination of factors"
+    "two major factors": "several major factors（挑 3 条机制句时）"
    },
+   "linkers": [
+    {
+     "banned": "First and foremost / The first one is",
+     "better": "Primary among these is ... / The most immediate factor is ... / Chief among them is ..."
+    },
+    {
+     "banned": "Furthermore / What is more",
+     "better": "Equally important, ... / Just as significant, ... / Beyond that, ..."
+    },
+    {
+     "banned": "So / As a result（焊因果）",
+     "better": "which 从句：..., which has lowered the threshold for ..."
+    }
+   ],
    "priority": true,
    "sentences": [
     {
@@ -882,8 +937,8 @@
     ]
    ],
    "tips": [
-    "串接方式固定：First and foremost, + 第 1 条。 In addition, + 第 2 条。 Finally, + 第 3 条。—— 三个连接词轮流用，不要每句都 First and foremost。",
-    "引入句 11 词 + 机制句挑 3 条 ≈ 55~62 词。",
+    "串接方式：引入句（two major factors）之后，第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。",
+    "引入句 8 词 + 机制句挑 3 条 ≈ 55~62 词。",
     "每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 16 条都写。",
     "挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。"
    ]
@@ -893,8 +948,8 @@
    "group": "大作文 · 第三段（总结建议）",
    "title": "第三段 · 正面版（立场 + 建议）",
    "subtitle": "立场句 + 从主体句池挑 1~2 句 + 收束句",
-   "en": "On balance, this is a change worth welcoming. That is what will decide whether the change lasts.",
-   "cn": "总体来看，这是值得欢迎的变化。而这，正是决定这种变化能否持续的关键。",
+   "en": "On balance, this is a positive trend worth welcoming. Given the momentum behind it, there is every reason to believe that this trend will continue in the years ahead.",
+   "cn": "总体来看，这是值得欢迎的积极趋势。考虑到它背后的推动力，我们完全有理由相信，这一趋势将在未来几年持续下去。",
    "note": "主体按题挑：政府（2010/2014/2017/2022/2023）、学校（2013/2019/2024/2026）、家庭（2013/2016/2026）、企业平台（2011/2012/2018/2020/2022）、媒体（2016/2017/2020/2023）、个人（2015/2016/2021/2025）。挑 2 个主体各 1 句即可，不要 6 个都写。",
    "en_struct": [
     [
@@ -911,7 +966,7 @@
       "p"
      ],
      [
-      " a change worth welcoming",
+      " a positive trend worth welcoming",
       "o"
      ],
      [
@@ -921,7 +976,11 @@
     ],
     [
      [
-      "That",
+      "Given the momentum behind it",
+      "trans"
+     ],
+     [
+      ", there",
       "t"
      ],
      [
@@ -929,7 +988,7 @@
       "p"
      ],
      [
-      " what will decide whether the change lasts",
+      " every reason to believe that this trend will continue in the years ahead",
       "o"
      ],
      [
@@ -1036,15 +1095,29 @@
      "tag": "个人·习惯"
     }
    ],
-   "priority": true
+   "priority": true,
+   "alts": {
+    "will continue": "is predicted to continue / is set to continue",
+    "Given the momentum behind it": "Considering the forces driving it"
+   },
+   "linkers": [
+    {
+     "banned": "To sum up / In conclusion",
+     "better": "On balance / Taking everything into account / Given the trends above"
+    },
+    {
+     "banned": "will rise（预测）",
+     "better": "is predicted to rise / is set to rise / is estimated to stay stable"
+    }
+   ]
   },
   {
    "id": "para3_negative",
    "group": "大作文 · 第三段（总结建议）",
    "title": "第三段 · 负面版（立场 + 对策）",
    "subtitle": "立场句 + 从主体句池挑 1~2 句 + 收束句",
-   "en": "On balance, the figures point to a problem worth taking seriously. Left alone, the problem will not correct itself.",
-   "cn": "总体来看，这些数据指向一个不容忽视的问题。放任不管，这个问题不会自己好转。",
+   "en": "On balance, the figures point to a problem worth taking seriously. Unless effective measures are taken, it may well get worse.",
+   "cn": "总体来看，这些数据指向一个不容忽视的问题。若不采取有效措施，问题很可能进一步恶化。",
    "en_struct": [
     [
      [
@@ -1070,20 +1143,16 @@
     ],
     [
      [
-      "Left alone",
-      "o"
+      "Unless effective measures are taken",
+      "trans"
      ],
      [
-      ", the problem",
+      ", it",
       "t"
      ],
      [
-      " will not correct",
+      " may well get worse",
       "p"
-     ],
-     [
-      " itself",
-      "o"
      ],
      [
       ".",
@@ -1185,7 +1254,21 @@
      "tag": "个人·记录"
     }
    ],
-   "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。"
+   "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。",
+   "alts": {
+    "Unless effective measures are taken": "If left unchecked / Without timely intervention",
+    "may well get worse": "is unlikely to correct itself"
+   },
+   "linkers": [
+    {
+     "banned": "To sum up / In conclusion",
+     "better": "On balance / Taking everything into account / Given the trends above"
+    },
+    {
+     "banned": "will rise（预测）",
+     "better": "is predicted to rise / is set to rise / is estimated to stay stable"
+    }
+   ]
   }
  ],
  "_extra_ver": 1,

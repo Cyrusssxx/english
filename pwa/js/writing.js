@@ -734,6 +734,12 @@ function wrAlts(alts) {
     return rows.join('<span class="wr-alt-sep">｜</span>');
 }
 
+/** 高级衔接词提示：[{banned:'烂大街', better:'高级替换'}] → 一行小字 */
+function wrLinkers(linkers) {
+    if (!linkers || !linkers.length) return '';
+    return linkers.map(x => `<span class="wr-alt"><b>${wrEsc(x.banned)}</b> → ${wrEsc(x.better)}</span>`).join('<span class="wr-alt-sep">｜</span>');
+}
+
 /** 考研口径词数：含字母或数字的空白串才算一个词（占位符 {{x}} 算 1 个） */
 function wrWords(t) {
     return ((t || '').match(/[A-Za-z0-9][A-Za-z0-9'’%.,:_-]*/g) || []).length;
@@ -771,7 +777,8 @@ function wrSectionCard(sec) {
             </div>`;
         }).join('')
         : `<div class="wr-en">${body.enHtml}</div>
-            <div class="wr-cn">${body.cnHtml}</div>` + (sec.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(sec.alts)}</div>` : '');
+            <div class="wr-cn">${body.cnHtml}</div>` + (sec.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(sec.alts)}</div>` : '')
+            + (sec.linkers ? `<div class="wr-alts">✎ 高级衔接词：${wrLinkers(sec.linkers)}</div>` : '');
     return `
     <section class="wr-card" id="${sec.id}">
         <div class="wr-card-head">

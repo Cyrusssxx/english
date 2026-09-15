@@ -1,5 +1,22 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16 骨架润色 v2] 综合两篇范文整体升级 + 「高级衔接词」系统
+
+- **口径**（用户确认）：不是照抄某一篇范文，而是提炼两篇 2010 范文的共识手法，兼顾实用与高级。
+- **P1 四套骨架升级**：
+  - 开头句统一 `The chart above clearly illustrates ...`；②用 `the changes in`，③用 `the sharp contrast in ... between A and B`。
+  - 静态 4 短句并 2 长句：`takes the lead, accounting for X%, followed by B and C at Y% and Z% respectively, while D comes last at W%.`
+  - 动态②③ 数据句用两篇范文的共同签名句式：`During this period, X rose sharply from ... . By contrast, the figure for Y saw a modest increase / a steady decline, climbing / falling from ... .`
+- **P2 引入句**：`This phenomenon can be attributed to two major factors.`（两篇引入句综合；挑 3 条时 alts 给 several major factors）。
+- **P3**：正面收束 `Given the momentum behind it, there is every reason to believe that this trend will continue in the years ahead.`；
+  负面 `Unless effective measures are taken, it may well get worse.`。
+- **新增 linkers（高级衔接词）数据**：P2 3 组 / P3 2 组——First and foremost → **Primary among these is / The most immediate factor is / Chief among them is**；
+  Furthermore → **Equally important / Just as significant / Beyond that**；So → **which 从句焊因果**；To sum up → **On balance / Taking everything into account**；will rise → **is predicted to / is set to / is estimated to**。
+  模板页与速记页渲染「✎ 高级衔接词」行（复用 .wr-alts 样式），P2 tips 同步（弃 First and foremost 串接口径）。
+- alts 同义升级全部跟新句重配（rose sharply → rose dramatically、sharp contrast → marked contrast / striking gap、Unless → If left unchecked 等）。
+- **必背 136 词**（静态 33 + 动态② 43 + P2 9 + P3 两版 50）；句池 46 条未动；示范文未动（等用户发话）。
+- 验证：词数体检通过；jsdom **21/21**（数据 13 + 模板页 5 + 速记页 3）。SW en2-0ff134f8。
+
 ## [2026-09-16 骨架润色] 按考研范文口径润色骨架 + 每套骨架加「同义升级」提示
 
 - **对照范文润色骨架**（用户对照机构范文与评析后指出：骨干太简洁、个别词小众但没用）：
