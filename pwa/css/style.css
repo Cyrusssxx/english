@@ -4368,5 +4368,7 @@ html.dark .wr-frame-title, html.dark .rc-frame-title { color: #5eead4; }
 .wr-frame-txt { min-width: 0; }
 .wr-frame-en { display: block; font-weight: 700; color: var(--text); }
 .wr-frame-cn { display: block; font-size: .85rem; color: var(--text-light); margin-top: 2px; }
+.rc-use { font-size: .8rem; color: var(--text-light); margin-top: 2px; }
+
 summary.wr-legend-head { cursor: pointer; list-style: revert; }
 summary.wr-legend-head::-webkit-details-marker { display: revert; }

@@ -175,6 +175,43 @@ async function rcInit() {
     ag += `<div class="rc-note"><b>主体怎么挑：</b>题目问的是学生的事 → 学校 + 家庭；是社会风气 → 媒体 + 个人；
         是基础设施/规则 → 政府 + 企业；是平台/产品 → 企业 + 个人。<b>不要 6 个主体全写</b>，那是模板味最重的地方。</div>`;
     document.getElementById('rcAgents').innerHTML = ag;
+
+    // ✨ 精选好句（大作文：素材本摘句；小作文：弹药精挑）——随 rcView 切换，各视图一份
+    (async function () {
+        try {
+            const res = await fetch('data/golden_sentences.json', { cache: 'no-cache' });
+            const G = await res.json();
+            const note = document.getElementById('rcGoldenNote');
+            if (note) note.textContent = '《万能句素材本》33 句精挑 ' + G.big.length + ' 句（删了 ' + G.dropped
+                + ' 句太单薄的），按用法分三类；点单词可查词典，年份 = 这句出自哪年范文。';
+            const box = document.getElementById('rcGolden');
+            if (box) box.innerHTML = G.cats.map(c => {
+                const items = G.big.filter(x => x.cat === c.id);
+                if (!items.length) return '';
+                return '<div class="rc-group">' + rcEsc(c.title) + ' · ' + items.length + ' 句</div>'
+                    + '<p class="rc-note">' + rcEsc(c.desc) + '</p>'
+                    + items.map(x => '<div class="rc-line">'
+                        + (x.year ? '<span class="rc-freq">' + rcEsc(x.year) + '</span>' : '')
+                        + '<div class="rc-en">' + rcAnno(x.en) + '</div>'
+                        + '<div class="rc-cn">' + rcPh(x.cn) + '</div>'
+                        + (x.use ? '<div class="rc-use">📌 ' + rcEsc(x.use) + '</div>' : '')
+                        + '</div>').join('');
+            }).join('');
+            const sb = document.getElementById('rcSGolden');
+            if (sb) {
+                const sn = document.getElementById('rcSGoldenNote');
+                if (sn) sn.textContent = '从弹药句里按通用度精挑 ' + G.small.length
+                    + ' 句（★★ 以上），必背句之外的第一顺位替补。';
+                sb.innerHTML = G.small.map(x => '<div class="rc-line">'
+                    + '<span class="rc-freq">' + '★'.repeat(x.freq || 2) + '</span>'
+                    + '<div class="rc-en">' + rcAnno(x.en) + '</div>'
+                    + '<div class="rc-cn">' + rcPh(x.cn) + '</div>'
+                    + '<div class="rc-use">📌 ' + rcEsc(x.tag || '') + (x.bank ? ' · ' + rcEsc(x.bank) : '') + '</div>'
+                    + '</div>').join('');
+            }
+            if (typeof rcAnnoAll === 'function') rcAnnoAll();
+        } catch (e) { /* 素材缺失时静默 */ }
+    })();
 }
 
 /* ==================== 划词查词（writing.js 精简副本：词组优先 + 本句义 + 熟词僻义） ==================== */
@@ -385,17 +422,19 @@ function toggleDark() {
 /** 目录（吸顶横条）：点击跳转 + 滚动高亮当前节 */
 function rcToc() {
     rcTocBuild('rcToc', [
-        ['rcSecOrder', '① 三段怎么拼'],
-        ['rcSecSkeleton', '② ⭐ 必背骨架'],
-        ['rcSecAgents', '③ ⚡ 主体句池'],
-        ['rcSecPlan', '④ 30 天计划'],
-        ['rcSecExam', '⑤ 考场 30 分钟']
+        ['rcSecGolden', '✨ 精选好句'],
+        ['rcSecOrder', '② 三段怎么拼'],
+        ['rcSecSkeleton', '③ ⭐ 必背骨架'],
+        ['rcSecAgents', '④ ⚡ 主体句池'],
+        ['rcSecPlan', '⑤ 30 天计划'],
+        ['rcSecExam', '⑥ 考场 30 分钟']
     ]);
     rcTocBuild('rcTocS', [
-        ['rcSecSOrder', '① 怎么拼（5 步）'],
-        ['rcSecSCore', '② ⭐ 骨架 + 必背'],
-        ['rcSecSGuide', '③ 17 年真题挑句'],
-        ['rcSecSPlan', '④ 30 天计划']
+        ['rcSecSGolden', '✨ 精选好句'],
+        ['rcSecSOrder', '② 怎么拼（5 步）'],
+        ['rcSecSCore', '③ ⭐ 骨架 + 必背'],
+        ['rcSecSGuide', '④ 17 年真题挑句'],
+        ['rcSecSPlan', '⑤ 30 天计划']
     ]);
 }
 
