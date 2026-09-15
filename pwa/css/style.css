@@ -4375,6 +4375,8 @@ html.dark .wr-frame-title, html.dark .rc-frame-title { color: #5eead4; }
 .wr-chart-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
 .wr-chart-item { margin: 0; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .wr-chart-item img { display: block; width: 100%; height: auto; cursor: zoom-in; }
+.wr-chart-item img:not([src]) { min-height: 96px; background: linear-gradient(135deg, rgba(128,128,128,.08), rgba(128,128,128,.16)); border-radius: 10px; }  /* data-src 延迟填充前的占位 */
+.wr-chart-item img[src] { min-height: 0; background: none; }
 .wr-chart-item figcaption { padding: 6px 10px; font-size: .82rem; color: var(--text-light); border-top: 1px solid var(--border); }
 
 /* ===== 真题图表灯箱（本页放大） ===== */

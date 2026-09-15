@@ -1114,7 +1114,17 @@ async function initWriting() {
         wrHeavyReady().then(() => { if (typeof wrRenderCards === 'function') wrRenderCards(); });
     };
     if ('requestIdleCallback' in window) window.requestIdleCallback(fireHeavy, { timeout: 4000 });
-    setTimeout(fireHeavy, 1500);   // 兜底：让 2MB 真题图先下 1.5s，之后必拉词典
+    setTimeout(fireHeavy, 1500);   // 兜底：空闲/超时必拉词典
+
+    // 真题图表图片最后加载：主体文字 + 词典就绪后再填 src（2MB 不抢首屏带宽）。
+    // 填 src 后仍走 loading="lazy"，滚动到视口才真正下载；重复调用幂等。
+    const fillCharts = () => {
+        document.querySelectorAll('#wrChartsBlock img[data-src]').forEach(im => {
+            im.src = im.getAttribute('data-src');
+        });
+    };
+    wrHeavyReady().then(() => setTimeout(fillCharts, 600));
+    window.addEventListener('load', () => setTimeout(fillCharts, 200), { once: true });   // 兜底：load 后必填
 }
 
 if (document.readyState === 'loading') {
