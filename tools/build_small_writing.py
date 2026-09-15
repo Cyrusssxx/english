@@ -518,6 +518,8 @@ def main():
         'guide': build_guide(),
         'decisions': EXTRA.DECISIONS,
         'teacher': EXTRA.TEACHER,
+        'framework': EXTRA.FRAMEWORK,
+        'linkers': EXTRA.LINKERS,
     }
     # 中文模板修正（原 md 的中文行与英文句槽位不一致时统一在这里改，重跑不回退）
     CN_FIX = {
@@ -533,6 +535,16 @@ def main():
         for k, cn in fix.items():
             if k < len(b_['items']):
                 b_['items'][k]['cn'] = cn
+
+    # 去烂大街衔接词（句首 First and foremost / Last but not least → 高级版）+ 同义升级挂载
+    for b_ in data['banks']:
+        for it in b_['items']:
+            for a2, b2 in EXTRA.SWAP:
+                if a2 in it.get('en', ''):
+                    it['en'] = it['en'].replace(a2, b2)
+            m = EXTRA.ALTS.get(it.get('en', ''))
+            if m:
+                it['alts'] = m
 
     all_items = [it for b in data['banks'] for it in b['items']]
 

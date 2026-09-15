@@ -79,8 +79,26 @@ function swLine(it, no, key) {
     return `<li class="sw-line" data-k="${key}">
         <div class="sw-en"><span class="sw-no">${no}</span>${swStars(it)}${it.tag ? `<span class="sw-tag">${swEsc(it.tag)}</span>` : ''}<span class="sw-en-txt">${swPh(it.en)}</span></div>
         ${it.cn ? `<div class="sw-cn">${swPh(it.cn)}</div>` : ''}
+        ${it.alts ? swAlts(it.alts) : ''}
         ${ex}
     </li>`;
+}
+
+function swAlts(alts) {
+    if (!alts) return '';
+    return `<div class="wr-alts">✎ 同义升级：${swEsc(alts)}</div>`;
+}
+
+function swFrameHtml(fw) {
+    if (!fw || !fw.length) return '';
+    return `<div class="wr-frame"><div class="wr-frame-title">🧩 信件拼装框架（${fw.length} 步 · 所有信都这么拼）</div>`
+        + fw.map((f, i) => `<div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${swEsc(f.en)}</span>${f.trans ? `<span class="wr-frame-trans">${swEsc(f.trans)}</span>` : ''}<span class="wr-frame-cn">${swEsc(f.cn)}</span></span></div>`).join('')
+        + '</div>';
+}
+
+function swLinkersHtml(lk) {
+    if (!lk || !lk.length) return '';
+    return `<div class="wr-alts">✎ 高级衔接词：${lk.map(x => `<span class="wr-alt"><b>${swEsc(x.banned)}</b> → ${swEsc(x.better)}</span>`).join('<span class="wr-alt-sep">｜</span>')}</div>`;
 }
 
 function swCard(bank, order, uid) {
@@ -110,6 +128,7 @@ function swRender() {
     const box = document.getElementById('swContent');
     if (!box || !SW) return;
     let html = '';
+    html += swFrameHtml(SW.framework) + swLinkersHtml(SW.linkers);
     if (swView === 'part') {
         const heads = { 1: '第一段 · 开头（问候 + 来意）', 2: '第二段 · 主体（展开内容）', 3: '第三段 · 收尾（客套 / 期待回复）' };
         [1, 2, 3].forEach(p => {

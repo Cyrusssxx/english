@@ -266,3 +266,44 @@ SLOT_TAGS = {
     's3': '理由 / 深化',
     's4': '意义 / 号召',
 }
+
+# —— 按大作文规格优化（2026-09-16）：去烂大街 / 同义升级 / 高级衔接词 / 拼装框架 ——
+# 句首烂大街衔接词 → 高级版（逐词替换进句子；注意替换后 ALTS 的 key 要对应新文本）
+SWAP = [
+    ('First and foremost, ', 'To begin with, '),
+    ('Last but not least, ', 'Finally, '),
+]
+# 同义升级（key = 句子替换后的原文，value = 替换串，背一句会三句）
+ALTS = {
+    'I hope this message finds you well.': 'I hope this email reaches you well / I hope everything is going well with you.',
+    'I am writing to you regarding the matter of {{topic}}.': 'I am writing to you about {{topic}} / This letter is intended to discuss {{topic}}.',
+    'To be more specific, the main points can be arranged as follows.': 'The main points are as follows / To spell it out, the key points are these.',
+    'I would appreciate it very much if you could {{expect}} by {{deadline}}.': 'I would be grateful if you could {{expect}} by {{deadline}} / Your early reply would be highly appreciated.',
+    'I would like to express my heartfelt thanks for the warm reception you gave me during my stay.': 'I sincerely appreciate your warm hospitality during my stay.',
+    'What impressed me most was your patience and kindness, which made me feel at home.': 'Your patience and kindness left a deep impression on me, making me feel at home.',
+    'To my disappointment, the {{product}} I bought from your online store last week has failed to work properly.': 'Much to my regret, the {{product}} I purchased online last week does not work properly.',
+    'In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.': 'It is a great pleasure to invite you to {{join}} {{topic}}, which will offer you {{gain}}.',
+    'In particular, I would like to know how I can better adapt to the local way of life.': 'I would be grateful to know how I can settle into the local way of life.',
+    'I am so delighted to receive your letter.': 'I am truly glad to hear from you / It is a real pleasure to hear from you.',
+}
+# 高级衔接词（信件专用；banned = 烂大街，better = 高级替换）
+LINKERS = [
+    {'banned': 'First and foremost / Last but not least（句首烂大街）', 'better': 'To begin with, ... / Finally, ...（必背句里已换高级版）'},
+    {'banned': 'In addition, ...', 'better': 'Besides this, ... / Beyond that, ...'},
+    {'banned': 'Furthermore, ...', 'better': 'Equally important, ... / Just as significant, ...'},
+    {'banned': 'I hope you can ...（请求太软）', 'better': 'I would appreciate it if you could ... / I would be grateful if you could ...'},
+    {'banned': 'To be more specific, ...', 'better': 'To spell it out, ... / To put it another way, ...'},
+]
+# 信件拼装框架（5 步，所有信都这么拼）
+FRAMEWORK = [
+    {'en': 'I hope this message finds you well.', 'trans': '希望你一切安好。',
+     'cn': '① 问候句：所有信通用；给老师/长辈换 Dear Professor / Dear Sir or Madam。'},
+    {'en': 'I am writing to ...（invite you to / express my thanks for / make a complaint about ...）', 'trans': '我写信是为了……',
+     'cn': '② 来意句：一句话点明写信目的——换动词就是另一种信（p1s2 里都是现成的）。'},
+    {'en': 'To begin with, + 要点①（该类型 s2 必背句）', 'trans': '首先，……',
+     'cn': '③ 主体第一点：衔接词开头 + 从第二段对应类型挑第 2 句。'},
+    {'en': 'Equally important, + 要点②（s3 / 跨类型补 1~2 句）', 'trans': '同样重要的是，……',
+     'cn': '④ 主体第二点：s3 或跨类型混搭；第二段 2~4 句就够。'},
+    {'en': 'I would appreciate it if you could ... / Looking forward to your early reply.', 'trans': '如蒙……将不胜感激 / 期待您的早日回复。',
+     'cn': '⑤ 收尾（p3 必背）：行动请求或期待回复；落款 Yours sincerely, Li Ming。'},
+]

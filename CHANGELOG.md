@@ -1,5 +1,20 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16 小作文按大作文规格优化] 信件拼装框架 + 同义升级 + 高级衔接词 + 去烂大街
+
+- **🧩 信件拼装框架（5 步）**：问候 → 来意 → 主体①（To begin with, + s2 必背句）→ 主体②（Equally important, + s3/跨类型）
+  → 收尾（p3 必背 + 落款）。每步带中文翻译 + 用法说明，与 P2/P3 同款展示（复用 .wr-frame 样式）。
+- **✎ 同义升级（ALTS，10 句）**：问候句/来意句/收尾句等高频必背句各挂替换（I hope this message finds you well →
+  I hope this email reaches you well / ...），渲染在句子下方。
+- **✎ 高级衔接词（LINKERS，5 组）**：First and foremost/Last but not least → To begin with/Finally；
+  In addition → Besides this；Furthermore → Equally important；I hope you can（请求太软）→ I would appreciate it if you could；
+  To be more specific → To spell it out。
+- **去烂大街（SWAP，5 句）**：句子本体的 First and foremost, → To begin with,（1 句）、Last but not least, → Finally,（4 句）。
+- 数据管道：small_writing_extra.py 新增模块级常量 SWAP/ALTS/LINKERS/FRAMEWORK（**模块级，不带 EXTRA. 前缀**——
+  该文件是 `import ... as EXTRA` 的模块，不是 class）→ build_small_writing.py 注入 json（顶层 framework/linkers +
+  items.alts + 句子替换）。
+- 验证：jsdom 5/5（框架 5 步上墙、衔接词 5 组、同义升级 10 处、句子本体烂大街 0）；audit_small_apply ✅。SW en2-61971f75。
+
 ## [2026-09-16 套用示范全面更新] 17 篇全部按新骨架重生成（167–180 词，0 自写句）
 
 - **触发**：用户问「大作文套用例子更新了吗」→ 确认仍冻结 → 用户「跑吧」→ 全链重生成。

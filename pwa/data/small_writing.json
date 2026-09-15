@@ -484,7 +484,8 @@
      "tier": "core",
      "must": true,
      "freq": 3,
-     "tag": "问候"
+     "tag": "问候",
+     "alts": "I hope this email reaches you well / I hope everything is going well with you."
     },
     {
      "en": "I am so delighted to receive your letter.",
@@ -492,7 +493,8 @@
      "tier": "ammo",
      "must": false,
      "freq": 3,
-     "tag": "问候"
+     "tag": "问候",
+     "alts": "I am truly glad to hear from you / It is a real pleasure to hear from you."
     },
     {
      "en": "We greatly appreciate all students for sparing your precious time to pay attention to this notice.",
@@ -523,7 +525,8 @@
      "tier": "core",
      "must": true,
      "freq": 3,
-     "tag": "来意"
+     "tag": "来意",
+     "alts": "I am writing to you about {{topic}} / This letter is intended to discuss {{topic}}."
     },
     {
      "en": "With this letter, I would like to share my views on {{topic}}.",
@@ -675,7 +678,8 @@
      "tier": "core",
      "must": true,
      "freq": 3,
-     "tag": "细节"
+     "tag": "细节",
+     "alts": "The main points are as follows / To spell it out, the key points are these."
     },
     {
      "en": "As for the practical measures, my suggestions are listed as follows.",
@@ -702,7 +706,7 @@
    "label": "第二段 · 建议类 第二句",
    "items": [
     {
-     "en": "First and foremost, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}.",
+     "en": "To begin with, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}.",
      "cn": "首先，强烈建议你在日常生活中持续{{ving}}{{topic}}，因为这有助于你更清楚地认识{{detail}}。",
      "tier": "must",
      "must": true,
@@ -742,7 +746,7 @@
    "label": "第二段 · 建议类 第四句",
    "items": [
     {
-     "en": "Last but not least, it is advisable for you to {{task}}. Only in this way can you truly {{benefit}}.",
+     "en": "Finally, it is advisable for you to {{task}}. Only in this way can you truly {{benefit}}.",
      "cn": "最后，需要指出的是，你最好{{task}}。唯有如此，你才能真正{{benefit}}。",
      "tier": "ammo",
      "must": false,
@@ -763,7 +767,8 @@
      "tier": "must",
      "must": true,
      "freq": 3,
-     "tag": "具体展开"
+     "tag": "具体展开",
+     "alts": "It is a great pleasure to invite you to {{join}} {{topic}}, which will offer you {{gain}}."
     },
     {
      "en": "With regard to {{topic}}, it is my pleasure to invite you to {{join}}, which can greatly broaden {{gain}}.",
@@ -798,7 +803,7 @@
    "label": "第二段 · 邀请类 第四句",
    "items": [
     {
-     "en": "Last but not least, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.",
+     "en": "Finally, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.",
      "cn": "最后，你的到来将使{{topic}}更加有意义，并使你得以{{benefit}}。",
      "tier": "ammo",
      "must": false,
@@ -894,7 +899,7 @@
    "label": "第二段 · 祝贺类 第四句",
    "items": [
     {
-     "en": "Last but not least, this achievement in {{topic}} will surely encourage you to {{next step}}, helping you reach {{goal}}.",
+     "en": "Finally, this achievement in {{topic}} will surely encourage you to {{next step}}, helping you reach {{goal}}.",
      "cn": "最后，{{topic}}上的这一成就必将激励你{{next step}}，助你迈向{{goal}}。",
      "tier": "ammo",
      "must": false,
@@ -1014,7 +1019,7 @@
    "label": "第二段 · 通知类 第四句",
    "items": [
     {
-     "en": "Last but not least, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way.",
+     "en": "Finally, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way.",
      "cn": "最后，要求全体{{audience}}{{requirement}}，以确保{{topic}}有序开展。",
      "tier": "ammo",
      "must": false,
@@ -1035,7 +1040,8 @@
      "tier": "core",
      "must": true,
      "freq": 3,
-     "tag": "收尾"
+     "tag": "收尾",
+     "alts": "I would be grateful if you could {{expect}} by {{deadline}} / Your early reply would be highly appreciated."
     },
     {
      "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
@@ -1091,7 +1097,8 @@
      "tag": "具体展开",
      "tier": "must",
      "must": true,
-     "freq": 3
+     "freq": 3,
+     "alts": "I sincerely appreciate your warm hospitality during my stay."
     },
     {
      "en": "Without your generous help, I could never have made such progress in {{topic}}.",
@@ -1115,7 +1122,8 @@
      "tag": "理由 / 深化",
      "tier": "must",
      "must": true,
-     "freq": 3
+     "freq": 3,
+     "alts": "Your patience and kindness left a deep impression on me, making me feel at home."
     }
    ]
   },
@@ -1131,7 +1139,8 @@
      "tag": "具体展开",
      "tier": "must",
      "must": true,
-     "freq": 3
+     "freq": 3,
+     "alts": "Much to my regret, the {{product}} I purchased online last week does not work properly."
     },
     {
      "en": "Specifically, {{problem}} appeared only three days after it arrived.",
@@ -1171,7 +1180,8 @@
      "tag": "具体展开",
      "tier": "must",
      "must": true,
-     "freq": 3
+     "freq": 3,
+     "alts": "I would be grateful to know how I can settle into the local way of life."
     },
     {
      "en": "More specifically, I am not sure whether my plan is practical, so I would value your opinion.",
@@ -1542,6 +1552,55 @@
    "分数预期：认真填槽 6~8 分（满分 10）",
    "格式齐全 + 语言基本准确 + 内容贴题 = 二档到三档；<b>拿 9~10 分必须内容扣住题干的具体信息</b>（这是任何模板都给不了的）。所以：模板背到能默写之后就不要再背了，去套真题、改错，把「具体名词」练出来。"
   ]
+ ],
+ "framework": [
+  {
+   "en": "I hope this message finds you well.",
+   "trans": "希望你一切安好。",
+   "cn": "① 问候句：所有信通用；给老师/长辈换 Dear Professor / Dear Sir or Madam。"
+  },
+  {
+   "en": "I am writing to ...（invite you to / express my thanks for / make a complaint about ...）",
+   "trans": "我写信是为了……",
+   "cn": "② 来意句：一句话点明写信目的——换动词就是另一种信（p1s2 里都是现成的）。"
+  },
+  {
+   "en": "To begin with, + 要点①（该类型 s2 必背句）",
+   "trans": "首先，……",
+   "cn": "③ 主体第一点：衔接词开头 + 从第二段对应类型挑第 2 句。"
+  },
+  {
+   "en": "Equally important, + 要点②（s3 / 跨类型补 1~2 句）",
+   "trans": "同样重要的是，……",
+   "cn": "④ 主体第二点：s3 或跨类型混搭；第二段 2~4 句就够。"
+  },
+  {
+   "en": "I would appreciate it if you could ... / Looking forward to your early reply.",
+   "trans": "如蒙……将不胜感激 / 期待您的早日回复。",
+   "cn": "⑤ 收尾（p3 必背）：行动请求或期待回复；落款 Yours sincerely, Li Ming。"
+  }
+ ],
+ "linkers": [
+  {
+   "banned": "First and foremost / Last but not least（句首烂大街）",
+   "better": "To begin with, ... / Finally, ...（必背句里已换高级版）"
+  },
+  {
+   "banned": "In addition, ...",
+   "better": "Besides this, ... / Beyond that, ..."
+  },
+  {
+   "banned": "Furthermore, ...",
+   "better": "Equally important, ... / Just as significant, ..."
+  },
+  {
+   "banned": "I hope you can ...（请求太软）",
+   "better": "I would appreciate it if you could ... / I would be grateful if you could ..."
+  },
+  {
+   "banned": "To be more specific, ...",
+   "better": "To spell it out, ... / To put it another way, ..."
+  }
  ],
  "stats": {
   "items": 59,
