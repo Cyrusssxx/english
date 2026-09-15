@@ -102,11 +102,12 @@ DYN = [
 ]
 
 # ══════════ 二、第二段：1 句引入 + 机制句池 ══════════
-PARA2_SKEL = sent('This phenomenon can be attributed to two major factors.',
-                  '这一现象可以归因于两大因素。',
-                  [[S('This phenomenon', 't'), S(' can be attributed to', 'p'), S(' two major factors', 'o'), S('.', '')]])
+# 万能开头句（2026-09-16 审计后定稿）：a combination of factors 不承诺条数，17 年全部成立
+PARA2_SKEL = sent('This phenomenon can be attributed to a combination of factors.',
+                  '这一现象是多种因素共同作用的结果。',
+                  [[S('This phenomenon', 't'), S(' can be attributed to', 'p'), S(' a combination of factors', 'o'), S('.', '')]])
 PARA2_SKEL['alts'] = {'can be attributed to': 'is largely attributable to（加长版）/ stems from',
-                      'two major factors': 'three major factors（写 3 条）/ several major factors（写 4 条）/ a combination of factors（拿不准就用）'}
+                      'a combination of factors': 'two major factors（写 2 条）/ three major factors（写 3 条）/ several major factors（写 4 条）'}
 
 MECH = [
     (3, '收入', 'As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.',
@@ -176,8 +177,8 @@ P3_LINKERS = [
 # 条数规则（2026-09-16 审计 17 年方案）：适配机制句全是 3~4 条、0 年两条；示范文实写 3 条(5 篇)/4 条(12 篇)
 # → 引入句的条数词必须跟正文条数走；拿不准就用 a combination of factors（不承诺条数）
 P2_FRAMEWORK = [
-    {'en': 'This phenomenon can be attributed to two major factors.', 'trans': '这一现象可以归因于两大因素。',
-     'cn': '引入句：条数词跟着正文走——写 3 条换 three major factors，写 4 条换 several major factors，拿不准就用 a combination of factors（不承诺条数，万能）。'},
+    {'en': 'This phenomenon can be attributed to a combination of factors.', 'trans': '这一现象是多种因素共同作用的结果。',
+     'cn': '通用开头句：不承诺条数，17 年任何图表都成立；想点明条数再换 two / three / several major factors（见下方同义升级，须与正文条数一致）。'},
     {'en': 'Primary among these is + 机制句 ①', 'trans': '其中，首要的一条是……',
      'cn': '第 1 条：高级衔接词开头，接句池里最有力的原因（收入 / 成本 / 观念…）。'},
     {'en': 'Equally important, + 机制句 ②', 'trans': '同样重要的是，……',
@@ -279,7 +280,7 @@ def main():
             ['as much as', '和……一样（不只是）'],
         ],
         'tips': [
-        "串接方式：引入句的条数词跟正文条数走（two / three / several / a combination of factors）；第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。引入句嫌短可用升级版 This trend is largely attributable to ...。",'引入句 8 词 + 机制句挑 3 条 ≈ 55~62 词。',
+        "万能开头：a combination of factors 不承诺条数，什么年份都成立；想点明条数再换 two / three / several major factors（必须与正文条数一致）。第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。",'引入句 10 词 + 机制句挑 3 条 ≈ 55~62 词。',
                  '每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 16 条都写。',
                  '挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。'],
     })
