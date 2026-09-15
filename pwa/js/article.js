@@ -620,7 +620,7 @@ function sentenceHtml(s) {
             <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>${structBtn}
         </div>
         <div class="sent-cn${noCn ? ' no-cn' : ''}" onclick="onCnClick(event,'${s.id}')">
-            <span class="cn-placeholder">${noCn ? '▾ 早期真题 · 逐句译文暂缺' : '▾ 点击查看翻译'}</span>
+            <span class="cn-placeholder">${noCn ? '▾ 本句暂无逐句译文' : '▾ 点击查看翻译'}</span>
             <span class="cn-text">${esc(s.cn || '')}</span>
         </div>`;
     // struct 数据：句下折叠结构树
