@@ -271,18 +271,6 @@
    "note": "{{chart}} 处按图型填 pie / bar / line；句池里挑 1~2 句替换骨架后半段，控制字数，不必全写。",
    "sentences": [
     {
-     "en": "{{item1}} alone accounts for {{percent1}} of the total.",
-     "cn": "{{item1}} 一项就占了总量的 {{percent1}}。",
-     "freq": 3,
-     "tag": "总量"
-    },
-    {
-     "en": "{{item5}} trails with {{percent5}}.",
-     "cn": "{{item5}} 排在最后，占 {{percent5}}。",
-     "freq": 3,
-     "tag": "末位"
-    },
-    {
      "en": "Taken together, the three largest items make up {{percent total}}.",
      "cn": "前三项加起来占 {{percent total}}。",
      "freq": 3,
@@ -419,18 +407,6 @@
    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
    "note": "先看走势再选骨架：只有 1 个事物用 ①；都涨但快慢不同用 ②；有涨有跌用 ③。三个事物时，③ 的第 2 句后面接句池里的 By contrast 那句。",
    "sentences": [
-    {
-     "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-     "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-     "freq": 3,
-     "tag": "上升"
-    },
-    {
-     "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
-     "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
-     "freq": 3,
-     "tag": "下降"
-    },
     {
      "en": "The two moved in the same direction, but not at the same pace.",
      "cn": "两者方向一致，但速度不同。",

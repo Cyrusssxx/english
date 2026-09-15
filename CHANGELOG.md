@@ -1,5 +1,22 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16 去重] 第一段句池删掉与骨架重复的 4 句（50 → 46）
+
+- **用户指出的重复**：静态句池「末位」`{{item5}} trails with {{percent5}}.` 与骨架第四句
+  `{{item4}} rounds off the list at {{percent4}}.` 功能完全相同。
+- **全面比对后删掉 4 句**（同一信息换词版，保留骨架里更短的版本）：
+  - 静态「总量」`{{item1}} alone accounts for {{percent1}} of the total.` ＝ 骨架 t2 `{{item1}} comes first, at {{percent1}}.`
+  - 静态「末位」`{{item5}} trails with {{percent5}}.` ＝ 骨架 t4 `{{item4}} rounds off the list at {{percent4}}.`
+  - 动态「上升」`From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.` ＝ 骨架① t2 `It rose from {{num1}} to {{num2}}, with no real dip.`
+  - 动态「下降」`Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.` ＝ 骨架③ t2 `… while {{item2}} slipped from {{num3}} to {{num4}}.`
+- **方案联动**（标签引用改挂骨架句）：2011 / 2014 / 2019 P1 `f:上升 f:下降` → **t2**（骨架③数据句，
+  一升一降一句带出两事物）；2013 / 2023 P1 `f:上升` → **t2**（骨架①数据句）。
+- **其余段全查过无硬重复**：para2_why 的 16 条机制句角度互不重叠（收入/成本/公共投入是三个主体；
+  职场时间与生活节奏一个讲动机一个讲挤时间）；para3 的主体句与观念句功能不同。
+- **结果**：句池 50 → **46**，17 篇示范重新生成（**152~176 词**，均值 161.7），来源 102 模板句 +
+  128 功能句 + **0 自写句**，`audit_apply.py` 全部通过；小作文审计不受影响。
+- SW en2-63f5501c。
+
 ## [2026-09-16] 速记页划词查词（词组优先）+ 词组表补作文搭配 + 机制句串接指引
 
 - **速记页接入划词查词**（`recite.js` 加 `rcAnno*` 精简模块，`recite.html` 引入 `dict.js`）：

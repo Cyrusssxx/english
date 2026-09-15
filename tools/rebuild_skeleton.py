@@ -180,8 +180,6 @@ def main():
     s = by_id['chart_static']
     set_skeleton(s, STATIC)
     s['sentences'] = [
-        {'en': '{{item1}} alone accounts for {{percent1}} of the total.', 'cn': '{{item1}} 一项就占了总量的 {{percent1}}。', 'freq': 3, 'tag': '总量'},
-        {'en': '{{item5}} trails with {{percent5}}.', 'cn': '{{item5}} 排在最后，占 {{percent5}}。', 'freq': 3, 'tag': '末位'},
         {'en': 'Taken together, the three largest items make up {{percent total}}.', 'cn': '前三项加起来占 {{percent total}}。', 'freq': 3, 'tag': '合计'},
         {'en': 'The pattern is clear: a few items dominate the rest.', 'cn': '格局很清楚：少数几项占了大头。', 'freq': 2, 'tag': '集中度'},
         {'en': 'The gap between the largest and the smallest is wide.', 'cn': '最大项与最小项之间差距很大。', 'freq': 2, 'tag': '差距'},
@@ -193,8 +191,6 @@ def main():
     s['cn'] = DYN[1]['cn']
     s['en_struct'] = DYN[1]['struct']
     s['sentences'] = [
-        {'en': 'From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.', 'cn': '自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。', 'freq': 3, 'tag': '上升'},
-        {'en': 'Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.', 'cn': '同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。', 'freq': 3, 'tag': '下降'},
         {'en': 'The two moved in the same direction, but not at the same pace.', 'cn': '两者方向一致，但速度不同。', 'freq': 3, 'tag': '同向不同速'},
         {'en': 'The gap between the two widened over the period.', 'cn': '两者的差距在这一时期拉大了。', 'freq': 3, 'tag': '差距'},
         {'en': 'Growth was slow at first and then sped up.', 'cn': '增长起初缓慢，后来明显加快。', 'freq': 3, 'tag': '加速'},

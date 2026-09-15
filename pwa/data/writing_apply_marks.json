@@ -15,12 +15,12 @@
    {
     "en": "The two moved in the same direction, but not at the same pace.",
     "cn": "两者方向一致，但速度不同。",
-    "src": "动态图表第一段 · 功能句3"
+    "src": "动态图表第一段 · 功能句1"
    },
    {
     "en": "The gap between the two widened over the period.",
     "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句4"
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -296,7 +296,7 @@
         "x": "两者方向一致，但速度不同。"
        }
       ],
-      "src": "动态图表第一段 · 功能句3",
+      "src": "动态图表第一段 · 功能句1",
       "kind": "func",
       "cov": 1.0,
       "matched": 13,
@@ -319,7 +319,7 @@
         "x": "两者的差距在这一时期拉大了。"
        }
       ],
-      "src": "动态图表第一段 · 功能句4",
+      "src": "动态图表第一段 · 功能句2",
       "kind": "func",
       "cov": 1.0,
       "matched": 9,
@@ -590,7 +590,7 @@
   ]
  },
  "2011": {
-  "wc": 155,
+  "wc": 159,
   "key_phrases": [
    {
     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
@@ -598,19 +598,19 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
-   },
-   {
-    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
-    "src": "动态图表第一段 · 功能句2"
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "The two moved in opposite directions.",
     "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句6"
+    "src": "动态图表第一段 · 功能句4"
+   },
+   {
+    "en": "The gap between the two widened over the period.",
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -734,7 +734,7 @@
   ],
   "paras": [
    {
-    "wc": 38,
+    "wc": 42,
     "sents": [
      {
       "spans": [
@@ -804,24 +804,12 @@
      {
       "spans": [
        {
-        "t": "t",
-        "x": "From "
-       },
-       {
         "t": "s",
-        "x": "2008 "
+        "x": "Chinese brands "
        },
        {
         "t": "t",
-        "x": "to "
-       },
-       {
-        "t": "s",
-        "x": "2009, Chinese brands "
-       },
-       {
-        "t": "t",
-        "x": "rose from "
+        "x": "climbed from "
        },
        {
         "t": "s",
@@ -832,53 +820,12 @@
         "x": "to "
        },
        {
-        "t": "o",
-        "x": "31%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "自2008年至2009年，"
-       },
-       {
         "t": "s",
-        "x": "国产品牌"
+        "x": "31%, "
        },
        {
         "t": "t",
-        "x": "由"
-       },
-       {
-        "t": "s",
-        "x": "26%"
-       },
-       {
-        "t": "t",
-        "x": "升至"
-       },
-       {
-        "t": "s",
-        "x": "31%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句1",
-      "kind": "func",
-      "cov": 0.45,
-      "matched": 5,
-      "wc": 11,
-      "keys": [],
-      "cn": "自2008年至2009年，国产品牌由26%升至31%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Over the same period, "
+        "x": "while "
        },
        {
         "t": "s",
@@ -903,8 +850,28 @@
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "国产品牌"
+       },
+       {
         "t": "t",
-        "x": "同一时期，"
+        "x": "由"
+       },
+       {
+        "t": "s",
+        "x": "26%"
+       },
+       {
+        "t": "t",
+        "x": "升至"
+       },
+       {
+        "t": "s",
+        "x": "31%"
+       },
+       {
+        "t": "t",
+        "x": "，而"
        },
        {
         "t": "s",
@@ -931,13 +898,13 @@
         "x": "。"
        }
       ],
-      "src": "动态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 0.64,
+      "src": "动态图表第一段 · ③ 一升一降 第2句",
+      "kind": "tpl",
+      "cov": 0.47,
       "matched": 7,
-      "wc": 11,
+      "wc": 15,
       "keys": [],
-      "cn": "同一时期，日系品牌由35%降到26%。"
+      "cn": "国产品牌由26%升至31%，而日系品牌由35%降到26%。"
      },
      {
       "spans": [
@@ -952,7 +919,7 @@
         "x": "两者朝相反的方向变化。"
        }
       ],
-      "src": "动态图表第一段 · 功能句6",
+      "src": "动态图表第一段 · 功能句4",
       "kind": "func",
       "cov": 1.0,
       "matched": 6,
@@ -961,6 +928,29 @@
        "The two moved in opposite directions."
       ],
       "cn": "两者朝相反的方向变化。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The gap between the two widened over the period."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "两者的差距在这一时期拉大了。"
+       }
+      ],
+      "src": "动态图表第一段 · 功能句2",
+      "kind": "func",
+      "cov": 1.0,
+      "matched": 9,
+      "wc": 9,
+      "keys": [
+       "The gap between the two widened over the period."
+      ],
+      "cn": "两者的差距在这一时期拉大了。"
      }
     ]
    },
@@ -1260,12 +1250,12 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The pattern is clear: a few items dominate the rest.",
     "cn": "格局很清楚：少数几项占了大头。",
-    "src": "静态图表第一段 · 功能句4"
+    "src": "静态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -1538,7 +1528,7 @@
         "x": "最大项与最小项之间差距很大。"
        }
       ],
-      "src": "静态图表第一段 · 功能句5",
+      "src": "静态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -1561,7 +1551,7 @@
         "x": "格局很清楚：少数几项占了大头。"
        }
       ],
-      "src": "静态图表第一段 · 功能句4",
+      "src": "静态图表第一段 · 功能句2",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -1784,7 +1774,7 @@
   ]
  },
  "2013": {
-  "wc": 163,
+  "wc": 152,
   "key_phrases": [
    {
     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
@@ -1792,14 +1782,14 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
+    "en": "It rose from {{num1}} to {{num2}}, with no real dip.",
+    "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句5"
+    "src": "动态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -1905,7 +1895,7 @@
   ],
   "paras": [
    {
-    "wc": 48,
+    "wc": 37,
     "sents": [
      {
       "spans": [
@@ -1992,23 +1982,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "From "
-       },
-       {
-        "t": "s",
-        "x": "the first year "
-       },
-       {
-        "t": "t",
-        "x": "to "
-       },
-       {
-        "t": "s",
-        "x": "the final year, the proportion of college students taking part-time jobs "
-       },
-       {
-        "t": "t",
-        "x": "rose from "
+        "x": "It rose from "
        },
        {
         "t": "s",
@@ -2019,38 +1993,18 @@
         "x": "to "
        },
        {
-        "t": "o",
-        "x": "88.24%."
+        "t": "s",
+        "x": "88.24%, "
+       },
+       {
+        "t": "t",
+        "x": "with no real dip."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "自"
-       },
-       {
-        "t": "s",
-        "x": "大一"
-       },
-       {
-        "t": "t",
-        "x": "至"
-       },
-       {
-        "t": "s",
-        "x": "大四"
-       },
-       {
-        "t": "t",
-        "x": "，"
-       },
-       {
-        "t": "s",
-        "x": "大学生兼职比例"
-       },
-       {
-        "t": "t",
-        "x": "由"
+        "x": "它由"
        },
        {
         "t": "s",
@@ -2058,7 +2012,7 @@
        },
        {
         "t": "t",
-        "x": "升至"
+        "x": "一路升至"
        },
        {
         "t": "s",
@@ -2066,16 +2020,16 @@
        },
        {
         "t": "t",
-        "x": "。"
+        "x": "，中途没有明显回落。"
        }
       ],
-      "src": "动态图表第一段 · 功能句1",
-      "kind": "func",
-      "cov": 0.24,
-      "matched": 5,
-      "wc": 21,
+      "src": "动态图表第一段 · ① 一条线在走 第2句",
+      "kind": "tpl",
+      "cov": 0.8,
+      "matched": 8,
+      "wc": 10,
       "keys": [],
-      "cn": "自大一至大四，大学生兼职比例由67.77%升至88.24%。"
+      "cn": "它由67.77%一路升至88.24%，中途没有明显回落。"
      },
      {
       "spans": [
@@ -2090,7 +2044,7 @@
         "x": "增长起初缓慢，后来明显加快。"
        }
       ],
-      "src": "动态图表第一段 · 功能句5",
+      "src": "动态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
       "matched": 9,
@@ -2364,7 +2318,7 @@
   ]
  },
  "2014": {
-  "wc": 172,
+  "wc": 176,
   "key_phrases": [
    {
     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
@@ -2372,19 +2326,19 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
-   },
-   {
-    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
-    "src": "动态图表第一段 · 功能句2"
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "The two moved in opposite directions.",
     "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句6"
+    "src": "动态图表第一段 · 功能句4"
+   },
+   {
+    "en": "The gap between the two widened over the period.",
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -2513,7 +2467,7 @@
   ],
   "paras": [
    {
-    "wc": 39,
+    "wc": 43,
     "sents": [
      {
       "spans": [
@@ -2583,24 +2537,12 @@
      {
       "spans": [
        {
-        "t": "t",
-        "x": "From "
-       },
-       {
         "t": "s",
-        "x": "1990 "
+        "x": "The urban population "
        },
        {
         "t": "t",
-        "x": "to "
-       },
-       {
-        "t": "s",
-        "x": "2010, the urban population "
-       },
-       {
-        "t": "t",
-        "x": "rose from "
+        "x": "climbed from "
        },
        {
         "t": "s",
@@ -2611,37 +2553,12 @@
         "x": "to "
        },
        {
-        "t": "o",
-        "x": "670 million."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "自1990年至2010年，"
-       },
-       {
         "t": "s",
-        "x": "城镇人口"
+        "x": "670 million, "
        },
        {
         "t": "t",
-        "x": "由3亿升至6.7亿。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句1",
-      "kind": "func",
-      "cov": 0.36,
-      "matched": 5,
-      "wc": 14,
-      "keys": [],
-      "cn": "自1990年至2010年，城镇人口由3亿升至6.7亿。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Over the same period, "
+        "x": "while "
        },
        {
         "t": "s",
@@ -2666,8 +2583,12 @@
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "城镇人口"
+       },
+       {
         "t": "t",
-        "x": "同一时期，"
+        "x": "由3亿升至6.7亿，而"
        },
        {
         "t": "s",
@@ -2678,13 +2599,13 @@
         "x": "由8.2亿降到6.8亿。"
        }
       ],
-      "src": "动态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 0.5,
+      "src": "动态图表第一段 · ③ 一升一降 第2句",
+      "kind": "tpl",
+      "cov": 0.33,
       "matched": 7,
-      "wc": 14,
+      "wc": 21,
       "keys": [],
-      "cn": "同一时期，乡村人口由8.2亿降到6.8亿。"
+      "cn": "城镇人口由3亿升至6.7亿，而乡村人口由8.2亿降到6.8亿。"
      },
      {
       "spans": [
@@ -2699,7 +2620,7 @@
         "x": "两者朝相反的方向变化。"
        }
       ],
-      "src": "动态图表第一段 · 功能句6",
+      "src": "动态图表第一段 · 功能句4",
       "kind": "func",
       "cov": 1.0,
       "matched": 6,
@@ -2708,6 +2629,29 @@
        "The two moved in opposite directions."
       ],
       "cn": "两者朝相反的方向变化。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The gap between the two widened over the period."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "两者的差距在这一时期拉大了。"
+       }
+      ],
+      "src": "动态图表第一段 · 功能句2",
+      "kind": "func",
+      "cov": 1.0,
+      "matched": 9,
+      "wc": 9,
+      "keys": [
+       "The gap between the two widened over the period."
+      ],
+      "cn": "两者的差距在这一时期拉大了。"
      }
     ]
    },
@@ -3055,7 +2999,7 @@
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
     "cn": "前三项加起来占 {{percent total}}。",
-    "src": "静态图表第一段 · 功能句3"
+    "src": "静态图表第一段 · 功能句1"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -3428,7 +3372,7 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 功能句3",
+      "src": "静态图表第一段 · 功能句1",
       "kind": "func",
       "cov": 0.89,
       "matched": 8,
@@ -3731,7 +3675,7 @@
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
     "cn": "前三项加起来占 {{percent total}}。",
-    "src": "静态图表第一段 · 功能句3"
+    "src": "静态图表第一段 · 功能句1"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -4109,7 +4053,7 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 功能句3",
+      "src": "静态图表第一段 · 功能句1",
       "kind": "func",
       "cov": 0.89,
       "matched": 8,
@@ -4439,7 +4383,7 @@
    {
     "en": "The gap between the two widened over the period.",
     "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句4"
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -4720,7 +4664,7 @@
         "x": "两者的差距在这一时期拉大了。"
        }
       ],
-      "src": "动态图表第一段 · 功能句4",
+      "src": "动态图表第一段 · 功能句2",
       "kind": "func",
       "cov": 1.0,
       "matched": 9,
@@ -5047,7 +4991,7 @@
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
     "cn": "前三项加起来占 {{percent total}}。",
-    "src": "静态图表第一段 · 功能句3"
+    "src": "静态图表第一段 · 功能句1"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -5420,7 +5364,7 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 功能句3",
+      "src": "静态图表第一段 · 功能句1",
       "kind": "func",
       "cov": 0.89,
       "matched": 8,
@@ -5706,7 +5650,7 @@
   ]
  },
  "2019": {
-  "wc": 154,
+  "wc": 158,
   "key_phrases": [
    {
     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
@@ -5714,19 +5658,19 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
-   },
-   {
-    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
-    "src": "动态图表第一段 · 功能句2"
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "The two moved in opposite directions.",
     "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句6"
+    "src": "动态图表第一段 · 功能句4"
+   },
+   {
+    "en": "The gap between the two widened over the period.",
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -5850,7 +5794,7 @@
   ],
   "paras": [
    {
-    "wc": 37,
+    "wc": 41,
     "sents": [
      {
       "spans": [
@@ -5920,24 +5864,12 @@
      {
       "spans": [
        {
-        "t": "t",
-        "x": "From "
-       },
-       {
         "t": "s",
-        "x": "2013 "
+        "x": "The share going on to further study "
        },
        {
         "t": "t",
-        "x": "to "
-       },
-       {
-        "t": "s",
-        "x": "2018, the share going on to further study "
-       },
-       {
-        "t": "t",
-        "x": "rose from "
+        "x": "climbed from "
        },
        {
         "t": "s",
@@ -5948,53 +5880,12 @@
         "x": "to "
        },
        {
-        "t": "o",
-        "x": "34.0%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "自2013年至2018年，"
-       },
-       {
         "t": "s",
-        "x": "升学比例"
+        "x": "34.0%, "
        },
        {
         "t": "t",
-        "x": "由"
-       },
-       {
-        "t": "s",
-        "x": "26.3%"
-       },
-       {
-        "t": "t",
-        "x": "升至"
-       },
-       {
-        "t": "s",
-        "x": "34.0%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句1",
-      "kind": "func",
-      "cov": 0.31,
-      "matched": 5,
-      "wc": 16,
-      "keys": [],
-      "cn": "自2013年至2018年，升学比例由26.3%升至34.0%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Over the same period, "
+        "x": "while "
        },
        {
         "t": "s",
@@ -6019,8 +5910,28 @@
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "升学比例"
+       },
+       {
         "t": "t",
-        "x": "同一时期，"
+        "x": "由"
+       },
+       {
+        "t": "s",
+        "x": "26.3%"
+       },
+       {
+        "t": "t",
+        "x": "升至"
+       },
+       {
+        "t": "s",
+        "x": "34.0%"
+       },
+       {
+        "t": "t",
+        "x": "，而"
        },
        {
         "t": "s",
@@ -6047,13 +5958,13 @@
         "x": "。"
        }
       ],
-      "src": "动态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 0.54,
+      "src": "动态图表第一段 · ③ 一升一降 第2句",
+      "kind": "tpl",
+      "cov": 0.32,
       "matched": 7,
-      "wc": 13,
+      "wc": 22,
       "keys": [],
-      "cn": "同一时期，就业比例由68.1%降到60.7%。"
+      "cn": "升学比例由26.3%升至34.0%，而就业比例由68.1%降到60.7%。"
      },
      {
       "spans": [
@@ -6068,7 +5979,7 @@
         "x": "两者朝相反的方向变化。"
        }
       ],
-      "src": "动态图表第一段 · 功能句6",
+      "src": "动态图表第一段 · 功能句4",
       "kind": "func",
       "cov": 1.0,
       "matched": 6,
@@ -6077,6 +5988,29 @@
        "The two moved in opposite directions."
       ],
       "cn": "两者朝相反的方向变化。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "The gap between the two widened over the period."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "两者的差距在这一时期拉大了。"
+       }
+      ],
+      "src": "动态图表第一段 · 功能句2",
+      "kind": "func",
+      "cov": 1.0,
+      "matched": 9,
+      "wc": 9,
+      "keys": [
+       "The gap between the two widened over the period."
+      ],
+      "cn": "两者的差距在这一时期拉大了。"
      }
     ]
    },
@@ -6373,7 +6307,7 @@
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
     "cn": "前三项加起来占 {{percent total}}。",
-    "src": "静态图表第一段 · 功能句3"
+    "src": "静态图表第一段 · 功能句1"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -6746,7 +6680,7 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 功能句3",
+      "src": "静态图表第一段 · 功能句1",
       "kind": "func",
       "cov": 0.89,
       "matched": 8,
@@ -7057,7 +6991,7 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -7417,7 +7351,7 @@
         "x": "最大项与最小项之间差距很大。"
        }
       ],
-      "src": "静态图表第一段 · 功能句5",
+      "src": "静态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -7749,12 +7683,12 @@
    {
     "en": "The gap between the two widened over the period.",
     "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句4"
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句5"
+    "src": "动态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -8030,7 +7964,7 @@
         "x": "两者的差距在这一时期拉大了。"
        }
       ],
-      "src": "动态图表第一段 · 功能句4",
+      "src": "动态图表第一段 · 功能句2",
       "kind": "func",
       "cov": 1.0,
       "matched": 9,
@@ -8053,7 +7987,7 @@
         "x": "增长起初缓慢，后来明显加快。"
        }
       ],
-      "src": "动态图表第一段 · 功能句5",
+      "src": "动态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
       "matched": 9,
@@ -8332,7 +8266,7 @@
   ]
  },
  "2023": {
-  "wc": 165,
+  "wc": 161,
   "key_phrases": [
    {
     "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
@@ -8340,19 +8274,19 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
+    "en": "It rose from {{num1}} to {{num2}}, with no real dip.",
+    "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句5"
+    "src": "动态图表第一段 · 功能句3"
    },
    {
     "en": "The figure more than doubled over the period.",
     "cn": "这一数字在该时期翻了一倍多。",
-    "src": "动态图表第一段 · 功能句7"
+    "src": "动态图表第一段 · 功能句5"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -8463,7 +8397,7 @@
   ],
   "paras": [
    {
-    "wc": 42,
+    "wc": 38,
     "sents": [
      {
       "spans": [
@@ -8534,23 +8468,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "From "
-       },
-       {
-        "t": "s",
-        "x": "2012 "
-       },
-       {
-        "t": "t",
-        "x": "to "
-       },
-       {
-        "t": "s",
-        "x": "2021, the health literacy rate of Chinese residents "
-       },
-       {
-        "t": "t",
-        "x": "rose from "
+        "x": "It rose from "
        },
        {
         "t": "s",
@@ -8561,22 +8479,18 @@
         "x": "to "
        },
        {
-        "t": "o",
-        "x": "25.40%."
+        "t": "s",
+        "x": "25.40%, "
+       },
+       {
+        "t": "t",
+        "x": "with no real dip."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "自2012年至2021年，"
-       },
-       {
-        "t": "s",
-        "x": "居民健康素养水平"
-       },
-       {
-        "t": "t",
-        "x": "由"
+        "x": "它由"
        },
        {
         "t": "s",
@@ -8584,7 +8498,7 @@
        },
        {
         "t": "t",
-        "x": "升至"
+        "x": "一路升至"
        },
        {
         "t": "s",
@@ -8592,16 +8506,16 @@
        },
        {
         "t": "t",
-        "x": "。"
+        "x": "，中途没有明显回落。"
        }
       ],
-      "src": "动态图表第一段 · 功能句1",
-      "kind": "func",
-      "cov": 0.31,
-      "matched": 5,
-      "wc": 16,
+      "src": "动态图表第一段 · ① 一条线在走 第2句",
+      "kind": "tpl",
+      "cov": 0.8,
+      "matched": 8,
+      "wc": 10,
       "keys": [],
-      "cn": "自2012年至2021年，居民健康素养水平由8.80%升至25.40%。"
+      "cn": "它由8.80%一路升至25.40%，中途没有明显回落。"
      },
      {
       "spans": [
@@ -8616,7 +8530,7 @@
         "x": "增长起初缓慢，后来明显加快。"
        }
       ],
-      "src": "动态图表第一段 · 功能句5",
+      "src": "动态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
       "matched": 9,
@@ -8639,7 +8553,7 @@
         "x": "这一数字在该时期翻了一倍多。"
        }
       ],
-      "src": "动态图表第一段 · 功能句7",
+      "src": "动态图表第一段 · 功能句5",
       "kind": "func",
       "cov": 1.0,
       "matched": 8,
@@ -8989,7 +8903,7 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -9344,7 +9258,7 @@
         "x": "最大项与最小项之间差距很大。"
        }
       ],
-      "src": "静态图表第一段 · 功能句5",
+      "src": "静态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -9649,7 +9563,7 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -10009,7 +9923,7 @@
         "x": "最大项与最小项之间差距很大。"
        }
       ],
-      "src": "静态图表第一段 · 功能句5",
+      "src": "静态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -10351,7 +10265,7 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -10706,7 +10620,7 @@
         "x": "最大项与最小项之间差距很大。"
        }
       ],
-      "src": "静态图表第一段 · 功能句5",
+      "src": "静态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,

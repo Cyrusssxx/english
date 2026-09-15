@@ -4594,8 +4594,8 @@
     "template": "当数量关系呈此消彼长趋势，且具有积极意义又隐藏着问题时，可以采用该思路。From 时间 to 时间, while moderate increase occurred in total ____, ____ experienced a dramatic shift. ____ increased considerably from 数据 to 数据; contrastingly ____ declined from 数据 to 数据. ____ largely because of the joint effects of ____（过渡，引出原因）.（具体分析原因1）Meanwhile,（具体分析原因2）. ____ is a sure indication of ____ achievement. However, we should not ignore the inability of ____ to ____ due to ____（具体阐释问题）. In this sense, we cannot be superficially satisfied with the optimistic figure, but should endeavor to ____."
    },
    "apply": {
-    "apply_en": "The bar chart tracks the urban and rural population from 1990 to 2010. From 1990 to 2010, the urban population rose from 300 million to 670 million. Over the same period, the rural population slipped from 820 million to 680 million. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. Cities have absorbed millions of new residents, and demand for city living has grown with them. As household incomes have grown, city living has moved from a luxury to an everyday necessity. Public spending on infrastructure has made city living far more widely available. People now judge city living by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. What matters most is whether families and schools treat city living as a normal part of life. That is what will decide whether the change lasts.",
-    "apply_cn": "该柱状图记录了1990年到2010年期间城乡人口的变化。自1990年至2010年，城镇人口由3亿升至6.7亿。同一时期，乡村人口由8.2亿降到6.8亿。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。城市吸纳了大量新居民，城市生活的需求随之增长。随着家庭收入提高，城市生活已从奢侈品变成日常必需。公共基础设施投入让城市生活的覆盖面大大增加。人们现在看城市生活好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让城市生活不只属于付得起钱的人。明确的规则和持续投入，比一次性活动更重要。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
+    "apply_en": "The bar chart tracks the urban and rural population from 1990 to 2010. The urban population climbed from 300 million to 670 million, while the rural population slipped from 820 million to 680 million. The two moved in opposite directions. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. Cities have absorbed millions of new residents, and demand for city living has grown with them. As household incomes have grown, city living has moved from a luxury to an everyday necessity. Public spending on infrastructure has made city living far more widely available. People now judge city living by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. What matters most is whether families and schools treat city living as a normal part of life. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图记录了1990年到2010年期间城乡人口的变化。城镇人口由3亿升至6.7亿，而乡村人口由8.2亿降到6.8亿。两者朝相反的方向变化。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。城市吸纳了大量新居民，城市生活的需求随之增长。随着家庭收入提高，城市生活已从奢侈品变成日常必需。公共基础设施投入让城市生活的覆盖面大大增加。人们现在看城市生活好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让城市生活不只属于付得起钱的人。明确的规则和持续投入，比一次性活动更重要。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
     "tips": [
      "柱状图、一升一降（2 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
      "数据要点：the urban population 300 million → 670 million；the rural population 820 million → 680 million。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4684,19 +4684,19 @@
       "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-      "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-      "src": "动态图表第一段 · 功能句1"
-     },
-     {
-      "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
-      "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
-      "src": "动态图表第一段 · 功能句2"
+      "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+      "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+      "src": "动态图表第一段 · 模板第2句"
      },
      {
       "en": "The two moved in opposite directions.",
       "cn": "两者朝相反的方向变化。",
-      "src": "动态图表第一段 · 功能句6"
+      "src": "动态图表第一段 · 功能句4"
+     },
+     {
+      "en": "The gap between the two widened over the period.",
+      "cn": "两者的差距在这一时期拉大了。",
+      "src": "动态图表第一段 · 功能句2"
      },
      {
       "en": "The numbers in the chart are the result of deeper changes.",

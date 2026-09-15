@@ -4135,8 +4135,8 @@
     "template": "该思路适用于描写和分析反映百分比上升的图表。The rate of ____ rises annually from ____% in 年份 to ____% in 年份. The biggest increase occurs in 年份, with the rate ____% higher than a year ago. ____ will become increasingly willing to ____, mainly because of the growing wish to ____. It is reasonable and wise to ____, especially after ____. Another motive is obviously ____. As ____, there will be ____, undoubtedly pushing ____ to ____. It can indeed be beneficial for ____ to ____. However, the risk of ____ should be also considered. To benefit from ____ without ____, ____ should ____."
    },
    "apply": {
-    "apply_en": "The bar chart tracks the proportion of college students taking part-time jobs from the first year to the final year. From the first year to the final year, the proportion of college students taking part-time jobs rose from 67.77% to 88.24%. Growth was slow at first and then sped up.\n\nThe numbers in the chart are the result of deeper changes. Schools now treat part-time work as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge part-time work by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build part-time work into daily routines instead of treating it as an extra. Families matter most: children copy what adults do far more than what they are told. That is what will decide whether the change lasts.",
-    "apply_cn": "该柱状图记录了大一到大四期间大学生兼职比例的变化。自大一至大四，大学生兼职比例由67.77%升至88.24%。增长起初缓慢，后来明显加快。\n\n图里的数字，是更深层变化的结果。学校现在把兼职当成日常安排，而不是可选项。现在用人单位既看成绩，也看经验。人们现在看兼职好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把兼职纳入日常安排，而不是当成额外任务。家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。而这，正是决定这种变化能否持续的关键。",
+    "apply_en": "The bar chart tracks the proportion of college students taking part-time jobs from the first year to the final year. It rose from 67.77% to 88.24%, with no real dip. Growth was slow at first and then sped up.\n\nThe numbers in the chart are the result of deeper changes. Schools now treat part-time work as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge part-time work by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build part-time work into daily routines instead of treating it as an extra. Families matter most: children copy what adults do far more than what they are told. That is what will decide whether the change lasts.",
+    "apply_cn": "该柱状图记录了大一到大四期间大学生兼职比例的变化。它由67.77%一路升至88.24%，中途没有明显回落。增长起初缓慢，后来明显加快。\n\n图里的数字，是更深层变化的结果。学校现在把兼职当成日常安排，而不是可选项。现在用人单位既看成绩，也看经验。人们现在看兼职好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把兼职纳入日常安排，而不是当成额外任务。家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。而这，正是决定这种变化能否持续的关键。",
     "tips": [
      "柱状图、单值逐年上升（1 个事物 / 动态）→ 用 **① 一条线在走 骨架**（适用 2013 · 2023）。",
      "数据要点：the proportion of college students taking part-time jobs 67.77% → 88.24%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4207,14 +4207,14 @@
       "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-      "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-      "src": "动态图表第一段 · 功能句1"
+      "en": "It rose from {{num1}} to {{num2}}, with no real dip.",
+      "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
+      "src": "动态图表第一段 · 模板第2句"
      },
      {
       "en": "Growth was slow at first and then sped up.",
       "cn": "增长起初缓慢，后来明显加快。",
-      "src": "动态图表第一段 · 功能句5"
+      "src": "动态图表第一段 · 功能句3"
      },
      {
       "en": "The numbers in the chart are the result of deeper changes.",

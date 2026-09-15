@@ -23,12 +23,12 @@
    {
     "en": "The two moved in the same direction, but not at the same pace.",
     "cn": "两者方向一致，但速度不同。",
-    "src": "动态图表第一段 · 功能句3"
+    "src": "动态图表第一段 · 功能句1"
    },
    {
     "en": "The gap between the two widened over the period.",
     "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句4"
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -85,11 +85,11 @@
      ],
      [
       "f",
-      3
+      1
      ],
      [
       "f",
-      4
+      2
      ]
     ]
    },
@@ -287,8 +287,8 @@
  },
  "2011": {
   "title": "Part B 图表作文：汽车品牌市场份额变化",
-  "apply_en": "The bar chart tracks the market shares of Chinese, Japanese and American car brands from 2008 to 2009. From 2008 to 2009, Chinese brands rose from 26% to 31%. Over the same period, Japanese brands slipped from 35% to 26%. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. People now judge car ownership by what it does for them rather than by what others think. Public spending on infrastructure has made car ownership far more widely available. Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands. Cities have absorbed millions of new residents, and demand for car ownership has grown with them.\n\nOn balance, this is a change worth welcoming. Companies can make domestic car brands cheaper and easier to use, so that they reach more people. Clear rules and steady funding matter more than one-off campaigns. That is what will decide whether the change lasts.",
-  "apply_cn": "该柱状图记录了2008年到2009年期间国产、日系与美系汽车品牌的市场份额的变化。自2008年至2009年，国产品牌由26%升至31%。同一时期，日系品牌由35%降到26%。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。人们现在看汽车保有量好不好用，而不是看别人怎么想。公共基础设施投入让汽车保有量的覆盖面大大增加。国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。城市吸纳了大量新居民，汽车保有量的需求随之增长。\n\n总体来看，这是值得欢迎的变化。企业可以把国产汽车品牌做得更便宜好用，让它覆盖更多人。明确的规则和持续投入，比一次性活动更重要。而这，正是决定这种变化能否持续的关键。",
+  "apply_en": "The bar chart tracks the market shares of Chinese, Japanese and American car brands from 2008 to 2009. Chinese brands climbed from 26% to 31%, while Japanese brands slipped from 35% to 26%. The two moved in opposite directions. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. People now judge car ownership by what it does for them rather than by what others think. Public spending on infrastructure has made car ownership far more widely available. Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands. Cities have absorbed millions of new residents, and demand for car ownership has grown with them.\n\nOn balance, this is a change worth welcoming. Companies can make domestic car brands cheaper and easier to use, so that they reach more people. Clear rules and steady funding matter more than one-off campaigns. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了2008年到2009年期间国产、日系与美系汽车品牌的市场份额的变化。国产品牌由26%升至31%，而日系品牌由35%降到26%。两者朝相反的方向变化。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。人们现在看汽车保有量好不好用，而不是看别人怎么想。公共基础设施投入让汽车保有量的覆盖面大大增加。国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。城市吸纳了大量新居民，汽车保有量的需求随之增长。\n\n总体来看，这是值得欢迎的变化。企业可以把国产汽车品牌做得更便宜好用，让它覆盖更多人。明确的规则和持续投入，比一次性活动更重要。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "柱状图、有升有降（3 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
    "数据要点：Chinese brands 26% → 31%；Japanese brands 35% → 26%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -302,19 +302,19 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
-   },
-   {
-    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
-    "src": "动态图表第一段 · 功能句2"
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "The two moved in opposite directions.",
     "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句6"
+    "src": "动态图表第一段 · 功能句4"
+   },
+   {
+    "en": "The gap between the two widened over the period.",
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -371,16 +371,16 @@
       1
      ],
      [
-      "f",
-      1
-     ],
-     [
-      "f",
+      "t",
       2
      ],
      [
       "f",
-      6
+      4
+     ],
+     [
+      "f",
+      2
      ]
     ]
    },
@@ -609,12 +609,12 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The pattern is clear: a few items dominate the rest.",
     "cn": "格局很清楚：少数几项占了大头。",
-    "src": "静态图表第一段 · 功能句4"
+    "src": "静态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -675,11 +675,11 @@
      ],
      [
       "f",
-      5
+      3
      ],
      [
       "f",
-      4
+      2
      ]
     ]
    },
@@ -853,8 +853,8 @@
  },
  "2013": {
   "title": "Part B 大作文：大学生兼职比例柱状图",
-  "apply_en": "The bar chart tracks the proportion of college students taking part-time jobs from the first year to the final year. From the first year to the final year, the proportion of college students taking part-time jobs rose from 67.77% to 88.24%. Growth was slow at first and then sped up.\n\nThe numbers in the chart are the result of deeper changes. Schools now treat part-time work as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge part-time work by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build part-time work into daily routines instead of treating it as an extra. Families matter most: children copy what adults do far more than what they are told. That is what will decide whether the change lasts.",
-  "apply_cn": "该柱状图记录了大一到大四期间大学生兼职比例的变化。自大一至大四，大学生兼职比例由67.77%升至88.24%。增长起初缓慢，后来明显加快。\n\n图里的数字，是更深层变化的结果。学校现在把兼职当成日常安排，而不是可选项。现在用人单位既看成绩，也看经验。人们现在看兼职好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把兼职纳入日常安排，而不是当成额外任务。家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。而这，正是决定这种变化能否持续的关键。",
+  "apply_en": "The bar chart tracks the proportion of college students taking part-time jobs from the first year to the final year. It rose from 67.77% to 88.24%, with no real dip. Growth was slow at first and then sped up.\n\nThe numbers in the chart are the result of deeper changes. Schools now treat part-time work as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge part-time work by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build part-time work into daily routines instead of treating it as an extra. Families matter most: children copy what adults do far more than what they are told. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了大一到大四期间大学生兼职比例的变化。它由67.77%一路升至88.24%，中途没有明显回落。增长起初缓慢，后来明显加快。\n\n图里的数字，是更深层变化的结果。学校现在把兼职当成日常安排，而不是可选项。现在用人单位既看成绩，也看经验。人们现在看兼职好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把兼职纳入日常安排，而不是当成额外任务。家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "柱状图、单值逐年上升（1 个事物 / 动态）→ 用 **① 一条线在走 骨架**（适用 2013 · 2023）。",
    "数据要点：the proportion of college students taking part-time jobs 67.77% → 88.24%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -868,14 +868,14 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
+    "en": "It rose from {{num1}} to {{num2}}, with no real dip.",
+    "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句5"
+    "src": "动态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -932,12 +932,12 @@
       1
      ],
      [
-      "f",
-      1
+      "t",
+      2
      ],
      [
       "f",
-      5
+      3
      ]
     ]
    },
@@ -1103,8 +1103,8 @@
  },
  "2014": {
   "title": "Part B 大作文：城市与乡村人口的变化",
-  "apply_en": "The bar chart tracks the urban and rural population from 1990 to 2010. From 1990 to 2010, the urban population rose from 300 million to 670 million. Over the same period, the rural population slipped from 820 million to 680 million. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. Cities have absorbed millions of new residents, and demand for city living has grown with them. As household incomes have grown, city living has moved from a luxury to an everyday necessity. Public spending on infrastructure has made city living far more widely available. People now judge city living by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. What matters most is whether families and schools treat city living as a normal part of life. That is what will decide whether the change lasts.",
-  "apply_cn": "该柱状图记录了1990年到2010年期间城乡人口的变化。自1990年至2010年，城镇人口由3亿升至6.7亿。同一时期，乡村人口由8.2亿降到6.8亿。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。城市吸纳了大量新居民，城市生活的需求随之增长。随着家庭收入提高，城市生活已从奢侈品变成日常必需。公共基础设施投入让城市生活的覆盖面大大增加。人们现在看城市生活好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让城市生活不只属于付得起钱的人。明确的规则和持续投入，比一次性活动更重要。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
+  "apply_en": "The bar chart tracks the urban and rural population from 1990 to 2010. The urban population climbed from 300 million to 670 million, while the rural population slipped from 820 million to 680 million. The two moved in opposite directions. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. Cities have absorbed millions of new residents, and demand for city living has grown with them. As household incomes have grown, city living has moved from a luxury to an everyday necessity. Public spending on infrastructure has made city living far more widely available. People now judge city living by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. What matters most is whether families and schools treat city living as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了1990年到2010年期间城乡人口的变化。城镇人口由3亿升至6.7亿，而乡村人口由8.2亿降到6.8亿。两者朝相反的方向变化。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。城市吸纳了大量新居民，城市生活的需求随之增长。随着家庭收入提高，城市生活已从奢侈品变成日常必需。公共基础设施投入让城市生活的覆盖面大大增加。人们现在看城市生活好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让城市生活不只属于付得起钱的人。明确的规则和持续投入，比一次性活动更重要。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "柱状图、一升一降（2 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
    "数据要点：the urban population 300 million → 670 million；the rural population 820 million → 680 million。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -1118,19 +1118,19 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
-   },
-   {
-    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
-    "src": "动态图表第一段 · 功能句2"
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "The two moved in opposite directions.",
     "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句6"
+    "src": "动态图表第一段 · 功能句4"
+   },
+   {
+    "en": "The gap between the two widened over the period.",
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -1192,16 +1192,16 @@
       1
      ],
      [
-      "f",
-      1
-     ],
-     [
-      "f",
+      "t",
       2
      ],
      [
       "f",
-      6
+      4
+     ],
+     [
+      "f",
+      2
      ]
     ]
    },
@@ -1439,7 +1439,7 @@
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
     "cn": "前三项加起来占 {{percent total}}。",
-    "src": "静态图表第一段 · 功能句3"
+    "src": "静态图表第一段 · 功能句1"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -1509,7 +1509,7 @@
      ],
      [
       "f",
-      3
+      1
      ]
     ]
    },
@@ -1755,7 +1755,7 @@
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
     "cn": "前三项加起来占 {{percent total}}。",
-    "src": "静态图表第一段 · 功能句3"
+    "src": "静态图表第一段 · 功能句1"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -1830,7 +1830,7 @@
      ],
      [
       "f",
-      3
+      1
      ]
     ]
    },
@@ -2070,7 +2070,7 @@
    {
     "en": "The gap between the two widened over the period.",
     "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句4"
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -2132,7 +2132,7 @@
      ],
      [
       "f",
-      4
+      2
      ]
     ]
    },
@@ -2366,7 +2366,7 @@
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
     "cn": "前三项加起来占 {{percent total}}。",
-    "src": "静态图表第一段 · 功能句3"
+    "src": "静态图表第一段 · 功能句1"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -2436,7 +2436,7 @@
      ],
      [
       "f",
-      3
+      1
      ]
     ]
    },
@@ -2650,8 +2650,8 @@
  },
  "2019": {
   "title": "Part B 大作文：某高校2013年和2018年本科毕业生去向统计柱状图",
-  "apply_en": "The bar chart tracks graduates' destinations from 2013 to 2018. From 2013 to 2018, the share going on to further study rose from 26.3% to 34.0%. Over the same period, the share entering employment slipped from 68.1% to 60.7%. The two moved in opposite directions.\n\nThe numbers in the chart are the result of deeper changes. Employers now look for experience as much as for grades. Schools now treat career planning as part of the routine rather than an optional extra. People now judge career planning by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build career planning into daily routines instead of treating it as an extra. What matters most is whether families and schools treat career planning as a normal part of life. That is what will decide whether the change lasts.",
-  "apply_cn": "该柱状图记录了2013年到2018年期间毕业生去向的变化。自2013年至2018年，升学比例由26.3%升至34.0%。同一时期，就业比例由68.1%降到60.7%。两者朝相反的方向变化。\n\n图里的数字，是更深层变化的结果。现在用人单位既看成绩，也看经验。学校现在把职业规划当成日常安排，而不是可选项。人们现在看职业规划好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把职业规划纳入日常安排，而不是当成额外任务。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
+  "apply_en": "The bar chart tracks graduates' destinations from 2013 to 2018. The share going on to further study climbed from 26.3% to 34.0%, while the share entering employment slipped from 68.1% to 60.7%. The two moved in opposite directions. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. Employers now look for experience as much as for grades. Schools now treat career planning as part of the routine rather than an optional extra. People now judge career planning by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a change worth welcoming. Schools can build career planning into daily routines instead of treating it as an extra. What matters most is whether families and schools treat career planning as a normal part of life. That is what will decide whether the change lasts.",
+  "apply_cn": "该柱状图记录了2013年到2018年期间毕业生去向的变化。升学比例由26.3%升至34.0%，而就业比例由68.1%降到60.7%。两者朝相反的方向变化。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。现在用人单位既看成绩，也看经验。学校现在把职业规划当成日常安排，而不是可选项。人们现在看职业规划好不好用，而不是看别人怎么想。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。\n\n总体来看，这是值得欢迎的变化。学校可以把职业规划纳入日常安排，而不是当成额外任务。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "柱状图、两年对比变化（3 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
    "数据要点：the share going on to further study 26.3% → 34.0%；the share entering employment 68.1% → 60.7%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -2665,19 +2665,19 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
-   },
-   {
-    "en": "Over the same period, {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "同一时期，{{item2}} 由 {{num3}} 降到 {{num4}}。",
-    "src": "动态图表第一段 · 功能句2"
+    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
+    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "The two moved in opposite directions.",
     "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句6"
+    "src": "动态图表第一段 · 功能句4"
+   },
+   {
+    "en": "The gap between the two widened over the period.",
+    "cn": "两者的差距在这一时期拉大了。",
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -2734,16 +2734,16 @@
       1
      ],
      [
-      "f",
-      1
-     ],
-     [
-      "f",
+      "t",
       2
      ],
      [
       "f",
-      6
+      4
+     ],
+     [
+      "f",
+      2
      ]
     ]
    },
@@ -2977,7 +2977,7 @@
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
     "cn": "前三项加起来占 {{percent total}}。",
-    "src": "静态图表第一段 · 功能句3"
+    "src": "静态图表第一段 · 功能句1"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -3047,7 +3047,7 @@
      ],
      [
       "f",
-      3
+      1
      ]
     ]
    },
@@ -3293,7 +3293,7 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -3368,7 +3368,7 @@
      ],
      [
       "f",
-      5
+      3
      ]
     ]
    },
@@ -3596,12 +3596,12 @@
    {
     "en": "The gap between the two widened over the period.",
     "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句4"
+    "src": "动态图表第一段 · 功能句2"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句5"
+    "src": "动态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -3658,11 +3658,11 @@
      ],
      [
       "f",
-      4
+      2
      ],
      [
       "f",
-      5
+      3
      ]
     ]
    },
@@ -3860,8 +3860,8 @@
  },
  "2023": {
   "title": "Part B 大作文：2012—2021年我国居民健康素养水平变化趋势",
-  "apply_en": "The line chart tracks the health literacy rate of Chinese residents from 2012 to 2021. From 2012 to 2021, the health literacy rate of Chinese residents rose from 8.80% to 25.40%. Growth was slow at first and then sped up. The figure more than doubled over the period.\n\nThe numbers in the chart are the result of deeper changes. Public spending on infrastructure has made health literacy far more widely available. People now judge health literacy by what it does for them rather than by what others think. Sitting all day has turned health literacy from a hobby into a practical need. Schools now treat health literacy as part of the routine rather than an optional extra.\n\nOn balance, this is a change worth welcoming. Media should report on health literacy honestly, without exaggerating its benefits or its risks. Clear rules and steady funding matter more than one-off campaigns. Individuals should choose what fits their own situation rather than follow the crowd. That is what will decide whether the change lasts.",
-  "apply_cn": "该折线图记录了2012年到2021年期间居民健康素养水平的变化。自2012年至2021年，居民健康素养水平由8.80%升至25.40%。增长起初缓慢，后来明显加快。这一数字在该时期翻了一倍多。\n\n图里的数字，是更深层变化的结果。公共基础设施投入让健康素养的覆盖面大大增加。人们现在看健康素养好不好用，而不是看别人怎么想。整天坐着，让健康素养从爱好变成了实际需要。学校现在把健康素养当成日常安排，而不是可选项。\n\n总体来看，这是值得欢迎的变化。媒体应如实报道健康素养，既不夸大好处，也不夸大风险。明确的规则和持续投入，比一次性活动更重要。个人应按自身情况选择，而不是随大流。而这，正是决定这种变化能否持续的关键。",
+  "apply_en": "The line chart tracks the health literacy rate of Chinese residents from 2012 to 2021. It rose from 8.80% to 25.40%, with no real dip. Growth was slow at first and then sped up. The figure more than doubled over the period.\n\nThe numbers in the chart are the result of deeper changes. Public spending on infrastructure has made health literacy far more widely available. People now judge health literacy by what it does for them rather than by what others think. Sitting all day has turned health literacy from a hobby into a practical need. Schools now treat health literacy as part of the routine rather than an optional extra.\n\nOn balance, this is a change worth welcoming. Media should report on health literacy honestly, without exaggerating its benefits or its risks. Clear rules and steady funding matter more than one-off campaigns. Individuals should choose what fits their own situation rather than follow the crowd. That is what will decide whether the change lasts.",
+  "apply_cn": "该折线图记录了2012年到2021年期间居民健康素养水平的变化。它由8.80%一路升至25.40%，中途没有明显回落。增长起初缓慢，后来明显加快。这一数字在该时期翻了一倍多。\n\n图里的数字，是更深层变化的结果。公共基础设施投入让健康素养的覆盖面大大增加。人们现在看健康素养好不好用，而不是看别人怎么想。整天坐着，让健康素养从爱好变成了实际需要。学校现在把健康素养当成日常安排，而不是可选项。\n\n总体来看，这是值得欢迎的变化。媒体应如实报道健康素养，既不夸大好处，也不夸大风险。明确的规则和持续投入，比一次性活动更重要。个人应按自身情况选择，而不是随大流。而这，正是决定这种变化能否持续的关键。",
   "tips": [
    "折线图、单线持续升（1 个事物 / 动态）→ 用 **① 一条线在走 骨架**（适用 2013 · 2023）。",
    "数据要点：the health literacy rate of Chinese residents 8.80% → 25.40%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -3875,19 +3875,19 @@
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "From {{time1}} to {{time2}}, {{item1}} rose from {{num1}} to {{num2}}.",
-    "cn": "自 {{time1}} 至 {{time2}}，{{item1}} 由 {{num1}} 升至 {{num2}}。",
-    "src": "动态图表第一段 · 功能句1"
+    "en": "It rose from {{num1}} to {{num2}}, with no real dip.",
+    "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
+    "src": "动态图表第一段 · 模板第2句"
    },
    {
     "en": "Growth was slow at first and then sped up.",
     "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句5"
+    "src": "动态图表第一段 · 功能句3"
    },
    {
     "en": "The figure more than doubled over the period.",
     "cn": "这一数字在该时期翻了一倍多。",
-    "src": "动态图表第一段 · 功能句7"
+    "src": "动态图表第一段 · 功能句5"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -3949,16 +3949,16 @@
       1
      ],
      [
+      "t",
+      2
+     ],
+     [
       "f",
-      1
+      3
      ],
      [
       "f",
       5
-     ],
-     [
-      "f",
-      7
      ]
     ]
    },
@@ -4160,7 +4160,7 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -4230,7 +4230,7 @@
      ],
      [
       "f",
-      5
+      3
      ]
     ]
    },
@@ -4464,7 +4464,7 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -4539,7 +4539,7 @@
      ],
      [
       "f",
-      5
+      3
      ]
     ]
    },
@@ -4777,7 +4777,7 @@
    {
     "en": "The gap between the largest and the smallest is wide.",
     "cn": "最大项与最小项之间差距很大。",
-    "src": "静态图表第一段 · 功能句5"
+    "src": "静态图表第一段 · 功能句3"
    },
    {
     "en": "The numbers in the chart are the result of deeper changes.",
@@ -4847,7 +4847,7 @@
      ],
      [
       "f",
-      5
+      3
      ]
     ]
    },
