@@ -4396,6 +4396,9 @@ html.dark .wr-frame-title, html.dark .rc-frame-title { color: #5eead4; }
 .phrase-zone .pz-ex { font-family: Georgia, "Times New Roman", serif; font-size: .93rem; line-height: 1.65; color: var(--text); margin-top: 4px; }
 .phrase-zone .pz-ex mark.pz-hl { background: #fff3b0; color: inherit; padding: 0 2px; border-radius: 3px; }
 html.dark .phrase-zone .pz-ex mark.pz-hl { background: #6b5d1e; }
+/* 例句里的词组（annotate 标的 .phrase）在词组区染淡黄，突出本条主角 */
+.phrase-zone .pz-ex .phrase { background: #fff3b0; padding: 0 2px; border-radius: 3px; }
+html.dark .phrase-zone .pz-ex .phrase { background: #6b5d1e; }
 .phrase-zone .pz-ex-cn { font-size: .83rem; color: var(--text-light); line-height: 1.6; margin-top: 2px; }
 
 .rc-collapse > summary.rc-h2 {

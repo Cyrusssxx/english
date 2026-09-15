@@ -577,6 +577,8 @@ function renderArticle() {
         html += '</div>';
     });
     document.getElementById('readPane').innerHTML = html;
+    // 精读模式：任何重渲染路径都重建本篇词组区（幂等，词典未就绪时留空待 enrichRender 补）
+    renderPhraseZone();
 }
 
 function sentenceHtml(s) {
@@ -1407,16 +1409,21 @@ function collectArticlePhrases() {
 /** 词组区 HTML（词组 + 释义 + 文中例句，例句内词组 <mark> 高亮，例句带中文） */
 function buildPhraseZoneHtml(rows) {
     if (!rows.length) return '';
-    const hl = (key, text) => {
-        const escT = esc(text);
-        const re = new RegExp('\\b(' + key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')\\b', 'gi');
+    // 例句：优先用正文同款标注（annotate）→ 例句里词/词组可点查释义；找不到句子时降级为纯文本 + 词组高亮
+    const exHtml = row => {
+        const s = (article.sentences || []).find(x => x.id === row.sid);
+        if (s && typeof annotate === 'function') {
+            try { return annotate(s).html; } catch (e) { /* 降级 */ }
+        }
+        const escT = esc(row.en);
+        const re = new RegExp('\\b(' + row.key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')\\b', 'gi');
         return escT.replace(re, '<mark class="pz-hl">$1</mark>');
     };
-    return `<div class="pz-head">📚 本篇词组 <span class="pz-count">${rows.length} 条</span><span class="pz-tip">精读模式 · 词组出自本篇文章 · 点词查释义</span></div>
+    return `<div class="pz-head">📚 本篇词组 <span class="pz-count">${rows.length} 条</span><span class="pz-tip">精读模式 · 均出自本文原句，按出现顺序</span></div>
         <div class="pz-list">${rows.map(x => `
             <div class="pz-item">
                 <div class="pz-ph"><b>${esc(x.key)}</b> <span class="pz-meaning">${esc(x.meaning)}</span></div>
-                <div class="pz-ex">${hl(x.key, x.en)}</div>
+                <div class="pz-ex">${exHtml(x)}</div>
                 ${x.cn ? `<div class="pz-ex-cn">${esc(x.cn)}</div>` : ''}
             </div>`).join('')}
         </div>`;
@@ -1424,12 +1431,15 @@ function buildPhraseZoneHtml(rows) {
 
 let _phraseZoneHtml = null;   // 缓存（重渲染不重复扫描）
 
-/** 渲染到正文下方（只渲染一次，之后随精读开关显隐） */
+/** 渲染到正文下方（幂等；空结果不缓存——首帧词典未加载时不把空结果缓存死） */
 function renderPhraseZone() {
     const pane = document.getElementById('readPane');
     if (!pane || document.getElementById('phraseZone')) return;
-    if (!(article && article.sentences && article.sentences.length)) return;
-    if (_phraseZoneHtml === null) _phraseZoneHtml = buildPhraseZoneHtml(collectArticlePhrases());
+    // 写作模块（范文/套用）无逐句正文，不渲染词组区
+    if (!article || article.type === 'writing_a' || article.type === 'writing_b') return;
+    if (!(article.sentences && article.sentences.length)) return;
+    if (!_phraseZoneHtml) _phraseZoneHtml = buildPhraseZoneHtml(collectArticlePhrases());
+    if (!_phraseZoneHtml) return;   // 词典未就绪 → 留待数据就绪后重建
     pane.insertAdjacentHTML('beforeend', `<div id="phraseZone" class="phrase-zone">${_phraseZoneHtml}</div>`);
     syncPhraseZone(cnAll);
 }
