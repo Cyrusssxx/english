@@ -1,16 +1,21 @@
 {
  "2010": {
-  "wc": 165,
+  "wc": 177,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
-    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
+    "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
+    "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
     "src": "动态图表第一段 · 模板第2句"
+   },
+   {
+    "en": "By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
+    "cn": "相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
+    "src": "动态图表第一段 · 模板第3句"
    },
    {
     "en": "The two moved in the same direction, but not at the same pace.",
@@ -18,13 +23,8 @@
     "src": "动态图表第一段 · 功能句1"
    },
    {
-    "en": "The gap between the two widened over the period.",
-    "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句2"
-   },
-   {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -43,8 +43,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -53,13 +53,13 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
    },
    {
-    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
-    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+    "en": "Clear rules and steady funding matter more than one-off campaigns.",
+    "cn": "明确的规则和持续投入，比一次性活动更重要。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -72,14 +72,14 @@
    },
    {
     "name": "item1",
-    "en": "those in developing countries",
-    "cn": "发展中国家",
+    "en": "subscriptions in developing countries",
+    "cn": "发展中国家的手机用户数",
     "para": "第一段"
    },
    {
     "name": "item2",
-    "en": "those in developed countries",
-    "cn": "发达国家",
+    "en": "subscriptions in developed countries",
+    "cn": "发达国家的手机用户数",
     "para": "第一段"
    },
    {
@@ -139,7 +139,7 @@
   ],
   "paras": [
    {
-    "wc": 51,
+    "wc": 61,
     "sents": [
      {
       "spans": [
@@ -153,7 +153,7 @@
        },
        {
         "t": "t",
-        "x": "chart tracks "
+        "x": "chart above clearly illustrates the changes in "
        },
        {
         "t": "s",
@@ -187,7 +187,7 @@
        },
        {
         "t": "t",
-        "x": "图记录了2000年到2008年期间"
+        "x": "图清晰地展示了2000年到2008年期间"
        },
        {
         "t": "s",
@@ -200,21 +200,25 @@
       ],
       "src": "动态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.5,
-      "matched": 5,
-      "wc": 10,
+      "cov": 0.67,
+      "matched": 10,
+      "wc": 15,
       "keys": [],
-      "cn": "该柱状图记录了2000年到2008年期间手机用户数的变化。"
+      "cn": "该柱状图清晰地展示了2000年到2008年期间手机用户数的变化。"
      },
      {
       "spans": [
        {
+        "t": "t",
+        "x": "During this period, "
+       },
+       {
         "t": "s",
-        "x": "Those in developing countries "
+        "x": "subscriptions in developing countries "
        },
        {
         "t": "t",
-        "x": "climbed from "
+        "x": "rose sharply from "
        },
        {
         "t": "s",
@@ -225,20 +229,45 @@
         "x": "to "
        },
        {
+        "t": "o",
+        "x": "4 billion."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "在此期间，"
+       },
+       {
         "t": "s",
-        "x": "4 billion, "
+        "x": "发展中国家的手机用户数"
        },
        {
         "t": "t",
-        "x": "and "
+        "x": "由5亿大幅升至40亿。"
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.47,
+      "matched": 7,
+      "wc": 15,
+      "keys": [],
+      "cn": "在此期间，发展中国家的手机用户数由5亿大幅升至40亿。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "By contrast, the figure for "
        },
        {
         "t": "s",
-        "x": "those in developed countries "
+        "x": "subscriptions in developed countries "
        },
        {
         "t": "t",
-        "x": "went from "
+        "x": "saw a modest increase, climbing from "
        },
        {
         "t": "s",
@@ -254,34 +283,30 @@
        },
        {
         "t": "t",
-        "x": "as well."
+        "x": "over the same period."
        }
       ],
       "spans_cn": [
        {
-        "t": "s",
-        "x": "发展中国家"
-       },
-       {
         "t": "t",
-        "x": "由5亿升至40亿，"
+        "x": "相比之下，"
        },
        {
         "t": "s",
-        "x": "发达国家"
+        "x": "发达国家的手机用户数"
        },
        {
         "t": "t",
-        "x": "也从7亿升到10亿。"
+        "x": "的数字增幅温和，由7亿增至10亿。"
        }
       ],
-      "src": "动态图表第一段 · 模板第2句",
+      "src": "动态图表第一段 · 模板第3句",
       "kind": "tpl",
-      "cov": 0.36,
-      "matched": 9,
-      "wc": 25,
+      "cov": 0.67,
+      "matched": 16,
+      "wc": 24,
       "keys": [],
-      "cn": "发展中国家由5亿升至40亿，发达国家也从7亿升到10亿。"
+      "cn": "相比之下，发达国家的手机用户数的数字增幅温和，由7亿增至10亿。"
      },
      {
       "spans": [
@@ -305,57 +330,34 @@
        "The two moved in the same direction, but not at the same pace."
       ],
       "cn": "两者方向一致，但速度不同。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The gap between the two widened over the period."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "两者的差距在这一时期拉大了。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "The gap between the two widened over the period."
-      ],
-      "cn": "两者的差距在这一时期拉大了。"
      }
     ]
    },
    {
-    "wc": 61,
+    "wc": 60,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -471,30 +473,30 @@
     ]
    },
    {
-    "wc": 53,
+    "wc": 56,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -537,84 +539,73 @@
       "spans": [
        {
         "t": "t",
-        "x": "What matters most is whether families and schools treat "
-       },
-       {
-        "t": "s",
-        "x": "mobile phone use "
-       },
-       {
-        "t": "t",
-        "x": "as a normal part of life."
+        "x": "Clear rules and steady funding matter more than one-off campaigns."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。"
+        "x": "明确的规则和持续投入，比一次性活动更重要。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句8",
       "kind": "func",
-      "cov": 0.83,
-      "matched": 15,
-      "wc": 18,
-      "keys": [],
-      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。"
+      "cov": 1.0,
+      "matched": 10,
+      "wc": 10,
+      "keys": [
+       "Clear rules and steady funding matter more than one-off campaigns."
+      ],
+      "cn": "明确的规则和持续投入，比一次性活动更重要。"
      },
      {
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2011": {
-  "wc": 159,
+  "wc": 178,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
+    "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "The two moved in opposite directions.",
-    "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句4"
+    "en": "By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.",
+    "cn": "相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。",
+    "src": "动态图表第一段 · 模板第3句"
    },
    {
-    "en": "The gap between the two widened over the period.",
-    "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句2"
-   },
-   {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -638,8 +629,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句7"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -653,8 +644,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -734,7 +725,7 @@
   ],
   "paras": [
    {
-    "wc": 42,
+    "wc": 51,
     "sents": [
      {
       "spans": [
@@ -748,11 +739,19 @@
        },
        {
         "t": "t",
-        "x": "chart tracks "
+        "x": "chart above clearly illustrates the sharp contrast in "
        },
        {
         "t": "s",
-        "x": "the market shares of Chinese, Japanese and American car brands "
+        "x": "the market shares of Chinese, Japanese "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "American car brands between Chinese brands and Japanese brands "
        },
        {
         "t": "t",
@@ -782,7 +781,7 @@
        },
        {
         "t": "t",
-        "x": "图记录了2008年到2009年期间"
+        "x": "图清晰地展示了2008年到2009年期间"
        },
        {
         "t": "s",
@@ -790,26 +789,46 @@
        },
        {
         "t": "t",
-        "x": "的变化。"
+        "x": "在"
+       },
+       {
+        "t": "s",
+        "x": "国产品牌"
+       },
+       {
+        "t": "t",
+        "x": "与"
+       },
+       {
+        "t": "s",
+        "x": "日系品牌"
+       },
+       {
+        "t": "t",
+        "x": "之间的鲜明反差。"
        }
       ],
-      "src": "动态图表第一段 · 模板第1句",
+      "src": "动态图表第一段 · ③ 一升一降 第1句",
       "kind": "tpl",
-      "cov": 0.28,
-      "matched": 5,
-      "wc": 18,
+      "cov": 0.4,
+      "matched": 12,
+      "wc": 30,
       "keys": [],
-      "cn": "该柱状图记录了2008年到2009年期间国产、日系与美系汽车品牌的市场份额的变化。"
+      "cn": "该柱状图清晰地展示了2008年到2009年期间国产、日系与美系汽车品牌的市场份额在国产品牌与日系品牌之间的鲜明反差。"
      },
      {
       "spans": [
+       {
+        "t": "t",
+        "x": "During this period, "
+       },
        {
         "t": "s",
         "x": "Chinese brands "
        },
        {
         "t": "t",
-        "x": "climbed from "
+        "x": "rose sharply from "
        },
        {
         "t": "s",
@@ -820,12 +839,53 @@
         "x": "to "
        },
        {
+        "t": "o",
+        "x": "31%."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "在此期间，"
+       },
+       {
         "t": "s",
-        "x": "31%, "
+        "x": "国产品牌"
        },
        {
         "t": "t",
-        "x": "while "
+        "x": "由"
+       },
+       {
+        "t": "s",
+        "x": "26%"
+       },
+       {
+        "t": "t",
+        "x": "大幅升至"
+       },
+       {
+        "t": "s",
+        "x": "31%"
+       },
+       {
+        "t": "t",
+        "x": "。"
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.64,
+      "matched": 7,
+      "wc": 11,
+      "keys": [],
+      "cn": "在此期间，国产品牌由26%大幅升至31%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "By contrast, the figure for "
        },
        {
         "t": "s",
@@ -833,7 +893,7 @@
        },
        {
         "t": "t",
-        "x": "slipped from "
+        "x": "saw a steady decline, falling from "
        },
        {
         "t": "s",
@@ -850,28 +910,8 @@
       ],
       "spans_cn": [
        {
-        "t": "s",
-        "x": "国产品牌"
-       },
-       {
         "t": "t",
-        "x": "由"
-       },
-       {
-        "t": "s",
-        "x": "26%"
-       },
-       {
-        "t": "t",
-        "x": "升至"
-       },
-       {
-        "t": "s",
-        "x": "31%"
-       },
-       {
-        "t": "t",
-        "x": "，而"
+        "x": "相比之下，"
        },
        {
         "t": "s",
@@ -879,7 +919,7 @@
        },
        {
         "t": "t",
-        "x": "由"
+        "x": "的数字稳步下降，由"
        },
        {
         "t": "s",
@@ -887,7 +927,7 @@
        },
        {
         "t": "t",
-        "x": "降到"
+        "x": "降至"
        },
        {
         "t": "s",
@@ -898,87 +938,41 @@
         "x": "。"
        }
       ],
-      "src": "动态图表第一段 · ③ 一升一降 第2句",
+      "src": "动态图表第一段 · ③ 一升一降 第3句",
       "kind": "tpl",
-      "cov": 0.47,
-      "matched": 7,
-      "wc": 15,
+      "cov": 0.75,
+      "matched": 12,
+      "wc": 16,
       "keys": [],
-      "cn": "国产品牌由26%升至31%，而日系品牌由35%降到26%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The two moved in opposite directions."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "两者朝相反的方向变化。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句4",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 6,
-      "wc": 6,
-      "keys": [
-       "The two moved in opposite directions."
-      ],
-      "cn": "两者朝相反的方向变化。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The gap between the two widened over the period."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "两者的差距在这一时期拉大了。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "The gap between the two widened over the period."
-      ],
-      "cn": "两者的差距在这一时期拉大了。"
+      "cn": "相比之下，日系品牌的数字稳步下降，由35%降至26%。"
      }
     ]
    },
    {
-    "wc": 73,
+    "wc": 72,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -1117,30 +1111,30 @@
     ]
    },
    {
-    "wc": 44,
+    "wc": 55,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -1206,46 +1200,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2012": {
-  "wc": 156,
+  "wc": 176,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
-    "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
+    "en": "The figure varies sharply from group to group: it stands at {{percent1}} for {{item1}}, but falls to just {{percent3}} for {{item3}}.",
+    "cn": "组与组之间差别悬殊：{{item1}} 高达 {{percent1}}，而 {{item3}} 只有 {{percent3}}。",
+    "src": "静态图表第一段 · 功能句4"
    },
    {
     "en": "The gap between the largest and the smallest is wide.",
@@ -1253,24 +1242,24 @@
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "The pattern is clear: a few items dominate the rest.",
-    "cn": "格局很清楚：少数几项占了大头。",
-    "src": "静态图表第一段 · 功能句2"
-   },
-   {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Longer working hours have made people value the little time they can call their own.",
-    "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+    "en": "Longer working hours have made people value the little free time they have.",
+    "cn": "工作时间变长，人们更看重仅有的空闲时间。",
     "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
     "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
     "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
     "src": "第二段 · 原因（机制句池） · 功能句14"
+   },
+   {
+    "en": "Employers now look for experience as much as for grades.",
+    "cn": "现在用人单位既看成绩，也看经验。",
+    "src": "第二段 · 原因（机制句池） · 功能句15"
    },
    {
     "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
@@ -1293,8 +1282,13 @@
     "src": "第三段 · 负面版（立场 + 对策） · 功能句8"
    },
    {
-    "en": "Left alone, the problem will not correct itself.",
-    "cn": "放任不管，这个问题不会自己好转。",
+    "en": "Individuals need to watch their own habits instead of assuming they are safe.",
+    "cn": "个人需要留意自己的习惯，而不是想当然认为没问题。",
+    "src": "第三段 · 负面版（立场 + 对策） · 功能句6"
+   },
+   {
+    "en": "Unless effective measures are taken, it may well get worse.",
+    "cn": "若不采取有效措施，问题很可能进一步恶化。",
     "src": "第三段 · 负面版（立场 + 对策） · 模板第2句"
    }
   ],
@@ -1362,7 +1356,7 @@
   ],
   "paras": [
    {
-    "wc": 46,
+    "wc": 44,
     "sents": [
      {
       "spans": [
@@ -1376,7 +1370,7 @@
        },
        {
         "t": "t",
-        "x": "shows how "
+        "x": "above clearly illustrates how "
        },
        {
         "t": "s",
@@ -1384,7 +1378,7 @@
        },
        {
         "t": "t",
-        "x": "breaks down."
+        "x": "is distributed."
        }
       ],
       "spans_cn": [
@@ -1398,7 +1392,7 @@
        },
        {
         "t": "t",
-        "x": "展示"
+        "x": "清晰地展示了"
        },
        {
         "t": "s",
@@ -1406,36 +1400,56 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.62,
-      "matched": 5,
-      "wc": 8,
+      "cov": 0.7,
+      "matched": 7,
+      "wc": 10,
       "keys": [],
-      "cn": "该表格展示员工的不满意比例的构成情况。"
+      "cn": "该表格清晰地展示了员工的不满意比例的分布情况。"
      },
      {
       "spans": [
        {
+        "t": "t",
+        "x": "The figure varies sharply from group to group: it stands at "
+       },
+       {
         "t": "s",
-        "x": "The 41-to-50 age group "
+        "x": "64% "
        },
        {
         "t": "t",
-        "x": "comes first, at "
+        "x": "for "
+       },
+       {
+        "t": "s",
+        "x": "the 41-to-50 age group, "
+       },
+       {
+        "t": "t",
+        "x": "but falls to just "
+       },
+       {
+        "t": "s",
+        "x": "10% "
+       },
+       {
+        "t": "t",
+        "x": "for "
        },
        {
         "t": "o",
-        "x": "64%."
+        "x": "the group over 50."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "41~50岁组排在第一位，占"
+        "x": "组与组之间差别悬殊：41~50岁组高达"
        },
        {
         "t": "s",
@@ -1443,60 +1457,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.38,
-      "matched": 3,
-      "wc": 8,
-      "keys": [],
-      "cn": "41~50岁组排在第一位，占64%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Those aged 40 or younger "
-       },
-       {
-        "t": "t",
-        "x": "and "
-       },
-       {
-        "t": "s",
-        "x": "the group over 50 "
-       },
-       {
-        "t": "t",
-        "x": "follow, at "
-       },
-       {
-        "t": "s",
-        "x": "33.3% "
-       },
-       {
-        "t": "t",
-        "x": "and "
-       },
-       {
-        "t": "o",
-        "x": "10%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "紧随其后的是40岁及以下组和50岁以上组，分别占"
-       },
-       {
-        "t": "s",
-        "x": "33.3%"
-       },
-       {
-        "t": "t",
-        "x": "和"
+        "x": "，而50岁以上组只有"
        },
        {
         "t": "s",
@@ -1507,13 +1468,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.27,
-      "matched": 4,
-      "wc": 15,
+      "src": "静态图表第一段 · 功能句4",
+      "kind": "func",
+      "cov": 0.63,
+      "matched": 17,
+      "wc": 27,
       "keys": [],
-      "cn": "紧随其后的是40岁及以下组和50岁以上组，分别占33.3%和10%。"
+      "cn": "组与组之间差别悬殊：41~50岁组高达64%，而50岁以上组只有10%。"
      },
      {
       "spans": [
@@ -1537,80 +1498,57 @@
        "The gap between the largest and the smallest is wide."
       ],
       "cn": "最大项与最小项之间差距很大。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The pattern is clear: a few items dominate the rest."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "格局很清楚：少数几项占了大头。"
-       }
-      ],
-      "src": "静态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 10,
-      "wc": 10,
-      "keys": [
-       "The pattern is clear: a few items dominate the rest."
-      ],
-      "cn": "格局很清楚：少数几项占了大头。"
      }
     ]
    },
    {
-    "wc": 58,
+    "wc": 65,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
        {
         "t": "t",
-        "x": "Longer working hours have made people value the little time they can call their own."
+        "x": "Longer working hours have made people value the little free time they have."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "工作时间变长，人们更看重那点属于自己的时间。"
+        "x": "工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
       "cov": 1.0,
-      "matched": 15,
-      "wc": 15,
+      "matched": 13,
+      "wc": 13,
       "keys": [
-       "Longer working hours have made people value the little time they can call their own."
+       "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "工作时间变长，人们更看重那点属于自己的时间。"
+      "cn": "工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
@@ -1634,6 +1572,29 @@
        "Young people change jobs far more often than their parents did, so loyalty works differently."
       ],
       "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Employers now look for experience as much as for grades."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "现在用人单位既看成绩，也看经验。"
+       }
+      ],
+      "src": "第二段 · 原因（机制句池） · 功能句15",
+      "kind": "func",
+      "cov": 1.0,
+      "matched": 10,
+      "wc": 10,
+      "keys": [
+       "Employers now look for experience as much as for grades."
+      ],
+      "cn": "现在用人单位既看成绩，也看经验。"
      },
      {
       "spans": [
@@ -1675,7 +1636,7 @@
     ]
    },
    {
-    "wc": 52,
+    "wc": 67,
     "sents": [
      {
       "spans": [
@@ -1750,40 +1711,63 @@
       "spans": [
        {
         "t": "t",
-        "x": "Left alone, the problem will not correct itself."
+        "x": "Individuals need to watch their own habits instead of assuming they are safe."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "放任不管，这个问题不会自己好转。"
+        "x": "个人需要留意自己的习惯，而不是想当然认为没问题。"
+       }
+      ],
+      "src": "第三段 · 负面版（立场 + 对策） · 功能句6",
+      "kind": "func",
+      "cov": 1.0,
+      "matched": 13,
+      "wc": 13,
+      "keys": [
+       "Individuals need to watch their own habits instead of assuming they are safe."
+      ],
+      "cn": "个人需要留意自己的习惯，而不是想当然认为没问题。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "Unless effective measures are taken, it may well get worse."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "若不采取有效措施，问题很可能进一步恶化。"
        }
       ],
       "src": "第三段 · 负面版（立场 + 对策） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "Left alone, the problem will not correct itself."
+       "Unless effective measures are taken, it may well get worse."
       ],
-      "cn": "放任不管，这个问题不会自己好转。"
+      "cn": "若不采取有效措施，问题很可能进一步恶化。"
      }
     ]
    }
   ]
  },
  "2013": {
-  "wc": 152,
+  "wc": 171,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "It rose from {{num1}} to {{num2}}, with no real dip.",
-    "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
+    "en": "During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.",
+    "cn": "在此期间，它由 {{num1}} 稳步升至 {{num2}}，全程没有明显回落。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
@@ -1792,8 +1776,8 @@
     "src": "动态图表第一段 · 功能句3"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -1817,8 +1801,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -1832,8 +1816,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句4"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -1863,6 +1847,12 @@
     "para": "第一段"
    },
    {
+    "name": "num3",
+    "en": "71.93%",
+    "cn": "",
+    "para": "第一段"
+   },
+   {
     "name": "time1",
     "en": "the first year",
     "cn": "大一",
@@ -1872,6 +1862,12 @@
     "name": "time2",
     "en": "the final year",
     "cn": "大四",
+    "para": "第一段"
+   },
+   {
+    "name": "time3",
+    "en": "the third year",
+    "cn": "",
     "para": "第一段"
    },
    {
@@ -1895,7 +1891,7 @@
   ],
   "paras": [
    {
-    "wc": 37,
+    "wc": 46,
     "sents": [
      {
       "spans": [
@@ -1909,7 +1905,7 @@
        },
        {
         "t": "t",
-        "x": "chart tracks "
+        "x": "chart above clearly illustrates the changes in "
        },
        {
         "t": "s",
@@ -1943,7 +1939,7 @@
        },
        {
         "t": "t",
-        "x": "图记录了"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -1972,17 +1968,17 @@
       ],
       "src": "动态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.25,
-      "matched": 5,
-      "wc": 20,
+      "cov": 0.4,
+      "matched": 10,
+      "wc": 25,
       "keys": [],
-      "cn": "该柱状图记录了大一到大四期间大学生兼职比例的变化。"
+      "cn": "该柱状图清晰地展示了大一到大四期间大学生兼职比例的变化。"
      },
      {
       "spans": [
        {
         "t": "t",
-        "x": "It rose from "
+        "x": "During this period, it rose steadily from "
        },
        {
         "t": "s",
@@ -1998,13 +1994,13 @@
        },
        {
         "t": "t",
-        "x": "with no real dip."
+        "x": "without any noticeable fall."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "它由"
+        "x": "在此期间，它由"
        },
        {
         "t": "s",
@@ -2012,7 +2008,7 @@
        },
        {
         "t": "t",
-        "x": "一路升至"
+        "x": "稳步升至"
        },
        {
         "t": "s",
@@ -2020,16 +2016,16 @@
        },
        {
         "t": "t",
-        "x": "，中途没有明显回落。"
+        "x": "，全程没有明显回落。"
        }
       ],
       "src": "动态图表第一段 · ① 一条线在走 第2句",
       "kind": "tpl",
-      "cov": 0.8,
-      "matched": 8,
-      "wc": 10,
+      "cov": 0.86,
+      "matched": 12,
+      "wc": 14,
       "keys": [],
-      "cn": "它由67.77%一路升至88.24%，中途没有明显回落。"
+      "cn": "在此期间，它由67.77%稳步升至88.24%，全程没有明显回落。"
      },
      {
       "spans": [
@@ -2057,30 +2053,30 @@
     ]
    },
    {
-    "wc": 68,
+    "wc": 67,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -2205,30 +2201,30 @@
     ]
    },
    {
-    "wc": 47,
+    "wc": 58,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -2294,55 +2290,50 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2014": {
-  "wc": 176,
+  "wc": 168,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
+    "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "The two moved in opposite directions.",
-    "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句4"
+    "en": "By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.",
+    "cn": "相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。",
+    "src": "动态图表第一段 · 模板第3句"
    },
    {
-    "en": "The gap between the two widened over the period.",
-    "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句2"
-   },
-   {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -2356,18 +2347,13 @@
     "src": "第二段 · 原因（机制句池） · 功能句1"
    },
    {
-    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
-    "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
-    "src": "第二段 · 原因（机制句池） · 功能句6"
-   },
-   {
     "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
     "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
     "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -2381,13 +2367,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
    },
    {
-    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
-    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
-   },
-   {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -2418,20 +2399,20 @@
    },
    {
     "name": "num2",
-    "en": "670 million",
-    "cn": "6.7 亿",
+    "en": "666 million",
+    "cn": "6.66 亿",
     "para": "第一段"
    },
    {
     "name": "num3",
-    "en": "820 million",
-    "cn": "8.2 亿",
+    "en": "834 million",
+    "cn": "8.34 亿",
     "para": "第一段"
    },
    {
     "name": "num4",
-    "en": "680 million",
-    "cn": "6.8 亿",
+    "en": "674 million",
+    "cn": "6.74 亿",
     "para": "第一段"
    },
    {
@@ -2467,7 +2448,7 @@
   ],
   "paras": [
    {
-    "wc": 43,
+    "wc": 54,
     "sents": [
      {
       "spans": [
@@ -2481,11 +2462,19 @@
        },
        {
         "t": "t",
-        "x": "chart tracks "
+        "x": "chart above clearly illustrates the sharp contrast in "
        },
        {
         "t": "s",
-        "x": "the urban and rural population "
+        "x": "the urban "
+       },
+       {
+        "t": "t",
+        "x": "and "
+       },
+       {
+        "t": "s",
+        "x": "rural population between the urban population and the rural population "
        },
        {
         "t": "t",
@@ -2515,7 +2504,7 @@
        },
        {
         "t": "t",
-        "x": "图记录了1990年到2010年期间"
+        "x": "图清晰地展示了1990年到2010年期间"
        },
        {
         "t": "s",
@@ -2523,26 +2512,46 @@
        },
        {
         "t": "t",
-        "x": "的变化。"
+        "x": "在"
+       },
+       {
+        "t": "s",
+        "x": "城镇人口"
+       },
+       {
+        "t": "t",
+        "x": "与"
+       },
+       {
+        "t": "s",
+        "x": "乡村人口"
+       },
+       {
+        "t": "t",
+        "x": "之间的鲜明反差。"
        }
       ],
-      "src": "动态图表第一段 · 模板第1句",
+      "src": "动态图表第一段 · ③ 一升一降 第1句",
       "kind": "tpl",
-      "cov": 0.38,
-      "matched": 5,
-      "wc": 13,
+      "cov": 0.44,
+      "matched": 12,
+      "wc": 27,
       "keys": [],
-      "cn": "该柱状图记录了1990年到2010年期间城乡人口的变化。"
+      "cn": "该柱状图清晰地展示了1990年到2010年期间城乡人口在城镇人口与乡村人口之间的鲜明反差。"
      },
      {
       "spans": [
        {
+        "t": "t",
+        "x": "During this period, "
+       },
+       {
         "t": "s",
-        "x": "The urban population "
+        "x": "the urban population "
        },
        {
         "t": "t",
-        "x": "climbed from "
+        "x": "rose sharply from "
        },
        {
         "t": "s",
@@ -2553,12 +2562,37 @@
         "x": "to "
        },
        {
+        "t": "o",
+        "x": "666 million."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "在此期间，"
+       },
+       {
         "t": "s",
-        "x": "670 million, "
+        "x": "城镇人口"
        },
        {
         "t": "t",
-        "x": "while "
+        "x": "由3亿大幅升至6.66亿。"
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.5,
+      "matched": 7,
+      "wc": 14,
+      "keys": [],
+      "cn": "在此期间，城镇人口由3亿大幅升至6.66亿。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "By contrast, the figure for "
        },
        {
         "t": "s",
@@ -2566,11 +2600,11 @@
        },
        {
         "t": "t",
-        "x": "slipped from "
+        "x": "saw a steady decline, falling from "
        },
        {
         "t": "s",
-        "x": "820 million "
+        "x": "834 million "
        },
        {
         "t": "t",
@@ -2578,17 +2612,13 @@
        },
        {
         "t": "o",
-        "x": "680 million."
+        "x": "674 million."
        }
       ],
       "spans_cn": [
        {
-        "t": "s",
-        "x": "城镇人口"
-       },
-       {
         "t": "t",
-        "x": "由3亿升至6.7亿，而"
+        "x": "相比之下，"
        },
        {
         "t": "s",
@@ -2596,90 +2626,44 @@
        },
        {
         "t": "t",
-        "x": "由8.2亿降到6.8亿。"
+        "x": "的数字稳步下降，由8.34亿降至6.74亿。"
        }
       ],
-      "src": "动态图表第一段 · ③ 一升一降 第2句",
+      "src": "动态图表第一段 · ③ 一升一降 第3句",
       "kind": "tpl",
-      "cov": 0.33,
-      "matched": 7,
-      "wc": 21,
+      "cov": 0.63,
+      "matched": 12,
+      "wc": 19,
       "keys": [],
-      "cn": "城镇人口由3亿升至6.7亿，而乡村人口由8.2亿降到6.8亿。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The two moved in opposite directions."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "两者朝相反的方向变化。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句4",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 6,
-      "wc": 6,
-      "keys": [
-       "The two moved in opposite directions."
-      ],
-      "cn": "两者朝相反的方向变化。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The gap between the two widened over the period."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "两者的差距在这一时期拉大了。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "The gap between the two widened over the period."
-      ],
-      "cn": "两者的差距在这一时期拉大了。"
+      "cn": "相比之下，乡村人口的数字稳步下降，由8.34亿降至6.74亿。"
      }
     ]
    },
    {
-    "wc": 72,
+    "wc": 59,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -2759,43 +2743,6 @@
       "spans": [
        {
         "t": "t",
-        "x": "Public spending on infrastructure has made "
-       },
-       {
-        "t": "s",
-        "x": "city living "
-       },
-       {
-        "t": "t",
-        "x": "far more widely available."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "公共基础设施投入让"
-       },
-       {
-        "t": "s",
-        "x": "城市生活"
-       },
-       {
-        "t": "t",
-        "x": "的覆盖面大大增加。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句6",
-      "kind": "func",
-      "cov": 0.83,
-      "matched": 10,
-      "wc": 12,
-      "keys": [],
-      "cn": "公共基础设施投入让城市生活的覆盖面大大增加。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
         "x": "People now judge "
        },
        {
@@ -2832,30 +2779,30 @@
     ]
    },
    {
-    "wc": 61,
+    "wc": 55,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -2921,80 +2868,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "What matters most is whether families and schools treat "
-       },
-       {
-        "t": "s",
-        "x": "city living "
-       },
-       {
-        "t": "t",
-        "x": "as a normal part of life."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。"
-       }
-      ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1",
-      "kind": "func",
-      "cov": 0.88,
-      "matched": 15,
-      "wc": 17,
-      "keys": [],
-      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "That is what will decide whether the change lasts."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2015": {
-  "wc": 162,
+  "wc": 177,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+    "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+    "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
-   },
-   {
-    "en": "{{item4}} rounds off the list at {{percent4}}.",
-    "cn": "最后是 {{item4}}，占 {{percent4}}。",
-    "src": "静态图表第一段 · 模板第4句"
    },
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
@@ -3002,8 +2910,8 @@
     "src": "静态图表第一段 · 功能句1"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -3027,8 +2935,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句11"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -3042,8 +2950,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -3068,7 +2976,7 @@
    },
    {
     "name": "item3",
-    "en": "travel",
+    "en": "transportation",
     "cn": "出行",
     "para": "第一段"
    },
@@ -3129,7 +3037,7 @@
   ],
   "paras": [
    {
-    "wc": 41,
+    "wc": 46,
     "sents": [
      {
       "spans": [
@@ -3143,7 +3051,7 @@
        },
        {
         "t": "t",
-        "x": "chart shows how "
+        "x": "chart above clearly illustrates how "
        },
        {
         "t": "s",
@@ -3151,7 +3059,7 @@
        },
        {
         "t": "t",
-        "x": "breaks down."
+        "x": "is distributed."
        }
       ],
       "spans_cn": [
@@ -3165,7 +3073,7 @@
        },
        {
         "t": "t",
-        "x": "图展示"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -3173,16 +3081,16 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.6,
-      "matched": 6,
-      "wc": 10,
+      "cov": 0.67,
+      "matched": 8,
+      "wc": 12,
       "keys": [],
-      "cn": "该饼状图展示春节假期花销的构成情况。"
+      "cn": "该饼状图清晰地展示了春节假期花销的分布情况。"
      },
      {
       "spans": [
@@ -3192,44 +3100,19 @@
        },
        {
         "t": "t",
-        "x": "come first, at "
+        "x": "take the lead, accounting for "
        },
        {
-        "t": "o",
-        "x": "40%."
-       }
-      ],
-      "spans_cn": [
-       {
         "t": "s",
-        "x": "给亲友买礼物"
+        "x": "40%, "
        },
        {
         "t": "t",
-        "x": "排在第一位，占"
+        "x": "followed by "
        },
        {
         "t": "s",
-        "x": "40%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.33,
-      "matched": 3,
-      "wc": 9,
-      "keys": [],
-      "cn": "给亲友买礼物排在第一位，占40%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Dinners with relatives "
+        "x": "dinners with relatives "
        },
        {
         "t": "t",
@@ -3237,11 +3120,11 @@
        },
        {
         "t": "s",
-        "x": "travel "
+        "x": "transportation "
        },
        {
         "t": "t",
-        "x": "follow, at "
+        "x": "at "
        },
        {
         "t": "s",
@@ -3252,14 +3135,42 @@
         "x": "and "
        },
        {
+        "t": "s",
+        "x": "20% "
+       },
+       {
+        "t": "t",
+        "x": "respectively, while "
+       },
+       {
+        "t": "s",
+        "x": "other spending "
+       },
+       {
+        "t": "t",
+        "x": "comes last at "
+       },
+       {
         "t": "o",
         "x": "20%."
        }
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "给亲友买礼物"
+       },
+       {
         "t": "t",
-        "x": "紧随其后的是"
+        "x": "遥遥领先，占"
+       },
+       {
+        "t": "s",
+        "x": "40%"
+       },
+       {
+        "t": "t",
+        "x": "；其后是"
        },
        {
         "t": "s",
@@ -3291,36 +3202,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.4,
-      "matched": 4,
-      "wc": 10,
-      "keys": [],
-      "cn": "紧随其后的是与亲友聚餐和出行，分别占20%和20%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Other spending "
-       },
-       {
-        "t": "t",
-        "x": "rounds off the list at "
-       },
-       {
-        "t": "o",
-        "x": "20%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "最后是"
+        "x": "；而"
        },
        {
         "t": "s",
@@ -3328,7 +3210,7 @@
        },
        {
         "t": "t",
-        "x": "，占"
+        "x": "位居最后，占"
        },
        {
         "t": "s",
@@ -3339,13 +3221,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第4句",
+      "src": "静态图表第一段 · 模板第2句",
       "kind": "tpl",
-      "cov": 0.62,
-      "matched": 5,
-      "wc": 8,
+      "cov": 0.5,
+      "matched": 15,
+      "wc": 30,
       "keys": [],
-      "cn": "最后是其他花销，占20%。"
+      "cn": "给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。"
      },
      {
       "spans": [
@@ -3383,30 +3265,30 @@
     ]
    },
    {
-    "wc": 74,
+    "wc": 73,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -3545,30 +3427,30 @@
     ]
    },
    {
-    "wc": 47,
+    "wc": 58,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -3626,51 +3508,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2016": {
-  "wc": 164,
+  "wc": 177,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+    "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+    "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
-   },
-   {
-    "en": "{{item4}} rounds off the list at {{percent4}}.",
-    "cn": "最后是 {{item4}}，占 {{percent4}}。",
-    "src": "静态图表第一段 · 模板第4句"
    },
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
@@ -3678,8 +3550,8 @@
     "src": "静态图表第一段 · 功能句1"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -3688,8 +3560,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句1"
    },
    {
-    "en": "Longer working hours have made people value the little time they can call their own.",
-    "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+    "en": "Longer working hours have made people value the little free time they have.",
+    "cn": "工作时间变长，人们更看重仅有的空闲时间。",
     "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
@@ -3703,8 +3575,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -3723,8 +3595,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -3810,7 +3682,7 @@
   ],
   "paras": [
    {
-    "wc": 40,
+    "wc": 45,
     "sents": [
      {
       "spans": [
@@ -3824,15 +3696,15 @@
        },
        {
         "t": "t",
-        "x": "chart shows how "
+        "x": "chart above clearly illustrates how "
        },
        {
         "t": "s",
-        "x": "the purposes of travel break "
+        "x": "the purposes of travel "
        },
        {
         "t": "t",
-        "x": "down."
+        "x": "are distributed."
        }
       ],
       "spans_cn": [
@@ -3846,7 +3718,7 @@
        },
        {
         "t": "t",
-        "x": "图展示"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -3854,16 +3726,16 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.45,
-      "matched": 5,
-      "wc": 11,
+      "cov": 0.62,
+      "matched": 8,
+      "wc": 13,
       "keys": [],
-      "cn": "该饼状图展示旅游目的的构成情况。"
+      "cn": "该饼状图清晰地展示了旅游目的的分布情况。"
      },
      {
       "spans": [
@@ -3873,44 +3745,19 @@
        },
        {
         "t": "t",
-        "x": "comes first, at "
+        "x": "takes the lead, accounting for "
        },
        {
-        "t": "o",
-        "x": "37%."
-       }
-      ],
-      "spans_cn": [
-       {
         "t": "s",
-        "x": "欣赏风景"
+        "x": "37%, "
        },
        {
         "t": "t",
-        "x": "排在第一位，占"
+        "x": "followed by "
        },
        {
         "t": "s",
-        "x": "37%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.43,
-      "matched": 3,
-      "wc": 7,
-      "keys": [],
-      "cn": "欣赏风景排在第一位，占37%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Relieving pressure "
+        "x": "relieving pressure "
        },
        {
         "t": "t",
@@ -3922,7 +3769,7 @@
        },
        {
         "t": "t",
-        "x": "follow, at "
+        "x": "at "
        },
        {
         "t": "s",
@@ -3933,14 +3780,42 @@
         "x": "and "
        },
        {
+        "t": "s",
+        "x": "15% "
+       },
+       {
+        "t": "t",
+        "x": "respectively, while "
+       },
+       {
+        "t": "s",
+        "x": "fostering independence "
+       },
+       {
+        "t": "t",
+        "x": "comes last at "
+       },
+       {
         "t": "o",
-        "x": "15%."
+        "x": "6%."
        }
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "欣赏风景"
+       },
+       {
         "t": "t",
-        "x": "紧随其后的是"
+        "x": "遥遥领先，占"
+       },
+       {
+        "t": "s",
+        "x": "37%"
+       },
+       {
+        "t": "t",
+        "x": "；其后是"
        },
        {
         "t": "s",
@@ -3972,36 +3847,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.4,
-      "matched": 4,
-      "wc": 10,
-      "keys": [],
-      "cn": "紧随其后的是缓解压力和其他目的，分别占33%和15%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Fostering independence "
-       },
-       {
-        "t": "t",
-        "x": "rounds off the list at "
-       },
-       {
-        "t": "o",
-        "x": "6%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "最后是"
+        "x": "；而"
        },
        {
         "t": "s",
@@ -4009,7 +3855,7 @@
        },
        {
         "t": "t",
-        "x": "，占"
+        "x": "位居最后，占"
        },
        {
         "t": "s",
@@ -4020,13 +3866,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第4句",
+      "src": "静态图表第一段 · 模板第2句",
       "kind": "tpl",
-      "cov": 0.62,
-      "matched": 5,
-      "wc": 8,
+      "cov": 0.54,
+      "matched": 15,
+      "wc": 28,
       "keys": [],
-      "cn": "最后是锻炼独立性，占6%。"
+      "cn": "欣赏风景遥遥领先，占37%；其后是缓解压力和其他目的，分别占33%和15%；而锻炼独立性位居最后，占6%。"
      },
      {
       "spans": [
@@ -4064,30 +3910,30 @@
     ]
    },
    {
-    "wc": 65,
+    "wc": 62,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -4130,24 +3976,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Longer working hours have made people value the little time they can call their own."
+        "x": "Longer working hours have made people value the little free time they have."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "工作时间变长，人们更看重那点属于自己的时间。"
+        "x": "工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
       "cov": 1.0,
-      "matched": 15,
-      "wc": 15,
+      "matched": 13,
+      "wc": 13,
       "keys": [
-       "Longer working hours have made people value the little time they can call their own."
+       "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "工作时间变长，人们更看重那点属于自己的时间。"
+      "cn": "工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
@@ -4226,30 +4072,30 @@
     ]
    },
    {
-    "wc": 59,
+    "wc": 70,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -4344,50 +4190,50 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2017": {
-  "wc": 154,
+  "wc": 172,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
-    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
+    "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
+    "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "The gap between the two widened over the period.",
-    "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句2"
+    "en": "By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
+    "cn": "相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
+    "src": "动态图表第一段 · 模板第3句"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -4411,8 +4257,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -4426,8 +4272,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句10"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -4446,7 +4292,7 @@
    },
    {
     "name": "item2",
-    "en": "the number of museums",
+    "en": "museum numbers",
     "cn": "博物馆数量",
     "para": "第一段"
    },
@@ -4464,14 +4310,14 @@
    },
    {
     "name": "num3",
-    "en": "4,200",
-    "cn": "4200 家",
+    "en": "4,165",
+    "cn": "4165 家",
     "para": "第一段"
    },
    {
     "name": "num4",
-    "en": "4,600",
-    "cn": "4600 家",
+    "en": "4,692",
+    "cn": "4692 家",
     "para": "第一段"
    },
    {
@@ -4507,7 +4353,7 @@
   ],
   "paras": [
    {
-    "wc": 39,
+    "wc": 47,
     "sents": [
      {
       "spans": [
@@ -4521,7 +4367,7 @@
        },
        {
         "t": "t",
-        "x": "chart tracks "
+        "x": "chart above clearly illustrates the changes in "
        },
        {
         "t": "s",
@@ -4555,7 +4401,7 @@
        },
        {
         "t": "t",
-        "x": "图记录了2013年到2015年期间"
+        "x": "图清晰地展示了2013年到2015年期间"
        },
        {
         "t": "s",
@@ -4568,21 +4414,25 @@
       ],
       "src": "动态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.33,
-      "matched": 5,
-      "wc": 15,
+      "cov": 0.5,
+      "matched": 10,
+      "wc": 20,
       "keys": [],
-      "cn": "该折线图记录了2013年到2015年期间博物馆数量与参观人数的变化。"
+      "cn": "该折线图清晰地展示了2013年到2015年期间博物馆数量与参观人数的变化。"
      },
      {
       "spans": [
        {
+        "t": "t",
+        "x": "During this period, "
+       },
+       {
         "t": "s",
-        "x": "Visitor numbers "
+        "x": "visitor numbers "
        },
        {
         "t": "t",
-        "x": "climbed from "
+        "x": "rose sharply from "
        },
        {
         "t": "s",
@@ -4593,24 +4443,49 @@
         "x": "to "
        },
        {
+        "t": "o",
+        "x": "780 million."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "在此期间，"
+       },
+       {
         "t": "s",
-        "x": "780 million, "
+        "x": "参观人数"
        },
        {
         "t": "t",
-        "x": "and "
+        "x": "由6.4亿大幅升至7.8亿。"
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.54,
+      "matched": 7,
+      "wc": 13,
+      "keys": [],
+      "cn": "在此期间，参观人数由6.4亿大幅升至7.8亿。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "By contrast, the figure for "
        },
        {
         "t": "s",
-        "x": "the number of museums "
+        "x": "museum numbers "
        },
        {
         "t": "t",
-        "x": "went from "
+        "x": "saw a modest increase, climbing from "
        },
        {
         "t": "s",
-        "x": "4,200 "
+        "x": "4,165 "
        },
        {
         "t": "t",
@@ -4618,21 +4493,17 @@
        },
        {
         "t": "s",
-        "x": "4,600 "
+        "x": "4,692 "
        },
        {
         "t": "t",
-        "x": "as well."
+        "x": "over the same period."
        }
       ],
       "spans_cn": [
        {
-        "t": "s",
-        "x": "参观人数"
-       },
-       {
         "t": "t",
-        "x": "由6.4亿升至7.8亿，"
+        "x": "相比之下，"
        },
        {
         "t": "s",
@@ -4640,67 +4511,44 @@
        },
        {
         "t": "t",
-        "x": "也从4200家升到4600家。"
+        "x": "的数字增幅温和，由4165家增至4692家。"
        }
       ],
-      "src": "动态图表第一段 · 模板第2句",
+      "src": "动态图表第一段 · 模板第3句",
       "kind": "tpl",
-      "cov": 0.39,
-      "matched": 9,
-      "wc": 23,
+      "cov": 0.73,
+      "matched": 16,
+      "wc": 22,
       "keys": [],
-      "cn": "参观人数由6.4亿升至7.8亿，博物馆数量也从4200家升到4600家。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The gap between the two widened over the period."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "两者的差距在这一时期拉大了。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "The gap between the two widened over the period."
-      ],
-      "cn": "两者的差距在这一时期拉大了。"
+      "cn": "相比之下，博物馆数量的数字增幅温和，由4165家增至4692家。"
      }
     ]
    },
    {
-    "wc": 68,
+    "wc": 67,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -4839,30 +4687,30 @@
     ]
    },
    {
-    "wc": 47,
+    "wc": 58,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -4942,51 +4790,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2018": {
-  "wc": 160,
+  "wc": 180,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+    "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+    "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
-   },
-   {
-    "en": "{{item4}} rounds off the list at {{percent4}}.",
-    "cn": "最后是 {{item4}}，占 {{percent4}}。",
-    "src": "静态图表第一段 · 模板第4句"
    },
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
@@ -4994,8 +4832,8 @@
     "src": "静态图表第一段 · 功能句1"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -5014,8 +4852,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -5024,8 +4862,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
    },
    {
-    "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-    "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+    "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
+    "cn": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。",
     "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
    },
    {
@@ -5034,8 +4872,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -5121,7 +4959,7 @@
   ],
   "paras": [
    {
-    "wc": 43,
+    "wc": 48,
     "sents": [
      {
       "spans": [
@@ -5135,15 +4973,15 @@
        },
        {
         "t": "t",
-        "x": "chart shows how "
+        "x": "chart above clearly illustrates how "
        },
        {
         "t": "s",
-        "x": "the factors consumers weigh when choosing a restaurant break "
+        "x": "the factors consumers weigh when choosing a restaurant "
        },
        {
         "t": "t",
-        "x": "down."
+        "x": "are distributed."
        }
       ],
       "spans_cn": [
@@ -5157,7 +4995,7 @@
        },
        {
         "t": "t",
-        "x": "图展示"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -5165,16 +5003,16 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.33,
-      "matched": 5,
-      "wc": 15,
+      "cov": 0.47,
+      "matched": 8,
+      "wc": 17,
       "keys": [],
-      "cn": "该饼状图展示消费者选择餐厅时考虑的因素的构成情况。"
+      "cn": "该饼状图清晰地展示了消费者选择餐厅时考虑的因素的分布情况。"
      },
      {
       "spans": [
@@ -5184,44 +5022,19 @@
        },
        {
         "t": "t",
-        "x": "come first, at "
+        "x": "take the lead, accounting for "
        },
        {
-        "t": "o",
-        "x": "36.3%."
-       }
-      ],
-      "spans_cn": [
-       {
         "t": "s",
-        "x": "餐厅特色"
+        "x": "36.3%, "
        },
        {
         "t": "t",
-        "x": "排在第一位，占"
+        "x": "followed by "
        },
        {
         "t": "s",
-        "x": "36.3%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.5,
-      "matched": 3,
-      "wc": 6,
-      "keys": [],
-      "cn": "餐厅特色排在第一位，占36.3%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Service "
+        "x": "service "
        },
        {
         "t": "t",
@@ -5233,7 +5046,7 @@
        },
        {
         "t": "t",
-        "x": "follow, at "
+        "x": "at "
        },
        {
         "t": "s",
@@ -5244,14 +5057,42 @@
         "x": "and "
        },
        {
+        "t": "s",
+        "x": "23.8% "
+       },
+       {
+        "t": "t",
+        "x": "respectively, while "
+       },
+       {
+        "t": "s",
+        "x": "other factors "
+       },
+       {
+        "t": "t",
+        "x": "come last at "
+       },
+       {
         "t": "o",
-        "x": "23.8%."
+        "x": "4.7%."
        }
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "餐厅特色"
+       },
+       {
         "t": "t",
-        "x": "紧随其后的是"
+        "x": "遥遥领先，占"
+       },
+       {
+        "t": "s",
+        "x": "36.3%"
+       },
+       {
+        "t": "t",
+        "x": "；其后是"
        },
        {
         "t": "s",
@@ -5283,36 +5124,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.4,
-      "matched": 4,
-      "wc": 10,
-      "keys": [],
-      "cn": "紧随其后的是服务和就餐环境，分别占26.8%和23.8%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Other factors round "
-       },
-       {
-        "t": "t",
-        "x": "off the list at "
-       },
-       {
-        "t": "o",
-        "x": "4.7%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "最后是"
+        "x": "；而"
        },
        {
         "t": "s",
@@ -5320,7 +5132,7 @@
        },
        {
         "t": "t",
-        "x": "，占"
+        "x": "位居最后，占"
        },
        {
         "t": "s",
@@ -5331,13 +5143,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第4句",
+      "src": "静态图表第一段 · 模板第2句",
       "kind": "tpl",
-      "cov": 0.5,
-      "matched": 4,
-      "wc": 8,
+      "cov": 0.56,
+      "matched": 15,
+      "wc": 27,
       "keys": [],
-      "cn": "最后是其他因素，占4.7%。"
+      "cn": "餐厅特色遥遥领先，占36.3%；其后是服务和就餐环境，分别占26.8%和23.8%；而其他因素位居最后，占4.7%。"
      },
      {
       "spans": [
@@ -5375,30 +5187,30 @@
     ]
    },
    {
-    "wc": 58,
+    "wc": 57,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -5514,30 +5326,30 @@
     ]
    },
    {
-    "wc": 59,
+    "wc": 75,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -5580,24 +5392,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Platforms should design simple, honest interfaces instead of ones that keep users hooked."
+        "x": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。"
+        "x": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 功能句9",
       "kind": "func",
       "cov": 1.0,
-      "matched": 13,
-      "wc": 13,
+      "matched": 18,
+      "wc": 18,
       "keys": [
-       "Platforms should design simple, honest interfaces instead of ones that keep users hooked."
+       "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible."
       ],
-      "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。"
+      "cn": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。"
      },
      {
       "spans": [
@@ -5626,61 +5438,51 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2019": {
-  "wc": 158,
+  "wc": 172,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
-    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+    "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
+    "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "The two moved in opposite directions.",
-    "cn": "两者朝相反的方向变化。",
-    "src": "动态图表第一段 · 功能句4"
+    "en": "By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.",
+    "cn": "相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。",
+    "src": "动态图表第一段 · 模板第3句"
    },
    {
-    "en": "The gap between the two widened over the period.",
-    "cn": "两者的差距在这一时期拉大了。",
-    "src": "动态图表第一段 · 功能句2"
-   },
-   {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
-   },
-   {
-    "en": "Employers now look for experience as much as for grades.",
-    "cn": "现在用人单位既看成绩，也看经验。",
-    "src": "第二段 · 原因（机制句池） · 功能句15"
    },
    {
     "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
@@ -5698,8 +5500,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -5713,8 +5515,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -5733,7 +5535,7 @@
    },
    {
     "name": "item2",
-    "en": "the share entering employment",
+    "en": "the employment share",
     "cn": "就业比例",
     "para": "第一段"
    },
@@ -5794,7 +5596,7 @@
   ],
   "paras": [
    {
-    "wc": 41,
+    "wc": 55,
     "sents": [
      {
       "spans": [
@@ -5808,7 +5610,7 @@
        },
        {
         "t": "t",
-        "x": "chart tracks "
+        "x": "chart above clearly illustrates the sharp contrast in "
        },
        {
         "t": "s",
@@ -5816,11 +5618,11 @@
        },
        {
         "t": "t",
-        "x": "from "
+        "x": "between "
        },
        {
         "t": "s",
-        "x": "2013 "
+        "x": "the share going on "
        },
        {
         "t": "t",
@@ -5828,7 +5630,7 @@
        },
        {
         "t": "o",
-        "x": "2018."
+        "x": "further study and the employment share from 2013 to 2018."
        }
       ],
       "spans_cn": [
@@ -5842,7 +5644,7 @@
        },
        {
         "t": "t",
-        "x": "图记录了2013年到2018年期间"
+        "x": "图清晰地展示了2013年到2018年期间"
        },
        {
         "t": "s",
@@ -5850,26 +5652,46 @@
        },
        {
         "t": "t",
-        "x": "的变化。"
+        "x": "在"
+       },
+       {
+        "t": "s",
+        "x": "升学比例"
+       },
+       {
+        "t": "t",
+        "x": "与"
+       },
+       {
+        "t": "s",
+        "x": "就业比例"
+       },
+       {
+        "t": "t",
+        "x": "之间的鲜明反差。"
        }
       ],
-      "src": "动态图表第一段 · 模板第1句",
+      "src": "动态图表第一段 · ③ 一升一降 第1句",
       "kind": "tpl",
-      "cov": 0.5,
-      "matched": 5,
-      "wc": 10,
+      "cov": 0.39,
+      "matched": 11,
+      "wc": 28,
       "keys": [],
-      "cn": "该柱状图记录了2013年到2018年期间毕业生去向的变化。"
+      "cn": "该柱状图清晰地展示了2013年到2018年期间毕业生去向在升学比例与就业比例之间的鲜明反差。"
      },
      {
       "spans": [
        {
+        "t": "t",
+        "x": "During this period, "
+       },
+       {
         "t": "s",
-        "x": "The share going on to further study "
+        "x": "the share going on to further study "
        },
        {
         "t": "t",
-        "x": "climbed from "
+        "x": "rose sharply from "
        },
        {
         "t": "s",
@@ -5880,20 +5702,61 @@
         "x": "to "
        },
        {
+        "t": "o",
+        "x": "34.0%."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "在此期间，"
+       },
+       {
         "t": "s",
-        "x": "34.0%, "
+        "x": "升学比例"
        },
        {
         "t": "t",
-        "x": "while "
+        "x": "由"
        },
        {
         "t": "s",
-        "x": "the share entering employment "
+        "x": "26.3%"
        },
        {
         "t": "t",
-        "x": "slipped from "
+        "x": "大幅升至"
+       },
+       {
+        "t": "s",
+        "x": "34.0%"
+       },
+       {
+        "t": "t",
+        "x": "。"
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.44,
+      "matched": 7,
+      "wc": 16,
+      "keys": [],
+      "cn": "在此期间，升学比例由26.3%大幅升至34.0%。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "By contrast, the figure for "
+       },
+       {
+        "t": "s",
+        "x": "the employment share "
+       },
+       {
+        "t": "t",
+        "x": "saw a steady decline, falling from "
        },
        {
         "t": "s",
@@ -5910,28 +5773,8 @@
       ],
       "spans_cn": [
        {
-        "t": "s",
-        "x": "升学比例"
-       },
-       {
         "t": "t",
-        "x": "由"
-       },
-       {
-        "t": "s",
-        "x": "26.3%"
-       },
-       {
-        "t": "t",
-        "x": "升至"
-       },
-       {
-        "t": "s",
-        "x": "34.0%"
-       },
-       {
-        "t": "t",
-        "x": "，而"
+        "x": "相比之下，"
        },
        {
         "t": "s",
@@ -5939,7 +5782,7 @@
        },
        {
         "t": "t",
-        "x": "由"
+        "x": "的数字稳步下降，由"
        },
        {
         "t": "s",
@@ -5947,7 +5790,7 @@
        },
        {
         "t": "t",
-        "x": "降到"
+        "x": "降至"
        },
        {
         "t": "s",
@@ -5958,110 +5801,41 @@
         "x": "。"
        }
       ],
-      "src": "动态图表第一段 · ③ 一升一降 第2句",
+      "src": "动态图表第一段 · ③ 一升一降 第3句",
       "kind": "tpl",
-      "cov": 0.32,
-      "matched": 7,
-      "wc": 22,
+      "cov": 0.71,
+      "matched": 12,
+      "wc": 17,
       "keys": [],
-      "cn": "升学比例由26.3%升至34.0%，而就业比例由68.1%降到60.7%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The two moved in opposite directions."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "两者朝相反的方向变化。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句4",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 6,
-      "wc": 6,
-      "keys": [
-       "The two moved in opposite directions."
-      ],
-      "cn": "两者朝相反的方向变化。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "The gap between the two widened over the period."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "两者的差距在这一时期拉大了。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句2",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "The gap between the two widened over the period."
-      ],
-      "cn": "两者的差距在这一时期拉大了。"
+      "cn": "相比之下，就业比例的数字稳步下降，由68.1%降至60.7%。"
      }
     ]
    },
    {
-    "wc": 68,
+    "wc": 57,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
-      "keys": [
-       "The numbers in the chart are the result of deeper changes."
-      ],
-      "cn": "图里的数字，是更深层变化的结果。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Employers now look for experience as much as for grades."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "现在用人单位既看成绩，也看经验。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句15",
-      "kind": "func",
-      "cov": 1.0,
       "matched": 10,
       "wc": 10,
       "keys": [
-       "Employers now look for experience as much as for grades."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "现在用人单位既看成绩，也看经验。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -6163,30 +5937,30 @@
     ]
    },
    {
-    "wc": 49,
+    "wc": 60,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -6258,51 +6032,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2020": {
-  "wc": 156,
+  "wc": 174,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+    "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+    "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
-   },
-   {
-    "en": "{{item4}} rounds off the list at {{percent4}}.",
-    "cn": "最后是 {{item4}}，占 {{percent4}}。",
-    "src": "静态图表第一段 · 模板第4句"
    },
    {
     "en": "Taken together, the three largest items make up {{percent total}}.",
@@ -6310,8 +6074,8 @@
     "src": "静态图表第一段 · 功能句1"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -6320,8 +6084,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "Longer working hours have made people value the little time they can call their own.",
-    "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+    "en": "Longer working hours have made people value the little free time they have.",
+    "cn": "工作时间变长，人们更看重仅有的空闲时间。",
     "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
@@ -6330,8 +6094,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -6340,8 +6104,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
    },
    {
-    "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-    "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+    "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
+    "cn": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。",
     "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
    },
    {
@@ -6350,8 +6114,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -6437,7 +6201,7 @@
   ],
   "paras": [
    {
-    "wc": 41,
+    "wc": 46,
     "sents": [
      {
       "spans": [
@@ -6451,15 +6215,15 @@
        },
        {
         "t": "t",
-        "x": "chart shows how "
+        "x": "chart above clearly illustrates how "
        },
        {
         "t": "s",
-        "x": "the purposes of mobile reading break "
+        "x": "the purposes of mobile reading "
        },
        {
         "t": "t",
-        "x": "down."
+        "x": "are distributed."
        }
       ],
       "spans_cn": [
@@ -6473,7 +6237,7 @@
        },
        {
         "t": "t",
-        "x": "图展示"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -6481,16 +6245,16 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.42,
-      "matched": 5,
-      "wc": 12,
+      "cov": 0.57,
+      "matched": 8,
+      "wc": 14,
       "keys": [],
-      "cn": "该饼状图展示手机阅读目的的构成情况。"
+      "cn": "该饼状图清晰地展示了手机阅读目的的分布情况。"
      },
      {
       "spans": [
@@ -6500,44 +6264,19 @@
        },
        {
         "t": "t",
-        "x": "comes first, at "
+        "x": "takes the lead, accounting for "
        },
        {
-        "t": "o",
-        "x": "59.5%."
-       }
-      ],
-      "spans_cn": [
-       {
         "t": "s",
-        "x": "获取知识"
+        "x": "59.5%, "
        },
        {
         "t": "t",
-        "x": "排在第一位，占"
+        "x": "followed by "
        },
        {
         "t": "s",
-        "x": "59.5%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.43,
-      "matched": 3,
-      "wc": 7,
-      "keys": [],
-      "cn": "获取知识排在第一位，占59.5%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Killing time "
+        "x": "killing time "
        },
        {
         "t": "t",
@@ -6549,7 +6288,7 @@
        },
        {
         "t": "t",
-        "x": "follow, at "
+        "x": "at "
        },
        {
         "t": "s",
@@ -6560,14 +6299,42 @@
         "x": "and "
        },
        {
+        "t": "s",
+        "x": "17.0% "
+       },
+       {
+        "t": "t",
+        "x": "respectively, while "
+       },
+       {
+        "t": "s",
+        "x": "other purposes "
+       },
+       {
+        "t": "t",
+        "x": "come last at "
+       },
+       {
         "t": "o",
-        "x": "17.0%."
+        "x": "2.2%."
        }
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "获取知识"
+       },
+       {
         "t": "t",
-        "x": "紧随其后的是"
+        "x": "遥遥领先，占"
+       },
+       {
+        "t": "s",
+        "x": "59.5%"
+       },
+       {
+        "t": "t",
+        "x": "；其后是"
        },
        {
         "t": "s",
@@ -6599,36 +6366,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.4,
-      "matched": 4,
-      "wc": 10,
-      "keys": [],
-      "cn": "紧随其后的是消磨时间和获取信息，分别占21.3%和17.0%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Other purposes round "
-       },
-       {
-        "t": "t",
-        "x": "off the list at "
-       },
-       {
-        "t": "o",
-        "x": "2.2%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "最后是"
+        "x": "；而"
        },
        {
         "t": "s",
@@ -6636,7 +6374,7 @@
        },
        {
         "t": "t",
-        "x": "，占"
+        "x": "位居最后，占"
        },
        {
         "t": "s",
@@ -6647,13 +6385,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第4句",
+      "src": "静态图表第一段 · 模板第2句",
       "kind": "tpl",
-      "cov": 0.5,
-      "matched": 4,
-      "wc": 8,
+      "cov": 0.54,
+      "matched": 15,
+      "wc": 28,
       "keys": [],
-      "cn": "最后是其他目的，占2.2%。"
+      "cn": "获取知识遥遥领先，占59.5%；其后是消磨时间和获取信息，分别占21.3%和17.0%；而其他目的位居最后，占2.2%。"
      },
      {
       "spans": [
@@ -6691,30 +6429,30 @@
     ]
    },
    {
-    "wc": 57,
+    "wc": 54,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -6757,24 +6495,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Longer working hours have made people value the little time they can call their own."
+        "x": "Longer working hours have made people value the little free time they have."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "工作时间变长，人们更看重那点属于自己的时间。"
+        "x": "工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
       "cov": 1.0,
-      "matched": 15,
-      "wc": 15,
+      "matched": 13,
+      "wc": 13,
       "keys": [
-       "Longer working hours have made people value the little time they can call their own."
+       "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "工作时间变长，人们更看重那点属于自己的时间。"
+      "cn": "工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
@@ -6816,30 +6554,30 @@
     ]
    },
    {
-    "wc": 58,
+    "wc": 74,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -6882,24 +6620,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Platforms should design simple, honest interfaces instead of ones that keep users hooked."
+        "x": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。"
+        "x": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 功能句9",
       "kind": "func",
       "cov": 1.0,
-      "matched": 13,
-      "wc": 13,
+      "matched": 18,
+      "wc": 18,
       "keys": [
-       "Platforms should design simple, honest interfaces instead of ones that keep users hooked."
+       "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible."
       ],
-      "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。"
+      "cn": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。"
      },
      {
       "spans": [
@@ -6942,51 +6680,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2021": {
-  "wc": 171,
+  "wc": 168,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+    "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+    "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
-   },
-   {
-    "en": "{{item4}} rounds off the list at {{percent4}}.",
-    "cn": "最后是 {{item4}}，占 {{percent4}}。",
-    "src": "静态图表第一段 · 模板第4句"
    },
    {
     "en": "The gap between the largest and the smallest is wide.",
@@ -6994,8 +6722,8 @@
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -7004,8 +6732,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句8"
    },
    {
-    "en": "Longer working hours have made people value the little time they can call their own.",
-    "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+    "en": "Longer working hours have made people value the little free time they have.",
+    "cn": "工作时间变长，人们更看重仅有的空闲时间。",
     "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
@@ -7019,8 +6747,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -7034,13 +6762,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
    },
    {
-    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
-    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
-   },
-   {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -7095,7 +6818,7 @@
    },
    {
     "name": "percent4",
-    "en": "16%",
+    "en": "15.8%",
     "cn": "16%",
     "para": "第一段"
    },
@@ -7120,7 +6843,7 @@
   ],
   "paras": [
    {
-    "wc": 46,
+    "wc": 51,
     "sents": [
      {
       "spans": [
@@ -7134,15 +6857,15 @@
        },
        {
         "t": "t",
-        "x": "chart shows how "
+        "x": "chart above clearly illustrates how "
        },
        {
         "t": "s",
-        "x": "the ways residents take exercise break "
+        "x": "the ways residents take exercise "
        },
        {
         "t": "t",
-        "x": "down."
+        "x": "are distributed."
        }
       ],
       "spans_cn": [
@@ -7156,7 +6879,7 @@
        },
        {
         "t": "t",
-        "x": "图展示"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -7164,16 +6887,16 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.42,
-      "matched": 5,
-      "wc": 12,
+      "cov": 0.57,
+      "matched": 8,
+      "wc": 14,
       "keys": [],
-      "cn": "该柱状图展示居民的锻炼方式的构成情况。"
+      "cn": "该柱状图清晰地展示了居民的锻炼方式的分布情况。"
      },
      {
       "spans": [
@@ -7183,44 +6906,19 @@
        },
        {
         "t": "t",
-        "x": "comes first, at "
+        "x": "takes the lead, accounting for "
        },
        {
-        "t": "o",
-        "x": "54.3%."
-       }
-      ],
-      "spans_cn": [
-       {
         "t": "s",
-        "x": "独自锻炼"
+        "x": "54.3%, "
        },
        {
         "t": "t",
-        "x": "排在第一位，占"
+        "x": "followed by "
        },
        {
         "t": "s",
-        "x": "54.3%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.38,
-      "matched": 3,
-      "wc": 8,
-      "keys": [],
-      "cn": "独自锻炼排在第一位，占54.3%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Exercising with friends "
+        "x": "exercising with friends "
        },
        {
         "t": "t",
@@ -7232,7 +6930,7 @@
        },
        {
         "t": "t",
-        "x": "follow, at "
+        "x": "at "
        },
        {
         "t": "s",
@@ -7243,14 +6941,42 @@
         "x": "and "
        },
        {
+        "t": "s",
+        "x": "23.9% "
+       },
+       {
+        "t": "t",
+        "x": "respectively, while "
+       },
+       {
+        "t": "s",
+        "x": "team sports "
+       },
+       {
+        "t": "t",
+        "x": "come last at "
+       },
+       {
         "t": "o",
-        "x": "23.9%."
+        "x": "15.8%."
        }
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "独自锻炼"
+       },
+       {
         "t": "t",
-        "x": "紧随其后的是"
+        "x": "遥遥领先，占"
+       },
+       {
+        "t": "s",
+        "x": "54.3%"
+       },
+       {
+        "t": "t",
+        "x": "；其后是"
        },
        {
         "t": "s",
@@ -7282,36 +7008,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.33,
-      "matched": 4,
-      "wc": 12,
-      "keys": [],
-      "cn": "紧随其后的是与朋友一起和与家人一起，分别占47.7%和23.9%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Team sports round "
-       },
-       {
-        "t": "t",
-        "x": "off the list at "
-       },
-       {
-        "t": "o",
-        "x": "16%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "最后是"
+        "x": "；而"
        },
        {
         "t": "s",
@@ -7319,7 +7016,7 @@
        },
        {
         "t": "t",
-        "x": "，占"
+        "x": "位居最后，占"
        },
        {
         "t": "s",
@@ -7330,13 +7027,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第4句",
+      "src": "静态图表第一段 · 模板第2句",
       "kind": "tpl",
-      "cov": 0.5,
-      "matched": 4,
-      "wc": 8,
+      "cov": 0.48,
+      "matched": 15,
+      "wc": 31,
       "keys": [],
-      "cn": "最后是团队项目，占16%。"
+      "cn": "独自锻炼遥遥领先，占54.3%；其后是与朋友一起和与家人一起，分别占47.7%和23.9%；而团队项目位居最后，占16%。"
      },
      {
       "spans": [
@@ -7364,30 +7061,30 @@
     ]
    },
    {
-    "wc": 66,
+    "wc": 63,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -7430,24 +7127,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Longer working hours have made people value the little time they can call their own."
+        "x": "Longer working hours have made people value the little free time they have."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "工作时间变长，人们更看重那点属于自己的时间。"
+        "x": "工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
       "cov": 1.0,
-      "matched": 15,
-      "wc": 15,
+      "matched": 13,
+      "wc": 13,
       "keys": [
-       "Longer working hours have made people value the little time they can call their own."
+       "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "工作时间变长，人们更看重那点属于自己的时间。"
+      "cn": "工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
@@ -7526,30 +7223,30 @@
     ]
    },
    {
-    "wc": 59,
+    "wc": 54,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -7615,70 +7312,46 @@
       "spans": [
        {
         "t": "t",
-        "x": "What matters most is whether families and schools treat "
-       },
-       {
-        "t": "s",
-        "x": "exercise "
-       },
-       {
-        "t": "t",
-        "x": "as a normal part of life."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。"
-       }
-      ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1",
-      "kind": "func",
-      "cov": 0.94,
-      "matched": 15,
-      "wc": 16,
-      "keys": [],
-      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "That is what will decide whether the change lasts."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2022": {
-  "wc": 158,
+  "wc": 178,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
-    "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
+    "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
+    "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
     "src": "动态图表第一段 · 模板第2句"
+   },
+   {
+    "en": "By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
+    "cn": "相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
+    "src": "动态图表第一段 · 模板第3句"
    },
    {
     "en": "The gap between the two widened over the period.",
@@ -7686,13 +7359,8 @@
     "src": "动态图表第一段 · 功能句2"
    },
    {
-    "en": "Growth was slow at first and then sped up.",
-    "cn": "增长起初缓慢，后来明显加快。",
-    "src": "动态图表第一段 · 功能句3"
-   },
-   {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -7711,8 +7379,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句7"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -7726,8 +7394,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -7807,7 +7475,7 @@
   ],
   "paras": [
    {
-    "wc": 50,
+    "wc": 60,
     "sents": [
      {
       "spans": [
@@ -7821,7 +7489,7 @@
        },
        {
         "t": "t",
-        "x": "chart tracks "
+        "x": "chart above clearly illustrates the changes in "
        },
        {
         "t": "s",
@@ -7855,7 +7523,7 @@
        },
        {
         "t": "t",
-        "x": "图记录了2018年到2020年期间"
+        "x": "图清晰地展示了2018年到2020年期间"
        },
        {
         "t": "s",
@@ -7868,21 +7536,25 @@
       ],
       "src": "动态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.45,
-      "matched": 5,
-      "wc": 11,
+      "cov": 0.62,
+      "matched": 10,
+      "wc": 16,
       "keys": [],
-      "cn": "该柱状图记录了2018年到2020年期间快递业务量的变化。"
+      "cn": "该柱状图清晰地展示了2018年到2020年期间快递业务量的变化。"
      },
      {
       "spans": [
        {
+        "t": "t",
+        "x": "During this period, "
+       },
+       {
         "t": "s",
-        "x": "The rural figure "
+        "x": "the rural figure "
        },
        {
         "t": "t",
-        "x": "climbed from "
+        "x": "rose sharply from "
        },
        {
         "t": "s",
@@ -7893,12 +7565,37 @@
         "x": "to "
        },
        {
+        "t": "o",
+        "x": "30 billion pieces."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "在此期间，"
+       },
+       {
         "t": "s",
-        "x": "30 billion pieces, "
+        "x": "农村快递量"
        },
        {
         "t": "t",
-        "x": "and "
+        "x": "由120亿件大幅升至300亿件。"
+       }
+      ],
+      "src": "动态图表第一段 · 模板第2句",
+      "kind": "tpl",
+      "cov": 0.44,
+      "matched": 7,
+      "wc": 16,
+      "keys": [],
+      "cn": "在此期间，农村快递量由120亿件大幅升至300亿件。"
+     },
+     {
+      "spans": [
+       {
+        "t": "t",
+        "x": "By contrast, the figure for "
        },
        {
         "t": "s",
@@ -7906,7 +7603,7 @@
        },
        {
         "t": "t",
-        "x": "went from "
+        "x": "saw a modest increase, climbing from "
        },
        {
         "t": "s",
@@ -7922,17 +7619,13 @@
        },
        {
         "t": "t",
-        "x": "as well."
+        "x": "over the same period."
        }
       ],
       "spans_cn": [
        {
-        "t": "s",
-        "x": "农村快递量"
-       },
-       {
         "t": "t",
-        "x": "由120亿件升至300亿件，"
+        "x": "相比之下，"
        },
        {
         "t": "s",
@@ -7940,16 +7633,16 @@
        },
        {
         "t": "t",
-        "x": "也从510亿件升到830亿件。"
+        "x": "的数字增幅温和，由510亿件增至830亿件。"
        }
       ],
-      "src": "动态图表第一段 · 模板第2句",
+      "src": "动态图表第一段 · 模板第3句",
       "kind": "tpl",
-      "cov": 0.33,
-      "matched": 9,
-      "wc": 27,
+      "cov": 0.64,
+      "matched": 16,
+      "wc": 25,
       "keys": [],
-      "cn": "农村快递量由120亿件升至300亿件，全国总量也从510亿件升到830亿件。"
+      "cn": "相比之下，全国总量的数字增幅温和，由510亿件增至830亿件。"
      },
      {
       "spans": [
@@ -7973,57 +7666,34 @@
        "The gap between the two widened over the period."
       ],
       "cn": "两者的差距在这一时期拉大了。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Growth was slow at first and then sped up."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "增长起初缓慢，后来明显加快。"
-       }
-      ],
-      "src": "动态图表第一段 · 功能句3",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "Growth was slow at first and then sped up."
-      ],
-      "cn": "增长起初缓慢，后来明显加快。"
      }
     ]
    },
    {
-    "wc": 58,
+    "wc": 57,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -8139,30 +7809,30 @@
     ]
    },
    {
-    "wc": 50,
+    "wc": 61,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -8242,40 +7912,40 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2023": {
-  "wc": 161,
+  "wc": 180,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-    "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+    "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
     "src": "动态图表第一段 · 模板第1句"
    },
    {
-    "en": "It rose from {{num1}} to {{num2}}, with no real dip.",
-    "cn": "它由 {{num1}} 一路升至 {{num2}}，中途没有明显回落。",
+    "en": "During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.",
+    "cn": "在此期间，它由 {{num1}} 稳步升至 {{num2}}，全程没有明显回落。",
     "src": "动态图表第一段 · 模板第2句"
    },
    {
@@ -8286,11 +7956,11 @@
    {
     "en": "The figure more than doubled over the period.",
     "cn": "这一数字在该时期翻了一倍多。",
-    "src": "动态图表第一段 · 功能句5"
+    "src": "动态图表第一段 · 功能句8"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -8314,8 +7984,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -8334,8 +8004,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -8365,6 +8035,12 @@
     "para": "第一段"
    },
    {
+    "name": "num3",
+    "en": "10.25%",
+    "cn": "",
+    "para": "第一段"
+   },
+   {
     "name": "time1",
     "en": "2012",
     "cn": "2012 年",
@@ -8374,6 +8050,12 @@
     "name": "time2",
     "en": "2021",
     "cn": "2021 年",
+    "para": "第一段"
+   },
+   {
+    "name": "time3",
+    "en": "2015",
+    "cn": "",
     "para": "第一段"
    },
    {
@@ -8397,7 +8079,7 @@
   ],
   "paras": [
    {
-    "wc": 38,
+    "wc": 47,
     "sents": [
      {
       "spans": [
@@ -8411,7 +8093,7 @@
        },
        {
         "t": "t",
-        "x": "chart tracks "
+        "x": "chart above clearly illustrates the changes in "
        },
        {
         "t": "s",
@@ -8445,7 +8127,7 @@
        },
        {
         "t": "t",
-        "x": "图记录了2012年到2021年期间"
+        "x": "图清晰地展示了2012年到2021年期间"
        },
        {
         "t": "s",
@@ -8458,17 +8140,17 @@
       ],
       "src": "动态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.33,
-      "matched": 5,
-      "wc": 15,
+      "cov": 0.5,
+      "matched": 10,
+      "wc": 20,
       "keys": [],
-      "cn": "该折线图记录了2012年到2021年期间居民健康素养水平的变化。"
+      "cn": "该折线图清晰地展示了2012年到2021年期间居民健康素养水平的变化。"
      },
      {
       "spans": [
        {
         "t": "t",
-        "x": "It rose from "
+        "x": "During this period, it rose steadily from "
        },
        {
         "t": "s",
@@ -8484,13 +8166,13 @@
        },
        {
         "t": "t",
-        "x": "with no real dip."
+        "x": "without any noticeable fall."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "它由"
+        "x": "在此期间，它由"
        },
        {
         "t": "s",
@@ -8498,7 +8180,7 @@
        },
        {
         "t": "t",
-        "x": "一路升至"
+        "x": "稳步升至"
        },
        {
         "t": "s",
@@ -8506,16 +8188,16 @@
        },
        {
         "t": "t",
-        "x": "，中途没有明显回落。"
+        "x": "，全程没有明显回落。"
        }
       ],
       "src": "动态图表第一段 · ① 一条线在走 第2句",
       "kind": "tpl",
-      "cov": 0.8,
-      "matched": 8,
-      "wc": 10,
+      "cov": 0.86,
+      "matched": 12,
+      "wc": 14,
       "keys": [],
-      "cn": "它由8.80%一路升至25.40%，中途没有明显回落。"
+      "cn": "在此期间，它由8.80%稳步升至25.40%，全程没有明显回落。"
      },
      {
       "spans": [
@@ -8553,7 +8235,7 @@
         "x": "这一数字在该时期翻了一倍多。"
        }
       ],
-      "src": "动态图表第一段 · 功能句5",
+      "src": "动态图表第一段 · 功能句8",
       "kind": "func",
       "cov": 1.0,
       "matched": 8,
@@ -8566,30 +8248,30 @@
     ]
    },
    {
-    "wc": 69,
+    "wc": 68,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -8742,30 +8424,30 @@
     ]
    },
    {
-    "wc": 54,
+    "wc": 65,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -8854,51 +8536,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2024": {
-  "wc": 164,
+  "wc": 179,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+    "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+    "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
-   },
-   {
-    "en": "{{item4}} rounds off the list at {{percent4}}.",
-    "cn": "最后是 {{item4}}，占 {{percent4}}。",
-    "src": "静态图表第一段 · 模板第4句"
    },
    {
     "en": "The gap between the largest and the smallest is wide.",
@@ -8906,8 +8578,8 @@
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -8931,8 +8603,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -8946,8 +8618,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -9027,7 +8699,7 @@
   ],
   "paras": [
    {
-    "wc": 45,
+    "wc": 50,
     "sents": [
      {
       "spans": [
@@ -9041,15 +8713,15 @@
        },
        {
         "t": "t",
-        "x": "chart shows how "
+        "x": "chart above clearly illustrates how "
        },
        {
         "t": "s",
-        "x": "labour practice course gains break "
+        "x": "labour practice course gains "
        },
        {
         "t": "t",
-        "x": "down."
+        "x": "are distributed."
        }
       ],
       "spans_cn": [
@@ -9063,7 +8735,7 @@
        },
        {
         "t": "t",
-        "x": "图展示"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -9071,16 +8743,16 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.45,
-      "matched": 5,
-      "wc": 11,
+      "cov": 0.62,
+      "matched": 8,
+      "wc": 13,
       "keys": [],
-      "cn": "该柱状图展示劳动实践课的收获的构成情况。"
+      "cn": "该柱状图清晰地展示了劳动实践课的收获的分布情况。"
      },
      {
       "spans": [
@@ -9090,44 +8762,19 @@
        },
        {
         "t": "t",
-        "x": "comes first, at "
+        "x": "takes the lead, accounting for "
        },
        {
-        "t": "o",
-        "x": "91.3%."
-       }
-      ],
-      "spans_cn": [
-       {
         "t": "s",
-        "x": "获得相关知识"
+        "x": "91.3%, "
        },
        {
         "t": "t",
-        "x": "排在第一位，占"
+        "x": "followed by "
        },
        {
         "t": "s",
-        "x": "91.3%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.43,
-      "matched": 3,
-      "wc": 7,
-      "keys": [],
-      "cn": "获得相关知识排在第一位，占91.3%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Improving practical ability "
+        "x": "improving practical ability "
        },
        {
         "t": "t",
@@ -9139,7 +8786,7 @@
        },
        {
         "t": "t",
-        "x": "follow, at "
+        "x": "at "
        },
        {
         "t": "s",
@@ -9150,14 +8797,42 @@
         "x": "and "
        },
        {
+        "t": "s",
+        "x": "54.4% "
+       },
+       {
+        "t": "t",
+        "x": "respectively, while "
+       },
+       {
+        "t": "s",
+        "x": "enhancing cooperative ability "
+       },
+       {
+        "t": "t",
+        "x": "comes last at "
+       },
+       {
         "t": "o",
-        "x": "54.4%."
+        "x": "32.6%."
        }
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "获得相关知识"
+       },
+       {
         "t": "t",
-        "x": "紧随其后的是"
+        "x": "遥遥领先，占"
+       },
+       {
+        "t": "s",
+        "x": "91.3%"
+       },
+       {
+        "t": "t",
+        "x": "；其后是"
        },
        {
         "t": "s",
@@ -9189,36 +8864,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.33,
-      "matched": 4,
-      "wc": 12,
-      "keys": [],
-      "cn": "紧随其后的是提高实践能力和获得愉悦心情，分别占84.8%和54.4%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Enhancing cooperative ability "
-       },
-       {
-        "t": "t",
-        "x": "rounds off the list at "
-       },
-       {
-        "t": "o",
-        "x": "32.6%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "最后是"
+        "x": "；而"
        },
        {
         "t": "s",
@@ -9226,7 +8872,7 @@
        },
        {
         "t": "t",
-        "x": "，占"
+        "x": "位居最后，占"
        },
        {
         "t": "s",
@@ -9237,13 +8883,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第4句",
+      "src": "静态图表第一段 · 模板第2句",
       "kind": "tpl",
-      "cov": 0.56,
-      "matched": 5,
-      "wc": 9,
+      "cov": 0.48,
+      "matched": 15,
+      "wc": 31,
       "keys": [],
-      "cn": "最后是增强合作能力，占32.6%。"
+      "cn": "获得相关知识遥遥领先，占91.3%；其后是提高实践能力和获得愉悦心情，分别占84.8%和54.4%；而增强合作能力位居最后，占32.6%。"
      },
      {
       "spans": [
@@ -9271,30 +8917,30 @@
     ]
    },
    {
-    "wc": 70,
+    "wc": 69,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -9419,30 +9065,30 @@
     ]
    },
    {
-    "wc": 49,
+    "wc": 60,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -9514,51 +9160,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2025": {
-  "wc": 169,
+  "wc": 167,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+    "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+    "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
-   },
-   {
-    "en": "{{item4}} rounds off the list at {{percent4}}.",
-    "cn": "最后是 {{item4}}，占 {{percent4}}。",
-    "src": "静态图表第一段 · 模板第4句"
    },
    {
     "en": "The gap between the largest and the smallest is wide.",
@@ -9566,8 +9202,8 @@
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -9591,8 +9227,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -9606,13 +9242,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
    },
    {
-    "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
-    "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
-   },
-   {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -9692,7 +9323,7 @@
   ],
   "paras": [
    {
-    "wc": 43,
+    "wc": 48,
     "sents": [
      {
       "spans": [
@@ -9706,15 +9337,15 @@
        },
        {
         "t": "t",
-        "x": "chart shows how "
+        "x": "chart above clearly illustrates how "
        },
        {
         "t": "s",
-        "x": "the leisure activities of the elderly break "
+        "x": "the leisure activities of the elderly "
        },
        {
         "t": "t",
-        "x": "down."
+        "x": "are distributed."
        }
       ],
       "spans_cn": [
@@ -9728,7 +9359,7 @@
        },
        {
         "t": "t",
-        "x": "图展示"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -9736,16 +9367,16 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.38,
-      "matched": 5,
-      "wc": 13,
+      "cov": 0.53,
+      "matched": 8,
+      "wc": 15,
       "keys": [],
-      "cn": "该柱状图展示老年人的休闲活动的构成情况。"
+      "cn": "该柱状图清晰地展示了老年人的休闲活动的分布情况。"
      },
      {
       "spans": [
@@ -9755,44 +9386,19 @@
        },
        {
         "t": "t",
-        "x": "comes first, at "
+        "x": "takes the lead, accounting for "
        },
        {
-        "t": "o",
-        "x": "90.8%."
-       }
-      ],
-      "spans_cn": [
-       {
         "t": "s",
-        "x": "看电视"
+        "x": "90.8%, "
        },
        {
         "t": "t",
-        "x": "排在第一位，占"
+        "x": "followed by "
        },
        {
         "t": "s",
-        "x": "90.8%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.5,
-      "matched": 3,
-      "wc": 6,
-      "keys": [],
-      "cn": "看电视排在第一位，占90.8%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Taking walks "
+        "x": "taking walks "
        },
        {
         "t": "t",
@@ -9804,7 +9410,7 @@
        },
        {
         "t": "t",
-        "x": "follow, at "
+        "x": "at "
        },
        {
         "t": "s",
@@ -9815,14 +9421,42 @@
         "x": "and "
        },
        {
+        "t": "s",
+        "x": "34.7% "
+       },
+       {
+        "t": "t",
+        "x": "respectively, while "
+       },
+       {
+        "t": "s",
+        "x": "playing chess "
+       },
+       {
+        "t": "t",
+        "x": "comes last at "
+       },
+       {
         "t": "o",
-        "x": "34.7%."
+        "x": "18.4%."
        }
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "看电视"
+       },
+       {
         "t": "t",
-        "x": "紧随其后的是"
+        "x": "遥遥领先，占"
+       },
+       {
+        "t": "s",
+        "x": "90.8%"
+       },
+       {
+        "t": "t",
+        "x": "；其后是"
        },
        {
         "t": "s",
@@ -9854,36 +9488,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.4,
-      "matched": 4,
-      "wc": 10,
-      "keys": [],
-      "cn": "紧随其后的是散步和种花，分别占68.3%和34.7%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Playing chess "
-       },
-       {
-        "t": "t",
-        "x": "rounds off the list at "
-       },
-       {
-        "t": "o",
-        "x": "18.4%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "最后是"
+        "x": "；而"
        },
        {
         "t": "s",
@@ -9891,7 +9496,7 @@
        },
        {
         "t": "t",
-        "x": "，占"
+        "x": "位居最后，占"
        },
        {
         "t": "s",
@@ -9902,13 +9507,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第4句",
+      "src": "静态图表第一段 · 模板第2句",
       "kind": "tpl",
-      "cov": 0.62,
-      "matched": 5,
-      "wc": 8,
+      "cov": 0.56,
+      "matched": 15,
+      "wc": 27,
       "keys": [],
-      "cn": "最后是下棋，占18.4%。"
+      "cn": "看电视遥遥领先，占90.8%；其后是散步和种花，分别占68.3%和34.7%；而下棋位居最后，占18.4%。"
      },
      {
       "spans": [
@@ -9936,30 +9541,30 @@
     ]
    },
    {
-    "wc": 68,
+    "wc": 67,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -10098,30 +9703,30 @@
     ]
    },
    {
-    "wc": 58,
+    "wc": 52,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -10187,80 +9792,41 @@
       "spans": [
        {
         "t": "t",
-        "x": "What matters most is whether families and schools treat "
-       },
-       {
-        "t": "s",
-        "x": "leisure activity "
-       },
-       {
-        "t": "t",
-        "x": "as a normal part of life."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。"
-       }
-      ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1",
-      "kind": "func",
-      "cov": 0.88,
-      "matched": 15,
-      "wc": 17,
-      "keys": [],
-      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "That is what will decide whether the change lasts."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }
   ]
  },
  "2026": {
-  "wc": 164,
+  "wc": 179,
   "key_phrases": [
    {
-    "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-    "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+    "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+    "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
     "src": "静态图表第一段 · 模板第1句"
    },
    {
-    "en": "{{item1}} comes first, at {{percent1}}.",
-    "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+    "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+    "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
     "src": "静态图表第一段 · 模板第2句"
-   },
-   {
-    "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-    "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-    "src": "静态图表第一段 · 模板第3句"
-   },
-   {
-    "en": "{{item4}} rounds off the list at {{percent4}}.",
-    "cn": "最后是 {{item4}}，占 {{percent4}}。",
-    "src": "静态图表第一段 · 模板第4句"
    },
    {
     "en": "The gap between the largest and the smallest is wide.",
@@ -10268,8 +9834,8 @@
     "src": "静态图表第一段 · 功能句3"
    },
    {
-    "en": "The numbers in the chart are the result of deeper changes.",
-    "cn": "图里的数字，是更深层变化的结果。",
+    "en": "This phenomenon can be attributed to a combination of factors.",
+    "cn": "这一现象是多种因素共同作用的结果。",
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
@@ -10293,8 +9859,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "On balance, this is a change worth welcoming.",
-    "cn": "总体来看，这是值得欢迎的变化。",
+    "en": "On balance, this is a positive trend worth welcoming.",
+    "cn": "总体来看，这是值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
@@ -10308,8 +9874,8 @@
     "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
    },
    {
-    "en": "That is what will decide whether the change lasts.",
-    "cn": "而这，正是决定这种变化能否持续的关键。",
+    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
    }
   ],
@@ -10389,7 +9955,7 @@
   ],
   "paras": [
    {
-    "wc": 48,
+    "wc": 53,
     "sents": [
      {
       "spans": [
@@ -10403,15 +9969,15 @@
        },
        {
         "t": "t",
-        "x": "chart shows how "
+        "x": "chart above clearly illustrates how "
        },
        {
         "t": "s",
-        "x": "the perceived benefits of outdoor activities for children break "
+        "x": "the perceived benefits of outdoor activities for children "
        },
        {
         "t": "t",
-        "x": "down."
+        "x": "are distributed."
        }
       ],
       "spans_cn": [
@@ -10425,7 +9991,7 @@
        },
        {
         "t": "t",
-        "x": "图展示"
+        "x": "图清晰地展示了"
        },
        {
         "t": "s",
@@ -10433,16 +9999,16 @@
        },
        {
         "t": "t",
-        "x": "的构成情况。"
+        "x": "的分布情况。"
        }
       ],
       "src": "静态图表第一段 · 模板第1句",
       "kind": "tpl",
-      "cov": 0.33,
-      "matched": 5,
-      "wc": 15,
+      "cov": 0.47,
+      "matched": 8,
+      "wc": 17,
       "keys": [],
-      "cn": "该柱状图展示儿童户外活动的益处的构成情况。"
+      "cn": "该柱状图清晰地展示了儿童户外活动的益处的分布情况。"
      },
      {
       "spans": [
@@ -10452,44 +10018,19 @@
        },
        {
         "t": "t",
-        "x": "comes first, at "
+        "x": "takes the lead, accounting for "
        },
        {
-        "t": "o",
-        "x": "54.6%."
-       }
-      ],
-      "spans_cn": [
-       {
         "t": "s",
-        "x": "满足好奇心"
+        "x": "54.6%, "
        },
        {
         "t": "t",
-        "x": "排在第一位，占"
+        "x": "followed by "
        },
        {
         "t": "s",
-        "x": "54.6%"
-       },
-       {
-        "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第2句",
-      "kind": "tpl",
-      "cov": 0.5,
-      "matched": 3,
-      "wc": 6,
-      "keys": [],
-      "cn": "满足好奇心排在第一位，占54.6%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Improving observation skills "
+        "x": "improving observation skills "
        },
        {
         "t": "t",
@@ -10501,7 +10042,7 @@
        },
        {
         "t": "t",
-        "x": "follow, at "
+        "x": "at "
        },
        {
         "t": "s",
@@ -10512,14 +10053,42 @@
         "x": "and "
        },
        {
+        "t": "s",
+        "x": "33.2% "
+       },
+       {
+        "t": "t",
+        "x": "respectively, while "
+       },
+       {
+        "t": "s",
+        "x": "strengthening parent-child interaction "
+       },
+       {
+        "t": "t",
+        "x": "comes last at "
+       },
+       {
         "t": "o",
-        "x": "33.2%."
+        "x": "31.2%."
        }
       ],
       "spans_cn": [
        {
+        "t": "s",
+        "x": "满足好奇心"
+       },
+       {
         "t": "t",
-        "x": "紧随其后的是"
+        "x": "遥遥领先，占"
+       },
+       {
+        "t": "s",
+        "x": "54.6%"
+       },
+       {
+        "t": "t",
+        "x": "；其后是"
        },
        {
         "t": "s",
@@ -10551,36 +10120,7 @@
        },
        {
         "t": "t",
-        "x": "。"
-       }
-      ],
-      "src": "静态图表第一段 · 模板第3句",
-      "kind": "tpl",
-      "cov": 0.33,
-      "matched": 4,
-      "wc": 12,
-      "keys": [],
-      "cn": "紧随其后的是促进观察力和强身健体，分别占54.5%和33.2%。"
-     },
-     {
-      "spans": [
-       {
-        "t": "s",
-        "x": "Strengthening parent-child interaction "
-       },
-       {
-        "t": "t",
-        "x": "rounds off the list at "
-       },
-       {
-        "t": "o",
-        "x": "31.2%."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "最后是"
+        "x": "；而"
        },
        {
         "t": "s",
@@ -10588,7 +10128,7 @@
        },
        {
         "t": "t",
-        "x": "，占"
+        "x": "位居最后，占"
        },
        {
         "t": "s",
@@ -10599,13 +10139,13 @@
         "x": "。"
        }
       ],
-      "src": "静态图表第一段 · 模板第4句",
+      "src": "静态图表第一段 · 模板第2句",
       "kind": "tpl",
-      "cov": 0.56,
-      "matched": 5,
-      "wc": 9,
+      "cov": 0.5,
+      "matched": 15,
+      "wc": 30,
       "keys": [],
-      "cn": "最后是增强亲子互动，占31.2%。"
+      "cn": "满足好奇心遥遥领先，占54.6%；其后是促进观察力和强身健体，分别占54.5%和33.2%；而增强亲子互动位居最后，占31.2%。"
      },
      {
       "spans": [
@@ -10633,30 +10173,30 @@
     ]
    },
    {
-    "wc": 69,
+    "wc": 68,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "The numbers in the chart are the result of deeper changes."
+        "x": "This phenomenon can be attributed to a combination of factors."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "图里的数字，是更深层变化的结果。"
+        "x": "这一现象是多种因素共同作用的结果。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 11,
-      "wc": 11,
+      "matched": 10,
+      "wc": 10,
       "keys": [
-       "The numbers in the chart are the result of deeper changes."
+       "This phenomenon can be attributed to a combination of factors."
       ],
-      "cn": "图里的数字，是更深层变化的结果。"
+      "cn": "这一现象是多种因素共同作用的结果。"
      },
      {
       "spans": [
@@ -10809,30 +10349,30 @@
     ]
    },
    {
-    "wc": 47,
+    "wc": 58,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a change worth welcoming."
+        "x": "On balance, this is a positive trend worth welcoming."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总体来看，这是值得欢迎的变化。"
+        "x": "总体来看，这是值得欢迎的积极趋势。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 8,
-      "wc": 8,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "On balance, this is a change worth welcoming."
+       "On balance, this is a positive trend worth welcoming."
       ],
-      "cn": "总体来看，这是值得欢迎的变化。"
+      "cn": "总体来看，这是值得欢迎的积极趋势。"
      },
      {
       "spans": [
@@ -10898,24 +10438,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "That is what will decide whether the change lasts."
+        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "而这，正是决定这种变化能否持续的关键。"
+        "x": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
        }
       ],
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "That is what will decide whether the change lasts."
+       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
       ],
-      "cn": "而这，正是决定这种变化能否持续的关键。"
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。"
      }
     ]
    }

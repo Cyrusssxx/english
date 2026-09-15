@@ -3832,12 +3832,12 @@
     "template": "该思路适用于分析反映两个对象不同增量的图表。As is demonstrated in the diagram, from 年份 to 年份, ____ grew sharply from 数据 to 数据 in 地点. Contrastingly, during the same period, there was only a moderate increase (from 数据 to 数据) in 地点. Different performance was due to different ____. In ____, the number of ____ would be ____. Thanks to ____, an increasing number of ____ resulting in the take-off of ____. （分析对象1增长快速的原因）However, in ____, there was ____, leaving little room for growth.（分析对象2增长缓慢的原因）Since ____, the number ____ there will continue to grow at a fast rate; nevertheless, the growth will slow down as ____.（预测对象1的增长情况）In comparison, ____, so the growth of ____ is expected to remain stagnant unless ____.（预测对象2的增长情况）"
    },
    "apply": {
-    "apply_en": "The bar chart tracks mobile-phone subscriptions from 2000 to 2008. Those in developing countries climbed from 0.5 billion to 4 billion, and those in developed countries went from 0.7 billion to 1 billion as well. The two moved in the same direction, but not at the same pace. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, mobile phone use has moved from a luxury to an everyday necessity. Online platforms and mobile payment have made mobile phone use quicker and easier to arrange. People now judge mobile phone use by what it does for them rather than by what others think.\n\nOn balance, this is a change worth welcoming. Government can fund public facilities so that mobile phone use is not limited to those who can pay. What matters most is whether families and schools treat mobile phone use as a normal part of life. That is what will decide whether the change lasts.",
-    "apply_cn": "该柱状图记录了2000年到2008年期间手机用户数的变化。发展中国家由5亿升至40亿，发达国家也从7亿升到10亿。两者方向一致，但速度不同。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，手机的使用已从奢侈品变成日常必需。线上平台和移动支付让手机的使用变得更快更方便。人们现在看手机的使用好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的变化。政府可以投入公共设施，让手机的使用不只属于付得起钱的人。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
+    "apply_en": "The bar chart above clearly illustrates the changes in mobile-phone subscriptions from 2000 to 2008. During this period, subscriptions in developing countries rose sharply from 0.5 billion to 4 billion. By contrast, the figure for subscriptions in developed countries saw a modest increase, climbing from 0.7 billion to 1 billion over the same period. The two moved in the same direction, but not at the same pace.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, mobile phone use has moved from a luxury to an everyday necessity. Online platforms and mobile payment have made mobile phone use quicker and easier to arrange. People now judge mobile phone use by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Government can fund public facilities so that mobile phone use is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了2000年到2008年期间手机用户数的变化。在此期间，发展中国家的手机用户数由5亿大幅升至40亿。相比之下，发达国家的手机用户数的数字增幅温和，由7亿增至10亿。两者方向一致，但速度不同。\n\n这一现象是多种因素共同作用的结果。随着家庭收入提高，手机的使用已从奢侈品变成日常必需。线上平台和移动支付让手机的使用变得更快更方便。人们现在看手机的使用好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的积极趋势。政府可以投入公共设施，让手机的使用不只属于付得起钱的人。明确的规则和持续投入，比一次性活动更重要。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "tips": [
      "柱状图、都升，速度不同（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
-     "数据要点：those in developing countries 0.5 billion → 4 billion；those in developed countries 0.7 billion → 1 billion。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 61 词。",
+     "数据要点：subscriptions in developing countries 0.5 billion → 4 billion；subscriptions in developed countries 0.7 billion → 1 billion。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 60 词。",
      "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
     ],
     "title": "Part B 图表作文：手机用户量增长情况对比",
@@ -3850,14 +3850,14 @@
      },
      {
       "name": "item1",
-      "en": "those in developing countries",
-      "cn": "发展中国家",
+      "en": "subscriptions in developing countries",
+      "cn": "发展中国家的手机用户数",
       "para": "第一段"
      },
      {
       "name": "item2",
-      "en": "those in developed countries",
-      "cn": "发达国家",
+      "en": "subscriptions in developed countries",
+      "cn": "发达国家的手机用户数",
       "para": "第一段"
      },
      {
@@ -3917,14 +3917,19 @@
     ],
     "key_phrases": [
      {
-      "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-      "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+      "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
+      "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
       "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "{{item1}} climbed from {{num1}} to {{num2}}, and {{item2}} went from {{num3}} to {{num4}} as well.",
-      "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，{{item2}} 也从 {{num3}} 升到 {{num4}}。",
+      "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
+      "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
       "src": "动态图表第一段 · 模板第2句"
+     },
+     {
+      "en": "By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
+      "cn": "相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
+      "src": "动态图表第一段 · 模板第3句"
      },
      {
       "en": "The two moved in the same direction, but not at the same pace.",
@@ -3932,13 +3937,8 @@
       "src": "动态图表第一段 · 功能句1"
      },
      {
-      "en": "The gap between the two widened over the period.",
-      "cn": "两者的差距在这一时期拉大了。",
-      "src": "动态图表第一段 · 功能句2"
-     },
-     {
-      "en": "The numbers in the chart are the result of deeper changes.",
-      "cn": "图里的数字，是更深层变化的结果。",
+      "en": "This phenomenon can be attributed to a combination of factors.",
+      "cn": "这一现象是多种因素共同作用的结果。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
@@ -3957,8 +3957,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句4"
      },
      {
-      "en": "On balance, this is a change worth welcoming.",
-      "cn": "总体来看，这是值得欢迎的变化。",
+      "en": "On balance, this is a positive trend worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
@@ -3967,13 +3967,13 @@
       "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
      },
      {
-      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
-      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+      "en": "Clear rules and steady funding matter more than one-off campaigns.",
+      "cn": "明确的规则和持续投入，比一次性活动更重要。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
      },
      {
-      "en": "That is what will decide whether the change lasts.",
-      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]

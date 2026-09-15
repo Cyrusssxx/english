@@ -4558,12 +4558,12 @@
     "template": "该思路适用于关于\"选择/关注因素/原因等\"的占比分析，如：高校学生创业的原因调查、人们选择定居城市的考虑因素等。\nFrom the information given in the pie chart, we can see the survey on 图表主题. Those 对象1 account for 数据1, the biggest among all of the factors, while 对象2 makes up only 数据2.\nMultiple factors underlie the phenomenon reflected in the chart. The most important factor to be considered is the fact that 原因1, which has a significant effect on 对象. In the second place, 原因2.\nIn view of the discussion above, it is no surprise to see such phenomenon in the current context of 背景. And there is reason to believe that this trend will continue in the years to come.\n模板注释：第二段分析现象背后的两方面原因；第三段发表对于图中现象/趋势的总体看法，并对未来情形作出判断。"
    },
    "apply": {
-    "apply_en": "The pie chart shows how the factors consumers weigh when choosing a restaurant break down. Distinctive features come first, at 36.3%. Service and the dining environment follow, at 26.8% and 23.8%. Other factors round off the list at 4.7%. Taken together, the three largest items make up 86.9%.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, dining out has moved from a luxury to an everyday necessity. People now judge dining out by what it does for them rather than by what others think. Online platforms and mobile payment have made dining out quicker and easier to arrange.\n\nOn balance, this is a change worth welcoming. Companies can make dining out cheaper and easier to use, so that it reaches more people. Platforms should design simple, honest interfaces instead of ones that keep users hooked. Individuals should choose what fits their own situation rather than follow the crowd. That is what will decide whether the change lasts.",
-    "apply_cn": "该饼状图展示消费者选择餐厅时考虑的因素的构成情况。餐厅特色排在第一位，占36.3%。紧随其后的是服务和就餐环境，分别占26.8%和23.8%。最后是其他因素，占4.7%。前三项加起来占86.9%。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，外出就餐已从奢侈品变成日常必需。人们现在看外出就餐好不好用，而不是看别人怎么想。线上平台和移动支付让外出就餐变得更快更方便。\n\n总体来看，这是值得欢迎的变化。企业可以把外出就餐做得更便宜好用，让它覆盖更多人。平台应把界面做得简单诚实，而不是想方设法让人上瘾。个人应按自身情况选择，而不是随大流。而这，正是决定这种变化能否持续的关键。",
+    "apply_en": "The pie chart above clearly illustrates how the factors consumers weigh when choosing a restaurant are distributed. Distinctive features take the lead, accounting for 36.3%, followed by service and the dining environment at 26.8% and 23.8% respectively, while other factors come last at 4.7%. Taken together, the three largest items make up 86.9%.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, dining out has moved from a luxury to an everyday necessity. People now judge dining out by what it does for them rather than by what others think. Online platforms and mobile payment have made dining out quicker and easier to arrange.\n\nOn balance, this is a positive trend worth welcoming. Companies can make dining out cheaper and easier to use, so that it reaches more people. Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible. Individuals should choose what fits their own situation rather than follow the crowd. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该饼状图清晰地展示了消费者选择餐厅时考虑的因素的分布情况。餐厅特色遥遥领先，占36.3%；其后是服务和就餐环境，分别占26.8%和23.8%；而其他因素位居最后，占4.7%。前三项加起来占86.9%。\n\n这一现象是多种因素共同作用的结果。随着家庭收入提高，外出就餐已从奢侈品变成日常必需。人们现在看外出就餐好不好用，而不是看别人怎么想。线上平台和移动支付让外出就餐变得更快更方便。\n\n总体来看，这是值得欢迎的积极趋势。企业可以把外出就餐做得更便宜好用，让它覆盖更多人。平台应把服务做得简单诚实，而不是想方设法长时间留住用户。个人应按自身情况选择，而不是随大流。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "tips": [
      "饼图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：distinctive features 占 36.3%；service 占 26.8%；the dining environment 占 23.8%；other factors 占 4.7%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 58 词。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 57 词。",
      "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
     ],
     "title": "Part B 大作文：2017年某市消费者选择餐厅时的关注因素饼状图",
@@ -4649,24 +4649,14 @@
     ],
     "key_phrases": [
      {
-      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+      "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
       "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "{{item1}} comes first, at {{percent1}}.",
-      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+      "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
       "src": "静态图表第一段 · 模板第2句"
-     },
-     {
-      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-      "src": "静态图表第一段 · 模板第3句"
-     },
-     {
-      "en": "{{item4}} rounds off the list at {{percent4}}.",
-      "cn": "最后是 {{item4}}，占 {{percent4}}。",
-      "src": "静态图表第一段 · 模板第4句"
      },
      {
       "en": "Taken together, the three largest items make up {{percent total}}.",
@@ -4674,8 +4664,8 @@
       "src": "静态图表第一段 · 功能句1"
      },
      {
-      "en": "The numbers in the chart are the result of deeper changes.",
-      "cn": "图里的数字，是更深层变化的结果。",
+      "en": "This phenomenon can be attributed to a combination of factors.",
+      "cn": "这一现象是多种因素共同作用的结果。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
@@ -4694,8 +4684,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句3"
      },
      {
-      "en": "On balance, this is a change worth welcoming.",
-      "cn": "总体来看，这是值得欢迎的变化。",
+      "en": "On balance, this is a positive trend worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
@@ -4704,8 +4694,8 @@
       "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
      },
      {
-      "en": "Platforms should design simple, honest interfaces instead of ones that keep users hooked.",
-      "cn": "平台应把界面做得简单诚实，而不是想方设法让人上瘾。",
+      "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
+      "cn": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。",
       "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
      },
      {
@@ -4714,8 +4704,8 @@
       "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
      },
      {
-      "en": "That is what will decide whether the change lasts.",
-      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]

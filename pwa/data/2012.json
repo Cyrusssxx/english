@@ -4159,12 +4159,12 @@
     "template": "该思路适用于分析体现满意度差异的表格。____ were most likely to report satisfaction, with ____% of them indicating they were content. ____ were less willing to declare satisfaction, only ____% of whom said they were satisfied; instead, ____% of whom expressed dissatisfaction. ____ were surely unhappiest: none of them felt satisfied and the percentage of respondents reporting dissatisfaction was as high as ____%. There is a significant difference in ____ satisfaction by ____. The difference relates to ____.（分析差异原因）The consequent sense of 负面情绪名词 is strong enough to reduce them to deep dissatisfaction. In contrast, ____ and understandably will feel happier. As for ____, ____. Not surprisingly, they are the happiest. It is clear that ____. For lasting happiness with ____, ____ is necessary."
    },
    "apply": {
-    "apply_en": "The table shows how employee dissatisfaction breaks down. The 41-to-50 age group comes first, at 64%. Those aged 40 or younger and the group over 50 follow, at 33.3% and 10%. The gap between the largest and the smallest is wide. The pattern is clear: a few items dominate the rest.\n\nThe numbers in the chart are the result of deeper changes. Longer working hours have made people value the little time they can call their own. Young people change jobs far more often than their parents did, so loyalty works differently. People now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures point to a problem worth taking seriously. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Left alone, the problem will not correct itself.",
-    "apply_cn": "该表格展示员工的不满意比例的构成情况。41~50岁组排在第一位，占64%。紧随其后的是40岁及以下组和50岁以上组，分别占33.3%和10%。最大项与最小项之间差距很大。格局很清楚：少数几项占了大头。\n\n图里的数字，是更深层变化的结果。工作时间变长，人们更看重那点属于自己的时间。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。人们现在看工作满意度好不好用，而不是看别人怎么想。\n\n总体来看，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。放任不管，这个问题不会自己好转。",
+    "apply_en": "The table above clearly illustrates how employee dissatisfaction is distributed. The figure varies sharply from group to group: it stands at 64% for the 41-to-50 age group, but falls to just 10% for the group over 50. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Longer working hours have made people value the little free time they have. Young people change jobs far more often than their parents did, so loyalty works differently. Employers now look for experience as much as for grades. People now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures point to a problem worth taking seriously. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Individuals need to watch their own habits instead of assuming they are safe. Unless effective measures are taken, it may well get worse.",
+    "apply_cn": "该表格清晰地展示了员工的不满意比例的分布情况。组与组之间差别悬殊：41~50岁组高达64%，而50岁以上组只有10%。最大项与最小项之间差距很大。\n\n这一现象是多种因素共同作用的结果。工作时间变长，人们更看重仅有的空闲时间。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。现在用人单位既看成绩，也看经验。人们现在看工作满意度好不好用，而不是看别人怎么想。\n\n总体来看，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。个人需要留意自己的习惯，而不是想当然认为没问题。若不采取有效措施，问题很可能进一步恶化。",
     "tips": [
      "表格、分布比高低（3 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：the 41-to-50 age group 占 64%；those aged 40 or younger 占 33.3%；the group over 50 占 10%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 58 词。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 65 词。",
      "第三段用 **负面版**（问题可能恶化）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
     ],
     "title": "Part B 图表作文：某公司员工工作满意度调查",
@@ -4232,19 +4232,14 @@
     ],
     "key_phrases": [
      {
-      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+      "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
       "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "{{item1}} comes first, at {{percent1}}.",
-      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
-      "src": "静态图表第一段 · 模板第2句"
-     },
-     {
-      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-      "src": "静态图表第一段 · 模板第3句"
+      "en": "The figure varies sharply from group to group: it stands at {{percent1}} for {{item1}}, but falls to just {{percent3}} for {{item3}}.",
+      "cn": "组与组之间差别悬殊：{{item1}} 高达 {{percent1}}，而 {{item3}} 只有 {{percent3}}。",
+      "src": "静态图表第一段 · 功能句4"
      },
      {
       "en": "The gap between the largest and the smallest is wide.",
@@ -4252,24 +4247,24 @@
       "src": "静态图表第一段 · 功能句3"
      },
      {
-      "en": "The pattern is clear: a few items dominate the rest.",
-      "cn": "格局很清楚：少数几项占了大头。",
-      "src": "静态图表第一段 · 功能句2"
-     },
-     {
-      "en": "The numbers in the chart are the result of deeper changes.",
-      "cn": "图里的数字，是更深层变化的结果。",
+      "en": "This phenomenon can be attributed to a combination of factors.",
+      "cn": "这一现象是多种因素共同作用的结果。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
-      "en": "Longer working hours have made people value the little time they can call their own.",
-      "cn": "工作时间变长，人们更看重那点属于自己的时间。",
+      "en": "Longer working hours have made people value the little free time they have.",
+      "cn": "工作时间变长，人们更看重仅有的空闲时间。",
       "src": "第二段 · 原因（机制句池） · 功能句9"
      },
      {
       "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
       "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
       "src": "第二段 · 原因（机制句池） · 功能句14"
+     },
+     {
+      "en": "Employers now look for experience as much as for grades.",
+      "cn": "现在用人单位既看成绩，也看经验。",
+      "src": "第二段 · 原因（机制句池） · 功能句15"
      },
      {
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
@@ -4292,8 +4287,13 @@
       "src": "第三段 · 负面版（立场 + 对策） · 功能句8"
      },
      {
-      "en": "Left alone, the problem will not correct itself.",
-      "cn": "放任不管，这个问题不会自己好转。",
+      "en": "Individuals need to watch their own habits instead of assuming they are safe.",
+      "cn": "个人需要留意自己的习惯，而不是想当然认为没问题。",
+      "src": "第三段 · 负面版（立场 + 对策） · 功能句6"
+     },
+     {
+      "en": "Unless effective measures are taken, it may well get worse.",
+      "cn": "若不采取有效措施，问题很可能进一步恶化。",
       "src": "第三段 · 负面版（立场 + 对策） · 模板第2句"
      }
     ]

@@ -14,12 +14,12 @@
      2
     ],
     [
-     "f",
-     1
+     "t",
+     3
     ],
     [
      "f",
-     2
+     1
     ]
    ]
   ],
@@ -57,7 +57,7 @@
     ],
     [
      "f",
-     1
+     8
     ],
     [
      "t",
@@ -66,10 +66,10 @@
    ]
   ],
   "slots_p1": {
-   "item1": "those in developing countries",
+   "item1": "subscriptions in developing countries",
    "num1": "0.5 billion",
    "num2": "4 billion",
-   "item2": "those in developed countries",
+   "item2": "subscriptions in developed countries",
    "num3": "0.7 billion",
    "num4": "1 billion",
    "time1": "2000",
@@ -78,10 +78,10 @@
    "topic": "mobile-phone subscriptions"
   },
   "slots_p1_cn": {
-   "item1": "发展中国家",
+   "item1": "发展中国家的手机用户数",
    "num1": "5 亿",
    "num2": "40 亿",
-   "item2": "发达国家",
+   "item2": "发达国家的手机用户数",
    "num3": "7 亿",
    "num4": "10 亿",
    "time1": "2000 年",
@@ -118,12 +118,8 @@
      2
     ],
     [
-     "f",
-     4
-    ],
-    [
-     "f",
-     2
+     "t",
+     3
     ]
    ]
   ],
@@ -224,20 +220,12 @@
      1
     ],
     [
-     "t",
-     2
-    ],
-    [
-     "t",
-     3
+     "f",
+     4
     ],
     [
      "f",
      3
-    ],
-    [
-     "f",
-     2
     ]
    ]
   ],
@@ -255,6 +243,10 @@
     [
      "f",
      14
+    ],
+    [
+     "f",
+     15
     ],
     [
      "f",
@@ -276,6 +268,10 @@
     [
      "f",
      8
+    ],
+    [
+     "f",
+     6
     ],
     [
      "t",
@@ -389,6 +385,8 @@
    "num2": "88.24%",
    "time1": "the first year",
    "time2": "the final year",
+   "time3": "the third year",
+   "num3": "71.93%",
    "chart": "bar",
    "topic": "the proportion of college students taking part-time jobs"
   },
@@ -430,12 +428,8 @@
      2
     ],
     [
-     "f",
-     4
-    ],
-    [
-     "f",
-     2
+     "t",
+     3
     ]
    ]
   ],
@@ -453,10 +447,6 @@
     [
      "f",
      1
-    ],
-    [
-     "f",
-     6
     ],
     [
      "f",
@@ -480,10 +470,6 @@
      8
     ],
     [
-     "f",
-     1
-    ],
-    [
      "t",
      2
     ]
@@ -492,10 +478,10 @@
   "slots_p1": {
    "item1": "the urban population",
    "num1": "300 million",
-   "num2": "670 million",
+   "num2": "666 million",
    "item2": "the rural population",
-   "num3": "820 million",
-   "num4": "680 million",
+   "num3": "834 million",
+   "num4": "674 million",
    "time1": "1990",
    "time2": "2010",
    "chart": "bar",
@@ -504,10 +490,10 @@
   "slots_p1_cn": {
    "item1": "城镇人口",
    "num1": "3 亿",
-   "num2": "6.7 亿",
+   "num2": "6.66 亿",
    "item2": "乡村人口",
-   "num3": "8.2 亿",
-   "num4": "6.8 亿",
+   "num3": "8.34 亿",
+   "num4": "6.74 亿",
    "time1": "1990 年",
    "time2": "2010 年",
    "chart": "柱状",
@@ -540,14 +526,6 @@
     [
      "t",
      2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
     ],
     [
      "f",
@@ -606,7 +584,7 @@
    "percent1": "40%",
    "item2": "dinners with relatives",
    "percent2": "20%",
-   "item3": "travel",
+   "item3": "transportation",
    "percent3": "20%",
    "item4": "other spending",
    "percent4": "20%",
@@ -657,14 +635,6 @@
     [
      "t",
      2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
     ],
     [
      "f",
@@ -779,8 +749,8 @@
      2
     ],
     [
-     "f",
-     2
+     "t",
+     3
     ]
    ]
   ],
@@ -834,9 +804,9 @@
    "item1": "visitor numbers",
    "num1": "640 million",
    "num2": "780 million",
-   "item2": "the number of museums",
-   "num3": "4,200",
-   "num4": "4,600",
+   "item2": "museum numbers",
+   "num3": "4,165",
+   "num4": "4,692",
    "time1": "2013",
    "time2": "2015",
    "chart": "line",
@@ -847,8 +817,8 @@
    "num1": "6.4 亿",
    "num2": "7.8 亿",
    "item2": "博物馆数量",
-   "num3": "4200 家",
-   "num4": "4600 家",
+   "num3": "4165 家",
+   "num4": "4692 家",
    "time1": "2013 年",
    "time2": "2015 年",
    "chart": "折线",
@@ -881,14 +851,6 @@
     [
      "t",
      2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
     ],
     [
      "f",
@@ -1001,12 +963,8 @@
      2
     ],
     [
-     "f",
-     4
-    ],
-    [
-     "f",
-     2
+     "t",
+     3
     ]
    ]
   ],
@@ -1016,10 +974,6 @@
     [
      "t",
      1
-    ],
-    [
-     "f",
-     15
     ],
     [
      "f",
@@ -1060,7 +1014,7 @@
    "item1": "the share going on to further study",
    "num1": "26.3%",
    "num2": "34.0%",
-   "item2": "the share entering employment",
+   "item2": "the employment share",
    "num3": "68.1%",
    "num4": "60.7%",
    "time1": "2013",
@@ -1107,14 +1061,6 @@
     [
      "t",
      2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
     ],
     [
      "f",
@@ -1226,14 +1172,6 @@
      2
     ],
     [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
-    ],
-    [
      "f",
      3
     ]
@@ -1280,10 +1218,6 @@
      11
     ],
     [
-     "f",
-     1
-    ],
-    [
      "t",
      2
     ]
@@ -1297,7 +1231,7 @@
    "item3": "exercising with family",
    "percent3": "23.9%",
    "item4": "team sports",
-   "percent4": "16%",
+   "percent4": "15.8%",
    "chart": "bar",
    "topic": "the ways residents take exercise"
   },
@@ -1345,12 +1279,12 @@
      2
     ],
     [
-     "f",
-     2
+     "t",
+     3
     ],
     [
      "f",
-     3
+     2
     ]
    ]
   ],
@@ -1454,7 +1388,7 @@
     ],
     [
      "f",
-     5
+     8
     ]
    ]
   ],
@@ -1514,6 +1448,8 @@
    "num2": "25.40%",
    "time1": "2012",
    "time2": "2021",
+   "time3": "2015",
+   "num3": "10.25%",
    "chart": "line",
    "topic": "the health literacy rate of Chinese residents"
   },
@@ -1553,14 +1489,6 @@
     [
      "t",
      2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
     ],
     [
      "f",
@@ -1670,14 +1598,6 @@
      2
     ],
     [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
-    ],
-    [
      "f",
      3
     ]
@@ -1722,10 +1642,6 @@
     [
      "f",
      11
-    ],
-    [
-     "f",
-     1
     ],
     [
      "t",
@@ -1786,14 +1702,6 @@
     [
      "t",
      2
-    ],
-    [
-     "t",
-     3
-    ],
-    [
-     "t",
-     4
     ],
     [
      "f",

@@ -4669,12 +4669,12 @@
     "template": "该思路适用于分析人们的开支情况，论述开支的意义以及过度开支的后果。The chart reflects ____ spending types and their respective proportions. ____ money is mainly used for ____ purposes（用同位语解释说明purposes）: ____. They account for ____% of total spending. Most spending is used to ____. This finding is not strange, since ____. ____ is beneficial and necessary for a person's fulfillment and investing on ____ is sweet and happy. However, we should not go to extremes. In China, there are many people ____. They use handsome money to blindly pursue ____. Such intention causes huge waste of money and imposes heavy economic burden on people involved. The ____ gotten by squandering money is transient and can only be a topic for gossip soon forgotten by others. Therefore, we should think rationally before opening our purses. We should remember it is ____ that is the main concern."
    },
    "apply": {
-    "apply_en": "The pie chart shows how Spring Festival spending breaks down. Gifts for family and friends come first, at 40%. Dinners with relatives and travel follow, at 20% and 20%. Other spending rounds off the list at 20%. Taken together, the three largest items make up 80%.\n\nThe numbers in the chart are the result of deeper changes. As household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. People now judge New Year gifts by what it does for them rather than by what others think. Online platforms and mobile payment have made New Year gifts quicker and easier to arrange. Old traditions survive only when people find new ways to pass them on.\n\nOn balance, this is a change worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. That is what will decide whether the change lasts.",
-    "apply_cn": "该饼状图展示春节假期花销的构成情况。给亲友买礼物排在第一位，占40%。紧随其后的是与亲友聚餐和出行，分别占20%和20%。最后是其他花销，占20%。前三项加起来占80%。\n\n图里的数字，是更深层变化的结果。随着家庭收入提高，新年礼物已从奢侈品变成日常必需。人们现在看新年礼物好不好用，而不是看别人怎么想。线上平台和移动支付让新年礼物变得更快更方便。老传统只有在被不断重新传递时才能活下来。\n\n总体来看，这是值得欢迎的变化。个人应按自身情况选择，而不是随大流。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。而这，正是决定这种变化能否持续的关键。",
+    "apply_en": "The pie chart above clearly illustrates how Spring Festival spending is distributed. Gifts for family and friends take the lead, accounting for 40%, followed by dinners with relatives and transportation at 20% and 20% respectively, while other spending comes last at 20%. Taken together, the three largest items make up 80%.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. People now judge New Year gifts by what it does for them rather than by what others think. Online platforms and mobile payment have made New Year gifts quicker and easier to arrange. Old traditions survive only when people find new ways to pass them on.\n\nOn balance, this is a positive trend worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象是多种因素共同作用的结果。随着家庭收入提高，新年礼物已从奢侈品变成日常必需。人们现在看新年礼物好不好用，而不是看别人怎么想。线上平台和移动支付让新年礼物变得更快更方便。老传统只有在被不断重新传递时才能活下来。\n\n总体来看，这是值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "tips": [
      "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
-     "数据要点：gifts for family and friends 占 40%；dinners with relatives 占 20%；travel 占 20%；other spending 占 20%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 74 词。",
+     "数据要点：gifts for family and friends 占 40%；dinners with relatives 占 20%；transportation 占 20%；other spending 占 20%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 73 词。",
      "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
     ],
     "title": "Part B 大作文：春节假期花销比例饼图",
@@ -4699,7 +4699,7 @@
      },
      {
       "name": "item3",
-      "en": "travel",
+      "en": "transportation",
       "cn": "出行",
       "para": "第一段"
      },
@@ -4760,24 +4760,14 @@
     ],
     "key_phrases": [
      {
-      "en": "The {{chart}} chart shows how {{topic}} breaks down.",
-      "cn": "该 {{chart}} 图展示 {{topic}} 的构成情况。",
+      "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+      "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
       "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "{{item1}} comes first, at {{percent1}}.",
-      "cn": "{{item1}} 排在第一位，占 {{percent1}}。",
+      "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+      "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
       "src": "静态图表第一段 · 模板第2句"
-     },
-     {
-      "en": "{{item2}} and {{item3}} follow, at {{percent2}} and {{percent3}}.",
-      "cn": "紧随其后的是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}。",
-      "src": "静态图表第一段 · 模板第3句"
-     },
-     {
-      "en": "{{item4}} rounds off the list at {{percent4}}.",
-      "cn": "最后是 {{item4}}，占 {{percent4}}。",
-      "src": "静态图表第一段 · 模板第4句"
      },
      {
       "en": "Taken together, the three largest items make up {{percent total}}.",
@@ -4785,8 +4775,8 @@
       "src": "静态图表第一段 · 功能句1"
      },
      {
-      "en": "The numbers in the chart are the result of deeper changes.",
-      "cn": "图里的数字，是更深层变化的结果。",
+      "en": "This phenomenon can be attributed to a combination of factors.",
+      "cn": "这一现象是多种因素共同作用的结果。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
@@ -4810,8 +4800,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句11"
      },
      {
-      "en": "On balance, this is a change worth welcoming.",
-      "cn": "总体来看，这是值得欢迎的变化。",
+      "en": "On balance, this is a positive trend worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
@@ -4825,8 +4815,8 @@
       "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
      },
      {
-      "en": "That is what will decide whether the change lasts.",
-      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]

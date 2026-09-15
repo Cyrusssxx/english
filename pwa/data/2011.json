@@ -4038,12 +4038,12 @@
     "template": "可选用该思路中的语句分析市场占有率排名有变化的图表；若图表反映三个品牌中前两名排名互换，则可全盘借用范文中的表达。____ market was still dominated by ____ brands. ____ remained the third most popular in the market with a slight increase/decline in market share. A noticeable change occurred in ____ brands. ____, whose share of market slipped by almost ____%, were displaced from their leading position by ____, which expanded their share by ____. The performance of ____ is to be expected, given their ____. The big change in the performance of ____ seems sudden but is not unexpected. （具体阐释后来者登上第一位置的主观原因）When ____ were growing, ____ were hit by reputation crisis caused by ____.（阐释昔日冠军失去第一位置的主观原因）The plight of ____ is the reminder that ____ is the soul of products. Hopefully, ____ will consistently guarantee ____, thereby protecting their own reputation to maintain market popularity."
    },
    "apply": {
-    "apply_en": "The bar chart tracks the market shares of Chinese, Japanese and American car brands from 2008 to 2009. Chinese brands climbed from 26% to 31%, while Japanese brands slipped from 35% to 26%. The two moved in opposite directions. The gap between the two widened over the period.\n\nThe numbers in the chart are the result of deeper changes. People now judge car ownership by what it does for them rather than by what others think. Public spending on infrastructure has made car ownership far more widely available. Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands. Cities have absorbed millions of new residents, and demand for car ownership has grown with them.\n\nOn balance, this is a change worth welcoming. Companies can make domestic car brands cheaper and easier to use, so that they reach more people. Clear rules and steady funding matter more than one-off campaigns. That is what will decide whether the change lasts.",
-    "apply_cn": "该柱状图记录了2008年到2009年期间国产、日系与美系汽车品牌的市场份额的变化。国产品牌由26%升至31%，而日系品牌由35%降到26%。两者朝相反的方向变化。两者的差距在这一时期拉大了。\n\n图里的数字，是更深层变化的结果。人们现在看汽车保有量好不好用，而不是看别人怎么想。公共基础设施投入让汽车保有量的覆盖面大大增加。国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。城市吸纳了大量新居民，汽车保有量的需求随之增长。\n\n总体来看，这是值得欢迎的变化。企业可以把国产汽车品牌做得更便宜好用，让它覆盖更多人。明确的规则和持续投入，比一次性活动更重要。而这，正是决定这种变化能否持续的关键。",
+    "apply_en": "The bar chart above clearly illustrates the sharp contrast in the market shares of Chinese, Japanese and American car brands between Chinese brands and Japanese brands from 2008 to 2009. During this period, Chinese brands rose sharply from 26% to 31%. By contrast, the figure for Japanese brands saw a steady decline, falling from 35% to 26%.\n\nThis phenomenon can be attributed to a combination of factors. People now judge car ownership by what it does for them rather than by what others think. Public spending on infrastructure has made car ownership far more widely available. Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands. Cities have absorbed millions of new residents, and demand for car ownership has grown with them.\n\nOn balance, this is a positive trend worth welcoming. Companies can make domestic car brands cheaper and easier to use, so that they reach more people. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了2008年到2009年期间国产、日系与美系汽车品牌的市场份额在国产品牌与日系品牌之间的鲜明反差。在此期间，国产品牌由26%大幅升至31%。相比之下，日系品牌的数字稳步下降，由35%降至26%。\n\n这一现象是多种因素共同作用的结果。人们现在看汽车保有量好不好用，而不是看别人怎么想。公共基础设施投入让汽车保有量的覆盖面大大增加。国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。城市吸纳了大量新居民，汽车保有量的需求随之增长。\n\n总体来看，这是值得欢迎的积极趋势。企业可以把国产汽车品牌做得更便宜好用，让它覆盖更多人。明确的规则和持续投入，比一次性活动更重要。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
     "tips": [
      "柱状图、有升有降（3 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
      "数据要点：Chinese brands 26% → 31%；Japanese brands 35% → 26%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
-     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 73 词。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 72 词。",
      "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
     ],
     "title": "Part B 图表作文：汽车品牌市场份额变化",
@@ -4123,28 +4123,23 @@
     ],
     "key_phrases": [
      {
-      "en": "The {{chart}} chart tracks {{topic}} from {{time1}} to {{time2}}.",
-      "cn": "该 {{chart}} 图记录了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。",
+      "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
+      "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。",
       "src": "动态图表第一段 · 模板第1句"
      },
      {
-      "en": "{{item1}} climbed from {{num1}} to {{num2}}, while {{item2}} slipped from {{num3}} to {{num4}}.",
-      "cn": "{{item1}} 由 {{num1}} 升至 {{num2}}，而 {{item2}} 由 {{num3}} 降到 {{num4}}。",
+      "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
+      "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
       "src": "动态图表第一段 · 模板第2句"
      },
      {
-      "en": "The two moved in opposite directions.",
-      "cn": "两者朝相反的方向变化。",
-      "src": "动态图表第一段 · 功能句4"
+      "en": "By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.",
+      "cn": "相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。",
+      "src": "动态图表第一段 · 模板第3句"
      },
      {
-      "en": "The gap between the two widened over the period.",
-      "cn": "两者的差距在这一时期拉大了。",
-      "src": "动态图表第一段 · 功能句2"
-     },
-     {
-      "en": "The numbers in the chart are the result of deeper changes.",
-      "cn": "图里的数字，是更深层变化的结果。",
+      "en": "This phenomenon can be attributed to a combination of factors.",
+      "cn": "这一现象是多种因素共同作用的结果。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
@@ -4168,8 +4163,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句7"
      },
      {
-      "en": "On balance, this is a change worth welcoming.",
-      "cn": "总体来看，这是值得欢迎的变化。",
+      "en": "On balance, this is a positive trend worth welcoming.",
+      "cn": "总体来看，这是值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
@@ -4183,8 +4178,8 @@
       "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
      },
      {
-      "en": "That is what will decide whether the change lasts.",
-      "cn": "而这，正是决定这种变化能否持续的关键。",
+      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
