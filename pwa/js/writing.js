@@ -1027,6 +1027,8 @@ function wrTocBind() {
 }
 
 async function initWriting() {
+    // 词典与主体并行拉取：图片已最后加载不再抢带宽，词典无需延迟（dict/phrases/senses 立即开始下）
+    const heavyP = wrHeavyReady();
     try {
         const res = await fetch('data/writing_templates.json', { cache: 'no-cache' });
         if (!res.ok) throw new Error('加载失败: ' + res.status);
@@ -1104,26 +1106,17 @@ async function initWriting() {
     wrRenderCards();
     wrTocBuild();
 
-    // 词典类重资源错峰：主体渲染完、真题图表图片先下，再拉 dict/phrases/senses。
-    // requestIdleCallback 在部分环境不可靠（jsdom 存在但不触发/后台页被节流）→ setTimeout 兜底必达；
-    // 词典就绪后重渲染卡片一次，把纯文本句子重新标注成可点词（dict 未加载时 wrAnnotatePlain 只出纯文本）。
-    let _heavyFired = false;
-    const fireHeavy = () => {
-        if (_heavyFired) return;
-        _heavyFired = true;
-        wrHeavyReady().then(() => { if (typeof wrRenderCards === 'function') wrRenderCards(); });
-    };
-    if ('requestIdleCallback' in window) window.requestIdleCallback(fireHeavy, { timeout: 4000 });
-    setTimeout(fireHeavy, 1500);   // 兜底：空闲/超时必拉词典
+    // 词典就绪后重渲染卡片一次，把纯文本句子重新标注成可点词（dict 未加载时 wrAnnotatePlain 只出纯文本）
+    heavyP.then(() => { if (typeof wrRenderCards === 'function') wrRenderCards(); });
 
-    // 真题图表图片最后加载：主体文字 + 词典就绪后再填 src（2MB 不抢首屏带宽）。
+    // 真题图表图片最后加载：主体 + 词典就绪后再填 src（2MB 不抢首屏带宽）。
     // 填 src 后仍走 loading="lazy"，滚动到视口才真正下载；重复调用幂等。
     const fillCharts = () => {
         document.querySelectorAll('#wrChartsBlock img[data-src]').forEach(im => {
             im.src = im.getAttribute('data-src');
         });
     };
-    wrHeavyReady().then(() => setTimeout(fillCharts, 600));
+    heavyP.then(() => setTimeout(fillCharts, 600));
     window.addEventListener('load', () => setTimeout(fillCharts, 200), { once: true });   // 兜底：load 后必填
 }
 

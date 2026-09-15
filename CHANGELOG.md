@@ -1,5 +1,17 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16 词典去掉 1.5s 延迟] 词典与主体并行立即拉取
+
+- 用户质疑「1.5s 后拉取需要这么久吗」——上一轮的 1.5s 是给「图片优先」设计的；
+  图片已改最后加载不再抢带宽 → 延迟前提消失。
+- **改法**：initWriting 开头 `const heavyP = wrHeavyReady()`（与 templates fetch 并行发起，
+  dict/phrases/senses 立即开始下载）；删掉 requestIdleCallback + setTimeout(1500) 兜底；
+  就绪后 `heavyP.then` 串联重标注（wrRenderCards）+ 图片填 src（+600ms）。
+- 效果：浏览器并行下载，小文件（templates 52K）先完成先渲染主体，词典大文件（3.5MB）后台下载，
+  图片最后填——加载总时长 ≈ 3.5MB 下载时间，不再叠加 1.5s。
+- 验证：jsdom 5/5（fetch 顺序 senses→wordnotes→dict→phrases 与模板并行、主体先渲染、
+  图片最后填 17/17、重标注出可点词）。SW en2-35d28ab5。
+
 ## [2026-09-16 图片后加载] 真题图表改 data-src 延迟填充（用户澄清：图片应最后加载）
 
 - 用户澄清上一轮做反了：要的是「图片后加载」（文字/模板先出，2MB 真题图不抢首屏带宽）。
