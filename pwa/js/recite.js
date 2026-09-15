@@ -116,10 +116,12 @@ async function rcInit() {
                     + (v.demo ? `<div class="rc-demo"><b>例</b><span class="rc-en">${rcAnno(v.demo)}</span></div>` : '')
                     + '</div>').join('');
             } else {
-                sk += '<div class="rc-lines">'
-                    + rcPairs(s.en, s.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
-                    + '</div>'
-                    + (s.framework ? `<div class="rc-frame"><div class="rc-frame-title">🧩 第二段框架（4 步拼装）</div>${s.framework.map(f => `<div class="rc-line"><div class="rc-en">${rcAnno(f.en)}</div>${f.trans ? `<div class="rc-cn">${rcPh(f.trans)}</div>` : ''}${f.cn ? `<div class="rc-cn">${rcPh(f.cn)}</div>` : ''}</div>`).join('')}</div>` : '')
+                if (!s.framework) {
+                    sk += '<div class="rc-lines">'
+                        + rcPairs(s.en, s.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
+                        + '</div>';
+                }
+                sk += (s.framework ? `<div class="rc-frame"><div class="rc-frame-title">🧩 第二段框架（${s.framework.length} 步拼装 · 必背就这 ${s.framework.length} 步）</div>${s.framework.map(f => `<div class="rc-line"><div class="rc-en">${rcAnno(f.en)}</div>${f.trans ? `<div class="rc-cn">${rcPh(f.trans)}</div>` : ''}${f.cn ? `<div class="rc-cn">${rcPh(f.cn)}</div>` : ''}</div>`).join('')}</div>` : '')
                     + (s.linkers ? `<div class="rc-alts">✎ 高级衔接词：${rcLinkers(s.linkers)}</div>` : '')
                     + (s.demo ? `<div class="rc-demo"><b>例</b><span class="rc-en">${rcAnno(s.demo)}</span></div>` : '');
             }
@@ -608,5 +610,227 @@ document.addEventListener('DOMContentLoaded', () => {
     rcInit();
     rcSmallInit();
     rcAnnoBind();
-    Promise.all([loadDict(), loadPhrases(), rcLoadSense()]).then(rcAnnoAll);   // 词典就绪后全页标注
+    rcHlBind();
+    rcMkLoad();
+    [400, 1200, 2600].forEach(t2 => setTimeout(rcMkRestore, t2));   // 异步渲染完再重建高亮
+    Promise.all([loadDict(), loadPhrases(), rcLoadSense()]).then(() => { rcAnnoAll(); rcMkRestore(); });   // 词典就绪后全页标注
 });
+
+
+/* ==================== 划词高亮（自 writing.js 移植精简版：只高亮不批注） ==================== */
+const RC_MK_KEY = 'rc_mk_v1';
+const RC_HL_COLORS = ['yellow', 'green', 'blue', 'pink'];
+const RC_HL_CN = { yellow: '黄色', green: '绿色', blue: '蓝色', pink: '粉色' };
+const RC_MK_SEL = '.rc-en, .rc-cn, .rc-order-body, .rc-note, .rc-use, .rc-table td';
+let rcMarks = [];
+let rcHlBar = null;
+let rcHlTimer = null;
+
+function rcMkLoad() {
+    try { rcMarks = JSON.parse(localStorage.getItem(RC_MK_KEY) || '[]') || []; }
+    catch (e) { rcMarks = []; }
+    if (!Array.isArray(rcMarks)) rcMarks = [];
+    rcMarks = rcMarks.filter(m => m && typeof m.c === 'number' && RC_HL_COLORS.includes(m.k));
+}
+
+function rcMkSave() {
+    try { localStorage.setItem(RC_MK_KEY, JSON.stringify(rcMarks)); } catch (e) { /* ignore */ }
+}
+
+/** 可高亮正文块：一次 DFS 收集（命中即收、不再下钻），按文档序编号 data-mk */
+function rcMkBlocks() {
+    const out = [];
+    (function walk(node) {
+        for (const el of node.children) {
+            if (el.matches(RC_MK_SEL)) { out.push(el); continue; }
+            walk(el);
+        }
+    })(document.body);
+    for (let i = 0; i < out.length; i++) out[i].setAttribute('data-mk', String(i));
+    return out;
+}
+
+function rcMkBlockOf(node) {
+    const el = node && node.nodeType === 3 ? node.parentElement : node;
+    return (el && el.closest) ? el.closest('[data-mk]') : null;
+}
+
+/** 块内全部 Text 节点 → [{node, start, len}] */
+function rcMkTexts(el) {
+    const tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const out = []; let acc = 0;
+    while (tw.nextNode()) {
+        const n = tw.currentNode;
+        out.push({ node: n, start: acc, len: n.data.length });
+        acc += n.data.length;
+    }
+    return out;
+}
+
+function rcMkOffset(texts, node, off) {
+    for (const tx of texts) if (tx.node === node) return tx.start + off;
+    return null;
+}
+
+function rcMkAt(texts, off) {
+    for (const tx of texts) {
+        if (off <= tx.start + tx.len) return { node: tx.node, off: off - tx.start };
+    }
+    const last = texts[texts.length - 1];
+    return last ? { node: last.node, off: last.len } : null;
+}
+
+function rcMkRange(el, s, e) {
+    const texts = rcMkTexts(el);
+    const a = rcMkAt(texts, s), b = rcMkAt(texts, e);
+    if (!a || !b) return null;
+    if (a.node === b.node && a.off === b.off) return null;
+    const r = document.createRange();
+    try { r.setStart(a.node, a.off); r.setEnd(b.node, b.off); } catch (e2) { return null; }
+    return r;
+}
+
+function rcMkSelInfo() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || !sel.rangeCount) return { err: 'none' };
+    const r = sel.getRangeAt(0);
+    const b1 = rcMkBlockOf(r.startContainer), b2 = rcMkBlockOf(r.endContainer);
+    if (!b1 || !b2 || b1 !== b2) return { err: 'none' };
+    const texts = rcMkTexts(b1);
+    const s = rcMkOffset(texts, r.startContainer, r.startOffset);
+    const e = rcMkOffset(texts, r.endContainer, r.endOffset);
+    if (s == null || e == null || e <= s) return { err: 'none' };
+    return { block: b1, i: parseInt(b1.getAttribute('data-mk'), 10), s, e, range: r };
+}
+
+function rcMkUnwrap(mk) {
+    const f = document.createDocumentFragment();
+    while (mk.firstChild) f.appendChild(mk.firstChild);
+    if (mk.parentNode) mk.replaceWith(f);
+}
+
+function rcMkPaint(block, i) {
+    block.querySelectorAll('mark.note-hl').forEach(rcMkUnwrap);
+    rcMarks.filter(m => m.c === i).sort((a, b) => a.s - b.s).forEach(m => {
+        const r = rcMkRange(block, m.s, m.e);
+        if (!r) return;
+        const mk = document.createElement('mark');
+        mk.className = 'note-hl note-hl-' + m.k;
+        mk.dataset.start = String(m.s);
+        mk.dataset.color = m.k;
+        mk.title = '点击可取消这处高亮';
+        try { mk.appendChild(r.extractContents()); r.insertNode(mk); } catch (e) { /* 越界忽略 */ }
+    });
+}
+
+function rcMkRestore() {
+    document.querySelectorAll('mark.note-hl').forEach(rcMkUnwrap);
+    const blocks = rcMkBlocks();
+    const dirty = {};
+    rcMarks.forEach(m => { dirty[m.c] = 1; });
+    blocks.forEach((b, i) => { if (dirty[i]) rcMkPaint(b, i); });
+    rcMkSave();
+}
+
+function rcHlApply(color) {
+    const sr = rcMkSelInfo();
+    if (sr.err) { rcHlBarHide(); return; }
+    rcMarks = rcMarks.filter(m => !(m.c === sr.i && m.s < sr.e && sr.s < m.e));
+    rcMarks.push({ c: sr.i, s: sr.s, e: sr.e, k: color });
+    rcMkPaint(sr.block, sr.i);
+    rcMkSave();
+    rcHlBarHide();
+    const s = window.getSelection(); if (s) s.removeAllRanges();
+}
+
+function rcHlRemoveMark(mk) {
+    const block = mk.closest('[data-mk]');
+    if (!block) return;
+    const i = parseInt(block.getAttribute('data-mk'), 10);
+    const s = parseInt(mk.dataset.start, 10);
+    const k = mk.dataset.color;
+    rcMarks = rcMarks.filter(m => !(m.c === i && m.s === s && m.k === k));
+    rcMkPaint(block, i);
+    rcMkSave();
+}
+
+function rcHlBarHide() { if (rcHlBar) { rcHlBar.remove(); rcHlBar = null; } }
+
+function rcRectOf(range) {
+    let rect = null;
+    try { rect = range.getBoundingClientRect(); } catch (e) { rect = null; }
+    if (!rect || (!rect.width && !rect.height)) {
+        const n = range.startContainer;
+        const el = n && n.nodeType === 1 ? n : (n && n.parentElement);
+        if (el && el.getBoundingClientRect) rect = el.getBoundingClientRect();
+    }
+    return rect || { top: 0, bottom: 0, left: 0, width: 0, height: 0 };
+}
+
+function rcHlBarPlace(bar, rect) {
+    const bh = bar.offsetHeight, bw = bar.offsetWidth;
+    const nav = document.querySelector('.navbar');
+    const navH = nav ? nav.getBoundingClientRect().height : 56;
+    let top = window.scrollY + rect.top - bh - 8;
+    if (rect.top - bh - 8 < navH + 6) top = window.scrollY + rect.bottom + 8;
+    let left = window.scrollX + rect.left;
+    const maxLeft = window.scrollX + document.documentElement.clientWidth - bw - 8;
+    if (left > maxLeft) left = Math.max(window.scrollX + 8, maxLeft);
+    bar.style.top = top + 'px';
+    bar.style.left = left + 'px';
+}
+
+function rcHlShowForSelection() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || !sel.rangeCount) { rcHlBarHide(); return; }
+    const r = sel.getRangeAt(0);
+    const sr = rcMkSelInfo();
+    if (sr.err) { rcHlBarHide(); return; }
+    rcHlBarHide();
+    const bar = document.createElement('div');
+    bar.className = 'hl-toolbar';
+    bar.innerHTML = RC_HL_COLORS.map(c =>
+        '<span class="hl-dot hl-dot-' + c + '" data-color="' + c + '" title="' + RC_HL_CN[c] + '高亮"></span>').join('') +
+        '<span class="hl-cancel" title="取消这处高亮">✕</span>';
+    document.body.appendChild(bar);
+    rcHlBar = bar;
+    rcHlBarPlace(bar, rcRectOf(r));
+    bar.addEventListener('mousedown', e => e.preventDefault());
+    bar.querySelectorAll('.hl-dot').forEach(dot =>
+        dot.addEventListener('click', () => rcHlApply(dot.dataset.color)));
+    bar.querySelector('.hl-cancel').addEventListener('click', () => {
+        rcHlBarHide();
+        const s = window.getSelection(); if (s) s.removeAllRanges();
+    });
+}
+
+function rcHlShowCancelFor(mk) {
+    clearTimeout(rcHlTimer);
+    rcHlBarHide();
+    const bar = document.createElement('div');
+    bar.className = 'hl-toolbar';
+    bar.innerHTML = '<span class="hl-cancel" title="取消高亮">✕ 取消高亮</span>';
+    document.body.appendChild(bar);
+    rcHlBar = bar;
+    rcHlBarPlace(bar, mk.getBoundingClientRect());
+    bar.addEventListener('mousedown', e => e.preventDefault());
+    bar.querySelector('.hl-cancel').addEventListener('click', () => {
+        rcHlRemoveMark(mk);
+        rcHlBarHide();
+    });
+}
+
+function rcHlBind() {
+    document.addEventListener('mouseup', () => {
+        clearTimeout(rcHlTimer);
+        rcHlTimer = setTimeout(rcHlShowForSelection, 0);
+    });
+    document.addEventListener('mousedown', e => {
+        if (rcHlBar && !rcHlBar.contains(e.target)) rcHlBarHide();
+    });
+    document.addEventListener('click', e => {
+        const mk = e.target.closest ? e.target.closest('mark.note-hl') : null;
+        if (mk && !(e.target.closest && e.target.closest('.word'))) rcHlShowCancelFor(mk);
+    });
+    window.addEventListener('scroll', () => { if (rcHlBar) rcHlBarHide(); }, { passive: true });
+}

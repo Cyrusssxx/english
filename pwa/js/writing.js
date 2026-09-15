@@ -310,7 +310,7 @@ const WR_HL_COLORS = ['yellow', 'green', 'blue', 'pink'];
 const WR_HL_CN = { yellow: '黄色', green: '绿色', blue: '蓝色', pink: '粉色' };
 const WR_MK_SEL = '.wr-line, .wr-line-cn, .wr-sent-txt, .wr-sent-cn, .wr-note-inline, .wr-note, .wr-tips li, .apply-para, .ap-tpl-en, .ap-tpl-cn';
 /* 追加可高亮块：选句决策 / 数据描述语言 / 流程 / 错误清单——追加在注册表【尾部】，不插在卡片前，避免老高亮（按块序号存）错位 */
-const WR_MK_EXTRA_SEL = '.wr-decision-v, .wr-dl-name, .wr-dl-words, .wr-dl-how, .wr-mist-v, .wr-flow-body';
+const WR_MK_EXTRA_SEL = '.wr-decision-v, .wr-decision-k, .wr-dl-name, .wr-dl-words, .wr-dl-how, .wr-mist-v, .wr-mist-k, .wr-flow-body, .wr-flow-head, .wr-frame-en, .wr-frame-trans, .wr-frame-cn, .wr-demo, #wrChecklist li, #wrChartTable td, .wr-rule, .wr-desc';
 let wrMarks = [];        // 高亮 [{ c: 正文块序号, s: 起, e: 止, k: 颜色名 }]
 let wrAnnos = {};        // 行批注 { 正文块序号: 文本 }
 let wrHlBar = null;      // 划词浮条
@@ -455,7 +455,7 @@ function wrRestoreAll() {
 
 function wrHlApply(color) {
     const sr = wrMkSelInfo();
-    if (sr.err) { wrHlBarHide(); return; }
+    if (sr.err) { hideHlToolbar(); return; }
     wrMarks = wrMarks.filter(m => !(m.c === sr.i && m.s < sr.e && sr.s < m.e));   // 重叠的先去掉
     wrMarks.push({ c: sr.i, s: sr.s, e: sr.e, k: color });
     wrMkPaint(sr.block, sr.i);
@@ -725,8 +725,8 @@ function wrTplBody(en, cn, struct) {
 
 /** 复制整段英文（行 div 的 textContent 无空格，需按行拼接） */
 function wrCopyLines(btn) {
-    const en = btn.closest('.wr-tpl').querySelector('.wr-en');
-    const t = Array.from(en.querySelectorAll('.wr-line')).map(x => x.textContent).join(' ');
+    const en = btn.closest('.wr-tpl').querySelector('.wr-en, .wr-frame');
+    const t = Array.from(en.querySelectorAll('.wr-line, .wr-frame-en')).map(x => x.textContent).join(' ');
     wrCopy(btn, t);
 }
 
@@ -766,7 +766,16 @@ function wrSectionCard(sec) {
     const nS = (sec.sentences || []).length;
     const mustBadge = skels
         ? `⭐ 必背 ${skels.length} 选 1 · 每套 ${Math.min.apply(null, skW)}~${Math.max.apply(null, skW)} 词`
+        : sec.framework
+        ? `⭐ 必背框架 · ${sec.framework.length} 步拼装 · 引入句 ${wrWords(sec.en)} 词`
         : `⭐ 必背 ${wrWords(sec.en)} 词`;
+    const fwHtml = sec.framework
+        ? `<div class="wr-frame"><div class="wr-frame-title">🧩 第二段框架（${sec.framework.length} 步拼装 · 必背就这 ${sec.framework.length} 步）</div>${sec.framework.map((f, i) => `
+            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${wrEsc(f.en)}</span>${f.trans ? `<span class="wr-frame-trans">${wrEsc(f.trans)}</span>` : ''}<span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>`
+        : '';
+    const tailRows = (sec.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(sec.alts)}</div>` : '')
+        + (sec.linkers ? `<div class="wr-alts">✎ 高级衔接词：${wrLinkers(sec.linkers)}</div>` : '')
+        + (sec.demo ? `<div class="wr-demo"><b>例</b>${wrAnnotate(sec.demo)}</div>` : '');
     const tplBody = skels
         ? skels.map(v => {
             const b2 = wrTplBody(v.en, v.cn, v.struct);
@@ -780,10 +789,9 @@ function wrSectionCard(sec) {
                 ${v.demo ? `<div class="wr-demo"><b>例</b>${wrAnnotate(v.demo)}</div>` : ''}
             </div>`;
         }).join('')
+        : fwHtml ? fwHtml + tailRows
         : `<div class="wr-en">${body.enHtml}</div>
-            <div class="wr-cn">${body.cnHtml}</div>` + (sec.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(sec.alts)}</div>` : '')
-            + (sec.linkers ? `<div class="wr-alts">✎ 高级衔接词：${wrLinkers(sec.linkers)}</div>` : '')
-            + (sec.demo ? `<div class="wr-demo"><b>例</b>${wrAnnotate(sec.demo)}</div>` : '');
+            <div class="wr-cn">${body.cnHtml}</div>` + tailRows;
     return `
     <section class="wr-card" id="${sec.id}">
         <div class="wr-card-head">
@@ -805,8 +813,6 @@ function wrSectionCard(sec) {
             </div>
             ${tplBody}
         </div>
-        ${sec.framework ? `<div class="wr-frame"><div class="wr-frame-title">🧩 第二段框架（4 步拼装）</div>${sec.framework.map((f, i) => `
-            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${wrEsc(f.en)}</span>${f.trans ? `<span class="wr-frame-trans">${wrEsc(f.trans)}</span>` : ''}<span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>` : ''}
         ${neg ? `
         <div class="wr-tpl wr-tpl-neg">
             <div class="wr-tpl-bar">
