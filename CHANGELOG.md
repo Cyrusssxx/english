@@ -1,5 +1,21 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16 精读模式] 全文翻译升级为精读开关：底部本篇词组区 + 做题自动定位（grill 后实施）
+
+- **grill-me 确认的五项决策**：A 升级全文翻译为精读开关（不新增第三模式）｜B 词组自动精选 15-25 条
+  ｜C 词组区整块随开关显隐｜D 做题模式开精读自动定位「当前题」（无则第一题），关精读清除｜
+  E 前端实时匹配（复用正文同一套 _phraseIndex 词典，零新数据管线），位置正文结束后。
+- **词组区（#phraseZone）**：`collectArticlePhrases()` 全篇扫描 + 过滤——
+  「信息词（非功能词）≥2」规则：the last=0 / one of=0 / this time=0 / for sale=1 / wall street=1 出局；
+  on a dramatic note=2 / bull run=2 / at its peak(放宽档) 保留；严格 <15 放宽到信息词 ≥1。
+  首词黑名单只挡限定词/代词（the/a/one/of/this/it/his…），介词头放行（on/at/in/for 有真考点）。
+  每条 = 词组 + 释义 + 文中例句（例句内词组 <mark> 高亮）+ 例句中文；按出现顺序，25 条封顶。
+- **联动**：toggleCnAll 开 → syncPhraseZone(true) + 做题模式自动 clearRelated→locateRelated(currentQid||第一题)；
+  关 → 隐藏 + clearRelated；restoreCnAll/enrichRender 恢复词组区；jumpQ/locateRelated 记 currentQid。
+- 渲染点：enrichRender（词典就绪后 _phraseIndex 可用）→ renderPhraseZone（幂等，_phraseZoneHtml 缓存）。
+- 验证：jsdom 13/13（25 条、无硬伤水词、真考点在、例句高亮 23 处、默认隐藏/开显/关隐、
+  做题自动定位 .related + 译文展开、关精读清除）。SW en2-6871edc4。
+
 ## [2026-09-16 词典去掉 1.5s 延迟] 词典与主体并行立即拉取
 
 - 用户质疑「1.5s 后拉取需要这么久吗」——上一轮的 1.5s 是给「图片优先」设计的；

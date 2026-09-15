@@ -4385,6 +4385,19 @@ html.dark .wr-frame-title, html.dark .rc-frame-title { color: #5eead4; }
 .wr-zoom-box img { max-width: 94vw; max-height: 88vh; width: auto; height: auto; background: #fff; border-radius: 8px; box-shadow: 0 8px 40px rgba(0, 0, 0, .5); }
 .wr-zoom-close { position: absolute; top: 18px; right: 24px; font-size: 22px; color: #fff; cursor: pointer; }
 
+.phrase-zone { margin-top: 18px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); }
+.phrase-zone .pz-head { font-weight: 700; color: var(--text); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.phrase-zone .pz-count { font-size: .78rem; font-weight: 400; color: var(--text-light); background: var(--ann-bg); border: 1px solid var(--ann-border); padding: 1px 8px; border-radius: 20px; }
+.phrase-zone .pz-tip { font-size: .76rem; font-weight: 400; color: var(--text-light); }
+.phrase-zone .pz-item { padding: 9px 0; border-bottom: 1px dashed var(--border); }
+.phrase-zone .pz-item:last-child { border-bottom: none; }
+.phrase-zone .pz-ph { font-size: .98rem; line-height: 1.5; }
+.phrase-zone .pz-meaning { font-size: .86rem; color: var(--text-light); margin-left: 6px; }
+.phrase-zone .pz-ex { font-family: Georgia, "Times New Roman", serif; font-size: .93rem; line-height: 1.65; color: var(--text); margin-top: 4px; }
+.phrase-zone .pz-ex mark.pz-hl { background: #fff3b0; color: inherit; padding: 0 2px; border-radius: 3px; }
+html.dark .phrase-zone .pz-ex mark.pz-hl { background: #6b5d1e; }
+.phrase-zone .pz-ex-cn { font-size: .83rem; color: var(--text-light); line-height: 1.6; margin-top: 2px; }
+
 .rc-collapse > summary.rc-h2 {
     cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px;
 }

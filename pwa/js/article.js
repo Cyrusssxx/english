@@ -378,6 +378,7 @@ function restoreCnAll() {
     document.querySelectorAll('.sent-cn').forEach(el => el.classList.add('open'));
     document.body.classList.add('show-quiz-cn');
     showReadTitle(true);
+    syncPhraseZone(true);
 }
 
 function toggleCnAll() {
@@ -390,6 +391,19 @@ function toggleCnAll() {
     document.body.classList.toggle('show-quiz-cn', cnAll);
     // 展开全部译文时自动显示标题
     if (cnAll) showReadTitle(true);
+    // 精读模式：底部本篇词组区随开关显示/隐藏
+    syncPhraseZone(cnAll);
+    if (cnAll) {
+        // 做题模式下自动定位到「当前题」（无当前题则第一题）——滚动 + 高亮 + 展开该句译文
+        if (isQuizMode()) {
+            const qs = article.questions || [];
+            const qid = currentQid || (qs[0] && qs[0].id);
+            if (qid) { clearRelated(); locateRelated(qid); }
+        }
+    } else {
+        // 关精读：清除所有定位高亮
+        clearRelated();
+    }
 }
 
 // ============ 初始化 ============
@@ -471,6 +485,8 @@ function enrichRender() {
     if (window.Annot) Annot.apply(AID);
     // 恢复展开译文（含全文翻译模式）
     restoreCnAll();
+    // 精读模式：本篇词组区（词典就绪后 _phraseIndex 可用，正文下方）
+    renderPhraseZone();
     openCn.forEach(id => {
         const cn = document.querySelector(`#s-${CSS.escape(id)} .sent-cn`);
         if (cn) cn.classList.add('open');
@@ -1320,7 +1336,113 @@ function showResult(q, userKey, scrollToRelated) {
 }
 
 /** 高亮题目关联句并滚动定位；再次点击同题按钮则取消高亮 */
+/* ============ 精读模式：本篇词组区（随全文翻译开关显示） ============ */
+
+/** 词组区首词/组合过滤：滤掉 the last / one of / this time / new york 这类水词组合 */
+const PZ_BANNED_HEAD = new Set(['the', 'a', 'an', 'one', 'of', 'this', 'that', 'it', 'its', 'his', 'her', 'their', 'our', 'your', 'my', 'new', 'some', 'any', 'each', 'every', 'no', 'not']);
+const PZ_STOP = new Set(['the', 'a', 'an', 'one', 'of', 'this', 'that', 'it', 'its', 'his', 'her', 'their', 'our', 'your', 'my', 'new', 'last', 'first', 'then', 'when', 'which', 'who', 'what', 'and', 'or', 'but', 'for', 'to', 'in', 'on', 'at', 'by', 'with', 'from', 'as', 'into', 'out', 'up', 'down', 'over', 'under', 'there', 'here', 'not', 'no', 'so', 'if', 'than', 'also', 'only', 'just', 'very', 'more', 'most', 'many', 'much', 'some', 'any', 'all', 'both', 'each', 'every', 'few', 'little', 'such', 'own', 'other', 'another', 'same', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'year', 'years', 'time', 'day', 'days', 'people', 'way', 'ways']);
+
+/** 全篇扫描匹配词组（复用正文同一套词典 _phraseIndex），去重 + 过滤水词 + 截取 15-25 条 */
+function collectArticlePhrases() {
+    if (!article || !(article.sentences || []).length) return [];
+    if (typeof phraseCandidates !== 'function' || typeof maxPhraseWords !== 'function' || maxPhraseWords() < 1) return [];
+    const out = [];          // {key, meaning, sid, en, cn}
+    const seen = new Set();
+    const TOK_RE = /[A-Za-z][A-Za-z'\-]*/g;
+    for (const s of article.sentences) {
+        const en = s.en || '';
+        const toks = [];
+        let m;
+        while ((m = TOK_RE.exec(en)) !== null) toks.push({ s: m.index, e: m.index + m[0].length, low: m[0].toLowerCase(), raw: m[0] });
+        let i = 0;
+        while (i < toks.length) {
+            let matched = null;
+            const cands = phraseCandidates(toks[i].low);
+            if (cands) {
+                for (const c of cands) {
+                    const n = c.tokens.length;
+                    if (i + n > toks.length) continue;
+                    let ok = true;
+                    for (let k = 1; k < n; k++) {
+                        if (!phraseTokenEq(toks[i + k], c.tokens[k])) { ok = false; break; }
+                        if (!/^[\s\-]*$/.test(en.slice(toks[i + k - 1].e, toks[i + k].s))) { ok = false; break; }
+                    }
+                    if (ok) { matched = c; break; }
+                }
+            }
+            if (matched) {
+                if (!seen.has(matched.key)) {
+                    seen.add(matched.key);
+                    out.push({ key: matched.key, meaning: matched.meaning || '', sid: s.id, en, cn: s.cn || '' });
+                }
+                i += matched.tokens.length;
+            } else {
+                i++;
+            }
+        }
+    }
+    // 过滤：≥2 词 + 首词不是限定词/代词 + 组合里「信息词」（非功能词）≥2——
+    // the last=0 / one of=0 / this time=0 / for sale=1 / wall street=1 出局；
+    // on a dramatic note=2 / at its peak=1(its 功能词) / bull run=2 保留
+    const clean = out.filter(x => {
+        const ws = x.key.split(' ');
+        if (ws.length < 2) return false;
+        if (PZ_BANNED_HEAD.has(ws[0])) return false;
+        return ws.filter(w => !PZ_STOP.has(w)).length >= 2;
+    });
+    let final = clean;
+    // 严格过滤后 15-25 条直接取；不足 15 条放宽（信息词 ≥1，首词黑名单保持——补齐 at its peak 这类）
+    if (final.length < 15) {
+        final = out.filter(x => {
+            const ws = x.key.split(' ');
+            if (ws.length < 2) return false;
+            if (PZ_BANNED_HEAD.has(ws[0])) return false;
+            return ws.filter(w => !PZ_STOP.has(w)).length >= 1;
+        });
+    }
+    if (final.length > 25) final = final.slice(0, 25);
+    return final;
+}
+
+/** 词组区 HTML（词组 + 释义 + 文中例句，例句内词组 <mark> 高亮，例句带中文） */
+function buildPhraseZoneHtml(rows) {
+    if (!rows.length) return '';
+    const hl = (key, text) => {
+        const escT = esc(text);
+        const re = new RegExp('\\b(' + key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')\\b', 'gi');
+        return escT.replace(re, '<mark class="pz-hl">$1</mark>');
+    };
+    return `<div class="pz-head">📚 本篇词组 <span class="pz-count">${rows.length} 条</span><span class="pz-tip">精读模式 · 词组出自本篇文章 · 点词查释义</span></div>
+        <div class="pz-list">${rows.map(x => `
+            <div class="pz-item">
+                <div class="pz-ph"><b>${esc(x.key)}</b> <span class="pz-meaning">${esc(x.meaning)}</span></div>
+                <div class="pz-ex">${hl(x.key, x.en)}</div>
+                ${x.cn ? `<div class="pz-ex-cn">${esc(x.cn)}</div>` : ''}
+            </div>`).join('')}
+        </div>`;
+}
+
+let _phraseZoneHtml = null;   // 缓存（重渲染不重复扫描）
+
+/** 渲染到正文下方（只渲染一次，之后随精读开关显隐） */
+function renderPhraseZone() {
+    const pane = document.getElementById('readPane');
+    if (!pane || document.getElementById('phraseZone')) return;
+    if (!(article && article.sentences && article.sentences.length)) return;
+    if (_phraseZoneHtml === null) _phraseZoneHtml = buildPhraseZoneHtml(collectArticlePhrases());
+    pane.insertAdjacentHTML('beforeend', `<div id="phraseZone" class="phrase-zone">${_phraseZoneHtml}</div>`);
+    syncPhraseZone(cnAll);
+}
+
+/** 随精读开关显隐（force 用于重渲染后恢复） */
+function syncPhraseZone(show) {
+    const zone = document.getElementById('phraseZone');
+    if (!zone) return;
+    zone.style.display = (show === undefined ? cnAll : show) ? '' : 'none';
+}
+
 let locatedQid = null;
+let currentQid = null;   // 做题面板当前题（jumpQ/locateRelated 更新，精读开关自动定位用）
 
 function clearRelated() {
     document.querySelectorAll('.sent.related').forEach(el => el.classList.remove('related'));
@@ -1334,6 +1456,7 @@ function clearRelated() {
 function locateRelated(qid) {
     const q = article.questions.find(x => x.id === qid);
     if (!q) return;
+    currentQid = qid;   // 记忆当前题（精读开关自动定位用）
     // 再次点击同一题的定位按钮 → 取消黄色高亮
     if (locatedQid === qid) { clearRelated(); return; }
     clearRelated();
@@ -1355,6 +1478,7 @@ function locateRelated(qid) {
 }
 
 function jumpQ(qid) {
+    currentQid = qid;
     const el = document.getElementById('q-' + qid);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
