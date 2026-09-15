@@ -310,7 +310,7 @@ const WR_HL_COLORS = ['yellow', 'green', 'blue', 'pink'];
 const WR_HL_CN = { yellow: '黄色', green: '绿色', blue: '蓝色', pink: '粉色' };
 const WR_MK_SEL = '.wr-line, .wr-line-cn, .wr-sent-txt, .wr-sent-cn, .wr-note-inline, .wr-note, .wr-tips li, .apply-para, .ap-tpl-en, .ap-tpl-cn';
 /* 追加可高亮块：选句决策 / 数据描述语言 / 流程 / 错误清单——追加在注册表【尾部】，不插在卡片前，避免老高亮（按块序号存）错位 */
-const WR_MK_EXTRA_SEL = '.wr-decision-v, .wr-decision-k, .wr-dl-name, .wr-dl-words, .wr-dl-how, .wr-mist-v, .wr-mist-k, .wr-flow-body, .wr-flow-head, .wr-frame-en, .wr-frame-trans, .wr-frame-cn, .wr-demo, #wrChecklist li, #wrChartTable td, .wr-rule, .wr-desc, .wr-golden-en, .wr-golden-cn, .wr-golden-use';
+const WR_MK_EXTRA_SEL = '.wr-decision-v, .wr-decision-k, .wr-dl-name, .wr-dl-words, .wr-dl-how, .wr-mist-v, .wr-mist-k, .wr-flow-body, .wr-flow-head, .wr-frame-en, .wr-frame-trans, .wr-frame-cn, .wr-demo, #wrChecklist li, #wrChartTable td, .wr-rule, .wr-desc';
 let wrMarks = [];        // 高亮 [{ c: 正文块序号, s: 起, e: 止, k: 颜色名 }]
 let wrAnnos = {};        // 行批注 { 正文块序号: 文本 }
 let wrHlBar = null;      // 划词浮条
@@ -898,30 +898,6 @@ function wrRenderChecklist() {
     box.innerHTML = (WR.checklist || []).map(x => `<li>${wrRich(x)}</li>`).join('');
 }
 
-/* ---- ✨ 精选好句（大作文：素材本摘句，按 cats 三类渲染） ---- */
-function wrRenderGolden() {
-    const box = document.getElementById('wrGolden');
-    if (!box || !GOLD) return;
-    const note = document.getElementById('wrGoldenNote');
-    if (note) note.textContent = '《万能句素材本》33 句精挑 ' + GOLD.big.length
-        + ' 句（删了 ' + GOLD.dropped + ' 句太单薄的），按用法分三类；点单词可查词典，年份 = 这句出自哪年范文。';
-    box.innerHTML = GOLD.cats.map(c => {
-        const items = GOLD.big.filter(x => x.cat === c.id);
-        if (!items.length) return '';
-        return '<div class="rc-group">' + wrEsc(c.title) + ' · ' + items.length + ' 句</div>'
-            + '<p class="rc-note">' + wrEsc(c.desc) + '</p>'
-            + items.map(x => '<div class="rc-line">'
-                + (x.year ? '<span class="rc-freq">' + wrEsc(x.year) + '</span>' : '')
-                + '<div class="rc-en wr-golden-en">' + wrAnnotate(x.en) + '</div>'
-                + '<div class="rc-cn wr-golden-cn">' + wrEsc(x.cn || '') + '</div>'
-                + (x.use ? '<div class="rc-use wr-golden-use">📌 ' + wrEsc(x.use) + '</div>' : '')
-                + '</div>').join('');
-    }).join('');
-}
-
-/* ---- 精选好句（真题范文摘句） ---- */
-let GOLD = null;   // golden_sentences.json
-
 /* ==================== 悬浮目录（左侧） ==================== */
 const WR_TOC_KEY = 'wr_toc_fold';
 const WR_TOC_NARROW = 1180;
@@ -934,7 +910,6 @@ function wrNavH() {
 /** 收集目录条目：适配表 → 选句决策 → 各分区（一级）+ 各模板卡（二级） */
 function wrTocItems() {
     const items = [];
-    if (document.getElementById('wrGoldenTitle')) items.push({ lv: 1, id: 'wrGoldenTitle', text: '✨ 精选好句' });
     if (document.getElementById('wrFlowTitle')) items.push({ lv: 1, id: 'wrFlowTitle', text: '答题动线' });
     if (document.getElementById('wrChartsTitle')) items.push({ lv: 1, id: 'wrChartsTitle', text: '真题图表' });
     if (document.getElementById('wrGuideBlock')) items.push({ lv: 1, id: 'wrGuideBlock', text: '图表适配表' });
@@ -1059,11 +1034,6 @@ async function initWriting() {
         if (ra.ok) APPLY = await ra.json();
     } catch (e) { APPLY = {}; }
     await loadApplyMarks();   // 套用示范的逐句标注
-    // 精选好句（素材本摘句，可空）
-    try {
-        const rg = await fetch('data/golden_sentences.json', { cache: 'no-cache' });
-        if (rg.ok) GOLD = await rg.json();
-    } catch (e) { GOLD = null; }
     const it = WR.intro || {};
     document.title = (it.title || '作文模板') + ' - 英语真题精翻';
     document.getElementById('wrTitle').textContent = it.title || '作文模板库';
@@ -1118,9 +1088,6 @@ async function initWriting() {
     wrRenderFlow();
     wrRenderDataLang();
     wrRenderChecklist();
-
-    // 精选好句（页首）
-    wrRenderGolden();
 
     // 模板分区（按 group 分组）
     wrRenderCards();

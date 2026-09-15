@@ -1,5 +1,20 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-16 精选好句入口回滚 + 两个潜伏 bug 修复]
+
+- **回滚**：写作页「✨ 精选好句」入口撤销（writing.html/js/writing.js 回到 5eb5e62 状态），
+  速记页精选好句原样保留；用户明确精选好句相关建议全部不作。
+- **潜伏 bug ①（CACHE_VER 超前根因找到了）**：`build_sw.py` 的 `data/**/*.json` glob 把
+  **4 个被 .gitignore 忽略的本地唐迟词卡（deck_tc_phrases/senses + _clean）**也收进预缓存和哈希。
+  工作区 135 个文件算哈希，但 git add 指定路径提交只带 131 个 → sw.js 记录的 CACHE_VER 永远
+  超前于线上发布内容（正是「内容哈希当版本号」坑的根因）。修法：`content_hash()` 新增
+  `ignored_local_files()`（git ls-files --others -i --exclude-standard 一次性取忽略集合）——
+  **PRECACHE 仍保留本地词卡（离线可用），哈希只按发布内容算**。
+- **潜伏 bug ②（已淘汰词组复活源头）**：`build_phrases.py` EXTRA 表残留 4 条已淘汰词组
+  （round off/rounds off the list、come out of nowhere、call their own）→ 下次 build 会重新注入。
+  已从源头删除 + phrases.json 同步清理（60320 → 60316）。
+- 验证：jsdom 4/4（回滚干净、骨架润色/示例文/页面渲染完好）；SW en2-196ada19。
+
 ## [2026-09-16 大作文页精选好句入口] 「✨ 精选好句」搬到作文模板页最顶部
 
 - writing.html：wrLegend 之后、答题动线之前新增 `#wrGoldenBlock`（标题 + note + 容器）。

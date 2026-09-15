@@ -13,6 +13,7 @@ import os
 import sys
 import hashlib
 import glob
+import subprocess
 
 ROOT = os.path.dirname(os.path.abspath(__file__))          # tools/
 PWA = os.path.normpath(os.path.join(ROOT, "..", "pwa"))     # pwa/
@@ -65,9 +66,24 @@ def collect_precache():
     return out
 
 
+def ignored_local_files():
+    """被 .gitignore 忽略的本地文件（如 deck_tc_*.json 唐迟词卡，不上仓库）。
+    它们仍会进 PRECACHE 供本地离线用，但不参与 CACHE_VER 哈希——
+    否则版本号会与线上发布内容错位（记忆坑：CACHE_VER 超前）。"""
+    try:
+        r = subprocess.run(
+            ["git", "ls-files", "--others", "-i", "--exclude-standard", PWA],
+            capture_output=True, text=True, cwd=ROOT)
+        return {os.path.normpath(os.path.join(PWA, x)) for x in r.stdout.splitlines() if x.strip()}
+    except Exception:
+        return set()
+
 def content_hash(files):
     h = hashlib.sha256()
+    ignored = ignored_local_files()
     for f in files:
+        if os.path.normpath(os.path.join(PWA, f)) in ignored:
+            continue
         fp = os.path.join(PWA, f)
         try:
             with open(fp, "rb") as fh:
