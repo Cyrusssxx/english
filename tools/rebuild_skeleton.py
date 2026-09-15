@@ -66,21 +66,30 @@ DYN = [
      'cn': DYN_OPEN['cn'] + '在此期间，它由 {{num1}} 稳步升至 {{num2}}，全程没有明显回落。',
      'struct': [DYN_OPEN['struct'],
                 [S('During this period', 'trans'), S(', it', 't'), S(' rose steadily', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', without any noticeable fall', 'o'), S('.', '')]],
-     'alts': {'illustrates': 'shows / presents', 'rose steadily': 'kept climbing / went up steadily'}},
+     'alts': {'rose steadily': 'climbed steadily / kept rising'},
+     'demo': ('The bar chart above clearly illustrates the changes in the proportion of college students taking part-time jobs '
+              'from freshman year to senior year. During this period, it rose steadily from 67.77% to 88.24%, without any noticeable fall.')},
     {'label': '② 两条都在涨', 'years': '2010 · 2017 · 2022',
      'en': DYN_OPEN['en'] + ' ' + 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.',
      'cn': DYN_OPEN['cn'] + '在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。',
      'struct': [DYN_OPEN['struct'],
                 [S('During this period', 'trans'), S(', {{item1}}', 't'), S(' rose sharply', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S('.', '')],
                 [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' saw', 'p'), S(' a modest increase', 'o'), S(', climbing from {{num3}} to {{num4}} over the same period', 'o'), S('.', '')]],
-     'alts': {'rose sharply': 'rose dramatically / climbed quickly', 'By contrast': 'In contrast', 'saw a modest increase': 'saw only a slight rise', 'climbing from': 'rising from'}},
+     'alts': {'rose sharply': 'rose dramatically / climbed quickly', 'By contrast': 'In contrast', 'saw a modest increase': 'saw only a slight rise', 'climbing from': 'rising from'},
+     'demo': ('The bar chart above clearly illustrates the changes in mobile-phone subscriptions between developing and developed '
+              'countries from 2000 to 2008. During this period, subscriptions in developing countries rose sharply from 0.5 billion '
+              'to 4 billion. By contrast, the figure for developed countries saw a modest increase, climbing from 0.7 billion to '
+              '1 billion over the same period.')},
     {'label': '③ 一升一降', 'years': '2011 · 2014 · 2019',
      'en': DYN_OPEN3['en'] + ' ' + 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.',
      'cn': DYN_OPEN3['cn'] + '在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。',
      'struct': [DYN_OPEN3['struct'],
                 [S('During this period', 'trans'), S(', {{item1}}', 't'), S(' rose sharply', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S('.', '')],
                 [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' saw', 'p'), S(' a steady decline', 'o'), S(', falling from {{num3}} to {{num4}}', 'o'), S('.', '')]],
-     'alts': {'sharp contrast': 'marked contrast / striking gap', 'rose sharply': 'rose dramatically', 'saw a steady decline': 'declined steadily', 'By contrast': 'In contrast'}},
+     'alts': {'sharp contrast': 'marked contrast / striking gap', 'rose sharply': 'rose dramatically', 'saw a steady decline': 'declined steadily', 'By contrast': 'In contrast'},
+     'demo': ('The bar chart above clearly illustrates the sharp contrast in market share between Chinese and Japanese car brands '
+              'from 2008 to 2009. During this period, Chinese brands rose sharply from 26% to 31%. By contrast, the figure for '
+              'Japanese brands saw a steady decline, falling from 35% to 26%.')},
 ]
 
 # ══════════ 二、第二段：1 句引入 + 机制句池 ══════════
@@ -153,6 +162,14 @@ P3_LINKERS = [
     {'banned': 'will rise（预测）', 'better': 'is predicted to rise / is set to rise / is estimated to stay stable'},
 ]
 
+# 第二段拼装框架：引入句 → 高级衔接词 + 机制句（步骤固定，机制句从池里挑）
+P2_FRAMEWORK = [
+    {'en': 'This phenomenon can be attributed to two major factors.', 'cn': '引入句：一句话点明「原因有两条」，全段总起。'},
+    {'en': 'Primary among these is + 机制句 ①', 'cn': '第 1 条：高级衔接词开头，接句池里最有力的原因（收入 / 成本 / 观念…）。'},
+    {'en': 'Equally important, + 机制句 ②', 'cn': '第 2 条：换个衔接词、换个角度；句尾可用 which 从句焊因果（..., which has lowered the threshold for ...）。'},
+    {'en': '（可选）A further driver is + 机制句 ③', 'cn': '想写三条就再加一句；此时引入句的 two major factors 要换成 several major factors。'},
+]
+
 # 主体句池（沿用旧版并按更自然的口径重写两句；第一位是「通用档」）
 SUBJ_POS = [
     (3, '观念', 'What matters most is whether families and schools treat {{topic}} as a normal part of life.', '最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。'),
@@ -195,8 +212,10 @@ def main():
     # 第一段
     s = by_id['chart_static']
     set_skeleton(s, STATIC)
-    s['alts'] = {'clearly illustrates': 'shows / presents', 'takes the lead': 'ranks first / comes top',
-                 'accounting for': 'making up', 'comes last': 'ranks last / trails behind'}
+    s['alts'] = {'takes the lead': 'ranks first / comes top', 'comes last': 'ranks last / trails behind'}
+    s['demo'] = ('The pie chart above clearly illustrates how the purposes of travel are distributed. '
+                 'Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims '
+                 'at 33% and 15% respectively, while fostering independence comes last at 6%.')
     s['sentences'] = [
         {'en': 'Taken together, the three largest items make up {{percent total}}.', 'cn': '前三项加起来占 {{percent total}}。', 'freq': 3, 'tag': '合计'},
         {'en': 'The pattern is clear: a few items dominate the rest.', 'cn': '格局很清楚：少数几项占了大头。', 'freq': 2, 'tag': '集中度'},
@@ -227,6 +246,7 @@ def main():
         'en': PARA2_SKEL['en'], 'cn': PARA2_SKEL['cn'], 'en_struct': [PARA2_SKEL['struct']],
         'alts': PARA2_SKEL['alts'],
         'linkers': P2_LINKERS,
+        'framework': P2_FRAMEWORK,
         'priority': True,
         'sentences': [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in MECH],
         'phrases': [
