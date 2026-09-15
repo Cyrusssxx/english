@@ -149,9 +149,29 @@ P3_POS = [
     sent('On balance, this is a positive trend worth welcoming.',
          '总体来看，这是值得欢迎的积极趋势。',
          [[S('On balance', 'trans'), S(', this', 't'), S(' is', 'p'), S(' a positive trend worth welcoming', 'o'), S('.', '')]]),
-    sent('Given the momentum behind it, there is every reason to believe that this trend will continue in the years ahead.',
-         '考虑到它背后的推动力，我们完全有理由相信，这一趋势将在未来几年持续下去。',
-         [[S('Given the momentum behind it', 'trans'), S(', there', 't'), S(' is', 'p'), S(' every reason to believe that this trend will continue in the years ahead', 'o'), S('.', '')]]),
+    sent('Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.',
+         '考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。',
+         [[S('Given the momentum behind it', 'trans'), S(', there', 't'), S(' is', 'p'), S(' every reason to believe that it will continue in the years ahead', 'o'), S('.', '')]]),
+]
+
+# 第三段拼装框架（与 P2 同款）：立场 → 主体/对策 → 收束（用户反馈「第三段怪怪的」= 缺拼装视图 + trend 重复）
+P3_FW_POS = [
+    {'en': 'On balance, this is a positive trend worth welcoming.', 'trans': '总体来看，这是值得欢迎的积极趋势。',
+     'cn': '立场句：先亮态度，正面题直接用。'},
+    {'en': 'To make the most of this trend, + 主体句 ①', 'trans': '要充分利用这一趋势，……',
+     'cn': '主体句：谁来做——政府 / 学校 / 家庭 / 企业 / 媒体 / 个人，按题目挑 1~2 个；衔接词自带目的感，不用再写 Also。'},
+    {'en': 'Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.',
+     'trans': '考虑到它背后的推动力，完全有理由相信它会在未来几年持续下去。',
+     'cn': '收束句：展望收尾，主体句写几条都接得住。'},
+]
+P3_FW_NEG = [
+    {'en': 'On balance, the figures point to a problem worth taking seriously.', 'trans': '总体来看，这些数据指向一个值得认真对待的问题。',
+     'cn': '立场句：负面题直接用。'},
+    {'en': 'To reverse this trend, + 对策句 ①', 'trans': '要想扭转这一趋势，……',
+     'cn': '对策句：谁来管——政府 / 学校 / 家庭 / 平台 / 个人，挑 1~2 个主体给对策。'},
+    {'en': 'Unless effective measures are taken, it may well get worse.',
+     'trans': '若不采取有效措施，问题很可能进一步恶化。',
+     'cn': '收束句：警示收尾，与立场句的「问题」呼应。'},
 ]
 P3_NEG = [
     sent('On balance, the figures point to a problem worth taking seriously.',
@@ -292,6 +312,7 @@ def main():
     set_skeleton(s, P3_POS)
     s['alts'] = {'will continue': 'is predicted to continue / is set to continue', 'Given the momentum behind it': 'Considering the forces driving it'}
     s['linkers'] = P3_LINKERS
+    s['framework'] = P3_FW_POS
     s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in SUBJ_POS]
     s = by_id['para3_negative']
     s['title'] = '第三段 · 负面版（立场 + 对策）'
@@ -299,6 +320,7 @@ def main():
     set_skeleton(s, P3_NEG)
     s['alts'] = {'Unless effective measures are taken': 'If left unchecked / Without timely intervention', 'may well get worse': 'is unlikely to correct itself'}
     s['linkers'] = P3_LINKERS
+    s['framework'] = P3_FW_NEG
     s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in SUBJ_NEG]
 
     # 顺序：第一段 → 第二段 → 第三段

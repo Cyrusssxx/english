@@ -4377,5 +4377,11 @@ html.dark .wr-frame-title, html.dark .rc-frame-title { color: #5eead4; }
 .wr-chart-item img { display: block; width: 100%; height: auto; cursor: zoom-in; }
 .wr-chart-item figcaption { padding: 6px 10px; font-size: .82rem; color: var(--text-light); border-top: 1px solid var(--border); }
 
+/* ===== 真题图表灯箱（本页放大） ===== */
+.wr-zoom-box { position: fixed; inset: 0; z-index: 999; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, .82); padding: 24px; cursor: zoom-out; }
+.wr-zoom-box.on { display: flex; }
+.wr-zoom-box img { max-width: 94vw; max-height: 88vh; width: auto; height: auto; background: #fff; border-radius: 8px; box-shadow: 0 8px 40px rgba(0, 0, 0, .5); }
+.wr-zoom-close { position: absolute; top: 18px; right: 24px; font-size: 22px; color: #fff; cursor: pointer; }
+
 summary.wr-legend-head { cursor: pointer; list-style: revert; }
 summary.wr-legend-head::-webkit-details-marker { display: revert; }

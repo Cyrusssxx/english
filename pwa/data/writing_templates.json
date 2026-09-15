@@ -1064,8 +1064,8 @@
    "group": "大作文 · 第三段（总结建议）",
    "title": "第三段 · 正面版（立场 + 建议）",
    "subtitle": "立场句 + 从主体句池挑 1~2 句 + 收束句",
-   "en": "On balance, this is a positive trend worth welcoming. Given the momentum behind it, there is every reason to believe that this trend will continue in the years ahead.",
-   "cn": "总体来看，这是值得欢迎的积极趋势。考虑到它背后的推动力，我们完全有理由相信，这一趋势将在未来几年持续下去。",
+   "en": "On balance, this is a positive trend worth welcoming. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+   "cn": "总体来看，这是值得欢迎的积极趋势。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
    "note": "主体按题挑：政府（2010/2014/2017/2022/2023）、学校（2013/2019/2024/2026）、家庭（2013/2016/2026）、企业平台（2011/2012/2018/2020/2022）、媒体（2016/2017/2020/2023）、个人（2015/2016/2021/2025）。挑 2 个主体各 1 句即可，不要 6 个都写。",
    "en_struct": [
     [
@@ -1104,7 +1104,7 @@
       "p"
      ],
      [
-      " every reason to believe that this trend will continue in the years ahead",
+      " every reason to believe that it will continue in the years ahead",
       "o"
      ],
      [
@@ -1224,6 +1224,23 @@
     {
      "banned": "will rise（预测）",
      "better": "is predicted to rise / is set to rise / is estimated to stay stable"
+    }
+   ],
+   "framework": [
+    {
+     "en": "On balance, this is a positive trend worth welcoming.",
+     "trans": "总体来看，这是值得欢迎的积极趋势。",
+     "cn": "立场句：先亮态度，正面题直接用。"
+    },
+    {
+     "en": "To make the most of this trend, + 主体句 ①",
+     "trans": "要充分利用这一趋势，……",
+     "cn": "主体句：谁来做——政府 / 学校 / 家庭 / 企业 / 媒体 / 个人，按题目挑 1~2 个；衔接词自带目的感，不用再写 Also。"
+    },
+    {
+     "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+     "trans": "考虑到它背后的推动力，完全有理由相信它会在未来几年持续下去。",
+     "cn": "收束句：展望收尾，主体句写几条都接得住。"
     }
    ]
   },
@@ -1383,6 +1400,23 @@
     {
      "banned": "will rise（预测）",
      "better": "is predicted to rise / is set to rise / is estimated to stay stable"
+    }
+   ],
+   "framework": [
+    {
+     "en": "On balance, the figures point to a problem worth taking seriously.",
+     "trans": "总体来看，这些数据指向一个值得认真对待的问题。",
+     "cn": "立场句：负面题直接用。"
+    },
+    {
+     "en": "To reverse this trend, + 对策句 ①",
+     "trans": "要想扭转这一趋势，……",
+     "cn": "对策句：谁来管——政府 / 学校 / 家庭 / 平台 / 个人，挑 1~2 个主体给对策。"
+    },
+    {
+     "en": "Unless effective measures are taken, it may well get worse.",
+     "trans": "若不采取有效措施，问题很可能进一步恶化。",
+     "cn": "收束句：警示收尾，与立场句的「问题」呼应。"
     }
    ]
   }
