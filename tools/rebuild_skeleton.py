@@ -105,7 +105,8 @@ DYN = [
 PARA2_SKEL = sent('This phenomenon can be attributed to two major factors.',
                   '这一现象可以归因于两大因素。',
                   [[S('This phenomenon', 't'), S(' can be attributed to', 'p'), S(' two major factors', 'o'), S('.', '')]])
-PARA2_SKEL['alts'] = {'can be attributed to': 'stems from / results from', 'two major factors': 'several major factors（挑 3 条机制句时）'}
+PARA2_SKEL['alts'] = {'can be attributed to': 'is largely attributable to（加长版）/ stems from',
+                      'two major factors': 'three major factors（写 3 条）/ several major factors（写 4 条）/ a combination of factors（拿不准就用）'}
 
 MECH = [
     (3, '收入', 'As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.',
@@ -172,11 +173,17 @@ P3_LINKERS = [
 ]
 
 # 第二段拼装框架：引入句 → 高级衔接词 + 机制句（步骤固定，机制句从池里挑）
+# 条数规则（2026-09-16 审计 17 年方案）：适配机制句全是 3~4 条、0 年两条；示范文实写 3 条(5 篇)/4 条(12 篇)
+# → 引入句的条数词必须跟正文条数走；拿不准就用 a combination of factors（不承诺条数）
 P2_FRAMEWORK = [
-    {'en': 'This phenomenon can be attributed to two major factors.', 'cn': '引入句：一句话点明「原因有两条」，全段总起。'},
-    {'en': 'Primary among these is + 机制句 ①', 'cn': '第 1 条：高级衔接词开头，接句池里最有力的原因（收入 / 成本 / 观念…）。'},
-    {'en': 'Equally important, + 机制句 ②', 'cn': '第 2 条：换个衔接词、换个角度；句尾可用 which 从句焊因果（..., which has lowered the threshold for ...）。'},
-    {'en': '（可选）A further driver is + 机制句 ③', 'cn': '想写三条就再加一句；此时引入句的 two major factors 要换成 several major factors。'},
+    {'en': 'This phenomenon can be attributed to two major factors.', 'trans': '这一现象可以归因于两大因素。',
+     'cn': '引入句：条数词跟着正文走——写 3 条换 three major factors，写 4 条换 several major factors，拿不准就用 a combination of factors（不承诺条数，万能）。'},
+    {'en': 'Primary among these is + 机制句 ①', 'trans': '其中，首要的一条是……',
+     'cn': '第 1 条：高级衔接词开头，接句池里最有力的原因（收入 / 成本 / 观念…）。'},
+    {'en': 'Equally important, + 机制句 ②', 'trans': '同样重要的是，……',
+     'cn': '第 2 条：换个衔接词、换个角度；句尾可用 which 从句焊因果（..., which has lowered the threshold for ...）。'},
+    {'en': '（可选）A further driver is + 机制句 ③', 'trans': '（可选）另一个推动因素是……',
+     'cn': '第 3 条想写就写（17 年的适配方案全是 3~4 条候选，写 3 条最稳）。'},
 ]
 
 # 主体句池（沿用旧版并按更自然的口径重写两句；第一位是「通用档」）
@@ -229,6 +236,8 @@ def main():
         {'en': 'Taken together, the three largest items make up {{percent total}}.', 'cn': '前三项加起来占 {{percent total}}。', 'freq': 3, 'tag': '合计'},
         {'en': 'The pattern is clear: a few items dominate the rest.', 'cn': '格局很清楚：少数几项占了大头。', 'freq': 2, 'tag': '集中度'},
         {'en': 'The gap between the largest and the smallest is wide.', 'cn': '最大项与最小项之间差距很大。', 'freq': 2, 'tag': '差距'},
+        {'en': 'The figure varies sharply from group to group: it stands at {{percent1}} for {{item1}}, but falls to just {{percent3}} for {{item3}}.',
+         'cn': '组与组之间差别悬殊：{{item1}} 高达 {{percent1}}，而 {{item3}} 只有 {{percent3}}。', 'freq': 3, 'tag': '交叉表·组间对比'},
     ]
     s = by_id['chart_dynamic']
     s['skeletons'] = DYN
@@ -270,7 +279,7 @@ def main():
             ['as much as', '和……一样（不只是）'],
         ],
         'tips': [
-        "串接方式：引入句（two major factors）之后，第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。",'引入句 8 词 + 机制句挑 3 条 ≈ 55~62 词。',
+        "串接方式：引入句的条数词跟正文条数走（two / three / several / a combination of factors）；第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。引入句嫌短可用升级版 This trend is largely attributable to ...。",'引入句 8 词 + 机制句挑 3 条 ≈ 55~62 词。',
                  '每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 16 条都写。',
                  '挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。'],
     })

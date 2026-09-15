@@ -119,7 +119,7 @@ async function rcInit() {
                 sk += '<div class="rc-lines">'
                     + rcPairs(s.en, s.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
                     + '</div>'
-                    + (s.framework ? `<div class="rc-frame"><div class="rc-frame-title">🧩 第二段框架（4 步拼装）</div>${s.framework.map(f => `<div class="rc-line"><div class="rc-en">${rcAnno(f.en)}</div>${f.cn ? `<div class="rc-cn">${rcPh(f.cn)}</div>` : ''}</div>`).join('')}</div>` : '')
+                    + (s.framework ? `<div class="rc-frame"><div class="rc-frame-title">🧩 第二段框架（4 步拼装）</div>${s.framework.map(f => `<div class="rc-line"><div class="rc-en">${rcAnno(f.en)}</div>${f.trans ? `<div class="rc-cn">${rcPh(f.trans)}</div>` : ''}${f.cn ? `<div class="rc-cn">${rcPh(f.cn)}</div>` : ''}</div>`).join('')}</div>` : '')
                     + (s.linkers ? `<div class="rc-alts">✎ 高级衔接词：${rcLinkers(s.linkers)}</div>` : '')
                     + (s.demo ? `<div class="rc-demo"><b>例</b><span class="rc-en">${rcAnno(s.demo)}</span></div>` : '');
             }

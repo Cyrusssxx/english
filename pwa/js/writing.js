@@ -806,7 +806,7 @@ function wrSectionCard(sec) {
             ${tplBody}
         </div>
         ${sec.framework ? `<div class="wr-frame"><div class="wr-frame-title">🧩 第二段框架（4 步拼装）</div>${sec.framework.map((f, i) => `
-            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${wrEsc(f.en)}</span><span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>` : ''}
+            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${wrEsc(f.en)}</span>${f.trans ? `<span class="wr-frame-trans">${wrEsc(f.trans)}</span>` : ''}<span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>` : ''}
         ${neg ? `
         <div class="wr-tpl wr-tpl-neg">
             <div class="wr-tpl-bar">
