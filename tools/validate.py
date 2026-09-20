@@ -54,7 +54,8 @@ def check_article(year, art):
     aid = art.get('id', '?')
     prefix = f'[{year}/{aid}]'
 
-    if not re.match(rf'^{year}_[a-z0-9]+$', str(aid)):
+    # 2026 起大作文 id 写成 {year}_writing_a / _writing_b（早期是 {year}_writingb），两种都合法
+    if not (re.match(rf'^{year}_[a-z0-9]+$', str(aid)) or re.match(rf'^{year}_writing_[ab]$', str(aid))):
         err(f'{prefix} 文章 id 不符合 {year}_xxx 规则')
     if art.get('type') not in VALID_TYPES:
         err(f'{prefix} type 非法: {art.get("type")}')
@@ -93,7 +94,11 @@ def check_article(year, art):
         if not s.get('en'):
             err(f'{sp} 缺少 en')
         if not s.get('cn'):
-            err(f'{sp} 缺少 cn')
+            # 英二 2010+ 应有逐句译文；其余缺失属污染清理后的预期状态（前端显示「本句暂无逐句译文」）
+            if str(year).startswith('en1') or int(str(year)[:4] or 0) < 2010:
+                warn(f'{sp} 缺少 cn（历史年份/英一，预期）')
+            else:
+                err(f'{sp} 缺少 cn')
         # 词汇标注必须能在原句中全词匹配（词组整体标注）
         for w in s.get('words', []):
             if not w.get('w') or not w.get('meaning'):

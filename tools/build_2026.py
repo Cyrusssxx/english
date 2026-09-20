@@ -2,6 +2,14 @@
 """2026 考研英语二 → pwa/data/2026.json
 数据来源：新东方/海文/希赛/人人文库等多源交叉核验（真题原文+答案）。
 覆盖：Text1-4 + 完形 + 翻译 + 写作A/B（新题型 Part B 见 tools/build_2026_newtype.py）。
+
+⚠ 本脚本不是 2026 数据的完整真源：重跑会**覆盖整个 2026.json**，而下列字段是后续管道加的、本脚本不产出，
+  重跑后必须补跑对应工具，否则会静默丢数据（2026-09-20 踩过）：
+  · sentences[].struct（句子结构树）← tools/struct_batches/*.txt + tools/merge_struct.py
+  · sentences[].words（生词标注）、questions[].quick / .tip（考题速览/技巧）← 详细解析与词汇标注批次
+  · writing_b.apply（套用示范）← tools/sync_apply.py
+  · writing_b.chart_img 现已在本脚本内提供（img/2026_writingb_chart.svg）
+  安全做法：优先用 tools/fix_cloze_markers.py 之类**定点小工具**改数据，避免整篇重跑。
 """
 import json, re, sys, os
 sys.stdout.reconfigure(encoding='utf-8')
@@ -320,6 +328,9 @@ CLOZE = [
 (5, "When it comes to your friends—maybe it's because your friendship is so _20_ that they felt able to cancel at late notice.",
  "至于你的朋友——也许正是因为你们的友谊如此深厚，他们才觉得可以临时取消约会。"),
 ]
+# 空白标记统一成 [n]（全站约定：article.js 只把 [n] 渲染成可点空白槽，_n_ 会当普通文字）
+CLOZE = [(pa, re.sub(r'_([0-9]{1,2})_', lambda m: '[' + m.group(1) + ']', en), cn) for pa, en, cn in CLOZE]
+
 CLOZE_OPTS = {
 1: ({"A":"afraid","B":"critical","C":"proud","D":"tolerant"}, "C"),
 2: ({"A":"risky","B":"natural","C":"admirable","D":"foolish"}, "B"),
@@ -357,6 +368,19 @@ def cloze_questions():
 
 # ============ 翻译 ============
 AID = "translation"
+# 官方参考译文（2026 完整版解析 Section III，按四段整理；供文章页「全文参考译文」块使用）
+REF_CN = (
+    "服装对心理的影响，指的是我们所穿的衣物如何影响自身的思想、情绪和行为。衣物绝不仅仅是用来遮蔽身体的；"
+    "它在塑造自我认知以及促进人际交往方面也发挥着重要作用。\n"
+    "这种影响的其中一个方面体现在自我表达上。我们所选择的衣物能够反映出自己的性格、心情和身份认同。"
+    "无论我们是选择风格大胆、色彩鲜明的服装，还是更偏爱低调简约的风格，衣着选择都在传递着关于我们自身身份、"
+    "以及我们希望给他人留下何种印象的信息。\n"
+    "此外，服装还会影响我们的自信程度。当我们穿上让自己感到舒适自在且自信的衣服时，这会对我们的自尊心和"
+    "整体情绪产生积极影响。\n"
+    "再者，文化和社会因素的影响在塑造穿衣选择方面也起着重要作用。不同的文化对于着装有着各自的规范和期望，"
+    "这些规范和期望会影响人们所穿衣物的类型，以及人们赋予这些衣物的含义。"
+)
+
 TRANS = [
 (1, "The influence of wearables on psychology refers to how the clothes we wear affect our thoughts, feelings, and behaviors.",
  "可穿戴服饰对心理的影响，指的是我们所穿着的衣物如何影响我们的思维、情感和行为。"),
@@ -436,13 +460,14 @@ articles = [
     article("cloze", "个人化归因：如何停止往自己身上揽", "个人化归因与读心术",
             CLOZE, cloze_questions()),
     article("translation", "可穿戴服饰对心理的影响", "可穿戴服饰对心理的影响",
-            TRANS, []),
+            TRANS, [], extra={"ref_cn": REF_CN}),
     article("writing_a", "回复邮件：谈论朋友的旅行视频", "小作文·回复邮件",
             [], [], extra={"directions": WRITING_A["directions"], "directions_cn": WRITING_A["directions_cn"],
                             "sample_en": WRITING_A["sample_en"], "sample_cn": WRITING_A["sample_cn"]}),
     article("writing_b", "图表作文：儿童户外活动的益处", "大作文·图表作文",
             [], [], extra={"directions": WRITING_B["directions"], "directions_cn": WRITING_B["directions_cn"],
-                            "sample_en": WRITING_B["sample_en"], "sample_cn": WRITING_B["sample_cn"]}),
+                            "sample_en": WRITING_B["sample_en"], "sample_cn": WRITING_B["sample_cn"],
+                            "chart_img": "img/2026_writingb_chart.svg"}),
 ]
 
 out = {"schema_version": 1, "exam": "en2", "year": 2026, "articles": articles}

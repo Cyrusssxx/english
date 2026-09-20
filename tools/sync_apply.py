@@ -45,7 +45,7 @@ def main():
         d = json.load(io.open(fp, encoding='utf-8'))
         changed = False
         for a in d.get('articles', []):
-            if y in big and a.get('id', '').endswith('writingb'):
+            if y in big and a.get('id', '').replace('_', '').endswith('writingb'):
                 ap = big[y]
                 a['apply'] = {
                     'apply_en': ap['apply_en'], 'apply_cn': ap['apply_cn'],
