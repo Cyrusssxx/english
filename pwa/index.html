@@ -57,6 +57,10 @@
         <div class="topic-tabs" id="topicTabs"></div>
         <div class="topic-hint" id="topicHint" style="display:none">按话题跨年份刷题：先按年份新旧，最新在前</div>
 
+        <!-- 按新题型类型刷（仅英二 Part B · 2010-2025） -->
+        <div class="nt-tabs" id="ntTabs"></div>
+        <div class="topic-hint" id="ntHint" style="display:none"></div>
+
         <!-- 年份 Tab -->
         <div class="year-tabs" id="yearTabs"></div>
 
@@ -83,6 +87,8 @@
         let answerStats = {};   // {article_id: {answered, correct}}
         let topicMap = null;    // {article_id: {cat, diff, book}}
         let curTopic = '';      // '' = 全部（按年份）；否则为话题分类名
+        let ntMap = null;       // {types:[{id,count,years,desc}], map:{article_id: 类型名}}（仅英二新题型）
+        let curNt = null;       // null = 不筛；否则为新题型类型名（与话题筛选互斥）
 
         async function init() {
             // 3 秒未加载完，提示网络慢（避免误以为卡死）
@@ -115,7 +121,15 @@
             } catch (e) { topicMap = null; }
             const savedTopic = localStorage.getItem('lastTopic') || '';
             curTopic = (savedTopic && topicMap && Object.values(topicMap).some(v => v.cat === savedTopic)) ? savedTopic : '';
+            // 新题型类型分类（仅英二 Part B）：数据由 tools/build_newtype_map.py 生成
+            try {
+                ntMap = await fetchJSON('data/newtype_map.json');
+            } catch (e) { ntMap = null; }
+            const savedNt = localStorage.getItem('lastNtype') || '';
+            curNt = (savedNt && ntMap && (ntMap.types || []).some(t => t.id === savedNt)) ? savedNt : null;
+            if (curNt) curTopic = '';
             renderTopicTabs();
+            renderNtTabs();
             const years = idx.years.map(y => y.year).sort((a, b) => b - a);
             const saved = parseInt(localStorage.getItem('lastYear') || '0', 10);
             curYear = years.includes(saved) ? saved : years[0];
@@ -164,16 +178,59 @@
             const el = document.getElementById('topicTabs');
             const hint = document.getElementById('topicHint');
             el.innerHTML = ['全部', ...TOPIC_CATS].map(c =>
-                `<button class="topic-tab ${(c === '全部' ? !curTopic : curTopic === c) ? 'active' : ''}" onclick="pickTopic('${c === '全部' ? '' : c}')">${c}</button>`).join('');
+                `<button class="topic-tab ${(c === '全部' ? (!curTopic && !curNt) : curTopic === c) ? 'active' : ''}" onclick="pickTopic('${c === '全部' ? '' : c}')">${c}</button>`).join('');
             hint.style.display = curTopic ? '' : 'none';
-            document.getElementById('yearTabs').style.display = curTopic ? 'none' : '';
+            syncYearTabs();
         }
 
         function pickTopic(c) {
             curTopic = c;
+            curNt = null;                       // 与话题筛选互斥
             localStorage.setItem('lastTopic', c);
+            localStorage.setItem('lastNtype', '');
             renderTopicTabs();
+            renderNtTabs();
             renderList();
+        }
+
+        /* ===== 新题型类型分类（仅英二 Part B · 2010-2025 共 16 篇） ===== */
+        function renderNtTabs() {
+            const el = document.getElementById('ntTabs');
+            const hint = document.getElementById('ntHint');
+            if (!el) return;
+            const types = (ntMap && ntMap.types) || [];
+            if (!types.length) { el.innerHTML = ''; el.style.display = 'none'; if (hint) hint.style.display = 'none'; return; }
+            el.style.display = '';
+            const chips = [{ id: '', count: 0, label: '全部', desc: '取消筛选，回到按年份浏览', years: [] }].concat(types);
+            el.innerHTML = '<span class="tt-label">新题型</span>' + chips.map(t => {
+                const on = t.id === '' ? (curNt === null && !curTopic) : curNt === t.id;
+                const tip = t.desc + (t.years && t.years.length ? '｜' + t.years.join('·') : '');
+                const cnt = t.id === '' ? '' : `<span class="tt-count">${t.count}</span>`;
+                return `<button class="topic-tab ${on ? 'active' : ''}" title="${tip}" onclick="pickNt('${t.id}')">${t.label || t.id}${cnt}</button>`;
+            }).join('');
+            if (hint) {
+                const total = types.reduce((s, t) => s + t.count, 0);
+                hint.textContent = curNt ? ('按新题型类型跨年份刷题：' + curNt + '（英语二 Part B，共 ' + total + ' 篇，最新在前）') : '';
+                hint.style.display = curNt ? '' : 'none';
+            }
+            syncYearTabs();
+        }
+
+        function pickNt(id) {
+            curNt = id || null;                 // 空串 = 取消筛选，回到按年份
+            curTopic = '';
+            try {
+                localStorage.setItem('lastNtype', curNt || '');
+                localStorage.setItem('lastTopic', '');
+            } catch (e) { /* ignore */ }
+            renderTopicTabs();
+            renderNtTabs();
+            renderList();
+        }
+
+        function syncYearTabs() {
+            const yt = document.getElementById('yearTabs');
+            if (yt) yt.style.display = (curTopic || curNt) ? 'none' : '';
         }
 
         function cardHtml(a, showYear) {
@@ -194,6 +251,24 @@
         }
 
         function renderList() {
+            if (curNt) {
+                // 按新题型类型跨年刷题（仅英二 Part B）
+                const arts = [];
+                for (const y of idx.years) {
+                    for (const a of y.articles) {
+                        if (a.type !== 'newtype') continue;
+                        if (ntMap && ntMap.map && ntMap.map[a.id] !== curNt) continue;
+                        arts.push({ a, year: y.year });
+                    }
+                }
+                arts.sort((x, z) => z.year - x.year);
+                if (!arts.length) {
+                    document.getElementById('articleList').innerHTML = '<div class="empty">该类型暂无新题型文章</div>';
+                    return;
+                }
+                document.getElementById('articleList').innerHTML = arts.map(x => cardHtml({ ...x.a, year: x.year }, true)).join('');
+                return;
+            }
             if (curTopic) {
                 // 按话题跨年刷题：只取阅读 text1-4
                 const arts = [];
