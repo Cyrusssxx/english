@@ -7510,6 +7510,287 @@
    ]
   },
   {
+   "id": "2026_newtype",
+   "type": "newtype",
+   "title": "森林恢复：种子供给的瓶颈与「为谁恢复」之问",
+   "topic": "新题型（信息匹配）：将左栏的五位森林恢复领域人士与右栏中与其观点相符的陈述相匹配（右栏有 A-G 七项，其中两项多余）。",
+   "source": "Section II Part B",
+   "pool": {
+    "A": "People must pay attention to the fact that some kinds of trees do not produce seeds annually.",
+    "B": "Soil is an important element to be taken into account in forest restoration.",
+    "C": "The purpose of restoration efforts may be different from the real needs of the people involved.",
+    "D": "Human factors, as well as trees planted, should be emphasised in forest restoration.",
+    "E": "The supply of seeds is a tough problem that has to be dealt with.",
+    "F": "When it comes to restoration, we have to start with an awareness of whose interests to serve.",
+    "G": "Some creatures in the forest that multiply fast can become a great threat to forest restoration."
+   },
+   "pool_cn": {
+    "A": "人们必须注意这样一个事实：有些树种并非每年都结籽。",
+    "B": "土壤是森林恢复中必须考虑的一个重要因素。",
+    "C": "恢复工作的目的可能与相关人员的真实需求并不一致。",
+    "D": "在森林恢复中，除了种下的树木，人的因素也应受到强调。",
+    "E": "种子供应是一个必须解决的难题。",
+    "F": "谈到恢复，我们必须从一开始就清楚要服务于谁的利益。",
+    "G": "森林中繁殖迅速的生物可能成为森林恢复的巨大威胁。"
+   },
+   "sentences": [
+    {
+     "id": "2026_newtype_s01",
+     "para": 1,
+     "en": "In an effort to support restoration programmes, specialists are developing supplies of seeds and seedlings, maintaining gene banks and sequencing the genomes of indigenous trees and other crops.",
+     "cn": "为了支持生态恢复项目，专家们正在开发种子与树苗的供给，维护基因库，并对本土树木和其他作物的基因组进行测序。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s02",
+     "para": 1,
+     "en": "Their work deals with one of the problems that could block major restoration efforts in different parts of the world.",
+     "cn": "他们的工作针对的是一个可能阻碍世界不同地区大规模恢复工作的难题。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s03",
+     "para": 2,
+     "en": "“Where’s the planting material going to come from? That’s one big bottleneck,” says genetic-resources specialist Ramni Jamnadass.",
+     "cn": "遗传资源专家拉姆尼·贾姆纳达斯说：“种植材料从哪里来？这是一个大瓶颈。”",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s04",
+     "para": 3,
+     "en": "Asia is arguably the region most neglected by global efforts to increase diversity in restoration and to study native species.",
+     "cn": "可以说，在提高恢复工作的多样性、研究本土物种方面，亚洲是全球努力中最被忽视的地区。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s05",
+     "para": 3,
+     "en": "Christopher Kettle, Bioversity International’s director for forest genetic resources and restoration in Rome, says that the need for infrastructure—things such as mechanisms for collecting and storing seeds, and nurseries to raise seedlings—might be most desperate here because many trees are ‘masting’ species, which don’t produce seeds every year.",
+     "cn": "国际生物多样性中心（Bioversity International）驻罗马的森林遗传资源与恢复事务主任克里斯托弗·凯特尔表示，当地对基础设施——比如收集和储存种子的机制、培育树苗的苗圃——的需求可能最为迫切，因为许多树木都属于“大小年结籽”（masting）的物种，并非每年都结籽。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s06",
+     "para": 3,
+     "en": "People need to be ready.",
+     "cn": "人们必须提前做好准备。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s07",
+     "para": 4,
+     "en": "“Otherwise, you miss the boat, you lose all the seed and you’ve got to wait another seven years,” says Kettle.",
+     "cn": "凯特尔说：“否则你就错过时机了，种子全丢了，还得再等七年。”",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s08",
+     "para": 4,
+     "en": "“This is a really, really critical issue for restoration in Southeast Asia, because many of the most important timber species and tree species—the ones that will lock up the most carbon—they’re all masting species.”",
+     "cn": "“对东南亚的生态恢复来说，这是一个极其关键的问题，因为许多最重要的用材树种和乔木树种——也就是固碳最多的那些——都属于大小年结籽的物种。”",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s09",
+     "para": 5,
+     "en": "Climate change is a driving factor in the push to restore forests, but it also raises questions, such as where trees can thrive in the future.",
+     "cn": "气候变化是推动森林恢复的一大因素，但它也带来了新的问题，比如树木未来能在哪里繁茂生长。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s10",
+     "para": 5,
+     "en": "Climate change is also expected to alter relationships between trees, insects, diseases and other forest species.",
+     "cn": "气候变化预计还会改变树木、昆虫、病害以及其他森林物种之间的关系。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s11",
+     "para": 6,
+     "en": "“Insects that today are a minor problem may become a major problem if they can produce three or four generations in a year,” says forest ecologist John Stanturf.",
+     "cn": "森林生态学家约翰·斯坦特夫说：“今天看来还算小问题的昆虫，如果一年能繁殖三四代，就可能变成大问题。”",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s12",
+     "para": 6,
+     "en": "This remains a significant knowledge gap.",
+     "cn": "这仍然是一个重大的知识空白。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s13",
+     "para": 6,
+     "en": "“We know enough to know that this is a concern, but we don’t know enough about how to respond to it yet. That’s a great area to be doing research.”",
+     "cn": "“我们知道的足以让我们意识到这是个隐患，但对如何应对还了解得不够。这是一个很值得研究的领域。”",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s14",
+     "para": 7,
+     "en": "So is soil, says Cindy Prescott, a forest ecologist at the University of British Columbia in Vancouver.",
+     "cn": "不列颠哥伦比亚大学（位于温哥华）的森林生态学家辛迪·普雷斯科特说，土壤也是如此。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s15",
+     "para": 7,
+     "en": "“If you don’t look at the soil at the start, you can spend a lot of money and time putting in species that aren’t going to survive there.”",
+     "cn": "“如果一开始不考虑土壤，你可能会花掉大量金钱和时间，种下一些根本没法在那里存活的物种。”",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s16",
+     "para": 8,
+     "en": "With so much research left to do, leaders in the field have been doing some soul-searching, and acknowledging that restoration can be motivated by—and designed to meet—different needs.",
+     "cn": "由于还有大量研究要做，该领域的领军人物一直在反思，并承认恢复工作可能出于不同的目的，也应满足不同的需求。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s17",
+     "para": 8,
+     "en": "“When you talk about conservation or restoration, the first question has to be restoration by whom, for whom?” says Daniel Janzen, a biologist at the University of Pennsylvania.",
+     "cn": "宾夕法尼亚大学生物学家丹尼尔·詹森说：“谈到保护或恢复，首要问题必须是：由谁来恢复，又为谁恢复？”",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s18",
+     "para": 9,
+     "en": "The question can have more than one answer.",
+     "cn": "这个问题的答案可能不止一个。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s19",
+     "para": 9,
+     "en": "Much of the global funding for restoration is dedicated to developing it as a tool to mitigate climate change, notes restoration ecologist Pedro Brancalion.",
+     "cn": "恢复生态学家佩德罗·布兰卡利翁指出，全球用于恢复的资金大部分都致力于把恢复打造成缓解气候变化的工具。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s20",
+     "para": 9,
+     "en": "“But if you ask a farmer in Brazil if he or she is concerned about climate change, they would say, ‘No, I am concerned about water,’” he says.",
+     "cn": "他说：“但如果你问巴西的农民是否担心气候变化，他们会说：‘不，我担心的是水。’”",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s21",
+     "para": 9,
+     "en": "Their interests as stewards of the land need to be better integrated with those who have the money to support restoration.",
+     "cn": "作为土地的守护者，他们的利益需要与那些有钱支持恢复工作的人更好地结合起来。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s22",
+     "para": 10,
+     "en": "That has been the strongest lesson of all for Robin Chazdon, a forest ecologist at the University of Connecticut.",
+     "cn": "对康涅狄格大学的森林生态学家罗宾·查兹登来说，这是所有教训中最深刻的一条。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s23",
+     "para": 10,
+     "en": "Restoration is about more than what gets planted in the ground, she says.",
+     "cn": "她说，恢复工作不只是把什么种进土里那么简单。",
+     "words": []
+    },
+    {
+     "id": "2026_newtype_s24",
+     "para": 10,
+     "en": "“Yes, it’s about forests, but it’s really about people. They are the agents of restoration.”",
+     "cn": "“是的，这关乎森林，但真正关乎的是人。人才是恢复工作的执行者。”",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "id": "2026_newtype_q41",
+     "number": 41,
+     "qtype": "匹配",
+     "person": "Ramni Jamnadass",
+     "stem": "第 41 题：将左栏人物 Ramni Jamnadass 与右栏中的观点陈述相匹配",
+     "stem_cn": "",
+     "options": {},
+     "options_cn": {},
+     "answer": "E",
+     "explanation": "【信息匹配】本题主要考查同义复现、词义对应。定位句“种植材料从哪里来？这是一个很大的瓶颈”。选项中 The supply of seeds 对应原文第二段 the planting material（同义复现）；a tough problem 对应原文第二段 one big bottleneck（情感复现）。故选 E。",
+     "related_sentences": [
+      "2026_newtype_s03"
+     ]
+    },
+    {
+     "id": "2026_newtype_q42",
+     "number": 42,
+     "qtype": "匹配",
+     "person": "Christopher Kettle",
+     "stem": "第 42 题：将左栏人物 Christopher Kettle 与右栏中的观点陈述相匹配",
+     "stem_cn": "",
+     "options": {},
+     "options_cn": {},
+     "answer": "A",
+     "explanation": "【信息匹配】本题主要考查同义复现、语义对应。定位句内容较长，可重点关注逻辑关系处：原因状语从句重点论述“因为许多树木都是 ‘masting’ 物种，它们每年都不会结出种子。人们需要做好准备”。People must pay attention to the fact 对应原文第三段 people need to be ready（同义复现）；some kinds of trees 对应第三段 many trees（原词复现）；do not produce seeds annually 对应第三段 which don’t produce seeds every year。故选 A。",
+     "related_sentences": [
+      "2026_newtype_s04",
+      "2026_newtype_s05",
+      "2026_newtype_s06"
+     ]
+    },
+    {
+     "id": "2026_newtype_q43",
+     "number": 43,
+     "qtype": "匹配",
+     "person": "John Stanturf",
+     "stem": "第 43 题：将左栏人物 John Stanturf 与右栏中的观点陈述相匹配",
+     "stem_cn": "",
+     "options": {},
+     "options_cn": {},
+     "answer": "G",
+     "explanation": "【信息匹配】定位 Stanturf 的引语“Insects that today are a minor problem may become a major problem if they can produce three or four generations in a year”。creatures in the forest 对应文中的 Insects；multiply fast（繁殖很快）对应 produce three or four generations in a year；become a great threat 对应 become a major problem。故选 G。",
+     "related_sentences": [
+      "2026_newtype_s11",
+      "2026_newtype_s12",
+      "2026_newtype_s13"
+     ]
+    },
+    {
+     "id": "2026_newtype_q44",
+     "number": 44,
+     "qtype": "匹配",
+     "person": "Pedro Brancalion",
+     "stem": "第 44 题：将左栏人物 Pedro Brancalion 与右栏中的观点陈述相匹配",
+     "stem_cn": "",
+     "options": {},
+     "options_cn": {},
+     "answer": "C",
+     "explanation": "【信息匹配】原文 Brancalion 指出：全球资金把恢复视为缓解气候变化的工具，但巴西农民关心的是水。这说明“官方/资助者的目的”（mitigate climate change）与“当地参与者的真实需求”（concerned about water）之间存在差异，正对应选项 C 的 purpose … different from … real needs。故选 C。",
+     "related_sentences": [
+      "2026_newtype_s18",
+      "2026_newtype_s19",
+      "2026_newtype_s20",
+      "2026_newtype_s21"
+     ]
+    },
+    {
+     "id": "2026_newtype_q45",
+     "number": 45,
+     "qtype": "匹配",
+     "person": "Robin Chazdon",
+     "stem": "第 45 题：将左栏人物 Robin Chazdon 与右栏中的观点陈述相匹配",
+     "stem_cn": "",
+     "options": {},
+     "options_cn": {},
+     "answer": "D",
+     "explanation": "【信息匹配】定位末段 Chazdon 的总结：Restoration is about more than what gets planted in the ground … “it’s really about people. They are the agents of restoration.”。其中 as well as trees planted 对应 more than what gets planted；Human factors … should be emphasised 对应 it’s really about people。故选 D。",
+     "related_sentences": [
+      "2026_newtype_s22",
+      "2026_newtype_s23",
+      "2026_newtype_s24"
+     ]
+    }
+   ]
+  },
+  {
    "id": "2026_cloze",
    "type": "cloze",
    "title": "个人化归因：如何停止往自己身上揽",

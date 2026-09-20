@@ -1,5 +1,31 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-20 补 2026 新题型 Part B] 网上多源核验 → 2026 英二信息匹配入库（新题型缺口补齐）
+
+- **背景**：首页新题型分类上线时发现 2026 Part B 未入库（`tools/build_2026.py` 注明「新题型 PartB 原文缺」）。
+- **多源交叉核验**（4 源一致，题材=森林恢复/种子供给）：
+  - 官方试题 PDF（含 Directions）http://www.zkedu.com.cn/upload/download/2026_yu.pdf
+  - 「完整版」PDF（正文/选项/答案/解析逐字取自其第 15-17 页）
+    https://images.eduego.com/Uploads/files/wenjian/202601/202601120046408.pdf
+  - 沈阳华章真题页、希赛网试题页（选项与答案互校）
+  - **答案 41-45 = E A G C D**（信息匹配/多项对应）；左栏 5 人：Ramni Jamnadass / Christopher Kettle /
+    John Stanturf / Pedro Brancalion / Robin Chazdon；右栏 A-G（其中 B、F 两个干扰项）。
+  - 选项措辞以官方 PDF 为准：F = `...we have to start with an awareness of whose interests to serve.`
+    （两个转载页把 start 误作 stay）；D 用英式 emphasised（与全卷 programmes 拼写一致）。
+- **新增 `tools/build_2026_newtype.py`**（幂等：重跑只覆盖 2026_newtype）：24 句 / 10 段 / 5 题（含 `person` 字段）
+  + 官方解析；逐句中文译文为本脚本新译（官方无 Part B 译文，非引自解析）；同时把 2026 条目补进 `index.json`
+  （按考试顺序 text1-4 → newtype → cloze → translation → writing）。
+- **发现并补的字段缺口**：匹配题必须带 `person`，否则阅读区不渲染「[41] 人名 在此作答 ▸」徽标行
+  （article.js 用 person 匹配人名首次出现句）。2026 篇已带。
+- **顺带确认的新题型渲染设计**：新题型的解析是「紧凑一行 + 折叠」且**不渲染「定位原文依据」按钮**
+  （完形/新题型同款，定位靠人名徽标行）；`related_sentences` 按人所在段落精确标注（41→P2 / 42→P3 / 43→P6 /
+  44→P9 / 45→P10），点徽标行跳题块、手动 locate 仍可段落级高亮。
+- **数据影响**：英二 Part B 16 → **17 篇（2010–2026）**；多项对应 7 → 8 篇；首页「新题型」行自动变
+  `小标题对应 8 ｜ 多项对应 8 ｜ 判断正误 1`。
+- 验证：jsdom **18/18**（首页 chip 篇数/两种类型筛选/2026 在首位；文章页 24 句 + 选项池 7 项 + 5 题块 +
+  5 处人名徽标 + 作答后折叠解析 + 段落级定位高亮）；`tools/validate.py` 错误数 211 → 211（无新增）。
+  SW en2-653c4a06。
+
 ## [2026-09-20 首页·新题型类型分类] 话题 chip 行下方新增「新题型」筛选（仅英二 Part B）
 
 - 用户要求：在首页话题 chip 那一行（`main > div[3]` = `#topicTabs`）附近，再加一组**只含英二的新题型类型分类**，可筛选。

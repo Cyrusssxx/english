@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """2026 考研英语二 → pwa/data/2026.json
 数据来源：新东方/海文/希赛/人人文库等多源交叉核验（真题原文+答案）。
-覆盖：Text1-4 + 完形 + 翻译 + 写作A/B（新题型 PartB 原文缺，暂不含）。
+覆盖：Text1-4 + 完形 + 翻译 + 写作A/B（新题型 Part B 见 tools/build_2026_newtype.py）。
 """
 import json, re, sys, os
 sys.stdout.reconfigure(encoding='utf-8')
