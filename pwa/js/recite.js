@@ -166,10 +166,11 @@ async function rcInit() {
         ag += '<div class="rc-agent-grid">';
         const RC_AGENTS = [...new Set((s.sentences || []).map(x => (x.tag || '').split('·')[0].trim()).filter(Boolean))];
         RC_AGENTS.forEach(a => {
-            const hit = (s.sentences || []).filter(x => (x.tag || '').split('·')[0].trim() === a);
-            if (!hit.length) return;
-            ag += `<div class="rc-agent"><div class="rc-agent-name">${rcEsc(a)}<span class="rc-agent-yrs">${rcEsc((hit[0].tag || '').split('·')[1] || '')}</span></div>`
-                + hit.map(x => `<div class="rc-agent-s"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span><div class="rc-en">${rcAnno(x.en)}</div><div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')
+            const hits = (s.sentences || []).filter(x => (x.tag || '').split('·')[0].trim() === a)
+                .slice().sort((x, y) => (y.fit ?? (y.freq || 2)) - (x.fit ?? (x.freq || 2)));   // 适配面优先（fit > 考频★）
+            if (!hits.length) return;
+            ag += `<div class="rc-agent"><div class="rc-agent-name">${rcEsc(a)}<span class="rc-agent-yrs">${rcEsc((hits[0].tag || '').split('·')[1] || '')}</span></div>`
+                + hits.map(x => `<div class="rc-agent-s"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span><div class="rc-en">${rcAnno(x.en)}</div><div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')
                 + '</div>';
         });
         ag += '</div>';

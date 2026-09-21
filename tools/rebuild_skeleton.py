@@ -117,7 +117,7 @@ MECH = [
     (3, '便利', 'Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.',
      '线上平台和移动支付使 {{topic}} 变得更快、更方便。'),
     (3, '观念', 'People now judge {{topic}} by what it does for them rather than by what others think.',
-     '如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。'),
+     '如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。'),
     (3, '数据回扣', 'The figure for {{item1}} climbed from {{num1}} to {{num2}}, which matches the overall trend.',
      '{{item1}} 从 {{num1}} 升到 {{num2}}，与整体趋势一致。'),
     (2, '公共投入', 'Public spending on infrastructure has made {{topic}} far more widely available.',
@@ -129,7 +129,7 @@ MECH = [
     (2, '职场时间', 'Longer working hours have made people value the little free time they have.',
      '工作时间变长，人们更看重仅有的空闲时间。'),
     (2, '学校', 'Schools now treat {{topic}} as part of the routine rather than an optional extra.',
-     '学校现在将 {{topic}} 视为常规活动的一部分，而非可有可无的额外活动。'),
+     '学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。'),
     (2, '文化传承', 'Old traditions survive only when people find new ways to pass them on.',
      '只有当人们找到新的方式来传承旧传统时，它们才能得以延续。'),
     (2, '人口结构', 'Longer life expectancy has changed how families plan for their later years.',
@@ -207,6 +207,22 @@ P2_FRAMEWORK = [
      'cn': '第 3 条想写就写（17 年的适配方案全是 3~4 条候选，写 3 条最稳）。'},
 ]
 
+# 句池适配年数（fit）：该 tag 在 tools/apply_plan.py 的 17 年方案里被实际引用的年份数——
+# 用于句池展示排序（模板页/速记页「⚡ 弹药句池」按 fit 降序，把适配面广的句子排最前）。
+# 数据来源：2026-09-21 全量统计（p1/p2/p3 的 f:tag 引用，跨 17 年方案）。
+#   · P2 机制池：观念15 / 公共投入7 / 收入·便利·学校6 / 职场时间·职场流动4 / 城市化·就业门槛·久坐3 /
+#     文化传承2 / 国产替代·成本·人口结构1 / 数据回扣·生活节奏0
+#   · P3 正池：个人6 / 政府·长效5 / 政府·学校·观念4 / 企业·媒体·个人习惯3 / 家庭·平台设计2 / 媒体展示1
+#   · P3 负池：个人·记录3（通用对策句，手动置前）/ 企业·雇主·企业·管理2（2012 真题用过）/ 个人1 / 其余0
+P2_FIT = {'观念': 15, '收入': 6, '便利': 6, '学校': 6, '职场时间': 4, '职场流动': 4,
+          '城市化': 3, '就业门槛': 3, '久坐': 3, '文化传承': 2, '国产替代': 1, '成本': 1,
+          '人口结构': 1, '公共投入': 7, '数据回扣': 0, '生活节奏': 0}
+P3P_FIT = {'个人': 6, '政府·长效': 5, '政府': 4, '学校': 4, '观念': 4, '企业/平台': 3,
+           '媒体': 3, '个人·习惯': 3, '家庭': 2, '平台·设计': 2, '媒体·展示': 1}
+P3N_FIT = {'个人·记录': 3, '企业·雇主': 2, '企业·管理': 2, '个人': 1,
+           '政府': 0, '学校/家庭': 0, '家庭': 0, '企业/平台': 0, '媒体': 0,
+           '学校·课程': 0, '家庭·作息': 0}
+
 # 主体句池（沿用旧版并按更自然的口径重写两句；第一位是「通用档」）
 SUBJ_POS = [
     (3, '观念', 'What matters most is whether families and schools treat {{topic}} as a normal part of life.', '最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。'),
@@ -219,7 +235,7 @@ SUBJ_POS = [
     (2, '政府·长效', 'Clear rules and steady funding matter more than one-off campaigns.', '明确的规则和持续投入，比一次性活动更重要。'),
     (2, '平台·设计', 'Platforms should design simple, honest services instead of ones that hold users\u2019 attention for as long as possible.', '平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。'),
     (2, '媒体·展示', 'Documentaries and short videos can show how {{topic}} works in real life.', '纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。'),
-    (2, '个人·习惯', 'Small habits matter: a little {{topic}} every day adds up over a year.', '小习惯的力量不可小觑：每天坚持一点 {{topic}}，一年下来就会发生改变。'),
+    (2, '个人·习惯', 'Small habits matter: a little {{topic}} every day adds up over a year.', '小习惯很重要：每天一点 {{topic}}，日积月累一年下来就不一样。'),
 ]
 SUBJ_NEG = [
     (3, '政府', 'Authorities should set clear limits and make sure they are actually enforced.', '政府应设定明确的上限，并确保真正执行。'),
@@ -290,7 +306,7 @@ def main():
         'linkers': P2_LINKERS,
         'framework': P2_FRAMEWORK,
         'priority': True,
-        'sentences': [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in MECH],
+        'sentences': [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P2_FIT.get(t, 0)} for f, t, e, c in MECH],
         'phrases': [
             ['be attributed to', '归因于（P2 引入句）'],
             ['within reach', '够得着、负担得起'],
@@ -313,7 +329,7 @@ def main():
     s['alts'] = {'will continue': 'is predicted to continue / is set to continue', 'Given the momentum behind it': 'Considering the forces driving it'}
     s['linkers'] = P3_LINKERS
     s['framework'] = P3_FW_POS
-    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in SUBJ_POS]
+    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3P_FIT.get(t, 0)} for f, t, e, c in SUBJ_POS]
     s = by_id['para3_negative']
     s['title'] = '第三段 · 负面版（立场 + 对策）'
     s['subtitle'] = '立场句 + 从主体句池挑 1~2 句 + 收束句'
@@ -321,7 +337,7 @@ def main():
     s['alts'] = {'Unless effective measures are taken': 'If left unchecked / Without timely intervention', 'may well get worse': 'is unlikely to correct itself'}
     s['linkers'] = P3_LINKERS
     s['framework'] = P3_FW_NEG
-    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t} for f, t, e, c in SUBJ_NEG]
+    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3N_FIT.get(t, 0)} for f, t, e, c in SUBJ_NEG]
 
     # 顺序：第一段 → 第二段 → 第三段
     order = ['chart_static', 'chart_dynamic', 'para2_why', 'para3_positive', 'para3_negative']

@@ -4559,7 +4559,7 @@
    },
    "apply": {
     "apply_en": "The pie chart above clearly illustrates how the factors consumers weigh when choosing a restaurant are distributed. Distinctive features take the lead, accounting for 36.3%, followed by service and the dining environment at 26.8% and 23.8% respectively, while other factors come last at 4.7%. Taken together, the three largest items make up 86.9%.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, dining out has moved from a luxury to an everyday necessity. People now judge dining out by what it does for them rather than by what others think. Online platforms and mobile payment have made dining out quicker and easier to arrange.\n\nOn balance, this is a positive trend worth welcoming. Companies can make dining out cheaper and easier to use, so that it reaches more people. Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible. Individuals should choose what fits their own situation rather than follow the crowd. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了消费者选择餐厅时考虑的因素的分布情况。餐厅特色遥遥领先，占36.3%；其后是服务和就餐环境，分别占26.8%和23.8%；而其他因素位居最后，占4.7%。前三项加起来占86.9%。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，外出就餐已从奢侈品变成日常必需。如今，人们评判外出就餐的标准是它对自己有何益处，而非他人的看法。线上平台和移动支付使外出就餐变得更快、更方便。\n\n总的来说，这是一个值得欢迎的积极趋势。企业可以让外出就餐更低价、更便捷，从而让更多人能够使用。平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。个人应按自身情况选择，而不是随大流。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_cn": "该饼状图清晰地展示了消费者选择餐厅时考虑的因素的分布情况。餐厅特色遥遥领先，占36.3%；其后是服务和就餐环境，分别占26.8%和23.8%；而其他因素位居最后，占4.7%。前三项加起来占86.9%。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，外出就餐已从奢侈品变成日常必需。如今，人们评判外出就餐的标准是它能为自己带来什么，而非他人的看法。线上平台和移动支付使外出就餐变得更快、更方便。\n\n总的来说，这是一个值得欢迎的积极趋势。企业可以让外出就餐更低价、更便捷，从而让更多人能够使用。平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。个人应按自身情况选择，而不是随大流。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "饼图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：distinctive features 占 36.3%；service 占 26.8%；the dining environment 占 23.8%；other factors 占 4.7%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4675,7 +4675,7 @@
      },
      {
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-      "cn": "如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。",
+      "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
       "src": "第二段 · 原因（机制句池） · 功能句4"
      },
      {

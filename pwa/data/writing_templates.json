@@ -933,97 +933,113 @@
      "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
      "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
      "freq": 3,
-     "tag": "收入"
+     "tag": "收入",
+     "fit": 6
     },
     {
      "en": "Technology has cut the cost of {{topic}} and put it within reach of far more people.",
      "cn": "技术进步压低了 {{topic}} 的成本，让更多人能够负担得起。",
      "freq": 3,
-     "tag": "成本"
+     "tag": "成本",
+     "fit": 1
     },
     {
      "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
      "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
      "freq": 3,
-     "tag": "便利"
+     "tag": "便利",
+     "fit": 6
     },
     {
      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-     "cn": "如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。",
+     "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
      "freq": 3,
-     "tag": "观念"
+     "tag": "观念",
+     "fit": 15
     },
     {
      "en": "The figure for {{item1}} climbed from {{num1}} to {{num2}}, which matches the overall trend.",
      "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，与整体趋势一致。",
      "freq": 3,
-     "tag": "数据回扣"
+     "tag": "数据回扣",
+     "fit": 0
     },
     {
      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
      "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
      "freq": 2,
-     "tag": "公共投入"
+     "tag": "公共投入",
+     "fit": 7
     },
     {
      "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
      "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
      "freq": 2,
-     "tag": "城市化"
+     "tag": "城市化",
+     "fit": 3
     },
     {
      "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
      "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
      "freq": 2,
-     "tag": "久坐"
+     "tag": "久坐",
+     "fit": 3
     },
     {
      "en": "Longer working hours have made people value the little free time they have.",
      "cn": "工作时间变长，人们更看重仅有的空闲时间。",
      "freq": 2,
-     "tag": "职场时间"
+     "tag": "职场时间",
+     "fit": 4
     },
     {
      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-     "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可有可无的额外活动。",
+     "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
      "freq": 2,
-     "tag": "学校"
+     "tag": "学校",
+     "fit": 6
     },
     {
      "en": "Old traditions survive only when people find new ways to pass them on.",
      "cn": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。",
      "freq": 2,
-     "tag": "文化传承"
+     "tag": "文化传承",
+     "fit": 2
     },
     {
      "en": "Longer life expectancy has changed how families plan for their later years.",
      "cn": "寿命的延长改变了家庭对晚年的规划。",
      "freq": 2,
-     "tag": "人口结构"
+     "tag": "人口结构",
+     "fit": 1
     },
     {
      "en": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.",
      "cn": "国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。",
      "freq": 2,
-     "tag": "国产替代"
+     "tag": "国产替代",
+     "fit": 1
     },
     {
      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
      "freq": 2,
-     "tag": "职场流动"
+     "tag": "职场流动",
+     "fit": 4
     },
     {
      "en": "Employers now look for experience as much as for grades.",
      "cn": "如今用人单位既看重成绩，也看重经验。",
      "freq": 1,
-     "tag": "就业门槛"
+     "tag": "就业门槛",
+     "fit": 3
     },
     {
      "en": "Daily life has become more rushed, and {{topic}} is one of the few things people still fit in.",
      "cn": "生活节奏不断加快，{{topic}} 成了人们为数不多还愿意抽出时间去做的事。",
      "freq": 1,
-     "tag": "生活节奏"
+     "tag": "生活节奏",
+     "fit": 0
     }
    ],
    "phrases": [
@@ -1148,67 +1164,78 @@
      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
      "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
      "freq": 3,
-     "tag": "观念"
+     "tag": "观念",
+     "fit": 4
     },
     {
      "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
      "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
      "freq": 3,
-     "tag": "政府"
+     "tag": "政府",
+     "fit": 4
     },
     {
      "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
      "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
      "freq": 3,
-     "tag": "学校"
+     "tag": "学校",
+     "fit": 4
     },
     {
      "en": "Families matter most: children copy what adults do far more than what they are told.",
      "cn": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。",
      "freq": 3,
-     "tag": "家庭"
+     "tag": "家庭",
+     "fit": 2
     },
     {
      "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
      "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
      "freq": 3,
-     "tag": "企业/平台"
+     "tag": "企业/平台",
+     "fit": 3
     },
     {
      "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
      "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
      "freq": 3,
-     "tag": "媒体"
+     "tag": "媒体",
+     "fit": 3
     },
     {
      "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
      "cn": "个人应按自身情况选择，而不是随大流。",
      "freq": 3,
-     "tag": "个人"
+     "tag": "个人",
+     "fit": 6
     },
     {
      "en": "Clear rules and steady funding matter more than one-off campaigns.",
      "cn": "明确的规则和持续投入，比一次性活动更重要。",
      "freq": 2,
-     "tag": "政府·长效"
+     "tag": "政府·长效",
+     "fit": 5
     },
     {
      "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
      "cn": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。",
      "freq": 2,
-     "tag": "平台·设计"
+     "tag": "平台·设计",
+     "fit": 2
     },
     {
      "en": "Documentaries and short videos can show how {{topic}} works in real life.",
      "cn": "纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。",
      "freq": 2,
-     "tag": "媒体·展示"
+     "tag": "媒体·展示",
+     "fit": 1
     },
     {
      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
-     "cn": "小习惯的力量不可小觑：每天坚持一点 {{topic}}，一年下来就会发生改变。",
+     "cn": "小习惯很重要：每天一点 {{topic}}，日积月累一年下来就不一样。",
      "freq": 2,
-     "tag": "个人·习惯"
+     "tag": "个人·习惯",
+     "fit": 3
     }
    ],
    "priority": true,
@@ -1324,67 +1351,78 @@
      "en": "Authorities should set clear limits and make sure they are actually enforced.",
      "cn": "政府应设定明确的上限，并确保真正执行。",
      "freq": 3,
-     "tag": "政府"
+     "tag": "政府",
+     "fit": 0
     },
     {
      "en": "Schools and families should warn young people before the habit takes hold.",
      "cn": "学校和家庭应在坏习惯形成之前提醒年轻人。",
      "freq": 3,
-     "tag": "学校/家庭"
+     "tag": "学校/家庭",
+     "fit": 0
     },
     {
      "en": "Parents who ignore their own habits cannot expect children to do better.",
      "cn": "父母若放任自己的坏习惯，就别指望孩子能做得更好。",
      "freq": 3,
-     "tag": "家庭"
+     "tag": "家庭",
+     "fit": 0
     },
     {
      "en": "Platforms should label or restrict content that encourages misuse.",
      "cn": "平台应对诱导滥用的内容加以标注或限制。",
      "freq": 3,
-     "tag": "企业/平台"
+     "tag": "企业/平台",
+     "fit": 0
     },
     {
      "en": "Media should report the real risks rather than treat them as scare stories.",
      "cn": "媒体应报道真实风险，而不是把它当成吓人的故事。",
      "freq": 3,
-     "tag": "媒体"
+     "tag": "媒体",
+     "fit": 0
     },
     {
      "en": "Individuals need to watch their own habits instead of assuming they are safe.",
      "cn": "个人需要留意自己的习惯，而不是想当然认为没问题。",
      "freq": 3,
-     "tag": "个人"
+     "tag": "个人",
+     "fit": 1
     },
     {
      "en": "Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.",
      "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
      "freq": 2,
-     "tag": "企业·雇主"
+     "tag": "企业·雇主",
+     "fit": 2
     },
     {
      "en": "A company that ignores this gap will lose the very people it most depends on.",
      "cn": "忽视这一差距的公司，会失去它最依赖的那批人。",
      "freq": 2,
-     "tag": "企业·管理"
+     "tag": "企业·管理",
+     "fit": 2
     },
     {
      "en": "Classes on {{topic}} can help students tell safe use from misuse.",
      "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
      "freq": 2,
-     "tag": "学校·课程"
+     "tag": "学校·课程",
+     "fit": 0
     },
     {
      "en": "A stable routine at home leaves less room for the problem to grow.",
      "cn": "家中规律的生活作息，会让问题更难滋生。",
      "freq": 2,
-     "tag": "家庭·作息"
+     "tag": "家庭·作息",
+     "fit": 0
     },
     {
      "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
      "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
      "freq": 2,
-     "tag": "个人·记录"
+     "tag": "个人·记录",
+     "fit": 3
     }
    ],
    "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。",

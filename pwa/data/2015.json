@@ -4670,7 +4670,7 @@
    },
    "apply": {
     "apply_en": "The pie chart above clearly illustrates how Spring Festival spending is distributed. Gifts for family and friends take the lead, accounting for 40%, followed by dinners with relatives and transportation at 20% and 20% respectively, while other spending comes last at 20%. Taken together, the three largest items make up 80%.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. People now judge New Year gifts by what it does for them rather than by what others think. Online platforms and mobile payment have made New Year gifts quicker and easier to arrange. Old traditions survive only when people find new ways to pass them on.\n\nOn balance, this is a positive trend worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，新年礼物已从奢侈品变成日常必需。如今，人们评判新年礼物的标准是它对自己有何益处，而非他人的看法。线上平台和移动支付使新年礼物变得更快、更方便。只有当人们找到新的方式来传承旧传统时，它们才能得以延续。\n\n总的来说，这是一个值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把节日花销当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，新年礼物已从奢侈品变成日常必需。如今，人们评判新年礼物的标准是它能为自己带来什么，而非他人的看法。线上平台和移动支付使新年礼物变得更快、更方便。只有当人们找到新的方式来传承旧传统时，它们才能得以延续。\n\n总的来说，这是一个值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把节日花销当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：gifts for family and friends 占 40%；dinners with relatives 占 20%；transportation 占 20%；other spending 占 20%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4786,7 +4786,7 @@
      },
      {
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-      "cn": "如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。",
+      "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
       "src": "第二段 · 原因（机制句池） · 功能句4"
      },
      {
