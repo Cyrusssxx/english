@@ -4822,7 +4822,7 @@
    },
    "apply": {
     "apply_en": "The bar chart above clearly illustrates the changes in express delivery volume from 2018 to 2020. During this period, the rural figure rose sharply from 12 billion pieces to 30 billion pieces. By contrast, the figure for the national total saw a modest increase, climbing from 51 billion pieces to 83 billion pieces over the same period. The gap between the two widened over the period.\n\nThis phenomenon can be attributed to a combination of factors. Technology has cut the cost of online shopping and put it within reach of far more people. Online platforms and mobile payment have made online shopping quicker and easier to arrange. Cities have absorbed millions of new residents, and demand for online shopping has grown with them.\n\nOn balance, this is a positive trend worth welcoming. Government can fund public facilities so that online shopping is not limited to those who can pay. Companies can make online shopping cheaper and easier to use, so that it reaches more people. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了2018年到2020年期间快递业务量的变化。在此期间，农村快递量由120亿件大幅升至300亿件。相比之下，全国总量的数字增幅温和，由510亿件增至830亿件。两者的差距在这一时期拉大了。\n\n这一现象是多种因素共同作用的结果。技术把网购的成本压了下来，让更多人够得着。线上平台和移动支付让网购变得更快更方便。城市吸纳了大量新居民，网购的需求随之增长。\n\n总体来看，这是值得欢迎的积极趋势。政府可以投入公共设施，让网购不只属于付得起钱的人。企业可以把网购做得更便宜好用，让它覆盖更多人。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+    "apply_cn": "该柱状图清晰地展示了2018年到2020年期间快递业务量的变化。在此期间，农村快递量从120亿件急剧增至300亿件。相比之下，全国总量仅略有增加，从510亿件攀升至830亿件。两者的差距在这一时期拉大了。\n\n这一现象可归因于多种因素的综合作用。技术进步压低了网购的成本，让更多人能够负担得起。线上平台和移动支付使网购变得更快、更方便。随着城市吸纳了大量新居民，网购的需求也随之增长。\n\n总的来说，这是一个值得欢迎的积极趋势。政府可以为公共设施提供资金，使网购不再局限于那些有支付能力的人。企业可以让网购更低价、更便捷，从而让更多人能够使用。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、都升，幅度不同（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
      "数据要点：the rural figure 12 billion pieces → 30 billion pieces；the national total 51 billion pieces → 83 billion pieces。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4912,12 +4912,12 @@
      },
      {
       "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
-      "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
+      "cn": "在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。",
       "src": "动态图表第一段 · 模板第2句"
      },
      {
       "en": "By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
-      "cn": "相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
+      "cn": "相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。",
       "src": "动态图表第一段 · 模板第3句"
      },
      {
@@ -4927,42 +4927,42 @@
      },
      {
       "en": "This phenomenon can be attributed to a combination of factors.",
-      "cn": "这一现象是多种因素共同作用的结果。",
+      "cn": "这一现象可归因于多种因素的综合作用。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
       "en": "Technology has cut the cost of {{topic}} and put it within reach of far more people.",
-      "cn": "技术把 {{topic}} 的成本压了下来，让更多人够得着。",
+      "cn": "技术进步压低了 {{topic}} 的成本，让更多人能够负担得起。",
       "src": "第二段 · 原因（机制句池） · 功能句2"
      },
      {
       "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
-      "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+      "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
       "src": "第二段 · 原因（机制句池） · 功能句3"
      },
      {
       "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
-      "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+      "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
       "src": "第二段 · 原因（机制句池） · 功能句7"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",
-      "cn": "总体来看，这是值得欢迎的积极趋势。",
+      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
       "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-      "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
+      "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
       "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
      },
      {
       "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
-      "cn": "企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。",
+      "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
       "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
      },
      {
       "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]

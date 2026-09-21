@@ -63,7 +63,7 @@ DYN_OPEN3 = sent('The {{chart}} chart above clearly illustrates the sharp contra
 DYN = [
     {'label': '① 一条线在走', 'years': '2013 · 2023',
      'en': DYN_OPEN['en'] + ' ' + 'During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.',
-     'cn': DYN_OPEN['cn'] + '在此期间，它由 {{num1}} 稳步升至 {{num2}}，全程没有明显回落。',
+     'cn': DYN_OPEN['cn'] + '在此期间，它从 {{num1}} 稳步升至 {{num2}}，始终没有明显回落。',
      'struct': [DYN_OPEN['struct'],
                 [S('During this period', 'trans'), S(', it', 't'), S(' rose steadily', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S(', without any noticeable fall', 'o'), S('.', '')]],
      'alts': {'rose steadily': 'climbed steadily / kept rising'},
@@ -71,7 +71,7 @@ DYN = [
               'from freshman year to senior year. During this period, it rose steadily from 67.77% to 88.24%, without any noticeable fall.')},
     {'label': '② 两条都在涨', 'years': '2010 · 2017 · 2022',
      'en': DYN_OPEN['en'] + ' ' + 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.',
-     'cn': DYN_OPEN['cn'] + '在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。',
+     'cn': DYN_OPEN['cn'] + '在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。',
      'struct': [DYN_OPEN['struct'],
                 [S('During this period', 'trans'), S(', {{item1}}', 't'), S(' rose sharply', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S('.', '')],
                 [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' saw', 'p'), S(' a modest increase', 'o'), S(', climbing from {{num3}} to {{num4}} over the same period', 'o'), S('.', '')]],
@@ -82,7 +82,7 @@ DYN = [
               '1 billion over the same period.')},
     {'label': '③ 一升一降', 'years': '2011 · 2014 · 2019',
      'en': DYN_OPEN3['en'] + ' ' + 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.',
-     'cn': DYN_OPEN3['cn'] + '在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。',
+     'cn': DYN_OPEN3['cn'] + '在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 则稳步下降，从 {{num3}} 降至 {{num4}}。',
      'struct': [DYN_OPEN3['struct'],
                 [S('During this period', 'trans'), S(', {{item1}}', 't'), S(' rose sharply', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S('.', '')],
                 [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' saw', 'p'), S(' a steady decline', 'o'), S(', falling from {{num3}} to {{num4}}', 'o'), S('.', '')]],
@@ -92,7 +92,7 @@ DYN = [
               'Japanese brands saw a steady decline, falling from 35% to 26%.')},
     {'label': '④ 先稳后急（图有分段就换这套）', 'years': '2013 · 2023',
      'en': DYN_OPEN['en'] + ' ' + 'From {{time1}} to {{time3}}, it rose steadily from {{num1}} to {{num3}}, and then climbed sharply to {{num2}}.',
-     'cn': DYN_OPEN['cn'] + '{{time1}} 到 {{time3}} 期间，它由 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。',
+     'cn': DYN_OPEN['cn'] + '{{time1}} 到 {{time3}} 期间，它从 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。',
      'struct': [DYN_OPEN['struct'],
                 [S('From {{time1}} to {{time3}}', 'o'), S(', it', 't'), S(' rose steadily', 'p'), S(' from {{num1}} to {{num3}}', 'o'),
                  S(', and then', 'trans'), S(' climbed sharply', 'p'), S(' to {{num2}}', 'o'), S('.', '')]],
@@ -104,7 +104,7 @@ DYN = [
 # ══════════ 二、第二段：1 句引入 + 机制句池 ══════════
 # 万能开头句（2026-09-16 审计后定稿）：a combination of factors 不承诺条数，17 年全部成立
 PARA2_SKEL = sent('This phenomenon can be attributed to a combination of factors.',
-                  '这一现象是多种因素共同作用的结果。',
+                  '这一现象可归因于多种因素的综合作用。',
                   [[S('This phenomenon', 't'), S(' can be attributed to', 'p'), S(' a combination of factors', 'o'), S('.', '')]])
 PARA2_SKEL['alts'] = {'can be attributed to': 'is largely attributable to（加长版）/ stems from',
                       'a combination of factors': 'two major factors（写 2 条）/ three major factors（写 3 条）/ several major factors（写 4 条）'}
@@ -113,59 +113,59 @@ MECH = [
     (3, '收入', 'As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.',
      '随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。'),
     (3, '成本', 'Technology has cut the cost of {{topic}} and put it within reach of far more people.',
-     '技术把 {{topic}} 的成本压了下来，让更多人够得着。'),
+     '技术进步压低了 {{topic}} 的成本，让更多人能够负担得起。'),
     (3, '便利', 'Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.',
-     '线上平台和移动支付让 {{topic}} 变得更快更方便。'),
+     '线上平台和移动支付使 {{topic}} 变得更快、更方便。'),
     (3, '观念', 'People now judge {{topic}} by what it does for them rather than by what others think.',
-     '人们现在看 {{topic}} 好不好用，而不是看别人怎么想。'),
+     '如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。'),
     (3, '数据回扣', 'The figure for {{item1}} climbed from {{num1}} to {{num2}}, which matches the overall trend.',
      '{{item1}} 从 {{num1}} 升到 {{num2}}，与整体趋势一致。'),
     (2, '公共投入', 'Public spending on infrastructure has made {{topic}} far more widely available.',
-     '公共基础设施投入让 {{topic}} 的覆盖面大大增加。'),
+     '基础设施方面的公共支出使 {{topic}} 更加普及。'),
     (2, '城市化', 'Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.',
-     '城市吸纳了大量新居民，{{topic}} 的需求随之增长。'),
+     '随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。'),
     (2, '久坐', 'Sitting all day has turned {{topic}} from a hobby into a practical need.',
-     '整天坐着，让 {{topic}} 从爱好变成了实际需要。'),
+     '长期久坐使 {{topic}} 从爱好变成了切实的需求。'),
     (2, '职场时间', 'Longer working hours have made people value the little free time they have.',
      '工作时间变长，人们更看重仅有的空闲时间。'),
     (2, '学校', 'Schools now treat {{topic}} as part of the routine rather than an optional extra.',
-     '学校现在把 {{topic}} 当成日常安排，而不是可选项。'),
+     '学校现在将 {{topic}} 视为常规活动的一部分，而非可有可无的额外活动。'),
     (2, '文化传承', 'Old traditions survive only when people find new ways to pass them on.',
-     '老传统只有在被不断重新传递时才能活下来。'),
+     '只有当人们找到新的方式来传承旧传统时，它们才能得以延续。'),
     (2, '人口结构', 'Longer life expectancy has changed how families plan for their later years.',
-     '寿命延长，改变了家庭对晚年的安排。'),
+     '寿命的延长改变了家庭对晚年的规划。'),
     (2, '国产替代', 'Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.',
-     '国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。'),
+     '国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。'),
     (2, '职场流动', 'Young people change jobs far more often than their parents did, so loyalty works differently.',
-     '年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。'),
+     '如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。'),
     (1, '就业门槛', 'Employers now look for experience as much as for grades.',
-     '现在用人单位既看成绩，也看经验。'),
+     '如今用人单位既看重成绩，也看重经验。'),
     (1, '生活节奏', 'Daily life has become more rushed, and {{topic}} is one of the few things people still fit in.',
-     '生活节奏越来越快，{{topic}} 是少数还能挤进去的事。'),
+     '生活节奏不断加快，{{topic}} 成了人们为数不多还愿意抽出时间去做的事。'),
 ]
 
 # ══════════ 三、第三段：立场句 + 主体句池 + 收束句 ══════════
 P3_POS = [
     sent('On balance, this is a positive trend worth welcoming.',
-         '总体来看，这是值得欢迎的积极趋势。',
+         '总的来说，这是一个值得欢迎的积极趋势。',
          [[S('On balance', 'trans'), S(', this', 't'), S(' is', 'p'), S(' a positive trend worth welcoming', 'o'), S('.', '')]]),
     sent('Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.',
-         '考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。',
+         '鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。',
          [[S('Given the momentum behind it', 'trans'), S(', there', 't'), S(' is', 'p'), S(' every reason to believe that it will continue in the years ahead', 'o'), S('.', '')]]),
 ]
 
 # 第三段拼装框架（与 P2 同款）：立场 → 主体/对策 → 收束（用户反馈「第三段怪怪的」= 缺拼装视图 + trend 重复）
 P3_FW_POS = [
-    {'en': 'On balance, this is a positive trend worth welcoming.', 'trans': '总体来看，这是值得欢迎的积极趋势。',
+    {'en': 'On balance, this is a positive trend worth welcoming.', 'trans': '总的来说，这是一个值得欢迎的积极趋势。',
      'cn': '立场句：先亮态度，正面题直接用。'},
     {'en': 'To make the most of this trend, + 主体句 ①', 'trans': '要充分利用这一趋势，……',
      'cn': '主体句：谁来做——政府 / 学校 / 家庭 / 企业 / 媒体 / 个人，按题目挑 1~2 个；衔接词自带目的感，不用再写 Also。'},
     {'en': 'Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.',
-     'trans': '考虑到它背后的推动力，完全有理由相信它会在未来几年持续下去。',
+     'trans': '鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。',
      'cn': '收束句：展望收尾，主体句写几条都接得住。'},
 ]
 P3_FW_NEG = [
-    {'en': 'On balance, the figures point to a problem worth taking seriously.', 'trans': '总体来看，这些数据指向一个值得认真对待的问题。',
+    {'en': 'On balance, the figures point to a problem worth taking seriously.', 'trans': '总的来说，这些数据指向一个值得认真对待的问题。',
      'cn': '立场句：负面题直接用。'},
     {'en': 'To reverse this trend, + 对策句 ①', 'trans': '要想扭转这一趋势，……',
      'cn': '对策句：谁来管——政府 / 学校 / 家庭 / 平台 / 个人，挑 1~2 个主体给对策。'},
@@ -175,7 +175,7 @@ P3_FW_NEG = [
 ]
 P3_NEG = [
     sent('On balance, the figures point to a problem worth taking seriously.',
-         '总体来看，这些数据指向一个不容忽视的问题。',
+         '总的来说，这些数据指向一个不容忽视的问题。',
          [[S('On balance', 'trans'), S(', the figures', 't'), S(' point to', 'p'), S(' a problem worth taking seriously', 'o'), S('.', '')]]),
     sent('Unless effective measures are taken, it may well get worse.',
          '若不采取有效措施，问题很可能进一步恶化。',
@@ -197,7 +197,7 @@ P3_LINKERS = [
 # 条数规则（2026-09-16 审计 17 年方案）：适配机制句全是 3~4 条、0 年两条；示范文实写 3 条(5 篇)/4 条(12 篇)
 # → 引入句的条数词必须跟正文条数走；拿不准就用 a combination of factors（不承诺条数）
 P2_FRAMEWORK = [
-    {'en': 'This phenomenon can be attributed to a combination of factors.', 'trans': '这一现象是多种因素共同作用的结果。',
+    {'en': 'This phenomenon can be attributed to a combination of factors.', 'trans': '这一现象可归因于多种因素的综合作用。',
      'cn': '通用开头句：不承诺条数，17 年任何图表都成立；想点明条数再换 two / three / several major factors（见下方同义升级，须与正文条数一致）。'},
     {'en': 'Primary among these is + 机制句 ①', 'trans': '其中，首要的一条是……',
      'cn': '第 1 条：高级衔接词开头，接句池里最有力的原因（收入 / 成本 / 观念…）。'},
@@ -209,29 +209,29 @@ P2_FRAMEWORK = [
 
 # 主体句池（沿用旧版并按更自然的口径重写两句；第一位是「通用档」）
 SUBJ_POS = [
-    (3, '观念', 'What matters most is whether families and schools treat {{topic}} as a normal part of life.', '最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。'),
-    (3, '政府', 'Government can fund public facilities so that {{topic}} is not limited to those who can pay.', '政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。'),
-    (3, '学校', 'Schools can build {{topic}} into daily routines instead of treating it as an extra.', '学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。'),
-    (3, '家庭', 'Families matter most: children copy what adults do far more than what they are told.', '家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。'),
-    (3, '企业/平台', 'Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.', '企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。'),
+    (3, '观念', 'What matters most is whether families and schools treat {{topic}} as a normal part of life.', '最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。'),
+    (3, '政府', 'Government can fund public facilities so that {{topic}} is not limited to those who can pay.', '政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。'),
+    (3, '学校', 'Schools can build {{topic}} into daily routines instead of treating it as an extra.', '学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。'),
+    (3, '家庭', 'Families matter most: children copy what adults do far more than what they are told.', '家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。'),
+    (3, '企业/平台', 'Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.', '企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。'),
     (3, '媒体', 'Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.', '媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。'),
     (3, '个人', 'Individuals should choose what fits their own situation rather than follow the crowd.', '个人应按自身情况选择，而不是随大流。'),
     (2, '政府·长效', 'Clear rules and steady funding matter more than one-off campaigns.', '明确的规则和持续投入，比一次性活动更重要。'),
-    (2, '平台·设计', 'Platforms should design simple, honest services instead of ones that hold users\u2019 attention for as long as possible.', '平台应把服务做得简单诚实，而不是想方设法长时间留住用户。'),
-    (2, '媒体·展示', 'Documentaries and short videos can show how {{topic}} works in real life.', '纪录片和短视频能让人看到 {{topic}} 在现实中怎样运作。'),
-    (2, '个人·习惯', 'Small habits matter: a little {{topic}} every day adds up over a year.', '小习惯很重要：每天一点 {{topic}}，一年下来就不一样。'),
+    (2, '平台·设计', 'Platforms should design simple, honest services instead of ones that hold users\u2019 attention for as long as possible.', '平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。'),
+    (2, '媒体·展示', 'Documentaries and short videos can show how {{topic}} works in real life.', '纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。'),
+    (2, '个人·习惯', 'Small habits matter: a little {{topic}} every day adds up over a year.', '小习惯的力量不可小觑：每天坚持一点 {{topic}}，一年下来就会发生改变。'),
 ]
 SUBJ_NEG = [
     (3, '政府', 'Authorities should set clear limits and make sure they are actually enforced.', '政府应设定明确的上限，并确保真正执行。'),
-    (3, '学校/家庭', 'Schools and families should warn young people before the habit takes hold.', '学校和家庭应在习惯养成之前提醒年轻人。'),
-    (3, '家庭', 'Parents who ignore their own habits cannot expect children to do better.', '父母自己不注意，就别指望孩子做得好。'),
+    (3, '学校/家庭', 'Schools and families should warn young people before the habit takes hold.', '学校和家庭应在坏习惯形成之前提醒年轻人。'),
+    (3, '家庭', 'Parents who ignore their own habits cannot expect children to do better.', '父母若放任自己的坏习惯，就别指望孩子能做得更好。'),
     (3, '企业/平台', 'Platforms should label or restrict content that encourages misuse.', '平台应对诱导滥用的内容加以标注或限制。'),
     (3, '媒体', 'Media should report the real risks rather than treat them as scare stories.', '媒体应报道真实风险，而不是把它当成吓人的故事。'),
     (3, '个人', 'Individuals need to watch their own habits instead of assuming they are safe.', '个人需要留意自己的习惯，而不是想当然认为没问题。'),
     (2, '企业·雇主', 'Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.', '雇主应弄清为什么资深员工最不满意，而不是只看总体数字。'),
     (2, '企业·管理', 'A company that ignores this gap will lose the very people it most depends on.', '忽视这一差距的公司，会失去它最依赖的那批人。'),
     (2, '学校·课程', 'Classes on {{topic}} can help students tell safe use from misuse.', '关于 {{topic}} 的课程能帮学生分清正常使用和滥用。'),
-    (2, '家庭·作息', 'A stable routine at home leaves less room for the problem to grow.', '家里作息稳定，问题就不容易滋生。'),
+    (2, '家庭·作息', 'A stable routine at home leaves less room for the problem to grow.', '家中规律的生活作息，会让问题更难滋生。'),
     (2, '个人·记录', 'Keeping a simple record of daily use is often enough to spot the problem early.', '简单记录一下每天的使用情况，往往就能及早发现问题。'),
 ]
 
@@ -255,7 +255,7 @@ def main():
                  'at 33% and 15% respectively, while fostering independence comes last at 6%.')
     s['sentences'] = [
         {'en': 'Taken together, the three largest items make up {{percent total}}.', 'cn': '前三项加起来占 {{percent total}}。', 'freq': 3, 'tag': '合计'},
-        {'en': 'The pattern is clear: a few items dominate the rest.', 'cn': '格局很清楚：少数几项占了大头。', 'freq': 2, 'tag': '集中度'},
+        {'en': 'The pattern is clear: a few items dominate the rest.', 'cn': '整体格局清晰：少数几项占据了主导地位。', 'freq': 2, 'tag': '集中度'},
         {'en': 'The gap between the largest and the smallest is wide.', 'cn': '最大项与最小项之间差距很大。', 'freq': 2, 'tag': '差距'},
         {'en': 'The figure varies sharply from group to group: it stands at {{percent1}} for {{item1}}, but falls to just {{percent3}} for {{item3}}.',
          'cn': '组与组之间差别悬殊：{{item1}} 高达 {{percent1}}，而 {{item3}} 只有 {{percent3}}。', 'freq': 3, 'tag': '交叉表·组间对比'},

@@ -4160,7 +4160,7 @@
    },
    "apply": {
     "apply_en": "The table above clearly illustrates how employee dissatisfaction is distributed. The figure varies sharply from group to group: it stands at 64% for the 41-to-50 age group, but falls to just 10% for the group over 50. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Longer working hours have made people value the little free time they have. Young people change jobs far more often than their parents did, so loyalty works differently. Employers now look for experience as much as for grades. People now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures point to a problem worth taking seriously. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Individuals need to watch their own habits instead of assuming they are safe. Unless effective measures are taken, it may well get worse.",
-    "apply_cn": "该表格清晰地展示了员工的不满意比例的分布情况。组与组之间差别悬殊：41~50岁组高达64%，而50岁以上组只有10%。最大项与最小项之间差距很大。\n\n这一现象是多种因素共同作用的结果。工作时间变长，人们更看重仅有的空闲时间。年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。现在用人单位既看成绩，也看经验。人们现在看工作满意度好不好用，而不是看别人怎么想。\n\n总体来看，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。个人需要留意自己的习惯，而不是想当然认为没问题。若不采取有效措施，问题很可能进一步恶化。",
+    "apply_cn": "该表格清晰地展示了员工的不满意比例的分布情况。组与组之间差别悬殊：41~50岁组高达64%，而50岁以上组只有10%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。工作时间变长，人们更看重仅有的空闲时间。如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。如今用人单位既看重成绩，也看重经验。如今，人们评判工作满意度的标准是它对自己有何益处，而非他人的看法。\n\n总的来说，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。个人需要留意自己的习惯，而不是想当然认为没问题。若不采取有效措施，问题很可能进一步恶化。",
     "tips": [
      "表格、分布比高低（3 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：the 41-to-50 age group 占 64%；those aged 40 or younger 占 33.3%；the group over 50 占 10%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4248,7 +4248,7 @@
      },
      {
       "en": "This phenomenon can be attributed to a combination of factors.",
-      "cn": "这一现象是多种因素共同作用的结果。",
+      "cn": "这一现象可归因于多种因素的综合作用。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
@@ -4258,22 +4258,22 @@
      },
      {
       "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-      "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
       "src": "第二段 · 原因（机制句池） · 功能句14"
      },
      {
       "en": "Employers now look for experience as much as for grades.",
-      "cn": "现在用人单位既看成绩，也看经验。",
+      "cn": "如今用人单位既看重成绩，也看重经验。",
       "src": "第二段 · 原因（机制句池） · 功能句15"
      },
      {
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "cn": "如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。",
       "src": "第二段 · 原因（机制句池） · 功能句4"
      },
      {
       "en": "On balance, the figures point to a problem worth taking seriously.",
-      "cn": "总体来看，这些数据指向一个不容忽视的问题。",
+      "cn": "总的来说，这些数据指向一个不容忽视的问题。",
       "src": "第三段 · 负面版（立场 + 对策） · 模板第1句"
      },
      {

@@ -278,7 +278,7 @@
     },
     {
      "en": "The pattern is clear: a few items dominate the rest.",
-     "cn": "格局很清楚：少数几项占了大头。",
+     "cn": "整体格局清晰：少数几项占据了主导地位。",
      "freq": 2,
      "tag": "集中度"
     },
@@ -399,7 +399,7 @@
    "title": "动态图表第一段",
    "subtitle": "适用：折线 / 柱状图中事物随时间变化 —— 先看走势，选下面 3 套骨架之一",
    "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
-   "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
+   "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。",
    "note": "先看走势再选骨架：只有 1 个事物用 ①；都涨但快慢不同用 ②；有涨有跌用 ③。三个事物时，③ 的第 2 句后面接句池里的 By contrast 那句。",
    "sentences": [
     {
@@ -559,7 +559,7 @@
      "label": "① 一条线在走",
      "years": "2013 · 2023",
      "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.",
-     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，它由 {{num1}} 稳步升至 {{num2}}，全程没有明显回落。",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，它从 {{num1}} 稳步升至 {{num2}}，始终没有明显回落。",
      "struct": [
       [
        [
@@ -619,7 +619,7 @@
      "label": "② 两条都在涨",
      "years": "2010 · 2017 · 2022",
      "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
-     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字增幅温和，由 {{num3}} 增至 {{num4}}。",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。",
      "struct": [
       [
        [
@@ -704,7 +704,7 @@
      "label": "③ 一升一降",
      "years": "2011 · 2014 · 2019",
      "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.",
-     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 则稳步下降，从 {{num3}} 降至 {{num4}}。",
      "struct": [
       [
        [
@@ -793,7 +793,7 @@
      "label": "④ 先稳后急（图有分段就换这套）",
      "years": "2013 · 2023",
      "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. From {{time1}} to {{time3}}, it rose steadily from {{num1}} to {{num3}}, and then climbed sharply to {{num2}}.",
-     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{time1}} 到 {{time3}} 期间，它由 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{time1}} 到 {{time3}} 期间，它从 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。",
      "struct": [
       [
        [
@@ -866,7 +866,7 @@
    "subtitle": "不背整段：1 句引入 + 从下面 16 条机制里挑 3 条（每条都是一个完整原因）",
    "group": "大作文 · 第一段（图表描述）",
    "en": "This phenomenon can be attributed to a combination of factors.",
-   "cn": "这一现象是多种因素共同作用的结果。",
+   "cn": "这一现象可归因于多种因素的综合作用。",
    "en_struct": [
     [
      [
@@ -908,7 +908,7 @@
    "framework": [
     {
      "en": "This phenomenon can be attributed to a combination of factors.",
-     "trans": "这一现象是多种因素共同作用的结果。",
+     "trans": "这一现象可归因于多种因素的综合作用。",
      "cn": "通用开头句：不承诺条数，17 年任何图表都成立；想点明条数再换 two / three / several major factors（见下方同义升级，须与正文条数一致）。"
     },
     {
@@ -937,19 +937,19 @@
     },
     {
      "en": "Technology has cut the cost of {{topic}} and put it within reach of far more people.",
-     "cn": "技术把 {{topic}} 的成本压了下来，让更多人够得着。",
+     "cn": "技术进步压低了 {{topic}} 的成本，让更多人能够负担得起。",
      "freq": 3,
      "tag": "成本"
     },
     {
      "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
-     "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+     "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
      "freq": 3,
      "tag": "便利"
     },
     {
      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-     "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+     "cn": "如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。",
      "freq": 3,
      "tag": "观念"
     },
@@ -961,19 +961,19 @@
     },
     {
      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
-     "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+     "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
      "freq": 2,
      "tag": "公共投入"
     },
     {
      "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
-     "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+     "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
      "freq": 2,
      "tag": "城市化"
     },
     {
      "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
-     "cn": "整天坐着，让 {{topic}} 从爱好变成了实际需要。",
+     "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
      "freq": 2,
      "tag": "久坐"
     },
@@ -985,43 +985,43 @@
     },
     {
      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-     "cn": "学校现在把 {{topic}} 当成日常安排，而不是可选项。",
+     "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可有可无的额外活动。",
      "freq": 2,
      "tag": "学校"
     },
     {
      "en": "Old traditions survive only when people find new ways to pass them on.",
-     "cn": "老传统只有在被不断重新传递时才能活下来。",
+     "cn": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。",
      "freq": 2,
      "tag": "文化传承"
     },
     {
      "en": "Longer life expectancy has changed how families plan for their later years.",
-     "cn": "寿命延长，改变了家庭对晚年的安排。",
+     "cn": "寿命的延长改变了家庭对晚年的规划。",
      "freq": 2,
      "tag": "人口结构"
     },
     {
      "en": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.",
-     "cn": "国产品牌把质量差距缩小了，消费者不再为外国牌子多掏钱。",
+     "cn": "国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。",
      "freq": 2,
      "tag": "国产替代"
     },
     {
      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-     "cn": "年轻人换工作比父辈频繁得多，「忠诚」的含义已不同。",
+     "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
      "freq": 2,
      "tag": "职场流动"
     },
     {
      "en": "Employers now look for experience as much as for grades.",
-     "cn": "现在用人单位既看成绩，也看经验。",
+     "cn": "如今用人单位既看重成绩，也看重经验。",
      "freq": 1,
      "tag": "就业门槛"
     },
     {
      "en": "Daily life has become more rushed, and {{topic}} is one of the few things people still fit in.",
-     "cn": "生活节奏越来越快，{{topic}} 是少数还能挤进去的事。",
+     "cn": "生活节奏不断加快，{{topic}} 成了人们为数不多还愿意抽出时间去做的事。",
      "freq": 1,
      "tag": "生活节奏"
     }
@@ -1065,7 +1065,7 @@
    "title": "第三段 · 正面版（立场 + 建议）",
    "subtitle": "立场句 + 从主体句池挑 1~2 句 + 收束句",
    "en": "On balance, this is a positive trend worth welcoming. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-   "cn": "总体来看，这是值得欢迎的积极趋势。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+   "cn": "总的来说，这是一个值得欢迎的积极趋势。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
    "note": "主体按题挑：政府（2010/2014/2017/2022/2023）、学校（2013/2019/2024/2026）、家庭（2013/2016/2026）、企业平台（2011/2012/2018/2020/2022）、媒体（2016/2017/2020/2023）、个人（2015/2016/2021/2025）。挑 2 个主体各 1 句即可，不要 6 个都写。",
    "en_struct": [
     [
@@ -1146,31 +1146,31 @@
    "sentences": [
     {
      "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
-     "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+     "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
      "freq": 3,
      "tag": "观念"
     },
     {
      "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-     "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
+     "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
      "freq": 3,
      "tag": "政府"
     },
     {
      "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
-     "cn": "学校可以把 {{topic}} 纳入日常安排，而不是当成额外任务。",
+     "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
      "freq": 3,
      "tag": "学校"
     },
     {
      "en": "Families matter most: children copy what adults do far more than what they are told.",
-     "cn": "家庭最关键：孩子模仿大人怎么做，远多于听大人怎么说。",
+     "cn": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。",
      "freq": 3,
      "tag": "家庭"
     },
     {
      "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
-     "cn": "企业可以把 {{topic}} 做得更便宜好用，让它覆盖更多人。",
+     "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
      "freq": 3,
      "tag": "企业/平台"
     },
@@ -1194,19 +1194,19 @@
     },
     {
      "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
-     "cn": "平台应把服务做得简单诚实，而不是想方设法长时间留住用户。",
+     "cn": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。",
      "freq": 2,
      "tag": "平台·设计"
     },
     {
      "en": "Documentaries and short videos can show how {{topic}} works in real life.",
-     "cn": "纪录片和短视频能让人看到 {{topic}} 在现实中怎样运作。",
+     "cn": "纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。",
      "freq": 2,
      "tag": "媒体·展示"
     },
     {
      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
-     "cn": "小习惯很重要：每天一点 {{topic}}，一年下来就不一样。",
+     "cn": "小习惯的力量不可小觑：每天坚持一点 {{topic}}，一年下来就会发生改变。",
      "freq": 2,
      "tag": "个人·习惯"
     }
@@ -1229,7 +1229,7 @@
    "framework": [
     {
      "en": "On balance, this is a positive trend worth welcoming.",
-     "trans": "总体来看，这是值得欢迎的积极趋势。",
+     "trans": "总的来说，这是一个值得欢迎的积极趋势。",
      "cn": "立场句：先亮态度，正面题直接用。"
     },
     {
@@ -1239,7 +1239,7 @@
     },
     {
      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-     "trans": "考虑到它背后的推动力，完全有理由相信它会在未来几年持续下去。",
+     "trans": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
      "cn": "收束句：展望收尾，主体句写几条都接得住。"
     }
    ]
@@ -1250,7 +1250,7 @@
    "title": "第三段 · 负面版（立场 + 对策）",
    "subtitle": "立场句 + 从主体句池挑 1~2 句 + 收束句",
    "en": "On balance, the figures point to a problem worth taking seriously. Unless effective measures are taken, it may well get worse.",
-   "cn": "总体来看，这些数据指向一个不容忽视的问题。若不采取有效措施，问题很可能进一步恶化。",
+   "cn": "总的来说，这些数据指向一个不容忽视的问题。若不采取有效措施，问题很可能进一步恶化。",
    "en_struct": [
     [
      [
@@ -1328,13 +1328,13 @@
     },
     {
      "en": "Schools and families should warn young people before the habit takes hold.",
-     "cn": "学校和家庭应在习惯养成之前提醒年轻人。",
+     "cn": "学校和家庭应在坏习惯形成之前提醒年轻人。",
      "freq": 3,
      "tag": "学校/家庭"
     },
     {
      "en": "Parents who ignore their own habits cannot expect children to do better.",
-     "cn": "父母自己不注意，就别指望孩子做得好。",
+     "cn": "父母若放任自己的坏习惯，就别指望孩子能做得更好。",
      "freq": 3,
      "tag": "家庭"
     },
@@ -1376,7 +1376,7 @@
     },
     {
      "en": "A stable routine at home leaves less room for the problem to grow.",
-     "cn": "家里作息稳定，问题就不容易滋生。",
+     "cn": "家中规律的生活作息，会让问题更难滋生。",
      "freq": 2,
      "tag": "家庭·作息"
     },
@@ -1405,7 +1405,7 @@
    "framework": [
     {
      "en": "On balance, the figures point to a problem worth taking seriously.",
-     "trans": "总体来看，这些数据指向一个值得认真对待的问题。",
+     "trans": "总的来说，这些数据指向一个值得认真对待的问题。",
      "cn": "立场句：负面题直接用。"
     },
     {

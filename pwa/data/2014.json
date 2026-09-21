@@ -4595,7 +4595,7 @@
    },
    "apply": {
     "apply_en": "The bar chart above clearly illustrates the sharp contrast in the urban and rural population between the urban population and the rural population from 1990 to 2010. During this period, the urban population rose sharply from 300 million to 666 million. By contrast, the figure for the rural population saw a steady decline, falling from 834 million to 674 million.\n\nThis phenomenon can be attributed to a combination of factors. Cities have absorbed millions of new residents, and demand for city living has grown with them. As household incomes have grown, city living has moved from a luxury to an everyday necessity. People now judge city living by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了1990年到2010年期间城乡人口在城镇人口与乡村人口之间的鲜明反差。在此期间，城镇人口由3亿大幅升至6.66亿。相比之下，乡村人口的数字稳步下降，由8.34亿降至6.74亿。\n\n这一现象是多种因素共同作用的结果。城市吸纳了大量新居民，城市生活的需求随之增长。随着家庭收入提高，城市生活已从奢侈品变成日常必需。人们现在看城市生活好不好用，而不是看别人怎么想。\n\n总体来看，这是值得欢迎的积极趋势。政府可以投入公共设施，让城市生活不只属于付得起钱的人。明确的规则和持续投入，比一次性活动更重要。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+    "apply_cn": "该柱状图清晰地展示了1990年到2010年期间城乡人口在城镇人口与乡村人口之间的鲜明反差。在此期间，城镇人口从3亿急剧增至6.66亿。相比之下，乡村人口则稳步下降，从8.34亿降至6.74亿。\n\n这一现象可归因于多种因素的综合作用。随着城市吸纳了大量新居民，城市生活的需求也随之增长。随着家庭收入提高，城市生活已从奢侈品变成日常必需。如今，人们评判城市生活的标准是它对自己有何益处，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。政府可以为公共设施提供资金，使城市生活不再局限于那些有支付能力的人。明确的规则和持续投入，比一次性活动更重要。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、一升一降（2 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
      "数据要点：the urban population 300 million → 666 million；the rural population 834 million → 674 million。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4685,22 +4685,22 @@
      },
      {
       "en": "During this period, {{item1}} rose sharply from {{num1}} to {{num2}}.",
-      "cn": "在此期间，{{item1}} 由 {{num1}} 大幅升至 {{num2}}。",
+      "cn": "在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。",
       "src": "动态图表第一段 · 模板第2句"
      },
      {
       "en": "By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.",
-      "cn": "相比之下，{{item2}} 的数字稳步下降，由 {{num3}} 降至 {{num4}}。",
+      "cn": "相比之下，{{item2}} 则稳步下降，从 {{num3}} 降至 {{num4}}。",
       "src": "动态图表第一段 · 模板第3句"
      },
      {
       "en": "This phenomenon can be attributed to a combination of factors.",
-      "cn": "这一现象是多种因素共同作用的结果。",
+      "cn": "这一现象可归因于多种因素的综合作用。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
       "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
-      "cn": "城市吸纳了大量新居民，{{topic}} 的需求随之增长。",
+      "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
       "src": "第二段 · 原因（机制句池） · 功能句7"
      },
      {
@@ -4710,17 +4710,17 @@
      },
      {
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "cn": "如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。",
       "src": "第二段 · 原因（机制句池） · 功能句4"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",
-      "cn": "总体来看，这是值得欢迎的积极趋势。",
+      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
       "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-      "cn": "政府可以投入公共设施，让 {{topic}} 不只属于付得起钱的人。",
+      "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
       "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
      },
      {
@@ -4730,7 +4730,7 @@
      },
      {
       "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]

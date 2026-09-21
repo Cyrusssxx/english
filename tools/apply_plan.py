@@ -30,8 +30,8 @@ CHART = {
                  p1=('chart_dynamic', 't1 t2 t3 f:同向不同速'),
                  p2=('para2_why', 't1 f:收入 f:便利 f:观念'),
                  p3=('para3_positive', 't1 f:政府 f:政府·长效 t2'),
-                 topic2='mobile phone use', topic2cn='手机的使用',
-                 topic3='mobile phone use', topic3cn='手机的使用',
+                 topic2='mobile phone use', topic2cn='手机',
+                 topic3='mobile phone use', topic3cn='手机',
                  pl=[]),
 
     '2011': dict(ch='bar', chcn='柱状', multi=0,

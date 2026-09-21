@@ -10251,34 +10251,149 @@
    "sample_cn": "该图表呈现了一项关于儿童户外活动益处认知的调查结果。数据显示，\"满足好奇心\"和\"提升观察能力\"被认为是最重要的益处，分别得到 54.5% 和 54.6% 受访者的认可。紧随其后，\"增强体质\"得到 33.2% 受访者的认同，而\"增进亲子互动\"得到 31.2% 的认同。\n\n这一数据揭示了家长关注点的深刻转变——他们更看重认知与探索能力的发展，而非单纯的体能成果。对好奇心和观察力的高度重视，表明人们意识到户外环境是重要的非结构化课堂，孩子们在探索和感官体验中学习。与此同时，对亲子互动的认可，凸显了人们理解共同户外体验所带来的情感与关系层面的益处。\n\n在数字屏幕主导的时代，这些发现凸显了人们渴望重新与自然建立联系、将其作为全面发展基础的集体诉求。总之，这项调查表明，户外活动不仅是娱乐，更是培养好奇、善于观察、全面发展的个体的必要途径。家长和教育者应当积极创造并守护孩子们在户外探索、玩耍和联结的机会。",
    "chart_img": "img/2026_writingb_chart.svg",
    "apply": {
-    "apply_en": "The bar chart presents an uneven distribution among the perceived benefits of children's outdoor activities. Satisfying curiosity accounts for the largest share, at 54.6%. Enhancing observation skills follows closely, representing 54.5%. In contrast, improving physical fitness and strengthening parent-child interaction make up relatively smaller proportions of 37.2% and 33.2% respectively.\n\nThe findings are closely linked to rising public awareness of children's all-round development. On the one hand, the high value placed on curiosity and observation suggests that parents increasingly regard the outdoor world as a vivid classroom where children learn through discovery. On the other hand, as daily life becomes more sedentary, outdoor activities serve as a practical way to build physical fitness and tighten family bonds. Seen in this light, the pattern of opinions is a natural consequence of changing parenting ideas.\n\nFor children to benefit more from outdoor activities, both families and schools should act reasonably. Families should set aside regular time for outdoor play, while schools should design more activity-based courses.",
-    "apply_cn": "该柱状图呈现了人们对儿童户外活动各项益处看法之间的不均衡分布。满足好奇心占比最大，达 54.6%。促进观察力紧随其后，占 54.5%。相比之下，强身健体与增强亲子互动占比相对较小，分别为 37.2% 和 33.2%。\n\n调查结果与公众对儿童全面发展意识的提高密切相关。一方面，人们对好奇心与观察力的高度重视表明，家长日益把户外世界视为孩子通过探索来学习的生动课堂；另一方面，随着日常生活愈发久坐化，户外活动成为强健体魄、密切亲子关系的实用途径。由此可见，这一看法格局是育儿观念变化的自然结果。\n\n要让孩子从户外活动中获益更多，家庭与学校都应理性行事。家庭应留出固定的户外活动时间，学校应设计更多以活动为主的课程。",
+    "apply_en": "The bar chart above clearly illustrates how the perceived benefits of outdoor activities for children are distributed. Satisfying curiosity takes the lead, accounting for 54.6%, followed by improving observation skills and enhancing physical fitness at 54.5% and 33.2% respectively, while strengthening parent-child interaction comes last at 31.2%. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Sitting all day has turned outdoor activity from a hobby into a practical need. Public spending on infrastructure has made outdoor activity far more widely available. People now judge outdoor activity by what it does for them rather than by what others think. Schools now treat outdoor activity as part of the routine rather than an optional extra.\n\nOn balance, this is a positive trend worth welcoming. Families matter most: children copy what adults do far more than what they are told. Schools can build outdoor activity into daily routines instead of treating it as an extra. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了儿童户外活动的益处的分布情况。满足好奇心遥遥领先，占54.6%；其后是促进观察力和强身健体，分别占54.5%和33.2%；而增强亲子互动位居最后，占31.2%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。长期久坐使户外活动从爱好变成了切实的需求。基础设施方面的公共支出使户外活动更加普及。如今，人们评判户外活动的标准是它对自己有何益处，而非他人的看法。学校现在将户外活动视为常规活动的一部分，而非可有可无的额外活动。\n\n总的来说，这是一个值得欢迎的积极趋势。家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。学校可以把户外活动融入日常安排，而非当作额外的任务。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
-     "柱状图 4 项、两项相近（54.6% / 54.5%）→ 前两项并列，后两项用 In contrast 合并。",
-     "\"人们看法\"类图表（survey）第二段用校园类/体育健康类模板，落点写\"全面发展 + 育儿观念\"。",
-     "注意题干是 people's views，写原因时要写\"家长/公众为什么这样认为\"，而非\"儿童为什么喜欢户外\"。",
-     "数字若与官方图有出入，以考场原图为准，本示范按 54.6 / 54.5 / 37.2 / 33.2 撰写。"
+     "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
+     "数据要点：satisfying curiosity 占 54.6%；improving observation skills 占 54.5%；enhancing physical fitness 占 33.2%；strengthening parent-child interaction 占 31.2%。数值与图逐个核对，别漏最大值。",
+     "第二段套 **第二段 · 原因（机制句池）**：句池挑「」；本段骨架 1 句 + 句池 0 句 ≈ 68 词。",
+     "第三段用 **正面版**（继续向好）：主体 = 按题挑主体；**只挑 2 个主体**，不要六个都写。"
+    ],
+    "title": "图表作文：儿童户外活动的益处",
+    "slot_phrases": [
+     {
+      "name": "chart",
+      "en": "bar",
+      "cn": "柱状",
+      "para": "第一段"
+     },
+     {
+      "name": "item1",
+      "en": "satisfying curiosity",
+      "cn": "满足好奇心",
+      "para": "第一段"
+     },
+     {
+      "name": "item2",
+      "en": "improving observation skills",
+      "cn": "促进观察力",
+      "para": "第一段"
+     },
+     {
+      "name": "item3",
+      "en": "enhancing physical fitness",
+      "cn": "强身健体",
+      "para": "第一段"
+     },
+     {
+      "name": "item4",
+      "en": "strengthening parent-child interaction",
+      "cn": "增强亲子互动",
+      "para": "第一段"
+     },
+     {
+      "name": "percent1",
+      "en": "54.6%",
+      "cn": "54.6%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent2",
+      "en": "54.5%",
+      "cn": "54.5%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent3",
+      "en": "33.2%",
+      "cn": "33.2%",
+      "para": "第一段"
+     },
+     {
+      "name": "percent4",
+      "en": "31.2%",
+      "cn": "31.2%",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "the perceived benefits of outdoor activities for children",
+      "cn": "儿童户外活动的益处",
+      "para": "第一段"
+     },
+     {
+      "name": "topic",
+      "en": "outdoor activity",
+      "cn": "户外活动",
+      "para": "第二段"
+     },
+     {
+      "name": "topic",
+      "en": "outdoor activity",
+      "cn": "户外活动",
+      "para": "第三段"
+     }
     ],
     "key_phrases": [
      {
-      "en": "presents an uneven distribution among the perceived benefits of …",
-      "cn": "呈现了人们对……各项益处的看法分布"
+      "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
+      "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。",
+      "src": "静态图表第一段 · 模板第1句"
      },
      {
-      "en": "accounts for the largest share, at …%",
-      "cn": "占比最大，达……%"
+      "en": "{{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+      "cn": "{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
+      "src": "静态图表第一段 · 模板第2句"
      },
      {
-      "en": "follows closely, representing …%",
-      "cn": "紧随其后，占……%"
+      "en": "The gap between the largest and the smallest is wide.",
+      "cn": "最大项与最小项之间差距很大。",
+      "src": "静态图表第一段 · 功能句3"
      },
      {
-      "en": "regard … as a vivid classroom where children learn through discovery",
-      "cn": "把……视为孩子通过探索来学习的生动课堂"
+      "en": "This phenomenon can be attributed to a combination of factors.",
+      "cn": "这一现象可归因于多种因素的综合作用。",
+      "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
-      "en": "a natural consequence of changing parenting ideas",
-      "cn": "育儿观念变化的自然结果"
+      "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
+      "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
+      "src": "第二段 · 原因（机制句池） · 功能句8"
+     },
+     {
+      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
+      "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
+      "src": "第二段 · 原因（机制句池） · 功能句6"
+     },
+     {
+      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
+      "cn": "如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。",
+      "src": "第二段 · 原因（机制句池） · 功能句4"
+     },
+     {
+      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+      "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可有可无的额外活动。",
+      "src": "第二段 · 原因（机制句池） · 功能句10"
+     },
+     {
+      "en": "On balance, this is a positive trend worth welcoming.",
+      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+     },
+     {
+      "en": "Families matter most: children copy what adults do far more than what they are told.",
+      "cn": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句4"
+     },
+     {
+      "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
+      "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+     },
+     {
+      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
    }

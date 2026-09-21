@@ -4670,7 +4670,7 @@
    },
    "apply": {
     "apply_en": "The pie chart above clearly illustrates how Spring Festival spending is distributed. Gifts for family and friends take the lead, accounting for 40%, followed by dinners with relatives and transportation at 20% and 20% respectively, while other spending comes last at 20%. Taken together, the three largest items make up 80%.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. People now judge New Year gifts by what it does for them rather than by what others think. Online platforms and mobile payment have made New Year gifts quicker and easier to arrange. Old traditions survive only when people find new ways to pass them on.\n\nOn balance, this is a positive trend worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象是多种因素共同作用的结果。随着家庭收入提高，新年礼物已从奢侈品变成日常必需。人们现在看新年礼物好不好用，而不是看别人怎么想。线上平台和移动支付让新年礼物变得更快更方便。老传统只有在被不断重新传递时才能活下来。\n\n总体来看，这是值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，新年礼物已从奢侈品变成日常必需。如今，人们评判新年礼物的标准是它对自己有何益处，而非他人的看法。线上平台和移动支付使新年礼物变得更快、更方便。只有当人们找到新的方式来传承旧传统时，它们才能得以延续。\n\n总的来说，这是一个值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把节日花销当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：gifts for family and friends 占 40%；dinners with relatives 占 20%；transportation 占 20%；other spending 占 20%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4776,7 +4776,7 @@
      },
      {
       "en": "This phenomenon can be attributed to a combination of factors.",
-      "cn": "这一现象是多种因素共同作用的结果。",
+      "cn": "这一现象可归因于多种因素的综合作用。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
@@ -4786,22 +4786,22 @@
      },
      {
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-      "cn": "人们现在看 {{topic}} 好不好用，而不是看别人怎么想。",
+      "cn": "如今，人们评判 {{topic}} 的标准是它对自己有何益处，而非他人的看法。",
       "src": "第二段 · 原因（机制句池） · 功能句4"
      },
      {
       "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
-      "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+      "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
       "src": "第二段 · 原因（机制句池） · 功能句3"
      },
      {
       "en": "Old traditions survive only when people find new ways to pass them on.",
-      "cn": "老传统只有在被不断重新传递时才能活下来。",
+      "cn": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。",
       "src": "第二段 · 原因（机制句池） · 功能句11"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",
-      "cn": "总体来看，这是值得欢迎的积极趋势。",
+      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
@@ -4811,12 +4811,12 @@
      },
      {
       "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
-      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+      "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
       "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
      },
      {
       "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]

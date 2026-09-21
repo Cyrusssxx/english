@@ -4417,7 +4417,7 @@
    },
    "apply": {
     "apply_en": "The pie chart above clearly illustrates how the purposes of travel are distributed. Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims at 33% and 15% respectively, while fostering independence comes last at 6%. Taken together, the three largest items make up 85%.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, travelling has moved from a luxury to an everyday necessity. Longer working hours have made people value the little free time they have. Online platforms and mobile payment have made travelling quicker and easier to arrange. Public spending on infrastructure has made travelling far more widely available.\n\nOn balance, this is a positive trend worth welcoming. Media should report on travelling honestly, without exaggerating its benefits or its risks. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat travelling as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了旅游目的的分布情况。欣赏风景遥遥领先，占37%；其后是缓解压力和其他目的，分别占33%和15%；而锻炼独立性位居最后，占6%。前三项加起来占85%。\n\n这一现象是多种因素共同作用的结果。随着家庭收入提高，旅游已从奢侈品变成日常必需。工作时间变长，人们更看重仅有的空闲时间。线上平台和移动支付让旅游变得更快更方便。公共基础设施投入让旅游的覆盖面大大增加。\n\n总体来看，这是值得欢迎的积极趋势。媒体应如实报道旅游，既不夸大好处，也不夸大风险。个人应按自身情况选择，而不是随大流。最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+    "apply_cn": "该饼状图清晰地展示了旅游目的的分布情况。欣赏风景遥遥领先，占37%；其后是缓解压力和其他目的，分别占33%和15%；而锻炼独立性位居最后，占6%。前三项加起来占85%。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，旅游已从奢侈品变成日常必需。工作时间变长，人们更看重仅有的空闲时间。线上平台和移动支付使旅游变得更快、更方便。基础设施方面的公共支出使旅游更加普及。\n\n总的来说，这是一个值得欢迎的积极趋势。媒体应如实报道旅游，既不夸大好处，也不夸大风险。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把旅游当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "饼图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：appreciating the scenery 占 37%；relieving pressure 占 33%；other aims 占 15%；fostering independence 占 6%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4523,7 +4523,7 @@
      },
      {
       "en": "This phenomenon can be attributed to a combination of factors.",
-      "cn": "这一现象是多种因素共同作用的结果。",
+      "cn": "这一现象可归因于多种因素的综合作用。",
       "src": "第二段 · 原因（机制句池） · 模板第1句"
      },
      {
@@ -4538,17 +4538,17 @@
      },
      {
       "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
-      "cn": "线上平台和移动支付让 {{topic}} 变得更快更方便。",
+      "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
       "src": "第二段 · 原因（机制句池） · 功能句3"
      },
      {
       "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
-      "cn": "公共基础设施投入让 {{topic}} 的覆盖面大大增加。",
+      "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
       "src": "第二段 · 原因（机制句池） · 功能句6"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",
-      "cn": "总体来看，这是值得欢迎的积极趋势。",
+      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
@@ -4563,12 +4563,12 @@
      },
      {
       "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
-      "cn": "最关键的是家庭和学校把它当成生活的正常一部分，而不是额外负担。",
+      "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
       "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
      },
      {
       "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-      "cn": "考虑到它背后的推动力，我们完全有理由相信，它将在未来几年持续下去。",
+      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
      }
     ]
