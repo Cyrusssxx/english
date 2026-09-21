@@ -1216,6 +1216,78 @@ function ntMatchRowHtml(q) {
         <span class="nt-goto">在此作答 ▸</span>
     </div>`;
 }
+/** 新题型「选项不重复」同步：匹配型（多项对应）与小标题对应都是 7 选 5，
+ *  每个选项只能用一次；判断正误（T/F，2 项）可重复，不参与占用。
+ *  作用：① 已被别题选中的字母置灰禁用 ② 选项池标出「已被 Qn 选用」 ③ 阅读区人名徽标行回显已选 */
+function syncNtUsed() {
+    if (!article || article.type !== 'newtype') return;
+    const qs = article.questions || [];
+    if (!qs.length) return;
+    const qtype = (qs[0].qtype || '');
+    const pool = article.pool || {};
+    const poolKeys = Object.keys(pool);
+    // 判断正误（pool 只有 T/F 两项）可重复选，不启用占用；7 选 5 类才启用
+    const exclusive = qtype !== '判断' && poolKeys.length > qs.length;
+    if (!exclusive) {
+        for (const q of qs) for (const k of poolKeys) {
+            const el = document.getElementById(`opt-${q.id}-${k}`);
+            if (el) { el.classList.remove('nt-used'); el.disabled = false; el.title = pool[k] || ''; }
+        }
+        for (const k of poolKeys) {
+            const pi = document.getElementById(`poolopt-${k}`);
+            if (pi) { pi.classList.remove('nt-used'); pi.title = ''; }
+        }
+        return;
+    }
+    const used = {};                       // letter -> qid（哪个题占用了该选项）
+    for (const q of qs) {
+        const a = answerMap[q.id];
+        if (a && a.user_answer) used[a.user_answer] = q.id;
+    }
+    for (const q of qs) {
+        for (const k of poolKeys) {
+            const el = document.getElementById(`opt-${q.id}-${k}`);
+            if (!el) continue;
+            const owner = used[k];
+            if (owner && owner !== q.id) {
+                const oq = qs.find(x => x.id === owner);
+                el.classList.add('nt-used');
+                el.disabled = true;
+                el.title = `已被 Q${oq ? oq.number : ''} 选用（7 选 5：每个选项只用一次）`;
+            } else {
+                el.classList.remove('nt-used');
+                el.disabled = false;
+                el.title = pool[k] || '';
+            }
+        }
+    }
+    for (const k of poolKeys) {
+        const pi = document.getElementById(`poolopt-${k}`);
+        if (!pi) continue;
+        const owner = used[k];
+        if (owner) {
+            const oq = qs.find(x => x.id === owner);
+            pi.classList.add('nt-used');
+            pi.title = `已被 Q${oq ? oq.number : ''} 选用`;
+        } else {
+            pi.classList.remove('nt-used');
+            pi.title = '';
+        }
+    }
+    for (const q of qs) {
+        const row = document.getElementById(`ntm-${q.id}`);
+        if (!row) continue;
+        const a = answerMap[q.id];
+        const slot = row.querySelector('.nt-goto');
+        if (slot) slot.textContent = a && a.user_answer ? `已选 ${a.user_answer}` : '在此作答 ▸';
+    }
+    const head = document.querySelector('#ntPool .nt-pool-title');
+    if (head) {
+        const n = Object.keys(used).length;
+        head.textContent = `选项池（${poolKeys.length} 项 · 已选 ${n} / ${qs.length}）`;
+    }
+}
+
 /** 空位卡选项展开/收起（force=true 强制收起） */
 function toggleNtOpts(qid, force) {
     const el = document.getElementById('ntopts-' + qid);
@@ -1329,6 +1401,8 @@ function showResult(q, userKey, scrollToRelated) {
         if (k === q.answer) el.classList.add('right');
         else if (k === userKey) el.classList.add('wrong');
     }
+    // 新题型：同步「选项不重复」占用状态（7 选 5，判断正误除外）
+    if (typeof syncNtUsed === 'function') syncNtUsed();
     const expl = document.getElementById(`expl-${q.id}`);
     if (expl) {
         if (article.type === 'cloze' || article.type === 'newtype') {

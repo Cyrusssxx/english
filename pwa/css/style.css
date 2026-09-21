@@ -2940,7 +2940,8 @@ html.dark .q-tip {
     border-radius: 6px;
 }
 .cloze-opts .opt-en { font-size: 0.85rem; }
-.cloze-opts .opt-cn { font-size: 0.73rem; }
+.cloze-opts .opt-cn { font-size: 0.73rem; display: none; }
+body.show-quiz-cn .cloze-opts .opt-cn { display: block; }
 @media (max-width: 700px) {
     .cloze-opts { grid-template-columns: repeat(2, 1fr); }
 }
@@ -3010,7 +3011,9 @@ html.dark .q-tip {
 }
 .nt-pool-txt { min-width: 0; }
 .nt-pool-txt .opt-en { font-size: 0.82rem; line-height: 1.55; }
-.nt-pool-txt .opt-cn { font-size: 0.74rem; color: var(--text-light); }
+.nt-pool-txt .opt-cn { font-size: 0.74rem; color: var(--text-light); display: none; }
+/* 选项中文默认不翻译：仅「精读」（全文翻译）开关打开时才显示 */
+body.show-quiz-cn .nt-pool-txt .opt-cn { display: block; }
 .nt-pool-item.nt-flash { animation: ntFlash 1.2s ease; }
 
 .nt-q { padding: 0; margin-bottom: 12px; scroll-margin-top: 48px; }
@@ -3064,6 +3067,16 @@ html.dark .q-tip {
     background: rgba(220, 53, 69, 0.1);
     color: var(--danger);
 }
+/* 多项对应/小标题：选项已被别题选用（7 选 5 不重复） */
+.nt-letter.nt-used {
+    opacity: .38;
+    cursor: not-allowed;
+    text-decoration: line-through;
+    border-style: dashed;
+}
+.nt-letter.nt-used:hover { border-color: var(--border); color: var(--text); }
+.nt-pool-item.nt-used { opacity: .45; }
+.nt-pool-item.nt-used .nt-pool-k { text-decoration: line-through; }
 
 /* ===== 完形/新题型/翻译：连续篇章排版 ===== */
 .para-compact { margin-bottom: 14px; }
