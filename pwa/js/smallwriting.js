@@ -166,6 +166,215 @@ function swSyncOpenBtn() {
     b.textContent = allOpen ? '收起全部' : '展开全部';
 }
 
+/* ==================== 整信背诵（主区） ====================
+   一次拼一封完整信（称呼/标题 → P1 问候+来意 → P2 引出+本类句 → P3 收尾 → 落款），
+   点句子切换当前句（展开该句译文/示例），← → 键翻句；译文默认遮住方便自背。 */
+const SW_TYPE_KEY = 'sw_type_v1';
+let swType = 'advice';            // 当前信件类型 id
+let swCur = -1;                   // 当前句序号（-1 = 未选中，全部收起）
+let swAllCn = false;              // 「显示全部译文」开关
+let swLetterCache = [];           // 当前信的行结构（复制整封用）
+let swLetterBound = false;
+
+/** 各类型来意句（p1s2）与引出句（p2s1）的 tag 匹配词 */
+const SW_TYPE_KW = {
+    advice: '建议', invite: '邀请', thanks: '感谢', congrats: '祝贺', apology: '道歉',
+    complaint: '投诉', intro: '介绍', notice: '通知', inquire: '询问', opinion: '观点'
+};
+
+/** 从 bank 里挑一句：kw 非空按 tag 匹配 → 否则 core → 兜底第一句 */
+function swPick(bankId, kw) {
+    const b = swBank(bankId);
+    const items = (b && b.items) || [];
+    if (!items.length) return null;
+    if (kw) { const hit = items.find(it => (it.tag || '').indexOf(kw) >= 0); if (hit) return hit; }
+    return items.find(it => it.tier === 'core') || items[0];
+}
+
+/** 拼一封完整信 → 行结构数组（kind: title/sal/sent/br/sig/signame/signote） */
+function swLetterLines(typeId) {
+    const types = SW.types || [];
+    const t = types.find(x => x.id === typeId) || types[0];
+    if (!t) return [];
+    const kw = SW_TYPE_KW[t.id] || '';
+    const isNotice = t.id === 'notice';
+    const out = [];
+    const sent = (bankId, item) => {
+        if (!item) return;
+        const items = ((swBank(bankId) || {}).items) || [];
+        out.push({ kind: 'sent', bank: bankId, idx: items.indexOf(item), item: item });
+    };
+    // 格式行：通知 = 居中标题 NOTICE；其余 = 称呼顶格
+    out.push(isNotice ? { kind: 'title', text: 'NOTICE' } : { kind: 'sal', text: 'Dear Sir or Madam,' });
+    // 第一段：问候（p1s1 core）+ 来意（p1s2 按类型 tag）
+    sent('p1s1', swPick('p1s1', ''));
+    sent('p1s2', swPick('p1s2', kw));
+    out.push({ kind: 'br' });
+    // 第二段：通用引出句 + 本类型 2~4 句（must 优先）
+    sent('p2s1', swPick('p2s1', t.id === 'advice' ? '建议' : (t.id === 'invite' ? '活动安排' : '')));
+    const mid = (t.banks || []).filter(id => ['p1s1', 'p1s2', 'p2s1', 'p3'].indexOf(id) < 0);
+    mid.forEach(id => {
+        const items = ((swBank(id) || {}).items) || [];
+        if (items.length) sent(id, items.find(it => it.tier === 'must') || items[0]);
+    });
+    out.push({ kind: 'br' });
+    // 第三段：收尾（通知用带 notice 的专场收尾，其余 core）
+    const p3items = ((swBank('p3') || {}).items) || [];
+    sent('p3', (isNotice && p3items.find(it => /notice/i.test(it.en || ''))) || swPick('p3', ''));
+    // 落款：通知不写人名落款（格式分提醒）
+    if (isNotice) out.push({ kind: 'signote', text: '（通知类不写人名落款 · 落款按题目写组织名）' });
+    else { out.push({ kind: 'sig', text: 'Yours sincerely,' }); out.push({ kind: 'signame', text: 'Li Ming' }); }
+    return out;
+}
+
+/** 渲染整封信到 #swLetter（句块 .sw-line 带 data-k，与句子库共用高亮/批注键） */
+function swLetterRender() {
+    const box = document.getElementById('swLetter');
+    if (!box || !SW) return;
+    swLetterCache = swLetterLines(swType);
+    // 分段：br 断段；称呼/标题/落款各自成段
+    const groups = [];
+    let cur = null;
+    swLetterCache.forEach(l => {
+        if (l.kind === 'br') { cur = null; return; }
+        if (l.kind === 'title' || l.kind === 'sal') { groups.push({ cls: 'sw-para', lines: [l] }); cur = null; return; }
+        if (l.kind === 'sig' || l.kind === 'signame' || l.kind === 'signote') {
+            if (!cur || cur.cls.indexOf('sw-para-sig') < 0) { cur = { cls: 'sw-para sw-para-sig', lines: [] }; groups.push(cur); }
+            cur.lines.push(l); return;
+        }
+        if (!cur || cur.cls.indexOf('sw-para-body') < 0) { cur = { cls: 'sw-para sw-para-body', lines: [] }; groups.push(cur); }
+        cur.lines.push(l);
+    });
+    let no = 0;
+    box.innerHTML = groups.map(g => `<div class="${g.cls}">` + g.lines.map(l => {
+        if (l.kind === 'title') return `<div class="sw-title-line">${swEsc(l.text)}</div>`;
+        if (l.kind === 'sal') return `<div class="sw-sal">${swEsc(l.text)}</div>`;
+        if (l.kind === 'sig') return `<div class="sw-sig">${swEsc(l.text)}</div>`;
+        if (l.kind === 'signame') return `<div class="sw-signame">${swEsc(l.text)}</div>`;
+        if (l.kind === 'signote') return `<div class="sw-signote">${swEsc(l.text)}</div>`;
+        const it = l.item;
+        const i = no++;
+        const ex = (it.ex || []).map(e => `
+            <div class="sw-ex">
+                <div class="sw-ex-tag">✍ 真题示例${e.src ? ' · ' + swEsc(e.src) : ''}</div>
+                <div class="sw-ex-en">${swPh(e.en)}</div>
+                ${e.cn ? `<div class="sw-ex-cn">${swPh(e.cn)}</div>` : ''}
+            </div>`).join('');
+        return `<div class="sw-line sw-ls" data-k="${swEsc(l.bank)}#${l.idx}" data-i="${i}">
+            <div class="sw-en"><span class="sw-no">${i + 1}</span>${swStars(it)}${it.tag ? `<span class="sw-tag">${swEsc(it.tag)}</span>` : ''}<span class="sw-en-txt">${swPh(it.en)}</span></div>
+            ${it.cn ? `<div class="sw-cn">${swPh(it.cn)}</div>` : ''}
+            ${it.alts ? swAlts(it.alts) : ''}
+            ${ex}
+        </div>`;
+    }).join('') + '</div>').join('');
+    swCur = -1;
+    swLetterSync();
+    swRestoreAll();   // 高亮/批注按 data-k 重建（与句子库视图共用同一批标记）
+}
+
+/** 同步当前句高亮、进度、按钮态、译文开关 */
+function swLetterSync() {
+    const box = document.getElementById('swLetter');
+    if (!box) return;
+    const nodes = box.querySelectorAll('.sw-ls');
+    nodes.forEach(el => el.classList.toggle('on', Number(el.dataset.i) === swCur));
+    box.classList.toggle('sw-all-cn', swAllCn);
+    const pos = document.getElementById('swPos');
+    if (pos) pos.textContent = (swCur >= 0 ? String(swCur + 1) : '—') + ' / ' + nodes.length;
+    const pv = document.getElementById('swPrevBtn'), nx = document.getElementById('swNextBtn');
+    if (pv) pv.disabled = swCur <= 0;
+    if (nx) nx.disabled = nodes.length === 0 || swCur >= nodes.length - 1;
+    const ab = document.getElementById('swAllCnBtn');
+    if (ab) { ab.textContent = swAllCn ? '只看当前句译文' : '显示全部译文'; ab.setAttribute('aria-pressed', swAllCn ? 'true' : 'false'); }
+}
+
+/** 翻句（d = ±1）：首句前的「上一句」无效；末句后的「下一句」停在末句 */
+function swLetterGo(d) {
+    const n = document.querySelectorAll('#swLetter .sw-ls').length;
+    if (!n) return;
+    let i;
+    if (swCur < 0) { if (d < 0) return; i = 0; }
+    else i = swCur + d;
+    i = Math.max(0, Math.min(n - 1, i));
+    swCur = i;
+    swLetterSync();
+    const el = document.querySelector('#swLetter .sw-ls[data-i="' + i + '"]');
+    if (el && el.scrollIntoView) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+}
+
+/** 复制整封（占位符 {{}} 保留原文，直接当模板） */
+function swLetterCopy() {
+    const txt = [];
+    let prev = null;
+    swLetterCache.forEach(l => {
+        if (l.kind === 'br') { txt.push(''); prev = 'br'; return; }
+        if (l.kind === 'sent') { txt.push(l.item.en); prev = 'sent'; return; }
+        if (l.kind === 'sig') { if (prev !== 'br' && txt.length) txt.push(''); txt.push(l.text); prev = 'sig'; return; }
+        if (txt.length && prev !== 'br') txt.push('');
+        txt.push(l.text); prev = l.kind;
+    });
+    const body = txt.join('\n');
+    const btn = document.getElementById('swCopyLetter');
+    const done = () => { if (btn) { btn.textContent = '已复制'; setTimeout(() => { btn.textContent = '复制整封'; }, 1200); } };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(body).then(done, done);
+    else {
+        const ta = document.createElement('textarea');
+        ta.value = body; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); } catch (e) { /* ignore */ }
+        ta.remove(); done();
+    }
+}
+
+/** 类型 tab + 初始化（swInit 调用一次） */
+function swLetterTabs() {
+    const box = document.getElementById('swTypeTabs');
+    if (!box || !SW) return;
+    box.innerHTML = (SW.types || []).map(t =>
+        `<button type="button" class="sw-ttab${t.id === swType ? ' on' : ''}" data-t="${swEsc(t.id)}">${swEsc(t.name)}</button>`).join('');
+}
+
+function swLetterInit() {
+    try { swType = localStorage.getItem(SW_TYPE_KEY) || 'advice'; } catch (e) { swType = 'advice'; }
+    if (!(SW.types || []).some(t => t.id === swType)) swType = ((SW.types || [])[0] || {}).id || 'advice';
+    swLetterTabs();
+    swLetterRender();
+    if (swLetterBound) return;
+    swLetterBound = true;
+    const lbox = document.getElementById('swLetter');
+    if (lbox) lbox.addEventListener('click', e => {
+        const l = e.target.closest ? e.target.closest('.sw-ls') : null;
+        if (l && l.dataset.i != null) { swCur = Number(l.dataset.i); swLetterSync(); }
+    });
+    const tbox = document.getElementById('swTypeTabs');
+    if (tbox) tbox.addEventListener('click', e => {
+        const b = e.target.closest ? e.target.closest('.sw-ttab') : null;
+        if (!b || b.dataset.t === swType) return;
+        swType = b.dataset.t;
+        try { localStorage.setItem(SW_TYPE_KEY, swType); } catch (e2) { /* ignore */ }
+        swLetterTabs();
+        swLetterRender();
+    });
+    const pv = document.getElementById('swPrevBtn'), nx = document.getElementById('swNextBtn');
+    if (pv) pv.addEventListener('click', () => swLetterGo(-1));
+    if (nx) nx.addEventListener('click', () => swLetterGo(1));
+    const ab = document.getElementById('swAllCnBtn');
+    if (ab) ab.addEventListener('click', () => { swAllCn = !swAllCn; swLetterSync(); });
+    const cb = document.getElementById('swCopyLetter');
+    if (cb) cb.addEventListener('click', swLetterCopy);
+    // 键盘 ← → 翻句（仅当整信块在视口内、且焦点不在输入框时接管）
+    document.addEventListener('keydown', e => {
+        if (!e.target || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || e.target.isContentEditable) return;
+        if (e.altKey || e.ctrlKey || e.metaKey) return;
+        if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+        const lb = document.getElementById('swLetterBlock');
+        if (!lb) return;
+        const r = lb.getBoundingClientRect();
+        if (!(r.bottom >= 0 && r.top <= (window.innerHeight || 800))) return;
+        e.preventDefault();
+        swLetterGo(e.key === 'ArrowLeft' ? -1 : 1);
+    });
+}
+
 /* ---------- 初始化 ---------- */
 
 function swRenderLegend() {
@@ -246,6 +455,7 @@ async function swInit() {
     document.title = (m.title || '小作文') + ' - 英语真题精翻';
     try { swView = localStorage.getItem(SW_VIEW_KEY) || 'part'; } catch (e) { swView = 'part'; }
     if (swView !== 'type') swView = 'part';
+    swMkLoad();          // 载入已存的划词高亮 + 行批注（此前漏调会被空数组覆盖，2026-09-22 修复）
     swBuildKeyMap();
     swRenderLegend();
     swRenderSteps();
@@ -254,6 +464,7 @@ async function swInit() {
     swRenderDecisions();
     swSyncViewBtns();
     swRender();
+    swLetterInit();
     swBind();
     swTocBind();
     swTocSpy();
@@ -318,15 +529,18 @@ const SW_TOC_NARROW = 1180;
 function swTocItems() {
     const items = [];
     const push = (lv, id, text) => { if (document.getElementById(id)) items.push({ lv: lv, id: id, text: text }); };
+    push(1, 'swLetterBlock', '整信背诵');
     push(1, 'swLegend', '占位符图例');
     push(1, 'swStepsTitle', '小作文怎么拼');
     push(1, 'swGuideBlock', '真题适配表');
     push(1, 'swDecisionsTitle', '选句决策');
+    push(1, 'swBankBlock', '句子库 · 拆分检索');
     document.querySelectorAll('#swContent h2.sw-h2').forEach(h => {
+        if (swTocHidden(h)) return;   // 在收起的折叠区里 → 不进目录
         items.push({ lv: 1, id: h.id, text: h.textContent.trim() });
         let n = h.nextElementSibling;
         while (n && n.tagName !== 'H2') {
-            if (n.classList && n.classList.contains('sw-card') && n.id) {
+            if (n.classList && n.classList.contains('sw-card') && n.id && !swTocHidden(n)) {
                 const ct = n.querySelector('.sw-card-title');
                 if (ct) items.push({ lv: 2, id: n.id, text: ct.textContent.trim() });
             }
@@ -334,6 +548,13 @@ function swTocItems() {
         }
     });
     return items;
+}
+
+/** 元素是否被收起的 <details> 藏住（details 自身与其 summary 永远可见，不算） */
+function swTocHidden(el) {
+    const cd = el.closest ? el.closest('details:not([open])') : null;
+    if (!cd || cd === el) return false;
+    return !(el.tagName === 'SUMMARY' && el.parentElement === cd);
 }
 
 function swTocBuild() {
@@ -354,7 +575,7 @@ function swTocSpy() {
     let cur = null;
     for (const a of links) {
         const el = document.getElementById(a.dataset.target);
-        if (!el) continue;
+        if (!el || swTocHidden(el)) continue;   // 收起的目标不参与高亮
         if (el.getBoundingClientRect().top <= top) cur = a; else break;
     }
     if (!cur) cur = links[0];
@@ -410,6 +631,9 @@ function swTocBind() {
     }
     window.addEventListener('scroll', () => { swTocSpy(); }, { passive: true });
     window.addEventListener('resize', () => { swTocSpy(); });
+    // 参考区/句子库的 <details> 展开收起时，目录随之增删条目
+    document.querySelectorAll('.sw-page details').forEach(d =>
+        d.addEventListener('toggle', () => swTocBuild()));
 }
 
 /* ==================== 正文划词高亮 + 行批注（浮条交互，照搬 408 notes 页） ==================== */

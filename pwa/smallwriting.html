@@ -52,6 +52,20 @@
         <p class="sw-desc" id="swDesc">加载中…</p>
         <div class="sw-hero" id="swStats"></div>
 
+        <section class="sw-block" id="swLetterBlock">
+            <h2 class="sw-h2">📮 整信背诵 <small>一次背一封 · 点句子切换看译文 · ← → 键翻句</small></h2>
+            <div class="sw-type-tabs" id="swTypeTabs"></div>
+            <div class="sw-letter" id="swLetter"><p style="color:var(--text-light)">加载中…</p></div>
+            <div class="sw-ctrl">
+                <button type="button" class="sw-cbtn" id="swPrevBtn" title="上一句（键盘 ←）">‹ 上一句</button>
+                <span class="sw-ctrl-pos" id="swPos">— / —</span>
+                <button type="button" class="sw-cbtn" id="swNextBtn" title="下一句（键盘 →）">下一句 ›</button>
+                <button type="button" class="sw-cbtn sw-cbtn-gap" id="swAllCnBtn" aria-pressed="false">显示全部译文</button>
+                <button type="button" class="sw-cbtn" id="swCopyLetter">复制整封</button>
+            </div>
+            <div class="sw-ctrl-tip">💡 点任意句子即切换到该句（展开该句译文 + 真题示例）；平时全部收起、遮住中文，先自己背再点开对答案。</div>
+        </section>
+
         <details class="wr-legend sw-legend" id="swLegend"></details>
 
         <section class="sw-block" id="swStepsBlock">
@@ -59,26 +73,28 @@
             <div class="sw-steps" id="swSteps"></div>
         </section>
 
-        <section class="sw-block" id="swGuideBlock">
-            <h2 class="sw-h2">📊 真题适配表 <small>2010–2026 英语二 A 节，共 17 套</small></h2>
-            <p class="sw-block-tip">先看每一年的<b>题型</b>与<b>该挑哪几句</b>，再往下到「按信件类型」里照单取句；主题列可点原文核对题干。</p>
+        <details class="sw-block sw-fold" id="swGuideBlock">
+            <summary class="sw-h2">📊 真题适配表 <small>2010–2026 英语二 A 节，共 17 套</small></summary>
+            <p class="sw-block-tip">先看每一年的<b>题型</b>与<b>该挑哪几句</b>，再往下到「句子库 · 拆分检索」里照单取句；主题列可点原文核对题干。</p>
             <div id="swGuide"></div>
-        </section>
+        </details>
 
-        <section class="sw-block" id="swDecisionsBlock">
-            <h2 class="sw-h2" id="swDecisionsTitle">🎯 选句决策 <small>题干 → 挑哪几句</small></h2>
+        <details class="sw-block sw-fold" id="swDecisionsBlock">
+            <summary class="sw-h2" id="swDecisionsTitle">🎯 选句决策 <small>题干 → 挑哪几句</small></summary>
             <div class="sw-decs" id="swDecisions"></div>
-        </section>
+        </details>
 
-        <div class="sw-viewbar">
-            <span class="sw-view-tip">看句子的方式：</span>
-            <button type="button" class="sw-vbtn on" data-view="part">按段落</button>
-            <button type="button" class="sw-vbtn" data-view="type">按信件类型</button>
-            <button type="button" class="sw-expand" id="swExpandBtn">展开全部</button>
-            <span class="sw-hl-tip">✍ 选中任意文字可<b>高亮</b>／写<b>批注</b>（已高亮 <span id="swMkCount">0</span> 处）</span>
-        </div>
-
-        <div id="swContent"><p style="color:var(--text-light)">加载中…</p></div>
+        <details class="sw-block sw-fold" id="swBankBlock">
+            <summary class="sw-h2">🔍 句子库 · 拆分检索 <small>按段落 / 按类型 · 弹药与真题示例</small></summary>
+            <div class="sw-viewbar">
+                <span class="sw-view-tip">看句子的方式：</span>
+                <button type="button" class="sw-vbtn on" data-view="part">按段落</button>
+                <button type="button" class="sw-vbtn" data-view="type">按信件类型</button>
+                <button type="button" class="sw-expand" id="swExpandBtn">展开全部</button>
+                <span class="sw-hl-tip">✍ 选中任意文字可<b>高亮</b>／写<b>批注</b>（已高亮 <span id="swMkCount">0</span> 处）</span>
+            </div>
+            <div id="swContent"><p style="color:var(--text-light)">加载中…</p></div>
+        </details>
 
         <div class="sw-study" id="swStudy"></div>
     </main>

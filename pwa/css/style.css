@@ -4136,6 +4136,56 @@ html.sw-zoom { font-size: 16.5px; }
 .sw-expand:hover { border-color: var(--primary); color: var(--primary); }
 .sw-hl-tip { margin-left: auto; font-size: .8rem; color: var(--text-light); }
 .sw-hl-tip b { color: var(--primary); }
+
+/* ---- 整信背诵（小作文主区） ---- */
+.sw-type-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 12px; }
+.sw-ttab {
+    font: inherit; font-size: .87rem; font-weight: 600; padding: 5px 14px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--bg); color: var(--text-light); cursor: pointer;
+    transition: background .15s, color .15s, border-color .15s;
+}
+.sw-ttab:hover { border-color: var(--primary); color: var(--primary); }
+.sw-ttab.on { background: var(--primary); border-color: var(--primary); color: #fff; }
+.sw-letter {
+    border: 1px solid var(--border); border-radius: 12px; background: var(--card);
+    padding: 16px 18px;
+}
+.sw-para { margin: 0 0 14px; }
+.sw-para:last-child { margin-bottom: 0; }
+.sw-sal, .sw-sig, .sw-signame {
+    font-family: Georgia, "Times New Roman", serif; font-size: 1.02rem; line-height: 1.7; color: var(--text);
+}
+.sw-title-line { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 1.05rem; letter-spacing: .14em; text-align: center; }
+.sw-signote { font-size: .78rem; color: var(--text-light); margin-top: 2px; }
+.sw-letter .sw-ls {
+    cursor: pointer; border-left: 3px solid transparent; border-radius: 6px;
+    padding: 7px 8px; margin: 0 -8px; transition: background .15s, border-color .15s;
+}
+.sw-letter .sw-ls:hover { background: rgba(128, 128, 128, .07); }
+html.dark .sw-letter .sw-ls:hover { background: rgba(255, 255, 255, .05); }
+.sw-letter .sw-ls.on { background: var(--primary-soft); border-left-color: var(--primary); }
+html.dark .sw-letter .sw-ls.on { background: rgba(13, 148, 136, .16); }
+/* 收起态：译文 / 同义升级 / 真题示例只在当前句（或全局译文开关）下显示 */
+.sw-letter .sw-ls .sw-cn, .sw-letter .sw-ls .wr-alts, .sw-letter .sw-ls .sw-ex { display: none; }
+.sw-letter .sw-ls.on .sw-cn, .sw-letter .sw-ls.on .wr-alts, .sw-letter .sw-ls.on .sw-ex { display: block; }
+.sw-letter.sw-all-cn .sw-ls .sw-cn { display: block; }
+.sw-ctrl { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.sw-cbtn {
+    font: inherit; font-size: .86rem; font-weight: 600; padding: 5px 14px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--card-bg); color: var(--text); cursor: pointer;
+}
+.sw-cbtn:hover { border-color: var(--primary); color: var(--primary); }
+.sw-cbtn:disabled { opacity: .4; cursor: default; }
+.sw-cbtn:disabled:hover { border-color: var(--border); color: var(--text); }
+.sw-cbtn-gap { margin-left: auto; }
+.sw-ctrl-pos { min-width: 64px; text-align: center; font-size: .85rem; color: var(--text-light); font-variant-numeric: tabular-nums; }
+.sw-ctrl-tip { font-size: .78rem; color: var(--text-light); margin-top: 8px; }
+/* 折叠参考区：summary 用 h2 样式 */
+summary.sw-h2 { cursor: pointer; list-style: none; user-select: none; margin-bottom: 0; }
+summary.sw-h2::-webkit-details-marker { display: none; }
+summary.sw-h2::before { content: '▸ '; color: var(--text-light); display: inline-block; }
+details[open] > summary.sw-h2 { margin-bottom: 12px; }
+details[open] > summary.sw-h2::before { content: '▾ '; }
 .sw-part { margin: 0 0 26px; }
 .sw-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; }
 .sw-card-head { display: flex; align-items: center; gap: 9px; padding: 10px 14px; cursor: pointer; list-style: none; }
