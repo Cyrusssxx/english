@@ -746,8 +746,8 @@
    "label": "第二段 · 建议类 第四句",
    "items": [
     {
-     "en": "Finally, it is advisable for you to {{task}}. Only in this way can you truly {{benefit}}.",
-     "cn": "最后，需要指出的是，你最好{{task}}。唯有如此，你才能真正{{benefit}}。",
+     "en": "Finally, I would suggest that you {{task}}, which will help you {{benefit}} in the long run.",
+     "cn": "最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -883,8 +883,8 @@
    "label": "第二段 · 祝贺类 第三句",
    "items": [
     {
-     "en": "To a large extent, this success comes from your willingness to {{effort}}, especially when dealing with {{topic}}.",
-     "cn": "在很大程度上，这一成功源于你愿意在{{topic}}上{{effort}}。",
+     "en": "To a large extent, this success comes from the sustained effort you have made in {{topic}}.",
+     "cn": "在很大程度上，这一成功源于你在{{topic}}上持续付出的努力。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -1003,8 +1003,8 @@
    "label": "第二段 · 通知类 第三句",
    "items": [
     {
-     "en": "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, forming a clear structure.",
-     "cn": "此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，整体结构清晰明了。",
+     "en": "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, all of which are closely related to the theme.",
+     "cn": "此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，都紧扣主题。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -1044,8 +1044,8 @@
      "alts": "I would be grateful if you could {{expect}} by {{deadline}} / Your early reply would be highly appreciated."
     },
     {
-     "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-     "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+     "en": "You are kindly requested to {{expect}} so that {{topic}} can be handled more effectively.",
+     "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的处理。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -1397,8 +1397,8 @@
     ],
     [
      "p2_advice_s4#0",
-     "Finally, it is advisable for you to {{task}}. Only in this way can you truly {{benefit}}.",
-     "最后，建议你{{task}}。唯有如此，你才能真正{{benefit}}。"
+     "Finally, I would suggest that you {{task}}, which will help you {{benefit}} in the long run.",
+     "最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。"
     ],
     [
      "p3#0",
@@ -1413,7 +1413,7 @@
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。我写信的主要目的，是就{{topic}}提出几点建议。",
-    "至于具体措施，我的建议如下。首先，强烈建议你把{{ving}}{{topic}}落到实处，这有助于你更清楚地认识{{detail}}。此外，也建议你{{task}}，以便改善现状。最后，建议你{{task}}。唯有如此，你才能真正{{benefit}}。",
+    "至于具体措施，我的建议如下。首先，强烈建议你把{{ving}}{{topic}}落到实处，这有助于你更清楚地认识{{detail}}。此外，也建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。",
     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
@@ -1539,8 +1539,8 @@
     ],
     [
      "p2_congrats_s3#0",
-     "To a large extent, this success comes from your willingness to {{effort}}, especially when dealing with {{topic}}.",
-     "在很大程度上，这一成功源于你勇于{{effort}}，尤其是在应对{{topic}}的过程中。"
+     "To a large extent, this success comes from the sustained effort you have made in {{topic}}.",
+     "在很大程度上，这一成功源于你在{{topic}}上持续付出的努力。"
     ],
     [
      "p2_congrats_s4#0",
@@ -1560,7 +1560,7 @@
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。请允许我向你致以最热烈的祝贺。",
-    "更具体地说，你在{{topic}}上的出色表现清楚地展现了你的{{quality}}。就{{topic}}而言，你在{{achievement}}上的成功确实令人钦佩，也颇具鼓舞意义。在很大程度上，这一成功源于你勇于{{effort}}，尤其是在应对{{topic}}的过程中。最后，{{topic}}上的这一成就必将激励你{{next step}}，助你迈向{{goal}}。",
+    "更具体地说，你在{{topic}}上的出色表现清楚地展现了你的{{quality}}。就{{topic}}而言，你在{{achievement}}上的成功确实令人钦佩，也颇具鼓舞意义。在很大程度上，这一成功源于你在{{topic}}上持续付出的努力。最后，{{topic}}上的这一成就必将激励你{{next step}}，助你迈向{{goal}}。",
     "我衷心希望你能充分利用这次机会{{outcome}}。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
@@ -1647,8 +1647,8 @@
     ],
     [
      "p3#1",
-     "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-     "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。"
+     "You are kindly requested to {{expect}} so that {{topic}} can be handled more effectively.",
+     "请你{{expect}}，以便{{topic}}能够得到更为有效的处理。"
     ],
     [
      "p3#2",
@@ -1659,7 +1659,7 @@
    "cn_paras": [
     "希望收到此信时你一切安好。我写此信，正式反映近期{{topic}}出现的问题。",
     "具体来说，事情经过如下。令我失望的是，上周在贵店购买的{{product}}无法正常使用。具体来说，到货仅三天就出现了{{problem}}。若你能尽快安排维修或全额退款，我将不胜感激。",
-    "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。感谢你抽时间阅读这封信，期待你的回复。"
+    "请你{{expect}}，以便{{topic}}能够得到更为有效的处理。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
   "intro": {
@@ -1730,8 +1730,8 @@
     ],
     [
      "p2_notice_s3#0",
-     "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, forming a clear structure.",
-     "此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，条理清晰。"
+     "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, all of which are closely related to the theme.",
+     "此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，都紧扣主题。"
     ],
     [
      "p2_notice_s4#0",
@@ -1740,8 +1740,8 @@
     ],
     [
      "p3#1",
-     "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-     "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。"
+     "You are kindly requested to {{expect}} so that {{topic}} can be handled more effectively.",
+     "请你{{expect}}，以便{{topic}}能够得到更为有效的处理。"
     ],
     [
      "p3#5",
@@ -1751,8 +1751,8 @@
    ],
    "cn_paras": [
     "为进一步推动{{topic}}，学校决定发布以下通知。",
-    "现将本次活动的具体安排通知如下。首先，{{time}}定为{{topic}}的正式时间，届时全体{{audience}}须准时参加。此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，条理清晰。最后，全体{{audience}}须{{requirement}}，以确保{{topic}}有序进行。",
-    "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。请仔细阅读本通知并转告相关人员。"
+    "现将本次活动的具体安排通知如下。首先，{{time}}定为{{topic}}的正式时间，届时全体{{audience}}须准时参加。此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，都紧扣主题。最后，全体{{audience}}须{{requirement}}，以确保{{topic}}有序进行。",
+    "请你{{expect}}，以便{{topic}}能够得到更为有效的处理。请仔细阅读本通知并转告相关人员。"
    ]
   },
   "inquire": {
@@ -2101,7 +2101,7 @@
   "core": 4,
   "core_words": 41,
   "must": 20,
-  "must_words": 318,
+  "must_words": 322,
   "ammo": 35,
   "freq3": 42,
   "guide": 17

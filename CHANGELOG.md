@@ -1,5 +1,23 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-22 句库第二轮润色：套路腔/别扭搭配/空尾巴（EN_FIX 机制）]
+
+- **背景**：承接上轮「模板空泛/不通用」整改——请求句与引出句已修，本轮清剩下的套路腔与别扭搭配。
+- **① build 新增 `EN_FIX`**（与既有 `CN_FIX` 同构，改英文；md 源不动、重跑不回退）：
+  - `p2_advice_s4`：`Only in this way can you truly {{benefit}}` 烂大街套路 →
+    `Finally, I would suggest that you {{task}}, which will help you {{benefit}} in the long run.`
+  - `p2_congrats_s3`：`willingness to {{effort}}` 搭配别扭 →
+    `To a large extent, this success comes from the sustained effort you have made in {{topic}}.`
+  - `p2_notice_s3`：`, forming a clear structure` 空尾巴凑字数 →
+    `..., all of which are closely related to the theme.`（都紧扣主题）
+  - `p3#1`：`implemented`（对投诉"落实项目"不贴）→ `handled`（处理，通知/投诉两场景都通）
+  - CN_FIX 同步这 4 句中文（「从长远看…」「持续付出」「都紧扣主题」「处理」）。
+- **② letters 同步**：整信 10 封里引用这 4 句的 rows 与段译全部同步改（含 notice 的 p3#1 补改——
+  首轮漏改致 notice 与句库文本不一致，靠「letters vs banks en 一致性校验」抓到）。
+  改动后 mismatch 只剩 6 处**预期**的主动润色句（advice_s3 + 5 处场景化引出），走 L: 键——设计如此。
+- 验证：python（句库 4 句已润 / letters 与 banks 一致性 / 10 封 102–110 词）+ jsdom **27/27**
+  （新句上墙、套路腔清零、句库检索页同步显示、词数/3 段/3 段译、点句+段译回归、notice 布局、无星星）。
+  SW en2-de72de6e。
 ## [2026-09-22 整信去邀请腔 + 空泛句场景化]
 
 - **用户反馈**：「模板空泛 / 很多句子不通用 / 2026 旅行视频题怎么套出了邀请」。

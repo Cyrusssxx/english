@@ -524,8 +524,11 @@ def main():
     }
     # 中文模板修正（原 md 的中文行与英文句槽位不一致时统一在这里改，重跑不回退）
     CN_FIX = {
+        'p2_advice_s4': {0: '最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。'},
         'p2_congrats_s2': {0: '更具体地说，你在{{topic}}方面的优异表现，清楚地展现了你的{{quality}}。'},
-        'p3': {1: '请你{{expect}}，以便{{topic}}能够得到更为有效的落实。',
+        'p2_congrats_s3': {0: '在很大程度上，这一成功源于你在{{topic}}上持续付出的努力。'},
+        'p2_notice_s3': {0: '此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，都紧扣主题。'},
+        'p3': {1: '请你{{expect}}，以便{{topic}}能够得到更为有效的处理。',
                2: '感谢你的时间与关注，期待你给予积极回应。',
                3: '总而言之，上述各项措施均是为{{purpose}}而设，你的参与至关重要。'},
     }
@@ -536,6 +539,21 @@ def main():
         for k, cn in fix.items():
             if k < len(b_['items']):
                 b_['items'][k]['cn'] = cn
+
+    # 英文润色修正（与 CN_FIX 同构）：去烂大街套路、别扭搭配、空尾巴；重跑不回退
+    EN_FIX = {
+        'p2_advice_s4': {0: 'Finally, I would suggest that you {{task}}, which will help you {{benefit}} in the long run.'},
+        'p2_congrats_s3': {0: 'To a large extent, this success comes from the sustained effort you have made in {{topic}}.'},
+        'p2_notice_s3': {0: 'Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, all of which are closely related to the theme.'},
+        'p3': {1: 'You are kindly requested to {{expect}} so that {{topic}} can be handled more effectively.'},
+    }
+    for b_ in data['banks']:
+        fix = EN_FIX.get(b_['id'])
+        if not fix:
+            continue
+        for k, en in fix.items():
+            if k < len(b_['items']):
+                b_['items'][k]['en'] = en
 
     # 去烂大街衔接词（句首 First and foremost / Last but not least → 高级版）+ 同义升级挂载
     for b_ in data['banks']:
