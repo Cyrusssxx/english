@@ -567,6 +567,18 @@ def main():
             for k, en in en2.items():
                 if k < len(b_['items']) and en:
                     b_['items'][k]['en'] = en
+    # 第三轮：中文中性化（不做文学化润色，平实直译好背）+ 英文精简（统一 I am writing to...）
+    for b_ in data['banks']:
+        cn3 = (EXTRA.CN_FIX3 or {}).get(b_['id'])
+        if cn3:
+            for k, cn in cn3.items():
+                if k < len(b_['items']) and cn:
+                    b_['items'][k]['cn'] = cn
+        en3 = (EXTRA.EN_FIX3 or {}).get(b_['id'])
+        if en3:
+            for k, en in en3.items():
+                if k < len(b_['items']) and en:
+                    b_['items'][k]['en'] = en
     for bid, idxs in (EXTRA.HIDE_ITEMS or {}).items():
         hit = [x for x in data['banks'] if x['id'] == bid]
         if not hit:

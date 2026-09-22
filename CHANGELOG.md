@@ -1,5 +1,37 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-23 模板中文中性化 + 英文精简去重]
+
+- **背景**：用户要求「翻译可以不用很润色，模板里中性化一点就行，方便我背诵；主要是英语句子」。
+  原则确立：**中文只当"对答案用"，平实直译不加修饰；英文才是打磨重点**——这与大作文那轮
+  「参考译文只能参考、模板译本义」是同一条原则在小作文的落地。
+- **① 中文中性化（`EXTRA.CN_FIX3`，22 句）**——撤掉上一轮"去翻译腔"时加进去的发挥：
+  - 来意句 8 条统一为「我写这封信，是想…」：`是想就{{topic}}一事与你沟通` → `是关于{{topic}}的事`；
+    `为你的帮助向你表达诚挚的谢意` → `是想感谢你对我的帮助`；`与你详细探讨` → `和你详细谈谈`；
+    `正式反映…出现的问题` → `正式投诉…出现的问题`（贴 complaint 原意）
+  - 去成语/文艺发挥：`落到实处`→`付诸实践`、`宾至如归`→`感觉像在自己家一样`、
+    `深有感触`→`印象很深`、`颇具鼓舞意义`→`也很鼓舞人心`、`都紧扣主题`→`都与主题密切相关`、
+    `更为有效的处理`→`更有效的处理`、`其突出特点是`→`它的特点是`、`依我看`→`在我看来`
+  - 全库扫描 9 个发挥词残留 = **0**
+- **② 英文精简（`EXTRA.EN_FIX3`，11 句）**——统一最好背的骨架、砍填充词：
+  - 来意句统一 `I am writing to ...`：`regarding the matter of {{topic}}` → `regarding {{topic}}`；
+    `This letter is intended to offer a sincere apology` → `I am writing to offer my sincere apology`；
+    `The purpose of this letter is to discuss` → `I am writing to discuss`；
+    `The primary aim of this letter is to offer` → `I am writing to offer some suggestions`；
+    `This letter serves as a formal complaint` → `I am writing to make a formal complaint`；
+    `With this letter, I would like to share` → `I am writing to share with you my views on`
+  - 砍冗余：`the main points can be arranged as follows` → `are as follows`；
+    `my suggestions are listed as follows` → `are as follows`；
+    `gain a clearer insight into` → `better understand`；`In addition, you are also advised`（also 与 In addition 重复）→ 去 also；
+    `At this point, I must admit`（开场生硬）→ `To be specific, I must admit`
+- **③ letters 同步**：写 `tools/_sync_letters3.py` 把改动同步进 10 封整信（rows + 段译 cn_paras），
+  只在 LETTERS 块内按 old→new 替换、逐条断言命中；4 处场景化改写句（L: 键）本就与句库文本不同 →
+  报告为人工待办，其中 2 处（opinion 来意句 / 观点句中文）手工中性化，另 2 处是主动场景化的好句保持不变。
+- 验证：python（发挥词残留 0、letters vs banks 一致性 mismatch 仅剩 5 处预期场景化引出、
+  10 封 101–109 词且均 3 段）+ jsdom（英文精简/中文中性化上墙 10、10 封词数+3 段+3 段译按钮 3/3、
+  点句翻译+段译回归、notice 特判 5、检索页同步）。SW en2-77d055d0。
+- 注意：真题示例 `ex[].en` 里保留了真题原句（如 `With this letter, I would like to share my views on...`）——
+  那是**原文引用不是模板句**，不改（测试断言要排除 ex）。
 ## [2026-09-22 小作文模板全面润色 + 删减不实用内容]
 
 - **背景**：用户要求「模板全面润色优化 + 删减不实用的东西」。全库 59 句审计：52 句被整信引用（只能润不能删）、
