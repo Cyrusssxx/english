@@ -1411,6 +1411,7 @@ function showResult(q, userKey, scrollToRelated) {
             <span class="expl-tag">${ok ? '✔ 回答正确' : '✘ 回答错误'} · 答案 ${q.answer}</span>
             <button class="expl-fold" id="explfold-${q.id}" onclick="toggleExplFold('${q.id}')">展开解析 ▾</button>
             <div class="expl-body" id="explbody-${q.id}" hidden>${esc(q.explanation || '')}${q.tip ? `<div class="q-tip">💡 技巧　${esc(q.tip)}</div>` : ''}</div>
+            ${article.type === 'newtype' && (q.related_sentences || []).length ? `<button class="q-locate" onclick="locateRelated('${q.id}')">↖ 定位原文依据</button>` : ''}
         </div>`;
         } else {
             expl.innerHTML = `${q.quick ? `<div class="q-quick">📌 考题速览　${esc(q.quick)}</div>` : ''}
