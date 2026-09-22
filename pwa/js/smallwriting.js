@@ -249,7 +249,8 @@ function swLetterLines(typeId) {
         L.forEach(row => {
             const src = String(row[0] || '');
             const bank = swBank(src.split('#')[0]);
-            const part = bank ? bank.part : 1;
+            // 空 src = 整信专用句（letters 里新增的通用收尾等）→ 默认归第三段收尾，避免错分段
+            const part = bank ? bank.part : 3;
             if (lastPart !== null && part !== lastPart) out.push({ kind: 'br' });
             lastPart = part;
             pushSent(row[1], row[2], src, srcOrig(src));

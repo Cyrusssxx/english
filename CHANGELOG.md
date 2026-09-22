@@ -1,5 +1,25 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-22 整信去邀请腔 + 空泛句场景化]
+
+- **用户反馈**：「模板空泛 / 很多句子不通用 / 2026 旅行视频题怎么套出了邀请」。
+- **诊断**：站内指向全对（guide 2026 typeId=opinion、hint「观点类第 1+2 句」、opinion 整信无邀请句）。
+  **真凶 = 收尾句** `I would appreciate it very much if you could {{expect}} by {{deadline}}`
+  （限期办事请求）被用在 opinion/thanks/apology/intro 四封——谈朋友旅行视频的回信结尾写成
+  「望你在 X 日前……」→ 读起来像邀请/派任务。
+- **① 四封换收尾**（新通用句、src='' 走 L: 键，不进句库 banks——merge_extra 是整 bank 覆盖不能加）：
+  - opinion → `I would be glad to hear your own view on this matter.`（想听你看法）
+  - thanks → `Thanks again for your kindness, and I hope we can stay in touch.`
+  - apology → `I will make sure that this will not happen again.`（补救承诺）
+  - intro → `Feel free to let me know if you need any further information.`
+  - **保留 3 封合理场景**：advice/invite/inquire（建议反馈、邀请确认、询问答复，限期正当）。
+- **② 最空泛句场景化**：`To be more specific, the main points can be arranged as follows.`
+  在整信里 5 处全部换成贴题版——opinion「我想谈的有三点」（与主体 3 句自洽）/
+  thanks「我真正感激的是以下几件事」/ apology·complaint「事情经过如下」/ inquire「我想请教以下几点」。
+- **③ 修分段 bug**：空 src 新句 `part` 回退值误为 1 → 收尾句错分段（opinion 4+ 段）→ 改回退 3
+  （整信专用句默认归收尾段）。
+- 验证：python 词数全验 + jsdom **50/50**（4 封去请求腔/3 封保留、10 封 ≥100 词且恰 3 段+3 段译按钮、
+  双 L: 键+共享键保留、段译/点句翻译/notice/guide 回归）。SW en2-8841b776。
 ## [2026-09-22 整信移植点句翻译]
 
 - **需求**：「移植一下点击翻译」——把阅读页的点句翻译交互移植到整信。

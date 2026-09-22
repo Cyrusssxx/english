@@ -1480,8 +1480,8 @@
     ],
     [
      "p2s1#0",
-     "To be more specific, the main points can be arranged as follows.",
-     "更具体地说，我想感谢以下几点。"
+     "To be more specific, the following are the things I am truly grateful for.",
+     "具体来说，我真正感激的是以下几件事。"
     ],
     [
      "p2_thanks_s2#0",
@@ -1499,9 +1499,9 @@
      "若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。"
     ],
     [
-     "p3#0",
-     "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
-     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。"
+     "",
+     "Thanks again for your kindness, and I hope we can stay in touch.",
+     "再次感谢你的善意，希望我们保持联系。"
     ],
     [
      "p3#2",
@@ -1511,8 +1511,8 @@
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。我写此信，为你的帮助向你表达诚挚的谢意。",
-    "更具体地说，我想感谢以下几点。我想衷心感谢你在我逗留期间给予的热情接待。最让我感动的是你的耐心与友善，让我有宾至如归的感觉。若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
-    "如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。"
+    "具体来说，我真正感激的是以下几件事。我想衷心感谢你在我逗留期间给予的热情接待。最让我感动的是你的耐心与友善，让我有宾至如归的感觉。若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
+    "再次感谢你的善意，希望我们保持联系。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
   "congrats": {
@@ -1578,8 +1578,8 @@
     ],
     [
      "p2s1#0",
-     "To be more specific, the main points can be arranged as follows.",
-     "更具体地说，情况如下。"
+     "To be more specific, what happened is as follows.",
+     "具体来说，事情经过如下。"
     ],
     [
      "p2_apology_s2#0",
@@ -1597,9 +1597,9 @@
      "尽管{{cause}}在一定程度上解释了事情的起因，但主要责任仍在我。"
     ],
     [
-     "p3#0",
-     "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
-     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。"
+     "",
+     "I will make sure that this will not happen again.",
+     "我保证这样的事不会再发生。"
     ],
     [
      "p3#2",
@@ -1609,8 +1609,8 @@
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。我写此信，为{{topic}}所引起的问题向你致以诚挚的歉意。",
-    "更具体地说，情况如下。在此我必须承认，我在{{topic}}上的{{fault}}已经造成了{{impact}}。由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。尽管{{cause}}在一定程度上解释了事情的起因，但主要责任仍在我。",
-    "如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。"
+    "具体来说，事情经过如下。在此我必须承认，我在{{topic}}上的{{fault}}已经造成了{{impact}}。由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。尽管{{cause}}在一定程度上解释了事情的起因，但主要责任仍在我。",
+    "我保证这样的事不会再发生。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
   "complaint": {
@@ -1627,8 +1627,8 @@
     ],
     [
      "p2s1#0",
-     "To be more specific, the main points can be arranged as follows.",
-     "更具体地说，情况如下。"
+     "To be more specific, what happened is as follows.",
+     "具体来说，事情经过如下。"
     ],
     [
      "p2_complaint_s2#0",
@@ -1658,7 +1658,7 @@
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。我写此信，正式反映近期{{topic}}出现的问题。",
-    "更具体地说，情况如下。令我失望的是，上周在贵店购买的{{product}}无法正常使用。具体来说，到货仅三天就出现了{{problem}}。若你能尽快安排维修或全额退款，我将不胜感激。",
+    "具体来说，事情经过如下。令我失望的是，上周在贵店购买的{{product}}无法正常使用。具体来说，到货仅三天就出现了{{problem}}。若你能尽快安排维修或全额退款，我将不胜感激。",
     "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
@@ -1700,15 +1700,15 @@
      "我衷心希望你能充分利用这次机会{{outcome}}。"
     ],
     [
-     "p3#0",
-     "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
-     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。"
+     "",
+     "Feel free to let me know if you need any further information.",
+     "如需更多信息，随时告诉我。"
     ]
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。在这封信里，我想把{{topic}}作为极佳的选择介绍给你。",
     "具体而言，{{topic}}指的是{{subject}}，其突出特点是{{feature}}。首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。更具体而言，在日常生活中，我通常会{{habit1}}并且{{habit2}}，这有助于我保持{{advantage}}。总的来说，这些特点使{{topic}}成为希望{{need}}的{{audience}}的理想选择。",
-    "我衷心希望你能充分利用这次机会{{outcome}}。如果你能在{{deadline}}前{{expect}}，我将不胜感激。"
+    "我衷心希望你能充分利用这次机会{{outcome}}。如需更多信息，随时告诉我。"
    ]
   },
   "notice": {
@@ -1769,8 +1769,8 @@
     ],
     [
      "p2s1#0",
-     "To be more specific, the main points can be arranged as follows.",
-     "更具体地说，我想请教以下几点。"
+     "To be more specific, my questions are as follows.",
+     "具体来说，我想请教以下几点。"
     ],
     [
      "p2_inquire_s2#0",
@@ -1800,7 +1800,7 @@
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。我写此信，是想与你详细探讨{{topic}}。",
-    "更具体地说，我想请教以下几点。具体而言，我想知道如何更好地适应当地的生活。另外，我不确定自己的计划是否可行，很想听听你的意见。鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
+    "具体来说，我想请教以下几点。具体而言，我想知道如何更好地适应当地的生活。另外，我不确定自己的计划是否可行，很想听听你的意见。鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
@@ -1823,8 +1823,8 @@
     ],
     [
      "p2s1#0",
-     "To be more specific, the main points can be arranged as follows.",
-     "更具体地说，我想谈以下几点。"
+     "To be more specific, what I would like to discuss falls into three parts.",
+     "具体来说，我想谈的有三点。"
     ],
     [
      "p2_opinion_s2#0",
@@ -1842,9 +1842,9 @@
      "原因在于，这类记录能帮我们重新发现平凡时刻中的美好。"
     ],
     [
-     "p3#0",
-     "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
-     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。"
+     "",
+     "I would be glad to hear your own view on this matter.",
+     "也很想听听你自己对这件事的看法。"
     ],
     [
      "p3#2",
@@ -1854,8 +1854,8 @@
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。非常高兴收到你的来信。借此信，我想分享我对{{topic}}的看法。",
-    "更具体地说，我想谈以下几点。说实话，你分享的内容让我深有感触，尤其是{{detail}}。依我看，这体现了你细致的观察和对生活真诚的热爱。原因在于，这类记录能帮我们重新发现平凡时刻中的美好。",
-    "如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。"
+    "具体来说，我想谈的有三点。说实话，你分享的内容让我深有感触，尤其是{{detail}}。依我看，这体现了你细致的观察和对生活真诚的热爱。原因在于，这类记录能帮我们重新发现平凡时刻中的美好。",
+    "也很想听听你自己对这件事的看法。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   }
  },
