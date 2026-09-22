@@ -1,5 +1,28 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-22 整信作文化：精选润色范文 + 作文排版]
+
+- **背景**：用户要求「取消整信的星星 / 像一篇作文的格式有缩进 / 润色句子（类比大作文那轮）/ 选最好的句子构成作文」。
+- **① 数据层新增精选润色范文 `letters`**（`small_writing_extra.LETTERS` → build 注入 json）：
+  10 类各一封、每封 5~7 句 76~94 词（连称呼落款约 100 词），行 = [src, en, cn]（src=来源 bank#idx）。
+  选句思路：**通知无问候句**（直接 issue-notice 开头）；**感谢/祝贺/介绍/观点不带 p2s1 引出**
+  （自带 To be more specific / To be honest 等衔接开头）；建议信用建议专用引出；邀请信用活动安排引出；
+  每封衔接词节奏（To begin with → In addition → Finally）。润色克制（贴原意不过度发挥）：
+  - EN 润 1 处：advice_s3 `it is strongly recommended that you should` → `you are also advised to`
+    （与 s2 的 strongly recommended 去重）
+  - CN 润十余处：问候「希望收到此信时你一切安好」、congrats_s3 补漏译「尤其是在应对{{topic}}的过程中」、
+    notice_s3「条理清晰」、apology 来意「我写此信」、投诉「正式反映…出现的问题」去翻译腔等
+- **② 作文排版**（整信区）：
+  - **去星星/去序号/去 tag 徽章**（句子库检索视图保留全套徽章——jsdom 确认 59 stars 仍在）
+  - 正文句改 **inline span 连排成段** + `.sw-para-body { text-indent: 2em }` 首行缩进 + 衬线体 + 1.95 行距
+  - **落款右对齐**（`.sw-para-sig text-align:right`）、称呼顶格、NOTICE 居中
+  - 句后跟隐藏块 `.sw-ls-extra`（display:none 不打断段落流），当前句才展开译文/示例；
+    all-cn 开关只放全部中文、示例/升级仍跟当前句；hover/当前句背景用 box-decoration-break 跨行
+- **③ 高亮键双轨**：来源未改的句沿用句库键（跨视图共享划词），**润色句独立键 `L:类型#序`**
+  （`swBuildKeyMap` 放既有键之后预注册，老高亮索引不移位）；`SW_MK_SEL` 收编 `.sw-ls`。
+  分段自动化：letters 按来源 bank 的 part 在 p1/p2/p3 间插 br。
+- 验证：jsdom **38/39 + 词数补测 5/5 全过**（唯一失败是测试把隐藏真题示例计入词数的口径问题，已修正：
+  advice 94 / invite 91 / notice 89 / thanks 79 / opinion 76 词）。SW en2-f3de97e2。
 ## [2026-09-22 小作文板块重做：整信背诵主区]
 
 - **背景**：用户反馈「太多类型太多段了 不方便背诵 要不搞成整体的 然后点击切换句子」。

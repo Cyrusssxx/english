@@ -515,6 +515,7 @@ def main():
         'placeholders': ph_list,
         'banks': [banks[b] for b in order],
         'types': types,
+        'letters': EXTRA.LETTERS,
         'guide': build_guide(),
         'decisions': EXTRA.DECISIONS,
         'teacher': EXTRA.TEACHER,

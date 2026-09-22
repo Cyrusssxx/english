@@ -65,6 +65,9 @@ function swBuildKeyMap() {
     swKeyNext = 0;
     (SW.banks || []).forEach(b => (b.items || []).forEach((_, i) => swKeyIdxOf(b.id + '#' + i)));
     ['note1', 'note2', 'note3', 'noteType'].forEach(swKeyIdxOf);
+    // 精选范文里润色过的句子用独立键 L:类型#序（放在既有键之后，保证老高亮索引不移位）
+    Object.keys(SW.letters || {}).forEach(t =>
+        (SW.letters[t] || []).forEach((_, i) => swKeyIdxOf('L:' + t + '#' + i)));
 }
 
 /* ---------- 渲染 ---------- */
@@ -191,7 +194,9 @@ function swPick(bankId, kw) {
     return items.find(it => it.tier === 'core') || items[0];
 }
 
-/** 拼一封完整信 → 行结构数组（kind: title/sal/sent/br/sig/signame/signote） */
+/** 拼一封完整信 → 行结构数组（kind: title/sal/sent/br/sig/signame/signote）
+ *  优先用数据层精选润色范文 SW.letters[类型]（行 = [src, en, cn]，src=来源 bank#idx）；
+ *  缺失时回落机械拼装（tag 匹配 + must 优先）。 */
 function swLetterLines(typeId) {
     const types = SW.types || [];
     const t = types.find(x => x.id === typeId) || types[0];
@@ -199,35 +204,74 @@ function swLetterLines(typeId) {
     const kw = SW_TYPE_KW[t.id] || '';
     const isNotice = t.id === 'notice';
     const out = [];
-    const sent = (bankId, item) => {
+    let sentIdx = 0;
+    /** src 来源句未改动 → 共享句库高亮键；润色过的句子 → 独立 L:类型#序 键 */
+    const pushSent = (en, cn, src, orig) => {
+        const same = !!orig && orig.en === en;
+        const parts = String(src || '').split('#');
+        out.push({
+            kind: 'sent',
+            bank: same ? parts[0] : null,
+            idx: same ? Number(parts[1]) : -1,
+            k: same ? src : ('L:' + t.id + '#' + sentIdx),
+            item: {
+                en: en, cn: cn,
+                alts: same ? (orig.alts || '') : '',
+                ex: same ? (orig.ex || []) : [],
+                tier: '', tag: ''
+            }
+        });
+        sentIdx++;
+    };
+    const srcOrig = src => {
+        const p = String(src || '').split('#');
+        const items = ((swBank(p[0]) || {}).items) || [];
+        return items[Number(p[1])] || null;
+    };
+    const emitBank = (bankId, item) => {
         if (!item) return;
         const items = ((swBank(bankId) || {}).items) || [];
-        out.push({ kind: 'sent', bank: bankId, idx: items.indexOf(item), item: item });
+        const i = items.indexOf(item);
+        pushSent(item.en, item.cn, bankId + '#' + i, item);
     };
     // 格式行：通知 = 居中标题 NOTICE；其余 = 称呼顶格
     out.push(isNotice ? { kind: 'title', text: 'NOTICE' } : { kind: 'sal', text: 'Dear Sir or Madam,' });
-    // 第一段：问候（p1s1 core）+ 来意（p1s2 按类型 tag）
-    sent('p1s1', swPick('p1s1', ''));
-    sent('p1s2', swPick('p1s2', kw));
-    out.push({ kind: 'br' });
-    // 第二段：通用引出句 + 本类型 2~4 句（must 优先）
-    sent('p2s1', swPick('p2s1', t.id === 'advice' ? '建议' : (t.id === 'invite' ? '活动安排' : '')));
-    const mid = (t.banks || []).filter(id => ['p1s1', 'p1s2', 'p2s1', 'p3'].indexOf(id) < 0);
-    mid.forEach(id => {
-        const items = ((swBank(id) || {}).items) || [];
-        if (items.length) sent(id, items.find(it => it.tier === 'must') || items[0]);
-    });
-    out.push({ kind: 'br' });
-    // 第三段：收尾（通知用带 notice 的专场收尾，其余 core）
-    const p3items = ((swBank('p3') || {}).items) || [];
-    sent('p3', (isNotice && p3items.find(it => /notice/i.test(it.en || ''))) || swPick('p3', ''));
+    const L = (SW.letters || {})[t.id];
+    if (L && L.length) {
+        // 精选范文：按来源 bank 的 part 自动分段（p1* / p2* / p3 之间插 br）
+        let lastPart = null;
+        L.forEach(row => {
+            const src = String(row[0] || '');
+            const bank = swBank(src.split('#')[0]);
+            const part = bank ? bank.part : 1;
+            if (lastPart !== null && part !== lastPart) out.push({ kind: 'br' });
+            lastPart = part;
+            pushSent(row[1], row[2], src, srcOrig(src));
+        });
+    } else {
+        // 机械拼装（fallback）：问候 + 来意 | 引出 + 本类 must | 收尾
+        emitBank('p1s1', swPick('p1s1', ''));
+        emitBank('p1s2', swPick('p1s2', kw));
+        out.push({ kind: 'br' });
+        emitBank('p2s1', swPick('p2s1', t.id === 'advice' ? '建议' : (t.id === 'invite' ? '活动安排' : '')));
+        const mid = (t.banks || []).filter(id => ['p1s1', 'p1s2', 'p2s1', 'p3'].indexOf(id) < 0);
+        mid.forEach(id => {
+            const items = ((swBank(id) || {}).items) || [];
+            if (items.length) emitBank(id, items.find(it => it.tier === 'must') || items[0]);
+        });
+        out.push({ kind: 'br' });
+        const p3items = ((swBank('p3') || {}).items) || [];
+        emitBank('p3', (isNotice && p3items.find(it => /notice/i.test(it.en || ''))) || swPick('p3', ''));
+    }
     // 落款：通知不写人名落款（格式分提醒）
     if (isNotice) out.push({ kind: 'signote', text: '（通知类不写人名落款 · 落款按题目写组织名）' });
     else { out.push({ kind: 'sig', text: 'Yours sincerely,' }); out.push({ kind: 'signame', text: 'Li Ming' }); }
     return out;
 }
 
-/** 渲染整封信到 #swLetter（句块 .sw-line 带 data-k，与句子库共用高亮/批注键） */
+/** 渲染整封信到 #swLetter —— 作文排版：
+ *  正文句为 inline span 连排成段（首行缩进、无序号/星星/标签），句后跟隐藏块装译文/示例，
+ *  当前句（或全局译文开关）才展开。data-k：来源未改 = 句库键（共享高亮），润色句 = L:键。 */
 function swLetterRender() {
     const box = document.getElementById('swLetter');
     if (!box || !SW) return;
@@ -260,16 +304,16 @@ function swLetterRender() {
                 <div class="sw-ex-en">${swPh(e.en)}</div>
                 ${e.cn ? `<div class="sw-ex-cn">${swPh(e.cn)}</div>` : ''}
             </div>`).join('');
-        return `<div class="sw-line sw-ls" data-k="${swEsc(l.bank)}#${l.idx}" data-i="${i}">
-            <div class="sw-en"><span class="sw-no">${i + 1}</span>${swStars(it)}${it.tag ? `<span class="sw-tag">${swEsc(it.tag)}</span>` : ''}<span class="sw-en-txt">${swPh(it.en)}</span></div>
-            ${it.cn ? `<div class="sw-cn">${swPh(it.cn)}</div>` : ''}
-            ${it.alts ? swAlts(it.alts) : ''}
-            ${ex}
-        </div>`;
+        return `<span class="sw-ls" data-k="${swEsc(l.k)}" data-i="${i}">${swPh(it.en)}</span>`
+            + `<div class="sw-ls-extra" data-for="${i}">`
+            + (it.cn ? `<div class="sw-cn">${swPh(it.cn)}</div>` : '')
+            + (it.alts ? swAlts(it.alts) : '')
+            + ex
+            + `</div>`;
     }).join('') + '</div>').join('');
     swCur = -1;
     swLetterSync();
-    swRestoreAll();   // 高亮/批注按 data-k 重建（与句子库视图共用同一批标记）
+    swRestoreAll();   // 高亮/批注按 data-k 重建（来源句与句子库视图共享，润色句走 L:键）
 }
 
 /** 同步当前句高亮、进度、按钮态、译文开关 */
@@ -641,7 +685,7 @@ const SW_MK_KEY = 'sw_mk_v1';
 const SW_ANNO_KEY = 'sw_anno_v1';
 const SW_HL_COLORS = ['yellow', 'green', 'blue', 'pink'];
 const SW_HL_CN = { yellow: '黄色', green: '绿色', blue: '蓝色', pink: '粉色' };
-const SW_MK_SEL = '.sw-line, .sw-note';
+const SW_MK_SEL = '.sw-line, .sw-note, .sw-ls';   // .sw-ls = 整信正文的句 span（作文排版）
 let swMarks = [];        // 高亮 [{ c: 正文块序号, s: 起, e: 止, k: 颜色名 }]
 let swAnnos = {};        // 行批注 { 正文块序号: 文本 }
 let swHlBar = null;      // 划词浮条

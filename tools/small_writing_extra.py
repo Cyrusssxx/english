@@ -307,3 +307,94 @@ FRAMEWORK = [
     {'en': 'I would appreciate it if you could ... / Looking forward to your early reply.', 'trans': '如蒙……将不胜感激 / 期待您的早日回复。',
      'cn': '⑤ 收尾（p3 必背）：行动请求或期待回复；落款 Yours sincerely, Li Ming。'},
 ]
+
+# ---------------- 整信背诵：10 类各一封精选润色范文 ----------------
+# 每行 [src, en, cn]：src = 来源 bank#idx（en 与来源一致时前端共享高亮键，可跨视图同步划词）；
+# en/cn 在句库原句基础上做过选句与润色（去衔接重复、补漏译、顺语域），占位符 {{}} token 保持不变。
+# 选句思路：每封 5~8 句约 100 词；通知无问候句；感谢/祝贺/介绍/观点不带 p2s1（自带衔接开头句）。
+LETTERS = {
+    'advice': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#9', 'The primary aim of this letter is to offer some suggestions on {{topic}}.', '我写信的主要目的，是就{{topic}}提出几点建议。'],
+        ['p2s1#1', 'As for the practical measures, my suggestions are listed as follows.', '至于具体措施，我的建议如下。'],
+        ['p2_advice_s2#0', 'To begin with, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}.', '首先，强烈建议你把{{ving}}{{topic}}落到实处，这有助于你更清楚地认识{{detail}}。'],
+        ['p2_advice_s3#0', 'In addition, you are also advised to {{task}} so as to improve the situation.', '此外，也建议你{{task}}，以便改善现状。'],
+        ['p2_advice_s4#0', 'Finally, it is advisable for you to {{task}}. Only in this way can you truly {{benefit}}.', '最后，建议你{{task}}。唯有如此，你才能真正{{benefit}}。'],
+        ['p3#0', 'I would appreciate it very much if you could {{expect}} by {{deadline}}.', '如果你能在{{deadline}}前{{expect}}，我将不胜感激。'],
+    ],
+    'invite': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#6', 'I am writing to invite you to take part in {{topic}}.', '我写信是想邀请你参加{{topic}}。'],
+        ['p2s1#2', 'As for the planned event, the main arrangements are as follows.', '至于本次活动，具体安排如下。'],
+        ['p2_invite_s2#0', 'In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.', '具体而言，我想邀请你{{join}}{{topic}}，这将为你带来{{gain}}。'],
+        ['p2_invite_s3#0', 'In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which is of great benefit to you.', '此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这对你大有裨益。'],
+        ['p2_invite_s4#0', 'Finally, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.', '最后，你的到来将使{{topic}}更有意义，也能让你{{benefit}}。'],
+        ['p3#4', 'I sincerely hope that you will make full use of this opportunity to {{outcome}}.', '我衷心希望你能充分利用这次机会{{outcome}}。'],
+    ],
+    'thanks': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#5', 'I am writing to express my sincere gratitude for your help.', '我写此信，为你的帮助向你表达诚挚的谢意。'],
+        ['p2_thanks_s2#0', 'I would like to express my heartfelt thanks for the warm reception you gave me during my stay.', '我想衷心感谢你在我逗留期间给予的热情接待。'],
+        ['p2_thanks_s3#0', 'What impressed me most was your patience and kindness, which made me feel at home.', '最让我感动的是你的耐心与友善，让我有宾至如归的感觉。'],
+        ['p2_thanks_s2#1', 'Without your generous help, I could never have made such progress in {{topic}}.', '若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。'],
+        ['p3#2', 'Thank you for your time and attention, and I look forward to your positive response.', '感谢你抽时间读这封信，期待你的回复。'],
+    ],
+    'congrats': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#7', 'Please allow me to extend my warmest congratulations to you.', '请允许我向你致以最热烈的祝贺。'],
+        ['p2_congrats_s2#0', 'To be more specific, your remarkable achievement in {{topic}} clearly shows your {{quality}}.', '更具体地说，你在{{topic}}上的出色表现清楚地展现了你的{{quality}}。'],
+        ['p2_congrats_s3#0', 'To a large extent, this success comes from your willingness to {{effort}}, especially when dealing with {{topic}}.', '在很大程度上，这一成功源于你勇于{{effort}}，尤其是在应对{{topic}}的过程中。'],
+        ['p2_congrats_s4#0', 'Finally, this achievement in {{topic}} will surely encourage you to {{next step}}, helping you reach {{goal}}.', '最后，{{topic}}上的这一成就必将激励你{{next step}}，助你迈向{{goal}}。'],
+        ['p3#4', 'I sincerely hope that you will make full use of this opportunity to {{outcome}}.', '我衷心希望你能充分利用这次机会{{outcome}}。'],
+    ],
+    'apology': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#3', 'This letter is intended to offer a sincere apology for the problems caused by {{topic}}.', '我写此信，为{{topic}}所引起的问题向你致以诚挚的歉意。'],
+        ['p2s1#0', 'To be more specific, the main points can be arranged as follows.', '更具体地说，情况如下。'],
+        ['p2_apology_s2#0', 'At this point, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}.', '在此我必须承认，我在{{topic}}上的{{fault}}已经造成了{{impact}}。'],
+        ['p2_apology_s3#0', 'Although {{cause}} partly explains why this happened, the main responsibility still lies with me.', '尽管{{cause}}在一定程度上解释了事情的起因，但主要责任仍在我。'],
+        ['p3#0', 'I would appreciate it very much if you could {{expect}} by {{deadline}}.', '如果你能在{{deadline}}前{{expect}}，我将不胜感激。'],
+    ],
+    'complaint': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#10', 'This letter serves as a formal complaint about the recent problems with {{topic}}.', '我写此信，正式反映近期{{topic}}出现的问题。'],
+        ['p2s1#0', 'To be more specific, the main points can be arranged as follows.', '更具体地说，情况如下。'],
+        ['p2_complaint_s2#0', 'To my disappointment, the {{product}} I bought from your online store last week has failed to work properly.', '令我失望的是，上周在贵店购买的{{product}}无法正常使用。'],
+        ['p2_complaint_s2#1', 'Specifically, {{problem}} appeared only three days after it arrived.', '具体来说，到货仅三天就出现了{{problem}}。'],
+        ['p2_complaint_s3#0', 'I would appreciate it if you could arrange a repair or a full refund as soon as possible.', '若你能尽快安排维修或全额退款，我将不胜感激。'],
+        ['p3#0', 'I would appreciate it very much if you could {{expect}} by {{deadline}}.', '如果你能在{{deadline}}前{{expect}}，我将不胜感激。'],
+    ],
+    'intro': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#4', 'In this letter, I would like to introduce {{topic}} to you as an excellent option.', '在这封信里，我想把{{topic}}作为极佳的选择介绍给你。'],
+        ['p2_intro_s2#0', 'To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.', '具体而言，{{topic}}指的是{{subject}}，其突出特点是{{feature}}。'],
+        ['p2_intro_s3#0', 'To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.', '首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。'],
+        ['p2_intro_s4#0', 'Taken together, these features make {{topic}} an ideal choice for {{audience}} who wish to {{need}}.', '总的来说，这些特点使{{topic}}成为希望{{need}}的{{audience}}的理想选择。'],
+        ['p3#4', 'I sincerely hope that you will make full use of this opportunity to {{outcome}}.', '我衷心希望你能充分利用这次机会{{outcome}}。'],
+    ],
+    'notice': [
+        ['p1s2#2', 'In order to further promote {{topic}}, our school has decided to issue the following notice.', '为进一步推动{{topic}}，学校决定发布以下通知。'],
+        ['p2s1#2', 'As for the planned event, the main arrangements are as follows.', '现将本次活动的具体安排通知如下。'],
+        ['p2_notice_s2#0', 'First, {{time}} has been set as the official time for {{topic}}, and all {{audience}} are required to attend on time.', '首先，{{time}}定为{{topic}}的正式时间，届时全体{{audience}}须准时参加。'],
+        ['p2_notice_s3#0', 'Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, forming a clear structure.', '此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，条理清晰。'],
+        ['p2_notice_s4#0', 'Finally, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way.', '最后，全体{{audience}}须{{requirement}}，以确保{{topic}}有序进行。'],
+        ['p3#5', 'Please read this notice carefully and pass it on to those concerned.', '请仔细阅读本通知并转告相关人员。'],
+    ],
+    'inquire': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#8', 'The purpose of this letter is to discuss {{topic}} with you in detail.', '我写此信，是想与你详细探讨{{topic}}。'],
+        ['p2s1#0', 'To be more specific, the main points can be arranged as follows.', '更具体地说，我想请教以下几点。'],
+        ['p2_inquire_s2#0', 'In particular, I would like to know how I can better adapt to the local way of life.', '具体而言，我想知道如何更好地适应当地的生活。'],
+        ['p2_inquire_s2#1', 'More specifically, I am not sure whether my plan is practical, so I would value your opinion.', '更具体地说，我不确定自己的计划是否可行，很想听听你的意见。'],
+        ['p2_inquire_s3#0', 'Since you are familiar with the situation there, your advice would be of great value to me.', '鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。'],
+        ['p3#0', 'I would appreciate it very much if you could {{expect}} by {{deadline}}.', '如果你能在{{deadline}}前{{expect}}，我将不胜感激。'],
+    ],
+    'opinion': [
+        ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+        ['p1s2#1', 'With this letter, I would like to share my views on {{topic}}.', '借此信，我想分享我对{{topic}}的看法。'],
+        ['p2_opinion_s2#0', 'To be honest, I am deeply impressed by what you shared, especially {{detail}}.', '说实话，你分享的内容让我深有感触，尤其是{{detail}}。'],
+        ['p2_opinion_s2#1', 'If I may say so, it reflects your careful observation and genuine love for life.', '依我看，这体现了你细致的观察和对生活真诚的热爱。'],
+        ['p2_opinion_s3#0', 'The reason is that such records help us rediscover the beauty of ordinary moments.', '原因在于，这类记录能帮我们重新发现平凡时刻中的美好。'],
+        ['p3#2', 'Thank you for your time and attention, and I look forward to your positive response.', '感谢你抽时间读这封信，期待你的回复。'],
+    ],
+}
