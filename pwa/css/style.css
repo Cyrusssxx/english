@@ -4428,20 +4428,24 @@ html.dark .wr-frame-title, html.dark .rc-frame-title { color: #5eead4; }
 .wr-zoom-close { position: absolute; top: 18px; right: 24px; font-size: 22px; color: #fff; cursor: pointer; }
 
 .phrase-zone { margin-top: 18px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); }
-.phrase-zone .pz-head { font-weight: 700; color: var(--text); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.phrase-zone .pz-head { font-weight: 700; color: var(--text); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .phrase-zone .pz-count { font-size: .78rem; font-weight: 400; color: var(--text-light); background: var(--ann-bg); border: 1px solid var(--ann-border); padding: 1px 8px; border-radius: 20px; }
 .phrase-zone .pz-tip { font-size: .76rem; font-weight: 400; color: var(--text-light); }
-.phrase-zone .pz-item { padding: 9px 0; border-bottom: 1px dashed var(--border); }
-.phrase-zone .pz-item:last-child { border-bottom: none; }
-.phrase-zone .pz-ph { font-size: .98rem; line-height: 1.5; }
-.phrase-zone .pz-meaning { font-size: .86rem; color: var(--text-light); margin-left: 6px; }
-.phrase-zone .pz-ex { font-family: Georgia, "Times New Roman", serif; font-size: .93rem; line-height: 1.65; color: var(--text); margin-top: 4px; }
-.phrase-zone .pz-ex mark.pz-hl { background: #fff3b0; color: inherit; padding: 0 2px; border-radius: 3px; }
-html.dark .phrase-zone .pz-ex mark.pz-hl { background: #6b5d1e; }
-/* 例句里的词组（annotate 标的 .phrase）在词组区染淡黄，突出本条主角 */
-.phrase-zone .pz-ex .phrase { background: #fff3b0; padding: 0 2px; border-radius: 3px; }
-html.dark .phrase-zone .pz-ex .phrase { background: #6b5d1e; }
-.phrase-zone .pz-ex-cn { font-size: .83rem; color: var(--text-light); line-height: 1.6; margin-top: 2px; }
+/* 词组：单行紧凑 + 双栏（例句已移除） */
+.phrase-zone .pz-list { columns: 2; column-gap: 26px; }
+.phrase-zone .pz-item { display: flex; align-items: baseline; gap: 7px; padding: 4px 0; break-inside: avoid; font-size: .93rem; line-height: 1.55; }
+.phrase-zone .pz-idx { flex: none; width: 1.3em; font-size: .72rem; color: var(--text-light); text-align: right; }
+.phrase-zone .pz-item b { font-weight: 600; }
+.phrase-zone .pz-meaning { font-size: .84rem; color: var(--text-light); min-width: 0; }
+@media (max-width: 720px) { .phrase-zone .pz-list { columns: 1; } }
+/* 长难句精选（词组下方，点句回原文） */
+.phrase-zone .ls-head { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); }
+.phrase-zone .ls-item { padding: 8px 0; border-bottom: 1px dashed var(--border); cursor: pointer; }
+.phrase-zone .ls-item:last-child { border-bottom: none; }
+.phrase-zone .ls-en { font-family: Georgia, "Times New Roman", serif; font-size: .95rem; line-height: 1.72; color: var(--text); }
+.phrase-zone .ls-en .phrase { background: #fff3b0; padding: 0 2px; border-radius: 3px; }
+html.dark .phrase-zone .ls-en .phrase { background: #6b5d1e; }
+.phrase-zone .ls-cn { font-size: .84rem; color: var(--text-light); line-height: 1.6; margin-top: 3px; }
 
 .rc-collapse > summary.rc-h2 {
     cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px;

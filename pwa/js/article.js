@@ -1501,27 +1501,58 @@ function collectArticlePhrases() {
     return final;
 }
 
-/** 词组区 HTML（词组 + 释义 + 文中例句，例句内词组 <mark> 高亮，例句带中文） */
+/** 长难句精选：真题定位句大幅优先 + 结构复杂度打分，取 ≤3 句（按原文顺序）。
+ *  价值判断：① 被真题定位句考过的句子最值得精读（+60）② 长度 ≥26 词 ③ 从句引导词/逗号（插入语）加权。
+ *  不足 3 句时长度门槛放宽到 20 词补位。 */
+function collectLongSentences() {
+    if (!article || !(article.sentences || []).length) return [];
+    const rel = new Set();
+    for (const q of (article.questions || [])) (q.related_sentences || []).forEach(sid => rel.add(sid));
+    const CLAUSE = /\b(?:which|that|when|where|while|although|though|because|since|whether|what|how|after|before|until|than|who|whom|if|unless)\b/gi;
+    const scored = (article.sentences || []).map(s => {
+        const en = s.en || '';
+        const words = (en.match(/[A-Za-z][A-Za-z'\-]*/g) || []).length;
+        const commas = (en.match(/,/g) || []).length;
+        const clauses = (en.match(CLAUSE) || []).length;
+        return { s, words, score: words + commas * 1.5 + clauses * 5 + (rel.has(s.id) ? 60 : 0) };
+    });
+    const top = scored.filter(x => x.words >= 26).sort((a, b) => b.score - a.score).slice(0, 3);
+    if (top.length < 3) {
+        const picked = new Set(top.map(x => x.s.id));
+        const more = scored.filter(x => x.words >= 20 && !picked.has(x.s.id)).sort((a, b) => b.score - a.score);
+        top.push(...more.slice(0, 3 - top.length));
+    }
+    const order = new Map(article.sentences.map((s, i) => [s.id, i]));
+    return top.map(x => x.s).sort((a, b) => order.get(a.id) - order.get(b.id));
+}
+
+/** 词组区 HTML：词组+释义单行紧凑、双栏排布（例句/中文例句已移除——占篇幅过长）；下方附长难句精选 */
 function buildPhraseZoneHtml(rows) {
     if (!rows.length) return '';
-    // 例句：优先用正文同款标注（annotate）→ 例句里词/词组可点查释义；找不到句子时降级为纯文本 + 词组高亮
-    const exHtml = row => {
-        const s = (article.sentences || []).find(x => x.id === row.sid);
-        if (s && typeof annotate === 'function') {
-            try { return annotate(s).html; } catch (e) { /* 降级 */ }
-        }
-        const escT = esc(row.en);
-        const re = new RegExp('\\b(' + row.key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')\\b', 'gi');
-        return escT.replace(re, '<mark class="pz-hl">$1</mark>');
-    };
-    return `<div class="pz-head">📚 本篇词组 <span class="pz-count">${rows.length} 条</span><span class="pz-tip">精读模式 · 均出自本文原句，按出现顺序</span></div>
-        <div class="pz-list">${rows.map(x => `
-            <div class="pz-item">
-                <div class="pz-ph"><b>${esc(x.key)}</b> <span class="pz-meaning">${esc(x.meaning)}</span></div>
-                <div class="pz-ex">${exHtml(x)}</div>
-                ${x.cn ? `<div class="pz-ex-cn">${esc(x.cn)}</div>` : ''}
-            </div>`).join('')}
-        </div>`;
+    const ls = collectLongSentences();
+    const lsHtml = !ls.length ? '' : `
+        <div class="pz-head ls-head">🧩 长难句 <span class="pz-count">${ls.length} 句</span><span class="pz-tip">真题定位句优先 · 点句回原文</span></div>
+        <div class="ls-list">${ls.map(s => {
+            let en = '';
+            if (typeof annotate === 'function') { try { en = annotate(s).html; } catch (e) { /* 降级纯文本 */ } }
+            en = en || esc(s.en || '');
+            return `<div class="ls-item" onclick="lsJump('${s.id}')" title="点击回到原句">
+                <div class="ls-en">${en}</div>${s.cn ? `<div class="ls-cn">${esc(s.cn)}</div>` : ''}
+            </div>`;
+        }).join('')}</div>`;
+    return `<div class="pz-head">📚 本篇词组 <span class="pz-count">${rows.length} 条</span><span class="pz-tip">精读模式 · 按出现顺序</span></div>
+        <div class="pz-list">${rows.map((x, i) => `
+            <div class="pz-item"><span class="pz-idx">${i + 1}</span><b>${esc(x.key)}</b><span class="pz-meaning">${esc(x.meaning)}</span></div>`).join('')}
+        </div>${lsHtml}`;
+}
+
+/** 点长难句 → 平滑滚回原句并闪烁 */
+function lsJump(sid) {
+    const el = document.getElementById('s-' + sid);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.classList.remove('nt-flash'); void el.offsetWidth; el.classList.add('nt-flash');
+    setTimeout(() => el.classList.remove('nt-flash'), 1600);
 }
 
 let _phraseZoneHtml = null;   // 缓存（重渲染不重复扫描）
