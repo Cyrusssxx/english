@@ -4177,6 +4177,14 @@ html.sw-zoom { font-size: 16.5px; }
     padding: 8px 12px; border-radius: 0 8px 8px 0; margin: 4px 0 10px;
 }
 .sw-para-cn[hidden] { display: none; }
+/* 点句翻译：句后轻量译块（hidden 不打断段落流；点击译块本身关闭） */
+.sw-ls-cn {
+    display: block; text-indent: 0; font-family: system-ui, sans-serif;
+    font-size: .86rem; color: var(--text-light); line-height: 1.7;
+    border-left: 2px solid var(--ann-border); padding: 2px 0 2px 10px;
+    margin: 3px 0 6px; cursor: pointer;
+}
+.sw-ls-cn[hidden] { display: none; }
 /* 书信格式：落款右对齐（称呼顶格、通知标题居中见各自规则） */
 .sw-para-sig { text-indent: 0; text-align: right; }
 .sw-ctrl { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 12px; }

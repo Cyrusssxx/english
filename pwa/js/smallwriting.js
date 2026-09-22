@@ -307,7 +307,9 @@ function swLetterRender() {
             if (l.kind === 'signote') return `<div class="sw-signote">${swEsc(l.text)}</div>`;
             const it = l.item;
             const i = no++;
-            return `<span class="sw-ls" data-k="${swEsc(l.k)}" data-i="${i}">${swPh(it.en)}</span>`;
+            // 句译块：默认 hidden（不打断段落流），点句子开合（移植阅读页的点句翻译）
+            return `<span class="sw-ls" data-k="${swEsc(l.k)}" data-i="${i}" title="点句看该句中文">${swPh(it.en)}</span>`
+                + `<div class="sw-ls-cn" data-for="${i}" hidden>${it.cn ? swPh(it.cn) : ''}</div>`;
         }).join('');
         if (isBody && swLetterCnParas[pi]) {
             html += `<button type="button" class="sw-para-cn-btn" data-para="${pi}">📖 本段译文 ▾</button>`
@@ -384,10 +386,23 @@ function swLetterInit() {
     if (swLetterBound) return;
     swLetterBound = true;
     // 段末「本段译文」按钮（委托，重渲染后仍有效）
+    // 点击委托（重渲染后仍有效）：段末译文按钮 / 点句开合该句中文 / 点译块关闭
     const lbox = document.getElementById('swLetter');
     if (lbox) lbox.addEventListener('click', e => {
-        const b = e.target.closest ? e.target.closest('.sw-para-cn-btn') : null;
-        if (b && b.dataset.para != null) swParaToggle(Number(b.dataset.para));
+        if (!e.target.closest) return;
+        const pb = e.target.closest('.sw-para-cn-btn');
+        if (pb && pb.dataset.para != null) { swParaToggle(Number(pb.dataset.para)); return; }
+        const cnBox = e.target.closest('.sw-ls-cn');
+        if (cnBox) { cnBox.hidden = true; return; }
+        const s = e.target.closest('.sw-ls');
+        if (s && s.dataset.i != null) {
+            // 划词选中文字 / 点已有高亮时不触发（避免选词高亮误开译文）
+            const sel = typeof window.getSelection === 'function' ? window.getSelection() : null;
+            if (sel && String(sel).length) return;
+            if (e.target.closest('mark.note-hl')) return;
+            const cn = lbox.querySelector('.sw-ls-cn[data-for="' + s.dataset.i + '"]');
+            if (cn) cn.hidden = !cn.hidden;
+        }
     });
     const tbox = document.getElementById('swTypeTabs');
     if (tbox) tbox.addEventListener('click', e => {
