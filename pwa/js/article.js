@@ -572,28 +572,16 @@ function renderArticle() {
     if (article.topic) {
         html += `<div class="read-summary"><span class="rs-label">本文概要</span>${esc(article.topic)}</div>`;
     }
-    // 新题型空位映射：小标题题 → para_no 段首空位卡；匹配题 → 人名首次出现句前徽标
+    // 新题型空位映射：小标题题 → para_no 段首空位卡
+    // （匹配题不再注入人名徽标行——徽标会提示答案所在段落，剧透做题；2026-09-22 应用户要求移除）
     const ntQs = article.type === 'newtype' ? (article.questions || []) : [];
-    const paraQMap = {}, personQMap = {};
-    ntQs.forEach(q => {
-        if (q.para_no) paraQMap[q.para_no] = q;
-        if (q.person) personQMap[q.person.toLowerCase()] = q;
-    });
+    const paraQMap = {};
+    ntQs.forEach(q => { if (q.para_no) paraQMap[q.para_no] = q; });
     paras.forEach((sents, i) => {
         html += `<div class="para${isCompact ? ' para-compact' : ''}"><div class="para-tag">P${i + 1}</div>`;
         const slotQ = paraQMap[i + 1];
         if (slotQ) html += ntSlotHtml(slotQ);
-        const personHit = new Set();
-        for (const s of sents) {
-            const en = (s.en || '');
-            let personQ = null;
-            for (const name in personQMap) {
-                if (personHit.has(name)) continue;
-                if (en.toLowerCase().includes(name)) { personQ = personQMap[name]; personHit.add(name); break; }
-            }
-            if (personQ) html += ntMatchRowHtml(personQ);
-            html += sentenceHtml(s);
-        }
+        for (const s of sents) html += sentenceHtml(s);
         html += '</div>';
     });
     // 全文参考译文（早期真题逐句译文缺失时，整篇译文仍有参考价值）
@@ -1208,17 +1196,9 @@ function ntSlotHtml(q) {
         </div>
     </div>`;
 }
-/** 匹配题：人名首次出现句前的作答徽标行（点击跳转到下方题块） */
-function ntMatchRowHtml(q) {
-    return `<div class="nt-match" id="ntm-${q.id}" onclick="ntGoto('${q.id}')">
-        <span class="nt-no">[${q.number}]</span>
-        <span class="nt-person">${esc(q.person)}</span>
-        <span class="nt-goto">在此作答 ▸</span>
-    </div>`;
-}
 /** 新题型「选项不重复」同步：匹配型（多项对应）与小标题对应都是 7 选 5，
  *  每个选项只能用一次；判断正误（T/F，2 项）可重复，不参与占用。
- *  作用：① 已被别题选中的字母置灰禁用 ② 选项池标出「已被 Qn 选用」 ③ 阅读区人名徽标行回显已选 */
+ *  作用：① 已被别题选中的字母置灰禁用 ② 选项池标出「已被 Qn 选用」+ 进度（均在答题面板，不在正文剧透） */
 function syncNtUsed() {
     if (!article || article.type !== 'newtype') return;
     const qs = article.questions || [];
@@ -1274,13 +1254,6 @@ function syncNtUsed() {
             pi.title = '';
         }
     }
-    for (const q of qs) {
-        const row = document.getElementById(`ntm-${q.id}`);
-        if (!row) continue;
-        const a = answerMap[q.id];
-        const slot = row.querySelector('.nt-goto');
-        if (slot) slot.textContent = a && a.user_answer ? `已选 ${a.user_answer}` : '在此作答 ▸';
-    }
     const head = document.querySelector('#ntPool .nt-pool-title');
     if (head) {
         const n = Object.keys(used).length;
@@ -1303,13 +1276,27 @@ async function ntPick(qid, key) {
     toggleNtOpts(qid, true);
     await onPick(qid, key);
 }
-/** 匹配题徽标：滚动到题块并闪烁高亮 */
-function ntGoto(qid) {
-    const el = document.getElementById('q-' + qid);
-    if (!el) return;
-    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    el.classList.add('nt-flash');
-    setTimeout(() => el.classList.remove('nt-flash'), 1200);
+/** 完形/新题型做题流水线：首次作答后自动定位下一道未答题（正向优先，答完尾部回卷到前面的漏答），
+ *  题块闪烁提示落点；完形同时闪烁正文里的下一个空格。全部答完则不跳。 */
+function advanceNextQ(qid) {
+    const qs = article.questions || [];
+    const i = qs.findIndex(x => x.id === qid);
+    if (i < 0) return;
+    const next = qs.slice(i + 1).find(x => !answerMap[x.id]) || qs.slice(0, i).find(x => !answerMap[x.id]);
+    if (!next) return;
+    jumpQ(next.id);
+    const el = document.getElementById('q-' + next.id);
+    if (el) {
+        el.classList.remove('nt-flash'); void el.offsetWidth; el.classList.add('nt-flash');
+        setTimeout(() => el.classList.remove('nt-flash'), 1300);
+    }
+    if (article.type === 'cloze') {
+        const blank = document.getElementById(`blank-${next.number}`);
+        if (blank) {
+            blank.classList.remove('nt-flash'); void blank.offsetWidth; blank.classList.add('nt-flash');
+            setTimeout(() => blank.classList.remove('nt-flash'), 1300);
+        }
+    }
 }
 
 function questionHtml(q) {
@@ -1385,9 +1372,12 @@ async function onPick(qid, key) {
     const q = article.questions.find(x => x.id === qid);
     if (!q) return;
     const ok = key === q.answer;
+    const firstPick = !answerMap[qid];      // 首次作答才自动跳下一题；改答案留在原地
     answerMap[qid] = { question_id: qid, user_answer: key, is_correct: ok ? 1 : 0 };
     await saveAnswer(qid, AID, key, ok);
     showResult(q, key, true);
+    // 完形/新题型：答完自动流水线到下一道未答题（阅读题不跳，保持逐题定位原文的节奏）
+    if (firstPick && (article.type === 'cloze' || article.type === 'newtype')) advanceNextQ(qid);
 }
 
 /** 显示某题的作答结果（restore=false 时也用于页面加载恢复） */
