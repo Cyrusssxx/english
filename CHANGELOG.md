@@ -1,5 +1,23 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-22 整信改分三段翻译 + 全信 ≥100 词]
+
+- **背景**：用户要求「去掉下一句的功能 / 翻译成段翻译分三段 / 词最少 100」。
+- **① 删逐句切换**：上一句/下一句/进度 n-N 按钮、点句切换、←→键盘翻句、swCur/swLetterGo、
+  句后逐句 extras（译文/示例块）**全部移除**（js + html + css 残留 0）。
+- **② 分三段翻译**：`letters` 结构 list → **`{rows, cn_paras}`**（cn_paras = 我润色的三段整体中文）。
+  每个正文段末尾一个「📖 本段译文 ▾」按钮 → 点开该段整段中文（primary 左导轨淡底块）；
+  「显示全部译文」总控三段且**跨类型保持**；段按钮独立开合、文案同步（收起本段译文 ▴）。
+  段译块 hidden 不参与排版（不打断作文段落流）；`.sw-para-cn[hidden]` 显式规则防 author 样式盖 UA hidden。
+- **③ 全信 ≥100 词**：逐封补句到 102–111 词（python+jsdom 双验证 10/10）——
+  thanks 换掉无效 src `p2_thanks_s3#1`（build 过滤后该 bank 仅 1 句）改用 p2s1#0 引出（段译顺成
+  「我想感谢以下几点」）；congrats +cg_s2#1、apology +p3#2、intro +p3#0、opinion +p1s1#1/p2s1#0/p3#0、
+  advice/invite/complaint/inquire/notice 各 +双收尾或要求句。
+- **④ 踩坑修复**：letters 改 dict 后 **`swBuildKeyMap` 的 L 键预注册没跟上**（`SW.letters[t].forEach`
+  对 dict 报错 → swInit 崩在渲染前、页面停「加载中」）→ 改读 `.rows`（兼容旧 list）。
+  **教训：数据结构变更必须 grep 所有消费点**（本次两处消费：swLetterLines 改了、swBuildKeyMap 漏了）。
+- 验证：jsdom **48/48**（逐句功能删净 5、段译交互 6、10 类词数+按钮 20、回归 12、notice 特判、
+  copy≥100 词、句库徽章/TOC 回归）。SW en2-8ffbfb90。
 ## [2026-09-22 整信作文化：精选润色范文 + 作文排版]
 
 - **背景**：用户要求「取消整信的星星 / 像一篇作文的格式有缩进 / 润色句子（类比大作文那轮）/ 选最好的句子构成作文」。

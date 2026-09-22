@@ -66,8 +66,12 @@ function swBuildKeyMap() {
     (SW.banks || []).forEach(b => (b.items || []).forEach((_, i) => swKeyIdxOf(b.id + '#' + i)));
     ['note1', 'note2', 'note3', 'noteType'].forEach(swKeyIdxOf);
     // 精选范文里润色过的句子用独立键 L:类型#序（放在既有键之后，保证老高亮索引不移位）
-    Object.keys(SW.letters || {}).forEach(t =>
-        (SW.letters[t] || []).forEach((_, i) => swKeyIdxOf('L:' + t + '#' + i)));
+    // letters 值为 {rows, cn_paras}（兼容旧的纯 list 结构）
+    Object.keys(SW.letters || {}).forEach(t => {
+        const v = SW.letters[t];
+        const rows = (v && v.rows) || (Array.isArray(v) ? v : []);
+        rows.forEach((_, i) => swKeyIdxOf('L:' + t + '#' + i));
+    });
 }
 
 /* ---------- 渲染 ---------- */
@@ -174,9 +178,9 @@ function swSyncOpenBtn() {
    点句子切换当前句（展开该句译文/示例），← → 键翻句；译文默认遮住方便自背。 */
 const SW_TYPE_KEY = 'sw_type_v1';
 let swType = 'advice';            // 当前信件类型 id
-let swCur = -1;                   // 当前句序号（-1 = 未选中，全部收起）
 let swAllCn = false;              // 「显示全部译文」开关
 let swLetterCache = [];           // 当前信的行结构（复制整封用）
+let swLetterCnParas = [];         // 当前信的分三段译文（段末按钮展开）
 let swLetterBound = false;
 
 /** 各类型来意句（p1s2）与引出句（p2s1）的 tag 匹配词 */
@@ -236,7 +240,9 @@ function swLetterLines(typeId) {
     };
     // 格式行：通知 = 居中标题 NOTICE；其余 = 称呼顶格
     out.push(isNotice ? { kind: 'title', text: 'NOTICE' } : { kind: 'sal', text: 'Dear Sir or Madam,' });
-    const L = (SW.letters || {})[t.id];
+    const Lraw = (SW.letters || {})[t.id];
+    const L = Lraw && (Lraw.rows || (Array.isArray(Lraw) ? Lraw : null));
+    swLetterCnParas = (Lraw && Lraw.cn_paras) || [];
     if (L && L.length) {
         // 精选范文：按来源 bank 的 part 自动分段（p1* / p2* / p3 之间插 br）
         let lastPart = null;
@@ -269,9 +275,9 @@ function swLetterLines(typeId) {
     return out;
 }
 
-/** 渲染整封信到 #swLetter —— 作文排版：
- *  正文句为 inline span 连排成段（首行缩进、无序号/星星/标签），句后跟隐藏块装译文/示例，
- *  当前句（或全局译文开关）才展开。data-k：来源未改 = 句库键（共享高亮），润色句 = L:键。 */
+/** 渲染整封信到 #swLetter —— 作文排版 + 分三段翻译：
+ *  正文句为 inline span 连排成段（首行缩进、无序号/星星/标签），段末带「📖 本段译文」按钮，
+ *  点击展开该段整体中文（三段分开，替代逐句翻译）。data-k：来源未改 = 句库键（共享高亮），润色句 = L:键。 */
 function swLetterRender() {
     const box = document.getElementById('swLetter');
     if (!box || !SW) return;
@@ -289,61 +295,54 @@ function swLetterRender() {
         if (!cur || cur.cls.indexOf('sw-para-body') < 0) { cur = { cls: 'sw-para sw-para-body', lines: [] }; groups.push(cur); }
         cur.lines.push(l);
     });
-    let no = 0;
-    box.innerHTML = groups.map(g => `<div class="${g.cls}">` + g.lines.map(l => {
-        if (l.kind === 'title') return `<div class="sw-title-line">${swEsc(l.text)}</div>`;
-        if (l.kind === 'sal') return `<div class="sw-sal">${swEsc(l.text)}</div>`;
-        if (l.kind === 'sig') return `<div class="sw-sig">${swEsc(l.text)}</div>`;
-        if (l.kind === 'signame') return `<div class="sw-signame">${swEsc(l.text)}</div>`;
-        if (l.kind === 'signote') return `<div class="sw-signote">${swEsc(l.text)}</div>`;
-        const it = l.item;
-        const i = no++;
-        const ex = (it.ex || []).map(e => `
-            <div class="sw-ex">
-                <div class="sw-ex-tag">✍ 真题示例${e.src ? ' · ' + swEsc(e.src) : ''}</div>
-                <div class="sw-ex-en">${swPh(e.en)}</div>
-                ${e.cn ? `<div class="sw-ex-cn">${swPh(e.cn)}</div>` : ''}
-            </div>`).join('');
-        return `<span class="sw-ls" data-k="${swEsc(l.k)}" data-i="${i}">${swPh(it.en)}</span>`
-            + `<div class="sw-ls-extra" data-for="${i}">`
-            + (it.cn ? `<div class="sw-cn">${swPh(it.cn)}</div>` : '')
-            + (it.alts ? swAlts(it.alts) : '')
-            + ex
-            + `</div>`;
-    }).join('') + '</div>').join('');
-    swCur = -1;
+    let no = 0, bodyNo = 0;
+    box.innerHTML = groups.map(g => {
+        const isBody = g.cls.indexOf('sw-para-body') >= 0;
+        const pi = isBody ? bodyNo++ : -1;
+        let html = g.lines.map(l => {
+            if (l.kind === 'title') return `<div class="sw-title-line">${swEsc(l.text)}</div>`;
+            if (l.kind === 'sal') return `<div class="sw-sal">${swEsc(l.text)}</div>`;
+            if (l.kind === 'sig') return `<div class="sw-sig">${swEsc(l.text)}</div>`;
+            if (l.kind === 'signame') return `<div class="sw-signame">${swEsc(l.text)}</div>`;
+            if (l.kind === 'signote') return `<div class="sw-signote">${swEsc(l.text)}</div>`;
+            const it = l.item;
+            const i = no++;
+            return `<span class="sw-ls" data-k="${swEsc(l.k)}" data-i="${i}">${swPh(it.en)}</span>`;
+        }).join('');
+        if (isBody && swLetterCnParas[pi]) {
+            html += `<button type="button" class="sw-para-cn-btn" data-para="${pi}">📖 本段译文 ▾</button>`
+                + `<div class="sw-para-cn" data-para="${pi}" hidden>${swPh(swLetterCnParas[pi])}</div>`;
+        }
+        return `<div class="${g.cls}">${html}</div>`;
+    }).join('');
+    swApplyAllCn();   // 「显示全部译文」状态跨类型保持
     swLetterSync();
     swRestoreAll();   // 高亮/批注按 data-k 重建（来源句与句子库视图共享，润色句走 L:键）
 }
 
-/** 同步当前句高亮、进度、按钮态、译文开关 */
+/** 同步「显示全部译文」按钮态 */
 function swLetterSync() {
-    const box = document.getElementById('swLetter');
-    if (!box) return;
-    const nodes = box.querySelectorAll('.sw-ls');
-    nodes.forEach(el => el.classList.toggle('on', Number(el.dataset.i) === swCur));
-    box.classList.toggle('sw-all-cn', swAllCn);
-    const pos = document.getElementById('swPos');
-    if (pos) pos.textContent = (swCur >= 0 ? String(swCur + 1) : '—') + ' / ' + nodes.length;
-    const pv = document.getElementById('swPrevBtn'), nx = document.getElementById('swNextBtn');
-    if (pv) pv.disabled = swCur <= 0;
-    if (nx) nx.disabled = nodes.length === 0 || swCur >= nodes.length - 1;
     const ab = document.getElementById('swAllCnBtn');
-    if (ab) { ab.textContent = swAllCn ? '只看当前句译文' : '显示全部译文'; ab.setAttribute('aria-pressed', swAllCn ? 'true' : 'false'); }
+    if (ab) { ab.textContent = swAllCn ? '收起全部译文' : '显示全部译文'; ab.setAttribute('aria-pressed', swAllCn ? 'true' : 'false'); }
 }
 
-/** 翻句（d = ±1）：首句前的「上一句」无效；末句后的「下一句」停在末句 */
-function swLetterGo(d) {
-    const n = document.querySelectorAll('#swLetter .sw-ls').length;
-    if (!n) return;
-    let i;
-    if (swCur < 0) { if (d < 0) return; i = 0; }
-    else i = swCur + d;
-    i = Math.max(0, Math.min(n - 1, i));
-    swCur = i;
-    swLetterSync();
-    const el = document.querySelector('#swLetter .sw-ls[data-i="' + i + '"]');
-    if (el && el.scrollIntoView) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+/** 按 swAllCn 状态铺开/收起三段译文（连带段末按钮文案） */
+function swApplyAllCn() {
+    const box = document.getElementById('swLetter');
+    if (!box) return;
+    box.querySelectorAll('.sw-para-cn').forEach(d => { d.hidden = !swAllCn; });
+    box.querySelectorAll('.sw-para-cn-btn').forEach(b => { b.textContent = swAllCn ? '📖 收起本段译文 ▴' : '📖 本段译文 ▾'; });
+}
+
+/** 点段末按钮：单独展开/收起该段译文 */
+function swParaToggle(pi) {
+    const box = document.getElementById('swLetter');
+    if (!box) return;
+    const d = box.querySelector('.sw-para-cn[data-para="' + pi + '"]');
+    const b = box.querySelector('.sw-para-cn-btn[data-para="' + pi + '"]');
+    if (!d) return;
+    d.hidden = !d.hidden;
+    if (b) b.textContent = d.hidden ? '📖 本段译文 ▾' : '📖 收起本段译文 ▴';
 }
 
 /** 复制整封（占位符 {{}} 保留原文，直接当模板） */
@@ -384,10 +383,11 @@ function swLetterInit() {
     swLetterRender();
     if (swLetterBound) return;
     swLetterBound = true;
+    // 段末「本段译文」按钮（委托，重渲染后仍有效）
     const lbox = document.getElementById('swLetter');
     if (lbox) lbox.addEventListener('click', e => {
-        const l = e.target.closest ? e.target.closest('.sw-ls') : null;
-        if (l && l.dataset.i != null) { swCur = Number(l.dataset.i); swLetterSync(); }
+        const b = e.target.closest ? e.target.closest('.sw-para-cn-btn') : null;
+        if (b && b.dataset.para != null) swParaToggle(Number(b.dataset.para));
     });
     const tbox = document.getElementById('swTypeTabs');
     if (tbox) tbox.addEventListener('click', e => {
@@ -398,25 +398,10 @@ function swLetterInit() {
         swLetterTabs();
         swLetterRender();
     });
-    const pv = document.getElementById('swPrevBtn'), nx = document.getElementById('swNextBtn');
-    if (pv) pv.addEventListener('click', () => swLetterGo(-1));
-    if (nx) nx.addEventListener('click', () => swLetterGo(1));
     const ab = document.getElementById('swAllCnBtn');
-    if (ab) ab.addEventListener('click', () => { swAllCn = !swAllCn; swLetterSync(); });
+    if (ab) ab.addEventListener('click', () => { swAllCn = !swAllCn; swApplyAllCn(); swLetterSync(); });
     const cb = document.getElementById('swCopyLetter');
     if (cb) cb.addEventListener('click', swLetterCopy);
-    // 键盘 ← → 翻句（仅当整信块在视口内、且焦点不在输入框时接管）
-    document.addEventListener('keydown', e => {
-        if (!e.target || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || e.target.isContentEditable) return;
-        if (e.altKey || e.ctrlKey || e.metaKey) return;
-        if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
-        const lb = document.getElementById('swLetterBlock');
-        if (!lb) return;
-        const r = lb.getBoundingClientRect();
-        if (!(r.bottom >= 0 && r.top <= (window.innerHeight || 800))) return;
-        e.preventDefault();
-        swLetterGo(e.key === 'ArrowLeft' ? -1 : 1);
-    });
 }
 
 /* ---------- 初始化 ---------- */

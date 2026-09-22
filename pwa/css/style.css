@@ -4162,25 +4162,21 @@ html.sw-zoom { font-size: 16.5px; }
     text-indent: 2em; line-height: 1.95;
     font-family: Georgia, "Times New Roman", serif; font-size: 1.03rem; color: var(--text);
 }
-.sw-letter .sw-ls {
-    cursor: pointer; padding: 0; margin: 0; border: none;
-    -webkit-box-decoration-break: clone; box-decoration-break: clone;
-    transition: background .12s;
+.sw-letter .sw-ls { padding: 0; margin: 0; border: none; }
+/* 分三段翻译：段末按钮 + 段译块（hidden 不参与排版，不打断段落流） */
+.sw-para-cn-btn {
+    display: block; text-indent: 0; margin: 4px 0 8px; padding: 0;
+    font-family: system-ui, sans-serif; font-size: .78rem; color: var(--primary);
+    background: none; border: none; cursor: pointer;
 }
-.sw-letter .sw-ls:hover { background: rgba(128, 128, 128, .10); box-shadow: 0 0 0 2px rgba(128, 128, 128, .10); }
-html.dark .sw-letter .sw-ls:hover { background: rgba(255, 255, 255, .07); box-shadow: 0 0 0 2px rgba(255, 255, 255, .07); }
-.sw-letter .sw-ls.on { background: var(--primary-soft); box-shadow: 0 0 0 2px var(--primary-soft); }
-html.dark .sw-letter .sw-ls.on { background: rgba(13, 148, 136, .16); box-shadow: 0 0 0 2px rgba(13, 148, 136, .16); }
-/* 句后隐藏块（译文/同义升级/真题示例）：默认不参与排版（display:none 不打断段落流），
-   当前句展开；「显示全部译文」只放中文，示例/升级仍只跟当前句 */
-.sw-letter .sw-ls-extra { display: none; text-indent: 0; font-family: system-ui, sans-serif; }
-.sw-letter .sw-ls.on + .sw-ls-extra { display: block; margin: 4px 0 8px; }
-.sw-letter.sw-all-cn .sw-ls-extra { display: block; margin: 4px 0 8px; }
-.sw-letter.sw-all-cn .sw-ls-extra > .sw-ex,
-.sw-letter.sw-all-cn .sw-ls-extra > .wr-alts { display: none; }
-.sw-letter.sw-all-cn .sw-ls.on + .sw-ls-extra > .sw-ex,
-.sw-letter.sw-all-cn .sw-ls.on + .sw-ls-extra > .wr-alts { display: block; }
-.sw-letter .sw-ls-extra .sw-cn { padding-left: 0; }
+.sw-para-cn-btn:hover { text-decoration: underline; }
+.sw-para-cn {
+    text-indent: 0; font-family: system-ui, sans-serif;
+    font-size: .92rem; color: var(--text-light); line-height: 1.85;
+    background: var(--ann-bg); border-left: 3px solid var(--primary);
+    padding: 8px 12px; border-radius: 0 8px 8px 0; margin: 4px 0 10px;
+}
+.sw-para-cn[hidden] { display: none; }
 /* 书信格式：落款右对齐（称呼顶格、通知标题居中见各自规则） */
 .sw-para-sig { text-indent: 0; text-align: right; }
 .sw-ctrl { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
