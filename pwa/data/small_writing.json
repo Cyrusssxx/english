@@ -480,7 +480,7 @@
    "items": [
     {
      "en": "I hope this message finds you well.",
-     "cn": "希望你一切安好。",
+     "cn": "希望收到此信时你一切安好。",
      "tier": "core",
      "must": true,
      "freq": 3,
@@ -502,7 +502,8 @@
      "tier": "ammo",
      "must": false,
      "freq": 3,
-     "tag": "通知致谢"
+     "tag": "通知致谢",
+     "hidden": true
     }
    ]
   },
@@ -514,7 +515,7 @@
    "items": [
     {
      "en": "I am writing to you regarding the matter of {{topic}}.",
-     "cn": "我写信是关于{{topic}}这一事项。",
+     "cn": "我写这封信，是想就{{topic}}一事与你沟通。",
      "ex": [
       {
        "en": "I am writing to you regarding the matter of my sincere thanks for your warm reception during my stay in the United States and my invitation for you to visit China in due course.",
@@ -530,7 +531,7 @@
     },
     {
      "en": "With this letter, I would like to share my views on {{topic}}.",
-     "cn": "借此来信，我想与你分享我对{{topic}}的看法。",
+     "cn": "借此信，我想分享我对{{topic}}的一些看法。",
      "ex": [
       {
        "en": "With this letter, I would like to share my views on whether you should choose the art exhibition or the robot show this Sunday.",
@@ -545,7 +546,7 @@
     },
     {
      "en": "In order to further promote {{topic}}, our school has decided to issue the following notice.",
-     "cn": "为了进一步推进{{topic}}，学校决定发布如下通知。",
+     "cn": "为进一步推动{{topic}}，学校决定发布以下通知。",
      "ex": [
       {
        "en": "In order to further promote the summer camp for high school students that our university is going to host, our school has decided to issue the following notice.",
@@ -560,7 +561,7 @@
     },
     {
      "en": "This letter is intended to offer a sincere apology for the problems caused by {{topic}}.",
-     "cn": "这封信旨在就{{topic}}所带来的问题向你致以诚挚的歉意。",
+     "cn": "我写此信，为{{topic}}所引起的问题向你致以诚挚的歉意。",
      "ex": [
       {
        "en": "This letter is intended to offer a sincere apology for the problems caused by my having to cancel my visit to you at the last minute.",
@@ -575,7 +576,7 @@
     },
     {
      "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-     "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+     "cn": "在这封信里，我想把{{topic}}作为极佳的选择介绍给你。",
      "ex": [
       {
        "en": "In this letter, I would like to introduce the art exhibition this Sunday to you as an excellent option if you are interested in culture and creativity.",
@@ -590,7 +591,7 @@
     },
     {
      "en": "I am writing to express my sincere gratitude for your help.",
-     "cn": "我写信是为表达我对你帮助的诚挚感谢。",
+     "cn": "我写此信，为你的帮助向你表达诚挚的谢意。",
      "tier": "ammo",
      "must": false,
      "freq": 2,
@@ -598,7 +599,7 @@
     },
     {
      "en": "I am writing to invite you to take part in {{topic}}.",
-     "cn": "我写信是邀请你参加{{topic}}。",
+     "cn": "我写信是想邀请你参加{{topic}}。",
      "ex": [
       {
        "en": "I am writing to invite you to take part in our upcoming online meeting about study and campus life at our university.",
@@ -613,7 +614,7 @@
     },
     {
      "en": "Please allow me to extend my warmest congratulations to you.",
-     "cn": "请允许我向你致以最诚挚的祝贺。",
+     "cn": "请允许我向你致以最热烈的祝贺。",
      "tier": "ammo",
      "must": false,
      "freq": 2,
@@ -621,7 +622,7 @@
     },
     {
      "en": "The purpose of this letter is to discuss {{topic}} with you in detail.",
-     "cn": "这封信的目的是想与你详细讨论{{topic}}。",
+     "cn": "我写此信，是想与你详细探讨{{topic}}。",
      "ex": [
       {
        "en": "The purpose of this letter is to discuss our survey plan on the protection of old houses in the ancient town with you in detail.",
@@ -636,7 +637,7 @@
     },
     {
      "en": "The primary aim of this letter is to offer some suggestions on {{topic}}.",
-     "cn": "本信的首要目的，是就{{topic}}提出若干建议。",
+     "cn": "我写信的主要目的，是就{{topic}}提出几点建议。",
      "ex": [
       {
        "en": "The primary aim of this letter is to offer some suggestions on improving students’ physical condition at our university.",
@@ -651,7 +652,7 @@
     },
     {
      "en": "This letter serves as a formal complaint about the recent problems with {{topic}}.",
-     "cn": "这封信作为一份正式投诉，旨在反映近期与{{topic}}有关的问题。",
+     "cn": "我写此信，正式反映近期{{topic}}出现的问题。",
      "ex": [
       {
        "en": "This letter serves as a formal complaint about the recent problems with the electronic dictionary I bought from your online store.",
@@ -691,7 +692,7 @@
     },
     {
      "en": "As for the planned event, the main arrangements are as follows.",
-     "cn": "至于本次活动的具体安排，主要如下。",
+     "cn": "至于本次活动，具体安排如下。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -706,8 +707,8 @@
    "label": "第二段 · 建议类 第二句",
    "items": [
     {
-     "en": "To begin with, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}.",
-     "cn": "首先，强烈建议你在日常生活中持续{{ving}}{{topic}}，因为这有助于你更清楚地认识{{detail}}。",
+     "en": "To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a clearer insight into {{detail}}.",
+     "cn": "首先，我建议你把{{ving}}{{topic}}落到实处，这能帮你更清楚地认识{{detail}}。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -715,7 +716,7 @@
     },
     {
      "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-     "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+     "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
      "tier": "ammo",
      "must": false,
      "freq": 2,
@@ -730,8 +731,8 @@
    "label": "第二段 · 建议类 第三句",
    "items": [
     {
-     "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-     "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+     "en": "In addition, you are also advised to {{task}} so as to improve the situation.",
+     "cn": "此外，也建议你{{task}}，以便改善现状。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -776,7 +777,8 @@
      "tier": "ammo",
      "must": false,
      "freq": 2,
-     "tag": "具体展开"
+     "tag": "具体展开",
+     "hidden": true
     }
    ]
   },
@@ -788,7 +790,7 @@
    "items": [
     {
      "en": "In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which is of great benefit to you.",
-     "cn": "另外，在{{topic}}期间{{task}}，将使你能够{{gain}}，这对你大有裨益。",
+     "cn": "此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这对你大有裨益。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -804,7 +806,7 @@
    "items": [
     {
      "en": "Finally, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.",
-     "cn": "最后，你的到来将使{{topic}}更加有意义，并使你得以{{benefit}}。",
+     "cn": "最后，你的到来将使{{topic}}更有意义，也能让你{{benefit}}。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -820,7 +822,7 @@
    "items": [
     {
      "en": "At this point, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}.",
-     "cn": "在此，我必须承认，在{{topic}}方面的{{fault}}已经造成了{{impact}}。",
+     "cn": "在此我必须承认，我在{{topic}}上的{{fault}}已经造成了{{impact}}。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -844,7 +846,7 @@
    "items": [
     {
      "en": "Although {{cause}} partly explains why this happened, the main responsibility still lies with me.",
-     "cn": "尽管{{cause}}在一定程度上解释了事情发生的原因，但主要责任仍然在我。",
+     "cn": "尽管{{cause}}在一定程度上解释了事情的起因，但主要责任仍在我。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -860,7 +862,7 @@
    "items": [
     {
      "en": "To be more specific, your remarkable achievement in {{topic}} clearly shows your {{quality}}.",
-     "cn": "更具体地说，你在{{topic}}方面的优异表现，清楚地展现了你的{{quality}}。",
+     "cn": "更具体地说，你在{{topic}}上的出色表现清楚地展现了你的{{quality}}。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -868,7 +870,7 @@
     },
     {
      "en": "As far as {{topic}} is concerned, your success in {{achievement}} is truly impressive and inspiring.",
-     "cn": "就{{topic}}而言，你在{{achievement}}上的成功，确实令人钦佩，也颇具鼓舞意义。",
+     "cn": "就{{topic}}而言，你在{{achievement}}上的成功确实令人钦佩，也颇具鼓舞意义。",
      "tier": "ammo",
      "must": false,
      "freq": 2,
@@ -916,7 +918,7 @@
    "items": [
     {
      "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
-     "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+     "cn": "具体而言，{{topic}}指的是{{subject}}，其突出特点是{{feature}}。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -924,7 +926,7 @@
     },
     {
      "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
-     "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。",
+     "cn": "从实用的角度看，{{topic}}主要包括{{content}}，目的在于{{purpose}}。",
      "tier": "ammo",
      "must": false,
      "freq": 2,
@@ -964,7 +966,7 @@
    "items": [
     {
      "en": "Taken together, these features make {{topic}} an ideal choice for {{audience}} who wish to {{need}}.",
-     "cn": "总的来看，这些特征使{{topic}}成为{{audience}}实现{{need}}的理想选择。",
+     "cn": "总的来说，这些特点使{{topic}}成为希望{{need}}的{{audience}}的理想选择。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -980,15 +982,15 @@
    "items": [
     {
      "en": "First, {{time}} has been set as the official time for {{topic}}, and all {{audience}} are required to attend on time.",
-     "cn": "首先，{{time}}被确定为{{topic}}的正式时间，届时要求全体{{audience}}准时参加。",
+     "cn": "首先，{{time}}定为{{topic}}的正式时间，届时全体{{audience}}须准时参加。",
      "tier": "must",
      "must": true,
      "freq": 3,
      "tag": "具体展开"
     },
     {
-     "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-     "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+     "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+     "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
      "tier": "ammo",
      "must": false,
      "freq": 2,
@@ -1020,7 +1022,7 @@
    "items": [
     {
      "en": "Finally, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way.",
-     "cn": "最后，要求全体{{audience}}{{requirement}}，以确保{{topic}}有序开展。",
+     "cn": "最后，全体{{audience}}须{{requirement}}，以确保{{topic}}有序进行。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -1053,7 +1055,7 @@
     },
     {
      "en": "Thank you for your time and attention, and I look forward to your positive response.",
-     "cn": "感谢你的时间与关注，期待你给予积极回应。",
+     "cn": "感谢你抽时间阅读这封信，期待你的回复。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -1065,11 +1067,12 @@
      "tier": "ammo",
      "must": false,
      "freq": 3,
-     "tag": "总结 / 号召"
+     "tag": "总结 / 号召",
+     "hidden": true
     },
     {
      "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-     "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+     "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -1077,7 +1080,7 @@
     },
     {
      "en": "Please read this notice carefully and pass it on to those concerned.",
-     "cn": "请认真阅读本通知，并转告相关人员。",
+     "cn": "请仔细阅读本通知并转告相关人员。",
      "tier": "ammo",
      "must": false,
      "freq": 3,
@@ -1093,7 +1096,7 @@
    "items": [
     {
      "en": "I would like to express my heartfelt thanks for the warm reception you gave me during my stay.",
-     "cn": "我想对你在我逗留期间给予的热情接待表示由衷的感谢。",
+     "cn": "我想衷心感谢你在我逗留期间给予的热情接待。",
      "tag": "具体展开",
      "tier": "must",
      "must": true,
@@ -1102,7 +1105,7 @@
     },
     {
      "en": "Without your generous help, I could never have made such progress in {{topic}}.",
-     "cn": "没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
+     "cn": "若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
      "tag": "具体展开",
      "tier": "ammo",
      "must": false,
@@ -1118,7 +1121,7 @@
    "items": [
     {
      "en": "What impressed me most was your patience and kindness, which made me feel at home.",
-     "cn": "最让我感动的是你的耐心与友善，让我感到宾至如归。",
+     "cn": "最让我感动的是你的耐心与友善，让我有宾至如归的感觉。",
      "tag": "理由 / 深化",
      "tier": "must",
      "must": true,
@@ -1135,7 +1138,7 @@
    "items": [
     {
      "en": "To my disappointment, the {{product}} I bought from your online store last week has failed to work properly.",
-     "cn": "令我失望的是，上周在贵网店购买的{{product}}无法正常使用。",
+     "cn": "令我失望的是，上周在贵店购买的{{product}}无法正常使用。",
      "tag": "具体展开",
      "tier": "must",
      "must": true,
@@ -1144,7 +1147,7 @@
     },
     {
      "en": "Specifically, {{problem}} appeared only three days after it arrived.",
-     "cn": "具体来说，到货才三天就出现了{{problem}}。",
+     "cn": "具体来说，到货仅三天就出现了{{problem}}。",
      "tag": "具体展开",
      "tier": "ammo",
      "must": false,
@@ -1160,7 +1163,7 @@
    "items": [
     {
      "en": "I would appreciate it if you could arrange a repair or a full refund as soon as possible.",
-     "cn": "如果你能尽快安排维修或全额退款，我将不胜感激。",
+     "cn": "若你能尽快安排维修或全额退款，我将不胜感激。",
      "tag": "理由 / 深化",
      "tier": "must",
      "must": true,
@@ -1176,7 +1179,7 @@
    "items": [
     {
      "en": "In particular, I would like to know how I can better adapt to the local way of life.",
-     "cn": "具体而言，我想知道我怎样才能更好地适应当地的生活方式。",
+     "cn": "具体而言，我想知道如何更好地适应当地的生活。",
      "tag": "具体展开",
      "tier": "must",
      "must": true,
@@ -1185,7 +1188,7 @@
     },
     {
      "en": "More specifically, I am not sure whether my plan is practical, so I would value your opinion.",
-     "cn": "更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。",
+     "cn": "另外，我不确定自己的计划是否可行，很想听听你的意见。",
      "tag": "具体展开",
      "tier": "ammo",
      "must": false,
@@ -1201,7 +1204,7 @@
    "items": [
     {
      "en": "Since you are familiar with the situation there, your advice would be of great value to me.",
-     "cn": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。",
+     "cn": "鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
      "tag": "理由 / 深化",
      "tier": "must",
      "must": true,
@@ -1217,7 +1220,7 @@
    "items": [
     {
      "en": "To be honest, I am deeply impressed by what you shared, especially {{detail}}.",
-     "cn": "说实话，你分享的内容让我印象很深，尤其是{{detail}}。",
+     "cn": "说实话，你分享的内容让我深有感触，尤其是{{detail}}。",
      "tag": "具体展开",
      "tier": "must",
      "must": true,
@@ -1241,7 +1244,7 @@
    "items": [
     {
      "en": "The reason is that such records help us rediscover the beauty of ordinary moments.",
-     "cn": "原因在于，这类记录帮我们重新发现平凡时刻里的美好。",
+     "cn": "原因在于，这类记录能帮我们重新发现平凡时刻中的美好。",
      "tag": "理由 / 深化",
      "tier": "must",
      "must": true,
@@ -1387,8 +1390,8 @@
     ],
     [
      "p2_advice_s2#0",
-     "To begin with, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}.",
-     "首先，强烈建议你把{{ving}}{{topic}}落到实处，这有助于你更清楚地认识{{detail}}。"
+     "To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a clearer insight into {{detail}}.",
+     "首先，我建议你把{{ving}}{{topic}}落到实处，这能帮你更清楚地认识{{detail}}。"
     ],
     [
      "p2_advice_s3#0",
@@ -1413,7 +1416,7 @@
    ],
    "cn_paras": [
     "希望收到此信时你一切安好。我写信的主要目的，是就{{topic}}提出几点建议。",
-    "至于具体措施，我的建议如下。首先，强烈建议你把{{ving}}{{topic}}落到实处，这有助于你更清楚地认识{{detail}}。此外，也建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。",
+    "至于具体措施，我的建议如下。首先，我建议你把{{ving}}{{topic}}落到实处，这能帮你更清楚地认识{{detail}}。此外，也建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。",
     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
@@ -2101,7 +2104,7 @@
   "core": 4,
   "core_words": 41,
   "must": 20,
-  "must_words": 322,
+  "must_words": 323,
   "ammo": 35,
   "freq3": 42,
   "guide": 17

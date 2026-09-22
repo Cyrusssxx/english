@@ -109,7 +109,8 @@ function swLinkersHtml(lk) {
 }
 
 function swCard(bank, order, uid) {
-    const n = bank.items.length;
+    const items = (bank.items || []).filter(x => !x.hidden);   // hidden = 数据层判定的不实用句，检索页不渲染
+    const n = items.length;
     const tb = swBankTier(bank);
     const opened = n <= 14 || tb.core > 0;
     const badges = (tb.core ? `<span class="sw-badge b-core">⭐⭐ 骨架 ${tb.core} 句 · ${tb.cw} 词</span>` : '')
@@ -122,7 +123,7 @@ function swCard(bank, order, uid) {
             <span class="sw-card-n">${n} 句</span>
             <button type="button" class="sw-copy" data-copy="${swEsc(bank.id)}" title="复制这一组句子">复制</button>
         </summary>
-        <ol class="sw-list">${bank.items.map((it, i) => swLine(it, i + 1, bank.id + '#' + i)).join('')}</ol>
+        <ol class="sw-list">${bank.items.map((it, i) => it.hidden ? '' : swLine(it, i + 1, bank.id + '#' + i)).join('')}</ol>
     </details>`;
 }
 

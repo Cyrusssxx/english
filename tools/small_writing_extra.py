@@ -320,7 +320,7 @@ LETTERS = {
             ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
             ['p1s2#9', 'The primary aim of this letter is to offer some suggestions on {{topic}}.', '我写信的主要目的，是就{{topic}}提出几点建议。'],
             ['p2s1#1', 'As for the practical measures, my suggestions are listed as follows.', '至于具体措施，我的建议如下。'],
-            ['p2_advice_s2#0', 'To begin with, {{ving}} {{topic}} into practice is strongly recommended, as it can help you have a clearer insight into {{detail}}.', '首先，强烈建议你把{{ving}}{{topic}}落到实处，这有助于你更清楚地认识{{detail}}。'],
+            ['p2_advice_s2#0', 'To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a clearer insight into {{detail}}.', '首先，我建议你把{{ving}}{{topic}}落到实处，这能帮你更清楚地认识{{detail}}。'],
             ['p2_advice_s3#0', 'In addition, you are also advised to {{task}} so as to improve the situation.', '此外，也建议你{{task}}，以便改善现状。'],
             ['p2_advice_s4#0', 'Finally, I would suggest that you {{task}}, which will help you {{benefit}} in the long run.', '最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。'],
             ['p3#0', 'I would appreciate it very much if you could {{expect}} by {{deadline}}.', '如果你能在{{deadline}}前{{expect}}，我将不胜感激。'],
@@ -328,7 +328,7 @@ LETTERS = {
         ],
         'cn_paras': [
             '希望收到此信时你一切安好。我写信的主要目的，是就{{topic}}提出几点建议。',
-            '至于具体措施，我的建议如下。首先，强烈建议你把{{ving}}{{topic}}落到实处，这有助于你更清楚地认识{{detail}}。此外，也建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。',
+            '至于具体措施，我的建议如下。首先，我建议你把{{ving}}{{topic}}落到实处，这能帮你更清楚地认识{{detail}}。此外，也建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。',
             '如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。',
         ],
     },
@@ -485,4 +485,85 @@ LETTERS = {
             '也很想听听你自己对这件事的看法。感谢你抽时间阅读这封信，期待你的回复。',
         ],
     },
+}
+
+# ---------------- 迭代润色表（build 读取，重跑不回退） ----------------
+# 1) 中文去翻译腔 / 与整信范文同步
+CN_FIX2 = {
+    'p1s1': {0: '希望收到此信时你一切安好。', 1: '非常高兴收到你的来信。'},
+    'p1s2': {
+        0: '我写这封信，是想就{{topic}}一事与你沟通。',
+        1: '借此信，我想分享我对{{topic}}的一些看法。',
+        2: '为进一步推动{{topic}}，学校决定发布以下通知。',
+        3: '我写此信，为{{topic}}所引起的问题向你致以诚挚的歉意。',
+        4: '在这封信里，我想把{{topic}}作为极佳的选择介绍给你。',
+        5: '我写此信，为你的帮助向你表达诚挚的谢意。',
+        6: '我写信是想邀请你参加{{topic}}。',
+        7: '请允许我向你致以最热烈的祝贺。',
+        8: '我写此信，是想与你详细探讨{{topic}}。',
+        9: '我写信的主要目的，是就{{topic}}提出几点建议。',
+        10: '我写此信，正式反映近期{{topic}}出现的问题。',
+    },
+    'p2s1': {1: '至于具体措施，我的建议如下。', 2: '至于本次活动，具体安排如下。'},
+    'p2_advice_s2': {
+        0: '首先，我建议你把{{ving}}{{topic}}落到实处，这能帮你更清楚地认识{{detail}}。',
+        1: '具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。',
+    },
+    'p2_advice_s3': {0: '此外，也建议你{{task}}，以便改善现状。'},
+    'p2_invite_s3': {0: '此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这对你大有裨益。'},
+    'p2_invite_s4': {0: '最后，你的到来将使{{topic}}更有意义，也能让你{{benefit}}。'},
+    'p2_apology_s2': {
+        0: '在此我必须承认，我在{{topic}}上的{{fault}}已经造成了{{impact}}。',
+        1: '由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。',
+    },
+    'p2_apology_s3': {0: '尽管{{cause}}在一定程度上解释了事情的起因，但主要责任仍在我。'},
+    'p2_congrats_s2': {
+        0: '更具体地说，你在{{topic}}上的出色表现清楚地展现了你的{{quality}}。',
+        1: '就{{topic}}而言，你在{{achievement}}上的成功确实令人钦佩，也颇具鼓舞意义。',
+    },
+    'p2_congrats_s4': {0: '最后，{{topic}}上的这一成就必将激励你{{next step}}，助你迈向{{goal}}。'},
+    'p2_intro_s2': {
+        0: '具体而言，{{topic}}指的是{{subject}}，其突出特点是{{feature}}。',
+        1: '从实用的角度看，{{topic}}主要包括{{content}}，目的在于{{purpose}}。',
+        2: '更具体而言，在日常生活中，我通常会{{habit1}}并且{{habit2}}，这有助于我保持{{advantage}}。',
+    },
+    'p2_intro_s3': {0: '首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。'},
+    'p2_intro_s4': {0: '总的来说，这些特点使{{topic}}成为希望{{need}}的{{audience}}的理想选择。'},
+    'p2_notice_s2': {
+        0: '首先，{{time}}定为{{topic}}的正式时间，届时全体{{audience}}须准时参加。',
+        1: '首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。',
+    },
+    'p2_notice_s3': {0: '此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，都紧扣主题。'},
+    'p2_notice_s4': {0: '最后，全体{{audience}}须{{requirement}}，以确保{{topic}}有序进行。'},
+    'p2_thanks_s2': {
+        0: '我想衷心感谢你在我逗留期间给予的热情接待。',
+        1: '若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。',
+    },
+    'p2_thanks_s3': {0: '最让我感动的是你的耐心与友善，让我有宾至如归的感觉。'},
+    'p2_complaint_s2': {
+        0: '令我失望的是，上周在贵店购买的{{product}}无法正常使用。',
+        1: '具体来说，到货仅三天就出现了{{problem}}。',
+    },
+    'p2_complaint_s3': {0: '若你能尽快安排维修或全额退款，我将不胜感激。'},
+    'p2_inquire_s2': {
+        0: '具体而言，我想知道如何更好地适应当地的生活。',
+        1: '另外，我不确定自己的计划是否可行，很想听听你的意见。',
+    },
+    'p2_inquire_s3': {0: '鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。'},
+    'p2_opinion_s2': {0: '说实话，你分享的内容让我深有感触，尤其是{{detail}}。'},
+    'p2_opinion_s3': {0: '原因在于，这类记录能帮我们重新发现平凡时刻中的美好。'},
+    'p3': {2: '感谢你抽时间阅读这封信，期待你的回复。', 4: '我衷心希望你能充分利用这次机会{{outcome}}。',
+           5: '请仔细阅读本通知并转告相关人员。'},
+}
+# 2) 英文去被动套路 / 别扭表达
+EN_FIX2 = {
+    'p2_advice_s2': {0: 'To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a clearer insight into {{detail}}.'},
+    'p2_advice_s3': {0: 'In addition, you are also advised to {{task}} so as to improve the situation.'},
+    'p2_notice_s2': {1: 'To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.'},
+}
+# 3) 不实用的句子：检索页不再渲染（整信范文未引用，删减不影响任何 src 索引）
+HIDE_ITEMS = {
+    'p1s1': [2],           # 通知致谢开场：真题通知几乎不这么写，套上就假
+    'p2_invite_s2': [1],   # broaden {{gain}} 搭配错误（broaden horizons 才成立）
+    'p3': [3],             # To conclude... measures 套路总结句，只适配建议信且烂大街
 }

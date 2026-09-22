@@ -1,5 +1,25 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-22 小作文模板全面润色 + 删减不实用内容]
+
+- **背景**：用户要求「模板全面润色优化 + 删减不实用的东西」。全库 59 句审计：52 句被整信引用（只能润不能删）、
+  7 句未引用（3 句不实用可删、4 句保留但润）。
+- **① 删减（3 句不实用 → `EXTRA.HIDE_ITEMS`，build 打 `hidden`，前端检索页跳过；不删数据、不位移任何 src 索引）**：
+  - `p1s1#2` 通知致谢开场「We greatly appreciate all students...」——真题通知几乎不这么写，套上就假
+  - `p2_invite_s2#1`「...which can greatly broaden {{gain}}」——**搭配错误**（broaden horizons 才成立）
+  - `p3#3`「To conclude, all the measures...」——套路总结句，只适配建议信且烂大街
+- **② 页面板块删减**：删「🧩 小作文怎么拼（3 段 · 5 步）」steps 块（整信已完整呈现结构，属重复）
+  与底部 study 说教文案；TOC 自动去掉「小作文怎么拼」。
+- **③ 全面润色**（新增 `EXTRA.CN_FIX2` / `EN_FIX2`，与 build 内置 CN_FIX/EN_FIX 同构、md 源不动、重跑不回退）：
+  - **中文去翻译腔**：`p1s2` 全部 11 条来意句（「我写信是关于…这一事项」→「我写这封信，是想就…一事与你沟通」）、
+    p2 各类主体句、p3 收尾句——统一到整信范文已润的措辞，句库与整信不再两套话。
+  - **英文去被动套路**：`p2_advice_s2`「is strongly recommended」→「I would suggest that you put...」；
+    `p2_advice_s3`「it is strongly recommended that you should」→「you are also advised to」；
+    `p2_notice_s2#1`「providing a fixed venue」→「which is convenient for all {{audience}}」。
+  - letters advice 同步被润句（en/cn/段译）。
+- 校验：hidden 与 letters 引用**零冲突**；letters vs banks 英文不一致仅剩 5 处**预期**（5 封场景化引出句，走 L: 键）；
+  10 封 102–112 词全达标。jsdom **29/30 + 键补测 10/10**（唯一失败是我在通知信上误找 p1s1 的断言错误，
+  通知信本就无问候句，其键全为共享键、无 L: 键）。SW en2-385c9d49。
 ## [2026-09-22 句库第二轮润色：套路腔/别扭搭配/空尾巴（EN_FIX 机制）]
 
 - **背景**：承接上轮「模板空泛/不通用」整改——请求句与引出句已修，本轮清剩下的套路腔与别扭搭配。

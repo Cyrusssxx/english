@@ -555,6 +555,26 @@ def main():
             if k < len(b_['items']):
                 b_['items'][k]['en'] = en
 
+    # 迭代润色表放 extra（CN_FIX2 / EN_FIX2，与上面同构；HIDE_ITEMS = 不实用的句子 → 检索页不渲染）
+    for b_ in data['banks']:
+        cn2 = (EXTRA.CN_FIX2 or {}).get(b_['id'])
+        if cn2:
+            for k, cn in cn2.items():
+                if k < len(b_['items']) and cn:
+                    b_['items'][k]['cn'] = cn
+        en2 = (EXTRA.EN_FIX2 or {}).get(b_['id'])
+        if en2:
+            for k, en in en2.items():
+                if k < len(b_['items']) and en:
+                    b_['items'][k]['en'] = en
+    for bid, idxs in (EXTRA.HIDE_ITEMS or {}).items():
+        hit = [x for x in data['banks'] if x['id'] == bid]
+        if not hit:
+            continue
+        for k in idxs:
+            if k < len(hit[0]['items']):
+                hit[0]['items'][k]['hidden'] = True
+
     # 去烂大街衔接词（句首 First and foremost / Last but not least → 高级版）+ 同义升级挂载
     for b_ in data['banks']:
         for it in b_['items']:
