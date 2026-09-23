@@ -569,13 +569,15 @@ function renderArticle() {
     const ntQs = article.type === 'newtype' ? (article.questions || []) : [];
     const paraQMap = {};
     ntQs.forEach(q => { if (q.para_no) paraQMap[q.para_no] = q; });
-    paras.forEach((sents, i) => {
-        html += `<div class="para${isCompact ? ' para-compact' : ''}"><div class="para-tag">P${i + 1}</div>`;
-        const slotQ = paraQMap[i + 1];
+    for (let pi = 0; pi < paras.length; pi++) {
+        const sents = paras[pi];
+        if (!sents || !sents.length) continue;   // 空段跳过（数据段号缺失时防渲染空 P 段/标签错位）
+        html += `<div class="para${isCompact ? ' para-compact' : ''}"><div class="para-tag">P${pi + 1}</div>`;
+        const slotQ = paraQMap[pi + 1];
         if (slotQ) html += ntSlotHtml(slotQ);
         for (const s of sents) html += sentenceHtml(s);
         html += '</div>';
-    });
+    }
     // 全文参考译文（早期真题逐句译文缺失时，整篇译文仍有参考价值）
     if (article.ref_cn) {
         html += `<div class="translation-ref">
