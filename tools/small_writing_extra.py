@@ -318,24 +318,24 @@ LETTERS = {
     'advice': {
         'rows': [
             ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
-            ['p1s2#9', 'I am writing to offer some suggestions on {{topic}}.', '我写这封信，是想就{{topic}}提一些建议。'],
+            ['p1s2#9', 'I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.', '我想就{{topic}}提几点建议，希望能对你有用。'],
             ['p2s1#1', 'As for the practical measures, my suggestions are as follows.', '至于具体措施，我的建议如下。'],
-            ['p2_advice_s2#0', 'To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you better understand {{detail}}.', '首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你更好地理解{{detail}}。'],
+            ['p2_advice_s2#0', 'To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a deeper understanding of {{detail}}.', '首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你对{{detail}}有更深的理解。'],
             ['p2_advice_s3#0', 'In addition, you are advised to {{task}} so as to improve the situation.', '此外，建议你{{task}}，以便改善现状。'],
             ['p2_advice_s4#0', 'Finally, I would suggest that you {{task}}, which will help you {{benefit}} in the long run.', '最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。'],
             ['p3#0', 'I would appreciate it very much if you could {{expect}} by {{deadline}}.', '如果你能在{{deadline}}前{{expect}}，我将不胜感激。'],
             ['p3#2', 'Thank you for your time and attention, and I look forward to your positive response.', '感谢你抽时间阅读这封信，期待你的回复。'],
         ],
         'cn_paras': [
-            '希望收到此信时你一切安好。我写这封信，是想就{{topic}}提一些建议。',
-            '至于具体措施，我的建议如下。首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你更好地理解{{detail}}。此外，建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。',
+            '希望收到此信时你一切安好。我想就{{topic}}提几点建议，希望能对你有用。',
+            '至于具体措施，我的建议如下。首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你对{{detail}}有更深的理解。此外，建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。',
             '如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。',
         ],
     },
     'invite': {
         'rows': [
             ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
-            ['p1s2#6', 'I am writing to invite you to take part in {{topic}}.', '我写信是想邀请你参加{{topic}}。'],
+            ['p1s2#6', 'It gives me great pleasure to invite you to {{topic}}.', '很高兴邀请你参加{{topic}}。'],
             ['p2s1#2', 'As for the planned event, the main arrangements are as follows.', '至于本次活动，具体安排如下。'],
             ['p2_invite_s2#0', 'In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.', '具体而言，我想邀请你{{join}}{{topic}}，这将为你带来{{gain}}。'],
             ['p2_invite_s3#0', 'In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which is of great benefit to you.', '此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这对你很有好处。'],
@@ -344,7 +344,7 @@ LETTERS = {
             ['p3#0', 'I would appreciate it very much if you could {{expect}} by {{deadline}}.', '如果你能在{{deadline}}前{{expect}}，我将不胜感激。'],
         ],
         'cn_paras': [
-            '希望收到此信时你一切安好。我写信是想邀请你参加{{topic}}。',
+            '希望收到此信时你一切安好。很高兴邀请你参加{{topic}}。',
             '至于本次活动，具体安排如下。具体而言，我想邀请你{{join}}{{topic}}，这将为你带来{{gain}}。此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这对你很有好处。最后，你的到来将使{{topic}}更有意义，也能让你{{benefit}}。',
             '我衷心希望你能充分利用这次机会{{outcome}}。如果你能在{{deadline}}前{{expect}}，我将不胜感激。',
         ],
@@ -352,7 +352,7 @@ LETTERS = {
     'thanks': {
         'rows': [
             ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
-            ['p1s2#5', 'I am writing to express my sincere gratitude for your help.', '我写这封信，是想感谢你对我的帮助。'],
+            ['p1s2#5', 'I am truly grateful for the generous help you have given me.', '非常感谢你给予我的慷慨帮助。'],
             ['p2s1#0', 'To be more specific, the following are the things I am truly grateful for.', '具体来说，我真正感激的是以下几件事。'],
             ['p2_thanks_s2#0', 'I would like to express my heartfelt thanks for the warm reception you gave me during my stay.', '我想衷心感谢你在我逗留期间给予的热情接待。'],
             ['p2_thanks_s3#0', 'What impressed me most was your patience and kindness, which made me feel at home.', '最让我印象深刻的是你的耐心和友善，这让我感觉像在自己家一样。'],
@@ -361,7 +361,7 @@ LETTERS = {
             ['p3#2', 'Thank you for your time and attention, and I look forward to your positive response.', '感谢你抽时间阅读这封信，期待你的回复。'],
         ],
         'cn_paras': [
-            '希望收到此信时你一切安好。我写这封信，是想感谢你对我的帮助。',
+            '希望收到此信时你一切安好。非常感谢你给予我的慷慨帮助。',
             '具体来说，我真正感激的是以下几件事。我想衷心感谢你在我逗留期间给予的热情接待。最让我印象深刻的是你的耐心和友善，这让我感觉像在自己家一样。若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。',
             '再次感谢你的善意，希望我们保持联系。感谢你抽时间阅读这封信，期待你的回复。',
         ],
@@ -386,24 +386,24 @@ LETTERS = {
     'apology': {
         'rows': [
             ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
-            ['p1s2#3', 'I am writing to offer my sincere apology for the problems caused by {{topic}}.', '我写这封信，是为{{topic}}造成的问题向你致歉。'],
+            ['p1s2#3', 'Please accept my sincere apology for any inconvenience and trouble that {{topic}} has brought you.', '请接受我为{{topic}}给你带来的不便和麻烦所作的诚挚道歉。'],
             ['p2s1#0', 'To be more specific, what happened is as follows.', '具体来说，事情经过如下。'],
-            ['p2_apology_s2#0', 'To be specific, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}.', '具体来说，我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。'],
+            ['p2_apology_s2#0', 'I must admit that {{fault}} on my part concerning {{topic}} has caused {{impact}}.', '我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。'],
             ['p2_apology_s2#1', 'As a result of {{fault}} with regard to {{topic}}, you had to face {{impact}}, which should not have happened.', '由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。'],
             ['p2_apology_s3#0', 'Although {{cause}} partly explains why this happened, the main responsibility still lies with me.', '尽管{{cause}}能部分解释这件事，但主要责任仍在我。'],
             ['', 'I will make sure that this will not happen again.', '我保证这样的事不会再发生。'],
             ['p3#2', 'Thank you for your time and attention, and I look forward to your positive response.', '感谢你抽时间阅读这封信，期待你的回复。'],
         ],
         'cn_paras': [
-            '希望收到此信时你一切安好。我写这封信，是为{{topic}}造成的问题向你致歉。',
-            '具体来说，事情经过如下。具体来说，我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。尽管{{cause}}能部分解释这件事，但主要责任仍在我。',
+            '希望收到此信时你一切安好。请接受我为{{topic}}给你带来的不便和麻烦所作的诚挚道歉。',
+            '具体来说，事情经过如下。我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。尽管{{cause}}能部分解释这件事，但主要责任仍在我。',
             '我保证这样的事不会再发生。感谢你抽时间阅读这封信，期待你的回复。',
         ],
     },
     'complaint': {
         'rows': [
             ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
-            ['p1s2#10', 'I am writing to make a formal complaint about the recent problems with {{topic}}.', '我写这封信，是想正式投诉近期{{topic}}出现的问题。'],
+            ['p1s2#10', 'It is with regret that I write to complain about the recent problems with {{topic}}.', '很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。'],
             ['p2s1#0', 'To be more specific, what happened is as follows.', '具体来说，事情经过如下。'],
             ['p2_complaint_s2#0', 'To my disappointment, the {{product}} I bought from your online store last week has failed to work properly.', '令我失望的是，上周在贵店购买的{{product}}无法正常使用。'],
             ['p2_complaint_s2#1', 'Specifically, {{problem}} appeared only three days after it arrived.', '具体来说，到货仅三天就出现了{{problem}}。'],
@@ -412,7 +412,7 @@ LETTERS = {
             ['p3#2', 'Thank you for your time and attention, and I look forward to your positive response.', '感谢你抽时间阅读这封信，期待你的回复。'],
         ],
         'cn_paras': [
-            '希望收到此信时你一切安好。我写这封信，是想正式投诉近期{{topic}}出现的问题。',
+            '希望收到此信时你一切安好。很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。',
             '具体来说，事情经过如下。令我失望的是，上周在贵店购买的{{product}}无法正常使用。具体来说，到货仅三天就出现了{{problem}}。若你能尽快安排维修或全额退款，我将不胜感激。',
             '请你{{expect}}，以便{{topic}}能得到更有效的处理。感谢你抽时间阅读这封信，期待你的回复。',
         ],
@@ -453,7 +453,7 @@ LETTERS = {
     'inquire': {
         'rows': [
             ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
-            ['p1s2#8', 'I am writing to discuss {{topic}} with you in more detail.', '我写这封信，是想和你详细谈谈{{topic}}。'],
+            ['p1s2#8', 'I would appreciate the chance to discuss {{topic}} with you in more detail.', '希望能有机会和你更详细地谈谈{{topic}}。'],
             ['p2s1#0', 'To be more specific, my questions are as follows.', '具体来说，我想请教以下几点。'],
             ['p2_inquire_s2#0', 'In particular, I would like to know how I can better adapt to the local way of life.', '具体而言，我想知道如何更好地适应当地的生活。'],
             ['p2_inquire_s2#1', 'More specifically, I am not sure whether my plan is practical, so I would value your opinion.', '另外，我不确定自己的计划是否可行，很想听听你的意见。'],
@@ -462,7 +462,7 @@ LETTERS = {
             ['p3#2', 'Thank you for your time and attention, and I look forward to your positive response.', '感谢你抽时间阅读这封信，期待你的回复。'],
         ],
         'cn_paras': [
-            '希望收到此信时你一切安好。我写这封信，是想和你详细谈谈{{topic}}。',
+            '希望收到此信时你一切安好。希望能有机会和你更详细地谈谈{{topic}}。',
             '具体来说，我想请教以下几点。具体而言，我想知道如何更好地适应当地的生活。另外，我不确定自己的计划是否可行，很想听听你的意见。鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。',
             '如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。',
         ],
@@ -471,7 +471,7 @@ LETTERS = {
         'rows': [
             ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
             ['p1s1#1', 'I am so delighted to receive your letter.', '非常高兴收到你的来信。'],
-            ['p1s2#1', 'I am writing to share with you my views on {{topic}}.', '我写这封信，是想和你分享我对{{topic}}的看法。'],
+            ['p1s2#1', 'I would like to share with you a few thoughts on {{topic}}.', '我想和你分享我对{{topic}}的几点看法。'],
             ['p2s1#0', 'To be more specific, what I would like to discuss falls into three parts.', '具体来说，我想谈的有三点。'],
             ['p2_opinion_s2#0', 'To be honest, I am deeply impressed by what you shared, especially {{detail}}.', '说实话，你分享的内容让我印象很深，尤其是{{detail}}。'],
             ['p2_opinion_s2#1', 'If I may say so, it reflects your careful observation and genuine love for life.', '在我看来，这体现了你细致的观察和对生活的热爱。'],
@@ -480,7 +480,7 @@ LETTERS = {
             ['p3#2', 'Thank you for your time and attention, and I look forward to your positive response.', '感谢你抽时间阅读这封信，期待你的回复。'],
         ],
         'cn_paras': [
-            '希望收到此信时你一切安好。非常高兴收到你的来信。我写这封信，是想和你分享我对{{topic}}的看法。',
+            '希望收到此信时你一切安好。非常高兴收到你的来信。我想和你分享我对{{topic}}的几点看法。',
             '具体来说，我想谈的有三点。说实话，你分享的内容让我印象很深，尤其是{{detail}}。在我看来，这体现了你细致的观察和对生活的热爱。原因在于，这类记录能帮我们重新发现日常时刻的美好。',
             '也很想听听你自己对这件事的看法。感谢你抽时间阅读这封信，期待你的回复。',
         ],
@@ -557,8 +557,6 @@ CN_FIX2 = {
 }
 # 2) 英文去被动套路 / 别扭表达
 EN_FIX2 = {
-    'p2_advice_s2': {0: 'To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a clearer insight into {{detail}}.'},
-    'p2_advice_s3': {0: 'In addition, you are also advised to {{task}} so as to improve the situation.'},
     'p2_notice_s2': {1: 'To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.'},
 }
 # 3) 不实用的句子：检索页不再渲染（整信范文未引用，删减不影响任何 src 索引）
@@ -572,19 +570,20 @@ HIDE_ITEMS = {
 # 背诵的主体是英文，中文只当"对答案用"，越平实越好记；英文才是打磨重点。
 CN_FIX3 = {
     'p1s2': {
-        0: '我写这封信，是关于{{topic}}的事。',
-        1: '我写这封信，是想和你分享我对{{topic}}的看法。',
-        3: '我写这封信，是为{{topic}}造成的问题向你致歉。',
+        0: '这封信是关于{{topic}}的，希望听听你的看法。',
+        1: '我想和你分享我对{{topic}}的几点看法。',
+        3: '请接受我为{{topic}}给你带来的不便和麻烦所作的诚挚道歉。',
         4: '在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。',
-        5: '我写这封信，是想感谢你对我的帮助。',
-        8: '我写这封信，是想和你详细谈谈{{topic}}。',
-        9: '我写这封信，是想就{{topic}}提一些建议。',
-        10: '我写这封信，是想正式投诉近期{{topic}}出现的问题。',
+        5: '非常感谢你给予我的慷慨帮助。',
+        6: '很高兴邀请你参加{{topic}}。',
+        8: '希望能有机会和你更详细地谈谈{{topic}}。',
+        9: '我想就{{topic}}提几点建议，希望能对你有用。',
+        10: '很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。',
     },
     'p2s1': {0: '更具体地说，主要有以下几点。'},
-    'p2_advice_s2': {0: '首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你更好地理解{{detail}}。'},
+    'p2_advice_s2': {0: '首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你对{{detail}}有更深的理解。'},
     'p2_advice_s3': {0: '此外，建议你{{task}}，以便改善现状。'},
-    'p2_apology_s2': {0: '具体来说，我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。'},
+    'p2_apology_s2': {0: '我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。'},
     'p2_apology_s3': {0: '尽管{{cause}}能部分解释这件事，但主要责任仍在我。'},
     'p2_congrats_s2': {1: '就{{topic}}而言，你在{{achievement}}上的成功确实令人钦佩，也很鼓舞人心。'},
     'p2_intro_s2': {0: '具体而言，{{topic}}指的是{{subject}}，它的特点是{{feature}}。'},
@@ -596,19 +595,23 @@ CN_FIX3 = {
     'p2_opinion_s3': {0: '原因在于，这类记录能帮我们重新发现日常时刻的美好。'},
     'p3': {1: '请你{{expect}}，以便{{topic}}能得到更有效的处理。'},
 }
-# 英文精简：统一 I am writing to... 开头（最好背）、去掉填充词与重复副词
+# 英文升级：每类来意句用**不同句式 + 精准动词**，正式但避开烂大街模板
+# （⚠ 反面教材：I am writing to ... 是中国考生最泛滥的低阶开头，阅卷老师看腻了——
+#  "精简"不等于"写简单"，要高级、不套路、且能用得上）
 EN_FIX3 = {
     'p1s2': {
-        0: 'I am writing to you regarding {{topic}}.',
-        1: 'I am writing to share with you my views on {{topic}}.',
-        3: 'I am writing to offer my sincere apology for the problems caused by {{topic}}.',
-        8: 'I am writing to discuss {{topic}} with you in more detail.',
-        9: 'I am writing to offer some suggestions on {{topic}}.',
-        10: 'I am writing to make a formal complaint about the recent problems with {{topic}}.',
+        0: 'This letter concerns {{topic}}, and I would appreciate your thoughts on it.',
+        1: 'I would like to share with you a few thoughts on {{topic}}.',
+        3: 'Please accept my sincere apology for any inconvenience and trouble that {{topic}} has brought you.',
+        5: 'I am truly grateful for the generous help you have given me.',
+        6: 'It gives me great pleasure to invite you to {{topic}}.',
+        8: 'I would appreciate the chance to discuss {{topic}} with you in more detail.',
+        9: 'I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.',
+        10: 'It is with regret that I write to complain about the recent problems with {{topic}}.',
     },
     'p2s1': {0: 'To be more specific, the main points are as follows.',
               1: 'As for the practical measures, my suggestions are as follows.'},
-    'p2_advice_s2': {0: 'To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you better understand {{detail}}.'},
+    'p2_advice_s2': {0: 'To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a deeper understanding of {{detail}}.'},
     'p2_advice_s3': {0: 'In addition, you are advised to {{task}} so as to improve the situation.'},
-    'p2_apology_s2': {0: 'To be specific, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}.'},
+    'p2_apology_s2': {0: 'I must admit that {{fault}} on my part concerning {{topic}} has caused {{impact}}.'},
 }

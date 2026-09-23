@@ -514,8 +514,8 @@
    "label": "第一段 · 第二句（表明来意）",
    "items": [
     {
-     "en": "I am writing to you regarding {{topic}}.",
-     "cn": "我写这封信，是关于{{topic}}的事。",
+     "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+     "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
      "ex": [
       {
        "en": "I am writing to you regarding the matter of my sincere thanks for your warm reception during my stay in the United States and my invitation for you to visit China in due course.",
@@ -529,8 +529,8 @@
      "tag": "来意"
     },
     {
-     "en": "I am writing to share with you my views on {{topic}}.",
-     "cn": "我写这封信，是想和你分享我对{{topic}}的看法。",
+     "en": "I would like to share with you a few thoughts on {{topic}}.",
+     "cn": "我想和你分享我对{{topic}}的几点看法。",
      "ex": [
       {
        "en": "With this letter, I would like to share my views on whether you should choose the art exhibition or the robot show this Sunday.",
@@ -559,8 +559,8 @@
      "tag": "通知"
     },
     {
-     "en": "I am writing to offer my sincere apology for the problems caused by {{topic}}.",
-     "cn": "我写这封信，是为{{topic}}造成的问题向你致歉。",
+     "en": "Please accept my sincere apology for any inconvenience and trouble that {{topic}} has brought you.",
+     "cn": "请接受我为{{topic}}给你带来的不便和麻烦所作的诚挚道歉。",
      "ex": [
       {
        "en": "This letter is intended to offer a sincere apology for the problems caused by my having to cancel my visit to you at the last minute.",
@@ -589,16 +589,16 @@
      "tag": "推荐 / 介绍"
     },
     {
-     "en": "I am writing to express my sincere gratitude for your help.",
-     "cn": "我写这封信，是想感谢你对我的帮助。",
+     "en": "I am truly grateful for the generous help you have given me.",
+     "cn": "非常感谢你给予我的慷慨帮助。",
      "tier": "ammo",
      "must": false,
      "freq": 2,
      "tag": "感谢"
     },
     {
-     "en": "I am writing to invite you to take part in {{topic}}.",
-     "cn": "我写信是想邀请你参加{{topic}}。",
+     "en": "It gives me great pleasure to invite you to {{topic}}.",
+     "cn": "很高兴邀请你参加{{topic}}。",
      "ex": [
       {
        "en": "I am writing to invite you to take part in our upcoming online meeting about study and campus life at our university.",
@@ -620,8 +620,8 @@
      "tag": "祝贺"
     },
     {
-     "en": "I am writing to discuss {{topic}} with you in more detail.",
-     "cn": "我写这封信，是想和你详细谈谈{{topic}}。",
+     "en": "I would appreciate the chance to discuss {{topic}} with you in more detail.",
+     "cn": "希望能有机会和你更详细地谈谈{{topic}}。",
      "ex": [
       {
        "en": "The purpose of this letter is to discuss our survey plan on the protection of old houses in the ancient town with you in detail.",
@@ -635,8 +635,8 @@
      "tag": "询问"
     },
     {
-     "en": "I am writing to offer some suggestions on {{topic}}.",
-     "cn": "我写这封信，是想就{{topic}}提一些建议。",
+     "en": "I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.",
+     "cn": "我想就{{topic}}提几点建议，希望能对你有用。",
      "ex": [
       {
        "en": "The primary aim of this letter is to offer some suggestions on improving students’ physical condition at our university.",
@@ -650,8 +650,8 @@
      "tag": "建议"
     },
     {
-     "en": "I am writing to make a formal complaint about the recent problems with {{topic}}.",
-     "cn": "我写这封信，是想正式投诉近期{{topic}}出现的问题。",
+     "en": "It is with regret that I write to complain about the recent problems with {{topic}}.",
+     "cn": "很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。",
      "ex": [
       {
        "en": "This letter serves as a formal complaint about the recent problems with the electronic dictionary I bought from your online store.",
@@ -705,8 +705,8 @@
    "label": "第二段 · 建议类 第二句",
    "items": [
     {
-     "en": "To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you better understand {{detail}}.",
-     "cn": "首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你更好地理解{{detail}}。",
+     "en": "To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a deeper understanding of {{detail}}.",
+     "cn": "首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你对{{detail}}有更深的理解。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -819,8 +819,8 @@
    "label": "第二段 · 道歉类 第二句",
    "items": [
     {
-     "en": "To be specific, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}.",
-     "cn": "具体来说，我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。",
+     "en": "I must admit that {{fault}} on my part concerning {{topic}} has caused {{impact}}.",
+     "cn": "我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。",
      "tier": "must",
      "must": true,
      "freq": 3,
@@ -1378,8 +1378,8 @@
     ],
     [
      "p1s2#9",
-     "I am writing to offer some suggestions on {{topic}}.",
-     "我写这封信，是想就{{topic}}提一些建议。"
+     "I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.",
+     "我想就{{topic}}提几点建议，希望能对你有用。"
     ],
     [
      "p2s1#1",
@@ -1388,8 +1388,8 @@
     ],
     [
      "p2_advice_s2#0",
-     "To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you better understand {{detail}}.",
-     "首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你更好地理解{{detail}}。"
+     "To begin with, I would suggest that you put {{ving}} {{topic}} into practice, as it can help you gain a deeper understanding of {{detail}}.",
+     "首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你对{{detail}}有更深的理解。"
     ],
     [
      "p2_advice_s3#0",
@@ -1413,8 +1413,8 @@
     ]
    ],
    "cn_paras": [
-    "希望收到此信时你一切安好。我写这封信，是想就{{topic}}提一些建议。",
-    "至于具体措施，我的建议如下。首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你更好地理解{{detail}}。此外，建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。",
+    "希望收到此信时你一切安好。我想就{{topic}}提几点建议，希望能对你有用。",
+    "至于具体措施，我的建议如下。首先，我建议你把{{ving}}{{topic}}付诸实践，这能帮你对{{detail}}有更深的理解。此外，建议你{{task}}，以便改善现状。最后，我建议你{{task}}，从长远看这会帮助你真正{{benefit}}。",
     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
@@ -1427,8 +1427,8 @@
     ],
     [
      "p1s2#6",
-     "I am writing to invite you to take part in {{topic}}.",
-     "我写信是想邀请你参加{{topic}}。"
+     "It gives me great pleasure to invite you to {{topic}}.",
+     "很高兴邀请你参加{{topic}}。"
     ],
     [
      "p2s1#2",
@@ -1462,7 +1462,7 @@
     ]
    ],
    "cn_paras": [
-    "希望收到此信时你一切安好。我写信是想邀请你参加{{topic}}。",
+    "希望收到此信时你一切安好。很高兴邀请你参加{{topic}}。",
     "至于本次活动，具体安排如下。具体而言，我想邀请你{{join}}{{topic}}，这将为你带来{{gain}}。此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这对你很有好处。最后，你的到来将使{{topic}}更有意义，也能让你{{benefit}}。",
     "我衷心希望你能充分利用这次机会{{outcome}}。如果你能在{{deadline}}前{{expect}}，我将不胜感激。"
    ]
@@ -1476,8 +1476,8 @@
     ],
     [
      "p1s2#5",
-     "I am writing to express my sincere gratitude for your help.",
-     "我写这封信，是想感谢你对我的帮助。"
+     "I am truly grateful for the generous help you have given me.",
+     "非常感谢你给予我的慷慨帮助。"
     ],
     [
      "p2s1#0",
@@ -1511,7 +1511,7 @@
     ]
    ],
    "cn_paras": [
-    "希望收到此信时你一切安好。我写这封信，是想感谢你对我的帮助。",
+    "希望收到此信时你一切安好。非常感谢你给予我的慷慨帮助。",
     "具体来说，我真正感激的是以下几件事。我想衷心感谢你在我逗留期间给予的热情接待。最让我印象深刻的是你的耐心和友善，这让我感觉像在自己家一样。若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
     "再次感谢你的善意，希望我们保持联系。感谢你抽时间阅读这封信，期待你的回复。"
    ]
@@ -1574,8 +1574,8 @@
     ],
     [
      "p1s2#3",
-     "I am writing to offer my sincere apology for the problems caused by {{topic}}.",
-     "我写这封信，是为{{topic}}造成的问题向你致歉。"
+     "Please accept my sincere apology for any inconvenience and trouble that {{topic}} has brought you.",
+     "请接受我为{{topic}}给你带来的不便和麻烦所作的诚挚道歉。"
     ],
     [
      "p2s1#0",
@@ -1584,8 +1584,8 @@
     ],
     [
      "p2_apology_s2#0",
-     "To be specific, I must admit that {{fault}} concerning {{topic}} has caused {{impact}}.",
-     "具体来说，我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。"
+     "I must admit that {{fault}} on my part concerning {{topic}} has caused {{impact}}.",
+     "我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。"
     ],
     [
      "p2_apology_s2#1",
@@ -1609,8 +1609,8 @@
     ]
    ],
    "cn_paras": [
-    "希望收到此信时你一切安好。我写这封信，是为{{topic}}造成的问题向你致歉。",
-    "具体来说，事情经过如下。具体来说，我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。尽管{{cause}}能部分解释这件事，但主要责任仍在我。",
+    "希望收到此信时你一切安好。请接受我为{{topic}}给你带来的不便和麻烦所作的诚挚道歉。",
+    "具体来说，事情经过如下。我必须承认，{{topic}}上的{{fault}}造成了{{impact}}。由于我在{{topic}}方面{{fault}}，你不得不面对{{impact}}，这本不该发生。尽管{{cause}}能部分解释这件事，但主要责任仍在我。",
     "我保证这样的事不会再发生。感谢你抽时间阅读这封信，期待你的回复。"
    ]
   },
@@ -1623,8 +1623,8 @@
     ],
     [
      "p1s2#10",
-     "I am writing to make a formal complaint about the recent problems with {{topic}}.",
-     "我写这封信，是想正式投诉近期{{topic}}出现的问题。"
+     "It is with regret that I write to complain about the recent problems with {{topic}}.",
+     "很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。"
     ],
     [
      "p2s1#0",
@@ -1658,7 +1658,7 @@
     ]
    ],
    "cn_paras": [
-    "希望收到此信时你一切安好。我写这封信，是想正式投诉近期{{topic}}出现的问题。",
+    "希望收到此信时你一切安好。很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。",
     "具体来说，事情经过如下。令我失望的是，上周在贵店购买的{{product}}无法正常使用。具体来说，到货仅三天就出现了{{problem}}。若你能尽快安排维修或全额退款，我将不胜感激。",
     "请你{{expect}}，以便{{topic}}能得到更有效的处理。感谢你抽时间阅读这封信，期待你的回复。"
    ]
@@ -1765,8 +1765,8 @@
     ],
     [
      "p1s2#8",
-     "I am writing to discuss {{topic}} with you in more detail.",
-     "我写这封信，是想和你详细谈谈{{topic}}。"
+     "I would appreciate the chance to discuss {{topic}} with you in more detail.",
+     "希望能有机会和你更详细地谈谈{{topic}}。"
     ],
     [
      "p2s1#0",
@@ -1800,7 +1800,7 @@
     ]
    ],
    "cn_paras": [
-    "希望收到此信时你一切安好。我写这封信，是想和你详细谈谈{{topic}}。",
+    "希望收到此信时你一切安好。希望能有机会和你更详细地谈谈{{topic}}。",
     "具体来说，我想请教以下几点。具体而言，我想知道如何更好地适应当地的生活。另外，我不确定自己的计划是否可行，很想听听你的意见。鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
     "如果你能在{{deadline}}前{{expect}}，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。"
    ]
@@ -1819,8 +1819,8 @@
     ],
     [
      "p1s2#1",
-     "I am writing to share with you my views on {{topic}}.",
-     "我写这封信，是想和你分享我对{{topic}}的看法。"
+     "I would like to share with you a few thoughts on {{topic}}.",
+     "我想和你分享我对{{topic}}的几点看法。"
     ],
     [
      "p2s1#0",
@@ -1854,7 +1854,7 @@
     ]
    ],
    "cn_paras": [
-    "希望收到此信时你一切安好。非常高兴收到你的来信。我写这封信，是想和你分享我对{{topic}}的看法。",
+    "希望收到此信时你一切安好。非常高兴收到你的来信。我想和你分享我对{{topic}}的几点看法。",
     "具体来说，我想谈的有三点。说实话，你分享的内容让我印象很深，尤其是{{detail}}。在我看来，这体现了你细致的观察和对生活的热爱。原因在于，这类记录能帮我们重新发现日常时刻的美好。",
     "也很想听听你自己对这件事的看法。感谢你抽时间阅读这封信，期待你的回复。"
    ]
@@ -2100,9 +2100,9 @@
   "banks": 29,
   "types": 10,
   "core": 4,
-  "core_words": 36,
+  "core_words": 41,
   "must": 20,
-  "must_words": 319,
+  "must_words": 322,
   "ammo": 35,
   "freq3": 42,
   "guide": 17

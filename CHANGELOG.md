@@ -1,5 +1,33 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-23 来意句升级：撤掉 I am writing to 低阶模板]
+
+- **用户批评**（重要原则）：上轮把 8 条来意句统一成 `I am writing to ...` 是**降级**——
+  「不要这样写！精简不是写得简单，**高级的同时不烂大街，且有实用性**」。`I am writing to` 是中国考生最泛滥的
+  低阶开头，阅卷老师看腻；**"精简"要砍的是冗余填充，不是把句式降成入门模板**。已写入记忆。
+- **10 类来意句重设计（每类一句、句式互不重复、动词精准）**：
+  | 类型 | 新句 |
+  |---|---|
+  | 建议 | `I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.` |
+  | 邀请 | `It gives me great pleasure to invite you to {{topic}}.` |
+  | 感谢 | `I am truly grateful for the generous help you have given me.` |
+  | 祝贺 | `Please allow me to extend my warmest congratulations to you.`（保留，本就高级） |
+  | 道歉 | `Please accept my sincere apology for any inconvenience and trouble that {{topic}} has brought you.` |
+  | 投诉 | `It is with regret that I write to complain about the recent problems with {{topic}}.` |
+  | 介绍 | `In this letter, I would like to introduce {{topic}} to you as an excellent option.`（保留） |
+  | 通知 | `In order to further promote {{topic}}, our school has decided to issue the following notice.`（保留） |
+  | 询问 | `I would appreciate the chance to discuss {{topic}} with you in more detail.` |
+  | 观点 | `I would like to share with you a few thoughts on {{topic}}.` |
+  - 8 种不同句式开头；`banks` 中 `I am writing to` 残留 = **0**
+- **同时回修上轮两处"写简单了"**：`better understand` → `gain a deeper understanding of`；
+  `To be specific, I must admit` → `I must admit that {{fault}} on my part concerning {{topic}} has caused {{impact}}`（on my part 更明确责任）。
+- **连带的词数问题**：道歉句变短致 apology 掉到 98 词（<100）→ 来意句扩为 `any inconvenience and trouble
+  that {{topic}} has brought you`（15 词）→ 102 词，重新达标。
+- **顺手消除句式撞车**：感谢句 `I would like to express my sincere gratitude` 与同信 P2 的
+  `I would like to express my heartfelt thanks` 句式重复 → 来意句改 `I am truly grateful for ...`。
+- letters 10 封同步（脚本 old→new + 断言，18 条全命中，无人工待办）；一致性与词数：
+  10 封 102–116 词、均 3 段，mismatch 仅剩 5 处预期场景化引出句。
+- 验证：jsdom **11/11 + 10/10 + 5**（10 类新句上墙、反例清零 5、词数/段落 2、点句翻译+段译+notice 回归 3）。SW en2-0f183910。
 ## [2026-09-23 模板中文中性化 + 英文精简去重]
 
 - **背景**：用户要求「翻译可以不用很润色，模板里中性化一点就行，方便我背诵；主要是英语句子」。
