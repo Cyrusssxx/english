@@ -413,17 +413,9 @@ function toggleCnAll() {
     document.querySelectorAll('.writing-toggle').forEach(b => { b.textContent = cnAll ? '隐藏中文译文' : '显示中文译文'; });
     // 精读模式：底部本篇词组区随开关显示/隐藏
     syncPhraseZone(cnAll);
-    if (cnAll) {
-        // 做题模式下自动定位到「当前题」（无当前题则第一题）——滚动 + 高亮 + 展开该句译文
-        if (isQuizMode()) {
-            const qs = article.questions || [];
-            const qid = currentQid || (qs[0] && qs[0].id);
-            if (qid) { clearRelated(); locateRelated(qid); }
-        }
-    } else {
-        // 关精读：清除所有定位高亮
-        clearRelated();
-    }
+    // 打开精读不自动定位高亮（用户要求，所有题型一致）——高亮定位仅手动点「定位原文依据」；
+    // 关闭精读时清掉遗留的手动高亮，避免译文收起后高亮悬空。
+    if (!cnAll) clearRelated();
 }
 
 // ============ 初始化 ============
