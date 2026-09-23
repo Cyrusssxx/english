@@ -704,6 +704,19 @@ html.dark .sent.related {
     background: #4a3a12;
 }
 
+/* 新题型/完形紧凑竖排：定位相关句高亮收敛为左缘竖条，不铺满整行（避免"全屏高亮"感）；
+   连排出处句子较低并排时，满行黄底会连成一大片，干扰定位。 */
+.para-compact .sent.related {
+    background: none;
+    border-left: 3px solid rgba(213, 180, 60, .9);
+    padding-left: 6px;
+    margin-left: 2px;
+    border-radius: 0;
+}
+html.dark .para-compact .sent.related {
+    border-left-color: rgba(240, 200, 80, .85);
+}
+
 .sent-en {
     font-size: 1.06rem;
     font-family: Georgia, "Times New Roman", "Microsoft YaHei", serif;

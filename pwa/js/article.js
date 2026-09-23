@@ -1602,9 +1602,10 @@ function locateRelated(qid) {
         if (el) {
             el.classList.add('related');
             if (!first) first = el;
-            // 顺带展开关联句译文
+            // 顺带展开相关句译文。紧凑竖排（完形/新题型）不自动展开——连续句连排时弹译文会占满整行/整屏，
+            // 干扰做题定位（用户反馈"定位全屏高亮"）；只高亮标注，译文要点句查看。普通阅读题保持自动展开。
             const cn = el.querySelector('.sent-cn');
-            if (cn) cn.classList.add('open');
+            if (cn && article.type !== 'newtype' && article.type !== 'cloze') cn.classList.add('open');
         }
     }
     locatedQid = qid;
