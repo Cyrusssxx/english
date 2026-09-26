@@ -4469,8 +4469,8 @@
     "template": "本模板由【优秀范文】提炼、改编而来，适用于撰写“在两场活动中择一参加”的建议信。Dear ____, I am so glad to hear from you. You mentioned in your previous email/letter that you are torn between 选择对象1 and 选择对象2. It seems to me that the former/latter is a better choice. For one thing, it is said that this upcoming event features 所选对象的特色之处, among which 最值得期待的部分 is most anticipated. For ________ lovers like you, this is an opportunity not to be missed. For another, this event will bring together industry experts and 活动所涉类型 enthusiasts to share insights. Trying to establish contact with them is definitely conducive to your professional development in 与所选对象相关的领域. For all these reasons, I believe that 所选对象 will suit your tastes and needs better. Hope you can fully enjoy it! Yours sincerely, Li Ming"
    },
    "apply": {
-    "apply_en": "Dear David,\nI am so delighted to receive your letter. The primary aim of this letter is to offer some suggestions on which event to visit on Sunday.\n\nAs for the practical measures, my suggestions are listed as follows. In particular, you are advised to go to the robot show around your choice so that you can gradually improve the direction technology is moving in. In addition, it is strongly recommended that you should book the tickets online in advance so as to improve the situation.\n\nI sincerely hope that you will make full use of this opportunity to enjoy a memorable Sunday.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear David,\n非常高兴收到你的来信。本信的首要目的，是就周日该去看哪一个活动提出若干建议。\n\n至于具体措施，我的建议如下。具体而言，建议你围绕你的选择去看机器人展，以便逐步提升技术发展的方向。另外，强烈建议你提前在网上订票，以便改善当前状况。\n\n我真诚希望你能充分利用这次机会度过一个难忘的周日。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear David,\nI am so delighted to receive your letter. I would like to offer a few suggestions on which event to visit on Sunday, which I hope may be of use to you.\n\nAs for the practical measures, my suggestions are as follows. In particular, you are advised to go to the robot show around your choice so that you can gradually improve the direction technology is moving in. In addition, you might consider taking concrete steps to book the tickets online in advance so as to optimize the current situation.\n\nI sincerely hope that you will make full use of this opportunity to enjoy a memorable Sunday.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear David,\n非常高兴收到你的来信。我想就周日该去看哪一个活动提几点建议，希望能对你有用。\n\n至于具体措施，我的建议如下。具体来说，建议你围绕你的选择来去看机器人展，这样能逐步改善技术发展的方向。此外，你或许可以考虑采取切实举措来提前在网上订票，以优化现状。\n\n我衷心希望你能充分利用这次机会度过一个难忘的周日。\nYours sincerely,\nLi Ming",
     "tips": [
      "「二选一」题必须<b>明确表态</b>：{{action}} 直接填 go to the robot show，不要写 it depends。",
      "「理由」用 {{detail}} 一句话交代即可，再补一句可执行建议（提前订票），两问就都完成了。",
@@ -4522,28 +4522,28 @@
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
      },
      {
-      "en": "The primary aim of this letter is to offer some suggestions on {{topic}}.",
-      "cn": "本信的首要目的，是就{{topic}}提出若干建议。",
+      "en": "I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.",
+      "cn": "我想就{{topic}}提几点建议，希望能对你有用。",
       "src": "第一段 · 第二句（表明来意） · 模板第10句"
      },
      {
-      "en": "As for the practical measures, my suggestions are listed as follows.",
+      "en": "As for the practical measures, my suggestions are as follows.",
       "cn": "至于具体措施，我的建议如下。",
       "src": "第二段 · 通用首句（引出下文） · 模板第2句"
      },
      {
       "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-      "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+      "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
       "src": "第二段 · 建议类 第二句 · 模板第2句"
      },
      {
-      "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-      "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+      "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+      "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
       "src": "第二段 · 建议类 第三句 · 模板第1句"
      },
      {
       "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
       "src": "第三段 · 收尾 / 客套 · 模板第5句"
      }
     ]
@@ -4696,8 +4696,8 @@
     "template": "本模板适用于“呈持续增长趋势”的折线图，主题多反映居民健康、理财、环保等认知水平的积极发展态势。模板注释：该模板第一段①句概括图表的主题内容，②句说明从起始年份到截至年份的持续增长趋势，③句指出从某年份起，增长速度加快。第二段①句指出该图表反映了一个乐观的趋势，并说明该趋势的具体内容，②句概括指出该趋势背后有两个主要原因，③④句分别从经济和政府政策两个层面阐述趋势背后的原因。第三段①句概括指出该趋势对我们的社会有多方面的积极作用，②③句具体阐述两个积极作用。I ① The line/bar chart above shows the change in ________ over the past ________. ② As can be seen, ________ increased/rose/grew steadily/continuously/uninterruptedly from ________ in 起始年份 to ________ in 截止年份. ③ And it is notable that the growth rate of ________ has picked up considerably/significantly/substantially since ________. II ① This chart reflects an optimistic trend in our current society: an increasing number of people become aware of ________ and take action to ________. ② And there are two major reasons behind this trend. ③ For one thing, economic development and subsequent betterment of living standards have made it possible for residents to allocate more money and time for improving their understanding of ________. ④ For another, government efforts in enhancing public consciousness of ________, such as ________, have helped to shape a growing body of informed residents, who have a high sense of responsibility and are earnest in implementing ________ in their daily life. III ① This trend has several benefits to our society. ② To begin with, a higher ________ literacy rate ensures that our society have ________. ③ What's more, a larger body of residents who are knowledgeable about ________ means that smart policies aimed at addressing urgent issues facing society will face less opposition and get implemented much faster."
    },
    "apply": {
-    "apply_en": "The line chart above clearly illustrates the changes in the health literacy rate of Chinese residents from 2012 to 2021. During this period, it rose steadily from 8.80% to 25.40%, without any noticeable fall. Growth was slow at first and then sped up. The figure more than doubled over the period.\n\nThis phenomenon can be attributed to a combination of factors. Public spending on infrastructure has made health literacy far more widely available. People now judge health literacy by what it does for them rather than by what others think. Sitting all day has turned health literacy from a hobby into a practical need. Schools now treat health literacy as part of the routine rather than an optional extra.\n\nOn balance, this is a positive trend worth welcoming. Media should report on health literacy honestly, without exaggerating its benefits or its risks. Clear rules and steady funding matter more than one-off campaigns. Individuals should choose what fits their own situation rather than follow the crowd. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该折线图清晰地展示了2012年到2021年期间居民健康素养水平的变化。在此期间，它从8.80%稳步升至25.40%，始终没有明显回落。增长起初缓慢，后来明显加快。这一数字在该时期翻了一倍多。\n\n这一现象可归因于多种因素的综合作用。基础设施方面的公共支出使健康素养更加普及。如今，人们评判健康素养的标准是它能为自己带来什么，而非他人的看法。长期久坐使健康素养从爱好变成了切实的需求。学校现在将健康素养视为常规活动的一部分，而非可选的附加内容。\n\n总的来说，这是一个值得欢迎的积极趋势。媒体应如实报道健康素养，既不夸大好处，也不夸大风险。明确的规则和持续投入，比一次性活动更重要。个人应按自身情况选择，而不是随大流。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The line chart above clearly illustrates the changes in the health literacy rate of Chinese residents from 2012 to 2021. During this period, it rose steadily from 8.80% to 25.40%, without any noticeable fall. Growth was slow at first and then sped up. The figure more than doubled over the period.\n\nThis phenomenon can be attributed to a combination of factors. First, public spending on infrastructure has made health literacy far more widely available. Equally important, people now judge health literacy by what it does for them rather than by what others think. Beyond that, sitting all day has turned health literacy from a hobby into a practical need.\n\nOn balance, this is a positive trend worth welcoming. Media should report on health literacy honestly, without exaggerating its benefits or its risks. Clear rules and steady funding matter more than one-off campaigns. Individuals should choose what fits their own situation rather than follow the crowd. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该折线图清晰地展示了2012年到2021年期间居民健康素养水平的变化。在此期间，它从8.80%稳步升至25.40%，始终没有明显回落。增长起初缓慢，后来明显加快。这一数字在该时期翻了一倍多。\n\n这一现象可归因于多种因素的综合作用。首先，基础设施方面的公共支出使健康素养更加普及。同样重要的是，如今，人们评判健康素养的标准是它能为自己带来什么，而非他人的看法。除此之外，长期久坐使健康素养从爱好变成了切实的需求。\n\n总的来说，这是一个值得欢迎的积极趋势。媒体应如实报道健康素养，既不夸大好处，也不夸大风险。明确的规则和持续投入，比一次性活动更重要。个人应按自身情况选择，而不是随大流。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "折线图、单线持续升（1 个事物 / 动态）→ 用 **① 一条线在走 骨架**（适用 2013 · 2023）。",
      "数据要点：the health literacy rate of Chinese residents 8.80% → 25.40%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4813,11 +4813,6 @@
       "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
       "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
       "src": "第二段 · 原因（机制句池） · 功能句8"
-     },
-     {
-      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-      "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
-      "src": "第二段 · 原因（机制句池） · 功能句10"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",

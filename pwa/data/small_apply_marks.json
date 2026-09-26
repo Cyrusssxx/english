@@ -1,12 +1,12 @@
 {
  "2010": {
-  "wc": 96,
+  "wc": 103,
   "req": 95,
   "salutation": "Dear Michael,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 18,
+    "wc": 24,
     "sents": [
      {
       "kind": "tpl",
@@ -19,7 +19,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -29,13 +29,13 @@
       "spans": [
        {
         "t": "t",
-        "x": "I am writing to express my sincere gratitude for your help."
+        "x": "I am writing to express my profound gratitude for the generous assistance you have extended to me."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "我写信是为表达我对你帮助的诚挚感谢。"
+        "x": "非常感谢你给予我的慷慨帮助。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第6句"
@@ -43,20 +43,20 @@
     ]
    },
    {
-    "wc": 60,
+    "wc": 61,
     "sents": [
      {
       "kind": "tpl",
       "spans": [
        {
         "t": "t",
-        "x": "I would like to express my heartfelt thanks for the warm reception you gave me during my stay."
+        "x": "To begin with, I was deeply moved by the warm and gracious reception you accorded me during my stay."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "我想对你在我逗留期间给予的热情接待表示由衷的感谢。"
+        "x": "我想衷心感谢你在我逗留期间给予的热情接待。"
        }
       ],
       "src": "第二段 · 感谢类 第二句（具体谢什么） · 模板第1句"
@@ -66,13 +66,13 @@
       "spans": [
        {
         "t": "t",
-        "x": "What impressed me most was your patience and kindness, which made me feel at home."
+        "x": "Furthermore, your unfailing patience and thoughtful guidance genuinely made me feel at home."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "最让我感动的是你的耐心与友善，让我感到宾至如归。"
+        "x": "此外，你始终如一的耐心与悉心指引，真正让我感到如在家般温暖。"
        }
       ],
       "src": "第二段 · 感谢类 第三句（说影响 / 感受） · 模板第1句"
@@ -82,7 +82,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In particular, I would like to invite you to "
+        "x": "In particular, I would be delighted to invite you to "
        },
        {
         "t": "s",
@@ -98,7 +98,7 @@
        },
        {
         "t": "t",
-        "x": ", which will offer you "
+        "x": ", which will provide you with "
        },
        {
         "t": "s",
@@ -112,7 +112,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，我诚挚邀请你"
+        "x": "具体而言，我非常高兴邀请你"
        },
        {
         "t": "s",
@@ -161,7 +161,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "我真诚希望你能充分利用这次机会"
+        "x": "我衷心希望你能充分利用这次机会"
        },
        {
         "t": "s",
@@ -206,32 +206,32 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to express my sincere gratitude for your help.",
-    "cn": "我写信是为表达我对你帮助的诚挚感谢。",
+    "en": "I am writing to express my profound gratitude for the generous assistance you have extended to me.",
+    "cn": "非常感谢你给予我的慷慨帮助。",
     "src": "第一段 · 第二句（表明来意） · 模板第6句"
    },
    {
-    "en": "I would like to express my heartfelt thanks for the warm reception you gave me during my stay.",
-    "cn": "我想对你在我逗留期间给予的热情接待表示由衷的感谢。",
+    "en": "To begin with, I was deeply moved by the warm and gracious reception you accorded me during my stay.",
+    "cn": "我想衷心感谢你在我逗留期间给予的热情接待。",
     "src": "第二段 · 感谢类 第二句（具体谢什么） · 模板第1句"
    },
    {
-    "en": "What impressed me most was your patience and kindness, which made me feel at home.",
-    "cn": "最让我感动的是你的耐心与友善，让我感到宾至如归。",
+    "en": "Furthermore, your unfailing patience and thoughtful guidance genuinely made me feel at home.",
+    "cn": "此外，你始终如一的耐心与悉心指引，真正让我感到如在家般温暖。",
     "src": "第二段 · 感谢类 第三句（说影响 / 感受） · 模板第1句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
@@ -256,7 +256,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -272,7 +272,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "请允许我向你致以最诚挚的祝贺。"
+        "x": "请允许我向你致以最热烈的祝贺。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第8句"
@@ -287,7 +287,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "To be more specific, your remarkable achievement in "
+        "x": "To be more specific, your outstanding achievement in "
        },
        {
         "t": "s",
@@ -295,7 +295,7 @@
        },
        {
         "t": "t",
-        "x": " clearly shows your "
+        "x": " bears clear testimony to your exceptional "
        },
        {
         "t": "s",
@@ -317,7 +317,7 @@
        },
        {
         "t": "t",
-        "x": "方面的优异表现，清楚地展现了你的"
+        "x": "上的出色表现清楚地展现了你的"
        },
        {
         "t": "s",
@@ -335,15 +335,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "To a large extent, this success comes from your willingness to "
-       },
-       {
-        "t": "s",
-        "x": "keep working for what you want"
-       },
-       {
-        "t": "t",
-        "x": ", especially when dealing with "
+        "x": "To a large extent, this well-earned triumph stems from the sustained dedication and perseverance you have exhibited in "
        },
        {
         "t": "s",
@@ -357,7 +349,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "在很大程度上，这一成功源于你愿意在"
+        "x": "在很大程度上，这一成功源于你在"
        },
        {
         "t": "s",
@@ -365,15 +357,7 @@
        },
        {
         "t": "t",
-        "x": "上"
-       },
-       {
-        "t": "s",
-        "x": "为自己想要的东西持续努力"
-       },
-       {
-        "t": "t",
-        "x": "。"
+        "x": "上持续付出的努力。"
        }
       ],
       "src": "第二段 · 祝贺类 第三句 · 模板第1句"
@@ -413,11 +397,15 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，建议你围绕"
+        "x": "具体来说，建议你围绕"
        },
        {
         "t": "s",
         "x": "你在大学生活中的兴趣"
+       },
+       {
+        "t": "t",
+        "x": "来"
        },
        {
         "t": "s",
@@ -425,7 +413,7 @@
        },
        {
         "t": "t",
-        "x": "，以便逐步提升"
+        "x": "，这样能逐步改善"
        },
        {
         "t": "s",
@@ -492,12 +480,6 @@
     "para": "第二段"
    },
    {
-    "name": "effort",
-    "en": "keep working for what you want",
-    "cn": "为自己想要的东西持续努力",
-    "para": "第二段"
-   },
-   {
     "name": "topic",
     "en": "the long preparation for the exam",
     "cn": "备考那漫长的过程",
@@ -531,27 +513,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
     "en": "Please allow me to extend my warmest congratulations to you.",
-    "cn": "请允许我向你致以最诚挚的祝贺。",
+    "cn": "请允许我向你致以最热烈的祝贺。",
     "src": "第一段 · 第二句（表明来意） · 模板第8句"
    },
    {
-    "en": "To be more specific, your remarkable achievement in {{topic}} clearly shows your {{quality}}.",
-    "cn": "更具体地说，你在{{topic}}方面的优异表现，清楚地展现了你的{{quality}}。",
+    "en": "To be more specific, your outstanding achievement in {{topic}} bears clear testimony to your exceptional {{quality}}.",
+    "cn": "更具体地说，你在{{topic}}上的出色表现清楚地展现了你的{{quality}}。",
     "src": "第二段 · 祝贺类 第二句 · 模板第1句"
    },
    {
-    "en": "To a large extent, this success comes from your willingness to {{effort}}, especially when dealing with {{topic}}.",
-    "cn": "在很大程度上，这一成功源于你愿意在{{topic}}上{{effort}}。",
+    "en": "To a large extent, this well-earned triumph stems from the sustained dedication and perseverance you have exhibited in {{topic}}.",
+    "cn": "在很大程度上，这一成功源于你在{{topic}}上持续付出的努力。",
     "src": "第二段 · 祝贺类 第三句 · 模板第1句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
@@ -562,13 +544,13 @@
   ]
  },
  "2012": {
-  "wc": 99,
+  "wc": 104,
   "req": 95,
   "salutation": "Dear Sir or Madam,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 28,
+    "wc": 33,
     "sents": [
      {
       "kind": "tpl",
@@ -581,7 +563,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -591,7 +573,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "This letter serves as a formal complaint about the recent problems with "
+        "x": "It is with great regret that I write to lodge a formal complaint regarding recent defects in "
        },
        {
         "t": "s",
@@ -605,7 +587,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "这封信作为一份正式投诉，旨在反映近期与"
+        "x": "很遗憾，我不得不就近期"
        },
        {
         "t": "s",
@@ -613,7 +595,7 @@
        },
        {
         "t": "t",
-        "x": "有关的问题。"
+        "x": "出现的问题正式投诉。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第11句"
@@ -628,7 +610,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "To my disappointment, the "
+        "x": "To my profound disappointment, the "
        },
        {
         "t": "s",
@@ -636,13 +618,13 @@
        },
        {
         "t": "t",
-        "x": " I bought from your online store last week has failed to work properly."
+        "x": " I purchased from your store has failed to function properly."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "令我失望的是，上周在贵网店购买的"
+        "x": "令我失望的是，上周在贵店购买的"
        },
        {
         "t": "s",
@@ -674,7 +656,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体来说，到货才三天就出现了"
+        "x": "具体来说，到货仅三天就出现了"
        },
        {
         "t": "s",
@@ -692,13 +674,13 @@
       "spans": [
        {
         "t": "t",
-        "x": "I would appreciate it if you could arrange a repair or a full refund as soon as possible."
+        "x": "In light of these facts, I would appreciate it if you could arrange an immediate replacement or a full refund."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "如果你能尽快安排维修或全额退款，我将不胜感激。"
+        "x": "若你能尽快安排维修或全额退款，我将不胜感激。"
        }
       ],
       "src": "第二段 · 投诉类 第三句（要求怎么解决） · 模板第1句"
@@ -794,27 +776,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "This letter serves as a formal complaint about the recent problems with {{topic}}.",
-    "cn": "这封信作为一份正式投诉，旨在反映近期与{{topic}}有关的问题。",
+    "en": "It is with great regret that I write to lodge a formal complaint regarding recent defects in {{topic}}.",
+    "cn": "很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。",
     "src": "第一段 · 第二句（表明来意） · 模板第11句"
    },
    {
-    "en": "To my disappointment, the {{product}} I bought from your online store last week has failed to work properly.",
-    "cn": "令我失望的是，上周在贵网店购买的{{product}}无法正常使用。",
+    "en": "To my profound disappointment, the {{product}} I purchased from your store has failed to function properly.",
+    "cn": "令我失望的是，上周在贵店购买的{{product}}无法正常使用。",
     "src": "第二段 · 投诉类 第二句（出了什么问题） · 模板第1句"
    },
    {
     "en": "Specifically, {{problem}} appeared only three days after it arrived.",
-    "cn": "具体来说，到货才三天就出现了{{problem}}。",
+    "cn": "具体来说，到货仅三天就出现了{{problem}}。",
     "src": "第二段 · 投诉类 第二句（出了什么问题） · 模板第2句"
    },
    {
-    "en": "I would appreciate it if you could arrange a repair or a full refund as soon as possible.",
-    "cn": "如果你能尽快安排维修或全额退款，我将不胜感激。",
+    "en": "In light of these facts, I would appreciate it if you could arrange an immediate replacement or a full refund.",
+    "cn": "若你能尽快安排维修或全额退款，我将不胜感激。",
     "src": "第二段 · 投诉类 第三句（要求怎么解决） · 模板第1句"
    },
    {
@@ -825,13 +807,13 @@
   ]
  },
  "2013": {
-  "wc": 106,
+  "wc": 108,
   "req": 95,
   "salutation": "Dear classmates,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 23,
+    "wc": 25,
     "sents": [
      {
       "kind": "tpl",
@@ -844,7 +826,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -854,7 +836,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "I am writing to you regarding the matter of "
+        "x": "This letter concerns "
        },
        {
         "t": "s",
@@ -862,13 +844,13 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": ", and I would appreciate your thoughts on it."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "我写信是关于"
+        "x": "这封信是关于"
        },
        {
         "t": "s",
@@ -876,7 +858,7 @@
        },
        {
         "t": "t",
-        "x": "这一事项。"
+        "x": "的，希望听听你的看法。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第1句"
@@ -884,7 +866,7 @@
     ]
    },
    {
-    "wc": 60,
+    "wc": 61,
     "sents": [
      {
       "kind": "tpl",
@@ -897,7 +879,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "至于本次活动的具体安排，主要如下。"
+        "x": "至于本次活动，具体安排如下。"
        }
       ],
       "src": "第二段 · 通用首句（引出下文） · 模板第3句"
@@ -923,7 +905,7 @@
        },
        {
         "t": "t",
-        "x": ", providing a fixed venue for all "
+        "x": ", which is convenient for all "
        },
        {
         "t": "s",
@@ -953,7 +935,7 @@
        },
        {
         "t": "t",
-        "x": "举行，为全体"
+        "x": "举行，全体"
        },
        {
         "t": "s",
@@ -961,7 +943,7 @@
        },
        {
         "t": "t",
-        "x": "提供固定场所。"
+        "x": "前往都很方便。"
        }
       ],
       "src": "第二段 · 通知类 第二句 · 模板第2句"
@@ -971,7 +953,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In particular, I would like to invite you to "
+        "x": "In particular, I would be delighted to invite you to "
        },
        {
         "t": "s",
@@ -987,7 +969,7 @@
        },
        {
         "t": "t",
-        "x": ", which will offer you "
+        "x": ", which will provide you with "
        },
        {
         "t": "s",
@@ -1001,7 +983,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，我诚挚邀请你"
+        "x": "具体而言，我非常高兴邀请你"
        },
        {
         "t": "s",
@@ -1029,7 +1011,7 @@
     ]
    },
    {
-    "wc": 23,
+    "wc": 22,
     "sents": [
      {
       "kind": "tpl",
@@ -1052,7 +1034,7 @@
        },
        {
         "t": "t",
-        "x": " can be implemented more effectively."
+        "x": " can be properly arranged."
        }
       ],
       "spans_cn": [
@@ -1074,7 +1056,7 @@
        },
        {
         "t": "t",
-        "x": "能够得到更为有效的落实。"
+        "x": "能够得到妥善安排。"
        }
       ],
       "src": "第三段 · 收尾 / 客套 · 模板第2句"
@@ -1141,44 +1123,44 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to you regarding the matter of {{topic}}.",
-    "cn": "我写信是关于{{topic}}这一事项。",
+    "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+    "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
     "src": "第一段 · 第二句（表明来意） · 模板第1句"
    },
    {
     "en": "As for the planned event, the main arrangements are as follows.",
-    "cn": "至于本次活动的具体安排，主要如下。",
+    "cn": "至于本次活动，具体安排如下。",
     "src": "第二段 · 通用首句（引出下文） · 模板第3句"
    },
    {
-    "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-    "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+    "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+    "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
     "src": "第二段 · 通知类 第二句 · 模板第2句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
-    "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-    "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+    "en": "You are kindly requested to {{expect}} so that {{topic}} can be properly arranged.",
+    "cn": "请你{{expect}}，以便{{topic}}能够得到妥善安排。",
     "src": "第三段 · 收尾 / 客套 · 模板第2句"
    }
   ]
  },
  "2014": {
-  "wc": 107,
+  "wc": 111,
   "req": 95,
   "salutation": "Dear John,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 23,
+    "wc": 25,
     "sents": [
      {
       "kind": "tpl",
@@ -1191,7 +1173,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -1201,7 +1183,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "I am writing to you regarding the matter of "
+        "x": "This letter concerns "
        },
        {
         "t": "s",
@@ -1209,13 +1191,13 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": ", and I would appreciate your thoughts on it."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "我写信是关于"
+        "x": "这封信是关于"
        },
        {
         "t": "s",
@@ -1223,7 +1205,7 @@
        },
        {
         "t": "t",
-        "x": "这一事项。"
+        "x": "的，希望听听你的看法。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第1句"
@@ -1231,7 +1213,7 @@
     ]
    },
    {
-    "wc": 64,
+    "wc": 66,
     "sents": [
      {
       "kind": "tpl",
@@ -1302,13 +1284,13 @@
       "spans": [
        {
         "t": "t",
-        "x": "In particular, I would like to know how I can better adapt to the local way of life."
+        "x": "To begin with, I am eager to know how I can adapt to the local customs and lifestyle more smoothly."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，我想知道我怎样才能更好地适应当地的生活方式。"
+        "x": "具体而言，我想知道如何更好地适应当地的生活。"
        }
       ],
       "src": "第二段 · 询问类 第二句（想问什么） · 模板第1句"
@@ -1318,13 +1300,13 @@
       "spans": [
        {
         "t": "t",
-        "x": "Since you are familiar with the situation there, your advice would be of great value to me."
+        "x": "Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。"
+        "x": "鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。"
        }
       ],
       "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
@@ -1426,12 +1408,12 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to you regarding the matter of {{topic}}.",
-    "cn": "我写信是关于{{topic}}这一事项。",
+    "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+    "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
     "src": "第一段 · 第二句（表明来意） · 模板第1句"
    },
    {
@@ -1440,13 +1422,13 @@
     "src": "第二段 · 介绍类 第二句 · 模板第3句"
    },
    {
-    "en": "In particular, I would like to know how I can better adapt to the local way of life.",
-    "cn": "具体而言，我想知道我怎样才能更好地适应当地的生活方式。",
+    "en": "To begin with, I am eager to know how I can adapt to the local customs and lifestyle more smoothly.",
+    "cn": "具体而言，我想知道如何更好地适应当地的生活。",
     "src": "第二段 · 询问类 第二句（想问什么） · 模板第1句"
    },
    {
-    "en": "Since you are familiar with the situation there, your advice would be of great value to me.",
-    "cn": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。",
+    "en": "Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me.",
+    "cn": "鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
     "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
    },
    {
@@ -1457,7 +1439,7 @@
   ]
  },
  "2015": {
-  "wc": 106,
+  "wc": 113,
   "req": 95,
   "salutation": "Volunteers Needed for the Summer Camp",
   "close": "",
@@ -1484,7 +1466,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "为了进一步推进"
+        "x": "为进一步推动"
        },
        {
         "t": "s",
@@ -1492,7 +1474,7 @@
        },
        {
         "t": "t",
-        "x": "，学校决定发布如下通知。"
+        "x": "，学校决定发布以下通知。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第3句"
@@ -1500,7 +1482,7 @@
     ]
    },
    {
-    "wc": 73,
+    "wc": 80,
     "sents": [
      {
       "kind": "tpl",
@@ -1515,7 +1497,7 @@
        },
        {
         "t": "t",
-        "x": " has been set as the official time for "
+        "x": " has been designated as the official schedule for "
        },
        {
         "t": "s",
@@ -1531,7 +1513,7 @@
        },
        {
         "t": "t",
-        "x": " are required to attend on time."
+        "x": " are expected to be present punctually."
        }
       ],
       "spans_cn": [
@@ -1545,7 +1527,7 @@
        },
        {
         "t": "t",
-        "x": "被确定为"
+        "x": "定为"
        },
        {
         "t": "s",
@@ -1553,7 +1535,7 @@
        },
        {
         "t": "t",
-        "x": "的正式时间，届时要求全体"
+        "x": "的正式时间，届时全体"
        },
        {
         "t": "s",
@@ -1561,7 +1543,7 @@
        },
        {
         "t": "t",
-        "x": "准时参加。"
+        "x": "须准时参加。"
        }
       ],
       "src": "第二段 · 通知类 第二句 · 模板第1句"
@@ -1571,7 +1553,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "Furthermore, the main contents of "
+        "x": "Furthermore, the core agenda of "
        },
        {
         "t": "s",
@@ -1579,7 +1561,7 @@
        },
        {
         "t": "t",
-        "x": " include "
+        "x": " will center around "
        },
        {
         "t": "s",
@@ -1603,7 +1585,7 @@
        },
        {
         "t": "t",
-        "x": ", forming a clear structure."
+        "x": ", all of which align closely with the overarching theme."
        }
       ],
       "spans_cn": [
@@ -1617,7 +1599,7 @@
        },
        {
         "t": "t",
-        "x": "的主要内容包括"
+        "x": "的核心议程将围绕"
        },
        {
         "t": "s",
@@ -1641,7 +1623,7 @@
        },
        {
         "t": "t",
-        "x": "，整体结构清晰明了。"
+        "x": "展开，均与总体主题高度契合。"
        }
       ],
       "src": "第二段 · 通知类 第三句 · 模板第1句"
@@ -1651,7 +1633,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "Last but not least, all "
+        "x": "Finally, all "
        },
        {
         "t": "s",
@@ -1659,7 +1641,7 @@
        },
        {
         "t": "t",
-        "x": " are required to "
+        "x": " are requested to strictly abide by "
        },
        {
         "t": "s",
@@ -1667,7 +1649,7 @@
        },
        {
         "t": "t",
-        "x": ", so that "
+        "x": ", thereby ensuring that "
        },
        {
         "t": "s",
@@ -1675,17 +1657,21 @@
        },
        {
         "t": "t",
-        "x": " can proceed in an orderly way."
+        "x": " proceeds in an orderly way."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "最后，要求全体"
+        "x": "最后，全体"
        },
        {
         "t": "s",
         "x": "志愿者"
+       },
+       {
+        "t": "t",
+        "x": "须"
        },
        {
         "t": "s",
@@ -1701,7 +1687,7 @@
        },
        {
         "t": "t",
-        "x": "有序开展。"
+        "x": "有序进行。"
        }
       ],
       "src": "第二段 · 通知类 第四句 · 模板第1句"
@@ -1722,7 +1708,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "请认真阅读本通知，并转告相关人员。"
+        "x": "请仔细阅读本通知并转告相关人员。"
        }
       ],
       "src": "第三段 · 收尾 / 客套 · 模板第6句"
@@ -1789,39 +1775,39 @@
   "key_phrases": [
    {
     "en": "In order to further promote {{topic}}, our school has decided to issue the following notice.",
-    "cn": "为了进一步推进{{topic}}，学校决定发布如下通知。",
+    "cn": "为进一步推动{{topic}}，学校决定发布以下通知。",
     "src": "第一段 · 第二句（表明来意） · 模板第3句"
    },
    {
-    "en": "First, {{time}} has been set as the official time for {{topic}}, and all {{audience}} are required to attend on time.",
-    "cn": "首先，{{time}}被确定为{{topic}}的正式时间，届时要求全体{{audience}}准时参加。",
+    "en": "First, {{time}} has been designated as the official schedule for {{topic}}, and all {{audience}} are expected to be present punctually.",
+    "cn": "首先，{{time}}定为{{topic}}的正式时间，届时全体{{audience}}须准时参加。",
     "src": "第二段 · 通知类 第二句 · 模板第1句"
    },
    {
-    "en": "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, forming a clear structure.",
-    "cn": "此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，整体结构清晰明了。",
+    "en": "Furthermore, the core agenda of {{topic}} will center around {{content1}}, {{content2}} and {{content3}}, all of which align closely with the overarching theme.",
+    "cn": "此外，{{topic}}的核心议程将围绕{{content1}}、{{content2}}和{{content3}}展开，均与总体主题高度契合。",
     "src": "第二段 · 通知类 第三句 · 模板第1句"
    },
    {
-    "en": "Last but not least, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way.",
-    "cn": "最后，要求全体{{audience}}{{requirement}}，以确保{{topic}}有序开展。",
+    "en": "Finally, all {{audience}} are requested to strictly abide by {{requirement}}, thereby ensuring that {{topic}} proceeds in an orderly way.",
+    "cn": "最后，全体{{audience}}须{{requirement}}，以确保{{topic}}有序进行。",
     "src": "第二段 · 通知类 第四句 · 模板第1句"
    },
    {
     "en": "Please read this notice carefully and pass it on to those concerned.",
-    "cn": "请认真阅读本通知，并转告相关人员。",
+    "cn": "请仔细阅读本通知并转告相关人员。",
     "src": "第三段 · 收尾 / 客套 · 模板第6句"
    }
   ]
  },
  "2016": {
-  "wc": 95,
+  "wc": 102,
   "req": 95,
   "salutation": "Dear Jack,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 19,
+    "wc": 25,
     "sents": [
      {
       "kind": "tpl",
@@ -1844,13 +1830,13 @@
       "spans": [
        {
         "t": "t",
-        "x": "I am writing to express my sincere gratitude for your help."
+        "x": "I am writing to express my profound gratitude for the generous assistance you have extended to me."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "我写信是为表达我对你帮助的诚挚感谢。"
+        "x": "非常感谢你给予我的慷慨帮助。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第6句"
@@ -1858,7 +1844,7 @@
     ]
    },
    {
-    "wc": 58,
+    "wc": 59,
     "sents": [
      {
       "kind": "tpl",
@@ -1879,7 +1865,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "没有你慷慨的帮助，我不可能在"
+        "x": "若没有你慷慨的帮助，我不可能在"
        },
        {
         "t": "s",
@@ -1927,11 +1913,15 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，建议你围绕"
+        "x": "具体来说，建议你围绕"
        },
        {
         "t": "s",
         "x": "翻译"
+       },
+       {
+        "t": "t",
+        "x": "来"
        },
        {
         "t": "s",
@@ -1939,7 +1929,7 @@
        },
        {
         "t": "t",
-        "x": "，以便逐步提升"
+        "x": "，这样能逐步改善"
        },
        {
         "t": "s",
@@ -1957,7 +1947,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In addition, it is strongly recommended that you should "
+        "x": "In addition, you might consider taking concrete steps to "
        },
        {
         "t": "s",
@@ -1965,13 +1955,13 @@
        },
        {
         "t": "t",
-        "x": " so as to improve the situation."
+        "x": " so as to optimize the current situation."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "另外，强烈建议你"
+        "x": "此外，你或许可以考虑采取切实举措来"
        },
        {
         "t": "s",
@@ -1979,7 +1969,7 @@
        },
        {
         "t": "t",
-        "x": "，以便改善当前状况。"
+        "x": "，以优化现状。"
        }
       ],
       "src": "第二段 · 建议类 第三句 · 模板第1句"
@@ -2008,7 +1998,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "我真诚希望你能充分利用这次机会"
+        "x": "我衷心希望你能充分利用这次机会"
        },
        {
         "t": "s",
@@ -2063,40 +2053,40 @@
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
    },
    {
-    "en": "I am writing to express my sincere gratitude for your help.",
-    "cn": "我写信是为表达我对你帮助的诚挚感谢。",
+    "en": "I am writing to express my profound gratitude for the generous assistance you have extended to me.",
+    "cn": "非常感谢你给予我的慷慨帮助。",
     "src": "第一段 · 第二句（表明来意） · 模板第6句"
    },
    {
     "en": "Without your generous help, I could never have made such progress in {{topic}}.",
-    "cn": "没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
+    "cn": "若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
     "src": "第二段 · 感谢类 第二句（具体谢什么） · 模板第2句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
-    "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-    "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+    "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+    "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
     "src": "第二段 · 建议类 第三句 · 模板第1句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
  },
  "2017": {
-  "wc": 112,
+  "wc": 118,
   "req": 95,
   "salutation": "Dear Professor Williams,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 25,
+    "wc": 27,
     "sents": [
      {
       "kind": "tpl",
@@ -2109,7 +2099,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -2119,7 +2109,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "I am writing to you regarding the matter of "
+        "x": "This letter concerns "
        },
        {
         "t": "s",
@@ -2127,13 +2117,13 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": ", and I would appreciate your thoughts on it."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "我写信是关于"
+        "x": "这封信是关于"
        },
        {
         "t": "s",
@@ -2141,7 +2131,7 @@
        },
        {
         "t": "t",
-        "x": "这一事项。"
+        "x": "的，希望听听你的看法。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第1句"
@@ -2149,7 +2139,7 @@
     ]
    },
    {
-    "wc": 71,
+    "wc": 75,
     "sents": [
      {
       "kind": "tpl",
@@ -2164,7 +2154,7 @@
        },
        {
         "t": "t",
-        "x": " refers to "
+        "x": " represents "
        },
        {
         "t": "s",
@@ -2172,7 +2162,7 @@
        },
        {
         "t": "t",
-        "x": ", which is characterized by "
+        "x": ", a concept distinguished by its distinctive "
        },
        {
         "t": "s",
@@ -2186,7 +2176,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "更具体而言，"
+        "x": "具体而言，"
        },
        {
         "t": "s",
@@ -2194,7 +2184,7 @@
        },
        {
         "t": "t",
-        "x": "是指"
+        "x": "代表着"
        },
        {
         "t": "s",
@@ -2202,7 +2192,7 @@
        },
        {
         "t": "t",
-        "x": "，其突出特点在于"
+        "x": "，这一事物以其独特的"
        },
        {
         "t": "s",
@@ -2210,7 +2200,7 @@
        },
        {
         "t": "t",
-        "x": "。"
+        "x": "而著称。"
        }
       ],
       "src": "第二段 · 介绍类 第二句 · 模板第1句"
@@ -2220,7 +2210,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "To begin with, it covers "
+        "x": "To begin with, it encompasses "
        },
        {
         "t": "s",
@@ -2228,7 +2218,7 @@
        },
        {
         "t": "t",
-        "x": ", enabling "
+        "x": ", thereby empowering "
        },
        {
         "t": "s",
@@ -2244,7 +2234,7 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": " with high efficiency."
        }
       ],
       "spans_cn": [
@@ -2284,7 +2274,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "Last but not least, your presence will make "
+        "x": "Finally, your distinguished presence will enrich "
        },
        {
         "t": "s",
@@ -2292,7 +2282,7 @@
        },
        {
         "t": "t",
-        "x": " more meaningful and enable you to "
+        "x": " and enable you to "
        },
        {
         "t": "s",
@@ -2300,7 +2290,7 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": " to the fullest."
        }
       ],
       "spans_cn": [
@@ -2314,7 +2304,7 @@
        },
        {
         "t": "t",
-        "x": "更加有意义，并使你得以"
+        "x": "更有意义，也能让你"
        },
        {
         "t": "s",
@@ -2351,7 +2341,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "我真诚希望你能充分利用这次机会"
+        "x": "我衷心希望你能充分利用这次机会"
        },
        {
         "t": "s",
@@ -2432,38 +2422,38 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to you regarding the matter of {{topic}}.",
-    "cn": "我写信是关于{{topic}}这一事项。",
+    "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+    "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
     "src": "第一段 · 第二句（表明来意） · 模板第1句"
    },
    {
-    "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
-    "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+    "en": "To be more specific, {{topic}} represents {{subject}}, a concept distinguished by its distinctive {{feature}}.",
+    "cn": "具体而言，{{topic}}代表着{{subject}}，这一事物以其独特的{{feature}}而著称。",
     "src": "第二段 · 介绍类 第二句 · 模板第1句"
    },
    {
-    "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+    "en": "To begin with, it encompasses {{aspect1}}, thereby empowering {{audience}} to {{gain1}} with high efficiency.",
     "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。",
     "src": "第二段 · 介绍类 第三句 · 模板第1句"
    },
    {
-    "en": "Last but not least, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.",
-    "cn": "最后，你的到来将使{{topic}}更加有意义，并使你得以{{benefit}}。",
+    "en": "Finally, your distinguished presence will enrich {{topic}} and enable you to {{benefit}} to the fullest.",
+    "cn": "最后，你的到来将使{{topic}}更有意义，也能让你{{benefit}}。",
     "src": "第二段 · 邀请类 第四句 · 模板第1句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
  },
  "2018": {
-  "wc": 118,
+  "wc": 119,
   "req": 95,
   "salutation": "Dear Professor Smith,",
   "close": "Yours sincerely,\nLi Ming",
@@ -2482,7 +2472,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -2492,7 +2482,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "This letter is intended to offer a sincere apology for the problems caused by "
+        "x": "Please accept my sincere apology for any inconvenience and trouble that "
        },
        {
         "t": "s",
@@ -2500,13 +2490,13 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": " has brought you."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "这封信旨在就"
+        "x": "请接受我为"
        },
        {
         "t": "s",
@@ -2514,7 +2504,7 @@
        },
        {
         "t": "t",
-        "x": "所带来的问题向你致以诚挚的歉意。"
+        "x": "给你带来的不便和麻烦所作的诚挚道歉。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第4句"
@@ -2522,7 +2512,7 @@
     ]
    },
    {
-    "wc": 70,
+    "wc": 71,
     "sents": [
      {
       "kind": "tpl",
@@ -2601,7 +2591,7 @@
        },
        {
         "t": "t",
-        "x": " partly explains why this happened, the main responsibility still lies with me."
+        "x": " partly contributed to the delay, the primary accountability undoubtedly rests with me."
        }
       ],
       "spans_cn": [
@@ -2615,7 +2605,7 @@
        },
        {
         "t": "t",
-        "x": "在一定程度上解释了事情发生的原因，但主要责任仍然在我。"
+        "x": "在一定程度上导致了延误，但主要责任毫无疑问在我。"
        }
       ],
       "src": "第二段 · 道歉类 第三句 · 模板第1句"
@@ -2625,7 +2615,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In addition, it is strongly recommended that you should "
+        "x": "In addition, you might consider taking concrete steps to "
        },
        {
         "t": "s",
@@ -2633,13 +2623,13 @@
        },
        {
         "t": "t",
-        "x": " so as to improve the situation."
+        "x": " so as to optimize the current situation."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "另外，强烈建议你"
+        "x": "此外，你或许可以考虑采取切实举措来"
        },
        {
         "t": "s",
@@ -2647,7 +2637,7 @@
        },
        {
         "t": "t",
-        "x": "，以便改善当前状况。"
+        "x": "，以优化现状。"
        }
       ],
       "src": "第二段 · 建议类 第三句 · 模板第1句"
@@ -2761,12 +2751,12 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "This letter is intended to offer a sincere apology for the problems caused by {{topic}}.",
-    "cn": "这封信旨在就{{topic}}所带来的问题向你致以诚挚的歉意。",
+    "en": "Please accept my sincere apology for any inconvenience and trouble that {{topic}} has brought you.",
+    "cn": "请接受我为{{topic}}给你带来的不便和麻烦所作的诚挚道歉。",
     "src": "第一段 · 第二句（表明来意） · 模板第4句"
    },
    {
@@ -2775,13 +2765,13 @@
     "src": "第二段 · 道歉类 第二句 · 模板第2句"
    },
    {
-    "en": "Although {{cause}} partly explains why this happened, the main responsibility still lies with me.",
-    "cn": "尽管{{cause}}在一定程度上解释了事情发生的原因，但主要责任仍然在我。",
+    "en": "Although {{cause}} partly contributed to the delay, the primary accountability undoubtedly rests with me.",
+    "cn": "尽管{{cause}}在一定程度上导致了延误，但主要责任毫无疑问在我。",
     "src": "第二段 · 道歉类 第三句 · 模板第1句"
    },
    {
-    "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-    "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+    "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+    "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
     "src": "第二段 · 建议类 第三句 · 模板第1句"
    },
    {
@@ -2792,13 +2782,13 @@
   ]
  },
  "2019": {
-  "wc": 116,
+  "wc": 122,
   "req": 95,
   "salutation": "Dear Professor Smith,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 27,
+    "wc": 33,
     "sents": [
      {
       "kind": "tpl",
@@ -2811,7 +2801,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -2821,7 +2811,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "The primary aim of this letter is to offer some suggestions on "
+        "x": "I would like to offer a few suggestions on "
        },
        {
         "t": "s",
@@ -2829,13 +2819,13 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": ", which I hope may be of use to you."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "本信的首要目的，是就"
+        "x": "我想就"
        },
        {
         "t": "s",
@@ -2843,7 +2833,7 @@
        },
        {
         "t": "t",
-        "x": "提出若干建议。"
+        "x": "提几点建议，希望能对你有用。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第10句"
@@ -2858,7 +2848,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "As for the practical measures, my suggestions are listed as follows."
+        "x": "As for the practical measures, my suggestions are as follows."
        }
       ],
       "spans_cn": [
@@ -2904,11 +2894,15 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，建议你围绕"
+        "x": "具体来说，建议你围绕"
        },
        {
         "t": "s",
         "x": "城市交通"
+       },
+       {
+        "t": "t",
+        "x": "来"
        },
        {
         "t": "s",
@@ -2916,7 +2910,7 @@
        },
        {
         "t": "t",
-        "x": "，以便逐步提升"
+        "x": "，这样能逐步改善"
        },
        {
         "t": "s",
@@ -2934,7 +2928,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In addition, it is strongly recommended that you should "
+        "x": "In addition, you might consider taking concrete steps to "
        },
        {
         "t": "s",
@@ -2942,13 +2936,13 @@
        },
        {
         "t": "t",
-        "x": " so as to improve the situation."
+        "x": " so as to optimize the current situation."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "另外，强烈建议你"
+        "x": "此外，你或许可以考虑采取切实举措来"
        },
        {
         "t": "s",
@@ -2956,7 +2950,7 @@
        },
        {
         "t": "t",
-        "x": "，以便改善当前状况。"
+        "x": "，以优化现状。"
        }
       ],
       "src": "第二段 · 建议类 第三句 · 模板第1句"
@@ -3064,27 +3058,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "The primary aim of this letter is to offer some suggestions on {{topic}}.",
-    "cn": "本信的首要目的，是就{{topic}}提出若干建议。",
+    "en": "I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.",
+    "cn": "我想就{{topic}}提几点建议，希望能对你有用。",
     "src": "第一段 · 第二句（表明来意） · 模板第10句"
    },
    {
-    "en": "As for the practical measures, my suggestions are listed as follows.",
+    "en": "As for the practical measures, my suggestions are as follows.",
     "cn": "至于具体措施，我的建议如下。",
     "src": "第二段 · 通用首句（引出下文） · 模板第2句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
-    "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-    "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+    "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+    "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
     "src": "第二段 · 建议类 第三句 · 模板第1句"
    },
    {
@@ -3095,7 +3089,7 @@
   ]
  },
  "2020": {
-  "wc": 119,
+  "wc": 124,
   "req": 95,
   "salutation": "Dear Friends,",
   "close": "Yours sincerely,\nLi Ming",
@@ -3114,7 +3108,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -3138,7 +3132,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "在这封信中，我想向你介绍"
+        "x": "在这封信里，我想把"
        },
        {
         "t": "s",
@@ -3146,7 +3140,7 @@
        },
        {
         "t": "t",
-        "x": "，把它作为一个极佳的选择推荐给你。"
+        "x": "作为一个很好的选择介绍给你。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第5句"
@@ -3154,7 +3148,7 @@
     ]
    },
    {
-    "wc": 74,
+    "wc": 79,
     "sents": [
      {
       "kind": "tpl",
@@ -3169,7 +3163,7 @@
        },
        {
         "t": "t",
-        "x": " refers to "
+        "x": " represents "
        },
        {
         "t": "s",
@@ -3177,7 +3171,7 @@
        },
        {
         "t": "t",
-        "x": ", which is characterized by "
+        "x": ", a concept distinguished by its distinctive "
        },
        {
         "t": "s",
@@ -3191,7 +3185,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "更具体而言，"
+        "x": "具体而言，"
        },
        {
         "t": "s",
@@ -3199,7 +3193,7 @@
        },
        {
         "t": "t",
-        "x": "是指"
+        "x": "代表着"
        },
        {
         "t": "s",
@@ -3207,7 +3201,7 @@
        },
        {
         "t": "t",
-        "x": "，其突出特点在于"
+        "x": "，这一事物以其独特的"
        },
        {
         "t": "s",
@@ -3215,7 +3209,7 @@
        },
        {
         "t": "t",
-        "x": "。"
+        "x": "而著称。"
        }
       ],
       "src": "第二段 · 介绍类 第二句 · 模板第1句"
@@ -3225,7 +3219,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "To begin with, it covers "
+        "x": "To begin with, it encompasses "
        },
        {
         "t": "s",
@@ -3233,7 +3227,7 @@
        },
        {
         "t": "t",
-        "x": ", enabling "
+        "x": ", thereby empowering "
        },
        {
         "t": "s",
@@ -3249,7 +3243,7 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": " with high efficiency."
        }
       ],
       "spans_cn": [
@@ -3319,11 +3313,15 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，建议你围绕"
+        "x": "具体来说，建议你围绕"
        },
        {
         "t": "s",
         "x": "参观的日期"
+       },
+       {
+        "t": "t",
+        "x": "来"
        },
        {
         "t": "s",
@@ -3331,7 +3329,7 @@
        },
        {
         "t": "t",
-        "x": "，以便逐步提升"
+        "x": "，这样能逐步改善"
        },
        {
         "t": "s",
@@ -3368,7 +3366,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "我真诚希望你能充分利用这次机会"
+        "x": "我衷心希望你能充分利用这次机会"
        },
        {
         "t": "s",
@@ -3455,44 +3453,44 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
     "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-    "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+    "cn": "在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。",
     "src": "第一段 · 第二句（表明来意） · 模板第5句"
    },
    {
-    "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
-    "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+    "en": "To be more specific, {{topic}} represents {{subject}}, a concept distinguished by its distinctive {{feature}}.",
+    "cn": "具体而言，{{topic}}代表着{{subject}}，这一事物以其独特的{{feature}}而著称。",
     "src": "第二段 · 介绍类 第二句 · 模板第1句"
    },
    {
-    "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+    "en": "To begin with, it encompasses {{aspect1}}, thereby empowering {{audience}} to {{gain1}} with high efficiency.",
     "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。",
     "src": "第二段 · 介绍类 第三句 · 模板第1句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
  },
  "2021": {
-  "wc": 96,
+  "wc": 111,
   "req": 95,
   "salutation": "Dear Jack,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 22,
+    "wc": 21,
     "sents": [
      {
       "kind": "tpl",
@@ -3505,7 +3503,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -3515,7 +3513,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "I am writing to invite you to take part in "
+        "x": "It gives me great pleasure to invite you to "
        },
        {
         "t": "s",
@@ -3529,7 +3527,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "我写信是邀请你参加"
+        "x": "很高兴邀请你参加"
        },
        {
         "t": "s",
@@ -3545,7 +3543,7 @@
     ]
    },
    {
-    "wc": 59,
+    "wc": 60,
     "sents": [
      {
       "kind": "tpl",
@@ -3558,7 +3556,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "至于本次活动的具体安排，主要如下。"
+        "x": "至于本次活动，具体安排如下。"
        }
       ],
       "src": "第二段 · 通用首句（引出下文） · 模板第3句"
@@ -3584,7 +3582,7 @@
        },
        {
         "t": "t",
-        "x": ", providing a fixed venue for all "
+        "x": ", which is convenient for all "
        },
        {
         "t": "s",
@@ -3614,7 +3612,7 @@
        },
        {
         "t": "t",
-        "x": "举行，为全体"
+        "x": "举行，全体"
        },
        {
         "t": "s",
@@ -3622,7 +3620,7 @@
        },
        {
         "t": "t",
-        "x": "提供固定场所。"
+        "x": "前往都很方便。"
        }
       ],
       "src": "第二段 · 通知类 第二句 · 模板第2句"
@@ -3632,7 +3630,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In particular, I would like to invite you to "
+        "x": "In particular, I would be delighted to invite you to "
        },
        {
         "t": "s",
@@ -3648,7 +3646,7 @@
        },
        {
         "t": "t",
-        "x": ", which will offer you "
+        "x": ", which will provide you with "
        },
        {
         "t": "s",
@@ -3662,7 +3660,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，我诚挚邀请你"
+        "x": "具体而言，我非常高兴邀请你"
        },
        {
         "t": "s",
@@ -3690,7 +3688,7 @@
     ]
    },
    {
-    "wc": 15,
+    "wc": 30,
     "sents": [
      {
       "kind": "tpl",
@@ -3739,6 +3737,22 @@
        }
       ],
       "src": "第三段 · 收尾 / 客套 · 模板第1句"
+     },
+     {
+      "kind": "tpl",
+      "spans": [
+       {
+        "t": "t",
+        "x": "Thank you for your time and attention, and I look forward to your positive response."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "感谢你抽时间阅读这封信，期待你的回复。"
+       }
+      ],
+      "src": "第三段 · 收尾 / 客套 · 模板第3句"
      }
     ]
    }
@@ -3802,33 +3816,38 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to invite you to take part in {{topic}}.",
-    "cn": "我写信是邀请你参加{{topic}}。",
+    "en": "It gives me great pleasure to invite you to {{topic}}.",
+    "cn": "很高兴邀请你参加{{topic}}。",
     "src": "第一段 · 第二句（表明来意） · 模板第7句"
    },
    {
     "en": "As for the planned event, the main arrangements are as follows.",
-    "cn": "至于本次活动的具体安排，主要如下。",
+    "cn": "至于本次活动，具体安排如下。",
     "src": "第二段 · 通用首句（引出下文） · 模板第3句"
    },
    {
-    "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-    "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+    "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+    "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
     "src": "第二段 · 通知类 第二句 · 模板第2句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
     "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
     "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
     "src": "第三段 · 收尾 / 客套 · 模板第1句"
+   },
+   {
+    "en": "Thank you for your time and attention, and I look forward to your positive response.",
+    "cn": "感谢你抽时间阅读这封信，期待你的回复。",
+    "src": "第三段 · 收尾 / 客套 · 模板第3句"
    }
   ]
  },
@@ -3852,7 +3871,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -3876,7 +3895,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "在这封信中，我想向你介绍"
+        "x": "在这封信里，我想把"
        },
        {
         "t": "s",
@@ -3884,7 +3903,7 @@
        },
        {
         "t": "t",
-        "x": "，把它作为一个极佳的选择推荐给你。"
+        "x": "作为一个很好的选择介绍给你。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第5句"
@@ -3892,7 +3911,7 @@
     ]
    },
    {
-    "wc": 75,
+    "wc": 76,
     "sents": [
      {
       "kind": "tpl",
@@ -3915,7 +3934,7 @@
        },
        {
         "t": "t",
-        "x": ", providing a fixed venue for all "
+        "x": ", which is convenient for all "
        },
        {
         "t": "s",
@@ -3945,7 +3964,7 @@
        },
        {
         "t": "t",
-        "x": "举行，为全体"
+        "x": "举行，全体"
        },
        {
         "t": "s",
@@ -3953,7 +3972,7 @@
        },
        {
         "t": "t",
-        "x": "提供固定场所。"
+        "x": "前往都很方便。"
        }
       ],
       "src": "第二段 · 通知类 第二句 · 模板第2句"
@@ -3963,7 +3982,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In particular, I would like to invite you to "
+        "x": "In particular, I would be delighted to invite you to "
        },
        {
         "t": "s",
@@ -3979,7 +3998,7 @@
        },
        {
         "t": "t",
-        "x": ", which will offer you "
+        "x": ", which will provide you with "
        },
        {
         "t": "s",
@@ -3993,7 +4012,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，我诚挚邀请你"
+        "x": "具体而言，我非常高兴邀请你"
        },
        {
         "t": "s",
@@ -4047,13 +4066,13 @@
        },
        {
         "t": "t",
-        "x": ", which is of great benefit to you."
+        "x": ", which will prove immensely beneficial to you."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "另外，在"
+        "x": "此外，在"
        },
        {
         "t": "s",
@@ -4069,7 +4088,7 @@
        },
        {
         "t": "t",
-        "x": "，将使你能够"
+        "x": "，你将能够"
        },
        {
         "t": "s",
@@ -4077,7 +4096,7 @@
        },
        {
         "t": "t",
-        "x": "，这对你大有裨益。"
+        "x": "，这会对你大有裨益。"
        }
       ],
       "src": "第二段 · 邀请类 第三句 · 模板第1句"
@@ -4085,7 +4104,7 @@
     ]
    },
    {
-    "wc": 18,
+    "wc": 17,
     "sents": [
      {
       "kind": "tpl",
@@ -4108,7 +4127,7 @@
        },
        {
         "t": "t",
-        "x": " can be implemented more effectively."
+        "x": " can be properly arranged."
        }
       ],
       "spans_cn": [
@@ -4130,7 +4149,7 @@
        },
        {
         "t": "t",
-        "x": "能够得到更为有效的落实。"
+        "x": "能够得到妥善安排。"
        }
       ],
       "src": "第三段 · 收尾 / 客套 · 模板第2句"
@@ -4209,44 +4228,44 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
     "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-    "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+    "cn": "在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。",
     "src": "第一段 · 第二句（表明来意） · 模板第5句"
    },
    {
-    "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-    "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+    "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+    "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
     "src": "第二段 · 通知类 第二句 · 模板第2句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
-    "en": "In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which is of great benefit to you.",
-    "cn": "另外，在{{topic}}期间{{task}}，将使你能够{{gain}}，这对你大有裨益。",
+    "en": "In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which will prove immensely beneficial to you.",
+    "cn": "此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这会对你大有裨益。",
     "src": "第二段 · 邀请类 第三句 · 模板第1句"
    },
    {
-    "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-    "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+    "en": "You are kindly requested to {{expect}} so that {{topic}} can be properly arranged.",
+    "cn": "请你{{expect}}，以便{{topic}}能够得到妥善安排。",
     "src": "第三段 · 收尾 / 客套 · 模板第2句"
    }
   ]
  },
  "2023": {
-  "wc": 101,
+  "wc": 107,
   "req": 95,
   "salutation": "Dear David,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 26,
+    "wc": 32,
     "sents": [
      {
       "kind": "tpl",
@@ -4269,7 +4288,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "The primary aim of this letter is to offer some suggestions on "
+        "x": "I would like to offer a few suggestions on "
        },
        {
         "t": "s",
@@ -4277,13 +4296,13 @@
        },
        {
         "t": "t",
-        "x": "."
+        "x": ", which I hope may be of use to you."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "本信的首要目的，是就"
+        "x": "我想就"
        },
        {
         "t": "s",
@@ -4291,7 +4310,7 @@
        },
        {
         "t": "t",
-        "x": "提出若干建议。"
+        "x": "提几点建议，希望能对你有用。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第10句"
@@ -4306,7 +4325,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "As for the practical measures, my suggestions are listed as follows."
+        "x": "As for the practical measures, my suggestions are as follows."
        }
       ],
       "spans_cn": [
@@ -4352,11 +4371,15 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，建议你围绕"
+        "x": "具体来说，建议你围绕"
        },
        {
         "t": "s",
         "x": "你的选择"
+       },
+       {
+        "t": "t",
+        "x": "来"
        },
        {
         "t": "s",
@@ -4364,7 +4387,7 @@
        },
        {
         "t": "t",
-        "x": "，以便逐步提升"
+        "x": "，这样能逐步改善"
        },
        {
         "t": "s",
@@ -4382,7 +4405,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In addition, it is strongly recommended that you should "
+        "x": "In addition, you might consider taking concrete steps to "
        },
        {
         "t": "s",
@@ -4390,13 +4413,13 @@
        },
        {
         "t": "t",
-        "x": " so as to improve the situation."
+        "x": " so as to optimize the current situation."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "另外，强烈建议你"
+        "x": "此外，你或许可以考虑采取切实举措来"
        },
        {
         "t": "s",
@@ -4404,7 +4427,7 @@
        },
        {
         "t": "t",
-        "x": "，以便改善当前状况。"
+        "x": "，以优化现状。"
        }
       ],
       "src": "第二段 · 建议类 第三句 · 模板第1句"
@@ -4433,7 +4456,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "我真诚希望你能充分利用这次机会"
+        "x": "我衷心希望你能充分利用这次机会"
        },
        {
         "t": "s",
@@ -4494,28 +4517,28 @@
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
    },
    {
-    "en": "The primary aim of this letter is to offer some suggestions on {{topic}}.",
-    "cn": "本信的首要目的，是就{{topic}}提出若干建议。",
+    "en": "I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.",
+    "cn": "我想就{{topic}}提几点建议，希望能对你有用。",
     "src": "第一段 · 第二句（表明来意） · 模板第10句"
    },
    {
-    "en": "As for the practical measures, my suggestions are listed as follows.",
+    "en": "As for the practical measures, my suggestions are as follows.",
     "cn": "至于具体措施，我的建议如下。",
     "src": "第二段 · 通用首句（引出下文） · 模板第2句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
-    "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-    "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+    "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+    "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
     "src": "第二段 · 建议类 第三句 · 模板第1句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
@@ -4540,7 +4563,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -4550,7 +4573,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "The purpose of this letter is to discuss "
+        "x": "I would appreciate the chance to discuss "
        },
        {
         "t": "s",
@@ -4558,13 +4581,13 @@
        },
        {
         "t": "t",
-        "x": " with you in detail."
+        "x": " with you in more detail."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "这封信的目的是想与你详细讨论"
+        "x": "希望能有机会和你更详细地谈谈"
        },
        {
         "t": "s",
@@ -4617,7 +4640,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "从实践角度看，"
+        "x": "从实用的角度看，"
        },
        {
         "t": "s",
@@ -4625,7 +4648,7 @@
        },
        {
         "t": "t",
-        "x": "主要涵盖"
+        "x": "主要包括"
        },
        {
         "t": "s",
@@ -4633,7 +4656,7 @@
        },
        {
         "t": "t",
-        "x": "，其根本目标在于"
+        "x": "，目的在于"
        },
        {
         "t": "s",
@@ -4657,7 +4680,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。"
+        "x": "另外，我不确定自己的计划是否可行，很想听听你的意见。"
        }
       ],
       "src": "第二段 · 询问类 第二句（想问什么） · 模板第2句"
@@ -4667,13 +4690,13 @@
       "spans": [
        {
         "t": "t",
-        "x": "Since you are familiar with the situation there, your advice would be of great value to me."
+        "x": "Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。"
+        "x": "鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。"
        }
       ],
       "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
@@ -4775,27 +4798,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "The purpose of this letter is to discuss {{topic}} with you in detail.",
-    "cn": "这封信的目的是想与你详细讨论{{topic}}。",
+    "en": "I would appreciate the chance to discuss {{topic}} with you in more detail.",
+    "cn": "希望能有机会和你更详细地谈谈{{topic}}。",
     "src": "第一段 · 第二句（表明来意） · 模板第9句"
    },
    {
     "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
-    "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。",
+    "cn": "从实用的角度看，{{topic}}主要包括{{content}}，目的在于{{purpose}}。",
     "src": "第二段 · 介绍类 第二句 · 模板第2句"
    },
    {
     "en": "More specifically, I am not sure whether my plan is practical, so I would value your opinion.",
-    "cn": "更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。",
+    "cn": "另外，我不确定自己的计划是否可行，很想听听你的意见。",
     "src": "第二段 · 询问类 第二句（想问什么） · 模板第2句"
    },
    {
-    "en": "Since you are familiar with the situation there, your advice would be of great value to me.",
-    "cn": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。",
+    "en": "Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me.",
+    "cn": "鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
     "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
    },
    {
@@ -4806,7 +4829,7 @@
   ]
  },
  "2025": {
-  "wc": 105,
+  "wc": 106,
   "req": 95,
   "salutation": "Dear John,",
   "close": "Yours sincerely,\nLi Ming",
@@ -4825,7 +4848,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -4849,7 +4872,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "在这封信中，我想向你介绍"
+        "x": "在这封信里，我想把"
        },
        {
         "t": "s",
@@ -4857,7 +4880,7 @@
        },
        {
         "t": "t",
-        "x": "，把它作为一个极佳的选择推荐给你。"
+        "x": "作为一个很好的选择介绍给你。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第5句"
@@ -4865,7 +4888,7 @@
     ]
    },
    {
-    "wc": 54,
+    "wc": 56,
     "sents": [
      {
       "kind": "tpl",
@@ -4902,7 +4925,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "从实践角度看，"
+        "x": "从实用的角度看，"
        },
        {
         "t": "s",
@@ -4910,7 +4933,7 @@
        },
        {
         "t": "t",
-        "x": "主要涵盖"
+        "x": "主要包括"
        },
        {
         "t": "s",
@@ -4918,7 +4941,7 @@
        },
        {
         "t": "t",
-        "x": "，其根本目标在于"
+        "x": "，目的在于"
        },
        {
         "t": "s",
@@ -4936,7 +4959,7 @@
       "spans": [
        {
         "t": "t",
-        "x": "In particular, I would like to invite you to "
+        "x": "In particular, I would be delighted to invite you to "
        },
        {
         "t": "s",
@@ -4952,7 +4975,7 @@
        },
        {
         "t": "t",
-        "x": ", which will offer you "
+        "x": ", which will provide you with "
        },
        {
         "t": "s",
@@ -4966,7 +4989,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，我诚挚邀请你"
+        "x": "具体而言，我非常高兴邀请你"
        },
        {
         "t": "s",
@@ -4994,7 +5017,7 @@
     ]
    },
    {
-    "wc": 19,
+    "wc": 18,
     "sents": [
      {
       "kind": "tpl",
@@ -5017,7 +5040,7 @@
        },
        {
         "t": "t",
-        "x": " can be implemented more effectively."
+        "x": " can be properly arranged."
        }
       ],
       "spans_cn": [
@@ -5039,7 +5062,7 @@
        },
        {
         "t": "t",
-        "x": "能够得到更为有效的落实。"
+        "x": "能够得到妥善安排。"
        }
       ],
       "src": "第三段 · 收尾 / 客套 · 模板第2句"
@@ -5094,39 +5117,39 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
     "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-    "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+    "cn": "在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。",
     "src": "第一段 · 第二句（表明来意） · 模板第5句"
    },
    {
     "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
-    "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。",
+    "cn": "从实用的角度看，{{topic}}主要包括{{content}}，目的在于{{purpose}}。",
     "src": "第二段 · 介绍类 第二句 · 模板第2句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
-    "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-    "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+    "en": "You are kindly requested to {{expect}} so that {{topic}} can be properly arranged.",
+    "cn": "请你{{expect}}，以便{{topic}}能够得到妥善安排。",
     "src": "第三段 · 收尾 / 客套 · 模板第2句"
    }
   ]
  },
  "2026": {
-  "wc": 107,
+  "wc": 104,
   "req": 95,
   "salutation": "Dear Jack,",
   "close": "Yours sincerely,\nLi Ming",
   "paras": [
    {
-    "wc": 21,
+    "wc": 30,
     "sents": [
      {
       "kind": "tpl",
@@ -5139,7 +5162,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "希望你一切安好。"
+        "x": "希望收到此信时你一切安好。"
        }
       ],
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
@@ -5149,7 +5172,23 @@
       "spans": [
        {
         "t": "t",
-        "x": "With this letter, I would like to share my views on "
+        "x": "I am so delighted to receive your letter."
+       }
+      ],
+      "spans_cn": [
+       {
+        "t": "t",
+        "x": "非常高兴收到你的来信。"
+       }
+      ],
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
+     },
+     {
+      "kind": "tpl",
+      "spans": [
+       {
+        "t": "t",
+        "x": "I am writing to share with you a few reflective thoughts on "
        },
        {
         "t": "s",
@@ -5163,7 +5202,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "借此来信，我想与你分享我对"
+        "x": "我想和你分享我对"
        },
        {
         "t": "s",
@@ -5171,7 +5210,7 @@
        },
        {
         "t": "t",
-        "x": "的看法。"
+        "x": "的几点看法。"
        }
       ],
       "src": "第一段 · 第二句（表明来意） · 模板第2句"
@@ -5179,14 +5218,14 @@
     ]
    },
    {
-    "wc": 66,
+    "wc": 59,
     "sents": [
      {
       "kind": "tpl",
       "spans": [
        {
         "t": "t",
-        "x": "To be honest, I am deeply impressed by what you shared, especially "
+        "x": "First, I was immensely impressed by the delicate emotional nuance captured in your narrative, especially "
        },
        {
         "t": "s",
@@ -5200,7 +5239,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "说实话，你分享的内容让我印象很深，尤其是"
+        "x": "首先，你在叙事中所捕捉到的细腻情感令我极为震撼，特别是"
        },
        {
         "t": "s",
@@ -5208,7 +5247,7 @@
        },
        {
         "t": "t",
-        "x": "。"
+        "x": "这一处。"
        }
       ],
       "src": "第二段 · 观点类 第二句（我的看法） · 模板第1句"
@@ -5218,113 +5257,53 @@
       "spans": [
        {
         "t": "t",
-        "x": "The reason is that such records help us rediscover the beauty of ordinary moments."
+        "x": "If I may say so, it reflects your careful observation and genuine love for life."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "原因在于，这类记录帮我们重新发现平凡时刻里的美好。"
+        "x": "毫无疑问，这一创作既展现了敏锐的观察力，也饱含对日常生活的真挚敬畏。"
        }
       ],
-      "src": "第二段 · 观点类 第三句（为什么这样看） · 模板第1句"
+      "src": "第二段 · 观点类 第二句（我的看法） · 模板第2句"
      },
      {
       "kind": "tpl",
       "spans": [
        {
         "t": "t",
-        "x": "In particular, I would like to invite you to "
-       },
-       {
-        "t": "s",
-        "x": "take me along on"
-       },
-       {
-        "t": "t",
-        "x": " "
-       },
-       {
-        "t": "s",
-        "x": "your next trip"
-       },
-       {
-        "t": "t",
-        "x": ", which will offer you "
-       },
-       {
-        "t": "s",
-        "x": "a chance to see the world through your camera"
-       },
-       {
-        "t": "t",
-        "x": "."
+        "x": "Works of this caliber are invaluable precisely because they prompt us to rediscover profound beauty in ordinary moments."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "具体而言，我诚挚邀请你"
-       },
-       {
-        "t": "s",
-        "x": "让我随行参加"
-       },
-       {
-        "t": "s",
-        "x": "你的下一次旅行"
-       },
-       {
-        "t": "t",
-        "x": "，这将为你带来"
-       },
-       {
-        "t": "s",
-        "x": "透过你的镜头看世界的机会"
-       },
-       {
-        "t": "t",
-        "x": "。"
+        "x": "此类高水准的作品之所以弥足珍贵，恰恰在于它们促使我们重新发掘平凡瞬间中的深刻之美。"
        }
       ],
-      "src": "第二段 · 邀请类 第二句 · 模板第1句"
+      "src": "第二段 · 观点类 第三句（为什么这样看） · 模板第1句"
      }
     ]
    },
    {
-    "wc": 20,
+    "wc": 15,
     "sents": [
      {
       "kind": "tpl",
       "spans": [
        {
         "t": "t",
-        "x": "I sincerely hope that you will make full use of this opportunity to "
-       },
-       {
-        "t": "s",
-        "x": "keep sharing such wonderful moments with us"
-       },
-       {
-        "t": "t",
-        "x": "."
+        "x": "Thank you for your time and attention, and I look forward to your positive response."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "我真诚希望你能充分利用这次机会"
-       },
-       {
-        "t": "s",
-        "x": "继续与我们分享这样的美好瞬间"
-       },
-       {
-        "t": "t",
-        "x": "。"
+        "x": "感谢你抽时间阅读这封信，期待你的回复。"
        }
       ],
-      "src": "第三段 · 收尾 / 客套 · 模板第5句"
+      "src": "第三段 · 收尾 / 客套 · 模板第3句"
      }
     ]
    }
@@ -5341,62 +5320,43 @@
     "en": "the way you captured the local people and their daily life",
     "cn": "你镜头下当地人与他们的日常生活",
     "para": "第二段"
-   },
-   {
-    "name": "join",
-    "en": "take me along on",
-    "cn": "让我随行参加",
-    "para": "第二段"
-   },
-   {
-    "name": "topic",
-    "en": "your next trip",
-    "cn": "你的下一次旅行",
-    "para": "第二段"
-   },
-   {
-    "name": "gain",
-    "en": "a chance to see the world through your camera",
-    "cn": "透过你的镜头看世界的机会",
-    "para": "第二段"
-   },
-   {
-    "name": "outcome",
-    "en": "keep sharing such wonderful moments with us",
-    "cn": "继续与我们分享这样的美好瞬间",
-    "para": "第三段"
    }
   ],
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "With this letter, I would like to share my views on {{topic}}.",
-    "cn": "借此来信，我想与你分享我对{{topic}}的看法。",
+    "en": "I am so delighted to receive your letter.",
+    "cn": "非常高兴收到你的来信。",
+    "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
+   },
+   {
+    "en": "I am writing to share with you a few reflective thoughts on {{topic}}.",
+    "cn": "我想和你分享我对{{topic}}的几点看法。",
     "src": "第一段 · 第二句（表明来意） · 模板第2句"
    },
    {
-    "en": "To be honest, I am deeply impressed by what you shared, especially {{detail}}.",
-    "cn": "说实话，你分享的内容让我印象很深，尤其是{{detail}}。",
+    "en": "First, I was immensely impressed by the delicate emotional nuance captured in your narrative, especially {{detail}}.",
+    "cn": "首先，你在叙事中所捕捉到的细腻情感令我极为震撼，特别是{{detail}}这一处。",
     "src": "第二段 · 观点类 第二句（我的看法） · 模板第1句"
    },
    {
-    "en": "The reason is that such records help us rediscover the beauty of ordinary moments.",
-    "cn": "原因在于，这类记录帮我们重新发现平凡时刻里的美好。",
+    "en": "If I may say so, it reflects your careful observation and genuine love for life.",
+    "cn": "毫无疑问，这一创作既展现了敏锐的观察力，也饱含对日常生活的真挚敬畏。",
+    "src": "第二段 · 观点类 第二句（我的看法） · 模板第2句"
+   },
+   {
+    "en": "Works of this caliber are invaluable precisely because they prompt us to rediscover profound beauty in ordinary moments.",
+    "cn": "此类高水准的作品之所以弥足珍贵，恰恰在于它们促使我们重新发掘平凡瞬间中的深刻之美。",
     "src": "第二段 · 观点类 第三句（为什么这样看） · 模板第1句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
-    "src": "第二段 · 邀请类 第二句 · 模板第1句"
-   },
-   {
-    "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
-    "src": "第三段 · 收尾 / 客套 · 模板第5句"
+    "en": "Thank you for your time and attention, and I look forward to your positive response.",
+    "cn": "感谢你抽时间阅读这封信，期待你的回复。",
+    "src": "第三段 · 收尾 / 客套 · 模板第3句"
    }
   ]
  }

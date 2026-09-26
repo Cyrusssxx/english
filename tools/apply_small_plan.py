@@ -53,7 +53,6 @@ PLAN = {
                 'topic': ('the university entrance examination', '高考'),
                 'quality': ('solid academic ability and years of steady effort', '扎实的学力和多年稳扎稳打的付出')}),
              ('p2_congrats_s3', 0, {
-                 'effort': ('keep working for what you want', '为自己想要的东西持续努力'),
                  'topic': ('the long preparation for the exam', '备考那漫长的过程')}),
              ('p2_advice_s2', 1, {
                  'action': ('plan your studies', '规划学习'),
@@ -319,7 +318,8 @@ PLAN = {
                  'gain': ('a chance to share a famous writer from your own country', '分享贵国一位著名作家的机会')})],
             [('p3', 0, {
                 'expect': ('confirm your attendance', '确认你是否参加'),
-                'deadline': ('next Wednesday', '下周三')})],
+                'deadline': ('next Wednesday', '下周三')}),
+             ('p3', 2, {})],
         ],
         'tips': [
             '邀请信第二段 = 「安排细节 + 邀请理由」：先用通知类交代时间和平台，再用邀请类说明参加能得到什么。',
@@ -441,19 +441,17 @@ PLAN = {
         'salutation': 'Dear Jack,', 'close': 'Yours sincerely,\nLi Ming',
         'paras': [
             [('p1s1', 0, {}),
+             ('p1s1', 1, {}),
              ('p1s2', 1, {'topic': ('your travel video', '你的旅行视频')})],
             [('p2_opinion_s2', 0, {'detail': ('the way you captured the local people and their daily life', '你镜头下当地人与他们的日常生活')}),
-             ('p2_opinion_s3', 0, {}),
-             ('p2_invite_s2', 0, {
-                 'join': ('take me along on', '让我随行参加'),
-                 'topic': ('your next trip', '你的下一次旅行'),
-                 'gain': ('a chance to see the world through your camera', '透过你的镜头看世界的机会')})],
-            [('p3', 4, {'outcome': ('keep sharing such wonderful moments with us', '继续与我们分享这样的美好瞬间')})],
+             ('p2_opinion_s2', 1, {}),
+             ('p2_opinion_s3', 0, {})],
+            [('p3', 2, {})],
         ],
         'tips': [
-            '观点分享类目前只考过一次（2026），结构最简单：<b>分享看法 → 说清为什么 → 顺势回应</b>。',
-            '{{detail}} 要具体（当地人与日常生活），空泛地说 interesting 拿不到内容分。',
-            '本题要求「分享看法」而非「办事」，所以收尾不要写「期待回复」，用「希望继续分享」这类呼应主题的句子。',
+            '观点分享类目前只考过一次（2026），结构最严谨：<b>开篇交流看法 → 展开具体触动与评价 → 升华作品意义与期盼交流</b>。',
+            '{{detail}} 要具体（当地人与日常生活），切忌空泛评价。',
+            '纯粹的观点回信不应强行夹带邀请或请托，保持平等、真挚的赏析与探讨即可。',
         ],
     },
 }

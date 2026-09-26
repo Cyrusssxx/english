@@ -10157,12 +10157,12 @@
    "sample_en": "Dear Jack,\n\nI just finished watching your travel video, and I was absolutely captivated by it! The landscapes you filmed were breathtaking, and the way you captured the local culture felt so genuine and immersive. It truly felt like I was traveling alongside you.\n\nThe segment about the traditional village particularly caught my interest. The architecture and daily life there looked fascinating. I'd love to hear more about your experiences there and any other interesting stories from your trip that didn't make it into the video.\n\nLooking forward to catching up soon and hearing all about your adventures in more detail.\n\nBest regards,\nYours sincerely,\nLi Ming",
    "sample_cn": "亲爱的杰克：\n\n我刚看完你的旅行视频，完全被它吸引住了！你拍摄的风景令人叹为观止，你捕捉当地文化的方式如此真实而身临其境，感觉就像和你一起旅行一样。\n\n其中关于传统村庄的那一段尤其引起我的兴趣。那里的建筑和日常生活看起来非常迷人。我很想多听听你在那里的经历，以及视频里没有剪进去的其他旅行趣事。\n\n期待尽快与你叙旧，听你详细分享冒险经历。\n\n此致\n敬礼\n李明",
    "apply": {
-    "apply_en": "Dear Jack,\nI hope this message finds you well. With this letter, I would like to share my views on your travel video.\n\nTo be honest, I am deeply impressed by what you shared, especially the way you captured the local people and their daily life. The reason is that such records help us rediscover the beauty of ordinary moments. In particular, I would like to invite you to take me along on your next trip, which will offer you a chance to see the world through your camera.\n\nI sincerely hope that you will make full use of this opportunity to keep sharing such wonderful moments with us.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Jack,\n希望你一切安好。借此来信，我想与你分享我对你的旅行视频的看法。\n\n说实话，你分享的内容让我印象很深，尤其是你镜头下当地人与他们的日常生活。原因在于，这类记录帮我们重新发现平凡时刻里的美好。具体而言，我诚挚邀请你让我随行参加你的下一次旅行，这将为你带来透过你的镜头看世界的机会。\n\n我真诚希望你能充分利用这次机会继续与我们分享这样的美好瞬间。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Jack,\nI hope this message finds you well. I am so delighted to receive your letter. I am writing to share with you a few reflective thoughts on your travel video.\n\nFirst, I was immensely impressed by the delicate emotional nuance captured in your narrative, especially the way you captured the local people and their daily life. If I may say so, it reflects your careful observation and genuine love for life. Works of this caliber are invaluable precisely because they prompt us to rediscover profound beauty in ordinary moments.\n\nThank you for your time and attention, and I look forward to your positive response.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Jack,\n希望收到此信时你一切安好。非常高兴收到你的来信。我想和你分享我对你的旅行视频的几点看法。\n\n首先，你在叙事中所捕捉到的细腻情感令我极为震撼，特别是你镜头下当地人与他们的日常生活这一处。毫无疑问，这一创作既展现了敏锐的观察力，也饱含对日常生活的真挚敬畏。此类高水准的作品之所以弥足珍贵，恰恰在于它们促使我们重新发掘平凡瞬间中的深刻之美。\n\n感谢你抽时间阅读这封信，期待你的回复。\nYours sincerely,\nLi Ming",
     "tips": [
-     "观点分享类目前只考过一次（2026），结构最简单：<b>分享看法 → 说清为什么 → 顺势回应</b>。",
-     "{{detail}} 要具体（当地人与日常生活），空泛地说 interesting 拿不到内容分。",
-     "本题要求「分享看法」而非「办事」，所以收尾不要写「期待回复」，用「希望继续分享」这类呼应主题的句子。"
+     "观点分享类目前只考过一次（2026），结构最严谨：<b>开篇交流看法 → 展开具体触动与评价 → 升华作品意义与期盼交流</b>。",
+     "{{detail}} 要具体（当地人与日常生活），切忌空泛评价。",
+     "纯粹的观点回信不应强行夹带邀请或请托，保持平等、真挚的赏析与探讨即可。"
     ],
     "title": "2026 真题套用示范 · 回复邮件（分享对旅行视频的看法）",
     "slot_phrases": [
@@ -10177,62 +10177,43 @@
       "en": "the way you captured the local people and their daily life",
       "cn": "你镜头下当地人与他们的日常生活",
       "para": "第二段"
-     },
-     {
-      "name": "join",
-      "en": "take me along on",
-      "cn": "让我随行参加",
-      "para": "第二段"
-     },
-     {
-      "name": "topic",
-      "en": "your next trip",
-      "cn": "你的下一次旅行",
-      "para": "第二段"
-     },
-     {
-      "name": "gain",
-      "en": "a chance to see the world through your camera",
-      "cn": "透过你的镜头看世界的机会",
-      "para": "第二段"
-     },
-     {
-      "name": "outcome",
-      "en": "keep sharing such wonderful moments with us",
-      "cn": "继续与我们分享这样的美好瞬间",
-      "para": "第三段"
      }
     ],
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
-      "en": "With this letter, I would like to share my views on {{topic}}.",
-      "cn": "借此来信，我想与你分享我对{{topic}}的看法。",
+      "en": "I am so delighted to receive your letter.",
+      "cn": "非常高兴收到你的来信。",
+      "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
+     },
+     {
+      "en": "I am writing to share with you a few reflective thoughts on {{topic}}.",
+      "cn": "我想和你分享我对{{topic}}的几点看法。",
       "src": "第一段 · 第二句（表明来意） · 模板第2句"
      },
      {
-      "en": "To be honest, I am deeply impressed by what you shared, especially {{detail}}.",
-      "cn": "说实话，你分享的内容让我印象很深，尤其是{{detail}}。",
+      "en": "First, I was immensely impressed by the delicate emotional nuance captured in your narrative, especially {{detail}}.",
+      "cn": "首先，你在叙事中所捕捉到的细腻情感令我极为震撼，特别是{{detail}}这一处。",
       "src": "第二段 · 观点类 第二句（我的看法） · 模板第1句"
      },
      {
-      "en": "The reason is that such records help us rediscover the beauty of ordinary moments.",
-      "cn": "原因在于，这类记录帮我们重新发现平凡时刻里的美好。",
+      "en": "If I may say so, it reflects your careful observation and genuine love for life.",
+      "cn": "毫无疑问，这一创作既展现了敏锐的观察力，也饱含对日常生活的真挚敬畏。",
+      "src": "第二段 · 观点类 第二句（我的看法） · 模板第2句"
+     },
+     {
+      "en": "Works of this caliber are invaluable precisely because they prompt us to rediscover profound beauty in ordinary moments.",
+      "cn": "此类高水准的作品之所以弥足珍贵，恰恰在于它们促使我们重新发掘平凡瞬间中的深刻之美。",
       "src": "第二段 · 观点类 第三句（为什么这样看） · 模板第1句"
      },
      {
-      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
-      "src": "第二段 · 邀请类 第二句 · 模板第1句"
-     },
-     {
-      "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
-      "src": "第三段 · 收尾 / 客套 · 模板第5句"
+      "en": "Thank you for your time and attention, and I look forward to your positive response.",
+      "cn": "感谢你抽时间阅读这封信，期待你的回复。",
+      "src": "第三段 · 收尾 / 客套 · 模板第3句"
      }
     ]
    }
@@ -10251,8 +10232,8 @@
    "sample_cn": "该图表呈现了一项关于儿童户外活动益处认知的调查结果。数据显示，\"满足好奇心\"和\"提升观察能力\"被认为是最重要的益处，分别得到 54.5% 和 54.6% 受访者的认可。紧随其后，\"增强体质\"得到 33.2% 受访者的认同，而\"增进亲子互动\"得到 31.2% 的认同。\n\n这一数据揭示了家长关注点的深刻转变——他们更看重认知与探索能力的发展，而非单纯的体能成果。对好奇心和观察力的高度重视，表明人们意识到户外环境是重要的非结构化课堂，孩子们在探索和感官体验中学习。与此同时，对亲子互动的认可，凸显了人们理解共同户外体验所带来的情感与关系层面的益处。\n\n在数字屏幕主导的时代，这些发现凸显了人们渴望重新与自然建立联系、将其作为全面发展基础的集体诉求。总之，这项调查表明，户外活动不仅是娱乐，更是培养好奇、善于观察、全面发展的个体的必要途径。家长和教育者应当积极创造并守护孩子们在户外探索、玩耍和联结的机会。",
    "chart_img": "img/2026_writingb_chart.svg",
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates how the perceived benefits of outdoor activities for children are distributed. Satisfying curiosity takes the lead, accounting for 54.6%, followed by improving observation skills and enhancing physical fitness at 54.5% and 33.2% respectively, while strengthening parent-child interaction comes last at 31.2%. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Sitting all day has turned outdoor activity from a hobby into a practical need. Public spending on infrastructure has made outdoor activity far more widely available. People now judge outdoor activity by what it does for them rather than by what others think. Schools now treat outdoor activity as part of the routine rather than an optional extra.\n\nOn balance, this is a positive trend worth welcoming. Families matter most: children copy what adults do far more than what they are told. Schools can build outdoor activity into daily routines instead of treating it as an extra. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了儿童户外活动的益处的分布情况。满足好奇心遥遥领先，占54.6%；其后是促进观察力和强身健体，分别占54.5%和33.2%；而增强亲子互动位居最后，占31.2%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。长期久坐使户外活动从爱好变成了切实的需求。基础设施方面的公共支出使户外活动更加普及。如今，人们评判户外活动的标准是它能为自己带来什么，而非他人的看法。学校现在将户外活动视为常规活动的一部分，而非可选的附加内容。\n\n总的来说，这是一个值得欢迎的积极趋势。家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。学校可以把户外活动融入日常安排，而非当作额外的任务。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates how the perceived benefits of outdoor activities for children are distributed. Satisfying curiosity takes the lead, accounting for 54.6%, followed by improving observation skills and enhancing physical fitness at 54.5% and 33.2% respectively, while strengthening parent-child interaction comes last at 31.2%. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. First, sitting all day has turned outdoor activity from a hobby into a practical need. Equally important, public spending on infrastructure has made outdoor activity far more widely available. Beyond that, people now judge outdoor activity by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Families matter most: children copy what adults do far more than what they are told. Schools can build outdoor activity into daily routines instead of treating it as an extra. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了儿童户外活动的益处的分布情况。满足好奇心遥遥领先，占54.6%；其后是促进观察力和强身健体，分别占54.5%和33.2%；而增强亲子互动位居最后，占31.2%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。首先，长期久坐使户外活动从爱好变成了切实的需求。同样重要的是，基础设施方面的公共支出使户外活动更加普及。除此之外，如今，人们评判户外活动的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。学校可以把户外活动融入日常安排，而非当作额外的任务。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
      "数据要点：satisfying curiosity 占 54.6%；improving observation skills 占 54.5%；enhancing physical fitness 占 33.2%；strengthening parent-child interaction 占 31.2%。数值与图逐个核对，别漏最大值。",
@@ -10369,11 +10350,6 @@
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
       "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
       "src": "第二段 · 原因（机制句池） · 功能句4"
-     },
-     {
-      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-      "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
-      "src": "第二段 · 原因（机制句池） · 功能句10"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",

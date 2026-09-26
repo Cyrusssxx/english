@@ -167,6 +167,25 @@ def build_year(y, spec, TPL):
         if spec.get('trend') and pkey == 'p1':
             en = [s.replace('did not move in a uniform direction', spec['trend']) for s in en]
             cn = [s.replace('并未朝着相同方向变化', spec.get('trend_cn', '')) for s in cn]
+        # P2 机制句逻辑衔接：引入句之后，各机制句分别加上自然平稳的好背衔接词
+        if pkey == 'p2' and len(en) > 1:
+            P2_LK_EN = ['', 'First, ', 'Equally important, ', 'Beyond that, ', 'In addition, ']
+            P2_LK_CN = ['', '首先，', '同样重要的是，', '除此之外，', '此外，']
+            new_en = [en[0]]
+            new_cn = [cn[0]]
+            for idx in range(1, len(en)):
+                lk_e = P2_LK_EN[idx] if idx < len(P2_LK_EN) else 'Furthermore, '
+                lk_c = P2_LK_CN[idx] if idx < len(P2_LK_CN) else '此外，'
+                # 机制句若以常规大写字母开头，适当调整（专有名词保留）
+                sent_e = en[idx].strip()
+                sent_c = cn[idx].strip()
+                first_w = sent_e.split()[0]
+                rest_e = sent_e[len(first_w):]
+                if first_w not in ('Chinese', 'Japanese', 'American', 'Marcus', 'Brian', 'Thomas', 'Gareth', 'I', 'Will'):
+                    first_w = first_w[0].lower() + first_w[1:]
+                new_en.append(lk_e + first_w + rest_e)
+                new_cn.append(lk_c + sent_c)
+            en, cn = new_en, new_cn
         paras_en.append(' '.join(en))
         paras_cn.append(''.join(cn))
         used_tpl.append((pid, refs))

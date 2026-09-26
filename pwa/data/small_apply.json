@@ -2,8 +2,8 @@
  "2010": {
   "title": "2010 真题套用示范 · Part A 感谢信（+ 发出邀请）",
   "typeId": "thanks",
-  "apply_en": "Dear Michael,\nI hope this message finds you well. I am writing to express my sincere gratitude for your help.\n\nI would like to express my heartfelt thanks for the warm reception you gave me during my stay. What impressed me most was your patience and kindness, which made me feel at home. In particular, I would like to invite you to visit China, which will offer you a chance to see Chinese culture and daily life at first hand.\n\nI sincerely hope that you will make full use of this opportunity to experience the country for yourself.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Michael,\n希望你一切安好。我写信是为表达我对你帮助的诚挚感谢。\n\n我想对你在我逗留期间给予的热情接待表示由衷的感谢。最让我感动的是你的耐心与友善，让我感到宾至如归。具体而言，我诚挚邀请你来中国，这将为你带来近距离感受中国文化和日常生活的机会。\n\n我真诚希望你能充分利用这次机会亲自体验这个国家。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Michael,\nI hope this message finds you well. I am writing to express my profound gratitude for the generous assistance you have extended to me.\n\nTo begin with, I was deeply moved by the warm and gracious reception you accorded me during my stay. Furthermore, your unfailing patience and thoughtful guidance genuinely made me feel at home. In particular, I would be delighted to invite you to visit China, which will provide you with a chance to see Chinese culture and daily life at first hand.\n\nI sincerely hope that you will make full use of this opportunity to experience the country for yourself.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Michael,\n希望收到此信时你一切安好。非常感谢你给予我的慷慨帮助。\n\n我想衷心感谢你在我逗留期间给予的热情接待。此外，你始终如一的耐心与悉心指引，真正让我感到如在家般温暖。具体而言，我非常高兴邀请你来中国，这将为你带来近距离感受中国文化和日常生活的机会。\n\n我衷心希望你能充分利用这次机会亲自体验这个国家。\nYours sincerely,\nLi Ming",
   "tips": [
    "感谢类两句是固定搭配：先「表示由衷感谢」，再「说一件让你印象最深的事」（热情接待 + 耐心友善）。",
    "本题第二问是「欢迎对方适时访华」，所以再接一句<b>邀请类</b>句，三个槽位都换成该题信息。",
@@ -38,32 +38,32 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to express my sincere gratitude for your help.",
-    "cn": "我写信是为表达我对你帮助的诚挚感谢。",
+    "en": "I am writing to express my profound gratitude for the generous assistance you have extended to me.",
+    "cn": "非常感谢你给予我的慷慨帮助。",
     "src": "第一段 · 第二句（表明来意） · 模板第6句"
    },
    {
-    "en": "I would like to express my heartfelt thanks for the warm reception you gave me during my stay.",
-    "cn": "我想对你在我逗留期间给予的热情接待表示由衷的感谢。",
+    "en": "To begin with, I was deeply moved by the warm and gracious reception you accorded me during my stay.",
+    "cn": "我想衷心感谢你在我逗留期间给予的热情接待。",
     "src": "第二段 · 感谢类 第二句（具体谢什么） · 模板第1句"
    },
    {
-    "en": "What impressed me most was your patience and kindness, which made me feel at home.",
-    "cn": "最让我感动的是你的耐心与友善，让我感到宾至如归。",
+    "en": "Furthermore, your unfailing patience and thoughtful guidance genuinely made me feel at home.",
+    "cn": "此外，你始终如一的耐心与悉心指引，真正让我感到如在家般温暖。",
     "src": "第二段 · 感谢类 第三句（说影响 / 感受） · 模板第1句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
@@ -71,8 +71,8 @@
  "2011": {
   "title": "2011 真题套用示范 · Part A 祝贺信（+ 给建议）",
   "typeId": "congrats",
-  "apply_en": "Dear Cousin,\nI hope this message finds you well. Please allow me to extend my warmest congratulations to you.\n\nTo be more specific, your remarkable achievement in the university entrance examination clearly shows your solid academic ability and years of steady effort. To a large extent, this success comes from your willingness to keep working for what you want, especially when dealing with the long preparation for the exam. In particular, you are advised to plan your studies around your interests in university life so that you can gradually improve your sense of direction at university.\n\nTo conclude, all the measures mentioned above are designed to help you settle into university life more smoothly, and your participation is of great importance.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Cousin,\n希望你一切安好。请允许我向你致以最诚挚的祝贺。\n\n更具体地说，你在高考方面的优异表现，清楚地展现了你的扎实的学力和多年稳扎稳打的付出。在很大程度上，这一成功源于你愿意在备考那漫长的过程上为自己想要的东西持续努力。具体而言，建议你围绕你在大学生活中的兴趣规划学习，以便逐步提升你在大学里的方向感。\n\n总而言之，上述各项措施均是为帮助你更顺利地适应大学生活而设，你的参与至关重要。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Cousin,\nI hope this message finds you well. Please allow me to extend my warmest congratulations to you.\n\nTo be more specific, your outstanding achievement in the university entrance examination bears clear testimony to your exceptional solid academic ability and years of steady effort. To a large extent, this well-earned triumph stems from the sustained dedication and perseverance you have exhibited in the long preparation for the exam. In particular, you are advised to plan your studies around your interests in university life so that you can gradually improve your sense of direction at university.\n\nTo conclude, all the measures mentioned above are designed to help you settle into university life more smoothly, and your participation is of great importance.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Cousin,\n希望收到此信时你一切安好。请允许我向你致以最热烈的祝贺。\n\n更具体地说，你在高考上的出色表现清楚地展现了你的扎实的学力和多年稳扎稳打的付出。在很大程度上，这一成功源于你在备考那漫长的过程上持续付出的努力。具体来说，建议你围绕你在大学生活中的兴趣来规划学习，这样能逐步改善你在大学里的方向感。\n\n总而言之，上述各项措施均是为帮助你更顺利地适应大学生活而设，你的参与至关重要。\nYours sincerely,\nLi Ming",
   "tips": [
    "祝贺类骨架 = 「具体夸什么」+「这份成绩从哪来」：{{topic}} 填录取这件事，{{quality}}/{{effort}} 填品质与付出。",
    "本题第二问是「如何为大学生活做准备」，第三句接<b>建议类</b>：{{action}} 是建议动作，{{detail}} 是这样做能看到什么。",
@@ -89,12 +89,6 @@
     "name": "quality",
     "en": "solid academic ability and years of steady effort",
     "cn": "扎实的学力和多年稳扎稳打的付出",
-    "para": "第二段"
-   },
-   {
-    "name": "effort",
-    "en": "keep working for what you want",
-    "cn": "为自己想要的东西持续努力",
     "para": "第二段"
    },
    {
@@ -131,27 +125,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
     "en": "Please allow me to extend my warmest congratulations to you.",
-    "cn": "请允许我向你致以最诚挚的祝贺。",
+    "cn": "请允许我向你致以最热烈的祝贺。",
     "src": "第一段 · 第二句（表明来意） · 模板第8句"
    },
    {
-    "en": "To be more specific, your remarkable achievement in {{topic}} clearly shows your {{quality}}.",
-    "cn": "更具体地说，你在{{topic}}方面的优异表现，清楚地展现了你的{{quality}}。",
+    "en": "To be more specific, your outstanding achievement in {{topic}} bears clear testimony to your exceptional {{quality}}.",
+    "cn": "更具体地说，你在{{topic}}上的出色表现清楚地展现了你的{{quality}}。",
     "src": "第二段 · 祝贺类 第二句 · 模板第1句"
    },
    {
-    "en": "To a large extent, this success comes from your willingness to {{effort}}, especially when dealing with {{topic}}.",
-    "cn": "在很大程度上，这一成功源于你愿意在{{topic}}上{{effort}}。",
+    "en": "To a large extent, this well-earned triumph stems from the sustained dedication and perseverance you have exhibited in {{topic}}.",
+    "cn": "在很大程度上，这一成功源于你在{{topic}}上持续付出的努力。",
     "src": "第二段 · 祝贺类 第三句 · 模板第1句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
@@ -164,8 +158,8 @@
  "2012": {
   "title": "2012 真题套用示范 · Part A 投诉信（+ 要求解决）",
   "typeId": "complaint",
-  "apply_en": "Dear Sir or Madam,\nI hope this message finds you well. This letter serves as a formal complaint about the recent problems with the electronic dictionary I bought from your online store.\n\nTo my disappointment, the electronic dictionary I bought from your online store last week has failed to work properly. Specifically, a serious system failure appeared only three days after it arrived. I would appreciate it if you could arrange a repair or a full refund as soon as possible.\n\nI would appreciate it very much if you could arrange a replacement or a full refund by the end of this week.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Sir or Madam,\n希望你一切安好。这封信作为一份正式投诉，旨在反映近期与我从贵网店购买的电子词典有关的问题。\n\n令我失望的是，上周在贵网店购买的电子词典无法正常使用。具体来说，到货才三天就出现了严重的系统故障。如果你能尽快安排维修或全额退款，我将不胜感激。\n\n如果你能在本周末前安排换货或全额退款，我将不胜感激。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Sir or Madam,\nI hope this message finds you well. It is with great regret that I write to lodge a formal complaint regarding recent defects in the electronic dictionary I bought from your online store.\n\nTo my profound disappointment, the electronic dictionary I purchased from your store has failed to function properly. Specifically, a serious system failure appeared only three days after it arrived. In light of these facts, I would appreciate it if you could arrange an immediate replacement or a full refund.\n\nI would appreciate it very much if you could arrange a replacement or a full refund by the end of this week.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Sir or Madam,\n希望收到此信时你一切安好。很遗憾，我不得不就近期我从贵网店购买的电子词典出现的问题正式投诉。\n\n令我失望的是，上周在贵店购买的电子词典无法正常使用。具体来说，到货仅三天就出现了严重的系统故障。若你能尽快安排维修或全额退款，我将不胜感激。\n\n如果你能在本周末前安排换货或全额退款，我将不胜感激。\nYours sincerely,\nLi Ming",
   "tips": [
    "投诉信最忌「只说情绪不说事实」：第二句点名 {{product}}，第三句给出具体 {{problem}}（到货三天就出故障）。",
    "要求用<b>一句</b>说清即可（维修 / 换货 / 退款三选一），第三段再用「如能……将不胜感激」收口。",
@@ -206,27 +200,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "This letter serves as a formal complaint about the recent problems with {{topic}}.",
-    "cn": "这封信作为一份正式投诉，旨在反映近期与{{topic}}有关的问题。",
+    "en": "It is with great regret that I write to lodge a formal complaint regarding recent defects in {{topic}}.",
+    "cn": "很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。",
     "src": "第一段 · 第二句（表明来意） · 模板第11句"
    },
    {
-    "en": "To my disappointment, the {{product}} I bought from your online store last week has failed to work properly.",
-    "cn": "令我失望的是，上周在贵网店购买的{{product}}无法正常使用。",
+    "en": "To my profound disappointment, the {{product}} I purchased from your store has failed to function properly.",
+    "cn": "令我失望的是，上周在贵店购买的{{product}}无法正常使用。",
     "src": "第二段 · 投诉类 第二句（出了什么问题） · 模板第1句"
    },
    {
     "en": "Specifically, {{problem}} appeared only three days after it arrived.",
-    "cn": "具体来说，到货才三天就出现了{{problem}}。",
+    "cn": "具体来说，到货仅三天就出现了{{problem}}。",
     "src": "第二段 · 投诉类 第二句（出了什么问题） · 模板第2句"
    },
    {
-    "en": "I would appreciate it if you could arrange a repair or a full refund as soon as possible.",
-    "cn": "如果你能尽快安排维修或全额退款，我将不胜感激。",
+    "en": "In light of these facts, I would appreciate it if you could arrange an immediate replacement or a full refund.",
+    "cn": "若你能尽快安排维修或全额退款，我将不胜感激。",
     "src": "第二段 · 投诉类 第三句（要求怎么解决） · 模板第1句"
    },
    {
@@ -239,8 +233,8 @@
  "2013": {
   "title": "2013 真题套用示范 · Part A 告知 + 鼓励参加（班级义卖）",
   "typeId": "invite",
-  "apply_en": "Dear classmates,\nI hope this message finds you well. I am writing to you regarding the matter of the charity sale for children in need.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the charity sale will take place at the school auditorium, providing a fixed venue for all classmates. In particular, I would like to invite you to join us in the charity sale, which will offer you a chance to do something meaningful for children in need.\n\nYou are kindly requested to let me know if you can come so that all the money raised can be implemented more effectively.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear classmates,\n希望你一切安好。我写信是关于为困境儿童举办的慈善义卖这一事项。\n\n至于本次活动的具体安排，主要如下。首先，本次义卖将在学校礼堂举行，为全体同学提供固定场所。具体而言，我诚挚邀请你参加我们这次义卖，这将为你带来为困境儿童做点实事的机会。\n\n请你告诉我你能否参加，以便所筹得的善款能够得到更为有效的落实。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear classmates,\nI hope this message finds you well. This letter concerns the charity sale for children in need, and I would appreciate your thoughts on it.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the charity sale will take place at the school auditorium, which is convenient for all classmates. In particular, I would be delighted to invite you to join us in the charity sale, which will provide you with a chance to do something meaningful for children in need.\n\nYou are kindly requested to let me know if you can come so that all the money raised can be properly arranged.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear classmates,\n希望收到此信时你一切安好。这封信是关于为困境儿童举办的慈善义卖的，希望听听你的看法。\n\n至于本次活动，具体安排如下。首先，本次义卖将在学校礼堂举行，全体同学前往都很方便。具体而言，我非常高兴邀请你参加我们这次义卖，这将为你带来为困境儿童做点实事的机会。\n\n请你告诉我你能否参加，以便所筹得的善款能够得到妥善安排。\nYours sincerely,\nLi Ming",
   "tips": [
    "本题两问 = 「告知细节」+「鼓励参加」：第二段先用<b>通知类</b>交代时间地点，再用<b>邀请类</b>拉人。",
    "{{place}} 一定要填具体场地（学校礼堂 / 操场），这是「细节」的评分点。",
@@ -305,32 +299,32 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to you regarding the matter of {{topic}}.",
-    "cn": "我写信是关于{{topic}}这一事项。",
+    "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+    "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
     "src": "第一段 · 第二句（表明来意） · 模板第1句"
    },
    {
     "en": "As for the planned event, the main arrangements are as follows.",
-    "cn": "至于本次活动的具体安排，主要如下。",
+    "cn": "至于本次活动，具体安排如下。",
     "src": "第二段 · 通用首句（引出下文） · 模板第3句"
    },
    {
-    "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-    "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+    "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+    "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
     "src": "第二段 · 通知类 第二句 · 模板第2句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
-    "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-    "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+    "en": "You are kindly requested to {{expect}} so that {{topic}} can be properly arranged.",
+    "cn": "请你{{expect}}，以便{{topic}}能够得到妥善安排。",
     "src": "第三段 · 收尾 / 客套 · 模板第2句"
    }
   ]
@@ -338,8 +332,8 @@
  "2014": {
   "title": "2014 真题套用示范 · Part A 介绍自己 + 征求意见",
   "typeId": "intro",
-  "apply_en": "Dear John,\nI hope this message finds you well. I am writing to you regarding the matter of our living habits and the life there.\n\nMore specifically, in my daily life I usually keep the room clean and quiet and cook simple meals at home, which helps me maintain a regular and healthy routine. In particular, I would like to know how I can better adapt to the local way of life. Since you are familiar with the situation there, your advice would be of great value to me.\n\nI would appreciate it very much if you could share your advice with me by I move in next month.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear John,\n希望你一切安好。我写信是关于我们的生活习惯以及那边的生活这一事项。\n\n更具体而言，在日常生活中，我通常会保持房间整洁安静并且在家做些简单的饭菜，这有助于我保持规律健康的生活节奏。具体而言，我想知道我怎样才能更好地适应当地的生活方式。由于你对那边的情况很熟悉，你的建议对我会非常有价值。\n\n如果你能在我下个月搬进去之前前把你的建议告诉我，我将不胜感激。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear John,\nI hope this message finds you well. This letter concerns our living habits and the life there, and I would appreciate your thoughts on it.\n\nMore specifically, in my daily life I usually keep the room clean and quiet and cook simple meals at home, which helps me maintain a regular and healthy routine. To begin with, I am eager to know how I can adapt to the local customs and lifestyle more smoothly. Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me.\n\nI would appreciate it very much if you could share your advice with me by I move in next month.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear John,\n希望收到此信时你一切安好。这封信是关于我们的生活习惯以及那边的生活的，希望听听你的看法。\n\n更具体而言，在日常生活中，我通常会保持房间整洁安静并且在家做些简单的饭菜，这有助于我保持规律健康的生活节奏。具体而言，我想知道如何更好地适应当地的生活。鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。\n\n如果你能在我下个月搬进去之前前把你的建议告诉我，我将不胜感激。\nYours sincerely,\nLi Ming",
   "tips": [
    "「介绍生活习惯」有现成句：{{habit1}}/{{habit2}} 各填一个具体习惯（作息、做饭、安静），{{advantage}} 填好处。",
    "「征求意见」用<b>询问类</b>两句：先说要问什么，再解释为什么问你（因为你熟悉那边情况）。",
@@ -386,12 +380,12 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to you regarding the matter of {{topic}}.",
-    "cn": "我写信是关于{{topic}}这一事项。",
+    "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+    "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
     "src": "第一段 · 第二句（表明来意） · 模板第1句"
    },
    {
@@ -400,13 +394,13 @@
     "src": "第二段 · 介绍类 第二句 · 模板第3句"
    },
    {
-    "en": "In particular, I would like to know how I can better adapt to the local way of life.",
-    "cn": "具体而言，我想知道我怎样才能更好地适应当地的生活方式。",
+    "en": "To begin with, I am eager to know how I can adapt to the local customs and lifestyle more smoothly.",
+    "cn": "具体而言，我想知道如何更好地适应当地的生活。",
     "src": "第二段 · 询问类 第二句（想问什么） · 模板第1句"
    },
    {
-    "en": "Since you are familiar with the situation there, your advice would be of great value to me.",
-    "cn": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。",
+    "en": "Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me.",
+    "cn": "鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
     "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
    },
    {
@@ -419,8 +413,8 @@
  "2015": {
   "title": "2015 真题套用示范 · Part A 通知（招募夏令营志愿者）",
   "typeId": "notice",
-  "apply_en": "Volunteers Needed for the Summer Camp\nIn order to further promote the summer camp for high school students, our school has decided to issue the following notice.\n\nFirst, July 15 has been set as the official time for the summer camp, and all volunteers are required to attend on time. Furthermore, the main contents of the summer camp include academic workshops, team-building games and outdoor field trips, forming a clear structure. Last but not least, all volunteers are required to sign up at the student union office before July 10, so that the recruitment can proceed in an orderly way.\n\nPlease read this notice carefully and pass it on to those concerned.",
-  "apply_cn": "Volunteers Needed for the Summer Camp\n为了进一步推进面向高中生的夏令营，学校决定发布如下通知。\n\n首先，7月15日被确定为夏令营的正式时间，届时要求全体志愿者准时参加。此外，夏令营的主要内容包括学业辅导、团队拓展游戏和户外考察，整体结构清晰明了。最后，要求全体志愿者于7月10日前到学生会办公室报名，以确保本次招募有序开展。\n\n请认真阅读本通知，并转告相关人员。",
+  "apply_en": "Volunteers Needed for the Summer Camp\nIn order to further promote the summer camp for high school students, our school has decided to issue the following notice.\n\nFirst, July 15 has been designated as the official schedule for the summer camp, and all volunteers are expected to be present punctually. Furthermore, the core agenda of the summer camp will center around academic workshops, team-building games and outdoor field trips, all of which align closely with the overarching theme. Finally, all volunteers are requested to strictly abide by sign up at the student union office before July 10, thereby ensuring that the recruitment proceeds in an orderly way.\n\nPlease read this notice carefully and pass it on to those concerned.",
+  "apply_cn": "Volunteers Needed for the Summer Camp\n为进一步推动面向高中生的夏令营，学校决定发布以下通知。\n\n首先，7月15日定为夏令营的正式时间，届时全体志愿者须准时参加。此外，夏令营的核心议程将围绕学业辅导、团队拓展游戏和户外考察展开，均与总体主题高度契合。最后，全体志愿者须于7月10日前到学生会办公室报名，以确保本次招募有序进行。\n\n请仔细阅读本通知并转告相关人员。",
   "tips": [
    "通知与书信的差别就在这里：**标题顶格代替称呼**，结尾不写落款（题目明确要求不写自己的名字和学校名）。",
    "「介绍活动」用通知类第二、三句：{{time}} 给时间，{{content1~3}} 三项并列列出活动内容——三项都填、不要漏。",
@@ -485,27 +479,27 @@
   "key_phrases": [
    {
     "en": "In order to further promote {{topic}}, our school has decided to issue the following notice.",
-    "cn": "为了进一步推进{{topic}}，学校决定发布如下通知。",
+    "cn": "为进一步推动{{topic}}，学校决定发布以下通知。",
     "src": "第一段 · 第二句（表明来意） · 模板第3句"
    },
    {
-    "en": "First, {{time}} has been set as the official time for {{topic}}, and all {{audience}} are required to attend on time.",
-    "cn": "首先，{{time}}被确定为{{topic}}的正式时间，届时要求全体{{audience}}准时参加。",
+    "en": "First, {{time}} has been designated as the official schedule for {{topic}}, and all {{audience}} are expected to be present punctually.",
+    "cn": "首先，{{time}}定为{{topic}}的正式时间，届时全体{{audience}}须准时参加。",
     "src": "第二段 · 通知类 第二句 · 模板第1句"
    },
    {
-    "en": "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, forming a clear structure.",
-    "cn": "此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，整体结构清晰明了。",
+    "en": "Furthermore, the core agenda of {{topic}} will center around {{content1}}, {{content2}} and {{content3}}, all of which align closely with the overarching theme.",
+    "cn": "此外，{{topic}}的核心议程将围绕{{content1}}、{{content2}}和{{content3}}展开，均与总体主题高度契合。",
     "src": "第二段 · 通知类 第三句 · 模板第1句"
    },
    {
-    "en": "Last but not least, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way.",
-    "cn": "最后，要求全体{{audience}}{{requirement}}，以确保{{topic}}有序开展。",
+    "en": "Finally, all {{audience}} are requested to strictly abide by {{requirement}}, thereby ensuring that {{topic}} proceeds in an orderly way.",
+    "cn": "最后，全体{{audience}}须{{requirement}}，以确保{{topic}}有序进行。",
     "src": "第二段 · 通知类 第四句 · 模板第1句"
    },
    {
     "en": "Please read this notice carefully and pass it on to those concerned.",
-    "cn": "请认真阅读本通知，并转告相关人员。",
+    "cn": "请仔细阅读本通知并转告相关人员。",
     "src": "第三段 · 收尾 / 客套 · 模板第6句"
    }
   ]
@@ -513,8 +507,8 @@
  "2016": {
   "title": "2016 真题套用示范 · Part A 感谢 + 建议（回信）",
   "typeId": "thanks",
-  "apply_en": "Dear Jack,\nI am so delighted to receive your letter. I am writing to express my sincere gratitude for your help.\n\nWithout your generous help, I could never have made such progress in translation. In particular, you are advised to work steadily around translation so that you can gradually improve your sense of how Chinese and English differ. In addition, it is strongly recommended that you should translate one short passage every day so as to improve the situation.\n\nI sincerely hope that you will make full use of this opportunity to make steady progress in translation.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Jack,\n非常高兴收到你的来信。我写信是为表达我对你帮助的诚挚感谢。\n\n没有你慷慨的帮助，我不可能在翻译上取得这样的进步。具体而言，建议你围绕翻译稳步下功夫，以便逐步提升你对中英差异的敏感度。另外，强烈建议你每天翻译一小段文字，以便改善当前状况。\n\n我真诚希望你能充分利用这次机会在翻译上稳步进步。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Jack,\nI am so delighted to receive your letter. I am writing to express my profound gratitude for the generous assistance you have extended to me.\n\nWithout your generous help, I could never have made such progress in translation. In particular, you are advised to work steadily around translation so that you can gradually improve your sense of how Chinese and English differ. In addition, you might consider taking concrete steps to translate one short passage every day so as to optimize the current situation.\n\nI sincerely hope that you will make full use of this opportunity to make steady progress in translation.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Jack,\n非常高兴收到你的来信。非常感谢你给予我的慷慨帮助。\n\n若没有你慷慨的帮助，我不可能在翻译上取得这样的进步。具体来说，建议你围绕翻译来稳步下功夫，这样能逐步改善你对中英差异的敏感度。此外，你或许可以考虑采取切实举措来每天翻译一小段文字，以优化现状。\n\n我衷心希望你能充分利用这次机会在翻译上稳步进步。\nYours sincerely,\nLi Ming",
   "tips": [
    "回信型题目第一句用 <b>I am so delighted to receive your letter.</b>（你确实收到了信），再用感谢句回应对方的祝贺。",
    "感谢类第二句可用「没有你的帮助我不可能……」，{{topic}} 填对方帮过你的事。",
@@ -559,28 +553,28 @@
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
    },
    {
-    "en": "I am writing to express my sincere gratitude for your help.",
-    "cn": "我写信是为表达我对你帮助的诚挚感谢。",
+    "en": "I am writing to express my profound gratitude for the generous assistance you have extended to me.",
+    "cn": "非常感谢你给予我的慷慨帮助。",
     "src": "第一段 · 第二句（表明来意） · 模板第6句"
    },
    {
     "en": "Without your generous help, I could never have made such progress in {{topic}}.",
-    "cn": "没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
+    "cn": "若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
     "src": "第二段 · 感谢类 第二句（具体谢什么） · 模板第2句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
-    "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-    "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+    "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+    "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
     "src": "第二段 · 建议类 第三句 · 模板第1句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
@@ -588,8 +582,8 @@
  "2017": {
   "title": "2017 真题套用示范 · Part A 接受邀请 + 介绍要点",
   "typeId": "intro",
-  "apply_en": "Dear Professor Williams,\nI hope this message finds you well. I am writing to you regarding the matter of your invitation to give a presentation on Chinese culture.\n\nTo be more specific, my presentation refers to four key aspects of Chinese culture, which is characterized by a balance between tradition and everyday life. To begin with, it covers traditional festivals, food and family life, enabling international students to get a clearer picture of how Chinese people actually live. Last but not least, your presence will make the presentation more meaningful and enable you to understand China a little better.\n\nI sincerely hope that you will make full use of this opportunity to enjoy the talk.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Professor Williams,\n希望你一切安好。我写信是关于你邀请我作一场关于中国文化的讲座这一事项。\n\n更具体而言，讲座内容是指中国文化的四个主要方面，其突出特点在于传统与日常生活的交融。首先，它涵盖传统节日、饮食与家庭生活，使留学生能够更清楚地看到中国人真实的生活。最后，你的到来将使这场讲座更加有意义，并使你得以对中国多一些了解。\n\n我真诚希望你能充分利用这次机会享受这场讲座。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Professor Williams,\nI hope this message finds you well. This letter concerns your invitation to give a presentation on Chinese culture, and I would appreciate your thoughts on it.\n\nTo be more specific, my presentation represents four key aspects of Chinese culture, a concept distinguished by its distinctive a balance between tradition and everyday life. To begin with, it encompasses traditional festivals, food and family life, thereby empowering international students to get a clearer picture of how Chinese people actually live with high efficiency. Finally, your distinguished presence will enrich the presentation and enable you to understand China a little better to the fullest.\n\nI sincerely hope that you will make full use of this opportunity to enjoy the talk.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Professor Williams,\n希望收到此信时你一切安好。这封信是关于你邀请我作一场关于中国文化的讲座的，希望听听你的看法。\n\n具体而言，讲座内容代表着中国文化的四个主要方面，这一事物以其独特的传统与日常生活的交融而著称。首先，它涵盖传统节日、饮食与家庭生活，使留学生能够更清楚地看到中国人真实的生活。最后，你的到来将使这场讲座更有意义，也能让你对中国多一些了解。\n\n我衷心希望你能充分利用这次机会享受这场讲座。\nYours sincerely,\nLi Ming",
   "tips": [
    "接受邀请不必写「我接受」三个字：来意句的 {{topic}} 填「这场邀请」本身，就完成了「接受」的功能。",
    "「介绍要点」用介绍类两句：先总述（几个方面 + 特点），再展开第一个要点（{{aspect1}}）。",
@@ -660,32 +654,32 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to you regarding the matter of {{topic}}.",
-    "cn": "我写信是关于{{topic}}这一事项。",
+    "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+    "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
     "src": "第一段 · 第二句（表明来意） · 模板第1句"
    },
    {
-    "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
-    "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+    "en": "To be more specific, {{topic}} represents {{subject}}, a concept distinguished by its distinctive {{feature}}.",
+    "cn": "具体而言，{{topic}}代表着{{subject}}，这一事物以其独特的{{feature}}而著称。",
     "src": "第二段 · 介绍类 第二句 · 模板第1句"
    },
    {
-    "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+    "en": "To begin with, it encompasses {{aspect1}}, thereby empowering {{audience}} to {{gain1}} with high efficiency.",
     "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。",
     "src": "第二段 · 介绍类 第三句 · 模板第1句"
    },
    {
-    "en": "Last but not least, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.",
-    "cn": "最后，你的到来将使{{topic}}更加有意义，并使你得以{{benefit}}。",
+    "en": "Finally, your distinguished presence will enrich {{topic}} and enable you to {{benefit}} to the fullest.",
+    "cn": "最后，你的到来将使{{topic}}更有意义，也能让你{{benefit}}。",
     "src": "第二段 · 邀请类 第四句 · 模板第1句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
@@ -693,8 +687,8 @@
  "2018": {
   "title": "2018 真题套用示范 · Part A 道歉信（+ 另约时间）",
   "typeId": "apology",
-  "apply_en": "Dear Professor Smith,\nI hope this message finds you well. This letter is intended to offer a sincere apology for the problems caused by the cancellation of my visit.\n\nAs a result of the sudden change in my schedule with regard to the planned visit, you had to face great inconvenience, which should not have happened. Although an urgent family matter partly explains why this happened, the main responsibility still lies with me. In addition, it is strongly recommended that you should let me know a date in early October that suits you so as to improve the situation.\n\nI would appreciate it very much if you could let me know which date suits you by the end of this month.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Professor Smith,\n希望你一切安好。这封信旨在就我取消此次拜访所带来的问题向你致以诚挚的歉意。\n\n由于我在原定的拜访方面行程突变，你不得不面对诸多不便，这本不该发生。尽管家里有急事在一定程度上解释了事情发生的原因，但主要责任仍然在我。另外，强烈建议你告诉我十月初一个对你合适的日期，以便改善当前状况。\n\n如果你能在本月底前告诉我哪个时间合适，我将不胜感激。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Professor Smith,\nI hope this message finds you well. Please accept my sincere apology for any inconvenience and trouble that the cancellation of my visit has brought you.\n\nAs a result of the sudden change in my schedule with regard to the planned visit, you had to face great inconvenience, which should not have happened. Although an urgent family matter partly contributed to the delay, the primary accountability undoubtedly rests with me. In addition, you might consider taking concrete steps to let me know a date in early October that suits you so as to optimize the current situation.\n\nI would appreciate it very much if you could let me know which date suits you by the end of this month.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Professor Smith,\n希望收到此信时你一切安好。请接受我为我取消此次拜访给你带来的不便和麻烦所作的诚挚道歉。\n\n由于我在原定的拜访方面行程突变，你不得不面对诸多不便，这本不该发生。尽管家里有急事在一定程度上导致了延误，但主要责任毫无疑问在我。此外，你或许可以考虑采取切实举措来告诉我十月初一个对你合适的日期，以优化现状。\n\n如果你能在本月底前告诉我哪个时间合适，我将不胜感激。\nYours sincerely,\nLi Ming",
   "tips": [
    "道歉信三段式：<b>承认问题 → 解释原因（但责任在我）→ 提出补救</b>。第二句的 {{impact}} 要写对方受到的影响，比只说 sorry 有力。",
    "{{cause}} 不要写成推责（The traffic was terrible），用「家里有急事」这类中性说法即可。",
@@ -753,12 +747,12 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "This letter is intended to offer a sincere apology for the problems caused by {{topic}}.",
-    "cn": "这封信旨在就{{topic}}所带来的问题向你致以诚挚的歉意。",
+    "en": "Please accept my sincere apology for any inconvenience and trouble that {{topic}} has brought you.",
+    "cn": "请接受我为{{topic}}给你带来的不便和麻烦所作的诚挚道歉。",
     "src": "第一段 · 第二句（表明来意） · 模板第4句"
    },
    {
@@ -767,13 +761,13 @@
     "src": "第二段 · 道歉类 第二句 · 模板第2句"
    },
    {
-    "en": "Although {{cause}} partly explains why this happened, the main responsibility still lies with me.",
-    "cn": "尽管{{cause}}在一定程度上解释了事情发生的原因，但主要责任仍然在我。",
+    "en": "Although {{cause}} partly contributed to the delay, the primary accountability undoubtedly rests with me.",
+    "cn": "尽管{{cause}}在一定程度上导致了延误，但主要责任毫无疑问在我。",
     "src": "第二段 · 道歉类 第三句 · 模板第1句"
    },
    {
-    "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-    "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+    "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+    "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
     "src": "第二段 · 建议类 第三句 · 模板第1句"
    },
    {
@@ -786,8 +780,8 @@
  "2019": {
   "title": "2019 真题套用示范 · Part A 建议信（辩题 + 安排）",
   "typeId": "advice",
-  "apply_en": "Dear Professor Smith,\nI hope this message finds you well. The primary aim of this letter is to offer some suggestions on the topic of the debate on city traffic.\n\nAs for the practical measures, my suggestions are listed as follows. In particular, you are advised to choose \"Is Traffic Jam Caused by Poor Road Planning\" as the topic around city traffic so that you can gradually improve the quality of the debate on both sides. In addition, it is strongly recommended that you should set the debate for next Friday afternoon in Room 302 so as to improve the situation.\n\nI would appreciate it very much if you could confirm the topic and the date by this Friday.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Professor Smith,\n希望你一切安好。本信的首要目的，是就本次城市交通辩论赛的辩题提出若干建议。\n\n至于具体措施，我的建议如下。具体而言，建议你围绕城市交通选用「交通拥堵源于道路规划不足吗」作为辩题，以便逐步提升正反双方交锋的质量。另外，强烈建议你把辩论安排在下周五下午302教室，以便改善当前状况。\n\n如果你能在本周五前确认辩题和日期，我将不胜感激。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Professor Smith,\nI hope this message finds you well. I would like to offer a few suggestions on the topic of the debate on city traffic, which I hope may be of use to you.\n\nAs for the practical measures, my suggestions are as follows. In particular, you are advised to choose \"Is Traffic Jam Caused by Poor Road Planning\" as the topic around city traffic so that you can gradually improve the quality of the debate on both sides. In addition, you might consider taking concrete steps to set the debate for next Friday afternoon in Room 302 so as to optimize the current situation.\n\nI would appreciate it very much if you could confirm the topic and the date by this Friday.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Professor Smith,\n希望收到此信时你一切安好。我想就本次城市交通辩论赛的辩题提几点建议，希望能对你有用。\n\n至于具体措施，我的建议如下。具体来说，建议你围绕城市交通来选用「交通拥堵源于道路规划不足吗」作为辩题，这样能逐步改善正反双方交锋的质量。此外，你或许可以考虑采取切实举措来把辩论安排在下周五下午302教室，以优化现状。\n\n如果你能在本周五前确认辩题和日期，我将不胜感激。\nYours sincerely,\nLi Ming",
   "tips": [
    "两问 = 「建议辩题 + 说明安排」，正好各用一句建议类：第一句给辩题，第二句给时间地点。",
    "辩题写成<b>一个疑问句</b>（Is Traffic Jam Caused by…）才像辩题，这是本题的得分细节。",
@@ -840,27 +834,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "The primary aim of this letter is to offer some suggestions on {{topic}}.",
-    "cn": "本信的首要目的，是就{{topic}}提出若干建议。",
+    "en": "I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.",
+    "cn": "我想就{{topic}}提几点建议，希望能对你有用。",
     "src": "第一段 · 第二句（表明来意） · 模板第10句"
    },
    {
-    "en": "As for the practical measures, my suggestions are listed as follows.",
+    "en": "As for the practical measures, my suggestions are as follows.",
     "cn": "至于具体措施，我的建议如下。",
     "src": "第二段 · 通用首句（引出下文） · 模板第2句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
-    "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-    "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+    "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+    "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
     "src": "第二段 · 建议类 第三句 · 模板第1句"
    },
    {
@@ -873,8 +867,8 @@
  "2020": {
   "title": "2020 真题套用示范 · Part A 介绍古迹 + 旅行建议",
   "typeId": "intro",
-  "apply_en": "Dear Friends,\nI hope this message finds you well. In this letter, I would like to introduce the Terracotta Army in Xi’an to you as an excellent option.\n\nTo be more specific, the Terracotta Army refers to an army of over 8,000 life-size clay soldiers, which is characterized by over 2,000 years of history. To begin with, it covers three large exhibition pits, enabling visitors to gain a vivid sense of the Qin Dynasty. In particular, you are advised to book tickets online in advance around the date of your visit so that you can gradually improve your experience at the site.\n\nI sincerely hope that you will make full use of this opportunity to enjoy every moment of the tour.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Friends,\n希望你一切安好。在这封信中，我想向你介绍西安的兵马俑，把它作为一个极佳的选择推荐给你。\n\n更具体而言，兵马俑是指一支由八千多尊等身陶俑组成的军阵，其突出特点在于两千多年历史。首先，它涵盖三个大型展示坑，使参观者能够获得对秦朝的鲜活感受。具体而言，建议你围绕参观的日期提前在网上订票，以便逐步提升你在遗址的参观体验。\n\n我真诚希望你能充分利用这次机会享受参观的每一刻。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Friends,\nI hope this message finds you well. In this letter, I would like to introduce the Terracotta Army in Xi’an to you as an excellent option.\n\nTo be more specific, the Terracotta Army represents an army of over 8,000 life-size clay soldiers, a concept distinguished by its distinctive over 2,000 years of history. To begin with, it encompasses three large exhibition pits, thereby empowering visitors to gain a vivid sense of the Qin Dynasty with high efficiency. In particular, you are advised to book tickets online in advance around the date of your visit so that you can gradually improve your experience at the site.\n\nI sincerely hope that you will make full use of this opportunity to enjoy every moment of the tour.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Friends,\n希望收到此信时你一切安好。在这封信里，我想把西安的兵马俑作为一个很好的选择介绍给你。\n\n具体而言，兵马俑代表着一支由八千多尊等身陶俑组成的军阵，这一事物以其独特的两千多年历史而著称。首先，它涵盖三个大型展示坑，使参观者能够获得对秦朝的鲜活感受。具体来说，建议你围绕参观的日期来提前在网上订票，这样能逐步改善你在遗址的参观体验。\n\n我衷心希望你能充分利用这次机会享受参观的每一刻。\nYours sincerely,\nLi Ming",
   "tips": [
    "「介绍景点」用介绍类两句：第一句给「是什么 + 特征」（数量 + 年代最好写），第二句展开一个看点。",
    "{{aspect1}} 填 three exhibition pits 这类<b>具体结构</b>，比说 beautiful 有效得多——这是内容分的来源。",
@@ -951,32 +945,32 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
     "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-    "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+    "cn": "在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。",
     "src": "第一段 · 第二句（表明来意） · 模板第5句"
    },
    {
-    "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
-    "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+    "en": "To be more specific, {{topic}} represents {{subject}}, a concept distinguished by its distinctive {{feature}}.",
+    "cn": "具体而言，{{topic}}代表着{{subject}}，这一事物以其独特的{{feature}}而著称。",
     "src": "第二段 · 介绍类 第二句 · 模板第1句"
    },
    {
-    "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+    "en": "To begin with, it encompasses {{aspect1}}, thereby empowering {{audience}} to {{gain1}} with high efficiency.",
     "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。",
     "src": "第二段 · 介绍类 第三句 · 模板第1句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
@@ -984,8 +978,8 @@
  "2021": {
   "title": "2021 真题套用示范 · Part A 邀请信（线上会议）",
   "typeId": "invite",
-  "apply_en": "Dear Jack,\nI hope this message finds you well. I am writing to invite you to take part in our monthly online reading session.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the online meeting will take place at Zoom, providing a fixed venue for all participants. In particular, I would like to invite you to join us in the online meeting, which will offer you a chance to share a famous writer from your own country.\n\nI would appreciate it very much if you could confirm your attendance by next Wednesday.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Jack,\n希望你一切安好。我写信是邀请你参加我们每月一次的线上读书会。\n\n至于本次活动的具体安排，主要如下。首先，本次线上会议将在Zoom 线上平台举行，为全体参会者提供固定场所。具体而言，我诚挚邀请你参加我们这次线上会议，这将为你带来分享贵国一位著名作家的机会。\n\n如果你能在下周三前确认你是否参加，我将不胜感激。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Jack,\nI hope this message finds you well. It gives me great pleasure to invite you to our monthly online reading session.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the online meeting will take place at Zoom, which is convenient for all participants. In particular, I would be delighted to invite you to join us in the online meeting, which will provide you with a chance to share a famous writer from your own country.\n\nI would appreciate it very much if you could confirm your attendance by next Wednesday. Thank you for your time and attention, and I look forward to your positive response.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Jack,\n希望收到此信时你一切安好。很高兴邀请你参加我们每月一次的线上读书会。\n\n至于本次活动，具体安排如下。首先，本次线上会议将在Zoom 线上平台举行，全体参会者前往都很方便。具体而言，我非常高兴邀请你参加我们这次线上会议，这将为你带来分享贵国一位著名作家的机会。\n\n如果你能在下周三前确认你是否参加，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。\nYours sincerely,\nLi Ming",
   "tips": [
    "邀请信第二段 = 「安排细节 + 邀请理由」：先用通知类交代时间和平台，再用邀请类说明参加能得到什么。",
    "{{gain}} 填与本题主题相关的收益（分享自己国家的作家），这是「为什么值得来」的评分点。",
@@ -1050,41 +1044,46 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "I am writing to invite you to take part in {{topic}}.",
-    "cn": "我写信是邀请你参加{{topic}}。",
+    "en": "It gives me great pleasure to invite you to {{topic}}.",
+    "cn": "很高兴邀请你参加{{topic}}。",
     "src": "第一段 · 第二句（表明来意） · 模板第7句"
    },
    {
     "en": "As for the planned event, the main arrangements are as follows.",
-    "cn": "至于本次活动的具体安排，主要如下。",
+    "cn": "至于本次活动，具体安排如下。",
     "src": "第二段 · 通用首句（引出下文） · 模板第3句"
    },
    {
-    "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-    "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+    "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+    "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
     "src": "第二段 · 通知类 第二句 · 模板第2句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
     "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
     "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
     "src": "第三段 · 收尾 / 客套 · 模板第1句"
+   },
+   {
+    "en": "Thank you for your time and attention, and I look forward to your positive response.",
+    "cn": "感谢你抽时间阅读这封信，期待你的回复。",
+    "src": "第三段 · 收尾 / 客套 · 模板第3句"
    }
   ]
  },
  "2022": {
   "title": "2022 真题套用示范 · Part A 介绍 + 邀请（校园美食节）",
   "typeId": "invite",
-  "apply_en": "Dear international students,\nI hope this message finds you well. In this letter, I would like to introduce our campus food festival to you as an excellent option.\n\nTo begin with, the food festival will take place at the Main Dining Hall, providing a fixed venue for all international students. In particular, I would like to invite you to join us in the food festival, which will offer you a taste of dishes from across China. In addition, by trying the local specialties during the festival, you will be able to understand Chinese food culture first-hand, which is of great benefit to you.\n\nYou are kindly requested to come and join us so that the festival can be implemented more effectively.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear international students,\n希望你一切安好。在这封信中，我想向你介绍我们的校园美食节，把它作为一个极佳的选择推荐给你。\n\n首先，美食节将在学校主食堂举行，为全体留学生提供固定场所。具体而言，我诚挚邀请你参加我们这次美食节，这将为你带来品尝中国各地美食的机会。另外，在美食节期间品尝当地特色菜，将使你能够亲身理解中国饮食文化，这对你大有裨益。\n\n请你前来参加，以便美食节能够得到更为有效的落实。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear international students,\nI hope this message finds you well. In this letter, I would like to introduce our campus food festival to you as an excellent option.\n\nTo begin with, the food festival will take place at the Main Dining Hall, which is convenient for all international students. In particular, I would be delighted to invite you to join us in the food festival, which will provide you with a taste of dishes from across China. In addition, by trying the local specialties during the festival, you will be able to understand Chinese food culture first-hand, which will prove immensely beneficial to you.\n\nYou are kindly requested to come and join us so that the festival can be properly arranged.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear international students,\n希望收到此信时你一切安好。在这封信里，我想把我们的校园美食节作为一个很好的选择介绍给你。\n\n首先，美食节将在学校主食堂举行，全体留学生前往都很方便。具体而言，我非常高兴邀请你参加我们这次美食节，这将为你带来品尝中国各地美食的机会。此外，在美食节期间品尝当地特色菜，你将能够亲身理解中国饮食文化，这会对你大有裨益。\n\n请你前来参加，以便美食节能够得到妥善安排。\nYours sincerely,\nLi Ming",
   "tips": [
    "本题两问 = 「介绍美食节 + 邀请参加」：先点明活动地点，再发邀请，最后一句讲参加能获得什么。",
    "两处 {{gain}} 不要重复：第一处说「尝到什么」，第二处说「理解到什么」，形成递进。",
@@ -1161,32 +1160,32 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
     "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-    "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+    "cn": "在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。",
     "src": "第一段 · 第二句（表明来意） · 模板第5句"
    },
    {
-    "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-    "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+    "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+    "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
     "src": "第二段 · 通知类 第二句 · 模板第2句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
-    "en": "In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which is of great benefit to you.",
-    "cn": "另外，在{{topic}}期间{{task}}，将使你能够{{gain}}，这对你大有裨益。",
+    "en": "In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which will prove immensely beneficial to you.",
+    "cn": "此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这会对你大有裨益。",
     "src": "第二段 · 邀请类 第三句 · 模板第1句"
    },
    {
-    "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-    "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+    "en": "You are kindly requested to {{expect}} so that {{topic}} can be properly arranged.",
+    "cn": "请你{{expect}}，以便{{topic}}能够得到妥善安排。",
     "src": "第三段 · 收尾 / 客套 · 模板第2句"
    }
   ]
@@ -1194,8 +1193,8 @@
  "2023": {
   "title": "2023 真题套用示范 · Part A 建议信（二选一 + 理由）",
   "typeId": "advice",
-  "apply_en": "Dear David,\nI am so delighted to receive your letter. The primary aim of this letter is to offer some suggestions on which event to visit on Sunday.\n\nAs for the practical measures, my suggestions are listed as follows. In particular, you are advised to go to the robot show around your choice so that you can gradually improve the direction technology is moving in. In addition, it is strongly recommended that you should book the tickets online in advance so as to improve the situation.\n\nI sincerely hope that you will make full use of this opportunity to enjoy a memorable Sunday.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear David,\n非常高兴收到你的来信。本信的首要目的，是就周日该去看哪一个活动提出若干建议。\n\n至于具体措施，我的建议如下。具体而言，建议你围绕你的选择去看机器人展，以便逐步提升技术发展的方向。另外，强烈建议你提前在网上订票，以便改善当前状况。\n\n我真诚希望你能充分利用这次机会度过一个难忘的周日。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear David,\nI am so delighted to receive your letter. I would like to offer a few suggestions on which event to visit on Sunday, which I hope may be of use to you.\n\nAs for the practical measures, my suggestions are as follows. In particular, you are advised to go to the robot show around your choice so that you can gradually improve the direction technology is moving in. In addition, you might consider taking concrete steps to book the tickets online in advance so as to optimize the current situation.\n\nI sincerely hope that you will make full use of this opportunity to enjoy a memorable Sunday.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear David,\n非常高兴收到你的来信。我想就周日该去看哪一个活动提几点建议，希望能对你有用。\n\n至于具体措施，我的建议如下。具体来说，建议你围绕你的选择来去看机器人展，这样能逐步改善技术发展的方向。此外，你或许可以考虑采取切实举措来提前在网上订票，以优化现状。\n\n我衷心希望你能充分利用这次机会度过一个难忘的周日。\nYours sincerely,\nLi Ming",
   "tips": [
    "「二选一」题必须<b>明确表态</b>：{{action}} 直接填 go to the robot show，不要写 it depends。",
    "「理由」用 {{detail}} 一句话交代即可，再补一句可执行建议（提前订票），两问就都完成了。",
@@ -1246,28 +1245,28 @@
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
    },
    {
-    "en": "The primary aim of this letter is to offer some suggestions on {{topic}}.",
-    "cn": "本信的首要目的，是就{{topic}}提出若干建议。",
+    "en": "I would like to offer a few suggestions on {{topic}}, which I hope may be of use to you.",
+    "cn": "我想就{{topic}}提几点建议，希望能对你有用。",
     "src": "第一段 · 第二句（表明来意） · 模板第10句"
    },
    {
-    "en": "As for the practical measures, my suggestions are listed as follows.",
+    "en": "As for the practical measures, my suggestions are as follows.",
     "cn": "至于具体措施，我的建议如下。",
     "src": "第二段 · 通用首句（引出下文） · 模板第2句"
    },
    {
     "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-    "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+    "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
     "src": "第二段 · 建议类 第二句 · 模板第2句"
    },
    {
-    "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-    "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+    "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+    "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
     "src": "第二段 · 建议类 第三句 · 模板第1句"
    },
    {
     "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+    "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
     "src": "第三段 · 收尾 / 客套 · 模板第5句"
    }
   ]
@@ -1275,8 +1274,8 @@
  "2024": {
   "title": "2024 真题套用示范 · Part A 计划 + 征求意见",
   "typeId": "intro",
-  "apply_en": "Dear Jack,\nI hope this message finds you well. The purpose of this letter is to discuss our survey plan on the protection of old houses with you in detail.\n\nFrom a practical perspective, the survey mainly involves interviews with local residents and on-site visits, aiming to find out how these old houses can be better protected. More specifically, I am not sure whether my plan is practical, so I would value your opinion. Since you are familiar with the situation there, your advice would be of great value to me.\n\nI would appreciate it very much if you could tell me what you think of the plan by next Monday.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Jack,\n希望你一切安好。这封信的目的是想与你详细讨论我们关于老宅保护的调查计划。\n\n从实践角度看，这次调查主要涵盖走访当地居民和实地勘察，其根本目标在于弄清如何更好地保护这些老宅。更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。由于你对那边的情况很熟悉，你的建议对我会非常有价值。\n\n如果你能在下周一前告诉我你对这个计划的看法，我将不胜感激。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Jack,\nI hope this message finds you well. I would appreciate the chance to discuss our survey plan on the protection of old houses with you in more detail.\n\nFrom a practical perspective, the survey mainly involves interviews with local residents and on-site visits, aiming to find out how these old houses can be better protected. More specifically, I am not sure whether my plan is practical, so I would value your opinion. Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me.\n\nI would appreciate it very much if you could tell me what you think of the plan by next Monday.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Jack,\n希望收到此信时你一切安好。希望能有机会和你更详细地谈谈我们关于老宅保护的调查计划。\n\n从实用的角度看，这次调查主要包括走访当地居民和实地勘察，目的在于弄清如何更好地保护这些老宅。另外，我不确定自己的计划是否可行，很想听听你的意见。鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。\n\n如果你能在下周一前告诉我你对这个计划的看法，我将不胜感激。\nYours sincerely,\nLi Ming",
   "tips": [
    "「提出计划」用介绍类：{{content}} 填具体做法（走访 + 实地勘察），{{purpose}} 填目的，比只写 plan 有内容。",
    "「征求意见」用询问类两句（想问什么 + 为什么问你）；本题两人是搭档，问句可以直白一些。",
@@ -1323,27 +1322,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "The purpose of this letter is to discuss {{topic}} with you in detail.",
-    "cn": "这封信的目的是想与你详细讨论{{topic}}。",
+    "en": "I would appreciate the chance to discuss {{topic}} with you in more detail.",
+    "cn": "希望能有机会和你更详细地谈谈{{topic}}。",
     "src": "第一段 · 第二句（表明来意） · 模板第9句"
    },
    {
     "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
-    "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。",
+    "cn": "从实用的角度看，{{topic}}主要包括{{content}}，目的在于{{purpose}}。",
     "src": "第二段 · 介绍类 第二句 · 模板第2句"
    },
    {
     "en": "More specifically, I am not sure whether my plan is practical, so I would value your opinion.",
-    "cn": "更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。",
+    "cn": "另外，我不确定自己的计划是否可行，很想听听你的意见。",
     "src": "第二段 · 询问类 第二句（想问什么） · 模板第2句"
    },
    {
-    "en": "Since you are familiar with the situation there, your advice would be of great value to me.",
-    "cn": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。",
+    "en": "Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me.",
+    "cn": "鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
     "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
    },
    {
@@ -1356,8 +1355,8 @@
  "2025": {
   "title": "2025 真题套用示范 · Part A 介绍 + 邀请（短剧参演）",
   "typeId": "invite",
-  "apply_en": "Dear John,\nI hope this message finds you well. In this letter, I would like to introduce a short play based on The Romance of the Three Kingdoms to you as an excellent option.\n\nFrom a practical perspective, the play mainly involves the stories of strategy, loyalty and heroism in the novel, aiming to bring a classic Chinese story to the stage. In particular, I would like to invite you to take a role in it the play, which will offer you a deeper understanding of Chinese culture.\n\nYou are kindly requested to let me know your decision so that the play can be implemented more effectively.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear John,\n希望你一切安好。在这封信中，我想向你介绍一部改编自《三国演义》的短剧，把它作为一个极佳的选择推荐给你。\n\n从实践角度看，这部短剧主要涵盖小说中谋略、忠义与英雄气概的故事，其根本目标在于把一个中国经典故事搬上舞台。具体而言，我诚挚邀请你出演其中一个角色这部短剧，这将为你带来更深入地理解中国文化。\n\n请你告诉我你的决定，以便这部短剧能够得到更为有效的落实。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear John,\nI hope this message finds you well. In this letter, I would like to introduce a short play based on The Romance of the Three Kingdoms to you as an excellent option.\n\nFrom a practical perspective, the play mainly involves the stories of strategy, loyalty and heroism in the novel, aiming to bring a classic Chinese story to the stage. In particular, I would be delighted to invite you to take a role in it the play, which will provide you with a deeper understanding of Chinese culture.\n\nYou are kindly requested to let me know your decision so that the play can be properly arranged.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear John,\n希望收到此信时你一切安好。在这封信里，我想把一部改编自《三国演义》的短剧作为一个很好的选择介绍给你。\n\n从实用的角度看，这部短剧主要包括小说中谋略、忠义与英雄气概的故事，目的在于把一个中国经典故事搬上舞台。具体而言，我非常高兴邀请你出演其中一个角色这部短剧，这将为你带来更深入地理解中国文化。\n\n请你告诉我你的决定，以便这部短剧能够得到妥善安排。\nYours sincerely,\nLi Ming",
   "tips": [
    "本题两问 = 「介绍短剧 + 邀请参演」：用介绍类点明改编来源和看点，再用邀请类发出邀请。",
    "{{content}} 写出小说的三个关键词（谋略、忠义、英雄气概），这是「介绍」部分最能得分的地方。",
@@ -1410,27 +1409,27 @@
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
     "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-    "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+    "cn": "在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。",
     "src": "第一段 · 第二句（表明来意） · 模板第5句"
    },
    {
     "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
-    "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。",
+    "cn": "从实用的角度看，{{topic}}主要包括{{content}}，目的在于{{purpose}}。",
     "src": "第二段 · 介绍类 第二句 · 模板第2句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+    "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+    "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
     "src": "第二段 · 邀请类 第二句 · 模板第1句"
    },
    {
-    "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-    "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+    "en": "You are kindly requested to {{expect}} so that {{topic}} can be properly arranged.",
+    "cn": "请你{{expect}}，以便{{topic}}能够得到妥善安排。",
     "src": "第三段 · 收尾 / 客套 · 模板第2句"
    }
   ]
@@ -1438,12 +1437,12 @@
  "2026": {
   "title": "2026 真题套用示范 · 回复邮件（分享对旅行视频的看法）",
   "typeId": "opinion",
-  "apply_en": "Dear Jack,\nI hope this message finds you well. With this letter, I would like to share my views on your travel video.\n\nTo be honest, I am deeply impressed by what you shared, especially the way you captured the local people and their daily life. The reason is that such records help us rediscover the beauty of ordinary moments. In particular, I would like to invite you to take me along on your next trip, which will offer you a chance to see the world through your camera.\n\nI sincerely hope that you will make full use of this opportunity to keep sharing such wonderful moments with us.\nYours sincerely,\nLi Ming",
-  "apply_cn": "Dear Jack,\n希望你一切安好。借此来信，我想与你分享我对你的旅行视频的看法。\n\n说实话，你分享的内容让我印象很深，尤其是你镜头下当地人与他们的日常生活。原因在于，这类记录帮我们重新发现平凡时刻里的美好。具体而言，我诚挚邀请你让我随行参加你的下一次旅行，这将为你带来透过你的镜头看世界的机会。\n\n我真诚希望你能充分利用这次机会继续与我们分享这样的美好瞬间。\nYours sincerely,\nLi Ming",
+  "apply_en": "Dear Jack,\nI hope this message finds you well. I am so delighted to receive your letter. I am writing to share with you a few reflective thoughts on your travel video.\n\nFirst, I was immensely impressed by the delicate emotional nuance captured in your narrative, especially the way you captured the local people and their daily life. If I may say so, it reflects your careful observation and genuine love for life. Works of this caliber are invaluable precisely because they prompt us to rediscover profound beauty in ordinary moments.\n\nThank you for your time and attention, and I look forward to your positive response.\nYours sincerely,\nLi Ming",
+  "apply_cn": "Dear Jack,\n希望收到此信时你一切安好。非常高兴收到你的来信。我想和你分享我对你的旅行视频的几点看法。\n\n首先，你在叙事中所捕捉到的细腻情感令我极为震撼，特别是你镜头下当地人与他们的日常生活这一处。毫无疑问，这一创作既展现了敏锐的观察力，也饱含对日常生活的真挚敬畏。此类高水准的作品之所以弥足珍贵，恰恰在于它们促使我们重新发掘平凡瞬间中的深刻之美。\n\n感谢你抽时间阅读这封信，期待你的回复。\nYours sincerely,\nLi Ming",
   "tips": [
-   "观点分享类目前只考过一次（2026），结构最简单：<b>分享看法 → 说清为什么 → 顺势回应</b>。",
-   "{{detail}} 要具体（当地人与日常生活），空泛地说 interesting 拿不到内容分。",
-   "本题要求「分享看法」而非「办事」，所以收尾不要写「期待回复」，用「希望继续分享」这类呼应主题的句子。"
+   "观点分享类目前只考过一次（2026），结构最严谨：<b>开篇交流看法 → 展开具体触动与评价 → 升华作品意义与期盼交流</b>。",
+   "{{detail}} 要具体（当地人与日常生活），切忌空泛评价。",
+   "纯粹的观点回信不应强行夹带邀请或请托，保持平等、真挚的赏析与探讨即可。"
   ],
   "slot_phrases": [
    {
@@ -1457,62 +1456,43 @@
     "en": "the way you captured the local people and their daily life",
     "cn": "你镜头下当地人与他们的日常生活",
     "para": "第二段"
-   },
-   {
-    "name": "join",
-    "en": "take me along on",
-    "cn": "让我随行参加",
-    "para": "第二段"
-   },
-   {
-    "name": "topic",
-    "en": "your next trip",
-    "cn": "你的下一次旅行",
-    "para": "第二段"
-   },
-   {
-    "name": "gain",
-    "en": "a chance to see the world through your camera",
-    "cn": "透过你的镜头看世界的机会",
-    "para": "第二段"
-   },
-   {
-    "name": "outcome",
-    "en": "keep sharing such wonderful moments with us",
-    "cn": "继续与我们分享这样的美好瞬间",
-    "para": "第三段"
    }
   ],
   "key_phrases": [
    {
     "en": "I hope this message finds you well.",
-    "cn": "希望你一切安好。",
+    "cn": "希望收到此信时你一切安好。",
     "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
    },
    {
-    "en": "With this letter, I would like to share my views on {{topic}}.",
-    "cn": "借此来信，我想与你分享我对{{topic}}的看法。",
+    "en": "I am so delighted to receive your letter.",
+    "cn": "非常高兴收到你的来信。",
+    "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
+   },
+   {
+    "en": "I am writing to share with you a few reflective thoughts on {{topic}}.",
+    "cn": "我想和你分享我对{{topic}}的几点看法。",
     "src": "第一段 · 第二句（表明来意） · 模板第2句"
    },
    {
-    "en": "To be honest, I am deeply impressed by what you shared, especially {{detail}}.",
-    "cn": "说实话，你分享的内容让我印象很深，尤其是{{detail}}。",
+    "en": "First, I was immensely impressed by the delicate emotional nuance captured in your narrative, especially {{detail}}.",
+    "cn": "首先，你在叙事中所捕捉到的细腻情感令我极为震撼，特别是{{detail}}这一处。",
     "src": "第二段 · 观点类 第二句（我的看法） · 模板第1句"
    },
    {
-    "en": "The reason is that such records help us rediscover the beauty of ordinary moments.",
-    "cn": "原因在于，这类记录帮我们重新发现平凡时刻里的美好。",
+    "en": "If I may say so, it reflects your careful observation and genuine love for life.",
+    "cn": "毫无疑问，这一创作既展现了敏锐的观察力，也饱含对日常生活的真挚敬畏。",
+    "src": "第二段 · 观点类 第二句（我的看法） · 模板第2句"
+   },
+   {
+    "en": "Works of this caliber are invaluable precisely because they prompt us to rediscover profound beauty in ordinary moments.",
+    "cn": "此类高水准的作品之所以弥足珍贵，恰恰在于它们促使我们重新发掘平凡瞬间中的深刻之美。",
     "src": "第二段 · 观点类 第三句（为什么这样看） · 模板第1句"
    },
    {
-    "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-    "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
-    "src": "第二段 · 邀请类 第二句 · 模板第1句"
-   },
-   {
-    "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-    "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
-    "src": "第三段 · 收尾 / 客套 · 模板第5句"
+    "en": "Thank you for your time and attention, and I look forward to your positive response.",
+    "cn": "感谢你抽时间阅读这封信，期待你的回复。",
+    "src": "第三段 · 收尾 / 客套 · 模板第3句"
    }
   ]
  }

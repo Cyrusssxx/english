@@ -4170,8 +4170,8 @@
     "template": "该思路适用于撰写回复别人、给予别人建议的信件，如：建议如何提高英语口语水平。Dear ____, I am very glad to hear that you want to seek some suggestions about（说明提出建议相关事宜）in order to（说明对方诉求）. From my point of view,（提出建议一）. Also, to you, I highly recommend that（提出建议二）. On the one hand,（具体展开建议）. On the other hand, ____. Besides, it is unnecessary for you to（补充说明反向不必要举措）. Consequently, I believe that（进而提出建议三）. I hope that my opinions are of help to you, and please feel free to contact me for further discussions. Yours sincerely, Li Ming"
    },
    "apply": {
-    "apply_en": "Dear Jack,\nI am so delighted to receive your letter. I am writing to express my sincere gratitude for your help.\n\nWithout your generous help, I could never have made such progress in translation. In particular, you are advised to work steadily around translation so that you can gradually improve your sense of how Chinese and English differ. In addition, it is strongly recommended that you should translate one short passage every day so as to improve the situation.\n\nI sincerely hope that you will make full use of this opportunity to make steady progress in translation.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Jack,\n非常高兴收到你的来信。我写信是为表达我对你帮助的诚挚感谢。\n\n没有你慷慨的帮助，我不可能在翻译上取得这样的进步。具体而言，建议你围绕翻译稳步下功夫，以便逐步提升你对中英差异的敏感度。另外，强烈建议你每天翻译一小段文字，以便改善当前状况。\n\n我真诚希望你能充分利用这次机会在翻译上稳步进步。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Jack,\nI am so delighted to receive your letter. I am writing to express my profound gratitude for the generous assistance you have extended to me.\n\nWithout your generous help, I could never have made such progress in translation. In particular, you are advised to work steadily around translation so that you can gradually improve your sense of how Chinese and English differ. In addition, you might consider taking concrete steps to translate one short passage every day so as to optimize the current situation.\n\nI sincerely hope that you will make full use of this opportunity to make steady progress in translation.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Jack,\n非常高兴收到你的来信。非常感谢你给予我的慷慨帮助。\n\n若没有你慷慨的帮助，我不可能在翻译上取得这样的进步。具体来说，建议你围绕翻译来稳步下功夫，这样能逐步改善你对中英差异的敏感度。此外，你或许可以考虑采取切实举措来每天翻译一小段文字，以优化现状。\n\n我衷心希望你能充分利用这次机会在翻译上稳步进步。\nYours sincerely,\nLi Ming",
     "tips": [
      "回信型题目第一句用 <b>I am so delighted to receive your letter.</b>（你确实收到了信），再用感谢句回应对方的祝贺。",
      "感谢类第二句可用「没有你的帮助我不可能……」，{{topic}} 填对方帮过你的事。",
@@ -4217,28 +4217,28 @@
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第2句"
      },
      {
-      "en": "I am writing to express my sincere gratitude for your help.",
-      "cn": "我写信是为表达我对你帮助的诚挚感谢。",
+      "en": "I am writing to express my profound gratitude for the generous assistance you have extended to me.",
+      "cn": "非常感谢你给予我的慷慨帮助。",
       "src": "第一段 · 第二句（表明来意） · 模板第6句"
      },
      {
       "en": "Without your generous help, I could never have made such progress in {{topic}}.",
-      "cn": "没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
+      "cn": "若没有你慷慨的帮助，我不可能在{{topic}}上取得这样的进步。",
       "src": "第二段 · 感谢类 第二句（具体谢什么） · 模板第2句"
      },
      {
       "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-      "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+      "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
       "src": "第二段 · 建议类 第二句 · 模板第2句"
      },
      {
-      "en": "In addition, it is strongly recommended that you should {{task}} so as to improve the situation.",
-      "cn": "另外，强烈建议你{{task}}，以便改善当前状况。",
+      "en": "In addition, you might consider taking concrete steps to {{task}} so as to optimize the current situation.",
+      "cn": "此外，你或许可以考虑采取切实举措来{{task}}，以优化现状。",
       "src": "第二段 · 建议类 第三句 · 模板第1句"
      },
      {
       "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
       "src": "第三段 · 收尾 / 客套 · 模板第5句"
      }
     ]
@@ -4416,8 +4416,8 @@
     "template": "当图表体现某现象并要求对其解读和评论时，可以参照该思路，如：解读手机使用功能图表。This pie chart, simple yet illuminating, illustrates（概括图表描绘的内容）. As is reflected by the chart,（具体说明图表数据体现的情况）. The survey reveals that（概括说明图表数据体现的情况、突出重点）. On the one hand,（对重点一进行阐释）. On the other hand,（对重点二进行阐释）. In my opinion, though it's natural... they should（对图表情况予以评论）.（对评论引出部分予以详细阐述、完善论证）."
    },
    "apply": {
-    "apply_en": "The pie chart above clearly illustrates how the purposes of travel are distributed. Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims at 33% and 15% respectively, while fostering independence comes last at 6%. Taken together, the three largest items make up 85%.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, travelling has moved from a luxury to an everyday necessity. Longer working hours have made people value the little free time they have. Online platforms and mobile payment have made travelling quicker and easier to arrange. Public spending on infrastructure has made travelling far more widely available.\n\nOn balance, this is a positive trend worth welcoming. Media should report on travelling honestly, without exaggerating its benefits or its risks. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat travelling as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了旅游目的的分布情况。欣赏风景遥遥领先，占37%；其后是缓解压力和其他目的，分别占33%和15%；而锻炼独立性位居最后，占6%。前三项加起来占85%。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，旅游已从奢侈品变成日常必需。工作时间变长，人们更看重仅有的空闲时间。线上平台和移动支付使旅游变得更快、更方便。基础设施方面的公共支出使旅游更加普及。\n\n总的来说，这是一个值得欢迎的积极趋势。媒体应如实报道旅游，既不夸大好处，也不夸大风险。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把旅游当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The pie chart above clearly illustrates how the purposes of travel are distributed. Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims at 33% and 15% respectively, while fostering independence comes last at 6%. Taken together, the three largest items make up 85%.\n\nThis phenomenon can be attributed to a combination of factors. First, as household incomes have grown, travelling has moved from a luxury to an everyday necessity. Equally important, longer working hours have made people value the little free time they have. Beyond that, online platforms and mobile payment have made travelling quicker and easier to arrange.\n\nOn balance, this is a positive trend worth welcoming. Media should report on travelling honestly, without exaggerating its benefits or its risks. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat travelling as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该饼状图清晰地展示了旅游目的的分布情况。欣赏风景遥遥领先，占37%；其后是缓解压力和其他目的，分别占33%和15%；而锻炼独立性位居最后，占6%。前三项加起来占85%。\n\n这一现象可归因于多种因素的综合作用。首先，随着家庭收入提高，旅游已从奢侈品变成日常必需。同样重要的是，工作时间变长，人们更看重仅有的空闲时间。除此之外，线上平台和移动支付使旅游变得更快、更方便。\n\n总的来说，这是一个值得欢迎的积极趋势。媒体应如实报道旅游，既不夸大好处，也不夸大风险。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把旅游当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "饼图、占比分布（5 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：appreciating the scenery 占 37%；relieving pressure 占 33%；other aims 占 15%；fostering independence 占 6%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4540,11 +4540,6 @@
       "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
       "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
       "src": "第二段 · 原因（机制句池） · 功能句3"
-     },
-     {
-      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
-      "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
-      "src": "第二段 · 原因（机制句池） · 功能句6"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",

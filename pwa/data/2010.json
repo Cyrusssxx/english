@@ -3609,8 +3609,8 @@
     "template": "该思路适用于感谢对方接待自己并邀请对方回访以回馈对方的接待。Dear ____, Thank you very much for receiving me, a delegate of 活动名称, during my visit to 地点. Your considerate and warm reception made me feel at home. You kindly provided detailed explanation of ____, assisting me to ____ and, more importantly, ____. I had a great time there, and I really appreciate everything you have done for me. Additionally, I highly welcome you to come to ____ so that I can reciprocate your hospitality. I promise you a fantastic visit, through which you may 陈述对方到来的益处. Look forward to your visit. Yours sincerely, Zhang Wei"
    },
    "apply": {
-    "apply_en": "Dear Michael,\nI hope this message finds you well. I am writing to express my sincere gratitude for your help.\n\nI would like to express my heartfelt thanks for the warm reception you gave me during my stay. What impressed me most was your patience and kindness, which made me feel at home. In particular, I would like to invite you to visit China, which will offer you a chance to see Chinese culture and daily life at first hand.\n\nI sincerely hope that you will make full use of this opportunity to experience the country for yourself.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Michael,\n希望你一切安好。我写信是为表达我对你帮助的诚挚感谢。\n\n我想对你在我逗留期间给予的热情接待表示由衷的感谢。最让我感动的是你的耐心与友善，让我感到宾至如归。具体而言，我诚挚邀请你来中国，这将为你带来近距离感受中国文化和日常生活的机会。\n\n我真诚希望你能充分利用这次机会亲自体验这个国家。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Michael,\nI hope this message finds you well. I am writing to express my profound gratitude for the generous assistance you have extended to me.\n\nTo begin with, I was deeply moved by the warm and gracious reception you accorded me during my stay. Furthermore, your unfailing patience and thoughtful guidance genuinely made me feel at home. In particular, I would be delighted to invite you to visit China, which will provide you with a chance to see Chinese culture and daily life at first hand.\n\nI sincerely hope that you will make full use of this opportunity to experience the country for yourself.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Michael,\n希望收到此信时你一切安好。非常感谢你给予我的慷慨帮助。\n\n我想衷心感谢你在我逗留期间给予的热情接待。此外，你始终如一的耐心与悉心指引，真正让我感到如在家般温暖。具体而言，我非常高兴邀请你来中国，这将为你带来近距离感受中国文化和日常生活的机会。\n\n我衷心希望你能充分利用这次机会亲自体验这个国家。\nYours sincerely,\nLi Ming",
     "tips": [
      "感谢类两句是固定搭配：先「表示由衷感谢」，再「说一件让你印象最深的事」（热情接待 + 耐心友善）。",
      "本题第二问是「欢迎对方适时访华」，所以再接一句<b>邀请类</b>句，三个槽位都换成该题信息。",
@@ -3646,32 +3646,32 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
-      "en": "I am writing to express my sincere gratitude for your help.",
-      "cn": "我写信是为表达我对你帮助的诚挚感谢。",
+      "en": "I am writing to express my profound gratitude for the generous assistance you have extended to me.",
+      "cn": "非常感谢你给予我的慷慨帮助。",
       "src": "第一段 · 第二句（表明来意） · 模板第6句"
      },
      {
-      "en": "I would like to express my heartfelt thanks for the warm reception you gave me during my stay.",
-      "cn": "我想对你在我逗留期间给予的热情接待表示由衷的感谢。",
+      "en": "To begin with, I was deeply moved by the warm and gracious reception you accorded me during my stay.",
+      "cn": "我想衷心感谢你在我逗留期间给予的热情接待。",
       "src": "第二段 · 感谢类 第二句（具体谢什么） · 模板第1句"
      },
      {
-      "en": "What impressed me most was your patience and kindness, which made me feel at home.",
-      "cn": "最让我感动的是你的耐心与友善，让我感到宾至如归。",
+      "en": "Furthermore, your unfailing patience and thoughtful guidance genuinely made me feel at home.",
+      "cn": "此外，你始终如一的耐心与悉心指引，真正让我感到如在家般温暖。",
       "src": "第二段 · 感谢类 第三句（说影响 / 感受） · 模板第1句"
      },
      {
-      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+      "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+      "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
       "src": "第二段 · 邀请类 第二句 · 模板第1句"
      },
      {
       "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
       "src": "第三段 · 收尾 / 客套 · 模板第5句"
      }
     ]
@@ -3832,8 +3832,8 @@
     "template": "该思路适用于分析反映两个对象不同增量的图表。As is demonstrated in the diagram, from 年份 to 年份, ____ grew sharply from 数据 to 数据 in 地点. Contrastingly, during the same period, there was only a moderate increase (from 数据 to 数据) in 地点. Different performance was due to different ____. In ____, the number of ____ would be ____. Thanks to ____, an increasing number of ____ resulting in the take-off of ____. （分析对象1增长快速的原因）However, in ____, there was ____, leaving little room for growth.（分析对象2增长缓慢的原因）Since ____, the number ____ there will continue to grow at a fast rate; nevertheless, the growth will slow down as ____.（预测对象1的增长情况）In comparison, ____, so the growth of ____ is expected to remain stagnant unless ____.（预测对象2的增长情况）"
    },
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates the changes in mobile-phone subscriptions from 2000 to 2008. During this period, subscriptions in developing countries rose sharply from 0.5 billion to 4 billion. By contrast, the figure for subscriptions in developed countries saw a modest increase, climbing from 0.7 billion to 1 billion over the same period. The two moved in the same direction, but not at the same pace.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, mobile phone use has moved from a luxury to an everyday necessity. Online platforms and mobile payment have made mobile phone use quicker and easier to arrange. People now judge mobile phone use by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Government can fund public facilities so that mobile phone use is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了2000年到2008年期间手机用户数的变化。在此期间，发展中国家的手机用户数从5亿急剧增至40亿。相比之下，发达国家的手机用户数仅略有增加，从7亿攀升至10亿。两者方向一致，但速度不同。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，手机已从奢侈品变成日常必需。线上平台和移动支付使手机变得更快、更方便。如今，人们评判手机的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。政府可以为公共设施提供资金，使手机不再局限于那些有支付能力的人。明确的规则和持续投入，比一次性活动更重要。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates the changes in mobile-phone subscriptions from 2000 to 2008. During this period, subscriptions in developing countries rose sharply from 0.5 billion to 4 billion. By contrast, the figure for subscriptions in developed countries saw a modest increase, climbing from 0.7 billion to 1 billion over the same period. The two moved in the same direction, but not at the same pace.\n\nThis phenomenon can be attributed to a combination of factors. First, as household incomes have grown, mobile phone use has moved from a luxury to an everyday necessity. Equally important, online platforms and mobile payment have made mobile phone use quicker and easier to arrange. Beyond that, people now judge mobile phone use by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了2000年到2008年期间手机用户数的变化。在此期间，发展中国家的手机用户数从5亿急剧增至40亿。相比之下，发达国家的手机用户数仅略有增加，从7亿攀升至10亿。两者方向一致，但速度不同。\n\n这一现象可归因于多种因素的综合作用。首先，随着家庭收入提高，手机已从奢侈品变成日常必需。同样重要的是，线上平台和移动支付使手机变得更快、更方便。除此之外，如今，人们评判手机的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。明确的规则和持续投入，比一次性活动更重要。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、都升，速度不同（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
      "数据要点：subscriptions in developing countries 0.5 billion → 4 billion；subscriptions in developed countries 0.7 billion → 1 billion。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -3960,11 +3960,6 @@
       "en": "On balance, this is a positive trend worth welcoming.",
       "cn": "总的来说，这是一个值得欢迎的积极趋势。",
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
-     },
-     {
-      "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-      "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
      },
      {
       "en": "Clear rules and steady funding matter more than one-off campaigns.",

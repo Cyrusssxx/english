@@ -4390,8 +4390,8 @@
     "template": "本模板由【优秀范文】提炼、改编而来，适用于接受讲座邀请等的回信。\nI have received your letter inviting me to 具体邀请内容. Thank you for your invitation. I am pleased to accept it.\nMy presentation would be focused on 讲座主题. The key points of my presentation would be as follows. To begin with, 要点一. Then, I will focus on 要点二. Furthermore, 要点三.\nThank you once again for your kind invitation. I am looking forward to meeting you soon."
    },
    "apply": {
-    "apply_en": "Dear Professor Williams,\nI hope this message finds you well. I am writing to you regarding the matter of your invitation to give a presentation on Chinese culture.\n\nTo be more specific, my presentation refers to four key aspects of Chinese culture, which is characterized by a balance between tradition and everyday life. To begin with, it covers traditional festivals, food and family life, enabling international students to get a clearer picture of how Chinese people actually live. Last but not least, your presence will make the presentation more meaningful and enable you to understand China a little better.\n\nI sincerely hope that you will make full use of this opportunity to enjoy the talk.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Professor Williams,\n希望你一切安好。我写信是关于你邀请我作一场关于中国文化的讲座这一事项。\n\n更具体而言，讲座内容是指中国文化的四个主要方面，其突出特点在于传统与日常生活的交融。首先，它涵盖传统节日、饮食与家庭生活，使留学生能够更清楚地看到中国人真实的生活。最后，你的到来将使这场讲座更加有意义，并使你得以对中国多一些了解。\n\n我真诚希望你能充分利用这次机会享受这场讲座。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Professor Williams,\nI hope this message finds you well. This letter concerns your invitation to give a presentation on Chinese culture, and I would appreciate your thoughts on it.\n\nTo be more specific, my presentation represents four key aspects of Chinese culture, a concept distinguished by its distinctive a balance between tradition and everyday life. To begin with, it encompasses traditional festivals, food and family life, thereby empowering international students to get a clearer picture of how Chinese people actually live with high efficiency. Finally, your distinguished presence will enrich the presentation and enable you to understand China a little better to the fullest.\n\nI sincerely hope that you will make full use of this opportunity to enjoy the talk.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Professor Williams,\n希望收到此信时你一切安好。这封信是关于你邀请我作一场关于中国文化的讲座的，希望听听你的看法。\n\n具体而言，讲座内容代表着中国文化的四个主要方面，这一事物以其独特的传统与日常生活的交融而著称。首先，它涵盖传统节日、饮食与家庭生活，使留学生能够更清楚地看到中国人真实的生活。最后，你的到来将使这场讲座更有意义，也能让你对中国多一些了解。\n\n我衷心希望你能充分利用这次机会享受这场讲座。\nYours sincerely,\nLi Ming",
     "tips": [
      "接受邀请不必写「我接受」三个字：来意句的 {{topic}} 填「这场邀请」本身，就完成了「接受」的功能。",
      "「介绍要点」用介绍类两句：先总述（几个方面 + 特点），再展开第一个要点（{{aspect1}}）。",
@@ -4463,32 +4463,32 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
-      "en": "I am writing to you regarding the matter of {{topic}}.",
-      "cn": "我写信是关于{{topic}}这一事项。",
+      "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+      "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
       "src": "第一段 · 第二句（表明来意） · 模板第1句"
      },
      {
-      "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
-      "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+      "en": "To be more specific, {{topic}} represents {{subject}}, a concept distinguished by its distinctive {{feature}}.",
+      "cn": "具体而言，{{topic}}代表着{{subject}}，这一事物以其独特的{{feature}}而著称。",
       "src": "第二段 · 介绍类 第二句 · 模板第1句"
      },
      {
-      "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+      "en": "To begin with, it encompasses {{aspect1}}, thereby empowering {{audience}} to {{gain1}} with high efficiency.",
       "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。",
       "src": "第二段 · 介绍类 第三句 · 模板第1句"
      },
      {
-      "en": "Last but not least, your presence will make {{topic}} more meaningful and enable you to {{benefit}}.",
-      "cn": "最后，你的到来将使{{topic}}更加有意义，并使你得以{{benefit}}。",
+      "en": "Finally, your distinguished presence will enrich {{topic}} and enable you to {{benefit}} to the fullest.",
+      "cn": "最后，你的到来将使{{topic}}更有意义，也能让你{{benefit}}。",
       "src": "第二段 · 邀请类 第四句 · 模板第1句"
      },
      {
       "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
       "src": "第三段 · 收尾 / 客套 · 模板第5句"
      }
     ]
@@ -4625,8 +4625,8 @@
     "template": "该思路适用于对正向变化趋势进行评价和分析，如\"发达国家手机订阅量发展\"、\"在线教育增长\"等。\nThe above chart illustrates that 描述图表变化.\nFrom my perspective, the above phenomenon will inevitably benefit both individuals and our society in the following aspects. To begin with, through 方式, people are entrusted with an opportunity to improve their 能力, thus living a more fulfilling life wherever they are. In addition, from a long-term vision, the change which is closely related to/caused by 原因, constitutes the engine of development, which indicates a promising future for 对象.\nHowever, while maintaining the development of 对象, we should also realize the risk of 风险, thus making joint efforts to 建议. Only by 总结性建议, can we yield a fruitful result of 成果.\n模板注释：第二段着眼变化带来的机遇，从\"个人\"与\"社会\"两个方面进行分析；第三段指出须规避风险，并给出具体建议。"
    },
    "apply": {
-    "apply_en": "The line chart above clearly illustrates the changes in the number of museums and museum visitors from 2013 to 2015. During this period, visitor numbers rose sharply from 640 million to 780 million. By contrast, the figure for museum numbers saw a modest increase, climbing from 4,165 to 4,692 over the same period.\n\nThis phenomenon can be attributed to a combination of factors. Public spending on infrastructure has made museum visiting far more widely available. Schools now treat museum visiting as part of the routine rather than an optional extra. Old traditions survive only when people find new ways to pass them on. People now judge museum visiting by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Government can fund public facilities so that museum visiting is not limited to those who can pay. Documentaries and short videos can show how museum visiting works in real life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该折线图清晰地展示了2013年到2015年期间博物馆数量与参观人数的变化。在此期间，参观人数从6.4亿急剧增至7.8亿。相比之下，博物馆数量仅略有增加，从4165家攀升至4692家。\n\n这一现象可归因于多种因素的综合作用。基础设施方面的公共支出使参观博物馆更加普及。学校现在将参观博物馆视为常规活动的一部分，而非可选的附加内容。只有当人们找到新的方式来传承旧传统时，它们才能得以延续。如今，人们评判参观博物馆的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。政府可以为公共设施提供资金，使参观博物馆不再局限于那些有支付能力的人。纪录片和短视频可以展示参观博物馆在现实生活中的运作方式。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The line chart above clearly illustrates the changes in the number of museums and museum visitors from 2013 to 2015. During this period, visitor numbers rose sharply from 640 million to 780 million. By contrast, the figure for museum numbers saw a modest increase, climbing from 4,165 to 4,692 over the same period.\n\nThis phenomenon can be attributed to a combination of factors. First, public spending on infrastructure has made museum visiting far more widely available. Equally important, old traditions survive only when people find new ways to pass them on. Beyond that, people now judge museum visiting by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Government can fund public facilities so that museum visiting is not limited to those who can pay. Documentaries and short videos can show how museum visiting works in real life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该折线图清晰地展示了2013年到2015年期间博物馆数量与参观人数的变化。在此期间，参观人数从6.4亿急剧增至7.8亿。相比之下，博物馆数量仅略有增加，从4165家攀升至4692家。\n\n这一现象可归因于多种因素的综合作用。首先，基础设施方面的公共支出使参观博物馆更加普及。同样重要的是，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。除此之外，如今，人们评判参观博物馆的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。政府可以为公共设施提供资金，使参观博物馆不再局限于那些有支付能力的人。纪录片和短视频可以展示参观博物馆在现实生活中的运作方式。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "折线图、都升（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
      "数据要点：visitor numbers 640 million → 780 million；museum numbers 4,165 → 4,692。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4733,11 +4733,6 @@
       "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
       "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
       "src": "第二段 · 原因（机制句池） · 功能句6"
-     },
-     {
-      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-      "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
-      "src": "第二段 · 原因（机制句池） · 功能句10"
      },
      {
       "en": "Old traditions survive only when people find new ways to pass them on.",

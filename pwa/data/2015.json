@@ -4372,8 +4372,8 @@
     "template": "该思路适用于招募职员或者志愿者之类的服务者。We are looking for ____ for ____. ____ is organized to facilitate ____ and more importantly ____ through activities including but not limited to ____. ____ are required to help ____ and cope with daily affairs during ____. Ideal candidates should be ____. Having relevant experience is preferred. Anyone interested please contact us by ____ or reach us at 12345678."
    },
    "apply": {
-    "apply_en": "Volunteers Needed for the Summer Camp\nIn order to further promote the summer camp for high school students, our school has decided to issue the following notice.\n\nFirst, July 15 has been set as the official time for the summer camp, and all volunteers are required to attend on time. Furthermore, the main contents of the summer camp include academic workshops, team-building games and outdoor field trips, forming a clear structure. Last but not least, all volunteers are required to sign up at the student union office before July 10, so that the recruitment can proceed in an orderly way.\n\nPlease read this notice carefully and pass it on to those concerned.",
-    "apply_cn": "Volunteers Needed for the Summer Camp\n为了进一步推进面向高中生的夏令营，学校决定发布如下通知。\n\n首先，7月15日被确定为夏令营的正式时间，届时要求全体志愿者准时参加。此外，夏令营的主要内容包括学业辅导、团队拓展游戏和户外考察，整体结构清晰明了。最后，要求全体志愿者于7月10日前到学生会办公室报名，以确保本次招募有序开展。\n\n请认真阅读本通知，并转告相关人员。",
+    "apply_en": "Volunteers Needed for the Summer Camp\nIn order to further promote the summer camp for high school students, our school has decided to issue the following notice.\n\nFirst, July 15 has been designated as the official schedule for the summer camp, and all volunteers are expected to be present punctually. Furthermore, the core agenda of the summer camp will center around academic workshops, team-building games and outdoor field trips, all of which align closely with the overarching theme. Finally, all volunteers are requested to strictly abide by sign up at the student union office before July 10, thereby ensuring that the recruitment proceeds in an orderly way.\n\nPlease read this notice carefully and pass it on to those concerned.",
+    "apply_cn": "Volunteers Needed for the Summer Camp\n为进一步推动面向高中生的夏令营，学校决定发布以下通知。\n\n首先，7月15日定为夏令营的正式时间，届时全体志愿者须准时参加。此外，夏令营的核心议程将围绕学业辅导、团队拓展游戏和户外考察展开，均与总体主题高度契合。最后，全体志愿者须于7月10日前到学生会办公室报名，以确保本次招募有序进行。\n\n请仔细阅读本通知并转告相关人员。",
     "tips": [
      "通知与书信的差别就在这里：**标题顶格代替称呼**，结尾不写落款（题目明确要求不写自己的名字和学校名）。",
      "「介绍活动」用通知类第二、三句：{{time}} 给时间，{{content1~3}} 三项并列列出活动内容——三项都填、不要漏。",
@@ -4439,27 +4439,27 @@
     "key_phrases": [
      {
       "en": "In order to further promote {{topic}}, our school has decided to issue the following notice.",
-      "cn": "为了进一步推进{{topic}}，学校决定发布如下通知。",
+      "cn": "为进一步推动{{topic}}，学校决定发布以下通知。",
       "src": "第一段 · 第二句（表明来意） · 模板第3句"
      },
      {
-      "en": "First, {{time}} has been set as the official time for {{topic}}, and all {{audience}} are required to attend on time.",
-      "cn": "首先，{{time}}被确定为{{topic}}的正式时间，届时要求全体{{audience}}准时参加。",
+      "en": "First, {{time}} has been designated as the official schedule for {{topic}}, and all {{audience}} are expected to be present punctually.",
+      "cn": "首先，{{time}}定为{{topic}}的正式时间，届时全体{{audience}}须准时参加。",
       "src": "第二段 · 通知类 第二句 · 模板第1句"
      },
      {
-      "en": "Furthermore, the main contents of {{topic}} include {{content1}}, {{content2}} and {{content3}}, forming a clear structure.",
-      "cn": "此外，{{topic}}的主要内容包括{{content1}}、{{content2}}和{{content3}}，整体结构清晰明了。",
+      "en": "Furthermore, the core agenda of {{topic}} will center around {{content1}}, {{content2}} and {{content3}}, all of which align closely with the overarching theme.",
+      "cn": "此外，{{topic}}的核心议程将围绕{{content1}}、{{content2}}和{{content3}}展开，均与总体主题高度契合。",
       "src": "第二段 · 通知类 第三句 · 模板第1句"
      },
      {
-      "en": "Last but not least, all {{audience}} are required to {{requirement}}, so that {{topic}} can proceed in an orderly way.",
-      "cn": "最后，要求全体{{audience}}{{requirement}}，以确保{{topic}}有序开展。",
+      "en": "Finally, all {{audience}} are requested to strictly abide by {{requirement}}, thereby ensuring that {{topic}} proceeds in an orderly way.",
+      "cn": "最后，全体{{audience}}须{{requirement}}，以确保{{topic}}有序进行。",
       "src": "第二段 · 通知类 第四句 · 模板第1句"
      },
      {
       "en": "Please read this notice carefully and pass it on to those concerned.",
-      "cn": "请认真阅读本通知，并转告相关人员。",
+      "cn": "请仔细阅读本通知并转告相关人员。",
       "src": "第三段 · 收尾 / 客套 · 模板第6句"
      }
     ]
@@ -4669,8 +4669,8 @@
     "template": "该思路适用于分析人们的开支情况，论述开支的意义以及过度开支的后果。The chart reflects ____ spending types and their respective proportions. ____ money is mainly used for ____ purposes（用同位语解释说明purposes）: ____. They account for ____% of total spending. Most spending is used to ____. This finding is not strange, since ____. ____ is beneficial and necessary for a person's fulfillment and investing on ____ is sweet and happy. However, we should not go to extremes. In China, there are many people ____. They use handsome money to blindly pursue ____. Such intention causes huge waste of money and imposes heavy economic burden on people involved. The ____ gotten by squandering money is transient and can only be a topic for gossip soon forgotten by others. Therefore, we should think rationally before opening our purses. We should remember it is ____ that is the main concern."
    },
    "apply": {
-    "apply_en": "The pie chart above clearly illustrates how Spring Festival spending is distributed. Gifts for family and friends take the lead, accounting for 40%, followed by dinners with relatives and transportation at 20% and 20% respectively, while other spending comes last at 20%. Taken together, the three largest items make up 80%.\n\nThis phenomenon can be attributed to a combination of factors. As household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. People now judge New Year gifts by what it does for them rather than by what others think. Online platforms and mobile payment have made New Year gifts quicker and easier to arrange. Old traditions survive only when people find new ways to pass them on.\n\nOn balance, this is a positive trend worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象可归因于多种因素的综合作用。随着家庭收入提高，新年礼物已从奢侈品变成日常必需。如今，人们评判新年礼物的标准是它能为自己带来什么，而非他人的看法。线上平台和移动支付使新年礼物变得更快、更方便。只有当人们找到新的方式来传承旧传统时，它们才能得以延续。\n\n总的来说，这是一个值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把节日花销当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The pie chart above clearly illustrates how Spring Festival spending is distributed. Gifts for family and friends take the lead, accounting for 40%, followed by dinners with relatives and transportation at 20% and 20% respectively, while other spending comes last at 20%. Taken together, the three largest items make up 80%.\n\nThis phenomenon can be attributed to a combination of factors. First, as household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. Equally important, online platforms and mobile payment have made New Year gifts quicker and easier to arrange. Beyond that, old traditions survive only when people find new ways to pass them on.\n\nOn balance, this is a positive trend worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象可归因于多种因素的综合作用。首先，随着家庭收入提高，新年礼物已从奢侈品变成日常必需。同样重要的是，线上平台和移动支付使新年礼物变得更快、更方便。除此之外，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。\n\n总的来说，这是一个值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把节日花销当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：gifts for family and friends 占 40%；dinners with relatives 占 20%；transportation 占 20%；other spending 占 20%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4783,11 +4783,6 @@
       "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
       "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
       "src": "第二段 · 原因（机制句池） · 功能句1"
-     },
-     {
-      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-      "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
-      "src": "第二段 · 原因（机制句池） · 功能句4"
      },
      {
       "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",

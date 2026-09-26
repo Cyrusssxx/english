@@ -4592,8 +4592,8 @@
     "template": "本模板由【优秀范文】提炼、改编而来，适用于典礼、宴会、派对等活动的邀请信。Dear international students, There will be a/an 活动名称 at 活动地点 on 活动时间. You are cordially invited to this occasion. The event features a variety of 主打内容, ranging from 举例说明 to 举例说明. If interested, you are also encouraged to 期待对方做的事. This will definitely be a highlight of the event. Afterwards, all participants can 按时间顺序进行的下一步内容. Don't miss this golden opportunity to enjoy a fun-filled day and create memorable moments together! We keenly look forward to your participation. Yours sincerely, Li Ming"
    },
    "apply": {
-    "apply_en": "Dear international students,\nI hope this message finds you well. In this letter, I would like to introduce our campus food festival to you as an excellent option.\n\nTo begin with, the food festival will take place at the Main Dining Hall, providing a fixed venue for all international students. In particular, I would like to invite you to join us in the food festival, which will offer you a taste of dishes from across China. In addition, by trying the local specialties during the festival, you will be able to understand Chinese food culture first-hand, which is of great benefit to you.\n\nYou are kindly requested to come and join us so that the festival can be implemented more effectively.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear international students,\n希望你一切安好。在这封信中，我想向你介绍我们的校园美食节，把它作为一个极佳的选择推荐给你。\n\n首先，美食节将在学校主食堂举行，为全体留学生提供固定场所。具体而言，我诚挚邀请你参加我们这次美食节，这将为你带来品尝中国各地美食的机会。另外，在美食节期间品尝当地特色菜，将使你能够亲身理解中国饮食文化，这对你大有裨益。\n\n请你前来参加，以便美食节能够得到更为有效的落实。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear international students,\nI hope this message finds you well. In this letter, I would like to introduce our campus food festival to you as an excellent option.\n\nTo begin with, the food festival will take place at the Main Dining Hall, which is convenient for all international students. In particular, I would be delighted to invite you to join us in the food festival, which will provide you with a taste of dishes from across China. In addition, by trying the local specialties during the festival, you will be able to understand Chinese food culture first-hand, which will prove immensely beneficial to you.\n\nYou are kindly requested to come and join us so that the festival can be properly arranged.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear international students,\n希望收到此信时你一切安好。在这封信里，我想把我们的校园美食节作为一个很好的选择介绍给你。\n\n首先，美食节将在学校主食堂举行，全体留学生前往都很方便。具体而言，我非常高兴邀请你参加我们这次美食节，这将为你带来品尝中国各地美食的机会。此外，在美食节期间品尝当地特色菜，你将能够亲身理解中国饮食文化，这会对你大有裨益。\n\n请你前来参加，以便美食节能够得到妥善安排。\nYours sincerely,\nLi Ming",
     "tips": [
      "本题两问 = 「介绍美食节 + 邀请参加」：先点明活动地点，再发邀请，最后一句讲参加能获得什么。",
      "两处 {{gain}} 不要重复：第一处说「尝到什么」，第二处说「理解到什么」，形成递进。",
@@ -4671,32 +4671,32 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
       "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-      "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+      "cn": "在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。",
       "src": "第一段 · 第二句（表明来意） · 模板第5句"
      },
      {
-      "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-      "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+      "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+      "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
       "src": "第二段 · 通知类 第二句 · 模板第2句"
      },
      {
-      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+      "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+      "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
       "src": "第二段 · 邀请类 第二句 · 模板第1句"
      },
      {
-      "en": "In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which is of great benefit to you.",
-      "cn": "另外，在{{topic}}期间{{task}}，将使你能够{{gain}}，这对你大有裨益。",
+      "en": "In addition, by {{task}} during {{topic}}, you will be able to {{gain}}, which will prove immensely beneficial to you.",
+      "cn": "此外，在{{topic}}期间{{task}}，你将能够{{gain}}，这会对你大有裨益。",
       "src": "第二段 · 邀请类 第三句 · 模板第1句"
      },
      {
-      "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-      "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+      "en": "You are kindly requested to {{expect}} so that {{topic}} can be properly arranged.",
+      "cn": "请你{{expect}}，以便{{topic}}能够得到妥善安排。",
       "src": "第三段 · 收尾 / 客套 · 模板第2句"
      }
     ]
@@ -4821,8 +4821,8 @@
     "template": "本模板适用于“双因素历时同向持续增长”的柱状图，主题多反映某市场/行业的积极发展态势。模板注释：该模板第一段①句概括图表的总体趋势，②③句列举具体/显著的数据。第二段①句承上启下引出原因分析，②③④句分别从宏观经济、政府政策、现实情形三方面阐述趋势背后的原因。第三段欲扬先抑，①句先承认当前的局限性，②句再积极预测未来的发展。I ① As is demonstrated in the bar chart, the market for ________ is generally entering a phase of dramatic/substantial/steady growth. ② Specifically, 类别1 surpassed/exceeded 最高值 in 年份, about 涨幅 more than ________ year(s) ago. ③ It is worth noting that a considerable rise in 类别2 occurred from 年份, and since then this emerging/burgeoning industry gained/gathered momentum. II ① Several factors have contributed to this sharp increase. ② For one thing, the rapid economic growth brings about higher disposable income, allowing people to ________. ③ For another, the government has released a series of preferential policies to promote ________, which will undoubtedly stimulate ________. ④ In addition, ________ has/have pushed some consumers to focus their attention on ________. III ① Admittedly, this business still has a long way to go, as ________ is/are yet to be improved/perfected. ② But its popularization will certainly be as irresistible as shown in the chart."
    },
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates the changes in express delivery volume from 2018 to 2020. During this period, the rural figure rose sharply from 12 billion pieces to 30 billion pieces. By contrast, the figure for the national total saw a modest increase, climbing from 51 billion pieces to 83 billion pieces over the same period. The gap between the two widened over the period.\n\nThis phenomenon can be attributed to a combination of factors. Technology has cut the cost of online shopping and put it within reach of far more people. Online platforms and mobile payment have made online shopping quicker and easier to arrange. Cities have absorbed millions of new residents, and demand for online shopping has grown with them.\n\nOn balance, this is a positive trend worth welcoming. Government can fund public facilities so that online shopping is not limited to those who can pay. Companies can make online shopping cheaper and easier to use, so that it reaches more people. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了2018年到2020年期间快递业务量的变化。在此期间，农村快递量从120亿件急剧增至300亿件。相比之下，全国总量仅略有增加，从510亿件攀升至830亿件。两者的差距在这一时期拉大了。\n\n这一现象可归因于多种因素的综合作用。技术进步压低了网购的成本，让更多人能够负担得起。线上平台和移动支付使网购变得更快、更方便。随着城市吸纳了大量新居民，网购的需求也随之增长。\n\n总的来说，这是一个值得欢迎的积极趋势。政府可以为公共设施提供资金，使网购不再局限于那些有支付能力的人。企业可以让网购更低价、更便捷，从而让更多人能够使用。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates the changes in express delivery volume from 2018 to 2020. During this period, the rural figure rose sharply from 12 billion pieces to 30 billion pieces. By contrast, the figure for the national total saw a modest increase, climbing from 51 billion pieces to 83 billion pieces over the same period. The gap between the two widened over the period.\n\nThis phenomenon can be attributed to a combination of factors. First, technology has cut the cost of online shopping and put it within reach of far more people. Equally important, online platforms and mobile payment have made online shopping quicker and easier to arrange. Beyond that, cities have absorbed millions of new residents, and demand for online shopping has grown with them.\n\nOn balance, this is a positive trend worth welcoming. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了2018年到2020年期间快递业务量的变化。在此期间，农村快递量从120亿件急剧增至300亿件。相比之下，全国总量仅略有增加，从510亿件攀升至830亿件。两者的差距在这一时期拉大了。\n\n这一现象可归因于多种因素的综合作用。首先，技术进步压低了网购的成本，让更多人能够负担得起。同样重要的是，线上平台和移动支付使网购变得更快、更方便。除此之外，随着城市吸纳了大量新居民，网购的需求也随之增长。\n\n总的来说，这是一个值得欢迎的积极趋势。明确的规则和持续投入，比一次性活动更重要。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、都升，幅度不同（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
      "数据要点：the rural figure 12 billion pieces → 30 billion pieces；the national total 51 billion pieces → 83 billion pieces。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4951,14 +4951,9 @@
       "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
      },
      {
-      "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-      "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
-     },
-     {
-      "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
-      "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
+      "en": "Clear rules and steady funding matter more than one-off campaigns.",
+      "cn": "明确的规则和持续投入，比一次性活动更重要。",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
      },
      {
       "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",

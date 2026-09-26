@@ -3793,8 +3793,8 @@
    "directions": "Suppose you and Jack are going to do a survey on the protection of old houses in an ancient town. Write him an email to 1) put forward your plan, and 2) ask for his opinion. Write your answer in about 100 words on the ANSWER SHEET. Do not use your own name in your email; use “Li Ming,9 instead. (10 points)",
    "directions_cn": "假设你和杰克打算在一座古镇开展一项关于老房子保护的调查。给他写一封电子邮件，1) 提出你的计划，并2) 征求他的意见。你应在答题卡上写约100词的答案。不要在邮件中使用你自己的名字，用\"Li Ming\"代替。（10分）",
    "apply": {
-    "apply_en": "Dear Jack,\nI hope this message finds you well. The purpose of this letter is to discuss our survey plan on the protection of old houses with you in detail.\n\nFrom a practical perspective, the survey mainly involves interviews with local residents and on-site visits, aiming to find out how these old houses can be better protected. More specifically, I am not sure whether my plan is practical, so I would value your opinion. Since you are familiar with the situation there, your advice would be of great value to me.\n\nI would appreciate it very much if you could tell me what you think of the plan by next Monday.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Jack,\n希望你一切安好。这封信的目的是想与你详细讨论我们关于老宅保护的调查计划。\n\n从实践角度看，这次调查主要涵盖走访当地居民和实地勘察，其根本目标在于弄清如何更好地保护这些老宅。更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。由于你对那边的情况很熟悉，你的建议对我会非常有价值。\n\n如果你能在下周一前告诉我你对这个计划的看法，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Jack,\nI hope this message finds you well. I would appreciate the chance to discuss our survey plan on the protection of old houses with you in more detail.\n\nFrom a practical perspective, the survey mainly involves interviews with local residents and on-site visits, aiming to find out how these old houses can be better protected. More specifically, I am not sure whether my plan is practical, so I would value your opinion. Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me.\n\nI would appreciate it very much if you could tell me what you think of the plan by next Monday.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Jack,\n希望收到此信时你一切安好。希望能有机会和你更详细地谈谈我们关于老宅保护的调查计划。\n\n从实用的角度看，这次调查主要包括走访当地居民和实地勘察，目的在于弄清如何更好地保护这些老宅。另外，我不确定自己的计划是否可行，很想听听你的意见。鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。\n\n如果你能在下周一前告诉我你对这个计划的看法，我将不胜感激。\nYours sincerely,\nLi Ming",
     "tips": [
      "「提出计划」用介绍类：{{content}} 填具体做法（走访 + 实地勘察），{{purpose}} 填目的，比只写 plan 有内容。",
      "「征求意见」用询问类两句（想问什么 + 为什么问你）；本题两人是搭档，问句可以直白一些。",
@@ -3842,27 +3842,27 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
-      "en": "The purpose of this letter is to discuss {{topic}} with you in detail.",
-      "cn": "这封信的目的是想与你详细讨论{{topic}}。",
+      "en": "I would appreciate the chance to discuss {{topic}} with you in more detail.",
+      "cn": "希望能有机会和你更详细地谈谈{{topic}}。",
       "src": "第一段 · 第二句（表明来意） · 模板第9句"
      },
      {
       "en": "From a practical perspective, {{topic}} mainly involves {{content}}, aiming to {{purpose}}.",
-      "cn": "从实践角度看，{{topic}}主要涵盖{{content}}，其根本目标在于{{purpose}}。",
+      "cn": "从实用的角度看，{{topic}}主要包括{{content}}，目的在于{{purpose}}。",
       "src": "第二段 · 介绍类 第二句 · 模板第2句"
      },
      {
       "en": "More specifically, I am not sure whether my plan is practical, so I would value your opinion.",
-      "cn": "更具体地说，我不确定我的计划是否可行，所以很想听听你的意见。",
+      "cn": "另外，我不确定自己的计划是否可行，很想听听你的意见。",
       "src": "第二段 · 询问类 第二句（想问什么） · 模板第2句"
      },
      {
-      "en": "Since you are familiar with the situation there, your advice would be of great value to me.",
-      "cn": "由于你对那边的情况很熟悉，你的建议对我会非常有价值。",
+      "en": "Given your rich experience and profound familiarity with this field, your guidance would prove indispensable to me.",
+      "cn": "鉴于你对当地情况很熟悉，你的建议对我将十分宝贵。",
       "src": "第二段 · 询问类 第三句（说明为什么问你） · 模板第1句"
      },
      {
@@ -3886,8 +3886,8 @@
    "directions": "Write an essay based on the chart below. In your essay, you should 1) describe and interpret the chart, and 2) give your comments. Write your answer in about 150 words on the ANSWER SHEET. (15 points)",
    "directions_cn": "根据下面的图表写一篇短文。在你的短文中，你应该1) 描述并解读图表，并2) 发表你的评论。你应在答题卡上写约150词的答案。（15分）",
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates how labour practice course gains are distributed. Gaining relevant knowledge takes the lead, accounting for 91.3%, followed by improving practical ability and obtaining cheerful moods at 84.8% and 54.4% respectively, while enhancing cooperative ability comes last at 32.6%. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Schools now treat labour practice courses as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge labour practice courses by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a positive trend worth welcoming. Schools can build practical training into daily routines instead of treating it as an extra. What matters most is whether families and schools treat practical training as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了劳动实践课的收获的分布情况。获得相关知识遥遥领先，占91.3%；其后是提高实践能力和获得愉悦心情，分别占84.8%和54.4%；而增强合作能力位居最后，占32.6%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。学校现在将劳动实践课视为常规活动的一部分，而非可选的附加内容。如今用人单位既看重成绩，也看重经验。如今，人们评判劳动实践课的标准是它能为自己带来什么，而非他人的看法。如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。\n\n总的来说，这是一个值得欢迎的积极趋势。学校可以把实践训练融入日常安排，而非当作额外的任务。最关键的是，家庭和学校能否把实践训练当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates how labour practice course gains are distributed. Gaining relevant knowledge takes the lead, accounting for 91.3%, followed by improving practical ability and obtaining cheerful moods at 84.8% and 54.4% respectively, while enhancing cooperative ability comes last at 32.6%. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. First, schools now treat labour practice courses as part of the routine rather than an optional extra. Equally important, employers now look for experience as much as for grades. Beyond that, people now judge labour practice courses by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Schools can build practical training into daily routines instead of treating it as an extra. What matters most is whether families and schools treat practical training as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了劳动实践课的收获的分布情况。获得相关知识遥遥领先，占91.3%；其后是提高实践能力和获得愉悦心情，分别占84.8%和54.4%；而增强合作能力位居最后，占32.6%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。首先，学校现在将劳动实践课视为常规活动的一部分，而非可选的附加内容。同样重要的是，如今用人单位既看重成绩，也看重经验。除此之外，如今，人们评判劳动实践课的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。学校可以把实践训练融入日常安排，而非当作额外的任务。最关键的是，家庭和学校能否把实践训练当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
      "数据要点：gaining relevant knowledge 占 91.3%；improving practical ability 占 84.8%；obtaining cheerful moods 占 54.4%；enhancing cooperative ability 占 32.6%。数值与图逐个核对，别漏最大值。",
@@ -4004,11 +4004,6 @@
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
       "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
       "src": "第二段 · 原因（机制句池） · 功能句4"
-     },
-     {
-      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
-      "src": "第二段 · 原因（机制句池） · 功能句14"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",

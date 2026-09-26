@@ -3848,8 +3848,8 @@
     "template": "该思路适用于邀请对方参加某项活动。Dear ____, It is a great honor to inform you that ____ is scheduled for 日期 from ____ a.m. to ____ p.m. ____ is going to be held in 地点 for the sake of ____.（具体介绍目的）Your participation is necessary to achieve this aim. Hopefully, you can come and ____. You will happily find ____（暗示活动能给参与者带来的利益）. Yours sincerely, Li Ming"
    },
    "apply": {
-    "apply_en": "Dear classmates,\nI hope this message finds you well. I am writing to you regarding the matter of the charity sale for children in need.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the charity sale will take place at the school auditorium, providing a fixed venue for all classmates. In particular, I would like to invite you to join us in the charity sale, which will offer you a chance to do something meaningful for children in need.\n\nYou are kindly requested to let me know if you can come so that all the money raised can be implemented more effectively.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear classmates,\n希望你一切安好。我写信是关于为困境儿童举办的慈善义卖这一事项。\n\n至于本次活动的具体安排，主要如下。首先，本次义卖将在学校礼堂举行，为全体同学提供固定场所。具体而言，我诚挚邀请你参加我们这次义卖，这将为你带来为困境儿童做点实事的机会。\n\n请你告诉我你能否参加，以便所筹得的善款能够得到更为有效的落实。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear classmates,\nI hope this message finds you well. This letter concerns the charity sale for children in need, and I would appreciate your thoughts on it.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the charity sale will take place at the school auditorium, which is convenient for all classmates. In particular, I would be delighted to invite you to join us in the charity sale, which will provide you with a chance to do something meaningful for children in need.\n\nYou are kindly requested to let me know if you can come so that all the money raised can be properly arranged.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear classmates,\n希望收到此信时你一切安好。这封信是关于为困境儿童举办的慈善义卖的，希望听听你的看法。\n\n至于本次活动，具体安排如下。首先，本次义卖将在学校礼堂举行，全体同学前往都很方便。具体而言，我非常高兴邀请你参加我们这次义卖，这将为你带来为困境儿童做点实事的机会。\n\n请你告诉我你能否参加，以便所筹得的善款能够得到妥善安排。\nYours sincerely,\nLi Ming",
     "tips": [
      "本题两问 = 「告知细节」+「鼓励参加」：第二段先用<b>通知类</b>交代时间地点，再用<b>邀请类</b>拉人。",
      "{{place}} 一定要填具体场地（学校礼堂 / 操场），这是「细节」的评分点。",
@@ -3915,32 +3915,32 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
-      "en": "I am writing to you regarding the matter of {{topic}}.",
-      "cn": "我写信是关于{{topic}}这一事项。",
+      "en": "This letter concerns {{topic}}, and I would appreciate your thoughts on it.",
+      "cn": "这封信是关于{{topic}}的，希望听听你的看法。",
       "src": "第一段 · 第二句（表明来意） · 模板第1句"
      },
      {
       "en": "As for the planned event, the main arrangements are as follows.",
-      "cn": "至于本次活动的具体安排，主要如下。",
+      "cn": "至于本次活动，具体安排如下。",
       "src": "第二段 · 通用首句（引出下文） · 模板第3句"
      },
      {
-      "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-      "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+      "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+      "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
       "src": "第二段 · 通知类 第二句 · 模板第2句"
      },
      {
-      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+      "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+      "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
       "src": "第二段 · 邀请类 第二句 · 模板第1句"
      },
      {
-      "en": "You are kindly requested to {{expect}} so that {{topic}} can be implemented more effectively.",
-      "cn": "请你{{expect}}，以便{{topic}}能够得到更为有效的落实。",
+      "en": "You are kindly requested to {{expect}} so that {{topic}} can be properly arranged.",
+      "cn": "请你{{expect}}，以便{{topic}}能够得到妥善安排。",
       "src": "第三段 · 收尾 / 客套 · 模板第2句"
      }
     ]
@@ -4135,8 +4135,8 @@
     "template": "该思路适用于描写和分析反映百分比上升的图表。The rate of ____ rises annually from ____% in 年份 to ____% in 年份. The biggest increase occurs in 年份, with the rate ____% higher than a year ago. ____ will become increasingly willing to ____, mainly because of the growing wish to ____. It is reasonable and wise to ____, especially after ____. Another motive is obviously ____. As ____, there will be ____, undoubtedly pushing ____ to ____. It can indeed be beneficial for ____ to ____. However, the risk of ____ should be also considered. To benefit from ____ without ____, ____ should ____."
    },
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates the changes in the proportion of college students taking part-time jobs from the first year to the final year. During this period, it rose steadily from 67.77% to 88.24%, without any noticeable fall. Growth was slow at first and then sped up.\n\nThis phenomenon can be attributed to a combination of factors. Schools now treat part-time work as part of the routine rather than an optional extra. Employers now look for experience as much as for grades. People now judge part-time work by what it does for them rather than by what others think. Young people change jobs far more often than their parents did, so loyalty works differently.\n\nOn balance, this is a positive trend worth welcoming. Schools can build part-time work into daily routines instead of treating it as an extra. Families matter most: children copy what adults do far more than what they are told. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了大一到大四期间大学生兼职比例的变化。在此期间，它从67.77%稳步升至88.24%，始终没有明显回落。增长起初缓慢，后来明显加快。\n\n这一现象可归因于多种因素的综合作用。学校现在将兼职视为常规活动的一部分，而非可选的附加内容。如今用人单位既看重成绩，也看重经验。如今，人们评判兼职的标准是它能为自己带来什么，而非他人的看法。如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。\n\n总的来说，这是一个值得欢迎的积极趋势。学校可以把兼职融入日常安排，而非当作额外的任务。家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates the changes in the proportion of college students taking part-time jobs from the first year to the final year. During this period, it rose steadily from 67.77% to 88.24%, without any noticeable fall. Growth was slow at first and then sped up.\n\nThis phenomenon can be attributed to a combination of factors. First, schools now treat part-time work as part of the routine rather than an optional extra. Equally important, employers now look for experience as much as for grades. Beyond that, people now judge part-time work by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Schools can build part-time work into daily routines instead of treating it as an extra. Families matter most: children copy what adults do far more than what they are told. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了大一到大四期间大学生兼职比例的变化。在此期间，它从67.77%稳步升至88.24%，始终没有明显回落。增长起初缓慢，后来明显加快。\n\n这一现象可归因于多种因素的综合作用。首先，学校现在将兼职视为常规活动的一部分，而非可选的附加内容。同样重要的是，如今用人单位既看重成绩，也看重经验。除此之外，如今，人们评判兼职的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。学校可以把兼职融入日常安排，而非当作额外的任务。家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、单值逐年上升（1 个事物 / 动态）→ 用 **① 一条线在走 骨架**（适用 2013 · 2023）。",
      "数据要点：the proportion of college students taking part-time jobs 67.77% → 88.24%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4247,11 +4247,6 @@
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
       "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
       "src": "第二段 · 原因（机制句池） · 功能句4"
-     },
-     {
-      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
-      "src": "第二段 · 原因（机制句池） · 功能句14"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",

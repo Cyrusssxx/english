@@ -3721,8 +3721,8 @@
     "template": "该思路适用于以长辈或前辈的身份恭喜对方取得一定成绩从而人生进入新阶段。Dear ____, I must congratulate you for ____. This success means that you have acquired extraordinary capacity to ____ and, if this capacity can be further developed and purposefully used in ____, you will become competent to ____. However, I must also warn you that the approaching ____ is different to your previous ____. You should make important adjustment for it; that is, you should mentally and practically prepare to ____. I wish you could ____, and gradually grow into an adult/a person ____. Yours, Zhang Wei"
    },
    "apply": {
-    "apply_en": "Dear Cousin,\nI hope this message finds you well. Please allow me to extend my warmest congratulations to you.\n\nTo be more specific, your remarkable achievement in the university entrance examination clearly shows your solid academic ability and years of steady effort. To a large extent, this success comes from your willingness to keep working for what you want, especially when dealing with the long preparation for the exam. In particular, you are advised to plan your studies around your interests in university life so that you can gradually improve your sense of direction at university.\n\nTo conclude, all the measures mentioned above are designed to help you settle into university life more smoothly, and your participation is of great importance.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Cousin,\n希望你一切安好。请允许我向你致以最诚挚的祝贺。\n\n更具体地说，你在高考方面的优异表现，清楚地展现了你的扎实的学力和多年稳扎稳打的付出。在很大程度上，这一成功源于你愿意在备考那漫长的过程上为自己想要的东西持续努力。具体而言，建议你围绕你在大学生活中的兴趣规划学习，以便逐步提升你在大学里的方向感。\n\n总而言之，上述各项措施均是为帮助你更顺利地适应大学生活而设，你的参与至关重要。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Cousin,\nI hope this message finds you well. Please allow me to extend my warmest congratulations to you.\n\nTo be more specific, your outstanding achievement in the university entrance examination bears clear testimony to your exceptional solid academic ability and years of steady effort. To a large extent, this well-earned triumph stems from the sustained dedication and perseverance you have exhibited in the long preparation for the exam. In particular, you are advised to plan your studies around your interests in university life so that you can gradually improve your sense of direction at university.\n\nTo conclude, all the measures mentioned above are designed to help you settle into university life more smoothly, and your participation is of great importance.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Cousin,\n希望收到此信时你一切安好。请允许我向你致以最热烈的祝贺。\n\n更具体地说，你在高考上的出色表现清楚地展现了你的扎实的学力和多年稳扎稳打的付出。在很大程度上，这一成功源于你在备考那漫长的过程上持续付出的努力。具体来说，建议你围绕你在大学生活中的兴趣来规划学习，这样能逐步改善你在大学里的方向感。\n\n总而言之，上述各项措施均是为帮助你更顺利地适应大学生活而设，你的参与至关重要。\nYours sincerely,\nLi Ming",
     "tips": [
      "祝贺类骨架 = 「具体夸什么」+「这份成绩从哪来」：{{topic}} 填录取这件事，{{quality}}/{{effort}} 填品质与付出。",
      "本题第二问是「如何为大学生活做准备」，第三句接<b>建议类</b>：{{action}} 是建议动作，{{detail}} 是这样做能看到什么。",
@@ -3740,12 +3740,6 @@
       "name": "quality",
       "en": "solid academic ability and years of steady effort",
       "cn": "扎实的学力和多年稳扎稳打的付出",
-      "para": "第二段"
-     },
-     {
-      "name": "effort",
-      "en": "keep working for what you want",
-      "cn": "为自己想要的东西持续努力",
       "para": "第二段"
      },
      {
@@ -3782,27 +3776,27 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
       "en": "Please allow me to extend my warmest congratulations to you.",
-      "cn": "请允许我向你致以最诚挚的祝贺。",
+      "cn": "请允许我向你致以最热烈的祝贺。",
       "src": "第一段 · 第二句（表明来意） · 模板第8句"
      },
      {
-      "en": "To be more specific, your remarkable achievement in {{topic}} clearly shows your {{quality}}.",
-      "cn": "更具体地说，你在{{topic}}方面的优异表现，清楚地展现了你的{{quality}}。",
+      "en": "To be more specific, your outstanding achievement in {{topic}} bears clear testimony to your exceptional {{quality}}.",
+      "cn": "更具体地说，你在{{topic}}上的出色表现清楚地展现了你的{{quality}}。",
       "src": "第二段 · 祝贺类 第二句 · 模板第1句"
      },
      {
-      "en": "To a large extent, this success comes from your willingness to {{effort}}, especially when dealing with {{topic}}.",
-      "cn": "在很大程度上，这一成功源于你愿意在{{topic}}上{{effort}}。",
+      "en": "To a large extent, this well-earned triumph stems from the sustained dedication and perseverance you have exhibited in {{topic}}.",
+      "cn": "在很大程度上，这一成功源于你在{{topic}}上持续付出的努力。",
       "src": "第二段 · 祝贺类 第三句 · 模板第1句"
      },
      {
       "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-      "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+      "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
       "src": "第二段 · 建议类 第二句 · 模板第2句"
      },
      {
@@ -4038,8 +4032,8 @@
     "template": "可选用该思路中的语句分析市场占有率排名有变化的图表；若图表反映三个品牌中前两名排名互换，则可全盘借用范文中的表达。____ market was still dominated by ____ brands. ____ remained the third most popular in the market with a slight increase/decline in market share. A noticeable change occurred in ____ brands. ____, whose share of market slipped by almost ____%, were displaced from their leading position by ____, which expanded their share by ____. The performance of ____ is to be expected, given their ____. The big change in the performance of ____ seems sudden but is not unexpected. （具体阐释后来者登上第一位置的主观原因）When ____ were growing, ____ were hit by reputation crisis caused by ____.（阐释昔日冠军失去第一位置的主观原因）The plight of ____ is the reminder that ____ is the soul of products. Hopefully, ____ will consistently guarantee ____, thereby protecting their own reputation to maintain market popularity."
    },
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates the sharp contrast in the market shares of Chinese, Japanese and American car brands between Chinese brands and Japanese brands from 2008 to 2009. During this period, Chinese brands rose sharply from 26% to 31%. By contrast, the figure for Japanese brands saw a steady decline, falling from 35% to 26%.\n\nThis phenomenon can be attributed to a combination of factors. People now judge car ownership by what it does for them rather than by what others think. Public spending on infrastructure has made car ownership far more widely available. Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands. Cities have absorbed millions of new residents, and demand for car ownership has grown with them.\n\nOn balance, this is a positive trend worth welcoming. Companies can make domestic car brands cheaper and easier to use, so that they reach more people. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了2008年到2009年期间国产、日系与美系汽车品牌的市场份额在国产品牌与日系品牌之间的鲜明反差。在此期间，国产品牌从26%急剧增至31%。相比之下，日系品牌则稳步下降，从35%降至26%。\n\n这一现象可归因于多种因素的综合作用。如今，人们评判汽车保有量的标准是它能为自己带来什么，而非他人的看法。基础设施方面的公共支出使汽车保有量更加普及。国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。随着城市吸纳了大量新居民，汽车保有量的需求也随之增长。\n\n总的来说，这是一个值得欢迎的积极趋势。企业可以让国产汽车品牌更低价、更便捷，从而让更多人能够使用。明确的规则和持续投入，比一次性活动更重要。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates the sharp contrast in the market shares of Chinese, Japanese and American car brands between Chinese brands and Japanese brands from 2008 to 2009. During this period, Chinese brands rose sharply from 26% to 31%. By contrast, the figure for Japanese brands saw a steady decline, falling from 35% to 26%.\n\nThis phenomenon can be attributed to a combination of factors. First, people now judge car ownership by what it does for them rather than by what others think. Equally important, public spending on infrastructure has made car ownership far more widely available. Beyond that, domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.\n\nOn balance, this is a positive trend worth welcoming. Companies can make domestic car brands cheaper and easier to use, so that they reach more people. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了2008年到2009年期间国产、日系与美系汽车品牌的市场份额在国产品牌与日系品牌之间的鲜明反差。在此期间，国产品牌从26%急剧增至31%。相比之下，日系品牌则稳步下降，从35%降至26%。\n\n这一现象可归因于多种因素的综合作用。首先，如今，人们评判汽车保有量的标准是它能为自己带来什么，而非他人的看法。同样重要的是，基础设施方面的公共支出使汽车保有量更加普及。除此之外，国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。\n\n总的来说，这是一个值得欢迎的积极趋势。企业可以让国产汽车品牌更低价、更便捷，从而让更多人能够使用。明确的规则和持续投入，比一次性活动更重要。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、有升有降（3 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
      "数据要点：Chinese brands 26% → 31%；Japanese brands 35% → 26%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4156,11 +4150,6 @@
       "en": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.",
       "cn": "国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。",
       "src": "第二段 · 原因（机制句池） · 功能句13"
-     },
-     {
-      "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
-      "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
-      "src": "第二段 · 原因（机制句池） · 功能句7"
      },
      {
       "en": "On balance, this is a positive trend worth welcoming.",

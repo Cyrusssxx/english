@@ -5492,8 +5492,8 @@
     "template": "本模板由【优秀范文】提炼、改编而来，适用于会议、论坛、典礼等活动的邀请信。Dear ____, As 邀请人身份, I am writing to invite you to 活动名称 scheduled for 时间、地点、举办方式. With the theme of 活动主题, this 活动类型 aims to 活动目的. Attendees from 参会者身份 will gather to 活动内容. As a 指出受邀人与活动契合的身份, you are very welcome to 期待对方做的事. Our 活动类型 arrangements are attached for your reference. We will be very pleased if you could accept our invitation. Yours sincerely, Li Ming"
    },
    "apply": {
-    "apply_en": "Dear Jack,\nI hope this message finds you well. I am writing to invite you to take part in our monthly online reading session.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the online meeting will take place at Zoom, providing a fixed venue for all participants. In particular, I would like to invite you to join us in the online meeting, which will offer you a chance to share a famous writer from your own country.\n\nI would appreciate it very much if you could confirm your attendance by next Wednesday.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Jack,\n希望你一切安好。我写信是邀请你参加我们每月一次的线上读书会。\n\n至于本次活动的具体安排，主要如下。首先，本次线上会议将在Zoom 线上平台举行，为全体参会者提供固定场所。具体而言，我诚挚邀请你参加我们这次线上会议，这将为你带来分享贵国一位著名作家的机会。\n\n如果你能在下周三前确认你是否参加，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Jack,\nI hope this message finds you well. It gives me great pleasure to invite you to our monthly online reading session.\n\nAs for the planned event, the main arrangements are as follows. To begin with, the online meeting will take place at Zoom, which is convenient for all participants. In particular, I would be delighted to invite you to join us in the online meeting, which will provide you with a chance to share a famous writer from your own country.\n\nI would appreciate it very much if you could confirm your attendance by next Wednesday. Thank you for your time and attention, and I look forward to your positive response.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Jack,\n希望收到此信时你一切安好。很高兴邀请你参加我们每月一次的线上读书会。\n\n至于本次活动，具体安排如下。首先，本次线上会议将在Zoom 线上平台举行，全体参会者前往都很方便。具体而言，我非常高兴邀请你参加我们这次线上会议，这将为你带来分享贵国一位著名作家的机会。\n\n如果你能在下周三前确认你是否参加，我将不胜感激。感谢你抽时间阅读这封信，期待你的回复。\nYours sincerely,\nLi Ming",
     "tips": [
      "邀请信第二段 = 「安排细节 + 邀请理由」：先用通知类交代时间和平台，再用邀请类说明参加能得到什么。",
      "{{gain}} 填与本题主题相关的收益（分享自己国家的作家），这是「为什么值得来」的评分点。",
@@ -5559,33 +5559,38 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
-      "en": "I am writing to invite you to take part in {{topic}}.",
-      "cn": "我写信是邀请你参加{{topic}}。",
+      "en": "It gives me great pleasure to invite you to {{topic}}.",
+      "cn": "很高兴邀请你参加{{topic}}。",
       "src": "第一段 · 第二句（表明来意） · 模板第7句"
      },
      {
       "en": "As for the planned event, the main arrangements are as follows.",
-      "cn": "至于本次活动的具体安排，主要如下。",
+      "cn": "至于本次活动，具体安排如下。",
       "src": "第二段 · 通用首句（引出下文） · 模板第3句"
      },
      {
-      "en": "To begin with, {{topic}} will take place at {{place}}, providing a fixed venue for all {{audience}}.",
-      "cn": "首先，{{topic}}将在{{place}}举行，为全体{{audience}}提供固定场所。",
+      "en": "To begin with, {{topic}} will take place at {{place}}, which is convenient for all {{audience}}.",
+      "cn": "首先，{{topic}}将在{{place}}举行，全体{{audience}}前往都很方便。",
       "src": "第二段 · 通知类 第二句 · 模板第2句"
      },
      {
-      "en": "In particular, I would like to invite you to {{join}} {{topic}}, which will offer you {{gain}}.",
-      "cn": "具体而言，我诚挚邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
+      "en": "In particular, I would be delighted to invite you to {{join}} {{topic}}, which will provide you with {{gain}}.",
+      "cn": "具体而言，我非常高兴邀请你{{join}}{{topic}}，这将为你带来{{gain}}。",
       "src": "第二段 · 邀请类 第二句 · 模板第1句"
      },
      {
       "en": "I would appreciate it very much if you could {{expect}} by {{deadline}}.",
       "cn": "如果你能在{{deadline}}前{{expect}}，我将不胜感激。",
       "src": "第三段 · 收尾 / 客套 · 模板第1句"
+     },
+     {
+      "en": "Thank you for your time and attention, and I look forward to your positive response.",
+      "cn": "感谢你抽时间阅读这封信，期待你的回复。",
+      "src": "第三段 · 收尾 / 客套 · 模板第3句"
      }
     ]
    }
@@ -5709,8 +5714,8 @@
     "template": "该模板适用于基于多项选择的调查数据制成的“多因素同时比较”的柱状图，涉及“某群体做某件事的多种选择”。模板注释：该模板第一段①句介绍图表主题，②句对比介绍占比最高和最低的数据，③句按占比从高到低的顺序罗列其他数据。第二段①句点明图表反映的趋势，②句过渡引出原因分析，③至⑥句具体阐述原因，其中③④句分析主观原因，⑤句提及客观必要条件，⑥句补充不可忽视的推动因素。第三段展望发展趋势并提及积极影响。I ① The bar chart clearly illustrates the multiple options ________ have of (doing) ________. ② The majority of them (________ %) ________, whereas ________ is the least popular choice, only accounting for ________ %. ③ Other ways to ________ include ________ and ________, at ________ % and ________ % respectively, followed by ________, at ________ %. II ① The data indicates people's inclination to ________. ② It may seem a matter of personal preference, but in fact several factors play a part. ③ For one thing, ________ gives them a sense of happiness and satisfaction. ④ To put it another way, they do so in pursuit of a higher quality of life. ⑤ For another, the advent/popularization of ________ is an essential precondition for this. ⑥ Moreover, those who ________ have set this trend to some extent. III ① In conclusion, given (that) ________, we can expect to see an increasing number of people ________. ② This will contribute to greater diversity in ________."
    },
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates how the ways residents take exercise are distributed. Exercising on one's own takes the lead, accounting for 54.3%, followed by exercising with friends and exercising with family at 47.7% and 23.9% respectively, while team sports come last at 15.8%. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Sitting all day has turned exercising from a hobby into a practical need. Longer working hours have made people value the little free time they have. Public spending on infrastructure has made exercising far more widely available. People now judge exercising by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. Small habits matter: a little exercise every day adds up over a year. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了居民的锻炼方式的分布情况。独自锻炼遥遥领先，占54.3%；其后是与朋友一起和与家人一起，分别占47.7%和23.9%；而团队项目位居最后，占16%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。长期久坐使锻炼从爱好变成了切实的需求。工作时间变长，人们更看重仅有的空闲时间。基础设施方面的公共支出使锻炼更加普及。如今，人们评判锻炼的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。小习惯很重要：每天一点运动，日积月累一年下来就不一样。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates how the ways residents take exercise are distributed. Exercising on one's own takes the lead, accounting for 54.3%, followed by exercising with friends and exercising with family at 47.7% and 23.9% respectively, while team sports come last at 15.8%. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. First, sitting all day has turned exercising from a hobby into a practical need. Equally important, public spending on infrastructure has made exercising far more widely available. Beyond that, people now judge exercising by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. Small habits matter: a little exercise every day adds up over a year. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该柱状图清晰地展示了居民的锻炼方式的分布情况。独自锻炼遥遥领先，占54.3%；其后是与朋友一起和与家人一起，分别占47.7%和23.9%；而团队项目位居最后，占16%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。首先，长期久坐使锻炼从爱好变成了切实的需求。同样重要的是，基础设施方面的公共支出使锻炼更加普及。除此之外，如今，人们评判锻炼的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。小习惯很重要：每天一点运动，日积月累一年下来就不一样。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "柱状图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。注意这是**多选题**，各项占比之和 > 100%，**不能用「合计」类句子**。",
      "数据要点：exercising on one's own 占 54.3%；exercising with friends 占 47.7%；exercising with family 占 23.9%；team sports 占 15.8%。数值与图逐个核对，别漏最大值。",
@@ -5817,11 +5822,6 @@
       "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
       "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
       "src": "第二段 · 原因（机制句池） · 功能句8"
-     },
-     {
-      "en": "Longer working hours have made people value the little free time they have.",
-      "cn": "工作时间变长，人们更看重仅有的空闲时间。",
-      "src": "第二段 · 原因（机制句池） · 功能句9"
      },
      {
       "en": "Public spending on infrastructure has made {{topic}} far more widely available.",

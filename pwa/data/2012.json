@@ -3844,8 +3844,8 @@
     "template": "该思路适合对商品质量问题进行投诉。Dear Sir or Madam, （时间状语）I bought ____ in 购买地点. To my dismay, （时间状语）I found it couldn't work normally. 具体阐述问题. I expect you to provide a new one for replacement or, at least, to follow the warranty policy by repairing it. If no satisfaction can be gained by these means, I will have to demand a refund. Thank you for taking the time to read this letter. If detailed information is required, please reach me at 12345678. Yours faithfully, Zhang Wei"
    },
    "apply": {
-    "apply_en": "Dear Sir or Madam,\nI hope this message finds you well. This letter serves as a formal complaint about the recent problems with the electronic dictionary I bought from your online store.\n\nTo my disappointment, the electronic dictionary I bought from your online store last week has failed to work properly. Specifically, a serious system failure appeared only three days after it arrived. I would appreciate it if you could arrange a repair or a full refund as soon as possible.\n\nI would appreciate it very much if you could arrange a replacement or a full refund by the end of this week.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Sir or Madam,\n希望你一切安好。这封信作为一份正式投诉，旨在反映近期与我从贵网店购买的电子词典有关的问题。\n\n令我失望的是，上周在贵网店购买的电子词典无法正常使用。具体来说，到货才三天就出现了严重的系统故障。如果你能尽快安排维修或全额退款，我将不胜感激。\n\n如果你能在本周末前安排换货或全额退款，我将不胜感激。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Sir or Madam,\nI hope this message finds you well. It is with great regret that I write to lodge a formal complaint regarding recent defects in the electronic dictionary I bought from your online store.\n\nTo my profound disappointment, the electronic dictionary I purchased from your store has failed to function properly. Specifically, a serious system failure appeared only three days after it arrived. In light of these facts, I would appreciate it if you could arrange an immediate replacement or a full refund.\n\nI would appreciate it very much if you could arrange a replacement or a full refund by the end of this week.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Sir or Madam,\n希望收到此信时你一切安好。很遗憾，我不得不就近期我从贵网店购买的电子词典出现的问题正式投诉。\n\n令我失望的是，上周在贵店购买的电子词典无法正常使用。具体来说，到货仅三天就出现了严重的系统故障。若你能尽快安排维修或全额退款，我将不胜感激。\n\n如果你能在本周末前安排换货或全额退款，我将不胜感激。\nYours sincerely,\nLi Ming",
     "tips": [
      "投诉信最忌「只说情绪不说事实」：第二句点名 {{product}}，第三句给出具体 {{problem}}（到货三天就出故障）。",
      "要求用<b>一句</b>说清即可（维修 / 换货 / 退款三选一），第三段再用「如能……将不胜感激」收口。",
@@ -3887,27 +3887,27 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
-      "en": "This letter serves as a formal complaint about the recent problems with {{topic}}.",
-      "cn": "这封信作为一份正式投诉，旨在反映近期与{{topic}}有关的问题。",
+      "en": "It is with great regret that I write to lodge a formal complaint regarding recent defects in {{topic}}.",
+      "cn": "很遗憾，我不得不就近期{{topic}}出现的问题正式投诉。",
       "src": "第一段 · 第二句（表明来意） · 模板第11句"
      },
      {
-      "en": "To my disappointment, the {{product}} I bought from your online store last week has failed to work properly.",
-      "cn": "令我失望的是，上周在贵网店购买的{{product}}无法正常使用。",
+      "en": "To my profound disappointment, the {{product}} I purchased from your store has failed to function properly.",
+      "cn": "令我失望的是，上周在贵店购买的{{product}}无法正常使用。",
       "src": "第二段 · 投诉类 第二句（出了什么问题） · 模板第1句"
      },
      {
       "en": "Specifically, {{problem}} appeared only three days after it arrived.",
-      "cn": "具体来说，到货才三天就出现了{{problem}}。",
+      "cn": "具体来说，到货仅三天就出现了{{problem}}。",
       "src": "第二段 · 投诉类 第二句（出了什么问题） · 模板第2句"
      },
      {
-      "en": "I would appreciate it if you could arrange a repair or a full refund as soon as possible.",
-      "cn": "如果你能尽快安排维修或全额退款，我将不胜感激。",
+      "en": "In light of these facts, I would appreciate it if you could arrange an immediate replacement or a full refund.",
+      "cn": "若你能尽快安排维修或全额退款，我将不胜感激。",
       "src": "第二段 · 投诉类 第三句（要求怎么解决） · 模板第1句"
      },
      {
@@ -4159,8 +4159,8 @@
     "template": "该思路适用于分析体现满意度差异的表格。____ were most likely to report satisfaction, with ____% of them indicating they were content. ____ were less willing to declare satisfaction, only ____% of whom said they were satisfied; instead, ____% of whom expressed dissatisfaction. ____ were surely unhappiest: none of them felt satisfied and the percentage of respondents reporting dissatisfaction was as high as ____%. There is a significant difference in ____ satisfaction by ____. The difference relates to ____.（分析差异原因）The consequent sense of 负面情绪名词 is strong enough to reduce them to deep dissatisfaction. In contrast, ____ and understandably will feel happier. As for ____, ____. Not surprisingly, they are the happiest. It is clear that ____. For lasting happiness with ____, ____ is necessary."
    },
    "apply": {
-    "apply_en": "The table above clearly illustrates how employee dissatisfaction is distributed. The figure varies sharply from group to group: it stands at 64% for the 41-to-50 age group, but falls to just 10% for the group over 50. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Longer working hours have made people value the little free time they have. Young people change jobs far more often than their parents did, so loyalty works differently. Employers now look for experience as much as for grades. People now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures point to a problem worth taking seriously. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Individuals need to watch their own habits instead of assuming they are safe. Unless effective measures are taken, it may well get worse.",
-    "apply_cn": "该表格清晰地展示了员工的不满意比例的分布情况。组与组之间差别悬殊：41~50岁组高达64%，而50岁以上组只有10%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。工作时间变长，人们更看重仅有的空闲时间。如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。如今用人单位既看重成绩，也看重经验。如今，人们评判工作满意度的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。个人需要留意自己的习惯，而不是想当然认为没问题。若不采取有效措施，问题很可能进一步恶化。",
+    "apply_en": "The table above clearly illustrates how employee dissatisfaction is distributed. The figure varies sharply from group to group: it stands at 64% for the 41-to-50 age group, but falls to just 10% for the group over 50. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. First, longer working hours have made people value the little free time they have. Equally important, young people change jobs far more often than their parents did, so loyalty works differently. Beyond that, people now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures point to a problem worth taking seriously. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Individuals need to watch their own habits instead of assuming they are safe. Unless effective measures are taken, it may well get worse.",
+    "apply_cn": "该表格清晰地展示了员工的不满意比例的分布情况。组与组之间差别悬殊：41~50岁组高达64%，而50岁以上组只有10%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。首先，工作时间变长，人们更看重仅有的空闲时间。同样重要的是，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。除此之外，如今，人们评判工作满意度的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。个人需要留意自己的习惯，而不是想当然认为没问题。若不采取有效措施，问题很可能进一步恶化。",
     "tips": [
      "表格、分布比高低（3 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：the 41-to-50 age group 占 64%；those aged 40 or younger 占 33.3%；the group over 50 占 10%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4260,11 +4260,6 @@
       "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
       "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
       "src": "第二段 · 原因（机制句池） · 功能句14"
-     },
-     {
-      "en": "Employers now look for experience as much as for grades.",
-      "cn": "如今用人单位既看重成绩，也看重经验。",
-      "src": "第二段 · 原因（机制句池） · 功能句15"
      },
      {
       "en": "People now judge {{topic}} by what it does for them rather than by what others think.",

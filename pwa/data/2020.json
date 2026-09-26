@@ -4786,8 +4786,8 @@
     "template": "本模板由【优秀范文】提炼、改编而来，适用于撰写以介绍某事物（如景点、城市、活动等）为切入点的建议信（如游览建议、活动参与建议等）。Dear ____, I'm writing to inform you of 要介绍的事物 and share some (tips/suggestions). This (site/city/activity) is/involves 具体介绍. It offers a fascinating glimpse into ____. To 目的, you may consider 建议一 or 建议一的替代方案. In addition, it's also advisable to 建议二, which will certainly 建议带来的好处. Hope this (trip/activity) suits your taste and that you can enjoy it. Yours sincerely, Li Ming"
    },
    "apply": {
-    "apply_en": "Dear Friends,\nI hope this message finds you well. In this letter, I would like to introduce the Terracotta Army in Xi’an to you as an excellent option.\n\nTo be more specific, the Terracotta Army refers to an army of over 8,000 life-size clay soldiers, which is characterized by over 2,000 years of history. To begin with, it covers three large exhibition pits, enabling visitors to gain a vivid sense of the Qin Dynasty. In particular, you are advised to book tickets online in advance around the date of your visit so that you can gradually improve your experience at the site.\n\nI sincerely hope that you will make full use of this opportunity to enjoy every moment of the tour.\nYours sincerely,\nLi Ming",
-    "apply_cn": "Dear Friends,\n希望你一切安好。在这封信中，我想向你介绍西安的兵马俑，把它作为一个极佳的选择推荐给你。\n\n更具体而言，兵马俑是指一支由八千多尊等身陶俑组成的军阵，其突出特点在于两千多年历史。首先，它涵盖三个大型展示坑，使参观者能够获得对秦朝的鲜活感受。具体而言，建议你围绕参观的日期提前在网上订票，以便逐步提升你在遗址的参观体验。\n\n我真诚希望你能充分利用这次机会享受参观的每一刻。\nYours sincerely,\nLi Ming",
+    "apply_en": "Dear Friends,\nI hope this message finds you well. In this letter, I would like to introduce the Terracotta Army in Xi’an to you as an excellent option.\n\nTo be more specific, the Terracotta Army represents an army of over 8,000 life-size clay soldiers, a concept distinguished by its distinctive over 2,000 years of history. To begin with, it encompasses three large exhibition pits, thereby empowering visitors to gain a vivid sense of the Qin Dynasty with high efficiency. In particular, you are advised to book tickets online in advance around the date of your visit so that you can gradually improve your experience at the site.\n\nI sincerely hope that you will make full use of this opportunity to enjoy every moment of the tour.\nYours sincerely,\nLi Ming",
+    "apply_cn": "Dear Friends,\n希望收到此信时你一切安好。在这封信里，我想把西安的兵马俑作为一个很好的选择介绍给你。\n\n具体而言，兵马俑代表着一支由八千多尊等身陶俑组成的军阵，这一事物以其独特的两千多年历史而著称。首先，它涵盖三个大型展示坑，使参观者能够获得对秦朝的鲜活感受。具体来说，建议你围绕参观的日期来提前在网上订票，这样能逐步改善你在遗址的参观体验。\n\n我衷心希望你能充分利用这次机会享受参观的每一刻。\nYours sincerely,\nLi Ming",
     "tips": [
      "「介绍景点」用介绍类两句：第一句给「是什么 + 特征」（数量 + 年代最好写），第二句展开一个看点。",
      "{{aspect1}} 填 three exhibition pits 这类<b>具体结构</b>，比说 beautiful 有效得多——这是内容分的来源。",
@@ -4865,32 +4865,32 @@
     "key_phrases": [
      {
       "en": "I hope this message finds you well.",
-      "cn": "希望你一切安好。",
+      "cn": "希望收到此信时你一切安好。",
       "src": "第一段 · 首句（问候 / 自我介绍） · 模板第1句"
      },
      {
       "en": "In this letter, I would like to introduce {{topic}} to you as an excellent option.",
-      "cn": "在这封信中，我想向你介绍{{topic}}，把它作为一个极佳的选择推荐给你。",
+      "cn": "在这封信里，我想把{{topic}}作为一个很好的选择介绍给你。",
       "src": "第一段 · 第二句（表明来意） · 模板第5句"
      },
      {
-      "en": "To be more specific, {{topic}} refers to {{subject}}, which is characterized by {{feature}}.",
-      "cn": "更具体而言，{{topic}}是指{{subject}}，其突出特点在于{{feature}}。",
+      "en": "To be more specific, {{topic}} represents {{subject}}, a concept distinguished by its distinctive {{feature}}.",
+      "cn": "具体而言，{{topic}}代表着{{subject}}，这一事物以其独特的{{feature}}而著称。",
       "src": "第二段 · 介绍类 第二句 · 模板第1句"
      },
      {
-      "en": "To begin with, it covers {{aspect1}}, enabling {{audience}} to {{gain1}}.",
+      "en": "To begin with, it encompasses {{aspect1}}, thereby empowering {{audience}} to {{gain1}} with high efficiency.",
       "cn": "首先，它涵盖{{aspect1}}，使{{audience}}能够{{gain1}}。",
       "src": "第二段 · 介绍类 第三句 · 模板第1句"
      },
      {
       "en": "In particular, you are advised to {{action}} around {{topic}} so that you can gradually improve {{detail}}.",
-      "cn": "具体而言，建议你围绕{{topic}}{{action}}，以便逐步提升{{detail}}。",
+      "cn": "具体来说，建议你围绕{{topic}}来{{action}}，这样能逐步改善{{detail}}。",
       "src": "第二段 · 建议类 第二句 · 模板第2句"
      },
      {
       "en": "I sincerely hope that you will make full use of this opportunity to {{outcome}}.",
-      "cn": "我真诚希望你能充分利用这次机会{{outcome}}。",
+      "cn": "我衷心希望你能充分利用这次机会{{outcome}}。",
       "src": "第三段 · 收尾 / 客套 · 模板第5句"
      }
     ]
@@ -4995,8 +4995,8 @@
     "template": "该模板适用于“多因素同时比较”的饼状图，涉及“某群体做某事的目的（以正面为主）”，用于反映某种积极趋势。模板注释：该模板第一段①句介绍调查主题，②至④句按照“占比降序”罗列数据。第二段①句点明图表反映的趋势并给出一大理由（与占比最大的因素关联），②句针对占比排在中上游的因素展开阐述，③句提及占比较少的因素。第三段积极评价这一趋势并简要说明理由。此外，该模板稍作调整还可适用于“列举做某事的原因”（如首段用why替换what for、on account of替换for the purpose of、because替换so that）或“反映负面现象的主题”（如末段用a shame that they替换a delight to see them、potential harm替换direct benefits、is detrimental to替换goes a long way to）。I ① The above chart provides answers as to what ________ for. ② Most striking of all, ________ % make this choice for the purpose of ________. ③ Another crucial factor is ________, according to ________ % of respondents. ④ There are also ________ % (and ________ % respectively) deciding to ________ so that they can ________ (or ________). II ① The survey indicates the trend of ________, which occurs as expected and will continue, considering that ________. ② It is noteworthy that some ________ have little intention of ________ but ________. ③ On top of that, ________ still matter(s) to a handful of them. III ① All in all, it is a delight to see them ________. ② Doing so not only results in direct benefits to themselves, but goes a long way to (doing) ________."
    },
    "apply": {
-    "apply_en": "The pie chart above clearly illustrates how the purposes of mobile reading are distributed. Reading for knowledge takes the lead, accounting for 59.5%, followed by killing time and obtaining information at 21.3% and 17.0% respectively, while other purposes come last at 2.2%. Taken together, the three largest items make up 97.8%.\n\nThis phenomenon can be attributed to a combination of factors. Online platforms and mobile payment have made mobile reading quicker and easier to arrange. Longer working hours have made people value the little free time they have. People now judge mobile reading by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Media should report on mobile reading honestly, without exaggerating its benefits or its risks. Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible. Small habits matter: a little mobile reading every day adds up over a year. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了手机阅读目的的分布情况。获取知识遥遥领先，占59.5%；其后是消磨时间和获取信息，分别占21.3%和17.0%；而其他目的位居最后，占2.2%。前三项加起来占97.8%。\n\n这一现象可归因于多种因素的综合作用。线上平台和移动支付使手机阅读变得更快、更方便。工作时间变长，人们更看重仅有的空闲时间。如今，人们评判手机阅读的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。媒体应如实报道手机阅读，既不夸大好处，也不夸大风险。平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。小习惯很重要：每天一点手机阅读，日积月累一年下来就不一样。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The pie chart above clearly illustrates how the purposes of mobile reading are distributed. Reading for knowledge takes the lead, accounting for 59.5%, followed by killing time and obtaining information at 21.3% and 17.0% respectively, while other purposes come last at 2.2%. Taken together, the three largest items make up 97.8%.\n\nThis phenomenon can be attributed to a combination of factors. First, online platforms and mobile payment have made mobile reading quicker and easier to arrange. Equally important, longer working hours have made people value the little free time they have. Beyond that, people now judge mobile reading by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Media should report on mobile reading honestly, without exaggerating its benefits or its risks. Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible. Small habits matter: a little mobile reading every day adds up over a year. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+    "apply_cn": "该饼状图清晰地展示了手机阅读目的的分布情况。获取知识遥遥领先，占59.5%；其后是消磨时间和获取信息，分别占21.3%和17.0%；而其他目的位居最后，占2.2%。前三项加起来占97.8%。\n\n这一现象可归因于多种因素的综合作用。首先，线上平台和移动支付使手机阅读变得更快、更方便。同样重要的是，工作时间变长，人们更看重仅有的空闲时间。除此之外，如今，人们评判手机阅读的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。媒体应如实报道手机阅读，既不夸大好处，也不夸大风险。平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。小习惯很重要：每天一点手机阅读，日积月累一年下来就不一样。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
     "tips": [
      "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：reading for knowledge 占 59.5%；killing time 占 21.3%；obtaining information 占 17.0%；other purposes 占 2.2%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
