@@ -1,5 +1,22 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-26 小作文模板全方位深度优化与语用升级]
+
+- **背景与目标**：对 10 类小作文模板进行体系化深度打磨，彻底剔除机械拼凑感、词汇同义撞车、中式逻辑以及不合交际规范的收尾句，全面提升英文高级度与考场实用性。
+- **核心升级细节**：
+  1. **消除语用失当与模板套路收尾**：
+     - 道歉信：彻底剔除傲慢无理的 `look forward to your positive response`，重写为真诚体面的恳求谅解与主动担责表达 `I earnestly request your kind understanding, and I remain at your disposal for any necessary remedy.`。
+     - 祝贺信：剔除索求回复的错误套路，改用得体、经典的英式致辞结语 `May you continue to achieve even greater distinctions in all your future pursuits.`。
+  2. **消除段落内部与跨句词汇撞车**：
+     - 建议信：消除多处重复使用 `suggest` / `my suggestions` 的词汇贫乏问题，引入 `it would be highly beneficial to...`、`you might consider taking concrete steps to...` 以及 `establishing a regular habit of... will undoubtedly yield substantial benefits in the long run` 等多样化高级建议句型。
+     - 感谢信：消除 `grateful` 与 `gratitude` 连续三处密集轰炸，重写为 `profound gratitude`、`warrant my particular appreciation` 以及 `once again, please accept my heartfelt appreciation` 的递进层次。
+     - 介绍信：消除同一个段落中 `To be more specific` 与 `More specifically` 的粗暴重复，换用 `From a personal standpoint...`。
+     - 投诉信：消除原第 3 句 `what happened is as follows` 的纯水话，换用更加严谨专业的公文转折 `To present the matter clearly, the relevant details are outlined below.`，并强化缺陷陈述句。
+     - 观点信：消除讲义报幕腔 `falls into three parts`，重构为高品位评论句式 `From my perspective, several distinct dimensions of your work resonate particularly strongly with me.`。
+  3. **数据与词数硬指标锁定**：
+     - 10 封信正文词数全面稳定在 **100~128 词** 黄金高分区间，结构均为严整的三段式。
+     - `CN_FIX3` 与 `EN_FIX3` 句库同步更新，确保检索页与整信背诵视图同频共振。
+- 自动化测试与验证：端到端 jsdom **43/43 全量通过**（词数、段落、语用规范、去重、点句翻译、段译、格式特判全线绿灯）。SW en2-0fec7243。
 ## [2026-09-23 新题型/完形段落划分修复（P1-P3... 错乱）]
 
 - **用户反馈**「新题型和完形的段落 P1/P2/P3 划分有问题，全部修复」。
