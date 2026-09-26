@@ -1,5 +1,23 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-09-26 大作文同义替换悬浮气泡系统 (Upgrade Tooltips)]
+
+- **背景与用户诉求**：大作文默认文本保持最好背的一套，不强行修改模板默认句；针对词汇重撞（如 optional extra 与 extra）或想进一步提分的关键节点（如 clearly illustrates、can be attributed to 等），实现**鼠标悬停自动浮出替换词卡片**，替换词要求“不难、不烂大街、具有实用性”。
+- **系统设计与落地**：
+  1. **构建实用替换短语库 (`WR_UPGRADES` in `common.js`)**：
+     - **避重防撞**：`optional extra` -> `minor addition` (次要补充) / `secondary consideration` (次要考量) / `incidental task` (临时额外任务)；`daily routines` -> `regular schedules` / `everyday practices`。
+     - **开篇动词**：`clearly illustrates` -> `reveals` (简洁有力) / `presents a clear picture of` (呈现全貌) / `provides a breakdown of` (详述分布)。
+     - **第二段引入**：`can be attributed to` -> `Several factors account for this notable trend` (短小好背) / `Behind this trend lie several major reasons` (经典倒装) / `stems largely from`。
+     - **趋势与排位**：`takes the lead` -> `ranks first` / `occupies the top spot` / `claims the largest share`；`comes last` -> `ranks lowest` / `sits at the bottom`；`rose sharply` -> `grew rapidly` / `climbed dramatically` / `saw a marked rise`；`rose steadily` -> `increased steadily` / `kept an upward path`；`saw a steady decline` -> `dropped steadily` / `experienced a downward trend`。
+     - **消费升级与收尾**：`moved from a luxury to an everyday necessity` -> `shifted from an occasional treat to a daily essential` / `become part and parcel of everyday life`；`a positive trend worth welcoming` -> `an encouraging development` / `a welcome shift`；`every reason to believe that it will continue` -> `it is widely expected that this trend will carry forward` / `this pattern is likely to persist in the coming years`。
+  2. **轻量淡雅视觉与交互**：
+     - 命中词/短语底部展示淡蓝色虚线点状下划线 (`border-bottom: 1.5px dotted #4a7ab8;`)，不干扰默认通读与背诵。
+     - 鼠标悬停（或移动端点击）弹出轻量毛玻璃气泡卡片 (`.wr-upg-pop`)，包含标签徽章、提示理由、原词、推荐替换列表与简明中文。
+     - 智能避让视口边缘，鼠标移开或点击外部自动平滑销毁。
+  3. **双模块全覆盖**：
+     - 大作文模板页 (`writing.html`)：骨架卡片、框架步骤、机制句池、参考示例全量支持。
+     - 真题套用示范 (`article.html?id=2026_writing_b`)：17 篇示范文中的模板句同样无缝支持。
+- **验证**：自动化端到端 jsdom 测试 20/20 全绿通过。SW en2-2c78505a。
 ## [2026-09-26 小作文模板全方位深度优化与语用升级]
 
 - **背景与目标**：对 10 类小作文模板进行体系化深度打磨，彻底剔除机械拼凑感、词汇同义撞车、中式逻辑以及不合交际规范的收尾句，全面提升英文高级度与考场实用性。

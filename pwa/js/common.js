@@ -298,12 +298,16 @@ function renderApplyBody(mk, annotate) {
 
     // 模板固定部分与「槽位词」都要能点词（槽位词正是学生最想查的题相关词）
     const put = (x, kind) => {
-        const inner = annotate ? annotate(x) : apEsc(x);
+        let inner = annotate ? annotate(x) : apEsc(x);
+        if (typeof wrWrapUpgrades === 'function') {
+            inner = wrWrapUpgrades(inner);
+        }
         return kind === 't' ? inner : `<mark class="${kind === 's' ? 'ap-slot' : 'ap-own'}">${inner}</mark>`;
     };
-    return sal + mk.paras.map(p => '<p class="apply-para">' + p.sents.map(s =>
+    const bodyHtml = mk.paras.map(p => '<p class="apply-para">' + p.sents.map(s =>
         (s.spans || []).map(sp => put(sp.x, sp.t)).join('')
-    ).join(' ') + '</p>').join('') + sign;
+    ).join(' ') + '</p>').join('');
+    return sal + bodyHtml + sign;
 }
 
 /** 展开/收起逐句标注 */
@@ -401,4 +405,229 @@ function renderKeyPhrases(list) {
         + '<span class="ap-sub2-tip">本篇真正用到的模板句（{{ }} 是留给题目的槽位）'
         + '<a class="ap-xref" href="nearmap.html">近义词·短语</a></span></summary>'
         + '<div class="ap-tpls">' + rows + '</div></details>';
+}
+
+/* ==================== 考研大作文高分替换词（悬浮气泡数据与交互） ==================== */
+const WR_UPGRADES = [
+    {
+        phrase: 'optional extra',
+        tag: '避重提示',
+        tips: '后文若已使用 extra，此处建议换用，避免重复撞车',
+        alts: [
+            { en: 'minor addition', cn: '次要补充 / 附加内容' },
+            { en: 'secondary consideration', cn: '次要考量' },
+            { en: 'incidental task', cn: '临时额外任务' }
+        ]
+    },
+    {
+        phrase: 'daily routines',
+        tag: '防重替换',
+        tips: '同篇多次提及日常安排时可交替使用',
+        alts: [
+            { en: 'regular schedules', cn: '常规日程安排' },
+            { en: 'everyday practices', cn: '日常实践' }
+        ]
+    },
+    {
+        phrase: 'clearly illustrates',
+        tag: '开篇动词',
+        tips: '图表开篇动词，自然地道，避免千篇一律',
+        alts: [
+            { en: 'reveals', cn: '揭示出 / 显示出（简洁有力）' },
+            { en: 'presents a clear picture of', cn: '清晰呈现出……的全貌' },
+            { en: 'provides a breakdown of', cn: '提供了……的具体构成/分布' }
+        ]
+    },
+    {
+        phrase: 'can be attributed to',
+        tag: '第二段引入',
+        tips: '原因引入万能替换：短小好背 / 经典倒装',
+        alts: [
+            { en: 'Several factors account for this notable trend', cn: '几种因素共同促成了这一显著趋势（短小好背）' },
+            { en: 'Behind this trend lie several major reasons', cn: '在这一趋势背后存在着几大主因（经典倒装）' },
+            { en: 'stems largely from', cn: '在很大程度上源于……' }
+        ]
+    },
+    {
+        phrase: 'takes the lead',
+        tag: '排位描述',
+        tips: '描述第一名/占比最大项',
+        alts: [
+            { en: 'ranks first', cn: '位居第一位' },
+            { en: 'occupies the top spot', cn: '占据头把交椅' },
+            { en: 'claims the largest share', cn: '占据最大份额' }
+        ]
+    },
+    {
+        phrase: 'comes last',
+        tag: '排位描述',
+        tips: '描述末尾项',
+        alts: [
+            { en: 'ranks lowest', cn: '排名垫底' },
+            { en: 'sits at the bottom', cn: '位居最后' },
+            { en: 'accounts for the smallest share', cn: '占比最低' }
+        ]
+    },
+    {
+        phrase: 'rose sharply',
+        tag: '趋势上升',
+        tips: '急剧上升替换，避免只有 sharply',
+        alts: [
+            { en: 'grew rapidly', cn: '迅速增长' },
+            { en: 'climbed dramatically', cn: '大幅攀升' },
+            { en: 'saw a marked rise', cn: '迎来显著增长' }
+        ]
+    },
+    {
+        phrase: 'rose steadily',
+        tag: '趋势上升',
+        tips: '平稳上升替换',
+        alts: [
+            { en: 'increased steadily', cn: '平稳增长' },
+            { en: 'kept an upward path', cn: '保持上扬态势' }
+        ]
+    },
+    {
+        phrase: 'saw a steady decline',
+        tag: '趋势下降',
+        tips: '稳步下降替换',
+        alts: [
+            { en: 'dropped steadily', cn: '平稳下降' },
+            { en: 'experienced a downward trend', cn: '呈现下滑趋势' }
+        ]
+    },
+    {
+        phrase: 'moved from a luxury to an everyday necessity',
+        tag: '消费升级',
+        tips: '生活水平提升句型替换',
+        alts: [
+            { en: 'shifted from an occasional treat to a daily essential', cn: '从偶尔的消遣变成日常刚需' },
+            { en: 'become part and parcel of everyday life', cn: '成为日常生活中不可或缺的一部分' }
+        ]
+    },
+    {
+        phrase: 'a positive trend worth welcoming',
+        tag: '第三段立场',
+        tips: '正面立场句的高分替换',
+        alts: [
+            { en: 'an encouraging development', cn: '一种令人振奋的发展' },
+            { en: 'a welcome shift', cn: '一次值得欣喜的转变' }
+        ]
+    },
+    {
+        phrase: 'every reason to believe that it will continue',
+        tag: '收尾展望',
+        tips: '预测收尾的替代表达',
+        alts: [
+            { en: 'it is widely expected that this trend will carry forward', cn: '普遍预期此趋势将在未来得以延续' },
+            { en: 'this pattern is likely to persist in the coming years', cn: '该格局在未来几年很可能继续保持' }
+        ]
+    }
+];
+
+/** 将文本或 HTML 片段中命中的升级短语包裹为 .wr-upg 标签 */
+function wrWrapUpgrades(text) {
+    if (!text) return '';
+    let res = text;
+    WR_UPGRADES.forEach((u, idx) => {
+        const p = u.phrase;
+        if (!res.includes(p)) return;
+        // 避开已在标签属性内的匹配
+        const re = new RegExp('(?<!<[^>]*)' + p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![^<]*>)', 'g');
+        res = res.replace(re, '<span class="wr-upg" data-upg-idx="' + idx + '" title="悬停或点击查看替换推荐">' + p + '</span>');
+    });
+    return res;
+}
+
+let _wrUpgPop = null;
+let _wrUpgTimer = null;
+
+function wrCloseUpgPop() {
+    if (_wrUpgTimer) { clearTimeout(_wrUpgTimer); _wrUpgTimer = null; }
+    if (_wrUpgPop) { _wrUpgPop.remove(); _wrUpgPop = null; }
+    document.querySelectorAll('.wr-upg.active').forEach(el => el.classList.remove('active'));
+}
+
+function wrShowUpgPop(targetEl, idx) {
+    wrCloseUpgPop();
+    const data = WR_UPGRADES[idx];
+    if (!data) return;
+    targetEl.classList.add('active');
+
+    const pop = document.createElement('div');
+    pop.className = 'wr-upg-pop';
+    const altsHtml = (data.alts || []).map(a =>
+        '<li class="wup-item"><div class="wup-en">' + apEsc(a.en) + '</div><div class="wup-cn">' + apEsc(a.cn) + '</div></li>'
+    ).join('');
+
+    pop.innerHTML = '<div class="wup-head">'
+        + '<span class="wup-tag">' + apEsc(data.tag || '替换推荐') + '</span>'
+        + '<span class="wup-tips">' + apEsc(data.tips || '考场可替换表达') + '</span>'
+        + '</div>'
+        + '<div class="wup-orig">当前表达：<b>' + apEsc(data.phrase) + '</b></div>'
+        + '<ul class="wup-list">' + altsHtml + '</ul>'
+        + '<div class="wup-foot">💡 默认版本最好背，考场想出彩可任选其一换用</div>';
+
+    document.body.appendChild(pop);
+    _wrUpgPop = pop;
+
+    // 智能定位
+    const r = targetEl.getBoundingClientRect();
+    const pw = pop.offsetWidth, ph = pop.offsetHeight;
+    let left = r.left + window.scrollX;
+    if (left + pw > window.scrollX + document.documentElement.clientWidth - 12) {
+        left = window.scrollX + document.documentElement.clientWidth - pw - 12;
+    }
+    if (left < window.scrollX + 12) left = window.scrollX + 12;
+
+    let top = r.bottom + window.scrollY + 6;
+    if (top + ph > window.scrollY + document.documentElement.clientHeight - 12) {
+        top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
+    }
+    pop.style.left = Math.round(left) + 'px';
+    pop.style.top = Math.round(top) + 'px';
+
+    // 鼠标移入气泡时保持展开
+    pop.addEventListener('mouseenter', () => {
+        if (_wrUpgTimer) { clearTimeout(_wrUpgTimer); _wrUpgTimer = null; }
+    });
+    pop.addEventListener('mouseleave', () => {
+        _wrUpgTimer = setTimeout(wrCloseUpgPop, 200);
+    });
+}
+
+/** 全局监听升级提示的 hover 与 click */
+if (typeof document !== 'undefined') {
+    document.addEventListener('mouseover', e => {
+        const el = e.target.closest ? e.target.closest('.wr-upg') : null;
+        if (el && el.dataset.upgIdx != null) {
+            if (_wrUpgTimer) { clearTimeout(_wrUpgTimer); _wrUpgTimer = null; }
+            wrShowUpgPop(el, Number(el.dataset.upgIdx));
+        }
+    });
+
+    document.addEventListener('mouseout', e => {
+        const el = e.target.closest ? e.target.closest('.wr-upg') : null;
+        if (el) {
+            _wrUpgTimer = setTimeout(wrCloseUpgPop, 240);
+        }
+    });
+
+    document.addEventListener('click', e => {
+        const el = e.target.closest ? e.target.closest('.wr-upg') : null;
+        if (el && el.dataset.upgIdx != null) {
+            e.stopPropagation();
+            wrShowUpgPop(el, Number(el.dataset.upgIdx));
+            return;
+        }
+        if (_wrUpgPop && !e.target.closest('.wr-upg-pop')) {
+            wrCloseUpgPop();
+        }
+    });
+}
+
+if (typeof window !== 'undefined') {
+    window.wrShowUpgPop = wrShowUpgPop;
+    window.wrCloseUpgPop = wrCloseUpgPop;
+    window.WR_UPGRADES = WR_UPGRADES;
 }

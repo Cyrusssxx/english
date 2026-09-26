@@ -134,19 +134,73 @@ function wrAnnotatePlain(t) {
     return out;
 }
 
-/** 划词标注入口：先按 {{占位符}} 切段（占位符只高亮不可点），段内做词组优先标注 */
+/** 划词标注入口：先按 {{占位符}} 与 替换短语 WR_UPGRADES 切段，其余纯文本才做单词标注 */
 function wrAnnotate(text) {
     if (!text) return '';
-    let out = '', last = 0;
+    return wrAnnotateSegment(text);
+}
+
+function wrAnnotateSegment(text) {
+    if (!text) return '';
+    // 1. 先按占位符切段
+    const out = [];
+    let last = 0;
     const re = /\{\{(.+?)\}\}/g;
     let m;
     while ((m = re.exec(text)) !== null) {
-        out += wrAnnotatePlain(text.slice(last, m.index));
-        out += `<span class="wr-ph">${wrEsc(m[1])}</span>`;
+        if (m.index > last) {
+            out.push(wrAnnotateWithUpgrades(text.slice(last, m.index)));
+        }
+        out.push(`<span class="wr-ph">${wrEsc(m[1])}</span>`);
         last = m.index + m[0].length;
     }
-    out += wrAnnotatePlain(text.slice(last));
-    return out;
+    if (last < text.length) {
+        out.push(wrAnnotateWithUpgrades(text.slice(last)));
+    }
+    return out.join('');
+}
+
+/** 在纯文本中优先匹配高分替换短语 WR_UPGRADES，未命中的碎片才进入单词词典标注 */
+function wrAnnotateWithUpgrades(plainText) {
+    if (!plainText || typeof WR_UPGRADES === 'undefined' || !WR_UPGRADES.length) {
+        return wrAnnotatePlain(plainText);
+    }
+    // 找出所有命中的短语及区间
+    const hits = [];
+    WR_UPGRADES.forEach((u, uIdx) => {
+        const p = u.phrase;
+        let pos = 0;
+        while ((pos = plainText.indexOf(p, pos)) !== -1) {
+            hits.push({ s: pos, e: pos + p.length, uIdx, p });
+            pos += p.length;
+        }
+    });
+    if (!hits.length) return wrAnnotatePlain(plainText);
+
+    // 冲突消解：按位置正序，重叠时保留较长或先出现的
+    hits.sort((a, b) => a.s - b.s || (b.e - b.s) - (a.e - a.s));
+    const merged = [];
+    let curEnd = 0;
+    hits.forEach(h => {
+        if (h.s >= curEnd) {
+            merged.push(h);
+            curEnd = h.e;
+        }
+    });
+
+    const res = [];
+    let cur = 0;
+    merged.forEach(h => {
+        if (h.s > cur) {
+            res.push(wrAnnotatePlain(plainText.slice(cur, h.s)));
+        }
+        res.push(`<span class="wr-upg" data-upg-idx="${h.uIdx}" title="悬停或点击查看替换推荐">${wrEsc(plainText.slice(h.s, h.e))}</span>`);
+        cur = h.e;
+    });
+    if (cur < plainText.length) {
+        res.push(wrAnnotatePlain(plainText.slice(cur)));
+    }
+    return res.join('');
 }
 
 /* ---- 释义弹卡（精翻页 word-pop 同款样式，自备定位与开关） ---- */
@@ -783,7 +837,7 @@ function wrSectionCard(sec) {
         : `⭐ 必背 ${wrWords(sec.en)} 词`;
     const fwHtml = sec.framework
         ? `<div class="wr-frame"><div class="wr-frame-title">🧩 第二段框架（${sec.framework.length} 步拼装 · 必背就这 ${sec.framework.length} 步）</div>${sec.framework.map((f, i) => `
-            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${wrEsc(f.en)}</span>${f.trans ? `<span class="wr-frame-trans">${wrEsc(f.trans)}</span>` : ''}<span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>`
+            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${wrAnnotate(f.en)}</span>${f.trans ? `<span class="wr-frame-trans">${wrEsc(f.trans)}</span>` : ''}<span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>`
         : '';
     const tailRows = (sec.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(sec.alts)}</div>` : '')
         + (sec.linkers ? `<div class="wr-alts">✎ 高级衔接词：${wrLinkers(sec.linkers)}</div>` : '')
@@ -1152,3 +1206,7 @@ document.addEventListener('click', e => {
     const img = a.querySelector('img');
     wrZoomOpen(a.getAttribute('href'), img ? img.alt : '');
 });
+
+if (typeof window !== 'undefined') {
+    window.wrToggleApply = wrToggleApply;
+}

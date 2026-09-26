@@ -56,7 +56,7 @@ function applyHtml(ap, year, sid, type) {
     if (!ap || !ap.apply_en) return '';
     const mk = (typeof marksFor === 'function') ? marksFor(type, year) : null;
     const ann = t => annotatePhrases(t, sid || '');
-    const bodyHtml = renderApplyBody(mk, ann) || `<div class="apply-en">${ann(ap.apply_en)}</div>`;
+    const bodyHtml = renderApplyBody(mk, ann) || `<div class="apply-en">${typeof wrWrapUpgrades === 'function' ? wrWrapUpgrades(ann(ap.apply_en)) : ann(ap.apply_en)}</div>`;
     const tips = (ap.tips || []).map(t => `<li>${esc(t)}</li>`).join('');
 
     return `<div class="writing-apply">
