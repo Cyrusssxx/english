@@ -2903,6 +2903,18 @@ html.dark .q-tip {
     cursor: pointer;
 }
 .nt-opt:hover { border-color: var(--primary); color: var(--primary); }
+
+/* 新题型小标题选项与选中值的中文翻译：默认不显示（避免剧透），仅在精读（body.show-quiz-cn）时显示 */
+.nt-opt .nt-opt-cn,
+.nt-val .nt-val-cn {
+    display: none;
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+body.show-quiz-cn .nt-opt .nt-opt-cn,
+body.show-quiz-cn .nt-val .nt-val-cn {
+    display: inline;
+}
 .nt-match {
     border-left: 3px solid var(--primary);
     background: var(--primary-soft);

@@ -417,6 +417,7 @@ function toggleCnAll() {
     // 关闭精读时清掉遗留的手动高亮，避免译文收起后高亮悬空。
     if (!cnAll) clearRelated();
 }
+if (typeof window !== 'undefined') { window.toggleCnAll = toggleCnAll; }
 
 // ============ 初始化 ============
 // 后台数据加载的 Promise：记录生词等操作可 await 它，确保 vocabSet 已就绪
@@ -1155,8 +1156,8 @@ async function resetQuiz() {
     if (!await confirmAsync('清除本篇全部作答记录？', { danger: true })) return;
     await clearAnswers(AID);
     answerMap = {};
-    // 完形题：blank 文本已填入正文，需整篇重绘还原为 [n] 占位
-    if (article.type === 'cloze') { renderArticle(); if (window.Annot) Annot.apply(AID); restoreCnAll(); }
+    // 完形/新题型：blank 文本与小标题空位已填入正文，需整篇重绘还原为初始占位
+    if (article.type === 'cloze' || article.type === 'newtype') { renderArticle(); if (window.Annot) Annot.apply(AID); restoreCnAll(); }
     renderQuiz();
 }
 
@@ -1174,19 +1175,28 @@ function ntPoolCn(q) {
 }
 function ntFindQ(qid) { return (article.questions || []).find(q => q.id === qid); }
 
-/** 小标题题：段落顶部的空位卡（[41] ▾ 选择本段小标题），点击展开候选池 */
+/** 小标题题：段落顶部的空位卡（[41] ▾ 选择本段小标题），点击展开候选池（做题隐藏翻译，精读显示） */
 function ntSlotHtml(q) {
     const ans = answerMap[q.id];
     const pool = ntPool(q);
-    const val = ans
-        ? `${ans.user_answer}. ${pool[ans.user_answer] || ''}`
-        : '选择本段小标题 ▾';
+    const poolCn = ntPoolCn(q);
+    let valHtml = '';
+    if (ans) {
+        const txt = pool[ans.user_answer] || '';
+        const txtCn = poolCn[ans.user_answer] || '';
+        valHtml = `<span class="nt-val-en">${esc(`${ans.user_answer}. ${txt}`)}</span>${txtCn ? `<span class="nt-val-cn">${esc('　' + txtCn)}</span>` : ''}`;
+    } else {
+        valHtml = '<span class="nt-val-en">选择本段小标题 ▾</span>';
+    }
     return `<div class="nt-slot" id="ntslot-${q.id}">
         <span class="nt-no">[${q.number}]</span>
-        <span class="nt-val" id="ntval-${q.id}" onclick="toggleNtOpts('${q.id}')">${esc(val)}</span>
+        <span class="nt-val" id="ntval-${q.id}" onclick="toggleNtOpts('${q.id}')">${valHtml}</span>
         <div class="nt-opts" id="ntopts-${q.id}" hidden>
-            ${Object.keys(pool).map(k =>
-                `<button class="nt-opt" onclick="ntPick('${q.id}','${k}')">${k}. ${esc(pool[k])}${ntPoolCn(q)[k] ? esc('　' + ntPoolCn(q)[k]) : ''}</button>`).join('')}
+            ${Object.keys(pool).map(k => `
+                <button class="nt-opt" onclick="ntPick('${q.id}','${k}')">
+                    <span class="nt-opt-en">${k}. ${esc(pool[k])}</span>
+                    ${poolCn[k] ? `<span class="nt-opt-cn">${esc('　' + poolCn[k])}</span>` : ''}
+                </button>`).join('')}
         </div>
     </div>`;
 }
@@ -1266,7 +1276,13 @@ async function ntPick(qid, key) {
     const q = ntFindQ(qid);
     if (!q) return;
     const val = document.getElementById('ntval-' + qid);
-    if (val) val.innerHTML = esc(`${key}. ${ntPool(q)[key] || ''}`);
+    if (val) {
+        const pool = ntPool(q);
+        const poolCn = ntPoolCn(q);
+        const txt = pool[key] || '';
+        const txtCn = poolCn[key] || '';
+        val.innerHTML = `<span class="nt-val-en">${esc(`${key}. ${txt}`)}</span>${txtCn ? `<span class="nt-val-cn">${esc('　' + txtCn)}</span>` : ''}`;
+    }
     toggleNtOpts(qid, true);
     await onPick(qid, key);
 }
@@ -1418,10 +1434,18 @@ function showResult(q, userKey, scrollToRelated) {
             blank.classList.add(ok ? 'filled-right' : 'filled-wrong');
         }
     }
-    // 新题型：选项池里对应项闪一下，提示该答案的原文
+    // 新题型：选项池里对应项闪一下，提示该答案的原文；正文空位卡联动显示已选小标题
     if (article.type === 'newtype') {
         const po = document.getElementById(`poolopt-${q.answer}`);
         if (po) { po.classList.remove('nt-flash'); void po.offsetWidth; po.classList.add('nt-flash'); }
+        const valEl = document.getElementById('ntval-' + q.id);
+        if (valEl) {
+            const pool = ntPool(q);
+            const poolCn = ntPoolCn(q);
+            const txt = pool[userKey] || '';
+            const txtCn = poolCn[userKey] || '';
+            valEl.innerHTML = `<span class="nt-val-en">${esc(`${userKey}. ${txt}`)}</span>${txtCn ? `<span class="nt-val-cn">${esc('　' + txtCn)}</span>` : ''}`;
+        }
     }
     if (scrollToRelated && (q.related_sentences || []).length && article.type !== 'cloze' && article.type !== 'newtype') locateRelated(q.id);
 }
