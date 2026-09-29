@@ -394,6 +394,17 @@ function restoreCnAll() {
     document.querySelectorAll('.writing-directions-cn, .writing-sample-cn, .translation-ref-cn').forEach(el => { el.hidden = false; });
     document.querySelectorAll('.writing-toggle').forEach(b => { b.textContent = '隐藏中文译文'; });
     syncPhraseZone(true);
+    syncExplFold(true);
+}
+
+/** 精读模式联动：展开/收起已作答题目的折叠解析（默认收起，精读时展开） */
+function syncExplFold(open) {
+    document.querySelectorAll('.expl-body').forEach(body => {
+        body.hidden = !open;
+    });
+    document.querySelectorAll('.expl-fold').forEach(btn => {
+        btn.textContent = open ? '收起解析 ▴' : '展开解析 ▾';
+    });
 }
 
 function toggleCnAll() {
@@ -413,6 +424,8 @@ function toggleCnAll() {
     document.querySelectorAll('.writing-toggle').forEach(b => { b.textContent = cnAll ? '隐藏中文译文' : '显示中文译文'; });
     // 精读模式：底部本篇词组区随开关显示/隐藏
     syncPhraseZone(cnAll);
+    // 精读模式：已答题目的详细解析随精读默认展开/收起
+    syncExplFold(cnAll);
     // 打开精读不自动定位高亮（用户要求，所有题型一致）——高亮定位仅手动点「定位原文依据」；
     // 关闭精读时清掉遗留的手动高亮，避免译文收起后高亮悬空。
     if (!cnAll) clearRelated();
@@ -1406,12 +1419,12 @@ function showResult(q, userKey, scrollToRelated) {
     const expl = document.getElementById(`expl-${q.id}`);
     if (expl) {
         if (article.type === 'cloze' || article.type === 'newtype') {
-            // 完形/新题型：紧凑一行（答案+展开按钮），详细解析与技巧折叠收起；无需定位原文（空位/空位卡即原文）
+            // 完形/新题型：紧凑一行（答案+展开按钮），详细解析与技巧默认折叠收起；开启精读时默认展开
+            const isFolded = !cnAll;
             expl.innerHTML = `<div class="q-expl">
             <span class="expl-tag">${ok ? '✔ 回答正确' : '✘ 回答错误'} · 答案 ${q.answer}</span>
-            <button class="expl-fold" id="explfold-${q.id}" onclick="toggleExplFold('${q.id}')">展开解析 ▾</button>
-            <div class="expl-body" id="explbody-${q.id}" hidden>${esc(q.explanation || '')}${q.tip ? `<div class="q-tip">💡 技巧　${esc(q.tip)}</div>` : ''}</div>
-            ${article.type === 'newtype' && (q.related_sentences || []).length ? `<button class="q-locate" onclick="locateRelated('${q.id}')">↖ 定位原文依据</button>` : ''}
+            <button class="expl-fold" id="explfold-${q.id}" onclick="toggleExplFold('${q.id}')">${isFolded ? '展开解析 ▾' : '收起解析 ▴'}</button>
+            <div class="expl-body" id="explbody-${q.id}" ${isFolded ? 'hidden' : ''}>${esc(q.explanation || '')}${q.tip ? `<div class="q-tip">💡 技巧　${esc(q.tip)}</div>` : ''}</div>
         </div>`;
         } else {
             expl.innerHTML = `${q.quick ? `<div class="q-quick">📌 考题速览　${esc(q.quick)}</div>` : ''}
