@@ -388,6 +388,7 @@ let cnAll = false;
 function restoreCnAll() {
     if (!cnAll) return;
     document.querySelectorAll('.sent-cn').forEach(el => el.classList.add('open'));
+    document.querySelectorAll('.trans-btn').forEach(b => b.classList.add('on'));
     document.body.classList.add('show-quiz-cn');
     showReadTitle(true);
     // 写作模块中文区恢复（与 toggleCnAll 同步，按钮文案一并复原）
@@ -413,6 +414,7 @@ function toggleCnAll() {
     btn.classList.toggle('on', cnAll);
     document.getElementById('cnAllState').textContent = cnAll ? '开' : '关';
     document.querySelectorAll('.sent-cn').forEach(el => el.classList.toggle('open', cnAll));
+    document.querySelectorAll('.trans-btn').forEach(b => b.classList.toggle('on', cnAll));
     // 同步控制题目区（题干/选项）译文显示
     document.body.classList.toggle('show-quiz-cn', cnAll);
     // 展开全部译文时自动显示标题
@@ -514,12 +516,12 @@ function enrichRender() {
     // 精读模式：本篇词组区（词典就绪后 _phraseIndex 可用，正文下方）
     renderPhraseZone();
     openCn.forEach(id => {
-        const cn = document.querySelector(`#s-${CSS.escape(id)} .sent-cn`);
+        const cn = document.querySelector('#s-' + id + ' .sent-cn');
         if (cn) cn.classList.add('open');
     });
     // 恢复收藏星标
     favOn.forEach(id => {
-        const b = document.querySelector(`#s-${CSS.escape(id)} .fav-btn`);
+        const b = document.querySelector('#s-' + id + ' .fav-btn');
         if (b) { b.classList.add('on'); b.textContent = '★'; }
     });
     window.scrollTo(0, y);
@@ -613,11 +615,10 @@ function sentenceHtml(s) {
     const noCn = !(s.cn || '').trim();   // 早期真题（2007-2009）逐句译文缺失
     let out = `<div class="sent" id="s-${s.id}" data-sid="${s.id}">
         <div class="sent-en">${enHtml}
-            <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>${structBtn}
+            <button class="fav-btn ${favOn ? 'on' : ''}" onclick="onFav(event,'${s.id}')" title="收藏句子">${favOn ? '★' : '☆'}</button>${structBtn}<button class="trans-btn" onclick="onCnClick(event,'${s.id}')" title="查看本句译文">译</button>
         </div>
         <div class="sent-cn${noCn ? ' no-cn' : ''}" onclick="onCnClick(event,'${s.id}')">
-            <span class="cn-placeholder">${noCn ? '▾ 本句暂无逐句译文' : '▾ 点击查看翻译'}</span>
-            <span class="cn-text">${esc(s.cn || '')}</span>
+            <span class="cn-text">${esc(s.cn || (noCn ? '本句暂无逐句译文' : ''))}</span>
         </div>`;
     // struct 数据：句下折叠结构树
     if (hasStruct) out += `<div class="struct-tree" id="st-${s.id}" hidden>${structTreeHtml(s.struct.nodes, 0)}</div>`;
@@ -815,13 +816,21 @@ function findWord(text, w) {
 }
 
 // ============ 句子交互 ============
-/** 点占位条展开译文，再点译文收回占位条 */
+/** 点「译」按钮或译文块展开/收起本句译文 */
 function onCnClick(e, sid) {
+    if (e && e.stopPropagation) e.stopPropagation();
     closePop();
-    const cn = document.querySelector(`#s-${CSS.escape(sid)} .sent-cn`);
+    const sentEl = document.getElementById('s-' + sid);
+    if (!sentEl) return;
+    const cn = sentEl.querySelector('.sent-cn');
+    const btn = sentEl.querySelector('.trans-btn');
     if (!cn) return;
-    if (cn.classList.contains('no-cn')) return;   // 无逐句译文：展开也是空白，占位条已提示
-    cn.classList.toggle('open');
+    if (cn.classList.contains('no-cn') && !cn.classList.contains('open')) {
+        toast('本句暂无逐句译文');
+        return;
+    }
+    const open = cn.classList.toggle('open');
+    if (btn) btn.classList.toggle('on', open);
 }
 
 async function onFav(e, sid) {
@@ -1165,7 +1174,7 @@ function renderQuiz() {
         return `<button class="qj-btn ${cls}" id="qj-${q.id}" onclick="jumpQ('${q.id}')">Q${q.number}</button>`;
     }).join('');
     // 恢复历史作答显示
-    for (const q of qs) if (answerMap[q.id]) showResult(q, answerMap[q.id].user_answer, false);
+    for (const q of qs) if (answerMap[q.id]) showResult(q, answerMap[q.id].user_answer);
 }
 
 /** 清除本篇全部作答记录并复位面板 */
@@ -1404,13 +1413,13 @@ async function onPick(qid, key) {
     const firstPick = !answerMap[qid];      // 首次作答才自动跳下一题；改答案留在原地
     answerMap[qid] = { question_id: qid, user_answer: key, is_correct: ok ? 1 : 0 };
     await saveAnswer(qid, AID, key, ok);
-    showResult(q, key, true);
-    // 完形/新题型：答完自动流水线到下一道未答题（阅读题不跳，保持逐题定位原文的节奏）
+    showResult(q, key);   // 一律不自动定位原文（用户要求：定位仅手动点「定位原文依据」）
+    // 完形/新题型：答完自动流水线到下一道未答题（阅读题不跳，保持逐题做题的节奏）
     if (firstPick && (article.type === 'cloze' || article.type === 'newtype')) advanceNextQ(qid);
 }
 
 /** 显示某题的作答结果（restore=false 时也用于页面加载恢复） */
-function showResult(q, userKey, scrollToRelated) {
+function showResult(q, userKey) {
     const ok = userKey === q.answer;
     const opts = (q.options && Object.keys(q.options).length) ? q.options : (article.pool || {});
     for (const k of Object.keys(opts)) {
@@ -1466,7 +1475,7 @@ function showResult(q, userKey, scrollToRelated) {
             valEl.innerHTML = `<span class="nt-val-en">${esc(`${userKey}. ${txt}`)}</span>${txtCn ? `<span class="nt-val-cn">${esc('　' + txtCn)}</span>` : ''}`;
         }
     }
-    if (scrollToRelated && (q.related_sentences || []).length && article.type !== 'cloze' && article.type !== 'newtype') locateRelated(q.id);
+    // 一律不自动定位原文（用户要求：定位仅手动点「定位原文依据」按钮）
 }
 
 /** 高亮题目关联句并滚动定位；再次点击同题按钮则取消高亮 */
@@ -1639,14 +1648,14 @@ function locateRelated(qid) {
         if (el) {
             el.classList.add('related');
             if (!first) first = el;
-            // 顺带展开相关句译文。紧凑竖排（完形/新题型）不自动展开——连续句连排时弹译文会占满整行/整屏，
-            // 干扰做题定位（用户反馈"定位全屏高亮"）；只高亮标注，译文要点句查看。普通阅读题保持自动展开。
+            // 顺带展开相关句译文——仅精读模式（cnAll）下；非精读只高亮定位，
+            // 不显示翻译（用户要求：非精读做题一律不显示翻译）。紧凑竖排（完形/新题型）从不自动展开。
             const cn = el.querySelector('.sent-cn');
-            if (cn && article.type !== 'newtype' && article.type !== 'cloze') cn.classList.add('open');
+            if (cn && cnAll && article.type !== 'newtype' && article.type !== 'cloze') cn.classList.add('open');
         }
     }
     locatedQid = qid;
-    const btn = document.querySelector(`#expl-${CSS.escape(qid)} .q-locate`);
+    const btn = document.querySelector('#expl-' + qid + ' .q-locate');
     if (btn) { btn.classList.add('active'); btn.textContent = '✕ 取消定位'; }
     if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
