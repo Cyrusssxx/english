@@ -753,53 +753,65 @@ html.dark .para-compact .sent.related {
     color: var(--warning);
 }
 
-/* 译文区：默认为“点击查看翻译”占位条（淡化），.open 后原位显示译文 */
-.sent-cn {
-    background: transparent;
-    border: 1px dashed rgba(128, 128, 128, 0.28);
-    border-radius: 6px;
-    padding: 4px 10px;
-    margin: 4px 0 7px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: border-color 0.15s, background 0.15s;
-}
-
-.sent-cn .cn-placeholder {
-    display: block;
-    text-align: center;
+/* 句子单句译文切换按钮（默认隐形，hover 句子时淡入） */
+.sent-en .trans-btn {
+    background: none;
+    border: 1px solid var(--border);
     color: var(--text-light);
-    opacity: 0.55;
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    user-select: none;
-    transition: opacity 0.15s;
+    font-size: 0.72rem;
+    padding: 1px 6px;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-left: 6px;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 0.18s, border-color 0.18s, color 0.18s;
 }
 
-.sent-cn:hover .cn-placeholder {
-    opacity: 0.95;
+.sent:hover .trans-btn,
+.sent-en .trans-btn.on {
+    opacity: 0.65;
+}
+
+.sent-en .trans-btn:hover,
+.sent-en .trans-btn.on:hover {
+    opacity: 1;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.sent-en .trans-btn.on {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-soft);
+}
+
+/* 译文区：收起态完全隐形（不占高度、无边框、无碍眼字样），.open 后优雅展示译文 */
+.sent-cn {
+    display: none;
 }
 
 .sent-cn.open {
+    display: block;
     background: var(--primary-soft);
-    border-color: transparent;
+    border-left: 2px solid var(--primary);
+    border-radius: 0 6px 6px 0;
+    padding: 6px 12px;
+    margin: 6px 0 10px;
+    font-size: 0.9rem;
+    line-height: 1.62;
+    color: var(--primary-dark);
+    cursor: pointer;
+    animation: fadeIn 0.15s ease;
+}
+
+html.dark .sent-cn.open {
+    color: #7edcd2;
+    background: rgba(13, 148, 136, 0.12);
 }
 
 .sent-cn .cn-text {
-    display: none;
-    color: var(--primary-dark);
-}
-
-.sent-cn.open .cn-placeholder {
-    display: none;
-}
-
-.sent-cn.open .cn-text {
     display: block;
-}
-
-html.dark .sent-cn .cn-text {
-    color: #7edcd2;
 }
 
 /* 正文单词/词组：默认清爽无常驻下划线，hover 才提示可点；仅生词本词常驻高亮 */
