@@ -698,12 +698,18 @@ function annotate(s) {
     return { html, missed };
 }
 
-/** 纯文本段渲染：词典命中的难词→可点 span；完形空格 [n]→blank；其余转义 */
+/** 标点与符号转义：破折号添加呼吸间隙 span，其余标准 HTML 转义 */
+function escPunct(s) {
+    if (!s) return '';
+    return esc(s).replace(/—/g, '<span class="em-dash">—</span>');
+}
+
+/** 纯文本段渲染：词典命中的难词→可点 span；完形空格 [n]→blank；破折号与标点格式化；其余转义 */
 function annotatePlain(text, sid) {
     const RE = /\[(\d+)\]|[A-Za-z][A-Za-z'\-]*/g;
     let out = '', last = 0, m;
     while ((m = RE.exec(text)) !== null) {
-        out += esc(text.slice(last, m.index));
+        out += escPunct(text.slice(last, m.index));
         if (m[1] !== undefined) {
             out += `<span class="blank" id="blank-${m[1]}" onclick="onBlankClick(event,${m[1]})">[${m[1]}]</span>`;
         } else {
@@ -718,7 +724,7 @@ function annotatePlain(text, sid) {
         }
         last = m.index + m[0].length;
     }
-    out += esc(text.slice(last));
+    out += escPunct(text.slice(last));
     return out;
 }
 

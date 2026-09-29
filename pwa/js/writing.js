@@ -4,7 +4,9 @@ let WR = null;
 const WR_PH = /\{\{(.+?)\}\}/g;
 
 function wrEsc(s) {
-    return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    return String(s == null ? '' : s)
+        .replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
+        .replace(/—/g, '<span class="em-dash">—</span>');
 }
 
 /** 转义 + 占位符高亮（{{xxx}} → 蓝色可替换标记） */

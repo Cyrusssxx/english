@@ -645,10 +645,12 @@ html.dark .writing-toggle {
 }
 
 .writing-sample-en {
-    font-family: Georgia, serif;
-    line-height: 1.7;
+    font-family: "Times New Roman", Times, "Nimbus Roman", Georgia, serif;
+    line-height: 1.76;
+    word-spacing: 0.12em;
+    letter-spacing: 0.01em;
     white-space: pre-wrap;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
 }
 
 .writing-sample-cn {
@@ -718,9 +720,23 @@ html.dark .para-compact .sent.related {
 }
 
 .sent-en {
-    font-size: 1.06rem;
-    font-family: Georgia, "Times New Roman", "Microsoft YaHei", serif;
+    font-size: 1.08rem;
+    font-family: "Times New Roman", Times, "Nimbus Roman", "Source Serif 4", Georgia, serif;
+    line-height: 1.76;
+    word-spacing: 0.14em;           /* 增大单词之间的间隙，彻底解决间隙过小问题 */
+    letter-spacing: 0.012em;        /* 字母微舒展，标点符号留出充裕的呼吸位置 */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 1;
     position: relative;
+}
+
+/* 破折号微呼吸间隙：两端留白，彻底解决紧贴字母的压迫感 */
+.em-dash {
+    margin: 0 0.18em;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 .sent-en .fav-btn {
@@ -864,7 +880,7 @@ html.dark .word.tgt {
     color: var(--primary);
     font-weight: 600;
     cursor: pointer;
-    margin: 0 2px;
+    margin: 0 0.22em;
     transition: background 0.15s;
 }
 .blank:hover { background: var(--primary-soft2, var(--primary-soft)); }
@@ -1103,7 +1119,11 @@ html.dark .q-type-badge {
 }
 
 .q-stem {
-    font-size: 0.98rem;
+    font-family: "Times New Roman", Times, "Nimbus Roman", Georgia, serif;
+    font-size: 1.02rem;
+    line-height: 1.68;
+    word-spacing: 0.12em;
+    letter-spacing: 0.01em;
     margin-bottom: 2px;
 }
 
@@ -1128,7 +1148,10 @@ html.dark .q-type-badge {
 }
 
 .q-opt .opt-en {
-    font-size: 0.95rem;
+    font-family: "Times New Roman", Times, "Nimbus Roman", Georgia, serif;
+    font-size: 0.98rem;
+    line-height: 1.62;
+    word-spacing: 0.11em;
 }
 
 .q-opt .opt-cn {
