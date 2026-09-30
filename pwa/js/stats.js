@@ -36,6 +36,12 @@ async function stInit() {
         return /^text\d$/.test(t) ? '阅读' : (t === 'cloze' ? '完形' : (t === 'newtype' ? '新题型' : (t === 'translation' ? '翻译' : t)));
     }
 
+    /** 文章短标签：阅读题显示 Text 编号（text1 → Text1），其余题型显示中文名 */
+    function artLabel(t) {
+        if (/^text\d$/.test(t)) return 'Text' + t.slice(4);
+        return t === 'cloze' ? '完形' : (t === 'newtype' ? '新题型' : (t === 'translation' ? '翻译' : t));
+    }
+
     const perArt = {};      // id -> {ok, n, info}
     const perType = {};     // '阅读' -> {ok,n}
     const perQtype = {};    // '细节题' -> {ok,n}
@@ -93,15 +99,14 @@ async function stInit() {
             const r = p.ok / p.n;
             const cls = stRateColor(r);
             return `<tr>
-                <td><span class="st-tag ${p.info.book === '英语一' ? 'en1' : 'en2'}">${p.info.book}</span>${p.info.year} · ${typeSel(p.info.type)}</td>
-                <td class="art-title">${esc(p.info.title)}</td>
+                <td><span class="st-tag ${p.info.book === '英语一' ? 'en1' : 'en2'}">${p.info.book}</span>${p.info.year} · ${artLabel(p.info.type)}</td>
                 <td><span class="ac-rate ${cls}">${p.ok}/${p.n} · ${Math.round(r * 100)}%</span></td>
                 <td>${stBar(p.ok, p.n)}</td>
                 <td><a href="article.html?id=${p.id}">重做 →</a></td>
             </tr>`;
         });
         wrongHtml = `<div class="st-table-wrap"><table class="st-table">
-            <thead><tr><th>文章</th><th>标题</th><th>正确率</th><th>分布</th><th></th></tr></thead>
+            <thead><tr><th>文章</th><th>正确率</th><th>分布</th><th></th></tr></thead>
             <tbody>${rows.join('')}</tbody></table></div>`;
     }
     document.getElementById('stWrongList').innerHTML = wrongHtml;
