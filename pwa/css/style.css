@@ -4687,3 +4687,187 @@ html.dark .wr-upg-pop .wup-tag {
     color: var(--text-light);
     text-align: right;
 }
+
+/* ==================== 完形·翻译词库（wordnotes ② 号视图） ==================== */
+.vw-btn {
+    font: inherit;
+    font-size: 0.88rem;
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text-light);
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.vw-btn:hover { border-color: var(--primary); color: var(--primary); }
+.vw-btn.on {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    font-weight: 700;
+}
+
+.lex-progress {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    background: var(--primary-soft);
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin-bottom: 12px;
+}
+.lex-progress .lp-total { font-weight: 700; color: var(--primary-dark); }
+.lex-progress b { color: var(--text); }
+.lex-progress .lp-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-left: 8px; }
+.lex-progress .lp-dot.d1 { background: #dc3545; }
+.lex-progress .lp-dot.d2 { background: #f59e0b; }
+.lex-progress .lp-dot.d3 { background: #28a745; }
+.lex-progress .lp-bar {
+    flex: 1 1 120px;
+    min-width: 100px;
+    height: 6px;
+    background: rgba(128, 128, 128, 0.18);
+    border-radius: 999px;
+    overflow: hidden;
+}
+.lex-progress .lp-bar i { display: block; height: 100%; background: var(--primary); border-radius: 999px; transition: width 0.3s; }
+
+.lex-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.lex-toolbar .wn-search { flex: 1 1 auto; }
+.lex-mode-btn {
+    font: inherit;
+    font-size: 0.84rem;
+    padding: 7px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text-light);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.15s, color 0.15s;
+}
+.lex-mode-btn:hover { border-color: var(--primary); color: var(--primary); }
+.lex-mode-btn.on {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    font-weight: 700;
+}
+
+.lex-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.lex-fgroup { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.lex-flabel {
+    flex: 0 0 3.2em;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.lex-seg { margin-bottom: 14px; }
+.lex-seg summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+    padding: 6px 4px;
+    user-select: none;
+}
+.lex-seg summary:hover { color: var(--primary); }
+
+.lex-table .lex-row { transition: background 0.15s; }
+.lex-table .lex-row > td { cursor: pointer; }
+.lex-table .lx-w b { font-size: 0.98rem; }
+.lex-table .lx-cat {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 0.68rem;
+    padding: 0 7px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-light);
+    vertical-align: 1px;
+}
+.lex-table .lx-cat.c-衔接 { color: #534AB7; border-color: #b9b3e8; }
+.lex-table .lx-cat.c-搭配 { color: #2E5A0D; border-color: #b5d494; }
+.lex-table .lx-cat.c-僻义 { color: #A32D2D; border-color: #e8b3b3; }
+.lex-table .lx-cat.c-实词 { color: var(--primary-dark); border-color: var(--primary); }
+.lex-table .lx-diff {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0.68rem;
+    padding: 0 6px;
+    border-radius: 4px;
+    vertical-align: 1px;
+}
+.lex-table .lx-diff.d1 { background: #eef0f2; color: #7c848d; }
+.lex-table .lx-diff.d2 { background: #fff3d6; color: #8a6100; }
+.lex-table .lx-diff.d3 { background: #fde8e8; color: #b3261e; }
+.lex-table .lx-freq { margin-left: 6px; font-size: 0.72rem; color: var(--text-light); }
+.lex-table .lx-cn-main { font-size: 0.86rem; color: var(--text); line-height: 1.55; }
+
+.lex-table .mk {
+    font: inherit;
+    font-size: 0.74rem;
+    padding: 2px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text-light);
+    cursor: pointer;
+    margin-right: 4px;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+.lex-table .mk:hover { border-color: var(--primary); color: var(--primary); }
+.lex-table .mk.mk1.on { background: rgba(220, 53, 69, 0.14); border-color: #dc3545; color: #b3261e; font-weight: 700; }
+.lex-table .mk.mk2.on { background: rgba(245, 158, 11, 0.16); border-color: #f59e0b; color: #8a6100; font-weight: 700; }
+.lex-table .mk.mk3.on { background: rgba(40, 167, 69, 0.14); border-color: #28a745; color: #1e7e34; font-weight: 700; }
+
+.lex-table .lex-row.mk1 { background: rgba(220, 53, 69, 0.05); }
+.lex-table .lex-row.mk2 { background: rgba(245, 158, 11, 0.06); }
+.lex-table .lex-row.mk3 { background: rgba(128, 128, 128, 0.06); opacity: 0.62; }
+.lex-table .lex-row.open { background: var(--primary-soft); }
+
+.lex-table .lex-detail td {
+    background: var(--bg);
+    border-top: 1px dashed var(--border);
+    font-size: 0.84rem;
+    line-height: 1.65;
+    padding: 8px 12px;
+}
+.lex-table .lex-detail[hidden] { display: none; }
+.lex-table .lx-d-cn { color: var(--primary-dark); font-weight: 600; margin-bottom: 4px; }
+.lex-table .lx-d-common { color: var(--text-light); margin-bottom: 2px; }
+.lex-table .lx-d-uncommon { color: var(--text); margin-bottom: 4px; }
+.lex-table .lx-d-uncommon b { color: #A32D2D; }
+.lex-table .lx-d-sent { font-family: "Times New Roman", Times, Georgia, serif; word-spacing: 0.12em; color: var(--text); }
+.lex-table .lx-d-sentcn { color: var(--text-light); margin: 2px 0 3px; }
+.lex-table .lx-d-src { font-size: 0.74rem; color: var(--text-light); opacity: 0.8; }
+
+#viewLex.selftest .lx-cn-main { display: none; }
+#viewLex.selftest .lex-row .lx-w b { font-size: 1.05rem; }
+
+html.dark .lex-table .lx-cat.c-衔接 { color: #CECBF6; border-color: #3C3489; }
+html.dark .lex-table .lx-cat.c-搭配 { color: #C0DD97; border-color: #27500A; }
+html.dark .lex-table .lx-cat.c-僻义 { color: #F7C1C1; border-color: #501313; }
+html.dark .lex-table .lx-diff.d1 { background: #2b3038; color: #9aa3ad; }
+html.dark .lex-table .lx-diff.d2 { background: #4a3a12; color: #ffd98a; }
+html.dark .lex-table .lx-diff.d3 { background: #4a1f1c; color: #ffb4ab; }
+html.dark .lex-table .lex-row.mk1 { background: rgba(220, 53, 69, 0.10); }
+html.dark .lex-table .lex-row.mk2 { background: rgba(245, 158, 11, 0.10); }
+html.dark .lex-table .lex-row.mk3 { background: rgba(128, 128, 128, 0.08); }
+html.dark .lex-table .lex-row.open { background: #123f3a; }
+html.dark .lex-table .lex-detail td { background: #10201e; }
+html.dark .lex-progress .lp-dot.d1 { background: #e05260; }

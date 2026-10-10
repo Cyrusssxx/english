@@ -38,19 +38,61 @@
 
     <main class="wn-page">
         <h1 class="wn-title">熟词僻义</h1>
-        <p class="wn-hint">
-            <b>判义规则</b>：逐词回真题语料核对实际义项，<b>只收真题里真正考过「僻义」的词</b>——
-            该词在真题句中的实际含义 ≠ 它最常见的含义（真题没考过僻义的词一律不收）。
-            <b>熟义</b>取 ECDICT 常见义，<b>僻义</b>由真题例句反推，<b>原句</b>即该僻义的真题出处（句下为官方译文与本词出现过的年份）。
-            译文只采信「英语二 2010+」的可靠逐句译文，其余来源只显示英文原句。
-        </p>
-        <div class="wn-bar" id="wnYears"></div>
-        <input id="wnSearch" class="wn-search" type="search" placeholder="搜索单词 / 熟义 / 僻义（如 bill、宣传）">
-        <div class="wn-count" id="wnCount"></div>
-        <div id="wnContent"><p style="color:var(--text-light)">加载中…</p></div>
+
+        <div class="vw-bar">
+            <button type="button" class="vw-btn on" data-v="notes">① 熟词僻义</button>
+            <button type="button" class="vw-btn" data-v="lex">② 完形·翻译词库</button>
+        </div>
+
+        <section id="viewNotes">
+            <p class="wn-hint">
+                <b>判义规则</b>：逐词回真题语料核对实际义项，<b>只收真题里真正考过「僻义」的词</b>——
+                该词在真题句中的实际含义 ≠ 它最常见的含义（真题没考过僻义的词一律不收）。
+                <b>熟义</b>取 ECDICT 常见义，<b>僻义</b>由真题例句反推，<b>原句</b>即该僻义的真题出处（句下为官方译文与本词出现过的年份）。
+                译文只采信「英语二 2010+」的可靠逐句译文，其余来源只显示英文原句。
+            </p>
+            <div class="wn-bar" id="wnYears"></div>
+            <input id="wnSearch" class="wn-search" type="search" placeholder="搜索单词 / 熟义 / 僻义（如 bill、宣传）">
+            <div class="wn-count" id="wnCount"></div>
+            <div id="wnContent"><p style="color:var(--text-light)">加载中…</p></div>
+        </section>
+
+        <section id="viewLex" hidden>
+            <p class="wn-hint">
+                <b>完形·翻译词库</b>：2010–2026 英二<b>完形填空</b>选项里的全部考点词与词组（含逻辑衔接 / 核心实词 / 固定搭配），<b>孤立介词已还原为真题搭配</b>（如 account for），
+                并收入完形考过的<b>熟词僻义</b>。排序 = <b>考频 × 难度</b>加权综合分（考得越多、越难 → 越靠前）。<br>
+                <b>用法</b>：开「自测模式」看词回想 → 点行验证 → 标记（不会 / 不熟 / 熟）→ 熟的自动沉底，配合「未标记」筛选逐段清空词表。
+            </p>
+            <div class="lex-progress" id="lexProgress"></div>
+            <div class="lex-toolbar">
+                <input id="lexSearch" class="wn-search" type="search" placeholder="搜索单词 / 词组 / 释义（如 account for、宣传）">
+                <button id="lexModeBtn" class="lex-mode-btn" onclick="lxToggleMode()" title="自测模式：隐藏释义，看词回想后点行验证">自测模式：关</button>
+            </div>
+            <div class="lex-filters" id="lexFilters"></div>
+            <div class="wn-count" id="lexCount"></div>
+            <div id="lexContent"><p style="color:var(--text-light)">加载中…</p></div>
+        </section>
     </main>
 
     <script src="js/common.js"></script>
     <script src="js/wordnotes.js"></script>
+    <script src="js/wnlex.js"></script>
+    <script>
+        /* 熟词僻义 / 完形·翻译词库 同页切换（记住上次的选择） */
+        (function () {
+            var KEY = 'wn_view_v1';
+            var btns = [].slice.call(document.querySelectorAll('.vw-btn'));
+            function show(v) {
+                document.getElementById('viewNotes').hidden = v !== 'notes';
+                document.getElementById('viewLex').hidden = v !== 'lex';
+                btns.forEach(function (b) { b.classList.toggle('on', b.dataset.v === v); });
+                try { localStorage.setItem(KEY, v); } catch (e) { /* ignore */ }
+            }
+            btns.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.v); }); });
+            var saved = 'notes';
+            try { saved = localStorage.getItem(KEY) || 'notes'; } catch (e) { /* ignore */ }
+            show(saved === 'lex' ? 'lex' : 'notes');
+        })();
+    </script>
 </body>
 </html>

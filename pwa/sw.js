@@ -2,7 +2,7 @@
  * 预缓存全部页面/样式/脚本/题库/图标，安装后完全离线可用。
  * 升级题库或代码后：CACHE_VER 会随资源内容自动变化，客户端自动换新缓存。
  */
-const CACHE_VER = 'en2-c6f807c3';
+const CACHE_VER = 'en2-ad7ae127';
 
 const PRECACHE = [
     'index.html',
@@ -45,6 +45,7 @@ const PRECACHE = [
     'js/recite.js',
     'js/storage.js',
     'js/study.js',
+    'js/wnlex.js',
     'data/2007.json',
     'data/2008.json',
     'data/2009.json',
@@ -101,6 +102,7 @@ const PRECACHE = [
     'data/phrases.json',
     'data/small_apply.json',
     'data/small_apply_marks.json',
+    'data/wnlex.json',
     'data/wordbook_freq.json',
     'data/wordbook_obscure.json',
     'data/wordnotes_notes.json',
