@@ -46,6 +46,21 @@ def lemma(w):
     m = re.search(r'0:([a-z\'\-]+)', ex)
     return m.group(1) if m else w
 
+def clean_opt(o):
+    """选项文本清洗：`(throw)...off` → `throw off`；`(bill)boards` → 去括号保留实词。
+    返回规范化后的选项文本（可能为空 → 调用方跳过）。"""
+    o = o.strip().lower()
+    if not o:
+        return ''
+    # 1) 括号提示 + 省略号：`(throw)...off` / `(throw)...against`
+    o = re.sub(r"\(([a-z'\- ]+)\)\s*\.{2,}\s*([a-z'\- ]*)", lambda m: (m.group(1) + ' ' + m.group(2)).strip(), o)
+    # 2) 「(throw one's weight) behind」→ 完整搭配
+    o = re.sub(r"\(([a-z'\- ]+)\)\s+([a-z'\- ]+)", lambda m: (m.group(1) + ' ' + m.group(2)).strip(), o)
+    # 3) 残余括号 → 仅保留括号内实义部分（(bill)boards → billboards）
+    o = re.sub(r"\(([a-z'\-]+)\)", r'\1', o)
+    o = re.sub(r"\.{2,}", ' ', o)
+    return re.sub(r'\s+', ' ', o).strip()
+
 def diff_of(w):
     """难度按 BNC/FRQ 词频排名：≤3000 易 / ≤15000 中 / 其余或无数据 难"""
     rank = EC.get(w, {}).get('rank', 10 ** 9)
@@ -84,6 +99,14 @@ PHRASE_FIX = {             # 选项词形 → 规范词条词形
     'did away': 'do away (with)',
     'do away': 'do away (with)',
 }
+# 残缺选项清洗：`(throw)...against` 这类「括号提示 + 省略号」的选项，还原为完整搭配
+ELLIPSIS_FIX = {
+    '(throw)against': 'throw against',
+    '(throw)into': 'throw into',
+    '(throw)off': 'throw off',
+    "throw one's weight behind": "throw one's weight behind",
+    'throw off': 'throw off',
+}
 for f in sorted(glob.glob('pwa/data/20*.json')):
     d = json.load(io.open(f, encoding='utf-8'))
     for a in d.get('articles', []):
@@ -98,11 +121,10 @@ for f in sorted(glob.glob('pwa/data/20*.json')):
                 sent_of_num[(aid, int(m.group(1)))] = s
         for q in a.get('questions', []):
             for o in (q.get('options') or {}).values():
-                o = str(o).strip().lower()
+                o = clean_opt(str(o))          # 先清洗（(throw)...off → throw off），再判词/词组
                 if not o:
                     continue
                 if ' ' in o:
-                    o = re.sub(r"[()]", '', o)
                     opt_phrases[o] += 1
                 else:
                     opt_words[o] += 1
@@ -169,6 +191,10 @@ PHRASE_CN = {
     'come across': '偶然遇到；被理解',
     'grow into': '成长为；逐渐适应',
     'divide into': '把…分成；划分为',
+    'throw against': '使撞击；使与…对立',
+    'throw into': '使投入；使陷入（某种状态）',
+    'throw off': '摆脱；甩掉；使混乱',
+    "throw one's weight behind": '全力支持；动用影响力支持',
 }
 
 def phrase_cn(p):
@@ -276,7 +302,7 @@ for f in sorted(glob.glob('pwa/data/20*.json')):
                 o = str(o).strip().lower()
                 if not o:
                     continue
-                o = re.sub(r"[()]", '', o)
+                o = clean_opt(o)
                 toks = o.split()
                 if toks:
                     toks[0] = lemma(toks[0])

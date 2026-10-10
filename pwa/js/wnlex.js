@@ -37,6 +37,22 @@ function lxToggleMode() {
     lxRender();
 }
 
+/** 默认展开例句开关：非自测模式下，例句详情默认可见（随 50 条分段折叠，不会一次铺开 985 条） */
+const LX_EXPAND_KEY = 'wnLex_expand_v1';
+function lxExpand() {
+    try { return localStorage.getItem(LX_EXPAND_KEY) === '1'; } catch (e) { return false; }
+}
+function lxToggleExpand() {
+    const on = !lxExpand();
+    try { localStorage.setItem(LX_EXPAND_KEY, on ? '1' : '0'); } catch (e) { /* ignore */ }
+    const btn = document.getElementById('lexExpandBtn');
+    if (btn) {
+        btn.textContent = '展开例句：' + (on ? '开' : '关');
+        btn.classList.toggle('on', on);
+    }
+    lxRender();
+}
+
 /** 标记分层排序键：不会=0 → 不熟=1 → 无标记=2 → 熟=3 */
 function lxMarkRank(m) {
     if (m === 1) return 0;
@@ -149,14 +165,16 @@ function lxRender() {
 
 function lxRow(r, marks, selftest) {
     const m = marks[r.id] || 0;
+    const expand = lxExpand() && !selftest;      // 自测模式优先：自测时例句也要点行才显示
     const catTag = `<span class="lx-cat c-${r.cat}">${LX_CAT_LABEL[r.cat] || r.cat}</span>`;
     const diffTag = `<span class="lx-diff d${r.diff_val}">${r.diff}</span>`;
     const freqTag = r.freq_note ? `<span class="lx-freq">${lxEsc(r.freq_note)}</span>` : '';
     const mkCls = m ? ' mked' : '';
-    const detail = lxDetailHtml(r, selftest);
-    return `<tr class="lex-row mk${m}${mkCls}" data-id="${lxEsc(r.id)}">
+    const detail = lxDetailHtml(r, selftest, expand);
+    return `<tr class="lex-row mk${m}${mkCls}${expand ? ' expanded' : ''}" data-id="${lxEsc(r.id)}">
         <td class="lx-w" data-label="词">
-            <b>${lxEsc(r.w)}</b>${catTag}${diffTag}<span class="lx-freq">${freqTag ? freqTag : ''}</span>
+            <div class="lx-w-main">${lxEsc(r.w)}</div>
+            <div class="lx-w-tags">${catTag}${diffTag}${freqTag || ''}</div>
         </td>
         <td class="lx-cn" data-label="释义"><div class="lx-cn-main">${lxEsc(r.cn || '')}</div></td>
         <td class="lx-mark" data-label="标记">
@@ -167,7 +185,7 @@ function lxRow(r, marks, selftest) {
     </tr>${detail}`;
 }
 
-function lxDetailHtml(r, selftest) {
+function lxDetailHtml(r, selftest, expand) {
     let inner = '';
     if (selftest) inner += `<div class="lx-d-cn">${lxEsc(r.cn || '')}</div>`;
     if (r.cat === '僻义' && r.common) {
@@ -180,7 +198,7 @@ function lxDetailHtml(r, selftest) {
     }
     if (r.src) inner += `<div class="lx-d-src">${lxEsc(r.src)}</div>`;
     if (!inner) return '';
-    return `<tr class="lex-detail" data-for="${lxEsc(r.id)}" hidden><td colspan="3">${inner}</td></tr>`;
+    return `<tr class="lex-detail" data-for="${lxEsc(r.id)}"${expand ? '' : ' hidden'}><td colspan="3">${inner}</td></tr>`;
 }
 
 /** 事件委托：点标记按钮 / 点行展开例句 */
@@ -227,6 +245,8 @@ async function lxInit() {
         lxBindEvents();
         const btn = document.getElementById('lexModeBtn');
         if (btn && lxMode()) { btn.textContent = '自测模式：开'; btn.classList.add('on'); }
+        const ebtn = document.getElementById('lexExpandBtn');
+        if (ebtn && lxExpand()) { ebtn.textContent = '展开例句：开'; ebtn.classList.add('on'); }
         const sec = document.getElementById('viewLex');
         if (sec) sec.classList.toggle('selftest', lxMode());
         lxRender();

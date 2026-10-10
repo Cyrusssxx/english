@@ -65,8 +65,9 @@
             </p>
             <div class="lex-progress" id="lexProgress"></div>
             <div class="lex-toolbar">
-                <input id="lexSearch" class="wn-search" type="search" placeholder="搜索单词 / 词组 / 释义（如 account for、宣传）">
                 <button id="lexModeBtn" class="lex-mode-btn" onclick="lxToggleMode()" title="自测模式：隐藏释义，看词回想后点行验证">自测模式：关</button>
+                <button id="lexExpandBtn" class="lex-mode-btn" onclick="lxToggleExpand()" title="默认展开例句：非自测模式下例句详情默认展示（随分段折叠，不会一次铺开 985 条）">展开例句：关</button>
+                <input id="lexSearch" class="wn-search lex-search" type="search" placeholder="搜索单词 / 词组 / 释义">
             </div>
             <div class="lex-filters" id="lexFilters"></div>
             <div class="wn-count" id="lexCount"></div>

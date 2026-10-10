@@ -4739,10 +4739,16 @@ html.dark .wr-upg-pop .wup-tag {
 .lex-toolbar {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
-.lex-toolbar .wn-search { flex: 1 1 auto; }
+.lex-toolbar .lex-search {
+    flex: 0 1 auto;
+    width: 240px;
+    max-width: 100%;
+    margin-left: auto;
+}
 .lex-mode-btn {
     font: inherit;
     font-size: 0.84rem;
@@ -4777,19 +4783,9 @@ html.dark .wr-upg-pop .wup-tag {
 }
 
 .lex-seg { margin-bottom: 14px; }
-.lex-seg summary {
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: var(--primary-dark);
-    padding: 6px 4px;
-    user-select: none;
-}
-.lex-seg summary:hover { color: var(--primary); }
 
 .lex-table .lex-row { transition: background 0.15s; }
 .lex-table .lex-row > td { cursor: pointer; }
-.lex-table .lx-w b { font-size: 0.98rem; }
 .lex-table .lx-cat {
     display: inline-block;
     margin-left: 8px;
@@ -4857,7 +4853,6 @@ html.dark .wr-upg-pop .wup-tag {
 .lex-table .lx-d-src { font-size: 0.74rem; color: var(--text-light); opacity: 0.8; }
 
 #viewLex.selftest .lx-cn-main { display: none; }
-#viewLex.selftest .lex-row .lx-w b { font-size: 1.05rem; }
 
 html.dark .lex-table .lx-cat.c-衔接 { color: #CECBF6; border-color: #3C3489; }
 html.dark .lex-table .lx-cat.c-搭配 { color: #C0DD97; border-color: #27500A; }
@@ -4871,3 +4866,130 @@ html.dark .lex-table .lex-row.mk3 { background: rgba(128, 128, 128, 0.08); }
 html.dark .lex-table .lex-row.open { background: #123f3a; }
 html.dark .lex-table .lex-detail td { background: #10201e; }
 html.dark .lex-progress .lp-dot.d1 { background: #e05260; }
+/* ==================== 词库表格排版优化（lex-table 专属） ==================== */
+/* 列宽体系：词列 160px 固定 / 释义自适应 / 标记列 210px 固定，消除 4 元素挤乱 */
+.lex-table { min-width: 640px; table-layout: fixed; }
+.lex-table th:nth-child(1) { width: 168px; }
+.lex-table th:nth-child(3) { width: 208px; }
+.lex-table th:nth-child(2) { width: auto; }
+
+/* 表头：收紧、去重线感 */
+.lex-table thead th {
+    font-size: 0.78rem;
+    padding: 7px 12px;
+    letter-spacing: 0.03em;
+    border-color: transparent;
+    border-bottom: 2px solid var(--primary);
+    background: transparent;
+    color: var(--text-light);
+}
+
+/* 行：收紧纵向 padding，行高由内容撑（长释义不撑爆） */
+.lex-table tbody td {
+    padding: 9px 12px;
+    border-color: transparent;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+.lex-table tbody tr:last-child td { border-bottom: none; }
+.lex-table tbody tr:nth-child(even) { background: transparent; }   /* 去掉斑马纹，靠标记色区分 */
+.lex-table tbody tr.lex-row:hover { background: var(--primary-soft); }
+
+/* 词列：主词一行（大号衬线）+ 徽标行一行（小号），彻底解决挤乱 */
+.lex-table .lx-w { width: 168px; }
+.lex-table .lx-w-main {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    font-size: 1.0rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.3;
+    word-break: break-word;
+    letter-spacing: 0.01em;
+}
+.lex-table .lx-w-tags {
+    margin-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    line-height: 1.2;
+}
+.lex-table .lx-cat { margin-left: 0; }
+.lex-table .lx-diff { margin-left: 0; }
+.lex-table .lx-freq { margin-left: 0; white-space: nowrap; }
+
+/* 释义列：正文色、舒适行距、长释义自然折行 */
+.lex-table .lx-cn { padding-right: 16px; }
+.lex-table .lx-cn-main {
+    font-size: 0.87rem;
+    color: var(--text);
+    line-height: 1.62;
+    word-break: break-word;
+}
+
+/* 标记列：三按钮等宽排布，右缘对齐 */
+.lex-table .lx-mark {
+    width: 208px;
+    white-space: nowrap;
+    text-align: right;
+}
+.lex-table .mk {
+    min-width: 56px;
+    text-align: center;
+    margin-right: 3px;
+    padding: 3px 0;
+}
+.lex-table .mk:last-child { margin-right: 0; }
+
+/* 分段标题：更克制的形态（左侧细导轨 + 计数右对齐） */
+.lex-seg summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-light);
+    padding: 7px 10px;
+    margin-bottom: 2px;
+    border-left: 3px solid var(--primary);
+    border-radius: 0 6px 6px 0;
+    background: var(--primary-soft);
+}
+.lex-seg summary:hover { color: var(--primary-dark); }
+.lex-seg[open] summary { color: var(--primary-dark); }
+.lex-seg .wn-table-wrap { border: none; border-radius: 0; margin-bottom: 10px; }
+
+/* 例句展开区：左右缩进 + 细分隔，视觉从属于所在词条 */
+.lex-table .lex-detail td {
+    padding: 10px 14px 12px 56px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.83rem;
+}
+.lex-table .lex-detail .lx-d-sent {
+    font-size: 0.87rem;
+    line-height: 1.7;
+    margin-bottom: 2px;
+}
+.lex-table .lx-d-cn { font-size: 0.85rem; }
+.lex-table .lx-d-common, .lex-table .lx-d-uncommon { font-size: 0.83rem; }
+
+/* 自测模式：词条放大居中感更强，便于回想 */
+#viewLex.selftest .lex-table .lx-w-main { font-size: 1.08rem; }
+
+/* 窄屏：转为卡片式堆叠（沿用既有 wn-table 响应式，补词列结构） */
+@media (max-width: 700px) {
+    .lex-table, .lex-table thead, .lex-table tbody, .lex-table tr, .lex-table th, .lex-table td { display: block; width: auto !important; }
+    .lex-table thead { display: none; }
+    .lex-table tbody tr.lex-row {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        margin-bottom: 8px;
+        padding: 10px 12px;
+        background: var(--card-bg);
+    }
+    .lex-table tbody td { border: none; padding: 2px 0; }
+    .lex-table .lx-w-tags { margin-top: 5px; }
+    .lex-table .lx-mark { text-align: left; margin-top: 8px; }
+    .lex-table .lex-detail td { padding: 8px 12px; }
+}
