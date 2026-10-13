@@ -461,15 +461,19 @@ def apply_year(year, arts):
 # 收尾需补：① 按页内新题型 Directions 关键词定位（而非 Part B 字样）② 选项池 inline
 # 切分要兼容 [A ]/【A】等变体 ③ key_sections 的 partb 区间 ④ 多项对应题要把
 # "(41) Teri Byrd:___" 当作题千而非选项区结束符。
-PARTB_DIR = re.compile(r'Part\s*B', re.I)
+PARTB_DIR = re.compile(r'Part\s*\.?\s*B', re.I)
 WRITING_HINT = re.compile(r'essay|picture|You are to write|Suppose you are|write an email|'
                           r'write him/her an email|based on the (?:following|below)', re.I)
-POOL_ROW = re.compile(r'^\s*[\[【(（]\s*([A-H])\s*[\]】)）]\s*(.+)$')
+# 选项起始行：左括号可选、右括号可选且容忍被 OCR 成 J/j、括号内可带空格；
+# 或者干脆没有括号（2025 的 "A. Peters likes to..."）
+OPT_START = re.compile(r'^\s*(?:[\[【［(（]\s*([A-H])\s*[\]】］)）Jj]?|([A-H])\s*[.．、])\s*(.+)$')
 PARTB_QTYPES = [
+    # 顺序即优先级：七选五的措辞最独特，必须先判；
+    # 「from the list A-G」三类题都用，不能拿来判多项对应
+    (re.compile(r'sentences have been removed|fill in the blanks', re.I), '七选五'),
     (re.compile(r'subheading', re.I), '小标题'),
     (re.compile(r'wrong order|most suitable paragraph', re.I), '排序'),
-    (re.compile(r'from the list\s*A\s*[-–]\s*[GH]|numbered name|match(?:ing)? the (?:statements|following)|comments on', re.I), '多项对应'),
-    (re.compile(r'sentences have been removed|fill in the blanks', re.I), '七选五'),
+    (re.compile(r'comments on|numbered name|match(?:ing)? the (?:statements|following)', re.I), '多项对应'),
 ]
 # 定位 Part B 页：必须同时出现 Part B 与新题型特有的 Directions 措辞，
 # 否则会把写作 Part B（essay/picture）误当成新题型
@@ -491,7 +495,10 @@ def partb_pages(year):
         return None
     e = n
     for i in range(s + 1, n):
-        if re.search(r'Part\s*C|Section III', re.sub(r'\s+', ' ', doc[i].get_text())):
+        # 只看页首几行：Part B 的续页页脚里也会出现 "Part C" 字样（2025 p12 就是），
+        # 用整页搜索会把续页误判成章节边界，从而切掉半个选项池
+        head = ' '.join(page_lines(doc[i])[:3])
+        if re.search(r'Part\s*\.?\s*C|Section\s*III', head, re.I):
             e = i
             break
     return (s, e)
@@ -500,8 +507,11 @@ def partb_pages(year):
 def partb_extract(year):
     """→ {'qtype','pool','directions','passage'} 或 None。
 
-    选项池按全文 inline 的 [A]~[H] 标记切分——排序题的段落选项是连续正文，
-    标记常常不在行首（2019 的 [B]/[C]/[D] 就是折行中间），按行首匹配会漏。
+    逐行扫选项标记。真题册里选项标记有四种形态，必须都认：
+      [A] / [A ]（2022）  ［A］（全角）  【A】
+      [AJ（2017：右括号被 OCR 成 J）  A.（2025：压根没有括号）
+    排序题的选项是连续长段落，续行要并回上一个选项；多项对应（2022/2024）的
+    选项在正文之后，所以「选项区之前的内容」也要收进 passage。
     """
     rng = partb_pages(year)
     if not rng:
@@ -512,36 +522,91 @@ def partb_extract(year):
         for l in page_lines(doc[i]):
             l = clean_line(l)
             if l:
-                lines.append(l)
+                lines.append(l.strip())
     di = next((i for i, l in enumerate(lines)
-               if re.match(r'^Directions', l.strip())), None)
+               if re.match(r'^Directions', l)), None)
     if di is None:
         return None
-    text = ' '.join(lines[di:])
-    m0 = re.search(r'\[([A-H])\]', text)
-    if not m0:
-        return None
-    directions = text[:m0.start()]
+    head = ' '.join(lines[di:di + 8])
     qtype = '新题型'
     for pat, name in PARTB_QTYPES:
-        if pat.search(directions):
+        if pat.search(head):
             qtype = name
             break
-    tail = text[m0.start():]
-    stop = re.search(r'For\s+[Qq]uestions?\s*41|\(41\)|(?<![\w])41\s*[.．、]\s*[A-Z\[（(]', tail)
-    body = tail[:stop.start()] if stop else tail
-    post = tail[stop.start():] if stop else ''
-    parts = re.split(r'\s*\[([A-H])\]\s*', body)
-    pool = {}
-    for i in range(1, len(parts), 2):
-        k, v = parts[i], parts[i + 1].strip()
-        pool[k] = (pool[k] + ' ' + v).strip() if k in pool else v
-    return {'qtype': qtype, 'pool': pool, 'directions': directions,
-            'passage': re.sub(r'\s+', ' ', (text[:m0.start()].split('Directions', 1)[-1]
-                                            + ' ' + post)).strip()}
+
+    pool, order, started = {}, [], False
+    pre, post = [], []
+    for l in lines[di:]:
+        if not started and re.match(r'^Directions', l):
+            pre.append(l)
+            continue
+        m = OPT_START.match(l)
+        if m:
+            k = m.group(1) or m.group(2)
+            if k not in pool:
+                pool[k] = m.group(3).strip()
+                order.append(k)
+                started = True
+                continue
+        if started:
+            if order:
+                pool[order[-1]] = (pool[order[-1]] + ' ' + l).strip()
+            post.append(l)
+        else:
+            pre.append(l)
+    if len(pool) < 4:
+        return None
+    # 正文：选项区之前的内容（多项对应的评论就在选项前面）+ 选项区之后的内容
+    # （小标题/排序/七选五的文章在选项后面）。两头都要收，只收一头会丢正文。
+    pre_body = pre[1:] if pre and re.match(r'^Directions', pre[0]) else pre
+    return {'qtype': qtype, 'pool': pool, 'directions': ' '.join(pre[:6]),
+            'passage': re.sub(r'\s+', ' ', ' '.join(pre_body + post)).strip()}
 
 
 ANS_PATS_PB = [re.compile(p.pattern.replace('[A-D]', '[A-G]')) for p in ANS_PATS]
+
+# 解析册里 Part B 的答案陈述：「41.【答案】 C 【精解】…」「41 .［答案］ F ［精解］…」
+# 题号后的分隔符年年不同：. 、 ， 「 ［ 都出现过（2016 的第 42 题就是「42，」）。
+# 注意：答案标记的括号**不能**为了兼容「答案】/L答案］而放宽字符类——实测会把
+# 2022 这种本来能过的年份带成误匹配（PB_ANS 优先于通用模式，错一次就错到底）。
+PB_QSPLIT = re.compile(r'(?<![\d])(4[1-5])\s*[.．、，,「［\[]')
+PB_ANS = re.compile(r'(?<![\d])(4[1-5])\s*[.．、]?\s*[［【\[]?\s*答案\s*[］】\]]?\s*'
+                    r'[［【\[]?\s*([A-H])\s*[］】\]]?')
+
+
+def partb_key_blocks(year, keys):
+    """从解析册取 Part B 的 {题号: (答案, 解析)}。
+
+    定位方式：找「41~45 题号标记」最密集的那一页（答案精解都挤在一两页），
+    向前后各扩一页，再按题号切块。key_sections()['partb'] 多数年份取不到，
+    不能用。
+    """
+    doc = key_doc(year)
+    n = doc.page_count
+    cnt = [len(PB_QSPLIT.findall(re.sub(r'\s+', ' ', doc[i].get_text())))
+           for i in range(n)]
+    if not cnt or max(cnt) < 3:
+        return {}
+    best = max(range(n), key=lambda i: cnt[i])
+    s, e = max(0, best - 1), min(n, best + 2)
+    txt = re.sub(r'\s+', ' ', '\n'.join(doc[i].get_text() for i in range(s, e)))
+    marks = [(m.start(), int(m.group(1))) for m in PB_QSPLIT.finditer(txt)]
+    out = {}
+    for k, (pos, num) in enumerate(marks):
+        end = marks[k + 1][0] if k + 1 < len(marks) else len(txt)
+        if num in out:
+            continue
+        blk = txt[pos:end]
+        m = PB_ANS.search(blk)
+        ans = m.group(2) if m and m.group(2) in keys else None
+        if not ans:
+            ans = detect_answer_pb(blk, keys)
+        # 解析：去掉题头与「答案/精解」标记后的正文
+        expl = re.sub(r'^\s*4[1-5]\s*[.．、，,「［\[]?\s*[［【\[]?\s*答案\s*[］】\]]?\s*'
+                      r'[［【\[]?\s*[A-H]\s*[］】\]]?\s*[［【\[]?\s*精解\s*[］】\]]?\s*', '', blk)
+        expl = re.split(r'(?<![\d])4[1-5]\s*[.．、，,「［\[]', expl)[0]
+        out[num] = (ans, expl.strip())
+    return out
 
 
 def detect_answer_pb(block, keys):
@@ -581,25 +646,20 @@ def build_partb(year):
         s['cn'] = ''
         s['words'] = []
 
-    # 解析册 Part B 区间 → 题块 → 答案/解析
-    sec = key_sections(year).get('partb')
-    blocks, full = {}, ''
-    if sec and sec[0] is not None:
-        doc = key_doc(year)
-        full = '\n'.join(doc[i].get_text() for i in range(sec[0], sec[1]))
-        blocks = key_blocks(full, 41, 45)
+    # 解析册 Part B 答案/解析（按最密题号页定位）
+    kb = partb_key_blocks(year, keys)
     ex_ans = exam_answers(year)
 
     questions = []
     for n in nums:
-        blk = blocks.get(n, '')
-        ans = detect_answer_pb(blk, keys) or ex_ans.get(n)
+        k_ans, k_expl = kb.get(n, (None, ''))
+        ans = k_ans or ex_ans.get(n)
         if not ans:
             warn.append('q%d 答案未检出' % n)
-        expl = extract_expl(blk, full, None)
-        expl = re.sub(r'\s+', ' ', expl)
+        expl = re.sub(r'\s+', ' ', k_expl)
         expl = WM_RE.sub('', expl)
-        expl = re.sub(r'[【\[]\s*(考点提炼|解题思路|错项排除|词汇注释|难句分析)\s*[】\]]', r'【\1】', expl)
+        expl = re.sub(r'[【\[]\s*(考点提炼|解题思路|错项排除|词汇注释|难句分析|精解)\s*[】\]]',
+                      r'【\1】', expl)
         if qtype == '小标题':
             stem = '第 %d 段：选择最合适的小标题填入空白' % n
         elif qtype == '排序':
@@ -635,14 +695,57 @@ def build_partb(year):
     return art, warn
 
 
+def partb_gate(art, year):
+    """新题型入库门槛：选项池字母连续且 ≥7、题型识别成功、5 题答案齐全、
+    解析齐全（扫描件年份除外——那两年解析册无文本层，解析必然为空）。"""
+    if not art:
+        return False, 'no article'
+    ks = sorted(art['pool'].keys())
+    if ''.join(ks) != ''.join(chr(65 + i) for i in range(len(ks))) or len(ks) < 7:
+        return False, 'pool %s' % ''.join(ks)
+    if art['questions'][0]['qtype'] == '新题型':
+        return False, 'qtype 未识别'
+    if any(not q['answer'] for q in art['questions']):
+        return False, '答案缺 %s' % [q['number'] for q in art['questions'] if not q['answer']]
+    if year not in SCANNED_YEARS and any(len(q['explanation']) < 30 for q in art['questions']):
+        return False, '解析不足'
+    return True, ''
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--stage', action='store_true')
     ap.add_argument('--apply', action='store_true')
+    ap.add_argument('--partb', action='store_true', help='构建/应用新题型 Part B')
     ap.add_argument('--years', type=str, default='')
     args = ap.parse_args()
     years = [int(x) for x in args.years.split(',')] if args.years else YEARS
     os.makedirs(STAGE, exist_ok=True)
+    if args.partb:
+        ok_years = []
+        for y in years:
+            art, warn = build_partb(y)
+            passed, why = partb_gate(art, y)
+            if not passed:
+                print('%d newtype: SKIP（%s）' % (y, why))
+                continue
+            ok_years.append(y)
+            if args.apply:
+                types = apply_year(y, {'newtype': art})
+                print('%d newtype APPLIED %s pool=%d -> %s'
+                      % (y, art['questions'][0]['qtype'], len(art['pool']), types))
+            else:
+                fp = os.path.join(STAGE, '%d.json' % y)
+                data = json.load(open(fp, encoding='utf-8')) if os.path.exists(fp) else {}
+                data['newtype'] = art
+                json.dump(data, open(fp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+                print('%d newtype: %s pool=%d ans=%s'
+                      % (y, art['questions'][0]['qtype'], len(art['pool']),
+                         ''.join(q['answer'] for q in art['questions'])))
+        if args.apply and ok_years:
+            subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'build_en1_index.py')],
+                           check=True)
+        return
     for y in years:
         art, warn = build_cloze(y)
         fp = os.path.join(STAGE, '%d.json' % y)

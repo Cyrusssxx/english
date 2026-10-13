@@ -26,9 +26,16 @@ setTimeout(() => {
     const cards = [...d.querySelectorAll('.article-card')];
     // 直接校验索引顺序（渲染逻辑读同一份数据）
     const types = yr.articles.map(a => a.type);
-    const want = ['text1', 'text2', 'text3', 'text4', 'cloze'];
+    // 有 newtype 的年份顺序应为 text1-4, newtype, cloze；没有的则为 text1-4, cloze
+    const hasNt = yr.articles.some(a => a.type === 'newtype');
+    const want = hasNt
+      ? ['text1', 'text2', 'text3', 'text4', 'newtype', 'cloze']
+      : ['text1', 'text2', 'text3', 'text4', 'cloze'];
     const ok = JSON.stringify(types) === JSON.stringify(want);
     if (!ok) { console.log('%d 顺序异常: %s', yr.year, types.join(',')); fail++; }
+    if (!hasNt && yr.year >= 2016) {
+      console.log('%d 缺 newtype（该年份尚未达到入库门槛）', yr.year);
+    }
     const has = yr.articles.find(a => a.type === 'cloze');
     if (!has) { console.log('%d 缺 cloze', yr.year); fail++; }
     else if (has.question_count !== 20 || has.sentence_count < 8) {
