@@ -493,6 +493,10 @@ async function init() {
             enrichRender();
         } catch (e) {
             console.warn('后台数据加载失败（已降级为仅预标注词可点）', e);
+            // 不能只 warn：读不到本地库时作答恢复不出来、做题也不落库，必须让用户看见
+            if (typeof toast === 'function') {
+                toast('本地数据读取失败，作答可能显示不出来：' + (e && e.message ? e.message : e), 6000);
+            }
         }
     })();
 }

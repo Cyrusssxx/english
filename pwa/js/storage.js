@@ -90,6 +90,24 @@ function openDB() {
     if (_dbPromise) return _dbPromise;
     _dbPromise = new Promise((resolve, reject) => {
         const req = indexedDB.open(DB_NAME, DB_VER);
+        let settled = false;
+        const done = (fn, arg) => {
+            if (settled) return;
+            settled = true;
+            clearTimeout(timer);
+            fn(arg);
+        };
+        // open 既不 success 也不 error 的场景只有一种：升级被别的标签页挡住（onblocked）。
+        // 没有超时兜底的话这个 Promise 会永远挂着，表现为「作答恢复不出来、做题也不落库」，
+        // 而握着旧版连接的那个标签页一切正常——很难自查，所以这里必须给明确报错。
+        const timer = setTimeout(() => done(() => {
+            _dbPromise = null;
+            reject(new Error('打开本地数据库超时：多半是本站其它标签页挡住了升级，请关掉其它标签页后刷新'));
+        }), 10000);
+        req.onblocked = () => done(() => {
+            _dbPromise = null;
+            reject(new Error('数据库升级被其它标签页挡住：请关掉本站其它标签页后刷新本页'));
+        });
         req.onupgradeneeded = () => {
             const db = req.result;
             // 幂等建库：只新增缺失的 store，不动老数据
@@ -109,10 +127,38 @@ function openDB() {
                 db.createObjectStore('article_notes', { keyPath: 'article_id' });
             }
         };
-        req.onsuccess = () => resolve(req.result);
-        req.onerror = () => reject(req.error);
+        req.onsuccess = () => done(() => {
+            const db = req.result;
+            // 别的标签页要升级时立刻让路，否则两边互相卡死——这正是升级被挡的源头。
+            // close 后把缓存清掉，下次调用会重新打开（拿到新版本）。
+            db.onversionchange = () => { db.close(); _dbPromise = null; };
+            resolve(db);
+        });
+        req.onerror = () => done(() => {
+            _dbPromise = null;
+            reject(req.error || new Error('打开本地数据库失败'));
+        });
     });
     return _dbPromise;
+}
+
+/** 自检：库版本 + 各表条数 + 最近几条作答。console 里执行 `await diagDB()`
+ *  可以直接回答「作答记录到底还在不在」。 */
+async function diagDB() {
+    const db = await openDB();
+    const out = { version: db.version, stores: {}, recent: [] };
+    for (const s of ['vocab', 'fav_sentences', 'article_progress', 'quiz_answers', 'article_notes']) {
+        if (!db.objectStoreNames.contains(s)) { out.stores[s] = '缺表'; continue; }
+        const rows = await dbAll(s);
+        out.stores[s] = rows.length;
+        if (s === 'quiz_answers') {
+            out.recent = rows.slice(-6).map(r =>
+                `${r.article_id} ${r.question_id} 你选${r.user_answer} ${r.is_correct ? '√' : '×'}`);
+        }
+    }
+    console.table(out.stores);
+    if (out.recent.length) console.log('最近作答：\n' + out.recent.join('\n'));
+    return out;
 }
 
 // Promise 化的通用读写
