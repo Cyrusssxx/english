@@ -13,7 +13,8 @@ import argparse, json, os, re, subprocess, sys
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from en1_lib import (ClozePassageParas, cloze_options, key_doc, key_sections,
-                     passage_streams, norm_brackets, OB, CB, exam_answers)
+                     passage_streams, norm_brackets, OB, CB, exam_answers,
+                     exam_doc, page_lines, clean_line)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STAGE = os.path.join(ROOT, 'tools', 'en1_stage')
@@ -447,6 +448,191 @@ def apply_year(year, arts):
                            if a['type'] in RENDER_ORDER else 99)
     json.dump(d, open(fp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     return [a['type'] for a in d['articles']]
+
+
+# ================================================================ 新题型 Part B
+# ⚠️ 二期（未完成，勿接 --apply）：十年版式差异大，当前只做到
+#    - 选项池可抽：2016/2018/2019/2020/2024（2019 缺 B/C/D，标记在折行中间）
+#    - 题型识别：2016/2020 小标题、2018 排序、2024 多项对应
+#    - 2017/2021/2022/2023/2025 的 Part B 页定位仍失败（页内同时含写作 Part B，
+#      或 Directions 措辞不同）
+#    - 2016-2023 的 Part B 答案/解析依赖 key_sections()['partb']，该区间目前多数年份取不到
+#    只剩 2024 因真题册有「答案速查」表而全链路通过。
+# 收尾需补：① 按页内新题型 Directions 关键词定位（而非 Part B 字样）② 选项池 inline
+# 切分要兼容 [A ]/【A】等变体 ③ key_sections 的 partb 区间 ④ 多项对应题要把
+# "(41) Teri Byrd:___" 当作题千而非选项区结束符。
+PARTB_DIR = re.compile(r'Part\s*B', re.I)
+WRITING_HINT = re.compile(r'essay|picture|You are to write|Suppose you are|write an email|'
+                          r'write him/her an email|based on the (?:following|below)', re.I)
+POOL_ROW = re.compile(r'^\s*[\[【(（]\s*([A-H])\s*[\]】)）]\s*(.+)$')
+PARTB_QTYPES = [
+    (re.compile(r'subheading', re.I), '小标题'),
+    (re.compile(r'wrong order|most suitable paragraph', re.I), '排序'),
+    (re.compile(r'from the list\s*A\s*[-–]\s*[GH]|numbered name|match(?:ing)? the (?:statements|following)|comments on', re.I), '多项对应'),
+    (re.compile(r'sentences have been removed|fill in the blanks', re.I), '七选五'),
+]
+# 定位 Part B 页：必须同时出现 Part B 与新题型特有的 Directions 措辞，
+# 否则会把写作 Part B（essay/picture）误当成新题型
+PARTB_DIR_KW = re.compile(r'subheading|wrong order|most suitable paragraph|'
+                          r'sentences have been removed|comments on|numbered name|'
+                          r'list\s*A\s*[-–]\s*[GH]', re.I)
+
+
+def partb_pages(year):
+    doc = exam_doc(year)
+    n = doc.page_count
+    s = None
+    for i in range(n):
+        t = re.sub(r'\s+', ' ', doc[i].get_text())
+        if PARTB_DIR.search(t) and PARTB_DIR_KW.search(t):
+            s = i
+            break
+    if s is None:
+        return None
+    e = n
+    for i in range(s + 1, n):
+        if re.search(r'Part\s*C|Section III', re.sub(r'\s+', ' ', doc[i].get_text())):
+            e = i
+            break
+    return (s, e)
+
+
+def partb_extract(year):
+    """→ {'qtype','pool','directions','passage'} 或 None。
+
+    选项池按全文 inline 的 [A]~[H] 标记切分——排序题的段落选项是连续正文，
+    标记常常不在行首（2019 的 [B]/[C]/[D] 就是折行中间），按行首匹配会漏。
+    """
+    rng = partb_pages(year)
+    if not rng:
+        return None
+    doc = exam_doc(year)
+    lines = []
+    for i in range(rng[0], rng[1]):
+        for l in page_lines(doc[i]):
+            l = clean_line(l)
+            if l:
+                lines.append(l)
+    di = next((i for i, l in enumerate(lines)
+               if re.match(r'^Directions', l.strip())), None)
+    if di is None:
+        return None
+    text = ' '.join(lines[di:])
+    m0 = re.search(r'\[([A-H])\]', text)
+    if not m0:
+        return None
+    directions = text[:m0.start()]
+    qtype = '新题型'
+    for pat, name in PARTB_QTYPES:
+        if pat.search(directions):
+            qtype = name
+            break
+    tail = text[m0.start():]
+    stop = re.search(r'For\s+[Qq]uestions?\s*41|\(41\)|(?<![\w])41\s*[.．、]\s*[A-Z\[（(]', tail)
+    body = tail[:stop.start()] if stop else tail
+    post = tail[stop.start():] if stop else ''
+    parts = re.split(r'\s*\[([A-H])\]\s*', body)
+    pool = {}
+    for i in range(1, len(parts), 2):
+        k, v = parts[i], parts[i + 1].strip()
+        pool[k] = (pool[k] + ' ' + v).strip() if k in pool else v
+    return {'qtype': qtype, 'pool': pool, 'directions': directions,
+            'passage': re.sub(r'\s+', ' ', (text[:m0.start()].split('Directions', 1)[-1]
+                                            + ' ' + post)).strip()}
+
+
+ANS_PATS_PB = [re.compile(p.pattern.replace('[A-D]', '[A-G]')) for p in ANS_PATS]
+
+
+def detect_answer_pb(block, keys):
+    """Part B 版答案检出：选项字母扩到 A-H，并要求命中字母落在选项池里。"""
+    if not block:
+        return None
+    nb = re.sub(r'\s+', ' ', norm_brackets(block))
+    for scope in [nb]:
+        cands = []
+        for pi, pat in enumerate(ANS_PATS_PB):
+            for mm in pat.finditer(scope):
+                if mm.group(1) in keys and not _negated(scope, mm):
+                    cands.append((pi, mm.start(), mm.group(1)))
+        if cands:
+            cands.sort()
+            return cands[0][2]
+    return None
+
+
+def build_partb(year):
+    ex = partb_extract(year)
+    if not ex or len(ex['pool']) < 4:
+        return None, ['Part B 定位/选项池失败']
+    warn = []
+    keys = sorted(ex['pool'].keys())
+    qtype = ex['qtype']
+    # 题干编号：新题型固定 41-45
+    nums = list(range(41, 46))
+    # 正文：七选五要把 41-45 规范成 [n] 空位
+    body = ex['passage']
+    if qtype == '七选五':
+        body = re.sub(r'(?<![\w\]])(4[1-5])(?![\w])', r'[\1]', body)
+        body = re.sub(r'\[\s*(\d+)\s*\]', r'[\1]', body)
+    sentences = [{'para': 1, 'en': s.strip()} for s in split_sentences(body)] if body.strip() else []
+    for i, s in enumerate(sentences):
+        s['id'] = 'en1_%d_newtype_s%02d' % (year, i + 1)
+        s['cn'] = ''
+        s['words'] = []
+
+    # 解析册 Part B 区间 → 题块 → 答案/解析
+    sec = key_sections(year).get('partb')
+    blocks, full = {}, ''
+    if sec and sec[0] is not None:
+        doc = key_doc(year)
+        full = '\n'.join(doc[i].get_text() for i in range(sec[0], sec[1]))
+        blocks = key_blocks(full, 41, 45)
+    ex_ans = exam_answers(year)
+
+    questions = []
+    for n in nums:
+        blk = blocks.get(n, '')
+        ans = detect_answer_pb(blk, keys) or ex_ans.get(n)
+        if not ans:
+            warn.append('q%d 答案未检出' % n)
+        expl = extract_expl(blk, full, None)
+        expl = re.sub(r'\s+', ' ', expl)
+        expl = WM_RE.sub('', expl)
+        expl = re.sub(r'[【\[]\s*(考点提炼|解题思路|错项排除|词汇注释|难句分析)\s*[】\]]', r'【\1】', expl)
+        if qtype == '小标题':
+            stem = '第 %d 段：选择最合适的小标题填入空白' % n
+        elif qtype == '排序':
+            stem = '第 %d 空：选择最合适的段落填入' % n
+        elif qtype == '七选五':
+            stem = '第 %d 空：选择最合适的句子填入空白 [%d]' % (n, n)
+        else:
+            stem = '第 %d 题：将左栏对象与右栏表述相匹配' % n
+        rel = [s['id'] for s in sentences if ('[%d]' % n) in s['en']]
+        questions.append({
+            'id': 'en1_%d_newtype_q%02d' % (year, n),
+            'number': str(n),
+            'qtype': qtype,
+            'stem': stem,
+            'stem_cn': '',
+            'options': {},
+            'options_cn': {},
+            'answer': ans,
+            'explanation': expl,
+            'related_sentences': rel or ([sentences[0]['id']] if sentences else []),
+        })
+    art = {
+        'id': 'en1_%d_newtype' % year,
+        'type': 'newtype',
+        'title': '',
+        'topic': '',
+        'source': 'Section II Part B',
+        'pool': ex['pool'],
+        'pool_cn': {},
+        'sentences': sentences,
+        'questions': questions,
+    }
+    return art, warn
 
 
 def main():
