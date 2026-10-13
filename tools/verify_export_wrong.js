@@ -25,7 +25,12 @@ const FAKE = [
 ];
 w.eval(['common.js', 'storage.js']
   .map(f => fs.readFileSync(path.join(PWA, 'js', f), 'utf8')).join('\n;\n'));
-w.dbAll = async (store) => (store === 'quiz_answers' ? FAKE.slice() : []);
+const NOTES = [{ article_id: 'en1_2022_newtype', text: '英一备注：先读人名再扫观点', updated_at: 1 }];
+w.dbAll = async (store) => {
+  if (store === 'quiz_answers') return FAKE.slice();
+  if (store === 'article_notes') return NOTES.slice();
+  return [];
+};
 
 let csv = '';
 class FakeBlob {
@@ -54,5 +59,16 @@ if (!w.navigator.clipboard) Object.defineProperty(w.navigator, 'clipboard', { va
     process.exit(1);
   }
   console.log('\nEXPORT WRONG OK：英一/英二错题均能导出');
+
+  // 备份导出：备注（article_notes）必须一起带走，否则换机就丢
+  csv = '';
+  await w.backupExport();
+  let payload = null;
+  try { payload = JSON.parse(csv); } catch (e) { /* ignore */ }
+  if (!payload || !Array.isArray(payload.article_notes) || payload.article_notes.length !== 1) {
+    console.log('\nFAIL 备份未包含 article_notes');
+    process.exit(1);
+  }
+  console.log('BACKUP OK：article_notes 随备份导出（%d 条）', payload.article_notes.length);
   process.exit(0);
 })().catch(e => { console.log('ERROR', e.message); process.exit(1); });

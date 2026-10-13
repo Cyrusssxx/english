@@ -16,6 +16,16 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-brand" title="返回列表">‹ <span id="navTitle">精读</span></a>
+            <!-- 本篇备注：紧贴文章标题，点开写点什么（自动保存） -->
+            <button class="nav-note" id="artNoteBtn" onclick="event.stopPropagation();toggleArtNote()"
+                title="本篇备注：点开写点什么（输入即自动保存，Ctrl+Enter 保存并关闭）">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4" /><path d="M8 12.5h8M8 16h5" />
+                </svg>
+                <span>备注</span>
+                <span class="nv-dot" id="artNoteDot" hidden></span>
+            </button>
             <div class="nav-tools">
                 <div class="nav-search-wrap">
                     <input class="nav-search" id="navSearch" type="search" placeholder="查词" title="输入英文单词/词组或中文后回车（或点🔍）查释义；Alt+C 快速聚焦"
@@ -47,6 +57,29 @@
             </div>
         </div>
     </nav>
+
+    <!-- 备注浮窗：锚定在顶栏「备注」小块下方 -->
+    <div class="note-pop" id="artNotePop" hidden>
+        <div class="np-head">
+            <span class="np-title">本篇备注</span>
+            <span class="np-meta" id="artNoteMeta">自动保存</span>
+            <button class="np-x" onclick="hideArtNote()" title="关闭（Esc）">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M6 6l12 12M18 6L6 18" />
+                </svg>
+            </button>
+        </div>
+        <textarea class="np-area" id="artNoteArea" spellcheck="false"
+            placeholder="这篇的注意点、易错项、生词、下次要回看的地方……"
+            oninput="onArtNoteInput()" onkeydown="artNoteKey(event)"></textarea>
+        <div class="np-foot">
+            <span class="np-tip">Ctrl+Enter 保存并关闭</span>
+            <span class="np-spacer"></span>
+            <button class="np-btn" onclick="clearArtNote()">清空</button>
+            <button class="np-btn primary" onclick="saveArtNoteNow()">保存</button>
+        </div>
+    </div>
 
     <div class="article-layout">
         <!-- 左：正文精读 -->

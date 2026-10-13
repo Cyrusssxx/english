@@ -81,7 +81,9 @@ const TYPE_NAMES = {
 
 // ==================== IndexedDB ====================
 const DB_NAME = 'english2';
-const DB_VER = 1;
+// v2：新增 article_notes（文章备注）。升版本只是触发 onupgradeneeded，
+// 真正的建表是幂等的（只补缺失的 store），老数据不受影响。
+const DB_VER = 2;
 let _dbPromise = null;
 
 function openDB() {
@@ -102,6 +104,9 @@ function openDB() {
             }
             if (!db.objectStoreNames.contains('quiz_answers')) {
                 db.createObjectStore('quiz_answers', { keyPath: 'question_id' });
+            }
+            if (!db.objectStoreNames.contains('article_notes')) {
+                db.createObjectStore('article_notes', { keyPath: 'article_id' });
             }
         };
         req.onsuccess = () => resolve(req.result);
@@ -440,6 +445,33 @@ async function clearAnswers(articleId) {
 }
 
 // ==================== 数据备份：导出 / 导入 ====================
+// ==================== 文章备注（article_notes） ====================
+/* 每篇文章一段自由文本，顶栏「备注」小块点开即写。keyPath = article_id，
+ * 英一（en1_ 前缀）与英二共用同一张表，跟着备份一起导出/导入。
+ */
+async function getArtNote(aid) {
+    if (!aid) return '';
+    try {
+        const r = await dbGet('article_notes', aid);
+        return r && r.text ? r.text : '';
+    } catch (e) {
+        console.warn('读取备注失败', e);
+        return '';
+    }
+}
+
+/** 存备注。传空串等于清空（记录保留，text 置空，便于备份里追溯）。 */
+async function saveArtNote(aid, text) {
+    if (!aid) return false;
+    try {
+        await dbPut('article_notes', { article_id: aid, text: text || '', updated_at: now() });
+        return true;
+    } catch (e) {
+        console.warn('保存备注失败', e);
+        return false;
+    }
+}
+
 async function backupExport() {
     const payload = {
         version: 1, exported_at: now(), source: 'english-reading',
@@ -447,6 +479,7 @@ async function backupExport() {
         fav_sentences: await dbAll('fav_sentences'),
         article_progress: await dbAll('article_progress'),
         quiz_answers: await dbAll('quiz_answers'),
+        article_notes: await dbAll('article_notes'),
         decks: getDecks(),
         active_deck: getActiveDeck()
     };
@@ -467,7 +500,7 @@ async function backupImport(input) {
             const body = JSON.parse(rd.result);
             if (!Array.isArray(body.vocab)) throw new Error('备份文件格式不正确');
             const db = await openDB();
-            for (const store of ['vocab', 'fav_sentences', 'article_progress', 'quiz_answers']) {
+            for (const store of ['vocab', 'fav_sentences', 'article_progress', 'quiz_answers', 'article_notes']) {
                 const rows = Array.isArray(body[store]) ? body[store] : [];
                 await new Promise((res, rej) => {
                     const tx = db.transaction(store, 'readwrite');

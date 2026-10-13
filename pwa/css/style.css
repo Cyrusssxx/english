@@ -96,6 +96,38 @@ body {
     white-space: nowrap;
 }
 
+/* 顶栏「备注」小块：紧贴文章标题（nav-title 右侧） */
+.nav-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: -4px;                 /* 抵消 nav-container 的 gap，视觉上贴住标题 */
+    padding: 3px 9px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.3;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+}
+.nav-note:hover { border-color: var(--primary); }
+.nav-note.has-note { border-color: var(--primary); font-weight: 600; }
+.nav-note .nv-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+html.dark .nav-note { color: var(--text); }
+@media (max-width: 640px) {
+    .nav-note span:not(.nv-dot) { display: none; }
+    .nav-note { padding: 4px 7px; }
+}
+
 .nav-links {
     display: flex;
     gap: 18px;
@@ -2598,6 +2630,103 @@ html.dark .nav-search-btn:hover {
     padding: 14px 16px;
 }
 .float-panel[hidden] { display: none; }
+
+/* ===== 本篇备注浮窗（顶栏「备注」小块点开） ===== */
+.note-pop {
+    position: fixed;
+    z-index: 430;
+    width: 330px;
+    max-width: calc(100vw - 16px);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 10px 12px 9px;
+}
+.note-pop[hidden] { display: none; }
+
+.np-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 7px;
+}
+.np-title {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--text);
+}
+.np-meta {
+    font-size: 11px;
+    color: var(--text-light);
+}
+.np-x {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--text-light);
+    cursor: pointer;
+}
+.np-x:hover { background: var(--bg-2); color: var(--text); }
+
+.np-area {
+    display: block;
+    width: 100%;
+    height: 136px;
+    min-height: 90px;
+    resize: vertical;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 1.65;
+    outline: none;
+}
+.np-area:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px var(--primary-soft);
+}
+.np-area::placeholder { color: var(--text-light); opacity: .75; }
+
+.np-foot {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+}
+.np-tip {
+    font-size: 11px;
+    color: var(--text-light);
+}
+.np-spacer { flex: 1; }
+.np-btn {
+    padding: 3px 11px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-light);
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+.np-btn:hover { border-color: var(--primary); color: var(--text); }
+.np-btn.primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    font-weight: 600;
+}
+.np-btn.primary:hover { color: #fff; opacity: .9; }
 
 /* ===== 背单词页悬浮设置窗（自定义快捷键 + 收藏目标） ===== */
 #studySettings {

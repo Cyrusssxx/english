@@ -458,6 +458,7 @@ async function init() {
     document.title = `${year} ${TYPE_NAMES[article.type] || article.type} - 英语二精翻`;
     document.getElementById('navTitle').textContent = `${year} ${TYPE_NAMES[article.type] || article.type}`;
     localStorage.setItem('lastArticle', AID);
+    refreshArtNote();               // 顶栏「备注」小块：载入本篇已有备注
     if (article.apply) {
         // 套用示范的逐句标注（很小，命中 SW 缓存）：大小作文各一份，按类型取
         if (article.type === 'writing_a') await loadSmallApplyMarks();
@@ -1840,11 +1841,128 @@ document.addEventListener('keydown', (e) => {
     // 输入框/下拉框内不拦截（查词框里 Alt+C 也要能触发，故单独豁免）
     const t = e.target;
     const inInput = t && /^(INPUT|SELECT|TEXTAREA)$/.test(t.tagName);
-    if (e.code === 'Escape') { hideArtSettings(); hideSearchHist(); return; }
+    if (e.code === 'Escape') { hideArtSettings(); hideArtNote(); hideSearchHist(); return; }
     const km = getArtKeyMap();
     if (artMatch(e, km.navSearch)) { e.preventDefault(); focusNavSearch(); return; }
     if (inInput && t) return;   // 其余输入框内不拦截快捷键
 });
+
+/* ==================== 本篇备注 ====================
+ * 顶栏「备注」小块紧贴文章标题，点开浮窗写自由文本。
+ * 存 IndexedDB 的 article_notes（keyPath=article_id），跟着备份导出/导入；
+ * 英一（en1_ 前缀）与英二共用同一张表，同一个浮窗逻辑。
+ */
+let artNoteDirty = false;
+let artNoteTimer = null;
+
+function artNotePop() { return document.getElementById('artNotePop'); }
+
+function setArtNoteMeta(s) {
+    const m = document.getElementById('artNoteMeta');
+    if (m) m.textContent = s;
+}
+
+function artNoteBadge(has) {
+    const dot = document.getElementById('artNoteDot');
+    const btn = document.getElementById('artNoteBtn');
+    if (dot) dot.hidden = !has;
+    if (btn) btn.classList.toggle('has-note', !!has);
+}
+
+/** 载入本篇已有备注（每篇文章进来都刷一次，切文章不会串） */
+async function refreshArtNote() {
+    const area = document.getElementById('artNoteArea');
+    if (!area) return;
+    const t = await getArtNote(AID);
+    area.value = t || '';
+    artNoteDirty = false;
+    artNoteBadge(!!(t && t.trim()));
+    setArtNoteMeta(t ? '已保存' : '自动保存');
+}
+
+/** 浮窗锚在「备注」小块正下方，贴左边但不越出视口 */
+function positionArtNote() {
+    const p = artNotePop(), b = document.getElementById('artNoteBtn');
+    if (!p || !b) return;
+    const r = b.getBoundingClientRect();
+    p.style.top = (r.bottom + 6) + 'px';
+    const w = p.offsetWidth || 320;
+    p.style.left = Math.min(Math.max(8, r.left), Math.max(8, window.innerWidth - w - 8)) + 'px';
+}
+
+function toggleArtNote() {
+    const p = artNotePop();
+    if (!p) return;
+    if (!p.hidden) { hideArtNote(); return; }
+    p.hidden = false;
+    positionArtNote();
+    const area = document.getElementById('artNoteArea');
+    if (area) {
+        area.focus();
+        try { area.setSelectionRange(area.value.length, area.value.length); } catch (e) { /* ignore */ }
+    }
+}
+
+function hideArtNote() {
+    const p = artNotePop();
+    if (!p || p.hidden) return;
+    flushArtNote();
+    p.hidden = true;
+}
+
+/** 输入即防抖保存，不在面板上放"未保存"焦虑 */
+function onArtNoteInput() {
+    artNoteDirty = true;
+    setArtNoteMeta('输入中…');
+    clearTimeout(artNoteTimer);
+    artNoteTimer = setTimeout(() => saveArtNoteNow(true), 700);
+}
+
+async function saveArtNoteNow(silent) {
+    clearTimeout(artNoteTimer);
+    const area = document.getElementById('artNoteArea');
+    if (!area) return;
+    const ok = await saveArtNote(AID, area.value);
+    artNoteDirty = false;
+    const has = !!area.value.trim();
+    artNoteBadge(has);
+    if (!ok) { setArtNoteMeta('保存失败'); return; }
+    setArtNoteMeta(silent ? '已保存' : '已保存 ' +
+        new Date().toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' }));
+    if (!silent) toast('备注已保存');
+}
+
+/** 关闭浮窗/离开页面前把没落盘的输入补写一次 */
+function flushArtNote() {
+    clearTimeout(artNoteTimer);
+    if (artNoteDirty) saveArtNoteNow(true);
+}
+
+async function clearArtNote() {
+    const area = document.getElementById('artNoteArea');
+    if (!area) return;
+    if (area.value && !confirm('清空本篇备注？此操作不可撤销。')) return;
+    area.value = '';
+    await saveArtNoteNow(true);
+    area.focus();
+}
+
+function artNoteKey(e) {
+    if (e.key === 'Escape') { e.preventDefault(); hideArtNote(); }
+    else if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); saveArtNoteNow(); hideArtNote(); }
+}
+
+// 面板外点击收起；面板内与按钮自身都已 stopPropagation
+document.addEventListener('click', (e) => {
+    const p = artNotePop();
+    if (p && !p.hidden && !p.contains(e.target)) hideArtNote();
+});
+window.addEventListener('resize', () => {
+    const p = artNotePop();
+    if (p && !p.hidden) positionArtNote();
+});
+// 关页面前补写，避免最后几个字丢掉
+window.addEventListener('beforeunload', flushArtNote);
 
 // 点击面板外或滚动时收起设置
 document.addEventListener('click', () => hideArtSettings());
