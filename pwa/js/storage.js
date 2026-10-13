@@ -503,21 +503,29 @@ async function exportWrong() {
         alert('暂无错题记录（你还没在 PWA 做过题，或者全部答对了）');
         return;
     }
-    // 按年份去重拉题库拿 qtype
-    const years = [...new Set(wrong.map(a => (a.article_id || '').match(/^\d{4}/)?.[0]).filter(Boolean))];
+    // 按「科目/年份」去重拉题库拿 qtype：en1_ 前缀 = 英语一，走 data/en1/${y}.json
+    const byId = {};
+    for (const a of wrong) if (a.question_id) byId[a.question_id] = a;
+    const need = new Set();
+    for (const a of wrong) {
+        const m = (a.article_id || '').match(/^(en1_)?(\d{4})/);
+        if (m) need.add((m[1] ? 'en1/' : '') + m[2]);
+    }
     const byType = {};   // {qtype: [{tag, stem, answer, user}]}
-    for (const y of years) {
+    for (const key of need) {
         let data;
-        try { data = await (await fetch(`data/${y}.json`)).json(); }
-        catch (e) { console.warn(`跳过 ${y}.json：${e.message}`); continue; }
+        try { data = await (await fetch(`data/${key}.json`)).json(); }
+        catch (e) { console.warn(`跳过 ${key}.json：${e.message}`); continue; }
         for (const art of (data.articles || [])) {
             for (const q of (art.questions || [])) {
-                const myWrong = wrong.find(w => w.question_id === q.id);
+                const myWrong = byId[q.id];
                 if (!myWrong) continue;
-                const m = q.id.match(/(\d{4})_text(\d)_q(\d+)/);
+                // 英二 2022_text1_q3 ｜ 英一 en1_2022_newtype_q41 / en1_2022_cloze_q01
+                const m = q.id.match(/^(en1_)?(\d{4})_(?:text(\d)|(newtype|cloze))_q(\d+)/);
                 if (!m) continue;
-                const tag = `${m[1]}T${m[2]}-${m[3]}`;
-                (byType[q.qtype] = byType[q.qtype] || []).push({
+                const tname = m[3] ? ('T' + m[3]) : (m[4] === 'newtype' ? '新题型' : '完形');
+                const tag = (m[1] ? '英一' : '') + m[2] + tname + '-' + m[5];
+                (byType[q.qtype || '未分类'] = byType[q.qtype || '未分类'] || []).push({
                     tag,
                     stem: (q.stem || '').slice(0, 80),
                     answer: q.answer || '',
@@ -526,6 +534,10 @@ async function exportWrong() {
                 });
             }
         }
+    }
+    if (!Object.keys(byType).length) {
+        alert('错题记录没法匹配到题库（题目 id 已变化）');
+        return;
     }
     // 按错题数降序
     const types = Object.entries(byType).sort((a, b) => b[1].length - a[1].length);
@@ -541,7 +553,8 @@ async function exportWrong() {
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = '英二错题-' + new Date().toISOString().slice(0, 10) + '.csv';
+    // 文件名不写死科目：导出内容可能同时含英一（英一2022新题型-41）与英二
+    a.download = '考研错题-' + new Date().toISOString().slice(0, 10) + '.csv';
     a.click();
     URL.revokeObjectURL(a.href);
     // 弹个汇总方便直接复制贴给我

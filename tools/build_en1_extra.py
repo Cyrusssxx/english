@@ -668,6 +668,50 @@ def detect_answer_pb(block, keys):
     return None
 
 
+# ---------------------------------------------------------------- 排序题金标准
+# 逐题抽答案在排序题上不可靠：解析常用「备选项可能为【D】【G】」这种多候选弱判定，
+# 取第一个候选就会答错（2018 q42 因此把 G 抽成 D）。解析册末尾却有唯一权威句——
+#   「至此，全文顺序确定为【E】—【C】—【G】—【A】—【F】—【B】—【D】。」
+# 配合 Directions 里「Paragraphs C and F have been correctly placed」剔除已定位段，
+# 剩下的 5 个字母就是 41-45 的答案。2023 的顺序句被 OCR 截断，退回「通读检验」序列。
+PB_LT = re.compile(r'[\[【［]\s*([A-H])\s*[\]】］]?')
+PB_FIXED = re.compile(r'Paragraphs?\s+([A-H](?:\s*[,，]\s*[A-H])*\s*(?:,?\s*and\s*)?[A-H]?)'
+                      r'\s+have\s+been\s+correctly\s+placed', re.I)
+PB_ORDER = re.compile(r'全文顺序确定为[：:]?(.{0,300})', re.S)
+
+
+def partb_order_answers(year, keys):
+    """排序题的权威答案 → [41..45] 字母，取不到返回 None。"""
+    ex = partb_extract(year)
+    if not ex or ex['qtype'] != '排序':
+        return None
+    m = PB_FIXED.search(ex['directions'])
+    if not m:
+        return None
+    fixed = set(re.findall(r'[A-H]', m.group(1))) - set('ABCDEFGH'[:0])
+    doc = key_doc(year)
+    if not doc:
+        return None
+    txt = re.sub(r'\s+', ' ', '\n'.join(p.get_text() for p in doc))
+    seq = []
+    mo = PB_ORDER.search(txt)
+    if mo:
+        for ch in PB_LT.findall(mo.group(1)):
+            if ch not in seq:
+                seq.append(ch)
+    if len(seq) < 5:                      # 顺序句被截断 → 退「通读检验」的段落序列
+        mi = txt.find('通读检验')
+        if mi >= 0:
+            seq = []
+            for ch in PB_LT.findall(txt[mi:mi + 500]):
+                if ch not in seq:
+                    seq.append(ch)
+    rest = [c for c in seq if c not in fixed]
+    if len(rest) != 5 or any(c not in keys for c in rest):
+        return None
+    return rest
+
+
 def build_partb(year):
     ex = partb_extract(year)
     if not ex or len(ex['pool']) < 4:
@@ -691,11 +735,19 @@ def build_partb(year):
     # 解析册 Part B 答案/解析（按最密题号页定位）
     kb = partb_key_blocks(year, keys)
     ex_ans = exam_answers(year)
+    # 排序题：逐题的「备选项可能为【D】【G】」弱判定会取到第一个候选而答错，
+    # 权威答案是解析末尾的「全文顺序确定为…」。拿到金标准就以它为准。
+    order = partb_order_answers(year, keys) if qtype == '排序' else None
+    if order:
+        for i, n in enumerate(nums):
+            a = kb.get(n, (None, ''))[0]
+            if a and a != order[i]:
+                warn.append('q%d 逐题抽得 %s，按全文顺序改判 %s' % (n, a, order[i]))
 
     questions = []
     for n in nums:
         k_ans, k_expl = kb.get(n, (None, ''))
-        ans = k_ans or ex_ans.get(n)
+        ans = (order[nums.index(n)] if order else None) or k_ans or ex_ans.get(n)
         if not ans:
             warn.append('q%d 答案未检出' % n)
         expl = re.sub(r'\s+', ' ', k_expl)
