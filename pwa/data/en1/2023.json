@@ -1906,6 +1906,581 @@
    ],
    "sentence_count": 20,
    "question_count": 5
+  },
+  {
+   "id": "en1_2023_cloze",
+   "type": "cloze",
+   "title": "",
+   "topic": "",
+   "source": "Section I Use of English",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "Caravanserais were roadside inns that were built along the Silk Road in areas including China, North Africa and the Middle East.",
+     "id": "en1_2023_cloze_s01",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "They were typically [1] outside the walls of a city or village and were usually funded by local governments or [2]",
+     "id": "en1_2023_cloze_s02",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "The word u caravanseraiis a [3] of the Persian words “karvan”, which means a group of travellers or a caravan, and “saray\" a palace or enclosed building.",
+     "id": "en1_2023_cloze_s03",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "The term caravan was used to [4] groups of people who travelled together across the ancient network for safety reasons, [5] merchants, travellers or pilgrims.",
+     "id": "en1_2023_cloze_s04",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "From the 10th century onwards, as merchant and travel routes became more developed, the [6] of caravanserais increased and they served as a safe place for people to rest at night.",
+     "id": "en1_2023_cloze_s05",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Travellers on the Silk Road [7] the possibility of being attacked by thieves or being [8] to extreme weather conditions.",
+     "id": "en1_2023_cloze_s06",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "For this reason, caravanserais were strategically placed [9] they could be reached in a day's travel time.",
+     "id": "en1_2023_cloze_s07",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "Caravanserais served as an informal [10] point fbr the various people who travelled the Silk Road.",
+     "id": "en1_2023_cloze_s08",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "[11] these structures became important centres for cultural [12] and interaction, with travellers sharing their cultures, ideas and beliefs, [13] taking knowledge with them, greatly [14] the development of several civilisations.",
+     "id": "en1_2023_cloze_s09",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 5,
+     "en": "Caravanserais were also an important marketplace for commodities and [15] in the trade of goods along the Silk Road.",
+     "id": "en1_2023_cloze_s10",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 5,
+     "en": "[16] it was frequently the first stop fbr merchants looking to sell their wares and [17] supplies fbr their own journeys.",
+     "id": "en1_2023_cloze_s11",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 5,
+     "en": "It is [18] that around 12,000 to 15,000 caravanserais were built along the Silk Road, [19] only about 3,000 are known to remain today, many of which are in [20].",
+     "id": "en1_2023_cloze_s12",
+     "cn": "",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "id": "en1_2023_cloze_q01",
+     "number": "1",
+     "qtype": "完形",
+     "stem": "第 1 空：选择最合适的词填入空白 [1]",
+     "stem_cn": "",
+     "options": {
+      "A": "displayed",
+      "B": "occupied",
+      "C": "located",
+      "D": "equipped"
+     },
+     "options_cn": {
+      "A": "陈列；展示；显示",
+      "B": "使用；占用",
+      "C": "把... 安置在；建造于",
+      "D": "配备；装设"
+     },
+     "answer": "C",
+     "explanation": "上下文语义+动词辨析。【解题思路】文章首句给出商旅客栈的定义“路边旅舍（roadsideinns）”,并说明商旅客栈的修建路线和分布地区“沿丝绸之路在中国、北非、中东等地区修建（builtalongtheSilkRoadinareas...MiddleEast）”。空格句中They回指商旅客栈,outsidethewallsofacityorvillage呼应首句along...inareas...,指向“地点/位置”，可见空格所在部分承接首句所述的大范围，进一步点明商旅客栈所处的具体格词应与built语义一致，表示“建立/坐落”等，C项与首句built语义同向，符合概念介绍时“大范围f具体地点”的常见逻辑，故正确。【错项排除】A项displayed利用中文表达“商旅客栈在城市或乡村的外围显现”设置干扰，但display强调“为了让人看见而展示”，常与艺术品、文物等具有观赏性的内容搭配，而文中显然并不强调商旅客栈的观赏性，故排除。B项occupied利用中文表达“商旅客栈占用了城市或乡村的外围”设置干扰，但要表达“某物占用了空间”时,occupy应采用主动语态，并直接跟表示空间、面积等的名词连用，而文中为被动语态，且outside作介词（意为“在……外面\"），sthbeoccupied意为“某物被占领/侵占”，显然不符合文意，故排除。D项equipped利用中文表达“商旅客栈被装设于城市或乡村外围”设置干扰，但sthbeequipped实际意为“为某物提供装备”，其后常接with十九.结构，说明配备的具体工具/器材/设备等。该项填入文中表示“商旅客栈通常配备有……”，显然无法与其后内容形成合理的搭配，故排除。1",
+     "related_sentences": [
+      "en1_2023_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q02",
+     "number": "2",
+     "qtype": "完形",
+     "stem": "第 2 空：选择最合适的词填入空白 [2]",
+     "stem_cn": "",
+     "options": {
+      "A": "privately",
+      "B": "regularly",
+      "C": "respectively",
+      "D": "permanently 3. :"
+     },
+     "options_cn": {
+      "A": "私人地；以私人身份或角色",
+      "B": "定期地；经常地",
+      "C": "各自地；分别地",
+      "D": "永久地；长久地"
+     },
+     "answer": "A",
+     "explanation": "句内语义+常识。【解题思路】空格所在部分指出，（商旅客栈）一般由地方政府或，出资建设。空格词和bylocalgovernments指向两种不同的出资方式，结合常识可知，与“地方政府出资”相对且常见的出资方式应为“个人/私人/民间出资”。A项privately可与bylocalgovernments构成两种常见的出资方式，符合文意（befundedprivately表示“由私人投资”），故正确。【错项排除】考生若误认为空格词与其前usually并列，则可能误选B项regularly,但空格词并非与usually并列，而是与bylocalgovernments并列，说明的是出资的主体/方式，而非出资的频率，故排除。C项respectively用于介绍多个对象的各自情况，但空格所在部分并不存在多个对象，且respectively前不与连词or相接，故排除。D项permanently强调持续时间长、永久存续，无法契合空格所需语境“投资主体/方式”，故排除。r•语篇分析・；/第一、二段介绍“商旅客栈（caravanserai）”的概念及词源。第一段介绍概念。段落以Caravanseraiswere...Theyweretypicallylocated...andwereusuallyfunded...构成语义链“Caravanserais的所指—Caravanserais的坐落位置及资金来源”。①句主句以AisB判断句式直指商旅客栈的本质“路边旅舍”，从句以werebuiltalong...inareasincluding…补充其修建路线及修建地区，由此引出全文重点论述对象“丝绸之路沿线而建的商旅客栈\"。roadsideinns.alongtheSilkRoad、China,NorthAfricaandtheMiddleEast深层暗示这类路边小旅舍所承担的重大角色：助力古代丝绸之路上中国与周边国家互通有无、贸易经商。②句以Theyweretypicallylocated...andwereusuallyfunded...A体说明其坐落位置及资金来源,outsidethewallsofacityorvillage>bylocalgovernments则进一步体现此类位处城市乡野边缘却又由政府出资建设的路边小旅店所承担的重大历史角色，预示后文将展开说明。DOTheword“caravanserai”isa3ofthePersianwords“kGrvGn\"，whichmeansagroupoftravellersoracaravan,and“sarGy\"，apalaceorenclosedbuilding.@Thetermcaravanwasusedto4groupsofpeoplewhotravelledtogetheracrosstheancientnetworkforsafetyreasons,5merchants,travellersorpilgrims.caravanserai一词由波斯语karvan（表示一群旅人或一支旅行队）和sarGy（表示一座宫殿或有围墙的建筑）组盒而成。caravan一词则被用来地还出于安全考虑而结伴穿行在这一古老交通网路（丝绸之路）的各类人群，幽商人、旅人或朝圣者。【,真题精解.【4",
+     "related_sentences": [
+      "en1_2023_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q03",
+     "number": "3",
+     "qtype": "完形",
+     "stem": "第 3 空：选择最合适的词填入空白 [3]",
+     "stem_cn": "",
+     "options": {
+      "A": "definition",
+      "B": "transition",
+      "C": "substitution",
+      "D": "combination"
+     },
+     "options_cn": {
+      "A": "定义；释义",
+      "B": "过渡；转变",
+      "C": "代替；替换",
+      "D": "结合；联合"
+     },
+     "answer": "D",
+     "explanation": "空格句指出,caravanserai（商旅客栈）一词是波斯语kGrvGn（表示一群旅人或caravan）和sardy（表示一座宫殿或有围墙的建筑）的】。首先，结合空格下句可知，caravan也与旅行人群有关，由此可判断，波斯语karvan整体指向旅人。进而分析caravanserai>karvansaray三词关联可发现,无论从构词法角度还是从词义角度来看，前者都是后两者的组合：kGrvdn（旅人）+sardy（宫殿/有围墙的建筑）=caravanserai（商旅客栈/路边旅舍）。可见，空格句是承接首段caravanserai一词的概念内涵，进而说明caravanserai一词的构成/来源。D项combination恰能契合句内caravanseraiskarvansarayH者之间的关联，故正确。2【错项排除】将A项代入文中【caravanserai是波斯语karvan的释义”看似成立，但由其后which引导的从句可知karvan的释义是“一群旅人或一支旅行队”，表示“商旅客栈/路边旅舍”的caravanserai明显不是波斯语karvan的释义，故排除。B项利用中文思维“caravanserai是从karvan和saray转化而来的”设置干扰，但transition强调“状态或情况的转变”，且“从A转变为B”应采用transitionfromAtoB结构，无论从语义角度，还是从搭配角度，选项都无法契合。将C项代入文中，AisasubstitutionofBandC表示“A是B和C的替代品\"，而caravanserai并不等同于karvan^saray两者的任何一个，而是它们组合叠加形成的新词，显然无法起到替代作用。",
+     "related_sentences": [
+      "en1_2023_cloze_s03"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q04",
+     "number": "4",
+     "qtype": "完形",
+     "stem": "第 4 空：选择最合适的词填入空白 [4]",
+     "stem_cn": "",
+     "options": {
+      "A": "classify",
+      "B": "record",
+      "C": "describe",
+      "D": "connect"
+     },
+     "options_cn": {
+      "A": "分类；归类",
+      "B": "记录；记载",
+      "C": "描述；形容",
+      "D": "联系；联结"
+     },
+     "answer": "C",
+     "explanation": "上下文语义十句内语义。【解题思路】空格上句在介绍caravanserai一词构成时提及caravan,但该词属于生僻词汇，仅可通过句内连词or判断它与agroupoftravellers指向一致。空格句指出,caravan一词被用来4出于安全考虑而结伴穿行在这一古老交通网路（丝绸之路）的各种人群。易推知，空格句意在聚左僻词汇caravan的释义，明确该词所表达/传递的内涵，空格词应指向“传递/表达”等。C项describe符合抽象概念/术语caravan和具体内涵groupsofpeoplewho…间的解释说明关系，故正确。【错项排除】考生可能因groupsofpeoplemerchants,travellersorpilgrims而误认为空格句意在说明“caravan可用来将人群分为商人、旅人、朝圣者等几大类”“caravan可用于将不同人群凝聚起来”，进而误选A、D两项，但由空格上句可知，caravan指人群，“用人群来分类/凝聚人群”显然不合逻辑，故排除A、D两项。B项record侧重于仪器、文档、系统等工具或载体（具体事物）的记录，而文中Thetermcaravan表示抽象的概念，故排除。",
+     "related_sentences": [
+      "en1_2023_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q05",
+     "number": "5",
+     "qtype": "完形",
+     "stem": "第 5 空：选择最合适的词填入空白 [5]",
+     "stem_cn": "",
+     "options": {
+      "A": "apart from",
+      "B": "instead of",
+      "C": "such as",
+      "D": "along with"
+     },
+     "options_cn": {
+      "A": "除了...外",
+      "B": "代替；而不是",
+      "C": "例如",
+      "D": "与... 一起；连同....一起"
+     },
+     "answer": "C",
+     "explanation": "空格句指出，caravan一词用于描述结伴穿行在丝绸之路的各类人群,商人、旅人或朝圣者。结合常识可判断，商人、旅人、朝圣者为不同类别的人群，与空格前“各类人群”属于“包含一被包含”的关系。结合下文“人们在丝绸之路沿线的商旅客栈里进行思想、文化、信仰交流以及商品交易”也可知，穿行丝绸之路的人群含有商人、旅人、朝圣者。因此，可综合判断空格句句内应为示例列举关联，空格词应起到举例说明作用。C项suchas表举例，符合merchants,travellersorpilgrims对groupsofpeople...reasons的列举说明作用，故正确。【错项排除】A项apartfrom表排除，该词填入文中表示“结伴穿行丝绸之路的人群”不包含“商人、旅人、朝圣者”，与文意相悖，可排除。B项insteadof表取舍，该词填入文中表示“结伴穿行丝绸之路的人群”和“商人、旅人、朝圣者”相对，不符合文意，故排除。D项alongwith表并列，该词填入文中表明“结伴穿行丝绸之路的人群”和“商人、旅人、朝圣者”独立、并行、不交叉，也不符合文意。一语篇分析・；J第二段介绍词源。段落以Theword\"caravanserai”isacombinationof...Thetermcaravanwasusedto…构成语义链“caravanserai一词的构成—caravan的用法”。①句主干以AisacombinationofBandC结构指出caravanserai由karvGn、sarGy这两个波斯语组合而成，定语从句whichmeans...、同位语apalace…分别对这两个波斯语的具体释义予以解释。agroupoftravellers“一群旅人”、apalaceorenclosedbuilding\"一座宫殿或有围墙的建筑物”二者结合恰好对应caravanserai“商旅客栈”的含义，可见combination既指词形上的结合，又指词义上的结合。②句主干以Thetermcaravanwasusedto…具体解释上句中的难词caravan,借其用法”描述各类人群”明确其释义“指各种人群”；从句则以travelledtogetheracross...forsafetyreasons,suchasA,BorC,具体说明这些人群所指“出于安全考虑而结伴行3走在丝绸之路上的人群”及典型人群“商人、旅人、朝圣者”，其中network指“交通道路网”，theancientnetwork此处即指theSilkRoad；travelledtogethersafetyreasons深层暗示古代丝绸之路上的风险，反衬商旅客栈的安全保护作用。HI❶Fromthe10thcenturyonwards,asmerchantandtravelroutesbecamemoredeveloped,the6ofcaravanseraisincreasedandtheyservedasasafeplaceforpeopletorestatnight.❷TravellersontheSilkRoad7thepossibilityofbeingattackedbythievesorbeing8toextremeweatherconditions.❸Forthisreason,caravanseraiswerestrategicallyplaced9theycouldbereachedinaday'straveltime.自10世纪伊始，随着商旅路线的日益发展，商旅客栈的健建也在不断增多，它们给人们提供了夜间休息的安全场所。丝绸之路上的旅人画随查被盗贼袭击或道堂极端天气的可能。为此，商旅客栈的位置做了战略布局，为的是旅行者们在历经一天的长途跋涉后恰好可以抵达。【•真题精解•J",
+     "related_sentences": [
+      "en1_2023_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q06",
+     "number": "6",
+     "qtype": "完形",
+     "stem": "第 6 空：选择最合适的词填入空白 [6]",
+     "stem_cn": "",
+     "options": {
+      "A": "construction",
+      "B": "restoration",
+      "C": "impression",
+      "D": "evaluation"
+     },
+     "options_cn": {
+      "A": "建造；施工",
+      "B": "整修；修复",
+      "C": "印象；作用；效果",
+      "D": "估算；评价"
+     },
+     "answer": "A",
+     "explanation": "空格句【段首句】指出：自10世纪伊始，随着商旅路线的日益发展，商旅客栈的】也越来越多/大，它们让旅人们能够在夜间安全休息。借助句内“自10世纪伊始”“日益发展”可判断句子意在介绍商旅客栈的开发建设,句内借as暗藏一条因果链：商旅路线日益发展一旅人越来越多一对客栈的需求越来越大-客栈的】越来越多/大。空格词应指向客栈的修建数量/规模等。A项construction代入句中恰能传递丝绸之路上所建造的商旅客栈越来越多，符合句内语义逻辑，故正确。【错项排除】”修复的商旅客栈越多，越能满足旅人的需求”看似符合逻辑，但空格前“自10世纪伊始”“商旅路线日益发展【moredeveloped】”均暗示该时期商旅客栈尚处于开发建设中，并不存在已建造并废弃不用的客栈，故排除B项。命题人利用中文思维”商旅客栈的作用越来越大，给人们提供夜间休息的安全场所”设置干扰，但impression表达“作用；效果”时，指向的是“某物对人或情境等的影响”，并非其自身所发挥的作用；且空格句意在讲述商旅客栈的开发建设，并非其影响，“商旅路线的发展成熟”与“商旅客栈的影响力”也不构成因果关联，故排除C项。命题人利用D项evaluation与value的关联以及value与句中servedas的关联设置障碍，错误性质同C项。",
+     "related_sentences": [
+      "en1_2023_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q07",
+     "number": "7",
+     "qtype": "完形",
+     "stem": "第 7 空：选择最合适的词填入空白 [7]",
+     "stem_cn": "",
+     "options": {
+      "A": "doubted",
+      "B": "faced",
+      "C": "accepted",
+      "D": "reduced"
+     },
+     "options_cn": {
+      "A": "怀疑；不相信",
+      "B": "面临；面对",
+      "C": "相信；接受",
+      "D": "减少；缩小"
+     },
+     "answer": "B",
+     "explanation": "上下文语义。酉己套音频VX,KZRZ2019【解题思路】空格句指出，丝绸之路上的旅人工^^盗贼袭击、……极端天气的可能；空格下句随后指出，正是因为这个原因，商旅客栈的位置做了战略布局。综合可见，两句逻辑链为：之所以对商旅客栈的位置进行战略布局，是为了规避某些风险，从而保障旅人的夜间安全，空格句应意在介绍旅人可能遭遇的危险。B项faced代入句中恰能传递旅人们可能遭遇的危险，能与下句构成连贯的因果关联，故正确。【错项排除】“丝绸之路上的旅人们不相信会有被盗贼袭击、极端天气的可能”很明显不契合上下文语义逻辑和常识，可排除A项。命题人利用中文思维”旅人们会接受被盗贼袭击、极端天气的可能”设置障碍，但“接受”意味着“无法改变”，这显然与空格下句”为应对这些潜在危险采取了一定措施”相悖，可排除C项。D项语义色彩同A项，指向相关风险可能性的降低，也不符合上下文语义逻辑和常识。",
+     "related_sentences": [
+      "en1_2023_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q08",
+     "number": "8",
+     "qtype": "完形",
+     "stem": "第 8 空：选择最合适的词填入空白 [8]",
+     "stem_cn": "",
+     "options": {
+      "A": "assigned",
+      "B": "subjected",
+      "C": "accustomed",
+      "D": "opposed"
+     },
+     "options_cn": {
+      "A": "分配；给予；指派",
+      "B": "经受；遭受",
+      "C": "习惯于；适应",
+      "D": "对抗；反对"
+     },
+     "answer": "B",
+     "explanation": "句内语义。【解题思路】空格所在部分意为“被盗贼袭击或极端天气情况的可能”，也即“被盗贼袭击”和极端天气情况”都是旅人可能要面临的危险情况。空格词应表示遭受/经历/遇到等。subjectsbtosth表示“使某人遭受某（不好的）事”,B项恰能契合句内“遭受极端天气”之意，故正确。【错项排除】assignsbtosth表示“指派某人承担某项工作”，而句中介词to后并非指工作，“旅人被指派给极端天气”逻辑不自洽，可排除A项。accustomsbtosth表示“使某人习惯/适应某事”，“习惯/适应极端天气”指向“人的主观能动性”，而句子意在说明“客观环境：可能存在极端天气的风险”，故排除C项。“旅人们与极端天气对抗”似乎符合逻辑，但。ppose表达此义时，其后直接接对抗的对象，D项与句内搭配不符，可排除。",
+     "related_sentences": [
+      "en1_2023_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q09",
+     "number": "9",
+     "qtype": "完形",
+     "stem": "第 9 空：选择最合适的词填入空白 [9]",
+     "stem_cn": "",
+     "options": {
+      "A": "so that",
+      "B": "even if",
+      "C": "now that",
+      "D": "in case"
+     },
+     "options_cn": {
+      "A": "为使；以便",
+      "B": "即使；虽然",
+      "C": "既然；由于",
+      "D": "以防，以防万一；假使，假如"
+     },
+     "answer": "A",
+     "explanation": "句内逻辑。【解题思路】空格句指出：出于“旅人会有被盗、遭遇极端天气的可能”这一原因，商旅客栈的位置进行了战略布局，】旅人们在经过一天的路程之后能够抵达。句内存在明显的因果逻辑链条：战略布局客栈的位置-保证旅人一天长途跋涉后即可抵达-规避被盗风险、躲避极端天气，空格词应表示目的或结果。A项sothat表目的，置人句中，能正确传递“对位置进行战略布局”与“旅人当日即可抵达”之间的语义逻辑，故正确。【错项排除】B项evenif表让步，用于表示主句所述情形不因从句所述情形而变，而句中“旅人当日即可抵达”是“对位置进行战略布局”的目的或结果，故排除。C项nowthat表原因，代人句中颠倒主从句间因果关联。D项incase表原因时,代入句内颠倒主从句间因果关联；表条件时，无法契合句内主从句间语义关联。二语篇分析・；/第三至五段介绍商旅客栈的实际功能及意义。第三段介绍实际功能。段落以因果表达as、Forthisreason构建因果线，以servedasasafeplace>facedthepossibilityofbeingattackedby...orbeingsubjectedto…构建语义线“规避风险的安全之所”。①句以Fromthe10thcenturyonwards体现行文思路“追溯历史\"，以as>and暗藏的因果关联构建句内语义逻辑“商旅路线日益发展成熟-商旅客栈的修建不断增多”，其中servedassthforsbtodosth简明扼要地指出了商旅客栈的首要功能：给人们提供一个夜间能够安心休息的场所。②③句以Forthisreason构建句间因果关联“为了规避风险一客栈位置进行了精心布局”，以此说明①句。②句先从反面出发，以facedthepossibilityofbeingattackedby...orbeingsubjectedto…说明丝路旅人所面临的两大风险，反衬客栈修建及精心选址的必要。③句再从正面回归，以werestrategicallyplacedsothattheycould…说明客栈的精心布局及目标效果，凸显客栈对丝路旅人所起的防身护体作用，couldbereachedinaday'straveltime既体现了具体布局（客栈之间相隔一天的旅程），也说明了这种布局能够取得的效果/达成的目的（旅人只需一天即可获得安全的歇脚处）。IVOCaravanseraisservedasaninformal10pointforthevariouspeoplewhotravelledtheSilkRoad.❷11,thesestructuresbecameimportantcentresforcultural12andinteraction,withtravellerssharingtheircultures,ideasandbeliefs,13takingknowledgewiththem,greatly14thedevelopmentofseveralcivilisations.商旅客栈是行走在丝绸之路上的各类人群的轻松友好的塞金场所。因此，这些客栈成了重要的文化交述、互动中心，旅行者们（在此）既可以获取知识，又可以分享他们的文化、思想和信仰，这给几个地区的文明的发展带来了重大影胞。5•真题精解-4",
+     "related_sentences": [
+      "en1_2023_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q10",
+     "number": "10",
+     "qtype": "完形",
+     "stem": "第 10 空：选择最合适的词填入空白 [10]",
+     "stem_cn": "",
+     "options": {
+      "A": "talking",
+      "B": "starting",
+      "C": "breaking",
+      "D": "meeting 11. :"
+     },
+     "options_cn": {
+      "A": "谈话;交谈",
+      "B": "开始；起始",
+      "C": "打破；暂停",
+      "D": "会面；见面"
+     },
+     "answer": "D",
+     "explanation": "上下文语义+动词辨析。【解题思路】空格句（段首句）指出，商旅客栈是行走在丝绸之路上的各类人群的轻松友好的】场所。结合空格下句（段末句）“这些客栈成了旅人们分享文化、思想和信仰的重要互动中心”以及常识可判断，商旅客栈应该是人流密集、旅人们可以在此沟通交流或互动分享的地方。空格词应能传递商旅客栈将各类人群集结起来的功能。meetingpoint表示“交汇点；聚会场所”，代人句中恰能传递出商旅客栈供旅人们会集、交流互动的功能，故D项正确。【错项排除】命题人利用中文思维“商旅客栈供人们交流、谈话之用”设障，但空格句意在强调客栈汇集不同人群、交流互动的功能，“谈话”过于单一，无法全面体现这一句意，且talkingpoint为固定表达，表示”话题;论题\"，故排除A项。startingpoint意为“起点”，命题人利用下文“商旅客栈是丝路商人的第一站（thefirststop）”设障，但结合常识可知，客栈不可能是丝路上不同人群的起点，充其量只是他们旅途中的投宿点，且“轻松友好的起点”本身也语义不通，故排除B项。命题人利用名词break“休憩；间歇”设障，让学生误以为这里指“短暂歇脚的地方”而错选，但“歇脚”并非句子意在表达的客栈功能，且breakingpoint实为固定表达，指“顶点；极限\"，故排除C项。",
+     "related_sentences": [
+      "en1_2023_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q11",
+     "number": "11",
+     "qtype": "完形",
+     "stem": "第 11 空：选择最合适的词填入空白 [11]",
+     "stem_cn": "",
+     "options": {
+      "A": "By the way",
+      "B": "On occasion",
+      "C": "In comparison",
+      "D": "As a result"
+     },
+     "options_cn": {
+      "A": "顺带提一下；附带问一句",
+      "B": "有时；偶尔",
+      "C": "比较起来；相对而言",
+      "D": "作为结果；因此"
+     },
+     "answer": "D",
+     "explanation": "上下文语义+短语辨析。【解题思路】空格句主干指出，这些建筑（回指商旅客栈）成了重要的文化……和互动中心；空格上句指出，商旅客栈可用作各类人群的轻松友好的聚会场所。两句中servedas、became实际暗藏因果关联“商旅客栈充当会集点之用-慢慢变成了重要的文化……和互动中心”，空格词应表达因果关联。D项Asaresult用于引出结果，代人句中恰能契合空格句与上句之间的因果逻辑，故正确。【错项排除】A项Bytheway用于引出与所述主题无关的话题或评论，但由句内thesestructures可知，空格句并未引出新话题，而是承接上文继续谈论“商旅客栈”的意义/影响，故排除。B项Onoccasion相当于occasionally,表示间或不定之意，但由上文“自10世纪伊始”、下文“多个地区的文明的发展”可判断,句子意在说明商旅客栈在历史上所承载的文化交流功能，这并非间或不定的情形，而是长期客观存在的状态，故排除。C项Incomparison常用于承前引出比较对象，但空格句并非与上句作比较，而是说明其结果，故排除。",
+     "related_sentences": [
+      "en1_2023_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q12",
+     "number": "12",
+     "qtype": "完形",
+     "stem": "第 12 空：选择最合适的词填入空白 [12]",
+     "stem_cn": "",
+     "options": {
+      "A": "heritage",
+      "B": "revival",
+      "C": "exchange",
+      "D": "status"
+     },
+     "options_cn": {
+      "A": "遗产；传统",
+      "B": "复兴；复苏",
+      "C": "交流（信息、知识、思想等）",
+      "D": "地位；身份"
+     },
+     "answer": "C",
+     "explanation": "句内语义+名词辨析。【解题思路】空格句指出，这些客栈成了重要的文化和互动中心，旅人们（在此）分享文化、思想和信仰……结合句内并列连词and可知，“文化】”应与“（文化）互动”语义一致，空格词应指向“互动/交流/分享”等。“文化交流”恰能与“文化互动”构成并列，也能体现“旅人们分享文化、思想和信仰”之意，故C项正确。【错项排除】A项利用常规认知“多个地区的文明遗留下重要的文化遗产”设障，但“文化遗产”既不能与“文化互动”构成并列，也不能概括体现其后sharingtheircultures,ideasandbeliefs这一动作，故排除。考生若将空格后“分享文化、思想和信仰”误认为是“文化复兴”的表现，则可能误选B项。但句子意在强调“互动、分享”，而非“复兴”,“复兴”意味着此前已得以发展、后已衰落，而这与句尾“（多个地区的文明的）发展”不符，故排除。D项利用文中反复提及的“丝绸之路”及其之于人类文明的重要地位设障，6但句子意在讲述商旅客栈的文化功用，而非客栈/丝路的地位，且“文化地位的重要中心”无法逻辑自洽，故排除。",
+     "related_sentences": [
+      "en1_2023_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q13",
+     "number": "13",
+     "qtype": "完形",
+     "stem": "第 13 空：选择最合适的词填入空白 [13]",
+     "stem_cn": "",
+     "options": {
+      "A": "with regard to",
+      "B": "in spite of",
+      "C": "as well as",
+      "D": "in line with"
+     },
+     "options_cn": {
+      "A": "关于；在... 方面",
+      "B": "虽然；尽管",
+      "C": "以及；连同；也",
+      "D": "与... 一致；按照"
+     },
+     "answer": "C",
+     "explanation": "句内并列逻辑+短语辨析。【解题思路】空格所在伴随状语指出，旅人们（在此）分享文化、思想和信仰，】获取知识。“分享文化、思想和信仰”与“获取知识”均指向旅人们在文化交流与互动中心（即商旅客栈）的活动情况，空格词应体现二者的并列关联，指向“同时/并且/也”等意。将C项代入空格处，恰能传递“既获取知识，又分享文化、思想、信仰”之意，故正确。【错项排除】A项withregardto用于引出限定信息，说明事物关乎的问题或所属的方面。通常置于句首，后跟主谓宾等成分;有时也置于句中，用作修饰名词的定语，而文中空格所在部分置于with引导的复合结构中，连接两个并列事物，即旅人们的两种行为动作，选项既不契合句内语法结构，也不契合句内语义逻辑，故排除。B项inspiteof表示让步关系，通常修饰句子谓语，而空格词并非修饰句子谓语，也并不表达让步关联，故排除。D项inlinewith用于引出某事物变化所依据的标准，但空格后“获取知识”显然并非“分享文化、思想和信仰”的标准，故排除。",
+     "related_sentences": [
+      "en1_2023_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q14",
+     "number": "14",
+     "qtype": "完形",
+     "stem": "第 14 空：选择最合适的词填入空白 [14]",
+     "stem_cn": "",
+     "options": {
+      "A": "completing",
+      "B": "influencing",
+      "C": "resuming",
+      "D": "pioneering"
+     },
+     "options_cn": {
+      "A": "完成，结束；使完整，使圆满",
+      "B": "影响；对……起作用",
+      "C": "（中断后）重新开始，继续",
+      "D": "开拓；开创"
+     },
+     "answer": "B",
+     "explanation": "句内语义+动词辨析。【解题思路】由前两题分析可知，空格句意在说明商旅客栈所承载的文化交流功能。再结合常识“文化交流与互动会给地区文明的发展带来积极影响”可判断，空格词应指向“影响/促进/推动”等。B项代入空格处即“这给几个地区的文明的发展带来了重大影响”，既能体现“文化交流、互动”与“文明的发展”之间“影响vs被影响”的关系（契合逻辑上的主宾关系），又能表明“商旅客栈成为重要的文化交流、互动中心”产生的结果（契合现在分词短语的语义内涵），故正确。【错项排除】命题人利用A项捏造出“这使地区文明的发展圆满了\"，但文明的发展是持续向前的，并无一个明确的圆满结束点。此夕卜，completing与其前程度副词greatly也无法搭配，故排除。C项错误有二.“文明重新开始发展”意味着“文明的发展中断过”，而文中并未提及相关信息；2.resume与程度副词greatly也无法搭配。D项利用“旅人们开拓了数个地区的文明”设置干扰，但句中空格词的逻辑主语并非travellers,而是其前整个句子；且文明的发展是延绵不断的，在丝绸之路（商旅客栈）之前即已存续，丝路/客栈/旅人对文明的发展不可能是“开拓作用”，故排除。一语篇分析•J第四段介绍文化意义。段落以Caravanseraisservedas...Asaresult...实现因果衔接，并借对比组informalmeetingpointvsimportantcentres明确其因果关联“旅人们出于安全需求会集于商旅客栈，结果却使其意外成了重要的文化交流和互动中心”。①句以Caravanseraisservedas...呼应上段theyservedasasafeplace...,并借“asafeplace（庇护人们的安全场所，满足其基本的生存需求）-aninformalmeetingpoint（各类人群轻松友好的聚会场所，暗含其社会交往需求）”实现段际语义递进，暗示本段将从社会层面具体说明商旅客栈的意义。②句以thesestructuresbecame...withtravellerssharing...,greatlyinfluencing…构建句内语义链“概说观点f阐述观点f说明影响\"。句中thesestructures（回指Caravanserais）importantcentres一方面明确指出商旅客栈的重要文化意义，另一方面又暗含“这些客栈虽看似只是普通的建筑物，其作用却不可小觑”之意；复合结构withsbdoingX,aswellasdoingY说明旅人们在客栈进行的交流互动活动“旅人们在此可获取知识，也可分享文化、思想和信仰”；现在分词短语greatlyinfluencing…则说明这些活动的重大意义“给多个地区的文明的发展带来了重大影响”，其中greatly凸显影响之大，several看似表少，实则表多，以少说多，进一步凸显影响之大。7熬❶Caravanseraiswerealsoanimportantmarketplaceforcommoditiesand15inthetradeofgoodsalongtheSilkRoad.❷16,itwasfrequentlythefirststopformerchantslookingtoselltheirwaresand17suppliesfortheirownjourneys.❸Itis18thataround12,000to15,000caravanseraiswerebuiltalongtheSilkRoad,19onlyabout3,000areknowntoremaintoday,manyofwhicharein20[287words]商旅客栈也是重要的（大宗）商品的交易市场，且宜至于丝绸之路沿线（小宗）商品的买卖。实际上，对于那些想要出售货物同时又为自己旅程髓董补给的商人来说，商旅客栈往往是第一站。据信，丝绸之路沿线修建了大约12000到15000间商旅客栈，我目前已知仅存约3000间，其中许多已经破败丕堪。【•真题精解・",
+     "related_sentences": [
+      "en1_2023_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q15",
+     "number": "15",
+     "qtype": "完形",
+     "stem": "第 15 空：选择最合适的词填入空白 [15]",
+     "stem_cn": "",
+     "options": {
+      "A": "aided",
+      "B": "invested",
+      "C": "failed",
+      "D": "competed"
+     },
+     "options_cn": {
+      "A": "（in sth）对某事有帮助；有助于某事",
+      "B": "（in sth）投资某物；购买某物",
+      "C": "（in sth）未能做到某事；在某方面失败",
+      "D": "（in sth）在某地竞争；参加某赛事"
+     },
+     "answer": "A",
+     "explanation": "上下文语义+动词辨析。【解题思路】空格句指出，商旅客栈也是重要的商品交易市场,】丝绸之路沿线的商品买卖。结合句内also可知，空格句承接上文“商旅客栈所承载的文化交流功能”，转而介绍“商旅客栈所承载的经济发展意义'\"再由句内and可知，”重要的商品交易市场”与“一£丝绸之路沿线的商品买卖”语义指向一致，均饱含褒义色彩，空格词应表达“推动/促进/有利于”等。A项代人文中即“有助于丝绸之路沿线的商品买卖”，既能与其前“商旅客栈也是重要的商品交易市场”构成合理的逻辑，也能与下文“对于那些想要出售货物的商人来说，商旅客栈往往是第一站”相呼应，故正确。【错项排除】B项利用中文语境”商品市场的投资”设障，但空格句侧重说明“商旅客栈的经济意义”,而非其“经济行为”，故排除。C项与上下文“重要的文化交流、互动中心”“重要的商品交易市场”“往往是第一站”搭建起的正面、肯定的积极语境严重不符，故排除。D项用“商品市场中的贸易竞争”设障，但文中“商旅客栈”本身即是重要的商品交易市场，而非需要参与贸易竞争的市场主体。",
+     "related_sentences": [
+      "en1_2023_cloze_s10"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q16",
+     "number": "16",
+     "qtype": "完形",
+     "stem": "第 16 空：选择最合适的词填入空白 [16]",
+     "stem_cn": "",
+     "options": {
+      "A": "Rather",
+      "B": "Indeed",
+      "C": "Otherwise",
+      "D": "However"
+     },
+     "options_cn": {
+      "A": "相反；而是",
+      "B": "其实；实际上",
+      "C": "否贝!J ；不然",
+      "D": "然而；不过"
+     },
+     "answer": "B",
+     "explanation": "上下文语义+副词辨析。【解题思路】空格上句指出，商旅客栈是一个重要的商品交易市场；空格句进而指出，3，这一商品交易市场（it回指marketplace）对于想要出售货物同时为自己旅途……补给的商人而言是第一站。可见，空格句中“商人”“出售货物”“为自己旅途……补给”与上句“商品交易市场”存在上下义关系，两句应为“概述一详说\"关联，空格词应体现这一关系。B项Indeed用于补充内容，以强调或支持前述观点，用于此处恰能体现句间解释说明关系，对“商旅客栈所承载的商品交易市场功能”予以肯定，故正确。【错项排除】A项Rather用于表示相反的情况，相当于onthecontrary,而文中传递的是补充说明关系，不是非此即彼的取舍关系，故排除。C项Otherwise表示条件结果关联（如果不……，就……），显然也不契合文中所传递的语义逻辑关系，可排除。D项However表达转折关联，而文中两句间并不存在语义转折，而是语义相承、由概述到详说的过程，故排除。",
+     "related_sentences": [
+      "en1_2023_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q17",
+     "number": "17",
+     "qtype": "完形",
+     "stem": "第 17 空：选择最合适的词填入空白 [17]",
+     "stem_cn": "",
+     "options": {
+      "A": "go in for",
+      "B": "stand up for",
+      "C": "close in on",
+      "D": "stock up on"
+     },
+     "options_cn": {
+      "A": "参加（考试或竞赛）；对……感兴趣；从事（某项工作）",
+      "B": "支持；维护",
+      "C": "水尤指为了进攻）逼近，靠近",
+      "D": "贮备，备足（某物）"
+     },
+     "answer": "D",
+     "explanation": "句内语义+动词短语辨析。[解题思路[结合上题分析可知，空格句意在承接上句“商旅客栈所承载的商品交易市场功能”，继续8说明它们所承担的具体市场交易功能，即商人可在此出售货物并为自己旅途】补给。空格词应跟买卖/交易相关，同时又能跟“补给”相搭，构成合理的逻辑。D项用于此处恰露赢买卖关系【stockupon的英文释义为tobuyalotofsthsothatyoucanuseitlater】,体现“商人既在商旅客栈出售自己的货物，也为自己买进货物”的语义，故正确。【错项排除】空格后“补给”不是考试/竞赛，也不是工作，充其量只能说是商人感兴趣的东西，但是“对补给感兴趣”并不能传递商品交易/买卖的语义，故排除A项。B项利用中文语境“保护补给”设障，但standupfor所接对象通常指受到攻击的人或与人相关的思想、权利等抽象事物，而“补给”并非抽象事物，且文中并未提及“补给受到攻击”，故排除。文中“商人”与“补给”之间并不存在“攻击vs被攻击”关系，而是“交易vs被交易”关系，故排除C项。",
+     "related_sentences": [
+      "en1_2023_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q18",
+     "number": "18",
+     "qtype": "完形",
+     "stem": "第 18 空：选择最合适的词填入空白 [18]",
+     "stem_cn": "",
+     "options": {
+      "A": "believed",
+      "B": "predicted",
+      "C": "recalled",
+      "D": "implied"
+     },
+     "options_cn": {
+      "A": "把",
+      "B": "预言；预报",
+      "C": "记起；回忆起",
+      "D": "暗示；意味着"
+     },
+     "answer": "A",
+     "explanation": "句内语义+动词辨析。【解题思路】空格句指出，丝绸之路沿线修建了大约12000到15000间商旅客栈，……目前已知仅存3000间左右。可见，全句意在讲述丝绸之路沿线最初所建商旅客栈数量以及当前幸存数量，借由从句中areknownto可推断空格词应与之相近，Itis18that应传递“人们所相信/知道/了解/获知的”等。itisbelieved【that】…为常见用法，意为“据信……”，表达对某事物的看法、意见，代人句中恰能与areknownt。相呼应，传递人们对丝绸之路沿线商旅客栈总体修建数量的大体看法，故A项正确。【错项排除】itispredictedthat…意为“据预测”，表达对未来事情的预估，但句中areknownto表明空格处并非预测之意，而是确凿可知之意，B项与文意不匹配。itisrecalled【that】…可理解为“据回忆……”，但这种用法并不常见，且商旅客栈历史悠久，跨越多个世纪，其修建数量非当代人所能回忆得了的，故排除C项。itisimpliedthat…为常见用法，意为“这意味着……命题人利用中文语境”这意味着……”设障。但这一用法表明前文存在不明确的表达，是对前文所述内容的进一步明确。而空格句与上文分立不同句群，并无直接的语义关联，故排除D项。",
+     "related_sentences": [
+      "en1_2023_cloze_s12"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q19",
+     "number": "19",
+     "qtype": "完形",
+     "stem": "第 19 空：选择最合适的词填入空白 [19]",
+     "stem_cn": "",
+     "options": {
+      "A": "until",
+      "B": "because",
+      "C": "unless",
+      "D": "although"
+     },
+     "options_cn": {
+      "A": "到... 时；直到.... 为止",
+      "B": "因为",
+      "C": "除非；如果不",
+      "D": "虽然，尽管；不过然而"
+     },
+     "answer": "D",
+     "explanation": "句内逻辑+连词辨析。【解题思路】结合上题分析可知，空格句意在说明丝绸之路沿线上商旅客栈的修建量与现存量，其中“大约12000到15000间”与“大约3000间”之间存在明显数据反差，空格词应传递这一语义反差。D项although恰好契合句内前后两部分间数据对比引起的语义反差，传递“商旅客栈数目锐减”的遗憾现状，故正确。【错项排除】A项until表时间关系，用于引出主句所述情形的结束时亥人而文中空格后并非时间节点，而是一个常态性状况，且句内存在语义反差，选项无论是从语法搭配上，还是语义逻辑上，都不契合，故排除。B项because表示因果关联，用于引出主句所述事件的原因，而文中“大约修建12000到15000间商旅客栈”与“大约仅存3000间商旅客栈”并不存在因果关联，故排除。C项unless表条件关联，用于引出主句情形不成立的唯一条件，而“大约仅存3000间”与“大约修建12000到15000间”并不存在任何条件关系，故排除。",
+     "related_sentences": [
+      "en1_2023_cloze_s12"
+     ]
+    },
+    {
+     "id": "en1_2023_cloze_q20",
+     "number": "20",
+     "qtype": "完形",
+     "stem": "第 20 空：选择最合适的词填入空白 [20]",
+     "stem_cn": "",
+     "options": {
+      "A": "ruins",
+      "B": "debt",
+      "C": "fashion",
+      "D": "series"
+     },
+     "options_cn": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+     },
+     "answer": "A",
+     "explanation": "句内语义+固定搭配+名词辨析。【解题思路】结合上两题分析可知，句内存在今昔对比“修建规模庞大：约12000到15000间vs现存数量有限：仅约3000间”;再结合空格所在部分时态可知，该部分依然讲述现状，指向“仅存约3000间中，有许多处于20的状态”，空格词描述当前留存下来的客栈的状态。A项用于此处恰能说明当前留存下来的商旅客栈的状态，也能与“仅存约3000间”构成解释说明关系，故正确。【错项排除】B项利用中文语境”商旅客栈经营不善、债务累累、数量锐减”设障，但文中并未说明客9",
+     "related_sentences": [
+      "en1_2023_cloze_s12"
+     ]
+    }
+   ]
   }
  ]
 }

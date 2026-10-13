@@ -1955,6 +1955,567 @@
    ],
    "sentence_count": 15,
    "question_count": 5
+  },
+  {
+   "id": "en1_2021_cloze",
+   "type": "cloze",
+   "title": "",
+   "topic": "",
+   "source": "Section I Use of English",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "Fluid intelligence is the type of intelligence that has to do with short-term memory and the ability to think quickly, logically, and abstractly in order to solve new problems.",
+     "id": "en1_2021_cloze_s01",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "It [1] in young adulthood, levels out for a period of time, and then [2] starts to slowly decline as we age.",
+     "id": "en1_2021_cloze_s02",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "But [3] aging is inevitable, scientists are finding out that certain changes in brain function may not be.",
+     "id": "en1_2021_cloze_s03",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "One study found that muscle loss and the [4] of body fat around the abdomen are associated with a decline in fluid intelligence.",
+     "id": "en1_2021_cloze_s04",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "This suggests the [5] that lifestyle factors might help prevent or [6] this type of decline.",
+     "id": "en1_2021_cloze_s05",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "The researchers looked at data that [7] measurements of lean muscle and abdominal fat from more than 4,000 middle-to-older-aged men and women and [8] that data to reported changes in fluid intelligence over a six-year period.",
+     "id": "en1_2021_cloze_s06",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "They found that middle-aged people [9] higher measures of abdominal fat [10] worse on measures of fluid intelligence as the years [11]",
+     "id": "en1_2021_cloze_s07",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "For women, the association may be [12] to changes in immunity that resulted from excess abdominal fat; in men, the immune system did not appear to be [13] It is hoped that future studies could [14] these differences and perhaps lead to different [15] for men and women.",
+     "id": "en1_2021_cloze_s08",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 5,
+     "en": "[16] there are steps you can [17] to help reduce abdominal fat and maintain lean muscle mass as you age in order to protect both your physical and mental [18] The two highly recommended lifestyle approaches are maintaining or increasing your",
+     "id": "en1_2021_cloze_s09",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 6,
+     "en": "[19] of aerobic exercise and following Mediterranean-style [20] that is high in fiber and eliminates highly processed foods. +1-1().-\"\"ifi 1 ( 14:vf) :9c1:o - \b,fil!l.",
+     "id": "en1_2021_cloze_s10",
+     "cn": "",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "id": "en1_2021_cloze_q01",
+     "number": "1",
+     "qtype": "完形",
+     "stem": "第 1 空：选择最合适的词填入空白 [1]",
+     "stem_cn": "",
+     "options": {
+      "A": "pauses",
+      "B": "returns",
+      "C": "peaks",
+      "D": "fades"
+     },
+     "options_cn": {
+      "A": "暂停;停顿",
+      "B": "返回;归还;恢复",
+      "C": "达到高峰;达到最高值",
+      "D": "（使）变淡，变暗;逐渐消失;衰退"
+     },
+     "answer": "C",
+     "explanation": "句内语义十常识。【解题思路】①句说明\"流体智力（Fluidintelligence）\"的含义;与短期记忆和快速、逻辑、抽象思维能关的智力。②句指出，它在青年时期____，保持一段时间的平稳，然后开始随退。不难看出②句是在描述流体智力随年龄变化的过程，其中levelsout（升/跌后呈平稳状态）暗示此前存在持续的升/降，startstoslowlydecline（开始逐渐衰退）提示此前未曾出现衰退，由此可推知流体智力应该是年少时持续上升，直至青年期\"增至峰值\"。此外，由常识也可知，青少年时期人的短期记忆力最强，思维敏捷度最佳。综上，C正确。【错项排除】【A】pauses意为\"停顿，暂停\"，表示\"（某一情形持续一段时间之后）暂时静止/停顿（之后再重新开始同一情形）\"。而空格前未提及某一情形的开始/延续，空格后也并非指出同一情形的继续，故不合情景。【B】returns作不及物动词时表示\"事物/情形（消失一段时间后）返回，回归\"，而空格前并未提到流动智力的消失/降低，故错误。【D】fades与decline近义，均表示\"衰退，减少\"，填人空中与startsto..decline所提示的\"流体智力在衰老开始前未曾有过衰退\"不符。此外，任何事物必有增长过程才有下降余地，不会一直处于下降状态，故D错误。",
+     "related_sentences": [
+      "en1_2021_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q02",
+     "number": "2",
+     "qtype": "完形",
+     "stem": "第 2 空：选择最合适的词填入空白 [2]",
+     "stem_cn": "",
+     "options": {
+      "A": "alternatively",
+      "B": "formally",
+      "C": "accidentally",
+      "D": "generally"
+     },
+     "options_cn": {
+      "A": "引出第二种选择或可能的建议）要不，或者",
+      "B": "正式地;形式上",
+      "C": "意外地;偶然地",
+      "D": "通常;普遍地，一般地"
+     },
+     "answer": "D",
+     "explanation": "上下文语义十副词辨析。【解题思路】由上题分析可知，②句是在说明流体智力随年龄变化的规律，具有普遍性、一般性。且由③句核心信息\"（但）科学家发现大脑某些变化可能并非不可避免\"也可反推\"流体智力随变老而衰退\"只是一般情形。【D】generaly常用于\"引出在大多数情况下成立的现象、观点等\"，符合文意。【错项排除】【A】alternatively用于引出前一种做法的替代选择，例∶Theagencywllmaketravelarrangementsforyou.Alernatively，youcanorganizeyourowntransport.（旅行社将为你安排旅行。或者，你也可以自己安排交通工具。）而文中levelsout...startstoslowlydecline.为连续变化的过程（同一变化的不同阶段），故A错误。【B】formally用于强调\"正式性、严肃性\"，很少用于说明\"生理变化\"等自然发生的现象。【C】acaidentally用于引出偶然发生的少数情况，与文意相悖（尤其无法与③句构成转折逻辑）。A】while（对比两件事物）⋯⋯然而;虽然;在⋯⋯期间【B】since由于;自⋯⋯以来【D】until⋯⋯时;直到⋯⋯为止【C】once一⋯⋯就⋯⋯;当⋯⋯时候【考点提炼】句内逻辑十+连词辨析。解题思路】空格句指出，__衰老无可避免，科学家们发现大脑功能的某些变化或许并不样（并非不可避免）。利用句内情形对比\"衰老无可避免vs大脑功能的某些变化可以避免\"可推知句子前后为\"让步一转折\"逻辑，【A】while可用于从句之首，引出与主句内容相对比的信息，符合文意。【错项排除】【B】since用于引出主句现象发生的原因，【C】once表示只要从句现象发生，主句现象就会随之发生（即用于引出主句现象发生的前提条件），而文中\"衰老无可避免\"显然不是\"大脑功能的某些变化可以避免\"的原因/前提条件，均可排除。【D】until用于引出主句所述持续状态最终结束的时刻，例∶UnilrecentlytheywerelivinginNewYork.（直到不久前他们还住在纽约。）而\"直到衰老无可避免前，科学家发现大脑某些功能的变化可以避免=衰老无可避免后，科学家不再发现⋯⋯\"显然逻辑不通，D错误。词汇注释与难句分析y④①levelout呈平稳状态①havetodowith与⋯⋯·关⑤deeline【dI'klain】v.下降;衰退②1ogically【'1Dd3kli】ad.合逻辑地⑥inevitable【in'evtobl】a。不可避免的③abstractly【'?bstrektli】ad.抽象地语篇分析.首段概述\"流体智力\"的含义、功用及变化规律，并引出研究发现∶流体智力的衰退并非无可避免。①句开篇采用典型下定义句式Aissththat...，亮出讨论对象\"流体智力（Fluidinelligence）\"，说明其具体内涵，并展示其重要功用。hastodowith明确流体智力与\"短期记忆\"及\"三种思维能力〈快速，逻辑、抽象思维能力）\"的关联，初步展示其重要功用;inorderto引出三种思维能力的作用\"解决新问题\"，侧面凸显流体智力的重要功用。②句以三组表变化的动词peaks（用作动词，意为\"达到顶峰\"）、levelsout（趋向稳定）、decline以及三组表时间的短语inyoungadulthood、aperiodoftime、asweage（age用作动词，意为\"变老\"）以及接续词andthen（然后，随后）呈现流体智力的变化规律;青少年期呈上升趋势，达到顶峰后一段时间保持平稳，中老年期开始逐渐衰退。注∶generally强调\"流体智力随变老而衰退\"为\"一般情形\"，暗留\"例外可能\"。③句以But引发句间转折，引出重点信息∶\"流体智力衰退\"与\"年龄衰老\"不一定同步。句内以while形成\"让步—转折\"，语义重点在后。前半句让步承认自然规律\"衰老无可避免（aging呼应②句age\"，后半句转而强调\"大脑功能的衰退却不一定不可避免（certainchangesinbrainfunction此处指向Fluidintelligence）\"。本句对比（inevitablevsmaynotbe【inevitable】）之中凸显\"防止/减缓流体智力衰退\"的可能，暗示下文将介绍防止衰退的原理、方法等。Ⅱ④Onestudyfoundthatmusclelossandthe_4_of①一项研究发现，肌肉流失及腹部体脂维bodyfataroundtheabdomen\"areassociatedwithadecline积与流体智力的表退相关。②这表明生活方influidintelligence.②Thissuggeststhe5_thatlifestyle式因素可能会有助于防止或延缓这种表退。factorsmighthelpprevent*or_6",
+     "related_sentences": [
+      "en1_2021_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q03",
+     "number": "3",
+     "qtype": "完形",
+     "stem": "第 3 空：选择最合适的词填入空白 [3]",
+     "stem_cn": "",
+     "options": {
+      "A": "while",
+      "B": "since",
+      "C": "once",
+      "D": "until"
+     },
+     "options_cn": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+     },
+     "answer": "B",
+     "explanation": "句内逻辑十+连词辨析。解题思路】空格句指出，__衰老无可避免，科学家们发现大脑功能的某些变化或许并不样（并非不可避免）。利用句内情形对比\"衰老无可避免vs大脑功能的某些变化可以避免\"可推知句子前后为\"让步一转折\"逻辑，【A】while可用于从句之首，引出与主句内容相对比的信息，符合文意。【错项排除】【B】since用于引出主句现象发生的原因，【C】once表示只要从句现象发生，主句现象就会随之发生（即用于引出主句现象发生的前提条件），而文中\"衰老无可避免\"显然不是\"大脑功能的某些变化可以避免\"的原因/前提条件，均可排除。【D】until用于引出主句所述持续状态最终结束的时刻，例∶UnilrecentlytheywerelivinginNewYork.（直到不久前他们还住在纽约。）而\"直到衰老无可避免前，科学家发现大脑某些功能的变化可以避免=衰老无可避免后，科学家不再发现⋯⋯\"显然逻辑不通，D错误。词汇注释与难句分析y④①levelout呈平稳状态①havetodowith与⋯⋯·关⑤deeline【dI'klain】v.下降;衰退②1ogically【'1Dd3kli】ad.合逻辑地⑥inevitable【in'evtobl】a。不可避免的③abstractly【'?bstrektli】ad.抽象地语篇分析.首段概述\"流体智力\"的含义、功用及变化规律，并引出研究发现∶流体智力的衰退并非无可避免。①句开篇采用典型下定义句式Aissththat...，亮出讨论对象\"流体智力（Fluidinelligence）\"，说明其具体内涵，并展示其重要功用。hastodowith明确流体智力与\"短期记忆\"及\"三种思维能力〈快速，逻辑、抽象思维能力）\"的关联，初步展示其重要功用;inorderto引出三种思维能力的作用\"解决新问题\"，侧面凸显流体智力的重要功用。②句以三组表变化的动词peaks（用作动词，意为\"达到顶峰\"）、levelsout（趋向稳定）、decline以及三组表时间的短语inyoungadulthood、aperiodoftime、asweage（age用作动词，意为\"变老\"）以及接续词andthen（然后，随后）呈现流体智力的变化规律;青少年期呈上升趋势，达到顶峰后一段时间保持平稳，中老年期开始逐渐衰退。注∶generally强调\"流体智力随变老而衰退\"为\"一般情形\"，暗留\"例外可能\"。③句以But引发句间转折，引出重点信息∶\"流体智力衰退\"与\"年龄衰老\"不一定同步。句内以while形成\"让步—转折\"，语义重点在后。前半句让步承认自然规律\"衰老无可避免（aging呼应②句age\"，后半句转而强调\"大脑功能的衰退却不一定不可避免（certainchangesinbrainfunction此处指向Fluidintelligence）\"。本句对比（inevitablevsmaynotbe【inevitable】）之中凸显\"防止/减缓流体智力衰退\"的可能，暗示下文将介绍防止衰退的原理、方法等。Ⅱ④Onestudyfoundthatmusclelossandthe_4_of①一项研究发现，肌肉流失及腹部体脂维bodyfataroundtheabdomen\"areassociatedwithadecline积与流体智力的表退相关。②这表明生活方influidintelligence.②Thissuggeststhe5_thatlifestyle式因素可能会有助于防止或延缓这种表退。factorsmighthelpprevent*or_6_thistypeofdecline,2真题精解/4.【A】detection发现;察觉;探测【B】accumulation堆积;积累【C】consumption消耗;消费【D】separation分离;隔离【考点提炼】上下文语义十常识。【解题思路】空格句指出，研究发现\"肌肉流失\"及\"腹部体脂\"与\"流体智力的衰退\"相关。由句中并列关系可知\"肌肉流失\"与\"腹部体脂____\"同向，而肌肉（muscle）和脂肪（fat）对立，所以空应与loss（失去、流失）反向，表示\"增加/累积\"。另外，由首段已知，流体智力随年龄的增长而衰退，而由常识可知随年龄增长，往往会肌肉流失，腹部脂肪堆积。此外，下文多处信息均表明过多的腹部脂肪对流体智力不利（如higher.abdominalfat..worse..fluidintelligence）。综上三条线索可确定B正确。【错项排除】空格词所在短语的并列事物muscleloss以及与之相连的现象adeclineinfluidinteligence均为生理变化，所以空格词也应表示某种生理变化才能合理，而【A】detection意为\"（对已存在事物的）察觉，探测\"，为瞬间动作或持续状态，不涉及实质性变化，不合文意。【C】consumption填入空格后",
+     "related_sentences": [
+      "en1_2021_cloze_s03"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q04",
+     "number": "4",
+     "qtype": "完形",
+     "stem": "第 4 空：选择最合适的词填入空白 [4]",
+     "stem_cn": "",
+     "options": {
+      "A": "detection",
+      "B": "accumulation",
+      "C": "consumption",
+      "D": "separation"
+     },
+     "options_cn": {
+      "A": "发现;察觉;探测",
+      "B": "堆积;积累",
+      "C": "消耗;消费",
+      "D": "分离;隔离"
+     },
+     "answer": "B",
+     "explanation": "上下文语义十常识。【解题思路】空格句指出，研究发现\"肌肉流失\"及\"腹部体脂\"与\"流体智力的衰退\"相关。由句中并列关系可知\"肌肉流失\"与\"腹部体脂____\"同向，而肌肉（muscle）和脂肪（fat）对立，所以空应与loss（失去、流失）反向，表示\"增加/累积\"。另外，由首段已知，流体智力随年龄的增长而衰退，而由常识可知随年龄增长，往往会肌肉流失，腹部脂肪堆积。此外，下文多处信息均表明过多的腹部脂肪对流体智力不利（如higher.abdominalfat..worse..fluidintelligence）。综上三条线索可确定B正确。【错项排除】空格词所在短语的并列事物muscleloss以及与之相连的现象adeclineinfluidinteligence均为生理变化，所以空格词也应表示某种生理变化才能合理，而【A】detection意为\"（对已存在事物的）察觉，探测\"，为瞬间动作或持续状态，不涉及实质性变化，不合文意。【C】consumption填入空格后，\"脂肪消耗\"与\"肌肉流失\"为反向变化，无法以and连接，且违背通常情形\"腹部脂肪随年龄增长而增加\"，可排除。【D】separation指\"将一个整体分为几个部分\"，与loss看似同向可并列，但muscle和bodyfat对立，因此muscleloss和separationofbodyfat无法以and连接，且后文并未提及\"腹部脂肪的分隔\"。",
+     "related_sentences": [
+      "en1_2021_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q05",
+     "number": "5",
+     "qtype": "完形",
+     "stem": "第 5 空：选择最合适的词填入空白 [5]",
+     "stem_cn": "",
+     "options": {
+      "A": "possibility",
+      "B": "decision",
+      "C": "goal",
+      "D": "requirement"
+     },
+     "options_cn": {
+      "A": "可能性;可能发生的事物",
+      "B": "决定;决议",
+      "C": "目标",
+      "D": "要求;必要条件;必需品"
+     },
+     "answer": "A",
+     "explanation": "上下文语义＋句内语义。【解题思路】空格句指出，这（肌肉流失及腹部体脂堆积与流体智力的衰退有关）表明了一种__生活方式因素可能有助于防止或⋯⋯这种流体智力的衰退。可见空格名词应聚焦研究意义（Thissuggeststhe_____），体现that从句的\"性质\"。而从句的整体语义和其中用词mighthelp，以及主句的suggests均指向一种\"可能情形\"。另外，本段两句间实为通过逻辑推理得出可能情形;由研究发现\"肌肉流失及腹部体脂堆积会导致流体智力衰退\"可推知\"正确的生活方式可以减少肌肉流失和腹部脂肪堆积，从而防止流体智力衰退\"。综合两方面推理可知【A】possibility为正确项。【错项排除】【B】dcision，【C】goal，【D】requirement分别指\"某人主观上做出的选择/希望实现的目标/提出的要求\"，因此三项均不合语义要求。【A】delay推迟;延期【B】ensure确保【C】seek寻找;谋求【D】utilize【考点提炼】并列结构十句内语义。【解题思路】空格词与prevent以并列连词or连接，共同宾语为thistypeofdecline（流体智力的衰退），这表明两者方向一致，空格词应表示\"避免/消除/延缓\"等，【A】delay正确。【错项排除】【B】ensure、【C】seek、【D】utilize\"确保/寻求/利用（这种衰退）\"均含有\"正面肯定流体智力衰退的价值\"之意，既无法与prevent形成语义上的并列，也违背了\"流体智力衰退是一种负面变化\"这一文中反复强调的内容，故三项均错误。词汇注释与难知分析，/①abdomen【'?bdomon】n.腹部③prevent【prl'vent】v，预防，防止②beassociatedwith与⋯⋯⋯有关语篇分析·/第二段概述研究发现∶\"流体智力的衰退\"与\"肌肉流失\"及\"腹部脂肪堆积\"相关。①句说明研究发现（Onestudyfound），以AandBareassociatedwithC句式明确\"肌肉流失\"及\"腹部脂肪堆积\"与\"流体智力衰退\"的关联。注∶该句并未直接提及\"年龄增长/变老\"\"，看似与首段末句无法关联，但结合常识可知，\"肌肉流失\"及\"腹部脂肪堆积\"均为典型的\"变老迹象\"，即年龄对流体智力的影响主要体现于这两方面。②句对上述发现进行推理/说明发现的意义（Thissuggests），主句宾语中心词possbility及从句中mighthelp共同强调\"一种可能性\"，肯定\"生活方式因素\"对\"防止或减缓流体智力衰退\"的影响，即流体智力的衰退在一定程度上是可控的，方式为;改变生活方式，防止肌肉流失及腹部脂肪堆积（减脂增肌）。Ⅲ④Theresearcherslookedatdatathat7①研究人员分析了包含4000多名中measurementsofleanmuscleandabdominalfatfrommore老年男性和女性的精瘦肌肉及腹部脂肪测than4,000middle-to-older-agedmenandwomenand8量值在内的数据，并将这些数据与受试者thatdatatoreportedchangesinfluidintelligenceoverasix-六年来的流体智力变化进行比较。②他们yearperiod.②Theyfoundthatmiddle-agedpeople_9发现，随着岁月流逝，具有校高腹部脂肪测highermeasuresofabdominalfat10worseon量值的中年人流体智力测量得分较低。measuresoffluidinteligenceastheyears_11·真题精脚",
+     "related_sentences": [
+      "en1_2021_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q06",
+     "number": "6",
+     "qtype": "完形",
+     "stem": "第 6 空：选择最合适的词填入空白 [6]",
+     "stem_cn": "",
+     "options": {
+      "A": "delay",
+      "B": "ensure",
+      "C": "seek",
+      "D": "utilize"
+     },
+     "options_cn": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+     },
+     "answer": "A",
+     "explanation": "并列结构十句内语义。【解题思路】空格词与prevent以并列连词or连接，共同宾语为thistypeofdecline（流体智力的衰退），这表明两者方向一致，空格词应表示\"避免/消除/延缓\"等，【A】delay正确。【错项排除】【B】ensure、【C】seek、【D】utilize\"确保/寻求/利用（这种衰退）\"均含有\"正面肯定流体智力衰退的价值\"之意，既无法与prevent形成语义上的并列，也违背了\"流体智力衰退是一种负面变化\"这一文中反复强调的内容，故三项均错误。词汇注释与难知分析，/①abdomen【'?bdomon】n.腹部③prevent【prl'vent】v，预防，防止②beassociatedwith与⋯⋯⋯有关语篇分析·/第二段概述研究发现∶\"流体智力的衰退\"与\"肌肉流失\"及\"腹部脂肪堆积\"相关。①句说明研究发现（Onestudyfound），以AandBareassociatedwithC句式明确\"肌肉流失\"及\"腹部脂肪堆积\"与\"流体智力衰退\"的关联。注∶该句并未直接提及\"年龄增长/变老\"\"，看似与首段末句无法关联，但结合常识可知，\"肌肉流失\"及\"腹部脂肪堆积\"均为典型的\"变老迹象\"，即年龄对流体智力的影响主要体现于这两方面。②句对上述发现进行推理/说明发现的意义（Thissuggests），主句宾语中心词possbility及从句中mighthelp共同强调\"一种可能性\"，肯定\"生活方式因素\"对\"防止或减缓流体智力衰退\"的影响，即流体智力的衰退在一定程度上是可控的，方式为;改变生活方式，防止肌肉流失及腹部脂肪堆积（减脂增肌）。Ⅲ④Theresearcherslookedatdatathat7①研究人员分析了包含4000多名中measurementsofleanmuscleandabdominalfatfrommore老年男性和女性的精瘦肌肉及腹部脂肪测than4,000middle-to-older-agedmenandwomenand8量值在内的数据，并将这些数据与受试者thatdatatoreportedchangesinfluidintelligenceoverasix-六年来的流体智力变化进行比较。②他们yearperiod.②Theyfoundthatmiddle-agedpeople_9发现，随着岁月流逝，具有校高腹部脂肪测highermeasuresofabdominalfat10worseon量值的中年人流体智力测量得分较低。measuresoffluidinteligenceastheyears_11·真题精脚7.【A】modified修改;修饰【B】supported支持;支撑;证实【C】included包含【D】predicted预测;预报【考点提炼〕句内语义。【解题思露】空格所在定语从句说明研究者所分析的数据（data）的特征∶（这些数据）_4000多名中老年男性和女性的精瘦肌肉及腹部脂肪测量值（measurements）。\"数据（that/data）\"与\"测量值（measurements）\"为同类事物，故空格词只能表示\"包含关系\"。另外联系上文可知，本句与上段为\"说明研究发现一介绍研究数据\"的对应关系，\"数据包含研究对象的精瘦肌肉及腹部脂肪测量值\"恰能对应上文提及的\"影响流体智力的两个具体因素\"，确认【C】included正确。旨项排除】\"数据调整，预测测量值\"显然搭配不当（应是研究者调整/预测测量值），【A】modificd、【D】predicted均错误。【B】supported表示\"证实/支持某事是事实/情形，观点\"，而空格后内容为研究的\"观测值\"（而非研究结论或需要验证的情形），B错误。8.【A】devoted（to）将⋯⋯奉献给;把⋯⋯专用于【B】compared（to）与⋯⋯作比较【D】applied（to）应用于⋯⋯【C】converted（to）转变为⋯⋯【考点提炼」上下文语义。【解题思路】各项均可构成～sthtosth搭配，故需从\"上下文语义\"角度辨析。空格所在分句指出，、员将这些数据（受试者精瘦肌肉及腹部脂肪测量值）_____受试者六年来的流体智力段已知研究发现为\"肌肉流失及腹部体脂堆积与流体智力的衰退相关\"，而要测定这种相关性必然需要比较/比对相应的数据，由此可知【B】compared（to）正确。【错项排除】【A】devoted（to）、【D】applied（to）均表示\"将A应用于B\"，而文中的两类数据为并列比较对象，共同得到研究发现，并不存在将\"一组数据\"用于\"一群对象/一种情形\"的关系，A、D均可排除。【C】converted（to）表示\"将A转变为B\"，而文中的两类数据显然不存在转换关系，可排除。B】above超过;在⋯⋯上面9.【A】with具有;用;随着【D】against违反;以⋯⋯为背景;和⋯⋯·相比【C】by",
+     "related_sentences": [
+      "en1_2021_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q07",
+     "number": "7",
+     "qtype": "完形",
+     "stem": "第 7 空：选择最合适的词填入空白 [7]",
+     "stem_cn": "",
+     "options": {
+      "A": "modified",
+      "B": "supported",
+      "C": "included",
+      "D": "predicted"
+     },
+     "options_cn": {
+      "A": "修改;修饰",
+      "B": "支持;支撑;证实",
+      "C": "包含",
+      "D": "预测;预报"
+     },
+     "answer": "C",
+     "explanation": "各项均可构成～sthtosth搭配，故需从\"上下文语义\"角度辨析。空格所在分句指出，、员将这些数据（受试者精瘦肌肉及腹部脂肪测量值）_____受试者六年来的流体智力段已知研究发现为\"肌肉流失及腹部体脂堆积与流体智力的衰退相关\"，而要测定这种相关性必然需要比较/比对相应的数据，由此可知【B】compared（to）正确。【错项排除】【A】devoted（to）、【D】applied（to）均表示\"将A应用于B\"，而文中的两类数据为并列比较对象，共同得到研究发现，并不存在将\"一组数据\"用于\"一群对象/一种情形\"的关系，A、D均可排除。【C】converted（to）表示\"将A转变为B\"，而文中的两类数据显然不存在转换关系，可排除。B】above超过;在⋯⋯上面9.【A】with具有;用;随着【D】against违反;以⋯⋯为背景;和⋯⋯·相比【C】by通过;被【考点提炼】上下文语义十介词辨析【解题思路】空格句以Theyfound引出研究发现;__\"更高腹部脂肪测量值\"的\"中年人\"流体智力测量值⋯⋯。结合上句提到的研究方式\"将4000多名中老年人的腹部脂肪测量值和其流体智力变化数据相比对\"以及上段说明的研究发现\"流体智力下降与人们的体脂增加相关\"，可知空格词应表示\"具有/显示出\"等，【A】with可表示\"拥有或携带某物/具有某种特征\"，符合文意。【错项排除】【B】above表示\"（数目、水平等）超过;（重要性、质量）胜过\"，随后一般跟\"一个定值\"而不是\"比较级\"，例∶above6??average（超过6???过平均值）;【C】by常用于引出\"方式\"或\"施动者\"，例∶paybycheque/knockeddownbyabus（用支票付款/被公共汽车撞倒）。【D】against表示\"比照某物，和某物相比\"，例∶weighthebenefitsagainstthecost（权衡利益与成本得失）。三项均无法在\"中年人\"与\"更高的腹部脂肪测量值\"间构成合理逻辑，故排除。10.【A】lived（on）靠⋯⋯生活【B】managed（on）靠⋯⋯勉强过活【D】played（on）利用（感情等）【C】scored（on）在⋯⋯中得分为【考点提炼】上下文语义＋固定搭配。【解题思路】结合上文可知，空格动词应体现\"腹部脂肪越多，流体智力越易衰退\"这一关系以及\"将腹4、部脂肪测量值和受试者流体智力变化值进行比较\"的研究方法，即腹部脂肪测量值越高，流体智力测量得分越低，\"score＋具体数值或表示好/差的副词及其比较级＋on+某一方面\"表示\"在某项指标或测试中的具体得分情况\"，例∶scored98/highly/higheronTOEFL（托福测试中得98分/得分高/较高），C符合文意。【错项排除】【A】lived（on）、【B】managed（on）表示\"靠⋯⋯生活\"，后面接\"谋生所依（物品/工作等）\"，而空格后的\"更差的流体智力测量值\"显然不属此类。【D】played（on）后常跟表示情绪的词，意为\"利用某人的感情\"，例∶Advertisementsoftenplayonpeople'sfears.（广告常利用人们的恐惧心理。）该词也无法与\"测量值\"搭配。11.【A】ranout用完;耗尽【B】setoff出发;引起【C】drewin（天黑）渐早;（白昼）渐短【D】wentby时间流逝;经过;遵循【考点提炼】上下文语义十固定搭配。随着岁月__，腹部脂肪越多的中年人流体智力越低。结合首段所述【解题思路】空格句大意为∶随着岁月____，腹流体智力的变化规律\"随年龄增长而衰退\"，以及腹部脂肪的通常变化规律\"随年龄增长而增加\"，可知空格词应表示\"（岁月）流逝/（时间）推移\"，astheyearsgoby为固定表达，意为\"随着时光流逝\"，D正确。【错项排除】【A】ranout表示\"（资源，燃料等）耗尽，用完\"，例∶;Suppliesarerunningout.（给养快耗尽了。）【B】setoff表示\"（某人）出发（前往某地）\"，例∶Theysetoffatasteadypace.（他们以不紧不慢的速度出发了。）【C】drewin通常与days/nights搭配，表示\"（天黑）渐早;（白昼）渐短\"，例∶Thenights/daysaredrawingin.（天黑得越来越早了。）三项均无法表示\"（时间）流逝/人的变老\"，故排除。词汇注释与难句分析-①measurement【'me33mont】n测量的结果②leanmuscle精瘦的肌肉Theresearcherslookedatdatathatincludedmeasurementsofleanmuscleandabdominalfatfrommorethan4,000middle-to-olderagedmenandwomenandcomparedthatdatatorepo",
+     "related_sentences": [
+      "en1_2021_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q08",
+     "number": "8",
+     "qtype": "完形",
+     "stem": "第 8 空：选择最合适的词填入空白 [8]",
+     "stem_cn": "",
+     "options": {
+      "A": "devoted",
+      "B": "compared",
+      "C": "converted",
+      "D": "applied"
+     },
+     "options_cn": {
+      "A": "（to）将⋯⋯奉献给;把⋯⋯专用于",
+      "B": "（to）与⋯⋯作比较",
+      "C": "（to）转变为⋯⋯",
+      "D": "（to）应用于⋯⋯"
+     },
+     "answer": "B",
+     "explanation": "上下文语义。【解题思路】各项均可构成～sthtosth搭配，故需从\"上下文语义\"角度辨析。空格所在分句指出，、员将这些数据（受试者精瘦肌肉及腹部脂肪测量值）_____受试者六年来的流体智力段已知研究发现为\"肌肉流失及腹部体脂堆积与流体智力的衰退相关\"，而要测定这种相关性必然需要比较/比对相应的数据，由此可知【B】compared（to）正确。【错项排除】【A】devoted（to）、【D】applied（to）均表示\"将A应用于B\"，而文中的两类数据为并列比较对象，共同得到研究发现，并不存在将\"一组数据\"用于\"一群对象/一种情形\"的关系，A、D均可排除。【C】converted（to）表示\"将A转变为B\"，而文中的两类数据显然不存在转换关系，可排除。B】above超过;在⋯⋯上面",
+     "related_sentences": [
+      "en1_2021_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q09",
+     "number": "9",
+     "qtype": "完形",
+     "stem": "第 9 空：选择最合适的词填入空白 [9]",
+     "stem_cn": "",
+     "options": {
+      "A": "with",
+      "B": "above",
+      "C": "by",
+      "D": "against"
+     },
+     "options_cn": {
+      "A": "具有;用;随着",
+      "B": "表示\"（数目、水平等）超过;（重要性、质量）胜过\"，随后一般跟\"一个定值\"而",
+      "C": "通过;被",
+      "D": "违反;以⋯⋯为背景;和⋯⋯·相比"
+     },
+     "answer": "A",
+     "explanation": "上下文语义十介词辨析【解题思路】空格句以Theyfound引出研究发现;__\"更高腹部脂肪测量值\"的\"中年人\"流体智力测量值⋯⋯。结合上句提到的研究方式\"将4000多名中老年人的腹部脂肪测量值和其流体智力变化数据相比对\"以及上段说明的研究发现\"流体智力下降与人们的体脂增加相关\"，可知空格词应表示\"具有/显示出\"等，【A】with可表示\"拥有或携带某物/具有某种特征\"，符合文意。【错项排除】【B】above表示\"（数目、水平等）超过;（重要性、质量）胜过\"，随后一般跟\"一个定值\"而不是\"比较级\"，例∶above6??average（超过6???过平均值）;【C】by常用于引出\"方式\"或\"施动者\"，例∶paybycheque/knockeddownbyabus（用支票付款/被公共汽车撞倒）。【D】against表示\"比照某物，和某物相比\"，例∶weighthebenefitsagainstthecost（权衡利益与成本得失）。三项均无法在\"中年人\"与\"更高的腹部脂肪测量值\"间构成合理逻辑，故排除。",
+     "related_sentences": [
+      "en1_2021_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q10",
+     "number": "10",
+     "qtype": "完形",
+     "stem": "第 10 空：选择最合适的词填入空白 [10]",
+     "stem_cn": "",
+     "options": {
+      "A": "lived",
+      "B": "managed",
+      "C": "scored",
+      "D": "played"
+     },
+     "options_cn": {
+      "A": "（on）靠⋯⋯生活",
+      "B": "（on）靠⋯⋯勉强过活",
+      "C": "（on）在⋯⋯中得分为",
+      "D": "（on）利用（感情等）"
+     },
+     "answer": "C",
+     "explanation": "上下文语义＋固定搭配。【解题思路】结合上文可知，空格动词应体现\"腹部脂肪越多，流体智力越易衰退\"这一关系以及\"将腹4、部脂肪测量值和受试者流体智力变化值进行比较\"的研究方法，即腹部脂肪测量值越高，流体智力测量得分越低，\"score＋具体数值或表示好/差的副词及其比较级＋on+某一方面\"表示\"在某项指标或测试中的具体得分情况\"，例∶scored98/highly/higheronTOEFL（托福测试中得98分/得分高/较高），C符合文意。【错项排除】【A】lived（on）、【B】managed（on）表示\"靠⋯⋯生活\"，后面接\"谋生所依（物品/工作等）\"，而空格后的\"更差的流体智力测量值\"显然不属此类。【D】played（on）后常跟表示情绪的词，意为\"利用某人的感情\"，例∶Advertisementsoftenplayonpeople'sfears.（广告常利用人们的恐惧心理。）该词也无法与\"测量值\"搭配。",
+     "related_sentences": [
+      "en1_2021_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q11",
+     "number": "11",
+     "qtype": "完形",
+     "stem": "第 11 空：选择最合适的词填入空白 [11]",
+     "stem_cn": "",
+     "options": {
+      "A": "ran out",
+      "B": "set off",
+      "C": "drew in",
+      "D": "went by"
+     },
+     "options_cn": {
+      "A": "用完;耗尽",
+      "B": "出发;引起",
+      "C": "（天黑）渐早;（白昼）渐短",
+      "D": "时间流逝;经过;遵循"
+     },
+     "answer": "D",
+     "explanation": "上下文语义十固定搭配。随着岁月__，腹部脂肪越多的中年人流体智力越低。结合首段所述【解题思路】空格句大意为∶随着岁月____，腹流体智力的变化规律\"随年龄增长而衰退\"，以及腹部脂肪的通常变化规律\"随年龄增长而增加\"，可知空格词应表示\"（岁月）流逝/（时间）推移\"，astheyearsgoby为固定表达，意为\"随着时光流逝\"，D正确。【错项排除】【A】ranout表示\"（资源，燃料等）耗尽，用完\"，例∶;Suppliesarerunningout.（给养快耗尽了。）【B】setoff表示\"（某人）出发（前往某地）\"，例∶Theysetoffatasteadypace.（他们以不紧不慢的速度出发了。）【C】drewin通常与days/nights搭配，表示\"（天黑）渐早;（白昼）渐短\"，例∶Thenights/daysaredrawingin.（天黑得越来越早了。）三项均无法表示\"（时间）流逝/人的变老\"，故排除。词汇注释与难句分析-①measurement【'me33mont】n测量的结果②leanmuscle精瘦的肌肉Theresearcherslookedatdatathatincludedmeasurementsofleanmuscleandabdominalfatfrommorethan4,000middle-to-olderagedmenandwomenandcomparedthatdatatoreportedchangesinfluidintelligenceoverasix-yearperiod,Theresearcherslookedatdataandandcormparedthatdatatoreporiedchings谓语1宾语1连接词谓主语宾语2状语定语从句后置定语includedmeasurementsof.fatfrommorethaninfluidintelligenceoverasix-yearperiod.│引导词谓语__宾语后置定语功能注释∶主句中以and连接两套并列的\"谓语＋宾语\"结构，说明研究者的两项操作。定语从句thatincluded...fat修饰data，说明数据中所包含的信息，from..women作measurementsof..fat的后置定语，说明数据的来源。influidintelligenceoverasix-yearperiod作reportedchanges的后置定语，说明产生变化的主体及时间。，语篇分析这第三段详述研究数据及具体发现。①句说明研究数据。研究对象为4000多名中老年男性和女性;研究持续时间为6年;研究数据有两组，分别为精瘦肌肉和腹部脂肪测量值（measurementsofleanmuscleandabdominalfat以及流体智力的变化值（reportedchangesinfluidinteligence）。compared体现研究方法∶将两种数据对照比较。注∶此处lookedat意为\"考虑，研究\"。②句说明研究结果，三组表变化趋势的词highermeasuresofabdominalfat、scoredworseonmeasuresoffluidintellgence、astheyearswentby呈现变化关系\"随年龄增长，腹部脂肪量越高的中年人流体智力越低\"，呼应上段①句。ⅣForwomen,theassociationmaybe12_to①对女性而言，这种联系或许可归因于changesinimmunitythatresultedfrom2excess腹部脂肪过多导数的免疫力变化;对于男abdominalfat;inmen,theimmunesystemdidnotappear性，（这种联系）似乎并不涉及免疫系统。tobe13.②Itishopedthatfuturestudiescould②希望未来的研究可以解释这些差异，或许thesedifferencesandperhapsleadto°different还能为男性和女性带来不同的疗法。formenandwomen.其题精解动",
+     "related_sentences": [
+      "en1_2021_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q12",
+     "number": "12",
+     "qtype": "完形",
+     "stem": "第 12 空：选择最合适的词填入空白 [12]",
+     "stem_cn": "",
+     "options": {
+      "A": "superior",
+      "B": "attributable",
+      "C": "parallel",
+      "D": "resistant"
+     },
+     "options_cn": {
+      "A": "（to）优于;比⋯⋯优越",
+      "B": "（to）由⋯⋯造成;归因于⋯⋯",
+      "C": "（to）与⋯⋯相同;平行于⋯⋯",
+      "D": "（to）对⋯⋯有抵抗力的;耐⋯⋯的"
+     },
+     "answer": "B",
+     "explanation": "句内语义＋因果逻辑链。【解题思路】空格所在分句指出，这种联系（腹部体脂堆积与流体智力衰退相关）可能____腹部肪过多导致的免疫力变化。resultedfrom提示\"免疫力变化\"为\"腹部体脂堆积→流体智力衰退\"的中间环节，因此空格词应引出原因，搭建\"根本原因（腹部脂肪增加）→直接原因（免疫力变化）→最终结果（流体智力衰退）\"的完整因果链条，【B】attributable（to）符合文意。【错项排除】【A】superior（to）、【C】parlel（to）分别用于比较两种事物的优劣性/相似性，而本句显然是在围绕同一主题展开（theassociation..resultedfromexcessabdominalfat）。【D】resistant（to）表示\"前一种事物不受后一种事物的影响\"，与文意恰相悖。",
+     "related_sentences": [
+      "en1_2021_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q13",
+     "number": "13",
+     "qtype": "完形",
+     "stem": "第 13 空：选择最合适的词填入空白 [13]",
+     "stem_cn": "",
+     "options": {
+      "A": "restored",
+      "B": "isolated",
+      "C": "involved",
+      "D": "controlled"
+     },
+     "options_cn": {
+      "A": "恢复;归还",
+      "B": "（使）隔离;孤立",
+      "C": "涉及;包含",
+      "D": "控制;管理"
+     },
+     "answer": "C",
+     "explanation": "句内平行对比。【解题思路】句中Forwomen...attributabletochangesinimmunity.;inmen...theimmunesystemdidnotappearto...形成平行对仗结构，分别说明\"女性/男性的免疫力\"对\"这种联系（腹部体脂堆积与流体智力衰退相关）\"的影响，空格词应与atributable语义指向一致，表示\"有因果关联/牵涉\"等，【C】involved可表示\"某物是某种情况/事件/活动的重要参与者或影响因素\"，符合文意。【错项排除】【A】restored，【B】isolated，【D】controlled均无法在句内形成\"女性身上的这种联系跟免疫力有关vs男性身上的这种联系跟免疫力无关\"的句内平行对比关系，故均可排除。",
+     "related_sentences": [
+      "en1_2021_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q14",
+     "number": "14",
+     "qtype": "完形",
+     "stem": "第 14 空：选择最合适的词填入空白 [14]",
+     "stem_cn": "",
+     "options": {
+      "A": "alter",
+      "B": "spread",
+      "C": "remove",
+      "D": "explain"
+     },
+     "options_cn": {
+      "A": "改变;修改",
+      "B": "传播;伸展",
+      "C": "移动;去除",
+      "D": "说明;解释"
+     },
+     "answer": "D",
+     "explanation": "上下文语义。【解题思路】空格句指出，希望未来的研究可以____这些差异。\"这些差异\"指前一句所述\"女性身上的这种联系或许（maybe）与免疫力变化相关，男性身上的这种联系似乎（appearto）与免疫系统无关\"。其中maybe、appearto均带有明显的推测语气，针对男性的内容仅否定了无关因素，并未指明相关因素，暗示还需进一步研究确认。另外，空格句中Itishopedthatfuturestudiescould针对\"后续的研究方向\"传达出强烈的建议/期盼。综合两方面线索可知，空格词应表示\"研究/分析/解释\"等，以实现\"当前研究局限—后续研究方向\"的呼应，【D】explain符合文意。【错项排除】【A】alter、【C】remove均指向\"消除差异\"，暗示差异为不利因素;【B】spread指向\"扩大差异\"，暗示差异为有利因素。而文中仅客观呈现男女差异，并未评价这种差异是否有利，\"消除/扩大差异\"更无从谈起，故三项均可排除。",
+     "related_sentences": [
+      "en1_2021_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q15",
+     "number": "15",
+     "qtype": "完形",
+     "stem": "第 15 空：选择最合适的词填入空白 [15]",
+     "stem_cn": "",
+     "options": {
+      "A": "compensations",
+      "B": "symptoms",
+      "C": "demands",
+      "D": "treatments"
+     },
+     "options_cn": {
+      "A": "补偿;报酬",
+      "B": "症状;征兆",
+      "C": "要求;需求",
+      "D": "治疗;疗法"
+     },
+     "answer": "D",
+     "explanation": "句内语义十文章主旨。【解题思路】andperhapsleadto...引出对未来研究的另一项期许∶带来针对男性和女性的不同___。结合本句could..andperhapsleadto带有的\"递进语义\"，上句\"腹部脂肪与流体智力相关的原因存在性别差异\"以及而第二段②句\"研究的根本目的是通过改变生活方式延缓流体智力衰退\"，可知odifferent_____formenandwomen应体现对症下药，即针对男性和女性研制出不同的事物来延缓流体智力衰退，【D】treatments符合文意。【错项排除】【A】compensations指\"对某人所受伤害或损失做出补偿\"，似乎符合语义要求，但随后不能是\"人（menandwomen）\"，而应该是\"流体智力的衰退（thedeclineinfluidintelligence）\"。【B】symptoms指\"表明身体或精神状况不佳的变化/症状\"，\"带来不同症状\"不符合研究的作用。【C】demands与for搭配时，表示\"对⋯⋯的需求\"，\"未来研究带来对男性和女性的不同需求\"显然不符合逻辑。6谢汇注释与难句分析，①immunity【'mju∶noti】n.免疫力③leadto带来;导致②resultfrom由⋯·.成第四段分析研究结果，并展望后续研究。①句承接上段，分析\"随腹部脂肪堆积，流体智力衰退\"这一关联存在的原因。句子整体以Forwomen...;inmen...体现性别差异;changesinimmunity与theimmunesystem复现，体现主要关注点\"免疫力变化\"。前半句以theassociationmaybeattributableto...resultedfrom...（beattributableto意为\"可归因于⋯⋯\"）说明女性存在这一关联的原因∶腹部脂肪过多→免疫力变化/降低→流体智力衰退。后一分句以didnot..beinvolved指出男性身上并不存在相同的作用过程，但并未指出真正原因。②句顺势提出对未来研究的期待∶解释男女差异并带来治疗方法。Itishopedthat传达强烈的建议及期待，explainthesedifferencesandperhapsleadtodifferenttreatments..以语义递进呈现两重期待，再次呼应首段末句\"流体智力衰退或可避免\"。④16therearestepsyoucan_1717_tohelp①与此同时，你可以在年龄增长的reduceabdominalfatandmaintainleanmusclemass》asyo过程中采取一些措施来减少腹部脂肪，ageinordertoprotectbothyourphysicalandmental_18.保持精瘦肌肉量，从而维护自己的身心②Thetwohighlyrecommended3lifestyleapproachesare健康。②两种强烈推荐的生活方式为∶maintainingorincreasingyour19ofaerobicexerciseand保持或提升你的有氧运动水平;遵循高owingMediterranean-style20thatishighinfib纤维、无精加工食品的地中海饮食方式。andeliminateshighlyprocessedfoods\".[275words]真题精解",
+     "related_sentences": [
+      "en1_2021_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q16",
+     "number": "16",
+     "qtype": "完形",
+     "stem": "第 16 空：选择最合适的词填入空白 [16]",
+     "stem_cn": "",
+     "options": {
+      "A": "Likewise",
+      "B": "Meanwhile",
+      "C": "Therefore",
+      "D": "Instead"
+     },
+     "options_cn": {
+      "A": "同样地;也",
+      "B": "同时;其间",
+      "C": "因此;所以",
+      "D": "反而;相反"
+     },
+     "answer": "B",
+     "explanation": "段间逻辑＋副词辨析。【解题思路】上段末句憧憬未来研究成果（Itishopedthatfuturestudiescould..），空格句转而向读者提出建议（therearestepsyoucan..），可见空格词应体现平行并列关系，指向两个方面的建议。【B】Meanwhile意为\"与此同时\"，用于引出某种情况/事物的不同方面，符合文意。【错项排除】【A】Likewise用于\"引出前一事物的同类或相似事物\"，强调相似性，例∶Toachievethisgoal，youmusthaveambition;likewiseyouneedtoexergreateforts.（要实现这一目标，你必须有雄心壮志;同样，你还需要付出努力。）【C】Therefore用于\"引出前一事物造成的结果\"，体现因果关系，例∶Thereisstillmuchtodiscuss.Therefore，weshallreturntothisitematournextmeeting.（要讨论的问题还有很多。所以，我们将在下次会议上再讨论这项议题。）【D】Instead用于\"引出前一事物的替代做法\"，强调选择性，例∶Hedidn'treply。Instead，heturnedonhisheelandlefttherom.（他没有回答，反而转身离开了房间。）空格词前后两句为\"解决同一问题的两个并行努力方向，而非强调两物的相似性/因果关联/取舍选择，故三项均可排除。【B】watch观察;注视",
+     "related_sentences": [
+      "en1_2021_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q17",
+     "number": "17",
+     "qtype": "完形",
+     "stem": "第 17 空：选择最合适的词填入空白 [17]",
+     "stem_cn": "",
+     "options": {
+      "A": "change",
+      "B": "watch",
+      "C": "count",
+      "D": "take"
+     },
+     "options_cn": {
+      "A": "改变;更换",
+      "B": "常用于watch your steps这一固定表达中，意为\"当",
+      "C": "计数∶包括;认为",
+      "D": "采取（措施）;拿，取"
+     },
+     "answer": "D",
+     "explanation": "句内语义十固定搭配。题思路】空格词位于嵌套了定语从句的therebe句型中，从句可改写为youcan____sto...。to后的内容指向目的（减少腹部脂肪，保持肌肉量），可见空格词应表示\"采取/使用（方法）\"等，takestepsto为固定搭配，表示\"采取措施以做到某事\"，【D】take正确。【错项排除】【A】change（steps），【C】count（steps）分别表示\"改变步骤\"计算步数\"，而上下文中并未提及做某事的具体步骤/程序，可排除。【B】watch常用于watchyoursteps这一固定表达中，意为\"当心台阶;小心走路\"，该表达既不符合文中语境，也与文中形式有出入，可排除。",
+     "related_sentences": [
+      "en1_2021_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q18",
+     "number": "18",
+     "qtype": "完形",
+     "stem": "第 18 空：选择最合适的词填入空白 [18]",
+     "stem_cn": "",
+     "options": {
+      "A": "well-being",
+      "B": "process",
+      "C": "formation",
+      "D": "coordination"
+     },
+     "options_cn": {
+      "A": "健康;福祉",
+      "B": "过程;进展",
+      "C": "形成;构造",
+      "D": "协作;配合"
+     },
+     "answer": "A",
+     "explanation": "句内因果逻辑链＋上下文语义＋固定搭配。【解题思路】空格句中以to...inorderto...构建因果目的链∶采取措施→减少腹部脂肪，保持肌肉量→维护自身的身心____。联系贯穿全文的主旨\"减少腹部脂肪、增加肌肉量可延缓流体可知空格词意在说明\"采取措施\"的根本目的（维护身心健康;减少脂肪，保持肌肉，延缓流体智力衰退）。physicalandmentalhealth/wel-being为固定搭配，表示\"身心健康\"，【A】wellbeing正确。【错项排除】【B】process，【C】formation分别指向事物的\"发展\"和\"形成\"过程，而文中的建议对象为\"中老年人\"，身心状态已趋向成熟和稳定，且\"形成\"发展\"等变化过程通常不与protect以及physicalandmental搭配。【D】coordination强调\"各部分形成一个整体共同运作\"，而文中both\"两者都\"表明此处仍将\"生理的____\"和\"心理的____\"看作彼此独立的部分，且上下文中并未涉及\"身心的协",
+     "related_sentences": [
+      "en1_2021_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q19",
+     "number": "19",
+     "qtype": "完形",
+     "stem": "第 19 空：选择最合适的词填入空白 [19]",
+     "stem_cn": "",
+     "options": {
+      "A": "level",
+      "B": "love",
+      "C": "knowledge",
+      "D": "space"
+     },
+     "options_cn": {
+      "A": "水平;标准",
+      "B": "喜好;热爱",
+      "C": "知识;学识",
+      "D": "空间;间隔"
+     },
+     "answer": "A",
+     "explanation": "上下文语义＋常识。路】空格句指出两种强烈推荐的生活方式∶保持或提升你的有氧运动_____以及⋯⋯。根据上一句提出的建议可知，空格句说明\"减少腹部脂肪，保持肌肉量\"的具体做法。结合常识可知，运动有助于减脂增肌，故空格词应表示\"强度/频率/水平\"等，【A】level正确。【错项排除】【B】love、【C】knowledge分别指向主观上的\"喜好\"和\"了解、掌握程度\"，停留在思想意识层面;【D】space指向\"物理空间\"，停留在外在环境条件层面。三项均未触及实际行动，无法真正实现上文提出的建议，且B、D很少构成increaseyour____",
+     "related_sentences": [
+      "en1_2021_cloze_s10"
+     ]
+    },
+    {
+     "id": "en1_2021_cloze_q20",
+     "number": "20",
+     "qtype": "完形",
+     "stem": "第 20 空：选择最合适的词填入空白 [20]",
+     "stem_cn": "",
+     "options": {
+      "A": "design",
+      "B": "routine",
+      "C": "diet",
+      "D": "prescription"
+     },
+     "options_cn": {
+      "A": "设计;构思",
+      "B": "常规;惯例",
+      "C": "日常饮食",
+      "D": "药方;指示"
+     },
+     "answer": "C",
+     "explanation": "句内语义＋常识。【解题思路】本题的解题思路有二∶1.句首\"两种强烈推荐的生活方式（lifestyleapproaches）\"已为Mediterranean-style___限定方向，选项中只有B】routine、【C】diet能体现\"生活方式\"。2.定语及thatishighin...foods\"富含纤维，去除精加工食品\"表明Mediterrancan-style____是一种\"饮食\"。纺上，C为正确项。辅助思路∶地中海饮食以蔬果、鱼类、五谷杂粮等清淡、健康食材为主，为减脂增肌过程中常用的饮食方法。考生若掌握这一常识，也可快速选出答案。【锆项排除】【A】design，【B】routine的范围过于宽泛，空格后定语从句的解释说明内容已明显指向\"饮食\"。【D】prescrption一般指\"医生开的药方\"，与\"生活方式\"这一限定范围和定语从句描述的内容不符。，词汇注容与难句分析必⑤iber【'faibar】n。纤维①mass【maes】n，质量②recommend【irek?'mend】v，推荐⑥eliminate【i'liminent】v，消除③approach【a'praut】n.方法⑦processedfood加工食品④aerobie【e?'roubrk】a，有氧的ThetwohighlyrecommendedlifestyleapproachesaremaintainingorincreasingyourlevelofaerobicexerciseandfollowingMediterranean-styledietthatishighinfiberandeliminateshighlyprocessedfoods.wo.lifestyleapproachesaremaintainingorincrceasing.aerobicexerciseandfollowing.Jiel]系动词主语连接词表语1表语2定语从句mtisihinfiberandeliminateshighlyprocessedf引导词系表结构作谓语1连接词谓语2宾语功能注释∶本句主干为主系表结构，两组动名词短语mainainingorincreasing.following.作并列表语。后一个表语中嵌套一个定语从句thatishighin.foods，进一步说明\"\"地中海饮食\"的特点。8语篇分析2末段就\"如何避免流体智力衰退\"提出生活方式方面的建议。①句承上指出，在等待\"后续研究发现治疗方式\"的同时，我们自己也应该采取措施。Meanwhiletherearestepsyoucantake将建议对象由\"未来研究成果\"转向\"当下我们的自身努力\";两组表目的的衔接词to、inorderto明确采取措施的直接目的\"减少腹部脂肪，保持肌肉量\"和根本目的\"保持身心健康（包括减缓流体智力的衰退）\"。②句进而明确提出两项建议;保持/提升有氧运动水平;遵循地中海式饮食方式（高纤维、无精加工饮食）。本句明确回应第一、二段末句\"可通过改变生活方式防止或延缓流体智力衰退\"，实现首尾圆合。第二部分阅读理解PartA原文外教朗读Text1火车票价一涨再涨，乘客终将忍无可忍一、文章总体分析来源∶TheTelegrap《每日电讯报》2020年1月2日文章PassengersWon'tPutupWithEver-RisingRailFaresForever（火车票价不断上涨，乘客终将忍无可忍）。主题∶全文围绕\"英国火车票价一涨再涨\"一事展开论述，呼吁政府加强对火车运营商的监管，运营商提升服务质量以与票价匹配，并指出若不立即采取措施，乘客终将忍无可忍，英国铁路将再度面临国有化风险。脉络∶提出事件\"英国火车运营商今年再次上调票价\"并暗指其不合理（第一段）——分析事件\"政府准许运营商提价自有其道理，但乘客支付高昂票价，却连最基本的服务都无法享有，实在不合道理\"（第二、三段）——提出建议\"政府应采取更多措施监管运营商;运营商应立即提升服务质量，平息乘客的愤怒情绪\"（第四段）。9二、语篇分析及试题精解I④Howcanthetrainoperators\"possiblyjustify2火车运营商怎样才可能证明这又一次yetanotherincreasetorail°passengerfares?②Ithas的铁路客运提价正当合理?这已变成雷打becomeagrimlyreliableannualritual2∶everyJanuary不动的年度惯例∶每到一月，乘火车出行的thecostoftravellingbytrainrises,imposing*asignificant费用就会上涨，给那些别无选择、只能利用extraburdenonthosewhohavenooptionbuttousethe铁路网上下班的",
+     "related_sentences": [
+      "en1_2021_cloze_s10"
+     ]
+    }
+   ]
   }
  ]
 }

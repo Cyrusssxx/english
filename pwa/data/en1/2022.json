@@ -2022,6 +2022,581 @@
    ],
    "sentence_count": 23,
    "question_count": 5
+  },
+  {
+   "id": "en1_2022_cloze",
+   "type": "cloze",
+   "title": "",
+   "topic": "",
+   "source": "Section I Use of English",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "The idea that plants have some degree of consciousness first took root in the early 2000s. the term “plant neurobiology\" was [1] around the notion that some aspects of plant behavior could be [2] to intelligence in animals.",
+     "id": "en1_2022_cloze_s01",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "[3] plants lack brains, the firing of electrical signals in their stems and leaves nonetheless triggered responses that [4] consciousness researchers previously reported.",
+     "id": "en1_2022_cloze_s02",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "But such an idea is untrue, according to a new opinion article.",
+     "id": "en1_2022_cloze_s03",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "Plant biology is complex and fascinating, but it [5] so greatly from that of animals that so-called [6] of plants 9 intelligence is inconclusive, the authors wrote.",
+     "id": "en1_2022_cloze_s04",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Beginning in 2006, some scientists have [7] that plants possess neuron-like cells that interact with hormones and neurotransmitters, [8] \"a plant nervous system, [9] to that in animals,“ said lead study author Lincoln Taiz.",
+     "id": "en1_2022_cloze_s05",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "\"They [10] claimed that plants have c brain-like command centers' at their root tips.”",
+     "id": "en1_2022_cloze_s06",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "This [11] makes sense if you simplify the workings of a complex brain, [12] it to an array of electrical pulses; cells in plants also communicate through electrical signals.",
+     "id": "en1_2022_cloze_s07",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "[13] the signaling in a plant is only [14] similar to the firing in a complex animal brain, which is more than “a mass of cells that communicate by electricity,Taiz said.",
+     "id": "en1_2022_cloze_s08",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 5,
+     "en": "“ For consciousness to evolve, a brain with a threshold [15] of complexity and capacity is required,he [16] “ Since plants don't have nervous systems, the [17] that they have consciousness are effectively zero.",
+     "id": "en1_2022_cloze_s09",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 6,
+     "en": "And what's so great about consciousness, anyway?",
+     "id": "en1_2022_cloze_s10",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 6,
+     "en": "Plants can't run away from [18] so investing energy in a body system which [19] a threat and can feel pain would be a very [20] evolutionary strategy, according to the article.",
+     "id": "en1_2022_cloze_s11",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 6,
+     "en": "2022 年英语（一）试题第 1 页共 14 页",
+     "id": "en1_2022_cloze_s12",
+     "cn": "",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "id": "en1_2022_cloze_q01",
+     "number": "1",
+     "qtype": "完形",
+     "stem": "第 1 空：选择最合适的词填入空白 [1]",
+     "stem_cn": "",
+     "options": {
+      "A": "coined",
+      "B": "discovered",
+      "C": "collected",
+      "D": "issued"
+     },
+     "options_cn": {
+      "A": "创造（新词、短语）",
+      "B": "发现；找到",
+      "C": "",
+      "D": "宣布；公布"
+     },
+     "answer": "A",
+     "explanation": "句内语义十动宾搭配。【解题思路】空格句指出：“植物具有某种程度的意识”这一观念（Theidea）在21世纪初开始深入人心，“植物神经生物学”这一术语（Theterm）就是围绕“植物行为的某些方面可……动物智力”这一观念（thenotion）而被的。可见，全句意在介绍“植物意识说（Theidea.Theterm.thenotion均与之相关）”的起源、发展状况，空格词应指向新术语“植物神经生物学”的创造/形成等，A项正确。【错项排除】B项discovered的宾语应为业已存在但尚不为人知的事物，而句中其逻辑宾语“'植物神经生物学'这一术语”实际上才刚刚兴起，并非早已存在而不被人知的事物，故排除。C项collected的宾语应为具有一定数量的某种类型的事物，而Theterm\"plantneurobiology”为特指的单一对象；此外，“收集术语”的前提是存在术语，用于此处显然与语境不符，故排除。D项issued的宾语常为“声明、命令、警告”等，命题人利用term的“条款”之义设置陷阱，而句中term表示“术语”，无法与issued构成合理搭配。",
+     "related_sentences": [
+      "en1_2022_cloze_s01"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q02",
+     "number": "2",
+     "qtype": "完形",
+     "stem": "第 2 空：选择最合适的词填入空白 [2]",
+     "stem_cn": "",
+     "options": {
+      "A": "attributed",
+      "B": "directed",
+      "C": "compared",
+      "D": "confined"
+     },
+     "options_cn": {
+      "A": "（...to...）把.. 归因于",
+      "B": "（...to...）把.. 对准",
+      "C": "（...to...）把... 和.... 作比较；表明... 和.... 相似",
+      "D": "（...to...）把... 局限在"
+     },
+     "answer": "C",
+     "explanation": "句内语义+固定搭配。【解题思路】空格所在分句指出，“植物神经生物学”这一术语是围绕“植物行为在某些方面可以动物智力”这一观念而被创造出来的。可见，“植物神经生物学”的核心理念是“植物行为可动物智力”，而“植物神经学”实际暗示“植物同动物一样，具有神经系统”，故植物行为与动物智力之间应该存在某种共通性。compare填入文中即指“植物行为（所展现出的智慧）”与“动物智力”相似，能够体现“植物具有意识和智力”这一观点，明确“植物神经生物学”这一术语诞生的缘由，故C项正确。【错项排除】attributeAtoB表示“把A归因于B”,但“动物智力”显然不可能导致“植物行为”，故排除A项。directAtoB表示“把A对准B；把A集中在B上”,direct的宾语通常为“注意力、情绪、行为”等，但“动物智力”显然不可能是“植物行为”聚焦的对象，故排除B项。confineAtoB表示“把A局限在B；把A控制在B”,介词to后一般接“某一范围、区域或限度”等，而“动物智力”显然无法表示某种范围、区域或限度,故排除D项。",
+     "related_sentences": [
+      "en1_2022_cloze_s01"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q03",
+     "number": "3",
+     "qtype": "完形",
+     "stem": "第 3 空：选择最合适的词填入空白 [3]",
+     "stem_cn": "",
+     "options": {
+      "A": "Unless",
+      "B": "When",
+      "C": "Once",
+      "D": "Though"
+     },
+     "options_cn": {
+      "A": "除非；如果不",
+      "B": "当... 时；虽然",
+      "C": "一……就；一旦；当……时候",
+      "D": "虽然；尽管；即使"
+     },
+     "answer": "D",
+     "explanation": "句内逻辑+连词辨析。【解题思路】从句先指出“植物没有大脑”，主句随后指出“然而，植物的茎和叶所发出的电信号能触发反应”。结合上文“植物意识说”以及句内nonetheless\"然而；尽管如此”所传递的让步转折关联可判断,从句意在表明“植物看似没有意识（因为确实没有大脑）”，主句则意在表明“植物却具有一些意识性的反应”，空格词应体现让步转折逻辑，D项正确。【错项排除】A项Unless用于引出主句情形不成立/被打破的条件。但“植物没有大脑”是客观现实，而非某种可以假设的条件（“除非植物没有大脑”暗示“植物一般情况下拥有大脑注：nonetheless意为inspiteofthefactthathasjustbeenmentioned“尽管如此”，暗示从句所述的“植物没有大脑”为客观事实。B项When可表示条件关系，考生若将文章理解为“植物如果缺乏大脑，它们的茎和叶就会发出电信号，进而触发反应”则可能会误选此项，但此类解读错误原因同A项。When也可表“虽然；然而“，看似与nonetheless所表达的语义对接，但该用法通常用于主句之后，且不与nonetheless搭配使用，如Hesaidhewas18wheninfacthewasonly15.他说他18岁了，而其实只有15岁。故也排除。C项Once同样可表条件关系，错误原因同A项。",
+     "related_sentences": [
+      "en1_2022_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q04",
+     "number": "4",
+     "qtype": "完形",
+     "stem": "第 4 空：选择最合适的词填入空白 [4]",
+     "stem_cn": "",
+     "options": {
+      "A": "coped with",
+      "B": "consisted of",
+      "C": "hinted at",
+      "D": "extended to"
+     },
+     "options_cn": {
+      "A": "（成功地）应付，对付",
+      "B": "由.... 组成（或构成）",
+      "C": "暗示着；表明",
+      "D": "影响；包括"
+     },
+     "answer": "C",
+     "explanation": "上下文语义+动词短语辨析。【解题思路】结合上题分析可知，主从句为让步转折关系，从句“植物没有大脑”暗示“植物可能不存在意识”，而主句“植物的茎和叶却触发了某些反应，这些反应意识”则应体现“植物具有意识”这一核心语义，换言之主句应体现“植物的这些行为反应反映了植物意识的存在”这一文意，空格词应表示“反映/表明/暗示”等，C项正确。【错项排除】A项copedwith填入文中表示“（外显的）反应成功应对了（内在的）心理意识”，显然不符合逻辑，也无法体现主从句的让步转折关系。B项consistedof表达“整体”与“部分”的关系，但“反应”属于行为层面，而“意识”属于心理层面，前者不可能由后者组成，故排除。D项extendedto可表”影响”，考生若将该句理解为“植物发出的电信号触发了反应，这些反应进而影响了意识”则可能会误选此项，错误原因同A项。•语篇分析•:9第一、二段新旧对比，以新研究结果批驳旧研究发现，指出“植物意识说”缺乏事实根据。第一段以“介绍观点一明确观点背后的科学依据”引出旧有研究发现，提示文章主述话题“植物意识说”。①②句以Theidea...firsttookrootin...、ThetermMplantneurobiology”wascoinedaroundthenotion2that…形成呼应，引出“植物意识说”的起源及发展状况，idea、term、notion的近义词场明确中心议题“植物意识说”,first、intheearly2000s则表明这一说法虽起源不早，却深入人心，暗示其影响力巨大。couldbecomparedt。关联“植物行为”和“动物智力”，强调“植物意识说”的关注重点：植物与动物处于对等位置，不可忽略植物意识的可能性。③句以researcherspreviouslyreported明确本句的例证功能，并暗示此乃旧有研究观点，预示后文将引出新研究发现。句内借Though、nonetheless构成让步转折，对比组lackbrainsvstriggeredresponses以及暗藏因果关联的hintedat则强调“植物意识说”的理论依据“尽管植物没有大脑，但其茎叶能通过电脉冲触发反应，而这种反应表明了意识的存在”，本句表面上是在援引旧有研究发现来说明流行观点，但实际上暗藏玄机，预示后文将从这一流行观点的旧有论据角度出发展开批驳。IIOButsuchanideaisuntrue,accordingtoanewopinionarticle.@Plantbiologyiscomplexandfascinating,butit5sogreatlyfromthatofanimalsthatso-called6ofplants,intelligenceisinconclusive,theauthorswrote.但根据一篇新的观点文章，这一看法没有事实根据。文章作者写道，植物的生命机理复杂而奇妙，但与动物的生命机理型非常大，大到所谓能够证明植物智力的迫遁并没有说服力。・真题精解•一/",
+     "related_sentences": [
+      "en1_2022_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q05",
+     "number": "5",
+     "qtype": "完形",
+     "stem": "第 5 空：选择最合适的词填入空白 [5]",
+     "stem_cn": "",
+     "options": {
+      "A": "suffers",
+      "B": "benefits",
+      "C": "develops",
+      "D": "differs"
+     },
+     "options_cn": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+     },
+     "answer": "D",
+     "explanation": "上下文语义。【解题思路】本段首句总述新研究的观点：“植物电信号所触发的反应表明植物具有意识”这一看法没有事实根据。第二句援引研究者之言说明：植物的生命机理【it回指Plantbiology】复杂而奇妙，但与动物的生命机理【thatofanimals,that指代biology】很大/很强，大/强到无确定结果。结合上段“植物意识说”的论据“植物的某些行为反应可与动物的行为反应媲美”，可知本段意在介绍反对派的观点，其论据应该是“植物生命机理与动物生命机理的差异性很大，大到不能单凭个别行为反应就断定植物具有和动物媲美的意识”，空格词应体现“区别/不同/差异”等，D项正确。[错项排除[A项suffers【from】后通常跟某种苦难或疾病，但thatofanimals\"动物的生命机理”显然并非表示“某种折磨或困难”，故排除。B项benefits【from】可表“受益于”，考生若将该句理解为“植物生物学从动物生物学中借鉴良多”则可能会误选此项，但该句意在说明的是植物神经生物学【植物意识说】的反对派的观点，强调的是“植物生命机理”和“动物生命机理”差异，故排除。C项develops【from】利用上文44plantneurobiology,,wascoined捏造出“植物生物学源自动物生物学”，错误原因同B项。",
+     "related_sentences": [
+      "en1_2022_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q06",
+     "number": "6",
+     "qtype": "完形",
+     "stem": "第 6 空：选择最合适的词填入空白 [6]",
+     "stem_cn": "",
+     "options": {
+      "A": "acceptance",
+      "B": "evidence",
+      "C": "cultivation",
+      "D": "creation"
+     },
+     "options_cn": {
+      "A": "正式接受；赞同，认可",
+      "B": "证据；证明",
+      "C": "耕种",
+      "D": "创造：创建"
+     },
+     "answer": "B",
+     "explanation": "上下文语义十名词辨析。【解题思路】根据上题分析可知，空格所在分句“植物生命机理与动物生命机理差异非常大，大到所谓的植物智力的并没有说服力”意在说明该段首句“植物意识说缺乏事实根据【即植物并不存在意识】”，分句2中“所谓的植物智力的”应该指向与事实依据相关的事物，空格词应表示“根据/证据”等，B项正确。【错项排除】A项acceptance\"【对……的】认同”无法与inconclusive\"非结论性的；不确定的；不能使人信服的”形成合理搭配，故排除。C、D项填入文中分别表示“植物意识的培养”“植物意识的创造”，但文意旨在讨论“植物意识的存在”，未谈及“培养或创造”的问题，故排除。•语篇分析-第二段以“总述观点一详述论据”引出新研究发现，对“植物意识说”进行反驳。段落以accordingto3anewopinionarticle>theauthorswrote形成内部呼应，明确段内逻辑。①句句首But锁定段际转折关联，并以判断句suchanideaisuntrue强调上述说法的不真实（缺乏事实依据）。②句句内but则表明句内语义转折，先以complexandfascinating承接上段“植物的某些部位发出的电脉冲能触发反应”这一现象表明新研究者的看法，即承认植物生命机理的复杂性以及奇妙性，随后则以differssogreatly...that...结果状语从句强调指出“植物的生命机理与动物有极大不同，切不可因此而认定植物就具有能够与动物媲美的意识”,504@1招山也（：011（：1亚上©暗明相接，充分表明了新研究对“植物意识说”的否定态度。IH❶Beginningin2006,somescientistshave7thatplantspossessneuron-likecellsthatinteractwithhormonesandneurotransmitters,8\"aplantnervoussystem,9tothatinanimals,“saidleadstudyauthorLincolnTaiz.❷“They10claimedthatplantshave4brain-likecommandcenters'attheirroottips.”N❶This11makessenseifyousimplifytheworkingsofacomplexbrain,12ittoanarrayofelectricalpulses；cellsinplantsalsocommunicatethroughelectricalsignals.❷13,thesignalinginaplantisonly14similartothefiringinacomplexanimalbrain,whichismorethan“amassofcellsthatcommunicatebyelectricity,“Taizsaid.该研究报告的第一作者林肯・泰兹说，从2006年开始，就有一些科学家竭力主张,植物拥有类似于神经元的细胞，能够与荷尔蒙和神经递质相互作用，邈“植物的神经系统，与动物的神经系统类也”。“他们甚至声称，植物的根尖有'类似大脑的指挥中心如果把复杂大脑的运作机制电也为一系列电脉冲，这一理点倒也言之有理；（因为）植物细胞也通过电信号交流。但是，植物体内的信号传递与动物复杂的大脑的信号传递只是麦回上相似，动物大脑不仅仅是“通过电脉冲交流的细胞团”，泰兹指出。二真题精解・：/",
+     "related_sentences": [
+      "en1_2022_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q07",
+     "number": "7",
+     "qtype": "完形",
+     "stem": "第 7 空：选择最合适的词填入空白 [7]",
+     "stem_cn": "",
+     "options": {
+      "A": "doubted",
+      "B": "denied",
+      "C": "argued",
+      "D": "requested"
+     },
+     "options_cn": {
+      "A": "不能肯定；认为……未必可能",
+      "B": "否认；否定",
+      "C": "（坚决）主张；认为；提出理由（企图）证明",
+      "D": "请求；要求"
+     },
+     "answer": "B",
+     "explanation": "上下文语义。【解题思路】空格所在段整体援引新研究第一作者泰兹的话语：从2006年开始，有一些科学家（have）植物拥有类似于神经元的细胞;他们……声称（claimed）植物的根尖有类似大脑的指挥中心。可见，全段介绍“植物意识说”反对者（新研究的第一作者）口中的支持者言论：他们认为“植物拥有类似于神经元的细胞，植物的根尖有类似大脑的指挥中心”，空格词应该与claimed“声称”语义一致,C项表示“（坚决）主张；认为\"，多用于说服他人同意自己的观点，正确。【错项排除】A项doubted后接that宾语从句表示“不确信/怀疑的具体事物\"，如Shedoubtedthattheaccidentcouldhavebeenavoided.她不认为那场意外本可以避免。而文中要表达的是“认为……可能；肯定……为真”之意，故排除。B项denied后接that宾语从句表示“否定/否认的具体内容”，错误原因同A项。D项requested后接that宾语从句表示“请求/要求的具体内容”，但宾语从句“植物拥有类似于神经元的细胞”显然不是某种要求，故排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q08",
+     "number": "8",
+     "qtype": "完形",
+     "stem": "第 8 空：选择最合适的词填入空白 [8]",
+     "stem_cn": "",
+     "options": {
+      "A": "adapting",
+      "B": "forming",
+      "C": "repairing",
+      "D": "testing"
+     },
+     "options_cn": {
+      "A": "（使）适应；（使）适合",
+      "B": "形成;变成",
+      "C": "修理；修补；修复",
+      "D": ""
+     },
+     "answer": "B",
+     "explanation": "上下文语义+现在分词短语作结果状语。【解题思路】空格词所在部分指出“植物意识说”持有者的观点：植物拥有类似于神经元的细胞，这些细胞与荷尔蒙以及神经递质相互作用,“植物的神经系统”。结合相关科学常识“（类）神经元细胞为神经系统的基本结构，而荷尔蒙（激素）以及神经递质是神经系统发挥作用的重要物质”可判断，该部分意在表达“植物体内的类神经元细胞通过与荷尔蒙以及神经递质的相互作用，构成了植物的神经系统”，现在分词短语作结果状语，空格词应表示“形成/产生”等，B项正确。【错项排除】A项adapting后常接tosth引出适应的对象，如Thoseflowersarewelladaptedto4harshwinters.这些花非常适应严冬。置入此处则表“使植物的神经系统适应”，暗示植物的神经系统已存在，但需要做出一定调整以适应新的情况，而文中意在探讨的是“植物的神经系统是否存在”而非“是否适应”，故排除。C项repairing可表示“修复”，但“修复”暗示“受损【也即神经系统本就存在】”，而文章争论的焦点在于“植物是否拥有神经系统”，而非“神经系统是否受损”，故排除。D项testing可表“测试”，但“测试神经系统”也暗示该系统已存在，与文意重心不符，可排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q09",
+     "number": "9",
+     "qtype": "完形",
+     "stem": "第 9 空：选择最合适的词填入空白 [9]",
+     "stem_cn": "",
+     "options": {
+      "A": "analogous",
+      "B": "essential",
+      "C": "suitable",
+      "D": "sensitive"
+     },
+     "options_cn": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+     },
+     "answer": "A",
+     "explanation": "上下文语义逻辑。【解题思路】结合上两题分析可知，本句意在介绍“植物意识说”支持者的观点，故空格所在结果状语“【植物的类神经元细胞通过与荷尔蒙以及神经递质相互作用】形成了植物的神经系统,动物的神经系统”应该意在表达“植物具有跟动物相类似的神经系统，因而具有跟动物相类似的意识”，空格词应表示“类似/相似”,A项正确。【错项排除】B项essential【to】可表示“对于……必不可少的”，考生若将文意理解为“类神经元细胞”对“神经系统”必不可少，则可能会误选此项，但该选项错误有二:一是错判了tothatinanimals的逻辑主语【应指向aplantnervoussystem,而非neuron-likecells】；二是错误地将存在于不同生物体内的事物“植物的类神经元细胞【neuron-likecells】”与“动物的神经系统【thatinanimals】”建立关联，认为前者对后者至关重要，而这明显不符合常识，故排除。C项suitable【to】填入文中表示“植物的神经系统适用于动物的神经系统”，同样不符合常识，故排除。D项sensitive【to】利用常识“类神经元细胞对外界刺激的敏感性”设障,但同样错误地解读了tothatinanimals的逻辑主语以及that的所指，故排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q10",
+     "number": "10",
+     "qtype": "完形",
+     "stem": "第 10 空：选择最合适的词填入空白 [10]",
+     "stem_cn": "",
+     "options": {
+      "A": "just",
+      "B": "ever",
+      "C": "still",
+      "D": "even"
+     },
+     "options_cn": {
+      "A": "只是；正好；刚才;确实",
+      "B": "在任何时候；曾经；总是",
+      "C": "还是；仍然；依旧",
+      "D": "甚至；即使"
+     },
+     "answer": "D",
+     "explanation": "上下文语义逻辑+副词辨析。【解题思路】同样结合第7题可知，本段意在介绍“植物意识说”反对者眼中的支持者论调：他们主张植物拥有与动物类似的神经系统，他们断言植物的根尖拥有类似大脑的指挥中心。结合反对者用词argued、claimed的递进【“提出理由以论证/论辩”-“即便未经证实也直接断言”】以及支持者用词aplantnervoussystem,analogoustothatinanimals>brain-likecommandcenters的递进【”类似于动物的神经系统”-“类似大脑的指挥中心”】可判断两句间存在语义递进，同时应表达反对者的质疑之情，even一方面能够体现两分句间的递进关系，另一方面能够体现泰兹对“植物拥有类似大脑的指挥中心”的质疑态度，符合全文基调，D项正确。【错项排除】A项just填入文中表示“他们只是声称……”，这既无法体现支持者观点的语义递进，也无法体现反对者的质疑语气，故排除。B项ever可表示“在任何时候；曾经\"，命题人利用中文语境“他们曾经声称……”设障，但ever表达该义时，通常用于疑问句、否定句、比较结构或带if的句子中，如Ifyou'reeverinSeattle,comeandseeme.如果你什么时候到了西雅图，就来看我吧。C项still利用“他们不仅主张，还断言……”的情境设障，但still表达此义时强调的是一种状态的延续，而不是语义的递进，故排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q11",
+     "number": "11",
+     "qtype": "完形",
+     "stem": "第 11 空：选择最合适的词填入空白 [11]",
+     "stem_cn": "",
+     "options": {
+      "A": "restriction",
+      "B": "experiment",
+      "C": "perspective",
+      "D": "demand"
+     },
+     "options_cn": {
+      "A": "限制；约束",
+      "B": "实验；试验",
+      "C": "观点；思考方法；视角",
+      "D": "要求;需求"
+     },
+     "answer": "C",
+     "explanation": "This的指代功能+条件关系。【解题思路】空格所在分句指出：如果简化复杂大脑的运作机制，这一就言之有理。结合句内makessense“讲得通；言之有理”的置评口吻可知本句意在对上文所述“植物意识说”支持者的论调进行评述，空格词应表示“观点/看法/见解”等,C项用于此处即指向上文“植物意识说”支持者的观点，正确。【错项排除】A项restriction利用if条件句中“将复杂大脑的运作机制简化”捏造出“由此受限”，但此处This回指前文所述内容，而非if从句的假设情境，故排除。B项experiment由if条件句中5workings”运作；工作方法”望文生义而来，但它实际指向“（大脑的）运作，工作方法”，表示某种“抽象的机制”，显然并非可以进行人为操作的条件；且上下文并未涉及实验，故排除。D项demand利用其前brain-likecommandcenters中的command设障，但该词实际上是在强调植物具有“控制（行为的）能力”，着力点还在“植物存在意识”这一支持者的看法，上文并未单独谈及“控制；指挥”等，故排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q12",
+     "number": "12",
+     "qtype": "完形",
+     "stem": "第 12 空：选择最合适的词填入空白 [12]",
+     "stem_cn": "",
+     "options": {
+      "A": "attaching",
+      "B": "reducing",
+      "C": "returning",
+      "D": "exposing"
+     },
+     "options_cn": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+     },
+     "answer": "B",
+     "explanation": "熟词僻义+现在分词短语作伴随状语。【解题思路】空格所在句指出：这种观点言之有理，如果将复杂大脑的运作机制简化,它为一系列电脉冲；植物的细胞也通过电信号交流。可见，本句背后的逻辑为：条件（如果动物细胞仅通过电信号交流，即如果其作用机制可简化为“电脉冲”）+事实（植物细胞也通过电信号交流）=结论（“植物具有类似动物的神经系统，存在类似大脑的控制中心”这一观点言之有理）。即，空格所在部分“它为一系列电脉冲”应该是对simplify的一种解释说明，B项表示“把……简化为……”，正确。【错项排除】其余三项均无法体现“复杂大脑的运作机制”与“一系列电脉冲”之间的合理关系，也不能体现simplify的语义，故排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q13",
+     "number": "13",
+     "qtype": "完形",
+     "stem": "第 13 空：选择最合适的词填入空白 [13]",
+     "stem_cn": "",
+     "options": {
+      "A": "However",
+      "B": "Moreover",
+      "C": "Therefore",
+      "D": "Otherwise"
+     },
+     "options_cn": {
+      "A": "然而；但是",
+      "B": "此外；而且",
+      "C": "因此；所以",
+      "D": "否则；要不然"
+     },
+     "answer": "A",
+     "explanation": "上下文语义逻辑十连词辨析。【解题思路】空格所在句介绍泰兹（新研究的作者、“植物意识说”的反对者）的观点：植物体内的信号传递与复杂的动物大脑的信号传递只是……相似，动物的大脑不只是“一团通过电脉冲交流的细胞”这么简单;可见该句意在说明“植物意识说”的错误性，而结合第一句的含义“植物意识说在某种条件下言之有理”可判断，两句之间为转折逻辑，A项正确。【错项排除】B项Moreover表达递进关联，C项Therefore表达因果关联，考生若仅关注空格句中similarto则可能将两句理解为递进或因果逻辑，但由only、morethan可知，空格句实际是对动植物相似性的一种否定，故排除此两项。D项Otherwise表达条件关联，如Shutthewindow,otherwiseit'llgettoocoldinhere.把窗户关好，不然屋子里就太冷了。但上文对于“植物意识说”的评述显然无法充当某种条件，泰兹的观点也并非某条件导致的结果，故排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q14",
+     "number": "14",
+     "qtype": "完形",
+     "stem": "第 14 空：选择最合适的词填入空白 [14]",
+     "stem_cn": "",
+     "options": {
+      "A": "temporarily",
+      "B": "literally",
+      "C": "superficially",
+      "D": "imaginarily"
+     },
+     "options_cn": {
+      "A": "短暂地；暂时地",
+      "B": "确实地；真正地",
+      "C": "表面上地；浅薄地",
+      "D": "想象中地；虚构地"
+     },
+     "answer": "C",
+     "explanation": "上下文语义逻辑+副词辨析。【解题思路】空格句指出泰兹观点：植物体内的信号传递与动物复杂的大脑的信号传递只是相似，动物的大脑不仅仅是（morethan）”通过电脉冲交流的细胞团”这么简单。结合上文泰兹的相关言论“植物的生命机理与动物的生命机理差别非常大，大到（sogreatly...that...）植物具有意识的相关证据并不具有说服力”可知，泰兹对于动植物信号传递的相似性持表面认同、深层否定的态度。C项用于此处即“表面上相似”，符合这一态度，故正确。【错项排除】A项temporarily指向时间持续情况，但句中要传递的并非“短暂”与“永久”的语义，而是“表面”与“深层”的关联，故排除。B项literally强调的是事实的千真万确性，但句中实际要强调的是一种表面肯定、深层否定的韵味，“的的确确相似”很难与However.only.morethan所共同构成的否定语境吻合，故排除。D项imaginarily强调的是一种虚构现象，而文中要表达的是“存在一定程度的相似”，故不可能是虚构的，也排除。•语篇分析•丸第三至六段引证详述，评价指出“植物意识说”的逻辑谬误：既不符合植物的生命机理，也不符合植物的进化所需。整个段落群以saidleadstudyauthorLincolnTaiz（第三段）、Taizsaid（第四段）、he6added（第五段）、accordingtothearticle（第六段，其中article即Taiz为第一作者的新研究文章）明确它是从新研究作者的角度展开（注意写作视角，更能帮助理解文意与情感）。第三段介绍“植物意识说”支持者的主张。段落内部以somescientistshavearguedthat...>Theyevenclaimedthat…形成语义递进，明确语义重心在旧研究者的观点（即“植物意识说”支持者的论调），而argued、claimed所暗藏的“未经事实证明”以及even所传递的“出乎意料”足以表明新研究者（说话人）对这些论调的不支持态度，neuron-like、aplantnervoussystem>analogous到brain-likecommandcenters的递进（借由even可窥）则反映出旧研究者们对“植物意识说”愈来愈笃信。第四段评述“植物意识说”支持者的主张。段内两句借Thisperspectivemakessenseif...However...实现衔接，表明段落逻辑，先让步分析上述观点成立的逻辑条件，再转而剖析这一逻辑背后的不合理性。①句的分号形式上分隔前后两分句，实际上暗藏因果关联，以分句2的内容来阐释分句1的合理性。if条件句看似明确成立的条件，而从句内simplify/reducingvscomplex的巨大反差实则暗示这一条件不可能成立（前者属于假设行为“假设能简化”，后者属于事实信息“大脑很复杂，不可能简化②句onlysuperficiallysimilar.morethan在部分承认动植物的相似性（动物确实通过电脉冲交流）的基础上，更加强调动物大脑功能的复杂性，暗示二者不具有可比性。V❶“Forconsciousnesstoevolve,abrainwithathreshold15ofcomplexityandcapacityisrequired,“he16.©<4Sinceplantsdon'thavenervoussystems,the17thattheyhaveconsciousnessareeffectivelyzero.”VIOAndwhat'ssogreataboutconsciousness,anyway?❷Plantscan'trunawayfrom18,soinvestingenergyinabodysystemwhich19athreatandcanfeelpainwouldbeavery20evolutionarystrategy,accordingtothearticle.[283words]“想要进化形成意识，大脑的复杂性和容纳度需要达到一定的阈值】他补充道，“既然植物没有神经系统，那它们存在需识的可能性实际上为零J那么，意识究竟有什么了不起的呢？这篇文章认为，植物无法逃离诞，因此把能量投放在一个可以幽威胁并能感知疼痛的身体系统将是一种非常搜楂的进化策略。•真题精解・；/",
+     "related_sentences": [
+      "en1_2022_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q15",
+     "number": "15",
+     "qtype": "完形",
+     "stem": "第 15 空：选择最合适的词填入空白 [15]",
+     "stem_cn": "",
+     "options": {
+      "A": "list",
+      "B": "level",
+      "C": "label",
+      "D": "load"
+     },
+     "options_cn": {
+      "A": "名单；目录；清单",
+      "B": "水平；程度；级别",
+      "C": "标签；签条;标记",
+      "D": "负载；负荷；容纳量"
+     },
+     "answer": "B",
+     "explanation": "介词短语作后置定语十固定用法。【解题思路】空格所在句介绍泰兹的言论（he指代上文Taiz）：想要进化形成意识，大脑的复杂性和容纳度都需要具有阈/临界o可见，本句意在表明“大脑的复杂性和容纳度需要达到（能够形成意识的）临界值后，才能够形成意识”。thresholdlevel为固定搭配，表示“阈值”，又称“临界值”，指一个效应能够产生的最低值或最高值。用于此处能够体现“形成意识”的条件，B项正确。【错项排除】A项list用于此处表示“一个复杂性和容纳度的临界列表”，表明含有多个复杂性、容纳度临界值，而这很明显与句意想要传递的“一个复杂性和容纳度的临界值”不符，故排除。C项label无法与threshold搭配形成合理语义，且文中也未谈及任何有关“标签”的内容，故排除。D项load常用于aloadofsth结构，表示“大量;许多”，考生若将该句理解为“想要进化形成意识，大脑需要非常复杂、容量非常大”则可能会误选此项，但aloadof一般用于形容数量大，而此处threshold指向的是程度、水平，两者不能形成合理搭配，故也排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q16",
+     "number": "16",
+     "qtype": "完形",
+     "stem": "第 16 空：选择最合适的词填入空白 [16]",
+     "stem_cn": "",
+     "options": {
+      "A": "recalled",
+      "B": "agreed",
+      "C": "questioned",
+      "D": "added"
+     },
+     "options_cn": {
+      "A": "回忆；回想",
+      "B": "同意；赞成",
+      "C": "询问；质疑",
+      "D": "补充说；继续说"
+     },
+     "answer": "D",
+     "explanation": "段际语义逻辑+引述动词辨析。【解题思路】本段指出，“想要进化成意识，大脑的复杂性和容纳度都需要达到一定的阈值。”他，“既然植物没有神经系统，那么它们拥有意识的……为零。”结合上文泰兹的话语（Taizsaid）”动7植物的信号传递只是表面上的相似”可知，本段是在上文基础上的进一步延伸、补充。空格词应表示对上述观点或看法的进一步补充说明，D项正确。【错项排除】A项recalled所辖域的引号内的内容是对过去事件或经历的回忆，如“He'ssittingonthebackandwe'redoing36knots,\"herecalled.“他坐在船后面，我们开到了36节。”他回忆道。B项agreed所辖域的引号内的内容表达的是对他人观点的认可，如“That'strue,“sheagreed.\"是这样的】她同意道。C项questioned所辖域的引号内的内容表达的是疑问或质疑，如“Why?”hequestioned.\"为什么？”他质问道。而文中引号内及上文均为泰兹本人的观点，故以上三项均与引号内内容的性质不符。",
+     "related_sentences": [
+      "en1_2022_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q17",
+     "number": "17",
+     "qtype": "完形",
+     "stem": "第 17 空：选择最合适的词填入空白 [17]",
+     "stem_cn": "",
+     "options": {
+      "A": "chances",
+      "B": "risks",
+      "C": "excuses",
+      "D": "assumptions"
+     },
+     "options_cn": {
+      "A": "可能性；机会",
+      "B": "危险；风险",
+      "C": "借口 ；理由；辩解",
+      "D": "假定；假设"
+     },
+     "answer": "A",
+     "explanation": "句内语义逻辑+名词辨析。【解题思路】从句thattheyhaveconsciousness结构完整，故其应该作空格词的同位语。而空格句指出，既然植物没有神经系统，那么（它们存在意识）实际上为零。而上句则提到“想要进化形成意识,至少需要一颗复杂性和容纳度都达阈值的大脑”。可见，空格句意在表达:植物连神经系统都没有，更遑论一颗复杂性、容纳度达到阈值的大脑，因此不可能存在意识。空格词应指向可能性/机会等,A项正确。【错项排除】B、C、D三项分别指向“风险”“理由”“假设”，但文中“植物存在意识”不是一种“风险”,也不是一种，，理由，，（不符合空格词与that从句的同位关系），而是一种尚在争论的“可能性”；另一方面“理由”“假设”无法用数值来表示（无法与表语effectivelyzero搭配），故此三项均排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q18",
+     "number": "18",
+     "qtype": "完形",
+     "stem": "第 18 空：选择最合适的词填入空白 [18]",
+     "stem_cn": "",
+     "options": {
+      "A": "danger",
+      "B": "failure",
+      "C": "warning",
+      "D": "control"
+     },
+     "options_cn": {
+      "A": "危险；威胁；危害",
+      "B": "失败；故障",
+      "C": "警告；警示",
+      "D": "控制；掌控"
+     },
+     "answer": "A",
+     "explanation": "上下文语义关联+文章主旨。【解题思路】空格所在段首尾And...accordingtothearticle表明本段实际承接上文继续介绍“植物意识说”反对者（泰兹为新研究的第一作者）的观点，其中第一句以反问语气指出“植物具有意识有什么好处”，深层暗示植物具有意识没有什么好处；第二句（空格所在句）进而指出：由于植物无法逃离，因此把能量投放在一个“……威胁并能感知疼痛”（即存在意识）的身体系统将是一种……进化策略。可见，两句间语义逻辑应该是：只会感知威胁和疼痛（具有意识）却不能逃离威胁和疼痛（实际事实）无疑对植物来说没有什么好处，空格词应为与威胁、疼痛相关的事物，A项正确。【错项排除】B项failure“失败”指向自身，而“威胁”“疼痛”指向外界；C、D项也无法契合“威胁”“疼痛”所构成的语义场。此外“无法规避失败/警告/控制”与“无需感受外界伤害”之间无法形成合理因果关联，从而也无法体现“植物没必要进化出意识”的文意，故排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q19",
+     "number": "19",
+     "qtype": "完形",
+     "stem": "第 19 空：选择最合适的词填入空白 [19]",
+     "stem_cn": "",
+     "options": {
+      "A": "represents",
+      "B": "includes",
+      "C": "reveals",
+      "D": "recognizes"
+     },
+     "options_cn": {
+      "A": "代表；相当于；意味着",
+      "B": "包含；包括",
+      "C": "揭示；显示；露出",
+      "D": "认出；认识；辨认出"
+     },
+     "answer": "D",
+     "explanation": "上下文语义逻辑+动词辨析。【解题思路】结合上题分析可知，空格句是在论述“植物没有意识”的合理性。故定语从句“可以威胁并能感知疼痛”应用于形容身体系统的意识性,为皿威胁”应与“感知疼痛”并列，体现对外部伤害的感知和意识，D项正确。【错项排除】A项represents通常体现对等/象征关系，B项includes通常体现整体与部分的关系，但此处“身体系统”（which指代abodysystem）与“威胁”并非“对等”或“整体与部分”的关系微排除。C项reveals强调的是将某事物展示于人，让人知道，而文中意欲表达的是身体系统自身感知外界威胁，以体现植物的意识性，而不是将不为人知的威胁展示于人，故排除。",
+     "related_sentences": [
+      "en1_2022_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2022_cloze_q20",
+     "number": "20",
+     "qtype": "完形",
+     "stem": "第 20 空：选择最合适的词填入空白 [20]",
+     "stem_cn": "",
+     "options": {
+      "A": "humble",
+      "B": "poor",
+      "C": "practical",
+      "D": "easy"
+     },
+     "options_cn": {
+      "A": "谦虚的；不大的；没有特别之处的",
+      "B": "贫穷的；劣质的；差的；糟糕的",
+      "C": "实际的；切实可行的",
+      "D": "容易的；不费力的"
+     },
+     "answer": "B",
+     "explanation": "上下文语义逻辑+形容词辨析。【解题思路】结合第18题分析可知，空格所在句意在指出“植物不具有意识的合理性”，故“把能量投放在一个可以识别威胁并能感知疼痛的（有意识的）身体系统是一种非常进化策略”应该具有比8较强烈的否定韵味。空格词应表达消极语义，B项正确。【错项排除】A项humble修饰人时，可表“谦虚的；谦逊的\"；修饰物时，可表“不大的；没有特别之处的\"，如ahumblefarmhouse（小农舍）。但整体语义还是指向肯定，与文中要传递的否定语义相悖，故排除。C项practical利用中文语境“进化出识别威胁和感知疼痛的身体系统是非常实用的”捏造干扰，但很明显不符合句内所需负面语义，故排除。D项easy利用动物世界的惯常情形“可以识别威胁并感知疼痛”捏造出“这一进化策略非常容易”，但空格句是在论述植物的进化策略而非动物，此外由上文“想要进化形成意识，大脑的复杂性和容纳度需要达到一定的阈值”也可得知，“进化出意识”并不简单。【♦语篇分析・；/第五段从生理角度解释植物不具备意识的原因。①句Forconsciousnesstoevolve»abrain...isrequired明确“生物进化出意识”的普适条件：大脑的复杂性和容纳度达到阈值，其中thresholdlevel（threshold意为thelevelatwhichsomethingstartstohappenorhaveaneffect）强调“意识出现”的最低要求，暗示“仅能传递电脉冲信号的植物”并未达到这一要求。②句Since...thechances...areeffectivelyzero则进而明确植物没有进化出意识的原因：连最基本的神经系统都不具备。其中effectivelyzero凸显对“植物意识说”的强力反驳。第六段从进化角度解释植物不具有意识的合理性。段内两句以一问一答的形式呈现强关联。①句首先以Andwhat'ssogreatabout...anyway?承上“植物意识说”的强劲势头发问“植物意识的价值为何“，anyway（usedinquestionstoemphasizethespeaker'swishtoobtainthetruth）一方面暗含对“意识重要性”的质疑，另一方面提示下文将就上述争议给出终极结论。②句以因果逻辑词so关联can'trunawayfromdanger与investing...system,指出“不能逃离危险，却具有意识危险的生理机制”之间的悖论：能感知危险却不能逃离危险的生理机制纯属徒增烦恼，价值何在？作用何在？averypoorevolutionarystrategy揭示了植物并没有进化出意识的根本原因：意识对植物来说不是一种进化优势，不具备意识才符合植物的进化规律。SectionHReadingComprehension净■■AText1当塑料弥足珍贵之时知识补充外教朗读矍一、总体分析来源：Science《科学》2021年7月2日文章WhenPlasticsArePrecious（当塑料弥足珍贵之时）。主题：文章突破惯常视角“塑料太过耐久，塑料制品污染全球”，反向引出问题“由于某些塑料老化变质，博物馆中多种塑料文物岌岌可危”，指出“塑料文物保护充满挑战，但这关乎后世对我们及我们所处时代的认知，意义重大，须知难而进”。脉络：提出问题现象：塑料文物岌岌可危（首段）—剖析塑料手工艺品不易保存的原因（第二至四段）—介绍范・奥斯藤等人保护塑料雕塑的成功故事（第五段）一展望塑料文物保护工作的未来“充满挑战”（第六段）一一指出保护塑料文物的重大历史意义（第七段）。；二、语篇分析及试题精解I❶Peopleoftencomplainthatplasticsaretoodurable.©Waterbottles,shoppingbags,andothertrashlittertheplanet,fromMountEveresttotheMarianaIrench,becauseplasticsareeverywhereanddon'tbreak人们常抱怨塑料太耐久了。从珠穆朗玛峰到马里亚纳海沟，整个地球被水瓶、购物袋以及其他废弃物弄得乱七八糟，这正是因为塑料无处不在且不易分解。但有些塑料材9",
+     "related_sentences": [
+      "en1_2022_cloze_s11"
+     ]
+    }
+   ]
   }
  ]
 }

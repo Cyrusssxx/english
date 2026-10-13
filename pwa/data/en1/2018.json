@@ -1930,6 +1930,588 @@
    ],
    "sentence_count": 19,
    "question_count": 4
+  },
+  {
+   "id": "en1_2018_cloze",
+   "type": "cloze",
+   "title": "",
+   "topic": "",
+   "source": "Section I Use of English",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "Trust is a tricky business.",
+     "id": "en1_2018_cloze_s01",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "On the one hand, it's a necessary condition [1] many worthwhile things: child care, friendships, etc. On the other hand, putting your [2] in the wrong place often carries a high [3]",
+     "id": "en1_2018_cloze_s02",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "[4] why do we trust at all?",
+     "id": "en1_2018_cloze_s03",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "Well, because it feels good.",
+     "id": "en1_2018_cloze_s04",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "[5] [6] people place their trust in an individual or an institution, their brains release oxytocin, a hormone that 6 pleasurable feelings and triggers the herding instinct that prompts humans to [7] with one another.",
+     "id": "en1_2018_cloze_s05",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "Scientists have found that exposure [8] this hormone puts us in a trusting [9] in a Swiss study, researchers sprayed oxytocin into the noses of half the subjects; those subjects were ready to lend significantly higher amounts of money to strangers than were their [10] who inhaled something else.",
+     "id": "en1_2018_cloze_s06",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "[11] for us, we also have a sixth sense for dishonesty that may [12] us.",
+     "id": "en1_2018_cloze_s07",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "A Canadian study found that children as young as 14 months can differentiate [13] [14] a credible person and a dishonest one.",
+     "id": "en1_2018_cloze_s08",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Sixty toddlers were each 14 to an adult tester holding a plastic container.",
+     "id": "en1_2018_cloze_s09",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "The tester would ask, \"What's in here?\" before looking into the container, smiling, and exclaiming, \"Wow!",
+     "id": "en1_2018_cloze_s10",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Each subject was then invited to look [15] Half of them found a toy; the other half [16] l--'-6 [17] the container was empty and realized the tester had 17 them.",
+     "id": "en1_2018_cloze_s11",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "Among the children who had not been tricked, the majority were [18] to cooperate with the tester in learning a new skill, demonstrating that they trusted his leadership.",
+     "id": "en1_2018_cloze_s12",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "[19] only five of the 30 children paired with the \" [20] \" tester participated in a follow-up activity. .1. (-3¾-14 yf)",
+     "id": "en1_2018_cloze_s13",
+     "cn": "",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "id": "en1_2018_cloze_q01",
+     "number": "1",
+     "qtype": "完形",
+     "stem": "第 1 空：选择最合适的词填入空白 [1]",
+     "stem_cn": "",
+     "options": {
+      "A": "on",
+      "B": "like",
+      "C": "for",
+      "D": "from"
+     },
+     "options_cn": {
+      "A": "对⋯⋯;关于",
+      "B": "像;类似",
+      "C": "正确，a condition for/of sth为常见搭配，表示\"某事的先决条件\"",
+      "D": "表示\"来源或出"
+     },
+     "answer": "C",
+     "explanation": "句内语义＋介词用法。【解题思路】it回指首句主题词Trust（信任），空格前后信息分别为anecessarycondition（必要条件）和manyworthwhilethings...（儿童看护、友谊等有价值之事），故文意只能是∶要想（为了）实现这些有价值的事，信任是一项前提条件。空格介词一方面要\"明确前提的涉及对象（对谁来说是必要条件）\"，另一方面还应体现\"（为达成某事的）目的性\"，for既能\"引出陈述/问题的相关对象（=concerning）\"，还有\"为了（某目的）\"的含义，因此【C】正确，aconditionfor/ofsth为常见搭配，表示\"某事的先决条件\"。【错项排除】【A】on干扰点有二∶一、表\"关于（某特定内容）\"时，on之后是对其前内容的\"范围、内容等的具体说明\"，如somebooksonIndia（有关印度的一些书）;二、表\"对⋯⋯造成影响/和⋯⋯有关\"时，on之前的名词实际上包含动作意味，其后内容是该动作的承受者，如newrestrictionsonthesalesofweapons（武器买卖的新限制）。【B】like作介词只有\"类比\"和\"举例\"两种功能;【D】from表示\"来源或出处\";均与\"某事以⋯⋯为前提条件\"的逻辑相去甚远。",
+     "related_sentences": [
+      "en1_2018_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q02",
+     "number": "2",
+     "qtype": "完形",
+     "stem": "第 2 空：选择最合适的词填入空白 [2]",
+     "stem_cn": "",
+     "options": {
+      "A": "faith",
+      "B": "concern",
+      "C": "attention",
+      "D": "interest"
+     },
+     "options_cn": {
+      "A": "信任;信心",
+      "B": "担心，关切;关怀，关爱",
+      "C": "注意，专心;关心，关注",
+      "D": "爱好;兴趣，关注"
+     },
+     "answer": "A",
+     "explanation": "名词辨析。【解题思路】由逻辑关联词Ontheonehand...Ontheotherhand...（用于\"引出两个相对立的观点、事实等\"）可知，②③句是对首句\"信任是一件玄妙的事\"的正反两方面说明，已知②句\"信任是许多有价值之事的前提\"在说明信任好的一面，③句\"将____放在错误的地方通常⋯⋯\"应该是解释\"信任的不认准淘宝店铺∶光速考研工作室，赠送配套课程利一面\"，所以空格词也应表示\"信任\"的语义，【A】faith是对trust的同义替换，符合文意。【错项排除】干扰项\"担心、关怀、关注、兴趣\"等内容都属于人与人之间的情感联系，与\"信任\"有一定关联，但并不能简单等同于\"信任\"。",
+     "related_sentences": [
+      "en1_2018_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q03",
+     "number": "3",
+     "qtype": "完形",
+     "stem": "第 3 空：选择最合适的词填入空白 [3]",
+     "stem_cn": "",
+     "options": {
+      "A": "benefit",
+      "B": "debt",
+      "C": "hope",
+      "D": "price"
+     },
+     "options_cn": {
+      "A": "好处",
+      "B": "债务;恩情;影响",
+      "C": "希望;期望",
+      "D": "价格;代价"
+     },
+     "answer": "D",
+     "explanation": "上下文语义十名词辨析。【解题思路】由上题分析结合句中inthewrongplace可知，③句解释的应该是\"信任的不利一面\"，故carriesahigh__应该表示\"信任可能的负面后果/影响\"，carryahighprice表示\"承受巨大的代价/损失\"，【D】price符合文意。【错项排除】【A】benefit与【C】hope都可以由high修饰，表示\"很大的好处/希望\"，但两者为正向语义，与文中\"错置信任的负面后果\"矛盾。【B】debt利用\"信任不当会让人负债累累\"的语义干扰，此处\"债\"主要有两层内涵;金钱方面以及人情方面，而\"错置信任\"时受伤者是自己，故不会欠下人情债;把这种负面影响归结于金钱方面，又过于细化绝对，忽略了其他形式的代价。词汇注释与难句分析①tricky【'rnkr】a.复杂的，需谨慎对待的，微妙的②worthwhile【iws∶0'warl】a.有益的;值得做的语篇分析首段指出\"信任\"的两面性∶意义非凡，也暗含风险。首句以\"AisB\"句型对\"信任\"定性，锁定话题;tricky同时含有difficulttodoordealwith（复杂难解）以及requiringcautionorskil（需慎重或技巧）之意，说明\"信任\"难以捉摸的同时，也暗示我们应谨慎看待\"信任\"，开启全文对这一玄妙之物的介绍。②③句解释\"信任\"因何玄妙。并列对比结构Ontheonehand...Ontheotherhand展示信任的两面性∶其中②句necessaryconditionfor...表明信任的积极面∶对许多有价值之事的达成来说不可或缺。③句表明信任的消极面;carriesahighprice（carry此处指\"承受、承担\"）较payahighprice（付出巨大代价）力度更强，突显错信的代价沉重。Ⅱ④4,whydowetrustatall?②Well,①那么，我们究竞为什么会信任（他人）becauseitfesgood.O5__peopleplacetheirtrustin呢?②嗯，因为这样感觉很好。③当人们对anindividualoraninstitution,theirbrainsrelease某个人或机构寄予信任时，大脑会释放出催oxytocin\",ahormone\"that6pleasurablefeelings产素，即一种能产生愉悦感并触发群居本能andtrigerstheherdinginstinctthatpromptshumans的荷尔蒙，这种本能会促使人类彼此之间融to_7withoneanother.④Scientistshavefoundthat治相处。④科学家发现，受这种荷尔蒙的影exposure8thishormoneputsusinatrusting9:响，我们会生成一种容易相信他人的心态∶InaSwissstudy,,researcherssprayed\"oxytocinintothe在一项瑞士的研究中，研究人员将催产素喷nosesofhalfthesubjects\";thosesubjectswerereadyto入一半受试者的鼻腔中;比起那些吸入其他lendsignificantlyhigheramountsofmoneytostrangers东西的受试者，他们愿意借给陌生人的金钱thanweretheir10whoinhaledsomethingelse.数额明显高出许多。真题精解",
+     "related_sentences": [
+      "en1_2018_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q04",
+     "number": "4",
+     "qtype": "完形",
+     "stem": "第 4 空：选择最合适的词填入空白 [4]",
+     "stem_cn": "",
+     "options": {
+      "A": "Therefore",
+      "B": "Then",
+      "C": "Instead",
+      "D": "Again"
+     },
+     "options_cn": {
+      "A": "因此",
+      "B": "那么，既然如此",
+      "C": "相反;而",
+      "D": "又;再说"
+     },
+     "answer": "B",
+     "explanation": "上下文语义逻辑。【解题思路】上段末指出\"信任不当的弊端\"，本段空格后whydowetrustatall提示前后逻辑为∶既然信任有巨大的潜在风险，那人们为何还彼此信任。Then除表示时间先后以外，还有ifthatisthe2认准淘宝店铺∶光速考研工作室，赠送配套课程situation\"既然那样、那样的话\"的逻辑内涵，【B】正确。【错项排除】【A】Therefore引出前述内容的逻辑结果;其引出的文章内容应是∶（因而）我们应谨慎付出自己的信任;而非发出\"人们为何信任彼此\"的疑问。【C】lnstead用于表示\"（没有做A，）而是做了B\"，【D】Again用于给出能够解释或补充前述内容的事实或观点，但上下文不存在\"取舍\"或\"补充说明\"逻辑。",
+     "related_sentences": [
+      "en1_2018_cloze_s03"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q05",
+     "number": "5",
+     "qtype": "完形",
+     "stem": "第 5 空：选择最合适的词填入空白 [5]",
+     "stem_cn": "",
+     "options": {
+      "A": "Until",
+      "B": "Unless",
+      "C": "Although",
+      "D": "When"
+     },
+     "options_cn": {
+      "A": "直到⋯⋯为止",
+      "B": "除非",
+      "C": "虽然;但是",
+      "D": "在⋯⋯情况下"
+     },
+     "answer": "D",
+     "explanation": "句内语义逻辑。【解题思路】本题考查从句\"人们寄予信任\"与主句\"大脑释放oxytocin\"的逻辑关系。上文已知\"人们信任他人是因为这让他们感觉很好（feelsgood）\"，所以应先确认oxytocin是好是坏，同位语ahormonethat...pleasurablefeelings信息不足，结合第6题的四个选项大方向可知oxytocin与\"愉悦感\"是正向关系，所以空格句逻辑应该是∶付出信任时，就会产生这种快乐荷尔蒙.【D】When表示\"当（某种条件出现）时会（产生某种状况）\"，符合语义逻辑。【错项排除】【A】Until引出主句事件终止的时间，如∶1waiteduntilitgotdark.（意即∶天黑后我就没等了。），但\"人们寄予信任后，大脑就不再释放快乐荷尔蒙\"恰好与上文相悖。【B】Unless在意义上相当于i...not，如∶1can'tleaveherunlessIknowshe'sallright.（意即∶如果我知道她不顺利，我不会离开她。），但\"如果人们不付出信任，大脑就会释放快乐荷尔蒙\"也与文意相悖;【C】Although可表让步，还可表轻微转折，而空格前后不存在让步或转折逻辑。【B】produces引起，造成;产生",
+     "related_sentences": [
+      "en1_2018_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q06",
+     "number": "6",
+     "qtype": "完形",
+     "stem": "第 6 空：选择最合适的词填入空白 [6]",
+     "stem_cn": "",
+     "options": {
+      "A": "selects",
+      "B": "produces",
+      "C": "applies",
+      "D": "maintains"
+     },
+     "options_cn": {
+      "A": "选择，挑选",
+      "B": "正确",
+      "C": "申请;应用;对⋯⋯适用",
+      "D": "保持，维持"
+     },
+     "answer": "B",
+     "explanation": "句内语义十动词辨析。【解题思路】由空格后and可知，_____pleasurableeelings（_____愉悦感）与triggerstheherdinginstinct（激发群居本能）为同向并列关系，表明这一荷尔蒙的积极作用，而\"愉悦感\"与\"群居本能\"性质相同，同属感知意识类内容，故空格处应该与triggers对应，表示\"激发，产生\"等类似语义，【B】produces正确。【错项排除】【A】selects利用\"人会有各种情绪.oxytocin会挑选出愉悦的情绪将其展示出来\"的语义逻辑干扰，但显然\"荷尔蒙\"不可能主观思考并发出\"挑选、精选\"的动作。【C】applies一方面利用\"使⋯⋯起作用\"这层意义干扰，但此时与机械相关，如applythebrakes（踩刹车）;另一方面利用文中出现的to制造applysthtosth（把⋯⋯运/应用于某特定情形中）这一固定搭配干扰，但与文中to搭配的动词为prompts，而非applies，即文中根本不存在（applysth）tosth这一部分，\"荷尔蒙运用愉悦感\"的说法逻辑不完整。【D】maintains表示\"维持现状、保持水平或速度\"，但\"维持愉悦感\"表明\"愉悦感\"本就存在，与\"释放催产素（release..）\"、\"触发群居本能（trigger..）\"所含的\"从无到有\"的逻辑不符。【B】compete竞争，争夺",
+     "related_sentences": [
+      "en1_2018_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q07",
+     "number": "7",
+     "qtype": "完形",
+     "stem": "第 7 空：选择最合适的词填入空白 [7]",
+     "stem_cn": "",
+     "options": {
+      "A": "consult",
+      "B": "compete",
+      "C": "connect",
+      "D": "compare"
+     },
+     "options_cn": {
+      "A": "咨询，请教;商量",
+      "B": "和",
+      "C": "连接;（融洽地）沟通，相处",
+      "D": "比较;与⋯⋯类似"
+     },
+     "answer": "C",
+     "explanation": "句内语义＋动词辨析。【解题思路】空格句指出，群居本能促使人类__彼此。由关键词herdinginstinct可知，群居生活是人类的本能追求，所谓群居本能，自然是人们与生俱来想要与他人联系、沟通，再结合\"人们往往愿意彼此信任\"的上下文语境，判断空格部分只能表示\"群居本能促使人们和谐相处\"的语义，【C】connect符合文意。【错项排除】\"向他人咨询、与他人商议\"属于社会学范畴下的行为，而\"荷尔蒙所催生的人类原始本能（instinct）\"属于生理学范畴，故排除【A】consult。【B】compete和【D】compare表示\"与他人相竞争/比较\"，它们与\"争夺/努力争上游、互相比较\"的环境相关联，而与上下文\"彼此信任、愉悦感、群居本能\"无法构成统一的语义场;不过【D】compare还表示\"与⋯⋯相似\"的含义，如∶Thisschoolcompareswiththebestinthecountry.（这所学校可与全国最好的学校媲美。），但潜含\"能力、水平相当\"之意，仍然具有\"竞争\"的内在逻辑。【B】by被，由;通过;经由",
+     "related_sentences": [
+      "en1_2018_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q08",
+     "number": "8",
+     "qtype": "完形",
+     "stem": "第 8 空：选择最合适的词填入空白 [8]",
+     "stem_cn": "",
+     "options": {
+      "A": "at",
+      "B": "by",
+      "C": "of",
+      "D": "to"
+     },
+     "options_cn": {
+      "A": "在;朝;因为，由于",
+      "B": "和",
+      "C": "⋯⋯的",
+      "D": "向;对于"
+     },
+     "answer": "D",
+     "explanation": "固定搭配。【解题思路】由冒号后内容\"研究人员将oxytocin喷进一半受试者的鼻子中\"可知，受试者在研究中处于这种荷尔蒙环境中，受到该荷尔蒙的作用/影响，exposureto为固定搭配，表示\"暴露于⋯⋯环境，受到⋯⋯的影响\"，故【D】to正确。【错项排除】【A】at表方位、时间或引出原因，可首先排除。【B】by和【C】of两者区别在于，前者引出动作的施动者或达成动作的方式，如toavoidchemicalexposurebyoptingforformula（通过选择配方奶粉来避免化学物质接触/影响），后者引出动作的主体，如theexposureofinformation（信息的披露）;文中空格后宾语为\"荷尔蒙\"，既不是exposure的施动者，也不是其主体，故排除两项。【B】mood情绪;思想倾向;氛围",
+     "related_sentences": [
+      "en1_2018_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q09",
+     "number": "9",
+     "qtype": "完形",
+     "stem": "第 9 空：选择最合适的词填入空白 [9]",
+     "stem_cn": "",
+     "options": {
+      "A": "context",
+      "B": "mood",
+      "C": "period",
+      "D": "circle"
+     },
+     "options_cn": {
+      "A": "环境，背景;语境",
+      "B": "符合文意",
+      "C": "时期;阶段",
+      "D": "圆圈;圈子"
+     },
+     "answer": "B",
+     "explanation": "上下文语义十名词辨析。【解题思路】由上文③句\"oxytocin能产生愉悦感\"可知，文中主要论及该荷尔蒙对\"情绪、思维\"的影响，同时，空格前关键词trusting（容易相信他人的）及冒号后实例（吸入oxytocin的人愿意借给陌生人的金钱数额要更高）中readyto所表达的心理倾向性可知，空格处表示一种思维倾向性，【B】mood符合文意。【错项排除】【A】context意为\"（事情发生的）背景、环境（以更好理解事情）\"，侧重外部环境，而非人们的内部心境。【C】period和【D】circle分别利用\"喷入荷尔蒙后，有一阵子会容易信任他人\"和\"把我们置入一个思维圈内\"的中文思维干扰，但冒号后内容并非\"时间段\"，其次putsbin..period也不合语用逻辑;circle只能表示\"（相同兴趣、职业等的人形成的）圈子\"，同样无法表现内部心境。",
+     "related_sentences": [
+      "en1_2018_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q10",
+     "number": "10",
+     "qtype": "完形",
+     "stem": "第 10 空：选择最合适的词填入空白 [10]",
+     "stem_cn": "",
+     "options": {
+      "A": "counterparts",
+      "B": "substitutes",
+      "C": "colleagues",
+      "D": "supporters"
+     },
+     "options_cn": {
+      "A": "对应的人或物",
+      "B": "替代者/品",
+      "C": "同事，同僚",
+      "D": "支持者，拥护者"
+     },
+     "answer": "A",
+     "explanation": "句内语义＋名词辨析。【解题思路】分号前为实验行为∶研究人员将oxytocin喷进一半受试者的鼻腔中;分号后为结论∶那些（被喷入oxytocin的）受试者比起吸入其他东西的_，愿意借给陌生人更多的钱。很明显，their_应该指\"同一实验中另一半施与条件不同的受试者\"，【A】counterparts符合文意。【错项排除】根据文意可知，实验将受试者分为两部分，分别设定两种不同的条件后对其心态进行比较，因此两部分人不会是\"替代和被替代\"或\"支持与被支持\"的关系，排除【B】substitutes和【D】suporters。【C】colleagues表示\"（在同一个专业岗位的）一起共事的人\"，而文中为实验对象。·词汇注释与难句分析·①oxytocin【pks'tousin】n.催产素⑤prompt【【prompt】v.引起，激起;促使;激励②hormone【'ho∶moun】n.激素，激素⑥spray【sprer】v.喷，喷洒③triger【'trigo】v.引发，激发⑦subject【'sAbd31kt】n.实验对象⑧inhale【in'hell】v.吸入〔空气、烟雾或气体〕④herdinginstinct群居本能，即羊群效应Whenpeopleplacetheirtrustinanindividualoraninstitution,theirbrainsreleaseoxytocin,ahormonethatproducespleasurablefeelingsandtriggerstheherdinginstinctthatpromptshumanstoconnectwithonenotherWhenpeopleplacetheirtrustinanindividualoraninstitution,[thatpromptshumanstoconnectwithoneanother.句子主干∶时间状语从句定语从句theirbrainsreleaseoxytocin,定语同位语谓语宾语主语从句【thatproducespleasurableeelingsandtrigerstheherdinginstinctahormone功能注释∶本句中oxytocin的同位语ahormone包含一个that引导的定语从句，其内又嵌套一个4认准淘宝店铺∶光速考研工作室，赠送配套课程Y[φ.=5=\u0015\u0013\u0014that引导的定语从句修饰theherdinginstinct。，语篇分析第二段介绍\"信任\"发生的生理促因，侧面证实信任潜在的消极面。①②句\"设问（why）—回答（because）\"表明段落要义，atall（究竟）与句首Then一起，强化疑问程度的同时传达不解;既然错信可能承受极大代价，为何人们还会付出信任?由此开启本段对这一心理倾向的原因分析;feelsgood暗示将聚焦\"生理因素\"。③④句详细介绍\"信任→感觉好\"的生理机制。动作链produces...andtriggers...thatpromotes...（pleasurablefeelings呼应②句feelsgood）串起生理相关词汇brain、oxytocin、hormone，明确\"信任\"产生的积极化学循环;信任→大脑产生催产素→催产素激发愉悦感与群居本能（→群居本能会促进彼此间的融洽相处，从而更愿意信任彼此）。④句继而以实验证实上述机制。mood由V＋ing形式的trusting（愿意相信他人是好的/诚实的;轻信的）修饰，形象突显催产素对思维的影响∶助推我们本能地信任他人;readyto...强调主观上的心甘情愿、毫不犹豫。既然\"轻信\"这一倾向与生俱来，则\"错信\"概率很大，为下文论述\"应对办法\"铺垫。Ⅲ①llforus,wealsohaveasixthsensefor①幸运的是，我们也有着对于不可信行为的dishonestythatmay12us.②ACanadianstudy第六感，这也许能够保护我们。②一项加拿大的foundthatchildrenasyoungas14monthscan研究发现，只有14个月大的孩童就能把可信的differentiate13acrediblepersonandadishonest人和不可信的人区别开来。③60名学步童被各one.③Sixtytoddlers\"wereeach14toanadult自引导着与一位手持塑料容器的成人测试员认testerholdingaplasticcontainer.④Thetesterwould识。④测试员会问∶\"这里面是什么呢?\"，然后他ask,\"What'sinhere?\"beforelookingintothecontainer笑着朝容器内部看，同时惊呼道，\"哇!\"⑤随后研sm",
+     "related_sentences": [
+      "en1_2018_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q11",
+     "number": "11",
+     "qtype": "完形",
+     "stem": "第 11 空：选择最合适的词填入空白 [11]",
+     "stem_cn": "",
+     "options": {
+      "A": "Funny",
+      "B": "Lucky",
+      "C": "Odd",
+      "D": "Ironic"
+     },
+     "options_cn": {
+      "A": "有趣的;古怪的;难以解释的",
+      "B": "符合文意",
+      "C": "古怪的，不同寻常的",
+      "D": "讽刺的;具有讽刺意味的"
+     },
+     "answer": "B",
+     "explanation": "上下文语义逻辑＋形容词辨析。【解题思路】空格上文指出oxytocin会让我们容易信任他人，而空格后内容\"针对不可信行为的第六感\"应该是对我们有利的，故空格词应体现从上文的\"暗藏危机\"到本段\"大可不必担心\"的语义反转，同时引出下文对这一乐观情况的详细说明，【B】Lucky符合文意。【错项排除丁【A】Funny和【C】Odd利用\"人既具备信任本能，同时又具备不信任本能，这种情况很奇怪，难以解释\"这一语义干扰，但两词侧重强调\"和惯常情况不同、怪异（unusual）\"，更倾向于\"感叹、疑问或发表看法\"，而非\"试图解释或说明什么\"，如It'sfunnythatthekidsaresoquiet，（真怪，孩子们这么安静。），odd还往往带有\"对情况不满\"的内涵，如Itwasanoddthingtosay.（这话说得很奇怪。），因此两词与\"整段均围绕该内容展开解释说明，并非单纯感叹，且并无不满\"的语境不符。【D】ironic用于引出\"可笑或古怪的内容（amusingorodd）\"，而\"对不可信行为的第六感\"并非作者反对的内容，不含讽刺意味。",
+     "related_sentences": [
+      "en1_2018_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q12",
+     "number": "12",
+     "qtype": "完形",
+     "stem": "第 12 空：选择最合适的词填入空白 [12]",
+     "stem_cn": "",
+     "options": {
+      "A": "monitor",
+      "B": "protect",
+      "C": "surprise",
+      "D": "delight"
+     },
+     "options_cn": {
+      "A": "监视;监听",
+      "B": "保护，防护",
+      "C": "使惊奇，使诧异",
+      "D": "使愉快，使高兴"
+     },
+     "answer": "B",
+     "explanation": "句内语义＋上下文语义。【解题思路】已知\"对不可信行为的第六感\"对我们有利，下文\"14个月大的孩童能区别⋯⋯可信与不可信之人\"进一步印证该内容，再辅以上文\"信任不当会让我们承受高昂代价\"可推知，这种第六感应该能保护我们免受危害，【B】protect符合文意。5认准淘宝店铺∶光速考研工作室，赠送配套课程【错项排除】【A】monitor意为\"认真观察和检查某情况，监视\"，但空格逻辑主语\"第六感\"属于正常感官之外的一种直觉，并不能做出\"监督\"这一有意识的行为。【C】surprise干扰与上题【A】Funny、【C】Odd类似，单纯认为\"我们拥有这种第六感\"让人意外，却忽略上下文用意∶虽然信任暗藏危机，但我们也拥有识别可信VS不可信行为的天然机能。【D】delight根据上段\"信任让我们感觉良好\"设置相近语义干扰，但全段并非分析我们对这种第六感\"非常欣喜\"的主观感受，而是侧重解释其对不良情况的积极防范作用。",
+     "related_sentences": [
+      "en1_2018_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q13",
+     "number": "13",
+     "qtype": "完形",
+     "stem": "第 13 空：选择最合适的词填入空白 [13]",
+     "stem_cn": "",
+     "options": {
+      "A": "between",
+      "B": "within",
+      "C": "toward",
+      "D": "over"
+     },
+     "options_cn": {
+      "A": "在⋯⋯中间",
+      "B": "在⋯⋯之内",
+      "C": "朝，向;接近",
+      "D": "在⋯⋯上面;超过"
+     },
+     "answer": "A",
+     "explanation": "动词短语搭配。【解题思路】由空格前关键词differentiate（区分，区别）及空格后acrediblepersonandadishonestone（可信与不可信的人）可知，文意意在说明孩童可以区别开这两类人，differentiatebetweenAandB为固定搭配，表示\"将A和B区分开来\"，【A】between符合文意。【错项排除】【B】within可以接sb表示\"在一群人里面（insideagroupofpeople）\"，同时sb必须为复数形式，而sb在文中为acrediblepersonandadishonestone。【C】toward表示\"朝向某人/物\"，【D】over其后为sb时意为\"超过某人\"或\"关于某人\"，均不能与differentiate构成合理的语义逻辑。【B】added添加;增加",
+     "related_sentences": [
+      "en1_2018_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q14",
+     "number": "14",
+     "qtype": "完形",
+     "stem": "第 14 空：选择最合适的词填入空白 [14]",
+     "stem_cn": "",
+     "options": {
+      "A": "transferred",
+      "B": "added",
+      "C": "introduced",
+      "D": "entrusted"
+     },
+     "options_cn": {
+      "A": "转移，调用;移交",
+      "B": "常用于～A to B（把 A 添加入 B中）结构中",
+      "C": "介绍，引见;引进",
+      "D": "委托（照料），交付（处理）"
+     },
+     "answer": "C",
+     "explanation": "上下文语义＋动词辨析。【解题思路】空格上文指出一项研究发现∶14个月大的孩童就能区分可信与不可信之人。空格句具体介绍研究过程，60个学步儿童在此之前应该从未与成人测试员有过接触，这样才不会代入已有的认知，使实验结果失效。因而文意只能是∶受试儿童被介绍给测试员认识，【C】introduced正确。【错项排除】【A】transferred表示\"转移（地方或感情）\"或\"移交权力/责任/控制权（给某人）\"，但实验并不涉及\"位置/感情的转移或权力的移交\"。【B】added常用于～AtoB（把A添加入B中）结构中，文中A=儿童，B=成人测试者，\"将儿童加到测试员中\"显然不会是实验内容。【D】entrusted利用与本文主题词trust形似设置干扰，但\"将孩童委托给成人测试员照料\"脱离了实验的目的，即\"测试孩童对于不可信行为的第六感\"。",
+     "related_sentences": [
+      "en1_2018_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q15",
+     "number": "15",
+     "qtype": "完形",
+     "stem": "第 15 空：选择最合适的词填入空白 [15]",
+     "stem_cn": "",
+     "options": {
+      "A": "out",
+      "B": "back",
+      "C": "around",
+      "D": "inside"
+     },
+     "options_cn": {
+      "A": "向外，往外",
+      "B": "向后",
+      "C": "围绕",
+      "D": "往里"
+     },
+     "answer": "D",
+     "explanation": "上下文语义。【解题思路】由空格上文④句What'sinhere（这里面是什么）可推知，测试员问的是\"容器内部有什么东西\"，故受试者应该是往容器内部看，才能发现玩具或其他东西，【D】inside符合文意。【错项排除】【A】（look）out表示\"朝外看\"或\"注意，当心\";【B】（look）back表示\"回顾，回头看\";【C】（look）around表示\"环顾，四下察看\"，三项均不符合实验的场景。【B】proved证明，证实",
+     "related_sentences": [
+      "en1_2018_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q16",
+     "number": "16",
+     "qtype": "完形",
+     "stem": "第 16 空：选择最合适的词填入空白 [16]",
+     "stem_cn": "",
+     "options": {
+      "A": "discovered",
+      "B": "proved",
+      "C": "insisted",
+      "D": "remembered"
+     },
+     "options_cn": {
+      "A": "发现，发觉",
+      "B": "与",
+      "C": "坚称，坚决认为",
+      "D": "记得;想起，回忆起"
+     },
+     "answer": "A",
+     "explanation": "句内语义逻辑。【解题思路】由空格句并列结构Halfofthem...theotherhal...可知，本句意在对比两组受试者的不同情况，前半句指出\"其中一半人发现了玩具\"，由此推知空格所在半句应该说明另外一半人的发现，故空格处语义应该与found接近，【A】discovered符合文意。【错项排除】【B】proved与【D】remembered言外之意是\"孩子们已经知道容器内并无东西\"，与\"他们事先并不知晓容器内为何物\"的文意相悖，同时也偏离实验目的。【【C】insisted表示\"坚决认为某事为真\"，但\"坚决认为容器是空的\"与上文\"测试员朝容器里看同时惊呼\"给受试者营造\"容器内有东西\"的氛围不符。【B】wronged不公正（不诚实）地对待，冤枉",
+     "related_sentences": [
+      "en1_2018_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q17",
+     "number": "17",
+     "qtype": "完形",
+     "stem": "第 17 空：选择最合适的词填入空白 [17]",
+     "stem_cn": "",
+     "options": {
+      "A": "betrayed",
+      "B": "wronged",
+      "C": "fooled",
+      "D": "mocked"
+     },
+     "options_cn": {
+      "A": "辜负;背叛",
+      "B": "表\"欺骗\"时，侧重表示\"道德/法律方面的欺骗行径\"，与",
+      "C": "开玩笑，戏弄",
+      "D": "嘲笑;使希望落空 ，欺骗"
+     },
+     "answer": "C",
+     "explanation": "上下文语义＋动词辨析。【解题思路7由上文\"测试员朝容器内部看并惊呼一声——另—半受试者发现容器是空的\"及下文关键信息\"没有被测试员欺骗的孩子（notbeentricked）\"可推知，测试员是通过花招让孩子们相信容器内有东西，而他们应该是意识到自己被测试员\"欺骗、愚弄\"了，【C】fooled与tricked语义接近，符合文意。6认准淘宝店铺∶光速考研工作室，赠送配套课程【错项排除】其余三项均涉及\"欺骗\"之意，但语义色彩不同。【A】betrayed和【D】mocked分别利用\"让信任你的人受伤/失望\"以及\"使希望/预期落空\"的含义干扰，但前者相对于\"忠贞的信仰、坚决的信念\"而说，含有\"端正的\"批判意味，后者是\"借助嘲讽受伤者的信任\"来侧面批判犯事者，如Hebetrayed/mockedmytrustoverandoveragain.（他一次又一次辜负了我的信任。betrayed侧重\"他可恨\"，mocked侧重\"我可悲\"。）;实验中孩童们虽可能一开始倾向于相信测试员，但这种信任属于本能，并非\"坚决的信仰/信任\";所以两项均用词过大。【B】wronged表\"欺骗\"时，侧重表示\"道德/法律方面的欺骗行径\"，与文中科学实验的背景不符。词汇注释与难句分析①sixthsense第六感，直觉⑤toddler【'todlo】n.学步的儿童⑥container【kon'teino】n.容器②dishonesty【dis'onst】n，不诚实的行为，欺骗⑦exclaim【ik'sklem】v.呼喊，惊叫③differentiate【dufo'renjient】v.辨别，区别④credible【'kredibol】a.可信的，可靠的语篇分析第三段介绍人们的生理保护机制∶拥有对不可信行为的第六感。首句Luckyforus（幸好）笔锋一转，即刻化解上文所述信任的潜在风险。asixthsensefordishonesty表明该保护机制与\"轻信\"一样同属原始本能，故而肯定其防范功能。②至⑥句以具体研究证实首句。②句概述研究结论。candifferentiatebetween...and...串起对比结构credibleVSdishonest，明示上述第六感的具体内容∶辨别可信与不可信行为;asyoungas14months一则强调这种能力与生俱来;二则利用孩子不会说谎的天性，最大限度保证实验的可靠性。③至⑥句介绍研究内容。What'sinhere?、andexclaiming，\"Wow!\"以及对比结构foundatoyVSdiscovered...wasempty间接表明实验方式及内容∶分别诱引孩子们朝容器内部看（其中一半容器按照预期放入玩具，另一半则空置）;对比他们的反应来测试其对可信VS不可信行为的辨别能力;破折号后realized..hadfooledthem印证第六感∶现实违背预期，即判定测试者\"行骗\"。Ⅳ④Amongthechildrenwhohadnotbeentricked\",the①在那些未受过欺骗的孩子中，天部majoritywere18tocooperatewiththetesterinlearninga分人乐意配合测试员去学习一项新技能，newskill,demonstratingthattheytrustedhisleadership.②这表明他们信任他的指挥。②相比之下，19,onlyfiveofthe30childrenpairedwiththe\"20与不可靠的测试员组对的30名孩子中，testerparticipatedinafollow-upactivity.只有5.名参与了后续活动。\"真题精解【B】willing乐意的;心甘情愿的",
+     "related_sentences": [
+      "en1_2018_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q18",
+     "number": "18",
+     "qtype": "完形",
+     "stem": "第 18 空：选择最合适的词填入空白 [18]",
+     "stem_cn": "",
+     "options": {
+      "A": "forced",
+      "B": "willing",
+      "C": "hesitant",
+      "D": "entitled"
+     },
+     "options_cn": {
+      "A": "勉强的;被迫的",
+      "B": "符合文意",
+      "C": "犹豫的;不情愿的",
+      "D": "有权做⋯⋯的，有资格的"
+     },
+     "answer": "B",
+     "explanation": "句内语义＋形容词辨析。【解题思路】空格后demonstratingthattheytrustedhisleadership表明这些没有被欺骗过的孩子信任测试员的指挥，既然如此，他们肯定\"愿意配合测试员的下一步行动\"，【B】willing符合文意。【错项排除】【A】forced表示\"违背个人意愿、被迫做某事\"，【C】hesitant表示\"因感到不确定、尴尬或不情愿等而迟疑不决的\"，两项均与\"信任测试员指挥\"这一前提相悖。【D】entitled表示\"被赋予一种官方、正式的权利或资格（begiventheofficialrighttodosth）\"，如Full-timeemployeesareentitledtoreceivehealthinsurance.（全职雇员都有资格享受医疗保险。），文中受试者为孩童，实验以游戏方式进行，无关乎权利这一概念，且\"被外界赋予的资格\"不足以说明\"孩子信任测试员指挥\"。",
+     "related_sentences": [
+      "en1_2018_cloze_s12"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q19",
+     "number": "19",
+     "qtype": "完形",
+     "stem": "第 19 空：选择最合适的词填入空白 [19]",
+     "stem_cn": "",
+     "options": {
+      "A": "In contrast",
+      "B": "As a result",
+      "C": "On the whole",
+      "D": "For instance"
+     },
+     "options_cn": {
+      "A": "相比之下",
+      "B": "作为结果;因此",
+      "C": "总体而言",
+      "D": "例如"
+     },
+     "answer": "A",
+     "explanation": "上下文语义逻辑十介词短语辨析。【解题思路】上文\"大部分没有被欺骗过的孩子乐意配合测试员\"与空格句\"30个孩子中只有5个参与了后续活动\"存在明显语义对比（themajorityVSonlyfive），也与\"两组孩子分别面对可信VS不可信行为，反应应该不同\"的实验预期相符，【A】Incontrast用于引出与前述内容非常不同的情形，符合文意。【错项排除】【B】Asaresult引出结果，【C】Onthewhole用于\"引出笼统性的看法（usedtosaythatsthisgenerallytrue）\"，而非对细节的说明，如∶Onthewhole，pcoplemisstheopportunitytoenjoyleisure.（大体上说，人们都渴望享受休闲时光的机会。），【D】Forinstance用于引出事例;而文中空格后并非上文内容的结果、大体总结或事例说明。【B】incapable无能力的;软弱的",
+     "related_sentences": [
+      "en1_2018_cloze_s13"
+     ]
+    },
+    {
+     "id": "en1_2018_cloze_q20",
+     "number": "20",
+     "qtype": "完形",
+     "stem": "第 20 空：选择最合适的词填入空白 [20]",
+     "stem_cn": "",
+     "options": {
+      "A": "inflexible",
+      "B": "incapable",
+      "C": "unreliable",
+      "D": "unsuitable"
+     },
+     "options_cn": {
+      "A": "顽固的，僵化的",
+      "B": "表示\"无能力做某事",
+      "C": "不可靠的;不可信赖的",
+      "D": "不合适的;不适宜的"
+     },
+     "answer": "C",
+     "explanation": "上下文语义＋形容词辨析。【解题思路】空格处所述的30个孩子经历了\"被骗\"，与上句\"未被欺骗过的孩子\"为两组受试对象，再辅以后者\"信任其测试员的指挥\"可推知，与\"被骗孩子\"组对的测试员应该是\"不可信、不可靠的\"，同时也与上段②句内容\"学步的儿童就能区分可信与不可信之人\"吻合，【C】unreliable正确。【错项排除】【A】inflexible表示\"态度、计划等顽固的、僵化的\";【B】incapable表示\"无能力做某事的\"或\"（某人）软弱、愚蠢的\";【D】unsuitable表示\"对某人、目的或情形来说不合适的;不适宜的\";三项均脱离文中实验内容，偏离全文主旨。·词汇注释与难句分析②follow~-up'olo'Ap】a.后续的①trick【trk】v.欺骗，哄骗，诱骗.语篇分析.第四段介绍研究后续，补充说明第六感如何发挥保护作用。①句Amongthechildrenwho..与②句Incontrast（相比之下）一暗一明两条线索，表示本段将分别对两组孩子的后续情况进行说明。两句中包含几处对比∶notbeentrickedVSpairedwiththe\"unreliable\"tester对比实验两组不同孩童∶未受骗者VS被骗者、themajoritywerewillingVSonlyfiveofthe30..participated对比两组孩童行为∶大部分欣然配合测试员VS仅有少数配合;willing（意为fairlyhappyaboutdoingsthandwilldoitiftheyareaskedorrequiredtodoit）体现未受骗孩童对测试员后续活动的欣然接受;demonstratingthat引出其深层动机∶信任;而后一组大部分拒绝再与测试员有接触，进一步肯定第六感的防范作用。第二部分阅读理解PartA知识补充原文外教朗读Text1机器人VS中产阶级兴、文章总体分析本文选自Bloomberg2015年5月12日社论文章∶RobotsVersustheMiddleClass（机器人VS中产阶级）。作者指出，自动化虽最终会惠及所有劳动者，但在此之前会对中产阶级造成巨大负面影响。行文脉络∶提出并论证问题\"中产阶级面临自动化的恼人挑战\"（第一至三段）——提出建议解决问题\"提供8认准淘宝店铺∶光速考研工作室，赠送配套课程",
+     "related_sentences": [
+      "en1_2018_cloze_s13"
+     ]
+    }
+   ]
   }
  ]
 }

@@ -1938,6 +1938,588 @@
    ],
    "sentence_count": 15,
    "question_count": 5
+  },
+  {
+   "id": "en1_2016_cloze",
+   "type": "cloze",
+   "title": "",
+   "topic": "",
+   "source": "Section I Use of English",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "In Cambodia, the choice of a spouse is a complex one for the young male.",
+     "id": "en1_2016_cloze_s01",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "It may involve not only his parents and his friends, [1] those of the young woman, but also a matchmaker.",
+     "id": "en1_2016_cloze_s02",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "A young man can [2] a likely spouse on his own and then ask his parents to [3] the marriage negotiations, or the young man’s parents may make the choice of a spouse, giving the child little to say in the selection.",
+     "id": "en1_2016_cloze_s03",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "[4] a girl may veto the spouse her parents have chosen.",
+     "id": "en1_2016_cloze_s04",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "[5] a spouse has been selected, each family investigates the other to make sure its child is marrying [6] a good family.",
+     "id": "en1_2016_cloze_s05",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "The traditional wedding is a long and colorful affair.",
+     "id": "en1_2016_cloze_s06",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "Formerly it lasted three days, [7] by the 1980s it more commonly lasted a day and half.",
+     "id": "en1_2016_cloze_s07",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "Buddhist priests offer a short sermon and [8] prayers of blessing.",
+     "id": "en1_2016_cloze_s08",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "Parts of the ceremony involve ritual hair cutting, [9] cotton threads soaked in holy water around the bride’s and groom’s wrists, and [10] a candle around a circle of happily married and respected couples to bless the [11] Newlyweds traditionally move in with the wife’s parents and may [12] with them up to a year, [13] they can build a new house nearby.",
+     "id": "en1_2016_cloze_s09",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Divorce is legal and easy to [14] but not common.",
+     "id": "en1_2016_cloze_s10",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Divorced persons are [15] with some disapproval.",
+     "id": "en1_2016_cloze_s11",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Each spouse retains [16] property he or she [17] into the marriage, and jointly-acquired property is [18] equally.",
+     "id": "en1_2016_cloze_s12",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Divorced persons may remarry, but a gender prejudice [19] up: The divorced male doesn’t have a waiting period before he can remarry [20] the woman must wait ten months.",
+     "id": "en1_2016_cloze_s13",
+     "cn": "",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "id": "en1_2016_cloze_q01",
+     "number": "1",
+     "qtype": "完形",
+     "stem": "第 1 空：选择最合适的词填入空白 [1]",
+     "stem_cn": "",
+     "options": {
+      "A": "as well as",
+      "B": "by way of",
+      "C": "on behalf of",
+      "D": "with regard to"
+     },
+     "options_cn": {
+      "A": "以及;除⋯⋯之外;也",
+      "B": "表示\"路线经过、经由某地\"或\"作为⋯⋯的形式/手段;为了\"，其后为某地点或某事",
+      "C": "代表",
+      "D": "关于"
+     },
+     "answer": "A",
+     "explanation": "句内逻辑。【解题思路】空格所在句出现表并列关系的词组notonly...butalso...，且空格前后出现多个人物名词hisparentsandhisfriends/thoseoftheyoungwoman（those回指parentsandfriends）/amatchmaker，结合首句（主题句）\"在柬埔寨，男性择偶很复杂\"可以推知，②句意在说明男性择偶事宜涉及多方人物，不仅涉及男方亲友、女方亲友，还涉及媒人，显然空格处应填入表并列关系的词语，【A】正确。【错项排除】【B】表示\"路线经过、经由某地\"或\"作为⋯⋯的形式/手段;为了\"，其后为某地点或某事物，不能体现人物间关系，且\"男方亲友经由/通过女方亲友作为纽带来向女方提亲\"或\"男方亲友为了女方亲友去提亲\"与后文matchmaker存在语义重复，提亲一般是媒人的职责;【C】表示\"代表（或代替）某人\"，首先男方亲友无法代表女方亲友，其次，能代表男女一方向另一方提亲的一般是媒人;【D】一般多用于对某事物做具体说明，不能体现人物间关系，故排除。1认准淘宝店铺∶光速考研工作室，赠送配套课程【B】providefor供养，抚养",
+     "related_sentences": [
+      "en1_2016_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q02",
+     "number": "2",
+     "qtype": "完形",
+     "stem": "第 2 空：选择最合适的词填入空白 [2]",
+     "stem_cn": "",
+     "options": {
+      "A": "adapt to",
+      "B": "provide for",
+      "C": "compete with",
+      "D": "decide on"
+     },
+     "options_cn": {
+      "A": "适应",
+      "B": "表示\"供养，抚养，为某人提供生活所需\"，由空格后\"男方父母替儿子选",
+      "C": "与⋯⋯竞争",
+      "D": "决定;选定"
+     },
+     "answer": "D",
+     "explanation": "句内语义＋动词词组语义辨析。【解题思路】空格所在的③句实为由并列连词or连接的两个分句，or后面的句子从男方父母的角度（theyoungman'sparents）指出父母替孩子选择配偶（maymakethechoiceofaspouse），or前面的句子则从男方本人角度（Ayoungman）指出男方自主（onhisown）选择配偶，因此不难推知_____alikelyspouse与makethechoiceofaspouse近义，空格处应表达\"选择\"的语义，【D】意为tochoosesthfromanumberofpossibilities，符合文意。【错项排除】【A】表示\"改变自身行为以更成功地应对、适应新情况\"，其后为sth，此处空格后为alikelyspouse，显然搭配不当，同时\"年轻男性适应一位合适的配偶\"无法体现年轻男性择偶的主动性，与原文onhisown的语义不符;【B】表示\"供养，抚养，为某人提供生活所需\"，由空格后\"男方父母替儿子选择配偶\"可知，本句意在说明配偶的选择，不涉及\"配偶的供养\"问题;【C】表达的是一种竞争、对抗关系，\"年轻男性与配偶互相竞争、对抗\"显然不符合文意。【B】close终止，结束",
+     "related_sentences": [
+      "en1_2016_cloze_s03"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q03",
+     "number": "3",
+     "qtype": "完形",
+     "stem": "第 3 空：选择最合适的词填入空白 [3]",
+     "stem_cn": "",
+     "options": {
+      "A": "renew",
+      "B": "close",
+      "C": "arrange",
+      "D": "postpone"
+     },
+     "options_cn": {
+      "A": "重新开始;继续",
+      "B": "和",
+      "C": "安排，筹划，准备",
+      "D": "延迟，推迟"
+     },
+     "answer": "C",
+     "explanation": "句内语义十动词语义辨析。【解题思路】空格所在句中andthen表动作或行为顺接，其前指出男性自主选择对象，之后要求他的父母_提亲。依据顺滑逻辑原则，男性选好对象后自然会要求父母安排提亲，让美好的姻缘转变为婚姻。【C】arrange符合文意。【错项排除】【A】指某事中止之后再重新开始，但提亲事宜在此之前并未发生过，故\"重新开始\"无从谈起;【B】和【D】（结束/延迟提亲）反向干扰，既然年轻男性已经选定配偶，必然不会终止或推迟姻缘，这与其期盼娶到心仪之人的心情显然相悖。",
+     "related_sentences": [
+      "en1_2016_cloze_s03"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q04",
+     "number": "4",
+     "qtype": "完形",
+     "stem": "第 4 空：选择最合适的词填入空白 [4]",
+     "stem_cn": "",
+     "options": {
+      "A": "In theory",
+      "B": "In time",
+      "C": "Above all",
+      "D": "For example"
+     },
+     "options_cn": {
+      "A": "理论上",
+      "B": "及时;最后，终于",
+      "C": "最重要的是",
+      "D": "例如"
+     },
+     "answer": "A",
+     "explanation": "句际逻辑关系。【解题思路】空格上文③句指出，倘若年轻男性的父母为其选择配偶，那么年轻男性对于这一选择过程基本没有发言权。空格句指出，，女孩可以否决父母为其选择的配偶。两句间为反向对比关系或同向并列关系，即男性没有发言权VS女性有否决权或男性女性都没有发言权。【A】Intheory表示\"某事在理论上成立，但现实情况可能不会发生\"，表示女孩否决父母为其选择的配偶的可能性只能在理论上成立，现实中的可能性很小，恰与上句共同表明男女双方对父母所选择的配偶基本没有否决权，暗含父母包办婚姻的可能性，符合文意。【错项排除】【B】表示事情的发展结果或\"及时做某事\"，均强调时间逻辑，但\"女孩否决父母为其选择的配偶\"与上文\"年轻男性在择偶中的发言权\"不存在时间关系;【C】指出所述内容中最重要或特别的一点，但空格句与上文为同向并列关系，不存在语义上的递进或强调;【D】表例证关系，本句年轻女性的选择权与上文年轻男性对配偶的选择显然无法构成例证关系。【B】Lest以免;唯恐",
+     "related_sentences": [
+      "en1_2016_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q05",
+     "number": "5",
+     "qtype": "完形",
+     "stem": "第 5 空：选择最合适的词填入空白 [5]",
+     "stem_cn": "",
+     "options": {
+      "A": "Although",
+      "B": "Lest",
+      "C": "After",
+      "D": "Unless"
+     },
+     "options_cn": {
+      "A": "尽管;不过",
+      "B": "或表目的",
+      "C": "在⋯⋯之后",
+      "D": "除非"
+     },
+     "answer": "C",
+     "explanation": "上下文逻辑。【解题思路】空格后指出，__配偶已经被选定，双方家庭相互调查，由空格句语义以及动词时态的过渡hasbeenselected→investigates可知，前后两种行为是程序性的先后关系∶配偶选定之后，双方家庭开始相互调查家庭背景，【C】After符合这一顺承逻辑。【错项排除】【A】通常表让步，还可对前述内容做出评价，表语义的轻微转折，但语义重点仍落于主2认准淘宝店铺∶光速考研工作室，赠送配套课程句;此处\"配偶已经选定\"与\"双方开始调查家庭背景\"为顺承逻辑，而非让步或转折逻辑;【B】或表目的，引出竭力避免或不希望发生的情况;或用于beafraid/anxious等情感词之后，引出产生某种情感的原因;【D】表条件，引出\"主句所述情形不会发生或不真实\"的唯一条件，但\"选定配偶\"是\"双方家庭开始调查家庭背景\"的前提，\"以免/除非配偶已经被选定，双方家庭开始调查家庭背景\"均不合逻辑。【B】into进入，到⋯⋯里面",
+     "related_sentences": [
+      "en1_2016_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q06",
+     "number": "6",
+     "qtype": "完形",
+     "stem": "第 6 空：选择最合适的词填入空白 [6]",
+     "stem_cn": "",
+     "options": {
+      "A": "within",
+      "B": "into",
+      "C": "from",
+      "D": "through"
+     },
+     "options_cn": {
+      "A": "在⋯⋯之内",
+      "B": "可与 marry 构成固定搭配，表示\"通过婚姻而进入（配偶所属的家庭或团体）\"，符合文意",
+      "C": "由⋯",
+      "D": "穿过;经过;因为;凭借"
+     },
+     "answer": "B",
+     "explanation": "固定搭配。【解题思路】空格句指出双方家庭相互调查家庭背景的目的（tomakesure）;确保他们的孩子嫁（娶）一个好家庭。空格词与marry构成合理搭配表明itschild与agoodfamily的关系，由惯常认知\"结婚不仅关乎两个人，更关乎两个家庭\"可知，结婚应是\"一方进入对方家庭\"的过程，选项中只有【B】into可与marry构成固定搭配，表示\"通过婚姻而进入（配偶所属的家庭或团体）\"，符合文意。【错项排除】【A】表明一种已经处于事物内部的状态，\"在一个好家庭内结婚\"表明的是内部结合，既然是内部结合，那么\"调查对方家庭背景\"也就没有必要，与原文相悖;【C】干扰源于命题人意图用\"⋯⋯确保子女嫁或娶了来自好人家的孩子\"来迷惑考生，若from能填入空格，则空格句正确表述应为tomakesureitschildismarryingaspousefromagoodfamily，而原文空格为agoodfamily，并无关键词aspouse;【D】表示空间上的\"穿过，通过\"或过程、原因、途径等，均不合文意。∶词汇注释与难句分析①spouse【spaoz】n.配偶③matchmaker【'm?t.【.meko】n.媒人②complex【'kompleks】a.复杂的④negotiation【nigouf'er【on】n.谈判，协商.........................Ayoungmancandecideonalikelyspouseonhisownandthenaskhisparentstoarrangethemarriagenegotiations,ortheyoungman'sparentsmaymakethechoiceofaspouse,givingthechildlittletosayinthesection.结构切分∶?;分向1Ayoungmancandecideonalikelyspouseonhisownandthen连词谓语1主语状语宾语1askhisparentstoarrangethemarriagenegotiations,谓语2OraspOuse,分向2theyoungman'sparentsmaymakethechoiceof连词谓语主语宾语givingthechillittletosayintheselection.伴随状语功能注释∶or连接两个并列分句，以男方角度介绍两种择偶方式。分句2中givingthechildlittletosayintheselection为伴随状语，修饰分句2整句话内容。\"语篇分析首段介绍柬埔寨的男女择偶问题。①句开门见山，直陈观点∶柬埔寨男子择偶是个复杂问题。②一⑤句详述观点，介绍\"复杂\"之处。②句从择偶所涉及的对象广泛角度说明复杂之处。并列递进结构notonly...butalso与aswellas一起将所涉三方（男方亲友、女方亲友、媒人）串连起来。③④句从择偶程序角度说明复杂之处。③句介绍男性选择配偶的两种程序;一、年轻男子选定中意配偶，随后请求父母安排提亲;二、父母做主选择，孩子几乎无发言权。从表象看来，男性有自主选择权，但当父母做主安排时，其话语权几乎为零，侧面反映出年轻男性择偶程序的复杂之处。④句介绍女性的情况∶理论上女孩对于3认准淘宝店铺∶光速考研工作室，赠送配套课程父母为其选择的配偶具有否决权，暗示在实践上年轻女性难逃包办婚姻的命运。Intheory...mayveto...呼应③句givingthechildlitletosayintheselection，暗示男女双方均难以违抗父母之命。⑤句从家庭背景调查角度说明复杂之处。eachfamily表明男女双方家庭对子女择偶的同等重视，tomakesure...引出双方家庭背景调查的目的∶确保对方家庭为好人家。Ⅱ④Thetraditionalweddingisalongandcolorful①传统婚礼是一件耗时较长且又饶有affair\".②Formerlyitlastedthreedays,7__bythe趣味的事情。②以前婚礼持续三天，但是1980sitmorecommonlylastedadayandahalf.③到了20世纪80年代，更常见的是持续一天Buddhistpriestsofferashortsermonand8_prayers\"半。③佛教僧侣会进行简短的布道并吟诵ofblessing4.④Partsoftheceremonyinvolveritualhair祝祷词。④典礼的组成部分包括理发仪cutting,_9_cottonthreadssoake",
+     "related_sentences": [
+      "en1_2016_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q07",
+     "number": "7",
+     "qtype": "完形",
+     "stem": "第 7 空：选择最合适的词填入空白 [7]",
+     "stem_cn": "",
+     "options": {
+      "A": "since",
+      "B": "or",
+      "C": "so",
+      "D": "but"
+     },
+     "options_cn": {
+      "A": "自从⋯⋯以来;因为，由于",
+      "B": "或表示并列选择关系，或用于说明原因，但原文并非意在说明\"婚礼可能会持",
+      "C": "因此，所以",
+      "D": "但是"
+     },
+     "answer": "D",
+     "explanation": "句内语义逻辑。【解题思路】空格句指出，以前的婚礼持续三天，___到了20世纪80年代婚礼持续的时间为一天半。由formerlyVSbythe1980s和lastedthreedaysVSlastedadayandahalf所体现的不同时代婚礼持续时间的对比，可判断两句为并列句，两句间为对比转折关系，【D】but符合文意。【错项排除】【A】表时间或原因，【C】表结果，二者引导的分句间均为主从关系（主句一从句），而非并列关系（分句一分句），且原文已包含时间副词，时间逻辑不成立;空格后内容也不是空格前内容的原因或结果，排除此两项。【B】或表示并列选择关系，或用于说明原因，但原文并非意在说明\"婚礼可能会持续三天或者一天半/婚礼可能会持续三天，否则就持续一天半\"，而是说明不同时期婚礼持续时间的长短，故排除。【B】recite背诵，吟诵",
+     "related_sentences": [
+      "en1_2016_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q08",
+     "number": "8",
+     "qtype": "完形",
+     "stem": "第 8 空：选择最合适的词填入空白 [8]",
+     "stem_cn": "",
+     "options": {
+      "A": "test",
+      "B": "recite",
+      "C": "copy",
+      "D": "create"
+     },
+     "options_cn": {
+      "A": "测试;忠诚宣誓",
+      "B": "与 prayers of blessing搭配，意为\"吟诵祝祷词\"，既搭配合理，又能渲染婚礼的",
+      "C": "抄写;仿造",
+      "D": "创作"
+     },
+     "answer": "B",
+     "explanation": "句内语义十动词辨析。【解题思路】空格句指出，僧侣进行简短的布道，然后祝祷词。由空格前and可推知，prayersofblessing与\"进行简短的布道（offerashortsermon）\"语义并列，均表示婚礼上佛教僧侣们所进行的宗教仪式，【B】recite与prayersofblessing搭配，意为\"吟诵祝祷词\"，既搭配合理，又能渲染婚礼的宗教仪式感，符合文意。【错项排除】【A】意为\"测试\"时显然与prayersofblessing搭配不当，但其还有一个僻意\"忠诚宣誓\"，在婚礼典礼上需要进行宣誓的只有新郎新娘，而僧侣无需宣誓，且test表示此意时为名词，用于此处词性不符;【C】若取\"抄写\"之意，\"抄写祝祷词\"不符合传统婚礼的仪式，若取\"仿造\"之意，则\"仿造祝祷词\"明显欠缺严肃性和正式性，与婚礼不符;按照常识，祝祷词一般都是约定俗成、固定成章的，在婚礼仪式当场诵读出来便可，无需在婚礼现场进行创作，因此【D】也不符合文意。【B】piling堆放",
+     "related_sentences": [
+      "en1_2016_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q09",
+     "number": "9",
+     "qtype": "完形",
+     "stem": "第 9 空：选择最合适的词填入空白 [9]",
+     "stem_cn": "",
+     "options": {
+      "A": "folding",
+      "B": "piling",
+      "C": "wrapping",
+      "D": "tying"
+     },
+     "options_cn": {
+      "A": "折叠，对折",
+      "B": "表示\"将事物堆放、叠放在一起\"",
+      "C": "包，裹",
+      "D": "系，拴"
+     },
+     "answer": "D",
+     "explanation": "动词辨析。4认准淘宝店铺∶光速考研工作室，赠送配套课程【解题思路】空格后关键词cottonthreads...aroundsb'swrists（棉线___环绕某人的手腕）提示本句意在描写\"将棉线系在/缠绕在新郎和新娘的手腕上\"这一行为，选项中能够与cottonthreads（棉线）搭配的只有【D】tying，其动词原形为tie，意为\"系上（绳子等）\"。另外，根据常识，系棉线这一仪式有着新人缔结连理，永结同心的寓意，符合本段论述传统婚俗的语境。【错项排除】【A】通常用于纸、织物等可以折叠的事物，【B】表示\"将事物堆放、叠放在一起\"，【C】表示\"用纸或布等包裹某物，三项均不能与cottonthreads搭配。",
+     "related_sentences": [
+      "en1_2016_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q10",
+     "number": "10",
+     "qtype": "完形",
+     "stem": "第 10 空：选择最合适的词填入空白 [10]",
+     "stem_cn": "",
+     "options": {
+      "A": "passing",
+      "B": "lighting",
+      "C": "hiding",
+      "D": "serving"
+     },
+     "options_cn": {
+      "A": "传递",
+      "B": "点燃",
+      "C": "隐藏",
+      "D": "提供"
+     },
+     "answer": "A",
+     "explanation": "动词搭配。【解题思路】and表明空格后内容继续介绍婚礼习俗。该分句中的关键词acandle/acircleof...couples/bless（一支蜡烛、一圈人、表达祝福）提示考生空格词与acandle以及后文的aroundacircle构成合理搭配，同时符合\"在一圈人中用一支蜡烛做某种事情来祝福新人\"的语义场景。【A】passing符合文意，passtharound表示\"传递、传送\"。同时\"在一圈婚姻美满且受人尊敬的夫妇中传递蜡烛\"这一仪式有着将幸福美好的婚姻传递给新人的寓意，与本文语义契合。【错项排除】【B】虽然可以与acandle搭配表示\"点燃蜡烛\"，但lightacandlearoundacircleof...并非表示\"一圈人围绕着一支点燃的蜡烛\"，而是表示\"在一圈人周围点燃一支蜡烛\"，这显然是无法实现的事情，不合逻辑。【C】表示\"隐藏，掩盖\"时常用于hidesb/sthin/under/behindetc结构中，但是\"在一圈人中藏蜡烛\"的行为在结婚典礼的背景中，不能传达较为明确的祝福意味，故排除。【D】表示\"（向某地或某群体）供应，提供\"，常用于providesb/sth（withsth）结构中，此处\"向一圈婚姻美满且受尊敬的夫妇\"只提供\"一支蜡烛（acandle）\"首先不合常理，同时也搭配不当，正确用法应为serveacircleof...withacandle，故排除此项。",
+     "related_sentences": [
+      "en1_2016_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q11",
+     "number": "11",
+     "qtype": "完形",
+     "stem": "第 11 空：选择最合适的词填入空白 [11]",
+     "stem_cn": "",
+     "options": {
+      "A": "association",
+      "B": "meeting",
+      "C": "collection",
+      "D": "union"
+     },
+     "options_cn": {
+      "A": "关联;联系",
+      "B": "会议;相遇，会面",
+      "C": "收集，采集;聚集",
+      "D": "结合;婚姻"
+     },
+     "answer": "D",
+     "explanation": "句内语义十熟词僻意。【解题思路】toblessthe___（祝福_____）指出\"在一圈婚姻美满且受尊敬的夫妇手中传递蜡烛\"的目的，由\"婚姻美满且受尊敬的夫妇\"可推知，他们传递蜡烛的目的应该是将自已的幸福婚姻传递给这对新婚夫妇，即祝福新人结为夫妻，祝福他们的婚姻。四个选项均有\"联合\"之意，但能够表示结为夫妻、婚姻的只有【D】union（此处union用其僻意amarriage）。【错项排除】【A】指\"（与某人、机构、团体等的）关联，交往和关系\";【B】指\"人们聚集到一起讨论事情的会议、集会\"或\"偶然或事先安排好的会面\";【C】指\"一群人或一批物品\"，三项均泛指\"人们的关系或聚会\"，均无法体现新人的结合，故排除。【B】part离开;分离",
+     "related_sentences": [
+      "en1_2016_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q12",
+     "number": "12",
+     "qtype": "完形",
+     "stem": "第 12 空：选择最合适的词填入空白 [12]",
+     "stem_cn": "",
+     "options": {
+      "A": "grow",
+      "B": "part",
+      "C": "live",
+      "D": "deal"
+     },
+     "options_cn": {
+      "A": "成长;增长",
+      "B": "（with）表示\"与⋯⋯分离\"时与前文 move in with 语",
+      "C": "居住",
+      "D": "（ with）对付，应付;与⋯⋯做生意"
+     },
+     "answer": "C",
+     "explanation": "动词搭配。【解题思路】空格句介绍新婚夫妇的婚后居住地点。由空格前并列连词and可知，___withthem与其前内容\"按照传统，新婚夫妇要搬进妻子的父母家（moveinwithsb表示'搬来和某人一起居住'）\"语义大方向一致，故此处应该表示\"和他们一起居住、生活\"，【C】live符合文意，live（with）表示\"与⋯⋯·住在一起\"。【错项排除】【A】grow与with搭配表示\"与⋯⋯一起成长\"，一般指长辈陪同晚辈成长或同辈之间一起成长，晚辈和长辈一起成长不合语义。【B】part（with）表示\"与⋯⋯分离\"时与前文moveinwith语义相反;表示\"（不情愿地）放弃某物，舍弃某物\"时其后为sth，既与文意不符，同时与空格后them搭配不当，故排除。【D】deal（with）意为\"（尤指为解决某问题而）采取必要行动\"，\"新婚夫妇与女方父母打交道\"看似符合文意，但仅仅\"打交道\"无法体现他们住在一起的语义，同时也表现出新婚夫妇住进女方家的不情愿，应付其父母，与后文\"他们能在附近盖房子\"相悖，如果是\"应付\"关系，就不会在他们附近建造5认准淘宝店铺∶光速考研工作室，赠送配套课程新居，故排除。ED】if如果",
+     "related_sentences": [
+      "en1_2016_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q13",
+     "number": "13",
+     "qtype": "完形",
+     "stem": "第 13 空：选择最合适的词填入空白 [13]",
+     "stem_cn": "",
+     "options": {
+      "A": "whereas",
+      "B": "until",
+      "C": "for",
+      "D": "if"
+     },
+     "options_cn": {
+      "A": "然而，但是",
+      "B": "直到",
+      "C": "因为",
+      "D": "表条件，但\"他们能建造新居\"和\"与女方父母同住\"间不存在对"
+     },
+     "answer": "B",
+     "explanation": "上下文逻辑。【解题思路】空格前指出，新婚夫妇要搬进妻子的父母家，同他们一起居住长达一年。空格所在分句指出，他们能在附近建造新居。由文意及关键词uptoayear（至多一年）可推知.两句之间存在时间链条，即\"新婚夫妇能建造新居前可以住在女方父母家\"，空格处应体现这一时间逻辑，【B】until正确。【错项排除】【A】whereas表转折，用以比较或对比两个事实;【C】for作连词时，表因果关系;做介词连接时间时，后面常接一段时间。【D】if表条件，但\"他们能建造新居\"和\"与女方父母同住\"间不存在对比或比较关系，前者也不是后者的原因或条件，故排除此三项。词汇注释与难句分析①afair【o'feo】事件，事情④bessing【'blesin】n.祝福，赐福，祷告②sermon【's3∶mon】n.讲道，布道⑤thread【ored】n。线，细线⑥soaksok】v.浸泡，浸湿③prayer【preo】n.祷告，祈祷语篇分析;第二段介绍柬埔寨的结婚传统。①句总述传统婚礼的特点∶耗时较长、饶有趣味。②句介绍第一个特点∶耗时较长。转折连词but串联起两组对比结构（formerlyVSbythe1980s和lastedthreedaysVSlastedadayandahalf），以今昔对比表明传统婚礼持续时间的变化。③④句介绍第一个特点;饶有趣味。③句介绍婚礼的一部分∶由僧侣进行简短的布道，以及吟诵祈祷词。④句介绍典礼的一系列流程∶理发仪式（ritualhaircutting）→缠绕棉线（tyingcottonthreads）→传递蜡烛（passingacandle），包含祝福新人喜结连理、白头借老、百年好合的美好寓意。⑤句介绍新婚夫妇的婚后居所。并列结构moveinwiththewife'sparentsandmaylivewiththem说明传统上新人与女方父母同住，表明柬埔寨的婚俗与他国迥异，独树一帜;upto意为\"（数量或数目等）多达，至多\"，明确同住的最长失效∶至多一年;until引导的时间状语从句则指出新人不再与女方父母同住的时间节点∶直到他们能建造新居。Ⅲ①Divorceislegalandeasyto14,butnot①离婚是合法的而且很容易得以实现，common.②Divorcedpersonsare_15_withsome但并不常见。②人们以不认同的目光看待disapproval\".③Eachspouseretains_16__property》离异之人。③夫妻-各自保留带进婚姻的任heorshe17intothemarriage,andjointly-acquired何财产，而夫妻共同所得的财产会被平均分propertyis_18__equally.④Divorcedpersonsmay割。④离异之人可以再婚，但是性别偏见会remarry,butagenderprejudice__19up:The显露出来∶离异的男性再婚之前没有等待divorcedmaledoesn'thaveawaitingperiodbeforehecan期，而女性必须要等待十个月。remarry_20_thewomanmustwaittenmonths.真题精解【B】obtain实现",
+     "related_sentences": [
+      "en1_2016_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q14",
+     "number": "14",
+     "qtype": "完形",
+     "stem": "第 14 空：选择最合适的词填入空白 [14]",
+     "stem_cn": "",
+     "options": {
+      "A": "follow",
+      "B": "obtain",
+      "C": "challenge",
+      "D": "avoid"
+     },
+     "options_cn": {
+      "A": "跟随;仿效;理解",
+      "B": "符合文意",
+      "C": "挑战;质疑",
+      "D": "避免"
+     },
+     "answer": "B",
+     "explanation": "动词辨析。【解题思路】空格句指出，离婚在柬埔寨合法，而且容易，但并不常见。由空格前并列连词and可知，easyto____与legal语义同向，既然离婚是合法的，那应该具有可操作性，应该容易实现，且下文\"离婚的人（Divorcedpersons）\"也能印证离婚的可操作性这一推测，【B】obtain符合文意。【错项排除】【A】表示\"仿效、追随（tocopysb/sth）\"或\"理解、明白说明或意思\"，如果离婚\"容易仿6认准淘宝店铺∶光速考研工作室，赠送配套课程效\"，那应该会成为一种常见行为，与原文\"离婚不常见\"相悖，而\"容易理解\"与下文②句的withsomedisapproval语义逻辑相矛盾。【C】、【D】均与legal语义大方向相悖，故排除。",
+     "related_sentences": [
+      "en1_2016_cloze_s10"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q15",
+     "number": "15",
+     "qtype": "完形",
+     "stem": "第 15 空：选择最合适的词填入空白 [15]",
+     "stem_cn": "",
+     "options": {
+      "A": "isolated",
+      "B": "persuaded",
+      "C": "viewed",
+      "D": "exposed"
+     },
+     "options_cn": {
+      "A": "孤立，隔离;区别看待",
+      "B": "说服",
+      "C": "能够与后文的 with 搭配，表示\"以⋯⋯的目光看待\"，故为正确项",
+      "D": "暴露;揭露;使接触，使体验"
+     },
+     "answer": "C",
+     "explanation": "句内语义十动词辨析。【解题思路】由上文\"离婚不常见\"及空格后关键词withsomedisapproval可推知，\"不认同\"应该是人们对于离婚之人的态度，故空格部分are应为态度提示词，表示\"被看待\"之意，选项中只有【C】viewed能够与后文的with搭配，表示\"以⋯⋯的目光看待\"，故为正确项。【错项排除】【A】isolated表示\"孤立，隔离\"时只能与介词from搭配，isolatesb/sthfromsb/sth，表示\"把⋯⋯从⋯⋯中隔离，孤立\";表示\"区别看待\"时，其后一般为观点、问题等，不能为sb，常用于isolatesthfromsth结构中，而原文空格处的逻辑主语为Divorcedpersons，故排除。【B】persuaded看似能解释上文notcommon的原因，因为人们受到劝说，所以离婚的人减少，致使离婚不常见。但由主语Divorcedpersons可知，离婚已成既定事实，所以去\"劝说\"不太可能。【D】exposed表示\"暴露，显露（一般予以掩盖或隐藏的东西）\"或\"使暴露于（险境），使置身于（危险）当中\"或\"接触，体验（新想法、观念）\"时，常用于exposesth/sbtosth结构中;表示\"揭露，揭发某人或某事的真相\"时，常用于exposesth或exposesbassth结构中，此处\"离婚之人被暴露/揭发\"均无法与上下文顺接，且与其后的withsomedisapproval无法构成合理搭配。",
+     "related_sentences": [
+      "en1_2016_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q16",
+     "number": "16",
+     "qtype": "完形",
+     "stem": "第 16 空：选择最合适的词填入空白 [16]",
+     "stem_cn": "",
+     "options": {
+      "A": "whatever",
+      "B": "however",
+      "C": "whenever",
+      "D": "wherever"
+     },
+     "options_cn": {
+      "A": "无论什么",
+      "B": "无论如何",
+      "C": "无论何时",
+      "D": "无论在哪"
+     },
+     "answer": "A",
+     "explanation": "句内逻辑＋词义辨析。【解题思路】空格句介绍离婚后的财产处置问题，可知本句从婚前婚后财产的分割两个角度来描述。从语法结构上来讲，空格之前为动词retains，所以空格处应该填入适当的关系词引出后面的宾语从句，并且能够与空格后的property搭配，组成宾语从句的宾语。只有【A】whatever能够引导名词性从句。【错项排除】【B】引导方式状语从句，【C】引导时间状语从句，【D】引导地点状语从句，三项均无法与property搭配，作为retains的宾语，故排除。【B】brought带来，拿来",
+     "related_sentences": [
+      "en1_2016_cloze_s12"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q17",
+     "number": "17",
+     "qtype": "完形",
+     "stem": "第 17 空：选择最合适的词填入空白 [17]",
+     "stem_cn": "",
+     "options": {
+      "A": "changed",
+      "B": "brought",
+      "C": "shaped",
+      "D": "pushed"
+     },
+     "options_cn": {
+      "A": "改变;调换;兑换",
+      "B": "符合文意",
+      "C": "塑造;影响⋯⋯的发展",
+      "D": "推动;促使"
+     },
+     "answer": "B",
+     "explanation": "句内语义＋动词辨析。【解题思路】由常识可知，离婚后财产的分割，包括婚前财产的分割以及婚后夫妻双方共同所得财产的分割，已知jointly-acquiredproperty（共同获得的财产）为婚后共同财产，故propertyheorsheintothemarriage应表示婚前财产。而婚前财产便是夫妻各自带进婚姻的财产，由此可知【B】brought符合文意。【错项排除】【A】利用夫妻双方对婚姻财产带来的改变进行干扰，changesb/sthintosth表示\"把⋯⋯变成⋯⋯\";【C】意为\"使某物成为⋯⋯形状，塑造\"，常用于shapeAintoB结构中;【D】表示\"推动，促使达到某程度或状态\"，但\"将财产兑换/定形为婚姻\"或\"促使财产进入婚姻\"均不符合语义逻辑。【C】donated捐献【D】divided分割",
+     "related_sentences": [
+      "en1_2016_cloze_s12"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q18",
+     "number": "18",
+     "qtype": "完形",
+     "stem": "第 18 空：选择最合适的词填入空白 [18]",
+     "stem_cn": "",
+     "options": {
+      "A": "withdrawn",
+      "B": "invested",
+      "C": "donated",
+      "D": "divided"
+     },
+     "options_cn": {
+      "A": "取出",
+      "B": "投资]",
+      "C": "不能与equally 搭配;另外，此两项也",
+      "D": "符合文意"
+     },
+     "answer": "D",
+     "explanation": "动词辨析。【解题思路】空格句指出夫妻共有财产的处置问题∶会被平均___。由空格后的修饰词equally（平均地）、以及离婚财产涉及到的夫妻双方，判断出只有【D】divided符合文意。【错项排除】【A】后一般为\"金钱或款项\"，而不能与property（财产）搭配，故排除此项。夫妻共同财产可以进行投资、捐献，但不能\"平均投资/平均捐献\"，即【B】和【C】不能与equally搭配;另外，此两项也与离婚财产处置问题这一背景不符。【B】shows（up）出现;显露;显现",
+     "related_sentences": [
+      "en1_2016_cloze_s12"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q19",
+     "number": "19",
+     "qtype": "完形",
+     "stem": "第 19 空：选择最合适的词填入空白 [19]",
+     "stem_cn": "",
+     "options": {
+      "A": "clears",
+      "B": "shows",
+      "C": "warms",
+      "D": "breaks"
+     },
+     "options_cn": {
+      "A": "（ up）转晴;好转;整理;澄清",
+      "B": "符合文意",
+      "C": "（ up）活跃起来",
+      "D": "（up）终止;结束"
+     },
+     "answer": "B",
+     "explanation": "动词词组辨析。【解题思路】由冒号后内容\"离异男性再婚之前没有等待期，⋯⋯女性必须要等待数月\"可知，在再婚问题上，男女之间存在性别偏见，故空格所在部分____up应该表示\"存在，出现\"的意思，【B】shows符合文意。【错项排除】【A】clears（up）表示\"（天气）转晴\"或\"（疾病、感染等）好转\"或\"整理、收拾东西\"时均与上下文文意无关，表示\"澄清（误会）、消除（疑虑）\"时，其主语一般为sb，宾语为sth，而此处agenderprejudice为主语而不是宾语，搭配不当，且\"性别偏见得以消除\"与下文\"离婚男女面临不同境遇\"的文意相悖。【C】warmsup表示\"（使）某人或某事物活跃起来，热情起来\"，但\"性别偏见逐渐活跃起来\"表明针对离婚男女的性别偏见从无到有、逐渐显现并明显，与原文\"离婚男女不公平境遇的事实早已存在\"不符。【D】breaks（up）意为tocometoanend，与冒号后男女性再婚存在性别偏见的事实相悖。【B】once-⋯⋯就⋯⋯，一旦",
+     "related_sentences": [
+      "en1_2016_cloze_s13"
+     ]
+    },
+    {
+     "id": "en1_2016_cloze_q20",
+     "number": "20",
+     "qtype": "完形",
+     "stem": "第 20 空：选择最合适的词填入空白 [20]",
+     "stem_cn": "",
+     "options": {
+      "A": "while",
+      "B": "once",
+      "C": "so that",
+      "D": "in that"
+     },
+     "options_cn": {
+      "A": "而，然而",
+      "B": "作连词时意为 as soon as，表条件",
+      "C": "因此，所以;为了，以便",
+      "D": "原因是，因为"
+     },
+     "answer": "A",
+     "explanation": "句内逻辑。【解题思路】空格前分句\"离异男性再婚之前没有等待期\"与空格后分句\"女性必须要等待十个月\"存在语义对比（离异男性VS女性、无等待期VS等待十个月），故空格处应体现对比逻辑。【A】while用于对比两件事物，符合文意。【错项排除】【B】once作连词时意为assoonas，表条件;【C】sothat或引出结果，或表示目的;【D】inthat表示因果关系，但\"离异女性必须等待十个月\"并非\"离异男性再婚之前无等待期\"的条件、结果、目的或原因，故排除此三项。·词汇注释与难句分析①disapproval【drs?'pru∶vi】n.不赞同，不认同③property【'propot】n.资产，财产②retain【r'tern】v.保留，保有④prejudice【'pred3?dus】n.偏见，成见Divorcedpersonsmayremarry,butagenderprejudiceshowup:Thedivorcedmaledoesn'thaveawaitingperiodbeforehecanremarrywhilethewomanmustwaittenmonths.结构切分∶分句1mayremarry,Divorcedpersons谓语主语分向2buagenderprejudiceshowup∶（冒号后解释说明）Thedivorcedmaledoesn't】转折连词主语谓语主语haveawaitingperiodwhilethewomanmustwaittenmonths.宾语谓语连接词谓语主语时间状语从句beforehecanremarry]引导词主语谓语功能注释∶本句是由转折连词but连接的两个分句。冒号后的句子为解释说明部分，其中while做连接词，表示对比。语篇分析-第三段介绍柬埔寨的离婚问题。①句概述离婚在柬埔寨的特点。转折连词but串联起离婚在柬埔寨的可行性∶（理论上）合法、易实现（legal、easytoobtain）VS（实践上）不常见（notcommon）。②句解释离婚不常见的原因。withsomedisapproval揭示柬埔寨人们对离婚的态度∶不认同。③句介绍离婚时的8认准淘宝店铺∶光速考研工作室，赠送配套课程",
+     "related_sentences": [
+      "en1_2016_cloze_s13"
+     ]
+    }
+   ]
   }
  ]
 }

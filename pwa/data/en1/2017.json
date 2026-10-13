@@ -1953,6 +1953,574 @@
    ],
    "sentence_count": 17,
    "question_count": 5
+  },
+  {
+   "id": "en1_2017_cloze",
+   "type": "cloze",
+   "title": "",
+   "topic": "",
+   "source": "Section I Use of English",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "Could a hug a day keep the doctor away?",
+     "id": "en1_2017_cloze_s01",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "The answer may be a resounding 'yes! \" [1] helping you feel close and [2] to people you care about, it turns out that hugs can bring a [3] of health benefits to your body and mind.",
+     "id": "en1_2017_cloze_s02",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "Believe it or not, a warm embrace might even help you [4] getting sick this winter.",
+     "id": "en1_2017_cloze_s03",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "In a recent study [5] over 400 healthy adults, researchers from Carnegie Mellon University in Pennsylvania examined the effects of perceived social support and the receipt of hugs [6] the participants' susceptibility to developing the common cold after being [7] to the virus.",
+     "id": "en1_2017_cloze_s04",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "People who perceived greater social support were less likely to come [8] with a cold, and the researchers [9] that the stress-reducing effects of hugging [10] about 32 percent of that beneficial effect.",
+     "id": "en1_2017_cloze_s05",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "[11] among those who got a cold, the ones who felt greater social support and received more frequent hugs had less severe [12]",
+     "id": "en1_2017_cloze_s06",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "\"Hugging protects people who are under stress from the [13] risk for colds that's usually [14] with stress,\" notes Sheldon Cohen, a professor of psychology at Carnegie.",
+     "id": "en1_2017_cloze_s07",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "Hugging \"is a marker of intimacy and helps [15] the feeling that others are there to help [16] difficulty.\"",
+     "id": "en1_2017_cloze_s08",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "Some experts [17] the stress-reducing, health-related benefits of hugging to the release of oxytocin, often called \"the bonding hormone\" [18] it promotes attachment in relationships, including that between mothers and their newborn babies.",
+     "id": "en1_2017_cloze_s09",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "Oxytocin is made primarily in the central lower part of the brain, and some of it is released into the bloodstream.",
+     "id": "en1_2017_cloze_s10",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "But some of it [19] in the brain, where it [20] mood, behavior and physiology. .1. (-3¾-14 yf)",
+     "id": "en1_2017_cloze_s11",
+     "cn": "",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "id": "en1_2017_cloze_q01",
+     "number": "1",
+     "qtype": "完形",
+     "stem": "第 1 空：选择最合适的词填入空白 [1]",
+     "stem_cn": "",
+     "options": {
+      "A": "Unlike",
+      "B": "Besides",
+      "C": "Despite",
+      "D": "Throughout"
+     },
+     "options_cn": {
+      "A": "（表对比）与⋯⋯不同",
+      "B": "",
+      "C": "（表让步）尽管",
+      "D": "（表范围）遍及;贯穿"
+     },
+     "answer": "B",
+     "explanation": "逻辑关系。【解题思路】首句设问∶一天一拥抱能让你远离医生吗?②句以resounding限定yes，不仅表明回答声音的响亮，同时内含\"极其肯定，令人惊异\"之意;③句进而解释该结论，前半句\"有助于感到和关心的人亲密和⋯⋯\"为惯常认知，后半句itturnsoutthat...（原来，竟然）引出惊人的新发现∶对身心健康益处颇多，回应②句结论;因此空格词既要表明二者均在拥抱积极作用之列，同时要能\"引出普通认识，以反衬主句意料之外新发现（语义重点所在）\"，选项中符合要求的只有【B】Besides。【错项排除】【A】用于\"对比某人/事和另一人/事的不同\"，【C】Despite用于\"引出使句子其余内容显得意外的一项事实\";而文中\"能让人感觉和关心的人亲近\"和\"对身心有益\"均是拥抱的益处，逻辑同向，不涉及\"差别\"或\"语义上的转折\"。【D】其后接\"地点或时间\"，分别表示\"遍及、渗透至某地各个部分\"和\"贯穿某时间段始终\"，均无法串联起前后两部分内容。【B】restricted受限制的，受约束的",
+     "related_sentences": [
+      "en1_2017_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q02",
+     "number": "2",
+     "qtype": "完形",
+     "stem": "第 2 空：选择最合适的词填入空白 [2]",
+     "stem_cn": "",
+     "options": {
+      "A": "connected",
+      "B": "restricted",
+      "C": "equal",
+      "D": "inferior"
+     },
+     "options_cn": {
+      "A": "有联系的;关系亲密的",
+      "B": "其后为介词 to 时，一般为 A is restricted to B结构，其中B表示\"限定/制",
+      "C": "平等的;（能力）相当的，胜任的",
+      "D": "差的，次的"
+     },
+     "answer": "A",
+     "explanation": "句内语义。【解题思路】空格词和close由并列连词and连接，可以推知两者语义方向一致，表明拥抱使人们感到与其关心的人之间关系的亲近，选项中符合要求的只有【A】connected。认准淘宝店铺∶光速考研工作室，赠送配套课程【错项排除】【B】restricted其后为介词to时，一般为AisrestrictedtoB结构，其中B表示\"限定/制的具体范围（人、数量、活动、地域等）\"。【C】equal后接to时，可以表示\"有能力应付某事\";还可以表示\"（大小、数量、价值等）相同的\"或\"比得上某人/物\"，而\"感觉和自己关心的人相同\"语义不清，\"感觉比得上自己关心的人\"语义偏至\"竞争\"，脱离\"拥抱对健康的正面影响\"这一语境。【D】inferior表示\"不如某人/物\";但\"感觉不如自己关心的人\"为负面情绪，与\"拥抱使人际关系融洽\"的文意相悖。【B】view看法;方法，方式",
+     "related_sentences": [
+      "en1_2017_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q03",
+     "number": "3",
+     "qtype": "完形",
+     "stem": "第 3 空：选择最合适的词填入空白 [3]",
+     "stem_cn": "",
+     "options": {
+      "A": "choice",
+      "B": "view",
+      "C": "lesson",
+      "D": "host"
+     },
+     "options_cn": {
+      "A": "选择;选择范围",
+      "B": "（of sth）表示\"（理解或思维的）方法，方式\"，此处\"拥抱能够带来健康",
+      "C": "课;课程;经验，教训",
+      "D": "大量，许多"
+     },
+     "answer": "D",
+     "explanation": "句内语义＋固定搭配。【解题思路】空格所在部分aof后为复数形式（healthbenefits），因此空格所在部分在内容上应表示\"多项健康益处\"，同时在语法上必须能够接复数，选项中符合要求的只有【D】host。注∶ahostof表示\"许多，大量（anumberof）\"。【错项排除】【A】表示\"可选的范围\"，choiceof后为\"选择的人/事\"，此处\"对身体和心灵的健康益处\"并非供选择的内容。【B】view（ofsth）表示\"（理解或思维的）方法，方式\"，此处\"拥抱能够带来健康益处的一种看法\"不合逻辑。【C】或表示\"课程\"，或表示\"经验，教训\";而\"对身心的健康益处\"既非\"课程\"，亦非\"教训\"。【B】forget忘记;遗忘",
+     "related_sentences": [
+      "en1_2017_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q04",
+     "number": "4",
+     "qtype": "完形",
+     "stem": "第 4 空：选择最合适的词填入空白 [4]",
+     "stem_cn": "",
+     "options": {
+      "A": "recall",
+      "B": "forget",
+      "C": "avoid",
+      "D": "keep"
+     },
+     "options_cn": {
+      "A": "回想，回忆起",
+      "B": "表示\"忘记过去的事、信息等\";两词加 doing sth 做宾语均",
+      "C": "避免，防止",
+      "D": "保持;继续"
+     },
+     "answer": "C",
+     "explanation": "动词辨析。【解题思路】Believeitornot表明尽管\"每日拥抱能让人远离医生（疾病）\"这一发现可能会令人惊讶，但确凿无疑，awarmembrace与程度副词even强化Believeitornot所暗含的诱导性成分，进一步表明\"热烈拥抱对远离疾病的神奇作用\"，空格部分只能表达\"有助于不生病\"之意，符合文意的只有【C】。【错项排除】【A】表示\"回想起某事\";【B】表示\"忘记过去的事、信息等\";两词加doingsth做宾语均指过去发生的事情，与时间标志词thiswinter不符;且\"回忆起生病\"或\"忘记生过病\"均无法契合上下文\"拥抱对于身体健康有益\"的语境。【D】表示\"继续做某事或多次重复做同一件事\"，而\"重复得感冒\"显然为负面内容，不可能\"有助于（helpyou...）\"，同时背离\"拥抱有益\"的文意。。词汇注释与难句分析②embrace【im'breis】n.抱;拥抱①resounding【r'zaondin】a.响亮的;嘹亮的;巨大的，令人瞩目的-语篇分析首段提出观点;拥抱有益于健康。①②句以问答形式提出全文观点。Couldahugadaykeepthedoctoraway?源于谚语Anappleadaykeepsthedoctoraway.（一天一苹果，医生远离我。），提示主题\"拥抱和健康的关系\"。\"yes\"继而明确这一关系，昭示观点，并以限定语resounding（clearandemphatic;unmistakable）和\"感叹号\"对其极致肯定，打消一切质疑，反令人惊诧\"拥抱是否真有此般神奇功效\"。③①句具化上述观点。③句Besides...铺垫人们对拥抱的惯常认识，itturnsout.（tobediscoveredtobe，espeiallyunexpectedly）进而引出意想不到的新发现，canbringahostofhealthbenefits..是对首句keepthedoctoraway的具体说明，toyourbodyandmind暗示下文将从\"生理\"和\"心理\"两个角度论述拥抱的好处。④句mightevenhelpyou..表明两句间递进逻辑;awarmembrace较首句ahug更进一步，明确文中所聚焦的\"拥抱\"为\"发自内心、温暖热烈的亲密拥抱\";avoidgettingsick继续具体化上句healthbenefits，由非正式语Believeitornot（usedtointroduceinformationthatistruebutthatmaysurprispeople）引出，再次渲染观点的不一般，并暗示下文将就\"拥抱对疾病的积极防控作用\"展开说明。2认准淘宝店铺∶光速考研工作室，赠送配套课程Ⅱ●Inarecentstudy5over400healthy①在最近一项400余名健康成人参与adults,researchersfromCarnegieMellonUniversityin的研究中，来自宾夕法尼亚州卡耐基梅隆大Pennsylvaniaexaminedtheeffectsofperceived\"social学的研究人员对\"感知到社会支持和受到拥supportandthereceiptofhugs6theparticipants'抱\"对参与者接触病毒后感冒易感性的影响susceptibilitytodevelopingthecommoncoldafterbeing进行了研究。②当人们感知到更多社会支7tothevirus.②Peoplewhoperceivedgreater持时，他们患感冒的可能性更小，研究人员socialsupportwerelesslikelytocome8withacold,估算，在有助于降低感冒几率的有益影响因andtheresearchers9thatthestress-reducingeffects素中，拥抱的减压效果大约占了32??③ofhugging10about32percentofthatbeneficial甚至在那些患了感冒的人中，感受到更多社effect.③1lamongthosewhogotacold,theones会支持且更频繁受到拥抱的人的症状也要whofeltgreatersocialsupportandreceivedmorefrequent更轻一些。hugshadlesssevere_12真题精解【B】involving（使）参加，加入",
+     "related_sentences": [
+      "en1_2017_cloze_s03"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q05",
+     "number": "5",
+     "qtype": "完形",
+     "stem": "第 5 空：选择最合适的词填入空白 [5]",
+     "stem_cn": "",
+     "options": {
+      "A": "collecting",
+      "B": "involving",
+      "C": "guiding",
+      "D": "affecting"
+     },
+     "options_cn": {
+      "A": "收集;使集合，聚集",
+      "B": "表示\"使某人参加，参与某事（to make sb take part in sth）\"，符合文意",
+      "C": "带领;引导，指导",
+      "D": "影响;打动;使感动"
+     },
+     "answer": "B",
+     "explanation": "句内语义＋动词辨析。【解题思路】空格处考查\"研究\"和\"400多名健康成人\"之间的关系，关键词study、rescarchers、examined表明本句是对实验内容的介绍，over400healthyadults应为实验的\"研究对象\"，即\"研究的参与者\"，【B】involving表示\"使某人参加，参与某事（tomakesbtakepartinsth）\"，符合文意。【错项排除】【A】常接\"物\"作宾语，虽也可与\"人\"搭配表示\"聚集、集合\"，但只用于\"主谓\"结构;文中空格词与其后内容为\"动宾\"结构，即\"研究集合人群\"，不合逻辑。【C】表示\"引导，指导（某人的行为或观点）\"，但下文并未提及\"引导\"研究对象去做某事。【D】或表示\"影响某人/事\"，或表示\"打动某人，使某人感动\"，一般用被动态，但该句是对实验内容而非对实验影响的介绍，\"影响或打动400余名健康成人\"均与\"介绍实验内容\"这一语境不符。[D]on[C]a[B]in",
+     "related_sentences": [
+      "en1_2017_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q06",
+     "number": "6",
+     "qtype": "完形",
+     "stem": "第 6 空：选择最合适的词填入空白 [6]",
+     "stem_cn": "",
+     "options": {
+      "A": "of",
+      "B": "in",
+      "C": "at",
+      "D": "on"
+     },
+     "options_cn": {
+      "A": "",
+      "B": "表\"方位\"",
+      "C": "表\"方位\"或\"时间\"，此",
+      "D": "正确"
+     },
+     "answer": "D",
+     "explanation": "句内语义+介词搭配。【解题思路】空格处介词表示\"感知到社会支持和受到拥抱的影响\"与\"参与者对感冒的易感性\"两者之间的关系，由上段末句\"一个热烈的拥抱有助于人们在这个冬天避免生病\"可知，研究人员测试的应该是\"社会支持与拥抱\"对\"感冒易感性\"的影响，选项中能够与effects连用，引出受影响的对象的介词只有on，【D】正确。【错项排除】【A】of置于空格处，只能表示theparticipants'susceptibility与thereceiptofhugs之间的关系，即\"得到参与者易感性的拥抱\"，显然不合逻辑。【B】in表\"方位\";【C】at表\"方位\"或\"时间\"，此两项均无法与effects搭配引出受影响的对象。",
+     "related_sentences": [
+      "en1_2017_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q07",
+     "number": "7",
+     "qtype": "完形",
+     "stem": "第 7 空：选择最合适的词填入空白 [7]",
+     "stem_cn": "",
+     "options": {
+      "A": "devoted",
+      "B": "exposed",
+      "C": "lost",
+      "D": "attracted"
+     },
+     "options_cn": {
+      "A": "奉献;把⋯⋯专用（于）",
+      "B": "使暴露于;使遭受",
+      "C": "丢失;丧失;被打败",
+      "D": "吸引;引起⋯.的兴趣"
+     },
+     "answer": "B",
+     "explanation": "句内语义＋动词用法。【解题思路】空格处考查\"参与者易患感冒\"与\"病毒\"间的关系，由常识可知，病毒会引发感冒，即\"处于病毒环境中、接触到病毒\"才会感冒。另外，\"病毒（virus）\"为负面事物，空格词还需要能接负面事物。beexposedtosth常表示\"暴露于（险境、不利情况）\"，【B】exposed正确。【错项排除】【A】devoted（to）其后引出\"奉献或服务的对象\"，但\"参与者献身于、被专用于病毒\"显然不合逻辑。【C】利用\"被病毒打败\"进行语义干扰，但lose和to搭配表示\"输给某人\"时使用主动态。【D】这一动作的发出者具有\"某种令人想接近的特点\"，而文中为\"病毒\"，恰恰是人们极力想避免的对象。3认准淘宝店铺∶光速考研工作室，赠送配套课程",
+     "related_sentences": [
+      "en1_2017_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q08",
+     "number": "8",
+     "qtype": "完形",
+     "stem": "第 8 空：选择最合适的词填入空白 [8]",
+     "stem_cn": "",
+     "options": {
+      "A": "across",
+      "B": "along",
+      "C": "down",
+      "D": "out"
+     },
+     "options_cn": {
+      "A": "被理解;提供，供给",
+      "B": "偶尔出现，到达;跟随，跟着来",
+      "C": "患;染上",
+      "D": "说出"
+     },
+     "answer": "C",
+     "explanation": "固定搭配。【解题思路】上段表明\"拥抱有助于人们避免生病\"，而上句将\"拥抱\"和\"感知社会支持\"归于一类，因而此处想说明\"他们的患病几率更低\"，即comewithacold应该表达\"患感冒\"的含义，选项中符合要求的只有【C】down，comedownwithsth为固定搭配，表示\"患、得（小病）\"。【错项排除】【A】表示\"提供，供给所需内容\"。【B】利用其\"偶尔出现\"这层释义进行干扰，但该动词短语的主语才是\"出现的具体内容\";而文中主语为\"实验参与者\"，comealongwithacold不能表示\"出现感冒\";另外，该短语后可接with，此时常跟sb，表示\"跟随某人一起\"。【D】表示\"说出，提出（尤指异乎寻常或出人意料的话）\"。【B】denied否认，否定",
+     "related_sentences": [
+      "en1_2017_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q09",
+     "number": "9",
+     "qtype": "完形",
+     "stem": "第 9 空：选择最合适的词填入空白 [9]",
+     "stem_cn": "",
+     "options": {
+      "A": "calculated",
+      "B": "denied",
+      "C": "doubted",
+      "D": "imagined"
+     },
+     "options_cn": {
+      "A": "计算;推测，估计",
+      "B": "表示\"否认某事为真\"",
+      "C": "怀疑，不确信",
+      "D": "想象;设想"
+     },
+     "answer": "A",
+     "explanation": "句内语义十动词辨析。【解题思路】thatbeneficialeffect回指逗号前内容\"感知到更多社会支持的人们得感冒的可能性更小\"，即\"社会支持和拥抱对健康的积极影响\"，而由段首句研究目的\"了解拥抱对患病率的影响\"以及本句关键词researchers、32percent可推知，该句为研究人员对于\"拥抱积极影响\"的量化评估，即32??一数值是由实验推断或估算而来，选项中符合要求的只有【A】calculated。【错项排除】【B】表示\"否认某事为真\";【C】表示\"怀疑，不相信某人或某事\"，而文首已经表明全文导向\"拥抱有助于身体健康\"，因此相关研究应该扮演\"证实这一结论\"的角色，故排除这两项。【D】具有极大主观性，单凭\"主观想象、猜想\"显然无法得出32??一精确数值。",
+     "related_sentences": [
+      "en1_2017_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q10",
+     "number": "10",
+     "qtype": "完形",
+     "stem": "第 10 空：选择最合适的词填入空白 [10]",
+     "stem_cn": "",
+     "options": {
+      "A": "served",
+      "B": "required",
+      "C": "restored",
+      "D": "explained"
+     },
+     "options_cn": {
+      "A": "起作用;服务;对⋯⋯.有用",
+      "B": "需要;要求，规定",
+      "C": "恢复;使复原",
+      "D": "解释;说明⋯⋯的原因"
+     },
+     "answer": "D",
+     "explanation": "句内语义十动词用法。【解题思路】stressing-reducingeffects和beneficialeffect，前者为\"内在具体作用\"，后者为\"外在宽泛影响（有助于避免感冒）\"，两者存在因果关联，即，拥抱的\"减压作用\"说明了其为何\"有助降低感冒几率\"，选项中符合要求的只有【D】explained，字面为\"这一作用解释了总影响的32，也可以理解为\"占了总影响的32。【错项排除】【A】利用其\"产生某种结果\"这层释义干扰，认为\"减压作用能起到32??积极结果\"，但其具体用法为serveas...或servetodosth。【B】表示\"需要某物\"，但\"拥抱的减压作用\"需要\"它对疾病的预防、缓解作用\"所表现的逻辑为\"要避免生病→才能减压\"，显然颠倒了两者关系。【C】利用\"拥抱的减压作用会让健康部分恢复\"干扰，但该词内涵为\"使先前的情况重现\"，而文中宾语为\"32??有益影响\"，不存在\"重现、恢复\"的问题。【B】Still仍然;依旧;但是;不过",
+     "related_sentences": [
+      "en1_2017_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q11",
+     "number": "11",
+     "qtype": "完形",
+     "stem": "第 11 空：选择最合适的词填入空白 [11]",
+     "stem_cn": "",
+     "options": {
+      "A": "Even",
+      "B": "Still",
+      "C": "Rather",
+      "D": "Thus"
+     },
+     "options_cn": {
+      "A": "甚至;即使",
+      "B": "表强调时用于句内的 still more/further/another/other 等结构中，意为\"某事还有更",
+      "C": "更确切地说;相反，而是",
+      "D": "因此;因而"
+     },
+     "answer": "A",
+     "explanation": "句际逻辑关系。【解题思路】上段结论为\"拥抱对身心健康有益\";空格上句针对\"未患病人群\"，指出拥抱对疾病的预防作用，而本句针对\"患病人群\"，结合已知信息hadlesssevere...推测本句表明拥抱对疾病的缓解作用，很明显前后为递进关系，后者补充并强调出人意料的作用∶就算已经生病，仍能起到积极作用，符合这一逻辑的只有【A】。【错项排除】【B】表强调时用于句内的stillmore/further/another/other等结构中，意为\"某事还有更多、某情况更进一步\";位于句首时Still常用于\"引出与上文形成转折的内容\"。【C】或用于\"纠正所说的话或提供更确切的信息\";或用于\"提出不同或相反的观点\";【D】用于\"引出上述内容带来的结果\";而文中两句分别介绍两种改善作用，既不是\"纠正、补充、转折对比\"的逻辑，更不是\"因果逻辑\"。4认准淘宝店铺∶光速考研工作室，赠送配套课程Y[φ.=5=\u0015\u0013\u0014",
+     "related_sentences": [
+      "en1_2017_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q12",
+     "number": "12",
+     "qtype": "完形",
+     "stem": "第 12 空：选择最合适的词填入空白 [12]",
+     "stem_cn": "",
+     "options": {
+      "A": "defeats",
+      "B": "symptoms",
+      "C": "tests",
+      "D": "errors"
+     },
+     "options_cn": {
+      "A": "失败;战胜，击败",
+      "B": "症状;征兆",
+      "C": "测验，测试;检验;考验",
+      "D": "错误，谬误"
+     },
+     "answer": "B",
+     "explanation": "句内语义十名词用法。【解题思路】上题分析已知空格句表明\"拥抱对感冒的缓解作用\"，hadlessevere和上句werelesslikelyto...相对，故空格词只能表示\"（感冒的）具体病状\"之意，【B】symptoms正确。【错项排除】【A】defeats和【D】errors与severe搭配，分别表示\"重大的失败\"、\"严重的错误\"，由less加以否定，虽然体现\"积极影响\"，但均脱离上下文论述中心\"拥抱对健康的益处（在避免疾病方面的作用）\"。【C】tests利用其\"考验\"这一释义设置干扰，但\"考验严峻与否\"与\"拥抱对健康的作用\"无关。。词汇注释与难句分析①perceive【po'siv】z.感知，感觉④commoncold感冒，伤风⑤virus【'varos】n.病毒②recipt【r'si∶】n.接收;收到③susceptibility【sosept'blti】n.易受影响（或伤害等）⑥beneficial【Dben!'rjol】a.有利的;有裨益的的特性;敏感性语篇分析第二段介绍观点相关研究。①句介绍研究内容。theeffectsof...其后内容看似复杂，但由关键词hugs以及全文主题可知，此处语义重心为\"拥抱的作用\"，介词on...引出\"发生作用的对象\"，susceptibilityto...指\"对某不利情况（疾病）的易受影响性（易感性）\"，developingthecommoncold呼应上段末gettingsick，明确研究聚焦\"拥抱在防控感冒（疾病）方面的作用\"。②③句介绍实验发现，印证观点。两句中...lesslikelytocomedownwithacold和...lessseveresymptoms共同说明\"受到拥抱和社会支持\"的影响，并以Even凸显两句递进逻辑∶未感冒者患病几率更小，甚至对已感冒者也有益——病状更轻;观点标记词calculated引出研究者的结论，stressreducingeffects明示\"拥抱有益健康\"的工作机制∶有助于减轻压力;explainedabout32percentof..字面意为\"减压作用大约解释了拥抱好处的32，实际表示\"拥抱的益处很多，但减压作用的比例高达三分之一，无怪乎有利于健康\"。Ⅲ③\"Huggingprotectspeoplewhoareunder①卡耐基大学的心理学教授谢尔登·科思stressfromthe_13riskforcoldsthat'susually指出，\"拥抱保护身处压力之下的人们免受更大14withstress,\"notesSheldonCohen,a的感冒风险，而这一风险通常与压力相关\"，②professorofpsychologyatCarnegie.②Hugging\"isa拥抱\"是亲密的标识，且在面对困难的时候有助marker\"ofintimacyandhelps15thefeling于产生一种他人会施以援手的感觉\"。thatothersaretheretohelp_16difficulty.\"⋯........⋯⋯...真题精解",
+     "related_sentences": [
+      "en1_2017_cloze_s06"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q13",
+     "number": "13",
+     "qtype": "完形",
+     "stem": "第 13 空：选择最合适的词填入空白 [13]",
+     "stem_cn": "",
+     "options": {
+      "A": "minimized",
+      "B": "highlighted",
+      "C": "controlled",
+      "D": "increased"
+     },
+     "options_cn": {
+      "A": "最小化的;使达到最低限度的",
+      "B": "突出的，强调的",
+      "C": "限制的，控制的;克制的",
+      "D": "增加的;增强的"
+     },
+     "answer": "D",
+     "explanation": "句内语义＋形容词用法。【解题思路】由protects...from...（保护⋯⋯免受⋯⋯）可知，from后应为\"危险、伤害\"等负面事物，再结合常识\"压力大的人患病几率相对较高\"，【D】increased语义等同于greater、higher，为正确项。【错项排除】【A】源自动词minimize;【C】表示\"受限制的，受控的\";两者修饰\"风险（risk）\"在大方向上均表明风险程度低，与文意相反。【B】源自动词highlight，但\"（被）突出/强调的风险\"暗中存在一种语境，即\"某人强调了、或某事件凸显出某种风险\"，上下文并未涉及该内容。【B】associated联想，联系;与⋯⋯有关",
+     "related_sentences": [
+      "en1_2017_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q14",
+     "number": "14",
+     "qtype": "完形",
+     "stem": "第 14 空：选择最合适的词填入空白 [14]",
+     "stem_cn": "",
+     "options": {
+      "A": "equipped",
+      "B": "associated",
+      "C": "presented",
+      "D": "compared"
+     },
+     "options_cn": {
+      "A": "配备;装备;使能够胜任",
+      "B": "符合文意",
+      "C": "颁发;提供;呈现;引起，造成",
+      "D": "比较;对比"
+     },
+     "answer": "B",
+     "explanation": "句内语义十动词用法。【解题思路】空格所在部分为that定语从句修饰riskforcolds（患感冒的风险）;增加的感冒风险通常压力。上段②句表明\"拥抱的减压作用是降低感冒发生几率的部分原因\"，因此两者之间存在因果关联，即压力越大，患病几率越大，associate意为\"有逻辑或因果关联\"，【B】符合文意。【错项排除】【A】equipped常用于beequippedwithsth结构，表示\"为特定目的而向某人/地提供某物\";但\"为感冒风险配备压力\"显然不合逻辑;或表示\"传授某人知识、技能等使其能够胜任某事\"，其逻辑宾语（即传授的对象）必须是sb，而文中为\"感冒风险\"（被动态作主语），不可能\"接受技能并胜任某事\"。【C】利用其\"引起、造成（某事发生）\"这一释义干扰，用于presentsbwithsth或presentsth结构中，其中sth多指\"麻烦、问题\"等;文中stress虽属于\"问题\"，但\"给患病风险带来压力问题\"显然错误。【D】与with搭配表示\"把两个事物进行比较\"，但\"感冒风险\"和\"压力\"属性不同，无可比性。【B】moderate缓和;使适中",
+     "related_sentences": [
+      "en1_2017_cloze_s07"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q15",
+     "number": "15",
+     "qtype": "完形",
+     "stem": "第 15 空：选择最合适的词填入空白 [15]",
+     "stem_cn": "",
+     "options": {
+      "A": "assess",
+      "B": "moderate",
+      "C": "generate",
+      "D": "record"
+     },
+     "options_cn": {
+      "A": "评价，评定;估价，估计",
+      "B": "表示\"（使）减轻，缓和\"，其后宾语多为负面内容，但文中 feeling 后 that 同位语从句\"其他人会予",
+      "C": "产生，创造",
+      "D": "记录;记载"
+     },
+     "answer": "C",
+     "explanation": "句内语义十动词用法。【解题思路】上段将\"拥抱（hugging）\"和\"感受到社会支持（perceivedsocialsupport）\"反复并提，说明它们对疾病的积极作用;本句引用专家说法重申拥抱的意义，只能表达\"拥抱会让人们觉得时刻有外界的支持和帮助\"的语义，即\"产生、生成这种感觉\"，【C】generate正确。【错项排除】【A】和【D】均脱离上下文，\"有助于评价/记录感觉\"与\"拥抱对健康的积极作用\"毫无关联。【B】表示\"（使）减轻，缓和\"，其后宾语多为负面内容，但文中feeling后that同位语从句\"其他人会予以帮助\"表明其为\"正向、积极的感觉\"，而非需要\"缓和\"的负面情绪。【B】intheformof以.的形式",
+     "related_sentences": [
+      "en1_2017_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q16",
+     "number": "16",
+     "qtype": "完形",
+     "stem": "第 16 空：选择最合适的词填入空白 [16]",
+     "stem_cn": "",
+     "options": {
+      "A": "in the face of",
+      "B": "in the form of",
+      "C": "in the way of",
+      "D": "in the name of"
+     },
+     "options_cn": {
+      "A": "在⋯⋯面前，面对",
+      "B": "和",
+      "C": "按照;关于，就⋯⋯而言",
+      "D": "代表⋯⋯;为了⋯⋯"
+     },
+     "answer": "A",
+     "explanation": "句内语义十介词短语。【解题思路】根据选项可知difficulty为介词结构，因此在句中作状语，随句子谓语动词的动作发生;而从已知信息\"他人随时会帮忙（othersaretheretohelp）\"和\"困难、困境（difficulty）\"可大致推断句中feeling的具体内容为∶在遇到困难之时，（预感）外界会帮忙或支持;inthefaceof常引出问题、困难、危险等情况，表示\"在面对问题/困难/危险的情况下\"，故【A】正确。【错项排除】【B】和【C】均为方式状语，of后为具体形式，而无论是\"他人以困难的形式/办法帮助\"还是\"以困难的形式/办法产生一种感觉\"均不合语义逻辑;另外inthewayof还可以表示\"关于\"。【D】表示\"所属权或代表权\"，还可表\"目的\"，但\"代表困难而做\"或\"为了困难而做\"均不合逻辑。·词汇注释与难句分析-$②intimacy【'rntimos】n.亲密;关系密切①marker【ma∶k?】n.标志;标识;表示Huggingprotectspeoplewhoareunderstressfromtheincreasedriskforcoldsthat'susuallyassociatedwithstress,\"notesSheldonCohen,aprofessorofpsychologyatCarnegie.结构切分∶│aprofessorofpsychologyatCarmegie.whoareunderstressthat'susuallyassociatedwithstress,同位语定语从句定语从句句子主干∶\"HuggingprotectsSheldonCohen,peoplenotesfromtheincreasediskforcolds直接引语调语主语宾语主语宾语补足语谓语功能注释∶本句引号内内容为notesSheldonCohen的直接引语，其内又嵌套两个定语从句，分别修6认准淘宝店铺∶光速考研工作室，赠送配套课程饰people和risk，说明拥抱保护的对象是处于压力之下的人们，感冒增加的风险通常和压力相关。语篇分析第三、四段具体阐释研究发现，论证观点。第三段从心理角度分析拥抱何以对健康有益。①句承上引证总结拥抱的益处;有助于降低感冒风险。定语从句whoareunderstrss暗示患病（感冒）的重要因素\"压力\"并影射拥抱的作用\"减压\"，呼应上段②句thestress-reducingeffectsofhugging;usuallyassociatedwithstress进而明确\"压力VS感冒\"的因果关联。②句进而从心理层面解释拥抱有益的原因。amarkerofintimacy（marker意为sthwhichshowsthataqualityorfeatureexistsorispresent）表层含义为\"拥抱代表了亲密关系\"，深层暗示拥抱对心理的影响∶拉近彼此的关系;and（因此）进一步得出结论，helpsgeneratethefeeling...呼应开篇helpingyoufeelcloseandconnectedtopeople...，重申拥抱对于人际间\"亲密、温暖\"关系的促进作用;状语inthefaceofdifficulty为泛指，表示\"在任何困难时（包括患病时），都预感有人会随时给予支持，化压力感为安全感\"，充分强调\"拥抱的精神疗效\"。注∶isthere意为Ifsbisthereforyou，theyhelpandsupportyou，especiallywhenyouhaveproblems\"（尤指在别人困难时）帮助支持某人\"，文中istheretohelp...表意更加明确。Ⅳ①Someexperts17thestress-reducing,health-①一些专家将拥抱的减压、与健康相relatedbenefitsofhuggingtothereleaseofoxytocin\",often关的益处归功于催产素（通常称作\"黏合荷clled\"thebonding\"hormone\"18itpromotes尔蒙\"）的释放，因为它能促进人们关系的依attachmentinrelationships,includingthatbetweenmothers恋，包括母亲和新生儿之间的依恋。②催andtheirnewbornbabies.②Oxytocinismadeprimarilyin产素主要产于大脑的中下部，其中一些释thecentrallowerpartofthebrain,andsomeofitisreleased，放进入血液中。③但是一些则留在大脑intotheblo",
+     "related_sentences": [
+      "en1_2017_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q17",
+     "number": "17",
+     "qtype": "完形",
+     "stem": "第 17 空：选择最合适的词填入空白 [17]",
+     "stem_cn": "",
+     "options": {
+      "A": "transfer",
+      "B": "commit",
+      "C": "attribute",
+      "D": "return"
+     },
+     "options_cn": {
+      "A": "转移;调动",
+      "B": "承诺，保证;忠于;投入",
+      "C": "把⋯⋯归因于⋯⋯",
+      "D": "返回;送回;退还"
+     },
+     "answer": "C",
+     "explanation": "句内语义＋动词用法。【解题思路】本题考查谓语动词，句子较长，首先明确宾语为\"拥抱的减压、有益健康等好处\"，介词to引出宾语复合结构\"某种荷尔蒙的释放\"。上文\"拥抱表明关系亲密，有助于产生被支持感（从而减缓压力）\"暗示\"拥抱发挥作用的关键在于它能加强亲密感\"，再结合空格句后半句\"它（荷尔蒙）促进关系亲密感\"，推知\"该荷尔蒙是拥抱作用背后的生理因素\"，attribute常用于attributeAtoB的结构，【C】符合文意。【错项排除】【A】或表示\"地理位置的搬迁，转移\"，或表示\"感觉、疾病、权力等的转移，传染，转让等\"，常用于transfer（sth/sb）（from...）to...结构中。【B】或表示\"某人承诺做某事，遵守协议或遵从安排等\"，常用于commitsb/yourselftosth/todoingsth结构中;两种用法均不能用于说明\"拥抱的好处（抽象内容）VS荷尔蒙（生理激素）\"之间的关系。【D】作及物动词与to搭配时，用于三种结构∶1）returnsthtosomewhere;2）returnsbtosth，3）returnsthtosth，均不能用于说明两者关系。【B】unless除非;如果不",
+     "related_sentences": [
+      "en1_2017_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q18",
+     "number": "18",
+     "qtype": "完形",
+     "stem": "第 18 空：选择最合适的词填入空白 [18]",
+     "stem_cn": "",
+     "options": {
+      "A": "because",
+      "B": "unless",
+      "C": "though",
+      "D": "until"
+     },
+     "options_cn": {
+      "A": "因为;由于",
+      "B": "用于引出\"主句所述情形不会发生或不真实\"的唯一情况/条件，而\"除非荷尔蒙促",
+      "C": "虽然，尽管;不过，可是",
+      "D": "直到⋯⋯为止;到⋯⋯时"
+     },
+     "answer": "A",
+     "explanation": "句内语义逻辑+连词用法。【解题思路】空格后\"它促进亲密关系\"说明的是\"该荷尔蒙对人际关系的积极影响\"，而上题分析后得知空格前为\"专家认为拥抱的积极作用得益于这种荷尔蒙\"，前后很明显为因果关系，即，拥抱能发挥作用源于荷尔蒙，其原因在于（拥抱时产生的）荷尔蒙会加强亲密感（减轻压力），【A】because正确。【错项排除】【B】用于引出\"主句所述情形不会发生或不真实\"的唯一情况/条件，而\"除非荷尔蒙促,认准淘宝店铺∶光速考研工作室，赠送配套课程进亲密关系，否则专家会把拥抱的好处归功于荷尔蒙的释放\"明显不合逻辑。【C】或表让步;或表轻微转折，引出对主句的补充说明，使主句语气变弱;但空格前后为顺承关系。【D】until用于\"引出主句（干）动作的终止时刻\"，而文中空格后\"促进亲密关系\"为人体通常生理情况的说明，不涉及\"时间性内容\"。【B】vanishes突然不见，消失",
+     "related_sentences": [
+      "en1_2017_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q19",
+     "number": "19",
+     "qtype": "完形",
+     "stem": "第 19 空：选择最合适的词填入空白 [19]",
+     "stem_cn": "",
+     "options": {
+      "A": "emerges",
+      "B": "vanishes",
+      "C": "remains",
+      "D": "decreases"
+     },
+     "options_cn": {
+      "A": "出现，复现;显露",
+      "B": "和",
+      "C": "仍然是;剩余;继续存在",
+      "D": "减少，降低"
+     },
+     "answer": "B",
+     "explanation": "句际语义＋动词用法。【解题思路】上句指出，催产素主要产于大脑的中下部，其中一些被释放到血液中。由someofit...和Butsomeofi...可知，两句间存在语义的对比转折，因而本句内容应该符合\"一些没有进入血液\"的大逻辑，【B】和【C】似乎都符合，但空格后whereit（Oxytocin）...mood，behaviorandphysiology暗示该激素还有其功用，不可能凭空突然消失，因而文意只能是\"一些留在大脑中\"，【C】正确。【错项排除】【A】利用其\"出现，产生\"这一释义干扰，但文中表明\"催产素本就产于大脑\"，someofit这一说法针对的是\"大脑中已有的催产素\"，即\"已生成的催产素中，有一些产生在大脑中\"，显然为矛盾说法。【D】对应的上文应该是\"一些催产素增加\"，而文中为\"被释放入血液\"。【B】combines（使）结合，组合;兼有;兼备",
+     "related_sentences": [
+      "en1_2017_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2017_cloze_q20",
+     "number": "20",
+     "qtype": "完形",
+     "stem": "第 20 空：选择最合适的词填入空白 [20]",
+     "stem_cn": "",
+     "options": {
+      "A": "experiences",
+      "B": "combines",
+      "C": "justifies",
+      "D": "influences"
+     },
+     "options_cn": {
+      "A": "经历;体验;体会",
+      "B": "表示\"将⋯⋯结合，组合在一起形成单独的事物或群体\"，文中\"它将心情、行为和生理机能结",
+      "C": "证明⋯⋯正确;为⋯⋯辩护",
+      "D": "影响，对⋯⋯·起作用"
+     },
+     "answer": "D",
+     "explanation": "句际语义＋动词辨析。【解题思路】上文\"拥抱的减压功能得益于催产素的释放\"表明，\"留在大脑中的催产素\"和\"心情、行为和生理机能\"应该是\"影响VS被影响\"的关系，【D】influences符合文意。【错项排除】【A】表示\"体会，体验某种情感或生理感受\"，但动作的发出者为人，其后为具体的感受，此处空格前主语it指\"催产素\"，而非sb，且其后宾语泛指\"心情、行为和生理机能\"，并非特指某种具体的情感。【B】表示\"将⋯⋯结合，组合在一起形成单独的事物或群体\"，文中\"它将心情、行为和生理机能结合在一起\"在语法上说得通，但逻辑上看这三者无法组合成全新事物。【C】或表示\"证明⋯⋯正确或正当\"，或表示\"为⋯⋯解释/辩护\";而文中宾语为泛指的客观存在，不涉及\"为之正名\"的问题。词汇注释与难句分析①oxytocin【，DksI'tousin】n.催产素⑤newborn【nju'bo∶n】a.新生的;初生的②bonding【'bndin】n.人与人之间的关系⑥primarily【'praimoril】ad.主要地;根本地⑦boodstream【'blAdstrim】n.体内循环的血液③hormone【'h∶moun】n.激素;荷尔蒙④attachment【o'tetJm?nt】n.依恋;爱慕⑧physiology【ifrzt'blods1】n.生理机能5语篇分析第四段从生理角度分析拥抱何以对健康有益。①句总述拥抱益处的生理因素∶催产素（即黏合荷尔蒙）的释放。attribute...to..（把⋯⋯归因于⋯⋯）分别呈现\"结果（the..benefitsofhugging总结上文对拥抱好处的论述）\"和\"原因\";过去分词结构oftencalled\"thebondinghormone\"解释说明oxytocin这一专业名词，bonding（黏结、亲密关系的形成）暗示这一激素的性质∶使人际关系更亲密;because进一步引出该结论的论据;attachmentinrelationships（其中attachment意为astrongfeelingofaffectionforsb/sth\"依恋\"）明确催产素会促进亲密的人际关系，呼应上段amarkerofintimacyandhelpsgeneratethefeeling...，从科学角度力证拥抱为何有助于减压和健康;（拥抱时）催产素释放→促进亲密关系→产生被支持感→缓解压力→有益健康。②③句具体分析催产素的工作机制。..ismadeprimarilyin...点明催产素的主要出处∶大脑中下部;并列结构someofit...Butsomeofit...串联起一组动词isreleasedintothebloodstream，remainsinthebrain，共同指出催产素的去向;influencesmood，behaviorandphysiology点明大脑中剩余催产素的作用∶影响情绪、行为和生理机能，呼应首段③句hugscanbring...完满印证\"拥抱有益于身心健康\"这一主题。℃认准淘宝店铺∶光速考研工作室，赠送配套课程",
+     "related_sentences": [
+      "en1_2017_cloze_s11"
+     ]
+    }
+   ]
   }
  ]
 }

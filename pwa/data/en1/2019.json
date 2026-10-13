@@ -1739,6 +1739,602 @@
    ],
    "sentence_count": 17,
    "question_count": 4
+  },
+  {
+   "id": "en1_2019_cloze",
+   "type": "cloze",
+   "title": "",
+   "topic": "",
+   "source": "Section I Use of English",
+   "sentences": [
+    {
+     "para": 1,
+     "en": "Today we live in a world where GPS systems, digital maps, and other navigation apps are available on our smartphones.",
+     "id": "en1_2019_cloze_s01",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "[1] of us just walk straight into the woods without a phone.",
+     "id": "en1_2019_cloze_s02",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "But phones [2] on batteries, and batteries can die faster than we realize.",
+     "id": "en1_2019_cloze_s03",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 1,
+     "en": "[3] you get lost without a phone or a compass, and you [4] can't find north, we have a few tricks to help you navigate [5] to civilization, one of which is to follow the land.",
+     "id": "en1_2019_cloze_s04",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "When you find yourselfwell [6] a trail, but not in a completely [7] area, you have to answer two questions: Which [8] is downhill, in this particular area?",
+     "id": "en1_2019_cloze_s05",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "And where is the nearest water source?",
+     "id": "en1_2019_cloze_s06",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "Humans overwhelmingly live in valleys, and on supplies of fresh water.",
+     "id": "en1_2019_cloze_s07",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 2,
+     "en": "[9] if you head downhill, and follow any H2O you find, you should [10] see signs of people.",
+     "id": "en1_2019_cloze_s08",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 3,
+     "en": "If you've explored the area before, keep an eye out for familiar sights you may be [11] how quickly identifying a distinctive rock or tree can restore your bearings.",
+     "id": "en1_2019_cloze_s09",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "Another [12] Climb high and look for signs of human habitation.",
+     "id": "en1_2019_cloze_s10",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "[13]' even in dense forest, you should be able to [14] gaps in the tree line due to roads, train tracks, and other paths people carve [15] the woods.",
+     "id": "en1_2019_cloze_s11",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "Head toward these [16] to find a way out.",
+     "id": "en1_2019_cloze_s12",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 4,
+     "en": "At night, scan the horizon for [17] light sources, such as fires and streetlights, then walk toward the glow of light pollution.",
+     "id": "en1_2019_cloze_s13",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 5,
+     "en": "[18] assuming you're lost in an area humans tend to frequent, look for the [19] we leave on the landscape.",
+     "id": "en1_2019_cloze_s14",
+     "cn": "",
+     "words": []
+    },
+    {
+     "para": 5,
+     "en": "Trail blazes, tire tracks, and other features can [20] you to civilization. .1. (\u0013 14 Ji)",
+     "id": "en1_2019_cloze_s15",
+     "cn": "",
+     "words": []
+    }
+   ],
+   "questions": [
+    {
+     "id": "en1_2019_cloze_q01",
+     "number": "1",
+     "qtype": "完形",
+     "stem": "第 1 空：选择最合适的词填入空白 [1]",
+     "stem_cn": "",
+     "options": {
+      "A": "Some",
+      "B": "Most",
+      "C": "Few",
+      "D": "All"
+     },
+     "options_cn": {
+      "A": "一些;有些，一部分",
+      "B": "承担;呈现",
+      "C": "很少;几乎没有",
+      "D": "全部，所有;每一个"
+     },
+     "answer": "C",
+     "explanation": "上下文语义。【解题思路】首句指出如今我们的智能手机拥有各种导航功能;②句切入具体场景∶我们中会不带手机走进森林。可见首句意在为②句结论做铺垫∶手机导航功能强大，自然是户外必备\"神器\"，也即，没有人会不带手机就贸然入林，选项中表否定含义的代词只有【C】Few。【错项排除】\"我们中的一些人/大部分人/所有人会在没有手机的情况下走进森林\"均传达\"手机并非必需\"之意，与首句信息相悖。【B】take（on）承担;呈现",
+     "related_sentences": [
+      "en1_2019_cloze_s02"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q02",
+     "number": "2",
+     "qtype": "完形",
+     "stem": "第 2 空：选择最合适的词填入空白 [2]",
+     "stem_cn": "",
+     "options": {
+      "A": "put",
+      "B": "take",
+      "C": "run",
+      "D": "come"
+     },
+     "options_cn": {
+      "A": "（on）使运行;穿戴;举办",
+      "B": "（on）利用中文思维\"手机携带电池\"干扰，但 take on sth 实指\"承担（工作/责",
+      "C": "（on）运转",
+      "D": "（on）开始;进展;开始运转"
+     },
+     "answer": "C",
+     "explanation": "句内语义十动词短语搭配。【解题思路】空格所在句意为∶但是手机电池，而电池耗尽的速度会比我们意识到的更快。\"空格动词＋on\"需体现\"手机\"与\"电池\"的关系，由句首But（体现上下文语义转折∶手机功能固然强大，但一切最终取决于电池）以及常识\"手机是依靠电池提供能量才得以运转\"可以判断【C】正确，runon为固定搭配，表示\"（机器/设备依靠某种能源）运转\"。认准淘宝店铺∶光速考研工作室，赠送配套课程【错项排除】【A】put（on）利用其\"使运行\"的用法干扰，但\"AputonB\"意为\"A开动/发动了B\"，如Hegotupandputonthelight.（他起身打开了灯。），而文中\"手机VS电池\"之间实为\"依靠（运转）VS被依靠\"的关系。【B】take（on）利用中文思维\"手机携带电池\"干扰，但takeonsth实指\"承担（工作/责任）\"或\"呈现（新面貌/品质）\"。【D】come（on）虽可表示\"开始运转\"，但这里on为\"副词\"，用于修饰come，其后不接宾语，如Thecentralheatingcomeson.（中央供热系统开始工作。）;而文中on为介词，用以说明事物（手机和电池）之间的关系。【B】If如果;是否;即使",
+     "related_sentences": [
+      "en1_2019_cloze_s03"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q03",
+     "number": "3",
+     "qtype": "完形",
+     "stem": "第 3 空：选择最合适的词填入空白 [3]",
+     "stem_cn": "",
+     "options": {
+      "A": "Since",
+      "B": "If",
+      "C": "Though",
+      "D": "Until"
+     },
+     "options_cn": {
+      "A": "自⋯⋯以来;因为，既然",
+      "B": "符合文意",
+      "C": "尽管;不过",
+      "D": "直到⋯⋯为止"
+     },
+     "answer": "B",
+     "explanation": "句内语义逻辑。【解题思路】本题考查句内逻辑，从句、主句大意分别为\"在没有导航工具的情况下迷路\"、\"我们有一些技巧能助你确定路线⋯⋯\"，很明显，\"迷路\"构成\"帮你找路\"的\"假设性前提\"，【B】If符合文意。【错项排除】【A】Since引出真实情况（既成事实），如Sinceyouareunabletoanswer，perhapsweshouldasksomeoneelse.（既然你回答不了，那我们也许该问问别人。），而原文\"迷路\"为假设性情况。【C】Though看似符合逻辑∶尽管你迷路了，但我们有办法⋯⋯。但一方面该词同样引出的是既有事实，其次主句因从句内容而显得\"让人诧异或不可能\"，而\"有办法\"并不因\"迷路\"而让人明显感到意外。【D】Until引出主句所述事件终止的时间，如Hewaiteduntilshehadfinishedspeaking.（她讲完话之前他一直在等/之后没等了。），但\"迷路前我们能为你提供找到路的技巧/迷路后不再提供技巧\"显然逻辑混乱。【B】relatively比较而言，相对地",
+     "related_sentences": [
+      "en1_2019_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q04",
+     "number": "4",
+     "qtype": "完形",
+     "stem": "第 4 空：选择最合适的词填入空白 [4]",
+     "stem_cn": "",
+     "options": {
+      "A": "formally",
+      "B": "relatively",
+      "C": "gradually",
+      "D": "literally"
+     },
+     "options_cn": {
+      "A": "正式地;礼貌地",
+      "B": "表",
+      "C": "逐渐地，逐步地",
+      "D": "的确，确实;根据字面意思"
+     },
+     "answer": "D",
+     "explanation": "句内语义十副词辨析。【解题思路】\"找不到北\"与其前的\"在没有手机和指南针的情况下迷路\"形式上由and相连，语义统一但更进一步∶迷路→且方向感尽失，故空格处副词只能表示肯定或强调，【D】literally用于\"强调所说内容为真，尽管听起来有些夸张\"，符合文意。【错项排除】【A】formally表示\"行为正式/有礼貌\"，如formallyrecognizethenewgovernment（正式承认新政府），而文中的被修饰对象\"找不到北\"属于日常情形，且不涉及\"礼貌\"与否。【B】relatively表示\"（与其他相比）相对、相当地\"，如relativelyeasy（相对/比较容易），而文中空格词修饰整个句子，且can'tfindnorth也不涉及\"程度\"。【C】gradually多形容过程的渐进性，但\"找不到北\"强调结果，而非过程。【B】next（时间）紧接着的;（位置）离得最近的",
+     "related_sentences": [
+      "en1_2019_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q05",
+     "number": "5",
+     "qtype": "完形",
+     "stem": "第 5 空：选择最合适的词填入空白 [5]",
+     "stem_cn": "",
+     "options": {
+      "A": "back",
+      "B": "next",
+      "C": "around",
+      "D": "away"
+     },
+     "options_cn": {
+      "A": "回到原处;恢复原状",
+      "B": "离开;不在（某地）上",
+      "C": "环绕;围绕",
+      "D": "离开;朝另一个方向"
+     },
+     "answer": "A",
+     "explanation": "句内语义逻辑。【解题思路】空格所在句意为，如果你（在林中）迷路，我们有一些技巧可以助你确定路线__文明社会。上下文语境表明civilization与woods构成\"文明社会VS原始丛林\"的对立，而helpnavigate意为\"助你找回/明确方向\"，故__tocivilization应体现\"返回文明社会\"之意，【A】back正确。【错项排除】各项副词均体现方位，从副词本身含义看，\"紧挨/围绕/离开文明\"均不合语义;从用法看，【C】around可用于navigateyourwayaroundsth结构中，意为\"辨明方向，走出某地\"，【D】away通常用于navigateawayfrom...结构中，表示\"离开某地\"，如navigateawayfromthepage（离开该网页）;但原文civilization为\"迷路后找寻的目的地\"，而非\"迷路/逃离之地\"，且之前有介词to。词汇注释与难句分析⑤die【dal】v0.停止运转①GPS全球定位系统（GlobalPositioningSystem）②navigation【in?vl'ger【jon】n.导航;领航⑥compass【'kAmpos】n.指南针，罗盘⑦trick【trnk】n.诀窍;技巧③straight【strent】ad.径直;笔直地①battery【betori】n.电池⑧navigate【'nceviget】v.找到正确的行进方向2认准淘宝店铺∶光速考研工作室，赠送配套课程Ifyougetlostwithoutaphoneoracompass,andyouliterallycan'tfindnorth,afewtricksmayhelpyounavigatebacktocivilization,oneofwhichistofollowtheland.定语从句afewtricksmayhelpyounavigatebacktocivilizationoneofwhichistofollowtheland.宾补主语主语系动词表语谓语宾语条件状语从句Ifdyouliteallycan'tfindnorth,yougetlostwithoutaphoneoracompass,and状语衔接词主语1谓语1连词主语2状语谓语2宾语功能注释∶本句中helpyounavigatebacktocivilization说明所述技巧的功用∶帮助迷路者重返文明社会，oneofwhich引导定语从句，引出其中一个技巧∶沿着陆地走。语篇分析首段开启文章话题∶在无导航工具的情况下迷失在森林中的应对方法。前三句铺垫问题，末句明确主题;就问题提供对策。①②句（欲抑）先扬，展现手机的强大;导航功能完备。available（意为suitableorreadyforuse;athand）强调各种导航功能的唾手可\"用\"——只需拿起手机。②句thewood回应首句\"导航\"内容，暗示文章背景\"户外旅行\"。双重否定Few＋without、强调副词just、以及straight叠加三重强调效果，突显手机的\"标配\"地位。③句后抑，点明手机的局限性∶全靠电池运行，而电池极易耗尽，fasterthanwerealize以比较级形式凸显手机耗电之快。④句进而引出主题;在没有手机或其他导航工具的情况下迷路后的对策。getlostwithoutaphoneoracompass与literallycan'tfindnorth共同设定极端（但常见的）场景以反衬对策;helpyoutonavigatebacktocivilization（civilization指\"文明社会、现代生活环境\"）以文艺的笔触表明文章用意∶助你从\"蛮荒\"重返\"文明\";oneofwhich定语从句起到过渡句作用，引出对策之一\"沿陆地走\"，正式开启下文论述。Ⅱ④Whenyoufindyourself6atrail\",butnotin①当发现自己偏离路线，但又并非acompletely7areaofland,youhavetoanswertwo身处完全陌生的区域时，你必须回答两questions∶Which8isdownhill2，inthisparticulararea?个问题∶在这片区域，哪边是下坡方向?Andwhereisthenearestwatersource?②Humans最近的水源又在哪里?②绝大多数人居overwhelminglyliveinvalleys,andonsuppliesoffresh住在山谷中，依靠淡水供应生活。③所water\".③9,ifyouheaddownhill,and",
+     "related_sentences": [
+      "en1_2019_cloze_s04"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q06",
+     "number": "6",
+     "qtype": "完形",
+     "stem": "第 6 空：选择最合适的词填入空白 [6]",
+     "stem_cn": "",
+     "options": {
+      "A": "onto",
+      "B": "off",
+      "C": "across",
+      "D": "alone"
+     },
+     "options_cn": {
+      "A": "到⋯⋯上，朝⋯⋯上",
+      "B": "符合文意",
+      "C": "穿过，越过;朝，向",
+      "D": "沿着，循着"
+     },
+     "answer": "B",
+     "explanation": "介词搭配。【解题思路】上段末句指出，迷路后的对策之一是沿着陆地走。本句指出，当发现自己小路/路线，但又⋯⋯时，你必须回答两个问题∶在这片区域内哪一⋯⋯是下坡路?最近的水源在哪里?可见，上段末与本句构成\"概说（迷路后的对策）→细说\"的语义场，故本句Whenyoufindyourself___atrail实际在重申上述假设前提（When表示\"条件\"），即\"如果迷路\"，off作介词可表\"偏离\"，由程度副词well（大大地，远远地）修饰，意为\"完全偏离路线/迷路\"，故【B】符合文意。【错项排除】\"到小路上去\"、\"横穿小路\"或\"循着小路走\"均与\"迷路\"的语境不符，排除【A】、【C】、【D】。【B】uncrowded不拥挤的",
+     "related_sentences": [
+      "en1_2019_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q07",
+     "number": "7",
+     "qtype": "完形",
+     "stem": "第 7 空：选择最合适的词填入空白 [7]",
+     "stem_cn": "",
+     "options": {
+      "A": "unattractive",
+      "B": "uncrowded",
+      "C": "unchanged",
+      "D": "unfamiliar"
+     },
+     "options_cn": {
+      "A": "无吸引力的;不好的",
+      "B": "用于形",
+      "C": "未改变过的",
+      "D": "不熟悉的，不了解的"
+     },
+     "answer": "D",
+     "explanation": "形容词辨析。【解题思路】but表明\"并非身处完全___的区域\"与\"发现自己远离小路（即迷路）\"构成对比转折，而not再度转折，则inacompletely___area应该与welloffatrail同指\"迷路\"，意即\"身处完全陌生之地\"，故【D】unfamiliar符合文意。【错项排除】【A】unattractive强调\"（人或物的外表）无吸引力，不招人喜爱\"，【B】uncrowded用于形容\"（某地）不拥挤\"，均与\"迷路\"的大语境无关。【C】unchanged表示\"一段时间内未曾改变过\"，\"不在完全未改变过的地方\"暗示所处之地相较过去有一定程度的变化，但同时也暗示迷路者对此区域较为熟悉（才会意识到变化），而下文给出的建议是\"寻找下坡和水源地\"，而不是具体的熟悉之物，说明迷路者对该区域不够熟悉，故选项与该文意不符。",
+     "related_sentences": [
+      "en1_2019_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q08",
+     "number": "8",
+     "qtype": "完形",
+     "stem": "第 8 空：选择最合适的词填入空白 [8]",
+     "stem_cn": "",
+     "options": {
+      "A": "site",
+      "B": "point",
+      "C": "way",
+      "D": "place"
+     },
+     "options_cn": {
+      "A": "场所，地方",
+      "B": "观点;位置",
+      "C": "方向;路线",
+      "D": "地方，地点"
+     },
+     "answer": "C",
+     "explanation": "名词辨析。【解题思路】空格所在句介绍迷路时必须思考的两个问题∶哪一是下山/下坡/向下的?最近的水源在哪里?由②句\"绝大多数人住在山谷中（山谷地势较低）\"和③句\"如果你朝下坡方向走（headdownhill）⋯⋯就应该能看到人的迹象\"可知，下坡方向有人类居住的可能性极大，迷路者的目的地既然是文明社会，downhill应是其努力辨明并选择走的方向，whichway...为固定用法，表示\"某方向、往某方向\"，【C】way正确。【错项排除】其余三项虽能表示\"位置\"，但与Which搭配不能表示\"方向、方位\"，无法与downhill形成对照。",
+     "related_sentences": [
+      "en1_2019_cloze_s05"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q09",
+     "number": "9",
+     "qtype": "完形",
+     "stem": "第 9 空：选择最合适的词填入空白 [9]",
+     "stem_cn": "",
+     "options": {
+      "A": "So",
+      "B": "Yet",
+      "C": "Instead",
+      "D": "Besides"
+     },
+     "options_cn": {
+      "A": "因此，所以",
+      "B": "但是，然而",
+      "C": "相反;而;却",
+      "D": "除此之外"
+     },
+     "answer": "A",
+     "explanation": "上下文语义逻辑。【解题思路】本题考查②③句之间的逻辑关联，②句意为∶（森林里）绝大多数人住在山谷中，依靠淡水供应生活，③句意为∶如果你朝下坡且顺着发现的水走，⋯⋯应该会看到人的迹象。可见③句是基于②句常识得出的逻辑结论，【A】So符合文意。【错项排除】【B】Yet表转折;【C】Instead表取舍，用于说明\"没做A，相反，做了B\"，如Geoffdidn'tstudylaw.Instead，hedecidedtobecomeanactor.（杰夫没学法律。相反，他决定当演员。）;【D】Besides用于在前述内容基础上补充说明另一层信息或原因，如Ineedthemoney.Andbesides，whenIagreetodosomething，Ⅰdoit.（我需要这笔钱。而且，我一旦答应做什么事情就会做到。）;而空格前后不存在转折、取舍或并列递进关系。",
+     "related_sentences": [
+      "en1_2019_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q10",
+     "number": "10",
+     "qtype": "完形",
+     "stem": "第 10 空：选择最合适的词填入空白 [10]",
+     "stem_cn": "",
+     "options": {
+      "A": "immediately",
+      "B": "intentionally",
+      "C": "unexpectedly",
+      "D": "eventually"
+     },
+     "options_cn": {
+      "A": "即刻，马上;立即",
+      "B": "故意地，蓄意地",
+      "C": "出人意料地",
+      "D": "终于，最终"
+     },
+     "answer": "D",
+     "explanation": "句内语义逻辑。【解题思路】句子架构if...，youshould...（如果⋯⋯，你应该会⋯⋯;此处should用于\"表示预期\"，指\"应该会、可能\"）明确\"条件→结果\"的句内逻辑，即主句中\"\"看到人的迹象\"是从句中条件\"朝下坡方向走\"达成的结果，选项中符合文意的只有【D】eventually，该词强调\"（经过一番困难后）最终\"，符合\"一路向下、同时不断追寻水源\"的语境。【错项排除】【A】immediately强调时间之快，与\"迷路后短时间内找不到方向、需花费一定时间寻找人迹\"的文意相悖。【B】intentionally含贬义，常用语境为\"蓄意/故意带来伤害\"，含义和语义色彩均与原文不符。【C】unexpectedly表示\"意料之外\"，而基于②句惯常情形，\"沿下坡和水源而行\"自当会\"发现人迹\"，这是意料中的结果。词汇注释与难句分析·①trail【tren】n.〔乡间或森林里的〕小路;痕迹;踪迹④overwhelmingly【oov?'welmri】ad.压倒性地⑤freshwater淡水②downhill【daon'hn1】a.下坡的⑥H2O水的化学分子式③source【sos】n.〔溪流的〕发源地，源头;来源4认准淘宝店铺∶光速考研工作室，赠送配套课程-语篇分析第二段介绍第一种迷路情况及对策。①句表明\"在不完全陌生之地迷路\"的对策∶顺着下坡方向以及水源走。welloffatrail对上文末句getlost进行细化说明;butnotinacompletelyunfamiliararea转而弱化前述well（大大地）的程度∶但没彻底迷失。Which与where引出应对措施;确定下坡方向及最近水源。②③句解释对策为何有效。So关联两句逻辑∶鉴于人类⋯⋯的习性，这么做应能发现人迹。freshwater、HzO和downhill与①句watersource、downhill的复现提示动词链条head...follow...接①句\"自问\"明确具体做法;eventually一词内涵饱满，形象展现迷路者在历经多重挫折后最终柳暗花明，重寻人类迹象的喜悦;注意此处should不是表示\"建议、要求\"，而是表推测∶你应该会⋯⋯。.⋯..⋯.⋯..............⋯⋯⋯ⅢIfyou'veexplored\"theareabefore,keepan如果你以前曾探索过这一区域，请密切留eyeoutfor2familiarsights°—youmaybe_11意熟悉的景物———你可能会惊讶于认出一块特howquicklyidentifyingadistinctiverockortreecan别的岩∶石或一棵特别的树竞能如此迅速地让人restoreyourbearings.重获方向。。,..e...--....-真题精解.",
+     "related_sentences": [
+      "en1_2019_cloze_s08"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q11",
+     "number": "11",
+     "qtype": "完形",
+     "stem": "第 11 空：选择最合适的词填入空白 [11]",
+     "stem_cn": "",
+     "options": {
+      "A": "surprised",
+      "B": "annoyed",
+      "C": "frightened",
+      "D": "confused"
+     },
+     "options_cn": {
+      "A": "惊讶的，诧异的",
+      "B": "烦恼的，生气的",
+      "C": "受惊的，害怕的",
+      "D": "困惑的，糊涂的;不清楚的"
+     },
+     "answer": "A",
+     "explanation": "句内语义＋形容词辨析。【解题思路】破折号后内容是对其前建议\"密切关注熟悉景物\"的解释说明（adistinctiverockortree具化familiarsights），表明这么做的意义∶认出某熟悉景物会让人迅速找回方向感。howquickly引导的感叹句体现对耗时之短的惊叹，空格词应与该惊叹语气一致，为积极正向语义，【A】surprised符合文意。【错项排除】【B】annoyed、【C】frightened与【D】confused均为负面、消极情绪，与文中感叹句howquickly...canrestoreyourbearings所暗含的积极正向文意不符，故排除。【知识补充】\"系动词＋表示精神/情感作用的形容词（或过去分词）\"在语法上相当于一个及物动词，后可接that引导的宾语从句（本句中that省略，感叹句howquickly...充当宾语从句），表示精神/情感的施加对象/释放背景，如Ⅰamsure（=believe）thatheisathome.（我确信他在家。）。·词汇注释与难句分析·④identify【al'dentifa】v.认出，识别;发现①explore【k'splo∶】v.探险;考察;勘查⑤distinctive【d'stnktiv】a.独特的，与众不同的②keepaneyeout/openfor...密切注意⋯⋯⑥bearing【beor1!】n.方向，方位③sight【sat】n.景物，景象.......Ifyou'veexploredtheareabefore,keepaneyeoutforfamiliarsights—youmaybesurprisedhowquicklyidentifyingadistinctiverockortreecanrestoreyourbearings.howquicklyidentifyingadistinctiverockortreecanrestoreyourbearings.Ifyou'veexploredtheareabefore,宾语谓语状语现在分词短语作主语条件状语从句宾语从句破折号后内容补充说明结果、keepaneyeoutforfamiliarsights-youmaybesurprised祈使句型功能注释∶本句中keepaneyeoutforfamiliarsights为祈使句型（动词原形＋名词），宾语从句howquickly...为how引导的感叹句，强调熟悉景物对于恢复方向感的重要性。认准淘宝店铺∶光速考研工作室，赠送配套课程-语篇分析第三段介绍第二种迷路情形及对策。Ifyou'veexploredtheareabefore呼应上段Whenyoufindyourself...notinacompletelyunfamiliararea，开启对\"相对熟悉区域（探索过的区域）\"迷路情形的介绍;祈使句型keepaneyeoutfor点明对策内容;留意熟悉景物。本段以\"破折号＋解释（通过预想当事人心态）\"的方式实现与上段②③句相同的功能∶说明\"对策为何有效\"。\"surprised＋感叹句型howquickly...canrestore...\"凸显一石一木等熟悉景物对于快速恢复方位感的重要作用。⋯⋯⋯⋯⋯.⋯.⋯⋯⋯⋯⋯⋯⋯⋯.⋯⋯⋯⋯Ⅳ①Another_12_:Climbhighandlookforsigns①还有个选择∶登高并寻找人类居住的ofhumanhabitation\".②_13__,evenindenseforest,迹象。②例如，即便身处茂密的森林之中，你youshouldbeableto14gapsinthetreelinedueto也应该能够发现人们在树林中开辟道路、铁roads,traintracks,andotherpathspeoplecarve15轨和其他小路而形成的林木线缺口。③朝这thewoods.③Headtowardthese16_tofindaway些缺口走以便找到出路。④夜间，仔细眺望out.③Atnight,scan2thehorizonfor17light地平线，寻找，诸如火和路灯之类的人造光源，sources,suchasfiresandstreetlights,thenwalktoward然后朝光污染造成的光亮走。theglow\"oflightpollution2............+......-...",
+     "related_sentences": [
+      "en1_2019_cloze_s09"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q12",
+     "number": "12",
+     "qtype": "完形",
+     "stem": "第 12 空：选择最合适的词填入空白 [12]",
+     "stem_cn": "",
+     "options": {
+      "A": "problem",
+      "B": "option",
+      "C": "view",
+      "D": "result"
+     },
+     "options_cn": {
+      "A": "问题;困难",
+      "B": "选择;可选择的东西",
+      "C": "（理解）方法、方式;观点",
+      "D": "结果，后果"
+     },
+     "answer": "B",
+     "explanation": "上下文语义＋名词辨析。【解题思路】第二段介绍迷路后的一种对策\"朝下坡方向、顺着水源走，以寻找人迹\";第三段介绍在曾探索过区域迷路后的对策\"寻找熟悉景物\"。第四段①句冒号后内容\"登高并寻找人类居住的迹象\"在语义上与前述内容构成并列关系，故本段应开始介绍第三种对策，option内涵为\"可供选择的事物、选项\"，用在此处可以代指\"（可供选择的）对策\"，故【B】正确。【错项排除】\"登高并寻找人类居住的迹象\"是针对迷路这一问题给出的解决方案/达成（找到路）结果的途径，既非问题本身，也非圆满结果，故排除【A】problem、【D】result。【C】view源于中文思维\"从不同的视角/角度来解决问题\"，但这里的\"方式\"特指\"理解或思考某事的方式（awayofunderstandingorthinkingaboutsth）\"，如Hehasanoptimisticviewoflife.（他乐观地看待人生。），而文中\"登高寻找人类迹象\"属于行为建议，并非思维方式。",
+     "related_sentences": [
+      "en1_2019_cloze_s10"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q13",
+     "number": "13",
+     "qtype": "完形",
+     "stem": "第 13 空：选择最合适的词填入空白 [13]",
+     "stem_cn": "",
+     "options": {
+      "A": "Above all",
+      "B": "In contrast",
+      "C": "On average",
+      "D": "For example"
+     },
+     "options_cn": {
+      "A": "最重要的是;首要的是",
+      "B": "对比之下",
+      "C": "平均来看，通常",
+      "D": "例如"
+     },
+     "answer": "D",
+     "explanation": "上下文语义逻辑。【解题思路】①句引出对策内容;登高并寻找人类居住的迹象。②③句指出，即便身处密林之中，也应该能⋯⋯由于人们开辟道路、铁轨和其他小路而造成的林木线缺口，朝这些⋯⋯.走以便找到出路。由文意可知，②句\"林木线缺口（gapsinthetreeline）\"是人力为之的结果，应属于①句\"人类居住的迹象（signsofhumanhabitation）\"，故①句与②③句构成\"抽象→具化\"的例证关系，【D】Forexample正确。【错项排除】【A】Aboveall表递进，用于引出所述内容中最重要或特别的一点，如Neverwasteanything，andaboveallneverwastetime.（永远别浪费任何东西，尤其不要浪费时间。），而文中\"即使在密林中，你也能⋯⋯\"显然不是\"作者要极力凸显的某种对策\"。【B】Incontrast用于引出与前述内容反差鲜明的情形，而文中前后为顺承关系，都在论述\"林中迷路的情况\"。【C】Onaverage利用其中文释义\"通常\"干扰，但该词内涵为\"基于多项数值得出平均值或平均水平，对某事发生的频次、人们基行为的情况等做结论\"，而非\"单纯论断大体情形\"，如Onaverage，menstillearnmorethanwomen.（平均来看，男性仍比女性挣得多。）。6认准淘宝店铺∶光速考研工作室，赠送配套课程",
+     "related_sentences": [
+      "en1_2019_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q14",
+     "number": "14",
+     "qtype": "完形",
+     "stem": "第 14 空：选择最合适的词填入空白 [14]",
+     "stem_cn": "",
+     "options": {
+      "A": "bridge",
+      "B": "avoid",
+      "C": "spot",
+      "D": "separate"
+     },
+     "options_cn": {
+      "A": "弥合，消除;在⋯⋯上架桥",
+      "B": "避免;躲避",
+      "C": "发现;注意到;看出",
+      "D": "把⋯⋯隔开，分离;分辨"
+     },
+     "answer": "C",
+     "explanation": "动词辨析。【解题思路】由上题分析可知，②③句例证说明①句，空格后gapsinthetreeline（林木线缺口）是①句signsofhumanhabitation（人类居住迹象）的具化，上文指出迷路后可以登高来寻找人类居住的迹象，空格词应该与①句lookfor语义接近，说明\"寻找、发现（林木线缺口）\"的文意，【C】spot符合文意。【错项排除】【A】、【B】均可与gaps搭配，但bridgegaps/thegap表示\"弥合鸿沟、填补空白\"，avoidgaps表示\"避免缺口/差距\"，均与\"登高远眺、寻找人迹\"的语境无关。【D】separate利用中文义项\"分辨、区分\"干扰，但用于separateAfromB结构，表示\"看出/展示两者差异\"，而非\"辨别/识别某物（缺口）\"。",
+     "related_sentences": [
+      "en1_2019_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q15",
+     "number": "15",
+     "qtype": "完形",
+     "stem": "第 15 空：选择最合适的词填入空白 [15]",
+     "stem_cn": "",
+     "options": {
+      "A": "from",
+      "B": "through",
+      "C": "beyond",
+      "D": "under"
+     },
+     "options_cn": {
+      "A": "自，从，由",
+      "B": "穿过，通过;切断，切开",
+      "C": "超出;在⋯的另一边",
+      "D": "在⋯⋯下 面"
+     },
+     "answer": "B",
+     "explanation": "介词搭配。【解题思路】空格位于修饰roads，traintracksandotherpaths的定语从句（that）peoplecarve_thewoods中，已知关联为\"道路、铁轨等是由人们铺就而成\"，故本题实质转化为\"考查roads...与woods之间的（方位）关联\"。由因果标记词dueto可知，roads...即为林木线缺口的原因，可见它们位于森林之中，是人们开辟的结果，carvearoadthroughaplace为常见用法，表示\"建起贯穿某地的道路\"，介词through表示\"从一端到另一端\"，【B】正确。【错项排除】【A】from可用于carvesthfromsth结构中，表示\"减少，削减\"，如Thecompanycarved$1millionfromitsbudget.（公司从预算中削减了100万美元。），但森林和道路并非\"整体VS个体\"的关系，\"从森林中削减道路\"不合逻辑。beyondthewoods表示\"在森林的另一边\"，underthewoods表示\"在森林下面\"，均与原文\"在密林之中迷路\"的文意不符，排除【C】、【D】。【B】links联系，关联;线路",
+     "related_sentences": [
+      "en1_2019_cloze_s11"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q16",
+     "number": "16",
+     "qtype": "完形",
+     "stem": "第 16 空：选择最合适的词填入空白 [16]",
+     "stem_cn": "",
+     "options": {
+      "A": "posts",
+      "B": "links",
+      "C": "shades",
+      "D": "breaks"
+     },
+     "options_cn": {
+      "A": "工作，职位;柱，杆",
+      "B": "含\"（铁路/公",
+      "C": "背阴处，阴凉处;阴影",
+      "D": "裂口，缺口;休息"
+     },
+     "answer": "D",
+     "explanation": "上下文语义。【解题思路】由these的回指功能可知，解题线索在上文②句核心信息中。②句核心内容为∶登高便能发现各种林木线缺口（gaps）。可见本句\"朝着它们走应该能找到出路\"中\"它们\"指代\"缺口\"，空格词应与②句gaps近义，【D】breaks符合文意。【错项排除】【A】posts含\"木杆、木桩\"之意，看似可与上文②句woods呼应;【B】links含\"（铁路/公路/电话线等）线路\"之意，看似可与②句roads，traintracks，andotherpaths呼应;【Cshades意为\"背阴处、阴凉处\"，看似可与②句trees构成\"树荫\"干扰;但三项均歪曲了these的回指内容。【B】mysterious神秘的，难以解释的",
+     "related_sentences": [
+      "en1_2019_cloze_s12"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q17",
+     "number": "17",
+     "qtype": "完形",
+     "stem": "第 17 空：选择最合适的词填入空白 [17]",
+     "stem_cn": "",
+     "options": {
+      "A": "artificial",
+      "B": "mysterious",
+      "C": "hidden",
+      "D": "limited"
+     },
+     "options_cn": {
+      "A": "人造的，人工的;人为的",
+      "B": "",
+      "C": "隐藏的，隐秘的;潜在的",
+      "D": "有限的"
+     },
+     "answer": "A",
+     "explanation": "形容词辨析。【解题思路】已知①句总体介绍迷路后的又一项对策，④句Atnight提示③句Headtoward...和④句scanthe...分别是白天和夜晚时的具体做法。因此④句scanthehorizonfor__lightsources应该对应①句lookforsignsofhumanhabitation，字格词应与human对应。再由suchas可知，firesandstreetlights是lightsources的具体例证，而\"火和路灯\"的共同特征是\"人造光源\"，【A】artificial正确。【错项排除】其他三项虽均可与lightsources搭配，但\"神秘的/隐秘的/有限的光源\"既无法体现\"人类居住的迹象\"，也无法概括\"火和路灯\"的共同特征。词汇注释与难句分析⑤scan【sken】v.细看，审视，查找①habitation【h?br'telfon】.居住;住宅⑥horizon【h?'raizon】n.地平线②dense【dens】a.茂密的，密集的，稠密的⑦glow【glou】n.光亮;光辉③treeline林木线;指高海拔或高纬度地区树木生长⑧lightpolution光污染的上限④carve【ka∶v】v.切;雕刻7认准淘宝店铺∶光速考研工作室，赠送配套课程语篇分析-第四段介绍通常情况下（在完全陌生之地）迷路的对策。①句总括具体对策内容。Climbhigh、signsofhumanhabitation分别呼应第二段末headdownhill、signsofpeople，提示文章就\"寻找人迹\"这一目标，将叙述视角从上段\"向下（行）\"转向本段\"登高（望）\"，明确Anotheroption（另一种可选对策）引出另一种可选对策。②句以极端情形（evenindenseforest）为例说明对策的有效性。结合dueto以及定语从句peoplecavethroughthewoods，可以明确gapsinthetreeline和roads，traintracks，andotherpaths关联∶前者因后者而成，因人类活动所致。③句顺势给出对策∶顺着缺口找出路。thesebreaks回指②句gaps.。④句以动作链scan...thenwalktoward...明确夜晚时的做法∶搜寻人造光源。theglowoflightpollution复现lightsources。注∶光污染指来自街道和家用光的光亮，掩盖了夜空并阻碍对微弱星光的观察。V①_18,assuming\"you'relostinanarea①最后，假设你在人类经常出没的地方humanstendtofrequent\",lookforthe19weleave迷路，请寻找我们在地面景观上留下的痕迹。onthelandscape~.②Trailblazes\",tiretracks,and②小路上的树皮刻痕、轮胎痕迹和其他特征otherfeaturescan_20youtocivilization.[288可以引领你走向文明社会。words]............真题精解.",
+     "related_sentences": [
+      "en1_2019_cloze_s13"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q18",
+     "number": "18",
+     "qtype": "完形",
+     "stem": "第 18 空：选择最合适的词填入空白 [18]",
+     "stem_cn": "",
+     "options": {
+      "A": "Finally",
+      "B": "Consequently",
+      "C": "Incidentally",
+      "D": "Generally"
+     },
+     "options_cn": {
+      "A": "最后，终于",
+      "B": "因此，所以",
+      "C": "顺便提一下;偶然地",
+      "D": "总体上来说;普遍地"
+     },
+     "answer": "A",
+     "explanation": "上下文语义逻辑。【解题思路】空格所在句assumingyou'relostinanarea与第二段首句Whenyoufindyourself...butnotinacompletely...area、第三段首句Ifyou'veexploredtheareabefore结构一致、内容呼应，分别引出三种假设下（在\"人类经常出没\"、\"不完全陌生\"以及\"曾探索过\"的地方迷路时）的应对之举，因此可推知空格处应引出最后一种假设下的对策，【A】Finally符合文意。【错项排除】空格后内容为另一具体对策，上下文并非\"上文因→本段果\"的逻辑，排除【B】Consequently，以及用于引出笼统性总结说明（usedtogiveasummaryofasituation，activity，oridea）的【D】Generally。【C】Incidentally或用于引出新话题、附加信息或临时想到的问题，或表示某事是\"偶然/附带性的\"，如Quiteincidentally，Igotsomeusefulinformationattheparty.（我在聚会上无意中得到了一些有用信息。），但空格后内容与上文内容均围绕\"不同情形下迷路后的对策\"展开，即便有主次先后之分，也仍然属于并列内容，而非\"随口、无意提及的内容\"。",
+     "related_sentences": [
+      "en1_2019_cloze_s14"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q19",
+     "number": "19",
+     "qtype": "完形",
+     "stem": "第 19 空：选择最合适的词填入空白 [19]",
+     "stem_cn": "",
+     "options": {
+      "A": "memories",
+      "B": "marks",
+      "C": "notes",
+      "D": "belongings"
+     },
+     "options_cn": {
+      "A": "记忆力;记忆，回忆",
+      "B": "记号;标记;迹象",
+      "C": "笔记;便条",
+      "D": "所有物;财物"
+     },
+     "answer": "B",
+     "explanation": "上下文语义＋名词辨析。【解题思路】空格所在句指出，假设你在人类经常出没的地方迷路，寻找我们在地面景观上留下的___。下文②句指出，小路上的树皮刻痕、轮胎的痕迹和其他特征可以⋯⋯文明社会。可见②句主语Trailblazes，tiretracks，andotherfeatures即为①句宾语___weleaveonthelandscape的具体例证，而它们显然是人们在地面景观上留下的痕迹，【B】marks符合文意。【错项排除】【A】memories由第三段\"假如你曾探索过某个地区\"臆断出\"人们对某地景观还有记忆，应努力找回\"，但此处论述角度并非\"自己曾到之地\"，而是\"人们经常出没之地\"。【C】notes虽有\"标记\"之意，但该词侧重\"用笔写下的待复习或备忘内容\"，【D】belongings表示\"（尤指能携带走的）个人财物\"，显然均不能指代文中\"树皮折痕与轮胎痕迹\"。",
+     "related_sentences": [
+      "en1_2019_cloze_s14"
+     ]
+    },
+    {
+     "id": "en1_2019_cloze_q20",
+     "number": "20",
+     "qtype": "完形",
+     "stem": "第 20 空：选择最合适的词填入空白 [20]",
+     "stem_cn": "",
+     "options": {
+      "A": "restrict",
+      "B": "adopt",
+      "C": "lead",
+      "D": "expose"
+     },
+     "options_cn": {
+      "A": "限制，控制;约束",
+      "B": "使适应",
+      "C": "领路;引领",
+      "D": "使暴露（ 于险境）;使接触"
+     },
+     "answer": "C",
+     "explanation": "上下文语义十动词短语搭配。【解题思路】由上题分析可知，\"小路上的树皮刻痕、轮胎痕迹和其他特征\"是迷路时可以借助的线索，而这些线索应该有助于引导人们重返文明社会。此外，本句是介绍迷路时的一种对策，应该与首段末句\"一些回到文明世界的技巧\"语义方向一致，_____youtocivilization呼应首段navigate..tocivilization，空格词应与navigate近义，【C】lead符合文意，leadsbto/intosth为固定搭配，表示\"引领某人到/进入某地\"。【错项排除】【A】restrict、【D】expose均能用于～sbtosth的结构中，如I'mrestrictingmyselftotwocigarettesaday.（我在限制自己每天只抽两支烟。）、Somechildrenareneverexposedtoclassicalmusic.（有些孩子从来没有接触过古典音乐。）;但文中\"限制到文明\"说不通，\"接触文明\"看似合理，但脱离了\"在大自然迷路，如何返回人类社会\"的语境，曲解此处civilization所指——文明社会。【B】adapt需用于adaptoneselftosth（使自己适应⋯⋯）结构中，且本文主题为\"如何从迷途返回\"，不涉及\"由迷路的森林进入文明社会后的适应问题\"。词汇注释与难句分析。1lmnunt*s①assuming【o'sju∶ml!】】comj假定，假设线）②frequent【fr'kwent】v.常去，常到〔某地方〕⑤tire【tao】n.轮胎③landscape【'l?endskeip】n，风景;地形，地貌语篇分析-第五段介绍最后一种迷路情形及对策。①句设定具体情形并介绍对策内容。Finally承上开启对最后一种情形的介绍;assumingyou'relostinanarea..与第二段Whenyoufindyourself..area（非100??生之地）、第三段Ifyou'veexploredthearea（曾探索之地）呼应，引出另一种迷路之地∶人类常出没之处;marksweleaveonthelandscape与前文roads，traintracks...、artificiallightsources等指向一致，亦为人类活动留下的痕迹。②句列举具体痕迹。Trailblazes，tiretracks，andotherfeatures是marks的下义词，明示几种明显痕迹;leadyoutocivilization呼应首段末句helpyounavigatebacktocivilization，实现首尾圆合。第二部分阅读理解PartA知识补充原文外教朗读Text1耐心是一种企业美德学-一、文章总体分析来源∶ChristianScienceMonitor《基督教科学箴言报》2015.06.24文章PatienceasaCorporateVirtue（耐心，企业的美德）。主题∶当前经济活动中短期主义盛行、危害经济发展;企业应进行长远决策，为后代建立更强健的经济。脉络∶引入\"英国银行业监管新规\"并说明其长远目的\"使企业做出更多长远决策，为后代建立更强健的经济\"（第一段）——剖析当前社会现象∶上市公司中短期主义盛行（第二至四段）——提出削弱短期主义、鼓励长期主义的方法，肯定英国新规（第五至七段）。二、语篇分析及试题精解I①Financialregulators\"inBritainhaveimposed2a英国金融监管机构针对大型银行主ratherunusualruleonthebossesofbigbanks.②Starting管强制推行了一项极不寻常的规定。从nextyear,anyguaranteed*bonusoftopexecutivescould明年起，若银行在因不当行为接受调查，bedelayed10yearsiftheirbanksareunderinvestigationfor9认准淘宝店铺∶光速考研工作室，赠送配套课程",
+     "related_sentences": [
+      "en1_2019_cloze_s15"
+     ]
+    }
+   ]
   }
  ]
 }
