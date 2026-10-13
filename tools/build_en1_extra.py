@@ -570,8 +570,31 @@ ANS_PATS_PB = [re.compile(p.pattern.replace('[A-D]', '[A-G]')) for p in ANS_PATS
 # 注意：答案标记的括号**不能**为了兼容「答案】/L答案］而放宽字符类——实测会把
 # 2022 这种本来能过的年份带成误匹配（PB_ANS 优先于通用模式，错一次就错到底）。
 PB_QSPLIT = re.compile(r'(?<![\d])(4[1-5])\s*[.．、，,「［\[]')
-PB_ANS = re.compile(r'(?<![\d])(4[1-5])\s*[.．、]?\s*[［【\[]?\s*答案\s*[］】\]]?\s*'
-                    r'[［【\[]?\s*([A-H])\s*[］】\]]?')
+# Part B 答案陈述的多种形态（十年几乎一年一个样，按优先级逐个试）：
+#   41.【答案】 C（2016/2020 标准式）      44. 答案B（2021：答案后直接跟字母）
+#   42，「答案」F（2016：全角逗号 + 直角引号）
+#   45，L答案］D / 43.［答素］G（2020：左括号 OCR 成 L、答案 OCR 成答素）
+#   【答案敲定】…敲定【C】正确（2017/2018/2019：答案写在敲定句里）
+PB_ANS_PATS = [
+    re.compile(r'(?<![\d])4[1-5]\s*[.．、]?\s*[［【\[]?\s*答案\s*[］】\]]?\s*'
+               r'[［【\[]?\s*([A-H])\s*[］】\]]?'),
+    re.compile(r'(?<![\d])4[1-5][^A-Za-z\n]{0,8}答[素案][^A-Za-z\n]{0,6}([A-H])'),
+    re.compile(r'敲定\s*[【\[]?\s*([A-H])\s*[】\]]?'),
+    re.compile(r'答案[：:]\s*([A-H])'),
+    # 排序题的排除法收尾：「至此备选段仅剩下［D］」（2023 q45）
+    re.compile(r'仅剩下\s*[［【\[]?\s*([A-H])\s*[］】\]]?'),
+    re.compile(r'(?<![A-Za-z])([A-H])\s*(?:项)?\s*'
+               r'(?:为本题答案|是正确答案|符合文意|契合文意|契合句意|正确)'),
+]
+
+
+def _pb_answer(blk, keys):
+    """按形态优先级试出 Part B 答案；都不中就退回通用判定句模式。"""
+    for pat in PB_ANS_PATS:
+        m = pat.search(blk)
+        if m and m.group(1) in keys:
+            return m.group(1)
+    return detect_answer_pb(blk, keys)
 
 
 def partb_key_blocks(year, keys):
@@ -585,27 +608,35 @@ def partb_key_blocks(year, keys):
     n = doc.page_count
     cnt = [len(PB_QSPLIT.findall(re.sub(r'\s+', ' ', doc[i].get_text())))
            for i in range(n)]
-    if not cnt or max(cnt) < 3:
+    if not cnt:
         return {}
     best = max(range(n), key=lambda i: cnt[i])
-    s, e = max(0, best - 1), min(n, best + 2)
+    if cnt[best] >= 3:
+        s, e = max(0, best - 1), min(n, best + 2)
+    else:
+        s, e = 0, n          # 密度不足 → 全册扫描（2021 的题号被拆散在多页）
     txt = re.sub(r'\s+', ' ', '\n'.join(doc[i].get_text() for i in range(s, e)))
     marks = [(m.start(), int(m.group(1))) for m in PB_QSPLIT.finditer(txt)]
     out = {}
     for k, (pos, num) in enumerate(marks):
         end = marks[k + 1][0] if k + 1 < len(marks) else len(txt)
-        if num in out:
-            continue
         blk = txt[pos:end]
-        m = PB_ANS.search(blk)
-        ans = m.group(2) if m and m.group(2) in keys else None
-        if not ans:
-            ans = detect_answer_pb(blk, keys)
-        # 解析：去掉题头与「答案/精解」标记后的正文
-        expl = re.sub(r'^\s*4[1-5]\s*[.．、，,「［\[]?\s*[［【\[]?\s*答案\s*[］】\]]?\s*'
-                      r'[［【\[]?\s*[A-H]\s*[］】\]]?\s*[［【\[]?\s*精解\s*[］】\]]?\s*', '', blk)
+        # 解析：先去题头题号（否则 split 会在位置 0 就把整段切光），
+        # 再去「答案/精解」标记。括号类要含「』（2016）和 L/J（OCR 认错的括号），
+        # 注意字符类里别多写 ]——那会把 L/J 挤到类外变成字面量。
+        expl = re.sub(r'^\s*4[1-5]\s*[.．、，,「［\[]?\s*', '', blk)
+        expl = re.sub(r'^[［【\[L「』]?\s*答案\s*[］】\]Jj」』]?\s*'
+                      r'[［【\[L「』]?\s*[A-H]\s*[］】\]Jj」』]?\s*'
+                      r'[［【\[L「』]?\s*精解\s*[］】\]Jj」』]?\s*', '', expl)
         expl = re.split(r'(?<![\d])4[1-5]\s*[.．、，,「［\[]', expl)[0]
-        out[num] = (ans, expl.strip())
+        ans = _pb_answer(blk, keys)
+        prev = out.get(num)
+        # 择优覆盖：新块检出答案 → 覆盖；新块没答案但解析长得多（答案汇总表那种
+        # 一两行的碎块要避开）→ 也覆盖
+        better = (prev is None) or bool(ans) or (not prev[0] and len(expl) > len(prev[1]))
+        if better:
+            out[num] = (ans or (prev[0] if prev else None),
+                        expl.strip() or (prev[1] if prev else ''))
     return out
 
 
