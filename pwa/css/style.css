@@ -3897,6 +3897,21 @@ mark.ap-own {
 .rc-title { font-size: 1.35rem; margin: 4px 0 8px; color: var(--text); }
 .rc-desc { color: var(--text-light); font-size: .95rem; line-height: 1.75; margin: 0 0 14px; }
 .rc-desc b { color: var(--primary); }
+/* 页面第一段：背诵三步法。类名必须独立于 RC_MK_SEL（往正文前插块会位移已存高亮） */
+#rcBig[hidden], #rcSmall[hidden] { display: none; }
+.rc-how { background: var(--card-bg); border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 10px; padding: 11px 14px 12px; margin: 0 0 12px; }
+.rc-how-h { font-size: .96rem; font-weight: 700; color: var(--text); cursor: pointer; list-style: none; user-select: none; }
+.rc-how-h::-webkit-details-marker { display: none; }
+.rc-how-h::before { content: '▾ '; color: var(--text-light); font-size: .82rem; }
+.rc-how:not([open]) > .rc-how-h::before { content: '▸ '; }
+.rc-how[open] > .rc-how-h { margin-bottom: 9px; }
+.rc-how-h span { font-size: .8rem; font-weight: 400; color: var(--text-light); margin-left: 8px; }
+.rc-how-mini { display: none; }
+.rc-how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 8px; }
+.rc-how-i { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 7px; font-size: .87rem; line-height: 1.6; color: var(--text-light); background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; }
+.rc-how-n { display: inline-flex; flex: 0 0 auto; width: 18px; height: 18px; border-radius: 50%; background: var(--primary); color: #fff; font-size: .72rem; font-weight: 700; align-items: center; justify-content: center; }
+.rc-how-i b { color: var(--text); font-size: .9rem; }
+.rc-how-i > span:last-child { flex: 1 1 100%; }
 .rc-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 22px; }
 .rc-stat { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; text-align: center; }
 .rc-stat-n { display: block; font-size: 1.35rem; font-weight: 700; color: var(--primary); font-variant-numeric: lining-nums tabular-nums; }
@@ -3950,7 +3965,7 @@ html.dark .rc-note b { color: #e0c968; }
     html.wr-zoom { font-size: 11.5pt; }
     body { background: #fff !important; }
     .rc-page { max-width: none; padding: 0; }
-    .rc-stat, .rc-card, .rc-agent, .rc-day, .rc-note, .rc-order-step, .rc-total, .rc-table { background: #fff !important; }
+    .rc-stat, .rc-card, .rc-agent, .rc-day, .rc-note, .rc-order-step, .rc-total, .rc-table, .rc-how, .rc-how-i { background: #fff !important; }
     .rc-line, .rc-agent-s, .rc-card, .rc-agent { break-inside: avoid; }
     a { color: inherit; text-decoration: none; }
 }
@@ -4335,6 +4350,21 @@ html.sw-zoom { font-size: 16.5px; }
 }
 .sw-ttab:hover { border-color: var(--primary); color: var(--primary); }
 .sw-ttab.on { background: var(--primary); border-color: var(--primary); color: #fff; }
+/* 场景范文切换条（招募志愿者 / 推荐信）：挂在类型 tab 下方，只有存在 variants 时才出现 */
+.sw-var-tabs { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: -6px 0 10px; }
+.sw-var-tip { font-size: .78rem; color: var(--text-light); letter-spacing: .02em; }
+.sw-vtab {
+    font: inherit; font-size: .8rem; padding: 3px 11px; border-radius: 999px;
+    border: 1px dashed var(--border); background: transparent; color: var(--text-light); cursor: pointer;
+    transition: background .15s, color .15s, border-color .15s;
+}
+.sw-vtab:hover { border-color: var(--primary); color: var(--primary); }
+.sw-vtab.on { border-style: solid; border-color: var(--primary); color: var(--primary); font-weight: 600; background: var(--card-bg); }
+.sw-var-note {
+    margin: 0 0 10px; padding: 7px 10px; font-size: .82rem; line-height: 1.6;
+    color: var(--text-light); background: var(--card-bg);
+    border-left: 3px solid var(--primary); border-radius: 6px;
+}
 .sw-letter {
     border: 1px solid var(--border); border-radius: 12px; background: var(--card);
     padding: 16px 18px;
@@ -5122,3 +5152,54 @@ html.dark .lex-progress .lp-dot.d1 { background: #e05260; }
     .lex-table .lx-mark { text-align: left; margin-top: 8px; }
     .lex-table .lex-detail td { padding: 8px 12px; }
 }
+/* ===== 速记页手机端（≤640px）：顶部压紧，正文别被挤到折叠线以下 =====
+   原来：三步法 3 张卡片（约 200px）+ 目录换行 2~3 行（约 110px）→ 首屏几乎看不到正文。
+   现在：三步法默认收起成一栏（标题 + 三步关键词），目录压成单行横滑。 */
+@media (max-width: 640px) {
+    .rc-page { padding: 12px 11px 64px; }
+    .rc-title { font-size: 1.18rem; margin: 2px 0 8px; }
+    .rc-vw { gap: 6px; margin-bottom: 10px; }
+    .rc-vw-btn { padding: 6px 10px; font-size: .82rem; }
+
+    .rc-how { padding: 9px 11px 10px; margin-bottom: 10px; }
+    .rc-how-h { font-size: .92rem; line-height: 1.55; }
+    .rc-how-sub { display: none; }
+    .rc-how:not([open]) > .rc-how-h { margin-bottom: 0; }
+    /* 用 .rc-how-h .rc-how-mini 提高权重：上面 .rc-how-h span 的 margin/font-size 会压过单类选择器 */
+    .rc-how-h .rc-how-mini { display: block; margin: 3px 0 0; font-size: .76rem; font-weight: 400; color: var(--primary); }
+    .rc-how[open] .rc-how-h .rc-how-mini { display: none; }
+    .rc-how-steps { grid-template-columns: 1fr; gap: 6px; }
+    .rc-how-i { font-size: .84rem; padding: 7px 9px; }
+
+    .rc-toc {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 5px;
+        padding: 7px 9px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+    }
+    .rc-toc::-webkit-scrollbar { display: none; }
+    .rc-toc a { flex: 0 0 auto; font-size: .8rem; padding: 3px 9px; }
+}
+
+/* ===== 顶栏收起按钮：手机端加大点按区域，避开状态栏/浏览器顶边 ===== */
+@media (max-width: 640px) {
+    .nav-toggle-btn {
+        top: calc(8px + env(safe-area-inset-top, 0px));
+        right: 8px;
+        width: 34px;
+        height: 34px;
+        font-size: .78rem;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+    body.nav-toggle-on .nav-tools { margin-right: 40px; }
+}
+
+/* 顶栏收起后吸顶条贴到最顶：右侧给浮在最右的 ▼ 按钮让位，免得挡住最后一个 chip */
+html[data-nav-collapsed="1"] .rc-toc,
+html[data-nav-collapsed="1"] .sw-viewbar { padding-right: 44px; }

@@ -1,4 +1,4 @@
-/* 英语二精翻 - 前端通用JS：夜间模式 + 今日学习计时器（改自 408 刷题 common.js） */
+/* 英语二精翻 - 前端通用JS：夜间模式 + 页面停留计时器（改自 408 刷题 common.js） */
 
 // ============ 夜间模式：尽早给 <html> 加 .dark，减少闪白 ============
 function isDarkOn() {
@@ -28,19 +28,17 @@ function toggleDark() {
 
 renderDarkSwitch();
 
-// ============ 今日学习计时器（按天累计，存localStorage，页面不可见时暂停） ============
+// ============ 页面停留计时器（每次打开页面自动归零，存localStorage，页面不可见时暂停） ============
+// 2026-11-09 起：每次进入/刷新页面即重置为 0 并重新开始计时，不再跨页累计「今日学习时长」。
 // 支持手动「暂停/继续」与「重置」：按钮 id 为 timerPause / timerReset（各页可选），
-// 暂停状态存 localStorage.studyTimerPaused（'1'=暂停），刷新/换页后保持。
+// 暂停状态存 localStorage.studyTimerPaused（'1'=暂停），仅在当前页面内保持。
 (function () {
     const el = document.getElementById('navTimer');
-    if (!el) return;
+    if (!el) return; // 该页面没有计时器，直接跳过
 
-    const today = new Date().toISOString().slice(0, 10);
-    if (localStorage.getItem('studyTimerDate') !== today) {
-        localStorage.setItem('studyTimerDate', today);
-        localStorage.setItem('studyTimerSec', '0');
-        localStorage.setItem('studyTimerPaused', '0');
-    }
+    // 打开新页面（含刷新）：归零并开始计时
+    localStorage.setItem('studyTimerSec', '0');
+    localStorage.setItem('studyTimerPaused', '0');
 
     function isPaused() {
         return localStorage.getItem('studyTimerPaused') === '1';
@@ -74,7 +72,7 @@ renderDarkSwitch();
     };
 
     window.resetTimer = async function () {
-        const ok = await confirmAsync('确定重置今日学习计时为 0？此操作不可撤销。', { danger: true });
+        const ok = await confirmAsync('确定重置当前页面计时为 0？此操作不可撤销。', { danger: true });
         if (!ok) return;
         localStorage.setItem('studyTimerSec', '0');
         localStorage.setItem('studyTimerPaused', '0');
@@ -238,6 +236,11 @@ function promptAsync(message, defaultValue = '', opts = {}) {
         btn.textContent = collapsed ? '▼' : '▲';
         btn.title = collapsed ? '展开顶栏' : '收起顶栏';
         localStorage.setItem(KEY, collapsed ? '1' : '0');
+        // 供 CSS 用：收起后吸顶条贴顶，右侧要给居中的 ▼ 按钮让位
+        if (collapsed) document.documentElement.dataset.navCollapsed = '1';
+        else delete document.documentElement.dataset.navCollapsed;
+        // 通知各页：顶栏高度变了（吸顶目录/视图条用它算 top，收起后要归 0）
+        try { window.dispatchEvent(new Event('navheightchange')); } catch (e) { /* ignore */ }
     }
 
     // 初始恢复（不加动画类，避免刷新闪动）
@@ -245,11 +248,16 @@ function promptAsync(message, defaultValue = '', opts = {}) {
 
     // 视口变化时重算收起态的负 margin（顶栏可能在窄屏换行变高）
     window.addEventListener('resize', () => {
-        if (navbar.dataset.collapsed !== '1') return;
-        navbar.classList.remove('nav-anim');
-        navbar.style.marginTop = -navbar.offsetHeight + 'px';
-        requestAnimationFrame(() => navbar.classList.add('nav-anim'));
+        if (navbar.dataset.collapsed === '1') {
+            navbar.classList.remove('nav-anim');
+            navbar.style.marginTop = -navbar.offsetHeight + 'px';
+            requestAnimationFrame(() => navbar.classList.add('nav-anim'));
+        }
+        try { window.dispatchEvent(new Event('navheightchange')); } catch (e) { /* ignore */ }
     });
+
+    // 供各页查询：顶栏当前是否收起（吸顶元素据此把 top 归 0）
+    window.isNavCollapsed = () => navbar.dataset.collapsed === '1';
 })();
 
 /* ===== 作文「套用示范」标注：逐句来源 / 可替换词 / 非模板词 / 词数 =====

@@ -17,6 +17,7 @@ import os
 import re
 import json
 import sys
+import copy
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -502,6 +503,12 @@ def main():
     study = ('先自己写：拿功能句对着题目写一遍（写错也没关系），写完再让 AI 按题目要求改。'
              '越少依赖 AI，你越强。')
 
+    # 场景范文（招募志愿者 / 推荐信）挂到对应类型的 letters 下：与 LETTERS 解耦，重跑不回退
+    letters_out = copy.deepcopy(EXTRA.LETTERS)
+    for _tid, _vs in (getattr(EXTRA, 'LETTER_VARIANTS', {}) or {}).items():
+        if _tid in letters_out:
+            letters_out[_tid]['variants'] = copy.deepcopy(_vs)
+
     data = {
         'meta': {
             'title': '小作文（应用文）功能句库',
@@ -515,7 +522,7 @@ def main():
         'placeholders': ph_list,
         'banks': [banks[b] for b in order],
         'types': types,
-        'letters': EXTRA.LETTERS,
+        'letters': letters_out,
         'guide': build_guide(),
         'decisions': EXTRA.DECISIONS,
         'teacher': EXTRA.TEACHER,

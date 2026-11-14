@@ -45,6 +45,17 @@
         </div>
 
         <div id="rcBig">
+        <!-- 页面第一段：先告诉用户「怎么背」，再往下是背什么 / 怎么拼 / 计划。
+             注意：这里一律用 .rc-how* 新类名，不能复用 .rc-note / .rc-order-body 等 RC_MK_SEL
+             里的选择器 —— 往正文前面插块会让已保存的划词高亮整体错位。 -->
+        <details class="rc-how" id="rcHowBig" open>
+            <summary class="rc-how-h">📖 怎么背 · 三步法 <span class="rc-how-sub">按顺序走，别一上来就背整篇</span><span class="rc-how-mini">① 背骨架 · ② 照骨架套写 · ③ 遮住英文默写</span></summary>
+            <div class="rc-how-steps">
+                <div class="rc-how-i"><span class="rc-how-n">1</span><b>先背骨架</b><span>只背第三节 ⭐ 那几段，背到能默写。</span></div>
+                <div class="rc-how-i"><span class="rc-how-n">2</span><b>照骨架套写</b><span>拿真题图表填槽，⚡ 句池现挑现抄，不用背。</span></div>
+                <div class="rc-how-i"><span class="rc-how-n">3</span><b>遮住英文默写</b><span>只看中文写一遍，错的抄 3 遍，隔天再默。</span></div>
+            </div>
+        </details>
         <p class="rc-desc" id="rcDesc">加载中…</p>
 
         <div class="rc-stats" id="rcStats"></div>
@@ -80,16 +91,16 @@
                 <table class="rc-table">
                     <thead><tr><th>阶段</th><th>天数</th><th>背什么</th><th>验收</th></tr></thead>
                     <tbody>
-                        <tr><td rowspan="3">第 1 周</td><td>D1–D3</td><td>第一段两个骨架（静态 4 句 + 动态 3 句，共 72 词）</td><td>能默写第一段</td></tr>
-                        <tr><td>D4–D5</td><td>经济类第二段骨架（33 词）+ 正面第三段骨架（31 词）</td><td>能默写两段骨架</td></tr>
+                        <tr><td rowspan="3">第 1 周</td><td>D1–D3</td><td>第一段骨架：静态分布 1 套 + 动态走势逐套过（见第三节）</td><td>能默写静态骨架</td></tr>
+                        <tr><td>D4–D5</td><td>第二段引入句 + 正面第三段立场句</td><td>能默写两段骨架</td></tr>
                         <tr><td>D6–D7</td><td>套写 2010 真题：拼出第一篇 150 词</td><td>默写一整篇</td></tr>
-                        <tr><td rowspan="2">第 2 周</td><td>D8–D11</td><td>校园类第二段骨架（正面 34 + 负面 39 词）</td><td>能默写正负两版</td></tr>
+                        <tr><td rowspan="2">第 2 周</td><td>D8–D11</td><td>动态走势其余各套 + 负面第三段立场句</td><td>能默写正负两版</td></tr>
                         <tr><td>D12–D14</td><td>滚动复习第 1 周 + 套写 2014、2019</td><td>不看稿写出两篇</td></tr>
-                        <tr><td rowspan="2">第 3 周</td><td>D15–D18</td><td>环保类（32 词）+ 体育健康类（35 词）骨架</td><td>能默写两段</td></tr>
+                        <tr><td rowspan="2">第 3 周</td><td>D15–D18</td><td>从机制句池固定 3 条顺手的 + 主体句池按题挑 1~2 句</td><td>能默写两段</td></tr>
                         <tr><td>D19–D21</td><td>滚动复习 + 套写 2013、2021</td><td>不看稿写出两篇</td></tr>
-                        <tr><td rowspan="3">第 4 周</td><td>D22–D25</td><td>文化类（33 词）+ 负面第三段（25 词）骨架</td><td>全部骨架可默写</td></tr>
-                        <tr><td>D26–D28</td><td>主体句池 6 组各挑 1 句（共 6 句）+ 弹药句池挑 10 句</td><td>会用不背错主体</td></tr>
-                        <tr><td>D29–D30</td><td>全真套写 2016、2020、2024 + 总复习</td><td>限时 25 分钟成篇</td></tr>
+                        <tr><td rowspan="3">第 4 周</td><td>D22–D25</td><td>只看中文，默写第三节全部 ⭐ 骨架</td><td>全部骨架可默写</td></tr>
+                        <tr><td>D26–D28</td><td>过一遍「数据说法速查」+「交卷前自查」</td><td>图表与格式不出错</td></tr>
+                        <tr><td>D29–D30</td><td>全真套写 2016、2020、2024 + 总复习</td><td>限时 30 分钟成篇</td></tr>
                     </tbody>
                 </table>
                 <div class="rc-day">
@@ -100,7 +111,7 @@
                     <div class="rc-day-row"><span class="rc-day-t">剩下</span>做一篇阅读，或整篇套写（第 1 周之后每天可以整篇套写）</div>
                 </div>
                 <div class="rc-note">
-                    <b>只背骨架就够了吗？</b>够。骨架 334 词撑起全文结构，句池是「弹药」——写的时候现挑现抄，
+                    <b>只背骨架就够了吗？</b>够。<b>第三节的 ⭐ 骨架撑起全文结构</b>，句池是「弹药」——写的时候现挑现抄，
                     不用背。先把骨架背到能默写，再从每段句池里挑 1~2 句用得顺手的固定下来（约 10 句），就已经覆盖绝大多数年份。
                 </div>
             </div>
@@ -113,7 +124,15 @@
         </div><!-- /rcBig -->
 
         <div id="rcSmall" hidden>
-            <p class="rc-desc" id="rcDescS">加载中…</p>
+        <details class="rc-how" id="rcHowSmall" open>
+            <summary class="rc-how-h">📖 怎么背 · 三步法 <span class="rc-how-sub">先背 4 句，再按题目挑 2 句</span><span class="rc-how-mini">① 背骨架 4 句 · ② 看动词挑 2 句 · ③ 合上书默写</span></summary>
+            <div class="rc-how-steps">
+                <div class="rc-how-i"><span class="rc-how-n">1</span><b>背骨架 4 句</b><span>问候 / 来意 / 引出 / 收尾，任何一封信都用。</span></div>
+                <div class="rc-how-i"><span class="rc-how-n">2</span><b>看动词挑 2 句</b><span>题目叫你 invite 就翻邀请类，suggest 就翻建议类。</span></div>
+                <div class="rc-how-i"><span class="rc-how-n">3</span><b>合上书写一整封</b><span>从称呼默到落款，再对答案改错。</span></div>
+            </div>
+        </details>
+        <p class="rc-desc" id="rcDescS">加载中…</p>
             <div class="rc-stats" id="rcStatsS"></div>
             <nav class="rc-toc" id="rcTocS" aria-label="小作文速记目录"></nav>
 

@@ -1,5 +1,80 @@
 # 更新日志 — 考研英语二真题精翻 PWA
 
+## [2026-11-15 速记页移动端：顶部三步法默认收起、目录单行横滑、顶栏收起后吸顶归零]
+
+- **需求**：优化 `recite.html` 手机端体验——「上面的收起不了了」「移动端太占位置」。
+- **根因**：
+  1. 三步法卡片在手机上退化成 1 列 3 张（约 200px），目录 `.rc-toc` 用 `flex-wrap: wrap`，10 个 chip 换行成 2~3 行（约 110px）→ 首屏 300px 被顶部吃掉，正文全在折叠线以下。
+  2. **顶栏收起后吸顶条不跟随**：`--nav-h` 只在加载/resize 时量一次，点 ▲ 收起后仍停留在 56~80px，吸顶目录在页面顶部留一条白带，视觉上「没收起」。收起点按区域只有 28px，手机上容易点不中。
+- **改动**：
+  - `recite.html`：三段式说明改 `<details class="rc-how" open>` + `<summary>`，新增 `.rc-how-mini`（收起时显示「① 背骨架 · ② 照骨架套写 · ③ 遮住英文默写」）。
+  - `recite.js`：新增 `rcHowInit()`——桌面默认展开、**≤640px 默认收起**，用户手动点过后按选择记住（`rc_how_open_v1`，两个视图共用）；`navH()` 在顶栏收起时返回 0，并监听新增的 `navheightchange` 重算 `--nav-h`。
+  - `js/common.js`：顶栏收起/展开、resize 后派发 `navheightchange`，并把状态写进 `html[data-nav-collapsed]`。
+  - `smallwriting.js`：`swNavH()` 同样在收起时返回 0，并监听 `navheightchange`。
+  - `style.css`：≤640px 下 `.rc-toc` 改单行横滑（`flex-wrap: nowrap` + `overflow-x: auto`，chip 不收缩）、三步法收紧、`.nav-toggle-btn` 加大到 34px + `touch-action: manipulation` + 安全区内缩；`html[data-nav-collapsed="1"]` 下吸顶条 `padding-right: 44px`，给浮在最右的 ▼ 按钮让位。
+- **验证**：`tools/verify_recite_flow.js` 扩到 **49 项全绿**（新增手机端 CSS 口径、三步法折叠状态机、`--nav-h` 归零三组断言）；`tools/verify_timer_reset.js` 增加「点 🔺🔻 收起按钮」端到端 **32/32**；全量 `tools/verify_*.js` **14/14** 通过；`node --check` × 3 通过。
+- **SW**：`en2-2f99f4c3`（139 资源）。
+
+## [2026-11-15 速记页背诵动线检查 + 第一段补「三步法」]
+
+- **需求**：检查 `recite.html` 的背诵动线逻辑；在页面第一段写一段简单易懂的背诵方法（三步法）。
+- **诊断（jsdom 实跑 recite.html）确认的 5 处动线问题**：
+  1. 页面第一段（`rcDesc`）只说「背什么」，没有「怎么背」的入口；「二、怎么拼」讲的是**考场写作顺序**，不是背诵顺序，真正的背诵节奏埋在第五节 30 天计划里。
+  2. 「二、怎么拼」把动态走势写成**写死的 3 套**（28/43/44 词），但 `writing_templates.json` 早已新增「④ 先稳后急」（31 词），第三节渲染 4 套 → 页面自相矛盾。
+  3. 目录第一项缺编号「①」，正文用「一、二…」，目录用「②③④…」；且两个视图各注册一个 scroll spy，**隐藏视图内元素 rect 全 0**，切换视图后两个目录的 `.on` 都停在末项（实跑确认：大作文亮「⑥ 考场」、小作文亮「⑤ 30 天计划」）。
+  4. 30 天计划表是**旧版按话题分骨架**的遗留：写着「经济类 33 词 / 校园类 34+39 词 / 环保类 32 词 / 体育健康类 35 词 / 文化类 33 词」「骨架 334 词」「静态 4 句 + 动态 3 句共 72 词」，而当前模板只有 5 段通用骨架、实测 238 词，分类与数字全部失效。
+  5. 时间口径冲突：标题「考场 30 分钟」，note 写 3+3+22+5=33 分钟，计划表验收写「限时 25 分钟成篇」；小作文计划写「10 类全覆盖」但页面统计是 11 类（会议纪要单列）。
+- **改动**：
+  - `recite.html`：`#rcBig` / `#rcSmall` 开头（`rc-desc` 之前）各加一段静态「📖 怎么背 · 三步法」，三格短句。大作文 = 先背骨架 → 照骨架套写 → 遮住英文默写；小作文 = 背骨架 4 句 → 看动词挑 2 句 → 合上书写一整封。
+  - **类名一律用全新 `.rc-how*`**：`RC_MK_SEL` 按 DOM 顺序给划词高亮块编号，往正文前插入任何命中该选择器的块都会让已存高亮整体错位。新增区块与 `RC_MK_SEL` 零交集（jsdom 实查断言）。
+  - `recite.js`：走势套数改为从 `S.chart_dynamic.skeletons` 全量取；目录补 ①；`rcTocBuild` 的 spy 跳过隐藏视图并把 spy 收集到 `RC_SPIES`，`rcView()` 切换后主动刷新；考场时间分配改为 2+3+20+5=30 分钟；小作文「10 类全覆盖」补注会议纪要单列。
+  - `recite.html` 30 天表：把按话题分类与写死词数改成与当前 5 段通用骨架一致的表述（静态/动态各套、P2 引入、P3 正负、句池挑句、数据速查、交卷自查），验收「25 分钟」→「30 分钟」，「骨架 334 词」改为不带数字的表述（避免再次过期）。**表结构、天数、验收列未动**。
+  - `style.css`：`.rc-how` 系列（走 `--card-bg` 双主题、打印转白底）、`#rcBig[hidden]/#rcSmall[hidden]` 防御规则。
+- **刻意未做**：不重排章节顺序。虽然「30 天计划」逻辑上应该靠前，但调整 section 顺序同样会改变 `rcMkBlocks()` 的块编号 → 本地已存高亮整体错位，收益不抵风险。
+- **验证**：新增 `tools/verify_recite_flow.js` **36/36 全绿**（静态三步法位置与类名、高亮块零交集、走势套数与数据同步、目录编号与 spy、jsdom 实跑两视图切换、旧数字清零）；全量 `tools/verify_*.js` **14/14 通过**。SW **en2-27e2e622**（139 资源）。
+
+## [2026-11-11 小作文补「招募志愿者 / 推荐信」场景范文（方案 A：不加类型、不加必背句）]
+
+- **背景**：上一批按优先级排了建议/邀请/通知，剩「招募 / 推荐」两类。核查确认站内 11 类里没有这两个独立类型（2015「招募志愿者」归 `notice`，推荐信无对应）。用户定方案 **A**：不新增类型、不新增句库，改为在既有类型下各挂 1 封「槽已填好」的场景整信。
+- **做法**：`letters.notice.variants = [招募志愿者]`、`letters.intro.variants = [推荐信]`，每封 7 句 / 3 段译文 / 142 与 119 词；`decisions` 末尾追加 2 条场景指引（题干动词 → 用哪一类 / 报名动作放第三段 / 推荐人怎么换词）。**句句都出自既有句库**，只是把 `{{槽位}}` 填成具体内容 → 背诵量 +0。
+- **前端**：`smallwriting.js` 新增 `swVariant` 状态 + `swVariantTabs()`，类型 tab 下方出现「范文｜通用 / 招募志愿者」切换条（无 variants 的类型整条隐藏，换类型自动回到「通用」）；`swLetterLines()` 支持变体覆盖标题/称呼（推荐信 = `Dear Jack,`，通知 = `NOTICE`）。样式 `.sw-var-tabs / .sw-vtab / .sw-var-note`，走 `--card-bg` 双主题。
+- **键位安全（关键）**：改写句与句库原文不同 → 自动走独立键，键名升级为 `L:类型:变体#序`（原先只有 `L:类型#序`），**追加注册在 `swBuildKeyMap` 最后**，句库键与 11 封通用整信的老索引一个不移位，本地已存高亮/批注不受影响。
+- **数据管线**：文案真源放 `tools/small_writing_extra.py` 的 `LETTER_VARIANTS` + `DECISIONS`，`build_small_writing.py` 负责合并（`letters_out` 深拷贝后挂 variants）；因 `minutes` 仍不在生成器中，**本次不重跑生成器**，改由新增的幂等补丁 `tools/patch_scene_letters.py` 定点写入 JSON（写盘前后对 banks/guide/types/通用整信 rows+cn_paras 做 MD5 断言）。
+- **验证**：新增 `tools/verify_scene_letters.js`（数据层 + jsdom 实跑）**43/43 全绿**——含「通用→招募」切换、标题/称呼、三段分段、段译按钮、备注条、键位隔离与「变体键索引全部大于通用整信最大键」；全量 `tools/verify_*.js` **13/13 通过**。SW **en2-ba7bc65d**（139 资源）。
+
+## [2026-11-11 小作文类型按备考优先级重排：建议 → 邀请 → 通知 前置]
+
+- **背景**：用户指定优先级「建议 / 邀请 / 通知 / 招募 / 推荐」。核查后确认**站内 11 类中没有「招募」「推荐」两个独立类型**（2015 真题「招募志愿者」归在 `notice` 类，推荐信无对应），故本批只落无争议的前 3 类排序，后两类待用户定方案。
+- **改动**：`pwa/data/small_writing.json` 的 `types` 数组定点重排为 `advice / invite / notice / thanks / congrats / apology / complaint / intro / inquire / opinion / minutes`；`tools/small_writing_extra.py` 的 `TYPE_ORDER` 同步（附坑位注释）。前端 `smallwriting.js` 按 `SW.types` 数组渲染 tab，故顺序自动生效。
+- **坑（重要）**：第 11 类 `minutes`（会议纪要，2026-11-02 手工追加）**不在生成器中**，重跑 `tools/build_small_writing.py` 会静默丢掉该类型、4 组句库与整信。因此本次**只定点改 JSON 的 `types` 数组、不重跑生成器**；写盘前后对 `banks` / `letters` / `guide` 做 MD5 断言，三者哈希零变化。
+- **验证**：新增 `tools/verify_sw_type_order.js`（jsdom 实跑 smallwriting.html）**9/9**——数据顺序 / 11 类齐全 / minutes 未丢 / 其余 8 类相对顺序 / letters 一一对应 / 必背口径 4·20 不变 / tab 渲染顺序与 types 一致；既有 `minutes` · `article_note` · `quiz_restore` · `db_open` · `timer_reset` · `translation_phrasezone` 回归全绿。SW en2-b4dd6738。
+- **附：评分标准核对**（`E:/BaiduNetdiskDownload/ai作文批改指令/英语大小作文批改指令.pdf`，5 页）：满分设置（英一大 20 / 英一小 10 / 英二大 15 / 英二小 10）与英二大作文五档（13-15 / 10-12 / 7-9 / 4-6 / 1-3 / 0）与官方大纲一致；但文档自述「民间整理」「非官方固定分值」「仅供参考」，50/30/20 为其模拟侧重而非官方分项表。结论：可作练习自查基准，不可作分数预测。与站内 `teacher` 第 1/4/8 条互相印证——模板够拿平均分，上限卡在「本题专属信息」。
+## [2026-11-09 翻译页补齐「本篇词组 + 长难句」（与阅读精翻同款）]
+
+- **用户要求**：给全部翻译篇目（英二 2010–2026 共 17 篇，英一无翻译）加上和阅读精翻一样的本篇词组。
+- **实测结论**：词组区经 `enrichRender()` 补挂链在翻译页**本就能出现**（jsdom 实跑证实，开精读即可见 12 条词组 + 3 条长难句）。真正的结构缺陷是 `renderArticle()` 的 `translation` 分支为独立 early-return，**绕过普通分支末尾的统一挂载点 `renderPhraseZone()`**——只能靠 `enrichRender` 兜底补挂，补挂链一旦变化翻译页会静默丢失词组区。
+- **修复**：translation 分支 `return` 前补调 `renderPhraseZone()`，与阅读/完形/新题型分支对齐（幂等：`#phraseZone` 存在即跳过；词典未就绪时空结果不缓存，留待 `enrichRender` 重建）。
+- **数据事实**：翻译篇均约 150 词（2011 = 5 句 147 词），词典可匹配候选仅 14 个、入区 12 条——**低于 15 条下限是篇幅上限所致，非过滤过严**（被滤掉的仅 `a great deal` 首词黑名单、`much more` 信息词 0）；长难句区自动出满 3 句（句长 22–38 词，全部过 ≥20 门槛）。
+- **验证**：新增 `tools/verify_translation_phrasezone.js`（jsdom 对照跑翻译页 + 阅读页）**20/20**——挂载位置（readPane 内、正文之后）/ 精读开显示 / 条数（翻译 ≥10、阅读 15–25）/ 长难句 1–3 句 / 精读关隐藏 / 幂等不重复挂载 / 两页同款；既有 `article_note` · `quiz_restore` · `db_open` · `timer_reset` 回归全绿。SW en2-250e2938。
+## [2026-11-09 导航计时器改为「每次打开新页面自动归零」]
+
+- **用户要求**：每次点开一个新的页面，如果有计时器就重置它。
+- **改动**（`pwa/js/common.js`）：删除原「今日学习时长按天累计」的 `studyTimerDate` 日期检查，页面初始化即写 `studyTimerSec='0'` + `studyTimerPaused='0'`——进入/刷新页面一律归零并重新开始计时。无 `#navTimer` 的页面直接 `return`，不碰 localStorage。手动暂停/继续、↺ 重置（二次确认）、页面不可见暂停三项行为保持不变。
+- **文案同步**（8 页 `nav-timer`）：span title「今日学习时长」→「页面停留计时（打开新页面自动归零；切走窗口或手动暂停时停止计时）」；↺ 按钮 title「重置今日计时」→「重置当前计时」；`resetTimer()` 确认弹层改为「重置当前页面计时」。index/article 原带旧 title 的两处一并改，其余 6 页补上 title。
+- **语义变化与影响面**：计时器由「今日累计」变为「单页停留」。`studyTimerSec` 此前仅 common.js 自读写、stats 统计不依赖，改后零连带；`studyTimerDate` 键废弃不再写入。
+- **验证**：新增 `tools/verify_timer_reset.js`（jsdom）**22/22**——遗留秒数归零 / 暂停态清零 / 显示 ⏱00:00:00 / 每秒累加仍工作 / 手动暂停停止累加 / 无计时器页面不碰 localStorage / 跨页再次归零 / 8 页文案零残留；既有 `db_open` · `article_note` · `export_wrong` · `quiz_restore` 回归全绿。SW en2-7883dc3a。
+## [2026-11-02 小作文新增第 11 类「会议纪要」（大纲有、真题未考）]
+
+- **背景**：会议纪要自 2024 年起列入大纲，2024–2026 三年真题未考。对照《27石+作文冲刺背诵20篇(英二)》后，用户确认**只补这一项**，其余（材料作文/图画兜底/桥接句等）暂不动。
+- **数据**（`pwa/data/small_writing.json`）：新增 4 句 / 4 组——`m_s1` 目的句 · `m_s2` 会议要素（时间/日期/地点/时长）· `m_s3` 讨论与共识 · `m_s4` 结论与行动；新增第 11 类 `minutes`。**句组追加在 banks 末尾**，既有 `bank#idx` 稳定键不位移（旧批注/高亮不会跳句）。4 句标 `ammo`，**不进 24 句必背额度**（骨架 4 / 必背 20 / 弹药 39 / 总量 63 句）。
+- **页面**（`pwa/js/smallwriting.js`）：纪要标题 `Minutes`、无称呼、落款 `Minutes recorder: Li Ming`；类型视图支持 `note` 字段（标注「大纲有、真题未考 + 全篇过去时」）；补纪要兜底拼装分支。
+- **验证**：新增 `tools/verify_minutes.js`（jsdom）——第 11 类 / 4 句 / 标题与落款 / 原有 10 类称呼落款不变 / 必背口径不变 / 高亮键 0·58·59 不位移；既有 db_open / article_note / export_wrong / quiz_restore 全绿。SW en2-5178049f。
+## [2026-10-16 修复文章页做题记录加载不出/特别慢：记录链路与词典大 JSON 解耦]
+
+- **用户反馈**：`article.html` 加载不出做题记录（主页徽标正常）、或等特别久才出。
+- **根因**：`js/article.js` `init()` 后台数据段是一条串行链——`quiz_answers` 虽在前段读进 `answerMap`，但要等 `dict.json`（0.9MB）→ `phrases.json`（2.7MB）→ `freq.json` → `hardwords.json` 全洗完，链尾 `enrichRender()` 才 `renderQuiz()`，记录这一刻才渲染（慢）；且整条链一个 try/catch，后段任一步抛错（如数据库升级被其它标签页挡住），`renderQuiz()` 永远执行不到，面板停在「未作答」（不出）。主页直查库无此链，所以主页一直正常。
+- **修复**：后台链拆两段——① 本地用户数据（IndexedDB，毫秒级）读完**立刻 `renderQuiz()`**，记录秒出；② 词典/词组/考频/难词单独 try/catch，各自静默降级，失败只影响高亮与可点词，不再冒报「本地数据读取失败」误导 toast。
+- **验证**：新增 `tools/verify_quiz_restore.js`（jsdom 实跑 article.html，假 IndexedDB 造全对记录）：场景 A 大资源永远 pending、场景 B 大资源全部 reject，记录均 5/5 渲染；**旧代码同测 0/5 全挂**（确认能抓到此 bug）。既有回归 db_open / article_note / export_wrong 全绿。SW en2-a116d35c。
 ## [2026-10-10 词库视图：展开例句开关 + 搜索栏收窄 + 排版优化 + 选项残片修复]
 
 - **用户要求**：① 加「默认展开例句」按钮（不是全部展示 985 条）；② 搜索栏砍掉一节；③ 自测按钮移到搜索栏左侧；④ 优化排版。

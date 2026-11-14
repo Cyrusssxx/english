@@ -72,6 +72,14 @@ function swBuildKeyMap() {
         const rows = (v && v.rows) || (Array.isArray(v) ? v : []);
         rows.forEach((_, i) => swKeyIdxOf('L:' + t + '#' + i));
     });
+    // 场景范文（letters[t].variants）的改写句用带变体名的键：L:类型:变体#序。
+    // 必须追加在最后 —— 老键索引一个都不动，本地已存的高亮/批注才不会错位。
+    Object.keys(SW.letters || {}).forEach(t => {
+        const v = SW.letters[t];
+        ((v && v.variants) || []).forEach(vr => {
+            (vr.rows || []).forEach((_, i) => swKeyIdxOf('L:' + t + ':' + vr.id + '#' + i));
+        });
+    });
 }
 
 /* ---------- 渲染 ---------- */
@@ -151,6 +159,7 @@ function swRender() {
             const bs = (t.banks || []).map(swBank).filter(Boolean);
             if (!bs.length) return;
             html += `<section class="sw-part"><h2 class="sw-h2" id="swT-${swEsc(t.id)}">${swEsc(t.name)}</h2>
+                ${t.note ? `<div class="sw-note">⚠ ${swEsc(t.note)}</div>` : ''}
                 <div class="sw-path">${bs.map(b => `<span class="sw-path-node">${swEsc(b.label.replace('第一段 · ', '').replace('第二段 · ', '').replace('第三段 · ', ''))}</span>`).join('<span class="sw-path-arrow">→</span>')}</div>
                 ${bs.map(b => swCard(b, b.id === 'p1s1' || b.id === 'p2s1' || b.id === 'p3' ? '共用' : '本类', 'swB-t-' + t.id + '-' + b.id)).join('')}</section>`;
         });
@@ -179,6 +188,7 @@ function swSyncOpenBtn() {
    点句子切换当前句（展开该句译文/示例），← → 键翻句；译文默认遮住方便自背。 */
 const SW_TYPE_KEY = 'sw_type_v1';
 let swType = 'advice';            // 当前信件类型 id
+let swVariant = '';               // 当前类型的场景范文 id（'' = 通用范文）
 let swAllCn = false;              // 「显示全部译文」开关
 let swLetterCache = [];           // 当前信的行结构（复制整封用）
 let swLetterCnParas = [];         // 当前信的分三段译文（段末按钮展开）
@@ -187,8 +197,17 @@ let swLetterBound = false;
 /** 各类型来意句（p1s2）与引出句（p2s1）的 tag 匹配词 */
 const SW_TYPE_KW = {
     advice: '建议', invite: '邀请', thanks: '感谢', congrats: '祝贺', apology: '道歉',
-    complaint: '投诉', intro: '介绍', notice: '通知', inquire: '询问', opinion: '观点'
+    complaint: '投诉', intro: '介绍', notice: '通知', inquire: '询问', opinion: '观点',
+    minutes: '纪要'
 };
+
+/** 当前类型的场景范文对象（letters[类型].variants 里按 id 取；空 = 通用范文） */
+function swVariantOf(typeId) {
+    if (!swVariant) return null;
+    const raw = (SW.letters || {})[typeId];
+    const vs = (raw && raw.variants) || [];
+    return vs.filter(v => v.id === swVariant)[0] || null;
+}
 
 /** 从 bank 里挑一句：kw 非空按 tag 匹配 → 否则 core → 兜底第一句 */
 function swPick(bankId, kw) {
@@ -208,6 +227,9 @@ function swLetterLines(typeId) {
     if (!t) return [];
     const kw = SW_TYPE_KW[t.id] || '';
     const isNotice = t.id === 'notice';
+    const isMinutes = t.id === 'minutes';   // 会议纪要：标题 Minutes，无称呼，落款 Minutes recorder
+    const V = swVariantOf(t.id);            // 场景范文（招募志愿者 / 推荐信）；无则走通用整信
+    const kscope = V ? (t.id + ':' + V.id) : t.id;   // 改写句的高亮键前缀，避免与通用整信撞键
     const out = [];
     let sentIdx = 0;
     /** src 来源句未改动 → 共享句库高亮键；润色过的句子 → 独立 L:类型#序 键 */
@@ -218,7 +240,7 @@ function swLetterLines(typeId) {
             kind: 'sent',
             bank: same ? parts[0] : null,
             idx: same ? Number(parts[1]) : -1,
-            k: same ? src : ('L:' + t.id + '#' + sentIdx),
+            k: same ? src : ('L:' + kscope + '#' + sentIdx),
             item: {
                 en: en, cn: cn,
                 alts: same ? (orig.alts || '') : '',
@@ -239,9 +261,12 @@ function swLetterLines(typeId) {
         const i = items.indexOf(item);
         pushSent(item.en, item.cn, bankId + '#' + i, item);
     };
-    // 格式行：通知 = 居中标题 NOTICE；其余 = 称呼顶格
-    out.push(isNotice ? { kind: 'title', text: 'NOTICE' } : { kind: 'sal', text: 'Dear Sir or Madam,' });
-    const Lraw = (SW.letters || {})[t.id];
+    // 格式行：会议纪要 = 标题 Minutes（无称呼）；通知 = 居中标题 NOTICE；其余 = 称呼顶格
+    // 场景范文可覆盖标题 / 称呼（如推荐信写给朋友 = Dear Jack,）
+    if (isMinutes) out.push({ kind: 'title', text: (V && V.title) || 'Minutes' });
+    else if (isNotice) out.push({ kind: 'title', text: (V && V.title) || 'NOTICE' });
+    else out.push({ kind: 'sal', text: (V && V.sal) || 'Dear Sir or Madam,' });
+    const Lraw = V || (SW.letters || {})[t.id];
     const L = Lraw && (Lraw.rows || (Array.isArray(Lraw) ? Lraw : null));
     swLetterCnParas = (Lraw && Lraw.cn_paras) || [];
     if (L && L.length) {
@@ -256,6 +281,14 @@ function swLetterLines(typeId) {
             lastPart = part;
             pushSent(row[1], row[2], src, srcOrig(src));
         });
+    } else if (isMinutes) {
+        // 会议纪要兜底拼装（数据层缺 letters.minutes 时）：目的 | 要素+讨论 | 结论
+        emitBank('m_s1', swPick('m_s1', ''));
+        out.push({ kind: 'br' });
+        emitBank('m_s2', swPick('m_s2', ''));
+        emitBank('m_s3', swPick('m_s3', ''));
+        out.push({ kind: 'br' });
+        emitBank('m_s4', swPick('m_s4', ''));
     } else {
         // 机械拼装（fallback）：问候 + 来意 | 引出 + 本类 must | 收尾
         emitBank('p1s1', swPick('p1s1', ''));
@@ -271,8 +304,9 @@ function swLetterLines(typeId) {
         const p3items = ((swBank('p3') || {}).items) || [];
         emitBank('p3', (isNotice && p3items.find(it => /notice/i.test(it.en || ''))) || swPick('p3', ''));
     }
-    // 落款：通知不写人名落款（格式分提醒）
-    if (isNotice) out.push({ kind: 'signote', text: '（通知类不写人名落款 · 落款按题目写组织名）' });
+    // 落款：会议纪要 = Minutes recorder: Li Ming（不写 Yours sincerely）；通知不写人名落款
+    if (isMinutes) out.push({ kind: 'sig', text: 'Minutes recorder: Li Ming' });
+    else if (isNotice) out.push({ kind: 'signote', text: '（通知类不写人名落款 · 落款按题目写组织名）' });
     else { out.push({ kind: 'sig', text: 'Yours sincerely,' }); out.push({ kind: 'signame', text: 'Li Ming' }); }
     return out;
 }
@@ -380,10 +414,37 @@ function swLetterTabs() {
         `<button type="button" class="sw-ttab${t.id === swType ? ' on' : ''}" data-t="${swEsc(t.id)}">${swEsc(t.name)}</button>`).join('');
 }
 
+/** 场景范文切换条（仅当当前类型有 variants 时显示；无则整条隐藏） */
+function swVariantTabs() {
+    const box = document.getElementById('swVarTabs');
+    const note = document.getElementById('swVarNote');
+    if (!box || !SW) return;
+    const raw = (SW.letters || {})[swType];
+    const vs = (raw && raw.variants) || [];
+    if (!vs.length) {
+        swVariant = '';
+        box.hidden = true;
+        box.innerHTML = '';
+        if (note) { note.hidden = true; note.innerHTML = ''; }
+        return;
+    }
+    box.hidden = false;
+    box.innerHTML = '<span class="sw-var-tip">范文</span>'
+        + [{ id: '', name: '通用' }].concat(vs).map(v =>
+            `<button type="button" class="sw-vtab${(v.id || '') === swVariant ? ' on' : ''}" data-v="${swEsc(v.id || '')}">${swEsc(v.name)}</button>`
+        ).join('');
+    const cur = swVariantOf(swType);
+    if (note) {
+        note.hidden = !(cur && cur.note);
+        note.innerHTML = (cur && cur.note) ? '💡 ' + swPh(cur.note) : '';
+    }
+}
+
 function swLetterInit() {
     try { swType = localStorage.getItem(SW_TYPE_KEY) || 'advice'; } catch (e) { swType = 'advice'; }
     if (!(SW.types || []).some(t => t.id === swType)) swType = ((SW.types || [])[0] || {}).id || 'advice';
     swLetterTabs();
+    swVariantTabs();
     swLetterRender();
     if (swLetterBound) return;
     swLetterBound = true;
@@ -411,8 +472,18 @@ function swLetterInit() {
         const b = e.target.closest ? e.target.closest('.sw-ttab') : null;
         if (!b || b.dataset.t === swType) return;
         swType = b.dataset.t;
+        swVariant = '';                    // 换类型 → 回到「通用」范文
         try { localStorage.setItem(SW_TYPE_KEY, swType); } catch (e2) { /* ignore */ }
         swLetterTabs();
+        swVariantTabs();
+        swLetterRender();
+    });
+    const vbox = document.getElementById('swVarTabs');
+    if (vbox) vbox.addEventListener('click', e => {
+        const b = e.target.closest ? e.target.closest('.sw-vtab') : null;
+        if (!b || b.dataset.v === swVariant) return;
+        swVariant = b.dataset.v || '';
+        swVariantTabs();
         swLetterRender();
     });
     const ab = document.getElementById('swAllCnBtn');
@@ -521,6 +592,7 @@ async function swInit() {
     swHlBind();
     swNavHVar();
     window.addEventListener('resize', swNavHVar);
+    window.addEventListener('navheightchange', () => { swNavHVar(); swTocSpy(); });
 }
 
 
@@ -1014,6 +1086,7 @@ function swAnnoOpenFrom(range) {
 
 function swNavH() {
     const n = document.querySelector('.navbar');
+    if (n && n.dataset.collapsed === '1') return 0;   // 顶栏收起后吸顶条贴顶，不留白带
     return n ? n.getBoundingClientRect().height : 56;
 }
 

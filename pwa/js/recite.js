@@ -75,15 +75,14 @@ async function rcInit() {
     // 一、拼装顺序（词数从数据算，改骨架不用改这里）
     const W1 = Math.max(rcWords(S.chart_static ? S.chart_static.en : ''), 23);
     const W2 = rcWords(S.para2_why ? S.para2_why.en : '');
-    const dyn = ['① 一条线在走', '② 两条都在涨', '③ 一升一降'].map(x => {
-        const hit = ((S.chart_dynamic || {}).skeletons || []).find(v => v.label === x);
-        return hit ? rcWords(hit.en) : 0;
-    });
+    // 走势骨架套数从数据取（曾写死 3 个 label，新增「④ 先稳后急」后页面与第三节自相矛盾）
+    const dynSkels = ((S.chart_dynamic || {}).skeletons) || [];
+    const dyn = dynSkels.map(v => rcWords(v.en));
     document.getElementById('rcOrder').innerHTML = `
         <div class="rc-order">
             <div class="rc-order-step"><span class="rc-order-no">1</span><b>第一段 · 描述图</b>
-                <div class="rc-order-body">静态分布图用「静态骨架」（${W1} 词）；动态图先看走势，从 3 套里<b>选一套</b>：
-                ${rcEsc(dyn[0])} / ${rcEsc(dyn[1])} / ${rcEsc(dyn[2])} 词。再按需补 1 句句池，本段约 40~55 词。</div></div>
+                <div class="rc-order-body">静态分布图用「静态骨架」（${W1} 词）；动态图先看走势，从 ${dynSkels.length} 套里<b>选一套</b>：
+                ${dyn.length ? dyn.map(x => rcEsc(String(x))).join(' / ') + ' 词' : '见第三节'}（逐套全文在第三节）。再按需补 1 句句池，本段约 40~55 词。</div></div>
             <div class="rc-order-step"><span class="rc-order-no">2</span><b>第二段 · 说原因</b>
                 <div class="rc-order-body">引入句 ${W2} 词 + 从机制句池<b>挑 3 条</b>（每条都是一个完整原因），本段约 55~65 词。</div></div>
             <div class="rc-order-step"><span class="rc-order-no">3</span><b>第三段 · 评论</b>
@@ -153,7 +152,7 @@ async function rcInit() {
             + '<div class="rc-plan"><table class="rc-table"><tbody>'
             + ck.map((x, i) => `<tr><td>${i + 1}</td><td>${rcPh(x)}</td></tr>`).join('')
             + '</tbody></table></div>'
-            + '<div class="rc-note"><b>时间分配：</b>审题 3 分钟 → 定骨架与归因 3 分钟 → 写 22 分钟 → 检查 5 分钟。'
+            + '<div class="rc-note"><b>时间分配（合计 30 分钟）：</b>审题 2 分钟 → 定骨架与归因 3 分钟 → 写 20 分钟 → 检查 5 分钟。'
             + '最后 5 分钟只做三件事：<b>核对数字、查时态、数字数</b>。</div>';
     })();
 
@@ -423,9 +422,11 @@ function toggleDark() {
 }
 
 /** 目录（吸顶横条）：点击跳转 + 滚动高亮当前节 */
+const RC_SPIES = [];        // 两个视图各一个目录高亮 spy，切视图时统一刷新
+
 function rcToc() {
     rcTocBuild('rcToc', [
-        ['rcSecGolden', '✨ 精选好句'],
+        ['rcSecGolden', '① ✨ 精选好句'],
         ['rcSecOrder', '② 三段怎么拼'],
         ['rcSecSkeleton', '③ ⭐ 必背骨架'],
         ['rcSecAgents', '④ ⚡ 主体句池'],
@@ -433,7 +434,7 @@ function rcToc() {
         ['rcSecExam', '⑥ 考场 30 分钟']
     ]);
     rcTocBuild('rcTocS', [
-        ['rcSecSGolden', '✨ 精选好句'],
+        ['rcSecSGolden', '① ✨ 精选好句'],
         ['rcSecSOrder', '② 怎么拼（5 步）'],
         ['rcSecSCore', '③ ⭐ 骨架 + 必背'],
         ['rcSecSGuide', '④ 17 年真题挑句'],
@@ -447,12 +448,18 @@ function rcTocBuild(tocId, rawItems) {
     if (!toc || !items.length) return;
     toc.innerHTML = items.map(x => `<a href="#${x[0]}" data-t="${x[0]}">${x[1]}</a>`).join('');
     const navH = () => {
+        // 顶栏收起后为零：否则吸顶目录会空出一条 56~80px 的白带，看着像「没收起」
         const n = document.querySelector('.navbar');
+        if (n && n.dataset.collapsed === '1') return 0;
         const h = n ? n.getBoundingClientRect().height : 56;
         return h >= 20 ? h : 56;
     };
     document.documentElement.style.setProperty('--nav-h', navH() + 'px');
     window.addEventListener('resize', () => document.documentElement.style.setProperty('--nav-h', navH() + 'px'));
+    // 用户点顶栏右上角 ▲/▼ 时同步（common.js 派发 navheightchange）
+    window.addEventListener('navheightchange', () => {
+        document.documentElement.style.setProperty('--nav-h', navH() + 'px');
+    });
     toc.addEventListener('click', e => {
         const a = e.target.closest && e.target.closest('a[data-t]');
         if (!a) return;
@@ -464,6 +471,10 @@ function rcTocBuild(tocId, rawItems) {
     });
     const links = [...toc.querySelectorAll('a[data-t]')];
     const spy = () => {
+        // 隐藏视图内元素的 getBoundingClientRect() 全是 0，两个 spy 同时跑会把
+        // 高亮永远推到目录末项；这里直接跳过隐藏视图，并由 rcView() 切换后主动刷新。
+        const host = toc.closest('#rcBig, #rcSmall');
+        if (host && host.hidden) { links.forEach(a => a.classList.remove('on')); return; }
         const top = navH() + 80;
         let cur = links[0];
         links.forEach(a => {
@@ -473,6 +484,7 @@ function rcTocBuild(tocId, rawItems) {
         links.forEach(a => a.classList.toggle('on', a === cur));
     };
     window.addEventListener('scroll', spy, { passive: true });
+    RC_SPIES.push(spy);
     spy();
 }
 
@@ -486,6 +498,7 @@ function rcView(v) {
     small.hidden = v !== 'small';
     document.querySelectorAll('.rc-vw-btn').forEach(b => b.classList.toggle('on', b.dataset.v === v));
     try { localStorage.setItem(RC_VW_KEY, v); } catch (e) { /* ignore */ }
+    RC_SPIES.forEach(f => { try { f(); } catch (e) { /* ignore */ } });   // 切视图后立刻重算目录高亮
 }
 
 function rcVwBind() {
@@ -494,6 +507,33 @@ function rcVwBind() {
     let v = 'big';
     try { v = localStorage.getItem(RC_VW_KEY) || 'big'; } catch (e) { /* ignore */ }
     rcView(v === 'small' ? 'small' : 'big');
+}
+
+/* ==================== 三步法折叠：手机端默认收起，桌面展开 ====================
+   用户手动点过一次后按他的选择记住（'1' 展开 / '0' 收起），两个视图共用同一状态。 */
+const RC_HOW_KEY = 'rc_how_open_v1';
+
+function rcHowInit() {
+    const boxes = [...document.querySelectorAll('details.rc-how')];
+    if (!boxes.length) return;
+    let saved = null;
+    try { saved = localStorage.getItem(RC_HOW_KEY); } catch (e) { /* ignore */ }
+    const narrow = !!(window.matchMedia && window.matchMedia('(max-width: 640px)').matches);
+    const want = saved === null ? !narrow : saved === '1';
+    boxes.forEach(b => { b.open = want; });
+    // 用 summary 的 click + setTimeout 读新值：details 的 toggle 事件在程序化改 open 时也会触发，
+    // 直接监听会把初始化写入的值当成「用户选择」存下来。
+    boxes.forEach(b => {
+        const s = b.querySelector('summary');
+        if (!s) return;
+        s.addEventListener('click', () => {
+            setTimeout(() => {
+                const v = b.open;
+                try { localStorage.setItem(RC_HOW_KEY, v ? '1' : '0'); } catch (e) { /* ignore */ }
+                boxes.forEach(o => { if (o.open !== v) o.open = v; });
+            }, 0);
+        });
+    });
 }
 
 /* ==================== 小作文速记 ==================== */
@@ -586,7 +626,7 @@ async function rcSmallInit() {
                     <tr><td rowspan="2">第 1 周</td><td>D1–D3</td><td>⭐⭐ 骨架 4 句（${st.core_words} 词）+ 来信/去信的称呼与落款</td><td>能默写骨架</td></tr>
                     <tr><td>D4–D7</td><td>建议 / 邀请 / 介绍 三类各 2 句（最常考）</td><td>能各写一段第二段</td></tr>
                     <tr><td rowspan="2">第 2 周</td><td>D8–D14</td><td>感谢 / 道歉 / 通知 / 祝贺 四类各 2 句</td><td>看题干能选对类型</td></tr>
-                    <tr><td>D15–D17</td><td>投诉 / 询问 / 观点 三类各 2 句 + 回滚复习</td><td>10 类全覆盖</td></tr>
+                    <tr><td>D15–D17</td><td>投诉 / 询问 / 观点 三类各 2 句 + 回滚复习</td><td>常考 10 类全覆盖（会议纪要单独看句库）</td></tr>
                     <tr><td>第 3 周</td><td>D18–D24</td><td>每天套写一篇真题（按适配表挑句），限时 15 分钟</td><td>连写 7 年不卡壳</td></tr>
                     <tr><td>第 4 周</td><td>D25–D30</td><td>剩余年份套写 + 只看中文默写必背句</td><td>必背句全默写正确</td></tr>
                 </tbody>
@@ -607,6 +647,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const s = document.getElementById('darkState');
     if (s) s.textContent = document.documentElement.classList.contains('dark') ? '开' : '关';
     rcVwBind();
+    rcHowInit();
     rcToc();
     rcInit();
     rcSmallInit();

@@ -476,12 +476,28 @@ async function init() {
     watchScroll();
 
     // —— 用户数据 + 离线词典：后台异步补齐，完成后刷新可点词与收藏/生词态（保持不变的视图） ——
+    // 拆两段跑：① 本地用户数据（IndexedDB，毫秒级）读完立刻重渲染题目面板——做题记录不再被
+    // 词典/词组等大 JSON（合计约 3.5MB）拖到链尾，慢网下也不会「记录迟迟不出」；② 词典/词组/
+    // 考频/难词只影响高亮与可点词，单独 try/catch，失败各自降级，与做题记录彻底解耦。
+    // （改之前两段串在同一 try 里：答题记录虽在链前段已入库内存，但只要后段任一步抛错，
+    //  enrichRender() 就永远执行不到，做题面板停在「未作答」——主页直查库所以看不出问题。）
     _dataPromise = (async () => {
+        // ① 本地用户数据：生词本 / 收藏 / 做题记录
         try {
             await migrateVocabDecks();
             vocabSet = new Set((await vocabByDeck(getVocabTarget())).map(v => v.word));
             favSet = new Set((await dbAll('fav_sentences')).map(f => f.sentence_id));
             for (const a of await dbAll('quiz_answers')) if (a.article_id === AID) answerMap[a.question_id] = a;
+            renderQuiz();   // 做题记录立即恢复显示，不等词典/词组等大文件
+        } catch (e) {
+            console.warn('本地用户数据读取失败（生词/收藏/作答降级）', e);
+            // 读不到本地库时作答恢复不出来、做题也不落库，必须让用户看见
+            if (typeof toast === 'function') {
+                toast('本地数据读取失败，作答可能显示不出来：' + (e && e.message ? e.message : e), 6000);
+            }
+        }
+        // ② 离线资源：均静默降级，失败不影响做题记录
+        try {
             // 离线词典：失败静默降级为仅预标注词可点
             await loadDict();
             // 词组词典：失败静默降级为无词组高亮
@@ -492,11 +508,7 @@ async function init() {
             if (typeof loadHardwords === 'function') { try { await loadHardwords(); } catch (e) { /* 精选降级 */ } }
             enrichRender();
         } catch (e) {
-            console.warn('后台数据加载失败（已降级为仅预标注词可点）', e);
-            // 不能只 warn：读不到本地库时作答恢复不出来、做题也不落库，必须让用户看见
-            if (typeof toast === 'function') {
-                toast('本地数据读取失败，作答可能显示不出来：' + (e && e.message ? e.message : e), 6000);
-            }
+            console.warn('词典等资源加载失败（已降级为仅预标注词可点）', e);
         }
     })();
 }
@@ -570,6 +582,9 @@ function renderArticle() {
                 <button class="writing-toggle" onclick="toggleWritingCn(this)">显示全文参考译文</button>
                 <div class="translation-ref-cn" hidden>${esc(article.ref_cn)}</div>
             </div>` : ''}`;
+        // 翻译页同样挂本篇词组 + 长难句（与阅读精翻同款）：此分支提前 return 会绕过下方统一挂载点，
+        // 原先只能靠 enrichRender() 补挂——补挂链一旦变化翻译页就静默丢失词组区，这里补齐对齐。
+        renderPhraseZone();
         return;
     }
     const paras = [];   // [[sent,...], ...] 按 para 分组（缺省视为一段）

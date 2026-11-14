@@ -164,7 +164,10 @@ PRUNE = {
     'p2_opinion_s3': {1},
 }
 
-TYPE_ORDER = ['advice', 'invite', 'thanks', 'congrats', 'apology', 'complaint', 'intro', 'notice', 'inquire', 'opinion']
+# 备考优先级（2026-11-11）：建议 / 邀请 / 通知前置，其余保持原相对顺序。
+# 注意：第 11 类 minutes（会议纪要）是手工写进 small_writing.json 的，本生成器不含它；
+#       重跑生成器会静默丢 minutes，因此改顺序必须同时定点改 JSON 的 types 数组。
+TYPE_ORDER = ['advice', 'invite', 'notice', 'thanks', 'congrats', 'apology', 'complaint', 'intro', 'inquire', 'opinion']
 
 EXTRA_TOKENS_CN = {
     'product': '有问题的商品 / 服务',
@@ -208,6 +211,16 @@ DECISIONS = [
                                '下一行写题目给的名字（Li Ming），不要写自己的真名。'},
     {'q': '考到没准备过的题材怎么办？', 'a': '来意句用 <b>I am writing to you regarding the matter of {{topic}}.</b>（万能），'
                                             '第二段一律用「建议类」或「介绍类」的 ⭐ 必背句顶——这两类最能兜底。'},
+    {'q': '考到「招募志愿者」怎么写？',
+     'a': '本质还是<b>通知</b>：来意句用通知类（…has decided to issue the following notice），'
+          '第二段写「培训/地点 + 工作内容 + 纪律要求」，<b>报名动作放第三段</b>'
+          '（You are kindly requested to submit your application form … by June 20）。'
+          '落款写组织名，不写人名。到「整封背诵 → 通知 → 招募志愿者」看填好的整封。'},
+    {'q': '考到「推荐信」怎么写？',
+     'a': '本质是<b>介绍</b>：来意句用介绍类（introduce … as an excellent option），'
+          '第二段三条理由（是什么 → 有什么用 → 适合谁），收尾一句「希望你去试试」。'
+          '推荐<b>人</b>就把 {{topic}} 换成人名，理由换成品质。'
+          '到「整封背诵 → 介绍信 → 推荐信」看填好的整封。'},
 ]
 
 # ---------------- 6) 分层规则 ----------------
@@ -487,7 +500,90 @@ LETTERS = {
     },
 }
 
-# ---------------- 迭代润色表（build 读取，重跑不回退） ----------------
+# ---------------- 场景范文（letters[类型].variants） ----------------
+# 方案 A：不给「招募 / 推荐」新开类型、也不新增句库 —— 各挂一封「槽已填好」的整信，
+# 句子全部来自既有句库（rows 的 src 仍记来源 bank#idx，前端据此自动分段）；
+# 因为 en 已改写成具体内容，前端会判定「与句库原文不同」→ 走独立高亮键，不污染共享键。
+# 前端：小作文页类型 tab 下方出现「通用 / 场景名」切换条（smallwriting.js swVariantTabs）。
+LETTER_VARIANTS = {
+    'notice': [{
+        'id': 'recruit',
+        'name': '招募志愿者',
+        'note': '2015 真题式（招募夏令营志愿者）：每句都出自你已背的通知类句库，只是把槽填成了具体内容——'
+                '不新增任何必背句。落款写组织名（如 the Student Union），不写人名。',
+        'title': 'NOTICE',
+        'rows': [
+            ['p1s2#2',
+             'In order to recruit volunteers for the summer camp, our school has decided to issue the following notice.',
+             '为招募夏令营志愿者，学校决定发布以下通知。'],
+            ['p2s1#2',
+             'As for the planned event, the main arrangements are as follows.',
+             '本次活动的具体安排如下。'],
+            ['p2_notice_s2#1',
+             'To begin with, the volunteer training will take place at the Student Center, which is convenient for all volunteers.',
+             '首先，志愿者培训将在学生活动中心举行，全体志愿者前往都很方便。'],
+            ['p2_notice_s3#0',
+             'Furthermore, the core agenda of the program will center around camp guidance, team activities and daily care for children, '
+             'all of which align closely with the overarching theme.',
+             '此外，本次活动的核心内容将围绕营地引导、团队活动和儿童的日常照护展开，均与总体目标高度契合。'],
+            ['p2_notice_s4#0',
+             'Finally, all volunteers are requested to strictly abide by the camp rules and the instructions of the organizing committee, '
+             'thereby ensuring that the program proceeds in an orderly way.',
+             '最后，全体志愿者须严格遵守营地规定与组委会安排，以确保活动有序进行。'],
+            ['p3#1',
+             'You are kindly requested to submit your application form to the Student Union office by June 20 '
+             'so that the program can be properly arranged.',
+             '请于 6 月 20 日前将报名表交至学生会办公室，以便活动得到妥善安排。'],
+            ['p3#5',
+             'Please read this notice carefully and pass it on to those concerned.',
+             '请仔细阅读本通知并转告相关人员。'],
+        ],
+        'cn_paras': [
+            '为招募夏令营志愿者，学校决定发布以下通知。',
+            '本次活动的具体安排如下。首先，志愿者培训将在学生活动中心举行，全体志愿者前往都很方便。'
+            '此外，本次活动的核心内容将围绕营地引导、团队活动和儿童的日常照护展开，均与总体目标高度契合。'
+            '最后，全体志愿者须严格遵守营地规定与组委会安排，以确保活动有序进行。',
+            '请于 6 月 20 日前将报名表交至学生会办公室，以便活动得到妥善安排。请仔细阅读本通知并转告相关人员。',
+        ],
+    }],
+    'intro': [{
+        'id': 'recommend',
+        'name': '推荐信',
+        'note': '推荐一本书 / 一门课 / 一个地方：全部复用介绍类句，第二段三条理由照着换名词即可。'
+                '推荐「人」时把 {{topic}} 换成人名、理由换成品质（负责 / 耐心 / 组织力）。',
+        'sal': 'Dear Jack,',
+        'rows': [
+            ['p1s1#0', 'I hope this message finds you well.', '希望收到此信时你一切安好。'],
+            ['p1s2#4',
+             'In this letter, I would like to introduce The Old Man and the Sea to you as an excellent option.',
+             '在这封信里，我想把《老人与海》作为一个很好的选择介绍给你。'],
+            ['p2_intro_s2#1',
+             'From a practical perspective, the novel mainly involves a simple plot and plain language, '
+             'aiming to leave readers with a lasting impression.',
+             '从实用的角度看，这部小说情节简单、语言平实，目的在于给读者留下持久的印象。'],
+            ['p2_intro_s3#0',
+             'To begin with, it encompasses a moving story of an old fisherman, '
+             'thereby empowering readers to gain a deeper understanding of perseverance.',
+             '首先，它包含一个老渔夫的动人故事，使读者能够更深入地理解坚持的意义。'],
+            ['p2_intro_s4#0',
+             'Taken together, these compelling features render the novel an ideal candidate for readers striving to rebuild their confidence.',
+             '总的来说，这些特点使这部小说成为希望重建信心的读者的理想选择。'],
+            ['p3#4',
+             'I sincerely hope that you will give it a try and experience its distinct charm.',
+             '我由衷希望你能读一读，亲自体会它的独特魅力。'],
+            ['',
+             'Please do not hesitate to contact me should you require any additional information or guidance.',
+             '若需要任何进一步的信息或指引，请随时与我联系。'],
+        ],
+        'cn_paras': [
+            '希望收到此信时你一切安好。在这封信里，我想把《老人与海》作为一个很好的选择介绍给你。',
+            '从实用的角度看，这部小说情节简单、语言平实，目的在于给读者留下持久的印象。'
+            '首先，它包含一个老渔夫的动人故事，使读者能够更深入地理解坚持的意义。'
+            '总的来说，这些特点使这部小说成为希望重建信心的读者的理想选择。',
+            '我由衷希望你能读一读，亲自体会它的独特魅力。若需要任何进一步的信息或指引，请随时与我联系。',
+        ],
+    }],
+}
 # 1) 中文去翻译腔 / 与整信范文同步
 CN_FIX2 = {
     'p1s1': {0: '希望收到此信时你一切安好。', 1: '非常高兴收到你的来信。'},
