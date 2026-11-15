@@ -17,6 +17,16 @@ function rcAlts(alts) {
 function rcPh(s) {
     return rcEsc(s).replace(/\{\{(.+?)\}\}/g, '<span class="rc-ph">$1</span>');
 }
+/**
+ * 英文块统一出口：{{槽}} → 蓝底斜体芯片，其余逐词可点查词。
+ * data-src 存「带 {{}} 的原文」——词典就绪后 rcAnnoAll 必须据它重标：
+ * 直接读 textContent 会丢掉花括号，把芯片降级成普通单词（2026-11-15 定位的根因）。
+ */
+function rcEn(text, tag, cls) {
+    const t = tag || 'div';
+    const c = 'rc-en' + (cls ? ' ' + cls : '');
+    return `<${t} class="${c}" data-src="${rcEsc(text)}">${rcAnno(text)}</${t}>`;
+}
 function rcWords(t) {
     return ((t || '').match(/[A-Za-z0-9][A-Za-z0-9'’%.,:_-]*/g) || []).length;
 }
@@ -64,7 +74,8 @@ async function rcInit() {
     const ammoN = secs.reduce((a, s) => a + (s.sentences || []).length, 0);
 
     document.getElementById('rcDesc').innerHTML =
-        '一整页 = 全部要背的东西。<b>只背骨架（⭐），句池（⚡）不用背</b>——写的时候现挑现抄。';
+        '一整页 = 全部要背的东西。<b>只背骨架（⭐），句池（⚡）不用背</b>——写的时候现挑现抄。'
+        + '<span class="rc-legend">🖱 点任意单词查释义 · <span class="rc-ph">蓝底斜体</span> ＝ 考场上要换掉的槽</span>';
     document.getElementById('rcStats').innerHTML = `
         <div class="rc-stat"><span class="rc-stat-n">${mustSent}</span><span class="rc-stat-k">⭐ 必背句子</span></div>
         <div class="rc-stat"><span class="rc-stat-n">${mustWords}</span><span class="rc-stat-k">⭐ 必背词数</span></div>
@@ -107,26 +118,32 @@ async function rcInit() {
             const w = skels ? skels.reduce((a, v) => a + rcWords(v.en), 0) : rcWords(s.en);
             const wTxt = skels ? `${skels.length} 选 1 · 共 ${w} 词` : `${w} 词`;
             sk += rcCard(id, s.title, `⭐ ${wTxt}${s.priority ? ' · 优先背' : ''}`);
+            const HINT = {
+                chart_static: '写不满就在文末「七、⚡ 句池」挑静态补句',
+                chart_dynamic: '走势补句（同向不同速 / 拐点）在文末「七、⚡ 句池」',
+                para2_why: '机制句池 16 条在文末「七、⚡ 句池」，挑 3 条'
+            };
+            if (HINT[id]) sk += `<p class="rc-hint">→ ${HINT[id]}</p>`;
             if (skels) {
                 sk += skels.map(v => `<div class="rc-skel">
                     <div class="rc-skel-head"><b>${rcEsc(v.label)}</b><span>适用 ${rcEsc(v.years)}</span></div>`
-                    + rcPairs(v.en, v.cn).map(p => `<div class="rc-line">${p.star ? `<span class="rc-freq">${p.star}</span>` : ''}<div class="rc-en">${rcAnno(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
+                    + rcPairs(v.en, v.cn).map(p => `<div class="rc-line">${p.star ? `<span class="rc-freq">${p.star}</span>` : ''}${rcEn(p.en)}${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
                     + (v.alts ? `<div class="rc-alts">✎ 同义升级：${rcAlts(v.alts)}</div>` : '')
-                    + (v.demo ? `<div class="rc-demo"><b>例</b><span class="rc-en">${rcAnno(v.demo)}</span></div>` : '')
+                    + (v.demo ? `<div class="rc-demo"><b>例</b>${rcEn(v.demo, 'span')}</div>` : '')
                     + '</div>').join('');
             } else {
                 if (!s.framework) {
                     sk += '<div class="rc-lines">'
-                        + rcPairs(s.en, s.cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
+                        + rcPairs(s.en, s.cn).map(p => `<div class="rc-line">${rcEn(p.en)}${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
                         + '</div>';
                 }
-                sk += (s.framework ? `<div class="rc-frame"><div class="rc-frame-title">🧩 第二段框架（${s.framework.length} 步拼装 · 必背就这 ${s.framework.length} 步）</div>${s.framework.map(f => `<div class="rc-line"><div class="rc-en">${rcAnno(f.en)}</div>${f.trans ? `<div class="rc-cn">${rcPh(f.trans)}</div>` : ''}${f.cn ? `<div class="rc-cn">${rcPh(f.cn)}</div>` : ''}</div>`).join('')}</div>` : '')
+                sk += (s.framework ? `<div class="rc-frame"><div class="rc-frame-title">🧩 第二段框架（${s.framework.length} 步拼装 · 必背就这 ${s.framework.length} 步）</div>${s.framework.map(f => `<div class="rc-line">${rcEn(f.en)}${f.trans ? `<div class="rc-cn">${rcPh(f.trans)}</div>` : ''}${f.cn ? `<div class="rc-cn">${rcPh(f.cn)}</div>` : ''}</div>`).join('')}</div>` : '')
                     + (s.linkers ? `<div class="rc-alts">✎ 高级衔接词：${rcLinkers(s.linkers)}</div>` : '')
-                    + (s.demo ? `<div class="rc-demo"><b>例</b><span class="rc-en">${rcAnno(s.demo)}</span></div>` : '');
+                    + (s.demo ? `<div class="rc-demo"><b>例</b>${rcEn(s.demo, 'span')}</div>` : '');
             }
             if (s.negative_en) {
                 sk += '<div class="rc-sub">负面版（危害类题目用）</div><div class="rc-lines rc-lines-neg">'
-                    + rcPairs(s.negative_en, s.negative_cn).map(p => `<div class="rc-line"><div class="rc-en">${rcPh(p.en)}</div>${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
+                    + rcPairs(s.negative_en, s.negative_cn).map(p => `<div class="rc-line">${rcEn(p.en)}${p.cn ? `<div class="rc-cn">${rcPh(p.cn)}</div>` : ''}</div>`).join('')
                     + '</div>';
             }
             sk += '</div>';
@@ -169,7 +186,7 @@ async function rcInit() {
                 .slice().sort((x, y) => (y.fit ?? (y.freq || 2)) - (x.fit ?? (x.freq || 2)));   // 适配面优先（fit > 考频★）
             if (!hits.length) return;
             ag += `<div class="rc-agent"><div class="rc-agent-name">${rcEsc(a)}<span class="rc-agent-yrs">${rcEsc((hits[0].tag || '').split('·')[1] || '')}</span></div>`
-                + hits.map(x => `<div class="rc-agent-s"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span><div class="rc-en">${rcAnno(x.en)}</div><div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')
+                + hits.map(x => `<div class="rc-agent-s"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span>${rcEn(x.en)}<div class="rc-cn">${rcPh(x.cn)}</div></div>`).join('')
                 + '</div>';
         });
         ag += '</div>';
@@ -177,6 +194,34 @@ async function rcInit() {
     ag += `<div class="rc-note"><b>主体怎么挑：</b>题目问的是学生的事 → 学校 + 家庭；是社会风气 → 媒体 + 个人；
         是基础设施/规则 → 政府 + 企业；是平台/产品 → 企业 + 个人。<b>不要 6 个主体全写</b>，那是模板味最重的地方。</div>`;
     document.getElementById('rcAgents').innerHTML = ag;
+
+    // 七、第一/二段句池（原先只在 ① ② 节被文字提及、页面上根本没渲染，写到一半无处可查）
+    // 放在全文末尾：RC_MK_SEL 按 DOM 序给块编号，插在中间会让本地已存高亮整体错位。
+    (function () {
+        const box = document.getElementById('rcPools');
+        if (!box) return;
+        const groupsP = [
+            ['chart_static', '第一段 · 静态分布图补句', '饼图 / 柱状图，骨架写不满或想加一句评论时用'],
+            ['chart_dynamic', '第一段 · 动态走势补句', '折线 / 分组柱状，补「同向不同速」「拐点」这类观察句'],
+            ['para2_why', '第二段 · 机制句池（原因句）', '挑 3 条，每条一个完整原因；别连用两组意思相同的']
+        ];
+        box.innerHTML = groupsP.map(([id, name, sub]) => {
+            const s = S[id];
+            const list = (s && s.sentences) || [];
+            if (!list.length) return '';
+            const sorted = list.slice().sort((a, b) => (b.freq || 0) - (a.freq || 0));
+            const w = sorted.reduce((a, x) => a + rcWords(x.en), 0);
+            return `<div class="rc-group">${rcEsc(name)} · ${sorted.length} 句 / ${w} 词</div>`
+                + `<p class="rc-hint">${rcEsc(sub)}</p>`
+                + '<div class="rc-lines">'
+                + sorted.map(x => `<div class="rc-line"><span class="rc-freq">${'★'.repeat(x.freq || 3)}</span>`
+                    + rcEn(x.en)
+                    + (x.cn ? `<div class="rc-cn">${rcPh(x.cn)}</div>` : '')
+                    + (x.tag ? `<div class="rc-use">📌 ${rcEsc(x.tag)}</div>` : '')
+                    + '</div>').join('')
+                + '</div>';
+        }).join('');
+    })();
 
     // ✨ 精选好句（大作文：素材本摘句；小作文：弹药精挑）——随 rcView 切换，各视图一份
     (async function () {
@@ -194,7 +239,7 @@ async function rcInit() {
                     + '<p class="rc-note">' + rcEsc(c.desc) + '</p>'
                     + items.map(x => '<div class="rc-line">'
                         + (x.year ? '<span class="rc-freq">' + rcEsc(x.year) + '</span>' : '')
-                        + '<div class="rc-en">' + rcAnno(x.en) + '</div>'
+                        + rcEn(x.en)
                         + '<div class="rc-cn">' + rcPh(x.cn) + '</div>'
                         + (x.use ? '<div class="rc-use">📌 ' + rcEsc(x.use) + '</div>' : '')
                         + '</div>').join('');
@@ -206,7 +251,7 @@ async function rcInit() {
                     + ' 句（★★ 以上），必背句之外的第一顺位替补。';
                 sb.innerHTML = G.small.map(x => '<div class="rc-line">'
                     + '<span class="rc-freq">' + '★'.repeat(x.freq || 2) + '</span>'
-                    + '<div class="rc-en">' + rcAnno(x.en) + '</div>'
+                    + rcEn(x.en)
                     + '<div class="rc-cn">' + rcPh(x.cn) + '</div>'
                     + '<div class="rc-use">📌 ' + rcEsc(x.tag || '') + (x.bank ? ' · ' + rcEsc(x.bank) : '') + '</div>'
                     + '</div>').join('');
@@ -305,13 +350,14 @@ function rcAnno(t) {
     return html.replace(/\u0000/g, () => '<span class="rc-ph">' + rcEsc(phs.shift()) + '</span>');
 }
 
-/** 词典/词组加载完成后：把还没标注的 .rc-en 重标一遍 */
+/** 词典/词组加载完成后：把还没标注的 .rc-en 重标一遍（必须用 data-src，见 rcEn 注释） */
 function rcAnnoAll() {
     if (typeof maxPhraseWords !== 'function' || maxPhraseWords() < 1 || typeof dictLookup !== 'function') return;
     document.querySelectorAll('.rc-en').forEach(el => {
-        if (el.dataset.anno) return;
+        if (el.dataset.anno === '1') return;
+        const src = el.getAttribute('data-src');
         el.dataset.anno = '1';
-        el.innerHTML = rcAnno(el.textContent);
+        el.innerHTML = rcAnno(src != null ? src : el.textContent);
     });
 }
 
@@ -431,7 +477,8 @@ function rcToc() {
         ['rcSecSkeleton', '③ ⭐ 必背骨架'],
         ['rcSecAgents', '④ ⚡ 主体句池'],
         ['rcSecPlan', '⑤ 30 天计划'],
-        ['rcSecExam', '⑥ 考场 30 分钟']
+        ['rcSecExam', '⑥ 考场 30 分钟'],
+        ['rcSecPools', '⑦ ⚡ 句池']
     ]);
     rcTocBuild('rcTocS', [
         ['rcSecSGolden', '① ✨ 精选好句'],
@@ -560,7 +607,8 @@ async function rcSmallInit() {
     }));
     const mustTotal = st.core_words + st.must_words;
     document.getElementById('rcDescS').innerHTML =
-        '一页背完小作文：<b>⭐⭐ 骨架 4 句（任何一封信都要用）+ ⭐ 每类型 2 句</b>，' + st.ammo + ' 句弹药（现挑现抄，不用背）。';
+        '一页背完小作文：<b>⭐⭐ 骨架 4 句（任何一封信都要用）+ ⭐ 每类型 2 句</b>，' + st.ammo + ' 句弹药（现挑现抄，不用背）。'
+        + '<span class="rc-legend">🖱 点任意单词查释义 · <span class="rc-ph">蓝底斜体</span> ＝ 考场上要换掉的槽</span>';
     document.getElementById('rcStatsS').innerHTML = `
         <div class="rc-stat"><span class="rc-stat-n">${st.core + st.must}</span><span class="rc-stat-k">⭐ 要背的句子</span></div>
         <div class="rc-stat"><span class="rc-stat-n">${mustTotal}</span><span class="rc-stat-k">⭐ 要背的词数</span></div>
@@ -585,7 +633,7 @@ async function rcSmallInit() {
         </div>`;
 
     // 二、要背的句子
-    const line = (x, star) => `<div class="rc-line">${star ? `<span class="rc-freq">${star}</span>` : ''}<div class="rc-en">${rcAnno(x.it.en)}</div>`
+    const line = (x, star) => `<div class="rc-line">${star ? `<span class="rc-freq">${star}</span>` : ''}${rcEn(x.it.en)}`
         + `<div class="rc-cn">${rcPh(x.it.cn || '')}</div></div>`;
     let sk = '<div class="rc-group">⭐⭐ 骨架（4 句 · ' + st.core_words + ' 词）— 任何一封信都要用</div>';
     sk += '<div class="rc-card"><div class="rc-card-head"><span class="rc-card-title">首句 / 来意 / 通用引出 / 收尾</span>'

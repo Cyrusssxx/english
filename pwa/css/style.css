@@ -3939,8 +3939,18 @@ html.dark .rc-sub { color: #fb923c; }
 .rc-line:last-child { border-bottom: none; }
 .rc-en { font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; line-height: 1.7; color: var(--text); }
 .rc-cn { font-size: .88rem; color: var(--text-light); line-height: 1.65; margin-top: 2px; }
-.rc-ph { color: #62809f; font-weight: 500; font-style: italic; background: rgba(29, 111, 208, .05); border-radius: 3px; padding: 0 2px; }
-html.dark .rc-ph { color: #8fb4d8; background: rgba(124, 192, 255, .09); }
+/* 占位符芯片：与写作页 .wr-ph 同一套观感（蓝底 + 斜体），再加一条虚线底边，
+   让「这里要换词」在扫读时一眼可辨；.rc-en 里与可点词（.word）并存，两者不冲突 */
+.rc-ph {
+    color: #62809f; font-weight: 500; font-style: italic;
+    background: rgba(29, 111, 208, .07); border-radius: 3px; padding: 0 3px;
+    border-bottom: 1px dashed rgba(98, 128, 159, .5);
+}
+html.dark .rc-ph { color: #8fb4d8; background: rgba(124, 192, 255, .11); border-bottom-color: rgba(143, 180, 216, .5); }
+
+/* 卡片级提示行（不参与划词高亮编号，故用独立类名） */
+.rc-hint { font-size: .8rem; line-height: 1.6; color: var(--text-light); margin: -1px 0 9px; }
+.rc-legend { display: block; margin-top: 7px; font-size: .8rem; color: var(--text-light); }
 .rc-agent-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
 .rc-agent { background: var(--card-bg); border: 1px solid var(--border); border-top: 3px solid var(--primary); border-radius: 10px; padding: 10px 12px; break-inside: avoid; }
 .rc-agent-name { font-size: .92rem; font-weight: 700; color: var(--primary); margin-bottom: 5px; display: flex; justify-content: space-between; gap: 8px; }
