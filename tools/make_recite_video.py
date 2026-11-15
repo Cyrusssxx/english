@@ -1,13 +1,19 @@
 # -*- coding: utf-8 -*-
 """
-模板带背视频生成器（大作文骨架篇，竖屏 1080x1920）
+模板带背视频生成器（大作文骨架篇 · 横屏 1920x1080）
 
 链路：writing_templates.json 取句 -> edge-tts 逐句合成（慢读 + 原速）
-      -> 词边界对齐 -> Pillow 按块渲染帧 -> ffmpeg 拼帧 + 混音 -> mp4
+      -> wav 精确拼接（无 aac 填充误差）-> WordBoundary 对齐行首
+      -> Pillow 渲染帧 -> ffmpeg 按帧数精确编码 + 混音 -> mp4
+
+音画同步要点：
+  1. 中间产物一律 pcm wav（样本数即时长），不像 aac 每段有 priming/padding；
+  2. 每段帧数用「累积时间取整」分配，误差不跨段累积；
+  3. 编码时 -frames:v 精确截断到总帧数，音轨 apad 后 -t 裁到同一时长。
 
 用法：python tools/make_recite_video.py [--only=0,1]
 """
-import os, sys, json, re, asyncio, subprocess, shutil, hashlib
+import os, sys, json, re, asyncio, subprocess, shutil, hashlib, wave, array
 import imageio_ffmpeg
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -18,8 +24,10 @@ OUT_DIR = os.path.join(ROOT, 'output')
 # Trae 自带的 ffmpeg 是精简构建（无 mp3/wav/aac），改用 imageio-ffmpeg 的完整版
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 
-W, H = 1080, 1920
+W, H = 1920, 1080          # 横屏 16:9
 FPS = 25
+SR = 24000                 # 统一采样率，wav 直接按样本拼
+MX = 130                   # 左右页边距
 
 VOICE_EN = 'en-US-EmmaNeural'
 VOICE_CN = 'zh-CN-XiaoxiaoNeural'
@@ -44,7 +52,16 @@ CN_COL = (146, 161, 187)
 ACCENT = (110, 168, 254)
 LINE = (44, 56, 84)
 WHITE = (246, 249, 255)
+DIM = (96, 112, 140)
+DIM2 = (74, 86, 110)
 
+# 版面（横屏）
+TOP_BAR = 100              # 顶栏分隔线 y
+EN_TOP = 150               # 英文区上边界
+EN_AREA = 690              # 英文 + 中文可用高度
+CN_LH = 48                 # 中文行高
+CAP_Y = 884                # 底部胶囊 y
+NOTE_Y = 954               # 底部提示 y
 
 # ---------------- 内容清单 ----------------
 def load_tpl():
@@ -126,12 +143,9 @@ PARTS = [
     },
 ]
 
-INTRO = [
-    ('cover', '三段骨架 · 带背', '大作文不用整篇背，背骨架就够'),
-    ('say', '每句话我读两遍。第一遍慢，你跟着念；第二遍正常速度，你先自己默背，再对一下答案。'),
-    ('say', '句子里发黄的下划线是空位，考试的时候换成本题的具体词。现在跟着念占位名就行，知道那里该填什么。'),
-    ('say', '全片二十多句，九分钟出头。现在开始，第一段。'),
-]
+# 头尾只留画面，不配旁白（旁白属于「无意义音频」，全删）
+HEAD = {'title': '三段骨架 · 带背', 'sub': '五段骨架拆开念 · 每句两遍', 'sec': 2.4}
+TAIL = {'title': '背骨架 · 不背整篇', 'sub': '模板只是骨架，考场上换成本题的具体词', 'sec': 2.6}
 
 RUN_PART = {
     'tag': 'PART 6 · 整段连背',
@@ -141,11 +155,10 @@ RUN_PART = {
               skel('para3_positive'), skel('para3_negative')],
 }
 
-OUTRO = [
-    ('say', '三段骨架过完了。最后提醒一句。'),
-    ('say', '模板只是骨架，考场上必须换成本题的具体词和数据。骨架越熟，留给填词的时间越多。'),
-    ('say', '再过一遍的方法：关掉声音，看着中文说英文。说得出来，才是真背下来了。'),
-]
+CARD_SEC = 2.2     # 分段卡片静默时长
+GAP1 = 0.8         # 慢读 -> 原速 之间
+GAP2 = 1.8         # 原速 -> 下一句 之间（留给自己背）
+RUN_TAIL = 0.9
 
 
 # ---------------- 文本工具 ----------------
@@ -270,9 +283,9 @@ def fade_bg():
         d.line([(0, y), (W, y)], fill=c)
     glow = Image.new('L', (W, H), 0)
     gd = ImageDraw.Draw(glow)
-    gd.ellipse([W * 0.08, -H * 0.26, W * 0.92, H * 0.24], fill=46)
-    glow = glow.filter(ImageFilter.GaussianBlur(190))
-    return Image.composite(Image.new('RGB', (W, H), (46, 70, 116)), img, glow)
+    gd.ellipse([W * 0.10, -H * 0.30, W * 0.90, H * 0.26], fill=44)
+    glow = glow.filter(ImageFilter.GaussianBlur(200))
+    return Image.composite(Image.new('RGB', (W, H), (44, 68, 112)), img, glow)
 
 
 _FIT = {}
@@ -325,37 +338,38 @@ def wrap_block(block, size, maxw):
 def layout_all(blocks, size):
     out = []
     for b in blocks:
-        lines = wrap_block(b, size, 950)
+        lines = wrap_block(b, size, W - 2 * MX)
         widths = [sum(x[4] for x in ln) for ln in lines]
         out.append((lines, max(widths) if widths else 0))
     return out
 
 
-def measure(laid, size, gap=40):
+def measure(laid, size, gap=34):
     n = sum(len(x[0]) for x in laid)
     return int(n * size * 1.42 + (len(laid) - 1) * gap)
-
-
-AREA = 940
-TOP = 250
 
 
 def cn_rows(item):
     cn = item.get('cn') or ''
     if not cn:
         return []
-    return wrap_cn(cn, font(FONT_CN, 30), font(FONT_EN_I, 28), 900)
+    return wrap_cn(cn, font(FONT_CN, 32), font(FONT_EN_I, 30), W - 2 * MX)
 
 
 def pick_layout(blocks, cn_h=0):
-    """字号从 68 往下试，英文 + 中文总高不超过 1100"""
-    size = 68
-    while size > 30:
+    """字号从 72 往下试：能压成一行就停下来；否则取满足高度约束的最大字号"""
+    fallback = None
+    size = 72
+    while size >= 32:
         laid = layout_all(blocks, size)
-        if measure(laid, size) + cn_h <= 1100:
-            return size, laid
+        if measure(laid, size) + cn_h <= EN_AREA:
+            if fallback is None:
+                fallback = (size, laid)
+            # 能压一行就一行；但别为了一行把字缩得太小
+            if sum(len(ls) for ls, _ in laid) <= 1 and size >= 56:
+                return size, laid
         size -= 2
-    return size, layout_all(blocks, size)
+    return fallback or (32, layout_all(blocks, 32))
 
 
 def flatten_lines(laid):
@@ -389,114 +403,115 @@ def draw_word_line(d, line, x0, y, size, state):
             d.text((x, y), t, font=f, fill=scol)
             if tail:
                 d.text((x + f.getlength(t), y), tail, font=f_en, fill=col)
-            ly = y + size * 1.16
-            d.line([(x, ly), (x + w - f_en.getlength(tail), ly)], fill=scol, width=max(2, size // 22))
+            ly = y + size * 1.14
+            d.line([(x, ly), (x + w - f_en.getlength(tail), ly)], fill=scol, width=max(2, size // 24))
         x += w
 
 
 def render_sentence(path, part, idx, total, item, size, laid, lit, mode, progress):
     img = fade_bg()
     d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, int(W * progress), 5], fill=ACCENT)
+    d.rectangle([0, 0, int(W * progress), 4], fill=ACCENT)
 
-    d.text((W / 2, 92), part['tag'], font=font(FONT_CN, 26), fill=ACCENT, anchor='ma')
-    d.text((W / 2, 136), part['title'], font=font(FONT_CN_B, 46), fill=WHITE, anchor='ma')
-    d.line([(W / 2 - 46, 218), (W / 2 + 46, 218)], fill=LINE, width=3)
+    # 顶栏：左 PART 标签 / 右 序号
+    d.text((MX, 46), part['tag'], font=font(FONT_CN, 27), fill=ACCENT)
+    label = f'连背 {idx + 1} / {total}' if mode == 'run' else f'第 {idx + 1} / {total} 句'
+    d.text((W - MX, 46), label, font=font(FONT_CN, 25), fill=DIM, anchor='ra')
+    d.line([(MX, TOP_BAR), (W - MX, TOP_BAR)], fill=LINE, width=2)
 
+    # 英文 + 中文整体垂直居中
     lines = flatten_lines(laid)
     he = measure(laid, size)
-    cn = item.get('cn') or ''
-    fcn = font(FONT_CN, 30)
-    fslot = font(FONT_EN_I, 28)
     rows_cn = cn_rows(item)
-    hc = len(rows_cn) * 48
-    total_h = he + (48 + hc if rows_cn else 0)
-    y = 290 + max(0, (1140 - total_h) // 2)
-    x0base = (W - max(bw for _, bw in laid)) / 2
+    hc = len(rows_cn) * CN_LH
+    block_h = he + (40 + hc if rows_cn else 0)
+    y = EN_TOP + max(0, (EN_AREA - block_h) // 2)
+
     li = 0
     for bl, bw in laid:
         for ln in bl:
-            state = 'done' if li < lit - 1 else ('cur' if li == lit - 1 else 'next')
-            draw_word_line(d, ln, x0base, y, size, state)
+            if mode == 'run':
+                state = 'cur'      # 连背只读一遍，整段全亮，不搞逐行明暗
+            else:
+                state = 'done' if li < lit - 1 else ('cur' if li == lit - 1 else 'next')
+            draw_word_line(d, ln, MX, y, size, state)
             y += int(size * 1.42)
             li += 1
-        y += 40
+        y += 34
 
-    # 中文
-    cny = y + 8
+    # 中文译文
     if rows_cn:
-        widths = [sum(x[3] for x in r) for r in rows_cn]
-        center_each = len(rows_cn) <= 2
-        xc = (W - max(widths)) / 2
-        for ln, lw in zip(rows_cn, widths):
-            x = (W - lw) / 2 if center_each else xc
-            for kind, txt, f, w in ln:
-                if kind != 'sp':
-                    d.text((x, cny), txt, font=f,
-                           fill=(176, 188, 210) if kind == 'c' else CN_COL)
-                x += w
-            cny += 48
+        cny = y + 6
+        fcn2 = font(FONT_CN, 32)
+        fsl2 = font(FONT_EN_I, 30)
+        for ln in rows_cn:
+            x = MX
+            for u in ln:
+                if u[0] == 'c':
+                    if x > MX:
+                        x += 6
+                    d.text((x, cny), u[1], font=fsl2, fill=(176, 188, 210))
+                    x += fsl2.getlength(u[1])
+                    if u[2]:
+                        d.text((x, cny), u[2], font=fcn2, fill=CN_COL)
+                        x += fcn2.getlength(u[2])
+                    x += 6
+                else:
+                    d.text((x, cny), u[1], font=fcn2, fill=CN_COL)
+                    x += fcn2.getlength(u[1])
+            cny += CN_LH
 
     # 底部跟读胶囊
-    label = {'slow': '第一遍 · 慢速跟读',
-             'fast': '第二遍 · 自己先背，再对答案',
-             'run': '连背 · 只读一遍，跟着走'}[mode]
-    fp = font(FONT_CN, 25)
-    pw = fp.getlength(label)
-    bx = (W - pw) / 2 - 30
-    by = 1556
-    d.rounded_rectangle([bx, by, bx + pw + 60, by + 56], radius=28,
-                        outline=(60, 84, 124), width=2)
-    d.text((W / 2, by + 27), label, font=fp,
-           fill=(126, 154, 194) if mode == 'slow' else (150, 178, 216), anchor='mm')
+    cap = {'slow': '第一遍 · 慢速跟读',
+           'fast': '第二遍 · 自己先背，再对答案',
+           'run': '连背 · 只读一遍，跟着走'}[mode]
+    fp = font(FONT_CN, 26)
+    pw = fp.getlength(cap)
+    bx = (W - pw) / 2 - 34
+    d.rounded_rectangle([bx, CAP_Y, bx + pw + 68, CAP_Y + 58], radius=29,
+                        outline=(58, 82, 122), width=2)
+    d.text((W / 2, CAP_Y + 29), cap, font=fp,
+           fill=(130, 158, 198) if mode == 'slow' else (154, 182, 220), anchor='mm')
 
+    # 底部提示（占位符说明等）
     note = re.sub(r'\{\{(.+?)\}\}', r'\1', item.get('note') or '')
-    if note:
-        fn = font(FONT_CN, 24)
-        nrows, cur = [], ''
-        for ch in note:
-            if fn.getlength(cur + ch) > 900:
-                nrows.append(cur)
-                cur = ch
-            else:
-                cur += ch
-        if cur:
-            nrows.append(cur)
-        if len(nrows) > 2:
-            nrows = nrows[:2]
-            nrows[1] = nrows[1][:-1] + '…'
-        ny = 1636
-        for ln in nrows:
-            d.text((W / 2, ny), ln, font=fn, fill=(108, 122, 148), anchor='ma')
-            ny += 36
+    if note and mode != 'run':          # 连背段不摆长提示，只求跟得上
+        fn = font(FONT_CN, 25)
+        lim = W - 2 * MX - 40
+        if fn.getlength(note) > lim:
+            ell = fn.getlength('…')
+            while note and fn.getlength(note) + ell > lim:
+                note = note[:-1]
+            note += '…'
+        d.text((W / 2, NOTE_Y), note, font=fn, fill=(104, 118, 145), anchor='ma')
 
-    tag = '连背' if mode == 'run' else '第'
-    d.text((W / 2, 1830), f'{tag} {idx + 1} / {total}' + ('' if mode == 'run' else ' 句'),
-           font=font(FONT_CN, 23), fill=(74, 86, 110), anchor='ma')
     img.save(path, compress_level=3)
 
 
 def wrap_cn(text, f, fslot, maxw):
-    toks = tokenize(text)
-    rows, cur, curw = [], [], 0.0
-    for k, t in toks:
-        glue = bool(cur) and k == 'w' and re.match(r'^[，。、；：！？）」』%]+$', t)
-        tk_sp = None
+    """中文按字符折行；芯片整体不可拆；标点不落到行首（行尾悬挂）"""
+    NO_HEAD = '，。、；：！？）》」』%…·'
+    units = []
+    for k, t in tokenize(text):
         if k == 'c':
             name, tail = chip_draw_text(t)
-            w = fslot.getlength(name) + f.getlength(tail) + 7
-            tk = ('c', name, fslot, w)
-            tk_sp = ('sp', '', f, 7)
+            units.append(('c', name, tail))
         else:
-            w = f.getlength(t + ' ')
-            tk = ('w', t, f, w)
-        if cur and not glue and curw + (7 if tk_sp else 0) + w > maxw:
+            for ch in t:
+                units.append(('w', ch))
+
+    rows, cur, curw = [], [], 0.0
+    for u in units:
+        if u[0] == 'c':
+            w = fslot.getlength(u[1]) + f.getlength(u[2])
+            head_punct = False
+        else:
+            w = f.getlength(u[1])
+            head_punct = u[1] in NO_HEAD
+        if cur and curw + w > maxw and not head_punct:
             rows.append(cur)
             cur, curw = [], 0.0
-        if tk_sp and cur:
-            cur.append(tk_sp)
-            curw += 7
-        cur.append(tk)
+        cur.append(u)
         curw += w
     if cur:
         rows.append(cur)
@@ -506,46 +521,22 @@ def wrap_cn(text, f, fslot, maxw):
 def render_card(path, kind, title, sub, progress, tag=None, meta=None):
     img = fade_bg()
     d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, int(W * progress), 5], fill=ACCENT)
+    d.rectangle([0, 0, int(W * progress), 4], fill=ACCENT)
     if kind == 'cover':
-        d.text((W / 2, 690), title, font=font(FONT_CN_B, 66), fill=WHITE, anchor='ma')
-        d.line([(W / 2 - 54, 806), (W / 2 + 54, 806), ], fill=(70, 106, 160), width=4)
-        d.text((W / 2, 858), sub, font=font(FONT_CN, 32), fill=(154, 172, 200), anchor='ma')
-        d.text((W / 2, 962), meta or '', font=font(FONT_CN, 25), fill=(110, 128, 158), anchor='ma')
-        d.text((W / 2, 1042), '英语二 · 大作文模板带背', font=font(FONT_CN, 26),
-               fill=(92, 110, 140), anchor='ma')
-    else:
-        d.text((W / 2, 660), tag, font=font(FONT_CN, 26), fill=ACCENT, anchor='ma')
-        d.text((W / 2, 716), title, font=font(FONT_CN_B, 60), fill=WHITE, anchor='ma')
-        d.line([(W / 2 - 54, 820), (W / 2 + 54, 820)], fill=(70, 106, 160), width=4)
-        d.text((W / 2, 868), sub, font=font(FONT_CN, 29), fill=(148, 164, 192), anchor='ma')
+        d.text((W / 2, 372), title, font=font(FONT_CN_B, 76), fill=WHITE, anchor='ma')
+        d.line([(W / 2 - 60, 500), (W / 2 + 60, 500)], fill=(70, 106, 160), width=4)
+        d.text((W / 2, 552), sub, font=font(FONT_CN, 34), fill=(158, 176, 204), anchor='ma')
         if meta:
-            d.text((W / 2, 980), meta, font=font(FONT_CN, 24), fill=(92, 108, 134), anchor='ma')
-    img.save(path, compress_level=3)
-
-
-def render_say(path, text, progress):
-    """中文讲解卡：纯旁白画面"""
-    img = fade_bg()
-    d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, int(W * progress), 5], fill=ACCENT)
-    f = font(FONT_CN, 40)
-    rows, cur, curw = [], [], 0.0
-    for ch in text:
-        w = f.getlength(ch)
-        if cur and curw + w > 760:
-            rows.append(''.join(cur))
-            cur, curw = [], 0.0
-        cur.append(ch)
-        curw += w
-    if cur:
-        rows.append(''.join(cur))
-    wmax = max((f.getlength(r) for r in rows), default=0)
-    x0 = (W - wmax) / 2
-    y = (H - len(rows) * 68) / 2
-    for r in rows:
-        d.text((x0, y), r, font=f, fill=(228, 236, 248))
-        y += 68
+            d.text((W / 2, 634), meta, font=font(FONT_CN, 26), fill=(108, 126, 156), anchor='ma')
+        d.text((W / 2, 952), '英语二 · 大作文模板带背', font=font(FONT_CN, 25),
+               fill=(86, 102, 132), anchor='ma')
+    else:
+        d.text((W / 2, 372), tag, font=font(FONT_CN, 28), fill=ACCENT, anchor='ma')
+        d.text((W / 2, 424), title, font=font(FONT_CN_B, 66), fill=WHITE, anchor='ma')
+        d.line([(W / 2 - 60, 534), (W / 2 + 60, 534)], fill=(70, 106, 160), width=4)
+        d.text((W / 2, 584), sub, font=font(FONT_CN, 30), fill=(148, 164, 192), anchor='ma')
+        if meta:
+            d.text((W / 2, 660), meta, font=font(FONT_CN, 25), fill=(92, 108, 134), anchor='ma')
     img.save(path, compress_level=3)
 
 
@@ -589,7 +580,7 @@ async def tts_all(jobs, conc=3):
     return res
 
 
-# ---------------- ffmpeg ----------------
+# ---------------- 音频（wav 精确拼接） ----------------
 def run(cmd):
     p = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8', errors='replace')
     if p.returncode != 0:
@@ -597,45 +588,91 @@ def run(cmd):
     return p
 
 
-def dur(path):
-    p = subprocess.run([FFMPEG, '-v', 'error', '-i', path, '-ar', '24000', '-ac', '1',
-                        '-f', 's16le', '-'], capture_output=True)
-    if p.returncode != 0:
-        raise RuntimeError('decode fail: ' + path)
-    return len(p.stdout) / 2 / 24000
+def wav_dur(p):
+    with wave.open(p, 'rb') as w:
+        return w.getnframes() / w.getframerate()
 
 
 def akey(*parts):
     return hashlib.md5('|'.join(parts).encode('utf-8')).hexdigest()[:14]
 
 
-def to_m4a(src, out):
-    run([FFMPEG, '-y', '-loglevel', 'error', '-i', src, '-ar', '24000', '-ac', '1',
-         '-c:a', 'aac', '-b:a', '80k', out])
-    return dur(out)
+def mp3_wav(mp3):
+    """mp3 -> 24k mono wav，并裁掉开头固定静音（edge-tts 每句约 0.16s）
+
+    返回 (wav, lead秒)。lead 用于把词边界时间戳整体前移，保证画面切换与开口严格对齐。
+    """
+    wav = os.path.splitext(mp3)[0] + '.wav'
+    lp = wav + '.lead'
+    if os.path.exists(wav) and os.path.exists(lp) and os.path.getmtime(wav) >= os.path.getmtime(mp3):
+        with open(lp) as f:
+            return wav, float(f.read().strip())
+
+    p = subprocess.run([FFMPEG, '-y', '-loglevel', 'error', '-i', mp3,
+                        '-ar', str(SR), '-ac', '1', '-c:a', 'pcm_s16le', '-f', 's16le', '-'],
+                       capture_output=True)
+    if p.returncode != 0:
+        raise RuntimeError('decode fail: ' + mp3)
+    a = array.array('h')
+    a.frombytes(p.stdout)
+    thr = 500           # ≈ -36 dBFS，低于此视为静音
+    i = 0
+    while i < len(a) and abs(a[i]) < thr:
+        i += 1
+    lead = max(0, i - int(0.03 * SR))      # 回退 30ms 保留起音
+    with _wopen(wav) as o:
+        o.writeframes(a[lead:].tobytes())
+    with open(lp, 'w') as f:
+        f.write('%.4f' % (lead / SR))
+    return wav, lead / SR
 
 
-def pad_tail(src, out, tail=0.8):
-    """音频 + 尾部静音"""
-    run([FFMPEG, '-y', '-loglevel', 'error', '-i', src,
-         '-f', 'lavfi', '-t', str(tail), '-i', 'anullsrc=r=24000:cl=mono',
-         '-filter_complex',
-         '[0:a]aresample=24000,aformat=channel_layouts=mono[a0];'
-         '[a0][1:a]concat=n=2:v=0:a=1[out]',
-         '-map', '[out]', '-ar', '24000', '-ac', '1', '-c:a', 'aac', '-b:a', '80k', out])
-    return dur(out)
+def _wopen(path):
+    o = wave.open(path, 'wb')
+    o.setnchannels(1)
+    o.setsampwidth(2)
+    o.setframerate(SR)
+    return o
 
 
-def mix_slow_fast(slow, fast, out, gap1=1.0, gap2=2.6):
-    run([FFMPEG, '-y', '-loglevel', 'error', '-i', slow, '-i', fast,
-         '-f', 'lavfi', '-t', str(gap1), '-i', 'anullsrc=r=24000:cl=mono',
-         '-f', 'lavfi', '-t', str(gap2), '-i', 'anullsrc=r=24000:cl=mono',
-         '-filter_complex',
-         '[0:a]aresample=24000,aformat=channel_layouts=mono[a0];'
-         '[1:a]aresample=24000,aformat=channel_layouts=mono[a1];'
-         '[a0][2:a][a1][3:a]concat=n=4:v=0:a=1[out]',
-         '-map', '[out]', '-ar', '24000', '-ac', '1', '-c:a', 'aac', '-b:a', '80k', out])
-    return dur(out)
+def write_silence(out, sec):
+    n = int(round(sec * SR))
+    with _wopen(out) as o:
+        chunk = b'\x00\x00' * SR
+        left = n
+        while left > 0:
+            k = min(left, SR)
+            o.writeframes(chunk[:k * 2])
+            left -= k
+    return n / SR
+
+
+def mix_slow_fast(slow_wav, fast_wav, out, gap1=GAP1, gap2=GAP2):
+    """慢读 + 静 + 原速 + 静，样本级精确"""
+    with _wopen(out) as o:
+        with wave.open(slow_wav, 'rb') as a:
+            o.writeframes(a.readframes(a.getnframes()))
+        o.writeframes(b'\x00\x00' * int(round(gap1 * SR)))
+        with wave.open(fast_wav, 'rb') as b:
+            o.writeframes(b.readframes(b.getnframes()))
+        o.writeframes(b'\x00\x00' * int(round(gap2 * SR)))
+    return wav_dur(out)
+
+
+def mix_run(fast_wav, out, tail=RUN_TAIL):
+    with _wopen(out) as o:
+        with wave.open(fast_wav, 'rb') as b:
+            o.writeframes(b.readframes(b.getnframes()))
+        o.writeframes(b'\x00\x00' * int(round(tail * SR)))
+    return wav_dur(out)
+
+
+def concat_wavs(paths, out):
+    with _wopen(out) as o:
+        for p in paths:
+            with wave.open(p, 'rb') as w:
+                o.writeframes(w.readframes(w.getnframes()))
+    return wav_dur(out)
 
 
 # ---------------- 主流程 ----------------
@@ -656,35 +693,28 @@ async def main():
     os.makedirs(OUT_DIR, exist_ok=True)
 
     # ---- 组装任务清单（order 即时间顺序） ----
-    seq = []   # dict(kind=card|say|sent, ...)
-    for i, (kind, *rest) in enumerate(INTRO):
-        if kind == 'cover':
-            seq.append({'kind': 'cover', 'title': rest[0], 'sub': rest[1], 'cn': '这套视频只做一件事：' + rest[1]})
-        else:
-            seq.append({'kind': 'say', 'text': rest[0]})
+    seq = [{'kind': 'cover', 'title': HEAD['title'], 'sub': HEAD['sub'], 'sec': HEAD['sec']}]
     for pi, part in enumerate(PARTS):
         if only is not None and pi not in only:
             continue
-        seq.append({'kind': 'card', 'part': part, 'pi': pi})
+        seq.append({'kind': 'card', 'part': part, 'pi': pi, 'sec': CARD_SEC})
         for si, item in enumerate(part['items']):
             seq.append({'kind': 'sent', 'part': part, 'pi': pi, 'si': si,
                         'item': item, 'toks': tokenize(item['en']),
                         'blocks': split_blocks(tokenize(item['en']))})
     if only is None:
-        seq.append({'kind': 'card', 'part': RUN_PART, 'pi': 99})
+        seq.append({'kind': 'card', 'part': RUN_PART, 'pi': 99, 'sec': CARD_SEC})
         for ri, item in enumerate(RUN_PART['items']):
             _t = tokenize(item['en'])
             seq.append({'kind': 'run', 'part': RUN_PART, 'pi': 99, 'si': ri,
                         'item': item, 'toks': _t, 'blocks': split_blocks(_t)})
-    for kind, *rest in OUTRO:
-        seq.append({'kind': 'say', 'text': rest[0]})
-    seq.append({'kind': 'cover', 'title': '背骨架 · 不背整篇',
-                'sub': '下一集：小作文十类模板带你过一遍', 'cn': '背骨架，不背整篇。下一集，小作文。'})
+    seq.append({'kind': 'cover', 'title': TAIL['title'], 'sub': TAIL['sub'],
+                'sec': TAIL['sec'], 'tail': True})
 
     total_sent = len([x for x in seq if x['kind'] == 'sent'])
-    print(f'共 {len(seq)} 个画面段，其中句子 {total_sent} 句')
+    print(f'共 {len(seq)} 个画面段，其中句子 {total_sent} 句（无旁白，仅英文朗读）')
 
-    # ---- TTS 任务 ----
+    # ---- TTS 任务（只有句子 / 连背段有音频） ----
     jobs = []
     for i, s in enumerate(seq):
         if s['kind'] in ('sent', 'run'):
@@ -694,118 +724,122 @@ async def main():
                 jobs.append((f'{i}_slow', st, VOICE_EN, RATE_SLOW, s['slow_p']))
             s['fast_p'] = os.path.join(fa, akey(st, VOICE_EN, RATE_FAST) + '_f.mp3')
             jobs.append((f'{i}_fast', st, VOICE_EN, RATE_FAST, s['fast_p']))
-        else:
-            txt = s.get('cn') or (s['part']['title'] + '。' + s['part']['sub'] if s['kind'] == 'card' else s['text'])
-            s['cn_p'] = os.path.join(fa, akey(txt, VOICE_CN) + '_c.mp3')
-            jobs.append((f'{i}_cn', txt, VOICE_CN, '-5%', s['cn_p']))
     print(f'TTS 任务 {len(jobs)} 条')
     words = await tts_all(jobs)
     print('TTS 完成')
 
-    # ---- 逐段音频 + 帧 ----
-    concat_lines = []
-    audio_segs = []
+    # ---- 逐段：音频 wav + 画面帧计划 ----
+    seg_paths = []
+    frame_plan = []      # [(png, seconds)]
     for i, s in enumerate(seq):
-        seg = os.path.join(fa, f'seg_{i:04d}.m4a')
-        if s['kind'] in ('cover', 'card', 'say'):
-            d0 = to_m4a(s['cn_p'], seg)
-            png = os.path.join(ffr, f'f_{i:04d}.png')
-            prog = (i + 1) / len(seq)
+        segw = os.path.join(fa, f'seg_{i:04d}.wav')
+        prog = (i + 1) / len(seq)
+        png = os.path.join(ffr, f'f_{i:04d}.png')
+
+        if s['kind'] in ('cover', 'card'):
+            d0 = write_silence(segw, s['sec'])
             if s['kind'] == 'cover':
-                render_card(png, 'cover', s['title'], s['sub'], prog,
-                            meta=f'共 {total_sent} 句 · 每句读两遍')
-            elif s['kind'] == 'card':
+                meta = None if s.get('tail') else f'共 {total_sent} 句 · 每句念两遍'
+                render_card(png, 'cover', s['title'], s['sub'], prog, meta=meta)
+            else:
                 p = s['part']
                 render_card(png, 'part', p['title'], p['sub'], prog, tag=p['tag'],
                             meta=f'本段 {len(p["items"])} 句')
-            else:
-                render_say(png, s['text'], prog)
-            concat_lines.append((png, d0 + 0.45))
-            audio_segs.append(seg)
-            print(f'  [{i+1}/{len(seq)}] {s["kind"]:<5} {d0:5.1f}s  {s.get("text", s.get("title", ""))[:26]}')
+            frame_plan.append((png, d0))
+            seg_paths.append(segw)
+            print(f'  [{i+1}/{len(seq)}] {s["kind"]:<5} {d0:5.1f}s  静默  '
+                  f'{s.get("title", s.get("part", {}).get("title", ""))[:26]}')
             continue
 
         part, item = s['part'], s['item']
+
         if s['kind'] == 'run':
-            fast = s['fast_p']
-            segd = pad_tail(fast, seg, 0.85)
+            fastw, _ = mp3_wav(s['fast_p'])
+            d0 = mix_run(fastw, segw)
             blocks = s['blocks']
             _nh = len(cn_rows(item))
-            size, laid = pick_layout(blocks, 48 + _nh * 48 if _nh else 0)
+            size, laid = pick_layout(blocks, 40 + _nh * CN_LH if _nh else 0)
             n = len(flatten_lines(laid))
-            png = os.path.join(ffr, f'f_{i:04d}_run.png')
             render_sentence(png, part, s['si'], len(part['items']), item,
-                            size, laid, n, 'run', (i + 1) / len(seq))
-            concat_lines.append((png, segd))
-            audio_segs.append(seg)
-            print(f'  [{i+1}/{len(seq)}] run   {segd:5.1f}s  {item["en"][:34]}')
+                            size, laid, n, 'run', prog)
+            frame_plan.append((png, d0))
+            seg_paths.append(segw)
+            print(f'  [{i+1}/{len(seq)}] run   {d0:5.1f}s  {item["en"][:34]}')
             continue
 
-        slow, fast = s['slow_p'], s['fast_p']
-        segd = mix_slow_fast(slow, fast, seg)
-        slowd = dur(slow)
+        sloww, lead_s = mp3_wav(s['slow_p'])
+        fastw, _ = mp3_wav(s['fast_p'])
+        d0 = mix_slow_fast(sloww, fastw, segw)
+        slowd = wav_dur(sloww)
         blocks = s['blocks']
-
         _nh = len(cn_rows(item))
-        size, laid = pick_layout(blocks, 48 + _nh * 48 if _nh else 0)
+        size, laid = pick_layout(blocks, 40 + _nh * CN_LH if _nh else 0)
         lines = flatten_lines(laid)
-        ts = align(s['toks'], words.get(f'{i}_slow', []))
-        # 每行起点时间，保证单调
+
+        ts = [max(0.0, v - lead_s) for v in align(s['toks'], words.get(f'{i}_slow', []))]
         starts, prev = [], 0.0
-        for ln in lines:
+        for li, ln in enumerate(lines):
             v = ts[line_ti(ln)] if ts else 0.0
             v = max(v, prev)
+            if li == 0:
+                v = 0.0            # 第一行从 0 起，避免开头多一截静止帧
             starts.append(v)
             prev = v
-        bounds = starts + [max(slowd, prev)]
+        bounds = starts + [slowd]
 
-        prog = (i + 1) / len(seq)
         for li in range(len(lines)):
-            span = max(0.5, bounds[li + 1] - bounds[li])
+            span = max(0.45, bounds[li + 1] - bounds[li])
             png = os.path.join(ffr, f'f_{i:04d}_{li}.png')
             render_sentence(png, part, s['si'], len(part['items']), item,
                             size, laid, li + 1, 'slow', prog)
-            concat_lines.append((png, span))
+            frame_plan.append((png, span))
 
         png = os.path.join(ffr, f'f_{i:04d}_f.png')
         render_sentence(png, part, s['si'], len(part['items']), item,
                         size, laid, len(lines), 'fast', prog)
-        concat_lines.append((png, max(0.6, segd - slowd)))
-        audio_segs.append(seg)
-        print(f'  [{i+1}/{len(seq)}] sent  {segd:5.1f}s  行{len(lines)} sz{size}  {item["en"][:34]}')
+        frame_plan.append((png, max(0.5, d0 - slowd)))
+        seg_paths.append(segw)
+        print(f'  [{i+1}/{len(seq)}] sent  {d0:5.1f}s  行{len(lines)} sz{size}  {item["en"][:32]}')
 
-    # ---- 拼音频 ----
-    alist = os.path.join(BUILD, 'audio_list.txt')
-    with open(alist, 'w', encoding='utf-8') as f:
-        for p in audio_segs:
-            f.write("file '%s'\n" % p.replace('\\', '/'))
-    audio_all = os.path.join(BUILD, 'audio_all.m4a')
-    run([FFMPEG, '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0',
-         '-i', alist, '-c', 'copy', audio_all])
-    total_d = dur(audio_all)
+    # ---- 拼总音轨 ----
+    audio_all = os.path.join(BUILD, 'audio_all.wav')
+    a_dur = concat_wavs(seg_paths, audio_all)
+    print(f'总音轨 {a_dur:.2f}s')
 
-    # ---- 拼视频（等比缩放帧时长，与音轨严格等长） ----
-    sum_d = sum(dd for _, dd in concat_lines)
-    k = total_d / sum_d
+    # ---- 帧数分配：按累积时间取整，误差不跨段累积 ----
+    plan = []
+    acc_t, acc_f = 0.0, 0
+    for png, dd in frame_plan:
+        acc_t += dd
+        nf = int(round(acc_t * FPS)) - acc_f
+        if nf < 1:
+            nf = 1
+        acc_f += nf
+        plan.append((png, nf))
+    total_frames = acc_f
+    v_dur = total_frames / FPS
+
     vlist = os.path.join(BUILD, 'video_list.txt')
     with open(vlist, 'w', encoding='utf-8') as f:
         f.write('ffconcat version 1.0\n')
-        for png, dd in concat_lines:
+        for png, nf in plan:
             f.write("file '%s'\n" % png.replace('\\', '/'))
-            f.write('duration %.3f\n' % (dd * k))
-        f.write("file '%s'\n" % concat_lines[-1][0].replace('\\', '/'))
+            f.write('duration %.6f\n' % (nf / FPS))
+        f.write("file '%s'\n" % plan[-1][0].replace('\\', '/'))
 
     silent = os.path.join(BUILD, 'video_silent.mp4')
     run([FFMPEG, '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', vlist,
-         '-r', str(FPS), '-pix_fmt', 'yuv420p', '-c:v', 'libx264', '-preset', 'medium',
+         '-r', str(FPS), '-frames:v', str(total_frames),
+         '-pix_fmt', 'yuv420p', '-c:v', 'libx264', '-preset', 'medium',
          '-crf', '20', '-tune', 'stillimage', silent])
 
     name = '大作文模板带背_骨架篇.mp4' if only is None else 'preview_part.mp4'
     final = os.path.join(OUT_DIR, name)
     run([FFMPEG, '-y', '-loglevel', 'error', '-i', silent, '-i', audio_all,
-         '-c:v', 'copy', '-c:a', 'aac', '-b:a', '128k', '-shortest',
-         '-movflags', '+faststart', final])
-    print(f'完成 -> {final}  {os.path.getsize(final)/1e6:.1f} MB  {total_d/60:.2f} min')
+         '-c:v', 'copy', '-af', 'apad', '-c:a', 'aac', '-b:a', '128k',
+         '-t', '%.3f' % v_dur, '-movflags', '+faststart', final])
+    print(f'帧 {total_frames} / 音轨 {a_dur:.2f}s / 成片 {v_dur:.2f}s')
+    print(f'完成 -> {final}  {os.path.getsize(final)/1e6:.1f} MB  {v_dur/60:.2f} min')
 
 
 if __name__ == '__main__':
