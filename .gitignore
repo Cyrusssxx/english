@@ -31,3 +31,7 @@ tools/wn2_remaining.json
 tools/wn2_remaining.json
 
 tools/_charts/
+
+# 视频生成中间产物与成品（体积大，不入库）
+build_video/
+output/
