@@ -226,7 +226,7 @@ CHART = {
                       'item2': '全国总量', 'num3': '510 亿件', 'num4': '830 亿件',
                       'time1': '2018 年', 'time2': '2020 年'},
                  p1=('chart_dynamic', 't1 t2 t3 f:差距'),
-                 p2=('para2_why', 't1 f:成本 f:便利 f:城市化'),
+                 p2=('para2_why', 't1 f:科技普及 f:便利 f:城市化'),
                  p3=('para3_positive', 't1 f:政府·长效 t2'),
                  topic2='online shopping', topic2cn='网购',
                  topic3='online shopping', topic3cn='网购',

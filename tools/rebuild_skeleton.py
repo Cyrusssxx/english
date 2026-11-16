@@ -112,8 +112,6 @@ PARA2_SKEL['alts'] = {'can be attributed to': 'is largely attributable to（加�
 MECH = [
     (3, '收入', 'As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.',
      '随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。'),
-    (3, '成本', 'Technology has cut the cost of {{topic}} and put it within reach of far more people.',
-     '技术进步压低了 {{topic}} 的成本，让更多人能够负担得起。'),
     (3, '便利', 'Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.',
      '线上平台和移动支付使 {{topic}} 变得更快、更方便。'),
     (3, '观念', 'People now judge {{topic}} by what it does for them rather than by what others think.',
@@ -144,17 +142,18 @@ MECH = [
      '生活节奏不断加快，{{topic}} 成了人们为数不多还愿意抽出时间去做的事。'),
     # ── 2026-11-16 追加：押题预测五个方向（AI 教育 / 传统文化 / 教育公平 / 绿色消费 / 绿色出行）──
     # 追加在末尾、不插队：老句的索引与 apply_plan 的 f:tag 引用全部不动。
+    # 排序交给 fit（见 P2_FIT）：押题句给 18~23，压过「观念 15」等通用句 → 前端自动排最前。
     (3, '科技普及', 'Advances in technology have made {{topic}} part of daily life rather than a privilege.',
      '科技的进步让 {{topic}} 从少数人的特权变成日常生活的一部分。'),
     (3, 'AI 教育', 'AI-powered tutoring gives students instant feedback that a single teacher can hardly provide.',
      '人工智能辅导能给学生即时反馈，这是单个老师很难做到的。'),
-    (2, '教育公平', 'Shared online courses have begun to narrow the gap between urban and rural classrooms.',
+    (3, '教育公平', 'Shared online courses have begun to narrow the gap between urban and rural classrooms.',
      '共享网课已经开始缩小城乡课堂之间的差距。'),
-    (2, '环保意识', 'Rising environmental awareness has turned {{topic}} into a mark of responsible living.',
+    (3, '环保意识', 'Rising environmental awareness has turned {{topic}} into a mark of responsible living.',
      '环保意识的提升，使 {{topic}} 成为负责任生活的标志。'),
-    (2, '绿色出行', 'Better public transport has made low-carbon travel a practical choice for young people.',
+    (3, '绿色出行', 'Better public transport has made low-carbon travel a practical choice for young people.',
      '更完善的公共交通，让低碳出行成为年轻人切实可行的选择。'),
-    (2, '文化新媒介', 'Short videos and self-media have opened a far easier route into {{topic}} for young people.',
+    (3, '文化新媒介', 'Short videos and self-media have opened a far easier route into {{topic}} for young people.',
      '短视频和自媒体，为年轻人了解 {{topic}} 打开了一条便捷得多的路径。'),
 ]
 
@@ -214,7 +213,7 @@ P2_FRAMEWORK = [
     {'en': 'This phenomenon can be attributed to a combination of factors.', 'trans': '这一现象可归因于多种因素的综合作用。',
      'cn': '通用开头句：不承诺条数，17 年任何图表都成立；想点明条数再换 two / three / several major factors（见下方同义升级，须与正文条数一致）。'},
     {'en': 'Primary among these is + 机制句 ①', 'trans': '其中，首要的一条是……',
-     'cn': '第 1 条：高级衔接词开头，接句池里最有力的原因（收入 / 成本 / 观念…）。'},
+     'cn': '第 1 条：高级衔接词开头，接句池里最有力的原因（押题句 / 观念 / 收入…）。'},
     {'en': 'Equally important, + 机制句 ②', 'trans': '同样重要的是，……',
      'cn': '第 2 条：换个衔接词、换个角度；句尾可用 which 从句焊因果（..., which has lowered the threshold for ...）。'},
     {'en': '（可选）A further driver is + 机制句 ③', 'trans': '（可选）另一个推动因素是……',
@@ -230,7 +229,10 @@ P2_FRAMEWORK = [
 #   · P3 负池：个人·记录3（通用对策句，手动置前）/ 企业·雇主·企业·管理2（2012 真题用过）/ 个人1 / 其余0
 P2_FIT = {'观念': 15, '收入': 6, '便利': 6, '学校': 6, '职场时间': 4, '职场流动': 4,
           '城市化': 3, '就业门槛': 3, '久坐': 3, '文化传承': 2, '国产替代': 1, '成本': 1,
-          '人口结构': 1, '公共投入': 7, '数据回扣': 0, '生活节奏': 0}
+          '人口结构': 1, '公共投入': 7, '数据回扣': 0, '生活节奏': 0,
+          # 押题优先级（2026-11-16）：18~23 压过所有通用句，前端按 fit 降序自动置顶
+          '科技普及': 23, 'AI 教育': 22, '教育公平': 21,
+          '环保意识': 20, '绿色出行': 19, '文化新媒介': 18}
 P3P_FIT = {'个人': 6, '政府·长效': 5, '政府': 4, '学校': 4, '观念': 4, '企业/平台': 3,
            '媒体': 3, '个人·习惯': 3, '家庭': 2, '平台·设计': 2, '媒体·展示': 1}
 P3N_FIT = {'个人·记录': 3, '企业·雇主': 2, '企业·管理': 2, '个人': 1,

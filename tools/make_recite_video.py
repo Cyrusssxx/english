@@ -82,6 +82,14 @@ def pool(sid, idx):
     return {'en': s['en'], 'cn': s['cn'], 'note': ''}
 
 
+def ptag(sid, tag):
+    """按 tag 取句：句池增删时数字下标会漂移，标签不会。"""
+    for s in SEC[sid]['sentences']:
+        if s.get('tag') == tag:
+            return {'en': s['en'], 'cn': s['cn'], 'note': ''}
+    raise KeyError('tag not found: %s:%s' % (sid, tag))
+
+
 PARTS = [
     {
         'tag': 'PART 1 · 动态图第一段',
@@ -89,10 +97,10 @@ PARTS = [
         'sub': '英二最常考的一段。十年里有八年是动态图，骨架先背死。',
         'items': [
             dict(skel('chart_dynamic'), note='{{chart}} 填 line / bar；{{topic}} 是题眼；两个时间写年份'),
-            pool('chart_dynamic', 0),
-            pool('chart_dynamic', 1),
-            pool('chart_dynamic', 4),
-            pool('chart_dynamic', 5),
+            ptag('chart_dynamic', '同向不同速'),
+            ptag('chart_dynamic', '差距'),
+            ptag('chart_dynamic', '反差'),
+            ptag('chart_dynamic', '倍数'),
         ],
     },
     {
@@ -101,8 +109,8 @@ PARTS = [
         'sub': '饼图、柱状图只比占比时用这套。一出现年份就换回动态。',
         'items': [
             dict(skel('chart_static'), note='前半句报总量，后半句由大到小排；{{percent total}} 可写 the first three'),
-            pool('chart_static', 0),
-            pool('chart_static', 1),
+            ptag('chart_static', '合计'),
+            ptag('chart_static', '集中度'),
         ],
     },
     {
@@ -111,15 +119,15 @@ PARTS = [
         'sub': '前五条万能，后四条押题（科技 / AI 教育 / 教育公平 / 环保），按题挑 2~3 条。',
         'items': [
             dict(skel('para2_why'), note='这句是段首，背下来整段就立住了'),
-            pool('para2_why', 4),
-            pool('para2_why', 1),
-            pool('para2_why', 3),
-            pool('para2_why', 0),
-            pool('para2_why', 2),
-            pool('para2_why', 16),
-            pool('para2_why', 17),
-            pool('para2_why', 18),
-            pool('para2_why', 19),
+            ptag('para2_why', '数据回扣'),
+            ptag('para2_why', '观念'),
+            ptag('para2_why', '收入'),
+            ptag('para2_why', '便利'),
+            ptag('para2_why', '公共投入'),
+            ptag('para2_why', '科技普及'),
+            ptag('para2_why', 'AI 教育'),
+            ptag('para2_why', '教育公平'),
+            ptag('para2_why', '环保意识'),
         ],
     },
     {
@@ -128,10 +136,10 @@ PARTS = [
         'sub': '先表态，再挑两个主体各一句。政府、学校、家庭、个人覆盖绝大多数题目。',
         'items': [
             dict(skel('para3_positive'), note='正面版开场：先把趋势定性为好事，再给一个推论'),
-            pool('para3_positive', 1),
-            pool('para3_positive', 2),
-            pool('para3_positive', 3),
-            pool('para3_positive', 6),
+            ptag('para3_positive', '政府'),
+            ptag('para3_positive', '学校'),
+            ptag('para3_positive', '家庭'),
+            ptag('para3_positive', '个人'),
         ],
     },
     {
@@ -140,9 +148,9 @@ PARTS = [
         'sub': '题目指向问题时用这版。语气要硬，动词用 should / must。',
         'items': [
             dict(skel('para3_negative'), note='负面版开场：定性为问题，再用 unless 逼出对策'),
-            pool('para3_negative', 0),
-            pool('para3_negative', 1),
-            pool('para3_negative', 5),
+            ptag('para3_negative', '政府'),
+            ptag('para3_negative', '学校/家庭'),
+            ptag('para3_negative', '个人'),
         ],
     },
 ]
