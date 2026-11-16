@@ -91,8 +91,8 @@ PARTS = [
             dict(skel('chart_dynamic'), note='{{chart}} 填 line / bar；{{topic}} 是题眼；两个时间写年份'),
             pool('chart_dynamic', 0),
             pool('chart_dynamic', 1),
-            pool('chart_dynamic', 6),
-            pool('chart_dynamic', 7),
+            pool('chart_dynamic', 4),
+            pool('chart_dynamic', 5),
         ],
     },
     {
@@ -107,8 +107,8 @@ PARTS = [
     },
     {
         'tag': 'PART 3 · 第二段归因',
-        'title': '原因段 · 一句骨架 + 四个机制',
-        'sub': '骨架只给一句，剩下全靠机制句。挑两个能说通的，别贪多。',
+        'title': '原因段 · 一句骨架 + 九个机制',
+        'sub': '前五条万能，后四条押题（科技 / AI 教育 / 教育公平 / 环保），按题挑 2~3 条。',
         'items': [
             dict(skel('para2_why'), note='这句是段首，背下来整段就立住了'),
             pool('para2_why', 4),
@@ -116,6 +116,10 @@ PARTS = [
             pool('para2_why', 3),
             pool('para2_why', 0),
             pool('para2_why', 2),
+            pool('para2_why', 16),
+            pool('para2_why', 17),
+            pool('para2_why', 18),
+            pool('para2_why', 19),
         ],
     },
     {

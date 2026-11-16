@@ -133,8 +133,8 @@
     "color": "#0ea5e9"
    },
    {
-    "w": "Growth was slow at first and then sped up.",
-    "cn": "增长起初缓慢，后来明显加快。",
+    "w": "The first half of the period saw a steady rise, while the last few years brought a sharp acceleration.",
+    "cn": "前半段稳步上升，最后几年明显加速。",
     "years": [
      "2013",
      "2023"
@@ -176,7 +176,7 @@
     "years": [
      "2023"
     ],
-    "src": "动态图表第一段 · 功能句8",
+    "src": "动态图表第一段 · 功能句6",
     "color": "#0ea5e9"
    }
   ],
@@ -215,7 +215,6 @@
      "2012",
      "2013",
      "2014",
-     "2015",
      "2017",
      "2018",
      "2019",
@@ -227,21 +226,6 @@
      "2026"
     ],
     "src": "第二段 · 原因（机制句池） · 功能句4",
-    "color": "#f97316"
-   },
-   {
-    "w": "Public spending on infrastructure has made {{topic}} far more widely available.",
-    "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
-    "years": [
-     "2011",
-     "2016",
-     "2017",
-     "2021",
-     "2023",
-     "2025",
-     "2026"
-    ],
-    "src": "第二段 · 原因（机制句池） · 功能句6",
     "color": "#f97316"
    },
    {
@@ -259,20 +243,6 @@
     "color": "#f97316"
    },
    {
-    "w": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-    "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
-    "years": [
-     "2013",
-     "2017",
-     "2019",
-     "2023",
-     "2024",
-     "2026"
-    ],
-    "src": "第二段 · 原因（机制句池） · 功能句10",
-    "color": "#f97316"
-   },
-   {
     "w": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
     "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
     "years": [
@@ -287,49 +257,27 @@
     "color": "#f97316"
    },
    {
-    "w": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-    "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
+    "w": "Public spending on infrastructure has made {{topic}} far more widely available.",
+    "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
     "years": [
-     "2012",
+     "2011",
+     "2017",
+     "2021",
+     "2023",
+     "2026"
+    ],
+    "src": "第二段 · 原因（机制句池） · 功能句6",
+    "color": "#f97316"
+   },
+   {
+    "w": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
+    "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
+    "years": [
      "2013",
      "2019",
      "2024"
     ],
-    "src": "第二段 · 原因（机制句池） · 功能句14",
-    "color": "#f97316"
-   },
-   {
-    "w": "Longer working hours have made people value the little free time they have.",
-    "cn": "工作时间变长，人们更看重仅有的空闲时间。",
-    "years": [
-     "2012",
-     "2016",
-     "2020",
-     "2021"
-    ],
-    "src": "第二段 · 原因（机制句池） · 功能句9",
-    "color": "#f97316"
-   },
-   {
-    "w": "Employers now look for experience as much as for grades.",
-    "cn": "如今用人单位既看重成绩，也看重经验。",
-    "years": [
-     "2012",
-     "2013",
-     "2024"
-    ],
-    "src": "第二段 · 原因（机制句池） · 功能句15",
-    "color": "#f97316"
-   },
-   {
-    "w": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
-    "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
-    "years": [
-     "2011",
-     "2014",
-     "2022"
-    ],
-    "src": "第二段 · 原因（机制句池） · 功能句7",
+    "src": "第二段 · 原因（机制句池） · 功能句10",
     "color": "#f97316"
    },
    {
@@ -344,6 +292,17 @@
     "color": "#f97316"
    },
    {
+    "w": "Longer working hours have made people value the little free time they have.",
+    "cn": "工作时间变长，人们更看重仅有的空闲时间。",
+    "years": [
+     "2012",
+     "2016",
+     "2020"
+    ],
+    "src": "第二段 · 原因（机制句池） · 功能句9",
+    "color": "#f97316"
+   },
+   {
     "w": "Old traditions survive only when people find new ways to pass them on.",
     "cn": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。",
     "years": [
@@ -351,6 +310,36 @@
      "2017"
     ],
     "src": "第二段 · 原因（机制句池） · 功能句11",
+    "color": "#f97316"
+   },
+   {
+    "w": "Young people change jobs far more often than their parents did, so loyalty works differently.",
+    "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
+    "years": [
+     "2012",
+     "2019"
+    ],
+    "src": "第二段 · 原因（机制句池） · 功能句14",
+    "color": "#f97316"
+   },
+   {
+    "w": "Employers now look for experience as much as for grades.",
+    "cn": "如今用人单位既看重成绩，也看重经验。",
+    "years": [
+     "2013",
+     "2024"
+    ],
+    "src": "第二段 · 原因（机制句池） · 功能句15",
+    "color": "#f97316"
+   },
+   {
+    "w": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
+    "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
+    "years": [
+     "2014",
+     "2022"
+    ],
+    "src": "第二段 · 原因（机制句池） · 功能句7",
     "color": "#f97316"
    },
    {
@@ -431,25 +420,13 @@
     "color": "#06b6d4"
    },
    {
-    "w": "Individuals should choose what fits their own situation rather than follow the crowd.",
-    "cn": "个人应按自身情况选择，而不是随大流。",
-    "years": [
-     "2015",
-     "2016",
-     "2018",
-     "2021",
-     "2023"
-    ],
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句7",
-    "color": "#06b6d4"
-   },
-   {
     "w": "Clear rules and steady funding matter more than one-off campaigns.",
     "cn": "明确的规则和持续投入，比一次性活动更重要。",
     "years": [
      "2010",
      "2011",
      "2014",
+     "2022",
      "2023",
      "2025"
     ],
@@ -469,18 +446,6 @@
     "color": "#06b6d4"
    },
    {
-    "w": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-    "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
-    "years": [
-     "2010",
-     "2014",
-     "2017",
-     "2022"
-    ],
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句2",
-    "color": "#06b6d4"
-   },
-   {
     "w": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
     "years": [
@@ -490,6 +455,18 @@
      "2026"
     ],
     "src": "第三段 · 正面版（立场 + 建议） · 功能句3",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Individuals should choose what fits their own situation rather than follow the crowd.",
+    "cn": "个人应按自身情况选择，而不是随大流。",
+    "years": [
+     "2015",
+     "2016",
+     "2021",
+     "2023"
+    ],
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句7",
     "color": "#06b6d4"
    },
    {
@@ -504,17 +481,6 @@
     "color": "#06b6d4"
    },
    {
-    "w": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
-    "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
-    "years": [
-     "2011",
-     "2018",
-     "2022"
-    ],
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句5",
-    "color": "#06b6d4"
-   },
-   {
     "w": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
     "years": [
@@ -526,6 +492,16 @@
     "color": "#06b6d4"
    },
    {
+    "w": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
+    "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
+    "years": [
+     "2014",
+     "2017"
+    ],
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句2",
+    "color": "#06b6d4"
+   },
+   {
     "w": "Families matter most: children copy what adults do far more than what they are told.",
     "cn": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。",
     "years": [
@@ -533,6 +509,16 @@
      "2026"
     ],
     "src": "第三段 · 正面版（立场 + 建议） · 功能句4",
+    "color": "#06b6d4"
+   },
+   {
+    "w": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
+    "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
+    "years": [
+     "2011",
+     "2018"
+    ],
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句5",
     "color": "#06b6d4"
    },
    {

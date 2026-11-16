@@ -1,6 +1,6 @@
 {
  "2010": {
-  "wc": 177,
+  "wc": 164,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
@@ -46,11 +46,6 @@
     "en": "On balance, this is a positive trend worth welcoming.",
     "cn": "总的来说，这是一个值得欢迎的积极趋势。",
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
-   },
-   {
-    "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-    "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
@@ -334,7 +329,7 @@
     ]
    },
    {
-    "wc": 60,
+    "wc": 65,
     "sents": [
      {
       "spans": [
@@ -362,8 +357,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "As household incomes have grown, "
+        "x": "as household incomes have grown, "
        },
        {
         "t": "s",
@@ -377,7 +376,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "随着家庭收入提高，"
+        "x": "首先，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -390,17 +389,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.82,
+      "cov": 0.78,
       "matched": 14,
-      "wc": 17,
+      "wc": 18,
       "keys": [],
-      "cn": "随着家庭收入提高，手机已从奢侈品变成日常必需。"
+      "cn": "首先，随着家庭收入提高，手机已从奢侈品变成日常必需。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Online platforms and mobile payment have made "
+        "x": "online platforms and mobile payment have made "
        },
        {
         "t": "s",
@@ -414,7 +417,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "线上平台和移动支付使"
+        "x": "同样重要的是，线上平台和移动支付使"
        },
        {
         "t": "s",
@@ -427,17 +430,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.8,
+      "cov": 0.71,
       "matched": 12,
-      "wc": 15,
+      "wc": 17,
       "keys": [],
-      "cn": "线上平台和移动支付使手机变得更快、更方便。"
+      "cn": "同样重要的是，线上平台和移动支付使手机变得更快、更方便。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -451,7 +458,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -464,16 +471,16 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.83,
+      "cov": 0.75,
       "matched": 15,
-      "wc": 18,
+      "wc": 20,
       "keys": [],
-      "cn": "如今，人们评判手机的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "除此之外，如今，人们评判手机的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
    {
-    "wc": 56,
+    "wc": 38,
     "sents": [
      {
       "spans": [
@@ -497,43 +504,6 @@
        "On balance, this is a positive trend worth welcoming."
       ],
       "cn": "总的来说，这是一个值得欢迎的积极趋势。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Government can fund public facilities so that "
-       },
-       {
-        "t": "s",
-        "x": "mobile phone use "
-       },
-       {
-        "t": "t",
-        "x": "is not limited to those who can pay."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "政府可以为公共设施提供资金，使"
-       },
-       {
-        "t": "s",
-        "x": "手机"
-       },
-       {
-        "t": "t",
-        "x": "不再局限于那些有支付能力的人。"
-       }
-      ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句2",
-      "kind": "func",
-      "cov": 0.83,
-      "matched": 15,
-      "wc": 18,
-      "keys": [],
-      "cn": "政府可以为公共设施提供资金，使手机不再局限于那些有支付能力的人。"
      },
      {
       "spans": [
@@ -586,7 +556,7 @@
   ]
  },
  "2011": {
-  "wc": 178,
+  "wc": 167,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
@@ -622,11 +592,6 @@
     "en": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.",
     "cn": "国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。",
     "src": "第二段 · 原因（机制句池） · 功能句13"
-   },
-   {
-    "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
-    "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
-    "src": "第二段 · 原因（机制句池） · 功能句7"
    },
    {
     "en": "On balance, this is a positive trend worth welcoming.",
@@ -949,7 +914,7 @@
     ]
    },
    {
-    "wc": 72,
+    "wc": 61,
     "sents": [
      {
       "spans": [
@@ -977,8 +942,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -992,7 +961,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "首先，如今，人们评判"
        },
        {
         "t": "s",
@@ -1005,17 +974,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.83,
       "matched": 15,
-      "wc": 17,
+      "wc": 18,
       "keys": [],
-      "cn": "如今，人们评判汽车保有量的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "首先，如今，人们评判汽车保有量的标准是它能为自己带来什么，而非他人的看法。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Public spending on infrastructure has made "
+        "x": "public spending on infrastructure has made "
        },
        {
         "t": "s",
@@ -1029,7 +1002,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "基础设施方面的公共支出使"
+        "x": "同样重要的是，基础设施方面的公共支出使"
        },
        {
         "t": "s",
@@ -1042,71 +1015,38 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句6",
       "kind": "func",
-      "cov": 0.83,
+      "cov": 0.71,
       "matched": 10,
-      "wc": 12,
+      "wc": 14,
       "keys": [],
-      "cn": "基础设施方面的公共支出使汽车保有量更加普及。"
+      "cn": "同样重要的是，基础设施方面的公共支出使汽车保有量更加普及。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands."
+        "x": "domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。"
+        "x": "除此之外，国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句13",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.89,
       "matched": 17,
-      "wc": 17,
+      "wc": 19,
       "keys": [
        "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands."
       ],
-      "cn": "国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Cities have absorbed millions of new residents, and demand for "
-       },
-       {
-        "t": "s",
-        "x": "car ownership "
-       },
-       {
-        "t": "t",
-        "x": "has grown with them."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "随着城市吸纳了大量新居民，"
-       },
-       {
-        "t": "s",
-        "x": "汽车保有量"
-       },
-       {
-        "t": "t",
-        "x": "的需求也随之增长。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句7",
-      "kind": "func",
-      "cov": 0.88,
-      "matched": 14,
-      "wc": 16,
-      "keys": [],
-      "cn": "随着城市吸纳了大量新居民，汽车保有量的需求也随之增长。"
+      "cn": "除此之外，国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。"
      }
     ]
    },
@@ -1224,7 +1164,7 @@
   ]
  },
  "2012": {
-  "wc": 176,
+  "wc": 171,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -1255,11 +1195,6 @@
     "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
     "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
     "src": "第二段 · 原因（机制句池） · 功能句14"
-   },
-   {
-    "en": "Employers now look for experience as much as for grades.",
-    "cn": "如今用人单位既看重成绩，也看重经验。",
-    "src": "第二段 · 原因（机制句池） · 功能句15"
    },
    {
     "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
@@ -1502,7 +1437,7 @@
     ]
    },
    {
-    "wc": 65,
+    "wc": 60,
     "sents": [
      {
       "spans": [
@@ -1530,77 +1465,66 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Longer working hours have made people value the little free time they have."
+        "x": "longer working hours have made people value the little free time they have."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "工作时间变长，人们更看重仅有的空闲时间。"
+        "x": "首先，工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.93,
       "matched": 13,
-      "wc": 13,
+      "wc": 14,
       "keys": [
        "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "工作时间变长，人们更看重仅有的空闲时间。"
+      "cn": "首先，工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Young people change jobs far more often than their parents did, so loyalty works differently."
+        "x": "young people change jobs far more often than their parents did, so loyalty works differently."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
+        "x": "同样重要的是，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句14",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.88,
       "matched": 15,
-      "wc": 15,
+      "wc": 17,
       "keys": [
        "Young people change jobs far more often than their parents did, so loyalty works differently."
       ],
-      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
+      "cn": "同样重要的是，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
      },
      {
       "spans": [
        {
-        "t": "t",
-        "x": "Employers now look for experience as much as for grades."
-       }
-      ],
-      "spans_cn": [
+        "t": "o",
+        "x": "Beyond that, "
+       },
        {
         "t": "t",
-        "x": "如今用人单位既看重成绩，也看重经验。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句15",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 10,
-      "wc": 10,
-      "keys": [
-       "Employers now look for experience as much as for grades."
-      ],
-      "cn": "如今用人单位既看重成绩，也看重经验。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -1614,7 +1538,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -1627,11 +1551,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判工作满意度的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "除此之外，如今，人们评判工作满意度的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -1771,8 +1695,8 @@
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "Growth was slow at first and then sped up.",
-    "cn": "增长起初缓慢，后来明显加快。",
+    "en": "The first half of the period saw a steady rise, while the last few years brought a sharp acceleration.",
+    "cn": "前半段稳步上升，最后几年明显加速。",
     "src": "动态图表第一段 · 功能句3"
    },
    {
@@ -1794,11 +1718,6 @@
     "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
     "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
     "src": "第二段 · 原因（机制句池） · 功能句4"
-   },
-   {
-    "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-    "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
-    "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
     "en": "On balance, this is a positive trend worth welcoming.",
@@ -1891,7 +1810,7 @@
   ],
   "paras": [
    {
-    "wc": 46,
+    "wc": 56,
     "sents": [
      {
       "spans": [
@@ -2031,29 +1950,29 @@
       "spans": [
        {
         "t": "t",
-        "x": "Growth was slow at first and then sped up."
+        "x": "The first half of the period saw a steady rise, while the last few years brought a sharp acceleration."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "增长起初缓慢，后来明显加快。"
+        "x": "前半段稳步上升，最后几年明显加速。"
        }
       ],
       "src": "动态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "Growth was slow at first and then sped up."
+       "The first half of the period saw a steady rise, while the last few years brought a sharp acceleration."
       ],
-      "cn": "增长起初缓慢，后来明显加快。"
+      "cn": "前半段稳步上升，最后几年明显加速。"
      }
     ]
    },
    {
-    "wc": 67,
+    "wc": 57,
     "sents": [
      {
       "spans": [
@@ -2081,8 +2000,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Schools now treat "
+        "x": "schools now treat "
        },
        {
         "t": "s",
@@ -2096,7 +2019,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "学校现在将"
+        "x": "首先，学校现在将"
        },
        {
         "t": "s",
@@ -2109,40 +2032,48 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句10",
       "kind": "func",
-      "cov": 0.87,
+      "cov": 0.81,
       "matched": 13,
-      "wc": 15,
+      "wc": 16,
       "keys": [],
-      "cn": "学校现在将兼职视为常规活动的一部分，而非可选的附加内容。"
+      "cn": "首先，学校现在将兼职视为常规活动的一部分，而非可选的附加内容。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Employers now look for experience as much as for grades."
+        "x": "employers now look for experience as much as for grades."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今用人单位既看重成绩，也看重经验。"
+        "x": "同样重要的是，如今用人单位既看重成绩，也看重经验。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句15",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.83,
       "matched": 10,
-      "wc": 10,
+      "wc": 12,
       "keys": [
        "Employers now look for experience as much as for grades."
       ],
-      "cn": "如今用人单位既看重成绩，也看重经验。"
+      "cn": "同样重要的是，如今用人单位既看重成绩，也看重经验。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -2156,7 +2087,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -2169,34 +2100,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判兼职的标准是它能为自己带来什么，而非他人的看法。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Young people change jobs far more often than their parents did, so loyalty works differently."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句14",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 15,
-      "wc": 15,
-      "keys": [
-       "Young people change jobs far more often than their parents did, so loyalty works differently."
-      ],
-      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
+      "cn": "除此之外，如今，人们评判兼职的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -2314,7 +2222,7 @@
   ]
  },
  "2014": {
-  "wc": 168,
+  "wc": 173,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
@@ -2640,7 +2548,7 @@
     ]
    },
    {
-    "wc": 59,
+    "wc": 64,
     "sents": [
      {
       "spans": [
@@ -2668,8 +2576,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Cities have absorbed millions of new residents, and demand for "
+        "x": "cities have absorbed millions of new residents, and demand for "
        },
        {
         "t": "s",
@@ -2683,7 +2595,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "随着城市吸纳了大量新居民，"
+        "x": "首先，随着城市吸纳了大量新居民，"
        },
        {
         "t": "s",
@@ -2696,17 +2608,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句7",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.82,
       "matched": 14,
-      "wc": 16,
+      "wc": 17,
       "keys": [],
-      "cn": "随着城市吸纳了大量新居民，城市生活的需求也随之增长。"
+      "cn": "首先，随着城市吸纳了大量新居民，城市生活的需求也随之增长。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "As household incomes have grown, "
+        "x": "as household incomes have grown, "
        },
        {
         "t": "s",
@@ -2720,7 +2636,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "随着家庭收入提高，"
+        "x": "同样重要的是，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -2733,17 +2649,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.78,
       "matched": 14,
-      "wc": 16,
+      "wc": 18,
       "keys": [],
-      "cn": "随着家庭收入提高，城市生活已从奢侈品变成日常必需。"
+      "cn": "同样重要的是，随着家庭收入提高，城市生活已从奢侈品变成日常必需。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -2757,7 +2677,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -2770,11 +2690,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判城市生活的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "除此之外，如今，人们评判城市生活的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -2892,7 +2812,7 @@
   ]
  },
  "2015": {
-  "wc": 177,
+  "wc": 164,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -2918,11 +2838,6 @@
     "en": "As household incomes have grown, {{topic}} has moved from a luxury to an everyday necessity.",
     "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
     "src": "第二段 · 原因（机制句池） · 功能句1"
-   },
-   {
-    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-    "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
-    "src": "第二段 · 原因（机制句池） · 功能句4"
    },
    {
     "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
@@ -3265,7 +3180,7 @@
     ]
    },
    {
-    "wc": 73,
+    "wc": 60,
     "sents": [
      {
       "spans": [
@@ -3293,8 +3208,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "As household incomes have grown, "
+        "x": "as household incomes have grown, "
        },
        {
         "t": "s",
@@ -3308,7 +3227,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "随着家庭收入提高，"
+        "x": "首先，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -3321,54 +3240,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.82,
+      "cov": 0.78,
       "matched": 14,
-      "wc": 17,
-      "keys": [],
-      "cn": "随着家庭收入提高，新年礼物已从奢侈品变成日常必需。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "People now judge "
-       },
-       {
-        "t": "s",
-        "x": "New Year gifts "
-       },
-       {
-        "t": "t",
-        "x": "by what it does for them rather than by what others think."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "如今，人们评判"
-       },
-       {
-        "t": "s",
-        "x": "新年礼物"
-       },
-       {
-        "t": "t",
-        "x": "的标准是它能为自己带来什么，而非他人的看法。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句4",
-      "kind": "func",
-      "cov": 0.83,
-      "matched": 15,
       "wc": 18,
       "keys": [],
-      "cn": "如今，人们评判新年礼物的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "首先，随着家庭收入提高，新年礼物已从奢侈品变成日常必需。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Online platforms and mobile payment have made "
+        "x": "online platforms and mobile payment have made "
        },
        {
         "t": "s",
@@ -3382,7 +3268,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "线上平台和移动支付使"
+        "x": "同样重要的是，线上平台和移动支付使"
        },
        {
         "t": "s",
@@ -3395,34 +3281,38 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.8,
+      "cov": 0.71,
       "matched": 12,
-      "wc": 15,
+      "wc": 17,
       "keys": [],
-      "cn": "线上平台和移动支付使新年礼物变得更快、更方便。"
+      "cn": "同样重要的是，线上平台和移动支付使新年礼物变得更快、更方便。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "Old traditions survive only when people find new ways to pass them on."
+        "x": "old traditions survive only when people find new ways to pass them on."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
+        "x": "除此之外，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句11",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.87,
       "matched": 13,
-      "wc": 13,
+      "wc": 15,
       "keys": [
        "Old traditions survive only when people find new ways to pass them on."
       ],
-      "cn": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
+      "cn": "除此之外，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
      }
     ]
    },
@@ -3540,7 +3430,7 @@
   ]
  },
  "2016": {
-  "wc": 177,
+  "wc": 171,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -3576,11 +3466,6 @@
     "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
     "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
     "src": "第二段 · 原因（机制句池） · 功能句3"
-   },
-   {
-    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
-    "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
-    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
     "en": "On balance, this is a positive trend worth welcoming.",
@@ -3918,7 +3803,7 @@
     ]
    },
    {
-    "wc": 62,
+    "wc": 56,
     "sents": [
      {
       "spans": [
@@ -3946,8 +3831,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "As household incomes have grown, "
+        "x": "as household incomes have grown, "
        },
        {
         "t": "s",
@@ -3961,7 +3850,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "随着家庭收入提高，"
+        "x": "首先，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -3974,40 +3863,48 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.93,
+      "cov": 0.88,
       "matched": 14,
-      "wc": 15,
+      "wc": 16,
       "keys": [],
-      "cn": "随着家庭收入提高，旅游已从奢侈品变成日常必需。"
+      "cn": "首先，随着家庭收入提高，旅游已从奢侈品变成日常必需。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Longer working hours have made people value the little free time they have."
+        "x": "longer working hours have made people value the little free time they have."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "工作时间变长，人们更看重仅有的空闲时间。"
+        "x": "同样重要的是，工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.87,
       "matched": 13,
-      "wc": 13,
+      "wc": 15,
       "keys": [
        "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "工作时间变长，人们更看重仅有的空闲时间。"
+      "cn": "同样重要的是，工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "Online platforms and mobile payment have made "
+        "x": "online platforms and mobile payment have made "
        },
        {
         "t": "s",
@@ -4021,7 +3918,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "线上平台和移动支付使"
+        "x": "除此之外，线上平台和移动支付使"
        },
        {
         "t": "s",
@@ -4034,48 +3931,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.92,
+      "cov": 0.8,
       "matched": 12,
-      "wc": 13,
+      "wc": 15,
       "keys": [],
-      "cn": "线上平台和移动支付使旅游变得更快、更方便。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Public spending on infrastructure has made "
-       },
-       {
-        "t": "s",
-        "x": "travelling "
-       },
-       {
-        "t": "t",
-        "x": "far more widely available."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "基础设施方面的公共支出使"
-       },
-       {
-        "t": "s",
-        "x": "旅游"
-       },
-       {
-        "t": "t",
-        "x": "更加普及。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句6",
-      "kind": "func",
-      "cov": 0.91,
-      "matched": 10,
-      "wc": 11,
-      "keys": [],
-      "cn": "基础设施方面的公共支出使旅游更加普及。"
+      "cn": "除此之外，线上平台和移动支付使旅游变得更快、更方便。"
      }
     ]
    },
@@ -4230,7 +4090,7 @@
   ]
  },
  "2017": {
-  "wc": 172,
+  "wc": 162,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
@@ -4256,11 +4116,6 @@
     "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
     "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
     "src": "第二段 · 原因（机制句池） · 功能句6"
-   },
-   {
-    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-    "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
-    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
     "en": "Old traditions survive only when people find new ways to pass them on.",
@@ -4541,7 +4396,7 @@
     ]
    },
    {
-    "wc": 67,
+    "wc": 57,
     "sents": [
      {
       "spans": [
@@ -4569,8 +4424,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Public spending on infrastructure has made "
+        "x": "public spending on infrastructure has made "
        },
        {
         "t": "s",
@@ -4584,7 +4443,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "基础设施方面的公共支出使"
+        "x": "首先，基础设施方面的公共支出使"
        },
        {
         "t": "s",
@@ -4597,77 +4456,48 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句6",
       "kind": "func",
-      "cov": 0.83,
+      "cov": 0.77,
       "matched": 10,
-      "wc": 12,
+      "wc": 13,
       "keys": [],
-      "cn": "基础设施方面的公共支出使参观博物馆更加普及。"
+      "cn": "首先，基础设施方面的公共支出使参观博物馆更加普及。"
      },
      {
       "spans": [
        {
-        "t": "t",
-        "x": "Schools now treat "
-       },
-       {
-        "t": "s",
-        "x": "museum visiting "
+        "t": "o",
+        "x": "Equally important, "
        },
        {
         "t": "t",
-        "x": "as part of the routine rather than an optional extra."
+        "x": "old traditions survive only when people find new ways to pass them on."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "学校现在将"
-       },
-       {
-        "t": "s",
-        "x": "参观博物馆"
-       },
-       {
-        "t": "t",
-        "x": "视为常规活动的一部分，而非可选的附加内容。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句10",
-      "kind": "func",
-      "cov": 0.87,
-      "matched": 13,
-      "wc": 15,
-      "keys": [],
-      "cn": "学校现在将参观博物馆视为常规活动的一部分，而非可选的附加内容。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Old traditions survive only when people find new ways to pass them on."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
+        "x": "同样重要的是，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句11",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.87,
       "matched": 13,
-      "wc": 13,
+      "wc": 15,
       "keys": [
        "Old traditions survive only when people find new ways to pass them on."
       ],
-      "cn": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
+      "cn": "同样重要的是，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -4681,7 +4511,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -4694,11 +4524,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判参观博物馆的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "除此之外，如今，人们评判参观博物馆的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -4830,7 +4660,7 @@
   ]
  },
  "2018": {
-  "wc": 180,
+  "wc": 172,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -4881,11 +4711,6 @@
     "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
     "cn": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。",
     "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
-   },
-   {
-    "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
-    "cn": "个人应按自身情况选择，而不是随大流。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
    },
    {
     "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
@@ -5203,7 +5028,7 @@
     ]
    },
    {
-    "wc": 57,
+    "wc": 62,
     "sents": [
      {
       "spans": [
@@ -5231,8 +5056,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "As household incomes have grown, "
+        "x": "as household incomes have grown, "
        },
        {
         "t": "s",
@@ -5246,7 +5075,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "随着家庭收入提高，"
+        "x": "首先，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -5259,17 +5088,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.82,
       "matched": 14,
-      "wc": 16,
+      "wc": 17,
       "keys": [],
-      "cn": "随着家庭收入提高，外出就餐已从奢侈品变成日常必需。"
+      "cn": "首先，随着家庭收入提高，外出就餐已从奢侈品变成日常必需。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -5283,7 +5116,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "同样重要的是，如今，人们评判"
        },
        {
         "t": "s",
@@ -5296,17 +5129,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判外出就餐的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "同样重要的是，如今，人们评判外出就餐的标准是它能为自己带来什么，而非他人的看法。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "Online platforms and mobile payment have made "
+        "x": "online platforms and mobile payment have made "
        },
        {
         "t": "s",
@@ -5320,7 +5157,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "线上平台和移动支付使"
+        "x": "除此之外，线上平台和移动支付使"
        },
        {
         "t": "s",
@@ -5333,16 +5170,16 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.86,
+      "cov": 0.75,
       "matched": 12,
-      "wc": 14,
+      "wc": 16,
       "keys": [],
-      "cn": "线上平台和移动支付使外出就餐变得更快、更方便。"
+      "cn": "除此之外，线上平台和移动支付使外出就餐变得更快、更方便。"
      }
     ]
    },
    {
-    "wc": 75,
+    "wc": 62,
     "sents": [
      {
       "spans": [
@@ -5431,29 +5268,6 @@
       "spans": [
        {
         "t": "t",
-        "x": "Individuals should choose what fits their own situation rather than follow the crowd."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "个人应按自身情况选择，而不是随大流。"
-       }
-      ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句7",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 13,
-      "wc": 13,
-      "keys": [
-       "Individuals should choose what fits their own situation rather than follow the crowd."
-      ],
-      "cn": "个人应按自身情况选择，而不是随大流。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
         "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
        }
       ],
@@ -5478,7 +5292,7 @@
   ]
  },
  "2019": {
-  "wc": 172,
+  "wc": 177,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
@@ -5828,7 +5642,7 @@
     ]
    },
    {
-    "wc": 57,
+    "wc": 62,
     "sents": [
      {
       "spans": [
@@ -5856,8 +5670,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Schools now treat "
+        "x": "schools now treat "
        },
        {
         "t": "s",
@@ -5871,7 +5689,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "学校现在将"
+        "x": "首先，学校现在将"
        },
        {
         "t": "s",
@@ -5884,17 +5702,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句10",
       "kind": "func",
-      "cov": 0.87,
+      "cov": 0.81,
       "matched": 13,
-      "wc": 15,
+      "wc": 16,
       "keys": [],
-      "cn": "学校现在将职业规划视为常规活动的一部分，而非可选的附加内容。"
+      "cn": "首先，学校现在将职业规划视为常规活动的一部分，而非可选的附加内容。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -5908,7 +5730,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "同样重要的是，如今，人们评判"
        },
        {
         "t": "s",
@@ -5921,34 +5743,38 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判职业规划的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "同样重要的是，如今，人们评判职业规划的标准是它能为自己带来什么，而非他人的看法。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "Young people change jobs far more often than their parents did, so loyalty works differently."
+        "x": "young people change jobs far more often than their parents did, so loyalty works differently."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
+        "x": "除此之外，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句14",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.88,
       "matched": 15,
-      "wc": 15,
+      "wc": 17,
       "keys": [
        "Young people change jobs far more often than their parents did, so loyalty works differently."
       ],
-      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
+      "cn": "除此之外，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
      }
     ]
    },
@@ -6080,7 +5906,7 @@
   ]
  },
  "2020": {
-  "wc": 174,
+  "wc": 179,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -6453,7 +6279,7 @@
     ]
    },
    {
-    "wc": 54,
+    "wc": 59,
     "sents": [
      {
       "spans": [
@@ -6481,8 +6307,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Online platforms and mobile payment have made "
+        "x": "online platforms and mobile payment have made "
        },
        {
         "t": "s",
@@ -6496,7 +6326,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "线上平台和移动支付使"
+        "x": "首先，线上平台和移动支付使"
        },
        {
         "t": "s",
@@ -6509,40 +6339,48 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.86,
+      "cov": 0.8,
       "matched": 12,
-      "wc": 14,
+      "wc": 15,
       "keys": [],
-      "cn": "线上平台和移动支付使手机阅读变得更快、更方便。"
+      "cn": "首先，线上平台和移动支付使手机阅读变得更快、更方便。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Longer working hours have made people value the little free time they have."
+        "x": "longer working hours have made people value the little free time they have."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "工作时间变长，人们更看重仅有的空闲时间。"
+        "x": "同样重要的是，工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.87,
       "matched": 13,
-      "wc": 13,
+      "wc": 15,
       "keys": [
        "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "工作时间变长，人们更看重仅有的空闲时间。"
+      "cn": "同样重要的是，工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -6556,7 +6394,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -6569,11 +6407,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判手机阅读的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "除此之外，如今，人们评判手机阅读的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -6728,7 +6566,7 @@
   ]
  },
  "2021": {
-  "wc": 168,
+  "wc": 160,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -6754,11 +6592,6 @@
     "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
     "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
     "src": "第二段 · 原因（机制句池） · 功能句8"
-   },
-   {
-    "en": "Longer working hours have made people value the little free time they have.",
-    "cn": "工作时间变长，人们更看重仅有的空闲时间。",
-    "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
     "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
@@ -7085,7 +6918,7 @@
     ]
    },
    {
-    "wc": 63,
+    "wc": 55,
     "sents": [
      {
       "spans": [
@@ -7113,8 +6946,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Sitting all day has turned "
+        "x": "sitting all day has turned "
        },
        {
         "t": "s",
@@ -7128,7 +6965,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "长期久坐使"
+        "x": "首先，长期久坐使"
        },
        {
         "t": "s",
@@ -7141,40 +6978,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句8",
       "kind": "func",
-      "cov": 0.92,
+      "cov": 0.86,
       "matched": 12,
-      "wc": 13,
+      "wc": 14,
       "keys": [],
-      "cn": "长期久坐使锻炼从爱好变成了切实的需求。"
+      "cn": "首先，长期久坐使锻炼从爱好变成了切实的需求。"
      },
      {
       "spans": [
        {
-        "t": "t",
-        "x": "Longer working hours have made people value the little free time they have."
-       }
-      ],
-      "spans_cn": [
+        "t": "o",
+        "x": "Equally important, "
+       },
        {
         "t": "t",
-        "x": "工作时间变长，人们更看重仅有的空闲时间。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句9",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 13,
-      "wc": 13,
-      "keys": [
-       "Longer working hours have made people value the little free time they have."
-      ],
-      "cn": "工作时间变长，人们更看重仅有的空闲时间。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Public spending on infrastructure has made "
+        "x": "public spending on infrastructure has made "
        },
        {
         "t": "s",
@@ -7188,7 +7006,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "基础设施方面的公共支出使"
+        "x": "同样重要的是，基础设施方面的公共支出使"
        },
        {
         "t": "s",
@@ -7201,17 +7019,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句6",
       "kind": "func",
-      "cov": 0.91,
+      "cov": 0.77,
       "matched": 10,
-      "wc": 11,
+      "wc": 13,
       "keys": [],
-      "cn": "基础设施方面的公共支出使锻炼更加普及。"
+      "cn": "同样重要的是，基础设施方面的公共支出使锻炼更加普及。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -7225,7 +7047,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -7238,11 +7060,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.94,
+      "cov": 0.83,
       "matched": 15,
-      "wc": 16,
+      "wc": 18,
       "keys": [],
-      "cn": "如今，人们评判锻炼的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "除此之外，如今，人们评判锻炼的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -7360,7 +7182,7 @@
   ]
  },
  "2022": {
-  "wc": 178,
+  "wc": 160,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
@@ -7408,14 +7230,9 @@
     "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
    },
    {
-    "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
-    "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
-   },
-   {
-    "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
-    "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
+    "en": "Clear rules and steady funding matter more than one-off campaigns.",
+    "cn": "明确的规则和持续投入，比一次性活动更重要。",
+    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
    },
    {
     "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
@@ -7694,7 +7511,7 @@
     ]
    },
    {
-    "wc": 57,
+    "wc": 62,
     "sents": [
      {
       "spans": [
@@ -7722,8 +7539,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Technology has cut the cost of "
+        "x": "technology has cut the cost of "
        },
        {
         "t": "s",
@@ -7737,7 +7558,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "技术进步压低了"
+        "x": "首先，技术进步压低了"
        },
        {
         "t": "s",
@@ -7750,17 +7571,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句2",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.83,
       "matched": 15,
-      "wc": 17,
+      "wc": 18,
       "keys": [],
-      "cn": "技术进步压低了网购的成本，让更多人能够负担得起。"
+      "cn": "首先，技术进步压低了网购的成本，让更多人能够负担得起。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Online platforms and mobile payment have made "
+        "x": "online platforms and mobile payment have made "
        },
        {
         "t": "s",
@@ -7774,7 +7599,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "线上平台和移动支付使"
+        "x": "同样重要的是，线上平台和移动支付使"
        },
        {
         "t": "s",
@@ -7787,17 +7612,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.86,
+      "cov": 0.75,
       "matched": 12,
-      "wc": 14,
+      "wc": 16,
       "keys": [],
-      "cn": "线上平台和移动支付使网购变得更快、更方便。"
+      "cn": "同样重要的是，线上平台和移动支付使网购变得更快、更方便。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "Cities have absorbed millions of new residents, and demand for "
+        "x": "cities have absorbed millions of new residents, and demand for "
        },
        {
         "t": "s",
@@ -7811,7 +7640,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "随着城市吸纳了大量新居民，"
+        "x": "除此之外，随着城市吸纳了大量新居民，"
        },
        {
         "t": "s",
@@ -7824,16 +7653,16 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句7",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.78,
       "matched": 14,
-      "wc": 16,
+      "wc": 18,
       "keys": [],
-      "cn": "随着城市吸纳了大量新居民，网购的需求也随之增长。"
+      "cn": "除此之外，随着城市吸纳了大量新居民，网购的需求也随之增长。"
      }
     ]
    },
    {
-    "wc": 61,
+    "wc": 38,
     "sents": [
      {
       "spans": [
@@ -7862,75 +7691,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Government can fund public facilities so that "
-       },
-       {
-        "t": "s",
-        "x": "online shopping "
-       },
-       {
-        "t": "t",
-        "x": "is not limited to those who can pay."
+        "x": "Clear rules and steady funding matter more than one-off campaigns."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "政府可以为公共设施提供资金，使"
-       },
-       {
-        "t": "s",
-        "x": "网购"
-       },
-       {
-        "t": "t",
-        "x": "不再局限于那些有支付能力的人。"
+        "x": "明确的规则和持续投入，比一次性活动更重要。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句2",
+      "src": "第三段 · 正面版（立场 + 建议） · 功能句8",
       "kind": "func",
-      "cov": 0.88,
-      "matched": 15,
-      "wc": 17,
-      "keys": [],
-      "cn": "政府可以为公共设施提供资金，使网购不再局限于那些有支付能力的人。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Companies can make "
-       },
-       {
-        "t": "s",
-        "x": "online shopping "
-       },
-       {
-        "t": "t",
-        "x": "cheaper and easier to use, so that it reaches more people."
-       }
+      "cov": 1.0,
+      "matched": 10,
+      "wc": 10,
+      "keys": [
+       "Clear rules and steady funding matter more than one-off campaigns."
       ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "企业可以让"
-       },
-       {
-        "t": "s",
-        "x": "网购"
-       },
-       {
-        "t": "t",
-        "x": "更低价、更便捷，从而让更多人能够使用。"
-       }
-      ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句5",
-      "kind": "func",
-      "cov": 0.88,
-      "matched": 14,
-      "wc": 16,
-      "keys": [],
-      "cn": "企业可以让网购更低价、更便捷，从而让更多人能够使用。"
+      "cn": "明确的规则和持续投入，比一次性活动更重要。"
      },
      {
       "spans": [
@@ -7973,14 +7751,14 @@
     "src": "动态图表第一段 · 模板第2句"
    },
    {
-    "en": "Growth was slow at first and then sped up.",
-    "cn": "增长起初缓慢，后来明显加快。",
+    "en": "The first half of the period saw a steady rise, while the last few years brought a sharp acceleration.",
+    "cn": "前半段稳步上升，最后几年明显加速。",
     "src": "动态图表第一段 · 功能句3"
    },
    {
     "en": "The figure more than doubled over the period.",
     "cn": "这一数字在该时期翻了一倍多。",
-    "src": "动态图表第一段 · 功能句8"
+    "src": "动态图表第一段 · 功能句6"
    },
    {
     "en": "This phenomenon can be attributed to a combination of factors.",
@@ -8001,11 +7779,6 @@
     "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
     "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
     "src": "第二段 · 原因（机制句池） · 功能句8"
-   },
-   {
-    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-    "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
-    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
     "en": "On balance, this is a positive trend worth welcoming.",
@@ -8103,7 +7876,7 @@
   ],
   "paras": [
    {
-    "wc": 47,
+    "wc": 57,
     "sents": [
      {
       "spans": [
@@ -8227,24 +8000,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Growth was slow at first and then sped up."
+        "x": "The first half of the period saw a steady rise, while the last few years brought a sharp acceleration."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "增长起初缓慢，后来明显加快。"
+        "x": "前半段稳步上升，最后几年明显加速。"
        }
       ],
       "src": "动态图表第一段 · 功能句3",
       "kind": "func",
       "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
+      "matched": 19,
+      "wc": 19,
       "keys": [
-       "Growth was slow at first and then sped up."
+       "The first half of the period saw a steady rise, while the last few years brought a sharp acceleration."
       ],
-      "cn": "增长起初缓慢，后来明显加快。"
+      "cn": "前半段稳步上升，最后几年明显加速。"
      },
      {
       "spans": [
@@ -8259,7 +8032,7 @@
         "x": "这一数字在该时期翻了一倍多。"
        }
       ],
-      "src": "动态图表第一段 · 功能句8",
+      "src": "动态图表第一段 · 功能句6",
       "kind": "func",
       "cov": 1.0,
       "matched": 8,
@@ -8272,7 +8045,7 @@
     ]
    },
    {
-    "wc": 68,
+    "wc": 58,
     "sents": [
      {
       "spans": [
@@ -8300,8 +8073,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Public spending on infrastructure has made "
+        "x": "public spending on infrastructure has made "
        },
        {
         "t": "s",
@@ -8315,7 +8092,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "基础设施方面的公共支出使"
+        "x": "首先，基础设施方面的公共支出使"
        },
        {
         "t": "s",
@@ -8328,17 +8105,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句6",
       "kind": "func",
-      "cov": 0.83,
+      "cov": 0.77,
       "matched": 10,
-      "wc": 12,
+      "wc": 13,
       "keys": [],
-      "cn": "基础设施方面的公共支出使健康素养更加普及。"
+      "cn": "首先，基础设施方面的公共支出使健康素养更加普及。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -8352,7 +8133,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "同样重要的是，如今，人们评判"
        },
        {
         "t": "s",
@@ -8365,17 +8146,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判健康素养的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "同样重要的是，如今，人们评判健康素养的标准是它能为自己带来什么，而非他人的看法。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "Sitting all day has turned "
+        "x": "sitting all day has turned "
        },
        {
         "t": "s",
@@ -8389,7 +8174,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "长期久坐使"
+        "x": "除此之外，长期久坐使"
        },
        {
         "t": "s",
@@ -8402,48 +8187,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句8",
       "kind": "func",
-      "cov": 0.86,
+      "cov": 0.75,
       "matched": 12,
-      "wc": 14,
+      "wc": 16,
       "keys": [],
-      "cn": "长期久坐使健康素养从爱好变成了切实的需求。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Schools now treat "
-       },
-       {
-        "t": "s",
-        "x": "health literacy "
-       },
-       {
-        "t": "t",
-        "x": "as part of the routine rather than an optional extra."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "学校现在将"
-       },
-       {
-        "t": "s",
-        "x": "健康素养"
-       },
-       {
-        "t": "t",
-        "x": "视为常规活动的一部分，而非可选的附加内容。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句10",
-      "kind": "func",
-      "cov": 0.87,
-      "matched": 13,
-      "wc": 15,
-      "keys": [],
-      "cn": "学校现在将健康素养视为常规活动的一部分，而非可选的附加内容。"
+      "cn": "除此之外，长期久坐使健康素养从爱好变成了切实的需求。"
      }
     ]
    },
@@ -8584,7 +8332,7 @@
   ]
  },
  "2024": {
-  "wc": 179,
+  "wc": 169,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -8620,11 +8368,6 @@
     "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
     "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
     "src": "第二段 · 原因（机制句池） · 功能句4"
-   },
-   {
-    "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
-    "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
-    "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
     "en": "On balance, this is a positive trend worth welcoming.",
@@ -8941,7 +8684,7 @@
     ]
    },
    {
-    "wc": 69,
+    "wc": 59,
     "sents": [
      {
       "spans": [
@@ -8969,8 +8712,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Schools now treat "
+        "x": "schools now treat "
        },
        {
         "t": "s",
@@ -8984,7 +8731,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "学校现在将"
+        "x": "首先，学校现在将"
        },
        {
         "t": "s",
@@ -8997,40 +8744,48 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句10",
       "kind": "func",
-      "cov": 0.81,
+      "cov": 0.76,
       "matched": 13,
-      "wc": 16,
+      "wc": 17,
       "keys": [],
-      "cn": "学校现在将劳动实践课视为常规活动的一部分，而非可选的附加内容。"
+      "cn": "首先，学校现在将劳动实践课视为常规活动的一部分，而非可选的附加内容。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Employers now look for experience as much as for grades."
+        "x": "employers now look for experience as much as for grades."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今用人单位既看重成绩，也看重经验。"
+        "x": "同样重要的是，如今用人单位既看重成绩，也看重经验。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句15",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.83,
       "matched": 10,
-      "wc": 10,
+      "wc": 12,
       "keys": [
        "Employers now look for experience as much as for grades."
       ],
-      "cn": "如今用人单位既看重成绩，也看重经验。"
+      "cn": "同样重要的是，如今用人单位既看重成绩，也看重经验。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -9044,7 +8799,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -9057,34 +8812,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.83,
+      "cov": 0.75,
       "matched": 15,
-      "wc": 18,
+      "wc": 20,
       "keys": [],
-      "cn": "如今，人们评判劳动实践课的标准是它能为自己带来什么，而非他人的看法。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Young people change jobs far more often than their parents did, so loyalty works differently."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句14",
-      "kind": "func",
-      "cov": 1.0,
-      "matched": 15,
-      "wc": 15,
-      "keys": [
-       "Young people change jobs far more often than their parents did, so loyalty works differently."
-      ],
-      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
+      "cn": "除此之外，如今，人们评判劳动实践课的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -9216,7 +8948,7 @@
   ]
  },
  "2025": {
-  "wc": 167,
+  "wc": 160,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -9252,11 +8984,6 @@
     "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
     "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
     "src": "第二段 · 原因（机制句池） · 功能句4"
-   },
-   {
-    "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
-    "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
-    "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
     "en": "On balance, this is a positive trend worth welcoming.",
@@ -9573,7 +9300,7 @@
     ]
    },
    {
-    "wc": 67,
+    "wc": 60,
     "sents": [
      {
       "spans": [
@@ -9601,31 +9328,39 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Longer life expectancy has changed how families plan for their later years."
+        "x": "longer life expectancy has changed how families plan for their later years."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "寿命的延长改变了家庭对晚年的规划。"
+        "x": "首先，寿命的延长改变了家庭对晚年的规划。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句12",
       "kind": "func",
-      "cov": 1.0,
+      "cov": 0.92,
       "matched": 12,
-      "wc": 12,
+      "wc": 13,
       "keys": [
        "Longer life expectancy has changed how families plan for their later years."
       ],
-      "cn": "寿命的延长改变了家庭对晚年的规划。"
+      "cn": "首先，寿命的延长改变了家庭对晚年的规划。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "As household incomes have grown, "
+        "x": "as household incomes have grown, "
        },
        {
         "t": "s",
@@ -9639,7 +9374,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "随着家庭收入提高，"
+        "x": "同样重要的是，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -9652,17 +9387,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.78,
       "matched": 14,
-      "wc": 16,
+      "wc": 18,
       "keys": [],
-      "cn": "随着家庭收入提高，退休生活已从奢侈品变成日常必需。"
+      "cn": "同样重要的是，随着家庭收入提高，退休生活已从奢侈品变成日常必需。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -9676,7 +9415,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -9689,48 +9428,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判退休生活的标准是它能为自己带来什么，而非他人的看法。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Public spending on infrastructure has made "
-       },
-       {
-        "t": "s",
-        "x": "retirement life "
-       },
-       {
-        "t": "t",
-        "x": "far more widely available."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "基础设施方面的公共支出使"
-       },
-       {
-        "t": "s",
-        "x": "退休生活"
-       },
-       {
-        "t": "t",
-        "x": "更加普及。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句6",
-      "kind": "func",
-      "cov": 0.83,
-      "matched": 10,
-      "wc": 12,
-      "keys": [],
-      "cn": "基础设施方面的公共支出使退休生活更加普及。"
+      "cn": "除此之外，如今，人们评判退休生活的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -9848,7 +9550,7 @@
   ]
  },
  "2026": {
-  "wc": 179,
+  "wc": 169,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -9884,11 +9586,6 @@
     "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
     "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
     "src": "第二段 · 原因（机制句池） · 功能句4"
-   },
-   {
-    "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
-    "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
-    "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
     "en": "On balance, this is a positive trend worth welcoming.",
@@ -10205,7 +9902,7 @@
     ]
    },
    {
-    "wc": 68,
+    "wc": 58,
     "sents": [
      {
       "spans": [
@@ -10233,8 +9930,12 @@
      {
       "spans": [
        {
+        "t": "o",
+        "x": "First, "
+       },
+       {
         "t": "t",
-        "x": "Sitting all day has turned "
+        "x": "sitting all day has turned "
        },
        {
         "t": "s",
@@ -10248,7 +9949,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "长期久坐使"
+        "x": "首先，长期久坐使"
        },
        {
         "t": "s",
@@ -10261,17 +9962,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句8",
       "kind": "func",
-      "cov": 0.86,
+      "cov": 0.8,
       "matched": 12,
-      "wc": 14,
+      "wc": 15,
       "keys": [],
-      "cn": "长期久坐使户外活动从爱好变成了切实的需求。"
+      "cn": "首先，长期久坐使户外活动从爱好变成了切实的需求。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Equally important, "
+       },
+       {
         "t": "t",
-        "x": "Public spending on infrastructure has made "
+        "x": "public spending on infrastructure has made "
        },
        {
         "t": "s",
@@ -10285,7 +9990,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "基础设施方面的公共支出使"
+        "x": "同样重要的是，基础设施方面的公共支出使"
        },
        {
         "t": "s",
@@ -10298,17 +10003,21 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句6",
       "kind": "func",
-      "cov": 0.83,
+      "cov": 0.71,
       "matched": 10,
-      "wc": 12,
+      "wc": 14,
       "keys": [],
-      "cn": "基础设施方面的公共支出使户外活动更加普及。"
+      "cn": "同样重要的是，基础设施方面的公共支出使户外活动更加普及。"
      },
      {
       "spans": [
        {
+        "t": "o",
+        "x": "Beyond that, "
+       },
+       {
         "t": "t",
-        "x": "People now judge "
+        "x": "people now judge "
        },
        {
         "t": "s",
@@ -10322,7 +10031,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "如今，人们评判"
+        "x": "除此之外，如今，人们评判"
        },
        {
         "t": "s",
@@ -10335,48 +10044,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句4",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.79,
       "matched": 15,
-      "wc": 17,
+      "wc": 19,
       "keys": [],
-      "cn": "如今，人们评判户外活动的标准是它能为自己带来什么，而非他人的看法。"
-     },
-     {
-      "spans": [
-       {
-        "t": "t",
-        "x": "Schools now treat "
-       },
-       {
-        "t": "s",
-        "x": "outdoor activity "
-       },
-       {
-        "t": "t",
-        "x": "as part of the routine rather than an optional extra."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "学校现在将"
-       },
-       {
-        "t": "s",
-        "x": "户外活动"
-       },
-       {
-        "t": "t",
-        "x": "视为常规活动的一部分，而非可选的附加内容。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句10",
-      "kind": "func",
-      "cov": 0.87,
-      "matched": 13,
-      "wc": 15,
-      "keys": [],
-      "cn": "学校现在将户外活动视为常规活动的一部分，而非可选的附加内容。"
+      "cn": "除此之外，如今，人们评判户外活动的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },

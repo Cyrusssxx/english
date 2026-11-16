@@ -142,6 +142,20 @@ MECH = [
      '如今用人单位既看重成绩，也看重经验。'),
     (1, '生活节奏', 'Daily life has become more rushed, and {{topic}} is one of the few things people still fit in.',
      '生活节奏不断加快，{{topic}} 成了人们为数不多还愿意抽出时间去做的事。'),
+    # ── 2026-11-16 追加：押题预测五个方向（AI 教育 / 传统文化 / 教育公平 / 绿色消费 / 绿色出行）──
+    # 追加在末尾、不插队：老句的索引与 apply_plan 的 f:tag 引用全部不动。
+    (3, '科技普及', 'Advances in technology have made {{topic}} part of daily life rather than a privilege.',
+     '科技的进步让 {{topic}} 从少数人的特权变成日常生活的一部分。'),
+    (3, 'AI 教育', 'AI-powered tutoring gives students instant feedback that a single teacher can hardly provide.',
+     '人工智能辅导能给学生即时反馈，这是单个老师很难做到的。'),
+    (2, '教育公平', 'Shared online courses have begun to narrow the gap between urban and rural classrooms.',
+     '共享网课已经开始缩小城乡课堂之间的差距。'),
+    (2, '环保意识', 'Rising environmental awareness has turned {{topic}} into a mark of responsible living.',
+     '环保意识的提升，使 {{topic}} 成为负责任生活的标志。'),
+    (2, '绿色出行', 'Better public transport has made low-carbon travel a practical choice for young people.',
+     '更完善的公共交通，让低碳出行成为年轻人切实可行的选择。'),
+    (2, '文化新媒介', 'Short videos and self-media have opened a far easier route into {{topic}} for young people.',
+     '短视频和自媒体，为年轻人了解 {{topic}} 打开了一条便捷得多的路径。'),
 ]
 
 # ══════════ 三、第三段：立场句 + 主体句池 + 收束句 ══════════
@@ -285,10 +299,8 @@ def main():
     s['sentences'] = [
         {'en': 'The two moved in the same direction, but not at the same pace.', 'cn': '两者方向一致，但速度不同。', 'freq': 3, 'tag': '同向不同速'},
         {'en': 'The gap between the two widened over the period.', 'cn': '两者的差距在这一时期拉大了。', 'freq': 3, 'tag': '差距'},
-        {'en': 'Growth was slow at first and then sped up.', 'cn': '增长起初缓慢，后来明显加快。', 'freq': 3, 'tag': '加速'},
         {'en': 'The first half of the period saw a steady rise, while the last few years brought a sharp acceleration.', 'cn': '前半段稳步上升，最后几年明显加速。', 'freq': 3, 'tag': '分段·先稳后急'},
         {'en': 'In the later years, {{item1}} climbed sharply while {{item2}} stayed almost flat.', 'cn': '后几年 {{item1}} 急剧上升，而 {{item2}} 几乎原地不动。', 'freq': 3, 'tag': '分段·后段分化'},
-        {'en': 'From {{time1}} to {{time3}}, it rose steadily, and after {{time3}} it accelerated sharply to reach {{num2}}.', 'cn': '{{time1}} 到 {{time3}} 稳步上升，{{time3}} 之后明显加速，最终达到 {{num2}}。', 'freq': 2, 'tag': '分段·中点句'},
         {'en': 'The two moved in opposite directions.', 'cn': '两者朝相反的方向变化。', 'freq': 3, 'tag': '反差'},
         {'en': 'The figure more than doubled over the period.', 'cn': '这一数字在该时期翻了一倍多。', 'freq': 2, 'tag': '倍数'},
     ]
@@ -299,7 +311,7 @@ def main():
         secs.remove(x)
     secs.insert(2, {
         'id': 'para2_why', 'title': '第二段 · 原因（机制句池）',
-        'subtitle': '不背整段：1 句引入 + 从下面 16 条机制里挑 3 条（每条都是一个完整原因）',
+        'subtitle': '不背整段：1 句引入 + 从下面 %d 条机制里挑 3 条（每条都是一个完整原因）' % len(MECH),
         'group': secs[0].get('group', ''),
         'en': PARA2_SKEL['en'], 'cn': PARA2_SKEL['cn'], 'en_struct': [PARA2_SKEL['struct']],
         'alts': PARA2_SKEL['alts'],
@@ -317,7 +329,7 @@ def main():
         ],
         'tips': [
         "万能开头：a combination of factors 不承诺条数，什么年份都成立；想点明条数再换 two / three / several major factors（必须与正文条数一致）。第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。",'引入句 10 词 + 机制句挑 3 条 ≈ 55~62 词。',
-                 '每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 16 条都写。',
+                 '每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 %d 条都写。' % len(MECH),
                  '挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。'],
     })
 
