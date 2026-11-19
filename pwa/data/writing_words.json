@@ -1,0 +1,766 @@
+{
+ "meta": {
+  "title": "写作词库速查",
+  "desc": "把大小作文模板、范文和押题里的高频词整理成一张速查表：主题词、加分短语、图表词、连接词、书信词、人名地名。英文可点查词。"
+ },
+ "groups": [
+  {
+   "id": "topic",
+   "name": "主题词 · 押题高频",
+   "icon": "🎯",
+   "desc": "27 押题五个方向 + 历年真题热点的核心名词，写作文靠它们定位话题。标「押」为押题原词表，标「真」为真题出现过。",
+   "items": [
+    {
+     "en": "artificial intelligence (AI)",
+     "cn": "人工智能",
+     "tag": "押"
+    },
+    {
+     "en": "online learning",
+     "cn": "线上学习",
+     "tag": "押"
+    },
+    {
+     "en": "offline study",
+     "cn": "线下学习",
+     "tag": "押"
+    },
+    {
+     "en": "reading duration",
+     "cn": "阅读时长",
+     "tag": "押"
+    },
+    {
+     "en": "educational technology",
+     "cn": "教育科技",
+     "tag": "押"
+    },
+    {
+     "en": "intelligent tutoring",
+     "cn": "智能辅导",
+     "tag": "押"
+    },
+    {
+     "en": "traditional culture",
+     "cn": "传统文化",
+     "tag": "押"
+    },
+    {
+     "en": "cultural heritage",
+     "cn": "文化遗产",
+     "tag": "押"
+    },
+    {
+     "en": "cultural inheritance",
+     "cn": "文化传承",
+     "tag": "押"
+    },
+    {
+     "en": "cultural experience",
+     "cn": "文化体验",
+     "tag": "押"
+    },
+    {
+     "en": "cultural confidence",
+     "cn": "文化自信",
+     "tag": "押"
+    },
+    {
+     "en": "short video",
+     "cn": "短视频",
+     "tag": "押"
+    },
+    {
+     "en": "self-media",
+     "cn": "自媒体",
+     "tag": "押"
+    },
+    {
+     "en": "live streaming",
+     "cn": "直播",
+     "tag": "押"
+    },
+    {
+     "en": "educational resources",
+     "cn": "教育资源",
+     "tag": "押"
+    },
+    {
+     "en": "urban and rural areas",
+     "cn": "城乡地区",
+     "tag": "押"
+    },
+    {
+     "en": "educational equity",
+     "cn": "教育公平",
+     "tag": "押"
+    },
+    {
+     "en": "balanced development",
+     "cn": "均衡发展",
+     "tag": "押"
+    },
+    {
+     "en": "rural education",
+     "cn": "乡村教育",
+     "tag": "押"
+    },
+    {
+     "en": "green consumption",
+     "cn": "绿色消费",
+     "tag": "押"
+    },
+    {
+     "en": "energy-saving home appliances",
+     "cn": "节能家电",
+     "tag": "押"
+    },
+    {
+     "en": "eco-friendly daily products",
+     "cn": "环保日用品",
+     "tag": "押"
+    },
+    {
+     "en": "green food",
+     "cn": "绿色食品",
+     "tag": "押"
+    },
+    {
+     "en": "sustainable travel",
+     "cn": "可持续出行",
+     "tag": "押"
+    },
+    {
+     "en": "low-carbon concept",
+     "cn": "低碳理念",
+     "tag": "押"
+    },
+    {
+     "en": "environmental awareness",
+     "cn": "环保意识",
+     "tag": "押"
+    },
+    {
+     "en": "sustainable lifestyle",
+     "cn": "可持续生活方式",
+     "tag": "押"
+    },
+    {
+     "en": "green travel",
+     "cn": "绿色出行",
+     "tag": "押"
+    },
+    {
+     "en": "high-speed rail",
+     "cn": "高铁",
+     "tag": "押"
+    },
+    {
+     "en": "public transport",
+     "cn": "公共交通",
+     "tag": "押"
+    },
+    {
+     "en": "bicycle / cycling",
+     "cn": "自行车",
+     "tag": "押"
+    },
+    {
+     "en": "on foot / walking",
+     "cn": "步行",
+     "tag": "押"
+    },
+    {
+     "en": "private cars",
+     "cn": "私家车",
+     "tag": "押"
+    },
+    {
+     "en": "low-carbon lifestyle",
+     "cn": "低碳生活方式",
+     "tag": "押"
+    },
+    {
+     "en": "eco-friendly transportation",
+     "cn": "环保交通方式",
+     "tag": "押"
+    },
+    {
+     "en": "mobile-phone subscriptions",
+     "cn": "手机用户数",
+     "tag": "真"
+    },
+    {
+     "en": "physical exercise",
+     "cn": "体育锻炼",
+     "tag": "真"
+    },
+    {
+     "en": "health literacy",
+     "cn": "健康素养",
+     "tag": "真"
+    },
+    {
+     "en": "express delivery",
+     "cn": "快递业务",
+     "tag": "真"
+    },
+    {
+     "en": "labour practice course",
+     "cn": "劳动实践课",
+     "tag": "真"
+    },
+    {
+     "en": "leisure activities",
+     "cn": "休闲活动",
+     "tag": "真"
+    },
+    {
+     "en": "outdoor activities",
+     "cn": "户外活动",
+     "tag": "真"
+    },
+    {
+     "en": "museum",
+     "cn": "博物馆",
+     "tag": "真"
+    },
+    {
+     "en": "career choice",
+     "cn": "职业选择",
+     "tag": "真"
+    },
+    {
+     "en": "consumer behaviour",
+     "cn": "消费者行为",
+     "tag": "真"
+    }
+   ]
+  },
+  {
+   "id": "phrase",
+   "name": "加分短语 · 现挑现用",
+   "icon": "✨",
+   "desc": "押题原词表的加分短语，加范文里反复出现的高级搭配。写作时按话题挑 1~2 个塞进主体段。",
+   "items": [
+    {
+     "en": "gain increasing popularity",
+     "cn": "越来越普及",
+     "tag": "押"
+    },
+    {
+     "en": "witness a steady rise",
+     "cn": "呈现稳步上升",
+     "tag": "押"
+    },
+    {
+     "en": "facilitate study",
+     "cn": "助力学习",
+     "tag": "押"
+    },
+    {
+     "en": "the largest proportion",
+     "cn": "占最大比重",
+     "tag": "押"
+    },
+    {
+     "en": "cultural confidence",
+     "cn": "文化自信",
+     "tag": "押"
+    },
+    {
+     "en": "inherit fine traditions",
+     "cn": "传承优良传统",
+     "tag": "押"
+    },
+    {
+     "en": "narrow the gap",
+     "cn": "缩小差距",
+     "tag": "押"
+    },
+    {
+     "en": "improve continuously",
+     "cn": "持续改善",
+     "tag": "押"
+    },
+    {
+     "en": "promote educational fairness",
+     "cn": "促进教育公平",
+     "tag": "押"
+    },
+    {
+     "en": "reduce carbon emissions",
+     "cn": "减少碳排放",
+     "tag": "押"
+    },
+    {
+     "en": "play a vital role in",
+     "cn": "在……中起重要作用",
+     "tag": "范"
+    },
+    {
+     "en": "be attributed to",
+     "cn": "归因于",
+     "tag": "范"
+    },
+    {
+     "en": "a combination of factors",
+     "cn": "多种因素的综合",
+     "tag": "范"
+    },
+    {
+     "en": "be aware of",
+     "cn": "意识到",
+     "tag": "范"
+    },
+    {
+     "en": "seek various ways to",
+     "cn": "寻求各种方法去",
+     "tag": "范"
+    },
+    {
+     "en": "be beneficial to",
+     "cn": "有益于",
+     "tag": "范"
+    },
+    {
+     "en": "lay a solid foundation for",
+     "cn": "为……打下坚实基础",
+     "tag": "范"
+    },
+    {
+     "en": "keep pace with",
+     "cn": "跟上……的步伐",
+     "tag": "范"
+    },
+    {
+     "en": "raise public awareness of",
+     "cn": "提高公众对……的意识",
+     "tag": "范"
+    },
+    {
+     "en": "strike a balance between",
+     "cn": "在……之间取得平衡",
+     "tag": "范"
+    },
+    {
+     "en": "attach great importance to",
+     "cn": "高度重视",
+     "tag": "范"
+    },
+    {
+     "en": "make full use of",
+     "cn": "充分利用",
+     "tag": "范"
+    },
+    {
+     "en": "take effective measures",
+     "cn": "采取有效措施",
+     "tag": "范"
+    },
+    {
+     "en": "enjoy a growing popularity",
+     "cn": "日益流行",
+     "tag": "范"
+    }
+   ]
+  },
+  {
+   "id": "chart",
+   "name": "图表词 · 开头段必备",
+   "icon": "📊",
+   "desc": "第一段描述图表要用：图表类型 + 升降动词 + 程度副词。标「动词」的注意时态（过去年份用过去式）。",
+   "items": [
+    {
+     "en": "bar chart",
+     "cn": "柱状图",
+     "tag": "类型"
+    },
+    {
+     "en": "pie chart",
+     "cn": "饼图",
+     "tag": "类型"
+    },
+    {
+     "en": "line chart",
+     "cn": "折线图",
+     "tag": "类型"
+    },
+    {
+     "en": "table",
+     "cn": "表格",
+     "tag": "类型"
+    },
+    {
+     "en": "clearly illustrate",
+     "cn": "清晰地展示",
+     "tag": "动词"
+    },
+    {
+     "en": "account for",
+     "cn": "占（比例）",
+     "tag": "动词"
+    },
+    {
+     "en": "takes the lead",
+     "cn": "居首位",
+     "tag": "动词"
+    },
+    {
+     "en": "followed by",
+     "cn": "紧随其后",
+     "tag": "动词"
+    },
+    {
+     "en": "respectively",
+     "cn": "分别地",
+     "tag": "副词"
+    },
+    {
+     "en": "rose sharply",
+     "cn": "急剧上升",
+     "tag": "动词"
+    },
+    {
+     "en": "saw a modest increase",
+     "cn": "小幅增长",
+     "tag": "动词"
+    },
+    {
+     "en": "climbed steadily",
+     "cn": "稳步攀升",
+     "tag": "动词"
+    },
+    {
+     "en": "declined gradually",
+     "cn": "逐渐下降",
+     "tag": "动词"
+    },
+    {
+     "en": "remained stable",
+     "cn": "保持稳定",
+     "tag": "动词"
+    },
+    {
+     "en": "fluctuated",
+     "cn": "波动",
+     "tag": "动词"
+    },
+    {
+     "en": "reached a peak",
+     "cn": "达到峰值",
+     "tag": "动词"
+    },
+    {
+     "en": "a steady trend",
+     "cn": "平稳趋势",
+     "tag": "搭配"
+    },
+    {
+     "en": "a slight increase",
+     "cn": "轻微增长",
+     "tag": "搭配"
+    },
+    {
+     "en": "a dramatic decline",
+     "cn": "大幅下降",
+     "tag": "搭配"
+    },
+    {
+     "en": "over the same period",
+     "cn": "同期",
+     "tag": "搭配"
+    },
+    {
+     "en": "in contrast",
+     "cn": "相比之下",
+     "tag": "搭配"
+    },
+    {
+     "en": "the figure for",
+     "cn": "……的数据",
+     "tag": "搭配"
+    }
+   ]
+  },
+  {
+   "id": "link",
+   "name": "连接词 · 逻辑衔接",
+   "icon": "🔗",
+   "desc": "句间过渡用。写作模板里已反复出现，务必拼写正确。",
+   "items": [
+    {
+     "en": "to begin with",
+     "cn": "首先",
+     "tag": "顺序"
+    },
+    {
+     "en": "first and foremost",
+     "cn": "首先（强调）",
+     "tag": "顺序"
+    },
+    {
+     "en": "in addition",
+     "cn": "此外",
+     "tag": "递进"
+    },
+    {
+     "en": "furthermore",
+     "cn": "此外",
+     "tag": "递进"
+    },
+    {
+     "en": "moreover",
+     "cn": "而且",
+     "tag": "递进"
+    },
+    {
+     "en": "in particular",
+     "cn": "尤其",
+     "tag": "递进"
+    },
+    {
+     "en": "by contrast",
+     "cn": "相比之下",
+     "tag": "转折"
+    },
+    {
+     "en": "nevertheless",
+     "cn": "然而",
+     "tag": "转折"
+    },
+    {
+     "en": "whereas",
+     "cn": "然而（对比）",
+     "tag": "转折"
+    },
+    {
+     "en": "therefore",
+     "cn": "因此",
+     "tag": "因果"
+    },
+    {
+     "en": "as a result",
+     "cn": "结果",
+     "tag": "因果"
+    },
+    {
+     "en": "consequently",
+     "cn": "因此",
+     "tag": "因果"
+    },
+    {
+     "en": "given that",
+     "cn": "鉴于",
+     "tag": "因果"
+    },
+    {
+     "en": "in conclusion",
+     "cn": "总之",
+     "tag": "总结"
+    },
+    {
+     "en": "to conclude",
+     "cn": "最后",
+     "tag": "总结"
+    },
+    {
+     "en": "overall",
+     "cn": "总体而言",
+     "tag": "总结"
+    },
+    {
+     "en": "admittedly",
+     "cn": "诚然",
+     "tag": "让步"
+    },
+    {
+     "en": "that said",
+     "cn": "话虽如此",
+     "tag": "让步"
+    }
+   ]
+  },
+  {
+   "id": "letter",
+   "name": "小作文 · 功能句词",
+   "icon": "✉️",
+   "desc": "书信/通知/纪要的高频动词和套语。称呼落款、邀请建议感谢投诉，都从这些词展开。",
+   "items": [
+    {
+     "en": "Dear Sir or Madam",
+     "cn": "尊敬的先生/女士",
+     "tag": "称呼"
+    },
+    {
+     "en": "Yours sincerely",
+     "cn": "谨启（正式）",
+     "tag": "落款"
+    },
+    {
+     "en": "Yours faithfully",
+     "cn": "谨启（不知姓名）",
+     "tag": "落款"
+    },
+    {
+     "en": "I am writing to",
+     "cn": "我写信是为了",
+     "tag": "开头"
+    },
+    {
+     "en": "express my gratitude",
+     "cn": "表达感谢",
+     "tag": "功能"
+    },
+    {
+     "en": "extend my congratulations",
+     "cn": "表示祝贺",
+     "tag": "功能"
+    },
+    {
+     "en": "lodge a complaint",
+     "cn": "提出投诉",
+     "tag": "功能"
+    },
+    {
+     "en": "seek your advice",
+     "cn": "征求你的建议",
+     "tag": "功能"
+    },
+    {
+     "en": "make a suggestion",
+     "cn": "提出建议",
+     "tag": "功能"
+    },
+    {
+     "en": "extend an invitation",
+     "cn": "发出邀请",
+     "tag": "功能"
+    },
+    {
+     "en": "I would appreciate it if",
+     "cn": "如果……将不胜感激",
+     "tag": "功能"
+    },
+    {
+     "en": "be delighted to",
+     "cn": "很高兴做",
+     "tag": "功能"
+    },
+    {
+     "en": "look forward to your reply",
+     "cn": "期待你的回复",
+     "tag": "结尾"
+    },
+    {
+     "en": "at your earliest convenience",
+     "cn": "尽早",
+     "tag": "结尾"
+    },
+    {
+     "en": "take into consideration",
+     "cn": "考虑",
+     "tag": "功能"
+    },
+    {
+     "en": "a brief introduction",
+     "cn": "简要介绍",
+     "tag": "功能"
+    },
+    {
+     "en": "on behalf of",
+     "cn": "代表",
+     "tag": "功能"
+    },
+    {
+     "en": "be scheduled for",
+     "cn": "定于……举行",
+     "tag": "功能"
+    },
+    {
+     "en": "participate in",
+     "cn": "参加",
+     "tag": "功能"
+    },
+    {
+     "en": "sign up for",
+     "cn": "报名参加",
+     "tag": "功能"
+    }
+   ]
+  },
+  {
+   "id": "name",
+   "name": "人名 · 地名 · 专名",
+   "icon": "🌏",
+   "desc": "小作文落款固定用 Li Ming 或 Zhang Wei（看题目指定，不要写真名）。地名、节日、机构名翻译要记牢首字母大写。",
+   "items": [
+    {
+     "en": "Li Ming",
+     "cn": "李明（小作文落款）",
+     "tag": "人名"
+    },
+    {
+     "en": "Zhang Wei",
+     "cn": "张伟（小作文落款）",
+     "tag": "人名"
+    },
+    {
+     "en": "Beijing",
+     "cn": "北京",
+     "tag": "地名"
+    },
+    {
+     "en": "Shanghai",
+     "cn": "上海",
+     "tag": "地名"
+    },
+    {
+     "en": "China",
+     "cn": "中国",
+     "tag": "地名"
+    },
+    {
+     "en": "Chinese",
+     "cn": "中国的；中国人；汉语",
+     "tag": "地名"
+    },
+    {
+     "en": "the Great Wall",
+     "cn": "长城",
+     "tag": "专名"
+    },
+    {
+     "en": "the Spring Festival",
+     "cn": "春节",
+     "tag": "专名"
+    },
+    {
+     "en": "the Mid-Autumn Festival",
+     "cn": "中秋节",
+     "tag": "专名"
+    },
+    {
+     "en": "the Dragon Boat Festival",
+     "cn": "端午节",
+     "tag": "专名"
+    },
+    {
+     "en": "Project Hope",
+     "cn": "希望工程",
+     "tag": "专名"
+    },
+    {
+     "en": "Peking University",
+     "cn": "北京大学",
+     "tag": "专名"
+    },
+    {
+     "en": "Tsinghua University",
+     "cn": "清华大学",
+     "tag": "专名"
+    }
+   ]
+  }
+ ]
+}

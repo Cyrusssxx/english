@@ -5213,3 +5213,89 @@ html.dark .lex-progress .lp-dot.d1 { background: #e05260; }
 /* 顶栏收起后吸顶条贴到最顶：右侧给浮在最右的 ▼ 按钮让位，免得挡住最后一个 chip */
 html[data-nav-collapsed="1"] .rc-toc,
 html[data-nav-collapsed="1"] .sw-viewbar { padding-right: 44px; }
+
+/* ===================== 写作词库速查页（recite.html 重建） =====================
+   目录卡片：浅色圆角描边卡片，左侧「目录」青色加粗，右侧「‹ 收起」描边小按钮（见设计截图）。
+   全部用主题变量，深色模式自动适配；手机端覆盖追加在本文件末尾。 */
+.rc-dir {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0 14px;
+    margin: 0 0 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .05);
+}
+.rc-dir-h {
+    display: flex; align-items: center; justify-content: space-between;
+    min-height: 46px; cursor: pointer; list-style: none; user-select: none;
+}
+.rc-dir-h::-webkit-details-marker { display: none; }
+.rc-dir-title {
+    font-size: 1.02rem; font-weight: 800; color: var(--primary); letter-spacing: .02em;
+}
+.rc-dir-toggle {
+    font-size: .8rem; font-weight: 600; color: var(--text-light);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 3px 11px; background: var(--bg);
+    transition: color .15s, border-color .15s, background .15s;
+}
+.rc-dir-toggle::before { content: '‹ '; font-weight: 800; }
+.rc-dir:not([open]) .rc-dir-toggle::before { content: '› '; }
+.rc-dir:not([open]) .rc-dir-toggle { color: var(--primary); border-color: var(--primary); }
+.rc-dir-h:hover .rc-dir-toggle { color: var(--primary); border-color: var(--primary); }
+.rc-dir-links {
+    display: flex; flex-wrap: wrap; gap: 7px;
+    padding: 2px 0 13px;
+    border-top: 1px dashed var(--border);
+}
+.rc-dir[open] .rc-dir-links { padding-top: 12px; }
+.rc-dir-links a {
+    font-size: .84rem; font-weight: 600; color: var(--text-light);
+    text-decoration: none; padding: 4px 12px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--bg);
+    transition: color .15s, border-color .15s, background .15s;
+}
+.rc-dir-links a:hover { color: var(--primary); border-color: var(--primary); }
+.rc-dir-links a.on { color: #fff; background: var(--primary); border-color: var(--primary); }
+
+/* 词库分区 */
+.rc-wg { scroll-margin-top: calc(var(--nav-h, 56px) + 12px); }
+.rc-wg-icon { margin-right: 7px; }
+.rc-wg-n {
+    font-size: .72rem; font-weight: 600; color: var(--primary);
+    background: var(--primary-soft); border-radius: 999px;
+    padding: 1px 8px; margin-left: 9px; vertical-align: 2px;
+}
+.rc-wg-desc { color: var(--text-light); font-size: .85rem; line-height: 1.7; margin: -4px 0 12px; }
+.rcw-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 14px; }
+.rcw-row {
+    display: flex; align-items: baseline; flex-wrap: wrap; gap: 5px 8px;
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 11px; line-height: 1.5;
+}
+.rcw {
+    font-weight: 700; color: var(--primary-dark); font-size: .93rem;
+    cursor: pointer; border-bottom: 1px dashed transparent;
+}
+.rcw:hover { color: var(--primary); border-bottom-color: var(--primary); }
+.rcw-plain { cursor: default; }
+.rcw-plain:hover { color: var(--primary-dark); border-bottom-color: transparent; }
+html.dark .rcw { color: #7fd4c8; }
+.rcw-tag {
+    font-size: .66rem; font-weight: 700; color: var(--text-light);
+    border: 1px solid var(--border); border-radius: 5px; padding: 0 5px;
+    background: var(--bg); white-space: nowrap;
+}
+.rcw-cn { color: var(--text); font-size: .88rem; margin-left: auto; text-align: right; }
+.rc-foot { text-align: center; color: var(--text-light); font-size: .78rem; margin-top: 26px; }
+
+@media (max-width: 640px) {
+    .rcw-grid { grid-template-columns: 1fr; gap: 6px; }
+    .rc-dir { padding: 0 11px; border-radius: 10px; }
+    .rc-dir-links { gap: 5px; padding: 2px 0 11px; }
+    .rc-dir-links a { font-size: .78rem; padding: 3px 9px; }
+    .rc-dir-links { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .rc-dir-links::-webkit-scrollbar { display: none; }
+    .rc-dir-links a { flex: 0 0 auto; }
+    html[data-nav-collapsed="1"] .rc-dir { padding-right: 44px; }
+}
