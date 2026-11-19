@@ -18,6 +18,15 @@ function swPh(s) {
     }).join('');
 }
 
+/** 重点短语版：占位符照旧成芯片，其余片段交给范文重点词库标 .kw（点击弹释义/用法/例句） */
+function swKwPh(s) {
+    if (typeof kwMarkText !== 'function' || typeof KW_BY_KEY === 'undefined' || !KW_BY_KEY || !KW_BY_KEY.size) return swPh(s);
+    return String(s == null ? '' : s).split(/(\{\{[^}]+\}\})/g).map(seg => {
+        const m = /^\{\{([^}]+)\}\}$/.exec(seg);
+        return m ? '<span class="sw-ph">{{' + swEsc(m[1]) + '}}</span>' : kwMarkText(seg, swEsc);
+    }).join('');
+}
+
 function swBank(id) { return (SW.banks || []).find(b => b.id === id); }
 
 /** 考研口径词数 */
@@ -88,11 +97,11 @@ function swLine(it, no, key) {
     const ex = (it.ex || []).map(e => `
         <div class="sw-ex">
             <div class="sw-ex-tag">✍ 真题示例${e.src ? ' · ' + swEsc(e.src) : ''}</div>
-            <div class="sw-ex-en">${swPh(e.en)}</div>
+            <div class="sw-ex-en">${swKwPh(e.en)}</div>
             ${e.cn ? `<div class="sw-ex-cn">${swPh(e.cn)}</div>` : ''}
         </div>`).join('');
     return `<li class="sw-line" data-k="${key}">
-        <div class="sw-en"><span class="sw-no">${no}</span>${swStars(it)}${it.tag ? `<span class="sw-tag">${swEsc(it.tag)}</span>` : ''}<span class="sw-en-txt">${swPh(it.en)}</span></div>
+        <div class="sw-en"><span class="sw-no">${no}</span>${swStars(it)}${it.tag ? `<span class="sw-tag">${swEsc(it.tag)}</span>` : ''}<span class="sw-en-txt">${swKwPh(it.en)}</span></div>
         ${it.cn ? `<div class="sw-cn">${swPh(it.cn)}</div>` : ''}
         ${it.alts ? swAlts(it.alts) : ''}
         ${ex}
@@ -344,7 +353,7 @@ function swLetterRender() {
             const it = l.item;
             const i = no++;
             // 句译块：默认 hidden（不打断段落流），点句子开合（移植阅读页的点句翻译）
-            return `<span class="sw-ls" data-k="${swEsc(l.k)}" data-i="${i}" title="点句看该句中文">${swPh(it.en)}</span>`
+            return `<span class="sw-ls" data-k="${swEsc(l.k)}" data-i="${i}" title="点句看该句中文">${swKwPh(it.en)}</span>`
                 + `<div class="sw-ls-cn" data-for="${i}" hidden>${it.cn ? swPh(it.cn) : ''}</div>`;
         }).join('');
         if (isBody && swLetterCnParas[pi]) {
@@ -557,6 +566,8 @@ function swBind() {
 
 async function swInit() {
     const box = document.getElementById('swContent');
+    await kwLoad();            // 范文重点短语：先就绪，首帧渲染就能点
+    kwBind();
     try {
         const res = await fetch('data/small_writing.json', { cache: 'no-cache' });
         SW = await res.json();

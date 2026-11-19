@@ -142,6 +142,14 @@ function wrAnnotate(text) {
     return wrAnnotateSegment(text);
 }
 
+/** 重点短语优先（.kw，来自范文重点词库），其余片段再走「高分替换 → 词典标注」 */
+function wrAnnotateWithKw(plainText) {
+    if (typeof kwMarkText !== 'function' || typeof KW_BY_KEY === 'undefined' || !KW_BY_KEY || !KW_BY_KEY.size) {
+        return wrAnnotateWithUpgrades(plainText);
+    }
+    return kwMarkText(plainText, wrAnnotateWithUpgrades);
+}
+
 function wrAnnotateSegment(text) {
     if (!text) return '';
     // 1. 先按占位符切段
@@ -151,13 +159,13 @@ function wrAnnotateSegment(text) {
     let m;
     while ((m = re.exec(text)) !== null) {
         if (m.index > last) {
-            out.push(wrAnnotateWithUpgrades(text.slice(last, m.index)));
+            out.push(wrAnnotateWithKw(text.slice(last, m.index)));
         }
         out.push(`<span class="wr-ph">${wrEsc(m[1])}</span>`);
         last = m.index + m[0].length;
     }
     if (last < text.length) {
-        out.push(wrAnnotateWithUpgrades(text.slice(last)));
+        out.push(wrAnnotateWithKw(text.slice(last)));
     }
     return out.join('');
 }
@@ -1085,6 +1093,8 @@ function wrTocBind() {
 async function initWriting() {
     // 词典与主体并行拉取：图片已最后加载不再抢带宽，词典无需延迟（dict/phrases/senses 立即开始下）
     const heavyP = wrHeavyReady();
+    await kwLoad();                    // 范文重点短语（小体量，先就绪再渲染，保证首帧就带 .kw）
+    kwBind();
     try {
         const res = await fetch('data/writing_templates.json', { cache: 'no-cache' });
         if (!res.ok) throw new Error('加载失败: ' + res.status);
