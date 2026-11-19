@@ -43,10 +43,6 @@ for i in range(len(qdoc)):
     typ = next((t for t in type_order if t in txt), None)
     if not typ:
         continue
-    src = ''
-    ms = re.search(r'来源：([^\n]+)', txt)
-    if ms:
-        src = ms.group(1).strip()
     imgs = pg.get_images(full=True)
     if not imgs:
         continue
@@ -54,16 +50,17 @@ for i in range(len(qdoc)):
     info = qdoc.extract_image(xref)
     ext = info['ext']
     imgname = f"{num:02d}.jpg"
-    # 压缩：原图 1601px / ~600KB → 宽 1100 / quality 82（约 150KB），避免预缓存过大
+    # 压缩：原图 1601px → 宽 900 / quality 80（约 90KB）。
+    # 页面显示再由 CSS 限高，避免图太大撑满屏；点击大图仍看 900px 清晰版。
     im = Image.open(io.BytesIO(info['image'])).convert('RGB')
-    if im.width > 1100:
-        im = im.resize((1100, round(im.height * 1100 / im.width)), Image.LANCZOS)
+    if im.width > 900:
+        im = im.resize((900, round(im.height * 900 / im.width)), Image.LANCZOS)
     buf = io.BytesIO()
-    im.save(buf, 'JPEG', quality=82, optimize=True)
+    im.save(buf, 'JPEG', quality=80, optimize=True)
     with open(os.path.join(IMGDIR, imgname), 'wb') as f:
         f.write(buf.getvalue())
     questions[num] = {
-        'no': num, 'title': title, 'type': typ, 'src': src,
+        'no': num, 'title': title, 'type': typ,
         'img': f"data/yati/{imgname}",
         'typeRank': type_order[typ],
     }
@@ -110,7 +107,7 @@ for t in seen:
     items = [q for q in ordered if q['type'] == t]
     out['groups'].append({
         'id': 't' + str(type_order[t]), 'name': t, 'type': t,
-        'items': [{k: q[k] for k in ('no', 'title', 'img', 'essay', 'src')} for q in items],
+        'items': [{k: q[k] for k in ('no', 'title', 'img', 'essay')} for q in items],
     })
 
 with open(os.path.join(PWA, 'data', 'yati.json'), 'w', encoding='utf-8') as f:

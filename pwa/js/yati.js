@@ -13,12 +13,11 @@ function ytRender() {
     const groups = YT.groups || [];
     host.innerHTML = groups.map((g, gi) => {
         const cards = (g.items || []).map(it => {
-            const src = it.src ? `<span class="yt-src">${ytEsc(it.src)}</span>` : '';
             const essay = (it.essay || '').trim();
             return `<details class="yt-card" id="ytQ_${it.no}">
                 <summary class="yt-card-h">
                     <span class="yt-no">${String(it.no).padStart(2, '0')}</span>
-                    <span class="yt-card-title">${ytEsc(it.title)}</span>${src}
+                    <span class="yt-card-title">${ytEsc(it.title)}</span>
                     <span class="yt-card-arrow">▾</span>
                 </summary>
                 <div class="yt-card-body">

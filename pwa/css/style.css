@@ -5333,15 +5333,14 @@ html.dark .rcw { color: #7fd4c8; }
     background: var(--primary-soft); border-radius: 6px; padding: 2px 8px;
 }
 .yt-card-title { font-weight: 700; color: var(--text); font-size: .95rem; }
-.yt-src { font-size: .76rem; color: var(--text-light); margin-left: auto; }
-.yt-card-arrow { color: var(--text-light); font-size: .85rem; transition: transform .15s; }
+.yt-card-arrow { color: var(--text-light); font-size: .85rem; margin-left: auto; transition: transform .15s; }
 .yt-card[open] .yt-card-arrow { transform: rotate(180deg); }
 .yt-card-body { padding: 0 14px 14px; border-top: 1px solid var(--border); }
 .yt-fig { margin: 12px 0 0; }
 .yt-fig a { display: block; }
 .yt-fig img {
-    display: block; max-width: 100%; width: auto; margin: 0 auto;
-    border: 1px solid var(--border); border-radius: 8px; background: #fff;
+    display: block; max-width: 100%; width: auto; max-height: 340px; margin: 0 auto;
+    border: 1px solid var(--border); border-radius: 8px; background: #fff; cursor: zoom-in;
 }
 .yt-fig figcaption { text-align: center; font-size: .76rem; color: var(--text-light); margin-top: 6px; }
 .yt-essay { margin-top: 12px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
@@ -5360,7 +5359,7 @@ html.dark .rcw { color: #7fd4c8; }
 .yt-foot { text-align: center; color: var(--text-light); font-size: .78rem; margin-top: 26px; }
 @media (max-width: 640px) {
     .yt-card-h { flex-wrap: wrap; gap: 6px 9px; padding: 10px; }
-    .yt-src { margin-left: 0; width: 100%; }
+    .yt-fig img { max-height: 260px; }
     .yt-card-title { font-size: .9rem; }
     .yt-essay-body { font-size: .88rem; padding: 11px; }
 }
