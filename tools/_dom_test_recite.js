@@ -47,15 +47,16 @@ function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
   if (rows.length !== expect) fail(`词条渲染数 ${rows.length} != ${expect}`);
   else pass(`词条渲染 ${rows.length} 条`);
   // 2. 分区
+  const groups = JSON.parse(words).groups;
   const secs = d.querySelectorAll('.rc-wg');
-  if (secs.length !== 6) fail('分区数 ' + secs.length); else pass('分区 6 个');
-  // 3. 目录链接与锚点对应
-  const links = [...d.querySelectorAll('#rcDirLinks a[data-t]')];
-  if (links.length !== 6) fail('目录链接数 ' + links.length);
+  if (secs.length !== groups.length) fail('分区数 ' + secs.length + ' != ' + groups.length); else pass('分区 ' + groups.length + ' 个');
+  // 3. 目录链接与锚点对应（左侧 wr-toc）
+  const links = [...d.querySelectorAll('#rcTocList a[data-t]')];
+  if (links.length !== groups.length) fail('目录链接数 ' + links.length);
   else {
     const bad = links.filter(a => !d.getElementById(a.dataset.t));
     if (bad.length) fail('目录锚点失效 ' + bad.length);
-    else pass('目录 6 链接均指向有效分区');
+    else pass('目录 ' + groups.length + ' 链接均指向有效分区');
   }
   // 4. 英文词条可点（人名地名组除外，专名无词典释义）
   const parsed = JSON.parse(words);
@@ -66,13 +67,17 @@ function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
   // 括号注释已从 key 去掉（显示保留）
   const ai = [...ws].find(x => x.textContent.includes('artificial intelligence'));
   if (ai && /\(/.test(ai.dataset.w)) fail('词组 key 仍含括号'); else pass('词组 key 已去括号注释');
-  // 5. 目录折叠：默认展开，点 summary 后 open 翻转（jsdom 对 details toggle 支持有限，直接校验初始态 + 结构）
-  const dir = d.getElementById('rcDir');
-  if (!dir) fail('目录卡片缺失');
-  else if (!dir.hasAttribute('open')) fail('目录默认应展开');
-  else pass('目录默认展开');
-  const toggle = d.querySelector('.rc-dir-toggle');
-  if (!toggle || toggle.textContent.trim() !== '收起') fail('右侧收起按钮文案'); else pass('收起按钮文案正确');
+  // 5. 左侧目录 wrapper + 折叠按钮 + 竖条抽屉 tab
+  const toc = d.getElementById('rcToc');
+  const tocList = d.getElementById('rcTocList');
+  const foldBtn = d.getElementById('rcTocFold');
+  const tab = d.getElementById('rcTocTab');
+  const mask = d.getElementById('rcTocMask');
+  if (!toc || !tocList || !foldBtn || !tab || !mask) fail('左侧目录骨架缺失');
+  else pass('左侧目录骨架完整');
+  if (!/wr-toc/.test(toc.className)) fail('目录未复用 wr-toc 样式类');
+  else if (foldBtn.textContent.trim() !== '‹ 收起') fail('收起按钮文案: ' + foldBtn.textContent.trim());
+  else pass('目录复用大作文样式 + 收起按钮正确');
   // 6. 无旧内容
   if (d.getElementById('rcBig') || d.getElementById('rcSmall')) fail('旧视图容器残留');
   else pass('无旧速记视图');

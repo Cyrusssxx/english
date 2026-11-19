@@ -34,15 +34,15 @@ pass('HTML 资源引用齐全');
 if (html.includes('rcBig') || html.includes('rcSmall') || html.includes('30 天') || html.includes('句池'))
   fail('HTML 仍残留旧速记内容');
 else pass('旧速记内容已从 HTML 移除');
-if (!html.includes('rc-dir')) fail('缺目录卡片 rc-dir');
-else pass('目录卡片存在');
+if (!html.includes('wr-toc') || !html.includes('rcTocList')) fail('缺左侧目录 wr-toc 骨架');
+else pass('左侧目录骨架存在');
 // 导航 10 项
 const navCount = (html.match(/class="nav-link(?: active)?"/g) || []).length;
 if (navCount !== 10) fail('导航项数量 = ' + navCount); else pass('导航 10 项');
 
 // 3. JS 关键函数存在 + 无旧逻辑残留
 const js = fs.readFileSync(path.join(PWA, 'js/recite.js'), 'utf8');
-['rcRender', 'rcTocBind', 'rcWordPop', 'toggleDark', 'writing_words.json'].forEach(s => {
+['rcRender', 'rcTocBuild', 'rcTocToggleFold', 'rcTocOpen', 'rcWordPop', 'toggleDark', 'writing_words.json'].forEach(s => {
   if (!js.includes(s)) fail('JS 缺 ' + s);
 });
 // 剥离注释后再判断，避免"已移除"的说明注释造成误报
@@ -58,7 +58,7 @@ else pass('SW 已缓存词库数据');
 
 // 5. CSS 新类
 const css = fs.readFileSync(path.join(PWA, 'css/style.css'), 'utf8');
-['.rc-dir', '.rc-dir-h', '.rc-dir-toggle', '.rcw-grid', '.rcw-row'].forEach(s => {
+['.wr-toc', '.wr-toc-fold', '.wr-toc-list', '.wr-layout', '.rcw-grid', '.rcw-row'].forEach(s => {
   if (!css.includes(s)) fail('CSS 缺 ' + s);
 });
 pass('CSS 词库样式齐全');

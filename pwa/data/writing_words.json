@@ -234,6 +234,96 @@
      "en": "consumer behaviour",
      "cn": "消费者行为",
      "tag": "真"
+    },
+    {
+     "en": "companionship",
+     "cn": "陪伴（「陪着」不等于「陪伴」）",
+     "tag": "题"
+    },
+    {
+     "en": "mental and physical health",
+     "cn": "身心健康",
+     "tag": "题"
+    },
+    {
+     "en": "excessive packaging",
+     "cn": "过度包装",
+     "tag": "题"
+    },
+    {
+     "en": "online information",
+     "cn": "网络信息",
+     "tag": "题"
+    },
+    {
+     "en": "continuing education",
+     "cn": "继续教育",
+     "tag": "题"
+    },
+    {
+     "en": "new energy vehicles",
+     "cn": "新能源汽车",
+     "tag": "题"
+    },
+    {
+     "en": "transport choices",
+     "cn": "出行选择",
+     "tag": "题"
+    },
+    {
+     "en": "convenience store",
+     "cn": "便利店",
+     "tag": "题"
+    },
+    {
+     "en": "accessible facilities",
+     "cn": "无障碍设施",
+     "tag": "题"
+    },
+    {
+     "en": "first-aid knowledge",
+     "cn": "急救知识",
+     "tag": "题"
+    },
+    {
+     "en": "returning students",
+     "cn": "留学回国人员",
+     "tag": "题"
+    },
+    {
+     "en": "life expectancy",
+     "cn": "平均寿命",
+     "tag": "题"
+    },
+    {
+     "en": "aging population",
+     "cn": "人口老龄化",
+     "tag": "题"
+    },
+    {
+     "en": "online and offline sales",
+     "cn": "线上与线下销售",
+     "tag": "题"
+    },
+    {
+     "en": "traditional Chinese art",
+     "cn": "中国传统艺术",
+     "tag": "题"
+    },
+    {
+     "en": "career prospects",
+     "cn": "职业前景",
+     "tag": "题"
+    },
+    {
+     "en": "tourism development",
+     "cn": "旅游发展",
+     "tag": "题"
+    },
+    {
+     "en": "food waste",
+     "cn": "食物浪费",
+     "tag": "题"
     }
    ]
   },
@@ -362,6 +452,106 @@
      "en": "enjoy a growing popularity",
      "cn": "日益流行",
      "tag": "范"
+    },
+    {
+     "en": "bear in mind that",
+     "cn": "牢记……（第三段起手）",
+     "tag": "范2"
+    },
+    {
+     "en": "be of great importance to",
+     "cn": "对……至关重要",
+     "tag": "范2"
+    },
+    {
+     "en": "There is no doubt that",
+     "cn": "毫无疑问",
+     "tag": "范2"
+    },
+    {
+     "en": "several factors contribute to",
+     "cn": "若干因素促成了……",
+     "tag": "范2"
+    },
+    {
+     "en": "a variety of reasons can be cited",
+     "cn": "可以列举多种原因",
+     "tag": "范2"
+    },
+    {
+     "en": "cannot ignore the fact that",
+     "cn": "不能忽视……的事实",
+     "tag": "范2"
+    },
+    {
+     "en": "It is not difficult to draw the conclusion that",
+     "cn": "不难得出结论",
+     "tag": "范2"
+    },
+    {
+     "en": "Only through the joint efforts of",
+     "cn": "只有通过……的共同努力",
+     "tag": "范2"
+    },
+    {
+     "en": "within our reach",
+     "cn": "指日可待；够得着",
+     "tag": "范2"
+    },
+    {
+     "en": "place pressure on",
+     "cn": "给……带来压力",
+     "tag": "范2"
+    },
+    {
+     "en": "shed light on",
+     "cn": "阐明；揭示",
+     "tag": "范2"
+    },
+    {
+     "en": "strike us as",
+     "cn": "让我们觉得……",
+     "tag": "范2"
+    },
+    {
+     "en": "by no means",
+     "cn": "绝不（置首倒装）",
+     "tag": "范2"
+    },
+    {
+     "en": "make a difference",
+     "cn": "起作用；有影响",
+     "tag": "范2"
+    },
+    {
+     "en": "room to grow",
+     "cn": "改进/增长空间",
+     "tag": "范2"
+    },
+    {
+     "en": "top the list",
+     "cn": "位居首位",
+     "tag": "范2"
+    },
+    {
+     "en": "be well qualified for",
+     "cn": "胜任……",
+     "tag": "范2"
+    },
+    {
+     "en": "have a good command of",
+     "cn": "精通……",
+     "tag": "范2"
+    },
+    {
+     "en": "place an order",
+     "cn": "下单",
+     "tag": "范2"
+    },
+    {
+     "en": "take ... into account",
+     "cn": "把……考虑在内",
+     "tag": "范2"
     }
    ]
   },
@@ -759,6 +949,184 @@
      "en": "Tsinghua University",
      "cn": "清华大学",
      "tag": "专名"
+    },
+    {
+     "en": "Michael",
+     "cn": "迈克尔（收信人）",
+     "tag": "称呼"
+    },
+    {
+     "en": "Jane",
+     "cn": "简（收信人）",
+     "tag": "称呼"
+    },
+    {
+     "en": "Alex",
+     "cn": "亚历克斯（收信人）",
+     "tag": "称呼"
+    },
+    {
+     "en": "James",
+     "cn": "詹姆斯（收信人）",
+     "tag": "称呼"
+    },
+    {
+     "en": "Professor Thomas",
+     "cn": "托马斯教授",
+     "tag": "称呼"
+    },
+    {
+     "en": "the Center for Cultural Interchange",
+     "cn": "文化交流中心",
+     "tag": "机构"
+    },
+    {
+     "en": "the Cultural and Tourism Association",
+     "cn": "文化旅游协会",
+     "tag": "机构"
+    },
+    {
+     "en": "ChatGPT",
+     "cn": "聊天机器人（AI 工具名）",
+     "tag": "专名"
+    }
+   ]
+  },
+  {
+   "id": "topics26",
+   "name": "押题话题 · 26 题中英对照",
+   "icon": "📝",
+   "desc": "押题精选 PDF 的 18 道大作文 + 8 道小作文题目，逐题中英对照。看到中文题目要能立刻反应出英文关键词。",
+   "items": [
+    {
+     "en": "the use of AI tools",
+     "cn": "人工智能工具的使用",
+     "tag": "大1"
+    },
+    {
+     "en": "accompanying vs. companionship",
+     "cn": "「陪着」不等于「陪伴」",
+     "tag": "大2"
+    },
+    {
+     "en": "stress and mental health",
+     "cn": "压力与身心健康",
+     "tag": "大3"
+    },
+    {
+     "en": "excessive packaging and green consumption",
+     "cn": "过度包装与绿色消费",
+     "tag": "大4"
+    },
+    {
+     "en": "online information and rational judgment",
+     "cn": "网络信息与理性辨别",
+     "tag": "大5"
+    },
+    {
+     "en": "purposes of continuing education for working adults",
+     "cn": "在职群体参加继续学习的目的",
+     "tag": "大6"
+    },
+    {
+     "en": "domestic sales of fuel and new energy vehicles",
+     "cn": "燃油车与新能源汽车国内销量",
+     "tag": "大7"
+    },
+    {
+     "en": "residents' daily transport choices",
+     "cn": "居民日常出行选择",
+     "tag": "大8"
+    },
+    {
+     "en": "factors in career choice for graduates",
+     "cn": "大学生择业考虑因素",
+     "tag": "大9"
+    },
+    {
+     "en": "the number of convenience stores nationwide",
+     "cn": "全国便利店门店数量",
+     "tag": "大10"
+    },
+    {
+     "en": "the spread of accessible routes in public places",
+     "cn": "公共场所无障碍通道的普及",
+     "tag": "大11"
+    },
+    {
+     "en": "the spread of first-aid knowledge",
+     "cn": "急救知识的普及",
+     "tag": "大12"
+    },
+    {
+     "en": "returnees developing their careers at home",
+     "cn": "留学人员回国发展",
+     "tag": "大13"
+    },
+    {
+     "en": "life expectancy and population aging",
+     "cn": "中国人平均寿命与人口老龄化",
+     "tag": "大14"
+    },
+    {
+     "en": "online vs. offline ice cream sales",
+     "cn": "冰激凌线上与线下销售占比",
+     "tag": "大15"
+    },
+    {
+     "en": "the inheritance of traditional Chinese art",
+     "cn": "中国传统艺术的传承",
+     "tag": "大16"
+    },
+    {
+     "en": "popularity vs. genuine passion",
+     "cn": "热门与热爱",
+     "tag": "大17"
+    },
+    {
+     "en": "tourism development and environmental protection",
+     "cn": "旅游发展与环境保护",
+     "tag": "大18"
+    },
+    {
+     "en": "peer mentoring program: introduction and reply",
+     "cn": "新生朋辈指导项目：介绍与回复",
+     "tag": "小19"
+    },
+    {
+     "en": "Chinese culture speech: suggestions and arrangements",
+     "cn": "中国文化演讲：建议与安排",
+     "tag": "小20"
+    },
+    {
+     "en": "recommend a learning tool: advice and explanation",
+     "cn": "学习工具推荐：建议与说明",
+     "tag": "小21"
+    },
+    {
+     "en": "pick-up plan change: apology and suggestion",
+     "cn": "接机计划变更：道歉与建议",
+     "tag": "小22"
+    },
+    {
+     "en": "help with overseas study: thanks and invitation",
+     "cn": "海外学习帮助：感谢与邀请",
+     "tag": "小23"
+    },
+    {
+     "en": "volunteer at cultural exchange center: application",
+     "cn": "文化交流中心志愿者：申请与说明",
+     "tag": "小24"
+    },
+    {
+     "en": "volunteer recruitment notice",
+     "cn": "文化旅游协会：志愿者招募通知",
+     "tag": "小25"
+    },
+    {
+     "en": "minutes of meeting: preventing food waste",
+     "cn": "防止食物浪费：会议纪要",
+     "tag": "小26"
     }
    ]
   }

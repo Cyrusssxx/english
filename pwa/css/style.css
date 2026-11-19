@@ -5299,3 +5299,7 @@ html.dark .rcw { color: #7fd4c8; }
     .rc-dir-links a { flex: 0 0 auto; }
     html[data-nav-collapsed="1"] .rc-dir { padding-right: 44px; }
 }
+
+/* ===== 写作词库页：左侧悬浮目录（复用大作文 .wr-toc 骨架，2026-11-19 改） =====
+   .rc-page 原 max-width:1000 在 flex 布局里会与主区争宽，这里对齐 .wr-page。 */
+.wr-layout.rc-layout > .rc-page { max-width: 1080px; }

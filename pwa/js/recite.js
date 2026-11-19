@@ -28,7 +28,7 @@ function rcWordSpan(text, clickable) {
 
 function rcRender() {
     const host = document.getElementById('rcGroups');
-    const links = document.getElementById('rcDirLinks');
+    const links = document.getElementById('rcTocList');
     if (!host || !RC) return;
     const groups = RC.groups || [];
     host.innerHTML = groups.map((g, gi) => {
@@ -46,66 +46,95 @@ function rcRender() {
     }).join('');
     if (links) {
         links.innerHTML = groups.map(g =>
-            `<a href="#rcG_${rcEsc(g.id)}" data-t="rcG_${rcEsc(g.id)}">${rcEsc(g.icon || '')} ${rcEsc(g.name)}</a>`
+            `<a class="lv1" href="#rcG_${rcEsc(g.id)}" data-t="rcG_${rcEsc(g.id)}">${rcEsc(g.icon || '')} ${rcEsc(g.name)}</a>`
         ).join('');
     }
     const foot = document.getElementById('rcFoot');
     if (foot) {
         const n = groups.reduce((s, g) => s + (g.items || []).length, 0);
-        foot.textContent = `共 ${groups.length} 类 · ${n} 条 · 数据源：押题预测 + 历年真题范文 + 模板库`;
+        foot.textContent = `共 ${groups.length} 类 · ${n} 条 · 数据源：押题预测 + 历年真题范文 + 押题精选PDF + 模板库`;
     }
-    rcTocBind();
+    rcTocBuild();
 }
 
-/* ==================== 目录：点击跳转 + 滚动高亮 ==================== */
+/* ==================== 左侧悬浮目录（复用大作文页 .wr-toc 骨架） ==================== */
+const RC_TOC_KEY = 'rc_toc_fold_v1';
+const RC_TOC_NARROW = 1180;
 let RC_LINKS = [];
+
 function rcNavH() {
     const n = document.querySelector('.navbar');
     if (n && n.dataset.collapsed === '1') return 0;
     const h = n ? n.getBoundingClientRect().height : 56;
     return h >= 20 ? h : 56;
 }
-function rcTocBind() {
-    const toc = document.getElementById('rcDirLinks');
-    if (!toc) return;
+
+function rcTocBuild() {
+    const list = document.getElementById('rcTocList');
+    if (!list) return;
     document.documentElement.style.setProperty('--nav-h', rcNavH() + 'px');
-    window.addEventListener('resize', () => document.documentElement.style.setProperty('--nav-h', rcNavH() + 'px'));
-    window.addEventListener('navheightchange', () => document.documentElement.style.setProperty('--nav-h', rcNavH() + 'px'));
-    toc.addEventListener('click', e => {
+    let folded = false;
+    try { folded = localStorage.getItem(RC_TOC_KEY) === '1'; } catch (e) { /* ignore */ }
+    rcTocApplyFold(folded || window.innerWidth <= RC_TOC_NARROW);
+    RC_LINKS = [...list.querySelectorAll('a[data-t]')];
+    list.addEventListener('click', e => {
         const a = e.target.closest && e.target.closest('a[data-t]');
         if (!a) return;
         e.preventDefault();
         const el = document.getElementById(a.dataset.t);
         if (!el) return;
-        const y = el.getBoundingClientRect().top + window.scrollY - rcNavH() - 70;
+        const y = el.getBoundingClientRect().top + window.scrollY - rcNavH() - 12;
         window.scrollTo({ top: y < 0 ? 0 : y, behavior: 'smooth' });
+        if (window.innerWidth <= RC_TOC_NARROW) rcTocClose();
     });
-    RC_LINKS = [...toc.querySelectorAll('a[data-t]')];
     window.addEventListener('scroll', rcSpy, { passive: true });
+    window.addEventListener('resize', () => {
+        document.documentElement.style.setProperty('--nav-h', rcNavH() + 'px');
+        if (window.innerWidth > RC_TOC_NARROW) rcTocClose();
+    });
+    window.addEventListener('navheightchange', () => document.documentElement.style.setProperty('--nav-h', rcNavH() + 'px'));
     rcSpy();
 }
+
+/** 滚动高亮当前分类 */
 function rcSpy() {
-    if (!RC_LINKS.length) return;
-    const top = rcNavH() + 90;
+    const list = document.getElementById('rcTocList');
+    if (!list || !RC_LINKS.length) return;
+    if (document.body.classList.contains('wr-toc-folded') && window.innerWidth > RC_TOC_NARROW) return;
+    const top = rcNavH() + 24;
     let cur = RC_LINKS[0];
-    RC_LINKS.forEach(a => {
+    for (const a of RC_LINKS) {
         const el = document.getElementById(a.dataset.t);
-        if (el && el.getBoundingClientRect().top <= top) cur = a;
-    });
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= top) cur = a; else break;
+    }
     RC_LINKS.forEach(a => a.classList.toggle('on', a === cur));
+    if (cur && list.scrollHeight > list.clientHeight + 4) {
+        const r = cur.getBoundingClientRect(), lr = list.getBoundingClientRect();
+        if (r.top < lr.top || r.bottom > lr.bottom) list.scrollTop += r.top - lr.top - 24;
+    }
 }
 
-/* ==================== 目录折叠：记住用户选择 ==================== */
-const RC_DIR_KEY = 'rc_dir_open_v1';
-function rcDirBind() {
-    const d = document.getElementById('rcDir');
-    if (!d) return;
-    let saved = null;
-    try { saved = localStorage.getItem(RC_DIR_KEY); } catch (e) { /* ignore */ }
-    if (saved === '0') d.open = false;
-    d.addEventListener('toggle', () => {
-        try { localStorage.setItem(RC_DIR_KEY, d.open ? '1' : '0'); } catch (e) { /* ignore */ }
-    });
+function rcTocApplyFold(folded) {
+    document.body.classList.toggle('wr-toc-folded', !!folded);
+    try { localStorage.setItem(RC_TOC_KEY, folded ? '1' : '0'); } catch (e) { /* ignore */ }
+    if (folded && !document.body.classList.contains('wr-toc-open')) rcTocClose();
+}
+function rcTocToggleFold() { rcTocApplyFold(!document.body.classList.contains('wr-toc-folded')); }
+function rcTocOpen() {
+    if (window.innerWidth <= RC_TOC_NARROW) {
+        document.body.classList.add('wr-toc-open');
+        const m = document.getElementById('rcTocMask');
+        if (m) m.hidden = false;
+    } else {
+        rcTocApplyFold(false);
+    }
+    rcSpy();
+}
+function rcTocClose() {
+    document.body.classList.remove('wr-toc-open');
+    const m = document.getElementById('rcTocMask');
+    if (m) m.hidden = true;
 }
 
 /* ==================== 查词弹卡（复用 writing/recite 的 .word-pop） ==================== */
@@ -224,8 +253,8 @@ function rcAnnoBind() {
 
 /* ==================== 启动 ==================== */
 async function rcInit() {
-    rcDirBind();
     rcAnnoBind();
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') rcTocClose(); });
     const s = document.getElementById('darkState');
     if (s && document.documentElement.classList.contains('dark')) s.textContent = '开';
     try {

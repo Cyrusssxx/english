@@ -6,6 +6,7 @@
 - writing_apply.json / small_apply.json 真题范文里的高频实词、书信人名、图表动词
 - 历年真题小作文 directions 里指定的人名（Li Ming / Zhang Wei）
 - 英语二图表作文常用描述词、连接词（教学整理）
+- 27考研英语作文押题精选.pdf（26 道押题话题中英对照）+ ai归来版范文.pdf（26 篇配套范文的高级套语、称呼落款）
 
 结构：groups = [{id,name,icon,desc,items:[{en,cn,tag?}]}]
 """
@@ -77,6 +78,25 @@ groups.append({
         I('museum', '博物馆', '真'),
         I('career choice', '职业选择', '真'),
         I('consumer behaviour', '消费者行为', '真'),
+        # 26 道押题话题核心名词（来自押题精选 PDF）
+        I('companionship', '陪伴（「陪着」不等于「陪伴」）', '题'),
+        I('mental and physical health', '身心健康', '题'),
+        I('excessive packaging', '过度包装', '题'),
+        I('online information', '网络信息', '题'),
+        I('continuing education', '继续教育', '题'),
+        I('new energy vehicles', '新能源汽车', '题'),
+        I('transport choices', '出行选择', '题'),
+        I('convenience store', '便利店', '题'),
+        I('accessible facilities', '无障碍设施', '题'),
+        I('first-aid knowledge', '急救知识', '题'),
+        I('returning students', '留学回国人员', '题'),
+        I('life expectancy', '平均寿命', '题'),
+        I('aging population', '人口老龄化', '题'),
+        I('online and offline sales', '线上与线下销售', '题'),
+        I('traditional Chinese art', '中国传统艺术', '题'),
+        I('career prospects', '职业前景', '题'),
+        I('tourism development', '旅游发展', '题'),
+        I('food waste', '食物浪费', '题'),
     ],
 })
 
@@ -109,6 +129,27 @@ groups.append({
         I('make full use of', '充分利用', '范'),
         I('take effective measures', '采取有效措施', '范'),
         I('enjoy a growing popularity', '日益流行', '范'),
+        # 押题精选配套范文高频套语（标「范2」= 新 PDF 范文）
+        I('bear in mind that', '牢记……（第三段起手）', '范2'),
+        I('be of great importance to', '对……至关重要', '范2'),
+        I('There is no doubt that', '毫无疑问', '范2'),
+        I('several factors contribute to', '若干因素促成了……', '范2'),
+        I('a variety of reasons can be cited', '可以列举多种原因', '范2'),
+        I('cannot ignore the fact that', '不能忽视……的事实', '范2'),
+        I('It is not difficult to draw the conclusion that', '不难得出结论', '范2'),
+        I('Only through the joint efforts of', '只有通过……的共同努力', '范2'),
+        I('within our reach', '指日可待；够得着', '范2'),
+        I('place pressure on', '给……带来压力', '范2'),
+        I('shed light on', '阐明；揭示', '范2'),
+        I('strike us as', '让我们觉得……', '范2'),
+        I('by no means', '绝不（置首倒装）', '范2'),
+        I('make a difference', '起作用；有影响', '范2'),
+        I('room to grow', '改进/增长空间', '范2'),
+        I('top the list', '位居首位', '范2'),
+        I('be well qualified for', '胜任……', '范2'),
+        I('have a good command of', '精通……', '范2'),
+        I('place an order', '下单', '范2'),
+        I('take ... into account', '把……考虑在内', '范2'),
     ],
 })
 
@@ -214,6 +255,49 @@ groups.append({
         I('Project Hope', '希望工程', '专名'),
         I('Peking University', '北京大学', '专名'),
         I('Tsinghua University', '清华大学', '专名'),
+        # 范文/真题常见收信人（称呼用，不是落款）
+        I('Michael', '迈克尔（收信人）', '称呼'),
+        I('Jane', '简（收信人）', '称呼'),
+        I('Alex', '亚历克斯（收信人）', '称呼'),
+        I('James', '詹姆斯（收信人）', '称呼'),
+        I('Professor Thomas', '托马斯教授', '称呼'),
+        I('the Center for Cultural Interchange', '文化交流中心', '机构'),
+        I('the Cultural and Tourism Association', '文化旅游协会', '机构'),
+        I('ChatGPT', '聊天机器人（AI 工具名）', '专名'),
+    ],
+})
+
+# 7. 押题话题 26 题（中英对照，来自押题精选 PDF 的 26 道题目）
+groups.append({
+    'id': 'topics26', 'name': '押题话题 · 26 题中英对照', 'icon': '📝',
+    'desc': '押题精选 PDF 的 18 道大作文 + 8 道小作文题目，逐题中英对照。看到中文题目要能立刻反应出英文关键词。',
+    'items': [
+        I('the use of AI tools', '人工智能工具的使用', '大1'),
+        I('accompanying vs. companionship', '「陪着」不等于「陪伴」', '大2'),
+        I('stress and mental health', '压力与身心健康', '大3'),
+        I('excessive packaging and green consumption', '过度包装与绿色消费', '大4'),
+        I('online information and rational judgment', '网络信息与理性辨别', '大5'),
+        I('purposes of continuing education for working adults', '在职群体参加继续学习的目的', '大6'),
+        I('domestic sales of fuel and new energy vehicles', '燃油车与新能源汽车国内销量', '大7'),
+        I('residents\' daily transport choices', '居民日常出行选择', '大8'),
+        I('factors in career choice for graduates', '大学生择业考虑因素', '大9'),
+        I('the number of convenience stores nationwide', '全国便利店门店数量', '大10'),
+        I('the spread of accessible routes in public places', '公共场所无障碍通道的普及', '大11'),
+        I('the spread of first-aid knowledge', '急救知识的普及', '大12'),
+        I('returnees developing their careers at home', '留学人员回国发展', '大13'),
+        I('life expectancy and population aging', '中国人平均寿命与人口老龄化', '大14'),
+        I('online vs. offline ice cream sales', '冰激凌线上与线下销售占比', '大15'),
+        I('the inheritance of traditional Chinese art', '中国传统艺术的传承', '大16'),
+        I('popularity vs. genuine passion', '热门与热爱', '大17'),
+        I('tourism development and environmental protection', '旅游发展与环境保护', '大18'),
+        I('peer mentoring program: introduction and reply', '新生朋辈指导项目：介绍与回复', '小19'),
+        I('Chinese culture speech: suggestions and arrangements', '中国文化演讲：建议与安排', '小20'),
+        I('recommend a learning tool: advice and explanation', '学习工具推荐：建议与说明', '小21'),
+        I('pick-up plan change: apology and suggestion', '接机计划变更：道歉与建议', '小22'),
+        I('help with overseas study: thanks and invitation', '海外学习帮助：感谢与邀请', '小23'),
+        I('volunteer at cultural exchange center: application', '文化交流中心志愿者：申请与说明', '小24'),
+        I('volunteer recruitment notice', '文化旅游协会：志愿者招募通知', '小25'),
+        I('minutes of meeting: preventing food waste', '防止食物浪费：会议纪要', '小26'),
     ],
 })
 

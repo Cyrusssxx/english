@@ -36,22 +36,26 @@
         </div>
     </nav>
 
-    <main class="rc-page">
-        <h1 class="rc-title">写作词库速查</h1>
-        <p class="rc-desc" id="rcDesc">把大小作文模板、范文和押题里的高频词整理成一张速查表：主题词、加分短语、图表词、连接词、书信词、人名地名。<b>英文可点查词。</b></p>
+    <div class="wr-layout rc-layout">
+        <!-- 左侧悬浮目录：复用大作文页 .wr-toc 骨架，样式一致 -->
+        <aside class="wr-toc" id="rcToc" aria-label="页面目录">
+            <div class="wr-toc-head">
+                <span class="wr-toc-title">目录</span>
+                <button type="button" class="wr-toc-fold" id="rcTocFold" onclick="rcTocToggleFold()" title="收起目录">‹ 收起</button>
+            </div>
+            <nav class="wr-toc-list" id="rcTocList"></nav>
+        </aside>
+        <button type="button" class="wr-toc-tab" id="rcTocTab" onclick="rcTocOpen()" title="展开目录">目录</button>
+        <div class="wr-toc-mask" id="rcTocMask" onclick="rcTocClose()" hidden></div>
 
-        <!-- 目录：单个可折叠卡片。summary 是「目录」标题 + 右侧「‹ 收起」按钮（见截图）。 -->
-        <details class="rc-dir" id="rcDir" open>
-            <summary class="rc-dir-h">
-                <span class="rc-dir-title">目录</span>
-                <span class="rc-dir-toggle" aria-hidden="true">收起</span>
-            </summary>
-            <nav class="rc-dir-links" id="rcDirLinks" aria-label="词库目录"></nav>
-        </details>
+        <main class="wr-page rc-page">
+            <h1 class="rc-title">写作词库速查</h1>
+            <p class="rc-desc" id="rcDesc">把大小作文模板、范文和押题里的高频词整理成一张速查表：主题词、加分短语、图表词、连接词、书信词、人名地名。<b>英文可点查词。</b></p>
 
-        <div id="rcGroups"></div>
-        <p class="rc-foot" id="rcFoot"></p>
-    </main>
+            <div id="rcGroups"></div>
+            <p class="rc-foot" id="rcFoot"></p>
+        </main>
+    </div>
 
     <script src="js/dict.js"></script>
     <script src="js/recite.js"></script>
