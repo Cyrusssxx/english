@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>27押题作文 · 26题 - 英语真题精翻</title>
+    <title>作文押题 26 篇 · 英语二</title>
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#0d9488">
     <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
@@ -38,8 +38,7 @@
     </nav>
 
     <div class="wr-layout yt-layout">
-        <!-- 左侧悬浮目录：复用大作文页 .wr-toc 骨架 -->
-        <aside class="wr-toc" id="ytToc" aria-label="页面目录">
+        <aside class="wr-toc" id="ytToc" aria-label="题型目录">
             <div class="wr-toc-head">
                 <span class="wr-toc-title">目录</span>
                 <button type="button" class="wr-toc-fold" id="ytTocFold" onclick="ytTocToggleFold()" title="收起目录">‹ 收起</button>
@@ -50,15 +49,61 @@
         <div class="wr-toc-mask" id="ytTocMask" onclick="ytTocClose()" hidden></div>
 
         <main class="wr-page yt-page">
-            <h1 class="wr-title" id="ytTitle">27 考研作文押题 · 26 题</h1>
-            <p class="wr-desc" id="ytDesc">26 道押题原题图 + 配套范文。按「单图表 → 小作文 → 其它图表 → 图画」排列；每组默认收起，点开题目看原图与范文。</p>
-            <div class="yt-toolbar">
-                <button type="button" class="wr-exp-btn" id="ytExpandAll" onclick="ytToggleAll()">展开全部</button>
-                <span class="yt-tip" id="ytTip"></span>
+            <header class="yt-hero">
+                <p class="yt-kicker">2027 英语二 · 冲刺押题</p>
+                <h1 class="yt-h1">作文押题 26 篇</h1>
+                <p class="yt-sub">先看原题图自己写一遍，再对照配套范文。<b>图只做缩略</b>，点开看大图与全文。</p>
+                <div class="yt-stats" id="ytStats"></div>
+            </header>
+
+            <div class="yt-bar" id="ytBar">
+                <div class="yt-search">
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12.8 12.8 L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    <input type="search" id="ytSearch" placeholder="搜题号或标题，如 17 / 绿色 / 邀请" autocomplete="off">
+                </div>
+                <button type="button" class="yt-btn" id="ytToggleAll">展开全部</button>
             </div>
-            <div id="ytGroups"></div>
-            <p class="yt-foot" id="ytFoot"></p>
+
+            <div id="ytGroups" class="yt-groups"></div>
+            <p class="yt-empty" id="ytEmpty" hidden>没有匹配的题目，换个关键词试试。</p>
         </main>
+    </div>
+
+    <!-- 阅读弹层：左原图 / 右范文；窄屏用上方 tab 切换 -->
+    <div class="yt-modal" id="ytModal" hidden>
+        <div class="yt-mask" data-close></div>
+        <div class="yt-box" role="dialog" aria-modal="true" aria-labelledby="ytMTitle">
+            <header class="yt-mh">
+                <div class="yt-mh-l">
+                    <span class="yt-no" id="ytMNo">01</span>
+                    <div class="yt-mh-txt">
+                        <h3 id="ytMTitle">题目</h3>
+                        <p id="ytMSub"></p>
+                    </div>
+                </div>
+                <div class="yt-tabs" id="ytMTabs">
+                    <button type="button" data-pane="img" class="on">原题图</button>
+                    <button type="button" data-pane="txt">范文</button>
+                </div>
+                <button type="button" class="yt-x" data-close aria-label="关闭">✕</button>
+            </header>
+            <div class="yt-mbody" id="ytMBody">
+                <div class="yt-pane yt-pane-img" data-pane="img">
+                    <a class="yt-mzoom" id="ytMOpen" target="_blank" rel="noopener" title="新标签页查看原图">
+                        <img id="ytMImg" alt="">
+                    </a>
+                    <span class="yt-mzoom-tip">点击图片在新标签页看原图</span>
+                </div>
+                <div class="yt-pane yt-pane-txt" data-pane="txt">
+                    <div class="yt-essay" id="ytMEssay"></div>
+                </div>
+            </div>
+            <footer class="yt-mf">
+                <button type="button" id="ytPrev">← 上一题</button>
+                <span class="yt-mf-c"><span id="ytMCnt">1 / 26</span><span class="yt-kb">← → 可切换</span></span>
+                <button type="button" id="ytNext">下一题 →</button>
+            </footer>
+        </div>
     </div>
 
     <script src="js/common.js"></script>

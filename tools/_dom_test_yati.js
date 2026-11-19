@@ -20,9 +20,8 @@ window.fetch = url => {
 };
 window.document.querySelector('.navbar').dataset.collapsed = '0';
 
-const js = fs.readFileSync(path.join(PWA, 'js/yati.js'), 'utf8');
 try { window.eval(fs.readFileSync(path.join(PWA, 'js/common.js'), 'utf8')); } catch (e) { /* common 可能依赖 DOM API */ }
-try { window.eval(js); } catch (e) { fail('脚本执行异常: ' + e.message + '\n' + e.stack); }
+try { window.eval(fs.readFileSync(path.join(PWA, 'js/yati.js'), 'utf8')); } catch (e) { fail('脚本执行异常: ' + e.message + '\n' + e.stack); }
 
 const d = window.document;
 const wait = ms => new Promise(r => setTimeout(r, ms));
@@ -31,30 +30,45 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   await wait(200);
   const data = JSON.parse(yati);
   const total = data.groups.reduce((s, g) => s + g.items.length, 0);
-  // 1. 分组与卡片
-  const groups = d.querySelectorAll('.yt-group');
-  if (groups.length !== data.groups.length) fail('分组数 ' + groups.length + ' != ' + data.groups.length);
-  else pass('分组 ' + groups.length + ' 个');
-  const cards = d.querySelectorAll('details.yt-card');
+
+  // 1. 分组
+  const grps = [...d.querySelectorAll('.yt-grp')];
+  if (grps.length !== data.groups.length) fail('分组数 ' + grps.length + ' != ' + data.groups.length);
+  else pass('分组 ' + grps.length + ' 个');
+
+  // 2. 分组顺序（用户要求：单图表→小作文→其它图表→图画）
+  const names = grps.map(g => g.querySelector('.yt-grp-name').textContent.trim());
+  const expect = ['单图表', '小作文', '图画+图表', '双图表', '单图画', '双图画'];
+  if (JSON.stringify(names) !== JSON.stringify(expect)) fail('分组顺序 ' + JSON.stringify(names));
+  else pass('分组顺序正确: ' + expect.join(' → '));
+
+  // 3. 默认全部收起
+  const openedGrp = grps.filter(g => g.open).length;
+  if (openedGrp) fail('默认展开的分组数 ' + openedGrp);
+  else pass('6 组默认全部收起');
+
+  // 4. 卡片
+  const cards = [...d.querySelectorAll('.yt-card')];
   if (cards.length !== total) fail('题卡数 ' + cards.length + ' != ' + total);
   else pass('题卡 ' + total + ' 张');
-  // 2. 分组顺序（用户要求）
-  const order = [...groups].map(g => g.querySelector('.yt-group-h').textContent.replace(/\d|题|\s/g, '').trim());
-  const expect = ['单图表', '小作文', '图画+图表', '双图表', '单图画', '双图画'];
-  if (JSON.stringify(order) !== JSON.stringify(expect)) fail('分组顺序 ' + JSON.stringify(order));
-  else pass('分组顺序正确: ' + expect.join(' → '));
-  // 3. 默认全部收起
-  const opened = [...cards].filter(c => c.open).length;
-  if (opened) fail('默认展开题卡数 ' + opened);
-  else pass('26 题卡默认全部收起');
-  // 4. 图片与范文
-  const imgs = d.querySelectorAll('.yt-fig img[data-src]');
-  if (imgs.length !== total) fail('图片数 ' + imgs.length);
-  else pass('图片 ' + imgs.length + ' 张（含 src）');
-  const essays = [...d.querySelectorAll('.yt-essay-body')].filter(e => e.textContent.trim().length > 50);
-  if (essays.length !== total) fail('范文数 ' + essays.length);
-  else pass('范文 ' + essays.length + ' 篇（均 >50 字符）');
-  // 5. 左侧目录
+  const noImg = cards.filter(c => !(c.querySelector('.yt-thumb img') || {}).getAttribute || !c.querySelector('.yt-thumb img').getAttribute('src'));
+  if (noImg.length) fail('缺缩略图 ' + noImg.length); else pass('缩略图全部带 src');
+  const noWord = cards.filter(c => !/\d+\s*词/.test(c.querySelector('.yt-words').textContent));
+  if (noWord.length) fail('词数缺失 ' + noWord.length); else pass('每张卡都有词数');
+
+  // 5. 范文：段落块（非 PDF 硬换行）。大作文必须 3 段且每段成句；小作文按书信/通知格式
+  const allItems = data.groups.flatMap(g => g.items);
+  const isLetter = it => /Dear |Notice|Minutes/.test((it.blocks[0] || {}).v || '');
+  const badBlocks = allItems.filter(it => {
+    const ps = (it.blocks || []).filter(b => b.k === 'p');
+    if (/\n/.test(it.blocks.map(b => b.v).join(''))) return true;      // 硬换行残留
+    if (isLetter(it)) return ps.length < 2;
+    return ps.length !== 3 || ps.some(b => b.v.length < 60 || !/[.!?]$/.test(b.v));
+  });
+  if (badBlocks.length) fail('段落块异常 ' + badBlocks.map(b => b.no).join(','));
+  else pass('26 篇范文段落整理正确（大作文均 3 段，无硬换行残留）');
+
+  // 6. 左侧目录
   const toc = d.getElementById('ytToc');
   const links = [...d.querySelectorAll('#ytTocList a[data-t]')];
   if (!toc || !/wr-toc/.test(toc.className)) fail('左侧目录骨架缺失');
@@ -64,7 +78,51 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
     if (bad.length) fail('目录锚点失效 ' + bad.length);
     else pass('左侧目录 ' + links.length + ' 链接均有效');
   }
-  // 6. 导航含押题
+
+  // 7. 搜索过滤
+  const search = d.getElementById('ytSearch');
+  search.value = '绿色';
+  search.dispatchEvent(new window.Event('input'));
+  await wait(200);
+  const visCards = cards.filter(c => !c.hidden);
+  const visGrps = grps.filter(g => !g.hidden);
+  const expectHit = cards.filter(c => c.dataset.k.indexOf('绿色') >= 0).length;
+  if (!expectHit) fail('测试词「绿色」无命中');
+  else if (visCards.length !== expectHit) fail('搜索命中卡片 ' + visCards.length + ' != ' + expectHit);
+  else if (visGrps.some(g => !g.open)) fail('搜索时命中分组未自动展开');
+  else pass(`搜索「绿色」命中 ${expectHit} 题并自动展开分组`);
+  search.value = '';
+  search.dispatchEvent(new window.Event('input'));
+  await wait(200);
+  if (cards.some(c => c.hidden)) fail('清空搜索后卡片仍隐藏');
+  else if (grps.some(g => g.open)) fail('清空搜索后分组未回到收起');
+  else pass('清空搜索：全部恢复且默认收起');
+
+  // 8. 弹层阅读器：打开 → 内容 → 上一题/下一题 → Esc
+  const card17 = cards.find(c => c.dataset.no === '17');
+  card17.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+  const modal = d.getElementById('ytModal');
+  if (modal.hidden) fail('点击卡片未打开弹层');
+  else pass('点击卡片打开弹层');
+  const it17 = data.groups.flatMap(g => g.items).find(i => i.no === 17);
+  if (d.getElementById('ytMTitle').textContent !== it17.title) fail('弹层标题不符');
+  else pass('弹层标题 = ' + it17.title);
+  if (d.getElementById('ytMImg').getAttribute('src') !== it17.img) fail('弹层图片不符');
+  else pass('弹层图片与数据一致');
+  const ps = d.querySelectorAll('#ytMEssay p');
+  const expectP = it17.blocks.filter(b => b.k === 'p').length;
+  if (ps.length !== it17.blocks.length) fail('弹层段落数 ' + ps.length + ' != ' + it17.blocks.length);
+  else pass(`弹层范文 ${ps.length} 段（其中正文 ${expectP} 段）`);
+  if (/^\s*\d+\s*\/\s*26/.test(d.getElementById('ytMCnt').textContent) === false) fail('计数显示 ' + d.getElementById('ytMCnt').textContent);
+  else pass('计数器 ' + d.getElementById('ytMCnt').textContent);
+  d.getElementById('ytNext').dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+  if (d.getElementById('ytMTitle').textContent !== data.groups.flatMap(g => g.items).find(i => i.no === 18).title) fail('下一题跳转错误');
+  else pass('下一题 → 第 18 题');
+  d.getElementById('ytPrev').dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+  d.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape' }));
+  if (!modal.hidden) fail('Esc 未关闭弹层'); else pass('Esc 关闭弹层');
+
+  // 9. 导航
   const navYati = d.querySelector('.nav-link[href="yati.html"]');
   if (!navYati || !navYati.classList.contains('active')) fail('顶栏押题入口缺失/未高亮');
   else pass('顶栏押题入口存在且当前页高亮');
