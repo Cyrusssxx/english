@@ -301,6 +301,65 @@ groups.append({
     ],
 })
 
+# ============================================================
+# 高频前置：按「范文里反复出现 / 写作最常用的词」把每组内的词条往前排。
+# 这里是稳定排序：表里列出的按出现顺序置顶，其余保持原相对顺序。
+# topics26 组保持题目原序（大1..大18/小19..小26），不参与重排。
+# 说明：rank = 在下面列表中的下标；不在列表 = 9999（保持原序）。
+# ============================================================
+HIGH_FREQ = {
+    'topic': [
+        'artificial intelligence (AI)', 'online learning', 'traditional culture',
+        'cultural heritage', 'cultural confidence', 'green consumption',
+        'environmental awareness', 'physical exercise', 'career choice',
+        'educational resources', 'public transport', 'low-carbon lifestyle',
+        'companionship', 'life expectancy', 'excessive packaging',
+    ],
+    'phrase': [
+        'bear in mind that', 'be of great importance to', 'first and foremost',
+        'There is no doubt that', 'cannot ignore the fact that',
+        'several factors contribute to', 'play a vital role in',
+        'attach great importance to', 'strike a balance between',
+        'Only through the joint efforts of', 'take effective measures',
+        'a variety of reasons can be cited', 'within our reach',
+        'It is not difficult to draw the conclusion that',
+        'gain increasing popularity', 'witness a steady rise',
+        'be attributed to', 'make full use of',
+    ],
+    'chart': [
+        'clearly illustrate', 'account for', 'rose sharply', 'followed by',
+        'respectively', 'bar chart', 'pie chart', 'line chart', 'table',
+        'a steady trend', 'reached a peak', 'fluctuated',
+        'over the same period', 'in contrast', 'the figure for',
+    ],
+    'link': [
+        'first and foremost', 'furthermore', 'moreover', 'therefore',
+        'in conclusion', 'to begin with', 'nevertheless', 'in addition',
+        'overall', 'by contrast', 'as a result', 'admittedly',
+    ],
+    'letter': [
+        'I am writing to', 'look forward to your reply', 'express my gratitude',
+        'be delighted to', 'I would appreciate it if', 'Yours sincerely',
+        'Dear Sir or Madam', 'participate in', 'make a suggestion',
+        'seek your advice', 'sign up for', 'take into consideration',
+    ],
+    'name': [
+        'Li Ming', 'Zhang Wei', 'Beijing', 'China', 'Chinese',
+        'the Spring Festival', 'the Great Wall', 'Peking University',
+    ],
+}
+
+def rank_group(gid, items):
+    table = HIGH_FREQ.get(gid)
+    if not table:
+        return items
+    rank = {en: i for i, en in enumerate(table)}
+    return sorted(items, key=lambda it: rank.get(it['en'], 9999))
+
+for _g in groups:
+    if _g['id'] != 'topics26':
+        _g['items'] = rank_group(_g['id'], _g['items'])
+
 data = {
     'meta': {
         'title': '写作词库速查',

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27押题作文 · 26题 - 英语真题精翻</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <script>document.documentElement.classList.add('wr-zoom');if (localStorage.getItem('darkMode') === '1') document.documentElement.classList.add('dark');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">英二精翻</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">真题文章</a>
+                <a href="study.html" class="nav-link">背单词</a>
+                <a href="en1.html" class="nav-link">英语一阅读</a>
+                <a href="mindmap.html" class="nav-link">方法导图</a>
+                <a href="nearmap.html" class="nav-link">近义词·短语</a>
+                <a href="wordnotes.html" class="nav-link">熟词僻义</a>
+                <a href="writing.html" class="nav-link">大作文</a>
+                <a href="smallwriting.html" class="nav-link">小作文</a>
+                <a href="recite.html" class="nav-link">写作词库</a>
+                <a href="yati.html" class="nav-link active">押题</a>
+                <a href="stats.html" class="nav-link">统计</a>
+            </div>
+            <div class="nav-tools">
+                <button class="nav-switch" id="darkSwitch" onclick="toggleDark()" title="夜间模式：深色主题护眼">
+                    夜间 <span class="switch-state" id="darkState">关</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wr-layout yt-layout">
+        <!-- 左侧悬浮目录：复用大作文页 .wr-toc 骨架 -->
+        <aside class="wr-toc" id="ytToc" aria-label="页面目录">
+            <div class="wr-toc-head">
+                <span class="wr-toc-title">目录</span>
+                <button type="button" class="wr-toc-fold" id="ytTocFold" onclick="ytTocToggleFold()" title="收起目录">‹ 收起</button>
+            </div>
+            <nav class="wr-toc-list" id="ytTocList"></nav>
+        </aside>
+        <button type="button" class="wr-toc-tab" id="ytTocTab" onclick="ytTocOpen()" title="展开目录">目录</button>
+        <div class="wr-toc-mask" id="ytTocMask" onclick="ytTocClose()" hidden></div>
+
+        <main class="wr-page yt-page">
+            <h1 class="wr-title" id="ytTitle">27 考研作文押题 · 26 题</h1>
+            <p class="wr-desc" id="ytDesc">26 道押题原题图 + 配套范文。按「单图表 → 小作文 → 其它图表 → 图画」排列；每组默认收起，点开题目看原图与范文。</p>
+            <div class="yt-toolbar">
+                <button type="button" class="wr-exp-btn" id="ytExpandAll" onclick="ytToggleAll()">展开全部</button>
+                <span class="yt-tip" id="ytTip"></span>
+            </div>
+            <div id="ytGroups"></div>
+            <p class="yt-foot" id="ytFoot"></p>
+        </main>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/yati.js"></script>
+</body>
+</html>

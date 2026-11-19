@@ -38,7 +38,7 @@ if (!html.includes('wr-toc') || !html.includes('rcTocList')) fail('缺左侧目�
 else pass('左侧目录骨架存在');
 // 导航 10 项
 const navCount = (html.match(/class="nav-link(?: active)?"/g) || []).length;
-if (navCount !== 10) fail('导航项数量 = ' + navCount); else pass('导航 10 项');
+if (navCount !== 11) fail('导航项数量 = ' + navCount); else pass('导航 11 项（含押题）');
 
 // 3. JS 关键函数存在 + 无旧逻辑残留
 const js = fs.readFileSync(path.join(PWA, 'js/recite.js'), 'utf8');

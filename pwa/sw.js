@@ -2,7 +2,7 @@
  * 预缓存全部页面/样式/脚本/题库/图标，安装后完全离线可用。
  * 升级题库或代码后：CACHE_VER 会随资源内容自动变化，客户端自动换新缓存。
  */
-const CACHE_VER = 'en2-dc38dcb3';
+const CACHE_VER = 'en2-86259f3a';
 
 const PRECACHE = [
     'index.html',
@@ -19,6 +19,7 @@ const PRECACHE = [
     'writing.html',
     'smallwriting.html',
     'recite.html',
+    'yati.html',
     'js/mindmap.js',
     'data/mindmap.json',
     'js/nearmap.js',
@@ -46,6 +47,7 @@ const PRECACHE = [
     'js/storage.js',
     'js/study.js',
     'js/wnlex.js',
+    'js/yati.js',
     'data/2007.json',
     'data/2008.json',
     'data/2009.json',
@@ -109,6 +111,7 @@ const PRECACHE = [
     'data/wordnotes_notes.json',
     'data/writing_senses.json',
     'data/writing_words.json',
+    'data/yati.json',
     'data/charts/2010.png',
     'data/charts/2011.png',
     'data/charts/2012.png',
@@ -171,9 +174,27 @@ self.addEventListener('activate', (e) => {
     );
 });
 
-// cache-first：离线优先；缓存未命中走网络（带超时），失败返回 504 而非挂起
+// HTML 导航请求：network-first（改版后刷新即见，不再被旧缓存挡住）；离线回退缓存，再失败返回 504
+// 其它静态资源（js/css/json/图片）：cache-first，离线优先、缓存未命中走网络
 self.addEventListener('fetch', (e) => {
     if (e.request.method !== 'GET') return;
+    const isNav = e.request.mode === 'navigate' ||
+        (e.request.headers.get('accept') || '').includes('text/html');
+    if (isNav) {
+        e.respondWith(
+            fetchTO(e.request, 8000)
+                .then(resp => {
+                    if (resp.ok && new URL(e.request.url).origin === location.origin) {
+                        const clone = resp.clone();
+                        caches.open(CACHE_VER).then(cache => cache.put(e.request, clone));
+                    }
+                    return resp;
+                })
+                .catch(() => caches.match(e.request, { ignoreSearch: true })
+                    .then(hit => hit || new Response('', { status: 504, statusText: 'Gateway Timeout' })))
+        );
+        return;
+    }
     e.respondWith(
         caches.match(e.request, { ignoreSearch: true }).then(hit => {
             if (hit) return hit;

@@ -5303,3 +5303,64 @@ html.dark .rcw { color: #7fd4c8; }
 /* ===== 写作词库页：左侧悬浮目录（复用大作文 .wr-toc 骨架，2026-11-19 改） =====
    .rc-page 原 max-width:1000 在 flex 布局里会与主区争宽，这里对齐 .wr-page。 */
 .wr-layout.rc-layout > .rc-page { max-width: 1080px; }
+
+/* ===== 押题页 yati.html：左侧目录复用 .wr-toc，主体 26 题图 + 范文 ===== */
+.wr-layout.yt-layout > .yt-page { max-width: 1080px; }
+.yt-toolbar { display: flex; align-items: center; gap: 12px; margin: 0 0 18px; }
+.yt-tip { font-size: .8rem; color: var(--text-light); }
+.yt-group { margin-bottom: 28px; scroll-margin-top: calc(var(--nav-h, 56px) + 12px); }
+.yt-group-h { display: flex; align-items: center; gap: 9px; }
+.yt-group-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 7px;
+    background: var(--primary); color: #fff; font-size: .82rem; font-weight: 700;
+}
+.yt-group-n { font-size: .76rem; font-weight: 600; color: var(--primary); background: var(--primary-soft); border-radius: 999px; padding: 1px 9px; }
+.yt-toc-n { font-size: .72rem; color: var(--text-light); margin-left: 3px; }
+.yt-cards { display: flex; flex-direction: column; gap: 8px; }
+.yt-card {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
+    box-shadow: var(--shadow); overflow: hidden;
+}
+.yt-card-h {
+    display: flex; align-items: center; gap: 10px; cursor: pointer; list-style: none;
+    padding: 11px 14px; user-select: none; transition: background .15s;
+}
+.yt-card-h::-webkit-details-marker { display: none; }
+.yt-card-h:hover { background: var(--primary-soft); }
+.yt-no {
+    flex: 0 0 auto; font-size: .78rem; font-weight: 700; color: var(--primary);
+    background: var(--primary-soft); border-radius: 6px; padding: 2px 8px;
+}
+.yt-card-title { font-weight: 700; color: var(--text); font-size: .95rem; }
+.yt-src { font-size: .76rem; color: var(--text-light); margin-left: auto; }
+.yt-card-arrow { color: var(--text-light); font-size: .85rem; transition: transform .15s; }
+.yt-card[open] .yt-card-arrow { transform: rotate(180deg); }
+.yt-card-body { padding: 0 14px 14px; border-top: 1px solid var(--border); }
+.yt-fig { margin: 12px 0 0; }
+.yt-fig a { display: block; }
+.yt-fig img {
+    display: block; max-width: 100%; width: auto; margin: 0 auto;
+    border: 1px solid var(--border); border-radius: 8px; background: #fff;
+}
+.yt-fig figcaption { text-align: center; font-size: .76rem; color: var(--text-light); margin-top: 6px; }
+.yt-essay { margin-top: 12px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.yt-essay-h {
+    cursor: pointer; list-style: none; padding: 9px 12px; font-weight: 700; color: var(--primary);
+    background: var(--bg); transition: background .15s;
+}
+.yt-essay-h::-webkit-details-marker { display: none; }
+.yt-essay-h:hover { background: var(--primary-soft); }
+.yt-essay-h span { font-weight: 400; font-size: .78rem; color: var(--text-light); }
+.yt-essay-body {
+    margin: 0; padding: 14px; white-space: pre-wrap; word-break: break-word;
+    font-family: inherit; font-size: .92rem; line-height: 1.85; color: var(--text);
+    background: var(--card-bg);
+}
+.yt-foot { text-align: center; color: var(--text-light); font-size: .78rem; margin-top: 26px; }
+@media (max-width: 640px) {
+    .yt-card-h { flex-wrap: wrap; gap: 6px 9px; padding: 10px; }
+    .yt-src { margin-left: 0; width: 100%; }
+    .yt-card-title { font-size: .9rem; }
+    .yt-essay-body { font-size: .88rem; padding: 11px; }
+}
