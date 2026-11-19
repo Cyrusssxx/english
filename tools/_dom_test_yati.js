@@ -47,12 +47,31 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   if (openedGrp) fail('默认展开的分组数 ' + openedGrp);
   else pass('6 组默认全部收起');
 
-  // 4. 卡片
+  // 4. 按需加载：收起状态整页 0 张图请求，展开哪组才载哪组
   const cards = [...d.querySelectorAll('.yt-card')];
   if (cards.length !== total) fail('题卡数 ' + cards.length + ' != ' + total);
   else pass('题卡 ' + total + ' 张');
-  const noImg = cards.filter(c => !(c.querySelector('.yt-thumb img') || {}).getAttribute || !c.querySelector('.yt-thumb img').getAttribute('src'));
-  if (noImg.length) fail('缺缩略图 ' + noImg.length); else pass('缩略图全部带 src');
+  const imgs = [...d.querySelectorAll('.yt-thumb img')];
+  const withSrc = imgs.filter(i => i.getAttribute('src'));
+  const withData = imgs.filter(i => i.getAttribute('data-src'));
+  if (withSrc.length) fail('初始就有 ' + withSrc.length + ' 张图发请求（应 0）');
+  else if (withData.length !== total) fail('data-src 覆盖 ' + withData.length + ' != ' + total);
+  else pass('初始 0 张图请求，' + total + ' 张全部待加载（data-src）');
+
+  const g0 = grps[0];
+  g0.open = true;
+  window.ytActivateGroup(g0);
+  await wait(60);
+  const g0src = [...g0.querySelectorAll('.yt-thumb img')].filter(i => i.getAttribute('src'));
+  const otherSrc = grps.slice(1).flatMap(g => [...g.querySelectorAll('.yt-thumb img')]).filter(i => i.getAttribute('src'));
+  if (g0src.length !== g0src.length || !g0src.length) fail('展开组未加载图片');
+  else if (otherSrc.length) fail('未展开组也加载了 ' + otherSrc.length + ' 张');
+  else pass(`按需加载：展开「${names[0]}」只载该组 ${g0src.length} 张，其余 ${total - g0src.length} 张未请求`);
+  g0.open = false;
+
+  const enCards = cards.filter(c => c.querySelector('.yt-card-en'));
+  if (enCards.length !== total) fail('英文题名卡片数 ' + enCards.length + ' != ' + total);
+  else pass('每张卡都带英文题名');
   const noWord = cards.filter(c => !/\d+\s*词/.test(c.querySelector('.yt-words').textContent));
   if (noWord.length) fail('词数缺失 ' + noWord.length); else pass('每张卡都有词数');
 
@@ -109,7 +128,12 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   else pass('弹层标题 = ' + it17.title);
   if (d.getElementById('ytMImg').getAttribute('src') !== it17.img) fail('弹层图片不符');
   else pass('弹层图片与数据一致');
-  const ps = d.querySelectorAll('#ytMEssay p');
+  if (d.getElementById('ytMEn').textContent !== it17.en) fail('弹层英文题名不符: ' + d.getElementById('ytMEn').textContent);
+  else pass('弹层英文题名 = ' + it17.en);
+  const noteEls = d.querySelectorAll('.yt-notes .yt-note');
+  if (noteEls.length !== it17.notes.length) fail('图注对照条数 ' + noteEls.length + ' != ' + it17.notes.length);
+  else pass(`图内中文 → 英文对照 ${noteEls.length} 条`);
+  const ps = d.querySelectorAll('#ytMEssay > p');
   const expectP = it17.blocks.filter(b => b.k === 'p').length;
   if (ps.length !== it17.blocks.length) fail('弹层段落数 ' + ps.length + ' != ' + it17.blocks.length);
   else pass(`弹层范文 ${ps.length} 段（其中正文 ${expectP} 段）`);

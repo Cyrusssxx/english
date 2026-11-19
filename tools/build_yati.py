@@ -20,6 +20,63 @@ os.makedirs(IMGDIR, exist_ok=True)
 QPDF = r"E:\夸克\Download\27考研英语作文押题精选.pdf"
 FPDF = r"E:\夸克\Download\ai归来版范文.pdf"
 
+# ---------- 0) 英文题名 + 图内中文标注的英文写法（人工整理，写作时可直接套用） ----------
+# 英文题名与写作词库 topics26 组保持一致口径（可作首段点题短语）。
+TITLE_EN = {
+    1: 'the use of AI tools',
+    2: '"staying around" vs. "companionship"',
+    3: 'stress and physical and mental health',
+    4: 'over-packaging and green consumption',
+    5: 'online information and rational judgement',
+    6: 'purposes of continuing education among employees',
+    7: 'domestic sales of fuel and new energy vehicles',
+    8: "residents' daily travel choices",
+    9: 'factors in college students\' career choices',
+    10: 'the number of convenience stores nationwide',
+    11: 'barrier-free passages in public places',
+    12: 'the popularisation of first-aid knowledge',
+    13: 'overseas returnees developing their careers at home',
+    14: 'average life expectancy and population ageing',
+    15: 'online and offline ice cream sales',
+    16: 'the inheritance of traditional Chinese art',
+    17: 'popularity vs. genuine passion',
+    18: 'tourism development and environmental protection',
+    19: 'a peer mentoring programme: introduction and reply',
+    20: 'a lecture on Chinese culture: suggestions and arrangements',
+    21: 'recommending a study tool: advice and explanation',
+    22: 'a change of pick-up plan: apology and suggestion',
+    23: 'help with overseas study: thanks and invitation',
+    24: 'volunteer application to the cultural exchange centre',
+    25: 'volunteers wanted: notice from the tourism association',
+    26: 'minutes of a meeting on reducing food waste',
+}
+
+# 图内的中文标注（人物对白 / 图注 / 招牌），逐条给「能直接写进作文」的英文。
+# 空白：图里没有中文标注（纯图表）。
+NOTES = {
+    1: [('AI 太好用了！', 'AI is such a great help!'),
+        ('答案已生成', 'the answer has been generated'),
+        ('作业「已完成」', 'homework already "finished"')],
+    2: [('爸爸，你在听我说话吗？', 'Dad, are you listening to me?'),
+        ('「陪着」不等于「陪伴」', '"Staying around" is not companionship.')],
+    3: [('压力（墙上海报）', 'a poster reading "pressure"')],
+    4: [('买个礼物需要这么多包装？', 'Does one gift really need all this packaging?')],
+    5: [('网络信息', 'online information'),
+        ('真 / 假（散落标签）', 'labels reading "true" and "false"'),
+        ('诚信：网络信息真假难辨', 'Honesty: online information is hard to tell true from false.')],
+    11: [('2021~2025 年某市公共场所设置无障碍通道的比例', 'the share of public places with barrier-free passages in a city, 2021–2025'),
+         ('注：无障碍通道指坡道、升降设施等便于行动不便者进出的通道',
+          'Barrier-free passages refer to ramps, lifts and other facilities that help people with mobility difficulties get in and out.')],
+    16: [('中国传统艺术的传承', 'the inheritance of traditional Chinese art')],
+    17: [('这个专业需求旺盛，前景广阔！', 'This major is in great demand and has bright prospects!'),
+         ('我十分热爱这个专业。', 'I am truly passionate about this major.'),
+         ('热门新兴岗位', 'popular emerging positions'),
+         ('热门专业报考指南', 'a guide to popular majors'),
+         ('热门 vs 热爱', 'popularity vs. genuine passion')],
+    18: [('以前 / 现在', 'in the past / at present'),
+         ('景区入口', 'the entrance to the scenic area')],
+}
+
 # ---------- 1) 从题目 PDF 提取 26 题：题号、中文名、类型、图 ----------
 qdoc = fitz.open(QPDF)
 questions = {}
@@ -56,6 +113,8 @@ for i in range(len(qdoc)):
         f.write(buf.getvalue())
     questions[num] = {
         'no': num, 'title': title, 'type': typ,
+        'en': TITLE_EN.get(num, ''),
+        'notes': [{'zh': z, 'en': e} for z, e in NOTES.get(num, [])],
         'img': f"data/yati/{imgname}",
         'typeRank': type_order[typ],
     }
@@ -161,7 +220,8 @@ for i in range(len(fdoc)):
 # ---------- 4) 校验 + 组装 ----------
 missing_img = [n for n in range(1, 27) if n not in questions or not questions[n].get('img')]
 missing_essay = [n for n in range(1, 27) if n not in questions or not questions[n].get('blocks')]
-print('题目数', len(questions), '缺图', missing_img, '缺范文', missing_essay)
+missing_en = [n for n in range(1, 27) if n not in questions or not questions[n].get('en')]
+print('题目数', len(questions), '缺图', missing_img, '缺范文', missing_essay, '缺英文题名', missing_en)
 if missing_img or missing_essay:
     print('⚠️  有缺失，请检查提取逻辑')
 
@@ -184,7 +244,7 @@ for t in seen:
     items = [q for q in ordered if q['type'] == t]
     out['groups'].append({
         'id': 't' + str(type_order[t]), 'name': t, 'type': t,
-        'items': [{k: q[k] for k in ('no', 'title', 'img', 'blocks', 'words')} for q in items],
+        'items': [{k: q[k] for k in ('no', 'title', 'en', 'notes', 'img', 'blocks', 'words')} for q in items],
     })
 
 with open(os.path.join(PWA, 'data', 'yati.json'), 'w', encoding='utf-8') as f:

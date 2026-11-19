@@ -19,6 +19,7 @@ function ytEsc(s) {
 function ytPad(n) { return String(n).padStart(2, '0'); }
 
 /* ==================== 渲染 ==================== */
+/* 卡片缩略图不直接给 src：默认整页 0 张图请求，展开哪组才载哪组（见 ytActivateGroup）。 */
 function ytRender() {
     const host = document.getElementById('ytGroups');
     if (!host || !YT) return;
@@ -28,13 +29,15 @@ function ytRender() {
         const meta = YT_GROUP_META[g.id] || { desc: '', color: '#0d9488' };
         const cards = (g.items || []).map(it => {
             YT_FLAT.push(it);
-            const key = (ytPad(it.no) + ' ' + it.title).toLowerCase();
+            const key = (ytPad(it.no) + ' ' + it.title + ' ' + (it.en || '')).toLowerCase();
+            const en = it.en ? `<span class="yt-card-en" title="${ytEsc(it.en)}">${ytEsc(it.en)}</span>` : '';
             return `<button type="button" class="yt-card" data-no="${it.no}" data-k="${ytEsc(key)}">
-                <span class="yt-thumb"><img src="${ytEsc(it.img)}" alt="第 ${it.no} 题：${ytEsc(it.title)}" loading="lazy" decoding="async"></span>
+                <span class="yt-thumb"><img data-src="${ytEsc(it.img)}" alt="第 ${it.no} 题：${ytEsc(it.title)}" loading="lazy" decoding="async"></span>
                 <span class="yt-card-foot">
                     <span class="yt-no">${ytPad(it.no)}</span>
-                    <span class="yt-card-title">${ytEsc(it.title)}</span>
                     <span class="yt-words">${it.words || ''} 词</span>
+                    <span class="yt-card-title">${ytEsc(it.title)}</span>
+                    ${en}
                 </span>
             </button>`;
         }).join('');
@@ -49,6 +52,7 @@ function ytRender() {
             <div class="yt-grid">${cards}</div>
         </details>`;
     }).join('');
+    host.dataset.bound = '';        // innerHTML 重建 → 事件需重新绑定
 
     const stats = document.getElementById('ytStats');
     if (stats) {
@@ -67,6 +71,52 @@ function ytRender() {
     ytTocBuild();
 }
 
+/* ==================== 按需加载：展开哪组载哪组，滚到哪张载哪张 ==================== */
+const YT_IO = ('IntersectionObserver' in window)
+    ? new IntersectionObserver(entries => {
+        entries.forEach(en => {
+            if (!en.isIntersecting) return;
+            YT_IO.unobserve(en.target);
+            ytLoadImg(en.target);
+        });
+    }, { rootMargin: '400px 0px' })
+    : null;
+
+function ytLoadImg(img) {
+    const src = img.dataset.src;
+    if (!src) return;
+    delete img.dataset.src;
+    img.classList.add('is-loading');
+    img.addEventListener('load', () => {
+        img.classList.remove('is-loading');
+        img.classList.add('is-in');
+        const th = img.closest('.yt-thumb');
+        if (th) th.classList.add('is-ready');
+    }, { once: true });
+    img.addEventListener('error', () => {
+        img.classList.remove('is-loading');
+        img.classList.add('is-err');
+        const th = img.closest('.yt-thumb');
+        if (th) th.classList.add('is-ready');
+    }, { once: true });
+    img.src = src;
+}
+
+/* 展开一组：该组前 4 张立刻加载（基本就是首屏），其余的滚到接近视口再加载。
+   默认收起状态下整页一张图都不请求。 */
+function ytActivateGroup(g) {
+    if (!g) return;
+    const imgs = [...g.querySelectorAll('img[data-src]')];
+    if (!imgs.length) return;
+    imgs.slice(0, 4).forEach((img, i) => {
+        if (i === 0) img.fetchPriority = 'high';
+        ytLoadImg(img);
+    });
+    imgs.slice(4).forEach(img => {
+        if (YT_IO) YT_IO.observe(img); else ytLoadImg(img);
+    });
+}
+
 function ytBindCards() {
     const host = document.getElementById('ytGroups');
     if (!host || host.dataset.bound === '1') return;
@@ -76,10 +126,31 @@ function ytBindCards() {
         if (!card) return;
         ytOpen(Number(card.dataset.no), card);
     });
+    // toggle 不冒泡，逐组绑定（程序化设置 open 也会触发 → 搜索/展开全部同样会载图）
+    host.querySelectorAll('details.yt-grp').forEach(g => {
+        g.addEventListener('toggle', () => { if (g.open) ytActivateGroup(g); });
+    });
+}
+
+/* 弹层里预取上/下一题，翻页时不卡 */
+function ytPrefetch(i) {
+    [-1, 1].forEach(d => {
+        const n = YT_FLAT[i + d];
+        if (n && n.img) { const im = new Image(); im.src = n.img; }
+    });
 }
 
 /* ==================== 弹层阅读器 ==================== */
 function ytIndex(no) { return YT_FLAT.findIndex(it => it.no === no); }
+
+/* 图内中文标注 → 英文写法（放范文顶部，写的时候直接抄） */
+function ytNotesHtml(it) {
+    const ns = it.notes || [];
+    if (!ns.length) return '';
+    return `<div class="yt-notes"><p class="yt-notes-h">图内文字 · 英文写法</p>` +
+        ns.map(n => `<div class="yt-note"><span class="yt-note-zh">${ytEsc(n.zh)}</span><span class="yt-note-en">${ytEsc(n.en)}</span></div>`).join('') +
+        `</div>`;
+}
 
 function ytEssayHtml(it) {
     const blocks = it.blocks || [];
@@ -102,11 +173,18 @@ function ytOpen(no, fromEl) {
     let typeName = '';
     (YT.groups || []).forEach(g => { if ((g.items || []).some(x => x.no === it.no)) typeName = g.name; });
     document.getElementById('ytMSub').textContent = `${typeName} · ${it.words || 0} 词`;
+    const enEl = document.getElementById('ytMEn');
+    if (enEl) {
+        enEl.textContent = it.en || '';
+        enEl.hidden = !it.en;
+    }
     const img = document.getElementById('ytMImg');
+    img.classList.remove('is-in', 'is-err', 'is-loading');
     img.src = it.img;
     img.alt = `第 ${it.no} 题：${it.title}`;
     document.getElementById('ytMOpen').href = it.img;
-    document.getElementById('ytMEssay').innerHTML = ytEssayHtml(it);
+    document.getElementById('ytMEssay').innerHTML = ytNotesHtml(it) + ytEssayHtml(it);
+    ytPrefetch(idx);
     document.getElementById('ytMCnt').textContent = `${idx + 1} / ${YT_FLAT.length}`;
     document.getElementById('ytPrev').disabled = idx === 0;
     document.getElementById('ytNext').disabled = idx === YT_FLAT.length - 1;

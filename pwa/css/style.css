@@ -5547,3 +5547,52 @@ body.yt-modal-open { overflow: hidden; }
     .yt-bar { padding: 6px 0 8px; }
     .yt-kb { display: none; }
 }
+
+/* ---------- 押题页：缩略图按需加载状态 ---------- */
+.yt-thumb { position: relative; }
+.yt-thumb img { opacity: 0; transition: opacity .22s ease; }
+.yt-thumb img.is-loading { opacity: 0; }
+.yt-thumb img.is-in { opacity: 1; }
+.yt-thumb img.is-err { opacity: 0; }
+.yt-thumb::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(100deg, var(--primary-soft) 30%, transparent 55%, var(--primary-soft) 80%);
+    background-size: 220% 100%; animation: ytShimmer 1.5s linear infinite; opacity: .5;
+}
+.yt-thumb.is-ready::before { display: none; }
+@keyframes ytShimmer { from { background-position: 120% 0; } to { background-position: -60% 0; } }
+
+/* 卡片英文题名（第二行，灰色小字，最多两行） */
+.yt-card-en {
+    grid-column: 1 / -1; grid-row: 3; margin-top: 1px;
+    font-size: .715rem; line-height: 1.42; color: var(--text-light);
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* 弹层头部英文题名 */
+.yt-mh-en { margin: 2px 0 0; font-size: .765rem; color: var(--text-light); font-style: italic; }
+
+/* 弹层：图内中文 → 英文写法 */
+.yt-notes {
+    margin: 0 0 16px; padding: 10px 13px;
+    background: var(--primary-soft); border-radius: 10px;
+    border-left: 3px solid var(--primary);
+}
+html.dark .yt-notes { background: rgba(13, 148, 136, .12); }
+.yt-notes-h {
+    margin: 0 0 7px; font-size: .73rem; font-weight: 800;
+    color: var(--primary); letter-spacing: .03em;
+}
+.yt-note { padding: 5px 0; border-top: 1px dashed var(--border); }
+.yt-note:first-of-type { border-top: 0; padding-top: 0; }
+.yt-note-zh { display: block; font-size: .755rem; color: var(--text-light); line-height: 1.5; }
+.yt-note-en {
+    display: block; font-size: .845rem; color: var(--text); line-height: 1.55;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+@media (max-width: 640px) {
+    .yt-card-en { font-size: .68rem; -webkit-line-clamp: 1; }
+    .yt-notes { padding: 9px 11px; margin-bottom: 13px; }
+    .yt-note-en { font-size: .81rem; }
+}

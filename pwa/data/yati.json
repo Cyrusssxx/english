@@ -12,6 +12,8 @@
     {
      "no": 6,
      "title": "在职群体参加继续学习的目的",
+     "en": "purposes of continuing education among employees",
+     "notes": [],
      "img": "data/yati/06.jpg",
      "blocks": [
       {
@@ -32,6 +34,8 @@
     {
      "no": 7,
      "title": "燃油车与新能源汽车国内销量",
+     "en": "domestic sales of fuel and new energy vehicles",
+     "notes": [],
      "img": "data/yati/07.jpg",
      "blocks": [
       {
@@ -52,6 +56,8 @@
     {
      "no": 8,
      "title": "居民日常出行选择",
+     "en": "residents' daily travel choices",
+     "notes": [],
      "img": "data/yati/08.jpg",
      "blocks": [
       {
@@ -72,6 +78,8 @@
     {
      "no": 9,
      "title": "大学生择业考虑因素",
+     "en": "factors in college students' career choices",
+     "notes": [],
      "img": "data/yati/09.jpg",
      "blocks": [
       {
@@ -92,6 +100,8 @@
     {
      "no": 10,
      "title": "全国便利店门店数量",
+     "en": "the number of convenience stores nationwide",
+     "notes": [],
      "img": "data/yati/10.jpg",
      "blocks": [
       {
@@ -119,6 +129,8 @@
     {
      "no": 19,
      "title": "新生朋辈指导项目：介绍与回复",
+     "en": "a peer mentoring programme: introduction and reply",
+     "notes": [],
      "img": "data/yati/19.jpg",
      "blocks": [
       {
@@ -151,6 +163,8 @@
     {
      "no": 20,
      "title": "中国文化演讲：建议与安排",
+     "en": "a lecture on Chinese culture: suggestions and arrangements",
+     "notes": [],
      "img": "data/yati/20.jpg",
      "blocks": [
       {
@@ -183,6 +197,8 @@
     {
      "no": 21,
      "title": "学习工具推荐：建议与说明",
+     "en": "recommending a study tool: advice and explanation",
+     "notes": [],
      "img": "data/yati/21.jpg",
      "blocks": [
       {
@@ -215,6 +231,8 @@
     {
      "no": 22,
      "title": "接机计划变更：道歉与建议",
+     "en": "a change of pick-up plan: apology and suggestion",
+     "notes": [],
      "img": "data/yati/22.jpg",
      "blocks": [
       {
@@ -243,6 +261,8 @@
     {
      "no": 23,
      "title": "海外学习帮助：感谢与邀请",
+     "en": "help with overseas study: thanks and invitation",
+     "notes": [],
      "img": "data/yati/23.jpg",
      "blocks": [
       {
@@ -271,6 +291,8 @@
     {
      "no": 24,
      "title": "文化交流中心志愿者：申请与说明",
+     "en": "volunteer application to the cultural exchange centre",
+     "notes": [],
      "img": "data/yati/24.jpg",
      "blocks": [
       {
@@ -303,6 +325,8 @@
     {
      "no": 25,
      "title": "文化旅游协会：志愿者招募通知",
+     "en": "volunteers wanted: notice from the tourism association",
+     "notes": [],
      "img": "data/yati/25.jpg",
      "blocks": [
       {
@@ -335,6 +359,8 @@
     {
      "no": 26,
      "title": "防止食物浪费：会议纪要",
+     "en": "minutes of a meeting on reducing food waste",
+     "notes": [],
      "img": "data/yati/26.jpg",
      "blocks": [
       {
@@ -382,6 +408,17 @@
     {
      "no": 11,
      "title": "公共场所无障碍通道的普及",
+     "en": "barrier-free passages in public places",
+     "notes": [
+      {
+       "zh": "2021~2025 年某市公共场所设置无障碍通道的比例",
+       "en": "the share of public places with barrier-free passages in a city, 2021–2025"
+      },
+      {
+       "zh": "注：无障碍通道指坡道、升降设施等便于行动不便者进出的通道",
+       "en": "Barrier-free passages refer to ramps, lifts and other facilities that help people with mobility difficulties get in and out."
+      }
+     ],
      "img": "data/yati/11.jpg",
      "blocks": [
       {
@@ -402,6 +439,8 @@
     {
      "no": 12,
      "title": "急救知识的普及",
+     "en": "the popularisation of first-aid knowledge",
+     "notes": [],
      "img": "data/yati/12.jpg",
      "blocks": [
       {
@@ -422,6 +461,8 @@
     {
      "no": 13,
      "title": "留学人员回国发展",
+     "en": "overseas returnees developing their careers at home",
+     "notes": [],
      "img": "data/yati/13.jpg",
      "blocks": [
       {
@@ -449,6 +490,8 @@
     {
      "no": 14,
      "title": "中国人平均寿命与人口老龄化",
+     "en": "average life expectancy and population ageing",
+     "notes": [],
      "img": "data/yati/14.jpg",
      "blocks": [
       {
@@ -469,6 +512,8 @@
     {
      "no": 15,
      "title": "冰激凌线上与线下销售占比",
+     "en": "online and offline ice cream sales",
+     "notes": [],
      "img": "data/yati/15.jpg",
      "blocks": [
       {
@@ -496,6 +541,21 @@
     {
      "no": 1,
      "title": "人工智能工具的使用",
+     "en": "the use of AI tools",
+     "notes": [
+      {
+       "zh": "AI 太好用了！",
+       "en": "AI is such a great help!"
+      },
+      {
+       "zh": "答案已生成",
+       "en": "the answer has been generated"
+      },
+      {
+       "zh": "作业「已完成」",
+       "en": "homework already \"finished\""
+      }
+     ],
      "img": "data/yati/01.jpg",
      "blocks": [
       {
@@ -516,6 +576,17 @@
     {
      "no": 2,
      "title": "“陪着”不等于“陪伴”",
+     "en": "\"staying around\" vs. \"companionship\"",
+     "notes": [
+      {
+       "zh": "爸爸，你在听我说话吗？",
+       "en": "Dad, are you listening to me?"
+      },
+      {
+       "zh": "「陪着」不等于「陪伴」",
+       "en": "\"Staying around\" is not companionship."
+      }
+     ],
      "img": "data/yati/02.jpg",
      "blocks": [
       {
@@ -536,6 +607,13 @@
     {
      "no": 3,
      "title": "压力与身心健康",
+     "en": "stress and physical and mental health",
+     "notes": [
+      {
+       "zh": "压力（墙上海报）",
+       "en": "a poster reading \"pressure\""
+      }
+     ],
      "img": "data/yati/03.jpg",
      "blocks": [
       {
@@ -556,6 +634,13 @@
     {
      "no": 4,
      "title": "过度包装与绿色消费",
+     "en": "over-packaging and green consumption",
+     "notes": [
+      {
+       "zh": "买个礼物需要这么多包装？",
+       "en": "Does one gift really need all this packaging?"
+      }
+     ],
      "img": "data/yati/04.jpg",
      "blocks": [
       {
@@ -576,6 +661,21 @@
     {
      "no": 5,
      "title": "网络信息与理性辨别",
+     "en": "online information and rational judgement",
+     "notes": [
+      {
+       "zh": "网络信息",
+       "en": "online information"
+      },
+      {
+       "zh": "真 / 假（散落标签）",
+       "en": "labels reading \"true\" and \"false\""
+      },
+      {
+       "zh": "诚信：网络信息真假难辨",
+       "en": "Honesty: online information is hard to tell true from false."
+      }
+     ],
      "img": "data/yati/05.jpg",
      "blocks": [
       {
@@ -603,6 +703,13 @@
     {
      "no": 16,
      "title": "中国传统艺术的传承",
+     "en": "the inheritance of traditional Chinese art",
+     "notes": [
+      {
+       "zh": "中国传统艺术的传承",
+       "en": "the inheritance of traditional Chinese art"
+      }
+     ],
      "img": "data/yati/16.jpg",
      "blocks": [
       {
@@ -623,6 +730,29 @@
     {
      "no": 17,
      "title": "热门与热爱",
+     "en": "popularity vs. genuine passion",
+     "notes": [
+      {
+       "zh": "这个专业需求旺盛，前景广阔！",
+       "en": "This major is in great demand and has bright prospects!"
+      },
+      {
+       "zh": "我十分热爱这个专业。",
+       "en": "I am truly passionate about this major."
+      },
+      {
+       "zh": "热门新兴岗位",
+       "en": "popular emerging positions"
+      },
+      {
+       "zh": "热门专业报考指南",
+       "en": "a guide to popular majors"
+      },
+      {
+       "zh": "热门 vs 热爱",
+       "en": "popularity vs. genuine passion"
+      }
+     ],
      "img": "data/yati/17.jpg",
      "blocks": [
       {
@@ -643,6 +773,17 @@
     {
      "no": 18,
      "title": "旅游发展与环境保护",
+     "en": "tourism development and environmental protection",
+     "notes": [
+      {
+       "zh": "以前 / 现在",
+       "en": "in the past / at present"
+      },
+      {
+       "zh": "景区入口",
+       "en": "the entrance to the scenic area"
+      }
+     ],
      "img": "data/yati/18.jpg",
      "blocks": [
       {
