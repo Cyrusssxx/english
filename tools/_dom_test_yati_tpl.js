@@ -79,7 +79,7 @@ const flat = data.groups.flatMap(g => g.items);
   else pass('所有句子 textContent 严格等于原文');
 
   /* 3. 关键句式覆盖：每类至少一句被打标 */
-  const need = ['I hope this message finds you well.', 'I am writing to', 'Looking forward to your early reply.', 'The meeting concluded with'];
+  const need = ['I hope this message finds you well.', 'I am writing to', 'I am looking forward to hearing from you soon.', 'The meeting concluded with'];
   const allSmallEn = data.groups.filter(g => g.id === 't1').flatMap(g => g.items)
       .flatMap(it => (it.blocks || []).flatMap(b => (b.sents || []).map(s => s.en)));
   const taggedEn = allSmallEn.filter(en => window.ytIsTplSent(en, 20));
