@@ -162,13 +162,6 @@ MECH = [
      '一些商家把眼前利润放在首位，导致质量与安全疏于管理。'),
     (3, '规则滞后', 'Rules have not kept pace with how quickly {{topic}} has spread.',
      '规则的更新速度，赶不上 {{topic}} 扩散的速度。'),
-    # ── 2026-11-20 追加：Loru 讲义里补真空白的句（英一图画/材料/个人品质句全部不收）──
-    (3, '升维·现象', 'Taken as a whole, the chart above tells a larger story of {{topic}}.',
-     '总体来看，上图折射出 {{topic}} 这一更大的社会变化。'),
-    (3, '成本门槛', 'Lower costs have made {{topic}} accessible to people who might otherwise miss out for financial reasons.',
-     '成本下降让 {{topic}} 惠及了那些原本可能因经济原因无法享用的人。'),
-    (3, '环境代价', '{{topic}} can help people meet daily needs with fewer resources, so that a higher living standard does not have to come at the expense of the environment.',
-     '{{topic}} 能帮助人们用更少资源满足日常需要，使生活水平的提高不必以环境为代价。'),
 ]
 
 # ══════════ 三、第三段：立场句 + 主体句池 + 收束句 ══════════
@@ -249,12 +242,9 @@ P2_FIT = {'观念': 15, '收入': 6, '便利': 6, '学校': 6, '职场时间': 4
           '环保意识': 20, '绿色出行': 19, '文化新媒介': 18,
           # 负面题专用（2026-11-19）：只对「数据里出现低值项/负增长」的年份有用
           # （2012 满意度 / 2019 就业因素），可用年份少 → fit 压低，但负面题里是首选
-          '逐利': 4, '规则滞后': 4,
-          # 2026-11-20 讲义句：补「第二段升维 / 成本门槛 / 环境代价」空白（第一段句池不带 fit）
-          '升维·现象': 8, '成本门槛': 5, '环境代价': 5}
+          '逐利': 4, '规则滞后': 4}
 P3P_FIT = {'个人': 6, '政府·长效': 5, '政府': 4, '学校': 4, '观念': 4, '企业/平台': 3,
-           '媒体': 3, '个人·习惯': 3, '家庭': 2, '平台·设计': 2, '媒体·展示': 1,
-           '辩证·利弊': 3}
+           '媒体': 3, '个人·习惯': 3, '家庭': 2, '平台·设计': 2, '媒体·展示': 1}
 P3N_FIT = {'个人·记录': 3, '企业·雇主': 2, '企业·管理': 2, '个人': 1,
            '政府': 0, '学校/家庭': 0, '家庭': 0, '企业/平台': 0, '媒体': 0,
            '学校·课程': 0, '家庭·作息': 0}
@@ -272,9 +262,6 @@ SUBJ_POS = [
     (2, '平台·设计', 'Platforms should design simple, honest services instead of ones that hold users\u2019 attention for as long as possible.', '平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。'),
     (2, '媒体·展示', 'Documentaries and short videos can show how {{topic}} works in real life.', '纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。'),
     (2, '个人·习惯', 'Small habits matter: a little {{topic}} every day adds up over a year.', '小习惯很重要：每天一点 {{topic}}，日积月累一年下来就不一样。'),
-    # ── 2026-11-20 追加：辩证收尾（利与弊一并收，正面/负面两版骨架都没有这类功能）──
-    (2, '辩证·利弊', 'Overall, we should make the most of {{topic}} while keeping its possible risks in check.',
-     '总体而言，我们应充分利用 {{topic}}，同时管控它可能带来的风险。'),
 ]
 SUBJ_NEG = [
     (3, '政府', 'Authorities should set clear limits and make sure they are actually enforced.', '政府应设定明确的上限，并确保真正执行。'),
@@ -328,13 +315,6 @@ def main():
         {'en': 'In the later years, {{item1}} climbed sharply while {{item2}} stayed almost flat.', 'cn': '后几年 {{item1}} 急剧上升，而 {{item2}} 几乎原地不动。', 'freq': 3, 'tag': '分段·后段分化'},
         {'en': 'The two moved in opposite directions.', 'cn': '两者朝相反的方向变化。', 'freq': 3, 'tag': '反差'},
         {'en': 'The figure more than doubled over the period.', 'cn': '这一数字在该时期翻了一倍多。', 'freq': 2, 'tag': '倍数'},
-        # ── 2026-11-20 追加：Loru 首段讲义（三个时间点 / 增幅最大 / 总项与分项）──
-        {'en': '{{item1}} rose from {{num1}} in {{time1}} to {{num2}} in {{time2}}, before reaching {{num3}} in {{time3}}.',
-         'cn': '{{item1}} 从 {{time1}} 的 {{num1}} 升至 {{time2}} 的 {{num2}}，并在 {{time3}} 达到 {{num3}}。', 'freq': 2, 'tag': '三点变化'},
-        {'en': '{{item1}} saw the largest increase, rising from {{num1}} to {{num2}}.',
-         'cn': '{{item1}} 的增幅最大，从 {{num1}} 升至 {{num2}}。', 'freq': 2, 'tag': '最大增幅'},
-        {'en': 'Meanwhile, the figure for {{item2}} also rose from {{num3}} to {{num4}}.',
-         'cn': '同期，{{item2}} 也从 {{num3}} 升至 {{num4}}。', 'freq': 2, 'tag': '总项分项'},
     ]
 
     # 第二段：合并成一段
