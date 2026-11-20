@@ -2278,9 +2278,9 @@
    "cn": "③ 主体第一点：衔接词开头 + 从第二段对应类型挑第 2 句。"
   },
   {
-   "en": "Equally important, + 要点②（s3 / 跨类型补 1~2 句）",
-   "trans": "同样重要的是，……",
-   "cn": "④ 主体第二点：s3 或跨类型混搭；第二段 2~4 句就够。"
+   "en": "In addition, + 要点②（s3 / 跨类型补 1~2 句）",
+   "trans": "此外，……",
+   "cn": "④ 主体第二点：s3 或跨类型混搭；第二段 2~4 句就够，衔接词直接用必背句自带的，别自己换。"
   },
   {
    "en": "I would appreciate it if you could ... / Looking forward to your early reply.",
@@ -2291,23 +2291,23 @@
  "linkers": [
   {
    "banned": "First and foremost / Last but not least（句首烂大街）",
-   "better": "To begin with, ... / Finally, ...（必背句里已换高级版）"
-  },
-  {
-   "banned": "In addition, ...",
-   "better": "Besides this, ... / Beyond that, ..."
-  },
-  {
-   "banned": "Furthermore, ...",
-   "better": "Equally important, ... / Just as significant, ..."
+   "better": "To begin with, ... / Finally, ...（必背句已在用，直接用）"
   },
   {
    "banned": "I hope you can ...（请求太软）",
-   "better": "I would appreciate it if you could ... / I would be grateful if you could ..."
+   "better": "I would appreciate it if you could ...（p3 必背句）"
   },
   {
-   "banned": "To be more specific, ...",
-   "better": "To spell it out, ... / To put it another way, ..."
+   "banned": "一封短信堆 3 个以上连接词（显得刻意）",
+   "better": "In addition, / Furthermore, / First, — 必背句用的就这几个，够用"
+  },
+  {
+   "banned": "To spell it out / To put it another way（生硬套话）",
+   "better": "To be more specific, ...（必背句在用，自然）"
+  },
+  {
+   "banned": "为了「高级」而换掉必背句（背了再用等于白背）",
+   "better": "原则：简单正确 > 华丽套话；连接词不是评分点"
   }
  ],
  "stats": {

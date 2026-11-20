@@ -587,6 +587,8 @@ async function swInit() {
     swBuildKeyMap();
     swRenderLegend();
     swRenderSteps();
+    swDrillRender();
+    swDrillBind();
     swRenderStats();
     swRenderGuide();
     swRenderDecisions();
@@ -606,6 +608,99 @@ async function swInit() {
     window.addEventListener('navheightchange', () => { swNavHVar(); swTocSpy(); });
 }
 
+
+/* ==================== 24 句必背 · 集中清单（背诵主入口） ====================
+   只读 tier=core/must 的句子，按「问候→来意→引出→类型展开→收尾」成文顺序铺开。
+   纯展示：不写 swKeyMap、不挂 data-k，故不影响既有划词高亮/批注的键位。 */
+const SW_DRILL_CN_KEY = 'sw_drill_cn_v1';
+const SW_DRILL_FILL_KEY = 'sw_drill_fill_v1';
+let swDrillCn = false, swDrillFill = false;
+
+/** 把英文里的 {{token}} 变成可点填空（默认遮住，点开显示）；非填空态正常显示芯片 */
+function swDrillEn(en) {
+    return String(en == null ? '' : en).split(/(\{\{[^}]+\}\})/g).map(seg => {
+        const m = /^\{\{([^}]+)\}\}$/.exec(seg);
+        if (!m) return swEsc(seg);
+        return '<span class="sw-drill-ph" tabindex="0" role="button" title="点开看填什么">' + swEsc(m[1]) + '</span>';
+    }).join('');
+}
+
+/** 按成文顺序取必背句：4 骨架（p1s1/p1s2/p2s1/p3）+ 每类型 s2/s3 */
+function swDrillGroups() {
+    const pick = (bankId) => {
+        const b = swBank(bankId);
+        if (!b) return [];
+        return (b.items || []).map((it, i) => ({ it: it, key: bankId + '#' + i }))
+            .filter(x => x.it.tier === 'core' || x.it.tier === 'must');
+    };
+    const groups = [];
+    const coreBanks = [
+        ['p1s1', '① 问候 / 自我介绍'], ['p1s2', '② 表明来意'],
+        ['p2s1', '③ 第二段引出'], ['p3', '⑥ 收尾 / 客套'],
+    ];
+    coreBanks.forEach(pair => {
+        const rows = pick(pair[0]);
+        if (rows.length) groups.push({ title: pair[1], core: true, rows: rows });
+    });
+    (SW.types || []).forEach(t => {
+        const rows = (t.banks || []).filter(id => /^p2_/.test(id)).flatMap(id => pick(id));
+        if (rows.length) groups.push({ title: '④⑤ ' + t.name, core: false, rows: rows });
+    });
+    return groups;
+}
+
+function swDrillRender() {
+    const box = document.getElementById('swDrill');
+    if (!box || !SW) return;
+    const groups = swDrillGroups();
+    const total = groups.reduce((n, g) => n + g.rows.length, 0);
+    let h = '<div class="sw-drill-sum">共 <b>' + total + '</b> 句 · ⭐⭐ 骨架 4 句全信通用 + ⭐ 必背每类型 2 句'
+        + ' · <b>' + (SW.stats ? (SW.stats.core_words + SW.stats.must_words) : 398) + '</b> 词，30 天约 '
+        + (SW.stats ? ((SW.stats.core_words + SW.stats.must_words) / 30).toFixed(1) : '13.3') + ' 词/天</div>';
+    h += groups.map(g => '<details class="sw-drill-grp"' + (g.core ? ' open' : '') + '>'
+        + '<summary><span class="sw-drill-gt">' + (g.core ? '⭐⭐ ' : '⭐ ') + swEsc(g.title) + '</span>'
+        + '<span class="sw-drill-gn">' + g.rows.length + ' 句</span></summary>'
+        + '<ol class="sw-drill-list">' + g.rows.map(r => '<li class="sw-drill-line">'
+            + '<div class="sw-drill-en">' + swDrillEn(r.it.en) + '</div>'
+            + '<div class="sw-drill-cn">' + swPh(r.it.cn || '') + '</div>'
+            + '</li>').join('') + '</ol></details>').join('');
+    box.innerHTML = h;
+    swDrillApply();
+}
+
+/** 应用中文显隐 + 填空遮罩状态（纯 class 切换，不重写 DOM，保留已点开的填空） */
+function swDrillApply() {
+    const box = document.getElementById('swDrill');
+    if (box) box.classList.toggle('show-cn', swDrillCn);
+    document.body.classList.toggle('sw-drill-on', swDrillFill);
+    const cb = document.getElementById('swDrillCnBtn');
+    const fb = document.getElementById('swDrillFillBtn');
+    if (cb) { cb.textContent = swDrillCn ? '隐藏中文' : '显示中文'; cb.classList.toggle('on', swDrillCn); cb.setAttribute('aria-pressed', String(swDrillCn)); }
+    if (fb) { fb.textContent = swDrillFill ? '退出填空' : '填空自测'; fb.classList.toggle('on', swDrillFill); fb.setAttribute('aria-pressed', String(swDrillFill)); }
+}
+
+function swDrillBind() {
+    const cb = document.getElementById('swDrillCnBtn');
+    const fb = document.getElementById('swDrillFillBtn');
+    if (cb) cb.addEventListener('click', () => {
+        swDrillCn = !swDrillCn;
+        try { localStorage.setItem(SW_DRILL_CN_KEY, swDrillCn ? '1' : '0'); } catch (e) {}
+        swDrillApply();
+    });
+    if (fb) fb.addEventListener('click', () => {
+        swDrillFill = !swDrillFill;
+        try { localStorage.setItem(SW_DRILL_FILL_KEY, swDrillFill ? '1' : '0'); } catch (e) {}
+        if (!swDrillFill) document.querySelectorAll('#swDrill .sw-drill-ph.on').forEach(x => x.classList.remove('on'));
+        swDrillApply();
+    });
+    const box = document.getElementById('swDrill');
+    if (box) box.addEventListener('click', e => {
+        const ph = e.target.closest && e.target.closest('.sw-drill-ph');
+        if (ph && swDrillFill) ph.classList.toggle('on');
+    });
+    try { swDrillCn = localStorage.getItem(SW_DRILL_CN_KEY) === '1'; } catch (e) {}
+    try { swDrillFill = localStorage.getItem(SW_DRILL_FILL_KEY) === '1'; } catch (e) {}
+}
 
 /* ==================== 顶部指标 ==================== */
 function swRenderStats() {
@@ -659,6 +754,7 @@ function swTocItems() {
     const items = [];
     const push = (lv, id, text) => { if (document.getElementById(id)) items.push({ lv: lv, id: id, text: text }); };
     push(1, 'swLetterBlock', '整信背诵');
+    push(1, 'swDrillBlock', '24 句必背');
     push(1, 'swLegend', '占位符图例');
     push(1, 'swStepsTitle', '小作文怎么拼');
     push(1, 'swGuideBlock', '真题适配表');

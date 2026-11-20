@@ -5851,3 +5851,32 @@ html.dark .yt-lg-kw { color: #5eead4; background: rgba(45, 212, 191, .18); }
    DOM class 全保留，只清视觉；图例恢复显示（已去掉「范文原句」那项）。 */
 .yt-en .yt-fill { background: none; border: none; padding: 0; }
 html.dark .yt-en .yt-fill { background: none; border-color: transparent; }
+
+/* 2026-11-20 新增：小作文「24 句必背」集中清单（背诵主入口）。
+   默认只显英文遮中文；填空自测把 {{占位符}} 变下划线空白，点开显示。 */
+.sw-drill-sum { color: var(--text-light); font-size: .86rem; line-height: 1.7; margin: -2px 0 12px; }
+.sw-drill-sum b { color: var(--primary); }
+.sw-drill-ctrl { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; margin: 4px 0 14px; }
+.sw-drill-tip { color: var(--text-light); font-size: .8rem; line-height: 1.6; }
+.sw-drill-tip b { color: var(--primary); font-weight: 600; }
+.sw-drill-grp { border: 1px solid var(--border, rgba(0,0,0,.1)); border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+.sw-drill-grp > summary { cursor: pointer; list-style: none; padding: 9px 14px; background: var(--card-bg); font-weight: 600; font-size: .95rem; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.sw-drill-grp > summary::-webkit-details-marker { display: none; }
+.sw-drill-grp > summary::before { content: '▸'; color: var(--primary); font-size: .8rem; transition: transform .15s ease; }
+.sw-drill-grp[open] > summary::before { transform: rotate(90deg); }
+.sw-drill-gt { flex: 1; }
+.sw-drill-gn { color: var(--text-light); font-size: .78rem; font-weight: 400; }
+.sw-drill-list { list-style: none; margin: 0; padding: 4px 14px 10px; counter-reset: swdrill; }
+.sw-drill-line { counter-increment: swdrill; padding: 8px 0; border-bottom: 1px dashed var(--border, rgba(0,0,0,.08)); }
+.sw-drill-line:last-child { border-bottom: none; }
+.sw-drill-en { font-family: Georgia, "Times New Roman", serif; font-size: .98rem; line-height: 1.85; padding-left: 26px; position: relative; }
+.sw-drill-en::before { content: counter(swdrill) '.'; position: absolute; left: 0; top: 0; color: var(--text-light); font-family: -apple-system, sans-serif; font-size: .8rem; }
+.sw-drill-cn { display: none; font-size: .86rem; line-height: 1.7; color: var(--text-light); padding: 5px 0 0 26px; }
+#swDrill.show-cn .sw-drill-cn { display: block; }
+/* 填空自测：占位符变下划线空白，点开 (.on) 才显内容 */
+.sw-drill-ph { color: #62809f; font-weight: 600; font-style: normal; background: rgba(29,111,208,.07); border-radius: 3px; padding: 0 4px; margin: 0 1px; cursor: pointer; border-bottom: 1px solid rgba(29,111,208,.35); }
+html.dark .sw-drill-ph { color: #8fb4d8; background: rgba(124,192,255,.1); }
+body.sw-drill-on .sw-drill-ph { color: transparent; background: rgba(29,111,208,.05); border-bottom: 2px solid var(--primary); padding: 0 18px; user-select: none; }
+html.dark body.sw-drill-on .sw-drill-ph { background: rgba(124,192,255,.08); }
+body.sw-drill-on .sw-drill-ph.on { color: var(--primary); background: rgba(29,111,208,.12); user-select: auto; }
+html.dark body.sw-drill-on .sw-drill-ph.on { color: #8fb4d8; background: rgba(124,192,255,.14); }

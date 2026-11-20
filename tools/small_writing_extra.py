@@ -301,11 +301,11 @@ ALTS = {
 }
 # 高级衔接词（信件专用；banned = 烂大街，better = 高级替换）
 LINKERS = [
-    {'banned': 'First and foremost / Last but not least（句首烂大街）', 'better': 'To begin with, ... / Finally, ...（必背句里已换高级版）'},
-    {'banned': 'In addition, ...', 'better': 'Besides this, ... / Beyond that, ...'},
-    {'banned': 'Furthermore, ...', 'better': 'Equally important, ... / Just as significant, ...'},
-    {'banned': 'I hope you can ...（请求太软）', 'better': 'I would appreciate it if you could ... / I would be grateful if you could ...'},
-    {'banned': 'To be more specific, ...', 'better': 'To spell it out, ... / To put it another way, ...'},
+    {'banned': 'First and foremost / Last but not least（句首烂大街）', 'better': 'To begin with, ... / Finally, ...（必背句已在用，直接用）'},
+    {'banned': 'I hope you can ...（请求太软）', 'better': 'I would appreciate it if you could ...（p3 必背句）'},
+    {'banned': '一封短信堆 3 个以上连接词（显得刻意）', 'better': 'In addition, / Furthermore, / First, — 必背句用的就这几个，够用'},
+    {'banned': 'To spell it out / To put it another way（生硬套话）', 'better': 'To be more specific, ...（必背句在用，自然）'},
+    {'banned': '为了「高级」而换掉必背句（背了再用等于白背）', 'better': '原则：简单正确 > 华丽套话；连接词不是评分点'},
 ]
 # 信件拼装框架（5 步，所有信都这么拼）
 FRAMEWORK = [
@@ -315,8 +315,8 @@ FRAMEWORK = [
      'cn': '② 来意句：一句话点明写信目的——换动词就是另一种信（p1s2 里都是现成的）。'},
     {'en': 'To begin with, + 要点①（该类型 s2 必背句）', 'trans': '首先，……',
      'cn': '③ 主体第一点：衔接词开头 + 从第二段对应类型挑第 2 句。'},
-    {'en': 'Equally important, + 要点②（s3 / 跨类型补 1~2 句）', 'trans': '同样重要的是，……',
-     'cn': '④ 主体第二点：s3 或跨类型混搭；第二段 2~4 句就够。'},
+    {'en': 'In addition, + 要点②（s3 / 跨类型补 1~2 句）', 'trans': '此外，……',
+     'cn': '④ 主体第二点：s3 或跨类型混搭；第二段 2~4 句就够，衔接词直接用必背句自带的，别自己换。'},
     {'en': 'I would appreciate it if you could ... / Looking forward to your early reply.', 'trans': '如蒙……将不胜感激 / 期待您的早日回复。',
      'cn': '⑤ 收尾（p3 必背）：行动请求或期待回复；落款 Yours sincerely, Li Ming。'},
 ]
