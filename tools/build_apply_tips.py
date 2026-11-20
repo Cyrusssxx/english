@@ -58,12 +58,16 @@ def figures(s):
 def main():
     tpl = load(TPL_FP)
     ap = load(AP_FP)
+    # refs 用 apply_plan.json 的数字下标（[['t',1],['f',9]]）；apply_plan.py 里的 'f:tag'
+    # 字符串还要再映射一次下标，容易与模板句池漂移 —— 直接用已固化的方案更稳。
+    plan = load(os.path.join(ROOT, 'tools', 'apply_plan.json'))
     guide = {r['year']: r for r in tpl['chart_guide']['table']}
     n = 0
     for y in sorted(ap):
         if y not in P.CHART:
             continue
-        c = P.CHART[y]
+        c = dict(P.CHART[y])
+        c['p1'], c['p2'], c['p3'] = plan[y]['p1'], plan[y]['p2'], plan[y]['p3']
         g = guide.get(y, {})
         pol = 'negative' if c['p3'][0] == 'para3_negative' else 'positive'
         p2 = sec(tpl, c['p2'][0])
@@ -74,13 +78,20 @@ def main():
         tags3 = [x.get('tag', '') for x in (p3.get('sentences') or [])]
 
         def picked(sec_d, refs_txt):
-            """本条按 refs 实际用到的句池标签 / 句子（refs_txt 形如 't1 t2 f4'）"""
+            """本条按 refs 实际用到的句池标签 / 句子。
+            refs 有两种形态：apply_plan.py 里是 [['t',1],['f',4]]，旧版是 't1 t2 f4' 字符串——
+            2026-11-20 前只处理字符串，于是列表形态永远匹配 0 条，17 篇 tips 全显示「句池挑「」」。
+            """
+            if isinstance(refs_txt, str):
+                pairs = [(k, int(n)) for k, n in re.findall(r'([tf])(\d+)', refs_txt)]
+            else:
+                pairs = [(str(k), int(n)) for k, n in refs_txt]
             tg, sents = [], []
-            for m in re.findall(r'([tf])(\d+)', refs_txt):
-                kind, ref = m[0], int(m[1])
+            for kind, ref in pairs:
                 if kind == 'f':
-                    tg.append((sec_d['sentences'][ref - 1].get('tag') or '').strip())
-                    sents.append(sec_d['sentences'][ref - 1]['en'])
+                    item = sec_d['sentences'][ref - 1]
+                    tg.append((item.get('tag') or '').strip())
+                    sents.append(item['en'])
             return tg, sents
 
         # ① 图型 + 走势 + 骨架

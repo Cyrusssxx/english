@@ -391,7 +391,171 @@
     "takes the lead": "ranks first / comes top",
     "comes last": "ranks last / trails behind"
    },
-   "demo": "The pie chart above clearly illustrates how the purposes of travel are distributed. Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims at 33% and 15% respectively, while fostering independence comes last at 6%."
+   "demo": "The pie chart above clearly illustrates how the purposes of travel are distributed. Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims at 33% and 15% respectively, while fostering independence comes last at 6%.",
+   "skeletons": [
+    {
+     "label": "① 占比分布（标准静态）",
+     "years": "2012 · 2015 · 2016 · 2018 · 2020 · 2021 · 2024 · 2025 · 2026",
+     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed. {{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+     "cn": "该 {{chart}} 图清晰地展示了 {{topic}} 的分布情况。{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
+     "struct": [
+      [
+       [
+        "The {{chart}} chart above",
+        "t"
+       ],
+       [
+        " clearly illustrates",
+        "p"
+       ],
+       [
+        " how {{topic}} is distributed",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "{{item1}}",
+        "t"
+       ],
+       [
+        " takes the lead",
+        "p"
+       ],
+       [
+        ", accounting for {{percent1}}",
+        "o"
+       ],
+       [
+        ", followed by ",
+        "trans"
+       ],
+       [
+        "{{item2}} and {{item3}}",
+        "t"
+       ],
+       [
+        " at {{percent2}} and {{percent3}} respectively",
+        "o"
+       ],
+       [
+        ", while ",
+        "trans"
+       ],
+       [
+        "{{item4}}",
+        "t"
+       ],
+       [
+        " comes last at {{percent4}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "takes the lead": "ranks first / comes top",
+      "comes last": "ranks last / trails behind"
+     },
+     "demo": "The pie chart above clearly illustrates how the purposes of travel are distributed. Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims at 33% and 15% respectively, while fostering independence comes last at 6%."
+    },
+    {
+     "label": "② 双图 · 漫画 + 图表",
+     "years": "NO11 无障碍 / NO12 急救（漫画给场景、图表给占比）",
+     "en": "The cartoon above depicts {{scene}}, while the chart below clearly illustrates how {{topic}} is distributed. {{item1}} takes the lead, accounting for {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}} respectively, while {{item4}} comes last at {{percent4}}.",
+     "cn": "漫画描绘了 {{scene}}，而下方的图表清晰地展示了 {{topic}} 的分布情况。{{item1}} 遥遥领先，占 {{percent1}}；其后是 {{item2}} 和 {{item3}}，分别占 {{percent2}} 和 {{percent3}}；而 {{item4}} 位居最后，占 {{percent4}}。",
+     "struct": [
+      [
+       [
+        "The cartoon above",
+        "t"
+       ],
+       [
+        " depicts",
+        "p"
+       ],
+       [
+        " {{scene}}",
+        "o"
+       ],
+       [
+        ", while ",
+        "trans"
+       ],
+       [
+        "the chart below",
+        "t"
+       ],
+       [
+        " clearly illustrates",
+        "p"
+       ],
+       [
+        " how {{topic}} is distributed",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "{{item1}}",
+        "t"
+       ],
+       [
+        " takes the lead",
+        "p"
+       ],
+       [
+        ", accounting for {{percent1}}",
+        "o"
+       ],
+       [
+        ", followed by ",
+        "trans"
+       ],
+       [
+        "{{item2}} and {{item3}}",
+        "t"
+       ],
+       [
+        " at {{percent2}} and {{percent3}} respectively",
+        "o"
+       ],
+       [
+        ", while ",
+        "trans"
+       ],
+       [
+        "{{item4}}",
+        "t"
+       ],
+       [
+        " comes last at {{percent4}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "depicts": "shows / presents",
+      "while": "whereas / and"
+     },
+     "demo": "The cartoon above depicts a wheelchair user approaching a public building by an accessible route, while the chart below clearly illustrates how accessible facilities in public places are distributed. Step-free entrances take the lead, accounting for 72%, followed by lifts and ramps at 61% and 55% respectively, while tactile paving comes last at 33%."
+    }
+   ]
   },
   {
    "id": "chart_dynamic",
@@ -845,14 +1009,188 @@
       "climbed sharply": "surged / shot up"
      },
      "demo": "The line chart above clearly illustrates the changes in the health literacy rate of Chinese residents from 2012 to 2021. From 2012 to 2015, it rose steadily from 8.80% to 10.25%, and then climbed sharply to 25.40%."
+    },
+    {
+     "label": "⑤ 双图 · 漫画 + 趋势图",
+     "years": "NO13 留学回国（漫画 + 柱状）",
+     "en": "The cartoon above depicts {{scene}}, while the chart below clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
+     "cn": "漫画描绘了 {{scene}}，而下方的图表清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。",
+     "struct": [
+      [
+       [
+        "The cartoon above",
+        "t"
+       ],
+       [
+        " depicts",
+        "p"
+       ],
+       [
+        " {{scene}}",
+        "o"
+       ],
+       [
+        ", while ",
+        "trans"
+       ],
+       [
+        "the chart below",
+        "t"
+       ],
+       [
+        " clearly illustrates",
+        "p"
+       ],
+       [
+        " the changes in {{topic}}",
+        "o"
+       ],
+       [
+        " from {{time1}} to {{time2}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "During this period",
+        "trans"
+       ],
+       [
+        ", {{item1}}",
+        "t"
+       ],
+       [
+        " rose sharply",
+        "p"
+       ],
+       [
+        " from {{num1}} to {{num2}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "By contrast",
+        "trans"
+       ],
+       [
+        ", the figure for {{item2}}",
+        "t"
+       ],
+       [
+        " saw",
+        "p"
+       ],
+       [
+        " a modest increase",
+        "o"
+       ],
+       [
+        ", climbing from {{num3}} to {{num4}} over the same period",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "depicts": "shows / presents"
+     },
+     "demo": "The cartoon above depicts overseas students returning to China, while the chart below clearly illustrates the changes in the number of returnees from 2012 to 2022. During this period, the number rose sharply from 0.27 million to 0.6 million. By contrast, the figure for students going abroad saw a modest increase, climbing from 0.4 million to 0.7 million over the same period."
+    },
+    {
+     "label": "⑥ 两张图表并列",
+     "years": "NO14 平均寿命 + 老龄化（折线 + 饼图）",
+     "en": "The two charts above clearly illustrate the changes in {{topic1}} and {{topic2}} respectively from {{time1}} to {{time2}}. During this period, {{topic1}} climbed steadily from {{num1}} to {{num2}}, while the share of {{topic2}} rose to {{percent1}}.",
+     "cn": "上述两张图分别清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic1}} 与 {{topic2}} 的变化。在此期间，{{topic1}} 从 {{num1}} 稳步升至 {{num2}}，而 {{topic2}} 的比重升至 {{percent1}}。",
+     "struct": [
+      [
+       [
+        "The two charts above",
+        "t"
+       ],
+       [
+        " clearly illustrate",
+        "p"
+       ],
+       [
+        " the changes in {{topic1}} and {{topic2}}",
+        "o"
+       ],
+       [
+        " respectively",
+        "o"
+       ],
+       [
+        " from {{time1}} to {{time2}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "During this period",
+        "trans"
+       ],
+       [
+        ", {{topic1}}",
+        "t"
+       ],
+       [
+        " climbed steadily",
+        "p"
+       ],
+       [
+        " from {{num1}} to {{num2}}",
+        "o"
+       ],
+       [
+        ", while ",
+        "trans"
+       ],
+       [
+        "the share of {{topic2}}",
+        "t"
+       ],
+       [
+        " rose",
+        "p"
+       ],
+       [
+        " to {{percent1}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "climbed steadily": "rose steadily / kept rising"
+     },
+     "demo": "The two charts above clearly illustrate the changes in average life expectancy and the share of the elderly population in China from 2010 to 2023. During this period, average life expectancy climbed steadily from 74.8 to 78.6, while the share of the population aged 65 and over rose to 15.4%."
     }
    ]
   },
   {
    "id": "para2_why",
    "title": "第二段 · 原因（机制句池）",
-   "subtitle": "不背整段：1 句引入 + 从下面 52 条机制里挑 3 条（每条都是一个完整原因）",
-   "group": "大作文 · 第一段（图表描述）",
+   "subtitle": "不背整段：1 句引入 + 从下面 58 条机制里挑 3 条（每条都是一个完整原因）",
+   "group": "大作文 · 第二段（原因分析）",
    "en": "This phenomenon can be attributed to a combination of factors.",
    "cn": "这一现象可归因于多种因素的综合作用。",
    "en_struct": [
@@ -1298,16 +1636,18 @@
      "cn": "这些设施不仅帮助目标使用者，也惠及老年人和行动不便的人。",
      "freq": 3,
      "tag": "溢出效应",
-     "fit": 33,
-     "cat": "万能逻辑"
+     "fit": 8,
+     "cat": "万能逻辑",
+     "scope": "无障碍 / 公共设施"
     },
     {
      "en": "Timely assistance can make a difference in an emergency.",
      "cn": "及时的帮助在紧急情况下能起决定作用。",
      "freq": 3,
      "tag": "时效紧迫",
-     "fit": 32,
-     "cat": "万能逻辑"
+     "fit": 7,
+     "cat": "万能逻辑",
+     "scope": "急救 / 应急"
     },
     {
      "en": "Courses open to communities and workplaces encourage more people to take part.",
@@ -1330,8 +1670,57 @@
      "cn": "他们能运用在海外所学，同时受益于本地经验。",
      "freq": 3,
      "tag": "互补优势",
-     "fit": 29,
-     "cat": "万能逻辑"
+     "fit": 6,
+     "cat": "万能逻辑",
+     "scope": "留学 / 跨境"
+    },
+    {
+     "en": "Falling birth rates have gradually reduced the share of younger people in the population.",
+     "cn": "出生率下降，逐渐压低了年轻人口在总人口中的比重。",
+     "freq": 3,
+     "tag": "人口转型",
+     "fit": 28,
+     "cat": "社会与人口"
+    },
+    {
+     "en": "Many people now value living close to their families more than a higher salary elsewhere.",
+     "cn": "如今许多人更看重离家人近，而不是在别处拿更高薪水。",
+     "freq": 3,
+     "tag": "亲情",
+     "fit": 27,
+     "cat": "社会与人口"
+    },
+    {
+     "en": "A well-known employer signals training and recognition that smaller firms can hardly match.",
+     "cn": "知名企业意味着培训与认可，这是小公司难以提供的。",
+     "freq": 3,
+     "tag": "名企声誉",
+     "fit": 26,
+     "cat": "经济与市场"
+    },
+    {
+     "en": "Discounts and promotional offers lower the barrier for first-time buyers.",
+     "cn": "折扣与促销活动，降低了首次购买者的门槛。",
+     "freq": 3,
+     "tag": "促销",
+     "fit": 25,
+     "cat": "经济与市场"
+    },
+    {
+     "en": "Physical stores still offer immediate access that online delivery cannot match.",
+     "cn": "实体店仍能提供线上配送无法比拟的即时可得。",
+     "freq": 3,
+     "tag": "线下即时",
+     "fit": 24,
+     "cat": "经济与市场"
+    },
+    {
+     "en": "Better facilities, from charging points to step-free access, have removed practical obstacles.",
+     "cn": "从充电桩到无障碍通道，设施改善消除了实际障碍。",
+     "freq": 3,
+     "tag": "硬件设施",
+     "fit": 23,
+     "cat": "供给与政策"
     }
    ],
    "pool_groups": [
@@ -1397,7 +1786,7 @@
    "tips": [
     "万能开头：a combination of factors 不承诺条数，什么年份都成立；想点明条数再换 two / three / several major factors（必须与正文条数一致）。第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。",
     "引入句 10 词 + 机制句挑 3 条 ≈ 55~62 词。",
-    "每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 52 条都写。",
+    "每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 58 条都写。",
     "挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。"
    ]
   },
@@ -1555,7 +1944,8 @@
      "cn": "纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。",
      "freq": 2,
      "tag": "媒体·展示",
-     "fit": 1
+     "fit": 1,
+     "scope": "媒体展示"
     },
     {
      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
@@ -1893,7 +2283,8 @@
      "tag": "媒体·展示",
      "side": "正",
      "fit": 1,
-     "cat": "媒体"
+     "cat": "媒体",
+     "scope": "媒体展示"
     },
     {
      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
@@ -1920,7 +2311,8 @@
      "tag": "学校/家庭",
      "side": "负",
      "fit": 0,
-     "cat": "学校与家庭"
+     "cat": "学校与家庭",
+     "scope": "习惯养成"
     },
     {
      "en": "Parents who ignore their own habits cannot expect children to do better.",
@@ -1929,7 +2321,8 @@
      "tag": "家庭",
      "side": "负",
      "fit": 2,
-     "cat": "学校与家庭"
+     "cat": "学校与家庭",
+     "scope": "家庭教育"
     },
     {
      "en": "Platforms should label or restrict content that encourages misuse.",
@@ -1938,7 +2331,8 @@
      "tag": "企业/平台",
      "side": "负",
      "fit": 3,
-     "cat": "企业与平台"
+     "cat": "企业与平台",
+     "scope": "内容平台"
     },
     {
      "en": "Media should report the real risks rather than treat them as scare stories.",
@@ -1947,7 +2341,8 @@
      "tag": "媒体",
      "side": "负",
      "fit": 3,
-     "cat": "媒体"
+     "cat": "媒体",
+     "scope": "风险报道"
     },
     {
      "en": "Individuals need to watch their own habits instead of assuming they are safe.",
@@ -1965,7 +2360,8 @@
      "tag": "企业·雇主",
      "side": "负",
      "fit": 2,
-     "cat": "企业与平台"
+     "cat": "企业与平台",
+     "scope": "员工满意度"
     },
     {
      "en": "A company that ignores this gap will lose the very people it most depends on.",
@@ -1983,7 +2379,8 @@
      "tag": "学校·课程",
      "side": "负",
      "fit": 0,
-     "cat": "学校与家庭"
+     "cat": "学校与家庭",
+     "scope": "校园 / 使用安全"
     },
     {
      "en": "A stable routine at home leaves less room for the problem to grow.",
@@ -1992,7 +2389,8 @@
      "tag": "家庭·作息",
      "side": "负",
      "fit": 0,
-     "cat": "学校与家庭"
+     "cat": "学校与家庭",
+     "scope": "家庭作息"
     },
     {
      "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
@@ -2001,7 +2399,8 @@
      "tag": "个人·记录",
      "side": "负",
      "fit": 3,
-     "cat": "个人"
+     "cat": "个人",
+     "scope": "日常自控"
     },
     {
      "en": "We should bear in mind that what is at stake goes far beyond the figures themselves.",
@@ -2177,28 +2576,32 @@
      "cn": "学校和家庭应在坏习惯形成之前提醒年轻人。",
      "freq": 3,
      "tag": "学校/家庭",
-     "fit": 0
+     "fit": 0,
+     "scope": "习惯养成"
     },
     {
      "en": "Parents who ignore their own habits cannot expect children to do better.",
      "cn": "父母若放任自己的坏习惯，就别指望孩子能做得更好。",
      "freq": 3,
      "tag": "家庭",
-     "fit": 0
+     "fit": 0,
+     "scope": "家庭教育"
     },
     {
      "en": "Platforms should label or restrict content that encourages misuse.",
      "cn": "平台应对诱导滥用的内容加以标注或限制。",
      "freq": 3,
      "tag": "企业/平台",
-     "fit": 0
+     "fit": 0,
+     "scope": "内容平台"
     },
     {
      "en": "Media should report the real risks rather than treat them as scare stories.",
      "cn": "媒体应报道真实风险，而不是把它当成吓人的故事。",
      "freq": 3,
      "tag": "媒体",
-     "fit": 0
+     "fit": 0,
+     "scope": "风险报道"
     },
     {
      "en": "Individuals need to watch their own habits instead of assuming they are safe.",
@@ -2212,7 +2615,8 @@
      "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
      "freq": 2,
      "tag": "企业·雇主",
-     "fit": 2
+     "fit": 2,
+     "scope": "员工满意度"
     },
     {
      "en": "A company that ignores this gap will lose the very people it most depends on.",
@@ -2226,21 +2630,24 @@
      "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
      "freq": 2,
      "tag": "学校·课程",
-     "fit": 0
+     "fit": 0,
+     "scope": "校园 / 使用安全"
     },
     {
      "en": "A stable routine at home leaves less room for the problem to grow.",
      "cn": "家中规律的生活作息，会让问题更难滋生。",
      "freq": 2,
      "tag": "家庭·作息",
-     "fit": 0
+     "fit": 0,
+     "scope": "家庭作息"
     },
     {
      "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
      "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
      "freq": 2,
      "tag": "个人·记录",
-     "fit": 3
+     "fit": 3,
+     "scope": "日常自控"
     },
     {
      "en": "We should bear in mind that what is at stake goes far beyond the figures themselves.",
@@ -2474,7 +2881,8 @@
      "cn": "纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。",
      "freq": 2,
      "tag": "媒体·展示",
-     "fit": 1
+     "fit": 1,
+     "scope": "媒体展示"
     },
     {
      "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
@@ -2495,28 +2903,32 @@
      "cn": "学校和家庭应在坏习惯形成之前提醒年轻人。",
      "freq": 3,
      "tag": "学校/家庭",
-     "fit": 0
+     "fit": 0,
+     "scope": "习惯养成"
     },
     {
      "en": "Parents who ignore their own habits cannot expect children to do better.",
      "cn": "父母若放任自己的坏习惯，就别指望孩子能做得更好。",
      "freq": 3,
      "tag": "家庭",
-     "fit": 2
+     "fit": 2,
+     "scope": "家庭教育"
     },
     {
      "en": "Platforms should label or restrict content that encourages misuse.",
      "cn": "平台应对诱导滥用的内容加以标注或限制。",
      "freq": 3,
      "tag": "企业/平台",
-     "fit": 3
+     "fit": 3,
+     "scope": "内容平台"
     },
     {
      "en": "Media should report the real risks rather than treat them as scare stories.",
      "cn": "媒体应报道真实风险，而不是把它当成吓人的故事。",
      "freq": 3,
      "tag": "媒体",
-     "fit": 3
+     "fit": 3,
+     "scope": "风险报道"
     },
     {
      "en": "Individuals need to watch their own habits instead of assuming they are safe.",
@@ -2530,7 +2942,8 @@
      "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
      "freq": 2,
      "tag": "企业·雇主",
-     "fit": 2
+     "fit": 2,
+     "scope": "员工满意度"
     },
     {
      "en": "A company that ignores this gap will lose the very people it most depends on.",
@@ -2544,21 +2957,24 @@
      "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
      "freq": 2,
      "tag": "学校·课程",
-     "fit": 0
+     "fit": 0,
+     "scope": "校园 / 使用安全"
     },
     {
      "en": "A stable routine at home leaves less room for the problem to grow.",
      "cn": "家中规律的生活作息，会让问题更难滋生。",
      "freq": 2,
      "tag": "家庭·作息",
-     "fit": 0
+     "fit": 0,
+     "scope": "家庭作息"
     },
     {
      "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
      "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
      "freq": 2,
      "tag": "个人·记录",
-     "fit": 3
+     "fit": 3,
+     "scope": "日常自控"
     },
     {
      "en": "We should bear in mind that what is at stake goes far beyond the figures themselves.",

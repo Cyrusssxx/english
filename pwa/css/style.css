@@ -5780,6 +5780,14 @@ html.dark .wr-pool-name { color: #7cc0ff; }
 html.dark .wr-side-pos { color: #6ee7b7; background: rgba(16,185,129,.14); border-color: rgba(16,185,129,.3); }
 html.dark .wr-side-neg { color: #fb923c; background: rgba(251,146,60,.14); border-color: rgba(251,146,60,.3); }
 
+/* 「专用·X」徽标（2026-11-20）：句子绑定特定话题，只在同类题里用 */
+.wr-scope {
+    display: inline-block; font-size: .62rem; font-weight: 700; line-height: 1.5;
+    padding: 0 5px; border-radius: 3px; white-space: nowrap;
+    color: #b91c1c; background: rgba(220,38,38,.10); border: 1px solid rgba(220,38,38,.25);
+}
+html.dark .wr-scope { color: #fca5a5; background: rgba(248,113,113,.16); border-color: rgba(248,113,113,.32); }
+
 /* ---------- 押题范文：骨架 / 填槽 双色标注 + 全文逐词可点 ---------- */
 .yt-skel {
     background: rgba(37, 99, 235, .10);

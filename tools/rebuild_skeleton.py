@@ -101,6 +101,80 @@ DYN = [
               'From 2012 to 2015, it rose steadily from 8.80% to 10.25%, and then climbed sharply to 25.40%.')},
 ]
 
+# ══════════ 一·B、双图题（2026-11-20 补）══════════
+# 审查发现：图表 10 篇里 NO11（无障碍）/ NO12（急救）/ NO13（留学）是「漫画给场景 + 图表给数据」，
+# NO14 是「折线 + 饼图」并列 —— 原模板只有单图静态 / 动态两套，这 4 篇第一段无骨架可套。
+DBL_CARTOON = sent('The cartoon above depicts {{scene}}, while the chart below clearly illustrates how {{topic}} is distributed.',
+                   '漫画描绘了 {{scene}}，而下方的图表清晰地展示了 {{topic}} 的分布情况。',
+                   [[S('The cartoon above', 't'), S(' depicts', 'p'), S(' {{scene}}', 'o'), S(', while ', 'trans'),
+                     S('the chart below', 't'), S(' clearly illustrates', 'p'), S(' how {{topic}} is distributed', 'o'), S('.', '')]])
+
+DBL_CARTOON_DYN = sent('The cartoon above depicts {{scene}}, while the chart below clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.',
+                       '漫画描绘了 {{scene}}，而下方的图表清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。',
+                       [[S('The cartoon above', 't'), S(' depicts', 'p'), S(' {{scene}}', 'o'), S(', while ', 'trans'),
+                         S('the chart below', 't'), S(' clearly illustrates', 'p'), S(' the changes in {{topic}}', 'o'),
+                         S(' from {{time1}} to {{time2}}', 'o'), S('.', '')]])
+
+DBL_TWO = sent('The two charts above clearly illustrate the changes in {{topic1}} and {{topic2}} respectively from {{time1}} to {{time2}}.',
+               '上述两张图分别清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic1}} 与 {{topic2}} 的变化。',
+               [[S('The two charts above', 't'), S(' clearly illustrate', 'p'), S(' the changes in {{topic1}} and {{topic2}}', 'o'),
+                 S(' respectively', 'o'), S(' from {{time1}} to {{time2}}', 'o'), S('.', '')]])
+
+DYN_TAIL = ('During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. '
+            'By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.')
+DYN_TAIL_CN = '在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。'
+
+# 静态段的两套：① 原标准静态（整段）② 漫画 + 图表
+STATIC_SKELS = [
+    {'label': '① 占比分布（标准静态）',
+     'years': '2012 · 2015 · 2016 · 2018 · 2020 · 2021 · 2024 · 2025 · 2026',
+     'en': ' '.join(x['en'] for x in STATIC),
+     'cn': ''.join(x['cn'] for x in STATIC),
+     'struct': [x['struct'] for x in STATIC],
+     'alts': {'takes the lead': 'ranks first / comes top', 'comes last': 'ranks last / trails behind'},
+     'demo': ('The pie chart above clearly illustrates how the purposes of travel are distributed. '
+              'Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims '
+              'at 33% and 15% respectively, while fostering independence comes last at 6%.')},
+    {'label': '② 双图 · 漫画 + 图表',
+     'years': 'NO11 无障碍 / NO12 急救（漫画给场景、图表给占比）',
+     'en': DBL_CARTOON['en'] + ' ' + STATIC[1]['en'],
+     'cn': DBL_CARTOON['cn'] + STATIC[1]['cn'],
+     'struct': [DBL_CARTOON['struct'], STATIC[1]['struct']],
+     'alts': {'depicts': 'shows / presents', 'while': 'whereas / and'},
+     'demo': ('The cartoon above depicts a wheelchair user approaching a public building by an accessible route, '
+              'while the chart below clearly illustrates how accessible facilities in public places are distributed. '
+              'Step-free entrances take the lead, accounting for 72%, followed by lifts and ramps at 61% and 55% respectively, '
+              'while tactile paving comes last at 33%.')},
+]
+
+# 动态段追加的两套：⑤ 漫画 + 趋势图 ⑥ 两张图表并列
+DYN_SKELS_EXTRA = [
+    {'label': '⑤ 双图 · 漫画 + 趋势图',
+     'years': 'NO13 留学回国（漫画 + 柱状）',
+     'en': DBL_CARTOON_DYN['en'] + ' ' + DYN_TAIL,
+     'cn': DBL_CARTOON_DYN['cn'] + DYN_TAIL_CN,
+     'struct': [DBL_CARTOON_DYN['struct'],
+                [S('During this period', 'trans'), S(', {{item1}}', 't'), S(' rose sharply', 'p'), S(' from {{num1}} to {{num2}}', 'o'), S('.', '')],
+                [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' saw', 'p'), S(' a modest increase', 'o'),
+                 S(', climbing from {{num3}} to {{num4}} over the same period', 'o'), S('.', '')]],
+     'alts': {'depicts': 'shows / presents'},
+     'demo': ('The cartoon above depicts overseas students returning to China, while the chart below clearly illustrates the '
+              'changes in the number of returnees from 2012 to 2022. During this period, the number rose sharply from 0.27 million '
+              'to 0.6 million. By contrast, the figure for students going abroad saw a modest increase, climbing from 0.4 million '
+              'to 0.7 million over the same period.')},
+    {'label': '⑥ 两张图表并列',
+     'years': 'NO14 平均寿命 + 老龄化（折线 + 饼图）',
+     'en': DBL_TWO['en'] + ' ' + 'During this period, {{topic1}} climbed steadily from {{num1}} to {{num2}}, while the share of {{topic2}} rose to {{percent1}}.',
+     'cn': DBL_TWO['cn'] + '在此期间，{{topic1}} 从 {{num1}} 稳步升至 {{num2}}，而 {{topic2}} 的比重升至 {{percent1}}。',
+     'struct': [DBL_TWO['struct'],
+                [S('During this period', 'trans'), S(', {{topic1}}', 't'), S(' climbed steadily', 'p'), S(' from {{num1}} to {{num2}}', 'o'),
+                 S(', while ', 'trans'), S('the share of {{topic2}}', 't'), S(' rose', 'p'), S(' to {{percent1}}', 'o'), S('.', '')]],
+     'alts': {'climbed steadily': 'rose steadily / kept rising'},
+     'demo': ('The two charts above clearly illustrate the changes in average life expectancy and the share of the elderly '
+              'population in China from 2010 to 2023. During this period, average life expectancy climbed steadily from 74.8 to 78.6, '
+              'while the share of the population aged 65 and over rose to 15.4%.')},
+]
+
 # ══════════ 二、第二段：1 句引入 + 机制句池 ══════════
 # 万能开头句（2026-09-16 审计后定稿）：a combination of factors 不承诺条数，17 年全部成立
 PARA2_SKEL = sent('This phenomenon can be attributed to a combination of factors.',
@@ -232,6 +306,21 @@ MECH = [
      '研究、技术和商业的发展提供了有吸引力的机会。'),                               # NO13 二段②
     (3, '互补优势', 'They can apply what they learned abroad while benefiting from local knowledge.',
      '他们能运用在海外所学，同时受益于本地经验。'),                         # NO13 二段③
+    # ── 2026-11-20 第四批：可套用性审查补的 6 个空白角度 ──
+    # 逐句核对 NO6-15 第二段 31 条机制后，发现这 6 个角度原池完全没有
+    # （出生率 / 亲情 / 声誉 / 促销 / 线下即时 / 硬件设施）。仍追加末尾，老句下标与 f:tag 不动。
+    (3, '人口转型', 'Falling birth rates have gradually reduced the share of younger people in the population.',
+     '出生率下降，逐渐压低了年轻人口在总人口中的比重。'),                  # NO14 二段③
+    (3, '亲情', 'Many people now value living close to their families more than a higher salary elsewhere.',
+     '如今许多人更看重离家人近，而不是在别处拿更高薪水。'),              # NO13 二段④
+    (3, '名企声誉', 'A well-known employer signals training and recognition that smaller firms can hardly match.',
+     '知名企业意味着培训与认可，这是小公司难以提供的。'),              # NO9 二段④
+    (3, '促销', 'Discounts and promotional offers lower the barrier for first-time buyers.',
+     '折扣与促销活动，降低了首次购买者的门槛。'),                        # NO15 二段④
+    (3, '线下即时', 'Physical stores still offer immediate access that online delivery cannot match.',
+     '实体店仍能提供线上配送无法比拟的即时可得。'),                  # NO15 二段⑤
+    (3, '硬件设施', 'Better facilities, from charging points to step-free access, have removed practical obstacles.',
+     '从充电桩到无障碍通道，设施改善消除了实际障碍。'),              # NO7 二段② / NO11 二段③
 ]
 
 # ── 第二段机制句池分类（2026-11-20）──
@@ -264,6 +353,18 @@ MECH_CAT = {
     '路径依赖': '观念与文化', '公平权利': '观念与文化',
     '供给多样': '供给与政策', '门槛降低': '供给与政策',
     '溢出效应': '万能逻辑', '时效紧迫': '万能逻辑', '互补优势': '万能逻辑',
+    # 可套用性审查补的空白角度（2026-11-20 第四批）
+    '人口转型': '社会与人口', '亲情': '社会与人口',
+    '名企声誉': '经济与市场', '促销': '经济与市场', '线下即时': '经济与市场',
+    '硬件设施': '供给与政策',
+}
+
+# 场景绑定句：措辞取自范文原句，但换题就偏（无障碍设施 / 急救 / 留学）。
+# 前端在 tag 旁标「专用·X」，并把 fit 压到组内靠后 —— 它们是某类题的首选，不是万能句。
+MECH_SCOPE = {
+    '溢出效应': '无障碍 / 公共设施',
+    '时效紧迫': '急救 / 应急',
+    '互补优势': '留学 / 跨境',
 }
 MECH_GROUPS = [
     ('万能逻辑', '先看这组：不带槽，任何题接上都成立'),
@@ -388,9 +489,15 @@ P2_FIT = {'观念': 15, '收入': 6, '便利': 6, '学校': 6, '职场时间': 4
           '健康意识': 8, '家庭结构': 8, '教育扩张': 7, '营销': 7,
           '信息不对称': 6, '从众焦虑': 6, '短期行为': 5,
           # 图表范文原句直取（2026-11-20 第三批）：原句措辞最稳 → fit 最高，压过押题句置顶
+          # 但「溢出效应 / 时效紧迫 / 互补优势」是场景绑定句（无障碍 / 急救 / 留学），
+          # 2026-11-20 审查后降权：只在对应类型题里首选，不能当万能句置顶（见 MECH_SCOPE）
           '技能更新': 40, '使用成本': 39, '路径依赖': 38, '供给多样': 37,
-          '时间灵活': 36, '运营效率': 35, '公平权利': 34, '溢出效应': 33,
-          '时效紧迫': 32, '门槛降低': 31, '机会供给': 30, '互补优势': 29}
+          '时间灵活': 36, '运营效率': 35, '公平权利': 34,
+          '门槛降低': 31, '机会供给': 30,
+          '溢出效应': 8, '时效紧迫': 7, '互补优势': 6,
+          # 可套用性审查补的 6 个空白角度（2026-11-20 第四批）：排在直取句之后、押题句之前
+          '人口转型': 28, '亲情': 27, '名企声誉': 26,
+          '促销': 25, '线下即时': 24, '硬件设施': 23}
 P3P_FIT = {'个人': 6, '政府·长效': 5, '政府': 4, '学校': 4, '观念': 4, '企业/平台': 3,
            '媒体': 3, '个人·习惯': 3, '家庭': 2, '平台·设计': 2, '媒体·展示': 1,
            # 原范文提炼的通用功能句（2026-11-20）：无槽、三段通用 → fit 最高，前端置顶
@@ -483,6 +590,37 @@ P3_GROUPS = [
     ('观念与习惯', '看法变了、习惯改了，问题才真正解决'),
 ]
 
+# 话题绑定句：tag 是通用主体（企业/平台/学校/媒体），但句子本身写死了某个具体话题
+# （员工满意度 / 内容平台 / 校园使用安全 / 家庭作息…）。前端标「专用·X」。
+# 按句首前缀匹配（同一 tag 下有通用句，不能按 tag 一刀切）。
+P3_SCOPE = {
+    'Employers should find out why experienced staff': '员工满意度',
+    'Employers should provide fair recruitment': '招聘 / 海归',
+    'Platforms should label or restrict content': '内容平台',
+    'Schools and families should warn young people': '习惯养成',
+    'Classes on {{topic}} can help students': '校园 / 使用安全',
+    'A stable routine at home': '家庭作息',
+    'Media should report the real risks': '风险报道',
+    'Parents who ignore their own habits': '家庭教育',
+    'Keeping a simple record of daily use': '日常自控',
+    'Documentaries and short videos can show': '媒体展示',
+}
+
+
+def _scope_of(en):
+    for k in P3_SCOPE:
+        if en.startswith(k):
+            return P3_SCOPE[k]
+    return None
+
+
+def _with_scope(rec, en):
+    """句池条目补 scope：二级池按 tag 查 MECH_SCOPE，三级池按句首前缀查 P3_SCOPE。"""
+    sc = MECH_SCOPE.get(rec.get('tag')) or _scope_of(en)
+    if sc:
+        rec['scope'] = sc
+    return rec
+
 
 def _p3_card(label, years, sents, alts, demo):
     """把一套 P3 骨架转成 skeletons 卡片（与 chart_static 的骨架同构，前端零改动）"""
@@ -522,9 +660,9 @@ def merge_p3_pool():
             if e in seen:
                 continue
             seen.add(e)
-            out.append({'en': e, 'cn': c, 'freq': f, 'tag': t, 'side': side,
-                        'fit': max(P3P_FIT.get(t, 0), P3N_FIT.get(t, 0)),
-                        'cat': P3_CAT[t]})
+            out.append(_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'side': side,
+                                    'fit': max(P3P_FIT.get(t, 0), P3N_FIT.get(t, 0)),
+                                    'cat': P3_CAT[t]}, e))
     return out
 
 
@@ -541,6 +679,7 @@ def main():
     # 第一段
     s = by_id['chart_static']
     set_skeleton(s, STATIC)
+    s['skeletons'] = STATIC_SKELS        # ① 标准静态 + ② 漫画+图表（双图题）
     s['alts'] = {'takes the lead': 'ranks first / comes top', 'comes last': 'ranks last / trails behind'}
     s['demo'] = ('The pie chart above clearly illustrates how the purposes of travel are distributed. '
                  'Appreciating the scenery takes the lead, accounting for 37%, followed by relieving pressure and other aims '
@@ -553,7 +692,7 @@ def main():
          'cn': '组与组之间差别悬殊：{{item1}} 高达 {{percent1}}，而 {{item3}} 只有 {{percent3}}。', 'freq': 3, 'tag': '交叉表·组间对比'},
     ]
     s = by_id['chart_dynamic']
-    s['skeletons'] = DYN
+    s['skeletons'] = DYN + DYN_SKELS_EXTRA   # ①~④ 单图走势 + ⑤ 漫画+趋势图 + ⑥ 两图并列
     set_skeleton(s, [{'en': DYN[1]['en'], 'cn': DYN[1]['cn'], 'struct': DYN[1]['struct']}])
     s['en'] = DYN[1]['en']          # 兼容：sec['en'] 保留中间那套
     s['cn'] = DYN[1]['cn']
@@ -574,14 +713,14 @@ def main():
     secs.insert(2, {
         'id': 'para2_why', 'title': '第二段 · 原因（机制句池）',
         'subtitle': '不背整段：1 句引入 + 从下面 %d 条机制里挑 3 条（每条都是一个完整原因）' % len(MECH),
-        'group': secs[0].get('group', ''),
+        'group': '大作文 · 第二段（原因分析）',
         'en': PARA2_SKEL['en'], 'cn': PARA2_SKEL['cn'], 'en_struct': [PARA2_SKEL['struct']],
         'alts': PARA2_SKEL['alts'],
         'linkers': P2_LINKERS,
         'framework': P2_FRAMEWORK,
         'priority': True,
-        'sentences': [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P2_FIT.get(t, 0),
-                       'cat': MECH_CAT[t]} for f, t, e, c in MECH],
+        'sentences': [_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P2_FIT.get(t, 0),
+                                   'cat': MECH_CAT[t]}, e) for f, t, e, c in MECH],
         'pool_groups': [{'name': n, 'desc': d} for n, d in MECH_GROUPS],
         'phrases': [
             ['be attributed to', '归因于（P2 引入句）'],
@@ -608,7 +747,7 @@ def main():
     s['skeletons'] = P3_SKELS            # 三套骨架前移并列
     s['pool_all'] = merge_p3_pool()      # 26 条合并句池（仅展示；sentences 保持原样供 apply 取句）
     s['pool_groups'] = [{'name': n, 'desc': d} for n, d in P3_GROUPS]
-    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3P_FIT.get(t, 0)} for f, t, e, c in SUBJ_POS + P3_EXTRA]
+    s['sentences'] = [_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3P_FIT.get(t, 0)}, e) for f, t, e, c in SUBJ_POS + P3_EXTRA]
     s['tips'] = ['三套骨架按题目极性选一套，不要混用：趋势向好选①，问题要治选②，说不清好坏（双面 / 现状分布）选③。',
                  '骨架只给首尾两句，中间对策从句池挑 1~2 句，拼起来 55~70 词。',
                  '同一条 tag 在正/负两版里是两种语气（如「个人」正面写「选适合自己的」、负面写「管好自己的习惯」），按骨架极性挑。']
@@ -619,7 +758,7 @@ def main():
     s['alts'] = {'Unless effective measures are taken': 'If left unchecked / Without timely intervention', 'may well get worse': 'is unlikely to correct itself'}
     s['linkers'] = P3_LINKERS
     s['framework'] = P3_FW_NEG
-    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3N_FIT.get(t, 0)} for f, t, e, c in SUBJ_NEG + P3_EXTRA]
+    s['sentences'] = [_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3N_FIT.get(t, 0)}, e) for f, t, e, c in SUBJ_NEG + P3_EXTRA]
 
     # 第三档：中性版（2026-11-20）——立场不表态，主体句复用正负两版并集
     mid = {x['id']: x for x in secs}.get('para3_neutral') or {}
@@ -638,7 +777,7 @@ def main():
                  '主体句直接从下面正负两版的并集里挑，语气中性的（观念 / 政府 / 学校 / 个人）优先。'],
     })
     set_skeleton(mid, P3_MID)
-    mid['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3M_FIT.get(t, 0)}
+    mid['sentences'] = [_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3M_FIT.get(t, 0)}, e)
                         for f, t, e, c in SUBJ_POS + SUBJ_NEG + P3_EXTRA]
     if 'para3_neutral' not in {x['id'] for x in secs}:
         secs.append(mid)
