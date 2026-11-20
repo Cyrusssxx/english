@@ -39,13 +39,19 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   if (lines.length !== expected) fail('必背句 DOM 数 ' + lines.length + ' != 数据 ' + expected);
   else pass('集中清单渲染 ' + lines.length + ' 句必背（core+must）');
 
-  // 2. 骨架组默认展开、类型组默认收起
+  // 2. 按段落分三组（第一段/第二段/第三段），默认全展开
   const grps = [...d.querySelectorAll('#swDrill .sw-drill-grp')];
-  if (!grps.length) fail('无必背分组');
-  else pass('分组 ' + grps.length + ' 个（4 骨架 + 各类型）');
-  const openCore = grps.filter(g => g.hasAttribute('open')).length;
-  if (openCore < 4) fail('骨架组未默认展开（open=' + openCore + '）');
-  else pass('骨架组默认展开');
+  const gtitles = grps.map(g => (g.querySelector('.sw-drill-gt') || {}).textContent || '');
+  if (grps.length !== 3) fail('段落分组数错: ' + grps.length + '（应 3）');
+  else pass('按段落分 3 组');
+  ['第一段', '第二段', '第三段'].forEach(t => {
+    if (!gtitles.some(x => x.indexOf(t) >= 0)) fail('缺段落组标题: ' + t);
+  });
+  if (grps.some(g => !g.hasAttribute('open'))) fail('段落组未全部默认展开');
+  else pass('三组标题齐全（第一段/第二段/第三段）且默认全展开');
+  const subs = d.querySelectorAll('#swDrill .sw-drill-sub-t');
+  if (!subs.length) fail('段内缺细分小节标题');
+  else pass('段内保留细分小节 ' + subs.length + ' 个');
 
   // 3. 中文默认隐藏、按钮可切换
   const box = d.getElementById('swDrill');

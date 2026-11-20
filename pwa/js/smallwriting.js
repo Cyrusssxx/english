@@ -610,7 +610,7 @@ async function swInit() {
 
 
 /* ==================== 24 句必背 · 集中清单（背诵主入口） ====================
-   只读 tier=core/must 的句子，按「问候→来意→引出→类型展开→收尾」成文顺序铺开。
+   只读 tier=core/must 的句子，按「第一段 / 第二段 / 第三段」分类，段内保留细分小节。
    纯展示：不写 swKeyMap、不挂 data-k，故不影响既有划词高亮/批注的键位。 */
 const SW_DRILL_CN_KEY = 'sw_drill_cn_v1';
 const SW_DRILL_FILL_KEY = 'sw_drill_fill_v1';
@@ -625,7 +625,7 @@ function swDrillEn(en) {
     }).join('');
 }
 
-/** 按成文顺序取必背句：4 骨架（p1s1/p1s2/p2s1/p3）+ 每类型 s2/s3 */
+/** 按段落取必背句，分三段；每段内保留细分小节（小节只是标题，不再各自折叠） */
 function swDrillGroups() {
     const pick = (bankId) => {
         const b = swBank(bankId);
@@ -633,37 +633,48 @@ function swDrillGroups() {
         return (b.items || []).map((it, i) => ({ it: it, key: bankId + '#' + i }))
             .filter(x => x.it.tier === 'core' || x.it.tier === 'must');
     };
-    const groups = [];
-    const coreBanks = [
-        ['p1s1', '① 问候 / 自我介绍'], ['p1s2', '② 表明来意'],
-        ['p2s1', '③ 第二段引出'], ['p3', '⑥ 收尾 / 客套'],
-    ];
-    coreBanks.forEach(pair => {
-        const rows = pick(pair[0]);
-        if (rows.length) groups.push({ title: pair[1], core: true, rows: rows });
-    });
+    const sub = (title, bankIds) => {
+        const rows = bankIds.flatMap(pick);
+        return rows.length ? { title: title, rows: rows } : null;
+    };
+    // 第一段：问候 + 来意
+    const p1 = [sub('问候 / 自我介绍', ['p1s1']), sub('表明来意', ['p1s2'])].filter(Boolean);
+    // 第二段：通用引出 + 各类型 s2/s3
+    const p2 = [sub('通用引出', ['p2s1'])];
     (SW.types || []).forEach(t => {
-        const rows = (t.banks || []).filter(id => /^p2_/.test(id)).flatMap(id => pick(id));
-        if (rows.length) groups.push({ title: '④⑤ ' + t.name, core: false, rows: rows });
+        const s = sub(t.name, (t.banks || []).filter(id => /^p2_/.test(id)));
+        if (s) p2.push(s);
     });
-    return groups;
+    // 第三段：收尾
+    const p3 = [sub('收尾 / 客套', ['p3'])].filter(Boolean);
+    return [
+        { title: '第一段 · 开头', core: true, subs: p1 },
+        { title: '第二段 · 主体', core: false, subs: p2.filter(Boolean) },
+        { title: '第三段 · 收尾', core: true, subs: p3 },
+    ];
 }
 
 function swDrillRender() {
     const box = document.getElementById('swDrill');
     if (!box || !SW) return;
     const groups = swDrillGroups();
-    const total = groups.reduce((n, g) => n + g.rows.length, 0);
+    const total = groups.reduce((n, g) => n + g.subs.reduce((s, x) => s + x.rows.length, 0), 0);
     let h = '<div class="sw-drill-sum">共 <b>' + total + '</b> 句 · ⭐⭐ 骨架 4 句全信通用 + ⭐ 必背每类型 2 句'
         + ' · <b>' + (SW.stats ? (SW.stats.core_words + SW.stats.must_words) : 398) + '</b> 词，30 天约 '
         + (SW.stats ? ((SW.stats.core_words + SW.stats.must_words) / 30).toFixed(1) : '13.3') + ' 词/天</div>';
-    h += groups.map(g => '<details class="sw-drill-grp"' + (g.core ? ' open' : '') + '>'
-        + '<summary><span class="sw-drill-gt">' + (g.core ? '⭐⭐ ' : '⭐ ') + swEsc(g.title) + '</span>'
-        + '<span class="sw-drill-gn">' + g.rows.length + ' 句</span></summary>'
-        + '<ol class="sw-drill-list">' + g.rows.map(r => '<li class="sw-drill-line">'
-            + '<div class="sw-drill-en">' + swDrillEn(r.it.en) + '</div>'
-            + '<div class="sw-drill-cn">' + swPh(r.it.cn || '') + '</div>'
-            + '</li>').join('') + '</ol></details>').join('');
+    h += groups.map(g => {
+        const n = g.subs.reduce((s, x) => s + x.rows.length, 0);
+        return '<details class="sw-drill-grp" open>'
+            + '<summary><span class="sw-drill-gt">' + swEsc(g.title) + '</span>'
+            + '<span class="sw-drill-gn">' + n + ' 句</span></summary>'
+            + g.subs.map(s => '<div class="sw-drill-sub">'
+                + '<div class="sw-drill-sub-t">' + swEsc(s.title) + '</div>'
+                + '<ol class="sw-drill-list">' + s.rows.map(r => '<li class="sw-drill-line">'
+                    + '<div class="sw-drill-en">' + swDrillEn(r.it.en) + '</div>'
+                    + '<div class="sw-drill-cn">' + swPh(r.it.cn || '') + '</div>'
+                    + '</li>').join('') + '</ol></div>').join('')
+            + '</details>';
+    }).join('');
     box.innerHTML = h;
     swDrillApply();
 }

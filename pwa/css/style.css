@@ -5880,3 +5880,9 @@ body.sw-drill-on .sw-drill-ph { color: transparent; background: rgba(29,111,208,
 html.dark body.sw-drill-on .sw-drill-ph { background: rgba(124,192,255,.08); }
 body.sw-drill-on .sw-drill-ph.on { color: var(--primary); background: rgba(29,111,208,.12); user-select: auto; }
 html.dark body.sw-drill-on .sw-drill-ph.on { color: #8fb4d8; background: rgba(124,192,255,.14); }
+
+/* 24 句必背按段落分类：段内小节标题 + 编号在整段内连续（不因小节重置） */
+.sw-drill-grp[open] { counter-reset: swdrill; }
+#swDrill .sw-drill-list { counter-reset: none; }   /* 覆盖原 list 重置，让编号按整段连续 */
+.sw-drill-sub + .sw-drill-sub { margin-top: 8px; border-top: 1px solid var(--border, rgba(0,0,0,.08)); padding-top: 6px; }
+.sw-drill-sub-t { font-size: .78rem; font-weight: 600; color: var(--primary); padding: 6px 14px 0; letter-spacing: .02em; }
