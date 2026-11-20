@@ -5766,3 +5766,16 @@ html.dark .wr-pool-name { color: #7cc0ff; }
     .wr-pool-head { gap: 5px 8px; }
     .wr-pool-desc { flex-basis: 100%; order: 3; }
 }
+
+/* ── 第三段共用句池：标注句子属于哪套骨架（正 / 负 / 通用）── */
+.wr-side {
+    flex: 0 0 auto; align-self: flex-start; margin-top: 2px;
+    font-size: .66rem; font-weight: 700; line-height: 1.7;
+    border-radius: 4px; padding: 0 4px; white-space: nowrap;
+    border: 1px solid transparent;
+}
+.wr-side-pos { color: #0f7b4f; background: rgba(15,123,79,.1); border-color: rgba(15,123,79,.25); }
+.wr-side-neg { color: #c2410c; background: rgba(194,65,12,.1); border-color: rgba(194,65,12,.25); }
+.wr-side-all { color: var(--text-light); background: var(--bg); border-color: var(--border); }
+html.dark .wr-side-pos { color: #6ee7b7; background: rgba(16,185,129,.14); border-color: rgba(16,185,129,.3); }
+html.dark .wr-side-neg { color: #fb923c; background: rgba(251,146,60,.14); border-color: rgba(251,146,60,.3); }

@@ -407,6 +407,79 @@ P3_EXTRA = [
      '若这些措施得以落实，发展与保护之间的平衡便指日可待。'),
 ]
 
+# ── 第三段：三套骨架合并展示 + 共用一份句池（2026-11-20）──
+# 用户反馈：正面/负面/中性三张卡各带一套句池，重复严重（EXTRA 4 条各出现 3 次、正 11 条 ×2、负 11 条 ×2）。
+# 改成：三套骨架并列前移，句池只留一份 26 条（正 + 负 + EXTRA 去重）并分类。
+# 关键：句池放 **pool_all** 而非 sentences——`build_apply_plan.parse_refs` 的 `f:tag` 按 tag 查下标
+# 且要求 tag 唯一，合并池里「政府 / 家庭 / 企业/平台 / 媒体 / 个人」各有两条不同句子，塞进
+# sentences 会直接让 17 篇套用示范的解析报错。sentences 保持原样（供 apply 取句），pool_all 只供前端展示。
+P3_CAT = {
+    # 首尾骨架：立场 + 收束，任何题都要
+    '立场·中性': '立场与收尾', '收尾·回扣': '立场与收尾', '收尾·联合': '立场与收尾', '收尾·条件': '立场与收尾',
+    # 责任主体
+    '政府': '政府与制度', '政府·长效': '政府与制度',
+    '学校': '学校与家庭', '学校/家庭': '学校与家庭', '学校·课程': '学校与家庭',
+    '家庭': '学校与家庭', '家庭·作息': '学校与家庭',
+    '企业/平台': '企业与平台', '企业·雇主': '企业与平台', '企业·管理': '企业与平台', '平台·设计': '企业与平台',
+    '媒体': '媒体', '媒体·展示': '媒体',
+    '个人': '个人', '个人·记录': '个人',
+    # 软措施：改看法、改习惯
+    '观念': '观念与习惯', '个人·习惯': '观念与习惯',
+}
+P3_GROUPS = [
+    ('立场与收尾', '三段首尾骨架句，任何题都用得上'),
+    ('政府与制度', '立法、投入、长效监管'),
+    ('学校与家庭', '课程、作息、家长示范'),
+    ('企业与平台', '产品设计、用工管理、平台规则'),
+    ('媒体', '如实报道，不夸大不渲染'),
+    ('个人', '自己的选择与记录'),
+    ('观念与习惯', '看法变了、习惯改了，问题才真正解决'),
+]
+
+
+def _p3_card(label, years, sents, alts, demo):
+    """把一套 P3 骨架转成 skeletons 卡片（与 chart_static 的骨架同构，前端零改动）"""
+    return {'label': label, 'years': years,
+            'en': ' '.join(x['en'] for x in sents),
+            'cn': ''.join(x['cn'] for x in sents),
+            'struct': [x['struct'] for x in sents],
+            'alts': alts, 'demo': demo}
+
+
+P3_SKELS = [
+    _p3_card('① 正面版 · 趋势向好', '上升 / 普及类：2010 高数、2015 手机阅读、2017 博物馆、2023 老龄化',
+             P3_POS,
+             {'will continue': 'is predicted to continue / is set to continue',
+              'Given the momentum behind it': 'Considering the forces driving it'},
+             '拼法：立场 → 从句池挑 1~2 句对策（政府 / 学校 / 家庭 / 企业 / 媒体 / 个人）→ 收束。'),
+    _p3_card('② 负面版 · 问题要治', '负面类：2012 员工满意度，或数据里出现低值项 / 负增长',
+             P3_NEG,
+             {'Unless effective measures are taken': 'If left unchecked / Without timely intervention',
+              'may well get worse': 'is unlikely to correct itself'},
+             '拼法：立场 → 挑 1~2 句对策（政府 / 学校 / 平台 / 个人）→ 警示收束。'),
+    _p3_card('③ 中性版 · 只描述不表态', '双面题 / 现状分布题：老龄化、择业因素、线上线下占比',
+             P3_MID,
+             {'careful judgment': 'measured assessment / sober judgment',
+              'praise or blame': 'celebration or alarm'},
+             '拼法：立场 → 正负两版句池都能挑（中性题优先观念 / 政府 / 学校 / 个人）→ 落到「怎么管」。'),
+]
+
+
+def merge_p3_pool():
+    """正 + 负 + EXTRA 去重成一份 26 条。
+    同一 tag 在正/负两版里是两种语气（「个人」正=选适合自己的 / 负=管好自己的习惯），
+    两条都保留，用 side 标出属于哪套骨架，前端在 tag 旁显示「正 / 负 / 通用」。"""
+    seen, out = set(), []
+    for side, rows in (('正', SUBJ_POS), ('负', SUBJ_NEG), ('通用', P3_EXTRA)):
+        for f, t, e, c in rows:
+            if e in seen:
+                continue
+            seen.add(e)
+            out.append({'en': e, 'cn': c, 'freq': f, 'tag': t, 'side': side,
+                        'fit': max(P3P_FIT.get(t, 0), P3N_FIT.get(t, 0)),
+                        'cat': P3_CAT[t]})
+    return out
+
 
 def main():
     d = json.load(io.open(TPL, encoding='utf-8'))
@@ -479,13 +552,19 @@ def main():
 
     # 第三段
     s = by_id['para3_positive']
-    s['title'] = '第三段 · 正面版（立场 + 建议）'
-    s['subtitle'] = '立场句 + 从主体句池挑 1~2 句 + 收束句'
+    s['title'] = '第三段 · 立场 + 对策（三套骨架选一）'
+    s['subtitle'] = '正面 / 负面 / 中性三套骨架并列，下面一份句池三套通用'
     set_skeleton(s, P3_POS)
     s['alts'] = {'will continue': 'is predicted to continue / is set to continue', 'Given the momentum behind it': 'Considering the forces driving it'}
     s['linkers'] = P3_LINKERS
-    s['framework'] = P3_FW_POS
+    s['framework'] = P3_FW_POS           # 保留给 apply 链路；页面用 skeletons 的 demo 讲拼法
+    s['skeletons'] = P3_SKELS            # 三套骨架前移并列
+    s['pool_all'] = merge_p3_pool()      # 26 条合并句池（仅展示；sentences 保持原样供 apply 取句）
+    s['pool_groups'] = [{'name': n, 'desc': d} for n, d in P3_GROUPS]
     s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3P_FIT.get(t, 0)} for f, t, e, c in SUBJ_POS + P3_EXTRA]
+    s['tips'] = ['三套骨架按题目极性选一套，不要混用：趋势向好选①，问题要治选②，说不清好坏（双面 / 现状分布）选③。',
+                 '骨架只给首尾两句，中间对策从句池挑 1~2 句，拼起来 55~70 词。',
+                 '同一条 tag 在正/负两版里是两种语气（如「个人」正面写「选适合自己的」、负面写「管好自己的习惯」），按骨架极性挑。']
     s = by_id['para3_negative']
     s['title'] = '第三段 · 负面版（立场 + 对策）'
     s['subtitle'] = '立场句 + 从主体句池挑 1~2 句 + 收束句'
@@ -517,6 +596,11 @@ def main():
     if 'para3_neutral' not in {x['id'] for x in secs}:
         secs.append(mid)
 
+    # 负面 / 中性两版只作骨架变体挂在主卡 skeletons 里，页面不再单独出卡（句池共用主卡那一份）。
+    # 但 section 本身必须保留：apply_plan.py 用 p3=('para3_negative', ...) 按 id 取骨架句。
+    by_id['para3_negative']['render_in'] = 'para3_positive'
+    mid['render_in'] = 'para3_positive'
+
     # 顺序：第一段 → 第二段 → 第三段（正面 / 负面 / 中性）
     order = ['chart_static', 'chart_dynamic', 'para2_why', 'para3_positive', 'para3_negative', 'para3_neutral']
     by_id = {s['id']: s for s in secs}     # 插入 para2_why 后重建索引
@@ -536,6 +620,23 @@ def main():
         assert any(MECH_CAT[t] == _n for t in _tags), '机制句分组「%s」是空组' % _n
     _assigned = sum(1 for t in _tags if MECH_CAT[t] in _names)
     assert _assigned == len(_tags), '有 %d 条机制句没落到展示分组' % (len(_tags) - _assigned)
+
+    # 第三段：三套骨架 + 一份合并句池的断言
+    _p3 = by_id['para3_positive']
+    assert len(_p3['skeletons']) == 3, '第三段骨架应 3 套，实际 %d' % len(_p3['skeletons'])
+    _p3tags = [t for f, t, e, c in SUBJ_POS + SUBJ_NEG + P3_EXTRA]
+    _p3miss = [t for t in _p3tags if t not in P3_CAT]
+    assert not _p3miss, '第三段句未归组：%s' % _p3miss
+    _pool = _p3['pool_all']
+    assert len({x['en'] for x in _pool}) == len(_pool), '合并句池有重复句'
+    assert len(_pool) == len({e for f, t, e, c in SUBJ_POS + SUBJ_NEG + P3_EXTRA}), '合并句池条数不对'
+    for _n, _ in P3_GROUPS:
+        assert any(x['cat'] == _n for x in _pool), '第三段分组「%s」是空组' % _n
+    assert all(x['cat'] in {n for n, _ in P3_GROUPS} for x in _pool), '有句子落到未定义的组'
+    # 三套骨架拼回去必须与各段 en 一致（防止 _p3_card 写错）
+    for _i, (_sk, _src) in enumerate(zip(_p3['skeletons'], (P3_POS, P3_NEG, P3_MID))):
+        assert _sk['en'] == ' '.join(x['en'] for x in _src), '第 %d 套骨架 en 拼回不一致' % (_i + 1)
+    assert _p3.get('render_in') is None and by_id['para3_negative'].get('render_in') == 'para3_positive'
 
     # 适配表 hint 里引用的「三套走势骨架」标签同步
     for r in d['chart_guide']['table']:

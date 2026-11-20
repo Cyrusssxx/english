@@ -1308,8 +1308,8 @@
   {
    "id": "para3_positive",
    "group": "大作文 · 第三段（总结建议）",
-   "title": "第三段 · 正面版（立场 + 建议）",
-   "subtitle": "立场句 + 从主体句池挑 1~2 句 + 收束句",
+   "title": "第三段 · 立场 + 对策（三套骨架选一）",
+   "subtitle": "正面 / 负面 / 中性三套骨架并列，下面一份句池三套通用",
    "en": "On balance, this is a positive trend worth welcoming. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
    "cn": "总的来说，这是一个值得欢迎的积极趋势。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
    "note": "主体按题挑：政府（2010/2014/2017/2022/2023）、学校（2013/2019/2024/2026）、家庭（2013/2016/2026）、企业平台（2011/2012/2018/2020/2022）、媒体（2016/2017/2020/2023）、个人（2015/2016/2021/2025）。挑 2 个主体各 1 句即可，不要 6 个都写。",
@@ -1386,8 +1386,9 @@
     ]
    ],
    "tips": [
-    "骨架句 29 词 + 挑 2 句主体句 ≈ 50~60 词，第三段不要写长。",
-    "先看题目问的是谁的事：学校的事就写学校 + 家庭，社会风气就写媒体 + 个人，别一律写政府。"
+    "三套骨架按题目极性选一套，不要混用：趋势向好选①，问题要治选②，说不清好坏（双面 / 现状分布）选③。",
+    "骨架只给首尾两句，中间对策从句池挑 1~2 句，拼起来 55~70 词。",
+    "同一条 tag 在正/负两版里是两种语气（如「个人」正面写「选适合自己的」、负面写「管好自己的习惯」），按骨架极性挑。"
    ],
    "sentences": [
     {
@@ -1526,6 +1527,437 @@
      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
      "trans": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
      "cn": "收束句：展望收尾，主体句写几条都接得住。"
+    }
+   ],
+   "skeletons": [
+    {
+     "label": "① 正面版 · 趋势向好",
+     "years": "上升 / 普及类：2010 高数、2015 手机阅读、2017 博物馆、2023 老龄化",
+     "en": "On balance, this is a positive trend worth welcoming. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
+     "cn": "总的来说，这是一个值得欢迎的积极趋势。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+     "struct": [
+      [
+       [
+        "On balance",
+        "trans"
+       ],
+       [
+        ", this",
+        "t"
+       ],
+       [
+        " is",
+        "p"
+       ],
+       [
+        " a positive trend worth welcoming",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "Given the momentum behind it",
+        "trans"
+       ],
+       [
+        ", there",
+        "t"
+       ],
+       [
+        " is",
+        "p"
+       ],
+       [
+        " every reason to believe that it will continue in the years ahead",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "will continue": "is predicted to continue / is set to continue",
+      "Given the momentum behind it": "Considering the forces driving it"
+     },
+     "demo": "拼法：立场 → 从句池挑 1~2 句对策（政府 / 学校 / 家庭 / 企业 / 媒体 / 个人）→ 收束。"
+    },
+    {
+     "label": "② 负面版 · 问题要治",
+     "years": "负面类：2012 员工满意度，或数据里出现低值项 / 负增长",
+     "en": "On balance, the figures point to a problem worth taking seriously. Unless effective measures are taken, it may well get worse.",
+     "cn": "总的来说，这些数据指向一个不容忽视的问题。若不采取有效措施，问题很可能进一步恶化。",
+     "struct": [
+      [
+       [
+        "On balance",
+        "trans"
+       ],
+       [
+        ", the figures",
+        "t"
+       ],
+       [
+        " point to",
+        "p"
+       ],
+       [
+        " a problem worth taking seriously",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "Unless effective measures are taken",
+        "trans"
+       ],
+       [
+        ", it",
+        "t"
+       ],
+       [
+        " may well get worse",
+        "p"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "Unless effective measures are taken": "If left unchecked / Without timely intervention",
+      "may well get worse": "is unlikely to correct itself"
+     },
+     "demo": "拼法：立场 → 挑 1~2 句对策（政府 / 学校 / 平台 / 个人）→ 警示收束。"
+    },
+    {
+     "label": "③ 中性版 · 只描述不表态",
+     "years": "双面题 / 现状分布题：老龄化、择业因素、线上线下占比",
+     "en": "On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame. Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.",
+     "cn": "总的来说，这些数据揭示的是一种变化，它值得审慎判断，而非简单的褒贬。它究竟成为福祉还是负担，取决于未来能否得到妥善管理。",
+     "struct": [
+      [
+       [
+        "On balance",
+        "trans"
+       ],
+       [
+        ", what the figures reveal",
+        "t"
+       ],
+       [
+        " is",
+        "p"
+       ],
+       [
+        " a shift that deserves careful judgment rather than simple praise or blame",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "Whether it proves to be a blessing or a burden",
+        "o"
+       ],
+       [
+        " depends on",
+        "p"
+       ],
+       [
+        " how well it is managed in the years ahead",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "careful judgment": "measured assessment / sober judgment",
+      "praise or blame": "celebration or alarm"
+     },
+     "demo": "拼法：立场 → 正负两版句池都能挑（中性题优先观念 / 政府 / 学校 / 个人）→ 落到「怎么管」。"
+    }
+   ],
+   "pool_all": [
+    {
+     "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+     "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
+     "freq": 3,
+     "tag": "观念",
+     "side": "正",
+     "fit": 4,
+     "cat": "观念与习惯"
+    },
+    {
+     "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
+     "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
+     "freq": 3,
+     "tag": "政府",
+     "side": "正",
+     "fit": 4,
+     "cat": "政府与制度"
+    },
+    {
+     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
+     "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
+     "freq": 3,
+     "tag": "学校",
+     "side": "正",
+     "fit": 4,
+     "cat": "学校与家庭"
+    },
+    {
+     "en": "Families matter most: children copy what adults do far more than what they are told.",
+     "cn": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。",
+     "freq": 3,
+     "tag": "家庭",
+     "side": "正",
+     "fit": 2,
+     "cat": "学校与家庭"
+    },
+    {
+     "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
+     "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
+     "freq": 3,
+     "tag": "企业/平台",
+     "side": "正",
+     "fit": 3,
+     "cat": "企业与平台"
+    },
+    {
+     "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
+     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
+     "freq": 3,
+     "tag": "媒体",
+     "side": "正",
+     "fit": 3,
+     "cat": "媒体"
+    },
+    {
+     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
+     "cn": "个人应按自身情况选择，而不是随大流。",
+     "freq": 3,
+     "tag": "个人",
+     "side": "正",
+     "fit": 6,
+     "cat": "个人"
+    },
+    {
+     "en": "Clear rules and steady funding matter more than one-off campaigns.",
+     "cn": "明确的规则和持续投入，比一次性活动更重要。",
+     "freq": 2,
+     "tag": "政府·长效",
+     "side": "正",
+     "fit": 5,
+     "cat": "政府与制度"
+    },
+    {
+     "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
+     "cn": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。",
+     "freq": 2,
+     "tag": "平台·设计",
+     "side": "正",
+     "fit": 2,
+     "cat": "企业与平台"
+    },
+    {
+     "en": "Documentaries and short videos can show how {{topic}} works in real life.",
+     "cn": "纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。",
+     "freq": 2,
+     "tag": "媒体·展示",
+     "side": "正",
+     "fit": 1,
+     "cat": "媒体"
+    },
+    {
+     "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
+     "cn": "小习惯很重要：每天一点 {{topic}}，日积月累一年下来就不一样。",
+     "freq": 2,
+     "tag": "个人·习惯",
+     "side": "正",
+     "fit": 3,
+     "cat": "观念与习惯"
+    },
+    {
+     "en": "Authorities should set clear limits and make sure they are actually enforced.",
+     "cn": "政府应设定明确的上限，并确保真正执行。",
+     "freq": 3,
+     "tag": "政府",
+     "side": "负",
+     "fit": 4,
+     "cat": "政府与制度"
+    },
+    {
+     "en": "Schools and families should warn young people before the habit takes hold.",
+     "cn": "学校和家庭应在坏习惯形成之前提醒年轻人。",
+     "freq": 3,
+     "tag": "学校/家庭",
+     "side": "负",
+     "fit": 0,
+     "cat": "学校与家庭"
+    },
+    {
+     "en": "Parents who ignore their own habits cannot expect children to do better.",
+     "cn": "父母若放任自己的坏习惯，就别指望孩子能做得更好。",
+     "freq": 3,
+     "tag": "家庭",
+     "side": "负",
+     "fit": 2,
+     "cat": "学校与家庭"
+    },
+    {
+     "en": "Platforms should label or restrict content that encourages misuse.",
+     "cn": "平台应对诱导滥用的内容加以标注或限制。",
+     "freq": 3,
+     "tag": "企业/平台",
+     "side": "负",
+     "fit": 3,
+     "cat": "企业与平台"
+    },
+    {
+     "en": "Media should report the real risks rather than treat them as scare stories.",
+     "cn": "媒体应报道真实风险，而不是把它当成吓人的故事。",
+     "freq": 3,
+     "tag": "媒体",
+     "side": "负",
+     "fit": 3,
+     "cat": "媒体"
+    },
+    {
+     "en": "Individuals need to watch their own habits instead of assuming they are safe.",
+     "cn": "个人需要留意自己的习惯，而不是想当然认为没问题。",
+     "freq": 3,
+     "tag": "个人",
+     "side": "负",
+     "fit": 6,
+     "cat": "个人"
+    },
+    {
+     "en": "Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.",
+     "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
+     "freq": 2,
+     "tag": "企业·雇主",
+     "side": "负",
+     "fit": 2,
+     "cat": "企业与平台"
+    },
+    {
+     "en": "A company that ignores this gap will lose the very people it most depends on.",
+     "cn": "忽视这一差距的公司，会失去它最依赖的那批人。",
+     "freq": 2,
+     "tag": "企业·管理",
+     "side": "负",
+     "fit": 2,
+     "cat": "企业与平台"
+    },
+    {
+     "en": "Classes on {{topic}} can help students tell safe use from misuse.",
+     "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
+     "freq": 2,
+     "tag": "学校·课程",
+     "side": "负",
+     "fit": 0,
+     "cat": "学校与家庭"
+    },
+    {
+     "en": "A stable routine at home leaves less room for the problem to grow.",
+     "cn": "家中规律的生活作息，会让问题更难滋生。",
+     "freq": 2,
+     "tag": "家庭·作息",
+     "side": "负",
+     "fit": 0,
+     "cat": "学校与家庭"
+    },
+    {
+     "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
+     "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
+     "freq": 2,
+     "tag": "个人·记录",
+     "side": "负",
+     "fit": 3,
+     "cat": "个人"
+    },
+    {
+     "en": "We should bear in mind that what is at stake goes far beyond the figures themselves.",
+     "cn": "我们应当记住，真正关键的远不止这些数字本身。",
+     "freq": 3,
+     "tag": "立场·中性",
+     "side": "通用",
+     "fit": 19,
+     "cat": "立场与收尾"
+    },
+    {
+     "en": "In this way, it can become a lasting source of benefit rather than a passing fashion.",
+     "cn": "这样，它才能成为长久的益处来源，而非一时的风潮。",
+     "freq": 3,
+     "tag": "收尾·回扣",
+     "side": "通用",
+     "fit": 18,
+     "cat": "立场与收尾"
+    },
+    {
+     "en": "Only through the joint efforts of individuals and institutions can this potential be fully realized.",
+     "cn": "只有个人与机构共同努力，这一潜力才能充分实现。",
+     "freq": 3,
+     "tag": "收尾·联合",
+     "side": "通用",
+     "fit": 17,
+     "cat": "立场与收尾"
+    },
+    {
+     "en": "If these measures are implemented, a balance between development and protection will be within reach.",
+     "cn": "若这些措施得以落实，发展与保护之间的平衡便指日可待。",
+     "freq": 3,
+     "tag": "收尾·条件",
+     "side": "通用",
+     "fit": 16,
+     "cat": "立场与收尾"
+    }
+   ],
+   "pool_groups": [
+    {
+     "name": "立场与收尾",
+     "desc": "三段首尾骨架句，任何题都用得上"
+    },
+    {
+     "name": "政府与制度",
+     "desc": "立法、投入、长效监管"
+    },
+    {
+     "name": "学校与家庭",
+     "desc": "课程、作息、家长示范"
+    },
+    {
+     "name": "企业与平台",
+     "desc": "产品设计、用工管理、平台规则"
+    },
+    {
+     "name": "媒体",
+     "desc": "如实报道，不夸大不渲染"
+    },
+    {
+     "name": "个人",
+     "desc": "自己的选择与记录"
+    },
+    {
+     "name": "观念与习惯",
+     "desc": "看法变了、习惯改了，问题才真正解决"
     }
    ]
   },
@@ -1742,7 +2174,8 @@
      "trans": "若不采取有效措施，问题很可能进一步恶化。",
      "cn": "收束句：警示收尾，与立场句的「问题」呼应。"
     }
-   ]
+   ],
+   "render_in": "para3_positive"
   },
   {
    "id": "para3_neutral",
@@ -2013,7 +2446,8 @@
      "tag": "收尾·条件",
      "fit": 16
     }
-   ]
+   ],
+   "render_in": "para3_positive"
   }
  ],
  "_extra_ver": 1,

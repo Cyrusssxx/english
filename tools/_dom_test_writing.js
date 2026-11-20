@@ -110,6 +110,54 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
     else if (flat.querySelector('.wr-pool-group')) fail('chart_static 被误分组');
     else pass('第一段句池仍平铺（无 pool_groups 不分组）');
 
+    /* ---------- 第三段：三套骨架并入一卡 + 一份共用句池 ---------- */
+    const p3 = TPL.sections.find(s => s.id === 'para3_positive');
+    const p3card = d.getElementById('para3_positive');
+    if (!p3card) fail('第三段主卡未渲染（#para3_positive）');
+    else pass('第三段主卡已渲染');
+
+    // 负面/中性不再单独出卡，但数据仍在（apply 链路要按 id 取句）
+    for (const sid of ['para3_negative', 'para3_neutral']) {
+        if (d.getElementById(sid)) fail(`${sid} 仍单独出卡（应并入主卡）`);
+        if (!TPL.sections.some(s => s.id === sid)) fail(`${sid} 被从数据里删掉了（apply 链路会断）`);
+    }
+    if (!d.getElementById('para3_negative') && !d.getElementById('para3_neutral')
+        && TPL.sections.some(s => s.id === 'para3_neutral')) {
+        pass('负面 / 中性版不再单独出卡，数据保留给套用链路');
+    }
+
+    // 三套骨架前移并列
+    const skels = p3card ? p3card.querySelectorAll('.wr-skel') : [];
+    if (skels.length !== 3) fail(`第三段骨架卡 ${skels.length} 套，应为 3`);
+    else pass('三套骨架并列前移（正面 / 负面 / 中性）');
+    const skelLabels = [...skels].map(x => (x.querySelector('.wr-skel-label') || {}).textContent || '');
+    if (!/正面/.test(skelLabels[0] || '') || !/负面/.test(skelLabels[1] || '') || !/中性/.test(skelLabels[2] || ''))
+        fail('骨架顺序不对: ' + skelLabels.join(' | '));
+    else pass('骨架顺序 = 正面 → 负面 → 中性');
+
+    // 句池只有一份（主卡），条数 = pool_all
+    const p3groups = p3card ? p3card.querySelectorAll('.wr-pool-group') : [];
+    const want3 = (p3.pool_groups || []).length;
+    if (p3groups.length !== want3) fail(`第三段句池分 ${p3groups.length} 组，应为 ${want3}`);
+    else pass(`第三段句池分 ${p3groups.length} 组`);
+    const p3total = p3card ? p3card.querySelectorAll('.wr-sent').length : 0;
+    if (p3total !== (p3.pool_all || []).length) fail(`第三段句池 ${p3total} 条，应为 ${(p3.pool_all || []).length}`);
+    else pass(`第三段只有一份句池，共 ${p3total} 条（不再三份重复）`);
+    const p3names = [...p3groups].map(g => (g.querySelector('.wr-pool-name') || {}).textContent || '');
+    if (p3names.includes('其他')) fail('第三段出现「其他」兜底组');
+    else pass('第三段无「其他」兜底组');
+    if (p3names.join('|') !== (p3.pool_groups || []).map(g => g.name).join('|'))
+        fail('第三段组顺序不符: ' + p3names.join('|'));
+    else pass('第三段组顺序 = ' + p3names.join(' → '));
+
+    // 语气徽标：正 / 负 / 通用，且与数据一致
+    const sides = [...(p3card ? p3card.querySelectorAll('.wr-side') : [])].map(x => x.textContent.trim());
+    const wantSides = (p3.pool_all || []).map(x => x.side);
+    if (sides.length !== wantSides.length) fail(`语气徽标 ${sides.length} 个，应为 ${wantSides.length}`);
+    else if (sides.slice().sort().join('') !== wantSides.slice().sort().join(''))
+        fail('语气徽标与数据 side 不一致');
+    else pass('每条句都标了语气（正 / 负 / 通用）');
+
     console.log(ok ? '\nWRITING ALL PASS' : '\nWRITING FAIL');
     process.exit(ok ? 0 : 1);
 })();

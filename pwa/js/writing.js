@@ -744,6 +744,7 @@ function wrRenderCards() {
     if (!WR) return;
     const groups = {};
     for (const s of WR.sections || []) {
+        if (s.render_in) continue;      // 第三段的负面/中性版已并入主卡的 skeletons，不再单独出卡
         (groups[s.group] || (groups[s.group] = [])).push(s);
     }
     const html = Object.keys(groups).map((gname, gi) => `
@@ -826,11 +827,13 @@ function wrWords(t) {
 
 function wrSectionCard(sec) {
     // 适配面优先展示：按 fit（17 年方案引用年数，适配越多排越前）降序，fit 相同再按考频 ★ 降序
-    const pool = (sec.sentences || []).slice().sort((a, b) => (b.fit ?? (b.freq || 2)) - (a.fit ?? (a.freq || 2)));
+    // 句池来源：pool_all（第三段三套骨架共用的合并池）优先，否则 sentences
+    const srcPool = sec.pool_all || sec.sentences || [];
+    const pool = srcPool.slice().sort((a, b) => (b.fit ?? (b.freq || 2)) - (a.fit ?? (a.freq || 2)));
     // 句池分类（2026-11-20）：有 pool_groups 就按类分组渲染，组内仍按 fit 降序；没有就平铺，向后兼容
     const sentItem = (s, no) => `
         <li class="wr-sent">
-            <div class="wr-sent-en"><span class="wr-sent-no">${no}</span>${s.freq ? `<span class="wr-freq" title="考频：★★★ 通用（跨话题都能接）/ ★★ 常用 / ★ 专场">${'★'.repeat(s.freq)}</span>` : ''}${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
+            <div class="wr-sent-en"><span class="wr-sent-no">${no}</span>${s.freq ? `<span class="wr-freq" title="考频：★★★ 通用（跨话题都能接）/ ★★ 常用 / ★ 专场">${'★'.repeat(s.freq)}</span>` : ''}${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}${s.side ? `<span class="wr-side wr-side-${s.side === '正' ? 'pos' : s.side === '负' ? 'neg' : 'all'}" title="属于哪套骨架：正/负/通用">${s.side}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
             <div class="wr-sent-cn">${wrHl(s.cn)}</div>
         </li>`;
     const grpDefs = (sec.pool_groups || []).filter(g => pool.some(x => x.cat === g.name));
@@ -863,7 +866,7 @@ function wrSectionCard(sec) {
     const skW = skels ? skels.map(v => wrWords(v.en)) : null;
     const neg = sec.negative_en ? wrTplBody(sec.negative_en, sec.negative_cn, sec.negative_struct) : null;
 
-    const nS = (sec.sentences || []).length;
+    const nS = srcPool.length;
     const mustBadge = skels
         ? `⭐ 必背 ${skels.length} 选 1 · 每套 ${Math.min.apply(null, skW)}~${Math.max.apply(null, skW)} 词`
         : sec.framework
@@ -889,6 +892,7 @@ function wrSectionCard(sec) {
                 ${v.demo ? `<div class="wr-demo"><b>例</b>${wrAnnotate(v.demo)}</div>` : ''}
             </div>`;
         }).join('')
+          + (sec.linkers ? `<div class="wr-alts">✎ 高级衔接词：${wrLinkers(sec.linkers)}</div>` : '')
         : fwHtml ? fwHtml + tailRows
         : `<div class="wr-en">${body.enHtml}</div>
             <div class="wr-cn">${body.cnHtml}</div>` + tailRows;
