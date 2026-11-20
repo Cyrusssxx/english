@@ -97,6 +97,16 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   if (!/In addition,/.test(fw)) fail('拼装框架第4步衔接词未与必背句对齐');
   else pass('拼装框架衔接词与必背句一致（In addition）');
 
+  // 8. 结合型口径：框架含双动词来意句 + 第二功能取 s2 的规则；p1s2 末尾有 ammo 双动词句
+  const fwCn = (data.framework || []).map(x => x.cn || '').join(' ');
+  if (!/结合型/.test(fwCn) || !/第二个功能/.test(fwCn)) fail('拼装框架未写入结合型组织规则');
+  else pass('拼装框架含结合型规则（双动词来意 + 第二功能取 s2）');
+  const p1s2 = (data.banks || []).find(b => b.id === 'p1s2') || { items: [] };
+  const last = p1s2.items[p1s2.items.length - 1] || {};
+  if (!/introduce .* and invite/.test(last.en || '') || last.tier !== 'ammo' || last.must !== false)
+    fail('p1s2 末尾缺双动词来意句（或误设为必背）');
+  else pass('p1s2 末尾双动词来意句就位（ammo，不动必背数）');
+
   console.log(ok ? '\nALL PASS' : '\nSOME FAILED');
   process.exit(ok ? 0 : 1);
 })();

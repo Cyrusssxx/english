@@ -311,15 +311,27 @@ LINKERS = [
 FRAMEWORK = [
     {'en': 'I hope this message finds you well.', 'trans': '希望你一切安好。',
      'cn': '① 问候句：所有信通用；给老师/长辈换 Dear Professor / Dear Sir or Madam。'},
-    {'en': 'I am writing to ...（invite you to / express my thanks for / make a complaint about ...）', 'trans': '我写信是为了……',
-     'cn': '② 来意句：一句话点明写信目的——换动词就是另一种信（p1s2 里都是现成的）。'},
+    {'en': 'I am writing to ...（单一型：invite you to / make a complaint about ...；结合型：introduce {{topic}} and invite you to {{join}} it）', 'trans': '我写信是为了……',
+     'cn': '② 来意句：一句话点明写信目的。单一型换动词即可（p1s2 现成）；结合型把题干 (1)(2) 两个功能动词并列写进同一句，如介绍+邀请用 introduce ... and invite you to ...，别写成两句。'},
     {'en': 'To begin with, + 要点①（该类型 s2 必背句）', 'trans': '首先，……',
      'cn': '③ 主体第一点：衔接词开头 + 从第二段对应类型挑第 2 句。'},
-    {'en': 'In addition, + 要点②（s3 / 跨类型补 1~2 句）', 'trans': '此外，……',
-     'cn': '④ 主体第二点：s3 或跨类型混搭；第二段 2~4 句就够，衔接词直接用必背句自带的，别自己换。'},
+    {'en': 'In addition, + 要点②（单一型：本类型 s3；结合型：第二个功能的 s2）', 'trans': '此外，……',
+     'cn': '④ 主体第二点：单一型用本类型 s3；结合型用第二个功能的 s2（如介绍+邀请＝intro_s2＋invite_s2），两个功能各占一句、缺一扣分。第二段 2~4 句就够，衔接词用必背句自带的，别自己换。'},
     {'en': 'I would appreciate it if you could ... / Looking forward to your early reply.', 'trans': '如蒙……将不胜感激 / 期待您的早日回复。',
      'cn': '⑤ 收尾（p3 必背）：行动请求或期待回复；落款 Yours sincerely, Li Ming。'},
 ]
+
+# 结合型双动词来意句（2026-11-20）：最高频「介绍+邀请」等在题干 (1)(2) 给两个功能时直接套。
+# 手工补丁：p1s2 items 末尾第 12 句（idx 11），tier=ammo、不设必背，不动老键位。
+# 句子真源在外部 md（D:/cjx/下载/download/考研英语小作文功能句全集…），重跑 build_small_writing.py
+# 不会带出这句——重建后需按本常量手工补回 pwa/data/small_writing.json 的 p1s2.items 末尾。
+COMBINED_P1S2_PATCH = {
+    'en': 'I am writing to introduce {{topic}} and invite you to {{join}} it.',
+    'cn': '我写信是想向你介绍{{topic}}，并邀请你来{{join}}。',
+    'ex': [{'en': 'I am writing the email to introduce it to you and invite you to take part in it.',
+            'cn': '我写这封邮件是想向你介绍它，并邀请你来参加。', 'src': '2025 英语二'}],
+    'tier': 'ammo', 'must': False, 'freq': 3, 'tag': '来意·结合型',
+}
 
 # ---------------- 整信背诵：10 类各一封精选润色范文（≥100 词正文） ----------------
 # 结构：{'rows': [[src, en, cn], ...], 'cn_paras': [P1段译, P2段译, P3段译]}
