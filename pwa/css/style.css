@@ -5646,3 +5646,50 @@ html.dark .kw-use { background: rgba(13, 148, 136, .15); }
     .kw-pop { max-width: calc(100vw - 26px); }
     .kw { background: linear-gradient(to top, rgba(13, 148, 136, .18) 0 .4em, transparent .4em); }
 }
+
+/* ==================== 押题弹层：放大范文 + 压缩头底 + 点句译（2026-11-20）==================== */
+/* ① 弹层加高：桌面占满可用高度，把空间让给正文；左右仍并排 */
+.yt-box { width: min(1440px, 100%); height: min(94vh, 1100px); }
+.yt-mbody { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); }
+.yt-pane-txt { padding: 16px 26px 26px; }
+.yt-essay { max-width: 74ch; }
+.yt-essay p { font-size: .98rem; line-height: 2.05; margin-bottom: 15px; }
+
+/* ② 头部压缩：只留题号 + 标题 + 副标题一行，英文题名与按钮收紧 */
+.yt-mh { padding: 7px 14px; gap: 10px; }
+.yt-mh-txt h3 { font-size: .93rem; }
+.yt-mh-txt p { font-size: .7rem; margin-top: 1px; }
+.yt-mh-en { display: none; }
+.yt-x { padding: 2px 7px; font-size: .9rem; }
+
+/* ③ 底部压缩：一条窄条，页码与快捷键并排一行 */
+.yt-mf { padding: 5px 14px; }
+.yt-mf button { padding: 4px 12px; font-size: .78rem; }
+.yt-mf-c { flex-direction: row; gap: 10px; align-items: baseline; }
+
+/* ④ 弹层打开时：背后的目录/页面不露出（红框处），遮罩加深 */
+body.yt-modal-open .wr-layout { visibility: hidden; }
+.yt-mask { background: rgba(8, 18, 16, .82); }
+
+/* ⑤ 逐句点译 */
+.yt-essay p .yt-sent {
+    cursor: pointer; border-radius: 3px; padding: 1px 0;
+    transition: background .15s, box-shadow .15s;
+}
+.yt-essay p .yt-sent:hover { background: var(--primary-soft); }
+.yt-essay p .yt-sent.on { background: var(--primary-soft); box-shadow: inset 0 -2px 0 var(--primary); }
+.yt-essay .yt-sent-cn {
+    display: block; margin: 3px 0 9px; padding: 7px 12px;
+    font-family: -apple-system, "Microsoft YaHei", sans-serif;
+    font-size: .82rem; line-height: 1.7; color: var(--text);
+    background: var(--bg-2); border-left: 3px solid var(--primary); border-radius: 0 7px 7px 0;
+}
+.yt-essay .yt-sent-cn[hidden] { display: none; }
+html.dark .yt-essay .yt-sent-cn { background: rgba(13, 148, 136, .12); }
+
+/* 窄屏：头底更紧，正文单栏 tab 切换保持 */
+@media (max-width: 900px) {
+    .yt-mh-en { display: none; }
+    .yt-pane-txt { padding: 13px 16px 22px; }
+    .yt-essay p { font-size: .94rem; line-height: 1.95; }
+}

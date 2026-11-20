@@ -152,12 +152,32 @@ function ytNotesHtml(it) {
         `</div>`;
 }
 
+/* 逐句点译：每句 en 包 .yt-sent，紧跟一个默认隐藏的 .yt-sent-cn。
+   点句子开合该句中文；键盘 Enter/空格同样可开合。 */
+function ytToggleSent(el) {
+    const cn = el.nextElementSibling;
+    if (!cn || !cn.classList.contains('yt-sent-cn')) return;
+    const opening = cn.hidden;
+    cn.hidden = !opening;                 // 各句独立开合，方便对照
+    el.classList.toggle('on', opening);
+}
+
 function ytEssayHtml(it) {
     const blocks = it.blocks || [];
     if (!blocks.length) return '<p class="ye-empty">暂无范文。</p>';
     return blocks.map(b => {
         const cls = { h: 'ye-h', meta: 'ye-meta', sign: 'ye-sign', p: '' }[b.k] || '';
-        return `<p${cls ? ` class="${cls}"` : ''}>${ytEsc(b.v)}</p>`;
+        const sents = (b.k === 'p' && Array.isArray(b.sents) && b.sents.length) ? b.sents : null;
+        let body;
+        if (sents) {
+            body = sents.map(s =>
+                `<span class="yt-sent" role="button" tabindex="0" title="点句看译文">${ytEsc(s.en)}</span>` +
+                `<span class="yt-sent-cn" hidden>${ytEsc(s.cn || '')}</span>`
+            ).join(' ');
+        } else {
+            body = ytEsc(b.v);
+        }
+        return `<p${cls ? ` class="${cls}"` : ''}>${body}</p>`;
     }).join('');
 }
 
@@ -183,7 +203,9 @@ function ytOpen(no, fromEl) {
     img.src = it.img;
     img.alt = `第 ${it.no} 题：${it.title}`;
     document.getElementById('ytMOpen').href = it.img;
-    document.getElementById('ytMEssay').innerHTML = ytNotesHtml(it) + ytEssayHtml(it);
+    const essayEl = document.getElementById('ytMEssay');
+    essayEl.innerHTML = ytNotesHtml(it) + ytEssayHtml(it);
+    essayEl.scrollTop = 0;
     ytPrefetch(idx);
     document.getElementById('ytMCnt').textContent = `${idx + 1} / ${YT_FLAT.length}`;
     document.getElementById('ytPrev').disabled = idx === 0;
@@ -338,6 +360,18 @@ function ytBindUi() {
         modal.querySelectorAll('#ytMTabs button').forEach(btn => {
             btn.addEventListener('click', () => ytSetPane(btn.dataset.pane));
         });
+        const essay = document.getElementById('ytMEssay');
+        if (essay) {
+            essay.addEventListener('click', e => {
+                const s = e.target.closest && e.target.closest('.yt-sent');
+                if (s) ytToggleSent(s);
+            });
+            essay.addEventListener('keydown', e => {
+                if (e.key !== 'Enter' && e.key !== ' ') return;
+                const s = e.target.closest && e.target.closest('.yt-sent');
+                if (s) { e.preventDefault(); ytToggleSent(s); }
+            });
+        }
         const prev = document.getElementById('ytPrev'), next = document.getElementById('ytNext');
         if (prev) prev.addEventListener('click', () => ytStep(-1));
         if (next) next.addEventListener('click', () => ytStep(1));
