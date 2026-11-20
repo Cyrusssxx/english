@@ -851,7 +851,7 @@
   {
    "id": "para2_why",
    "title": "第二段 · 原因（机制句池）",
-   "subtitle": "不背整段：1 句引入 + 从下面 23 条机制里挑 3 条（每条都是一个完整原因）",
+   "subtitle": "不背整段：1 句引入 + 从下面 40 条机制里挑 3 条（每条都是一个完整原因）",
    "group": "大作文 · 第一段（图表描述）",
    "en": "This phenomenon can be attributed to a combination of factors.",
    "cn": "这一现象可归因于多种因素的综合作用。",
@@ -1077,6 +1077,125 @@
      "freq": 3,
      "tag": "规则滞后",
      "fit": 4
+    },
+    {
+     "en": "Technology has steadily lowered the cost of what once required far more time and money.",
+     "cn": "技术不断降低那些过去需要更多时间和金钱才能获得的东西的成本。",
+     "freq": 3,
+     "tag": "技术降本",
+     "fit": 14
+    },
+    {
+     "en": "Suppliers have noticed the demand and moved quickly to meet it.",
+     "cn": "供给方察觉到了需求，并迅速作出回应。",
+     "freq": 3,
+     "tag": "供给响应",
+     "fit": 13
+    },
+    {
+     "en": "Different groups have piled their needs on top of one another, and supply has struggled to keep pace.",
+     "cn": "不同群体的需求层层叠加，供给已经难以跟上。",
+     "freq": 3,
+     "tag": "需求叠加",
+     "fit": 12
+    },
+    {
+     "en": "Not only has this shift changed how people spend their time, but it has also reshaped what they expect from daily life.",
+     "cn": "这一变化不仅改变了人们支配时间的方式，也重塑了他们对日常生活的期待。",
+     "freq": 3,
+     "tag": "递进",
+     "fit": 17
+    },
+    {
+     "en": "We cannot ignore the fact that it also brings problems that were less visible before.",
+     "cn": "我们不能忽视，它同时也带来了此前不那么明显的问题。",
+     "freq": 3,
+     "tag": "转折",
+     "fit": 16
+    },
+    {
+     "en": "Without proper guidance, people may follow the trend without understanding its costs.",
+     "cn": "若缺乏恰当引导，人们可能盲目跟风，却不了解其中的代价。",
+     "freq": 3,
+     "tag": "条件",
+     "fit": 15
+    },
+    {
+     "en": "Fiercer competition has made {{topic}} a way for people to keep their edge.",
+     "cn": "竞争加剧，使 {{topic}} 成为人们保持优势的一种方式。",
+     "freq": 3,
+     "tag": "竞争",
+     "fit": 11
+    },
+    {
+     "en": "Seeing friends and colleagues take up {{topic}} makes others far more willing to follow.",
+     "cn": "看到朋友和同事开始 {{topic}}，其他人也更愿意跟随。",
+     "freq": 3,
+     "tag": "示范效应",
+     "fit": 10
+    },
+    {
+     "en": "Supportive policies have removed much of the risk from choosing {{topic}}.",
+     "cn": "支持性政策消除了选择 {{topic}} 的大部分风险。",
+     "freq": 3,
+     "tag": "政策支持",
+     "fit": 9
+    },
+    {
+     "en": "Information about {{topic}} now spreads faster than anyone can verify it.",
+     "cn": "关于 {{topic}} 的信息传播速度，已经快过任何人核实的速度。",
+     "freq": 3,
+     "tag": "信息传播",
+     "fit": 9
+    },
+    {
+     "en": "Growing concern about health has turned {{topic}} into a routine rather than an occasional choice.",
+     "cn": "健康意识的增强，使 {{topic}} 从偶尔的选择变成日常习惯。",
+     "freq": 3,
+     "tag": "健康意识",
+     "fit": 8
+    },
+    {
+     "en": "Smaller households have changed what families expect from {{topic}}.",
+     "cn": "家庭规模变小，改变了家庭对 {{topic}} 的期待。",
+     "freq": 2,
+     "tag": "家庭结构",
+     "fit": 8
+    },
+    {
+     "en": "Longer years in education have raised demand for {{topic}}.",
+     "cn": "受教育年限延长，推高了对 {{topic}} 的需求。",
+     "freq": 2,
+     "tag": "教育扩张",
+     "fit": 7
+    },
+    {
+     "en": "Careful marketing has made {{topic}} look like a natural part of modern life.",
+     "cn": "精心设计的营销，使 {{topic}} 看起来像现代生活理所当然的一部分。",
+     "freq": 2,
+     "tag": "营销",
+     "fit": 7
+    },
+    {
+     "en": "Consumers often cannot tell good {{topic}} from bad until it is too late.",
+     "cn": "消费者往往直到为时已晚，才分得清 {{topic}} 的好坏。",
+     "freq": 2,
+     "tag": "信息不对称",
+     "fit": 6
+    },
+    {
+     "en": "The fear of missing out pushes people into {{topic}} before they have thought it through.",
+     "cn": "害怕错过的焦虑，促使人们还没想清楚就投入 {{topic}}。",
+     "freq": 2,
+     "tag": "从众焦虑",
+     "fit": 6
+    },
+    {
+     "en": "Short-term thinking leads people to ignore what {{topic}} costs in the long run.",
+     "cn": "短期思维让人们忽视 {{topic}} 长期要付出的代价。",
+     "freq": 2,
+     "tag": "短期行为",
+     "fit": 5
     }
    ],
    "phrases": [
@@ -1108,7 +1227,7 @@
    "tips": [
     "万能开头：a combination of factors 不承诺条数，什么年份都成立；想点明条数再换 two / three / several major factors（必须与正文条数一致）。第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。",
     "引入句 10 词 + 机制句挑 3 条 ≈ 55~62 词。",
-    "每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 23 条都写。",
+    "每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 40 条都写。",
     "挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。"
    ]
   },
@@ -1273,6 +1392,34 @@
      "freq": 2,
      "tag": "个人·习惯",
      "fit": 3
+    },
+    {
+     "en": "We should bear in mind that what is at stake goes far beyond the figures themselves.",
+     "cn": "我们应当记住，真正关键的远不止这些数字本身。",
+     "freq": 3,
+     "tag": "立场·中性",
+     "fit": 19
+    },
+    {
+     "en": "In this way, it can become a lasting source of benefit rather than a passing fashion.",
+     "cn": "这样，它才能成为长久的益处来源，而非一时的风潮。",
+     "freq": 3,
+     "tag": "收尾·回扣",
+     "fit": 18
+    },
+    {
+     "en": "Only through the joint efforts of individuals and institutions can this potential be fully realized.",
+     "cn": "只有个人与机构共同努力，这一潜力才能充分实现。",
+     "freq": 3,
+     "tag": "收尾·联合",
+     "fit": 17
+    },
+    {
+     "en": "If these measures are implemented, a balance between development and protection will be within reach.",
+     "cn": "若这些措施得以落实，发展与保护之间的平衡便指日可待。",
+     "freq": 3,
+     "tag": "收尾·条件",
+     "fit": 16
     }
    ],
    "priority": true,
@@ -1460,6 +1607,34 @@
      "freq": 2,
      "tag": "个人·记录",
      "fit": 3
+    },
+    {
+     "en": "We should bear in mind that what is at stake goes far beyond the figures themselves.",
+     "cn": "我们应当记住，真正关键的远不止这些数字本身。",
+     "freq": 3,
+     "tag": "立场·中性",
+     "fit": 19
+    },
+    {
+     "en": "In this way, it can become a lasting source of benefit rather than a passing fashion.",
+     "cn": "这样，它才能成为长久的益处来源，而非一时的风潮。",
+     "freq": 3,
+     "tag": "收尾·回扣",
+     "fit": 18
+    },
+    {
+     "en": "Only through the joint efforts of individuals and institutions can this potential be fully realized.",
+     "cn": "只有个人与机构共同努力，这一潜力才能充分实现。",
+     "freq": 3,
+     "tag": "收尾·联合",
+     "fit": 17
+    },
+    {
+     "en": "If these measures are implemented, a balance between development and protection will be within reach.",
+     "cn": "若这些措施得以落实，发展与保护之间的平衡便指日可待。",
+     "freq": 3,
+     "tag": "收尾·条件",
+     "fit": 16
     }
    ],
    "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。",
@@ -1492,6 +1667,277 @@
      "en": "Unless effective measures are taken, it may well get worse.",
      "trans": "若不采取有效措施，问题很可能进一步恶化。",
      "cn": "收束句：警示收尾，与立场句的「问题」呼应。"
+    }
+   ]
+  },
+  {
+   "id": "para3_neutral",
+   "title": "第三段 · 中性版（立场 + 建议）",
+   "subtitle": "双面题 / 现状分布题用：立场句不表态 + 从正负句池挑 1~2 句 + 收束句",
+   "group": "大作文 · 第三段（总结建议）",
+   "priority": false,
+   "linkers": [
+    {
+     "banned": "To sum up / In conclusion",
+     "better": "On balance / Taking everything into account / Given the trends above"
+    },
+    {
+     "banned": "will rise（预测）",
+     "better": "is predicted to rise / is set to rise / is estimated to stay stable"
+    }
+   ],
+   "framework": [
+    {
+     "en": "On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame.",
+     "trans": "总的来说，这些数据揭示的是一种变化，它值得审慎判断，而非简单的褒贬。",
+     "cn": "立场句：双面题 / 现状分布题用——既不吹好也不唱衰。"
+    },
+    {
+     "en": "To make the most of this shift, + 主体句 ①",
+     "trans": "要把握好这一变化，……",
+     "cn": "主体句：正负两版的句池都能挑，中性题优先挑「观念 / 政府 / 学校 / 个人」这类不带褒贬的。"
+    },
+    {
+     "en": "Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.",
+     "trans": "它究竟成为福祉还是负担，取决于未来能否得到妥善管理。",
+     "cn": "收束句：把结论落到「管理」上，避开对趋势本身下判断。"
+    }
+   ],
+   "alts": {
+    "careful judgment": "measured assessment / sober judgment",
+    "praise or blame": "celebration or alarm"
+   },
+   "tips": [
+    "什么时候用：图表既说不上好也说不上坏——老龄化（寿命延长 + 养老压力）、择业因素、线上/线下占比。",
+    "正面版说「值得欢迎」、负面版说「问题严重」都不合适时，换这一版：只描述变化，把结论落到「怎么管」。",
+    "主体句直接从下面正负两版的并集里挑，语气中性的（观念 / 政府 / 学校 / 个人）优先。"
+   ],
+   "en": "On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame. Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.",
+   "cn": "总的来说，这些数据揭示的是一种变化，它值得审慎判断，而非简单的褒贬。它究竟成为福祉还是负担，取决于未来能否得到妥善管理。",
+   "en_struct": [
+    [
+     [
+      "On balance",
+      "trans"
+     ],
+     [
+      ", what the figures reveal",
+      "t"
+     ],
+     [
+      " is",
+      "p"
+     ],
+     [
+      " a shift that deserves careful judgment rather than simple praise or blame",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Whether it proves to be a blessing or a burden",
+      "o"
+     ],
+     [
+      " depends on",
+      "p"
+     ],
+     [
+      " how well it is managed in the years ahead",
+      "o"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ]
+   ],
+   "sentences": [
+    {
+     "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
+     "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
+     "freq": 3,
+     "tag": "观念",
+     "fit": 4
+    },
+    {
+     "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
+     "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
+     "freq": 3,
+     "tag": "政府",
+     "fit": 4
+    },
+    {
+     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
+     "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
+     "freq": 3,
+     "tag": "学校",
+     "fit": 4
+    },
+    {
+     "en": "Families matter most: children copy what adults do far more than what they are told.",
+     "cn": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。",
+     "freq": 3,
+     "tag": "家庭",
+     "fit": 2
+    },
+    {
+     "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
+     "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
+     "freq": 3,
+     "tag": "企业/平台",
+     "fit": 3
+    },
+    {
+     "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
+     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
+     "freq": 3,
+     "tag": "媒体",
+     "fit": 3
+    },
+    {
+     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
+     "cn": "个人应按自身情况选择，而不是随大流。",
+     "freq": 3,
+     "tag": "个人",
+     "fit": 6
+    },
+    {
+     "en": "Clear rules and steady funding matter more than one-off campaigns.",
+     "cn": "明确的规则和持续投入，比一次性活动更重要。",
+     "freq": 2,
+     "tag": "政府·长效",
+     "fit": 5
+    },
+    {
+     "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
+     "cn": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。",
+     "freq": 2,
+     "tag": "平台·设计",
+     "fit": 2
+    },
+    {
+     "en": "Documentaries and short videos can show how {{topic}} works in real life.",
+     "cn": "纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。",
+     "freq": 2,
+     "tag": "媒体·展示",
+     "fit": 1
+    },
+    {
+     "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
+     "cn": "小习惯很重要：每天一点 {{topic}}，日积月累一年下来就不一样。",
+     "freq": 2,
+     "tag": "个人·习惯",
+     "fit": 3
+    },
+    {
+     "en": "Authorities should set clear limits and make sure they are actually enforced.",
+     "cn": "政府应设定明确的上限，并确保真正执行。",
+     "freq": 3,
+     "tag": "政府",
+     "fit": 4
+    },
+    {
+     "en": "Schools and families should warn young people before the habit takes hold.",
+     "cn": "学校和家庭应在坏习惯形成之前提醒年轻人。",
+     "freq": 3,
+     "tag": "学校/家庭",
+     "fit": 0
+    },
+    {
+     "en": "Parents who ignore their own habits cannot expect children to do better.",
+     "cn": "父母若放任自己的坏习惯，就别指望孩子能做得更好。",
+     "freq": 3,
+     "tag": "家庭",
+     "fit": 2
+    },
+    {
+     "en": "Platforms should label or restrict content that encourages misuse.",
+     "cn": "平台应对诱导滥用的内容加以标注或限制。",
+     "freq": 3,
+     "tag": "企业/平台",
+     "fit": 3
+    },
+    {
+     "en": "Media should report the real risks rather than treat them as scare stories.",
+     "cn": "媒体应报道真实风险，而不是把它当成吓人的故事。",
+     "freq": 3,
+     "tag": "媒体",
+     "fit": 3
+    },
+    {
+     "en": "Individuals need to watch their own habits instead of assuming they are safe.",
+     "cn": "个人需要留意自己的习惯，而不是想当然认为没问题。",
+     "freq": 3,
+     "tag": "个人",
+     "fit": 6
+    },
+    {
+     "en": "Employers should find out why experienced staff are the least satisfied, not just look at the overall figure.",
+     "cn": "雇主应弄清为什么资深员工最不满意，而不是只看总体数字。",
+     "freq": 2,
+     "tag": "企业·雇主",
+     "fit": 2
+    },
+    {
+     "en": "A company that ignores this gap will lose the very people it most depends on.",
+     "cn": "忽视这一差距的公司，会失去它最依赖的那批人。",
+     "freq": 2,
+     "tag": "企业·管理",
+     "fit": 2
+    },
+    {
+     "en": "Classes on {{topic}} can help students tell safe use from misuse.",
+     "cn": "关于 {{topic}} 的课程能帮学生分清正常使用和滥用。",
+     "freq": 2,
+     "tag": "学校·课程",
+     "fit": 0
+    },
+    {
+     "en": "A stable routine at home leaves less room for the problem to grow.",
+     "cn": "家中规律的生活作息，会让问题更难滋生。",
+     "freq": 2,
+     "tag": "家庭·作息",
+     "fit": 0
+    },
+    {
+     "en": "Keeping a simple record of daily use is often enough to spot the problem early.",
+     "cn": "简单记录一下每天的使用情况，往往就能及早发现问题。",
+     "freq": 2,
+     "tag": "个人·记录",
+     "fit": 3
+    },
+    {
+     "en": "We should bear in mind that what is at stake goes far beyond the figures themselves.",
+     "cn": "我们应当记住，真正关键的远不止这些数字本身。",
+     "freq": 3,
+     "tag": "立场·中性",
+     "fit": 19
+    },
+    {
+     "en": "In this way, it can become a lasting source of benefit rather than a passing fashion.",
+     "cn": "这样，它才能成为长久的益处来源，而非一时的风潮。",
+     "freq": 3,
+     "tag": "收尾·回扣",
+     "fit": 18
+    },
+    {
+     "en": "Only through the joint efforts of individuals and institutions can this potential be fully realized.",
+     "cn": "只有个人与机构共同努力，这一潜力才能充分实现。",
+     "freq": 3,
+     "tag": "收尾·联合",
+     "fit": 17
+    },
+    {
+     "en": "If these measures are implemented, a balance between development and protection will be within reach.",
+     "cn": "若这些措施得以落实，发展与保护之间的平衡便指日可待。",
+     "freq": 3,
+     "tag": "收尾·条件",
+     "fit": 16
     }
    ]
   }

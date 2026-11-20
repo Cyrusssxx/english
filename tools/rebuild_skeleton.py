@@ -162,6 +162,49 @@ MECH = [
      '一些商家把眼前利润放在首位，导致质量与安全疏于管理。'),
     (3, '规则滞后', 'Rules have not kept pace with how quickly {{topic}} has spread.',
      '规则的更新速度，赶不上 {{topic}} 扩散的速度。'),
+    # ── 2026-11-20 追加：从原范文提炼的「无槽」机制句 + 论证功能句 ──
+    # 用户定调：① 纯原因句和论证功能句都要；② 一律不留 {{topic}} 槽（用 this shift / it 指代），
+    # 换任何题都不会填错；③ fit 给 29~34 压过押题句（18~23）→ 前端自动置顶（「功能句前移」）。
+    # 仍追加末尾、不插队：老句索引与 apply_plan 的 f:tag 引用全部不动。
+    (3, '技术降本', 'Technology has steadily lowered the cost of what once required far more time and money.',
+     '技术不断降低那些过去需要更多时间和金钱才能获得的东西的成本。'),
+    (3, '供给响应', 'Suppliers have noticed the demand and moved quickly to meet it.',
+     '供给方察觉到了需求，并迅速作出回应。'),
+    (3, '需求叠加', 'Different groups have piled their needs on top of one another, and supply has struggled to keep pace.',
+     '不同群体的需求层层叠加，供给已经难以跟上。'),
+    (3, '递进', 'Not only has this shift changed how people spend their time, but it has also reshaped what they expect from daily life.',
+     '这一变化不仅改变了人们支配时间的方式，也重塑了他们对日常生活的期待。'),
+    (3, '转折', 'We cannot ignore the fact that it also brings problems that were less visible before.',
+     '我们不能忽视，它同时也带来了此前不那么明显的问题。'),
+    (3, '条件', 'Without proper guidance, people may follow the trend without understanding its costs.',
+     '若缺乏恰当引导，人们可能盲目跟风，却不了解其中的代价。'),
+    # ── 2026-11-20 第二批：原因句池扩容（从原范文 26 篇第二段逐条提炼）──
+    # 用户澄清「机制句池要扩张」——这些是新的「为什么」，角度不与现有 23 条重复：
+    # 现有已覆盖 收入/便利/观念/公共投入/城市化/久坐/职场时间/学校/文化传承/人口结构/
+    # 国产替代/职场流动/就业门槛/生活节奏/科技普及/逐利/规则滞后，以下补空缺角度。
+    (3, '竞争', 'Fiercer competition has made {{topic}} a way for people to keep their edge.',
+     '竞争加剧，使 {{topic}} 成为人们保持优势的一种方式。'),
+    (3, '示范效应', 'Seeing friends and colleagues take up {{topic}} makes others far more willing to follow.',
+     '看到朋友和同事开始 {{topic}}，其他人也更愿意跟随。'),
+    (3, '政策支持', 'Supportive policies have removed much of the risk from choosing {{topic}}.',
+     '支持性政策消除了选择 {{topic}} 的大部分风险。'),
+    (3, '信息传播', 'Information about {{topic}} now spreads faster than anyone can verify it.',
+     '关于 {{topic}} 的信息传播速度，已经快过任何人核实的速度。'),
+    (3, '健康意识', 'Growing concern about health has turned {{topic}} into a routine rather than an occasional choice.',
+     '健康意识的增强，使 {{topic}} 从偶尔的选择变成日常习惯。'),
+    (2, '家庭结构', 'Smaller households have changed what families expect from {{topic}}.',
+     '家庭规模变小，改变了家庭对 {{topic}} 的期待。'),
+    (2, '教育扩张', 'Longer years in education have raised demand for {{topic}}.',
+     '受教育年限延长，推高了对 {{topic}} 的需求。'),
+    (2, '营销', 'Careful marketing has made {{topic}} look like a natural part of modern life.',
+     '精心设计的营销，使 {{topic}} 看起来像现代生活理所当然的一部分。'),
+    # 负面题专用（为什么出问题）
+    (2, '信息不对称', 'Consumers often cannot tell good {{topic}} from bad until it is too late.',
+     '消费者往往直到为时已晚，才分得清 {{topic}} 的好坏。'),
+    (2, '从众焦虑', 'The fear of missing out pushes people into {{topic}} before they have thought it through.',
+     '害怕错过的焦虑，促使人们还没想清楚就投入 {{topic}}。'),
+    (2, '短期行为', 'Short-term thinking leads people to ignore what {{topic}} costs in the long run.',
+     '短期思维让人们忽视 {{topic}} 长期要付出的代价。'),
 ]
 
 # ══════════ 三、第三段：立场句 + 主体句池 + 收束句 ══════════
@@ -193,6 +236,17 @@ P3_FW_NEG = [
      'trans': '若不采取有效措施，问题很可能进一步恶化。',
      'cn': '收束句：警示收尾，与立场句的「问题」呼应。'},
 ]
+# 中性版拼装框架：不表态，把判断权交给「怎么管」
+P3_FW_MID = [
+    {'en': 'On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame.',
+     'trans': '总的来说，这些数据揭示的是一种变化，它值得审慎判断，而非简单的褒贬。',
+     'cn': '立场句：双面题 / 现状分布题用——既不吹好也不唱衰。'},
+    {'en': 'To make the most of this shift, + 主体句 ①', 'trans': '要把握好这一变化，……',
+     'cn': '主体句：正负两版的句池都能挑，中性题优先挑「观念 / 政府 / 学校 / 个人」这类不带褒贬的。'},
+    {'en': 'Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.',
+     'trans': '它究竟成为福祉还是负担，取决于未来能否得到妥善管理。',
+     'cn': '收束句：把结论落到「管理」上，避开对趋势本身下判断。'},
+]
 P3_NEG = [
     sent('On balance, the figures point to a problem worth taking seriously.',
          '总的来说，这些数据指向一个不容忽视的问题。',
@@ -200,6 +254,20 @@ P3_NEG = [
     sent('Unless effective measures are taken, it may well get worse.',
          '若不采取有效措施，问题很可能进一步恶化。',
          [[S('Unless effective measures are taken', 'trans'), S(', it', 't'), S(' may well get worse', 'p'), S('.', '')]]),
+]
+
+# ── 第三档：中性版（2026-11-20 追加）──
+# 为什么需要：正面版说「值得欢迎」、负面版说「问题严重」，但双面题（老龄化=寿命延长+养老压力）
+# 和现状分布题（择业因素 / 线上线下占比）两边都不合。中性版不表态，只说「值得审慎判断」。
+P3_MID = [
+    sent('On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame.',
+         '总的来说，这些数据揭示的是一种变化，它值得审慎判断，而非简单的褒贬。',
+         [[S('On balance', 'trans'), S(', what the figures reveal', 't'), S(' is', 'p'),
+           S(' a shift that deserves careful judgment rather than simple praise or blame', 'o'), S('.', '')]]),
+    sent('Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.',
+         '它究竟成为福祉还是负担，取决于未来能否得到妥善管理。',
+         [[S('Whether it proves to be a blessing or a burden', 'o'), S(' depends on', 'p'),
+           S(' how well it is managed in the years ahead', 'o'), S('.', '')]]),
 ]
 
 # 高级衔接词（替代 First and foremost / Furthermore / To sum up 等烂大街写法；同篇不重样）
@@ -242,12 +310,26 @@ P2_FIT = {'观念': 15, '收入': 6, '便利': 6, '学校': 6, '职场时间': 4
           '环保意识': 20, '绿色出行': 19, '文化新媒介': 18,
           # 负面题专用（2026-11-19）：只对「数据里出现低值项/负增长」的年份有用
           # （2012 满意度 / 2019 就业因素），可用年份少 → fit 压低，但负面题里是首选
-          '逐利': 4, '规则滞后': 4}
+          '逐利': 4, '规则滞后': 4,
+          # 原范文提炼的通用功能句（2026-11-20）：无槽、任何题可接 → 排押题句之后、老通用句之前
+          '递进': 17, '转折': 16, '条件': 15,
+          '技术降本': 14, '供给响应': 13, '需求叠加': 12,
+          # 原因句池扩容（2026-11-20 第二批）：新角度，不与已有 23 条重复
+          '竞争': 11, '示范效应': 10, '政策支持': 9, '信息传播': 9,
+          '健康意识': 8, '家庭结构': 8, '教育扩张': 7, '营销': 7,
+          '信息不对称': 6, '从众焦虑': 6, '短期行为': 5}
 P3P_FIT = {'个人': 6, '政府·长效': 5, '政府': 4, '学校': 4, '观念': 4, '企业/平台': 3,
-           '媒体': 3, '个人·习惯': 3, '家庭': 2, '平台·设计': 2, '媒体·展示': 1}
+           '媒体': 3, '个人·习惯': 3, '家庭': 2, '平台·设计': 2, '媒体·展示': 1,
+           # 原范文提炼的通用功能句（2026-11-20）：无槽、三段通用 → fit 最高，前端置顶
+           '立场·中性': 19, '收尾·回扣': 18, '收尾·联合': 17, '收尾·条件': 16}
 P3N_FIT = {'个人·记录': 3, '企业·雇主': 2, '企业·管理': 2, '个人': 1,
            '政府': 0, '学校/家庭': 0, '家庭': 0, '企业/平台': 0, '媒体': 0,
-           '学校·课程': 0, '家庭·作息': 0}
+           '学校·课程': 0, '家庭·作息': 0,
+           '立场·中性': 19, '收尾·回扣': 18, '收尾·联合': 17, '收尾·条件': 16}
+# 中性版复用正负两版并集 → fit 取两边较大值
+P3M_FIT = {}
+for _k, _v in list(P3N_FIT.items()) + list(P3P_FIT.items()):
+    P3M_FIT[_k] = max(P3M_FIT.get(_k, 0), _v)
 
 # 主体句池（沿用旧版并按更自然的口径重写两句；第一位是「通用档」）
 SUBJ_POS = [
@@ -275,6 +357,18 @@ SUBJ_NEG = [
     (2, '学校·课程', 'Classes on {{topic}} can help students tell safe use from misuse.', '关于 {{topic}} 的课程能帮学生分清正常使用和滥用。'),
     (2, '家庭·作息', 'A stable routine at home leaves less room for the problem to grow.', '家中规律的生活作息，会让问题更难滋生。'),
     (2, '个人·记录', 'Keeping a simple record of daily use is often enough to spot the problem early.', '简单记录一下每天的使用情况，往往就能及早发现问题。'),
+]
+
+# 第三段通用功能句（2026-11-20 从原范文提炼，无槽）：三个版本共用，fit 高 → 前端置顶
+P3_EXTRA = [
+    (3, '立场·中性', 'We should bear in mind that what is at stake goes far beyond the figures themselves.',
+     '我们应当记住，真正关键的远不止这些数字本身。'),
+    (3, '收尾·回扣', 'In this way, it can become a lasting source of benefit rather than a passing fashion.',
+     '这样，它才能成为长久的益处来源，而非一时的风潮。'),
+    (3, '收尾·联合', 'Only through the joint efforts of individuals and institutions can this potential be fully realized.',
+     '只有个人与机构共同努力，这一潜力才能充分实现。'),
+    (3, '收尾·条件', 'If these measures are implemented, a balance between development and protection will be within reach.',
+     '若这些措施得以落实，发展与保护之间的平衡便指日可待。'),
 ]
 
 
@@ -353,7 +447,7 @@ def main():
     s['alts'] = {'will continue': 'is predicted to continue / is set to continue', 'Given the momentum behind it': 'Considering the forces driving it'}
     s['linkers'] = P3_LINKERS
     s['framework'] = P3_FW_POS
-    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3P_FIT.get(t, 0)} for f, t, e, c in SUBJ_POS]
+    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3P_FIT.get(t, 0)} for f, t, e, c in SUBJ_POS + P3_EXTRA]
     s = by_id['para3_negative']
     s['title'] = '第三段 · 负面版（立场 + 对策）'
     s['subtitle'] = '立场句 + 从主体句池挑 1~2 句 + 收束句'
@@ -361,10 +455,32 @@ def main():
     s['alts'] = {'Unless effective measures are taken': 'If left unchecked / Without timely intervention', 'may well get worse': 'is unlikely to correct itself'}
     s['linkers'] = P3_LINKERS
     s['framework'] = P3_FW_NEG
-    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3N_FIT.get(t, 0)} for f, t, e, c in SUBJ_NEG]
+    s['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3N_FIT.get(t, 0)} for f, t, e, c in SUBJ_NEG + P3_EXTRA]
 
-    # 顺序：第一段 → 第二段 → 第三段
-    order = ['chart_static', 'chart_dynamic', 'para2_why', 'para3_positive', 'para3_negative']
+    # 第三档：中性版（2026-11-20）——立场不表态，主体句复用正负两版并集
+    mid = {x['id']: x for x in secs}.get('para3_neutral') or {}
+    mid.update({
+        'id': 'para3_neutral',
+        'title': '第三段 · 中性版（立场 + 建议）',
+        'subtitle': '双面题 / 现状分布题用：立场句不表态 + 从正负句池挑 1~2 句 + 收束句',
+        'group': by_id['para3_positive'].get('group', ''),
+        'priority': False,
+        'linkers': P3_LINKERS,
+        'framework': P3_FW_MID,
+        'alts': {'careful judgment': 'measured assessment / sober judgment',
+                 'praise or blame': 'celebration or alarm'},
+        'tips': ['什么时候用：图表既说不上好也说不上坏——老龄化（寿命延长 + 养老压力）、择业因素、线上/线下占比。',
+                 '正面版说「值得欢迎」、负面版说「问题严重」都不合适时，换这一版：只描述变化，把结论落到「怎么管」。',
+                 '主体句直接从下面正负两版的并集里挑，语气中性的（观念 / 政府 / 学校 / 个人）优先。'],
+    })
+    set_skeleton(mid, P3_MID)
+    mid['sentences'] = [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3M_FIT.get(t, 0)}
+                        for f, t, e, c in SUBJ_POS + SUBJ_NEG + P3_EXTRA]
+    if 'para3_neutral' not in {x['id'] for x in secs}:
+        secs.append(mid)
+
+    # 顺序：第一段 → 第二段 → 第三段（正面 / 负面 / 中性）
+    order = ['chart_static', 'chart_dynamic', 'para2_why', 'para3_positive', 'para3_negative', 'para3_neutral']
     by_id = {s['id']: s for s in secs}     # 插入 para2_why 后重建索引
     d['sections'] = [by_id[i] for i in order]
     d['_skeleton_ver'] = VER
