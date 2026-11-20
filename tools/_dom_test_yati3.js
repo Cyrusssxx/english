@@ -77,6 +77,21 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   // 整篇中文块仍在、工具栏按钮可切换
   if (!d.querySelector('#ytMEssay .yt-cn')) fail('整篇中文块丢失');
   else pass('整篇中文对照块仍在');
+
+  // 「显示中文译文」一键展开/收起所有逐句译块（含句高亮同步）
+  const btn = d.getElementById('ytCnBtn');
+  const boxes = d.querySelectorAll('#ytMEssay .yt-jsent-cn');
+  const jsents = d.querySelectorAll('#ytMEssay .yt-jsent');
+  btn.click();
+  const opened = [...boxes].filter(x => !x.hidden).length;
+  const onN = [...jsents].filter(x => x.classList.contains('on')).length;
+  if (opened !== boxes.length || onN !== jsents.length) fail(`一键展开不全: 译块 ${opened}/${boxes.length} 高亮 ${onN}/${jsents.length}`);
+  else pass(`按钮一键展开全部逐句译文（${opened} 句）+ 句高亮`);
+  btn.click();
+  const closed = [...boxes].filter(x => x.hidden).length;
+  const offN = [...jsents].filter(x => !x.classList.contains('on')).length;
+  if (closed !== boxes.length || offN !== jsents.length) fail(`一键收起不全: 译块 ${closed}/${boxes.length} 高亮清除 ${offN}/${jsents.length}`);
+  else pass('按钮再点一键收起全部逐句译文 + 清除句高亮');
   console.log(ok ? '\nYATI3 ALL PASS' : '\nYATI3 FAIL');
   process.exit(ok ? 0 : 1);
 })();

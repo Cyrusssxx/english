@@ -207,13 +207,24 @@ function ytEssayHtml(it) {
     return `<div class="yt-en">${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
 }
 
-/** 显示 / 隐藏整篇中文译文（与真题套用示范的「显示中文译文」同一交互） */
+/** 单句译块开合（同步句高亮 .on）；cnBox 为 .yt-jsent-cn */
+function ytSentCnShow(cnBox, show) {
+    if (!cnBox) return;
+    cnBox.hidden = !show;
+    const i = cnBox.dataset.for;
+    const s = cnBox.parentElement && cnBox.parentElement.querySelector('.yt-jsent[data-i="' + i + '"]');
+    if (s) s.classList.toggle('on', show);
+}
+
+/** 一键显示 / 隐藏全部中文：整篇对照块 + 所有逐句点开译块（与真题套用示范同一按钮） */
 function ytToggleCn(btn) {
     const pane = btn.closest('.yt-pane-txt');
-    const cn = pane && pane.querySelector('.yt-cn');
+    if (!pane) return;
+    const cn = pane.querySelector('.yt-cn');
     if (!cn) return;
     const show = cn.hidden;
     cn.hidden = !show;
+    pane.querySelectorAll('.yt-jsent-cn').forEach(box => ytSentCnShow(box, show));
     btn.textContent = show ? '隐藏中文译文' : '显示中文译文';
     btn.classList.toggle('on', show);
 }
@@ -405,14 +416,14 @@ function ytBindUi() {
         if (essay) essay.addEventListener('click', e => {
             if (!e.target.closest) return;
             const cnBox = e.target.closest('.yt-jsent-cn');
-            if (cnBox) { cnBox.hidden = true; return; }
+            if (cnBox) { ytSentCnShow(cnBox, false); return; }
             const s = e.target.closest('.yt-jsent');
             if (s && s.dataset.i != null) {
                 const sel = typeof window.getSelection === 'function' ? window.getSelection() : null;
                 if (sel && String(sel).length) return;              // 划词查词时不触发
                 if (e.target.closest('.kw, .kw-pop, mark.note-hl')) return;  // 点词卡/高亮不触发
                 const cn = essay.querySelector('.yt-jsent-cn[data-for="' + s.dataset.i + '"]');
-                if (cn) cn.hidden = !cn.hidden;
+                if (cn) ytSentCnShow(cn, cn.hidden);
             }
         });
         const prev = document.getElementById('ytPrev'), next = document.getElementById('ytNext');
