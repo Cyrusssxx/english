@@ -152,33 +152,46 @@ function ytNotesHtml(it) {
         `</div>`;
 }
 
-/* 逐句点译：每句 en 包 .yt-sent，紧跟一个默认隐藏的 .yt-sent-cn。
-   点句子开合该句中文；键盘 Enter/空格同样可开合。 */
-function ytToggleSent(el) {
-    const cn = el.nextElementSibling;
-    if (!cn || !cn.classList.contains('yt-sent-cn')) return;
-    const opening = cn.hidden;
-    cn.hidden = !opening;                 // 各句独立开合，方便对照
-    el.classList.toggle('on', opening);
+/* 范文渲染：英文整段在上，中文整段在下（默认隐藏，点工具栏按钮展开）。
+   呈现方式与真题「套用示范」一致：英文衬线体、段首缩进；中文浅色块、虚线分隔、
+   数字统一上金色底（.ap-own），与英文里的数字标注一一对应。 */
+function ytMarkNums(html) {
+    return String(html).replace(/(\d+(?:[.,]\d+)?%?)/g, '<mark class="ap-own">$1</mark>');
 }
 
 function ytEssayHtml(it) {
     const blocks = it.blocks || [];
     if (!blocks.length) return '<p class="ye-empty">暂无范文。</p>';
-    return blocks.map(b => {
-        const cls = { h: 'ye-h', meta: 'ye-meta', sign: 'ye-sign', p: '' }[b.k] || '';
-        const sents = (b.k === 'p' && Array.isArray(b.sents) && b.sents.length) ? b.sents : null;
-        let body;
-        if (sents) {
-            body = sents.map(s =>
-                `<span class="yt-sent" role="button" tabindex="0" title="点句看译文">${ytEsc(s.en)}</span>` +
-                `<span class="yt-sent-cn" hidden>${ytEsc(s.cn || '')}</span>`
-            ).join(' ');
-        } else {
-            body = ytEsc(b.v);
-        }
-        return `<p${cls ? ` class="${cls}"` : ''}>${body}</p>`;
+    const clsOf = b => ({ h: 'ye-h', meta: 'ye-meta', sign: 'ye-sign', p: '' }[b.k] || '');
+    const sentsOf = b => (Array.isArray(b.sents) && b.sents.length) ? b.sents : null;
+    const para = (cls, inner) => `<p${cls ? ` class="${cls}"` : ''}>${inner}</p>`;
+    /* 小作文的 meta 块（日期 / 时间 / 地点 / 记录人）一行一条，不挤成一段 */
+    const lines = (ss, pick) => ss.map(s => para('ye-meta', ytMarkNums(ytEsc(pick(s))))).join('');
+    const en = blocks.map(b => {
+        const ss = sentsOf(b);
+        if (!ss) return para(clsOf(b), ytMarkNums(ytEsc(b.v)));
+        if (b.k === 'meta') return lines(ss, s => s.en);
+        return para(clsOf(b), ss.map(s => ytMarkNums(ytEsc(s.en))).join(' '));
     }).join('');
+    const cn = blocks.map(b => {
+        const ss = sentsOf(b);
+        if (!ss) return para(clsOf(b), ytMarkNums(ytEsc(b.cn || '')));
+        if (b.k === 'meta') return lines(ss, s => s.cn || '');
+        /* 中文逐句直接相连（中文句末自带标点），拼起来就是自然的一整段 */
+        return para(clsOf(b), ytMarkNums(ytEsc(ss.map(s => s.cn || '').join(''))));
+    }).join('');
+    return `<div class="yt-en">${en}</div><div class="yt-cn" hidden>${cn}</div>`;
+}
+
+/** 显示 / 隐藏整篇中文译文（与真题套用示范的「显示中文译文」同一交互） */
+function ytToggleCn(btn) {
+    const pane = btn.closest('.yt-pane-txt');
+    const cn = pane && pane.querySelector('.yt-cn');
+    if (!cn) return;
+    const show = cn.hidden;
+    cn.hidden = !show;
+    btn.textContent = show ? '隐藏中文译文' : '显示中文译文';
+    btn.classList.toggle('on', show);
 }
 
 function ytOpen(no, fromEl) {
@@ -206,6 +219,8 @@ function ytOpen(no, fromEl) {
     const essayEl = document.getElementById('ytMEssay');
     essayEl.innerHTML = ytNotesHtml(it) + ytEssayHtml(it);
     essayEl.scrollTop = 0;
+    const cnBtn = document.getElementById('ytCnBtn');
+    if (cnBtn) { cnBtn.textContent = '显示中文译文'; cnBtn.classList.remove('on'); }
     ytPrefetch(idx);
     document.getElementById('ytMCnt').textContent = `${idx + 1} / ${YT_FLAT.length}`;
     document.getElementById('ytPrev').disabled = idx === 0;
@@ -360,18 +375,8 @@ function ytBindUi() {
         modal.querySelectorAll('#ytMTabs button').forEach(btn => {
             btn.addEventListener('click', () => ytSetPane(btn.dataset.pane));
         });
-        const essay = document.getElementById('ytMEssay');
-        if (essay) {
-            essay.addEventListener('click', e => {
-                const s = e.target.closest && e.target.closest('.yt-sent');
-                if (s) ytToggleSent(s);
-            });
-            essay.addEventListener('keydown', e => {
-                if (e.key !== 'Enter' && e.key !== ' ') return;
-                const s = e.target.closest && e.target.closest('.yt-sent');
-                if (s) { e.preventDefault(); ytToggleSent(s); }
-            });
-        }
+        const cnBtn = document.getElementById('ytCnBtn');
+        if (cnBtn) cnBtn.addEventListener('click', () => ytToggleCn(cnBtn));
         const prev = document.getElementById('ytPrev'), next = document.getElementById('ytNext');
         if (prev) prev.addEventListener('click', () => ytStep(-1));
         if (next) next.addEventListener('click', () => ytStep(1));

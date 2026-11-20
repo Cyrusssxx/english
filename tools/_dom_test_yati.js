@@ -133,7 +133,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   const noteEls = d.querySelectorAll('.yt-notes .yt-note');
   if (noteEls.length !== it17.notes.length) fail('图注对照条数 ' + noteEls.length + ' != ' + it17.notes.length);
   else pass(`图内中文 → 英文对照 ${noteEls.length} 条`);
-  const ps = d.querySelectorAll('#ytMEssay > p');
+  const ps = d.querySelectorAll('#ytMEssay .yt-en > p');
   const expectP = it17.blocks.filter(b => b.k === 'p').length;
   if (ps.length !== it17.blocks.length) fail('弹层段落数 ' + ps.length + ' != ' + it17.blocks.length);
   else pass(`弹层范文 ${ps.length} 段（其中正文 ${expectP} 段）`);

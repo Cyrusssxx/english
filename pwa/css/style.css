@@ -5671,25 +5671,49 @@ html.dark .kw-use { background: rgba(13, 148, 136, .15); }
 body.yt-modal-open .wr-layout { visibility: hidden; }
 .yt-mask { background: rgba(8, 18, 16, .82); }
 
-/* ⑤ 逐句点译 */
-.yt-essay p .yt-sent {
-    cursor: pointer; border-radius: 3px; padding: 1px 0;
-    transition: background .15s, box-shadow .15s;
+/* ⑤ 范文呈现：英文整段在上 → 点「显示中文译文」展开整篇中文（对齐真题「套用示范」） */
+.yt-txt-bar {
+    position: sticky; top: 0; z-index: 3;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    margin: -6px 0 8px; padding: 6px 0 8px;
+    background: linear-gradient(var(--card-bg) 76%, rgba(0, 0, 0, 0));
 }
-.yt-essay p .yt-sent:hover { background: var(--primary-soft); }
-.yt-essay p .yt-sent.on { background: var(--primary-soft); box-shadow: inset 0 -2px 0 var(--primary); }
-.yt-essay .yt-sent-cn {
-    display: block; margin: 3px 0 9px; padding: 7px 12px;
+.yt-txt-label { font-size: .74rem; font-weight: 700; letter-spacing: .08em; color: var(--text-light); }
+.yt-cn-btn {
+    font: inherit; font-size: .76rem; padding: 3px 11px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--bg-2); color: var(--text-light);
+    transition: color .15s, border-color .15s, background .15s;
+}
+.yt-cn-btn:hover { color: var(--primary); border-color: var(--primary); }
+.yt-cn-btn.on { color: var(--primary); border-color: var(--primary); background: var(--primary-soft); }
+
+.yt-en p { text-indent: 2em; }
+.yt-en .ye-h, .yt-en .ye-meta, .yt-en .ye-sign { text-indent: 0; }
+
+.yt-cn {
+    margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border);
     font-family: -apple-system, "Microsoft YaHei", sans-serif;
-    font-size: .82rem; line-height: 1.7; color: var(--text);
-    background: var(--bg-2); border-left: 3px solid var(--primary); border-radius: 0 7px 7px 0;
 }
-.yt-essay .yt-sent-cn[hidden] { display: none; }
-html.dark .yt-essay .yt-sent-cn { background: rgba(13, 148, 136, .12); }
+.yt-cn p {
+    font-family: inherit; font-size: .92rem; line-height: 1.95;
+    color: var(--text-light); text-indent: 2em;
+}
+.yt-cn p:last-child { margin-bottom: 0; }
+.yt-cn .ye-h { text-indent: 0; text-align: center; font-weight: 800; color: var(--primary); }
+.yt-cn .ye-meta { text-indent: 0; }
+.yt-cn .ye-sign { text-indent: 0; text-align: right; }
+
+/* 数字与英文标注一一对应的金色底（与真题示范的「自写/数据」标记同一视觉） */
+.yt-essay mark.ap-own {
+    background: rgba(252, 211, 77, .3); color: inherit;
+    border-radius: 3px; padding: 0 2px; font-weight: inherit;
+}
+html.dark .yt-essay mark.ap-own { background: rgba(252, 211, 77, .18); color: #fcd34d; }
 
 /* 窄屏：头底更紧，正文单栏 tab 切换保持 */
 @media (max-width: 900px) {
     .yt-mh-en { display: none; }
     .yt-pane-txt { padding: 13px 16px 22px; }
     .yt-essay p { font-size: .94rem; line-height: 1.95; }
+    .yt-cn p { font-size: .88rem; line-height: 1.9; }
 }
