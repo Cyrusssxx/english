@@ -1,4 +1,4 @@
-/* 押题页回归：范文结构（模板三段）+ 逐句中英完备 + 「显示中文译文」交互。
+/* 押题页回归：范文结构（原始 26 篇，3 段）+ 逐句中英完备 + 「显示中文译文」交互。
    运行：node tools/_dom_test_yati2.js   （jsdom 装在 E:/deps_cache/jsdom-test） */
 const fs = require('fs');
 const path = require('path');
@@ -14,12 +14,9 @@ const fail = m => { ok = false; console.log('FAIL ' + m); };
 const pass = m => console.log('OK   ' + m);
 
 /* ---------- 1. 数据：结构与译文 ---------- */
+/* 范文已回退为 ai归来版原始范文（用户 2026-11-20 定，不再硬套机制句）。
+   断言只验「3 段 + 每段成句 + 逐句中英齐备 + 词数合理」，不再要求模板句式。 */
 const CJK = /[\u4e00-\u9fff]/;
-const BIG_INTRO = 'This phenomenon can be attributed to a combination of factors.';
-const NEG_OPEN = /^On balance, the (figures|picture|two pictures) point(s)? to a problem worth taking seriously\.$/;
-const POS_OPEN = /^On balance, (this is a positive trend worth welcoming|interest deserves at least as much weight as market demand)\.$/;
-const NEG_CLOSE = /^Unless effective measures are taken, it may well get worse\.$/;
-const POS_CLOSE = /^(Given the momentum behind it|A choice that balances both)/;
 
 let bigN = 0, smallN = 0, sentN = 0, noCn = 0, enOnly = 0, badShape = [], wcBad = [];
 for (const g of data.groups) {
@@ -30,33 +27,35 @@ for (const g of data.groups) {
     const words = bs.map(b => b.v).join(' ').match(/[A-Za-z][A-Za-z'-]*/g) || [];
     if (isSmall) { if (words.length < 85 || words.length > 125) wcBad.push([it.no, words.length, 'small']); }
     else {
-      if (words.length < 145 || words.length > 200) wcBad.push([it.no, words.length, 'big']);
-      if (bs.length !== 3) badShape.push([it.no, '段数 ' + bs.length]);
-      else {
-        const p2 = bs[1].sents || [], p3 = bs[2].sents || [];
-        if (p2[0].en !== BIG_INTRO) badShape.push([it.no, 'P2 引入句不符']);
-        if (p2.length !== 4) badShape.push([it.no, 'P2 原因数 ' + (p2.length - 1)]);
-        if (!(NEG_OPEN.test(p3[0].en) || POS_OPEN.test(p3[0].en))) badShape.push([it.no, 'P3 立场句不符: ' + p3[0].en]);
-        if (!(NEG_CLOSE.test(p3[p3.length - 1].en) || POS_CLOSE.test(p3[p3.length - 1].en))) badShape.push([it.no, 'P3 收尾句不符: ' + p3[p3.length - 1].en]);
-        if (p3.length < 5) badShape.push([it.no, 'P3 对策不足 ' + (p3.length - 2)]);
-      }
+      if (words.length < 130 || words.length > 200) wcBad.push([it.no, words.length, 'big']);
+      // 大作文 3 段正文，每段都有逐句
+      const ps = bs.filter(b => b.k === 'p');
+      if (ps.length !== 3) badShape.push([it.no, '正文段数 ' + ps.length]);
+      else if (ps.some(b => !Array.isArray(b.sents) || b.sents.length < 2)) badShape.push([it.no, '段内缺逐句']);
     }
-    for (const b of bs) for (const s of (b.sents || [])) {
-      sentN++;
-      if (!s.cn || !s.cn.trim()) noCn++;
-      else if (!CJK.test(s.cn)) enOnly++;
-      else if (/\{\{/.test(s.en) || /\{\{/.test(s.cn)) enOnly++;
+    // 所有块（含 meta/sign）均应有逐句；每段逐句 en 拼回 = v
+    for (const b of bs) {
+      if (!Array.isArray(b.sents) || !b.sents.length) { badShape.push([it.no, '块缺 sents']); continue; }
+      const joined = b.sents.map(s => s.en).join(' ').replace(/\s+/g, ' ').trim();
+      const v = (b.v || '').replace(/\s+/g, ' ').trim();
+      if (joined !== v) badShape.push([it.no, '逐句拼回与段落原文不符: ' + b.k]);
+      for (const s of b.sents) {
+        sentN++;
+        if (!s.cn || !s.cn.trim()) noCn++;
+        else if (!CJK.test(s.cn)) enOnly++;
+        else if (/\{\{/.test(s.en) || /\{\{/.test(s.cn)) enOnly++;
+      }
     }
   }
 }
 if (bigN !== 18 || smallN !== 8) fail(`题数不符 大${bigN} 小${smallN}`);
 else pass(`26 篇：大作文 ${bigN} + 小作文 ${smallN}`);
 if (badShape.length) fail('结构不符: ' + JSON.stringify(badShape.slice(0, 4)));
-else pass('18 篇大作文均为 首段 / 引入+三原因 / 立场+对策+收尾');
+else pass('18 篇大作文均 3 段、逐句齐备且拼回段落原文一致');
 if (noCn || enOnly) fail(`译文异常: 空 ${noCn}，无中文或残留占位符 ${enOnly}`);
 else pass(`逐句中英 ${sentN} 句齐备，无漏译/占位符`);
 if (wcBad.length) fail('词数越界: ' + JSON.stringify(wcBad));
-else pass('词数全部落在大作文 145–200 / 小作文 85–125');
+else pass('词数全部落在大作文 130–200 / 小作文 85–125');
 
 /* ---------- 2. 静态样式 ---------- */
 if (!/\.yt-cn \{[^}]*border-top: 1px dashed/.test(css)) fail('缺中文块样式（与真题示范一致的虚线分隔）');

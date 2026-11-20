@@ -28,9 +28,11 @@ const { window } = dom;
 window.fetch = () => Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve(JSON.parse(raw)) });
 // 词典桩：让 kwMarkText 走真实分支，验证词被 .kw 标注
 window.eval(`
-  var KW_BY_KEY = new Map([['technology', {en:'technology',cn:'技术',use:'技术',ex:'',exCn:''}]]);
+  // 桩词取原始 NO6 范文里确实出现的词：首句 education、第二句 skills
+  // （回退原文后 technology 不再出现，桩须跟着内容走）
+  var KW_BY_KEY = new Map([['education', {en:'education',cn:'教育',use:'教育',ex:'',exCn:''}],['skills', {en:'skills',cn:'技能',use:'技能',ex:'',exCn:''}]]);
   function kwMarkText(text, esc){
-    return text.replace(/\\b(technology)\\b/g, (m)=>'<span class="kw">'+m+'</span>');
+    return text.replace(/\\b(education|skills)\\b/g, (m)=>'<span class="kw">'+m+'</span>');
   }
   function kwLoad(){ return Promise.resolve(); }
   function kwBind(){}
@@ -59,7 +61,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   sents[0].dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
   if (!cn.hidden) fail('再点未收起'); else pass('再点收起该句中文');
 
-  // 词可点：technology 应被 .kw 标注（词典就绪桩）
+  // 词可点：education 应被 .kw 标注（词典就绪桩）
   if (!d.querySelector('#ytMEssay .yt-en .kw')) fail('英文重点词未被标注为可点 .kw');
   else pass('英文重点词标注为可点 .kw');
 
