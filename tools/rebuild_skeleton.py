@@ -205,6 +205,33 @@ MECH = [
      '害怕错过的焦虑，促使人们还没想清楚就投入 {{topic}}。'),
     (2, '短期行为', 'Short-term thinking leads people to ignore what {{topic}} costs in the long run.',
      '短期思维让人们忽视 {{topic}} 长期要付出的代价。'),
+    # ── 2026-11-20 第三批：图表范文原句直取（NO6–15 第二段逐句提取，只挖槽 / 去具体化，不改措辞）──
+    # 用户核对「到底有没有提取范文原句」——前两批是按角度重写，这一批才是原句。
+    # 仍追加末尾、不插队；fit 给 29~40 压过押题句 → 前端置顶。
+    (3, '技能更新', 'Changing job requirements push employees to update their knowledge and practical skills.',
+     '岗位要求不断变化，促使员工更新知识和实用技能。'),                       # NO6 二段②
+    (3, '使用成本', 'Lower running costs may encourage consumers to consider {{topic}}.',
+     '更低的使用成本，可能促使消费者考虑 {{topic}}。'),               # NO7 二段③
+    (3, '路径依赖', 'The lasting appeal of familiar ways keeps some people from switching.',
+     '熟悉做法经久不衰的吸引力，让一些人迟迟不愿改变。'),                         # NO7 二段④
+    (3, '供给多样', 'Different options serve different needs, so there is something for almost everyone.',
+     '不同的选择满足不同需求，几乎人人都能找到合适的一种。'),               # NO8 二段④
+    (3, '时间灵活', 'Longer opening hours make {{topic}} easier to fit into a busy day.',
+     '更长的营业时间，让 {{topic}} 更容易塞进忙碌的一天。'),       # NO10 二段③
+    (3, '运营效率', 'Improvements in distribution and management help businesses operate more efficiently.',
+     '配送与管理的改善，帮助企业更高效地运转。'),                   # NO10 二段④
+    (3, '公平权利', 'Equal participation requires accessible facilities.',
+     '平等参与需要无障碍的设施。'),                     # NO11 二段②
+    (3, '溢出效应', 'These facilities not only help the intended users but also benefit older people and others with limited mobility.',
+     '这些设施不仅帮助目标使用者，也惠及老年人和行动不便的人。'),                           # NO11 二段④
+    (3, '时效紧迫', 'Timely assistance can make a difference in an emergency.',
+     '及时的帮助在紧急情况下能起决定作用。'),                 # NO12 二段②
+    (3, '门槛降低', 'Courses open to communities and workplaces encourage more people to take part.',
+     '向社区和职场开放的课程，鼓励更多人参与。'),                   # NO12 二段③
+    (3, '机会供给', 'Developments in research, technology and business provide attractive opportunities.',
+     '研究、技术和商业的发展提供了有吸引力的机会。'),                               # NO13 二段②
+    (3, '互补优势', 'They can apply what they learned abroad while benefiting from local knowledge.',
+     '他们能运用在海外所学，同时受益于本地经验。'),                         # NO13 二段③
 ]
 
 # ── 第二段机制句池分类（2026-11-20）──
@@ -231,6 +258,12 @@ MECH_CAT = {
     '公共投入': '供给与政策', '供给响应': '供给与政策', '需求叠加': '供给与政策', '政策支持': '供给与政策',
     # 问题成因：负面题专用
     '逐利': '问题成因', '规则滞后': '问题成因', '从众焦虑': '问题成因', '短期行为': '问题成因',
+    # 图表范文原句（2026-11-20 第三批）
+    '技能更新': '社会与人口', '时间灵活': '经济与市场', '使用成本': '经济与市场',
+    '运营效率': '经济与市场', '机会供给': '经济与市场',
+    '路径依赖': '观念与文化', '公平权利': '观念与文化',
+    '供给多样': '供给与政策', '门槛降低': '供给与政策',
+    '溢出效应': '万能逻辑', '时效紧迫': '万能逻辑', '互补优势': '万能逻辑',
 }
 MECH_GROUPS = [
     ('万能逻辑', '先看这组：不带槽，任何题接上都成立'),
@@ -353,15 +386,22 @@ P2_FIT = {'观念': 15, '收入': 6, '便利': 6, '学校': 6, '职场时间': 4
           # 原因句池扩容（2026-11-20 第二批）：新角度，不与已有 23 条重复
           '竞争': 11, '示范效应': 10, '政策支持': 9, '信息传播': 9,
           '健康意识': 8, '家庭结构': 8, '教育扩张': 7, '营销': 7,
-          '信息不对称': 6, '从众焦虑': 6, '短期行为': 5}
+          '信息不对称': 6, '从众焦虑': 6, '短期行为': 5,
+          # 图表范文原句直取（2026-11-20 第三批）：原句措辞最稳 → fit 最高，压过押题句置顶
+          '技能更新': 40, '使用成本': 39, '路径依赖': 38, '供给多样': 37,
+          '时间灵活': 36, '运营效率': 35, '公平权利': 34, '溢出效应': 33,
+          '时效紧迫': 32, '门槛降低': 31, '机会供给': 30, '互补优势': 29}
 P3P_FIT = {'个人': 6, '政府·长效': 5, '政府': 4, '学校': 4, '观念': 4, '企业/平台': 3,
            '媒体': 3, '个人·习惯': 3, '家庭': 2, '平台·设计': 2, '媒体·展示': 1,
            # 原范文提炼的通用功能句（2026-11-20）：无槽、三段通用 → fit 最高，前端置顶
-           '立场·中性': 19, '收尾·回扣': 18, '收尾·联合': 17, '收尾·条件': 16}
+           '立场·中性': 19, '收尾·回扣': 18, '收尾·联合': 17, '收尾·条件': 16,
+           # 图表范文第三段原句原型（2026-11-20 第三批）→ 再压一头
+           '立场·重要性': 21, '分工·协同': 20}
 P3N_FIT = {'个人·记录': 3, '企业·雇主': 2, '企业·管理': 2, '个人': 1,
            '政府': 0, '学校/家庭': 0, '家庭': 0, '企业/平台': 0, '媒体': 0,
            '学校·课程': 0, '家庭·作息': 0,
-           '立场·中性': 19, '收尾·回扣': 18, '收尾·联合': 17, '收尾·条件': 16}
+           '立场·中性': 19, '收尾·回扣': 18, '收尾·联合': 17, '收尾·条件': 16,
+           '立场·重要性': 21, '分工·协同': 20}
 # 中性版复用正负两版并集 → fit 取两边较大值
 P3M_FIT = {}
 for _k, _v in list(P3N_FIT.items()) + list(P3P_FIT.items()):
@@ -405,6 +445,12 @@ P3_EXTRA = [
      '只有个人与机构共同努力，这一潜力才能充分实现。'),
     (3, '收尾·条件', 'If these measures are implemented, a balance between development and protection will be within reach.',
      '若这些措施得以落实，发展与保护之间的平衡便指日可待。'),
+    # 2026-11-20 第三批：图表范文第三段原句原型（NO6–15 首句 "We should bear in mind that X is of great
+    # importance to Y" 与双主体对策 "A should …, while B should …"）——原句在池里没有对应，直取挖槽。
+    (3, '立场·重要性', 'We should bear in mind that {{topic}} is of great importance to long-term development.',
+     '我们应当记住，{{topic}} 对长远发展至关重要。'),
+    (3, '分工·协同', 'Authorities can set the rules, but only providers and users can make them work in practice.',
+     '政府可以制定规则，但只有供给方与使用者才能让规则真正落地。'),
 ]
 
 # ── 第三段：三套骨架合并展示 + 共用一份句池（2026-11-20）──
@@ -416,6 +462,7 @@ P3_EXTRA = [
 P3_CAT = {
     # 首尾骨架：立场 + 收束，任何题都要
     '立场·中性': '立场与收尾', '收尾·回扣': '立场与收尾', '收尾·联合': '立场与收尾', '收尾·条件': '立场与收尾',
+    '立场·重要性': '立场与收尾', '分工·协同': '政府与制度',
     # 责任主体
     '政府': '政府与制度', '政府·长效': '政府与制度',
     '学校': '学校与家庭', '学校/家庭': '学校与家庭', '学校·课程': '学校与家庭',

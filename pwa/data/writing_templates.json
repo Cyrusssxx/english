@@ -851,7 +851,7 @@
   {
    "id": "para2_why",
    "title": "第二段 · 原因（机制句池）",
-   "subtitle": "不背整段：1 句引入 + 从下面 40 条机制里挑 3 条（每条都是一个完整原因）",
+   "subtitle": "不背整段：1 句引入 + 从下面 52 条机制里挑 3 条（每条都是一个完整原因）",
    "group": "大作文 · 第一段（图表描述）",
    "en": "This phenomenon can be attributed to a combination of factors.",
    "cn": "这一现象可归因于多种因素的综合作用。",
@@ -1236,6 +1236,102 @@
      "tag": "短期行为",
      "fit": 5,
      "cat": "问题成因"
+    },
+    {
+     "en": "Changing job requirements push employees to update their knowledge and practical skills.",
+     "cn": "岗位要求不断变化，促使员工更新知识和实用技能。",
+     "freq": 3,
+     "tag": "技能更新",
+     "fit": 40,
+     "cat": "社会与人口"
+    },
+    {
+     "en": "Lower running costs may encourage consumers to consider {{topic}}.",
+     "cn": "更低的使用成本，可能促使消费者考虑 {{topic}}。",
+     "freq": 3,
+     "tag": "使用成本",
+     "fit": 39,
+     "cat": "经济与市场"
+    },
+    {
+     "en": "The lasting appeal of familiar ways keeps some people from switching.",
+     "cn": "熟悉做法经久不衰的吸引力，让一些人迟迟不愿改变。",
+     "freq": 3,
+     "tag": "路径依赖",
+     "fit": 38,
+     "cat": "观念与文化"
+    },
+    {
+     "en": "Different options serve different needs, so there is something for almost everyone.",
+     "cn": "不同的选择满足不同需求，几乎人人都能找到合适的一种。",
+     "freq": 3,
+     "tag": "供给多样",
+     "fit": 37,
+     "cat": "供给与政策"
+    },
+    {
+     "en": "Longer opening hours make {{topic}} easier to fit into a busy day.",
+     "cn": "更长的营业时间，让 {{topic}} 更容易塞进忙碌的一天。",
+     "freq": 3,
+     "tag": "时间灵活",
+     "fit": 36,
+     "cat": "经济与市场"
+    },
+    {
+     "en": "Improvements in distribution and management help businesses operate more efficiently.",
+     "cn": "配送与管理的改善，帮助企业更高效地运转。",
+     "freq": 3,
+     "tag": "运营效率",
+     "fit": 35,
+     "cat": "经济与市场"
+    },
+    {
+     "en": "Equal participation requires accessible facilities.",
+     "cn": "平等参与需要无障碍的设施。",
+     "freq": 3,
+     "tag": "公平权利",
+     "fit": 34,
+     "cat": "观念与文化"
+    },
+    {
+     "en": "These facilities not only help the intended users but also benefit older people and others with limited mobility.",
+     "cn": "这些设施不仅帮助目标使用者，也惠及老年人和行动不便的人。",
+     "freq": 3,
+     "tag": "溢出效应",
+     "fit": 33,
+     "cat": "万能逻辑"
+    },
+    {
+     "en": "Timely assistance can make a difference in an emergency.",
+     "cn": "及时的帮助在紧急情况下能起决定作用。",
+     "freq": 3,
+     "tag": "时效紧迫",
+     "fit": 32,
+     "cat": "万能逻辑"
+    },
+    {
+     "en": "Courses open to communities and workplaces encourage more people to take part.",
+     "cn": "向社区和职场开放的课程，鼓励更多人参与。",
+     "freq": 3,
+     "tag": "门槛降低",
+     "fit": 31,
+     "cat": "供给与政策"
+    },
+    {
+     "en": "Developments in research, technology and business provide attractive opportunities.",
+     "cn": "研究、技术和商业的发展提供了有吸引力的机会。",
+     "freq": 3,
+     "tag": "机会供给",
+     "fit": 30,
+     "cat": "经济与市场"
+    },
+    {
+     "en": "They can apply what they learned abroad while benefiting from local knowledge.",
+     "cn": "他们能运用在海外所学，同时受益于本地经验。",
+     "freq": 3,
+     "tag": "互补优势",
+     "fit": 29,
+     "cat": "万能逻辑"
     }
    ],
    "pool_groups": [
@@ -1301,7 +1397,7 @@
    "tips": [
     "万能开头：a combination of factors 不承诺条数，什么年份都成立；想点明条数再换 two / three / several major factors（必须与正文条数一致）。第 1 条用「Primary among these is ...」，第 2 条换「Equally important, ...」——高级衔接词见下方 ✎ 行，同篇不重样，别用 First and foremost。",
     "引入句 10 词 + 机制句挑 3 条 ≈ 55~62 词。",
-    "每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 40 条都写。",
+    "每条机制句自带 {{槽位}}，改成这道题的具体对象即可；不要 52 条都写。",
     "挑法：先看图表属于「钱变多 / 技术变便宜 / 人变忙 / 政策投入 / 观念变了」哪两类，再各挑一条。"
    ]
   },
@@ -1495,6 +1591,20 @@
      "freq": 3,
      "tag": "收尾·条件",
      "fit": 16
+    },
+    {
+     "en": "We should bear in mind that {{topic}} is of great importance to long-term development.",
+     "cn": "我们应当记住，{{topic}} 对长远发展至关重要。",
+     "freq": 3,
+     "tag": "立场·重要性",
+     "fit": 21
+    },
+    {
+     "en": "Authorities can set the rules, but only providers and users can make them work in practice.",
+     "cn": "政府可以制定规则，但只有供给方与使用者才能让规则真正落地。",
+     "freq": 3,
+     "tag": "分工·协同",
+     "fit": 20
     }
    ],
    "priority": true,
@@ -1928,6 +2038,24 @@
      "side": "通用",
      "fit": 16,
      "cat": "立场与收尾"
+    },
+    {
+     "en": "We should bear in mind that {{topic}} is of great importance to long-term development.",
+     "cn": "我们应当记住，{{topic}} 对长远发展至关重要。",
+     "freq": 3,
+     "tag": "立场·重要性",
+     "side": "通用",
+     "fit": 21,
+     "cat": "立场与收尾"
+    },
+    {
+     "en": "Authorities can set the rules, but only providers and users can make them work in practice.",
+     "cn": "政府可以制定规则，但只有供给方与使用者才能让规则真正落地。",
+     "freq": 3,
+     "tag": "分工·协同",
+     "side": "通用",
+     "fit": 20,
+     "cat": "政府与制度"
     }
    ],
    "pool_groups": [
@@ -2141,6 +2269,20 @@
      "freq": 3,
      "tag": "收尾·条件",
      "fit": 16
+    },
+    {
+     "en": "We should bear in mind that {{topic}} is of great importance to long-term development.",
+     "cn": "我们应当记住，{{topic}} 对长远发展至关重要。",
+     "freq": 3,
+     "tag": "立场·重要性",
+     "fit": 21
+    },
+    {
+     "en": "Authorities can set the rules, but only providers and users can make them work in practice.",
+     "cn": "政府可以制定规则，但只有供给方与使用者才能让规则真正落地。",
+     "freq": 3,
+     "tag": "分工·协同",
+     "fit": 20
     }
    ],
    "note": "负面版与正面版结构相同，主体同样按题挑（政府 / 学校 / 家庭 / 企业平台 / 媒体 / 个人），改词即可切换。",
@@ -2445,6 +2587,20 @@
      "freq": 3,
      "tag": "收尾·条件",
      "fit": 16
+    },
+    {
+     "en": "We should bear in mind that {{topic}} is of great importance to long-term development.",
+     "cn": "我们应当记住，{{topic}} 对长远发展至关重要。",
+     "freq": 3,
+     "tag": "立场·重要性",
+     "fit": 21
+    },
+    {
+     "en": "Authorities can set the rules, but only providers and users can make them work in practice.",
+     "cn": "政府可以制定规则，但只有供给方与使用者才能让规则真正落地。",
+     "freq": 3,
+     "tag": "分工·协同",
+     "fit": 20
     }
    ],
    "render_in": "para3_positive"
