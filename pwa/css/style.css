@@ -5650,7 +5650,7 @@ html.dark .kw-use { background: rgba(13, 148, 136, .15); }
 /* ==================== 押题弹层：放大范文 + 压缩头底 + 点句译（2026-11-20）==================== */
 /* ① 弹层加高：桌面占满可用高度，把空间让给正文；左右仍并排 */
 .yt-box { width: min(1440px, 100%); height: min(94vh, 1100px); }
-.yt-mbody { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); }
+.yt-mbody { grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr); }
 .yt-pane-txt { padding: 16px 26px 26px; }
 .yt-essay { max-width: 74ch; }
 .yt-essay p { font-size: .98rem; line-height: 2.05; margin-bottom: 15px; }
