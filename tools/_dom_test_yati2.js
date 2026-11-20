@@ -57,6 +57,19 @@ else pass(`逐句中英 ${sentN} 句齐备，无漏译/占位符`);
 if (wcBad.length) fail('词数越界: ' + JSON.stringify(wcBad));
 else pass('词数全部落在大作文 130–200 / 小作文 85–125');
 
+/* NO6：用户指定前两段用自己骨架 + 自己衔接词，第三段保留原始范文 */
+const no6 = data.groups.reduce((a, g) => a.concat(g.items), []).find(x => x.no === 6);
+const n6p1 = (no6 && no6.blocks[0].v) || '', n6p2 = (no6 && no6.blocks[1].v) || '';
+const n6p3 = (no6 && no6.blocks[2].v) || '';
+if (!/^The bar chart above clearly illustrates how/.test(n6p1) || !/takes the lead, accounting for/.test(n6p1))
+  fail('NO6 首段未用用户骨架');
+else pass('NO6 首段 = 用户骨架（clearly illustrates how / takes the lead）');
+if (!/Primary among these is that /.test(n6p2) || !/Equally important, /.test(n6p2) || !/A further driver is /.test(n6p2) || /First and foremost|Furthermore/.test(n6p2))
+  fail('NO6 第二段衔接词未换成用户自己的');
+else pass('NO6 第二段 = 用户衔接词（Primary / Equally / A further driver）');
+if (!/We should bear in mind that lifelong learning/.test(n6p3)) fail('NO6 第三段被误替换');
+else pass('NO6 第三段保留原始范文（未替换）');
+
 /* ---------- 2. 静态样式 ---------- */
 if (!/\.yt-cn \{[^}]*border-top: 1px dashed/.test(css)) fail('缺中文块样式（与真题示范一致的虚线分隔）');
 else pass('中文块沿用真题示范样式（虚线分隔 + 缩进 + 浅色字）');
