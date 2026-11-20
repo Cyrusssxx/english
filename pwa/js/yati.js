@@ -159,28 +159,52 @@ function ytMarkNums(html) {
     return String(html).replace(/(\d+(?:[.,]\d+)?%?)/g, '<mark class="ap-own">$1</mark>');
 }
 
+/** 英文文本 → 可点词 + 数字金底 + 占位符芯片（词典就绪时用 kwMarkText，与真题套用示范同源） */
+function ytWordHtml(text) {
+    const marked = (typeof kwMarkText === 'function' && typeof KW_BY_KEY !== 'undefined' && KW_BY_KEY && KW_BY_KEY.size)
+        ? kwMarkText(text, ytEsc) : ytEsc(text);
+    return ytMarkNums(marked);
+}
+
+/* 范文渲染（完全对齐真题「套用示范」）：
+   · 英文衬线体 + 段首缩进，数字金底，重点词/短语可点查释义（复用词典）；
+   · 每句包 .yt-jsent，点句展开该句中文（.yt-jsent-cn），复用阅读页「点句看译文」；
+   · 段末「本段译文 ▾」按钮展开该段中文；工具栏「显示中文译文」展开整篇；
+   · 三套中文互不冲突：逐句 / 分段 / 整篇。 */
 function ytEssayHtml(it) {
     const blocks = it.blocks || [];
     if (!blocks.length) return '<p class="ye-empty">暂无范文。</p>';
     const clsOf = b => ({ h: 'ye-h', meta: 'ye-meta', sign: 'ye-sign', p: '' }[b.k] || '');
     const sentsOf = b => (Array.isArray(b.sents) && b.sents.length) ? b.sents : null;
     const para = (cls, inner) => `<p${cls ? ` class="${cls}"` : ''}>${inner}</p>`;
-    /* 小作文的 meta 块（日期 / 时间 / 地点 / 记录人）一行一条，不挤成一段 */
-    const lines = (ss, pick) => ss.map(s => para('ye-meta', ytMarkNums(ytEsc(pick(s))))).join('');
-    const en = blocks.map(b => {
+    let n = 0;   // 全局句号，句译块按号定位
+    /* 小作文 meta 块（日期 / 时间 / 地点 / 记录人）一行一条，不挤成一段 */
+    const metaLines = (ss, pick) => ss.map(s => para('ye-meta', ytMarkNums(ytEsc(pick(s))))).join('');
+
+    const enParts = [], cnParts = [];
+    blocks.forEach((b, bi) => {
         const ss = sentsOf(b);
-        if (!ss) return para(clsOf(b), ytMarkNums(ytEsc(b.v)));
-        if (b.k === 'meta') return lines(ss, s => s.en);
-        return para(clsOf(b), ss.map(s => ytMarkNums(ytEsc(s.en))).join(' '));
-    }).join('');
-    const cn = blocks.map(b => {
-        const ss = sentsOf(b);
-        if (!ss) return para(clsOf(b), ytMarkNums(ytEsc(b.cn || '')));
-        if (b.k === 'meta') return lines(ss, s => s.cn || '');
-        /* 中文逐句直接相连（中文句末自带标点），拼起来就是自然的一整段 */
-        return para(clsOf(b), ytMarkNums(ytEsc(ss.map(s => s.cn || '').join(''))));
-    }).join('');
-    return `<div class="yt-en">${en}</div><div class="yt-cn" hidden>${cn}</div>`;
+        if (!ss) {
+            enParts.push(para(clsOf(b), ytWordHtml(b.v || '')));
+            cnParts.push(para(clsOf(b), ytMarkNums(ytEsc(b.cn || ''))));
+            return;
+        }
+        if (b.k === 'meta') {
+            enParts.push(metaLines(ss, s => s.en));
+            cnParts.push(metaLines(ss, s => s.cn || ''));
+            return;
+        }
+        // 英文段：逐句可点 + 句译块（点句看该句中文；整篇中文由工具栏按钮控制）
+        let inner = ss.map(s => {
+            const i = n++;
+            return `<span class="yt-jsent" data-i="${i}" title="点句看该句中文">${ytWordHtml(s.en)}</span>`
+                + `<span class="yt-jsent-cn" data-for="${i}" hidden>${ytMarkNums(ytEsc(s.cn || ''))}</span>`;
+        }).join(' ');
+        const cnText = ss.map(s => s.cn || '').join('');
+        enParts.push(para(clsOf(b), inner));
+        cnParts.push(para(clsOf(b), ytMarkNums(ytEsc(cnText))));
+    });
+    return `<div class="yt-en">${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
 }
 
 /** 显示 / 隐藏整篇中文译文（与真题套用示范的「显示中文译文」同一交互） */
@@ -215,7 +239,6 @@ function ytOpen(no, fromEl) {
     img.classList.remove('is-in', 'is-err', 'is-loading');
     img.src = it.img;
     img.alt = `第 ${it.no} 题：${it.title}`;
-    document.getElementById('ytMOpen').href = it.img;
     const essayEl = document.getElementById('ytMEssay');
     essayEl.innerHTML = ytNotesHtml(it) + ytEssayHtml(it);
     essayEl.scrollTop = 0;
@@ -377,6 +400,21 @@ function ytBindUi() {
         });
         const cnBtn = document.getElementById('ytCnBtn');
         if (cnBtn) cnBtn.addEventListener('click', () => ytToggleCn(cnBtn));
+        // 范文点击委托（重渲染后仍有效）：词卡点击让 kwBind 处理；这里管点句译 / 段译 / 关译块
+        const essay = document.getElementById('ytMEssay');
+        if (essay) essay.addEventListener('click', e => {
+            if (!e.target.closest) return;
+            const cnBox = e.target.closest('.yt-jsent-cn');
+            if (cnBox) { cnBox.hidden = true; return; }
+            const s = e.target.closest('.yt-jsent');
+            if (s && s.dataset.i != null) {
+                const sel = typeof window.getSelection === 'function' ? window.getSelection() : null;
+                if (sel && String(sel).length) return;              // 划词查词时不触发
+                if (e.target.closest('.kw, .kw-pop, mark.note-hl')) return;  // 点词卡/高亮不触发
+                const cn = essay.querySelector('.yt-jsent-cn[data-for="' + s.dataset.i + '"]');
+                if (cn) cn.hidden = !cn.hidden;
+            }
+        });
         const prev = document.getElementById('ytPrev'), next = document.getElementById('ytNext');
         if (prev) prev.addEventListener('click', () => ytStep(-1));
         if (next) next.addEventListener('click', () => ytStep(1));
@@ -406,6 +444,16 @@ function ytBindUi() {
 
 async function ytInit() {
     ytBindUi();
+    // 范文重点词可点查释义：先加载词库再绑定（词典就绪后需重渲染一次，让词标注生效）
+    if (typeof kwBind === 'function') kwBind();
+    if (typeof kwLoad === 'function') {
+        kwLoad().then(() => {
+            if (YT_CUR >= 0 && YT_FLAT[YT_CUR]) {
+                const e = document.getElementById('ytMEssay');
+                if (e) e.innerHTML = ytNotesHtml(YT_FLAT[YT_CUR]) + ytEssayHtml(YT_FLAT[YT_CUR]);
+            }
+        }).catch(() => {});
+    }
     const s = document.getElementById('darkState');
     if (s && document.documentElement.classList.contains('dark')) s.textContent = '开';
     try {

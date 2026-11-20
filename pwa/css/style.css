@@ -5485,7 +5485,7 @@ body.yt-modal-open { overflow: hidden; }
     display: flex; flex-direction: column; align-items: center; gap: 6px;
     padding: 14px; background: var(--bg); border-right: 1px solid var(--border);
 }
-.yt-mzoom { display: block; width: 100%; cursor: zoom-in; }
+.yt-mzoom { display: block; width: 100%; }
 .yt-mzoom img {
     display: block; margin: 0 auto; max-width: 100%; height: auto;
     border: 1px solid var(--border); border-radius: 8px; background: #fff;
@@ -5709,6 +5709,28 @@ body.yt-modal-open .wr-layout { visibility: hidden; }
     border-radius: 3px; padding: 0 2px; font-weight: inherit;
 }
 html.dark .yt-essay mark.ap-own { background: rgba(252, 211, 77, .18); color: #fcd34d; }
+
+/* 逐句点译（复用真题阅读页 .sent-cn 的视觉：点句高亮 + 句下浅色译块） */
+.yt-essay .yt-jsent {
+    cursor: pointer; border-radius: 3px; padding: 1px 0;
+    transition: background .15s, box-shadow .15s;
+}
+.yt-essay .yt-jsent:hover { background: var(--primary-soft); }
+.yt-essay .yt-jsent.on { background: var(--primary-soft); box-shadow: inset 0 -2px 0 var(--primary); }
+.yt-essay .yt-jsent-cn {
+    display: block; text-indent: 0;
+    font-family: -apple-system, "Microsoft YaHei", sans-serif;
+    font-size: .88rem; line-height: 1.7; color: var(--primary-dark);
+    background: var(--primary-soft); border-left: 2px solid var(--primary);
+    border-radius: 0 6px 6px 0; padding: 6px 12px; margin: 6px 0 10px;
+    cursor: pointer; animation: fadeIn .15s ease;
+}
+.yt-essay .yt-jsent-cn[hidden] { display: none; }
+html.dark .yt-essay .yt-jsent-cn { color: #7edcd2; background: rgba(13, 148, 136, .12); }
+/* 词可点查释义：与真题套用示范一致的下划线提示（kwpop 的 .kw 已有样式，这里补继承色） */
+.yt-en .kw { cursor: pointer; }
+/* 数字金底已在 .yt-essay mark.ap-own 定义；占位符芯片 */
+.yt-essay .yt-ph { color: var(--primary); font-weight: 600; }
 
 /* 窄屏：头底更紧，正文单栏 tab 切换保持 */
 @media (max-width: 900px) {
