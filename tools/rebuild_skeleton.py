@@ -158,8 +158,8 @@ DYN_SKELS_EXTRA = [
                 [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' saw', 'p'), S(' a modest increase', 'o'),
                  S(', climbing from {{num3}} to {{num4}} over the same period', 'o'), S('.', '')]],
      'alts': {'depicts': 'shows / presents'},
-     'demo': ('The cartoon above depicts overseas students returning to China, while the chart below clearly illustrates the '
-              'changes in the number of returnees from 2012 to 2022. During this period, the number rose sharply from 0.27 million '
+     'demo': ('The cartoon above depicts capped graduates flying back from abroad to China, with landmarks of the two countries '
+              'below, while the chart below clearly illustrates the changes in the number of returnees from 2012 to 2022. During this period, the number rose sharply from 0.27 million '
               'to 0.6 million. By contrast, the figure for students going abroad saw a modest increase, climbing from 0.4 million '
               'to 0.7 million over the same period.')},
     {'label': '⑥ 两张图表并列',
@@ -408,10 +408,10 @@ P3_FW_NEG = [
 ]
 # 中性版拼装框架：不表态，把判断权交给「怎么管」
 P3_FW_MID = [
-    {'en': 'On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame.',
-     'trans': '总的来说，这些数据揭示的是一种变化，它值得审慎判断，而非简单的褒贬。',
+    {'en': 'On balance, what the figures reveal is a pattern that deserves careful judgment rather than simple praise or blame.',
+     'trans': '总的来说，这些数据揭示的是一种格局，它值得审慎判断，而非简单的褒贬。',
      'cn': '立场句：双面题 / 现状分布题用——既不吹好也不唱衰。'},
-    {'en': 'To make the most of this shift, + 主体句 ①', 'trans': '要把握好这一变化，……',
+    {'en': 'To make the most of this pattern, + 主体句 ①', 'trans': '要把握好这一格局，……',
      'cn': '主体句：正负两版的句池都能挑，中性题优先挑「观念 / 政府 / 学校 / 个人」这类不带褒贬的。'},
     {'en': 'Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.',
      'trans': '它究竟成为福祉还是负担，取决于未来能否得到妥善管理。',
@@ -430,10 +430,10 @@ P3_NEG = [
 # 为什么需要：正面版说「值得欢迎」、负面版说「问题严重」，但双面题（老龄化=寿命延长+养老压力）
 # 和现状分布题（择业因素 / 线上线下占比）两边都不合。中性版不表态，只说「值得审慎判断」。
 P3_MID = [
-    sent('On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame.',
-         '总的来说，这些数据揭示的是一种变化，它值得审慎判断，而非简单的褒贬。',
+    sent('On balance, what the figures reveal is a pattern that deserves careful judgment rather than simple praise or blame.',
+         '总的来说，这些数据揭示的是一种格局，它值得审慎判断，而非简单的褒贬。',
          [[S('On balance', 'trans'), S(', what the figures reveal', 't'), S(' is', 'p'),
-           S(' a shift that deserves careful judgment rather than simple praise or blame', 'o'), S('.', '')]]),
+           S(' a pattern that deserves careful judgment rather than simple praise or blame', 'o'), S('.', '')]]),
     sent('Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.',
          '它究竟成为福祉还是负担，取决于未来能否得到妥善管理。',
          [[S('Whether it proves to be a blessing or a burden', 'o'), S(' depends on', 'p'),

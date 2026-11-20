@@ -73,7 +73,7 @@ else pass('NO6–15 图表类：首段 clearly illustrates + P2 引入句/Primar
 // 第三段：立场句换成模板骨架（用户 2026-11-20 定：拆开用 + 按趋势分套）
 const P3_POS_OPEN = 'On balance, this is a positive trend worth welcoming.';
 const P3_POS_CLOSE = 'Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.';
-const P3_NEU_OPEN = 'On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame.';
+const P3_NEU_OPEN = 'On balance, what the figures reveal is a pattern that deserves careful judgment rather than simple praise or blame.';
 const P3_NEU_CLOSE_RE = /depends on how well it is managed|By considering their abilities|Combining dependable online/;
 const badP3 = [];
 [6, 7, 8, 9, 10, 11, 12, 13, 14, 15].forEach(no => {
