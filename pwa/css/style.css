@@ -5735,3 +5735,34 @@ html.dark .yt-essay .yt-jsent-cn { color: #7edcd2; background: rgba(13, 148, 136
     .yt-essay p { font-size: .94rem; line-height: 1.95; }
     .yt-cn p { font-size: .88rem; line-height: 1.9; }
 }
+
+/* ── 弹药句池分类（2026-11-20）── */
+/* 第二段 40 条机制句按「考场怎么挑」分 8 组：组头一行带用途说明，组内仍双列网格 */
+.wr-pool-group { margin-bottom: 15px; }
+.wr-pool-group:first-child { margin-top: 2px; }
+.wr-pool-group:last-child { margin-bottom: 0; }
+.wr-pool-head {
+    display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+    padding: 3px 0 7px; margin-bottom: 9px;
+    border-bottom: 1px solid var(--border);
+}
+.wr-pool-name {
+    flex: 0 0 auto; position: relative;
+    font-size: .9rem; font-weight: 800; letter-spacing: .3px;
+    color: var(--primary-dark); padding-left: 9px;
+}
+.wr-pool-name::before {
+    content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+    width: 3px; height: 13px; border-radius: 2px; background: var(--primary);
+}
+html.dark .wr-pool-name { color: #7cc0ff; }
+.wr-pool-desc { flex: 1 1 auto; min-width: 0; font-size: .78rem; line-height: 1.5; color: var(--text-light); }
+.wr-pool-n {
+    flex: 0 0 auto; font-size: .72rem; font-weight: 700; line-height: 1.6;
+    color: var(--text-light); background: var(--bg);
+    border: 1px solid var(--border); border-radius: 9px; padding: 0 7px;
+}
+@media (max-width: 760px) {
+    .wr-pool-head { gap: 5px 8px; }
+    .wr-pool-desc { flex-basis: 100%; order: 3; }
+}

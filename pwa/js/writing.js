@@ -827,11 +827,35 @@ function wrWords(t) {
 function wrSectionCard(sec) {
     // 适配面优先展示：按 fit（17 年方案引用年数，适配越多排越前）降序，fit 相同再按考频 ★ 降序
     const pool = (sec.sentences || []).slice().sort((a, b) => (b.fit ?? (b.freq || 2)) - (a.fit ?? (a.freq || 2)));
-    const sents = pool.map((s, i) => `
+    // 句池分类（2026-11-20）：有 pool_groups 就按类分组渲染，组内仍按 fit 降序；没有就平铺，向后兼容
+    const sentItem = (s, no) => `
         <li class="wr-sent">
-            <div class="wr-sent-en"><span class="wr-sent-no">${i + 1}</span>${s.freq ? `<span class="wr-freq" title="考频：★★★ 通用（跨话题都能接）/ ★★ 常用 / ★ 专场">${'★'.repeat(s.freq)}</span>` : ''}${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
+            <div class="wr-sent-en"><span class="wr-sent-no">${no}</span>${s.freq ? `<span class="wr-freq" title="考频：★★★ 通用（跨话题都能接）/ ★★ 常用 / ★ 专场">${'★'.repeat(s.freq)}</span>` : ''}${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
             <div class="wr-sent-cn">${wrHl(s.cn)}</div>
-        </li>`).join('');
+        </li>`;
+    const grpDefs = (sec.pool_groups || []).filter(g => pool.some(x => x.cat === g.name));
+    let nGrp = 0;
+    let sents;
+    if (grpDefs.length) {
+        let no = 0;
+        const rest = pool.filter(x => !grpDefs.some(g => g.name === x.cat));
+        sents = grpDefs.map(g => {
+            const list = pool.filter(x => x.cat === g.name);
+            return `<div class="wr-pool-group">
+                        <div class="wr-pool-head"><span class="wr-pool-name">${wrEsc(g.name)}</span>${g.desc ? `<span class="wr-pool-desc">${wrEsc(g.desc)}</span>` : ''}<span class="wr-pool-n">${list.length}</span></div>
+                        <ol class="wr-sent-list">${list.map(s => sentItem(s, ++no)).join('')}</ol>
+                    </div>`;
+        }).join('');
+        nGrp = grpDefs.length;
+        if (rest.length) {
+            sents += `<div class="wr-pool-group">
+                        <div class="wr-pool-head"><span class="wr-pool-name">其他</span><span class="wr-pool-n">${rest.length}</span></div>
+                        <ol class="wr-sent-list">${rest.map(s => sentItem(s, ++no)).join('')}</ol>
+                    </div>`;
+        }
+    } else {
+        sents = `<ol class="wr-sent-list">${pool.map((s, i) => sentItem(s, i + 1)).join('')}</ol>`;
+    }
 
     const tips = (sec.tips || []).map(x => `<li>${wrEsc(x)}</li>`).join('');
     const body = wrTplBody(sec.en, sec.cn, sec.en_struct);
@@ -898,8 +922,8 @@ function wrSectionCard(sec) {
             <div class="wr-en">${neg.enHtml}</div>
             <div class="wr-cn">${neg.cnHtml}</div>
         </div>` : ''}
-        ${sents ? `<div class="wr-sents"><div class="wr-sents-title">⚡ 弹药句池（挑 1~2 句接在骨架后面，共 ${nS} 句可选）
-                    <span class="wr-sents-legend"><b>★★★</b> 通用 · 跨话题都能接，优先挑；<b>★★</b> 常用；<b>★</b> 专场</span></div><ol class="wr-sent-list">${sents}</ol></div>` : ''}
+        ${sents ? `<div class="wr-sents"><div class="wr-sents-title">⚡ 弹药句池（挑 1~2 句接在骨架后面，共 ${nS} 句${nGrp ? ` · 分 ${nGrp} 类` : ''}）
+                    <span class="wr-sents-legend"><b>★★★</b> 通用 · 跨话题都能接，优先挑；<b>★★</b> 常用；<b>★</b> 专场${nGrp ? '；<b>挑法</b> 先扫「万能逻辑」，再进题目所属的那一类' : ''}</span></div>${sents}</div>` : ''}
         ${sec.note ? `<div class="wr-note-inline">💡 ${wrHl(sec.note)}</div>` : ''}
         ${tips ? `<ul class="wr-tips">${tips}</ul>` : ''}
     </section>`;

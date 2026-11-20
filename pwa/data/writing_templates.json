@@ -922,280 +922,354 @@
      "cn": "随着家庭收入提高，{{topic}} 已从奢侈品变成日常必需。",
      "freq": 3,
      "tag": "收入",
-     "fit": 6
+     "fit": 6,
+     "cat": "经济与市场"
     },
     {
      "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
      "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
      "freq": 3,
      "tag": "便利",
-     "fit": 6
+     "fit": 6,
+     "cat": "经济与市场"
     },
     {
      "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
      "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
      "freq": 3,
      "tag": "观念",
-     "fit": 15
+     "fit": 15,
+     "cat": "观念与文化"
     },
     {
      "en": "The figure for {{item1}} climbed from {{num1}} to {{num2}}, which matches the overall trend.",
      "cn": "{{item1}} 从 {{num1}} 升到 {{num2}}，与整体趋势一致。",
      "freq": 3,
      "tag": "数据回扣",
-     "fit": 0
+     "fit": 0,
+     "cat": "万能逻辑"
     },
     {
      "en": "Public spending on infrastructure has made {{topic}} far more widely available.",
      "cn": "基础设施方面的公共支出使 {{topic}} 更加普及。",
      "freq": 2,
      "tag": "公共投入",
-     "fit": 7
+     "fit": 7,
+     "cat": "供给与政策"
     },
     {
      "en": "Cities have absorbed millions of new residents, and demand for {{topic}} has grown with them.",
      "cn": "随着城市吸纳了大量新居民，{{topic}} 的需求也随之增长。",
      "freq": 2,
      "tag": "城市化",
-     "fit": 3
+     "fit": 3,
+     "cat": "社会与人口"
     },
     {
      "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
      "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
      "freq": 2,
      "tag": "久坐",
-     "fit": 3
+     "fit": 3,
+     "cat": "社会与人口"
     },
     {
      "en": "Longer working hours have made people value the little free time they have.",
      "cn": "工作时间变长，人们更看重仅有的空闲时间。",
      "freq": 2,
      "tag": "职场时间",
-     "fit": 4
+     "fit": 4,
+     "cat": "社会与人口"
     },
     {
      "en": "Schools now treat {{topic}} as part of the routine rather than an optional extra.",
      "cn": "学校现在将 {{topic}} 视为常规活动的一部分，而非可选的附加内容。",
      "freq": 2,
      "tag": "学校",
-     "fit": 6
+     "fit": 6,
+     "cat": "社会与人口"
     },
     {
      "en": "Old traditions survive only when people find new ways to pass them on.",
      "cn": "只有当人们找到新的方式来传承旧传统时，它们才能得以延续。",
      "freq": 2,
      "tag": "文化传承",
-     "fit": 2
+     "fit": 2,
+     "cat": "观念与文化"
     },
     {
      "en": "Longer life expectancy has changed how families plan for their later years.",
      "cn": "寿命的延长改变了家庭对晚年的规划。",
      "freq": 2,
      "tag": "人口结构",
-     "fit": 1
+     "fit": 1,
+     "cat": "社会与人口"
     },
     {
      "en": "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands.",
      "cn": "国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。",
      "freq": 2,
      "tag": "国产替代",
-     "fit": 1
+     "fit": 1,
+     "cat": "经济与市场"
     },
     {
      "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
      "cn": "如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。",
      "freq": 2,
      "tag": "职场流动",
-     "fit": 4
+     "fit": 4,
+     "cat": "社会与人口"
     },
     {
      "en": "Employers now look for experience as much as for grades.",
      "cn": "如今用人单位既看重成绩，也看重经验。",
      "freq": 1,
      "tag": "就业门槛",
-     "fit": 3
+     "fit": 3,
+     "cat": "社会与人口"
     },
     {
      "en": "Daily life has become more rushed, and {{topic}} is one of the few things people still fit in.",
      "cn": "生活节奏不断加快，{{topic}} 成了人们为数不多还愿意抽出时间去做的事。",
      "freq": 1,
      "tag": "生活节奏",
-     "fit": 0
+     "fit": 0,
+     "cat": "社会与人口"
     },
     {
      "en": "Advances in technology have made {{topic}} part of daily life rather than a privilege.",
      "cn": "科技的进步让 {{topic}} 从少数人的特权变成日常生活的一部分。",
      "freq": 3,
      "tag": "科技普及",
-     "fit": 23
+     "fit": 23,
+     "cat": "技术与信息"
     },
     {
      "en": "AI-powered tutoring gives students instant feedback that a single teacher can hardly provide.",
      "cn": "人工智能辅导能给学生即时反馈，这是单个老师很难做到的。",
      "freq": 3,
      "tag": "AI 教育",
-     "fit": 22
+     "fit": 22,
+     "cat": "押题热点"
     },
     {
      "en": "Shared online courses have begun to narrow the gap between urban and rural classrooms.",
      "cn": "共享网课已经开始缩小城乡课堂之间的差距。",
      "freq": 3,
      "tag": "教育公平",
-     "fit": 21
+     "fit": 21,
+     "cat": "押题热点"
     },
     {
      "en": "Rising environmental awareness has turned {{topic}} into a mark of responsible living.",
      "cn": "环保意识的提升，使 {{topic}} 成为负责任生活的标志。",
      "freq": 3,
      "tag": "环保意识",
-     "fit": 20
+     "fit": 20,
+     "cat": "观念与文化"
     },
     {
      "en": "Better public transport has made low-carbon travel a practical choice for young people.",
      "cn": "更完善的公共交通，让低碳出行成为年轻人切实可行的选择。",
      "freq": 3,
      "tag": "绿色出行",
-     "fit": 19
+     "fit": 19,
+     "cat": "押题热点"
     },
     {
      "en": "Short videos and self-media have opened a far easier route into {{topic}} for young people.",
      "cn": "短视频和自媒体，为年轻人了解 {{topic}} 打开了一条便捷得多的路径。",
      "freq": 3,
      "tag": "文化新媒介",
-     "fit": 18
+     "fit": 18,
+     "cat": "押题热点"
     },
     {
      "en": "Some providers put immediate profit first, which leaves quality and safety poorly managed.",
      "cn": "一些商家把眼前利润放在首位，导致质量与安全疏于管理。",
      "freq": 3,
      "tag": "逐利",
-     "fit": 4
+     "fit": 4,
+     "cat": "问题成因"
     },
     {
      "en": "Rules have not kept pace with how quickly {{topic}} has spread.",
      "cn": "规则的更新速度，赶不上 {{topic}} 扩散的速度。",
      "freq": 3,
      "tag": "规则滞后",
-     "fit": 4
+     "fit": 4,
+     "cat": "问题成因"
     },
     {
      "en": "Technology has steadily lowered the cost of what once required far more time and money.",
      "cn": "技术不断降低那些过去需要更多时间和金钱才能获得的东西的成本。",
      "freq": 3,
      "tag": "技术降本",
-     "fit": 14
+     "fit": 14,
+     "cat": "经济与市场"
     },
     {
      "en": "Suppliers have noticed the demand and moved quickly to meet it.",
      "cn": "供给方察觉到了需求，并迅速作出回应。",
      "freq": 3,
      "tag": "供给响应",
-     "fit": 13
+     "fit": 13,
+     "cat": "供给与政策"
     },
     {
      "en": "Different groups have piled their needs on top of one another, and supply has struggled to keep pace.",
      "cn": "不同群体的需求层层叠加，供给已经难以跟上。",
      "freq": 3,
      "tag": "需求叠加",
-     "fit": 12
+     "fit": 12,
+     "cat": "供给与政策"
     },
     {
      "en": "Not only has this shift changed how people spend their time, but it has also reshaped what they expect from daily life.",
      "cn": "这一变化不仅改变了人们支配时间的方式，也重塑了他们对日常生活的期待。",
      "freq": 3,
      "tag": "递进",
-     "fit": 17
+     "fit": 17,
+     "cat": "万能逻辑"
     },
     {
      "en": "We cannot ignore the fact that it also brings problems that were less visible before.",
      "cn": "我们不能忽视，它同时也带来了此前不那么明显的问题。",
      "freq": 3,
      "tag": "转折",
-     "fit": 16
+     "fit": 16,
+     "cat": "万能逻辑"
     },
     {
      "en": "Without proper guidance, people may follow the trend without understanding its costs.",
      "cn": "若缺乏恰当引导，人们可能盲目跟风，却不了解其中的代价。",
      "freq": 3,
      "tag": "条件",
-     "fit": 15
+     "fit": 15,
+     "cat": "万能逻辑"
     },
     {
      "en": "Fiercer competition has made {{topic}} a way for people to keep their edge.",
      "cn": "竞争加剧，使 {{topic}} 成为人们保持优势的一种方式。",
      "freq": 3,
      "tag": "竞争",
-     "fit": 11
+     "fit": 11,
+     "cat": "经济与市场"
     },
     {
      "en": "Seeing friends and colleagues take up {{topic}} makes others far more willing to follow.",
      "cn": "看到朋友和同事开始 {{topic}}，其他人也更愿意跟随。",
      "freq": 3,
      "tag": "示范效应",
-     "fit": 10
+     "fit": 10,
+     "cat": "观念与文化"
     },
     {
      "en": "Supportive policies have removed much of the risk from choosing {{topic}}.",
      "cn": "支持性政策消除了选择 {{topic}} 的大部分风险。",
      "freq": 3,
      "tag": "政策支持",
-     "fit": 9
+     "fit": 9,
+     "cat": "供给与政策"
     },
     {
      "en": "Information about {{topic}} now spreads faster than anyone can verify it.",
      "cn": "关于 {{topic}} 的信息传播速度，已经快过任何人核实的速度。",
      "freq": 3,
      "tag": "信息传播",
-     "fit": 9
+     "fit": 9,
+     "cat": "技术与信息"
     },
     {
      "en": "Growing concern about health has turned {{topic}} into a routine rather than an occasional choice.",
      "cn": "健康意识的增强，使 {{topic}} 从偶尔的选择变成日常习惯。",
      "freq": 3,
      "tag": "健康意识",
-     "fit": 8
+     "fit": 8,
+     "cat": "观念与文化"
     },
     {
      "en": "Smaller households have changed what families expect from {{topic}}.",
      "cn": "家庭规模变小，改变了家庭对 {{topic}} 的期待。",
      "freq": 2,
      "tag": "家庭结构",
-     "fit": 8
+     "fit": 8,
+     "cat": "社会与人口"
     },
     {
      "en": "Longer years in education have raised demand for {{topic}}.",
      "cn": "受教育年限延长，推高了对 {{topic}} 的需求。",
      "freq": 2,
      "tag": "教育扩张",
-     "fit": 7
+     "fit": 7,
+     "cat": "社会与人口"
     },
     {
      "en": "Careful marketing has made {{topic}} look like a natural part of modern life.",
      "cn": "精心设计的营销，使 {{topic}} 看起来像现代生活理所当然的一部分。",
      "freq": 2,
      "tag": "营销",
-     "fit": 7
+     "fit": 7,
+     "cat": "经济与市场"
     },
     {
      "en": "Consumers often cannot tell good {{topic}} from bad until it is too late.",
      "cn": "消费者往往直到为时已晚，才分得清 {{topic}} 的好坏。",
      "freq": 2,
      "tag": "信息不对称",
-     "fit": 6
+     "fit": 6,
+     "cat": "技术与信息"
     },
     {
      "en": "The fear of missing out pushes people into {{topic}} before they have thought it through.",
      "cn": "害怕错过的焦虑，促使人们还没想清楚就投入 {{topic}}。",
      "freq": 2,
      "tag": "从众焦虑",
-     "fit": 6
+     "fit": 6,
+     "cat": "问题成因"
     },
     {
      "en": "Short-term thinking leads people to ignore what {{topic}} costs in the long run.",
      "cn": "短期思维让人们忽视 {{topic}} 长期要付出的代价。",
      "freq": 2,
      "tag": "短期行为",
-     "fit": 5
+     "fit": 5,
+     "cat": "问题成因"
+    }
+   ],
+   "pool_groups": [
+    {
+     "name": "万能逻辑",
+     "desc": "先看这组：不带槽，任何题接上都成立"
+    },
+    {
+     "name": "押题热点",
+     "desc": "2027 预测命中主题，考到直接用"
+    },
+    {
+     "name": "经济与市场",
+     "desc": "钱变多 / 变便宜 / 买得到 / 有人在卖"
+    },
+    {
+     "name": "技术与信息",
+     "desc": "技术推动，或信息跑得太快"
+    },
+    {
+     "name": "观念与文化",
+     "desc": "人的看法变了，才愿意掏钱或参与"
+    },
+    {
+     "name": "社会与人口",
+     "desc": "社会结构变了，需求跟着变"
+    },
+    {
+     "name": "供给与政策",
+     "desc": "供给方扩产，或政策托底"
+    },
+    {
+     "name": "问题成因",
+     "desc": "负面题专用：为什么出问题"
     }
    ],
    "phrases": [

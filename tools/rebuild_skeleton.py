@@ -207,6 +207,42 @@ MECH = [
      '短期思维让人们忽视 {{topic}} 长期要付出的代价。'),
 ]
 
+# ── 第二段机制句池分类（2026-11-20）──
+# 40 条按「考场怎么挑」分组：先挑万能逻辑句，再看题目属于哪一类。
+# 组顺序 = 展示顺序；组内仍按 fit 降序。tag → 组名，未列出的 tag 会在构建时断言报错。
+MECH_CAT = {
+    # 万能逻辑：无槽，任何题都能接
+    '数据回扣': '万能逻辑', '递进': '万能逻辑', '转折': '万能逻辑', '条件': '万能逻辑',
+    # 押题热点：2027 预测命中主题
+    'AI 教育': '押题热点', '教育公平': '押题热点', '绿色出行': '押题热点', '文化新媒介': '押题热点',
+    # 经济与市场：为什么变普及 / 变便宜 / 卖得动
+    '收入': '经济与市场', '便利': '经济与市场', '技术降本': '经济与市场',
+    '国产替代': '经济与市场', '竞争': '经济与市场', '营销': '经济与市场',
+    # 技术与信息
+    '科技普及': '技术与信息', '信息传播': '技术与信息', '信息不对称': '技术与信息',
+    # 观念与文化：人的看法变了
+    '观念': '观念与文化', '健康意识': '观念与文化', '环保意识': '观念与文化',
+    '文化传承': '观念与文化', '示范效应': '观念与文化',
+    # 社会与人口：社会结构变了
+    '人口结构': '社会与人口', '家庭结构': '社会与人口', '城市化': '社会与人口',
+    '教育扩张': '社会与人口', '就业门槛': '社会与人口', '职场流动': '社会与人口',
+    '职场时间': '社会与人口', '生活节奏': '社会与人口', '久坐': '社会与人口', '学校': '社会与人口',
+    # 供给与政策
+    '公共投入': '供给与政策', '供给响应': '供给与政策', '需求叠加': '供给与政策', '政策支持': '供给与政策',
+    # 问题成因：负面题专用
+    '逐利': '问题成因', '规则滞后': '问题成因', '从众焦虑': '问题成因', '短期行为': '问题成因',
+}
+MECH_GROUPS = [
+    ('万能逻辑', '先看这组：不带槽，任何题接上都成立'),
+    ('押题热点', '2027 预测命中主题，考到直接用'),
+    ('经济与市场', '钱变多 / 变便宜 / 买得到 / 有人在卖'),
+    ('技术与信息', '技术推动，或信息跑得太快'),
+    ('观念与文化', '人的看法变了，才愿意掏钱或参与'),
+    ('社会与人口', '社会结构变了，需求跟着变'),
+    ('供给与政策', '供给方扩产，或政策托底'),
+    ('问题成因', '负面题专用：为什么出问题'),
+]
+
 # ══════════ 三、第三段：立场句 + 主体句池 + 收束句 ══════════
 P3_POS = [
     sent('On balance, this is a positive trend worth welcoming.',
@@ -424,7 +460,9 @@ def main():
         'linkers': P2_LINKERS,
         'framework': P2_FRAMEWORK,
         'priority': True,
-        'sentences': [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P2_FIT.get(t, 0)} for f, t, e, c in MECH],
+        'sentences': [{'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P2_FIT.get(t, 0),
+                       'cat': MECH_CAT[t]} for f, t, e, c in MECH],
+        'pool_groups': [{'name': n, 'desc': d} for n, d in MECH_GROUPS],
         'phrases': [
             ['be attributed to', '归因于（P2 引入句）'],
             ['within reach', '够得着、负担得起'],
@@ -484,6 +522,20 @@ def main():
     by_id = {s['id']: s for s in secs}     # 插入 para2_why 后重建索引
     d['sections'] = [by_id[i] for i in order]
     d['_skeleton_ver'] = VER
+
+    # 机制句池分类断言：漏归组 / 多余 tag / 空组都在这里先炸，别让前端落到「其他」
+    _tags = [t for f, t, e, c in MECH]
+    assert len(_tags) == len(set(_tags)), '机制句 tag 重复：%s' % [t for t in _tags if _tags.count(t) > 1]
+    _missing = [t for t in _tags if t not in MECH_CAT]
+    _extra = [t for t in MECH_CAT if t not in _tags]
+    assert not _missing, '机制句未归组：%s' % _missing
+    assert not _extra, 'MECH_CAT 有多余 tag（句池里没有）：%s' % _extra
+    _names = [n for n, _ in MECH_GROUPS]
+    assert len(_names) == len(set(_names)), 'MECH_GROUPS 组名重复'
+    for _n in _names:
+        assert any(MECH_CAT[t] == _n for t in _tags), '机制句分组「%s」是空组' % _n
+    _assigned = sum(1 for t in _tags if MECH_CAT[t] in _names)
+    assert _assigned == len(_tags), '有 %d 条机制句没落到展示分组' % (len(_tags) - _assigned)
 
     # 适配表 hint 里引用的「三套走势骨架」标签同步
     for r in d['chart_guide']['table']:
