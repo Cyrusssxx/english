@@ -70,9 +70,25 @@ for (let no = 6; no <= 15; no++) {
 }
 if (badChart.length) fail('图表骨架不符: ' + JSON.stringify(badChart.slice(0, 4)));
 else pass('NO6–15 图表类：首段 clearly illustrates + P2 引入句/Primary/Equally 全部就位，无旧衔接词');
-const no6 = flat.find(x => x.no === 6);
-if (!/We should bear in mind that lifelong learning/.test((no6 && no6.blocks[2].v) || '')) fail('NO6 第三段被误替换');
-else pass('NO6 第三段保留原始范文（未替换）');
+// 第三段：立场句换成模板骨架（用户 2026-11-20 定：拆开用 + 按趋势分套）
+const P3_POS_OPEN = 'On balance, this is a positive trend worth welcoming.';
+const P3_POS_CLOSE = 'Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.';
+const P3_NEU_OPEN = 'On balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame.';
+const P3_NEU_CLOSE_RE = /depends on how well it is managed|By considering their abilities|Combining dependable online/;
+const badP3 = [];
+[6, 7, 8, 9, 10, 11, 12, 13, 14, 15].forEach(no => {
+  const it = flat.find(x => x.no === no);
+  const ss = ((it && it.blocks[2] && it.blocks[2].sents) || []).map(s => s.en);
+  if (!ss.length) { badP3.push([no, '第三段缺失']); return; }
+  const isPos = [7, 11, 12, 13].includes(no);
+  if (ss[0] !== (isPos ? P3_POS_OPEN : P3_NEU_OPEN)) badP3.push([no, 'P3 首句未换模板骨架']);
+  const last = ss[ss.length - 1];
+  if (isPos && last !== P3_POS_CLOSE) badP3.push([no, 'P3 尾句缺 momentum 展望']);
+  if (!isPos && !P3_NEU_CLOSE_RE.test(last)) badP3.push([no, 'P3 尾句中性与收束不符']);
+  if (ss.some(s => /We should bear in mind/.test(s))) badP3.push([no, 'P3 残留旧立场句']);
+});
+if (badP3.length) fail('第三段骨架不符: ' + JSON.stringify(badP3.slice(0, 4)));
+else pass('NO6–15 第三段：立场句换模板骨架（7/11/12/13 正面 + 6/8/9/10/14/15 中性），旧句已清');
 
 /* ---------- 2. 静态样式 ---------- */
 if (!/\.yt-cn \{[^}]*border-top: 1px dashed/.test(css)) fail('缺中文块样式（与真题示范一致的虚线分隔）');

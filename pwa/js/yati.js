@@ -186,6 +186,13 @@ const YT_SKEL_SEGS = [
     /\bWe should bear in mind that\b/i,
     /\bof great importance\b/i,
     /\bIn this way,/i,
+    // 第三段模板骨架（2026-11-20）：整句匹配，否则后半截会被误判成填槽
+    /\bOn balance, this is a positive trend worth welcoming\./i,
+    /\bGiven the momentum behind it, there is every reason to believe that it will continue in the years ahead\./i,
+    /\bOn balance, what the figures reveal is a shift that deserves careful judgment rather than simple praise or blame\./i,
+    /\bWhether it proves to be a blessing or a burden depends on how well it is managed in the years ahead\./i,
+    /\bOn balance, the figures point to a problem worth taking seriously\./i,
+    /\bUnless effective measures are taken, it may well get worse\./i,
 ];
 
 /** 句中骨架片段 → 不重叠区间（同起点取最长） */
