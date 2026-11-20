@@ -57,17 +57,21 @@ else pass(`逐句中英 ${sentN} 句齐备，无漏译/占位符`);
 if (wcBad.length) fail('词数越界: ' + JSON.stringify(wcBad));
 else pass('词数全部落在大作文 130–200 / 小作文 85–125');
 
-/* NO6：用户指定前两段用自己骨架 + 自己衔接词，第三段保留原始范文 */
-const no6 = data.groups.reduce((a, g) => a.concat(g.items), []).find(x => x.no === 6);
-const n6p1 = (no6 && no6.blocks[0].v) || '', n6p2 = (no6 && no6.blocks[1].v) || '';
-const n6p3 = (no6 && no6.blocks[2].v) || '';
-if (!/^The bar chart above clearly illustrates how/.test(n6p1) || !/takes the lead, accounting for/.test(n6p1))
-  fail('NO6 首段未用用户骨架');
-else pass('NO6 首段 = 用户骨架（clearly illustrates how / takes the lead）');
-if (!/Primary among these is that /.test(n6p2) || !/Equally important, /.test(n6p2) || !/A further driver is /.test(n6p2) || /First and foremost|Furthermore/.test(n6p2))
-  fail('NO6 第二段衔接词未换成用户自己的');
-else pass('NO6 第二段 = 用户衔接词（Primary / Equally / A further driver）');
-if (!/We should bear in mind that lifelong learning/.test(n6p3)) fail('NO6 第三段被误替换');
+/* 图表类 NO6–15：首段用用户骨架，第二段用 P2_FRAMEWORK（用户 2026-11-20 定） */
+const flat = data.groups.reduce((a, g) => a.concat(g.items), []);
+const badChart = [];
+for (let no = 6; no <= 15; no++) {
+  const it = flat.find(x => x.no === no);
+  const p1 = (it && it.blocks[0].v) || '', p2 = (it && it.blocks[1].v) || '';
+  if (!/clearly illustrat/.test(p1)) badChart.push([no, '首段未用 clearly illustrate(s) 骨架']);
+  if (!/^This phenomenon can be attributed to a combination of factors\./.test(p2)) badChart.push([no, 'P2 引入句不符']);
+  if (!/Primary among these is /.test(p2) || !/Equally important, /.test(p2)) badChart.push([no, 'P2 衔接词不全']);
+  if (/First and foremost|Furthermore|Several factors|A variety of reasons/.test(p2)) badChart.push([no, 'P2 残留旧衔接词']);
+}
+if (badChart.length) fail('图表骨架不符: ' + JSON.stringify(badChart.slice(0, 4)));
+else pass('NO6–15 图表类：首段 clearly illustrates + P2 引入句/Primary/Equally 全部就位，无旧衔接词');
+const no6 = flat.find(x => x.no === 6);
+if (!/We should bear in mind that lifelong learning/.test((no6 && no6.blocks[2].v) || '')) fail('NO6 第三段被误替换');
 else pass('NO6 第三段保留原始范文（未替换）');
 
 /* ---------- 2. 静态样式 ---------- */
