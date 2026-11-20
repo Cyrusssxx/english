@@ -5652,7 +5652,7 @@ html.dark .kw-use { background: rgba(13, 148, 136, .15); }
 .yt-box { width: min(1440px, 100%); height: min(94vh, 1100px); }
 .yt-mbody { grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr); }
 .yt-pane-txt { padding: 16px 26px 26px; }
-.yt-essay { max-width: 74ch; }
+.yt-essay { max-width: none; }
 .yt-essay p { font-size: .98rem; line-height: 2.05; margin-bottom: 15px; }
 
 /* ② 头部压缩：只留题号 + 标题 + 副标题一行，英文题名与按钮收紧 */
