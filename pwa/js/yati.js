@@ -159,11 +159,172 @@ function ytMarkNums(html) {
     return String(html).replace(/(\d+(?:[.,]\d+)?%?)/g, '<mark class="ap-own">$1</mark>');
 }
 
-/** 英文文本 → 可点词 + 数字金底 + 占位符芯片（词典就绪时用 kwMarkText，与真题套用示范同源） */
+/* ---------- 骨架 / 填槽 ----------
+   图表类范文前两段是按「骨架 + 填槽」写的：骨架＝固定句式（背死、原样搬），
+   填槽＝每篇要换的数据和机制句。这里把骨架片段单独染色，句子剩下的成段实词
+   自动判为填槽（浅琥珀），一眼能看出哪些字必须换掉。 */
+const YT_SKEL_SEGS = [
+    /\bThe (?:[A-Za-z]+ )?(?:charts?|graphs?|table|pictures?|diagrams?) (?:above|below) clearly illustrates?/i,
+    /\bThe (?:two |three )?(?:images|materials|pictures) (?:above )?(?:clearly )?(?:illustrate|highlight|show)/i,
+    /\bThis phenomenon can be attributed to a combination of factors\./i,
+    /\bPrimary among these is(?: that)?/i,
+    /\bEqually important,/i,
+    /\bA further driver is(?: that)?/i,
+    /\bDuring this period,/i,
+    /\bBy contrast,/i,
+    /\bIn contrast,/i,
+    /\bNevertheless,/i,
+    /\bTogether,/i,
+    /\btakes? the lead\b/i,
+    /\baccounting for\b/i,
+    /\bfollowed by\b/i,
+    /\bcomes? last at\b/i,
+    /\brespectively\b/i,
+    /\bThe findings therefore suggest(?: that)?/i,
+    /\bThe figures (?:thus |therefore )?suggest(?: that)?/i,
+    /\bThe figures thus reflect\b/i,
+    /\bWe should bear in mind that\b/i,
+    /\bof great importance\b/i,
+    /\bIn this way,/i,
+];
+
+/** 句中骨架片段 → 不重叠区间（同起点取最长） */
+function ytSkelSpans(text) {
+    const hit = [];
+    YT_SKEL_SEGS.forEach(re => {
+        const g = new RegExp(re.source, 'gi');
+        let m;
+        while ((m = g.exec(text))) {
+            if (!m[0].length) { g.lastIndex++; continue; }
+            hit.push({ s: m.index, e: m.index + m[0].length });
+        }
+    });
+    if (!hit.length) return [];
+    hit.sort((a, b) => a.s - b.s || (b.e - b.s) - (a.e - a.s));
+    const out = [];
+    let end = -1;
+    hit.forEach(h => { if (h.s >= end) { out.push(h); end = h.e; } });
+    return out;
+}
+
+/** 一段非骨架文本是否算「填槽」：够长且有两个以上实词（介词碎屑不算） */
+function ytFillOk(t) {
+    const words = (String(t).match(/[A-Za-z][A-Za-z'’-]*/g) || []).length;
+    return words >= 3 && String(t).replace(/[^A-Za-z]/g, '').length >= 10;
+}
+
+/** 文本 → [{t, k:'skel'|'fill'|''}]，首尾拼接必须等于原文 */
+function ytSegments(text) {
+    const sp = ytSkelSpans(text);
+    if (!sp.length) return [{ t: text, k: '' }];
+    const segs = [];
+    let cur = 0;
+    sp.forEach(h => {
+        if (h.s > cur) { const t = text.slice(cur, h.s); segs.push({ t, k: ytFillOk(t) ? 'fill' : '' }); }
+        segs.push({ t: text.slice(h.s, h.e), k: 'skel' });
+        cur = h.e;
+    });
+    if (cur < text.length) { const t = text.slice(cur); segs.push({ t, k: ytFillOk(t) ? 'fill' : '' }); }
+    return segs;
+}
+
+/* 虚词不包可点：点了也只有「这个/那个」这类没信息的释义，反而干扰点句 */
+const YT_STOP = new Set(('a an the and or but of to in on at for as by with from into over under '
+    + 'is are was were be been being it its this that these those there here their they them we our us '
+    + 'he she his her you your i my me not no nor so than then thus such can could may might must should would will').split(' '));
+
+/** 段内：重点短语走 .kw（弹短语卡），其余逐词包 .yt-w（点任意词查释义） */
+function ytInline(text) {
+    const ready = typeof kwSplit === 'function' && typeof KW_BY_KEY !== 'undefined' && KW_BY_KEY && KW_BY_KEY.size;
+    const hits = ready ? (kwSplit(text) || []) : [];
+    const WORD = /[A-Za-z][A-Za-z'’-]*/g;
+    const plain = s => {
+        let out = '', last = 0, m;
+        WORD.lastIndex = 0;
+        while ((m = WORD.exec(s))) {
+            out += ytEsc(s.slice(last, m.index));
+            const low = m[0].toLowerCase();
+            out += YT_STOP.has(low) ? ytEsc(m[0])
+                : `<span class="yt-w" data-w="${ytEsc(low)}">${ytEsc(m[0])}</span>`;
+            last = m.index + m[0].length;
+        }
+        return out + ytEsc(s.slice(last));
+    };
+    const out = [];
+    let cur = 0;
+    hits.forEach(h => {
+        if (h.s > cur) out.push(plain(text.slice(cur, h.s)));
+        out.push(`<span class="kw" data-kw="${ytEsc(h.it.k)}">${ytEsc(text.slice(h.s, h.e))}</span>`);
+        cur = h.e;
+    });
+    if (cur < text.length) out.push(plain(text.slice(cur)));
+    return out.join('');
+}
+
+/** 英文文本 → 骨架/填槽染色 + 可点词 + 数字金底 */
 function ytWordHtml(text) {
-    const marked = (typeof kwMarkText === 'function' && typeof KW_BY_KEY !== 'undefined' && KW_BY_KEY && KW_BY_KEY.size)
-        ? kwMarkText(text, ytEsc) : ytEsc(text);
-    return ytMarkNums(marked);
+    const segs = ytSegments(String(text == null ? '' : text));
+    const html = segs.map(s => s.k ? `<span class="yt-${s.k}">${ytInline(s.t)}</span>` : ytInline(s.t)).join('');
+    return ytMarkNums(html);
+}
+
+/** 图例：只在含有骨架句的篇目显示 */
+function ytLegendHtml() {
+    return `<div class="yt-legend">`
+        + `<span class="yt-lg"><i class="yt-lg-skel">骨架</i>固定句式，原样背</span>`
+        + `<span class="yt-lg"><i class="yt-lg-fill">填槽</i>换成题目内容</span>`
+        + `<span class="yt-lg"><i class="yt-lg-num">65%</i>数据</span>`
+        + `<span class="yt-lg"><i class="yt-lg-kw">词组</i>可点查释义</span>`
+        + `</div>`;
+}
+
+/* ---------- 点词查释义（全文逐词可点，与阅读页同一份词典） ---------- */
+let YT_WPOP = null;
+
+function ytWClose() {
+    if (YT_WPOP) { YT_WPOP.remove(); YT_WPOP = null; }
+    document.querySelectorAll('.yt-w.on').forEach(el => el.classList.remove('on'));
+}
+
+function ytWOpen(el) {
+    const word = el.getAttribute('data-w') || '';
+    const entry = (typeof dictLookup === 'function') ? dictLookup(word) : null;
+    ytWClose();
+    const pop = document.createElement('div');
+    pop.className = 'word-pop kw-pop yt-wpop';
+    pop.innerHTML = `<span class="wp-word">${ytEsc(el.textContent)}</span>`
+        + `<span class="wp-phonetic">${ytEsc(entry ? (entry.p || '') : '')}</span>`
+        + `<div class="wp-meaning">${entry ? ytEsc(entry.t || '') : '（常用词，离线词典只收难词）'}</div>`
+        + (entry && typeof freqBadge === 'function' ? freqBadge(word) : '');
+    document.body.appendChild(pop);
+    YT_WPOP = pop;
+    el.classList.add('on');
+    const r = el.getBoundingClientRect();
+    const pw = pop.offsetWidth, ph = pop.offsetHeight;
+    const vw = document.documentElement.clientWidth, vh = document.documentElement.clientHeight;
+    let left = r.left + window.scrollX;
+    if (left + pw > window.scrollX + vw - 12) left = window.scrollX + vw - pw - 12;
+    if (left < window.scrollX + 8) left = window.scrollX + 8;
+    let top = r.bottom + window.scrollY + 7;
+    if (top + ph > window.scrollY + vh - 12) {
+        const up = r.top + window.scrollY - ph - 7;
+        top = up > window.scrollY + 8 ? up : Math.max(window.scrollY + 8, window.scrollY + vh - ph - 12);
+    }
+    pop.style.left = left + 'px';
+    pop.style.top = top + 'px';
+}
+
+function ytWBind() {
+    if (document.body.dataset.ytWBound === '1') return;
+    document.body.dataset.ytWBound = '1';
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') ytWClose(); });
+    document.addEventListener('click', e => {
+        if (!e.target.closest) return;
+        if (e.target.closest('.yt-w, .yt-wpop')) return;
+        ytWClose();
+    });
+    window.addEventListener('resize', ytWClose, { passive: true });
+    window.addEventListener('scroll', ytWClose, { passive: true });
 }
 
 /* 范文渲染（完全对齐真题「套用示范」）：
@@ -182,6 +343,7 @@ function ytEssayHtml(it) {
     const metaLines = (ss, pick) => ss.map(s => para('ye-meta', ytMarkNums(ytEsc(pick(s))))).join('');
 
     const enParts = [], cnParts = [];
+    let skelN = 0;   // 有骨架片段才显示图例
     blocks.forEach((b, bi) => {
         const ss = sentsOf(b);
         if (!ss) {
@@ -197,14 +359,16 @@ function ytEssayHtml(it) {
         // 英文段：逐句可点 + 句译块（点句看该句中文；整篇中文由工具栏按钮控制）
         let inner = ss.map(s => {
             const i = n++;
-            return `<span class="yt-jsent" data-i="${i}" title="点句看该句中文">${ytWordHtml(s.en)}</span>`
+            const h = ytWordHtml(s.en);
+            if (h.indexOf('class="yt-skel"') >= 0 || h.indexOf('class="yt-fill"') >= 0) skelN++;
+            return `<span class="yt-jsent" data-i="${i}" title="点句看该句中文">${h}</span>`
                 + `<span class="yt-jsent-cn" data-for="${i}" hidden>${ytMarkNums(ytEsc(s.cn || ''))}</span>`;
         }).join(' ');
         const cnText = ss.map(s => s.cn || '').join('');
         enParts.push(para(clsOf(b), inner));
         cnParts.push(para(clsOf(b), ytMarkNums(ytEsc(cnText))));
     });
-    return `<div class="yt-en">${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
+    return `<div class="yt-en">${skelN ? ytLegendHtml() : ''}${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
 }
 
 /** 单句译块开合（同步 .yt-jsent.on 状态标记；按用户要求不渲染高亮/下划线）；cnBox 为 .yt-jsent-cn */
@@ -417,6 +581,8 @@ function ytBindUi() {
             if (!e.target.closest) return;
             const cnBox = e.target.closest('.yt-jsent-cn');
             if (cnBox) { ytSentCnShow(cnBox, false); return; }
+            const w = e.target.closest('.yt-w');
+            if (w) { e.stopPropagation(); ytWOpen(w); return; }   // 点词查释义，不连带展开句译
             const s = e.target.closest('.yt-jsent');
             if (s && s.dataset.i != null) {
                 const sel = typeof window.getSelection === 'function' ? window.getSelection() : null;
@@ -457,6 +623,9 @@ async function ytInit() {
     ytBindUi();
     // 范文重点词可点查释义：先加载词库再绑定（词典就绪后需重渲染一次，让词标注生效）
     if (typeof kwBind === 'function') kwBind();
+    ytWBind();
+    // 逐词可点依赖难词词典（dict.js），与阅读页同一份，延迟加载
+    if (typeof loadDict === 'function') loadDict().catch(() => {});
     if (typeof kwLoad === 'function') {
         kwLoad().then(() => {
             if (YT_CUR >= 0 && YT_FLAT[YT_CUR]) {

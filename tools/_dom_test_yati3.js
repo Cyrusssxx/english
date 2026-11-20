@@ -28,17 +28,35 @@ else pass('英文用词可点标注函数 ytWordHtml');
 const dom = new JSDOM(html, { runScripts: 'outside-only', url: 'http://localhost/yati.html', pretendToBeVisual: true });
 const { window } = dom;
 window.fetch = () => Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve(JSON.parse(raw)) });
-// 词典桩：让 kwMarkText 走真实分支，验证词被 .kw 标注
+// 词典桩：让逐词标注与骨架切分走真实分支（词库用真实 writing_keywords.json）
+const kwRaw = fs.readFileSync(path.join(PWA, 'data/writing_keywords.json'), 'utf8');
 window.eval(`
-  // 桩词取原始 NO6 范文里确实出现的词：首句 education、第二句 skills
-  // （回退原文后 technology 不再出现，桩须跟着内容走）
-  var KW_BY_KEY = new Map([['education', {en:'education',cn:'教育',use:'教育',ex:'',exCn:''}],['skills', {en:'skills',cn:'技能',use:'技能',ex:'',exCn:''}]]);
-  function kwMarkText(text, esc){
-    return text.replace(/\\b(education|skills)\\b/g, (m)=>'<span class="kw">'+m+'</span>');
-  }
+  var KW_BY_KEY = new Map(JSON.parse(${JSON.stringify(JSON.stringify(
+      (JSON.parse(kwRaw).items || []).map(i => [i.k.toLowerCase(), i])
+  ))}) );
   function kwLoad(){ return Promise.resolve(); }
   function kwBind(){}
   function kwOpen(){}
+  // 与 kwpop.js 同语义的简化版（长词优先 + 词边界 + 不重叠）
+  function kwSplit(text){
+    const low = String(text).toLowerCase();
+    const hits = [];
+    KW_BY_KEY.forEach(function(it, k){
+      let p = 0;
+      while ((p = low.indexOf(k, p)) !== -1) {
+        const b = p > 0 ? low[p-1] : '';
+        const a = low[p + k.length] || '';
+        if (!/[a-z0-9]/.test(b) && !/[a-z0-9]/.test(a)) hits.push({ s:p, e:p+k.length, it:it });
+        p += k.length;
+      }
+    });
+    if (!hits.length) return null;
+    hits.sort(function(x,y){ return x.s - y.s || (y.e-y.s) - (x.e-x.s); });
+    const out = []; let end = -1;
+    hits.forEach(function(h){ if (h.s >= end) { out.push(h); end = h.e; } });
+    return out;
+  }
+  function dictLookup(w){ return { p: '/test/', t: '桩释义:' + w }; }
 `);
 window.document.querySelector('.navbar').dataset.collapsed = '0';
 try { window.eval(fs.readFileSync(path.join(PWA, 'js/common.js'), 'utf8')); } catch (e) {}
@@ -63,9 +81,53 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   sents[0].dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
   if (!cn.hidden) fail('再点未收起'); else pass('再点收起该句中文');
 
-  // 词可点：education 应被 .kw 标注（词典就绪桩）
+  // 词可点：真实词库命中 .kw（如 clearly illustrates / bar chart）
   if (!d.querySelector('#ytMEssay .yt-en .kw')) fail('英文重点词未被标注为可点 .kw');
   else pass('英文重点词标注为可点 .kw');
+
+  // 逐词可点：骨架/填槽之外每个实词都包 .yt-w；虚词不包
+  const ws = [...d.querySelectorAll('#ytMEssay .yt-en .yt-w')];
+  if (ws.length < 60) fail(`逐词可点太少: ${ws.length}`);
+  else pass(`逐词可点 ${ws.length} 个实词`);
+  if (ws.some(x => ['the', 'and', 'of'].includes(x.dataset.w))) fail('虚词不应包成可点词');
+  else pass('虚词不参与点词');
+
+  // 骨架 / 填槽染色 + 图例
+  const skels = d.querySelectorAll('#ytMEssay .yt-skel');
+  const fills = d.querySelectorAll('#ytMEssay .yt-fill');
+  if (!skels.length) fail('未标出骨架片段 .yt-skel'); else pass(`骨架片段 ${skels.length} 处`);
+  if (!fills.length) fail('未标出填槽片段 .yt-fill'); else pass(`填槽片段 ${fills.length} 处`);
+  if (!d.querySelector('#ytMEssay .yt-legend')) fail('缺骨架/填槽图例');
+  else pass('图例已显示（骨架 / 填槽 / 数据 / 词组）');
+  if (!/clearly illustrates$/.test(skels[0].textContent.trim())) fail('首句骨架片段切错: ' + skels[0].textContent);
+  else pass('首句骨架片段切在 clearly illustrates');
+
+  // 句内拼接必须还原原文（染色不能吞字/多字）
+  const raw6 = JSON.parse(raw);
+  const flat6 = []; (raw6.groups || []).forEach(g => (g.items || []).forEach(x => flat6.push(x)));
+  const it6 = flat6.find(x => x.no === 6);
+  const origSlices = [];
+  (it6.blocks || []).forEach(b => (b.sents || []).forEach(s => origSlices.push(s.en)));
+  let bad = [];
+  [...d.querySelectorAll('#ytMEssay .yt-jsent')].forEach(el => {
+    const i = +el.dataset.i;
+    if (origSlices[i] != null && el.textContent !== origSlices[i]) bad.push(i);
+  });
+  if (bad.length) fail(`染色后文字与原文不一致 ${bad.length} 句: ${bad.slice(0, 3)}`);
+  else pass('染色后逐句文字与原文完全一致');
+
+  // 点普通词 → 弹释义卡（.yt-wpop），且不展开句译
+  const plainW = ws.find(x => !x.closest('.kw'));
+  const cnBefore = [...d.querySelectorAll('.yt-jsent-cn')].filter(x => !x.hidden).length;
+  if (plainW) {
+    plainW.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+    const pop = d.querySelector('.yt-wpop');
+    if (!pop) fail('点普通词未弹释义卡');
+    else pass('点普通词弹释义卡: ' + pop.textContent.replace(/\s+/g, ' ').slice(0, 24));
+    if ([...d.querySelectorAll('.yt-jsent-cn')].filter(x => !x.hidden).length !== cnBefore) fail('点词误连带展开句译');
+    else pass('点词不连带展开句译');
+    window.ytWClose();
+  } else pass('（无普通词，跳过点词弹卡检查）');
 
   // 点词不触发句译（kw Capture 让位）：点 .kw 不应打开该句中文
   const cn2 = d.querySelector('.yt-jsent-cn[data-for="1"]');
