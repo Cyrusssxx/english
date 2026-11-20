@@ -220,10 +220,12 @@ function ytFillOk(t) {
     return words >= 3 && String(t).replace(/[^A-Za-z]/g, '').length >= 10;
 }
 
-/** 文本 → [{t, k:'skel'|'fill'|''}]，首尾拼接必须等于原文 */
+/** 文本 → [{t, k:'skel'|'fill'}]，首尾拼接必须等于原文。
+    有骨架：骨架蓝色高亮 + 其余浅底（fill）；
+    无骨架的整句（范文原句）：整句浅底，不再是纯白底。 */
 function ytSegments(text) {
     const sp = ytSkelSpans(text);
-    if (!sp.length) return [{ t: text, k: '' }];
+    if (!sp.length) return ytFillOk(text) ? [{ t: text, k: 'fill' }] : [{ t: text, k: '' }];
     const segs = [];
     let cur = 0;
     sp.forEach(h => {
@@ -279,7 +281,6 @@ function ytWordHtml(text) {
 function ytLegendHtml() {
     return `<div class="yt-legend">`
         + `<span class="yt-lg"><i class="yt-lg-skel">骨架</i>固定句式，原样背</span>`
-        + `<span class="yt-lg"><i class="yt-lg-fill">填槽</i>换成题目内容</span>`
         + `<span class="yt-lg"><i class="yt-lg-num">65%</i>数据</span>`
         + `<span class="yt-lg"><i class="yt-lg-kw">词组</i>可点查释义</span>`
         + `</div>`;
@@ -336,9 +337,10 @@ function ytWBind() {
 
 /* 范文渲染（完全对齐真题「套用示范」）：
    · 英文衬线体 + 段首缩进，数字金底，重点词/短语可点查释义（复用词典）；
-   · 每句包 .yt-jsent，点句展开该句中文（.yt-jsent-cn），复用阅读页「点句看译文」；
-   · 段末「本段译文 ▾」按钮展开该段中文；工具栏「显示中文译文」展开整篇；
-   · 三套中文互不冲突：逐句 / 分段 / 整篇。 */
+   · 每句包 .yt-jsent，句末独立「译」标记（.yt-sent-tr）点开该句中文（.yt-jsent-cn）；
+     句子正文与点词都不触发展开，只有点「译」才翻译整句——两套交互互不抢；
+   · 工具栏「显示逐句译文」/「显示全文译文」两个按钮各自独立；
+   · 三套中文互不冲突：逐句（句末译标记）/ 一键逐句 / 整篇。 */
 function ytEssayHtml(it) {
     const blocks = it.blocks || [];
     if (!blocks.length) return '<p class="ye-empty">暂无范文。</p>';
@@ -368,7 +370,10 @@ function ytEssayHtml(it) {
             const i = n++;
             const h = ytWordHtml(s.en);
             if (h.indexOf('class="yt-skel"') >= 0 || h.indexOf('class="yt-fill"') >= 0) skelN++;
-            return `<span class="yt-jsent" data-i="${i}" title="点句看该句中文">${h}</span>`
+            // 「译」标记放在 .yt-jsent 之外做兄弟节点：句子 textContent 仍严格等于原文（校验不吞字），
+            // 又能独立按 data-tr 触发该句译文；句子正文/单词都不响应翻译。
+            return `<span class="yt-jsent" data-i="${i}">${h}</span>`
+                + `<button type="button" class="yt-sent-tr" data-tr="${i}" title="看本句中文">译</button>`
                 + `<span class="yt-jsent-cn" data-for="${i}" hidden>${ytMarkNums(ytEsc(s.cn || ''))}</span>`;
         }).join(' ');
         const cnText = ss.map(s => s.cn || '').join('');
@@ -383,11 +388,14 @@ function ytSentCnShow(cnBox, show) {
     if (!cnBox) return;
     cnBox.hidden = !show;
     const i = cnBox.dataset.for;
-    const s = cnBox.parentElement && cnBox.parentElement.querySelector('.yt-jsent[data-i="' + i + '"]');
+    const p = cnBox.parentElement;
+    const s = p && p.querySelector('.yt-jsent[data-i="' + i + '"]');
     if (s) s.classList.toggle('on', show);
+    const tr = p && p.querySelector('.yt-sent-tr[data-tr="' + i + '"]');
+    if (tr) { tr.classList.toggle('on', show); tr.title = show ? '收起本句中文' : '看本句中文'; }
 }
 
-/** 一键显示 / 隐藏全部中文：整篇对照块 + 所有逐句点开译块（与真题套用示范同一按钮） */
+/** 全文翻译：只切整篇中文对照块 .yt-cn，不碰逐句译块（两个按钮互不干扰） */
 function ytToggleCn(btn) {
     const pane = btn.closest('.yt-pane-txt');
     if (!pane) return;
@@ -395,8 +403,20 @@ function ytToggleCn(btn) {
     if (!cn) return;
     const show = cn.hidden;
     cn.hidden = !show;
-    pane.querySelectorAll('.yt-jsent-cn').forEach(box => ytSentCnShow(box, show));
-    btn.textContent = show ? '隐藏中文译文' : '显示中文译文';
+    btn.textContent = show ? '隐藏全文译文' : '显示全文译文';
+    btn.classList.toggle('on', show);
+}
+
+/** 逐句翻译：一键展开 / 收起所有逐句译块，不碰整篇对照块（与全文按钮互不干扰） */
+function ytToggleSentCn(btn) {
+    const pane = btn.closest('.yt-pane-txt');
+    if (!pane) return;
+    const boxes = [...pane.querySelectorAll('.yt-jsent-cn')];
+    if (!boxes.length) return;
+    // 有收起的就全部展开；已经全展开才收起——与单句点开的状态也合得来
+    const show = boxes.some(b => b.hidden);
+    boxes.forEach(box => ytSentCnShow(box, show));
+    btn.textContent = show ? '隐藏逐句译文' : '显示逐句译文';
     btn.classList.toggle('on', show);
 }
 
@@ -425,7 +445,9 @@ function ytOpen(no, fromEl) {
     essayEl.innerHTML = ytNotesHtml(it) + ytEssayHtml(it);
     essayEl.scrollTop = 0;
     const cnBtn = document.getElementById('ytCnBtn');
-    if (cnBtn) { cnBtn.textContent = '显示中文译文'; cnBtn.classList.remove('on'); }
+    if (cnBtn) { cnBtn.textContent = '显示全文译文'; cnBtn.classList.remove('on'); }
+    const sentBtn = document.getElementById('ytSentBtn');
+    if (sentBtn) { sentBtn.textContent = '显示逐句译文'; sentBtn.classList.remove('on'); }
     ytPrefetch(idx);
     document.getElementById('ytMCnt').textContent = `${idx + 1} / ${YT_FLAT.length}`;
     document.getElementById('ytPrev').disabled = idx === 0;
@@ -582,22 +604,23 @@ function ytBindUi() {
         });
         const cnBtn = document.getElementById('ytCnBtn');
         if (cnBtn) cnBtn.addEventListener('click', () => ytToggleCn(cnBtn));
-        // 范文点击委托（重渲染后仍有效）：词卡点击让 kwBind 处理；这里管点句译 / 段译 / 关译块
+        const sentBtn = document.getElementById('ytSentBtn');
+        if (sentBtn) sentBtn.addEventListener('click', () => ytToggleSentCn(sentBtn));
+        // 范文点击委托（重渲染后仍有效）：点词查释义 / 点句末「译」翻译整句 / 点译块收起——三者互不抢
         const essay = document.getElementById('ytMEssay');
         if (essay) essay.addEventListener('click', e => {
             if (!e.target.closest) return;
             const cnBox = e.target.closest('.yt-jsent-cn');
-            if (cnBox) { ytSentCnShow(cnBox, false); return; }
-            const w = e.target.closest('.yt-w');
-            if (w) { e.stopPropagation(); ytWOpen(w); return; }   // 点词查释义，不连带展开句译
-            const s = e.target.closest('.yt-jsent');
-            if (s && s.dataset.i != null) {
-                const sel = typeof window.getSelection === 'function' ? window.getSelection() : null;
-                if (sel && String(sel).length) return;              // 划词查词时不触发
-                if (e.target.closest('.kw, .kw-pop, mark.note-hl')) return;  // 点词卡/高亮不触发
-                const cn = essay.querySelector('.yt-jsent-cn[data-for="' + s.dataset.i + '"]');
+            if (cnBox) { ytSentCnShow(cnBox, false); return; }       // 点打开的译块 → 收起
+            const tr = e.target.closest('.yt-sent-tr');
+            if (tr && tr.dataset.tr != null) {                      // 只认句末「译」标记 → 开合该句译文
+                const cn = essay.querySelector('.yt-jsent-cn[data-for="' + tr.dataset.tr + '"]');
                 if (cn) ytSentCnShow(cn, cn.hidden);
+                return;
             }
+            const w = e.target.closest('.yt-w');
+            if (w) { e.stopPropagation(); ytWOpen(w); return; }     // 点词查释义，不展开句译
+            // 点句子正文不再触发展开：翻译只走「译」标记，避免与点词抢事件
         });
         const prev = document.getElementById('ytPrev'), next = document.getElementById('ytNext');
         if (prev) prev.addEventListener('click', () => ytStep(-1));
@@ -637,7 +660,18 @@ async function ytInit() {
         kwLoad().then(() => {
             if (YT_CUR >= 0 && YT_FLAT[YT_CUR]) {
                 const e = document.getElementById('ytMEssay');
-                if (e) e.innerHTML = ytNotesHtml(YT_FLAT[YT_CUR]) + ytEssayHtml(YT_FLAT[YT_CUR]);
+                if (e) {
+                    e.innerHTML = ytNotesHtml(YT_FLAT[YT_CUR]) + ytEssayHtml(YT_FLAT[YT_CUR]);
+                    // 重渲染会新建译块与对照块；按钮若已开，按按钮状态恢复，避免文案与内容脱节
+                    const sentBtn = document.getElementById('ytSentBtn');
+                    const cnBtn = document.getElementById('ytCnBtn');
+                    if (sentBtn && sentBtn.classList.contains('on'))
+                        e.querySelectorAll('.yt-jsent-cn').forEach(box => ytSentCnShow(box, true));
+                    if (cnBtn && cnBtn.classList.contains('on')) {
+                        const cn = e.querySelector('.yt-cn');
+                        if (cn) cn.hidden = false;
+                    }
+                }
             }
         }).catch(() => {});
     }

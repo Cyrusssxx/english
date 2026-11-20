@@ -5679,6 +5679,7 @@ body.yt-modal-open .wr-layout { visibility: hidden; }
     background: linear-gradient(var(--card-bg) 76%, rgba(0, 0, 0, 0));
 }
 .yt-txt-label { font-size: .74rem; font-weight: 700; letter-spacing: .08em; color: var(--text-light); }
+.yt-txt-btns { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
 .yt-cn-btn {
     font: inherit; font-size: .76rem; padding: 3px 11px; border-radius: 999px; cursor: pointer;
     border: 1px solid var(--border); background: var(--bg-2); color: var(--text-light);
@@ -5710,15 +5711,27 @@ body.yt-modal-open .wr-layout { visibility: hidden; }
 }
 html.dark .yt-essay mark.ap-own { background: rgba(252, 211, 77, .18); color: #fcd34d; }
 
-/* 逐句点译：点句只展开句下译块，当前句不显示下划线/高亮（用户 2026-11-20 定调）
-   .on 仅作状态标记保留，不再给它任何视觉样式；hover 也不加底色 */
-.yt-essay .yt-jsent { cursor: pointer; padding: 1px 0; }
+/* 逐句点译：只点句末「译」标记展开句下译块，句子正文/单词都不响应（用户 2026-11-20 定调）
+   .yt-jsent.on 仅作状态标记保留，不给任何视觉样式；hover 也不加底色 */
+.yt-essay .yt-jsent { padding: 1px 0; }
+/* 句末「译」标记：无边框、默认半透明降低存在感，hover 才显字提示；点它翻译整句，不与点词抢事件 */
+.yt-sent-tr {
+    display: inline-block; vertical-align: baseline;
+    margin: 0 2px 0 5px; padding: 0 2px;
+    font-family: -apple-system, "Microsoft YaHei", sans-serif;
+    font-size: .72rem; line-height: 1.5; font-weight: 600;
+    color: var(--primary); background: none; border: none;
+    opacity: .45; cursor: pointer; transition: opacity .15s ease;
+}
+.yt-sent-tr:hover, .yt-sent-tr.on { opacity: 1; }
+html.dark .yt-sent-tr { color: #7edcd2; }
+/* 逐句译块：无边框，只留浅底与左缩进区分正文 */
 .yt-essay .yt-jsent-cn {
     display: block; text-indent: 0;
     font-family: -apple-system, "Microsoft YaHei", sans-serif;
     font-size: .88rem; line-height: 1.7; color: var(--primary-dark);
-    background: var(--primary-soft); border-left: 2px solid var(--primary);
-    border-radius: 0 6px 6px 0; padding: 6px 12px; margin: 6px 0 10px;
+    background: var(--primary-soft); border: none;
+    padding: 6px 12px; margin: 6px 0 10px;
     cursor: pointer; animation: fadeIn .15s ease;
 }
 .yt-essay .yt-jsent-cn[hidden] { display: none; }
@@ -5794,13 +5807,13 @@ html.dark .wr-scope { color: #fca5a5; background: rgba(248,113,113,.16); border-
     border-bottom: 1px dashed rgba(37, 99, 235, .5);
     border-radius: 2px; padding: 0 1px;
 }
+/* 范文原句：浅浅一层底，去掉原来的琥珀粗底 + 点线，不与骨架的高亮抢视线 */
 .yt-fill {
-    background: rgba(245, 158, 11, .15);
-    border-bottom: 1px dotted rgba(217, 119, 6, .8);
+    background: rgba(245, 158, 11, .075);
     border-radius: 2px; padding: 0 1px;
 }
 html.dark .yt-skel { background: rgba(96, 165, 250, .18); border-bottom-color: rgba(147, 197, 253, .6); }
-html.dark .yt-fill { background: none; border-bottom-color: rgba(252, 211, 77, .8); }
+html.dark .yt-fill { background: rgba(252, 211, 77, .07); }
 
 .yt-w { cursor: pointer; border-radius: 2px; transition: background .13s ease; }
 .yt-w:hover { background: rgba(13, 148, 136, .16); }
@@ -5821,11 +5834,11 @@ html.dark .yt-w.on { background: rgba(45, 212, 191, .32); }
     border-bottom: 1px dashed transparent;
 }
 .yt-lg-skel { background: rgba(37, 99, 235, .10); border-bottom-color: rgba(37, 99, 235, .5); color: #1d4ed8; }
-.yt-lg-fill { border-bottom: 1px dotted rgba(217, 119, 6, .75); color: #b45309; }
+.yt-lg-fill { background: rgba(245, 158, 11, .075); color: #b45309; }
 .yt-lg-num { background: rgba(202, 138, 4, .22); color: #854d0e; }
 .yt-lg-kw { background: rgba(13, 148, 136, .14); border-bottom-color: rgba(13, 148, 136, .55); color: #0f766e; }
 html.dark .yt-lg-skel { color: #93c5fd; background: rgba(96, 165, 250, .18); }
-html.dark .yt-lg-fill { color: #fcd34d; background: none; }
+html.dark .yt-lg-fill { color: #fcd34d; background: rgba(252, 211, 77, .07); }
 html.dark .yt-lg-num { color: #fde68a; background: rgba(202, 138, 4, .3); }
 html.dark .yt-lg-kw { color: #5eead4; background: rgba(45, 212, 191, .18); }
 .yt-wpop { max-width: 300px; }
@@ -5833,3 +5846,8 @@ html.dark .yt-lg-kw { color: #5eead4; background: rgba(45, 212, 191, .18); }
 @media (max-width: 760px) {
     .yt-legend { font-size: .68rem; gap: 3px 10px; padding: 6px 8px; }
 }
+
+/* 2026-11-20 定调：押题范文只清掉范文原句（填槽）的浅底；骨架蓝底 + 数字金底保留。
+   DOM class 全保留，只清视觉；图例恢复显示（已去掉「范文原句」那项）。 */
+.yt-en .yt-fill { background: none; border: none; padding: 0; }
+html.dark .yt-en .yt-fill { background: none; border-color: transparent; }

@@ -117,14 +117,14 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   if (!en || !cn) fail('未生成 .yt-en / .yt-cn');
   else pass('英文段与中文段分别生成');
   if (!cn.hidden) fail('中文应默认隐藏'); else pass('中文默认隐藏');
-  if (btn.textContent !== '显示中文译文') fail('按钮初始文案错: ' + btn.textContent);
-  else pass('按钮初始为「显示中文译文」');
+  if (btn.textContent !== '显示全文译文') fail('按钮初始文案错: ' + btn.textContent);
+  else pass('按钮初始为「显示全文译文」');
 
   btn.click();
   if (cn.hidden) fail('点按钮未展开中文');
   else pass('点按钮展开整篇中文');
-  if (btn.textContent !== '隐藏中文译文') fail('展开后按钮文案未变');
-  else pass('展开后按钮变「隐藏中文译文」');
+  if (btn.textContent !== '隐藏全文译文') fail('展开后按钮文案未变');
+  else pass('展开后按钮变「隐藏全文译文」');
   const cnText = cn.textContent;
   if (!CJK.test(cnText) || /[A-Za-z]{4,}/.test(cnText.replace(/AI|GDP|CPR/g, ''))) fail('中文区含英文残留: ' + cnText.slice(0, 40));
   else pass('中文区为纯中文译文（' + cnText.length + ' 字）');
@@ -142,7 +142,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   await wait(30);
   const cn2 = d.querySelector('#ytMEssay .yt-cn');
   const btn2 = d.getElementById('ytCnBtn');
-  if (!cn2.hidden || btn2.textContent !== '显示中文译文') fail('翻页未复位中文状态');
+  if (!cn2.hidden || btn2.textContent !== '显示全文译文') fail('翻页未复位中文状态');
   else pass('翻到下一题后中文自动收起、按钮复位');
 
   console.log(ok ? '\nYATI2 ALL PASS' : '\nYATI2 FAIL');
