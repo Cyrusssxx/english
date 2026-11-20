@@ -207,7 +207,7 @@ function ytEssayHtml(it) {
     return `<div class="yt-en">${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
 }
 
-/** 单句译块开合（同步句高亮 .on）；cnBox 为 .yt-jsent-cn */
+/** 单句译块开合（同步 .yt-jsent.on 状态标记；按用户要求不渲染高亮/下划线）；cnBox 为 .yt-jsent-cn */
 function ytSentCnShow(cnBox, show) {
     if (!cnBox) return;
     cnBox.hidden = !show;

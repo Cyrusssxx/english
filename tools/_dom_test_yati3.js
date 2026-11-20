@@ -19,6 +19,8 @@ if (!/js\/dict\.js/.test(html)) fail('未引入 dict.js'); else pass('已引入 
 if (!/js\/kwpop\.js/.test(html)) fail('未引入 kwpop.js'); else pass('已引入 kwpop.js（词卡弹层）');
 if (!/\.yt-jsent-cn\[hidden\] \{ display: none/.test(css)) fail('缺逐句译块隐藏样式');
 else pass('逐句译块默认隐藏样式就位');
+if (/\.yt-essay \.yt-jsent(\.on|:hover) \{[^}]*(background|box-shadow)/.test(css)) fail('当前句仍有下划线/高亮样式');
+else pass('点译时当前句无下划线、无高亮（.on 仅状态标记）');
 if (!/ytWordHtml/.test(fs.readFileSync(path.join(PWA, 'js/yati.js'), 'utf8'))) fail('缺词可点标注函数');
 else pass('英文用词可点标注函数 ytWordHtml');
 
@@ -78,20 +80,17 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   if (!d.querySelector('#ytMEssay .yt-cn')) fail('整篇中文块丢失');
   else pass('整篇中文对照块仍在');
 
-  // 「显示中文译文」一键展开/收起所有逐句译块（含句高亮同步）
+  // 「显示中文译文」一键展开/收起所有逐句译块
   const btn = d.getElementById('ytCnBtn');
   const boxes = d.querySelectorAll('#ytMEssay .yt-jsent-cn');
-  const jsents = d.querySelectorAll('#ytMEssay .yt-jsent');
   btn.click();
   const opened = [...boxes].filter(x => !x.hidden).length;
-  const onN = [...jsents].filter(x => x.classList.contains('on')).length;
-  if (opened !== boxes.length || onN !== jsents.length) fail(`一键展开不全: 译块 ${opened}/${boxes.length} 高亮 ${onN}/${jsents.length}`);
-  else pass(`按钮一键展开全部逐句译文（${opened} 句）+ 句高亮`);
+  if (opened !== boxes.length) fail(`一键展开不全: 译块 ${opened}/${boxes.length}`);
+  else pass(`按钮一键展开全部逐句译文（${opened} 句）`);
   btn.click();
   const closed = [...boxes].filter(x => x.hidden).length;
-  const offN = [...jsents].filter(x => !x.classList.contains('on')).length;
-  if (closed !== boxes.length || offN !== jsents.length) fail(`一键收起不全: 译块 ${closed}/${boxes.length} 高亮清除 ${offN}/${jsents.length}`);
-  else pass('按钮再点一键收起全部逐句译文 + 清除句高亮');
+  if (closed !== boxes.length) fail(`一键收起不全: 译块 ${closed}/${boxes.length}`);
+  else pass('按钮再点一键收起全部逐句译文');
   console.log(ok ? '\nYATI3 ALL PASS' : '\nYATI3 FAIL');
   process.exit(ok ? 0 : 1);
 })();
