@@ -5886,3 +5886,16 @@ html.dark body.sw-drill-on .sw-drill-ph.on { color: #8fb4d8; background: rgba(12
 #swDrill .sw-drill-list { counter-reset: none; }   /* 覆盖原 list 重置，让编号按整段连续 */
 .sw-drill-sub + .sw-drill-sub { margin-top: 8px; border-top: 1px solid var(--border, rgba(0,0,0,.08)); padding-top: 6px; }
 .sw-drill-sub-t { font-size: .78rem; font-weight: 600; color: var(--primary); padding: 6px 14px 0; letter-spacing: .02em; }
+
+/* 小作文范文模板功能句角标（2026-11-20）：紫色小徽章，与蓝色骨架/金色数字/青色词组区分；
+   句首 inline 徽章，不进句子 textContent，不铺底，不遮原文。 */
+.yt-tpl-tag {
+    display: inline-block; vertical-align: baseline;
+    margin: 0 5px 0 0; padding: 0 4px;
+    font-family: -apple-system, "Microsoft YaHei", sans-serif;
+    font-size: .68rem; line-height: 1.5; font-weight: 700;
+    color: #7c3aed; background: rgba(124, 58, 237, .10);
+    border: 1px solid rgba(124, 58, 237, .28); border-radius: 3px;
+    opacity: .82; white-space: nowrap;
+}
+html.dark .yt-tpl-tag { color: #c4b5fd; background: rgba(167, 139, 250, .16); border-color: rgba(167, 139, 250, .38); }

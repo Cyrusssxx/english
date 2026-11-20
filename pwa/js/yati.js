@@ -277,6 +277,41 @@ function ytWordHtml(text) {
     return ytMarkNums(html);
 }
 
+/* 小作文范文里的「模板功能句」标记（2026-11-20）：
+   小作文 8 篇（NO19–26）的范文中，能整句背下来套用的功能句（开头寒暄 / 来意 /
+   分点过渡 / 收尾请求 / 通知纪要格式句）打上可见标记，跟每篇独有的内容血肉句区分。
+   判定用句式正则——不手改数据，yati.json 由生成器产出，这里纯前端派生，幂等。
+   范围锁 no>=19（小作文组），大作文图表句不参与，避免 "Thank you for" 之类误标。 */
+const YT_TPL_PATTERNS = [
+    /\bI hope this (?:message|email) finds you well\./i,
+    /\bThanks for your (?:email|message)\./i,
+    /\bI was delighted to receive your email\b/i,
+    /\bWe are pleased to announce that\b/i,
+    /\bI am writing to\b/i,
+    /\bI believe I am well qualified\b/i,
+    /\bTo be more specific, several aspects of this matter\b/i,
+    /\bLooking forward to your early reply\./i,
+    /\bI am looking forward to hearing from you\b/i,
+    /\bI look forward to seeing you\b/i,
+    /\bI would appreciate it\b/i,
+    /\bI would be grateful\b/i,
+    /\bThank you for\b/i,
+    /\bI hope you will find\b/i,
+    /\bPlease let me know\b/i,
+    /\bdo not hesitate to contact me\b/i,
+    /\bWe are looking forward to\b/i,
+    /\bI wonder if you could\b/i,
+    /\bbe convenient for you\b/i,
+    /\bThis is an ideal opportunity\b/i,
+    /\bThe meeting aimed to\b/i,
+    /\bthe meeting decided that\b/i,
+    /\bThe meeting concluded with\b/i,
+];
+function ytIsTplSent(text, no) {
+    if (!(no >= 19)) return false;
+    return YT_TPL_PATTERNS.some(re => re.test(String(text || '')));
+}
+
 /** 图例：只在含有骨架句的篇目显示 */
 function ytLegendHtml() {
     return `<div class="yt-legend">`
@@ -370,9 +405,13 @@ function ytEssayHtml(it) {
             const i = n++;
             const h = ytWordHtml(s.en);
             if (h.indexOf('class="yt-skel"') >= 0 || h.indexOf('class="yt-fill"') >= 0) skelN++;
+            // 模板功能句角标也做兄弟节点，文字不进 .yt-jsent 的 textContent（逐句拼回校验不吞字）。
+            const tpl = ytIsTplSent(s.en, it.no)
+                ? `<span class="yt-tpl-tag" title="模板功能句：可整句背下来套用">模板</span>` : '';
             // 「译」标记放在 .yt-jsent 之外做兄弟节点：句子 textContent 仍严格等于原文（校验不吞字），
             // 又能独立按 data-tr 触发该句译文；句子正文/单词都不响应翻译。
-            return `<span class="yt-jsent" data-i="${i}">${h}</span>`
+            return tpl
+                + `<span class="yt-jsent" data-i="${i}">${h}</span>`
                 + `<button type="button" class="yt-sent-tr" data-tr="${i}" title="看本句中文">译</button>`
                 + `<span class="yt-jsent-cn" data-for="${i}" hidden>${ytMarkNums(ytEsc(s.cn || ''))}</span>`;
         }).join(' ');
