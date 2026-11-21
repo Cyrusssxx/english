@@ -73,27 +73,36 @@ else pass('NO6–15 图表类：首段 clearly illustrates + P2 引入句/Primar
 // 第三段：立场句换成模板骨架（用户 2026-11-20 定：拆开用 + 按趋势分套）
 const P3_POS_OPEN = 'On balance, this is a positive trend worth welcoming.';
 const P3_POS_CLOSE = 'Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.';
-const P3_NEU_OPEN = 'On balance, what the figures reveal is a pattern that deserves careful judgment rather than simple praise or blame.';
-// 2026-11-21 起：中性篇尾句按题材定制（去掉「福祉还是负担」套话），
-// 只要求它是收束判断句：含判断/展望动词，且不能退化成 should 对策句。
+// 2026-11-21 起：中性篇（6/8/9/10/14/15）首尾句都按题材定制，不再抄同一句骨架。
+// 首句只守三条：①On balance 起句 ②六篇互不相同（禁止复制粘贴）③不含旧套话 a pattern / praise or blame。
+// 尾句只守：含判断/展望动词，且不能退化成 should 对策句。
 const P3_NEU_CLOSE_RE = /\b(shape|shapes|depend|depends|matter|matters|managed|prove)\b/;
+const P3_NEU_NOS = [6, 8, 9, 10, 14, 15];
+const neuOpens = P3_NEU_NOS.map(no => {
+  const it = flat.find(x => x.no === no);
+  return ((it && it.blocks[2] && it.blocks[2].sents) || [{}])[0].en || '';
+});
+if (new Set(neuOpens).size !== neuOpens.length)
+  fail('中性篇首句重复（禁止抄同一句）: ' + JSON.stringify(neuOpens));
 const badP3 = [];
 [6, 7, 8, 9, 10, 11, 12, 13, 14, 15].forEach(no => {
   const it = flat.find(x => x.no === no);
   const ss = ((it && it.blocks[2] && it.blocks[2].sents) || []).map(s => s.en);
   if (!ss.length) { badP3.push([no, '第三段缺失']); return; }
   const isPos = [7, 11, 12, 13].includes(no);
-  if (ss[0] !== (isPos ? P3_POS_OPEN : P3_NEU_OPEN)) badP3.push([no, 'P3 首句未换模板骨架']);
+  if (isPos && ss[0] !== P3_POS_OPEN) badP3.push([no, 'P3 首句未换模板骨架']);
+  if (!isPos && !/^On balance, /.test(ss[0])) badP3.push([no, 'P3 首句缺 On balance 起句']);
+  if (!isPos && /a pattern|praise or blame/.test(ss[0])) badP3.push([no, 'P3 首句残留旧套话']);
   const last = ss[ss.length - 1];
   if (isPos && last !== P3_POS_CLOSE) badP3.push([no, 'P3 尾句缺 momentum 展望']);
   if (!isPos && !P3_NEU_CLOSE_RE.test(last)) badP3.push([no, 'P3 尾句中性与收束不符']);
   if (!isPos && /\bshould\b/.test(last)) badP3.push([no, 'P3 尾句退化成对策句']);
-  if (!isPos && /blessing or a burden/.test(last) && ![8, 14].includes(no))
+  if (!isPos && /blessing or a burden/.test(last) && no !== 8)
     badP3.push([no, 'P3 残留福祸套话']);
   if (ss.some(s => /We should bear in mind/.test(s))) badP3.push([no, 'P3 残留旧立场句']);
 });
 if (badP3.length) fail('第三段骨架不符: ' + JSON.stringify(badP3.slice(0, 4)));
-else pass('NO6–15 第三段：立场句换模板骨架（7/11/12/13 正面 + 6/8/9/10/14/15 中性），旧句已清');
+else pass('NO6–15 第三段：7/11/12/13 正面 + 6/8/9/10/14/15 双面，首句按题材定制且互不重复');
 
 /* ---------- 2. 静态样式 ---------- */
 if (!/\.yt-cn \{[^}]*border-top: 1px dashed/.test(css)) fail('缺中文块样式（与真题示范一致的虚线分隔）');

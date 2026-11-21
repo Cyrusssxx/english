@@ -744,7 +744,7 @@ function wrRenderCards() {
     if (!WR) return;
     const groups = {};
     for (const s of WR.sections || []) {
-        if (s.render_in) continue;      // 第三段的负面/中性版已并入主卡的 skeletons，不再单独出卡
+        if (s.render_in) continue;      // 第三段的负面/双面版已并入主卡的 skeletons，不再单独出卡
         (groups[s.group] || (groups[s.group] = [])).push(s);
     }
     const html = Object.keys(groups).map((gname, gi) => `

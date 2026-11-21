@@ -410,16 +410,16 @@ P3_FW_NEG = [
      'trans': '这类举措能从根源上解决问题。',
      'cn': '收束句：回扣已给的对策。别再写「若不采取措施会恶化」——对策都给了，那样说自相矛盾。'},
 ]
-# 中性版拼装框架：不表态，把结论落到「上面的举措怎么配合」
+# 双面版拼装框架：承认两面 → 正负句池任选 → 条件性判断收束
 P3_FW_MID = [
-    {'en': 'On balance, the figures call for a measured view of {{topic}} rather than a quick verdict.',
-     'trans': '总的来说，这些数据要求我们审慎看待 {{topic}}，而不是急于下结论。',
-     'cn': '立场句：双面题 / 现状分布题用——{{topic}} 按题目替换，把「审慎」落到具体对象上，不空谈格局。'},
-    {'en': 'To weigh both sides, + 主体句 ①', 'trans': '要权衡两面，……',
-     'cn': '主体句：正负两版句池都能挑，中性题优先挑「观念 / 政府 / 学校 / 个人」这类不带褒贬的。'},
-    {'en': 'The result will depend on how well the steps above are combined.',
-     'trans': '结果如何，取决于上述举措能否配合到位。',
-     'cn': '收束句：把结论落到「上面这些举措怎么配合」，避开福祉 / 负担式的空判断。'},
+    {'en': 'On balance, the figures reveal both gains and costs in {{topic}}.',
+     'trans': '总的来说，这些数据表明 {{topic}} 既有收益也有代价。',
+     'cn': '立场句：双面题 / 现状分布题用——先承认两面并存，{{topic}} 按题目替换；别写「既不好也不坏」，那是没表态。'},
+    {'en': 'To keep both sides in view, + 主体句 ①', 'trans': '要兼顾两面，……',
+     'cn': '主体句：正负两版句池都能挑，优先挑「观念 / 政府 / 学校 / 个人」这类不带褒贬的。'},
+    {'en': 'The real test is whether the costs are managed as seriously as the gains are pursued.',
+     'trans': '真正的考验在于，代价是否被像收益一样认真对待。',
+     'cn': '收束句：给一条条件性判断——代价有没有被像收益一样对待。比「取决于管理」实在，比「福祉还是负担」轻。'},
 ]
 P3_NEG = [
     sent('On balance, the figures reveal a real problem with {{topic}}.',
@@ -432,18 +432,24 @@ P3_NEG = [
            S(' the problem at its source', 'o'), S('.', '')]]),
 ]
 
-# ── 第三档：中性版（2026-11-20 追加）──
+# ── 第三档：双面版（2026-11-20 追加，2026-11-21 重写）──
 # 为什么需要：正面版说「值得欢迎」、负面版说「问题严重」，但双面题（老龄化=寿命延长+养老压力）
-# 和现状分布题（择业因素 / 线上线下占比）两边都不合。中性版不表态，把判断落到 {{topic}} 上。
+# 和现状分布题（择业因素 / 线上线下占比）两边都不合。
+# 旧版两句有硬伤：①「call for a measured view of {{topic}}」——measured view 要求宾语是有争议的命题，
+# 套到 travelling / dining out / exercise 这类活动名词上英文不通（17 题里 12 题别扭，中文「审慎看待旅游」通
+# 但英文 a measured view of travelling 不通）；②「rather than a quick verdict」的 verdict 是司法词，
+# 且「不表态」本身违背第三段功能（第三段要评论，回避判断丢分）；③「The result will depend on…」的
+# The result 无先行词，「the steps above are combined」在主体句只有一句时也是空话。
+# 新版：先承认收益与代价并存，收束给一条条件性判断（代价有没有被同等对待）——既有立场又能容两面。
 P3_MID = [
-    sent('On balance, the figures call for a measured view of {{topic}} rather than a quick verdict.',
-         '总的来说，这些数据要求我们审慎看待 {{topic}}，而不是急于下结论。',
-         [[S('On balance', 'trans'), S(', the figures', 't'), S(' call for', 'p'),
-           S(' a measured view of {{topic}}', 'o'), S(' rather than a quick verdict', 'o'), S('.', '')]]),
-    sent('The result will depend on how well the steps above are combined.',
-         '结果如何，取决于上述举措能否配合到位。',
-         [[S('The result', 't'), S(' will depend on', 'p'),
-           S(' how well the steps above are combined', 'o'), S('.', '')]]),
+    sent('On balance, the figures reveal both gains and costs in {{topic}}.',
+         '总的来说，这些数据表明 {{topic}} 既有收益也有代价。',
+         [[S('On balance', 'trans'), S(', the figures', 't'), S(' reveal', 'p'),
+           S(' both gains and costs in {{topic}}', 'o'), S('.', '')]]),
+    sent('The real test is whether the costs are managed as seriously as the gains are pursued.',
+         '真正的考验在于，代价是否被像收益一样认真对待。',
+         [[S('The real test', 't'), S(' is', 'p'), S(' whether the costs are managed', 'o'),
+           S(' as seriously as the gains are pursued', 'o'), S('.', '')]]),
 ]
 
 # 高级衔接词（替代 First and foremost / Furthermore / To sum up 等烂大街写法；同篇不重样）
@@ -515,7 +521,7 @@ P3N_FIT = {'个人·记录': 3, '企业·雇主': 2, '企业·管理': 2, '个�
            '学校·课程': 0, '家庭·作息': 0,
            '立场·中性': 19, '收尾·回扣': 18, '收尾·联合': 17, '收尾·条件': 16,
            '立场·重要性': 21, '分工·协同': 20}
-# 中性版复用正负两版并集 → fit 取两边较大值
+# 双面版复用正负两版并集 → fit 取两边较大值
 P3M_FIT = {}
 for _k, _v in list(P3N_FIT.items()) + list(P3P_FIT.items()):
     P3M_FIT[_k] = max(P3M_FIT.get(_k, 0), _v)
@@ -649,12 +655,12 @@ P3_SKELS = [
              {'a real problem': 'a genuine concern / a clear weakness',
               'at its source': 'at the root / where it begins'},
              '拼法：立场 → 挑 1~2 句对策 → 收束回扣对策；不再预测「会恶化」。'),
-    _p3_card('③ 中性版 · 只描述不表态', '双面题 / 现状分布题：老龄化、择业因素、线上线下占比',
+    _p3_card('③ 双面版 · 利弊并陈', '双面题 / 现状分布题：老龄化、择业因素、线上线下占比',
              P3_MID,
-             {'a measured view': 'a balanced reading / a sober assessment',
-              'a quick verdict': 'a hasty judgment / an easy conclusion',
-              'the steps above are combined': 'these measures reinforce each other'},
-             '拼法：立场 → 正负两版句池都能挑 → 收束落到举措如何配合；不写「福祉还是负担」。'),
+             {'both gains and costs': 'both benefits and drawbacks / gains as well as costs',
+              'The real test': 'What matters most / The decisive question',
+              'managed as seriously as the gains are pursued': 'treated with the same care as the gains'},
+             '拼法：立场承认两面 → 正负两版句池都能挑 → 收束给条件判断（代价有没有被同等对待）；不写「福祉还是负担」。'),
 ]
 
 
@@ -747,7 +753,7 @@ def main():
     # 第三段
     s = by_id['para3_positive']
     s['title'] = '第三段 · 立场 + 对策（三套骨架选一）'
-    s['subtitle'] = '正面 / 负面 / 中性三套骨架并列，下面一份句池三套通用'
+    s['subtitle'] = '正面 / 负面 / 双面三套骨架并列，下面一份句池三套通用'
     set_skeleton(s, P3_POS)
     s['alts'] = {'an encouraging and welcome picture': 'a favourable picture / a positive reading',
                  'should last': 'are likely to last / should endure',
@@ -758,7 +764,7 @@ def main():
     s['pool_all'] = merge_p3_pool()      # 26 条合并句池（仅展示；sentences 保持原样供 apply 取句）
     s['pool_groups'] = [{'name': n, 'desc': d} for n, d in P3_GROUPS]
     s['sentences'] = [_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3P_FIT.get(t, 0)}, e) for f, t, e, c in SUBJ_POS + P3_EXTRA]
-    s['tips'] = ['三套骨架按题目极性选一套，不要混用：趋势向好选①，问题要治选②，说不清好坏（双面 / 现状分布）选③。',
+    s['tips'] = ['三套骨架按题目极性选一套，不要混用：趋势向好选①，问题要治选②，两面都成立（双面 / 现状分布）选③。',
                  '骨架只给首尾两句，中间对策从句池挑 1~2 句，三套拼起来约 45~70 词。',
                  '同一条 tag 在正/负两版里是两种语气（如「个人」正面写「选适合自己的」、负面写「管好自己的习惯」），按骨架极性挑。',
                  '首尾句里的 {{topic}} 务必按题目替换；别留 this / it / a pattern 这类不指名对象的空话。']
@@ -772,21 +778,22 @@ def main():
     s['framework'] = P3_FW_NEG
     s['sentences'] = [_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3N_FIT.get(t, 0)}, e) for f, t, e, c in SUBJ_NEG + P3_EXTRA]
 
-    # 第三档：中性版（2026-11-20）——立场不表态，主体句复用正负两版并集
+    # 第三档：双面版（2026-11-20）——承认两面 + 条件判断，主体句复用正负两版并集
     mid = {x['id']: x for x in secs}.get('para3_neutral') or {}
     mid.update({
         'id': 'para3_neutral',
-        'title': '第三段 · 中性版（立场 + 建议）',
-        'subtitle': '双面题 / 现状分布题用：立场句不表态 + 从正负句池挑 1~2 句 + 收束句',
+        'title': '第三段 · 双面版（利弊并陈 + 条件判断）',
+        'subtitle': '双面题 / 现状分布题用：立场句承认两面 + 从正负句池挑 1~2 句 + 条件判断收束',
         'group': by_id['para3_positive'].get('group', ''),
         'priority': False,
         'linkers': P3_LINKERS,
         'framework': P3_FW_MID,
-        'alts': {'a measured view': 'a balanced reading / a sober assessment',
-                 'a quick verdict': 'a hasty judgment / an easy conclusion',
-                 'the steps above are combined': 'these measures reinforce each other'},
+        'alts': {'both gains and costs': 'both benefits and drawbacks / gains as well as costs',
+                 'The real test': 'What matters most / The decisive question',
+                 'managed as seriously as the gains are pursued': 'treated with the same care as the gains'},
         'tips': ['什么时候用：图表既说不上好也说不上坏——老龄化（寿命延长 + 养老压力）、择业因素、线上/线下占比。',
-                 '正面版说「值得欢迎」、负面版说「问题严重」都不合适时，换这一版：只描述变化，把结论落到「上面的举措怎么配合」。',
+                 '正面版说「值得欢迎」、负面版说「问题严重」都不合适时换这一版：先承认收益和代价并存，收束落到「代价有没有被同等对待」。',
+                 '别把「双面」做成不表态——第三段的功能就是评论，只描述不判断照样丢分；这一版给的是条件性判断，立场在。',
                  '主体句直接从下面正负两版的并集里挑，语气中性的（观念 / 政府 / 学校 / 个人）优先。'],
     })
     set_skeleton(mid, P3_MID)

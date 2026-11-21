@@ -177,11 +177,11 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
     // 三套骨架前移并列
     const skels = p3card ? p3card.querySelectorAll('.wr-skel') : [];
     if (skels.length !== 3) fail(`第三段骨架卡 ${skels.length} 套，应为 3`);
-    else pass('三套骨架并列前移（正面 / 负面 / 中性）');
+    else pass('三套骨架并列前移（正面 / 负面 / 双面）');
     const skelLabels = [...skels].map(x => (x.querySelector('.wr-skel-label') || {}).textContent || '');
-    if (!/正面/.test(skelLabels[0] || '') || !/负面/.test(skelLabels[1] || '') || !/中性/.test(skelLabels[2] || ''))
+    if (!/正面/.test(skelLabels[0] || '') || !/负面/.test(skelLabels[1] || '') || !/双面/.test(skelLabels[2] || ''))
         fail('骨架顺序不对: ' + skelLabels.join(' | '));
-    else pass('骨架顺序 = 正面 → 负面 → 中性');
+    else pass('骨架顺序 = 正面 → 负面 → 双面');
 
     // 句池只有一份（主卡），条数 = pool_all
     const p3groups = p3card ? p3card.querySelectorAll('.wr-pool-group') : [];
