@@ -187,9 +187,8 @@ const YT_SKEL_SEGS = [
     /\bof great importance\b/i,
     /\bIn this way,/i,
     // 第三段模板骨架（2026-11-20）：整句匹配，否则后半截会被误判成填槽
-    // 2026-11-21：中性篇六篇首句改为按题材定制，原有「a pattern…praise or blame」等三条已成死规则，删掉
-    /\bOn balance, this is a positive trend worth welcoming\./i,
-    /\bGiven the momentum behind it, there is every reason to believe that it will continue in the years ahead\./i,
+    // 2026-11-21：十篇第三段首尾句改为按题材定制，原三条整句规则只剩 NO8 这一句还在用，
+    // 「positive trend worth welcoming」「Given the momentum…」等已成死规则，删掉。
     /\bWhether it proves to be a blessing or a burden depends on how well it is managed in the years ahead\./i,
 ];
 
