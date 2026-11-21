@@ -74,7 +74,9 @@ else pass('NO6–15 图表类：首段 clearly illustrates + P2 引入句/Primar
 const P3_POS_OPEN = 'On balance, this is a positive trend worth welcoming.';
 const P3_POS_CLOSE = 'Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.';
 const P3_NEU_OPEN = 'On balance, what the figures reveal is a pattern that deserves careful judgment rather than simple praise or blame.';
-const P3_NEU_CLOSE_RE = /depends on how well it is managed|By considering their abilities|Combining dependable online/;
+// 2026-11-21 起：中性篇尾句按题材定制（去掉「福祉还是负担」套话），
+// 只要求它是收束判断句：含判断/展望动词，且不能退化成 should 对策句。
+const P3_NEU_CLOSE_RE = /\b(shape|shapes|depend|depends|matter|matters|managed|prove)\b/;
 const badP3 = [];
 [6, 7, 8, 9, 10, 11, 12, 13, 14, 15].forEach(no => {
   const it = flat.find(x => x.no === no);
@@ -85,6 +87,9 @@ const badP3 = [];
   const last = ss[ss.length - 1];
   if (isPos && last !== P3_POS_CLOSE) badP3.push([no, 'P3 尾句缺 momentum 展望']);
   if (!isPos && !P3_NEU_CLOSE_RE.test(last)) badP3.push([no, 'P3 尾句中性与收束不符']);
+  if (!isPos && /\bshould\b/.test(last)) badP3.push([no, 'P3 尾句退化成对策句']);
+  if (!isPos && /blessing or a burden/.test(last) && ![8, 14].includes(no))
+    badP3.push([no, 'P3 残留福祸套话']);
   if (ss.some(s => /We should bear in mind/.test(s))) badP3.push([no, 'P3 残留旧立场句']);
 });
 if (badP3.length) fail('第三段骨架不符: ' + JSON.stringify(badP3.slice(0, 4)));
