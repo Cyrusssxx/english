@@ -111,7 +111,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
         2026-11-21 补：原先正则只标到 illustrates，how…distributed / the changes in /
         The cartoon above depicts / the figure for 等整段漏掉（用户从截图发现）。 */
   const skelNeed = {
-    6: ['illustrates how', 'are distributed', 'respectively, while'],
+    6: ['illustrates how', 'are distributed', 'respectively, while', 'On balance,'],
     7: ['illustrates the changes in', 'the figure for', 'On balance,'],
     8: ['illustrates the changes in', 'the figure for', 'On balance,'],
     9: ['illustrates how', 'are distributed', 'On balance,'],

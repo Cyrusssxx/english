@@ -14,7 +14,7 @@
   · 图表大作文：**第二段的具体理由句 + 第三段整段**（2026-11-21 用户三轮要求）。
     第二段连接词一字不动（Primary among these is that / Equally important, / A further driver is /
     Nevertheless… / Together…），只换后面的理由本身，用来解释图表各分项的数据。
-    NO6 第三段 2026-11-21 按用户给的 A/B 版重写：默认 A（Overall 起、far-reaching benefits 收），
+    NO6 第三段 2026-11-21 按用户给的 A/B 版重写：默认 A（On balance 起、far-reaching benefits 收），
     四句全挂替换，结尾第一条备选即版本 B（only when…can… 倒装、deliver its true value）。
     第一段（数据句、多选备注）一律不做：换了要么丢时间区间、要么丢「可多选」备注。
     小作文仍做寒暄 / 来意 / 结尾。
@@ -70,12 +70,12 @@ SWAPS = {
              {'en': 'A further driver is the growing sense that a serious hobby can even turn into a second career.',
               'cn': '另一个推动因素是，越来越多人意识到，认真经营的爱好甚至能发展成第二职业。'},
          ]},
-        {'match': 'Overall, learners return to study with a diverse range of purposes',
+        {'match': 'On balance, learners return to study with a diverse range of purposes',
          'tag': '第三段总括',
-         'tips': '默认版用 Overall 起句；第一条备选保留 On balance 的说法；两句都只说「目的多样」，不预判哪一项占优',
+         'tips': '默认保留 On balance 骨架起句（蓝色高亮）；备选换成 Overall 等说法，都只说「目的多样」，不预判哪一项占优',
          'alts': [
-             {'en': 'On balance, working adults return to further study with a variety of purposes.',
-              'cn': '总的来说，在职成人出于多种目的重返学习。'},
+             {'en': 'Overall, learners return to study with a diverse range of purposes.',
+              'cn': '总体而言，学习者带着各种各样的目的重返课堂。'},
              {'en': 'In general, adults go back to the classroom for purposes of many different kinds.',
               'cn': '一般而言，成人回到课堂出于各种不同的目的。'},
          ]},
@@ -90,12 +90,12 @@ SWAPS = {
          ]},
         {'match': 'Employers can provide on-the-job training',
          'tag': '第三段建议',
-         'tips': 'on-the-job training 贴合「在职」身份；两条都给雇主与个人各一条措施，别写成单方喊话',
+         'tips': '两条都抽掉本题专属词（在职培训／证书），留「机构提供便利 + 个人按实际内容选」的骨架，换任何教育培训题都能套',
          'alts': [
-             {'en': 'Employers can provide on-the-job training and adjust working hours, while individuals should choose courses by what they teach rather than by the certificate they promise.',
-              'cn': '雇主可以提供在职培训并调整工时，而个人应按课程实际教什么、而非它承诺的证书来选课。'},
-             {'en': 'Employers can fund short courses and adjust working hours, while workers should pick programmes that match what they actually need.',
-              'cn': '雇主可以资助短期课程并调整工时，而员工应选择真正符合自身需求的课程。'},
+             {'en': 'Employers can make training easier to access, while individuals should choose courses by what they actually teach.',
+              'cn': '雇主可以让培训更容易获得，而个人应按课程实际教的内容来选课。'},
+             {'en': 'Those who run courses should make them easy to join, while learners should judge a programme by what it really offers.',
+              'cn': '办课的一方应让课程更容易参加，而学习者应按一门课真正提供的东西来判断它。'},
          ]},
         {'match': 'Ultimately, by meeting these diverse demands',
          'tag': '第三段结尾 A/B',
