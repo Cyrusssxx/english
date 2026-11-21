@@ -580,6 +580,18 @@ function wrShowUpgPop(targetEl, idx) {
     _wrUpgPop = pop;
 
     // 智能定位
+    wrPopPlace(pop, targetEl);
+
+    // 鼠标移入气泡时保持展开
+    pop.addEventListener('mouseenter', () => {
+        if (_wrUpgTimer) { clearTimeout(_wrUpgTimer); _wrUpgTimer = null; }
+    });
+    pop.addEventListener('mouseleave', () => {
+        _wrUpgTimer = setTimeout(wrCloseUpgPop, 200);
+    });
+}
+
+/** 气泡智能定位（升级词 / 整句替换共用） */function wrPopPlace(pop, targetEl) {
     const r = targetEl.getBoundingClientRect();
     const pw = pop.offsetWidth, ph = pop.offsetHeight;
     let left = r.left + window.scrollX;
@@ -594,44 +606,109 @@ function wrShowUpgPop(targetEl, idx) {
     }
     pop.style.left = Math.round(left) + 'px';
     pop.style.top = Math.round(top) + 'px';
+}
 
-    // 鼠标移入气泡时保持展开
+/* ==================== 整句可替换气泡（押题范文 / 模板骨架共用，2026-11-21） ====================
+   用法：元素带 class="wr-swap" 且 data-swap = JSON({tag,tips,alts:[{en,cn}]})。
+   默认正文仍是原句（好背、能直接套），悬停才列出「更贴这道题」的整句替换。
+   与 .wr-upg 的分工：.wr-upg 是短语级同义升级（点击/悬停即出）；
+   .wr-swap 是句子级替换，鼠标停留 140ms 才弹，避免划过全篇乱弹。 */
+let _wrSwPop = null, _wrSwTimer = null, _wrSwEl = null;
+
+function wrSwClose() {
+    if (_wrSwTimer) { clearTimeout(_wrSwTimer); _wrSwTimer = null; }
+    if (_wrSwPop) { _wrSwPop.remove(); _wrSwPop = null; }
+    if (_wrSwEl) { _wrSwEl.classList.remove('active'); _wrSwEl = null; }
+}
+
+function wrSwShow(el) {
+    let d = null;
+    try { d = JSON.parse(el.getAttribute('data-swap') || ''); } catch (e) { return; }
+    if (!d || !(d.alts || []).length) return;
+    wrSwClose();
+    el.classList.add('active');
+    _wrSwEl = el;
+
+    const pop = document.createElement('div');
+    pop.className = 'wr-upg-pop wr-swap-pop';
+    const orig = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const altsHtml = d.alts.map(a =>
+        '<li class="wup-item"><div class="wup-en">' + apEsc(a.en) + '</div><div class="wup-cn">' + apEsc(a.cn) + '</div></li>'
+    ).join('');
+    pop.innerHTML = '<div class="wup-head">'
+        + '<span class="wup-tag">' + apEsc(d.tag || '可替换') + '</span>'
+        + '<span class="wup-tips">' + apEsc(d.tips || '') + '</span>'
+        + '</div>'
+        + '<div class="wup-orig">当前表达：<b>' + apEsc(orig) + '</b></div>'
+        + '<ul class="wup-list">' + altsHtml + '</ul>'
+        + '<div class="wup-foot">💡 默认这句最好背；想更贴这道题，可整句换成上面任一句</div>';
+
+    document.body.appendChild(pop);
+    _wrSwPop = pop;
+    wrPopPlace(pop, el);
+
     pop.addEventListener('mouseenter', () => {
-        if (_wrUpgTimer) { clearTimeout(_wrUpgTimer); _wrUpgTimer = null; }
+        if (_wrSwTimer) { clearTimeout(_wrSwTimer); _wrSwTimer = null; }
     });
     pop.addEventListener('mouseleave', () => {
-        _wrUpgTimer = setTimeout(wrCloseUpgPop, 200);
+        _wrSwTimer = setTimeout(wrSwClose, 200);
     });
 }
 
 /** 全局监听升级提示的 hover 与 click */
 if (typeof document !== 'undefined') {
     document.addEventListener('mouseover', e => {
-        const el = e.target.closest ? e.target.closest('.wr-upg') : null;
+        if (!e.target.closest) return;
+        const el = e.target.closest('.wr-upg');
         if (el && el.dataset.upgIdx != null) {
             if (_wrUpgTimer) { clearTimeout(_wrUpgTimer); _wrUpgTimer = null; }
+            if (_wrSwPop) wrSwClose();
             wrShowUpgPop(el, Number(el.dataset.upgIdx));
+            return;
+        }
+        const sw = e.target.closest('.wr-swap, .yt-swap');
+        if (sw && sw.getAttribute('data-swap')) {
+            if (_wrSwEl === sw && _wrSwPop) return;      // 句内移动不重建
+            if (_wrSwTimer) { clearTimeout(_wrSwTimer); _wrSwTimer = null; }
+            if (_wrUpgPop) wrCloseUpgPop();
+            _wrSwTimer = setTimeout(() => wrSwShow(sw), 140);
         }
     });
 
     document.addEventListener('mouseout', e => {
-        const el = e.target.closest ? e.target.closest('.wr-upg') : null;
+        if (!e.target.closest) return;
+        const el = e.target.closest('.wr-upg');
         if (el) {
             _wrUpgTimer = setTimeout(wrCloseUpgPop, 240);
+        }
+        const sw = e.target.closest('.wr-swap, .yt-swap');
+        if (sw && !(e.relatedTarget && sw.contains(e.relatedTarget))) {
+            _wrSwTimer = setTimeout(wrSwClose, 220);
         }
     });
 
     document.addEventListener('click', e => {
-        const el = e.target.closest ? e.target.closest('.wr-upg') : null;
+        if (!e.target.closest) return;
+        const el = e.target.closest('.wr-upg');
         if (el && el.dataset.upgIdx != null) {
             e.stopPropagation();
+            if (_wrSwPop) wrSwClose();
             wrShowUpgPop(el, Number(el.dataset.upgIdx));
             return;
         }
-        if (_wrUpgPop && !e.target.closest('.wr-upg-pop')) {
-            wrCloseUpgPop();
+        // 点句子也能开（手机上没 hover）；点词查释义时不抢事件
+        const sw = e.target.closest('.wr-swap, .yt-swap');
+        if (sw && sw.getAttribute('data-swap') && !e.target.closest('.yt-w, .kw')) {
+            if (_wrSwPop && _wrSwEl === sw) wrSwClose(); else wrSwShow(sw);
+            return;
         }
+        if (_wrUpgPop && !e.target.closest('.wr-upg-pop')) wrCloseUpgPop();
+        if (_wrSwPop && !e.target.closest('.wr-upg-pop')) wrSwClose();
     });
+
+    // 滚动 / 尺寸变化一律收起，避免气泡停在旧位置
+    document.addEventListener('scroll', wrSwClose, { capture: true, passive: true });
+    window.addEventListener('resize', wrSwClose, { passive: true });
 }
 
 if (typeof window !== 'undefined') {

@@ -16,6 +16,7 @@
 import io
 import json
 import os
+import re
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -663,6 +664,168 @@ P3_SKELS = [
              '拼法：立场承认两面 → 正负两版句池都能挑 → 收束给条件判断（代价有没有被同等对待）；不写「福祉还是负担」。'),
 ]
 
+# ══════════ 三·B、模板句「整句替换」（2026-11-21）══════════
+# 与押题页同一套交互：骨架句默认保留原句（好背、任何题都能套），悬停列出另一种写法；
+# 替换句必须能整句顶替——占位符一个不少、时态和句数不变。
+# 定位用英文前缀（`match`），由 inject_sent_swaps() 逐句匹配注入 skeletons[].sents_alt；
+# 前缀必须唯一命中，改句后匹配不到会直接报错，防止静默失效。
+TPL_SWAPS = [
+    # ── 第一段 · 静态图 ──
+    {'match': 'The {{chart}} chart above clearly illustrates how {{topic}} is distributed',
+     'tag': '第一段开篇', 'tips': '只交代「在比什么」，具体数字交给下一句',
+     'alts': [
+         {'en': 'The {{chart}} chart above offers a clear picture of how {{topic}} breaks down.',
+          'cn': '该 {{chart}} 图清晰呈现了 {{topic}} 的构成。'},
+         {'en': 'What the {{chart}} chart above shows is how {{topic}} is distributed.',
+          'cn': '上图所展示的，是 {{topic}} 的分布情况。'},
+     ]},
+    {'match': '{{item1}} takes the lead, accounting for {{percent1}}',
+     'tag': '第一段数据', 'tips': '四项排名一句说完，注意「分别」不能丢',
+     'alts': [
+         {'en': '{{item1}} ranks first at {{percent1}}, followed by {{item2}} and {{item3}} at {{percent2}} and {{percent3}}, while {{item4}} trails at {{percent4}}.',
+          'cn': '{{item1}} 以 {{percent1}} 位居首位，其后是分别占 {{percent2}} 和 {{percent3}} 的 {{item2}} 与 {{item3}}，而 {{item4}} 以 {{percent4}} 垫底。'},
+         {'en': 'At {{percent1}}, {{item1}} comes top, with {{item2}} and {{item3}} next at {{percent2}} and {{percent3}}; {{item4}} ranks last at {{percent4}}.',
+          'cn': '{{item1}} 以 {{percent1}} 居首，{{item2}} 和 {{item3}} 以 {{percent2}}、{{percent3}} 紧随其后；{{item4}} 以 {{percent4}} 排在最后。'},
+     ]},
+    # ── 第一段 · 趋势图 ──
+    {'match': 'The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}',
+     'tag': '第一段开篇', 'tips': '趋势题首句必须带时间区间',
+     'alts': [
+         {'en': 'The {{chart}} chart above traces the changes in {{topic}} from {{time1}} to {{time2}}.',
+          'cn': '该 {{chart}} 图追踪了 {{time1}} 至 {{time2}} 期间 {{topic}} 的变化。'},
+         {'en': 'What the {{chart}} chart above shows is how {{topic}} changed between {{time1}} and {{time2}}.',
+          'cn': '上图展示的是 {{time1}} 至 {{time2}} 之间 {{topic}} 的变化。'},
+     ]},
+    {'match': 'The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}}',
+     'tag': '第一段开篇', 'tips': '一升一降的题，首句就把「反差」点出来',
+     'alts': [
+         {'en': 'The {{chart}} chart above sets out the marked contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.',
+          'cn': '该 {{chart}} 图呈现了 {{time1}} 至 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的显著反差。'},
+         {'en': 'What stands out in the {{chart}} chart above is the wide gap in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.',
+          'cn': '上图最突出的是 {{time1}} 至 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的巨大差距。'},
+     ]},
+    # ── 第一段 · 双图 ──
+    {'match': 'The cartoon above depicts {{scene}}, while the chart below clearly illustrates how {{topic}} is distributed',
+     'tag': '双图开篇', 'tips': '漫画给场景、图表给占比，一句里两样都点到',
+     'alts': [
+         {'en': 'The cartoon above shows {{scene}}, and the chart below sets out how {{topic}} is distributed.',
+          'cn': '上图展示了 {{scene}}，下方的图表则呈现了 {{topic}} 的分布。'},
+         {'en': 'In the cartoon, {{scene}}, while the chart below breaks {{topic}} down.',
+          'cn': '漫画中 {{scene}}，下方图表则拆解了 {{topic}} 的构成。'},
+     ]},
+    {'match': 'The cartoon above depicts {{scene}}, while the chart below clearly illustrates the changes in {{topic}}',
+     'tag': '双图开篇', 'tips': '画面 + 走势，两个时间点别漏',
+     'alts': [
+         {'en': 'The cartoon above shows {{scene}}, and the chart below tracks the changes in {{topic}} from {{time1}} to {{time2}}.',
+          'cn': '上图展示了 {{scene}}，下方图表则追踪了 {{time1}} 至 {{time2}} 期间 {{topic}} 的变化。'},
+         {'en': 'In the cartoon, {{scene}}, while the chart below records how {{topic}} changed between {{time1}} and {{time2}}.',
+          'cn': '漫画中 {{scene}}，下方图表则记录了 {{time1}} 至 {{time2}} 之间 {{topic}} 的变化。'},
+     ]},
+    {'match': 'The two charts above clearly illustrate the changes in {{topic1}} and {{topic2}}',
+     'tag': '双图开篇', 'tips': '两张图两个主题，respectively 不能丢',
+     'alts': [
+         {'en': 'The two charts above track the changes in {{topic1}} and {{topic2}} respectively from {{time1}} to {{time2}}.',
+          'cn': '上述两张图分别追踪了 {{time1}} 至 {{time2}} 期间 {{topic1}} 与 {{topic2}} 的变化。'},
+         {'en': 'What the two charts above show is how {{topic1}} and {{topic2}} changed respectively from {{time1}} to {{time2}}.',
+          'cn': '两张图展示的是 {{time1}} 至 {{time2}} 期间 {{topic1}} 与 {{topic2}} 各自的变化。'},
+     ]},
+    # ── 第一段 · 走势描述 ──
+    {'match': 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}',
+     'tag': '走势描述', 'tips': '上升幅度用 sharply / surged 才够劲',
+     'alts': [
+         {'en': 'Over this period, {{item1}} climbed sharply from {{num1}} to {{num2}}.',
+          'cn': '同一时期，{{item1}} 从 {{num1}} 急剧攀升至 {{num2}}。'},
+         {'en': 'During this period, {{item1}} surged from {{num1}} to {{num2}}.',
+          'cn': '在此期间，{{item1}} 从 {{num1}} 猛增至 {{num2}}。'},
+     ]},
+    # ── 第三段 · 正面版 ──
+    {'match': 'On balance, the figures offer an encouraging and welcome picture of {{topic}}',
+     'tag': '第三段立场', 'tips': '正面题开场表态，后面必须接具体对策',
+     'alts': [
+         {'en': 'Taken as a whole, the figures present {{topic}} in a favourable light.',
+          'cn': '总体来看，这些数据把 {{topic}} 呈现为积极的一面。'},
+         {'en': 'Overall, what the figures reveal about {{topic}} is encouraging.',
+          'cn': '总体而言，这些数据在 {{topic}} 上揭示的情况令人鼓舞。'},
+     ]},
+    {'match': 'With such steps in place, the gains should last rather than fade',
+     'tag': '第三段收尾', 'tips': '收尾回扣已给的对策，不再凭空预测趋势',
+     'alts': [
+         {'en': 'If these measures are sustained, the gains are likely to hold rather than fade.',
+          'cn': '如果这些措施得以持续，成效有望保持而不至于消退。'},
+         {'en': 'Sustained effort of this kind would keep the gains from slipping away.',
+          'cn': '这样持续用力，成效才不会悄然流失。'},
+     ]},
+    # ── 第三段 · 负面版 ──
+    {'match': 'On balance, the figures reveal a real problem with {{topic}}',
+     'tag': '第三段立场', 'tips': '负面题开场表态，别写成「好坏参半」',
+     'alts': [
+         {'en': 'On balance, the figures expose a genuine weakness in {{topic}}.',
+          'cn': '总的来说，这些数据暴露出 {{topic}} 的真实短板。'},
+         {'en': 'Taken as a whole, the figures point to a problem in {{topic}} that cannot be ignored.',
+          'cn': '总体来看，这些数据指向 {{topic}} 中一个不容忽视的问题。'},
+     ]},
+    {'match': 'Such measures would address the problem at its source',
+     'tag': '第三段收尾', 'tips': '收尾回扣对策，说的是「能除根」而不是「会变好」',
+     'alts': [
+         {'en': 'Measures of this kind would tackle the problem where it begins.',
+          'cn': '这类措施会在问题产生的源头加以解决。'},
+         {'en': 'Acting on these fronts would remove the root cause rather than the symptom.',
+          'cn': '在这些方面着手，能除根而不只是治表。'},
+     ]},
+    # ── 第三段 · 双面版 ──
+    {'match': 'On balance, the figures reveal both gains and costs in {{topic}}',
+     'tag': '第三段立场', 'tips': '双面题开场：先承认两面并存，再给判断条件',
+     'alts': [
+         {'en': 'On balance, the figures show {{topic}} bringing benefits and burdens at the same time.',
+          'cn': '总的来说，这些数据表明 {{topic}} 同时带来收益与负担。'},
+         {'en': 'Taken together, the figures present a mixed picture of {{topic}}, with gains and costs side by side.',
+          'cn': '综合来看，这些数据呈现出 {{topic}} 的复杂面貌：收益与代价并存。'},
+     ]},
+    {'match': 'The real test is whether the costs are managed as seriously as the gains are pursued',
+     'tag': '第三段收尾', 'tips': '条件式收尾：代价有没有被同等对待',
+     'alts': [
+         {'en': 'What matters is whether the costs receive the same attention as the gains.',
+          'cn': '关键在于，代价是否得到与收益同等的重视。'},
+         {'en': 'The decisive question is whether the burden is handled with as much care as the benefit is chased.',
+          'cn': '决定性的问题在于，人们对待负担是否像追逐好处那样用心。'},
+     ]},
+]
+
+# 第二段引入句（framework 第一步，不属于 skeletons，单独注入）
+P2_OPEN_SWAP = {
+    'tag': '第二段引入', 'tips': '引入原因段，不承诺条数最安全',
+    'alts': [
+        {'en': 'Several factors account for this trend.', 'cn': '这一趋势由多种因素造成。'},
+        {'en': 'Behind this pattern lie several major reasons.', 'cn': '这一格局背后有几大原因。'},
+        {'en': 'This trend can be traced to more than one cause.', 'cn': '这一趋势可追溯到不止一个原因。'},
+    ],
+}
+
+
+def _split_en(t):
+    """与前端 wrSplitEn 同款切句：按 . ! ? 切，保留引号括号"""
+    return [x.strip() for x in re.findall(r'[^.!?]+[.!?]+["\')\]]*\s*|[^.!?]+$', t or '') if x.strip()]
+
+
+def inject_sent_swaps(skels):
+    """给骨架卡片逐句注入 sents_alt；句数与 struct 必须一致，否则报错（防止下标错位）"""
+    for v in skels:
+        sents = _split_en(v.get('en'))
+        if len(sents) != len(v.get('struct') or []):
+            raise SystemExit('骨架「%s」句数 %d 与 struct %d 不一致'
+                             % (v.get('label'), len(sents), len(v.get('struct') or [])))
+        rows = []
+        for i, s in enumerate(sents):
+            for sw in TPL_SWAPS:
+                if s.startswith(sw['match']):
+                    rows.append({'idx': i, 'tag': sw['tag'], 'tips': sw['tips'],
+                                 'alts': [dict(a) for a in sw['alts']]})
+                    break
+        if rows:
+            v['sents_alt'] = rows
+        else:
+            v.pop('sents_alt', None)
+
 
 def merge_p3_pool():
     """正 + 负 + EXTRA 去重成一份 26 条。
@@ -844,6 +1007,15 @@ def main():
         assert _sk['en'] == ' '.join(x['en'] for x in _src), '第 %d 套骨架 en 拼回不一致' % (_i + 1)
     assert _p3.get('render_in') is None and by_id['para3_negative'].get('render_in') == 'para3_positive'
 
+    # 骨架句「可整句替换」：逐句前缀匹配注入 sents_alt（2026-11-21）
+    for _sec in d['sections']:
+        if _sec.get('skeletons'):
+            inject_sent_swaps(_sec['skeletons'])
+    _fw = by_id['para2_why'].get('framework') or []
+    if _fw:
+        _fw[0]['swap'] = dict(P2_OPEN_SWAP)
+    _sw_n = sum(len(v.get('sents_alt') or []) for _s in d['sections'] for v in (_s.get('skeletons') or []))
+
     # 适配表 hint 里引用的「三套走势骨架」标签同步
     for r in d['chart_guide']['table']:
         r['hint'] = (r['hint']
@@ -858,6 +1030,7 @@ def main():
     w_dyn = [wc(x['en']) for x in DYN]
     core = w_static + max(w_dyn) + wc(PARA2_SKEL['en']) + sum(wc(x['en']) for x in P3_POS) + sum(wc(x['en']) for x in P3_NEG)
     print('骨架重置完成：%d 个段落' % len(d['sections']))
+    print('  可整句替换：%d 句骨架 + 1 句第二段引入' % _sw_n)
     print('  P1 静态 %d 词（2 句）｜ 动态 ①%d ②%d ③%d ④%d 词' % (w_static, w_dyn[0], w_dyn[1], w_dyn[2], w_dyn[3]))
     print('  P2 %d 词 + 机制句池 %d 条 ｜ P3 正 %d 词 / 负 %d 词 + 主体句池 %d+%d 条' % (
         wc(PARA2_SKEL['en']), len(MECH),

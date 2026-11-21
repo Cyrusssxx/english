@@ -312,10 +312,11 @@ function ytIsTplSent(text, no) {
     return YT_TPL_PATTERNS.some(re => re.test(String(text || '')));
 }
 
-/** 图例：只在含有骨架句的篇目显示 */
-function ytLegendHtml() {
+/** 图例：只在含有骨架句的篇目显示；有整句替换备选的再补一条 */
+function ytLegendHtml(hasSwap) {
     return `<div class="yt-legend">`
         + `<span class="yt-lg"><i class="yt-lg-skel">骨架</i>固定句式，原样背</span>`
+        + (hasSwap ? `<span class="yt-lg"><i class="yt-lg-swap">替换</i>悬停看整句换法</span>` : '')
         + `<span class="yt-lg"><i class="yt-lg-num">65%</i>数据</span>`
         + `<span class="yt-lg"><i class="yt-lg-kw">词组</i>可点查释义</span>`
         + `</div>`;
@@ -332,6 +333,7 @@ function ytWClose() {
 function ytWOpen(el) {
     const word = el.getAttribute('data-w') || '';
     const entry = (typeof dictLookup === 'function') ? dictLookup(word) : null;
+    if (typeof wrSwClose === 'function') wrSwClose();   // 点词时先收起整句替换气泡
     ytWClose();
     const pop = document.createElement('div');
     pop.className = 'word-pop kw-pop yt-wpop';
@@ -388,6 +390,7 @@ function ytEssayHtml(it) {
 
     const enParts = [], cnParts = [];
     let skelN = 0;   // 有骨架片段才显示图例
+    const hasSwap = blocks.some(b => (b.sents || []).some(s => s.swap && (s.swap.alts || []).length));
     blocks.forEach((b, bi) => {
         const ss = sentsOf(b);
         if (!ss) {
@@ -408,10 +411,14 @@ function ytEssayHtml(it) {
             // 模板功能句角标也做兄弟节点，文字不进 .yt-jsent 的 textContent（逐句拼回校验不吞字）。
             const tpl = ytIsTplSent(s.en, it.no)
                 ? `<span class="yt-tpl-tag" title="模板功能句：可整句背下来套用">模板</span>` : '';
+            // 整句可替换：默认仍显示原句，悬停/点击看「更贴这道题」的写法（气泡由 common.js 统一渲染）
+            const swapAttr = (s.swap && s.swap.alts && s.swap.alts.length)
+                ? ` class="yt-jsent yt-swap" data-swap="${ytEsc(JSON.stringify(s.swap))}"`
+                : ' class="yt-jsent"';
             // 「译」标记放在 .yt-jsent 之外做兄弟节点：句子 textContent 仍严格等于原文（校验不吞字），
             // 又能独立按 data-tr 触发该句译文；句子正文/单词都不响应翻译。
             return tpl
-                + `<span class="yt-jsent" data-i="${i}">${h}</span>`
+                + `<span${swapAttr} data-i="${i}">${h}</span>`
                 + `<button type="button" class="yt-sent-tr" data-tr="${i}" title="看本句中文">译</button>`
                 + `<span class="yt-jsent-cn" data-for="${i}" hidden>${ytMarkNums(ytEsc(s.cn || ''))}</span>`;
         }).join(' ');
@@ -419,7 +426,7 @@ function ytEssayHtml(it) {
         enParts.push(para(clsOf(b), inner));
         cnParts.push(para(clsOf(b), ytMarkNums(ytEsc(cnText))));
     });
-    return `<div class="yt-en">${skelN ? ytLegendHtml() : ''}${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
+    return `<div class="yt-en">${skelN ? ytLegendHtml(hasSwap) : ''}${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
 }
 
 /** 单句译块开合（同步 .yt-jsent.on 状态标记；按用户要求不渲染高亮/下划线）；cnBox 为 .yt-jsent-cn */
@@ -462,6 +469,7 @@ function ytToggleSentCn(btn) {
 function ytOpen(no, fromEl) {
     const idx = ytIndex(no);
     if (idx < 0) return;
+    if (typeof wrSwClose === 'function') wrSwClose();   // 换题先收起上一题的替换气泡
     YT_CUR = idx;
     const it = YT_FLAT[idx];
     const box = document.getElementById('ytModal');

@@ -9,6 +9,11 @@ function wrEsc(s) {
         .replace(/—/g, '<span class="em-dash">—</span>');
 }
 
+/** 属性值专用转义：只转 & < > "，不插 span（data-swap 里放 JSON 必须用这个） */
+function wrEscAttr(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
 /** 转义 + 占位符高亮（{{xxx}} → 蓝色可替换标记） */
 function wrHl(s) {
     if (!s) return '';
@@ -751,6 +756,7 @@ function wrRenderCards() {
         <h2 class="wr-h2" id="wrGroup${gi}">${wrEsc(gname)}</h2>
         ${groups[gname].map(wrSectionCard).join('')}`).join('');
     document.getElementById('wrContent').innerHTML = wrNumWrap(html);
+    if (typeof wrSwClose === 'function') wrSwClose();   // 重渲染后旧气泡会悬空
     for (const id of ('wrStructState wrStructNavState').split(' ')) {
         const st = document.getElementById(id);
         if (st) st.textContent = wrStructOn() ? '开' : '关';
@@ -788,12 +794,20 @@ function wrSentenceHtml(s, struct) {
     return wrAnnotate(s);
 }
 
-function wrTplBody(en, cn, struct) {
+function wrTplBody(en, cn, struct, sentsAlt) {
     const es = wrSplitEn(en);
     const cs = wrSplitCn(cn);
     const aligned = es.length > 0 && es.length === cs.length;
-    const enHtml = es.map((s, i) =>
-        `<div class="wr-line">${wrSentenceHtml(s, struct && struct[i])}</div>`).join('');
+    // 整句可替换：sents_alt = [{idx, tag, tips, alts}]，按句序号挂到对应行（气泡由 common.js 渲染）
+    const swMap = {};
+    (sentsAlt || []).forEach(x => { swMap[x.idx] = x; });
+    const enHtml = es.map((s, i) => {
+        const sw = swMap[i];
+        const attr = sw
+            ? ` class="wr-line wr-swap" data-swap="${wrEscAttr(JSON.stringify({ tag: sw.tag, tips: sw.tips, alts: sw.alts }))}"`
+            : ' class="wr-line"';
+        return `<div${attr}>${wrSentenceHtml(s, struct && struct[i])}</div>`;
+    }).join('');
     const cnHtml = aligned
         ? cs.map((s, i) => `<div class="wr-line-cn">${wrHl(s)}</div>`).join('')
         : `<div class="wr-line-cn">${wrHl(cn || '')}</div>`;
@@ -874,14 +888,16 @@ function wrSectionCard(sec) {
         : `⭐ 必背 ${wrWords(sec.en)} 词`;
     const fwHtml = sec.framework
         ? `<div class="wr-frame"><div class="wr-frame-title">🧩 第二段框架（${sec.framework.length} 步拼装 · 必背就这 ${sec.framework.length} 步）</div>${sec.framework.map((f, i) => `
-            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span class="wr-frame-en">${wrAnnotate(f.en)}</span>${f.trans ? `<span class="wr-frame-trans">${wrEsc(f.trans)}</span>` : ''}<span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>`
+            <div class="wr-frame-step"><span class="wr-frame-no">${i + 1}</span><span class="wr-frame-txt"><span${f.swap
+                ? ` class="wr-frame-en wr-swap" data-swap="${wrEscAttr(JSON.stringify(f.swap))}"`
+                : ' class="wr-frame-en"'}>${wrAnnotate(f.en)}</span>${f.trans ? `<span class="wr-frame-trans">${wrEsc(f.trans)}</span>` : ''}<span class="wr-frame-cn">${wrEsc(f.cn)}</span></span></div>`).join('')}</div>`
         : '';
     const tailRows = (sec.alts ? `<div class="wr-alts">✎ 同义升级：${wrAlts(sec.alts)}</div>` : '')
         + (sec.linkers ? `<div class="wr-alts">✎ 高级衔接词：${wrLinkers(sec.linkers)}</div>` : '')
         + (sec.demo ? `<div class="wr-demo"><b>例</b>${wrAnnotate(sec.demo)}</div>` : '');
     const tplBody = skels
         ? skels.map(v => {
-            const b2 = wrTplBody(v.en, v.cn, v.struct);
+            const b2 = wrTplBody(v.en, v.cn, v.struct, v.sents_alt);
             return `<div class="wr-skel">
                 <div class="wr-skel-head"><span class="wr-skel-label">${wrEsc(v.label)}</span>
                     <span class="wr-skel-years">适用 ${wrEsc(v.years)}</span>

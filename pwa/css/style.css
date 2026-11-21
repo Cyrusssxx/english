@@ -5899,3 +5899,35 @@ html.dark body.sw-drill-on .sw-drill-ph.on { color: #8fb4d8; background: rgba(12
     opacity: .82; white-space: nowrap;
 }
 html.dark .yt-tpl-tag { color: #c4b5fd; background: rgba(167, 139, 250, .16); border-color: rgba(167, 139, 250, .38); }
+
+/* ==================== 整句可替换（2026-11-21）：悬停看这句还能怎么写 ====================
+   押题范文句子（.yt-jsent.yt-swap）与模板骨架行（.wr-line.wr-swap）共用同一套气泡：
+   默认正文原句不动，鼠标停留 140ms 或点击才弹 .wr-upg-pop.wr-swap-pop（common.js 渲染）。
+   虚线下划线＝这句有备选写法；紫色与「模板」徽章同色系，区别于蓝色骨架 / 青色词组。 */
+.yt-swap, .wr-swap { cursor: help; }
+.yt-swap, .wr-line.wr-swap {
+    text-decoration: underline dotted rgba(124, 58, 237, .40);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    border-radius: 2px;
+    transition: background .15s ease, text-decoration-color .15s ease;
+}
+.yt-swap:hover, .yt-swap.active,
+.wr-line.wr-swap:hover, .wr-line.wr-swap.active {
+    text-decoration-color: #7c3aed;
+    background: rgba(124, 58, 237, .07);
+}
+html.dark .yt-swap, html.dark .wr-line.wr-swap { text-decoration-color: rgba(167, 139, 250, .42); }
+html.dark .yt-swap:hover, html.dark .yt-swap.active,
+html.dark .wr-line.wr-swap:hover, html.dark .wr-line.wr-swap.active {
+    text-decoration-color: #c4b5fd;
+    background: rgba(167, 139, 250, .13);
+}
+.yt-lg-swap { background: rgba(124, 58, 237, .10); border-bottom-color: rgba(124, 58, 237, .5); color: #6d28d9; }
+html.dark .yt-lg-swap { color: #c4b5fd; background: rgba(167, 139, 250, .18); }
+
+/* 整句较长：气泡加宽，「当前表达」允许折行 */
+.wr-swap-pop { width: 400px; }
+.wr-swap-pop .wup-orig { line-height: 1.55; }
+.wr-swap-pop .wup-en { font-size: .9rem; line-height: 1.5; }
+@media (max-width: 640px) { .wr-swap-pop { width: calc(100vw - 24px); } }
