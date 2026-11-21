@@ -4159,8 +4159,8 @@
     "template": "该思路适用于分析体现满意度差异的表格。____ were most likely to report satisfaction, with ____% of them indicating they were content. ____ were less willing to declare satisfaction, only ____% of whom said they were satisfied; instead, ____% of whom expressed dissatisfaction. ____ were surely unhappiest: none of them felt satisfied and the percentage of respondents reporting dissatisfaction was as high as ____%. There is a significant difference in ____ satisfaction by ____. The difference relates to ____.（分析差异原因）The consequent sense of 负面情绪名词 is strong enough to reduce them to deep dissatisfaction. In contrast, ____ and understandably will feel happier. As for ____, ____. Not surprisingly, they are the happiest. It is clear that ____. For lasting happiness with ____, ____ is necessary."
    },
    "apply": {
-    "apply_en": "The table above clearly illustrates how employee dissatisfaction is distributed. The figure varies sharply from group to group: it stands at 64% for the 41-to-50 age group, but falls to just 10% for the group over 50. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that longer working hours have made people value the little free time they have. Equally important, young people change jobs far more often than their parents did, so loyalty works differently. A further driver is that people now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures point to a problem worth taking seriously. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Individuals need to watch their own habits instead of assuming they are safe. Unless effective measures are taken, it may well get worse.",
-    "apply_cn": "该表格清晰地展示了员工的不满意比例的分布情况。组与组之间差别悬殊：41~50岁组高达64%，而50岁以上组只有10%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，工作时间变长，人们更看重仅有的空闲时间。同样重要的是，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。另一个推动因素是，如今，人们评判工作满意度的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这些数据指向一个不容忽视的问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。个人需要留意自己的习惯，而不是想当然认为没问题。若不采取有效措施，问题很可能进一步恶化。",
+    "apply_en": "The table above clearly illustrates how employee dissatisfaction is distributed. The figure varies sharply from group to group: it stands at 64% for the 41-to-50 age group, but falls to just 10% for the group over 50. The gap between the largest and the smallest is wide.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that longer working hours have made people value the little free time they have. Equally important, young people change jobs far more often than their parents did, so loyalty works differently. A further driver is that people now judge job satisfaction by what it does for them rather than by what others think.\n\nOn balance, the figures reveal a real problem with staff satisfaction. Employers should find out why experienced staff are the least satisfied, not just look at the overall figure. A company that ignores this gap will lose the very people it most depends on. Individuals need to watch their own habits instead of assuming they are safe. Such measures would address the problem at its source.",
+    "apply_cn": "该表格清晰地展示了员工的不满意比例的分布情况。组与组之间差别悬殊：41~50岁组高达64%，而50岁以上组只有10%。最大项与最小项之间差距很大。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，工作时间变长，人们更看重仅有的空闲时间。同样重要的是，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。另一个推动因素是，如今，人们评判工作满意度的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这些数据表明员工满意度确实存在问题。雇主应弄清为什么资深员工最不满意，而不是只看总体数字。忽视这一差距的公司，会失去它最依赖的那批人。个人需要留意自己的习惯，而不是想当然认为没问题。这类举措能从根源上解决问题。",
     "tips": [
      "表格、分布比高低（3 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：the 41-to-50 age group 占 64%；those aged 40 or younger 占 33.3%；the group over 50 占 10%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4267,8 +4267,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句3"
      },
      {
-      "en": "On balance, the figures point to a problem worth taking seriously.",
-      "cn": "总的来说，这些数据指向一个不容忽视的问题。",
+      "en": "On balance, the figures reveal a real problem with {{topic}}.",
+      "cn": "总的来说，这些数据表明 {{topic}} 确实存在问题。",
       "src": "第三段 · 负面版（立场 + 对策） · 模板第1句"
      },
      {
@@ -4287,8 +4287,8 @@
       "src": "第三段 · 负面版（立场 + 对策） · 功能句6"
      },
      {
-      "en": "Unless effective measures are taken, it may well get worse.",
-      "cn": "若不采取有效措施，问题很可能进一步恶化。",
+      "en": "Such measures would address the problem at its source.",
+      "cn": "这类举措能从根源上解决问题。",
       "src": "第三段 · 负面版（立场 + 对策） · 模板第2句"
      }
     ]

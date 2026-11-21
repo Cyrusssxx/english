@@ -4821,8 +4821,8 @@
     "template": "本模板适用于“双因素历时同向持续增长”的柱状图，主题多反映某市场/行业的积极发展态势。模板注释：该模板第一段①句概括图表的总体趋势，②③句列举具体/显著的数据。第二段①句承上启下引出原因分析，②③④句分别从宏观经济、政府政策、现实情形三方面阐述趋势背后的原因。第三段欲扬先抑，①句先承认当前的局限性，②句再积极预测未来的发展。I ① As is demonstrated in the bar chart, the market for ________ is generally entering a phase of dramatic/substantial/steady growth. ② Specifically, 类别1 surpassed/exceeded 最高值 in 年份, about 涨幅 more than ________ year(s) ago. ③ It is worth noting that a considerable rise in 类别2 occurred from 年份, and since then this emerging/burgeoning industry gained/gathered momentum. II ① Several factors have contributed to this sharp increase. ② For one thing, the rapid economic growth brings about higher disposable income, allowing people to ________. ③ For another, the government has released a series of preferential policies to promote ________, which will undoubtedly stimulate ________. ④ In addition, ________ has/have pushed some consumers to focus their attention on ________. III ① Admittedly, this business still has a long way to go, as ________ is/are yet to be improved/perfected. ② But its popularization will certainly be as irresistible as shown in the chart."
    },
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates the changes in express delivery volume from 2018 to 2020. During this period, the rural figure rose sharply from 12 billion pieces to 30 billion pieces. By contrast, the figure for the national total saw a modest increase, climbing from 51 billion pieces to 83 billion pieces over the same period. The gap between the two widened over the period.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that advances in technology have made online shopping part of daily life rather than a privilege. Equally important, online platforms and mobile payment have made online shopping quicker and easier to arrange. A further driver is that cities have absorbed millions of new residents, and demand for online shopping has grown with them.\n\nOn balance, this is a positive trend worth welcoming. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了2018年到2020年期间快递业务量的变化。在此期间，农村快递量从120亿件急剧增至300亿件。相比之下，全国总量仅略有增加，从510亿件攀升至830亿件。两者的差距在这一时期拉大了。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，科技的进步让网购从少数人的特权变成日常生活的一部分。同样重要的是，线上平台和移动支付使网购变得更快、更方便。另一个推动因素是，随着城市吸纳了大量新居民，网购的需求也随之增长。\n\n总的来说，这是一个值得欢迎的积极趋势。明确的规则和持续投入，比一次性活动更重要。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates the changes in express delivery volume from 2018 to 2020. During this period, the rural figure rose sharply from 12 billion pieces to 30 billion pieces. By contrast, the figure for the national total saw a modest increase, climbing from 51 billion pieces to 83 billion pieces over the same period. The gap between the two widened over the period.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that advances in technology have made online shopping part of daily life rather than a privilege. Equally important, online platforms and mobile payment have made online shopping quicker and easier to arrange. A further driver is that cities have absorbed millions of new residents, and demand for online shopping has grown with them.\n\nOn balance, the figures offer an encouraging and welcome picture of online shopping. Clear rules and steady funding matter more than one-off campaigns. With such steps in place, the gains should last rather than fade as attention shifts.",
+    "apply_cn": "该柱状图清晰地展示了2018年到2020年期间快递业务量的变化。在此期间，农村快递量从120亿件急剧增至300亿件。相比之下，全国总量仅略有增加，从510亿件攀升至830亿件。两者的差距在这一时期拉大了。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，科技的进步让网购从少数人的特权变成日常生活的一部分。同样重要的是，线上平台和移动支付使网购变得更快、更方便。另一个推动因素是，随着城市吸纳了大量新居民，网购的需求也随之增长。\n\n总的来说，这些数据展现出网购令人鼓舞、值得欢迎的一面。明确的规则和持续投入，比一次性活动更重要。有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
     "tips": [
      "柱状图、都升，幅度不同（2 个事物 / 动态）→ 用 **② 两条都在涨 骨架**（适用 2010 · 2017 · 2022）。",
      "数据要点：the rural figure 12 billion pieces → 30 billion pieces；the national total 51 billion pieces → 83 billion pieces。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4946,8 +4946,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句6"
      },
      {
-      "en": "On balance, this is a positive trend worth welcoming.",
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
+      "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+      "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
      },
      {
@@ -4956,8 +4956,8 @@
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8"
      },
      {
-      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+      "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
      }
     ]

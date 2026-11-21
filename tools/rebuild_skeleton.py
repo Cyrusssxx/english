@@ -379,65 +379,71 @@ MECH_GROUPS = [
 
 # ══════════ 三、第三段：立场句 + 主体句池 + 收束句 ══════════
 P3_POS = [
-    sent('On balance, this is a positive trend worth welcoming.',
-         '总的来说，这是一个值得欢迎的积极趋势。',
-         [[S('On balance', 'trans'), S(', this', 't'), S(' is', 'p'), S(' a positive trend worth welcoming', 'o'), S('.', '')]]),
-    sent('Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.',
-         '鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。',
-         [[S('Given the momentum behind it', 'trans'), S(', there', 't'), S(' is', 'p'), S(' every reason to believe that it will continue in the years ahead', 'o'), S('.', '')]]),
+    sent('On balance, the figures offer an encouraging and welcome picture of {{topic}}.',
+         '总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。',
+         [[S('On balance', 'trans'), S(', the figures', 't'), S(' offer', 'p'),
+           S(' an encouraging and welcome picture of {{topic}}', 'o'), S('.', '')]]),
+    sent('With such steps in place, the gains should last rather than fade as attention shifts.',
+         '有了这些举措，成效有望延续，而不至于随关注度转移而消退。',
+         [[S('With such steps in place', 'trans'), S(', the gains', 't'), S(' should last', 'p'),
+           S(' rather than fade as attention shifts', 'o'), S('.', '')]]),
 ]
 
 # 第三段拼装框架（与 P2 同款）：立场 → 主体/对策 → 收束（用户反馈「第三段怪怪的」= 缺拼装视图 + trend 重复）
 P3_FW_POS = [
-    {'en': 'On balance, this is a positive trend worth welcoming.', 'trans': '总的来说，这是一个值得欢迎的积极趋势。',
-     'cn': '立场句：先亮态度，正面题直接用。'},
-    {'en': 'To make the most of this trend, + 主体句 ①', 'trans': '要充分利用这一趋势，……',
+    {'en': 'On balance, the figures offer an encouraging and welcome picture of {{topic}}.',
+     'trans': '总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。',
+     'cn': '立场句：先亮态度，{{topic}} 按题目替换，别留 this / it 这种空指代；正面题直接用。'},
+    {'en': 'To make the most of these gains, + 主体句 ①', 'trans': '要延续这些成效，……',
      'cn': '主体句：谁来做——政府 / 学校 / 家庭 / 企业 / 媒体 / 个人，按题目挑 1~2 个；衔接词自带目的感，不用再写 Also。'},
-    {'en': 'Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.',
-     'trans': '鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。',
-     'cn': '收束句：展望收尾，主体句写几条都接得住。'},
+    {'en': 'With such steps in place, the gains should last rather than fade as attention shifts.',
+     'trans': '有了这些举措，成效有望延续，而不至于随关注度转移而消退。',
+     'cn': '收束句：承接上面已给的对策说「成效能否保持」，不再凭空预测趋势会继续。'},
 ]
 P3_FW_NEG = [
-    {'en': 'On balance, the figures point to a problem worth taking seriously.', 'trans': '总的来说，这些数据指向一个值得认真对待的问题。',
-     'cn': '立场句：负面题直接用。'},
-    {'en': 'To reverse this trend, + 对策句 ①', 'trans': '要想扭转这一趋势，……',
+    {'en': 'On balance, the figures reveal a real problem with {{topic}}.',
+     'trans': '总的来说，这些数据表明 {{topic}} 确实存在问题。',
+     'cn': '立场句：负面题直接用，{{topic}} 按题目替换。'},
+    {'en': 'To address this problem, + 对策句 ①', 'trans': '要解决这一问题，……',
      'cn': '对策句：谁来管——政府 / 学校 / 家庭 / 平台 / 个人，挑 1~2 个主体给对策。'},
-    {'en': 'Unless effective measures are taken, it may well get worse.',
-     'trans': '若不采取有效措施，问题很可能进一步恶化。',
-     'cn': '收束句：警示收尾，与立场句的「问题」呼应。'},
+    {'en': 'Such measures would address the problem at its source.',
+     'trans': '这类举措能从根源上解决问题。',
+     'cn': '收束句：回扣已给的对策。别再写「若不采取措施会恶化」——对策都给了，那样说自相矛盾。'},
 ]
-# 中性版拼装框架：不表态，把判断权交给「怎么管」
+# 中性版拼装框架：不表态，把结论落到「上面的举措怎么配合」
 P3_FW_MID = [
-    {'en': 'On balance, what the figures reveal is a pattern that deserves careful judgment rather than simple praise or blame.',
-     'trans': '总的来说，这些数据揭示的是一种格局，它值得审慎判断，而非简单的褒贬。',
-     'cn': '立场句：双面题 / 现状分布题用——既不吹好也不唱衰。'},
-    {'en': 'To make the most of this pattern, + 主体句 ①', 'trans': '要把握好这一格局，……',
-     'cn': '主体句：正负两版的句池都能挑，中性题优先挑「观念 / 政府 / 学校 / 个人」这类不带褒贬的。'},
-    {'en': 'Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.',
-     'trans': '它究竟成为福祉还是负担，取决于未来能否得到妥善管理。',
-     'cn': '收束句：把结论落到「管理」上，避开对趋势本身下判断。'},
+    {'en': 'On balance, the figures call for a measured view of {{topic}} rather than a quick verdict.',
+     'trans': '总的来说，这些数据要求我们审慎看待 {{topic}}，而不是急于下结论。',
+     'cn': '立场句：双面题 / 现状分布题用——{{topic}} 按题目替换，把「审慎」落到具体对象上，不空谈格局。'},
+    {'en': 'To weigh both sides, + 主体句 ①', 'trans': '要权衡两面，……',
+     'cn': '主体句：正负两版句池都能挑，中性题优先挑「观念 / 政府 / 学校 / 个人」这类不带褒贬的。'},
+    {'en': 'The result will depend on how well the steps above are combined.',
+     'trans': '结果如何，取决于上述举措能否配合到位。',
+     'cn': '收束句：把结论落到「上面这些举措怎么配合」，避开福祉 / 负担式的空判断。'},
 ]
 P3_NEG = [
-    sent('On balance, the figures point to a problem worth taking seriously.',
-         '总的来说，这些数据指向一个不容忽视的问题。',
-         [[S('On balance', 'trans'), S(', the figures', 't'), S(' point to', 'p'), S(' a problem worth taking seriously', 'o'), S('.', '')]]),
-    sent('Unless effective measures are taken, it may well get worse.',
-         '若不采取有效措施，问题很可能进一步恶化。',
-         [[S('Unless effective measures are taken', 'trans'), S(', it', 't'), S(' may well get worse', 'p'), S('.', '')]]),
+    sent('On balance, the figures reveal a real problem with {{topic}}.',
+         '总的来说，这些数据表明 {{topic}} 确实存在问题。',
+         [[S('On balance', 'trans'), S(', the figures', 't'), S(' reveal', 'p'),
+           S(' a real problem with {{topic}}', 'o'), S('.', '')]]),
+    sent('Such measures would address the problem at its source.',
+         '这类举措能从根源上解决问题。',
+         [[S('Such measures', 't'), S(' would address', 'p'),
+           S(' the problem at its source', 'o'), S('.', '')]]),
 ]
 
 # ── 第三档：中性版（2026-11-20 追加）──
 # 为什么需要：正面版说「值得欢迎」、负面版说「问题严重」，但双面题（老龄化=寿命延长+养老压力）
-# 和现状分布题（择业因素 / 线上线下占比）两边都不合。中性版不表态，只说「值得审慎判断」。
+# 和现状分布题（择业因素 / 线上线下占比）两边都不合。中性版不表态，把判断落到 {{topic}} 上。
 P3_MID = [
-    sent('On balance, what the figures reveal is a pattern that deserves careful judgment rather than simple praise or blame.',
-         '总的来说，这些数据揭示的是一种格局，它值得审慎判断，而非简单的褒贬。',
-         [[S('On balance', 'trans'), S(', what the figures reveal', 't'), S(' is', 'p'),
-           S(' a pattern that deserves careful judgment rather than simple praise or blame', 'o'), S('.', '')]]),
-    sent('Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.',
-         '它究竟成为福祉还是负担，取决于未来能否得到妥善管理。',
-         [[S('Whether it proves to be a blessing or a burden', 'o'), S(' depends on', 'p'),
-           S(' how well it is managed in the years ahead', 'o'), S('.', '')]]),
+    sent('On balance, the figures call for a measured view of {{topic}} rather than a quick verdict.',
+         '总的来说，这些数据要求我们审慎看待 {{topic}}，而不是急于下结论。',
+         [[S('On balance', 'trans'), S(', the figures', 't'), S(' call for', 'p'),
+           S(' a measured view of {{topic}}', 'o'), S(' rather than a quick verdict', 'o'), S('.', '')]]),
+    sent('The result will depend on how well the steps above are combined.',
+         '结果如何，取决于上述举措能否配合到位。',
+         [[S('The result', 't'), S(' will depend on', 'p'),
+           S(' how well the steps above are combined', 'o'), S('.', '')]]),
 ]
 
 # 高级衔接词（替代 First and foremost / Furthermore / To sum up 等烂大街写法；同篇不重样）
@@ -634,19 +640,21 @@ def _p3_card(label, years, sents, alts, demo):
 P3_SKELS = [
     _p3_card('① 正面版 · 趋势向好', '上升 / 普及类：2010 高数、2015 手机阅读、2017 博物馆、2023 老龄化',
              P3_POS,
-             {'will continue': 'is predicted to continue / is set to continue',
-              'Given the momentum behind it': 'Considering the forces driving it'},
-             '拼法：立场 → 从句池挑 1~2 句对策（政府 / 学校 / 家庭 / 企业 / 媒体 / 个人）→ 收束。'),
+             {'an encouraging and welcome picture': 'a favourable picture / a positive reading',
+              'should last': 'are likely to last / should endure',
+              'With such steps in place': 'If these measures are sustained'},
+             '拼法：立场（{{topic}} 按题目填）→ 从句池挑 1~2 句对策 → 收束回扣对策。'),
     _p3_card('② 负面版 · 问题要治', '负面类：2012 员工满意度，或数据里出现低值项 / 负增长',
              P3_NEG,
-             {'Unless effective measures are taken': 'If left unchecked / Without timely intervention',
-              'may well get worse': 'is unlikely to correct itself'},
-             '拼法：立场 → 挑 1~2 句对策（政府 / 学校 / 平台 / 个人）→ 警示收束。'),
+             {'a real problem': 'a genuine concern / a clear weakness',
+              'at its source': 'at the root / where it begins'},
+             '拼法：立场 → 挑 1~2 句对策 → 收束回扣对策；不再预测「会恶化」。'),
     _p3_card('③ 中性版 · 只描述不表态', '双面题 / 现状分布题：老龄化、择业因素、线上线下占比',
              P3_MID,
-             {'careful judgment': 'measured assessment / sober judgment',
-              'praise or blame': 'celebration or alarm'},
-             '拼法：立场 → 正负两版句池都能挑（中性题优先观念 / 政府 / 学校 / 个人）→ 落到「怎么管」。'),
+             {'a measured view': 'a balanced reading / a sober assessment',
+              'a quick verdict': 'a hasty judgment / an easy conclusion',
+              'the steps above are combined': 'these measures reinforce each other'},
+             '拼法：立场 → 正负两版句池都能挑 → 收束落到举措如何配合；不写「福祉还是负担」。'),
 ]
 
 
@@ -741,7 +749,9 @@ def main():
     s['title'] = '第三段 · 立场 + 对策（三套骨架选一）'
     s['subtitle'] = '正面 / 负面 / 中性三套骨架并列，下面一份句池三套通用'
     set_skeleton(s, P3_POS)
-    s['alts'] = {'will continue': 'is predicted to continue / is set to continue', 'Given the momentum behind it': 'Considering the forces driving it'}
+    s['alts'] = {'an encouraging and welcome picture': 'a favourable picture / a positive reading',
+                 'should last': 'are likely to last / should endure',
+                 'With such steps in place': 'If these measures are sustained'}
     s['linkers'] = P3_LINKERS
     s['framework'] = P3_FW_POS           # 保留给 apply 链路；页面用 skeletons 的 demo 讲拼法
     s['skeletons'] = P3_SKELS            # 三套骨架前移并列
@@ -749,13 +759,15 @@ def main():
     s['pool_groups'] = [{'name': n, 'desc': d} for n, d in P3_GROUPS]
     s['sentences'] = [_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3P_FIT.get(t, 0)}, e) for f, t, e, c in SUBJ_POS + P3_EXTRA]
     s['tips'] = ['三套骨架按题目极性选一套，不要混用：趋势向好选①，问题要治选②，说不清好坏（双面 / 现状分布）选③。',
-                 '骨架只给首尾两句，中间对策从句池挑 1~2 句，拼起来 55~70 词。',
-                 '同一条 tag 在正/负两版里是两种语气（如「个人」正面写「选适合自己的」、负面写「管好自己的习惯」），按骨架极性挑。']
+                 '骨架只给首尾两句，中间对策从句池挑 1~2 句，三套拼起来约 45~70 词。',
+                 '同一条 tag 在正/负两版里是两种语气（如「个人」正面写「选适合自己的」、负面写「管好自己的习惯」），按骨架极性挑。',
+                 '首尾句里的 {{topic}} 务必按题目替换；别留 this / it / a pattern 这类不指名对象的空话。']
     s = by_id['para3_negative']
     s['title'] = '第三段 · 负面版（立场 + 对策）'
     s['subtitle'] = '立场句 + 从主体句池挑 1~2 句 + 收束句'
     set_skeleton(s, P3_NEG)
-    s['alts'] = {'Unless effective measures are taken': 'If left unchecked / Without timely intervention', 'may well get worse': 'is unlikely to correct itself'}
+    s['alts'] = {'a real problem': 'a genuine concern / a clear weakness',
+                 'at its source': 'at the root / where it begins'}
     s['linkers'] = P3_LINKERS
     s['framework'] = P3_FW_NEG
     s['sentences'] = [_with_scope({'en': e, 'cn': c, 'freq': f, 'tag': t, 'fit': P3N_FIT.get(t, 0)}, e) for f, t, e, c in SUBJ_NEG + P3_EXTRA]
@@ -770,10 +782,11 @@ def main():
         'priority': False,
         'linkers': P3_LINKERS,
         'framework': P3_FW_MID,
-        'alts': {'careful judgment': 'measured assessment / sober judgment',
-                 'praise or blame': 'celebration or alarm'},
+        'alts': {'a measured view': 'a balanced reading / a sober assessment',
+                 'a quick verdict': 'a hasty judgment / an easy conclusion',
+                 'the steps above are combined': 'these measures reinforce each other'},
         'tips': ['什么时候用：图表既说不上好也说不上坏——老龄化（寿命延长 + 养老压力）、择业因素、线上/线下占比。',
-                 '正面版说「值得欢迎」、负面版说「问题严重」都不合适时，换这一版：只描述变化，把结论落到「怎么管」。',
+                 '正面版说「值得欢迎」、负面版说「问题严重」都不合适时，换这一版：只描述变化，把结论落到「上面的举措怎么配合」。',
                  '主体句直接从下面正负两版的并集里挑，语气中性的（观念 / 政府 / 学校 / 个人）优先。'],
     })
     set_skeleton(mid, P3_MID)

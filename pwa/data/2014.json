@@ -4594,8 +4594,8 @@
     "template": "当数量关系呈此消彼长趋势，且具有积极意义又隐藏着问题时，可以采用该思路。From 时间 to 时间, while moderate increase occurred in total ____, ____ experienced a dramatic shift. ____ increased considerably from 数据 to 数据; contrastingly ____ declined from 数据 to 数据. ____ largely because of the joint effects of ____（过渡，引出原因）.（具体分析原因1）Meanwhile,（具体分析原因2）. ____ is a sure indication of ____ achievement. However, we should not ignore the inability of ____ to ____ due to ____（具体阐释问题）. In this sense, we cannot be superficially satisfied with the optimistic figure, but should endeavor to ____."
    },
    "apply": {
-    "apply_en": "The bar chart above clearly illustrates the sharp contrast in the urban and rural population between the urban population and the rural population from 1990 to 2010. During this period, the urban population rose sharply from 300 million to 666 million. By contrast, the figure for the rural population saw a steady decline, falling from 834 million to 674 million.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that cities have absorbed millions of new residents, and demand for city living has grown with them. Equally important, as household incomes have grown, city living has moved from a luxury to an everyday necessity. A further driver is that people now judge city living by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该柱状图清晰地展示了1990年到2010年期间城乡人口在城镇人口与乡村人口之间的鲜明反差。在此期间，城镇人口从3亿急剧增至6.66亿。相比之下，乡村人口则稳步下降，从8.34亿降至6.74亿。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，随着城市吸纳了大量新居民，城市生活的需求也随之增长。同样重要的是，随着家庭收入提高，城市生活已从奢侈品变成日常必需。另一个推动因素是，如今，人们评判城市生活的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。政府可以为公共设施提供资金，使城市生活不再局限于那些有支付能力的人。明确的规则和持续投入，比一次性活动更重要。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The bar chart above clearly illustrates the sharp contrast in the urban and rural population between the urban population and the rural population from 1990 to 2010. During this period, the urban population rose sharply from 300 million to 666 million. By contrast, the figure for the rural population saw a steady decline, falling from 834 million to 674 million.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that cities have absorbed millions of new residents, and demand for city living has grown with them. Equally important, as household incomes have grown, city living has moved from a luxury to an everyday necessity. A further driver is that people now judge city living by what it does for them rather than by what others think.\n\nOn balance, the figures offer an encouraging and welcome picture of city living. Government can fund public facilities so that city living is not limited to those who can pay. Clear rules and steady funding matter more than one-off campaigns. With such steps in place, the gains should last rather than fade as attention shifts.",
+    "apply_cn": "该柱状图清晰地展示了1990年到2010年期间城乡人口在城镇人口与乡村人口之间的鲜明反差。在此期间，城镇人口从3亿急剧增至6.66亿。相比之下，乡村人口则稳步下降，从8.34亿降至6.74亿。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，随着城市吸纳了大量新居民，城市生活的需求也随之增长。同样重要的是，随着家庭收入提高，城市生活已从奢侈品变成日常必需。另一个推动因素是，如今，人们评判城市生活的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这些数据展现出城市生活令人鼓舞、值得欢迎的一面。政府可以为公共设施提供资金，使城市生活不再局限于那些有支付能力的人。明确的规则和持续投入，比一次性活动更重要。有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
     "tips": [
      "柱状图、一升一降（2 个事物 / 动态）→ 用 **③ 一升一降 骨架**（适用 2011 · 2014 · 2019）。",
      "数据要点：the urban population 300 million → 666 million；the rural population 834 million → 674 million。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4714,8 +4714,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句3"
      },
      {
-      "en": "On balance, this is a positive trend worth welcoming.",
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
+      "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+      "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
      },
      {
@@ -4729,8 +4729,8 @@
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8"
      },
      {
-      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+      "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
      }
     ]

@@ -4669,8 +4669,8 @@
     "template": "该思路适用于分析人们的开支情况，论述开支的意义以及过度开支的后果。The chart reflects ____ spending types and their respective proportions. ____ money is mainly used for ____ purposes（用同位语解释说明purposes）: ____. They account for ____% of total spending. Most spending is used to ____. This finding is not strange, since ____. ____ is beneficial and necessary for a person's fulfillment and investing on ____ is sweet and happy. However, we should not go to extremes. In China, there are many people ____. They use handsome money to blindly pursue ____. Such intention causes huge waste of money and imposes heavy economic burden on people involved. The ____ gotten by squandering money is transient and can only be a topic for gossip soon forgotten by others. Therefore, we should think rationally before opening our purses. We should remember it is ____ that is the main concern."
    },
    "apply": {
-    "apply_en": "The pie chart above clearly illustrates how Spring Festival spending is distributed. Gifts for family and friends take the lead, accounting for 40%, followed by dinners with relatives and transportation at 20% and 20% respectively, while other spending comes last at 20%. Taken together, the three largest items make up 80%.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that as household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. Equally important, online platforms and mobile payment have made New Year gifts quicker and easier to arrange. A further driver is that old traditions survive only when people find new ways to pass them on.\n\nOn balance, this is a positive trend worth welcoming. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，随着家庭收入提高，新年礼物已从奢侈品变成日常必需。同样重要的是，线上平台和移动支付使新年礼物变得更快、更方便。另一个推动因素是，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。\n\n总的来说，这是一个值得欢迎的积极趋势。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把节日花销当作日常生活的一部分。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The pie chart above clearly illustrates how Spring Festival spending is distributed. Gifts for family and friends take the lead, accounting for 40%, followed by dinners with relatives and transportation at 20% and 20% respectively, while other spending comes last at 20%. Taken together, the three largest items make up 80%.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that as household incomes have grown, New Year gifts have moved from a luxury to an everyday necessity. Equally important, online platforms and mobile payment have made New Year gifts quicker and easier to arrange. A further driver is that old traditions survive only when people find new ways to pass them on.\n\nOn balance, the figures offer an encouraging and welcome picture of festival spending. Individuals should choose what fits their own situation rather than follow the crowd. What matters most is whether families and schools treat festival spending as a normal part of life. With such steps in place, the gains should last rather than fade as attention shifts.",
+    "apply_cn": "该饼状图清晰地展示了春节假期花销的分布情况。给亲友买礼物遥遥领先，占40%；其后是与亲友聚餐和出行，分别占20%和20%；而其他花销位居最后，占20%。前三项加起来占80%。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，随着家庭收入提高，新年礼物已从奢侈品变成日常必需。同样重要的是，线上平台和移动支付使新年礼物变得更快、更方便。另一个推动因素是，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。\n\n总的来说，这些数据展现出节日花销令人鼓舞、值得欢迎的一面。个人应按自身情况选择，而不是随大流。最关键的是，家庭和学校能否把节日花销当作日常生活的一部分。有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
     "tips": [
      "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：gifts for family and friends 占 40%；dinners with relatives 占 20%；transportation 占 20%；other spending 占 20%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -4795,8 +4795,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句10"
      },
      {
-      "en": "On balance, this is a positive trend worth welcoming.",
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
+      "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+      "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
      },
      {
@@ -4810,8 +4810,8 @@
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1"
      },
      {
-      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+      "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
      }
     ]

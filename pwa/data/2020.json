@@ -4995,8 +4995,8 @@
     "template": "该模板适用于“多因素同时比较”的饼状图，涉及“某群体做某事的目的（以正面为主）”，用于反映某种积极趋势。模板注释：该模板第一段①句介绍调查主题，②至④句按照“占比降序”罗列数据。第二段①句点明图表反映的趋势并给出一大理由（与占比最大的因素关联），②句针对占比排在中上游的因素展开阐述，③句提及占比较少的因素。第三段积极评价这一趋势并简要说明理由。此外，该模板稍作调整还可适用于“列举做某事的原因”（如首段用why替换what for、on account of替换for the purpose of、because替换so that）或“反映负面现象的主题”（如末段用a shame that they替换a delight to see them、potential harm替换direct benefits、is detrimental to替换goes a long way to）。I ① The above chart provides answers as to what ________ for. ② Most striking of all, ________ % make this choice for the purpose of ________. ③ Another crucial factor is ________, according to ________ % of respondents. ④ There are also ________ % (and ________ % respectively) deciding to ________ so that they can ________ (or ________). II ① The survey indicates the trend of ________, which occurs as expected and will continue, considering that ________. ② It is noteworthy that some ________ have little intention of ________ but ________. ③ On top of that, ________ still matter(s) to a handful of them. III ① All in all, it is a delight to see them ________. ② Doing so not only results in direct benefits to themselves, but goes a long way to (doing) ________."
    },
    "apply": {
-    "apply_en": "The pie chart above clearly illustrates how the purposes of mobile reading are distributed. Reading for knowledge takes the lead, accounting for 59.5%, followed by killing time and obtaining information at 21.3% and 17.0% respectively, while other purposes come last at 2.2%. Taken together, the three largest items make up 97.8%.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that longer working hours have made people value the little free time they have. Equally important, people now judge mobile reading by what it does for them rather than by what others think.\n\nOn balance, this is a positive trend worth welcoming. Media should report on mobile reading honestly, without exaggerating its benefits or its risks. Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible. Small habits matter: a little mobile reading every day adds up over a year. Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "apply_cn": "该饼状图清晰地展示了手机阅读目的的分布情况。获取知识遥遥领先，占59.5%；其后是消磨时间和获取信息，分别占21.3%和17.0%；而其他目的位居最后，占2.2%。前三项加起来占97.8%。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，工作时间变长，人们更看重仅有的空闲时间。同样重要的是，如今，人们评判手机阅读的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这是一个值得欢迎的积极趋势。媒体应如实报道手机阅读，既不夸大好处，也不夸大风险。平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。小习惯很重要：每天一点手机阅读，日积月累一年下来就不一样。鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+    "apply_en": "The pie chart above clearly illustrates how the purposes of mobile reading are distributed. Reading for knowledge takes the lead, accounting for 59.5%, followed by killing time and obtaining information at 21.3% and 17.0% respectively, while other purposes come last at 2.2%. Taken together, the three largest items make up 97.8%.\n\nThis phenomenon can be attributed to a combination of factors. Primary among these is that longer working hours have made people value the little free time they have. Equally important, people now judge mobile reading by what it does for them rather than by what others think.\n\nOn balance, the figures offer an encouraging and welcome picture of mobile reading. Media should report on mobile reading honestly, without exaggerating its benefits or its risks. Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible. Small habits matter: a little mobile reading every day adds up over a year. With such steps in place, the gains should last rather than fade as attention shifts.",
+    "apply_cn": "该饼状图清晰地展示了手机阅读目的的分布情况。获取知识遥遥领先，占59.5%；其后是消磨时间和获取信息，分别占21.3%和17.0%；而其他目的位居最后，占2.2%。前三项加起来占97.8%。\n\n这一现象可归因于多种因素的综合作用。其中首要的一条是，工作时间变长，人们更看重仅有的空闲时间。同样重要的是，如今，人们评判手机阅读的标准是它能为自己带来什么，而非他人的看法。\n\n总的来说，这些数据展现出手机阅读令人鼓舞、值得欢迎的一面。媒体应如实报道手机阅读，既不夸大好处，也不夸大风险。平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。小习惯很重要：每天一点手机阅读，日积月累一年下来就不一样。有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
     "tips": [
      "饼图、占比分布（4 个事物 / 静态）→ 用**静态骨架**（各类别占比，没有时间变化）。",
      "数据要点：reading for knowledge 占 59.5%；killing time 占 21.3%；obtaining information 占 17.0%；other purposes 占 2.2%。只需要首末值 + 极值，不必逐年罗列；单位统一。",
@@ -5116,8 +5116,8 @@
       "src": "第二段 · 原因（机制句池） · 功能句3"
      },
      {
-      "en": "On balance, this is a positive trend worth welcoming.",
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。",
+      "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+      "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
      },
      {
@@ -5136,8 +5136,8 @@
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句11"
      },
      {
-      "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
+      "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
       "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
      }
     ]

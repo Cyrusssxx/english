@@ -1,6 +1,6 @@
 {
  "2010": {
-  "wc": 164,
+  "wc": 172,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
@@ -43,19 +43,19 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
     "cn": "明确的规则和持续投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -329,7 +329,7 @@
     ]
    },
    {
-    "wc": 65,
+    "wc": 72,
     "sents": [
      {
       "spans": [
@@ -358,7 +358,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -376,7 +376,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，随着家庭收入提高，"
+        "x": "其中首要的一条是，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -389,11 +389,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.78,
+      "cov": 0.64,
       "matched": 14,
-      "wc": 18,
+      "wc": 22,
       "keys": [],
-      "cn": "首先，随着家庭收入提高，手机已从奢侈品变成日常必需。"
+      "cn": "其中首要的一条是，随着家庭收入提高，手机已从奢侈品变成日常必需。"
      },
      {
       "spans": [
@@ -440,7 +440,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -458,7 +458,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -471,39 +471,49 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.75,
+      "cov": 0.65,
       "matched": 15,
-      "wc": 20,
+      "wc": 23,
       "keys": [],
-      "cn": "除此之外，如今，人们评判手机的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判手机的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
    {
-    "wc": 38,
+    "wc": 39,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "mobile phone use."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "手机"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.79,
+      "matched": 11,
+      "wc": 14,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出手机令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -518,7 +528,7 @@
         "x": "明确的规则和持续投入，比一次性活动更重要。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句8",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -532,31 +542,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2011": {
-  "wc": 167,
+  "wc": 175,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
@@ -594,24 +604,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句12"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
     "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句5"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
     "cn": "明确的规则和持续投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -914,7 +924,7 @@
     ]
    },
    {
-    "wc": 61,
+    "wc": 68,
     "sents": [
      {
       "spans": [
@@ -943,7 +953,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -961,7 +971,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，如今，人们评判"
+        "x": "其中首要的一条是，如今，人们评判"
        },
        {
         "t": "s",
@@ -974,11 +984,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.83,
+      "cov": 0.68,
       "matched": 15,
-      "wc": 18,
+      "wc": 22,
       "keys": [],
-      "cn": "首先，如今，人们评判汽车保有量的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "其中首要的一条是，如今，人们评判汽车保有量的标准是它能为自己带来什么，而非他人的看法。"
      },
      {
       "spans": [
@@ -1025,7 +1035,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -1035,46 +1045,56 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。"
+        "x": "另一个推动因素是，国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句12",
       "kind": "func",
-      "cov": 0.89,
+      "cov": 0.77,
       "matched": 17,
-      "wc": 19,
+      "wc": 22,
       "keys": [
        "Domestic producers have narrowed the quality gap, so buyers no longer pay a premium for foreign brands."
       ],
-      "cn": "除此之外，国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。"
+      "cn": "另一个推动因素是，国产品牌缩小了质量差距，消费者不再愿意为外国品牌支付溢价。"
      }
     ]
    },
    {
-    "wc": 55,
+    "wc": 56,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "domestic car brands."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "国产汽车品牌"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.79,
+      "matched": 11,
+      "wc": 14,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出国产汽车品牌令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -1105,7 +1125,7 @@
         "x": "更低价、更便捷，从而让更多人能够使用。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句5",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句5",
       "kind": "func",
       "cov": 0.76,
       "matched": 13,
@@ -1126,7 +1146,7 @@
         "x": "明确的规则和持续投入，比一次性活动更重要。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句8",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -1140,31 +1160,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2012": {
-  "wc": 171,
+  "wc": 177,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -1202,8 +1222,8 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, the figures point to a problem worth taking seriously.",
-    "cn": "总的来说，这些数据指向一个不容忽视的问题。",
+    "en": "On balance, the figures reveal a real problem with {{topic}}.",
+    "cn": "总的来说，这些数据表明 {{topic}} 确实存在问题。",
     "src": "第三段 · 负面版（立场 + 对策） · 模板第1句"
    },
    {
@@ -1222,8 +1242,8 @@
     "src": "第三段 · 负面版（立场 + 对策） · 功能句6"
    },
    {
-    "en": "Unless effective measures are taken, it may well get worse.",
-    "cn": "若不采取有效措施，问题很可能进一步恶化。",
+    "en": "Such measures would address the problem at its source.",
+    "cn": "这类举措能从根源上解决问题。",
     "src": "第三段 · 负面版（立场 + 对策） · 模板第2句"
    }
   ],
@@ -1437,7 +1457,7 @@
     ]
    },
    {
-    "wc": 60,
+    "wc": 67,
     "sents": [
      {
       "spans": [
@@ -1466,7 +1486,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -1476,18 +1496,18 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，工作时间变长，人们更看重仅有的空闲时间。"
+        "x": "其中首要的一条是，工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句8",
       "kind": "func",
-      "cov": 0.93,
+      "cov": 0.72,
       "matched": 13,
-      "wc": 14,
+      "wc": 18,
       "keys": [
        "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "首先，工作时间变长，人们更看重仅有的空闲时间。"
+      "cn": "其中首要的一条是，工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
@@ -1520,7 +1540,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -1538,7 +1558,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -1551,39 +1571,49 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.79,
+      "cov": 0.68,
       "matched": 15,
-      "wc": 19,
+      "wc": 22,
       "keys": [],
-      "cn": "除此之外，如今，人们评判工作满意度的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判工作满意度的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
    {
-    "wc": 67,
+    "wc": 66,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, the figures point to a problem worth taking seriously."
+        "x": "On balance, the figures reveal a real problem with "
+       },
+       {
+        "t": "o",
+        "x": "staff satisfaction."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这些数据指向一个不容忽视的问题。"
+        "x": "总的来说，这些数据表明"
+       },
+       {
+        "t": "s",
+        "x": "员工满意度"
+       },
+       {
+        "t": "t",
+        "x": "确实存在问题。"
        }
       ],
-      "src": "第三段 · 负面版（立场 + 对策） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · ② 负面版 · 问题要治 第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 11,
+      "cov": 0.82,
+      "matched": 9,
       "wc": 11,
-      "keys": [
-       "On balance, the figures point to a problem worth taking seriously."
-      ],
-      "cn": "总的来说，这些数据指向一个不容忽视的问题。"
+      "keys": [],
+      "cn": "总的来说，这些数据表明员工满意度确实存在问题。"
      },
      {
       "spans": [
@@ -1658,31 +1688,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Unless effective measures are taken, it may well get worse."
+        "x": "Such measures would address the problem at its source."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "若不采取有效措施，问题很可能进一步恶化。"
+        "x": "这类举措能从根源上解决问题。"
        }
       ],
-      "src": "第三段 · 负面版（立场 + 对策） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · ② 负面版 · 问题要治 第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 10,
-      "wc": 10,
+      "matched": 9,
+      "wc": 9,
       "keys": [
-       "Unless effective measures are taken, it may well get worse."
+       "Such measures would address the problem at its source."
       ],
-      "cn": "若不采取有效措施，问题很可能进一步恶化。"
+      "cn": "这类举措能从根源上解决问题。"
      }
     ]
    }
   ]
  },
  "2013": {
-  "wc": 171,
+  "wc": 178,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
@@ -1720,24 +1750,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句3"
    },
    {
     "en": "Families matter most: children copy what adults do far more than what they are told.",
     "cn": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句4"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句4"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -1972,7 +2002,7 @@
     ]
    },
    {
-    "wc": 57,
+    "wc": 64,
     "sents": [
      {
       "spans": [
@@ -2001,7 +2031,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -2019,7 +2049,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，学校现在将"
+        "x": "其中首要的一条是，学校现在将"
        },
        {
         "t": "s",
@@ -2032,11 +2062,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
-      "cov": 0.81,
+      "cov": 0.65,
       "matched": 13,
-      "wc": 16,
+      "wc": 20,
       "keys": [],
-      "cn": "首先，学校现在将兼职视为常规活动的一部分，而非可选的附加内容。"
+      "cn": "其中首要的一条是，学校现在将兼职视为常规活动的一部分，而非可选的附加内容。"
      },
      {
       "spans": [
@@ -2069,7 +2099,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -2087,7 +2117,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -2100,11 +2130,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.79,
+      "cov": 0.68,
       "matched": 15,
-      "wc": 19,
+      "wc": 22,
       "keys": [],
-      "cn": "除此之外，如今，人们评判兼职的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判兼职的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -2115,24 +2145,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "part-time work."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "兼职"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出兼职令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -2163,7 +2203,7 @@
         "x": "融入日常安排，而非当作额外的任务。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句3",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句3",
       "kind": "func",
       "cov": 0.87,
       "matched": 13,
@@ -2184,7 +2224,7 @@
         "x": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句4",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句4",
       "kind": "func",
       "cov": 1.0,
       "matched": 15,
@@ -2198,31 +2238,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2014": {
-  "wc": 173,
+  "wc": 180,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}.",
@@ -2260,24 +2300,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
     "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句2"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
     "cn": "明确的规则和持续投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -2548,7 +2588,7 @@
     ]
    },
    {
-    "wc": 64,
+    "wc": 71,
     "sents": [
      {
       "spans": [
@@ -2577,7 +2617,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -2595,7 +2635,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，随着城市吸纳了大量新居民，"
+        "x": "其中首要的一条是，随着城市吸纳了大量新居民，"
        },
        {
         "t": "s",
@@ -2608,11 +2648,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句6",
       "kind": "func",
-      "cov": 0.82,
+      "cov": 0.67,
       "matched": 14,
-      "wc": 17,
+      "wc": 21,
       "keys": [],
-      "cn": "首先，随着城市吸纳了大量新居民，城市生活的需求也随之增长。"
+      "cn": "其中首要的一条是，随着城市吸纳了大量新居民，城市生活的需求也随之增长。"
      },
      {
       "spans": [
@@ -2659,7 +2699,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -2677,7 +2717,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -2690,11 +2730,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.79,
+      "cov": 0.68,
       "matched": 15,
-      "wc": 19,
+      "wc": 22,
       "keys": [],
-      "cn": "除此之外，如今，人们评判城市生活的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判城市生活的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -2705,24 +2745,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "city living."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "城市生活"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出城市生活令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -2753,7 +2803,7 @@
         "x": "不再局限于那些有支付能力的人。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句2",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句2",
       "kind": "func",
       "cov": 0.88,
       "matched": 15,
@@ -2774,7 +2824,7 @@
         "x": "明确的规则和持续投入，比一次性活动更重要。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句8",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -2788,31 +2838,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2015": {
-  "wc": 164,
+  "wc": 171,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -2850,24 +2900,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句10"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
     "cn": "个人应按自身情况选择，而不是随大流。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句7"
    },
    {
     "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
     "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -3180,7 +3230,7 @@
     ]
    },
    {
-    "wc": 60,
+    "wc": 67,
     "sents": [
      {
       "spans": [
@@ -3209,7 +3259,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -3227,7 +3277,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，随着家庭收入提高，"
+        "x": "其中首要的一条是，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -3240,11 +3290,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.78,
+      "cov": 0.64,
       "matched": 14,
-      "wc": 18,
+      "wc": 22,
       "keys": [],
-      "cn": "首先，随着家庭收入提高，新年礼物已从奢侈品变成日常必需。"
+      "cn": "其中首要的一条是，随着家庭收入提高，新年礼物已从奢侈品变成日常必需。"
      },
      {
       "spans": [
@@ -3291,7 +3341,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -3301,18 +3351,18 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
+        "x": "另一个推动因素是，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句10",
       "kind": "func",
-      "cov": 0.87,
+      "cov": 0.72,
       "matched": 13,
-      "wc": 15,
+      "wc": 18,
       "keys": [
        "Old traditions survive only when people find new ways to pass them on."
       ],
-      "cn": "除此之外，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
+      "cn": "另一个推动因素是，只有当人们找到新的方式来传承旧传统时，它们才能得以延续。"
      }
     ]
    },
@@ -3323,24 +3373,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "festival spending."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "节日花销"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出节日花销令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -3355,7 +3415,7 @@
         "x": "个人应按自身情况选择，而不是随大流。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句7",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句7",
       "kind": "func",
       "cov": 1.0,
       "matched": 13,
@@ -3394,7 +3454,7 @@
         "x": "当作日常生活的一部分。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1",
       "kind": "func",
       "cov": 0.88,
       "matched": 15,
@@ -3406,31 +3466,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2016": {
-  "wc": 171,
+  "wc": 177,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -3468,29 +3528,29 @@
     "src": "第二段 · 原因（机制句池） · 功能句2"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句6"
    },
    {
     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
     "cn": "个人应按自身情况选择，而不是随大流。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句7"
    },
    {
     "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
     "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -3803,7 +3863,7 @@
     ]
    },
    {
-    "wc": 56,
+    "wc": 63,
     "sents": [
      {
       "spans": [
@@ -3832,7 +3892,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -3850,7 +3910,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，随着家庭收入提高，"
+        "x": "其中首要的一条是，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -3863,11 +3923,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.7,
       "matched": 14,
-      "wc": 16,
+      "wc": 20,
       "keys": [],
-      "cn": "首先，随着家庭收入提高，旅游已从奢侈品变成日常必需。"
+      "cn": "其中首要的一条是，随着家庭收入提高，旅游已从奢侈品变成日常必需。"
      },
      {
       "spans": [
@@ -3900,7 +3960,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -3918,7 +3978,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，线上平台和移动支付使"
+        "x": "另一个推动因素是，线上平台和移动支付使"
        },
        {
         "t": "s",
@@ -3931,39 +3991,49 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句2",
       "kind": "func",
-      "cov": 0.8,
+      "cov": 0.67,
       "matched": 12,
-      "wc": 15,
+      "wc": 18,
       "keys": [],
-      "cn": "除此之外，线上平台和移动支付使旅游变得更快、更方便。"
+      "cn": "另一个推动因素是，线上平台和移动支付使旅游变得更快、更方便。"
      }
     ]
    },
    {
-    "wc": 70,
+    "wc": 69,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "travelling."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "旅游"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.92,
+      "matched": 11,
+      "wc": 12,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出旅游令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -3994,7 +4064,7 @@
         "x": "，既不夸大好处，也不夸大风险。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句6",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句6",
       "kind": "func",
       "cov": 0.92,
       "matched": 12,
@@ -4015,7 +4085,7 @@
         "x": "个人应按自身情况选择，而不是随大流。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句7",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句7",
       "kind": "func",
       "cov": 1.0,
       "matched": 13,
@@ -4054,7 +4124,7 @@
         "x": "当作日常生活的一部分。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1",
       "kind": "func",
       "cov": 0.94,
       "matched": 15,
@@ -4066,31 +4136,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2017": {
-  "wc": 162,
+  "wc": 169,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
@@ -4128,24 +4198,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Government can fund public facilities so that {{topic}} is not limited to those who can pay.",
     "cn": "政府可以为公共设施提供资金，使 {{topic}} 不再局限于那些有支付能力的人。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句2"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句2"
    },
    {
     "en": "Documentaries and short videos can show how {{topic}} works in real life.",
     "cn": "纪录片和短视频可以展示 {{topic}} 在现实生活中的运作方式。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句10"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句10"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -4396,7 +4466,7 @@
     ]
    },
    {
-    "wc": 57,
+    "wc": 64,
     "sents": [
      {
       "spans": [
@@ -4425,7 +4495,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -4443,7 +4513,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，基础设施方面的公共支出使"
+        "x": "其中首要的一条是，基础设施方面的公共支出使"
        },
        {
         "t": "s",
@@ -4456,11 +4526,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句5",
       "kind": "func",
-      "cov": 0.77,
+      "cov": 0.59,
       "matched": 10,
-      "wc": 13,
+      "wc": 17,
       "keys": [],
-      "cn": "首先，基础设施方面的公共支出使参观博物馆更加普及。"
+      "cn": "其中首要的一条是，基础设施方面的公共支出使参观博物馆更加普及。"
      },
      {
       "spans": [
@@ -4493,7 +4563,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -4511,7 +4581,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -4524,11 +4594,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.79,
+      "cov": 0.68,
       "matched": 15,
-      "wc": 19,
+      "wc": 22,
       "keys": [],
-      "cn": "除此之外，如今，人们评判参观博物馆的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判参观博物馆的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -4539,24 +4609,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "museum visiting."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "参观博物馆"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出参观博物馆令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -4587,7 +4667,7 @@
         "x": "不再局限于那些有支付能力的人。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句2",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句2",
       "kind": "func",
       "cov": 0.88,
       "matched": 15,
@@ -4624,7 +4704,7 @@
         "x": "在现实生活中的运作方式。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句10",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句10",
       "kind": "func",
       "cov": 0.85,
       "matched": 11,
@@ -4636,31 +4716,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2018": {
-  "wc": 172,
+  "wc": 179,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -4698,24 +4778,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句2"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Companies can make {{topic}} cheaper and easier to use, so that it reaches more people.",
     "cn": "企业可以让 {{topic}} 更低价、更便捷，从而让更多人能够使用。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句5"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句5"
    },
    {
     "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
     "cn": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句9"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -5028,7 +5108,7 @@
     ]
    },
    {
-    "wc": 62,
+    "wc": 69,
     "sents": [
      {
       "spans": [
@@ -5057,7 +5137,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -5075,7 +5155,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，随着家庭收入提高，"
+        "x": "其中首要的一条是，随着家庭收入提高，"
        },
        {
         "t": "s",
@@ -5088,11 +5168,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句1",
       "kind": "func",
-      "cov": 0.82,
+      "cov": 0.67,
       "matched": 14,
-      "wc": 17,
+      "wc": 21,
       "keys": [],
-      "cn": "首先，随着家庭收入提高，外出就餐已从奢侈品变成日常必需。"
+      "cn": "其中首要的一条是，随着家庭收入提高，外出就餐已从奢侈品变成日常必需。"
      },
      {
       "spans": [
@@ -5139,7 +5219,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -5157,7 +5237,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，线上平台和移动支付使"
+        "x": "另一个推动因素是，线上平台和移动支付使"
        },
        {
         "t": "s",
@@ -5170,11 +5250,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句2",
       "kind": "func",
-      "cov": 0.75,
+      "cov": 0.63,
       "matched": 12,
-      "wc": 16,
+      "wc": 19,
       "keys": [],
-      "cn": "除此之外，线上平台和移动支付使外出就餐变得更快、更方便。"
+      "cn": "另一个推动因素是，线上平台和移动支付使外出就餐变得更快、更方便。"
      }
     ]
    },
@@ -5185,24 +5265,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "dining out."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "外出就餐"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出外出就餐令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -5233,7 +5323,7 @@
         "x": "更低价、更便捷，从而让更多人能够使用。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句5",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句5",
       "kind": "func",
       "cov": 0.88,
       "matched": 14,
@@ -5254,7 +5344,7 @@
         "x": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句9",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句9",
       "kind": "func",
       "cov": 1.0,
       "matched": 18,
@@ -5268,24 +5358,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
@@ -5320,9 +5410,9 @@
     "src": "第二段 · 原因（机制句池） · 功能句9"
    },
    {
-    "en": "People now judge {{topic}} by what it does for them rather than by what others think.",
-    "cn": "如今，人们评判 {{topic}} 的标准是它能为自己带来什么，而非他人的看法。",
-    "src": "第二段 · 原因（机制句池） · 功能句3"
+    "en": "Employers now look for experience as much as for grades.",
+    "cn": "如今用人单位既看重成绩，也看重经验。",
+    "src": "第二段 · 原因（机制句池） · 功能句14"
    },
    {
     "en": "Young people change jobs far more often than their parents did, so loyalty works differently.",
@@ -5330,24 +5420,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句13"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句3"
    },
    {
     "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
     "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -5671,7 +5761,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -5689,7 +5779,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，学校现在将"
+        "x": "其中首要的一条是，学校现在将"
        },
        {
         "t": "s",
@@ -5702,11 +5792,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
-      "cov": 0.81,
+      "cov": 0.65,
       "matched": 13,
-      "wc": 16,
+      "wc": 20,
       "keys": [],
-      "cn": "首先，学校现在将职业规划视为常规活动的一部分，而非可选的附加内容。"
+      "cn": "其中首要的一条是，学校现在将职业规划视为常规活动的一部分，而非可选的附加内容。"
      },
      {
       "spans": [
@@ -5716,44 +5806,30 @@
        },
        {
         "t": "t",
-        "x": "people now judge "
-       },
-       {
-        "t": "s",
-        "x": "career planning "
-       },
-       {
-        "t": "t",
-        "x": "by what it does for them rather than by what others think."
+        "x": "employers now look for experience as much as for grades."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "同样重要的是，如今，人们评判"
-       },
-       {
-        "t": "s",
-        "x": "职业规划"
-       },
-       {
-        "t": "t",
-        "x": "的标准是它能为自己带来什么，而非他人的看法。"
+        "x": "同样重要的是，如今用人单位既看重成绩，也看重经验。"
        }
       ],
-      "src": "第二段 · 原因（机制句池） · 功能句3",
+      "src": "第二段 · 原因（机制句池） · 功能句14",
       "kind": "func",
-      "cov": 0.79,
-      "matched": 15,
-      "wc": 19,
-      "keys": [],
-      "cn": "同样重要的是，如今，人们评判职业规划的标准是它能为自己带来什么，而非他人的看法。"
+      "cov": 0.83,
+      "matched": 10,
+      "wc": 12,
+      "keys": [
+       "Employers now look for experience as much as for grades."
+      ],
+      "cn": "同样重要的是，如今用人单位既看重成绩，也看重经验。"
      },
      {
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -5763,18 +5839,18 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
+        "x": "另一个推动因素是，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句13",
       "kind": "func",
-      "cov": 0.88,
+      "cov": 0.75,
       "matched": 15,
-      "wc": 17,
+      "wc": 20,
       "keys": [
        "Young people change jobs far more often than their parents did, so loyalty works differently."
       ],
-      "cn": "除此之外，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
+      "cn": "另一个推动因素是，如今的年轻人比父辈换工作频繁得多，「忠诚」的意义也随之改变。"
      }
     ]
    },
@@ -5785,24 +5861,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "career planning."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "职业规划"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出职业规划令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -5833,7 +5919,7 @@
         "x": "融入日常安排，而非当作额外的任务。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句3",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句3",
       "kind": "func",
       "cov": 0.87,
       "matched": 13,
@@ -5870,7 +5956,7 @@
         "x": "当作日常生活的一部分。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1",
       "kind": "func",
       "cov": 0.88,
       "matched": 15,
@@ -5882,31 +5968,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2020": {
-  "wc": 179,
+  "wc": 167,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -5929,11 +6015,6 @@
     "src": "第二段 · 原因（机制句池） · 模板第1句"
    },
    {
-    "en": "Online platforms and mobile payment have made {{topic}} quicker and easier to arrange.",
-    "cn": "线上平台和移动支付使 {{topic}} 变得更快、更方便。",
-    "src": "第二段 · 原因（机制句池） · 功能句2"
-   },
-   {
     "en": "Longer working hours have made people value the little free time they have.",
     "cn": "工作时间变长，人们更看重仅有的空闲时间。",
     "src": "第二段 · 原因（机制句池） · 功能句8"
@@ -5944,29 +6025,29 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句6"
    },
    {
     "en": "Platforms should design simple, honest services instead of ones that hold users’ attention for as long as possible.",
     "cn": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句9"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句9"
    },
    {
     "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
     "cn": "小习惯很重要：每天一点 {{topic}}，日积月累一年下来就不一样。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句11"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -6279,7 +6360,7 @@
     ]
    },
    {
-    "wc": 59,
+    "wc": 47,
     "sents": [
      {
       "spans": [
@@ -6308,48 +6389,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
-       },
-       {
-        "t": "t",
-        "x": "online platforms and mobile payment have made "
-       },
-       {
-        "t": "s",
-        "x": "mobile reading "
-       },
-       {
-        "t": "t",
-        "x": "quicker and easier to arrange."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "首先，线上平台和移动支付使"
-       },
-       {
-        "t": "s",
-        "x": "手机阅读"
-       },
-       {
-        "t": "t",
-        "x": "变得更快、更方便。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句2",
-      "kind": "func",
-      "cov": 0.8,
-      "matched": 12,
-      "wc": 15,
-      "keys": [],
-      "cn": "首先，线上平台和移动支付使手机阅读变得更快、更方便。"
-     },
-     {
-      "spans": [
-       {
-        "t": "o",
-        "x": "Equally important, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -6359,24 +6399,24 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "同样重要的是，工作时间变长，人们更看重仅有的空闲时间。"
+        "x": "其中首要的一条是，工作时间变长，人们更看重仅有的空闲时间。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句8",
       "kind": "func",
-      "cov": 0.87,
+      "cov": 0.72,
       "matched": 13,
-      "wc": 15,
+      "wc": 18,
       "keys": [
        "Longer working hours have made people value the little free time they have."
       ],
-      "cn": "同样重要的是，工作时间变长，人们更看重仅有的空闲时间。"
+      "cn": "其中首要的一条是，工作时间变长，人们更看重仅有的空闲时间。"
      },
      {
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "Equally important, "
        },
        {
         "t": "t",
@@ -6394,7 +6434,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "同样重要的是，如今，人们评判"
        },
        {
         "t": "s",
@@ -6411,7 +6451,7 @@
       "matched": 15,
       "wc": 19,
       "keys": [],
-      "cn": "除此之外，如今，人们评判手机阅读的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "同样重要的是，如今，人们评判手机阅读的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -6422,24 +6462,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "mobile reading."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "手机阅读"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出手机阅读令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -6470,7 +6520,7 @@
         "x": "，既不夸大好处，也不夸大风险。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句6",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句6",
       "kind": "func",
       "cov": 0.86,
       "matched": 12,
@@ -6491,7 +6541,7 @@
         "x": "平台应设计简单、真诚的服务，而非想方设法让用户长时间停留。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句9",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句9",
       "kind": "func",
       "cov": 1.0,
       "matched": 18,
@@ -6530,7 +6580,7 @@
         "x": "，日积月累一年下来就不一样。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句11",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句11",
       "kind": "func",
       "cov": 0.86,
       "matched": 12,
@@ -6542,31 +6592,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2021": {
-  "wc": 160,
+  "wc": 166,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -6604,24 +6654,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
     "cn": "个人应按自身情况选择，而不是随大流。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句7"
    },
    {
     "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
     "cn": "小习惯很重要：每天一点 {{topic}}，日积月累一年下来就不一样。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句11"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -6918,7 +6968,7 @@
     ]
    },
    {
-    "wc": 55,
+    "wc": 62,
     "sents": [
      {
       "spans": [
@@ -6947,7 +6997,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -6965,7 +7015,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，长期久坐使"
+        "x": "其中首要的一条是，长期久坐使"
        },
        {
         "t": "s",
@@ -6978,11 +7028,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句7",
       "kind": "func",
-      "cov": 0.86,
+      "cov": 0.67,
       "matched": 12,
-      "wc": 14,
+      "wc": 18,
       "keys": [],
-      "cn": "首先，长期久坐使锻炼从爱好变成了切实的需求。"
+      "cn": "其中首要的一条是，长期久坐使锻炼从爱好变成了切实的需求。"
      },
      {
       "spans": [
@@ -7029,7 +7079,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -7047,7 +7097,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -7060,39 +7110,49 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.83,
+      "cov": 0.71,
       "matched": 15,
-      "wc": 18,
+      "wc": 21,
       "keys": [],
-      "cn": "除此之外，如今，人们评判锻炼的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判锻炼的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
    {
-    "wc": 54,
+    "wc": 53,
     "sents": [
      {
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "exercise."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "运动"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.92,
+      "matched": 11,
+      "wc": 12,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出运动令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -7107,7 +7167,7 @@
         "x": "个人应按自身情况选择，而不是随大流。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句7",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句7",
       "kind": "func",
       "cov": 1.0,
       "matched": 13,
@@ -7146,7 +7206,7 @@
         "x": "，日积月累一年下来就不一样。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句11",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句11",
       "kind": "func",
       "cov": 0.92,
       "matched": 12,
@@ -7158,31 +7218,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2022": {
-  "wc": 158,
+  "wc": 165,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
@@ -7225,19 +7285,19 @@
     "src": "第二段 · 原因（机制句池） · 功能句6"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
     "cn": "明确的规则和持续投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -7511,7 +7571,7 @@
     ]
    },
    {
-    "wc": 60,
+    "wc": 67,
     "sents": [
      {
       "spans": [
@@ -7540,7 +7600,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -7558,7 +7618,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，科技的进步让"
+        "x": "其中首要的一条是，科技的进步让"
        },
        {
         "t": "s",
@@ -7571,11 +7631,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句16",
       "kind": "func",
-      "cov": 0.81,
+      "cov": 0.65,
       "matched": 13,
-      "wc": 16,
+      "wc": 20,
       "keys": [],
-      "cn": "首先，科技的进步让网购从少数人的特权变成日常生活的一部分。"
+      "cn": "其中首要的一条是，科技的进步让网购从少数人的特权变成日常生活的一部分。"
      },
      {
       "spans": [
@@ -7622,7 +7682,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -7640,7 +7700,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，随着城市吸纳了大量新居民，"
+        "x": "另一个推动因素是，随着城市吸纳了大量新居民，"
        },
        {
         "t": "s",
@@ -7653,11 +7713,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句6",
       "kind": "func",
-      "cov": 0.78,
+      "cov": 0.67,
       "matched": 14,
-      "wc": 18,
+      "wc": 21,
       "keys": [],
-      "cn": "除此之外，随着城市吸纳了大量新居民，网购的需求也随之增长。"
+      "cn": "另一个推动因素是，随着城市吸纳了大量新居民，网购的需求也随之增长。"
      }
     ]
    },
@@ -7668,24 +7728,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "online shopping."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "网购"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出网购令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -7700,7 +7770,7 @@
         "x": "明确的规则和持续投入，比一次性活动更重要。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句8",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -7714,31 +7784,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2023": {
-  "wc": 180,
+  "wc": 168,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}.",
@@ -7776,34 +7846,29 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "Sitting all day has turned {{topic}} from a hobby into a practical need.",
-    "cn": "长期久坐使 {{topic}} 从爱好变成了切实的需求。",
-    "src": "第二段 · 原因（机制句池） · 功能句7"
-   },
-   {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Media should report on {{topic}} honestly, without exaggerating its benefits or its risks.",
     "cn": "媒体应如实报道 {{topic}}，既不夸大好处，也不夸大风险。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句6"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句6"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
     "cn": "明确的规则和持续投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8"
    },
    {
     "en": "Individuals should choose what fits their own situation rather than follow the crowd.",
     "cn": "个人应按自身情况选择，而不是随大流。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句7"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句7"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -8045,7 +8110,7 @@
     ]
    },
    {
-    "wc": 58,
+    "wc": 46,
     "sents": [
      {
       "spans": [
@@ -8074,7 +8139,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -8092,7 +8157,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，基础设施方面的公共支出使"
+        "x": "其中首要的一条是，基础设施方面的公共支出使"
        },
        {
         "t": "s",
@@ -8105,11 +8170,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句5",
       "kind": "func",
-      "cov": 0.77,
+      "cov": 0.59,
       "matched": 10,
-      "wc": 13,
+      "wc": 17,
       "keys": [],
-      "cn": "首先，基础设施方面的公共支出使健康素养更加普及。"
+      "cn": "其中首要的一条是，基础设施方面的公共支出使健康素养更加普及。"
      },
      {
       "spans": [
@@ -8151,47 +8216,6 @@
       "wc": 19,
       "keys": [],
       "cn": "同样重要的是，如今，人们评判健康素养的标准是它能为自己带来什么，而非他人的看法。"
-     },
-     {
-      "spans": [
-       {
-        "t": "o",
-        "x": "Beyond that, "
-       },
-       {
-        "t": "t",
-        "x": "sitting all day has turned "
-       },
-       {
-        "t": "s",
-        "x": "health literacy "
-       },
-       {
-        "t": "t",
-        "x": "from a hobby into a practical need."
-       }
-      ],
-      "spans_cn": [
-       {
-        "t": "t",
-        "x": "除此之外，长期久坐使"
-       },
-       {
-        "t": "s",
-        "x": "健康素养"
-       },
-       {
-        "t": "t",
-        "x": "从爱好变成了切实的需求。"
-       }
-      ],
-      "src": "第二段 · 原因（机制句池） · 功能句7",
-      "kind": "func",
-      "cov": 0.75,
-      "matched": 12,
-      "wc": 16,
-      "keys": [],
-      "cn": "除此之外，长期久坐使健康素养从爱好变成了切实的需求。"
      }
     ]
    },
@@ -8202,24 +8226,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "health literacy."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "健康素养"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出健康素养令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -8250,7 +8284,7 @@
         "x": "，既不夸大好处，也不夸大风险。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句6",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句6",
       "kind": "func",
       "cov": 0.86,
       "matched": 12,
@@ -8271,7 +8305,7 @@
         "x": "明确的规则和持续投入，比一次性活动更重要。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句8",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -8294,7 +8328,7 @@
         "x": "个人应按自身情况选择，而不是随大流。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句7",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句7",
       "kind": "func",
       "cov": 1.0,
       "matched": 13,
@@ -8308,31 +8342,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2024": {
-  "wc": 169,
+  "wc": 176,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -8370,24 +8404,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句3"
    },
    {
     "en": "What matters most is whether families and schools treat {{topic}} as a normal part of life.",
     "cn": "最关键的是，家庭和学校能否把 {{topic}} 当作日常生活的一部分。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句1"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -8684,7 +8718,7 @@
     ]
    },
    {
-    "wc": 59,
+    "wc": 66,
     "sents": [
      {
       "spans": [
@@ -8713,7 +8747,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -8731,7 +8765,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，学校现在将"
+        "x": "其中首要的一条是，学校现在将"
        },
        {
         "t": "s",
@@ -8744,11 +8778,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句9",
       "kind": "func",
-      "cov": 0.76,
+      "cov": 0.62,
       "matched": 13,
-      "wc": 17,
+      "wc": 21,
       "keys": [],
-      "cn": "首先，学校现在将劳动实践课视为常规活动的一部分，而非可选的附加内容。"
+      "cn": "其中首要的一条是，学校现在将劳动实践课视为常规活动的一部分，而非可选的附加内容。"
      },
      {
       "spans": [
@@ -8781,7 +8815,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -8799,7 +8833,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -8812,11 +8846,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.75,
+      "cov": 0.65,
       "matched": 15,
-      "wc": 20,
+      "wc": 23,
       "keys": [],
-      "cn": "除此之外，如今，人们评判劳动实践课的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判劳动实践课的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -8827,24 +8861,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "practical training."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "实践训练"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出实践训练令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -8875,7 +8919,7 @@
         "x": "融入日常安排，而非当作额外的任务。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句3",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句3",
       "kind": "func",
       "cov": 0.87,
       "matched": 13,
@@ -8912,7 +8956,7 @@
         "x": "当作日常生活的一部分。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句1",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句1",
       "kind": "func",
       "cov": 0.88,
       "matched": 15,
@@ -8924,31 +8968,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2025": {
-  "wc": 160,
+  "wc": 167,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -8986,24 +9030,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Clear rules and steady funding matter more than one-off campaigns.",
     "cn": "明确的规则和持续投入，比一次性活动更重要。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句8"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8"
    },
    {
     "en": "Small habits matter: a little {{topic}} every day adds up over a year.",
     "cn": "小习惯很重要：每天一点 {{topic}}，日积月累一年下来就不一样。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句11"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句11"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -9300,7 +9344,7 @@
     ]
    },
    {
-    "wc": 60,
+    "wc": 67,
     "sents": [
      {
       "spans": [
@@ -9329,7 +9373,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -9339,18 +9383,18 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，寿命的延长改变了家庭对晚年的规划。"
+        "x": "其中首要的一条是，寿命的延长改变了家庭对晚年的规划。"
        }
       ],
       "src": "第二段 · 原因（机制句池） · 功能句11",
       "kind": "func",
-      "cov": 0.92,
+      "cov": 0.71,
       "matched": 12,
-      "wc": 13,
+      "wc": 17,
       "keys": [
        "Longer life expectancy has changed how families plan for their later years."
       ],
-      "cn": "首先，寿命的延长改变了家庭对晚年的规划。"
+      "cn": "其中首要的一条是，寿命的延长改变了家庭对晚年的规划。"
      },
      {
       "spans": [
@@ -9397,7 +9441,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -9415,7 +9459,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -9428,11 +9472,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.79,
+      "cov": 0.68,
       "matched": 15,
-      "wc": 19,
+      "wc": 22,
       "keys": [],
-      "cn": "除此之外，如今，人们评判退休生活的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判退休生活的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -9443,24 +9487,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "leisure activity."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "休闲活动"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出休闲活动令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -9475,7 +9529,7 @@
         "x": "明确的规则和持续投入，比一次性活动更重要。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句8",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句8",
       "kind": "func",
       "cov": 1.0,
       "matched": 10,
@@ -9514,7 +9568,7 @@
         "x": "，日积月累一年下来就不一样。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句11",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句11",
       "kind": "func",
       "cov": 0.86,
       "matched": 12,
@@ -9526,31 +9580,31 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
   ]
  },
  "2026": {
-  "wc": 169,
+  "wc": 176,
   "key_phrases": [
    {
     "en": "The {{chart}} chart above clearly illustrates how {{topic}} is distributed.",
@@ -9588,24 +9642,24 @@
     "src": "第二段 · 原因（机制句池） · 功能句3"
    },
    {
-    "en": "On balance, this is a positive trend worth welcoming.",
-    "cn": "总的来说，这是一个值得欢迎的积极趋势。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第1句"
+    "en": "On balance, the figures offer an encouraging and welcome picture of {{topic}}.",
+    "cn": "总的来说，这些数据展现出 {{topic}} 令人鼓舞、值得欢迎的一面。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句"
    },
    {
     "en": "Families matter most: children copy what adults do far more than what they are told.",
     "cn": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句4"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句4"
    },
    {
     "en": "Schools can build {{topic}} into daily routines instead of treating it as an extra.",
     "cn": "学校可以把 {{topic}} 融入日常安排，而非当作额外的任务。",
-    "src": "第三段 · 正面版（立场 + 建议） · 功能句3"
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句3"
    },
    {
-    "en": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead.",
-    "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。",
-    "src": "第三段 · 正面版（立场 + 建议） · 模板第2句"
+    "en": "With such steps in place, the gains should last rather than fade as attention shifts.",
+    "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。",
+    "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句"
    }
   ],
   "slot_phrases": [
@@ -9902,7 +9956,7 @@
     ]
    },
    {
-    "wc": 58,
+    "wc": 65,
     "sents": [
      {
       "spans": [
@@ -9931,7 +9985,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "First, "
+        "x": "Primary among these is that "
        },
        {
         "t": "t",
@@ -9949,7 +10003,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "首先，长期久坐使"
+        "x": "其中首要的一条是，长期久坐使"
        },
        {
         "t": "s",
@@ -9962,11 +10016,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句7",
       "kind": "func",
-      "cov": 0.8,
+      "cov": 0.63,
       "matched": 12,
-      "wc": 15,
+      "wc": 19,
       "keys": [],
-      "cn": "首先，长期久坐使户外活动从爱好变成了切实的需求。"
+      "cn": "其中首要的一条是，长期久坐使户外活动从爱好变成了切实的需求。"
      },
      {
       "spans": [
@@ -10013,7 +10067,7 @@
       "spans": [
        {
         "t": "o",
-        "x": "Beyond that, "
+        "x": "A further driver is that "
        },
        {
         "t": "t",
@@ -10031,7 +10085,7 @@
       "spans_cn": [
        {
         "t": "t",
-        "x": "除此之外，如今，人们评判"
+        "x": "另一个推动因素是，如今，人们评判"
        },
        {
         "t": "s",
@@ -10044,11 +10098,11 @@
       ],
       "src": "第二段 · 原因（机制句池） · 功能句3",
       "kind": "func",
-      "cov": 0.79,
+      "cov": 0.68,
       "matched": 15,
-      "wc": 19,
+      "wc": 22,
       "keys": [],
-      "cn": "除此之外，如今，人们评判户外活动的标准是它能为自己带来什么，而非他人的看法。"
+      "cn": "另一个推动因素是，如今，人们评判户外活动的标准是它能为自己带来什么，而非他人的看法。"
      }
     ]
    },
@@ -10059,24 +10113,34 @@
       "spans": [
        {
         "t": "t",
-        "x": "On balance, this is a positive trend worth welcoming."
+        "x": "On balance, the figures offer an encouraging and welcome picture of "
+       },
+       {
+        "t": "o",
+        "x": "outdoor activity."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "总的来说，这是一个值得欢迎的积极趋势。"
+        "x": "总的来说，这些数据展现出"
+       },
+       {
+        "t": "s",
+        "x": "户外活动"
+       },
+       {
+        "t": "t",
+        "x": "令人鼓舞、值得欢迎的一面。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第1句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第1句",
       "kind": "tpl",
-      "cov": 1.0,
-      "matched": 9,
-      "wc": 9,
-      "keys": [
-       "On balance, this is a positive trend worth welcoming."
-      ],
-      "cn": "总的来说，这是一个值得欢迎的积极趋势。"
+      "cov": 0.85,
+      "matched": 11,
+      "wc": 13,
+      "keys": [],
+      "cn": "总的来说，这些数据展现出户外活动令人鼓舞、值得欢迎的一面。"
      },
      {
       "spans": [
@@ -10091,7 +10155,7 @@
         "x": "家庭的作用最为关键：孩子模仿的是大人的行动，而非说教。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句4",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句4",
       "kind": "func",
       "cov": 1.0,
       "matched": 15,
@@ -10130,7 +10194,7 @@
         "x": "融入日常安排，而非当作额外的任务。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 功能句3",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 功能句3",
       "kind": "func",
       "cov": 0.87,
       "matched": 13,
@@ -10142,24 +10206,24 @@
       "spans": [
        {
         "t": "t",
-        "x": "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+        "x": "With such steps in place, the gains should last rather than fade as attention shifts."
        }
       ],
       "spans_cn": [
        {
         "t": "t",
-        "x": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+        "x": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
        }
       ],
-      "src": "第三段 · 正面版（立场 + 建议） · 模板第2句",
+      "src": "第三段 · 立场 + 对策（三套骨架选一） · 模板第2句",
       "kind": "tpl",
       "cov": 1.0,
-      "matched": 19,
-      "wc": 19,
+      "matched": 15,
+      "wc": 15,
       "keys": [
-       "Given the momentum behind it, there is every reason to believe that it will continue in the years ahead."
+       "With such steps in place, the gains should last rather than fade as attention shifts."
       ],
-      "cn": "鉴于其背后的势头，我们有充分的理由相信，这一趋势将在未来几年继续发展。"
+      "cn": "有了这些举措，成效有望延续，而不至于随关注度转移而消退。"
      }
     ]
    }
