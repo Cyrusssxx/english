@@ -11,8 +11,10 @@
     保证整句替换后上下文（前一句 / 后一句）依然衔接。
   · alts 每条都带中文；tips 写给读者看的一句提示，不要复述句子。
   · 只给「模板骨架句 / 功能句」加，本篇独有的血肉句不加。
-  · 图表大作文只做第三段（立场 / 收尾）：前两段首句是信息句，换了要么丢时间区间、
-    要么丢「可多选」备注，用户 2026-11-21 明确不要。小作文仍做寒暄 / 来意 / 结尾。
+  · 图表大作文默认只做第三段（立场 / 收尾）：前两段首句是信息句，换了要么丢时间区间、
+    要么丢「可多选」备注，用户 2026-11-21 明确不要。**例外 NO6 第二段两处理由句**
+    （Equally important, / A further driver is the）：连接词固定，只换后面的具体理由，
+    用来解释图表里的「证书 26%」「个人兴趣 37%」两项。小作文仍做寒暄 / 来意 / 结尾。
 """
 
 SWAPS = {
@@ -20,14 +22,38 @@ SWAPS = {
     # 2026-11-21 用户定调：范文前两段基本不用换（首句/数据句改了反而丢信息），
     # 只做第三段——立场句 + 收尾句，各 2 条；换的是「怎么说」不是「说什么」。
     6: [
-        {'match': 'On balance, learners return to study with two quite different aims',
-         'tag': '第三段立场',
-         'tips': '下一句用 them 指这两类目的；替换句同样要留两个落点，且不能重复上一段的 professional / personal',
+        # 第二段两处理由（2026-11-21 用户要求）：连接词 Equally important, / A further driver is the
+        # 一字不动，只换后面的具体理由——证书（26%）与个人兴趣（37%）这两项，原段没展开。
+        {'match': 'Equally important, learning about new fields may create opportunities',
+         'tag': '第二段原因·证书',
+         'tips': '连接词不动，只换后面；换证书＝补上 26% 那项，48% 新领域就不再提，二选一',
          'alts': [
-             {'en': 'Taken as a whole, the aims behind further study fall into two distinct groups.',
-              'cn': '总体来看，继续深造背后的目的可分为两类。'},
-             {'en': 'Overall, two separate motives bring working adults back to the classroom.',
-              'cn': '总体而言，是两种不同的动机把在职人员带回课堂。'},
+             {'en': "Equally important, a recognised certificate gives employers tangible proof of a candidate's competence.",
+              'cn': '同样重要的是，一份受认可的证书能让雇主对应聘者的能力有实实在在的判断依据。'},
+             {'en': 'Equally important, formal qualifications remain a basic requirement for promotion in many industries.',
+              'cn': '同样重要的是，在许多行业，正式学历与资格仍是晋升的基本要求。'},
+             {'en': 'Equally important, certificates give workers the confidence to change careers or apply for better posts.',
+              'cn': '同样重要的是，证书让员工有底气转行，或去申请更好的职位。'},
+         ]},
+        {'match': 'A further driver is the growing recognition that education can enrich life',
+         'tag': '第二段原因·兴趣',
+         'tips': 'A further driver is the 保持不动；三条都落在「工作之外」，别写成升职加薪',
+         'alts': [
+             {'en': 'A further driver is the wish to relieve work-related stress and strike a better balance between work and personal life.',
+              'cn': '另一个推动因素是，人们希望缓解工作压力，在工作与个人生活之间取得更好的平衡。'},
+             {'en': 'A further driver is the search for a fuller spiritual life beyond salary and promotion.',
+              'cn': '另一个推动因素是，人们在薪酬与晋升之外寻求更充实的精神生活。'},
+             {'en': 'A further driver is the growing sense that a serious hobby can even turn into a second career.',
+              'cn': '另一个推动因素是，越来越多人意识到，认真经营的爱好甚至能发展成第二职业。'},
+         ]},
+        {'match': 'On balance, learners return to study with aims that pull in different directions',
+         'tag': '第三段立场',
+         'tips': '下一句用 them 指这些目的；替换句同样要给出复数目的作落点，且不能重复上一段的 professional / personal，也不要再分成两类',
+         'alts': [
+             {'en': 'Taken as a whole, the aims behind further study point in several directions.',
+              'cn': '总体来看，继续深造背后的目的指向好几个方向。'},
+             {'en': 'Overall, several motives bring working adults back to the classroom.',
+              'cn': '总体而言，是几种动机把在职人员带回课堂。'},
          ]},
         {'match': 'How these motivations are supported will shape the value people gain',
          'tag': '第三段收尾',

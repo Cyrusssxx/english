@@ -76,13 +76,14 @@ function checkData(d, label, hasPh) {
         }));
         if (n) { nos.push(it.no); perNo[it.no] = { n, big: g.id !== 't1' }; }
     }));
-    if (swSents !== 44) fail(`可替换句 ${swSents} 条，应为 44（大作文 10×2 + 小作文 8×3）`);
+    if (swSents !== 46) fail(`可替换句 ${swSents} 条，应为 46（大作文 9×2 + NO6 4 + 小作文 8×3）`);
     else pass(`可替换句 ${swSents} 条 / 替换句 ${swAlts} 条，覆盖 ${nos.length} 篇`);
     const wantNos = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26];
     if (nos.slice().sort((a, b) => a - b).join(',') !== wantNos.join(',')) fail('覆盖篇号不符: ' + nos.join(','));
     else pass('覆盖篇号 = 图表 10 篇 + 小作文 8 篇');
 
-    // 大作文只替换第三段：每篇 2 句，且都落在最后一个 p 块（第三段）
+    // 大作文默认只替换第三段：每篇 2 句，且都落在最后一个 p 块（第三段）。
+    // 例外 NO6：第二段两处理由句（证书 / 兴趣）也可换，共 4 句（第二段 2 + 第三段 2）。
     let bigBad = [];
     Y.groups.filter(g => g.id !== 't1').forEach(g => g.items.forEach(it => {
         const pBlocks = (it.blocks || []).filter(b => b.k === 'p');
@@ -90,10 +91,14 @@ function checkData(d, label, hasPh) {
         const inLast = (lastP.sents || []).filter(s => s.swap).length;
         const total = (it.blocks || []).reduce((a, b) => a + (b.sents || []).filter(s => s.swap).length, 0);
         if (!total) return;                      // 图画/名言类没挂替换，跳过
+        if (it.no === 6) {
+            if (total !== 4 || inLast !== 2) bigBad.push(`NO6(${inLast}/${total})`);
+            return;
+        }
         if (total !== 2 || inLast !== total) bigBad.push(`NO${it.no}(${inLast}/${total})`);
     }));
     if (bigBad.length) fail('大作文替换句越出第三段或数量不对: ' + bigBad.join(' '));
-    else pass('大作文 10 篇各 2 句，全部落在第三段（前两段不换）');
+    else pass('大作文 9 篇各 2 句全在第三段；NO6 4 句（第二段 2 + 第三段 2）');
     const smallBad = Object.keys(perNo).filter(k => !perNo[k].big && perNo[k].n !== 3);
     if (smallBad.length) fail('小作文每篇应为 3 句，异常: ' + smallBad.join(','));
     else pass('小作文 8 篇各 3 句（寒暄 / 来意 / 结尾或过渡）');
