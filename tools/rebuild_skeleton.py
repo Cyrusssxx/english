@@ -710,16 +710,16 @@ TPL_SWAPS = [
      'alts': [
          {'en': 'The cartoon above shows {{scene}}, and the chart below sets out how {{topic}} is distributed.',
           'cn': '上图展示了 {{scene}}，下方的图表则呈现了 {{topic}} 的分布。'},
-         {'en': 'In the cartoon, {{scene}}, while the chart below breaks {{topic}} down.',
-          'cn': '漫画中 {{scene}}，下方图表则拆解了 {{topic}} 的构成。'},
+         {'en': 'The cartoon above shows {{scene}}, while the chart below breaks {{topic}} down.',
+          'cn': '上图展示了 {{scene}}，下方的图表则拆解了 {{topic}} 的构成。'},
      ]},
     {'match': 'The cartoon above depicts {{scene}}, while the chart below clearly illustrates the changes in {{topic}}',
      'tag': '双图开篇', 'tips': '画面 + 走势，两个时间点别漏',
      'alts': [
          {'en': 'The cartoon above shows {{scene}}, and the chart below tracks the changes in {{topic}} from {{time1}} to {{time2}}.',
           'cn': '上图展示了 {{scene}}，下方图表则追踪了 {{time1}} 至 {{time2}} 期间 {{topic}} 的变化。'},
-         {'en': 'In the cartoon, {{scene}}, while the chart below records how {{topic}} changed between {{time1}} and {{time2}}.',
-          'cn': '漫画中 {{scene}}，下方图表则记录了 {{time1}} 至 {{time2}} 之间 {{topic}} 的变化。'},
+         {'en': 'The cartoon above shows {{scene}}, while the chart below records how {{topic}} changed between {{time1}} and {{time2}}.',
+          'cn': '上图展示了 {{scene}}，下方图表则记录了 {{time1}} 至 {{time2}} 之间 {{topic}} 的变化。'},
      ]},
     {'match': 'The two charts above clearly illustrate the changes in {{topic1}} and {{topic2}}',
      'tag': '双图开篇', 'tips': '两张图两个主题，respectively 不能丢',
@@ -786,8 +786,8 @@ TPL_SWAPS = [
      'alts': [
          {'en': 'What matters is whether the costs receive the same attention as the gains.',
           'cn': '关键在于，代价是否得到与收益同等的重视。'},
-         {'en': 'The decisive question is whether the burden is handled with as much care as the benefit is chased.',
-          'cn': '决定性的问题在于，人们对待负担是否像追逐好处那样用心。'},
+         {'en': 'The decisive question is whether the burden is handled with as much care as the benefit is pursued.',
+          'cn': '决定性的问题在于，人们对待负担是否像追求好处那样用心。'},
      ]},
 ]
 

@@ -214,8 +214,8 @@ SWAPS = {
          'alts': [
              {'en': 'Even so, the figures make clear that far more people could still be reached.',
               'cn': '即便如此，数据表明仍有更多人可以被覆盖。'},
-             {'en': 'Participation, however, remains far from complete.',
-              'cn': '然而，参与率仍远未达到全面覆盖。'},
+             {'en': 'Participation, however, is still far from universal.',
+              'cn': '然而，参与率仍远未普及。'},
          ]},
     ],
     13: [
