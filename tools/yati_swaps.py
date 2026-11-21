@@ -20,14 +20,14 @@ SWAPS = {
     # 2026-11-21 用户定调：范文前两段基本不用换（首句/数据句改了反而丢信息），
     # 只做第三段——立场句 + 收尾句，各 2 条；换的是「怎么说」不是「说什么」。
     6: [
-        {'match': 'On balance, continuing education serves both career needs and personal interest',
+        {'match': 'On balance, learners return to study with two quite different aims',
          'tag': '第三段立场',
-         'tips': '后一句要承接「这两类需要」，所以替换句也得留两个落点',
+         'tips': '下一句用 them 指这两类目的；替换句同样要留两个落点，且不能重复上一段的 professional / personal',
          'alts': [
-             {'en': 'On balance, further study meets needs that are practical and personal at once.',
-              'cn': '总的来说，继续深造同时满足了实际需要与个人需要。'},
-             {'en': 'Taken as a whole, continuing education answers both a career need and a personal one.',
-              'cn': '总体来看，继续教育既回应职业需要，也回应个人需要。'},
+             {'en': 'Taken as a whole, the aims behind further study fall into two distinct groups.',
+              'cn': '总体来看，继续深造背后的目的可分为两类。'},
+             {'en': 'Overall, two separate motives bring working adults back to the classroom.',
+              'cn': '总体而言，是两种不同的动机把在职人员带回课堂。'},
          ]},
         {'match': 'How these motivations are supported will shape the value people gain',
          'tag': '第三段收尾',
@@ -215,8 +215,8 @@ SWAPS = {
          'alts': [
              {'en': 'Whether the two channels work well together will shape the market in the years to come.',
               'cn': '两个渠道能否良好互补，将塑造未来几年的市场。'},
-             {'en': 'The market in the years ahead will depend on how well the two channels complement each other.',
-              'cn': '未来几年的市场将取决于两个渠道互补得如何。'},
+             {'en': 'The future of the market rests on how well online convenience and offline service are combined.',
+              'cn': '市场的未来取决于线上便利与线下服务能否结合得好。'},
          ]},
     ],
 
@@ -371,10 +371,10 @@ SWAPS = {
          'tag': '点明来意',
          'tips': '申请信首句：身份 + 申请什么，一句说完',
          'alts': [
-             {'en': 'I am an English major at university, and I am writing to apply for a volunteer position at the Center for Cultural Interchange.',
-              'cn': '我是大学英语专业的学生，写信申请文化交流中心的志愿者岗位。'},
-             {'en': 'I am writing to apply for the volunteer position at the Center for Cultural Interchange; I am a university student majoring in English.',
-              'cn': '我写信申请文化交流中心的志愿者岗位；我是一名英语专业的大学生。'},
+             {'en': 'My degree is in English, and I would like to apply for the volunteer position at the Center for Cultural Interchange.',
+              'cn': '我的专业是英语，我想申请文化交流中心的志愿者岗位。'},
+             {'en': 'I would like to be considered for the volunteer position at the Center for Cultural Interchange; I am currently studying English at university.',
+              'cn': '我希望申请文化交流中心的志愿者岗位；我目前在大学学习英语。'},
          ]},
         {'match': 'I believe I am well qualified for this position',
          'tag': '自荐过渡',
@@ -447,7 +447,7 @@ SWAPS = {
          'tag': '会议收尾',
          'tips': '纪要结尾写「下次怎么跟进」，会议才算闭环',
          'alts': [
-             {'en': 'The meeting ended with agreement to review progress the following month.',
+             {'en': 'The meeting ended with an agreement to review progress the following month.',
               'cn': '会议在就下月复查进展达成一致后结束。'},
              {'en': 'It was agreed at the end of the meeting to check progress the following month.',
               'cn': '会议结束时商定，下个月检查落实情况。'},

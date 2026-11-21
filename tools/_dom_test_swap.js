@@ -265,6 +265,76 @@ function checkData(d, label, hasPh) {
     if (connBad.length) fail('替换句与邻句撞连接词 ' + connBad.length + ' 处：' + connBad.slice(0, 4).join('；'));
     else pass('所有替换句与前后句不共用连接词（换完仍读得通）');
 
+    /* ========== D. 备选必须有实质变化：不能只换语序 / 只换冠词 ========== */
+    const STOP = new Set(('a an the as in at to for of and or with by from is am are was were be been being ' +
+        'i you it this that these those on we they their our his her its but not no more most than also very ' +
+        'well still even which who what how while when where after before during if though can could should ' +
+        'may might will would have has had do does did about into over').split(' '));
+    const cw = t => (String(t || '').toLowerCase().match(/[a-z]+/g) || [])
+        .filter(x => x.length > 2 && !STOP.has(x));
+    const cwSet = t => new Set(cw(t));
+    let flatBad = [];
+    const checkFlat = (orig, alt, who) => {
+        const O = cwSet(orig), A = cwSet(alt);
+        if (!O.size) return;
+        let inter = 0; O.forEach(x => { if (A.has(x)) inter++; });
+        let added = 0; A.forEach(x => { if (!O.has(x)) added++; });
+        if (inter / O.size >= 0.95 && added <= 1) {
+            flatBad.push(`${who}(覆盖 ${(inter / O.size).toFixed(2)}/新增 ${added})`);
+        }
+    };
+    Y.groups.forEach(g => g.items.forEach(it => {
+        (it.blocks || []).forEach(b => (b.sents || []).forEach(s => {
+            if (!s.swap) return;
+            (s.swap.alts || []).forEach(a => checkFlat(s.en, a.en, `NO${it.no} ${s.swap.tag}`));
+        }));
+    }));
+    TPL.sections.forEach(sec => (sec.skeletons || []).forEach(v => {
+        if (!v.sents_alt) return;
+        const sents = W2.wrSplitEn(v.en);
+        v.sents_alt.forEach(r => (r.alts || []).forEach(a => checkFlat(sents[r.idx] || '', a.en, `[${sec.id}] ${v.label}`)));
+    }));
+    if (flatBad.length) fail('备选几乎没换（纯重排）' + flatBad.length + ' 处：' + flatBad.slice(0, 4).join('；'));
+    else pass('所有备选都有实质变化（实词覆盖 <0.95 或新增实词 >1）');
+
+    /* ========== E. 押题相邻句（含跨段）不能共享两个以上三词骨架 ========== */
+    const tri = t => {
+        const w = cw(t), s = new Set();
+        for (let i = 0; i + 2 < w.length; i++) s.add(w.slice(i, i + 3).join(' '));
+        return s;
+    };
+    let dupBad = [];
+    Y.groups.forEach(g => g.items.forEach(it => {
+        const seq = [];
+        (it.blocks || []).forEach(b => (b.sents || []).forEach(s => seq.push(s.en)));
+        for (let i = 0; i + 1 < seq.length; i++) {
+            const a = tri(seq[i]), b = tri(seq[i + 1]);
+            let n = 0; a.forEach(x => { if (b.has(x)) n++; });
+            if (n >= 2) dupBad.push(`NO${it.no} 句${i + 1}→${i + 2}(${n})`);
+        }
+    }));
+    if (dupBad.length) fail('相邻句骨架重复：' + dupBad.slice(0, 4).join('；'));
+    else pass('26 篇相邻句（含跨段）无三词骨架重复');
+
+    /* ========== F. 模板备选不得回退到已废弃措辞 ========== */
+    const BANNED = ['burden', 'blessing'];
+    let bannedBad = [];
+    TPL.sections.forEach(sec => {
+        (sec.skeletons || []).forEach(v => (v.sents_alt || []).forEach(r => (r.alts || []).forEach(a => {
+            BANNED.forEach(w => { if (low(a.en).indexOf(w) >= 0) bannedBad.push(`[${sec.id}] ${v.label} 含「${w}」`); });
+        })));
+        (sec.framework || []).forEach(f => {
+            if (!f.swap) return;
+            (f.swap.alts || []).forEach(a => {
+                BANNED.forEach(w => { if (low(a.en).indexOf(w) >= 0) bannedBad.push(`[${sec.id}] framework 含「${w}」`); });
+                // 第二段引入句要「什么年份都成立」，静态占比题没有趋势
+                if (/this trend/i.test(a.en)) bannedBad.push(`[${sec.id}] framework 用 this trend（静态题不成立）`);
+            });
+        });
+    });
+    if (bannedBad.length) fail('模板备选出现已废弃措辞：' + bannedBad.slice(0, 3).join('；'));
+    else pass('模板备选无 burden / blessing，第二段引入不用 this trend');
+
     console.log(ok ? '\nSWAP ALL PASS' : '\nSWAP HAS FAILURES');
     process.exit(ok ? 0 : 1);
 })();
