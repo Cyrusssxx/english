@@ -76,7 +76,7 @@ function checkData(d, label, hasPh) {
         }));
         if (n) { nos.push(it.no); perNo[it.no] = { n, big: g.id !== 't1' }; }
     }));
-    if (swSents !== 85) fail(`可替换句 ${swSents} 条，应为 85（大作文 10 篇：第三段 22 + 第二段 39，小作文 8×3）`);
+    if (swSents !== 105) fail(`可替换句 ${swSents} 条，应为 105（大作文 10 篇：第三段 42 + 第二段 39，小作文 8×3）`);
     else pass(`可替换句 ${swSents} 条 / 替换句 ${swAlts} 条，覆盖 ${nos.length} 篇`);
     const wantNos = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26];
     if (nos.slice().sort((a, b) => a - b).join(',') !== wantNos.join(',')) fail('覆盖篇号不符: ' + nos.join(','));
@@ -92,12 +92,12 @@ function checkData(d, label, hasPh) {
         const inFirst = (firstP.sents || []).filter(s => s.swap).length;
         const total = (it.blocks || []).reduce((a, b) => a + (b.sents || []).filter(s => s.swap).length, 0);
         if (!total) return;                      // 图画/名言类没挂替换，跳过
-        // NO6 第三段按用户 A/B 版整段四句全挂；其余篇仍是立场 + 收尾 2 句
-        const wantLast = it.no === 6 ? 4 : 2;
-        if (inLast !== wantLast || inFirst !== 0 || total < 3) bigBad.push(`NO${it.no}(${inFirst}/${inLast}/${total})`);
+        // 2026-11-21 用户要求：图表类第三段整段每句都挂替换（NO6 A/B 版 4 句 + 其余 9 篇全段）
+        const lastTotal = (lastP.sents || []).length;
+        if (inLast !== lastTotal || inFirst !== 0 || total < 3) bigBad.push(`NO${it.no}(${inFirst}/${inLast}/${total}/${lastTotal})`);
     }));
-    if (bigBad.length) fail('大作文替换句分布不对（首段/第三段/总数）: ' + bigBad.join(' '));
-    else pass('大作文第三段各 2 句、第一段 0 句、第二段理由句全挂（10 篇）');
+    if (bigBad.length) fail('大作文替换句分布不对（首段/第三段应全挂/总数）: ' + bigBad.join(' '));
+    else pass('大作文第三段整段全挂、第一段 0 句、第二段理由句全挂（10 篇）');
     const smallBad = Object.keys(perNo).filter(k => !perNo[k].big && perNo[k].n !== 3);
     if (smallBad.length) fail('小作文每篇应为 3 句，异常: ' + smallBad.join(','));
     else pass('小作文 8 篇各 3 句（寒暄 / 来意 / 结尾或过渡）');
