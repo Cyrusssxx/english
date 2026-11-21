@@ -164,7 +164,16 @@ function ytMarkNums(html) {
    填槽＝每篇要换的数据和机制句。这里把骨架片段单独染色，句子剩下的成段实词
    自动判为填槽（浅琥珀），一眼能看出哪些字必须换掉。 */
 const YT_SKEL_SEGS = [
-    /\bThe (?:[A-Za-z]+ )?(?:charts?|graphs?|table|pictures?|diagrams?) (?:above|below) clearly illustrates?/i,
+    // 首句：illustrates 后面的 how / the changes in 也是模板原样背的一部分，
+    // 早期正则只标到 illustrates，把 how … distributed、the changes in 当成填槽漏掉了。
+    /\bThe (?:[A-Za-z]+ )?(?:charts?|graphs?|table|pictures?|diagrams?) (?:above|below) clearly illustrates?(?: how| the (?:sharp )?changes in)?/i,
+    // 双图首句的后半：while the chart above/below clearly illustrates …（NO11/12/13）
+    /\bwhile the chart (?:above|below) clearly illustrates?(?: how| the (?:sharp )?changes in)?/i,
+    /\b(?:is|are|was|were) distributed\b/i,       // 分布图收尾 how … is distributed（is/are/were 词形）
+    /\bThe cartoon above depicts\b/i,            // 双图首句前半（NO11/12/13）
+    /\bthe (?:two )?(?:images|materials) highlight\b/i,  // Together, the two images/materials highlight …
+    /\bthe figure for\b/i,                       // By contrast, the figure for …
+    /\brespectively, while\b/i,                   // … respectively, while … comes last
     /\bThe (?:two |three )?(?:images|materials|pictures) (?:above )?(?:clearly )?(?:illustrate|highlight|show)/i,
     /\bThis phenomenon can be attributed to a combination of factors\./i,
     /\bPrimary among these is(?: that)?/i,

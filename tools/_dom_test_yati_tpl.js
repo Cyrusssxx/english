@@ -107,6 +107,32 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   });
   pass('寒暄/来意/收尾/纪要四类句式均覆盖');
 
+  /* 5. 图表类骨架：模板「原样背」的固定片段必须整段标蓝，填槽内容不能误标。
+        2026-11-21 补：原先正则只标到 illustrates，how…distributed / the changes in /
+        The cartoon above depicts / the figure for 等整段漏掉（用户从截图发现）。 */
+  const skelNeed = {
+    6: ['illustrates how', 'are distributed', 'respectively, while'],
+    7: ['illustrates the changes in', 'the figure for'],
+    8: ['illustrates the changes in', 'the figure for'],
+    9: ['illustrates how', 'are distributed'],
+    11: ['The cartoon above depicts', 'while the chart above clearly illustrates the changes in', 'the two images highlight'],
+    13: ['The cartoon above depicts', 'while the chart below clearly illustrates the changes in', 'the materials highlight'],
+    14: ['the figure for'],
+    15: ['illustrate how', 'were distributed'],
+  };
+  let skelBad = [];
+  Object.entries(skelNeed).forEach(([no, phrases]) => {
+    window.ytOpen(Number(no));
+    const skel = [...d.querySelectorAll('#ytMEssay .yt-skel')].map(x => x.textContent).join('|').replace(/\s+/g, ' ');
+    phrases.forEach(p => { if (!skel.includes(p)) skelBad.push(`NO${no}:${p}`); });
+  });
+  if (skelBad.length) fail('图表类模板骨架漏标: ' + skelBad.join(' '));
+  else pass(`图表类 8 篇模板骨架固定片段全标（${Object.values(skelNeed).reduce((a, b) => a + b.length, 0)} 处）`);
+  window.ytOpen(6);
+  const skel6 = [...d.querySelectorAll('#ytMEssay .yt-skel')].map(x => x.textContent).join(' ');
+  if (/purposes of continuing education/.test(skel6)) fail('填槽内容被误标为骨架');
+  else pass('填槽内容未被误标（purposes of continuing education 不在骨架内）');
+
   console.log(ok ? '\n全部通过' : '\n有失败');
   process.exit(ok ? 0 : 1);
 })();
