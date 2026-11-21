@@ -111,14 +111,16 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
         2026-11-21 补：原先正则只标到 illustrates，how…distributed / the changes in /
         The cartoon above depicts / the figure for 等整段漏掉（用户从截图发现）。 */
   const skelNeed = {
-    6: ['illustrates how', 'are distributed', 'respectively, while'],
-    7: ['illustrates the changes in', 'the figure for'],
-    8: ['illustrates the changes in', 'the figure for'],
-    9: ['illustrates how', 'are distributed'],
-    11: ['The cartoon above depicts', 'while the chart above clearly illustrates the changes in', 'the two images highlight'],
-    13: ['The cartoon above depicts', 'while the chart below clearly illustrates the changes in', 'the materials highlight'],
-    14: ['the figure for'],
-    15: ['illustrate how', 'were distributed'],
+    6: ['illustrates how', 'are distributed', 'respectively, while', 'On balance,'],
+    7: ['illustrates the changes in', 'the figure for', 'On balance,'],
+    8: ['illustrates the changes in', 'the figure for', 'On balance,'],
+    9: ['illustrates how', 'are distributed', 'On balance,'],
+    10: ['the changes in', 'During this period,', 'On balance,'],
+    11: ['The cartoon above depicts', 'while the chart above clearly illustrates the changes in', 'the two images highlight', 'On balance,'],
+    12: ['The cartoon above depicts', 'while the chart above clearly illustrates the changes in', 'On balance,'],
+    13: ['The cartoon above depicts', 'while the chart below clearly illustrates the changes in', 'the materials highlight', 'On balance,'],
+    14: ['the figure for', 'On balance,'],
+    15: ['illustrate how', 'were distributed', 'On balance,'],
   };
   let skelBad = [];
   Object.entries(skelNeed).forEach(([no, phrases]) => {
@@ -127,7 +129,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
     phrases.forEach(p => { if (!skel.includes(p)) skelBad.push(`NO${no}:${p}`); });
   });
   if (skelBad.length) fail('图表类模板骨架漏标: ' + skelBad.join(' '));
-  else pass(`图表类 8 篇模板骨架固定片段全标（${Object.values(skelNeed).reduce((a, b) => a + b.length, 0)} 处）`);
+  else pass(`图表类 ${Object.keys(skelNeed).length} 篇模板骨架固定片段全标（${Object.values(skelNeed).reduce((a, b) => a + b.length, 0)} 处）`);
   window.ytOpen(6);
   const skel6 = [...d.querySelectorAll('#ytMEssay .yt-skel')].map(x => x.textContent).join(' ');
   if (/purposes of continuing education/.test(skel6)) fail('填槽内容被误标为骨架');

@@ -180,6 +180,9 @@ const YT_SKEL_SEGS = [
     /\bEqually important,/i,
     /\bA further driver is(?: that)?/i,
     /\bDuring this period,/i,
+    // 第三段开头：模板 para3 三套骨架的 trans 都是 On balance（十篇范文全用），
+    // 早先只列了 During this period / By contrast 这类第二段连接词，把它漏了。
+    /\bOn balance,/i,
     /\bBy contrast,/i,
     /\bIn contrast,/i,
     /\bNevertheless,/i,

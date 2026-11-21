@@ -44,7 +44,21 @@
         },
         {
          "en": "Primary among these is that changing job requirements encourage employees to update their knowledge and practical skills.",
-         "cn": "其中首要的一点是，不断变化的工作要求促使员工更新知识和实践技能。"
+         "cn": "其中首要的一点是，不断变化的工作要求促使员工更新知识和实践技能。",
+         "swap": {
+          "tag": "第二段原因·工作要求",
+          "tips": "首要原因这层不动；两条都把「技能在变」写具体，别提前抢 48%／37% 那两项",
+          "alts": [
+           {
+            "en": "Primary among these is that the skills demanded at work keep changing, so employees must keep their knowledge current.",
+            "cn": "首要的一点是，工作所需的技能不断变化，员工必须让自己的知识保持更新。"
+           },
+           {
+            "en": "Primary among these is the pressure to stay useful: as tasks grow more demanding, employees come back to update what they know.",
+            "cn": "首要的一点是保持自身有用的压力：随着任务要求提高，员工回来更新自己的知识。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, learning about new fields may create opportunities for career development.",
@@ -92,20 +106,34 @@
         },
         {
          "en": "The findings therefore suggest that continuing education serves both professional needs and personal aspirations.",
-         "cn": "因此，这些发现表明，继续教育既满足职业需求，也满足个人追求。"
+         "cn": "因此，这些发现表明，继续教育既满足职业需求，也满足个人追求。",
+         "swap": {
+          "tag": "第二段小结",
+          "tips": "第二段收口；两条都得把「职业 + 个人」两条线留住，不能只写一边",
+          "alts": [
+           {
+            "en": "The findings therefore suggest that further study meets needs that the workplace alone cannot satisfy.",
+            "cn": "这些发现因此表明，继续教育满足了单靠职场无法满足的需求。"
+           },
+           {
+            "en": "The findings therefore suggest that continuing education pays off both at work and away from it.",
+            "cn": "这些发现因此表明，继续教育既在工作中、也在工作之外带来回报。"
+           }
+          ]
+         }
         }
        ]
       },
       {
        "k": "p",
-       "v": "On balance, learners return to study with aims that pull in different directions. Yet the gap between them is wide: practical goals clearly come first. Employers should offer accessible training, and individuals should choose courses that fit their needs. How these motivations are supported will shape the value people gain from further study.",
+       "v": "On balance, learners return to study with aims that pull in different directions. Their weight, though, is uneven: skills that pay off now draw far more respondents than credentials that take years to earn. Employers can help by funding short courses and adjusting hours. Learners, in turn, should judge a course by what it lets them do, not by its certificate. What finally matters is whether adults can find the time and money to take them.",
        "sents": [
         {
          "en": "On balance, learners return to study with aims that pull in different directions.",
          "cn": "总的来说，学习者重返学习时怀着方向各异的多种目的。",
          "swap": {
           "tag": "第三段立场",
-          "tips": "下一句用 them 指这些目的；替换句同样要给出复数目的作落点，且不能重复上一段的 professional / personal，也不要再分成两类",
+          "tips": "下一句用 Their 指这些目的；替换句同样要给出复数目的作落点，不能重复上一段的 professional / personal，也不要再分成两类",
           "alts": [
            {
             "en": "Taken as a whole, the aims behind further study point in several directions.",
@@ -119,27 +147,31 @@
          }
         },
         {
-         "en": "Yet the gap between them is wide: practical goals clearly come first.",
-         "cn": "但两者差距明显：实用目的排在前面。"
+         "en": "Their weight, though, is uneven: skills that pay off now draw far more respondents than credentials that take years to earn.",
+         "cn": "不过，这些目的的分量并不均衡：眼下就能见效的技能，吸引的受访者远多于需要多年才能取得的证书。"
         },
         {
-         "en": "Employers should offer accessible training, and individuals should choose courses that fit their needs.",
-         "cn": "雇主应提供便捷的培训，个人则应选择适合自身需求的课程。"
+         "en": "Employers can help by funding short courses and adjusting hours.",
+         "cn": "雇主可以通过资助短期课程、调整工时来提供帮助。"
         },
         {
-         "en": "How these motivations are supported will shape the value people gain from further study.",
-         "cn": "如何支持这些学习动机，将决定人们从继续教育中获得的收益。",
+         "en": "Learners, in turn, should judge a course by what it lets them do, not by its certificate.",
+         "cn": "而学习者则应以课程能让自己做什么来衡量它，而不是看它承诺了什么证书。"
+        },
+        {
+         "en": "What finally matters is whether adults can find the time and money to take them.",
+         "cn": "最终重要的，是成人能否腾出时间和金钱去上这些课。",
          "swap": {
           "tag": "第三段收尾",
-          "tips": "收尾把判断落在「支持得怎样」上，不另起新话题",
+          "tips": "收尾落在「时间与钱」上，不另起新话题（政策、技术都别写）",
           "alts": [
            {
-            "en": "Whether these motivations are properly supported will decide how much people actually gain from further study.",
-            "cn": "这些动机能否得到恰当支持，将决定人们从继续深造中真正收获多少。"
+            "en": "In the end, what decides the value of further study is whether adults have the hours and the money to spare.",
+            "cn": "归根结底，决定继续深造价值的是成人能否腾出时间和金钱。"
            },
            {
-            "en": "What people get out of further study will depend on how well these motivations are supported.",
-            "cn": "人们能从继续深造中获得什么，取决于这些动机得到多好的支持。"
+            "en": "Unless adults can spare the hours and the fees, even well-designed courses will change very little.",
+            "cn": "除非成人能腾出时间、付得起学费，否则设计再好的课程也改变不了什么。"
            }
           ]
          }
@@ -147,7 +179,7 @@
        ]
       }
      ],
-     "words": 173
+     "words": 196
     },
     {
      "no": 7,
@@ -188,19 +220,75 @@
         },
         {
          "en": "Primary among these is that improvements in batteries and charging facilities have made new energy vehicles more attractive to buyers.",
-         "cn": "其中首要的一点是，电池和充电设施的改善使新能源汽车对消费者更有吸引力。"
+         "cn": "其中首要的一点是，电池和充电设施的改善使新能源汽车对消费者更有吸引力。",
+         "swap": {
+          "tag": "第二段原因·电池与充电",
+          "tips": "首要原因＝技术条件成熟；别写成补贴政策，policy 留给第三段",
+          "alts": [
+           {
+            "en": "Primary among these is that better batteries and a denser charging network have removed the worries that once kept buyers away.",
+            "cn": "首要的一点是，更好的电池与更密集的充电网络消除了曾让买家却步的顾虑。"
+           },
+           {
+            "en": "Primary among these is that falling battery costs and easier charging have turned electric models into a practical choice for ordinary families.",
+            "cn": "首要的一点是，电池成本下降与充电更加便利，使电动车型成为普通家庭的现实选择。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, lower running costs may encourage consumers to consider these models.",
-         "cn": "同样重要的是，更低的使用成本可能促使消费者考虑这些车型。"
+         "cn": "同样重要的是，更低的使用成本可能促使消费者考虑这些车型。",
+         "swap": {
+          "tag": "第二段原因·用车成本",
+          "tips": "成本角度，两条都落在「日常花钱少」；别扩到环保意识",
+          "alts": [
+           {
+            "en": "Equally important, charging at home costs far less than filling a tank, which makes the switch easier to justify.",
+            "cn": "同样重要的是，在家充电比加满一箱油便宜得多，这让换车更容易说得过去。"
+           },
+           {
+            "en": "Equally important, fuel and maintenance bills are lighter for electric cars, and that saving weighs heavily in many purchase decisions.",
+            "cn": "同样重要的是，电动车的燃料与保养开支更轻，这笔节省在许多购车决定中分量很重。"
+           }
+          ]
+         }
         },
         {
          "en": "A further driver is the lasting appeal of conventional vehicles to people who value familiar technology or lack convenient access to charging facilities.",
-         "cn": "另一个推动因素是，传统燃油车对看重成熟技术或充电不便的人群仍有持久的吸引力。"
+         "cn": "另一个推动因素是，传统燃油车对看重成熟技术或充电不便的人群仍有持久的吸引力。",
+         "swap": {
+          "tag": "第二段原因·燃油车惯性",
+          "tips": "解释燃油车为什么没被取代，语气客观，不贬低电动车",
+          "alts": [
+           {
+            "en": "A further driver is that many drivers still trust the technology they know, especially where charging points are scarce.",
+            "cn": "另一个推动因素是，许多驾驶者仍然信任自己熟悉的技术，在充电桩稀少的地方尤其如此。"
+           },
+           {
+            "en": "A further driver is the simple fact that a petrol car can be refuelled anywhere, which keeps it the safer choice for long trips.",
+            "cn": "另一个推动因素是，燃油车随处可以加油，这让它在长途出行中仍是更稳妥的选择。"
+           }
+          ]
+         }
         },
         {
          "en": "The figures thus suggest growing competition between the two categories.",
-         "cn": "因此，这些数据表明两类车之间的竞争日益加剧。"
+         "cn": "因此，这些数据表明两类车之间的竞争日益加剧。",
+         "swap": {
+          "tag": "第二段小结",
+          "tips": "收「两类在竞争」，别写成电动车已经赢了（6 月燃油车反超）",
+          "alts": [
+           {
+            "en": "The figures thus suggest that the two categories are now competing for the same buyers.",
+            "cn": "这些数据因此表明，两类车型如今在争夺同一批买家。"
+           },
+           {
+            "en": "The figures thus suggest a market where the two categories take turns at the top.",
+            "cn": "这些数据因此表明，市场上两类车型正轮流占据领先位置。"
+           }
+          ]
+         }
         }
        ]
       },
@@ -300,15 +388,57 @@
         },
         {
          "en": "Primary among these is that mobile applications have made it easier to arrange a ride or locate a bicycle.",
-         "cn": "其中首要的一点是，手机应用让叫车或找单车变得更方便。"
+         "cn": "其中首要的一点是，手机应用让叫车或找单车变得更方便。",
+         "swap": {
+          "tag": "第二段原因·手机叫车",
+          "tips": "技术便利这层不动；两条都写「一块屏幕就能办」，别扯价格战",
+          "alts": [
+           {
+            "en": "Primary among these is that a few taps on a phone are now enough to book a car or unlock a bicycle.",
+            "cn": "首要的一点是，如今在手机上点几下就能叫到车或解锁一辆单车。"
+           },
+           {
+            "en": "Primary among these is that ride-hailing and shared bikes are both reached through the screen people already carry.",
+            "cn": "首要的一点是，网约车与共享单车都能通过人们随身携带的那块屏幕获得。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, shared bicycles offer a convenient option for short journeys, while ride-hailing services can meet more flexible travel needs.",
-         "cn": "同样重要的是，共享单车为短途出行提供了便利选择，网约车则能满足更灵活的出行需求。"
+         "cn": "同样重要的是，共享单车为短途出行提供了便利选择，网约车则能满足更灵活的出行需求。",
+         "swap": {
+          "tag": "第二段原因·各管一段",
+          "tips": "「短途用单车、长途叫车」的分工不能塌；替换句也要各给一个场景",
+          "alts": [
+           {
+            "en": "Equally important, bicycles suit the short trip to the subway, while ride-hailing covers the longer or later journeys that buses serve poorly.",
+            "cn": "同样重要的是，单车适合到地铁站的短途，而网约车覆盖公交难以顾及的较长或较晚的出行。"
+           },
+           {
+            "en": "Equally important, the two options divide the work between them: bicycles for the last kilometre, cars for trips with bags or an awkward hour.",
+            "cn": "同样重要的是，这两种方式各司其职：单车负责最后一公里，汽车负责带行李或时间不凑巧的出行。"
+           }
+          ]
+         }
         },
         {
          "en": "The figures suggest that residents have gained a wider range of transport choices.",
-         "cn": "这些数据表明，居民的出行选择变得更加丰富。"
+         "cn": "这些数据表明，居民的出行选择变得更加丰富。",
+         "swap": {
+          "tag": "第二段小结",
+          "tips": "中性的「选择变多」，不评价好坏——好与不好留给第三段",
+          "alts": [
+           {
+            "en": "The figures suggest that residents now choose a way to travel according to the trip rather than the timetable.",
+            "cn": "这些数据表明，居民如今是按出行需要、而不是按时刻表来选择出行方式。"
+           },
+           {
+            "en": "The figures suggest that residents are no longer limited to the bus when they leave home.",
+            "cn": "这些数据表明，居民出门时不再只能依赖公交。"
+           }
+          ]
+         }
         }
        ]
       },
@@ -400,19 +530,75 @@
         },
         {
          "en": "Primary among these is that graduates need opportunities to acquire skills and build a sustainable career, which helps explain the emphasis on development prospects.",
-         "cn": "其中首要的一点是，毕业生需要机会获得技能并建立可持续的职业生涯，这有助于解释为何人们重视发展前景。"
+         "cn": "其中首要的一点是，毕业生需要机会获得技能并建立可持续的职业生涯，这有助于解释为何人们重视发展前景。",
+         "swap": {
+          "tag": "第二段原因·成长空间",
+          "tips": "65% 的发展前景是第一位因素；两条都别把薪酬写成第一位",
+          "alts": [
+           {
+            "en": "Primary among these is that a first job is now judged by what it teaches, so prospects outrank everything else.",
+            "cn": "首要的一点是，如今衡量第一份工作的标准是它能教给人什么，因此发展前景压过其他一切。"
+           },
+           {
+            "en": "Primary among these is that graduates treat the first post as a place to grow, not merely a place to earn.",
+            "cn": "首要的一点是，毕业生把第一份工作看作成长的地方，而不仅仅是挣钱的地方。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, pay matters because young employees must meet their daily expenses and gradually achieve financial independence.",
-         "cn": "同样重要的是，薪酬很重要，因为年轻员工必须满足日常开支并逐步实现经济独立。"
+         "cn": "同样重要的是，薪酬很重要，因为年轻员工必须满足日常开支并逐步实现经济独立。",
+         "swap": {
+          "tag": "第二段原因·薪酬",
+          "tips": "53% 排第二；把「为什么钱重要」写实（房租、独立），别写成拜金",
+          "alts": [
+           {
+            "en": "Equally important, rent and daily bills arrive every month, so a decent salary is a condition of independence.",
+            "cn": "同样重要的是，房租与日常开销每月都会到来，因此一份体面的薪水是独立的前提。"
+           },
+           {
+            "en": "Equally important, salary still decides how soon graduates can stop relying on their parents.",
+            "cn": "同样重要的是，薪资仍然决定毕业生多久才能不再依赖父母。"
+           }
+          ]
+         }
         },
         {
          "en": "A further driver is the promise of valuable experience and recognition at a well-known employer.",
-         "cn": "另一个推动因素是知名雇主可能带来的宝贵经验和认可。"
+         "cn": "另一个推动因素是知名雇主可能带来的宝贵经验和认可。",
+         "swap": {
+          "tag": "第二段原因·名企背书",
+          "tips": "31% 的公司声誉；两条都落在「简历与学习机会」，不写薪资",
+          "alts": [
+           {
+            "en": "A further driver is the weight a familiar name carries on a CV and the training that comes with it.",
+            "cn": "另一个推动因素是知名企业在简历上的分量，以及随之而来的培训。"
+           },
+           {
+            "en": "A further driver is that a well-known employer offers both a recognised brand and a chance to learn from experienced colleagues.",
+            "cn": "另一个推动因素是，知名雇主既提供被认可的品牌，也提供向有经验的同事学习的机会。"
+           }
+          ]
+         }
         },
         {
          "en": "Nevertheless, the relatively low figures for interests and the working environment deserve attention, since both can influence motivation and job satisfaction.",
-         "cn": "尽管如此，兴趣和工作环境占比较低值得关注，因为两者都会影响积极性和工作满意度。"
+         "cn": "尽管如此，兴趣和工作环境占比较低值得关注，因为两者都会影响积极性和工作满意度。",
+         "swap": {
+          "tag": "第二段转折（低位项）",
+          "tips": "兴趣 22%、环境 9% 是最低两项；替换句两条都必须点出「两项都低」",
+          "alts": [
+           {
+            "en": "Nevertheless, the low priority given to personal interest and to the working environment is worth pausing over, as both shape how long a graduate stays.",
+            "cn": "然而，个人兴趣与工作环境被排得较低，这一点值得停下来想一想，因为二者都影响毕业生能干多久。"
+           },
+           {
+            "en": "Nevertheless, interest and atmosphere score poorly here, and both decide whether a job feels worth keeping.",
+            "cn": "然而，兴趣与氛围在这里得分很低，而这两点决定一份工作是否值得长期做下去。"
+           }
+          ]
+         }
         }
        ]
       },
@@ -504,19 +690,75 @@
         },
         {
          "en": "Primary among these is that busy urban lifestyles have created demand for nearby shops where people can purchase daily necessities quickly.",
-         "cn": "其中首要的一点是，忙碌的城市生活使人们需要附近能快速买到日用品的店铺。"
+         "cn": "其中首要的一点是，忙碌的城市生活使人们需要附近能快速买到日用品的店铺。",
+         "swap": {
+          "tag": "第二段原因·就近需求",
+          "tips": "需求端原因；两条都写「城市节奏快、要近」，别写成店铺自己会经营",
+          "alts": [
+           {
+            "en": "Primary among these is that city dwellers rarely have time for a long trip to the supermarket, so they buy close to home.",
+            "cn": "首要的一点是，城市居民很少有时间跑远去超市，因此就在家附近购买。"
+           },
+           {
+            "en": "Primary among these is the pace of urban life, which rewards the shop two minutes away over the one twenty minutes away.",
+            "cn": "首要的一点是城市生活的节奏，它让两分钟就能到的店胜过二十分钟才到的店。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, longer opening hours and a convenient range of products make these stores attractive to consumers.",
-         "cn": "同样重要的是，营业时间更长、商品种类便利，使这些店对消费者有吸引力。"
+         "cn": "同样重要的是，营业时间更长、商品种类便利，使这些店对消费者有吸引力。",
+         "swap": {
+          "tag": "第二段原因·营业时间与货品",
+          "tips": "供给端便利；两条都落在「随时买得到、买得对」，别提前讲供应链",
+          "alts": [
+           {
+            "en": "Equally important, these shops stay open when other stores are shut, and stock exactly what a household runs out of.",
+            "cn": "同样重要的是，别的店关门时它们还开着，而且恰好备着家里会用完的东西。"
+           },
+           {
+            "en": "Equally important, a late-night snack, a bottle of water or a phone charger can all be bought without a detour.",
+            "cn": "同样重要的是，深夜的零食、一瓶水或一个充电器，都能顺路买到，不必绕道。"
+           }
+          ]
+         }
         },
         {
          "en": "A further driver is that improvements in distribution networks and inventory management have helped businesses operate more efficiently and open additional outlets.",
-         "cn": "另一个推动因素是，配送网络和库存管理的改善帮助企业更高效地经营并开设更多门店。"
+         "cn": "另一个推动因素是，配送网络和库存管理的改善帮助企业更高效地经营并开设更多门店。",
+         "swap": {
+          "tag": "第二段原因·供应链效率",
+          "tips": "经营端原因；两条都讲「开一家店更省」，别重复前一句的营业时间",
+          "alts": [
+           {
+            "en": "A further driver is that modern logistics and stock control let one outlet be run with fewer staff and less waste.",
+            "cn": "另一个推动因素是，现代物流与库存管理使一家门店能用更少的人手、更少的损耗运营。"
+           },
+           {
+            "en": "A further driver is that a mature supply chain makes opening the next store cheaper than it used to be.",
+            "cn": "另一个推动因素是，成熟的供应链让再开一家店的成本比过去更低。"
+           }
+          ]
+         }
         },
         {
          "en": "Together, these factors offer possible explanations for the rising number of stores.",
-         "cn": "综合来看，这些因素为门店数量的增长提供了可能的解释。"
+         "cn": "综合来看，这些因素为门店数量的增长提供了可能的解释。",
+         "swap": {
+          "tag": "第二段小结",
+          "tips": "Together 收口；两条都收「几股力量合起来」，别写成单一原因",
+          "alts": [
+           {
+            "en": "Together, these forces account for the rapid spread of such stores across cities.",
+            "cn": "这些力量共同解释了这类门店在城市中的迅速铺开。"
+           },
+           {
+            "en": "Together, they explain why the number of outlets has climbed so steeply in a few years.",
+            "cn": "它们共同解释了门店数量为何在几年间攀升得如此之快。"
+           }
+          ]
+         }
         }
        ]
       },
@@ -1693,19 +1935,75 @@
         },
         {
          "en": "Primary among these is the growing recognition that equal participation requires accessible facilities.",
-         "cn": "其中首要的一点是，人们越来越认识到平等参与需要无障碍设施。"
+         "cn": "其中首要的一点是，人们越来越认识到平等参与需要无障碍设施。",
+         "swap": {
+          "tag": "第二段原因·观念转变",
+          "tips": "从「公共空间的含义」切入；两条都别变成工程细节",
+          "alts": [
+           {
+            "en": "Primary among these is a shift in how public space is understood: a city is not truly public if part of its population cannot enter.",
+            "cn": "首要的一点是人们对公共空间理解的转变：如果一部分人进不去，城市就算不上真正的公共。"
+           },
+           {
+            "en": "Primary among these is the principle that everyone should be able to use the same entrance, not a separate one at the back.",
+            "cn": "首要的一点是这样一个原则：每个人都应能走同一个入口，而不是后面另开的那个。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, better planning and investment can help remove physical barriers in public spaces.",
-         "cn": "同样重要的是，更好的规划和投入有助于消除公共空间中的物理障碍。"
+         "cn": "同样重要的是，更好的规划和投入有助于消除公共空间中的物理障碍。",
+         "swap": {
+          "tag": "第二段原因·规划与投入",
+          "tips": "规划与投入是条件；两条都写在「设计阶段/预算里」，别写成慈善捐赠",
+          "alts": [
+           {
+            "en": "Equally important, ramps, lifts and tactile paving are no longer afterthoughts but standard items in the building budget.",
+            "cn": "同样重要的是，坡道、电梯与盲道不再是事后补上的东西，而成了建设预算中的常规项目。"
+           },
+           {
+            "en": "Equally important, local governments now write accessibility into new projects from the design stage.",
+            "cn": "同样重要的是，地方政府如今在设计阶段就把无障碍要求写进新项目。"
+           }
+          ]
+         }
         },
         {
          "en": "A further driver is that ramps and lifts not only make travel easier for people with disabilities, but also benefit older adults and others with limited mobility.",
-         "cn": "另一个推动因素是，坡道和电梯不仅方便残障人士出行，也使老年人和其他行动不便者受益。"
+         "cn": "另一个推动因素是，坡道和电梯不仅方便残障人士出行，也使老年人和其他行动不便者受益。",
+         "swap": {
+          "tag": "第二段原因·通用设计",
+          "tips": "受益面扩大是这条的核心；替换句也必须写到「不止轮椅使用者」",
+          "alts": [
+           {
+            "en": "A further driver is that a ramp serves far more people than the wheelchair users it was designed for: parents with prams and travellers with heavy luggage use it daily.",
+            "cn": "另一个推动因素是，坡道服务的人远不止它所针对的轮椅使用者：推婴儿车的父母与拖着大件行李的旅客每天都在用。"
+           },
+           {
+            "en": "A further driver is that accessibility turns out to help anyone who is temporarily slowed down by injury, age or luggage.",
+            "cn": "另一个推动因素是，无障碍设施最终惠及任何因受伤、年龄或行李而暂时行动不便的人。"
+           }
+          ]
+         }
         },
         {
          "en": "Such improvements protect dignity as well as provide practical convenience.",
-         "cn": "这样的改善既维护了尊严，也提供了实实在在的便利。"
+         "cn": "这样的改善既维护了尊严，也提供了实实在在的便利。",
+         "swap": {
+          "tag": "第二段小结",
+          "tips": "这句收「便利 + 尊严」两层，替换不要把尊严那层丢掉",
+          "alts": [
+           {
+            "en": "Such improvements offer convenience and, more importantly, restore the dignity of going out without asking for help.",
+            "cn": "这类改善带来便利，更重要的是，恢复了无需求助就能出门的尊严。"
+           },
+           {
+            "en": "Such improvements do more than smooth a journey; they let people take part in public life on their own terms.",
+            "cn": "这类改善不只是让出行更顺畅，更让人能按自己的方式参与公共生活。"
+           }
+          ]
+         }
         }
        ]
       },
@@ -1797,19 +2095,75 @@
         },
         {
          "en": "Primary among these is the growing recognition that timely assistance can make a difference in an emergency.",
-         "cn": "其中首要的一点是，人们越来越认识到及时救助在紧急情况下能起到关键作用。"
+         "cn": "其中首要的一点是，人们越来越认识到及时救助在紧急情况下能起到关键作用。",
+         "swap": {
+          "tag": "第二段原因·黄金几分钟",
+          "tips": "「最初几分钟」是这条的支点；两条都别写成医院或设备",
+          "alts": [
+           {
+            "en": "Primary among these is a simple fact: in the first few minutes, the nearest bystander matters more than the ambulance.",
+            "cn": "首要的一点是一个简单事实：在最初几分钟里，最近的路人比救护车更重要。"
+           },
+           {
+            "en": "Primary among these is the awareness that survival often depends on what a passer-by does before help arrives.",
+            "cn": "首要的一点是，人们意识到能否活下来常常取决于路人在救援到来之前的所作所为。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, accessible courses offered by communities and workplaces may encourage more residents to participate.",
-         "cn": "同样重要的是，社区和工作单位提供的易参加课程可能鼓励更多居民参与。"
+         "cn": "同样重要的是，社区和工作单位提供的易参加课程可能鼓励更多居民参与。",
+         "swap": {
+          "tag": "第二段原因·门槛低",
+          "tips": "社区与单位办课＝降低参加成本；替换句要点出「省了什么」",
+          "alts": [
+           {
+            "en": "Equally important, free sessions held in the neighbourhood remove the two barriers that keep people away: cost and distance.",
+            "cn": "同样重要的是，在社区举办的免费课程消除了让人却步的两大障碍：费用与距离。"
+           },
+           {
+            "en": "Equally important, when training is arranged at the office or the community centre, attending costs little more than an afternoon.",
+            "cn": "同样重要的是，当培训安排在办公楼或社区中心时，参加的成本不过是一个下午。"
+           }
+          ]
+         }
         },
         {
          "en": "A further driver is that practical training not only improves relevant skills, but also helps participants understand their limits and respond with greater confidence.",
-         "cn": "另一个推动因素是，实操培训不仅能提高相关技能，还能帮助参与者认清自身局限、更从容地应对。"
+         "cn": "另一个推动因素是，实操培训不仅能提高相关技能，还能帮助参与者认清自身局限、更从容地应对。",
+         "swap": {
+          "tag": "第二段原因·实操",
+          "tips": "「练过」与「看过」的差别是这条的分量；两条都要写到动手",
+          "alts": [
+           {
+            "en": "A further driver is that a short course teaches people what they can safely do, and equally what they should leave to paramedics.",
+            "cn": "另一个推动因素是，短期课程教人明白自己能安全地做什么，也同样明白哪些应当交给急救人员。"
+           },
+           {
+            "en": "A further driver is the confidence that comes from having practised chest compressions on a dummy rather than only watched them online.",
+            "cn": "另一个推动因素是，在模型上练过胸外按压、而非只在网上看过，会带来真正的底气。"
+           }
+          ]
+         }
         },
         {
          "en": "However, the figures show that participation still has considerable room to grow.",
-         "cn": "不过，数据表明参与率仍有很大的提升空间。"
+         "cn": "不过，数据表明参与率仍有很大的提升空间。",
+         "swap": {
+          "tag": "第二段转折（覆盖不足）",
+          "tips": "9%→32% 仍然偏低，但别写成「几乎没人参加」",
+          "alts": [
+           {
+            "en": "However, the figures show that most residents are still untrained, which leaves the work far from finished.",
+            "cn": "然而，数据显示多数居民仍未接受培训，这项工作远未完成。"
+           },
+           {
+            "en": "However, the figures show that the share of trained residents remains modest, and the gap is unlikely to close by itself.",
+            "cn": "然而，数据显示受训居民的比例仍然不高，而这一差距不太可能自行弥合。"
+           }
+          ]
+         }
         }
        ]
       },
@@ -1901,19 +2255,75 @@
         },
         {
          "en": "Primary among these is that developments in research, technology and business provide attractive career opportunities in China.",
-         "cn": "其中首要的一点是，科研、技术和商业的发展在中国提供了有吸引力的职业机会。"
+         "cn": "其中首要的一点是，科研、技术和商业的发展在中国提供了有吸引力的职业机会。",
+         "swap": {
+          "tag": "第二段原因·国内机会",
+          "tips": "首要原因＝机会增多；两条都从「国内有岗位」写，别写成政策号召",
+          "alts": [
+           {
+            "en": "Primary among these is that the fastest-growing employers are now to be found at home rather than abroad.",
+            "cn": "首要的一点是，如今增长最快的雇主在国内，而不是在国外。"
+           },
+           {
+            "en": "Primary among these is the scale of investment in research and industry, which has created posts that did not exist a decade ago.",
+            "cn": "首要的一点是科研与产业投资的规模，它创造出十年前并不存在的岗位。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, returning students can apply what they have learned abroad while benefiting from their familiarity with the local language and culture.",
-         "cn": "同样重要的是，回国人员既能运用海外所学，又能受益于对本地语言和文化的熟悉。"
+         "cn": "同样重要的是，回国人员既能运用海外所学，又能受益于对本地语言和文化的熟悉。",
+         "swap": {
+          "tag": "第二段原因·双重优势",
+          "tips": "「海外所学 + 本土熟悉」是这条的两条腿，替换不能只剩一条",
+          "alts": [
+           {
+            "en": "Equally important, a returnee brings both overseas training and an insider understanding of the domestic market.",
+            "cn": "同样重要的是，回国者既带回海外训练，又懂国内市场的门道。"
+           },
+           {
+            "en": "Equally important, they can put foreign methods to work in a setting where they already speak the language and know the rules.",
+            "cn": "同样重要的是，他们能在自己本就熟悉语言与规则的环境中运用国外的方法。"
+           }
+          ]
+         }
         },
         {
          "en": "A further driver is the wish to live closer to family.",
-         "cn": "另一个推动因素是希望离家人更近的愿望。"
+         "cn": "另一个推动因素是希望离家人更近的愿望。",
+         "swap": {
+          "tag": "第二段原因·家庭",
+          "tips": "最短的一句，替换也别拉长；两条都给一个具体的家庭画面",
+          "alts": [
+           {
+            "en": "A further driver is family: ageing parents, and a wish not to miss the years when children grow up.",
+            "cn": "另一个推动因素是家庭：年迈的父母，以及不愿错过孩子成长的岁月。"
+           },
+           {
+            "en": "A further driver is the pull of home, where parents are getting older and close friends are starting families of their own.",
+            "cn": "另一个推动因素是家的牵引：父母渐渐变老，好友开始组建自己的家庭。"
+           }
+          ]
+         }
         },
         {
          "en": "These professional and personal considerations can jointly shape their plans.",
-         "cn": "这些职业与个人考量会共同影响他们的规划。"
+         "cn": "这些职业与个人考量会共同影响他们的规划。",
+         "swap": {
+          "tag": "第二段小结",
+          "tips": "「事业 + 家庭共同作用」是这句的结论，别写成单一原因",
+          "alts": [
+           {
+            "en": "Career and family rarely act alone; together they decide whether a graduate stays abroad or comes home.",
+            "cn": "事业与家庭很少单独起作用，它们共同决定一个毕业生留在海外还是回国。"
+           },
+           {
+            "en": "What finally tips the balance is usually a mix of career prospects and family ties rather than either one on its own.",
+            "cn": "最终左右决定的，通常是职业前景与家庭纽带的共同作用，而非其中任何一项。"
+           }
+          ]
+         }
         }
        ]
       },
@@ -2012,15 +2422,57 @@
         },
         {
          "en": "Primary among these is that better living conditions and healthcare have enabled people to live longer.",
-         "cn": "其中首要的一点是，更好的生活条件和医疗条件让人们活得更久。"
+         "cn": "其中首要的一点是，更好的生活条件和医疗条件让人们活得更久。",
+         "swap": {
+          "tag": "第二段原因·医疗与生活条件",
+          "tips": "寿命端的原因；两条都别写成「老龄化＝出生率低」，那是下一句",
+          "alts": [
+           {
+            "en": "Primary among these is that nutrition, housing and medical care have improved enough to add years to ordinary lives.",
+            "cn": "首要的一点是，营养、住房与医疗条件的改善，已足以为普通人的生命增加年头。"
+           },
+           {
+            "en": "Primary among these is the steady fall in infant and middle-age mortality, which lifts the average upwards.",
+            "cn": "首要的一点是婴幼儿与中年死亡率的持续下降，把平均值推高。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, lower birth rates can gradually reduce the relative size of younger generations.",
-         "cn": "同样重要的是，较低的出生率会逐渐缩小年轻一代的相对规模。"
+         "cn": "同样重要的是，较低的出生率会逐渐缩小年轻一代的相对规模。",
+         "swap": {
+          "tag": "第二段原因·出生率",
+          "tips": "这条解释「占比」而不是「寿命」；替换别把死亡率和出生率混为一谈",
+          "alts": [
+           {
+            "en": "Equally important, fewer children are born each year, so the young make up a smaller share of the population.",
+            "cn": "同样重要的是，每年出生的孩子更少，年轻人在人口中所占比例因此下降。"
+           },
+           {
+            "en": "Equally important, birth rates have fallen faster than death rates, and that gap alone changes the age structure.",
+            "cn": "同样重要的是，出生率下降的速度快于死亡率，仅这一差距就改变了年龄结构。"
+           }
+          ]
+         }
         },
         {
          "en": "The figures thus reflect improvements in longevity while highlighting the need for stronger support for an aging population.",
-         "cn": "因此，这些数据既反映了寿命的延长，也凸显出加强对老年人口支持的必要性。"
+         "cn": "因此，这些数据既反映了寿命的延长，也凸显出加强对老年人口支持的必要性。",
+         "swap": {
+          "tag": "第二段小结（两面）",
+          "tips": "这句是「进步 + 压力」的双面收口，替换不能只剩一边",
+          "alts": [
+           {
+            "en": "The figures thus record a genuine advance in longevity, and at the same time they mark out the scale of future care needs.",
+            "cn": "这些数据因此记录了寿命的真实进步，同时也标出了未来照护需求的规模。"
+           },
+           {
+            "en": "The figures thus tell two stories at once: people live longer, and the country must prepare to look after them longer.",
+            "cn": "这些数据同时讲了两件事：人们活得更久，国家也必须准备更长久地照料他们。"
+           }
+          ]
+         }
         }
        ]
       },
@@ -2112,23 +2564,93 @@
         },
         {
          "en": "Primary among these is that online platforms allow consumers to compare products and place orders without visiting a shop.",
-         "cn": "其中首要的一点是，线上平台让消费者无需到店就能比较商品并下单。"
+         "cn": "其中首要的一点是，线上平台让消费者无需到店就能比较商品并下单。",
+         "swap": {
+          "tag": "第二段原因·比价下单",
+          "tips": "线上优势；两条都写「一块屏上比完就下单」，别扯冷链（下一句）",
+          "alts": [
+           {
+            "en": "Primary among these is that a whole aisle of choices can be compared on one screen in a few minutes.",
+            "cn": "首要的一点是，整整一排货架的选择，可以在几分钟内于一块屏幕上比较完。"
+           },
+           {
+            "en": "Primary among these is the convenience of ordering from home, where price, flavour and reviews sit side by side.",
+            "cn": "首要的一点是在家下单的便利：价格、口味与评价并列呈现在眼前。"
+           }
+          ]
+         }
         },
         {
          "en": "Equally important, improvements in refrigerated delivery have made it easier to transport frozen products to customers.",
-         "cn": "同样重要的是，冷链配送的改善使冷冻产品更容易送到消费者手中。"
+         "cn": "同样重要的是，冷链配送的改善使冷冻产品更容易送到消费者手中。",
+         "swap": {
+          "tag": "第二段原因·冷链",
+          "tips": "冷链解决「会不会化」；替换句别写成快递时效或价格",
+          "alts": [
+           {
+            "en": "Equally important, insulated packaging and cold-chain couriers now keep ice cream firm even in midsummer.",
+            "cn": "同样重要的是，保温包装与冷链配送让冰激凌在盛夏也能保持完好。"
+           },
+           {
+            "en": "Equally important, the cold chain has become reliable enough for a product that melts within minutes of rough handling.",
+            "cn": "同样重要的是，冷链已足够可靠，足以应付一种处置不当几分钟就会融化的商品。"
+           }
+          ]
+         }
         },
         {
          "en": "A further driver is that promotional offers may encourage people to try this purchasing method.",
-         "cn": "另一个推动因素是，促销活动可能会鼓励人们尝试这种购买方式。"
+         "cn": "另一个推动因素是，促销活动可能会鼓励人们尝试这种购买方式。",
+         "swap": {
+          "tag": "第二段原因·促销",
+          "tips": "这条讲「第一次尝试」的门槛；别写成长期低价竞争",
+          "alts": [
+           {
+            "en": "A further driver is the discount that appears at checkout, which lowers the risk of trying an unfamiliar channel.",
+            "cn": "另一个推动因素是结账时出现的折扣，它降低了尝试一个陌生渠道的风险。"
+           },
+           {
+            "en": "A further driver is the coupons and free-delivery thresholds that make a first online order seem worth trying.",
+            "cn": "另一个推动因素是优惠券与免运费门槛，让第一次线上下单看起来值得一试。"
+           }
+          ]
+         }
         },
         {
          "en": "Nevertheless, physical stores still provide immediate access to ice cream, which helps explain their continued importance.",
-         "cn": "尽管如此，实体店仍能让人立即买到冰激凌，这有助于解释其持续的重要性。"
+         "cn": "尽管如此，实体店仍能让人立即买到冰激凌，这有助于解释其持续的重要性。",
+         "swap": {
+          "tag": "第二段转折（线下仍在）",
+          "tips": "线上只占两成，这句守的是线下的位置；替换别写成线下会消失",
+          "alts": [
+           {
+            "en": "Nevertheless, a shop still wins on one point that delivery cannot match: the ice cream is in your hand within a minute.",
+            "cn": "然而，实体店仍有一项配送无法比拟的优势：一分钟内冰激凌就在手里。"
+           },
+           {
+            "en": "Nevertheless, when the craving is immediate, a walk to the freezer aisle beats any delivery time.",
+            "cn": "然而，当嘴馋是即刻的，走到冰柜货架比任何配送时间都更划算。"
+           }
+          ]
+         }
         },
         {
          "en": "The figures suggest that businesses should take both channels into account when planning their sales strategies.",
-         "cn": "这些数据表明，企业在制定销售策略时应兼顾两个渠道。"
+         "cn": "这些数据表明，企业在制定销售策略时应兼顾两个渠道。",
+         "swap": {
+          "tag": "第二段小结",
+          "tips": "收「两个渠道都要」，别写成线上取代线下",
+          "alts": [
+           {
+            "en": "The figures suggest that neither channel can be treated as an afterthought when a brand plans its sales.",
+            "cn": "这些数据表明，品牌规划销售时，两个渠道都不能被当作附带事项。"
+           },
+           {
+            "en": "The figures suggest that firms should sell through both channels rather than choose between them.",
+            "cn": "这些数据表明，企业应同时经营两个渠道，而不是在两者之间做选择。"
+           }
+          ]
+         }
         }
        ]
       },
