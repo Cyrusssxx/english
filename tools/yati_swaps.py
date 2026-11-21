@@ -11,9 +11,11 @@
     保证整句替换后上下文（前一句 / 后一句）依然衔接。
   · alts 每条都带中文；tips 写给读者看的一句提示，不要复述句子。
   · 只给「模板骨架句 / 功能句」加，本篇独有的血肉句不加。
-  · 图表大作文：**第二段的具体理由句 + 第三段立场/收尾**（2026-11-21 用户两轮要求）。
+  · 图表大作文：**第二段的具体理由句 + 第三段整段**（2026-11-21 用户三轮要求）。
     第二段连接词一字不动（Primary among these is that / Equally important, / A further driver is /
     Nevertheless… / Together…），只换后面的理由本身，用来解释图表各分项的数据。
+    NO6 第三段 2026-11-21 按用户给的 A/B 版重写：默认 A（Overall 起、far-reaching benefits 收），
+    四句全挂替换，结尾第一条备选即版本 B（only when…can… 倒装、deliver its true value）。
     第一段（数据句、多选备注）一律不做：换了要么丢时间区间、要么丢「可多选」备注。
     小作文仍做寒暄 / 来意 / 结尾。
   · 替换句不得与邻句共用连接词（_dom_test_swap.js 会挡：therefore / thus / however / overall…），
@@ -23,7 +25,7 @@
 SWAPS = {
     # ══════════ 图表类大作文 NO6–NO15 ══════════
     # 2026-11-21 用户定调：范文前两段基本不用换（首句/数据句改了反而丢信息），
-    # 只做第三段——立场句 + 收尾句，各 2 条；换的是「怎么说」不是「说什么」。
+    # 第三段立场句 + 收尾句各 2 条；NO6 例外——整段四句全挂（用户给的 A/B 二选一版）。
     6: [
         # 第二段四句全挂替换（2026-11-21 用户要求）：连接词一字不动，只换后面的具体理由。
         {'match': 'Primary among these is that changing job requirements encourage employees',
@@ -68,23 +70,41 @@ SWAPS = {
              {'en': 'A further driver is the growing sense that a serious hobby can even turn into a second career.',
               'cn': '另一个推动因素是，越来越多人意识到，认真经营的爱好甚至能发展成第二职业。'},
          ]},
-        {'match': 'On balance, learners return to study with aims that pull in different directions',
-         'tag': '第三段立场',
-         'tips': '下一句用 Their 指这些目的；替换句同样要给出复数目的作落点，不能重复上一段的 professional / personal，也不要再分成两类',
+        {'match': 'Overall, learners return to study with a diverse range of purposes',
+         'tag': '第三段总括',
+         'tips': '默认版用 Overall 起句；第一条备选保留 On balance 的说法；两句都只说「目的多样」，不预判哪一项占优',
          'alts': [
-             {'en': 'Taken as a whole, the aims behind further study point in several directions.',
-              'cn': '总体来看，继续深造背后的目的指向好几个方向。'},
-             {'en': 'Overall, several motives bring working adults back to the classroom.',
-              'cn': '总体而言，是几种动机把在职人员带回课堂。'},
+             {'en': 'On balance, working adults return to further study with a variety of purposes.',
+              'cn': '总的来说，在职成人出于多种目的重返学习。'},
+             {'en': 'In general, adults go back to the classroom for purposes of many different kinds.',
+              'cn': '一般而言，成人回到课堂出于各种不同的目的。'},
          ]},
-        {'match': 'What finally matters is whether adults can find the time and money',
-         'tag': '第三段收尾',
-         'tips': '收尾落在「时间与钱」上，不另起新话题（政策、技术都别写）',
+        {'match': 'However, practical needs clearly dominate',
+         'tag': '第三段点题',
+         'tips': '承接首段 65% 技能遥遥领先；不写「差距大」——图上只是各项占比不同，不是差距评价',
          'alts': [
-             {'en': 'In the end, what decides the value of further study is whether adults have the hours and the money to spare.',
-              'cn': '归根结底，决定继续深造价值的是成人能否腾出时间和金钱。'},
-             {'en': 'Unless adults can spare the hours and the fees, even well-designed courses will change very little.',
-              'cn': '除非成人能腾出时间、付得起学费，否则设计再好的课程也改变不了什么。'},
+             {'en': 'Practical needs, though, clearly take the lead.',
+              'cn': '不过，实际需求显然排在首位。'},
+             {'en': 'Yet practical considerations clearly carry the most weight.',
+              'cn': '然而，现实考量显然分量最重。'},
+         ]},
+        {'match': 'Employers can provide on-the-job training',
+         'tag': '第三段建议',
+         'tips': 'on-the-job training 贴合「在职」身份；两条都给雇主与个人各一条措施，别写成单方喊话',
+         'alts': [
+             {'en': 'Employers can provide on-the-job training and adjust working hours, while individuals should choose courses by what they teach rather than by the certificate they promise.',
+              'cn': '雇主可以提供在职培训并调整工时，而个人应按课程实际教什么、而非它承诺的证书来选课。'},
+             {'en': 'Employers can fund short courses and adjust working hours, while workers should pick programmes that match what they actually need.',
+              'cn': '雇主可以资助短期课程并调整工时，而员工应选择真正符合自身需求的课程。'},
+         ]},
+        {'match': 'Ultimately, by meeting these diverse demands',
+         'tag': '第三段结尾 A/B',
+         'tips': '默认 A＝by meeting… 拔高到个人与社会；第一条备选＝版本 B 的 only when 倒装，强调真正价值；二选一，别混用',
+         'alts': [
+             {'en': 'Ultimately, only when these diverse learning needs are met can further study deliver its true value.',
+              'cn': '归根结底，只有满足这些多样化的学习需求，继续教育才能发挥真正的价值。'},
+             {'en': 'Ultimately, only when these needs are properly supported can further study deliver its true value to both learners and society.',
+              'cn': '归根结底，只有这些需求得到恰当支持，继续教育才能为学习者与社会带来真正的价值。'},
          ]},
     ],
     7: [

@@ -90,7 +90,9 @@ const badP3 = [];
 P3_NOS.forEach(no => {
   const ss = p3Head(no).map(s => s.en);
   if (!ss.length) { badP3.push([no, '第三段缺失']); return; }
-  if (!/^On balance, /.test(ss[0])) badP3.push([no, 'P3 首句缺 On balance 起句']);
+  // NO6 2026-11-21 按用户给的 A 版首句 Overall 起；其余 9 篇仍要求 On balance
+  if (no !== 6 && !/^On balance, /.test(ss[0])) badP3.push([no, 'P3 首句缺 On balance 起句']);
+  if (no === 6 && !/^Overall, /.test(ss[0])) badP3.push([no, 'NO6 首句应为 OVERALL 版']);
   if (/this is a positive trend|a pattern|praise or blame/.test(ss[0]))
     badP3.push([no, 'P3 首句残留模板套话']);
   const last = ss[ss.length - 1];
