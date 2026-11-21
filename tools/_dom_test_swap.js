@@ -42,6 +42,7 @@ function checkData(d, label, hasPh) {
         let j = null;
         try { j = JSON.parse(el.getAttribute('data-swap')); } catch (e) { bad++; return; }
         if (!j.tag || !(j.alts || []).length) bad++;
+        if (!j.cn) bad++;                    // 气泡要带本句译文，缺了等于又得点「译」
         j.alts.forEach(a => {
             if (!a.en || !a.cn) bad++;
             if (!hasPh && (a.en.indexOf('{{') >= 0 || a.en.indexOf('—') >= 0)) bad++;
@@ -120,6 +121,14 @@ function checkData(d, label, hasPh) {
         const src = (el.textContent || '').replace(/\s+/g, ' ').trim();
         if (orig !== src) fail(`当前表达与原文不一致：${orig.slice(0, 30)} ≠ ${src.slice(0, 30)}`);
         else pass('当前表达 = 句子原文（未被替换，默认仍显示模板句）');
+        const cnEl = pop.querySelector('.wup-orig-cn');
+        let cnWant = '';
+        try { cnWant = (JSON.parse(el.getAttribute('data-swap')).cn || '').trim(); } catch (e) { /* ignore */ }
+        if (!cnEl || !cnEl.textContent.trim()) fail('气泡缺本句译文');
+        else if (cnWant && cnEl.textContent.trim() !== cnWant) fail('气泡译文与数据不一致');
+        else pass('气泡带本句译文：' + cnEl.textContent.trim().slice(0, 18) + '…');
+        if (pop.querySelector('.wup-foot')) fail('气泡仍带底部提示');
+        else pass('气泡已去掉底部 💡 提示');
         const items = pop.querySelectorAll('.wup-item').length;
         let want = 0;
         try { want = JSON.parse(el.getAttribute('data-swap')).alts.length; } catch (e) { /* ignore */ }

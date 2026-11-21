@@ -5928,8 +5928,16 @@ html.dark .wr-line.wr-swap:hover, html.dark .wr-line.wr-swap.active {
 .yt-lg-swap { background: rgba(124, 58, 237, .10); border-bottom-color: rgba(124, 58, 237, .5); color: #6d28d9; }
 html.dark .yt-lg-swap { color: #c4b5fd; background: rgba(167, 139, 250, .18); }
 
-/* 整句较长：气泡加宽，「当前表达」允许折行 */
-.wr-swap-pop { width: 400px; }
-.wr-swap-pop .wup-orig { line-height: 1.55; }
+/* 整句较长：气泡加宽，「当前表达」+ 本句译文，替换句一行能放下就不折成三行 */
+.wr-swap-pop { width: 560px; padding: 11px 15px; }
+.wr-swap-pop .wup-orig { line-height: 1.5; margin-bottom: 2px; }
+.wr-swap-pop .wup-orig-cn {
+    font-size: .8rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 9px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft YaHei", sans-serif;
+}
 .wr-swap-pop .wup-en { font-size: .9rem; line-height: 1.5; }
+.wr-swap-pop .wup-list { gap: 5px; }
 @media (max-width: 640px) { .wr-swap-pop { width: calc(100vw - 24px); } }

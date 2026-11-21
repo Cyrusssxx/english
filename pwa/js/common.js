@@ -636,13 +636,15 @@ function wrSwShow(el) {
     const altsHtml = d.alts.map(a =>
         '<li class="wup-item"><div class="wup-en">' + apEsc(a.en) + '</div><div class="wup-cn">' + apEsc(a.cn) + '</div></li>'
     ).join('');
+    // 本句译文：跟着「当前表达」一起显示，省得读者再点一次「译」
+    const cn = (d.cn || '').replace(/\s+/g, ' ').trim();
     pop.innerHTML = '<div class="wup-head">'
         + '<span class="wup-tag">' + apEsc(d.tag || '可替换') + '</span>'
         + '<span class="wup-tips">' + apEsc(d.tips || '') + '</span>'
         + '</div>'
         + '<div class="wup-orig">当前表达：<b>' + apEsc(orig) + '</b></div>'
-        + '<ul class="wup-list">' + altsHtml + '</ul>'
-        + '<div class="wup-foot">💡 默认这句最好背；想更贴这道题，可整句换成上面任一句</div>';
+        + (cn ? '<div class="wup-orig-cn">' + apEsc(cn) + '</div>' : '')
+        + '<ul class="wup-list">' + altsHtml + '</ul>';
 
     document.body.appendChild(pop);
     _wrSwPop = pop;

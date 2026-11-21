@@ -419,7 +419,8 @@ function ytEssayHtml(it) {
             const cls = 'yt-jsent' + (isTpl ? ' yt-tpl' : '')
                 + ((s.swap && s.swap.alts && s.swap.alts.length) ? ' yt-swap' : '');
             const swapAttr = (s.swap && s.swap.alts && s.swap.alts.length)
-                ? ` class="${cls}" data-swap="${ytEsc(JSON.stringify(s.swap))}"`
+                // 附上本句译文：气泡里「当前表达」下面直接给中文，不用再点「译」
+                ? ` class="${cls}" data-swap="${ytEsc(JSON.stringify(Object.assign({}, s.swap, { orig: s.en, cn: s.cn || '' })))}"`
                 : ` class="${cls}"`;
             // 「译」标记放在 .yt-jsent 之外做兄弟节点：句子 textContent 仍严格等于原文（校验不吞字），
             // 又能独立按 data-tr 触发该句译文；句子正文/单词都不响应翻译。
