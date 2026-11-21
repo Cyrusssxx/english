@@ -804,7 +804,9 @@ function wrTplBody(en, cn, struct, sentsAlt) {
     const enHtml = es.map((s, i) => {
         const sw = swMap[i];
         const attr = sw
-            ? ` class="wr-line wr-swap" data-swap="${wrEscAttr(JSON.stringify({ tag: sw.tag, tips: sw.tips, alts: sw.alts }))}"`
+            // orig 带 {{topic}} 等占位符原文：气泡里「当前表达」和下面的替换句要用同一套写法，
+            // 否则正文 chip 被渲染成 topic、气泡里却是 {{topic}}，读者会以为两者不是同一句。
+            ? ` class="wr-line wr-swap" data-swap="${wrEscAttr(JSON.stringify({ tag: sw.tag, tips: sw.tips, orig: s, alts: sw.alts }))}"`
             : ' class="wr-line"';
         return `<div${attr}>${wrSentenceHtml(s, struct && struct[i])}</div>`;
     }).join('');

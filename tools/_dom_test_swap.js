@@ -1,6 +1,8 @@
 /* DOM 验证「整句可替换」气泡（2026-11-21）
-   A. 押题范文：模板句带 .yt-swap + data-swap，悬停弹出替换列表，当前表达＝句子原文
-   B. 模板骨架：第一段 / 第三段骨架行、第二段引入句也挂了替换；占位符一个不少
+   A. 押题范文：模板句带 .yt-swap + data-swap，悬停弹出替换列表，当前表达＝句子原文；
+      大作文只做第三段（立场 / 收尾），小作文做寒暄 / 来意 / 结尾
+   B. 模板骨架：第一段 / 第三段骨架行、第二段引入句也挂了替换；占位符集合必须与原句相同
+   C. 衔接逻辑：替换句与紧邻句不共用同一连接词（followed by / by contrast 之类）
    两页共用 common.js 的 .wr-upg-pop.wr-swap-pop，这里走真实事件（mouseover + 延迟）。 */
 const fs = require('fs');
 const path = require('path');
@@ -65,18 +67,35 @@ function checkData(d, label, hasPh) {
     // 数据侧：54 句挂了 swap，且只挂在大作文图表 10 篇 + 小作文 8 篇
     let swSents = 0, swAlts = 0;
     const nos = [];
+    const perNo = {};
     Y.groups.forEach(g => g.items.forEach(it => {
         let n = 0;
         (it.blocks || []).forEach(b => (b.sents || []).forEach(s => {
             if (s.swap) { swSents++; n++; swAlts += (s.swap.alts || []).length; }
         }));
-        if (n) nos.push(it.no);
+        if (n) { nos.push(it.no); perNo[it.no] = { n, big: g.id !== 't1' }; }
     }));
-    if (swSents !== 54) fail(`可替换句 ${swSents} 条，应为 54`);
+    if (swSents !== 44) fail(`可替换句 ${swSents} 条，应为 44（大作文 10×2 + 小作文 8×3）`);
     else pass(`可替换句 ${swSents} 条 / 替换句 ${swAlts} 条，覆盖 ${nos.length} 篇`);
     const wantNos = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26];
     if (nos.slice().sort((a, b) => a - b).join(',') !== wantNos.join(',')) fail('覆盖篇号不符: ' + nos.join(','));
     else pass('覆盖篇号 = 图表 10 篇 + 小作文 8 篇');
+
+    // 大作文只替换第三段：每篇 2 句，且都落在最后一个 p 块（第三段）
+    let bigBad = [];
+    Y.groups.filter(g => g.id !== 't1').forEach(g => g.items.forEach(it => {
+        const pBlocks = (it.blocks || []).filter(b => b.k === 'p');
+        const lastP = pBlocks[pBlocks.length - 1];
+        const inLast = (lastP.sents || []).filter(s => s.swap).length;
+        const total = (it.blocks || []).reduce((a, b) => a + (b.sents || []).filter(s => s.swap).length, 0);
+        if (!total) return;                      // 图画/名言类没挂替换，跳过
+        if (total !== 2 || inLast !== total) bigBad.push(`NO${it.no}(${inLast}/${total})`);
+    }));
+    if (bigBad.length) fail('大作文替换句越出第三段或数量不对: ' + bigBad.join(' '));
+    else pass('大作文 10 篇各 2 句，全部落在第三段（前两段不换）');
+    const smallBad = Object.keys(perNo).filter(k => !perNo[k].big && perNo[k].n !== 3);
+    if (smallBad.length) fail('小作文每篇应为 3 句，异常: ' + smallBad.join(','));
+    else pass('小作文 8 篇各 3 句（寒暄 / 来意 / 结尾或过渡）');
 
     // 打开 NO6：渲染出的 .yt-swap 与数据一致
     W1.ytOpen(6);
@@ -174,11 +193,12 @@ function checkData(d, label, hasPh) {
         sw.forEach(l => {
             let j = null;
             try { j = JSON.parse(l.getAttribute('data-swap')); } catch (e) { return; }
-            const origin = l.textContent || '';
-            const phs = (origin.match(/\{\{(.+?)\}\}/g) || []);
+            // 原句的占位符集合必须与替换句完全相同：少一个换题会漏填，多一个会泄漏上一篇的槽
+            const phSet = t => new Set((String(t).match(/\{\{(.+?)\}\}/g) || []).map(x => x.replace(/[{}]/g, '')));
+            const o = phSet(j.orig || '');
             j.alts.forEach(a => {
-                // 原句用了几个占位符，替换句至少要保留同样的「题相关槽位」
-                if (phs.length && !/\{\{/.test(a.en)) phBad++;
+                const p = phSet(a.en);
+                if (o.size !== p.size || [...o].some(k => !p.has(k))) phBad++;
             });
         });
     });
@@ -205,6 +225,45 @@ function checkData(d, label, hasPh) {
         if (!tag) fail('骨架气泡缺分类标签');
         else pass('骨架行悬停弹气泡，标签：' + tag + ' · ' + pop2.querySelectorAll('.wup-item').length + ' 条替换');
     }
+
+    /* ========== C. 衔接逻辑：换句后不能和邻句「撞连接词」 ========== */
+    const CONN = ['followed by', 'by contrast', 'on balance', 'in addition', 'however',
+        'therefore', 'thus', 'meanwhile', 'for example', 'as a result',
+        'taken together', 'taken as a whole', 'in this way', 'overall'];
+    const low = t => String(t || '').toLowerCase();
+    const shared = (a, b) => CONN.filter(c => low(a).indexOf(c) >= 0 && low(b).indexOf(c) >= 0);
+    let connBad = [];
+
+    // 押题：按篇内句序，比对替换句与前后一句
+    Y.groups.forEach(g => g.items.forEach(it => {
+        const flat = [];
+        (it.blocks || []).forEach(b => (b.sents || []).forEach(s => flat.push(s.en)));
+        flat.forEach((en, i) => {
+            const sw = (it.blocks || []).flatMap(b => b.sents || [])[i] && (it.blocks || []).flatMap(b => b.sents || [])[i].swap;
+            if (!sw) return;
+            const nbr = [flat[i - 1], flat[i + 1]].filter(Boolean).join(' ');
+            (sw.alts || []).forEach(a => {
+                const c = shared(a.en, nbr);
+                if (c.length) connBad.push(`NO${it.no} 与邻句共用「${c.join('/')}」`);
+            });
+        });
+    }));
+
+    // 模板骨架：句内按 wrSplitEn 切，比对同行前后句
+    TPL.sections.forEach(sec => (sec.skeletons || []).forEach(v => {
+        if (!v.sents_alt) return;
+        const sents = W2.wrSplitEn(v.en);
+        v.sents_alt.forEach(r => {
+            const nbr = [sents[r.idx - 1], sents[r.idx + 1]].filter(Boolean).join(' ');
+            r.alts.forEach(a => {
+                const c = shared(a.en, nbr);
+                if (c.length) connBad.push(`[${sec.id}] ${v.label} 与邻句共用「${c.join('/')}」`);
+            });
+        });
+    }));
+
+    if (connBad.length) fail('替换句与邻句撞连接词 ' + connBad.length + ' 处：' + connBad.slice(0, 4).join('；'));
+    else pass('所有替换句与前后句不共用连接词（换完仍读得通）');
 
     console.log(ok ? '\nSWAP ALL PASS' : '\nSWAP HAS FAILURES');
     process.exit(ok ? 0 : 1);

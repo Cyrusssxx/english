@@ -312,10 +312,11 @@ function ytIsTplSent(text, no) {
     return YT_TPL_PATTERNS.some(re => re.test(String(text || '')));
 }
 
-/** 图例：只在含有骨架句的篇目显示；有整句替换备选的再补一条 */
-function ytLegendHtml(hasSwap) {
+/** 图例：只列本篇真的出现的标记；空图例不渲染 */
+function ytLegendHtml(hasSkel, hasTpl, hasSwap) {
     return `<div class="yt-legend">`
-        + `<span class="yt-lg"><i class="yt-lg-skel">骨架</i>固定句式，原样背</span>`
+        + (hasSkel ? `<span class="yt-lg"><i class="yt-lg-skel">骨架</i>固定句式，原样背</span>` : '')
+        + (hasTpl ? `<span class="yt-lg"><i class="yt-lg-tpl">模板</i>可整句套用的功能句</span>` : '')
         + (hasSwap ? `<span class="yt-lg"><i class="yt-lg-swap">替换</i>悬停看整句换法</span>` : '')
         + `<span class="yt-lg"><i class="yt-lg-num">65%</i>数据</span>`
         + `<span class="yt-lg"><i class="yt-lg-kw">词组</i>可点查释义</span>`
@@ -389,7 +390,8 @@ function ytEssayHtml(it) {
     const metaLines = (ss, pick) => ss.map(s => para('ye-meta', ytMarkNums(ytEsc(pick(s))))).join('');
 
     const enParts = [], cnParts = [];
-    let skelN = 0;   // 有骨架片段才显示图例
+    let skelN = 0;   // 有骨架片段才显示对应图例项
+    let tplN = 0;    // 模板功能句（小作文）数量
     const hasSwap = blocks.some(b => (b.sents || []).some(s => s.swap && (s.swap.alts || []).length));
     blocks.forEach((b, bi) => {
         const ss = sentsOf(b);
@@ -407,18 +409,21 @@ function ytEssayHtml(it) {
         let inner = ss.map(s => {
             const i = n++;
             const h = ytWordHtml(s.en);
-            if (h.indexOf('class="yt-skel"') >= 0 || h.indexOf('class="yt-fill"') >= 0) skelN++;
-            // 模板功能句角标也做兄弟节点，文字不进 .yt-jsent 的 textContent（逐句拼回校验不吞字）。
-            const tpl = ytIsTplSent(s.en, it.no)
-                ? `<span class="yt-tpl-tag" title="模板功能句：可整句背下来套用">模板</span>` : '';
+            // 图例「骨架」只认真骨架片段；.yt-fill 是小作文整句当填槽用的容器，不算骨架
+            if (h.indexOf('class="yt-skel"') >= 0) skelN++;
+            // 模板功能句：整句加高亮（与骨架同一套视觉），不再逐句插「模板」角标——
+            // 每句前面挂一个徽章太碎，用户 2026-11-21 要求「参考骨架打高亮就行」。
+            const isTpl = ytIsTplSent(s.en, it.no);
+            if (isTpl) tplN++;
             // 整句可替换：默认仍显示原句，悬停/点击看「更贴这道题」的写法（气泡由 common.js 统一渲染）
+            const cls = 'yt-jsent' + (isTpl ? ' yt-tpl' : '')
+                + ((s.swap && s.swap.alts && s.swap.alts.length) ? ' yt-swap' : '');
             const swapAttr = (s.swap && s.swap.alts && s.swap.alts.length)
-                ? ` class="yt-jsent yt-swap" data-swap="${ytEsc(JSON.stringify(s.swap))}"`
-                : ' class="yt-jsent"';
+                ? ` class="${cls}" data-swap="${ytEsc(JSON.stringify(s.swap))}"`
+                : ` class="${cls}"`;
             // 「译」标记放在 .yt-jsent 之外做兄弟节点：句子 textContent 仍严格等于原文（校验不吞字），
             // 又能独立按 data-tr 触发该句译文；句子正文/单词都不响应翻译。
-            return tpl
-                + `<span${swapAttr} data-i="${i}">${h}</span>`
+            return `<span${swapAttr} data-i="${i}">${h}</span>`
                 + `<button type="button" class="yt-sent-tr" data-tr="${i}" title="看本句中文">译</button>`
                 + `<span class="yt-jsent-cn" data-for="${i}" hidden>${ytMarkNums(ytEsc(s.cn || ''))}</span>`;
         }).join(' ');
@@ -426,7 +431,8 @@ function ytEssayHtml(it) {
         enParts.push(para(clsOf(b), inner));
         cnParts.push(para(clsOf(b), ytMarkNums(ytEsc(cnText))));
     });
-    return `<div class="yt-en">${skelN ? ytLegendHtml(hasSwap) : ''}${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
+    const showLegend = skelN || tplN || hasSwap;
+    return `<div class="yt-en">${showLegend ? ytLegendHtml(skelN, tplN, hasSwap) : ''}${enParts.join('')}</div><div class="yt-cn" hidden>${cnParts.join('')}</div>`;
 }
 
 /** 单句译块开合（同步 .yt-jsent.on 状态标记；按用户要求不渲染高亮/下划线）；cnBox 为 .yt-jsent-cn */

@@ -1,8 +1,10 @@
-/* 押题页小作文「模板功能句」角标回归。
+/* 押题页小作文「模板功能句」高亮回归（2026-11-21 改版：角标 → 整句高亮）
    运行：node tools/_dom_test_yati_tpl.js
-   验：① 小作文 8 篇模板句有紫色「模板」角标，且角标不进句子 textContent；
-       ② 大作文 18 篇不出现角标（避免通用句式误标）；
-       ③ 模板句判定随风句话覆盖（开头寒暄/来意/收尾/通知纪要格式）。 */
+   验：① 模板句是 .yt-jsent.yt-tpl（整句淡底 + 底部虚线），**不再**插「模板」角标；
+       ② 大作文 18 篇零高亮（避免通用句式误标）；
+       ③ 高亮不吞字：句子 textContent 严格等于原文；
+       ④ 小作文图例出现「模板」项，大作文图例不出现；
+       ⑤ 句式覆盖：寒暄/来意/收尾/纪要四类都能命中。 */
 const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('E:/deps_cache/jsdom-test/node_modules/jsdom');
@@ -17,15 +19,19 @@ let ok = true;
 const fail = m => { ok = false; console.log('FAIL ' + m); };
 const pass = m => console.log('OK   ' + m);
 
-/* 1. JS / CSS 就位 */
-if (!/ytIsTplSent/.test(js) || !/yt-tpl-tag/.test(js)) fail('缺模板句判定/渲染逻辑');
-else pass('模板句判定与渲染逻辑就位');
-if (!/\.yt-tpl-tag\s*\{[^}]*color:\s*#7c3aed/.test(css)) fail('缺模板角标样式');
-else pass('模板角标样式就位（紫色，区别于骨架蓝）');
-if (!/html\.dark \.yt-tpl-tag/.test(css)) fail('缺模板角标深色样式');
-else pass('模板角标深色主题适配');
+/* 1. JS / CSS 就位：高亮取代角标 */
+if (!/ytIsTplSent/.test(js) || !/yt-tpl/.test(js)) fail('缺模板句判定/高亮逻辑');
+else pass('模板句判定与高亮逻辑就位');
+if (/yt-tpl-tag/.test(js)) fail('yati.js 仍在渲染「模板」角标');
+else pass('不再逐句插「模板」角标');
+if (!/\.yt-jsent\.yt-tpl\s*\{[^}]*background:/.test(css)) fail('缺模板句高亮样式');
+else pass('模板句高亮样式就位（整句淡底，与骨架同套视觉）');
+if (!/html\.dark \.yt-jsent\.yt-tpl/.test(css)) fail('缺模板句高亮深色样式');
+else pass('模板句高亮深色主题适配');
+if (/\.yt-tpl-tag\s*\{/.test(css)) fail('CSS 里还留着废弃的 .yt-tpl-tag');
+else pass('废弃的角标样式已清掉');
 
-/* 2. DOM 实跑：逐篇开弹层，数角标 */
+/* 2. DOM 实跑：逐篇开弹层，数高亮 */
 const dom = new JSDOM(html, { runScripts: 'outside-only', url: 'http://localhost/yati.html', pretendToBeVisual: true });
 const { window } = dom;
 window.fetch = () => Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve(JSON.parse(raw)) });
@@ -43,27 +49,27 @@ try { window.eval(fs.readFileSync(path.join(PWA, 'js/common.js'), 'utf8')); } ca
 try { window.eval(fs.readFileSync(path.join(PWA, 'js/yati.js'), 'utf8')); } catch (e) { fail('脚本异常 ' + e.message); }
 const d = window.document;
 const wait = ms => new Promise(r => setTimeout(r, ms));
-const flat = data.groups.flatMap(g => g.items);
 
 (async () => {
   await wait(150);
-  let smallTagged = 0, bigTagged = 0, textBad = [];
-  const smallTplNos = [];
+  let smallHi = 0, bigHi = 0, textBad = [];
+  const smallNos = [];
   for (const g of data.groups) {
     const isSmall = g.id === 't1';
     for (const it of g.items) {
       window.ytOpen(it.no);
       const essay = d.getElementById('ytMEssay');
+      const his = essay.querySelectorAll('.yt-jsent.yt-tpl');
       const tags = essay.querySelectorAll('.yt-tpl-tag');
       const sents = [...essay.querySelectorAll('.yt-jsent')];
       if (isSmall) {
-        smallTagged += tags.length;
-        if (tags.length) smallTplNos.push(it.no);
+        smallHi += his.length;
+        if (his.length) smallNos.push(it.no);
       } else {
-        bigTagged += tags.length;
+        bigHi += his.length;
       }
-      // 角标是句首兄弟节点，句子 textContent 必须严格等于原文（拼接校验不吞字）。
-      // 注意 meta 块走 metaLines 分支不产生 .yt-jsent，其余（h/p/sign）都走逐句分支。
+      if (tags.length) fail(`NO${it.no} 仍渲染了 ${tags.length} 个模板角标`);
+      // meta 块（日期/记录人）走 metaLines，不产生 .yt-jsent；其余 h/p/sign 逐句
       const orig = [];
       (it.blocks || []).filter(b => b.k !== 'meta').forEach(b => (b.sents || []).forEach(s => orig.push(s.en)));
       sents.forEach((el, i) => {
@@ -71,20 +77,33 @@ const flat = data.groups.flatMap(g => g.items);
       });
     }
   }
-  if (bigTagged) fail('大作文出现模板角标（误标）: ' + bigTagged);
-  else pass('大作文 18 篇零角标');
-  if (!smallTagged) fail('小作文没有模板角标');
-  else pass(`小作文模板角标 ${smallTagged} 个，分布篇号 ${smallTplNos.join(',')}`);
-  if (textBad.length) fail('角标吞了句子文字: ' + JSON.stringify(textBad.slice(0, 3)));
+  if (bigHi) fail('大作文出现模板高亮（误标）: ' + bigHi);
+  else pass('大作文 18 篇零模板高亮');
+  if (!smallHi) fail('小作文没有模板高亮');
+  else pass(`小作文模板句高亮 ${smallHi} 句，分布篇号 ${smallNos.join(',')}`);
+  if (smallNos.length !== 8) fail(`只有 ${smallNos.length} 篇有小作文模板高亮，应为 8 篇`);
+  else pass('小作文 8 篇都有模板句高亮');
+  if (textBad.length) fail('高亮吞了句子文字: ' + JSON.stringify(textBad.slice(0, 3)));
   else pass('所有句子 textContent 严格等于原文');
 
-  /* 3. 关键句式覆盖：每类至少一句被打标 */
+  /* 3. 图例：小作文有「模板」项，大作文没有 */
+  window.ytOpen(19);
+  const lg19 = d.getElementById('ytMEssay').querySelector('.yt-legend');
+  if (!lg19) fail('小作文缺图例');
+  else if (!lg19.querySelector('.yt-lg-tpl')) fail('小作文图例缺「模板」项');
+  else pass('小作文图例含「模板」项：' + lg19.querySelector('.yt-lg-tpl').parentNode.textContent.trim());
+  window.ytOpen(6);
+  const lg6 = d.getElementById('ytMEssay').querySelector('.yt-legend');
+  if (lg6 && lg6.querySelector('.yt-lg-tpl')) fail('大作文图例错显「模板」项');
+  else pass('大作文图例不含「模板」项');
+
+  /* 4. 关键句式覆盖：每类至少一句被高亮 */
   const need = ['I hope this message finds you well.', 'I am writing to', 'I am looking forward to hearing from you soon.', 'The meeting concluded with'];
   const allSmallEn = data.groups.filter(g => g.id === 't1').flatMap(g => g.items)
       .flatMap(it => (it.blocks || []).flatMap(b => (b.sents || []).map(s => s.en)));
-  const taggedEn = allSmallEn.filter(en => window.ytIsTplSent(en, 20));
+  const hitEn = allSmallEn.filter(en => window.ytIsTplSent(en, 20));
   need.forEach(pat => {
-    if (!taggedEn.some(en => en.indexOf(pat) >= 0)) fail('模板句式未覆盖: ' + pat);
+    if (!hitEn.some(en => en.indexOf(pat) >= 0)) fail('模板句式未覆盖: ' + pat);
   });
   pass('寒暄/来意/收尾/纪要四类句式均覆盖');
 

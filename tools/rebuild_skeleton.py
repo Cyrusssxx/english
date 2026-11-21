@@ -726,7 +726,7 @@ TPL_SWAPS = [
      'alts': [
          {'en': 'The two charts above track the changes in {{topic1}} and {{topic2}} respectively from {{time1}} to {{time2}}.',
           'cn': '上述两张图分别追踪了 {{time1}} 至 {{time2}} 期间 {{topic1}} 与 {{topic2}} 的变化。'},
-         {'en': 'What the two charts above show is how {{topic1}} and {{topic2}} changed respectively from {{time1}} to {{time2}}.',
+         {'en': 'What the two charts above show is how {{topic1}} and {{topic2}} each changed from {{time1}} to {{time2}}.',
           'cn': '两张图展示的是 {{time1}} 至 {{time2}} 期间 {{topic1}} 与 {{topic2}} 各自的变化。'},
      ]},
     # ── 第一段 · 走势描述 ──
@@ -769,17 +769,17 @@ TPL_SWAPS = [
      'alts': [
          {'en': 'Measures of this kind would tackle the problem where it begins.',
           'cn': '这类措施会在问题产生的源头加以解决。'},
-         {'en': 'Acting on these fronts would remove the root cause rather than the symptom.',
-          'cn': '在这些方面着手，能除根而不只是治表。'},
+         {'en': 'Acting on these fronts would remove the root cause instead of merely easing the symptom.',
+          'cn': '在这些方面着手，能除根，而不只是暂时缓解症状。'},
      ]},
     # ── 第三段 · 双面版 ──
     {'match': 'On balance, the figures reveal both gains and costs in {{topic}}',
      'tag': '第三段立场', 'tips': '双面题开场：先承认两面并存，再给判断条件',
      'alts': [
-         {'en': 'On balance, the figures show {{topic}} bringing benefits and burdens at the same time.',
-          'cn': '总的来说，这些数据表明 {{topic}} 同时带来收益与负担。'},
-         {'en': 'Taken together, the figures present a mixed picture of {{topic}}, with gains and costs side by side.',
-          'cn': '综合来看，这些数据呈现出 {{topic}} 的复杂面貌：收益与代价并存。'},
+         {'en': 'On balance, the figures show {{topic}} yielding both benefits and drawbacks at the same time.',
+          'cn': '总的来说，这些数据表明 {{topic}} 同时带来好处与弊端。'},
+         {'en': 'Taken together, the figures present a mixed picture of {{topic}}, with promise and pressure side by side.',
+          'cn': '综合来看，这些数据呈现出 {{topic}} 的复杂面貌：希望与压力并存。'},
      ]},
     {'match': 'The real test is whether the costs are managed as seriously as the gains are pursued',
      'tag': '第三段收尾', 'tips': '条件式收尾：代价有没有被同等对待',
@@ -795,7 +795,7 @@ TPL_SWAPS = [
 P2_OPEN_SWAP = {
     'tag': '第二段引入', 'tips': '引入原因段，不承诺条数最安全',
     'alts': [
-        {'en': 'Several factors account for this trend.', 'cn': '这一趋势由多种因素造成。'},
+        {'en': 'Several factors account for this pattern.', 'cn': '这一格局由多种因素造成。'},
         {'en': 'Behind this pattern lie several major reasons.', 'cn': '这一格局背后有几大原因。'},
         {'en': 'This trend can be traced to more than one cause.', 'cn': '这一趋势可追溯到不止一个原因。'},
     ],

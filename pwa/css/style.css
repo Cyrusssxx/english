@@ -5887,28 +5887,30 @@ html.dark body.sw-drill-on .sw-drill-ph.on { color: #8fb4d8; background: rgba(12
 .sw-drill-sub + .sw-drill-sub { margin-top: 8px; border-top: 1px solid var(--border, rgba(0,0,0,.08)); padding-top: 6px; }
 .sw-drill-sub-t { font-size: .78rem; font-weight: 600; color: var(--primary); padding: 6px 14px 0; letter-spacing: .02em; }
 
-/* 小作文范文模板功能句角标（2026-11-20）：紫色小徽章，与蓝色骨架/金色数字/青色词组区分；
-   句首 inline 徽章，不进句子 textContent，不铺底，不遮原文。 */
-.yt-tpl-tag {
-    display: inline-block; vertical-align: baseline;
-    margin: 0 5px 0 0; padding: 0 4px;
-    font-family: -apple-system, "Microsoft YaHei", sans-serif;
-    font-size: .68rem; line-height: 1.5; font-weight: 700;
-    color: #7c3aed; background: rgba(124, 58, 237, .10);
-    border: 1px solid rgba(124, 58, 237, .28); border-radius: 3px;
-    opacity: .82; white-space: nowrap;
+/* 小作文模板功能句（2026-11-21 改版）：不再逐句插「模板」角标——整句会给每句前面挂一个
+   小标签，读起来碎。改成和骨架句同一套高亮：淡底 + 底部虚线，句末不额外占位。
+   与可替换的紫虚线分工：底色=这句是固定句式，紫色下划线=这句另有写法。 */
+/* 只留底色：模板句多数同时可替换，再加一条虚线下边框就和「替换」的点线混成一样 */
+.yt-jsent.yt-tpl {
+    background: rgba(124, 58, 237, .085);
+    border-radius: 2px; padding: 0 1px;
 }
-html.dark .yt-tpl-tag { color: #c4b5fd; background: rgba(167, 139, 250, .16); border-color: rgba(167, 139, 250, .38); }
+html.dark .yt-jsent.yt-tpl {
+    background: rgba(167, 139, 250, .16);
+}
+.yt-lg-tpl { background: rgba(124, 58, 237, .10); border-bottom-color: rgba(124, 58, 237, .45); color: #6d28d9; }
+html.dark .yt-lg-tpl { color: #c4b5fd; background: rgba(167, 139, 250, .18); }
 
 /* ==================== 整句可替换（2026-11-21）：悬停看这句还能怎么写 ====================
    押题范文句子（.yt-jsent.yt-swap）与模板骨架行（.wr-line.wr-swap）共用同一套气泡：
    默认正文原句不动，鼠标停留 140ms 或点击才弹 .wr-upg-pop.wr-swap-pop（common.js 渲染）。
-   虚线下划线＝这句有备选写法；紫色与「模板」徽章同色系，区别于蓝色骨架 / 青色词组。 */
+   虚线下划线＝这句有备选写法；紫色与模板句高亮同色系，区别于蓝色骨架 / 青色词组。 */
 .yt-swap, .wr-swap { cursor: help; }
 .yt-swap, .wr-line.wr-swap {
-    text-decoration: underline dotted rgba(124, 58, 237, .40);
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
+    /* 2px 才在正文里看得见：1px 虚线与骨架的蓝色虚底混在一起分不出 */
+    text-decoration: underline dotted rgba(124, 58, 237, .58);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
     border-radius: 2px;
     transition: background .15s ease, text-decoration-color .15s ease;
 }
@@ -5917,7 +5919,7 @@ html.dark .yt-tpl-tag { color: #c4b5fd; background: rgba(167, 139, 250, .16); bo
     text-decoration-color: #7c3aed;
     background: rgba(124, 58, 237, .07);
 }
-html.dark .yt-swap, html.dark .wr-line.wr-swap { text-decoration-color: rgba(167, 139, 250, .42); }
+html.dark .yt-swap, html.dark .wr-line.wr-swap { text-decoration-color: rgba(167, 139, 250, .62); }
 html.dark .yt-swap:hover, html.dark .yt-swap.active,
 html.dark .wr-line.wr-swap:hover, html.dark .wr-line.wr-swap.active {
     text-decoration-color: #c4b5fd;

@@ -631,7 +631,8 @@ function wrSwShow(el) {
 
     const pop = document.createElement('div');
     pop.className = 'wr-upg-pop wr-swap-pop';
-    const orig = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    // 优先用 data-swap 里的 orig（含 {{topic}} 等占位符），退回落 DOM 文本
+    const orig = (d.orig || el.textContent || '').replace(/\s+/g, ' ').trim();
     const altsHtml = d.alts.map(a =>
         '<li class="wup-item"><div class="wup-en">' + apEsc(a.en) + '</div><div class="wup-cn">' + apEsc(a.cn) + '</div></li>'
     ).join('');
