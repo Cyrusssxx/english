@@ -214,29 +214,29 @@
      "blocks": [
       {
        "k": "p",
-       "v": "The table above clearly illustrates the changes in domestic sales of conventional and new energy vehicles from January to June 2025. During this period, sales of new energy vehicles rose from 0.79 million to 1.12 million, despite a slight decline in April. By contrast, the figure for conventional vehicles fluctuated, peaking at 1.33 million in March. New energy vehicles outsold conventional ones in May, but the latter regained the lead in June.",
+       "v": "The table above clearly illustrates the changes in fuel and new energy vehicle sales from January to June 2025. During this period, sales of new energy vehicles rose from 0.79 to 1.12 million, despite a dip in April shared by both types. By contrast, the figure for fuel vehicles fluctuated, peaking at 1.33 million in March before dropping to 1.04 in April. New energy vehicles outsold fuel ones in May, but the latter regained the lead in June.",
        "sents": [
         {
-         "en": "The table above clearly illustrates the changes in domestic sales of conventional and new energy vehicles from January to June 2025.",
-         "cn": "上表清晰地展示了2025年1月至6月传统燃油车与新能源汽车国内销量的变化。"
+         "en": "The table above clearly illustrates the changes in fuel and new energy vehicle sales from January to June 2025.",
+         "cn": "上表清晰地展示了2025年1月至6月燃油车与新能源汽车销量的变化。"
         },
         {
-         "en": "During this period, sales of new energy vehicles rose from 0.79 million to 1.12 million, despite a slight decline in April.",
-         "cn": "在此期间，新能源汽车销量从79万辆上升到112万辆，尽管4月略有下降。"
+         "en": "During this period, sales of new energy vehicles rose from 0.79 to 1.12 million, despite a dip in April shared by both types.",
+         "cn": "在此期间，新能源汽车销量从79万辆升至112万辆，尽管4月两类车销量均有所回落。"
         },
         {
-         "en": "By contrast, the figure for conventional vehicles fluctuated, peaking at 1.33 million in March.",
-         "cn": "相比之下，传统燃油车销量有所波动，3月达到133万辆的峰值。"
+         "en": "By contrast, the figure for fuel vehicles fluctuated, peaking at 1.33 million in March before dropping to 1.04 in April.",
+         "cn": "相比之下，燃油车销量有所波动，3月达到133万辆的峰值，随后在4月降至104万辆。"
         },
         {
-         "en": "New energy vehicles outsold conventional ones in May, but the latter regained the lead in June.",
-         "cn": "5月新能源汽车销量超过传统燃油车，但6月后者重新领先。"
+         "en": "New energy vehicles outsold fuel ones in May, but the latter regained the lead in June.",
+         "cn": "5月新能源汽车销量超过燃油车，但6月后者重新领先。"
         }
        ]
       },
       {
        "k": "p",
-       "v": "This phenomenon can be attributed to a combination of factors. Primary among these is that improvements in batteries and charging facilities have made new energy vehicles more attractive to buyers. Equally important, lower running costs may encourage consumers to consider these models. A further driver is the lasting appeal of conventional vehicles to people who value familiar technology or lack convenient access to charging facilities. The figures thus suggest growing competition between the two categories.",
+       "v": "This phenomenon can be attributed to a combination of factors. Primary among these is that improvements in batteries and charging facilities have made new energy vehicles more attractive to buyers. Equally important, lower running costs may encourage consumers to consider these models. A further driver is the lasting appeal of fuel vehicles to those valuing familiar technology or lacking convenient charging. The figures thus suggest growing competition between the two categories.",
        "sents": [
         {
          "en": "This phenomenon can be attributed to a combination of factors.",
@@ -279,7 +279,7 @@
          }
         },
         {
-         "en": "A further driver is the lasting appeal of conventional vehicles to people who value familiar technology or lack convenient access to charging facilities.",
+         "en": "A further driver is the lasting appeal of fuel vehicles to those valuing familiar technology or lacking convenient charging.",
          "cn": "另一个推动因素是，传统燃油车对看重成熟技术或充电不便的人群仍有持久的吸引力。",
          "swap": {
           "tag": "第二段原因·燃油车惯性",
@@ -413,7 +413,7 @@
        ]
       }
      ],
-     "words": 199
+     "words": 200
     },
     {
      "no": 8,

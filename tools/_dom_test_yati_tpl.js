@@ -112,7 +112,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
         The cartoon above depicts / the figure for 等整段漏掉（用户从截图发现）。 */
   const skelNeed = {
     6: ['illustrates how', 'are distributed', 'respectively, while', 'On balance,'],
-    7: ['illustrates the changes in', 'During this period,', 'despite a slight decline', 'the figure for', 'fluctuated, peaking at', 'outsold', 'regained the lead', 'On balance,'],
+    7: ['illustrates the changes in', 'During this period,', 'despite a dip', 'the figure for', 'fluctuated, peaking at', 'outsold', 'regained the lead', 'On balance,'],
     8: ['illustrates the changes in', 'the figure for', 'On balance,'],
     9: ['illustrates how', 'are distributed', 'On balance,'],
     10: ['the changes in', 'During this period,', 'On balance,'],
@@ -136,7 +136,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   else pass('填槽内容未被误标（purposes of continuing education 不在骨架内）');
 
   // NO7 新增的「回落 + 反超」规则不得误标别篇（这些片段只出现在 NO7）
-  const ripple = ['despite a slight decline', 'fluctuated', 'outsold', 'regained the lead'];
+  const ripple = ['despite a dip', 'fluctuated', 'outsold', 'regained the lead'];
   let spill = [];
   for (const no of [6, 8, 9, 10, 11, 12, 13, 14, 15]) {
     window.ytOpen(no);
@@ -148,7 +148,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   // NO7 第一段数据本体不得被标蓝
   window.ytOpen(7);
   const skel7 = [...d.querySelectorAll('#ytMEssay .yt-skel')].map(x => x.textContent).join(' ');
-  if (/0\.79 million|1\.12 million|conventional vehicles|January/.test(skel7)) fail('NO7 数据/填槽被误标为骨架');
+  if (/0\.79 million|1\.12 million|fuel vehicles|January/.test(skel7)) fail('NO7 数据/填槽被误标为骨架');
   else pass('NO7 数据本体未被误标');
 
   console.log(ok ? '\n全部通过' : '\n有失败');

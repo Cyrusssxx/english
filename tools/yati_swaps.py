@@ -126,7 +126,7 @@ SWAPS = {
              {'en': 'Equally important, fuel and maintenance bills are lighter for electric cars, and that saving weighs heavily in many purchase decisions.',
               'cn': '同样重要的是，电动车的燃料与保养开支更轻，这笔节省在许多购车决定中分量很重。'},
          ]},
-        {'match': 'A further driver is the lasting appeal of conventional vehicles',
+        {'match': 'A further driver is the lasting appeal of fuel vehicles',
          'tag': '第二段原因·燃油车惯性',
          'tips': '解释燃油车为什么没被取代，语气客观，不贬低电动车',
          'alts': [

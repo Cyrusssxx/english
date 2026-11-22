@@ -182,7 +182,7 @@ const YT_SKEL_SEGS = [
     /\bDuring this period,/i,
     // 动态骨架③「双线波动 · 有回落 + 反超」（NO7 燃油车 vs 新能源）：只标这套骨架特有的固定片段。
     // 数据句动词 rose from / fell from 仍不标（模板多套写法，标了误导，且 NO10/13/14 会误伤）。
-    /\bdespite a (?:slight|brief) decline\b/i,
+    /\bdespite a (?:slight|brief)? ?(?:decline|dip)\b/i,
     /\bfluctuated,? peaking at\b/i,
     /\boutsold\b/i,
     /\bregained the lead\b/i,
