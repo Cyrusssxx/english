@@ -62,7 +62,7 @@ DYN_OPEN3 = sent('The {{chart}} chart above clearly illustrates the sharp contra
                  [[S('The {{chart}} chart above', 't'), S(' clearly illustrates', 'p'), S(' the sharp contrast in {{topic}}', 'o'), S(' between {{item1}} and {{item2}}', 'o'), S(' from {{time1}} to {{time2}}', 'o'), S('.', '')]])
 
 DYN = [
-    {'label': '① 一条线在走', 'years': '2013 · 2023',
+    {'label': '④ 一条线在走', 'years': '2013 · 2023',
      'en': DYN_OPEN['en'] + ' ' + 'During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.',
      'cn': DYN_OPEN['cn'] + '在此期间，它从 {{num1}} 稳步升至 {{num2}}，始终没有明显回落。',
      'struct': [DYN_OPEN['struct'],
@@ -70,7 +70,7 @@ DYN = [
      'alts': {'rose steadily': 'climbed steadily / kept rising'},
      'demo': ('The bar chart above clearly illustrates the changes in the proportion of college students taking part-time jobs '
               'from freshman year to senior year. During this period, it rose steadily from 67.77% to 88.24%, without any noticeable fall.')},
-    {'label': '② 两条都在涨', 'years': '2010 · 2017 · 2022',
+    {'label': '① 两条都在涨', 'years': '2010 · 2017 · 2022',
      'en': DYN_OPEN['en'] + ' ' + 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.',
      'cn': DYN_OPEN['cn'] + '在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。',
      'struct': [DYN_OPEN['struct'],
@@ -81,7 +81,7 @@ DYN = [
               'countries from 2000 to 2008. During this period, subscriptions in developing countries rose sharply from 0.5 billion '
               'to 4 billion. By contrast, the figure for developed countries saw a modest increase, climbing from 0.7 billion to '
               '1 billion over the same period.')},
-    {'label': '③ 一升一降', 'years': '2011 · 2014 · 2019',
+    {'label': '② 一升一降', 'years': '2011 · 2014 · 2019',
      'en': DYN_OPEN3['en'] + ' ' + 'During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.',
      'cn': DYN_OPEN3['cn'] + '在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 则稳步下降，从 {{num3}} 降至 {{num4}}。',
      'struct': [DYN_OPEN3['struct'],
@@ -91,7 +91,7 @@ DYN = [
      'demo': ('The bar chart above clearly illustrates the sharp contrast in market share between Chinese and Japanese car brands '
               'from 2008 to 2009. During this period, Chinese brands rose sharply from 26% to 31%. By contrast, the figure for '
               'Japanese brands saw a steady decline, falling from 35% to 26%.')},
-    {'label': '④ 先稳后急（图有分段就换这套）', 'years': '2013 · 2023',
+    {'label': '⑤ 先稳后急（图有分段就换这套）', 'years': '2013 · 2023',
      'en': DYN_OPEN['en'] + ' ' + 'From {{time1}} to {{time3}}, it rose steadily from {{num1}} to {{num3}}, and then climbed sharply to {{num2}}.',
      'cn': DYN_OPEN['cn'] + '{{time1}} 到 {{time3}} 期间，它从 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。',
      'struct': [DYN_OPEN['struct'],
@@ -101,6 +101,36 @@ DYN = [
      'demo': ('The line chart above clearly illustrates the changes in the health literacy rate of Chinese residents from 2012 to 2021. '
               'From 2012 to 2015, it rose steadily from 8.80% to 10.25%, and then climbed sharply to 25.40%.')},
 ]
+
+# ③ 双线波动 · 有回落 + 反超（2026-11-22 补，NO7 燃油车 vs 新能源）
+# 原有「一升一降」「两条都涨」都覆盖不了「都涨但途中有回落、中段反超又被追回」。
+DYN_WAVE = {
+    'label': '③ 双线波动 · 有回落 + 反超',
+    'years': 'NO7 燃油车 vs 新能源（一路上扬但途中有回落，中段反超又被追回）',
+    'en': (DYN_OPEN['en'] + ' '
+           + 'During this period, {{item1}} rose from {{num1}} to {{num2}}, despite a slight decline in {{time3}}. '
+           + 'By contrast, the figure for {{item2}} fluctuated, peaking at {{num3}} in {{time4}}. '
+           + '{{item1}} outsold {{item2}} in {{time5}}, but the latter regained the lead in {{time6}}.'),
+    'cn': (DYN_OPEN['cn']
+           + '在此期间，{{item1}} 从 {{num1}} 升至 {{num2}}，尽管在 {{time3}} 略有回落。'
+           + '相比之下，{{item2}} 则有波动，在 {{time4}} 达到 {{num3}} 的峰值。'
+           + '{{item1}} 在 {{time5}} 反超 {{item2}}，但后者在 {{time6}} 重新领先。'),
+    'struct': [DYN_OPEN['struct'],
+               [S('During this period', 'trans'), S(', {{item1}}', 't'), S(' rose', 'p'), S(' from {{num1}} to {{num2}}', 'o'),
+                S(', despite a slight decline', 'o'), S(' in {{time3}}', 'o'), S('.', '')],
+               [S('By contrast', 'trans'), S(', the figure for {{item2}}', 't'), S(' fluctuated', 'p'),
+                S(', peaking at {{num3}}', 'o'), S(' in {{time4}}', 'o'), S('.', '')],
+               [S('{{item1}}', 't'), S(' outsold', 'p'), S(' {{item2}}', 'o'), S(' in {{time5}}', 'o'),
+                S(', but the latter', 'trans'), S(' regained the lead', 'p'), S(' in {{time6}}', 'o'), S('.', '')]],
+    'alts': {'despite a slight decline': 'despite a brief dip / with a brief fall',
+             'fluctuated': 'varied / moved up and down',
+             'regained the lead': 'took the lead again / moved back into first place'},
+    'demo': ('The table above clearly illustrates the changes in domestic sales of conventional and new energy vehicles '
+             'from January to June 2025. During this period, sales of new energy vehicles rose from 0.79 million to 1.12 million, '
+             'despite a slight decline in April. By contrast, the figure for conventional vehicles fluctuated, peaking at 1.33 million '
+             'in March. New energy vehicles outsold conventional ones in May, but the latter regained the lead in June.'),
+}
+
 
 # ══════════ 一·B、双图题（2026-11-20 补）══════════
 # 审查发现：图表 10 篇里 NO11（无障碍）/ NO12（急救）/ NO13（留学）是「漫画给场景 + 图表给数据」，
@@ -150,7 +180,7 @@ STATIC_SKELS = [
 
 # 动态段追加的两套：⑤ 漫画 + 趋势图 ⑥ 两张图表并列
 DYN_SKELS_EXTRA = [
-    {'label': '⑤ 双图 · 漫画 + 趋势图',
+    {'label': '⑥ 双图 · 漫画 + 趋势图',
      'years': 'NO13 留学回国（漫画 + 柱状）',
      'en': DBL_CARTOON_DYN['en'] + ' ' + DYN_TAIL,
      'cn': DBL_CARTOON_DYN['cn'] + DYN_TAIL_CN,
@@ -163,7 +193,7 @@ DYN_SKELS_EXTRA = [
               'below, while the chart below clearly illustrates the changes in the number of returnees from 2012 to 2022. During this period, the number rose sharply from 0.27 million '
               'to 0.6 million. By contrast, the figure for students going abroad saw a modest increase, climbing from 0.4 million '
               'to 0.7 million over the same period.')},
-    {'label': '⑥ 两张图表并列',
+    {'label': '⑦ 两张图表并列',
      'years': 'NO14 平均寿命 + 老龄化（折线 + 饼图）',
      'en': DBL_TWO['en'] + ' ' + 'During this period, {{topic1}} climbed steadily from {{num1}} to {{num2}}, while the share of {{topic2}} rose to {{percent1}}.',
      'cn': DBL_TWO['cn'] + '在此期间，{{topic1}} 从 {{num1}} 稳步升至 {{num2}}，而 {{topic2}} 的比重升至 {{percent1}}。',
@@ -869,7 +899,9 @@ def main():
          'cn': '组与组之间差别悬殊：{{item1}} 高达 {{percent1}}，而 {{item3}} 只有 {{percent3}}。', 'freq': 3, 'tag': '交叉表·组间对比'},
     ]
     s = by_id['chart_dynamic']
-    s['skeletons'] = DYN + DYN_SKELS_EXTRA   # ①~④ 单图走势 + ⑤ 漫画+趋势图 + ⑥ 两图并列
+    # 2026-11-22 顺序：两条线（①②③）→ 一条线（④⑤）→ 图画双图（⑥⑦）
+    _DYN_ORDER = [DYN[1], DYN[2], DYN_WAVE, DYN[0], DYN[3]]
+    s['skeletons'] = _DYN_ORDER + DYN_SKELS_EXTRA
     set_skeleton(s, [{'en': DYN[1]['en'], 'cn': DYN[1]['cn'], 'struct': DYN[1]['struct']}])
     s['en'] = DYN[1]['en']          # 兼容：sec['en'] 保留中间那套
     s['cn'] = DYN[1]['cn']
@@ -1017,10 +1049,26 @@ def main():
     _sw_n = sum(len(v.get('sents_alt') or []) for _s in d['sections'] for v in (_s.get('skeletons') or []))
 
     # 适配表 hint 里引用的「三套走势骨架」标签同步
+    # 骨架重排后适配表编号同步；decisions 旧别名归一到真实 label。
+    _RENUM = {
+        '「① 一条线在走」': '「④ 一条线在走」',
+        '「② 两条都在涨」': '「① 两条都在涨」',
+        '「③ 一升一降」': '「② 一升一降」',
+        '「④ 先稳后急」': '「⑤ 先稳后急」',
+        '「② 同向不同速」': '「① 两条都在涨」',
+        '「① 单线上升」': '「④ 一条线在走」',
+    }
     for r in d['chart_guide']['table']:
-        r['hint'] = (r['hint']
-                     .replace('只写一条上升线，配 steady upward trend', '一条线 → 用「① 一条线在走」')
-                     .replace('both rose steadily', '两条都在涨 → 用「② 两条都在涨」'))
+        h = r['hint']
+        for _a, _b in _RENUM.items():
+            h = h.replace(_a, _b)
+        r['hint'] = (h.replace('只写一条上升线，配 steady upward trend', '一条线 → 用「④ 一条线在走」')
+                      .replace('both rose steadily', '两条都在涨 → 用「① 两条都在涨」'))
+    for r in d['chart_guide'].get('decisions', []):
+        v = r['v']
+        for _a, _b in _RENUM.items():
+            v = v.replace(_a, _b)
+        r['v'] = v
     json.dump(d, io.open(TPL, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
     def wc(t):
@@ -1031,7 +1079,7 @@ def main():
     core = w_static + max(w_dyn) + wc(PARA2_SKEL['en']) + sum(wc(x['en']) for x in P3_POS) + sum(wc(x['en']) for x in P3_NEG)
     print('骨架重置完成：%d 个段落' % len(d['sections']))
     print('  可整句替换：%d 句骨架 + 1 句第二段引入' % _sw_n)
-    print('  P1 静态 %d 词（2 句）｜ 动态 ①%d ②%d ③%d ④%d 词' % (w_static, w_dyn[0], w_dyn[1], w_dyn[2], w_dyn[3]))
+    print('  P1 静态 %d 词（2 句）｜ 动态 %s 词' % (w_static, ' / '.join('%d' % x for x in w_dyn)))
     print('  P2 %d 词 + 机制句池 %d 条 ｜ P3 正 %d 词 / 负 %d 词 + 主体句池 %d+%d 条' % (
         wc(PARA2_SKEL['en']), len(MECH),
         sum(wc(x['en']) for x in P3_POS), sum(wc(x['en']) for x in P3_NEG), len(SUBJ_POS), len(SUBJ_NEG)))

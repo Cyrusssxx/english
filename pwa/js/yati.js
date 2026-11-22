@@ -180,6 +180,12 @@ const YT_SKEL_SEGS = [
     /\bEqually important,/i,
     /\bA further driver is(?: that)?/i,
     /\bDuring this period,/i,
+    // 动态骨架③「双线波动 · 有回落 + 反超」（NO7 燃油车 vs 新能源）：只标这套骨架特有的固定片段。
+    // 数据句动词 rose from / fell from 仍不标（模板多套写法，标了误导，且 NO10/13/14 会误伤）。
+    /\bdespite a (?:slight|brief) decline\b/i,
+    /\bfluctuated,? peaking at\b/i,
+    /\boutsold\b/i,
+    /\bregained the lead\b/i,
     // 第三段开头：模板 para3 三套骨架的 trans 都是 On balance（十篇范文全用），
     // 早先只列了 During this period / By contrast 这类第二段连接词，把它漏了。
     /\bOn balance,/i,

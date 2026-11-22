@@ -78,7 +78,7 @@
     "items": 2,
     "trend": "都升",
     "type": "动态",
-    "hint": "博物馆数量与参观人数：两条都在涨 → 用「② 两条都在涨」",
+    "hint": "博物馆数量与参观人数：两条都在涨 → 用「① 两条都在涨」",
     "pattern": "同向上升",
     "group": "动态图 · 同向上升（事物一起涨，比速度 / 幅度）"
    },
@@ -98,7 +98,7 @@
     "items": 1,
     "trend": "单值逐年上升",
     "type": "动态",
-    "hint": "兼职比例上升：一条线 → 用「① 一条线在走」",
+    "hint": "兼职比例上升：一条线 → 用「④ 一条线在走」",
     "pattern": "单线上升",
     "group": "动态图 · 单线上升（只有一条线，别硬写对比）"
    },
@@ -248,15 +248,15 @@
    },
    {
     "k": "走势 = 都升（速度不同）",
-    "v": "用「② 同向不同速」骨架：Both rose, but A climbed…while B only went…。不要再套 By contrast。"
+    "v": "用「① 两条都在涨」骨架：Both rose, but A climbed…while B only went…。不要再套 By contrast。"
    },
    {
     "k": "走势 = 有升有降",
-    "v": "用「③ 一升一降」骨架：A climbed…, while B fell…。三个事物时补一句 By contrast。"
+    "v": "用「② 一升一降」骨架：A climbed…, while B fell…。三个事物时补一句 By contrast。"
    },
    {
     "k": "走势 = 单线持续升",
-    "v": "用「① 单线上升」骨架两句即可：It rose from…to… without a single fall。不必凑对比句。"
+    "v": "用「④ 一条线在走」骨架两句即可：It rose from…to… without a single fall。不必凑对比句。"
    }
   ]
  },
@@ -772,84 +772,7 @@
    ],
    "skeletons": [
     {
-     "label": "① 一条线在走",
-     "years": "2013 · 2023",
-     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.",
-     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，它从 {{num1}} 稳步升至 {{num2}}，始终没有明显回落。",
-     "struct": [
-      [
-       [
-        "The {{chart}} chart above",
-        "t"
-       ],
-       [
-        " clearly illustrates",
-        "p"
-       ],
-       [
-        " the changes in {{topic}}",
-        "o"
-       ],
-       [
-        " from {{time1}} to {{time2}}",
-        "o"
-       ],
-       [
-        ".",
-        ""
-       ]
-      ],
-      [
-       [
-        "During this period",
-        "trans"
-       ],
-       [
-        ", it",
-        "t"
-       ],
-       [
-        " rose steadily",
-        "p"
-       ],
-       [
-        " from {{num1}} to {{num2}}",
-        "o"
-       ],
-       [
-        ", without any noticeable fall",
-        "o"
-       ],
-       [
-        ".",
-        ""
-       ]
-      ]
-     ],
-     "alts": {
-      "rose steadily": "climbed steadily / kept rising"
-     },
-     "demo": "The bar chart above clearly illustrates the changes in the proportion of college students taking part-time jobs from freshman year to senior year. During this period, it rose steadily from 67.77% to 88.24%, without any noticeable fall.",
-     "sents_alt": [
-      {
-       "idx": 0,
-       "tag": "第一段开篇",
-       "tips": "趋势题首句必须带时间区间",
-       "alts": [
-        {
-         "en": "The {{chart}} chart above traces the changes in {{topic}} from {{time1}} to {{time2}}.",
-         "cn": "该 {{chart}} 图追踪了 {{time1}} 至 {{time2}} 期间 {{topic}} 的变化。"
-        },
-        {
-         "en": "What the {{chart}} chart above shows is how {{topic}} changed between {{time1}} and {{time2}}.",
-         "cn": "上图展示的是 {{time1}} 至 {{time2}} 之间 {{topic}} 的变化。"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "label": "② 两条都在涨",
+     "label": "① 两条都在涨",
      "years": "2010 · 2017 · 2022",
      "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
      "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。",
@@ -966,7 +889,7 @@
      ]
     },
     {
-     "label": "③ 一升一降",
+     "label": "② 一升一降",
      "years": "2011 · 2014 · 2019",
      "en": "The {{chart}} chart above clearly illustrates the sharp contrast in {{topic}} between {{item1}} and {{item2}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a steady decline, falling from {{num3}} to {{num4}}.",
      "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 在 {{item1}} 与 {{item2}} 之间的鲜明反差。在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 则稳步下降，从 {{num3}} 降至 {{num4}}。",
@@ -1087,7 +1010,227 @@
      ]
     },
     {
-     "label": "④ 先稳后急（图有分段就换这套）",
+     "label": "③ 双线波动 · 有回落 + 反超",
+     "years": "NO7 燃油车 vs 新能源（一路上扬但途中有回落，中段反超又被追回）",
+     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, {{item1}} rose from {{num1}} to {{num2}}, despite a slight decline in {{time3}}. By contrast, the figure for {{item2}} fluctuated, peaking at {{num3}} in {{time4}}. {{item1}} outsold {{item2}} in {{time5}}, but the latter regained the lead in {{time6}}.",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 从 {{num1}} 升至 {{num2}}，尽管在 {{time3}} 略有回落。相比之下，{{item2}} 则有波动，在 {{time4}} 达到 {{num3}} 的峰值。{{item1}} 在 {{time5}} 反超 {{item2}}，但后者在 {{time6}} 重新领先。",
+     "struct": [
+      [
+       [
+        "The {{chart}} chart above",
+        "t"
+       ],
+       [
+        " clearly illustrates",
+        "p"
+       ],
+       [
+        " the changes in {{topic}}",
+        "o"
+       ],
+       [
+        " from {{time1}} to {{time2}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "During this period",
+        "trans"
+       ],
+       [
+        ", {{item1}}",
+        "t"
+       ],
+       [
+        " rose",
+        "p"
+       ],
+       [
+        " from {{num1}} to {{num2}}",
+        "o"
+       ],
+       [
+        ", despite a slight decline",
+        "o"
+       ],
+       [
+        " in {{time3}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "By contrast",
+        "trans"
+       ],
+       [
+        ", the figure for {{item2}}",
+        "t"
+       ],
+       [
+        " fluctuated",
+        "p"
+       ],
+       [
+        ", peaking at {{num3}}",
+        "o"
+       ],
+       [
+        " in {{time4}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "{{item1}}",
+        "t"
+       ],
+       [
+        " outsold",
+        "p"
+       ],
+       [
+        " {{item2}}",
+        "o"
+       ],
+       [
+        " in {{time5}}",
+        "o"
+       ],
+       [
+        ", but the latter",
+        "trans"
+       ],
+       [
+        " regained the lead",
+        "p"
+       ],
+       [
+        " in {{time6}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "despite a slight decline": "despite a brief dip / with a brief fall",
+      "fluctuated": "varied / moved up and down",
+      "regained the lead": "took the lead again / moved back into first place"
+     },
+     "demo": "The table above clearly illustrates the changes in domestic sales of conventional and new energy vehicles from January to June 2025. During this period, sales of new energy vehicles rose from 0.79 million to 1.12 million, despite a slight decline in April. By contrast, the figure for conventional vehicles fluctuated, peaking at 1.33 million in March. New energy vehicles outsold conventional ones in May, but the latter regained the lead in June.",
+     "sents_alt": [
+      {
+       "idx": 0,
+       "tag": "第一段开篇",
+       "tips": "趋势题首句必须带时间区间",
+       "alts": [
+        {
+         "en": "The {{chart}} chart above traces the changes in {{topic}} from {{time1}} to {{time2}}.",
+         "cn": "该 {{chart}} 图追踪了 {{time1}} 至 {{time2}} 期间 {{topic}} 的变化。"
+        },
+        {
+         "en": "What the {{chart}} chart above shows is how {{topic}} changed between {{time1}} and {{time2}}.",
+         "cn": "上图展示的是 {{time1}} 至 {{time2}} 之间 {{topic}} 的变化。"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "④ 一条线在走",
+     "years": "2013 · 2023",
+     "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall.",
+     "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，它从 {{num1}} 稳步升至 {{num2}}，始终没有明显回落。",
+     "struct": [
+      [
+       [
+        "The {{chart}} chart above",
+        "t"
+       ],
+       [
+        " clearly illustrates",
+        "p"
+       ],
+       [
+        " the changes in {{topic}}",
+        "o"
+       ],
+       [
+        " from {{time1}} to {{time2}}",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ],
+      [
+       [
+        "During this period",
+        "trans"
+       ],
+       [
+        ", it",
+        "t"
+       ],
+       [
+        " rose steadily",
+        "p"
+       ],
+       [
+        " from {{num1}} to {{num2}}",
+        "o"
+       ],
+       [
+        ", without any noticeable fall",
+        "o"
+       ],
+       [
+        ".",
+        ""
+       ]
+      ]
+     ],
+     "alts": {
+      "rose steadily": "climbed steadily / kept rising"
+     },
+     "demo": "The bar chart above clearly illustrates the changes in the proportion of college students taking part-time jobs from freshman year to senior year. During this period, it rose steadily from 67.77% to 88.24%, without any noticeable fall.",
+     "sents_alt": [
+      {
+       "idx": 0,
+       "tag": "第一段开篇",
+       "tips": "趋势题首句必须带时间区间",
+       "alts": [
+        {
+         "en": "The {{chart}} chart above traces the changes in {{topic}} from {{time1}} to {{time2}}.",
+         "cn": "该 {{chart}} 图追踪了 {{time1}} 至 {{time2}} 期间 {{topic}} 的变化。"
+        },
+        {
+         "en": "What the {{chart}} chart above shows is how {{topic}} changed between {{time1}} and {{time2}}.",
+         "cn": "上图展示的是 {{time1}} 至 {{time2}} 之间 {{topic}} 的变化。"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "⑤ 先稳后急（图有分段就换这套）",
      "years": "2013 · 2023",
      "en": "The {{chart}} chart above clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. From {{time1}} to {{time3}}, it rose steadily from {{num1}} to {{num3}}, and then climbed sharply to {{num2}}.",
      "cn": "该 {{chart}} 图清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。{{time1}} 到 {{time3}} 期间，它从 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。",
@@ -1173,7 +1316,7 @@
      ]
     },
     {
-     "label": "⑤ 双图 · 漫画 + 趋势图",
+     "label": "⑥ 双图 · 漫画 + 趋势图",
      "years": "NO13 留学回国（漫画 + 柱状）",
      "en": "The cartoon above depicts {{scene}}, while the chart below clearly illustrates the changes in {{topic}} from {{time1}} to {{time2}}. During this period, {{item1}} rose sharply from {{num1}} to {{num2}}. By contrast, the figure for {{item2}} saw a modest increase, climbing from {{num3}} to {{num4}} over the same period.",
      "cn": "漫画描绘了 {{scene}}，而下方的图表清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic}} 的变化。在此期间，{{item1}} 从 {{num1}} 急剧增至 {{num2}}。相比之下，{{item2}} 仅略有增加，从 {{num3}} 攀升至 {{num4}}。",
@@ -1303,7 +1446,7 @@
      ]
     },
     {
-     "label": "⑥ 两张图表并列",
+     "label": "⑦ 两张图表并列",
      "years": "NO14 平均寿命 + 老龄化（折线 + 饼图）",
      "en": "The two charts above clearly illustrate the changes in {{topic1}} and {{topic2}} respectively from {{time1}} to {{time2}}. During this period, {{topic1}} climbed steadily from {{num1}} to {{num2}}, while the share of {{topic2}} rose to {{percent1}}.",
      "cn": "上述两张图分别清晰地展示了 {{time1}} 到 {{time2}} 期间 {{topic1}} 与 {{topic2}} 的变化。在此期间，{{topic1}} 从 {{num1}} 稳步升至 {{num2}}，而 {{topic2}} 的比重升至 {{percent1}}。",
