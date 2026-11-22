@@ -122,8 +122,9 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   if (!d.querySelector('#ytMEssay .yt-legend')) fail('缺骨架图例');
   else if (/范文原句/.test(d.querySelector('#ytMEssay .yt-legend').textContent)) fail('图例仍含已取消的范文原句项');
   else pass('图例已显示（骨架 / 数据 / 词组，无范文原句项）');
-  if (!/clearly illustrates$/.test(skels[0].textContent.trim())) fail('首句骨架片段切错: ' + skels[0].textContent);
-  else pass('首句骨架片段切在 clearly illustrates');
+  // 骨架升级后切到 `clearly illustrates how`（连同 how 引导的宾语从句起始词）；旧版切到 `clearly illustrates` 末尾，两种都算正确
+  if (!/clearly illustrates( how)?$/.test(skels[0].textContent.trim())) fail('首句骨架片段切错: ' + skels[0].textContent);
+  else pass('首句骨架片段切在 clearly illustrates' + (/ how$/.test(skels[0].textContent.trim()) ? ' how' : ''));
 
   // 句内拼接必须还原原文（染色不能吞字/多字）
   const raw6 = JSON.parse(raw);

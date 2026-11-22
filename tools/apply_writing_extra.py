@@ -73,8 +73,9 @@ def main():
     print('新板块：老师视角 %d 条 / 答题动线 %d 步 / 数据语言 %d 组 + %d 条错误 / 自查表 %d 条'
           % (len(EX.TEACHER), len(EX.FLOW), len(EX.DATA_LANG), len(EX.MISTAKES), len(EX.CHECKLIST)))
     for sid in EX.PRUNE:
-        s = sections[sid]
-        print('   %-16s %d 句' % (sid, len(s['sentences'])))
+        s = sections.get(sid)  # PRUNE 含历史已删 section（para2_*），体检打印跳过即可，不影响主逻辑
+        if s:
+            print('   %-16s %d 句' % (sid, len(s['sentences'])))
 
 
 if __name__ == '__main__':

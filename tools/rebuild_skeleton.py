@@ -180,7 +180,7 @@ STATIC_SKELS = [
 
 # 动态段追加的两套：⑤ 漫画 + 趋势图 ⑥ 两张图表并列
 DYN_SKELS_EXTRA = [
-    {'label': '⑥ 双图 · 漫画 + 趋势图',
+    {'label': '③ 双图 · 漫画 + 趋势图',
      'years': 'NO13 留学回国（漫画 + 柱状）',
      'en': DBL_CARTOON_DYN['en'] + ' ' + DYN_TAIL,
      'cn': DBL_CARTOON_DYN['cn'] + DYN_TAIL_CN,
@@ -193,7 +193,7 @@ DYN_SKELS_EXTRA = [
               'below, while the chart below clearly illustrates the changes in the number of returnees from 2012 to 2022. During this period, the number rose sharply from 0.27 million '
               'to 0.6 million. By contrast, the figure for students going abroad saw a modest increase, climbing from 0.4 million '
               'to 0.7 million over the same period.')},
-    {'label': '⑦ 两张图表并列',
+    {'label': '④ 双图 · 两张图表并列',
      'years': 'NO14 平均寿命 + 老龄化（折线 + 饼图）',
      'en': DBL_TWO['en'] + ' ' + 'During this period, {{topic1}} climbed steadily from {{num1}} to {{num2}}, while the share of {{topic2}} rose to {{percent1}}.',
      'cn': DBL_TWO['cn'] + '在此期间，{{topic1}} 从 {{num1}} 稳步升至 {{num2}}，而 {{topic2}} 的比重升至 {{percent1}}。',
@@ -768,6 +768,26 @@ TPL_SWAPS = [
          {'en': 'During this period, {{item1}} surged from {{num1}} to {{num2}}.',
           'cn': '在此期间，{{item1}} 从 {{num1}} 猛增至 {{num2}}。'},
      ]},
+    # 骨架①第3句：都涨之外的三种走势（一升一降 / 反超回落 / 波动峰值）作为整句替换，
+    # 与下沉句池同源。替换句自带完整走向，选中后整句换掉即可，不依赖邻句的连接词。
+    {'match': 'By contrast, the figure for {{item2}} saw a modest increase',
+     'tag': '另一条线的走势', 'tips': '默认两条都涨；若图里另一条下降 / 被反超 / 有峰值，选对应整句',
+     'alts': [
+         {'en': '{{item2}}, however, fell from {{num3}} to {{num4}}.',
+          'cn': '{{item2}} 却从 {{num3}} 降至 {{num4}}。'},
+         {'en': '{{item2}} fluctuated, peaking at {{num3}} in {{time4}}.',
+          'cn': '{{item2}} 有波动，在 {{time4}} 达到 {{num3}} 的峰值。'},
+         {'en': '{{item2}} was briefly overtaken, then regained the lead in {{time6}}.',
+          'cn': '{{item2}} 一度被反超，随后在 {{time6}} 重新领先。'},
+     ]},
+    {'match': 'During this period, it rose steadily from {{num1}} to {{num2}}, without any noticeable fall',
+     'tag': '单线走势', 'tips': '默认一路稳升；图里分段加速 / 有回落就换对应整句',
+     'alts': [
+         {'en': 'It rose gradually at first and then picked up speed towards the end.',
+          'cn': '起先缓慢上升，临近结束时明显加快。'},
+         {'en': 'It climbed steadily overall, though there was a brief dip along the way.',
+          'cn': '总体稳步上升，只是中途有过短暂回落。'},
+     ]},
     # ── 第三段 · 正面版 ──
     {'match': 'On balance, the figures offer an encouraging and welcome picture of {{topic}}',
      'tag': '第三段立场', 'tips': '正面题开场表态，后面必须接具体对策',
@@ -899,8 +919,17 @@ def main():
          'cn': '组与组之间差别悬殊：{{item1}} 高达 {{percent1}}，而 {{item3}} 只有 {{percent3}}。', 'freq': 3, 'tag': '交叉表·组间对比'},
     ]
     s = by_id['chart_dynamic']
-    # 2026-11-22 顺序：两条线（①②③）→ 一条线（④⑤）→ 图画双图（⑥⑦）
-    _DYN_ORDER = [DYN[1], DYN[2], DYN_WAVE, DYN[0], DYN[3]]
+    # 2026-11-22 统合：7→4 套。两条线（原①②③并入①）→ 一条线（原④⑤并入④）→ 图画双图（⑥⑦）
+    # 被砍走势的整句下沉到 sentences[] 句池 + 骨架①第3句的 sents_alt（两处都放）。
+    # 注意：DYN[1] 的 en/struct 原样保留（含 rose sharply / By contrast modest increase），
+    #       这样 TPL_SWAPS 的 match 前缀与 sents_alt 注入全部零位移。
+    _two = dict(DYN[1])                       # ① 两条都在涨（正文）
+    _two['label'] = '① 两条线（都在涨）'
+    _two['years'] = '2010 · 2011 · 2014 · 2017 · 2019 · 2022 · NO7'
+    _one = dict(DYN[0])                       # ④ 一条线在走（正文）
+    _one['label'] = '② 一条线在走'
+    _one['years'] = '2013 · 2023'
+    _DYN_ORDER = [_two, _one]
     s['skeletons'] = _DYN_ORDER + DYN_SKELS_EXTRA
     set_skeleton(s, [{'en': DYN[1]['en'], 'cn': DYN[1]['cn'], 'struct': DYN[1]['struct']}])
     s['en'] = DYN[1]['en']          # 兼容：sec['en'] 保留中间那套
@@ -913,6 +942,15 @@ def main():
         {'en': 'In the later years, {{item1}} climbed sharply while {{item2}} stayed almost flat.', 'cn': '后几年 {{item1}} 急剧上升，而 {{item2}} 几乎原地不动。', 'freq': 3, 'tag': '分段·后段分化'},
         {'en': 'The two moved in opposite directions.', 'cn': '两者朝相反的方向变化。', 'freq': 3, 'tag': '反差'},
         {'en': 'The figure more than doubled over the period.', 'cn': '这一数字在该时期翻了一倍多。', 'freq': 2, 'tag': '倍数'},
+        # ↓ 2026-11-22 动态骨架 7→4：被砍走势的独有整句下沉到句池（append 末尾，老引用零位移）
+        {'en': '{{item1}} rose sharply from {{num1}} to {{num2}}, whereas the figure for {{item2}} fell from {{num3}} to {{num4}}.',
+         'cn': '{{item1}} 从 {{num1}} 急剧升至 {{num2}}，而 {{item2}} 则从 {{num3}} 降至 {{num4}}。', 'freq': 4, 'tag': '一升一降'},
+        {'en': '{{item2}} fluctuated, peaking at {{num3}} in {{time4}}.',
+         'cn': '{{item2}} 有波动，在 {{time4}} 达到 {{num3}} 的峰值。', 'freq': 3, 'tag': '波动峰值'},
+        {'en': '{{item1}} outsold {{item2}} in {{time5}}, but the latter regained the lead in {{time6}}.',
+         'cn': '{{item1}} 在 {{time5}} 反超 {{item2}}，但后者在 {{time6}} 重新领先。', 'freq': 3, 'tag': '反超回落'},
+        {'en': 'From {{time1}} to {{time3}}, it rose steadily from {{num1}} to {{num3}}, and then climbed sharply to {{num2}}.',
+         'cn': '{{time1}} 到 {{time3}} 期间它从 {{num1}} 稳步升至 {{num3}}，随后急剧攀升至 {{num2}}。', 'freq': 3, 'tag': '先稳后急'},
     ]
 
     # 第二段：合并成一段
@@ -1050,20 +1088,25 @@ def main():
 
     # 适配表 hint 里引用的「三套走势骨架」标签同步
     # 骨架重排后适配表编号同步；decisions 旧别名归一到真实 label。
+    # 2026-11-22 骨架 7→4：所有历史标签别名归一到新 label（两条线/一条线）
     _RENUM = {
-        '「① 一条线在走」': '「④ 一条线在走」',
-        '「② 两条都在涨」': '「① 两条都在涨」',
-        '「③ 一升一降」': '「② 一升一降」',
-        '「④ 先稳后急」': '「⑤ 先稳后急」',
-        '「② 同向不同速」': '「① 两条都在涨」',
-        '「① 单线上升」': '「④ 一条线在走」',
+        '「① 一条线在走」': '「② 一条线在走」',
+        '「④ 一条线在走」': '「② 一条线在走」',
+        '「② 两条都在涨」': '「① 两条线（都在涨）」',
+        '「① 两条都在涨」': '「① 两条线（都在涨）」',
+        '「③ 一升一降」': '「① 两条线（都在涨）」（另一条下降时用句池「一升一降」句）',
+        '「② 一升一降」': '「① 两条线（都在涨）」（另一条下降时用句池「一升一降」句）',
+        '「④ 先稳后急」': '「② 一条线在走」（分段时用句池「先稳后急」句）',
+        '「⑤ 先稳后急（图有分段就换这套）」': '「② 一条线在走」（分段时用句池「先稳后急」句）',
+        '「② 同向不同速」': '「① 两条线（都在涨）」',
+        '「① 单线上升」': '「② 一条线在走」',
     }
     for r in d['chart_guide']['table']:
         h = r['hint']
         for _a, _b in _RENUM.items():
             h = h.replace(_a, _b)
-        r['hint'] = (h.replace('只写一条上升线，配 steady upward trend', '一条线 → 用「④ 一条线在走」')
-                      .replace('both rose steadily', '两条都在涨 → 用「① 两条都在涨」'))
+        r['hint'] = (h.replace('只写一条上升线，配 steady upward trend', '一条线 → 用「② 一条线在走」')
+                      .replace('both rose steadily', '两条都在涨 → 用「① 两条线（都在涨）」'))
     for r in d['chart_guide'].get('decisions', []):
         v = r['v']
         for _a, _b in _RENUM.items():
