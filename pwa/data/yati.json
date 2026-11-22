@@ -510,76 +510,94 @@
       },
       {
        "k": "p",
-       "v": "On balance, these changes make travel more convenient, but not for everyone. The sharp decline in bus use is the main concern, since many residents still depend on it. Authorities should protect basic bus services rather than simply expand new options. Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.",
+       "v": "On balance, the wider choice of travel is a real gain for daily life. Admittedly, the fall in bus use deserves attention, since many people still rely on it. New services should add to what people already use rather than push it aside. Authorities should keep basic routes sound while letting new options grow. Everyday travel works best when it stays open to those who depend on it most.",
        "sents": [
         {
-         "en": "On balance, these changes make travel more convenient, but not for everyone.",
-         "cn": "总的来说，这些变化让出行更便利，但并非对所有人都是如此。",
+         "en": "On balance, the wider choice of travel is a real gain for daily life.",
+         "cn": "总的来说，出行方式变多是日常生活的一大收获。",
          "swap": {
           "tag": "第三段立场",
-          "tips": "两面表态：便利是真的，被落下的人也是真的",
+          "tips": "正面表态：选择变多是收获；备选分别落在「多数人方便」和「城市进步」",
           "alts": [
            {
-            "en": "On balance, travel has become easier for most residents, though not for all of them.",
-            "cn": "总的来说，出行对多数居民变得更方便，但并非对所有人都如此。"
+            "en": "For most people the wider range of options simply makes everyday trips easier.",
+            "cn": "对多数人来说，选择变多就是让日常出行更方便。"
            },
            {
-            "en": "Taken as a whole, these changes save time for many people but leave others behind.",
-            "cn": "总体来看，这些变化让许多人省了时间，却把另一些人落在后面。"
+            "en": "Having more ways to travel is a step forward for the city as a whole.",
+            "cn": "出行方式变多，对整个城市来说是一大进步。"
            }
           ]
          }
         },
         {
-         "en": "The sharp decline in bus use is the main concern, since many residents still depend on it.",
-         "cn": "公交使用量的大幅下滑是主要顾虑，因为许多居民仍依赖它。",
+         "en": "Admittedly, the fall in bus use deserves attention, since many people still rely on it.",
+         "cn": "诚然，公交使用量下降值得关注，因为许多人仍依赖它。",
          "swap": {
-          "tag": "隐忧点出",
-          "tips": "这句是第三段的转折支点，后面紧接「该保住公交」的对策",
+          "tag": "第三段让步",
+          "tips": "承认公交下滑；备选分别落在「别只看数字」和「依赖公交者被忽略」",
           "alts": [
            {
-            "en": "The falling share of bus travel is the real worry, for many residents still depend on it.",
-            "cn": "真正令人担心的是公交出行比例的下降，因为许多居民仍然依赖它。"
+            "en": "One should not read the drop in bus use as a sign that buses matter less now.",
+            "cn": "不能把公交使用量下降看成公交变得不重要。"
            },
            {
-            "en": "What deserves most attention is the shrinking role of buses, which many residents still rely on.",
-            "cn": "最值得关注的是公交作用的萎缩，而许多居民仍然依赖它。"
+            "en": "What the figures do not show is how many people have no alternative to the bus.",
+            "cn": "数字没显示的是，有多少人除了公交别无选择。"
            }
           ]
          }
         },
         {
-         "en": "Authorities should protect basic bus services rather than simply expand new options.",
-         "cn": "主管部门应保护基本公交服务，而非仅仅扩张新选择。",
+         "en": "New services should add to what people already use rather than push it aside.",
+         "cn": "新服务应补充人们已有的出行方式，而不是把它挤掉。",
          "swap": {
-          "tag": "第三段建议",
-          "tips": "保基本服务优先于扩新选择；骨架抽掉 bus，换成任何基础服务都能用",
+          "tag": "第三段建议·补充",
+          "tips": "新方式补充而非替代；骨架抽掉具体车种，任何新旧服务都能用",
           "alts": [
            {
-            "en": "The authorities should keep essential services sound before adding new options.",
-            "cn": "主管部门应先保住基本服务，再增加新的选择。"
+            "en": "Fresh options work best when the services people already count on are kept intact.",
+            "cn": "保住人们已经依赖的服务，新方式才能发挥最大作用。"
            },
            {
-            "en": "Protecting what people already rely on matters more than adding fresh alternatives.",
-            "cn": "保住人们已经依赖的服务，比增加新的替代方式更重要。"
+            "en": "New modes should grow alongside the old ones, not at their expense.",
+            "cn": "新方式应与旧方式一起发展，而不是挤掉它们。"
            }
           ]
          }
         },
         {
-         "en": "Whether it proves to be a blessing or a burden depends on how well it is managed in the years ahead.",
-         "cn": "它究竟成为福祉还是负担，取决于未来能否得到妥善管理。",
+         "en": "Authorities should keep basic routes sound while letting new options grow.",
+         "cn": "主管部门应保持基本线路完好，同时让新方式发展。",
+         "swap": {
+          "tag": "第三段建议·兜底",
+          "tips": "主管部门兜住基本线路；备选分别落在「兜底」和「新旧衔接」",
+          "alts": [
+           {
+            "en": "It falls to the authorities to keep essential routes running for those who need them.",
+            "cn": "主管部门应为有需要的人保住基本线路。"
+           },
+           {
+            "en": "The city should make sure basic lines remain reliable while new services find their place.",
+            "cn": "城市应让基本线路保持可靠，同时给新服务留位置。"
+           }
+          ]
+         }
+        },
+        {
+         "en": "Everyday travel works best when it stays open to those who depend on it most.",
+         "cn": "日常出行要真正方便，就不能落下最依赖它的人。",
          "swap": {
           "tag": "第三段收尾",
-          "tips": "条件式收尾；「是福是祸取决于管理」可迁移，但别丢掉「管理」这个落点",
+          "tips": "扣「出行公平」题眼，不写空指；备选落在「惠及所有人」和「最弱势者可用」",
           "alts": [
            {
-            "en": "Whether it helps or harms will depend on how well the change is managed.",
-            "cn": "它究竟有利还是有害，取决于这一变化被管理得好不好。"
+            "en": "Travel is genuinely better only when its benefits reach every group of residents.",
+            "cn": "只有当好处惠及每一类居民，出行才算真正变好。"
            },
            {
-            "en": "The outcome will be decided by the care taken in managing the change.",
-            "cn": "结果将取决于管理这一变化时投入的用心程度。"
+            "en": "The measure of a good transport system is whether the least mobile can still use it.",
+            "cn": "衡量交通好不好，看的是最不方便的人能否照常用它。"
            }
           ]
          }
@@ -587,7 +605,7 @@
        ]
       }
      ],
-     "words": 181
+     "words": 188
     },
     {
      "no": 9,
@@ -698,76 +716,94 @@
       },
       {
        "k": "p",
-       "v": "On balance, the figures reveal a clear hierarchy of concerns among graduates. Students would benefit from weighing long-term growth against immediate pay. Universities should offer practical guidance, and students should learn about duties first. What matters in the long run is whether graduates can balance prospects, pay and personal interests.",
+       "v": "On balance, the figures show what graduates want most from a job. Long-term growth comes first, with pay close behind. This is understandable when young people face tough competition for jobs. Universities should help students judge an offer by more than its starting salary. A career built on lasting prospects is worth more than a quick gain.",
        "sents": [
         {
-         "en": "On balance, the figures reveal a clear hierarchy of concerns among graduates.",
-         "cn": "总的来说，这些数据揭示出毕业生择业时明确的优先次序。",
+         "en": "On balance, the figures show what graduates want most from a job.",
+         "cn": "总的来说，这些数字显示了毕业生找工作最看重什么。",
          "swap": {
           "tag": "第三段立场",
-          "tips": "「有明确优先次序」是中性判断，正好接后面的建议",
+          "tips": "中性表态：数字显示择业最看重什么；备选落在「优先次序清晰」和「择业更务实」",
           "alts": [
            {
-            "en": "On balance, the figures show a clear order of priorities among graduates.",
-            "cn": "总的来说，这些数据表明毕业生心中有一套明确的优先次序。"
+            "en": "On balance, the survey makes the order of priorities clear.",
+            "cn": "总的来说，这份调查让毕业生的优先次序清楚可见。"
            },
            {
-            "en": "Taken together, the figures reveal what graduates value most and what they value least.",
-            "cn": "总体而言，这些数据揭示了毕业生最看重什么、最不看重什么。"
+            "en": "Taken together, the figures show that graduates choose with practical goals in mind.",
+            "cn": "总体来看，这些数字显示毕业生择业时心里有现实的目标。"
            }
           ]
          }
         },
         {
-         "en": "Students would benefit from weighing long-term growth against immediate pay.",
-         "cn": "学生若能权衡长期成长与眼前薪酬，会做出更稳妥的选择。",
+         "en": "Long-term growth comes first, with pay close behind.",
+         "cn": "长期发展排第一，薪酬紧随其后。",
+         "swap": {
+          "tag": "第三段发现",
+          "tips": "发展第一、薪酬第二；备选换角度不换次序，别把薪酬写成第一",
+          "alts": [
+           {
+            "en": "What ranks first is room to grow, and salary follows not far behind.",
+            "cn": "排在第一位的是成长空间，薪紧跟在后面。"
+           },
+           {
+            "en": "Graduates put future development ahead of pay, though pay is still near the top.",
+            "cn": "毕业生把长远发展放在薪酬之前，不过薪酬仍排在前列。"
+           }
+          ]
+         }
+        },
+        {
+         "en": "This is understandable when young people face tough competition for jobs.",
+         "cn": "年轻人面对激烈的求职竞争时，这可以理解。",
+         "swap": {
+          "tag": "第三段解读",
+          "tips": "解释「为什么可理解」；备选落在「年轻人看得远」和「就业竞争使然」",
+          "alts": [
+           {
+            "en": "This makes sense when young people look beyond the first pay cheque.",
+            "cn": "年轻人在意的不只是第一份薪水时，这就说得通了。"
+           },
+           {
+            "en": "Fierce competition for jobs is what lies behind such caution.",
+            "cn": "求职竞争激烈，正是这种谨慎背后的原因。"
+           }
+          ]
+         }
+        },
+        {
+         "en": "Universities should help students judge an offer by more than its starting salary.",
+         "cn": "大学应帮助学生判断一份工作，而不只是看起薪。",
          "swap": {
           "tag": "第三段建议",
-          "tips": "引导学生权衡长远与眼前；骨架抽掉 graduates 的具体项也能用",
+          "tips": "学校帮学生看工作不只看起薪；备选落在「课程教判断」和「学生自己权衡」",
           "alts": [
            {
-            "en": "They would do well to set future prospects against the pay on offer.",
-            "cn": "他们最好把未来前景与眼前的薪酬放在一起权衡。"
+            "en": "Universities should teach students to weigh a whole offer, not just the salary line.",
+            "cn": "大学应教学生权衡一份工作的整体，而不只是薪资那一行。"
            },
            {
-            "en": "A longer view helps young people judge an offer by more than its starting salary.",
-            "cn": "长远眼光能让年轻人不只看起薪来评价一份工作。"
+            "en": "Students themselves need to look past the starting salary when they compare offers.",
+            "cn": "学生在比较工作机会时，自己也要看穿起薪。"
            }
           ]
          }
         },
         {
-         "en": "Universities should offer practical guidance, and students should learn about duties first.",
-         "cn": "大学应提供实用指导，学生应先了解职责。",
-         "swap": {
-          "tag": "第三段建议",
-          "tips": "学校给指导 + 学生先了解职责；留「机构辅导、本人先了解」的双层骨架",
-          "alts": [
-           {
-            "en": "Schools should give practical advice, and students should learn what the work involves first.",
-            "cn": "学校应提供实用指导，学生则应先了解工作究竟做什么。"
-           },
-           {
-            "en": "Careers guidance should be concrete, while graduates learn about the duties before they choose.",
-            "cn": "就业指导应具体，毕业生则应在选择前弄清岗位职责。"
-           }
-          ]
-         }
-        },
-        {
-         "en": "What matters in the long run is whether graduates can balance prospects, pay and personal interests.",
-         "cn": "长远来看，重要的是毕业生能否兼顾前景、薪酬与个人兴趣。",
+         "en": "A career built on lasting prospects is worth more than a quick gain.",
+         "cn": "建立在长远前景上的职业，比眼前的高薪更值得。",
          "swap": {
           "tag": "第三段收尾",
-          "tips": "收尾复述三项：prospects / pay / interests，一个都不能少",
+          "tips": "扣「长远发展＞眼前高薪」题眼；备选落在「别只看起薪」和「成长比待遇重要」",
           "alts": [
            {
-            "en": "In the long run, what counts is whether graduates can keep prospects, pay and interests in balance.",
-            "cn": "从长远看，关键在于毕业生能否在发展前景、薪酬与个人兴趣之间保持平衡。"
+            "en": "A job chosen for the long run is a better bet than one chosen for a high first salary.",
+            "cn": "为长远选的工作，比为高起薪选的工作更划算。"
            },
            {
-            "en": "The lasting question is whether graduates manage to weigh prospects, pay and personal interest together.",
-            "cn": "长期的问题在于，毕业生能否把发展前景、薪酬与个人兴趣一并权衡。"
+            "en": "In the end, room to grow counts for more than a tempting starting wage.",
+            "cn": "归根到底，成长空间比诱人的起薪更值。"
            }
           ]
          }
@@ -775,7 +811,7 @@
        ]
       }
      ],
-     "words": 183
+     "words": 190
     },
     {
      "no": 10,
@@ -886,94 +922,94 @@
       },
       {
        "k": "p",
-       "v": "On balance, the growth of convenience stores has been a real gain for daily life. Yet rapid growth has crowded similar stores together. Operators should adapt products to local needs and differentiate their services. Careful planning is also necessary to avoid excessive competition in the same neighborhood. How this expansion serves local communities will depend on the choices operators make.",
+       "v": "On balance, the steady growth of convenience stores is a welcome change. More outlets bring daily shopping within easier reach of many residents. Yet size alone says little about whether the service really fits local life. Operators should shape their offer around the people they serve. These stores add the most when they answer a real local need.",
        "sents": [
         {
-         "en": "On balance, the growth of convenience stores has been a real gain for daily life.",
-         "cn": "总的来说，便利店的增长给日常生活带来了实实在在的便利。",
+         "en": "On balance, the steady growth of convenience stores is a welcome change.",
+         "cn": "总的来说，便利店稳步增长是一个可喜的变化。",
          "swap": {
           "tag": "第三段立场",
-          "tips": "先给正面判断，下一句再用 Yet 转折讲同质化",
+          "tips": "正面表态：稳步增长可喜；备选落在「日常更方便」和「社区商业有活力」",
           "alts": [
            {
-            "en": "On balance, the spread of convenience stores has genuinely improved daily life.",
-            "cn": "总的来说，便利店的普及确实改善了日常生活。"
+            "en": "On balance, more convenience stores make daily shopping easier for local residents.",
+            "cn": "总的来说，便利店变多让本地居民日常购物更方便。"
            },
            {
-            "en": "Taken as a whole, the growth of these stores has made everyday shopping easier.",
-            "cn": "总体来看，这类门店的增长让日常购物更方便。"
+            "en": "Taken as a whole, the steady rise of such shops is a sign of a lively neighbourhood trade.",
+            "cn": "总体来看，这类门店稳步增加，是社区商业有活力的表现。"
            }
           ]
          }
         },
         {
-         "en": "Yet rapid growth has crowded similar stores together.",
-         "cn": "但快速增长已让同类门店扎堆。",
+         "en": "More outlets bring daily shopping within easier reach of many residents.",
+         "cn": "门店多了，许多居民日常购物更近、更方便。",
+         "swap": {
+          "tag": "第三段发现",
+          "tips": "门店多了购物更近；备选落在「省时」和「覆盖更多居民」",
+          "alts": [
+           {
+            "en": "With more shops nearby, residents spend less time on an ordinary shopping trip.",
+            "cn": "附近门店多了，居民日常购物花的时间更少。"
+           },
+           {
+            "en": "The growing number of outlets puts everyday goods within reach of more people.",
+            "cn": "门店增多，让更多人能就近买到日常用品。"
+           }
+          ]
+         }
+        },
+        {
+         "en": "Yet size alone says little about whether the service really fits local life.",
+         "cn": "但只看数量说明不了服务是否贴合当地生活。",
          "swap": {
           "tag": "第三段转折",
-          "tips": "承认增长但点出同质化；「扩张太快、彼此雷同」可迁移到任何门店/网点题",
+          "tips": "只看数量说明不了服务好坏；备选落在「数量之外看服务」和「便利要看实际」",
           "alts": [
            {
-            "en": "Fast expansion has also brought look-alike outlets into the same streets.",
-            "cn": "快速扩张也让雷同的门店挤进了同一条街。"
+            "en": "A larger number of shops, however, tells us little about the quality of the service.",
+            "cn": "然而，门店数量多了，说明不了服务的质量。"
            },
            {
-            "en": "The pace of growth has left similar businesses side by side.",
-            "cn": "扩张的速度让相似的门店彼此挨在一起。"
+            "en": "What matters is not how many shops there are but how well they serve the people nearby.",
+            "cn": "重要的不是有多少家店，而是它们把周边居民服务得多好。"
            }
           ]
          }
         },
         {
-         "en": "Operators should adapt products to local needs and differentiate their services.",
-         "cn": "经营者应让商品适应本地需求，并让服务有所区别。",
+         "en": "Operators should shape their offer around the people they serve.",
+         "cn": "经营者应按所服务人群的需求来安排生意。",
          "swap": {
           "tag": "第三段建议",
-          "tips": "经营者按本地需求调整、做出差异；骨架抽掉便利店专属词",
+          "tips": "按所服务人群安排生意；备选落在「按需调整」和「做出特色」",
           "alts": [
            {
-            "en": "Operators should tailor what they offer to local needs and find their own character.",
-            "cn": "经营者应按本地需求调整供给，并做出自己的特色。"
+            "en": "Operators should adjust what they sell to the needs of the people around them.",
+            "cn": "经营者应按周边人群的需求调整所卖的东西。"
            },
            {
-            "en": "Businesses would do better to serve nearby residents and stand apart from rivals.",
-            "cn": "企业不如服务周边居民，并与同行区别开来。"
+            "en": "Shop owners would do better to give their store a character of its own.",
+            "cn": "店主不妨让自己的店做出自己的特色。"
            }
           ]
          }
         },
         {
-         "en": "Careful planning is also necessary to avoid excessive competition in the same neighborhood.",
-         "cn": "还需要周密规划，避免同一街区过度竞争。",
-         "swap": {
-          "tag": "第三段建议",
-          "tips": "规划避免扎堆竞争；留「需规划、防同质竞争」骨架",
-          "alts": [
-           {
-            "en": "Thoughtful planning is needed so that similar outlets do not compete in the same area.",
-            "cn": "需要周到的规划，以免相似门店在同一区域扎堆竞争。"
-           },
-           {
-            "en": "Some coordination helps prevent excessive rivalry among businesses in one neighbourhood.",
-            "cn": "适度协调有助于避免同一片区域的商家过度竞争。"
-           }
-          ]
-         }
-        },
-        {
-         "en": "How this expansion serves local communities will depend on the choices operators make.",
-         "cn": "这轮扩张能否服务好本地社区，取决于经营者的选择。",
+         "en": "These stores add the most when they answer a real local need.",
+         "cn": "这些店满足了当地真实需求，价值才最大。",
          "swap": {
           "tag": "第三段收尾",
-          "tips": "收尾把结论落到「经营者怎么选」，不写行业前景",
+          "tips": "扣「满足本地需求」题眼；备选落在「服务社区有价值」和「扎根社区是根本」",
           "alts": [
            {
-            "en": "Whether this expansion truly serves local communities will depend on how operators run their stores.",
-            "cn": "这一扩张能否真正服务本地社区，将取决于经营者如何经营门店。"
+            "en": "Such shops are worth most when they meet a real need of the community.",
+            "cn": "这类门店满足社区真实需求时，价值才最大。"
            },
            {
-            "en": "In the end, the value of this expansion to local communities rests on the choices operators make.",
-            "cn": "归根结底，这一扩张对本地社区的价值取决于经营者的选择。"
+            "en": "Their lasting value lies in becoming a part of everyday local life.",
+            "cn": "它们长久的价值，在于成为当地日常生活的一部分。"
            }
           ]
          }
@@ -981,7 +1017,7 @@
        ]
       }
      ],
-     "words": 190
+     "words": 188
     }
    ]
   },

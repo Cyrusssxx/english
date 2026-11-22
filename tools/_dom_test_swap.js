@@ -76,7 +76,7 @@ function checkData(d, label, hasPh) {
         }));
         if (n) { nos.push(it.no); perNo[it.no] = { n, big: g.id !== 't1' }; }
     }));
-    if (swSents !== 105) fail(`可替换句 ${swSents} 条，应为 105（大作文 10 篇：第三段 42 + 第二段 39，小作文 8×3）`);
+    if (swSents !== 107) fail(`可替换句 ${swSents} 条，应为 107（大作文 10 篇：第三段 44 + 第二段 39，小作文 8×3；NO8/9 第三段扩到 5 句各多挂 1 句）`);
     else pass(`可替换句 ${swSents} 条 / 替换句 ${swAlts} 条，覆盖 ${nos.length} 篇`);
     const wantNos = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26];
     if (nos.slice().sort((a, b) => a - b).join(',') !== wantNos.join(',')) fail('覆盖篇号不符: ' + nos.join(','));
