@@ -254,7 +254,7 @@ SWAPS = {
              {'en': 'The city should make sure basic lines remain reliable while new services find their place.',
               'cn': '城市应让基本线路保持可靠，同时给新服务留位置。'},
          ]},
-        {'match': 'Everyday travel works best when it stays open',
+        {'match': 'Everyday travel works best when the people who depend on it most',
          'tag': '第三段收尾',
          'tips': '扣「出行公平」题眼，不写空指；备选落在「惠及所有人」和「最弱势者可用」',
          'alts': [
@@ -315,7 +315,7 @@ SWAPS = {
          'tips': '发展第一、薪酬第二；备选换角度不换次序，别把薪酬写成第一',
          'alts': [
              {'en': 'What ranks first is room to grow, and salary follows not far behind.',
-              'cn': '排在第一位的是成长空间，薪紧跟在后面。'},
+              'cn': '排在第一位的是成长空间，薪酬紧跟在后面。'},
              {'en': 'Graduates put future development ahead of pay, though pay is still near the top.',
               'cn': '毕业生把长远发展放在薪酬之前，不过薪酬仍排在前列。'},
          ]},
@@ -335,7 +335,7 @@ SWAPS = {
              {'en': 'Universities should teach students to weigh a whole offer, not just the salary line.',
               'cn': '大学应教学生权衡一份工作的整体，而不只是薪资那一行。'},
              {'en': 'Students themselves need to look past the starting salary when they compare offers.',
-              'cn': '学生在比较工作机会时，自己也要看穿起薪。'},
+              'cn': '学生在比较工作机会时，自己也要越过起薪去看。'},
          ]},
         {'match': 'A career built on lasting prospects is worth more',
          'tag': '第三段收尾',
