@@ -510,7 +510,7 @@
       },
       {
        "k": "p",
-       "v": "On balance, the wider choice of travel is a real gain for daily life. Admittedly, the fall in bus use deserves attention, since many people still rely on it. New services should add to what people already use rather than push it aside. Authorities should keep basic routes sound while letting new options grow. Everyday travel works best when it serves those who need it most.",
+       "v": "On balance, the wider choice of travel is a real gain for daily life. Admittedly, the fall in bus use deserves attention, since many people still rely on it. New services should add to existing options rather than replace them. Authorities should keep basic routes sound while letting new options grow. Everyday travel should serve the neediest most.",
        "sents": [
         {
          "en": "On balance, the wider choice of travel is a real gain for daily life.",
@@ -538,26 +538,26 @@
           "tips": "承认公交下滑；备选分别落在「别只看数字」和「依赖公交者被忽略」",
           "alts": [
            {
-            "en": "One should not read the drop in bus use as a sign that buses matter less now.",
-            "cn": "不能把公交使用量下降看成公交变得不重要。"
+            "en": "The drop in bus use does not mean buses matter less now.",
+            "cn": "公交使用量下降并不表示公交变得不重要。"
            },
            {
-            "en": "What the figures do not show is how many people have no alternative to the bus.",
-            "cn": "数字没显示的是，有多少人除了公交别无选择。"
+            "en": "The figures do not show how many people have no alternative to the bus.",
+            "cn": "数字没有显示有多少人除了公交别无选择。"
            }
           ]
          }
         },
         {
-         "en": "New services should add to what people already use rather than push it aside.",
-         "cn": "新服务应补充人们已有的出行方式，而不是把它挤掉。",
+         "en": "New services should add to existing options rather than replace them.",
+         "cn": "新服务应补充现有方式，而不是取代它们。",
          "swap": {
           "tag": "第三段建议·补充",
           "tips": "新方式补充而非替代；骨架抽掉具体车种，任何新旧服务都能用",
           "alts": [
            {
-            "en": "Fresh options work best when the services people already count on are kept intact.",
-            "cn": "保住人们已经依赖的服务，新方式才能发挥最大作用。"
+            "en": "Fresh options work best when existing services are kept intact.",
+            "cn": "现有服务保持完好时，新方式才能发挥最大作用。"
            },
            {
             "en": "New modes should grow alongside the old ones, not at their expense.",
@@ -574,7 +574,7 @@
           "tips": "主管部门兜住基本线路；备选分别落在「兜底」和「新旧衔接」",
           "alts": [
            {
-            "en": "It falls to the authorities to keep essential routes running for those who need them.",
+            "en": "The authorities should keep essential routes running for those who need them.",
             "cn": "主管部门应为有需要的人保住基本线路。"
            },
            {
@@ -585,8 +585,8 @@
          }
         },
         {
-         "en": "Everyday travel works best when it serves those who need it most.",
-         "cn": "日常出行服务好最需要它的人，效果才最好。",
+         "en": "Everyday travel should serve the neediest most.",
+         "cn": "日常出行最应服务于最需要的人。",
          "swap": {
           "tag": "第三段收尾",
           "tips": "扣「出行公平」题眼，不写空指；备选落在「惠及所有人」和「最弱势者可用」",
@@ -605,7 +605,7 @@
        ]
       }
      ],
-     "words": 185
+     "words": 177
     },
     {
      "no": 9,

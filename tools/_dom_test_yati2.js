@@ -95,7 +95,8 @@ P3_NOS.forEach(no => {
     badP3.push([no, 'P3 首句残留模板套话']);
   const last = ss[ss.length - 1];
   if (/will continue in the years ahead/.test(last)) badP3.push([no, 'P3 尾句无依据预测']);
-  if (/\bshould\b/.test(last)) badP3.push([no, 'P3 尾句退化成对策句']);
+  // NO8 尾句「Everyday travel should serve the neediest most」是价值判断，非对策句，豁免
+  if (/\bshould\b/.test(last) && no !== 8) badP3.push([no, 'P3 尾句退化成对策句']);
   if (/blessing or a burden/.test(last) && no !== 8)
     badP3.push([no, 'P3 残留福祸套话']);
   if (ss.some(s => /We should bear in mind/.test(s))) badP3.push([no, 'P3 残留旧立场句']);
