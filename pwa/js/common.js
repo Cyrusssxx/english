@@ -296,6 +296,16 @@ function apEsc(s) {
     return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
 
+/* 替换气泡专用富文本：转义 + {{占位符}} 蓝色斜体 chip（与正文 wrHl 同一套）+ 走势方向词高亮。
+   方向词只标替换句（alts），不标「当前表达」——骨架默认句里本来就可能出现 fall/dip，
+   标了反而误导。词表只收「与默认涨势相反/有转折」的方向词，普通 rose/climbed 不标。 */
+const WUP_TONE_RE = /\b(fell\s+from|dropped|declined|decreased|slipped|fluctuated|varied|dipped|dip|overtaken|regained\s+the\s+lead|lost\s+the\s+lead|moved\s+up\s+and\s+down|ups\s+and\s+downs|fell)\b/gi;
+function apSwapText(s, tone) {
+    let h = apEsc(s);
+    if (tone) h = h.replace(WUP_TONE_RE, '<span class="wup-tone">$1</span>');
+    return h.replace(/\{\{(.+?)\}\}/g, '<span class="wr-ph">$1</span>');
+}
+
 /** 示范文正文：模板部分原样（可选划词标注 annotate），槽位词与自写部分分别高亮 */
 function renderApplyBody(mk, annotate) {
     if (!mk || !mk.paras) return '';
@@ -634,7 +644,7 @@ function wrSwShow(el) {
     // 优先用 data-swap 里的 orig（含 {{topic}} 等占位符），退回落 DOM 文本
     const orig = (d.orig || el.textContent || '').replace(/\s+/g, ' ').trim();
     const altsHtml = d.alts.map(a =>
-        '<li class="wup-item"><div class="wup-en">' + apEsc(a.en) + '</div><div class="wup-cn">' + apEsc(a.cn) + '</div></li>'
+        '<li class="wup-item"><div class="wup-en">' + apSwapText(a.en, true) + '</div><div class="wup-cn">' + apSwapText(a.cn, false) + '</div></li>'
     ).join('');
     // 本句译文：跟着「当前表达」一起显示，省得读者再点一次「译」
     const cn = (d.cn || '').replace(/\s+/g, ' ').trim();
@@ -642,8 +652,8 @@ function wrSwShow(el) {
         + '<span class="wup-tag">' + apEsc(d.tag || '可替换') + '</span>'
         + '<span class="wup-tips">' + apEsc(d.tips || '') + '</span>'
         + '</div>'
-        + '<div class="wup-orig">当前表达：<b>' + apEsc(orig) + '</b></div>'
-        + (cn ? '<div class="wup-orig-cn">' + apEsc(cn) + '</div>' : '')
+        + '<div class="wup-orig">当前表达：<b>' + apSwapText(orig, false) + '</b></div>'
+        + (cn ? '<div class="wup-orig-cn">' + apSwapText(cn, false) + '</div>' : '')
         + '<ul class="wup-list">' + altsHtml + '</ul>';
 
     document.body.appendChild(pop);

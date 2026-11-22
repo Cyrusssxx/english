@@ -5940,4 +5940,19 @@ html.dark .yt-lg-swap { color: #c4b5fd; background: rgba(167, 139, 250, .18); }
 }
 .wr-swap-pop .wup-en { font-size: .9rem; line-height: 1.5; }
 .wr-swap-pop .wup-list { gap: 5px; }
+/* 气泡内占位符：与正文 wr-ph 同一套斜体蓝 chip，别再裸显 {{xxx}} 破坏观感 */
+.wr-upg-pop .wup-en .wr-ph, .wr-upg-pop .wup-cn .wr-ph, .wr-upg-pop .wup-orig .wr-ph {
+    color: #62809f; font-style: italic; font-weight: 600;
+    background: rgba(29,111,208,.09); border-radius: 3px; padding: 0 3px;
+}
+.dark .wr-upg-pop .wup-en .wr-ph, .dark .wr-upg-pop .wup-cn .wr-ph, .dark .wr-upg-pop .wup-orig .wr-ph {
+    color: #9cc6f0; background: rgba(124,192,255,.14);
+}
+/* 走势方向词：替换句里与骨架默认涨势相反/有转折的词，琥珀底醒目标出 */
+.wup-tone {
+    color: #a35b00; font-weight: 700;
+    background: rgba(245,158,11,.16); border-bottom: 1px solid rgba(245,158,11,.5);
+    border-radius: 3px; padding: 0 2px;
+}
+.dark .wup-tone { color: #f0b45c; background: rgba(245,158,11,.2); border-bottom-color: rgba(245,158,11,.55); }
 @media (max-width: 640px) { .wr-swap-pop { width: calc(100vw - 24px); } }
