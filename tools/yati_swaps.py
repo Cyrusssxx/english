@@ -254,7 +254,7 @@ SWAPS = {
              {'en': 'The city should make sure basic lines remain reliable while new services find their place.',
               'cn': '城市应让基本线路保持可靠，同时给新服务留位置。'},
          ]},
-        {'match': 'Everyday travel works best when the people who depend on it most',
+        {'match': 'Everyday travel works best when it serves those who need it most',
          'tag': '第三段收尾',
          'tips': '扣「出行公平」题眼，不写空指；备选落在「惠及所有人」和「最弱势者可用」',
          'alts': [
