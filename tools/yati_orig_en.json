@@ -39,12 +39,12 @@
   "blocks": [
    {
     "k": "p",
-    "v": "The table above clearly illustrates the changes in fuel and new energy vehicle sales from January to June 2025. During this period, sales of new energy vehicles rose from 0.79 to 1.12 million, despite a dip in April shared by both types. By contrast, the figure for fuel vehicles fluctuated, peaking at 1.33 million in March before dropping to 1.04 in April. New energy vehicles outsold fuel ones in May, but the latter regained the lead in June.",
+    "v": "The table above clearly illustrates the changes in fuel and new energy vehicle sales from January to June 2025. During this period, sales of new energy vehicles rose from 0.79 to 1.12 million, despite a dip in April shared by both types. The figure for fuel vehicles fluctuated, peaking at 1.33 million in March, but slumped to 1.04 million in April. New energy vehicles overtook fuel vehicles in May, but the latter regained the lead in June.",
     "sents": [
      "The table above clearly illustrates the changes in fuel and new energy vehicle sales from January to June 2025.",
      "During this period, sales of new energy vehicles rose from 0.79 to 1.12 million, despite a dip in April shared by both types.",
-     "By contrast, the figure for fuel vehicles fluctuated, peaking at 1.33 million in March before dropping to 1.04 in April.",
-     "New energy vehicles outsold fuel ones in May, but the latter regained the lead in June."
+     "The figure for fuel vehicles fluctuated, peaking at 1.33 million in March, but slumped to 1.04 million in April.",
+     "New energy vehicles overtook fuel vehicles in May, but the latter regained the lead in June."
     ]
    },
    {

@@ -214,7 +214,7 @@
      "blocks": [
       {
        "k": "p",
-       "v": "The table above clearly illustrates the changes in fuel and new energy vehicle sales from January to June 2025. During this period, sales of new energy vehicles rose from 0.79 to 1.12 million, despite a dip in April shared by both types. By contrast, the figure for fuel vehicles fluctuated, peaking at 1.33 million in March before dropping to 1.04 in April. New energy vehicles outsold fuel ones in May, but the latter regained the lead in June.",
+       "v": "The table above clearly illustrates the changes in fuel and new energy vehicle sales from January to June 2025. During this period, sales of new energy vehicles rose from 0.79 to 1.12 million, despite a dip in April shared by both types. The figure for fuel vehicles fluctuated, peaking at 1.33 million in March, but slumped to 1.04 million in April. New energy vehicles overtook fuel vehicles in May, but the latter regained the lead in June.",
        "sents": [
         {
          "en": "The table above clearly illustrates the changes in fuel and new energy vehicle sales from January to June 2025.",
@@ -225,12 +225,12 @@
          "cn": "在此期间，新能源汽车销量从79万辆升至112万辆，尽管4月两类车销量均有所回落。"
         },
         {
-         "en": "By contrast, the figure for fuel vehicles fluctuated, peaking at 1.33 million in March before dropping to 1.04 in April.",
-         "cn": "相比之下，燃油车销量有所波动，3月达到133万辆的峰值，随后在4月降至104万辆。"
+         "en": "The figure for fuel vehicles fluctuated, peaking at 1.33 million in March, but slumped to 1.04 million in April.",
+         "cn": "相比之下，燃油车销量有所波动，3月达到133万辆的峰值，但4月骤降至104万辆。"
         },
         {
-         "en": "New energy vehicles outsold fuel ones in May, but the latter regained the lead in June.",
-         "cn": "5月新能源汽车销量超过燃油车，但6月后者重新领先。"
+         "en": "New energy vehicles overtook fuel vehicles in May, but the latter regained the lead in June.",
+         "cn": "5月新能源汽车销量反超燃油车，但6月后者重新领先。"
         }
        ]
       },
@@ -413,7 +413,7 @@
        ]
       }
      ],
-     "words": 200
+     "words": 199
     },
     {
      "no": 8,

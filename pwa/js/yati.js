@@ -184,7 +184,7 @@ const YT_SKEL_SEGS = [
     // 数据句动词 rose from / fell from 仍不标（模板多套写法，标了误导，且 NO10/13/14 会误伤）。
     /\bdespite a (?:slight|brief)? ?(?:decline|dip)\b/i,
     /\bfluctuated,? peaking at\b/i,
-    /\boutsold\b/i,
+    /\bovertook\b/i,
     /\bregained the lead\b/i,
     // 第三段开头：模板 para3 三套骨架的 trans 都是 On balance（十篇范文全用），
     // 早先只列了 During this period / By contrast 这类第二段连接词，把它漏了。

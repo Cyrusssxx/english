@@ -112,7 +112,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
         The cartoon above depicts / the figure for 等整段漏掉（用户从截图发现）。 */
   const skelNeed = {
     6: ['illustrates how', 'are distributed', 'respectively, while', 'On balance,'],
-    7: ['illustrates the changes in', 'During this period,', 'despite a dip', 'the figure for', 'fluctuated, peaking at', 'outsold', 'regained the lead', 'On balance,'],
+    7: ['illustrates the changes in', 'During this period,', 'despite a dip', 'figure for', 'fluctuated, peaking at', 'overtook', 'regained the lead', 'On balance,'],
     8: ['illustrates the changes in', 'the figure for', 'On balance,'],
     9: ['illustrates how', 'are distributed', 'On balance,'],
     10: ['the changes in', 'During this period,', 'On balance,'],
@@ -136,7 +136,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   else pass('填槽内容未被误标（purposes of continuing education 不在骨架内）');
 
   // NO7 新增的「回落 + 反超」规则不得误标别篇（这些片段只出现在 NO7）
-  const ripple = ['despite a dip', 'fluctuated', 'outsold', 'regained the lead'];
+  const ripple = ['despite a dip', 'fluctuated', 'overtook', 'regained the lead'];
   let spill = [];
   for (const no of [6, 8, 9, 10, 11, 12, 13, 14, 15]) {
     window.ytOpen(no);
