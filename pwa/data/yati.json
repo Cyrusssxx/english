@@ -318,94 +318,26 @@
       },
       {
        "k": "p",
-       "v": "On balance, the trend in the figures is worth welcoming. Admittedly, there are ups and downs, but a small dip does not change the big picture. Policy support and lower costs keep the change going. Companies should improve their products, and the authorities should provide better services. The development of new energy vehicles deserves continued support.",
+       "v": "On balance, the move to new energy vehicles is a welcome one, for its immense potential in promoting sustainable development and offering a smarter driving experience.",
        "sents": [
         {
-         "en": "On balance, the trend in the figures is worth welcoming.",
-         "cn": "总的来说，图里的趋势值得欢迎。",
+         "en": "On balance, the move to new energy vehicles is a welcome one, for its immense potential in promoting sustainable development and offering a smarter driving experience.",
+         "cn": "总的来说，向新能源汽车转型是一件值得欢迎的事，因为它在推动可持续发展和提供更智能的驾驶体验方面潜力巨大。",
          "swap": {
           "tag": "第三段立场",
-          "tips": "表态即可；换成「对消费者有利」或「方向令人鼓舞」，别再搬 welcome one 的旧写法",
+          "tips": "默认＝可持续 + 智能体验双理由；三条备选分别是「买得起+清洁」「资源压力+舒适」「发展方向+便利」，角度别重样",
           "alts": [
            {
-            "en": "On balance, this change is good news for consumers.",
-            "cn": "总的来说，这个变化对消费者来说是好消息。"
+            "en": "On balance, the shift to new energy vehicles is a change worth supporting, as cleaner travel is becoming affordable for more households.",
+            "cn": "总的来说，向新能源汽车转型是值得支持的变化，因为更清洁的出行正变得让更多家庭负担得起。"
            },
            {
-            "en": "The shift these figures reveal is a healthy one.",
-            "cn": "这些数字反映的变化是健康的。"
-           }
-          ]
-         }
-        },
-        {
-         "en": "Admittedly, there are ups and downs, but a small dip does not change the big picture.",
-         "cn": "诚然，数据有涨有跌，但一次小幅回落不会改变大局。",
-         "swap": {
-          "tag": "第三段走势",
-          "tips": "不提具体月份：一条说「整体重于单月」，一条说「暂时回落只是长过程的一环」",
-          "alts": [
-           {
-            "en": "The direction over the whole period matters more than one dip.",
-            "cn": "整个时期的方向，比一次回落更重要。"
+            "en": "On balance, the move to new energy vehicles is good news, for it eases pressure on resources while making daily journeys more comfortable.",
+            "cn": "总的来说，转向新能源汽车是好消息，因为它缓解资源压力，同时让日常出行更舒适。"
            },
            {
-            "en": "A temporary setback is only part of a longer process.",
-            "cn": "暂时的回落只是更长过程中的一小段。"
-           }
-          ]
-         }
-        },
-        {
-         "en": "Policy support and lower costs keep the change going.",
-         "cn": "政策支持和更低的成本让这个变化持续下去。",
-         "swap": {
-          "tag": "第三段支撑",
-          "tips": "一条从「技术变便宜、买得起」说，一条从「需求反过来推动厂商」说，别都讲政策",
-          "alts": [
-           {
-            "en": "Cheaper technology is putting such products within reach of more buyers.",
-            "cn": "更便宜的技术让更多买家买得起这类产品。"
-           },
-           {
-            "en": "Growing demand is pushing producers to improve what they offer.",
-            "cn": "需求增长正推动厂商改进自己的产品。"
-           }
-          ]
-         }
-        },
-        {
-         "en": "Companies should improve their products, and the authorities should provide better services.",
-         "cn": "企业要改进产品，主管部门要提供更好的服务。",
-         "swap": {
-          "tag": "第三段建议",
-          "tips": "企业 + 主管部门各一条；一条「质量+规则」，一条「价格合理+设施」，抽掉本题专属词",
-          "alts": [
-           {
-            "en": "Producers should focus on quality, while regulators should make the rules clear.",
-            "cn": "生产方应注重质量，监管方应把规则讲清楚。"
-           },
-           {
-            "en": "Firms should keep prices reasonable and the government should build the needed facilities.",
-            "cn": "企业应保持价格合理，政府应建好所需设施。"
-           }
-          ]
-         }
-        },
-        {
-         "en": "The development of new energy vehicles deserves continued support.",
-         "cn": "新能源汽车的发展值得持续支持。",
-         "swap": {
-          "tag": "第三段收尾",
-          "tips": "扣题落到「新能源的发展」；两条备选分别说「值得期待」「会走得更稳」，语气别重样",
-          "alts": [
-           {
-            "en": "The development of new energy vehicles deserves to be watched with confidence.",
-            "cn": "新能源汽车的发展值得满怀信心地期待。"
-           },
-           {
-            "en": "New energy vehicles are likely to develop more steadily in the years ahead.",
-            "cn": "新能源汽车未来几年有望发展得更稳。"
+            "en": "On balance, the growth of new energy vehicles is encouraging, since it points to a cleaner and more convenient way of travelling.",
+            "cn": "总的来说，新能源汽车的增长令人鼓舞，因为它指向一种更清洁、更便利的出行方式。"
            }
           ]
          }
@@ -413,7 +345,7 @@
        ]
       }
      ],
-     "words": 199
+     "words": 169
     },
     {
      "no": 8,

@@ -31,7 +31,8 @@ for (const g of data.groups) {
       // 大作文 3 段正文，每段都有逐句
       const ps = bs.filter(b => b.k === 'p');
       if (ps.length !== 3) badShape.push([it.no, '正文段数 ' + ps.length]);
-      else if (ps.some(b => !Array.isArray(b.sents) || b.sents.length < 2)) badShape.push([it.no, '段内缺逐句']);
+      // NO7 第三段 2026-11-23 定稿为一句（On balance … smarter driving experience），允许 1 句
+      else if (ps.some((b, bi) => !Array.isArray(b.sents) || b.sents.length < (it.no === 7 && bi === 2 ? 1 : 2))) badShape.push([it.no, '段内缺逐句']);
     }
     // 所有块（含 meta/sign）均应有逐句；每段逐句 en 拼回 = v
     for (const b of bs) {
