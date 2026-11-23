@@ -102,56 +102,78 @@ groups.append({
     ],
 })
 
-# 2. 加分短语（押题 md 逐条 + 范文常用）
+# --- topic 主题词组：按题材分 5 块（与 topics26 一致），打 sub 并按块序重排 ---
+_topic = groups[-1]
+_topic['blocks'] = [
+    {'name': '科技与教育', 'words': []},
+    {'name': '社会与健康', 'words': []},
+    {'name': '文化与传承', 'words': []},
+    {'name': '环境与消费', 'words': []},
+]
+_TOPIC_SUB = {
+    # 科技与教育
+    'artificial intelligence (AI)': '科技与教育', 'online learning': '科技与教育',
+    'offline study': '科技与教育', 'reading duration': '科技与教育',
+    'educational technology': '科技与教育', 'intelligent tutoring': '科技与教育',
+    'educational resources': '科技与教育', 'urban and rural areas': '科技与教育',
+    'educational equity': '科技与教育', 'balanced development': '科技与教育',
+    'rural education': '科技与教育', 'continuing education': '科技与教育',
+    'mobile-phone subscriptions': '科技与教育', 'labour practice course': '科技与教育',
+    'online information': '科技与教育',
+    # 文化与传承
+    'traditional culture': '文化与传承', 'cultural heritage': '文化与传承',
+    'cultural inheritance': '文化与传承', 'cultural experience': '文化与传承',
+    'cultural confidence': '文化与传承', 'short video': '文化与传承',
+    'self-media': '文化与传承', 'live streaming': '文化与传承',
+    'museum': '文化与传承', 'traditional Chinese art': '文化与传承',
+    # 环境与消费
+    'green consumption': '环境与消费', 'energy-saving home appliances': '环境与消费',
+    'eco-friendly daily products': '环境与消费', 'green food': '环境与消费',
+    'sustainable travel': '环境与消费', 'low-carbon concept': '环境与消费',
+    'environmental awareness': '环境与消费', 'sustainable lifestyle': '环境与消费',
+    'green travel': '环境与消费', 'high-speed rail': '环境与消费',
+    'public transport': '环境与消费', 'bicycle / cycling': '环境与消费',
+    'on foot / walking': '环境与消费', 'private cars': '环境与消费',
+    'low-carbon lifestyle': '环境与消费', 'eco-friendly transportation': '环境与消费',
+    'express delivery': '环境与消费', 'consumer behaviour': '环境与消费',
+    'excessive packaging': '环境与消费', 'new energy vehicles': '环境与消费',
+    'transport choices': '环境与消费', 'convenience store': '环境与消费',
+    'online and offline sales': '环境与消费', 'tourism development': '环境与消费',
+    # 社会与健康
+    'physical exercise': '社会与健康', 'health literacy': '社会与健康',
+    'leisure activities': '社会与健康', 'outdoor activities': '社会与健康',
+    'career choice': '社会与健康', 'companionship': '社会与健康',
+    'mental and physical health': '社会与健康', 'accessible facilities': '社会与健康',
+    'first-aid knowledge': '社会与健康', 'returning students': '社会与健康',
+    'life expectancy': '社会与健康', 'aging population': '社会与健康',
+    'career prospects': '社会与健康', 'food waste': '社会与健康',
+}
+for _it in _topic['items']:
+    _it['sub'] = _TOPIC_SUB.get(_it['en'], '社会与健康')
+_topic_order = {b['name']: i for i, b in enumerate(_topic['blocks'])}
+_topic['items'].sort(key=lambda x: (_topic_order.get(x['sub'], 99),))
+
+# 2. 加分短语（只留写作模板/范文里真实出现的，删掉的均 0 次命中）
 groups.append({
     'id': 'phrase', 'name': '加分短语 · 现挑现用', 'icon': '✨',
-    'desc': '押题原词表的加分短语，加范文里反复出现的高级搭配。写作时按话题挑 1~2 个塞进主体段。',
+    'desc': '只收写作模板和范文里真实出现的高级搭配：归因、多因素、抓紧、起手表态。按话题挑 1~2 个塞进主体段。',
     'items': [
-        I('gain increasing popularity', '越来越普及', '押'),
-        I('witness a steady rise', '呈现稳步上升', '押'),
-        I('facilitate study', '助力学习', '押'),
-        I('the largest proportion', '占最大比重', '押'),
-        I('cultural confidence', '文化自信', '押'),
-        I('inherit fine traditions', '传承优良传统', '押'),
-        I('narrow the gap', '缩小差距', '押'),
-        I('improve continuously', '持续改善', '押'),
-        I('promote educational fairness', '促进教育公平', '押'),
-        I('reduce carbon emissions', '减少碳排放', '押'),
-        I('play a vital role in', '在……中起重要作用', '范'),
         I('be attributed to', '归因于', '范'),
         I('a combination of factors', '多种因素的综合', '范'),
-        I('be aware of', '意识到', '范'),
-        I('seek various ways to', '寻求各种方法去', '范'),
-        I('be beneficial to', '有益于', '范'),
-        I('lay a solid foundation for', '为……打下坚实基础', '范'),
-        I('keep pace with', '跟上……的步伐', '范'),
-        I('raise public awareness of', '提高公众对……的意识', '范'),
-        I('strike a balance between', '在……之间取得平衡', '范'),
-        I('attach great importance to', '高度重视', '范'),
         I('make full use of', '充分利用', '范'),
-        I('take effective measures', '采取有效措施', '范'),
-        I('enjoy a growing popularity', '日益流行', '范'),
-        # 押题精选配套范文高频套语（标「范2」= 新 PDF 范文）
+        I('narrow the gap', '缩小差距', '押'),
         I('bear in mind that', '牢记……（第三段起手）', '范2'),
-        I('be of great importance to', '对……至关重要', '范2'),
         I('There is no doubt that', '毫无疑问', '范2'),
         I('several factors contribute to', '若干因素促成了……', '范2'),
-        I('a variety of reasons can be cited', '可以列举多种原因', '范2'),
         I('cannot ignore the fact that', '不能忽视……的事实', '范2'),
         I('It is not difficult to draw the conclusion that', '不难得出结论', '范2'),
         I('Only through the joint efforts of', '只有通过……的共同努力', '范2'),
         I('within our reach', '指日可待；够得着', '范2'),
         I('place pressure on', '给……带来压力', '范2'),
-        I('shed light on', '阐明；揭示', '范2'),
-        I('strike us as', '让我们觉得……', '范2'),
         I('by no means', '绝不（置首倒装）', '范2'),
         I('make a difference', '起作用；有影响', '范2'),
         I('room to grow', '改进/增长空间', '范2'),
         I('top the list', '位居首位', '范2'),
-        I('be well qualified for', '胜任……', '范2'),
-        I('have a good command of', '精通……', '范2'),
-        I('place an order', '下单', '范2'),
-        I('take ... into account', '把……考虑在内', '范2'),
     ],
 })
 
@@ -162,7 +184,6 @@ groups.append({
     'items': [
         I('bar chart', '柱状图', '类型'),
         I('pie chart', '饼图', '类型'),
-        I('line chart', '折线图', '类型'),
         I('table', '表格', '类型'),
         I('clearly illustrate', '清晰地展示', '动词'),
         I('account for', '占（比例）', '动词'),
@@ -172,58 +193,61 @@ groups.append({
         I('rose sharply', '急剧上升', '动词'),
         I('saw a modest increase', '小幅增长', '动词'),
         I('climbed steadily', '稳步攀升', '动词'),
-        I('declined gradually', '逐渐下降', '动词'),
-        I('remained stable', '保持稳定', '动词'),
         I('fluctuated', '波动', '动词'),
-        I('reached a peak', '达到峰值', '动词'),
-        I('a steady trend', '平稳趋势', '搭配'),
-        I('a slight increase', '轻微增长', '搭配'),
-        I('a dramatic decline', '大幅下降', '搭配'),
         I('over the same period', '同期', '搭配'),
         I('in contrast', '相比之下', '搭配'),
         I('the figure for', '……的数据', '搭配'),
     ],
 })
 
-# 4. 连接词 / 逻辑词
+# 4. 连接词 / 逻辑词（只收写作模板骨架里真实出现的，来源 writing_templates.json 的
+#    sections[].framework 句首 + linkers.better 升级链 + sections[].en / skeletons[].en；
+#    不收押题范文、demo、替换句里的词。按「引出原因→机制句→立场→主体→图表对比」分组）
 groups.append({
     'id': 'link', 'name': '连接词 · 逻辑衔接', 'icon': '🔗',
-    'desc': '只收写作模板里反复用到的过渡词：六类各留一条，避免同义扎堆。',
+    'desc': '只收写作模板骨架里真实出现的衔接词：第二段引出原因、三条机制句、第三段立场与主体、图表同期对比。都是你自己骨架里写的，背了直接能套。',
     'items': [
-        I('to begin with', '首先', '顺序'),
-        I('in addition', '此外', '递进'),
-        I('by contrast', '相比之下', '转折'),
-        I('therefore', '因此', '因果'),
+        # 第二段：引出原因
+        I('a combination of factors', '多种因素的综合（引出原因）', '引因'),
+        I('Primary among these is', '其中首要的是（机制句①）', '机制'),
+        I('Equally important,', '同样重要的是（机制句②）', '机制'),
+        I('A further driver is', '另一个推动因素是（机制句③）', '机制'),
+        # linkers.better 同义升级链
+        I('The most immediate factor is', '最直接的因素是', '机制'),
+        I('Chief among them is', '其中最主要的是', '机制'),
+        I('Just as significant,', '同样重要的是', '机制'),
+        I('Beyond that,', '除此之外', '机制'),
+        # 第三段：立场 / 主体 / 收束
+        I('On balance,', '总的来说（立场句）', '立场'),
+        I('Taking everything into account', '综合考虑', '立场'),
+        I('Given the trends above', '鉴于上述趋势', '立场'),
+        I('To make the most of these gains,', '要延续这些成效（正面主体）', '主体'),
+        I('To address this problem,', '要解决这一问题（负面主体）', '主体'),
+        I('To keep both sides in view,', '要兼顾两面（双面主体）', '主体'),
+        I('With such steps in place,', '有了这些举措（收束）', '收束'),
+        # 图表描述：同期 / 对比 / 手段
+        I('during this period', '在此期间', '同期'),
+        I('over the same period', '同期', '同期'),
+        I('by contrast', '相比之下', '对比'),
+        I('whereas', '而（对比）', '对比'),
+        I('in this way', '这样', '手段'),
+        I('only through', '只有通过', '条件'),
         I('overall', '总体而言', '总结'),
-        I('admittedly', '诚然', '让步'),
     ],
 })
 
-# 5. 小作文功能词 / 书信套语
+# 5. 小作文功能词 / 书信套语（只留模板里真实出现的；删掉的均 0 次命中）
 groups.append({
     'id': 'letter', 'name': '小作文 · 功能句词', 'icon': '✉️',
-    'desc': '书信/通知/纪要的高频动词和套语。称呼落款、邀请建议感谢投诉，都从这些词展开。',
+    'desc': '只收小作文模板里真实出现的称呼落款与功能套语。邀请建议感谢投诉按题目挑对应的一句。',
     'items': [
         I('Dear Sir or Madam', '尊敬的先生/女士', '称呼'),
         I('Yours sincerely', '谨启（正式）', '落款'),
-        I('Yours faithfully', '谨启（不知姓名）', '落款'),
         I('I am writing to', '我写信是为了', '开头'),
         I('express my gratitude', '表达感谢', '功能'),
-        I('extend my congratulations', '表示祝贺', '功能'),
-        I('lodge a complaint', '提出投诉', '功能'),
-        I('seek your advice', '征求你的建议', '功能'),
-        I('make a suggestion', '提出建议', '功能'),
-        I('extend an invitation', '发出邀请', '功能'),
         I('I would appreciate it if', '如果……将不胜感激', '功能'),
         I('be delighted to', '很高兴做', '功能'),
         I('look forward to your reply', '期待你的回复', '结尾'),
-        I('at your earliest convenience', '尽早', '结尾'),
-        I('take into consideration', '考虑', '功能'),
-        I('a brief introduction', '简要介绍', '功能'),
-        I('on behalf of', '代表', '功能'),
-        I('be scheduled for', '定于……举行', '功能'),
-        I('participate in', '参加', '功能'),
-        I('sign up for', '报名参加', '功能'),
     ],
 })
 
@@ -380,31 +404,25 @@ HIGH_FREQ = {
         'companionship', 'life expectancy', 'excessive packaging',
     ],
     'phrase': [
-        'bear in mind that', 'be of great importance to', 'first and foremost',
-        'There is no doubt that', 'cannot ignore the fact that',
-        'several factors contribute to', 'play a vital role in',
-        'attach great importance to', 'strike a balance between',
-        'Only through the joint efforts of', 'take effective measures',
-        'a variety of reasons can be cited', 'within our reach',
-        'It is not difficult to draw the conclusion that',
-        'gain increasing popularity', 'witness a steady rise',
+        'bear in mind that', 'There is no doubt that', 'cannot ignore the fact that',
+        'several factors contribute to', 'Only through the joint efforts of',
+        'within our reach', 'It is not difficult to draw the conclusion that',
         'be attributed to', 'make full use of',
     ],
     'chart': [
         'clearly illustrate', 'account for', 'rose sharply', 'followed by',
-        'respectively', 'bar chart', 'pie chart', 'line chart', 'table',
-        'a steady trend', 'reached a peak', 'fluctuated',
-        'over the same period', 'in contrast', 'the figure for',
+        'respectively', 'bar chart', 'pie chart', 'table',
+        'fluctuated', 'over the same period', 'in contrast', 'the figure for',
     ],
     'link': [
-        'to begin with', 'in addition', 'by contrast',
-        'therefore', 'overall', 'admittedly',
+        'a combination of factors', 'Primary among these is', 'Equally important,',
+        'A further driver is', 'On balance,', 'To address this problem,',
+        'by contrast', 'during this period', 'With such steps in place,',
     ],
     'letter': [
         'I am writing to', 'look forward to your reply', 'express my gratitude',
         'be delighted to', 'I would appreciate it if', 'Yours sincerely',
-        'Dear Sir or Madam', 'participate in', 'make a suggestion',
-        'seek your advice', 'sign up for', 'take into consideration',
+        'Dear Sir or Madam',
     ],
     'name': [
         'Li Ming', 'Zhang Wei', 'Beijing', 'China', 'Chinese',

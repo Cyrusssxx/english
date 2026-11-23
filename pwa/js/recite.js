@@ -49,8 +49,8 @@ function rcRender() {
                     `<span class="rc-hw word" data-w="${rcEsc(String(w.en).replace(/\([^)]*\)/g, '').trim().toLowerCase())}" data-ph="1">${rcEsc(w.en)}<span class="rc-hw-cn">${rcEsc(w.cn)}</span></span>`
                 ).join('');
                 return `<div class="rc-hw-block" id="rcB_${rcEsc(g.id)}_${bi}">
-                    <h3 class="rc-hw-title">${rcEsc(b.name)}<span class="rc-hw-n">${its.length} 题</span></h3>
-                    <div class="rc-hw-words">${hws}</div>
+                    <h3 class="rc-hw-title">${rcEsc(b.name)}<span class="rc-hw-n">${its.length} 条</span></h3>
+                    ${hws ? `<div class="rc-hw-words">${hws}</div>` : ''}
                     <div class="rcw-grid">${rows}</div>
                 </div>`;
             }).join('');

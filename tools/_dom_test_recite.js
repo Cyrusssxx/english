@@ -82,6 +82,28 @@ function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
   if (!hws.length || hws.length !== (parsed.groups.find(g => g.id === 'topics26').blocks || []).reduce((s, b) => s + b.words.length, 0))
     fail('分块高频词 chips 数不符 ' + hws.length);
   else pass('分块高频词 ' + hws.length + ' 个均可点查词');
+  // 4c. 主题词组也分块（4 块、无空块、词条总数不丢）
+  const topicG = d.getElementById('rcG_topic');
+  const topicBlocks = topicG ? [...topicG.querySelectorAll('.rc-hw-block')] : [];
+  const topicData = parsed.groups.find(g => g.id === 'topic');
+  if (topicBlocks.length !== (topicData.blocks || []).length) fail('主题词分块数 ' + topicBlocks.length + ' != ' + (topicData.blocks || []).length);
+  else pass('主题词分 ' + topicBlocks.length + ' 块');
+  const emptyBlock = topicBlocks.find(b => b.querySelectorAll('.rcw-row').length === 0);
+  if (emptyBlock) fail('主题词存在空块: ' + emptyBlock.querySelector('.rc-hw-title').textContent);
+  else pass('主题词无空块');
+  const topicRows = topicG ? topicG.querySelectorAll('.rcw-row').length : 0;
+  if (topicRows !== topicData.items.length) fail('主题词行 ' + topicRows + ' != ' + topicData.items.length);
+  else pass('主题词 ' + topicRows + ' 条全渲染');
+  // 4d. 连接词组只收骨架真词：on balance 在、to begin with/admittedly 不在
+  const linkG = d.getElementById('rcG_link');
+  const linkText = linkG ? linkG.textContent : '';
+  if (!/on balance/i.test(linkText)) fail('连接词缺 On balance（骨架立场句）');
+  else pass('连接词含骨架立场句 On balance');
+  if (!/Primary among these is/i.test(linkText) || !/Equally important/i.test(linkText) || !/A further driver is/i.test(linkText))
+    fail('连接词缺第二段机制句引入语');
+  else pass('连接词含三条机制句引入语');
+  if (/to begin with|admittedly|therefore/i.test(linkText)) fail('连接词混入非骨架词');
+  else pass('连接词无骨架外词');
   // 5. 左侧目录 wrapper + 折叠按钮 + 竖条抽屉 tab
   const toc = d.getElementById('rcToc');
   const tocList = d.getElementById('rcTocList');
