@@ -14,10 +14,12 @@ import json, os
 
 OUT = os.path.join(os.path.dirname(__file__), '..', 'pwa', 'data', 'writing_words.json')
 
-def I(en, cn, tag=None):
+def I(en, cn, tag=None, sub=None):
     d = {'en': en, 'cn': cn}
     if tag:
         d['tag'] = tag
+    if sub:
+        d['sub'] = sub
     return d
 
 groups = []
@@ -258,7 +260,58 @@ groups.append({
 # 7. 押题话题 26 题（中英对照，来自押题精选 PDF 的 26 道题目）
 groups.append({
     'id': 'topics26', 'name': '押题话题 · 26 题中英对照', 'icon': '📝',
-    'desc': '押题精选 PDF 的 18 道大作文 + 8 道小作文题目，逐题中英对照。看到中文题目要能立刻反应出英文关键词。',
+    'desc': '押题精选 PDF 的 18 道大作文 + 8 道小作文题目，按题材分块、逐题中英对照；每块附一组高频词，看到中文题目要能立刻反应出英文关键词。',
+    # 按题材分 5 块；每块配 5-8 个该类高频词（复用 topic/letter 组的中英对照）
+    'blocks': [
+        {'name': '科技与教育', 'words': [
+            I('artificial intelligence (AI)', '人工智能'),
+            I('online learning', '线上学习'),
+            I('educational technology', '教育科技'),
+            I('intelligent tutoring', '智能辅导'),
+            I('continuing education', '继续教育'),
+            I('online information', '网络信息'),
+            I('educational resources', '教育资源'),
+            I('self-media', '自媒体'),
+        ]},
+        {'name': '社会与健康', 'words': [
+            I('companionship', '陪伴'),
+            I('mental and physical health', '身心健康'),
+            I('career choice', '职业选择'),
+            I('accessible facilities', '无障碍设施'),
+            I('first-aid knowledge', '急救知识'),
+            I('aging population', '人口老龄化'),
+            I('life expectancy', '平均寿命'),
+            I('health literacy', '健康素养'),
+        ]},
+        {'name': '文化与传承', 'words': [
+            I('traditional culture', '传统文化'),
+            I('cultural heritage', '文化遗产'),
+            I('cultural confidence', '文化自信'),
+            I('cultural inheritance', '文化传承'),
+            I('traditional Chinese art', '中国传统艺术'),
+            I('cultural experience', '文化体验'),
+        ]},
+        {'name': '环境与消费', 'words': [
+            I('green consumption', '绿色消费'),
+            I('excessive packaging', '过度包装'),
+            I('new energy vehicles', '新能源汽车'),
+            I('transport choices', '出行选择'),
+            I('convenience store', '便利店'),
+            I('low-carbon lifestyle', '低碳生活方式'),
+            I('green travel', '绿色出行'),
+            I('consumer behaviour', '消费者行为'),
+        ]},
+        {'name': '小作文应用文', 'words': [
+            I('make a suggestion', '提出建议'),
+            I('seek your advice', '征求你的建议'),
+            I('express my gratitude', '表达感谢'),
+            I('extend an invitation', '发出邀请'),
+            I('look forward to your reply', '期待你的回复'),
+            I('I would appreciate it if', '如果……将不胜感激'),
+            I('participate in', '参加'),
+            I('on behalf of', '代表'),
+        ]},
+    ],
     'items': [
         I('the use of AI tools', '人工智能工具的使用', '大1'),
         I('accompanying vs. companionship', '「陪着」不等于「陪伴」', '大2'),
@@ -288,6 +341,29 @@ groups.append({
         I('minutes of meeting: preventing food waste', '防止食物浪费：会议纪要', '小26'),
     ],
 })
+
+# --- topics26：按题材块给 26 条打 sub 标签、按块顺序重排，并把整组挪到 topic 组后面相邻 ---
+_t26 = next(g for g in groups if g['id'] == 'topics26')
+_T26_SUB = {
+    # 科技与教育
+    '大1': '科技与教育', '大5': '科技与教育', '大6': '科技与教育',
+    # 社会与健康
+    '大2': '社会与健康', '大3': '社会与健康', '大9': '社会与健康',
+    '大11': '社会与健康', '大12': '社会与健康', '大13': '社会与健康', '大14': '社会与健康',
+    # 文化与传承
+    '大16': '文化与传承', '大17': '文化与传承',
+    # 环境与消费
+    '大4': '环境与消费', '大7': '环境与消费', '大8': '环境与消费',
+    '大10': '环境与消费', '大15': '环境与消费', '大18': '环境与消费',
+}
+for _it in _t26['items']:
+    _it['sub'] = _T26_SUB.get(_it['tag'], '小作文应用文')
+_block_order = {b['name']: i for i, b in enumerate(_t26['blocks'])}
+_t26['items'].sort(key=lambda x: (_block_order.get(x['sub'], 99),))
+# 挪到 topic 组后面
+_topic_idx = next(i for i, g in enumerate(groups) if g['id'] == 'topic')
+groups.remove(_t26)
+groups.insert(_topic_idx + 1, _t26)
 
 # ============================================================
 # 高频前置：按「范文里反复出现 / 写作最常用的词」把每组内的词条往前排。

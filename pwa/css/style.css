@@ -5956,3 +5956,31 @@ html.dark .yt-lg-swap { color: #c4b5fd; background: rgba(167, 139, 250, .18); }
 }
 .dark .wup-tone { color: #f0b45c; background: rgba(245,158,11,.2); border-bottom-color: rgba(245,158,11,.55); }
 @media (max-width: 640px) { .wr-swap-pop { width: calc(100vw - 24px); } }
+
+/* 押题话题分块：题材小标题 + 该类高频词 chips（recite 页 topics26 组） */
+.rc-hw-block { margin: 0 0 22px; }
+.rc-hw-block:last-child { margin-bottom: 0; }
+.rc-hw-title {
+    font-size: .94rem; color: var(--text); margin: 0 0 8px;
+    padding: 5px 0 5px 10px; border-left: 3px solid var(--primary);
+    background: var(--primary-soft); border-radius: 0 6px 6px 0;
+}
+.rc-hw-n {
+    font-size: .7rem; font-weight: 600; color: var(--primary);
+    margin-left: 8px; vertical-align: 1px;
+}
+.rc-hw-words { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 0 0 10px; }
+.rc-hw {
+    display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: 5px;
+    font-size: .82rem; font-weight: 700; color: var(--primary-dark);
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: 6px; padding: 4px 8px; line-height: 1.4;
+    cursor: pointer; border-bottom: 1px dashed var(--primary);
+}
+.rc-hw:hover { color: var(--primary); border-color: var(--primary); }
+.rc-hw-cn { color: var(--text-light); font-size: .78rem; font-weight: 400; }
+html.dark .rc-hw { color: #7fd4c8; }
+@media (max-width: 640px) {
+    .rc-hw-words { gap: 5px 6px; }
+    .rc-hw { font-size: .78rem; }
+}

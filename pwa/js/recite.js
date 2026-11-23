@@ -31,17 +31,37 @@ function rcRender() {
     const links = document.getElementById('rcTocList');
     if (!host || !RC) return;
     const groups = RC.groups || [];
+    // 题行公共渲染（保持 .rcw-row 结构与计数不变）
+    const rowHtml = (it, clickable) => {
+        const tag = it.tag ? `<span class="rcw-tag">${rcEsc(it.tag)}</span>` : '';
+        return `<div class="rcw-row">${rcWordSpan(it.en, clickable)}${tag}<span class="rcw-cn">${rcEsc(it.cn)}</span></div>`;
+    };
     host.innerHTML = groups.map((g, gi) => {
-        const rows = (g.items || []).map(it => {
-            const tag = it.tag ? `<span class="rcw-tag">${rcEsc(it.tag)}</span>` : '';
-            // 人名地名/专名组不做词典查词（词典无收录）
-            const clickable = g.id !== 'name';
-            return `<div class="rcw-row">${rcWordSpan(it.en, clickable)}${tag}<span class="rcw-cn">${rcEsc(it.cn)}</span></div>`;
-        }).join('');
+        // 人名地名/专名组不做词典查词（词典无收录）
+        const clickable = g.id !== 'name';
+        let body;
+        if (g.blocks && g.blocks.length) {
+            // 分块组（如押题话题 26 题）：每块 = 小标题 + 高频词 chips + 该类题行
+            body = g.blocks.map((b, bi) => {
+                const its = (g.items || []).filter(it => it.sub === b.name);
+                const rows = its.map(it => rowHtml(it, clickable)).join('');
+                const hws = (b.words || []).map(w =>
+                    `<span class="rc-hw word" data-w="${rcEsc(String(w.en).replace(/\([^)]*\)/g, '').trim().toLowerCase())}" data-ph="1">${rcEsc(w.en)}<span class="rc-hw-cn">${rcEsc(w.cn)}</span></span>`
+                ).join('');
+                return `<div class="rc-hw-block" id="rcB_${rcEsc(g.id)}_${bi}">
+                    <h3 class="rc-hw-title">${rcEsc(b.name)}<span class="rc-hw-n">${its.length} 题</span></h3>
+                    <div class="rc-hw-words">${hws}</div>
+                    <div class="rcw-grid">${rows}</div>
+                </div>`;
+            }).join('');
+        } else {
+            const rows = (g.items || []).map(it => rowHtml(it, clickable)).join('');
+            body = `<div class="rcw-grid">${rows}</div>`;
+        }
         return `<section class="rc-sec rc-wg" id="rcG_${rcEsc(g.id)}">
             <h2 class="rc-h2"><span class="rc-wg-icon">${rcEsc(g.icon || '')}</span>${rcEsc(g.name)}<span class="rc-wg-n">${(g.items || []).length}</span></h2>
             <p class="rc-wg-desc">${rcEsc(g.desc || '')}</p>
-            <div class="rcw-grid">${rows}</div>
+            ${body}
         </section>`;
     }).join('');
     if (links) {

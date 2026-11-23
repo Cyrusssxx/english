@@ -328,6 +328,349 @@
    ]
   },
   {
+   "id": "topics26",
+   "name": "押题话题 · 26 题中英对照",
+   "icon": "📝",
+   "desc": "押题精选 PDF 的 18 道大作文 + 8 道小作文题目，按题材分块、逐题中英对照；每块附一组高频词，看到中文题目要能立刻反应出英文关键词。",
+   "blocks": [
+    {
+     "name": "科技与教育",
+     "words": [
+      {
+       "en": "artificial intelligence (AI)",
+       "cn": "人工智能"
+      },
+      {
+       "en": "online learning",
+       "cn": "线上学习"
+      },
+      {
+       "en": "educational technology",
+       "cn": "教育科技"
+      },
+      {
+       "en": "intelligent tutoring",
+       "cn": "智能辅导"
+      },
+      {
+       "en": "continuing education",
+       "cn": "继续教育"
+      },
+      {
+       "en": "online information",
+       "cn": "网络信息"
+      },
+      {
+       "en": "educational resources",
+       "cn": "教育资源"
+      },
+      {
+       "en": "self-media",
+       "cn": "自媒体"
+      }
+     ]
+    },
+    {
+     "name": "社会与健康",
+     "words": [
+      {
+       "en": "companionship",
+       "cn": "陪伴"
+      },
+      {
+       "en": "mental and physical health",
+       "cn": "身心健康"
+      },
+      {
+       "en": "career choice",
+       "cn": "职业选择"
+      },
+      {
+       "en": "accessible facilities",
+       "cn": "无障碍设施"
+      },
+      {
+       "en": "first-aid knowledge",
+       "cn": "急救知识"
+      },
+      {
+       "en": "aging population",
+       "cn": "人口老龄化"
+      },
+      {
+       "en": "life expectancy",
+       "cn": "平均寿命"
+      },
+      {
+       "en": "health literacy",
+       "cn": "健康素养"
+      }
+     ]
+    },
+    {
+     "name": "文化与传承",
+     "words": [
+      {
+       "en": "traditional culture",
+       "cn": "传统文化"
+      },
+      {
+       "en": "cultural heritage",
+       "cn": "文化遗产"
+      },
+      {
+       "en": "cultural confidence",
+       "cn": "文化自信"
+      },
+      {
+       "en": "cultural inheritance",
+       "cn": "文化传承"
+      },
+      {
+       "en": "traditional Chinese art",
+       "cn": "中国传统艺术"
+      },
+      {
+       "en": "cultural experience",
+       "cn": "文化体验"
+      }
+     ]
+    },
+    {
+     "name": "环境与消费",
+     "words": [
+      {
+       "en": "green consumption",
+       "cn": "绿色消费"
+      },
+      {
+       "en": "excessive packaging",
+       "cn": "过度包装"
+      },
+      {
+       "en": "new energy vehicles",
+       "cn": "新能源汽车"
+      },
+      {
+       "en": "transport choices",
+       "cn": "出行选择"
+      },
+      {
+       "en": "convenience store",
+       "cn": "便利店"
+      },
+      {
+       "en": "low-carbon lifestyle",
+       "cn": "低碳生活方式"
+      },
+      {
+       "en": "green travel",
+       "cn": "绿色出行"
+      },
+      {
+       "en": "consumer behaviour",
+       "cn": "消费者行为"
+      }
+     ]
+    },
+    {
+     "name": "小作文应用文",
+     "words": [
+      {
+       "en": "make a suggestion",
+       "cn": "提出建议"
+      },
+      {
+       "en": "seek your advice",
+       "cn": "征求你的建议"
+      },
+      {
+       "en": "express my gratitude",
+       "cn": "表达感谢"
+      },
+      {
+       "en": "extend an invitation",
+       "cn": "发出邀请"
+      },
+      {
+       "en": "look forward to your reply",
+       "cn": "期待你的回复"
+      },
+      {
+       "en": "I would appreciate it if",
+       "cn": "如果……将不胜感激"
+      },
+      {
+       "en": "participate in",
+       "cn": "参加"
+      },
+      {
+       "en": "on behalf of",
+       "cn": "代表"
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "en": "the use of AI tools",
+     "cn": "人工智能工具的使用",
+     "tag": "大1",
+     "sub": "科技与教育"
+    },
+    {
+     "en": "online information and rational judgment",
+     "cn": "网络信息与理性辨别",
+     "tag": "大5",
+     "sub": "科技与教育"
+    },
+    {
+     "en": "purposes of continuing education for working adults",
+     "cn": "在职群体参加继续学习的目的",
+     "tag": "大6",
+     "sub": "科技与教育"
+    },
+    {
+     "en": "accompanying vs. companionship",
+     "cn": "「陪着」不等于「陪伴」",
+     "tag": "大2",
+     "sub": "社会与健康"
+    },
+    {
+     "en": "stress and mental health",
+     "cn": "压力与身心健康",
+     "tag": "大3",
+     "sub": "社会与健康"
+    },
+    {
+     "en": "factors in career choice for graduates",
+     "cn": "大学生择业考虑因素",
+     "tag": "大9",
+     "sub": "社会与健康"
+    },
+    {
+     "en": "the spread of accessible routes in public places",
+     "cn": "公共场所无障碍通道的普及",
+     "tag": "大11",
+     "sub": "社会与健康"
+    },
+    {
+     "en": "the spread of first-aid knowledge",
+     "cn": "急救知识的普及",
+     "tag": "大12",
+     "sub": "社会与健康"
+    },
+    {
+     "en": "returnees developing their careers at home",
+     "cn": "留学人员回国发展",
+     "tag": "大13",
+     "sub": "社会与健康"
+    },
+    {
+     "en": "life expectancy and population aging",
+     "cn": "中国人平均寿命与人口老龄化",
+     "tag": "大14",
+     "sub": "社会与健康"
+    },
+    {
+     "en": "the inheritance of traditional Chinese art",
+     "cn": "中国传统艺术的传承",
+     "tag": "大16",
+     "sub": "文化与传承"
+    },
+    {
+     "en": "popularity vs. genuine passion",
+     "cn": "热门与热爱",
+     "tag": "大17",
+     "sub": "文化与传承"
+    },
+    {
+     "en": "excessive packaging and green consumption",
+     "cn": "过度包装与绿色消费",
+     "tag": "大4",
+     "sub": "环境与消费"
+    },
+    {
+     "en": "domestic sales of fuel and new energy vehicles",
+     "cn": "燃油车与新能源汽车国内销量",
+     "tag": "大7",
+     "sub": "环境与消费"
+    },
+    {
+     "en": "residents' daily transport choices",
+     "cn": "居民日常出行选择",
+     "tag": "大8",
+     "sub": "环境与消费"
+    },
+    {
+     "en": "the number of convenience stores nationwide",
+     "cn": "全国便利店门店数量",
+     "tag": "大10",
+     "sub": "环境与消费"
+    },
+    {
+     "en": "online vs. offline ice cream sales",
+     "cn": "冰激凌线上与线下销售占比",
+     "tag": "大15",
+     "sub": "环境与消费"
+    },
+    {
+     "en": "tourism development and environmental protection",
+     "cn": "旅游发展与环境保护",
+     "tag": "大18",
+     "sub": "环境与消费"
+    },
+    {
+     "en": "peer mentoring program: introduction and reply",
+     "cn": "新生朋辈指导项目：介绍与回复",
+     "tag": "小19",
+     "sub": "小作文应用文"
+    },
+    {
+     "en": "Chinese culture speech: suggestions and arrangements",
+     "cn": "中国文化演讲：建议与安排",
+     "tag": "小20",
+     "sub": "小作文应用文"
+    },
+    {
+     "en": "recommend a learning tool: advice and explanation",
+     "cn": "学习工具推荐：建议与说明",
+     "tag": "小21",
+     "sub": "小作文应用文"
+    },
+    {
+     "en": "pick-up plan change: apology and suggestion",
+     "cn": "接机计划变更：道歉与建议",
+     "tag": "小22",
+     "sub": "小作文应用文"
+    },
+    {
+     "en": "help with overseas study: thanks and invitation",
+     "cn": "海外学习帮助：感谢与邀请",
+     "tag": "小23",
+     "sub": "小作文应用文"
+    },
+    {
+     "en": "volunteer at cultural exchange center: application",
+     "cn": "文化交流中心志愿者：申请与说明",
+     "tag": "小24",
+     "sub": "小作文应用文"
+    },
+    {
+     "en": "volunteer recruitment notice",
+     "cn": "文化旅游协会：志愿者招募通知",
+     "tag": "小25",
+     "sub": "小作文应用文"
+    },
+    {
+     "en": "minutes of meeting: preventing food waste",
+     "cn": "防止食物浪费：会议纪要",
+     "tag": "小26",
+     "sub": "小作文应用文"
+    }
+   ]
+  },
+  {
    "id": "phrase",
    "name": "加分短语 · 现挑现用",
    "icon": "✨",
@@ -929,144 +1272,6 @@
      "en": "ChatGPT",
      "cn": "聊天机器人（AI 工具名）",
      "tag": "专名"
-    }
-   ]
-  },
-  {
-   "id": "topics26",
-   "name": "押题话题 · 26 题中英对照",
-   "icon": "📝",
-   "desc": "押题精选 PDF 的 18 道大作文 + 8 道小作文题目，逐题中英对照。看到中文题目要能立刻反应出英文关键词。",
-   "items": [
-    {
-     "en": "the use of AI tools",
-     "cn": "人工智能工具的使用",
-     "tag": "大1"
-    },
-    {
-     "en": "accompanying vs. companionship",
-     "cn": "「陪着」不等于「陪伴」",
-     "tag": "大2"
-    },
-    {
-     "en": "stress and mental health",
-     "cn": "压力与身心健康",
-     "tag": "大3"
-    },
-    {
-     "en": "excessive packaging and green consumption",
-     "cn": "过度包装与绿色消费",
-     "tag": "大4"
-    },
-    {
-     "en": "online information and rational judgment",
-     "cn": "网络信息与理性辨别",
-     "tag": "大5"
-    },
-    {
-     "en": "purposes of continuing education for working adults",
-     "cn": "在职群体参加继续学习的目的",
-     "tag": "大6"
-    },
-    {
-     "en": "domestic sales of fuel and new energy vehicles",
-     "cn": "燃油车与新能源汽车国内销量",
-     "tag": "大7"
-    },
-    {
-     "en": "residents' daily transport choices",
-     "cn": "居民日常出行选择",
-     "tag": "大8"
-    },
-    {
-     "en": "factors in career choice for graduates",
-     "cn": "大学生择业考虑因素",
-     "tag": "大9"
-    },
-    {
-     "en": "the number of convenience stores nationwide",
-     "cn": "全国便利店门店数量",
-     "tag": "大10"
-    },
-    {
-     "en": "the spread of accessible routes in public places",
-     "cn": "公共场所无障碍通道的普及",
-     "tag": "大11"
-    },
-    {
-     "en": "the spread of first-aid knowledge",
-     "cn": "急救知识的普及",
-     "tag": "大12"
-    },
-    {
-     "en": "returnees developing their careers at home",
-     "cn": "留学人员回国发展",
-     "tag": "大13"
-    },
-    {
-     "en": "life expectancy and population aging",
-     "cn": "中国人平均寿命与人口老龄化",
-     "tag": "大14"
-    },
-    {
-     "en": "online vs. offline ice cream sales",
-     "cn": "冰激凌线上与线下销售占比",
-     "tag": "大15"
-    },
-    {
-     "en": "the inheritance of traditional Chinese art",
-     "cn": "中国传统艺术的传承",
-     "tag": "大16"
-    },
-    {
-     "en": "popularity vs. genuine passion",
-     "cn": "热门与热爱",
-     "tag": "大17"
-    },
-    {
-     "en": "tourism development and environmental protection",
-     "cn": "旅游发展与环境保护",
-     "tag": "大18"
-    },
-    {
-     "en": "peer mentoring program: introduction and reply",
-     "cn": "新生朋辈指导项目：介绍与回复",
-     "tag": "小19"
-    },
-    {
-     "en": "Chinese culture speech: suggestions and arrangements",
-     "cn": "中国文化演讲：建议与安排",
-     "tag": "小20"
-    },
-    {
-     "en": "recommend a learning tool: advice and explanation",
-     "cn": "学习工具推荐：建议与说明",
-     "tag": "小21"
-    },
-    {
-     "en": "pick-up plan change: apology and suggestion",
-     "cn": "接机计划变更：道歉与建议",
-     "tag": "小22"
-    },
-    {
-     "en": "help with overseas study: thanks and invitation",
-     "cn": "海外学习帮助：感谢与邀请",
-     "tag": "小23"
-    },
-    {
-     "en": "volunteer at cultural exchange center: application",
-     "cn": "文化交流中心志愿者：申请与说明",
-     "tag": "小24"
-    },
-    {
-     "en": "volunteer recruitment notice",
-     "cn": "文化旅游协会：志愿者招募通知",
-     "tag": "小25"
-    },
-    {
-     "en": "minutes of meeting: preventing food waste",
-     "cn": "防止食物浪费：会议纪要",
-     "tag": "小26"
     }
    ]
   }

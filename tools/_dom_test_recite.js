@@ -67,6 +67,21 @@ function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
   // 括号注释已从 key 去掉（显示保留）
   const ai = [...ws].find(x => x.textContent.includes('artificial intelligence'));
   if (ai && /\(/.test(ai.dataset.w)) fail('词组 key 仍含括号'); else pass('词组 key 已去括号注释');
+  // 4b. 押题话题分块渲染：5 块题材 + 高频词 chips + 26 题行不丢 + 紧跟主题词组
+  const t26 = d.getElementById('rcG_topics26');
+  const t26secs = [...d.querySelectorAll('.rc-wg')].map(s => s.id);
+  if (t26secs[1] !== 'rcG_topics26') fail('topics26 未紧跟主题词组: ' + t26secs.slice(0, 3));
+  else pass('topics26 紧跟主题词组');
+  const blocks = t26 ? [...t26.querySelectorAll('.rc-hw-block')] : [];
+  if (blocks.length !== 5) fail('押题分块数 ' + blocks.length + ' != 5');
+  else pass('押题话题分 5 块');
+  const t26rows = t26 ? t26.querySelectorAll('.rcw-row').length : 0;
+  if (t26rows !== 26) fail('押题 26 题行 ' + t26rows);
+  else pass('押题 26 题行全渲染');
+  const hws = t26 ? t26.querySelectorAll('.rc-hw.word[data-w]') : [];
+  if (!hws.length || hws.length !== (parsed.groups.find(g => g.id === 'topics26').blocks || []).reduce((s, b) => s + b.words.length, 0))
+    fail('分块高频词 chips 数不符 ' + hws.length);
+  else pass('分块高频词 ' + hws.length + ' 个均可点查词');
   // 5. 左侧目录 wrapper + 折叠按钮 + 竖条抽屉 tab
   const toc = d.getElementById('rcToc');
   const tocList = d.getElementById('rcTocList');
