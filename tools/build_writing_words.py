@@ -186,26 +186,14 @@ groups.append({
 # 4. 连接词 / 逻辑词
 groups.append({
     'id': 'link', 'name': '连接词 · 逻辑衔接', 'icon': '🔗',
-    'desc': '句间过渡用。写作模板里已反复出现，务必拼写正确。',
+    'desc': '只收写作模板里反复用到的过渡词：六类各留一条，避免同义扎堆。',
     'items': [
         I('to begin with', '首先', '顺序'),
-        I('first and foremost', '首先（强调）', '顺序'),
         I('in addition', '此外', '递进'),
-        I('furthermore', '此外', '递进'),
-        I('moreover', '而且', '递进'),
-        I('in particular', '尤其', '递进'),
         I('by contrast', '相比之下', '转折'),
-        I('nevertheless', '然而', '转折'),
-        I('whereas', '然而（对比）', '转折'),
         I('therefore', '因此', '因果'),
-        I('as a result', '结果', '因果'),
-        I('consequently', '因此', '因果'),
-        I('given that', '鉴于', '因果'),
-        I('in conclusion', '总之', '总结'),
-        I('to conclude', '最后', '总结'),
         I('overall', '总体而言', '总结'),
         I('admittedly', '诚然', '让步'),
-        I('that said', '话虽如此', '让步'),
     ],
 })
 
@@ -333,9 +321,8 @@ HIGH_FREQ = {
         'over the same period', 'in contrast', 'the figure for',
     ],
     'link': [
-        'first and foremost', 'furthermore', 'moreover', 'therefore',
-        'in conclusion', 'to begin with', 'nevertheless', 'in addition',
-        'overall', 'by contrast', 'as a result', 'admittedly',
+        'to begin with', 'in addition', 'by contrast',
+        'therefore', 'overall', 'admittedly',
     ],
     'letter': [
         'I am writing to', 'look forward to your reply', 'express my gratitude',

@@ -677,42 +677,12 @@
    "id": "link",
    "name": "连接词 · 逻辑衔接",
    "icon": "🔗",
-   "desc": "句间过渡用。写作模板里已反复出现，务必拼写正确。",
+   "desc": "只收写作模板里反复用到的过渡词：六类各留一条，避免同义扎堆。",
    "items": [
-    {
-     "en": "first and foremost",
-     "cn": "首先（强调）",
-     "tag": "顺序"
-    },
-    {
-     "en": "furthermore",
-     "cn": "此外",
-     "tag": "递进"
-    },
-    {
-     "en": "moreover",
-     "cn": "而且",
-     "tag": "递进"
-    },
-    {
-     "en": "therefore",
-     "cn": "因此",
-     "tag": "因果"
-    },
-    {
-     "en": "in conclusion",
-     "cn": "总之",
-     "tag": "总结"
-    },
     {
      "en": "to begin with",
      "cn": "首先",
      "tag": "顺序"
-    },
-    {
-     "en": "nevertheless",
-     "cn": "然而",
-     "tag": "转折"
     },
     {
      "en": "in addition",
@@ -720,53 +690,23 @@
      "tag": "递进"
     },
     {
-     "en": "overall",
-     "cn": "总体而言",
-     "tag": "总结"
-    },
-    {
      "en": "by contrast",
      "cn": "相比之下",
      "tag": "转折"
     },
     {
-     "en": "as a result",
-     "cn": "结果",
-     "tag": "因果"
-    },
-    {
-     "en": "admittedly",
-     "cn": "诚然",
-     "tag": "让步"
-    },
-    {
-     "en": "in particular",
-     "cn": "尤其",
-     "tag": "递进"
-    },
-    {
-     "en": "whereas",
-     "cn": "然而（对比）",
-     "tag": "转折"
-    },
-    {
-     "en": "consequently",
+     "en": "therefore",
      "cn": "因此",
      "tag": "因果"
     },
     {
-     "en": "given that",
-     "cn": "鉴于",
-     "tag": "因果"
-    },
-    {
-     "en": "to conclude",
-     "cn": "最后",
+     "en": "overall",
+     "cn": "总体而言",
      "tag": "总结"
     },
     {
-     "en": "that said",
-     "cn": "话虽如此",
+     "en": "admittedly",
+     "cn": "诚然",
      "tag": "让步"
     }
    ]
