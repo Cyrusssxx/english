@@ -5959,6 +5959,34 @@ html.dark .yt-lg-swap { color: #c4b5fd; background: rgba(167, 139, 250, .18); }
 .dark .wup-tone { color: #f0b45c; background: rgba(245,158,11,.2); border-bottom-color: rgba(245,158,11,.55); }
 @media (max-width: 640px) { .wr-swap-pop { width: calc(100vw - 24px); } }
 
+/* {{topic}} 话题词气泡：63 条主题词按题材分块，点选只在气泡内预览 */
+.wr-ph-topic { cursor: help; border-bottom: 1px dotted #62809f; }
+.dark .wr-ph-topic { border-bottom-color: #8fb4d8; }
+.wr-ph-topic.active { background: rgba(29,111,208,.18); }
+.wr-topic-pop { width: 460px; max-height: min(70vh, 560px); overflow-y: auto; }
+.wr-topic-pop .wup-orig { font-size: .82rem; overflow-wrap: anywhere; }
+.wtp-list { display: flex; flex-direction: column; gap: 8px; }
+.wtp-grp-n { font-size: .76rem; color: var(--text-light); font-weight: 600; margin-bottom: 3px; }
+.wtp-item {
+    display: inline-flex; flex-direction: column; align-items: flex-start; gap: 0;
+    width: auto; margin: 0 5px 5px 0; padding: 2px 7px;
+    background: rgba(29,111,208,.06); border: 1px solid rgba(29,111,208,.2);
+    border-radius: 4px; cursor: pointer; color: var(--text); text-align: left;
+}
+.wtp-item:hover { background: rgba(29,111,208,.16); }
+.wtp-en { color: #1f4e79; font-family: Georgia, serif; font-size: .84rem; }
+.wtp-cn { color: var(--text-light); font-size: .74rem; }
+.dark .wtp-en { color: #8fb4d8; }
+.dark .wtp-item { background: rgba(124,192,255,.08); border-color: rgba(124,192,255,.22); }
+.wtp-loading { font-size: .82rem; color: var(--text-light); }
+.wtp-preview {
+    margin-top: 8px; padding: 7px 9px; border-radius: 5px;
+    background: rgba(29,111,208,.09); font-size: .84rem; line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.wtp-preview-cn { display: block; color: var(--text-light); font-size: .78rem; margin-top: 2px; }
+@media (max-width: 640px) { .wr-topic-pop { width: calc(100vw - 24px); } }
+
 /* 押题话题分块：题材小标题 + 该类高频词 chips（recite 页 topics26 组） */
 .rc-hw-block { margin: 0 0 22px; }
 .rc-hw-block:last-child { margin-bottom: 0; }

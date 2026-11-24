@@ -610,7 +610,11 @@ function wrShowUpgPop(targetEl, idx) {
     }
     if (left < window.scrollX + 12) left = window.scrollX + 12;
 
-    let top = r.bottom + window.scrollY + 6;
+    // 优先弹到句子【上方】：下方是待读译文 / 句末「译」按钮，气泡压住就点不到（2026-11-25）
+    let top = r.top + window.scrollY - ph - 6;
+    if (top < window.scrollY + 6) {
+        top = r.bottom + window.scrollY + 6;   // 上方没空间才退到下方
+    }
     if (top + ph > window.scrollY + document.documentElement.clientHeight - 12) {
         top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
     }
@@ -722,6 +726,104 @@ if (typeof document !== 'undefined') {
     // 滚动 / 尺寸变化一律收起，避免气泡停在旧位置
     document.addEventListener('scroll', wrSwClose, { capture: true, passive: true });
     window.addEventListener('resize', wrSwClose, { passive: true });
+}
+
+/* ==================== {{topic}} 话题词气泡（2026-11-25） ====================
+   {{topic}} 正文里是静态 chip；悬停弹「主题词·押题高频」候选（63 条，来自 writing_words.json）。
+   点选只在气泡内预览整句替换效果，不改正文 / 不改数据。 */
+let _wrTopicPop = null, _wrTopicTimer = null, _wrTopicEl = null, _wrTopicWords = null;
+
+function wrTopicClose() {
+    if (_wrTopicTimer) { clearTimeout(_wrTopicTimer); _wrTopicTimer = null; }
+    if (_wrTopicPop) { _wrTopicPop.remove(); _wrTopicPop = null; }
+    if (_wrTopicEl) { _wrTopicEl.classList.remove('active'); _wrTopicEl = null; }
+}
+
+function wrTopicLoad() {
+    if (_wrTopicWords) return Promise.resolve(_wrTopicWords);
+    return fetch('data/writing_words.json').then(r => r.json()).then(d => {
+        const g = (d.groups || []).find(x => x.id === 'topic');
+        _wrTopicWords = ((g && g.items) || []).map(x => ({ en: String(x.en || ''), cn: String(x.cn || ''), sub: String(x.sub || ''), tag: String(x.tag || '') }));
+        return _wrTopicWords;
+    }).catch(() => { _wrTopicWords = []; return _wrTopicWords; });
+}
+
+function wrTopicShow(el) {
+    if (_wrTopicEl === el && _wrTopicPop) return;
+    wrSwClose();
+    if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
+    wrTopicClose();
+    el.classList.add('active');
+    _wrTopicEl = el;
+    const sentence = el.closest('.wr-line, .wr-sent-en, .wr-frame-en') || el.parentElement;
+    const orig = (sentence ? sentence.textContent : '').replace(/\s+/g, ' ').trim();
+
+    const pop = document.createElement('div');
+    pop.className = 'wr-upg-pop wr-topic-pop';
+    pop.innerHTML = '<div class="wup-head"><span class="wup-tag">可替换话题词</span><span class="wup-tips">点选预览 · 不改正文</span></div>'
+        + '<div class="wup-orig">原句：<b>' + apEsc(orig) + '</b></div>'
+        + '<div class="wtp-list"><span class="wtp-loading">加载中…</span></div>';
+    document.body.appendChild(pop);
+    _wrTopicPop = pop;
+    wrPopPlace(pop, el);
+
+    wrTopicLoad().then(words => {
+        if (_wrTopicPop !== pop) return;
+        const list = pop.querySelector('.wtp-list');
+        if (!words.length) { list.innerHTML = '<span class="wtp-loading">暂无话题词</span>'; wrPopPlace(pop, el); return; }
+        const groups = {};
+        words.forEach(w => { (groups[w.sub || '其他'] = groups[w.sub || '其他'] || []).push(w); });
+        list.innerHTML = Object.keys(groups).map(k =>
+            '<div class="wtp-grp"><div class="wtp-grp-n">' + apEsc(k) + '</div>'
+            + groups[k].map((w, i) => '<button type="button" class="wtp-item" data-en="' + apEsc(w.en) + '" data-cn="' + apEsc(w.cn) + '">'
+                + '<span class="wtp-en">' + apEsc(w.en) + '</span><span class="wtp-cn">' + apEsc(w.cn) + '</span></button>').join('')
+            + '</div>').join('');
+        wrPopPlace(pop, el);
+    });
+    pop.addEventListener('mouseenter', () => { if (_wrTopicTimer) { clearTimeout(_wrTopicTimer); _wrTopicTimer = null; } });
+    pop.addEventListener('mouseleave', () => { _wrTopicTimer = setTimeout(wrTopicClose, 200); });
+    pop.addEventListener('click', e => {
+        const it = e.target.closest('.wtp-item');
+        if (!it) return;
+        e.stopPropagation();
+        const prev = pop.querySelector('.wtp-preview');
+        if (prev) prev.remove();
+        const box = document.createElement('div');
+        box.className = 'wtp-preview';
+        box.innerHTML = '<b>预览：</b>' + apEsc(orig.replace(/topic/g, it.dataset.en))
+            + '<span class="wtp-preview-cn">' + apEsc(it.dataset.cn || '') + '</span>';
+        pop.appendChild(box);
+        wrPopPlace(pop, el);
+    });
+}
+
+if (typeof document !== 'undefined') {
+    document.addEventListener('mouseover', e => {
+        if (!e.target.closest) return;
+        const t = e.target.closest('.wr-ph-topic');
+        if (!t) return;
+        if (_wrTopicEl === t && _wrTopicPop) return;
+        if (_wrTopicTimer) { clearTimeout(_wrTopicTimer); _wrTopicTimer = null; }
+        if (_wrSwTimer) { clearTimeout(_wrSwTimer); _wrSwTimer = null; }
+        _wrTopicTimer = setTimeout(() => wrTopicShow(t), 120);
+    });
+    document.addEventListener('mouseout', e => {
+        const t = e.target.closest && e.target.closest('.wr-ph-topic');
+        if (t && !(e.relatedTarget && (t.contains(e.relatedTarget) || (_wrTopicPop && _wrTopicPop.contains(e.relatedTarget))))) {
+            _wrTopicTimer = setTimeout(wrTopicClose, 220);
+        }
+    });
+    document.addEventListener('click', e => {
+        if (!e.target.closest) return;
+        const t = e.target.closest('.wr-ph-topic');
+        if (t && !e.target.closest('.wr-topic-pop')) {
+            if (_wrTopicEl === t && _wrTopicPop) wrTopicClose(); else wrTopicShow(t);
+            return;
+        }
+        if (_wrTopicPop && !e.target.closest('.wr-topic-pop')) wrTopicClose();
+    }, true);
+    document.addEventListener('scroll', wrTopicClose, { capture: true, passive: true });
+    window.addEventListener('resize', wrTopicClose, { passive: true });
 }
 
 if (typeof window !== 'undefined') {

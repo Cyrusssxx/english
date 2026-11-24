@@ -166,7 +166,9 @@ function wrAnnotateSegment(text) {
         if (m.index > last) {
             out.push(wrAnnotateWithKw(text.slice(last, m.index)));
         }
-        out.push(`<span class="wr-ph">${wrEsc(m[1])}</span>`);
+        out.push(m[1] === 'topic'
+            ? `<span class="wr-ph wr-ph-topic" data-ph="topic" title="悬停看可替换话题词">${wrEsc(m[1])}</span>`
+            : `<span class="wr-ph">${wrEsc(m[1])}</span>`);
         last = m.index + m[0].length;
     }
     if (last < text.length) {
