@@ -3546,7 +3546,7 @@ body.show-quiz-cn .nt-pool-txt .opt-cn { display: block; }
 .wr-sents-title { font-size: .84rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
 .wr-sent-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
 .wr-sent { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 9px 12px; }
-.wr-sent-en { font-family: Georgia, "Times New Roman", serif; font-size: 1.08rem; line-height: 1.8; color: var(--text); display: flex; gap: 8px; }
+.wr-sent-en { font-family: Georgia, "Times New Roman", serif; font-size: 1.08rem; line-height: 1.8; color: var(--text); display: flex; flex-wrap: wrap; gap: 8px; }
 .wr-sent-no {
     flex: 0 0 auto; width: 17px; height: 17px; border-radius: 4px; margin-top: 2px;
     background: var(--primary-soft); color: var(--primary-dark);
@@ -4214,8 +4214,8 @@ html.dark .rc-freq { color: #fbbf24; }
 .wr-line { padding: 1px 0; }
 .wr-sent { transition: border-color .15s; }
 .wr-sent:hover { border-color: var(--primary); }
-/* 功能句：编号 + 句子横向排布（句子整体作一个 flex 单元，内部划词 span 自然横流） */
-.wr-sent-txt { flex: 1 1 auto; min-width: 0; }
+/* 功能句：编号 + 句子横向排布；句子整块 flex-basis:100% 换到标签下方，占满整行、不留左侧空档 */
+.wr-sent-txt { flex: 1 1 100%; min-width: 100%; }
 
 /* 功能句并排（两列网格，窄屏单列） */
 .wr-sent-list {
@@ -5794,9 +5794,11 @@ html.dark .wr-side-pos { color: #6ee7b7; background: rgba(16,185,129,.14); borde
 html.dark .wr-side-neg { color: #fb923c; background: rgba(251,146,60,.14); border-color: rgba(251,146,60,.3); }
 
 /* 「专用·X」徽标（2026-11-20）：句子绑定特定话题，只在同类题里用 */
+/* align-self 必须写：.wr-sent-en 是 flex 行，漏了会被 stretch 拉满整行高，压在英文上 */
 .wr-scope {
-    display: inline-block; font-size: .62rem; font-weight: 700; line-height: 1.5;
-    padding: 0 5px; border-radius: 3px; white-space: nowrap;
+    display: inline-block; flex: 0 0 auto; align-self: flex-start; margin-top: 2px;
+    font-size: .62rem; font-weight: 700; line-height: 1.5;
+    padding: 0 4px; border-radius: 3px; white-space: nowrap;
     color: #b91c1c; background: rgba(220,38,38,.10); border: 1px solid rgba(220,38,38,.25);
 }
 html.dark .wr-scope { color: #fca5a5; background: rgba(248,113,113,.16); border-color: rgba(248,113,113,.32); }

@@ -849,7 +849,7 @@ function wrSectionCard(sec) {
     // 句池分类（2026-11-20）：有 pool_groups 就按类分组渲染，组内仍按 fit 降序；没有就平铺，向后兼容
     const sentItem = (s, no) => `
         <li class="wr-sent">
-            <div class="wr-sent-en"><span class="wr-sent-no">${no}</span>${s.freq ? `<span class="wr-freq" title="考频：★★★ 通用（跨话题都能接）/ ★★ 常用 / ★ 专场">${'★'.repeat(s.freq)}</span>` : ''}${s.tag ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}${s.side ? `<span class="wr-side wr-side-${s.side === '正' ? 'pos' : s.side === '负' ? 'neg' : 'all'}" title="属于哪套骨架：正/负/通用">${s.side}</span>` : ''}${s.scope ? `<span class="wr-scope" title="这句绑定特定话题，只在同类题里用">专用·${wrEsc(s.scope)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
+            <div class="wr-sent-en"><span class="wr-sent-no">${no}</span>${s.freq ? `<span class="wr-freq" title="考频：★★★ 通用（跨话题都能接）/ ★★ 常用 / ★ 专场">${'★'.repeat(s.freq)}</span>` : ''}${s.tag && !s.scope ? `<span class="wr-tag">${wrEsc(s.tag)}</span>` : ''}${s.side ? `<span class="wr-side wr-side-${s.side === '正' ? 'pos' : s.side === '负' ? 'neg' : 'all'}" title="属于哪套骨架：正/负/通用">${s.side}</span>` : ''}${s.scope ? `<span class="wr-scope" title="这句绑定特定话题，只在同类题里用">专用·${wrEsc(s.scope)}</span>` : ''}<span class="wr-sent-txt">${wrAnnotate(s.en)}</span></div>
             <div class="wr-sent-cn">${wrHl(s.cn)}</div>
         </li>`;
     const grpDefs = (sec.pool_groups || []).filter(g => pool.some(x => x.cat === g.name));
