@@ -601,23 +601,36 @@ function wrShowUpgPop(targetEl, idx) {
     });
 }
 
-/** 气泡智能定位（升级词 / 整句替换共用） */function wrPopPlace(pop, targetEl) {
+/**
+ * 气泡智能定位（升级词 / 整句替换 / topic 共用）
+ * 气泡已限高（.wr-upg-pop max-height:min(46vh,440px) + 内部滚动），不会铺满视口。
+ * 定位原则：优先放句子上方（下方是译文 / 句末「译」按钮），两侧都不够时选空间大的一侧贴边，
+ * 最后把气泡整体夹在视口内，绝不出现「钉在顶部、盖住整段正文」的全屏遮挡（2026-11-25）。
+ */
+function wrPopPlace(pop, targetEl) {
     const r = targetEl.getBoundingClientRect();
+    const vh = document.documentElement.clientHeight;
+    const vw = document.documentElement.clientWidth;
     const pw = pop.offsetWidth, ph = pop.offsetHeight;
+    const G = 6;
     let left = r.left + window.scrollX;
-    if (left + pw > window.scrollX + document.documentElement.clientWidth - 12) {
-        left = window.scrollX + document.documentElement.clientWidth - pw - 12;
-    }
+    if (left + pw > window.scrollX + vw - 12) left = window.scrollX + vw - pw - 12;
     if (left < window.scrollX + 12) left = window.scrollX + 12;
 
-    // 优先弹到句子【上方】：下方是待读译文 / 句末「译」按钮，气泡压住就点不到（2026-11-25）
-    let top = r.top + window.scrollY - ph - 6;
-    if (top < window.scrollY + 6) {
-        top = r.bottom + window.scrollY + 6;   // 上方没空间才退到下方
+    const spaceAbove = r.top - G;          // 视口内句子上方可用高
+    const spaceBelow = vh - r.bottom - G;  // 视口内句子下方可用高
+    let top;
+    if (spaceAbove >= ph + G) {
+        top = r.top + window.scrollY - ph - G;      // 优先上方：不压译文 / 译按钮
+    } else if (spaceBelow >= ph + G) {
+        top = r.bottom + window.scrollY + G;        // 上方不够 → 下方
+    } else if (spaceAbove >= spaceBelow) {
+        top = window.scrollY + G;                   // 都不够：贴上方，气泡内部滚动
+    } else {
+        top = window.scrollY + vh - ph - G;         // 贴下方，气泡内部滚动
     }
-    if (top + ph > window.scrollY + document.documentElement.clientHeight - 12) {
-        top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
-    }
+    // 保险：气泡整体不越出视口上下沿
+    top = Math.max(window.scrollY + G, Math.min(top, window.scrollY + vh - ph - G));
     pop.style.left = Math.round(left) + 'px';
     pop.style.top = Math.round(top) + 'px';
 }

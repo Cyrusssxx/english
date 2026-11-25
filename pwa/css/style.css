@@ -4791,7 +4791,13 @@ html.dark .wr-upg:hover, html.dark .wr-upg.active {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     pointer-events: auto;
+    /* 气泡限高：内容多时内部滚动，绝不从视口顶铺到底盖住正文 / 待点的单词（2026-11-25） */
+    max-height: min(46vh, 440px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
+.wr-upg-pop::-webkit-scrollbar { width: 6px; }
+.wr-upg-pop::-webkit-scrollbar-thumb { background: rgba(128,128,128,.35); border-radius: 3px; }
 .wr-upg-pop .wup-head {
     display: flex;
     align-items: center;
@@ -5963,7 +5969,7 @@ html.dark .yt-lg-swap { color: #c4b5fd; background: rgba(167, 139, 250, .18); }
 .wr-ph-topic { cursor: help; border-bottom: 1px dotted #62809f; }
 .dark .wr-ph-topic { border-bottom-color: #8fb4d8; }
 .wr-ph-topic.active { background: rgba(29,111,208,.18); }
-.wr-topic-pop { width: 460px; max-height: min(70vh, 560px); overflow-y: auto; }
+.wr-topic-pop { width: 460px; max-height: min(46vh, 440px); overflow-y: auto; }
 .wr-topic-pop .wup-orig { font-size: .82rem; overflow-wrap: anywhere; }
 .wtp-list { display: flex; flex-direction: column; gap: 8px; }
 .wtp-grp-n { font-size: .76rem; color: var(--text-light); font-weight: 600; margin-bottom: 3px; }
