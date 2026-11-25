@@ -4775,7 +4775,9 @@ html.dark .wr-upg:hover, html.dark .wr-upg.active {
 
 /* 悬浮气泡卡片 */
 .wr-upg-pop {
-    position: absolute;
+    /* 悬浮替换卡固定视口顶部（导航下方）；查词卡 .kw-pop 固定底部，两类位置分开不再叠在同一块正文上（2026-11-25） */
+    position: fixed;
+    top: calc(var(--nav-h, 56px) + 8px);
     z-index: 360;
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -5620,8 +5622,11 @@ html.dark .kw {
 }
 html.dark .kw:hover, html.dark .kw.on { background: rgba(13, 148, 136, .30); border-bottom-color: #5eead4; }
 
-/* 弹卡（复用 .word-pop 外观） */
-.kw-pop { max-width: 340px; }
+/* 弹卡（复用 .word-pop 外观）：点击翻译卡固定视口底部，与顶部悬浮替换卡位置分开（2026-11-25） */
+.kw-pop {
+    position: fixed; top: auto; bottom: 14px;
+    z-index: 350; max-width: 340px; max-height: min(46vh, 440px); overflow-y: auto;
+}
 .kw-tag {
     display: inline-block; font-size: .69rem; font-weight: 700; line-height: 1.7;
     padding: 0 8px; border-radius: 999px; border: 1px solid currentColor;

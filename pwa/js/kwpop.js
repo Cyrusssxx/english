@@ -107,20 +107,14 @@ function kwOpen(el) {
     KW_POP.innerHTML = kwCardHtml(it);
     document.body.appendChild(KW_POP);
 
+    // 固定视口底部（.kw-pop CSS 定 bottom），与顶部悬浮替换卡位置分开；只算水平位置
     const r = el.getBoundingClientRect();
-    const pw = KW_POP.offsetWidth, ph = KW_POP.offsetHeight;
+    const pw = KW_POP.offsetWidth;
     const vw = document.documentElement.clientWidth;
-    const vh = document.documentElement.clientHeight;
-    let left = r.left + window.scrollX;
-    if (left + pw > window.scrollX + vw - 12) left = window.scrollX + vw - pw - 12;
-    if (left < window.scrollX + 8) left = window.scrollX + 8;
-    let top = r.bottom + window.scrollY + 7;
-    if (top + ph > window.scrollY + vh - 12) {
-        const up = r.top + window.scrollY - ph - 7;
-        top = up > window.scrollY + 8 ? up : Math.max(window.scrollY + 8, window.scrollY + vh - ph - 12);
-    }
+    let left = r.left;
+    if (left + pw > vw - 12) left = vw - pw - 12;
+    if (left < 8) left = 8;
     KW_POP.style.left = left + 'px';
-    KW_POP.style.top = top + 'px';
 }
 
 function kwBind() {

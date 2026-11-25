@@ -602,37 +602,20 @@ function wrShowUpgPop(targetEl, idx) {
 }
 
 /**
- * 气泡智能定位（升级词 / 整句替换 / topic 共用）
- * 气泡已限高（.wr-upg-pop max-height:min(46vh,440px) + 内部滚动），不会铺满视口。
- * 定位原则：优先放句子上方（下方是译文 / 句末「译」按钮），两侧都不够时选空间大的一侧贴边，
- * 最后把气泡整体夹在视口内，绝不出现「钉在顶部、盖住整段正文」的全屏遮挡（2026-11-25）。
+ * 气泡水平定位（升级词 / 整句替换 / topic 共用）
+ * 2026-11-25 改为【视口顶部固定浮层】：top 由 CSS .wr-upg-pop 的 top:calc(--nav-h+8px) 决定，
+ * 不再跟随触发元素上下算位置 → 正文中间永远不被压；水平方向仍尽量贴着触发词、不出视口右沿。
+ * fixed 定位用视口坐标，不加 scrollX（加了会随滚动跑偏）。
  */
 function wrPopPlace(pop, targetEl) {
     const r = targetEl.getBoundingClientRect();
-    const vh = document.documentElement.clientHeight;
     const vw = document.documentElement.clientWidth;
-    const pw = pop.offsetWidth, ph = pop.offsetHeight;
-    const G = 6;
-    let left = r.left + window.scrollX;
-    if (left + pw > window.scrollX + vw - 12) left = window.scrollX + vw - pw - 12;
-    if (left < window.scrollX + 12) left = window.scrollX + 12;
-
-    const spaceAbove = r.top - G;          // 视口内句子上方可用高
-    const spaceBelow = vh - r.bottom - G;  // 视口内句子下方可用高
-    let top;
-    if (spaceAbove >= ph + G) {
-        top = r.top + window.scrollY - ph - G;      // 优先上方：不压译文 / 译按钮
-    } else if (spaceBelow >= ph + G) {
-        top = r.bottom + window.scrollY + G;        // 上方不够 → 下方
-    } else if (spaceAbove >= spaceBelow) {
-        top = window.scrollY + G;                   // 都不够：贴上方，气泡内部滚动
-    } else {
-        top = window.scrollY + vh - ph - G;         // 贴下方，气泡内部滚动
-    }
-    // 保险：气泡整体不越出视口上下沿
-    top = Math.max(window.scrollY + G, Math.min(top, window.scrollY + vh - ph - G));
+    const pw = pop.offsetWidth;
+    const G = 12;
+    let left = r.left;
+    if (left + pw > vw - G) left = vw - pw - G;
+    if (left < G) left = G;
     pop.style.left = Math.round(left) + 'px';
-    pop.style.top = Math.round(top) + 'px';
 }
 
 /* ==================== 整句可替换气泡（押题范文 / 模板骨架共用，2026-11-21） ====================
@@ -653,6 +636,7 @@ function wrSwShow(el) {
     try { d = JSON.parse(el.getAttribute('data-swap') || ''); } catch (e) { return; }
     if (!d || !(d.alts || []).length) return;
     wrSwClose();
+    if (typeof wrTopicClose === 'function') wrTopicClose();   // 顶部只留一张卡，不与 topic 卡叠
     el.classList.add('active');
     _wrSwEl = el;
 
@@ -736,9 +720,13 @@ if (typeof document !== 'undefined') {
         if (_wrSwPop && !e.target.closest('.wr-upg-pop')) wrSwClose();
     });
 
-    // 滚动 / 尺寸变化一律收起，避免气泡停在旧位置
-    document.addEventListener('scroll', wrSwClose, { capture: true, passive: true });
-    window.addEventListener('resize', wrSwClose, { passive: true });
+    // 页面滚动收起气泡；但气泡【内部滚动】不能关（否则拖 topic/替换卡的滚动条一拖就消失）
+    document.addEventListener('scroll', e => {
+        if (e.target && e.target.closest && e.target.closest('.wr-upg-pop')) return;
+        wrSwClose();
+        wrCloseUpgPop();   // 顶部固定卡随页面滚动收起，不挡新滚上来的正文
+    }, { capture: true, passive: true });
+    window.addEventListener('resize', () => { wrSwClose(); wrCloseUpgPop(); }, { passive: true });
 }
 
 /* ==================== {{topic}} 话题词气泡（2026-11-25） ====================
@@ -835,7 +823,10 @@ if (typeof document !== 'undefined') {
         }
         if (_wrTopicPop && !e.target.closest('.wr-topic-pop')) wrTopicClose();
     }, true);
-    document.addEventListener('scroll', wrTopicClose, { capture: true, passive: true });
+    document.addEventListener('scroll', e => {
+        if (e.target && e.target.closest && e.target.closest('.wr-topic-pop')) return;
+        wrTopicClose();
+    }, { capture: true, passive: true });
     window.addEventListener('resize', wrTopicClose, { passive: true });
 }
 
