@@ -229,22 +229,15 @@ function wrCloseWordPop() {
 
 function wrOpenPop(targetEl, html) {
     wrCloseWordPop();
+    if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
+    if (typeof wrSwClose === 'function') wrSwClose();
+    if (typeof wrTopicClose === 'function') wrTopicClose();
     wrPopEl = document.createElement('div');
     wrPopEl.className = 'word-pop wr-pop-c';
     wrPopEl.innerHTML = html;
     document.body.appendChild(wrPopEl);
-    const r = targetEl.getBoundingClientRect();
-    const pw = wrPopEl.offsetWidth, ph = wrPopEl.offsetHeight;
-    let left = r.left + window.scrollX;
-    if (left + pw > window.scrollX + document.documentElement.clientWidth - 12) {
-        left = window.scrollX + document.documentElement.clientWidth - pw - 12;
-    }
-    let top = r.bottom + window.scrollY + 6;
-    if (top + ph > window.scrollY + document.documentElement.clientHeight - 12) {
-        top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
-    }
-    wrPopEl.style.left = left + 'px';
-    wrPopEl.style.top = top + 'px';
+    // 统一贴词定位（与押题/小作文/速记同一套）：紧贴被点的词
+    if (typeof popNear === 'function') popNear(targetEl, wrPopEl, 6);
 }
 
 /** 一个词可能的查表键：原词 / 归一形 / 去复数 / 词形还原候选（figures ↔ figure） */

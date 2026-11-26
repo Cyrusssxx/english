@@ -195,22 +195,15 @@ function rcWordKeys(key, base) {
 
 function rcOpenPop(targetEl, html) {
     rcClosePop();
+    if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
+    if (typeof wrSwClose === 'function') wrSwClose();
+    if (typeof wrTopicClose === 'function') wrTopicClose();
     rcPopEl = document.createElement('div');
     rcPopEl.className = 'word-pop wr-pop-c';
     rcPopEl.innerHTML = html;
     document.body.appendChild(rcPopEl);
-    const r = targetEl.getBoundingClientRect();
-    const pw = rcPopEl.offsetWidth, ph = rcPopEl.offsetHeight;
-    let left = r.left + window.scrollX;
-    if (left + pw > window.scrollX + document.documentElement.clientWidth - 12) {
-        left = window.scrollX + document.documentElement.clientWidth - pw - 12;
-    }
-    let top = r.bottom + window.scrollY + 6;
-    if (top + ph > window.scrollY + document.documentElement.clientHeight - 12) {
-        top = Math.max(window.scrollY + 6, r.top + window.scrollY - ph - 6);
-    }
-    rcPopEl.style.left = left + 'px';
-    rcPopEl.style.top = top + 'px';
+    // 统一贴词定位（与写作/押题/小作文同一套）：紧贴被点的词
+    if (typeof popNear === 'function') popNear(targetEl, rcPopEl, 6);
 }
 function rcClosePop() {
     if (rcPopEl) { rcPopEl.remove(); rcPopEl = null; }

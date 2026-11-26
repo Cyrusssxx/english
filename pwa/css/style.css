@@ -5622,9 +5622,9 @@ html.dark .kw {
 }
 html.dark .kw:hover, html.dark .kw.on { background: rgba(13, 148, 136, .30); border-bottom-color: #5eead4; }
 
-/* 弹卡（复用 .word-pop 外观）：点击翻译卡固定视口底部，与顶部悬浮替换卡位置分开（2026-11-25） */
+/* 弹卡（复用 .word-pop 外观）：位置统一由 common.js 的 popNear() 贴词计算（2026-11-27）
+   继承 .word-pop 的 position:absolute，滚动时跟着词走；只限宽限高，避免大段释义铺满屏 */
 .kw-pop {
-    position: fixed; top: auto; bottom: 14px;
     z-index: 350; max-width: 340px; max-height: min(46vh, 440px); overflow-y: auto;
 }
 .kw-tag {

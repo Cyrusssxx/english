@@ -101,20 +101,17 @@ function kwOpen(el) {
     const it = KW_BY_KEY && KW_BY_KEY.get(key);
     if (!it) return;
     kwClose();
+    if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
+    if (typeof wrSwClose === 'function') wrSwClose();
+    if (typeof wrTopicClose === 'function') wrTopicClose();
     el.classList.add('on');
     KW_POP = document.createElement('div');
     KW_POP.className = 'word-pop kw-pop';
     KW_POP.innerHTML = kwCardHtml(it);
     document.body.appendChild(KW_POP);
 
-    // 固定视口底部（.kw-pop CSS 定 bottom），与顶部悬浮替换卡位置分开；只算水平位置
-    const r = el.getBoundingClientRect();
-    const pw = KW_POP.offsetWidth;
-    const vw = document.documentElement.clientWidth;
-    let left = r.left;
-    if (left + pw > vw - 12) left = vw - pw - 12;
-    if (left < 8) left = 8;
-    KW_POP.style.left = left + 'px';
+    // 统一贴词定位（与押题页词卡、写作页词卡同一套）：紧贴被点的词，不飘到屏幕边缘
+    if (typeof popNear === 'function') popNear(el, KW_POP, 7);
 }
 
 function kwBind() {
@@ -133,5 +130,9 @@ function kwBind() {
     }, true);
     document.addEventListener('keydown', e => { if (e.key === 'Escape') kwClose(); });
     window.addEventListener('resize', kwClose, { passive: true });
-    window.addEventListener('scroll', kwClose, { passive: true });
+    // capture 才能收到内部滚动容器；卡片自身滚动不关（长释义要能拖着看）
+    document.addEventListener('scroll', e => {
+        if (e.target && e.target.closest && e.target.closest('.word-pop')) return;
+        kwClose();
+    }, { capture: true, passive: true });
 }

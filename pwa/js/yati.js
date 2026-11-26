@@ -352,7 +352,9 @@ function ytWClose() {
 function ytWOpen(el) {
     const word = el.getAttribute('data-w') || '';
     const entry = (typeof dictLookup === 'function') ? dictLookup(word) : null;
+    if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
     if (typeof wrSwClose === 'function') wrSwClose();   // 点词时先收起整句替换气泡
+    if (typeof wrTopicClose === 'function') wrTopicClose();
     ytWClose();
     const pop = document.createElement('div');
     pop.className = 'word-pop kw-pop yt-wpop';
@@ -363,19 +365,8 @@ function ytWOpen(el) {
     document.body.appendChild(pop);
     YT_WPOP = pop;
     el.classList.add('on');
-    const r = el.getBoundingClientRect();
-    const pw = pop.offsetWidth, ph = pop.offsetHeight;
-    const vw = document.documentElement.clientWidth, vh = document.documentElement.clientHeight;
-    let left = r.left + window.scrollX;
-    if (left + pw > window.scrollX + vw - 12) left = window.scrollX + vw - pw - 12;
-    if (left < window.scrollX + 8) left = window.scrollX + 8;
-    let top = r.bottom + window.scrollY + 7;
-    if (top + ph > window.scrollY + vh - 12) {
-        const up = r.top + window.scrollY - ph - 7;
-        top = up > window.scrollY + 8 ? up : Math.max(window.scrollY + 8, window.scrollY + vh - ph - 12);
-    }
-    pop.style.left = left + 'px';
-    pop.style.top = top + 'px';
+    // 统一贴词定位（与写作/小作文/速记同一套）：紧贴被点的词
+    if (typeof popNear === 'function') popNear(el, pop, 7);
 }
 
 function ytWBind() {
@@ -388,7 +379,11 @@ function ytWBind() {
         ytWClose();
     });
     window.addEventListener('resize', ytWClose, { passive: true });
-    window.addEventListener('scroll', ytWClose, { passive: true });
+    // capture 才能收到内部滚动容器；卡片自身滚动不关（长释义要能拖着看）
+    document.addEventListener('scroll', e => {
+        if (e.target && e.target.closest && e.target.closest('.word-pop')) return;
+        ytWClose();
+    }, { capture: true, passive: true });
 }
 
 /* 范文渲染（完全对齐真题「套用示范」）：

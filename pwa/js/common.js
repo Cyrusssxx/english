@@ -568,6 +568,7 @@ function wrCloseUpgPop() {
 
 function wrShowUpgPop(targetEl, idx) {
     wrCloseUpgPop();
+    wrCloseWordPops();
     const data = WR_UPGRADES[idx];
     if (!data) return;
     targetEl.classList.add('active');
@@ -618,6 +619,40 @@ function wrPopPlace(pop, targetEl) {
     pop.style.left = Math.round(left) + 'px';
 }
 
+/**
+ * 点词卡统一贴词定位（查词 / 重点词 / 押题词 / 速记词共用，2026-11-27）
+ * absolute + 文档坐标（跟 .word-pop 基类一致）：卡片紧贴被点的词，页面滚动时跟着词走，
+ * 不会像 fixed 那样悬空错位。优先词下方 7px；下方放不下弹上方；两边都放不下选空间大的一侧，
+ * 最后夹在视口内。卡片各自限高（.kw-pop max-height + overflow-y），不会铺满屏。
+ */
+function popNear(targetEl, pop, gap) {
+    const G = (gap == null) ? 7 : gap;
+    const r = targetEl.getBoundingClientRect();
+    const vw = document.documentElement.clientWidth;
+    const vh = document.documentElement.clientHeight;
+    const pw = pop.offsetWidth, ph = pop.offsetHeight;
+    let left = r.left + window.scrollX;
+    if (left + pw > window.scrollX + vw - 12) left = window.scrollX + vw - pw - 12;
+    if (left < window.scrollX + 8) left = window.scrollX + 8;
+    const below = vh - r.bottom - G;      // 词下方视口可用高
+    const above = r.top - G;              // 词上方视口可用高
+    let vtop;
+    if (below >= ph) vtop = r.bottom + G;                          // 下方放得下 → 紧贴词下
+    else if (above >= ph) vtop = r.top - ph - G;                    // 上方放得下 → 弹上方
+    else vtop = (above > below) ? (r.top - ph - G) : (r.bottom + G); // 都不够 → 空间大的一侧
+    const maxTop = Math.max(8, vh - ph - 8);
+    vtop = Math.max(8, Math.min(vtop, maxTop));
+    pop.style.left = Math.round(left) + 'px';
+    pop.style.top = Math.round(vtop + window.scrollY) + 'px';
+}
+
+/** 关掉所有「点词释义卡」（写作 / 押题 / 速记各一套），顶部替换卡弹出时互斥用 */
+function wrCloseWordPops() {
+    ['kwClose', 'ytWClose', 'wrCloseWordPop', 'rcClosePop'].forEach(fn => {
+        if (typeof window[fn] === 'function') { try { window[fn](); } catch (e) { } }
+    });
+}
+
 /* ==================== 整句可替换气泡（押题范文 / 模板骨架共用，2026-11-21） ====================
    用法：元素带 class="wr-swap" 且 data-swap = JSON({tag,tips,alts:[{en,cn}]})。
    默认正文仍是原句（好背、能直接套），悬停才列出「更贴这道题」的整句替换。
@@ -637,6 +672,7 @@ function wrSwShow(el) {
     if (!d || !(d.alts || []).length) return;
     wrSwClose();
     if (typeof wrTopicClose === 'function') wrTopicClose();   // 顶部只留一张卡，不与 topic 卡叠
+    wrCloseWordPops();                                        // 顶部卡与点词卡互斥，不叠两层
     el.classList.add('active');
     _wrSwEl = el;
 
@@ -754,6 +790,7 @@ function wrTopicShow(el) {
     wrSwClose();
     if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
     wrTopicClose();
+    wrCloseWordPops();
     el.classList.add('active');
     _wrTopicEl = el;
     const sentence = el.closest('.wr-line, .wr-sent-en, .wr-frame-en') || el.parentElement;
@@ -833,5 +870,9 @@ if (typeof document !== 'undefined') {
 if (typeof window !== 'undefined') {
     window.wrShowUpgPop = wrShowUpgPop;
     window.wrCloseUpgPop = wrCloseUpgPop;
+    window.wrSwClose = wrSwClose;
+    window.wrTopicClose = wrTopicClose;
+    window.popNear = popNear;
+    window.wrCloseWordPops = wrCloseWordPops;
     window.WR_UPGRADES = WR_UPGRADES;
 }
