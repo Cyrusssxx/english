@@ -442,11 +442,11 @@
       },
       {
        "k": "p",
-       "v": "On balance, the wider choice of travel is a real gain for daily life. Admittedly, the fall in bus use deserves attention, since many people still rely on it. New services should add to existing options rather than replace them. Authorities should keep basic routes sound while letting new options grow. Everyday travel should serve the neediest most.",
+       "v": "On balance, the growing variety of travel options is a major improvement in daily life. Admittedly, the decline in bus use deserves attention, as many people still rely on buses. New services such as ride-hailing and shared bikes should complement public transport rather than replace it. While encouraging new forms of mobility, the authorities should ensure that essential bus routes continue to operate properly. Ultimately, everyday transport should first serve those who depend on it most.",
        "sents": [
         {
-         "en": "On balance, the wider choice of travel is a real gain for daily life.",
-         "cn": "总的来说，出行方式变多是日常生活的一大收获。",
+         "en": "On balance, the growing variety of travel options is a major improvement in daily life.",
+         "cn": "总的来说，出行选择变多是日常生活的一大改善。",
          "swap": {
           "tag": "第三段立场",
           "tips": "正面表态：选择变多是收获；备选分别落在「多数人方便」和「城市进步」",
@@ -463,8 +463,8 @@
          }
         },
         {
-         "en": "Admittedly, the fall in bus use deserves attention, since many people still rely on it.",
-         "cn": "诚然，公交使用量下降值得关注，因为许多人仍依赖它。",
+         "en": "Admittedly, the decline in bus use deserves attention, as many people still rely on buses.",
+         "cn": "诚然，公交使用量下降值得关注，因为许多人仍然依赖公交。",
          "swap": {
           "tag": "第三段让步",
           "tips": "承认公交下滑；A 为简单版，B 用 What 主语从句升级（加分句式），分别落在「别只看数字」和「依赖公交者被忽略」",
@@ -481,8 +481,8 @@
          }
         },
         {
-         "en": "New services should add to existing options rather than replace them.",
-         "cn": "新服务应补充现有方式，而不是取代它们。",
+         "en": "New services such as ride-hailing and shared bikes should complement public transport rather than replace it.",
+         "cn": "网约车、共享单车等新服务应成为公交的补充，而不是替代公交。",
          "swap": {
           "tag": "第三段建议·补充",
           "tips": "新方式补充而非替代；骨架抽掉具体车种，任何新旧服务都能用",
@@ -499,15 +499,15 @@
          }
         },
         {
-         "en": "Authorities should keep basic routes sound while letting new options grow.",
-         "cn": "主管部门应保持基本线路完好，同时让新方式发展。",
+         "en": "While encouraging new forms of mobility, the authorities should ensure that essential bus routes continue to operate properly.",
+         "cn": "在鼓励新出行方式发展的同时，管理部门也应确保基本公交线路继续正常运行。",
          "swap": {
           "tag": "第三段建议·兜底",
           "tips": "主管部门兜住基本线路；备选分别落在「兜底」和「新旧衔接」",
           "alts": [
            {
             "en": "The authorities should keep essential routes running for those who need them.",
-            "cn": "主管部门应为有需要的人保住基本线路。"
+            "cn": "管理部门应为有需要的人保住基本线路。"
            },
            {
             "en": "The city should make sure basic lines remain reliable while new services find their place.",
@@ -517,8 +517,8 @@
          }
         },
         {
-         "en": "Everyday travel should serve the neediest most.",
-         "cn": "日常出行最应服务于最需要的人。",
+         "en": "Ultimately, everyday transport should first serve those who depend on it most.",
+         "cn": "说到底，日常出行应首先服务那些最依赖它的人。",
          "swap": {
           "tag": "第三段收尾",
           "tips": "扣「出行公平」题眼，不写空指；备选落在「惠及所有人」和「最弱势者可用」",
@@ -537,7 +537,7 @@
        ]
       }
      ],
-     "words": 178
+     "words": 196
     },
     {
      "no": 9,

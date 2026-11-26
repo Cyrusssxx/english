@@ -184,7 +184,7 @@ SWAPS = {
              {'en': 'The figures suggest that residents are no longer limited to the bus when they leave home.',
               'cn': '这些数据表明，居民出门时不再只能依赖公交。'},
          ]},
-        {'match': 'On balance, the wider choice of travel is a real gain',
+        {'match': 'On balance, the growing variety of travel options',
          'tag': '第三段立场',
          'tips': '正面表态：选择变多是收获；备选分别落在「多数人方便」和「城市进步」',
          'alts': [
@@ -193,7 +193,7 @@ SWAPS = {
              {'en': 'Having more ways to travel is a step forward for the city as a whole.',
               'cn': '出行方式变多，对整个城市来说是一大进步。'},
          ]},
-        {'match': 'Admittedly, the fall in bus use deserves attention',
+        {'match': 'Admittedly, the decline in bus use deserves attention',
          'tag': '第三段让步',
          'tips': '承认公交下滑；A 为简单版，B 用 What 主语从句升级（加分句式），分别落在「别只看数字」和「依赖公交者被忽略」',
          'alts': [
@@ -202,7 +202,7 @@ SWAPS = {
              {'en': 'What the figures do not show is how many people have no alternative to the bus.',
               'cn': '数字没有显示的是，有多少人除了公交别无选择。'},
          ]},
-        {'match': 'New services should add to existing options',
+        {'match': 'New services such as ride-hailing and shared bikes',
          'tag': '第三段建议·补充',
          'tips': '新方式补充而非替代；骨架抽掉具体车种，任何新旧服务都能用',
          'alts': [
@@ -211,16 +211,16 @@ SWAPS = {
              {'en': 'New modes should grow alongside the old ones, not at their expense.',
               'cn': '新方式应与旧方式一起发展，而不是挤掉它们。'},
          ]},
-        {'match': 'Authorities should keep basic routes sound',
+        {'match': 'While encouraging new forms of mobility',
          'tag': '第三段建议·兜底',
          'tips': '主管部门兜住基本线路；备选分别落在「兜底」和「新旧衔接」',
          'alts': [
              {'en': 'The authorities should keep essential routes running for those who need them.',
-              'cn': '主管部门应为有需要的人保住基本线路。'},
+              'cn': '管理部门应为有需要的人保住基本线路。'},
              {'en': 'The city should make sure basic lines remain reliable while new services find their place.',
               'cn': '城市应让基本线路保持可靠，同时给新服务留位置。'},
          ]},
-        {'match': 'Everyday travel should serve the neediest most',
+        {'match': 'Ultimately, everyday transport should first serve',
          'tag': '第三段收尾',
          'tips': '扣「出行公平」题眼，不写空指；备选落在「惠及所有人」和「最弱势者可用」',
          'alts': [
