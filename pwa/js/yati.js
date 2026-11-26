@@ -263,12 +263,22 @@ function ytInline(text) {
     const hits = ready ? (kwSplit(text) || []) : [];
     const WORD = /[A-Za-z][A-Za-z'’-]*/g;
     const plain = s => {
+        // 占位符 {{num1}} 和时间 a.m./p.m. 不拆成可点词：
+        // 拆出来的 num / m / p 词典查不到，点了只会显示「常用词，离线词典只收难词」（2026-11-27）
+        const skip = [];
+        let sm;
+        const PH = /\{\{[^{}]*\}\}/g;
+        while ((sm = PH.exec(s))) skip.push([sm.index, PH.lastIndex]);
+        const TM = /\b[ap]\.m\./gi;
+        while ((sm = TM.exec(s))) skip.push([sm.index, TM.lastIndex]);
+        const inSkip = i => skip.some(pair => i >= pair[0] && i < pair[1]);
+
         let out = '', last = 0, m;
         WORD.lastIndex = 0;
         while ((m = WORD.exec(s))) {
             out += ytEsc(s.slice(last, m.index));
             const low = m[0].toLowerCase();
-            out += YT_STOP.has(low) ? ytEsc(m[0])
+            out += (YT_STOP.has(low) || inSkip(m.index)) ? ytEsc(m[0])
                 : `<span class="yt-w" data-w="${ytEsc(low)}">${ytEsc(m[0])}</span>`;
             last = m.index + m[0].length;
         }
