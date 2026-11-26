@@ -520,6 +520,7 @@ function ytOpen(no, fromEl) {
     img.alt = `第 ${it.no} 题：${it.title}`;
     const essayEl = document.getElementById('ytMEssay');
     essayEl.innerHTML = ytNotesHtml(it) + ytEssayHtml(it);
+    ytRestoreAll();                       // 换题后恢复本题划词高亮（按题号隔离）
     essayEl.scrollTop = 0;
     const cnBtn = document.getElementById('ytCnBtn');
     if (cnBtn) { cnBtn.textContent = '显示全文译文'; cnBtn.classList.remove('on'); }
@@ -588,6 +589,263 @@ function ytToggleAll() {
     grps.forEach(g => { g.open = open; });
     const btn = document.getElementById('ytToggleAll');
     if (btn) btn.textContent = open ? '收起全部' : '展开全部';
+}
+
+/* ==================== 范文划词高亮（4 色荧光笔，照搬大作文页；按题号隔离） ==================== */
+const YT_MK_KEY = 'yt_mk_v1';
+const YT_HL_COLORS = ['yellow', 'green', 'blue', 'pink'];
+const YT_HL_CN = { yellow: '黄色', green: '绿色', blue: '蓝色', pink: '粉色' };
+/* 只标范文正文：英文句 / 逐句译 / 整篇对照段。块 key 含题号，切题不串。 */
+const YT_MK_SEL = '#ytMEssay .yt-jsent, #ytMEssay .yt-jsent-cn, #ytMEssay .yt-en .ye-meta, #ytMEssay .yt-cn p';
+let ytMarks = [];      // [{ b: 块key, s, e, k: 颜色 }]
+let ytHlBar = null;
+let ytHlTimer = null;
+
+function ytMkLoad() {
+    try { ytMarks = JSON.parse(localStorage.getItem(YT_MK_KEY) || '[]') || []; }
+    catch (e) { ytMarks = []; }
+    if (!Array.isArray(ytMarks)) ytMarks = [];
+    const LEGACY = { y: 'yellow', g: 'green', b: 'blue', p: 'pink' };
+    ytMarks = ytMarks.filter(m => m && typeof m.b === 'string' && typeof m.s === 'number' && typeof m.e === 'number')
+        .map(m => ({ b: m.b, s: m.s, e: m.e, k: YT_HL_COLORS.includes(m.k) ? m.k : (LEGACY[m.k] || 'yellow') }));
+}
+
+function ytMkSave() {
+    try { localStorage.setItem(YT_MK_KEY, JSON.stringify(ytMarks)); } catch (e) { /* ignore */ }
+    const btn = document.getElementById('ytHlClearBtn');
+    if (btn) btn.hidden = !ytMarks.length;
+}
+
+/** 稳定块 key：题号 + 块类型 + 句号/段序；切题、词典就绪重渲染都不串 */
+function ytMkKeyOf(el, idx) {
+    const no = YT_CUR >= 0 && YT_FLAT[YT_CUR] ? YT_FLAT[YT_CUR].no : 0;
+    if (el.classList.contains('yt-jsent')) return no + ':s:' + (el.dataset.i || idx);
+    if (el.classList.contains('yt-jsent-cn')) return no + ':c:' + (el.dataset.for || idx);
+    if (el.classList.contains('ye-meta')) return no + ':m:' + idx;
+    return no + ':p:' + idx;
+}
+
+/** 可高亮块：一次 DFS 收集（命中即收、不再下钻），按文档序打 data-mk（key 字符串） */
+function ytMkBlocks() {
+    const root = document.getElementById('ytMEssay');
+    const out = [];
+    if (!root) return out;
+    (function walk(node) {
+        for (const el of node.children) {
+            if (el.matches(YT_MK_SEL)) { out.push(el); continue; }
+            walk(el);
+        }
+    })(root);
+    out.forEach((el, i) => el.setAttribute('data-mk', ytMkKeyOf(el, i)));
+    return out;
+}
+
+function ytMkBlockOf(node) {
+    const el = node && node.nodeType === 3 ? node.parentElement : node;
+    return (el && el.closest) ? el.closest('[data-mk]') : null;
+}
+
+function ytInHlBar(node) {
+    const el = node && node.nodeType === 3 ? node.parentElement : node;
+    return !!(el && el.closest && el.closest('.hl-toolbar'));
+}
+
+/** 块内全部 Text 节点 → [{node, start, len}]（按文档序，start = 块内字符偏移） */
+function ytMkTexts(el) {
+    const tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const out = []; let acc = 0;
+    while (tw.nextNode()) {
+        const n = tw.currentNode;
+        out.push({ node: n, start: acc, len: n.data.length });
+        acc += n.data.length;
+    }
+    return out;
+}
+
+function ytMkOffset(texts, node, off) {
+    for (const t of texts) if (t.node === node) return t.start + off;
+    return null;
+}
+
+function ytMkAt(texts, off) {
+    for (const t of texts) {
+        if (off <= t.start + t.len) return { node: t.node, off: off - t.start };
+    }
+    const last = texts[texts.length - 1];
+    return last ? { node: last.node, off: last.len } : null;
+}
+
+function ytMkRange(el, s, e) {
+    const texts = ytMkTexts(el);
+    const a = ytMkAt(texts, s), b = ytMkAt(texts, e);
+    if (!a || !b || (a.node === b.node && a.off === b.off)) return null;
+    const r = document.createRange();
+    r.setStart(a.node, a.off);
+    r.setEnd(b.node, b.off);
+    return r;
+}
+
+/** 当前选区 → { block, key, s, e }；失败返回 { err } */
+function ytMkSelInfo() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || !sel.rangeCount) return { err: 'none' };
+    const r = sel.getRangeAt(0);
+    const b1 = ytMkBlockOf(r.startContainer), b2 = ytMkBlockOf(r.endContainer);
+    if (!b1 || !b2 || b1 !== b2) return { err: 'none' };
+    const texts = ytMkTexts(b1);
+    const s = ytMkOffset(texts, r.startContainer, r.startOffset);
+    const e = ytMkOffset(texts, r.endContainer, r.endOffset);
+    if (s == null || e == null || e <= s) return { err: 'none' };
+    return { block: b1, key: b1.getAttribute('data-mk'), s, e, range: r };
+}
+
+function ytMkUnwrap(mk) {
+    const f = document.createDocumentFragment();
+    while (mk.firstChild) f.appendChild(mk.firstChild);
+    if (mk.parentNode) mk.replaceWith(f);
+}
+
+/** 重建单块高亮（note-hl 绝不带 data-mk，避免被当成可高亮块） */
+function ytMkPaint(block, key) {
+    block.querySelectorAll('mark.note-hl').forEach(ytMkUnwrap);
+    ytMarks.filter(m => m.b === key).sort((a, b) => a.s - b.s).forEach(m => {
+        const r = ytMkRange(block, m.s, m.e);
+        if (!r) return;
+        const mk = document.createElement('mark');
+        mk.className = 'note-hl note-hl-' + m.k;
+        mk.dataset.start = String(m.s);
+        mk.dataset.color = m.k;
+        mk.title = '点击可取消这处高亮';
+        try { mk.appendChild(r.extractContents()); r.insertNode(mk); } catch (e) { /* 越界忽略 */ }
+    });
+}
+
+/** 范文重渲染后调用：重建高亮（切题 / 词典就绪都走这里） */
+function ytRestoreAll() {
+    document.querySelectorAll('#ytMEssay mark.note-hl').forEach(ytMkUnwrap);
+    const blocks = ytMkBlocks();
+    const dirty = new Set(ytMarks.map(m => m.b));
+    blocks.forEach(b => {
+        const key = b.getAttribute('data-mk');
+        if (dirty.has(key)) ytMkPaint(b, key);
+    });
+    ytMkSave();
+}
+
+/* ---------- 上色 / 取消 ---------- */
+
+function ytHlApply(color) {
+    const sr = ytMkSelInfo();
+    if (sr.err) { ytHideHlToolbar(); return; }
+    ytMarks = ytMarks.filter(m => !(m.b === sr.key && m.s < sr.e && sr.s < m.e));
+    ytMarks.push({ b: sr.key, s: sr.s, e: sr.e, k: color });
+    ytRestoreAll();
+    ytHideHlToolbar();
+    const s = window.getSelection(); if (s) s.removeAllRanges();
+}
+
+function ytHlRemoveMark(mk) {
+    const block = mk.closest('[data-mk]');
+    if (!block) return;
+    const key = block.getAttribute('data-mk');
+    const start = parseInt(mk.dataset.start, 10);
+    const color = mk.dataset.color;
+    ytMarks = ytMarks.filter(m => !(m.b === key && m.s === start && m.k === color));
+    ytRestoreAll();
+}
+
+async function ytMkClearAll() {
+    if (!ytMarks.length) return;
+    if (typeof confirmAsync === 'function' && !(await confirmAsync('清除押题页全部划词高亮？', { danger: true }))) return;
+    ytMarks = [];
+    document.querySelectorAll('#ytMEssay mark.note-hl').forEach(ytMkUnwrap);
+    ytMkSave();
+}
+
+/* ---------- 划词浮条（4 色 + ✕，与大作文页同款） ---------- */
+
+function ytHideHlToolbar() { if (ytHlBar) { ytHlBar.remove(); ytHlBar = null; } }
+
+function ytRectOf(range) {
+    let rect = null;
+    try { rect = range.getBoundingClientRect(); } catch (e) { rect = null; }
+    if (!rect || (!rect.width && !rect.height)) {
+        const n = range.startContainer;
+        const el = n && n.nodeType === 1 ? n : (n && n.parentElement);
+        if (el && el.getBoundingClientRect) rect = el.getBoundingClientRect();
+    }
+    return rect || { top: 0, bottom: 0, left: 0, width: 0, height: 0 };
+}
+
+function ytHlBarPlace(bar, rect) {
+    const bh = bar.offsetHeight, bw = bar.offsetWidth;
+    const navH = ytNavH();
+    let top = window.scrollY + rect.top - bh - 8;
+    if (rect.top - bh - 8 < navH + 6) top = window.scrollY + rect.bottom + 8;
+    let left = window.scrollX + rect.left;
+    const maxLeft = window.scrollX + document.documentElement.clientWidth - bw - 8;
+    if (left > maxLeft) left = Math.max(window.scrollX + 8, maxLeft);
+    bar.style.top = top + 'px';
+    bar.style.left = left + 'px';
+}
+
+function ytHlShowForSelection() {
+    if (ytHlBar && ytHlBar.classList.contains('hl-cancel-only')) return;
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || !sel.rangeCount) { ytHideHlToolbar(); return; }
+    const r = sel.getRangeAt(0);
+    if (ytInHlBar(r.startContainer) || ytInHlBar(r.endContainer)) { ytHideHlToolbar(); return; }
+    if (ytMkSelInfo().err) { ytHideHlToolbar(); return; }
+    ytHideHlToolbar();
+    const bar = document.createElement('div');
+    bar.className = 'hl-toolbar';
+    bar.innerHTML = YT_HL_COLORS.map(c =>
+        '<span class="hl-dot hl-dot-' + c + '" data-color="' + c + '" title="' + YT_HL_CN[c] + '高亮"></span>').join('') +
+        '<span class="hl-cancel" title="取消这处高亮">✕</span>';
+    document.body.appendChild(bar);
+    ytHlBar = bar;
+    ytHlBarPlace(bar, ytRectOf(r));
+    bar.addEventListener('mousedown', e => e.preventDefault());   // 按住不丢选区
+    bar.querySelectorAll('.hl-dot').forEach(dot =>
+        dot.addEventListener('click', () => ytHlApply(dot.dataset.color)));
+    bar.querySelector('.hl-cancel').addEventListener('click', () => ytHideHlToolbar());
+}
+
+/** 点已有高亮 → 只显示「✕ 取消高亮」 */
+function ytHlShowCancelFor(mk) {
+    clearTimeout(ytHlTimer);
+    ytHideHlToolbar();
+    const bar = document.createElement('div');
+    bar.className = 'hl-toolbar hl-cancel-only';
+    bar.innerHTML = '<span class="hl-cancel" title="取消高亮">✕ 取消高亮</span>';
+    document.body.appendChild(bar);
+    ytHlBar = bar;
+    ytHlBarPlace(bar, mk.getBoundingClientRect());
+    bar.addEventListener('mousedown', e => e.preventDefault());
+    bar.querySelector('.hl-cancel').addEventListener('click', () => {
+        ytHlRemoveMark(mk);
+        ytHideHlToolbar();
+    });
+}
+
+function ytHlBind() {
+    if (document.body.dataset.ytHlBound === '1') return;
+    document.body.dataset.ytHlBound = '1';
+    document.addEventListener('mouseup', () => {
+        clearTimeout(ytHlTimer);
+        ytHlTimer = setTimeout(ytHlShowForSelection, 0);
+    });
+    document.addEventListener('mousedown', e => {
+        if (ytHlBar && !ytHlBar.contains(e.target)) ytHideHlToolbar();
+    });
+    document.addEventListener('click', e => {
+        if (!e.target.closest) return;
+        const mk = e.target.closest('#ytMEssay mark.note-hl');
+        if (!mk || e.target.closest('.yt-w')) return;   // 高亮里的词仍可点查释义
+        e.stopPropagation();
+        ytHlShowCancelFor(mk);
+    });
+    document.addEventListener('scroll', () => { if (ytHlBar) ytHideHlToolbar(); }, { capture: true, passive: true });
 }
 
 /* ==================== 左侧悬浮目录（复用大作文页 .wr-toc） ==================== */
@@ -687,6 +945,8 @@ function ytBindUi() {
         const essay = document.getElementById('ytMEssay');
         if (essay) essay.addEventListener('click', e => {
             if (!e.target.closest) return;
+            // 点高亮（非词）交给 document 级监听弹「取消高亮」，不触发展开/收起译块
+            if (e.target.closest('mark.note-hl') && !e.target.closest('.yt-w')) return;
             const cnBox = e.target.closest('.yt-jsent-cn');
             if (cnBox) { ytSentCnShow(cnBox, false); return; }       // 点打开的译块 → 收起
             const tr = e.target.closest('.yt-sent-tr');
@@ -728,6 +988,10 @@ function ytBindUi() {
 
 async function ytInit() {
     ytBindUi();
+    ytMkLoad();                           // 划词高亮（localStorage，不依赖词典）
+    ytHlBind();
+    const hlClear = document.getElementById('ytHlClearBtn');
+    if (hlClear) hlClear.addEventListener('click', ytMkClearAll);
     // 范文重点词可点查释义：先加载词库再绑定（词典就绪后需重渲染一次，让词标注生效）
     if (typeof kwBind === 'function') kwBind();
     ytWBind();
@@ -748,6 +1012,7 @@ async function ytInit() {
                         const cn = e.querySelector('.yt-cn');
                         if (cn) cn.hidden = false;
                     }
+                    ytRestoreAll();       // 词典就绪重渲染了正文，高亮要跟着重建
                 }
             }
         }).catch(() => {});
