@@ -229,6 +229,7 @@ function wrCloseWordPop() {
 
 function wrOpenPop(targetEl, html) {
     wrCloseWordPop();
+    if (typeof wrCancelPopTimers === 'function') wrCancelPopTimers();   // 先撤掉待弹计时，别把词卡顶掉
     if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
     if (typeof wrSwClose === 'function') wrSwClose();
     if (typeof wrTopicClose === 'function') wrTopicClose();

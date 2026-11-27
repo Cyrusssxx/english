@@ -114,11 +114,11 @@ function checkData(d, label, hasPh) {
     // 悬停 → 弹气泡，内容 = tag / 原文 / alts
     const el = pane.querySelector('.yt-jsent.yt-swap');
     el.dispatchEvent(new W1.MouseEvent('mouseover', { bubbles: true }));
-    await wait(240);
+    await wait(400);
     const pop = D1.querySelector('.wr-swap-pop');
     if (!pop) { fail('悬停后未弹出替换气泡'); }
     else {
-        pass('悬停 140ms 后弹出替换气泡');
+        pass('悬停 320ms 后弹出替换气泡');
         const tag = (pop.querySelector('.wup-tag') || {}).textContent || '';
         if (!tag) fail('气泡缺分类标签'); else pass('气泡分类标签：' + tag);
         const orig = (pop.querySelector('.wup-orig b') || {}).textContent || '';
@@ -230,7 +230,7 @@ function checkData(d, label, hasPh) {
     // 悬停骨架行 → 弹气泡
     const row = card3.querySelector('.wr-line.wr-swap');
     row.dispatchEvent(new W2.MouseEvent('mouseover', { bubbles: true }));
-    await wait(240);
+    await wait(400);
     const pop2 = D2.querySelector('.wr-swap-pop');
     if (!pop2) fail('骨架行悬停未弹气泡');
     else {

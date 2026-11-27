@@ -362,6 +362,7 @@ function ytWClose() {
 function ytWOpen(el) {
     const word = el.getAttribute('data-w') || '';
     const entry = (typeof dictLookup === 'function') ? dictLookup(word) : null;
+    if (typeof wrCancelPopTimers === 'function') wrCancelPopTimers();   // 先撤掉待弹计时，别把刚点的词卡顶掉
     if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
     if (typeof wrSwClose === 'function') wrSwClose();   // 点词时先收起整句替换气泡
     if (typeof wrTopicClose === 'function') wrTopicClose();

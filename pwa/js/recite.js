@@ -195,6 +195,7 @@ function rcWordKeys(key, base) {
 
 function rcOpenPop(targetEl, html) {
     rcClosePop();
+    if (typeof wrCancelPopTimers === 'function') wrCancelPopTimers();   // 先撤掉待弹计时，别把词卡顶掉
     if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
     if (typeof wrSwClose === 'function') wrSwClose();
     if (typeof wrTopicClose === 'function') wrTopicClose();

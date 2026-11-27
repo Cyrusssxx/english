@@ -101,6 +101,7 @@ function kwOpen(el) {
     const it = KW_BY_KEY && KW_BY_KEY.get(key);
     if (!it) return;
     kwClose();
+    if (typeof wrCancelPopTimers === 'function') wrCancelPopTimers();   // 先撤掉待弹的悬浮卡计时，别把词卡顶掉
     if (typeof wrCloseUpgPop === 'function') wrCloseUpgPop();
     if (typeof wrSwClose === 'function') wrSwClose();
     if (typeof wrTopicClose === 'function') wrTopicClose();

@@ -653,11 +653,19 @@ function wrCloseWordPops() {
     });
 }
 
+/** 取消三类悬浮卡的待弹计时器：点词查译时先调用，避免鼠标还停在替换句上时 timer 到点又弹卡把词卡顶掉（2026-11-28） */
+function wrCancelPopTimers() {
+    if (_wrSwTimer) { clearTimeout(_wrSwTimer); _wrSwTimer = null; }
+    if (_wrUpgTimer) { clearTimeout(_wrUpgTimer); _wrUpgTimer = null; }
+    if (_wrTopicTimer) { clearTimeout(_wrTopicTimer); _wrTopicTimer = null; }
+}
+
 /* ==================== 整句可替换气泡（押题范文 / 模板骨架共用，2026-11-21） ====================
    用法：元素带 class="wr-swap" 且 data-swap = JSON({tag,tips,alts:[{en,cn}]})。
    默认正文仍是原句（好背、能直接套），悬停才列出「更贴这道题」的整句替换。
    与 .wr-upg 的分工：.wr-upg 是短语级同义升级（点击/悬停即出）；
-   .wr-swap 是句子级替换，鼠标停留 140ms 才弹，避免划过全篇乱弹。 */
+   .wr-swap 是句子级替换，鼠标停留 320ms 才弹（2026-11-28 从 140ms 调大：太灵敏，想先点词查译时气泡抢弹出）；
+   点词卡入口会先调 wrCancelPopTimers 撤掉待弹计时，保证点词优先。 */
 let _wrSwPop = null, _wrSwTimer = null, _wrSwEl = null;
 
 function wrSwClose() {
@@ -721,7 +729,7 @@ if (typeof document !== 'undefined') {
             if (_wrSwEl === sw && _wrSwPop) return;      // 句内移动不重建
             if (_wrSwTimer) { clearTimeout(_wrSwTimer); _wrSwTimer = null; }
             if (_wrUpgPop) wrCloseUpgPop();
-            _wrSwTimer = setTimeout(() => wrSwShow(sw), 140);
+            _wrSwTimer = setTimeout(() => wrSwShow(sw), 320);
         }
     });
 
@@ -843,7 +851,7 @@ if (typeof document !== 'undefined') {
         if (_wrTopicEl === t && _wrTopicPop) return;
         if (_wrTopicTimer) { clearTimeout(_wrTopicTimer); _wrTopicTimer = null; }
         if (_wrSwTimer) { clearTimeout(_wrSwTimer); _wrSwTimer = null; }
-        _wrTopicTimer = setTimeout(() => wrTopicShow(t), 120);
+        _wrTopicTimer = setTimeout(() => wrTopicShow(t), 260);
     });
     document.addEventListener('mouseout', e => {
         const t = e.target.closest && e.target.closest('.wr-ph-topic');
@@ -874,5 +882,6 @@ if (typeof window !== 'undefined') {
     window.wrTopicClose = wrTopicClose;
     window.popNear = popNear;
     window.wrCloseWordPops = wrCloseWordPops;
+    window.wrCancelPopTimers = wrCancelPopTimers;
     window.WR_UPGRADES = WR_UPGRADES;
 }
