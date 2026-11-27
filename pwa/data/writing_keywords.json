@@ -24,7 +24,7 @@
     "desc": "小作文开头、请求、结尾"
    }
   ],
-  "count": 34
+  "count": 53
  },
  "items": [
   {
@@ -34,7 +34,7 @@
    "ex": "Establishing a regular habit of exercise will yield substantial benefits in the long run.",
    "exCn": "养成规律锻炼的习惯，长远来看收益巨大。",
    "g": "advice",
-   "n": 2
+   "n": 3
   },
   {
    "k": "steady funding",
@@ -43,7 +43,7 @@
    "ex": "Steady funding from the government is the key to spreading first-aid training.",
    "exCn": "政府稳定的资金投入是普及急救培训的关键。",
    "g": "advice",
-   "n": 13
+   "n": 15
   },
   {
    "k": "clear rules",
@@ -52,16 +52,16 @@
    "ex": "Clear rules should be set for online platforms to curb false information.",
    "exCn": "应为网络平台立下明确规则，以遏制虚假信息。",
    "g": "advice",
-   "n": 13
+   "n": 15
   },
   {
-   "k": "positive trend worth welcoming",
-   "cn": "值得欢迎的积极趋势",
-   "use": "首段末或第二段开头定调，一句把态度说透。",
-   "ex": "This is a positive trend worth welcoming.",
-   "exCn": "这是一个值得欢迎的积极趋势。",
+   "k": "an encouraging and welcome picture of",
+   "cn": "令人鼓舞、值得欢迎的景象",
+   "use": "首段末定调：paint an encouraging and welcome picture of ...。",
+   "ex": "The figures paint an encouraging and welcome picture of everyday life.",
+   "exCn": "这些数据描绘出日常生活令人鼓舞、值得欢迎的景象。",
    "g": "argue",
-   "n": 35
+   "n": 37
   },
   {
    "k": "a combination of factors",
@@ -70,7 +70,7 @@
    "ex": "This phenomenon can be attributed to a combination of factors.",
    "exCn": "这一现象可归因于多种因素的共同作用。",
    "g": "argue",
-   "n": 38
+   "n": 58
   },
   {
    "k": "of great importance",
@@ -79,7 +79,7 @@
    "ex": "Accessible facilities are of great importance to people with mobility difficulties.",
    "exCn": "无障碍设施对行动不便者至关重要。",
    "g": "argue",
-   "n": 15
+   "n": 17
   },
   {
    "k": "equally important",
@@ -88,7 +88,7 @@
    "ex": "Equally important, clear rules should be set for online platforms.",
    "exCn": "同样重要的是，应为网络平台制定明确的规则。",
    "g": "argue",
-   "n": 22
+   "n": 61
   },
   {
    "k": "be attributed to",
@@ -97,7 +97,16 @@
    "ex": "The shift can be attributed to the rapid spread of mobile payment.",
    "exCn": "这一转变可归因于移动支付的迅速普及。",
    "g": "argue",
-   "n": 38
+   "n": 58
+  },
+  {
+   "k": "a further driver",
+   "cn": "进一步的推动因素",
+   "use": "并列第三条原因：A further driver is + 名词短语，接在 Equally important 之后。",
+   "ex": "A further driver is the wider availability of online services.",
+   "exCn": "进一步的推动因素是网络服务变得更加普及。",
+   "g": "argue",
+   "n": 50
   },
   {
    "k": "within our reach",
@@ -106,16 +115,16 @@
    "ex": "A balance between development and protection will be within our reach.",
    "exCn": "发展与保护之间的平衡将指日可待。",
    "g": "argue",
-   "n": 2
+   "n": 4
   },
   {
-   "k": "momentum behind",
-   "cn": "…背后的推动力",
-   "use": "抽象原因：the momentum behind this change（这一变化背后的推力）。",
-   "ex": "The momentum behind this change comes largely from government support.",
-   "exCn": "这一变化背后的推力主要来自政府支持。",
+   "k": "a wider range of",
+   "cn": "更广泛的……",
+   "use": "选择变多：a wider range of choices/options，比 more 更书面。",
+   "ex": "Residents have gained a wider range of transport choices.",
+   "exCn": "居民获得了更加广泛的出行选择。",
    "g": "argue",
-   "n": 35
+   "n": 2
   },
   {
    "k": "contribute to",
@@ -124,7 +133,7 @@
    "ex": "Several factors may contribute to this pattern.",
    "exCn": "若干因素可能共同造成了这一格局。",
    "g": "argue",
-   "n": 13
+   "n": 11
   },
   {
    "k": "top the list",
@@ -133,7 +142,7 @@
    "ex": "Personal development prospects top the list at 65 per cent, followed by pay at 53 per cent.",
    "exCn": "个人发展前景以 65% 位居榜首，其次是薪酬 53%。",
    "g": "argue",
-   "n": 1
+   "n": 2
   },
   {
    "k": "bear in mind",
@@ -142,7 +151,7 @@
    "ex": "We should bear in mind that lifelong learning is of great importance to personal development.",
    "exCn": "我们应牢记，终身学习对个人发展至关重要。",
    "g": "argue",
-   "n": 16
+   "n": 20
   },
   {
    "k": "only through",
@@ -151,7 +160,7 @@
    "ex": "Only through the joint efforts of communities and individuals can these skills become widely available.",
    "exCn": "只有通过社区与个人的共同努力，这些技能才能普及。",
    "g": "argue",
-   "n": 6
+   "n": 16
   },
   {
    "k": "by no means",
@@ -160,7 +169,25 @@
    "ex": "By no means should we give up our efforts to protect the environment.",
    "exCn": "我们决不应当放弃保护环境的努力。",
    "g": "argue",
-   "n": 1
+   "n": 2
+  },
+  {
+   "k": "complement",
+   "cn": "补充、补足",
+   "use": "新方式定位：complement public transport rather than replace it。",
+   "ex": "New services should complement public transport rather than replace it.",
+   "exCn": "新服务应补充公共交通，而非取代它。",
+   "g": "argue",
+   "n": 4
+  },
+  {
+   "k": "rely on",
+   "cn": "依赖、依靠",
+   "use": "刚需群体：many people still rely on buses，说明某方式仍不可替代。",
+   "ex": "Many people still rely on public transport for their daily travel.",
+   "exCn": "许多人日常出行仍依赖公共交通。",
+   "g": "argue",
+   "n": 4
   },
   {
    "k": "clearly illustrates",
@@ -169,7 +196,7 @@
    "ex": "The bar chart clearly illustrates the steady growth of online shopping over the past decade.",
    "exCn": "柱状图清楚地显示了近十年网购的稳步增长。",
    "g": "chart",
-   "n": 51
+   "n": 70
   },
   {
    "k": "everyday necessity",
@@ -181,6 +208,15 @@
    "n": 13
   },
   {
+   "k": "deserves attention",
+   "cn": "值得关注",
+   "use": "点出隐忧：the decline in bus use deserves attention。",
+   "ex": "The decline in bus use deserves attention, as many people still rely on it.",
+   "exCn": "公交使用量的下降值得关注，因为许多人仍依赖公交。",
+   "g": "chart",
+   "n": 2
+  },
+  {
    "k": "household incomes",
    "cn": "家庭收入",
    "use": "图表主体词：rising household incomes（家庭收入提高）常作原因。",
@@ -188,6 +224,42 @@
    "exCn": "家庭收入的提高让普通家庭也负担得起旅行。",
    "g": "chart",
    "n": 13
+  },
+  {
+   "k": "regained the lead",
+   "cn": "重新领先",
+   "use": "反超后再夺回：the latter regained the lead in June。",
+   "ex": "Fuel vehicles regained the lead in June.",
+   "exCn": "燃油车在 6 月重新领先。",
+   "g": "chart",
+   "n": 5
+  },
+  {
+   "k": "are distributed",
+   "cn": "（各项）是如何分布的",
+   "use": "how the factors ... are distributed：描述多选/占比分布，比 show 更书面。",
+   "ex": "The bar chart above clearly illustrates how the factors considered by students are distributed.",
+   "exCn": "该柱状图清楚显示了学生所考虑的各项因素是如何分布的。",
+   "g": "chart",
+   "n": 14
+  },
+  {
+   "k": "takes the lead",
+   "cn": "位居首位、领先",
+   "use": "单项第一：X takes the lead, accounting for 65%。",
+   "ex": "Improving current job skills takes the lead, accounting for 65%.",
+   "exCn": "提升现有工作技能位居首位，占 65%。",
+   "g": "chart",
+   "n": 24
+  },
+  {
+   "k": "the figure for",
+   "cn": "……的数字（比例）",
+   "use": "指代前文某类数据：The figure for buses fell to under 30%。",
+   "ex": "The figure for fuel vehicles slumped to 1.04 million in April.",
+   "exCn": "燃油车的数字在 4 月骤降至 104 万辆。",
+   "g": "chart",
+   "n": 29
   },
   {
    "k": "largest share",
@@ -199,13 +271,40 @@
    "n": 15
   },
   {
+   "k": "considered by",
+   "cn": "被……所考虑（的）",
+   "use": "过去分词作后置定语：the factors considered by students（学生考虑的因素）。",
+   "ex": "The factors considered by university students when choosing a job are distributed.",
+   "exCn": "大学生择业时考虑的各项因素分布如下。",
+   "g": "chart",
+   "n": 2
+  },
+  {
+   "k": "rose steadily",
+   "cn": "稳步上升",
+   "use": "平缓上升：the proportion rose steadily from 56% to 85%。",
+   "ex": "The proportion rose steadily from 56% to 85% over the period.",
+   "exCn": "该比例在此期间从 56% 稳步上升到 85%。",
+   "g": "chart",
+   "n": 14
+  },
+  {
    "k": "rose sharply",
    "cn": "急剧上升",
    "use": "描述陡升：rise sharply / rose sharply from A to B；缓升用 rose steadily。",
    "ex": "The number of delivery orders rose sharply from 2 billion to 13 billion in ten years.",
    "exCn": "十年间快递业务量从 20 亿件猛增到 130 亿件。",
    "g": "chart",
-   "n": 20
+   "n": 21
+  },
+  {
+   "k": "mentioned by",
+   "cn": "被……所提及（的）",
+   "use": "与 considered by 同类后置定语：the reasons mentioned by respondents（受访者提到的原因）。",
+   "ex": "Company reputation is mentioned by 31% of the students.",
+   "exCn": "公司声誉被 31% 的学生提及。",
+   "g": "chart",
+   "n": 2
   },
   {
    "k": "account for",
@@ -214,7 +313,25 @@
    "ex": "Students who take part-time jobs account for 37 per cent of the total.",
    "exCn": "兼职学生占总人数的 37%。",
    "g": "chart",
-   "n": 8
+   "n": 7
+  },
+  {
+   "k": "followed by",
+   "cn": "其次是、紧随其后的是",
+   "use": "排序衔接：X tops the list at 65%, followed by Y at 53%。",
+   "ex": "Personal development prospects top the list at 65%, followed by pay at 53%.",
+   "exCn": "个人发展前景以 65% 位居首位，其次是薪酬，占 53%。",
+   "g": "chart",
+   "n": 35
+  },
+  {
+   "k": "by contrast",
+   "cn": "相比之下",
+   "use": "两组数据对照：A rose; by contrast, B fell。",
+   "ex": "The online share rose; by contrast, the offline share fell.",
+   "exCn": "线上占比上升；相比之下，线下占比下降。",
+   "g": "chart",
+   "n": 32
   },
   {
    "k": "comes last",
@@ -223,7 +340,25 @@
    "ex": "Reading for pleasure comes last, at only 8 per cent.",
    "exCn": "为消遣而阅读排在最后，仅占 8%。",
    "g": "chart",
-   "n": 16
+   "n": 26
+  },
+  {
+   "k": "peaking at",
+   "cn": "在……达到峰值",
+   "use": "先升后降：fluctuated, peaking at 1.33 million in March。",
+   "ex": "The figure for fuel vehicles fluctuated, peaking at 1.33 million in March.",
+   "exCn": "燃油车数字有波动，在 3 月达到 133 万辆的峰值。",
+   "g": "chart",
+   "n": 5
+  },
+  {
+   "k": "fluctuated",
+   "cn": "波动、起伏",
+   "use": "有升有降：The figure fluctuated, peaking at ... before falling。",
+   "ex": "The figure for fuel vehicles fluctuated over the six months.",
+   "exCn": "这六个月里燃油车的数字有波动。",
+   "g": "chart",
+   "n": 6
   },
   {
    "k": "bar chart",
@@ -232,7 +367,43 @@
    "ex": "The bar chart compares the purposes of continuing education among employees.",
    "exCn": "该柱状图比较了在职人员参加继续学习的目的。",
    "g": "chart",
-   "n": 15
+   "n": 22
+  },
+  {
+   "k": "rose from",
+   "cn": "从……上升（到）",
+   "use": "上升起点：rose from A to B；缓升加 steadily，陡升加 sharply。",
+   "ex": "Sales of new energy vehicles rose from 0.79 to 1.12 million.",
+   "exCn": "新能源汽车销量从 79 万辆上升到 112 万辆。",
+   "g": "chart",
+   "n": 17
+  },
+  {
+   "k": "fell from",
+   "cn": "从……下降（到）",
+   "use": "下降起点：fell from A to B；小幅下降用 declined slightly。",
+   "ex": "The proportion of residents choosing buses fell from just over 50% to under 30%.",
+   "exCn": "选择公交的居民比例从略高于 50% 下降到不足 30%。",
+   "g": "chart",
+   "n": 8
+  },
+  {
+   "k": "a dip in",
+   "cn": "……的小幅下降",
+   "use": "短暂回落：despite a dip in April（尽管 4 月有小幅回落）。",
+   "ex": "Sales rose overall, despite a dip in April shared by both types.",
+   "exCn": "尽管两类车 4 月都有小幅回落，销量总体仍上升。",
+   "g": "chart",
+   "n": 2
+  },
+  {
+   "k": "overtook",
+   "cn": "超过、反超",
+   "use": "两线交叉：A overtook B in May（A 在 5 月反超 B）。",
+   "ex": "New energy vehicles overtook fuel vehicles in May.",
+   "exCn": "新能源汽车在 5 月反超燃油车。",
+   "g": "chart",
+   "n": 2
   },
   {
    "k": "I hope this message finds you well",
@@ -241,7 +412,7 @@
    "ex": "I hope this message finds you well.",
    "exCn": "希望你一切都好。",
    "g": "letter",
-   "n": 41
+   "n": 43
   },
   {
    "k": "consider taking concrete steps",
@@ -295,7 +466,7 @@
    "ex": "I look forward to your early reply.",
    "exCn": "期待您早日回复。",
    "g": "letter",
-   "n": 10
+   "n": 11
   },
   {
    "k": "yours sincerely",
@@ -304,7 +475,7 @@
    "ex": "Yours sincerely, Li Ming",
    "exCn": "您诚挚的，李明",
    "g": "letter",
-   "n": 45
+   "n": 51
   },
   {
    "k": "let me know",
@@ -313,7 +484,7 @@
    "ex": "Please let me know if you need any further information.",
    "exCn": "如需更多信息，请告诉我。",
    "g": "letter",
-   "n": 9
+   "n": 8
   },
   {
    "k": "take place",
