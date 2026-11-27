@@ -249,7 +249,7 @@ SWAPS = {
              {'en': 'Equally important, salary still decides how soon graduates can stop relying on their parents.',
               'cn': '同样重要的是，薪资仍然决定毕业生多久才能不再依赖父母。'},
          ]},
-        {'match': 'A further driver is the promise of valuable experience and recognition',
+        {'match': 'Another important factor is the valuable experience and recognition',
          'tag': '第二段原因·名企背书',
          'tips': '31% 的公司声誉；两条都落在「简历与学习机会」，不写薪资',
          'alts': [
